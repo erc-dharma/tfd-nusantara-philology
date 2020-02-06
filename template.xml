@@ -1,52 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- // Validation schema TEI-ALL must be update in favor the DHARMA manuscript schema once it has been established// -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>title</title>
-      </titleStmt>
+      <title>Encoding template for manuscript</title><!--Change the title of the file with the name of your text-->
+      <respStmt> <!-- repeat the respStmt when necessary -->
+        <resp>creation of the file</resp><!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+        <persName ref="part:jodo"><!-- update the id -->
+          <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+          <surname>Doe</surname>
+        </persName>
+      </respStmt>
+      </titleStmt>         
       <publicationStmt>
-        <authority></authority>
-        <idno type="filename"></idno>
+        <authority>DHARMA 
+          <note>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).
+          </note> <!-- Possible to change the autority if necessary as well as the <note>-->
+        </authority>
+        <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+        <idno type="filename">DHARMA_EncodingTemplateInscription</idno><!-- Replace by filename, e.g. Pallava00001 -->
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">
+            <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+            <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+          </licence>
+        </availability>
+        <date from="2019" to="2025">2019-2025</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>museum/archive</repository>
-            <idno>inventory number</idno>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>description of object/monument (likely to include <material/>
-                and <objectType/> information, <dimensions/>, etc.)</support>
-              </supportDesc>
-              <layoutDesc>
-                <layout>description of text field/campus</layout>
-              </layoutDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote>description of letters, possibly including <height>letter-heights</height>
-              </handNote>
-            </handDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace>Place of origin</origPlace>
-              <origDate>Date of origin</origDate>
-            </origin>
-            <provenance type="found"> Findspot and circumstances/context
-            </provenance>
-            <provenance type="observed">Modern location(s) (if different from repository, above)
-            </provenance>
-          </history>
-        </msDesc>
+         <listWit><!-- Stuctured data or just text? -->
+            <!-- One witness for each manuscript -->
+           <!-- possibility 1 -->
+            <witness xml:id="fakeID">Lontar, Leiden, UB, Or. 3723</witness> 
+           <!-- possibility 2: prefered one compared to  -->
+            <witness xml:id="_fakeID_">
+              <msDesc>
+                <msIdentifier>
+                  <settlement>Leiden</settlement>
+                  <institution>University Library (UB)</institution>
+                  <repository>Lontar</repository>
+                  <idno>Or. 23732</idno>
+                </msIdentifier> <!--Do you wish to give more details the manuscript? TBD with Adeline regarding the conceptuel content-->
+              </msDesc>
+            </witness>
+    </listWit>
       </sourceDesc> 
    </fileDesc>
       <profileDesc>
-	<langUsage>
+	<langUsage><!-- choose the language of your text -->
       	  <language ident="san-Latn">Sanskrit, romanized</language>
       	  <language ident="kaw-Latn">Old Javanese, romanized</language>
       	  <language ident="tam-Latn">Tamil, romanized</language>
@@ -55,26 +59,12 @@
 	</langUsage>
       </profileDesc>
   </teiHeader>
-  <facsimile>
-    <graphic url="photograph of text or monument"/>
-  </facsimile>
   <text>
     <body>
-      <div type="edition" xml:space="preserve">
-	<ab>
-	  <!--  -->
-	</ab>
+      <div type="edition" xml:space="preserve" xml:lang="lg-code"><!-- update the language code -->
+	  <!-- Structure as necessary with <p>, <ab>, <lg> depending the nature of the text -->
       </div>
-      <div type="apparatus">
-        <p>external apparatus criticus (if applicable)</p>
-      </div>
-      <div type="translation">
-        <p>translation(s)</p>
-      </div>
-      <div type="commentary">
-        <p>commentary</p>
-      </div>
-      <div type="bibliography">
+      <div type="bibliography"> <!-- to keep? -->
         <p>bibliography of previous editions, discussion, etc.</p>
       </div>
     </body>
