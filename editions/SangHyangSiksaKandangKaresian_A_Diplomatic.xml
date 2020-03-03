@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"> 
     <teiHeader xml:lang="eng">
         <fileDesc>
@@ -53,37 +51,419 @@
                 <ab>
 <!-- DSC_0073 above -->
                 <pb n="1v"/>
-                    <lb n="1"/>//, Vaṁ<!-- Interesting to note this kind of ornamented va, with regard to what we find in Batutulis -->, // ndaḥ nihan· varaḥhakna saṁ sadu, de saṁ mamet· hayu, hana ta <space type="binding-hole"/> <gap reason="lost" unit="character" quantity="1"/><seg type="component" subtype="body"><gap reason="lost" quantity="1" unit="component"/></seg>yaṁ ṣikṣa kandaṁ kaR̥ṣiAn· ṅaranya, kayatnak<unclear>n</unclear>a voṁ sakabeḥ, nihan· Ujaṙ saṁ sadu, ṅagə§<lb 
-                        n="2" break="no"/>larkәn· saṁ hyaṁ sikṣa kandaṁ kaR̥ṣiAn·, Ini saṁ hyaṁ dasa krәta, kundaṁṅən· Uraṁ r<space type="binding-hole"/>ye, Asiṁ nu dek· najəṙkən saṁ hyaṁ sasana krəta, pakənən=hәbәl· hirup· həbəl· ñawana    
-                    <lb n="3"/>, jadyan· kuras jadya tahun· dәg·dәg· tajәṙ jaya praṁ, ñovana na (U)raṁ rye,<space type="binding-hole"/><gap reason="lost" unit="character" quantity="1"></gap>ni byaktana saṁ hyaṁ dasakrәta ṅaranya, kalaṁkaṁ saṁ hyaṁ dasasila, maya maya saṁ hyaṁ dasamaṙga, ka<lb 
-                        n="4" break="no"/>prә<!-- note the pepet sign with three dots -->tyakṣaAn:a dasaIn·driya, pakәn· ṅrәtakәn· di bumi lambha, di bumi paR̥<space type="binding-hole"/><unclear>ka</unclear>, Ini pakәn u:raṁ ṅrәtakәn· bumi la<unclear>mbha</unclear><gap reason="lost" unit="character" quantity="3"/>ṁ<unclear>ja</unclear>lan· pañjaṁ tajuṙ, paka pradana, liñiḥ pipiṙ paA bu<!-- DSC_0074 middle --><pb n="2r"/><lb 
-                            n="1" break="no"/>ruAn·, Agәs· ma Imaḥ kaƏsi, L̥It· kaƏsi, parañje kaƏsi, huma ka<space type="binding-hole"/>OmeAn·, sadapan· karakṣa, palana ta hurip· hirup· sovera varas·, ñovana saṁ ma§<lb 
-                                n="2" break="no"/>vaṁ rat·, saṁkilaṁ di lambha, trәna taru lata guluma, hejo lem·bok tumuvuḥ<space type="binding-hole"/>, sarbapala vovohan· daḍi<!-- interesting phenomen of the distinction of da and ḍa -->na huḍan· landuḥ tahun· tumuvuḥ, daEk maka hurip· na Uraṁ rye,
-                    <lb n="3"/> Iña Eta saṁ hyaṁ sasana krәta, di lambha ṅarana, Ini saṁ hyaṁ dasakr̥әta, nu dipajarkәn·<space type="binding-hole"/><gap reason="lost" unit="character" quantity="1"/>laṁkaṁ saṁ hyaṁ dasasila ta, ya maya maya saṁ hyaṁ dasamarga ta, kaprәtyakṣaAn· na dasa In·dri<lb 
-                        n="4" break="no"/>ya,<g type="symbol" subtype="A-alike"/><!-- Arlo, what do you think about this kind of symbol? -->, Ini byaktana, cәli Ulaḥ baraṁ ḍeṅe mo ma nu siƏp· dideṅe, kenana d<space type="binding-hole"/>ora bañcana, saṁkan u:raṁ nәmu mala, na lunas· papa naraka, heṅan· lamun·na kapahayu ma, <unclear>sinә</unclear><pb n="2v"/><fw type="pageNum" place="left margin" n="2v"><num value="1">1</num></fw><lb 
-                            n="1" break="no"/>guḥ Utama bijil·na ti paṁR̥ṅә, mata Ulaḥ baraṁ dәL̥, mo ma nu siƏp· didәL̥, k<space type="binding-hole"/>ena na dora bañcana, saṁkan u:raṁ nimu mala, na lunas· papa kalesa, heṅan· lamu<unclear>n:a</unclear> 
+                    <lb n="1"/>//, Vaṁ<!-- Interesting to note this kind of ornamented va, with regard to what we find in Batutulis -->, // ndaḥ nihan· varaḥhakna saṁ sadu, de saṁ mamet· hayu, hana ta <space type="binding-hole"/> <gap reason="lost" unit="character" quantity="1"/><seg type="component" subtype="body"><gap reason="lost" quantity="1" unit="component"/></seg>yaṁ ṣikṣa kandaṁ kaR̥ṣiAn· ṅaranya, kayatnak<unclear>n</unclear>a voṁ sakabeḥ, nihan· Ujar saṁ sadu, ṅagə§<lb 
+                        n="2" break="no"/>larkәn· saṁ hyaṁ sikṣa kandaṁ kaR̥ṣiAn·, Ini saṁ hyaṁ dasa krәta, kundaṁṅən· Uraṁ r<space type="binding-hole"/>ye, Asiṁ nu dek· najərkən saṁ hyaṁ sasana krəta, pakənən=hәbәl· hirup· həbəl· ñawana    
+                    <lb n="3"/>, jadyan· kuras jadya tahun· dәg·dәg· tajәr jaya praṁ, ñovana na (U)raṁ rye,<space type="binding-hole"/><gap reason="lost" unit="character" quantity="1"></gap>ni byaktana saṁ hyaṁ dasakrәta ṅaranya, kalaṁkaṁ saṁ hyaṁ dasasila, maya maya saṁ hyaṁ dasamarga, ka<lb 
+                        n="4" break="no"/>prә<!-- note the pepet sign with three dots -->tyakṣaAn:a dasaIn·driya, pakәn· ṅrәtakәn· di bumi lambha, di bumi paR̥<space type="binding-hole"/><unclear>ka</unclear>, Ini pakәn u:raṁ ṅrәtakәn· bumi la<unclear>mbha</unclear><gap reason="lost" unit="character" quantity="3"/>ṁ<unclear>ja</unclear>lan· pañjaṁ tajur, paka pradana, liñiḥ pipir paA bu<!-- DSC_0074 middle --><pb n="2r"/><lb 
+                        n="1" break="no"/>ruAn·, Agәs· ma Imaḥ kaqәsi, L̥It· kaqәsi, parañje kaqәsi, huma ka<space type="binding-hole"/>OmeAn·, sadapan· karakṣa, palana ta hurip· hirup· sovera varas·, ñovana saṁ ma§<lb 
+                        n="2" break="no"/>vaṁ rat·, saṁkilaṁ di lambha, trәna taru lata guluma, hejo lem·bok tumuvuḥ<space type="binding-hole"/>, sarbapala vovohan· daḍi<!-- interesting phenomen of the distinction of da and ḍa -->na huḍan· landuḥ tahun· tumuvuḥ, daEk maka hurip· na Uraṁ rye,
+                    <lb n="3"/>Iña Eta saṁ hyaṁ sasana krәta, di lambha ṅarana, Ini saṁ hyaṁ dasakr̥әta, nu dipajarkәn·<space type="binding-hole"/><gap reason="lost" unit="character" quantity="1"/>laṁkaṁ saṁ hyaṁ dasasila ta, ya maya maya saṁ hyaṁ dasamarga ta, kaprәtyakṣaAn· na dasa In·dri<lb 
+                        n="4" break="no"/>ya,<g type="symbol" subtype="A-alike"/><!-- Arlo, what do you think about this kind of symbol? -->, Ini byaktana, cәli Ulaḥ baraṁ ḍeṅe mo ma nu siqәp· dideṅe, kenana d<space type="binding-hole"/>ora bañcana, saṁkan u:raṁ nәmu mala, na lunas· papa naraka, heṅan· lamun·na kapahayu ma, <unclear>sinә</unclear><pb n="2v"/><fw type="pageNum" place="left margin" n="2v"><num value="1">1</num></fw><lb 
+                        n="1" break="no"/>guḥ Utama bijil·na ti paṁR̥ṅә, mata Ulaḥ baraṁ dәL̥, mo ma nu siqәp· didәL̥, k<space type="binding-hole"/>ena na dora bañcana, saṁkan u:raṁ nimu mala, na lunas· papa kalesa, heṅan· lamu<unclear>n:a</unclear> 
                     <lb n="2"/>kapahayu ma, sinaṁguḥ Utamaniṁ dәL̥, kulit· Ulaḥ dipake gulaṁgasehan·<space type="binding-hole"/>, ku panas· ku tiIs·, kenana dora bañcana, saṁkanu:raṁ nәmu mala, na lunas· papa nara<lb 
                         n="3" break="no"/>ka, heṅan· lamun·na kapahayu ma, sinәṁguḥ Utama bijil·na ti kulit·,<space type="binding-hole"/>letaḥ Ulaḥ salaḥ nu dirasakәn·, kena na dora bañcana, saṁkan u:raṁ nәmu mala, na luna<lb 
-                            n="4" break="no"/> s· papa naraka, heṅan· lamun·na kapahayu ma, sinәṁguḥ Utama bijil·na ti<space type="binding-hole"/>letaḥ, Iruṁ Ulaḥ salaḥ Ambhә, kenana dora bañcana, saṁkan u:raṁ nәmu mala, na lunas· papa
+                        n="4" break="no"/> s· papa naraka, heṅan· lamun·na kapahayu ma, sinәṁguḥ Utama bijil·na ti<space type="binding-hole"/>letaḥ, Iruṁ Ulaḥ salaḥ Ambhә, kenana dora bañcana, saṁkan u:raṁ nәmu mala, na lunas· papa
 <!-- DSC_0074 below -->
             <pb n="3r"/>
-                    <lb n="1"/>naraka, heṅan· lamun:a kapahayu ma, sinәṁguḥ Utama bijil·na ti Iruṁ, suṅu<space type="binding-hole"/>t· Ulaḥ baraṁ carek· kena na dora bañcana, na lunas· papa naraka, heṅan· lamun:a kapa
-                    <lb n="2" break="no"/>hayu ma, sinәṁguḥ Uta<add place="below">ma</add> bijil·na ti suṁṅut·, L̥ṁṅәn· mulaḥ baraṁ cokot·, ke<space type="binding-hole"/>nana dora bañcana, na lunas· papa naraka, heṅan· lamun:a kapahayu ma, sinәṁguḥ Utama bi
-                    <lb n="3" break="no"/>jil·na ti L̥ṅәn·, suku mulaḥ baraṁ tiñcak·, kenana dora bañcana, na luna<space type="binding-hole"/>s· papa naraka, heṅan· lamun:a kapahayu ma, sinәṁguḥ Utama bijil·na ti suku, payu U
-                    <lb n="4" break="no"/>laḥ dipake kәtәr, kena na dora bañcana, na lunas· papa naraka, heṅan· la<space type="binding-hole"/>mun·na kapahayu ma, sinәṁguḥ Utama bijil·na ti payu, baga purusa Ulaḥ dipake kañ<unclear>co</unclear>
+                    <lb n="1"/>naraka, heṅan· lamun:a kapahayu ma, sinәṁguḥ Utama bijil·na ti Iruṁ, suṅu<space type="binding-hole"/>t· Ulaḥ baraṁ carek· kena na dora bañcana, na lunas· papa naraka, heṅan· lamun:a kapa<lb 
+                        n="2" break="no"/>hayu ma, sinәṁguḥ Uta<add place="below">ma</add> bijil·na ti suṁṅut·, L̥ṁṅәn· mulaḥ baraṁ cokot·, ke<space type="binding-hole"/>nana dora bañcana, na lunas· papa naraka, heṅan· lamun:a kapahayu ma, sinәṁguḥ Utama bi<lb 
+                        n="3" break="no"/>jil·na ti L̥ṅәn·, suku mulaḥ baraṁ tiñcak·, kenana dora bañcana, na luna<space type="binding-hole"/>s· papa naraka, heṅan· lamun:a kapahayu ma, sinәṁguḥ Utama bijil·na ti suku, payu U<lb 
+                        n="4" break="no"/>laḥ dipake kәtәr, kena na dora bañcana, na lunas· papa naraka, heṅan· la<space type="binding-hole"/>mun·na kapahayu ma, sinәṁguḥ Utama bijil·na ti payu, baga purusa Ulaḥ dipake kañ<unclear>co</unclear>
 <!-- DSC_0073 below -->
              <pb n="3v"/><fw type="pageNum" place="left margin" n="3v"><num value="2">2</num></fw>
                     <lb n="1" break="no"/>laḥ, kena na dora bañcana, na lunas· papa naraka, heṅan· lamun·na<space type="binding-hole"/>kapahayu ma, sinәṁguḥ U<add place="below">ta</add>ma bijil·na ti baga lavan· purusa, ya ta sinaṁguḥ dasakrәta
-                    <lb n="2"/> ṅarana, <g type="symbol" subtype="A-alike"/>, Aṁgәs· ma kapahayu na dora sapuluḥ, rampes· tvaḥ na <add place="below">U</add>raṁ rye<space type="binding-hole"/>, makaṅuni tvaḥ saṁ deva ratu, nihan· sinaṁguḥ dasaprәbak·ti ṅaranya, Ana<add place="below">ba</add>kti di ba
+                    <lb n="2"/>ṅarana, <g type="symbol" subtype="A-alike"/>, Aṁgәs· ma kapahayu na dora sapuluḥ, rampes· tvaḥ na <add place="below">U</add>raṁ rye<space type="binding-hole"/>, makaṅuni tvaḥ saṁ deva ratu, nihan· sinaṁguḥ dasaprәbak·ti ṅaranya, Ana<add place="below">ba</add>kti di ba
                     <lb n="3" break="no"/>pa, sa, Eve bakti di laki, 2, hulun· bakti dipa<add place="below">ca</add>ndaAn·, 3, sisyi bakti di<space type="binding-hole"/>guru, voṁ tani bak·ti di <del rend="ui">da</del>va<del rend="iu">ta</del>, vado bakti di man·tri, 6, man·tri  bak·ti di
                     <lb n="4"/>nu naṁgana:n·, 7, nu naṁganan· bak·ti di maṁkubumi, maṁkubumi bak·ti<space type="binding-hole"/>di ratu, 9, ratu bak·ti di devata, 0, deva<add place="below">ta</add> bakti di hyaṁ, yu ta sinaṁguḥ dasaprәbak·
 
 <!-- DSC_0076 above -->
             <pb n="4r"/>
                     <lb n="1" break="no"/>ti ṅarana, 0, Ini na lakukәnәn·, talataḥ saṁ sadu jati, oṁkara nama sivaya, sә<space type="binding-hole"/>mbhaḥniṁ hulun·, di saṁ hyaṁ pañcatatagata, pañca ṅaraniṁ lima, tata ma ṅaraniṁ sabda, gata ta ma ṅa
-                    <lb n="2"/>raniṁ raga, ya Eta na pahayuƏn· sareAn:ana, pañcakṣara guru-guruniṁ janma, ka<space type="binding-hole"/>, pañcakṣara ma byak·ta, nu <add place="below">ka</add>koṁkon· kavrәton·, kacakṣuḥ <add place="below">ka</add> In·driya, guru ma pa
+                    <lb n="2"/>raniṁ raga, ya Eta na pahayuqәn· sareAn:ana, pañcakṣara guru-guruniṁ janma, ka<space type="binding-hole"/>, pañcakṣara ma byak·ta, nu <add place="below">ka</add>koṁkon· kavrәton·, kacakṣuḥ <add place="below">ka</add> In·driya, guru ma pa
                     <lb n="3"/>nañaAn· na Uraṁ rye, ña mana diṅaranan· guruniṁ janma, saṁ moha ma, saAgәs·<space type="binding-hole"/>na Aya bvana, Ini byaktana ṅaranya, <del rend="strikeout">ta</del>ya pañca byapara, saṁ hyaṁ prәtivi, Apaḥ teja, bayu, mvaṁ Aka
                     <lb n="4"/>sa, carek ṣaṁ sadu mahapurusa, Eta keḥ drәbya Uraṁ, kaṁkәn· prәtivi kulit·,<space type="binding-hole"/>kaṁkәn· Apaḥ daraḥ, ciduḥ kaṁkәn· teja panon·, kaṁkәn· bayu tulaṁ, kaṁkәn· <del rend="strikeout">pa</del> Aka<add place="below">s</add>:a 
+
+<!-- DSCF_0075 above -->
+             <pb n="4v"/><fw type="pageNum" place="left margin" n="4v"><num value="3">3</num></fw>
+<lb n="1"/>sa<add place="below">ka</add>la, Iya prәvi di sarira ṅaranya, ña mana dikaṁkәkәn· ka nu mava bhumi, ya maṅupati da<space type="binding-hole"/>di prabhu ra:ma R̥ṣi disi mvaṁ tarahan·, Ini pañcaputra, prathivi saṁ maṁṅukuḥhan·, Apaḥ saṁ kaṭuṁmara:laḥ, 
+<lb n="2"/>teja saṁ karuṁkalaḥ, bhayu: saṁ sandaṁgrәbha, Akaśa saṁ vr̥әtkiṇdayun·, Ini pañcakusika<space type="binding-hole"/>, saṁ kusika, di gunuṁ, saṁ garga di rumbhut·, saṁ mesṭi di mahameru, saṁ purusa di man·diri, saṁ patañja<lb 
+    n="3"/> la di pañjulan·, lamun:a pahi kaOpekṣa saṁ hyaṁ vuku lima, na bhvaṇa bo<space type="binding-hole"/>A halimpu, Ikaṁ deśa kabeḥ, desa beḥ ṅaranya, purba, dakṣina, pasirma, Utara, mada<lb 
+    n="4"/> ya, purba ti timur, kahanan· hyaṁ Iśora, putiḥ rupanya, dakṣina kidul·, ki<space type="binding-hole"/>hanan· hyaṁ br̥ḥma, baṁ rupanya, pasirma kulvan·, kahanan· hyaṁ mahadeva, kuniṁ rupanya, 
+
+<!-- DSC_0076 Middle -->
+<pb n="5r"/>
+    <lb n="1"/>Utara lor, kahanan· hyaṁ viśnu, hiR̥ṁ rupanya, madya tәṅaḥ, kahanan· hyaṁ<space type="binding-hole"/>sivaḥ, varna rupanya, ña mana sakitu saṁ hyaṁ vuku lima di bhvaṇa, Ini vuku lima di mahapandita
+    <lb n="2"/>, sandi ma karasa si tutur, tapa ma karasa si liṁlaṁ, luṁguḥ ma karasa si pagәḥ, prә<space type="binding-hole"/>tyakṣa ma karasa syasәmbhava, kaL̥pasәn· ma karasa madumi tan· kaduman·, maṁhi<lb 
+        n="3" break="no"/>ṅi tan· kahiṅinan·, sakitu vuku lima di maha pandita, <g type="symbol" subtype="A-alike"/>, nihan· pavvi<space type="binding-hole"/>tan·niṁ kR̥ta, sya saṁ devata lima, pahi ṅavakan· di maneḥ, pahi miR̥ṁṅәḥ ruA 
+    <lb n="4"/>di maneḥ, hәṅan· <unclear>lamun:a mo</unclear> karakṣa ma, kadyaganiṁ vilut:umәmu vilu<space type="binding-hole"/>t·nya bәnәr tumәmu benernya, kitu keḥ Eta, ku tvaḥniṁ janma mana kR̥ta,, ku tvaḥniṁ 
+
+<!-- DSC_0075 middle -->
+<pb n="5v"/><fw type="pageNum" place="left margin" n="5v"><num value="4">4</num></fw>
+    <lb n="1"/>janma nana hayu, <g type="symbol" subtype="A-alike"/>, Ini karmaniṁ hulun·, sakajalan:uraṁ hulun·, karma<space type="binding-hole"/>ma ṅaranya pibudiqәn·, tikaḥ paripolaḥ, sakajalan· ṅaranya, maka takut· maka ja⌈<lb 
+        n="2" break="no"/>rot·, maka Atoṁ maka tәAṁ, di tiṁkaḥ di pitvaḥhәn·,  di Ulaḥ di pisabdaAn·<space type="binding-hole"/>, maka ṅuni lamun· di haR̥pәn· saṁ devaratu pun·, maka satya di kahulunan·, mana lo <lb 
+        n="3" break="no"/>kat dasakalesa, boA ruvat· mala mari papa, kapaṁguḥniṁ kasorgaAn·, lamu<space type="binding-hole"/>n· tәtәIṁ ṅavakan· karmaniṁ hulun·, kәtu Eta L̥viḥ madan:usya titindiḥ Ukir, ditapa <lb 
+        n="4" break="no"/>di luhur gunuṁ, kena leraṁ ditapa, dina hunur gajaḥ hunur siha, dәkәt:ә maha<space type="binding-hole"/>bañcana, Ini tvaḥniṁ janma, pigunaqәn· na uraṁ rye, Ulaḥ 
+                    <app><lem>mo</lem><note>The shape of <foreign>tarung</foreign> is unusual, it is look like <foreign>wulu</foreign> with the wavy stroke to the bottom, probably it was added latter by the scribe.</note></app> turut· saṁ hyaṁ sikṣa ka<!-- DSC_0076_below --><pb n="6r"/><lb 
+                        n="1" break="no"/>nda kaR̥śiAn· jaga raṁ dek luphut: iṁ na pañcaganti saṁsara, mulaḥ carut· mulaḥ<space type="binding-hole"/>sorereḥ, mulaḥ ñaṁcarukәn· maneḥ, kaliṅa<add place="below">na</add> ñaṁcarutkәn· maneḥ ma ṅaranya, na A<lb 
+                        n="2" break="no"/>ya dipajar han·tә, na han·tә dipajar vaya, na Iña dipajar laIn·, na laI<space type="binding-hole"/>n· dipajar Iña, ña karaḥ hdap·na makira-kira, budi budi ṅajrәrum·, mijahәtan·, E<lb 
+                        n="3" break="no"/>ta byaktana ñaṁcarutkәn· maneḥ ta ṅarana, ñaṁcarutkәn· sakaliḥ ma ṅarana<space type="binding-hole"/>, mipit· mo Amit·, ṅala mo meta, ṅajuput· mo sadu, makaṅuni tunumpu ma<lb 
+                        n="4" break="no"/>liṁ, ṅәtal· ṅabegal·, siṁ savatәk cekap· carut·, ya ñaṁcarutkәn· sakaliḥ<space type="binding-hole"/>ṅarana, saṁṅuni tu meOr, ṅodok·, ñopet· ṅaR̥but· ṅa22goḥ, papañjiṁṅan·,     	             
+ 
+<pb n="6v"/><fw type="pageNum" place="left margin" n="6v"><num value="5">5</num></fw>
+<lb n="1"/>makaṅuni ṅotok ṅovo, di pamajik:an·, di paṁhulu tandaṁ, makaṅuni di to<space type="binding-hole"/>haAn· di maneḥ, Itu L̥viḥ mulaḥ dipiguna, dipitvaḥ ku Uraṁ hulun·, Ulaḥ mo pake na
+<lb n="2"/>sabḍa Atoṁ tәAṁ gurubasa, bakti sukṣila di pada janma, di kulakadaṁ baraya, ma<space type="binding-hole"/>ka ṅuni di tohaAn:uraṁ , suku ma pake disila, L̥ṅәn· ma pake Umun· jaga raṁ pacareK
+<lb n="3"/>dәṁ menak dәṁ guti, dәṁ buhaya Iṁ kaliḥ, dәṁ Asṭi laraṁṅan·, makaṅuni dәṁ toha<space type="binding-hole"/>An· Uraṁ, jaga raṁ digunakәn·, mulaḥ suraḥ di tinәṁ Uraṁ, saṁṅuni salaḥ tembhal·, kajәqәṁ sә
+<lb n="4"/>mu mo suka, ku tohaAn· Uraṁ, Ulaḥ pamali bisi Urug· bәnaṁ ditapa, hi<space type="binding-hole"/>laṁ bәnaṁ cakal· bakal·, bisi L̥ṅit· batri hese, kapaṇguḥ ku saṁ hyaṁ jagat· saṁsara, katigr̥ә                
+
+<pb n="7r"/>
+<lb n="1"/>ha ku saṁ dewa ratu, lamun· hamo satya di tohaAn· Uraṁ, Agәs· ma jaga raṁ<space type="binding-hole"/>waya di kagәriṁ, jaga raṁ palay·, jaga raṁ IR̥g·, duga duga majar maneḥ tәtәIṁ Amat·. mana dipa 
+<lb n="2"/>jar satya di kahulunan·, heṅan· jaga raṁ cәta ma mulaḥ luhyi, mulah kuciwa<space type="binding-hole"/>, mulaḥ ṅotoṁ dipiwaraṁ, mulaḥ hiri mulaḥ dәṁki, dәṁ dәṁṅәn· sakahulunan·, maka ṅuni 
+<lb n="3"/>ñәqәṁ nu mәnaṁ pujyan·, mәnaṁ paR̥kan·, ñәqәṁ nu dineneḥ ku tohaAn·,<space type="binding-hole"/>teka dek ñәt·ñot:inәṁ Uraṁ, haywa pamali, kapamalyin:ana karaḥ, jadi nәluḥ, baR̥
+<lb n="4"/>ḥ hate, hamo bәnaṁ ditabaan·m jamp/e\ mo matiḥ, pakṣa mo mrәtyakṣa,<space type="binding-hole"/>ja hantә tәka turutan· saṁhyaṁ sikṣa kandaṁ kaR̥ṣiAn·, kitu jaga raṁ naganan·, mulaḥ kira ki
+
+<pb n="7v"/><fw type="pageNum" place="left margin" n="7v"><num value="6">6</num></fw>
+<lb n="1"/> ra digilaṁṅan·, jaga raṁ kagәlaṁṅan·, mulaḥ mo bakti di nu naṁganan·, kena Itu<space type="binding-hole"/>tunda saṁ dewa ratu, ◉, jaga raṁ kәna pañuruhan·, mulaḥ mo rakṣa saṁ hyaṁ sikṣa  kandaṁ kaR̥ṣiAna 
+<lb n="2"/>·, pakәn:uraṁ satya dipiwraṁṅan·, heṅan· lamun:u ṅalor ṅidul· ṅulon·<space type="binding-hole"/>ṅetan·, gәs· ma mulaḥ siwok cate, mulaḥ simur can·te, mulaḥ simar can·te, mu
+<lb n="3"/>laḥ ḍarma can·te, yata sinaṁguḥ saṁ hyaṁ catur yatna ṅaranya, ◉, Ini kaliṅana,<space type="binding-hole"/>siwok can·te ma ṅarana, kawujukan· ku hakan· ninum·, simur can·te ma ṅarana, sa
+<lb n="4"/>limaha milu ṅaramakәn:u maliṁ, nu ṅaR̥but·, nu meOr, ya salah doṁdo<space type="binding-hole"/>nan· ṅaranya, simar can·te ṅarana, ṅala dagaṁṅan·, mas· pirak lalambaran·, hantә di                    
+
+<pb n="8r"/>
+<lb n="1"/>titaḥ ku nu miwaraṁ, ya salaḥ sadye ṅarana, ḍarmacante ma ṅarana, daranan·<space type="binding-hole"/>di kacәcәb· tohaAn· nuraṁ, disuruḥ ñokot· ṅaḍarat· matyan· nu tan· yo 
+<lb n="2"/>g·ya ka tohaAn·, gumantiya ṅisәsan·, kena wagәy·, kena kulakadaṁ,<space type="binding-hole"/>kena baraya, Eta Ulaḥ dipiguna, kena pamali salaḥ binariḥ ṅarana, Itu ḍarmmacan·
+<lb n="3"/>te ṅarana, Eta mulaḥ dipitwaḥ ku Ura hulun·, bogoḥ dikacәcәb·, cә<space type="binding-hole"/>cәb· dikabogoḥ, Itu tan· yog·ya dipitwaḥ ku Uraṁ hulun·, ◉, Ini pakәna
+<lb n="4"/>· uraṁ nurut· ka tohaAn·, pakәn· Uraṁ pañjaṁ dipihulun·, pakәn· Uraṁ hә<space type="binding-hole"/>bәl· diAsa, ku tohaAn· Uraṁ turut saṁ hyaṁ sikṣa kandaṁ kaR̥ṣiAn·, biR̥ṅәḥ na paṁ 
+
+<pb n="8v"/><fw type="pageNum" place="left margin" n="8v"><num value="7">7</num></fw>
+<lb n="1"/>hulu tandaṁ, lamun:a, ñәsәl· tohaAn·, milu Uraṁ ñәsәl· dәI dәṁ toha<space type="binding-hole"/>An·, lamun:a muji tohaAn·, milu Uraṁ muji dәI dәṁ tohaAn·, lamun· hamo §
+<lb n="2"/>ma bisa milu muji milu meda dәṁ tohaAn·. tosta ciṁciṁ thәr Uraṁ bakti ka t<space type="binding-hole"/>o haAn·, jaga raṁ L̥mpaṁ ṅalasan·, baju simbut· paṁṅadwa, dataṁ ma ka sisi, sakarajәn· dibaju , , 
+<lb n="3"/>disimbut·, lamun· hamo dәṁ tohaAn·, Isәskәn· na sikṣa kandaṁ kaṣyina<space type="binding-hole"/>·, sikṣaAn:ana ta, Ulaḥ dek· ṅudәr ka huma beEt· sakaliḥ, ka kebon· sakaliḥ, ha 
+<lb n="4"/>mo ma bәnaṁ Uraṁ laku sadu, salaṁ kәboAn· niṁ Alas·, kayu batri naṁtu, bwaḥ<space type="binding-hole"/>bәnaṁ ṅararagyen·, taṁgәḥkәn· suluḥ, turuban supa, caṁR̥dan· tәwwan·, Odeṁ ñәruA                          
+ 
+—————
+8v.2] ther] tanda layar mirip cecak tetapi dengan ukuran yang lebih besar dan ujung garis lebih panjang ke bawah. 
+
+<pb n="9r"/>
+<lb n="1"/>An·, Eṅaṁ, Ulam·, parakan·, siṁ sawatәk bhabhay:an·, Ulaḥ uraṁ baraṁ Ala, saṁ ṅu<space type="binding-hole"/>ni tu nurun·kәn· sakaliḥ, Ulaḥ Eta dipiguna, kenana puhun· niṁ dosa, taṁka 
+<lb n="2"/>l· niṁ papa kalesa, jaga raṁ nәmu jalan·, de gәde beEt·, baṅat· dicaṁcut·<space type="binding-hole"/>dipaṁṅadwa, sugan· Uraṁ pajәqәṁ dәṁ gusti, dәṁ mantri, Ulaḥ mo paṁṅidal·kәn·, paṁ ṅadoko
+<lb n="3"/>koṁkәn·, lamun· bujaṁga braḥmana, wiku haji maṁkubumi, Anak· ratu, bәhar k<space type="binding-hole"/>oko2, maka ṅuni guru loka, Ulaḥ mo pahi paṁṅidalkәn·, paṁdәUkәn·, kena Itu guru saṁ prә 
+<lb n="4"/>bu, ◉, Iṅәt·kәn· na sikṣa kandaṁ kaR̥syin·, dәṁ Isәskәn· na haloAn· §<space type="binding-hole"/>Ulaḥ dek· ṅәrikәn· Asṭi laraṁṅan· sakaliḥ, rara hulañjar sakaliḥ bisi kәna ku haloAna     
+
+————— 
+9r.3] bujaṁga] aksara b terlihat sebagian akibat terkelupas karena gigitan serangga.    
+
+
+<pb n="9v"/><fw type="pageNum" place="left margin" n="9v"><num value="8">8</num></fw>
+<lb n="1"/>· sipaṁhawanan·, maka ṅuni ṅa2waṁ· taṁṅan·, sapaṁluṁguḥhan· di cataṁ di bale di<space type="binding-hole"/>tәpas·, patutuṁgalan·, haloAn· sipaṁluṁguḥhan· ṅarana, patañjәr tañjәr di pipir, di buruAn· 
+<lb n="2"/>patutuṁgalan·, ya haloAn· si panaḥtarran· ṅarana, ne/m·\balan· nu batuk nu ṅa<space type="binding-hole"/>dehem·, nu ṅaR̥hak·, makaṅuni AmbuIṁ kaliḥ ṅawiḥ, ya L̥mbu Agalaṁ ṅaranya, ñanda dirut· 
+<lb n="3"/>saṁ hyaṁ kaliḥ dәUk·, di tihaṁ di kayu di batu, ñәqәṁ Iña Aṁgәs· diri disiliḥha<space type="binding-hole"/>n· ñanda, ṅarana L̥mbu Aṁgasin·, Itu keḥna Iṅәtkәn·, lamun· dek luput· naraka, sa
+<lb n="4"/>ṅuni sapaṁṅinәpan·, sapamajikan·, satәpas·, sabale, dәṁ saṁ hyaṁ kaliḥ,<space type="binding-hole"/>dәṁ Asṭi laraṁṅan· sakaliḥ, ṅarana kәbo sapitunaḥhan·, ña keḥna Iṅәt·kәnәn·              
+
+—————
+9v.2] agalaṁ] aksara g tampak semula ditulis sebagai k, tetapi satu garis di belakangnya terlihat dihapus.
+
+
+<pb n="10r"/>
+<lb n="1"/>, sinaṁguḥ Ulaḥ pamali ṅarana, ◉, Itu haywa Ulaḥ deK diturut· ku hulun· sa<space type="binding-hole"/>kaliḥ, lamun· Uraṁ dek maAn· Iña ma, maka majar ka paṁhulu tandaṁna, lamun· kapicaya 
+<lb n="2"/>ma, samayakәn· ku gәriṁna ku paEḥna ku L̥ṅitna, po2c· mati saryena<space type="binding-hole"/>na Eta baAn·, hamo tu Aya na pidosaqәn·, ja kolot·na samaya ma nin:a Agama
+<lb n="3"/>, hamo ma dipicaya Ulaḥ, lamun:a kәdә ma dek maAn· Iña, gәriṁ ma nuluṁ, pa<space type="binding-hole"/>Eḥ L̥ṅit· ma ṅagatyan·, saka dәg·dәg·na, saṁ maṁkana kayatnakna, ◉, nihan· muwaḥ jaga raṁ 
+<lb n="4"/>kadataṁṅan· ku same, paṁṅuraṁ dasa calagara, Upәti paṁgәR̥s· R̥ma, maka suka gi<space type="binding-hole"/>I Uraṁ, maka rasa kadataṁṅan· ku kulakadaṁ, ku baraya ku adi lañcәk·, Anak miṭā suAn· ka 
+
+ 
+<pb n="10v"/><fw type="pageNum" place="left margin" n="10v"><num value="9">9</num></fw>
+<lb n="1"/>ponakan·, sakitu Eta kaṁkәn:a, ṅan· lamun:aya paṁḥaAt· uraṁ, kicap· Inu<space type="binding-hole"/>m· sibut· cawәt· suka drәbya, maka rasa puja ñaṁraha, ka hyaṁ ka dewata, Aṁgәs· ma jaga raṁ di 
+<lb n="2"/>gunakәn·, ka gaga ka sawaḥ, ka seraṁ Agәṁ, ṅikis·, marigi, ṅandaṁ ṅaburaṁ, marak·<space type="binding-hole"/>muday·, ṅadodoger, maṁpayaṁ ñaIr bicaṁ, siṁ sawatәk guna tohaAn·, Ulaḥ suṁsut· 
+<lb n="3"/>Ulaḥ suraḥ, Ulaḥ purik dәṁ gariṁsiṁ , pahi sukakәn· saryenana, maka rasa guna Uraṁ, ◆,<space type="binding-hole"/>ṅan· lamun:uraṁ pulaṁ ka dayәḥ Ulaḥ ṅisiṁ di pigir jalan·, di sisi Imaḥ di tutuṁ caAmna, bisi 
+<lb n="4"/>kaAmbә ku menak ku gus·ti, suṅuni tuku nu 2ṁṅaḥ 2ṁṅaḥ, bisi kasumpaḥ kapadaḥ<space type="binding-hole"/>kәn·, Ambu bapa paṁguruAn·, kapapas· ka nu ka2lot·, ku twaḥ Uraṁ gagabaḥ, ṅan· lamuna                 
+
+—————
+10v.1. cawәt] aksara c terlihat seperti w dengan garis lengkung bawah yang terputus. — 10v.2. sawaḥ] aksara w terlihat sebagian karena keropos — 10v.3. gariṁsiṁ] di atas aksara g terdapat tanda ṁ yang besar, bentuknya seperti vokalisasi i yang diisi hitam penuh.  — Ulaḥ] bentuk aksara l tampak seperti perbaikan dari r.  
+
+
+<pb n="11r"/>
+<lb n="1"/>· nurut· saṁ hyaṁ sikṣa ma, ṅisi ma tujuḥ L̥ṁkaḥ ti jalan· kiIḥ ma tәlu L̥ṁ<space type="binding-hole"/>kaḥ ti jalan·, b_ _ mo nәmu picarekәn· /sa\kaliḥ, ja Uraṁ ñaho di Ulaḥ pamali, ka, U §
+<lb n="2"/>laḥ ma duka, pamali ma paEḥ, dәṁ jәṁjәqәṁ gagawar, pucuk tambaluṁ, sugan· tampya<space type="binding-hole"/>n· daL̥m·, kanḍaṁ laraṁ, bale laraṁṅan·, maka ṅuni ṅalaṁsinaṁ, mapag· ṅaliwat· ratu macaṁ 
+<lb n="3"/>karma, kena Itu parati dosa, jaga raṁ Asup· daL̥m· maka reA lyәk·, suga<space type="binding-hole"/>n· ṅarumpak·, nәbuk nәmbuṁ, mәgatan· jajaran·, jaga raṁ dәUk· Ulaḥ salaḥ haR̥p·, ma
+<lb n="4"/>ka ramp/e\s· disila, dәṁ sugan· Uraṁ dibaAn· lemek:u tohaAn·, ti<space type="binding-hole"/>nәṁkәn· picarekәn· Uraṁ, Asiṁ sәqәp· maka suka ka tohaAn·, dәṁ maka Ilik· Ilika                  
+
+—————
+11r.1. nurut·] di atas gugus ru terdapat bekas tanda vokalisasi i yang telah memudar. — b_ _] dalam Atja  Danasasmita (1981) terbaca boa.    
+
+
+<pb n="11v"/><fw type="pageNum" place="left margin" n="11v"><num value="10">10</num></fw>
+<lb n="1"/>· dina turutanәn·, manṭi gusti, kaAsa Asa, bayaṁkara, nu maR̥k·, paṁṅalasan·<space type="binding-hole"/>, jurulukis·, pan·de daṁ pan·de mas, pan·de gәlaṁ, pan·de wṣa, guru wdi /me\du wayaṁ, ku § 
+<lb n="2"/>mbaṁ gәndiṁ tapukan·, bañolan·, pahuma pañadap·, pañawaḥ pañapu, bela ma<space type="binding-hole"/>ti, juru moha, barat· katiga, pajurit·, pañupit·, pamanaḥ pamraṁ, paṅuraṁ dasa calagara, 
+<lb n="3"/>rare Aṅon·, paceleṁṅan·, pakotokan·, palika prәtәL̥m·, siṁ sa<space type="binding-hole"/>watәk guna, Aya ma nu satyi di guna di kahulunan·, Eta keḥna turutanәn·, kena Eta
+<lb n="4"/>ṅawakan· tapa di nagara, Aya ma na Uraṁ nu kasәsәl· ku /to\haAn·, Eta keḥ U<space type="binding-hole"/>laḥ diturutwaḥna, bisi Uraṁ kasәsәl· dәI, Ini babandiṁna, Upama janma L̥mpaṁ ṅala  
+
+—————
+11v.4. bisi] aksara b terlihat sebagian karena rumpang.               
+
+<pb n="12r"/>
+<lb n="1"/>papaduṁṅan·, tutulisan·, suI naña nu diguna, tәmu ku rasa soraṅan<space type="binding-hole"/>·, ku bәnaṁna Ilik di guna sakaliḥ, ya kaṁkәn· guru vrәri ṅarana, nәmu Agama ti Anak·,
+<lb n="2"/>ya kaṁkәn· guru rare ṅarana, nәmu ḍarmma ti Aki ma, ya kaṁkәn· guru kaki<space type="binding-hole"/>ṅarana, nәmu ḍarmma ti lañcәk ma, ya kaṁkәn· guru kaṁkaṁ ṅarana, nәmu ḍarmma ti toA ma, ya
+<lb n="3"/>kaṁkәn· guru Uva ṅarana, nәmu ḍarmma ti gәsan· lumәpaṁ, di lambhur di gәsan· ṅavә<space type="binding-hole"/>ṅi, di gәsan· qәR̥n·, di gәsan· majik ma, ya kaṁkәn· guru havan· ṅarana, nәmu ḍarmma ti Iduṁ
+<lb n="4"/>ti pa\x/ba, ya ta guru kamulan· ṅarana, maka ṅuni lamun· hatur ka mahapandita,<space type="binding-hole"/>ya kaṁkәn· guru Utama, ya kaṁkәn· guru mulya, ya kaṁkәn· guru primana, ya kaṁkәn· gu
+
+———
+12r.2. kaṁkәn·] di antara gugus kәn· terdapat noda tinta.    
+12r.4. paba] di atasnya terletak tanda koreksi berupa x. ḍengan melihat konteks dalam frasa di depannya dan tanda koreksi, gugus paba seharusnya dibaca bapa. 
+
+
+<pb n="12v"/><fw type="pageNum" place="left margin" n="12v"><num value="12">12</num></fw>
+<lb n="1"/>ru kaUpadesaAn·, yata sinaṁguḥ catur Utama vaṅarana, ◉, ña mana kitu la<space type="binding-hole"/>mun· Agәs di karmaniṁṅ akarma, di tvaḥ riṁṅ atvaḥ, // Agәs· pahi kaIlikan·, nu gopel·
+<lb n="2"/>nu rampes· nu hala nu hayu, kitu lamun· Aya nu muji Uraṁ, suI ta suk<space type="binding-hole"/>e gәI Uraṁ, guman·ti pulaṁkәn·kәanu muji, pakәn· Uraṁ mo kapәtiṁṅan· kupamu
+<lb n="3"/>ji sakaliḥ, lamun· Uraṁ daEk dipuji ma, /ka\dyaṁganiṁ galaḥ dawa tinambuṁṅana<space type="binding-hole"/>· tuna, rasa atoḥ ku na pamuji, Agәs ma dipake haṁkara, ja ṅarasa maneḥ Aya di Ima
+<lb n="4"/>ḥ di maneḥ , ku hakan·, ku Inum· ku suka ku boga, ku pakaraṁ, teka<space type="binding-hole"/>dipake Aṁgәḥhәn·, Eta kaṁkәn· galaḥ dawa ta, Eta kaṁkәn· pare hapa ta ṅarana, 
+
+———— 
+Penulisan nomor halaman terbalik menjadi 21, seharusnya 12, seharusnya 11. Meski demikian, kesinambungan teks terjaga. 
+12v.1. aksara v menempel dengan ṅ memberi kesan bahwa penyalin melakukan kesalahan.
+12v.1 bentuk layar r berbeda dengan kelaziman. 
+12v.3 tuna] aksara t terlihat sebagian karena rumpang. 
+
+<!--DSC_0082_tengah-->
+13r
+<lb n="1"/>kitu lamun· Aya nu meda Uraṁ, Aku sapameda sakaliḥ, @ ña mana<space type="binding-hole"/>kadaṁganiṁ galaḥ cidәk tinugәlan· tәka, Upamana Uraṁ kudil·, Eta kaṁkәn· caI pa
+<lb n="2"/>mandyan·, Upamana Uraṁ kurit·, kaṁkәn· dataṁ nu ṅamiñakan·, Upa<space type="binding-hole"/>mana Uraṁ poño, kaṁkәn· dataṁ nu mere kejo, Upama Uraṁ hanaAṁ, kaṁkәn· mava
+<lb n="3"/>kәn· Arocәn·, Upama Uraṁ hadәqәl·, kaṁkәn· dataṁ nu mere sәpaḥhәn·<space type="binding-hole"/>, ya sinaṁguḥ pañcaparisuda ṅarana, Eta kaṁkәn· galah cәdәk· nugәlan·ta, lamun· ma-
+<lb n="4"/>ka suka rasa Uraṁ, kaṁkәn· pare bәrat saṁga, boA makahurip· na Uraṁ rye<space type="binding-hole"/>ja katәmu vvit·niṁ suka luvan· EnaK, salaṁ nu ṅupat· Uraṁ: Ala pañaraman·, Aya tvaḥ
+
+13r.4. Uraṁ:] grafis setelah ra tidak seperti tanda pengganda konsonan. 
+
+<!--DSC_0081_tengah --> 
+                    13v [13]
+<lb n="1"/>Uraṁ ma qәR̥nan·, hantә tvaḥ Uraṁ ma Uṅaṁ Ambhu bapa, kaliṅane janma ṅarana, ya si<space type="binding-hole"/>naṁguḥ paramarrata visseśa, ṅa, ya kaṁkәn· deva maṁjanma ṅarana, ña saṁ purna sarira, ña vvitniṁ hayu, ya
+<lb n="2"/>puhuniṁ bәnәr ,(symbol A), Ini paṁṅimbhuḥniṁ tvaḥ, pakәn· mo tovas:akala maṁhurip·, pakә<space type="binding-hole"/>n· vastuni Imaḥ di maneḥ, Emet:imәt· rajәn· L̥kәn· paka pr̥dana, mo2gol·, ra
+<lb n="3"/>gol·, purusa riṁ sa, vigdada hapitan·, karavalye, caṁciṁṅan·, laṁsitan·, jaga<space type="binding-hole"/>raṁ ṅajadikәn· gaga savaḥ, tihap· Ulaḥ saṁsara, jaga raṁ ñiәn· kәboAn· tihap· mulaḥ ṅudәr
+<lb n="4"/>ka huma beEt sakaliḥ, ka huma L̥ga sakaliḥ, hamo ma bәnaṁ Uraṁ laku sadu§<space type="binding-hole"/>cocoOAn· Ulaḥ tihap· mәli mulaḥ tihap· nukәr, pakaraṁ Ulaḥ tihap· ṅiñjәm·,,
+
+
+<!--DSC_0082 bawah-->
+                    14r
+<lb n="1"/>simbhut· cavәt· mulaḥ kasarataAn·, hakan:inum· Ulaḥ kakuraṁṅan· Anak<space type="binding-hole"/>·k eve pituturran·, sugan· dipajar durbala sikṣa, yatnakәn· saṁ hyaṁ sikṣa kandaṁ kaR̥śyin·, ja-
+<lb n="2"/>ga raṁ heEs tambha tuduḥ, ṅinum· tvaḥ ktambha hanaAṁ, ñatu tambha poño, Ulaḥ raṁ<space type="binding-hole"/>kajojoṅan·, tinәṁkәn· ma riṁ na hantә, saṁṅunituku anak:u /E\ve, mulaḥ dek: apalikәtan·, su
+<lb n="3"/>gan· /ha\mo sapitvaḥhәn·, rampes· ma bәnaṁ Uraṁ ãraman·, teka nurut· na<space type="binding-hole"/>pañaraman·, Eta keḥ Anak· Uraṁ, Eve Uraṁ ṅarana, hantә ma nurut ka pamagahan·, Eta saru
+<lb n="4"/>A dәṅәn· sakaliḥ, ṅan· lamun· kәdә, Eve Anak gәs· ma mәdәṁ diAku ku Uraṁ,<space type="binding-hole"/>boA Uraṁ kabobotan·, \unclear{boA R̥}jәṁ  sasab· ka narak:a, L̥ṅit· batri raṁ ṅabakta, hilaṁ bәnaṁ 
+
+<!--DSC_0081 bawah-->
+                    14v
+<lb n="1"/>cakal· bagal·, Ini varaḥ saṁ ḍarma pitutur, sugan· Ura tan· pahdap·, (symbolA),<space type="binding-hole"/>mrәOpekṣaḥ samutataḥ, paEsan·teḥ tan· susuriyәm·, jambhaṅan esiniṁ bañu mahә-
+<lb n="2"/>niṁ, taḥ desa nataḥ nora bukṣaḥ, (Symbol A), kaliṅana ta, sri ma ṅaranya Omas·<space type="binding-hole"/>, kitu na Omas· lamun:a hamo dilaja, pәL̥k· rupana, lamun:a kalañja ma, cenaṁ ra
+<lb n="3"/>mpes· ja kaOpekṣa, kitu keḥ Upama Uraṁ janma Ini, lamun:urut· saṁ h<space type="binding-hole"/>yaṁ sikṣa, kapahayu rasana di Uraṁ, /ka\dyaṁganiṁ bәnәr, tumәmu bәnәrnya, kitu lamun· hamo
+<lb n="4"/>nutut ṣaṁ hyaṁ sikṣa krәta, kadyaṁganiṁ vilut:umәmu vilut·nya, paEsan ma ṅaranya qә<space type="binding-hole"/>ntәṁ, kitu na qәtәṁ, lamun:a hamo kavaas·, samar kalaṁkaṁ Uraṁ, lamun:a kavaAs· ma puguḥ ruA
+
+<!--DSC_0084 atas-->
+                    15r
+<lb n="1"/>Uraṁ, dina jә2 qәtәṁ Et:a kitu keḥ Uraṁ janma Ini, bisa nurut· Upacara sakaliḥ ra<space type="binding-hole"/>mpes· ma, boA kalihasan· ku rasa di maneḥ, lamun· hamo ma bisa nurut· pamaga
+<lb n="2"/>han·, puṁguṁ ta ṅarana, jambhaṁṅan· ma ṅaranya pamuruyan·, kaṁkәn· caI hәniṁ<space type="binding-hole"/>mahdap· Uraṁ krәta, ña mana kitu manana vaAs·, t=hәr rame Abәk·, desa ma ṅaranya da-
+<lb n="3"/>yәḥ, na dayәḥ lamun:a kosoṁ hantә turutanәn:ana, kitu na sabda lamun:a ha<space type="binding-hole"/>mo kaqәsi carut· ṅarana, heṅan· lamun:a kaqәsyan ma na kahanan·, Eta keḥ na turutanәn
+<lb n="4"/>·, kitu keḥ na sabda maka kaqәsyan·, mana dipajar bәnәr lakṣana, (symbol A), kitu ke<space type="binding-hole"/>ḥ Uraṁ janma Ini, lamun· dek· ñaho di puhun· suka lavan· Enak ma, Iṅәtkәn· sahur
+
+<!--DSC_0083 atas-->
+                    15v
+[15]
+<lb n="1"/>saṁ darmma pitutur, ini silokana, vaṁ, tatakaṁ carita haṁsa, gajen·dra carita ba<space type="binding-hole"/>nәm·, macanәm· carita sagaR̥m·, pus·panәm· carita baṁbaR̥m· , (symbol A), kaliṅanya ki§
+<lb n="2"/>tu jaga raṁ dek cәta, Ulaḥ salaḥ gәsan:aña, lamun· hayaṁ ñaho di taman·<space type="binding-hole"/>heraṁ, talaga bañu Atis ma, haṁsa taña, kaliṅana ma Aya ma janma, Atis·ti riṁ /A\pr̥niti, he
+<lb n="3"/>raṁ tinәṁ, rame Ambhәk·, ña keḥ kaṁkәn· haṁsa di na talaga heraṁ ta, hayaṁ ña<space type="binding-hole"/>ho di jr̥oniṁ laUt ma, maca taña, kaliṅana /ma\ Upama janma ñaho di hdap· saṁ deva ratu, dәṁ di
+<lb n="4"/>hdap· maḥhapandita, hayaṁ ñaho di lvarniṁ L̥vәṁ ma gajaḥ taña, Ini kaliṅana<space type="binding-hole"/>kaṁkәn· L̥vәṁ lvar ta ma, ñaho di tinәṁ nu rye, kaṁkәn· gajaḥ ta ma, ña keḥ bәbәdas· saṁ 
+
+
+<!--DSC_0084 tengah-->
+                    16r
+<lb n="1"/>deva ratu, hayaṁ ñaho di ruUm:amis·niṁ kәmbaṁ, baṁbara taña, kaliṅa<space type="binding-hole"/>na ta kaṁkәn· babara ma janma bisa, saba ṅumbara ñaho di tikaḥ salaḥ, kaṁkәn· ruUm· kәmbaṁ ma
+<lb n="2"/>, /na\ janma rampes· tvaḥna, Amis· baruṅusan·, sәmu Imuc· tikaḥ suka, ◉<space type="binding-hole"/>, kaliṅana Ulaḥ salḥ gәsan· naña, hayaṁ dek· ñaho di sakveḥ niṁ carita ma, gәs· ma ḍar
+<lb n="3"/>mmajati, saṁ hyaṁ hayu, jayasena, sedamana, pujayakarna, ramayana, a<space type="binding-hole"/>diparwa, koramasarma, bimasorga, raṁgalave, boma, sumana, kala purbaka, jarini, tantri, 
+<lb n="4"/>siṁ sawatәk· carita ma, memen· taña, dek· ñaho di sakvaḥ niṁ kaviḥ ma, kavi<space type="binding-hole"/>ḥ bvat:uha, kaviḥ pañjaṁ, kaviḥ lalaṅuAn·, kaviḥ pañaraman·, kaviḥ sisidiran· kaviḥ peṁpeṁ              
+
+———
+1.  baṁbara] aksara r hilang dan t terlihat sebagian akibat berlubang. 
+
+<!--DSC_0083 tengah-->
+                    16v
+[16]
+<lb n="1"/>ledan· boṁboṁ kaso, porerane, po2d· qәri, kaviḥ babahanan<space type="binding-hole"/>·, kaviḥ baba2ṅan·, kaviḥ taṁtuṁ, kaviḥ sasabatan·, kaviḥ Igәl-igәlan·, siṁ savatәk ka-
+<lb n="2"/>viḥ ma, paraguna taña, hayaṁ ñaho di pamacәḥ ma, cәta macәḥ, cәta niru<space type="binding-hole"/>s·, tatapukan·, babar2ṅan·, babakutrakan·, Abaṁ Abaṁṅan·, nәrәy· pañca, munikә-
+<lb n="3"/>n· L̥bur, ṅadu L̥suṁ, Asup· ka na lan·tar, ṅadu nini, siṁ savatәk:a Uli<space type="binding-hole"/>nan· ma, hәmpul· taña, hayaṁ ñaho di pan·tun ma, laṁgalaraṁ, bañakcatra, silivaṁṅi, 
+<lb n="4"/>haturvaṁṅi, prәpantun· taña, savalviran:iṁ tulis ma, pupuñjәṁṅa(n}·, hihiṁ(g)u(l)a<space type="binding-hole"/>n·, kәkәmbhaṅan·, Alas· Alasan·, Uraṁ Uraṁṅan·, mәmәtaḥhan·, sisiraṁṅan·, ta
+
+
+<!--DSC_0084 bawah-->
+                    17r
+<lb n="1"/>rukhata, kәmbaṁ tarate, siṁ savatәk tulis ma, lukis· taña,  (va)lviraniṁ (t)ә(t)ә<space type="binding-hole"/>paAn· ma, tәlu gaṁgaman, palaIn:a, gaṁgaman· di saṁ prabu ma, pәdaṁ, Abәt·, pamuk·, 
+<lb n="2"/>golok·, pesә tәn·dәt·, kәris·, rakṣasa pinaḥ(ka) devanya, ja I<space type="binding-hole"/>tu paranti maEḥhan·, sagala, (symbol A), gaṁgaman· saṁ voṁ tani ma, kujaṁ, baliUṁ, patik·, ko
+<lb n="3"/>red·, sadap·, detya pinaḥka dewanya, ja Itu paranti /ṅa\la kikicap:әn·<space type="binding-hole"/>, IInummәn·, (symbol A), gaṁgaman· saṁ pandita ma, kalakatr̥i, peso raUt·, peso doṁdaṁ, pa
+<lb n="4"/>ṅot·, pakisi, danava pinaḥka devanya, ja Itu paranti kumәR̥t· sagala,<space type="binding-hole"/>ña mana tәluna, gaṁgaman· palaIn:a, dәI, di saṁ prәbu, di saṁ voṁ tani, di saṁ pandita, kitu lamuna              
+
+———
+1.  rukhata] penggunaan pasangan h di bawah k ; va lvira niṁ tәtә] bagian ini berlubang
+
+<!--DSC_0083 bawah-->
+17v
+[17]
+<lb n="1"/>· Uraṁ hayaṁ ñaho di sareAn:a Eta ma, paday· taña, savalviran:iṁ Ukir ma, di na<space type="binding-hole"/>nagakәn·, diba2ṁkәn·, ditiru pakṣi, ditiru vәra, ditiru siṁha, siṁ savatәk· Ukir-Ukirra
+<lb n="2"/>n· ma, maraṁguy· taña, savalviran:iṁ OOlahan· ma, ñupar-ñapir, rarama<space type="binding-hole"/>di, ñocobek·, ñopoṁ koneṁ, ñaṁlarkәn·, ñaR̥ṁsәṁ, ñәsәṅit·, ñayaṁ ku pidis·
+<lb n="3"/>bәbәL̥man·, paṁpagaṁṅan·, kakasiAn·, hahañaṁṅan·, raramәsan·, diru<space type="binding-hole"/>ruAm·, diAmis·-Amis·, siṁ savatәk kaOlaḥhan·, haR̥p·catra taña, savalirraniṁ bo-
+<lb n="4"/>E ma, kәmbhaṁ mucaṁ, gagaṁ seṁgaṁ, same leg·, sәmat· sahurun·, Añam· cayut<space type="binding-hole"/>·, sigәji, pasipasi, kalaṁkaṁ ayakan·, poleṁ raganis·, jayati, cәcәmpaAn·, paparanaka
+
+
+<!--DSC_0086 atas-->
+                    18r
+<lb n="1"/>kan·, maṅin· haris·, siliganti, boEḥ siAṁ, bәbә(na)tan·, papa(ka)nan·, su<space type="binding-hole"/>rat:avi, parigi ñeṁsoḥ, gagañjar, lusyin· bәsar, kampuḥ jayati, hujan· riris·, larisa 
+<lb n="2"/>·, boEḥ Alus·, ragen· paṁṅan·ten·, sisavatәk· boboEhan· ma,<space type="binding-hole"/>paṁṅәyәktaña, lamun· hayaṁ ñah:o dyagama pariAgama ma, Acara Eleḥ ku Adigama, Adi 
+<lb n="3"/>gama Eleḥ ku gurugama, gurugama Eleḥ ku tuhagama, tuhagama Eleḥ ku sat<space type="binding-hole"/>·mata, sat·mata Eleḥ ku surak·loka, surak·loka Eleḥ ku niravәraḥ, Utama, 
+<lb n="4"/>janma wahye dosa, wahye janma Utama dosa, siṁ savatәk· Agama ma, paratanda taña, sugan· hayaṁ ñaho di tiṁkaḥ praṁ ma, makara bihwa, kaṭa bihva 
+     
+<!--DSC_0085 atas-->
+                    18v
+[18]
+<lb n="1"/>, garudabihva, cakr̥bihva, sucimuka, bajra pañjara, Asu maliput·, mәrak ṣimpir<space type="binding-hole"/>gagak saṁkur, luvak maturun·, kidaṁ sumәka, babaḥ buhaya, ṅaliga manik· L̥maḥ mrәvasa, A
+<lb n="2"/>dipati, prәbu sakti, pake praṁ juritan·, tapa sapәtrik·, saṁ hulujurit:aña, ha<space type="binding-hole"/>yaṁ ñaho di sakveḥniṁ Aji: manṭa ma, jampa jampyi, gәgәI, susuratan·, sasaranaAn·, <g type="filler">§</g>
+<lb n="3"/>kaseraṁṅan·, pavayagahan·, pus·paAn·, susudaAn·, hurip·huripan·, tu<space type="binding-hole"/>duk· Iyәm·, pararasen·, pasakvan·, siṁ savatәk· Aji ma, saṁ braḥmana taña, hayaṁ ña⌈
+<lb n="4"/>ho di pu<add place="below">pu</add>ja di saṁgar ma, pataḥ, puja daUn·, gәlar pa<add place="below">la</add>jaṁ, puja kәmbhaṁ, ñapiṁṅan· liṁga<space type="binding-hole"/>, ṅomyen· saṁ hyaṁ, siṁ savatәk muja ma, jagan· taña, hayaṁ ñaho di davuḥ nalika ma, bu                  
+
+<!--DSC_0086 tengah-->
+<lb n="1"/>lan· grәmpa, tahun· tanpa tәgәk·, tanpa siraḥ, sakala lumaku, sakala<space type="binding-hole"/>madәg·, bumi kapәdәm·, bumi grәmpa, siṁ savatәk ñahi di carek nu bәhәla, bujaṁga taña, 
+<lb n="2"/>hayaṁ ñaho di ḍarmma sikṣa, sikṣa kandaṁ, pasuktapa, padonaAn·, mahapavitra<space type="binding-hole"/>sikṣaguru, dasasila, pañcasikṣa, guru talapakan jagatu:padrava, cadusakti, tato buva
+<lb n="3"/>ṇa, tato sarira, tato Ajñana ma, siṁ savatәk· qәsi pus·taka ma, saṁ pandita ta<space type="binding-hole"/>ña, maṁka ṅuni kasorgaAn· di sakala, kaprabuAn·, kamulyaAn·, kaUtamaAn·, kaprәma
+<lb n="4"/>naAn·, kavisesaAn·, ratu taña, hayaṁ ñaho di patitis· bumi ma, ṅam=piḥ<space type="binding-hole"/>kәn· bumi, masinikәn· na Uraṁ sajagat·, parin· pasini, ṅadeṁdeṁ maras·pade, ṅutur ña
+
+<!--DSC_0085_tengah-->[19]
+<lb n="1"/>ruAkәn·, ñipay· midana, lamun· luhur dipidatar, Añcol· dipak=pak·,<space type="binding-hole"/>siṁ savatәk· Ampiḥ-Ampiḥ ma, maṁkubumi taña, lamun· hayaṁ ñaho di sakvaḥniṁ labuḥha
+<lb n="2"/>n· ma, makaṅuni gosoṁ, go2ṁ, kabuA, ryak· mokpra:k·, ryak maliṁ<space type="binding-hole"/>, Alun· Aguṁ, tañjuṁ, hujuṁ, nusa, pulo, karaṁ nuṁguṁ, tuṁgara, barat daya, siṁ savatәk ṣaba di
+<lb n="3"/>Ut· ma, lalayaran· puhavaṁ taña, hayaṁ ñaho di savatәk· AR̥ga ma, tәlu<space type="binding-hole"/>sayuta, tәlu sakәtә, tәlu salakṣa, tәlu sarivu, tәlu satak·, tәlu saratus·, tәlu sa
+<lb n="4"/>puluḥ, makaṅuni ka2bĕlaḥ, katәlu bәlaḥ, kapat·bәlaḥ, kalima bәlaḥ, ka<space type="binding-hole"/>nәm· bәlaḥ, kapitu bәlaḥ, kavolu bәlaḥ, kasaṁṅa bәlaḥ, siṁ savatәk· AR̥gaAn· ma, citri
+
+<!--DSC_0086_Bawah--> 20r
+<lb n="1"/>k· byapari taña, hayaṁ ñaho di sandi, tapa, luṅguḥ, pratyakṣa, putus· taṁkәs·<space type="binding-hole"/>, kaL̥pasәn·, tata hyaṁ, tata devata, rasa carita, kaL̥pacarita, siṁ savatәk naga-naga para devata
+<lb n="2"/>kabeḥ, saṁ viku paraloka taña, Aya ma na Uraṁ dek cәta, Ulaḥ salaḥ gәsan·<space type="binding-hole"/>naña, lamun· dek ñaho di carek=para nusa ma, carek cina, kәliṁ, parasi, mәsir, samudra, baṁga
+<lb n="3"/>la, makasar, pahaṁ, palembhaṁ, siqәm·, kalatәn·, baṁka, buvun·, betәn·, tu<space type="binding-hole"/>laṁ bavaṁ, sela, pasay·, parayaman·, ṅara dәkan·, dinaḥ, An·dәL̥s·, tego, molo
+<lb n="4"/>ko, badan·, pego, malaṁkabo, mәkaḥ, buretet·, lave, sakṣat·<space type="binding-hole"/>, sәbava, bali, jәṁgi, sabini, ṅogan·, kanaṁṅәn·, kumәriṁ, sam=paṁ tiga, guman·tuṁ, manubi, 
+
+
+<!--DSC_0085 below--> 20v
+[20] <!-- kali ini penomoran dari atas ke bawah-->
+<lb n="1"/>bubu, ñiri, sapari, patukaṁṅan·, surabaya, lam=puṁ, jambhudipa, seran·, gәdaḥ,<space type="binding-hole"/>solot·, solodo:ṁ, bali, In·dragiri, tañjuṁpura, sakampuṁ, cәm=\{coret}pa, cәm=pa, baluk·, java
+<lb n="2"/>siṁ savatәk=paranusa ma, saṁ juru basa darmma murcaya taña, Eta keḥ na kañaho<space type="binding-hole"/>kәnәn·, di tuhuna di yog·yana, Aya ma nu majar mo ñaho, Eta nu mo satya di guna di ma
+<lb n="3"/>neḥ, mo tәIṁ di carek· devata Uraṁ, mo takut· di Upadrava, jagat ganti ca<space type="binding-hole"/>dusakti saṁ pandita, tan· na vuruṁ Inanti deniṁ kavaḥ, lamun:a guna mo dipiguna, lamun:a tvaḥ
+<lb n="4"/>mo dipitvaḥ, sahiṅaniṁ guna kr̥ta, kena Itu taṁtu hyaṁ taṁtu devata, sakakala<space type="binding-hole"/>batara jagat·, basa ṅrәtakәn· bumi niskala, basana braḥma, visnu, Isora, mahadeva, <unclear>siva</unclear>
+
+<!--DSC_0088 middle-->
+[21r]
+<lb n="1"/>ḥ, bakti ka batara, basana In·dra, yama, baruna, kovera, besavarna, bakti<space type="binding-hole"/>ka batara, basana kusika, garga, mesṭi, purusa, patañjala, bakti ka batara, siṁ para devata kabe
+<lb n="2"/>ḥ, pada bakti ka batara seda niskala, pahi maṁgiḥkәn· si tuhu, lavan· prәtyakṣa<space type="binding-hole"/>, A symbol, Ini na paṁgiḥkәnәn· di na sakala, taṁtu batara di bhvaṇa, pakәn· pagәḥ jadi manik· sakuruṁ
+<lb n="3"/>ṅan·, pakәnәn· teja sabumi, hulun· bakti di tohaAn·, eve bakti di la<space type="binding-hole"/>ki, Anak bhakti di bapa, sisya bakti di guru, man·tri bakti di maṁkubumi, maṁkubumi bakti di rathu
+<lb n="4"/>, ratu bakti di devata, disuruḥ nәguḥkәn· di sarira, matitisk\{coret-ә}n· bayu sabda hda<space type="binding-hole"/>p·, Spider Symbol, lamun· Itu hamo kapiguna, kapitvaḥ ku na janma, kanisṭa madya Utama, pada ḍithi
+
+21r.4] matitiskan·] ada tanda pepet yang dihapus oleh penyalin. 
+
+<!--DSC_0087 middle-->
+21v
+[33] <!-- penomoran halaman oleh penyalin keliru, tetapi kesinambungan teks tetap terjaga-->
+<lb n="1"/>bakәn· ka na kavaḥ si tam·braḥ gomuka, vijaya jana janma, kavisesa ku devata<space type="binding-hole"/>pun·, sahur saṁ darmma pitutur, mujarrakәn· sabda saṁ rumuhun·, Aya dәI babandiṁna, kitu Upamana
+<lb n="2"/>Uraṁ L̥mpaṁ ka java, hamo bisa nurut· carekna, dәṅәn· carana, maṁṅu rasa Uraṁ, Aṁ<space type="binding-hole"/>gәs ma pulaṁ dәI ka Sunda, hantә bisa carek java, Asa hantә dataṁ ñaba, poOs· tukuna bәnaṁ tandaṁ, ja
+<lb n="3"/>hantә bisa nurut carena, kitu Uraṁ janma Ini, haṁṅәr turun· ti niskala, hantә katәmu<space type="binding-hole"/>cara devata, gәra gәra dek maṁjanma, ja kapuṁguṁṅan· ruAna, IR̥g· tiṁkaḥna, hantә bisa nurutvaḥ
+<lb n="4"/>nu ñaho, Aya kapitvaḥ ta nu mo satya, nu tan· yog·ya, lumәkas· maṁgave<space type="binding-hole"/>hala, papañjiṁṅan·, bubunyan·, kapiAdi, kapilañcәk·, ña mana vadon· ṅarasa lalaki, laI
+
+<!--DSC_0088 above-->
+                    22r
+<lb n="1"/>n· salakina, tan· yog·ya ṅarana, lalaki ṅarasa vadon·, laIn· qәsi Imaḥna, tan· yog·ya ṅarana, vnaṁ ditibakәn· ka na kavaḥ, si mrәga vijaya, jana janma ṅaviseśakәn·
+<lb n="2"/>na salaḥ, AR, Ini siloka tvaḥ janma salaḥ, buraṁkak·, marande, mariris·,<space type="binding-hole"/>viraṁ, ya ta caturbuta ṅarana, AR, taliṅanya, buraṁkak ma ṅaranya gila, nu kaṁkәn· makagila
+<lb n="3"/>ta ma, tvaḥ janma, dәṁṅi, tuṁṅi, to2ṁ, gasoṁ, campәlak sabda, gopel· tvaḥ, pa<space type="binding-hole"/>nas· hate, tan· yog·ya ṅarana, ña keḥ nu kaṁkәn· makagila ta, tvaḥ janma sakitu, ja
+<lb n="4"/>dina ta rakṣakṣa, durgi durga, kalabuta, gәsan:a ta di malaniṁ L̥maḥ, malaniṁ L̥maḥ ṅarana, sodoṁ, sar2ṁge, cadas· gantuṁ, mukal· pategaṁ, L̥bak·, rañcak·, kәbakan· badak·, ca
+
+<!--DSC_0087 Atas-->
+                    22v
+<lb n="1"/>taṁ nugaṁ, cataṁ nogeṁ, garuṁguṁṅan·, gareṁgeṁṅan·, L̥maḥ sahar, daṁdaṁvaryan·, huñur, L̥maḥ laki, pitunahan· celeṁ, kaloberran·, jaryan·, sәmma, savatәk· L̥maḥ kasiṁsal·, saki-
+<lb n="2"/>tu/ka\jajadyan· nu kәdә di tvaḥ na gopel·, ja tvaḥniṁ janma nu mere gila ta,,<space type="binding-hole"/>jadina ta savatәk mahavila, ja ha/n·\tә nurut· saṁ hyaṁ sasana kr̥ta, ja ṅarumpak saṁ hyaṁ sikṣa kandaṁ ka-
+<lb n="3"/>R̥ṣyan·, ña mana jadi mahagila, ya ta kaliṅaniṁ buraṁkak· ṅarana, AR, mare<space type="binding-hole"/>nde ma ṅarana, dibeka tiIs· ña karaḥ panas·, dikahemankәn·, dikaruñaAn·, diIpuk·
+<lb n="4"/>, dimemeḥmemeḥ, dibere suka boga, hulun· kuriṁ, ña karaḥ kira kira kәnәnina, byak(ta)kәna k(u)na kapapaAn·, qәsi tәgal· sipan·tana, sayoñ:ana loḥna, ti timur ma kalapa 
+
+<!--DSC_0090 atas-->
+                    23r
+<lb n="1"/>kan·daga, sakәti woṁ kna I rika, ti kidul· ma gunuṁ vatu, paR̥ṁsevu voṁ papa I<space type="binding-hole"/>rika, ti barat· yaksa gәni muka, tan· kinavruḥhan· voṁ kveḥnya papa I rika, ti kaler kadi va 
+<lb n="2"/>laṁ sinudukan·, paR̥ṁ satus· voṁ papa I rika, ti tәṅaḥ gagak sipan·tana, luva<space type="binding-hole"/>n· saṁ sona yaksa, sevu sevu voṁ papa I rika, ya kapapaAn· niṁ marende ṅaranya, symbol A, mariris ma
+<lb n="3"/>ṅarana, camaḥ, jiji manan· tahi, camaḥ manan· vaṁke Abo, kitu keḥ tvaḥ<space type="binding-hole"/>janma caca2kot·, baraṁ cokot·, Agәs ma baraṁ Ala hamo men·ta, maliṁ, numpu, me 
+<lb n="4"/>Or, ṅaR̥but·, siṁ savatәk· curavәda ka nu bәnәr, paEḥ ma Atmana papa, sarivu saratu<space type="binding-hole"/>s· tahun· kәna ku sapa batara, taṅeḥ ma /na\ jadi janma, Aya jadina ta, koter, janel·, hi                    
+
+<!--DSC_0089 atas-->
+                    23v
+[35] <!-- penomoran dibaca dari kanan ke kiri, kesinambungan teks tetap terjaga-->
+<lb n="1"/>L̥d· tahun·, pitәk·, titigi, jambәloṁ, limus· sakәR̥t· meAr, pa<space type="binding-hole"/>cet·, lentaḥ, L̥hәṁ, gәR̥ṁ, savatәk· dipikajiji ku nu Uraṁ reA, ya ta sinaṁguḥ mariris· ṅarana [symbolA]
+<lb n="2"/>, viraṁ ma ṅarana, mumul· tuhu, mumul· bәnәr, mumul· yog·ya, mumul duga<space type="binding-hole"/>duga, mumul· bema, lamuna: carut· mahaR̥n·, haR̥sa, bogoḥ, gavok·, lamun pa §
+<lb n="3"/>Eḥ ma Eta Atmana maṁgiḥkәn· papa, vot· goṁgaṁ, cukaṁ cuqәt·, batu kacakup·<space type="binding-hole"/>dijadikәn· makabhvana, jadi vatәk mahagila, varak·, macan·, vuhaya, Ula magәṁ, savatәk ma 
+<lb n="4"/>kagila janma, ya ta ma viraṁ ṅarana, sakitu na catur buta [SymbolA], Ini ma Upama janma ta<space type="binding-hole"/>n(da)ṁ ka cina, hәbәl maṁkuk di cina, ñaho di karma cina, di tikaḥ ciṇa, di carek ciṇa, di polaḥ ci        
+
+<!--DSC_0088 Bawah-->
+                    24r
+<lb n="1"/>ṇa, di kararampesa:n· ciṇa, katәmuna carek tәlu, kanisṭa, madya, Utama,<space type="binding-hole"/>pahi ñaho di sabda saṁ prabu, saṁ rama, saṁ R̥ṣi, bisa matitiskәn· bhayu sabda hdap·, ña mana ñaho 
+<lb n="2"/>di gәI, di UpagәI, di parigәI, ya ta trigәI ṅarana, gәI ma bisa ṅicap· bisa<space type="binding-hole"/>(ṅinum·) bisa dina kasukaAn·, ya gәI ṅarana, UpagәI ma ṅarana, bisa ñandaṁ, bisa ṅago, bi 
+<lb n="3"/>sa babasaḥhan·, bisa dibusana, ya UpagәI ṅarana, pari gәI ma ṅarana, bisa ni<space type="binding-hole"/>taḥ bisa mivaraṁ, ja sabda na Arum· mavaṁṅi, ña mana hantә suraḥ nu dipivaraṁ, ja katuju ku bәnaṁ      
+<lb n="4"/>milabuḥ, siloka, lamun· kabeEt ma basna, Eten·, O2k·<space type="binding-hole"/>, Anakiṁ, ka kolot ma basana, lañcәkiṁ, suAniṁ, qәcuIṁ, toAIṁ, akiIṁ, paṁvastuna ma su 
+
+<!--DSC_0087 bawah-->
+                    24v
+[34] <!-- penomoran dibaca dari kanan ke kiri, kesinambungan teks tetap terjaga-->
+<lb n="1"/>maṅәr, tәtәIṁ Amat·, sakitu na dasa pasan·ta, gәs ma gunana ma, hoOk· pe<space type="binding-hole"/>sok· Asiḥ karuña, mupraruk· ṅulas·, ñәcәp· ṅala Aṁṅәn·, ña mana suka buṁṅaḥ padaṁ caAṁ
+<lb n="2"/>nu dipivaraṁ, ya ta sinaṁguḥ parigәI ṅarana , symbolA, Ini salokana, mas·, pirak·,<space type="binding-hole"/>komala, hintәn·, ya ta saṁ hyaṁ catur yog·ya ṅarana, Ini kaliṅana, mas· ma ṅaranya, sabḍa tu
+<lb n="3"/>hu, tәpәt· byakta, pañcaksara, pirak ma ṅaranya, Ambhәk· krata yog·ya rahayu,<space type="binding-hole"/><unclear>ko</unclear><gap reason="lost" unit="chars" quantity="2"/>ma ṅaranya, gәI na padaṁ caAṁ, L̥ga loganda, hintәn ma ṅaranya, caṁciṁ sәri, sәmu I
+<lb n="4"/>muc·, rame Ambәk·, ya ta sinaṁguḥ catur yog·ya ṅaranya, <g type="symbol" subtype="A-alike"/>,  ya ta janma<space type="binding-hole"/>bijil ti nirmalaniṁ l̥maḥ /nirmalani l̥maḥ\, ṅarana, pahoman·, pabutәlan·, pamujaAn·, Imaḥ manәḥ, candi,   
+
+
+<!--DSC_0090 tengah-->
+                    25r
+<lb n="1"/>prasada:, liṁga liṁgi, batu gaṁsa, L̥maḥ biniṁba, ginawe voṁvoṁṅan·, sasapuAn·, sakitu sa<space type="binding-hole"/>Ukur L̥maḥ kaOpekṣa, caI kasucikәn·, kapaviṭākәn·, ña keḥ janma rahayu, janma ramp/e\s·, ya 
+<lb n="2"/>janma krata, nu kaṁkәn· bijil· ti nirmala niṁ L̥maḥ ma ṅarana, Iṅәt di saṁ hyaṁ sikṣa, miku<space type="binding-hole"/>ku talataḥ Ambu bapa, Aki lava:n· buyut·, ñaho di sikṣaAn·, maha pandita, magiḥkәn· Ujar
+<lb n="3"/>niṁ kr̥ta, Ini carita bәhala, nu nañjәrkәn· saṁ hyaṁ sasana kr̥ta, raḥhyaṁtaṁ devaraja, raḥhyaṁ<space type="binding-hole"/>ta rawuṁlaṁṅit·, raḥhyaṁta ri mdaṁ, raḥhyaṁta ti mnәr, ya ta sinaṁguḥ catur kr̥ta ṅarana, ña mana kitu Ayәna,
+<lb n="4"/>na janma nu Iṅәt di saṁ hyaṁ darmma wiṣeśa, ñaho di karasyeAn· niṁ janma, ya ta si<space type="binding-hole"/>naṁguḥ janma rahasye ṅarana, lamuna: pati ma Eta Atmana, maṁgiḥkәn· sorga raḥhayu, maṁgiḥ raḥ             
+
+
+<!--DSC_0089 tengah-->
+[36] 
+<lb n="1"/>hina tan pabalik· ptaṁ, suka tan pabalik duka, sorga tan pabalik papa, Enak·<space type="binding-hole"/>tan pabalik· lara, hayu tan pabalik hala, nohan· tan pabalik · wogan·, mokta 
+<lb n="2"/>tan pabalik· byakta, nis· tan paalik hana, hyaṁ tan pabalik· deva, ya ta si<space type="binding-hole"/>naṁguḥ (x) parama L̥ñәp· ṅarana, ◉, kitu keḥ janma Ayәna, Upama uraṁ mandi, caI pitәmuqәn· Uraṁ, 
+<lb n="3"/>heṅan· ta na caI dva pilihәna:na, nu kәruḥ dәṁṅәn· nu heraṁ, kitu keḥ tvaḥ janma, dva<space type="binding-hole"/>nu kapaknakәn·, nu goce dәṅәn· nu rampes·, kitu keḥ janma, manana kapahala, ku tvaḥ nu nu      
+<lb n="4"/>mahala Iña, kitu keḥ janma, mana na kapahayu, ku tvaḥna nu mahayu Iña, ña ma<space type="binding-hole"/>na janma hala ku tvaḥna, mana hayu ku tvaḥna, kitu keḥ caI ta, mana dipajar dva na piliḥhәna: ma, bañu 
+
+<!--DSC_0090 bawah-->
+<lb n="1"/>Asr̥p· lalvana: hnaṁ ma, Iña saṁ hyaṁ darmma viṣeśa, ña nu dilakukәn· ku mahapandita, nu ba<space type="binding-hole"/>ñu hakәr lawa:n· L̥tuḥ ta ma, Iña na rasa carita, nu dilakukәn· ku na saṁ viku lokika, paramarata ka 
+<lb n="2"/>beḥ, ña mana kadyaṁgani:ṁ centana, lavana:centana, nu centana ta ma, vruḥ meṅәt· tu<space type="binding-hole"/>tur tan pabalik lupa, ya ta vvit· niṁ janma raḥhayu, ya taṁ[sa]kal niṁ bumi kr̥ta, nu Acentana ta ma, Ikaṁ lu 
+<lb n="3"/>pa hyaṁ moha, tar kahana:n· tutur, ya taṁkal· niṁ saṁhara, puhun· niṁ kaliyuga, bәti niṁ<space type="binding-hole"/>jalir, vvit· niṁ liñok·, ya saṁkan· janma ka naraka, Ulaḥ Eta dipitәmәn· ku nu dek· bәnәr ma, 
+<lb n="4"/>◉ Ini Ujar saṁ sadu, basana mahayu drabyana, Ini tri/tan·\tu di bumi, bayu kita pinaḥ<space type="binding-hole"/>ka prabu, sabda kita pinaḥka rama, hdap· kita pinaḥka R̥ṣi, ya tritan·tu di bumi, ya kaṁkәn· panә             
+
+<!--DSC_0089 bawah-->
+[37]
+<lb n="1"/>guḥ niṁ bvaṇa ṅarana, Ini trivarga di lamba, visnu kaṁkәn· prabu, braḥma kaṁkәn· rama, I<space type="binding-hole"/>sorra kaṁkәn· R̥ṣi, ña mana tritan·tu panәguḥ niṁ bvaṇa, tri varga hurip· niṁ jagat· ya sinaṁguḥ tri ta 
+<lb n="2"/>n·tu di nu rye ṅaranya, tiguḥkәn· pagәḥkәn· sahiṅani:ṁ tuhu, tәpәt· byakta varta<space type="binding-hole"/>manaḥ, mana krata na bvaṇa, mana hayu Ikaṁ jat· kenana tvaḥ niṁ janma kapahayu, kitu keḥ saṁ pandita, pagәḥ di 
+<lb n="3"/>kapanditaAna:na, kr̥ta, saṁ viku pagәḥ di kavikuAna:na kr̥ta, saṁ maṁṅuyu pagәḥ di kamaṁṅuyu<space type="binding-hole"/>Ana:na kr̥ta, saṁ palikәn· pagәh di kapalikәna:na kr̥ta, saṁ 
+<lb n="4"/>Amә pagәḥ dikaAmәṁṅana:na kr̥ta, saṁ vasi pagәḥ di kavasiAna:na kr̥ta, saṁ qәbon·<space type="binding-hole"/>pagәḥ di kaqәbpona:na kr̥ta, saṁ tiAgi pagәḥ di katyagiAna:na kr̥ta, ma/ka\ ṅuni saṁ loka pagәḥ dikalokaA  
+
+
+<!--DSC_0092 atas-->
+<lb n="1"/>na:na kr̥ta, saṁ voṁ tani pagәḥ di kataniAna:na kr̥ta, saṁ qәvaḥ pagәḥ di kaqәvaḥhana:na kr̥<space type="binding-hole"/>ta, saṁ gu(s)t(i) (pagә)ḥ d(i) kagust(i)Ana:na kr̥ta, saṁ man·tri pagәḥ di kaman·triAna:na kr̥ta, saṁ masa: pag(ә)ḥ d(i) 
+<lb n="2"/>kamasaṁṅana:na kr̥ta, saṁ bhujaṁga pagәḥ di kabhujaṁgaAna:na kr̥ta, saṁ tarahan· pagәḥ di kata<space type="binding-hole"/>rahana:na kr̥ta, saṁ disi pagәḥ di kaḍiṣiAna:na kr̥ta, saṁ rama pagәḥ di karamaAna:na kr̥ta, saṁ R̥ṣi pagәḥ di § 
+<lb n="3"/>kaR̥ṣiAna:na kr̥ta, saṁ prabu pagәḥ di kaprabuAna:na kr̥ta, ṅuni saṁ pandita, kalava:n ṣaṁ de —— va ratu, pagәḥ ṅrәtakәn· niṁ bhuvaṇa, ña mana krata lor kidul· kulon vetan·, saka saṁga deniṁ prativi, sa
+<lb n="4"/>kakuruṁ deniṁ Akasa, pagi maṁhurip· Ikaṁ sarvo janma kabeḥ, sarvo janma kabeḥ ṅarana, ja<space type="binding-hole"/>nma tumuvuḥ, janma triyak·, janma voṁ, janma sivoṁ, vastu sivoṁ, ja mana sakitu dapajar sarvo ja  
+          
+<!--DSC_0091 atas-->
+[38]
+<lb n="1"/>nma kabeḥ, janma tumuvuḥ ma ṅarana, trәna, taru, lata, galuma, pahi maṁhurip· hejo<space type="binding-hole"/>lebok· natar ḍaṁkura, ya janma tumuvuḥ ṅarana,  savatәk ṣatoA, magәṁ madә 
+<lb n="2"/>mit·, di darat· di caI, ya janma triyak· ṅarana, janma voṁ ma ṅarana, ruAna janma, kena<space type="binding-hole"/>tә haḍe yunina, janma sivoṁ ma ṅarana, rampes· yuni, rampes· baṁsa, kena han·tә Acan· ñaho  
+<lb n="3"/>di saṁ hyaṁ ḍarmma, vastu sivoṁ ma ṅarana, nu tәgәr di bәnaṁ ñaho, vruḥ di saṁ hyaṁ ḍarmma, ñaho<space type="binding-hole"/>di tato saṁ hyaṁ Ajñana, ya ta vastu sivoṁ ṅarana, ◉, Ini ma sugan; hayaṁ kalihasan· ku qәsi bhvaṇa rye
+<lb n="4"/>na ta, 4, Ini ṅarana, kurija, mantaja, bagaja, payuja, kurija ma ṅarana, savatәk bijil·<space type="binding-hole"/>ti s(u)ṅ(u)t·, man(ta)ja ma ṅarana, savatәk· bijil· ti panon·, bagaja ma ṅarana, savatәk· bijil· ti 
+
+         
+<!--DSC_0092 bawah-->
+<lb n="1"/>baga, payuja ma ṅarana, savatәk· bijil· ti tumbuṁ, ya ta sinaṁguḥ saṁ hyaṁ catur mula ṅara<space type="binding-hole"/>na , ◉, Ini guna janma di bhvaṇa, 6, ṅaṁka, ñigi, ṅikәt· ṅaruAṁ, ṅa2m/bo\ṁ, ṅaṁka ma ṅarana, Aṁṅә
+<lb n="2"/>na:ṁṅәn·, ñigi ma ṅarana, UUtayan·, ṅikәt· ma ṅarana, vatәk· nalikәn· ñi<space type="binding-hole"/>gi ma ṅarana, mәpәṁ, mәlaḥ, macir, midvakәn·, ṅadar, ṅagitaka, ṅukur, ñarvakәn·, garvaṁ ma ṅarana, savatә
+<lb n="3"/>k· ṅalikәn·, ṅa2mboṁ ma ṅarana, savatәk· hәL̥t· hәL̥t· , ya ta sinaṁguḥ sa<space type="binding-hole"/>d· guna ṅarana, sakitu guna janma sareAna:, ◉, Ini kahayaṁ janma, 4, yun· suda, yun· suka, yu 
+<lb n="4"/>n· muṁgaḥ, yun· luput·, Ini kaliṅana, yun· suda ma ṅarana hayaṁ purna, mumu<space type="binding-hole"/>l· kәna ku sarba kasakit·, yun· suka ma ṅarana, hayaṁ bәhar, mumul kaAn·tunan· ku drabya,                 
+
+<!--DSC_0091 bawah-->
+[39]
+<lb n="1"/>yun· muṁgaḥ ma ṅarana, hayaṁ sorga, mumul· maṅgiḥkәn· bhvaṇa, yun· lulut· ma ṅara<space type="binding-hole"/>na, hayaṁ mokta, mumul· kabava ku para sorga, ña mana sakitu kahayaṁ janma saryen:a, SIMBOL A, Ini nu ma
+<lb n="2"/>di ka caI, 4, kaliṅana, lanaṁ, vadon·, kәdә, malavadiṁ, sakitu Eta ryena, saba<space type="binding-hole"/>raha dagaṅan· dipakәn· Eta, 2, kaliṅana, Asak·, dәṁ hataḥ, goce dәṁ rampes· becet· 
+<lb n="3"/> dәṁ gәde, sabaraha rasana, 6, kaliṅana, lavana:, kadugha, tritka, amU, kasaya, madu<space type="binding-hole"/>ra, lavana: ma ṅarana paṁset·, kadagha  ma ṅarana, lada, tritka ma ṅarana pahit·, amU ma ṅarana hasә 
+<lb n="4"/>m·, kasaya ma ṅarana pәL̥m·, madura ma ṅarana Amis· sakitu: karasana ku na janma⌈<space type="binding-hole"/>(sarereA), simbol A, Ini pakәn· Uraṁ mibogaAn maneḥ, pakәn:a pativaḥ tivaḥ ka Anak·   
 
                 </ab>
       </div>
