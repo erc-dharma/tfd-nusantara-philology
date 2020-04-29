@@ -3,14 +3,14 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Svayambhu</title> 
+				<title type="main">Svayambhu</title>
 				<title type="sub">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
-			<editor ref="https://viaf.org/viaf/11026260/">
-				<forename>Arlo</forename> 
+			<editor ref="part:argr">
+				<forename>Arlo</forename>
 				<surname>Griffiths</surname>
 			</editor>
-				<editor ref="http://viaf.org/viaf/120435268">
-				<forename>Timothy</forename> 
+			<editor ref="part:tilu">
+				<forename>Timothy</forename>
 				<surname>Lubin</surname>
 			</editor>
 			<respStmt>
@@ -43,7 +43,7 @@
 					<witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, II A/3/774: Balinese script on lontar</witness>
 				</listWit>
 			</sourceDesc>
-		</fileDesc> 
+		</fileDesc>
 		<encodingDesc>
 			<p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
 		</encodingDesc>
@@ -52,7 +52,7 @@
 				<language ident="san-Latn">Sanskrit, romanized</language>
 				<language ident="kaw-Latn">Old Javanese, romanized</language>
 			</langUsage>
-		</profileDesc>		
+		</profileDesc>
 		<revisionDesc>
 			<change when="2020-04-23" who="part:argr">creation of TEI document</change>
 		</revisionDesc>
@@ -63,18 +63,55 @@
 	<text>
 		<body>
 			<div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
-<!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:-
-[01-02] va:haranikaṁ ra:t∙, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ
-[01-03] vruḥ maviveka:, sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
-<!-- K: [1v1] || ○ || Avighnam a:stu || ○ || kunaṁ hulaha: saṁ prabhu, Uniṅanira taṁ vyavaharani§[SH]kaṁ ra:t∙, harovaṅa ta sira: brahma:{kar}/ṇa\ vihikan maṅaji, lavan mantri, <riṅ> vruḥ mavikveka:, śūlakṣa[1v2]ṇa:ha: ta sira tumamaha: riṁ śabha: || -->
+<!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t∙,
+harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ [01-03] vruḥ maviveka:,
+sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
+<!-- K: [1v1] || ○ || Avighnam a:stu || ○ || kunaṁ hulaha: saṁ prabhu, Uniṅanira taṁ vyavaharani§[SH]kaṁ ra:t∙,
+harovaṅa ta sira: brahma:{kar}/ṇa\ vihikan maṅaji, lavan mantri, <riṅ> vruḥ mavikveka:,
+śūlakṣa[1v2]ṇa:ha: ta sira tumamaha: riṁ śabha: || -->
 <head xml:lang="san-Latn"><pb ed="#L" n="1"/><pb ed="#K" n="1v"/>//0// avighnam astu //0//</head>
-			<p n="1"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.001"> 
-				<lg n="1" met="anuṣṭubh">
+			<p n="1"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.001">
+				<lg met="anuṣṭubh"><!-- Axelle: should we also encode @n="MDhŚ08.001" here, i.e. the same infornmation as in @source inside <quote>? or not? -->
 				<l>vyavahārān didr̥kṣus tu brāhmaṇaiḥ saha pārthivaḥ</l>
 				<l>mantrajñair mantribhiś caiva vinītaḥ praviśet sabhām ॥</l>
-				</lg></quote></supplied> 
-kunaṅ hulaha saṅ prabhu, uniṅānira taṅ vyavahāranikaṅ rāt, harovaṅa ta sira brāhmaṇa vihikan maṅaji, lavan mantri riṅ vruh <app><lem wit="#L">mavivekā</lem><rdg wit="#K">mavikvekā</rdg></app>, sulakṣaṇaha ta sira tumamaha riṅ śabhā.</p>
-      </div>
+				</lg></quote></supplied>
+kunaṅ hulaha saṅ prabhu, uniṅānira taṅ vyavahāranikaṅ rāt,
+harovaṅa ta sira brāhmaṇa vihikan maṅaji,
+lavan mantri <app><lem wit="#L">riṅ</lem><rdg wit="#K">,</rdg></app> vruh <app><lem wit="#L">mavivekā</lem><rdg wit="#K">mavikvekā</rdg></app>,
+sulakṣaṇaha ta sira tumamaha riṅ sabhā.</p>
+<!--
+	L: [01-04] haliṅgiha pagəha ta sira riṁ sabha:, taṅanira tṅən hatah ulahaknira, hayva: tu[01-05]duḥtuduḥ kiva:,
+bhūṣa:ṇa pahyasniṁ vvaṁ sugiḥla:taḥ lvirranira,
+Iṅətiṅətəni[01-06]ra:taḥ yogya:yogyani karyyanikaṁ mavyava:hara kaliḥ ||
+	K: haliṅgiḥ pagəha: ta sira riṁ śabha:, taṅanira tṅən hata[SH]h ula:knira, hayva tuduḥtuduḥ kiva:,
+bhuṣa:ṇa payasniṁ vvaṁ śūśila:taḥ lviranira, Iṅətiṅətənira:taḥ hogya:[1v3]yogyaniṁ ka:ryyanikaṁ mavya:vara kaliḥ ||
+-->
+<p n="2"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.002">
+	<lg met="anuṣṭubh">
+	<l>tatrāsīnaḥ sthito vāpi pāṇim udyamya dakṣiṇam |</l>
+	<l>vinītaveṣābharaṇaḥ paśyet kāryāṇi kāryiṇām</l>
+</lg></quote></supplied>
+<app><lem type="norm">haliṅgihāpagəha</lem><rdg wit="#L">haliṅgih apagəha</rdg><rdg wit="#K">haliṅgiḥ pagəha:</rdg></app> ta sira riṅ sabhā, taṅanira tṅən hatah <app><lem wit="#L">ulahaknira</lem><rdg wit="#K">ula:knira</rdg></app>,
+hayva tuduh-tuduh<!-- L has hayvātuduh-tuduh --> kiva,
+bhūṣaṇa-pahyasniṅ vvaṅ suśīlātah lviranira,
+iṅət-iṅətənirātah yogyāyogyani kāryanikaṅ mavyavahāra kalih.
+</p>
+<!--
+[01-07] sarī maśiha sira:n∙ ṅiṅətiṅəta makasa:danaṁ varavaraḥ saṁ hyaṁṅ a:gama manava<vi>di,
+mvaṁ sa: kinapagəhaknikaṁ sapañjiṁ deśanya, deṣa ṅaranya: [CHK L?] ,sadaṅa yan· sajamus∙ vuṅkal∙, savuravan∙,
+sakanuruhan∙, an hana: kapaR̥kanya deniṅ a:gama,
+ya hika: deśadr̥ṣṭa ṅaranya, hankan deśa sasiki śva:deśanikaṁ
+[01-11] vyava:hara, Aṣṭadaṣa sumargge,
+Irika:stha:naniṁ vyava:hara vva:luvlas∙, kveḥnya, salvir<aniṁ vicaran>iṁ vyava:hara,
+hana tinmunya ṅka:na salaḥ siki, pa[01-13]<ḍa: ma>dudva:dudva:n∙ viṣayanya ||
+-->
+<p n="3"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.003">
+<lg met="anuṣṭubh">
+	<l>pratyahaṃ deśadr̥ṣṭaiś ca śāstradr̥ṣṭaiś ca hetubhiḥ |</l>
+	<l>aṣṭādaśasu mārgeṣu nibaddhāni pr̥thak pr̥thak ||</l>
+	</lg>
+
+			</div>
                <div type="translation">
                	<p n="1"><supplied reason="subaudible"><quote rend="stanza" source="MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied>
 	Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
