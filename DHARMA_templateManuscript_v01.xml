@@ -6,7 +6,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-      <title>Encoding template for manuscript</title><!--Change the title of the file with the name of your text-->
+      <title type="main">Encoding template for manuscript</title><!--Change the title of the file with the name of your text-->
+        <title type="subtitle">Digital Critical Edition and Translation of...</title><!-- fill in the subtitle if necessary -->
       <respStmt> <!-- repeat the respStmt when necessary -->
         <resp>creation of the file</resp><!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
         <persName ref="part:jodo"><!-- update the id -->
@@ -16,10 +17,7 @@
       </respStmt>
       </titleStmt>         
       <publicationStmt>
-        <authority>DHARMA 
-          <note>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).
-          </note> <!-- Possible to change the autority if necessary as well as the <note>-->
-        </authority>
+        <authority>DHARMA</authority>
         <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
         <idno type="filename">DHARMA_EncodingTemplateInscription</idno><!-- Replace by filename, e.g. Pallava00001 -->
         <availability>
@@ -32,23 +30,48 @@
       </publicationStmt>
       <sourceDesc>
          <listWit><!-- Stuctured data or just text? -->
-            <!-- One witness for each manuscript -->
-           <!-- possibility 1 -->
-            <witness xml:id="fakeID">Lontar, Leiden, UB, Or. 3723</witness> 
-           <!-- possibility 2: prefered one compared to  -->
-            <witness xml:id="_fakeID_">
-              <msDesc>
-                <msIdentifier>
-                  <settlement>Leiden</settlement>
-                  <institution>University Library (UB)</institution>
-                  <repository>Lontar</repository>
-                  <idno>Or. 23732</idno>
-                </msIdentifier> <!--Do you wish to give more details the manuscript? TBD with Adeline regarding the conceptuel content-->
-              </msDesc>
-            </witness>
+            <!-- One witness for each manuscript. Update the  -->
+           <witness>
+             <msDesc>  
+               <msIdentifier xml:id="fakeID">   <!-- Give your witness an identifier -->
+                 <settlement>Leiden</settlement>
+                 <institution>University Library (UB)</institution>
+                 <repository>Lontar</repository>
+                 <idno>Or. 23732</idno>
+               </msIdentifier>  
+               <msContents> <!-- the msContents isn't mandatory --> 
+                 <msItem>    
+                   <author>Śāntarakṣita</author>    
+                   <title>Vipañcitārthā</title>   
+                 </msItem>  
+               </msContents>  
+               <physDesc>   
+                 <objectDesc>    
+                   <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                 </objectDesc>  
+               </physDesc>  
+               <history>   
+                 <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+               </history> 
+             </msDesc>
+           </witness>
     </listWit>
       </sourceDesc> 
    </fileDesc>
+    <encodingDesc>
+      <projectDesc> <!-- Fell free to add another <p> to explain your own project as well -->
+        <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+      </projectDesc>
+      <editorialDecl> <!-- This part can be structured depending your need to explain some of your editorial work, See the  -->
+        <correction>
+          <p>Turned letters are silently corrected.</p>
+        </correction>
+        <normalization>
+          <p>Original spelling and typography is retained, except that long s and ligatured
+            forms are not encoded.</p>
+        </normalization>
+      </editorialDecl>
+    </encodingDesc>
       <profileDesc>
 	<langUsage><!-- choose the language of your text -->
       	  <language ident="san-Latn">Sanskrit, romanized</language>
@@ -57,6 +80,12 @@
       	  <language ident="kan-Latn">Kannada, romanized</language>
       	  <language ident="tel-Latn">Telugu, romanized</language>
 	</langUsage>
+        <textClass>
+          <keywords><!-- Add a term for each keyword -->
+            <term></term> <!-- Choose your keywords in the established list. -->
+          </keywords>
+          <classCode scheme="#lc">JC 177</classCode>
+        </textClass>
       </profileDesc>
     <revisionDesc>
       <change who="part:axja" when="2020-01-06" status="draft">Creation of the template</change><!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
