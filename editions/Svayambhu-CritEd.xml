@@ -3,35 +3,29 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Svayambhu</title> 
+				<title type="main">Svayambhu</title>
 				<title type="sub">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
-			<editor ref="https://viaf.org/viaf/11026260/">
-				<forename>Arlo</forename> 
-				<surname>Griffiths</surname>
-			</editor>
-				<editor ref="http://viaf.org/viaf/120435268">
-				<forename>Timothy</forename> 
-				<surname>Lubin</surname>
-			</editor>
-			<respStmt>
-				<resp>structuring of the TEI file</resp>
-				<persName>Arlo Griffiths</persName>
-			</respStmt>
+				<editor ref="part:argr">
+					<forename>Arlo</forename>
+					<surname>Griffiths</surname>
+				</editor>
+				<editor ref="part:tilu">
+					<forename>Timothy</forename>
+					<surname>Lubin</surname>
+				</editor>
+				<respStmt>
+					<resp>structuring of the TEI file</resp>
+					<persName>Arlo Griffiths</persName>
+				</respStmt>
 			</titleStmt>
 			<publicationStmt>
-				<authority>DHARMA <note>This project has received funding from the European Research
-					Council (ERC) under the European Union's Horizon 2020 research and
-					innovation programme (grant agreement no 809994).</note>
+				<authority>DHARMA <note>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</note>
 				</authority>
 				<pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
 				<idno type="filename">Svayambhu-CritEd</idno>
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">
-						<p>This work is licensed under the Creative Commons Attribution 4.0 Unported
-							Licence. To view a copy of the licence, visit
-							https://creativecommons.org/licenses/by/4.0/ or send a letter to
-							Creative Commons, 444 Castro Street, Suite 900, Mountain View,
-							California, 94041, USA.</p>
+						<p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
 						<p>Copyright (c) 2019-2025 by Arlo Griffiths &amp; Timothy Lubin.</p>
 					</licence>
 				</availability>
@@ -43,7 +37,7 @@
 					<witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, II A/3/774: Balinese script on lontar</witness>
 				</listWit>
 			</sourceDesc>
-		</fileDesc> 
+		</fileDesc>
 		<encodingDesc>
 			<p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
 		</encodingDesc>
@@ -52,7 +46,7 @@
 				<language ident="san-Latn">Sanskrit, romanized</language>
 				<language ident="kaw-Latn">Old Javanese, romanized</language>
 			</langUsage>
-		</profileDesc>		
+		</profileDesc>
 		<revisionDesc>
 			<change when="2020-04-23" who="part:argr">creation of TEI document</change>
 		</revisionDesc>
@@ -63,28 +57,74 @@
 	<text>
 		<body>
 			<div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
-<!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:-
-[01-02] va:haranikaṁ ra:t∙, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ
-[01-03] vruḥ maviveka:, sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
-<!-- K: [1v1] || ○ || Avighnam a:stu || ○ || kunaṁ hulaha: saṁ prabhu, Uniṅanira taṁ vyavaharani§[SH]kaṁ ra:t∙, harovaṅa ta sira: brahma:{kar}/ṇa\ vihikan maṅaji, lavan mantri, <riṅ> vruḥ mavikveka:, śūlakṣa[1v2]ṇa:ha: ta sira tumamaha: riṁ śabha: || -->
+<!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t∙,
+harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ [01-03] vruḥ maviveka:,
+sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
+<!-- K: [1v1] || ○ || Avighnam a:stu || ○ || kunaṁ hulaha: saṁ prabhu, Uniṅanira taṁ vyavaharani§[SH]kaṁ ra:t∙,
+harovaṅa ta sira: brahma:{kar}/ṇa\ vihikan maṅaji, lavan mantri, vruḥ mavikveka:,
+śūlakṣa[1v2]ṇa:ha: ta sira tumamaha: riṁ śabha: || -->
 <head xml:lang="san-Latn"><pb ed="#L" n="1"/><pb ed="#K" n="1v"/>//0// avighnam astu //0//</head>
-			<p n="1"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.001"> 
-				<lg n="1" met="anuṣṭubh">
+			<p n="1"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.001">
+				<lg met="anuṣṭubh">
 				<l>vyavahārān didr̥kṣus tu brāhmaṇaiḥ saha pārthivaḥ</l>
 				<l>mantrajñair mantribhiś caiva vinītaḥ praviśet sabhām ॥</l>
-				</lg></quote></supplied> 
-kunaṅ hulaha saṅ prabhu, uniṅānira taṅ vyavahāranikaṅ rāt, harovaṅa ta sira brāhmaṇa vihikan maṅaji, lavan mantri riṅ vruh <app><lem wit="#L">mavivekā</lem><rdg wit="#K">mavikvekā</rdg></app>, sulakṣaṇaha ta sira tumamaha riṅ śabhā.</p>
-      </div>
-               <div type="translation">
-               	<p n="1"><supplied reason="subaudible"><quote rend="stanza" source="MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied>
-	Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
-            </div>
-            <div type="commentary">
-                <p>commentary</p>
-            </div>
-            <div type="bibliography">
-                <p>bibliography of previous editions, discussion, etc.</p>
-            </div>
-        </body>
-    </text>
+				</lg></quote></supplied>
+kunaṅ hulaha saṅ prabhu, uniṅānira taṅ vyavahāranikaṅ rāt,
+harovaṅa ta sira brāhmaṇa vihikan maṅaji,
+lavan <app><lem type="emn">mantri vruh</lem><rdg wit="#L">mantri riṁ vruḥ</rdg><rdg wit="#K">mantri, vruḥ</rdg></app> 
+<app><lem wit="#L">mavivekā</lem><rdg wit="#K">mavikvekā</rdg></app>,
+sulakṣaṇaha ta sira tumamaha riṅ sabhā.</p>
+<!--	L: [01-04] haliṅgiha pagəha ta sira riṁ sabha:, taṅanira tṅən hatah ulahaknira, hayva:tu[01-05]duḥtuduḥ kiva:,
+bhūṣa:ṇa pahyasniṁ vvaṁ sugiḥla:taḥ lvirranira,
+Iṅətiṅətəni[01-06]ra:taḥ yogya:yogyani karyyanikaṁ mavyava:hara kaliḥ ||
+	K: haliṅgiḥ pagəha: ta sira riṁ śabha:, taṅanira tṅən hata[SH]h ula:knira, hayva tuduḥtuduḥ kiva:,
+bhuṣa:ṇa payasniṁ vvaṁ śūśila:taḥ lviranira, Iṅətiṅətənira:taḥ hogya:[1v3]yogyaniṁ ka:ryyanikaṁ mavya:vara kaliḥ ||
+-->
+<p n="2"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.002">
+	<lg met="anuṣṭubh">
+	<l>tatrāsīnaḥ sthito vāpi pāṇim udyamya dakṣiṇam |</l>
+	<l>vinītaveṣābharaṇaḥ paśyet kāryāṇi kāryiṇām</l>
+</lg></quote></supplied>
+<app><lem type="norm">haliṅgihāpagəha</lem><rdg wit="#L">haliṅgih apagəha</rdg><rdg wit="#K">haliṅgiḥ pagəha:</rdg></app> ta sira riṅ sabhā, taṅanira tṅən hatah <app><lem wit="#L">ulahaknira</lem><rdg wit="#K">ula:knira</rdg></app>,
+<app><lem wit="#L">hayvātuduh-tuduh</lem><rdg wit="#K">hayva tuduḥtuduḥ</rdg></app>*<!-- atuduh-tuduh is not in OJED --> kiva,
+bhūṣaṇa-pahyasniṅ vvaṅ suśīlātah lviranira,
+iṅət-iṅətənirātah yogyāyogyani kāryanikaṅ mavyavahāra kalih.
+</p>
+<!--
+L: sarī maśiha sira:n∙ ṅiṅətiṅəta makasa:danaṁ varavaraḥ saṁ hyaṁṅ a:gama [01-08] manava:vī,
+		mvaṁ sa:kinapagəhaknikaṁ sapañjiṁ deśanya, sadaṅayan· sajamu[01-09]s∙ vuṅkal∙, savurava:n∙, sakanuruhan∙,
+		An∙ hana kapaR̥kanya deni[01-10]ṅa:gama, ya hika: deśadr̥ṣṭa ṅaranya,
+		hankan deśa sasiki śva:deśanikaṁ [01-11] vyava:hara, Aṣṭadaṣasu margge, Irika: stha:naniṁ vyava:hara vva:luvlas∙,
+		kv[01-12]eḥnya, salviraniṁ vicaraniṁ vyava:hara, hana tinmunya ṅka:na salaḥ siki, pa[01-13]ḍa: madudva:dudva:n∙ viṣayanya ||
+K: sarī masiha: siran∙ ṅiṅətiṅəta makasḍanaṁ varaḥvaraḥ [SH] saṅ hyaṁṅ a:gamma: manava:di,
+	mvaṁ sakinapagəhaknikaṁ sapañjiṁ deṣanya, deṣa ṅaranya:, sadaṅayan sajamus∙ vuṅkal∙ [1v4], savuravan∙, sakanuruvan∙,
+	An∙ hana: kapaR̥kanya denīṁ hagamma:, ya hika: deṣadṛṣṭa: ṅaranya: [SH]
+	hankan deṣa sasiki śvadeṣanikaṁ vya:vahara, haṣṭa:deṣa:su ma:rgge, hirika ṣṭa:naniṁ vyavahara valuvlas∙ — [2r1] kveḥnya, salvir<aniṅ vicaran>iṅ vyavahara, hana tinmunya ṅkana: salaḥ siki, pa<ḍa: ma>dudvadudvan∙ viṣayanya ||
+-->
+<p n="3"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.003">
+<lg met="anuṣṭubh">
+	<l>pratyahaṁ deśadr̥ṣṭaiś ca śāstradr̥ṣṭaiś ca hetubhiḥ |</l>
+	<l>aṣṭādaśasu mārgeṣu nibaddhāni pr̥thak pr̥thak ||</l>
+	</lg>
+</quote></supplied>
+*sari<!-- the unreduplicated form is not recorded in OJED --> masiha sirān ṅiṅət-iṅəta <app><lem type="norm">makasādhanaṅ</lem><rdg wit="#L">makasa:danaṁ</rdg><rdg wit="#K">makasḍanaṁ</rdg></app> vara-varah saṅ hyaṅ āgama <app><lem wit="#K">mānavādi</lem><rdg wit="#L">manava:vī</rdg></app>,
+mvaṅ sakinapagəhaknikaṅ sapañjiṅ deśanya, <app><lem wit="#K">deśa ṅaranya,</lem><rdg wit="#L"/></app>
+sadaṅayan<add>,</add><!-- or use <supplied>? --> sajamus vuṅkal, savuravan, sakanuruhan,
+an hana *kaparǝkanya deniṅ āgama, ya hika deśadr̥ṣṭa ṅaranya,
+<!-- AG+TL have reached here on 2020-05-06 -->
+hankan<!-- maybe = aṅkǝn?--> deśa sasiki svadeśanikaṅ vyavahāra, <term><app><lem type="emn">aṣṭādaśasu mārgeṣu</lem><rdg wit="#L">Aṣṭadaṣasu margge</rdg><rdg wit="#K">haṣṭa:deṣa:su ma:rgge</rdg></app></term>, irikā sthānaniṅ vyavahāra vvalu vlas,
+kvehnya, salviraniṁ vicaraniṁ vyava:hara, hana tinmunya ṅka:na salaḥ siki, pa[01-13]ḍa: madudva:dudva:n∙ viṣayanya ||
+</p>
+			</div>
+			<div type="translation">
+				<p n="1"><supplied reason="subaudible"><quote rend="stanza" source="MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied> Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
+			</div>
+			<div type="commentary">
+				<p>commentary</p>
+			</div>
+			<div type="bibliography">
+				<p>bibliography of previous editions, discussion, etc.</p>
+			</div>
+		</body>
+	</text>
 </TEI>
