@@ -36,6 +36,20 @@
 					<witness xml:id="L">Leiden, Universiteitsbibliotheek, the Netherlands, Or. 4530: Balinese script on paper, van der Tuuk collection</witness>
 					<witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, II A/3/774: Balinese script on lontar</witness>
 				</listWit>
+			<listBibl>
+				<biblStruct type="book" xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
+					<monogr>
+						<title level="m">Mānava-dharma śāstra</title>
+						<editor><forename>Vishwanath Narayan</forename><surname>Mandlik</surname></editor>
+						<author><name>Govindaraja</name></author>
+						<imprint>
+							<pubPlace>Bombay</pubPlace>
+							<publisher>Ganpat Krishnaji's press</publisher>
+							<date>1886</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</listBibl>
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
@@ -120,19 +134,25 @@ kvehnya, <app><lem wit="#L">salviraniṅ vicāraniṅ</lem><rdg wit="#K">salviri
 			<!--
 L:		[01-14] Iṅsī ya kurute kaścit∙, hana vvaṁ mama:tyani nirdoṣa, kunaṁ deya[01-15]m va na prayaścati, tan paveḥ hirikaṁ yogya vehakna, Aveh irikaṁ [01-16] tan∙ yogya vehaknanya kunaṁ,
 			stha:ne te dve viva:dasya, ya Ika: [01-17] stha:naniṁ vyava:hara, rvaṁ siki malanya, bhine ṣṭedaśada: punaḥ, matmahan ta [01-18] ya vva:luvla:s∙ vkasan∙ ||
-K:			I§[SH]ṅsa: ya kurute kaścit∙, hana: voṁ mamatyani nirdoṣa:, maṅlarani nirdoṣa, kunaṁ deyam va na prayaścati [2r2], tan paveḥ hirikaṁ yogya vehikna, Aveh irikaṁ tan∙ yogya vehaknanya kfunaṁ, svane te [SH] dve vivadasya, ya hikaṁ sthananiṁ vyavahara, rvaṁ siki mulanya, bhine ṣṭedaśada punaḥ, matmahan ta ya valuvlas∙ vka[2r3]san∙ ||
+K:			I§[SH]ṅsa: ya kurute kaścit∙, hana: voṁ mamatyani nirdoṣa:, maṅlarani nirdoṣa, kunaṁ deyam va na prayaścati [2r2], tan paveḥ hirikaṁ yogya vehikna, Aveh irikaṁ tan∙ yogya vehaknanya kunaṁ,
+			svane te [SH] dve vivadasya, ya hikaṁ sthananiṁ vyavahara, rvaṁ siki mulanya, bhine ṣṭedaśada punaḥ, matmahan ta ya valuvlas∙ vka[2r3]san∙ ||
 			-->
-<!-- AG+TL have reached here on 2020-05-13 -->
 			<p n="4"><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.003_insertedafter_oOr"><!-- argr2axja: here we have a stanza that occurs in some witness of the basetext but has been rejected from the critical edition whose numbering we're following-->
 			<lg met="anuṣṭubh">
 				<l>hiṁsāṁ yaḥ kurute kaś cid deyaṁ vā na prayacchati |</l>
-				<l>sthāne te dve vivādasya bhinno ’ṣṭādaśadhā punaḥ ||</l>
+				<l>sthāne te dve vivādasya <app><lem source="Svayambhu"><!-- argr2axja: we are here trying to represent that the lemma from this stanza in the Svayambhu itself supports the reading bhinne as opposed to bhinno -->bhinne</lem><rdg source="#Mandlik1886_01">bhinno</rdg><note>Mandlik's reading is also supported by a manuscript collated in Olivelle 2005.</note></app> ’ṣṭādaśadhā punaḥ ||</l>
 				</lg>
 			</quote></supplied>
-			<term><app><lem type="emn">hiṁsāṁ yaḥ</lem><rdg wit="#L">Iṅsīya</rdg><rdg wit="#K">Iṅsa:ya</rdg></app> kurute kaś cit</term>, hana vvaṁ mama:tyani nirdoṣa, kunaṁ deya[01-15]m va na prayaścati, tan paveḥ hirikaṁ yogya vehakna, Aveh irikaṁ [01-16] tan∙ yogya vehaknanya kunaṁ,
-						stha:ne te dve viva:dasya, ya Ika: [01-17] stha:naniṁ vyava:hara, rvaṁ siki malanya, bhine ṣṭedaśada: punaḥ, matmahan ta [01-18] ya vva:luvla:s∙ vkasan∙ ||
-		</p>
+			<term xml:lang="san-Latn"><app><lem type="emn">hiṁsāṁ yaḥ</lem><rdg wit="#L">Iṅsīya</rdg><rdg wit="#K">Iṅsa:ya</rdg></app> kurute kaś cit</term>,
+			hana vvaṅ mamātyani nirdoṣa, <app><lem wit="#K">maṅlarani nirdoṣa,</lem><rdg wit="#L"/></app>
+			kunaṅ <term xml:lang="san-Latn">deyam <app><lem type="norm">vā</lem><rdg wit="#L #K">va</rdg></app> na <app><lem type="emn">prayacchati</lem><rdg wit="#L #K">prayaścati</rdg></app></term>,
+			tan paveh irikaṅ yogya <app><lem wit="#L">vehakna</lem><rdg wit="#K">vehikna</rdg></app>, aveh irikaṅ tan yogya vehaknanya kunaṅ,
+			<term xml:lang="san-Latn"><app><lem wit="#L">sthāne</lem><rdg wit="#K">svane</rdg></app> te dve vivādasya</term>,
+			ya <app><lem wit="#L">ikā</lem><rdg wit="#K">hikaṁ</rdg></app> sthānaniṅ vyavahāra, rvaṅ siki <app><lem wit="#K">mūlanya</lem><rdg wit="#L">malanya</rdg></app>,
+			<term xml:lang="san-Latn"><app><lem type="norm">bhinne</lem><rdg wit="#L #K">bhine</rdg></app> <app><lem type="emn">’ṣṭādaśadhā</lem><rdg wit="#L">ṣṭedaśada:</rdg><rdg wit="#K">ṣṭedaśada</rdg></app> punaḥ</term,
+			matmahan ta ya vvalu vlas vkasan.</p>
 			</div>
+	<!-- AG+TL have reached here on 2020-05-20 -->
 			<div type="translation">
 				<p n="1"><supplied reason="subaudible"><quote rend="stanza" source="MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied> Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
 			</div>
