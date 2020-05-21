@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="svayambhu">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="rsisasana">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">R̥ṣiśāsana</title>
-				<title type="sub">Digital Critical Edition and Translation of an Old Javanese code of conduct</title>
+				<title type="sub">Digital Critical Edition and Translation of an Old Javanese Code of Conduct</title>
 				<editor ref="part:masc">
 					<forename>Marine</forename>
 					<surname>Schoettel</surname>
 				</editor>
 				<respStmt>
-					<resp>structuring of the TEI file</resp>
+					<resp>structuring of the TEI file</resp> <!--TBM-->
 					<persName>Marine Schoettel</persName>
 				</respStmt>
 			</titleStmt>
@@ -48,6 +48,7 @@
 			</langUsage>
 		</profileDesc>
 		<revisionDesc>
+			<change when="2020-05-21" who="part:masc">Reading div 1 and 2 with argr</change>
 			<change when="2020-05-20" who="part:masc">Adding first paragraphs</change>
 			<change when="2020-05-13" who="part:masc">creation of TEI document</change>
 		</revisionDesc>
@@ -58,39 +59,58 @@
 	<text>
 		<body>
 			<div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
-<head xml:lang="san-Latn"><pb ed="#O" n="1v"/>//0// om̐ nama<reg>h</reg> śivāya //0//</head>
-			<div n="1"><p>
-				<lg met="triṣṭubh">
-				<l>nr̥pah manuh <app wit="#K"><lem>pūrvakadevatāsīt</lem><rdg wit="#O">pūrvvatadevata:<unclear>s</unclear>ət</rdg><rdg wit="#L #T">pūrvvatadetasət</rdg></app></l>
-				<l><reg>dattvā</reg> <app><lem type="emn">suśāstraṃ</lem><rdg wit="#K #O #T">suśa:ntraṃ</rdg><rdg wit="#L">suśantraṅ</rdg></app> <lem type="norm">śivaśāsanākhyaṃ</lem><rdg wit="#O">śiva:śa:śanakyaṃ</rdg><rdg wit="#K">sivasasanakiyam</rdg><rdg wit="#L #T">śaṣakyəṅ</rdg></l>
-				<l><app><lem type="emn">śaivaiḥ</lem><rdg wit="#O #T">śaivai</rdg><rdg wit="#K">saiveh</rdg><rdg wit="#L">śove</rdg></app> <app><lem type="emn">sadāpūjā-</lem><rdg wit="#O #L #T">seda:paja-</rdg><rdg wit="#K">sadapaja-</rdg>
+<head xml:lang="san-Latn"><pb ed="#O" n="1v"/>//0// om̐ <app><lem type="norm">namaḥ</lem><rdg wit="#O #K #L #T">nama</rdg></app> śivāya //0//</head>
+			<div type="dyad" n="1">
+				<p><lg met="upajāti">
+				<l>nr̥paḥ<!-- nr̥po? --> manuḥ <app><lem wit="#K">pūrvakadevatāsīt</lem><rdg wit="#O">pūrvvatadevata:<unclear>s</unclear>ət</rdg><rdg wit="#L #T">pūrvvatadetasət</rdg></app></l>
+				<l><app><lem type="norm">dattvā</lem><rdg wit="#O">da:tva</rdg><rdg wit="#K">datva</rdg></app> <app><lem type="emn">suśāstraṁ</lem><rdg wit="#K #O #T">suśa:ntraṃ</rdg><rdg wit="#L">suśantraṅ</rdg></app> <lem type="norm">śivaśāsanākhyaṁ</lem><rdg wit="#O">śiva:śa:śanakyaṃ</rdg><rdg wit="#K">sivasasanakiyam</rdg><rdg wit="#L #T">śaṣakyəṅ</rdg></l>
+				<l><app><lem type="emn">śaivaiḥ</lem><rdg wit="#O #T">śaivai</rdg><rdg wit="#K">saiveh</rdg><rdg wit="#L">śove</rdg></app> <app><lem type="emn">sadā pūjā-</lem><rdg wit="#O #L #T">seda:paja-</rdg><rdg wit="#K">sadapaja-</rdg>
 			</app>kr̥taiḥ <app><!--lem TBD--><rdg wit="#O #K #T">tumevaṃ</rdg><rdg wit="#L">tumeviṅ</rdg></app></l>
-				<l>prajasyā<app>	<!--lem TBD--><rdg wit="#O #K">yonaṃ-</rdg><rdg wit="#L">yonəṅ</rdg></app>ya <app><lem wit="#O #L #T">subhāyabhiram</lem><rdg wit="#K">subhaya ciram</rdg></app>॥</l>
+				<l>prajasyā <app><!--lem TBD--><rdg wit="#O #K">yonaṃ-</rdg><rdg wit="#L">yonəṅ</rdg></app>ya <app><lem wit="#O #L #T">subhāyabhiram</lem><rdg wit="#K">subhaya ciram</rdg></app>॥</l>
 			</lg></p>
+<!-- Reconstruction: nr̥paḥ manuḥ pūrvata devatāsīt / dattvā suśāstraṁ* śivaśāsanākhyaṁ / śaivaiḥ sadā pūja-kr̥taiḥ tu meyam* / prajasya yo naṃya subhāya ciram -->
+#O [fol01v1] // 0 // om̐ nama śivāya // 0 //
+	nr̥paḥ manuḥ pūrvvata devata:(s)ət· ,  da:tva suśa:ntraṃ śiva:śa:śanak[SH]yaṃ , śaivai seda:paja kr̥taiḥ tumevaṃ , prajasya: yonaṃya subha:yabhiram· //
+#K nrepa manuh purvakadevatasit, datva susantram, sivasasanakiyam saiveh sadapaja kretaih tumevam, prajasya yonam ya subaya ciram //
+
 <p>kaliṅanya, sira bhaṭāra tambeyanira <app><lem wit="#O #K #T">mintonakən</lem><rdg wit="#L">mintonakəka</rdg></app> <app><lem wit="#K">āvaknirar paṅanti</lem>
-<rdg wit="#O #L #T">āvaknira maṅanti</rdg></app> riṅ rāt, sira ta mūlaniṅ sinaṅguh prabhu riṅ loka madhyapada, mahārāja manu ṅaranira, sira <app>
-<lem wit="#O #L">maveh</lem>
-<rdg wit="#K">vehən</rdg>
-<rdg wit="#T">madeva</rdg>
-</app> anugraha <app><lem wit="#O #L">suśāstra</lem><rdg wit="#K">susanta</rdg><rdg wit="#T">sura:stra</rdg></app> śevāśāśana ṅaranya, mapakna keśvaryānanira ḍaṅ ācārya śaiva, ri tiṅkah saṅ bhujaṅga <app><lem type="emn">nityaśāṅutsāha</lem><rdg wit="#O #L #K #T">nitya saṅ utsaha</rdg></app> gumavayakən pūjā samādhi riṅ ahorātri, rahina vəṅi tan <app>
+<rdg wit="#O #L #T">āvaknira maṅanti</rdg></app><!-- fuse into one <app>--> riṅ rāt,
+sira ta mūlaniṅ sinaṅguh prabhu riṅ loka madhyapada, mahārāja manu ṅaranira,
+sira <app><lem wit="#O #L">maveh</lem><rdg wit="#K">vehən</rdg><rdg wit="#T">madeva</rdg></app> anugraha <app><lem wit="#O #L">suśāstra</lem><rdg wit="#K">susanta</rdg><rdg wit="#T">sura:stra</rdg></app> śevaśāśana <!--norm to śaivaśāsana or śivaśāsana?--> ṅaranya, mapakna keśvaryānanira ḍaṅ ācārya śaiva, ri tiṅkah saṅ bhujaṅga <app><lem type="emn">nityaśāṅutsāha</lem><rdg wit="#O #L #K #T">nitya saṅ utsaha</rdg></app> gumavayakən pūjā samādhi riṅ ahorātri, rahina vəṅi tan <app>
 <lem wit="#O #K #T">paṅinak-inak</lem>
 <rdg wit="#L">paṅinak-ənak</rdg>
-</app> saṅ bhujaṅga mrārthanākən ri svasthāniṅ rat, ṅuniveh ri hayva taṇḍa rakryan makādi <app><lem wit="#O #L #T">ri hajəṅa</lem><rdg wit="#K">ri rahajəṅga</rdg></app> saṅ prabhu, laṅgə̄ṅanira <app><lem type="emn">sinivi kabhujaṅgan</lem><rdg wit="#O #T">sinivi kebhujaṅgan</rdg><rdg wit="#L">sinivi kenujaṅgan</rdg>
-<rdg wit="#K">sivi kabujaṅgan</rdg></app>, mvaṅ gavayakna taṅ <reg>trikāya</reg> paramārtha ṅaranya, ulah, <surplus>śīla,</surplus><!--See parallels in many other texts for this series of three, which do not include śīla--> śabda, lāvan āmbək // nahan ta karakṣaniṅ śīla ṅaranya,</p>
+</app> saṅ bhujaṅga mrārthanākən ri svasthāniṅ rat,
+ṅuniveh ri hayva taṇḍa rakryan makādi <app><lem wit="#O #L #T">ri hajəṅa</lem><rdg wit="#K">ri rahajəṅga</rdg></app> saṅ prabhu,
+laṅgə̄ṅanira <app><lem wit="#O #T #L">sinivi</lem><rdg wit="#K">sivi</rdg></app> <app><lem wit="K">kabhujaṅgan</lem><rdg wit="#O #T">kebhujaṅgan</rdg><rdg wit="#L">kenujaṅgan</rdg></app>,
+mvaṅ gavayakna taṅ trikāya paramārtha ṅaranya, ulah, śīla,<!--See parallels in many other texts for this series of three, which do not include śīla, add note in translation that śīla is probably a gloss on ulah, but should not be considered as a fourth element interpolated(?) in this series--> śabda, lāvan āmbək //<!-- maybe limit punctuation in edition to , and . or | and || -->nahan ta karakṣaniṅ śīla ṅaranya,</p>
 
 <div n="2"><p><!--missing śloka here in all probability, which would spell out the list of virtues--><app><lem type="emn">maitrī</lem><rdg wit="#O #K">metri</rdg><rdg wit="#L">met riṅ</rdg></app>
-paraduhkha ṅaranya viyoga, <app><lem wit="#K">sukhakaruṇa</lem><rdg wit="#O #L #T"/></app><!--quite likely that K contains a later gloss, i.e. an interpolation?-->, <app><lem wit="#O #L #T">tuṣṭi</lem><rdg wit="#K">tusta</rdg>
-</app> sukhamudita, parasukhaduhkha upekṣa, <app><lem wit="#O #K #T">kamupekṣan</lem><rdg wit="#L">kapupekṣan</rdg></app>, gumavayakən kahayvaknaniṅ para kaliṅanikā, <list>
+paraduhkha ṅaranya viyoga,
+<app><lem wit="#K">sukhakaruṇa</lem><rdg wit="#O #L #T"/></app><!--quite likely that K contains a later gloss, i.e. an interpolation?-->,
+<app><lem wit="#O #L #T">tuṣṭi</lem><rdg wit="#K">tusta</rdg>
+</app> sukhamudita, parasukhaduhkha upekṣa, <app><lem wit="#O #K #T">kamupekṣan</lem><rdg wit="#L">kapupekṣan</rdg></app>, gumavayakən kahayvaknaniṅ para kaliṅanikā,
+<list>
 <item>paraduhkha-viyoga ṅaranya, alarāmbəknira tumon duhkhaniṅ len, karuṇa ṅaranikā,</item>
 <item>paratuṣṭi ṅaranya, enak ambəknira tumon sukhani̇ṅ len, mudita ṅaranikā,</item>
-</list>kaliṅanya, hayva tan mātmā <reg>sammodana</reg>, kadi sihta ry avakta, maṅkana ta sihanta riṅ len, mvaṅ gavayakna taṅ tutur, tapa, japa, samādhi, mantra, aviparīta, apan <app><lem wit="#O #K">tapasvinam</lem><rdg wit="#L">tapthasminam</rdg></app>, <app><lem wit="#K">samarūpam</lem><rdg wit="#O">samarūpəm</rdg><rdg wit="#L">samarupək</rdg></app> saṅ viku, sama samādhinira, rūpam <app><lem wit="#O #L">pinakarūpanira</lem><rdg wit="#K">pinakarusanira</rdg></app>
-, pinakabratanira, prajavandha ta sira, masih riṅ sarvajanma, ṅuniveh kahayvaknaniṅ rāt kabeh, dadyaniṅ tahun, laṇḍuṅaniṅ
-<app><lem wit="#O #K">udan</lem><rdg wit="#L">udun</rdg></app>, karuhun kadirghāyuṣakna śrī mahārāja, sakulavarganira, putrapautrāṅśanira, nahan karakṣaniṅ bhuvana de saṅ paṇḍita,</p></div>
-<!--Find //: caturpāramitā ṅaranya; metrī karuṇā muditā upekṣā-->
+</list>
+kaliṅanya, hayva tan mātmā <app><lem type="norm">sammodana</lem><rdg wit="#O">samoḍana</rdg><rdg wit="#K">samodana</rdg></app>, kadi sihta ry avakta, maṅkana ta sihanta riṅ len, mvaṅ gavayakna taṅ tutur, tapa, japa, samādhi, mantra, aviparīta,
+apan <term><app><lem wit="#O #K">tapasvinam</lem><rdg wit="#L">tapthasminam</rdg></app>, <app><lem wit="#K">samarūpam</lem><rdg wit="#O">samarūpəm</rdg><rdg wit="#L">samarupək</rdg></app></term> saṅ viku, sama samādhinira, rūpam <app><lem wit="#O #L">pinakarūpanira</lem><rdg wit="#K">pinakarusanira</rdg></app>, pinakabratanira,
+prajavandha ta sira, masih riṅ sarvajanma, ṅuniveh kahayvaknaniṅ rāt kabeh, dadyaniṅ tahun, laṇḍuṅaniṅ
+<app><lem wit="#O #K">udan</lem><rdg wit="#L">udun</rdg></app>, karuhun kadīrghāyuṣakna śrī mahārāja, sakulavarganira, putrapautrāṅśanira, nahan karakṣaniṅ bhuvana de saṅ paṇḍita,</p></div>
+<!--Advayasādhana caturpāramitā ṅaranya: metrī, karuṇā, muditā, upekṣā.
+<KAS0010j§4> metrī ṅaranya: PARAHITAKĀKṚTVA, ākāraniṅ jñāna saṅ sattvaviśeṣa. saṅ sattvaviśeṣa ṅaranya: saṅ tumakitaki ṣaṭpāramitā mvaṅ caturpāramitā, sira ta sattva[msA-b36]viśeṣa ṅaranira. ākāraniṅ jñānanira gumave hayvaniṅ para. para ṅaranya: sarvasattva, kaniṣṭhamadhyamottama, ikaṅ sih riṅ para tan phalāpekṣa, ya metrī ṅaranya.
+<KAS0010j§5> karuṇā ṅaranya: PARADUḤKHAVIYOGEC CA, ākāraniṅ jñāna saṅ sattvaviśeṣa ahyun (h)ilaṅani duhkhaniṅ sarvasattva. tiga lvirniṅ duhkhaniṅ para, pagavayan saṅ sattvaviśeṣa karuṇā, lvirnya: duhkhaduhkhatā, saṅskāraduhkhatā, pariṇāmaduhkhatā. nāhan lvirnyan tigaṅ duhkha.
+<KAS0010j§6> duhkhaduhkhatā ṅaranya: paṅalapnya sor saṅkeṅ janmanya tambayan, kady aṅgāniṅ janmamānuṣa, māti pva ya, maṅjanma ta ya goḥ gavayādi, ya tikā duhkhaduhkhatā ṅaranya.
+<KAS0010j§7> saṅskāraduhkhatā ṅaranya: pāpa valvivalvinya [h]iri[msA-a37]kaṅ janma katĕmu denya tambayan, kady āṅganiṅ janma vvaṅ, māti pva ya, maṅjanma ta ya vvaṅ muvah. ya tikā saṅ[a]skāraduhkha(tā) ṅaranya.
+<KAS0010j§8> pariṇāmaduhkhatā ṅaranya: paṅalapnya janma sor muvah ri huvusnyan pamaṅguhakĕn janma lĕvih saṅke janmanya ri tambayan, kady āṅganiṅ janmamānuṣa, māti pva ya, saṅka ri tan pramādanya riṅ dharma, maṅjanma ta ya devatā, saṅka ri pramādanya maṅjanma ta ya mānuṣa muvah. ya tikā pariṇāmaduhkhatā ṅaranya.
+<KAS0010j§9> nāhan lvirnyan tiga ikaṅ duhkha. ikaṅ sattva amaṅguhakĕn duhkha maṅkana kramanya, ya tikā kinĕnan karuṇā de saṅ sattva viśeṣa.
+<KAS0010j§10> TRIVIDHĀ KARUṆĀ JÑEYĀ, tiga prakāraniṅ karuṇā, lvirnya: sattvālambanakaruṇā, dharmālambanakaruṇā, [msA-b37] anālambanakaruṇā. nāhan lvirnyan tigaṅ karuṇā.
+-->
 
-<div n="3"><p><app><lem wit="#K">mataṅnyan</lem><rdg wit="#O">mantaṅnyan</rdg><rdg wit="#L">mantaṅṅan</rdg></app> hana rājaśāsana, inajarakən rahyaṅta i <app><lem wit="#O #K">məḍaṅ</lem><rdg wit="#L">mbaṅ</rdg></app>, ampu saṅ siddhapaṇḍita, lvirnya, hana dharmaśāsana, hana rājaśāsana, hana devaśāsana, hana R̥ṣiśāsana, //
+<div n="3"><p><app><lem wit="#K">mataṅnyan</lem><rdg wit="#O">mantaṅnyan</rdg><rdg wit="#L">mantaṅṅan</rdg></app> hana rājaśāsana, inajarakən rahyaṅta i <app><lem wit="#O #K">məḍaṅ</lem><rdg wit="#L">mbaṅ</rdg></app>, ampu saṅ siddhapaṇḍita, lvirnya, hana dharmaśāsana, hana rājaśāsana, hana devaśāsana, hana r̥ṣiśāsana, //
+<!-- rahyaṅta i məḍaṅ: formule très ancienne, cf. inscriptions Sañjaya (?), Sindok, Carita Parahyaṅan -->
 <list>
-<item>dharmaśāsana ṅaranya, śāsananiṅ patih,<!--Should one keep this comma or not? it is omitted in #O and #L but present in #K--> vahuta, kalaṅ, gusti  vinəkas, tuha banva, baṇigrāma, baṇigrāmi, juru baṇigrāmi,<app><lem type="emn">puhavaṅ</lem><rdg wit="#O">mpu havaṁ</rdg></app>, dharmaśāsana ṅaranya //</item>
+<item>dharmaśāsana ṅaranya, śāsananiṅ patih,<!--Should one keep this comma or not? it is omitted in #O and #L but present in #K, AG says yes, keep it--> vahuta, kalaṅ, gusti, vinəkas, tuha banva, baṇigrāma, baṇigrāmi, juru baṇigrāmi, <app><lem type="emn">puhavaṅ</lem><rdg wit="#O">mpu havaṁ</rdg></app>, dharmaśāsana ṅaranya //</item>
 <item>
 <app><lem wit="#O #L">sirămrayatna</lem></app>
 <app><!--extra lem--><lem wit="#O #L">manuhagamanava</lem><lem type="emn">hāgama-manava?</lem></app>
