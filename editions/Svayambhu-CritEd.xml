@@ -36,20 +36,35 @@
 					<witness xml:id="L">Leiden, Universiteitsbibliotheek, the Netherlands, Or. 4530: Balinese script on paper, van der Tuuk collection</witness>
 					<witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, II A/3/774: Balinese script on lontar</witness>
 				</listWit>
-			<listBibl>
-				<biblStruct type="book" xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
-					<monogr>
-						<title level="m">Mānava-dharma śāstra</title>
-						<editor><forename>Vishwanath Narayan</forename><surname>Mandlik</surname></editor>
-						<author><name>Govindaraja</name></author>
-						<imprint>
-							<pubPlace>Bombay</pubPlace>
-							<publisher>Ganpat Krishnaji's press</publisher>
-							<date>1886</date>
-						</imprint>
-					</monogr>
-				</biblStruct>
-			</listBibl>
+				<listBibl>
+					<biblStruct type="book" xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
+						<monogr>
+							<title level="m">Mānava-dharma śāstra</title>
+							<editor><forename>Vishwanath Narayan</forename><surname>Mandlik</surname></editor>
+							<author><name>Govindaraja</name></author>
+							<imprint>
+								<pubPlace>Bombay</pubPlace>
+								<publisher>Ganpat Krishnaji's press</publisher>
+								<date>1886</date>
+							</imprint>
+						</monogr>
+					</biblStruct>
+					<biblStruct type="book" xml:id="Olivelle2005_01" corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
+						<monogr>
+							<title level="m">Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
+							<title type="short">Olivelle2005_01</title>
+											<author>
+														<forename>Patrick</forename>
+														<surname>Olivelle</surname>
+													</author>
+			<imprint>
+		<pubPlace>New York</pubPlace>
+		<publisher>Oxford University Press</publisher>
+		<date>2005</date>
+	</imprint>
+</monogr>
+</biblStruct>
+				</listBibl>
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
@@ -62,7 +77,8 @@
 			</langUsage>
 		</profileDesc>
 		<revisionDesc>
-			<change when="2020-04-23" who="part:argr">creation of TEI document</change>
+			<change when="2020-05-29" who="part:axja">changing the structure: moving the @source content inside a note @type="parallels"</change>
+			<change when="2020-04-23" who="part:argr">started creation of TEI document</change>
 		</revisionDesc>
 	</teiHeader>
 	<facsimile>
@@ -70,7 +86,7 @@
 	</facsimile>
 	<text>
 		<body>
-			<div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
+<div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
 <!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t∙,
 harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ [01-03] vruḥ maviveka:,
 sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
@@ -78,27 +94,43 @@ sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
 harovaṅa ta sira: brahma:{kar}/ṇa\ vihikan maṅaji, lavan mantri, vruḥ mavikveka:,
 śūlakṣa[1v2]ṇa:ha: ta sira tumamaha: riṁ śabha: || -->
 <head xml:lang="san-Latn"><pb ed="#L" n="1"/><pb ed="#K" n="1v"/>//0// avighnam astu //0//</head>
-			<div n="1"><p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.001">
-				<lg met="anuṣṭubh">
-				<l>vyavahārān didr̥kṣus tu brāhmaṇaiḥ saha pārthivaḥ</l>
-				<l>mantrajñair mantribhiś caiva vinītaḥ praviśet sabhām ॥</l>
-				</lg></quote></supplied></p>
+<div type="dyad" n="1">
+<p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+	<lg met="anuṣṭubh">
+	<l>vyavahārān didr̥kṣus tu brāhmaṇaiḥ saha pārthivaḥ</l>
+	<l>mantrajñair mantribhiś caiva vinītaḥ praviśet sabhām ||</l>
+	</lg><note type="parallels">
+        <list>
+          <item><bibl><ptr target="MDhŚ08.001"/></bibl></item>
+        </list>
+  </note>
+  </quote>
+</supplied>
+</p>
 <p>kunaṅ hulaha saṅ prabhu, uniṅānira taṅ vyavahāranikaṅ rāt,
 harovaṅa ta sira brāhmaṇa vihikan maṅaji,
 lavan <app><lem type="emn">mantri vruh</lem><rdg wit="#L">mantri riṁ vruḥ</rdg><rdg wit="#K">mantri, vruḥ</rdg></app>
 <app><lem wit="#L">mavivekā</lem><rdg wit="#K">mavikvekā</rdg></app>,
-sulakṣaṇaha ta sira tumamaha riṅ sabhā.</p></div>
+sulakṣaṇaha ta sira tumamaha riṅ sabhā.</p>
+</div>
 <!--	L: [01-04] haliṅgiha pagəha ta sira riṁ sabha:, taṅanira tṅən hatah ulahaknira, hayva:tu[01-05]duḥtuduḥ kiva:,
 bhūṣa:ṇa pahyasniṁ vvaṁ sugiḥla:taḥ lvirranira,
 Iṅətiṅətəni[01-06]ra:taḥ yogya:yogyani karyyanikaṁ mavyava:hara kaliḥ ||
 	K: haliṅgiḥ pagəha: ta sira riṁ śabha:, taṅanira tṅən hata[SH]h ula:knira, hayva tuduḥtuduḥ kiva:,
 bhuṣa:ṇa payasniṁ vvaṁ śūśila:taḥ lviranira, Iṅətiṅətənira:taḥ hogya:[1v3]yogyaniṁ ka:ryyanikaṁ mavya:vara kaliḥ ||
 -->
-<div n="2"><p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.002">
+<div type="dyad" n="2">
+<p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
 	<lg met="anuṣṭubh">
 	<l>tatrāsīnaḥ sthito vāpi pāṇim udyamya dakṣiṇam |</l>
-	<l>vinītaveṣābharaṇaḥ paśyet kāryāṇi kāryiṇām</l>
-</lg></quote></supplied></p>
+	<l>vinītaveṣābharaṇaḥ paśyet kāryāṇi kāryiṇām ||</l>
+</lg><note type="parallels">
+        <list>
+          <item><bibl><ptr target="MDhŚ08.002"/></bibl></item>
+        </list>
+  </note>
+  </quote>
+</supplied></p>
 <p><app><lem type="norm">haliṅgihāpagəha</lem><rdg wit="#L">haliṅgih apagəha</rdg><rdg wit="#K">haliṅgiḥ pagəha:</rdg></app> ta sira riṅ sabhā, taṅanira tṅən hatah <app><lem wit="#L">ulahaknira</lem><rdg wit="#K">ula:knira</rdg></app>,
 <app><lem wit="#L">hayvātuduh-tuduh</lem><rdg wit="#K">hayva tuduḥtuduḥ</rdg></app>*<!-- atuduh-tuduh is not in OJED --> kiva,
 bhūṣaṇa-pahyasniṅ vvaṅ suśīlātah lviranira,
@@ -116,11 +148,17 @@ K: sarī masiha: siran∙ ṅiṅətiṅəta makasḍanaṁ varaḥvaraḥ [SH] 
 	hankan deṣa sasiki śvadeṣanikaṁ vya:vahara, haṣṭa:deṣa:su ma:rgge, hirika ṣṭa:naniṁ vyavahara valuvlas∙ — [2r1] kveḥnya, salvir<aniṅ vicaran>iṅ vyavahara,
 	 hana tinmunya ṅkana: salaḥ siki, pa<ḍa: ma>dudvadudvan∙ viṣayanya ||
 -->
-<div n="3"><p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.003">
+<div type="dyad" n="3">
+<p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
 <lg met="anuṣṭubh">
 	<l>pratyahaṁ deśadr̥ṣṭaiś ca śāstradr̥ṣṭaiś ca hetubhiḥ |</l>
 	<l>aṣṭādaśasu mārgeṣu nibaddhāni pr̥thak pr̥thak ||</l>
 	</lg>
+	<note type="parallels">
+        <list>
+          <item><bibl><ptr target="MDhŚ08.003"/></bibl></item>
+        </list>
+  </note>
 </quote></supplied></p>
 <p>*sari<!-- the unreduplicated form is not recorded in OJED --> masiha sirān ṅiṅət-iṅəta <app><lem type="norm">makasādhanaṅ</lem><rdg wit="#L">makasa:danaṁ</rdg><rdg wit="#K">makasḍanaṁ</rdg></app> vara-varah saṅ hyaṅ āgama <app><lem wit="#K">mānavādi</lem><rdg wit="#L">manava:vī</rdg></app>,
 mvaṅ sakinapagəhaknikaṅ sapañjiṅ deśanya, <app><lem wit="#K">deśa ṅaranya,</lem><rdg wit="#L"/></app>
@@ -137,23 +175,138 @@ L:		[01-14] Iṅsī ya kurute kaścit∙, hana vvaṁ mama:tyani nirdoṣa, kuna
 K:			I§[SH]ṅsa: ya kurute kaścit∙, hana: voṁ mamatyani nirdoṣa:, maṅlarani nirdoṣa, kunaṁ deyam va na prayaścati [2r2], tan paveḥ hirikaṁ yogya vehikna, Aveh irikaṁ tan∙ yogya vehaknanya kunaṁ,
 			svane te [SH] dve vivadasya, ya hikaṁ sthananiṁ vyavahara, rvaṁ siki mulanya, bhine ṣṭedaśada punaḥ, matmahan ta ya valuvlas∙ vka[2r3]san∙ ||
 			-->
-			<div n="4"><p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn" source="MDhŚ08.003_insertedafter_oOr"><!-- argr2axja: here we have a stanza that occurs in some witness of the basetext but has been rejected from the critical edition whose numbering we're following-->
-			<lg met="anuṣṭubh">
-				<l>hiṁsāṁ yaḥ kurute kaś cid deyaṁ vā na prayacchati |</l>
-				<l>sthāne te dve vivādasya <app><lem source="Svayambhu"><!-- argr2axja: we are here trying to represent that the lemma from this stanza in the Svayambhu itself supports the reading bhinne as opposed to bhinno -->bhinne</lem><rdg source="#Mandlik1886_01">bhinno</rdg><note>Mandlik's reading is also supported by a manuscript collated in Olivelle 2005.</note></app> ’ṣṭādaśadhā punaḥ ||</l>
-				</lg>
-			</quote></supplied></p><p>
-			<term xml:lang="san-Latn"><app><lem type="emn">hiṁsāṁ yaḥ</lem><rdg wit="#L">Iṅsīya</rdg><rdg wit="#K">Iṅsa:ya</rdg></app> kurute kaś cit</term>,
-			hana vvaṅ mamātyani nirdoṣa, <app><lem wit="#K">maṅlarani nirdoṣa,</lem><rdg wit="#L"/></app>
-			kunaṅ <term xml:lang="san-Latn">deyam <app><lem type="norm">vā</lem><rdg wit="#L #K">va</rdg></app> na <app><lem type="emn">prayacchati</lem><rdg wit="#L #K">prayaścati</rdg></app></term>,
-			tan paveh irikaṅ yogya <app><lem wit="#L">vehakna</lem><rdg wit="#K">vehikna</rdg></app>, aveh irikaṅ tan yogya vehaknanya kunaṅ,
-			<term xml:lang="san-Latn"><app><lem wit="#L">sthāne</lem><rdg wit="#K">svane</rdg></app> te dve vivādasya</term>,
-			ya <app><lem wit="#L">ikā</lem><rdg wit="#K">hikaṁ</rdg></app> sthānaniṅ vyavahāra, rvaṅ siki <app><lem wit="#K">mūlanya</lem><rdg wit="#L">malanya</rdg></app>,
-			<term xml:lang="san-Latn"><app><lem type="norm">bhinne</lem><rdg wit="#L #K">bhine</rdg></app> <app><lem type="emn">’ṣṭādaśadhā</lem><rdg wit="#L">ṣṭedaśada:</rdg><rdg wit="#K">ṣṭedaśada</rdg></app> punaḥ</term>,
-			matmahan ta ya vvalu vlas vkasan.</p>
-			</div>
-			</div>
-	<!-- AG+TL have reached here on 2020-05-20 -->
+<div type="dyad" n="4">
+<p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+	<lg met="anuṣṭubh">
+	<l>hiṁsāṁ yaḥ kurute kaś cid deyaṁ vā na prayacchati |</l>
+	<l>sthāne te dve vivādasya <app><lem source="#svayambhu"><!-- @AG+TL: the lemma from this stanza in the Svayambhu itself supports the reading bhinne as opposed to bhinno -->bhinne</lem><rdg source="#Mandlik1886_01">bhinno</rdg><note>Mandlik's reading is also supported by a manuscript collated in Olivelle 2005.</note></app> ’ṣṭādaśadhā punaḥ ||</l>
+	</lg><note type="parallels">
+         <list>
+          <item>This stanza is absent from <bibl><ptr target="bibl:Olivelle2005_01"/>Olivelle</bibl>'s constituted text, though it is referenced in his app. crit. for one manuscript. The stanza occurs in ed. <bibl><ptr target="bibl:Mandlik1886_01"/>Mandlik<!-- <citedRange unit="chapter">8</citedRange><citedRange unit="stanza">4</citedRange>--></bibl> 8.4 shows <foreign>bhinno</foreign>, but the Svayambhu implies <foreign>bhinne</foreign>.</item>
+          <!-- alternative suggestion for computer-actionable bit simpler referencing of editions bib:Mandlik1886_01_ed08.0004 -->
+        </list>
+	</note>
+  </quote>
+</supplied></p>
+<p><term xml:lang="san-Latn"><app><lem type="emn">hiṁsāṁ yaḥ</lem><rdg wit="#L">Iṅsīya</rdg><rdg wit="#K">Iṅsa:ya</rdg></app> kurute kaś cit</term>,
+hana vvaṅ mamātyani nirdoṣa, <app><lem wit="#K">maṅlarani nirdoṣa,</lem><rdg wit="#L"/></app>
+kunaṅ <term xml:lang="san-Latn">deyam <app><lem type="norm">vā</lem><rdg wit="#L #K">va</rdg></app> na <app><lem type="emn">prayacchati</lem><rdg wit="#L #K">prayaścati</rdg></app></term>,
+tan paveh irikaṅ yogya <app><lem wit="#L">vehakna</lem><rdg wit="#K">vehikna</rdg></app>, aveh irikaṅ tan yogya vehaknanya kunaṅ,
+<term xml:lang="san-Latn"><app><lem wit="#L">sthāne</lem><rdg wit="#K">svane</rdg></app> te dve vivādasya</term>,
+ya <app><lem wit="#L">ikā</lem><rdg wit="#K">hikaṁ</rdg></app> sthānaniṅ vyavahāra, rvaṅ siki <app><lem wit="#K">mūlanya</lem><rdg wit="#L">malanya</rdg></app>,
+<term xml:lang="san-Latn"><app><lem type="norm">bhinne</lem><rdg wit="#L #K">bhine</rdg></app> <app><lem type="emn">’ṣṭādaśadhā</lem><rdg wit="#L">ṣṭedaśada:</rdg><rdg wit="#K">ṣṭedaśada</rdg></app> punaḥ</term>,
+matmahan ta ya vvalu vlas vkasan.</p>
+</div>
+<!-- AG+TL have reached here on 2020-05-20 -->
+<div type="dyad" n="5">
+	<p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+		<lg>
+			<l>teṣām ādyam r̥ṇādānaṁ nikṣepo ’svāmivikrayaḥ |</l>
+			<l>saṁbhūya ca<!-- @AG+TL: encode svayambhu reading sambhūyasya? or if not that, at least the parasavarṇa mbh? --> samutthānaṁ dattasyānapakarma ca ||</l>
+		</lg>
+			<note type="parallels">
+        <list>
+          <item><bibl><ptr target="MDhŚ08.004"/></bibl></item>
+					<item sameAs="MDhŚ08.004"/>
+        </list>
+  </note>
+		<lg>
+			<l>vetanasyaiva cādānaṁ<!-- @AG+TL: encode svayambhu reading vetanasya na ca dānam? --> saṁvidaś ca vyatikramaḥ |</l>
+			<l>krayavikrayānuśayo vivādaḥ svāmipālayoḥ ||</l>
+</lg>
+			<note type="parallels">
+        <list>
+          <item><bibl><ptr target="MDhŚ08.005"/></bibl></item>
+        </list>
+  </note>
+<lg>
+	<l>sīmāvivādadharmaś ca pāruṣye daṇḍavācike |</l>
+	<l>steyaṁ ca sāhasaṁ caiva strīsaṁgrahaṇam eva ca ||</l>
+</lg>
+			<note type="parallels">
+        <list>
+          <item><bibl><ptr target="MDhŚ08.006"/></bibl></item>
+        </list>
+  </note>
+<lg>
+	<l>strīpuṁdharmo<!-- argr: this word is not present in Svayambhu at all!--> vibhāgaś ca dyūtam <app><lem source="#svayambhu">āhvāna</lem><rdg source="#Olivelle2005_01">āhvaya</rdg></app> eva ca |<!-- argr: the Svayambhu mss suggest uvāca at the end!--> </l>
+	<l>padāny aṣṭādaśaitāni vyavahārasthitāv iha ||</l>
+</lg>
+			<note type="parallels">
+        <list>
+          <item><bibl><ptr target="MDhŚ08.007"/></bibl></item>
+        </list>
+  </note>
+</quote></supplied></p>
+<!-- L: [01-19] lvirnya, tapīmadyamr̥ṣada:nī, tan kasahur apihutaṁ, hadiniṁ vya:va:hara, ni-
+				[01-20] kṣepa, tan kavehaniṁ patuva:va || Asva:mivikriya, hadva:l tan∙ dr̥vya,
+				[01-21] sa:mbhūyasya samūrtthaniṁ, tan kaduman ulih iṁ kinabehan∙ || dattasya nasa
+				[01-22] ka:rmma ca, karudḍa:niṁ huvus∙ vinehakən∙ || vetanasya na cadaniṁ, tan kav-
+				[01-23] ehaniṁṅ upahan∙ || samvidaś ca vyatikramaḥ, Adva: riṁ samaya || krayavikraya-
+				[01-24] nūṣa:yoḥ, Alara:mbəknya:n pamlinya kunaṁ ||
+				[01-25] viva:dḍaḥ sva:miphalayaḥ, viva:daniṁ pinaṅvanakən∙ mvaṁ maṅvan· {*} || sīma{:}viva:-
+				[01-26] dḍa:ḍarmma{:}ś ca, kahucapaniṁ vatəs∙ || varuṣye ḍaṇḍa{:}pacike, ḍaṇḍa:-
+				[01-27] niṁ sa:ha:rṣa, vakparusya || stheyam∙, pavr̥ttiniṁ maliṁ || sa:hasam∙, Ulaḥ saha:sa ||
+				[01-28] saṅgrahaname Uva:cca:, Ulaḥ tan yogya riṁ lakī stri || vinagaś ca, kadumaniṁ dr̥vya ||
+				[01-29] dyuta, totohan tan pra:ṇi || Ahvanam∙, totohan pra:ṇi || pada Aṣṭa-
+				[01-30] daśetani, nahan ta va:luvlas∙ lvirnya || vyava:hara:sthita:n iha, byakta pina-
+				[02-01] ka:stha:naniṁ vya:va:hara ||
+			K: lvirnya, tepaṃ(ma)dyam r̥sadanaṃ, tan kasahur apyutaṁ, hadiniṁ vyavahara, nikṣepa, tan kave[SH]haniṁ patuvava: || Asvamivikriya, hadval tan∙ dr̥vya, sambuyasya samūtthanaṃ, tan kaduman ulih iṁ kinabehan∙ || da[2r4]ttasya na: karma ca, karadḍaniṁ vuvus∙ vinehakən∙ || veka:nasya na cadanaṃ, tan kaveha[SH]niṁṅ upahan∙ || samviḍaśca vyatikramaḥ, hadva riṁ samaya: || krayavikraya:nuṣa:yoḥ, Alarambəknya§[2v1]n pamlinya kunaṁ || viva:dḍaḥ svamiphalayaḥ, vivana:daniṁ pinaṅvanakən∙ mvaṁ maṅvan· || sima:vi[SH]va:ḍḍadarmmaśca:, kavucapaniṁ vatəs∙ || parusye ḍanḍavacike, ḍaṇḍaniṁ saha:rṣa, vakparusya || sveya§[2v2]m∙, pavr̥ttiniṁ maliṁ || sahasam∙, Ulaḥ sahaṣa || saṅgrahaname Uva:cca, Ulaḥ tan yogya riṁ la[SH]ki stri || vinagaśca, kadumaniṁ dravya || dyuta, totohan <tan> prani || Ahvanam∙, totohan prani || <pada> Aṣṭa§[2v3]dasetani, nahan ta valuvlas∙ lvirnya || vyavahara:stitan iha, byakta pinaka:stana:<niṁ> vyavaha[SH]ra || -->
+<p>lvirnya: <term xml:lang="san-Latn"><app><lem>teṣām ādyam r̥ṇādānam</lem><rdg wit="#L">tapīm adyam r̥ṣada:nī</rdg><rdg wit="#K">tepaṃ<unclear>m a</unclear>dyam r̥sadanaṃ</rdg></app></term>,
+tan <app><lem type="conj">kasahuraniṅ hutaṅ</lem><rdg wit="#L">kasahurapihutaṁ</rdg><rdg wit="#K">kasahurapyutaṁ</rdg><note>Our conjecture is inspired by a passage in the Tantri Kāmandaka, p. 30: <foreign>maṅkana kagavayaniṅ yajñadharma, mvaṅ kasahuraniṅ utaṅ</foreign>.</note></app>, hādiniṅ vyavahāra.
+<term xml:lang="san-Latn">nikṣepa</term>, tan kavehaniṅ patuvava.
+<term xml:lang="san-Latn">asvāmi<app><lem type="emn" rend="hyphenfront">vikraya</lem><rdg wit="#L #K">vikriya</rdg></app></term>, hadval tan dr̥vya.
+<!-- AG+TL have reached here on 2020-05-27 -->
+<term xml:lang="san-Latn"><app><lem type="emn">sambhūya ca samutthānam</lem><rdg wit="#L">sa:mbhūyasya samūrtthaniṁ</rdg><rdg wit="#K">sambuyasya samūtthanaṃ</rdg></app><note>Both mss. point to <foreign>sambhūyasya</foreign>, analogous to <foreign>dattasya</foreign> but ungrammatical.</note></term>, tan kaduman ulihiṅ kinabehan.
+<term xml:lang="san-Latn"><app><lem type="emn">dattasyānapakarma</lem><rdg wit="#L">dattasyanasaka:rmma</rdg><rdg wit="#K">dattasyana: karma</rdg></app> ca</term>,
+*<app><lem wit="#L">karuddhāniṅ</lem><rdg wit="#K">karadḍaniṁ</rdg></app><!-- ka-ruddha-an not in OJED--> huvus vinehakən.</p>
+<p><term xml:lang="san-Latn"><app><lem type="emn">vetanasyaiva cādānam</lem><rdg wit="#L">vetanasya na ca daniṁ</rdg><rdg wit="#K">veka:nasya na cadanaṃ</rdg></app></term>, tan kavehaniṅ upahan. <term xml:lang="san-Latn">samvidaś<!-- <app><lem wit="#L">samvidaś</lem><rdg wit="#K">samviḍaś</rdg></app> --> ca vyatikramaḥ</term>, advā riṁ samaya.
+ <term xml:lang="san-Latn">krayavi<app><lem type="emn">krayānuśayo</lem><rdg wit="#L">krayanūṣa:yoḥ</rdg><rdg wit="#K">kraya:nuṣa:yoḥ</rdg></app></term>, alarāmbəknyān pamlinya kunaṅ.
+ <term xml:lang="san-Latn"><app><lem type="emn">vivādaḥ svāmipālayoḥ</lem><rdg wit="#L">viva:dḍaḥ sva:miphalayaḥ</rdg><rdg wit="#K">viva:dḍaḥ svamiphalayaḥ</rdg></app></term>, <app><lem wit="#L">vivādaniṅ</lem><rdg wit="#K">vivana:daniṁ</rdg></app> *pinaṅvanakən<!-- this derivation from hwan not in OJED — see TvhA p. 47--> mvaṅ maṅvan.
+ <term xml:lang="san-Latn"><app><lem type="norm">sīmāvivādadharmaś</lem><rdg wit="#L">sīma<del>:</del>viva:dḍa:ḍarmma<del>:</del>ś</rdg><rdg wit="#K">sima:viva:ḍḍadarmmaś</rdg></app> ca</term>, kahucapaniṅ vatəs.
+ <term xml:lang="san-Latn">pāruṣye daṇḍavācike</term>, <app><lem type="conj">sāhasaniṅ ḍaṇḍa</lem><rdg wit="#L">ḍaṇḍaniṅ sa:ha:rṣa</rdg><rdg wit="#K">ḍaṇḍaniṁ saha:rṣa</rdg><note>We speculate that the intrusive <foreign>layar</foreign> might have its original in a scribal mark that would have been used in an ancestor manuscript to indicate that the order <foreign>ḍaṇḍa/sāhasa</foreign> is to be inverted to get a suitable paraphrase for <foreign>daṇḍapāruṣya</foreign>.</note></app>
+<!-- argr: probably accept order dandaning sahasa, as it is too unclear what the author had in mind. -->
+ , vākpāruṣya.
+ <!-- AG+TL have reached here on 2020-06-03 -->
+ <term xml:lang="san-Latn"><app><lem type="norm">steyam</lem><rdg wit="#L">stheyam</rdg><rdg wit="#K">sveyam</rdg></app></term>, pavr̥ttiniṅ maliṅ.
+ <term xml:lang="san-Latn">sāhasam</term>, ulah sāhasa.
+ <app><lem><term xml:lang="san-Latn"><app><lem type="conj">strīsaṁgrahaṇam eva ca</lem><rdg wit="#L">saṅgrahaname Uva:cca:</rdg><rdg wit="#K">saṅgrahaname Uva:cca</rdg></app></term>,
+ ulah tan yogya riṅ lakī strī.</lem><note><foreign>strīpuṁdharmo</foreign>, the next ground of litigation in Manu’s list, is omitted after this. Is it understood to be implied in the item <foreign>[strī]saṁgrahaṇam</foreign>? Or are we dealing with an omission in our two witnesses that does not reflect the original state of our text?</note></app><!-- here we make a comment on a string of text, remarking on the absence of a further bit of expected text. -->
+  <term xml:lang="san-Latn"><app><lem type="emn">vibhāgaś</lem><rdg wit="#L #K">vinagaś</rdg></app> ca</term>, kadumaniṅ dr̥vya.
+	<term xml:lang="san-Latn"><app><lem type="emn">dyūtam</lem><rdg wit="#L #K">dyuta</rdg></app></term>, totohan <app><lem wit="#L">tan</lem><rdg wit="#K"/></app> prāṇi.
+	<term xml:lang="san-Latn"><app><lem type="norm">āhvānam<lem><rdg wit="#L #K">Ahvanam·</rdg><note>The vulgate reading of MānDhŚ is <foreign>āhvaya</foreign> here, but several mss. used by Olivelle2005_01 share the reading with <foreign>n</foreign> that seems to have been received on Bali.</note></app></term>, totohan prāṇi.
+	<term xml:lang="san-Latn"><app><lem type="emn">padāny aṣṭādaśaitāni</lem><rdg wit="#L">pada Aṣṭadaśetani</rdg><rdg wit="#K">Aṣṭadasetani</rdg></app></term>, nahan ta <app><lem type="norm">vvalu</lem><rdg wit="#L">va:lu</rdg><rdg wit="#K">valu</rdg></app> vlas lvirnya.
+ <term xml:lang="san-Latn"><app><lem type="norm">vyavahārasthitānīha</lem><rdg wit="#L">vyava:hara:sthita:niha</rdg><rdg wit="#K">vyavahara:stitaniha</rdg><note>The vulgate reading of MānDhŚ is <foreign>vyavahārasthitāv iha</foreign> here, but it seems that the text received on Bali had the (unmetrical) reading that we adopt here. Olivelle’s ms. Be1 has the variant <foreign>-sthitāni ca</foreign>.</note></app></term>, byakta <app><lem wit="#L">pinakasthānaniṅ</lem><rdg wit="#K">pinaka:stana:</rdg></app> vyavahāra.</p>
+	</div>
+ <!-- AG+TL have reached here on 2020-06-10 -->
+ <div type="dyad" n="6">
+<!-- L: Evustha:neṣṭabhuya:ṣṭiṁ, Ikaṁ vyava:hara:stha:na va:luvlas∙, ka-
+[02-02] pva hana ta tmunya ṅkana, kapagəhakna saṁ prabhu, yuktinikaṁ vya:va:haranya, Apan· gavaya-
+[02-03] knanira pagəh i ka:ryyanikaṁ yogya pagəhaknanira || kunaṁ saṁ prabhu hayva sira guma-
+[02-04] vaya:kən ikaṁ ka:ryya:mivakṣa guṇadoṣa, hakona ta sira ri saṁ brahma:ṇa
+[02-05] vihikan maṅa:ji, kumavruhana yogyanikaṁ vvaṁ mavya:va:hara ka:liḥ || saṁ brahma:-
+[02-06] ṇa saṁ vruh riṅ a:ṣṭadaṣa vyava:hara, sira ta saṁ sinaṅguḥ pragvivaka:, saṁ vruḥ riṁṅ aji
+[02-07] ? tar kkavruha riṁ śruti vaida || kunaṁ hikaṁ tantraniṁ vicara: gavayakna rumuhun·, sa-
+[02-08] da:na saṁ pragvivaka matakvan irikaṁ mavya:va:hara kaliḥ, vivekanira ta sahurnya
+[02-09] vkasan∙, mataṅhyan· pragvivaka: pva ṅaranira || haṅiṅə:tiṅətata saṁ pragvivaka:,
+[02-10] hika:ryyanikaṁ mavyava:hara kaliḥ, harovaṅa sira vvaṁ yogya riṁ sabha: tigaṁ vi-
+[02-11] ji, juma:maha: ta sira:luṅguḥ hapagəha riṁ sabha: ||
+Uvustha:neṣṭabhūyaśṭaṃ, Ikaṁ vyavaharasta:na valuvlas∙, kapva hana ta tmunya ṅkana, kapagəhakna saṁ pra§[2v4]bhu, yuktinikaṁ vyavaharanya, Apan gavayaknanira pagəh i ka:ryyanika: yogya pagəhakna nira || [SH] kunaṁ saṁ prabhu hayva sira gumavaya:kan ikaṅ ka:ryya mivakṣa guṇa doṣa:, hakona: ta sira riṁ saṁ pra brahmaṇna [3r1] vihikan aṅaji, kumavruhana: yogyanikaṁ vvaṁ mavyarahara kaliḥ || <saṁ brahmaṇa saṅ vruh riṁ aṣṭadaṣa vyavahara,> sira ta saṅ sinaṅguḥ pragvivaka:, § [SH] saṁ vruḥ riṁ haji tan kavruha riṁ śruṭi vedḍa || kunaṅ ikaṁ tantraniṁ vica:ra:, gavaya:kna rumuhun·, sada:na saṁ pragviva[3r2]ka: patakvan ikaṁ mavyavahara ka:liḥ, vivekanira ta sahurnya vkasan∙, mataṅhyan pragvivaka: pva ṅarani§[SH]ra || haṅiṅətiṅəttha saṁ pragvivaka:, hinaryyanikaṁ mavyavahara ka:liḥ, ha:rovaṅa ta sira vvaṁ yogya riṁ sana: tigaṁ viji § [3r3], jumamaha: ta siraluṅguḥ hapagəha riṁ śabha: ||
+ -->
+ 	<p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+ 		<lg>
+ 			<l>eṣu sthāneṣu bhūyiṣṭhaṁ vivādaṁ caratāṁ nr̥ṇām |</l>
+			<l>dharmaṁ śāśvatam āśritya kuryāt kāryavinirṇayam ||</l>
+ 		</lg>
+ 			<note type="parallels">
+         <list>
+           <item><bibl><ptr target="MDhŚ08.008"/></bibl></item>
+         </list>
+   </note>
+	 </quote></supplied></p>
+	 <p></p>
+
+</div><!-- end of div type edition -->
 			<div type="translation">
 				<p n="1"><supplied reason="subaudible"><quote rend="stanza" source="MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied> Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
 			</div>
