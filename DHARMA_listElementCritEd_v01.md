@@ -10,7 +10,7 @@
 |bibl||
 |biblStruct||
 |body| Not to take into account|
-|change| log if log is requested in the metadata section|
+|change|if log is requested in the metadata section|
 |choice||
 |corr||
 |date||
