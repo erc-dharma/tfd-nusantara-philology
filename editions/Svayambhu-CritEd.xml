@@ -84,6 +84,10 @@
 	<facsimile>
 		<graphic url="photograph of text or monument"/>
 	</facsimile>
+	<!-- material for notes in TEI header once proper structure has been applied:
+- both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a
+
+-->
 	<text xml:space="preserve">
 		<body>
 <div type="edition" xml:lang="kaw-Latn">
@@ -385,7 +389,7 @@ K:	Uvustha:neṣṭabhūyaśṭaṃ, Ikaṁ vyavaharasta:na valuvlas∙, kapva h
  <p>saṅ brāhmaṇa tigaṅ siki, paḍa vruh maṅaji, hana brāhmaṇa sasiki<!-- , here in K --> prajñān vidagdha,<!--
 	 the form prajñān is rare, but several occurrences are found in the Tattvajñāna, and three of the occurrences there are followed by vidagdha:
 	 Tattvajñāna 32+33 (2x): kunaṅ yan hana janma katon prajñān / vidagdha vruh maṅaji /
-	 Tattvajñāna 43: ikaṅ rajah tamah / apuṅguṅ svabhāvanya / ikaṅ sattva prakāśa / prajñān vidagdha / pinakasvabhāvanya 
+	 Tattvajñāna 43: ikaṅ rajah tamah / apuṅguṅ svabhāvanya / ikaṅ sattva prakāśa / prajñān vidagdha / pinakasvabhāvanya
 Andrea Acri (p.c.):  "I note that prajñān occurs several times in the TJ (along with kaprajñan). As you know, the SH Pamutus has a sequence of words including kaguṇan, kavidagdha, kaprajña, and kajñāna, seemingly considered as synonyms (or as different nuances of « knowledge »). So my first guess would be to read prajñān vidagdha simply as ‘he who is wise and clever’ (i.e., to read prajñān as prajña+suffix an rather than prajna + connective particle an)."
 -->
 	 vinidhi muṅgva riṅ deśa saṅ prabhu, ikaṅ deśa papupulanira, <app><lem wit="#K">yeka deśa sabhā ṅaranya de saṅ paṇḍita</lem><rdg wit="#L">yeka de saṁ paṇḍita </rdg></app>.</p>
@@ -490,6 +494,7 @@ Andrea Acri (p.c.):  "I note that prajñān occurs several times in the TJ (alon
  <app><lem wit="#K">maṅkana</lem><rdg wit="#L">maṅka</rdg></app> liṅ atǝhər <app><lem type="emn">pramāṇastava</lem><rdg wit="#L">praṇama:stava</rdg><rdg wit="#K">praṇama:stava</rdg></app>.</p>
  </div>
  <div type="dyad" n="15"><!-- argr2axja: we want to express with the empty <p> in lines 491-497 (and again in 515-520) that we suspect the following actual <p> represents a Sanskrit stanza that, however, we are unable to idenyify in any source text known to us (by contrast with the vast majority of <p>s which have an identifiable Sanskrit as source. What do you think of this mode of representation, with a <supplied> that only contains a <note> with a <list> that only contains an empty <item> with @corresp="unknown"?   -->
+ 	<!-- I am still not convinced by the <p> and the <supplied>,  at least let's use <ab> instead, it is less disturbing -->
 <p><supplied reason="subaudible">
 	<note type="parallels">
 			 <list>
@@ -510,7 +515,7 @@ Andrea Acri (p.c.):  "I note that prajñān occurs several times in the TJ (alon
 	<!-- AG+TL have reached here on 2020-07-22 -->
 <p><app><lem wit="#K">hapan</lem><rdg wit="#L">lapan</rdg></app> tan ana lǝviha sakeṅ dharma,
 sira <app><lem>pinakapramāṇan riṅ</lem><note>The reading is supported by both witnesses. Emend <foreign>pinakakapramāṇan riṅ</foreign>, <foreign>pinakapramāṇa riṅ</foreign> or <foreign>pinakapramāṇaniṅ</foreign>?</note></app>
-loka, <app xml:id="app1_a" next="#app1_b"><lem wit="#L">sira ta pinakasvarga <app><lem type="emn">saṅ magave</lem><rdg wit="#L">samagave</rdg><!-- argr2axja: should we really not use <witEnd>/<witStart/> somehow, to avoid either needing to encode another <rdg wit="#K"/> here, or not encoding the second witness in the <app> at all because the human reader will understand that #K has omitted this stretch of text altogether? --></app> hayu,
+loka, <app xml:id="app1_a" next="#app1_b"><lem wit="#L">sira ta pinakasvarga <app><lem type="emn">saṅ magave</lem><rdg wit="#L">samagave</rdg><!-- argr2axja: should we really not use <witEnd>/<witStart/> somehow, to avoid either needing to encode another <rdg wit="#K"/> here, or not encoding the second witness in the <app> at all because the human reader will understand that #K has omitted this stretch of text altogether? --><!-- I don't understand why you want to use <witSart/> and <witEnd/> here. If really you want to express that there is missing content for #k, you could use <lacunaStart/> and  <lacuneEnd/>. It is usually used it it runs for at least more than 2 <app>. But with your current encoding, it isn't so clear for me where #k is actually missing, so my answer might not be fitting.--></app> hayu,
 sira pinakakalǝpasan saṅ paṇḍita, tan maṅkana hikaṅ vvaṅ adharma, tan ana<!-- anā L--> <app><lem type="conj">gumantyana</lem><rdg wit="#L">gamantyanya</rdg></app><!-- gumantyana, gumantya nya, gantyana --> maṅkanāta saṅka pisana tuvi.</lem><rdg wit="#K"/></app></p>
  </div>
  <div type="dyad" n="16">
@@ -592,57 +597,88 @@ saṅ prabhu hanǝmu <app><lem type="norm">saparǝpatanirātah</lem><rdg wit="#L
 hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satyaniṁ</rdg></app> ginavayakən.</p>
  </div>
  <!-- AG+TL have reached here on 2020-08-12 -->
- <div type="dyad" n="..."><!--
- L:
-	 K:
+ <div type="dyad" n="20"><!--
+ L: saṁ prabhu tan kahanan sira ri pa:pa, saṁ [03-09] mavivakṣa kabeḥ luput sira riṁ pa:pa,
+ 		Ikaṁ ma{tya}vyava:hara salaḥ pakṣa[03-10]nya juga təmpuhanya, nininda siṁ saṅkananya:, kahava:tkeṁ deśa kahananya ||
+	K: saṁ prabhu tan kahanan sira: riṁ pa:pa, saṁ mavivakṣa kabeḥ luput ṣi[4v1]ra riṁ pa:pa,
+	Ikaṁ mavyavahara śalaḥ pakṣanya juga təmpuhanya, nininḍa si saṅkananya, kahavat· [SH] tkeṁ deṣa kahananya ||
 	 -->
 	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
 	<lg>
-		<l>... |</l>
-		<l>... ||</l>
+		<l>rājā bhavaty anenās tu mucyante ca sabhāsadaḥ |</l>
+		<l>eno gacchati kartāraṁ nindārho yatra nindyate ||</l>
 	</lg>
 	<note type="parallels">
 			 <list>
- <item sameAs="MDhŚ08.XXX"/>
+ <item sameAs="MDhŚ08.019"/>
 			 </list>
  </note>
  </quote></supplied></p>
- <p>...</p>
+ <p>saṅ prabhu tan kahanan sira <app><lem wit="#K">riṅ</lem><rdg wit="#L">ri</rdg></app> pāpa,
+ 	saṅ mavivakṣa kabeh luput sira riṅ pāpa,
+ 		ikaṅ mavyavahāra salah pakṣanya juga təmpuhanya,
+		nininda <app><lem wit="#L">siṅ</lem><rdg wit="#K">si</rdg></app> saṅkananya,
+		<app><rdg wit="#L">kahava tkeṅ</rdg><rdg wit="#K">kahavat·<lb/>tkeṁ</rdg></app> deśa kahananya.</p>
  </div>
- <div type="dyad" n="..."><!--
- L:
-	 K:
+ <div type="dyad" n="21">
+	 <!-- our text gives no gloss for the first stanza grouped in this div -->
+	 <p><supplied reason="omitted"><quote type="basetext" xml:lang="san-Latn">
+	<lg>
+		<l>jātimātropajīvī vā kāmaṁ syād brāhmaṇabruvaḥ |</l>
+		<l>dharmapravaktā nr̥pater na tu śūdraḥ kathaṁ cana ||</l>
+	</lg>
+	<note type="parallels">
+			 <list>
+ <item sameAs="MDhŚ08.020"/><!-- argr2axja: now what to do to in a case like this, where there is no trace of the expected stanza, which we thus supply for @reason="omitted"? --><!-- Since you have only the basetext in the section. I don't think you need to add anything here. I will able to add a mention that the gloss is missing. However, you could actually use a <gap/> element I suppose. I am not sure about changing the value of the @reason for the <supplied>. From what I understand the basetext should be @reason="subaudible"-->
+			 </list>
+ </note>
+ </quote></supplied></p>
+ <!--
+ L: maṅkana: saṁ prabhu, yan· sudra: pragvivakanira, kadatvanira ḍūrbbala:kṣaya, kadi [03-12] L̥mbu kaptək· latək ajro ||
+ K: maṅkana saṁ prabhu, yan sudra: pr̥gvivakanira, kadatvanira ḍūrgghalakṣaya, kadi § [4v2] L̥mbu kaptək riṁ latək ajro ||
+-->
+ <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+<lg>
+	<l>yasya śūdras tu kurute rājño dharmavivecanam |</l>
+	<l>tasya sīdati tad rāṣṭraṁ paṅke gaur iva paśyataḥ ||</l>
+</lg>
+<note type="parallels">
+		 <list>
+<item sameAs="MDhŚ08.021"/>
+		 </list>
+</note>
+</quote></supplied></p>
+<p>maṅkana saṅ prabhu, yan śūdra prāgvivākanira,
+	kaḍatvanira<!-- L K: kadatvanira--> <app><lem type="norm">durbala</lem><rdg wit="#L">ḍūrbbala:</rdg><rdg wit="#K">ḍūrgghala</rdg></app> kṣaya,
+	kadi lǝmbu kaptək <app><lem wit="#K">riṅ</lem><rdg wit="#L"/></app> latək ajro.</p>
+<note type="parallels">
+	<list>
+	<item>Bhīṣmaparva 124.19: kadi lǝmbu kapǝtǝk iṅ latǝk</item><!-- argr2axja: would you recommend using @sameAs etc. in every instance of <item>, or may we do without? The parallel here only concerns the final sentence of the <p>. Can we easily introduce a system for delimiting the scope of a <note type="parallel">?-->
+<!-- I don't see an encoding able to reduce it: attributes for att.scope, att.range won't work and <certainty/> and <precision/> are related to the encoding itself. The attributes @exclude and @include have content taht should be pointer and not a textual indication. So it. Is it possible to use the canoncial reference to reduce its scope ? Something like Bhī.124.19#theP. Honestly, I am not sure we will be able to find a easy nor satisfaying solution that is totally machine-actionable in this case. Regarding the attribute, since the two elements are not stricly identical, I would use @corresp rather than @sameAs. -->
+	</list>
+	</note>
+</div>
+ <div type="dyad" n="22"><!--
+	 L: Ikaṁ ra:jya yan kakehaniṁ śudra:, hakveḥ vvaṁ mana:[03-13]yakən·, deva hiriya, tan pabrahma:ṇa Ikaṁ ra:jya maṅkana, śighra hilaṁ deniṁ la[03-14]pa vya:di bhaya kaḍatvanira ||
+	K: Ikaṁ rajya: yan iṁ kakehaniṁ sudr̥, hakeḥ vaṁ mana:yakən·, de[SH]va hiriya, tan pabrahmaṇa hikaṁ rajya maṅkana:, śigr̥ hilaṁ deniṁ lapa vyadi bhaya kadatvanira ||
 	 -->
 	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
 	<lg>
-		<l>... |</l>
-		<l>... ||</l>
+		<l>yad rāṣṭraṁ śūdrabhūyiṣṭhaṁ nāstikākrāntam advijam |</l>
+		<l>vinaśyaty āśu tat kr̥tsnaṁ durbhikṣavyādhipīḍitam ||</l>
 	</lg>
+
 	<note type="parallels">
 			 <list>
- <item sameAs="MDhŚ08.XXX"/>
+ <item sameAs="MDhŚ08.022"/>
 			 </list>
  </note>
  </quote></supplied></p>
- <p>...</p>
+ <p>ikaṅ rājya,<!-- this , absent in both mss. --> yan <app><lem wit="#L">kakehaniṅ</lem><rdg wit="#K">iṁ kakehaniṁ</rdg></app> śūdra,
+ <app><lem wit="#L">hakveh vvaṅ</lem><rdg wit="#K">hakeḥ vaṁ</rdg></app> manayākən<!-- both mss. insert , here --> deva hiriya,
+ tan pabrāhmaṇa,<!-- this , absent in both mss. --> ikaṅ rājya maṅkana, śīghra hilaṅ deniṅ lapā vyādhi bhaya kaḍatvanira.</p>
  </div>
- <div type="dyad" n="..."><!--
- L:
-	 K:
-	 -->
-	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
-	<lg>
-		<l>... |</l>
-		<l>... ||</l>
-	</lg>
-	<note type="parallels">
-			 <list>
- <item sameAs="MDhŚ08.XXX"/>
-			 </list>
- </note>
- </quote></supplied></p>
- <p>...</p>
- </div>
+ <!-- AG+TL have reached here on 2020-08-21 -->
  <div type="dyad" n="..."><!--
  L:
 	 K:
