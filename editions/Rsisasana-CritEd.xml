@@ -10,7 +10,7 @@
 					<surname>Schoettel</surname>
 				</editor>
 				<respStmt>
-					<resp>structuring of the TEI file</resp> <!--TBM-->
+					<resp>TEI encoding</resp> <!--TBM-->
 					<persName>Marine Schoettel</persName>
 				</respStmt>
 			</titleStmt>
@@ -50,7 +50,7 @@
 			</langUsage>
 		</profileDesc>
 		<revisionDesc>
-		    <change when="2020-08-18" who="part:masc">Modifications in view of xslt transformation (choice tags, removing some apps...)</change>
+		  <change when="2020-08-18" who="part:masc">Modifications in view of xslt transformation (choice tags, removing some apps...)</change>
 			<change when="2020-08-01" who="part:masc">Small update in one śloka</change>
 			<change when="2020-07-16" who="part:masc">Encoding all edition with 3 mss., first stage</change>
 			<change when="2020-05-21" who="part:masc">Reading div 1 and 2 with argr</change>
@@ -65,28 +65,36 @@
 		<body>
 			<div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
 <div><ab type="invocation" xml:lang="san-Latn"><pb ed="#A" n="1v"/>//0// om̐ <app><lem type="norm">namaḥ</lem><rdg wit="#A #B #C #D">nama</rdg></app> śivāya //0//</ab>
-</div>			<div type="dyad" n="1">
+</div>			div n="1">
+<head type="editorial">Introduction (<foreign>maṅgala</foreign>)</head>
 				<lg met="upajāti">
-				<l>nr̥paḥ<!-- nr̥po? --> manuḥ <app><lem wit="#B">pūrvakadevatāsīt</lem><rdg wit="#A">pūrvvatadevata:<unclear>s</unclear>ət</rdg><rdg wit="#C #D">pūrvvatadetasət</rdg><note>Note the use of the term <foreign>devatā</foreign>, which is used in epigraphy within curse formulas since the Central Javanese period (inscriptions of Sugih Manek from 837 Śaka, Mantyasih from 907 Śaka) to invoke the spirits of royal ancestors (de Casparis &amp; Mabbett 1999: 310) .</note></app></l>
-				<l><app><lem type="norm">dattvā</lem><rdg wit="#A">da:tva</rdg><rdg wit="#B">datva</rdg></app> <app><lem type="emn">suśāstraṁ</lem><rdg wit="#B #A #D">suśa:ntraṃ</rdg><rdg wit="#C">suśantraṅ</rdg></app> <app><lem type="norm">śivaśāsanākhyaṁ</lem><rdg wit="#A">śiva:śa:śanakyaṃ</rdg><rdg wit="#B">sivasasanakiyam</rdg><rdg wit="#C #D">śaṣakyəṅ</rdg></app></l>
-				<l><app><lem type="emn">śaivaiḥ</lem><rdg wit="#A #D">śaivai</rdg><rdg wit="#B">saiveh</rdg><rdg wit="#C">śove</rdg></app> <app><lem type="emn">sadā pūjā-</lem><rdg wit="#A #C #D">seda:paja-</rdg><rdg wit="#B">sadapaja-</rdg>
-			</app>kr̥taiḥ (kṛte? loc. au sens de datif) <app><lem type="emn">tam evaṃ</lem><rdg wit="#A #B #D">tumevaṃ</rdg><rdg wit="#C">tumeviṅ</rdg></app></l>
-				<l><app><lem type="emn">prajeśayor namyaṃ</lem><rdg wit="#A #B">prajasya:yo naṃya</rdg><rdg wit="#C">prajasyayo nəṁya</rdg></app> <app><lem type="norm">śubhāya ciram</lem><rdg wit="#A #C #D">subhāyabhiram</rdg><rdg wit="#B">subhaya ciram</rdg></app>॥</l>
+				<l><app><lem type="norm">nr̥po</lem><rdg wit="#B #A #D #C">nr̥paḥ</rdg></app><!-- check wit on rdg --> manuḥ <app><lem wit="#B">pūrvakadevatāsīt</lem><rdg wit="#A">pūrvvatadevata:<unclear>s</unclear>ət</rdg><rdg wit="#C #D">pūrvvatadetasət</rdg><note>Note the use of the term <foreign>devatā</foreign>, which is used in epigraphy within curse formulas since the Central Javanese period (inscriptions of Sugih Manek from 837 Śaka, Mantyasih from 907 Śaka) to invoke the spirits of royal ancestors (de Casparis &amp; Mabbett 1999: 310).</note></app><!--Note which rather pertains to the translation div, see notes in article by AG and EC on Laguna copperplate for discussion of devata.-->,</l>
+				<l><app><lem type="norm">dattvā</lem><rdg wit="#A">da:tva</rdg><rdg wit="#B">datva</rdg><!-- add readings of other witnesses --></app>
+				<app><lem type="emn">suśāstraṁ</lem><rdg wit="#B #A #D">suśa:ntraṁ*</rdg><rdg wit="#C">suśantraṅ</rdg></app>
+				<app><lem type="norm">śivaśāsanākhyam</lem><rdg wit="#A">śiva:śa:śanakyaṁ*</rdg><rdg wit="#B">sivasasanakiyam</rdg><rdg wit="#C #D">śaṣakyəṅ</rdg></app>,</l>
+				<l><app><lem type="norm">śaivaiḥ</lem><rdg wit="#A #D">śaivai</rdg><rdg wit="#B">saiveh</rdg><rdg wit="#C">śove</rdg></app>
+				<app><lem type="emn">sadā pūjakr̥taiḥ</lem><rdg wit="#A #C #D">seda:paja-</rdg><rdg wit="#B">sadapaja-</rdg></app><!-- complete the rdgs in place of hyphen, for pūja with short a metri causa, see other examples in the works of Goudriaan and Schoterman (kṛte? loc. au sens de datif)-->
+				<app><lem type="emn">tam evam</lem><rdg wit="#A #B #D">tumevaṁ*</rdg><rdg wit="#C">tumeviṅ</rdg></app>,</l>
+				<l><app><lem type="emn">prajeśayor namyaṁ</lem><rdg wit="#A #B">prajasya:yo naṁ*ya</rdg><rdg wit="#C">prajasyayo nəṁya</rdg></app>
+				<!-- namyaṁ to be changed to namya? at least that is what meter requires -->
+				<app><lem type="norm">śubhāya ciram</lem><rdg wit="#A #C #D">subhāyabhiram</rdg><rdg wit="#B">subhaya ciram</rdg><note>Read <foreign>cīram</foreign>.</note></app>॥</l>
 			</lg>
-<!-- Reconstruction: nr̥paḥ manuḥ pūrvata devatāsīt / dattvā suśāstraṁ* śivaśāsanākhyaṁ / śaivaiḥ sadā pūja-kr̥taiḥ tu meyam* / prajasya yo naṃya subhāya ciram -->
+<!-- Reconstruction: nr̥paḥ manuḥ pūrvata devatāsīt / dattvā suśāstraṁ* śivaśāsanākhyaṁ / śaivaiḥ sadā pūja-kr̥taiḥ tu meyam* / prajasya yo naṁ*ya subhāya ciram -->
 <!-- #A [fol01v1] // 0 // om̐ nama śivāya // 0 //
 	nr̥paḥ manuḥ pūrvvata devata:(s)ət· ,  da:tva suśa:ntraṃ śiva:śa:śanak[SH]yaṃ , śaivai seda:paja kr̥taiḥ tumevaṃ , prajasya: yonaṃya subha:yabhiram· //
 #B nrepa manuh purvakadevatasit, datva susantram, sivasasanakiyam saiveh sadapaja kretaih tumevam, prajasya yonam ya subaya ciram //-->
 <p>kaliṅanya, sira bhaṭāra tambeyanira <app><lem wit="#A #B #D">mintonakən</lem><rdg wit="#C">mintonakəka</rdg></app> <app><lem wit="#B">āvaknirar paṅanti</lem>
 <rdg wit="#A #C #D">āvaknira maṅanti</rdg></app><!-- fuse into one <app>--> riṅ rāt,
 sira ta mūlaniṅ sinaṅguh prabhu riṅ loka madhyapada, mahārāja manu ṅaranira,
-sira <app><lem wit="#A #C">maveh</lem><rdg wit="#B">vehən</rdg><rdg wit="#D">madeva</rdg></app> anugraha <app><lem wit="#A #C">suśāstra</lem><rdg wit="#B">susanta</rdg><rdg wit="#D">sura:stra</rdg></app> śaivaśāśana <!--norm to śaivaśāsana or śivaśāsana?--> ṅaranya, mapakna kaiśvaryānanira ḍaṅ ācārya śaiva, ri tiṅkah saṅ bhujaṅga <app><lem type="emn">nityaśāṅutsāha</lem><rdg wit="#A #C #B #D">nitya saṅ utsaha</rdg></app> gumavayakən pūjā samādhi riṅ ahorātri, rahina vəṅi tan <app>
+
+sira <app><lem wit="#A #C">maveh</lem><rdg wit="#B">vehən</rdg><rdg wit="#D">madeva</rdg></app> anugraha <app><lem wit="#A #C">suśāstra</lem><rdg wit="#B">susanta</rdg><rdg wit="#D">sura:stra</rdg></app> śaivaśāśana <!--norm to śaivaśāsana or śivaśāsana?--> ṅaranya, mapakna kaiśvaryānanira ḍaṅ ācārya śaiva, ri tiṅkah saṅ bhujaṅga nityaśāṅutsāha gumavayakən pūjā samādhi riṅ ahorātri, rahina vəṅi tan <app>
 <lem wit="#A #B #D">paṅinak-inak</lem>
 <rdg wit="#C">paṅinak-ənak</rdg>
 </app> saṅ bhujaṅga mrārthanākən ri svasthāniṅ rat,
-ṅuniveh ri hayva taṇḍa rakryan makādi <app><lem wit="#A #C #D">ri hajəṅa</lem><rdg wit="#B">ri rahajəṅga</rdg></app> saṅ prabhu,
-laṅgə̄ṅanira <app><lem wit="#A #D #C">sinivi</lem><rdg wit="#B">sivi</rdg></app> <app><lem wit="#B">kabhujaṅgan</lem><rdg wit="#A #D">kebhujaṅgan</rdg><rdg wit="#C">kenujaṅgan</rdg></app>,
-mvaṅ gavayakna taṅ trikāya paramārtha ṅaranya, ulah, <app><lem wit="#A #B #C #D">śīla</lem><note>The standard components of the three "bodily domains" (<foreign>trikāya</foreign>) are <foreign>ulah</foreign>, <foreign>śabda</foreign> and <foreign>ambək</foreign>. The author of this text glossed <foreign>ulah</foreign> with <foreign>śīla</foreign>.</note></app>,<!--See parallels in many other texts for this series of three, which do not include śīla, add note in translation that śīla is probably a gloss on ulah, but should not be considered as a fourth element interpolated(?) in this series--> śabda, lāvan āmbək //<!-- maybe limit punctuation in edition to , and . or | and || -->nahan ta karakṣaniṅ śīla ṅaranya,</p></div>
+ṅuniveh ri hayva taṇḍa rakryan makādi <app><lem wit="#A #C #D">ri hajəṅa</lem><rdg wit="#B">ri rahajəṅga</rdg></app><!--read ri rahajǝṅa, based on K? --> saṅ prabhu,
+laṅgǝṅanira <app><lem wit="#A #D #C">sinivi</lem><rdg wit="#B">sivi</rdg></app> <app><lem wit="K">kabhujaṅgan</lem><rdg wit="#A #D">kebhujaṅgan</rdg><rdg wit="#C">kenujaṅgan</rdg></app><!--One would like to see laṅgə̄ṅanira-n, but note that rejected witnesses in avaknirar paṅanti, above, also lacked any sign of subordination  -->,
+mvaṅ gavayakna taṅ trikāya paramārtha ṅaranya, <app>ulah, śīla,<note>Parallels in many other texts do not include <foreign>śīla</foreign> after <foreign>ulah</foreign> in this series of three. So it seems that <foreign>śīla</foreign> is gloss on <foreign>ulah</foreign>, but should not be considered as a fourth element.</note></app>  śabda, lāvan āmbək //<!-- translate strong punctuation (//) by a full stop. -->
+nahan ta karakṣaniṅ śīla ṅaranya,<!--Place of this segment in div 1 or 2? It is terminated only by a comma.--></p></div>
 
 <div n="2">
 <head type="editorial">The four perfections (<foreign>caturpāramitā</foreign>) of the hermits and the pursuit of the realm's prosperity</head>
@@ -165,7 +173,7 @@ tahun,</foreign>.</note></app> tuhan, <app><lem type="norm">avita</lem><rdg wit=
 	<p>
 		<lg met="anuṣṭubh">
 		<l>// <app><lem type="emn">brahmacārī</lem><rdg wit="#A #C">brahma:ri</rdg><rdg wit="#B">brahmanari</rdg></app> <app><lem wit="#B">gr̥hasthaśca</lem><rdg wit="#A #C">gr̥hastha śrūya</rdg></app>, vānaprastho <app><lem type="norm">yathākramāt</lem><rdg wit="#A #B #C">yathakramat·</rdg></app>,</l>
-		 <l><app><lem type="norm">trayāṇāñ</lem><rdg wit="#A #C">traya:nañ</rdg></app> ca gr̥hasthatvam, tasyaṃ yadgal haṅkitam //</l>
+		 <l><app><lem type="norm">trayāṇāñ</lem><rdg wit="#A #C">traya:nañ</rdg></app> ca gr̥hasthatvam, tasyaṁ* yadgal haṅkitam //</l>
 <note type="parallels"><list>
 <item sameAs="BndP1.7.169"/>
 </list>
@@ -178,7 +186,7 @@ tahun,</foreign>.</note></app> tuhan, <app><lem type="norm">avita</lem><rdg wit=
 <!-- <note>.</note> -->
 </lg>
 <lg met="anuṣṭubh">
-<l><app><lem type="emn">na viṣaṃ viṣaṃ</lem><rdg wit="#A #C #B">bhaviṣa vviṣam</rdg></app>ity <app><lem type="norm">āhuḥ</lem><rdg wit="#A #C #B">ahuḥ</rdg></app>, <app><lem type="emn">devasvam viṣam</lem><rdg wit="#A #B">devasva vviṣam</rdg><rdg wit="#C">devasvavmiṣam</rdg></app> <app><lem type="emn">ucyate</lem><rdg wit="#A #C">abhyate</rdg><rdg wit="#B">anyate</rdg></app>,</l>
+<l><app><lem type="emn">na viṣaṁ* viṣaṁ*</lem><rdg wit="#A #C #B">bhaviṣa vviṣam</rdg></app>ity <app><lem type="norm">āhuḥ</lem><rdg wit="#A #C #B">ahuḥ</rdg></app>, <app><lem type="emn">devasvam viṣam</lem><rdg wit="#A #B">devasva vviṣam</rdg><rdg wit="#C">devasvavmiṣam</rdg></app> <app><lem type="emn">ucyate</lem><rdg wit="#A #C">abhyate</rdg><rdg wit="#B">anyate</rdg></app>,</l>
 <l>iha loke viṣam anyat, devan dr̥vyān tamevatuḥ //</l>
 <note type="parallels">Such stanzas defining wealth as poison occur frequently in Sanskrit charters from the Indian subcontinent and know many variants, focusing around either <foreign>brahma-svam</foreign> or <foreign>deva-svam</foreign>. Some examples are enumerated in Sircar, Indian Epigraphy, p. 190, n. 98. I have not found any literary or epigraphic parallels for the last pādas however.
 		 <list>
@@ -204,8 +212,8 @@ pakənanya, pūjākna i saṅ hyaṅ śivāgni, mvaṅ ri kevyənika saṅ viku 
 <p>kunaṅ <app><lem type="emn">yan</lem><rdg wit="#A #C">ya</rdg></app> tan hana saṅ guru, guruputra, jyeṣṭhaputra, ḍəṅən sanak, ṅuniveh svavarganira riṅ dharma, umalapa sadr̥vyānira, <app><lem type="norm">umarpaṇākəna</lem><rdg wit="#A #B">umārpanakəna</rdg><rdg wit="#C">umalapanakna</rdg></app> ya ri bhaṭāri, mvaṅ ri saṅ hyaṅ śivāgni, lāvan māveha tarpanā ri saṅ viku pəjahana <app><lem wit="#A #C">matya</lem><rdg wit="#B">patya</rdg></app>, tan salah parana mvaṅ tan alapən juga, ajinya nihan</p>
 <quote xml:lang="san-Latn">
 <lg met="anuṣṭubh">
-<l>// <app><lem type="norm">svaryātasya</lem><rdg wit="#A #B #C">sva:ryyatasya</rdg></app> <app><lem type="emn">hi</lem><rdg wit="#A #B #C">ti</rdg></app> <app><lem type="emn">svadr̥vyaṃ</lem><rdg wit="#A #B #C">soḥdr̥vyaṃ</rdg></app>, yat kiñcit <app><lem type="norm">pustakādikam</lem><rdg wit="#A #C">pustaka:ḍikam·</rdg><rdg wit="#B">pustakaditam</rdg></app>,</l>
-<l> tat <app><lem type="emn">guror</lem><rdg wit="#A #B #C">guruḥ</rdg></app> <app><lem type="emn">vāśam āpannaṃ</lem><rdg wit="#B">vasam apanam</rdg><rdg wit="#A #C">va:śaha<del>r̥</del>pannaṃ</rdg></app>, <app><lem type="conj">anyebhyo</lem><rdg wit="#A">bha:nahya</rdg><rdg wit="#B">banahya</rdg></app> dātum <app><lem type="em">arhati</lem><rdg wit="#A #C">aḥhati</rdg><rdg wit="#B">ahati</rdg></app> //</l>
+<l>// <app><lem type="norm">svaryātasya</lem><rdg wit="#A #B #C">sva:ryyatasya</rdg></app> <app><lem type="emn">hi</lem><rdg wit="#A #B #C">ti</rdg></app> <app><lem type="emn">svadr̥vyaṁ*</lem><rdg wit="#A #B #C">soḥdr̥vyaṁ*</rdg></app>, yat kiñcit <app><lem type="norm">pustakādikam</lem><rdg wit="#A #C">pustaka:ḍikam·</rdg><rdg wit="#B">pustakaditam</rdg></app>,</l>
+<l> tat <app><lem type="emn">guror</lem><rdg wit="#A #B #C">guruḥ</rdg></app> <app><lem type="emn">vāśam āpannaṁ*</lem><rdg wit="#B">vasam apanam</rdg><rdg wit="#A #C">va:śaha<del>r̥</del>pannaṁ*</rdg></app>, <app><lem type="conj">anyebhyo</lem><rdg wit="#A">bha:nahya</rdg><rdg wit="#B">banahya</rdg></app> dātum <app><lem type="em">arhati</lem><rdg wit="#A #C">aḥhati</rdg><rdg wit="#B">ahati</rdg></app> //</l>
 <note type="parallels">
 		 <list>
 <item sameAs="MatP10.76-77"/>
@@ -213,39 +221,39 @@ pakənanya, pūjākna i saṅ hyaṅ śivāgni, mvaṅ ri kevyənika saṅ viku 
 </note>
 </lg>
 <lg met="anuṣṭubh">
-<l>// guror <app><lem type="emn">abhāvāt</lem><rdg wit="#A #C">ana:vat</rdg><rdg wit="#B">anatat</rdg></app> adnāgaiḥ,<!--Or understand abhāva-tadbhāvaiḥ?--> tribhiḥ kāryaṃ mahātmabhiḥ,</l>
-<l>devadeva<sic>śrubhāgonya</sic>, <app><lem type="emn">dvitīyaṃ</lem><rdg wit="#A #C">dvitiya</rdg><rdg wit="#B"/></app> <app><lem type="emn">cāpy athāgnaye</lem><rdg wit="#A #C">śa:pya da:gnayet·</rdg><rdg wit="#B"/></app> //</l>
+<l>// guror <app><lem type="emn">abhāvāt</lem><rdg wit="#A #C">ana:vat</rdg><rdg wit="#B">anatat</rdg></app> adnāgaiḥ,<!--Or understand abhāva-tadbhāvaiḥ?--> tribhiḥ kāryaṁ* mahātmabhiḥ,</l>
+<l>devadeva<sic>śrubhāgonya</sic>, <app><lem type="emn">dvitīyaṁ*</lem><rdg wit="#A #C">dvitiya</rdg><rdg wit="#B"/></app> <app><lem type="emn">cāpy athāgnaye</lem><rdg wit="#A #C">śa:pya da:gnayet·</rdg><rdg wit="#B"/></app> //</l>
 
-<app><lem><l>devadeva<sic>śrubhāgonya</sic>, <app><lem type="emn">dvitīyaṃ</lem><rdg wit="#A #C">dvitiya</rdg></app> <app><lem type="emn">cāpy athāgnaye</lem><rdg wit="#A #C">śa:pya da:gnayet·</rdg></app> //</l></lem><rdg wit="#B"/></app>
+<app><lem><l>devadeva<sic>śrubhāgonya</sic>, <app><lem type="emn">dvitīyaṁ*</lem><rdg wit="#A #C">dvitiya</rdg></app> <app><lem type="emn">cāpy athāgnaye</lem><rdg wit="#A #C">śa:pya da:gnayet·</rdg></app> //</l></lem><rdg wit="#B"/></app>
 <note type="parallels">
 		 <list>
 <item sameAs="MatP10.77-78"/>
 		 </list>
 </note></lg>
 <lg met="anuṣṭubh">
-	<l>bhojanaṃ pi tr̥tīyasya, <app><lem type="em" source="Minkowski">niḥsve</lem><rdg wit="#A #C">nisva</rdg><rdg wit="#B"/></app> syād athavā yatiḥ,</l>
-	<l><app><lem wit="#A">tanmātraṃ</lem><rdg wit="#C">tanmakram</rdg><rdg wit="#B"/></app> yasya tan nāsti, na tasmai <app><lem wit="#A">sampradīyate</lem><rdg wit="#C">sampradippate</rdg><rdg wit="#B"/></app> //</l>
+	<l>bhojanaṁ* pi tr̥tīyasya, <app><lem type="em" source="Minkowski">niḥsve</lem><rdg wit="#A #C">nisva</rdg><rdg wit="#B"/></app> syād athavā yatiḥ,</l>
+	<l><app><lem wit="#A">tanmātraṁ*</lem><rdg wit="#C">tanmakram</rdg><rdg wit="#B"/></app> yasya tan nāsti, na tasmai <app><lem wit="#A">sampradīyate</lem><rdg wit="#C">sampradippate</rdg><rdg wit="#B"/></app> //</l>
 <note type="parallels">
 		 <list>
 <item sameAs="MatP10.78-79"/>
 		 </list>
 </note></lg>
-<!--ms O: bhojanaṃ pi tr̥tiyasya , nisva syad aṭa:va: yatiḥ , ta§[SH]nmatram· yasya tan nasti , na tasme sampradiyate //
+<!--ms O: bhojanaṁ* pi tr̥tiyasya , nisva syad aṭa:va: yatiḥ , ta§[SH]nmatram· yasya tan nasti , na tasme sampradiyate //
 ms L: bhojanəṁ pi tratiyasya, nisva syad ivāvāyati-->
-<!-- The reading given in Mirnig 2018 differs slightly: bhājanādi tṛtīyaṃ
-tu *niḥsve (corr. Minkowski; nisve Ed.) syād athavā yadi || tanmātraṃ yasya tan nāsti tat
+<!-- The reading given in Mirnig 2018 differs slightly: bhājanādi tṛtīyaṁ*
+tu *niḥsve (corr. Minkowski; nisve Ed.) syād athavā yadi || tanmātraṁ* yasya tan nāsti tat
 tasya tu pradāpayet.-->
 
 <lg met="anuṣṭubh">
-<l>svaryā <app><lem type="emn">guror</lem><rdg wit="#A #C">guruḥ</rdg><rdg wit="#B"/></app> dravyaṃ mahat, devāya <pb ed="#A" n="8v"/><app><lem type="emn">vinivedayet</lem><rdg wit="#A #B #C">viniveśayet</rdg></app>,</l>
-<l><app><lem type="em">kartavyaṃ</lem><rdg wit="#B">tartavyaṃ</rdg></app> hi <app><lem type="emn">vibhos</lem><rdg wit="#A #B #C">vinos</rdg></app> tena, <app><lem wit="#B">prāsādādikam</lem><rdg wit="#A #C">pra:sadatikam</rdg></app> <app><lem type="emn">ādarāt</lem><rdg wit="#A #C">atarot</rdg><rdg wit="#B">ukarot</rdg></app> //</l>
+<l>svaryā <app><lem type="emn">guror</lem><rdg wit="#A #C">guruḥ</rdg><rdg wit="#B"/></app> dravyaṁ* mahat, devāya <pb ed="#A" n="8v"/><app><lem type="emn">vinivedayet</lem><rdg wit="#A #B #C">viniveśayet</rdg></app>,</l>
+<l><app><lem type="em">kartavyaṁ*</lem><rdg wit="#B">tartavyaṁ*</rdg></app> hi <app><lem type="emn">vibhos</lem><rdg wit="#A #B #C">vinos</rdg></app> tena, <app><lem wit="#B">prāsādādikam</lem><rdg wit="#A #C">pra:sadatikam</rdg></app> <app><lem type="emn">ādarāt</lem><rdg wit="#A #C">atarot</rdg><rdg wit="#B">ukarot</rdg></app> //</l>
 <note type="parallels">
 		 <list>
 <item sameAs="MatP10.79-80"/>
 		 </list>
 </note></lg>
 <lg met="anuṣṭubh">
-<l><app><lem>pustakānāṃ</lem><rdg wit="#A #C">pastikaṃni</rdg><rdg>pastikanam</rdg></app> <app><lem wit="#A">yathājyeṣṭhaḥ</lem><rdg wit="#B">yata jiyestah</rdg><rdg wit="#C">yatā jyeṣṭi</rdg></app>, krameṇa paripālanaṃ</l>
+<l><app><lem>pustakānāṁ*</lem><rdg wit="#A #C">pastikaṁ*ni</rdg><rdg>pastikanam</rdg></app> <app><lem wit="#A">yathājyeṣṭhaḥ</lem><rdg wit="#B">yata jiyestah</rdg><rdg wit="#C">yatā jyeṣṭi</rdg></app>, krameṇa paripālanaṁ*</l>
 <l><app><lem type="emn">kartavyam abhiyuktais</lem><rdg wit="#A">vya:turyyat· haṣṭiyuktes</rdg></app> tu, <app><lem type="emn">śiṣyair</lem><rdg wit="#A #C">śiṣyaḥ</rdg><rdg wit="#B">sisiyah</rdg></app> <app><rdg wit="#A">bhyayaśru</rdg><rdg wit="#C">nyayaśru</rdg><rdg wit="#B">niyayasca</rdg></app> sarvadā // 0 //</l>
 <note type="parallels">
 		 <list>
@@ -257,8 +265,8 @@ tasya tu pradāpayet.-->
 <p>nāhan tāji bvat saṅ hyaṅ mataṅga, nihan ajinya ri saṅ hyaṅ <app><lem wit="#A #C">bakula</lem><rdg wit="#B">barkula</rdg></app></p>
 <quote xml:lang="san-Latn">
 <lg met="anuṣṭubh">
-	<l>// 0 // <app><lem wit="#B">yatīnāṃ</lem><rdg wit="#A #C">ya tana:ṁ</rdg></app> putrayat <app><lem wit="#A #C">dravyaṃ</lem><rdg wit="#C">dərtyəṅ</rdg></app>, yatkiñcit <app><lem type="norm">pustakādikam</lem><rdg wit="#A #C #B">pustakaḍikaṃ</rdg></app>,</l>
-	<l><app><lem type="emn" cert="low">grāmebhyaḥ</lem><rdg wit="#A #C">śra:mobhyaḥ</rdg><rdg wit="#B">gramobiyah</rdg></app> ta <app><lem type="emn">na dātavyaṃ</lem><rdg wit="#A #C">na da:kavyaṃ</rdg><rdg wit="#B">na dataviyam</rdg></app>, guruhcchada <app><lem type="norm">vididyute</lem><rdg wit="#A #C">vidhidyute</rdg></app> //</l>
+	<l>// 0 // <app><lem wit="#B">yatīnāṁ*</lem><rdg wit="#A #C">ya tana:ṁ</rdg></app> putrayat <app><lem wit="#A #C">dravyaṃ</lem><rdg wit="#C">dərtyəṅ</rdg></app>, yatkiñcit <app><lem type="norm">pustakādikam</lem><rdg wit="#A #C #B">pustakaḍikaṁ*</rdg></app>,</l>
+	<l><app><lem type="emn" cert="low">grāmebhyaḥ</lem><rdg wit="#A #C">śra:mobhyaḥ</rdg><rdg wit="#B">gramobiyah</rdg></app> ta <app><lem type="emn">na dātavyaṁ*</lem><rdg wit="#A #C">na da:kavyaṁ*</rdg><rdg wit="#B">na dataviyam</rdg></app>, guruhcchada <app><lem type="norm">vididyute</lem><rdg wit="#A #C">vidhidyute</rdg></app> //</l>
 </lg>
 </quote>
 <p>maṅkana liṅ saṅ hyaṅ āgama, sira ta kinonakən śrī mahārāja kayatnakna mpuṅku riṅ kaśaivan makabehan, təka ri mpuṅku tamolah riṅ panevaśikan, saṅkā ry <app><lem type="em">gə̄ṅnyā</lem><rdg wit="#B">agəṅ</rdg><rdg wit="#A #C">agə:ṅnya</rdg></app><app><lem wit="#A #B">rəmbha</lem><rdg wit="#C">rəpba</rdg><note type="parallels">See parallel passage in kakavin Arjunavivāha 19.2c gəṅnyārəmbha patik haji huluna </note></app><!--I imagine that this type of quotation is not really a "parallel" in the sense the EG has meant it, but then I am not sure how to encode this--> mahārāja manu ri mpuṅku riṅ kaśaivan,</p>
