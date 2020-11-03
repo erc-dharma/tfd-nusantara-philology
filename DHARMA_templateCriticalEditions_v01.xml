@@ -6,8 +6,8 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-      <title type="main">Encoding template for manuscript</title><!--Change the title of the file with the name of your text-->
-        <title type="subtitle">Digital Critical Edition and Translation of...</title><!-- fill in the subtitle if necessary -->
+      <title type="main">Encoding Template for Critical Editions</title><!--Change the title of the file with the name of your text-->
+        <title type="subtitle">Digital Critical Edition of...</title><!-- fill in the subtitle if necessary -->
         <!-- Possibility to add the <editor> tag:
         <editor ref="part:ID">
 					<forename></forename>
@@ -29,7 +29,7 @@
       <publicationStmt>
         <authority>DHARMA</authority>
         <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-        <idno type="filename">DHARMA_EncodingTemplateInscription</idno><!-- Replace by filename, e.g. Pallava00001 -->
+        <idno type="filename">DHARMA_templateCriticalEdition_v01</idno><!-- Replace by filename, e.g. Pallava00001 -->
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">
             <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
@@ -71,15 +71,16 @@
     <encodingDesc>
       <projectDesc> <!-- Part mandatory -->
         <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+      	<!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
       </projectDesc>
       <editorialDecl> <!-- This part can be structured depending your need to explain some of your editorial work. Among the following elements, keep only the useful one for your edition. -->
         <correction> 
           <p></p>
         </correction>
         <normalization>
-          <p>Original spelling and typography is retained, except that long s and ligatured
-            forms are not encoded.</p>
+          <p>Original spelling and typography is retained, except that long s and ligatured forms are not encoded.</p>
         </normalization>
+      	<!-- The elements <hyphenation>, <punctuation>, and <quotation> can be added if needed -->
       </editorialDecl>
       <samplingDecl> <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
         <p></p>
@@ -89,7 +90,7 @@
       <!-- Part mandatory -->
     </encodingDesc>
       <profileDesc>
-	<langUsage><!-- choose the language of your text -->
+	<langUsage><!-- choose the language(s) of your text -->
       	  <language ident="san-Latn">Sanskrit, romanized</language>
       	  <language ident="kaw-Latn">Old Javanese, romanized</language>
       	  <language ident="tam-Latn">Tamil, romanized</language>
@@ -103,7 +104,8 @@
         </textClass>
       </profileDesc>
     <revisionDesc>
-      <change who="part:axja" when="2020-01-06" status="draft">Creation of the template</change><!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+    	<change who="part:argr" when="2020-11-03" status="draft">Modifications of the template</change>
+            <change who="part:axja" when="2020-01-06" status="draft">Creation of the template</change><!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
     </revisionDesc>
   </teiHeader>
   <text>
