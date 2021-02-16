@@ -4,7 +4,7 @@
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Svayambhu</title>
-				<title type="sub">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
+				<title type="sub" xml:lang="eng">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
 				<editor ref="part:argr">
 					<forename>Arlo</forename>
 					<surname>Griffiths</surname>
@@ -15,12 +15,14 @@
 				</editor>
 				<respStmt>
 					<resp>structuring of the TEI file</resp>
-					<persName>Arlo Griffiths</persName>
+				  <persName ref="part:argr">
+				      <forename>Arlo</forename>
+				     <surname>Griffiths</surname>
+				  </persName>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
-				<authority>DHARMA <note>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</note>
-				</authority>
+				<authority>DHARMA</authority>
 				<pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
 				<idno type="filename">Svayambhu-CritEd</idno>
 				<availability>
@@ -37,8 +39,10 @@
 					<witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, II A/3/774: Balinese script on lontar</witness>
 				</listWit>
 				<listBibl>
-					<biblStruct type="book" xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
-						<monogr>
+					<bibl xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
+					 <abbr type="siglum">Ed<hi rend="superscript">VNM</hi></abbr>
+					  <ptr target="bib:Mandlik1886_01"/>
+					 <!-- <monogr>
 							<title level="m">Mānava-dharma śāstra</title>
 							<editor><forename>Vishwanath Narayan</forename><surname>Mandlik</surname></editor>
 							<author><name>Govindaraja</name></author>
@@ -47,10 +51,11 @@
 								<publisher>Ganpat Krishnaji's press</publisher>
 								<date>1886</date>
 							</imprint>
-						</monogr>
-					</biblStruct>
-					<biblStruct type="book" xml:id="Olivelle2005_01" corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
-						<monogr>
+						</monogr>-->
+					</bibl>
+					<bibl xml:id="Olivelle2005_01" corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
+					  <abbr type="siglum">Ed<hi rend="superscript">PO</hi></abbr>
+					  <ptr target="bib:Olivelle2005_01"/><!--<monogr>
 							<title level="m">Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
 							<title type="short">Olivelle2005_01</title>
 											<author>
@@ -62,13 +67,17 @@
 		<publisher>Oxford University Press</publisher>
 		<date>2005</date>
 	</imprint>
-</monogr>
-</biblStruct>
+</monogr>-->
+</bibl>
 				</listBibl>
 			</sourceDesc>
 		</fileDesc>
-		<encodingDesc>
-			<p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+	  <encodingDesc>
+	    <projectDesc>
+	      <p>This project DHARMA has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+	      <p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+	    </projectDesc>
+	    <schemaRef type="guide" key="EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
