@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="rsisasana">
 	<teiHeader>
 		<fileDesc>
@@ -61,11 +64,10 @@
 	<facsimile>
 		<graphic url="photograph of text or monument"/>
 	</facsimile>
-	<text>
+	<text xml:space="preserve" xml:lang="kaw-Latn">
 		<body>
-			<div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
-<div><ab type="invocation" xml:lang="san-Latn"><pb ed="#A" n="1v"/>//0// om̐ <app><lem type="norm">namaḥ</lem><rdg wit="#A #B #C #D">nama</rdg></app> śivāya //0//</ab>
-</div>
+<ab type="invocation" xml:lang="san-Latn"><pb ed="#A" n="1v"/>//0// om̐ <app><lem type="norm">namaḥ</lem><rdg wit="#A #B #C #D">nama</rdg></app> śivāya //0//</ab>
+
 <div n="1" type="chapter">
 	<head type="editorial">Introduction (<foreign>maṅgala</foreign>)</head>
 	<lg met="upajāti">
@@ -488,19 +490,9 @@ in accordance with correct procedure (nyāyena).”-->
 		<app><lem type="norm">saparananyānəmva pāpa</lem><rdg wit="#A">sasarana:nya:n mapa:pa</rdg><rdg wit="#B">saparananyannəmva papa</rdg><rdg wit="#C">sasarakanyan mapa:pa</rdg></app>, <app><lem wit="#A">sapolahnyānəmva</lem><rdg wit="#B">sapolahnya nnəmva</rdg><rdg wit="#C">sapolahnyanḍa</rdg></app> duhkha, <app><lem wit="#A #B">anəmva</lem><rdg wit="#C">hanḍa</rdg></app> sarvaroga, busuṅa, <app><lem wit="#A #C">huḍuga</lem><rdg wit="#B">vuduga</rdg></app>, tan pānaka, <app><lem wit="#A #B">bisuha</lem><rdg wit="#C">biḍuha</rdg></app>, <app><lem wit="#B">tuliha, lumpuha</lem><rdg wit="#A #C">lumpuha, tuliha</rdg></app>, piṅsapta vimba pātaka, piṅ<app><lem wit="#A">saptāṅjanma</lem><rdg wit="#B">saptanjanma</rdg><rdg wit="#C">saptaṅtanma</rdg></app><!--lem: ā < a--> amaṅgiha roga sadakāla, təka riṅ <app><lem wit="#A">atra paratra</lem><note>Or should we rather understand, thus emend, <foreign>ādiparatra</foreign> or <foreign>adhiparatra</foreign>? cf OJED 17</note></app>, tan panəmu <app><lem wit="#B">inak</lem><rdg wit="#A #C">hinik</rdg></app> janmanya, maṅkana tinəmunikaṅ vvaṅ laṅghanāṅruddhā ājñā pāduka rahyaṅta saṅ pūrbvacakra riṅ məḍaṅ, yan caturjanma aṅruddhā dharma, astu ləbur āvu təmahanya
 	</p>
 </div>
-<div>
-	<ab>// 0 // iti saṅ hyaṅ R̥ṣiśāsana <surplus>irikā divaśa rahyaṅta ri məḍaṅ, ampu siddha paṇḍita, makon kumayatnakna, ri kadeyakna hikanaṅ janma manuṣa</surplus></ab>
-</div> <!--Is there an ab, type="colophon"?-->
-</div>
-<div type="translation">
-	<p n="1">.</p>
-</div>
-<div type="commentary">
-	<p>commentary</p>
-</div>
-<div type="bibliography">
-	<p>bibliography of previous editions, discussion, etc.</p>
-</div>
+
+<div><ab>// 0 // iti saṅ hyaṅ R̥ṣiśāsana <surplus>irikā divaśa rahyaṅta ri məḍaṅ, ampu siddha paṇḍita, makon kumayatnakna, ri kadeyakna hikanaṅ janma manuṣa</surplus></ab></div>
+ <!--Is there an ab, type="colophon"?-->
 </body>
 </text>
 </TEI>
