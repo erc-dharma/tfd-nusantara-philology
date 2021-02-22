@@ -4,7 +4,7 @@
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Svayambhu</title>
-				<title type="sub">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
+				<title type="sub" xml:lang="eng">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
 				<editor ref="part:argr">
 					<forename>Arlo</forename>
 					<surname>Griffiths</surname>
@@ -15,12 +15,14 @@
 				</editor>
 				<respStmt>
 					<resp>structuring of the TEI file</resp>
-					<persName>Arlo Griffiths</persName>
+				  <persName ref="part:argr">
+				      <forename>Arlo</forename>
+				     <surname>Griffiths</surname>
+				  </persName>
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
-				<authority>DHARMA <note>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</note>
-				</authority>
+				<authority>DHARMA</authority>
 				<pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
 				<idno type="filename">Svayambhu-CritEd</idno>
 				<availability>
@@ -37,8 +39,10 @@
 					<witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, II A/3/774: Balinese script on lontar</witness>
 				</listWit>
 				<listBibl>
-					<biblStruct type="book" xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
-						<monogr>
+					<bibl xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
+					 <abbr type="siglum">Ed<hi rend="superscript">VNM</hi></abbr>
+					  <ptr target="bib:Mandlik1886_01"/>
+					 <!-- <monogr>
 							<title level="m">Mānava-dharma śāstra</title>
 							<editor><forename>Vishwanath Narayan</forename><surname>Mandlik</surname></editor>
 							<author><name>Govindaraja</name></author>
@@ -47,10 +51,11 @@
 								<publisher>Ganpat Krishnaji's press</publisher>
 								<date>1886</date>
 							</imprint>
-						</monogr>
-					</biblStruct>
-					<biblStruct type="book" xml:id="Olivelle2005_01" corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
-						<monogr>
+						</monogr>-->
+					</bibl>
+					<bibl xml:id="Olivelle2005_01" corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
+					  <abbr type="siglum">Ed<hi rend="superscript">PO</hi></abbr>
+					  <ptr target="bib:Olivelle2005_01"/><!--<monogr>
 							<title level="m">Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
 							<title type="short">Olivelle2005_01</title>
 											<author>
@@ -62,13 +67,17 @@
 		<publisher>Oxford University Press</publisher>
 		<date>2005</date>
 	</imprint>
-</monogr>
-</biblStruct>
+</monogr>-->
+</bibl>
 				</listBibl>
 			</sourceDesc>
 		</fileDesc>
-		<encodingDesc>
-			<p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+	  <encodingDesc>
+	    <projectDesc>
+	      <p>This project DHARMA has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+	      <p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+	    </projectDesc>
+	    <schemaRef type="guide" key="EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
@@ -89,19 +98,18 @@
 - both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a
 
 -->
-	<text xml:space="preserve">
+	<text xml:space="preserve" xml:lang="kaw-Latn">
 		<body>
-<div type="edition" xml:lang="kaw-Latn">
 <!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t∙, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ [01-03] vruḥ maviveka:,
 sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
 <!-- K: [1v1] || ○ || Avighnam a:stu || ○ || kunaṁ hulaha: saṁ prabhu, Uniṅanira taṁ vyavaharani§[SH]kaṁ ra:t∙,
 harovaṅa ta sira: brahma:{kar}/ṇa\ vihikan maṅaji, lavan mantri, vruḥ mavikveka:,
 śūlakṣa[1v2]ṇa:ha: ta sira tumamaha: riṁ śabha: || -->
-<ab type="invocation" xml:lang="san-Latn"><pb ed="#L" n="1"/><pb ed="#K" n="1v"/>//0// avighnam astu //0//</ab>
+<ab type="invocation" xml:lang="san-Latn"><pb edRef="#L" n="1"/><pb edRef="#K" n="1v"/>//0// avighnam astu //0//</ab>
 <!-- argr: do we need a div around this ab? in Marine's Rsisasana, she has it -->
 <!-- simplify to "avighnam astu." ? in first ab type="colophon", we have removed ||0||-->
 <div type="chapter" n="1">
-<head type="editorial">Account of Dharma</head>
+<head type="editorial" xml:lang="eng">Account of Dharma</head>
 <div type="dyad" n="1">
 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
 	<lg met="anuṣṭubh">
@@ -192,7 +200,7 @@ K:			I§[SH]ṅsa: ya kurute kaścit∙, hana: voṁ mamatyani nirdoṣa:, maṅ
 	<l>sthāne te dve vivādasya bhinno ’ṣṭādaśadhā punaḥ ||</l>
 	</lg><note type="parallels">
          <list>
-          <item>This stanza is absent from <bibl><ptr target="bibl:Olivelle2005_01"/>Olivelle</bibl>'s constituted text, though it is referenced in his app. crit. for one manuscript. The stanza occurs in ed. <bibl><ptr target="bibl:Mandlik1886_01"/>Mandlik</bibl> 8.4 with reading <foreign>bhinno</foreign>, where the Svayambhu implies <foreign>bhinne</foreign>.</item>
+          <item>This stanza is absent from <bibl><ptr target="bib:Olivelle2005_01"/>Olivelle</bibl>'s constituted text, though it is referenced in his app. crit. for one manuscript. The stanza occurs in ed. <bibl><ptr target="bib:Mandlik1886_01"/>Mandlik</bibl> 8.4 with reading <foreign>bhinno</foreign>, where the Svayambhu implies <foreign>bhinne</foreign>.</item>
           <!-- alternative suggestion for computer-actionable bit simpler referencing of editions bib:Mandlik1886_01_ed08.0004 -->
         </list>
 	</note>
@@ -343,7 +351,7 @@ K:	Uvustha:neṣṭabhūyaśṭaṃ, Ikaṁ vyavaharasta:na valuvlas∙, kapva h
  	 </lg>
  	 <note type="parallels">
  				<list>
-  <item>This stanza is absent from <bibl><ptr target="bibl:Olivelle2005_01"/>Olivelle</bibl>'s constituted text, though it is referenced in his app. crit. for ms. Ox2 after 8.9. Mandlik (p. 877) and Jha include the stanza at the beginning of Medhātithi’s comment on 8.9; in his notes, Jha (v. 9, p. 490) cites citations of this verse in medieval scholastic works. In contrast with the cases in Div. XX and YY, van Naerssen (1956) did not notice that the Old Javanese text here implies the presence of this stanza because the Sanskrit original is not quoted.</item>
+  <item>This stanza is absent from <bibl><ptr target="bib:Olivelle2005_01"/>Olivelle</bibl>'s constituted text, though it is referenced in his app. crit. for ms. Ox2 after 8.9. Mandlik (p. 877) and Jha include the stanza at the beginning of Medhātithi’s comment on 8.9; in his notes, Jha (v. 9, p. 490) cites citations of this verse in medieval scholastic works. In contrast with the cases in Div. XX and YY, van Naerssen (1956) did not notice that the Old Javanese text here implies the presence of this stanza because the Sanskrit original is not quoted.</item>
  				</list>
  	</note>
  	</quote></supplied></p>
@@ -785,7 +793,7 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 <ab type="colophon">iti dharma<app><lem rend="hyphenfront" type="norm">carita</lem><rdg wit="#L">caritta</rdg><rdg wit="#K">ca:ritta,</rdg></app>.</ab>
 </div><!-- end of chapter 1-->
 <div type="chapter" n="2">
-<head type="editorial">Protection of Faithful Women</head>
+<head type="editorial" xml:lang="eng">Protection of Faithful Women</head>
  <div type="dyad" n="28"><!--
 	 L: kunaṁ dr̥vya: kaliliraniṁ rare tuvuh-uvuḥ, kǝmitə[03-31]n kəkəsana saṁ prabhu, Ikaṁ dr̥vya:, yan apa maṅkana:, yavat na: syat∙ samavr̥to, yan u[04-01]vus maṅaji, yan tapvan∙ vnaṁ rumakṣa dr̥vya:nya, kunaṁ yan uvus· muliḥ sakiṁ gurunya, vnaṁ ru[04-02]makṣa dr̥vya:nya, vehakna Ikaṁ dr̥vya: Iriya: ||
 	K: kunaṁ druvya kalilirani rare tuvuh-uvuḥ, kmitən kəkəsana: saṁ pra§[SH]bhu, Ikaṁ dravya, yan apa: maṅkana:, yavat na syat∙, samavr̥to, yan vus maṅaji, ya tapvan· vnaṁ rumakṣa dr̥vya§[5v2]nya, kunaṁ yan <u>vus muliḥ sakiṁ gurunya, vnaṁ rumakṣa dravyanya, vehakna hikaṁ druvya Iriya: ||
@@ -846,13 +854,12 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 			 </list>
  </note>
  </quote></supplied></p>
- <p>yapvan ana <app><lem wit="#L">kadaṅnikaṅ</lem><rdg wit="#K">kaṇḍaṁnikaṁ</rdg></app> strī valu satya sḍaṅnyan ahurip, umalapa dr̥vyanya, <app><lem type="emn">ḍaṇdan ikaṅ</lem><rdg wit ="#L">ḍaṇda Ikaṁṅ</rdg><rdg wit="#K">ḍaṇḍa hikaṁṅ</rdg><note>Reconsider this emendation: it seems <foreign>ḍaṇḍa</foreign> in this text might actually be capable of meaning <foreign>daṇḍan</foreign>.</note></app> <app><lem wit="#L">aṅalap</lem><rdg wit="#K">alap</rdg></app> de saṅ prabhu, sadaṇḍaniṅ maliṅ <app><lem wit="#L">ḍaṇḍanya</lem><rdg wit="#K">ḍaṇḍahanya</rdg><note>Do parallel passages in the text help to decide whether we expect irrealis here, or not?</note></app>.</p>
+ <p>yapvan ana <app><lem wit="#L">kadaṅnikaṅ</lem><rdg wit="#K">kaṇḍaṁnikaṁ</rdg></app> strī valu satya sḍaṅnyan<!-- change to sḍǝṅnyan  --> ahurip, umalapa dr̥vyanya, <app><lem type="emn">ḍaṇdan ikaṅ</lem><rdg wit ="#L">ḍaṇda Ikaṁṅ</rdg><rdg wit="#K">ḍaṇḍa hikaṁṅ</rdg><note>Reconsider this emendation: it seems <foreign>ḍaṇḍa</foreign> in this text might actually be capable of meaning <foreign>daṇḍan</foreign>.</note></app> <app><lem wit="#L">aṅalap</lem><rdg wit="#K">alap</rdg></app> de saṅ prabhu, sadaṇḍaniṅ maliṅ <app><lem wit="#L">ḍaṇḍanya</lem><rdg wit="#K">ḍaṇḍahanya</rdg><note>Do parallel passages in the text help to decide whether we expect irrealis here, or not?</note></app>.</p>
 </div>
  <ab type="colophon" xml:lang="san-Latn">iti strīsatyarakṣaṇa.</ab>
 </div><!-- end of chapter 2-->
  <div type="chapter" n="3">
- <head type="editorial">Account of Established Norms</head>
-</div>
+ <head type="editorial" xml:lang="eng">Account of Established Norms</head>
 <div type="dyad" n="31"><!--
 L: kunaṁ hikaṁ dr̥vya: tan ana saṁ madr̥vya:, [04-10] kəkəsana de saṁ prabhu Ikaṁ dr̥vya: maṅkana:, tluṁ tahun lavasanya, yapvan∙ tka ti[04-11]kaṁ madr̥vya:, haminta I sira vehakna hikaṁ dr̥vya de saṁ prabhu, yapvan aliva[04-12]t sakeṁ tigaṁ tahun∙, Alapə:n tika dr̥vya: de saṁ prabhu ||
 K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de saṁ§ [SH] prabhu, Ikaṁ dr̥vya maṅkana:, tluṁ tavun lavasnya, yapva:n∙ tkiṁ tikaṁ madruvya:, haminta hi sira vehakna hikaṁ druv<y>e d[6r2]e saṁ prabhu, yapvan alivat sakiṁ tigaṁ tavun∙, halapən tikaṁ druvya: de saṁ prabhu ||
@@ -1196,10 +1203,11 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
  gavayakna tan paviruddha ya lavan deśa-kula-jāti-varga de saṅ prāgvivāka.</p>
 </div>
 <ab type="colophon">iti <app><lem type="norm">maryādacarita</lem><rdg wit="#L">ma:ryyadacaritta</rdg><rdg wit="#K">ma:ryyaḍḍacarittha</rdg></app>.</ab>
-</div><!-- end of chapter 3 -->
+   </div>
+<!-- end of chapter 3 -->
 <!-- AG+TL have reached here on 2020-10-21  -->
  <div type="chapter" n="4">
- <head type="editorial">Account of (Non-payment of) Debt</head><!-- -->
+ <head type="editorial" xml:lang="eng">Account of (Non-payment of) Debt</head><!-- -->
  <div type="dyad" n="48"><!--
 	 L: kunaṅ ikaṁ vvaṁ ma[05-24]hutaṁ, tagihən∙ kḍva:kna denikaṁ mapihutaṁ, sudḍa:nya hutaṁnya ri saṁ pra:ḍa:[05-25]na, praka:śaknanya tuvi, Uvusaniṁ hutaṁ{*}nya ||
 	 K: [7v4a] kunaṁ hikaṁ§ [SH] vvaṁ mahutaṁ , tagihən∙ kḍva:kna denikaṁ mapihutaṁ, sudḍanya hutaṁnya ri saṁ pr̥daṇa , pr̥kaṣaknanya tuhvi , husaniṁ § [8r1] hutaṁnya ||
@@ -1318,7 +1326,7 @@ K: [8r1] kunaṁ hikaṁ mavihutaṁ , Upayanya kapva karaṇaniṁ pahutaṁnya
 	</lg>
 	<note type="parallels">
          <list>
-          <item sameAs="MDhŚ08.139">This stanza is found in <bibl><ptr target="bibl:Olivelle2005_01"/>Olivelle</bibl>'s constituted text not after stanza 51 but only as stanza 139. See Olivelle's comment on p. 956.</item>
+          <item sameAs="MDhŚ08.139">This stanza is found in <bibl><ptr target="bib:Olivelle2005_01"/>Olivelle</bibl>'s constituted text not after stanza 51 but only as stanza 139. See Olivelle's comment on p. 956.</item>
         </list>
 	</note>
  </quote></supplied></p>
@@ -1607,10 +1615,10 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 salviriṅ ujar tuhu<!-- L inserts "," here" --> varahakna riṅ sākṣi,
 	 varahaknaṅkv i dlāha, maṅkana <app><lem wit="#L">liṅnikaṅ</lem><rdg wit="#K">liṁṅikaṅ</rdg></app> <app><lem type="norm">pradhana</lem><rdg wit="#L">praḍaṇ<del>ḍ</del>a</rdg><rdg wit="#K">pr̥ḍaṇa</rdg></app>.</p>
  </div>
-<ab type="colophon">iti r̥ṇa<app><lem rend="hyphenfront" wit="#L">carita</lem><rdg wit="#K">-carittha</rdg></app>.</ab>
+<ab type="colophon">iti r̥ṇa<app><lem rend="hyphenfront" wit="#L">carita</lem><rdg wit="#K">carittha</rdg></app>.</ab>
 </div><!-- end of chapter 4 -->
 <div type="chapter" n="5">
-<head type="editorial">Account of / Rules on Witnesses</head>
+<head type="editorial" xml:lang="eng">Account of / Rules on Witnesses</head>
  <div type="dyad" n="65"><!--
 	 L: kunaṁ lviranikaṁ sakṣi, vvaṁ pragr̥ha:, [07-22] vaṁṅ hakveḥ hanaknya:, molaḥh apagəḥ riṁ tani, kṣatrya janma, veśya, sudra[07-23]yoni, Ika ta kabeḥ yogya sakṣya I tatkala:niṁṅ apadgaṭa: ||
 	K: [9v4] kunaṁ lviranikaṁ sakṣi , vvaṅ pr̥gr̥ha: , vvaṁ hakv[10r1]eḥ hanaknya , molah apagəḥ riṁ taniṁ, kṣatriya jadma:, <veśya,> sudr̥yoniṁ, Ika ta kabeḥ yogya sakṣya I tatkala[SH]niṁ hapadgaṭa: ||
@@ -1709,7 +1717,7 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
  </note>
  </quote></supplied></p>
  <p><app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> <app><lem type="emn">lanā huṅgu-huṅgu</lem><rdg wit="#L">lana huṅguhuṅguḥ</rdg><rdg wit="#K">lanaṁ huṅguḥhuṅguḥ</rdg></app>,
- <app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> iṅucap <app><lem wit="#L">hala</wit><rdg wit="#K">haṅala</rdg></app>,
+ <app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> iṅucap <app><lem wit="#L">hala</lem><rdg wit="#K">haṅala</rdg></app>,
  <app><lem wit="#K">maliṅ prakāśa,</lem><rdg wit="#L"/></app>
  amaṇḍagiṇa, <app><lem type="norm">vvaṅ atuha</lem><rdg wit="#L">voṁṅatuha:</rdg><rdg wit="#K">tatuha:</rdg></app>
  <app><supplied reason="omitted">dahat, rare</supplied><note>The two words supplied here are assumed to have been omitted in transmission due to eye-skip. Their restoration is supported by two other occurrences of the pair <foreign>atuha/rare</foreign> in our text, in §XX and §YY.</note></app> dahat,
@@ -1733,8 +1741,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 			 </list>
  </note>
  </quote></supplied></p>
- <p><app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> sḍǝṅ <app><lem wit="#L">alara</lem><rdg wit="#K">alira</rdg></app>,
- <app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> sḍǝṅ avuru,
+ <p><app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> sḍǝṅ<!-- change to sḍaṅ? --> <app><lem wit="#L">alara</lem><rdg wit="#K">alira</rdg></app>,
+ <app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> sḍǝṅ<!-- change to sḍaṅ? --> avuru,
  <app><lem wit="#K">buddhinya</lem><rdg wit="#L">budinya</rdg></app> <app><lem wit="#L">vǝrǝ</lem><rdg wit="#K">vuR̥</rdg></app>
  kunaṅ, edan,<!-- K: kuna:ṁ hedan·, --> tan panmu paṅanənya,
  halara <app><lem wit="#L">deniṅ ṅelnya</lem><rdg wit="#K">deniṁhaṁhelnya:</rdg></app>,
@@ -1783,8 +1791,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 			 </list>
  </note>
  </quote></supplied></p>
- <p>salviranikaṅ vvaṅ, <app><lem wit="#L">yan</lem><witDetail wit="#L" type="pc"/><rdg wit="#L #K">n</lem><witDetail wit="#L" type="ac"/><note>The agreement between the uncorrected reading in <ref target="#K"/> and the reading prior to correction in <ref target="#L"/> is remarkable.</note></app> enak vruhnya riṅ yogya,
- <app><lem wit="#L">ya yogya</lem><rdg wit="#K">yanhika:yogya:</redg></app> sākṣya,
+ <p>salviranikaṅ vvaṅ, <app><lem wit="#L">yan</lem><witDetail wit="#L" type="pc"/><rdg wit="#L #K">n</rdg><witDetail wit="#L" type="ac"/><note>The agreement between the uncorrected reading in <ref target="#K"/> and the reading prior to correction in <ref target="#L"/> is remarkable.</note></app> enak vruhnya riṅ yogya,
+ <app><lem wit="#L">ya yogya</lem><rdg wit="#K">yanhika:yogya:</rdg></app> sākṣya,
  i <app><lem wit="#L">sḍǝṅ</lem><rdg wit="#K">sḍaṁṅ</rdg></app> iṅ meh matya <app><lem type="norm">iṅ jro umah</lem><rdg wit="#L">Iñjromaḥ</rdg><rdg wit="#K">hijro Umaḥ</rdg></app>, iṅ
  <app><lem wit="#L #K">alas</lem><witDetail wit="#L" type="pc"/><rdg wit="#L">alap</rdg><witDetail wit="#L" type="ac"/></app> kunaṅ.</p>
  </div>
@@ -1803,12 +1811,104 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 			 </list>
  </note>
  </quote></supplied></p>
- <p><app><lem="#L">hikaṅ histri</lem><rdg wit="#K">kunaṁ hikaṁ stri</rdg></app> <term xml:lang="san-Latn"><app><lem type=:"norm">bālena</lem><rdg wit="#L">valena</rdg></app><rdg wit="#K">yogya sakṣi lanā</rdg></term>, rare dahat,
+ <p><app><lem wit="#L">hikaṅ histri</lem><rdg wit="#K">kunaṁ hikaṁ stri</rdg></app> <term xml:lang="san-Latn"><app><lem type="norm">bālena</lem><rdg wit="#L">valena</rdg></app><rdg wit="#K">yogya sakṣi lanā</rdg></term>, rare dahat,
  <app><lem wit="#L">tuha dahat,</lem><rdg wit="#K"/></app> <app><lem wit="#K">pinakānak riṅ</lem><rdg wit="#L">pinakanakkaḍarmma</rdg></app> dharma,
  kadaṅ varga, hulun-hulun, upah-upahan, ika ta <app><lem wit="#L">kabeh</lem><rdg wit="#K">ka</rdg></app> yogya sākṣi ri tatkālaniṅ <app><lem wit="#K">āpadgatakāla</lem><rdg wit="#L">padgata:kala:</rdg></app>.</p>
  </div>
  <!-- AG+TL have reached here on 2021-01-27 -->
  <div type="dyad" n="74"><!--
+	 L: kunaṁ yan· rare lavanyatuhva, [08-12]vvaṁ glana: prihati, kavruhana mitya hujarnya, ri sḍaṁnya pinakasakṣi, de saṁ [08-13]pragviva:ka, vaṁ tan apagəḥ hujarnya, puru-puru, tuturnya ||
+	K: kunaṁ <yan·> rare lavanyana:tuha:<hva> , vvaṁ glana: prihati , kavruhana: m<i>atya hujarnya: , <ri> sḍəṁnya pina[10v4]ka:hanasakṣi , de saṁ pragvivaka: , vvaṁ tan apagəḥ hujarnya , purupuru <,> tuturnya ||
+	 -->
+	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+	<lg>
+		<l>bālavr̥ddhāturāṇāṁ tu sākṣyeṣu vadatāṁ mr̥ṣā |</l>
+		<l>jānīyād asthirāṁ vācam utsiktamanasāṁ tathā ||</l>
+	</lg>
+	<note type="parallels">
+			 <list>
+ <item sameAs="MDhŚ08.071">It seems possible that our author read bālavr̥ddhaglānānāṁ, although it involves a ma-vipulā.</item>
+			 </list>
+ </note>
+ </quote></supplied></p>
+ <p>kunaṅ <app><lem wit="#L">yan</lem><rdg wit="#K"/></app> rare lavan <app><lem wit="#K">yan atuha</lem><rdg wit="#L">yatuhva</rdg></app>,
+ vvaṅ glāna<!-- tag with <term> if we consider that our author read the Skt. as bālavr̥ddhaglānānāṁ --> prihati, kavruhana <app><lem type="norm">mithya</lem><rdg wit="#L">mitya</rdg><rdg wit="#K">matya</rdg></app> hujarnya,
+ ri <app><lem wit="#K">sḍǝṅnya</lem><rdg wit="#L">sḍaṁnya</rdg></app> <app><lem wit="#L">pinakasākṣi</lem><rdg wit="#K">pinaka:hanasakṣi</rdg></app>, de saṅ prāgvivāka,
+ <app><lem wit="#K">vvaṅ</lem><rdg wit="#L">vaṁ</rdg></app> tan apagəh hujarnya, puru-puru<!-- comma in #L--> tuturnya.</p>
+ </div>
+ <div type="dyad" n="75"><!--
+	 L: mvaṁṅ ika:ṁ coraca:[08-14]rita, strisaṅgracaritta, va{*}kparuṣyacarita, tan pilihənhika: sa[08-15]kṣya kabeḥ ||
+	K: kunaṅ ikaṁ coracari[SH]ta , stri saṅgraha: , carittha , va:kparusya carittha , tan pilihən <hika:> sakṣya , hikata kabeḥ ||
+	 -->
+	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+	<lg>
+		<l>sāhaseṣu ca sarveṣu steyasaṁgrahaṇeṣu ca |</l>
+		<l>vāgdaṇḍayoś ca pāruṣye na parīkṣeta sākṣiṇaḥ ||</l>
+	</lg>
+	<note type="parallels">
+			 <list>
+ <item sameAs="MDhŚ08.072"/>
+			 </list>
+ </note>
+ </quote></supplied></p>
+ <p><app><lem wit="#L">mvaṅ</lem><rdg wit="#K">kunaṅ</rdg></app> ikaṅ coracarita, strīsaṅ<app><lem rend="hyphenfront" type="norm">grahacarita</lem><rdg wit="#L">saṅgracaritta</rdg><rdg wit="#K">graha:,carittha</rdg></app>, vākpāruṣyacarita,
+ tan <app><lem wit="#L">pilihən hikā sākṣya kabeh</lem><rdg wit="#K">pilihən sakṣya, hika ta kabeḥ</rdg></app>.</p>
+ </div>
+ <div type="dyad" n="76"><!--
+	 L: I sdaṁnyan pada hasakṣi hika:ṁṅ avyava:hara kaliḥ, ha[08-16]siṁṅ akveḥ sakṣinya, pituhun·, de saṁ pragviva:ka, mapayan paḍa kveḥ sa[08-17]kṣinya, hasiṁ L̥viḥ guṇaniṁ sakṣinya pituhun·, mapa yan paḍa guṇaniṁ sakṣi[08-18]nya, ha{na}siṁ sujanmaniṁ sakṣinya pituhun·, de saṁ pragvivaka ||
+	K: I sḍaṁnyan padḍa hasakṣi [11r1] hika: mavyavahara ka:la , Asaṅ(ṅ) akveḥ sakṣinya , pituhun·, de saṁ pragvivaka:, mapayan· paḍa kveḥ[SH]niṁ sakṣinya , Asi(ṁ) L̥viḥ gunaniṁ sakṣinya pituhun· , mapa yan paḍa: gunani sakṣinya , hasiṁ śujadmaniṁ sa§[11r2]kṣinya pituhun∙ <, de> saṁ pragvivaka: ||
+	 -->
+	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+	<lg>
+		<l>bahutvaṁ parigr̥hṇīyāt sākṣidvaidhe narādhipaḥ |</l>
+		<l>sameṣu tu guṇotkr̥ṣṭān guṇidvaidhe dvijottamān ||</l>
+	</lg>
+	<note type="parallels">
+			 <list>
+ <item sameAs="MDhŚ08.073">The parallel in L882 suggests our author read kulodgatān instead of dvijottamān.</item>
+			 </list>
+ </note>
+ </quote></supplied></p>
+ <p>i sḍaṅnyan paḍa hasākṣi <app><lem type="norm">hikaṅ mavyavahāra kalih</lem><rdg wit="#L">hika:ṁṅ avyava:hara kaliḥ</rdg><rdg wit="#K">hika: mavyavahara ka:la</rdg></app>, <app><lem type="norm">asiṅ</lem><rdg wit="#L">hasiṁṅ</rdg><rdg>Asaṅ<unclear>h</unclear></rdg></app> akveh
+ sākṣinya<!-- both #L ands #K have comma here --> pituhun, de saṅ prāgvivāka,
+ mapa yan paḍa <app><lem wit="#K">kvehniṅ</lem><rdg wit="#L">kveḥ</rdg></app> sākṣinya, asiṅ lǝvih guṇaniṅ sākṣinya pituhun,
+ mapa yan paḍa guṇaniṅ sākṣinya, asiṅ <app><lem wit="#L">sujanmaniṅ</lem><rdg wit="#K">śujadmaniṁ</rdg></app> sākṣinya pituhun,<!-- comma omitted in #K -->
+ <app><lem wit="#L">de</lem><rdg wit="#K"/></app> saṅ prāgvivāka.</p>
+ </div>
+ <!-- AG+TL have reached here on 2021-02-10 -->
+ <div type="dyad" n="77"><!--
+ L:
+	 K:
+	 -->
+	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+	<lg>
+		<l>... |</l>
+		<l>... ||</l>
+	</lg>
+	<note type="parallels">
+			 <list>
+ <item sameAs="MDhŚ08.XXX"/>
+			 </list>
+ </note>
+ </quote></supplied></p>
+ <p>...</p>
+ </div><div type="dyad" n="..."><!--
+ L:
+	 K:
+	 -->
+	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
+	<lg>
+		<l>... |</l>
+		<l>... ||</l>
+	</lg>
+	<note type="parallels">
+			 <list>
+ <item sameAs="MDhŚ08.XXX"/>
+			 </list>
+ </note>
+ </quote></supplied></p>
+ <p>...</p>
+ </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
@@ -2100,96 +2200,12 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
  </quote></supplied></p>
  <p>...</p>
  </div>
- <div type="dyad" n="..."><!--
- L:
-	 K:
-	 -->
-	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
-	<lg>
-		<l>... |</l>
-		<l>... ||</l>
-	</lg>
-	<note type="parallels">
-			 <list>
- <item sameAs="MDhŚ08.XXX"/>
-			 </list>
- </note>
- </quote></supplied></p>
- <p>...</p>
- </div><div type="dyad" n="..."><!--
- L:
-	 K:
-	 -->
-	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
-	<lg>
-		<l>... |</l>
-		<l>... ||</l>
-	</lg>
-	<note type="parallels">
-			 <list>
- <item sameAs="MDhŚ08.XXX"/>
-			 </list>
- </note>
- </quote></supplied></p>
- <p>...</p>
- </div><div type="dyad" n="..."><!--
- L:
-	 K:
-	 -->
-	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
-	<lg>
-		<l>... |</l>
-		<l>... ||</l>
-	</lg>
-	<note type="parallels">
-			 <list>
- <item sameAs="MDhŚ08.XXX"/>
-			 </list>
- </note>
- </quote></supplied></p>
- <p>...</p>
- </div><div type="dyad" n="..."><!--
- L:
-	 K:
-	 -->
-	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
-	<lg>
-		<l>... |</l>
-		<l>... ||</l>
-	</lg>
-	<note type="parallels">
-			 <list>
- <item sameAs="MDhŚ08.XXX"/>
-			 </list>
- </note>
- </quote></supplied></p>
- <p>...</p>
- </div><div type="dyad" n="..."><!--
- L:
-	 K:
-	 -->
-	 <p><supplied reason="subaudible"><quote type="basetext" xml:lang="san-Latn">
-	<lg>
-		<l>... |</l>
-		<l>... ||</l>
-	</lg>
-	<note type="parallels">
-			 <list>
- <item sameAs="MDhŚ08.XXX"/>
-			 </list>
- </note>
- </quote></supplied></p>
- <p>...</p>
- </div>
-</div><!-- end of div type edition -->
+</div>
+
+<!-- end of div type edition -->
+
 			<div type="translation">
 				<p n="1"><supplied reason="subaudible"><quote rend="stanza" source="MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied> Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
-			</div>
-			<div type="commentary">
-				<p>commentary</p>
-			</div>
-			<div type="bibliography">
-				<p>bibliography of previous editions, discussion, etc.</p>
 			</div>
 		</body>
 	</text>
