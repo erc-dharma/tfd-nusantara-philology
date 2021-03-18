@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksakandangkaresian">
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sasanamahaguru">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -14,19 +17,12 @@
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <authority>DHARMA <note>This project has received funding from the European Research
-                        Council (ERC) under the European Union's Horizon 2020 research and
-                        innovation programme (grant agreement no 809994).</note>
-                </authority>
-                <pubPlace>Paris (France)</pubPlace>
-                <idno type="filename">SiksaKandangKaresian-CritEd</idno>
+                <authority>DHARMA</authority>
+                <pubPlace>Paris</pubPlace>
+                <idno type="filename">SasanaMahaguru-CritEd</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
-                        <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
-                            Licence. To view a copy of the licence, visit
-                            https://creativecommons.org/licenses/by/4.0/ or send a letter to
-                            Creative Commons, 444 Castro Street, Suite 900, Mountain View,
-                            California, 94041, USA.</p>
+                        <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
                         <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
                     </licence>
                 </availability>
@@ -37,10 +33,17 @@
                     <witness xml:id="A">Lontar, Jakarta, Perpusnas, L 621</witness>
                     <witness xml:id="B">Lontar, Ciburuy hermitage, West Java, Kropak 26 peti
                         1c</witness>
-                    <witness xml:id="P">Pleyte trancsription, Plt 7 Peti 121</witness>
+                    <witness xml:id="Plt">Pleyte's trancsription, in Latin, Plt 7 Peti 121</witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This project DHARMA has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+                <p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+            </projectDesc>
+            <schemaRef type="guide" key="EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+        </encodingDesc>
         <profileDesc>
             <langUsage>
                 <language ident="osn-Latn">Old Sundanese, romanized</language>
@@ -124,14 +127,42 @@
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> sastra, nihan 
     <app><lem type="emn">lvirnya</lem><rdg wit="#A">lvarnya</rdg></app>, sasurup saṅ 
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> srivaraditya, gumǝnti saṅ hyaṅ 
-    <app><lem type="emn">ratri</lem><rdg wit="#A">ratsi</rdg></app>, trǝpti trǝptva pagave veva laksana, tatvakala batari durgi, aṅrǝguṅ ta jantra sri batara gana, sinamburatkǝn riṅ manusa madyapada,41 matǝmahan ta ya gǝbaṅ lavan lontar, tipuk divasa pupus gǝbaṅ lavan lontar, tinut pinada pada, lvane lavan davane, tinitisan asta gaṅga vira tanu,</p>
+    <app><lem type="emn">ratri</lem><rdg wit="#A">ratsi</rdg></app>, trǝpti trǝptva pagave veva<!-- vival? --> laksana, tatvakala batari durgi, 
+    <app><lem type="norm">aṅrǝguṅ</lem><rdg wit="#A">AR̥gu</rdg></app> ta jantra 
+    <app><lem type="norm">sri</lem><rdg wit="#A">sra</rdg></app> batara gana, sinamburatakǝn ri manusa madyapada, matǝmahan ta ya gǝbaṅ lavan 
+    <app><lem type="norm">lontar</lem><rdg wit="#A">lvatar</rdg></app>, tipuk divasa pupus gǝbaṅ lavan 
+    <app><lem type="norm">lontar</lem><rdg wit="#A">lvatar</rdg></app>, tinut pinada pada, lvane lavan davane, tinitisan asta gaṅga vira tanu,</p>
+
 <p>apa ta sinaṅguh 
-    <app><lem type="conj">asta</lem><rdg wit="#A"/></app> gaṅga vira tanu, asta ṅaraniṅ taṅan, gaṅga ṅaraniṅ bañu, vira ta ṅaraniṅ panurat lavan panuli, tanu ṅaraniṅ maṅsi, tinulis de saṅ pandita, pinaca de saṅ apuṅguṅ /6v/ tambah uni unine, vinalǝran de saṅ kavi,</p> 
-<p>ṅuniveh cinaritakǝn ta dasapurva, oṅ sarasvati tarajñana cintamanik, kalunaṅ mataniṅ bayu, pamutyan batara guru, batara saṅ sida panditatita ri lǝmah, saṅ sida panditatita riṅ laṅit, kusika, garga, mestri, purusya, patañjala, mvaṅ bayu sabda hdap, ṅuniveh ikaṅ saṅ manvan, apan saṅ hyaṅ ituṅ ika,</p>
-<p>nihan sinaṅguh dasapurvva ṅaranya, dasa ta ma nu sapuluh, purva ma na puhun, kayatnakǝn saṅ sevaka darma, liṅ saṅ pandita.</p>
-<p>rǝp dǝm ka nu vahakǝn, samijilnikaṅ carita, humǝnǝṅ na rasa saṅ hyaṅ tuṅgal, na naha nu dimantraan eta, ah kena karah aiṅ ñaho dek mijilkǝn aksara,</p> 
-<p>sastra muṅgu di na omas, sastra muṅgu riṅ salaka, sastra muṅgu riṅ tambaga, sastra muṅ/7r/gu riṅ cundiga, sastra muṅgu riṅ bǝsi, sastra muṅgu riṅ batu, sastra muṅgu riṅ paduṅ, sastra muṅgu riṅ pǝjva, sastra muṅgu riṅ taal, sastra muṅgu riṅ gǝbaṅ,</p>
-<p>sastra muṅgu riṅ omas, diṅaranan prǝmita mirah kañcana, hade rua hade gǝsanna, kena sui ditǝndǝnan diña, sugan mo reya na ñaho, ña mana diturunkǝn dǝi, sastra muṅgu riṅ salaka, diṅaranan ta ya kanaka, diturunkǝn dǝi, sastra muṅgu di na tambaga, diṅaranan ta ya paripih, diturunkǝn dǝi, sastra muṅgu riṅ cundiga, diṅaranan ta ya prǝka, diturunkǝn dǝi, sastra muṅgu riṅ bǝsi, diṅaranan ta ya gvatraka, diturunkǝn dǝi, sastra muṅgu riṅ batu, diṅaranan ta ya tras pati, diturunkǝn dǝi, sastra muṅgu riṅ paduṅ, diṅaranan ta ya salǝ, diturunkǝn dǝi, sastra muṅgu riṅ pǝjva, diṅarana/7v/n ta ya lǝpihan, sui ditǝndǝn diña bisina bǝki vahya, diturunkǝn dǝi, sastra muṅgu riṅ taal, diṅaranan ta ya carik, aya eta mǝnaṅ utama, kenana lain pikabuyutanǝn, diturunkǝn dǝi, sastra muṅgu riṅ gǝbaṅ, diṅaranan ta ya cǝmǝṅ, ini ma iña pikabuyutanǝn, ṅaran saṅ hyaṅ ripta, ya sunya, ya lǝpihan, ya mastra, ya lepa karana, iya pustaka katuṅgalannana, Nihan sinaṅguh dasavrǝdi ṅaranya</p>
+    <app><lem type="conj">asta</lem><rdg wit="#A"/></app> gaṅga vira tanu, asta ṅaraniṅ taṅan, gaṅga ṅaraniṅ bañu, vira ta ṅaraniṅ 
+    <app><lem type="emn">panurat</lem><rdg wit="#A">parurat</rdg></app> lavan panuli, tanu ṅaraniṅ maṅsi, tinulis de saṅ pandita, pinaca de saṅ apuṅguṅ <pb edRef="#A" n="4r"/> tambah uni unine, vinalǝran de saṅ kavi,</p> 
+                   
+<p>ṅuniveh cinaritakǝn ta dasapurva, oṅ sarasvati tarajñana cintamanik, kalunaṅ mataniṅ bayu, pamutyan batara guru, batara saṅ sida 
+    <app><lem type="emn">panditatita</lem><rdg wit="#A">pantatita</rdg></app> ri lǝmah, saṅ sida 
+    <app><lem type="emn">panditatita</lem><rdg wit="#A">pandatatita</rdg></app> riṅ laṅit, kusika, garga, mestri, purusya, patañjala, mvaṅ bayu sabda hdap, ṅuniveh ikaṅ saṅ manon, apan saṅ hyaṅ ituṅ ika,</p>
+                    
+<p>nihan sinaṅguh dasapurvva ṅaranya, dasa ta ma nu sapuluh, purva ma na puhun, kayatnakǝn saṅ sevaka darma, liṅ saṅ 
+    <app><lem type="emn">pandita</lem><rdg wit="#A">pandata</rdg></app>.</p>
+
+<p>rǝp dǝm 
+    <app><lem type="emn">anuvartakǝn</lem><rdg wit="#A">anuvaḥtakǝn·</rdg></app>, 
+    <app><lem type="norm">samijilnikaṅ</lem><rdg wit="#A">samjəl·nikaṁ</rdg></app> carita, humǝnǝṅ na rasa saṅ 
+    <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> tuṅgal, na naha nu dimantraan eta, ah kena karah 
+    <app><lem type="norm">aiṅ</lem><rdg wit="#A">AI</rdg></app> ñaho dek mijilkǝn aksara,</p> 
+                   
+<p>sastra muṅgu di na omas, sastra 
+    <app><lem type="norm">muṅgu</lem><rdg wit="#A">mugu</rdg></app> riṅ salaka, sastra 
+    <app><lem type="norm">muṅgu</lem><rdg wit="#A">mugu</rdg></app> riṅ 
+    <app><lem type="norm">tambaga</lem><rdg wit="#A"></rdg></app>, sastra 
+    <app><lem type="norm">muṅ<pb edRef="#A" n="4v"/>gu</lem><rdg wit="#A"></rdg></app> riṅ cudiga, sastra 
+    <app><lem type="norm">muṅgu</lem><rdg wit="#A">mugu</rdg></app> riṅ bǝsi, sastra 
+    <app><lem type="norm">muṅgu</lem><rdg wit="#A">mugu</rdg></app> riṅ batu, sastra 
+    <app><lem type="norm">muṅgu</lem><rdg wit="#A">mugu</rdg></app> riṅ paduṅ, sastra 
+    <app><lem type="norm">muṅgu</lem><rdg wit="#A">mugu</rdg></app> riṅ pǝjva, sastra muṅgu riṅ taal, sastra 
+    <app><lem type="norm">muṅgu</lem><rdg wit="#A">mugu</rdg></app> riṅ gǝbaṅ,</p>
+         <!-- reach here 16 march 2021  -->    
+                    
+<p>sastra muṅgu riṅ omas, diṅaranan prǝmita mirah kañcana, hade rua hade gǝsanna, kena sui ditǝndǝnan diña, sugan mo reya na ñaho, ña mana diturunkǝn dǝi, sastra muṅgu riṅ salaka, diṅaranan ta ya kanaka, diturunkǝn dǝi, sastra muṅgu di na tambaga, diṅaranan ta ya paripih, diturunkǝn dǝi, sastra muṅgu riṅ cundiga, diṅaranan ta ya prǝka, diturunkǝn dǝi, sastra muṅgu riṅ bǝsi, diṅaranan ta ya gvatraka, diturunkǝn dǝi, sastra muṅgu riṅ batu, diṅaranan ta ya tras pati, diturunkǝn dǝi, sastra muṅgu riṅ paduṅ, diṅaranan ta ya salǝ, diturunkǝn dǝi, sastra muṅgu riṅ pǝjva, diṅarana/7v/n ta ya lǝpihan, sui ditǝndǝn diña bisina bǝki vahya, diturunkǝn dǝi, sastra muṅgu riṅ taal, diṅaranan ta ya carik, aya eta mǝnaṅ utama, kenana lain pikabuyutanǝn, diturunkǝn dǝi, sastra muṅgu riṅ gǝbaṅ, diṅaranan ta ya cǝmǝṅ, ini ma iña pikabuyutanǝn, ṅaran saṅ hyaṅ ripta, ya sunya, ya lǝpihan, ya mastra, ya lepa karana, iya pustaka katuṅgalannana, nihan sinaṅguh dasavrǝdi ṅaranya</p>
                 </div>
 
 <div type="chapter" n="4">
@@ -139,7 +170,7 @@
 <p>carekna saṅ hyaṅ tuṅgal, na naha piaṅǝnǝnana, saṅ hyaṅ pustaka ini, kena karah aiṅ dek ṅabijilkǝn carita, mǝtuna saṅ hyaṅ siksa guru, ti saṅ hyaṅ siksa, ndǝh nihan saṅ hyaṅ trikaya mandala parisuda ṅaranya,</p> 
 <p>ini ma na timpalkǝnǝn, mulah dek mitǝmǝn iña saṅ sevaka darma, na puhun avah-avuh, taṅkalniṅ /14v/ papa kalesa, vvitniṅ kaliyuga, hetuniṅ papaniṅ naraka, ṅaranna, trimalaguna</p> 
 <p>nihan lvirnya, ika sinaṅguh trimala ṅaranya, kadyaṅganiṅ gaṅsa lavan malam, tambaga lavan timah, apa ta kaṅkǝn tambaga lavan timahnikaṅ tridusta, sabda tan yukti, ulah tan yukti, ambǝk tan yukti, ginavayakǝn sabda mahala, ulah mahala, ambǝk mahala,</p> 
-<p>ini byaktana ulah mahala, notok, mokol, nǝvǝk, mǝrǝp, ṅadǝdǝl, no(ñ)jok, ñaketro(k), nampar, nampelaṅ, sakvehniṅ lǝkas taṅan, ya ulah mahala, ṅaranya,</p>
+<p>ini byaktana ulah mahala, notok, mokol, nǝvǝk, mǝrǝp, ṅadǝdǝl, noñjok, ñaketrok, nampar, nampelaṅ, sakvehniṅ lǝkas taṅan, ya ulah mahala, ṅaranya,</p>
 <p>sabda mahala ṅaranna, toroṅ gasoṅ tan pakarana, campǝlak sabda, ñumpah, madahkǝn, ṅadudu, nǝluh, ṅupat guru, sakvehniṅ sabda tan yukti, ya sabda mahala ṅaranya, </p>
 <p>ambǝk mahala ma ṅaranya, kira-kira, budi-budi, ṅajǝrum, ṅagunaan, mijahǝt/14r/an, ṅanǝluh, ṅaracun, hiri payogya, aṅgǝs ma nu mupu, maliṅ, papañjiṅan, medar, ṅahadaṅ, siṅ savatǝk tan yogya, dipitvah dipihǝdap, ya eta ambǝk mahala, ya ta sinaṅguh trimala ṅaranya,</p>
 <p>nihan sinaṅguh trimala visesa ṅaranya, hana ya di saṅ prabu, rama, rǝsi, mvaṅ tarahan, ini byaktana, aya ta kajǝǝṅ nu duka, dijual, dihulunkǝn, dirampas, dipaehan, ya ta sinaṅguh pañca kapataka ṅaranya, sinaṅguh trimala visesa ṅaranya, liṅ saṅ pandita,</p>
@@ -152,8 +183,8 @@
     <foreign>vigatah kǝlesa seman, vigatah valadukǝn, kurvanti kusala mahat</foreign>
     </ab>
     
-<p>kavǝniṅ ata kita,sumidakǝn ta dasaka/13v/lesa, yan dataṅ ri kita, nya dosa, moha, loba, mǝta, macarya, ambimana, murka, kuhaka, sambimana, prǝlapa, pesuna,</p> 
-<p>ka, dosa ṅaranya, puji-puji suka, puji vihikan, puji-puji parya, ya ta sinaṅguh dosa, ṅa, moha ṅaranya, tan sih ri padanya janma, loba ṅaranya, bǝki ñatu, bǝki ṅinum, bogoh hees, hantǝ dek mitinǝṅkǝn pirampesǝn, ya ta sinaṅguh loba ṅaranya, reya nu dipitinǝṅ, dipituah, dipikarma, iya loba ṅaranya, mǝta ṅaranya, teka ivuh ku kabǝṅharanana, ivuh kavijaksanaanana, ivuh ku kagunaanna, ivuh ku kañahona, ya ta sinaṅguh mǝta ṅaranya, macarya timburuan manon rahayu, ñǝǝṅ nu rampes timburu, ñǝǝṅ nu suka timburu, ya ta macarya ṅaranya, ambimana ṅaranya, hamo dek ñik/13r/sa mitutur, ya ambimana ṅaranya, murka ṅaranya, hantǝ dek nututurkǝn induṅ bapa, paṅguruan, ya ta sinaṅguh murka ṅaranya, kuhaka ṅaranya, añǝguh pagamǝl nu reya, sambimana prǝlapa ma ṅamaṅke-maṅke dina boganiṅ ṅaboga, di na bǝṅharniṅ kabǝṅharan, ya ta sambimana prǝlapa ṅaranya, pesuna ṅaranya, bogoh timburuan, bogoh mijǝruman, aṅadu-ṅadu, ya ta sinaṅguh dasakalesa ṅaranya.</p>
+<p>ka, vǝnaṅa ta kita, sumidakǝn ta dasaka/13v/lesa, yan dataṅ ri kita, nya dosa, moha, loba, mǝta, macarya, ambimana, murka, kuhaka, sambimana, prǝlapa, pesuna,</p> 
+<p>ka, dosa ṅaranya, puji-puji suka, puji vihikan, puji-puji parya, ya ta sinaṅguh dosa, ṅa, moha ṅaranya, tan sih ri padanya janma, loba ṅaranya, bǝki ñatu, bǝki ṅinum, bogoh hees, hantǝ dek mitinǝṅkǝn pirampesǝn, ya ta sinaṅguh loba ṅaranya, reya nu dipitinǝṅ, dipituah, dipikarma, iya loba ṅaranya, mǝta ṅaranya, teka ivuh ku kabǝṅharanana, ivuh kavijaksanaanana, ivuh ku kagunaanna, ivuh ku kañahona, ya ta sinaṅguh mǝta ṅaranya, macarya timburuan manon rahayu, ñǝǝṅ nu rampes timburu, ñǝǝṅ nu suka timburu, ya ta macarya ṅaranya, ambimana ṅaranya, hamo dek ñik/13r/sa mitutur, ya ambimana ṅaranya, murka ṅaranya, hantǝ dek nututurkǝn induṅ bapa, paṅguruan, ya ta sinaṅguh murka ṅaranya, kuhaka ṅaranya, añǝguh pagamǝl nu reya, sambimana prǝlapa ma ṅamaṅke-maṅke di na boganiṅ ṅaboga, di na bǝṅharniṅ kabǝṅharan, ya ta sambimana prǝlapa ṅaranya, pesuna ṅaranya, bogoh timburuan, bogoh mijǝruman, aṅadu-ṅadu, ya ta sinaṅguh dasakalesa ṅaranya.</p>
 </div>
     
 <div type="chapter" n="6">
@@ -206,7 +237,7 @@ apramādaś ca pañca vaite niyamāḥ parikīrtitāḥ,
 
 /siloka 4/
 </ab>    
-<p>ka, ālekhyam ṅaranya, hantǝ ṅǝnah uraṅ ñoker tanǝh, nulis-nulis paduṅ, paṅluṅguhan sare di harǝpǝn saṅ guru, hasitam ṅaranya, hantǝ ṅǝnah sumǝri sumarǝmbah di harǝpǝn saṅ guru sañarah ñyar pikaulinanǝn di saṅ pandita, di nu reya, gītam ṅaranya, hantǝ ṅiduṅ ṅavih, humalǝaṅ, maṅka ṅuni mikonokǝn maneh bisa, prǝña vijaksana, di nu reya, jr̥mbhanam ṅaranya, hantǝ ṅǝnah mikonokǝn maneh hanaaṅ poño, aṅgǝs ma vǝrǝ sǝbǝh, di harǝpǝn saṅ pandita, maṅ/9r/kaṅuni di nu reya, kaṇṭhāravāñ ṅaranya, hantǝ ṅǝnah uraṅ ṅogan humandǝru, maṅkaṅuni kumuliat, di harǝpǝn nu reya, śuddham ṅaranya, hantǝ ṅǝnah hura-hura, bobohoṅan, na gǝiṅ lemek, phalarahasyam ṅaranya, hantǝ ṅǝnah bogoh mupulihkǝn bobogaan sakalih, na karotu gurumukhe ṅaranya, hantǝ ṅǝnah rumagodeh, na gǝiṅ lemek, di harǝpǝn saṅ pandita, nihan sinaṅguh catur-upaya ṅaranya, kayatna-yatna saṅ sevaka darma, hayva pinintuhu,</p> 
+<p>ka, ālekhyam ṅaranya, hantǝ ṅǝnah uraṅ ñoker tanǝh, nulis-nulis paduṅ, paṅluṅguhan sare di harǝpǝn saṅ guru, hasitam ṅaranya, hantǝ ṅǝnah sumǝri sumarǝmbah di harǝpǝn saṅ guru sañarah ñyar pikaulinanǝn di saṅ pandita, di nu reya, gītam ṅaranya, hantǝ ṅiduṅ ṅavih, humalǝaṅ, maṅkaṅuni mikonokǝn maneh bisa, prǝña vijaksana, di nu reya, jr̥mbhanam ṅaranya, hantǝ ṅǝnah mikonokǝn maneh hanaaṅ poño, aṅgǝs ma vǝrǝ sǝbǝh, di harǝpǝn saṅ pandita, maṅ/9r/kaṅuni di nu reya, kaṇṭhāravāñ ṅaranya, hantǝ ṅǝnah uraṅ ṅogan humandǝru, maṅkaṅuni kumuliat, di harǝpǝn nu reya, śuddham ṅaranya, hantǝ ṅǝnah hura-hura, bobohoṅan, na gǝiṅ lemek, phalarahasyam ṅaranya, hantǝ ṅǝnah bogoh mupulihkǝn bobogaan sakalih, na karotu gurumukhe ṅaranya, hantǝ ṅǝnah rumagodeh, na gǝiṅ lemek, di harǝpǝn saṅ pandita, nihan sinaṅguh catur-upaya ṅaranya, kayatna-yatna saṅ sevaka darma, hayva pinintuhu,</p> 
 </div>
 
 
@@ -223,13 +254,13 @@ apramādaś ca pañca vaite niyamāḥ parikīrtitāḥ,
 <p>suravile ṅaranya, ñapirakǝn maṅuni lemek matiṅtim, hantǝ make paṅabakti, ka saṅ pandita, dǝṅ hantǝ ṅǝnah vǝdak-vǝdakan, kaambǝ ku nu reya,</p> 
 <p>asvagatah kunaṅ panatarga ṅaranya, hantǝ ṅǝnah ñusutkǝn huntu, di masa gereṅ di harǝpǝn nu reya,</p>    
 <p>sudyacava ma ṅaranya, hantǝ ṅǝnah uraṅ niru-niru kaulinan hǝmpul murus,</p>
-<p>praya saṅ magamata ma, hantǝ ṅǝnah uraṅ padǝlǝ-dǝlǝ dǝṅ saṅ hyaṅ kalih, maṅkaṅuni padu na muka, padǝlǝ-dǝlǝ bǝṅǝt, ka nu karolvat, maṅkaṅuni mupulihkǝn maneh ñatu ṅinum di harǝpǝn nu reya,</p> 
+<p>praya saṅ magamata ma, hantǝ ṅǝnah uraṅ padǝlǝ-dǝlǝ dǝṅ saṅ hyaṅ kalih, maṅkaṅuni padu na muka, padǝlǝ-dǝlǝ bǝṅǝt, ka nu karolot, maṅkaṅuni mupulihkǝn maneh ñatu ṅinum di harǝpǝn nu reya,</p> 
 <p>cevamasvateh ṅaranya, teka salah dipihidǝp dipiaṅǝn-aṅǝn, ka pada janma,</p> 
 <p>cevamibuh ṅaranya, gvace rua, gvace tuah, hamva nurut pamagaha/8r/n,</p> 
 <p>karmavidu ṅaranya, kǝsit tuṅi hasǝm baruṅut, ruṅsaṅ-ruṅsiṅ na pibudiǝn janma,</p>
 <p>cevayude ṅaranya, goce rua, goce tuahna, goce pupuna, sinaṅguh kanistraniṅ janma, cevayude ṅaranya, suraṅ pragojak, bogoh ñocoo sabda pariambul ka sakalih,</p> 
-<p>danakalǝm ta ma ṅara(n)na, hantǝ de(k) haat karuña, heman pada163 janma, na aṅǝn-aṅǝn gǝde kacǝcǝb,</p>
-<p>suprigrǝhasta164 ṅaranya, gǝde nu dipikahayaṅ, dipilemek aṅǝ(n)-aṅǝn, dibaan lemek dimaṅke ma(ṅ)ke, gǝs ma hantǝ kasvaraṅ. Nihan sinaṅga pañcabyakta ṅaranya, hayu(a) pinintuhu ika (5).</p> 
+<p>danakalǝm ta ma ṅaranna, hantǝ dek haat karuña, heman pada janma, na aṅǝn-aṅǝn gǝde kacǝcǝb,</p>
+<p>suprigrǝhasta ṅaranya, gǝde nu dipikahayaṅ, dipilemek aṅǝn-aṅǝn, dibaan lemek dimaṅke maṅke, gǝs ma hantǝ kasvaraṅ, nihan sinaṅga pañcabyakta ṅaranya, hayu(a) pinintuhu ika (5).</p> 
 </div>
 
 <div type="chapter" n="11">
@@ -241,9 +272,7 @@ apramādaś ca pañca vaite niyamāḥ parikīrtitāḥ,
     /sloka 6/
 </ab>
  
-<p>ka, gurutayǝm ṅaranya, hantǝ ṅǝnah gǝra-gǝra lemek matiṅtim di harǝpǝn saṅ pandita, prǝvaksya ma ṅaranya, hantǝ ṅǝnah micarek karampesan di harǝpǝn saṅ pandita, sañarah  di nu reya, maṅuni induṅ bapa paṅguruan. Mahayanǝm ṅaranya, teka lipi mitinǝṅkǝn maneh,</p>
-<p>hyaṅ tristranata ṅaranya, hantǝ ṅǝnah uraṅ tatap laṅguk ka nu karolot, tidur bage hinasah besah ṅaranya, teka lipi-lupu di nu harǝp hantǝ kapitinǝṅ na pirampesǝn, griya paprǝrna miyaset ṅaranya, ṅamaṅke-maṅke dek bǝṅhar vaya-vaya, dibvaga hulun kuriṅ kaval avaṅnavaṅna, gǝs ma hantǝ kasoraṅ, ya griya paprǝrna miyaset ṅaranya,</p> 
-<p>nihan sinaṅguh catur paṅabakti ṅaranya, liṅ saṅ pandita,</p>
+<p>ka, gurutayǝm ṅaranya, hantǝ ṅǝnah gǝra-gǝra lemek matiṅtim di harǝpǝn saṅ pandita, prǝvaksya ma ṅaranya, hantǝ ṅǝnah micarek karampesan di harǝpǝn saṅ pandita, sañarah  di nu reya, maṅuni induṅ bapa paṅguruan. Mahayanǝm ṅaranya, teka lipi mitinǝṅkǝn maneh, hyaṅ tristranata ṅaranya, hantǝ ṅǝnah uraṅ tatap laṅguk ka nu karolot, tidur bage hinasah besah ṅaranya, teka lipi-lupu di nu harǝp hantǝ kapitinǝṅ na pirampesǝn, griya paprǝrna miyaset ṅaranya, ṅamaṅke-maṅke dek bǝṅhar vaya-vaya, dibvaga hulun kuriṅ kaval avaṅnavaṅna, gǝs ma hantǝ kasoraṅ, ya griya paprǝrna miyaset ṅaranya, nihan sinaṅguh caturpaṅabakti ṅaranya, liṅ saṅ pandita,</p>
 </div>
                 
 <div type="chapter" n="12">
@@ -263,12 +292,12 @@ apramādaś ca pañca vaite niyamāḥ parikīrtitāḥ,
 <head type="editorial">Three demons (<foreign>tributa</foreign>)</head>
 
 <p>nihan sinaṅguh tributa ṅaranya, byaktanya nihan, hala tumimu halanya, vilut tumimu vilutnya, duka tumimu dukanya,</p> 
-<p>ka, hala ṅaranya, goce pisampakǝnana, ja goce nu dipiguna, vilut ṅaranya, belvat pisampakǝnnana, ja belvat nu dipiguna, duka ṅaraniṅ risi, risi pisampakǝnana, ja risi nu dipiguna, nihan sinaṅguh tributa ṅaranya, kayatnakǝn saṅ sevaka darma, hayva pinintuhu ika,</p>
+<p>ka, hala ṅaranya, goce pisampakǝnana, ja goce nu dipiguna, vilut ṅaranya, belot pisampakǝnnana, ja belot nu dipiguna, duka ṅaraniṅ risi, risi pisampakǝnana, ja risi nu dipiguna, nihan sinaṅguh tributa ṅaranya, kayatnakǝn saṅ sevaka darma, hayva pinintuhu ika,</p>
 
 </div>
                 
 <div type="chapter" n="14">
-<head type="editorial">Four facifier (<foreign>caturpasanta</foreign>)</head>
+<head type="editorial">Four facifiers (<foreign>caturpasanta</foreign>)</head>
 <p>nihan sinaṅguh caturpasanta ṅaranya, byaktanya nihan, cakrajala kuna, cakrajala paksa, cakra sabirana, cakra taraṅga hahu,/20r/ </p> 
 <p>cakrajala kuna ma ṅaranya matapoeh, pamahalana ka sarira, lamur, pecak, bilas sakit mata, buta loroṅǝn, mata kotokǝn, hulag, cakrajala paksa ma cai, mahalana ka sarira, gumigil panas tiris, cakra sabirana ma ṅaranna aṅin, mahalana ma ka sarira, beaṅ, galigata, pipisisan, siṅ savatǝk kasakit di kulit, cakra taraṅga bahu ma gunuṅ ṅaranna, mahalana ka sarira ma, riǝt hulu, ñǝri bǝtǝṅ, mǝdu, kavayaan, sakvaeh sakit di jǝro bǝtǝṅ, nihan sinaṅguh caturpasanta ṅaranya, kayatnakǝn saṅ sevaka darma, hayva ri rahasya,</p>
 
@@ -281,7 +310,7 @@ apramādaś ca pañca vaite niyamāḥ parikīrtitāḥ,
 <p>duka saṅka riṅ devata ma ṅaranya, tajam bǝtǝṅ, sakit nirisan, riǝt hulu, sakit mata, jaroṅǝn sumbilaṅǝn, buyan, mǝdu, panas tiris, ya duka saṅka riṅ devata ṅaranya,</p>
 <p>duka saṅka riṅ sarira ma, pecak, beṅo, sombeṅ, buta tuli, beaṅ, rumpuṅ, tugǝl, ya duka saṅka riṅ sarira ṅaranya,</p> 
 <p>duka kunaṅ tribvana ma, nu savatǝk kapataka di bvana, ini byaktana ma, nu kǝna ku na kapapaan, di saṅ prǝbu, rama, rǝsi, disi, mvaṅ tarahan, jadi kala kaliyuga, ika vvit papa kalesa, /19r/ jadina saṅ hyaṅ kala, asu si jamproṅ si karavǝlaṅ, jadi kavah papasaṅan, vǝlah taji sula vǝsi, di lambur sipatuduhan, cukaṅ cuǝt, kalapa bajra, latak sibalagada ma, cataṅ situmaṅgǝhan, batu kacakup, rayaṅ-rayaṅ si prǝca kala si prǝca kali, si beda bañcana, si reka guna, saṅ vǝsi guna, saṅ pataka guna, saṅ sipta guna, saṅ kumara,</p> 
-<p>ka, ini byaktanya ma, samya guna ma, na panday gǝlaṅ, saṅ sipta guna ma, panday omas, saṅ vǝsi guna ma, panday bǝsi, saṅ pataka guna ma, pamadǝk, saṅ mula guna ma, pahuma, saṅ sipta guna ma, paṅudahagian, saṅ reka guna ma, na hǝmpul, saṅ kumara guna ma, memen, saṅ hyaṅ kala ma, patik haji; si jampoṅ si karavilaṅ ma, barat katiga, ta rayaṅ-rayaṅ ma, nu tan paṅaran, beda bañcana ma, pa/18v/dagaṅan, tǝgal malva ma, na balǝbuh; salaksi loñana ma, na paṅgǝrǝk, labuhan bulan ma, na prǝjala, vvaṅ papa ma nu bobotoh, vvaṅ kalesa ma na dasa, si manarema, calagara, si manarek ma, na paṅuraṅ, cataṅ si tumaṅgǝhan ma, na parada, lambur sipatuduhan ma, na kasasa, cukaṅ cuǝt ma, na pamǝǝṅ, kalapa bajra ma na pañadap, latak sibalagada ma, na pañavah, vǝlah taji ma, na paṅalas, batu kacakup ma, na paṅavihan, na kavah ma inyana pamǝñǝp, na seya ma na paṅejva, suluhna ma na pacitu, sǝnǝna ma na tuṅgu dapur, paṅecek ma na harǝp catra, cai na ma nu purah ṅala pimandiǝn, ruhak na pañapu, ǝsina ma pakvatvakan, paceleṅan, na paṅitikan, ǝnu merean ma paṅaṅvan, nuṅguan situ, nuṅguan taman, sakoeh /18r/ nuṅguan cocooan, kapihulun hiyaṅ, kapihalaṅ, dipisuku dipitaṅan, mo vasa di huripnya, di bǝnaṅna, ya duka kunaṅ tribvana, ṅaranya</p> 
+<p>ka, ini byaktanya ma, samya guna ma, na panday gǝlaṅ, saṅ sipta guna ma, panday omas, saṅ vǝsi guna ma, panday bǝsi, saṅ pataka guna ma, pamadǝk, saṅ mula guna ma, pahuma, saṅ sipta guna ma, paṅudahagian, saṅ reka guna ma, na hǝmpul, saṅ kumara guna ma, memen, saṅ hyaṅ kala ma, patik haji; si jampoṅ si karavilaṅ ma, barat katiga, ta rayaṅ-rayaṅ ma, nu tan paṅaran, beda bañcana ma, pa/18v/dagaṅan, tǝgal malva ma, na balǝbuh; salaksi loñana ma, na paṅgǝrǝk, labuhan bulan ma, na prǝjala, vvaṅ papa ma nu bobotoh, vvaṅ kalesa ma na dasa, si manarema, calagara, si manarek ma, na paṅuraṅ, cataṅ si tumaṅgǝhan ma, na parada, lambur sipatuduhan ma, na kasasa, cukaṅ cuǝt ma, na pamǝǝṅ, kalapa bajra ma na pañadap, latak sibalagada ma, na pañavah, vǝlah taji ma, na paṅalas, batu kacakup ma, na paṅavihan, na kavah ma inyana pamǝñǝp, na seya ma na paṅejo, suluhna ma na pacitu, sǝnǝna ma na tuṅgu dapur, paṅecek ma na harǝp catra, cai na ma nu purah ṅala pimandiǝn, ruhak na pañapu, ǝsina ma pakvatvakan, paceleṅan, na paṅitikan, ǝnu merean ma paṅaṅvan, nuṅguan situ, nuṅguan taman, sakoeh /18r/ nuṅguan cocooan, kapihulun hiyaṅ, kapihalaṅ, dipisuku dipitaṅan, mo vasa di huripnya, di bǝnaṅna, ya duka kunaṅ tribvana, ṅaranya</p> 
 <p>ya ta duka kunaṅ tribvanaloka ṅaranya, kahuruan dayǝh, buruṅ tahun, eleh ku sasalad, larukaṅkaṅ salah masa, sarbapala tan pavvah, sarba satva añarak, ya ta duka kunaṅ tribvanaloka ṅaranya, ma, ṅya buku, u, sa, a, nihan sinaṅguh pañcakapataka ṅaranya, liṅ saṅ pandita,</p> 
 
 </div>
@@ -309,7 +338,7 @@ apramādaś ca pañca vaite niyamāḥ parikīrtitāḥ,
 <div type="chapter" n="19">
 <head type="editorial">Four practices (<foreign>caturkalpa</foreign>)</head>
 <p>nihan ta kalǝpasǝnana, ṅa, hana ta saṅ hyaṅ nirmala caturkalpa ṅaranya, ini byaktana, upamana janma tani, purna, svadanta, lastare,</p> 
-<p>tani ma ṅaranya, paka dibuat ñadap masaṅ ñavara, cocooan, pǝpǝlakan, ya tani ṅaranya, purna ṅaranya, hantǝ diboga kahivaṅan, kativasan, hantǝ ditvah cara purih, ya purna ṅaranna, sudanta ma ṅaranna, hantǝ katǝbus, kapihalaṅ tǝguh utaṅ, ya sudanta, ṅa, lastare ma ṅaranna, janma banua, hantǝ dibvaga kasakit, hantǝ dibvaga kabeṅkeṅ, ya lastare ṅaranya, nihan sinaṅguh caturkalpa ṅaranya, liṅ saṅ pandita, saki/16v/tu na keñcakǝnǝn saṅ sevaka darma,</p> 
+<p>tani ma ṅaranya, paka dibuat ñadap masaṅ ñavara, cocooan, pǝpǝlakan, ya tani ṅaranya, purna ṅaranya, hantǝ diboga kahivaṅan, kativasan, hantǝ ditvah cara purih, ya purna ṅaranna, sudanta ma ṅaranna, hantǝ katǝbus, kapihalaṅ tǝguh utaṅ, ya sudanta, ṅa, lastare ma ṅaranna, janma banua, hantǝ diboga kasakit, hantǝ diboga kabeṅkeṅ, ya lastare ṅaranya, nihan sinaṅguh caturkalpa ṅaranya, liṅ saṅ pandita, saki/16v/tu na keñcakǝnǝn saṅ sevaka darma,</p> 
 
 </div>
                 
@@ -579,7 +608,7 @@ kuruvati kusalamahat,
 </div>
                 
 <div type="chapter" n="44">
-<head type="editorial">Teacher's secret<foreign>rahasya pandita</foreign>)</head>
+<head type="editorial">Teacher's secret (<foreign>rahasya pandita</foreign>)</head>
 <p>nihan sinaṅguh rahasya pandita ṅaranya, apa ta kavistananya, nihan hana upadyanta, kady aṅganiṅ saṅ manvan, ri huvusnikaṅ hayunika saṅ hyaṅ prǝmana,</p> 
 <p>aṅlǝpasnya sakeṅ bvana, luputnya sakeṅ sarira, makavak laṅgǝṅ tutur tǝlǝṅniṅ sandi ajñana, apa ta laṅgǝṅniṅ tutur tǝlǝṅniṅ sandi ajñana,</p> 
 <p>nihan artanya, kastre-kastre, ya bahǝni, suksǝmatva nva panabyate,</p> 
