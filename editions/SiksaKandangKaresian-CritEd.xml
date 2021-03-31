@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksakandangkaresian">
         <teiHeader>
                 <fileDesc>
@@ -1027,11 +1030,9 @@ kayatnakna voṅ sakabeh, nihan
                             <app><lem wit="#A #B">ku</lem><rdg wit="#EdASD">nu</rdg></app>
                             <app><lem wit="#A #EdASD">bәnaṅ</lem><rdg wit="#B">bǝnaṁna</rdg></app> milabuh siloka.</p>
 
-        <!--MSB 6v2/17v4: gəI ma ṅarana bisa ṅicap· bi<space type="binding-hole"/>sa ṅinum·, bisa dina kasukaAn·,/ ya gəI ṅarana, !!![Incoherent here to the chapter three consioussness (trigǝiṅ)]!! Upa<add place="below">ma</add>gəI ma ṅarana, bisa ñadaṁ, bisa ṅaṁgo, bisa babasaḥhan·, bisa dibusana, <lb n="18r1"/><gap reason="lost" unit="chars" quantity="2"/>pagəI ṅarana, bisa nitaḥ bisa mivaraṁ, sabdana, Arum:avaṁṅi, ña mana hatə suraḥ nu dipivarraṁ, katuju ku bənaṁna milabuḥ siloka, -->
-
                     <p>lamun ka beet ma basana, utun, eten, orok, anakiṅ, adiiṅ, ka kolot ma basana, lañcәkiṅ,
                             <app><lem wit="#A #EdASD">suaniṅ</lem><rdg wit="#B">sumaṁṅǝr</rdg></app>,
-                            <app><lem type="norm">әñcuiṅ</lem><rdg wit="#A #B #EdASD">qǝcuIṁ</rdg></app>,
+                            <app><lem type="norm">әñcuiṅ</lem><rdg wit="#A #B #EdASD">qǝcuIṁ</rdg></app>,<!-- this word is misplaced, probably a crux -->
                             <app><lem wit="#A #B">toaiṅ</lem><rdg wit="#EdASD"/></app>, akiiṅ, paṅvastuna ma su<pb edRef="#A" n="25v"/>maṅәr,
                             <app><lem type="norm" wit="#EdASD">tәṅtәiṅ</lem><rdg wit="#A #B">tǝtǝIṁ</rdg></app> amat, sakitu na dasapasanta, gәs ma gunana ma, hook pesok asih karuña,
                             <app><lem type="emn">mukpruk</lem><rdg wit="#A">mupraruk</rdg><rdg wit="#B">mupru</rdg></app> ṅulas, ñәcәp ṅala aṅәn, ña mana suka buṅah padaṅ caaṅ nu dipivaraṅ, ya ta sinaṅguh
@@ -1045,27 +1046,25 @@ kayatnakna voṅ sakabeh, nihan
                                     <note type="parallel">
                                             <list>
                                                     <item>SMG 21.1: ini catur-rahayu ṅaranya, silokanya nihan, mas pirak komala hintǝn,</item></list></note>
-                    </app>
-                            , ini kaliṅana, mas ma ṅaranya, sabda tuhu, tәpәt byakta, pañcaksara, pirak ma ṅaranya, ambәk
+                    </app>, ini kaliṅana, mas ma ṅaranya, sabda tuhu, tәpәt byakta, pañcaksara, pirak ma ṅaranya, ambәk
                             <app><lem type="norm" wit="#EdASD">krǝta yogya</lem><rdg wit="#A">krata yogya</rdg><rdg wit="#B"/></app> rahayu,
-                            <app><lem type="emn" wit="#EdASD">komala</lem><rdg wit="#A"><unclear>ko</unclear><gap reason="lost" unit="chars" quantity="2"/></rdg></app> ma ṅaranya,
+                            <app><lem wit="#B #EdASD">komala</lem><rdg wit="#A"><unclear>ko</unclear><gap reason="lost" unit="chars" quantity="2"/></rdg></app> ma ṅaranya,
                             <app><lem wit="#B #EdASD">gәiṅna</lem><rdg wit="#A">gǝIna</rdg></app> padaṅ caaṅ, lǝga loganda, hintәn ma ṅaranya,
                             <app><lem wit="#A #EdASD">caṅciṅ</lem><rdg wit="#B">cacir</rdg></app>
-                            <app><lem wit="#A">sәri</lem><rdg wit="#EdASD">cǝri</rdg></app>, sәmu
+                            <app><lem wit="#A #B">sәri</lem><rdg wit="#EdASD">cǝri</rdg></app>, sәmu
                             <app><lem wit="#A #B">imuc</lem><rdg wit="#EdASD">imut</rdg></app>,
                             <app><lem wit="#A #EdASD">rame ambәk</lem><rdg wit="#B">rapes· Abǝk·na</rdg></app>, ya ta sinaṅguh
                             <app><lem wit="#A #EdASD">caturyogya</lem><rdg wit="#B">caturyoya</rdg></app> ṅaranya.</p>
 
                     <p>ya ta janma bijil ti nirmalaniṅ lǝmah,
                             <app><lem type="norm">nirmalaniṅ lǝmah</lem><rdg wit="#A"><add place="below">nirmalani L̥maḥ</add></rdg><rdg wit="#B #EdASD"/></app>
-                            <app><lem wit="#A">ṅaranna</lem><rdg wit="#EdASD"/></app>, pahoman, pabutәlan, pamujaan,
-                            <app><lem wit="#A #EdASD">imah manәh, candi, <pb edRef="#A" n="26r"/> prasada</lem><rdg wit="#B">cadi pR̥sada, L̥maḥ manəḥ</rdg></app>, liṅga
+                            <app><lem wit="#A">ṅaranna</lem><rdg wit="#EdASD"/></app>, pahoman, 
+                            <app><lem type="norm">pabuntәlan</lem><rdg wit="#A #EdASD">pabutǝlan</rdg></app>, pamujaan,
+                            <app><lem wit="#A #EdASD">imah manәh, candi, <pb edRef="#A" n="26r"/> prasada</lem><rdg wit="#B">cadi pR̥sada, L̥maḥ manəḥ</rdg></app>,
                             <app><lem wit="#A">liṅga liṅgir</lem><rdg wit="#B">liga ligi</rdg><rdg wit="#EdASD">liṅga liṅgih</rdg></app>, batu gaṅsa, lǝmah
                             <app><lem wit="#A #EdASD">biniṅba</lem><rdg wit="#B">bǝnǝr</rdg></app>, ginave voṅvoṅan, sasapuan, sakitu saukur lǝmah kaopeksa, cai kasucikәn, kapavitrakәn, ña keh janma
                             <app><lem wit="#A #EdASD">rahayu</lem><rdg wit="#B">raḥhayu ṅarana</rdg></app>, janma rampes, ya janma
-                            <app><lem type="norm" wit="#EdASD">krǝta</lem><rdg wit="#A">krata</rdg></app>.</p>
-
-                    <p>nu kaṅkәn bijil ti nirmalaniṅ lǝmah
+                            <app><lem type="norm" wit="#EdASD">krǝta</lem><rdg wit="#A">krata</rdg></app>, nu kaṅkәn bijil ti nirmalaniṅ lǝmah
                             <app><lem wit="#A #EdASD">ma ṅaranna</lem><rdg wit="#B"/></app>, iṅәt di saṅ hyaṅ siksa,
                             <app><lem type="emn" wit="#EdASD">mikukuh</lem><rdg wit="#A #B">mikuku</rdg></app> talatah ambu bapa, aki
                             <app><lem wit="#A #EdASD">lavan buyut</lem><rdg wit="#B"><gap reason="lost" unit="chars" quantity="2"/><unclear>·b</unclear>uyut·</rdg></app>, ñaho di siksaan mahapandita,
@@ -1109,7 +1108,7 @@ kayatnakna voṅ sakabeh, nihan
                             <app><lem wit="#A #EdASD">pilihәn ma</lem><rdg wit="#B">piliḥhan·nən:ana</rdg></app>, bañu <pb edRef="#A" n="27r"/>
                             <app><lem wit="#A #EdASD">asrǝp</lem><rdg wit="#B">masǝrǝp</rdg></app>
                             <app><lem type="emn" wit="#EdASD">lavan</lem><rdg wit="#A">lavan:a</rdg></app>
-                            <app><lem wit="#B">mahǝniṅ</lem><rdg wit="A">hnaṁ</rdg><rdg wit="#EdASD">hǝniṅ</rdg></app> ma, iña saṅ hyaṅ darma visesa, ña nu dilakukәn ku
+                            <app><lem wit="#B">mahǝniṅ</lem><rdg wit="A">hnaṁ</rdg><rdg wit="#EdASD">hǝniṅ</rdg></app> ma, iña saṅ hyaṅ darmavisesa, ña nu dilakukәn ku
                             <app><lem wit="#A #EdASD">mahapandita</lem><rdg wit="#B">maha<pb edRef="#B" n="20r"/><gap reason="lost" unit="chars" quantity="3"/></rdg></app>, nu bañu
                             <app><lem wit="#B">haṅkәr</lem><rdg wit="#A #EdASD">hakǝr</rdg></app> lavan
                             <app><lem wit="#A #EdASD">lǝtuh</lem><rdg wit="#B">maL̥tuḥ</rdg></app> ta ma, iña na rasa carita, nu dilakukәn
@@ -1127,33 +1126,44 @@ kayatnakna voṅ sakabeh, nihan
                             <app><lem wit="#A #EdASD">bәtiniṅ</lem><rdg wit="#B">tǝnǝṁ</rdg></app> jalir, vvitniṅ liñok, ya saṅkan janma ka naraka, ulah eta
                             <app><lem wit="#A #EdASD">dipitәmәn</lem><rdg wit="#B">dipiguna</rdg></app> ku nu dek bәnәr ma.</p>
 
-        <!--itu keḥna caI ta mana dipajar dva piliḥhan·nən:ana, bañu masəR̥p· lavan· mahəniṁ, Iña saṁ hya darma visesa, ña nu dilakukən· ku maha
-<pb n="20r"/>
-<lb n="20r1"/><gap reason="lost" unit="chars" quantity="3"/><unclear>ka</unclear>, na bañu haṁkər lavan· maL̥tuḥ ta ma, Iñana rasa carita, dilakukən· ku saṁ viku lok·kika paramarata kabeḥ, ña mana kadiAgan<unclear reason="illegible">i</unclear> <unclear>ca</unclear>
-<lb n="20r2"/><gap reason="lost" unit="chars" quantity="2"/>, lavan· Acetana, cetana ta ma vraḥ məṅət·, tutur tan· paba<space type="binding-hole"/>lik· lupa, ya ta janma raḥhayu, ya ta kaliṅaniṁ janma krata, nu Acetana ta ma Ikaṁ
-<lb n="20r3"/>lupa byamoha, tan· kahanan· tutur, ya ta kaliṅaniṁ saṁhara, pu<space type="binding-hole"/>hun·niṁ kaliyuga, tənəṁ jalir vvat·niṁ liñok·, ya ta saṁkan· janma ka naraka, Ulaḥ
-<lb n="20r4"/>E Eta dipiguna ku nu dek· bənər ma-->
-
 </div>
 
 <div type="chapter" n="16">
-             <head type="editorial" xml:lang="eng">Three essential elements in the world</head>
-                <p>ini ujar saṅ sadu, basana mahayu drabyana, ini
-                            <app><lem wit="#A">tritantu</lem></app> di bumi, bayu kita
-                            <app><lem type="norm" wit="#EdASD">pinaka</lem><rdg wit="#A">pinaḥka</rdg></app>prabu, sabda kita
-                            <app><lem type="noem" wit="#EdASD">pinaka</lem><rdg wit="#A">pinaḥka</rdg></app>rama, hdap kita
-                            <app><lem type="noem" wit="#EdASD">pinaka</lem><rdg wit="#A">pinaḥka</rdg></app>rǝsi, ya
-                            <app><lem>tritantu</lem></app> di bumi, ya kaṅkәn panә<pb edRef="#A" n="27v"/>guhniṅ bvana ṅaranna.</p>
-                <p>ini trivarga di lamba, visnu kaṅkәn prabu, brahma kaṅkәn rama, isora kaṅkәn rǝsi, ña mana
-                            <app><lem wit="#A">tritantu</lem><rdg wit="#EdASD"><choice><orig>tritantu</orig><reg>tritaṅtu</reg></choice></rdg></app>
-                            <app><lem wit="#A">panәguhniṅ</lem><rdg wit="#EdASD">pinǝguh niṅ</rdg></app> bvana, trivarga huripniṅ jagat ya sinaṅguh
-                            <app><lem wit="#A">tritantu</lem><rdg wit="#EdASD"><choice><orig>tritantu</orig><reg>tritaṅtu</reg></choice></rdg></app> di nu reya ṅaranya, tǝguhkәn pagәhkәn sahiṅaniṅ tuhu,
-                            <app><lem wit="#A">tәpәt</lem><rdg wit="#EdASD">pǝpǝt</rdg></app> byakta varta manah, mana
-                            <app><lem type="norm" wit="#EdASD">krǝta</lem><rdg wit="#A">krata</rdg></app> na bvana, mana hayu ikaṅ
-                            <app><lem type="emn" wit="#EdASD">jagat</lem><rdg wit="#A">jat</rdg></app> kenana tvahniṅ janma kapahayu.</p>
-                    <p>kitu keh saṅ pandita, pagәh di kapanditaanana, krǝta, saṅ viku pagәh di kavikuanana krǝta, saṅ maṅuyu pagәh di
+             <head type="editorial" xml:lang="eng">Three causes of continuity of the world</head>
+                <p>ini ujar saṅ sadu, basana mahayu 
+                        <app><lem wit="#A #EdASD">drabyana</lem><rdg wit="#B">drabya</rdg></app>, ini
+                            <app><lem wit="#A">tritantu</lem><rdg wit="#B">pratada</rdg><rdg wit="#EdASD">tritaṅtu</rdg></app> di bumi, bayu kita
+                            <app><lem type="norm" wit="#EdASD">pinaka</lem><rdg wit="#A #B">pinaḥka</rdg></app>prabu, sabda kita
+                            <app><lem type="norm" wit="#EdASD">pinaka</lem><rdg wit="#A #B">pinaḥka</rdg></app>
+                        <app><lem wit="#A #EdASD">rama</lem><rdg wit="#B">saṁ rama</rdg></app>, hdap kita
+                            <app><lem type="norm" wit="#EdASD">pinaka</lem><rdg wit="#A #B">pinaḥka</rdg></app>rǝsi, ya
+                            <app><lem wit="#A">tritantu</lem><rdg wit="#B">trataṁtu</rdg><rdg wit="#EdASD">tritaṅtu</rdg></app> di bumi, ya kaṅkәn 
+                        <app><lem wit="#A #B">panә<pb edRef="#A" n="27v"/>guhniṅ</lem><rdg wit="#EdASD">pinǝguh niṅ</rdg></app> bvana ṅaranna.</p>
+                <p>ini <app><lem wit="#A #EdASD">trivarga</lem><rdg wit="#B">travarga</rdg></app> di 
+                        <app><lem wit="#A #EdASD">lamba</lem><rdg wit="#B">laba</rdg></app>, visnu kaṅkәn prabu, brahma kaṅkәn rama, isora kaṅkәn rǝsi, ña mana
+                            <app><lem wit="#A">tritantu</lem><rdg wit="#B">tritaṁtu</rdg><rdg wit="#EdASD">tritaṅtu</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">tritantu</rdg><witDetail wit="#EdASD" type="ac"/></app>
+                            <app><lem wit="#A">panәguhniṅ</lem><rdg wit="#B">pinaguḥniṁ</rdg><rdg wit="#EdASD">pinǝguh niṅ</rdg></app> bvana, 
+                        <app><lem wit="#A #EdASD">trivarga</lem><rdg wit="#B">travarga</rdg></app> huripniṅ jagat, ya sinaṅguh
+                            <app><lem wit="#A">tritantu</lem><rdg wit="#B #EdASD">tritaṅtu</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">tritantu</rdg><witDetail wit="#EdASD" type="ac"/></app> di nu reya 
+                        <app><lem wit="#A #EdASD">ṅaranya</lem><rdg wit="#B">ṅanya</rdg></app>, tǝguhkәn pagәhkәn sahiṅaniṅ tuhu,
+                            <app><lem wit="#A">tәpәt</lem><rdg wit="#B">tǝpǝta</rdg><rdg wit="#EdASD">pǝpǝt</rdg></app> byakta vartamanah, mana
+                            <app><lem type="emn" wit="#EdASD">krǝta</lem><rdg wit="#A #B">krata</rdg></app> na bvana, mana hayu ikaṅ
+                            <app><lem wit="#B">jagat</lem><rdg wit="#A">jat</rdg><rdg wit="#EdASD">ja<supplied reason="omitted">ga</supplied>t</rdg></app> kenana 
+                        <app><lem wit="#A #EdASD">tvahniṅ</lem><rdg wit="#B">tvaḥ</rdg></app> janma kapahayu.</p>
+                 <p>kitu <app><lem wit="#A #EdASD">keh</lem><rdg wit="#B">keḥna</rdg></app> saṅ pandita, pagәh di 
+                         <app><lem wit="#A">kapanditaanana</lem><rdg wit="#B">kapaditan· gəḥhan·niṁ</rdg></app>, krǝta, 
+                         <app><lem wit="#A #EdASD">saṅ viku</lem><rdg wit="#B"><gap reason="lost" unit="chars" quantity="3"></gap></rdg></app> pagәh di kavikuanana krǝta, saṅ maṅuyu pagәh di
                             <app><lem type="norm">kamaṅuyuanana</lem><rdg wit="#A">kamaṅuyuAn:ana</rdg><rdg wit="#EdASD"/></app> krǝta, saṅ palikәn pagәh di
-                            <app><lem type="norm">kapalikenana</lem><rdg wit="#A">kapaliken:ana</rdg><rdg wit="#EdASD">kapalikenana</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">palikenna</rdg><witDetail wit="#EdASD" type="ac"/></app> krǝta, saṅ tetega pagǝh di
+                            <app><lem type="norm">kapalikǝnana</lem><rdg wit="#A">kapalikǝn:ana</rdg><rdg wit="#EdASD">kapalikenana</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">palikenna</rdg><witDetail wit="#EdASD" type="ac"/></app> krǝta, 
+                         <!--Ini Ujar sa sadu, basana mahayu drabya, Ini pratada di bumi, bayu kita pinaḥka prabu, sabda kita pinaḥka saṁ rama,
+
+<!-\-SSKK_L624_20v.jpeg-\->
+<pb n="20v"/>
+<lb n="20v1"/>hdip· kita pinaḥka saṁ R̥si, ya trataṁtu di bumi, kaṁkən· panəguḥniṁ bvana, Ini travarga di laba, vis·nu kaṁkən· prabu, braḥma kaṁkən· rama, Isorra kaṁkən· R̥
+<lb n="20v2" break="no"/>si, ña mana tritaṁtu na pinaguḥniṁ bvana, travarga hurip·niṁ jagat·, ya ta<space type="binding-hole"/>sinaṁguḥ trataṁtu di nu rye ṅanya, təguḥkən· pagəḥkən· sahiṅan:iṁ tuhu, tәpəta
+<lb n="20v3"/><gap reason="lost" unit="chars" quantity="2"/>byak· ta varr̥ta manaḥ mana krata na bvana, mana hayu Ikaṁ jagat·, ke<space type="binding-hole"/>na na tvaḥ janma kapahayu, kitu kehna saṁ padita, pagəḥ di kapa ditan· gəḥhan·niṁ kR̥ta
+<lb n="20v4"/><gap reason="lost" unit="chars" quantity="3"/>pagəḥ di kapagəhan·<del rend="strikeout">na</del>naniṁ krata, saṁ maṁṅuyu pagəḥ di kapagəhhan·nana krata, saṁ palikən· pagəḥ di kapali<add place="below">ka</add>n·nan:ana krata, saṁ tete -->
+                         saṅ tetega pagǝh di
                             <app><lem type="emn">katetegaanana</lem><rdg wit="#A">kateteAn:ana</rdg><rdg wit="#EdASD">katetegaanana</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">katetegaanna</rdg><witDetail wit="#EdASD" type="ac"/></app> krǝta, saṅ
                             <app><lem type="norm">amәṅ</lem><rdg wit="#A">Amǝ</rdg><rdg wit="#EdASD">amǝṅ</rdg></app> pagәh di
                             <app><lem type="norm">kaamǝṅanana</lem><rdg wit="#A">kaAmǝṁṅan:ana</rdg><rdg wit="#EdASD">kaamǝṅanana</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">kaamǝṅanna</rdg><witDetail wit="#EdASD" type="ac"/></app> krǝta, saṅ vasi pagәh di
@@ -1178,7 +1188,7 @@ kayatnakna voṅ sakabeh, nihan
                             <app><lem type="norm">kaprabuanana</lem><rdg wit="#A">kaprabuAn:ana</rdg><rdg wit="#EdASD">prǝbuanana</rdg></app> krǝta, ṅuni saṅ pandita, kalavan saṅ devaratu, pagәh ṅrәtakәn iṅ buvana, ña mana
                             <app><lem type="norm">krǝta</lem><rdg wit="#A">krata</rdg><rdg wit="#EdASD"/></app> lor kidul kulon vetan,
                             <app><lem wit="#A">sakasaṅga</lem><rdg wit="#EdASD">saka kasaṅga</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">sakasaṅga</rdg><witDetail wit="#EdASD" type="ac"/></app> deniṅ prativi,
-                            <app><lem wit="#A">sakakuruṅ</lem><rdg wit="#EdASD">saka kakuruṅ</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">sakakuruṅ</rdg><witDetail wit="#EdASD" type="ac"/></app> deniṅ akasa, pahi maṅhurip ikaṅ sarvo janma kabeh, </p>
+                            <app><lem wit="#A">sakakuruṅ</lem><rdg wit="#EdASD">saka kakuruṅ</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">sakakuruṅ</rdg><witDetail wit="#EdASD" type="ac"/></app> deniṅ akasa, pahi maṅhurip ikaṅ sarvo janma kabeh.</p>
  </div>
 
 <div type="chapter" n="17">
