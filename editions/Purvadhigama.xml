@@ -11,14 +11,18 @@
       </publicationStmt>
       <sourceDesc>
         <listWit>
-          <witness xml:id="A">Lontar, Leiden, UB, Or. 3723</witness>
-          <witness xml:id="B">Lontar, Leiden, UB, Or. 5098</witness>
-          <witness xml:id="C">Lontar, Leiden, UB, REM 214-213</witness>
+          <witness xml:id="L1">Lontar, Leiden, UB, Or. 3723</witness>
+          <witness xml:id="L2">Lontar, Leiden, UB, Or. 5098</witness>
+          <witness xml:id="L3">Lontar, Jakarta, Perpusnas, L. 585</witness>
           <witness xml:id="D">Lontar, Jakarta, Perpusnas, L. 881</witness>
+          
           <witness xml:id="E">Lontar, Bali, collection ...</witness>
+          <witness xml:id="H">Lontar, Leiden, UB, REM 214-213</witness>
         </listWit>
       </sourceDesc>
 <!--MS: I have automatically normalized geminate consonants after "r", including in the apparatus in <rdg> elements. When the only difference(s) between the several witnesses are between s/ś/ṣ or a/ā (in context where no sandhi can apply) or between d/ḍ/dh, ṭ/ṭh,  I have simply wrapped the segment in <reg> tags, esp. when multiple variants of these different types occurred in the same segment, or just silently normalized-->
+<!--other "non-significant" variants: puṅku vs. mpuṅku, not recording where mss. disagree on punctuation -->
+<!--interpreting mss's // as '.', i.e. a strong punctuation marking the end of a paragraph.-->
     </fileDesc>
     <profileDesc>
       <langUsage>
@@ -36,18 +40,21 @@
   <text>
     <body>
       <div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
-	<ab><app><lem wit="#A #D Or4431">avighnam astu!</lem><rdg wit="#B">|| 0 || nama śivaya || 0 ||</rdg><rdg wit="#E">Avighnam astu tatastu hastu nama</rdg></app></ab>
-<p>nihan <reg>pūrvādhigama-śāsana śāstra-sāroddhr̥ta</reg>, <app><lem wit="#A #D Or4431">pūrvārambha</lem><rdg wit="#B">pūrvarambha</rdg><rdg wit="E">purvaramā</rdg></app> saṅ təlas vr̥ddhācārya rājapurohita sarvaguṇajña, <foreign xml:lang="san-Latn">bhānuraśmisadr̥śa</foreign> <app type="parallel"><lem><foreign xml:lang="san-Latn">sarva-jana-hr̥daya-tamisra-haraṇa</foreign></lem><note>The same word occurs also in <ptr target="txt:SSMG"/>3.4.5.</note></app>, <foreign xml:lang="san-Latn">sakalāgracūḍāmaṇiśirasi <app><lem type="norm">pratiṣṭhita</lem><rdg wit="#A #B">pratiṣṭita</rdg><rdg wit="#D">pratiṣṭita <surplus>ta</surplus></rdg><rdg wit="E">pratistita</rdg></app></foreign> təkap sahana parācārya śiva kabeh, <foreign xml:lang="san-Latn"><reg>kaniṣṭha</reg>-madhyamottama</foreign>,</p>
-
-	<p>ndan sira paramādiguru mahābhagavān <app><lem wit="#D #B">tāṅgəhnira</lem><rdg wit="#A #E Or4431">taṅgəhnira</rdg></app>, sira <app><lem wit="Or 4431">paṅudaran</lem><rdg wit="#A #B #D">paṅudharan</rdg><note>It is not clear to which base this substantive should be associated. <hi rend="italic">Udāharaṇa</hi> is not very satisfactory, what about idər?</note></app> bhasma ṅaranira, saka ri vənaṅnira panaḍahan bhasma təkapniṅ santāna pratisantāna saṅ bhasmāṅkura, sira <app><lem>atah amramāṇakən</lem><rdg wit="A">Ataḥ pramaṇākən</rdg><rdg wit="B">hatāmrama:ṇakən</rdg><rdg wit="D">Ataḥ mramana:kən</rdg><note>This form is not recorded in OJED, but it is attested with the same meaning in the Saṅ Hyaṅ Pamutus (Buddhist): <quote>ya ta mapisan riṅ pramāṇa, ka, pramāṇa mary *amramāṇakĕn</quote>.</note></app>[8] pagəhni karakṣaniṅ śāsanādhigama śāstrasāroddhr̥ta ri para mpuṅku makabehan sahana saṅ guməgə̄ śivāgama, kimuta sahana saṅ bhujaṅga śiva pinakasthavira[c][9] riṅ nagara, saṅ sampun kr̥ta,[d] ṅuniveh saṅ maharəp[e] riṅ nagara lavan riṅ pradeśa, təlas karuhun saṅ vatək prāgivāka vyavahāravicchedaka, saṅ vənaṅ maməgatakən vivādaniṅ sarvajana riṅ sabhāmadhya mvaṅ riṅ pradeśa, nā ta lvirnira, yayan saṅ hyaṅ adhigamaśāsana śāstrasāroddhr̥ta juga pamāk[f]niṅ śāsana, kramanira tika kabeh[10] //</p>
-
-	<p>nihan pratyeka saṅ bhujaṅga śivān pinakasthavira[13] riṅ nagara, saṅ kuməmit mamaṅku saṅ hyaṅ adhigamaśāsana śāstrasāroddhr̥ta, lvirnira, saṅ minakamapabhr̥ti[h],[14] saṅ ārya dharmādhyakṣa[i], lyan saṅke sira, vvalu kvehnya, ndya ta, saṅ ārya tirvan, saṅ ārya kaṇḍamuhi, saṅ ārya pamvatan, saṅ ārya pañjaṅ jīva, saṅ ārya maṅhuri, saṅ ārya jambi, saṅ ārya lekan, saṅ ārya taṅar,[15] ndah [j]samaṅkana lvirniṅ liṅgihnira, kapva bhujaṅga haji sira kabeh, yekā maṅharəp liṅgih riṅ nagara ṅaranira //</p>
-
+	<ab><app><lem wit="#L1 #L3 #D Or4431">avighnam astu!</lem><rdg wit="#B">|| 0 || nama śivaya || 0 ||</rdg><rdg wit="#E">Avighnam astu tatastu hastu nama</rdg></app></ab>
+<div n="1" type="chapter">
+<p>nihan pūrvādhigama-śāsana śāstra-sāroddhr̥ta, <app><lem wit="#L1 #D Or4431">pūrvārambha</lem><rdg wit="#B">pūrvarambha</rdg><rdg wit="E">purvaramā</rdg></app> saṅ təlas vr̥ddhācārya rājapurohita sarvaguṇajña, <foreign xml:lang="san-Latn">bhānu-raśmi-sadr̥śa</foreign><app type="parallel"><lem><foreign xml:lang="san-Latn">-sarva-jana-hr̥daya-tamisra-haraṇa</foreign></lem><note>The same word occurs also in <ptr target="txt:SSMG"/>3.4.5.</note></app>, <foreign xml:lang="san-Latn">sakalāgra-cūḍā-maṇi śirasi <app><lem type="norm">pratiṣṭhita</lem><rdg wit="#L1 #B">pratiṣṭita</rdg><rdg wit="#D">pratiṣṭita<surplus>ta</surplus></rdg><rdg wit="#E">pratistita</rdg></app></foreign> təkap sahana parācārya śiva kabeh, <foreign xml:lang="san-Latn">kaniṣṭha-madhyamottama</foreign>,</p>
+</div>
+<div n="2" type="chapter">
+	<p>ndan sira paramādiguru <app><lem wit="#D #B">mahābhagavāntāṅgəhnira</lem><rdg wit="#L1 #E Or4431">mahabhagava:n taṅgəḥnira</rdg></app>, sira <app><lem wit="#Or 4431">paṅudaran</lem><rdg wit="#L1 #B #D">paṅudharan·</rdg></app> bhasma ṅaranira, saka ri vənaṅnira panaḍahan bhasma təkapniṅ santāna pratisantāna saṅ bhasmāṅkura, sira <app><lem wit="#B">atah amramāṇakən</lem><rdg wit="#L1">Ataḥ pramaṇa:kən</rdg><rdg wit="D">Ataḥ mramana:kən</rdg><note>This form is not recorded in OJED, but it is attested with the same meaning in the <hi rend="italic">Saṅ Hyaṅ Pamutus</hi> (Buddhist) <!--refer to a bibl element with <ptr target=""/> for this text?, and add translation-->: <quote>ya ta mapisan riṅ pramāṇa, ka, pramāṇa mary *amramāṇakən</quote>.</note></app> pagəhni karakṣaniṅ śāsanādhigama śāstrasāroddhr̥ta ri para mpuṅku makabehan sahana saṅ guməgə̄ śivāgama, kimuta sahana saṅ bhujaṅga śiva pinakasthavira riṅ nagara, saṅ sampun kr̥ta, ṅuniveh saṅ <app><lem type="emn">maṅharəp</lem><rdg wit="#L1 #L2">mahaR̥̥p·</rdg><note>See infra.</note></app> riṅ nagara lavan riṅ pradeśa, təlas karuhun saṅ vatək prāgivāka vyavahāra-vicchedaka, saṅ vənaṅ <app><lem wit="#L2">maməgatakən</lem><rdg wit="#L1">mgatakən</rdg></app> vivādaniṅ sarvajana riṅ sabhāmadhya mvaṅ riṅ pradeśa, nā ta lvirnira, <app><lem wit="#D">yan</lem><rdg wit="#L1">yayan</rdg></app> saṅ hyaṅ <app><lem wit="#D">adhigamaśāsana</lem><rdg wit="#L1">hadhigama</rdg></app> śāstrasāroddhr̥ta juga *pamākniṅ śāsana, <app><lem wit="#D">kramanira tika kabeh</lem><rdg wit="#L1">kramaniṁ ra:t tika: kabeḥ</rdg></app>.</p>
+</div>
+<div n="3" type="chapter">
+	<p>nihan pratyeka saṅ bhujaṅga śivān <app><lem wit="#D">pinakasthavira</lem><rdg wit="#L1">minakaṣṭaviran</rdg><note>Or normalize pinakāsthavira? See other occurrences of the same idea in the Sugih Manek inscription from 837 Śaka (saṅ pārtha pinakāsthavira i pakāraṇān), as well as a certain Mpu hasthavīra in the Kāñcana inscription (mapakna mpu sthāpaka‚ təmpah‚ 2, iṅ gayanti uṅgvanya, mpu brahmā ta sthāpaka, mpu hasthavīra).</note></app> riṅ nagara, saṅ kuməmit mamaṅku saṅ hyaṅ adhigamaśāsana śāstrasāroddhr̥ta, lvirnira, saṅ minakamapabhr̥ti[h],[14] saṅ ārya dharmādhyakṣa[i], lyan saṅke sira, vvalu kvehnya, ndya ta, saṅ ārya tirvan, saṅ ārya kaṇḍamuhi, saṅ ārya pamvatan, saṅ ārya pañjaṅ jīva, saṅ ārya maṅhuri, saṅ ārya jambi, saṅ ārya lekan, saṅ ārya taṅar,[15] ndah [j]samaṅkana lvirniṅ liṅgihnira, kapva bhujaṅga haji sira kabeh, yekā maṅharəp liṅgih riṅ nagara ṅaranira //</p>
 	<p>nihan lvir saṅ kr̥ta, yapvan hana sira saṅ bhujaṅga vr̥ddhācārya, sampūrṇa riṅ vālavidyā[o][p][q][r][s] lavan mahāvidyā, təlas [t]vruhnira riṅ kopadeśan saṅ hyaṅ homavidhi mvaṅ homasaṅskāra[u][v], tasak ri saṅ hyaṅ sarvādhva,[w] sampun vənaṅ mandaməl maśiṣya bhujaṅga, maṅharəp pahomāmaṅku kuṇḍa, tuhaganāṅgəlarakən kapūjān bhaṭāra śivāgni satata, sakala pinakapatīrthaniṅ vvaṅ sanagara, mvaṅ sahananiṅ para janapadānta[x], saṅ bhujaṅga samaṅkana kramanira, ya ta kr̥tadīkṣita ṅaranira, yadyan sāvakanira saṅ para[16] ḍaṅ ācārya yapvan təlas maṅkana, ya ta saṅ kr̥ta ṅaranira, ndatan apilih pakoṅgvananira, mon riṅ nagara, mon riṅ pradeśa, mon riṅ kadharmahajyan, ityevamādi kasthityanira, yayan saṅ kr̥ta ṅaran saṅ kr̥tadīkṣita.</p>
 
 <p>nihan lvir saṅ prāgvivāka, yan hana sira ḍaṅ ācārya sampūrṇa vruhnira riṅ sarvaśāstra makādi dharmaśāstra kuṭāramānavādi, sārasamuccayacāṇakyakāmandakādi, tan kevran sira riṅ rusitniṅ kavalik bəlahaniṅ padārthanikaṅ aṣṭadaśavyavahāra, mvaṅ lokika prayoganya, sahopadeśanya, təkeṅ udāharaṇa, māvās vruhnirerikā kabeh sakarika sarvajñatvanira rikaṅ sarvaśāstra, saṅ samaṅkana kramanira prāgivāka ṅaranira, sira vyavahāravicchedaka, ri deniran vnaṁ paməgataknaṅ sarvavyavasthaniṅ loka, mvaṅ vādaniṅ vvaṅ riṅ sarvarājya, nāhan hetuniran sinaṅguhan prāgivāka, ndatan apilih kasthityan saṅ prāgivāka, mvaṅ tar apilih kāvakanira saṅ sinaṅguhan prāgivāka, mon saṅ para bhujaṅga haji, mon saṅ kr̥ta, mon saṅ maṅharəp dharmādhyakṣa maṅharəp dharmopapatti riṅ pradeśa mvaṅ riṅ kadharmahajyan, mon saṅ śubhakāla, ṅuniveh saṅ paməgatan vyavahāra riṅ sarvapradeśa, deśa pamañcan, kādhipatyan, hulu, kuvu, sāmya, vaṅśa, kalagyan, kaputravaṅśan, sahana saṅ paməgatan vyavahāra ṅkāna, yayan prāgivāka ṅaranira kabeh.
 </p>
-
+</div>
+<div>
 <p>kunaṅ sahana saṅ bhujaṅga haji, sahana saṅ kr̥tadīkṣita, kapva vnaṅ məgatakən vyavasthaniṅ loka gatinira, irikā sira yan ekasaṁjñā, saṅ prāgivāka kr̥ta ṅaranira, saṁ kr̥ta prāgivāka ṅaranira, saṅkṣepanya, saṅ kr̥ta katuduhanira vəkasan, ri deny antarānyat prākr̥ti sira kāliḥ.</p>
       </div>
       <div n="10" type="chapter">
@@ -141,6 +148,7 @@
       </div>
       <div type="bibliography">
         <p>bibliography of previous editions, discussion, etc.</p>
+      </div>
       </div>
     </body>
   </text>
