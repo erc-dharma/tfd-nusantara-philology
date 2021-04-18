@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PUSDOK T/XXI/7/DOKBUD Tatwa Kabuddhan</title>
+            	<respStmt>
+            	<resp>EpiDoc Encoding</resp>
+            	<resp>intellectual authorship of edition</resp>
+            	<persName ref="part:argr">
+            		<forename>Arlo</forename>
+            		<surname>Griffiths</surname>
+            	</persName>
+            	</respStmt>
+            </titleStmt>
+        	<publicationStmt>
+        		<authority>DHARMA</authority>
+        		<pubPlace>Lyon</pubPlace>
+        		<idno type="filename">DHARMA_DiplEdPamutusBuddhistPUSDOKTattwaKabuddhan</idno>
+        		<availability>
+        			<licence target="https://creativecommons.org/licenses/by/4.0/">
+        				<p>This work is licensed under the Creative Commons Attribution 4.0 Unported
+        					Licence. To view a copy of the licence, visit
+        					https://creativecommons.org/licenses/by/4.0/ or send a letter to
+        					Creative Commons, 444 Castro Street, Suite 900, Mountain View,
+        					California, 94041, USA.</p>
+        				<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+        			</licence>
+        		</availability>
+        		<date from="2019" to="2025">2019-2025</date>
+        	</publicationStmt>
+        	<sourceDesc><!-- only the handDesc can be filled in at this stage -->
+        		<msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
+        			<msIdentifier>
+        				<repository>DHARMAbase</repository>
+        				<idno/>
+        				<!-- don't modify this -->
+        			</msIdentifier>
+        			<msContents><!-- describe the intellectual content of an inscription -->
+        				<summary><!-- //// NOT MANDATORY  ////--></summary>
+        				<!-- offers the possibility to give a summary of the inscription's content -->
+        			</msContents>
+        			<physDesc>
+        				<handDesc>
+        					<p/>
+        				</handDesc>
+        			</physDesc>
+        		</msDesc>
+        	</sourceDesc>
+        </fileDesc>
+    	<encodingDesc>
+    		<projectDesc>
+    			<p>This project DHARMA has received funding from the European Research Council (ERC)
+    				under the European Union's Horizon 2020 research and innovation programme (grant
+    				agreement no 809994).</p>
+    		</projectDesc>
+    		<schemaRef type="guide"
+    			key="EGDv01"
+    			url="https://halshs.archives-ouvertes.fr/halshs-02888186"/>
+    		<listPrefixDef>
+    			<prefixDef ident="bib"
+    				matchPattern="([a-zA-Z0-9\-\_]+)"
+    				replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+    				<p>Public URIs with the prefix bib to point to a Zotero Group Library named
+    					ERC-DHARMA whose data are open to the public.</p>
+    			</prefixDef>
+    			<prefixDef ident="part"
+    				matchPattern="([a-z]+)"
+    				replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
+    				<p>Internal URIs using the part prefix to point to person elements in the
+    					<ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+    			</prefixDef>
+    		</listPrefixDef>
+    	</encodingDesc>
+    	<revisionDesc>
+    		<change who="part:argr" when="2021-04-18" status="draft">started diplomatic edition</change>
+    	</revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="kaw-Latn">
+<p>
+
+<!-- https://archive.org/details/tatwa-kabuddhan/mode/1up -->
+<pb n="1r"/><!-- blank outer page -->
+
+<!-- https://archive.org/details/tatwa-kabuddhan/page/n1/mode/1up -->
+<pb n="1v"/><fw place="left" n="1v"><num value="1"><supplied reason="omitted">1</supplied></num></fw>
+<lb n="1v1"/>// 0 // Aum̐ Avighna:m astu na:mo buddha:ya: // [SH] pamutus saṁ tuha: kayatna:kna: de saṁ śevaka: ḍarmma, saṁ§
+<lb n="1v2"/>mahyun maluya: viśeṣa:, R̥ṅǝ:n· kva:jaraniṁ ḍar[SH]mma:, Amaja:ṅakna: ptaṁ, ta:sakeṅ ajji, Aṅhiṁ byakta: tuhutu
+<lb n="1v3" break="no"/>hu jugeka:, Apan iṁṅ ajji ṅaranya:, hanenucap·, [SH] hana tinuḍuḥ, hana: ginagvan·, hana: Inaku, maṅkana: sva
+<lb n="1v4" break="no"/>bha:vaniṅ haji, ṅa, kun<unclear>ǝṁ</unclear> saṁ putus·, tan maka:ne[SH]ka:, bhaṭa:ra: sidḍaviśeṣa: juga: sina:maya:, tan su§
+
+<!-- https://archive.org/details/tatwa-kabuddhan/page/n1/mode/1up -->
+<pb n="2r"/>
+<lb n="2r1"/>vaL̥n ka<unclear>p</unclear>iriṁ<!-- variant from #L --> śri bhakti bhoja:na, śri, ṅa, ma:s pira[SH]k· ratna:, bhakti, ṅa, sǝmbaḥ sarbvapraṇamya:, bhojana
+<lb n="2r2"/>, ṅa, paṇa:bhoga: sama:haL̥p·, ha:hayva: <del>mmaṁ</del> [SH] ttha maṅkana:, yan tumarimaṁ śri, ya:ṅkǝn· dinol· vinli saṁ
+<lb n="2r3"/>hyaṅ ḍarmma:, yan tumarimaṁ bhakti, yankǝn abedakǝ[SH]n· viśeṣa: Ika:, yan tumarimaṁ bhojaṇna:, ya:ṅkǝ§
+<lb n="2r4" break="no"/>n· kneṁ bvat anaḍaḥ kavtvaniṁ sa:maya:, hayva§ [SH] ta: maṅkana:, L̥ñok· yan tan adravya: kahaR̥p·,
+
+<!-- https://archive.org/details/tatwa-kabuddhan/page/n2/mode/1up -->
+<pb n="2v"/><fw place="left" n="2v"><num value="2">2</num></fw>@@@@@
+<lb n="2v1"/>
+<lb n="2v2" break="no"/>
+<lb n="2v3" break="no"/>
+<lb n="2v4"/> 
+
+<!-- https://archive.org/details/tatwa-kabuddhan/page/n2/mode/1up -->
+<pb n="3r"/>
+<lb n="3r1"/>
+<lb n="3r2" break="no"/>
+<lb n="3r3" break="no"/>
+ <lb n="3r4"/> 
+
+<!-- DSCF8925.JPG -->
+<pb n="3v"/><fw place="left" n="3v"><num value="2">3</num></fw>
+<lb n="3v1"/>
+<lb n="3v2" break="no"/>
+<lb n="3v3" break="no"/>
+<lb n="3v4"/> 
+
+<!-- DSCF8925.JPG -->
+<pb n="3r"/>
+<lb n="3r1"/>
+<lb n="3r2" break="no"/>
+<lb n="3r3" break="no"/>
+ <lb n="3r4"/> 
+
+<!-- DSCF8925.JPG -->
+<pb n="3v"/><fw place="left" n="3v"><num value="2">3</num></fw>
+<lb n="3v1"/>
+<lb n="3v2" break="no"/>
+<lb n="3v3" break="no"/>
+<lb n="3v4"/> 
+
+</p>
+<!--  yan tumarimaṅ śrī, L̥ñok yan tan kaviśeṣa ri lupa, yan tumarimaṅ bhakti, L̥ñok yan tan kavaśa deniṅ tamah, a:paniṅ amaṅan enak varǝg, enak turūnya, viparīta kaliṅanya, a:pan don saṅ viku, *miṅsǝpaniṅ saṅśaya, vikalpa, tṛṣṇa:, lupa, saṅśaya, ṅa, a:mbǝk sandeha, vikalpa, ṅa, a:mbǝk mohut iṅ sarvavastu, tṛṣṇa:, ṅa, a:mbǝk matakut, mvaṅ sih, lupa, ṅa, a:mbǝk hilaṅ, hayva ta maṅkana, 
+ya ta hetu saṅ putus umatīteṅ katon, karǝṅə̄, kahucap, kahiḍǝp, mari manambah riṅ guru, [fol2v] hilaṅniṅ saṅśaya, ka, mari mavarah riṅ śiṣya, mari sinambah, hilaṅniṅ vikalpa, ka, saṅkṣepanya, udasana:pulu ḍavak, tan atakuta pati, hana pva paranya, hilaṅniṅ tṛṣṇa:, ka, tasma:t pvekaṅ taṅhi tan bya:pa:ra, hilaṅniṅ lupa, ka, mari guru mari śiṣya, ikaṅ putus, ṅa, 
+kunaṅ hetuniṅ mari guru mari śiṣya, deniṅ varah tan saṅkeṅ guru, hetuniṅ maluya viśeṣa, tan saṅkeṅ guru hetuniṅ  svatah ri panamayanira riṅ viśeṣapada, ka:laniṅ samaya ḍarma inucap, saṅ  guru mvaṅ saṅ śiṣya, samaya *pa:ḍika:rani  saṅ yogīśvara, ka:ku guru, ka:ku śiṣya, 
+tasma:t katmu tan pinet ikaṅ varah, tan sakeṅ guru, svatah, ka, svatah, ṅa, hilaṅniṅ varah [fol3r] tan *inupekṣi, katmu rasaniṅ tan vinarah, ya sinaṅguh samyak viśeṣa, paḍa la:van saṅ guru, ka, guru mati hetuniṅ  śiṣya, mari manambah ri sira, 
+kunaṅ pinǝkǝt saṅ putus, tan karaṅroṅa riṅ tri uparǝṅga, śrī, bhakti, bhojana, hetuniṅ maṅkana, kapaṅgihaniṅ samaya, sa:śaḍarmma, maya:jña:na śūnyata, nda: maṅkana pratama  saṅ putus, 
+kunaṅ sira saṅ maliṅgih riṅ padma sira tumarima śrī, bhakti, bhojana, a:pan sinambah iṅ ra:t, pinakaguruniṅ jagat, umarah riṅ nīti yogya, pan hana ṅaranira, bhaṭa:ra aka:ryaḍarma sira, 
+kunaṅ saṅ putus bhaṭa:ra iccha:niṣka:ryaḍarma sira, maṅkana taṅ reh, ka, *pet prih kahilaṅaniṅ śarīra, nda hayva ta tan inaku, tan inaku, ṅa [fol3v], kadya:ṅgani saṅ mamaṅan tḍa riṅ pahǝhan, sumurupi loṅan, tan inaku ṅaraniṅ śarīra yan maṅkana, inaku, ṅa, tan ilaṅniṅ ca:ramarya:da, mvaṅ meṅöt sakinavruhanya, inaku ṅaraniṅ śarīra yan maṅkana, hayva ta maṅkana, 
+prih kahilaṅanya, makadva:ra vruh riṅ saṅkan paran, prih kalpasanta sakiṅ bhuvana, nda hayva ta *iṅatīta L̥yǝp, makadva:ra vruh yan ana:gata  tan vipatha, prih kahilaṅaniṅ ba:yu, hayva ta hinnǝb,  makadva:ra kanirupekṣan, prih kahilaṅaniṅ śabda, hayva ta humnǝṅ, makadva:ra kasarvajña:n, prih kahilaṅaniṅ hiḍǝp, hayva ta tan *patǝL̥ṅ, makadva:ra vruhnira riṅ maṅavruhi, prih kahilaṅaniṅ tutur, hayva ta lupa, makadva:ra vruh riṅ manon [fol4r], prih kahilaṅaniṅ manon, hayva ta vuta, makadva:ra vruh katmu tan pinet, ndan sira viśeṣa, prih kahilaṅaniṅ viśeṣa, hayva ta tan viśeṣa, makadva:ra tan umaku tan pamastu, 
+nahan pratama saṅ putus, nda ya tika: pada bhaṭa:ra, riṅ sakala pratyakṣa, ri kotsa:haniṅ ja:grapada, ahöm  mvaṅ turyapada ika:, cǝt pveṅ jña:na luput saṅkeṅ ma:ya:tattva, ya turya:ntapa:da, ṅa, ri samaṅkana taṅ sinaṅguh vidon, ṅa, ri denya tan hananiṅ don, la:van sinaṅgah maturū tan paṅipi, ndatan kǝneṅ prǝman, makahetu paḍǝmniṅ *jña:nendriya, miṅsǝp riṅ antahṛdaya, 
+hayva ta pratipakṣa riṅ pakṣa maṅkana, hayva ta tuṣṭi, a:pan prajña:pa:ramitekaṅ  [fol4v] sarvajña:, mvaṅ sarvaka:ryakarta, ya tika  hetuniṅ maṅatīta, mataṅyan līna humnǝṅ vruh tan apuṅguṅ, valuyakna pamutus ṅūni, mari maśarīra  deniṅ vruh riṅ saṅkan paran, ṅa, ikaṅ taya, vyaktinyan saṅkan, maṅandǝli ka:ma ratih, ikaṅ jña:na sakiṅ taya ika:, kunǝṅ vyaktinyan paran, ri ka:laniṅ pati ndi paranya, mareṅ śūnya jugeka:, ka, dadi sakeṅ taya, maluya mariṅ taya, maṅkana svabha:vaniṅ janma, 
+kunaṅ saṅ putus, tan maluya sira riṅ saṅkan paran, nimittaniṅ mari maśarīra, mari *kabhuvanan, deniṅ ana:gata tan vipatha,  ana:gata, ṅa, hana tan tumut, vipatha, ṅa, tan karakǝt riṅ  ba:yu deniṅ kasarvajña:n, kasarvajña:n, ṅa, kavya:pakaniṅ [fol5r] katon, karǝṅə̄, kahucap, kahiḍǝp, mari hiḍǝp deniṅ matǝL̥ṅ, tǝL̥ṅ, ṅa, *jumro kǝtikaṅ  kinotsa:hakǝn riṅ antasūkṣma, mari tutur deniṅ vruh yen manon pratyakṣa, mari manon deniṅ vruh yan katmu tan pinet, yan maṅkana ikaṅ inaṅgǝhakǝn  viśeṣa, ade, mari viśeṣa, deniṅ tan pamastu, ndah ya tika kuñci rahasya, ṅa, 
+ndan ri paramapaścat saṅ hyaṅ prama:ṇa tan intara saṅke tǝL̥ṅniṅ hṛdaya, patiṅgalniṅ rekha gavaygavaynira  ri sakalaniṣkala, lvirnya, katon,  karǝṅə̄, kahucap, kahiḍǝp, ya ta humisǝp  riṅ gave, pagavenira, ṅa, ikaṅ hiḍǝp mvaṅ tutur, ya ta mapisan riṅ prama:ṇa, ka, prama:ṇa [fol5v] mary *amrama:ṇakǝn, ya sinaṅgah viśeṣa mari viśeṣa, ṅa, tan iṅgutniṅ viśeṣa mokṣa ṅke, mapuhara sidḍa niṣkala, rǝp svayaṃ sira, umnǝṅ *umiṅǝti, tan kabhuvanan, tan śinarīran, tan *inajña:nan,  ya ta kaliṅaniṅ sidḍa, mokṣa L̥pas, sidḍa, ṅa, siniṅsiniṅ rūpavarṇa, mokṣa, ṅa, tan hana kapaṅguhanya, lpas, ṅa, luput iṅ jña:na, mvaṅ śarīra, hayva ta rinakva, hayva *minne, hayva  tinǝmbe, hayvenuśana*, uśana, ṅa, riṅ kunakuna, hayva minaṅkana, hayva  minaṅke, apa pva juga, aṅhiṅ byakta tuhu jugeka, kumva kunǝṅ liṅanta saṅ sevaka ḍarma, 
+apa pva tan trus tumon bhaṭa:ra, riṅ cǝmpa, riṅ malayu, mvaṅ sarvadeśa, yan tuhu byapaka [jump-fol6v1], ika ṅke tan inucap, ya ta kuñci rahasya, ṅa, atīta bhaṭa:ra riṅ bhuvana, pagǝhakna ri tǝL̥ṅniṅ antasva:tma, hayvenaranan, hayva tinuduh, hayvenaku, hayvenuśana, kunaṅ hetuniṅ maṅatīta bhaṭa:ra riṅ bhuvana, mary asaṅśaya, sakinabhaktyaniṅ ra:t, kunaṅ yan tumut abhakti, rva teka keḍǝpanya, *kumvatakǝn bhaṭa:ra riṅ bhuvana, umorakǝn bhaṭa:ra riṅ śarīra, bhra:nta saṅ putus yan maṅkanaha, tumutakǝn ambǝkiṅ ra:t, a:pan tuṅgal ya bhaṭa:ra riṅ śarīra, yan iṅ bhuvana, hanenak ta *pagiligiligan bhaṭa:ra riṅ śarīra, yan hana saṅśayanǝn, mvaṅ vikalpanǝn, tan molah hana humnǝṅ juga pinakasanḍisanḍi, ṅa, manidḍa:kǝn, nihan upadyanta, pa[jump-fol6r1]rananta  havananta mariṅ sabraṅ, kunaṅ yan ramon, kaniṣṭha  ika:, yan banava kunaṅ, maḍyama ika:, kunaṅ ikaṅ uttama, viva:hana juga, viva:hana, ṅa, maṅkenucap maṅke tka, maṅke tka, ṅa, iki, iki, ṅa, bhaṭa:ra ya sinama ya, sama, ṅa, paḍa, paḍa, ṅa, ya, ya, ṅa, ftan dudu, vyaktinyan paḍa, tuṅgal huripniṅ  sara:t, vyaktinyan ya, viśeṣa ikaṅ iki de saṅ umaṅgihakǝn, ka, mary a:takon umary aṅucap, mary avarah, mari vinarah, mary amet mari pinet, a:pan bhaṭa:ra ṅucap, bhaṭa:ra inucap, bhaṭa:ra mavarah, bhaṭa:ra vinarah,  bhaṭa:ra met, bhaṭa:ra pinet, ya kaliṅaniṅ laṅgǝṅ tuṅgǝṅ, umnǝṅ  tan molah, vruh yan samayaviśeṣa, ika: bha:ṣa samaya,  y[jump-fol8r1]eka upadeśa, ṅa, humnǝṅ tan anarana jugeka, makapucakniṅ viśeṣa:ntyapa:da, abhya:sa yoga taṅhi tan bya:pa:ra juge nityaśa, katǝmvaniṅ sama:ḍi, vehǝn taṅ sama:ḍi luputa sakeṅ śarīra, sama:ḍi luput saṅke śarīra, ṅa, tan inavikanikadon, vidon, ka, yeka śabda:sat, ka, ya:vat maṅkana  sarisari, ya pavak bhaṭa:ra, ndan  sira ta śrī jagatna:tha, ṅa, śrī, ṅa, mahaL̥pa,  jagat ṅaranya, bhuvana, mvaṅ sarvajanma, na:tha, ṅa, prabhu, ndan  sira ta vvitniṅ sarvatattva, sira mijilakǝn bhuvana, mvaṅ sarvajanma sapraka:ra  || i || 
+vvit karaṇaṃ maśarīraṃ, śarīraṃ vidḍyaguṇavat∙, 
+yan a:guṇa: etat∙ devaṃ, vibhūh sarvvavit∙ deśavat∙ || 
+ka, saṅke ma:saka:la  ikaṅ śarīra, [jump-fol7v1], taha si, a:pan  katavǝṅan deniṅ sakala, praḍa:naśarīra bhaṭa:ra, mataṅyan tan vnaṅ maṅkana, kunǝṅ riṅ antaśarīra, sidḍa viśeṣa mokṣa:vak, tan hana ma:na vṅisira, ka, mati rumuhun tinivakǝn tan pagagaḍa, ikaṅ tumakitaki iki, paḍa niṣkala pati, mvaṅ niṣkala maṅke, ya ta byakta tuhutuhu, ṅa,  hayva kady aṅrǝṅö gǝröh, deniṅ maṅrǝṅö ri kojaran bhaṭa:ra, ka, gumuruhguruh tan vruh ri vkasnya, hayva kady aṅambuṅ mnur kinaṇḍut deniṅ lyan, deniṅ maṅrasani rasa bhaṭa:ra, maṅambuṅ tan vruh ri uṅgvanya, kunaṅ saṅ putus, vruh uṅgvaniṅ tan pahuṅgvan, vruh ri vkasniṅ tan pavkas, uṅgvaniṅ tan pahuṅgvan, kunaṅ vyaktinya, bhaṭa:ra yan tan tu[jump-fol7r1]mut śarīra, yan avūk drava ikaṅ śarīra, tan milu bhaṭa:ra avūk, haneṅ prakṛti juga sira, prakṛti, ṅa, ikaṅ taya, kunaṅ hetuniṅ kasaputan ptǝṅ riṅ mati, a:panya  tan alah ikaṅ saṅśaya, vikalpa, tṛṣṇa, lupa, ri ka:laniṅ hurip, hetuniṅ maṅdadi muvah, saṅke prakṛti ika:, maṅandǝli śukla śoṇita, *kelvilu bhaṭa:ra deniṅ hiḍǝp, mvaṅ tutur, a:pan ya maṅhanakǝn caturvikalpa, nimittaniṅ tan kasa[fol7r3]putan ptǝṅ riṅ antaśarīra, mataṅyan svayaṃ bhaṭa:ra manu riṅ ra:t, tan milu bhuvana, tan kasaputan ptǝṅ, tan kapaḍaṅan a:ditya, a:pan gavenira riṅ vikalpa ika:, ka, maṅke iki  vkasniṅ viśeṣa:ntyapa:da [jump-fol8v1] sakeṅ śarīra ikaṅ aji mvaṅ guṇa, sakeṅ guṇa aji ikaṅ deva, sakeṅ deva tuduh ikaṅ i sor i ruhur, kulvan, vetan, lvar, kidul, ri maḍya, iti saṅ hyaṅ pamutus, kayatnakna de saṅ sevaka ḍarma, hayva cavuh bvat upadrava ||
+-->
+
+         </div>
+        <div type="bibliography">
+	<!--bibliography encoded as per section §9.4 -->
+	<!-- NB: you are encouraged to experiment with encoding bibliography to the extent you have the bibliographic data available, but it is not mandatory at this stage, because our bibliographic data are normally assembled along with other metadata in spreadsheets and will be imported from there into our xml files by a semi-automated process at a later stage. -->
+           <p><!-- formulate epigraphic lemma here, using the items of primary bibliography --></p>
+        	<listBibl type="primary">
+				<bibl n="siglum"/><!-- one <bibl/> per item of primary bibliography. Every entry mentionned in apparatus  should hava a @n to declare its sigla -->
+			</listBibl>
+           <listBibl type="secondary">
+              <bibl/><!-- one <bibl/> per item of secondary bibliography -->
+           </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>
