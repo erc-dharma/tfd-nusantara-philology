@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href=https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
     <teiHeader>
         <fileDesc>
@@ -34,56 +32,92 @@
         		</availability>
         		<date from="2019" to="2025">2019-2025</date>
         	</publicationStmt>
-        	<sourceDesc><!-- only the handDesc can be filled in at this stage -->
-        		<msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
-        			<msIdentifier>
-        				<repository>DHARMAbase</repository>
-        				<idno/>
-        				<!-- don't modify this -->
-        			</msIdentifier>
-        			<msContents><!-- describe the intellectual content of an inscription -->
-        				<summary><!-- //// NOT MANDATORY  ////--></summary>
-        				<!-- offers the possibility to give a summary of the inscription's content -->
-        			</msContents>
-        			<physDesc>
-        				<handDesc>
-        					<p/>
-        				</handDesc>
-        			</physDesc>
-        		</msDesc>
-        	</sourceDesc>
+            <sourceDesc>
+                <listWit>
+                    <!-- Stuctured data or just text? -->
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Leiden</settlement>
+                                <institution>University Library (UB)</institution>
+                                <repository>Lontar</repository>
+                                <idno>Or. 23732</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author>Śāntarakṣita</author>
+                                    <title>Vipañcitārthā</title>
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                                </objectDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
         </fileDesc>
-    	<encodingDesc>
-    		<projectDesc>
-    			<p>This project DHARMA has received funding from the European Research Council (ERC)
-    				under the European Union's Horizon 2020 research and innovation programme (grant
-    				agreement no 809994).</p>
-    		</projectDesc>
-    		<schemaRef type="guide"
-    			key="EGDv01"
-    			url="https://halshs.archives-ouvertes.fr/halshs-02888186"/>
-    		<listPrefixDef>
-    			<prefixDef ident="bib"
-    				matchPattern="([a-zA-Z0-9\-\_]+)"
-    				replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-    				<p>Public URIs with the prefix bib to point to a Zotero Group Library named
-    					ERC-DHARMA whose data are open to the public.</p>
-    			</prefixDef>
-    			<prefixDef ident="part"
-    				matchPattern="([a-z]+)"
-    				replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
-    				<p>Internal URIs using the part prefix to point to person elements in the
-    					<ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-    			</prefixDef>
-    		</listPrefixDef>
-    	</encodingDesc>
+        <encodingDesc>
+            <projectDesc>
+                <!-- Part mandatory -->
+                <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+                <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+            </projectDesc>
+            <editorialDecl>
+                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <punctuation>
+                    <p/>
+                </punctuation>
+            </editorialDecl>
+            <samplingDecl>
+                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+                <p/>
+            </samplingDecl>
+            <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+            <!-- Will need to be updated once a more official realase is done -->
+            <variantEncoding method="parallel-segmentation" location="internal"/>
+            <!-- Part mandatory -->
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- choose the language(s) of your text, remove the others -->
+                <language ident="san-Latn">Sanskrit, romanized</language>
+                <language ident="kaw-Latn">Old Javanese, romanized</language>
+                <language ident="tam-Latn">Tamil, romanized</language>
+                <language ident="kan-Latn">Kannada, romanized</language>
+                <language ident="tel-Latn">Telugu, romanized</language>
+            </langUsage>
+            <textClass>
+                <keywords>
+                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+                    <term/>
+                    <!-- Ignore this element for the time being. -->
+                </keywords>
+            </textClass>
+        </profileDesc>
     	<revisionDesc>
+    	    <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
     		<change who="part:argr" when="2021-04-18" status="draft">started diplomatic edition</change>
     	</revisionDesc>
     </teiHeader>
-    <text xml:space="preserve">
+    <text xml:space="preserve" xml:lang="kaw-Latn">
       <body>
-         <div type="edition" xml:lang="kaw-Latn">
 <p>
 
 <!-- https://archive.org/details/tatwa-kabuddhan/mode/1up -->
@@ -156,19 +190,6 @@ vvit karaṇaṃ maśarīraṃ, śarīraṃ vidḍyaguṇavat∙,
 yan a:guṇa: etat∙ devaṃ, vibhūh sarvvavit∙ deśavat∙ || 
 ka, saṅke ma:saka:la  ikaṅ śarīra, [jump-fol7v1], taha si, a:pan  katavǝṅan deniṅ sakala, praḍa:naśarīra bhaṭa:ra, mataṅyan tan vnaṅ maṅkana, kunǝṅ riṅ antaśarīra, sidḍa viśeṣa mokṣa:vak, tan hana ma:na vṅisira, ka, mati rumuhun tinivakǝn tan pagagaḍa, ikaṅ tumakitaki iki, paḍa niṣkala pati, mvaṅ niṣkala maṅke, ya ta byakta tuhutuhu, ṅa,  hayva kady aṅrǝṅö gǝröh, deniṅ maṅrǝṅö ri kojaran bhaṭa:ra, ka, gumuruhguruh tan vruh ri vkasnya, hayva kady aṅambuṅ mnur kinaṇḍut deniṅ lyan, deniṅ maṅrasani rasa bhaṭa:ra, maṅambuṅ tan vruh ri uṅgvanya, kunaṅ saṅ putus, vruh uṅgvaniṅ tan pahuṅgvan, vruh ri vkasniṅ tan pavkas, uṅgvaniṅ tan pahuṅgvan, kunaṅ vyaktinya, bhaṭa:ra yan tan tu[jump-fol7r1]mut śarīra, yan avūk drava ikaṅ śarīra, tan milu bhaṭa:ra avūk, haneṅ prakṛti juga sira, prakṛti, ṅa, ikaṅ taya, kunaṅ hetuniṅ kasaputan ptǝṅ riṅ mati, a:panya  tan alah ikaṅ saṅśaya, vikalpa, tṛṣṇa, lupa, ri ka:laniṅ hurip, hetuniṅ maṅdadi muvah, saṅke prakṛti ika:, maṅandǝli śukla śoṇita, *kelvilu bhaṭa:ra deniṅ hiḍǝp, mvaṅ tutur, a:pan ya maṅhanakǝn caturvikalpa, nimittaniṅ tan kasa[fol7r3]putan ptǝṅ riṅ antaśarīra, mataṅyan svayaṃ bhaṭa:ra manu riṅ ra:t, tan milu bhuvana, tan kasaputan ptǝṅ, tan kapaḍaṅan a:ditya, a:pan gavenira riṅ vikalpa ika:, ka, maṅke iki  vkasniṅ viśeṣa:ntyapa:da [jump-fol8v1] sakeṅ śarīra ikaṅ aji mvaṅ guṇa, sakeṅ guṇa aji ikaṅ deva, sakeṅ deva tuduh ikaṅ i sor i ruhur, kulvan, vetan, lvar, kidul, ri maḍya, iti saṅ hyaṅ pamutus, kayatnakna de saṅ sevaka ḍarma, hayva cavuh bvat upadrava ||
 -->
-
-         </div>
-        <div type="bibliography">
-	<!--bibliography encoded as per section §9.4 -->
-	<!-- NB: you are encouraged to experiment with encoding bibliography to the extent you have the bibliographic data available, but it is not mandatory at this stage, because our bibliographic data are normally assembled along with other metadata in spreadsheets and will be imported from there into our xml files by a semi-automated process at a later stage. -->
-           <p><!-- formulate epigraphic lemma here, using the items of primary bibliography --></p>
-        	<listBibl type="primary">
-				<bibl n="siglum"/><!-- one <bibl/> per item of primary bibliography. Every entry mentionned in apparatus  should hava a @n to declare its sigla -->
-			</listBibl>
-           <listBibl type="secondary">
-              <bibl/><!-- one <bibl/> per item of secondary bibliography -->
-           </listBibl>
-        </div>
       </body>
   </text>
 </TEI>

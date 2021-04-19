@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+<?xml-model href=https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Kuṭāra-Mānava</title>
+              <!-- Possibility to add the <editor> tag:
+        <editor ref="part:ID">
+					<forename></forename>
+					<surname></surname>
+				</editor>
+				OR
+				<editor ref="part:ID">
+					<name></name>
+				</editor>
+        -->
+              <respStmt>
+                <!-- repeat the respStmt when necessary -->
+                <resp>creation of the file</resp>
+                <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                <persName ref="part:jodo"><!-- update the id -->
+                  <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                  <surname>Doe</surname>
+                </persName>
+              </respStmt>
             </titleStmt>
             <publicationStmt>
-                <authority></authority>
+                <authority>DHARMA</authority>
                 <idno type="filename">DHARMA_DiplEdKutaraManavaLeidenOr2215</idno>
+              <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+                </licence>
+              </availability>
+              <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -55,14 +82,58 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
+      <encodingDesc>
+        <projectDesc>
+          <!-- Part mandatory -->
+          <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+          <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+        </projectDesc>
+        <editorialDecl>
+          <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+          <correction>
+            <p/>
+          </correction>
+          <normalization>
+            <p/>
+          </normalization>
+          <punctuation>
+            <p/>
+          </punctuation>
+        </editorialDecl>
+        <samplingDecl>
+          <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+          <p/>
+        </samplingDecl>
+        <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+        <!-- Will need to be updated once a more official realase is done -->
+        <variantEncoding method="parallel-segmentation" location="internal"/>
+        <!-- Part mandatory -->
+      </encodingDesc>
+      <profileDesc>
+        <langUsage>
+          <!-- choose the language(s) of your text, remove the others -->
+          <language ident="san-Latn">Sanskrit, romanized</language>
+          <language ident="kaw-Latn">Old Javanese, romanized</language>
+          <language ident="tam-Latn">Tamil, romanized</language>
+          <language ident="kan-Latn">Kannada, romanized</language>
+          <language ident="tel-Latn">Telugu, romanized</language>
+        </langUsage>
+        <textClass>
+          <keywords>
+            <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+            <term/>
+            <!-- Ignore this element for the time being. -->
+          </keywords>
+        </textClass>
+      </profileDesc>
+      <revisionDesc>
+        <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
+        <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+      </revisionDesc>
     </teiHeader>
-    <facsimile>
-        <graphic url=""/>
-    </facsimile>
-    <text>
+    <text xml:space="preserve" xml:lang="x-ojw-Latn">
         <body>
-            <div type="edition" xml:space="preserve" xml:lang="x-ojw-Latn">
-                <p>
+         <p>
 <pb n="1r"/>
   <lb n="1"/> <g type="punctuation">||0||</g> A:vigna:m astu , <g type="punctuation">||0||</g>
   <!-- #1 --> riṅ aṣṭadḍu:ṣṭa maṅke varahakna: ,, 0 ,, A:mateni voṁ <space type="bindinghole"/> tan padoṣa, hakon amatenana vo<supplied reason="lost">ṁ</supplied> tan padoṣa,, A:ṅan<supplied reason="lost">i</supplied>n<supplied reason="lost">i</supplied> vo<supplied reason="lost">ṁ</supplied> ta<unclear>n padoṣa,, </unclear> <gap reason="illegible" quantity="3" unit="character" precision="low"/>
@@ -75,11 +146,11 @@
   n="1" break="no"/>ran saparane lavan ḍuṣṭa, ṣamitra lavan ḍuṣṭa
   <app loc="1r4-1v1"><lem><unclear>sapadulu</unclear>ran saparane lavan ḍuṣṭa, ṣamitra lavan ḍuṣṭa</lem>
     <rdg source="#J">samitra lavan duṣṭa, sapaduluran saparane lavan duṣṭa,</rdg>
-    <rdg source="#M">samitra lavan duṣṭa, sapadulūra<subst><del rend="corrected">la</del><add place="below">n la</add></subst>van duṣṭa,</rdg></app>
+    <rdg wit="#M">samitra lavan duṣṭa, sapadulūra<subst><del rend="corrected">la</del><add place="below">n la</add></subst>van duṣṭa,</rdg></app>
   haveḥ gnaḥ riṁ duṣṭa, Atulu<unclear reason="faded">ṁ</unclear> duṣṭa,, Iku <space type="bindinghole"/> haṣṭaduṣṭa harane,, <!-- J: ta instead of aṣṭa duṣṭa arane-->
   kaṅ lilima pada doṣanana harttha: maro<unclear reason="faded">ṁ</unclear> lakṣa r<unclear reason="faded">i</unclear> duṣṭa <unclear>satuṅgal-tuṅgal·</unclear>
   <app><lem>maroṅ lakṣa ri duṣṭa satuṅgal-tuṅgal</lem>
-    <rdg source="#J">nora vnaṅ doṣanana pati denira saṅ amava bhumi; amateni voṅ tan padoṣa, akon amatenana voṅ tan padoṣa,
+    <rdg wit="#J">nora vnaṅ doṣanana pati denira saṅ amava bhumi; amateni voṅ tan padoṣa, akon amatenana voṅ tan padoṣa,
        anatoni voṅ tan padoṣa; duṣṭa tətlu iku, yan sayəkti sacihna, katlu ḍəṇḍa pati, arane katlu duṣṭa atoh avake, yan amalaku huripən iṅ saṅ amava bhumi, katlu ḍəṇḍanən pataṅ lakṣa vivijinən iṅ duṣṭa satuṅgalsatuṅgal kahilaṅane doṣane; hana dene kaṅ sapaṅan lāvan duṣṭa, sadulur lavan duṣṭa, amitra lāvan duṣṭa, aveh gnah riṅ duṣṭa, iku kalima paḍa ḍəṇḍanən aṅroṅ lakṣa</rdg></app>
   <supplied reason="lost">deni</supplied><lb
   n="2" break="no"/>ra saṅ amava bhūmi,, yen uvūs enak ka:sapekṣ<subst><del rend="corrected">e</del><add place="overstrike">a</add></subst>n deniṁ sakṣi kaduṣṭane ,, 0 ,,
@@ -984,25 +1055,7 @@ n="56r" break="no"/><lb
   <!-- #213 --> riṁ rarap· śeṣa kav{v/ta:]oṁṅane, huvus vinehan tu{va:}kon ḍeni jajaka, tumuli jajaka hiku haṅucap aṅuṅsi darmma, lavan aṅucap a{*}ṅulati Arva, hatiṅgal tukon jajaka hika:, liñok ujar riṁ
 <pb n="56v"/>
   <lb n="1"/>
-
-
-
-
-
-</p>
-            </div>
-            <div type="apparatus">
-                <p>external apparatus criticus (if applicable)</p>
-            </div>
-            <div type="translation">
-                <p>translation(s)</p>
-            </div>
-            <div type="commentary">
-                <p>commentary</p>
-            </div>
-            <div type="bibliography">
-                <p>bibliography of previous editions, discussion, etc.</p>
-            </div>
+</p>   
         </body>
     </text>
 </TEI>
