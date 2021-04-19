@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+<?xml-model href=https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Aṣṭādadaśavyavahāra</title>
+        <!-- Possibility to add the <editor> tag:
+        <editor ref="part:ID">
+					<forename></forename>
+					<surname></surname>
+				</editor>
+				OR
+				<editor ref="part:ID">
+					<name></name>
+				</editor>
+        -->
+        <respStmt>
+          <!-- repeat the respStmt when necessary -->
+          <resp>creation of the file</resp>
+          <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+          <persName ref="part:jodo"><!-- update the id -->
+            <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+            <surname>Doe</surname>
+          </persName>
+        </respStmt>
       </titleStmt>
       <publicationStmt>
-        <authority></authority>
+        <authority>DHARMA</authority>
         <idno type="filename">DHARMA_DiplEdAstadasaVyavaharaPerpusnasL882</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">
+            <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+            <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+          </licence>
+        </availability>
+        <date from="2019" to="2025">2019-2025</date>
       </publicationStmt>
       <sourceDesc>
         <msDesc>
@@ -44,20 +71,55 @@
           </history>
         </msDesc>
       </sourceDesc>
+    </fileDesc>
+      <encodingDesc>
+        <projectDesc>
+          <!-- Part mandatory -->
+          <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+          <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+        </projectDesc>
+        <editorialDecl>
+          <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+          <correction>
+            <p/>
+          </correction>
+          <normalization>
+            <p/>
+          </normalization>
+          <punctuation>
+            <p/>
+          </punctuation>
+        </editorialDecl>
+        <samplingDecl>
+          <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+          <p/>
+        </samplingDecl>
+        <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+        <!-- Will need to be updated once a more official realase is done -->
+        <variantEncoding method="parallel-segmentation" location="internal"/>
+        <!-- Part mandatory -->
+      </encodingDesc>
       <profileDesc>
 	<langUsage>
       	  <language ident="kaw-Latn">Old Javanese, romanized</language>
 	</langUsage>
+        <textClass>
+          <keywords>
+            <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+            <term/>
+            <!-- Ignore this element for the time being. -->
+          </keywords>
+        </textClass>
       </profileDesc>
-    </fileDesc>
+    
+    <revisionDesc>
+      <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
+      <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+    </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic url="Perpusnas L822"/>
-  </facsimile>
-  <text xml:lang="kaw-Latn">
-    <body xml:lang="kaw-Latn">
-      <div type="edition" xml:space="preserve" xml:lang="x-ojw-Latn">
-        <p>                
+  <text xml:space="preserve" xml:lang="kaw-Latn">
+    <body>
+        <p xml:lang="x-ojw-Latn">                
           <pb n="3v"/>
           <lb n="2"/> <g type="punctuation">|| ◯ ||</g> 
           <q><lg>
@@ -99,19 +161,6 @@
         vovohaN , pucaṅ , sekət <choice><reg>pa<lb
 	break="no"/>ṇa</reg><orig>na</orig></choice>doṣanya , <num value="1000">1000</num> , yan tan rinakṣa , tan tinuṅgu , <choice><reg>śata</reg><orig>sata</orig></choice>paṇa<choice><reg>daṇḍa</reg><orig>dhaṇḍa</orig></choice> , 2000 ,, <g type="filler">§</g> <space type="stringhole"/> linokikansa deniṁṅ amet∙ ||
 	</p>                
-      </div>
-      <div type="apparatus">
-        <p>external apparatus criticus (if applicable)</p>
-      </div>
-      <div type="translation">
-        <p>translation(s)</p>
-      </div>
-      <div type="commentary">
-        <p>commentary</p>
-      </div>
-      <div type="bibliography">
-        <p>bibliography of previous editions, discussion, etc.</p>
-      </div>
     </body>
   </text>
 </TEI>
