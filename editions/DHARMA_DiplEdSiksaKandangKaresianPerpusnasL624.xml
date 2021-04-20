@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
-  <teiHeader xml:lang="eng">
+<?xml-model href=https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng"> 
+  <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Saṅ Hyaṅ Siksa Kandaṅ Karəsian B</title>
         <respStmt>
           <resp>creation of the file</resp>
           <resp>intellectual authorship of edition</resp>
-          <persName ref="part:agdu">
+          <persName ref="part:adgu">
             <name>Aditia Gunawan</name>
           </persName>
         </respStmt>
       </titleStmt>     
       <publicationStmt>
-        <authority>DHARMA
-          <note>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).
-          </note>
-        </authority>
+        <authority>DHARMA</authority>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">DHARMA_DiplEdSiksaKandangKaresianPerpusnasL624</idno>
         <availability>
@@ -27,34 +27,87 @@
         </availability>
         <date from="2019" to="2025">2019-2025</date>
       </publicationStmt>
-      <sourceDesc><!-- only the handDesc can be filled in at this stage -->
-        <msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
-          <msIdentifier>
-            <repository>DHARMAbase</repository>
-            <idno/><!-- don't modify this -->
-          </msIdentifier>
-          <msContents><!-- describe the intellectual content of an inscription -->
-            <summary><!-- //// NOT MANDATORY ////--></summary> <!-- offers the possibility to give a summary of the inscription's content -->
-          </msContents>
-          <physDesc>
+      <sourceDesc>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Leiden</settlement>
+                <institution>University Library (UB)</institution>
+                <repository>Lontar</repository>
+                <idno>Or. 23732</idno>
+              </msIdentifier>
+              <msContents>
+                <!-- the msContents isn't mandatory -->
+                <msItem>
+                  <author>Śāntarakṣita</author>
+                  <title>Vipañcitārthā</title>
+                </msItem>
+              </msContents>
+              <physDesc>
+                <objectDesc>
+                  <!-- Here you can give a physical description of the manuscript in prose-->
+                  <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                </objectDesc>
             <handDesc> <p> Generally, this manuscript show some characteristic like those we found in Old Sundanese manuscript tradition (1) The use of CyV to be read as CVy just like we find in Old Sundanese manuscripts; (2) Differentiation between pasangan r and r̥ ; (3) Hard to distinguish the use of : whether for make a long vocal or to geminate the consonant, both cases are found; (4) The use of special type of virāma under the aksara k; (5) The use of the number 2 for the segment ro; (6) The use of pasangan in the main line of text, e.g., l and m ; (7) The use of two dots to represent ulu (vocalisation i) and three dots to represent pepet; (8) There are two type of layar, Indonesian and Indian style </p>
             </handDesc>
-          </physDesc>
-        </msDesc>
+              </physDesc>
+              <history>
+                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+              </history>
+            </msDesc>
       </sourceDesc>
-      <!-- adgu: need to describe binding-holes -->
-      
     </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <!-- Part mandatory -->
+        <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+        <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+      </projectDesc>
+      <editorialDecl>
+        <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+        <correction>
+          <p/>
+        </correction>
+        <normalization>
+          <p/>
+        </normalization>
+        <punctuation>
+          <p/>
+        </punctuation>
+      </editorialDecl>
+      <samplingDecl>
+        <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+        <p/>
+      </samplingDecl>
+      <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+      <!-- Will need to be updated once a more official realase is done -->
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+      <!-- Part mandatory -->
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <!-- choose the language(s) of your text, remove the others -->
+        <language ident="san-Latn">Sanskrit, romanized</language>
+        <language ident="kaw-Latn">Old Javanese, romanized</language>
+        <language ident="tam-Latn">Tamil, romanized</language>
+        <language ident="kan-Latn">Kannada, romanized</language>
+        <language ident="tel-Latn">Telugu, romanized</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+          <term/>
+          <!-- Ignore this element for the time being. -->
+        </keywords>
+      </textClass>
+    </profileDesc>
     <revisionDesc>
-      
+      <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
       <change who="part:adgu" when="2020-03-10" status="draft">Initial encoding of the edition</change>
     </revisionDesc>
-    
   </teiHeader> 
-  <text xml:space="preserve">
+  <text xml:space="preserve" xml:lang="kaw-Latn">
     <body>
-      <div type="edition" xml:lang="kaw-Latn">
-
         <ab>
           
           <!-- 85 a+ -->
@@ -384,9 +437,7 @@
 <lb n="20v2" break="no"/>si, ña mana tritaṁtu na pinaguḥniṁ bvana, travarga hurip·niṁ jagat·, ya ta<space type="binding-hole"/>sinaṁguḥ trataṁtu di nu rye ṅanya, təguḥkən· pagəḥkən· sahiṅan:iṁ tuhu, tәpəta
 <lb n="20v3"/><gap reason="lost" unit="chars" quantity="2"/>byak· ta varr̥ta manaḥ mana krata na bvana, mana hayu Ikaṁ jagat·, ke<space type="binding-hole"/>na na tvaḥ janma kapahayu, kitu kehna saṁ padita, pagəḥ di kapa ditan· gəḥhan·niṁ kR̥ta
 <lb n="20v4"/><gap reason="lost" unit="chars" quantity="3"/>pagəḥ di kapagəhan·<del rend="strikeout">na</del>naniṁ krata, saṁ maṁṅuyu pagəḥ di kapagəhhan·nana krata, saṁ palikən· pagəḥ di kapali<add place="below">ka</add>n·nan:ana krata, saṁ tete 
-
         </ab>
-   </div>
   </body>
  </text>
 </TEI>
