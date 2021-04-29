@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksaguru">
     <teiHeader>
         <fileDesc>
@@ -54,18 +57,33 @@
     </facsimile>
     <text>
         <body>
-           
+           <!-- CONVENTION:
+           Menggunakan prinsip disanskretakan. Kata-kata Jawa Kuna distandarkan sesuai OJED.
+perbedaan ejaan dalam naskah yang tidak signifikan, seperti penggunaan n dental alih-alih ṇ retrofleks, pertukaran sibilan, juga antara konsonan aspirat dan non-aspirat tidak dicatat dalam aparat kritik.  
+ṭā dalam transliterasi diubah menjadi tra tanpa ditandai dalam aparat kritik.
+vokal panjang yang seharusnya pendek atau sebaliknya tidak ditandai dalam aparat.
+Punctuation marks, which are reflected in single manuscript reading, are not indicated in the aparat. 
+geminasi dalam kebanyakan kasus dihilangkan, yang sering terjadi adalah bunyi aspirat antara ḥ dan h (kinavruḥhan → kinavruhan), bunyi sengau ṁ dan ṅ (taṁṅan → taṅan), kecuali geminasi yang memang memisahkan kata (vuṁkunuṁ ṅaranya)
+diftong ai dipertahankan
+varian va untuk o dipertahankan selama terdapat di kamus.
+normalisasi tidak dicatat dalam aparat kritik jika varian bacaan antar naskah sama. Jika bacaan berbeda, maka normalisasi dicatat, contoh: śīghra: norm. sigra ms633; sagraḥ ms642
+pepet yang dilesapkan ditambahkan seperti tmǝn menjadi tǝmǝn
+Hanya mencatatkan perbedaan bacaan yang signifikan dalam aparatus, jadi bacaan-bacaan seperti: 
+darma di satu naskah dan damma di naskah lain tidak dilaporkan dalam aparatus
+dvesa dan dvosa
+Unsignificant variant lem vs rdg:
+           1. the use of h lavaṇa vs lavaḥna-->
             <div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
                <div type="chapter" n="1">
           <head type="editorial" xml:lang="eng">the pure circle of three bodily domains</head>
-                <p><pb ed="L642 L633" n="1v"/>ndah nihan varahakna mami rumuhun ri saṅ sevaka dharma katkan kita rumәṅәkna 
+                <p><pb edRef="L642 L633" n="1v"/>ndah nihan varahakna mami rumuhun ri saṅ sevaka dharma katkan kita rumәṅәkna 
                     <app><lem wit="#L633">kavivekan</lem><rdg wit="#L642">kaviven</rdg></app> saṅ hyaṅ dharma, mvaṅ 
                     <app><lem type="emn">kabyavasthānikaṅ</lem><rdg wit="#L642">kabyaṁvasṭanikaṁ</rdg><rdg wit="#L633">kabyavas·tanika</rdg></app> saṅ hyaṅ ajñāna, hana 
                     <app><lem type="norm">trikāyamaṇḍala</lem><rdg wit="#L633">trikaya man·dala</rdg><rdg wit="#L642">trakayamandala</rdg></app> pariśuddha, 
                     <app><lem wit="#L642">ṅa</lem><rdg wit="#L633">ṅaranya</rdg></app>, inujarakәn saṅ pandita ri saṅ sevaka dharma, ya pantahan 
                     <app><lem type="emn">kveki</lem><rdg wit="#L642">kvaki</rdg><rdg wit="#L633">kvakiṅ</rdg></app> ulah śabda lavan ambәk, 
                     <app><lem type="emn">yan kva</lem><rdg wit="#L642">yekva</rdg><rdg wit="#L633">yekvaṁ</rdg></app> hana 
-                    <app><lem type="norm">ma<pb ed="L633" n="2r"/>līna</lem><rdg wit="#L642">malina:</rdg><rdg wit="#L633">maṁline</rdg></app> ri 
+                    <app><lem type="norm">ma<pb edRef="L633" n="2r"/>līna</lem><rdg wit="#L642">malina:</rdg><rdg wit="#L633">maṁline</rdg></app> ri 
                     <app><lem type="emn">hr̥dayanta</lem><rdg wit="#L642">pr̥ḍayanta</rdg><rdg wit="#L633">prǝdayan·ta</rdg></app>, ya teka 
                     <app><lem wit="#L642">prah</lem><rdg wit="#L633">prǝh</rdg></app> pәgәṅәn rakṣa pahayu juga ya, apan 
                     <app><lem type="emn">hetuniṅ</lem><rdg wit="#L642">hentaniṁ</rdg><rdg wit="#L633">hentuniṁ</rdg></app> 
@@ -73,7 +91,7 @@
                 
                 <p>yan pinahala ulahta, śabdata, 
                     <app><lem type="norm">ambәkta</lem><rdg wit="#L633">Ambhǝkta</rdg><rdg wit="#L642">Ambhakta</rdg></app>, niyata 
-                    <app><lem type="norm">kapaṅguhnikaṅ</lem><rdg wit="#L633 #L642">kapaguḥnikaṁ</rdg></app> hala denta yan maṅkana, yan pinahayu ulahta, <pb ed="#L642" n="2r"/>
+                    <app><lem type="norm">kapaṅguhnikaṅ</lem><rdg wit="#L633 #L642">kapaguḥnikaṁ</rdg></app> hala denta yan maṅkana, yan pinahayu ulahta, <pb edRef="#L642" n="2r"/>
  śabdata, ambәkta, avas kapaṅguhnikaṅ hayuta yan maṅkana, mataṅyan hana paribhāṣa kumva ṅ 
                     <app><lem wit="#L642">madyus-dyus</lem><rdg wit="#L633">ḍyas·ḍyas·</rdg></app> vvay tinәmunya 
                     <app><lem type="emn">kasvabhāvaniṅ</lem><rdg wit="#L642 #L633">kasvambhavaniṁ</rdg></app> janma, hala tumәmu halanya, hayu tumәmu hayunya, maṅkana 
@@ -82,15 +100,13 @@
                 <p>ndya ḍr̥ṣṭānta, i riki dadyanya, hala deniṅ halanya, hayu deniṅ hayunya, nihan upadyanta hana ya maṇik anargha, ṅa, tan 
                     <app><lem wit="#L642">kinavruhan</lem><rdg wit="#L633">kinavraḥhan·</rdg></app> mulyanya, tan paprameya ri rahayu, kaliṅanya ikaṅ maṇik anargha, lavan maṇik 
                     <app><lem type="emn">sarveṣṭa</lem><rdg wit="#L642">ṣavesṭaṭā</rdg><rdg wit="#L633">ṣavesṭa</rdg></app>, yvagya karikāpusәn 
-                    <app><lem type="emn">kari</lem><rdg wit="#L642 #L633">ta ri</rdg></app> gaṅsa, tambaga lavan timah, aparan ta yvagyanika, niyatār <pb ed="#L642" n="2v"/> mijil śrīnika lavan dhanuhnika, maṅka pva 
+                    <app><lem type="emn">kari</lem><rdg wit="#L642 #L633">ta ri</rdg></app> gaṅsa, tambaga lavan timah, aparan ta yvagyanika, niyatār <pb edRef="#L642" n="2v"/> mijil śrīnika lavan dhanuhnika, maṅka pva 
                     <app><lem wit="#L642">yvagya</lem><rdg wit="#L633">gyapa</rdg></app> paṅapusan ta irikaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik 
                     <app><lem type="emn">sarveṣṭa</lem><rdg wit="#L642 #L633">ṣavesṭa</rdg></app>, 
                 </p>
                 
-                <p>nihan liṅnira ri saṅ hyaṅ śāstra</p>
-                <p><foreign>lpas ca vuṁkunuṁ ceva, aḍika udika tatte tatur tathya tuṅgәṁ, ta deva nigaḍyate </foreign></p>
-                <p>apan sinaṅguh rambut lәpas, ṅa, vulu pasagi, ṅa, hana uḍika, hana tater, hana sorasa, ṅa, ika ta kabaih yvagya karika paṅapusan ta irikaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik 
-                    <app><lem type="emn">sarveṣṭa</lem><rdg wit="#L642 #L633">ṣavesṭa</rdg></app>, taham pih yāpusәn ta ri gaṅsa tambaga lavan timah, aparan ta yvagyanika, paṅapusan ta irikaṅ maṇik anargha, paṅikә<pb ed="#L642" n="3r"/>tan ta irikaṅ maṇik sarveṣṭa, nahan liṅnya ri saṅ hyaṅ śāstra, <foreign>lpәs ca vuṁkunuṁ 
+                <p>nihan liṅnira ri saṅ hyaṅ śāstra <foreign>lpas ca vuṁkunuṁ ceva, aḍika udika tatte tatur tathya tuṅgәṁ, ta deva nigaḍyate </foreign>, apan sinaṅguh rambut lәpas, ṅa, vulu pasagi, ṅa, hana uḍika, hana tater, hana sorasa, ṅa, ika ta kabaih yvagya karika paṅapusan ta irikaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik 
+                    <app><lem type="emn">sarveṣṭa</lem><rdg wit="#L642 #L633">ṣavesṭa</rdg></app>, taham pih yāpusәn ta ri gaṅsa tambaga lavan timah, aparan ta yvagyanika, paṅapusan ta irikaṅ maṇik anargha, paṅikә<pb edRef="#L642" n="3r"/>tan ta irikaṅ maṇik sarveṣṭa, nahan liṅnya ri saṅ hyaṅ śāstra, <foreign>lpәs ca vuṁkunuṁ 
                         <app><lem wit="#L633">ceva</lem><rdg wit="#L642">cova</rdg></app>, Aḍi Ikaṁ, Uḍi Ika:, tate:r tatur tatya tuṅgәṅ nu yvagyanika</foreign>
                     <!-- THIS PARAGRAPH IS STILL CONFUSING -->
                    <!-- Apan ṣinaṁguḥ ram·but· lpas· <g type="filler">§</g>
@@ -112,21 +128,21 @@
                     <app><lem type="emn">sarveṣṭa</lem><rdg wit="#L642 #L633">ṣavesṭa</rdg></app>,</p>
                 
                 <p>ya ta kapusan deni 
-                    <app><lem wit="#L633">gaṅsa</lem><rdg wit="#L642">naṁsa</rdg></app> ta<pb ed="#L642" n="3v"/>mbaga lavan timah<pb ed="#L633" n="5r"/>, tar mijil śrīnika lavan dhanuhnika, 
+                    <app><lem wit="#L633">gaṅsa</lem><rdg wit="#L642">naṁsa</rdg></app> ta<pb edRef="#L642" n="3v"/>mbaga lavan timah<pb edRef="#L633" n="5r"/>, tar mijil śrīnika lavan dhanuhnika, 
                     <app><lem wit="#L642">aparan</lem><rdg wit="#L633">paran</rdg></app> tar 
                     <app><lem type="norm">yuktinika</lem><rdg wit="#L642 #L633">uk·tinika</rdg></app>, salah nija salah karma, salah svara, bhava ṅaranika, iva maṅkana ta saṅ hyaṅ dharma viśeṣa, sira maṇik anargha, ṅuniveh avakta yeka manik sarveṣṭa ṅaranya, ndah ta yāṅkәn gaṅsa tambaga lavan timah ika tan yvagya 
-                    <app><lem wit="#L642">rakәtakna</lem><rdg wit="#L633">ra:kǝn·takǝna</rdg></app> iri<pb ed="#L633" n="5v"/>kaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik 
+                    <app><lem wit="#L642">rakәtakna</lem><rdg wit="#L633">ra:kǝn·takǝna</rdg></app> iri<pb edRef="#L633" n="5v"/>kaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik 
                     <app><lem type="emn">sarveṣṭa</lem><rdg wit="#L642 #L633"/></app>,</p> 
                 
                 <p>nihan ya ulah mahala, śabda tar yukti, 
                     <app><lem type="norm">ambǝk</lem><rdg wit="#L633">Ambhǝk</rdg><rdg wit="#L642">Ambhak</rdg></app> magәlәh ri kapva 
-                    <app><lem wit="#L633">kaṅ</lem><rdg wit="#L642">ṭā</rdg></app> janma, ṅuniveh ri saṅ paṇḍita, kaliṅanya tan yvagya kari ulah mahala śabda tar yukti, ambǝk magәlәh, rasā<pb ed="#L642" n="4r"/>kәn i saṅ hyaṅ dharma, lavan 
-                    <app><lem wit="#L642">arakṣa</lem><rdg wit="#L633">ri sari</rdg></app> śarīranta, ṅuni<pb ed="#L633" n="6r"/>veh ri saṅ paṇḍita, taham asih tar yukti ika, 
+                    <app><lem wit="#L633">kaṅ</lem><rdg wit="#L642">ṭā</rdg></app> janma, ṅuniveh ri saṅ paṇḍita, kaliṅanya tan yvagya kari ulah mahala śabda tar yukti, ambǝk magәlәh, rasā<pb edRef="#L642" n="4r"/>kәn i saṅ hyaṅ dharma, lavan 
+                    <app><lem wit="#L642">arakṣa</lem><rdg wit="#L633">ri sari</rdg></app> śarīranta, ṅuni<pb edRef="#L633" n="6r"/>veh ri saṅ paṇḍita, taham asih tar yukti ika, 
                     <app><lem type="norm">punaruktanikaṅ</lem><rdg wit="#L642">punaḥruktaḥnikaṁ</rdg><rdg wit="#L633">punaḥrutaḥnikaṁ</rdg></app> kavvaṅanta, hilaṅ masihniṅ 
                     <app><lem wit="#L642">manak</lem><rdg wit="#L633">mavak</rdg></app> maṅrabi, maṇik makadaṅ mvaṅ 
                     <app><lem wit="#L642">renanta</lem><rdg wit="#L633">renakta</rdg></app>, ya tan vnaṅ rumakṣa ikaṅ ulah mahala śabda tar yukti ambǝk magәlәh ri kapva kaṅ janma, ṅuniveh ri saṅ sādhu, 
                     <app><lem wit="#L633">ndya</lem><rdg wit="#L642"><add place="below">na</add>dyi</rdg></app> yvagya paṅrakṣanta, ri śarīranta, 
-                    <app><lem wit="#L642">yeka</lem><rdg wit="#L633">yekvaṁ</rdg></app> santaṅvaṅ liṅ saṅ paṇḍita, kanaka santaṅva ṅaranya<pb ed="#L633" n="6v"/>, ulah rahayu, śabda rahayu, ambәk rahayu, ya 
+                    <app><lem wit="#L642">yeka</lem><rdg wit="#L633">yekvaṁ</rdg></app> santaṅvaṅ liṅ saṅ paṇḍita, kanaka santaṅva ṅaranya<pb edRef="#L633" n="6v"/>, ulah rahayu, śabda rahayu, ambәk rahayu, ya 
                     <app><lem type="norm">rakṣakna</lem><rdg wit="#L642">rakṣakǝna</rdg><rdg wit="#L633">rasakǝn</rdg></app> saṅ hyaṅ darma,   
                 </p>
                <p>nihan mataṅyan trikāya maṇḍala pariśuddha ṅaranya, liṅ saṅ paṇḍita, tri ṅaraniṅ tәlu<supplied reason="subaudible">,</supplied> śuddha ta ya 
@@ -147,7 +163,7 @@
                 <p>nihan lakṣaṇanta viku, hayva tr̥ṣṇa ri hulun juga, byakta taṅ rambut pinәgatanya 
                     <app><lem wit="#L633">tan</lem><rdg wit="#L642">ta</rdg></app> pәgati, tan 
                     <app><lem type="emn">kavighāta</lem><rdg wit="#L642">kavigataḥ</rdg><rdg wit="#L633">kivigata</rdg></app> malaṅ kva hana, ya tika pariśuddha 
-                    <app><lem type="norm">timpalakna</lem><rdg wit="#L642">timpalakǝnkan</rdg><rdg wit="#L633">timpalakǝna</rdg></app> kuna rǝtakna, ya ta mas <unclear>r̥kr̥t</unclear> masәkar vañva, ṅa, maṅkana ta kita maseva<pb ed="#L642" n="5r"/>ka di saṅ paṇḍita, hayva ta kita gumavayakna gurutalpaka, jagat upadrava, 
+                    <app><lem type="norm">timpalakna</lem><rdg wit="#L642">timpalakǝnkan</rdg><rdg wit="#L633">timpalakǝna</rdg></app> kuna rǝtakna, ya ta mas <unclear>r̥kr̥t</unclear> masәkar vañva, ṅa, maṅkana ta kita maseva<pb edRef="#L642" n="5r"/>ka di saṅ paṇḍita, hayva ta kita gumavayakna gurutalpaka, jagat upadrava, 
                     <app><lem wit="#L633">katakuta</lem><rdg wit="#L642">kathakutan·</rdg></app> ri sira, bhaktyānukul ta kita ri saṅ guru, gavayakna 
                     <app><lem type="emn">kasupraṇata</lem><rdg wit="#L642 #L633">kasuprana</rdg></app>, di*<!--OS--> saṅ guru, tǝka ri saṅ paṇḍita, dataṅ ta ri kasādhyanya,  
                 </p>
@@ -157,7 +173,7 @@
                     <app><lem type="norm">dәṇḍana vinigraha</lem><rdg wit="#L642">dǝndana vinigraha</rdg><rdg wit="#L633">dǝndan avigraha</rdg></app> katakuta ri sira, marapvan ta kita na 
                     <app><lem wit="#L642">kajval</lem><rdg wit="#L633">kajvala</rdg></app> pati biṣama, bhaktya ta kita ri prabhu, mataṅyan tәka ri 
                     <app><lem type="norm">kasādhyanya</lem><rdg wit="#L642">kadaḍyanya</rdg><rdg wit="#L633">kasanḍyanya</rdg></app>, 
-                    <app><lem type="emn">maṅkana</lem><rdg wit="#L633 #L642">makana</rdg></app> ta kita rāma, kalaṅ, gusti, patih ri banva, kunaṅ dharma tulājñānaniṅ kadi kita, hayva ta kita ti<pb ed="#L642" n="5v"/>mpaṅ svara ri byavahāra, tan 
+                    <app><lem type="emn">maṅkana</lem><rdg wit="#L633 #L642">makana</rdg></app> ta kita rāma, kalaṅ, gusti, patih ri banva, kunaṅ dharma tulājñānaniṅ kadi kita, hayva ta kita ti<pb edRef="#L642" n="5v"/>mpaṅ svara ri byavahāra, tan 
                     <app><lem type="emn">paṅivakǝn tәṅәn</lem><rdg wit="#L642">paṅivakǝ tǝṅǝn</rdg><rdg wit="#L633">paṅivakǝn tǝṅǝ</rdg></app> ri guṇadosa, tar yukti purihniṅ vvaṅ atuha, ujar saṅ hyaṅ āgama, hayva tutaknanta, ya ta mataṅyan tar katǝkan 
                     <app><lem type="norm">trikāyamaṇḍalam cittam</lem><rdg wit="#L642 #L633">tr̥kaya mandalәm citәm·</rdg></app>, nihan saṅ hyaṅ trikāya maṇḍala pariśuddha, ṅa, kayatnakna saṅ sevaka dharma, ya tәmbәynya sih saṅ paṇḍita, ri saṅ sevaka dharma,  
                 </p>
@@ -171,7 +187,7 @@
                     <app><lem wit="#L642 #L633">ini</lem><note>The ms.633 and ms642 have the same reading on this word. This word is not attested in OJ, but common in OS. I consider it as OS intervention.</note></app>*<!-- OS vocabulary --> rǝṅәkna saṅ sevaka dharma, 
                 </p>
                
-               <p><app><lem type="emn">śrotra</lem><rdg wit="#L642 #L633">svaṭā</rdg></app> ṅaraniṅ taliṅa, apa viṣayaniṅ taliṅa <pb ed="#L642" n="6r"/>, 
+               <p><app><lem type="emn">śrotra</lem><rdg wit="#L642 #L633">svaṭā</rdg></app> ṅaraniṅ taliṅa, apa viṣayaniṅ taliṅa <pb edRef="#L642" n="6r"/>, 
                    <app><lem type="norm">pinakadvāraniṅ</lem><rdg wit="#L642">pinakaḍvaraniṁ</rdg><rdg wit="#L633">pinadvaraniṁ</rdg></app> maṅrǝṅә ikaṅ śabda hala hayu, 
                    <app><lem wit="#L633">maṅrǝṅә</lem><rdg wit="#L642">ṅǝ</rdg></app> kita śabda 
                    <app><lem wit="#L633">manis arum</lem><rdg wit="#L642">hu<add place="below">ma</add>:sa:rum·</rdg></app> enak manahta, 
@@ -214,14 +230,53 @@
                     <app><lem type="norm">śabda tar yukti</lem><rdg wit="#L642">sabda thar yukti</rdg><rdg wit="#L633">sabḍa tan· yuk·ti Ambhǝk· magǝL̥ḥ</rdg></app>, tan karasa ikaṅ 
                     <app><lem type="norm">trikāya</lem><rdg wit="#L633">trikaya</rdg><rdg wit="#L642">trakaya</rdg></app> paramārtha, ya mataṅ yan prihәn kayatnakna ikaṅ viṣayaniṅ iruṅ, de saṅ sevaka dharma.</p>
                     
-                    <p>jihva ṅaraniṅ lidah<supplied reason="omitted">,</supplied> apa viṣayaniṅ lidah, pinakapaṅrasanikaṅ ṣaḍrasa, ṅa, lavaṇa kaṭuka, tikta, amla, kaṣāya, madhura, ya sinaṅguh ṣaḍrasa, ṅa, lavaṇa hasin, kaṭuka lada, tikta pahit, amla hasәm, kaṣāya vuduk, madhura manis, nahan sinaṅguh ṣaḍrasa, ṅa, kabu[A7v]kti kunaṅ ika denta jәnәka ri sakita denya, hayva ta kita maṅkana, tәka kasādhyan deniṅ viṣayanya, ya ta ketu tumiṅgalakna kārya hayu ri saṅ guru, tan karasa ikaṅ trikāya maṇḍala pariśuddha, yar maṅkana.</p>
+                    <p>jihva ṅaraniṅ lidah<supplied reason="omitted">,</supplied> apa viṣayaniṅ lidah, 
+                        <app><lem type="emn">pinakapaṅrasanikaṅ</lem><rdg wit="#L642">pinaḥkapagosranikaṁ</rdg><rdg wit="#L633">pinakapagvasrinikaṁ</rdg></app> 
+                        <app><lem type="norm">ṣaḍrasa</lem><rdg wit="#L642">sadrasa</rdg><rdg wit="#L633">sadasa</rdg></app>, ṅa, lavaṇa, 
+                        <app><lem type="emn">kaṭuka</lem><rdg wit="#L642">kaḍuka</rdg><rdg wit="#L633">kaduka</rdg></app>, 
+                        <app><lem type="emn">tikta</lem><rdg wit="#L642">tratta</rdg><rdg wit="#L633">kakrǝk·ka</rdg></app>, amla, kaṣāya, madhura, ya sinaṅguh 
+                        <app><lem type="norm">ṣaḍrasa</lem><rdg wit="#L642">sadrasa</rdg><rdg wit="#L633">sadasa</rdg></app>, ṅa,</p> 
                     
-                    <p>vak ṅaraniṅ śabda, apa viṣayaniṅ śabda, tar tutakna sakojarta, vak pāruṣya capala asta, rika durbala masukәt, tar paṅinakәn ri lvakapara, kunaṅ ujaranta, śabda manis arum vulat manohara, salvirniṅ maṅdadyakәn kaviratyanya, mvaṅ karǝṅә deniṅ lvakapara, maṅkana ta kita rumakṣa śabda.</p>
+                    <p>lavaṇa hasin, 
+                        <app><lem type="emn">kaṭuka</lem><rdg wit="#L642 #L633">kaḍuka</rdg></app> lada, 
+                        <app><lem type="emn">tikta</lem><rdg wit="#L642">tr̥tta</rdg><rdg wit="#L633">kakrǝk·ka</rdg></app> pahit, amla hasәm, kaṣāya vuduk, madhura manis, 
+                        <app><lem type="emn">nahan</lem><rdg wit="#L642 #L633">nihan</rdg></app> sinaṅguh ṣaḍrasa, ṅa, kabhu<pb edRef="#L642" n="7v"/>kti kunaṅ ika denta 
+                        <app><lem type="emn">jәnәka</lem><rdg wit="#L642 #L633">jǝnǝk</rdg></app> ri sakita denya, hayva ta kita maṅkana, 
+                        <app><lem type="emn">tәka kasādhyan</lem><rdg wit="#L633">tǝka kasadain·</rdg><rdg wit="#L642">tǝkan·</rdg></app> deniṅ viṣayanya, ya ta 
+                        <app><lem wit="#L642">ketu</lem><rdg wit="#L633">ke</rdg></app> 
+                        <app><lem type="norm">tumiṅgalakna</lem><rdg wit="#L642">tumigala:kna</rdg><rdg wit="#L633">tumigalakna</rdg></app> kārya hayu ri saṅ guru, tan karasa ikaṅ trikāya maṇḍala pariśuddha, 
+                        <app><lem wit="#L642">yar</lem><rdg wit="#L633">ya</rdg></app> maṅkana.</p>
+                   
+                    <p>vak ṅaraniṅ śabda, 
+                        <app><lem type="norm">apa viṣayaniṅ śabda</lem><rdg wit="#L642">Apa visayaniṁ sabda</rdg><rdg wit="#L633"><gap reason="omitted"/></rdg></app>, tar tutakna sakojarta, vak pāruṣya<supplied reason="omitted">,</supplied> 
+                        <app><lem wit="#L633">capala</lem><rdg wit="#L642">campala</rdg></app> 
+                        <app><lem wit="#L642">asta</lem><rdg wit="#L633">As·ti</rdg></app>, rika durbala 
+                        <app><lem type="emn">masukәr</lem><rdg wit="#L642 #L633">masukǝt</rdg></app>, tar 
+                        <app><lem type="emn">paṅinakәn</lem><rdg wit="#L642">paṅәnakәn·</rdg><rdg wit="#L633">paṅinakǝ</rdg></app> ri lokapara, kunaṅ ujaranta, śabda manis arum vulat manohara, salvirniṅ maṅdadyakәn kaviratyanya, mvaṅ karǝṅә deniṅ lokapara, maṅkana ta kita rumakṣa śabda.</p>
                     
-                    <p>tvak ṅaraniṅ ku<pb edRef="#L642" n="8r"/>lit, apa viṣayaniṅ kulit, ṅarasa ṅahdap panas tis, ikaṅ maṅkana, kaliṅanya, ya prah pәgәṅәn juga ikaṅ viṣaya mijil saka ri kulit.</p>
+                    <p>tvak ṅaraniṅ ku<pb edRef="#L642" n="8r"/>lit, 
+                        <app><lem wit="#L642">apa</lem><rdg wit="#L633">Apan</rdg></app> viṣayaniṅ kulit, ṅarasa* 
+                        <app><lem wit="#L642">ṅahdap</lem><rdg wit="#L633">ṅahḍǝpniṁ</rdg></app>* panas tis, ikaṅ maṅkana, kaliṅanya, ya prah pәgәṅәn juga ikaṅ viṣaya 
+                        <app><lem wit="#L642">mijil</lem><rdg wit="#L633">mijilyaṁ</rdg></app> saka ri kulit.</p>
                     
-                    <p>pāṇi ṅaraniṅ taṅan, apa viṣayaniṅ taṅan, masaṅguliniṅ taṅan<supplied reason="omitted">,</supplied> matalaṅkup yan paṅucap lavan saṅ guru, mvaṅ tan pasalaṅgapan tuṅgal lāvan saṅ guru, ṅuniveh tan panuduh asta mukha saṅ guru, tan pacumbana ya gamlәn taḍahәn saṅ guru, atava tan paṅalap drabya hyaṅ saṅ guru, ṅuniveh ri rat kabaih, kaliṅanya, hayva palar cidra yar hana kahyunya, hana sipat ri aji saṅ viku, nihan deyanta rumakṣa ta<pb edRef="#L642" n="8v"/>ṅan.</p>
+                    <p>pāṇi ṅaraniṅ taṅan, 
+                        <app><lem wit="#L642">apa</lem><rdg wit="#L633">Apan</rdg></app> viṣayaniṅ taṅan, masāṅguliniṅ taṅan<supplied reason="omitted">,</supplied> 
+                        <app><lem type="emn">matalaṅkup</lem><rdg wit="#L642 #L633">matalakup</rdg></app> 
+                        <app><lem wit="#L642">yan</lem><rdg wit="#L633">ya</rdg></app> paṅucap lavan saṅ guru, mvaṅ tan 
+                        <app><lem wit="#L642">pasalaṅgapan</lem><rdg wit="#L633">pasaga panaṅan·</rdg></app> 
+                        <app><lem type="emn">tuṅgal</lem><rdg wit="#L633">tugal</rdg><rdg wit="#L642">tu</rdg></app> lāvan saṅ guru, ṅuniveh tan 
+                        <app><lem type="norm">panuduh asta mukha</lem><rdg wit="#L642">panuduḥ Asta muka</rdg><rdg wit="#L633">panuduḥhan ṣamuka</rdg></app> saṅ guru, tan 
+                        <app><lem type="emn">pacumbana</lem><rdg wit="#L642">pacubakaḥ</rdg><rdg wit="#L633">cumukaḥ</rdg></app> 
+                        <app><lem type="norm">ya gamǝlәn taḍahәn</lem><rdg wit="#L642">ya gamlәn tadaḥhәn</rdg><rdg wit="#L633">yan· gamǝlan tadaḥ</rdg></app> saṅ guru, 
+                        <app><lem  wit="#L642">atava tan</lem><rdg wit="#L633">Atavan ta</rdg></app> paṅalap drabya hyaṅ saṅ guru, ṅuniveh ri rat kabaih, kaliṅanya, hayva palarcidra* yar hana 
+                        <app><lem wit="#L642">kahyunya</lem><rdg wit="#L633">kahyanya</rdg></app>, hanāsipattra ri aji saṅ viku, nihan deyanta rumakṣa ta<pb edRef="#L642" n="8v"/>ṅan.</p>
+                    <!--, tan pa<space type="binding-hole"/>cubakaḥ ya gamlәn tadaḥhәn ṣaṁ guru, Atava tan paṅalap· drabya ⌈
+<lb n="8r4"/>hyaṁ saṁ guru, ṅuniveḥ ri rat kabaiḥ, kaliṅanya, h<del rend="mark">y</del>ayva palar ciḍr̥ yar hana kahyunya, hana si pasṭa Aji saṁ viku, nihan· deyanta rumakṣa tha<!-\-DSCF8956.JPG-\-> <pb n="8v"/><fw type="pageNum" place="left margin" n="8v"><num value="7">7</num></fw><lb 
+    n="8v1" break="no"/>ṅan·-->
                     
+                    <!-- tan· cumukaḥ yan· gamǝlan tadaḥ saṁ guru, Atavan ta paṅala<!-\-SiGu_L633_13r.jpg-\-><pb n="13r"/><lb 
+    n="13r1" break="no"/>p· ḍrǝbya hyaṁ saṁ guru, ṅuniveḥ ri rat· kabeḥ, kaliṅanya, hayva palar cidra yan hana ka<g type="filler">§</g><lb 
+    n="13r2" break="no"/>hyanya, hanasipatra Aji saṁ viku, niha<space type="binding-hole"/>n· deyanta rumakṣa taṅanta-->
                     <p>pāyu ṅaraniṅ lәt, apa viṣayaniṅ lәt, utǝr saṅgāṅisiṅ maṅhәtut deyanta rumakṣa silit, tan pahәtut ri harǝpәn saṅ gurujana tan paharǝpan vvaṅ yan aṅisiṅ, tar kinvan de saṅ guru, mvaṅ saṅ paramābhyāgata kabaih, nihan deyanta rumakṣa silit.</p>
                     
                     <p>upastha ṅaraniṅ pәlat, apa viṣayaniṅ pәlat, ānanda aṅәyәḥ kaliṅanya, tan paharǝpakna vvaṅ maṅәyәh ṅuniveh para sujanma lanaṅ vadvan hulun hadyan kaniṣṭha, madhyamvattama, apan agәṅ marurucanya, mǝtu papaniṅ dadi vvaṅ, apa pinakapāpanya, anvan mara kita vvaṅ dinval doṣanya ta, strisaṅgrahanya, mitradrvaha, gurudrvaha muṅpaṅ rabi laraṅan, aglis āvak siki tar na hayu, yan maṅkana.</p>
@@ -239,7 +294,7 @@
                 </div>
                 
                 <div type="chapter" n="4">
-          <head type="editorial" xml:lang="eng">Fourth teacher's love: Instructions of the Truth</head>
+          <head type="editorial" xml:lang="eng">Instructions of the Truth</head>
                     <p>nihan kapiṅpatnya sih saṅ paṇḍita, ri saṅ sevaka dharma, ini dharmaśikṣā ṅaranya, ndya ya nihan, ślokanya</p>
                     <lg xml:lang="san-Latn">
                         <l>ālekhyam hasitam gītam jr̥mbhanam ca kaṇṭhāravāñ</l> 
