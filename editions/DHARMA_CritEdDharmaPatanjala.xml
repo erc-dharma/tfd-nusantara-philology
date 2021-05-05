@@ -60,14 +60,13 @@
        <p>Typed by Andrea Acri. Corrections of misprints in the 2011 edition, as well as more substantial changes (e.g. alternative emendations/reconstructions), have been applied on the basis of the 2017 edition; corrections of misprints in the 2017 edition have been applied tacitly.</p>
       <p>Andrea Acri converted the transcript to (pseudo) ISO-15919.</p>
       <refsDecl n="CTS">
-	<cRefPattern <lb/>
+	<cRefPattern
 	    n="level2"
 	    matchPattern="(\w+).(\w+)"
 	    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1']/tei:lg[@n='$2'])">
 	  <p>This pointer pattern extracts line groups (verses).</p>
 	</cRefPattern>
-	<cRefPattern <lb/>
-	    n="level1"
+	<cRefPattern	    n="level1"
 	    matchPattern="(\w+)"
 	    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1'])">
 	  <p>This pointer pattern extracts divisions (cantos).</p>
@@ -111,7 +110,7 @@
           <p><lb/>nihan lakṣaṇa saṅ hyaṅ paramārthānaku kavruhanta ◆</p>
        <lg xml:lang="San-latn" n="1" met="anuṣṭubh">
           <l n="a">acintyo niṣkalaḥ śāntaḥ,</l> 
-          <l n="b">dhruva-m abyaya-m īśvaraḥ,<\l>   
+          <l n="b">dhruva-m abyaya-m īśvaraḥ,</l>   
              <l n="c">asau sūkṣmaḥ paraḥ śāntaḥ,</l>
              <l n="d">śivaḥ sakalaniṣkalaḥ ◆</l>
             </lg>
@@ -124,7 +123,7 @@
              <lb/>pati, sira ta lәvih saṅkeṅ rāt kabeh, sira tika lәvih tar kalәvihan, <foreign xml:lang="San-latn">vibhuḥ</foreign> ta
              <lb/>sira, <foreign xml:lang="San-latn">vibhuḥ</foreign> ṅaranya, humibәkiṅ rat kabeh, ndātan katon, sira kәtah manon,
              <lb/> tan kinavruhan, sira ta maṅavruhi, apan <foreign xml:lang="San-latn">sarvajña</foreign> sira, sira kumavruhīṅ rat
-             <lb/>kabeh, <foreign xml:lang="San-latn">sarvakāryakartā</foreign> sira<supplied reason="omitted">, sira<supplied reason="omitted"> gumavay ikaṅ rat kabeh, a<pb n="2r" ed="ms"/>pa byaktinya
+             <lb/>kabeh, <foreign xml:lang="San-latn">sarvakāryakartā</foreign> sira<supplied reason="omitted">, sira</supplied> gumavay ikaṅ rat kabeh, a<pb n="2r" ed="ms"/>pa byaktinya
                 <lb/>nihan, kita kabeh mahurip, molah<supplied reason="omitted">,</supplied> umambhәk, vruh riṅ abhiprāya, nahan
                 <lb/>byakti saṅ hyaṅ paramārtha an hana ri kita lāvan iṅ rāt kabeh, ikaṅ hiḍәpta
                 <lb/>ri saṅ hyaṅ paramārtha, ya ta inaṅәnaṅәnta ri rahineṅ vәṅi, lәvih pva ṅaran<lb break="no"
@@ -198,7 +197,7 @@ paramārtha tan pāvak, tan pavarṇa, apan tayā sira, apa byaktanyan tayā sir
              <lb/>hyaṅ paramārtha liṅta, hana sira, ndātan palakṣaṇa, tan pāvak, tan katon,
              <lb/>tan kagamәl, tan vәnaṅ inaṅәnaṅәn, ya sinaṅguh <foreign xml:lang="San-latn">sūkṣma</foreign> ṅaranya, suma<lb break="no"
              />hur saṅ para, avyāhata tañaṅkva vuvusta, <surplus>sumahur saṅ paramārtha</surplus> sakā<lb break="no"
-/>makāma, tathāpi lakṣaṇā, yan kva liṅa saṅ para, <supplied reason="omitted" conf="high">tan</supplied>  katon  ta<pb n="6r" ed="ms"/>h saṅ hyaṅ
+/>makāma, tathāpi lakṣaṇā, yan kva liṅa saṅ para, <supplied reason="omitted" cert="high">tan</supplied>  katon  ta<pb n="6r" ed="ms"/>h saṅ hyaṅ
              <lb/>paramārtha, ndān kāryanira ya katon, ndya gavenira, nyaṅ tiryak lāvan ikiṅ
              <lb/>aṇḍabhuvana, tәlas karuhun janma mānuṣa, yeki gavenira, sumahur saṅ pa<lb break="no"
 />ra, apa pramāṇanta sumiddhākәn ikā pakṣanta, apa tan pratyakṣa katon bha<lb break="no"
@@ -215,7 +214,7 @@ para, kadi śakti bhaṭāra cetanā, apan papupulniṅ śarīra ikā magave hi�
             ta sinaṅguh <foreign xml:lang="San-latn">cetanā</foreign> ṅaranya, yan maṅkana liṅa saṅ para, mapekaṅ vvaṅ mati<lb/>
 maṅipi hana śarīranya tan vikāra, apekā tan pañetanā, māvasānaṅ avuka<lb/>
 juga, nahan byaktanikaṅ mithyājñānānaku,</p>
-         <p><sumahur> saṅ kumāra,</p>
+         <p>sumahur saṅ kumāra,</p>
       <p><label type="question" n="5"/> kevala salah pveka mi<pb n="7r" ed="ms"/>thyājñāna sājñā bhaṭāra, apa dumeh ikā maṅkana,<lb/>
 kasihana varahәn rānak bhaṭāra, maṅkana liṅ saṅ kumāra,</p>
          <p>sumahur saṅ hyaṅ,</p>
@@ -297,8 +296,8 @@ an papalenan saṅkeṅ bhāvanya, makaśarīra ikaṅ kalātattva, byāpaka pva
 rikaṅ rāgatattva, mahyun ta ya mañetanā, byāpaka pva rikaṅ vidyātattva,<lb/>
 manon ta ya viṣaya vәkasan, apan ikaṅ vi<pb n="11v" ed="ms"/>dyātattva pinakasuluhnya, ya ma<lb break="no"
 />taṅnyan panon viṣaya, ndya viṣaya tinonya, yekā pradhānatattva, lakṣaṇa<lb break="no"
-/>nikaṅ pradhānatattva, pәtaṅ tan pacetanā lupa pinakajātinya, <supplied reason="omitted" conf="high">cetana lavan</supplied><lb/>
-<supplied reason="omitted" conf="high">pradhānatattva,</supplied> ya tekā pinapaṅguhakәn de bhaṭāra, cetanā ṅaranya, tu<lb break="no"
+/>nikaṅ pradhānatattva, pәtaṅ tan pacetanā lupa pinakajātinya, <supplied reason="omitted" cert="high">cetana lavan</supplied><lb/>
+<supplied reason="omitted" cert="high">pradhānatattva,</supplied> ya tekā pinapaṅguhakәn de bhaṭāra, cetanā ṅaranya, tu<lb break="no"
 />tur, pradhāna ṅaranya, lupa, tutur matәmu lāvan lupa, ya tekā maṅhanākәn<lb/>
 triguṇa, sattva rajah tamah, lakṣaṇani sattva, prājñā mahaṅan, lakṣaṇaniṅ<lb/>
 rajah, adrәs molah, lakṣaṇaniṅ tamah, abyәt apuṅguṅ ikā nāhan lvirni<lb/>
@@ -312,14 +311,14 @@ tan pacetana ikaṅ buddhi, ndan makacetanā ya, makacetanā ṅaranya, tan<lb/>
 vruh ikaṅ buddhi, ndan kadi vruh ya, tan pahiḍәp ikaṅ buddhi, ndan kadi<lb/>
 maṅhiḍәp ya, apan mәtu saṅke tattva rva<supplied reason="omitted">,</supplied> tattva rva ṅaranya, ātmā lāvan<lb/>
 pradhāna,</p>
-       <p>saṅke buddhi mәtu tāhaṅkāra, lakṣaṇanya <supplied reason="omitted" conf="low">magave hurip</supplied> lāvan maṅ<lb break="no"/>
+       <p>saṅke buddhi mәtu tāhaṅkāra, lakṣaṇanya <supplied reason="omitted" cert="low">magave hurip</supplied> lāvan maṅ<lb break="no"/>
           aku, ndan lakṣaṇaniṅ ahaṅkāra ya, ṅaranya tәlu, si <foreign xml:lang="San-latn">vaikṛta</foreign>, si <foreign xml:lang="San-latn">taijasa</foreign>, si <foreign xml:lang="San-latn">bhūtādi</foreign>,<lb/>
-          ikaṅ ahaṅkāra si <foreign xml:lang="San-latn">vaikṛta</foreign>, ya tekā sattva svabhāvanya, <supplied reason="omitted" conf="high">ikaṅ ahaṅ</supplied><lb break="no"/>
-          <supplied reason="omitted" conf="high">kāra si <foreign xml:lang="San-latn">taijasa</foreign>, ya tekā rajah svabhāvanya,</supplied> ikaṅ ahaṅkāra si <foreign xml:lang="San-latn">bhūtādi</foreign> tamah<lb/>
+          ikaṅ ahaṅkāra si <foreign xml:lang="San-latn">vaikṛta</foreign>, ya tekā sattva svabhāvanya, <supplied reason="omitted" cert="high">ikaṅ ahaṅ</supplied><lb break="no"/>
+          <supplied reason="omitted" cert="high">kāra si <foreign xml:lang="San-latn">taijasa</foreign>, ya tekā rajah svabhāvanya,</supplied> ikaṅ ahaṅkāra si <foreign xml:lang="San-latn">bhūtādi</foreign> tamah<lb/>
    svabhāvanya<pb n="12v" ed="ms"/>, nāhan lakṣaṇaniṅ ahaṅkāra, an mijil saṅkeṅ buddhi, tәlu<lb/>
    prakāranya, ikaṅ ahaṅkāra si vaikṛta, yekā saṅkaniṅ manah mәtu lāvan<lb/>
           <foreign xml:lang="San-latn">daśendriya</foreign>, <foreign xml:lang="San-latn">daśendriya</foreign> ṅaranya, śrota, tvak, cakṣuh, jihvā, ghrāṇa, vāk, pāṇi,<lb/>
-pāyu, upastha, pada<supplied reason="omitted" certainty="high">,</supplied> nāhan kvehniṅ indriya sapuluh, savәlas lāvan manah,<lb/>
+pāyu, upastha, pada<supplied reason="omitted" cert="high">,</supplied> nāhan kvehniṅ indriya sapuluh, savәlas lāvan manah,<lb/>
 lakṣaṇaniṅ manah mamikalpa,</p>
             <p>sumahur saṅ kumāra,</p>
             <p><label type="question" n="9"/> takarin tuṅgal ikaṅ manah lāvan buddhi lavan ahaṅkāra, sājñā bhaṭāra,</p>
@@ -349,7 +348,7 @@ taṅa<pb n="14r" ed="ms"/>n, ikaṅ padendriya ya haneṅ suku, ikaṅ pāyvind
 
 <pb n="220"/>
 
-       <p>tumambhәh pvekaṅ <buddhi> ahaṅkāra lāvan manah, ya ta sinaṅguh <foreign xml:lang="San-latn">trayo<lb break="no"
+       <p>tumambhәh pvekaṅ <note>buddhi</note> ahaṅkāra lāvan manah, ya ta sinaṅguh <foreign xml:lang="San-latn">trayo<lb break="no"
 />daśakaraṇa</foreign> ṅaranya, ya ta sādhananiṅ ātmān paṅgṛhīta viṣaya ikā, kārya<lb break="no"
 />nikaṅ ahaṅkāra si vaikṛta ikā ka<pb n="14v" ed="ms"/>beh, huvus ikāta,</p>
        <p>nihan ta gavenikā ahaṅkāra si bhūtādi, hana <foreign xml:lang="San-latn">pañcatanmātra</foreign> ṅaranya, <lb/>
@@ -471,7 +470,7 @@ kulit manuvuhakәn <pb n="21v" ed="ms"/> vulu, nāhan lvirnikā nāḍī riṅ �
 <pb n="232"/>
 
 
-       <p><ikaṅ bāyu si <foreign xml:lang="San-latn">prāṇa</foreign>, ya ta> mataṅnyan umadәgi ikaṅ pañcabāyu kabeh pra<lb break="no"
+       <p>ikaṅ bāyu si <foreign xml:lang="San-latn">prāṇa</foreign>, ya ta> mataṅnyan umadәgi ikaṅ pañcabāyu kabeh pra<lb break="no"
 />yatna rumәgәp gavenya, mvaṅ pinakośvāsa gavenya vaneh, uṅgvan ika ri<lb/>
           dada, ri hiruṅ hiṅanya i ruhur, ikaṅ bāyu sy <foreign xml:lang="San-latn">apāna</foreign>, yeka muṅgu ri silit,<lb/>
 ri pusәr hiṅanya vaneh, i ruhur, umiṅsor tәkeṅ suku<pb n="22r" ed="ms"/>, gavenya asorakәn<lb/>
@@ -597,7 +596,7 @@ utsāha ta ri samyajñānādhikṛtā ta ya, agәlәm ta ya mayoga, nāhan inabh
 />paṅguha saṅ hyaṅ paramārtha, ndan pramāṇa tәlu pinakasuluhnya, ikaṅ<lb/>
    samādhi pinakasādhananya, ya sinaṅguh <foreign xml:lang="San-latn">samyajñāna</foreign> ṅaranya, <foreign xml:lang="San-latn">vairāgya</foreign> ṅa<lb break="no"
    />ranya, ikaṅ jñāna tan aharәp ri suka, tan tṛṣṇa ri hurip, ndya <foreign xml:lang="San-latn">suka</foreign> ṅaranya,<lb/>
-   nyaṅ <foreign xml:lang="San-latn">bhoga</foreign><supplied reason="omitted" certainty="medium">,</supplied> <foreign xml:lang="San-latn">upabhoga</foreign>, <foreign xml:lang="San-latn">paribhoga</foreign>, <foreign xml:lang="San-latn">bhoga</foreign> ṅaranya, ikaṅ pinaṅan, <foreign xml:lang="San-latn">upabhoga</foreign><lb/>
+   nyaṅ <foreign xml:lang="San-latn">bhoga</foreign><supplied reason="omitted" cert="medium">,</supplied> <foreign xml:lang="San-latn">upabhoga</foreign>, <foreign xml:lang="San-latn">paribhoga</foreign>, <foreign xml:lang="San-latn">bhoga</foreign> ṅaranya, ikaṅ pinaṅan, <foreign xml:lang="San-latn">upabhoga</foreign><lb/>
    ikaṅ sinaṇḍaṅ, <foreign xml:lang="San-latn">paribhoga</foreign> ikaṅ kavula vәnaṅvәnaṅ, ikā ta kabeh,<note>ikaṅ ta kabeh Ed. and cod.</note> tan aharәp <lb/>
 irika,</p>
 
@@ -670,14 +669,14 @@ maṅkana, ya mataṅnyan tibā ri naraka,</p>
    yamabala, ya ta dadi pipīlika, nahan phalani anaiśvarya, yan pinakavījani <lb/>
    buddhi, ikaṅ ta kabeh ya tekāpusniṅ janma, anuṅ dumeh yāhiḍәp <pb n="33v" ed="ms"/> duhka<lb/>
    satatā, ya sinaṅguh <foreign xml:lang="San-latn">saptabandhana</foreign> ṅaranya, pitu apus apus pitu ṅaranya, ni<lb break="no"
-   />han ikaṅ inajarakәn kabeh, ndya inajarakәn, yan kva liṅanta, yeki <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">dharma</foreign>,<lb/>
+   />han ikaṅ inajarakәn kabeh, ndya inajarakәn, yan kva liṅanta, yeki <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">dharma</foreign>,<lb/>
       <foreign xml:lang="San-latn">vairāgya</foreign>, <foreign xml:lang="San-latn">aiśvarya</foreign>,</supplied> <foreign xml:lang="San-latn">adharma</foreign>, <foreign xml:lang="San-latn">ajñāna</foreign>, <foreign xml:lang="San-latn">avairāgya</foreign>, <foreign xml:lang="San-latn">anaiśvarya</foreign>, nāhan yaṅ <foreign xml:lang="San-latn">sap<lb break="no"
 />tabandhana</foreign> ṅaranya, yan apa yan hәnti sasaṅkeṅ cakrabhāva, ya ta karih,<lb/>
 yan maṅkana liṅanta, yan paṅguh ikaṅ samyajñāna juga, apan dumeh ikaṅ<lb/>
 ātmā maluya ri bhaṭāra paramakāraṇa, maṅkana liṅ bhaṭāra,</p>
    <p>sumahur saṅ kumāra,</p>
 <p><label type="question" n="14"/> kāsihana rānak bhaṭāra, varahәn ri sādhananiṅ magave samādhi, maṅ<lb break="no"
-/>kana <pb n="34r" ed="ms"/> liṅ saṅ kumāra, 
+/>kana <pb n="34r" ed="ms"/> liṅ saṅ kumāra,</p> 
 <p>sumahur bhaṭāra,</p>
 <p>mәne ikājarakna kaliṅniṅ yogapāda, kunaṅ vījanikaṅ buddhi vuvus hәnti<lb/>
    muvah ◆</p>
@@ -739,7 +738,7 @@ vruh maṅaji saṅ paṇḍita guruni rat kabeh, sira ta panambhahanya, patatak
    <p><foreign xml:lang="San-latn">dāna</foreign>, ṅaranya, saṅ vәnaṅ umehakәn kāyanira riṅ saṅ paṇḍita, lavan ri saṅ<lb break="no"
 />sārajanma kunaṅ, lvirni vinehakәn, tәlu prakāranya, kāya, śabda, ambhәk<lb/>
 rahayu, nihan ta kapirvan i kasiddhya<pb n="37v" ed="ms"/>n, saṅ vәnaṅ maṅāji śāstra purāṇa,<lb/>
-      tattvajñāna kunaṅ, <foreign xml:lang="San-latn">siddhi</foreign> hatah ṅaranika, <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">śabda</foreign> ṅaranya,</supplied> hanātah hu<lb break="no"
+      tattvajñāna kunaṅ, <foreign xml:lang="San-latn">siddhi</foreign> hatah ṅaranika, <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">śabda</foreign> ṅaranya,</supplied> hanātah hu<lb break="no"
 />vus maṅabhyāsājinira, dadi sira siddhavākya savuvusnira siddhi, athavā sira<lb/>
       dadi maṅrәṅə̄ śabda sakeṅ sūkṣma, saṅka ri tibrani paṅrәṅə̄nira, <foreign xml:lang="San-latn">siddhi</foreign><lb/>
       hatah ṅaranikā, hana <foreign xml:lang="San-latn">tarkasiddhi</foreign> ṅaranya, ikaṅ jñāna ton ikaṅ atītānāga<lb break="no"
@@ -778,7 +777,7 @@ vudug, mata tan panon, ilat bisu, iruṅ apalәh, tutuk vulaṅun, tan aharәp<l
 maṅkana kunaṅ, taṅan kiṅkiṅ, suku lumpuh, silit mrәdu, tan vәnaṅ aṅisiṅ<lb/>
 kunaṅ, pәlāt kәdi, nahan lakṣaṇanikaṅ daśendriya, an tan vәnaṅ ri viṣaya<lb break="no"
 />nya, <foreign xml:lang="San-latn">aśakti</foreign> hatah ṅaranya,</p>
-   <p>hana ta baliknikaṅ <foreign xml:lang="San-latn">navatu<pb n="39v" ed="ms"/>ṣṭi</foreign> lāvan <foreign xml:lang="San-latn">aṣṭasiddhi</foreign>, nihan lakṣaṇanya, <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">apra<lb break="no"
+   <p>hana ta baliknikaṅ <foreign xml:lang="San-latn">navatu<pb n="39v" ed="ms"/>ṣṭi</foreign> lāvan <foreign xml:lang="San-latn">aṣṭasiddhi</foreign>, nihan lakṣaṇanya, <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">apra<lb break="no"
 />dhānaka</foreign> ṅaranya</supplied> halani śarīranya, prastāvanyān paṅimpuluniṅ magave<lb/>
       hala, <foreign xml:lang="San-latn">anupādānaka</foreign> ṅaranya, hutaṅnya hiḍәpnya hutaṅni kavvatanya, dadi<lb/>
       ya miṅgat, <foreign xml:lang="San-latn">akāla</foreign> ṅaranya, tan vәnaṅ sumorakәn taṅgәhni raranya, dadi<lb/>
@@ -882,7 +881,7 @@ pati,</p>
 
 <p>ikaṅ karma tan dadi tan kabhukti phalanya, akveh pva kaṅ karma, ya ta<lb/>
    mataṅnyan makveh lvirniṅ janma, apan phalanikaṅ karma ya mamaṅun<lb/>
-   śarīra, yan <supplied reason="omitted" conf="high">mahalā karma,</supplied> mahalā śarīra, yan mahayva karma, mahayva<lb/>
+   śarīra, yan <supplied reason="omitted" cert="high">mahalā karma,</supplied> mahalā śarīra, yan mahayva karma, mahayva<lb/>
       śarīra, mahala māyu pvekaṅ karma, vinaṅun i janma tuṅgal, ya mataṅnyan<lb/>
       asilisilih ikaṅ janma riya, huvus dadi devatā phalani gavenya hayu, tәka<lb/>
 pva phalaniṅ gavenya hala, matәmahan ta ya tiryak, hәnti pva phalanikaṅ<lb/>
@@ -893,7 +892,7 @@ havak, ya ta magave tuturni citta<supplied reason="omitted">,</supplied> ikaṅ 
 />vatā, yan mānuṣa, yan tiryak, ikaṅ karmaphala tinutnya, ya ta bhinuktinya,<lb/>
 kapva tekā mamәkasakәn saṅaskāra ri citta, nihan pada<pb n="46r" ed="ms"/>nya, kadyaṅgān i<lb/>
 dyun an pinakavavan vaṅivaṅi, iṅgu kunaṅ, huvus hәnti hisinikaṅ dyun,<lb/>
-   vinasәhan ta ya pinahalilaṅ ndān hanātah ambhə̄nya, turuṅ <supplied reason="omitted" conf="high">hәnti</supplied> rum<lb break="no"
+   vinasәhan ta ya pinahalilaṅ ndān hanātah ambhə̄nya, turuṅ <supplied reason="omitted" cert="high">hәnti</supplied> rum<lb break="no"
 />akәt rikā dyun, maṅkana tekaṅ vāsanā, an pamәkasakәn saṅaskāra ri citta,<lb/>
 asiṅ agə̄ṅ vāsanā ri citta, ya pinakarūpaniṅ janma, apan asiṅ kinalpananiṅ<lb/>
 manah ya tinutniṅ karmanya maṅun janma muvah,</p>
@@ -986,16 +985,16 @@ makāvasāna saṅ<pb n="51r" ed="ms"/>sāra sira, maṅjanma mānuṣa sira hә
 liṅantānaku, tamatan hana gamananira janmānaku, apan sarvajña sira, sira<lb/>
 kumavruhi rat kabeh vruh sira ri maṅde saṅsāra, lāvan lāra, ndātan vәnaṅ<lb/>
 milagi ya, tan vruh ri deyanya, deni maṅhilaṅakәn lāra,</p>
-   <p>lāvan hana ta <foreign xml:lang="San-latn">caduśakti</foreign> ri sira, ndya <foreign xml:lang="San-latn">caduśakti</foreign> ṅaranya, <supplied reason="omitted" conf="medium"><foreign xml:lang="San-latn">vibhuśakti</foreign>, <foreign xml:lang="San-latn">jñā<lb break="no"
-   />naśakti</foreign>, <foreign xml:lang="San-latn">kriyāśakti</foreign>, <foreign xml:lang="San-latn">prabhuśakti</foreign>,</p>
-   <p><foreign xml:lang="San-latn">vibhuśakti</foreign> ṅaranya, <foreign xml:lang="San-latn">aṅavaśyaḥ</foreign>,</supplied> <foreign xml:lang="San-latn">anāveśyaḥ</foreign>, aṅavaśyaḥ ṅaranya, tā kәneṅ<lb/>
+   <p>lāvan hana ta <foreign xml:lang="San-latn">caduśakti</foreign> ri sira, ndya <foreign xml:lang="San-latn">caduśakti</foreign> ṅaranya, <supplied reason="omitted" cert="medium"><foreign xml:lang="San-latn">vibhuśakti</foreign>, <foreign xml:lang="San-latn">jñā<lb break="no"
+   />naśakti</foreign>, <foreign xml:lang="San-latn">kriyāśakti</foreign>, <foreign xml:lang="San-latn">prabhuśakti</foreign>,</supplied></p>
+          <p><supplied reason="omitted" cert="medium"><foreign xml:lang="San-latn">vibhuśakti</foreign> ṅaranya, <foreign xml:lang="San-latn">aṅavaśyaḥ</foreign>,</supplied> <foreign xml:lang="San-latn">anāveśyaḥ</foreign>, aṅavaśyaḥ ṅaranya, tā kәneṅ<lb/>
       rāga, dveṣa, moha, aṅavaśyaḥ ṅaran ikā, <foreign xml:lang="San-latn">anāveśyaḥ</foreign> ṅaranya, tar kataman, tar<lb/>
       dadi pinakāvak sirātah makāvak sarvabhāva, <pb n="51v" ed="ms"/> yeka <foreign xml:lang="San-latn">anāveśyaḥ</foreign> ṅaranya, ika<lb/>
       ta kabeh, yekā <foreign xml:lang="San-latn">vibhuśakti</foreign> ṅaranya,</p>
 
-   <pb n="284"/>
-
-   <p>nihan taṅ <foreign xml:lang="San-latn">jñānaśakti</foreign> ṅaranya, <foreign xml:lang="San-latn">dūradarśana</foreign>, <foreign xml:lang="San-latn">dūraśravaṇa</foreign>, <foreign xml:lang="San-latn">dūrāt manana</foreign>, <foreign xml:lang="San-latn">dūr<lb break="no"
+   
+          <p><pb n="284"/>
+             nihan taṅ <foreign xml:lang="San-latn">jñānaśakti</foreign> ṅaranya, <foreign xml:lang="San-latn">dūradarśana</foreign>, <foreign xml:lang="San-latn">dūraśravaṇa</foreign>, <foreign xml:lang="San-latn">dūrāt manana</foreign>, <foreign xml:lang="San-latn">dūr<lb break="no"
    />āt masarvajñatā</foreign>, <foreign xml:lang="San-latn">śravaṇa</foreign> ṅaranya, rumәṅə̄ hadoh aparәk, <foreign xml:lang="San-latn">dūradarśana</foreign> ṅa<lb break="no"
 />ranya, tumon adoh aparәk, athavā tā tutupan kunaṅ ikaṅ vastu, katonātah<lb/>
       denira, <foreign xml:lang="San-latn">dūrāt manana</foreign> ṅaranya, vruh ri jñānaniṅ adoh aparәk, <foreign xml:lang="San-latn">dūrāt ma<lb break="no"
@@ -1006,7 +1005,7 @@ milagi ya, tan vruh ri deyanya, deni maṅhilaṅakәn lāra,</p>
       ndātan katon, <foreign xml:lang="San-latn">vikaradharmitvaṁ</foreign> ṅaranya, tar ginave, sirātah magave, <foreign xml:lang="San-latn">kāma<lb break="no"
 />rūpitvaṁ</foreign> ṅaranya, sakaharәpnira tәmahananira, ya pinakarūpanira, nahan<lb/>
       ya <foreign xml:lang="San-latn">kriyāśakti</foreign> ṅaranya,</p>
-   <p><foreign xml:lang="San-latn">prabhuśakti</foreign> ṅaranya, <foreign xml:lang="San-latn">abhītaḥ</foreign>, <foreign xml:lang="San-latn">akṣayaḥ</foreign>, <foreign xml:lang="San-latn">ajaraḥ</foreign>, <foreign xml:lang="San-latn">amaraḥ</foreign>, <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">apratihataga<lb break="no"
+   <p><foreign xml:lang="San-latn">prabhuśakti</foreign> ṅaranya, <foreign xml:lang="San-latn">abhītaḥ</foreign>, <foreign xml:lang="San-latn">akṣayaḥ</foreign>, <foreign xml:lang="San-latn">ajaraḥ</foreign>, <foreign xml:lang="San-latn">amaraḥ</foreign>, <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">apratihataga<lb break="no"
    />tiḥ</foreign>,</supplied> <foreign xml:lang="San-latn">abhītaḥ</foreign> ṅaranya, tar matakut, <foreign xml:lang="San-latn">akṣayaḥ</foreign> ṅaranya, tar pakalvaṅan, <foreign xml:lang="San-latn">ajaraḥ</foreign><lb/>
       ṅaranya, tā kәneṅ tuha, <foreign xml:lang="San-latn">amaraḥ</foreign> ṅaranya, tar kәneṅ pāti, <foreign xml:lang="San-latn">apratihatagatiḥ</foreign>, tan<lb/>
       katahәnan, nāhan yaṅ <foreign xml:lang="San-latn">prabhuśakti</foreign> ṅaranya, ika<surplus>,</surplus> ta <pb n="52v" ed="ms"/> śakti bhaṭāra ika, ya<lb/>
@@ -1023,7 +1022,7 @@ apa katonani kaiśvaryanira sājñā bhaṭāra, maṅkana liṅ saṅ kumāra,<
 />yāpāra ikeṅ rāt kabeh,</p>
 <p>sumahur saṅ kumāra,</p>
 <p><label type="question" n="22"/> tan hana pva bhaṭāra, yan ṛṣi siddha juga katonan i śakti bhaṭāra, ma<lb break="no"
-/>taṅnyan tan hana sira, aṅhiṅ śa<pb n="53r" ed="ms"/>ktinira panәṅәranni hananira, muṅgva <ri> saṅ paṇḍita pva śakti bhaṭāra, ya mataṅnyan tayā saṅ hyaṅ paramārtha yan<lb/>
+/>taṅnyan tan hana sira, aṅhiṅ śa<pb n="53r" ed="ms"/>ktinira panәṅәranni hananira, muṅgva <note>ri</note> saṅ paṇḍita pva śakti bhaṭāra, ya mataṅnyan tayā saṅ hyaṅ paramārtha yan<lb/>
    maṅkana,</p>
 <p>sumahur bhaṭāra,</p>
 <p>taha pih tan tayā saṅ hyaṅ paramārtha, apan tan śaktinira vinehakәnira saṅ<lb/>
@@ -1097,7 +1096,7 @@ jñāna dumәliṅa ri hati, sthitya hayva cañcala, hayva maṅaṅәnaṅәn, 
 kvehnya,</p>
    <p>yapvan katutupan ikaṅ kabeh, ya tekā sinaṅguh <foreign xml:lang="San-latn">samādhi</foreign> ṅaranya<supplied reason="omitted">,</supplied> ya<lb/>
       sinaṅguh <foreign xml:lang="San-latn">samprajñāta</foreign>, lāvan <foreign xml:lang="San-latn">asamprajñāta</foreign>, <foreign xml:lang="San-latn">samprajñātātah</foreign> ṅaranya, ikaṅ<lb/>
-      samādhi tinahәnan deni pāt<supplied reason="omitted">,</supplied> lvirnyān pāt nihan, hana <foreign xml:lang="San-latn">savitarkasamā<pb n="57r" ed="ms"/>dhi</foreign>,  hana ta <foreign xml:lang="San-latn">vicārasamādhi</foreign> <supplied reason="omitted" certainty="high">, hana <foreign xml:lang="San-latn">asmitāsamādhi</foreign>, hana <foreign xml:lang="San-latn">ānandasamādhi</foreign>,</supllied></p>
+      samādhi tinahәnan deni pāt<supplied reason="omitted">,</supplied> lvirnyān pāt nihan, hana <foreign xml:lang="San-latn">savitarkasamā<pb n="57r" ed="ms"/>dhi</foreign>,  hana ta <foreign xml:lang="San-latn">vicārasamādhi</foreign> <supplied reason="omitted" cert="high">, hana <foreign xml:lang="San-latn">asmitāsamādhi</foreign>, hana <foreign xml:lang="San-latn">ānandasamādhi</foreign>,</supplied></p>
    <p><gap reason="lost" extent="unknown" unit="chars"/> ikaṅ jñāna maṅekagraha ri sūkṣma, ya <foreign xml:lang="San-latn">vicārasamādhi ṅaranya, as<lb break="no"
 />mitāsamādhi</foreign> ṅaranya, i ṅkana saṅ puruṣa kaivalya, vinotan viṣaya deniṅ<lb/>
 citta, ndātan cetane ya, apa vruh sirān lāra, yāvat cumetane pavotniṅ citta, ya<lb/>
@@ -1111,7 +1110,7 @@ citta, ndātan cetane ya, apa vruh sirān lāra, yāvat cumetane pavotniṅ citt
       pāt, <foreign xml:lang="San-latn">samprajñātā</foreign>tah ṅaranya, yapvan tan maṅkana ika kabeh, ya sinaṅguh<lb/>
       <foreign xml:lang="San-latn">asamprajñātasamādhi</foreign> ṅaranya, ikā taṅ <foreign xml:lang="San-latn">asamprajñātasamādhi</foreign> pūrvaka, ikā<lb/>
       ta <foreign xml:lang="San-latn">samprajñātasamādhi</foreign>,</p>
-   <p>ya tekā dharmani citta, hana <foreign xml:lang="San-latn">kṣipta</foreign> ṅaranya, <supplied reason="omitted" conf="high">hana <foreign xml:lang="San-latn">vikṣipta</foreign> ṅaranya,</supplied>
+   <p>ya tekā dharmani citta, hana <foreign xml:lang="San-latn">kṣipta</foreign> ṅaranya, <supplied reason="omitted" cert="high">hana <foreign xml:lang="San-latn">vikṣipta</foreign> ṅaranya,</supplied>
       <lb/>hana <foreign xml:lang="San-latn">vimūḍha</foreign> ṅaranya, hana <foreign xml:lang="San-latn">nirodha</foreign> ṅaranya, hana <foreign xml:lang="San-latn">ekagraha</foreign> ṅaranya,</p>
    <p><foreign xml:lang="San-latn">kṣipta</foreign> ṅaranya, ikaṅ ambhәk abvaṅ umәsat mareṅ kadohan, <foreign xml:lang="San-latn">vikṣipta</foreign> ṅa<lb break="no"
    />ranya, ikaṅ ambhәk ṅunikunik<supplied reason="omitted">,</supplied> <foreign xml:lang="San-latn">vimūḍha</foreign> ṅaranya, ikaṅ ambhәk lәṅәlәṅә,<lb/>
@@ -1146,7 +1145,7 @@ citta malilaṅ, saṅke pamrihnira maṅabhyāsā yoga satatā ri rahineṅ vә
       <foreign xml:lang="San-latn">muditā</foreign> ṅaranya, ikaṅ ambhәk anumoda i saṅ<lb/>
       gumave hayu, ya <foreign xml:lang="San-latn">muditā</foreign> ṅaranya, <foreign xml:lang="San-latn">upekṣā</foreign> ṅaranya ikaṅ ambhәk humәnәṅ<lb/>
 irikaṅ maṅgave hala, nāhan <pb n="60r" ed="ms"/> byaktanya ikaṅ lilaṅ ri saṅ yogi, <pb n="60r" ed="ms"/></p>
-   <p>ikaṅ ta citta malilaṅ ri yogi, ya maṅdadyakәn <foreign xml:lang="San-latn">vīrya</foreign><supplied reason="omitted" conf="high">, ikaṅ <foreign xml:lang="San-latn">vīrya</foreign> ya</supplied> maṅ<lb break="no"
+   <p>ikaṅ ta citta malilaṅ ri yogi, ya maṅdadyakәn <foreign xml:lang="San-latn">vīrya</foreign><supplied reason="omitted" cert="high">, ikaṅ <foreign xml:lang="San-latn">vīrya</foreign> ya</supplied> maṅ<lb break="no"
    />dadyakәn tutur, ikaṅ tutur ya maṅdadyakәn <foreign xml:lang="San-latn">prajñā</foreign>, ikaṅ prajñā ya maṅdady<lb break="no"
    />akәn <foreign xml:lang="San-latn">samādhi</foreign>, apa sinaṅguh <foreign xml:lang="San-latn">vīrya</foreign> ṅaranya, gәlәmniṅ maṅabhyāsā yoga lā<lb break="no"
 />van sādhananya, tutur ṅaranya, vruhnira ri kayogīśvaran, tambhāniṅ saṅ<lb break="no"
@@ -1159,7 +1158,7 @@ kadyaṅgāniṅ hru abәnәr lakunya deni hәlār, maṅkana ta prajñā saṅ 
    <pb n="298"/>
 
 <p>apa ta lvirni samādhi saṅ yogi, an sātmaka ri bhaṭāra, nihan, ◉</p>
-   <lg xml:lang="San-latn" n="3" met="anuṣṭubh"><l>ātmani cetanaḥ sthitaḥ</l></lg> hiliṅ ikaṅ citta, kavәkas tekaṅ citta ri saṅ hyaṅ<lb/>
+   <lg xml:lang="San-latn" n="3" met="anuṣṭubh"><l>ātmani cetanaḥ sthitaḥ</l></lg><p> hiliṅ ikaṅ citta, kavәkas tekaṅ citta ri saṅ hyaṅ<lb/>
 ātmā, ya tekā rumakәt ri bhaṭāra, lana pvekaṅ samādhi maṅkana kapaṅguh<lb break="no"
 />anya de saṅ yogi, ya mataṅnyan kapaṅguh ikaṅ kasiddhyan denira,</p>
        <p>5 lvirnya kasiddhyan kaniṣṭha, madhya, mottama, mataṅnyan <pb n="61r" ed="ms"/>  tәlu ikaṅ kasiddhyan, apan tәlu lakṣaṇa saṅ yogi, hana <foreign xml:lang="San-latn">mṛdusambega</foreign>, hana <foreign xml:lang="San-latn">madhya<lb break="no"
@@ -1197,7 +1196,7 @@ maṅkana taṅ ātmā tan karakәtan deni kleśakarmavipākāśaya, mvaṅ sarv
 />jña ta ya lāvan sarvakāryakartā, tatan kalәvihan kaiśvaryanya, yan kva liṅa<lb/>
 saṅ para, karakәtan maraṅ ātmā deniṅ kleśakarmavipākāśaya, a<pb n="63r" ed="ms"/>pa byakta<lb break="no"
 />nya, hananyaṅ mañetanā, kadi mañetanā maraṅ ātmā, yan kva liṅa<lb/>
-saṅ para, tan hana ikaṅ rāt kabeh, yatan hanaṅ <supplied reason="omitted" certainty="high">cetanāniṅ</supplied> ātmā, ndān sarvajña ya,<lb/>
+saṅ para, tan hana ikaṅ rāt kabeh, yatan hanaṅ <supplied reason="omitted" cert="high">cetanāniṅ</supplied> ātmā, ndān sarvajña ya,<lb/>
    nyapan tahana kva liṅa saṅ para, tan dadi ya gumaveya dukani<lb/>
    avaknya,<lb/>
    yan sarvajña ya, kaliṅanya, dudū juga ikaṅ cetanāniṅ ātmā</p>
@@ -1231,16 +1230,16 @@ saṅ para, tan hana ikaṅ rāt kabeh, yatan hanaṅ <supplied reason="omitted"
       />   gaveya yoga, <quote type="lemma" xml:lang="San-latn">bhūmyalābha</quote> ṅaranya, tan hanaṅ kaharәpnya, tan pagave yoga,
           <quote type="lemma" xml:lang="San-latn">cañcala</quote> ṅaranya, iki sadākāla, tan hana kālanyān pagaveya yoga, nāhan taṅ<lb/>
       vighna ṅaranya, ya tikā hilaṅ deniṅ japa, huvusnyān hilaṅ ikaṅ vighna, ala<lb break="no"
-      />vanlavan jñānanta, mahyun ta kita magaveya yoga, ya d<supplied reason="lost" conf="high">u</supplied>meh saṅ yogi<lb/>
+      />vanlavan jñānanta, mahyun ta kita magaveya yoga, ya d<supplied reason="lost" cert="high">u</supplied>meh saṅ yogi<lb/>
 maṅabhyāsa, apan phalaniṅ japa ya vәnaṅ maṅabhyāsa yoga, lanā pvekā<lb/>
-      yoga ginavayakәn, ya mataṅnya<supplied reason="lost" conf="high">n pa</supplied>mәkasakәn saṅaskāra, ikaṅ saṅaskāra<lb break="no"
+      yoga ginavayakәn, ya mataṅnya<supplied reason="lost" cert="high">n pa</supplied>mәkasakәn saṅaskāra, ikaṅ saṅaskāra<lb break="no"
 />niṅ yoga, ya ta magave <pb n="65r" ed="ms"/> tutur ri saṅ yogi, ikaṅ tutur ya mamaṅun yoga, mu<lb break="no"
 />vah, ikaṅ yoga ya mamәkasakәn saṅaskāra muvah ri citta saṅ yogi, lvirnyān<lb/>
 tәka hana gə̄ṅ hana rәtrәt lvirnya, hana lima tәkanya, ndātan vuruṅ magavai<lb/>
 duhkah ri saṅ yogi,</p>
 <p><label type="question" n="30"/> pira ta kvehnikaṅ kleśa, lavan apa ta lakṣaṇanya,</p>
 <p>sumahur bhaṭāra,</p>
-       <p>nihan lakṣaṇanya ikaṅ kleśa, <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">avidyā</foreign>,</supplied> <foreign xml:lang="San-latn">asmitā</foreign>, <foreign xml:lang="San-latn">rāga</foreign>, <foreign xml:lang="San-latn">dveṣa</foreign>, <foreign xml:lang="San-latn">abhiniveśa</foreign>, sa<lb break="no"
+       <p>nihan lakṣaṇanya ikaṅ kleśa, <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">avidyā</foreign>,</supplied> <foreign xml:lang="San-latn">asmitā</foreign>, <foreign xml:lang="San-latn">rāga</foreign>, <foreign xml:lang="San-latn">dveṣa</foreign>, <foreign xml:lang="San-latn">abhiniveśa</foreign>, sa<lb break="no"
 />maṅkana lvirni kleśa,</p>
        <p><foreign xml:lang="San-latn">avidyā</foreign> ṅaranya, ikaṅ jñāna mabalik, liṅnya, ikaṅ ātmā yeki tan lanā, ta<pb n="65v" ed="ms"/>n<lb/>
    hānāpa ta hilaṅ svabhāvanya, kunaṅ ikaṅ pṛthivī āpah teja bāyu ākāśa, yekā<lb/>
@@ -1298,17 +1297,17 @@ tan pamātimāti,</p>
    saṅ hyaṅ, athavā bhojana kunaṅ, maṅkana pakәnanya, tātan maṅkana saṅ<lb/>
    yogi, nihan vaneh tan pa<pb n="69r" ed="ms"/>matyana sattva yan parvaṇi kāla, tatān maṅkana<lb/>
    saṅ yogi, pisaniṅu sirān pamatyana sarvasattva, ya ta sinaṅguh <foreign xml:lang="San-latn">ahiṅsā</foreign> ṅara<lb break="no"
-   />nya, <foreign xml:lang="San-latn">satya</foreign> ṅaranya, tan madva ri bratanya, tan madva movus, <supplied reason="omitted" certianty="high">yekā <foreign xml:lang="San-latn">satya</foreign><lb/>
+   />nya, <foreign xml:lang="San-latn">satya</foreign> ṅaranya, tan madva ri bratanya, tan madva movus, <supplied reason="omitted" cert="high">yekā <foreign xml:lang="San-latn">satya</foreign><lb/>
       ṅaranya, <foreign xml:lang="San-latn">astainya</foreign> ṅaranya</supplied> tan paṅahala ṅuniveh maliṅa mas, <surplus>yekā <foreign xml:lang="San-latn">satya</foreign> ṅaranya,</surplus> ya sinaṅguh <foreign xml:lang="San-latn">astainya</foreign> ṅaranya, <foreign xml:lang="San-latn">brahmacāri</foreign> ṅaranya, yatanyan tan<lb/>
    kalalarana samādhi, ya doniṅ tan parabi, yekā <foreign xml:lang="San-latn">brahmacāri</foreign> ṅaranya, <foreign xml:lang="San-latn">apari<lb break="no"
 />graha</foreign> ṅaranya, tar paṅaku sarvadravya, nāhan lakṣaṇaniṅ yamabrata,</p>
-       <p><supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">niyama</foreign> ṅaranya,</supplied> <foreign xml:lang="San-latn">śauca</foreign>, <foreign xml:lang="San-latn">santoṣa</foreign>, <foreign xml:lang="San-latn">tapa</foreign>, <foreign xml:lang="San-latn">svādhyāya</foreign>, <foreign xml:lang="San-latn">īśva<pb n="69v" ed="ms"/>rapraṇidhāna</foreign>,</p> 
+       <p><supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">niyama</foreign> ṅaranya,</supplied> <foreign xml:lang="San-latn">śauca</foreign>, <foreign xml:lang="San-latn">santoṣa</foreign>, <foreign xml:lang="San-latn">tapa</foreign>, <foreign xml:lang="San-latn">svādhyāya</foreign>, <foreign xml:lang="San-latn">īśva<pb n="69v" ed="ms"/>rapraṇidhāna</foreign>,</p> 
        <p><foreign xml:lang="San-latn">śauca</foreign> ṅaranya, maradināvak, lāvan ambhәk hayva ta kavaśa deniṅ rāga<lb/>
 dveṣa moha, maradina movus, hayva muvusakәn maṅlareri vaneh, mara<lb break="no"
 />dina molah, hayva makolah durbhyāsana, maradin amaṅan, hayva pinaṅ<lb break="no"
 />an ikaṅ senuhutakәn paṅanәn saṅ viku, lāvan inumәnirājñāna, yekā sinaṅ<lb break="no"
-/>guh <foreign xml:lang="San-latn">śauca</foreign> ṅaranya, <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">santoṣa</foreign> ṅaranya,</supplied> solihanira nasi atah santoṣaknanira,<lb/>
-          athavā solihnira tinanәm i patapanira, ya santoṣaknanira, <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">tapa</foreign> ṅaranya,</supplied>
+/>guh <foreign xml:lang="San-latn">śauca</foreign> ṅaranya, <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">santoṣa</foreign> ṅaranya,</supplied> solihanira nasi atah santoṣaknanira,<lb/>
+          athavā solihnira tinanәm i patapanira, ya santoṣaknanira, <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">tapa</foreign> ṅaranya,</supplied>
       ikaṅ indriya kabeh prihәn sakitana, ri brata lāvan sa<pb n="70r" ed="ms"/>mādhi, yatanyan tan <lb/>
 padadyakәn arāga yan panon viṣaya kaliṅanya, tan garjita yan paṅrәṅə̄ kiduṅ<lb/>
 menak, athavā paṅgәla kunaṅ, ilatnya muhārāmet pinaṅan, yan pamaṅan<lb/>
@@ -1355,7 +1354,7 @@ tumama ta sira ri pagavayanira yoga, yan paṅheran, yan guhā, yan umah ku<lb b
 liṅanira yar panambhah ri bhaṭāra, huvus maṅkana, maluṅguha ta sira, riṅ<lb/>
 uṅgvan uṅgvananira, yan pәtaṅ, yan sandhi, yatanyan tan agaliṅa paluṅguh<lb break="no"
 />nira, makaphala sovenirāluṅguh, yan pagave yoga, nihan lakṣaṇanira āsana,<lb/>
-     hana <foreign xml:lang="San-latn">padmāsana</foreign>, <supplied reason="omitted" conf="high">hana <foreign xml:lang="San-latn">bhadrāsana</foreign>,</supplied> hana <foreign xml:lang="San-latn">svastikāsana</foreign>,</p>
+     hana <foreign xml:lang="San-latn">padmāsana</foreign>, <supplied reason="omitted" cert="high">hana <foreign xml:lang="San-latn">bhadrāsana</foreign>,</supplied> hana <foreign xml:lang="San-latn">svastikāsana</foreign>,</p>
        <p>nihan lakṣaṇaniṅ <foreign xml:lang="San-latn">padmāsana</foreign>, ikā talapakan kalih tinumpaṅakәn ri pupu<lb/>
           kalih, ya <foreign xml:lang="San-latn">padmāsana</foreign> ṅaranya, ikaṅ talapakan kalih, umuṅgva i sor iṅ pupu kalih, ya<lb/>
           <foreign xml:lang="San-latn">bhadrāsana</foreign> ṅaranya, <foreign xml:lang="San-latn">svastikāsana</foreign> ṅaranya, ikā tala<pb n="73r" ed="ms"/>pakan kalih, <lb/>
@@ -1438,15 +1437,14 @@ sora atah denirānaṅyama rumuhun, yapvan mahyun sira tumirva śaktini<lb/>
 siṅha, ikaṅ siṅha sinaṅyama śaktinya, yāpvan mahyun sira tumirva śaktini<lb/>
 garuḍa, sinaṅyamanira śaktinya, yapvan mahyun sira vruha ri tәkani pā<lb break="no"
 />tinira, ikaṅ dharmādharma sinaṅyamanira, aparan ikaṅ dharmādharma ṅa<lb break="no"
-/>ranya, ikaṅ gave hala mvaṅ gave hayu, a<pb n="77v" ed="ms"/>pan phalani dharmā<supplied reason="omitted" conf="high">dharma</supplied> ya<lb/>
+/>ranya, ikaṅ gave hala mvaṅ gave hayu, a<pb n="77v" ed="ms"/>pan phalani dharmā<supplied reason="omitted" cert="high">dharma</supplied> ya<lb/>
    magave hurip mvaṅ śarīra, yapvan hәnti phalanikaṅ dharmādharma sinaṅ<lb break="no"
 />yamanira, tәka pātinira yan maṅkana, yapvan mahyun sira tan kәne lapa<lb/>
 vәlәkaṅ, hanāmṛta i sorniṅ guruṅguruṅan, yekā saṅyamanira, yapvan ma<lb break="no"
 />hyun sira tumona saṅ siddha lāvan devatā, ikaṅ bāyu si udāna saṅyamanira,<lb/>
 hana ta jyotih mәtu saṅkeṅ vunvunan ya pinakasuluhnira an ton saṅ sid<lb break="no"
 />dha lāvan devatā, yapvan mahyun sira katona dumilah avaknira, ikaṅ bāyu<lb/>
-si samāna ya saṅyamanira, yapvan mahyun sira <pb n="78r" ed="ms"/> gumәsәṅanāvaknira, kady<lb/ break="no"
-/>aṅgāniṅ bhasmaśeṣa, mamәkasaknāvva jugāvaknira, ikaṅ bāyu si samāna<lb/>
+si samāna ya saṅyamanira, yapvan mahyun sira <pb n="78r" ed="ms"/> gumәsәṅanāvaknira, kady<lb break="no"/>aṅgāniṅ bhasmaśeṣa, mamәkasaknāvva jugāvaknira, ikaṅ bāyu si samāna<lb/>
 ya saṅyamanira,</p>
 
    <pb n="324"/>
@@ -1529,7 +1527,7 @@ yan paṅlakulaku, tan kavādha deniṅ gunuṅ karәs <surplus>iśe</surplus> p
 vatu trus ikā denira, ndātan vikāra ikāvaknira, ya ta kali<pb n="82v" ed="ms"/>ṅaniṅ alit, laghi<lb break="no"
 />man ṅaranya, abyə̄t avaknira tambhayan vәkasan mahaṅan kadi kapuk, ya<lb/>
 ta mataṅnyan paṅlayaṅ ri ākāśa, mvaṅ madrәs ta lakunira saṅke manah<lb/>
-          yekā <foreign xml:lang="San-latn">laghiman</foreign> ṅaranya, <supplied reason="omitted" conf="high"><foreign xml:lang="San-latn">mahiman</foreign> ṅaranya,</supplied> tar kalәvihan gə̄ṅnira yar sa<lb break="no"
+          yekā <foreign xml:lang="San-latn">laghiman</foreign> ṅaranya, <supplied reason="omitted" cert="high"><foreign xml:lang="San-latn">mahiman</foreign> ṅaranya,</supplied> tar kalәvihan gə̄ṅnira yar sa<lb break="no"
    />harәp gə̄ṅa, athavā pinūjā ta sira saparanira, <foreign xml:lang="San-latn">prāptiḥ</foreign> ṅaranya, sakaharәpira<lb/>
           tәka, sakahyunnira hana, nihan arthaniṅ <foreign xml:lang="San-latn">prāpti</foreign> vaneh, dadi sira gumamәl<lb/>
           saṅ hyaṅ vulan saṅkeṅ paliṅgihanira, <foreign xml:lang="San-latn">prākāmya</foreign> ṅaranya, sakaharәpnira rū<lb break="no"
@@ -1612,7 +1610,7 @@ byaktanyān hana, yan kva liṅanta, nihan utpattisthitilīnani jagat, yeka ic<l
 gumavaya jagat ya mataṅnyan taṅ ātmā cumetanekaṅ prakṛtitattva, mataṅ<lb break="no"
 />nyan mәtu nāda saṅkeṅ niṣkala, saṅke nāda mәtu taṅ vindu, saṅkeṅ vindu<lb/>
 mәtu taṅ ardhacandra, saṅke ardhacandra, mәtu ta oṁkāra, saṅkeṅ oṁkāra<lb/>
-   mәtu taṅ tryakṣara, <supplied reason="omitted" conf="high">saṅkeṅ tryakṣara</supplied> mәtu taṅ pañcākṣara, saṅkeṅ pañ<lb break="no"
+   mәtu taṅ tryakṣara, <supplied reason="omitted" cert="high">saṅkeṅ tryakṣara</supplied> mәtu taṅ pañcākṣara, saṅkeṅ pañ<lb break="no"
 />cākṣara, mәtu taṅ jagat kabeh, nāhan lakṣaṇanikaṅ niṣkalatattvān pamәt<lb break="no"
 />vakәna jagat,</p>
 
@@ -1622,7 +1620,7 @@ mәtu taṅ ardhacandra, saṅke ardhacandra, mәtu ta oṁkāra, saṅkeṅ o�
 <p>sumahur saṅ para, kadi saṅkeṅ prakṛti ikaṅ vindu nāda, apan saṅkeṅ bhaṭāra<lb/>
    ikaṅ vindu nāda mәtu, yan maṅkana liṅa saṅ para, yan dadya taṅ dharma<lb/>
    tuṅgal sumaṇḍaṅa dha<pb n="88r" ed="ms"/>rma rva, ndya dharma rva ṅaranya, nyaṅ cetanā lā<lb break="no"
-/>van acetanā, <supplied reason="lost" conf="high">n</supplied>dya ṅaranya cetanā, bhaṭāra paramakāraṇa, ndya acetanā<lb/>
+/>van acetanā, <supplied reason="lost" cert="high">n</supplied>dya ṅaranya cetanā, bhaṭāra paramakāraṇa, ndya acetanā<lb/>
 ṅaranya, nyaṅ prakṛtitattva, yekā tan dadi pinakadharmān atuṅgal, padanya,<lb/>
 kadyaṅgāniṅ tәṅah ṅve, sәṅguhәn ta tәṅah vәṅi, apa mataṅnyan tan dadi<lb/>
 maṅkana bhaṭāra, apan sira vәnaṅ makecchā ikaṅ rat kabeh, yan maṅkana<lb/>
@@ -1643,18 +1641,18 @@ palvir tinonta, apan ta pva pratyakṣa ya, yāvat tan palvir ikaṅ jagat, tāv
 <!--  pada nāhan - , SUPPLIED-->
 
 
-<!--internal: choice, hi, supplied
-   <!--ext: app, rdg, note, ptr
+<!--internal: choice, hi, supplied-->
+   <!-- ext: app, rdg, note, ptr-->
 
-<!--<rdg>previous editors</rdg>
+<!--<rdg>previous editors</rdg>-->
 
-<!--<!<div type="apparatus"><listApp><app loc="a7"><note>xxx</note></app></listApp></div>
+<!--<div type="apparatus"><listApp><app loc="a7"><note>xxx</note></app></listApp></div>-->
 
-<!--<div type="apparatus"><listApp><app loc="a7"><lem>xxx</lem><rdg source="#AA2017"<!-->xxx</rdg><note>xxx</note></app></listApp></div>
+<!--<div type="apparatus"><listApp><app loc="a7"><lem>xxx</lem><rdg source="#AA2017">xxx</rdg><note>xxx</note></app></listApp></div>-->
 
 
 
-<!--<choice><corr></corr><sic>katon</sic></choice> 
+<!--<choice><corr></corr><sic>katon</sic></choice> -->
    
    
    
