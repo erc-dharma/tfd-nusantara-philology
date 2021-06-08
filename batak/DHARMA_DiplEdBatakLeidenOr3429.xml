@@ -83,14 +83,20 @@
         2. . >> <supplied reason="subaudible">.</supplied>
         -->
         <!-- rules applicable in a second pass, only for transliteration to transcription conversion > crit. conversion script
-        1. Ca· >> C
-        2. C1aC2V· >> C1VC2  NB V is not a
-        3. _k >> _h NB underscore stands for a typed space
-        4. hV >> V NB the V should be lower case except if the word stands at beginning of <p> or of a new sentence (see capitalization rules below)
-        5. uncapitalization: I, U > i, u
-        6. capitalization:
-          A. every name enclosed in <name> to be capitalized, but then what about non initial parts of multipartite names>? Probaly mark every element with <name> and the the rule apply to all instances, if any, of <name> present with <persName>
-          B. capitalize every initial letter of a <p> and every letter following ._ (period plus typed space) — NB this rule needs to be modifiedi if conversion to <supplied reason="subaudible">.</supplied> will apply previously
+        0. STRIP SOME XML TAGS
+            <supplied>
+            <unclear>
+            keep only contents of <corr> and <reg> from within <choice>
+        1. uncapitalization: I, U > i, u
+        2. capitalization:
+          A. every name enclosed in <name> to be capitalized, but then what about non initial parts of multipartite names? Probaly mark every element with <name> and the rule apply to all instances, if any, of <name> present with <persName>
+          B. capitalize every initial letter of a <p>
+          C. and every letter following ._ (period plus typed space) — NB this rule needs to be modified if conversion to <supplied reason="subaudible">.</supplied> will apply previously  1. Ca· >> C
+            C· > C
+        3. C1aC2V· >> C1VC2  NB V is not a
+        4. _k >> _h NB underscore stands for a typed space
+        5. hV >> V NB the V should be lower case except if the word stands at beginning of <p> or of a new sentence (see capitalization rules below)
+
 
           other approach: encode with <hi rend="cap">h</hi>asa
         -->
@@ -103,12 +109,18 @@
     <p>
     <pb n="1r"/>
     <!-- https://drive.google.com/drive/folders/1k5glbG6ZVixzG0ttBMbrOy0HHSaPad14 -->
-    <lb n="1r-1"/><g type="B1"/> Poda ni pamusatana· ni paro·bu<lb
-    n="1r-2" break="no"/><space quantity="corresp-B1-lb1"/><!-- how to encode such cases is to be discussed with Axelle -->kitana· beya di karo·ja sita<lb
-    n="1r-3" break="no"/>sita, beya kita dipadatu kalaka· di kasukutano· na bolano·, beya <unclear>k</unclear>i<lb
-    n="1r-4" break="no"/>ta dipadatu kalaka· manusaku· kuta
+    <lb n="1r-1"/><g type="B1"/> poda ni pamusatana·<!-- pamusatan· --> ni paro·bu<lb
+    n="1r-2" break="no"/><space quantity="corresp-B1-lb1"/><!-- how to encode such cases is to be discussed with Axelle -->kitana·<!-- kitan· -->  beya di karo·ja sita<lb
+    n="1r-3" break="no"/>sita, beya kita dipadatu kalaka·<!-- kalak· -->  di kasukutano· na bolano·, beya <unclear>k</unclear><lb
+    n="1r-4" break="no"/>ita dipadatu kalaka·<!-- kalak· --> manusaku· kuta
       ri<supplied reason="subaudible">m</supplied>baru,
-    <!-- ri<supplied reason="subaudible">m</supplied>baru
+    <!--
+    saku
+    saku· > suk·
+1. <choice><sic>saku</sic><corr>suk·</corr></choice>
+2. saku<supplied reason="omitted">·</supplied>
+
+    ri<supplied reason="subaudible">m</supplied>baru
       con: aren't we supposing a phonetic phenomeon about which we cannot be sure?
       pro: neutral for the script
     other encoding options
@@ -122,7 +134,6 @@
       3. <choice><orig>ri</orig><reg>rami·</reg></choice>baru,
         pro/con of this option:
         pro: the best way to represent how the word should/would have been inscribed - script-oriented option
-
      -->
       beya kita maro·dom<unclear>u</unclear> <unclear>ba</unclear><lb
       n="1r-5" break="no"/>ho, beya kita maṅase home di juma di kasukutano·, beya kita ma<unclear>tu</unclear>
@@ -132,38 +143,41 @@
 </div>
     <div type="section" n="2">
     <head xml:lang="eng">Invocations and enumeration of the <foreign>datu</foreign>s through which the instructions have been handed down</head>
-    <p><app><lem>hasa daIda ma karorobo ni karo·<choice><orig>bota</orig><reg>bona·ta</reg></choice> Inano· hasa da<unclear>b</unclear><lb
+    <p><app><lem>hasa daIda ma karorobo ni karo·<choice><orig>bo</orig><reg>bano·</reg></choice>ta Inano· hasa da<unclear>b</unclear><lb
     n="1r-8" break="no"/>⌉oto monaṁ kita di kasukutano·ni,</lem><note type="grammatical">This segment is a significant example of the slightly different functions played by the conjunction <foreign>asa</foreign>. In the first occurrence is used for introducing a sequel of actions, and more specifically, for introducing the main clause of this sequence. In the second place, it introduces the consequence that the main clause has for the secondary clause. In this last occurrence, asa is identical to the other conjunction umbaen.
-    In the text, it will not be always so clear  which of these functions should be attributed to asa, and for this reason I will consider it generally as a conjunction introducing a sequence of actions, which also in TBG 317 is defined as its original function. Consequently, exceptions are made for cases like this one, where it is clear the different meaning that should be attributed to asa and where it has been possible to give two different translations into English, in the extant cases, it will be generally translated as “so”.</note></app> daboto kita dapotana·, <unclear>da</unclear><lb
+    In the text, it will not be always so clear  which of these functions should be attributed to <foreign>asa</foreign>, and for this reason I will consider it generally as a conjunction introducing a sequence of actions, which also in TBG 317 is defined as its original function. Consequently, exceptions are made for cases like this one, where it is clear the different meaning that should be attributed to <foreign>asa</foreign> and where it has been possible to give two different translations into English, in the extant cases, it will be generally translated as “so”.</note></app> daboto kita dapotana·, <unclear>da</unclear><lb
     n="1r-9" break="no"/>boto kita talu di kata ni paro·bukitana·ta Inano·, <choice><orig>nina</orig><reg>nina·na</reg></choice> gu<choice><orig>ru</orig><reg>runa·</reg></choice><unclear>ta</unclear>
     <lb n="1r-10"/>guru <persName type="human"><roleName type="datu" subtype="guru"><name>hagana·</name> ni haji</roleName></persName> ho I. Hasa kupodakano· ma di ko hale, guru <persName type="human"><roleName type="datu" subtype="guru"><name>tumura<unclear>nu·</unclear></name>
     <!-- rozo and argr have reached here on 2021-05-03 -->
     <lb n="1r-11"/>ni haji</roleName></persName> hasa ro ma di ko, guru <persName type="human"><roleName type="datu" subtype="guru"><name>so dupaṅano·</name>ni haji</roleName></persName>, datu paro·ta<unclear>n</unclear><lb
     n="1r-12" break="no"/>⌉·daṁ bolano· tu banuva ni kalaka·, <unclear>su</unclear>marikano· homas· si gumar<unclear>o</unclear><!-- rozo and argr have reached here on 2021-05-17 --><lb
     n="1r-13" break="no"/>⌉· siṁ, hasa ro ma di ko, hale
-    ho<choice><orig>pu</orig><reg>ma·pu</reg></choice>
-    <!-- h<choice><orig>opu</orig><reg>ompu</reg></choice>
-    Dans' pref: ho<supplied reason="omitted">ma·</supplied>pu
-    ho<supplied reason="omitted">m</supplied>pu -->
+    <choice><orig>ho</orig><reg>homa·</reg></choice>pu
+    <!-- rejected:
+          ho<choice><orig>pu</orig><reg>ma·pu</reg></choice>
+          ho<supplied reason="subaudible">m</supplied>pu
+          h<choice><orig>opu</orig><reg>ompu</reg></choice>
+        -->
     ni <persName type="human"><roleName type="datu" subtype="ompu"><name>maṅalebana· namora haro</name></roleName></persName> di tan<choice><sic>a</sic><corr>o</corr></choice>
       <!-- ta<choice><sic>na</sic><corr>no</corr></choice> -->
     <placeName type="territorialDivision" subtype="village"><name>sira<lb
       n="1r-14" break="no"/>hati·</name></placeName>, hasa ro ma di ko, datu <persName type="human"><roleName type="datu"><name>paṁguhala·</name> <unclear>n</unclear>i haji </roleName></persName>ho I. Iya, gohara· maram<lb
-      n="1r-15" break="no"/>⌉o·puni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> tuvana· <persName type="human"><roleName type="datu" subtype="ompu-tuvan"><name>binaru·</name> kata ni haji</roleName></persName>, datu paro·tana·daṁ <supplied reason="omitted">na</supplied> bolan<lb
+      n="1r-15" break="no"/>⌉o·puni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice><!-- <choice><orig>ho</orig><reg>homa·</reg></choice>pu --> tuvana· <persName type="human"><roleName type="datu" subtype="ompu-tuvan"><name>binaru·</name> kata ni haji</roleName></persName>, datu paro·tana·daṁ <supplied reason="omitted">na</supplied> bolan<lb
       n="1r-16" break="no"/>⌉o· ganapu· desa liyata· paro·tibi, sumarikano· homasa· siguma<lb
       n="1r-17" break="no"/>ro·siṁ, paro<supplied reason="omitted">·</supplied>taṅana·
-                                    <!-- pa<choice><sic>rota</sic><corr>ro·ta</corr></choice>ṅana· -->
-                                    <!-- par<choice><sic>ota</sic><corr>o·ta</corr></choice>ṅana· -->
-                                    <!-- p<choice><sic>aro</sic><corr>or</corr></choice>taṅana· -->
+                                    <!-- rejected: pa<choice><sic>rota</sic><corr>ro·ta</corr></choice>ṅana·
+                                          par<choice><sic>ota</sic><corr>o·ta</corr></choice>ṅana·
+                                          p<choice><sic>aro</sic><corr>or</corr></choice>taṅana· -->
       na palohano·, paro·jari-jari si rurasu·, dibake
         <!-- rozo and argr have reached here on 2021-05-31 -->
-    <lb n="1r-18" break="no"/>na· si kumisaki· di lobuhana· na godaṁ, pana·samato· so tarida d
-    <lb n="1r-19" break="no"/>⌉o haku, tiyana· tano <placeName type="territorialDivision" subtype="village"><name>Palipi Namora Sinaga</name></placeName> ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="datu" subtype="ompu"> <name>Ratasu·</name> </roleName></persName>na so nuṁ talu
-    <lb n="1r-20"/>di bisara na godaṁ, maṅasakano· paṅulubalaṁ duva raja hojami· na bolan
-    <lb n="1r-21" break="no"/>⌉o·, maṅasakano· panuruni balagori na bolano·, maṅasakano· pabukutana·
-    <lb n="1r-22" break="no"/>daku· si haṁgasa na simanako·toki na sotarulaka·, baho datu na so tara·
-    <lb n="1r-23" break="no"/>subatu·, boru si baso bolano·. Hasa kupodakano· ma di ko, hale lahe da
-    <lb n="1r-24" break="no"/>tu <persName type="human"><roleName type="datu"><name>Paro·kasa·</name> kata ni haji</persName></roleName> ho I; gohara· kadatuhano· ma Inano·
+    <lb n="1r-18" break="no"/>na· si kumisaki· di lobuhana· na godaṁ, pana·samato· so tarida d<lb
+     n="1r-19" break="no"/>⌉o haku, tiyana· tano <placeName type="territorialDivision" subtype="village"><name>Palipi Namora Sinaga</name></placeName> ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="datu" subtype="ompu">
+     <name>Ratasu·</name> </roleName></persName>na so nuṁ talu
+    <lb n="1r-20"/> di bisara na godaṁ, maṅasakano· paṅulubalaṁ duva raja hojami· na bolan<lb
+    n="1r-21" break="no"/>⌉o·, maṅasakano· panuruni balagori na bolano·, maṅasakano· pabukutana·<lb
+    n="1r-22" break="no"/>daku· si haṁgasa na simanako·toki na sotarulaka·, baho datu na so tara·<lb
+    n="1r-23" break="no"/>subatu·, boru si baso bolano·. Hasa kupodakano· ma di ko, hale lahe da<lb
+    n="1r-24" break="no"/>tu <persName type="human"><roleName type="datu"><name>Paro·kasa·</name> kata ni haji</persName></roleName> ho I; gohara· kadatuhano· ma Inano·
     </p>
   </div>
   <p>
@@ -172,25 +186,26 @@
 
 <lb n="2r-1"/>Iya <surplus>go</surplus>gohara· maramo·puni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> tuvana·<persName type="human"><roleName type="datu" subtype="ompu-tuvan"> <name>Rana·jo</name></roleName></persName> na miyana· di
 <lb n="2r-2"/>tano <placeName type="territorialDivision" subtype="village">Haheka·na Uli</placeName> <placeName type="territorialDivision" subtype="village">tano kuta julu lubana· si babiyata·</placeName> kuta ni na
-<lb n="2r-3"/>takaṁ kuta <supplied reason="omitted">ni na</supplied> juhara hanaka· ni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="ompu"><name>So Tara·duga</name></persName></roleName>, paro·taki na ka
-<lb n="2r-4" break="no"/>ro·napo·, paramaka· so balunano·, si patuvana· na bosaru·, si panakato
-<lb n="2r-5" break="no"/>⌉· na male; jala <choice><orig>ta</orig><reg>taṁ</reg></choice>ki, jala Uhalaṁ, jala paro·taki, jala Ulubalaṁ, jala paro·ju
+<lb n="2r-3"/>takaṁ kuta <supplied reason="omitted">ni na</supplied> juhara hanaka· ni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="ompu"><name>So Tara·duga</name></persName></roleName>, paro·taki na ka<lb
+n="2r-4" break="no"/>ro·napo·, paramaka· so balunano·, si patuvana· na bosaru·, si panakato<lb
+n="2r-5" break="no"/>⌉· na male; jala <choice><orig>ta</orig><reg>taṁ</reg></choice>ki, jala Uhalaṁ, jala paro·taki, jala Ulubalaṁ, jala paro·ju
 <lb n="2r-6" break="no"/>ji monaṁ, jala gariṁ-gaṁ, jala ga<unclear>re</unclear>ge jala panib<surplus>i</surplus>la· jala pareme, na so nuṁ talu
 <lb n="2r-7"/><unclear>di</unclear> bisara <unclear>na</unclear> godaṁ, dibakena· kinapatasa·na· maṅasakano· paṅulubalaṁ
 <lb n="2r-8"/>duva raja hojami· na bolano·, maṅasakano· panuruni balagori <supplied reason="omitted">na</surplus> bola
-<lb n="2r-9" break="no"/>no·. Hasa ku podakano· <supplied reason="omitted">ma di ho</supplied>, hanaka· kasiyana· guru <persName type="human"><roleName type="datu" subtype="guru"><name>so sukarano·</name></roleName></persName> kata ni haj
-<lb n="2r-10" break="no"/>⌉i ho I, kasi duṅana·ni ro ka. Iya, gohara· maramo·puni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="datu" subtype="ompu"><name>so kalo
+<lb n="2r-9" break="no"/>no·. Hasa ku podakano· <supplied reason="omitted">ma di ho</supplied>, hanaka· kasiyana· guru <persName type="human"><roleName type="datu" subtype="guru"><name>so sukarano·</name></roleName></persName> kata ni haj<lb
+ n="2r-10" break="no"/>⌉i ho I, kasi duṅana·ni ro ka. Iya, gohara· maramo·puni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="datu" subtype="ompu"><name>so kalo
 <lb n="2r-11" break="no"/>biyana·</name></roleName></persName>, na s<supplied reason="omitted">o</supplied> katudosana·, ditubukano· daInaṁ <persName type="human">boru <name>sami·bolano·</name></persName> na di
-<lb n="2r-12" break="no"/>hama·batano· Iboto ni raja <persName type="human"><roleName type="raja"><name>paṅa(du)vana·</name></roleName></persName> ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"> <roleName type="datu" subtype="ompu">ni <name>batu koliṁ</name> </roleName></persName>, ma<choice><orig>ro</orig><reg>ramo·</reg></choice>pu n
-<lb n="2r-13" break="no"/>⌉i hanaka· ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="datu" subtype="ompu">ni <name>maṅarosaṁ</name> kata ni haji</roleName></persName> na miyana· di tano <placeName type="territorialDivision" subtype="village">tu <supplied reason="omitted">k·</supplied>
-<lb n="2r-14" break="no"/>taku·</placeName> <persName type="human">tuvana· <name>nakoda</name> raja guru <name>si bisa</name></persName>, datu <persName type="human"><roleName type="datu"><name>radiṁ na bolano·</name></roleName></persName>, paramaka· s
-<lb n="2r-15" break="no"/>⌉o balunano·, si patuvana· na bosara·, si <unclear>pa(na)(ta)ko·</unclear> na male. Dibakena· ki
+<lb n="2r-12" break="no"/>hama·batano· Iboto ni raja <persName type="human"><roleName type="raja"><name>paṅa(du)vana·</name></roleName></persName> ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"> <roleName type="datu" subtype="ompu">ni <name>batu koliṁ</name> </roleName></persName>,
+ma<choice><orig>ro</orig><reg>ramo·</reg></choice>pu n<lb
+n="2r-13" break="no"/>⌉i hanaka· ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="datu" subtype="ompu">ni <name>maṅarosaṁ</name> kata ni haji</roleName></persName> na miyana· di tano <placeName type="territorialDivision" subtype="village">tu <supplied reason="omitted">k·</supplied>
+<lb n="2r-14" break="no"/>taku·</placeName> <persName type="human">tuvana· <name>nakoda</name> raja guru <name>si bisa</name></persName>, datu <persName type="human"><roleName type="datu"><name>radiṁ na bolano·</name></roleName></persName>, paramaka· s<lb
+ n="2r-15" break="no"/>⌉o balunano·, si patuvana· na bosara·, si <unclear>pa(na)(ta)ko·</unclear> na male. Dibakena· ki
 <lb n="2r-16" break="no"/>nagabe ni I matulaṁ ni guru <persName type="human"><roleName type="datu" subtype="guru"><name>so sukarano·</name></roleName></persName>, baho ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> <persName type="human"><roleName type="datu" subtype="ompu"><name>so kalobiyana·</name></roleName></persName>, datu
 <lb n="2r-17"/>panusaru· di bisara na godaṁ, na so nuṁ talu di kasukutano· na bolano·,
 <lb n="2r-18"/>maṅasakano· paṅulubalaṁ duva raja hojami· na bolano·, na miyana· di ta
 <lb n="2r-19" break="no"/>no <placeName type="territorialDivision" subtype="village"><name>sapurana· ni kuta</name></placeName>, kuta ni na <choice><orig>ta</orig><reg>taṁ</reg></choi>kaṁ, kuta na juvara paro·padaṁ <supplied reason="omitted">na</supplied>so bolu
-<lb n="2r-20" break="no"/>sano·, batu mamaka· <supplied reason="omitted">na</supplied> so kagaIrana·, batu sani·daro· <supplied reason="omitted">na</supplied> so kasigeyana·, hal
-<lb n="2r-21" break="no"/>⌉ogo di talo·piṁ <supplied reason="omitted">na</supplied>so kalahosana·. Hasa ro ma di ko, hale guru <persName type="human"><roleName type="datu" subtype="guru"><name>panakara·</name> ka
+<lb n="2r-20" break="no"/>sano·, batu mamaka· <supplied reason="omitted">na</supplied> so kagaIrana·, batu sani·daro· <supplied reason="omitted">na</supplied> so kasigeyana·, hal<lb
+ n="2r-21" break="no"/>⌉ogo di talo·piṁ <supplied reason="omitted">na</supplied>so kalahosana·. Hasa ro ma di ko, hale guru <persName type="human"><roleName type="datu" subtype="guru"><name>panakara·</name> ka
 <lb n="2r-22" break="no"/>ta ni haji</roleName></persName> ho I, I ma gohara· mara·sihaka; Iya gohara· kadatuhano· gu
 <lb n="2r-23" break="no"/>ru <persName type="human"><roleName type="datu" subtype="guru"><name>pa<choice><orig>nu</orig><reg>nuṁ</reg></choice>kunana·</name> kata ni haji</roleName></persName> ho I; Iya gohara· maramo·puni ho<choice><orig>pu</orig><reg>ma·pu</reg></choice> raja
 <lb n="2r-24"/><persName type="human"><roleName type="datu" subtype="ompu-raja">na <name>tumanu· <add place="above">jalu</add></name> kata ni haji</roleName></persName>, na pinajiṁ-jiṁ ni daInaṁ <persName type="human">boru <name>manulaṁ namalo</name></persName>,
