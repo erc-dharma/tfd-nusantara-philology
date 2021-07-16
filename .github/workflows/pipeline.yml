@@ -19,8 +19,8 @@ jobs:
 
        - name: Updating the edited texts in the repository
          run: |
-         git config user.name github-actions
-         git config user.email github-actions@github.com
-         git add workflow-output
-         git commit -m "Transformation for batak files"
-         git push
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add workflow-output
+          git commit -m "XML files are edited regarding editorial conventions"
+          git push
