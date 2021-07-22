@@ -20,6 +20,9 @@ jobs:
        - name: Build diplomatic editions with Ant
          run: ant -noinput -buildfile build-diplomatic.xml
 
+        - name: Build diplomatic editions with Ant
+          run: ant -noinput -buildfile build-critical.xml
+
        - name: Updating the edited texts in the repository
          run: |
           git config user.name github-actions
