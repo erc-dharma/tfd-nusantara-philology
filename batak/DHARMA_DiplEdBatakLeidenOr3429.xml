@@ -36,25 +36,52 @@
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
-            <sourceDesc><!-- only the handDesc can be filled in at this stage -->
-                <msDesc><!-- //// NB: the msIdentifier had to be added for validation purposes ///. It will be edited later with the metadata spreadsheet -->
+            <sourceDesc>
+                <msDesc>
                     <msIdentifier>
-                        <repository>DHARMAbase</repository>
-                        <idno/><!-- don't modify this -->
+                        <country>Nederlands</country>
+                        <settlement>Leiden</settlement>
+                        <repository>Leiden Univeristy Library</repository>
+                        <idno>Cod.Or.3429</idno>
                     </msIdentifier>
-                    <msContents><!-- describe the intellectual content of an inscription -->
-                        <summary><!-- //// NOT MANDATORY  ////--></summary> <!-- offers the possibility to give a summary of the inscription's content -->
-                    </msContents>
                     <physDesc>
+                        <objectDesc form="concertina">
+                            <supportDesc material="Tr.Ba">
+                                <support>Tree-bark</support>
+                                <extent>27 folios
+                                    <dimensions scope="all" type="folio" unit="cm">
+                                        <height>27</height>
+                                        <width>24</width>
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>                            
+                            <layoutDesc>
+                                <layout>The texts run from folio A1 to A27, and from B1 to B26, B27 is left blank.
+                                    The beginning of a text is precedeed by the <foreign>bindu na godang</foreign><g type="B1"/> whereas the division into smaller sections of the texts is stresssed by the <foreign>bindu na metmet</foreign> <g type="B2"/>.
+                                    From from B1 to B9 the internal division of the text are stressed by another type of <foreign>bindu na metmet</foreign> in which its upper right-side has been elongated shaping a single black line <g type="BL"/>. The black line preceedes and runs parallel to the first line of the text, until the right-side margin.
+                                    On these same folios, the each small section of text is accompanied by a drawing, rapresenting different antrophomorphic figures.</layout>
+                            </layoutDesc>
+                        </objectDesc>
                         <handDesc>
-                            <p><!-- The script name(s) will be inserted here at a later stage from the metadata spreasheet. At this stage, you can mention here in a free-text paragraph any characteristics of the writing observed more than once in this inscription that seem unusual/uncommon or otherwise noteworthy given the general characteristics of the script in question. See EGD 11.2. --></p>
-                            <!-- If you need to identify individual hands (EGD §7.5/) in addition to one or more paragraphs of general palaeographic description, wrap <summary> around the <p> or <p>s above, and, outside <summary>, create <handNote> elements for each hand as follows:
-						<summary><p><p/></summary>
-						<handNote xml:id="Pallava00001_hand1"></handNote>
-						<handNote xml:id="Pallava00001_hand2"></handNote>
-					 -->
-         </handDesc>
+                            <handNote>
+                                description of letters, possibly including
+                                <height>letter-heights</height>
+                            </handNote>
+                        </handDesc>
+                        <bindingDesc>
+                            <binding><p>Two wooden covers</p></binding>
+                        </bindingDesc>
                     </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Place of origin</origPlace>
+                            <origDate>Date of origin</origDate>
+                        </origin>
+                        <provenance type="found">Findspot and circumstances/context</provenance>
+                        <provenance type="observed">
+                            Modern location(s) (if different from repository, above)
+                        </provenance>
+                    </history>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
