@@ -14,8 +14,11 @@ jobs:
          uses: actions/setup-java@v1
          with:
            java-version: 1.8
-       - name: Build with Ant
+       - name: Build batak with Ant
          run: ant -noinput -buildfile build-batak.xml
+
+       - name: Build diplomatic editions with Ant
+         run: ant -noinput -buildfile build-diplomatic.xml
 
        - name: Updating the edited texts in the repository
          run: |
