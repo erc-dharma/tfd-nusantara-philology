@@ -30,7 +30,14 @@
 
     <!-- git clone then pull -->
     <git-clone-pull repository="git://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
+    
     <fileset id="batakFiles" dir="batak" includes="*.xml"/>
+    
+    <!-- Transformation HTML Diplomatic into a version without space – temporary solution-->
+    <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-deleteSpace.xsl" in="batak/DHARMA_DiplEdBatakLeidenOr3429.xml" destdir="batak">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <regexpmapper from="(.*).xml" to="\1-noSpace.xml"/>
+    </xslt>
     
     <!-- Transformation XML vers HTML - DIPLOMATIC -->
     <xslt force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
@@ -47,4 +54,5 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*).xml" to="\1-logical.html"/>
     </xslt>
+      
 </project>
