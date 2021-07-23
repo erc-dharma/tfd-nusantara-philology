@@ -32,7 +32,7 @@
     <git-clone-pull repository="git://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
 
     <!-- Transformation XML vers HTML - DIPLOMATIC -->
-    <xslt force="true" style="./project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="./output/batak" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar" basedir="./batak" includes="*.xml">
+    <xslt basedir="batak" includes="*.xml" force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <param name="edition-type" expression="diplomatic"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <mapper from="(.*).xml" to="\1-diplomatic.html"/>
@@ -43,7 +43,7 @@
   <param name="date" expression="07-01-2000"/>
 </xslt> -->
     <!-- Transformation XML vers HTML - LOGICAL -->
-    <xslt force="true" style="./project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="./output/batak" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar" basedir="./batak" includes="*.xml">
+    <xslt  basedir="batak" includes="*.xml" force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <param name="edition-type" expression="logical"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <mapper from="(.*).xml" to="\1-logical.html"/>
