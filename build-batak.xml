@@ -34,9 +34,8 @@
     <fileset id="batakFiles" dir="batak" includes="*.xml"/>
     
     <!-- Transformation HTML Diplomatic into a version without space – temporary solution-->
-    <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-deleteSpace.xsl" in="batak/DHARMA_DiplEdBatakLeidenOr3429.xml" destdir="batak" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+    <xslt style="project-documentation/EditorialStylesheets/tpl-deleteSpace.xsl" in="batak/DHARMA_DiplEdBatakLeidenOr3429.xml" out="batak/DHARMA_DiplEdBatakLeidenOr3429-noSpace.xml" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <regexpmapper from="(.*).xml" to="\1-noSpace.xml"/>
     </xslt>
     
     <!-- Transformation XML vers HTML - DIPLOMATIC -->
