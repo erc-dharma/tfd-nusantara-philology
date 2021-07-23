@@ -35,7 +35,7 @@
 
     <!-- Transformation XML vers HTML - DIPLOMATIC -->
     <xslt force="true" style="./project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="./output/batak" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
-        <param name="type-edition" expression="diplomatic"/>
+        <param name="edition-type" expression="diplomatic"/>
         <fileset refid="batakFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*).xml" to="\1-diplomatic.html"/>
@@ -43,7 +43,7 @@
     
     <!-- Transformation XML vers HTML - LOGICAL -->
    <xslt force="true" style="./project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="./output/batak" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
-        <param name="type-edition" expression="logical"/>
+        <param name="edition-type" expression="logical"/>
         <fileset refid="batakFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*).xml" to="\1-logical.html"/>
