@@ -6,163 +6,633 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title type="main">Aṣṭādadaśavyavahāra</title>
-          <editor>John Doe</editor>
-        <!-- Possibility to add the <editor> tag:
-        <editor ref="part:ID">
-					<forename></forename>
-					<surname></surname>
-				</editor>
-				OR
-				<editor ref="part:ID">
-					<name></name>
-				</editor>
-        -->
+        <title type="main">Aṣṭādaśa Vyavahāra, Perpusnas L. 882</title>
+        <!--Change the title of the file with the name of your text-->
+        <!--<title type="subtitle">Digital Diplomatic Edition of...</title>-->
+        <!-- fill in the subtitle if necessary -->
+        <editor ref="part:tilu"> 
+          <forename>Tim</forename> 
+          <surname>Lubin</surname> 
+        </editor>
+        <editor ref="part:argr"> 
+          <forename>Arlo</forename> 
+          <surname>Griffiths</surname> 
+        </editor>
         <respStmt>
           <!-- repeat the respStmt when necessary -->
-          <resp>creation of the file</resp>
+          <resp>Photos</resp>
           <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-          <persName ref="part:jodo"><!-- update the id -->
-            <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-            <surname>Doe</surname>
+          <persName ref="part:adgu">
+            <name>Aditia Gunawan</name> 
           </persName>
         </respStmt>
       </titleStmt>
       <publicationStmt>
         <authority>DHARMA</authority>
+        <pubPlace>
+          <!-- fill in here the place or places where the encoding has been done --> </pubPlace>
         <idno type="filename">DHARMA_DiplEdAstadasaVyavaharaPerpusnasL882</idno>
+        <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">
-            <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-            <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
-          </licence>
+            <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900,
+              Mountain View, California, 94041, USA.</p>
+            <p>Copyright (c) 2019-2025 by Tim Lubin &amp; Arlo Griffiths.</p> </licence>
         </availability>
         <date from="2019" to="2025">2019-2025</date>
       </publicationStmt>
       <sourceDesc>
+        <!-- Give your witness an unique identifier -->
         <msDesc>
           <msIdentifier>
-            <repository>museum/archive</repository>
-            <idno>inventory number</idno>
+            <institution>Perpustakaan Nasional Republik Indonesia</institution>
+            <repository>Lontar</repository>
+            <idno>L. 882</idno>
           </msIdentifier>
+          <msContents>
+            <!-- the msContents isn't mandatory -->
+            <!--<msItem>
+              <author>Śāntarakṣita</author>
+              <title>Vipañcitārthā</title>
+            </msItem>--> </msContents>
           <physDesc>
             <objectDesc>
-              <supportDesc>
-                <support>description of object/monument (likely to include <material/>
-                and <objectType/> information, <dimensions/>, etc.)</support>
-              </supportDesc>
-              <layoutDesc>
-                <layout>description of text field/campus</layout>
-              </layoutDesc>
+              <!-- Here you can give a physical description of the manuscript in prose-->
+              <p>This manuscript is a lontar (<foreign>ləmpiran</foreign>), 44 cm long, extending over 37 folios with text in Old Javanese language and Balinese script. It was described by Juynboll (1911:
+                  188–189, MCCCXXXI, cod. 882). It is preserved at Perpustakaan Nasional Republik Indonesia and listed by Behrend (1998: 363, peti 60, L 882).</p>
+              <p>Juynboll 1911</p>
+              <p>MCCCXXXI. (Cod. 882).</p>
+              <p>Lĕmpiran, lang 44 cM. en groot 37 fol., bevattende een O. Jav. wetboek, dat <foreign>Aṣṭâdaça wyawahâra</foreign> schijnt te heeten. Het begin luidt <foreign>Awighnam astu. Nihan Aṣṭâdaça wyawahâra
+                    kawruhakna de sang mahyun aglarakna wyawahârawicedana</foreign>. Het is in zuiver O. Jav. geschreven, waarschijnlijk in het <foreign>Majapahitsche</foreign> tijdperk, want de naam van dit rijk komt er eenige malen in voor.
+                  Dikwijls worden Sanskṛtverzen aangehaald. Reeds op regel 3 van fol. 1 worden de <foreign>aṣṭaduṣṭa</foreign> genoemd, waarmede de door dr. Jonker uitgegeven <foreign>Kuṭâra-mânawa</foreign> begint, doch hier
+                  afwijkend. Op fol. a, 36 staat: <foreign>Nihan ta ngaran ing Dewâgama</foreign>. Het is afkomstig uit Den Pasar. Eigendom van het Bat. Gen, in bruikleen bij het leg. Warn.</p>
             </objectDesc>
             <handDesc>
-              <handNote>description of letters, possibly including <height>letter-heights</height>
-              </handNote>
+              <p>The scribe is generally scrupulous about writing /ya/ rather than /e/, e.g. <foreign>a</foreign>, even a few instances of <foreign>n</foreign> (22v1–2, 23v4), etc., but is not wholly consistent in doing so (see, e.g.,
+                <foreign>e</foreign> in 23v1), which suggests conscious archaizing. On the other hand, the suffix <foreign>i</foreign> is often written <foreign>-i</foreign>, a feature typical of MJ/NJ.</p>
+              <p><foreign>jña</foreign> An ambiguous akṣara that may be confused with independent vowel <foreign>Ī</foreign> must actually be read
+                <foreign>jña:</foreign>. Instances in 2r3, 2v2, 4r3-4, 7r2 confirm this reading. On the other hand, <foreign>jña</foreign> in 23r4 is unambiguous.</p>
+              <p>repha/layar is noted in the Indonesian mode, i.e., straddling the akṣaras.</p>
+              <p>use of yry for expected ryy</p>
             </handDesc>
           </physDesc>
           <history>
-            <origin>
-              <origPlace>Place of origin</origPlace>
-              <origDate>Date of origin</origDate>
-            </origin>
-            <provenance type="found"> Findspot and circumstances/context
-            </provenance>
-            <provenance type="observed">Perpustakaan Nasional, Jakarta.
-            </provenance>
+            <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
           </history>
         </msDesc>
       </sourceDesc>
     </fileDesc>
-      <encodingDesc>
-        <projectDesc>
-          <!-- Part mandatory -->
-          <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-          <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-        </projectDesc>
-        <editorialDecl>
-          <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-          <correction>
-            <p/>
-          </correction>
-          <normalization>
-            <p/>
-          </normalization>
-          <punctuation>
-            <p/>
-          </punctuation>
-        </editorialDecl>
-        <samplingDecl>
-          <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-          <p/>
-        </samplingDecl>
-        <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-        <!-- Will need to be updated once a more official realase is done -->
-        <variantEncoding method="parallel-segmentation" location="internal"/>
+    <encodingDesc>
+      <projectDesc>
         <!-- Part mandatory -->
-      </encodingDesc>
-      <profileDesc>
-	<langUsage>
-      	  <language ident="kaw-Latn">Old Javanese, romanized</language>
-	</langUsage>
-        <textClass>
-          <keywords>
-            <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-            <term/>
-            <!-- Ignore this element for the time being. -->
-          </keywords>
-        </textClass>
-      </profileDesc>
-    
+        <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+        <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+      </projectDesc>
+      <editorialDecl>
+        <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+        <!--
+      <p>ā-mātrā (length mark) <foreign>tədoṅ</foreign> :</p>
+      <p>e-mātrā <foreign>taliṅ</foreign> -e</p>
+      <p>repha <foreign>suraṅ</foreign> r</p>
+      <p>anusvāra (to express ṅ) <foreign>cəcək</foreign> ṁ</p>
+      <p>anusvāra (to express m) <foreign>ulu ricəm</foreign> ṁ*</p>
+      <p>anunāsika <foreign>ulu candra</foreign> m̐</p>
+      <p>comma <foreign>carik siki </foreign>,</p>
+      <p>double comma <foreign>carik kalih</foreign> ,, (also called <foreign>carik parèrèn</foreign>)</p>
+      <p>circular sign (like zero) <foreign>carik aguṅ</foreign> 0</p>
+      <p>double daṇḍa <foreign>panti/pantən</foreign> ||</p>
+      <p>special opening double daṇḍa <foreign>pamada</foreign> //</p>
+      <p>space filler <foreign>pamənəṅ</foreign> <g type="filler">§</g></p>
+      <p>virāma <foreign>adəg-adəg ·</p>
+    -->
+        <correction>
+          <p/>
+        </correction>
+        <normalization>
+          <p/>
+        </normalization>
+        <punctuation>
+          <p/>
+        </punctuation>
+      </editorialDecl>
+      <samplingDecl>
+        <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+        <p/>
+      </samplingDecl>
+      <schemaRef type="guide" key=" EGCv01"
+        url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+      <!-- Will need to be updated once a more official realase is done -->
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+      <!-- Part mandatory -->
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="kaw-Latn">Old Javanese, romanized</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+          <term/>
+          <!-- Ignore this element for the time being. -->
+        </keywords>
+      </textClass>
+    </profileDesc>
     <revisionDesc>
-      <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
+      <change who="part:axja" when="2021-08-05" status="draft">Transformation of a googleDocs into XML-TEI P5</change>
       <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
     </revisionDesc>
   </teiHeader>
   <text xml:space="preserve" xml:lang="kaw-Latn">
     <body>
-        <p xml:lang="x-ojw-Latn">                
-          <pb n="3v"/>
-          <lb n="2"/> <g type="punctuation">|| ◯ ||</g> 
-          <q><lg>
-            <l n="1">sastraśmitaṣṭaloṣṭasi , kaṇḍā<g type="filler">§</g><lb n="3"/>karandutagnibhi , </l>
-          <l n="2">panipadhasirodan tu , na kambedaḥ hinahināṣṭiya || </l></lg></q> 
-          
-          mvaḥ pana<space type="binding-hole"/>hasanya , riṁ sañjata , riṁ vatu riṁ kayu , riṅ aṣṭi ṅaran baluṁ , riṁ rvi , haṅgəbug∙ , hana mpəkibhayu , hanu°l̥d iṁ<g type="filler">§</g> 
-        <lb n="4"/> agni , hanpak∙ , handupak∙ , hanavut∙ , iti panibanya || </p>
+      <div>
+        <!-- photo DSCF7962 bottom -->
+        <pb n="1r"/>
+        <!-- photo DSCF7963 bottom -->
+        <p><pb n="1v"/><fw place="left" n="1">1</fw>
+          <lb n="1v1"/> // 0 // Avighna:m astu // 0 // nihan āṣṭaḍaśavyavahara: kavruhakna: de saṁ mahyun a:<space type="binding-hole"/>glarakna: vyavahara:vicedana:, ndya ta lviṙnira:, pinakadi, R̥ṇa, ṅa, 1, hadaniṁ, tan kavehanya, 2, dikṣ<g type="filler">§</g>-</p>
+        <p><lb n="1v2"/> epa, ṅa, dr̥vya tinitipakən·, 3,, matuku, 12, vikraya, madol·, 13, A<g type="filler">§</g><space type="binding-hole"/>nuṣa, ṅa, kolihanya, 14, svamiphala, ṅa, maṅvan·, 15, simavivaḍa ṅaran·, maR̥but sima:, 16, paru<g type="filler">§</g>-</p>
+        <p><lb n="1v3"/> nya ṣṭeya, ṅa, maliṁ, balaṁ, sahasa:, ṅa, strisaṅgrataṇa:, 17, stripuṁ-ḍaṙmma vibhaga, ṅa,<g type="filler">§</g><space type="binding-hole"/> tadin·, 19, dyutamavvana:, ṅa, totohan·, praṇi, 20 || 0 || muvaḥ Aṣṭaduṣṭa, lvirnya, Iṅsaka, Amatya-</p>
+        <p><lb n="1v4"/>ni, codakaḥ, ṅa, Akon a:mateni, bhektaḥ, ṅa, Aṅanini, bhojyakaḥ, maveḥ <g type="filler">§</g><space type="binding-hole"/> paṅaniṁ duṣṭa, sahacarakaḥ, ṅa, sadulur lavan duṣṭa, pritikaḥ, ṅa, samitra lavan duṣṭa, sthanaḍaḥ, ṅa, makasthananiṁ</p>
+        <!-- photo DSCF7962 middle -->
+        <p><pb n="2r"/><lb n="2r1"/> duṣṭa, trataḥ, ṅa, matuluṁ duṣṭa, yeka:ṣṭaduṣṭa smr̥taḥ, katutuR̥n∙ || 0 || mvaḥ Ikaṁ du<space type="binding-hole"/>ṣṭatriya, pati doṣanya, yapvan maR̥p mahuripa, masoka ḍaṇḍa, 40000, riṁ tuṅgal tuṅgal∙, Apan svatmaduṣṭa, ṅa || 0 ||</p>
+        <p><lb n="2r2"/> mvaḥ Ikaṁ duṣṭa lima, ṅa, ḍaṇḍa, 20000, riṁ tuṅgal tuṅgal∙, Ika ta mon deniṁ śakṣi || <space type="binding-hole"/> 0 || mvaḥ Aṣṭacoraḥ, ṅa, ka:rtta, ṅa, lumkas maliṁ, karahika, ṅa, saholiḥ lavan maliṁ, nidiṣṭa, ṅa, atuḍuḥ mārggoṅgva</p>
+        <p><lb n="2r3"/> riṁ maliṁ, sthanadaḥ, ṅa, maveḥ huṅgvanya, śaka, ṅa, samitra lavan maliṁ, jña:ta, ṅa, vruḥ, tra<space type="binding-hole"/>ta, ṅa, matuluṁ maliṁ, gopta, ṅa, maniṅidakən maliṁ, yeka: ta tuturaniṁṅ aṣṭacoraḥ || mvaḥ Ikaṁ ka:rtta ka:raIta, tka-</p>
+        <p><lb n="2r4"/>ne lamun sahacihna sopakaraniṁ maliṁ patyana: hika:, sanak rabinya, dr̥vyanya, haku<space type="binding-hole"/>kudḍa: pasuk paḍaL̥m de saṁ prabhū,, mvaḥ sanak rabiniṁ karaItta, ika: tan∙ vnaṁ kukudən∙, ḍaṇḍanən∙, 10000,</p>
+        <!-- photo DSCF7963 middle -->       
+        <p><pb n="2v"/><fw place="left" n="2">2</fw>
+          <lb n="2v1"/> riṁ tuṅgal-tuṅgal∙, lamun samaka:ryyanya, lamun samaka:ryyan∙, jarahən kukudən sanak bharyya mvaṁ <space type="binding-hole"/> sadr̥vya:nya || mvaḥ Ikaṁ śadcoraḥ, ḍaṇḍa, 20000, sanak rabinya tan yogya ḍaṇḍanən∙ || kunaṁ yan mara:kṣa, matuluṁ,</p>
+        <p>
+         <lb n="2v2"/> maṅhakvakən∙ mañiṅidakən∙, ḍaṇḍa, 40000 || kunaṁ yan∙ jñata, Ikaṁ vruḥ yan maliṁ, śaka <space type="binding-hole"/>, mnəṁ tan maṅalvakən maliṁ, ḍaṇḍa, 20000 || kunaṁ yan luput saṅkerika: tan∙ ḍaṇḍakən∙ || deśabhaṅgabha:yat tyaktaṁ*, kr̥</p>
+        <p><lb n="2v3"/> taṁ* taskara:pa:rthivai [i.e., hr̥taṃ taskarapārtivaiḥ], Agnidagḍaṁ* jalanodaṁ, pañcasadaraṇaṁ* smr̥taṁ* || ka, dr̥vya I<space type="binding-hole"/>kaṁ saṅkeṁ rundaḥniṁ deśa, kanimitan praṁ katiṅgal ikaṁ deśadr̥vya, tinitipakən salviranya, paśu kunaṁ, dr̥vya<g type="filler">§</g></p>
+        <p><lb n="2v4"/> pinet iṁ taska:ra maliṁ, dr̥vya pinet de saṁ prabhū, katunviṅapūy∙, dr̥vya keli riṁ ⌈<space type="binding-hole"/>ve, kahəL̥m kunaṁ, Ika ta sahacihna, tan yogya katəmpuhana: riṁ panaṅgapi, titipan kaL̥bu riṁ pañcasaḍara</p>
+        <!-- photo DSCF7962 top -->
+        <p>
+          <pb n="3r"/><lb n="3r1"/>ṇa, ṅa || bedanya, yan hikaṁ prihyan avak∙ vnaṁ katəmpuhana: de saṁ matuvava || 0 || <space type="binding-hole"/> sthavaragośu, manuṣye sahasa:m kriyante naraḥ, madḍyamottamakaniṣṭai, doṣa duskr̥tam avacca || mvaḥ vvaṁ <g type="filler">§</g></p>
+        <p><lb n="3r2"/> sahaśa riṁ sthavara:, ṅa, kayukayu, riṁ paśu sakalviranya, sahaśa riṁ vvaṁ, kaniṣṭamadḍya<space type="binding-hole"/>huttama:, riṁ kayu candana, ḍaṇḍa, 20000, yan kayu lis∙ makadi kayu makaraniṁ taman∙, ḍarmma,</p>
+        <p><lb n="3r3"/> kadyaṅganiṁ na:gaśari, Aśoka, campaka, bha:kula, ḍaṇḍa, 10000, yan kayu sa<g type="filler">§</g><space type="binding-hole"/>manya, ḍaṇḍa, 5000, mvaḥ sahaśa riṁ sudra paśu, ṅa, hasu, celeṁ, vaḍus∙, 5000, yan madḍya paśu sinaha</p>
+        <p><lb n="3r4"/>śa, kbo sapi, yan palunən∙, gitikən∙, praṅən∙, sudukən∙, sahaśanən petə<space type="binding-hole"/>n∙, ḍaṇḍa, 10000, yan sahaśa riṅ utama paśu, gajaḥ hajaran∙, ḍaṇḍa, 20000, yan sahaśa mraṅa, hanuduk ha</p>
+        <!-- photo DSCF7963 top -->
+        
+        <p><pb n="3v"/><fw place="left" n="3">3</fw>
+          <lb n="3v1"/>malu, mvaṁ haṅgiti śudra, haṅhiṁṅ ūttama deniṁ tavuhanya, śinahaśa śiraḥnya, 10000, so<space type="binding-hole"/>r iṁ təṅgək∙, 5000, sor iṁ haṅga, 2000, sahaśa riṁ kavuha siraḥnya, riṁ kavulaniṁ sudra, kavulaniṁ kavula</p>
+        <p><lb n="3v2"/>, 5000, havate, 2000, sukune, 1000, yan brahma:ṇa, kṣatriya, veṣya, <space type="binding-hole"/> riṁ śiraḥ, 20000, sor iṁ təṅgək∙, 10000, riṁ pupu riṁ vtis∙, 5000 || 0 || sastraśmitaṣṭaloṣṭasi [i.e., śastrāśmakāṣṭaloṣṭā hi?], kaṇḍā<g type="filler">§</g></p>
+        <p>
+          <lb n="3v3"/> karandutagnibhi, panipaḍasirodan tu, na kam bedaḥ hinahina:ṣṭiya
+           || mvaḥ pana<space type="binding-hole"/>hasanya, riṁ sañjata, riṁ vatu riṁ kayu, riṅ aṣṭi ṅaran baluṁ, riṁ rvi, haṅgəbug∙ [i.e., aṅguvug], hanampəki bhayu, hanuL̥d iṁ<g type="filler">§</g></p>
+        <p>
+          <lb n="3v4"/> hagni, hanpak∙, handupak∙, hanavut∙, Iti panibanya || 
+          duḥka raktaṁ*, bra<space type="binding-hole"/>ni bhaṅgi [i.e. vraṇam bhaṅgam], cedanaṁ*, bhedanaṁ* vaḍam∙, kūryyat ya praninaṁ*, tad i, ḍaṇḍaparuṣyam ukyate || duḥkaṁ*, ṅa, <g type="filler">§</g></p>
+        <!-- photo DSCF7966 bottom -->
+        <p><pb n="4r"/><lb n="4r1"/> halaran∙, 
+          raktaṁ*, ṅa, mtu raḥ, brana:, ṅa, kanin∙, bhaṅga ṅaran tikəl∙, cedana, ṅa <space type="binding-hole"/>, pgat∙, bedana, blaḥ ḍaḍa, vada, mati, yan riṁ vvaṁ, yan riṁ paśu, maṅkana panahasanya, Iti ḍaṇḍaparuṣya</p>
+        <p>
+          <lb n="4r2"/> liṅ iṁ sa:stra || 0 || vvaṁ maṅluputakən∙ || 0 || mvaḥ kaṅiṅaran sadatatayi, viṣaḍa, <g type="filler">§</g><space type="binding-hole"/> haṅracun∙, Aghniḍa, hanunvani, strodr̥kaka:ra, Aṅamūk∙, Atarvvana, Aga gave, hanluḥ, rajipisuna,</p>
+        <p><lb n="4r3"/> hamiśuṇanakən si ratu, daratikrama, Amuṁpaṁ strī, daratikramaka:ra, ṅa || 0 || hika <space type="binding-hole"/> ta patyanana liṁniṁ sa:stra || mvaṁ vvaṁ maṅluputakən patiniṁ hatatayi, ḍaṇḍa, 40000,, 0,, Ajña:</p>
+        <p><lb n="4r4"/> na:th acire kale, gantuneva, na ḍaṇḍayet∙, Ajña:nat cirasambaṣe, pūrvvaḍaṇḍa <space type="binding-hole"/>, m avapnuyat∙ || Ikaṁ vvaṁ sapocapan lavan duṣṭa, saṅkeṁ tan vruḥnya yan duṣṭa, hakire kale, tan alavas i<g type="filler">§</g>-</p>
+        <!-- photo DSCF7964 bottom -->
+        
+        <p><pb n="4v"/>
+          <fw place="left" n="4">4</fw><lb n="4v1"/> ka: denya sapocapan∙, handaṇḍakən ika: riṁ saṅka pisan∙ || kūnaṁ hikaṁ vvaṁ yan so<space type="binding-hole"/>capan lavan duṣṭa, saṅkeṁ tan vruḥnya, cirasambaṣe, malavas denya sapocapan∙, pūrvvaḍaṇḍa pinaṅguḥnya, 5-</p>
+        <p><lb n="4v2"/>000 || 0 || mvaḥ hutaṁ tan kalilirana: deniṁ putra, hutaṁ tan paputra, hutaṁ to⌈<g type="filler">§</g><space type="binding-hole"/>tohan∙, śeṣaḍaṇḍa, hutaṁ tukon∙, hutaṁ sajə̄ṁ || pariputeśu dḍa:nyesu, sakamulaphaleśu ca:, ni<g type="filler">§</g>-</p>
+        <p><lb n="4v3"/> ranvaye śataṁ* ḍaṇḍaṁ*, sarnvaye [i.e. sānvaye ’r]dḍaśataṁ* damaṁ*
+           [= MDh 8.331] || Ikaṁ ḍanya, taL̥s∙, pinahayu <space type="binding-hole"/> rina:kṣa, pinagər tinuṅgu, hiṅalap iṁ vvaṁ kalarahina, yan kalapa, vovohan∙, pucaṁ, sekət pa</p>
+        <p>
+          <lb n="4v4"/> nadoṣanya, 1000, yan tan rinakṣa, tan tinuṅgu, satapaṇa ḍaṇḍa, 2000,, <g type="filler">§</g><space type="binding-hole"/> linokikansa deniṁṅ amet∙ || kunaṁ kalaratri pametnya, yogya patyanana:, maliṁ, ṅa || puspe</p>
+        <!-- photo DSCF7966 middle -->
+        <p><pb n="5r"/><lb n="5r1"/>su harite janye, śakamulatasibr̥śu, halpeṣu pariputaṣu, ḍaṇḍa syat pa<g type="filler">§</g><space type="binding-hole"/>ñcakr̥ṣṇalam∙ [~ MDh 8.330; ms Lo2: svalpeṣva-] || mvaḥ vvaṁ hametanəmaniṅ len∙, kambaṁ, gaṅan lambayuṁ, taL̥s∙, kelor, hakḍik tan pinagər∙,</p>
+        <p>
+          <lb n="5r2"/> ḍaṇḍa limaṁ sagama:s∙ || 
+          Aḍi saṁ*ma valadanaṁ*, nikṣepopanibhiḥ striyaḥ, rajasvaṁ* śro<space type="binding-hole"/>tiyasvañ ca, sopabhogena jiyyate [~ MDh 8.149, known var in d] || ka, Aḍisaṁ*ma, harthaniṁ rare, dr̥vya patitipan∙, panibhiḥ, dr̥vya saṁ pra-</p>
+        <p><lb n="5r3"/>bhū, dr̥vyaniṁ strī patibrata, tan vənaṁ buktinəniṅ len∙, tan∙ vnaṁ hilaṅa || mvaḥ ha<space type="binding-hole"/>na vvaṁ hanomaḥ-nomaḥ, vuvusnya sraḥ vlyan∙, rabi ta:yeṅ len∙, tan vehakna tmuha lavan kaṅ sinoma-</p>
+        <p><lb n="5r4"/>ḥnya, mvaṁ piraknya tan vehakna, pirak tiniṅgalan∙, ṅa || mvaḥ hana vvaṁ hanomaḥ-⌈<space type="binding-hole"/>nomaḥ, huvusnya sraḥ vlyan∙, katnu tekaṁ strī sinomaḥnya, riṁ səṇḍaṁ, riṁ kubvaṇ∙, pinkulnya tekaṁ strī si-</p>
+        <!-- photo DSCF7964 middle -->
+        
+        <p><pb n="5v"/><fw place="left" n="5">5</fw>
+          <lb n="5v1"/>nomaḥnya, yan a:na vvaṁ maṅkana, kumbur patavan-tavanya, ṅa, ḍaṇḍanya t:hǝr tan tǝmva<space type="binding-hole"/>kna, tukonya tan vehaknya || 0 || dvajahr̥ttha bhūktidasaḥ, matr̥jakrita:datrimaḥ, paitr̥ko ḍaṇḍadaśa</p>
+        <p><lb n="5v2"/> tru, saptetat masayonayaḥ [~ MDh 8.415] || ka, panaṅkaniṁ kavula:, tavan·, kavula saṅ<unclear>k</unclear>e <space type="binding-hole"/> pinaṅan·, krita, Ulihiṅ anuku, datrimaḥ, ṅa, kavula paveveḥ, saṅke bapa, saṅke Ibu,
+            ḍaṇḍana</p>
+        <p><lb n="5v3"/> śa, ṅa || mvaṁ vvaṅ a:ṅisiṅi rajama:rgga, riṁ pkǝn kunaṁ, ri sḍǝṅiṁ tana:naḍinya, hika ta <unclear>ma</unclear><space type="binding-hole"/>ḍaṇḍa rvaṁ paṇa, 40, Amedya tahinya, konǝn· br̥sihana || danyaṁ* daśabhyaḥ
+            kumbebhyaḥ, harate yyada<g type="filler">§</g></p>
+        <p><lb n="5v4"/> kaṁ* vadaḥ, śeṣe py ekadaśaguṇam·, mūlyat ḍaṇḍam prakalphavet· [~ MDh 8.320] || vvaṅ a<space type="binding-hole"/>met pari kala rahina, makahiṅan sapuluḥ ciṁ, piṁsavlasakna pari kaṁ hinalapnya, ḍaṇḍanya, yen lǝvi</p>
+        <!-- photo DSCF7966 top -->
+        <p><pb n="6r"/><lb n="6r1"/> ḥ sakiṁ sapuluḥ ciṁ, ḍaṇḍa pati || mvaḥ vvaṁ maṅiduni, manampǝtiṁ taI, maṅiḍǝtakǝ<space type="binding-hole"/>niṁ taI, manudukakniṁ taI, manunḍuṁhakniṁ taI, maṁḍǝdǝl·, ḍaṇḍa, 5000, pratamasahasa:, ṅa, || ka, <g type="filler">§</g></p>
+        <p><lb n="6r2"/> vvaṁ malapa dr̥veniṁ kulaḍara riṁ pkǝn·, yan mās·, salaka, yan dodot·, yan lǝvi<g type="filler">§</g><space type="binding-hole"/>ha saṅkeṁ satus paṅajinya, patyana: || yan kuraṁ saṅkeṁ paṅaji satus·, piṁsavlasakna paṅajinya, kaṁ denpe</p>
+        <p><lb n="6r3"/> t ḍaṇḍanya || sataṁ* brahma:ṇaṁ*m akruṣya, kṣatriya ḍaṇḍam ahartti, veṣyaḥ dva:rdḍasahi de <space type="binding-hole"/> va, sudran ta vadam aha:rtthiḥ [MDh 8.267] || ka, kṣatriya maṅuman-uman· brahma:ṇa, ḍaṇḍa, 2000,, 0 ,, veśya maṅuman-u-</p>
+        <p><lb n="6r4"/> man· brahma:ṇa, pati doṣanya || pañcaṣyat· brahma:ṇe ḍaṇḍa, kṣatriyasya<space type="binding-hole"/>nisañjane, veṣye syatḍ ardḍa:pañcasyat·, sudre dvaḍaśino damaḥ, [MDh 8.268]
+          vesyekṣatriyayoḥ su
+          ⌈<g type="filler">§</g>-</p>
+        <!-- photo DSCF7964 top -->
+        
+        <p><pb n="6v"/><fw place="left" n="6">6</fw>
+          <lb n="6v1"/> dre, vipe kṣatraveṣyaralaḥ [~ cd of stanza interpolated after MDh 8.268] || ka, kṣatriya maṅuman-uman· veṣya, ḍaṇḍa, 1<space type="binding-hole"/>000,, yan samavarṇna, brahma:ṇa paḍa brahma:ṇa, kṣatriya paḍa kṣatriya, veṣya paḍa veṣya, sudra pa-</p>
+        <p><lb n="6v2"/> ḍa sudra, maṅuman-uman inumanan·, ḍaṇḍa, 240,, yan asaṅǝt paṅuman-umane, <space type="binding-hole"/> maruṣyani śabda, haṅavakǝn saruhurniṁ guluṅ ūttamaṅga:, patyanana: kalanyañapalani śabda,, 0 ,,</p>
+        <p><lb n="6v3"/> dasivinalayan· sthanat·, yo naraḥ dviguṇaṁ* R̥ṇaṁ*, karmmasaṅkyadade śreṣta, sthe
+          ⌈<space type="binding-hole"/>
+          neti dviguṇotamaṁ* || mvaḥ vvaṁ maṅiṅgatakǝn dasi, saṅkeṁ sthananiṁ tuvanya, maveha hutaṅiṁ ḍasi maṅlǝpiḥ, mvaḥ</p>
+        <p><lb n="6v4"/> maveha pagaveniṁ ḍasi riṁ tuvvanya, huvus maṅkana: ḍaṇḍa dviguṇottama, 40<space type="binding-hole"/>000,, ḍasaḥ va bhr̥takaḥ svami, coditaḥ, kalane hataḥ, bhr̥takasya paL̥m danyat·, mr̥karaṇa<g type="filler">§</g></p>
+        <!-- photo DSCF7967 bottom -->
+        <p><pb n="7r"/><lb n="7r1"/> vicarayet· || daśa haṅalap upaḥ hamane kalapa, sakalviranya, tiba pva: <space type="binding-hole"/> ya, yan matiya, Upahane vehakna riṁ paṅeranya, tan vicaranika:, yan aṅalap upaḥ mareṁ durade-</p>
+        <p><lb n="7r2"/> śa, sinimbatiṁ kalana:, riṁ ma:rgga riṁ paran·, Upahanya pamuruhnya, vehakna <g type="filler">§</g><space type="binding-hole"/> riṁ tuhanya, tan vicaranika: || sasyavapi R̥ṇaṁ* R̥nat·, paninamūtama:rghnikaḥ, pañcaguṇaṁ*, jña:tida-</p>
+        <p><lb n="7r3"/> ṭo, kūryyat· daśa:gunottamaṁ* || vvaṁ manunvani pari riṁ savaḥ, maveha mulya<space type="binding-hole"/>niṁ pari, pañcaguṇa, mvaṅ avehagnisanta riṁ saṁ madr̥ve pari katunvan·, daśa:guṇotamaṁ* kūryyat·
+          , 2</p>
+        <p><lb n="7r4"/> 0000 || R̥nikasya tu, putrañ ca, R̥ṇañ ceva, hared api, visage R̥vi<space type="binding-hole"/>s cedene, karmmatyakumbikaḥ ḍani || Ikaṁ hanakniṁ tadin·, vnaṁ kumalilirana hutaṁ || hasdanitanaṁ*, sa</p>
+        <!-- photo DSCF7969 bottom -->
+        
+        <p><pb n="7v"/><fw place="left" n="7">7</fw>
+          <lb n="7v1"/> ndata, sanditanañca, mokṣakaḥ dagagvatha tanaprapta, syat·, corakadyadya<g type="filler">§</g><space type="binding-hole"/>t· kivaṁ* || hana vvaṁ manalyani vvaṁ tan yogya talyanana, muvaḥ hana vvaṁ haṅuvakakǝn kuṅkuṅan·, yogya ku-</p>
+        <p><lb n="7v2"/> ṅkuṅǝn deniṁ kaduṣṭanya, yan ana vvaṁ maṅkana, ḍaṇḍa sadoṣaniṁ coraḥ || kr̥te <g type="filler">§</g><space type="binding-hole"/> sa:rvve pitaḥ kanya, pare tasmin prayaccati, sarvva dviguṇikaṁ ḍaṇḍaṁ*, sahasadvakaṁm ūtamaṁ* || ka, bapaniṁ ka-</p>
+        <p><lb n="7v3"/> nya huvus aṅalap· vlyan·, sanaknya pinalakyakniṁ len·, Ika ta maṅsula<space type="binding-hole"/>kna vlyanya handviguṇa, mvaṁ ḍaṇḍa dvigunottama, 40000 || 0 || daśaniragasahanyat·, tat R̥ṇakaṁ* da-</p>
+        <p><lb n="7v4"/> dyadvakaṁ*, catūrśataṁ*, kroḍan· śreṣṭa, savakrayavisarjjanat· || ka, vvaṁ ha<space type="binding-hole"/>matyaniṁ kavulaniṁ vvaṁ nirdoṣa, manavuranaṁ hutaṁniṁ daśi maṁL̥viḥ, riṁ paṅeraniṁ dasi pinatyan·, mvaṅ ave-</p>
+        <!-- photo DSCF7967 middle -->
+        <p><pb n="8r"/><lb n="8r1"/> ha savakraya, catūrsata, 8000,, 0,, vatamanadvikaṁ* dr̥vyaṁ*, suvarṇnarajatan dana<space type="binding-hole"/>t·, dvigunaṁ* laṅgayet· hr̥tva, na punaḥ vuddira:kṣate || riṁ mahutaṁ ma:salaka:, hanavura dviguṇa juga ||</p>
+        <p><lb n="8r2"/> kanyavigiṣanajati, na: kiñ cit·, vapi ḍaṇḍayet·, jaghaṇaṁ* bhajataṁ* vakaṁ*, niya<g type="filler">§</g><space type="binding-hole"/>taṁ* vasayat·, hr̥tat· || kanyaṅuṅguhi tan yogya ḍaṇḍa de saṁ prabhū, yan maṅuṅgahi vvaṁ sor, tanyo<del>na</del>gya ⌈-</p>
+        <p><lb n="8r3"/> vehǝnira:, ḍaṇḍa de saṁ prabhū dviguṇottama || Asubhakaryyavalan tu, kūryyatayuḥ hi <space type="binding-hole"/> , ḍapayat·, tana:jña:tadikarye tu, na doṣoda:ś catūrdaśa || ka, rare tana:ñcikūlahe, makahiṅa<g type="filler">§</g>-</p>
+        <p><lb n="8r4"/> n vayaḥnya, tan· kna riṁ doṣa, patbǝlas tahun hiṅanya || kunǝṁ sasaṇḍanu<del rend="ui">⌈</del>lun·, pa<space type="binding-hole"/>ñavarṣapramana:, yan livat sakeṁ limaṁ tahun·, mari saṇḍa, kadolaniṁ hulun·, ṅa, tan· vnaṁ teka:pala<g type="filler">§</g></p>
+        <!-- photo DSCF7969 middle -->
+        
+        <p><pb n="8v"/><fw place="left" n="8">8</fw>
+          <lb n="8v1"/> tunǝn·, sahuranya, hutaṁniṁ saṇḍa || kunǝṁ sasaṇaniṁ vnaṁ-vnaṁ sinaṇḍakǝn·, kbo sapi kunaṁ, <space type="binding-hole"/> tluṁ tahun lavasnya, yan hana kanak· pva kajǝro sakiṁ tluṁ tahun·, Ikaṁ manaṇḍakǝn· maṅalap hanaknya, sahananya</p>
+        <p><lb n="8v2"/> , kunaṁ pva yan livat sakiṁ tluṁ tahun·, Ikaṁ manaṇḍa maṅalap hanaknya, mari saṇḍa, ṅa, L̥<space type="binding-hole"/>L̥b ika yan maṅkana, liṁniṁ śa:stra || kunaṁ saśaṇaniṁ sasaṇḍan· bhūṣaṇa-vastra:, rvaṁ tahun lavasnya, yan livat sakeṁ rvaṁ ta-</p>
+        <p><lb n="8v3"/> hun· mari saṇḍa Ika:, Ikaṁ manaṇḍa pramana, L̥L̥b ika yan maṅkana: || mvaḥ hana vvaṁ ma<g type="filler">§</g><space type="binding-hole"/>naṇḍakǝn hulun·, miṅgat pva ya sakeṁ pasaṇḍan·, hikaṁ manaṇḍakǝn manahurana hutaṁnya || mvaḥ hana pva ya hulun maṅi-</p>
+        <p><lb n="8v4"/> laṅakǝn· dr̥vyaniṁ paṅeranya, maṅr̥R̥mǝta kunaṁ, tambəhakna hutaṁnya, ṣaR̥ganya <space type="binding-hole"/> , maṅkana liṁniṁ śa:stra || mvaḥ hana vvaṁ manaṇḍakǝn daśa-daśi kunaṁ, sadutakaṁ daśa-dasi, ri vkasan vinalat·, maṅkana liṁ<g type="filler">§</g>-</p>
+        <!-- photo DSCF7967 top -->
+        <p><pb n="9r"/><lb n="9r1"/> niṁ sa:stra || guru, pva va, pitradeva, brahma:ṇa:, vva, bahuśrutaṁ*, Atatayinampaya<space type="binding-hole"/>nti, Anyadeva vicarayat· [MDh 8.350],, nr̥pa saṁ ratu, hamatyananatatayi, yan guru, yan rare, yan· vr̥ḍaḥ, yan brahma-</p>
+        <p><lb n="9r2"/> ṇa:, yan bahuśruti, biṣa:ṅaji, patyanana huga tan pavicara || 0 || ḍaṇḍanya, <space type="binding-hole"/> Aḍaṇḍayan raja:, ḍaṇḍyaṇ ḍai, vasy aḍaṇḍayan·, Ayaśo mahad apnoti, narakañ ceva gacati [MDh
+           8.128] || saṁ ratu<g type="filler">§</g></p>
+        <p><lb n="9r3"/> hayva dumǝṇḍa riṁ tan yogya ḍaṇḍanǝn saṅke liṁniṁ hagama:, Ikaṁ yogya ha:ḍa<space type="binding-hole"/>ṇḍanǝn saṅkeṁ hagama yan dinaṇḍa, dūryyaśa: saṁ ratu yan maṅkana:, An kalivatiṁ naraka || yan kiñcit·, daśa:-</p>
+        <p>
+          <lb n="9r4"/> varṣani, Agnido prekṣate, dani, bhūjapamaṇaṁ* pare tuṣṇaṁ*, na śa tala<space type="binding-hole"/>bdam aha:rtti [MDh 8.147] || yan· dr̥vya:savaka riṁ dr̥vya, hana riṁ saṇḍiṁ, Ikaṁ dr̥vya binuktiniṁ len·, makahiṅa-</p>
+        <!-- photo DSCF7969 top -->
+        
+        <p><pb n="9v"/><fw place="left" n="9">9</fw>
+          <lb n="9v1"/> n a:sapuluḥ tahun·, Ikaṁ madr̥vya tuṣṭi ṅaranya mnǝṁ, yan yogya kilalanikaṁ<g type="filler">§</g> <space type="binding-hole"/> dr̥vya yan maṅkana hilaṁ || darṣaṇa:pratibhaveṣya, vidir yyat· pūrvvacoditaḥ, ḍanapratibhuḥvi prete</p>
+        <p><lb n="9v2"/> , dayatne vapi ḍapayet· [MDh 8.160] || mvaḥ vvaṁ maṅandǝlakǝn kasahuraniṁ hutaṅ iṁ len·, da<space type="binding-hole"/>napratibhuḥ, yan mati tikaṁ maṅandǝlakǝn·, tan· vnaṁ hanaknya tagihǝn deniṁ praḍana:, tan· vnaṁ yatika tu-</p>
+        <p><lb n="9v3"/> musa: liṁniṁ hagama: sa:stra || mvaḥ vaṁ maṅandǝlakǝn maṅaku tan iṅgatanikaṁ vvaṁ darṣaṇa:<space type="binding-hole"/>pratibhūḥ, ṅa, kabvatana: vtuhaniṁ vvaṅ iṅandǝlakǝn·, yan tinǝn pva deniṁ hapihutaṁ, maṅlya yan tan mǝtu vvaṁ,</p>
+        <p><lb n="9v4"/> kaṁṅ iṅandǝlakǝn·, Ika:ṅ haṅandǝlakǝn hanahura hutaṁ riṁ praḍana, Arththanya<g type="filler">§</g> <space type="binding-hole"/> devek sahurakna, maṅkana: liṁniṁ śa:stra || mvaḥ hana vvaṁ hapihutaṁ, malavas pva yan tan tinagiḥ, gnǝp tahu-</p>
+        <!-- photo DSCF7970 bottom -->
+        <p><pb n="10r"/><lb n="10r1"/> nya, 10, tan panagiḥ, hat:hǝrrikaṅ ahutaṁ halavas· sthitihaneṁ saṇḍiṁnya, <space type="binding-hole"/> Umnǝṁ juga ya tan panagiḥ pisan·, makanimitta madanya, ri vkasan pva managiḥ livat sakeṁ tahunya,</p>
+        <p><lb n="10r2"/> 10, tan· vnaṁ sahuR̥n· vr̥dḍi, manahura: R̥ṇa:mula, sakavit·, ṅa, yan sa<space type="binding-hole"/>hapramaṇa, maṅkana: liṁniṁ sa:stra || hana vvaṁ hambukti patuvava, makanimitta valat·, maṅǝlyanana patuvava,</p>
+        <p><lb n="10r3"/> kaṁ bhinūktinya, mulihan dviguṇa, hat:hǝr rika ḍaṇḍa de saṁ prabhu, Utamasahasa, 20<space type="binding-hole"/>000, liṁniṁ sa:stra, kunaṁ vvaṁ hambukti saṇḍa, makanimita valat·, haṅǝlyanana samulyaniṁ saṇḍa, han dviguṇa</p>
+        <p><lb n="10r4"/> , mulihamǝpǝs·, maliṁ saṇḍa, ṅa, ḍaṇḍa de saṁ prabhu Utamaḍaṇḍa, 20000, I<g type="filler">§</g><space type="binding-hole"/>kaṁ manaṇḍakǝn manahura hutaṁ sakalantaraniṁ manaṇḍa, maṅkana liṁṅiṁ sa:stra || kunaṁ vvaṁṅ apihutaṁ tan papa<g type="filler">§</g></p>
+        <!-- photo DSCF7971 bottom -->
+        
+        <p><pb n="10v"/><fw place="left" n="10">10</fw>
+          <lb n="10v1"/> tra, tan pasaṇa:, vnaṁ tekaṁ mahutaṁ manahurana, yan paḍa jivanya, yan mati sa<space type="binding-hole"/>laḥ tuṅgal·, Ikaṁṅ anakiṁ mati tan· vnaṁ manahura:, tan· vnaṁ tagihǝn deniṁ hanakiṁ mapihutaṁ || mvaḥ ha<g type="filler">§</g>-</p>
+        <p><lb n="10v2"/> na stri mahutaṁ prihavak·, binuktinya sekalavan lakinya tan pa:nak ta ya, kari <space type="binding-hole"/> lakinya mahurip·, lakinya juga manahurana hutaṁnya || kunaṁ hikaṁ matuvava riṁ vvaṁ kraṅan·, matuvava</p>
+        <p><lb n="10v3"/> riṁ vvaṅ anǝluḥ, mati tekaṁ matuvava, tan palakunǝnika:, manupatipaṅa<space type="binding-hole"/>kiṁ, ṅa, liṁṅiṁ sa:stra: || mvaḥ vvaṁ hanagiḥ pihutaṁnya, paṅalapvekaṁ bhūmi, maṅalap· stri, maṅalap hanakiṁ</p>
+        <p><lb n="10v4"/> mahutaṁ, makanimitta valat paṅalapnya, tan sukaniṁ mahutaṁ, hinalapnya <space type="binding-hole"/> pva ya salaḥ tuṅgal·, huvus tan sinahur teka pihutaṁnya, At:hǝr muliha tikaṁ hinalapnya, makanimi-</p>
+        <!-- photo DSCF7970 middle -->
+        <p><pb n="11r"/><lb n="11r1"/> tta n paveḥniṁ mahutaṁ || mvaḥ hana yapva vvaṁ mapihutaṁ, maṅalapva ya dr̥vyaniṁ ma<g type="filler">§</g><space type="binding-hole"/>hutaṁ, sakalviraniṁ mahutaṁ, kbo sapi paśu kunaṁ, hinalapnya, tan paveha pitovinika mahutaṁ,</p>
+        <p><lb n="11r2"/> vnaṁṅ ika maṅalapa, yan alit pva ya mulyaniṁ hinalapnya sakiṁ pihutaṁnya, hapu<g type="filler">§</g><space type="binding-hole"/>haka hutaṁ ṅaranya, yan paḍa mulyanya lavan pihutaṁnya, halapǝn deniṁ mahutaṁ, yan tan paveḥ hi-</p>
+        <p><lb n="11r3"/> kaṁ mapihutaṁ, ḍaṇḍa de saṁ prabhu, 20000, t:hǝr ika huvus apihutaṁnya, hu<g type="filler">§</g><space type="binding-hole"/>daL̥n asahinalatnya, makanimitta tan paveḥnya || tvakbedakaḥ śakaṁ* ḍaṇḍyaḥ, coditasya daśa-</p>
+        <p><lb n="11r4"/> nakaḥ, maṅsebeḍa tu saniskan·, pravaṣyaḥ tv astibedakaḥ [~ MDh 8.284] || ka, blaḥniṁ <space type="binding-hole"/> kulit·, katon raḥnya, r=vaṅ ivu patiba: jampi, blaḥ livat iṁ ḍagiṁ, baluṁ, nǝm paha patiba: jampi</p>
+        <!-- photo DSCF7971 middle -->
+        
+        <p><pb n="11v"/><fw place="left" n="11">11</fw>
+          <lb n="11v1"/> piṇḍa, 9600,, muvaḥ vvaṁ ṅalapa saṇḍa, vvaṁ
+          ṅalapatuvavan·, tan pamvitiṁ patu<space type="binding-hole"/>vavan·, yan saṇḍa tan pamvitiṁ manaṇḍa, pinet prihavak iṅ amaliṁ patitipan·, rumahiṁ manaṇḍa kunǝṁ,</p>
+        <p><lb n="11v2"/> ḍapyaḥ prattamasahasa, maveha ḍaṇḍa, 5000 || pita, matha, suhrat·, brata, <space type="binding-hole"/> bha:ryya, putra, purohitta, na:ḍaṇḍye, raja, haṣṭi ṣyat·, yaḥ svaḍarmma na tistati [~ MDh 8.335] | ka, pita, ṅa, bapa,</p>
+        <p><lb n="11v3"/> matha, ṅa, Ibu, suhr̥t·, ṅa, mitra, brata, ṅa, sanak·, bha:ryya, ṅa, stri, putra <space type="binding-hole"/>, ṅa, hanak·, purohitta, ṅa, brahma:ṇa:, tan daņḍanika de saṁ prabhu || kunǝṁ rehiṁ tripramaṇa:, sa:kṣi,<g type="filler">§</g></p>
+        <p><lb n="11v4"/> likita, bhūkti, kunǝṅ ika śa:kṣi r=va:, I likita bhūkti, yeka L̥viḥ tmǝ<g type="filler">§</g><space type="binding-hole"/>n ikaṁ mr̥maṇa: r=va:, maṅkana liṅiṁ sa:stra || kunaṁ hikaṁ supatra, tulisakna, I śaka:, maśa:, titi, triva-</p>
+        <!-- photo DSCF7970 top -->
+        <p><pb n="12r"/><lb n="12r1"/> ra, śa:kṣi, bhūkti, Ika: ta supatra haranya, tulisakna deniṁ mapihutaṁ, riṁ<g type="filler">§</g> <space type="binding-hole"/> haR̥piṁ mahutaṁ, marapvan tan evǝḥ pihutaṁnya, liṅiṁ sa:stra || muvaḥ hana vvaṁ maṅasi patuvava:, kaprama-</p>
+        <p><lb n="12r2"/> ṇan ta yan tinuvava:n·, Ika: ta vvaṁ maṅkana, ḍaṇḍanya tan samaḍaṇḍa, ṅa, I<g type="filler">§</g><space type="binding-hole"/>ka: ḍaṇḍa paḍa-paḍa la:van mulyaniṁ patuvava:, Ikaṁ tan inakunya, At:hǝr mulihan dviguṇa:, liṁniṁ sa:stra</p>
+        <p><lb n="12r3"/> || kunaṅ ikaṁ hamalaku patuvava:, haliñok ika yan matuvava:, tan a:<g type="filler">§</g><space type="binding-hole"/>naniṁ pramaṇa:nya, Ika: ta vvaṁ maṅkana:, ḍaṇḍanika:, sa, tan samaḍaṇḍa, ṅa, paḍa-paḍa salavan mulya<g type="filler">§</g></p>
+        <p><lb n="12r4"/> patuvava:n pinalakūnya, ḍaṇḍanya, hat:hǝr havehan dviguṇa:, Ikaṁ hi<g type="filler">§</g><space type="binding-hole"/>nakunya yan patuvavan·, maṅkana: liṅiṁ śa:stra || hana vvaṁ maṅasi hutaṁ, kapramaṇa:n ta yan a:hu<g type="filler">§</g>-</p>
+        <!-- photo DSCF7971 top -->
+        
+        <p><pb n="12v"/><fw place="left" n="12">12</fw>
+          <lb n="12v1"/> taṁ, maṅakvakǝn tan pahutaṁ, hadva ta ya tan pahutaṁ, makanimitta hananiṁ yan ma<space type="binding-hole"/>hutaṁ, Ikaṁ vvaṁ maṅkana, ḍaṇḍa teka de saṁ prabhu, ḍaṇḍahan dviguṇa: L̥vihakna:guṅiṁ hutaṁnya, At:hǝr ha-</p>
+        <p><lb n="12v2"/> nahura hutaṁ, maṁL̥viḥ riṁ mapihutaṁ, tan sadu, Aḍarmma, ṅa || muvaḥ hana vvaṁ tan pa<space type="binding-hole"/>pihutaṁ, tan a:naniṁ pramaṇanya yan mahutaṁ, hadva riṁ hujarnya, yan mapihutaṁ, makanimitta tan ananiṁ prama-</p>
+        <p><lb n="12v3"/> ṇa:niṁ mapihutaṁ, ḍaṇḍa hika: de saṁ prabhu, hadviguṇa: paṇagiḥnya, riṁ tan tuhu <space type="binding-hole"/> mahutaṁ, hat:hǝr havehan dviguṇa panagiḥnya riṁ vvaṁṅ inakunya mahutaṁ, Ika ta vvaṁ maṅkana tan sadu, ṅa,</p>
+        <p><lb n="12v4"/> Anakiṁ bhedakam anyat·, Apsu suskatavaineva, tad vapi pritiya kūr<space type="binding-hole"/>yyat·, dadyat cottamaśahasam· [MDh 9.279] || ka, vvaṁ hambǝdaḥ ḍahuhan·, hamateni bañu, Uttamasa<g type="filler">§</g>-</p>
+        <!-- photo DSCF7972 bottom -->
+        <p><pb n="13r"/><lb n="13r1"/> hasa: ḍaṇḍanya, 20000, tura:mbǝs ikana tambak· || mvaḥ hana ta ya vvaṁ haṅa<g type="filler">§</g><space type="binding-hole"/>kū dr̥vya, kapramaṇan ta ya tan tuhu dr̥vyanya, madva Ikaṁ hujarnya, baka ta vvaṁ maṅkana: || vimala:-</p>
+        <p><lb n="13r2"/> saṁjñeti, maṅoho, ṅa, ḍaṇḍa de saṁ prabhu, ḍaṇḍa dr̥vya ka:ra, ṅa, saṁjña lva<g type="filler">§</g><space type="binding-hole"/>niṁ dr̥vya hinakū tan tuhu dr̥vyanya, ḍaṇḍanya, mvaḥ mantukanikǝl· hikaṁ dr̥vya || śa:straḍaḥ manuṣatrana<g type="filler">§</g>-</p>
+        <p><lb n="13r3"/> t·, corena śa:bha:ye śūddha, hastenarityayaṅkatya, dadya dviguṇa<space type="binding-hole"/>m utama || hana vvaṁ haveḥ sañjateṁ maliṁ, makanimitta panuluṁnya, ḍaṇḍanya, 40000 || Upaka:re<g type="filler">§</g>-</p>
+        <p><lb n="13r4"/> karojantu, core gramavimohaṇat·, gatre gurur iki kyataḥ, <g type="filler">§</g> <space type="binding-hole"/> Uttamaṁ* triguṇan dado || Ikaṁṅ aveḥ hupaka:raniṁ maliṁ, ḍaṇḍa ya, 60000,, guruniṁ maliṁ, ṅa ||</p>
+        <!-- photo DSCF7973 bottom -->
+        
+        <p><pb n="13v"/><fw place="left" n="13">13</fw>
+          <lb n="13v1"/> vvaṁ huṇḍahagi hamaduṁ kayu, haniba:ni vvaṁ, yan paśu, tan saṅke matanya, ya<space type="binding-hole"/>n· pjaḥ kaṁ kaR̥bahan·, maṅǝlyanana patṅaḥ mulyanya kaṁ kaR̥bahan·, yan tan mati malara juga, maveḥ pa-</p>
+        <p><lb n="13v2"/> tamba, sahunaka:ra laranya, hiṅaniṁ varasnya, At:hǝr ḍaṇḍanika:, 4000, kunaṁ <space type="binding-hole"/> yan avkasan· mati deniṁ laranya, savakra ya sinapaliḥ, 4000,, 0,, maṅkana tekaṁ vvaṁ, maṅgutuk-gu-</p>
+        <p><lb n="13v3"/> tuk·, moliḥ ya paśu, yan tan manahanya, tuṅgalakaśaṇanya, liṁniṁ śa:stra || <space type="binding-hole"/> kunaṁ saśaṇa:niṁ strī, yan tiṅgalakǝn sva:minya, yan makatona maṅulaḥ-hulaḥ ḍarmma riṁ paran·, makahiṅa-</p>
+        <p><lb n="13v4"/> niṁ tahunya, 8, yan makadon aṅulah-ulaḥ vīḍya, tahunya, 6, yan maka⌈<space type="binding-hole"/>don haṅulah-ulaḥ yy arttha, makadya:layara:, tahunya, 10, yan makadon kaparabyakǝn· riṁ para-</p>
+        <!-- photo DSCF7972 middle -->
+        <p><pb n="14r"/><lb n="14r1"/> nya, tahunya, 3, Ika ta kabeḥ, yan livat saṅkeṁ saśaṇa:nya, sovaṁ-⌈<space type="binding-hole"/>sovaṁ, vnaṁ hikaṁ stri malakiya riṁ len·, maṅkana liṁniṁ śa:stra || kunaṁ lakṣaṇa:niṁ hanmu-nmu, yan tuhu dr̥-</p>
+        <p><lb n="14r2"/> venya, makapūrvvaka mavaraḥ-varaḥ riṁ deśa, riṁ vvaṁ makveḥ, pinasa:kṣyakǝ<space type="binding-hole"/>n·, yan· dr̥ve pinǝṇḍǝmnya, vinarahakǝnya riṁ pūrvvaka varṇnaniṁ dr̥ve pinǝṇḍǝm·nya, kveḥnya, rūpa-</p>
+        <p><lb n="14r3"/> nya, salviriṁ tiṅkahiṁ dr̥vya, pinǝṇḍǝmnya ṅūni, ri vkasan dinuduknya kavnaṅa<space type="binding-hole"/>n denikaṁ vvaṁ makveḥ, hatūtan adva paraḥnya ṅūnī, Ika: ta yan maṅkana:, tuhunika: dr̥vyanya, ta-</p>
+        <p><lb n="14r4"/> n yogya kilalan de saṁ prabhu, yan maṅkana,, kunaṁ hikaṁ vvaṁ manmu-nmu yan ta<space type="binding-hole"/>n maṅkana, lakṣaṇanya, tan· dr̥venya Ika:, yogya kilalan de saṁ prabhu, halot pva ta<g type="filler">§</g>-</p>
+        <!-- photo DSCF7973 middle -->
+        
+        <p><pb n="14v"/><fw place="left" n="14">14</fw>
+          <lb n="14v1"/> n paveḥ juga ḍaṇḍa de saṁ prabhu, tan samaḍaṇḍa, ṅa, sama: kveḥniṁ dr̥ve<g type="filler">§</g> <space type="binding-hole"/> tinmunya ḍaṇḍanya hat:hǝr halapǝn ikaṁ katmu de saṁ prabhu, maṅkana: liṁniṁ śa:stra || sahaste sa tu sarvve-</p>
+        <p><lb n="14v2"/> śu, steyasaṅgrahanesu ca, vag·ḍaṇḍayoś ca paruṣya, na parikṣerttha: <space type="binding-hole"/> sa:kṣaṇaḥ
+           [MDh 8.72] || ka, Ulaḥ tan pamǝlihana sa:kṣi, sḍǝṅiṁ sahasa:, sḍǝṅiṁ strisaṅgrahana, sḍǝṅi vakparu<g type="filler">§</g>-</p>
+        <p><lb n="14v3"/> ṣya || mvaḥ hana vvaṁ manmu hulun·, paśu vnaṁ-vnaṁ sakalviranya, saṁ prabhū maṅgaḍuḥ, hana<g type="filler">§</g> <space type="binding-hole"/> tluṁ tahun lavasanya, ginaḍuhan·, vnaṁ hika: tǝbusǝn deniṁ hadr̥vya, yan livat pva ya tluṁ tahun·, tan·</p>
+        <p><lb n="14v4"/> vnaṁṅ ika tǝbusǝn·, saṁ prabhu mamet ika: paśu, liṅiṁ śa:stra: || 0 || batvaṁ*<g type="filler">§</g> <space type="binding-hole"/> parigr̥naṁ* yatya, sakṣi dve-dve naraḍipaḥ, samasutukulotduṣṭan·, guṇa dve-dve kulotgata-</p>
+        <!-- photo DSCF7972 top -->
+        <p><pb n="15r"/><lb n="15r1"/> n·, bahukvaṁ* parigr̥ṇaṁ* yat· [~ MDh 8.73, v.l. in d; + repetition of pāda a] || ka, dr̥vyasakadiniṁ sa:kṣi makveḥ pituhunni<g type="filler">§</g><space type="binding-hole"/>ka:, hikaṁ sa:kṣi r:va: paḍa kveḥnya, duhure L̥vihe, paḍaniṁ guṇane yeka: petǝn· || mvaḥ dr̥vya ki-</p>
+        <p><lb n="15r2"/> nonakǝniṅ amaraṅgi, riṁṅ amahantǝn·, riṁṅ apaṇḍe ma:s·, vkasan ikaṁ dr̥vya:, <space type="binding-hole"/> karajabhaya, kagnibhaya, kaceraḥbhaya, Ikaṁ maṅkana, maṅlyanana riṁ madr̥vya, samulyaniṁ kon-kon·, ma-</p>
+        <p><lb n="15r3"/> kanimitta tan· yatna ri kara:kṣyanya, tan· yatna rika hulihanya || mvaḥ hana <g type="filler">§</g><space type="binding-hole"/> vvaṁ madola dr̥vya,, mvaḥ hana vvaṁ hatuku dr̥vya yan ana kaluputanya ri papa dolnya, patukunya salaḥ <g type="filler">§</g></p>
+        <p><lb n="15r4"/> tuṅgal·, Ika ta maṅaṅsuL̥na: salaḥ tuṅgal, sapuluḥ vṅi lavasnya haṅsu<space type="binding-hole"/>lakna, kunəṅ ikaṁ madola tuku, yan alot kavaṅsulaniṁ dr̥vya, ri turuṅ i gnəp sapuluḥ vṅi, ḍaṇḍa <g type="filler">§</g></p>
+        <!-- photo DSCF7973 top -->
+        
+        <p><pb n="15v"/><fw place="left" n="15">15</fw>
+          <lb n="15v1"/> teka de saṁ prabhū, sadsata paṇa ḍaṇḍanya, 12000,, yan livat pva sapuluḥ <space type="binding-hole"/> vṅi, tan· vnaṁ mamaṅsulakna salaḥ tuṅgal· || kunaṁ vvaṁ madol-atuku vnaṁ-vnaṁ, paśu, kudḍa, kbo, sapi, ku-</p>
+        <p><lb n="15v2"/> naṁ yan hana kaluputanya, riṁ madval atuku, salaḥ tuṅgalnya, kar:va:tṅaḥ lek lava<g type="filler">§</g><space type="binding-hole"/>snya, vnaṁ maṅaṅsulakna, yan lot kavaṅsulanya, salaḥ tuṅgal·, ḍaṇḍa pva de saṁ prabhū, sadsata paṇa:, 1200</p>
+        <p><lb n="15v3"/> 0, yan livat pva kar:va: tṅaḥ lek padolnya patukunya, tan· vnaṁ maṅsulakna, liṅiṁ <space type="binding-hole"/> śa:stra || 0 || Aśaṇa, ñca, paśuna, ñca, tripakṣadapyanam bavet·, viparyyaye tu daṇḍasyat·, manūṣyanan tu</p>
+        <p>
+          <lb n="15v4"/> vatsara:t· || mvaḥ saśaṇaniṁ madol-atuku, yan pasu satimahandina: hiṅanya,<g type="filler">§</g> <space type="binding-hole"/> yan· vvaṁ, daśadaśiḥ, satahun hiṅannya vnaṁ maṅsulakna, Ika ta salaḥ tuṅgal·, yan hana kaluputanya, pa⌈-</p>
+        <!-- photo DSCF7974 bottom -->
+        <p><pb n="16r"/><lb n="16r1"/> dolnya, patukunya, yan alot pavaṅsulnya, salaḥ tuṅgala, ya ta ḍaṇḍa de<g type="filler">§</g> <space type="binding-hole"/> saṁ prabhū, sadsata paṇa, 12000,, yan livat sake hiṅanya salaḥ tuṅgal·, tan· vnaṁ hika kavaṅsulanya<g type="filler">§</g></p>
+        <p><lb n="16r2"/> liṅiṁ sa:stra || mvaḥ bhūṣaṇa dinol tinuku, daśahasya, sapuluḥ vṅi kavaṅsulanya, <space type="binding-hole"/> , mvaḥ rehiṁ maṅonṅon·, pasu, kbo-sapi kunaṁ, yan riṁ rahina: riṁ paṅonan·, hikaṁ maṅvan· pramaṇa dr̥vya vnaṁ-</p>
+        <p><lb n="16r3"/> vnaṁ, yan riṁ vṅi saṁ madr̥vya paśu pr̥maṇa hika:, kunaṁ yan hilaṁ riṁ paṅonanya, sinahu<g type="filler">§</g><space type="binding-hole"/>tiṁ hasu, kaL̥bv iṁ juraṁ, kaL̥bv iṁ luvaṁ, tan sinapekṣanya, Ika: kaṁ maṅvan· maṅǝlyanana riṁ saṁ madr̥ve paśu,</p>
+        <p><lb n="16r4"/> samulyaniṁ vnaṁ-vnaṁ, Ikaṁ maṅvan hupahanya suṅana:, maṅkana liṁṅiṁ śa:stra || mvaḥh ikaṁ maṅva<space type="binding-hole"/>n·, yan hilaṁ riṁ vaṇa, riṁ tgal·, paṅonan·, cinoloṁ deniṁ coraḥ, malayu mavaraḥ riṁ madr̥ve paśu, <g type="filler">§</g></p>
+        <!-- photo DSCF7975 bottom -->
+        
+        <p><pb n="16v"/>
+          <fw place="left" n="16">16</fw>
+          <lb n="16v1"/> mavaraḥ huṅgvanya hilaṁ, ri ka:lanya hilaṁ, kapr̥maṇanta yayan tumulya varaḥ-varaḥ, <space type="binding-hole"/> Ika ta yan maṅkana tan· vnaṁ maṅəlyanana, liṁṅiṁ śāstra || paśu kbo-sapi, kahadḍaṁ tika riṅ avan·, riṁ tgal·, maga-</p>
+        <p><lb n="16v2"/>lak pva ya, salaḥ tuṅgal·, maniṅgat pva ya kbo-sapiya, katon kapr̥maṇanya mani<space type="binding-hole"/>ṅhat·, Ika yan malara, maveha patiba jampi, Ikaṅ dr̥ve paśu maniṅhat·, yan ma:tīkaṁ siniṅhat·, I<g type="filler">§</g>-</p>
+        <p><lb n="16v3"/>kaṁ maniṅhat· haṅəlyanakna riṁ madr̥vya, Ikaṁ paśu mulya viśūdḍa, maṅkana hilaṅa<space type="binding-hole"/>niṁ mulyaniṁ paśu, maṅkana: raṣaniṁ śa:stra, katəmviṁ haji manava: || mvaḥ kbo-sapi paḍa ta ya magalak·, maniṅhat ta</p>
+        <p><lb n="16v4"/> ya, tan <unclear>bh</unclear>iṣa ta ya malara, makaṅūnī matī ya, salaḥ tuṅgalnya, tan· vnaṁ hikaṅ a<space type="binding-hole"/>dr̥vya maṅlavana:kna, hana vvaṁ hamaṅlavanakən·, makanimitta puṅguṁnya, ḍaṇḍa de saṁ prabhu dviguṇottama, 4-</p>
+        <!-- photo DSCF7974 middle -->
+        <p><pb n="17r"/><lb n="17r1"/>000,, muvaḥ vnaṁ humaṅguha kapatinika:, maṅkana: liṁṅiṁ śa:stra || muvaḥ kbo-sapi <space type="binding-hole"/> Antyanta landəpiṁ suṅutnya, nitya sagalaknya, humuṅguḥ ta ya riṁ ma:rgga:, hana ta vvaṁ malivat·, riṁ haR̥pnya, si-</p>
+        <p><lb n="17r2"/>niṅatnya, Ika ta paśu yan maṅkana: tan atatayi, ṅa, tan· vnaṁ patyanana: || mvaḥ ha<space type="binding-hole"/>na pva paśu, marariṁ gaga śavaḥ, kubvan kunaṁ, pinaṅan tekaṁ sarvvaviji, hinikət ta ya de saṁ madr̥vya pinaṅanya:,</p>
+        <p><lb n="17r3"/> dadi siniṅhat hikaṁ maṅikət·, Ikaṁ paśu maṅkana: tan doṣa, tan vika:rinika:, ma<g type="filler">§</g><space type="binding-hole"/>ṅkana: raṣaniṁ śa:stra || mvaḥ kbo-sapi ḍarppa: maniṅha:t·, yan· vvaṁ, makanimitta gləṁnya, makanimitta kroḍanya,</p>
+        <p><lb n="17r4"/> tan pakaraṇa, paniṅatnya, hakveḥ paniṅhatnya, saṅkeṁ kroḍanya, yan hana pa<space type="binding-hole"/>śu maṅkana haṅamūk hika ṅaranya, hatatayi, ṅa, vnaṁ patyanana:, makṣanya vnaṁ halapən deniṁ voṁ hakveḥ <g type="filler">§</g></p>
+        <!-- photo DSCF7975 middle -->
+        
+        <p><pb n="17v"/><fw place="left" n="17">17</fw>
+          <lb n="17v1"/> tan vicaranən· || mvaḥ vvaṁṅ amatyani paśu, tan ana: hatatayi, tan a:ṅamūka, makanimi<g type="filler">§</g><space type="binding-hole"/>tta:hyuniṁ maṅsa: kevala:, ḍaṇḍa de saṁ prabhū, Uttamaḍaṇḍa, maṅəlyanana: dviguṇa, mariṁ hadr̥ve paśu, vvaṁ<g type="filler">§</g>-</p>
+        <p><lb n="17v2"/>ṅ aveha motapagaveniṁ paśu, pinatyanya, maṅkana liṁṅiṁ hagama: || 0 || yaḥ tu pūr<space type="binding-hole"/>vvaniviṣṭasya, tada kasyodakaṁ* haret·, bagamaṁ*, va:, pya, mamiṇḍyat·, saḥ dapyaḥ pūrvvasahasam· [MDh 9.281] || ka</p>
+        <p><lb n="17v3"/>, vvaṁ tumama riṁ śavahiṁ len·, haṅəduk vəluran amet bañu, haṅalihakən dalaniṁ ⌈<space type="binding-hole"/>vvai, ḍapyaḥ pūrvvasahasam·, 5000 || 0 || gr̥hinaḥ, putrinaḥ, molaḥ brahmaṇaḥ, kṣatriya veṣyaḥ, Ity uktaḥ</p>
+        <p><lb n="17v4"/> sākṣyam ahati sudra ye dapya ninditaḥ [~ MDh 8.62]
+          || ka, yogya sakṣiyantan apapgata, pili<space type="binding-hole"/>han sa:kṣi, hayva hiner· || lvirnya gr̥hinaḥ, Ika vvaṁṅ apagəḥ momaḥ homaḥ, putrinaḥ
+          , vvaṅ akeḥ ha-</p>
+        <!-- photo DSCF7974 top -->
+        <p><pb n="18r"/><lb n="18r1"/>naknya, vvaṁ pinituhu, saṁ brahma:ṇa, saṁ kṣatriya, veṣya, vvaṁ tuhu riṁ sa:rvvaka:ryya, <space type="binding-hole"/> sudra kaṁ tan pakanina: ,, 0 ,, Amtaḥ sa:rvvesu varṇnesu, ka:rya ka:ryyasu sa:kṣinaḥ, sa:rvvaḍarmmadido lu-</p>
+        <p><lb n="18r2"/>ṇḍaḥ, viparikta ca tarjayet·,, na:rtthasambandino naptaḥ, na sa:hayaḥ, na verina<space type="binding-hole"/>ḥ, na dr̥ṣṭanoṣa ka:rttivyaḥ, na vyadyataḥ na duṣita [8.63–64] || vvaṁ tuhv iṁ sa:rvvaka:ryya, vvaṁ kaglaraniṁ sa:rvvaḍarmma, vvaṁ tan lo-</p>
+        <p><lb n="18r3"/>na, vvaṁ tan aR̥p iṁ dr̥vyaniṁṅ adr̥vya, Ika ta kabeḥ yogya pinakasa:kṣi, liṁ<space type="binding-hole"/>ṅiṁ sa:stra: || ka, vvaṁ tan yogya gavenən sa:kṣi, Ikaṁ vvaṁ pinirak·, vvaṁ tan tuhu, vvaṁ sahaya, vvaṁ bvatukar,</p>
+        <p><lb n="18r4"/> vvaṁ katon vuvus adoṣa, vvaṁ duṣṭaka:rmma || na: sa:kṣiḥ nr̥pati ka:ryya na:, ka<space type="binding-hole"/>runaḥ kusiṁlava:, na, śrutiyo na, liṅgasto na, saṅgebhyo vinighataḥ || nityaginyo, na vakta<g type="filler">§</g>-</p>
+        <!-- photo DSCF7975 top -->
+        
+        <p><pb n="18v"/><fw place="left" n="18">18</fw>
+          <lb n="18v1"/>vyo, na dapyaḥ na vika:rmmana:t·, na: vr̥dḍo, na sisu śenaḥ, natyo na vikalendi<space type="binding-hole"/>yaḥ [MDh 8.65–66]
+          || mvaḥ tan sa:kṣiya, huṇḍahagi, vvaṁ biṣa:ṅaji, sakveḥniṁ vvaṁ hatapeṅ halas·, riṁ guṇūṁ, mañju, kḍi, vvaṁ ma-</p>
+        <p><lb n="18v2"/>ṅguh-uṅguḥ, vvaṁ doyan hiṅumpətiṁ jagat·, mvaṁ vvaṁ maravit·, mvaṁ vvaṁ magave dadu, vvaṁ <space type="binding-hole"/> Antyantatuhva, rare caṇḍala:, vvaṁ huta, vvaṁ haṅgiriḥ, vvaṁ mala:, vvaṁ bvatr̥ṣṇa:, vvaṁ malelya, vvaṁ ragan· ḍara:-</p>
+        <p><lb n="18v3"/>ḍaran·, vvaṁ kroḍan·, vvaṁ maliṁ, Ika ta kabeḥ tan yogya:lapən sa:kṣi, liṁ<space type="binding-hole"/>ṅiṁ śa:stri || nato na mato komataḥ, na:kṣa kr̥ṣṇonapisitaḥ, na: suma:rtvo na karmmato na, kudḍa, <g type="filler">§</g></p>
+        <p><lb n="18v4"/> na, gi, taskaraḥ [MDh 8.67]
+           || ka, vvaṁ hatyanta daridra, cvaṁ mavəR̥, vvaṁ hedan·, vvaṁ tr̥ṣṇan·, <space type="binding-hole"/> mvaḥ vvaṁ maṅgiriḥ, mvaḥ vvaṁ makadon maṅhel·, vvaṁ lumpuḥ, vvaṁ ra:ga-ra:gan·, vvaṁ maliṁ, vvaṁṅ aṅgə̄ṁ kroḍa, 0 ,</p>
+        <!-- photo DSCF7976 bottom -->
+        <p><pb n="19r"/><lb n="19r1"/> striṇaṁ*, sa:kṣya, striṇaṁ*, kūryyuḥ, dvijaṇaṁ*, sa:kṣiyadvijaḥ, sudraś ca cinta su<space type="binding-hole"/>dranaṁ, mantryaṇaṁ*, mantryaṇaṁ, mantrya yoḍayaḥ [MDh 8.68] || Ikaṁ sa:kṣi strī paḍa-paḍana strī, dvija paḍa dvija, su<g type="filler">§</g>-</p>
+        <p><lb n="19r2"/>dra paḍa sudra, caṇḍala paḍa caṇḍala:, sākṣinya || kunaṁ saṁ hyaṁ triyodaśa<g type="filler">§</g><space type="binding-hole"/>sa:kṣi, bhyoḥ, bhūmi, rapo, hr̥ḍaya, candra:rkkati, yama, nila, ratrisanḍyaś ca ḍarmmaś ca, vr̥ttaja, sarvva-⌈</p>
+        <p>
+          <lb n="19r3"/>dehinam· [MDh 8.86] || sargga, bhūmi, L̥maḥ, bañu, hr̥ḍaya, manaḥ, candra, Aditya, Agni, <space type="binding-hole"/> saṁ hyaṁ yama, saṁ hyaṁ bhayu, dinaratri, dvisa:ṇḍya:, ḍarmma || Ika ta kumavruhi hala-hayuniṅ
+          ulaḥ, svabha<g type="filler">§</g>-</p>
+        <p><lb n="19r4"/>vaniṁ vvaṁ, sira ta migrahaniṁ vvaṁ dudū hulaḥnya, liṁṅiṁ śa:stra || vvaṁ satyavacaṇna<space type="binding-hole"/>, pinakasa:kṣi, hantyanta svargganya, maṅkana sa:kṣi liñok· || sa:kṣyaṇ dr̥taḥ, paḍa, sākṣi,</p>
+        <!-- photo DSCF7977 bottom -->
+        
+        <p><pb n="19v"/><fw place="left" n="19">19</fw>
+          <lb n="19v1"/> goḥka:rṇna kṣithilañcalam·, sahaśrana bharuṇa, śaśaṇya, hatmaṇa pratimu<space type="binding-hole"/>syati || kasya varsate pūrṇna:, pasaḥ Ekaḥ pramucyate, yada śamukaṁ* pasanyat·, tataḥ stritvaṇaṁ* ga-</p>
+        <p><lb n="19v2"/>cati || [~ <foreign>MBh</foreign> 2.61.67*556–7, and 2.61.68ab] mvaḥ masaniṁ bhaṭara bharuṇa:, pinəgat sakatuṅgalakən satus tahu<g type="filler">§</g><space type="binding-hole"/>n· || hekam evadvitiyaṁ* ṭa, satiṁ lokena, vaṇḍyate, satviṁ sarggasya sopanaṁ*, paradaśyapino<g type="filler">§</g></p>
+        <p><lb n="19v3"/> bhiva,, [acd ~ <foreign>MBh</foreign> 5.33.46 ~ <foreign>NarSm</foreign> 1.191] kaL̥vihiṁ sa:kṣi lamun satya || 0 || vvaṁ hañoloṁ viniḥ, kalara <g type="filler">§</g><space type="binding-hole"/> hina:, ḍaṇḍanika: pañca ma:s·, mvaṁ sapana:, 3600, yaniṁ vṅi, patyana hika: || mvaḥ vvaṁ hañoloṁ hiva-</p>
+        <p><lb n="19v4"/>k·, riṁ suvakan·, maṁhətiḥ ya, matahuha:, yan rahina:, ḍaṇḍanika pañca<g type="filler">§</g><space type="binding-hole"/>guṇa, hulihanya, hivak·, yan riṁ vṅi vnaṁ patyana, liṁṅiṁ śa:stra || mvaḥ vvaṁ haṅalap arahu, riṁ tpiniṁ lva-</p>
+        <!-- photo DSCF7976 middle -->
+        <p><pb n="20r"/><lb n="20r1"/>ḥ, tpiniṁ sa:gara, kala rahina:, makanimita cidra, tan paṅənta sakənta ya, <space type="binding-hole"/> hika: ta ḍaṇḍanya, maḍya masahasa:, 10000, mvaḥ haṅulihakna parahu, handviguṇa, riṁ saṁ madr̥vya pa<g type="filler">§</g>-</p>
+        <p><lb n="20r2"/>rahu ,, 0 ,, mvaṁ haṅlaṅeni dr̥vya kahilī riṁ vvai, makanimitta valat·, tan pa<space type="binding-hole"/>mvit riṁ madr̥vya, t:hər hinalapnya, salviriṁ dr̥vya linaṅen·, yan ana maṅkana, ḍaṇḍa hutamasahasa:, 20-</p>
+        <p><lb n="20r3"/>000, mvaḥ muliha mañcaguṇa, dr̥ve kaṁ linaṅen·, riṁ madr̥vya || mvaḥ vvaṁ ha<space type="binding-hole"/>miḍik pomahan·, ḍavuhvan·, savaha:, haṅalapa lumbuṁ, yan makanimitta vruḥ yan dudu dr̥vyanya, ḍaṇḍa</p>
+        <p><lb n="20r4"/> pañcasata pana:, 10000 || yan tuhu tan vruḥ yan dudu dr̥vyanya, ḍaṇḍa dvisa<space type="binding-hole"/>ta paṇa, 4000, muvaḥ muliha sapamidikna || muvaḥ vvaṁ haṅaku bhūmi, tan tuhu bhūminya, ḍaṇḍa te<g type="filler">§</g>-</p>
+        <!-- photo DSCF7977 middle -->
+        
+        <p><pb n="20v"/><fw place="left" n="20">20</fw>
+          <lb n="20v1"/>ka de saṁ prabhu, Aṣṭaguṇottama, 160000, maṅkana: liṁṅiṁ sa:stra || mvaḥ hana <space type="binding-hole"/> vvaṁ hamaduṁ kayu riṁ simaniṁ len·, makanimittaṅ ajñana:, tuhu tan vruḥnya, ḍaṇḍanika dvisaṭa paṇa,</p>
+        <p><lb n="20v2"/> 4000, haṅəlyanana handviguṇa * mulyaniṁ kayu vinaduṁnya, yan tan mahapa<space type="binding-hole"/>ma duṁnya, tan vruḥ tmən·, ḍaṇḍanika Ekasaṭa paṇa, 2000, hat:hər aṅəlyanana kayu riṁ madr̥vya:,</p>
+        <p><lb n="20v3"/> bharadḍa satṅaḥ mulyaniṁ kayu vinaduṁnya || panaṇaṁ* dveśe te sadḍa, pratta<g type="filler">§</g><space type="binding-hole"/>maṁ* sahasa: smr̥taḥ, madḍya:maḥ pañcabhiḥ jñeyaḥ, sahasu dvevam uttama: [~<foreign>h</foreign> 8.338]
+           || ka, roṅ atus ekət paṇa</p>
+        <p><lb n="20v4"/>, pratamasaha:sa:, smr̥taḥ, katutuR̥n· || kaṁ madyamasahasa:, pañcasata <space type="binding-hole"/> paṇa, 10000 || muvaḥ hutamasahasa:, 20000 || muvaḥ vvaṁṅ amaduṁ kayu riṁ simaniṁ len·, makani-,</p>
+        <!-- photo DSCF7976 top -->
+        <p>
+          <pb n="21r"/><lb n="21r1"/>mitta valat·, makanimitta havamananya, riṁ madr̥vya, ḍaṇḍa ta ya dviguno<space type="binding-hole"/>⌉ttama ḍaṇḍa, 40000, maṅəlyanana mulyaniṁ kayu, riṁ mad̥vya, liṁṅiṁ sa:stra || mvaṁ mandavut savisa–</p>
+        <p><lb n="21r2"/>gotoṁ valavalo, makaṅuni pañarika tulis·, ḍaṇḍanika pañcasata<space type="binding-hole"/>, mvaṁ dvikapañca ma:s·, 24000 || mvaḥ hana vvaṁ suṅga-suṅga, riṁ margga riṁ savaḥ, makalakṣaṇa laṅgəṁ rahi-</p>
+        <p><lb n="21r3"/>na:-vṅi, makanimitta hyunya, tan inalapan· laṅgəṁ rahina-vṅi, vkasan oli<space type="binding-hole"/>ḥ pva ya teka vvaṁ, matyanenya, ḍaṇḍa pva ya, de saṁ prabhu, catūrgunotama ḍaṇḍa, 80000,, Ikaṁ vvaṁ <g type="filler">§</g></p>
+        <p><lb n="21r4"/> maṅkana:, nitya sahasa:, ṅa, maha:-maha: yan maṅkana:, tan· vnaṁ patenana:, <space type="binding-hole"/> de saṁ prabhu, mapan tan paḍa lavas paḍa:tatayi, maṅkana liṁṅiṁ sa:stra || mvaḥ vvaṁṅ asusuṅga, tan hənti pva <g type="filler">§</g></p>
+        <!-- photo DSCF7977 top -->
+        
+        <p><pb n="21v"/><fw place="left" n="21">21</fw>
+          <lb n="21v1"/> ya denyan davuti, vkasan ta śeṣaniṁ suṅganya moliḥ vvaṁ lyan·, Ikaṁ vvaṁ masu<g type="filler">§</g><space type="binding-hole"/>suṅga maṅkana: ḍaṇḍanya ṣatthasotama, 20000, maṅkanimitta pramadanya, paL̥ḥ-paL̥ḥ, makalapa<g type="filler">§</g>-</p>
+        <p><lb n="21v2"/>n asuṅganya hayva śeṣa:, kunəṁ pva kna suṅga ma:ti, ḍaṇḍa viguṇotama sahasa<space type="binding-hole"/>, 4000,, hana pvekaṅ asusuṅga maṅkana, nitya sahasika:, ṅa || mvaḥ tiṅkaḥniṁ saṅgrahana:, hana vvaṁ</p>
+        <p><lb n="21v3"/> haṅucap-ucap lavan· strīniṁ para, yan huvus cinihnan deniṁ doṣe ṅuni, ḍaṇḍa<space type="binding-hole"/>, 40000 ,, 0 ,, yaḥ tvaḥ nakṣariko pūrvva,m abhibhaṣeta, karaṇaḥ, na, doṣaṁ*, pvapnuyat· kiñci<g type="filler">§</g>-</p>
+        <p><lb n="21v4"/>t·, ni his tatya, vya:tikrama [~MDh 8.355] || kunəṁ pva vvaṁ haṅucap-ucap lavan· striniṁ para, <space type="binding-hole"/> sahaka:raṇa, tañ
+          cinihnan deniṁ doṣe ṅuni, tan panasa riṁ maryyaḍa yukti, tan padoṣa matra-</p>
+        <!-- photo DSCF7978 bottom -->
+        <p><pb n="22r"/><lb n="22r1"/>ya vvaṁ maṅkana: || parastriyas tu sambaset·, tirttharanyevane,pi, va, nadisa<g type="filler">§</g><space type="binding-hole"/>mbedaneś ca, va, sasaṅgrahana:mapnuyat· [~MDh 8.356] || ndya lviriṁ saṅgrahana:, vvaṁ haṅucap-ucap lavan· striniṁ para:,</p>
+        <p>
+          <lb n="22r2"/> riṁ vulakan·, riṁ halas·, riṁ taman·, simpaṅaniṁ havan·, simpaṅaniṁ lvaḥ, ⌈<space type="binding-hole"/>yeka: saṅgrahana:, ṅa || Upaka:rakriyaḥ keli, spase bhūṣaṇa vasasam·, saṅgraṣṭitan sagañceva<g type="filler">§</g></p>
+        <p>
+          <lb n="22r3"/>, sarvvasaṅgrahana: smr̥taḥ [~MDh 8.357] || ka, vvaṁ gumavayan pamahugi, masivo-sivo, ma<space type="binding-hole"/>ṅaṅge bhūṣaṇaniṁ stri len·, vvaṁ mapaṅgiḥ paliṅgihan kalavan· stri len·, yeka saṅgrahana:, ṅa || striṇaṁ*,</p>
+        <p><lb n="22r4"/> spr̥seḍ adiseyaḥ, pr̥ṣṭevamaṣa<del>*</del>yataya, paras parasya kumate, <space type="binding-hole"/> te dve saṅgrahana: smr̥taḥ [~MDh 8.358] || ka, vvaṁ haṅasparṣa stri riṅ halas·, mvaṁ maṅgəməlya
+          śarīraniṁ stri riṁ tan deṣa-</p>
+        <!-- photo DSCF7979 bottom -->
+        
+        <p><pb n="22v"/><fw place="left" n="22">22</fw>
+          <lb n="22v1"/>nya, r<unclear>iṁ</unclear> tgal· riṁ juraṁ, riṁ śūnya, yeka saṅgrahana, ṅa || Abrahma:ṇasaṅgrahane<space type="binding-hole"/>, praṇantiḍaṇḍam aha:rtti, catūrma:spitavarṇnani, daraḥ rakṣakamaḥ sada [MDh 8.359] || ka, catūrvarṇna, lyan saṅke<g type="filler">§</g>-</p>
+        <p><lb n="22v2"/>saṁdvija:, yan maṅulahakən kasaṅgrahaṇa, tan lyan aḍaṇḍa pati, bhikṣukaḥ va:<g type="filler">§</g><space type="binding-hole"/>ñcinaśeva, dikṣitaḥ, karavastatahambasanaṁ* gr̥k:he kūryyat·, stribhiḥr aputiḥ varitaḥ [MDh 8.360] || kunəṁ ya<g type="filler">§</g>-</p>
+        <p><lb n="22v3"/>n· viku, menmen·, saṁ dikṣita, vvaṁṅ uṇḍahagi, yan masambasana:, lavan· <space type="binding-hole"/> strīniṁ para:, hayva ta sinaṅśaya ,, 0 ,, na sambasam parastribhiḥ, pratisaḍaḥ samacaret·, prathisidyeti</p>
+        <p><lb n="22v4"/> sambaset·, śuvarṇna ḍaṇḍam ahati [MDh 8.361] || ka, Ikaṁ vastu tan sinaṅśaya, yan asa<space type="binding-hole"/>mbasana lavan· strī, yan inuhutakən·, tan vineḥ masambasanaha, hayva ma:kṣakən·, kunəṁ yan a<g type="filler">§</g>-</p>
+        <!-- photo DSCF7978 middle -->
+        <p><pb n="23r"/><lb n="23r1"/>makṣa:kna sambasanaha, ḍaṇḍanika riṁ catūrśu varṇna, 1600 || ka, ḍarmmaniṁ hana<space type="binding-hole"/>giḥ pihutaṁ, rumuhun sakiṁ ḍarmma, kapiṁrva: sakiṁ vyavara:, kapiṁtiganya, Asiṁ sakaR̥pnya, lesyan·</p>
+        <p><lb n="23r2"/>, makadon kavḍalaniṁ ha:rthanya, yan mahavaṇa siniliha sadr̥vyanya, kaṅ a<space type="binding-hole"/>hutaṁ, kapiṁpa:tnya, kandəga tan suṅanasasiṁ ka:ryyanya, piṁlimanya, valatan sadr̥vyanya, mahiṅa<g type="filler">§</g>-</p>
+        <p><lb n="23r3"/>nya sa:gə:ṅiṁ pihutaṁnya || yatad asty akr̥taṁ* patraṁ*, karaṇañ ca na vidyante, na <space type="binding-hole"/> copatabdaḥ pūrvoktaḥ, tatrudevikriya bhavet·
+           || ka, vvaṁ hanagiḥ yan tan papatra:, tan papr̥:-</p>
+        <p><lb n="23r4"/>maṇa:, tan pasa:kṣi tan ana śabda riṁ pūrvva, yan maṅkana, devikriya, made<space type="binding-hole"/>vapr̥maṇa sanagiḥ || R̥ne dehe pratijñante, pañcama:siṁ tam aha:rtti, Apanavedadvigunaṁ*,<g type="filler">§</g></p>
+        <!-- photo DSCF7979 middle -->
+        
+        <p><pb n="23v"/><fw place="left" n="23">23</fw>
+          <lb n="23v1"/> tanmano manuṣasanam· || ka, yan riṁ mahutaṁ, yan masaṅketa, maliñok i<g type="filler">§</g><space type="binding-hole"/>ka tan tuhu ri pasaṅketane, ḍaṇḍanika: de saṁ prabhū, pañcaśaṭa, 10000, kunaṁ yan apuhara ma<g type="filler">§</g>-</p>
+        <p><lb n="23v2"/>ṅaṅasi, dviguṇottama ḍaṇḍanya, 40000 ,, 0 ,, vvaṁ mahutaṁ danamulyaniṁ pa<space type="binding-hole"/>ri, manahura vit juga, maliḥ mās·, ṅa ,, 0 ,, vvaṁ haṅandəlakən hanaknya mahutaṁ, ri patiny a:naknya, <g type="filler">§</g></p>
+        <p><lb n="23v3"/> pa, bapanya manahura hutaṁ maṅL̥piḥ || vvaṁ mahutaṁ paśu, manahurana manikəl·, <space type="binding-hole"/> sḍəṅ i tluṁ tahun· || vvaṁ mahutaṁ mulyaniṁ paśu, manahurana dviguṇa sḍəṅ iṁ pataṁ tahun· || vvaṁ mahutaṁ tan pa-</p>
+        <p><lb n="23v4"/>patra, manahuranikəl· sḍəṅ i nəm tahun· || Ikaṁ praḍana, vnaṁ hameta hana<g type="filler">§</g><space type="binding-hole"/>kiṁ mahutaṁ, yan mati kaṅ ahutaṁ, yan luṅha: || vvaṁṅ aniṅidakən dasiniṁ lyan·, yan kapa:ṅgiḥ halapəni<g type="filler">§</g>-</p>
+        <!-- photo DSCF7978 top -->
+        <p><pb n="24r"/><lb n="24r1"/>kaṁ rare, mvaḥ ḍaṇḍanika:ṅ aniṅidakən sahutaṅiṁ rare, siniṅidakən· || vvaṁ <space type="binding-hole"/> hakuR̥n lavas pva ya , mati lakinya, tribhaganən ikaṁ dr̥ve, yan lanaṁ mati, rvaṁ duman saṁ prabhu, stri mati, rvaṁ du<g type="filler">§</g>-</p>
+        <p><lb n="24r2"/>man· riṁ lakinya, saduman saṁ prabhu ,, 0 ,, mvaḥ Ikaṁṅ akuR̥n· tan pa:nak·, ma<space type="binding-hole"/>ti strinya, Ikaṁ lanaṁ vnaṁ maṅalap sadr̥vyanya, tan vicaranən·, kajar iṁ śa:stra || nihan lakṣaṇaniṃ stri ta-</p>
+        <p><lb n="24r3"/>din·, nḍa: ta Iki catūrpramaṇa, sa:kṣi, svamivaca, ṅa, Ujariṁ svaminya, so<g type="filler">§</g><space type="binding-hole"/>cca, ṅa, vija, sa:kṣi, ṅa, vvaṁ sayogyañjənəṅana:, mvaṁṅ ujariṁ svaminya || kajnəṅanayan pgat·, cocca</p>
+        <p><lb n="24r4"/>, ṅa, maveha bañu rahup riṁ svaminya, maveha vija bras·, hika: pramaṇaniṁ ta<space type="binding-hole"/>din· ,, 0 ,, mvaḥ yan ana strī tadin·, tiniṅgalakəniṁ catur pramaṇa:, śakṣi, svamivaca, vija, hi likita, <g type="filler">§</g></p>
+        <!-- photo DSCF7979 top -->
+        
+        <p><pb n="24v"/><fw place="left" n="24">24</fw>
+          <lb n="24v1"/> tan tadin·, ṅa || malaki ta ya riṁ len·, ḍaṇḍanika dviguṇottama, 40000, <space type="binding-hole"/> yogya patyana hika: || kunaṁ bapaniṁ strī, hamalakya:kən a:naknya, duruṁ tadin·, mavivaha lavan·</p>
+        <p><lb n="24v2"/> ro vvaṁnya sapakaraṅan· mvaṁ kadaṁ-vargga:nya, makanimita maṅinūm·, Ika ta vvaṁ <space type="binding-hole"/> maṅkana, strivivakanvetti, mamaraṁ-maraṁ, ṅa, ḍaṇḍa dviguṇottama, 40000, t:hər ikaṁ lanaṁ tan· vnaṁ mama:-</p>
+        <p><lb n="24v3"/>tyanana: sasomaḥ riṁ paṅalap·, yan aR̥pa huripa hika karva:, maveha: <space type="binding-hole"/> ḍaṇḍa, 40000,, hana tekaṁ makaraman aṅadəgiṁ pavivahanya, ḍaṇḍa madḍyama dviguṇa, 20000, <g type="filler">§</g></p>
+        <p><lb n="24v4"/> kunaṁ yan· tuhu tan vruḥ yan duruṁ tadin·, ḍaṇḍa, 10000, yan olug·ḥ <g type="filler">§</g> <space type="binding-hole"/> ṅa, vruḥ tan vruḥ, tuhu tke vala hiṅundaṁ, ḍaṇḍa, 5000 ,, 0 ,, Upekṣaḥ, kūrvvataḥ taspa, tusni<g type="filler">§</g>-</p>
+          <!--Perpusnas L882- bottom-->
 
-        <q><lg met="anustubh">
-          <l n="1"> duḥka raktaṁ , <choice><corr>vra<space type="binding-hole"/>ṇaṁ</corr><sic>brani</sic></choice> <choice><corr>bhaṅgaṁ</corr><sic>bhaṅgi</sic></choice> , cedanaṁ , bhedanaṁ vadham | </l>
-          <l n="2"> <choice><reg>kuryād yaḥ</reg><orig>kūryyat ya</orig></choice> <choice><reg>prāṇināṃ</reg><orig>praninaṁ</orig></choice> <choice><reg>tad dhi</reg><orig>tadi</orig></choice> , dhaṇḍaparuṣyam <choice><reg>ucyate</reg><orig>ukyate</orig></choice> || 
-        </l></lg></q>
+        <p><pb n="25r"/><lb n="25r1"/> bhūtaspa tistataḥ, kole, ti,pana, pūrvvaktaḥ, vyavitaro na vidyataṁ* <space type="binding-hole"/> || [NārSm 1.71] ka, tiṅkaḥniṁ vyavahara:, tan vruḥ maṅujarakǝn·, riṁ pūrvvaka:, surud· riṁ pa:kṣanye ṅuni, lana:</p>
+        <p><lb n="25r2"/> Umnǝṁ, tan sahur kala musuḥnya:ṅucap·, kalaḥ jatiniṁ vyavahara yan maṅkana: <space type="binding-hole"/> || kusinavr̥dḍi degunya, na:nyeti, sakr̥ḍ ahr̥ta, ḍaransaye, lave, vahye navəkramataṁ*, pa-</p>
+        <p><lb n="25r3"/>ñcataṁ* [MDh 8.151] || ka, pihutaṁ ha:rttha, parimaṇa mandǝgamutuṁ, tan· vr̥dḍi muvaḥ || kunǝṁ <space type="binding-hole"/> yan mapihutaṁ pari, java, jaguṁ, sakalviraniṁ vija:, hamañcagina ḍadinya || yat brihī, tila, masaddi</p>
+        <p><lb n="25r4"/>, tandava, miḍikavyate, yaś ca, romepayegadi, śaya, Ivy aviḍiya<space type="binding-hole"/>te || ka, brihi, ṅa, pari, tila, vijen·, masa, ṅa, hatak·, yogya hinajara:kǝn· ḍanya || ro-</p>
+          <!--photo DSCF7986 middle (n.b. out of order in photos)--> 
+        <p><pb n="25v"/><fw place="left" n="25">25</fw>
+          <lb n="25v1"/> mapayoṣaḍi, ṅa, camara, kambala || śaniḥ yuktaṁ* danaṁ* kiñcit·, gr̥hitaṁ* <g type="filler">§</g><space type="binding-hole"/> kūlasanico, mūlakrayasya sudaṁ* tatat·, nyahato danaṁ* maha:rtti [~ MDh 8.201] || ka, tiṅkaḥniṁ dr̥vya dino<g type="filler">§</g>-</p>
+        <p><lb n="25v2"/>l· vinli, siṁ savakanya dr̥vya, Uṅgvanya tuku ri pasamuhaniṁ vvaṁṅ akveḥ, kavruḥ<space type="binding-hole"/>haniṁ mulanyoṅgvanya tuku, mr̥maṇa patukunya, riṁ vvaṁ maṅkana: || dr̥vyanya, bu, vikri,ye,śceva, da:rṣa<g type="filler">§</g>-</p>
+        <p><lb n="25v3"/>yet·, nipataṁ*, ḍana:m apnoti, krete taṁ* manur abhūrvit· || ka, riṁ vvaṁ hatuku <space type="binding-hole"/> dr̥vya, yen vuvus· diṇaṅśaṇakənya, gingəh uṅgvaniṁ panaṅkana:nya matuku, yeka sidḍa patukunya || yya<g type="filler">§</g></p>
+        <p><lb n="25v4"/> mulaṁ* manaha:ryyam·, prakaśa trayasoditam·, Aḍaṇḍa Udyate rajaḥ, noṣṭi⌈<g type="filler">§</g><space type="binding-hole"/>to nate ḍana:m· [MDh 8.202] ,, kunaṁ yan· dr̥vya: vinli, katon deniṁ vvaṁṅ akveḥ, tuhu tan kavruhan·, mulaniṁ dr̥vya,</p>
+        <!-- photo DSCF7980 middle -->
+        <p><pb n="26r"/><lb n="26r1"/>tan· ḍaṇḍanikaṁ mamli dr̥vya, kevala pūrvvasvami maṅapekaṁ dr̥vya ||| 0 ||| dayadya<g type="filler">§</g><space type="binding-hole"/>, gata, tu mulaṁ*, syad upasvapyañ ca dvalat·, tanmulaṁ*m anuyojya, syat·, tva,m apy asva,tamaṁ* kuru [not traced] || yar tka pa-</p>
+        <p><lb n="26r2"/>naṅkaniṁ mūlyaniṁ dr̥vya, handəgən takvana:, mulyaniṁ dr̥vya, tkeyy a:vaknya || mula <space type="binding-hole"/> sude, sudḍa ha syat·, hasudaḥ coraḍaṇḍanat·, kratuś cet·, pratika:ryya syat·, pūrvvasvami tu
+            ta<g type="filler">§</g>-</p>
+        <p><lb n="26r3"/>labhet· [not traced] || ka, riṁ pūrvva sudḍa panaṅkaniṁ dr̥vya dinval·, śudḍaśariranya, yapva<space type="binding-hole"/>n tan sudḍa panaṅkaniṁ harttha, tan sudḍa tkeṁ śariranya, t:hər ḍaṇḍa,niṁ maliṁ, 20000, dr̥vya pūrvvasvami<g type="filler">§</g></p>
+        <p><lb n="26r4"/> maṅalapa || tvakbedakaḥ sataṁ* ḍaṇḍya:ḥ, lohitasya ca ḍarṣaṇaḥ, maṅs<space type="binding-hole"/>a:bheksaḥ, tu, saniska:n·, pravasyatt astibhesakaḥ [MDh 8.284] || ka, tiṅkaḥniṁ pañjampi, yan· blaḥ kuli-</p>
+        <!-- photo DSCF7981 middle -->
+        
+        <p><pb n="26v"/><fw place="left" n="26">26</fw>
+          <lb n="26v1"/>t·, 2000, yan· blaḥ dagiṁ, nəm paha, 9600, yan hanikəl baluṁ, 20000, muva<space type="binding-hole"/>ḥ da:rṣaṇivattana: || dadikasye, bha:ghna:yute, tiyyanpratimukagane, A:kṣabhaṅge, A:pa:ryya⌈<g type="filler">§</g>-</p>
         <p>
-          <pb n="4r"/>
-          <lb n="1"/> <q>duḥkaṁ</q> , ṅa , <g type="filler">§</g> alaran , raktaṁ , ṅa , mtu raḥ , <choice><reg>vraṇa</reg><orig>branā</orig></choice> , ṅa , kanin∙ , bhaṅga ṅaran tikəl∙ , cedana , ṅa <space type="binding-hole"/> , pgat , bedana , blaḥ dhadha , <choice><reg>vadha</reg><orig>vada</orig></choice> , mati , yan riṁ vvaṁ , yan riṁ paśu , maṅkana panahasanya , °iti <choice><reg>daṇḍapāruṣya</reg><orig>dhaṇḍaparuṣya</orig></choice> 
-          <lb n="2"/> liṅ iṅ sāstra || ◯ ||  vvaṁ maṅluputakən∙ || ◯ || mvaḥ kaṅiṅaran sadatatayi , viṣadha , <g type="filler">§</g> <space type="binding-hole"/> haṅracun∙ , aghnidha , anunvani , <q><choice><corr>astrodyata</corr><sic>strodr̥ka</sic></choice>kāra</q> , aṅamūk∙ , <q>atarvvana</q> , °aga gave , hanluḥ , <q><choice><corr>rājapiśuna</corr><sic>rajipisuna</sic></choice></q> , 
-          <lb n="3"/> hamiśuṇanakən si ratu , <q><choice><reg
-          >dārātikrama</reg><orig>daratikrama</orig></choice></q> , °amuṁpaṁ strī , daratikramakāra , ṅa || ◯ || hika <space type="binding-hole"/> ta patyanana liṅniṅ <choice><reg>śāstra</reg><orig>sāstra</orig></choice> || mvaṁ vvaṅ maṅluputakən patiniṅ <choice><reg>ātatāyi</reg><orig>hatatayi</orig></choice> , dhaṇḍa , 40000 ,, 0 ,, 
-        </p>
-        <q><lg>
-          <l n="1"><choice><reg>ajñā<lb n="4"/>nād</reg><orig>ajñānāth</orig></choice> acire <choice><reg>kāle</reg><orig>kale</orig></choice> ,  <choice><reg>gantunaiva</reg><orig>gantuneva</orig></choice> na <choice><reg>daṇḍayet</reg><orig>dhaṇḍayet</orig></choice> | </l>
-          <l n="2"> <choice><reg>ajñānāc</reg><orig>ajñānat</orig></choice> cira<choice><reg>sambhāṣe</reg><orig>sambaṣe</orig></choice> , pūrvvadhaṇḍa<space type="binding-hole"/>m avapnuyat || </l>
-        </lg></q>
+          <lb n="26v2"/>te, cakrabhaṅga tatevaca [~MDh 8.291]
+           || cedane ceta rupina:m·, rugaretmyaḥ tateva <space type="binding-hole"/> ca, cakrandenapyapehiti, na:ḍaṇḍaṁ* manur apravit· [~MDh 8.292] | 0 | ka, tiṅkahiṁ vvaṁ mamr̥g· ratha, mvaṁ manuṅgaṁ kudḍa</p>
+        <p><lb n="26v3"/>, sḍəṁ pgat alikluḥniṁ maha:paśu, mvaṁ katitikəlan·, yen· sḍəṁ kondurlampa<g type="filler">§</g><space type="binding-hole"/>hiṁ ratha, mvaṁ cakrabhaṅga, tikəl kaliṅanya, pgat· rva-rvaniṅ apusnya, yeka kabeḥ, yan mahavansu<g type="filler">§</g></p>
+        <p><lb n="26v4"/> miṅgaha, handoha saṁ mamr̥g·, tan· ḍaṇḍa saṅ amr̥g· ratha, yan maṅkana: || <g type="filler">§</g> <space type="binding-hole"/> tatra, pavakta te, hugyam·, veguṇyata, vr̥jakaka:syaṁ*, ca, tatra, svami, bhavettha, hiṅśa:<g type="filler">§</g></p>
+        <!-- photo DSCF7980 top -->
+        <p><pb n="27r"/><lb n="27r1"/> yadvisataṁ* ca ma:m· [~MDh 8.293] || kunaṁ sakiṁ puṅguṁniṁ manuṅgaṁ kuda, hamr̥ganasa riṁ ma:rgga:, <space type="binding-hole"/> mati siṁ kedkan denya, ḍaṇḍanika, 4000 || prajakaḥ sedavetapta, prajako ḍaṇḍamahati, yu-</p>
+        <p><lb n="27r2"/>gya svaḥ praja:, ta, nate, sarvvaḍaṇḍaḥ śataṇḍana:m· [MDh 8.294] || mvaḥ yanviḍaṇḍa, ya:<space type="binding-hole"/>n· vruḥ Ikaṅ amr̥g·, hat:hər amaṅidki vvaṁ, ḍaṇḍānikanamr̥g·, yapvan ikaṅ amr̥g apuṅguṁ, makveh ikaṁ <g type="filler">§</g></p>
+        <p><lb n="27r3"/> manuṅgaṁ riṁ pada:tinya, tan inubhayan panuṅgaṁnya, yan maṅidəki vvaṁ, Asiṁ tva <space type="binding-hole"/> sakalviranya kedəkan·, ḍaṇḍanika: manuṅgaṁ, sakveḥnya, haṅalihevu, riṁ satuṅgal-satuṅga<g type="filler">§</g>-</p>
+        <p><lb n="27r4"/>l·, _ _ _ _ _ _ _ || sa gaḍaḥ, pahaṁ*rudḍaḥ paśubhiḥ varaṇa bhava:, pu<space type="binding-hole"/>maḍeyetyapradveto, ḍaṇḍa tatra vicarayan· [~MDh 8.295] || vvaṁ masa:rathi ṅaranya, cinaṇḍəknya riṁ tṅaḥ,</p>
+        <!-- photo DSCF7981 top -->
+        
+        <p><pb n="27v"/><fw place="left" n="27">27</fw>
+          <lb n="27v1"/> hiṅavan·, yan maṅidəki hamatyani vvaṁ, ḍaṇḍanikaṁ sa:rathi ,, 0 ,, manuṣya<g type="filler">§</g><space type="binding-hole"/>marane kṣiR̥m·, koretvakaṁ* lva ma:ṁ*, bhavet·, praṇabhr̥tsu, mahatsvadḍaṁ*, gogadoṣṭrahaya<g type="filler">§</g>-</p>
+        <p><lb n="27v2"/>dḍaṁ*su [~MDh 8.296] || kunaṁ yan maṅidəki ma:ti, ḍaṇḍa:, 20000 || yan ama:ti maha:paśu, <g type="filler">§</g><space type="binding-hole"/> gajaḥ, goḥ, kuda, ḍaṇḍa, 10000 || sudrana:ñ ca, Iṅśa:yaṁ* dvasato damaḥ, pañcasañca bhave-</p>
+        <p><lb n="27v3"/>t ḍaṇḍəm·, sukesu mr̥taṁ*, pa:kṣisu [MDh 8.297] || ka, yan mati sudra paśu, celeṁ, ḍa<g type="filler">§</g><space type="binding-hole"/>ṇḍaniṁ sa:rathi, 4000 || yan pamatiha ṭaṭ·, vr̥gpa:kṣi, 1000 || gada:rbhaja vinaśa,ntu, ḍaṇḍa sya-</p>
+        <p><lb n="27v4"/>t·, pañcamadakaḥ, masakaḥ, tu, bhavet·, ḍaṇḍa tvasuka,ranipatane [MDh 8.298],, <g type="filler">§</g><space type="binding-hole"/> mvaḥ yan pamati vḍus·, śr̥gala, suka:ra, ḍaṇḍanika: sa:rathi, 2000 || Astu, raju, ghani, kupa, ha<g type="filler">§</g>-</p>
+        <!-- photo DSCF7982 bottom -->
+        <p><pb n="28r"/><lb n="28r1"/>ret· vidḍyañ ca yaḥ kupaṁ*, saḥ ḍaṇḍa prapnuyat masam· tañ ca sa:rvvaṁ*, samacaret· [~MDh 8.319] || <g type="filler">§</g><space type="binding-hole"/> ka, vvaṁ hañoloṁ timba, sinahakən sakiṁ surur· [em.: sumur], mvaḥ vvaṁ hañoloṁ hululaniṁ vavaruṁ riṁ pkə:n·, ḍaṇḍa</p>
+        <p><lb n="28r2"/>,. 400 || t:hər amayu valuya:kna kadi dumun·, hamnədakən· || hana sor saṅkeṁ hi<space type="binding-hole"/>nalapnya, kadya:ṅganiṁ tambaga, timaḥ, timbraḥ, tambaga, dviguṇna:kna samulyanya hinalapnya, ḍaṇḍanya, 5000</p>
+        <p><lb n="28r3"/> || la. hlampah iṁ vvaṁ coraḥ hañoloṁ vakulinajanma, jalu strī kunaṁ, Aparima:<space type="binding-hole"/>ṇa ḍaṇḍa paḍa, mvaḥ yan· vvoṁ hañoloṁ ra:tnaḍika:, ḍaṇḍa vada paṁḍaṇḍanya || ka, vvaṁ hamaduṁ kayu, mapa:-</p>
+        <p><lb n="28r4"/>kna katuniṁṅ ayajña, tan· doṣa Ikaṁ vvaṁ maṅalap ka:yu, mvaḥ vvaṁ malap tr̥ṇa, maka<space type="binding-hole"/>ṅgoniṁ saṁ dvija:, tan· doṣanana: || vvaṁ maṅalaparī riṅ śavaḥ, salviranya, java, kacaṁ, lambayuṁ, makiri<g type="filler">§</g>-</p>
+        <!-- photo DSCF7983 bottom -->
+        
+        <p><pb n="28v"/><fw place="left" n="28">28</fw>
+          <lb n="28v1"/>mana, sakavaśaniṁ taṅan kiva tṅən·, tan· doṣa Ika || vvaṁ mulakula, makadi <g type="filler">§</g><space type="binding-hole"/> saṁ viku, yan katarabakta riṅ avan·, maṅalap tanəm-tanəman·, riṁ tgal·, riṁ śavaḥ, jaṅan timun kacaṁ, Asiṁ sakalvi-</p>
+        <p><lb n="28v2"/>raniṁ sa:rvvavija:, makahiṅan sakavaśaniṁ taṅan kiva tṅən·, maṅgəgəm·, Ika ta<space type="binding-hole"/>n a:na doṣanya || 0 || riṁ vvaṁ kinon a:ka:ryya, hasiṁ sakalviranya, vkasan ta ya manambut ka:ryya riṁ len·, sa:kiṁ</p>
+        <p><lb n="28v3"/> ḍarppanya, tan ana laranya, yan maṅkana ḍaṇḍanika:, riṁ vvaluṁ kr̥ṣṇala, ṅa, ha<g type="filler">§</g><space type="binding-hole"/>ṅhiṁ tan upahən· || ka | vvaṁ hiṅupaṅ yan tuhu kinahananiṁ lara, vkasan varasya, takvanan arumuhun·, yan ka-</p>
+        <p><lb n="28v4"/>vaśanya na:mbut ka:ryya, lavan tan kavaśanya, yapvan humaṅkən riṁ karyya, malava<space type="binding-hole"/>sa tuvi, vehana hupahan· yan maṅkana: || muvaḥ vvaṁ kinon magavaya tikaṁ dr̥vya, varas tan panambut kar-</p>
+        <!-- photo DSCF7982 middle -->
+        <p><pb n="29r"/><lb n="29r1"/>yya, Asriṁ maṅkin tan panambut ka:ryya, yan sakiṁṅ antunya, yogya tan suṅan hupa<space type="binding-hole"/>han·, At:hər hikaṁ dr̥vya, vehakneṁ len· || ka, hana vvaṁ magave samaya ri pasamuhaniṁ vvaṁ, tpi siriṅ,</p>
+        <p><lb n="29r2"/> vkasan mitya riṁ pasamayanya, doṣanya dohakna saṅkeṁ rajya, mvaḥ doṣanya <space type="binding-hole"/> sikəpən tumpa-tumpanən de saṁ ratu, mvaḥ ḍaṇḍanya nəm paha:, catūrma:s·, manūtī guṁ-lit iṁ kaliñokan· ||</p>
+        <p><lb n="29r3"/> ka, vvaṁ maveḥ kanya, tan vīnarahakən doṣaniṁ kanya, saṅaṁ puluḥ nəm paha, ka:<g type="filler">§</g><space type="binding-hole"/>lih ivu pataṁ puluḥ || kunaṁ lviriṁ vyadinya, hedan·, hudug·, hayan·, huvus ahalvan·, hiniput de-</p>
+        <p><lb n="29r4"/>niṁ dirgha:vyadi, tugəl· blaḥ havaknya, tunapakon· || ḍaṇḍanika tluṁṅa a<space type="binding-hole"/>tus paṇa, 6000 || ka, hana ta vvaṁ manaṅguḥ doṣaniṁ kanya, pūrṇna Ikaṁ kanya, tan a:na calanya, ḍa-</p>
+        <!-- photo DSCF7983 middle -->
+        
+        <p><pb n="29v"/><fw place="left" n="29">29</fw>
+          <lb n="29v1"/>ṇḍanika, triśata, 6000,, muvaḥ hana vvaṁ maṅucapa:nya, riṁ kanya makanimita:<g type="filler">§</g><space type="binding-hole"/>nya dvesitanya, ḍaṇḍanika śatapaṇa, 2000 || hana vvaṁ hapinton kanya, huvus hinubhayan denikaṁ ma-</p>
+        <p><lb n="29v2"/>ṅlama:r·, mapakna pinakasomahan·, vkasan təbəṅ i ka:ryya hinurup ikaṁ kanya<space type="binding-hole"/>, dudū hikaṁ kanya vinehakənye ṅūnī, halapən karo de saṁ maṅlamār·, hikaṁ kanya rva:, huvusa de-</p>
+        <p><lb n="29v3"/>niṁ vlyan tuṅgal· || ka, hatyajati [em.: antyajāti], ṅa, len sakiṁ veśya, patita, ṅa, Edan·, <space type="binding-hole"/> hayan·,, kliva, ṅa, kumiṁ,, dirgharoti 
+          [em.: dīrgharogī], ṅa, haṅgiriḥ, Unmatta, Edan·, Ikaṁ kanya yan maṅkana, tan yo-</p>
+        <p><lb n="29v4"/>gya vehaknaṁ puruṣa, maṅkaneṁ puruṣa, yan maṅkana, tan yogya pinakala<space type="binding-hole"/>kihaniṁ kanya || Ikaṁ manampaka kliva, yadyan huvus asobaya tinavanakən riṁ ṅūnī, yan kapratya-</p>
+        <!-- photo DSCF7982 top -->
+        <p><pb n="30r"/><lb n="30r1"/>kṣan· klivanya, yogya pasahakna, vehakna riṁ lyan·, sahabhūṣaṇanya || mu<space type="binding-hole"/>vaḥ vvaṁ madval dr̥vya, Inaṇḍətaniṁ śabda, kevala, tan sinuṅan pañcər, sadina:, savṅi, paṅanti hanīma:-</p>
+        <p><lb n="30r2"/>dva:l·, yan livat· vnaṁ madvala riṁ lyan·, saṁ madr̥vya || ka, tiṅkahiṁ dr̥vya dinval·, <space type="binding-hole"/> yan pinaha:ñcəran·, tigaṁ vṅi hiṅanya || yan vaṁṅ uman-uman iṁ samajatinya, satak pataṁ puluḥ maṅL̥piḥ doṣa-</p>
+        <p><lb n="30r3"/>nya || 0 || Ikaṁ dr̥vya śavakanya, hilaṁ hikaṁ dr̥vya sḍəṁiṁṅ iṁ runaḥniṁ deśa, vnaṁ saṁ ma:bū<g type="filler">§</g><space type="binding-hole"/>miha mari pūrṇna, muvaḥ riṅ deśanya, salviriṁ dr̥vya, tan hanaṁ madr̥vya, saṁ mabhūmi pramaṇa ya, kunaṁ yan hana micara:,</p>
+        <p><lb n="30r4"/> Ikaṁ dr̥vya, maṅkana kramanya || katkanya piniṅidakən·, pinañjarakən·, I<g type="filler">§</g><space type="binding-hole"/>kaṁ hiṅiran·, saṁ ma:bhūmi malapa yan maṅkana:, tumṅət tika: kaliḥ ḍaṇḍa, 20000 || muvaḥ kadumaniṁ dakṣi<g type="filler">§</g>-</p>
+        <!-- photo DSCF7983 top -->
+        
+        <p><pb n="30v"/><fw place="left" n="30">30</fw>
+          <lb n="30v1"/>ṇa, kinabehan·, mvaḥ kadumaniṁ bya:yaniṁ vyavahara, viḍinya || saz, paṅguhu<g type="filler">§</g> <space type="binding-hole"/> liṅgiḥ catzurbhaga, saṅ kapiṁrvaniṁ liṅgiḥ, tluṁ bhaga:, saṁ kapiṁtluniṁ liṅgiḥ rva bha:ga, saṁ paṁpat i liṅgiḥ, sabha:-</p>
+        <p><lb n="30v2"/>ga || ka, yan· vvaṁ madr̥vya hulun·, hana kadaṁ-vargga:, muṅgviṁ duradeśa,maṅu<g type="filler">§</g><space type="binding-hole"/>lahakən pva ya coraḥ, duṣṭa, tan vruḥ svami sanaknya yayaḥnya riṁṅ ulaḥnya riṁ duradeśa, tan kagəpo<g type="filler">§</g>-</p>
+        <p><lb n="30v3"/>ka riṁ sthanadaḥ, kunəṁ reḥnya malavas pasambadanya, kneṁ reka kevala, 50<g type="filler">§</g><space type="binding-hole"/>00, yan maliḥ katbəṅan rikalanya lampahakən duṣṭa coraḥ, makaṅunī vruhakneṁ sthanada, ḍaṇḍa, 2-</p>
+        <p><lb n="30v4"/>0000 || mvaḥ yan· vvaṁ lyan cumampuhakniṁ vicaraniṁ len·, maṅulahakən du<g type="filler">§</g><space type="binding-hole"/>ṣṭa coraḥ, yeka: kneṁ stha:da, 20000 || mvaḥ mulyaniṁ raja peṇi, maliṅan ikaṁ kna minajananya, ka<g type="filler">§</g>-</p>
+        <!-- photo DSC7984 bottom -->
+        <p><pb n="31r"/><lb n="31r1"/>dyaṅganiṁ hasti, Asva, kadga, ratna, kanya, sakatilima, piṇḍanya nihan·, 1<space type="binding-hole"/>60000, maṅkana mulyanya, yan kasan sinahasa, cinoloṁ || yadyan· dr̥vyaniṁ mantrī, yan riṁ sahəbniṁ<g type="filler">§</g></p>
+        <p><lb n="31r2"/> variṅin·, deśa luraḥ samaṅkana paṁR̥ganya || yan riṁ pradeśaniṁ lyan·, sina<space type="binding-hole"/>haśa: cinoloṁ, mantukalpiḥ kevala || mulyaniṁ vastra peR̥ma:s, luṅsir·, sutra, griṅsiṁ, de-</p>
         <p>
-          ikaṅ vvaṅ sapocapan lavan duṣṭa , saṅkeṁ tan vruḥnya yan duṣṭa , <q><choice><corr>acire</corr><sic>hakire</sic></choice> <choice><reg>kāle</reg><orig>kale</orig></choice></q> , 
-          tan alavas i<lb n="1"/>kā denya sapocapan , andaṇḍakən ikā riṁ saṅka pisan∙ || kunaṅ hikaṅ vvaṅ yan so<space type="binding-hole"/>capan lavan duṣṭa , saṅkeṅ tan vruḥnya , <q>cira<choice><reg>sambhāṣe</reg><orig>sambaṣe</orig></choice></q> , malavas denya sapocapan∙ , pūrvvadhaṇḍa pinaṅguḥnya , 5[4v2]000 || 0 || 
-	  mvaḥ hutaṁ tan kaliliranā deniṁ putra , hutaṁ tan paputra , 
-	  hutaṁ tot<g type="filler">§</g><space type="binding-hole"/>ohan∙ , śeṣadhaṇḍa , hutaṁ tukon∙ , hutaṁ sajə̄ṁ || 
-	</p>
-        <q><lg>
-          <l n="1">pari<choice><reg>pūteṣu</reg><orig>puteśu</orig></choice> 
-          <choice><reg>dhānyeṣu</reg><orig>ddhānyesu</orig></choice> <choice><reg>śāka</reg><orig>saka</orig></choice><choice><reg>mūlaphaleṣu</reg><orig>mulaphaleśu</orig></choice> 
-          <choice><reg>ca</reg><orig>cā</orig></choice> | </l>
-	  <l n="2">ni<g type="filler">§</g><lb n="3"/>ranvaye śataṁ ḍaṇḍaṁ , sānvaye 
-          <choice><reg>.a</reg><orig> </orig></choice><supplied reason="omitted">r</supplied>dhaśataṁ damam || 
-        </l></lg><listApp type="parallel"><app><note><cite ref="#MaDha"><citedRange>X.Y</citedRange></cite></note></app></listApp>
-        </q>
-	<p>°ikaṁ dhanya , <choice><reg>taləs</reg><orig>ta°ḷs</orig></choice> , pinahayu <space type="binding-hole"/> rinākṣa , pinagər tinuṅgu , hiṅalap iṅ vvaṅ kalarahina , yan kalapa , 
-        vovohaN , pucaṅ , sekət <choice><reg>pa<lb
-	break="no"/>ṇa</reg><orig>na</orig></choice>doṣanya , <num value="1000">1000</num> , yan tan rinakṣa , tan tinuṅgu , <choice><reg>śata</reg><orig>sata</orig></choice>paṇa<choice><reg>daṇḍa</reg><orig>dhaṇḍa</orig></choice> , 2000 ,, <g type="filler">§</g> <space type="binding-hole"/> linokikansa deniṁṅ amet∙ ||
-	</p>                
+          <lb n="31r3"/>vaṅga, dinya, 8000, yan tigasan·, yan lusuḥ, 6000, yan ləvas·, 32<space type="binding-hole"/>00 || yan kampuḥ basavos·, hañar, R̥ga, 4000, yen lusuḥ, 2000 || maṅkana kliṁ || do⌈<g type="filler">§</g>-</p>
+        <p><lb n="31r4"/>dot java hañar·, R̥ga, 5000, suba lusuḥ, 200, L̥vas·, 10<g type="filler">§</g><space type="binding-hole"/>0|| mvaḥ yan ka:dga vavajan·, cihna turaṅga, R̥ga, <del>1</del>8000, yan· pūrṇna, 4000, yan puṅgəl·, <g type="filler">§</g></p>
+        <!-- photo DSCF7985 bottom -->
+        
+        <p><pb n="31v"/><fw place="left" n="31">31</fw>
+          <lb n="31v1"/> 2000 || malela, [space=1]ṇna [em.: pūrṇna] turaṅgaḥ R̥ga, 4000, yan· pūrṇa, yan təmpak·, <g type="filler">§</g><space type="binding-hole"/> yan puṅgəl·, 1000 || duhuṅ babavosan·, vavajan·, 4000 || Upalakṣaṇa:kna pūrṇna tan sapūr<g type="filler">§</g>-</p>
+        <p><lb n="31v2"/>ṇnanya || 0 || muvaḥ pamulyaniṁ pamṅamṅan·, yan aṅsi, mra:k·, savari, hatat·<space type="binding-hole"/>, savuṁ kinuruṁ, śr̥gala, R̥ganya, 1000 || kbo pamatək·, savihuruk·, R̥ganya, 4000 || kbo-sa<g type="filler">§</g>-</p>
+        <p><lb n="31v3"/>pi samanya, ji, 2000 || R̥ganiṁ sudra paśu, samanya, ji, bhavi, sr̥gala, kumaṁ<space type="binding-hole"/>, ṅa || miṇḍa, ku, 3 || haṅsa, ku, 2 || hiṭik·, ku, 2, riṁ tva || kaL̥ṇḍaḥ sadaṅu, ku, 1 || vvaḥ samayuṁ</p>
+        <p><lb n="31v4"/>, 40, naṅka, 1, salaksaruruṁ, 52,, Iti paṅr̥ganiṁ sapaniskara, yan sina<space type="binding-hole"/>hasa, cinoloṁ, manunvani pari riṁ śavaḥ, həlyanana mañcaguṇa || kunəṁ yan sadyanunva-</p>
+        <!-- photo DSCF7984 middle -->
+        <p><pb n="32r"/><lb n="32r1"/>ni, hat:hər sahacihna, yogya pati haneriṁ manunvani, mvaṁ sthana:da, riṁ maṅka<space type="binding-hole"/>na ḍaṇḍa, 40000, yan viyaṁ milvaṁ patyanana, jarahən· || ḍaṇḍaniṁ haṅrug pahatan·, manunva<g type="filler">§</g>-</p>
+        <p><lb n="32r2"/>ni kunaṁ, 8000 || yan mavvaḥ, 6000,, mabiluluk·, 20000,, rara, 1<space type="binding-hole"/>000,, hannotatakan·, 8000,, kade, 6000 || haskar·, 3000 || tuṅgak·, vdus·, 20<g type="filler">§</g>-</p>
+        <p><lb n="32r3"/>00 || yapvan təlu pat·, maṅlyanana riṁ madr̥vya, dviguṇottama || katutu<g type="filler">§</g><space type="binding-hole"/>nvanaṅala didamen·, yan saroḥ, sadpa, ku, bu, sapcal·, 40, lalaṁ harita-ritan·, ku</p>
+        <p><lb n="32r4"/>, bu, priṁ sadapūr, ku, 1, sakubon·, ma:s·, 4,, turusaluru-sasuruḥ, <space type="binding-hole"/> ku, ṅa, turus kevala, ku, 1,, vvaṁṅ aR̥mpak pakaraṅan·, saprakaraniṁ haṅrug·, haṅgəpok i</p>
+        <!-- photo DSCF7985 middle  -->
+        
+        <p><pb n="32v"/><fw place="left" n="32">32</fw>
+          <lb n="32v1"/> giliṅan·, halvadi, ḍaṇḍa, 5000,, haṅrusa:k dahuhan·, kalilavaṁ ku<g type="filler">§</g>[SHnaṅ, ḍaṇḍa, 5000,, vvaṁ hamraṁ pagər sakeṁ durvivekanya, ḍaṇḍa, 5000 || yan sinadyanya pinet·, ḍaṇḍa<g type="filler">§</g></p>
+        <p><lb n="32v2"/>, 10000 || yan sakeṁ havama:nanya, ḍaṇḍa, 20000 || yan sakeṁ kroḍanya<space type="binding-hole"/>, ḍaṇḍa, 40000,, yan rahina: || yan· vṅi kalane, patyanana || 0 || hana vvaṁ hanunvani pagər iṁ śavaḥ, riṁ ku<g type="filler">§</g>-</p>
+        <p><lb n="32v3"/>bvan·, ḍaṇḍa, 110, riṁ pamaḍəm iṁ hapuy·, 240,, 0 ,, muvaḥ hanunvani humaḥ, <space type="binding-hole"/> bale, saṅgar, həlenana: dviguṇa:, riṁ madr̥ve, samulyaniṅ umaḥ, saṅgar, bale, catūrraguṇa:kna,</p>
+        <p><lb n="32v4"/> riṁ paḍəm apuy· || 0 || muvaḥ hikaṁ tumadaḥ ka:ryya hajī, sakalviraniṁ sajña ha<g type="filler">§</g><space type="binding-hole"/>jī, maṅutus pva ya vvaṁ vaneḥ, lumakva:naṁ ra:jaka:ryya, yan· vvantən kaluputthan hikaṁ hinutus·, maṁlu<g type="filler">§</g>-</p>
+        <!-- photo DSCF7984 top -->
+        <p><pb n="33r"/><lb n="33r1"/>patakən ka:ryya hajī, hikaṁ hakoñ juga: tampuhaniṁ doṣa hajī, yeka gu<space type="binding-hole"/>mave daṅan·, riṁ habot·, ṅa || 0 || mvaḥ hana vvaṁ paḍa kinahanan·, gləṁ, hana ya tumbakən· vuvus maṅka:<g type="filler">§</g>-</p>
+        <p><lb n="33r2"/>na, nda kroḍa salaḥ siki, tumbakən samananya, sabdaparuṣya, tuvi, yeka mi<g type="filler">§</g><space type="binding-hole"/>lva doṣanana, Ikaṁ vvaṁ rodrakaraṇa, maṅlandəpi pucukiṁ rvi ṅaranya || 0 || muvaḥ hana vvaṁ maṅulahakə-</p>
+        <p><lb n="33r3"/>n a:ṣṭa duṣṭa, Aṣṭa coraḥ, muṅguḥ riṁ deṣa len·, tan katbəṅana deniṁ tuha<space type="binding-hole"/>nya riṁ sthanada, sthananye sḍəṅanya ṅulahakən a:ṣṭa duṣṭa, Aṣṭa coraḥ, hika:kna riṁ doṣa sthanada,</p>
+        <p><lb n="33r4"/> 2000,, hana ta tuvi lamun saḥ sakiṁ həmbananya, hat:hər tinilarakən·<space type="binding-hole"/>, deniṁ voṅ atuhanya, vvaṁṅ atuhanya tan kaḍaṇḍaha, vvaṁ lyana tuvi matra tan roro vaṁ, ca:<g type="filler">§</g>-</p>
+        <!-- photo DSCF7985 top -->
+        
+        <p><pb n="33v"/><fw place="left" n="33">33</fw>
+          <lb n="33v1"/>mpuhən· sḍəṁnya vicara, hika tan· kna sumiṅgaha, mvaḥ kaṅ añampuḥ maṅkana re<space type="binding-hole"/>hiṁ vicara riṁ daha, riṁ majapahīt· || rehiṁ ka:ryya riṁ daha kaṁ kalampaḥ, riṁ majapahīt·, tan agya ma<g type="filler">§</g>-</p>
+        <p><lb n="33v2"/>ṅahirana, tan agya navenana, tan agya ñjarahana, lamun karyya duruṁ rinasa<space type="binding-hole"/>n deniṁ voṅ atuhvanya, deniṁ haṅucap ka:ryya, yan ana vvaṁṅ avicara, haruhur huṅgvanya, ha:mlam sakiṁ</p>
+        <p><lb n="33v3"/> ruhurnya riṁ pa:kṣa, duruṁ rinasan· deniṁ paṅucap ka:ryya, sahasa: haṅandə<g type="filler">§</g><space type="binding-hole"/>gana venana, haṅiranana, hañjaraḥ kunəṁ, dinoṣan sakiṁ daL̥m·, 20000, Utamasahasa pu-</p>
+        <p><lb n="33v4"/>rugnya || yatna doṣa, tibana pacoke, 6666 || savuvusnya sok<space type="binding-hole"/>·, ḍaṇḍā ri ḍaL̥m·, rinasaṅga dene, deniṁ haṅucap ka:ryya, prasidḍa hamnaṁ vicarane || muvaḥ paṅa<g type="filler">§</g>-</p>
+        
+          <!--PerpusnasL882-f34r-->
+        <p><pb n="34r"/><lb n="34r1"/>jiniṁ voṁ pinatya nirdoṣa, vuvus pinatǝḥ deniṁ saṁ mantrī, maka:di rakryana:<space type="binding-hole"/>patiḥ riṁ majapahīt·, voṁṅira saṁ ratu, śavakraya, 80000 || voṁṅiṁ saṁ ma:ntrī majapahīt·, savakra-</p>
+        <p><lb n="34r2"/>ya, 400000 || voṅiṁ paṅlima, savakraya, 20000 || kavulaniṁ kavula, sa<space type="binding-hole"/>vakraya, 8000 || 0 || ḍaṇḍa valat·, karusuhan·, reka mariṁ daL̥m·, kaṁ vinalat kevala hulih-u-</p>
+        <p><lb n="34r3"/>lihan hamǝpǝs·, Ika ta yan vaṁ || yan paśu, yan· dr̥vya, pomah-omaḥ || ḍa<space type="binding-hole"/>ṇḍaniṁ vakparuṣya, Aṣṭacapala, mariṁ saṁ pinaruṣyan· || mvaḥ dr̥vyaniṁ para mañca riṁ piṅgir·, yan kavula, yan pa<g type="filler">§</g>-</p>
+        <p><lb n="34r4"/>śu, sakalviranya, yañ cinoloṁ sinahasa:, pinetnya nirdoṣa, muliha ma<g type="filler">§</g><space type="binding-hole"/>ñcaguṇa, riṁ sahǝbniṁ variṅin·, luraḥ ta hǝṅgoniṁ hamañca, hulih-uliha mañcaguṇa, yan sahos lu<g type="filler">§</g>-</p>
+        <!-- photo DSCF7986 bottom -->
+        
+        <p><pb n="34v"/><fw place="left" n="34">34</fw>
+          <lb n="34v1"/>raḥ həṅgone hilaṁ, ṅgone sinahasa:, muliha məpəs·,, kunəṁ saṅ aliṅgiḥ <g type="filler">§</g><space type="binding-hole"/> riṁ maja pahīt·, kaṁ mantrī, riṁ sayavadvipa, hamañcaguṇa, yan· vvaṁ, paśu, dr̥vya, yan sinahasa: cino⌈-</p>
+        <p>
+          <lb n="34v2"/>loṁ, pinatyan·, maṅkana: rehiṁ ka:ryya || 0 || mvaḥ sakalviraniṁ doṣ, yatna: ⌈<space type="binding-hole"/>doṣa, tiba: tiga || doṣaniṁ hamateni voṁ, yatna doṣa tuvi, viniḍi hasrah aməpəs· || hana vvaṁ <g type="filler">§</g></p>
+        <p><lb n="34v3"/> mati sinudukiṁ voṁ, sakalviraniṁ, mvaḥ pasu kala ratri, riṁ bañjar, riṁ deṣa, riṁ ku<g type="filler">§</g><space type="binding-hole"/>bon·, riṁ haR̥piṁ lavaṁ, tuhu kasamaran·, patinya, kaṅ ad̥ve bañjar, kori, kubon·, Ika ta</p>
+        <p>
+          <lb n="34v4"/> kabeḥ kaṁ kagaraṅana cor patatakonan·, yen· vruḥ maṅruṅu kaṁṅ ama⌈<g type="filler">§</g><space type="binding-hole"/>teni, tan pavarah ayatakna riṁ cor, cor sakiṁ ḍaL̥m·, yan· kna devagama doṣanana kaṁ dr̥ve lavaṁ,</p>
+        <!-- photo DSCF7980 bottom -->
+        <p><pb n="35r"/><lb n="35r1"/>bañjar, kubon·, ṅgone ma:ti || linokikan tiban-tiba:n·, deniṁ duṣṭa:, <space type="binding-hole"/> yan tan lokikanana maṅkana, Agampaṁ voṁ yan gavenən doṣane || cinoloṁ deniṁ duṣṭa,, mvaḥ yan ana <g type="filler">§</g></p>
+        <p><lb n="35r2"/> voṁ haṅupahakən· voṁ, vuvus aveḥ pahajī, hika: ta haṅalap upaḥ, mundur ma<g type="filler">§</g><space type="binding-hole"/>lika vr̥tta riṁ kaṁ kinon patyanana, Ika ta paḍa ḍaṇḍanya, kaṁ kinon lavan kaṅ akon·, hamatyanana</p>
+        <p><lb n="35r3"/>, 20000 || muvaḥ hana vvaṁ hamatyani voṁ, den-siṅidḍa:kən·, tuhu kasamaran ta<space type="binding-hole"/>n ana vruḥ || mvaḥ hana vvaṁ, hamatyani vvaṁ nirdoṣa, kalara hinam akveḥ voṁ vruḥ, dadi malayu kaṅ amateni</p>
+        <p><lb n="35r4"/>, hapara raṣan·, yan kapaṅgiha denikaṁ madr̥ve vvaṁ pinatyan·,, muvaḥ kaḍaṁ-var<space type="binding-hole"/>gganiṁ mati, vnaṁ micaraha, ya doṣaniṅ amatyani vvaṁ nirdoṣa || 0 || muvaḥ ḍaṇḍaniṅ anumpuṁ, Aṅgoro</p>
+        <!-- photo DSCF7981 bottom -->
+        
+        <p><pb n="35v"/><fw place="left" n="35">35</fw>
+          <lb n="35v1"/> bogi, hañjaraḥ nirdoṣa, 20000, ḍaṇḍaniṁ voṁ riṁ tuṅgal-tuṅgal·, lamun· vvaṅ akve<space type="binding-hole"/>ḥ kaṅ añjarahi, hanumpuṁ, hañgoro bogi, paḍa mañjiṅ iṁ humaḥ, sakati lima vkas iṁ ḍaṇḍa, ma:s· roṁ pulu-</p>
+        <p><lb n="35v2"/>ḥ tahil·, hiṅajen nəm evu sama:s·, riṁ satahil·, piṇḍa, 160000 || Ajiniṁ <g type="filler">§</g><space type="binding-hole"/> ma:s alave tahil· || ḍaṇḍa sakiṁ hagama:, 50000,, 20000 || duk patiḥ riṁ maja pahit sira tuhvan kana<g type="filler">§</g>-</p>
+        <p><lb n="35v3"/>ka:, Alabhani ro vlasanira: kaṅ avot ka:ryya, tanaṁ lvaṅi riṁ ḍaL̥m·,, kaṅ ū<g type="filler">§</g><space type="binding-hole"/>ttama ḍaṇḍa muñcak·, 4000,, maḍyamaḍaṇḍa sahasa: muñcak·, 2000,, pratamasahasa: muñcuk·, 1000 ||</p>
+        <p><lb n="35v4"/> Iti sitthasitthaniṁ maṅraṣani ka:ryya riṁ maja pahīt· || mvaḥ ḍaṇḍaniṁ maṅrusa:k savaḥ, <space type="binding-hole"/> vvaṁṅ ababantən riṁ kabuyutan·, riṁ lyan·, riṁ bhūminiṁ lyan·, tan avr̥tta riṁ kaṅ abhūmi, vvaṁṅ agave setra, pi<g type="filler">§</g>-</p>
+        <p>
+          PerpusnasL882-f36r</p>
+        <p><pb n="36r"/><lb n="36r1"/>ṇḍa, 8000 || mvaḥ vvaṁṅ asamaya campuḥ vicara:, tan amḍa liṁ pasamaya, 8000 <space type="binding-hole"/> || vvaṁ maṅinaka:ryya, ḍaṇḍa, 8000 || mvaḥ vvaṁṅ avicara:, hamantuk pǝmǝgatan·, ḍaṇḍa, 8000 || mvaḥ vvaṅ año-</p>
+        <p><lb n="36r2"/>loṁ mr̥gga, miṇa, riṁ laraṅan·, jaba:, ḍaṇḍa, 8000 || mr̥gga mulihan dviguṇa:,, <space type="binding-hole"/> 0,, kunaṁ laraṅan ḍaL̥m·, ḍaṇḍa, 20000 || kaṁ cinoloṁ mantuka mañcaguṇa || R̥ganiṁ maha:mr̥gga, yan iṁ la-</p>
+        <p><lb n="36r3"/>raṅan·, lvirnya, moṁ, varak·, bar:va:ṁ, tiṅgaluṁ, 8000 || baṇṭeṁ, mañjaṅan·, <space type="binding-hole"/> vadak·, 4000 || vijuṁ, 1000 || kidaṁ, 4000 || 0 || salviraniṁ burva:n alit·, paṅr̥ga, 200 || maṅta:-</p>
+        <p><lb n="36r4"/>na mulyaniṁ raja laraṅan·,, mvaḥ laraṅan· yavi, Upalakṣaṇa:kna sapaṅa:<space type="binding-hole"/>jiniṁ laraṅan ḍaL̥m·, pilihǝn R̥ganya // 0 // nihan ta ṅaraniṁ devagama:, hampon-hampon·, riṁ<g type="filler">§</g></p>
+        <!-- photo DSCF7986 top -->
+        
+        <p><pb n="36v"/><fw place="left" n="36">36</fw>
+          <lb n="36v1"/> savahunika tahapakən·, yan· kna taṁ kacoran·, hampo tan kolu, ja:<space type="binding-hole"/>ṅgət· riṁ huntu gugus i hilat·, laklakan·, maL̥kekmutaḥ, kapisəL̥k·, vahin·, sgu, maṅob ma<g type="filler">§</g>-</p>
+        <p><lb n="36v2"/>raṁpaṁ, hariṅət·, kumlə sa:rvvasa:ndiny a:vaknya, muri riṁ vulu romanya, kasanduṁ ma<space type="binding-hole"/>ṅraḥ, kasuririṁ, tiba, salaḥ ton·, suṅkana:rip·, muvaḥ hampo runtuḥ sakiṁ tutuknya, sumambur tika baba-</p>
+        <p><lb n="36v3"/>n·, mvaṁ kapəyəḥ, kapitahi, maṅkana təṅraniṁ saṁ vahunika titipañ cor·,, kunəṁ <space type="binding-hole"/> təṅraniṁ sajroniṁ dinarātri, kasahuteniṁ sa:rvvasatva pipilikadi, Atukar, Adadak griṁ, kahilaṅ-ila<g type="filler">§</g>-</p>
+        <p><lb n="36v4"/>ṅan sakalviranya, kamaliṅan·, daL̥n·, kaR̥bahanya salviranya, nahan hadi<space type="binding-hole"/>nya, kapasukan mr̥gga, kukuvuṁ, kapasukan amuk·, kondaṁ, katujaḥ, kasiṅhat·, kasa:mbər, kadmak·, ka<g type="filler">§</g>-</p>
+        <!-- photo DSCF7987 -->
+        
+        <p>
+          <pb n="37r"/><fw place="left" n="37">37</fw>
+          <lb n="37r1"/>L̥bu, kahili, kapaṅavin∙, sakalviranya mamaṅgiḥ jatighata makadi pati <space type="binding-hole"/>, mamaṅgiḥ sapamighna:ni sarvva laṇḍəp-laṇḍəp∙, kajar abayadi, kaśatra:bhayadi, maṅkana təṅraniṁ kna,</p>
+        <p>
+          <lb n="37r2"/> riṁ sajroniṁ parima:na, tiṅkaḥniṁ hañori, kəkərabi den agəmit∙, kampu<space type="binding-hole"/>ḥ romanya, Akəkəma, susuti den asat∙, hampo satahapan∙, cəL̥m∙ humbul-umbul pisan∙, dadi</p>
+        <p>
+          <lb n="37r3"/> kipaṁ kahapan∙, pintigaṅ ləbvakən humbul-umbul∙, tiṅkaḥ hikaṁ kacoran riṁ vṅi<g type="filler">§</g><space type="binding-hole"/>nipun∙, sadinsadina:, tan suṅana sanak∙, mvaṁ ba:ryyanipun∙, mapaR̥ka, tan kasuṅan asapani ska</p>
+        <p>
+          <lb n="37r4"/>ra:, skul hulam∙, kakinaṅan∙, sa:jə:ṁ, riṁ saheñjiṁ kacorṇa, hayo ri<g type="filler">§</g><space type="binding-hole"/>ṅ avan∙ || 0 ||</p>
+        <!-- photo DSCF7988 -->
+        <pb n="37v"/>
+      </div>
     </body>
   </text>
 </TEI>
