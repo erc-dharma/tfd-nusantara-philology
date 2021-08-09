@@ -31,11 +31,11 @@
     <!-- git clone then pull -->
     <git-clone-pull repository="git://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
 
-    <fileset id="diplomaticFiles" dir="./editions" includes="DHARMA_CritEd*.xml"/>
+    <fileset id="criticalFiles" dir="./editions" includes="DHARMA_CritEd*.xml"/>
 
     <!-- Transformation XML vers HTML -->
     <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-edition.xsl" destdir="./output/critical-edition" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
-        <fileset refid="diplomaticFiles"/>
+        <fileset refid="criticalFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
 
