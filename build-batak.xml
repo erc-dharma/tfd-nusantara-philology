@@ -31,9 +31,9 @@
     <!-- git clone then pull -->
     <git-clone-pull repository="git://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
     
-    <fileset id="batakFiles" dir="batak" includes="*.xml"/>
-    <fileset id="translitFiles" dir="updates/pass1" includes="*.xml"/>
-    <fileset id="normFiles" dir="updates/pass2" includes="*.xml"/>
+    <fileset id="batakFiles" dir="batak" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
+    <fileset id="translitFiles" dir="updates/pass1" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
+    <fileset id="normFiles" dir="updates/pass2" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
     <fileset id="diploFiles" dir="updates/pass3" includes="*.xml"/>
     
     <!-- Step 1 — transliteration updates -->
