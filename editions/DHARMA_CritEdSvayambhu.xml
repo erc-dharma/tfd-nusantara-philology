@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="svayambhu">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="svayambhu" xml:lang="eng" type="edition">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -19,8 +19,7 @@
 				</respStmt>
 			</titleStmt>
 			<publicationStmt>
-				<authority>DHARMA <note>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</note>
-				</authority>
+				<authority>DHARMA</authority>
 				<pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
 				<idno type="filename">DHARMA_CritEdSvayambhu</idno>
 				<availability>
@@ -74,7 +73,48 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+		 <projectDesc>
+		 <!-- Part mandatory -->
+		 <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+		 <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+		 </projectDesc>
+		 <editorialDecl>
+		  <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+		  <correction>
+		   <p/>
+		  </correction>
+		  <normalization>
+		   <p/>
+		  </normalization>
+		  <punctuation>
+		   <p/>
+		  </punctuation>
+		 </editorialDecl>
+		 <samplingDecl>
+		  <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+		  <p/>
+		 </samplingDecl>
+		 <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+		 <!-- Will need to be updated once a more official realase is done -->
+		 <variantEncoding method="parallel-segmentation" location="internal"/>
+		 <!-- Part mandatory -->
+		 <listPrefixDef>
+		  <prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+		   <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+		  </prefixDef>
+		  <prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
+		   <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+		  </prefixDef>
+		  <prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
+		   <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+		  </prefixDef>
+		  <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+		   <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+		  </prefixDef>
+		  <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+		   <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+		  </prefixDef>
+		 </listPrefixDef>
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
@@ -95,9 +135,9 @@
 - both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a
 
 -->
-	<text xml:space="preserve">
+	<text xml:space="preserve" xml:lang="kaw-Latn">
 		<body>
-<div type="edition" xml:lang="kaw-Latn">
+
 <!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t∙, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ [01-03] vruḥ maviveka:,
 sulakṣaṇaha ta sira tumama{ta}ha: riṁ sabha: ||  -->
 <!-- K: [1v1] || ○ || Avighnam a:stu || ○ || kunaṁ hulaha: saṁ prabhu, Uniṅanira taṁ vyavaharani§[SH]kaṁ ra:t∙,
@@ -2803,17 +2843,10 @@ kavruhana tikaṅ vacana sākṣi
  <p></p>
  </div>
 </div>
- </div>
+ 
 <!-- end of div type edition -->
-		<div type="translation">
-				<p n="1"><supplied reason="subaudible"><quote rend="stanza" source="MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied> Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
-			</div>
-			<div type="commentary">
-				<p>commentary</p>
-			</div>
-			<div type="bibliography">
-				<p>bibliography of previous editions, discussion, etc.</p>
-			</div>		
+		
+		
 		</body>
 	</text>
 </TEI>
