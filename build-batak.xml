@@ -35,6 +35,7 @@
     <fileset id="translitFiles" dir="updates/pass1" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
     <fileset id="normFiles" dir="updates/pass2" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
     <fileset id="diploFiles" dir="updates/pass3" includes="*.xml"/>
+    <fileset id="externalFiles" dir="batak" includes="*_biblio.xml *_trans*.xml _com*.xml"/>
     
     <!-- Step 1 — transliteration updates -->
     <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-transliterationUpdates.xsl" destdir="updates/pass1" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
@@ -77,4 +78,10 @@
         <regexpmapper from="(.*).xml" to="\1-logical.html"/>
     </xslt>
       
+      <!-- Transformation for commentary, translation and bibliography -->
+    <xslt force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+        <param name="edition-type" expression="logical"/>
+        <param name="corpus-type" expression="batak"/>
+        <fileset refid="externalFiles"/>
+      </xslt>
 </project>
