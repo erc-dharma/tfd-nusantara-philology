@@ -36,6 +36,7 @@
     <!-- Transformation XML vers HTML -->
     <xslt force="true" style="./project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="./output/diplomatic-edition" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <param name="edition-type" expression="diplomatic"/>
+        <param name="corpus-type" expression="nusantara"/>
         <fileset refid="diplomaticFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
