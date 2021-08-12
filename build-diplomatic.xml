@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="diplomatic-edition">
+    
+    <!-- Macrodef taken from tlrobinson.net blog-->
+    <macrodef name = "git">
+        <attribute name = "command" />
+        <attribute name = "dir" default = "" />
+        <element name = "args" optional = "true" />
+        <sequential>
+            <echo message = "git @{command}" />
+            <exec executable = "git" dir = "@{dir}">
+                <arg value = "@{command}" />
+                <args/>
+            </exec>
+        </sequential>
+    </macrodef>
+    <macrodef name = "git-clone-pull">
+        <attribute name = "repository" />
+        <attribute name = "dest" />
+        <sequential>
+            <git command = "clone">
+                <args>
+                    <arg value = "@{repository}" />
+                    <arg value = "@{dest}" />
+                </args>
+            </git>
+            <git command = "pull" dir = "@{dest}" />
+        </sequential>
+    </macrodef>
+    
+    <!-- git clone then pull -->
+    <git-clone-pull repository="git://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
+    
+    <fileset id="diplomaticFiles" dir="./editions" includes="DHARMA_DiplEd*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
+    
+    <!-- Transformation XML vers HTML -->
+    <xslt force="true" style="./project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="./output/diplomatic-edition" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+        <param name="edition-type" expression="diplomatic"/>
+        <param name="corpus-type" expression="nusantara"/>
+        <fileset refid="diplomaticFiles"/>
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+    </xslt>
+    
+</project>

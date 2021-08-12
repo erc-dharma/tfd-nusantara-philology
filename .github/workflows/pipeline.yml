@@ -1,0 +1,32 @@
+name: Pipeline manuscripts
+
+on:
+  push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+       - uses: actions/checkout@v2
+       - name: Set up JDK 1.8
+         uses: actions/setup-java@v1
+         with:
+           java-version: 1.8
+       - name: Build batak with Ant
+         run: ant -noinput -buildfile build-batak.xml
+
+       - name: Build diplomatic editions with Ant
+         run: ant -noinput -buildfile build-diplomatic.xml
+
+       - name: Build critical editions with Ant
+         run: ant -noinput -buildfile build-critical.xml
+
+       - name: Updating the edited texts in the repository
+         run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add output/
+          git commit -m "XML files are created"
+          git push
