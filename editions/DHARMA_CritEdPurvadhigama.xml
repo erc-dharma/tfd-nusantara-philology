@@ -6,10 +6,33 @@
         <title type="main" xml:lang="kaw-Latn">Pūrvādhigama</title>
         <title type="sub">Digital Critical Edition and Translation of an Old Javanese Legal
           Code</title>
+        <editor ref="part:masc">
+          <forename>Marine</forename>
+          <surname>Schoettel</surname>
+        </editor>
+        <respStmt>
+          <resp>EpiDoc encoding</resp>
+          <!--TBM-->
+          <persName ref="part:masc">
+            <forename>Marine</forename>
+            <surname>Schoettel</surname>
+          </persName>
+        </respStmt>
       </titleStmt>
       <publicationStmt>
-        <authority/>
+        <authority>DHARMA</authority>
+        <pubPlace>Paris</pubPlace>
         <idno type="filename">DHARMA_CritEdPurvadhigama</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">
+            <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To
+              view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
+              a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,
+              94041, USA.</p>
+            <p>Copyright (c) 2019-2025 by Marine Schoettel.</p>
+          </licence>
+        </availability>
+        <date from="2019" to="2025">2019-2025</date>
       </publicationStmt>
       <sourceDesc>
         <listWit>
@@ -26,22 +49,31 @@
       <!--other "non-significant" variants: puṅku vs. mpuṅku, not recording where mss. disagree on punctuation -->
       <!--interpreting mss's // as '.', i.e. a strong punctuation marking the end of a paragraph.-->
     </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This project DHARMA has received funding from the European Research Council (ERC) under
+          the European Union's Horizon 2020 research and innovation programme (grant agreement no
+          809994).</p>
+        <p>Encoded following the <ref
+          target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"
+          >Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+      </projectDesc>
+      <schemaRef type="guide" key="EGCv01"
+        url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"
+      />
+    </encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="san-Latn">Sanskrit, romanized</language>
         <language ident="kaw-Latn">Old Javanese, romanized</language>
-        <language ident="tam-Latn">Tamil, romanized</language>
-        <language ident="kan-Latn">Kannada, romanized</language>
-        <language ident="tel-Latn">Telugu, romanized</language>
       </langUsage>
     </profileDesc>
+    <revisionDesc>
+      <change/>
+    </revisionDesc>
   </teiHeader>
-  <facsimile>
-    <graphic url="photograph of text or monument"/>
-  </facsimile>
   <text xml:space="preserve" xml:lang="kaw-Latn">
     <body>
-      <div type="edition" xml:space="preserve" xml:lang="kaw-Latn">
 	<div><ab type="invocation" xml:lang="san-Latn"><app><lem wit="#L1 #L3 #D Or4431">avighnam astu</lem><rdg wit="#B">|| 0 || nama śivaya || 0 ||</rdg><rdg wit="#E">Avighnam astu tatastu hastu nama</rdg></app></ab></div>
 <div n="1" type="chapter">
 <head type="editorial" xml:lang="eng">Introduction: origin of the Pūrvādhigama</head>
@@ -219,7 +251,7 @@
   </p>
 </div>
 <div><ab>// 0 // iti śivaśāsana sāroddhr̥ta</ab></div>
-</div>
+
     </body>
   </text>
 </TEI>
