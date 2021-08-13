@@ -2,11 +2,12 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksaguru">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksaguru" type="edition" xml:lang="eng">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Śikṣā Guru</title>
+                <title type="main">Śikṣā Guru</title>
+                <editor><name>Aditia Gunawan</name></editor>
                 <respStmt>
                     <resp>creation of the file</resp>
                     <resp>intellectual authorship of edition</resp>
@@ -16,10 +17,7 @@
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <authority>DHARMA <note>This project has received funding from the European Research
-                        Council (ERC) under the European Union's Horizon 2020 research and
-                        innovation programme (grant agreement no 809994).</note>
-                </authority>
+                <authority>DHARMA</authority>
                 <pubPlace>Paris (France)</pubPlace>
                 <idno type="filename">DHARMA_CritEdSiksaGuru</idno>
                 <availability>
@@ -36,8 +34,29 @@
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <witness xml:id="L642">Lontar, Jakarta, Perpusnas, L 642</witness>
-                    <witness xml:id="L633">Lontar, Jakarta, Perpusnas, L 633</witness>
+                    <witness xml:id="L642">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement> <institution>Perpusnas</institution> 
+                                <idno>L 642</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <p>Lontar</p>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="L633">
+                        <msDesc>
+                        <msIdentifier>
+                        <settlement>Jakarta</settlement> 
+                        <institution>Perpusnas</institution> 
+                            <idno>L 633</idno>
+                        </msIdentifier>
+                            <physDesc>
+                                <p>Lontar</p>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
@@ -52,9 +71,6 @@
             <change when="2020-10-25" who="part:adgu">Initial encoding</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile>
-        <graphic url="photograph of text or monument"/>
-    </facsimile>
     <text xml:space="preserve" xml:lang="kaw-Latn">
         <body>
            <!-- CONVENTION:
