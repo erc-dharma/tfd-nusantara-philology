@@ -2,7 +2,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksakandangkaresian">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksakandangkaresian" type="edition" xml:lang="eng">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
@@ -40,17 +40,19 @@
                         </publicationStmt>
                         <sourceDesc>
                                 <listWit>
-                                        <witness xml:id="A">Perpustakaan Nasional, Jakarta, L. 630;
-                                                Old Western Javanese Quadratic script on
-                                                gebang</witness>
-                                        <witness xml:id="B">Perpustakaan Nasional, Jakarta, L. 624
-                                                &amp; L. 1+; Old Sundanese script on
-                                                lontar</witness>
+                                        <witness xml:id="A"><msDesc><msIdentifier>
+                                                <settlement>Jakarta</settlement>
+
+<institution>Perpustakaan Nasional</institution><idno>L. 630</idno></msIdentifier>
+                                                <physDesc>
+                                                        <p>Old Western Javanese Quadratic script on gebang</p></physDesc></msDesc></witness>
+                                        <witness xml:id="B"><msDesc><msIdentifier><settlement>Jakarta</settlement><institution>Perpustakaan Nasional</institution><idno>L. 624 &amp; L. 1+</idno></msIdentifier>
+                                                <physDesc><p>Old Sundanese script on
+                                                lontar</p></physDesc></msDesc></witness>
                                         <witness xml:id="EdASD">
                                                 <abbr type="siglum">Ed<hi rend="superscript"
                                                   >ASD</hi></abbr>
-                                                <bibl><ptr target="bib:Atja+SalehDanasasmita1981_03"
-                                                  /></bibl>
+                                                <bibl><ptr target="bib:Atja+SalehDanasasmita1981_03"/></bibl>
                                         </witness>
                                 </listWit>
                                 <listBibl>
@@ -94,9 +96,6 @@
                         </langUsage>
                 </profileDesc>
         </teiHeader>
-        <facsimile>
-                <graphic url="photograph of text or monument"/>
-        </facsimile>
         <text xml:space="preserve" xml:lang="osn-Latn">
                 <body>
                          <!--      I have spoken with Axelle. She and I agree that the example at hand should be encoded as follows:
