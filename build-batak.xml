@@ -30,11 +30,13 @@
 
     <!-- git clone then pull -->
     <git-clone-pull repository="git://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
-    
+    <!-- step1 -->
     <fileset id="batakFiles" dir="batak" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
+    <!--  -->
     <fileset id="translitFiles" dir="updates/pass1" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
     <fileset id="normFiles" dir="updates/pass2" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
-    <fileset id="diploFiles" dir="updates/pass3" includes="*.xml"/>
+    <fileset id="capitFiles" dir="updates/pass3" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
+    <fileset id="diploFiles" dir="updates/pass4" includes="*.xml"/>
     <fileset id="externalFiles" dir="batak" includes="*_biblio.xml *_trans*.xml _com*.xml"/>
     
     <!-- Step 1 — transliteration updates -->
@@ -49,14 +51,20 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
     
-    <!-- Step 3 – deleting punctuation for diplomatic version -->
-    <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-deletingPunctuation.xsl" destdir="updates/pass3" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+    <!-- Step 3 – adding the capitalization for sentences -->
+    <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-capitalize.xsl" destdir="updates/pass3" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="normFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
     
-    <!-- Step 4 – Transformation HTML Diplomatic into a version without space – temporary solution-->
-    <xslt style="project-documentation/EditorialStylesheets/tpl-deleteSpace.xsl" in="updates/pass3/DHARMA_DiplEdBatakLeidenOr3429.xml" out="updates/pass3/DHARMA_DiplEdBatakLeidenOr3429-noSpace.xml" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+    <!-- Step 4 – deleting punctuation for diplomatic version -->
+    <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-deletingPunctuation.xsl" destdir="updates/pass4" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+        <fileset refid="capitFiles"/>
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+    </xslt>
+    
+    <!-- Step 5 – Transformation HTML Diplomatic into a version without space – temporary solution-->
+    <xslt style="project-documentation/EditorialStylesheets/tpl-deleteSpace.xsl" in="updates/pass4/DHARMA_DiplEdBatakLeidenOr3429.xml" out="updates/pass4/DHARMA_DiplEdBatakLeidenOr3429-noSpace.xml" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
     
@@ -73,7 +81,7 @@
     <xslt force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <param name="edition-type" expression="logical"/>
         <param name="corpus-type" expression="batak"/>
-        <fileset refid="normFiles"/>
+        <fileset refid="capitFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*).xml" to="\1-logical.html"/>
     </xslt>
