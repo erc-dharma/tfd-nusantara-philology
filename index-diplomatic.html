@@ -33,7 +33,7 @@
     </script>
 
   </head>
-  <h1></h1>
+  <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="https://erc-dharma.github.io/">ERC-DHARMA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,13 +110,12 @@
           <img src="https://img.shields.io/badge/licence-CC--BY-green.svg" class="img-fluid" alt="CC-BY"/>
           <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" class="img-fluid" alt="Open Science"/>
         <p>Manuscripts edited in XML TEI by ERC-DHARMA Task Force D.</p>
-
+          <p><span  class="badge badge-warning">Number of files <b id="lenght"></b> </span> </p>
       <ul id="list" class="list-group">
       </ul>
 </div>
 </div>
 </div>
-    </body>
     <!-- (async () => {
         const response = await fetch('https://api.github.com/repos/erc-dharma/tfd-nusantara-philology/contents/workflow-output/html');
         const data = await response.json();
@@ -173,6 +172,7 @@
           htmlString += `<li class="list-group-item"><a href="${fileName}">${fileDisplayName}</a></li>`;
         }
         document.getElementById('list').innerHTML = htmlString;
+        document.getElementById('lenght').innerHTML = data.length;
       }
       // Quick navigate to file if perfect match
       const navigateToFile = (data, filter = '') => {
