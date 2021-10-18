@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">SAṄ HYAṄ HAYU</title>
+                <!-- fill in the subtitle if necessary -->
+        <editor ref="part:adgu">
+					<name>Aditia Gunawan</name>
+				</editor>
+                <respStmt>
+                    <resp>intellectual authorship of edition</resp>
+                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                    <persName ref="part:adgu">
+					<name>Aditia Gunawan</name>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>DHARMA</authority>
+                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <idno type="filename">DHARMA_DiplEdSanHyanHayuLOr8451</idno>
+                <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                        <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+                    </licence>
+                </availability>
+                <date from="2019" to="2025">2019-2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                        <!-- Give your witness an unique identifier -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Leiden</settlement>
+                                <institution>University Library (UB)</institution>
+                                <repository>Lontar</repository>
+                                <idno>Or. 8451</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <msItem>
+                                <p>From Sugiarto's Transcription of MalPol 161 Paris</p>
+                                </msItem>
+                            </msContents>
+                        </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <!-- Part mandatory -->
+                <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+                <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+            </projectDesc>
+            <editorialDecl>
+                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <punctuation>
+                    <p/>
+                </punctuation>
+            </editorialDecl>
+            <samplingDecl>
+                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+                <p/>
+            </samplingDecl>
+            <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+            <!-- Will need to be updated once a more official realase is done -->
+            <variantEncoding method="parallel-segmentation" location="internal"/>
+            <!-- Part mandatory -->
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <!-- choose the language(s) of your text, remove the others -->
+                <language ident="san-Latn">Sanskrit, romanized</language>
+                <language ident="kaw-Latn">Old Javanese, romanized</language>
+                <language ident="tam-Latn">Tamil, romanized</language>
+                <language ident="kan-Latn">Kannada, romanized</language>
+                <language ident="tel-Latn">Telugu, romanized</language>
+            </langUsage>
+            <textClass>
+                <keywords>
+                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+                    <term/>
+                    <!-- Ignore this element for the time being. -->
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change who="part:axja" when="2021-10-18" status="draft">Encoding a txt file into XML.</change>
+            <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve" xml:lang="lg-code"><!-- update the language code -->
+<!-- Transliteration follows Balogh & Griffiths 2020.
+{xyz} 	text erased by scribe
+/xyz\	text inserted below the line
++	estimated number akṣaras lost after damage to support
+_	space left open for one akṣaras
+
+ -->
+        <body>
+         <div n="1">
+<ab>… maturu ri rahina, kaliṅanya ana kopama ika saṅ manon, rahina juga sira sadakala, təkkeṅ turu, təka laṅkahan deniṅ rahina v-ṅi, təkke pati, lāvan teja niṅ aditya, vahyattahita (?) apan ahiṅan, tan t-ke jro niṅ umah gambira
+ 20b	lāvan i jro guha, tatan maṅkana teja saṅ hyaṅ pramana, l-pas sira riṅ bava samaṅke, trus ikaṅ svagga patala, sapta svagga, sapta patala tovi, ava ata ya kasuluhan deniṅ teja saṅ hyaṅ pramana, kadi tatan pahiṅan ikaṅ lor kidul kulvan vetan isor i ruhur, maṅkana tatan pahiṅan teja saṅ hyaṅ pramana/
+</ab><ab>niṅ sabda, tan pāna katunan sabda maganalliṅ hiḍap ṅaranya pinaka panon pinaka paṅrəṅə̄, pinaka paṅambuṅ pinaka paṅasparsa (?) paṅrasa pinaka paṅhiḍap, li… hiḍap ṅaranya, tan pavak  tan parupa tan pavaṇ (?) datan
+ --	kagamal tan kasikəp, sukṣma niṅ hiḍap ṅaranya, tan kevəhan saparanya, trus iṅkaṅ gunuṅ denya, ndatan patapak tan pavuri, təpvit (?) luṅya t-kā meṅgal, adhyatmikaniṅ hiḍap ṅaranya, trus ikaṅ agəṅ aḍ-mit deni hiḍap, sapta patala sapta buvana isor i ruhur kapva kasuluhan katə/</ab>
+<ab>nya riṅ sarira ataya lima, ndya lvirnya nihan, srotendriya ṅaran ikaṅ hadas yan mijil riṅ taliṅa pinaka paṅrəṅə sabdha, gronendriya ṅaran yan vijil riṅ iruṅ pinaka paṅambuṅ ganda, jipvendriya ṅaran yan vijil ri lidah pinaka paṅrasa riṅ <choice><unclear>sadasa</unclear><unclear cert="low">sadrasa</unclear></choice> tvakindriya (?) ṅaran yan vijil ri kulit</ab>
+<ab> --	pinaka paṅasparsa paṅhiḍap nastisa (?) cakṣu..randriya ṅaran yan vijil riṅ mata, pinaka panon ri rupa vanda (?), nāhan lvir ni kavijilan ikaṅ hiḍap lima rikeṅ sarira, mataṅnyan panaṅgah pañcendriya de saṅ seva sogata, ndan ikaṅ hiḍap an pa/</ab>
+</div>
+<div n="2">
+<ab>riṅ tutuk, tan v-naṅ taṅ bayu panulup saṅkakala, yan m-tu mahavan riṅ iruṅ, apan paṅambuṅ gandha pak..a nika, yan m-tu mahavan riṅ tutuk ikaṅ bayu an pakaṅaran habhab (?) v-naṅ ya panulup saṅkakala, apan maṅkana
+ --	paknanika, ndan ikaṅ bayu m-tu mahavan riṅ tutuk mvaṅ riṅ ruṅta, tuṅgal ika kunaṅ apan najəjəg ya ri visayanya, apan dvaranya ya malenlenakanya, maṅkana tekaṅ hiḍap an paḍa tətəg ya ri visayanya, tan v-naṅ makavisaya visayani rovanya, apan ya dvaranya yan malenlenakə/</ab>
+<ab>mva pva liṅ ni tatva, mati pveka saṅ paṇḍita, bayunira ikaṅ masuk m-tu ri ruṅnira, yata misan m-gil riṅ abyantara, yata sinaṅguh akasa paramata</ab>
+<ab> 22b	ṅaranya ya sinaṅgah lina ṅaranya, umapa lvir iṅ lina ṅaranya, tan palviṅ, mapa rupanya tan parupa, apa lakṣaṇanya tan palaksana, apa hiḍap, ih umapeki ta karih iṅət-iṅət rasa niṅ aturu tan paṅipi, iniṅət-iṅət rasa niṅ aturu tan paṅipi kat-mu rasa niṅ kupa, pinih rasa niṅ si lupa kat-mu ta rasa niṅ nora hiniḍapnya, tan suka tan duhka, tan grahya tan grahaka,…
+saṅ hyaṅ ṅadma v-kasan lāvan saṅ hyaṅ ṅasiva. Animan ṅaranya alit, ahiman ṅaranya agəṅ, mahiman ṅaranya adoh, lagiman ṅaranya selpra (?),</ab>
+<ab> 25b	prapti ṅaranya t-ka, prakampa ṅaranya magavay, isitva ṅaranya basa, vasitva ṅaranya maṅāku, nāhan arta ni aṣṭaguna kavruhana saṅ sevaka darmma. Jñaṇa ṅaranya ambək tuṅgaṅ ah-niṅ ṅalilaṅ, vijñana ṅaranya, ambak branta magələh, kavijñan pan ṅaranya ambak t-ka yan akroddha, mamrap mamati, nāhan <choice><unclear>ata</unclear> <unclear cert="low">arta</unclear></choice> niṅ jñana vijñana kavijñanan ṅaranya kaya/</ab>
+<ab><pb n="8r"/>
+<lb n="8r1"/>vruh hanan ta it pat niṅ tiga, kunaṅ deyanta, ṣumahur ta kita varah ikaṅ sa ta- <space type="binding-hole"/> nakvanakan mami ri kita hayveguna, liṅnira…?... ta kitanaku
+<lb n="8r2"/>Apa kari ṅaran ikaṅ masuk mtu mahavān riṅ rata lāvan ri <space type="binding-hole"/> tutukta, unamana pravesana guṇanya ṅke ri saraṇta, bayu ṅaran ika usvasa ra-
+<lb n="8r3"/>nak ṣaṅ paṇḍita ika, yatekaṅ aṅaranya liṅ saṅ paṇḍita, mūvah ni- <space type="binding-hole"/> han təkvanakna mamin vaneh, apa kāri ṅaranikaṅ kārəṅə̄ dentā ṅke riṅ bhuva-
+<lb n="8r4"/>na, lāvan <supplied reason="lost">n</supplied>irikaṅ sarvva janma, karə̄ṅə̄ juga gunanya, sabda ṅaran ika <space type="binding-hole"/> panaṅgah ranak ṣaṅ paṇḍita ika, yateka jñāna ṅaran<unclear>n</unclear>ya liṅ saṅ paṇḍita, va-
+<pb n="8v"/>
+<lb n="8v1"/>neh takvanakna mami ri kita, apa kari ṅaran ikaṅ tə̄nəkakənanta <space type="binding-hole"/> ri vekas nikaṅ bhuvana lor kidul kulvan vetan, ləs luṅhā sakdap hu-
+<lb n="8v2"/>malivati thasik, cət tka muvah, apa ṅaran ika liṅta, hidap <space type="binding-hole"/> ṅaran ika, aṅən-aṅan ranak saṅ paṇḍita ikā, yatikan ṅaran<unclear>n</unclear>ya liṅ
+<lb n="8v3"/>saṅ paṇḍita. Mataṅyan kinalakaran taya təluṅ viji, sinaṅgah ba- <space type="binding-hole"/> yu sabda hidap, bayu ṅaran<unclear>n</unclear>ya ikaṅ bayu masuk mtu mahavan ri
+<lb n="8v4"/>ruṅta pinakosvasanta, sabda ṅaran<unclear>n</unclear>ya ikoṅ sabda pinakovusta <space type="binding-hole"/>, hidap ṅaran<unclear>n</unclear>ya ikaṅ paṅaṅən-<supplied reason="lost">t</supplied>aṅən<supplied reason="lost">a</supplied> riṅ madoh maparə<unclear>k</unclear> kita hana ṅke
+
+
+<pb n="9r"/>
+<lb n="9r1"/>ya hane sabraṅ, mahas misvar miṇḍuhur, makuliliṅ<supplied reason="lost">ṅ</supplied>an rikeṅ bhuvana <space type="binding-hole"/>, tan kevəhan asivaka harəpnya paran<unclear>n</unclear>ya, tan kasukəran deniṅ sukatmu raṅ lbhak
+<lb n="9r2"/>gunuṅ priṅga bahla, lvah tasik ptaṅ pəpət ityevamadi, sveca juga ya <space type="binding-hole"/> asiṅ saparan<unclear>n</unclear>ya, ghāganacara maṅlayaṅ riṅ abyantara manumpak eri valā-
+<lb n="9r3"/>kaṅ niṅ <supplied reason="lost">ṅ</supplied>akasa vnaṅ, ajalāntara maṅlayaṅ riṅ abyantara manumpaka riṅ <space type="binding-hole"/> tasik vnaṅ, atavan sumiləm ta mariṅ pusər niṅ jaladi, sumurupana da-
+<lb n="9r4"/>sar niṅ sapta patala vnaṅ, tan vis ceda tan vikara tan aməlam <space type="binding-hole"/>, sveccā juga ya, kita hana ṅke ya luṅhā hane sabraṅ, cat lu-
+<pb n="9v"/>
+<lb n="9v1"/>ṅha təp tka, segrakas adras āləyə, ta karin maṅkana ṅən-aṅənta <space type="binding-hole"/> yata ṅaṅən-aṅən madoh maparə<unclear>k</unclear>, aum maṅkana pvaṅkulun, ndah yatika si-
+<lb n="9v2"/>naṅgah mami ajñāna ṅaran<unclear>n</unclear>ya, a ṅaran<unclear>n</unclear>ya ikaṅ bayu, jñā ṅaran<unclear>n</unclear>ya ikaṅ sa- <space type="binding-hole"/> bda, na ṅaran<unclear>n</unclear>ya ikaṅ hidap, papisaniṅ katigāṅ viji yathika sinaṅguh ti-
+<lb n="9v3"/>ga jñāna ṅaran<unclear>n</unclear>ya i saṅ paṇḍita, adva karikeṅ bayu sabda hidap <space type="binding-hole"/>, an hanā ri kitanaku, mvaṅ <choice><unclear>an-gī</unclear><unclear cert="low">agni</unclear></choice> kiṅ bayu sabda hidap byakta pinaka
+<lb n="9v4"/>hurip nikaṅ sarvva tumuvuh mvaṅ sarvva satva, advakarikanaku, taham tu- <space type="binding-hole"/> hu pvaṅkulun, yatika jñāna jati tan ginavay-gavay liṅ mami, ndi kari
+
+<pb n="10r"/>
+<lb n="10r1"/>hyaṅ pramana, yapvan kap<unclear>ə</unclear> taṅan kavəṅyan kita haneṅ paṅipyan, hana du-<space type="binding-hole"/> hkanta təka, ya tan duhkanta, duhka nikaṅ desa kahananta kaliṅanika,
+<lb n="10r2"/>ri divasanyan maṅkana, taturu ta riṅ ra <supplied reason="lost">ta</supplied>hina, aṅipi ta kita muvah <space type="binding-hole"/>, rahina ataya, teja niṅ aditya karika tumut pinaka suluhta, taha-
+<lb n="10r3"/>pi apan ārdda samun tan avas teja niṅ aditya kasaṅsepta deniṅ teja <space type="binding-hole"/> saṅ hyaṅ pramana, kadi kasaṅpteniṅ = <unclear cert="low">septa</unclear> teja niṅ pañjut deni tejaniṅ <supplied reason="lost">ṅ</supplied> aditya
+<lb n="10r4"/>, ri kala niṅ t<unclear>ə</unclear>ṅah ṅve, tuhun dilah nikaṅ pañjut ya katon maṅka-<space type="binding-hole"/> na kasaṅseptani teja saṅ hyaṅ <supplied reason="lost">ṅ</supplied>āditya, deniṅ teja saṅ hyaṅ pramana, ya tâṅi-
+<pb n="10v"/>
+<lb n="10v1"/>pi maturu ri rahina, kaliṅanya ana kopama ika saṅ manon, <space type="binding-hole"/> rahina juga sira sadakala, tar k<unclear>ə</unclear>neṅ turu, tar kalaṅkahan deniṅ rahina v<unclear>ə</unclear>ṅi,
+<lb n="10v2"/>tar k<unclear>ə</unclear>ne pati, lāvan teja niṅ aditya, vahyakta hika apan a-<space type="binding-hole"/> hiṅan, tan t<unclear>ə</unclear>ke jro niṅ umah gambhirā lāvan ī jro guha, tatan maṅ-
+<lb n="10v3"/>kana teja saṅ hyaṅ pramana, l<unclear>ə</unclear>pasnira riṅ bava samaṅke, trus ikaṅ svar-<space type="binding-hole"/> gga patala, sapta sva<unclear>r</unclear>gga, sapta patala tovi, ava ataya kasuluhan de-
+<lb n="10v4"/>niṅ teja saṅ hyaṅ pramana, kadi tatan pahiṅan ikaṅ lo<unclear>r</unclear> kidul ku-<space type="binding-hole"/> lvan vetan isor i ruhur, maṅkana tatan pahiṅan teja saṅ hyaṅ pramana,
+
+<pb n="11r"/>
+<lb n="11r1"/>nya vulaṅuna, sinaṅgahnya tekaṅ aditya mtu kulvan sumurupa <space type="binding-hole"/> vetan, saṅka ri vulaṅunya kaliṅaṇya, samaṅkana teka loka-lo-
+<lb n="11r2"/>kan vulaṅun ni jñāna visesa, deniṅ <supplied reason="lost">ṅ</supplied>ala sasukat lvah tasi-<space type="binding-hole"/> k tgal malo, apa kaharan alas asukat lvah tasik tgal malvér (?), nya
+<lb n="11r3"/>ṅaji kavya saṅkya prakaraṇa, kalpa purananya ya viniscaya caṇḍa gani-<space type="binding-hole"/> ta, mvaṅ brata tapa samaddi ghlar puja, nahan <supplied reason="lost">n</supplied>ikaṅ alas asukat kasuçupan<unclear>n</unclear>ya, ka-
+<lb n="11r4"/>vilət ta yeka pasuka pasa kapañjara, karakit tan vna masiṇḍal(?)<space type="binding-hole"/>, denikaṅ samaṅkana kabeh, ikaṅ samaṅkana kabeh yata sinaṅgahnya
+<pb n="11v"/>
+<lb n="11v1"/>jñāna viseça, tatan mulyavaknya huripnya tan viseça liṅnya, a-<space type="binding-hole"/> rah pijar kədə miseçakən madoh, apa ta kari mulya viseça ri<unclear cert="low">ṅ</unclear>
+
+<lb n="11v2"/>saṅ paṇḍita ṅuni, sḍaṅ ni  kratayuga, aji akṣara tapvan vtu, pa-<space type="binding-hole"/> pa tula<unclear>h</unclear> tavur tan ginavayakaṅni, glar pujā tan hinanakan tan vi-
+<lb n="11v3"/>kalpa riṅ hyaṅ devata, çunyataya paramarta tan viniseça-<space type="binding-hole"/> kan, brata kavikun tan inadikarakan, tan iṇucap makabalaṅ sva<unclear>r</unclear>-
+<lb n="11v4"/>gga kal<unclear>ə</unclear>pasan, kevalya mahadikar juga, virati masih sambhega <space type="binding-hole"/> numana riṅ rat, vruh ri katuṅgalaniṅ huripnira lavan <supplied reason="lost">n</supplied>iṅkaṅ rat
+
+<pb n="13r"/>
+<lb n="13r1"/>kabeh, iki bayu sabda h<unclear>i</unclear>dap ata visesa pinaka hurip nika ra-<space type="binding-hole"/> t tah hana vaneh, vyakcis vali pva mulya ikaṅ sinaṅgahnira jñana, bari-ba-
+<lb n="13r2"/>ri memān du vali pva me vuneh, yan kvā liṅanta irikaṅ bayu sa-<space type="binding-hole"/> bda hidap, hayva ta kita maṅkana, apa kari hidap ta ri saṅ paṇḍita, mi-
+<lb n="13r3"/>seçakna kapuṅguṅ niṅ rat kari sira, apa kapuṅguṅ nikaṅ loka, svargga <space type="binding-hole"/> kahyaṅ <supplied reason="lost">ṅ</supplied>an kadevatan, baṭara baṭari, kamoktin, mvaṅ kalpasan
+<lb n="13r4"/>yan viseṣakən i maṅkana rakva saṅ paṇḍita rahayva riṅ loka, an ta-<space type="binding-hole"/> n panaṅgah <supplied reason="lost">h</supplied>a kita vyakcis, vikuha yan bhasmaran liṅante kami, kavruh
+<pb n="13v"/> 
+<lb n="13v1"/>ni rat pvekaṅ vinarahakan mami ri kita, ndya kavruh nikaṅ loka liṅ <space type="binding-hole"/> mami, yekiṅ bayu sabda h<unclear>i</unclear>dap, sinaṅga tatah vyakcis, apa upama na i-
+<lb n="13v2"/>rika, kadyaṅga niṅ ṅvaṅ malapā saṅka riṅ kaṅelan, tka tayeṅ vanva, sinu-<space type="binding-hole"/> suṅ tayeṅ skul tvak ivak-ivak matis, pinaṅanya taya, tlas varəg
+<lb n="13v3"/>atis trapti manahnya, vkas an panaṅgah taya vyakcis, va-<space type="binding-hole"/> li pva mesa kaṅ mamaṅan, aṅhiṅ varəg jugha palanya tan pado-
+<lb n="13v4"/>n don guna, nahan liṅnyan huvus varəg, ikaṅ ṅvaṅ maṅkana <space type="binding-hole"/>, kadi taya vnaṅ<supplied reason="lost">ṅ</supplied>a tumiṅgalakan paṅan inum, hlam iṅ ahlam <unclear>m</unclear>uvah amaṅana
+
+<pb n="14r"/>
+<lb n="14r1"/>tah, paramarta nika ṅ vaṅ maṅkana, bhaṅgā an hale, pinaṅan<unclear>n</unclear>ya, maṅkana <space type="binding-hole"/> ta kitat saṅgah ikaṅ bayu sabda h<unclear>i</unclear>dap vya kcis, inakanika karyyakna ya ktaya,
+<lb n="14r2"/>, apan bari-bari lita, pakahuripanta tekaṅ pustaka baralih, mvaṅ ghlar <space type="binding-hole"/> puja liṅga liṅir pṭa pratima bimba, apan yajñāna viseça liṅta, tapin ya-
+<lb n="14r3"/>ya pvekaṅ bayu sabda hidap an hana ri kita, tamolah laṅgaṅ <space type="binding-hole"/> ya pinaka huripta, paramartanta ndah humale sariranta sumeṣṭava huripta ju-
+<lb n="14r4"/>ga kita, at tan aṅguhnya kcis ikeṅ bayu sabda hidap, i-<space type="binding-hole"/> keṅ panaṅgah ta vya kcis ta karin sabda ika, ndi ta katampalakəna ya,
+<pb n="14v"/>
+<lb n="14v1"/>ndi tāvava ikeṅ bayu sabda hidap veh, ikoṅ hana pinakesi-<space type="binding-hole"/> niṅ sariranta, mvaṅ duvag pinaka huripta, at dase tika, apan aṅhiṅ ikaṅ
+<lb n="14v2"/>bayu sabda hidap juga tuhu hana pinaka hurip nikaṅ sarat <space type="binding-hole"/>, ṅuni lāvan maṅke, dlaha tovi veh ikaṅ bayu sabda h<unclear>i</unclear>dap tah huripan ika
+<lb n="14v3"/>, tan hana vaneh vnaṅ <supplied reason="lost">ṅ</supplied>āhuripan ikaṅ sarvva janma, lerna sakeṅ bayu sa-<space type="binding-hole"/> bda h<unclear>i</unclear>dap juga pramana pinaka jiva ni sarat, apan ya tuhu-tuhu ha-
+<lb n="14v4"/>na, ta alaha deniṅ lavas, tan avuka tan branana deniṅ <space type="binding-hole"/> tis, tan pəgat deniṅ kadga, tan gəsəṅa deniṅ apuy, apan
+
+<pb n="15r"/>
+<lb n="15r1"/>ya mula niṅ pati niṅ hurip nikaṅ sarat, ya mula vvit niṅ mulya vise-<space type="binding-hole"/> ṣa, vvit niṅ bisa ṣakti lāvan kinatakutan, apa byaktanyan ya vvit niṅ mu-
+<lb n="15r2"/>lya, nyaṅ drabya mas manik hulun sapi vnaṅ-vnaṅ, tuhu ika kabeh mu-<space type="binding-hole"/> lya, ndan <supplied reason="lost">a</supplied> ri kalanyan hana ikaṅ bayu sabda hidap i sariranya ya hi-
+<lb n="15r3"/>laṅa ikaṅ bayu sabda hidap sakeṅ sariranya mne, apa tah mu-<space type="binding-hole"/> lya kari kaṅ drabya ta kabeh, tan mulya pvaṅkulun asi ṅvaṅ maṅa-
+<lb n="15r4"/>lap, nihan ta prasidda mulya sakiṅ mas manik, anak-<space type="binding-hole"/> ta mvaṅ rabinta, tan aṅgā vikitan sidəkan gamələn rabinta de-
+<pb n="15v"/>
+<lb n="15v1"/>niṅ laki-laki len, ndan ri kalanyan hana ikaṅ bayu sabda hi-<space type="binding-hole"/> dəp i sariranya ya, hilaṅa ikaṅ bayu sabda h<unclear>i</unclear>dap saṅke sarira-
+<lb n="15v2"/>nya mne, ndatan mulyapih asiṅ vaṅ maṅgamal, thinimpala-<space type="binding-hole"/> kan ri smah pinarəbutan deniṅ gagak mvaṅ asuvək, nihan taṅ vakta
+<lb n="15v3"/>, vkas niṅ mulya visesa tman, yeki iniṅu inutpadita, pi-<space type="binding-hole"/> nametakan pinaṅan ininum sinaṇḍaṅ mvaṅ rabyanya sakvehi
+<lb n="15v4"/>sajñana, hiṅanikinahatakan kaliṅanya, ndan ri kalanya-<space type="binding-hole"/> n hana ikaṅ bayu sabda h<unclear>i</unclear>dap i sariranta ya, hilaṅa ikaṅ bayu
+
+<pb n="24r"/>
+<lb n="24r1"/>saṅan, palpasaniṅ simbhar, pradvani ṅaran<unclear>n</unclear>ya, pasamoh niṅ vvaṅ <supplied reason="lost">ṅ</supplied>ā-<space type="binding-hole"/> kveh yan apikan-pikan, ravah ṅaran<unclear>n</unclear>ya, samvaha pahyaniṅ bala mantri
+<lb n="24r2"/>lpita ṅaran<unclear>n</unclear>ya, kiduṅ kana carita, nahan kveh ṅaran ikaṅ sabda, i-<space type="binding-hole"/> ka taṅ sabda samaṅkana kvehnya, sabda juga simpən ika kabeh, tan ṅeya-
+<lb n="24r3"/>n vuvusan, katuduhaniṅ sabda ṅaran ika. Kavivekaniṅ sabda <space type="binding-hole"/> ṅaran<unclear>n</unclear>ya, kadyaṅga niṅ bayu an hibə<unclear>k</unclear> ikaṅ bhuvaṇa, lāvan sarvva janma,
+<lb n="24r4"/>maṅkana tekiṅ sabda an hibəki ikaṅ bhuvana lāvan sarvva janma, a-<space type="binding-hole"/> pa byaktanya, tabəh ikaṅ lmah kaṅ yuvvay, ṅuniveh ikaṅ kaṇḍaṅ,
+<pb n="24v"/>
+<lb n="24v1"/>gəṇḍi<unclear cert="low">ṅ</unclear>
+, pada moni maraya, nihan taṅ <supplied reason="lost">ṅ</supplied>abyantara vaṅ-avaṅ, habəta riṅ <space type="binding-hole"/> hadasa viji, batbat, tka ndi ndi nah moni jugeka, nahan byakta
+<lb n="24v2"/>niṅ kaṅ sabda an hibəki ikaṅ bhuvaṇa lāvan sarvva janma, kavivekani <space type="binding-hole"/> sabda ṅaran ika. Kātəmvani sabda ṅaran<unclear>n</unclear>ya, tuṅgal apa siṅ karə̄ṅə
+<lb n="24v3"/>juga, asiṅ-asiṅ ṣakarəṅə kapva sabda ṅaran ika, aum, mo-<space type="binding-hole"/> <supplied reason="lost">ki</supplied> sikniṅ roṇḍonan, kərətəb niṅ suku niṅ lumaku, kagulantəm <supplied reason="lost">n</supplied>iṅ
+<lb n="24v4"/>sabda niṅ kaṇḍaṅ gaṇḍiṅ tinabəh, sabda nika kabeh juga karəṅə <space type="binding-hole"/>, apa tan karəṅə kaṇḍaṅ gaṇḍiṅ lmah kayu satva ṅuniveh vvaṅ, sabda nika ka-
+
+<pb n="31r"/>
+<lb n="31r1"/>nya riṅ sarira ataya lima, ndya lvirnya nihan, srotendriya ṅara-<space type="binding-hole"/> n ikaṅ ha<unclear cert="low">i</unclear>dap yan mijil riṅ taliṅa pinaka paṅrəṅi<unclear cert="low">ə</unclear> sabda, gro<unclear cert="low">a</unclear>nendri-
+<lb n="31r2"/>ya ṅaran yan vijil riṅ iruṅ pinaka paṅambuṅ ganda, jihvendriya ṅara-<space type="binding-hole"/> n yan vijil ri lidah pinaka paṅrasa riṅ sadasa tvakīndriya ṅaranyan viji-
+<lb n="31r3"/>l ri kulit pinaka paṅasparsa paṅidap <unclear>p</unclear>ānas-tis, cakṣuh. <space type="binding-hole"/> indriya ṅaranyan vijil riṅ mata, pinaka panon ri rupa varṇna, n-
+<lb n="31r4"/>āhan lvir ni kavijilan ikaṅ hidap lima rikeṅ sarira, mataṅnya-<space type="binding-hole"/> n sinaṅgah pañcendriya de saṅ seva sogata, ndan ikāṅ hidap an pa-
+<pb n="31v"/>
+<lb n="31v1"/>kadvaraṅlimar aṅlimarikeṅ sarira, atətəg ya ri visaya niṅ ro-<space type="binding-hole"/> vaṅnya, byaktanya tan v<unclear>ə</unclear>naṅ taṅ hidap <unclear>p</unclear>inaka panon yan vijil ri tali-
+<lb n="31v2"/>ṅa, apān haṅrəṅə sabda paknanika, tan v<unclear>ə</unclear>naṅ taṅ hidap pinaka pa-<space type="binding-hole"/> ṅambhuṅ ganda, yan vijil riṅ lidah apan pinaka paṅraseṅ sadasa paknanika
+<lb n="31v3"/>, tan vnaṅ taṅ hidap pinaka paṅrəṅə yan vijil riṅ kulit, <space type="binding-hole"/> apan parsa paṅhidap panas-tis paknanika, tan-ṅeh yan vuvusan
+<lb n="31v4"/>, apa kaliṅanya atətəg juga hidap ri visayanya, an pa-<space type="binding-hole"/> kadvaraṅ lima viji rikeṅ sarira, apa padanya, nyaṅ bayu m<unclear>ə</unclear>tu mahavan
+
+<pb n="32r"/>
+<lb n="32r1"/>riṅ tutuk, tan v<unclear>ə</unclear>naṅ taṅ bayu panulup saṅka kala, yan m<unclear>ə</unclear>tu ma-<space type="binding-hole"/> havan riṅ iruṅ, apan paṅambhuṅ gaṇḍa pak<unclear>ə</unclear>na nika, yan m<unclear>ə</unclear>tu mahavan
+<lb n="32r2"/>riṅ tutuk ikaṅ bayu an pakaṅaran hab-hab v<unclear>ə</unclear>naṅ ya panulu-<space type="binding-hole"/> p saṅka kala, apan maṅkana pak<unclear>ə</unclear>nanika, ndan ikaṅ bayu m<unclear>ə</unclear>tu mahava-
+<lb n="32r3"/>n riṅ tutuk mvaṅ riṅ ruṅta, tuṅgal ika kunaṅ apan <supplied reason="lost">a</supplied>atə-<space type="binding-hole"/> təg ya ri visayanya, apan dvaranya ya malen-lenakənya, maṅkā-
+<lb n="32r4"/>na tekaṅ hiḍap an paḍa tətəg ya ri visayanya, tan v<unclear>ə</unclear>naṅ <space type="binding-hole"/> makavisaya visayani rovanya, apan ya dvaranya ya malenlenakə-
+<pb n="32v"/>
+<lb n="32v1"/>nya, ikaṅ hidap makadvaraṅ limar ikeṅ sarira, tuṅgal nāhan mata-<space type="binding-hole"/> ṅyan sinaṅgu<unclear>h</unclear> pañcendriya de saṅ seva sogata, kunaṅ riṅ saṅ meṅət
+<lb n="32v2"/>tuṅgal ikaṅ <supplied reason="lost">ṅ</supplied>indriya ṅaran<unclear>n</unclear>ya, tuhun kavijilan<unclear>n</unclear>ya ri sarira <space type="binding-hole"/> ata ya limaṅ viji, kaliṅanya ikiṅ bayu sabda hidap ya vvit niṅ
+<lb n="32v3"/>aji lavan sastra, ghrānya kirṇnanya ciniṅəl, tuṅga-<space type="binding-hole"/> lnya simpinya ya tinatva de saṅ pravadika saṅ ṅ havadi. Naha-
+<lb n="32v4"/>n deyanta meṅət ryyata nikaṅ dasanama pariyaya <space type="binding-hole"/> paramarta ṅaran<unclear>n</unclear>ya, pasuk ni<unclear>ṅ</unclear>
+ bayu rikeṅ avak, kaparamarta
+
+<pb n="33r"/>
+<lb n="33r1"/>ṅaran<unclear>n</unclear>ya vijil ni bayu rikeṅ avak, jñānantarapamartha <unclear cert="low">aparamarta</unclear> ṅaran<unclear>n</unclear>ya <space type="binding-hole"/> antaraniṅ masuk lāvan m<unclear>ə</unclear>tu, aparamarta ṅaran<unclear>n</unclear>ya ikaṅ haneṅ a-
+<lb n="33r2"/>byantara, apa pinakavaknya sivah, apa pinaka varṇnanya para manu-<space type="binding-hole"/> h, apa pinaka liṅlaṅnya akasa, apa pinaka tunduka sipakənya ikaṅ
+<lb n="33r3"/>bayu tan umiriṅ, ikaṅ umirir aṅin ṅaran ika, ikaṅ rivu-<space type="binding-hole"/> t bayu bhuta ṅaran ika, ikaṅ seduṅ bayu papa ṅaran ika, hana ta laṅgəṅ
+<lb n="33r4"/>tan umirir, ika pinaka valakaṅ ni hantəlu, vluniṅ puṅlu, tyə-<space type="binding-hole"/> s ni pta<unclear cert="low">u</unclear>ṅ, yeka sinaṅgah aparamarta ṅaran<unclear>n</unclear>ya, akasa paramarta ku-
+<pb n="33v"/>
+<lb n="33v1"/>mva pva liṅ ni tatva, mati pveka saṅ paṇḍita, bayunira ikaṅ masuk m<unclear>ə</unclear>tu <space type="binding-hole"/> ri ruṅnira, yata misan m<unclear>ə</unclear>gil riṅ abyantara, yata sinaṅguh akasa paramar-
+<lb n="33v2"/>ta ṅaran<unclear>n</unclear>ya ya sinaṅgah lina ṅaran<unclear>n</unclear>ya, umapa lvirniṅ lina ṅaran<unclear>n</unclear>ya, tan pa-<space type="binding-hole"/> lvir, mapa rupanya tan parupa, apa lakṣaṇanya tan palaksana, apa
+<lb n="33v3"/>hidap, ih umapeki ta karih iṅət-iṅət rasa niṅ atu-<space type="binding-hole"/> ru tan paṅipi, iniṅət-iṅət rasa niṅ aturu tan paṅipi kat<unclear>ə</unclear>mu ra-
+<lb n="33v4"/>sa niṅ si lupa, pinih rasa niṅ si lupa kat<unclear>ə</unclear>mu ta rasa niṅ nora hini-<space type="binding-hole"/> dapnya, tan suka tan duhka, tan grahya tan grahaka, pi-
+
+<pb n="34r"/>
+<lb n="34r1"/>nəh raṣa nika kat<unclear>ə</unclear>mu taṅ rasa sak<unclear>ə</unclear>dap, sak<unclear>ə</unclear>dap ṅaran<unclear>n</unclear>ya ñəp, ika <space type="binding-hole"/> taṅ ñəp ṅaran<unclear>n</unclear>ya tatan kinavruhan lavasnya, saṅkanya paran<unclear>n</unclear>ya, papanya mvaṅ
+<lb n="34r2"/>l<unclear>ə</unclear>pasnya, pinəh rasa nika katəmu taṅ mvaksa, ika taṅ mokṣa ṅa-<space type="binding-hole"/> ran<unclear>n</unclear>ya tatan kinavruh<supplied reason="lost">h</supplied>an leknya tahun<unclear>n</unclear>ya tikasnya, pina<unclear cert="low">ə</unclear>h rasa ni-
+<lb n="34r3"/>ka katəmu taṅ lpəs, nāhan lvir ni vara dehan hilaṅ, n.. <space type="binding-hole"/> kevalyan samupagatah kat<unclear>ə</unclear>mu taṅ kevalya ṅaran<unclear>n</unclear>ya, sasvamitavah
+<lb n="34r4"/>ramah, tan hana mavak tan hana pinakâvak, tan hana nuti <space type="binding-hole"/> tan hana tinutan, ya sinaṅguh parama kevalya ṅaran<unclear>n</unclear>ya, samipāta
+<pb n="34v"/>
+<lb n="34v1"/>saṅ hyaṅ <supplied reason="lost">ṅ</supplied>atva v<unclear>ə</unclear>kasan lāvan saṅ hyaṅ <supplied reason="lost">ṅ</supplied>asivah. Animan ṅaran<unclear>n</unclear>ya <space type="binding-hole"/> alith, ahiman ṅaran<unclear>n</unclear>ya agəṅ, mahiman ṅaran<unclear>n</unclear>ya adoh, lagi-
+<lb n="34v2"/>man ṅaran<unclear>n</unclear>ya seghra, prapti ṅaran<unclear>n</unclear>ya t<unclear>ə</unclear>ka, prat<unclear cert="low">k</unclear>amya ṅaran<unclear>n</unclear>ya magava-<space type="binding-hole"/> y, isitva ṅaran<unclear>n</unclear>ya basa, vasitva ṅaran<unclear>n</unclear>ya maṅāku, nāhan artani a-
+<lb n="34v3"/>ṣṭāguna kavruhana saṅ sevaka darmma. Jñaṇa ṅaran<unclear>n</unclear>ya <space type="binding-hole"/> ambhək tuṅgaṅ ah<unclear>ə</unclear>niṅ <supplied reason="lost">ṅ</supplied>alilaṅ, vijñana ṅaran<unclear>n</unclear>ya, ambhak branta magə-
+<lb n="34v4"/>ləh, kavijñan yan ṅaran<unclear>n</unclear>ya ambhak t<unclear>ə</unclear>ka yan kroddah mamra-<space type="binding-hole"/> m mamati, nāhan a<unclear>r</unclear>taniṅ jñana vijñana kavijñanan ṅaran<unclear>n</unclear>ya kaya-
+
+<pb n="35r"/>
+<lb n="35r1"/>tnakna çakṣi tan ṅaran<unclear>n</unclear>ya citta matambhaṅan, vikṣitan ṅaran<unclear>n</unclear>ya <space type="binding-hole"/> citta valu-valuy, pratajña ṅaran<unclear>n</unclear>ya citta vuruṅ, eka graha ṅaran<unclear>n</unclear>ya, jña-
+<lb n="35r2"/>na…. ṅga, virodda ṅaran<unclear>n</unclear>ya jñana kahrət, vitharka ṅaran<unclear>n</unclear>ya manah <space type="binding-hole"/> tan katut, ra ananta ṅaran<unclear>n</unclear>ya manah tan harsa, asmita ṅaran<unclear>n</unclear>ya manah tan
+<lb n="35r3"/>lələh. Anendriya ṅaran<unclear>n</unclear>ya tan katon taṅ panon, mano-<space type="binding-hole"/> ṅijñana ṅaran<unclear>n</unclear>ya panonta riṅ madoh riṅ bavana ləmbhana, jñanendriya ṅa-
+<lb n="35r4"/>ran<unclear>n</unclear>ya panonta riṅ maparə<unclear>k</unclear> maṅke pratyaksa, nāhan arta <space type="binding-hole"/> niṅ paryayaniṅ na kavruhanantā çahçah ganal niṅ bayu ṅaran<unclear>n</unclear>ya, siṅ
+<pb n="35v"/>
+<lb n="35v1"/>kasyarsa, kavnaṅ pinaka sukaktan vinijilakan pinəgəriṅ rutak taṅ <space type="binding-hole"/> bayu, lit niṅ bayu ṅaran<unclear>n</unclear>ya, tan pāvak tan parupa tan pavarṇna, ta-
+<lb n="35v2"/>n kagamal tan kasikap, sukṣma niṅ bayu ṅaran<unclear>n</unclear>ya tan katon <space type="binding-hole"/>, adyatmika niṅ bayu ṅaran<unclear>n</unclear>ya trus ikaṅ <supplied reason="lost">ṅ</supplied>adoh aparək de-
+<lb n="35v3"/>niṅ bayu. Ganal niṅ sabda ṅaran<unclear>n</unclear>ya siṅ karəṅə̄, kavnaṅ vinijilaka-<space type="binding-hole"/> n kavnāṅ pinəghə, lit niṅ sabda ṅaran<unclear>n</unclear>ya tan pavak tan parupa tan pa-
+<lb n="35v4"/>varṇna, tan kagamal tan kasikap, sukṣma niṅ sabda ṅaran<unclear>n</unclear>ya ta-<space type="binding-hole"/> n katon, dyatmika niṅ sabda ṅaran<unclear>n</unclear>ya, trus ikaṅ agəṅ admit de-
+
+<pb n="36r"/>
+<lb n="36r1"/>niṅ sabda, tan hāna katunan çabda. Ganal niṅ hidap <unclear>,</unclear> ṅaran<unclear>n</unclear>ya pina-<space type="binding-hole"/> ka panon <unclear>,</unclear> pinaka paṅrəṅə̄, pinaka paṅambhuṅ pinaka paṅasparsa paṅrasa pina-
+<lb n="36r2"/>ka paṅidap, lit niṅ ṅaran<unclear>n</unclear>ya, tan pavak tan parupa ta-<space type="binding-hole"/> n pavaṇna tan kagamal tan kasikəp, sukṣma niṅ hidap ṅaran<unclear>n</unclear>ya,
+<lb n="36r3"/>tan kevəhan saparan<unclear>n</unclear>ya, trus iṅkeṅ gunuṅ denya, ndatan pata-<space type="binding-hole"/> pak, tan pavuri, təp cit luṅha t<unclear>ə</unclear>kā meṅgal, adyatmika niṅ
+<lb n="36r4"/>hidap ṅaran<unclear>n</unclear>ya, trus ikaṅ agəṅ ad<unclear>ə</unclear>mit deni hidap, <space type="binding-hole"/> sapta patala sapta buvana i sor <unclear>r</unclear>i ruhur kapva kasuluhan katə-
+<pb n="36v"/>
+<lb n="36v1"/>kan deniṅ hidap, nahan kavi vasta nikaṅ bayu sabda hidap <space type="binding-hole"/> keṅətakna saṅ sevaka darmma, simpənya mvaṅ ghrānanya. Tlas
+<lb n="36v2"/>ika bayu sabda hidap inucapta, yeki kinala karanta təluṅ <space type="binding-hole"/> viji, atambhəha ta kita kalakar muvah rvaṅ viji, apa pinaka tambhah
+<lb n="36v3"/>nya, bhuvana lāvan sarira, apa ta sinaṅgah buvana ṅaran<unclear>n</unclear>ya, prati-<space type="binding-hole"/> vi lāvan akasa, apa sinaṅgah sarira ṅaran<unclear>n</unclear>ya, sahana riṅ aka-
+<lb n="36v4"/>sa lāvan sahana riṅ pratīvi, ndya lvir niṅ kaṅ sarira hana riṅ aka-<space type="binding-hole"/> sa, nyaṅ viṇtaṅ vulan aditya vaṅkavaṅ kuvuṅ-kuvuṅ saṅhub kukus me-
+
+<pb n="37r"/>
+<lb n="37r1"/>ga hudan kilat glap gərəh gəntar patər handaru <space type="binding-hole"/> paranuh, nāhan lvir nikaṅ sarira, hana riṅ akasa, ndya lvir kaṅ? sa-
+<lb n="37r2"/>nikaṅ sarira hana riṅ prativi, nyaṅh vay tasik apuy <space type="binding-hole"/> trana tarulata gulma, pasupakṣa sarri pastavara jaṅgamadi, seṣi
+<lb n="37r3"/>niṅ lvah lāvan tasik, sarumaṅkaṅ sākumilip ri prati-<space type="binding-hole"/> vi, makadi kaṅ janma <choice><unclear>vuṅ</unclear><unclear cert="low">vvaṅ</unclear></choice>, sarira hana ra prativi, ṅaran ika kabeh
+<lb n="37r4"/>, yata kali ṅaran i paribasa ṣajñāna kaliṅanya, apan <space type="binding-hole"/> tuṅgal huripta lavan hurip ni<supplied reason="lost">ṅ</supplied> kaṅ rat, bayu sabda hidap ka-
+<pb n="37v"/> 
+<lb n="37v1"/>tuṅgalanya kaliṅanya, ya siniṇḍi nikaṅ paribasa sajñā, sajñāna <space type="binding-hole"/> sinindinya kaliṅanya, apa byaktanyan ajñāna sinindinya, tlu vi-
+<lb n="37v2"/>ṅaran i b<unclear>h</unclear>uvana lāvan sarira, tlu vi ṅarani ajñāna, ndya rahinanya <space type="binding-hole"/>, b<unclear>h</unclear>uvaṇa, sarira, ajñāna, apa ta sine<supplied reason="lost">ṅ</supplied> ṇika, nihan ava-
+<lb n="37v3"/>kta, yan hi<supplied reason="lost">ṅ</supplied>laṅ<supplied reason="lost">ṅ</supplied>a ikaṅ bayu sabda hidap saka ṅke, <space type="binding-hole"/> byakta mavuk syuh prava tan pahaməṅan sariranta, maṅkana tekaṅ
+<lb n="37v4"/>bhuvana lāvan sarvva janma, ya tan hana ikaṅ bayu sabda <space type="binding-hole"/> hidap iriya byakta ta yan hantihanta mati tan pasesa ikaṅ
+
+<pb n="38r"/>
+<lb n="38r1"/>sarvva janma, sirṇnā paravasa çyu runtuh rubuh ikaṅ prativi lāvan <space type="binding-hole"/> akāsa, kunaṅ pva ri hana nikaṅ bayu sabda h<unclear>i</unclear>dap bari kaṅ rat kabeh
+<lb n="38r2"/>nāhan mataṅyan pve saka paripurṇna pagəh ikaṅ rat kabeh <space type="binding-hole"/> maṅkana tekaṅ paribasa kavikun, maṅiku ktah kaliṅan ika, a-
+<lb n="38r3"/>pamaṅ iku ṅaran<unclear>n</unclear>ya, mamet, aparan pinet saṅ hyaṅ ajñāna, <space type="binding-hole"/> ndin pinet ndin iniku, irā kaṅ aṅga rva, aṅga rva ṅaran<unclear>n</unclear>ya bhu-
+<lb n="38r4"/>vana, lāvan sarira, ya nirukti paribasa bujaṅga, buh aṅga <space type="binding-hole"/> kaliṅan ika, bu ikaṅ prativi, aṅga ikiṅ sarira, buh ikiṅ sarira
+<pb n="38v"/>
+<lb n="38v1"/>, aṅgā ikiṅ prativi, dadi ya maṅkana ri saṅ vruh, apan pada sarira <space type="binding-hole"/>, pada prativi, kaliṅanya, prativi biparitah ṅaran ikaṅ lmah, prativi
+<lb n="38v2"/>cañcāla ṅaran ikaṅ sarira, ṅkā tan pinet, ṅkā tan iniku, i-<space type="binding-hole"/> ka saṅ hyaṅ <supplied reason="lost">ṅ</supplied> ajñāna, de saṅ apa de saṅ viku, syapa ta saṅ viku ṅaranira
+<lb n="38v3"/>syapa ta sy aku ṅaranira, saṅ maṅaku tar kaku, ndi ṅke ri buvaṇa <space type="binding-hole"/> lāvan sarira, sira tuṅgal, sira darmma, sira pramana ṅaranira, ih
+<lb n="38v4"/>kapuhun ranak devata saṅ hulun, apa mataṅyan ka-<space type="binding-hole"/> puhan ranak deva saṅ hulun, umaṅən-aṅən rasa nikaṅ ba-
+
+<pb n="39r"/>
+<lb n="39r1"/>yu sabda hidap ranak devata saṅ hulun, an ya kumu saṅ <space type="binding-hole"/> buvana lāvan ṣarvva janma, halim punyan ya juga pinaka hurip nikaṅ
+<lb n="39r2"/>rat kabeh, yata mataṅyan tan hana viseṣa vaneh bheda <space type="binding-hole"/> sakeṅ bāyu sabda hidap ranak devata saṅ hulun, umijil pva
+<lb n="39r3"/>tutuk devata saṅ hulun ika saṅ viku, saṅ maṅaku tar kaku <space type="binding-hole"/>, ṅke ri bhuvana lāvan sarira <supplied reason="lost">,</supplied> nira tuṅgal sira darmma, sira pramana
+<lb n="39r4"/>liṅ devata saṅ hulun, ya kapva drabyatmakanira kapva i-<space type="binding-hole"/> kiṅ bayu sabda hidap mvaṅ ikeṅ sarira, yan kvaliṅanta ri kami
+<pb n="39v"/>
+<lb n="39v1"/>aum drabyatmaka pih, kasihana ta ranak devata saṅ hu-<space type="binding-hole"/> lun təṅənakva irika saṅ viku, saṅ maṅaku tar kaku ṅkeṅ riṅ buvana lā-
+<lb n="39v2"/>van sarira, yan kva liṅanta ri kami, aum syapa kari ṅaranta ṅu-<space type="binding-hole"/> ni ṇda rey, ikaṅ pinaṅgugutakan ta vayah deniṅ bapa ibhuh nambhaṅ hu-
+<lb n="39v3"/>lun syanu ranak devata saṅ hulun deniṅ bapa ibu, <space type="binding-hole"/> aum yukti ika pavarahta ri kami, vnaṅ ta kita, kami tumakvana-
+<lb n="39v4"/>n avak mami sumahur ana vak mami, kita hana maṅrəṅyə̄ humidap <space type="binding-hole"/> sarasa niṅ vuvus kami, maṅkana krama mami ri saṅ matuha ṅuni, ndah imanya pa-
+
+<pb n="40r"/>
+<lb n="40r1"/>ta ṅaran ikaṅ mavarah syanu, yu anu kumva ta kami, nyaṅ hulu-<space type="binding-hole"/> n kumva ta kita, ivəhnya yatika takvanakna mami ri kita, an
+<lb n="40r2"/>sahur kita si nyaṅ hulun vru<unclear>h</unclear> kita irikaṅ inaran si nu, au-<space type="binding-hole"/> m yeki avak ni hulun inaranan syanu, kumva ta kita k hade a-
+<lb n="40r3"/>vakni syanu ṅaran ika, yan abayu sabda hidap ika ta inara-<space type="binding-hole"/> nan syanu liṅta, bayu sabda hidap niṅ syanu ṅaran ika, yan saṅ yoga
+<lb n="40r4"/>pasamoha sapaniskaranya vakta kabeh, ikaṅ inaranan sya-<space type="binding-hole"/> nu liṅta, hade atah, saṅ yoga pasamoha sapaniskaranya vak ni sya-
+<pb n="40v"/>
+<lb n="40v1"/>nu ṅaran ika kabeh, apa byaktanyan drabyaniṅ syanu ika <space type="binding-hole"/>, inakunya viya, sariraṅku, bayuku, sabdaṅku, hidapku, tuturku
+<lb n="40v2"/>pasamohanyavak<unclear>k</unclear>u kabeh, maṅkāna liṅnyan saṅ aku…<space type="binding-hole"/> ika saṅ maṅaku tar kaku tapva katuduh juga rasika, valiṅta ta-
+<lb n="40v3"/>n mevəh ikaṅ inaranan syanu, mvaṅ ikaṅ inakunta bapā <space type="binding-hole"/> ibu, apa byaktanyan mevəh, p<unclear>ə</unclear>jah vi bapa ibu nika syanu,
+<lb n="40v4"/>tan vava havu ni bapa ibunya ri di hyaṅ, tan konaknā <space type="binding-hole"/> ya gavayan puhun i daṅ acaryya mvaṅ daṅ opadya karu-
+
+<pb n="41r"/>
+<lb n="41r1"/>hun ri bagavanta, yan vruha irikaṅ inaranan syanu, mva-<space type="binding-hole"/> ṅ ikaṅ inakdunya bapa ibu, kunaṅ saṅka ri puṅguṅnya, nāhan ma-
+<lb n="41r2"/>taṅyan kona kinanya, maṅkana ta sira mpu, tar aṅgā kta sira ma-<space type="binding-hole"/> gavaya, ya <unclear>jar</unclear> vruha irikaṅ inakuniṅ syanu bapā ibu, kunaṅ sa-
+<lb n="41r3"/>ṅka ri puṅgu<unclear cert="low">ṅ</unclear>
+ nira, nāhan mataṅya <unclear>ta</unclear>raṅgā gumavaya bapa ibu ni-<space type="binding-hole"/> ka syanu, inavakakənira taya ron iṅ viduri, ginavay puspu<unclear cert="low">a</unclear>-
+<lb n="41r4"/>liṅga, lmah binimbha, lāvan gaṅça liniṅir, yata hi-<space type="binding-hole"/> nidap nira bapa ibu nika syanu, hidapən nika saṅ makon,
+<pb n="41v"/>
+<lb n="41v1"/>sinəmbahnya tekaṅ puspaliṅga, lmah binimba gaṅça liniṅir, kali-<space type="binding-hole"/> ṅanya pada puṅga<unclear cert="low">u</unclear>ṅ saṅ makon lāvan saṅ kinon, apa padanya kadya-
+<lb n="41v2"/>ṅganiṅ vutā manuntun, vuta tinuntun kasasar pvaya riṅ alas ā-<space type="binding-hole"/> gəṅ, kapana ta yan pamaṅguhakən mava, maṅkāna ta saṅ kon mvaṅ saṅ ki-
+<lb n="41v3"/>non magavaya puhun, kapana ta siran tətəsa irikaṅ ina-<space type="binding-hole"/> ranan syanu, apan pada vulaṅunira, apa kari hidapta ri bapa i-
+<lb n="41v4"/>bu nika syanu, tan vkas niṅ sinaṅguh viseça ika, ri huvusnya-<space type="binding-hole"/> n mati, luput mari masarira bapa ibu nika syanu rakvan, kavnaṅ <supplied reason="lost">ṅ</supplied>aveh
+
+<pb n="42r"/>
+<lb n="42r1"/>han makavak kaṅ len ahurip <unclear>p</unclear>vaya tuturuṅ masarira sapoca-<space type="binding-hole"/> pan lāvan anak putu, konanta ya makasarira len, makavaka
+<lb n="42r2"/>ikaṅ liṅga liṅir puspaliṅga, tan kavnaṅ a taya tan aṅgā makava-<space type="binding-hole"/> ka ika, ri huvusnyan viseṣa bapa ibu nika syanu kapva, mvaṅ visesaniṅ
+<lb n="42r3"/>bayu sabda hidapnya, ri vkasan vineh pvaya madadya-dadya <space type="binding-hole"/> na kinon makavaka ikaṅ liṅga liṅgi pratimmā puṣpaliṅga ron iṅ
+<lb n="42r4"/>vaduri, haləpa sakeṅ vurukada mvaṅ ri vukvan aṅgan saṅ viku <space type="binding-hole"/> pamvatan gavay, matanyan veh i bapa ibu ri ka syanu madadya
+<pb n="42v"/> 
+<lb n="42v1"/>dadyana, vineh maka tan avaknya, rasa ni vuvus <unclear>s</unclear>aṅ pandita, bapa ibu <space type="binding-hole"/> nika syanu t<unclear>ə</unclear>ka v<unclear>ə</unclear>kasaniṅ sinaṅgah rahasya ṣinaṅgah darmmotama viseça, a-
+<lb n="42v2"/>pan vnaṅ sarvva kriya rikeṅ loka, magavay tan ginavay, yata <space type="binding-hole"/> mataṅyan nasastratah guruthah svatah ika syanu ṅaran<unclear>n</unclear>ya, nasastratah
+<lb n="42v3"/>tan kneṅ najyan, tan kan<unclear cert="low">t</unclear><unclear>ə</unclear>mu deniṅ sāṣtra, nagurutah luput ti-<space type="binding-hole"/> nakvanakan tan k<unclear>ə</unclear>ne pinitəṅdənakan deniṅ guru, saratasvatah juga
+<lb n="42v4"/>hana tan hinanakan ṅaran<unclear>n</unclear>ya, nabayu yyan aputra nava-<space type="binding-hole"/> n … ṅəh (?), sira ta sinaṅguh darma tuṅgal makavak ika<unclear cert="low">ṅ</unclear>
+ bhuvaṇa lā-
+
+<pb n="43r"/>
+<lb n="43r1"/>van sarvva janma, naputrah tar panak tar paputu, nabaryya tar <space type="binding-hole"/> parabi, namata napitam svatah, sira tapvatah tar pabapa tar pebu
+<lb n="43r2"/>, tar pasaṅkan tar paparan, avis mrati draṣṭa, sira ta mano-<space type="binding-hole"/> n ta<unclear>r</unclear> katon, vruh tar kinavruhan, pramana tar kapramana-
+<lb n="43r3"/>n, manuduh tar katuduh, masarira tan sinariran, ma-<space type="binding-hole"/> bayu tan binayvan, masabda tan sinabdan, maṅhidap ta-
+<lb n="43r4"/>n hinidəpan, parəṅga ta juga m<unclear>ə</unclear>tu lāvan sariranya, bayu <space type="binding-hole"/> sabda hidapnya, an sakeṅ garbavasa ṅuni, nda tapvan paṅara-
+<pb n="43v"/>
+<lb n="43v1"/>nyan sakeṅ dalam vtaṅ, savtunya ri heṅ aya inaranan deniṅ <space type="binding-hole"/> bapa ibu syanu, yata mataṅyan saṅ hyaṅ mevəh ṅaran ika syanu va-
+<lb n="43v2"/>neh, apan hanan sāriranya sinaṅga<unclear>h</unclear>nya syanu, hanan bayu sa-<space type="binding-hole"/> bda hidapnya sinaṅgahnya syanu, hanan saṅ yoga pasamohanyavaknya
+<lb n="43v3"/>kabeh sinaṅgahnya syanu, kaliṅanya ptaṅ pəpət andakara <space type="binding-hole"/> juga ṅvaṅ sabhuvaṇa, tan vruh i sinaṅgahnya bapa ibu lāvan a-
+<lb n="43v4"/>nak, syapa ta(?) sira vihikan riṅ bapa ibu nikaṅ sabuva-<space type="binding-hole"/> na, lāvan anak nikaṅ loka, saṅ pandita juga tan hana vaneh
+
+<pb n="44r"/>
+<lb n="44r1"/>. Ati tan puṅguṅ nikaṅ loka irikaṅ inakunya bapa i-<space type="binding-hole"/> bu lāvan anak, tkap devata saṅ hulun, kunaṅ gati rana-
+<lb n="44r2"/>k devata saṅ hulun teki tətəsakna irikaṅ inaranan <space type="binding-hole"/> syanu yan kvaliṅanta ri kami, aum, hayva ta kita tan
+<lb n="44r3"/>meṅət ri beda ni katon, panon dorani panva-<space type="binding-hole"/> n, ṅuniveh saṅ manon, nihan kambhaṅ niṅ vuṅavari pinto-
+<lb n="44r4"/>nakna mami ri kita, pamratyapətyananta irika ina-<space type="binding-hole"/> ranan syanu. Katon kambaṅ nikaṅ vuṅavari denta, nambhaṅ hu-
+<pb n="44v"/>
+<lb n="44v1"/>lun, apa varṇnanya tinonta, abaṅ pvaṅkulun, eṅət ri <space type="binding-hole"/> tinonya ṅaran ika, panontonta kambaṅ nikaṅ vuṅavari vruha kita
+<lb n="44v2"/>, taham, yeku hidapta mijil mahavan ri matanta kana-<space type="binding-hole"/> n keri, eṅət ri panon<unclear>n</unclear>ya ṅarān ika, dvara havaniṅ panonton ta-
+<lb n="44v3"/>n kambaṅ vuṅavari vruh kita, taham, yeku matanta <space type="binding-hole"/> gale kali viji, eṅət ri dvara ni panon<unclear>n</unclear>ya ṅaran ika, saṅ tu-
+<lb n="44v4"/>mon ikaṅ vuṅavari, syapa taya, ranak devata saṅ hulun <space type="binding-hole"/>, ndagh təguh hi teka denta, yeka inaranan syanu deniṅ bapa
+
+<pb n="45r"/>
+<lb n="45r1"/>ibunta, ikaṅ tumon ikaṅ tumon kambaṅ ni vuṅavari, ye-<space type="binding-hole"/> ka manon tan katon an hana ṅko sariranya, kaliṅanya,
+<lb n="45r2"/>tan hanon ikiṅ sarira, tan panon ikeṅ mata <unclear>ka</unclear>lih viji <space type="binding-hole"/>, apa byaktanya tan panon, niṅana kita ya ta turu riṅ kulə-
+<lb n="45r3"/>m mavasnya rikaṅ kala, pijər biparita nidra ta kita, di-<space type="binding-hole"/> nodoh pva kita deniṅ maliṅ, asuluh apañjut tekaṅ
+<lb n="45r4"/>mal inalap drabyantā, matanta hana tah mulat du-<space type="binding-hole"/> mla<unclear cert="low">i</unclear>ṅ, ndatan panon vinayaṅ-vayaṅanta….? tutut tata-
+<pb n="45v"/>
+<lb n="45v1"/>n paṅrəṅən dinulaṅ<supplied reason="lost">ṅ</supplied>an vuyah, nahan byakta nikaṅ sarira lāva-<space type="binding-hole"/> n mata, an tan ya manon ika syanu pih, ikaṅ makakuruṅan
+<lb n="45v2"/>ikaṅ sarira, tan paturu ya tan kneṅ harip mata, icc<unclear>h</unclear>ā li-<space type="binding-hole"/> lā juga ya maməṅ-aməṅ <unclear>ṅ</unclear>
+ke riṅ svapna lakṣana, kadi panon ṅke pano-
+<lb n="45v3"/>nyaṅkā, iki sarira samaṅke, kavkas riṅ kalasa, ika syanu <space type="binding-hole"/> pih, manon ata ya ri svapna lakṣana, an vaṅçil sakeṅ sarira,
+<lb n="45v4"/>maluy pveka syanu mantuk ri sariranya, maṅlilir taya ma-<space type="binding-hole"/> taya mataṅhi ṅaran<unclear>n</unclear>ya denikaṅ loka, tinvan<unclear>n</unclear>ya taviṅny umahnya
+
+<pb n="46r"/>
+<lb n="46r1"/>babak, maṅraṅṅaṅ denikaṅ maliṅ, mukanya hibəkan harəṅ tu-<space type="binding-hole"/> tuknya mesi vuyah drabyanya kabeh hilaṅ, tan pasesa kato-
+<lb n="46r2"/>n denya, avuta yak rak aminta tuluṅ, nāhan paṅanuma-<space type="binding-hole"/> nan an tan paṅrəṅə ikaṅ sarira samaṅke, byakta nika syanu juga a-
+<lb n="46r3"/>n ya manvan riṅ sakala niskala, an ton kambhaṅ nikaṅ vu-<space type="binding-hole"/> ṅavari, an paka panon hidapnya, makadvara matanya kalih
+<lb n="46r4"/>, an pakasadana bayunya, makapamastu ṣabdanya, an pa-<space type="binding-hole"/> ka paṅāstanan sariranya, an paka dara ikaṅ buvana, nāhan deya
+<pb n="46v"/>
+<lb n="46v1"/>nta umupasti ikaṅ inaraṇana syanu. Tlas ika, apa ta <space type="binding-hole"/> avaka syanu, hana karika sirā tan hanā kunaṅ, yan kvaliṅanta
+<lb n="46v2"/>, tan sihana tan si tan hana, tan antara niṅ hana lāvan tan ha-<space type="binding-hole"/> na, jati juti kunaṅ, tan jati tan juti, tan antara niṅ jati lāvan juti
+<lb n="46v3"/>, tuṅgaṅ tan tuṅgaṅ kunaṅ, tan si tuṅgaṅ tan si tan taṅgaṅ, tan antaraniṅ <space type="binding-hole"/> tuṅgaṅ lāvan tan tuṅga<unclear>ṅ</unclear>
+, kaliṅanya tuṅgaṅ ri kavakan<unclear>n</unclear>ya, tan tu<unclear>ṅ</unclear>
+gaṅ ri kava-
+<lb n="46v4"/>kanya, antara rikanya, syanu ri kakavakanya, yadyastun pana-<space type="binding-hole"/> ṅgu<supplied reason="lost">ṅh</supplied> hakə<unclear>n</unclear> tayā lāvan hade, hade ata pvaṅkulun, hade rika
+
+<pb n="47r"/> 	
+<note>van blad 47 is slechts een fragmentje overgebleven ± ¼ v/h blad en vel het voorste gedeelte</note>
+<lb n="47r1"/>vananya, ya rika v…k.. nya, syanu?
+<lb n="47r2"/>na sabda, jāti sabda, juti sabda
+<lb n="47r3"/>bda juga ika, apan sira madrabya
+<lb n="47r4"/>n kapaṅguha kapaṅguha kaharəpta, av…
+<pb n="47v"/>
+<lb n="47v1"/>ṅaniṅ makakapaṅguha ṅ sakarəṅə̄, a…
+<lb n="47v2"/>niṅ karəṅə̄, karasa kasyarṣa ika, lā…
+<lb n="47v3"/>kapaṅguh tavat drabya, yava….
+<lb n="47v4"/>yavat katmu tavat .. dr…
+
+<pb n="48r"/>
+<lb n="48r1"/>, saṅ manəpəti atah ta ka … n, yavat katpətan, <space type="binding-hole"/> tavat drabya yavat drabya, tavat papāha de ika, uma-
+<lb n="48r2"/>pa pvā kavastvananira, saṅ mastva atah tar kavastvan <space type="binding-hole"/>, yavat kavastvan tavat drabya, yavat drabya tavat papaha
+<lb n="48r3"/>de ika, apa pva hidap.. ra, yan kvaliṅanta, saṅ maṅ-<space type="binding-hole"/> hidap atā sih tar kahidap, yavat kahi<unclear>da</unclear>pa
+<lb n="48r4"/>tavat drabya, ya … drabya tavyapaha de ika <space type="binding-hole"/>, umapa pva katoṇnanira, saṅ manon ata sih tar kato-
+<pb n="48v"/>
+<lb n="48v1"/>n, yavat katon …., yavat drabya tavat papha-<space type="binding-hole"/> ha de ika, umapa pva keṅət-eṅət <supplied reason="lost">t</supplied>ananira, saṅ meṅət-eṅət
+<lb n="48v2"/>, atya sih tar keṅət-eṅət, yavat keṅət-eṅət <space type="binding-hole"/> tavat drabya, yavat drabya, yavat drabya tavat papāha  de ika, a-
+<lb n="48v3"/>pha deyani kumavruh<supplied reason="lost">h</supplied> ana sira …. h, yan kvaliṅanta, yava-<space type="binding-hole"/> t kna kinavruhan, yan emana yan evəha, yan aganala, yan a-
+<lb n="48v4"/>lita sukṣma tah ta kvru… kna kavruhana, tavat dra<unclear>bya</unclear> <space type="binding-hole"/> ta juga ika kabeh, de saṅ manon, kaliṅanya syanu juga
+
+<pb n="49r"/>
+<lb n="49r1"/>kumavruhi ika kabeh, avakan ika syanu kaharəpta, mata-<space type="binding-hole"/> ṅyan kapaṅgaha lāvan kna kavruhāna, kagamla katona ka-
+<lb n="49r2"/>rika syanu kaharəpta, rupa varṇna sariranya kta hiṅan ikātvan ka-<space type="binding-hole"/> gamal, makavak alit ləñəp moksa hiṅa? niṅ kasparsa ka-
+<lb n="49r3"/>parsa makavakaṅ lilā hniṅ tara<supplied reason="lost">ṅ</supplied> vaṅ nirasraya, kunəṅ <supplied reason="lost">ṅ</supplied>ika sya-<space type="binding-hole"/> nu kaharəpta, makakapaṅgahana siṅ karəṅə̄, hade sābdaniṅ syanu
+<lb n="49r4"/>ktah mavak <choice><unclear>liṅlāṅ hni</unclear><unclear cert="low">lilāhəniṅ</unclear></choice> tharavaṅ nirasraya, hiṅaniṅ maka kapa-<space type="binding-hole"/> ṅgahana siṅ karəṅə̄, makavaka ṅ sukṣma dadi hina dadi tan hana kuniṅ
+<pb n="49v"/>
+<lb n="49v1"/><supplied reason="lost">ṅ</supplied>i kta syanu kaharəpta, maka katəmva ni keṅət-eṅət, tāha-<space type="binding-hole"/> hade hid<unclear>a</unclear>p niṅ syanu ktah makavak sukṣma, dadi hana dadi tan ha-
+<lb n="49v2"/>na, mata katəmvan hiṅaniṅ keṅət-eṅət, kunəṅ ika saṅ ma-<space type="binding-hole"/> non ikaṅ inaraṇan syanu, tan katəmu jugeka, luputa
+<lb n="49v3"/>ta sake rika kabeh, tan hana ta vnaṅ tuməke sira, ṅuni-<space type="binding-hole"/> veh kumavruhana sira, sariranira rakva vnaṅ<supplied reason="lost">ṅ</supplied>a kumavruhana sira, taha
+<lb n="49v4"/>sa raktah kumavruhana sariranira, apa denira kumavruh i <space type="binding-hole"/> sariranira, tinonira ginaməl nira sarira, aku sariraku mvaṅ
+
+<pb n="50r"/>
+<lb n="50r1"/>sarvva pāpa kabeh, ṅūni ri ṣḍāṅ nira pasarira kta saṅ manon ar kara-<space type="binding-hole"/> ktan deniṅ sarvva mala, lavan maṅhidap <unclear>p</unclear>āpa, huvus katiṅgal pvekaṅ sarira
+<lb n="50r2"/>denira, luput l<unclear>ə</unclear>pas ṣakeṅ bhuvaṇa, aparan tekaṅ rumakət ana <space type="binding-hole"/> sira, apan kavkas irikaṅ sarira, ikaṅ suka duhka hala hayu lāvan ikaṅ
+<lb n="50r3"/>sarvva pāpa kabeh, dohe ṅivut nanah kunəṅ ika saṅ manon, lupu-<space type="binding-hole"/> ta sira lpas tan kavyavandanan deniṅ sarvva papa, svecca lilāṅ sira maka saba i-
+<lb n="50r4"/>kaṅ liṅlaṅ h<unclear>ə</unclear>niṅ, makadrabyaṅ bhuvaṇa, nāhan pavaka rahasye paṇḍi-<space type="binding-hole"/> ta ṅaran<unclear>n</unclear>ya liṅ saṅ paṇḍita. Atha vkas niṅ takvan saṅ çisya, mvaṅ vkas niṅ pa-
+<pb n="50v"/>
+<lb n="50v1"/>jar saṅ guru, hana sabdepadesa nugraha ṅaran<unclear>n</unclear>ya, sabda saṅ kiriman <space type="binding-hole"/> athan donya, ndya liṅ saṅ paṇḍita  riṅ sisya niha, sakaton denta riṅ ṣakala
+<lb n="50v2"/>katon denta ri niskala, apa kaliṅanya, satinonta an pā-<space type="binding-hole"/> vak pasarira maṅke, katon denta tan pāvak pāsarira, apa draṣṭan-
+<lb n="50v3"/>ta nihan, kadyaṅgan taya tuṅga ri dalam niṅ <supplied reason="lost">ṅ</supplied>umah bhūmi, anañjo <space type="binding-hole"/> ta kita saṅka riṅ lavaṅ, katon tekaṅ desa kaharəp deniṅ kaṅ <supplied reason="lost">ṅ</supplied>umah juga
+<lb n="50v4"/>, kanton ikaṅ desa kahiriṅ mvaṅ kapuṅkur denikaṅ <supplied reason="lost">ṅ</supplied>umah, apan su-<space type="binding-hole"/> kər kaliṇḍaṅan deniṅ taviṅ nikaṅ bhumi, mijil pva kita sake rikaṅ bhumi,
+
+<pb n="51r"/>
+<lb n="51r1"/>byavasayan uga tan ika saṅ manon juga mataṅyan araniya sabda, <space type="binding-hole"/> inikunya taya sabdaku, hidapnira karinnaṅa kumāvruhana sira, ta-
+<lb n="51r2"/>ha sira ktah kumavruhana hidapnira, aya denira kumavruhana <space type="binding-hole"/> hidapnira meṅət siran hidapnira panonira paṅrəṅənira, ya paṅhidapnira
+<lb n="51r3"/>rari nak ni paṅan inum, lavan tavih aku hidap tan kvaṅ hidap, <space type="binding-hole"/> kevala mati pakva pinaripakvakan ktaṅ hidap, vicitran mijə kinira-kirakan
+<lb n="51r4"/>, apa pva samandanyan pakaraṅan hidap lāvan aṅən-aṅən, i-<space type="binding-hole"/> cc<unclear>h</unclear>a byavasayanuga ta nika saṅ manon juga mataṅyan araniya hidap
+<pb n="51v"/>
+<lb n="51v1"/>inakunya taya hidapku aṅən-aṅanku, nāhan byakta nikaṅ sarira mvaṅ bayu <space type="binding-hole"/> sabda hidap, andrabya denikana saṅ manon, aṇ tan vnaṅ ika kabeh kuma-
+<lb n="51v2"/>vruh i sira, apan byaktan katəṅər mvaṅ keṅət-iṅət pva ha-<space type="binding-hole"/> la hayu nikaṅ buddi, ndin katəṅər mvaṅ keṅət-eṅət, riṅ ulah lavan var-
+<lb n="51v3"/>ṇna lava<unclear>n</unclear> sabda, syapa manəṅər maṅiṅət-iṅət saṅ manon tasih, si <space type="binding-hole"/> mahidap saṅ masabda, saṅ mabayu, ndah sira tika inaraṇan iṅ bapa ibu-
+<lb n="51v4"/>nta syanu, saṅ mulahakən ikaṅ sarira, sira ta sinaṅgah acintya <space type="binding-hole"/>, adrasya, abyapadesa, advaya, avijña tha, avimohita, avar-
+
+<pb n="52r"/>
+<lb n="52r1"/>ṇna, avacya, pragutārabava, atyantārabava. Acintya ṅara-<space type="binding-hole"/> n<unclear>n</unclear>ya, tan kahidap deni hidapnya, adrasya ṅaran<unclear>n</unclear>ya, tan katon deniṅ panon<unclear>n</unclear>ya
+<lb n="52r2"/>, abyapadesa ṅaran<unclear>n</unclear>ya, tan kavas-avas tva kahanannya, advaya <space type="binding-hole"/> ṅaran<unclear>n</unclear>ya, tan kne sinaṅguh tuṅgal apan rva ṅaran ika yan hana kuma-
+<lb n="52r3"/>vruhanā ri tuṅgal, avijña tha ṅaran<unclear>n</unclear>ya, tan kinavruhan deniṅ paṅa-<space type="binding-hole"/> vruhnya, avimoha ta ṅaran<unclear>n</unclear>ya, tan kinapuṅguṅ<unclear>ṅ</unclear>
+a deniṅ puṅguṅnya, avar-
+<lb n="52r4"/>ṇna ṅaran<unclear>n</unclear>ya, tan aluvarṇna ikiṅ nya kavarṇna varnani<unclear>ṅ</unclear>
+ sariranya, ava-<space type="binding-hole"/> stu ṅaran<unclear>n</unclear>ya, tan kneṅnaranan, avacya ṅaran<unclear>n</unclear>ya, tan dadi inujar-uja-
+<pb n="52v"/>
+<lb n="52v1"/>rakən, nāhan kavuvusan saṅ hyaṅ pramana, ikaṅ inaranan ī bapa <space type="binding-hole"/> ibunta syanu, sira ikaṅ saṅ hyaṅ pramana ṅaran<unclear>n</unclear>ya liṅ saṅ paṇḍita, valiṅta ta-
+<lb n="52v2"/>n seṅ karika saṅ hyaṅ darmma vinuvus saṅ matuha, apa sineṅ ni darmma pramana <space type="binding-hole"/>, apa sineṅ ni pramana rahasya, apa sineṅni rahasya tuṅgal, apa-
+<lb n="52v3"/>sineṅ niṅ tuṅgal saṅ manon, saṅ manon ṅaranira syanu, ndah syanu ta <space type="binding-hole"/> yaṅ harsa viji, sira sinaṅgah bapa ibu lāvan anak, apan dika<unclear cert="low">eka</unclear> baga viba-
+<lb n="52v4"/>ga sira rumiñci avāknira, sira ṅhiṅ saviji makavak makaghrā rat kabeh <space type="binding-hole"/>, humibəki ṅ buvana kadyaṅganiṅ pañjut saviji, pinasaṅ pvekaṅ vrati satus evu sa-
+
+<pb n="53r"/>
+<lb n="53r1"/>kodi, kapva ikaṅ vrati kabeh kandəlan apuy denikaṅ pañjut savi-<space type="binding-hole"/> ji, tan hana sor iṅ panas dilah lāvan teja, maṅkana ta saṅ manon ar ka hana
+<lb n="53r2"/>nekaṅ sarvva janma, tan hana sor tan hana lvih, aran ta pada bayu sabda hi-<space type="binding-hole"/> dap jugā pinaka hurip nikaṅ sarat tan hana vaneh, ndah syanu ta yaṅhiṅ savi-
+<lb n="53r3"/>ji, sira ta sinaṅgah saṅ hyaṅ pramana, maka drabya bhuvana lāvan sarvva sa-<space type="binding-hole"/> rira, ṅuniveh bayu sabda hidap. Nambaṅ hulun ikaṅ inaranan iṅ bapa 
+<lb n="53r4"/>ibu niṅ hulun syanu kapva ikā sira sida saṅ pandita, tan hilaṅaniṅ <space type="binding-hole"/> katuduhan saṅ hyaṅ darmma kaliṅan ika, yata mata mataṅnyan hinilaṅa-
+<pb n="53v"/>
+<lb n="53v1"/>ran ikaṅ bapa ibu deni pinakanak, ṅuniveh ṅaran ṣaṅ prabu, karahu <space type="binding-hole"/> n ṅaran sa<unclear cert="low">ṅ</unclear>
+ paṇḍita, rahasya hila-hila laraṅan katuduhan saṅ hyaṅ darmma ka-
+<lb n="53v2"/>liṅanika, patula badan saṅ hya<unclear>ṅ</unclear>
+ pramana, kaguru vaktra de saṅ? dar-<space type="binding-hole"/> mma. Enak mara trus vruh nika syanu, an ya vruh tan kinavruhan, a-
+<lb n="53v3"/>n ya maṅrəṅə̄ tan karəṅə̄, ya maṅhidāp tar kahidap <space type="binding-hole"/>, maṅnəmu tar katmu, an ya manon tar kathon, an hanaṅke riṅ sarira-
+<lb n="53v4"/>nya, ndah ya ta sinaṅgah moktajiva ṅaran<unclear>n</unclear>ya moka tuturuṅ hurip <space type="binding-hole"/>, tandəlaha pvaṅ ka<supplied reason="lost">ṅ</supplied> mokṣan tman, make juga ya ri saṅ meṅət tku-
+
+<pb n="56r"/>
+<lb n="56r1"/>maṅke, svabava ṅa<unclear>ra</unclear>n<unclear>n</unclear>ya juga humidəpa suka duhka, tuha lara lāva-<space type="binding-hole"/> n pati, ndi karih paranan ika syanu luput iṅ suka duka, salaha de-
+<lb n="56r2"/>niku halara lāvan pati, vikva srava ketya gambara, aləməha yan <space type="binding-hole"/> kneṅ gavay, anusup aṅidaṅdaṅ amajar-ajar i rəban sampvara, ekavasa taya tuṅga-
+<lb n="56r3"/>tuṅga, yaya jugeka kabeh tan luput ri suka duhka lara lapā <space type="binding-hole"/> panas-tis tuha pati, kaliṅanya sakvananya lāvan polahanya ta ju-
+<lb n="56r4"/>gan tinut kinuñci ṅiniku deniṅ pāpa pañcagati saṅçara, apa sina-<space type="binding-hole"/> ṅgah pāpa pañcaga<supplied reason="lost">ga</supplied>ti saṅçara ṅaran<unclear>n</unclear>ya pañca ṅaran iṅ lima, aghati taṅ maṅhida-
+<pb n="56v"/>
+<lb n="56v1"/>p, saṅçara ṅaran<unclear>n</unclear>yi pāpa, yata mataṅyan pañcagati saṅçara ṅaran<unclear>n</unclear>ya, li-<space type="binding-hole"/> maktah karana nika syanun paṅhidap pāpa, lima ṅaran<unclear>n</unclear>ya nyaṅ bhuvana, nyaṅ sarira,
+<lb n="56v2"/>nyaṅ bayu, nyaṅ sabda, nyaṅ hidap, nāhan lima ṅaran<unclear>n</unclear>ya, apa sinaṅgah pā-<space type="binding-hole"/> pa saṅçara ṅaran<unclear>n</unclear>ya, yeka karana nika syanun paṅhidap suka duhka, pana-
+<lb n="56v3"/>stis lara lapa tuha pati, kadi kahidpa ikaṅ<supplied reason="lost">ṅ</supplied> apapa maṅkana ka-<space type="binding-hole"/> beh denikaṅ syanu, ya tan hana ikaṅ buvana tinapaknya, lāvan ikaṅ sari-
+<lb n="56v4"/>ra pinakavaknya, ya pina<supplied reason="lost">na</supplied>ka paṅhidəpānya pāpa, ikaṅ bayu ya pi-<space type="binding-hole"/> naka saddananya, ika hidap ya pina<supplied reason="lost">h</supplied>ka paṅhidpānya papā, binya-
+
+<pb n="57r"/>
+<lb n="57r1"/>tkakənanya taṅ lara hinidapnya ri sabdanya, apa byaktanya, ana ala-<space type="binding-hole"/> raku, anaṅ apanas aku, adah atis dahat aku, aṅəlu aku, ah ih
+<lb n="57r2"/>ptəṅ panonku, vulaṅun ṅhulun, ndah nāhan liṅnyan mya-<space type="binding-hole"/> ttakən ikaṅ pāpa hinidapnya ri sabdanya, yata mataṅyan kavah ikaṅ sarira pi-
+<lb n="57r3"/>naka vvay niṅ kavah ikaṅ bayu, pinakapuy niṅ kavah ika sabda, pinaka pana-<space type="binding-hole"/> s ni vvey nikaṅ kavah lāvan <supplied reason="lost">m</supplied>apuy ikaṅ hidap, nāhan lvir nikaṅ si-
+<lb n="57r4"/>naṅgah kavah ṅaran<unclear>n</unclear>ya, paṅhidpan saṅ manon suka duhka, nya pabta ha-<space type="binding-hole"/> nikaṅ malara juga sinaṅgah ta maṅhidap <unclear>p</unclear>āpa, taha, pada ikaṅ rat kabeh
+<pb n="57v"/>
+<lb n="57v1"/>mahidap <unclear>p</unclear>āpa, ika varas liṅ nikaṅ loka papā tika, kadi kasuṅsaṅ <space type="binding-hole"/> kavalika ikaṅ <supplied reason="lost">ṅ</supplied>vaṅ sabhuvana, mamet pinaṅan sinaṇḍaṅ, grama vi-
+<lb n="57v2"/>ku mara ya pada vula-valikan mamet haraka mvaṅ sadana, tan vnaṅ <space type="binding-hole"/> dumaranaṅ tis ṇi pāpanas kaliṅanya, tatan adva ikaṅ prahatti lāva-
+<lb n="57v3"/>n kiṅkiṅ kabukti denya, səsəb rujit runtiṅ ikaṅ manahnya, <space type="binding-hole"/> vet niṅ putik hati kaliṅan ika, apa ta hetu nika kabeh an ta hidap
+<lb n="57v4"/>denika syanu, ri hana nikaṅ bhuvana tināpaknya, lāvan sarira, mvaṅ <space type="binding-hole"/> bayu sabda hidap kaliṅan ika, ya ta ma<unclear>ta</unclear>ṅyan tan uvah aṅjanma tan pasa-
+
+<pb n="58r"/>
+<lb n="58r1"/>rira muvah pinet saṅ viku, apan bavacakra mavalu-valuy ikaṅ ra-<space type="binding-hole"/> t kabeh, havas mati muvah ma<unclear cert="low">ṅ</unclear>
+janma hinidapnya ikaṅ papā muvah, sagaropama
+<lb n="58r2"/>kadyaṅga ni tasik tan pakasathan, laṅgəṅ pasaṅ surud, maṅkana <space type="binding-hole"/> tekaṅ sarvva janmanya valu-valuy rikaṅ bava saṅ<supplied reason="lost">ṅ</supplied>çara, huvus mati muvah maṅjanma, ma-
+<lb n="58r3"/>timati muvah maṅjanma, tatan pahiṅan tan pāhuvusan yan pa-<space type="binding-hole"/> hidap <unclear>p</unclear>āpa saṅçara vkasan, yata mataṅ<supplied reason="lost">ṅ</supplied>yan aləməh saṅ tlas meṅət janma
+<lb n="58r4"/>masarira muvah, an katon pāpa nikaṅ sarvva janma, pada kavasuṅsaṅ kava-<space type="binding-hole"/> lik maṅusi tavaṅ, tan hanenak maṅel juga palanya kabuk-
+<pb n="58v"/>
+<lb n="58v1"/>ti denya, apa ta karana nikan syanun luputa saka ri pāpā pañcaga-<space type="binding-hole"/> ti saṅçara, tan kalaṅkahan deni rahina vṅi, yan kva kita, hana vak sesa
+<lb n="58v2"/>nugraha saṅ sidda paṇḍita ri kami ṅuni surud mami saṅkeṅ sira, pañcamar-<space type="binding-hole"/> gga ṅaran<unclear>n</unclear>ya, vuku lima karana nika syanun luputa saṅka ri pāpa pañcaga-
+<lb n="58v3"/>ti saṅçara, pratekanya nihan. Saṇḍi, tapa, luṅguh, pratya-<space type="binding-hole"/> kṣa kal<unclear>ə</unclear>pasan, yāvat ika syanun vruh ri kaliṅan ika sama-
+<lb n="58v4"/>ṅkana, tavat ləpas ri pāpa kabeh, ndan hlam ta kita <space type="binding-hole"/> varahan mami riṅ samaṅkana, yan tlas menak atah karasanan ikaṅ bayu
+
+<pb n="59r"/>
+<lb n="59r1"/>sabda hidap denta, halimpunya riṅ buvana mvaṅ <supplied reason="lost">ṅ</supplied> irikaṅ sarvva janma, avas <space type="binding-hole"/> sagili-gilikta kita irikaṅ inaranan syanu apagəha an si-
+<lb n="59r2"/>ra non tān katon, pramana tan kapramanan, an sira ṅhiṅ sa-<space type="binding-hole"/> viji makadrabyaṅ bhuvana lāvan sarira, ṅuniveh bayu sabda hidap, mvaṅ se-
+<lb n="59r3"/>va kananta ya rumuhun, tirun çakrama saṅ hulun an pasevaka <space type="binding-hole"/> ṅuni ri saṅ sidda paṇḍita. Iti kojaran saṅ manon kayatni<unclear cert="low">a</unclear>kna saṅ seva-
+<lb n="59r4"/>ka darmma. <supplied reason="lost">O</supplied> Nyaṅ saṇdi tambay saṅ paṇḍita maṅucap vuku <space type="binding-hole"/>, sandi, ṅaran<unclear>n</unclear>ya si tutur, yata pinaka sipat nikaṅ bhuvana lāvan sarvva janma,
+<pb n="59v"/>
+<lb n="59v1"/>mataṅya<unclear>n</unclear> tan salah tuvuh tan salah rupa tan salah rasa ikaṅ ra-<space type="binding-hole"/> t kabeh, abnər tumiru bapa ibunya mvaṅ vvit-bvitnya ikaṅ sarvva
+<lb n="59v2"/>janma, vvaṅ manak vvaṅ kbo manak kbo, sapi manak sapi, sarvva tumu-<space type="binding-hole"/> vuh tan salah tuvuh, sadakala ya laynya, maka svi-svinya, tan salah vvah tan salah
+<lb n="59v3"/>rasa, vruh juga ya kabeh riṅ jatinya, apa ta makahetu ika, tu-<space type="binding-hole"/> turnya tah apa pinaka pañjinya, lāvan pinaka prasasṭinya dumehnya maṅ-
+<lb n="59v4"/>kana lvir nikaṅ sarvva tumuvuh mva<unclear>ṅ</unclear>
+ satva, si tutur atah dumādya-<space type="binding-hole"/> kən ika, yata mataṅyan abənər pabaṅun ikaṅ sarvva janma, apa upamante rika
+
+<pb n="60r"/>
+<lb n="60r1"/>kadyaṅga niṅ kayu pinraṅan, ya tan sipatanavilut jati nika, sini-<space type="binding-hole"/> patan pvaya de saṅ uṇḍahagi mamraṅi, yata heta<unclear cert="low">u</unclear>nyan aṅənər, iva ma-
+<lb n="60r2"/>ṅkana tekaṅ si tutur an ya pinaka sipat ikaṅ bhuvana, lāvan sarvva ja-<space type="binding-hole"/> nma, tuturnya hetunyan pada vruh riṅ jatinya mvaṅ svabavanya, aṅənər tan salah
+<lb n="60r3"/>tuvuh ikaṅ rat kabeh, deniṅ apa deniṅ tuturnya thasih, apayapa-<space type="binding-hole"/> n kapva kahanan tutur ikaṅ rat kabeh, kadyaṅganiṅ bayu sabda hidap an hi-
+<lb n="60r4"/>bəki ikaṅ bhuvana lāvan sa<unclear>r</unclear>vva janma, maṅkana tekaṅ tutur an hibə-<space type="binding-hole"/> kiṅ ikaṅ bhuvana lāvan sarvva janma, maṅkana tekaṅ tutur an hibəki
+<pb n="60v"/>
+<lb n="60v1"/>ikaṅ bhuvana, apa byaktanya, tiṅət iṅan ktah lvir nikaṅ rat kabeh, <space type="binding-hole"/> vulata riṅ bhuvana, paganti niṅ vṅi lāvan rahina. Liṇḍu niṅ lmah polah ili
+<lb n="60v2"/>niṅ vay, pasaṅ surud niṅ tasik, pavalikani rayyak, irir niṅ aṅin, <space type="binding-hole"/> habgət iṅ rivut, idər niṅ halyusus <unclear cert="low">halisyus</unclear>, tampuh niṅ hudan kupa-
+<lb n="60v3"/>kniṅ glap, pagəntaraniṅ gərəh, gəntər ni patər, ibər niṅ han-<space type="binding-hole"/> daru, lirap niṅ kilat, halintaṅ ni vaṅkravaṅ mvaṅ kuvuṅ-kuvuṅ pakə-
+<lb n="60v4"/>mpəl niṅ megha, kdap niṅ vintaṅ lāvan para manuh paṅəbo-<space type="binding-hole"/> ṅəbo niṅ ptaṅ, palvaṅ patambəh niṅ vulan, purṇnama lāvan mamesyinya
+
+<pb n="61r"/>
+<lb n="61r1"/>, prakasa niṅ kəñar saṅ hyaṅ <supplied reason="lost">ṅ</supplied>āditya, pinaka suluh niṅ buvana, atu-<space type="binding-hole"/> tur tekan v<unclear>ə</unclear>tu sumurupa kulvan sari-sari, inakani ken v<unclear>ə</unclear>tu kulvan
+<lb n="61r2"/>ktaya, sumurupa vetan, tahasih atutur taya riṅ vatvannya, dələ-<space type="binding-hole"/> n teka kabeh denta, ta karin tutur saṅ manon <supplied reason="lost">n</supplied>ika, an pā-
+<lb n="61r3"/>kavak ikaṅ samaṅkana kabeh kaliṅan ika, talihakən ta vu-<space type="binding-hole"/> lata rikaṅ sarvva tumuvuh, kaya dukut roṇḍon odvad, pada
+<lb n="61r4"/>vruh ri tuvuhnya, pasariranya, pasəvənya, pakəmbaṅnya, pavvahanya <space type="binding-hole"/> tan salah rasā, tan vinarah tan inatag ri deyanyan pakambaṅ <supplied reason="lost">ṅ</supplied>avvah,
+<pb n="61v"/>
+<lb n="61v1"/>vruh atutur juga ya kabeh ri masanya lavan ri kalanya, dələ̄-<space type="binding-hole"/> n teka kabeh denta, takarin tutur saṅ manon an pakavak ikaṅ
+<lb n="61v2"/>samaṅkana kabeh karih kaliṅanika, nāhan byakta nikaṅ rat a-<space type="binding-hole"/> n kapva kahanan tutur, ndan atas minataditiyan vruh ikaṅ rat an ha-
+<lb n="61v3"/>na ṅ tutur iriya, apan vulaṅun tan vruh an visesa <space type="binding-hole"/> lāvan pramana, aji glar puja samaddi atah visesa liṅnya, mvaṅ hana hyaṅ
+<lb n="61v4"/>devata baṭara baṭari sinaṅgahnya pramana, tan eṅət an nya vi-<space type="binding-hole"/> sesa basa kumavruh<supplied reason="lost">h</supplied>i maganal malit sakala niskala, tatan maṅkana saṅ
+
+<pb n="62r"/>
+<lb n="62r1"/>paṇḍita natutur, vruh eṅət tan ikət sira an siraṅhiṅ saviji visesa <space type="binding-hole"/> makadrabya buvana lāvan sarira, mvaṅ bayu sabda hidap yata mataṅyan
+<lb n="62r2"/>tikṣṇā vruhnira, basa vasitva vagmi kukrighata vidagda, labda smrə-<space type="binding-hole"/> ti prajñā meṅət tonan rahina ava vihikan atutur laṅgha<unclear cert="low">ə</unclear>ṅ niya
+<lb n="62r3"/>nahan pinaka visesa saṅ manon ār pakavak tutur, apa <space type="binding-hole"/> pinaka pāpa saṅ manon irikaṅ saṇdi, nidra tan atutur si lupa puṅgaṅ tan e-
+<lb n="62r4"/>ṅət tan vihikan, si gloglo ləṅə-ləṅə̄ biṅuṅ tan vruh jugu-<space type="binding-hole"/> l durmeda dus prajñā ptaṅ pəpət andakara, paṅan <supplied reason="lost">n</supplied> inum turu vipa-
+<pb n="62v"/>
+<lb n="62v1"/>rita, alupa ta yan pramana lāvan visesa, milu tumut ni mi-<space type="binding-hole"/> sesakan ajña mantra glar puja, mvaṅ hyaṅ devata, nāhan pinaka pāpa saṅ manon
+<lb n="62v2"/>ri saṇdi, ika taṅ sandi ṅaran<unclear>n</unclear>ya, seṅ ika, apa sineṅ nika si tutur si-<space type="binding-hole"/> neṅ niṅ tutur si tan pakavuruṅan, sineṅ niṅ tan pakavuruṅan si tka, apa ka-
+<lb n="62v3"/>liṅaniṅ tka, tka tan denikaṅ aji glar pujā, tka tan deniṅ tapa brata sa-<space type="binding-hole"/> maddi, tka tan deniṅ yasa punya kusaladi, tka juga ika saṅ manon, deniṅ a-
+<lb n="62v4"/>pa deniṅ tuturnya, apa byaktanya nihan kita dataṅ manambah rī kami, <space type="binding-hole"/> tutur tatah tumkakən kita, nihan ta ṅvaṅ maparan-paran vanyaga malayā kunaṅ,
+
+<pb n="63r"/>
+<lb n="63r1"/>manabraṅ irika nusa para nuṣa, i Campa i nak-rabyanya, kapva <space type="binding-hole"/> masuk <unclear>r</unclear>yy umahnya, apa ta tuməkakan ikā, tuturnya tah, nāha-
+<lb n="63r2"/>n byakta nikaṅ tutur an panəkakan ri sakala, apa byakta <space type="binding-hole"/> nika saṅ manon tka deniṅ tuturnya ri niskala, riṅətniranta nikiṅ sarirani
+<lb n="63r3"/>ra matutur, tan bayu sabda hi<unclear>da</unclear>pnira matutur, apan tutur purasara mu-<space type="binding-hole"/> lakan sariranira, mvaṅ bayu sabda hidapnira, syapa pva matutur saṅ manon juga
+<lb n="63r4"/>, kaliṅanya masarira tan pasarira i saṅ manon, tutur nira atah <space type="binding-hole"/> tuməkakan sira, sakala niskala atah avakan ika saṅ manon, tutur
+<pb n="63v"/>
+<lb n="63v1"/>nira tah tuməkakan sira, rasetasa byakta tuhu liṅ saṅ paṇḍita, nāha-<space type="binding-hole"/> n sinaṅgah sandi ṅaran<unclear>n</unclear>ya liṅ saṅ paṇḍita. Maṅkana tekiṅ tapa, apa pina-
+<lb n="63v2"/>ka rasanya si liṅlāṅ, apa mataṅnyar aliṅlāṅ, riṅatnira pakar drabyaṅ buva-<space type="binding-hole"/> na lāvan sarira, ṅuniveh bayu sabda hidap, ana hiṅ sira saviji pramana ta-
+<lb n="63v3"/>n hana vaneh, yata mataṅya tar karaktan sarvva mala, hyun luput <space type="binding-hole"/> ilik trasṇā tan hana ri saṅ meṅət, aləṅis juga manah nira, nis-
+<lb n="63v4"/>trasṇā tan asih tan ahyun tan akuṅ tan onaṅ, tan harsa tan aha-<space type="binding-hole"/> rəp tan dridā tan raga tan alahalah, varəg vra sih jirṇna basa hu-
+
+<pb n="64r"/>
+<lb n="64r1"/>s juga, ya byakta niṅ mala lilā ṅaran<unclear>n</unclear>ya, tan kapramanan deniṅ sariranya, <space type="binding-hole"/> bayu sabda hidapnira, nāhan pinaka visesa nika saṅ manvan yar tapa, apa pi-
+<lb n="64r2"/>naka pāpa saṅ manon yar tapa, si kavya vandanan deniṅ sariranya, ba-<space type="binding-hole"/> yu sabda hidapnya, aku pātaya ri takut, trasna asih lulut va<unclear cert="low">ə</unclear>naṅ har-
+<lb n="64r3"/>sa kugiraṅ drada hyun, syalahalah si tan varətug ra-<space type="binding-hole"/> ga dvesa loba mohan matṣaryya timburu, nāhan pinaka pāpa saṅ manvan
+<lb n="64r4"/>yar tapa, yavat ika saṅ manon kapramanan deniṅ sariranya bayu sa-<space type="binding-hole"/> bda hidapnya, mvaṅ katut kekət deniṅ trasnanya, tavat mavacakra saṅsa-
+<pb n="64v"/>
+<lb n="64v1"/>ra valuy-valuy janma nika saṅ manon, nitya maṅhidap saṅçara pāpa i-<space type="binding-hole"/> ka yan maṅkana, apa byaktanyan pinaka pāpa riṅ sakala niskala ika sa trasnā
+<lb n="64v2"/>nihanta ṅvaṅ malaki marabi, pada taya masih malulut, hana pvañcala <space type="binding-hole"/> …. buddinyan paturən, atadinta ya pasha, sadanantara, rəda ta yoni, a-
+<lb n="64v3"/>valuyanta, vetniṅ pada trasnā kaliṅanya, aparan tomaluyakən ika, <space type="binding-hole"/> trasnānya tah, nihan ta ṅvaṅ hilaṅ masnya, mati anaknya rabyanya kunaṅ, t<unclear>ə</unclear>ka taṅ la-
+<lb n="64v4"/>ra kiṅkiṅ <supplied reason="lost">ṅ</supplied>iriya, anaṅis taya krak, akuru makiṅ tan k<unclear>ə</unclear>neṅ <space type="binding-hole"/> paṅan lāvan turu, vet niṅ pra<unclear cert="low">i</unclear>hati kaliṅanya, apa da<unclear>u</unclear>meh
+
+<pb n="65r"/>
+<lb n="65r1"/>nika maṅkana laranya, deni trasnānya tah, nāhan byakta nikaṅ tra-<space type="binding-hole"/> snān pinaka pāpa ri sakala de saṅ manon, apa byaktanyan pinaka pa-
+<lb n="65r2"/>pa riṅ niskala ikaṅ si trasnā, nihan kadyaṅgāniṅ ṅvaṅ umiṅgat sakeṅ <space type="binding-hole"/> <supplied reason="lost">ṅ</supplied>umahnya desanya, mahas taya mamet desa, nda tan paṅinaki ikaṅ desa
+<lb n="65r3"/>pinaranya kabeh, monaṅ taya riyumahnya desa buminya, muli-<space type="binding-hole"/> h taya tan kasulan, katəmu pva komahnya turuṅ posaka paripurṇna,
+<lb n="65r4"/>t<unclear>ə</unclear>ka taya mandəl riyumahnya, rug <supplied reason="lost">g</supplied>avuk hilaṅ pokomahnya, dadi <space type="binding-hole"/> ya mamaṅun umah uvah, iva maṅkana teka saṅ manon yar katut de-
+<pb n="65v"/>
+<lb n="65v1"/>niṅ si trasnānira riṅ niṣkala, mataṅyan hana vvaṅ mati huvus tinivakən riṅ <space type="binding-hole"/> sma, ahurip muvah mati mabaṅun ṅaran<unclear>n</unclear>ya vaneh deniṅ loka, havuk
+<lb n="65v2"/>drava pva sariranya, dadi ya magavay ṣariranya muvah, matanyan hana vvaṅ <space type="binding-hole"/> jati smara ṅaran<unclear>n</unclear>ya deniṅ lvāka, ri yuv<unclear cert="low">m</unclear>ahnya janma, tatan adva kahidap tekaṅ pāpa
+<lb n="65v3"/>phañcagati saṅçara muvah denya apa ta makasamanda ika, deniṅ tra-<space type="binding-hole"/> snānya tah, nāhan byakta nikaṅ trasnā n pinaka papā ri sakala niskala, vruh pve-
+<lb n="65v4"/>ka saṅ panditan pinaka pāpa ikaṅ si trasnā, yata mataṅyan prihən pi-<space type="binding-hole"/> jər hə<unclear cert="low">i</unclear>n ikaṅ nistrasnā de saṅ sevaka darmma, katəmu tan alilaṅ agili-
+
+<pb n="66r"/>
+<lb n="66r1"/>gi lit luput saṅka riṅ masarira, pinih pva rasa niṅ luput saṅka riṅ masari-<space type="binding-hole"/> ra, kat<unclear>ə</unclear>mu ta rasa niṅ tan lina, apan ikaṅ lina ṅaran<unclear>n</unclear>ya, pāpa ktah ika, ka-
+<lb n="66r2"/>di kahadpa ikaṅ papa denikaṅ pramana ya tan lina samanda ike pra-<space type="binding-hole"/> mana makavakya, apa rih sinaṅguh lina ṅaran<unclear>n</unclear>ya, kadyaṅga niṅ vay
+<lb n="66r3"/>vorən ta lavan tvak, byakta ya tuṅgal ṣama rupa sama varṇna ta-<space type="binding-hole"/> n k<unclear>ə</unclear>na paduduna muvah, ndan asiṅ makveh marisudaṅ mak<unclear>ə</unclear>dik, vvay makveh vva-
+<lb n="66r4"/>y mari suddaṅ tvak, tvak makveh tvak marisuddaṅ vvay, iva maṅka-<space type="binding-hole"/> na teka saṅ manon, ar kaparikusṭa deni makveh, apa makveh ṅaran<unclear>n</unclear>ya,
+<pb n="66v"/> 
+<lb n="66v1"/>nyaṅ sarira, nyaṅ bayu, nyaṅ sabda, nyaṅ hidap, nyaṅ tutur, nyaṅ lu-<space type="binding-hole"/> pa, nāhan ta makveh ṅaran<unclear>n</unclear>ya umarikusṭa saṅ manon, saṅka riṅ lina samanda-
+<lb n="66v2"/>nya riṅ samaṅkana, nāhan mataṅyan paṅhi<unclear>dap</unclear> pāpa v<unclear>ə</unclear>kasan, deniṅ lina sama-<space type="binding-hole"/> nda kaliṅanya, dinələ-dələ̄ pveka saṅ manon kadi sa<supplied reason="lost">ṅ</supplied>rira, vinasvas ta kadi
+<lb n="66v3"/>bayu, kadi sunyataya, līniṅlaṅ-liṅlaṅ kadi sabda kadi akasa <space type="binding-hole"/>, iniṅət-iṅət kadi hidap, linitlit kadi tutur, tinəlaṅ
+<lb n="66v4"/><choice><unclear>tləṅ</unclear><unclear cert="low">təluṅ</unclear></choice> kadi lupa, kinta tan maṅkanaha de drabyanira ika kabeh, ku-<space type="binding-hole"/> naṅ apan lina sambava, nāhan ma<unclear>ta</unclear>ṅyan kadi maṅkana kabeh, ya
+
+<pb n="67r"/>
+<lb n="67r1"/>ta mataṅyan paribasa niṅ viku ri mahapralaya ika<unclear>ṅ</unclear>
+ li<unclear>na</unclear> ṅaran<unclear>n</unclear>ya, maraha-<space type="binding-hole"/> kan linanya riṅ pāpa liṅanya, apa ta karih paribasaniṅvaṅ ri krata ṅuni, a-
+<lb n="67r2"/>um mati juga, apa kaliṅaniṅ mati, umati ta ikaṅ pāpa kabeh <space type="binding-hole"/> kaliṅanya, ndya liṅ nikaṅ pāpa inati ta saṅ manon, nyaṅ buvana lāvan sari-
+<lb n="67r3"/>ra, mvaṅ bayu sabda hidap, ṅuniveh taṅ rabi anāk, yulu-<space type="binding-hole"/> n lmah sima vnaṅ-vnaṅ, nāhan inatita saṅ manon, kala niṅ prapta nirba-
+<lb n="67r4"/>na kaliṅaniṅ mati liṅ nikaṅ loka, umati ta ika kabeh <space type="binding-hole"/> kaliṅanika, pini<unclear cert="low">ə</unclear>h pva rasa niṅ maṅatita, kat<unclear>ə</unclear>mu ta rasaniṅ maṅandəli tan
+<pb n="67v"/>
+<lb n="67v1"/><supplied reason="lost">n</supplied>kandəlan, kadyaṅganiṅ manuk umandəla riṅ gunuṅ, tan ilu gu-<space type="binding-hole"/> nuṅ, umandəla ri kayu tan ilu kayu sandəlan ikaṅ manuk ta juga tan
+<lb n="67v2"/>tut sandəlanya, iva maṅ<supplied reason="lost">ṅ</supplied>kana teka saṅ manon, ar paṅandəlan <space type="binding-hole"/>, kapan ta saṅ manon, ar paṅandəli tar kandəlin, kapan ta saṅ manon
+<lb n="67v3"/>ar paṅandəli tar kandəlan, yan kvaliṅanta, mate, ndah umilu <space type="binding-hole"/> kari kita lmah <choice><unclear>atuguṅ</unclear><unclear cert="low">atuṅgu</unclear></choice> riṅ lmah, tahapih, umilu kari kita salər atuṅgu
+<lb n="67v4"/>riṅ sabda, tahapih tan ilu juga kita siṅ soṅgvananta, ri niskala no-<space type="binding-hole"/> vi, maṅandəli tan kandəlan atah saṅ hyaṅ pramana, umandəl riṅ
+
+<pb n="68r"/>
+<lb n="68r1"/>riṅ bhuvana sarira saṅ manon, tan ilu bhuvana tan ilu sarira, uma-<space type="binding-hole"/> ndal ri bayu sabda hidap saṅ manvan, tan ilu bayu sabda hidap,
+<lb n="68r2"/>umandal riṅ tutur lupa saṅ manon, tan ilu tutur tan ilu lu-<space type="binding-hole"/> pa, umandal riṅ sunya taya parama<unclear>r</unclear>tha saṅ manon, tan ilu rupanya taya
+<lb n="68r3"/>paramartha, umandal riṅ <supplied reason="lost">ṅ</supplied>vay lāvan tasik saṅ manon tan i-<space type="binding-hole"/> lu vvay tar kaplək tar amlas, umandala riṅ apuy saṅ manon, tan kapana-
+<lb n="68r4"/>san ta gsəṅa, ṅuni kalanya par sarira kta hika saṅ manon <space type="binding-hole"/> kapanasan deniṅ apuy, kapləka deniṅ vay, tlas pva sira tya-
+<pb n="68v"/>
+<lb n="68v1"/>kta tumiṅgalakən <supplied reason="lost">n</supplied>ika kabeh, apa ta mataṅyan kapləka, lā-<space type="binding-hole"/> van kapanasana rakva, nāhan maṅandəli tan kandalan ṅaran<unclear>n</unclear>ya, pinah pva rasa-
+<lb n="68v2"/>niṅ maṅandəli tan kandəlan, katmu ta rasa niṅ sidda, sidda tan kaloran <space type="binding-hole"/> deniṅ lor, sidda tan kakidulan deniṅ kidul, sidda tan kaku-
+<lb n="68v3"/>lvanan deniṅ kulvan, sidda tan kāvetanan deniṅ vetan, sidda <space type="binding-hole"/> tan kasoran deniṅ <supplied reason="lost">ṅ</supplied>isor, sidda tan karuhuran deniṅ <supplied reason="lost">ṅ</supplied>i ruhur, sidda tan ka-
+<lb n="68v4"/>ganalan deniṅ <supplied reason="lost">ṅ</supplied>aganal, sidda tan kalitan deniṅ <supplied reason="lost">ṅ</supplied>alit, <space type="binding-hole"/> yata kaliṅaniṅ paribasa saṅ sidda devata, liṅ niṅ <supplied reason="lost">ṅ</supplied>vaṅ ri tuhanta yan
+
+<pb n="69r"/>
+<lb n="69r1"/>kati, huvus luput riṅ pāpa kabeh kaliṅanya, ya kaliṅaniṅ <space type="binding-hole"/> saṅ <supplied reason="lost">ṅ</supplied>adi hyaṅ, maluy hyaṅ kaliṅanya, pina<unclear cert="low">ə</unclear>h pva rasa niṅ sidda, kat<unclear>ə</unclear>mu ta rasa
+<lb n="69r2"/>niṅ ekatva ekatva ṅaran<unclear>n</unclear>ya tuṅgal ika saṅ manon maluy riṅ <space type="binding-hole"/> svabavanira, manon tar katon, nāhan tapa ṅaran<unclear>n</unclear>ya, makarasa liṅlāṅ
+<lb n="69r3"/>nistrasnā liṅ mahapaṇḍita. Maṅkana tekaṅ luṅgah <space type="binding-hole"/>, apa pinaka rasanya, si pagih, tuhva teka saṅ manon mapagəh<supplied reason="lost">h</supplied>a
+<lb n="69r4"/>ri vruhnira riṅ sakala niskala, apā pagəhanika çaṅ mano-<space type="binding-hole"/> n ri saka, ta ri lva misesakan aji mantra huṅkara glar puja dyana
+<pb n="69v"/>
+<lb n="69v1"/>samadi, ta ri lvā misesakan tapa brata, ta ri lvā misesakan guna <space type="binding-hole"/> guni, nāhan kapagəhanika saṅ manon ri sakala, ndya kapagəhanika
+<lb n="69v2"/>saṅ manon riṅ niskala, hayva sira mahavvilan, apa kaliṅanya <space type="binding-hole"/> kadi vruh marika saṅ manon ri vvilan yan pakavaka kaṅ bhuvana lāvan sa-
+<lb n="69v3"/>rira, pinaka pāpanya, kadi vruh marika saṅ manon, pakavakaṅ ba-<space type="binding-hole"/> yu sabda hidap pinaka pāpanya, apa upadyanta an ta vruh ya ri vvila-
+<lb n="69v4"/>n yan pakavaka ika kabeh, an ya pinaka pāpanya, nyaṅ ṅvaṅ ma-<space type="binding-hole"/> ra riṅ alas maṅidəki rvi, mareṅ pāpuyan maṅ<supplied reason="lost">ṅ</supplied>idəki apuy, mareṅ t<unclear>ə</unclear>gal ma-
+
+<pb n="70r"/>
+<lb n="70r1"/>ṅidak tahi, apa hethu nikaṅ rvi tahi lavan apuy an kedaka denta, <space type="binding-hole"/> saṅka ri vruhta karika, tahapih mahavvilan ṅaran<unclear>n</unclear>ya ya vruha yā, ku-
+<lb n="70r2"/>naṅ saṅka riṅ puṅga<unclear cert="low">u</unclear>ṅta kaliṅan ika mataṅyan tambaha ya denta, tatan a-<space type="binding-hole"/> dva kahidap taṅ lara bo (?) mvaṅ panas niṅ kaṅ apuy udena, iva maṅkana dete-
+<lb n="70r3"/>ka saṅ manon ar pakavakaṅ buvana lāvan sarira, samaṅke, saṅ-<space type="binding-hole"/> ke riṅ tan vruhnyan pāpa ṅ mavak masarira kaliṅanya, mataṅnyan mavak ma-
+<lb n="70r4"/>sarira, tatan adva kahidap tekaṅ suka duhka denya, kabukti <space type="binding-hole"/> tekaṅ pāpa kabeh, vruh pva kitan pāpa saṅçara mavak masarira, apa ta ma-
+<pb n="70v"/>
+<lb n="70v1"/>taṅyan pavak-avaka muvah, yan huvus tumiṅgalakən ṣariranya, vvi <space type="binding-hole"/> lanta ṅaran ika, apa mataṅyan vvi lan sira, tan hana viku mon sira mava-
+<lb n="70v2"/>k masarira, mari tuṅgal mari pramana ṅaran ika, yan hana kumo-<space type="binding-hole"/> n sira mavaka marira <unclear cert="low">masarira</unclear>, apa byaktanya maṅke riṅ sakala, ndah tan hana ta
+<lb n="70v3"/>kumon sira asiṅ saghlāvay nira, mvaṅ tatan pamalaku ikaṅ sar-<space type="binding-hole"/> vva kriya ginavay, apa byaktanya, amah aku gavayaku, kumva
+<lb n="70v4"/>kari kaṅ gaga savah tahapih tan hana janma maṅkana, maṅkana <space type="binding-hole"/> ta kitat gavay ika kabeh, tan ha<unclear cert="low">na</unclear> kumon kita, katatah mahāma-
+
+<pb n="71r"/>
+<lb n="71r1"/>hyun gumavaya, ginavay ta pvekaṅ <supplied reason="lost">ṅ</supplied>umamah gaga lāvan savah, ta-<space type="binding-hole"/> tan adva kahidap tekaṅ <supplied reason="lost">ṅ</supplied>aṅel, agrah maṅkaṇa pna saṇḍi ta kabeh,
+<lb n="71r2"/>kadyaṅga nikeṅ umah ghāga lāvan ṣavah an tan pamalaku ginavay <space type="binding-hole"/> ri kita, maṅkana tekiṅ sarira mvaṅ bayu sabda hidap, an tan pamalaku
+<lb n="71r3"/>ginavay de saṅ manon, amah aku gavay ṣarira, sariranta paṅ-<space type="binding-hole"/> hidap <unclear>p</unclear>āpa, amah ku gavay bhayu sabda hidap sadanantan pahidap<supplied reason="lost">a</supplied> papa
+<lb n="71r4"/>kummaka rikaṅ sarira mvaṅ bayu sabda hidap, tahapih tan pamalaku <space type="binding-hole"/> ika kabeh ginavay irika, tuṅgal, lavan ika saṅ manon
+<pb n="71v"/>
+<lb n="71v1"/>ar gavayaka kabeh tan hana kumon ṣira, mari tuṅgal mari pra-<space type="binding-hole"/> mana ṅaran ika, yan hakumon sira, kunaṅ apan saṅ manvan juga maha ma-
+<lb n="71v2"/>hyun magavaya ikaṅ sarira, mvaṅ bayu sabda hidap pinaka sadana <space type="binding-hole"/> nya, mvaṅ pinaka huripnyan saṅ hidap<supplied reason="lost">ā</supplied> papa, vruh pve saṅ manon ana papā
+<lb n="71v3"/>mavak masarira, meṅət an saṅsaran pakahurip ikaṅ bayu sa-<space type="binding-hole"/> bda hidap, avas ṣavlavla vruhnya i landəp niṅ rvi, bo niṅ tahi, pana-
+<lb n="71v4"/>s niṅ apuy<supplied reason="lost">a</supplied>, apa ta mataṅyan nambaha ya, vvilanta ṅaran ika, apa <space type="binding-hole"/> ta rvi ṅaran<unclear>n</unclear>ya, yeki buvana svargga patala, apa tahi ṅaran<unclear>n</unclear>ya, yekiṅ
+
+<pb n="72r"/>
+<lb n="72r1"/>sunyataya paramārta, apa apuy ṅaran<unclear>n</unclear>ya, yekiṅ sarvva janma kabe-<space type="binding-hole"/> h ṅuniveh hikaṅ rupa samaṅke, kapanasan deniṅ yavaknya, avula-va-
+<lb n="72r2"/>likan mamet haraka mvaṅ saddana, dələk tekaṅ sarva janma kabeh, <space type="binding-hole"/> nyaṅ sarvva tumuvuh mvaṅ sarvva satva, karuhun ikaṅ janma si vvaṅ, pada ika ta kabeh
+<lb n="72r3"/>maṅhidap <unclear>p</unclear>āpa, tatan vruh <choice><unclear>iṅ ka</unclear><unclear cert="low">ikaṅ</unclear></choice> janma vvaṅ i denyan ilāg i pāpa <space type="binding-hole"/>, hanan memen lumakva lampuran, hanan tapa nusupa ri gunuṅ, tyagambara,
+<lb n="72r4"/>vaneh majar-ajar irəṅ ṅaṇ sampvarā, na liṅnyan luput iṅ pāyu-<space type="binding-hole"/> n pakolah ika, tahātah yayā tinut iniku deniṅ Pāpa panas-tis lapa
+<pb n="72v"/>
+<lb n="72v1"/>, kinuñcaṅ rinujit giniriṅ deniṅ kiṅkiṅ prihati, tinalyan <supplied reason="lost">n</supplied> inarak i-<space type="binding-hole"/> narak inambah deniṅ tuha lara pati, tatan advaṅ ragadvesa loba moha ma-
+<lb n="72v2"/>da matsaryya, murub dumilah gumiriṅ i hatinya, apayāpa tan pa-<space type="binding-hole"/> lagan ikaṅ pāpa, apan ri hana nikaṅ sarvva janma mvaṅ bayva sabda hidap tinu-
+<lb n="72v3"/>t niṅ panas-tis lara mvaṅ lapa, pinaka rambatan iṅ tuha lara pati, ya <space type="binding-hole"/> rakitan ikaṅ sarvva pāpa kabeh, enak trus denta vruh ar agiligili-
+<lb n="72v4"/>k mara katonani saṅçara nikaṅ sarvva janma de saṅ manon, yata ma-<space type="binding-hole"/> taṅyan dadi saṅ pandita tumiṅgalakan sariranira, mati tar paktaka ra-
+
+<pb n="73r"/>
+<lb n="73r1"/>niṅ lara, syapa maṅhaṇdyuta sumayutana sira, yar aharəp tumiṅga-<space type="binding-hole"/> lakan sarira, apan drabyanira ikaṅ bayu sabda hidap, mvaṅ bhuvana
+<lb n="73r2"/>lavan ṣarira, tan vnaṅ ika kabheh humandyuta sira mvaṅ sumayu-<space type="binding-hole"/> tana sira, yar aharəp luṅhā tumiṅgalakan ṣariranira, apa<unclear cert="low">n</unclear> upama-
+<lb n="73r3"/>na, kadyaṅganiṅ ṅvaṅ pradana, mahyun thayāməgata saṅka ri umah-<space type="binding-hole"/> nya buminya simanya, vnaṅ<supplied reason="lost">ṅ</supplied> akari kaṅ umah bumi sami <unclear cert="low">sima</unclear> sumayutana sira,
+<lb n="73r4"/>tahapih tan hana liṅ nikaṅ umah bhumi sima, yan tuṅgan yan ā-<space type="binding-hole"/> ryyakna tan hana juga liṅ nika, maṅkana vnaṅ-vnaṅnya kabeh, kbo sapinya
+<pb n="73v"/>
+<lb n="73v1"/>, mas maniknya, tan hana liṅ nika kabeh, yan a<unclear>r</unclear>yyakna, tan vnaṅ ika <space type="binding-hole"/> sumayuti saṅ pradana yan aharəp umaryyakna ya, yan aryyakna yan ta
+<lb n="73v2"/>gun, tan hana juga liṅ nikaṅ drabya kabeh, saṅ pradana saṅ madra-<space type="binding-hole"/> bya juga vkas nika, iva maṅkana teka saṅ manon, tan hana vnaṅ sumayuta-
+<lb n="73v3"/>na sira, yan ahyun luṅha tumiṅgalakan sariranira, sarirānira kari <space type="binding-hole"/> vnaṅa sumayutana sira, taha tan hana liṅ nikaṅ sarira, tuhun ula inu-
+<lb n="73v4"/>lahakan tka sarira, yan tuṅgun yan aryyakna tan hana juga liṅ<supplied reason="lost">ṅ</supplied>ani-<space type="binding-hole"/> ka, bayunira rakva vnaṅa sumayutana sira, taha tan hana kta liṅ nika, tu-
+
+<pb n="74r"/>
+<lb n="74r1"/>hun masuk pinasukakan, mtu vinətvakan ktaṅ bayu, yan <space type="binding-hole"/> ryya kna yan tuṅgun tan hana ktaṅ liṅ nika, sabdanira kari vnaṅ<supplied reason="lost">ṅ</supplied>a suma-
+<lb n="74r2"/>yutana sira, taha tan vnaṅ ika, tuhun mta<unclear cert="low">u</unclear> vinətvakan hu-<space type="binding-hole"/> mniṅ hinrat ktaṅ sabda, yan aryyakna yan tuṅ<supplied reason="lost">ṅ</supplied>gun tan hana liṅ nika, hi-
+<lb n="74r3"/>dəpnira kari vnaṅ<supplied reason="lost">ṅ</supplied>a sumāyutana sira, taha tan vnaṅ <supplied reason="lost">ṅ</supplied>ika, apan dra-<space type="binding-hole"/> byanira ikaṅ hidap, tuturnira kari vnaṅ<supplied reason="lost">ṅ</supplied>a sumayutana sira, taha ta-
+<lb n="74r4"/>n vnaṅ <supplied reason="lost">ṅ</supplied>ita, apan sira d.. vi makadrabya ṅ tutur, ṅuniveh <space type="binding-hole"/> tekiṅ buvana mvaṅ sunya taya, maṅkin tar vnaṅ tman nika sumayutana saṅ mano-
+<pb n="74v"/>
+<lb n="74v1"/>n, kaliṅanya tan vnaṅ juga ika ta kabeh sumayutana saṅ <space type="binding-hole"/> hyaṅ pramana, yar aharəp tumiṅgalakan sariranira, mari tuṅgal ta ṅara-
+<lb n="74v2"/>n ika, mari visesa mari pramana, advan sakadrabya ṅ maganal malit <space type="binding-hole"/> ṅaran ika, yan apa ika yan kapramana maṅa kasayutan deniṅ drabyanya
+<lb n="74v3"/>, yar aharəp umati ta sariranira, jənək pveka saṅ manon mā-<space type="binding-hole"/> vak masarira, lota humədap ikaṅ pāpa sāṅçara, an huvus meṅət,
+<lb n="74v4"/>vvilan ta ṅaran ika, mvaṅ muvah ahus majanma, huvus tumiṅgalakan sa-<space type="binding-hole"/> riranya, aharəp humidap <unclear>humədap</unclear> ikaṅ papa muvah, vvilan ta ṅaran ika, apagəh
+
+<pb n="75r"/>
+<lb n="75r1"/>pveka saṅ manon riṅətnira an pāpa mavak masarira, ekatva tar pa-<space type="binding-hole"/> kavak sakala niskala, ṅuniveh tar pavalviy rumakut ikaṅ rupa sama-
+<lb n="75r2"/>ṅke, kahyaṅta ṅaran ika sira yan maṅkana, maluy ri svabavanira tuṅgal-<space type="binding-hole"/> 1, pramana tar kamanan, kaliṅanya peta rasa niṅ nāhan tan pa-
+<lb n="75r3"/>balik vvagan, enak tan pabalik lara, suka tan pabalik duhka, <space type="binding-hole"/> hayu tan pabalik hala, rahina tan pabalik ptaṅ, nāhan ṣinaṅguh
+<lb n="75r4"/>luṅgah ṅaran<unclear>n</unclear>ya liṅ aryya paṇḍita. Teṅəta ta kita <space type="binding-hole"/>, <supplied reason="lost">o</supplied> Maṅkana tekaṅ pratyakṣa, apa pinaka rasanya syā sambava,
+<pb n="75v"/>
+<lb n="75v1"/>apa kaliṅanya, vruh karikaṅ tuṅgal ryya sambhavā nikaṅ buvana ka-<space type="binding-hole"/> hananya, taham vruh karikaṅ tuṅgal ryya sambava nikaṅ sarira pina-
+<lb n="75v2"/>kavaknya taham, vruh karikaṅ tuṅgal ryya sambhava nikaṅ bayu sa-<space type="binding-hole"/> bda hidap, pinaka huripnya mvaṅ pinaka saddananya, taha tan vruh
+<lb n="75v3"/>karyya sambava nika kabeh, kadi pituhunya ikaṅ aji mantra sa?- <space type="binding-hole"/> jñāti glar pujā, mvaṅ pala niṅ tapa brata hlam yan mati yan apa i-
+<lb n="75v4"/>ka yan vruhaya ryya sambava nika kabeh, kunaṅ saka riṅ puṅguṅnya <space type="binding-hole"/> ryya sambhava nikaṅ rat kabeh, nāhan mataṅyan katut kekət i-
+
+<pb n="76r"/>
+<lb n="76r1"/>kaṅ loka milu mituhu ikaṅ aji <unclear cert="low">adirgga</unclear> puja, mvaṅ pala niṅ tapa brata sa-<space type="binding-hole"/> maddi, apan <unclear cert="low">s</unclear>pinaṅgah nika loka, asambhava, kadyaṅgani<unclear>ṅ</unclear>
+ punti atud a<unclear>tu</unclear>uṅgal
+<lb n="76r2"/>riṅ savvit, tan asambava li<unclear>ṅ</unclear>
+nya irika, apan lagi katon de-<space type="binding-hole"/> nya, yadyastun panon pvaya punti aturva tlu pat lima ri savvit, sinaṅgahnya
+<lb n="76r3"/>jati nika sambava, apan purvva kato<unclear>n</unclear> denya, tahapih liṅ saṅ paṇḍi-<space type="binding-hole"/> ta, astiti pada sambava nika rat kabeh, atud atuṅgal ri savvit,
+<lb n="76r4"/>asambava atayā, tan patuha tovi ndah asambhavaa taya <space type="binding-hole"/>, yavat tapvika katon karəṅə karasā kasparsa, ṅuniveh hikaṅ ba-
+<pb n="76v"/>
+<lb n="76v1"/>yu sabda hidap, mvaṅ ikeṅ sarira pinā<supplied reason="lost">h</supplied> kavakta, asambhava juga i-<space type="binding-hole"/> ka kabeh, apa byaktanya, tuṅkup taliṅan kalih, apa rinəṅənta sabda gumərəh
+<lb n="76v2"/>kady ampuhan pvaṅkulun, vṅakan taliṅanta, apa ta rinəṅənta, sabda a-<space type="binding-hole"/> siṅ sabda atiṅ bavamine ta tinukup taliṅanta sabda tah rinəṅənta, vənə-
+<lb n="76v3"/>ṅakan kaliṅanta sabda tah rinəṅənta, apeka tan asambava karika <space type="binding-hole"/> liṅta, ri huvus ikan maṅkana, tukup matanta kalih, apa tinonta, ptaṅ
+<lb n="76v4"/>para manuh kabharanaṅ kum<unclear>ə</unclear>dap kadi aṇḍəp-əṇḍəp, vaneh lu-<space type="binding-hole"/> marap kadi kunaṅ-kunaṅ, akveh lvir nikaṅ rupa varṇna katon pvaṅku-
+
+<pb n="77r"/>
+<lb n="77r1"/>lun, vṅakan ta matanta kalih, apa tinonta, sarvva rupā sarvva varṇna a-<space type="binding-hole"/> tah, apeka tan asambhava karika liṅta, taham liṅ saṅ sevaka darmma, i-
+<lb n="77r2"/>ṅət-iṅət kta sih denta pahenak, enak avas pva katonan ikaṅ <space type="binding-hole"/> rat de saṅ sevakadarmma, dinələ̄ ta gəṅ niṅ bus<unclear cert="low">v</unclear>ana, lvā lə̄baniṅ akasa se-
+<lb n="77r3"/>graniṅ <supplied reason="lost">ṅ</supplied>aṅin, vijil nikaṅ sarvva varṇna, tuvuh nikaṅ sarvva janma vulta-<space type="binding-hole"/> k niṅ <supplied reason="lost">ṅ</supplied>vay sake lmah, tampu niṅ hudan sakeṅ <supplied reason="lost">ṅ</supplied>akasa, ndi ta saṅka nika ka-
+<lb n="77r4"/>beh an vijil, enak pva katon pasambava nikaṅ rat <space type="binding-hole"/> kabeh de saṅ seva<unclear>ka</unclear> darmma, yata mataṅnyan takvanakan saṅkaniṅ <supplied reason="lost">ṅ</supplied>asa-
+<pb n="77v"/>
+<lb n="77v1"/>mbava, təp mavarah ta saṅ <unclear>pa</unclear>ṇḍita, liṅnira maṅrəṅ<supplied reason="lost">ṅ</supplied>yə̄ ta kitanak<unclear>k</unclear>u, hana <space type="binding-hole"/> manik sarveṣṭa sakajar paripuraka ṅaran<unclear>n</unclear>yan, cinaritakan riṅ carita
+<lb n="77v2"/>kumarava saṅ murti mvaṅ sravitram aditya, an sakajar nuviji<unclear cert="low">ta</unclear> ikaṅ <space type="binding-hole"/> manik sarvveṣṭa ri carita, aum maṅrəṅyā ranāk de ta <unclear cert="low">devata</unclear> saṅ hulun, yar kva-
+<lb n="77v3"/>liṅanta ri kami, umapa tekaṅ manik sarvvaeṣṭa sakajar paripuraka <space type="binding-hole"/> liṅtanaku <unclear cert="low">liṅtânakku</unclear> manik vatu kariya liṅta, aum <unclear>m</unclear>ānik vatu ata
+<lb n="77v4"/>ya liṅ ranak devata saṅ hulun. Tahappānaku, yadya-<space type="binding-hole"/> stun petənna taya ri vkas nikaṅ lo<unclear>r</unclear> kidul kulvan vetan i-
+
+<pb n="78r"/>
+<lb n="78r1"/>sor i ruhur, tan pamaṅgah juga kita irika, aparan pva kaṅ sinaṅga-<space type="binding-hole"/> h saṅ paṇḍita, sarvveṣṭa sakajar pari puraka ṅaran<unclear>n</unclear>ya, ikaṅ hidap, sarvve-
+<lb n="78r2"/>ṣṭa sakajar nuvidi ikaṅ tutur, yeka manik sarvveṣṭa sakajar <space type="binding-hole"/> ri puraka ṅaran<unclear>n</unclear>ya, mvaṅ sakaja<unclear>r</unclear> nuvīdi ṅarān<unclear>n</unclear>ya li<unclear>ṅ</unclear>
+ saṅ paṇḍita, pinaka
+<lb n="78r3"/>məṅ-aməṅan saṅ hyaṅ da<unclear>r</unclear>mma, yata kinudaṅ-kudaṅ nikaṅ loka riṅ pyoga <space type="binding-hole"/> ṅaran<unclear>n</unclear>ya, salvir nikaṅ kiduṅ mamuhara raga mvaṅ vijahira kaṅ loka, apa ma-
+<lb n="78r4"/>taṅyan manik sarvveṣṭā sakajap eri puraka ṅaran ikaṅ hidap, rase-<space type="binding-hole"/> kt...h panəmu nikaṅ rat suka duka enak tan enak, tan ṣakeṅ hida-
+<pb n="78v"/>
+<lb n="78v1"/>p nya karika, apa denyan panəmu hala hayu suka duhka ri hida-<space type="binding-hole"/> pnya, yan pva kita makira-kira, ya rahayu kira-kiranya haneṅ buvana,
+<lb n="78v2"/>amaṅgah ya hayu, apa ta hayu ṅaran<unclear>n</unclear>ya, yan pasambhya vāhara, satya <space type="binding-hole"/> taya ri gavaynya, nitya maṅrakṣa sila, satya matuhan, ṅuniveh yan pa-
+<lb n="78v3"/>jara darmma ri saṅ matuha, nāhan deyanyan panəmu hayu ri hidapnya, <space type="binding-hole"/> apa denyan panəmu hala ri hidapnya, yan ahala kiranya ri padanya ja-
+<lb n="78v4"/>mma, yan laku maliṅ man(əlluh salvir ikaṅ kira-kira mahala riṅ buvana gina-<space type="binding-hole"/> vayakənya, byakta taya tan hana hinuripan denikaṅ loka, nāhan de-
+
+<pb n="79r"/>
+<lb n="79r1"/>nyan panəmu hala ri hidapnya, kadyaṅga nikaṅ hidap an ya bya-<space type="binding-hole"/> kta katon pinaka hetu niṅ hala hayu suka duhka, enak tan enak
+<lb n="79r2"/>irikaṅ loka, maṅkana kaya ginavay ṣarvva janma, makavijil i-<space type="binding-hole"/> kaṅ bhuvana lāvan sarvva janma, mvaṅ bayu sabda hidap, ṅuniveh sakato-<space type="binding-hole"/>
+<lb n="79r3"/>n sakarəṅə̄ sakarasa ṣakasparsa, ya kapva ikaṅ hidap kapva gina-<space type="binding-hole"/> vay, yan kvaliṅanta ri kami, aum, mijil sakeṅ tiga rakva i-
+<lb n="79r4"/>kaṅ buvana lāvan sarvva janma, yan kvaliṅanta, aum tuhu ma-<space type="binding-hole"/> ti kaṅ rat kabeh mijil ṣakeṅ tiga, ndātan tigha Brahma visnu saṅ-
+<pb n="79v"/>
+<lb n="79v1"/>kanya, syapa kari vnaṅ myaktakna ika, ndya pvekaṅ tiga saṅkanya ta <space type="binding-hole"/> karih, hava tiga rahasya ṅaran<unclear>n</unclear>ya, vkas niṅ tiga vinuvus <unclear>s</unclear>aṅ paṇḍita, ikaṅ ba-
+<lb n="79v2"/>yu sabda hidap kariya, taha thiga saddana ṅaran ika, ndya pvekaṅ ti-<space type="binding-hole"/> ga rahasya ṅaran<unclear>n</unclear>ya liṅ saṅ paṇḍita nihan, nyaṅ hidap, nyaṅ tutur, saṅ ma-
+<lb n="79v3"/>non, yeka tiga rahasya ṅaran<unclear>n</unclear>ya, saṅka nikaṅ buvana lāvan sarvva <space type="binding-hole"/> janma, nihan drasṭanta irikaṅ tiga rahasya, an ya saṅka niṅ kaṅ buvana
+<lb n="79v4"/>lāvan sarvva janma, nyaṅ pañjut dilahnya mvaṅ tejanya, tuṅgal <space type="binding-hole"/> karika liṅta, tahapih, dudu ṅ dilah dudu ṅ teja, dudu ṅ<supplied reason="lost">ṅ</supplied>apuy,
+
+<pb n="80r"/>
+<lb n="80r1"/>apa byaktanya, pasaṅ ikaṅ pañjut tunvān visumbhunya, bar dumilah <space type="binding-hole"/> taya ikaṅ murub aṅadag satumuduhan gaṅnya yeka dilah ṅa-
+<lb n="80r2"/>ran<unclear>n</unclear>ya, ikaṅ abra<supplied reason="lost">ṅ</supplied> humibəki ṅ<supplied reason="lost">ṅ</supplied>umah yeka tejā ṅaran<unclear>n</unclear>ya, ikaṅ <space type="binding-hole"/> luməṅ sakunaṅ-kunaṅ abaṅ ri tuṅtuṅ niṅ sumbhu yeka apuy ṅaran<unclear>n</unclear>ya, nāhan bya-
+<lb n="80r3"/>kta ni kapuy an dudu ṅ mvaṅ dilahnya lāvan tejanya, ndi ta saṅka nikaṅ <space type="binding-hole"/> dilah lāvan teja, saṅka riṅ apuy ātasih, apa byaktanya saṅka riṅ apuy
+<lb n="80r4"/>ikaṅ dilah lāvan teja, pjahi ikaṅ <supplied reason="lost">ṅ</supplied>apuy, phad ptaṅ jati, ndi <space type="binding-hole"/> ta paran ikaṅ dilah lāvan teja, mara riṅ sunya taya kariya, tahapih, apan liṅ-
+<pb n="80v"/>
+<lb n="80v1"/>nira vaneh mara riṅ sunya taya ktah paraniṅ dilah ṇikaṅ āpuy mvaṅ <space type="binding-hole"/> tejanya, hayva ta maṅkana, ndi pva paran ikaṅ dilah mvaṅ teja, mareṅ apuy
+<lb n="80v2"/>atasih, saṅka riṅ apuy ikaṅ dilah mvaṅ teja, mareṅ <supplied reason="lost">ṅ</supplied>apuy pa-<space type="binding-hole"/> rananyan pjah mulih ri saṅkanya jati nika, apa byaktanya, pasaṅ muvah ikaṅ
+<lb n="80v3"/>pañjut, bar paraṅghata jati nika, mijil niṅ dilah mijil niṅ teja <space type="binding-hole"/>, maṅkana ta yan pjah, hilaṅ niṅ teja, pārəṅ gata ata yan hilaṅ, apa
+<lb n="80v4"/>ta na? sinaṅgah apuy ṅaran<unclear>n</unclear>ya, saṅ manon, apa pinaka dilah-<space type="binding-hole"/> nya ikaṅ hidap, apa pinaka panasnya mvaṅ pinaka tejanya ikaṅ tutur
+
+<pb n="82r"/>
+<lb n="82r1"/>vvit bvit lāvan vinih, vineh ugvananiṅ vvith kaliṅanya, maṅkana <space type="binding-hole"/> lakṣana saṅ manon, ar pakajanma sarvva tumuvuh, kayu dukut ro-
+<lb n="82r2"/>ṇḍon lāvan odvad, apa lakṣana saṅ manvan ar pakajanma i-<space type="binding-hole"/> kaṅ sarvva satva mvaṅ janma vvaṅ, pet rasa niṅ tiga rahasya ri hantiga, thiga ktah lvi<unclear>r</unclear>nika
+<lb n="82r3"/>, myaktakən yan dadi niṅ tiga rahasya ika, apa byaktanya, taṅ kuri-<space type="binding-hole"/> tanya, putihnya, kuniṅ-kuniṅnya, nāhan lvirnyan tigaṅ riti rahasya
+<lb n="82r4"/>sineṅnya kaliṅanya, apan liṅ nikaṅ loka, kama lavan ratih <space type="binding-hole"/> sinaṅgahnya dadi janma lāvan sarira, apa mataṅyan dadi janma lāvan
+<pb n="82v"/>
+<lb n="82v1"/>sarira, ikaṅ kama lāvan ratih, rasektahikaṅ hantiga, apa-<space type="binding-hole"/> n patəmu niṅ hayam lanaṅ lāvan vadvan ika, pasaṅyoga niṅ kama lāvan ra-
+<lb n="82v2"/>tih, dadya, taya kabeh hayam, hayva hanaṅ vukan, marahakə-<space type="binding-hole"/> n tan iṅkaṅ kama lavan ratih dadi janma, mataṅnyan hana vukan, ya hantiga
+<lb n="82v3"/>, hana ta kraṅan ṅaran<unclear>n</unclear>ya yan manuṣa, apa ta karikaṅ dadi janma lāva-<space type="binding-hole"/> n sarira liṅ saṅ paṇḍita, yekaṅ hidap, an ya dadi janma, lāvan sarira
+<lb n="82v4"/>, apa upadyanta rikaṅ hidap an ya dadi janma lāvan sarira, nyaṅ <space type="binding-hole"/> savah duvag ginalā, ginaru tinətəp inahalit ikaṅ lmah, dadinya ka-
+
+<pb n="83r"/>
+<lb n="83r1"/>rika tmahan pari, tahapih tan hana maṅkana, tuhun pinaka paṅandəhan <space type="binding-hole"/> viji athi kaṅ lmah, tuhun pinaka ṅənəm vija ati kaṅ vay, iva maṅkana
+<lb n="83r2"/>tekaṅ tiga rahasya apa kaharannya tiəka, ikaṅ ratih riṅ anak-bhi, <space type="binding-hole"/> apa kaharan vvay ikaṅ kama saṅka riṅ laki-laki, apa kaharan vija
+<lb n="83r3"/>ikaṅ hidap, ndah ikaṅ hidap ta inandəlakan ri pasaṅ yoga niṅ <space type="binding-hole"/> kama lavan ratih, ya ginavay janma lāvan sarira, apa phagavay iri-
+<lb n="83r4"/>ya ikaṅ tutur, syapa magavay saṅ manon, ndah saṅ manon <space type="binding-hole"/> ta gumavay hidapnira pinakavaknira, apa pva mataṅyan hana raray
+<pb n="83v"/>
+<lb n="83v1"/>kasalah ṅaran<unclear>n</unclear>ya, lāvan vuruṅ riṅ gharbavasa, ṅuniveh vvaṅ mtu mati, ni-<space type="binding-hole"/> han lakṣana saṅ manon ar gavay ṣariranira ri garbavasa sakama-kama
+<lb n="83v2"/>ati vahita sarira sira, sakamakama ati vahita sarira ṅaran<unclear>n</unclear>ya, <space type="binding-hole"/> vnaṅ magavay vnaṅ<supplied reason="lost">ṅ</supplied> alə<supplied reason="lost">h</supplied>məh sira, mvaṅ mavak vnaṅ tan pavak, vnaṅ tuṅgal vnaṅ
+<lb n="83v3"/><supplied reason="lost">ṅ</supplied>akveh apa kaliṅanya, arəp sirāmek avak ulihnira maga-<space type="binding-hole"/> vay dadi sira makavaknya, mtu mahurip sira yan maṅkana, aləməh pva sira
+<lb n="83v4"/>makavaka ulihnira magavay, mtu mati avuk<supplied reason="lost">k</supplied> nira yan maṅka-<space type="binding-hole"/> na, nāhan lakṣana saṅ manon ar gavay sariranya ri daləm vtaṅ ṅuni ma-
+
+<pb n="84r"/>
+<lb n="84r1"/>ṅke, kaliṅanya dadi niṅ hidap ikaṅ rat kabeh, nda tan katuduh ikaṅ <space type="binding-hole"/> hidap denikaṅ rat kabeh, kadyaṅganiṅ vrati lāvan citrakara, ndak anurata-
+<lb n="84r2"/>ku vvaṅ vvaṅ<supplied reason="lost">ṅ</supplied>an liṅ nikaṅ citrakara, tinulisnya tekaṅ muka, taṅan suku <space type="binding-hole"/> mata taliṅa, tlas rupa puru saṅkara, vanarṇghganya taye, inuṅkaban pvekaṅ
+<lb n="84r3"/>patani dataṅ tekaṅ manonton tulis kabeh, arəta pari-<space type="binding-hole"/> basanya, hayu niṅ vratya-vratyanya kumva kariya, tuhun hana ma<unclear>ṅ</unclear>
+kana, apa
+<lb n="84r4"/>liṅanya ta karih, hayu niki <unclear cert="low">nikaṅ</unclear> tuliskva juga liṅan ika, ri pamatan <space type="binding-hole"/> riṅ pasusvan riṅ pajariyyan riṅ parambhutan riṅ paruṅan, tan hana juga pa-
+<pb n="84v"/>
+<lb n="84v1"/>calanya, maṅkana liṅ nikaṅ manonton tulis kabeh, aran apa te-<space type="binding-hole"/> kaṅ vrati, tan katuduh ya deniṅ tmahanya apan tmahaniṅ vrati pveka tu-
+<lb n="84v2"/>lis, iva maṅkana tekaṅ hidap lāvan tutur, an tan ka-<space type="binding-hole"/> tuduh ya deniṅ tmahanya hidap pvekaṅ rat kabeh,
+<lb n="84v3"/>vruh pva kitan tmahaniṅ hidap ikaṅ rat kabeh, mvaṅ ikaṅ buva-<space type="binding-hole"/> na lāvan sarira, an hidap ginavay, tutur pagavay, saṅ
+<lb n="84v4"/>manon magavay, yata sinaṅgah janma rahasya ṅaran<unclear>n</unclear>ya, e-<space type="binding-hole"/> ṅət i rahasya niṅ janmanya, ri tlasnya maṅkana, pati tekaṅ haya-
+
+<pb n="85r"/>
+<lb n="85r1"/>m lanaṅ lavan vadvan, siva tka dadanya kalih, petta kaṅ kama <space type="binding-hole"/> lavan ratih, riṅ purusa lāvan baṅgah tan kapaṅgah niyata nika, yan kapa-
+<lb n="85r2"/>ṅgah saṅ manon petan vulikan riṅ sarira, kapaṅguh ika ka-<space type="binding-hole"/> ma lāvan ratih, an pineth riṅ sarira, apayapan maṅke krama
+<lb n="85r3"/>saṅ manon apa rupa siddi, ar pakavak raga mvaṅ harsa, ganal ṣaṅ <space type="binding-hole"/> manon tika tutur, ganal niṅ tutur hidap, ganal niṅ hidap raga mvaṅ har-
+<lb n="85r4"/>sa, ganal ri raga mvaṅ harsa ikaṅ ka<unclear>ma</unclear> lāvan ratih, ganal niṅ kama lāva-<space type="binding-hole"/> n ratih yekiṅ sarira, maṅkana lakṣana saṅ manvan ar pakavak raga mvaṅ
+<pb n="85v"/>
+<lb n="85v1"/>harsa, pakavak krodda lāvan <supplied reason="lost">n</supplied>ilik maṅkana tah, ganal saṅ ma-<space type="binding-hole"/> non ikaṅ tutur, ganal ni tutur hidap ganal niṅ hidap krodda
+<lb n="85v2"/>lāvan <supplied reason="lost">n</supplied>ilik vulat abovana kabaṅan, tka taṅan, tka vuvu-<space type="binding-hole"/> s mamrap mamati, nāhan lakṣana saṅ manon ar pakavak kroda lā-
+<lb n="85v3"/>van <supplied reason="lost">n</supplied>ilik. Tlas ika talihakən ri hilaṅ <supplied reason="lost">ṅ</supplied>ikaṅ raga mvaṅ harsa, <space type="binding-hole"/> kramanyan padam ikaṅ raga mvaṅ harsa, mari mahyun mari melik <unclear>k</unclear>u-
+<lb n="85v4"/>naṅ, lit niṅ sarira ṅaran<unclear>n</unclear>ya, kama lāvan ratih, lit niṅ kama lāvan ra-<space type="binding-hole"/> tih raga ragi mvaṅ harsa, lit niṅ raga mvaṅ harsa hidap, lit niṅ hidap tutur
+
+<pb n="86r"/>
+<lb n="86r1"/>, lit niṅ tutur saṅ manon, lit niṅ saṅ manon tan kna deniṅ réga mvaṅ <space type="binding-hole"/> dvesa loba moha mada matsaryya, luput tar pakavak i kabeh, tar
+<lb n="86r2"/>katmu tan kagrahya tar kagrahaka, nāhan mataṅyan padam ikaṅ <space type="binding-hole"/> kroda lavan <supplied reason="lost">n</supplied>ilik, hilaṅ thaṅ raga mvaṅ harsa yata mataṅyan <supplied reason="lost">n</supplied>asambhava
+<lb n="86r3"/>ikaṅ rat kabeh vkasan, apa mataṅ<supplied reason="lost">ṅ</supplied>yan sambhava, ri tan katon ikaṅ <space type="binding-hole"/> ginavay lāvan pagavay ṅuniveh saṅ magavay, nāhan vutu pratya-
+<lb n="86r4"/>ksa ṅaran<unclear>n</unclear>ya, makarasa sya sambhavali aryya paṇḍita. <supplied reason="lost">o</supplied> Maṅkana <space type="binding-hole"/> tekaṅ kalpasan, apa pinaka rasanya, si krataka, lāvan si dum,
+<pb n="86v"/>
+<lb n="86v1"/>apakrataka ṅaran<unclear>n</unclear>ya gavay, apadum ṅaran<unclear>n</unclear>ya, titah vatəs i-<space type="binding-hole"/> je karmmarmmadadatu dum i kabeh, apa kaliṅanya, vruh<supplied reason="lost">h</supplied> niran paga
+<lb n="86v2"/><supplied reason="lost">ka</supplied>gvay vruhaniran, dumami gavaynira ri sakala niskala, ika saṅ <space type="binding-hole"/> manon ar pagavay dinum nira hiniṅanira gavaynira, apa katuduha-
+<lb n="86v3"/>niṅ gavay saṅ manvan riṅ sakala, nyaṅ <supplied reason="lost">ṅ</supplied>aji mantra kiduṅ carita gradda <space type="binding-hole"/> sloka sastra hiniṅan ika ri davanyi ri təndəkanya, kvehanya lāva-
+<lb n="86v4"/>n kdəkanya, mataṅyan hana saṅ svargga rva, sargga yan aji, sa-<space type="binding-hole"/> sacatuspadika sapada rvaṅ pāda yan kaduṅ carita, maṅkana de saṅ kavi ya-
+
+<pb n="87r"/>
+<lb n="87r1"/>pagavay, byaktanyan hiniṅan kaliṅanya, nihan ta ṅvaṅ tani magavay-ga-<space type="binding-hole"/> vay gaga lāvan sāvah, hiniṅan lvā nika anuṅ kavasa kavnaṅa denya
+<lb n="87r2"/>, nihan ta ṅuṇḍahagi magavay umah, patani kunaṅ hiniṅan ika ri <space type="binding-hole"/> gəṅanya ri davanya mvaṅ ruhurunya, kaliṅanya asiṅ sagavay ika saṅ mano-
+<lb n="87r3"/>n, riṅ sakala ta juga hiṅi gavaynira, iva maṅkana taya hini <space type="binding-hole"/> ṅi gavaynira riṅ niskala, apa katuduhaniṅ gavay saṅ manon riṅ niska-
+<lb n="87r4"/>la, yekiṅ buvana svargga patala, mvaṅ sarvva janma salvir nikaṅ duvag <space type="binding-hole"/> pinakavaknya lāvan pinaka sariranya, apa kaliṅanya, vruhanika
+<pb n="87v"/>
+<lb n="87v1"/>saṅ manon ar pakavak pasarira juga, vruhanyan hiṅiçaka sarira-<space type="binding-hole"/> nya, aṣiṅ sakavak-avaknya, apa byaktanya, nyaṅ rahina lāvan vṅi,
+<lb n="87v2"/>tan pahiṅanakta hika, yan apa ika ya hiniṅana denikaṅ prama-<space type="binding-hole"/> na makavaknya, nihan taṅ kayu dukut roṇḍon odvad, tan pa-
+<lb n="87v3"/>hiṅanakta hika ri gəṅanya lāvan i ruhuranya, yan apa ika ya <space type="binding-hole"/> taṇ hiniṅan denikaṅ pramana makavaknya, nihan taṅ lvah lāvan tasik, ta-
+<lb n="87v4"/>npa hiṅanaktah lāvanika lāvan jro nika, tan hanaṅ dasar lāva-<space type="binding-hole"/> n tpi, nusa para nusa riṅ sabraṅ maṅucap layaran, yan apa ika ya tan
+
+<pb n="90r"/>
+<lb n="90r1"/>sarira yaṅ avay avaknya maṅkana kabeh i salviranya <space type="binding-hole"/> lāvan humi ṅi ya ri gəṅanya lāvan admitanya, davanya lāvan thəṇḍəka-
+<lb n="90r2"/>ya, ya kaliṅaniṅ paribasa dumnya maṅkana, apa byaktanya saṅ mano-<space type="binding-hole"/> n magavay tan ginavay, maṅdumi tan kaduman, maṅhiṅət <unclear>t</unclear>ar kahiṅan riṅ sa-
+<lb n="90r3"/>kala lāvan niskala, nihan avakta kalanta vahu vijil saṅka riṅ garba-<space type="binding-hole"/> vasa, kadi taya ati gra sagəṅ<supplied reason="lost">ṅ</supplied>anya lāvan ruhuranya, tahasih dinuma-
+<lb n="90r4"/>nna ta ya riṅ ghəṅanya lāvan ruhurunya, nihan ta pasuk vtu niṅ bayu <space type="binding-hole"/> hiniṅanna taya, nihan ta vijil niṅ sabda lavan hniṅ hiniṅanna taya, niha-
+<pb n="90v"/>
+<lb n="90v1"/>n ta laku ləmbay luṅguh kdap hiniṅanna taya, nihan taṅ polah niṅ hida-<space type="binding-hole"/> panada karaniṅ manah rupa vasta, paṅalo<unclear>r</unclear> paṅidulnya, piṅsor miṇḍuhuranya, hini-
+<lb n="90v2"/>ṅanna taya, nihan taṅ lapā varəg, turu taṅhi, hiniṅanna taya niha-<space type="binding-hole"/> n taṅ rupa kayovanan tṅah tuvuh lāvan tuha, hiniṅanna taya, apa
+<lb n="90v3"/>taṅ paṅhiṅ saṅ manon irikaṅ samaṅkana kabeh, tutur<supplied reason="lost">r</supplied>ira juga <space type="binding-hole"/> aum ikaṅ samaṅkana kabeh ika kavnaṅ hiniṅan, apa ta paṅhiṅhiṅ
+<lb n="90v4"/>saṅ manon irikeṅ si pati, yan kvaliṅanta ri kami, aum ye-<space type="binding-hole"/> ki pih mevəh tman, sinaṅgah baya dyatmika ṅaran<unclear>n</unclear>ya ikeṅ si pati, apa
+
+<pb n="91r"/>
+
+<lb n="91r1"/>byaktan bavacakra saṅçara avalu-valuy janma nika saṅ manon, <space type="binding-hole"/> yata hi ṅi ka sipati, apa ta deya nika saṅ manon humiṅika sipa-
+
+<lb n="91r2"/>ti, nihan deyanira, iva kadyaṅganiṅ paṇḍe an sumimakan paga-<space type="binding-hole"/> veynya, tinarimakənya ri kavulanya, mari taya byapara irikaṅ kasulpi-
+
+<lb n="91r3"/>kan, dataṅ mara pveka saṅ makonkon apa tekanuṅ sahura, <space type="binding-hole"/> keraṅan <supplied reason="lost">n</supplied>ika saṅ makonkon luṅhā yamet paṇḍe vaneh, i maṅka-
+
+<lb n="91r4"/>na teka saṅ manon, ahiṅ ika si huripnira mvaṅ si pati, rahā-<space type="binding-hole"/> syaniṅ vuvus <unclear>s</unclear>saṅ paṇḍita, sarira tan pinaka sarira, bayu tan pinaka huri-
+
+<pb n="91v"/>
+
+<lb n="91v1"/>p, sabda tan pinaka sabda, hidap tan pinaka hidap, tutur tan pina-<space type="binding-hole"/> ka tutur, saṅ manon mari makadrabya kabeh, niruktinya liṅ aryya pa-
+
+<lb n="91v2"/>ṇḍita, hidapta mari ginave, tutur mari pagavay, saṅ manon <space type="binding-hole"/> mari magavay, kaliṅanya mari byapāra saṅ manon irikaṅ rāt,
+
+<lb n="91v3"/>nāhan deyanira humiṅika sipati, maṅhiṅi tar kahiṅan taṅdumi tar <space type="binding-hole"/> kaduman pveka saṅ manon, yavat ika saṅ manon kahiṅan deniṅ sa-
+
+<lb n="91v4"/>riranya, bayu sabda hidapnya, turunya gavaynya ajinya, tavat pā-<space type="binding-hole"/> pa kapataka saṅ manon yar maṅkana, ya sinaṅgah viku hulun ṅaran<unclear>n</unclear>ya
+
+
+<pb n="92r"/>
+
+<lb n="92r1"/>enak marā vihikan aryya paṇḍita, ar sira maṅdumi tar kaduma-<space type="binding-hole"/> n, maṅhiṅət <unclear>t</unclear>ar kahiṅan, riṅ gavaynira riṅ sakala niskala, tavat purna
+
+<lb n="92r2"/>bava ta saṅ manon, ya sinaṅgah lpas ṅaran<unclear>n</unclear>ya, nāhan kalpasan <space type="binding-hole"/> ṅaran<unclear>n</unclear>ya liṅ mahapaṇḍita. <supplied reason="lost">o</supplied> Taṅkas ṅaran<unclear>n</unclear>ya pet rasaniṅ tu-
+
+<lb n="92r3"/>hu, apan ikaṅ vuku lima, ya tan taṅkəsan ri tuhu, branta magamo-<space type="binding-hole"/> ṅan manah niṅ sisya humidapā yā, apa dras anta an pituhu panaṅkəsa i-
+
+<lb n="92r4"/>rikaṅ vuvus kabeh, kadyaṅganiṅ banava bahitra havani manabraṅ, ya <space type="binding-hole"/> tan apusən katirnya. Byaka ta yan saka surikat pakəkəsnya
+
+<pb n="92v"/> 
+
+<lb n="92v1"/>kabeh, atmahan aṅumbhuṅ kasasah ikaṅ banava bahitra, kunaṅ pva-<space type="binding-hole"/> ri hana nikaṅ apus-apus hduk hvi, nāhan mataṅya paripurṇnā e-
+
+<lb n="92v2"/><unclear cert="low">n</unclear>sak apagəh, vnaṅ taya mamava baṇḍa paribaṇḍa mariṅ sabraṅ, nihan ta ṅvaṅ <space type="binding-hole"/> mamaṅuna umah patani kunaṅ, ya tan <unclear>n</unclear>apusana ṅ vṇaṅ h usuk hatəp ta
+
+<lb n="92v3"/>viṅsali, sak bəyātasurikat ata niyata nika kabeh, <space type="binding-hole"/> inapusan pvaya kabeh hduk hvihada, atguh taya vnaṅ paṅəban a-
+
+<lb n="92v4"/>pagəh vnaṅ paluṅguhan lāvan paturvan, iva maṅkana tekaṅ vuvus ka-<space type="binding-hole"/> beh, ya tan taṅtəsan riṅ tuhu, apa ta kavi vastaniṅ si tuhu, nihan
+
+
+<pb n="93r"/>
+
+<lb n="93r1"/>, nyaṅ buvana, enaka karika saṅgahanta buvana, yan apa ika yan adva <space type="binding-hole"/> yan buvana, kunaṅ saṅka riṅ tuhunyan buvana, nāhan mataṅyan enak a-
+
+<lb n="93r2"/>pagəh sinaṅguh buvana, nihan taṅ sunyataya, enaka karika saṅgahanta <space type="binding-hole"/> sunyataya, yan apa ika yan adva yan sunyataya kunaṅ suka tuhunyan
+
+<lb n="93r3"/>sunyataya, nāhan mataṅnyan enak apagəh saṅgah <supplied reason="lost">h</supplied>anta sunya ta-<space type="binding-hole"/> ya, maṅkana tekiṅ <supplied reason="lost">ṅ</supplied>avak, enaka karika saṅgahanta sarira, yan apa ika ya-
+
+<lb n="93r4"/>n adva yan sarira, kunaṅ saṅka ri tuhunyan sarira, nahan ta mataṅyan <space type="binding-hole"/> enak apagəh sinaṅgah sarira, maṅkana tekaṅ bayu sabda hidap, enaka kari
+
+<pb n="93v"/>
+
+<lb n="93v1"/>kasaṅguhan bhayu sabda hidap, yan apa ika yan adva yan bhayu sabda <space type="binding-hole"/> hidap, kunaṅ saṅka riṅ thuhunyan bhayu sabda hidap, nahan mataṅyan ena-
+
+<lb n="93v2"/>k apagəh sinaṅgah bayu sabda hidap, si tuhu ataka enak a-<space type="binding-hole"/> pagəh pamituhvanariya, apa kāliṅanya, tuhva taṅ saṅ manon an sira
+
+<lb n="93v3"/>meṅ<unclear>ə</unclear>ta an sira maṅdumi tar kaduman, maṅhiṅi <unclear>ət</unclear> tar kahiṅan riṅ sa-<space type="binding-hole"/> kala niskalā pinaka rasanya riṅ kalpaçan, tuhva taṅ saṅ manon meṅəta
+
+<lb n="93v4"/>an sira magavay tan ginavay, ar gavay ikaṅ hidap, tutur pi-<space type="binding-hole"/> naka pagavay, mataṅnyan asambava ikaṅ rat kabeh, pinaka rasanya riṅ pratya-
+
+
+<pb n="94r"/>
+
+<lb n="94r1"/>kṣa, tuhva teka saṅ manon meṅəta i laṇḍəp niṅ rvi, ṅoni ta-<space type="binding-hole"/> hi, panas niṅ <supplied reason="lost">ṅ</supplied>apuy, tar ambahaya, vvilanta ṅaran ika, pinaka rahasanya ri 
+
+<lb n="94r2"/>luṅgah, tuhva teka saṅ manon meṅ<unclear>ə</unclear>ta an pinaka papha ika si trasnā <space type="binding-hole"/> riṅ sakala niskala ya riṅ thapa nistrasnā pinaka viseṣanya, pinaka rasanya
+
+<lb n="94r3"/>ri tapa, tuhva teka saṅ manon meṅəta an ṣi lupa biparita <space type="binding-hole"/> pinaka papanya riṅ sakala niskala rikaṅ sandi, si tutur pinaka visesanya ri
+
+<lb n="94r4"/>saṅ sandi, apa kaliṅanya, hayva juga saṅ manon mituhu ikaṅ ma-<space type="binding-hole"/> dva, apa madva ṅaran<unclear>n</unclear>ya, nyaṅ glar pujādyana samaddi, mvaṅ lpa-lpa carita
+
+<pb n="94v"/>
+
+<lb n="94v1"/>adi deva niṅ hyaṅ devata, baṭara baṭari svargga lāvan patala, <space type="binding-hole"/> nāhan madva ṅaran<unclear>n</unclear>ya, yavat ika saṅ manon umituhu ikaṅ kabeh, ta-
+
+<lb n="94v2"/>vat pāpa kapataka saṅ hyaṅ pramana, enak mara vihikan ṣaṅ manon <space type="binding-hole"/> ri dvan ika kabeh, yata sinaṅgah ləpaṣ ṅaran<unclear>n</unclear>ya, liṅ aryya paṇḍita nāha-
+
+<lb n="94v3"/>n taṅkəs ṅaran<unclear>n</unclear>ya. Nihan tambey niṅ tulis ṅaran<unclear>n</unclear>ya, <space type="binding-hole"/> apa tinuduh saṅ paṇḍita ri tambay ni<unclear>ṅ</unclear>
+ tulis, nihan otvat niṅ taṅa-
+
+<lb n="94v4"/>n kanan keri tulis <supplied reason="lost">ṣ</supplied>alit muṅgviṅ lpa-lpa niṅ taṅanta, ədda-<space type="binding-hole"/> se ika apa siniṇḍən ika, kratya kartaka, krataka ṅaran<unclear>n</unclear>ya gavay,
+
+
+<pb n="95r"/>
+
+<lb n="95r1"/>krat ṅaran<unclear>n</unclear>ya taṅan, apa kaliṅanya, tan hana gavay luput <space type="binding-hole"/> ri taṅan, yata mataṅyan tinuduh ikaṅ otvat tuliç niṅ taṅanta
+
+<lb n="95r2"/>, apan pinaka soṅ pinaka tatu niṅ gavay saṅ manon riṅ niskala ika, <space type="binding-hole"/> marahakən yan saṅ magavay riṅ sakala niskala kaliṅan ika, apa katu-
+
+<lb n="95r3"/>duh<supplied reason="lost">h</supplied> aniṅ gavay saṅ manon riṅ niskala, yekiṅ buvana svargga patala, <space type="binding-hole"/> mvaṅ sarvva janma salvir ikaṅ duvag pinakavaknya, apa ta lvir nikaṅ duvag
+
+<lb n="95r4"/>pinakavaknya ṅaran<unclear>n</unclear>ya, yekiṅ prativi apah teja bayu akasa, nyaṅ <space type="binding-hole"/> vintaṅ vulan āditya vaṅkavaṅ kuvuṅ-kuvuṅ ṣaṅhūb kukus, mega hu-
+
+<pb n="95v"/>
+
+<lb n="95v1"/>dan kilat glap gərəh gəntər patər rahu handaru para manuh, mvaṅ <space type="binding-hole"/> trana tarulata gulma, pasu paksi sari sarpastava rajamaṅadi, sesi niṅ lvah
+
+<lb n="95v2"/>lāvan tasik, sarumaṅkaṅ sakumilip riṅ prati<supplied reason="lost">ti</supplied>vi, makadi sarira sa <space type="binding-hole"/> maṅ<supplied reason="lost">ṅ</supplied>ke, nāhan ikaṅ sinaṅgah duvəg pinakavak ṅaran<unclear>n</unclear>ya, apa ta ka-
+
+<lb n="95v3"/>tuduhaniṅ gavay saṅ manon ri sakala, ri ṣdaṅnyan rakut ikiṅ <space type="binding-hole"/> bava sarira samaṅke, nyaṅ <supplied reason="lost">ṅ</supplied>aji kavya saṅkya prakarana kalpa purana, vinya-
+
+<lb n="95v4"/>ya vismaya candaga nite, ṅuniveh taṅ glar pujadyana samadi, mvaṅ p…<space type="binding-hole"/> liṅga liṅira, pratima bimba vihara salakamulan parhyaṅan, ce-
+
+
+<pb n="96r"/>
+
+<lb n="96r1"/>tya candi prasada stapa, nāhan ta kveh niṅ gavay saṅ manon riṅ saka-<space type="binding-hole"/> lā kabeh ṣdaṅnyan rakut ikiṅ janma sivva, ika ta gavay saṅ manon
+
+<lb n="96r2"/>riṅ sakala kabeh, nir saṅçaya sira irika, yavat ika saṅ manon mi-<space type="binding-hole"/> lu katut kekət deni gavaynya ri sakala ni<supplied reason="lost">ṅ</supplied> skāla, tavat pāpa ka-
+
+<lb n="96r3"/>pataka ika saṅ manon yan maṅkana, enak mara vihikan saṅ mano-<space type="binding-hole"/> n aviseṣā, yata mataṅyan nirsaṅçaya ta juga huvus. Nihan ka-
+
+<lb n="96r4"/>pindvaniṅ tulis, sabda saṅ kiriman, ya pinaka seṅ saṅ paṇḍita <space type="binding-hole"/>, apa tinud<unclear cert="low">j</unclear>unira, nyaṅ gola kalih viji, mata kanan keri, apa ka-
+
+<pb n="96v"/>
+
+<lb n="96v1"/>liṅanya, liriṅ niṅ mata ri kavan tut niṅ mata ri tṅən, liriṅ niṅ <space type="binding-hole"/> mata ri təṅa<unclear cert="low">ə</unclear>n tut niṅ mata ri kivan, apa kaliṅanya yuga pat pa-
+
+<lb n="96v2"/>rəṅga ta jatinya, apa ta siniṇḍi nika, hidap lāvan tutur <space type="binding-hole"/> apa kaliṅanya, laku ni hidap laku niṅ tutur, laku niṅ tutur laku
+
+<lb n="96v3"/>niṅ hidap, yuga pat parəṅga ta jati nika, apa rahina ni vuvu<unclear>s</unclear> <space type="binding-hole"/> saṅ paṇḍita, sahinidap nikaṅ sarat ya kinatuturan ikaṅ sabuvana, sakina-
+
+<lb n="96v4"/>tuturanya hinidapnya, apa kinatutur ikaṅ sarat mvaṅ sahi-<space type="binding-hole"/> nidap nikaṅ sabuvana, nyaṅ svargga patala, yakṣa bhuta rakṣasa pisaca, ṅuni-
+
+
+<pb n="97r"/>
+
+<lb n="97r1"/>veh adi deva niṅ hyaṅ devata, baṭa<unclear>ra</unclear> baṭari sivah budda, nāhan hinida-<space type="binding-hole"/> p nikaṅ sarat, apa kinatuturanya, sakveh nikaṅ gla puja patulatur vus rinasi,
+
+<lb n="97r2"/>mvaṅ lek v<unclear>ə</unclear>ṅi, pañcavara sadva<supplied reason="lost">va</supplied>ra ṣaptavara, sandi divasa niṅ tahun, nāha-<space type="binding-hole"/> n kinatuturin ikaṅ sabuvana, nityaseṅ rahineṅ kulam ikaṅ lokan hi-
+
+<lb n="97r3"/>dapa ika lāvan kumatuturi ika, ya hinviniṅ manahnya sarira ri <space type="binding-hole"/> tan p<unclear>ə</unclear>gat, hayva ta saṅ manon milu maṅkana, yavat ika saṅ manon mi-
+
+<lb n="97r4"/>lu humidap ika lāvan kumatuturi ika, tavat pāpa <space type="binding-hole"/> kapataka saṅ manon yan maṅkana, enak mara vihikan aryya paṇḍi-
+
+<pb n="97v"/>
+
+<lb n="97v1"/>ta ri kaliṅan ika, yata mataṅyan nir vikalpa ta jughā huvus. <space type="binding-hole"/> Nihan kapin tiga niṅ tulis tambāy sa paṇḍita maṅucap rahasya,
+
+<lb n="97v2"/>purvva saṅ manon vruh ryy avaknira an darmma visesa l<unclear>ə</unclear>pasnya sakeṅ buvana <space type="binding-hole"/>, luputnya sakeṅ sarira, tan pa<supplied reason="lost">k</supplied> bayu sabda hidap ṅuniveh sunyataya pa-
+
+<lb n="97v3"/>ramarta, luput tan pakavak iki samaṅkana kabeh, pva pinākava-<space type="binding-hole"/> k saṅ manon, y<unclear cert="low">m</unclear>ataṅyan rahasya, ya sinaṅguh darma hineṅ sarira, ni-
+
+<lb n="97v4"/>tyasa dumilah kuməñar tan pakapad<unclear>ə</unclear>man ri rahineṅ kulam, <space type="binding-hole"/> lumə̄ṅ rahina sadakala, nihan ta saṅ hyaṅ aditya upamana, an tan hana u-
+
+
+<pb n="98r"/>
+
+<lb n="98r1"/>made tejanira ri bhuvana, parimakta kveh nikaṅ vintaṅ, kadi hinatap <space type="binding-hole"/> ikaṅ gagana denya, inakanikan vnaṅa maṅrahinakan taya, tahasih ta-
+
+<lb n="98r2"/>n vnaṅ<supplied reason="lost">ṅ</supplied> atah umade teja nika saṅ hyaṅ <supplied reason="lost">ṅ</supplied> aditya ri<unclear>ṅ</unclear>
+ bhuvana, aum tu-<space type="binding-hole"/> hu ikaṅ gagana kadi hinatap denya, ndan ādmit ika pvaṅkulun, ya-
+
+<lb n="98r3"/>n kvaliṅanta, aum tuhu ika, nihan taṅ vulan davag purṇnama, <space type="binding-hole"/> pada ghaṅnya <unclear>gəṅnya</unclear> pada vlunya tan vnaṅ<supplied reason="lost">ṅ</supplied> atah umade teja saṅ hyaṅ aditya, apuy ka-
+
+<lb n="98r4"/>ri vnaṅ<supplied reason="lost">ṅ</supplied>a, handaru kari vnaṅ<supplied reason="lost">ṅ</supplied>a, kilat kari vnaṅ<supplied reason="lost">ṅ</supplied>a, niṅ vulan sḍaṅ purṇnama pva <space type="binding-hole"/>, padda gəṅnya pada vlunya, tan vnaṅ atah umade teja saṅ hyaṅ aditya, lā-
+
+<pb n="98v"/>
+
+<lb n="98v1"/>van <supplied reason="lost">n</supplied>ika saṅ hyaṅ ditya, sakakahana nirakta jugan rahiṇa denira <space type="binding-hole"/>, svargga pathala kahananira, svargga patala rahinān dira, madyapada kahininira,
+
+<lb n="98v2"/>madyapāda rahiṇa denira, sakahananira, ta jugan suluhi ava-<space type="binding-hole"/> knira, tumejani sariranira, kaliṅanya sakahanan saṅ hyaṅ <supplied reason="lost">ṅ</supplied> aditya ta jugan
+
+<lb n="98v3"/>rahiṇa denira, iva rupa kalakṣana, maṅkana teka saṅ manon <space type="binding-hole"/>, an tan hana luməvihi pramananira, riṅ buvana lavan sarvva janma, saṅ manon a-
+
+<lb n="98v4"/>tah pramanā mavak ya kabeh tan hana vaneh, riṅ sarira mvaṅ bayu ṣa-<space type="binding-hole"/> bda hidap, saṅ manon ātah pramana makadrabya ya kabeh tan hana vaneh
+
+
+<pb n="99r"/>
+
+<lb n="99r1"/>, tatan hana juga luməvihi sira pramana, tejanira tovi tan hana ta-<space type="binding-hole"/> h luməvihi tejanira riṅ rat, adva devata saṅ hulun pih, an tan hana umade
+
+<lb n="99r2"/>tejanira riṅ buvana, apan maṅhiras ri teja saṅ hyaṅ aditya pva rana-<space type="binding-hole"/> k devata saṅ hulun maṅke, tovi kasahaban deniṅ v<unclear>ə</unclear>ṅi, kakusa deniṅ p<unclear>ə</unclear>taṅ, ya
+
+<lb n="99r3"/>n kva kita, tuhu ika, yakta mataṅyan hanaṅ maguru lāvan mana-<space type="binding-hole"/> mbah ṅaran<unclear>n</unclear>ya riṅ kaṅ loka, majarakan kap<unclear>ə</unclear>taṅ<supplied reason="lost">ṅ</supplied>an lāvan pāpa niṅ janma sa-
+
+<lb n="99r4"/>maṅke kaliṅanya, apan ri pda? nyan ratu tikiṅ sarira maṅke <space type="binding-hole"/>, ika saṅ manon an kasahabab<unclear cert="low">n</unclear> deni<unclear>ṅ</unclear>
+ v<unclear>ə</unclear>ṅi mvaṅ kakusa deniṅ p<unclear>ə</unclear>taṅ, lā-
+
+<pb n="99v"/>
+
+<lb n="99v1"/>van an paṅhiras i teja saṅ hyaṅ aditya, kunaṅ i vaṅsilnya saka <space type="binding-hole"/> riṅ rupa samaṅke, irikan tan paṅhiras i teja saṅ hyaṅ <supplied reason="lost">ṅ</supplied>aditya, apa
+
+<lb n="99v2"/>byaktanya, taturu mne ṅ kulam riṅ mav<unclear>th</unclear>asyakala, vintaṅ vulan pañju-<space type="binding-hole"/> t tan hana, p<unclear>ə</unclear>taṅ pəpət agamlan, lvir nikaṅ v<unclear>ə</unclear>ṅi vetnyanya p<unclear>ə</unclear>taṅ ika, təp matu-
+
+<lb n="99v3"/>ru ta kita ṅipi, kap<unclear>ə</unclear>taṅ<supplied reason="lost">ṅ</supplied>an ta ri kita ṅkā ri paṅipyan, tahapih rahina <space type="binding-hole"/> juga ya, ika tan rahina ṅkā ri paṅipyan rahina tan deniṅ vulan pañju-
+
+<lb n="99v4"/>t ṅuniveh aditya, tan hana ika kabeh ṅka riṅ svap<unclear>ə</unclear>na lakṣana, ra-<space type="binding-hole"/> hina juga ya ṅkā ri paṅipyan, deniṅ kəñar nikiṅ damar haneṅ ṣarira, teja saṅ</ab>
+</div>
+<div>
+
+<pb n="SHH_XX0"/>
+
+<ab>onzekere	bladen
+
+afgebroken</ab>
+</div>
+<div>
+    <pb n="SHH_XXIr"/>
+
+<ab><note>(lontar afgebroken) ….</note>
+
+<lb n="XXIr1"/>tgal malva, manumpak ryy agra nikaṅ gunuṅ <space type="binding-hole"/> maruhur kunaṅ, umulata ta kita umava lekana dasa desa, disaktayava?
+
+<lb n="XXIr2"/>sa desa riṅ lor kidul kulvan vetan <space type="binding-hole"/>, agiligilikta katonanikaṅ isor <supplied reason="lost">r</supplied>i ruhur, apa tan hana varana
+
+<lb n="XXIr3"/>rikaṅ tgal malvā, mvaṅ atta numpak ryya-<space type="binding-hole"/> gra nikaṅ gunuṅ maruhur kunaṅ, iva maṅkana ta denta tumon ikaṅ rat kabeh
+
+<lb n="XXIr4"/>sukər denikiṅ sarira, than katon ikeṅ <space type="binding-hole"/> de saṅ kahiriṅ mvaṅ kapu<unclear>ṅ</unclear>
+kur denta, tovi pira saraniṅ mata rvaṅ viji mata sadu li-
+
+<pb n="SHH_XXIv"/>
+
+
+<lb n="XXIv1"/>nta, kunaṅ i vaṅçil saṅ hyaṅ pramana sakeṅ sa-<space type="binding-hole"/> rira, lpasnya sakeṅ sarira, ar pakavak laṅgəṅ niṅ tutur tlaṅ niṅ saṇdi jñāna u-
+
+<lb n="XXIv2"/>lik katonanikaṅ bhuvana lāvan dasa de-<space type="binding-hole"/> sa denira apa kaliṅanya, kadi saṅ manon kna riṅ turu, tur kna riṅ tu-
+
+<lb n="XXIv3"/>kahilaṅan, tar tka riṅ pati, sariranira ju-<space type="binding-hole"/> ga kateka kna ri druva mapasah avak, kunaṅ bayu sabda hidapnira, a-
+
+<lb n="XXIv4"/>laṅan ṅuni veh avuka, karuhun ta <space type="binding-hole"/> saṅ madrabya, makin tan pakahilaṅān, lavan ta kneṅ pati, apa humi-</ab>
+</div>
+<div>
+    <pb n="SHH_XX1r"/>
+
+<ab><note>(lontar afgebroken) ….</note>
+
+<lb n="XX1r1"/>vasta, kinonakan saṅ paṇḍita kayatnakna i saṅ <space type="binding-hole"/> sevaka darmma, apa ta kavi vastanya  nihan, ri huvus nika saṅ manon makavak
+
+<lb n="XX1r2"/>sandi jñāna, lpasnya sakeṅ buvana, luputnya sa-<space type="binding-hole"/> keṅ sarira, rakutən yatekaṅ sarira ganal, sarira lit, sarira lilaṅ,
+
+<lb n="XX1r3"/>sukṣmā, yatavakanya, tavat pāpa kapataka saṅ mano-<space type="binding-hole"/> n yan maṅkana, hana ta sarira lit, ya siniṅgah hurip ṅaran<unclear>n</unclear>ya, ndya lvi-
+
+<lb n="XX1r4"/>in rivut pata seduṅ halisyus halivavar, sariralit pi-<space type="binding-hole"/> hurip ṅaran ika, ika ta vka nika saṅ manon rakutən yan huvus
+
+<pb n="SHH_XX1v"/>
+
+<lb n="XX1v1"/>t sakeṅ bhuvaṇa, lpasnya sakeṅ sarira, hayva tiṅgalakən ika, <space type="binding-hole"/> tan avaka saṅ manon turuṅ byapara pāpa ikaṅ ta sarira ganal ṅaran<unclear>n</unclear>ya saṅ pa-
+
+<lb n="XX1v2"/>anonta kita sarirākiñcit matra sakdapa katonanya <space type="binding-hole"/>, lvirnya anu para manuh kilat glap vaṅkava kuvuṅ-kuvuṅ, vintaṅ vulan adi-
+
+<lb n="XX1v3"/>taṅ sarvva satva tumuvuh makadi çarira samaṅke, ya <space type="binding-hole"/> sarira ganal ṅaran<unclear>n</unclear>ya sinaṅgah sapati, ika ta rakutən saṅ manon a-
+
+<lb n="XX1v4"/>miṅgalakan sariranya, lpasnya sakeṅ buvana, <space type="binding-hole"/> hayva tiṅgalakən ike tan avaka saṅ manon ivə̄ turuṅ byapara pāpa i-</ab>
+</div>
+<div>
+<pb n="SHH_XX3r"/>
+
+<ab><note>(voorstuk afgebroken) </note>
+
+<lb n="XX3r1"/>….ka ratu niṅ pāpa, maṇḍala niṅ kḍa havici, ka-<space type="binding-hole"/> di ta maṅke yaṅ atah lviranyenikiṅ bhuvana, lāvan ṣa<unclear>r</unclear>vva janma, yan tan paka-
+
+<lb n="XX3r2"/>….1, kunəṅ apan lina makavak bhiparitah ikaṅ <space type="binding-hole"/> saṅ manon, nāhan mataṅyan laṅgaṅ ikaṅ bhuvana lāvan sa<unclear>r</unclear>vva janma, yata
+
+<lb n="XX3r3"/>….ikan ikaṅ viparita, tan avaka saṅ mano-<space type="binding-hole"/> n ri huvusnyan l<unclear>ə</unclear>pās sakeṅ sarira, luputnya sakeṅ bhuvana, apan
+
+<lb n="XX3r4"/>….pāpa ika, nāhan kalakarpat ṅaran<unclear>n</unclear>ya <space type="binding-hole"/> tan avaka saṅ manon liṅ saṅ paṇḍita, pinaka b<unclear>h</unclear>aya riṅ niskala vasta<unclear cert="low">u</unclear>.
+
+<pb n="SHH_XX3v"/>
+
+<lb n="XX3v1"/>….kṣmā, ya sinaṅgah turu ṅaran<unclear>n</unclear>ya, ikaṅ pinaka va-<space type="binding-hole"/> kta ri<unclear cert="low">ṅ</unclear>
+ paṅipyan, ika ta rākutən saṅ manon, avakanyan huvus
+
+<lb n="XX3v2"/>….ran<unclear>n</unclear>ya, l<unclear>ə</unclear>pasnya sakeṅ buvana, hayva tan avaka <space type="binding-hole"/> saṅ manon tiṅgalakan, turuṅ ivə byapara pāpa ika, yaya malu-
+
+<lb n="XX3v3"/>….ka yan maṅkana, yan pakavaka ṅ atma aryyakə-<space type="binding-hole"/> n ike. Hana ta sarira lilaṅ, ya sinaṅgah viparita ṅaran<unclear>n</unclear>ya, lina riṅ sunyataya
+
+<lb n="XX3v4"/>….vayavasamap<unclear cert="low">v</unclear>ita riṅ bayu laṅgaṅ. Mvaṅ liṅ-<space type="binding-hole"/> laṅ hniṅ niravarana umaṅguhakan rasa niṅ aturu tan paṅipi, tumənva ta
+</ab></div>
+<div>
+<ab><pb n="SHH_XX4 or 81r"/>
+
+<lb n="81r1"/>ava rahina laṅgaṅ juga ikaṅ dig desantara, apa hetu nika saṅ çevaka <space type="binding-hole"/> darmma anena kapa<unclear>ṅ</unclear>
+gih, denira maṅguh byakta niṅ vuvus <unclear>s</unclear>aṅ guru, ri kapaṅguhanikaṅ rahi-
+
+<lb n="81r2"/>na sada, damar laṅgaṅ, haneṅ sarira, hanamata rahina sada liṅ saṅ viku vaneh <space type="binding-hole"/>, ndya lvirnya nihan, hana rakva manik ṣakuruṅan gə<unclear>ṅ</unclear>
+nya, umuṅgu ri vit nikaṅ kalpa-
+
+<lb n="81r3"/>taru, tejanya ikaṅ manik pameṅtan agəṅnya, yata pinaka sulu-<space type="binding-hole"/> h nika kadevatan rakva, nāhan rahinasada liṅ<supplied reason="lost">ṅ</supplied> çaṅ viku vaneh, nihaṅ taṅ
+
+<lb n="81r4"/>sunyataya, liṅlaṅ h<unclear>ə</unclear>niṅ niṅr avarananya, mvaṅ nir aṣrayanya, rahina sada ti <space type="binding-hole"/> ke liṅnya, nihan taṅ manah ri vruhnya, riṅ rahina vṅi, rahinasada tika liṅnya
+
+<pb n="SHH_XX4 or 81v"/>
+
+<lb n="81v1"/>valiṅnya manah ikaṅ manah ika maṅavruhi, tan vruh yan paṅavruh <space type="binding-hole"/> ikaṅ manah, kunaṅ saṅka riṅ mudanya, nāhan mataṅyan saṅgah ikaṅ manah maṅavru-
+
+<lb n="81v2"/>hi, nāhan rahinasada liṅ nikaṅ viku para loka, ndya pvekaṅ rahi-<space type="binding-hole"/> nāsada liṅ saṅ utama paṇḍita, yan kvaliṅanta, ri kapaṅgah niṅ laṅgaṅ niṅ
+
+<lb n="81v3"/>tutur tlaṅ ni sandhi jñāna, nāhan rahinasadā ṅaran<unclear>n</unclear>ya, rahi-<space type="binding-hole"/> syanya vak saṅ manon, pinet nikaṅ sabuvana, ṅuniveh saṅ vatək viku
+
+<lb n="81v4"/>, nāhan kapintiganiṅ tulis ṅaran<unclear>n</unclear>ya liṅ mahapaṇḍita. Ka-<space type="binding-hole"/> lakarpat ṅaran<unclear>n</unclear>ya, hurip, pati, turu, viparita, nāhan pinaka pā-</ab>
+
+</div>
+<div>
+   <ab> <pb n="SHH_XX5r"/>
+ 
+
+<lb n="XX5r1"/>umapa ta lvir nika saṅ manon, ar tiṅgalakan sariranira, lpasnya sa-<space type="binding-hole"/> keṅ bhuvana, ar pakavāk laṅgaṅ niṅ tutur tlaṅ ni<unclear>ṅ</unclear>
+ saṇḍi jñānna, kaṣṭe-kaṣṭe yata ba-
+
+<lb n="XX5r2"/>hnih, sukṣma tdatnopala byate, iva kadyaṅganiṅ arəp haneṅ i spə-<space type="binding-hole"/> n, sukṣma tika tan katon nopala byate, tan hana kapaṅguh<supplied reason="lost">h</supplied>an<unclear>n</unclear>ya
+
+<lb n="XX5r3"/>, tan panas ran atis, tan hala tan hayu katəmva nikaṅ apuy <space type="binding-hole"/>, yadyastun hanaṅ hala hayu mvaṅ panas tis irikaṅ <supplied reason="lost">ṅ</supplied>apuy, ta-
+
+<lb n="XX5r4"/>n suka duhka nikaṅ <supplied reason="lost">ṅ</supplied>apuy ika, suka duhka vikaṅəsyən <supplied reason="lost">n</supplied>i-<space type="binding-hole"/> ka, ya kapve luput ri suka duhka mvaṅ panas tis kapva ikaṅ <supplied reason="lost">ṅ</supplied>apuy
+
+<pb n="SHH_XX5v"/>
+
+
+<lb n="XX5v1"/>, aum luput, apa byaktinya, mijil jati nikaṅ apuy ṣaṅ ka-<space type="binding-hole"/> ri ṅəsyən, maka hetu panas tis, pjah pveka ṅ apuy luṅ satma rimaṅ, ka-
+
+<lb n="XX5v2"/>ri teka panas tis kavkas rikaṅəsyən, apa byaktanya, gamə-<space type="binding-hole"/> l ikeṅ ṅəsyən apanas jati nika, ri vkasan atis ikaṅ ṅəsyən,
+
+<lb n="XX5v3"/>nāhan byakta nika ṅəsyən an ya kahananika suka <space type="binding-hole"/> duhka mvaṅ panas tis, kunaṅ ikaṅ <supplied reason="lost">ṅ</supplied>apuy luput ya lpas irikaṅ
+
+<lb n="XX5v4"/>pāpa samaṅkana <choice><unclear>kabye</unclear><unclear cert="low">kabeh</unclear></choice>, yadvat ri denyan maṅkana, tadvat <space type="binding-hole"/> maṅkana ta saṅ manon an luput riṅ hala hayu mvaṅ suka duhka</ab>
+</div>
+<div>
+<ab><pb n="SHH_XX6r"/>
+
+
+<lb n="XX6r1"/>kitanon <supplied reason="lost">n</supplied>aṅ rəṅə̄ agavay bayu sabda hidap, lena sakeṅ sahaṅgāra <space type="binding-hole"/> pakajñāna juga ya, parəṅ mtā lavan sariranya, vruh kari kita andadya tapə-
+
+<lb n="XX6r2"/>l lāvan vaṅkay, pagavayākna bayu sabda hi<unclear>da</unclear>p, yan apa ikan maṅka-<space type="binding-hole"/> na, yan kavnaṅ ya gavayan, marapvan vruh mola masabda mambhək, dadya
+
+<lb n="XX6r3"/>ya maṅkana, byaktanya tan kavnaṅ ya gavayan, pinupuh ikuṅ tipəl, <space type="binding-hole"/> avuk, ikaṅ vaṅkay, nāhan mataṅyan<supplied reason="lost">a</supplied> hana mati ṅaran<unclear>n</unclear>ya rikaṅ sarvva janma
+
+<lb n="XX6r4"/>, i tan hana<supplied reason="lost">na</supplied>niṅ agavay bayu sabda h<unclear>i</unclear>dap kaliṅanya, hlaṅ sa-<space type="binding-hole"/> ṅke sarira, vaṅkay ta ṅaran<unclear>n</unclear>ya, yapvan turuṅ hana paripurna ika bayu sabda hi-
+
+<pb n="SHH_XX6v"/>
+<lb n="XX6v1"/>dap riṅ sarvva janma, posaka subadda tga<unclear cert="low">u</unclear>h sarira nikaṅ sarvva janma, yata ma<supplied reason="lost">ṅ</supplied>-<space type="binding-hole"/> taṅnyaṇ niṅhi ikiṅ bayu sabda hidap jugha visesa pinaka hurip ni-
+
+<lb n="XX6v2"/>ka sarvva janma, ṅuniveh ikaṅ rat kabeh, ndan saṅ pandita juga sira meṅə-<space type="binding-hole"/> t an bayu sabda hidap pinaka hurip nikaṅ rāt kabeh, kunaṅ ikaṅ
+
+<lb n="XX6v3"/>loka vulaṅan ya tan vruh i sinaṅgahnya jñāna viseṣa, niha-<space type="binding-hole"/> n upamana ri vulaṅun <supplied reason="lost">n</supplied>ika, kadyaṅga nikaṅ ṅvaṅ vulaṅun ri desa a-
+
+<lb n="XX6v4"/>pa dumehnya vulaṅun… a ri hana nikaṅ alas asukat ləbak gunuṅ <space type="binding-hole"/> lvah tasik tgal malvā, savuk rəm ptaṅ kunaṅ yata dumeh</ab>
+         </div>
+      </body>
+  </text>
+</TEI>
