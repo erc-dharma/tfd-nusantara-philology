@@ -28,44 +28,64 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-                    <!-- only the handdesc can be filled in at this stage -->
-               <witness xml:id="fakeID">
-                        <!-- Give your witness an unique identifier -->
+              <witness xml:id="EdSSA">
+                  <abbr type="siglum">Ed<hi rend="superscript">SSA</hi></abbr>
+                  <bibl><ptr target="bib:SriSukesiAdiwimarta1993_01"/></bibl>
+              </witness>
+              <witness xml:id="EdZ">
+                  <abbr type="siglum">Ed<hi rend="superscript">Z</hi></abbr>
+                    <!-- <bibl><ptr target="bib:.../></bibl> Zoetmulder, Sekar Iniket, Drukproef-->
+              </witness>
+               <witness xml:id="L">
+                 <abbr type="siglum">L</abbr>
                   <msDesc>
                      <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
-                        <repository>Lontar</repository>
-                        <idno>Or. 23732</idno>
+                        <settlement>Leiden, the Netherlands</settlement>
+                        <institution>Universiteit Leiden</institution>
+                        <repository>Leiden University Libraries</repository>
+                        <idno>Or. 5024</idno>
                      </msIdentifier>
                      <msContents>
-                                <!-- the msContents isn't mandatory -->
+                        <!-- the msContents isn't mandatory -->
                         <msItem>
-                           <author>Śāntarakṣita</author>
-                           <title>Vipañcitārthā</title>
-                           <!-- You can also add a colophon if needed -->
-                           <!--<colophon></colophon> -->
+                           <colophon></colophon>
                         </msItem>
                      </msContents>
                      <physDesc>
                         <objectDesc>
-                                    <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                        <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
                         </objectDesc>
-                        <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
-                                    <!-- Create a handNote for each hand -->
-                           <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
-                              <abbr type="hand">A<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi>
-                              </abbr>
-                              <!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
-                              <p>main hand of the manuscript, black ink, Sundanese script</p>
-                              <!-- provide a description of the hand -->
-                           </handNote>
-                        </handDesc>
                      </physDesc>
                      <history>
-                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                          <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>...</p>
+                     </history>
+                  </msDesc>
+               </witness>
+               <witness xml:id="P">
+                 <abbr type="siglum">P</abbr>
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Jakarta, Indonesia</settlement>
+                        <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                        <idno>Peti 53 No L 845</idno>
+                     </msIdentifier>
+                     <msContents>
+                        <!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <colophon></colophon>
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+                        <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
+                        </objectDesc>
+                     </physDesc>
+                     <history>
+                          <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>...</p>
                      </history>
                   </msDesc>
                </witness>
@@ -129,13 +149,8 @@
       </encodingDesc>
       <profileDesc>
          <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
             <language ident="san-Latn">Sanskrit, romanized</language>
             <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="osn-Latn">Old Sundanese, romanized</language>
-            <language ident="tam-Latn">Tamil, romanized</language>
-            <language ident="kan-Latn">Kannada, romanized</language>
-            <language ident="tel-Latn">Telugu, romanized</language>
          </langUsage>
          <textClass>
             <keywords>
@@ -146,20 +161,33 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
-         <change who="part:axja" when="2021-10-19">Updating the template and numbering the verses</change>
+         <change who="part:axja" when="2021-10-19">updating the template and numbering the verse lines</change>
+         <change who="part:anac" when="2021-10-19">started encoding the edition</change>
          <change who="part:axja" when="2020-10-05">automatic conversion from a word docx</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="lg-code">
+   <text xml:space="preserve" xml:lang="kaw-Latn">
         <body>
-            <div type="canto" n="1" met="jagaddhita" real="/ ˇ ˇ  / ˇ  ˇ / ˇ ˇ  / ˇ ˇ ˇ / ˇ ˇ ˇ /  ˇ  / ˇ ⏓[12]">
+            <div type="canto" n="1" met="jagaddhita" real="+++--+-+---+------+-+-+">
+                <lg n="1">
+                  <l n="a">oṁ <app><lem type="emn">rudrāya</lem><rdg wit="#EdSSA #EdZ #L #P">rudrākṣa</rdg></app> namo ’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
+                  <l n="b">saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhu-tuhu jagatpramodita</l>
+                  <l n="c">mvaṅ sakvehnira <app><lem wit="#EdSSA">paṇḍitādhika</lem><rdg wit="#EdZ #L #P">pāṇḍitādhika</rdg></app> viveka rinacananiki svarastuti</l>
+                  <l n="d">saṅ vijñātmaka riṅ laṅə̄ kavi vənaṅ tuladana saguritnireṅ sabha</l>
+                </lg>
+                <!-- example of alternative manner of encoding apparatus
                 <lg n="1">
                     <l n="a">oṁ rudrāya namo ’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
-                    <note n="1">1.1 rudrāya] em; rudrākṣa zoetmulder, si proefdroek</note>
                     <l n="b">saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhutuhu jagatpramodita</l>
                     <l n="c">mvaṅ sakvehnira paṇḍitādhika viveka rinacananiki svarastuti</l>
                     <l n="d">saṅ vijñātmaka riṅ laṅə̄ kavi vənaṅ tuladana saguritnireṅ sabha</l>
+                    <listApp>
+                      <app loc="a">
+                        <lem type="emn">rudrāya</lem>
+                        <rdg wit="#EdASS #EdZ #L #P">rudrākṣa</rdg></app>
+                    </listApp>
                 </lg>
+              -->
                 <lg n="2">
                     <l n="a">&gt;mevəh ṅvaṅ mucape kadarśitan i sarvagatanira haneṅ jagaddhita</l><!-- argr: I guess the > after <l> at the start of this line is superfluous -->
                     <l n="b">ndan sūkśmān sumilib riṅ aṇḍajana kokiraniran atirūpa vīryavān</l>
