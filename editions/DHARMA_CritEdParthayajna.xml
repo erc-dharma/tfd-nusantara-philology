@@ -22,34 +22,72 @@
             </publicationStmt>
             <sourceDesc>
                 <!-- only the handdesc can be filled in at this stage -->
-                <msDesc>
-                    <!-- //// nb: the msidentifier had to be added for validation purposes ///. it will be edited later with the metadata spreadsheet -->
-                    <msIdentifier>
-                        <repository>dharmabase</repository>
+                <listWit>
+                  <witness xml:id="EdSSA">
+                   <abbr type="siglum">Ed<hi rend="superscript">SSA</hi></abbr>
+                    <bibl><ptr target="bib:SriSukesiAdiwimarta1993_01"/></bibl>
+                  </witness>
+                  <witness xml:id="EdZ">
+                   <abbr type="siglum">Ed<hi rend="superscript">Z</hi></abbr>
+                    <!-- <bibl><ptr target="bib:.../></bibl> Zoetmulder, Sekar Iniket, Drukproef-->
+                  </witness>
+                  <witness xml:id="L">
+                   <abbr type="siglum">L</abbr>
+                    <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden, the Netherlands</settlement>
+                        <repository>Universiteitsbibliotheek</repository>
+                        <idno>Or. 5024</idno>
                         <idno/>
-                        <!-- don't modify this -->
                     </msIdentifier>
-                </msDesc>
+                   </msDesc>
+                  </witness>
+                  <witness xml:id="P">
+                   <abbr type="siglum">P</abbr>
+                    <msDesc>
+                     <msIdentifier>
+                        <settlement>Jakarta, Java, Indonesia</settlement>
+                        <repository>Perpustakaan Nasional Republik Indonesia</repository>
+                        <idno>Peti 53 No L 845</idno>
+                        <idno/>
+                    </msIdentifier>
+                   </msDesc>
+                  </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
+            <change who="part:anac" when="2021-10-19">started encoding the edition</change>
             <change who="part:axja" when="2020-10-05">automatic conversion from a word docx</change>
         </revisionDesc>
     </teiHeader>
+<<<<<<< Updated upstream
     <text xml:space="preserve">
+=======
+    <text xml:space="preserve" xml:lang="kaw-Latn">
+>>>>>>> Stashed changes
         <body>
-            <div type="canto" n="1" met="jagaddhita"
-                real="/ ˇ ˇ  / ˇ  ˇ / ˇ ˇ  / ˇ ˇ ˇ / ˇ ˇ ˇ /  ˇ  / ˇ ⏓[12]">
+            <div type="canto" n="1" met="jagaddhita" real="+++--+-+---+------+-+-+">
                 <lg n="1">
-                    <l>oṁ rudrāya namo ’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
-                    <note n="1">1.1 rudrāya] em; rudrākṣa zoetmulder, si proefdroek</note>
-                    <l>saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhutuhu jagatpramodita</l>
-                    <l>mvaṅ sakvehnira paṇḍitādhika viveka rinacananiki svarastuti</l>
-                    <l>saṅ vijñātmaka riṅ laṅə̄ kavi vənaṅ tuladana saguritnireṅ sabha</l>
+                    <l n="a">oṁ <app><lem type="emn">rudrāya</lem><rdg wit="#EdSSA #EdZ #L #P">rudrākṣa</rdg></app> namo ’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
+                    <l n="b">saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhu-tuhu jagatpramodita</l>
+                    <l n="c">mvaṅ sakvehnira <app><lem wit="#EdSSA">paṇḍitādhika</lem><rdg wit="#EdZ #L #P">pāṇḍitādhika</rdg></app> viveka rinacananiki svarastuti</l>
+                    <l n="d">saṅ vijñātmaka riṅ laṅə̄ kavi vənaṅ tuladana saguritnireṅ sabha</l>
                 </lg>
+                <!-- <lg n="1">
+                    <l n="a">oṁ rudrāya namo ’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
+                    <l n="b">saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhutuhu jagatpramodita</l>
+                    <l n="c">mvaṅ sakvehnira paṇḍitādhika viveka rinacananiki svarastuti</l>
+                    <l n="d">saṅ vijñātmaka riṅ laṅə̄ kavi vənaṅ tuladana saguritnireṅ sabha</l>
+                    <listApp>
+                      <app loc="a">
+                        <lem type="emn">rudrāya</lem>
+                        <rdg wit="#EdASS #EdZ #L #P">rudrākṣa</rdg></app>
+                    </listApp>
+                </lg> -->
                 <lg n="2">
-                    <l>>mevəh ṅvaṅ mucape kadarśitan i sarvagatanira haneṅ jagaddhita</l><!-- argr: I guess the > after <l> at the start of this line is superfluous -->
-                    <l>ndan sūkśmān sumilib riṅ aṇḍajana kokiraniran atirūpa vīryavān</l>
+                    <l>mevəh ṅvaṅ mucape kadarśitan i sarvagatanira haneṅ jagaddhita</l>
+                    <l>ndan sūkṣmān sumilib riṅ aṇḍajana kokiraniran atirūpa vīryavān</l>
                     <l>saṅ tvasniṅ lara raga sari siṅ unaṅ saṅ amisani rarasniṅ aṅrəṅə̄</l>
                     <l>saṅ sākṣāt pinakesiniṅ manah akuṅ rahina vəṅi lanāṅundaṅ lulut</l>
                 </lg>
