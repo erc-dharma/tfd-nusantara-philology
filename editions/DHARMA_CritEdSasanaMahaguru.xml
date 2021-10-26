@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sasanamahaguru">
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sasanamahaguru" type="edition" xml:lang="eng">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -13,7 +11,7 @@
                 <respStmt>
                     <resp>TEI encoding</resp>
                     <!--TBM-->
-                    <persName>Aditia Gunawan</persName>
+                    <persName ref="part:adgu"><name>Aditia Gunawan</name></persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -56,14 +54,11 @@
                 edition, reach chapter 2</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile>
-        <graphic url="photograph of text or monument"/>
-    </facsimile>
     <text xml:space="preserve" xml:lang="osn-Latn">
         <body>
                 <div type="chapter" n="1">
                 <head type="editorial">Five Purifying Means (<foreign>pañca-vedani</foreign>)</head>
-<p><pb ed="#A" n="1v"/><app><lem wit="#A">ndəh</lem><rdg wit="#B"><lacunaStart/></rdg></app> saṅ 
+<p><pb edRef="#A" n="1v"/><app><lem wit="#A">ndəh</lem><rdg wit="#B"><lacunaStart/></rdg></app> saṅ 
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> sasana mahaguru ṅaran saṅ 
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> pustaka, sasana ma ṅaranya urut nu ti həla, maha ma nu ləvih ti ləvih ti na dunya, guru ma ṅaranna puhun ikaṅ rat kabeh.</p> 
 <p>hana upadyanta 
@@ -84,7 +79,7 @@
     <app><lem wit="#Plt">bijil</lem><rdg wit="#A">bijiḥl</rdg></app> ti huluna, 
     <app><lem wit="#A">teka</lem><rdg wit="#Plt">təka</rdg></app> bvar heraṅ tiis 
     <app><lem wit="#Plt">rasana</lem><rdg wit="#A">rasna</rdg></app>, gəs ma hantə kavuruṅan, təka ri 
-    <app><lem wit="#A">sagara</lem><rdg wit="#Plt">ku</rdg></app>, sa<pb ed="#A" n="2r"/>kitu na turutanən saṅ sevaka darma.</p> 
+    <app><lem wit="#A">sagara</lem><rdg wit="#Plt">ku</rdg></app>, sa<pb edRef="#A" n="2r"/>kitu na turutanən saṅ sevaka darma.</p> 
 <p>huniṅ ma ṅaran aṅin, alaənana ma, basana mətu ti barat, teka 
     <app><lem wit="#A">hir</lem><rdg wit="#Plt">tir</rdg></app> tiis, lələs dataṅna ka avak uraṅ, gəs ma hantə kavuruṅanan, basana bijil mədəṅ di bvana, sakitu na turutanən, ku saṅ sevaka darma.</p> 
 <p>təmən ta ma ṅaraniṅ apuy dəṅən gagaman, ti iña eta dipipakənakən ku nu reya, ku 
@@ -94,7 +89,7 @@
     <app><lem type="emn">ku kukus</lem><rdg wit="#A">kukus·</rdg></app>, ku saṅhub, təka ri kulon, ku 
     <app><lem type="norm">gəiṅ</lem><rdg wit="#A">gəI</rdg></app> eka laksana, kitu keh na turutanən, ku saṅ sevaka darma, mulah mva iyatna-yatna di saṅ 
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> pasaṅkanan, nihan 
-    <app><lem type="noem">sinaṅguh</lem><rdg wit="#A">sinaguḥ</rdg></app> pañca-vedani ṅaranya, panca <pb ed="#A" n="2v"/>ma vatək lima, ve ma cai, dani ma sapu ñere,
+    <app><lem type="norm">sinaṅguh</lem><rdg wit="#A">sinaguḥ</rdg></app> pañca-vedani ṅaranya, panca <pb edRef="#A" n="2v"/>ma vatək lima, ve ma cai, dani ma sapu ñere,
 </p>
                 </div>
                 
@@ -112,7 +107,7 @@
     <app><lem type="norm">tunda</lem><rdg wit="#A">tuda</rdg></app> ṅala 
     <app><lem type="norm">kantənan</lem><rdg wit="#A">katənan</rdg></app>, nurunkən sadapan sakalih, hantə ṅənah ṅisiṅ di 
     <app><lem type="norm">piṅgir</lem><rdg wit="#A">pigir</rdg></app> jalan, sugan 
-    <app><lem type="norm">kaambə</lem><rdg wit="#A">kaabə</rdg></app> ku nu buṅah-baṅah, bisi kasumpah kapadakən, ambu,<pb ed="#A" n="3r"/> ayah, paṅguruan, mulah mo make 
+    <app><lem type="norm">kaambə</lem><rdg wit="#A">kaabə</rdg></app> ku nu buṅah-baṅah, bisi kasumpah kapadakən, ambu,<pb edRef="#A" n="3r"/> ayah, paṅguruan, mulah mo make 
     <app><lem type="emn">caṅcut</lem><rdg wit="#A">caṁcuta</rdg></app> paṅadua, sugan uraṅ pajəəṅ dəṅ gusti dəṅ mantri, mulah mo ṅidal, 
     <app><lem type="norm">paṅadokokoṅkən</lem><rdg wit="#A">paṁṅadvakvakvakən·</rdg></app>, ya siksa 
     <app><lem type="norm">kandaṅ</lem><rdg wit="#A">kadaṁ</rdg></app> ṅaranya.</p>
@@ -131,7 +126,7 @@
 
                 <div type="chapter" n="3">
 <head type="editorial">Ten additions (<foreign>dasavrədi</foreign>)</head>  
-<p>niha<pb ed="#A" n="3v"/>n kayatna-yatna saṅ sevaka darma, pavuitan saṅ hyaṅ sastra, malamurtinya ṅuni, katəkan maṅke.</p> 
+<p>niha<pb edRef="#A" n="3v"/>n kayatna-yatna saṅ sevaka darma, pavuitan saṅ hyaṅ sastra, malamurtinya ṅuni, katəkan maṅke.</p> 
 <p>ndah ta pavuitan saṅ 
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> sastra, nihan 
     <app><lem type="emn">lvirnya</lem><rdg wit="#A">lvarnya</rdg></app>, sasurup saṅ 
@@ -478,9 +473,9 @@
         <app><lem type="norm">gəiṅ</lem><rdg wit="#A">gəI</rdg></app> 
         <app><lem wit="#A">lemek</lem><rdg wit="#B"><lacunaEnd/>k·</rdg></app>, di harəpən saṅ pandita, nihan sinaṅguh catur-upaya ṅaranya, kayatna-yatna saṅ sevaka darma, 
         <app><lem wit="#A">hayva pinintuhu</lem><rdg wit="#B">yva <unclear>pa</unclear><lacunaStart/></rdg></app>.</p> 
-<listApp type="parallels" xml:lang="kaw-Latn">
+<listApp type="parallels">
     <app>
-        <note corresp="txt:SiGu4.2">naranya, ālekhyam, ṅa, hayvānurat-nurat ləmah hayvānurat salə, ṅuniveh śarīranta, yan pasevaka ri saṅ guru, apan ya pinakavvaṅ sulakṣaṇa, agәlәm tumulis-tulis pupunya, yan paṅucap lavan saṅ guru, hasitam tan paguyvan-guyvan, ri harəpәn saṅ guru, ṅuniveh abañvala, gītam tan paṅiduṅ, denya tan pamikvanvakәn kavijakṣaṇaan, yar tan kinvan de saṅ guru, jr̥mbhanam tan paṅucap lapā varəg ri harəpәn saṅ guru, kaṇṭhāravam, tan paṅhvab, †akadanəm† tan paṅulet ri harəpәn saṅ guru, †sudәm† phalarahasyam tan paṅucap aṅkara ri harəpәn saṅ guru, ṅuniveh mikvanvakәn namaniṅ mañal hila-hila maṅkana, na karotu gurumukhe ṅaranya, nihan kaliṅanya, tar magavayakna saṅ sevaka dharma.</note>
+        <note corresp="txt:SiGu4.2" xml:lang="kaw-Latn">naranya, ālekhyam, ṅa, hayvānurat-nurat ləmah hayvānurat salə, ṅuniveh śarīranta, yan pasevaka ri saṅ guru, apan ya pinakavvaṅ sulakṣaṇa, agәlәm tumulis-tulis pupunya, yan paṅucap lavan saṅ guru, hasitam tan paguyvan-guyvan, ri harəpәn saṅ guru, ṅuniveh abañvala, gītam tan paṅiduṅ, denya tan pamikvanvakәn kavijakṣaṇaan, yar tan kinvan de saṅ guru, jr̥mbhanam tan paṅucap lapā varəg ri harəpәn saṅ guru, kaṇṭhāravam, tan paṅhvab, †akadanəm† tan paṅulet ri harəpәn saṅ guru, †sudәm† phalarahasyam tan paṅucap aṅkara ri harəpәn saṅ guru, ṅuniveh mikvanvakәn namaniṅ mañal hila-hila maṅkana, na karotu gurumukhe ṅaranya, nihan kaliṅanya, tar magavayakna saṅ sevaka dharma.</note>
     </app>
     
 </listApp>

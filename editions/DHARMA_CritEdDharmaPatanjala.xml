@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader xml:lang="eng">
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" type="edition" xml:id="dharmaPatanjala">
+  <teiHeader>
     <fileDesc>
       <titleStmt>
 	<title>Dharma Pātañjala</title>
-	<funder>EFEO/EPHE (Université PSL)</funder>
-      	<principal><persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName></principal>
+      	<editor ref="part:anac"><forename>Andrea</forename> <surname>Acri</surname></editor>
       	<respStmt>
-      	   <persName ref="https://viaf.org/viaf/201252222/">Andrea Acri</persName>
+      	   <persName ref="part:anac"><forename>Andrea</forename> <surname>Acri</surname></persName>
 	  <resp>Edited the text (2006–2011); typed and maintained the text file (2006–2018)</resp>
 	  <resp>Converted the text to TEI format (2018)</resp>
 	</respStmt>
@@ -52,26 +53,14 @@
 	        </imprint>
 	     </monogr>
 	  </biblStruct>
-
 	</listBibl>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
+       <projectDesc><p>Project funded by EFEO/EPHE (Université PSL)</p>
        <p>Typed by Andrea Acri. Corrections of misprints in the 2011 edition, as well as more substantial changes (e.g. alternative emendations/reconstructions), have been applied on the basis of the 2017 edition; corrections of misprints in the 2017 edition have been applied tacitly.</p>
       <p>Andrea Acri converted the transcript to (pseudo) ISO-15919.</p>
-      <refsDecl n="CTS">
-	<cRefPattern
-	    n="level2"
-	    matchPattern="(\w+).(\w+)"
-	    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1']/tei:lg[@n='$2'])">
-	  <p>This pointer pattern extracts line groups (verses).</p>
-	</cRefPattern>
-	<cRefPattern	    n="level1"
-	    matchPattern="(\w+)"
-	    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1'])">
-	  <p>This pointer pattern extracts divisions (cantos).</p>
-	</cRefPattern>
-      </refsDecl>
+       </projectDesc>
     </encodingDesc>
     <profileDesc>
       <langUsage>

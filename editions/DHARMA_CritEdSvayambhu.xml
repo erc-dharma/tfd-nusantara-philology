@@ -1,145 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="svayambhu" xml:lang="eng" type="edition">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title type="main">Svayambhu</title>
-				<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
-				<editor ref="part:argr">
-					<forename>Arlo</forename>
-					<surname>Griffiths</surname>
-				</editor>
-				<editor ref="part:tilu">
-					<forename>Timothy</forename>
-					<surname>Lubin</surname>
-				</editor>
-				<respStmt>
-					<resp>structuring of the TEI file</resp>
-					<persName>Arlo Griffiths</persName>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
-				<authority>DHARMA</authority>
-				<pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
-				<idno type="filename">DHARMA_CritEdSvayambhu</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by/4.0/">
-						<p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-						<p>Copyright (c) 2019-2025 by Arlo Griffiths &amp; Timothy Lubin.</p>
-					</licence>
-				</availability>
-				<date from="2019" to="2025">2019-2025</date>
-			</publicationStmt>
-			<sourceDesc>
-				<listWit>
-					<witness xml:id="L">Leiden, Universiteitsbibliotheek, the Netherlands, Or. 4530: Balinese script on paper, van der Tuuk collection; typed Roman transcript: Leiden BCB portfolio 165</witness>
-					<witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, 774 (kropak 3) II A/3/774: Balinese script on lontar; typed Roman transcript: HKS 1883 = Leiden Or. 15.027</witness>
-					<witness xml:id="M">Kirtya, Singaraja, Bali, Indonesia, 280 (kropak 3) II A/3/280: Balinese script on lontar; typed Roman transcript: HKS 3046 = Leiden Or. 16.190</witness><!--
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="svayambhu"
+     xml:lang="eng"
+     type="edition">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Svayambhu</title>
+            <title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
+            <editor ref="part:argr">
+               <forename>Arlo</forename>
+               <surname>Griffiths</surname>
+            </editor>
+            <editor ref="part:tilu">
+               <forename>Timothy</forename>
+               <surname>Lubin</surname>
+            </editor>
+            <respStmt>
+               <resp>structuring of the TEI file</resp>
+               <persName>Arlo Griffiths</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
+            <idno type="filename">DHARMA_CritEdSvayambhu</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <p>Copyright (c) 2019-2025 by Arlo Griffiths &amp; Timothy Lubin.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="L">Leiden, Universiteitsbibliotheek, the Netherlands, Or. 4530: Balinese script on paper, van der Tuuk collection; typed Roman transcript: Leiden BCB portfolio 165</witness>
+               <witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, 774 (kropak 3) II A/3/774: Balinese script on lontar; typed Roman transcript: HKS 1883 = Leiden Or. 15.027</witness>
+               <witness xml:id="M">Kirtya, Singaraja, Bali, Indonesia, 280 (kropak 3) II A/3/280: Balinese script on lontar; typed Roman transcript: HKS 3046 = Leiden Or. 16.190</witness>
+               <!--
 					Witkam's Leiden catalogue, if it helps:
 Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisanggraha. Copied from a lontar manuscript of the Balai Penelitian Bahasa, Singaraja, No. 280, being (a copy of?) a text of I Ktut Ginarsa in Banjar Paketan, Singaraja. Copied by I Gde Wirawan, on May 1, 1980, cheked by I Ktut Ginarsa (signature on p. 30). HKS 3046. [*Mal. 11.118]
 -->
-					<witness xml:id="SvaMSS">The Sanskrit text as implied by the Svayambhu manuscripts</witness>
-					<witness xml:id="EdO">
-						<abbr type="siglum">Ed<hi rend="superscript">O</hi></abbr>
-						<bibl><ptr target="bib:Olivelle2005_01"/></bibl>
-					</witness>
-				</listWit>
-				<listBibl>
-					<biblStruct type="book" xml:id="Mandlik1886_01" corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
-						<monogr>
-							<title level="m">Mānava-dharma śāstra</title>
-							<editor><forename>Vishwanath Narayan</forename><surname>Mandlik</surname></editor>
-							<author><name>Govindaraja</name></author>
-							<imprint>
-								<pubPlace>Bombay</pubPlace>
-								<publisher>Ganpat Krishnaji's press</publisher>
-								<date>1886</date>
-							</imprint>
-						</monogr>
-					</biblStruct>
-					<biblStruct type="book" xml:id="Olivelle2005_01" corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
-						<monogr>
-							<title level="m">Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
-							<title type="short">Olivelle2005_01</title>
-											<author>
-														<forename>Patrick</forename>
-														<surname>Olivelle</surname>
-													</author>
-			<imprint>
-		<pubPlace>New York</pubPlace>
-		<publisher>Oxford University Press</publisher>
-		<date>2005</date>
-	</imprint>
-</monogr>
-</biblStruct>
-				</listBibl>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-		 <projectDesc>
+               <witness xml:id="SvaMSS">The Sanskrit text as implied by the Svayambhu manuscripts</witness>
+               <witness xml:id="EdO">
+                  <abbr type="siglum">Ed<hi rend="superscript">O</hi>
+                  </abbr>
+                  <bibl>
+                     <ptr target="bib:Olivelle2005_01"/>
+                  </bibl>
+               </witness>
+            </listWit>
+            <listBibl>
+               <biblStruct type="book"
+                           xml:id="Mandlik1886_01"
+                           corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
+                  <monogr>
+                     <title level="m">Mānava-dharma śāstra</title>
+                     <editor>
+                        <forename>Vishwanath Narayan</forename>
+                        <surname>Mandlik</surname>
+                     </editor>
+                     <author>
+                        <name>Govindaraja</name>
+                     </author>
+                     <imprint>
+                        <pubPlace>Bombay</pubPlace>
+                        <publisher>Ganpat Krishnaji's press</publisher>
+                        <date>1886</date>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct type="book"
+                           xml:id="Olivelle2005_01"
+                           corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
+                  <monogr>
+                     <title level="m">Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
+                     <author>
+                        <forename>Patrick</forename>
+                        <surname>Olivelle</surname>
+                     </author>
+                     <imprint>
+                        <pubPlace>New York</pubPlace>
+                        <publisher>Oxford University Press</publisher>
+                        <date>2005</date>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
 		 <!-- Part mandatory -->
-		 <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p> <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
-		 <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-		 </projectDesc>
-		 <editorialDecl>
+            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
 		  <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-		  <correction>
-		   <p/>
-		  </correction>
-		  <normalization>
-		   <p/>
-		  </normalization>
-		  <punctuation>
-		   <p/>
-		  </punctuation>
-		 </editorialDecl>
-		 <samplingDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+         </editorialDecl>
+         <samplingDecl>
 		  <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-		  <p/>
-		 </samplingDecl>
-		 <schemaRef type="guide" key="EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-		 <!-- Will need to be updated once a more official realase is done -->
-		 <variantEncoding method="parallel-segmentation" location="internal"/>
-		 <!-- Part mandatory -->
-		 <listPrefixDef>
-		  <prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-		   <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-		  </prefixDef>
-		  <prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
-		   <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-		  </prefixDef>
-		  <prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
-		   <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-		  </prefixDef>
-		  <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-		   <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-		  </prefixDef>
-		  <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
-		   <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-		  </prefixDef>
-		 </listPrefixDef>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="san-Latn">Sanskrit, romanized</language>
-				<language ident="kaw-Latn">Old Javanese, romanized</language>
-			</langUsage>
-		</profileDesc>
-		<revisionDesc>
-		  <change when="2021-09-13" who="part:axja">Updating the encoding pattern with quote element</change>
-			<change when="2021-01-13" who="part:argr">resolved all validation problems except use of ab for chapter colophons</change>
-			<change when="2020-05-29" who="part:axja">changing the structure: moving the @source content inside a note @type="parallels"</change>
-			<change when="2020-04-23" who="part:argr">started creation of TEI document</change>
-		</revisionDesc>
-	</teiHeader>
-	<facsimile>
-		<graphic url="photograph of text or monument"/>
-	</facsimile>
-	<!-- material for notes in TEI header once proper structure has been applied:
+            <p/>
+         </samplingDecl>
+         <schemaRef type="guide"
+                    key="EGCv01"
+                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+         <!-- Will need to be updated once a more official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+         <listPrefixDef>
+            <prefixDef ident="bib"
+                       matchPattern="([a-zA-Z0-9\-\_]+)"
+                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+            </prefixDef>
+            <prefixDef ident="part"
+                       matchPattern="([a-z]+)"
+                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+            </prefixDef>
+            <prefixDef ident="txt"
+                       matchPattern="([A-Za-z0-9]+)"
+                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+            </prefixDef>
+            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+            </prefixDef>
+            <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="san-Latn">Sanskrit, romanized</language>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2021-09-13" who="part:axja">Updating the encoding pattern with quote element</change>
+         <change when="2021-01-13" who="part:argr">resolved all validation problems except use of ab for chapter colophons</change>
+         <change when="2020-05-29" who="part:axja">changing the structure: moving the @source content inside a note @type="parallels"</change>
+         <change when="2020-04-23" who="part:argr">started creation of TEI document</change>
+      </revisionDesc>
+   </teiHeader>
+   <!-- material for notes in TEI header once proper structure has been applied:
 - both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a
 
 -->
-	<text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve" xml:lang="kaw-Latn">
 		<body>
 
 <!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t·, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ [01-03] vruḥ maviveka:,
@@ -156,8 +179,8 @@ M: [1v1] avignam astu. [1v2] kunaṅ ulaha saṁ prabu, uniṅanira taṁ vyavah
 <quote type="base-text" xml:lang="san-Latn">
  <supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-	<l>vyavahārān didr̥kṣus tu</l> <l>brāhmaṇaiḥ saha pārthivaḥ |</l>
-	<l>mantrajñair mantribhiś caiva</l> <l>vinītaḥ praviśet sabhām ||</l>
+	<l n="a">vyavahārān didr̥kṣus tu</l> <l n="b">brāhmaṇaiḥ saha pārthivaḥ |</l>
+	<l n="c">mantrajñair mantribhiś caiva</l> <l n="d">vinītaḥ praviśet sabhām ||</l>
 	</lg>
    <listApp type="parallels">
         <app>
@@ -180,8 +203,8 @@ M: aliṅgihapagəha ta sira riṁ saba, taṅanira təṅən [1v6] atah ulahak�
 <div type="dyad" n="2">
 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-	<l>tatrāsīnaḥ sthito vāpi</l> <l>pāṇim udyamya dakṣiṇam |</l>
-	<l>vinītaveṣābharaṇaḥ</l> <l>paśyet kāryāṇi kāryiṇām ||</l>
+	<l n="a">tatrāsīnaḥ sthito vāpi</l> <l n="b">pāṇim udyamya dakṣiṇam |</l>
+	<l n="c">vinītaveṣābharaṇaḥ</l> <l n="d">paśyet kāryāṇi kāryiṇām ||</l>
 </lg>
    <listApp type="parallels">
         <app>
@@ -204,8 +227,8 @@ M: [1v9] sari masita siran ṅiṅət-iṅəta makasadanaṁ varah[1v10]varaḥ 
 <div type="dyad" n="3">
 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 <lg met="anuṣṭubh">
-	<l>pratyahaṁ deśadr̥ṣṭaiś ca</l> <l>śāstradr̥ṣṭaiś ca hetubhiḥ |</l>
-	<l>aṣṭādaśasu mārgeṣu</l> <l>nibaddhāni pr̥thak pr̥thak ||</l>
+	<l n="a">pratyahaṁ deśadr̥ṣṭaiś ca</l> <l n="b">śāstradr̥ṣṭaiś ca hetubhiḥ |</l>
+	<l n="c">aṣṭādaśasu mārgeṣu</l> <l n="d">nibaddhāni pr̥thak pr̥thak ||</l>
 	</lg>
    <listApp type="parallels">
         <app>
@@ -239,8 +262,8 @@ hana tinmunya ṅkāna salah siki,
 <div type="dyad" n="4">
 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-	<l>hiṁsāṁ yaḥ kurute kaś cid</l> <l>deyaṁ vā na prayacchati |</l>
-	<l>sthāne te dve vivādasya</l> <l>bhinno ’ṣṭādaśadhā punaḥ ||</l>
+	<l n="a">hiṁsāṁ yaḥ kurute kaś cid</l> <l n="b">deyaṁ vā na prayacchati |</l>
+	<l n="c">sthāne te dve vivādasya</l> <l n="d">bhinno ’ṣṭādaśadhā punaḥ ||</l>
 	</lg><listApp type="parallels">
          <app>
           <note>This stanza is absent from <bibl><ptr target="bib:Olivelle2005_01"/>Olivelle</bibl>'s constituted text, though it is referenced in his app. crit. for one manuscript. The stanza occurs in ed. <bibl><ptr target="bib:Mandlik1886_01"/>Mandlik</bibl> 8.4 with reading <foreign>bhinno</foreign>, where the Svayambhu implies <foreign>bhinne</foreign>.</note>
@@ -264,8 +287,8 @@ matmahan ta ya vvalu vlas vkasan.</p>
 <div type="dyad" n="5">
 	<quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 		<lg met="anuṣṭubh">
-			<l>teṣām ādyam r̥ṇādānaṁ</l> <l>nikṣepo ’svāmivikrayaḥ |</l>
-			<l>saṁbhūya ca<!-- @AG+TL: encode svayambhu reading sambhūyasya? or if not that, at least the parasavarṇa mbh? --> samutthānaṁ</l> <l>dattasyānapakarma ca ||</l>
+			<l n="a">teṣām ādyam r̥ṇādānaṁ</l> <l n="b">nikṣepo ’svāmivikrayaḥ |</l>
+			<l n="c">saṁbhūya ca<!-- @AG+TL: encode svayambhu reading sambhūyasya? or if not that, at least the parasavarṇa mbh? --> samutthānaṁ</l> <l n="d">dattasyānapakarma ca ||</l>
 		</lg>
 			<listApp type="parallels">
         <app>
@@ -273,9 +296,9 @@ matmahan ta ya vvalu vlas vkasan.</p>
         </app>
   </listApp>
 		<lg met="anuṣṭubh">
-			<l><app><lem wit="#EdO">vetanasyaiva cādānaṁ</lem><rdg wit="#SvaMSS">vetanasya na ca dānam</rdg></app></l>
-			<l>saṁvidaś ca vyatikramaḥ |</l>
-			<l>krayavikrayānuśayo</l> <l>vivādaḥ svāmipālayoḥ ||</l>
+			<l n="a"><app><lem wit="#EdO">vetanasyaiva cādānaṁ</lem><rdg wit="#SvaMSS">vetanasya na ca dānam</rdg></app></l>
+			<l n="b">saṁvidaś ca vyatikramaḥ |</l>
+			<l n="c">krayavikrayānuśayo</l> <l n="d">vivādaḥ svāmipālayoḥ ||</l>
 </lg>
 			<listApp type="parallels">
         <app>
@@ -283,8 +306,8 @@ matmahan ta ya vvalu vlas vkasan.</p>
         </app>
   </listApp>
 <lg met="anuṣṭubh">
-	<l>sīmāvivādadharmaś ca</l> <l>pāruṣye daṇḍavācike |</l>
-	<l>steyaṁ ca sāhasaṁ caiva</l> <l>strīsaṁgrahaṇam eva ca ||</l>
+	<l n="a">sīmāvivādadharmaś ca</l> <l n="b">pāruṣye daṇḍavācike |</l>
+	<l n="c">steyaṁ ca sāhasaṁ caiva</l> <l n="d">strīsaṁgrahaṇam eva ca ||</l>
 </lg>
 			<listApp type="parallels">
         <app>
@@ -292,8 +315,8 @@ matmahan ta ya vvalu vlas vkasan.</p>
         </app>
   </listApp>
 <lg met="anuṣṭubh">
-	<l>strīpuṁdharmo<!-- argr: this word is not present in Svayambhu at all!--> vibhāgaś ca</l> <l>dyūtam <app><lem wit="#EdO">āhvaya</lem><rdg wit="#SvaMSS">āhvānam</rdg></app> eva ca |</l>
-	<l>padāny aṣṭādaśaitāni</l> <l><app><lem wit="#EdO">vyavahārasthitāv iha</lem><rdg wit="SvaMSS">vyavahārasthitānīha</rdg></app> ||</l>
+	<l n="a">strīpuṁdharmo<!-- argr: this word is not present in Svayambhu at all!--> vibhāgaś ca</l> <l n="b">dyūtam <app><lem wit="#EdO">āhvaya</lem><rdg wit="#SvaMSS">āhvānam</rdg></app> eva ca |</l>
+	<l n="c">padāny aṣṭādaśaitāni</l> <l n="d"><app><lem wit="#EdO">vyavahārasthitāv iha</lem><rdg wit="SvaMSS">vyavahārasthitānīha</rdg></app> ||</l>
 </lg>
     <listApp type="parallels">
         <app>
@@ -371,8 +394,8 @@ M: [2v24] evu stanesta buyastam, ikaṁ vyavavustana (va)lu vəlas, [2v25] kapva
  -->
  	<quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
  		<lg met="anuṣṭubh">
- 			<l>eṣu sthāneṣu bhūyiṣṭhaṁ</l> <l>vivādaṁ caratāṁ nr̥ṇām |</l>
-			<l>dharmaṁ śāśvatam āśritya</l> <l>kuryāt kāryavinirṇayam ||</l>
+ 			<l n="a">eṣu sthāneṣu bhūyiṣṭhaṁ</l> <l n="b">vivādaṁ caratāṁ nr̥ṇām |</l>
+			<l n="c">dharmaṁ śāśvatam āśritya</l> <l n="d">kuryāt kāryavinirṇayam ||</l>
  		</lg>
     <listApp type="parallels">
          <app>
@@ -396,8 +419,8 @@ M: [2v28] kunaṁ saṁ prabu ayva sira gumavayanikaṁ karyavivak[2v29]sa gunad
  -->
   <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
  	 <lg met="anuṣṭubh">
- 		 <l>yadā svayaṁ na kuryāt tu</l> <l>nr̥patiḥ kāryadarśanam |</l>
- 		 <l>tadā niyuñjyād vidvāṁsaṁ</l> <l>brāhmaṇaṁ kāryadarśane ||</l>
+ 		 <l n="a">yadā svayaṁ na kuryāt tu</l> <l n="b">nr̥patiḥ kāryadarśanam |</l>
+ 		 <l n="c">tadā niyuñjyād vidvāṁsaṁ</l> <l n="d">brāhmaṇaṁ kāryadarśane ||</l>
  	 </lg>
  	 <listApp type="parallels">
  				<app>
@@ -418,8 +441,8 @@ M: [3r1] saṁ brahmana saṁ vruḥ riṅ astadasavyavahara, sira[3r2]na ta sa�
  -->
   <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
  	 <lg met="anuṣṭubh">
- 		 <l>aṣṭādaśapadābhijñaṁ</l> <l>prāḍvivāketi saṁjñitam |</l>
- 		 <l>ānvīkṣikyāṁ ca kuśalaṁ</l> <l>śrutismr̥tiparāyaṇam ||</l>
+ 		 <l n="a">aṣṭādaśapadābhijñaṁ</l> <l n="b">prāḍvivāketi saṁjñitam |</l>
+ 		 <l n="c">ānvīkṣikyāṁ ca kuśalaṁ</l> <l n="d">śrutismr̥tiparāyaṇam ||</l>
  	 </lg>
  	 <listApp type="parallels">
  				<app>
@@ -438,8 +461,8 @@ M: [3r1] saṁ brahmana saṁ vruḥ riṅ astadasavyavahara, sira[3r2]na ta sa�
  -->
 	<quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
  	 <lg met="anuṣṭubh">
- 		 <l>vivāde pr̥cchati praśnaṁ</l> <l>pratipraśnaṁ tathaiva ca |</l>
- 		 <l>priyapūrvaṁ prāg vadati</l> <l>prāḍvivākas tataḥ smr̥taḥ ||</l>
+ 		 <l n="a">vivāde pr̥cchati praśnaṁ</l> <l n="b">pratipraśnaṁ tathaiva ca |</l>
+ 		 <l n="c">priyapūrvaṁ prāg vadati</l> <l n="d">prāḍvivākas tataḥ smr̥taḥ ||</l>
  	 </lg>
  	 <listApp type="parallels">
  				<app>
@@ -461,8 +484,8 @@ M: [3r8] aṅiṅət-iṅəta ta saṁ pragivaka iṁ karyanikaṁ ma[3r9]vyavah
 		-->
 		<quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	 <lg met="anuṣṭubh">
-		 <l>so ’sya kāryāṇi saṁpaśyet</l> <l>sabhyair eva tribhir vr̥taḥ |</l>
-		 <l>sabhām eva praviśyāgryām</l> <l>āsīnaḥ sthita eva vā ||</l>
+		 <l n="a">so ’sya kāryāṇi saṁpaśyet</l> <l n="b">sabhyair eva tribhir vr̥taḥ |</l>
+		 <l n="c">sabhām eva praviśyāgryām</l> <l n="d">āsīnaḥ sthita eva vā ||</l>
 	 </lg>
 	 <listApp type="parallels">
 				<app>
@@ -484,8 +507,8 @@ M: [3r11] saṁ brahmana sasiki, pada vruḥ maṅaji, hana ta brah[3r12]mana sa
  	-->
  	<quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
   <lg met="anuṣṭubh">
- 	 <l>yasmin deśe niṣīdanti</l> <l>viprā vedavidas trayaḥ |</l>
- 	 <l>rājñaś ca prakr̥to vidvān</l> <l>brahmaṇas tāṁ sabhāṁ viduḥ ||</l>
+ 	 <l n="a">yasmin deśe niṣīdanti</l> <l n="b">viprā vedavidas trayaḥ |</l>
+ 	 <l n="c">rājñaś ca prakr̥to vidvān</l> <l n="d">brahmaṇas tāṁ sabhāṁ viduḥ ||</l>
   </lg>
   <listApp type="parallels">
  			<app>
@@ -508,10 +531,10 @@ M: [3r11] saṁ brahmana sasiki, pada vruḥ maṅaji, hana ta brah[3r12]mana sa
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="upajāti">
-		<l>na sā sabhā yatra na santi vr̥ddhā</l>
-		<l>vr̥ddhā na te ye na vadanti dharmam |</l>
-		<l>nāsau dharmo yatra na satyam asti</l>
-		<l>na tat satyaṁ yac chalenānuviddham ||</l>
+		<l n="a">na sā sabhā yatra na santi vr̥ddhā</l>
+		<l n="b">vr̥ddhā na te ye na vadanti dharmam |</l>
+		<l n="c">nāsau dharmo yatra na satyam asti</l>
+		<l n="d">na tat satyaṁ yac chalenānuviddham ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -535,8 +558,8 @@ M: [3r11] saṁ brahmana sasiki, pada vruḥ maṅaji, hana ta brah[3r12]mana sa
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>sabhā vā na praveṣṭavyā</l> <l>vaktavyaṁ vā samañjasam |</l>
-		<l>abruvan vibruvan vāpi</l> <l>naro bhavati kilbiṣī ||</l>
+		<l n="a">sabhā vā na praveṣṭavyā</l> <l n="b">vaktavyaṁ vā samañjasam |</l>
+		<l n="c">abruvan vibruvan vāpi</l> <l n="d">naro bhavati kilbiṣī ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -557,8 +580,8 @@ M: [3r11] saṁ brahmana sasiki, pada vruḥ maṅaji, hana ta brah[3r12]mana sa
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yatra dharmo hy adharmeṇa</l> <l>satyaṁ yatrānr̥tena ca |</l>
-		<l>hanyate prekṣamāṇānāṁ</l> <l>hatās tatra sabhāsadaḥ ||</l>
+		<l n="a">yatra dharmo hy adharmeṇa</l> <l n="b">satyaṁ yatrānr̥tena ca |</l>
+		<l n="c">hanyate prekṣamāṇānāṁ</l> <l n="d">hatās tatra sabhāsadaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -582,8 +605,8 @@ M: [3r11] saṁ brahmana sasiki, pada vruḥ maṅaji, hana ta brah[3r12]mana sa
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>dharma eva hato hanti</l> <l>dharmo rakṣati rakṣitaḥ |</l>
-		<l>tasmād dharmo na hantavyo</l> <l>mā no dharmo hato ’vadhīt ||</l>
+		<l n="a">dharma eva hato hanti</l> <l n="b">dharmo rakṣati rakṣitaḥ |</l>
+		<l n="c">tasmād dharmo na hantavyo</l> <l n="d">mā no dharmo hato ’vadhīt ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -641,8 +664,8 @@ sira pinakakaləpasan saṅ paṇḍita, tan maṅkana hikaṅ vvaṅ adharma, t
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>vr̥ṣo hi bhagavān dharmas</l> <l>tasya yaḥ kurute tv alam |</l>
-		<l>vr̥ṣalaṁ taṁ vidur devās</l> <l>tasmād dharmaṁ na lopayet ||</l>
+		<l n="a">vr̥ṣo hi bhagavān dharmas</l> <l n="b">tasya yaḥ kurute tv alam |</l>
+		<l n="c">vr̥ṣalaṁ taṁ vidur devās</l> <l n="d">tasmād dharmaṁ na lopayet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -662,8 +685,8 @@ sira pinakakaləpasan saṅ paṇḍita, tan maṅkana hikaṅ vvaṅ adharma, t
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>eka eva suhr̥d dharmo</l> <l>nidhāne ’py anuyāti yaḥ |</l>
-		<l>śarīreṇa samaṁ nāśaṁ</l> <l>sarvam anyad dhi gacchati ||</l>
+		<l n="a">eka eva suhr̥d dharmo</l> <l n="b">nidhāne ’py anuyāti yaḥ |</l>
+		<l n="c">śarīreṇa samaṁ nāśaṁ</l> <l n="d">sarvam anyad dhi gacchati ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -685,8 +708,8 @@ sira pinakakaləpasan saṅ paṇḍita, tan maṅkana hikaṅ vvaṅ adharma, t
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>pādo ’dharmasya kartāraṁ</l> <l>pādaḥ sākṣiṇam r̥cchati |</l>
-		<l>pādaḥ sabhāsadaḥ sarvān</l> <l>pādo rājānam r̥cchati ||</l>
+		<l n="a">pādo ’dharmasya kartāraṁ</l> <l n="b">pādaḥ sākṣiṇam r̥cchati |</l>
+		<l n="c">pādaḥ sabhāsadaḥ sarvān</l> <l n="d">pādo rājānam r̥cchati ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -709,8 +732,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>rājā bhavaty anenās tu</l> <l>mucyante ca sabhāsadaḥ |</l>
-		<l>eno gacchati kartāraṁ</l> <l>nindārho yatra nindyate ||</l>
+		<l n="a">rājā bhavaty anenās tu</l> <l n="b">mucyante ca sabhāsadaḥ |</l>
+		<l n="c">eno gacchati kartāraṁ</l> <l n="d">nindārho yatra nindyate ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -729,8 +752,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
   <quote type="base-text" xml:lang="san-Latn">
    <supplied reason="omitted">
 	<lg met="anuṣṭubh">
-		<l>jātimātropajīvī vā</l> <l>kāmaṁ syād brāhmaṇabruvaḥ |</l>
-		<l>dharmapravaktā nr̥pater</l> <l>na tu śūdraḥ kathaṁ cana ||</l>
+		<l n="a">jātimātropajīvī vā</l> <l n="b">kāmaṁ syād brāhmaṇabruvaḥ |</l>
+		<l n="c">dharmapravaktā nr̥pater</l> <l n="d">na tu śūdraḥ kathaṁ cana ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -749,8 +772,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 -->
  <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 <lg met="anuṣṭubh">
-	<l>yasya śūdras tu kurute</l> <l>rājño dharmavivecanam |</l>
-	<l>tasya sīdati tad rāṣṭraṁ</l> <l>paṅke gaur iva paśyataḥ ||</l>
+	<l n="a">yasya śūdras tu kurute</l> <l n="b">rājño dharmavivecanam |</l>
+	<l n="c">tasya sīdati tad rāṣṭraṁ</l> <l n="d">paṅke gaur iva paśyataḥ ||</l>
 </lg>
 <listApp type="parallels">
 		 <app>
@@ -774,8 +797,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yad rāṣṭraṁ śūdrabhūyiṣṭhaṁ</l> <l>nāstikākrāntam advijam |</l>
-		<l>vinaśyaty āśu tat kr̥tsnaṁ</l> <l>durbhikṣavyādhipīḍitam ||</l>
+		<l n="a">yad rāṣṭraṁ śūdrabhūyiṣṭhaṁ</l> <l n="b">nāstikākrāntam advijam |</l>
+		<l n="c">vinaśyaty āśu tat kr̥tsnaṁ</l> <l n="d">durbhikṣavyādhipīḍitam ||</l>
 	</lg>
 
 	<listApp type="parallels">
@@ -812,8 +835,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>dharmāsanam adhiṣṭhāya</l> <l>saṁvītāṅgaḥ samāhitaḥ |</l>
-		<l>praṇamya lokapālebhyaḥ</l> <l>kāryadarśanam ārabhet ||</l>
+		<l n="a">dharmāsanam adhiṣṭhāya</l> <l n="b">saṁvītāṅgaḥ samāhitaḥ |</l>
+		<l n="c">praṇamya lokapālebhyaḥ</l> <l n="d">kāryadarśanam ārabhet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -835,8 +858,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>arthānarthāv ubhau buddhvā</l> <l>dharmādharmau ca kevalau |</l>
-		<l>varṇakrameṇa sarvāṇi</l> <l>paśyet kāryāṇi kāryiṇām ||</l>
+		<l n="a">arthānarthāv ubhau buddhvā</l> <l n="b">dharmādharmau ca kevalau |</l>
+		<l n="c">varṇakrameṇa sarvāṇi</l> <l n="d">paśyet kāryāṇi kāryiṇām ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -853,8 +876,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>bāhyair vibhāvayel liṅgair</l> <l>bhāvam antargataṁ nr̥ṇām |</l>
-		<l>svaravarṇeṅgitākāraiś</l> <l>cakṣuṣā ceṣṭitena ca ||</l>
+		<l n="a">bāhyair vibhāvayel liṅgair</l> <l n="b">bhāvam antargataṁ nr̥ṇām |</l>
+		<l n="c">svaravarṇeṅgitākāraiś</l> <l n="d">cakṣuṣā ceṣṭitena ca ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -873,8 +896,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>ākārair iṅgitair gatyā</l> <l>ceṣṭayā bhāṣitena ca |</l>
-		<l>netravaktravikāraiś ca</l> <l>gr̥hyate ’ntargataṁ manaḥ ||</l>
+		<l n="a">ākārair iṅgitair gatyā</l> <l n="b">ceṣṭayā bhāṣitena ca |</l>
+		<l n="c">netravaktravikāraiś ca</l> <l n="d">gr̥hyate ’ntargataṁ manaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -898,8 +921,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>bāladāyādikaṁ rikthaṁ</l> <l>tāvad rājānupālayet |</l>
-		<l>yāvat sa<!-- edit na here too --> syāt samāvr̥tto</l> <l>yāvad vātītaśaiśavaḥ ||</l>
+		<l n="a">bāladāyādikaṁ rikthaṁ</l> <l n="b">tāvad rājānupālayet |</l>
+		<l n="c">yāvat sa<!-- edit na here too --> syāt samāvr̥tto</l> <l n="d">yāvad vātītaśaiśavaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -920,8 +943,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>vaśāputrāsu caivaṁ syād</l> <l>rakṣaṇaṁ niṣkulāsu ca |</l>
-		<l>pativratāsu ca strīṣu</l> <l>vidhavāsv āturāsu ca ||</l>
+		<l n="a">vaśāputrāsu caivaṁ syād</l> <l n="b">rakṣaṇaṁ niṣkulāsu ca |</l>
+		<l n="c">pativratāsu ca strīṣu</l> <l n="d">vidhavāsv āturāsu ca ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -943,8 +966,8 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>jīvantīnāṁ tu tāsāṁ ye</l> <l>tad dhareyuḥ svabāndhavāḥ |</l>
-		<l>tāñ chiṣyāc cauradaṇḍena</l> <l>dhārmikaḥ pr̥thivīpatiḥ ||</l>
+		<l n="a">jīvantīnāṁ tu tāsāṁ ye</l> <l n="b">tad dhareyuḥ svabāndhavāḥ |</l>
+		<l n="c">tāñ chiṣyāc cauradaṇḍena</l> <l n="d">dhārmikaḥ pr̥thivīpatiḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -952,7 +975,7 @@ hagəṅ juga phalaniṅ <app><lem wit="#L">kasatyan</lem><rdg wit="#K">ka:satya
 			 </app>
  </listApp>
  </supplied></quote>
- <p>yapvan ana <app><lem wit="#L">kadaṅnikaṅ</lem><rdg wit="#K">kaṇḍaṁnikaṁ</rdg></app> strī valu satya sḍaṅnyan<!-- change to sḍəṅnyan  --> ahurip, umalapa dr̥vyanya, <app><lem type="emn">ḍaṇdan ikaṅ</lem><rdg wit ="#L">ḍaṇda Ikaṁṅ</rdg><rdg wit="#K">ḍaṇḍa hikaṁṅ</rdg><note>Reconsider this emendation: it seems <foreign>ḍaṇḍa</foreign> in this text might actually be capable of meaning <foreign>daṇḍan</foreign>.</note></app> <app><lem wit="#L">aṅalap</lem><rdg wit="#K">alap</rdg></app> de saṅ prabhu, sadaṇḍaniṅ maliṅ <app><lem wit="#L">ḍaṇḍanya</lem><rdg wit="#K">ḍaṇḍahanya</rdg><note>Do parallel passages in the text help to decide whether we expect irrealis here, or not?</note></app>.</p>
+ <p>yapvan ana <app><lem wit="#L">kadaṅnikaṅ</lem><rdg wit="#K">kaṇḍaṁnikaṁ</rdg></app> strī valu satya sḍaṅnyan<!-- change to sḍəṅnyan  --> ahurip, umalapa dr̥vyanya, <app><lem type="emn">ḍaṇdan ikaṅ</lem><rdg wit="#L">ḍaṇda Ikaṁṅ</rdg><rdg wit="#K">ḍaṇḍa hikaṁṅ</rdg><note>Reconsider this emendation: it seems <foreign>ḍaṇḍa</foreign> in this text might actually be capable of meaning <foreign>daṇḍan</foreign>.</note></app> <app><lem wit="#L">aṅalap</lem><rdg wit="#K">alap</rdg></app> de saṅ prabhu, sadaṇḍaniṅ maliṅ <app><lem wit="#L">ḍaṇḍanya</lem><rdg wit="#K">ḍaṇḍahanya</rdg><note>Do parallel passages in the text help to decide whether we expect irrealis here, or not?</note></app>.</p>
 </div>
  <div><ab type="colophon" xml:lang="san-Latn">iti strīsatyarakṣaṇa.</ab>
 </div></div><!-- end of chapter 2-->
@@ -965,8 +988,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>pranaṣṭasvāmikaṁ rikthaṁ</l> <l>rājā tryabdaṁ nidhāpayet |</l>
-		<l>arvāk tryabdād dharet svāmī</l> <l>pareṇa nr̥patir haret ||</l>
+		<l n="a">pranaṣṭasvāmikaṁ rikthaṁ</l> <l n="b">rājā tryabdaṁ nidhāpayet |</l>
+		<l n="c">arvāk tryabdād dharet svāmī</l> <l n="d">pareṇa nr̥patir haret ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -985,8 +1008,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>mamedam iti yo brūyāt</l> <l>so ’nuyojyo yathāvidhi |</l>
-		<l>saṁvādya rūpasaṁkhyādīn</l> <l>svāmī tad dravyam arhati ||</l>
+		<l n="a">mamedam iti yo brūyāt</l> <l n="b">so ’nuyojyo yathāvidhi |</l>
+		<l n="c">saṁvādya rūpasaṁkhyādīn</l> <l n="d">svāmī tad dravyam arhati ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1003,8 +1026,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>avedayan pranaṣṭasya</l> <l>deśaṁ kālaṁ ca tattvataḥ |</l>
-		<l>varṇaṁ rūpaṁ pramāṇaṁ ca</l> <l>tatsamaṁ daṇḍam arhati ||</l>
+		<l n="a">avedayan pranaṣṭasya</l> <l n="b">deśaṁ kālaṁ ca tattvataḥ |</l>
+		<l n="c">varṇaṁ rūpaṁ pramāṇaṁ ca</l> <l n="d">tatsamaṁ daṇḍam arhati ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1025,8 +1048,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>ādadītātha ṣaḍbhāgaṁ</l> <l>pranaṣṭādhigatān nr̥paḥ |</l>
-		<l>daśamaṁ dvādaśaṁ vāpi</l> <l>satāṁ dharmam anusmaran ||</l>
+		<l n="a">ādadītātha ṣaḍbhāgaṁ</l> <l n="b">pranaṣṭādhigatān nr̥paḥ |</l>
+		<l n="c">daśamaṁ dvādaśaṁ vāpi</l> <l n="d">satāṁ dharmam anusmaran ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1044,8 +1067,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>pranaṣṭādhigataṁ dravyaṁ</l> <l>tiṣṭhed yuktair adhiṣṭhitam |</l>
-		<l>yāṁs tatra caurān gr̥hṇīyāt</l> <l>tān rājebhena ghātayet ||</l>
+		<l n="a">pranaṣṭādhigataṁ dravyaṁ</l> <l n="b">tiṣṭhed yuktair adhiṣṭhitam |</l>
+		<l n="c">yāṁs tatra caurān gr̥hṇīyāt</l> <l n="d">tān rājebhena ghātayet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1063,8 +1086,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>mamāyam iti yo brūyān</l> <l>nidhiṁ satyena mānavaḥ |</l>
-		<l>tasyādadīta ṣaḍbhāgaṁ</l> <l>rājā dvādaśam eva vā ||</l>
+		<l n="a">mamāyam iti yo brūyān</l> <l n="b">nidhiṁ satyena mānavaḥ |</l>
+		<l n="c">tasyādadīta ṣaḍbhāgaṁ</l> <l n="d">rājā dvādaśam eva vā ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1084,8 +1107,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>anr̥taṁ tu vadan daṇḍyaḥ</l> <l>svavittasyāṁśam aṣṭamam |</l>
-		<l>tasyaiva vā nidhānasya</l> <l>saṁkhyayālpīyasīṁ kalām ||</l>
+		<l n="a">anr̥taṁ tu vadan daṇḍyaḥ</l> <l n="b">svavittasyāṁśam aṣṭamam |</l>
+		<l n="c">tasyaiva vā nidhānasya</l> <l n="d">saṁkhyayālpīyasīṁ kalām ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1103,8 +1126,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>vidvāṁs tu brāhmaṇo dr̥ṣṭvā</l> <l>pūrvopanihitaṁ nidhim |</l>
-		<l>aśeṣato ’py ādadīta</l> <l>sarvasyādhipatir hi saḥ ||</l>
+		<l n="a">vidvāṁs tu brāhmaṇo dr̥ṣṭvā</l> <l n="b">pūrvopanihitaṁ nidhim |</l>
+		<l n="c">aśeṣato ’py ādadīta</l> <l n="d">sarvasyādhipatir hi saḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1122,8 +1145,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yaṁ tu paśyen nidhiṁ rājā</l> <l>purāṇaṁ nihitaṁ kṣitau |</l>
-		<l>tasmād dvijebhyo dattvārdham</l> <l>ardhaṁ kośe praveśayet ||</l>
+		<l n="a">yaṁ tu paśyen nidhiṁ rājā</l> <l n="b">purāṇaṁ nihitaṁ kṣitau |</l>
+		<l n="c">tasmād dvijebhyo dattvārdham</l> <l n="d">ardhaṁ kośe praveśayet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1140,8 +1163,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>nidhīnāṁ hi purāṇānāṁ</l> <l>dhātūnām eva ca kṣitau |</l>
-		<l>ardhabhāg rakṣaṇād rājā</l> <l>bhūmer adhipatir hi saḥ ||</l>
+		<l n="a">nidhīnāṁ hi purāṇānāṁ</l> <l n="b">dhātūnām eva ca kṣitau |</l>
+		<l n="c">ardhabhāg rakṣaṇād rājā</l> <l n="d">bhūmer adhipatir hi saḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1160,8 +1183,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>dātavyaṁ sarvavarṇebhyo</l> <l>rājñā caurair hr̥taṁ dhanam |</l>
-		<l>rājā tad upayuñjānaś</l> <l>caurasyāpnoti kilbiṣam ||</l>
+		<l n="a">dātavyaṁ sarvavarṇebhyo</l> <l n="b">rājñā caurair hr̥taṁ dhanam |</l>
+		<l n="c">rājā tad upayuñjānaś</l> <l n="d">caurasyāpnoti kilbiṣam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1180,8 +1203,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>jātijānapadān dharmān</l> <l>śreṇīdharmāṁś ca dharmavit |</l>
-		<l>samīkṣya kuladharmāṁś ca</l> <l>svadharmaṁ pratipādayet ||</l>
+		<l n="a">jātijānapadān dharmān</l> <l n="b">śreṇīdharmāṁś ca dharmavit |</l>
+		<l n="c">samīkṣya kuladharmāṁś ca</l> <l n="d">svadharmaṁ pratipādayet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1202,8 +1225,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>svāni karmāṇi kurvāṇā</l> <l>dūre santo ’pi mānavāḥ |</l>
-		<l>priyā bhavanti lokasya</l> <l>sve sve karmaṇy avasthitāḥ ||</l>
+		<l n="a">svāni karmāṇi kurvāṇā</l> <l n="b">dūre santo ’pi mānavāḥ |</l>
+		<l n="c">priyā bhavanti lokasya</l> <l n="d">sve sve karmaṇy avasthitāḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1224,8 +1247,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>notpādayet svayaṁ kāryaṁ</l> <l>rājā nāpy asya pūruṣaḥ |</l>
-		<l>na ca prāpitam anyena</l> <l>grasetārthaṁ kathaṁ cana ||</l>
+		<l n="a">notpādayet svayaṁ kāryaṁ</l> <l n="b">rājā nāpy asya pūruṣaḥ |</l>
+		<l n="c">na ca prāpitam anyena</l> <l n="d">grasetārthaṁ kathaṁ cana ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1244,8 +1267,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yathā nayaty asr̥kpātair</l> <l>mr̥gasya mr̥gayuḥ padam |</l>
-		<l>nayet tathānumānena</l> <l>dharmasya nr̥patiḥ padam ||</l>
+		<l n="a">yathā nayaty asr̥kpātair</l> <l n="b">mr̥gasya mr̥gayuḥ padam |</l>
+		<l n="c">nayet tathānumānena</l> <l n="d">dharmasya nr̥patiḥ padam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1267,8 +1290,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>satyam arthaṁ ca saṁpaśyed</l> <l>ātmānam atha sākṣiṇaḥ |</l>
-		<l>deśaṁ kālaṁ ca rūpaṁ ca</l> <l>vyavahāravidhau sthitaḥ ||</l>
+		<l n="a">satyam arthaṁ ca saṁpaśyed</l> <l n="b">ātmānam atha sākṣiṇaḥ |</l>
+		<l n="c">deśaṁ kālaṁ ca rūpaṁ ca</l> <l n="d">vyavahāravidhau sthitaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1288,8 +1311,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>sadbhir ācaritaṁ yat syād</l> <l>dhārmikaiś ca dvijātibhiḥ |</l>
-		<l>tad deśakulajātīnām</l> <l>aviruddhaṁ prakalpayet ||</l>
+		<l n="a">sadbhir ācaritaṁ yat syād</l> <l n="b">dhārmikaiś ca dvijātibhiḥ |</l>
+		<l n="c">tad deśakulajātīnām</l> <l n="d">aviruddhaṁ prakalpayet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1314,8 +1337,8 @@ K: 6r1: kunaṁ hikaṁ dr̥vya: tan a:na ŋsaṁ madruvya:, kəkəsana: de sa�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>adhamarṇārthasiddhyartham</l> <l>uttamarṇena coditaḥ |</l>
-		<l>dāpayed dhanikasyārtham</l> <l>adhamarṇād vibhāvitam ||</l>
+		<l n="a">adhamarṇārthasiddhyartham</l> <l n="b">uttamarṇena coditaḥ |</l>
+		<l n="c">dāpayed dhanikasyārtham</l> <l n="d">adhamarṇād vibhāvitam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1333,8 +1356,8 @@ K: [8r1] kunaṁ hikaṁ mavihutaṁ , Upayanya kapva karaṇaniṁ pahutaṁnya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yair yair upāyair arthaṁ svaṁ</l> <l>prāpnuyād uttamarṇikaḥ |</l>
-		<l>tair tair upāyaiḥ saṁgr̥hya</l> <l>dāpayed adhamarṇikam ||</l>
+		<l n="a">yair yair upāyair arthaṁ svaṁ</l> <l n="b">prāpnuyād uttamarṇikaḥ |</l>
+		<l n="c">tair tair upāyaiḥ saṁgr̥hya</l> <l n="d">dāpayed adhamarṇikam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1352,8 +1375,8 @@ K: [8r1] kunaṁ hikaṁ mavihutaṁ , Upayanya kapva karaṇaniṁ pahutaṁnya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>dharmeṇa vyavahāreṇa</l> <l>chalenācaritena ca |</l>
-		<l>prayuktaṁ sādhayed arthaṁ</l> <l>pañcamena balena ca ||</l>
+		<l n="a">dharmeṇa vyavahāreṇa</l> <l n="b">chalenācaritena ca |</l>
+		<l n="c">prayuktaṁ sādhayed arthaṁ</l> <l n="d">pañcamena balena ca ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1376,8 +1399,8 @@ K: [8r1] kunaṁ hikaṁ mavihutaṁ , Upayanya kapva karaṇaniṁ pahutaṁnya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yaḥ svayaṁ sādhayed artham</l> <l>uttamarṇo ’dhamarṇikāt |</l>
-		<l>na sa rājñābhiyoktavyaḥ</l> <l>svakaṁ saṁsādhayan dhanam ||</l>
+		<l n="a">yaḥ svayaṁ sādhayed artham</l> <l n="b">uttamarṇo ’dhamarṇikāt |</l>
+		<l n="c">na sa rājñābhiyoktavyaḥ</l> <l n="d">svakaṁ saṁsādhayan dhanam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1396,8 +1419,8 @@ K: [8r1] kunaṁ hikaṁ mavihutaṁ , Upayanya kapva karaṇaniṁ pahutaṁnya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>arthe ’pavyayamānaṁ tu</l> <l>karaṇena vibhāvitam |</l>
-		<l>dāpayed dhanikasyārthaṁ</l> <l>daṇḍaleśaṁ ca śaktitaḥ ||</l>
+		<l n="a">arthe ’pavyayamānaṁ tu</l> <l n="b">karaṇena vibhāvitam |</l>
+		<l n="c">dāpayed dhanikasyārthaṁ</l> <l n="d">daṇḍaleśaṁ ca śaktitaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1423,8 +1446,8 @@ K: [8r1] kunaṁ hikaṁ mavihutaṁ , Upayanya kapva karaṇaniṁ pahutaṁnya
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>r̥ṇe deye pratijñāte</l> <l>pañcakaṁ śatam arhati |</l>
-		<l>apahnave tu dviguṇaṁ</l> <l>tan manor anuśāsanam ||</l>
+		<l n="a">r̥ṇe deye pratijñāte</l> <l n="b">pañcakaṁ śatam arhati |</l>
+		<l n="c">apahnave tu dviguṇaṁ</l> <l n="d">tan manor anuśāsanam ||</l>
 	</lg>
 	<listApp type="parallels">
          <app>
@@ -1485,8 +1508,8 @@ ri tka <app><lem wit="#L">samaya</lem><rdg wit="#K">yasmaya:</rdg></app><!-- bot
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>apahnave ’dhamarṇasya</l> <l>dehīty uktasya saṁsadi |</l>
-		<l>abhiyoktā diśed deśaṁ</l> <l>karaṇaṁ vānyad uddiśet ||</l>
+		<l n="a">apahnave ’dhamarṇasya</l> <l n="b">dehīty uktasya saṁsadi |</l>
+		<l n="c">abhiyoktā diśed deśaṁ</l> <l n="d">karaṇaṁ vānyad uddiśet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1502,8 +1525,8 @@ ri tka <app><lem wit="#L">samaya</lem><rdg wit="#K">yasmaya:</rdg></app><!-- bot
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yatra na syāt kr̥taṁ pattraṁ</l> <l>karaṇaṁ ca na vidyate |</l>
-		<l>na copalambhaḥ pūrvoktas</l> <l>tatra daivī kriyā bhavet  ||</l>
+		<l n="a">yatra na syāt kr̥taṁ pattraṁ</l> <l n="b">karaṇaṁ ca na vidyate |</l>
+		<l n="c">na copalambhaḥ pūrvoktas</l> <l n="d">tatra daivī kriyā bhavet  ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1524,8 +1547,8 @@ tan ana putra *kalāntara, tan anāmituturi, samāsatyaha juga ya, bhaṭāra <a
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>adeśaṁ yaś ca diśati</l> <l>nirdiśyāpahnute ca yaḥ |</l>
-		<l>yaś cādharottarān arthān</l> <l>vigītān nāvabudhyate ||</l>
+		<l n="a">adeśaṁ yaś ca diśati</l> <l n="b">nirdiśyāpahnute ca yaḥ |</l>
+		<l n="c">yaś cādharottarān arthān</l> <l n="d">vigītān nāvabudhyate ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1535,7 +1558,7 @@ tan ana putra *kalāntara, tan anāmituturi, samāsatyaha juga ya, bhaṭāra <a
  </supplied></quote>
  <p>hanāpihutaṅ tumuduh ikaṅ deśa, pisaniṅuna deśanikaṅ mahutaṅ,
  hana ta deśa tinuduh pūrvaka, vkasan kinasnya,
- hana <app><lem wit="#L">ta vruh kveh-kḍikniṅ pihutaṅnya</lem><rdg wit="#K">ta<add place="below">n·</add> vruḥ riṁ kveḥ kḍik hutaṁnya</rdg><note>Or should we accept <foreign>tan</foreign> on the basis of <ptr target="#K"/> and edit something like the following: <foreign>tan vruh kveh-kḍikniṅ pihutaṅnya</foreign>?</note></app>, -->
+ hana <app><lem wit="#L">ta vruh kveh-kḍikniṅ pihutaṅnya</lem><rdg wit="#K">ta<add place="below">n·</add> vruḥ riṁ kveḥ kḍik hutaṁnya</rdg><note>Or should we accept <foreign>tan</foreign> on the basis of <ptr target="#K"/> and edit something like the following: <foreign>tan vruh kveh-kḍikniṅ pihutaṅnya</foreign>?</note></app>, --&gt;
  <!-- <app><lem type="emn">tan vruh kveh-kḍikniṅ pihutaṅnya</rdg><rdg wit="#L">ta vruḥ kveḥkḍikniṁ pihutaṁnya</rdg><rdg wit="#K">ta<add place="below">n·</add> vruḥ riṁ kveḥ kḍik hutaṁnya</rdg></app>, -->
  <app><lem wit="#L">mvaṅ</lem><rdg wit="#K">mvaḥ</rdg></app> tan vruh paknaniṅ piraknyan *hinutaṅ.</p>
  </div>
@@ -1548,8 +1571,8 @@ tan ana putra *kalāntara, tan anāmituturi, samāsatyaha juga ya, bhaṭāra <a
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>apadiśyāpadeśyaṁ ca</l> <l>punar yas tv apadhāvati |</l>
-		<l>samyak praṇihitaṁ cārthaṁ</l> <l>pr̥ṣṭaḥ san nābhinandati ||</l>
+		<l n="a">apadiśyāpadeśyaṁ ca</l> <l n="b">punar yas tv apadhāvati |</l>
+		<l n="c">samyak praṇihitaṁ cārthaṁ</l> <l n="d">pr̥ṣṭaḥ san nābhinandati ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1570,8 +1593,8 @@ i sanmukhanya, mnəṅ tan sumavura.<!-- no || here in mss.! --></p>
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>asaṁbhāṣye sākṣibhiś ca</l> <l>deśe saṁbhāṣate mithaḥ |</l>
-		<l>nirucyamānaṁ praśnaṁ ca</l> <l>necched yaś cāpi niṣpatet ||</l>
+		<l n="a">asaṁbhāṣye sākṣibhiś ca</l> <l n="b">deśe saṁbhāṣate mithaḥ |</l>
+		<l n="c">nirucyamānaṁ praśnaṁ ca</l> <l n="d">necched yaś cāpi niṣpatet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1588,8 +1611,8 @@ hana tatan hana kahyunyan <app><lem type="norm">vuvus</lem><rdg wit="#L">vuhus</
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>brūhīty uktaś ca na brūyād</l> <l>uktaṁ ca na vibhāvayet |</l>
-		<l>na ca pūrvāparaṁ vidyāt</l> <l>tasmād arthāt sa hīyate  ||</l>
+		<l n="a">brūhīty uktaś ca na brūyād</l> <l n="b">uktaṁ ca na vibhāvayet |</l>
+		<l n="c">na ca pūrvāparaṁ vidyāt</l> <l n="d">tasmād arthāt sa hīyate  ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1614,8 +1637,8 @@ hana tatan hana kahyunyan <app><lem type="norm">vuvus</lem><rdg wit="#L">vuhus</
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>jñātāraḥ santi mety uktvā</l> <l>diśety ukto diśen na yaḥ |</l>
-		<l>dharmasthaḥ kāraṇair etair</l> <l>hīnaṁ tam iti nirdiśet ||</l>
+		<l n="a">jñātāraḥ santi mety uktvā</l> <l n="b">diśety ukto diśen na yaḥ |</l>
+		<l n="c">dharmasthaḥ kāraṇair etair</l> <l n="d">hīnaṁ tam iti nirdiśet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1638,8 +1661,8 @@ hana tatan hana kahyunyan <app><lem type="norm">vuvus</lem><rdg wit="#L">vuhus</
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>abhiyoktā na ced brūyād</l> <l>vadhyo daṇḍyaś ca dharmataḥ |</l>
-		<l>na cet tripakṣāt prabrūyād</l> <l>dharmaṁ prati parājitaḥ ||</l>
+		<l n="a">abhiyoktā na ced brūyād</l> <l n="b">vadhyo daṇḍyaś ca dharmataḥ |</l>
+		<l n="c">na cet tripakṣāt prabrūyād</l> <l n="d">dharmaṁ prati parājitaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1659,8 +1682,8 @@ hana tatan hana kahyunyan <app><lem type="norm">vuvus</lem><rdg wit="#L">vuhus</
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yo yāvan nihnuvītārthaṁ</l> <l>mithyā yāvati vā vadet |</l>
-		<l>tau nr̥peṇa hy adharmajñau</l> <l>dāpyau taddviguṇaṁ damam ||</l>
+		<l n="a">yo yāvan nihnuvītārthaṁ</l> <l n="b">mithyā yāvati vā vadet |</l>
+		<l n="c">tau nr̥peṇa hy adharmajñau</l> <l n="d">dāpyau taddviguṇaṁ damam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1689,8 +1712,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>pr̥ṣṭo ’pavyayamānas tu</l> <l>kr̥tāvastho dhanaiṣiṇā |</l>
-		<l>tryavaraiḥ sākṣibhir bhāvyo</l> <l>nr̥pabrāhmaṇasaṁnidhau ||</l>
+		<l n="a">pr̥ṣṭo ’pavyayamānas tu</l> <l n="b">kr̥tāvastho dhanaiṣiṇā |</l>
+		<l n="c">tryavaraiḥ sākṣibhir bhāvyo</l> <l n="d">nr̥pabrāhmaṇasaṁnidhau ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1707,8 +1730,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 	-->
 	 	<quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	  <lg met="anuṣṭubh">
-	 	 <l>yādr̥śā dhanibhiḥ kāryā</l> <l>vyavahāreṣu sākṣiṇaḥ |</l>
-	 	 <l>tādr̥śān saṁpravakṣyāmi</l> <l>yathā vācyam r̥taṁ ca taiḥ ||</l>
+	 	 <l n="a">yādr̥śā dhanibhiḥ kāryā</l> <l n="b">vyavahāreṣu sākṣiṇaḥ |</l>
+	 	 <l n="c">tādr̥śān saṁpravakṣyāmi</l> <l n="d">yathā vācyam r̥taṁ ca taiḥ ||</l>
 	  </lg>
 	  <listApp type="parallels">
 	 			<app>
@@ -1731,8 +1754,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>gr̥hiṇaḥ putriṇo maulāḥ</l> <l>kṣatraviṭśūdrayonayaḥ |</l>
-		<l>arthyuktāḥ sākṣyam arhanti</l> <l>na ye ke cid anāpadi ||</l>
+		<l n="a">gr̥hiṇaḥ putriṇo maulāḥ</l> <l n="b">kṣatraviṭśūdrayonayaḥ |</l>
+		<l n="c">arthyuktāḥ sākṣyam arhanti</l> <l n="d">na ye ke cid anāpadi ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1754,8 +1777,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>āptāḥ sarveṣu varṇeṣu</l> <l>kāryāḥ kāryeṣu sākṣiṇaḥ |</l>
-		<l>sarvadharmavido ’lubdhā</l> <l>viparītāṁs tu varjayet ||</l>
+		<l n="a">āptāḥ sarveṣu varṇeṣu</l> <l n="b">kāryāḥ kāryeṣu sākṣiṇaḥ |</l>
+		<l n="c">sarvadharmavido ’lubdhā</l> <l n="d">viparītāṁs tu varjayet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1773,8 +1796,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>nārthasaṁbandhino nāptā</l> <l>na sahāyā na vairiṇaḥ |</l>
-		<l>na dr̥ṣṭadoṣāḥ kartavyā</l> <l>na vyādhyārtā na dūṣitāḥ ||</l>
+		<l n="a">nārthasaṁbandhino nāptā</l> <l n="b">na sahāyā na vairiṇaḥ |</l>
+		<l n="c">na dr̥ṣṭadoṣāḥ kartavyā</l> <l n="d">na vyādhyārtā na dūṣitāḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1795,8 +1818,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>na sākṣī nr̥patiḥ kāryo</l> <l>na kārukakuśīlavau |</l>
-		<l>na śrotriyo na liṅgastho</l> <l>na saṅgebhyo vinirgataḥ ||</l>
+		<l n="a">na sākṣī nr̥patiḥ kāryo</l> <l n="b">na kārukakuśīlavau |</l>
+		<l n="c">na śrotriyo na liṅgastho</l> <l n="d">na saṅgebhyo vinirgataḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1813,8 +1836,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>nādhyadhīno na vaktavyo</l> <l>na dasyur na vikarmakr̥t |</l>
-		<l>na vr̥ddho na śiśur naiko</l> <l>nāntyo na vikalendriyaḥ ||</l>
+		<l n="a">nādhyadhīno na vaktavyo</l> <l n="b">na dasyur na vikarmakr̥t |</l>
+		<l n="c">na vr̥ddho na śiśur naiko</l> <l n="d">nāntyo na vikalendriyaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1838,8 +1861,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>nārto na matto nonmatto</l> <l>na kṣuttr̥ṣṇopapīḍitaḥ |</l>
-		<l>na śramārto na kāmārto</l> <l>na kruddho nāpi taskaraḥ ||</l>
+		<l n="a">nārto na matto nonmatto</l> <l n="b">na kṣuttr̥ṣṇopapīḍitaḥ |</l>
+		<l n="c">na śramārto na kāmārto</l> <l n="d">na kruddho nāpi taskaraḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1864,8 +1887,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>strīṇāṁ sākṣyaṁ striyaḥ kuryur</l> <l>dvijānāṁ sadr̥śā dvijāḥ |</l>
-		<l>śūdrāś ca santaḥ śūdrāṇām</l> <l>antyānām antyayonayaḥ ||</l>
+		<l n="a">strīṇāṁ sākṣyaṁ striyaḥ kuryur</l> <l n="b">dvijānāṁ sadr̥śā dvijāḥ |</l>
+		<l n="c">śūdrāś ca santaḥ śūdrāṇām</l> <l n="d">antyānām antyayonayaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1888,8 +1911,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>anubhāvī tu yaḥ kaś cit</l> <l>kuryāt sākṣyaṁ vivādinām |</l>
-		<l>antarveśmany araṇye vā</l> <l>śarīrasyaiva cātyaye ||</l>
+		<l n="a">anubhāvī tu yaḥ kaś cit</l> <l n="b">kuryāt sākṣyaṁ vivādinām |</l>
+		<l n="c">antarveśmany araṇye vā</l> <l n="d">śarīrasyaiva cātyaye ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1908,8 +1931,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>striyāpy asaṁbhave kāryaṁ</l> <l>bālena sthavireṇa vā |</l>
-		<l>śiṣyeṇa bandhunā vāpi</l> <l>dāsena bhr̥takena vā ||</l>
+		<l n="a">striyāpy asaṁbhave kāryaṁ</l> <l n="b">bālena sthavireṇa vā |</l>
+		<l n="c">śiṣyeṇa bandhunā vāpi</l> <l n="d">dāsena bhr̥takena vā ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1928,8 +1951,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>bālavr̥ddhāturāṇāṁ tu</l> <l>sākṣyeṣu vadatāṁ mr̥ṣā |</l>
-		<l>jānīyād asthirāṁ vācam</l> <l>utsiktamanasāṁ tathā ||</l>
+		<l n="a">bālavr̥ddhāturāṇāṁ tu</l> <l n="b">sākṣyeṣu vadatāṁ mr̥ṣā |</l>
+		<l n="c">jānīyād asthirāṁ vācam</l> <l n="d">utsiktamanasāṁ tathā ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1948,8 +1971,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>sāhaseṣu ca sarveṣu</l> <l>steyasaṁgrahaṇeṣu ca |</l>
-		<l>vāgdaṇḍayoś ca pāruṣye</l> <l>na parīkṣeta sākṣiṇaḥ ||</l>
+		<l n="a">sāhaseṣu ca sarveṣu</l> <l n="b">steyasaṁgrahaṇeṣu ca |</l>
+		<l n="c">vāgdaṇḍayoś ca pāruṣye</l> <l n="d">na parīkṣeta sākṣiṇaḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1966,8 +1989,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>bahutvaṁ parigr̥hṇīyāt</l> <l>sākṣidvaidhe narādhipaḥ |</l>
-		<l>sameṣu tu guṇotkr̥ṣṭān</l> <l>guṇidvaidhe dvijottamān ||</l>
+		<l n="a">bahutvaṁ parigr̥hṇīyāt</l> <l n="b">sākṣidvaidhe narādhipaḥ |</l>
+		<l n="c">sameṣu tu guṇotkr̥ṣṭān</l> <l n="d">guṇidvaidhe dvijottamān ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -1988,8 +2011,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>samakṣadarśanāt sākṣyaṁ</l> <l>śravaṇāc caiva sidhyati |</l>
-		<l>tatra satyaṁ bruvan sākṣī</l> <l>dharmārthābhyāṁ na hīyate ||</l>
+		<l n="a">samakṣadarśanāt sākṣyaṁ</l> <l n="b">śravaṇāc caiva sidhyati |</l>
+		<l n="c">tatra satyaṁ bruvan sākṣī</l> <l n="d">dharmārthābhyāṁ na hīyate ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2011,8 +2034,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>sākṣī dr̥ṣṭaśrutād anyad</l> <l>vibruvann āryasaṁsadi |</l>
-		<l>avāṅ narakam evaiti</l> <l>pretya svargāc ca hīyate ||</l><!-- var.: abhyeti -->
+		<l n="a">sākṣī dr̥ṣṭaśrutād anyad</l> <l n="b">vibruvann āryasaṁsadi |</l>
+		<l n="c">avāṅ narakam evaiti</l> <l n="d">pretya svargāc ca hīyate ||</l><!-- var.: abhyeti -->
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2033,8 +2056,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yatrānibaddho ’pīkṣeta</l> <l>śr̥ṇuyād vāpi kiṁ cana |</l>
-		<l>pr̥ṣṭas tatrāpi tad brūyād</l> <l>yathādr̥ṣṭaṁ yathāśrutam ||</l>
+		<l n="a">yatrānibaddho ’pīkṣeta</l> <l n="b">śr̥ṇuyād vāpi kiṁ cana |</l>
+		<l n="c">pr̥ṣṭas tatrāpi tad brūyād</l> <l n="d">yathādr̥ṣṭaṁ yathāśrutam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2053,8 +2076,8 @@ K: kunaṁ yan anagiḥ hikaṁṅ ahutaṁ, hapuhaka:pva ya pintonakna, I saṁ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>eko ’lubdhas tu sākṣī syād</l> <l>bahvyaḥ śucyo ’pi na striyaḥ |</l>
-		<l>strībuddher asthiratvāt tu</l> <l>doṣaiś cānye ’pi ye vr̥tāḥ ||</l>
+		<l n="a">eko ’lubdhas tu sākṣī syād</l> <l n="b">bahvyaḥ śucyo ’pi na striyaḥ |</l>
+		<l n="c">strībuddher asthiratvāt tu</l> <l n="d">doṣaiś cānye ’pi ye vr̥tāḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2076,8 +2099,8 @@ yan strī-strī,<!-- no , here in K --> <app><lem wit="#K">tan yogya</lem><rdg w
    <!-- our text gives no gloss for the first stanza grouped in this div -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="omitted">
 	<lg met="anuṣṭubh">
-		<l>svabhāvenaiva yad brūyus</l> <l>tad grāhyaṁ vyāvahārikam |</l>
-		<l>ato yad anyad vibrūyur</l> <l>dharmārthaṁ tad apārthakam ||</l>
+		<l n="a">svabhāvenaiva yad brūyus</l> <l n="b">tad grāhyaṁ vyāvahārikam |</l>
+		<l n="c">ato yad anyad vibrūyur</l> <l n="d">dharmārthaṁ tad apārthakam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2093,8 +2116,8 @@ K: <matakvana saṁ pragviva:ka:, ri sakṣi> Ana: saṁ mavyava:hara kaliḥ , 
 -->
 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 <lg met="anuṣṭubh">
- <l>sabhāntaḥ sākṣiṇaḥ prāptān</l> <l>arthipratyarthisaṁnidhau |</l>
- <l>prāḍvivāko ’nuyuñjīta</l> <l>vidhinānena sāntvayan ||</l>
+ <l n="a">sabhāntaḥ sākṣiṇaḥ prāptān</l> <l n="b">arthipratyarthisaṁnidhau |</l>
+ <l n="c">prāḍvivāko ’nuyuñjīta</l> <l n="d">vidhinānena sāntvayan ||</l>
 </lg>
 <listApp type="parallels">
 		<app>
@@ -2112,8 +2135,8 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yad dvayor anayor vittha</l> <l>kārye 'smiṁś ceṣṭitaṁ mithaḥ |</l>
-		<l>tad brūta sarvaṁ satyena</l> <l>yuṣmākaṁ hy atra sākṣitā ||</l>
+		<l n="a">yad dvayor anayor vittha</l> <l n="b">kārye 'smiṁś ceṣṭitaṁ mithaḥ |</l>
+		<l n="c">tad brūta sarvaṁ satyena</l> <l n="d">yuṣmākaṁ hy atra sākṣitā ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2136,7 +2159,7 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
 		<!-- <l>satyaṁ sākṣye bruvan sākṣī</l> <l>lokān prāpnoti puṣkalān |</l> -->
-		<l>iha cānuttamāṁ kīrtiṁ</l> <l>vāg eṣā brahmapūjitā ||</l>
+		<l n="a">iha cānuttamāṁ kīrtiṁ</l> <l n="b">vāg eṣā brahmapūjitā ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2154,8 +2177,8 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>sākṣye ’nr̥taṁ vadan pāśair</l> <l>badhyate vāruṇair bhr̥śam |</l>
-		<l>vivaśaḥ śatam ājātīs</l> <l>tasmāt sākṣye vaded r̥tam ||</l>
+		<l n="a">sākṣye ’nr̥taṁ vadan pāśair</l> <l n="b">badhyate vāruṇair bhr̥śam |</l>
+		<l n="c">vivaśaḥ śatam ājātīs</l> <l n="d">tasmāt sākṣye vaded r̥tam ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2173,8 +2196,8 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>satyena pūyate sākṣī</l> <l>dharmaḥ satyena vardhate |</l>
-		<l>tasmāt satyaṁ hi vaktavyaṁ</l> <l>sarvavarṇeṣu sākṣibhiḥ ||</l>
+		<l n="a">satyena pūyate sākṣī</l> <l n="b">dharmaḥ satyena vardhate |</l>
+		<l n="c">tasmāt satyaṁ hi vaktavyaṁ</l> <l n="d">sarvavarṇeṣu sākṣibhiḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2190,8 +2213,8 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
   <!-- our text gives no gloss for the first stanza grouped in this div -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="omitted">
 	 <lg met="anuṣṭubh">
-	  <l>ātmaiva hy ātmanaḥ sākṣī</l> <l>gatir ātmā tathātmanaḥ |</l>
-	  <l>māvamaṁsthāḥ svam ātmānaṁ</l> <l>nr̥ṇāṁ sākṣiṇam uttamam ||</l>
+	  <l n="a">ātmaiva hy ātmanaḥ sākṣī</l> <l n="b">gatir ātmā tathātmanaḥ |</l>
+	  <l n="c">māvamaṁsthāḥ svam ātmānaṁ</l> <l n="d">nr̥ṇāṁ sākṣiṇam uttamam ||</l>
 	 </lg>
 	 <listApp type="parallels">
 	 		<app>
@@ -2207,9 +2230,9 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>ekam evādvitīyaṁ tu</l> <l>yat satyenāvabudhyate |</l>
+		<l n="a">ekam evādvitīyaṁ tu</l> <l n="b">yat satyenāvabudhyate |</l>
 		<!-- ekam evādvitīyaṁ tu tan matvaivāvabudhyate --> <!-- em. yan? -->
-		<l>satyaṁ svargasya sopānaṁ</l> <l>pārāvārasya naur iva ||</l>
+		<l n="c">satyaṁ svargasya sopānaṁ</l> <l n="d">pārāvārasya naur iva ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2226,8 +2249,8 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>nasti satyāt paro dharmo</l> <l>nānr̥tāt pātakaṁ param |</l>
-		<l>sthitiś ca loke dharmaś ca</l> <l>tasmāt satyaṁ viśiṣyate ||</l>
+		<l n="a">nasti satyāt paro dharmo</l> <l n="b">nānr̥tāt pātakaṁ param |</l>
+		<l n="c">sthitiś ca loke dharmaś ca</l> <l n="d">tasmāt satyaṁ viśiṣyate ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2250,8 +2273,8 @@ riṅ sabhā,<!-- neither L nor K has "," here --> ujaranira<!--  "," inserted h
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>manyante vai pāpakr̥to</l> <l>na kaś cit paśyatīti naḥ |</l>
-		<l>tāṁś ca devāḥ prapaśyanti</l> <l>svaś caivāntarapūruṣaḥ ||</l><!-- || MDh 8.85 var.: tāṁs tu, svasyai- -->
+		<l n="a">manyante vai pāpakr̥to</l> <l n="b">na kaś cit paśyatīti naḥ |</l>
+		<l n="c">tāṁś ca devāḥ prapaśyanti</l> <l n="d">svaś caivāntarapūruṣaḥ ||</l><!-- || MDh 8.85 var.: tāṁs tu, svasyai- -->
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2272,10 +2295,10 @@ K: Ana saṅ hyaṁ tiga: vlas·, [SH] kuma:vruh iya: , nḍya: lvirnira || nyo�
 	 <p>hana saṅ hyaṅ tiga vlas, kumavruh <app><lem wit="#L">iriya</lem><rdg wit="#K">iya:</rdg></app>, <app><lem wit="#K">ndya lvirnira</lem><rdg wit="#L"><gap reason="omitted"/></rdg><note>The long omission in <ptr target="#L"/> that starts here and ends after the paraphrase of the following stanza may be due to eyeskip from one punctuation sign to another.</note></app>:</p>
 	 <p><quote type="base-text" xml:lang="san-Latn">
 	<lg rend="check"><!-- encode variant at more detailed level? -->
-		<l><app><lem type="emn">dyaur bhūmir āpo hr̥dayaṁ, candrārkāgniyamānilāḥ,</lem>
+		<l n="a"><app><lem type="emn">dyaur bhūmir āpo hr̥dayaṁ, candrārkāgniyamānilāḥ,</lem>
 		<rdg wit="#L">bhyoḥ bhūmi,r apoḥ, candrarkka:ghniyama:,niliṁ,</rdg>
 		<rdg wit="#K">nyoḥ bhumir apo hr̥dāyaṁ*, ca:nḍrakagniyama:nilaṁ*,</rdg></app></l>
-		<l><app><lem type="emn">rātrir dvisandhye dharmaś ca, vr̥ttajñāḥ sarvadehinām ||</lem>
+		<l n="b"><app><lem type="emn">rātrir dvisandhye dharmaś ca, vr̥ttajñāḥ sarvadehinām ||</lem>
 		<rdg wit="#L">latri, dvisandyo damaś ca:, vrattha:jñaḥ sarvvadehinam· ||</rdg>
 		<rdg wit="#K">ratriḥ dvisanḍyo da:rmma:ś ca, vr̥ta:jñaḥ, sarvvanehinam· ||</rdg></app></l>
 	</lg>
@@ -2283,8 +2306,8 @@ K: Ana saṅ hyaṁ tiga: vlas·, [SH] kuma:vruh iya: , nḍya: lvirnira || nyo�
 			 <app>
  <note corresp="txt:MDhŚ08.086">
 	 <lg met="anuṣṭubh">
-		 <l>dyaur bhūmir āpo hr̥dayaṁ</l> <l>candrārkāgniyamānilāḥ |</l>
-     <l>rātriḥ saṁdhye ca dharmaś ca</l> <l>vr̥ttajñāḥ sarvadehinām ||</l>
+		 <l n="a">dyaur bhūmir āpo hr̥dayaṁ</l> <l n="b">candrārkāgniyamānilāḥ |</l>
+     <l n="c">rātriḥ saṁdhye ca dharmaś ca</l> <l n="d">vr̥ttajñāḥ sarvadehinām ||</l>
 	 </lg>
  </note>
 			 </app>
@@ -2315,7 +2338,7 @@ K: Ana saṅ hyaṁ tiga: vlas·, [SH] kuma:vruh iya: , nḍya: lvirnira || nyo�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>satyaṁ sākṣye bruvan sākṣī</l> <l>lokān prāpnoti puṣkalān |</l>
+		<l n="a">satyaṁ sākṣye bruvan sākṣī</l> <l n="b">lokān prāpnoti puṣkalān |</l>
 		<!-- <l>iha cānuttamāṁ kīrtiṁ</l> <l>vāg eṣā brahmapūjitā ||</l> -->
 	</lg>
 	<listApp type="parallels">
@@ -2333,8 +2356,8 @@ K: Ana saṅ hyaṁ tiga: vlas·, [SH] kuma:vruh iya: , nḍya: lvirnira || nyo�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yasya dr̥śyeta saptāhād</l> <l>uktavākyasya sākṣiṇaḥ |</l>
-		<l>rogo ’gnir jñātimaraṇam</l> <l>r̥ṇaṁ dāpyo damaṁ ca saḥ ||</l>
+		<l n="a">yasya dr̥śyeta saptāhād</l> <l n="b">uktavākyasya sākṣiṇaḥ |</l>
+		<l n="c">rogo ’gnir jñātimaraṇam</l> <l n="d">r̥ṇaṁ dāpyo damaṁ ca saḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2353,8 +2376,8 @@ K: Ana saṅ hyaṁ tiga: vlas·, [SH] kuma:vruh iya: , nḍya: lvirnira || nyo�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>tripakṣād abruvan sākṣyam</l> <l>r̥ṇādiṣu naro ’gadaḥ |</l>
-		<l>tad r̥ṇaṁ prāpnuyāt sarvaṁ</l> <l>daśabandhaṁ ca sarvataḥ ||</l>
+		<l n="a">tripakṣād abruvan sākṣyam</l> <l n="b">r̥ṇādiṣu naro ’gadaḥ |</l>
+		<l n="c">tad r̥ṇaṁ prāpnuyāt sarvaṁ</l> <l n="d">daśabandhaṁ ca sarvataḥ ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2375,8 +2398,8 @@ K: Ana saṅ hyaṁ tiga: vlas·, [SH] kuma:vruh iya: , nḍya: lvirnira || nyo�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>asākṣikeṣu tv artheṣu</l> <l>mitho vivadamānayoḥ |</l>
-		<l>avindaṁs tattvataḥ satyaṁ</l> <l>śapathenāpi lambhayet ||</l>
+		<l n="a">asākṣikeṣu tv artheṣu</l> <l n="b">mitho vivadamānayoḥ |</l>
+		<l n="c">avindaṁs tattvataḥ satyaṁ</l> <l n="d">śapathenāpi lambhayet ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2393,8 +2416,8 @@ K: Ana saṅ hyaṁ tiga: vlas·, [SH] kuma:vruh iya: , nḍya: lvirnira || nyo�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>maharṣibhiś ca devaiś ca</l> <l>kāryārthaṁ śapathāḥ kr̥tāḥ |</l>
-		<l>vasiṣṭhaś cāpi śapathaṁ</l> <l>śepe paijavane nr̥pe ||</l>
+		<l n="a">maharṣibhiś ca devaiś ca</l> <l n="b">kāryārthaṁ śapathāḥ kr̥tāḥ |</l>
+		<l n="c">vasiṣṭhaś cāpi śapathaṁ</l> <l n="d">śepe paijavane nr̥pe ||</l>
 	</lg>
 	<listApp type="parallels">
 			 <app>
@@ -2410,8 +2433,8 @@ K: Ikaṁ vvaṁ kadalih a:ṅa:lap· vastu bari-bari, nḍan tuhu ya ṅalap·,
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>na vr̥thā śapathaṁ kuryāt</l> <l>svalpe ’py arthe naro budhaḥ |</l>
-		<l>vr̥thā hi śapathaṁ kurvan</l> <l>pretya ceha ca naśyati ||</l>
+		<l n="a">na vr̥thā śapathaṁ kuryāt</l> <l n="b">svalpe ’py arthe naro budhaḥ |</l>
+		<l n="c">vr̥thā hi śapathaṁ kurvan</l> <l n="d">pretya ceha ca naśyati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2436,8 +2459,8 @@ K: Ikaṁ vvaṁ kadalih a:ṅa:lap· vastu bari-bari, nḍan tuhu ya ṅalap·,
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>kāminīṣu vivāheṣu</l> <l>gavāṁ bhakṣye tathendhane |</l>
-		<l>brāhmaṇābhyupapattau ca</l> <l>śapathe nāsti pātakam ||</l>
+		<l n="a">kāminīṣu vivāheṣu</l> <l n="b">gavāṁ bhakṣye tathendhane |</l>
+		<l n="c">brāhmaṇābhyupapattau ca</l> <l n="d">śapathe nāsti pātakam ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2454,8 +2477,8 @@ K: Ikaṁ vvaṁ kadalih a:ṅa:lap· vastu bari-bari, nḍan tuhu ya ṅalap·,
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>satyena śāpayed vipraṁ</l> <l>kṣatriyaṁ vāhanāyudhaiḥ |</l>
-		<l>gobījakāñcanair vaiśyaṁ</l> <l>śūdraṁ sarvais tu pātakaiḥ ||</l>
+		<l n="a">satyena śāpayed vipraṁ</l> <l n="b">kṣatriyaṁ vāhanāyudhaiḥ |</l>
+		<l n="c">gobījakāñcanair vaiśyaṁ</l> <l n="d">śūdraṁ sarvais tu pātakaiḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2477,8 +2500,8 @@ K: Ikaṁ vvaṁ kadalih a:ṅa:lap· vastu bari-bari, nḍan tuhu ya ṅalap·,
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>agniṁ vā hārayed enam</l> <l>apsu cainaṁ nimajjayet |</l>
-		<l>putradārasya vāpy enaṁ</l> <l>śirāṁsi sparśayet pr̥thak ||</l>
+		<l n="a">agniṁ vā hārayed enam</l> <l n="b">apsu cainaṁ nimajjayet |</l>
+		<l n="c">putradārasya vāpy enaṁ</l> <l n="d">śirāṁsi sparśayet pr̥thak ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2496,8 +2519,8 @@ K: Ikaṁ vvaṁ kadalih a:ṅa:lap· vastu bari-bari, nḍan tuhu ya ṅalap·,
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yam iddho na dahaty agnir</l> <l>āpo nonmajjayanti ca |</l>
-		<l>na cārtim r̥cchati kṣipraṁ</l> <l>sa jñeyaḥ śapathe śuciḥ ||</l>
+		<l n="a">yam iddho na dahaty agnir</l> <l n="b">āpo nonmajjayanti ca |</l>
+		<l n="c">na cārtim r̥cchati kṣipraṁ</l> <l n="d">sa jñeyaḥ śapathe śuciḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2518,8 +2541,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>vatsasya hy abhiśastasya</l> <l>purā bhrātrā yavīyasā |</l>
-		<l>nāgnir dadāha romāpi</l> <l>satyena jagataḥ spaśaḥ ||</l>
+		<l n="a">vatsasya hy abhiśastasya</l> <l n="b">purā bhrātrā yavīyasā |</l>
+		<l n="c">nāgnir dadāha romāpi</l> <l n="d">satyena jagataḥ spaśaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2537,8 +2560,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yasmin yasmin vivāde tu</l> <l>kauṭasākṣyaṁ kr̥taṁ bhavet |</l>
-		<l>tat tat kāryaṁ nivarteta</l> <l>kṛtaṁ cāpy akr̥taṁ bhavet ||</l>
+		<l n="a">yasmin yasmin vivāde tu</l> <l n="b">kauṭasākṣyaṁ kr̥taṁ bhavet |</l>
+		<l n="c">tat tat kāryaṁ nivarteta</l> <l n="d">kṛtaṁ cāpy akr̥taṁ bhavet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2557,8 +2580,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>lobhān mohād bhayān maitrāt</l> <l>kāmāt krodhāt tathaiva ca |</l>
-		<l>ajñānād bālabhāvāc ca</l><l>sākṣyaṁ vitatham ucyate ||</l>
+		<l n="a">lobhān mohād bhayān maitrāt</l> <l n="b">kāmāt krodhāt tathaiva ca |</l>
+		<l n="c">ajñānād bālabhāvāc ca</l><l n="d">sākṣyaṁ vitatham ucyate ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2575,8 +2598,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>eṣām anyatame sthāne</l> <l>yaḥ sākṣyam anr̥taṁ vadet |</l>
-		<l>tasya daṇḍaviśeṣāṁs tu</l> <l>pravakṣyāmy anupūrvaśaḥ ||</l>
+		<l n="a">eṣām anyatame sthāne</l> <l n="b">yaḥ sākṣyam anr̥taṁ vadet |</l>
+		<l n="c">tasya daṇḍaviśeṣāṁs tu</l> <l n="d">pravakṣyāmy anupūrvaśaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2593,8 +2616,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>lobhāt sahasraṁ daṇḍyas tu</l> <l>mohāt pūrvaṁ tu sāhasam |</l>
-		<l>bhayād dvau madhyamau daṇḍau</l> <l>maitrāt pūrvaṁ caturguṇam ||</l>
+		<l n="a">lobhāt sahasraṁ daṇḍyas tu</l> <l n="b">mohāt pūrvaṁ tu sāhasam |</l>
+		<l n="c">bhayād dvau madhyamau daṇḍau</l> <l n="d">maitrāt pūrvaṁ caturguṇam ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2614,8 +2637,8 @@ kavruhana tikaṅ vacana sākṣi
 	 K: kunaṁ yan<h>iṁstri-kahyu[SH]nyan hadva: , da<ṣa>guṇ<n>a:kna hikaṁ pūrvvasahapa , ma:, su, 7, ma:, 1, tkanya || kunaṁ yan kroḍa: hetunyan hadva:, ḍaṇḍa:, ma:, [14v4], su, 4, ma:, 11 || kunaṁ yan puṅguṁnya, hetunyan hadva, rvaṅ atus paṇa: panḍaṇḍeriya , ma:, 10, tka[SH]nya || kunaṁ yan milu-kelu, hetunya<h>n adva, satus paṇa: paṁḍaṇḍeriya, ma:, 5, tkanya || -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>kāmād daśaguṇaṁ pūrvaṁ</l> <l>krodhāt tu triguṇaṁ param |</l>
-		<l>ajñānād dve śate pūrṇe</l> <l>bāliśyāc chatam eva tu ||</l>
+		<l n="a">kāmād daśaguṇaṁ pūrvaṁ</l> <l n="b">krodhāt tu triguṇaṁ param |</l>
+		<l n="c">ajñānād dve śate pūrṇe</l> <l n="d">bāliśyāc chatam eva tu ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2640,8 +2663,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>etān āhuḥ kauṭasākṣye</l> <l>proktān daṇḍān manīṣibhiḥ |</l>
-		<l>dharmasyāvyabhicārārtham</l> <l>adharmaniyamāya ca ||</l>
+		<l n="a">etān āhuḥ kauṭasākṣye</l> <l n="b">proktān daṇḍān manīṣibhiḥ |</l>
+		<l n="c">dharmasyāvyabhicārārtham</l> <l n="d">adharmaniyamāya ca ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2657,8 +2680,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>kauṭasākṣyaṁ tu kurvāṇāṁs</l> <l>trīn varṇān dhārmiko nr̥paḥ |</l>
-		<l>pravāsayed daṇḍayitvā</l> <l>brāhmaṇaṁ tu vivāsayet ||</l>
+		<l n="a">kauṭasākṣyaṁ tu kurvāṇāṁs</l> <l n="b">trīn varṇān dhārmiko nr̥paḥ |</l>
+		<l n="c">pravāsayed daṇḍayitvā</l> <l n="d">brāhmaṇaṁ tu vivāsayet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2685,8 +2708,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>daśa sthānāni daṇḍasya</l> <l>manuḥ svāyaṁbhuvo ’bravīt |</l>
-		<l>triṣu varṇeṣu tāni syur</l> <l>akṣato brāhmaṇo vrajet ||</l>
+		<l n="a">daśa sthānāni daṇḍasya</l> <l n="b">manuḥ svāyaṁbhuvo ’bravīt |</l>
+		<l n="c">triṣu varṇeṣu tāni syur</l> <l n="d">akṣato brāhmaṇo vrajet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2702,15 +2725,15 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>upastham udaraṁ jihvā</l> <l>hastau pādau ca pañcamam |</l>
-		<l>cakṣur nāsā ca karṇau ca</l> <l>dhanaṁ dehas tathaiva ca ||</l>
+		<l n="a">upastham udaraṁ jihvā</l> <l n="b">hastau pādau ca pañcamam |</l>
+		<l n="c">cakṣur nāsā ca karṇau ca</l> <l n="d">dhanaṁ dehas tathaiva ca ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.125"/>
 			 </app>
 </listApp></supplied></quote>
- <p>lvirnya, upastha, vtəṅ, ilat, taṅan, suku, mata, taliṅa, iruṅ, payu, avak, nahan <app><lem wit="#M">sthānaniṅ</lem><rdg wit="#L">svarṇaniṁ</rdg><rdg wit="#K">svananiṁ</rdg></app> <app><lem type="conj"><supplied reason="omitted"  evidence="internal">ḍaṇḍa riṅ trivarṇa</supplied></lem><rdg wit="#L #K #M"><gap reason="omitted"/></rdg><note>Our restitution is based on the parallel in div 109.</note></app> sapuluh kvehnya.</p>
+ <p>lvirnya, upastha, vtəṅ, ilat, taṅan, suku, mata, taliṅa, iruṅ, payu, avak, nahan <app><lem wit="#M">sthānaniṅ</lem><rdg wit="#L">svarṇaniṁ</rdg><rdg wit="#K">svananiṁ</rdg></app> <app><lem type="conj"><supplied reason="omitted" evidence="internal">ḍaṇḍa riṅ trivarṇa</supplied></lem><rdg wit="#L #K #M"><gap reason="omitted"/></rdg><note>Our restitution is based on the parallel in div 109.</note></app> sapuluh kvehnya.</p>
  </div>
  <!-- AG+TL have reached here on 2021-06-23  -->
  <div type="dyad" n="111"><!--
@@ -2719,8 +2742,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>anubandhaṁ parijñāya</l> <l>deśakālau ca tattvataḥ |</l>
-		<l>sārāparādho cālokya</l> <l>daṇḍaṁ daṇḍyeṣu pātayet ||</l>
+		<l n="a">anubandhaṁ parijñāya</l> <l n="b">deśakālau ca tattvataḥ |</l>
+		<l n="c">sārāparādho cālokya</l> <l n="d">daṇḍaṁ daṇḍyeṣu pātayet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2740,8 +2763,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>adharmadaṇḍanaṁ loke</l> <l>yaśoghnaṁ kīrtināśanam |</l>
-		<l>asvargyaṁ ca paratrāpi</l> <l>tasmāt tat parivarjayet ||</l>
+		<l n="a">adharmadaṇḍanaṁ loke</l> <l n="b">yaśoghnaṁ kīrtināśanam |</l>
+		<l n="c">asvargyaṁ ca paratrāpi</l> <l n="d">tasmāt tat parivarjayet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2758,8 +2781,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>adaṇḍyān daṇḍayan rājā</l> <l>daṇḍyāṁś caivāpy adaṇḍayan |</l>
-		<l>ayaśo mahad āpnoti</l> <l>narakaṁ caiva gacchati ||</l>
+		<l n="a">adaṇḍyān daṇḍayan rājā</l> <l n="b">daṇḍyāṁś caivāpy adaṇḍayan |</l>
+		<l n="c">ayaśo mahad āpnoti</l> <l n="d">narakaṁ caiva gacchati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2785,8 +2808,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>vāgdaṇḍaṁ prathamaṁ kuryād</l> <l>dhigdaṇḍaṁ tadanantaram |</l>
-		<l>tr̥tīyaṁ dhanadaṇḍaṁ tu</l> <l>vadhadaṇḍam ataḥ param ||</l>
+		<l n="a">vāgdaṇḍaṁ prathamaṁ kuryād</l> <l n="b">dhigdaṇḍaṁ tadanantaram |</l>
+		<l n="c">tr̥tīyaṁ dhanadaṇḍaṁ tu</l> <l n="d">vadhadaṇḍam ataḥ param ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2807,8 +2830,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>vadhenāpi yadā tv etān</l> <l>nigrahītuṁ na śaknuyāt |</l>
-		<l>tadaiṣu sarvam apy etat</l> <l>prayuñjīta catuṣṭayam ||</l>
+		<l n="a">vadhenāpi yadā tv etān</l> <l n="b">nigrahītuṁ na śaknuyāt |</l>
+		<l n="c">tadaiṣu sarvam apy etat</l> <l n="d">prayuñjīta catuṣṭayam ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2827,8 +2850,8 @@ kavruhana tikaṅ vacana sākṣi
 	M: [16v30] ṅaran ikaṁ pirak, tamra, mas, yan patəmagan saga, ku[16v31]paṁ, mas, tahil, varahakəna riṁ loka, makadon kavruhanya, ya[16v32]tikajarakənaṅkva kabeḥ.	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>lokasaṁvyavahārārthaṁ</l> <l>yāḥ saṁjñāḥ prathitā bhuvi |</l>
-		<l>tāmrarūpyasuvarṇānāṁ</l> <l>tāḥ pravakṣyāmy aśeṣataḥ ||</l>
+		<l n="a">lokasaṁvyavahārārthaṁ</l> <l n="b">yāḥ saṁjñāḥ prathitā bhuvi |</l>
+		<l n="c">tāmrarūpyasuvarṇānāṁ</l> <l n="d">tāḥ pravakṣyāmy aśeṣataḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2846,10 +2869,10 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>jālāntaragate bhānau</l> <l>yat sūkṣmaṁ dr̥śyate rajaḥ |</l>
-		<l>prathamaṁ tat pramāṇānāṁ</l> <l>trasareṇuṁ pracakṣate ||</l>
-		<l>trasareṇavo ’ṣṭau vijñeyā</l> <l>likṣaikā parimāṇataḥ |</l>
-		<l>tā rājasarṣapas tisras</l> <l>te trayo gaurasarṣapaḥ ||</l>
+		<l n="a">jālāntaragate bhānau</l> <l n="b">yat sūkṣmaṁ dr̥śyate rajaḥ |</l>
+		<l n="c">prathamaṁ tat pramāṇānāṁ</l> <l n="d">trasareṇuṁ pracakṣate ||</l>
+		<l n="e">trasareṇavo ’ṣṭau vijñeyā</l> <l n="f">likṣaikā parimāṇataḥ |</l>
+		<l n="g">tā rājasarṣapas tisras</l> <l n="h">te trayo gaurasarṣapaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2869,8 +2892,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>sarṣapāḥ ṣaḍ yavo madhyas</l> <l>triyavaṁ tv eva kr̥ṣṇalam |</l>
-		<l>pañcakr̥ṣṇalako māṣas</l> <l>te suvarṇas tu ṣoḍaśa ||</l>
+		<l n="a">sarṣapāḥ ṣaḍ yavo madhyas</l> <l n="b">triyavaṁ tv eva kr̥ṣṇalam |</l>
+		<l n="c">pañcakr̥ṣṇalako māṣas</l> <l n="d">te suvarṇas tu ṣoḍaśa ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2890,8 +2913,8 @@ kavruhana tikaṅ vacana sākṣi
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>palaṁ suvarṇāś catvāraḥ</l> <l>palāni dharaṇaṁ daśa |</l>
-		<l>dve kr̥ṣṇale samadhr̥te</l> <l>vijñeyo rūpyamāṣakaḥ ||</l>
+		<l n="a">palaṁ suvarṇāś catvāraḥ</l> <l n="b">palāni dharaṇaṁ daśa |</l>
+		<l n="c">dve kr̥ṣṇale samadhr̥te</l> <l n="d">vijñeyo rūpyamāṣakaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2925,8 +2948,8 @@ ikaṅ limaṅ saga vratniṅ pirak, <abbr>ku</abbr>, 1, ṅaranya, ikaṅ lima�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>te ṣoḍaśa syād dharaṇaṁ</l> <l>purāṇaś caiva rājataḥ |</l>
-		<l>kārṣāpaṇas tu vijñeyas</l> <l>tāmrikaḥ kārṣikaḥ paṇaḥ ||</l>
+		<l n="a">te ṣoḍaśa syād dharaṇaṁ</l> <l n="b">purāṇaś caiva rājataḥ |</l>
+		<l n="c">kārṣāpaṇas tu vijñeyas</l> <l n="d">tāmrikaḥ kārṣikaḥ paṇaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2952,10 +2975,10 @@ ikaṅ nəmbəlas riṅ mas, dharaṇa ṅaranya, ikaṅ nəmbəlas i pirak, pur
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>dharaṇāni daśa jñeyaḥ</l> <l>śatamānas tu rājataḥ |</l>
-		<l>catuḥsuvarṇiko niṣko</l> <l>vijñeyas tu pramāṇataḥ ||</l>
-		<l>r̥ṇe deye pratijñāte</l> <l>pañcakaṁ śatam arhati |</l>
-		<l>apahnave taddviguṇaṁ</l> <l>tan manor anuśāsanam ||</l>
+		<l n="a">dharaṇāni daśa jñeyaḥ</l> <l n="b">śatamānas tu rājataḥ |</l>
+		<l n="c">catuḥsuvarṇiko niṣko</l> <l n="d">vijñeyas tu pramāṇataḥ ||</l>
+		<l n="e">r̥ṇe deye pratijñāte</l> <l n="f">pañcakaṁ śatam arhati |</l>
+		<l n="g">apahnave taddviguṇaṁ</l> <l n="h">tan manor anuśāsanam ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -2970,7 +2993,7 @@ ikaṅ nəmbəlas riṅ mas, dharaṇa ṅaranya, ikaṅ nəmbəlas i pirak, pur
 <app>
 	<lem wit="#K #M" type="reformulated_elsewhere">kunaṅ ikaṅ <app><lem wit="#L #K">pirak paṇa sapuluh</lem><rdg wit="#M">sapuluh pana pirak</rdg></app> <abbr>ma</abbr>,</lem>
   <note type="altLem">kunaṅ ikaṅ ... sapuluh <abbr>ma</abbr></note>
-	<rdg wit="#L"><seg type="interpolation">kunaṁ Ikaṁ pirak ṣapuluḥ pana:, ma:, || ○ || <lg xml:lang="san-Latn" met="anuṣṭubh"><l>R̥ṇadeve vratijñante,</l> <l>pañcama siṁtam ahartti,</l> <l>hapanave dadviguṇiṁ,</l> <l>tan manom anuṣasaniṁ,</l></lg> ka, riṅ mavutaṁ yan masaṅketa:, yapva ta mityeṁ vuhus riṁ purvvaka:, ḍaṇḍanika: de bhūpatya, pañca satapa<del><gap reason="illegible" unit="character" quantity="1"/></del>ṇa, kunaṁṅ apuvara haṅasi<unclear>ḥ</unclear> dvigunotama ḍaṇḍa || ○ || <lg xml:lang="san-Latn" met="anuṣṭubh"><l>nipṭiṁ vak nityaṁ* krodaṣṭaṁ*,</l> <l>valat śobr̥ṁ* namasṭadḍi,</l> <l>niṣṭe maḍyamaṁ* hutamaṁ*,</l> <l>purvvakaṁ* mituva ḍaṇḍaṁ*,</l></lg> ka, hana ta ya: vaṁṅ apihutaṁ, tinagiḥ pihutaṁnya, tan paveḥ vetan drəvenya, hasr̥ṁ saṁṅ apihutaṁ, maṅalap sadr̥venya, maṅalap histri, sunu, bhūmi, nūn pasu sakalviriṁ patik vənaṁ yata hinalap·, vetniṁ kaṁniṣṭa vinaṅūn mityeṁṅ ūjar,, maka:don hinira:-hira:, haṅiṅindəti, haṅlindihi, tan druḥ kaṁṅ adr̥ve vaṁṅ apihutaṁ, lumka:s kaṅśa:seṁ tan hambava cihna Utər· daL̥m, hikya ṅaran valat sahaṣa havalat śobra, hiṅar:vakən vinalik rantas vitya:, mvaṁ tinibakna ḍaṇḍa mahira<del>ntaṁ</del>n kaṁ sa:hasobradḍi, kunəṁ pinaraṅgvakna vutaṁ, lavan daṇḍanekaṁ sahaṣa, vnaṅ pasaṅana vrat niṣṭa maḍyotama, ye niṣṭa vit hutaṁ mvaḥ paṅamet· sinahaṣa:, niṣṭa: ḍaṇḍa,, 5000, yen madya paṅamete, ḍaṇḍa, 10000, hutama paṅamete, ḍaṇḍa, 20000, sapaṅamete haṅsula:kna riṁ kaṁṅ avutaṅ, vaṣana, ḍaṇḍa riṁ saṁ bhūpatya || 0 || kunaṁ Ikaṁ pratekaniṁ harta:, sapaṇna:, 20, limaṁ paṇa:, 2, ku, tkeṁ hartha,</seg> kunaṁ ikaṁ pirak pana sapuluḥ, ma:,</rdg>
+	<rdg wit="#L"><seg type="interpolation">kunaṁ Ikaṁ pirak ṣapuluḥ pana:, ma:, || ○ || <lg xml:lang="san-Latn" met="anuṣṭubh"><l n="a">R̥ṇadeve vratijñante,</l> <l n="b">pañcama siṁtam ahartti,</l> <l n="c">hapanave dadviguṇiṁ,</l> <l n="d">tan manom anuṣasaniṁ,</l></lg> ka, riṅ mavutaṁ yan masaṅketa:, yapva ta mityeṁ vuhus riṁ purvvaka:, ḍaṇḍanika: de bhūpatya, pañca satapa<del><gap reason="illegible" unit="character" quantity="1"/></del>ṇa, kunaṁṅ apuvara haṅasi<unclear>ḥ</unclear> dvigunotama ḍaṇḍa || ○ || <lg xml:lang="san-Latn" met="anuṣṭubh"><l n="a">nipṭiṁ vak nityaṁ* krodaṣṭaṁ*,</l> <l n="b">valat śobr̥ṁ* namasṭadḍi,</l> <l n="c">niṣṭe maḍyamaṁ* hutamaṁ*,</l> <l n="d">purvvakaṁ* mituva ḍaṇḍaṁ*,</l></lg> ka, hana ta ya: vaṁṅ apihutaṁ, tinagiḥ pihutaṁnya, tan paveḥ vetan drəvenya, hasr̥ṁ saṁṅ apihutaṁ, maṅalap sadr̥venya, maṅalap histri, sunu, bhūmi, nūn pasu sakalviriṁ patik vənaṁ yata hinalap·, vetniṁ kaṁniṣṭa vinaṅūn mityeṁṅ ūjar,, maka:don hinira:-hira:, haṅiṅindəti, haṅlindihi, tan druḥ kaṁṅ adr̥ve vaṁṅ apihutaṁ, lumka:s kaṅśa:seṁ tan hambava cihna Utər· daL̥m, hikya ṅaran valat sahaṣa havalat śobra, hiṅar:vakən vinalik rantas vitya:, mvaṁ tinibakna ḍaṇḍa mahira<del>ntaṁ</del>n kaṁ sa:hasobradḍi, kunəṁ pinaraṅgvakna vutaṁ, lavan daṇḍanekaṁ sahaṣa, vnaṅ pasaṅana vrat niṣṭa maḍyotama, ye niṣṭa vit hutaṁ mvaḥ paṅamet· sinahaṣa:, niṣṭa: ḍaṇḍa,, 5000, yen madya paṅamete, ḍaṇḍa, 10000, hutama paṅamete, ḍaṇḍa, 20000, sapaṅamete haṅsula:kna riṁ kaṁṅ avutaṅ, vaṣana, ḍaṇḍa riṁ saṁ bhūpatya || 0 || kunaṁ Ikaṁ pratekaniṁ harta:, sapaṇna:, 20, limaṁ paṇa:, 2, ku, tkeṁ hartha,</seg> kunaṁ ikaṁ pirak pana sapuluḥ, ma:,</rdg>
 	<note>Manuscript <ptr target="#L"/> inserts a substantial interpolation between two iterations of the lemma. The interpolation notably contains the full text of MDhŚ 8.139 and an unidentified Sanskrit stanza. Although having stanza 8.139, with paraphrase, in this general part of the text is potentially attractive, the fact that the stanza is quoted in full is suspect, and the precise locus where it is inserted interrupts the paraphrase of 8.137. On these grounds, we favor the hypothesis that the segment of text found only in this witness is extraneous to our text.</note>
 </app> <abbr>su</abbr>, <app><lem wit="#L #K">2</lem><rdg wit="#M">ṅa</rdg></app>, mā, 8, <app><lem wit="#K #M">tkanya</lem><rdg wit="#L"><gap reason="omitted"/></rdg></app>,
  <app><lem wit="#M">śatamāna ṅaranya</lem><rdg wit="#L">satapana:, ṅa</rdg><rdg wit="#K">satama: ṅaranya</rdg></app>,<!-- #M has full stop here -->
@@ -2985,8 +3008,8 @@ ikaṅ nəmbəlas riṅ mas, dharaṇa ṅaranya, ikaṅ nəmbəlas i pirak, pur
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>paṇānāṁ dve śate sārdhe</l> <l>prathamaḥ sāhasaḥ smr̥taḥ |</l>
-		<l>madhyamaḥ pañca vijñeyaḥ</l> <l>sahasraṁ tv eva cottamaḥ ||</l>
+		<l n="a">paṇānāṁ dve śate sārdhe</l> <l n="b">prathamaḥ sāhasaḥ smr̥taḥ |</l>
+		<l n="c">madhyamaḥ pañca vijñeyaḥ</l> <l n="d">sahasraṁ tv eva cottamaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3017,8 +3040,8 @@ ikaṅ nəmbəlas riṅ mas, dharaṇa ṅaranya, ikaṅ nəmbəlas i pirak, pur
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>vasiṣṭhavihitāṁ vr̥ddhiṁ</l> <l>sr̥jed vittavivardhinīm |</l>
-		<l>aśītibhāgaṁ gr̥hṇīyān</l> <l>māsād vārdhuṣikaḥ śate ||</l>
+		<l n="a">vasiṣṭhavihitāṁ vr̥ddhiṁ</l> <l n="b">sr̥jed vittavivardhinīm |</l>
+		<l n="c">aśītibhāgaṁ gr̥hṇīyān</l> <l n="d">māsād vārdhuṣikaḥ śate ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3039,8 +3062,8 @@ M:  [18r1] hanan maṅu deniṅ aṅalantarakənya riṁ satus mas, ke[18r2]ṅ�
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>dvikaṁ śataṁ vā gr̥hṇīyāt</l> <l>satāṁ dharmam anusmaran |</l>
-		<l>dvikaṁ śataṁ hi gr̥hṇāno</l> <l>na bhavaty arthakilbiṣī ||</l>
+		<l n="a">dvikaṁ śataṁ vā gr̥hṇīyāt</l> <l n="b">satāṁ dharmam anusmaran |</l>
+		<l n="c">dvikaṁ śataṁ hi gr̥hṇāno</l> <l n="d">na bhavaty arthakilbiṣī ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3057,8 +3080,8 @@ M: [18r4] kunaṁ prabedanikaṁ kalantara, dadi mas, ṅsa dadi mas, [18r5] ṅ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>dvikaṁ trikaṁ catuṣkaṁ ca</l> <l>pañcakaṁ ca śataṁ samam |</l>
-		<l>māsasya vr̥ddhiṁ gr̥hṇīyād</l> <l>varṇānām anupūrvaśaḥ ||</l>
+		<l n="a">dvikaṁ trikaṁ catuṣkaṁ ca</l> <l n="b">pañcakaṁ ca śataṁ samam |</l>
+		<l n="c">māsasya vr̥ddhiṁ gr̥hṇīyād</l> <l n="d">varṇānām anupūrvaśaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3087,8 +3110,8 @@ M: [18r4] kunaṁ prabedanikaṁ kalantara, dadi mas, ṅsa dadi mas, [18r5] ṅ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>na tv evādhau sopakāre</l> <l>kausīdīṁ vr̥ddhim āpnuyāt |</l>
-		<l>na cādheḥ kālasaṁrodhān</l> <l>nisargo ’sti na vikrayaḥ ||</l>
+		<l n="a">na tv evādhau sopakāre</l> <l n="b">kausīdīṁ vr̥ddhim āpnuyāt |</l>
+		<l n="c">na cādheḥ kālasaṁrodhān</l> <l n="d">nisargo ’sti na vikrayaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3107,8 +3130,8 @@ M: [18r4] kunaṁ prabedanikaṁ kalantara, dadi mas, ṅsa dadi mas, [18r5] ṅ
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>na bhoktavyo balād ādhir</l> <l>bhuñjāno vr̥ddhim utsr̥jet |</l>
-		<l>mūlyena toṣayec cainam</l> <l>ādhisteno ’nyathā bhavet ||</l>
+		<l n="a">na bhoktavyo balād ādhir</l> <l n="b">bhuñjāno vr̥ddhim utsr̥jet |</l>
+		<l n="c">mūlyena toṣayec cainam</l> <l n="d">ādhisteno ’nyathā bhavet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3131,8 +3154,8 @@ M: ikaṁ sanda lavan patuvavan, ika [18v20] ika ta kaliḥ, tan yogya kalavasan
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>ādhiś copanidhiś cobhau</l> <l>na kālātyayam arhataḥ |</l>
-		<l>avahāryau bhavetāṁ tau</l> <l>dīrghakālam avasthitau ||</l>
+		<l n="a">ādhiś copanidhiś cobhau</l> <l n="b">na kālātyayam arhataḥ |</l>
+		<l n="c">avahāryau bhavetāṁ tau</l> <l n="d">dīrghakālam avasthitau ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3150,8 +3173,8 @@ M: [18v22] kunaṁ yan pobaya kabukti ikaṁ sanda, mvaṁ patuvava [18v23] lava
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>saṁprītyā bhujyamānāni</l> <l>na naśyanti kadā cana |</l>
-		<l>dhenur uṣṭro vahann aśvo</l> <l>yaś ca damyaḥ prayujyate ||</l>
+		<l n="a">saṁprītyā bhujyamānāni</l> <l n="b">na naśyanti kadā cana |</l>
+		<l n="c">dhenur uṣṭro vahann aśvo</l> <l n="d">yaś ca damyaḥ prayujyate ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3173,8 +3196,8 @@ M: [18v22] kunaṁ yan pobaya kabukti ikaṁ sanda, mvaṁ patuvava [18v23] lava
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yat kiṁ cid daśavarṣāṇi</l> <l>saṁnidhau prekṣate dhanī |</l>
-		<l>bhujyamānaṁ parais tūṣṇīṁ</l> <l>na sa tal labdhum arhati ||</l>
+		<l n="a">yat kiṁ cid daśavarṣāṇi</l> <l n="b">saṁnidhau prekṣate dhanī |</l>
+		<l n="c">bhujyamānaṁ parais tūṣṇīṁ</l> <l n="d">na sa tal labdhum arhati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3203,8 +3226,8 @@ M: [19r9] ikaṁ vaṁ tan lilu, tan lumpuḥ, tan əbaḥ, binuktiniṅ [19r10]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>ajaḍaś ced apogaṇḍo</l> <l>viṣaye cāsya bhujyate |</l>
-		<l>bhagnaṁ tad vyavahāreṇa</l> <l>bhoktā tad dravyam arhati ||</l>
+		<l n="a">ajaḍaś ced apogaṇḍo</l> <l n="b">viṣaye cāsya bhujyate |</l>
+		<l n="c">bhagnaṁ tad vyavahāreṇa</l> <l n="d">bhoktā tad dravyam arhati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3224,11 +3247,11 @@ M: [19r14] adisima, sima sinandakən, drəvya si rare uvuh-uvuḥ tinu[19r15]tav
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>ādhiḥ sīmā bāladhanaṁ</l> <l>nikṣepopanidhiḥ striyaḥ |</l>
-		<l>rājasvaṁ śrotriyasvaṁ ca</l> <l>na bhogena praṇaśyati ||</l>
+		<l n="a">ādhiḥ sīmā bāladhanaṁ</l> <l n="b">nikṣepopanidhiḥ striyaḥ |</l>
+		<l n="c">rājasvaṁ śrotriyasvaṁ ca</l> <l n="d">na bhogena praṇaśyati ||</l>
 	</lg><lg>
-		<l>yaḥ svāminānanujñātam</l> <l>ādhiṁ bhūṅkte ’vicakṣaṇaḥ |</l>
-		<l>tenārdhavr̥ddhir moktavyā</l> <l>tasya bhogasya niṣkr̥tiḥ ||</l>
+		<l n="a">yaḥ svāminānanujñātam</l> <l n="b">ādhiṁ bhūṅkte ’vicakṣaṇaḥ |</l>
+		<l n="c">tenārdhavr̥ddhir moktavyā</l> <l n="d">tasya bhogasya niṣkr̥tiḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3248,8 +3271,8 @@ M: [19v19] ikaṁ pihutaṁ, alavas ya tan kakalantaran, alapən kalan[19v20]tar
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>kusīdavr̥ddhir dvaiguṇyaṁ</l> <l>nātyeti sakr̥d āhr̥tā |</l>
-		<l>dhānye sade lave vāhye</l> <l>nātikrāmati pañcatām ||</l>
+		<l n="a">kusīdavr̥ddhir dvaiguṇyaṁ</l> <l n="b">nātyeti sakr̥d āhr̥tā |</l>
+		<l n="c">dhānye sade lave vāhye</l> <l n="d">nātikrāmati pañcatām ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3277,8 +3300,8 @@ M: [19v27] vrədinikaṁ utaṁ kalavasan, tan yogya ləpihakəna ya yan [19v28]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>kr̥tānusārād adhikā</l> <l>vyatiriktā na sidhyati |</l>
-		<l>kusīdapatham āhus taṁ</l> <l>pañcakaṁ śatam arhati ||</l>
+		<l n="a">kr̥tānusārād adhikā</l> <l n="b">vyatiriktā na sidhyati |</l>
+		<l n="c">kusīdapatham āhus taṁ</l> <l n="d">pañcakaṁ śatam arhati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3303,15 +3326,15 @@ M: [OMISSION] hana kayikavrədi ṅaranya. [20r1] hana ta kalantara inilvakən i
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>nātisāṁvatsarīṁ vr̥ddhiṁ</l> <l>na cādr̥ṣṭāṁ punar haret |</l>
-		<l>cakravr̥ddhiḥ kālavr̥ddhiḥ</l> <l>kāritā kāyikā ca yā ||</l>
+		<l n="a">nātisāṁvatsarīṁ vr̥ddhiṁ</l> <l n="b">na cādr̥ṣṭāṁ punar haret |</l>
+		<l n="c">cakravr̥ddhiḥ kālavr̥ddhiḥ</l> <l n="d">kāritā kāyikā ca yā ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.153">Several manuscripts cited in the critical edition have <foreign>kārikā</foreign> (the form cited here by our author) rather than <foreign>kāritā</foreign>, the reading adopted by Olivelle.</note>
 			 </app>
 </listApp></supplied></quote>
- <p>hayva ləvih sakeṅ satahun, hayva kuraṅ sakeṅ satahun, <app><lem wit="#L">gnəpana</lem><rdg wit="#K">gnəpana: Uga</rdg></app> satahun,<!-- #K omits , --> de saṅ <app><lem  type="conj">pradhanāṅalap kalāntara</lem><rdg wit="#L">pradana:ṅalantara: kalap·</rdg><rdg wit="#K">pr̥daṇa:ṅalantara kalap·</rdg><note>Since the sentence seems to us incapable of interpretation with the words <foreign>aṅalāntara kālap</foreign> that both witnesses transmit here, we are forced to resort to conjecturing that an inversion of word order has occurred, induced by the fact that <foreign>aṅalap</foreign> and <foreign>aṅalāntara</foreign> have their first two syllables in common.</note></app>.
+ <p>hayva ləvih sakeṅ satahun, hayva kuraṅ sakeṅ satahun, <app><lem wit="#L">gnəpana</lem><rdg wit="#K">gnəpana: Uga</rdg></app> satahun,<!-- #K omits , --> de saṅ <app><lem type="conj">pradhanāṅalap kalāntara</lem><rdg wit="#L">pradana:ṅalantara: kalap·</rdg><rdg wit="#K">pr̥daṇa:ṅalantara kalap·</rdg><note>Since the sentence seems to us incapable of interpretation with the words <foreign>aṅalāntara kālap</foreign> that both witnesses transmit here, we are forced to resort to conjecturing that an inversion of word order has occurred, induced by the fact that <foreign>aṅalap</foreign> and <foreign>aṅalāntara</foreign> have their first two syllables in common.</note></app>.
  <app><lem wit="L">hana</lem><rdg wit="#K">hana ta</rdg><note><ptr target="#K"/> seems to have transposed particle <foreign>ta</foreign> here from the following sentence.</note></app>
  <app>
 	 <lem type="reformulated_elsewhere">cakravr̥ddhi <app><lem type="conj"><supplied reason="omitted">kālavr̥ddhi kārikāvr̥ddhi</supplied></lem><rdg wit="#L #K" cause="eye-skip"><gap reason="omitted"/></rdg></app> kāyikāvr̥ddhi</lem>
@@ -3335,8 +3358,8 @@ M: ikaṁ kalantaran yan apanəs, binukti ya rumuhun de[20r8]niṁ mahutaṁ, an
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>r̥ṇaṁ dātum aśakto yaḥ</l> <l>kartum icchet punaḥ kriyām |</l>
-		<l>sa dattvā nirjitāṁ vr̥ddhiṁ</l> <l>karaṇaṁ parivartayet ||</l>
+		<l n="a">r̥ṇaṁ dātum aśakto yaḥ</l> <l n="b">kartum icchet punaḥ kriyām |</l>
+		<l n="c">sa dattvā nirjitāṁ vr̥ddhiṁ</l> <l n="d">karaṇaṁ parivartayet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3353,8 +3376,8 @@ M: yan tan vənaṅ ikaṅ ahutaṁ ri kalantara [20r10] panas, sahurənya juga 
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 		 <lg met="anuṣṭubh">
-	 		<l>adarśayitvā tatraiva</l> <l>hiraṇyaṁ parivartayet |</l>
-	 		<l>yāvatī sambhaved vr̥ddhis</l> <l>tāvatīṁ dātum arhati ||</l>
+	 		<l n="a">adarśayitvā tatraiva</l> <l n="b">hiraṇyaṁ parivartayet |</l>
+	 		<l n="c">yāvatī sambhaved vr̥ddhis</l> <l n="d">tāvatīṁ dātum arhati ||</l>
 	 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3372,8 +3395,8 @@ M: [20r12] hana vaṁ mañakrəvrədyakən pihutaṅnya, ndatan tinəguhan [20r1
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 		 <lg met="anuṣṭubh">
-	 	<l>cakravr̥ddhiṁ samārūḍho</l> <l>deśakālavyavasthitaḥ |</l>
-	 	<l>atikrāman deśakālau</l> <l>na tatphalam avāpnuyāt ||</l>
+	 	<l n="a">cakravr̥ddhiṁ samārūḍho</l> <l n="b">deśakālavyavasthitaḥ |</l>
+	 	<l n="c">atikrāman deśakālau</l> <l n="d">na tatphalam avāpnuyāt ||</l>
 	 </lg>
 <listApp type="parallels">
 			 <app>
@@ -3391,8 +3414,8 @@ M: [20v16] hana banyaga vruḥ ri lakuniṁ tasik, vruḥ karika təmvan[20v16]i
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>samudrayānakuśalā</l> <l>deśakālārthadarśinaḥ |</l>
-		<l>sthāpayanti tu yāṁ vr̥ddhiṁ</l> <l>sā tatrādhigamaṁ prati ||</l>
+		<l n="a">samudrayānakuśalā</l> <l n="b">deśakālārthadarśinaḥ |</l>
+		<l n="c">sthāpayanti tu yāṁ vr̥ddhiṁ</l> <l n="d">sā tatrādhigamaṁ prati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3415,8 +3438,8 @@ M: [20v21] ikaṁ vaṁ maṅaku ri tan iṅgatan ikaṁ mahutaṁ, hana [20v22]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yo yasya pratibhūs tiṣṭhed</l> <l>darśanāyeha mānavaḥ |</l>
-		<l>adarśayan sa taṁ tasya</l> <l>prayacchet svadhanād r̥ṇam ||</l>
+		<l n="a">yo yasya pratibhūs tiṣṭhed</l> <l n="b">darśanāyeha mānavaḥ |</l>
+		<l n="c">adarśayan sa taṁ tasya</l> <l n="d">prayacchet svadhanād r̥ṇam ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3435,8 +3458,8 @@ M: [20v25] ikaṁ maṅaku tan aṅgataniṁ mahutaṁ, ikaṁ vaṅ aṅa[20v26
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>prātibhāvyaṁ vr̥thādānam</l> <l>ākṣikaṁ saurikaṁ ca yat |</l>
-		<l>daṇḍaśulkāvaśeṣaṁ ca</l> <l>na putro dātum arhati ||</l>
+		<l n="a">prātibhāvyaṁ vr̥thādānam</l> <l n="b">ākṣikaṁ saurikaṁ ca yat |</l>
+		<l n="c">daṇḍaśulkāvaśeṣaṁ ca</l> <l n="d">na putro dātum arhati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3455,8 +3478,8 @@ M: [20v25] ikaṁ maṅaku tan aṅgataniṁ mahutaṁ, ikaṁ vaṅ aṅa[20v26
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>pitur eva niyogād yat</l> <l>kuṭumbabharaṇāya ca |</l>
-		<l>kr̥taṁ vā yad r̥ṇaṁ kr̥cchre</l> <l>dadyāt putrasya tat pitā ||</l>
+		<l n="a">pitur eva niyogād yat</l> <l n="b">kuṭumbabharaṇāya ca |</l>
+		<l n="c">kr̥taṁ vā yad r̥ṇaṁ kr̥cchre</l> <l n="d">dadyāt putrasya tat pitā ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3477,8 +3500,8 @@ M: [20v25] ikaṁ maṅaku tan aṅgataniṁ mahutaṁ, ikaṁ vaṅ aṅa[20v26
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-			<l>darśanaprātibhāvye tu</l> <l>vidhiḥ syāt pūrvacoditaḥ |</l>
-			<l>dānapratibhuvi prete</l> <l>dāyādān api dāpayet ||</l>
+			<l n="a">darśanaprātibhāvye tu</l> <l n="b">vidhiḥ syāt pūrvacoditaḥ |</l>
+			<l n="c">dānapratibhuvi prete</l> <l n="d">dāyādān api dāpayet ||</l>
 		</lg>
 	<listApp type="parallels">
 				 <app>
@@ -3507,8 +3530,8 @@ M: [21r10] ikaṁ pradana, mahyun ri kavijilaniṁ utaṅnya, ikaṁ ma[21r11]hu
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>adātari punar dātā</l> <l>vijñātaprakr̥tāv r̥ṇam |</l>
-		<l>paścāt pratibhuvi prete</l> <l>parīpset kena hetunā ||</l>
+		<l n="a">adātari punar dātā</l> <l n="b">vijñātaprakr̥tāv r̥ṇam |</l>
+		<l n="c">paścāt pratibhuvi prete</l> <l n="d">parīpset kena hetunā ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3529,8 +3552,8 @@ M: ikaṁ vaṁ tan si[TEXT OMITTED HERE up to middle of Div 150]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>nirādiṣṭadhanaś cet tu</l> <l>pratibhūḥ syād alaṁdhanaḥ |</l>
-		<l>svadhanād eva tad dadyān</l> <l>nirādiṣṭa iti sthitiḥ ||</l>
+		<l n="a">nirādiṣṭadhanaś cet tu</l> <l n="b">pratibhūḥ syād alaṁdhanaḥ |</l>
+		<l n="c">svadhanād eva tad dadyān</l> <l n="d">nirādiṣṭa iti sthitiḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3538,7 +3561,7 @@ M: ikaṁ vaṁ tan si[TEXT OMITTED HERE up to middle of Div 150]
 			 </app>
 </listApp></supplied></quote>
  <p>ikaṅ vvaṅ tan <app><lem wit="#L #K">piraknya</lem><rdg wit="#M">si<locus type="displacement" from="21r12" to="12r2"/>raknya</rdg></app> panahuranya, liṅnya,
- <app><lem type="emn">maṅakva</lem><rdg wit="L">manaṅakva</rdg><rdg wit="#K">maṅakuvva</rdg><rdg wit="#M">>maṅkana</rdg></app> irikaṅ mahutaṅ juga ya,
+ <app><lem type="emn">maṅakva</lem><rdg wit="L">manaṅakva</rdg><rdg wit="#K">maṅakuvva</rdg><rdg wit="#M">&gt;maṅkana</rdg></app> irikaṅ mahutaṅ juga ya,
  maṅkana pva ya ta, <app><lem wit="#L #M">sahurənya ikaṅ</lem><rdg wit="#K">sahuranyanikaṁ</rdg></app> hutaṅ,<!-- #M omits , -->
  <app><lem wit="emn">senakunya</lem><rdg wit="#L">senaku</rdg><rdg wit="#K">senakumna</rdg><rdg wit="#M">senakuna</rdg></app> maṅkanātah,
  sakavit juga ya,
@@ -3557,8 +3580,8 @@ M: [TEXT OMITTED HERE from middle of Div 144 up to middle of Div 150]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>mattonmattārtādhyadhīnair</l> <l>bālena sthavireṇa vā |</l>
-		<l>asaṁbaddhakr̥taś caiva</l> <l>vyavahāro na sidhyati ||</l>
+		<l n="a">mattonmattārtādhyadhīnair</l> <l n="b">bālena sthavireṇa vā |</l>
+		<l n="c">asaṁbaddhakr̥taś caiva</l> <l n="d">vyavahāro na sidhyati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3578,8 +3601,8 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>satyā na bhāṣā bhavati</l> <l>yady api syāt pratiṣṭhitā |</l>
-		<l>bahiś ced bhāṣyate dharmān</l> <l>niyatād vyavahārikāt ||</l>
+		<l n="a">satyā na bhāṣā bhavati</l> <l n="b">yady api syāt pratiṣṭhitā |</l>
+		<l n="c">bahiś ced bhāṣyate dharmān</l> <l n="d">niyatād vyavahārikāt ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3596,8 +3619,8 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yogādhamanavikrītaṁ</l> <l>yogadānapratigraham |</l>
-		<l>yatra vāpy upadhiṁ paśyet</l> <l>tat sarvaṁ vinivartayet ||</l>
+		<l n="a">yogādhamanavikrītaṁ</l> <l n="b">yogadānapratigraham |</l>
+		<l n="c">yatra vāpy upadhiṁ paśyet</l> <l n="d">tat sarvaṁ vinivartayet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3635,10 +3658,10 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>grahītā yadi naṣṭaḥ syāt</l> <l>kuṭumbe ca kr̥to vyayaḥ |</l>
-		<l>dātavyaṁ bāndhavais tat syāt</l> <l>pravibhaktair api svataḥ ||</l>
-		<l>kuṭumbārthe ’dhyadhīno ’pi</l> <l>vyavahāraṁ yam ācaret |</l>
-		<l>svadeśe vā videśe vā</l> <l>taṁ jyāyān na vicālayet ||</l>
+		<l n="a">grahītā yadi naṣṭaḥ syāt</l> <l n="b">kuṭumbe ca kr̥to vyayaḥ |</l>
+		<l n="c">dātavyaṁ bāndhavais tat syāt</l> <l n="d">pravibhaktair api svataḥ ||</l>
+		<l n="e">kuṭumbārthe ’dhyadhīno ’pi</l> <l n="f">vyavahāraṁ yam ācaret |</l>
+		<l n="g">svadeśe vā videśe vā</l> <l n="h">taṁ jyāyān na vicālayet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3660,10 +3683,10 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>balād dattaṁ balād bhuktaṁ</l> <l>balād yac cāpi lekhitam |</l>
-		<l>sarvān balakr̥tān arthān</l> <l>akr̥tān manur abravīt ||</l>
-		<l>trayaḥ parārthe kliśyanti</l> <l>sākṣiṇaḥ pratibhūḥ kulam |</l>
-		<l>catvāras tūpacīyante</l> <l>vipra āḍhyo vaṇiṅ nr̥paḥ ||</l>
+		<l n="a">balād dattaṁ balād bhuktaṁ</l> <l n="b">balād yac cāpi lekhitam |</l>
+		<l n="c">sarvān balakr̥tān arthān</l> <l n="d">akr̥tān manur abravīt ||</l>
+		<l n="e">trayaḥ parārthe kliśyanti</l> <l n="f">sākṣiṇaḥ pratibhūḥ kulam |</l>
+		<l n="g">catvāras tūpacīyante</l> <l n="h">vipra āḍhyo vaṇiṅ nr̥paḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3683,8 +3706,8 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>anādeyaṁ nādadīta</l> <l>parikṣīṇo ’pi pārthivaḥ |</l>
-		<l>na cādeyaṁ samr̥ddho ’pi</l> <l>sūkṣmam apy artham utsr̥jet ||</l>
+		<l n="a">anādeyaṁ nādadīta</l> <l n="b">parikṣīṇo ’pi pārthivaḥ |</l>
+		<l n="c">na cādeyaṁ samr̥ddho ’pi</l> <l n="d">sūkṣmam apy artham utsr̥jet ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3702,15 +3725,15 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>anādeyasya cādānād</l> <l>ādeyasya ca varjanāt |</l>
-		<l>daurbalyaṁ khyāpyate rājñaḥ</l> <l>sa pretyeha ca naśyati ||</l>
+		<l n="a">anādeyasya cādānād</l> <l n="b">ādeyasya ca varjanāt |</l>
+		<l n="c">daurbalyaṁ khyāpyate rājñaḥ</l> <l n="d">sa pretyeha ca naśyati ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.171"/>
 			 </app>
 </listApp></supplied></quote>
- <p>kunaṅ saṅ prabhu<!-- #K inserts , --> yan <app><lem wit="#K #M">paṅalap</lem><rdg wit="#L">paṅalapa:</rdg></app> dravya tan <app><lem wit="#K #M">yogya</lem><rdg wit="#L">ogya</rdg></app> alapənira, <supplied reason="omitted" evidence="conjectural"><gap/></supplied>
+ <p>kunaṅ saṅ prabhu<!-- #K inserts , --> yan <app><lem wit="#K #M">paṅalap</lem><rdg wit="#L">paṅalapa:</rdg></app> dravya tan <app><lem wit="#K #M">yogya</lem><rdg wit="#L">ogya</rdg></app> alapənira, <supplied reason="omitted" evidence="conjecture"><gap/></supplied>
  durbala sira yan maṅkana, hilaṅ sira <app><lem wit="#L #K">maṅke</lem><witDetail wit="#L" type="pc"/><rdg wit="#L #M">maṅko</rdg><witDetail wit="#L" type="ac"/></app>, hilaṅ sira <app><lem wit="#L #K">dlāhan</lem><rdg wit="#M">dlaha</rdg></app>.</p>
 </div><div type="dyad" n="153"><!--
 L: yan malap· sira: dr̥⌈[17-09]ve yogya ha:lapəni{ni}ra:, ḍarmma saṁsargga: ṅaranira:, karakṣaha:niṁ de[17-10]ṣa durbbhala, Ika: ta kabeḥ ya nimitta,niṅ agəṁ prabhava saṁ prabhū, vr̥ḍḍi ma[17-11]ṅke sira: mvaṁ dla:ha: ||
@@ -3719,8 +3742,8 @@ M: [21v17] yan malap sira drəvya yogyalapənira, darmasaṅsarga ṅa[21v18]ran
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>svādānād varṇasaṁsargāt</l> <l>durbalānāṁ ca rakṣaṇāt |</l>
-		<l>balaṁ saṁjāyate rājñaḥ</l> <l>sa pretyeha ca vardhate ||</l>
+		<l n="a">svādānād varṇasaṁsargāt</l> <l n="b">durbalānāṁ ca rakṣaṇāt |</l>
+		<l n="c">balaṁ saṁjāyate rājñaḥ</l> <l n="d">sa pretyeha ca vardhate ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3736,8 +3759,8 @@ M: [21v17] yan malap sira drəvya yogyalapənira, darmasaṅsarga ṅa[21v18]ran
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>tasmād yama iva svāmī</l> <l>svayaṁ hitvā priyāpriye |</l>
-		<l>varteta yāmyayā vr̥ttyā</l> <l>jitakrodho jitendriyaḥ ||</l>
+		<l n="a">tasmād yama iva svāmī</l> <l n="b">svayaṁ hitvā priyāpriye |</l>
+		<l n="c">varteta yāmyayā vr̥ttyā</l> <l n="d">jitakrodho jitendriyaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3755,8 +3778,8 @@ M: [21v25] kunaṁ saṁ prabu yan gumavayakən ikaṅ adarma, puṅguṅ [21v26
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yas tv adharmeṇa kāryāṇi</l> <l>mohāt kuryān narādhipaḥ |</l>
-		<l>acirāt taṁ durātmānaṁ</l> <l>vaśe kurvanti śatravaḥ ||</l>
+		<l n="a">yas tv adharmeṇa kāryāṇi</l> <l n="b">mohāt kuryān narādhipaḥ |</l>
+		<l n="c">acirāt taṁ durātmānaṁ</l> <l n="d">vaśe kurvanti śatravaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3772,8 +3795,8 @@ M: [21v27] kunaṁ ulaha saṁ prabu, pagəḥnira ikaṁ hyun mvaṁ kroda, [21
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>kāmakrodhau tu saṁyamya</l> <l>yo ’rthān dharmeṇa paśyati |</l>
-		<l>prajās tam anuvartante</l> <l>samudram iva sindhavaḥ ||</l>
+		<l n="a">kāmakrodhau tu saṁyamya</l> <l n="b">yo ’rthān dharmeṇa paśyati |</l>
+		<l n="c">prajās tam anuvartante</l> <l n="d">samudram iva sindhavaḥ ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3798,8 +3821,8 @@ kadi <app><lem type="norm">vvainiṅ</lem><rdg wit="#L">vyahniṁ</rdg><rdg wit=
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>yaḥ sādhayantaṁ chandena</l> <l>vedayed dhanikaṁ nr̥pe  |</l>
-		<l>sa rājñā tac caturbhāgaṁ</l> <l>dāpyas tasya ca tad dhanam  ||</l>
+		<l n="a">yaḥ sādhayantaṁ chandena</l> <l n="b">vedayed dhanikaṁ nr̥pe  |</l>
+		<l n="c">sa rājñā tac caturbhāgaṁ</l> <l n="d">dāpyas tasya ca tad dhanam  ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
@@ -3824,195 +3847,195 @@ kadi <app><lem type="norm">vvainiṅ</lem><rdg wit="#L">vyahniṁ</rdg><rdg wit=
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div><div type="dyad" n="..."><!--
  L:
 	 K:
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="subaudible">
 	<lg met="anuṣṭubh">
-		<l>... |</l>
-		<l>... ||</l>
+		<l n="a">... |</l>
+		<l n="b">... ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
  <note sameAs="txt:MDhŚ08.XXX"/>
 			 </app>
 </listApp></supplied></quote>
- <p></p>
+ <p/>
  </div>
 </div>
 
