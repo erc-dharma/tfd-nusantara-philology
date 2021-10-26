@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sasanamahaguru">
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sasanamahaguru" type="edition" xml:lang="eng">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -13,7 +14,7 @@
                 <respStmt>
                     <resp>TEI encoding</resp>
                     <!--TBM-->
-                    <persName>Aditia Gunawan</persName>
+                    <persName ref="part:adgu"><name>Aditia Gunawan</name></persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -56,9 +57,6 @@
                 edition, reach chapter 2</change>
         </revisionDesc>
     </teiHeader>
-    <facsimile>
-        <graphic url="photograph of text or monument"/>
-    </facsimile>
     <text xml:space="preserve" xml:lang="osn-Latn">
         <body>
                 <div type="chapter" n="1">
@@ -94,7 +92,11 @@
     <app><lem type="emn">ku kukus</lem><rdg wit="#A">kukus·</rdg></app>, ku saṅhub, təka ri kulon, ku 
     <app><lem type="norm">gəiṅ</lem><rdg wit="#A">gəI</rdg></app> eka laksana, kitu keh na turutanən, ku saṅ sevaka darma, mulah mva iyatna-yatna di saṅ 
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> pasaṅkanan, nihan 
+<<<<<<< HEAD
     <app><lem type="noem">sinaṅguh</lem><rdg wit="#A">sinaguḥ</rdg></app> pañca-vedani ṅaranya, panca <pb edRef="#A" n="2v"/>ma vatək lima, ve ma cai, dani ma sapu ñere,
+=======
+    <app><lem type="norm">sinaṅguh</lem><rdg wit="#A">sinaguḥ</rdg></app> pañca-vedani ṅaranya, panca <pb edRef="#A" n="2v"/>ma vatək lima, ve ma cai, dani ma sapu ñere,
+>>>>>>> 54784197e5a57668d26d117c4a36d2de440d541e
 </p>
                 </div>
                 
@@ -231,8 +233,8 @@
     <app><lem type="emn">sakvehniṅ</lem><rdg wit="#A">sakvaḥniṁ</rdg><rdg wit="#B">sakoEḥ</rdg></app> sabda tan yukti, ya sabda mahala ṅaraniya.</p>
 <p>ambək mahala ma ṅaranya, 
     <app><lem wit="#A">kira-kira</lem><rdg wit="#B"><lacunaStart/></rdg></app><supplied>,</supplied> budi-budi, ṅajərum, ṅagunaan, 
-    <app><lem wit="emn">mijahəta<pb edRef="#A" n="6r"/>n</lem><rdg wit="#A">mijahətatan·</rdg></app>, 
-    <app><lem wit="emn">ṅanəluh</lem><rdg wit="#A">ṅaniluḥ</rdg></app>, ṅaracun, hiri payogya, aṅgəs ma 
+    <app><lem type="emn">mijahəta<pb edRef="#A" n="6r"/>n</lem><rdg wit="#A">mijahətatan·</rdg></app>, 
+    <app><lem type="emn">ṅanəluh</lem><rdg wit="#A">ṅaniluḥ</rdg></app>, ṅaracun, hiri payogya, aṅgəs ma 
     <app><lem wit="#A">numpu, maliṅ</lem><rdg wit="#B"><lacunaEnd/>samaliṁ</rdg></app>, papañjiṅan, meor, ṅahadaṅ, siṅ savatək tan yogya, dipitvah 
     <app><lem wit="#A">dipihədap</lem><rdg wit="#B">dipihə<lacunaStart/></rdg></app>, ya eta 
     <app><lem type="emn">ambək</lem><rdg wit="#A">Ambhə</rdg></app> mahala, ya ta sinaṅguh tri-mala ṅaranya.</p>
@@ -478,9 +480,9 @@
         <app><lem type="norm">gəiṅ</lem><rdg wit="#A">gəI</rdg></app> 
         <app><lem wit="#A">lemek</lem><rdg wit="#B"><lacunaEnd/>k·</rdg></app>, di harəpən saṅ pandita, nihan sinaṅguh catur-upaya ṅaranya, kayatna-yatna saṅ sevaka darma, 
         <app><lem wit="#A">hayva pinintuhu</lem><rdg wit="#B">yva <unclear>pa</unclear><lacunaStart/></rdg></app>.</p> 
-<listApp type="parallels" xml:lang="kaw-Latn">
+<listApp type="parallels">
     <app>
-        <note corresp="txt:SiGu4.2">naranya, ālekhyam, ṅa, hayvānurat-nurat ləmah hayvānurat salə, ṅuniveh śarīranta, yan pasevaka ri saṅ guru, apan ya pinakavvaṅ sulakṣaṇa, agәlәm tumulis-tulis pupunya, yan paṅucap lavan saṅ guru, hasitam tan paguyvan-guyvan, ri harəpәn saṅ guru, ṅuniveh abañvala, gītam tan paṅiduṅ, denya tan pamikvanvakәn kavijakṣaṇaan, yar tan kinvan de saṅ guru, jr̥mbhanam tan paṅucap lapā varəg ri harəpәn saṅ guru, kaṇṭhāravam, tan paṅhvab, †akadanəm† tan paṅulet ri harəpәn saṅ guru, †sudәm† phalarahasyam tan paṅucap aṅkara ri harəpәn saṅ guru, ṅuniveh mikvanvakәn namaniṅ mañal hila-hila maṅkana, na karotu gurumukhe ṅaranya, nihan kaliṅanya, tar magavayakna saṅ sevaka dharma.</note>
+        <note corresp="txt:SiGu4.2" xml:lang="kaw-Latn">naranya, ālekhyam, ṅa, hayvānurat-nurat ləmah hayvānurat salə, ṅuniveh śarīranta, yan pasevaka ri saṅ guru, apan ya pinakavvaṅ sulakṣaṇa, agәlәm tumulis-tulis pupunya, yan paṅucap lavan saṅ guru, hasitam tan paguyvan-guyvan, ri harəpәn saṅ guru, ṅuniveh abañvala, gītam tan paṅiduṅ, denya tan pamikvanvakәn kavijakṣaṇaan, yar tan kinvan de saṅ guru, jr̥mbhanam tan paṅucap lapā varəg ri harəpәn saṅ guru, kaṇṭhāravam, tan paṅhvab, †akadanəm† tan paṅulet ri harəpәn saṅ guru, †sudәm† phalarahasyam tan paṅucap aṅkara ri harəpәn saṅ guru, ṅuniveh mikvanvakәn namaniṅ mañal hila-hila maṅkana, na karotu gurumukhe ṅaranya, nihan kaliṅanya, tar magavayakna saṅ sevaka dharma.</note>
     </app>
     
 </listApp>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      type="edition"
      xml:lang="eng"
@@ -17,7 +18,7 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-             <idno type="filename">CritEd_KakavinParthayajna</idno>
+             <idno type="filename">DHARMA_CritEdKakavinParthayajna</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
@@ -168,7 +169,8 @@
    </teiHeader>
    <text xml:space="preserve" xml:lang="kaw-Latn">
         <body>
-            <div type="canto" n="1" met="jagaddhita" real="+++--+-+---+------+-+-+">
+            <div type="canto" n="1" met="jagaddhita">
+	       <note type="prosody">+++--+-+---+------+-+-+</note>
                 <lg n="1">
                   <l n="a">oṁ <app><lem type="emn">rudrāya</lem><rdg wit="#EdSSA #EdZ #L #P">rudrākṣa</rdg></app> namo ’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
                   <l n="b">saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhu-tuhu jagatpramodita</l>
@@ -209,7 +211,8 @@
                     <note n="3">z; maləsvāvakājñana ed</note>
                 </lg>
             </div>
-            <div type="canto" n="2" met="bramitākṣara" real="ᵕᵕ/ ᵕ ᵕ/ ᵕᵕ / ᵕᵕ ̠̌[12]">
+            <div type="canto" n="2" met="bramitākṣara">
+                <note type="prosody">ᵕᵕ/ ᵕ ᵕ/ ᵕᵕ / ᵕᵕ ̠̌[12]</note>
                 <note>(skt <hi rend="italic">pramitākṣara</hi>)</note>
                 <lg n="1">
                     <l n="a">hana tāṣṭaliṅga ya vinastu ləvih</l>
@@ -296,7 +299,8 @@
                     <l n="d">maməlas harəp saha taṅis masəkəl</l>
                 </lg>
             </div>
-            <div type="canto" n="3" met="triṣṭubh?" real="  ᵕ  ᵕ | ᵕ  ᵕ | ᵕ  ᵕ |  ⏓ (? triṣṭubh group; 14][yudhiṣṭhira]">
+            <div type="canto" n="3" met="triṣṭubh?">
+                <note type="prosody">  ᵕ  ᵕ | ᵕ  ᵕ | ᵕ  ᵕ |  ⏓ (? triṣṭubh group; 14][yudhiṣṭhira]</note>
                 <lg n="1">
                     <l n="a">“ariṅku rəṅə̄ ta vuvusku denta</l>
                     <l n="b">“uḍūh mapa teki manahta liṅta</l>
@@ -316,7 +320,8 @@
                     <l n="d">“vukir saparāna juraṅ tasik lvah</l>
                 </lg>
             </div>
-            <div type="canto" n="4" met="jaloddhatagati" real="ᵕ  ᵕ | ᵕ ᵕ  | ᵕ  ᵕ | ᵕ ᵕ ⏓ [12]">
+            <div type="canto" n="4" met="jaloddhatagati">
+                <note type="prosody">ᵕ  ᵕ | ᵕ ᵕ  | ᵕ  ᵕ | ᵕ ᵕ ⏓ [12]</note>
                 <lg n="1">
                     <l n="a">vavaṅ pavanaputra mojar agaṅsul</l>
                     <l n="b">“apan paḍa ta vastuniṅ pəjah amuk</l>
@@ -379,7 +384,8 @@
                     <l n="d">sugih varas ikā vənaṅ ya maṅucap.</l>
                 </lg>
             </div>
-            <div type="canto" n="5" met="upendrabajrā" real="ᵕᵕ/   ᵕ/ ᵕᵕ/   ̠̌⏓">
+            <div type="canto" n="5" met="upendrabajrā">
+                <note type="prosody">ᵕᵕ/   ᵕ/ ᵕᵕ/   ̠̌⏓</note>
                 <lg n="1">
                     <l n="a">“ariṅku tapvan vruha riṅ parārtha</l>
                     <l n="b">“rare tuvi pvan taya riṅ kabhikṣvan</l>
@@ -405,7 +411,8 @@
                     <l n="d">“maran tan evəh təkap iṅ paratra</l>
                 </lg>
             </div>
-            <div type="canto" n="6" met="jagadnātha (jagatnātha)" real="ᵕᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓">
+            <div type="canto" n="6" met="jagadnātha (jagatnātha)">
+                <note type="prosody">ᵕᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓</note>
                 <lg n="1">
                     <l n="a">“ariṅku laki saṅ dhanañjaya kiteki bapa pinalar i ṅhulun təmən</l>
                     <l n="b">“paṅə̄bananikiṅ jagat gumavayaṅ parahita dadaheṅ parakrama</l>
@@ -468,7 +475,9 @@
                     <l n="d">sukhā pәjaha satya riṅ paraparan makaphala masiluṅluṅan lara.</l>
                 </lg>
             </div>
-            <div type="canto" n="7.1-22" met="punarmada (skt mañjubhāṣiṇī)" real="ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕ ᵕ|⏓[13]">
+            <div type="canto" n="7.1-22" met="punarmada">
+                <note type="prosody">ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕ ᵕ|⏓[13]</note>
+                <note>(skt mañjubhāṣiṇī)</note>
                 <lg n="1">
                     <l n="a">panaṅisnirāṅrәs asәkәl nareśvara,</l>
                     <l n="b">vәkasan ta saṅ ṛsi maśabda gorava,</l>
@@ -604,7 +613,8 @@
                     <l n="d">rasananta teka mara tan tәmuṅ lara.</l>
                 </lg>
             </div>
-            <div type="canto" n="8" met="praharaṇakalika" real="ᵕᵕᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕᵕᵕ| ᵕ⏓ [14] [śakvari group; not found elsewhere in oj]">
+            <div type="canto" n="8" met="praharaṇakalika">
+                <note type="prosody">ᵕᵕᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕᵕᵕ| ᵕ⏓ [14] [śakvari group; not found elsewhere in oj]</note>
                 <lg n="1">
                     <l n="a">kaṅariṅasana kāsnika matәguh apәs,</l>
                     <l n="b">kapanasana tikādbhuta matәguh apәs,</l>
@@ -713,7 +723,8 @@
                     <l n="d">ri hilaṅ i pәtәṅ iṅ hati maluy apaḍaṅ.</l>
                 </lg>
             </div>
-            <div type="canto" n="ix" met="mālinī" real="ᵕ ᵕ ᵕ | ᵕ ᵕ ᵕ |    | ᵕ   | ᵕ  ⏓ [15]">
+            <div type="canto" n="9" met="mālinī">
+                <note type="prosody">ᵕ ᵕ ᵕ | ᵕ ᵕ ᵕ |    | ᵕ   | ᵕ  ⏓ [15]</note>
                 <lg n="1">
                     <l n="a">tulusakәna tikuṅ sih saṅ mahāpaṇḍitārya,</l>
                     <l n="b">ri pukulun apan evәh ṅvaṅ kәda dhīra satya,</l>
@@ -789,7 +800,8 @@
                     <l n="d">vacananira maper luh nityā madrәs tan ampәt.</l>
                 </lg>
             </div>
-            <div type="canto" n="10" met="basantatilaka" real="ᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕ| ⏓ [14]">
+            <div type="canto" n="10" met="basantatilaka">
+                <note type="prosody">ᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕ| ⏓ [14]</note>
                 <lg n="1">
                     <l n="a">taṅkeh tikaṅ lara yadin caritan bhaṭārī,</l>
                     <l n="b">sampun saṅ ārya mamuhun ri narendraputra,</l>
@@ -845,7 +857,8 @@
                     <l n="d">akveh tikaṅ vinulatan magave praharsa.</l>
                 </lg>
             </div>
-            <div type="canto" n="11" met="jagaddhita" real="| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓ [23] [ed: ragakusuma]">
+            <div type="canto" n="11" met="jagaddhita">
+                <note type="prosody">| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓ [23] [ed: ragakusuma]</note>
                 <lg n="1">
                     <l n="a">rāmyārūm kahaḍaṅ kapāt lakuniran vahuvahu katiban javuh pisan</l>
                     <l n="b">vahv āron səminiṅ tṛṇāṅkura latākiris asəmu hijonya kābunan</l>
@@ -1059,7 +1072,8 @@
                     <l n="d">tinalaṅnalaṅ bañunikā murus anәrusaniṅ juraṅjuraṅ</l>
                 </lg>
             </div>
-            <div type="canto" n="13" met="girisa" real="ᵕᵕᵕ| ᵕᵕᵕ|   |   ᵕ| ᵕᵕᵕ| ⏓ [16]">
+            <div type="canto" n="13" met="girisa">
+                <note type="prosody">ᵕᵕᵕ| ᵕᵕᵕ|   |   ᵕ| ᵕᵕᵕ| ⏓ [16]</note>
                 <lg n="1">
                     <l n="a">kalalu laku nirosən koṅaṅ taṅ patapan arūm</l>
                     <l n="b">kagirigiri patapniṅ merv akveh makapuratuk</l>
@@ -1121,7 +1135,8 @@
                     <l n="d">riṅa‒riṅanikuṅ ambək tan tuhvāni kaviratin</l>
                 </lg>
             </div>
-            <div type="canto" n="14" met="kusumavilasitā" real="ᵕᵕ|  ᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕᵕᵕ| ᵕ ᵕ|  ᵕ⏓ [21]">
+            <div type="canto" n="14" met="kusumavilasitā">
+                <note type="prosody">ᵕᵕ|  ᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕᵕᵕ| ᵕ ᵕ|  ᵕ⏓ [21]</note>
                 <lg n="1">
                     <l n="a">ramya parəṅ siran laku paḍākavaca mirah aṅambvakən təṅah</l>
                     <l n="b">moga muṅup katon sadak irāputih anəlati śeṣaniṅ jaṭā</l>
@@ -1197,7 +1212,8 @@
                     <l n="d">somya səgəh‒səgəh munivareṅ sira mataña rikaṅ prayojana</l>
                 </lg>
             </div>
-            <div type="canto" n="15" met="vilāsinī (wiśvalalita)" real="ᵕᵕᵕ/ ᵕᵕ/ ᵕᵕ/ ᵕᵕ/  ᵕᵕ/ ᵕ⏓ [17]">
+            <div type="canto" n="15" met="vilāsinī (wiśvalalita)">
+                <note type="prosody">ᵕᵕᵕ/ ᵕᵕ/ ᵕᵕ/ ᵕᵕ/  ᵕᵕ/ ᵕ⏓ [17]</note>
                 <note>[munivara, “excellent sage,” here: mahāyanī]</note>
                 <lg n="1">
                     <l n="a">“bapa mapa hetuniṅ nṛpati yan ḍatəṅ hiṅ acala</l>
@@ -1274,7 +1290,8 @@
                     <l n="d">“paməṅ‒aməṅan tikaṅ gati śarīra yan vruh atika</l>
                 </lg>
             </div>
-            <div type="canto" n="16" met="citrālaya" real="ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ| ⏓ [13]">
+            <div type="canto" n="16" met="citrālaya">
+                <note type="prosody">ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ| ⏓ [13]</note>
                 <lg n="1">
                     <l n="a">“kavikun karatun pva ya paḍa mamusuh</l>
                     <l n="b">“kavi vāni marūpa maguṇa mapirak</l>
@@ -1306,7 +1323,8 @@
                     <l n="d">ndan ikaṅ mata tan kəjəp aṅaṅən‒aṅən</l>
                 </lg>
             </div>
-            <div type="canto" n="17" met="jagaddhita" real="/ ᵕᵕ/ ᵕ ᵕ/ ᵕᵕ / ᵕᵕᵕ/ ᵕᵕᵕ/  ᵕ / ᵕ⏓ [23]">
+            <div type="canto" n="17" met="jagaddhita">
+                <note type="prosody">/ ᵕᵕ/ ᵕ ᵕ/ ᵕᵕ / ᵕᵕᵕ/ ᵕᵕᵕ/  ᵕ / ᵕ⏓ [23]</note>
                 <lg n="1">
                     <l n="a">sore kāla ḍavuh pisan siran amaṅkuk aṅaraṅ aṅəsah vimūrchita</l>
                     <l n="b">lvir mukṣā humənəṅ maṅə̄ lalin aturva hiḍəp ira ri śirṇaniṅ hati</l>
@@ -1345,7 +1363,8 @@
                     <l n="d">ṅūnî jro puri rakva yan sira sarāga saturida kakumbaṅeṅ jinəm</l>
                 </lg>
             </div>
-            <div type="canto" n="18" met="jagadnatha (jagatnatha)" real="ᵕ ᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓ [23]">
+            <div type="canto" n="18" met="jagadnatha (jagatnatha)">
+                <note type="prosody">ᵕ ᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓ [23]</note>
                 <lg n="1">
                     <l n="a">təṅah vəṅi səḍəṅ kəjəpni paturūnira para kili riṅ bale təṅah</l>
                     <l n="b">lavan tapa tapî pasevan atunāguru kaki haturū haneṅ ləmah</l>
@@ -1422,7 +1441,8 @@
                     <l n="d">kunaṅ hiḍəp ire daləm hati samātran aṅinakana vṛtta kampəta</l>
                 </lg>
             </div>
-            <div type="canto" n="19" met="navaharṣa" real="⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏓ [19]">
+            <div type="canto" n="19" met="navaharṣa">
+                <note type="prosody">⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏓ [19]</note>
                 <lg n="1">
                     <l n="a">vəkasan sira saṅ kili mavacana somya riṅ ambək arūm</l>
                     <note>[kili]</note>
@@ -1449,7 +1469,8 @@
                     <l n="d">marahup sakarәṅ sira maśuci mamudra viśeṣa vidhi</l>
                 </lg>
             </div>
-            <div type="canto" n="20" met="citrālaya" real="⏑ ⏑ | ⏑ ⏑ | ᵕᵕᵕ| ᵕᵕᵕ| ⏓ [13]">
+            <div type="canto" n="20" met="citrālaya">
+                <note type="prosody">⏑ ⏑ | ⏑ ⏑ | ᵕᵕᵕ| ᵕᵕᵕ| ⏓ [13]</note>
                 <lg n="1">
                     <l n="a">mamuhun ta saṅ ārya tәlas iṅ arahup,</l>
                     <l n="b">ri mahāmuni kapva kavәnaṅ amulat,</l>
@@ -1499,7 +1520,8 @@
                     <l n="d">irika ta saṅ ārya marahup atәhәr.</l>
                 </lg>
             </div>
-            <div type="canto" n="21" met="kusumavicitra ᵕᵕᵕ| ᵕ | ᵕᵕᵕ| ᵕ⏓ [12]">
+            <div type="canto" n="21" met="kusumavicitra">
+                <note type="prosody"> ᵕᵕᵕ| ᵕ | ᵕᵕᵕ| ᵕ⏓ [12]</note>
                 <lg n="1">
                     <l n="a">atha ri huvusniṅ marahup atīrtha</l>
                     <l n="b">lumaku sirātūt ri tәpinikaṅ lvah</l>
@@ -1549,7 +1571,8 @@
                     <l n="d">kadi vəṅi taṅ rāt kalimunan andha</l>
                 </lg>
             </div>
-            <div type="canto" n="22" met="(?) atyaṣṭ group ᵕᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [16] [pṛtivitala ed]">
+            <div type="canto" n="22" met="atyaṣṭ group (?)">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [16] [pṛtivitala ed]</note>
                 <lg n="1">
                     <l n="a">narendra kumətər manambəṅ irikaṅ variṅin magə̄ṅ</l>
                     <l n="b">təhər makiḍukus kəmulnira mələs vəḍihan putih</l>
@@ -1737,7 +1760,8 @@
                     <l n="d">paṅnyārok kalavan kayu tahulan.</l>
                 </lg>
             </div>
-            <div type="canto" n="25" met="mṛdukomala   | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]">
+            <div type="canto" n="25" met="mṛdukomala">
+                <note type="prosody">   | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]</note>
                 <lg n="1">
                     <l n="a">tan ṅehniṅ sakaton paḍāmuhara rəs təkapnira manon</l>
                     <l n="b">luṅhā lampah irāṅavetan aṅalor hatūt alas agə̄ṅ</l>
@@ -1799,7 +1823,8 @@
                     <l n="d">“kesyan taṅ bhuvanekavīra ratu cakravarti saphala</l>
                 </lg>
             </div>
-            <div type="canto" n="26" met="drutavilambita" real="ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ|  ᵕ⏓ [12]">
+            <div type="canto" n="26" met="drutavilambita">
+                <note type="prosody">ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ|  ᵕ⏓ [12]</note>
                 <lg n="1">
                     <l n="a">“hana musuh riṅ amet sukhaniṅ dadi</l>
                     <l n="b">“daśamalādimalāmal alit mətu</l>
@@ -1921,7 +1946,8 @@
                     <l n="d">“maran avas parananta məne ləpas</l>
                 </lg>
             </div>
-            <div type="canto" n="27" met="toṭaka ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [12]">
+            <div type="canto" n="27" met="toṭaka">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [12]</note>
                 <lg n="1">
                     <l n="a">“hana teki muvah pituturku rəṅə̄n</l>
                     <l n="b">“si suyodhana motus amet ri kita</l>
@@ -1959,7 +1985,8 @@
                     <l n="d">sumurup ta bhaṭāra vulan makucәṁ</l>
                 </lg>
             </div>
-            <div type="canto" n="28" met="navaharsa ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏓ [19]">
+            <div type="canto" n="28" met="navaharsa">
+                <note type="prosody"> ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏓ [19]</note>
                 <lg n="1">
                     <l n="a">ya katon lәyәpiṅ pasir amuhara lәṅlәṅ anambәhi kuṅ,</l>
                     <l n="b">kalavan gәrәh iṅ patәr akәtәr agәntәr aṅanti rәmәṅ,</l>
@@ -2009,7 +2036,8 @@
                     <l n="d">dinulur sira deniṅ amaraduhitā pamuput riṅ arūm.</l>
                 </lg>
             </div>
-            <div type="canto" n="29" met="jagadnātha ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓[23]">
+            <div type="canto" n="29" met="jagadnātha">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓[23]</note>
                 <lg n="1">
                     <l n="a">sәḍәṅnira bhaṭāra manmatha kapaṅgih amәṅamәṅ i deśaniṅ pasir,</l>
                     <l n="b">tәkap nṛpatipura yekān atәtәg sira ḍatәṅa ri saṅ manobhava,</l>
@@ -2071,7 +2099,8 @@
                     <l n="d">cucul vuhәl ikaṅ tapih tәkap i paṅharas i taṅanirāṅgamәl susu.</l>
                 </lg>
             </div>
-            <div type="canto" n="30" met=" turidagati ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕ| ᵕᵕ| ⏓ [22]">
+            <div type="canto" n="30" met="turidagati">
+                <note type="prosody"> ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕ| ᵕᵕ| ⏓ [22]</note>
                 <lg n="1">
                     <l n="a">lәṅәṅ alalәh tinon tәpinikaṅ pasir amuhara lәṅlәṅ iṅ mara,</l>
                     <l n="b">kadi tinatā hәninya matulis vinurivuri tәkapnikaṅ surud,</l>
@@ -2121,7 +2150,8 @@
                     <l n="d">mvaṅ i kahilaṅniran kәna binañcana ya ta pavarahnirātәhәr.</l>
                 </lg>
             </div>
-            <div type="canto" n="31" met="jagaddhita   | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕ⏓ [23]">
+            <div type="canto" n="31" met="jagaddhita">
+                <note type="prosody">  | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕ⏓ [23]</note>
                 <lg n="1">
                     <l n="a">saṅ hyaṅ kāma sireki śīghra sumahur milu malara manahnirāṅrәṅə̄,</l>
                     <l n="b">maṅka pvāku nimittaniṅ ḍatәṅa riṅ giri gumavaya yoga len brata,</l>
@@ -2189,7 +2219,8 @@
                     <l n="d">tan vvaṅ len sira de nәpātmaja vәnaṅ mavaraha sira riṅ śivāgama.</l>
                 </lg>
             </div>
-            <div type="canto" n="32" met="śārdūlavikrīḍita   | ᵕᵕ| ᵕᵕ| ᵕᵕ|   ᵕ|   ᵕ| ⏓ [19]">
+            <div type="canto" n="32" met="śārdūlavikrīḍita">
+                <note type="prosody">   | ᵕᵕ| ᵕᵕ| ᵕᵕ|   ᵕ|   ᵕ| ⏓ [19]</note>
                 <lg n="1">
                     <l n="a">vantәn rākṣasa murka śisyanira dug durgā bhaṭārīśvarī,</l>
                     <l n="b">ndan tatkālaniran pamet ri tәmahan saṅ hyaṅ gaṇan paṅdadi</l>
@@ -2215,7 +2246,8 @@
                     <l n="d">byaktan vәetva hәlәm ri kālani madantāmatyanārinta ya.</l>
                 </lg>
             </div>
-            <div type="canto" n="33" met="rajanī ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [17]">
+            <div type="canto" n="33" met="rajanī">
+                <note type="prosody"> ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [17]</note>
                 <lg n="1">
                     <l n="a">si nalamalā tәhәr tiga śirahnya paḍāsavala,</l>
                     <l n="b">ikaṅ i tәṅәn bhagādhipa śirahnya ya tulya gәlap,</l>
@@ -2307,7 +2339,7 @@
                     <l n="d">maṅaṅәnaṅәn ta saṅ nṛpatiputra rikaṅ parana.</l>
                 </lg>
             </div>
-            <div type="canto" n="34" met="(?) pṛthivī">
+            <div type="canto" n="34" met="pṛthivī (?)">
                 <lg n="1">
                     <l n="a">narendra mulat iṅ laṅit paran ikaṅ tinon kādbhutha,</l>
                     <l n="b">maṅuṅkuli pasir samar kadi kukus madәg riṅ bañu,</l>
@@ -2375,7 +2407,8 @@
                     <l n="d">nda mah tamahamah gunuṅ vatu tikāṅ umatyā ri ko.</l>
                 </lg>
             </div>
-            <div type="canto" n="35" met="(?) dhṛti group ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]">
+            <div type="canto" n="35" met="dhṛti group (?)">
+                <note type="prosody">ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]</note>
                 <lg n="1">
                     <l n="a">nāhan ta vacananyan aṅgrәgut aṅuṇḍa gunuṅ maruhur,</l>
                     <l n="b">narendra mamapag riṅ astra śara bahni murub dumilah,</l>
@@ -2461,7 +2494,8 @@
                     <l n="d">ya hetunika yan parāharәp anirnakәneṅ nṛpati.</l>
                 </lg>
             </div>
-            <div type="canto" n="36" met="(?) jagatī group ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [12]">
+            <div type="canto" n="36" met="jagatī group (?)">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [12]</note>
                 <lg n="1">
                     <l n="a">nṛpaāputra madan sira yoga sandhi,</l>
                     <l n="b">matutur pavarah hyaṅ anaṅga ṅūni,</l>
@@ -2707,7 +2741,8 @@
                     <l n="d">denya śoka sira mepu kasih arәp</l>
                 </lg>
             </div>
-            <div type="canto" n="39" met="mṛdukomala   | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]">
+            <div type="canto" n="39" met="mṛdukomala">
+                <note type="prosody">   | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]</note>
                 <lg n="1">
                     <l n="a">tan ngeh yan caritan laṅə̄nikaṅ alas paḍāmuhara kuṅ</l>
                     <l n="b">luṅhā lampah irā nṛpātmaja matūt gәgәr lәṅit adoh</l>
@@ -2775,7 +2810,8 @@
                     <l n="d">“tan śobhā mapupul kabeh sira lavan saṅ ārya vidura</l>
                 </lg>
             </div>
-            <div type="canto" n="40" met="viṣamara ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [15]">
+            <div type="canto" n="40" met="viṣamara">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [15]</note>
                 <lg n="1">
                     <l n="a">“dvan ikin ḍatəṅ ra putu saṅ munīndra ri sira</l>
                     <l n="b">“inutusni saṅ nṛpati dharmaputra katika</l>
@@ -2849,7 +2885,8 @@
                     <l n="d">“makagəgvanaṅ kaviratin manahta sakarəṅ</l>
                 </lg>
             </div>
-            <div type="canto" n="41" met="suvaṅśapattra ⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ [18]">
+            <div type="canto" n="41" met="suvaṅśapattra">
+                <note type="prosody">⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ [18]</note>
                 <lg n="1">
                     <l n="a">“muvah ika rəṅvakən pitutur i ṅhulun iki ta laki</l>
                     <l n="b">“lavalavaniṅ vənaṅ gumavayaṅ brata tapa kavikun</l>
@@ -2941,7 +2978,8 @@
                     <l n="d">“katəmu taman pinet gati bhaṭāra yan inaṅənaṅən</l>
                 </lg>
             </div>
-            <div type="canto" n="42" met="(?) triṣṭubh group" real="⏑ ⏑ ⏑ |   ᵕ| ⏑ ⏑ | ⏓ [11] [tristapa?]">
+            <div type="canto" n="42" met="(?) triṣṭubh group">
+                <note type="prosody">⏑ ⏑ ⏑ |   ᵕ| ⏑ ⏑ | ⏓ [11] [tristapa?]</note>
                 <lg n="1">
                     <l n="a">“hana ta ya vvaṅ sukha tan pamukti</l>
                     <l n="b">“hana mamukti ndan aṅel kahīnan</l>
@@ -2967,7 +3005,8 @@
                     <l n="d">“vruh ika polah ikaṅ aṇḍa bhūmi”</l>
                 </lg>
             </div>
-            <div type="canto" n="43" met="upendrabajrā ᵕᵕ/   ᵕ/ ᵕᵕ/ ⏓ [11]">
+            <div type="canto" n="43" met="upendrabajrā">
+                <note type="prosody"> ᵕᵕ/   ᵕ/ ᵕᵕ/ ⏓ [11]</note>
                 <lg n="1">
                     <l n="a">nahan ta pājar pravarārya bhikṣu</l>
                     <l n="b">ri saṅ nṛpatisuta yeka śīghra</l>
@@ -2994,7 +3033,8 @@
                     <l n="d">"maran ta siddhā vara denta putrā</l>
                 </lg>
             </div>
-            <div type="canto" n="44" met="(?) jagatī group" real="ᵕᵕ|⏑⏑| ᵕᵕ| ᵕ&gt;⏓[12] [bhujaṅgaprayatna?]">
+            <div type="canto" n="44" met="(?) jagatī group">
+                <note type="prosody">ᵕᵕ|⏑⏑| ᵕᵕ| ᵕ&gt;⏓[12] [bhujaṅgaprayatna?]</note>
                 <lg n="1">
                     <l n="a">nā vuvus munīndra ri saṅ ārya pārtha</l>
                     <l n="b">mamuhun ta saṅ nṛpati śīghra luṅhā</l>
