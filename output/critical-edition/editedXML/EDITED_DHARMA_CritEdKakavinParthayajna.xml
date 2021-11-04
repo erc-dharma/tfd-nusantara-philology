@@ -1,0 +1,3099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     type="edition"
+     xml:lang="eng"
+     xml:id="kakavin">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Kakavin Pārthayajña</title>
+            <editor ref="part:anac">
+               <forename>Andrea</forename>
+               <surname>Acri</surname>
+            </editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+            <idno type="filename">DHARMA_CritEdKakavinParthayajna</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <p>Copyright (c) 2019-2025 by Andrea Acri.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="EdSSA">
+                  <abbr type="siglum">Ed<hi rend="superscript">SSA</hi>
+                  </abbr>
+                  <bibl>
+                     <ptr target="bib:SriSukesiAdiwimarta1993_01"/>
+                  </bibl>
+               </witness>
+               <witness xml:id="EdZ">
+                  <abbr type="siglum">Ed<hi rend="superscript">Z</hi>
+                  </abbr>
+                  <!-- <bibl><ptr target="bib:.../></bibl> Zoetmulder, Sekar Iniket, Drukproef-->
+               </witness>
+               <witness xml:id="L">
+                  <abbr type="siglum">L</abbr>
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden, the Netherlands</settlement>
+                        <institution>Universiteit Leiden</institution>
+                        <repository>Leiden University Libraries</repository>
+                        <idno>Or. 5024</idno>
+                     </msIdentifier>
+                     <msContents>
+                        <!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <colophon/>
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+                        <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
+                        </objectDesc>
+                     </physDesc>
+                     <history>
+                          <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>...</p>
+                     </history>
+                  </msDesc>
+               </witness>
+               <witness xml:id="P">
+                  <abbr type="siglum">P</abbr>
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Jakarta, Indonesia</settlement>
+                        <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                        <idno>Peti 53 No L 845</idno>
+                     </msIdentifier>
+                     <msContents>
+                        <!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <colophon/>
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+                        <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
+                        </objectDesc>
+                     </physDesc>
+                     <history>
+                          <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>...</p>
+                     </history>
+                  </msDesc>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+                <!-- Part mandatory -->
+            <p>This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
+                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+            <interpretation>
+               <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+            <p/>
+         </samplingDecl>
+         <schemaRef type="guide"
+                    key=" EGCv01"
+                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+         <!-- Will need to be updated once a more official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+         <listPrefixDef>
+            <prefixDef ident="bib"
+                       matchPattern="([a-zA-Z0-9\-\_]+)"
+                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+            </prefixDef>
+            <prefixDef ident="part"
+                       matchPattern="([a-z]+)"
+                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+            </prefixDef>
+            <prefixDef ident="txt"
+                       matchPattern="([A-Za-z0-9]+)"
+                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+            </prefixDef>
+            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+            </prefixDef>
+            <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="san-Latn">Sanskrit, romanized</language>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:axja" when="2021-10-19">updating the template and numbering the verse lines</change>
+         <change who="part:anac" when="2021-10-19">started encoding the edition</change>
+         <change who="part:axja" when="2020-10-05">automatic conversion from a word docx</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-Latn">
+        <body>
+            <div type="canto" n="1" met="jagaddhita">
+	       <note type="prosody">+++--+-+---+------+-+-+</note>
+                <lg n="1">
+                  <l n="a">oṁ <app><lem type="emn">rudrāya</lem><rdg wit="#EdSSA #EdZ #L #P">rudrākṣa</rdg></app> namo’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
+                  <l n="b">saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhu-tuhu jagatpramodita</l>
+                  <l n="c">mvaṅ sakvehnira <app><lem wit="#EdSSA">paṇḍitādhika</lem><rdg wit="#EdZ #L #P">pāṇḍitādhika</rdg></app> viveka rinacananiki svarastuti</l>
+                  <l n="d">saṅ vijñātmaka riṅ laṅə̄ kavi vənaṅ tuladana saguritnireṅ sabha</l>
+                </lg>
+                <!-- example of alternative manner of encoding apparatus
+                <lg n="1">
+                    <l n="a">oṁ rudrāya namo ’stu te mara panəmbaha ra putu bhaṭāra nityaśa</l>
+                    <l n="b">saṅ muṅgv iṅ tələṅ iṅ hiḍəp saṅ atiśūnya tuhutuhu jagatpramodita</l>
+                    <l n="c">mvaṅ sakvehnira paṇḍitādhika viveka rinacananiki svarastuti</l>
+                    <l n="d">saṅ vijñātmaka riṅ laṅə̄ kavi vənaṅ tuladana saguritnireṅ sabha</l>
+                    <listApp>
+                      <app loc="a">
+                        <lem type="emn">rudrāya</lem>
+                        <rdg wit="#EdASS #EdZ #L #P">rudrākṣa</rdg></app>
+                    </listApp>
+                </lg>
+              -->
+                <lg n="2">
+                    <l n="a">&gt;mevəh ṅvaṅ mucape kadarśitan i sarvagatanira haneṅ jagaddhita</l><!-- argr: I guess the > after <l> at the start of this line is superfluous -->
+                    <l n="b">ndan sūkśmān sumilib riṅ aṇḍajana kokiraniran atirūpa vīryavān</l>
+                    <l n="c">saṅ tvasniṅ lara raga sari siṅ unaṅ saṅ amisani rarasniṅ aṅrəṅə̄</l>
+                    <l n="d">saṅ sākṣāt pinakesiniṅ manah akuṅ rahina vəṅi lanāṅundaṅ lulut</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">yekiṅ ambək aṅel śumakti ri viyoganiṅ alara kəneṅ smarānala</l>
+                    <l n="b">paṅdeniṅ lara raga yeki tumuvuh ri hati mamunah aṅgəsəṅ manah</l>
+                    <l n="c">tṛṣṇāgə̄ṅ sumaput pətəṅ təmahaniṅ rahina pati gagapgagap tutur</l>
+                    <l n="d">kāmārtha pva ya hetuniṅ mapəniṅan mamulaṅuni ri saṅ huvus licin</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">yāṅde rañca ri citta maṅkin alaṅə̄ təkap iṅ alara śoka kāsyasiḥ</l>
+                    <l n="b">ṅhiṅ vikvā jugaṅ enakānusupa riṅ vana tulusa tan kabañcana</l>
+                    <note n="2">hypometrical</note>
+                    <l n="c">śaktyāṅuṅsira siddahniṅ manəmu sandhi kaləpasan i patyaniṅ tiga</l>
+                    <l n="d">ṅhiṅ tekā palakun ri pādanira saṅ yativara maləsvāvakājñana</l>
+                    <note n="3">z; maləsvāvakājñana ed</note>
+                </lg>
+            </div>
+            <div type="canto" n="2" met="bramitākṣara">
+                <note type="prosody">ᵕᵕ/ ᵕ ᵕ/ ᵕᵕ / ᵕᵕ ̠̌[12]</note>
+                <note>(skt <hi rend="italic">pramitākṣara</hi>)</note>
+                <lg n="1">
+                    <l n="a">hana tāṣṭaliṅga ya vinastu ləvih</l>
+                    <l n="b">pinakopajīvaniṅ atīrtha hayu</l>
+                    <l n="c">pagavay halāhayu ya vastu hilaṅ</l>
+                    <l n="d">ri vəkasni sandhiniṅ amukṣa hati</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ya ta hetuniṅ manəmu śabda tutur</l>
+                    <l n="b">apan evəhaṅ luputa riṅ vimala</l>
+                    <l n="c">dyutakarma yeka maṅimur maṅikū</l>
+                    <l n="d">ya dumehnikā manəmu papa magə̄ng</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">vvara darśananta huniṅan rumuhun</l>
+                    <l n="b">nṛpa pāṇḍaveki caritan ta nihan</l>
+                    <l n="c">huvus iṅ binañcana halah manita</l>
+                    <l n="d">təkap iṅ suyodhana kaṭuṅka dahat</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">sira saṅ yudhiṣṭhira təmən kalaran</l>
+                    <l n="b">kapəgan manahnira məhah maṅəsah</l>
+                    <l n="c">ri hilaṅnikaṅ hayu lavan kavikun</l>
+                    <l n="d">ri manahniran kapətəṅan ri hala</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">sira duryaśeki təkap iṅ sajagat</l>
+                    <l n="b">apan aṅśa dharma guṇa tattvanira</l>
+                    <l n="c">vihikan ta riṅ naya parārthaguṇa</l>
+                    <l n="d">lalu yan kəneṅ dyutavikalpa mala</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">humənəṅ sireki sinəsəl vəkasan</l>
+                    <l n="b">təkap iṅ sarāt paḍa kabeh malara</l>
+                    <l n="c">ṅuniveh ta saṅ drupada matsyapati</l>
+                    <l n="d">kalavan ta saṅ vidura kṛṣṇa muvah</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">sira rena saṅ lima təmən kalaran</l>
+                    <l n="b">manaṅis masambat akusā kapati</l>
+                    <l n="c">ri hilaṅnikaṅ kanakarājapura</l>
+                    <l n="d">kalavan sabhūṣaṇa təlas karuhun</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">nṛpaputrikā rika rapuh kumətər</l>
+                    <l n="b">vinudan təkapni śakunin dumaha</l>
+                    <l n="c">atəhər gəluṅnira rinəṅgut ika</l>
+                    <l n="d">irikaṅ sabhā sira kavəs dinudut</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">ri vijil nireki manaṅis madulur</l>
+                    <l n="b">saka riṅ kaḍatvan atiśoka rapuh</l>
+                    <l n="c">ri pakumbakan ya vinəgil manəhər</l>
+                    <l n="d">manaṅis rikaṅ vəṅi taman paturū</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">maṅurai gəluṅnira masāk makusut</l>
+                    <l n="b">mətu taṅ vuvus tan ahajəṅ vəkasan</l>
+                    <l n="c">hana ta pratijñanira yan gəluṅən</l>
+                    <l n="d">rah ikaṅ suyodhana ya śucyanira</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">ṅuniveh ta saṅ pavanaputra mavū</l>
+                    <l n="b">sahasāṅuhuh sira təhər mavuvus</l>
+                    <l n="c">mupuhe pupūni si suyodhana riṅ</l>
+                    <l n="d">palagan pratijñanira tan vuruṅa</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">paḍa mətvakən vacana tan rahayu</l>
+                    <l n="b">sira saṅ suyodhana muvah mavuvus</l>
+                    <l n="c">niyatanya yan pəjaha liṅnya hələm</l>
+                    <l n="d">makatuṇḍa təṇḍas i musuhnya lima</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">ndya tikan patūta maluyeki muvah</l>
+                    <l n="b">ya ta kāṅəniṅ tvasira dharmasuta</l>
+                    <l n="c">samayanya dūra tiki yan mijila</l>
+                    <l n="d">rva vəlas tahun lavasaniṅ layata</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">yatikāgave lara magə̄ṅ ri hati</l>
+                    <l n="b">nṛpa dharmaputra hibəkan prihatin</l>
+                    <l n="c">vəkasan sireki mavuvus matərəh</l>
+                    <l n="d">maməlas harəp saha taṅis masəkəl</l>
+                </lg>
+            </div>
+            <div type="canto" n="3" met="triṣṭubh?">
+                <note type="prosody">  ᵕ  ᵕ | ᵕ  ᵕ | ᵕ  ᵕ |  ⏓ (? triṣṭubh group; 14][yudhiṣṭhira]</note>
+                <lg n="1">
+                    <l n="a">“ariṅku rəṅə̄ ta vuvusku denta</l>
+                    <l n="b">“uḍūh mapa teki manahta liṅta</l>
+                    <l n="c">“laranta ri tan sipi durnayanta</l>
+                    <l n="d">“ṅhulun juga pāpa tivas hiḍəpku</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“titahta dumeh ya manəmva duhkha</l>
+                    <l n="b">“huvus vruh akun sinəsəl təkapta</l>
+                    <l n="c">“kunəṅ ya taṅ enaka vikva tan len</l>
+                    <l n="d">“marān akəḍik paṅucapnikaṅ rāt</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“yadin kita tona ya keraṅeraṅ</l>
+                    <l n="b">“təkapni vuvusnikiṅ opavāda</l>
+                    <l n="c">“vanāśrama liṅku tatan hanaṅ len</l>
+                    <l n="d">“vukir saparāna juraṅ tasik lvah</l>
+                </lg>
+            </div>
+            <div type="canto" n="4" met="jaloddhatagati">
+                <note type="prosody">ᵕ  ᵕ | ᵕ ᵕ  | ᵕ  ᵕ | ᵕ ᵕ ⏓ [12]</note>
+                <lg n="1">
+                    <l n="a">vavaṅ pavanaputra mojar agaṅsul</l>
+                    <l n="b">“apan paḍa ta vastuniṅ pəjah amuk</l>
+                    <l n="c">“i sanmukha si koraveśvaraśata</l>
+                    <l n="d">“alot juga hələm təvas keraṅiraṅ</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“apan paḍa ta rakva vastunikihən</l>
+                    <l n="b">“təkapnikana saṅ vruh iṅ pati təpət</l>
+                    <l n="c">“kaśūrapuruṣan kadhīran apagəh</l>
+                    <l n="d">“ya teka rinəgəpnirāmrih atəhər</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“apan dalu kapāpaniṅ vədivədi</l>
+                    <l n="b">“təvas manəsəkī sarāt tapa guṇa</l>
+                    <l n="c">kapātaka mamet sukhāmriha iku</l>
+                    <l n="d">ləhəṅ pəjaha tan təmuṅ sukha pinet</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“hanāmrih adagaṅ mamet alayaran</l>
+                    <l n="b">“tasik bhaya havanya tan tinaha ṅel</l>
+                    <l n="c">“təkānya ri paranya tan hana vaneh</l>
+                    <l n="d">“sukhā pəjaha tan təmuṅ sakapinet</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">“kunəṅ hikana kāptiniṅ hulun usən</l>
+                    <l n="b">“ikaṅ pəjah asiṅhanāda riṅ ayun</l>
+                    <l n="c">“ya teki ya hələm tasən ləkasana</l>
+                    <l n="d">“matī tuha rare paḍeki niyata</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">“dhanañjaya mapeki liṅku ya hiḍəp</l>
+                    <l n="b">“nda mah ləkasi matya tumpura pisan</l>
+                    <l n="c">“maran tan adavā təkapniṅ aṅucap”</l>
+                    <l n="d">nā liṅ pavanaputra siṅha magalak</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">yudhiṣṭhira muvah sireki mavuvus</l>
+                    <note>[yudhiṣṭhira]</note>
+                    <l n="b">“ariṅku lalu memaniṅ pəjah amuk</l>
+                    <l n="c">“ya tan hana tinūtnya nīti rahayu</l>
+                    <l n="d">“təvas kadaluruṅ pəjah kadi suvuṅ</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">“nihan mara vuvusta tan sipisipi</l>
+                    <l n="b">“ikaṅ pəjah ameta vastva karaṇa</l>
+                    <l n="c">“ləhəṅ karika yan vruhe pati təpət</l>
+                    <l n="d">“ya tan vruh irikeka meman inucap.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">“apan lagi vuvusnikaṅ vvaṅ aṅucap</l>
+                    <l n="b">“ikaṅ tapa ya rakva liṅnya sapəṭik</l>
+                    <l n="c">“ləhəṅ katika yan vruh iṅ pati pisan</l>
+                    <l n="d">“ya tan vruh irikā ta meman iṅ ucap.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">“kalīṅanika memaniṅ vvaṅ aṅucap</l>
+                    <l n="b">“kunəṅ təpətaniṅ vruheka makəḍik</l>
+                    <l n="c">“yadin vruha tatan kənenaku juga</l>
+                    <l n="d">sugih varas ikā vənaṅ ya maṅucap.</l>
+                </lg>
+            </div>
+            <div type="canto" n="5" met="upendrabajrā">
+                <note type="prosody">ᵕᵕ/   ᵕ/ ᵕᵕ/   ̠̌⏓</note>
+                <lg n="1">
+                    <l n="a">“ariṅku tapvan vruha riṅ parārtha</l>
+                    <l n="b">“rare tuvi pvan taya riṅ kabhikṣvan</l>
+                    <l n="c">“kunaṅ hiḍəpkv i kita meta tīrtha</l>
+                    <l n="d">“maran hilaṅ kleśanikiṅ śarīra</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“nihan hana vvaṅ masavah rikaṅ lvah</l>
+                    <l n="b">“lavan maluṅguh mamaṅāniṅ ajrəm</l>
+                    <l n="c">“kəṭəṅ masimsim tuli yan pakaṅsi</l>
+                    <l n="d">“ikaṅ samaṅkā pva dələ̄n təkapta</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“kunəṅ kitāntən vruha riṅ parārtha</l>
+                    <l n="b">“maran hayuntā manulus katona</l>
+                    <l n="c">“apan kadhīranta rikaṅ kasatyan</l>
+                    <l n="d">“avās manuntun təka riṅ kasiddhan</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“huvus mara vruhta rikaṅ kaśāntan</l>
+                    <l n="b">“ləkas ta tāmrih t-aṅivə̄ ta jīva</l>
+                    <l n="c">“huripta pəṅpə̄ṅ ya ta sadhananta</l>
+                    <l n="d">“maran tan evəh təkap iṅ paratra</l>
+                </lg>
+            </div>
+            <div type="canto" n="6" met="jagadnātha (jagatnātha)">
+                <note type="prosody">ᵕᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓</note>
+                <lg n="1">
+                    <l n="a">“ariṅku laki saṅ dhanañjaya kiteki bapa pinalar i ṅhulun təmən</l>
+                    <l n="b">“paṅə̄bananikiṅ jagat gumavayaṅ parahita dadaheṅ parakrama</l>
+                    <l n="c">“tasən ləkas ikaṅ hyaṅ iṅ vuri pameta patapana maṅiṣṭy anugraha</l>
+                    <l n="d">“riṅ eñjiṅ iki yan lumakva kita tan kahavarana maran kasiddha yā</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">təṅah vəṅi huvus lumiṅsir i səḍəṅnira mavuvus i saṅ dhanañjaya</l>
+                    <l n="b">ḍatəṅ ta siraṅ ārya nāma vidurāṅlavad i sapaṅutusni saṅ kaka</l>
+                    <l n="c">sagadgada manah nirāsəmu taṅis maməkulakən i saṅ yudhiṣṭhira</l>
+                    <note>[vidura]</note>
+                    <l n="d">“uḍuh anaku māsku tan sipi vəlasku ri kita lalu tan sih iṅ vidhi</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“apan kita daṅū pva nīti riṅ ulah vədivədi mahatī kasāttvikan</l>
+                    <l n="b">“ginə̄ṅ ta ya linolyan iṅ hati lanāṅguṇita hayu lavan kaṣadguṇan</l>
+                    <l n="c">“harah mapa tikun kəneṅ kirakirāhala pinasukan iṅ malendriya</l>
+                    <l n="d">“tuhu pva ya ta mevəh iṅ vvaṅ anulus lituhayu kavi śakti paṇḍita</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“savaṅ kadi manəmvakən varah i saṅ yativara vinarah ta riṅ havak</l>
+                    <l n="b">“ri dāyanikanaṅ smṛtî muliha riṅ pati patitis i tattvaniṅ dadi</l>
+                    <l n="c">“huvus manaravaṅ təkapnya vəkasan paranani paran iṅ nirātmaka</l>
+                    <l n="d">“təkā pva təkan iṅ pasārani patinya dadi ya manasar mareṅ hala</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">“kalīṅan ika tan kənenaku jugaṅ hala hayuniṅ ulah ya laṅgəṅa</l>
+                    <l n="b">“phalanta vihikan ta riṅ naya parārtha tan alavasa duhkha pātaka</l>
+                    <l n="c">“ajum pva haradin manahta phalaniṅ təlas anəmu varah mahāmuni</l>
+                    <l n="d">“lalun savətuniṅ titah ya tariman halahayu sukhaduhkha taṅgapən</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">“katon tivas ikaṅ vavaṅ vvaṅ amunah lumicinakən avaknya yan hana</l>
+                    <l n="b">“apan purih ikaṅ śarīra kəna riṅ lara viṣaya lavan rajah tamah</l>
+                    <l n="c">“mataṅ nya paḍəmən ta riṅ brata samādhi gavayakəna taṅ kasāttvikan</l>
+                    <l n="d">“trikāyasama taṅ sahiṣṇu muditādulurana karuṇāsi kāyikā</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">sәḍәṅnira saṅ ārya nāma vidurāmitutur i sira sang yuddhiṣṭhira</l>
+                    <l n="b">ḍatәṅ ta rәṣi dhomya śīghra sumuyug ri kahanan ira saṅ nareśvara</l>
+                    <l n="c">vavaṅ nṛpati gadgadāṅadәg aṅañjali mamәkul i jə̄ṅ mahāmuni</l>
+                    <l n="d">parәṅ paḍa humuṅ taṅisnira kabeh yativara kavәṅan sirāṅadәg</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">taṅistaṅis irāsәkәl nṛpati dharmasuta mulati saṅ mahāmuni,</l>
+                    <l n="b">ndā tiṅhalana teki pāpaniṅ apaṅguṅ i varahira saṅ pinaṇḍita,</l>
+                    <l n="c">agə̄ṅ sapṛthivī jugaṅ hala kabhukti tәkap i rahulun munīśvara,</l>
+                    <l n="d">hanāmadhana tan hanaṅ lәvihanaṅ adhama kaluṣa mūḍha kaśmala.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">ndi liṅgiha ta saṅ mahāmuni na honya ta sira ibuni ṅhulun kita,</l>
+                    <l n="b">tumūt milu kapāpa dīna kadi lampurana ṅahasi deśa met nasi,</l>
+                    <l n="c">karәm ri teṅah iṅ mahārṇava hiḍәpira ri laranikaṅ samaṅkana,</l>
+                    <l n="d">abәh tapuk ikaṅ matāsrәt apәyәh svaraniran anaṅisnirantara.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">sabhāgya ri ḍatәṅ munīndra sira teki mavәlasa ri saṅ hulun kabeh,</l>
+                    <l n="b">ndan ahyun atәrәn yvanaknira mareṅ vukir anusupa riṅ vanāśrama,</l>
+                    <l n="c">yādin tәhәra tan vanāśrama lәvih ta hiliki paṅucapnikaṅ sarāt,</l>
+                    <l n="d">sukhā pәjaha satya riṅ paraparan makaphala masiluṅluṅan lara.</l>
+                </lg>
+            </div>
+            <div type="canto" n="7.1-22" met="punarmada">
+                <note type="prosody">ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕ ᵕ|⏓[13]</note>
+                <note>(skt mañjubhāṣiṇī)</note>
+                <lg n="1">
+                    <l n="a">panaṅisnirāṅrәs asәkәl nareśvara,</l>
+                    <l n="b">vәkasan ta saṅ ṛsi maśabda gorava,</l>
+                    <l n="c">ya ta hetu saṅhulun apadgatan ḍatәṅ,</l>
+                    <l n="d">rumәṅə̄ ri bhūpati kabañcaneṅ nita.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">nya magə̄ṅ ikuṅ lara ri saṅ nareśvara,</l>
+                    <l n="b">apan adbhutaṅ vacana denikaṅ jana,</l>
+                    <l n="c">kiteki vastu huripiṅ sarāt kabeh,</l>
+                    <l n="d">ya dumeh tikaṅ jana kabeh paḍālara.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">syapa teki tan mavәlaseṅ kita lara,</l>
+                    <l n="b">ri kasajananta tuvi yan binañcana,</l>
+                    <l n="c">pira teki pāpaniṅ asuṅ lare kita,</l>
+                    <l n="d">kala mūḍa murkha tuvi tan kәneṅ vәlas.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">yadiyan rumәṅvakәna saṅ mahāyati,</l>
+                    <l n="b">ri kadurjanan saṅ agave lare kita,</l>
+                    <l n="c">matukup kapə̄ sira savetnikaṅ hala,</l>
+                    <l n="d">atakut kapelutana pāpa durjana.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">ndak ajar kiteka rusit iṅ vvaṅ iṅ kalī,</l>
+                    <l n="b">kavi sandi vijña riṅ upāyāṅārsana,</l>
+                    <l n="c">mamanis maśabda madulur valokana,</l>
+                    <l n="d">maṅimur magoṣṭhava mamet alәṅkara.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">maṅucap sudharma guṇa tattvaniṅ dadi,</l>
+                    <l n="b">mahalәp mataṅgvana saloka sākṣara,</l>
+                    <l n="c">ri tutuk juga vruh aṅucap taman tәpәt,</l>
+                    <l n="d">ri hatinya kimburu mabuddhi sādhana.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">riṅ agoṣṭhi śabda mamahā marәk ta ya,</l>
+                    <l n="b">maharәp ri kośvaniṅ ujar salah kәna,</l>
+                    <l n="c">kagiriṅ tikaṅ vvaṅ aṅucap ta yāpәpәr,</l>
+                    <l n="d">mamilәt vuvusnya dumalih mamatyana.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">hana len kadurjananikāgave kadaṅ,</l>
+                    <l n="b">maṅucap ri mūlanika ṅūni riṅ vaneh,</l>
+                    <l n="c">ṅaraniṅ bapebu madagiṅ lavan kaki,</l>
+                    <l n="d">mara riṅ sugih dadi mapintasādhana.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">hana duṣkarāharәp i duhkaniṅ vaneh,</l>
+                    <l n="b">mamiveka polah aṅusī maveh ta hala,</l>
+                    <l n="c">mamilәt mabheda maṅucap sahāgama,</l>
+                    <l n="d">yan alah vuvusnya maṅucap madudvana</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">hana duṣkṛtātuhaganan sapustaka,</l>
+                    <l n="b">rahineṅ kulәm vinaca nityavus tama,</l>
+                    <l n="c">kahiḍәp rahasya tuhu dharma saṅ viku,</l>
+                    <l n="d">ndan isinya mudra kāla caṇḍapiṅgala.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">hana len svabuddhinika rūpa bhikṣuka,</l>
+                    <l n="b">mamanis maśabda mara riṅ pradhānika,</l>
+                    <l n="c">saha lepanāṅajarakәn vruheṅ guṇa,</l>
+                    <l n="d">sipat iṅ kasiddhyana manon asambhava.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">vara teki liṅnika katona maṅśila,</l>
+                    <l n="b">pinarәk sinevaka maminta sādhana,</l>
+                    <l n="c">tinәkan sakāptinikā siṅ samenaka,</l>
+                    <l n="d">kuṭilā hatinya dadi miṅgat iṅ kulәm.</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">tәka riṅ mavalkala tatan mahājana,</l>
+                    <l n="b">praceṭaṅ aleṅkarari buddhiniṅ para,</l>
+                    <l n="c">maharәp kabhaktyana pujīniṅ aśrayan,</l>
+                    <l n="d">lumәvih sumamyak alicin vavaṅ tyajet.</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">ṅuniveh tikaṅ vvaṅ arәbut pamuktyana,</l>
+                    <l n="b">silih hāl paḍāṅdәha mamet hupāśrayan,</l>
+                    <l n="c">hana bancana hapan alit visāmrәta,</l>
+                    <l n="d">sumilib madoh kuṭila tan kәnenuha.</l>
+                </lg>
+                <lg n="15">
+                    <l n="a">si suyodhana pva ya musuhta nityaśa,</l>
+                </lg>
+                <lg n="42">
+                    <l n="a">śakuni pva patihnika patihnya riṅ hala,</l>
+                    <l n="b">makaṅūni riṅ carita bhīma sārayu,</l>
+                    <l n="c">rinacun si bhīma linabuhnya riṅ bañu.</l>
+                </lg>
+                <lg n="16">
+                    <l n="a">kita teki tan vruh iṅ upāya riṅ nita,</l>
+                    <l n="b">tәkapiṅ suyodhana mameti bañcana,</l>
+                    <l n="c">śakuni ya tādadi parih tәkapnika,</l>
+                    <l n="d">ya dumeh nitālaha tatan sakeṅ tivas.</l>
+                </lg>
+                <lg n="17">
+                    <l n="a">vatuniṅ karaṅ paḍanikaṅ suyodhana,</l>
+                    <l n="b">maluṅid malaṇḍәp arusit pasaṅ lәyәp,</l>
+                    <l n="c">pinaran bayāṅanini tan kәnenapәs,</l>
+                    <l n="d">mrigigih makās kasәlatan sahiṅsahiṅ.</l>
+                </lg>
+                <lg n="18">
+                    <l n="a">syapa lena saṅ vәnaṅ ataṅgәhiṅ hala,</l>
+                    <l n="b">kadi bhīsma yogya pituhun vuvusnira,</l>
+                    <l n="c">yen apeka yan mapәsa saṅ suyodhana,</l>
+                    <l n="d">umәnәṅ pva yāpituli tan kәnenavәr.</l>
+                </lg>
+                <lg n="19">
+                    <l n="a">tuhu denya yan hanā kaliliran sakeṅ bapa,</l>
+                    <l n="b">vuta tan rinakva ri hatinya tan dәliṅ,</l>
+                    <l n="c">dumәliṅ yan iṅ hala manon datan vuta,</l>
+                    <l n="d">pinasuknikaṅ mala maluṅ kadurjanan,</l>
+                </lg>
+                <lg n="20">
+                    <l n="a">dalu pāpaniṅ vvaṅ amusuh paṅutpata,</l>
+                    <l n="b">para bañcanaāṅulahulah ri saṅ viku,</l>
+                    <l n="c">umәnәṅ ta saṅ sujana satya satvika,</l>
+                    <l n="d">hapan āṅśa dharma guṇa tatva saṅ mahān.</l>
+                </lg>
+                <lg n="21">
+                    <l n="a">yadiyan kataṅkәpana riṅ kadurjanan,</l>
+                    <l n="b">paḍananta riṅ kirakirārusit malit,</l>
+                    <l n="c">niyatārebut kavah amet kapāpa ṅel,</l>
+                    <l n="d">mamaṅan tahiṅ paṅisiṅan mahurhuran.</l>
+                </lg>
+                <lg n="22">
+                    <l n="a">kita teki yan malәsa riṅ kadurjanan,</l>
+                    <l n="b">manugәl sukunta tinapәlnikaṅ pәlus,</l>
+                    <l n="c">manәvәr liḍahta mavәdī rәhak vatuk,</l>
+                    <l n="d">rasananta teka mara tan tәmuṅ lara.</l>
+                </lg>
+            </div>
+            <div type="canto" n="8" met="praharaṇakalika">
+                <note type="prosody">ᵕᵕᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕᵕᵕ| ᵕ⏓ [14] [śakvari group; not found elsewhere in oj]</note>
+                <lg n="1">
+                    <l n="a">kaṅariṅasana kāsnika matәguh apәs,</l>
+                    <l n="b">kapanasana tikādbhuta matәguh apәs,</l>
+                    <l n="c">tinisan api tumūt maṅuluri malәmәs,</l>
+                    <l n="d">ya tika paḍani saṅ sujana parahita,</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">havan aradin ataṇḍәs abәcik aratā,</l>
+                    <l n="b">kasukәtan araciṅ tahi majimәt arok,</l>
+                    <l n="c">sinapu sinasapan muvah ika maradin,</l>
+                    <l n="d">ya tika paḍani citta saṅ anәmu hayu,</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">hana vәsi riti tambaga matahitahi,</l>
+                    <l n="b">salavas ika mijil juga tәhәr atahi,</l>
+                    <l n="c">ya ta paḍaniṅ avak matahitahi mala,</l>
+                    <l n="d">radinana pahayun dadi mari mahala,</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">halanika ri dalәm dadi mәtu ri yava,</l>
+                    <l n="b">halanika ri yavādadi mulih i dalәm,</l>
+                    <l n="c">hiṅәtiṅәtәn ikaṅ kadi damar akәlir,</l>
+                    <l n="d">hala hayuniṅ ulah paḍa mamayamaya.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">tivas ikaṅ añale hala hayuniṅ ulah,</l>
+                    <l n="b">tivas ikaṅ aṅalәm lumәvihakәn avak,</l>
+                    <l n="c">tivas ikaṅ aṅucap tәka mamasamasa, tivas ikaṅ aṅalәm kadi maṅuguṅuguṅ.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">hana viku maṅidaṅ maṅiḍәri bhuvana,</l>
+                    <l n="b">makuravit agәluṅ sukәr aburarutan,</l>
+                    <l n="c">tәhәr ikana purih iṅ avak apәniṅan,</l>
+                    <l n="d">si hurip ika ya vastu sukәr aburarut.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">hana sira lumicin vikulaghәna mūna,</l>
+                    <l n="b">vinulatan aradin taya sukәr iṅ avak,</l>
+                    <l n="c">tuhu saka ri hәniṅ mavanira ri dalәm,</l>
+                    <l n="d">tahā si purih ikaṅ hurip aṅaṅәnaṅәn</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">iṅәtiṅәtәn ikaṅ manәmu sukha magə̄ṅ,</l>
+                    <l n="b">rasarasana tәkapta maṅinakana rāt,</l>
+                    <l n="c">vvaṅ atika pinakārgadanikā śarana,</l>
+                    <l n="d">niyāta pamalәsanya sukha phalanika.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">hana viku maṅigәl macarita ri nabuṅ,</l>
+                    <l n="b">bisa tivas ika siṅ vaṅa teka vihikan,</l>
+                    <l n="c">vaṅ atika maṅalem ri gunanika levih,</l>
+                    <l n="d">vvaṅ atika saṅ asuṅ mamiguṇani guṇa.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">syapa karika vinastu lәviha ya tәmәn,</l>
+                    <l n="b">masuṅa vara manugrahana kavijayan,</l>
+                    <l n="c">pamulikana bhaṭāra masuṅa karatun,</l>
+                    <l n="d">saṅ aṅaran ikā siṅ vvaṅ atika vulikәn</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">katәmu mara tәkapta manәmu kavikun,</l>
+                    <l n="b">lәkasakәna lәkasniraniravarana,</l>
+                    <l n="c">kaṅ aṅinakana riṅ jana ya ta gavayәn,</l>
+                    <l n="d">phalanikaṅ aṅucap hayu tәhәr apuji.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">ya ta karananikanaṅ viku yan apitutur,</l>
+                    <l n="b">lumipura ri laranta phalanika tәmәn,</l>
+                    <l n="c">purih ira saṅ agə̄ṅ sukhanira kalaran,</l>
+                    <l n="d">yan anәmu lara duhkha tan ari malavas</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">kita mara laki sampun anәmu kavikun,</l>
+                    <l n="b">vaṅunәn ikaṅ acintya ri hati muliha,</l>
+                    <l n="c">matutura ri bhaṭāra karaṇa sira tāh,</l>
+                    <l n="d">parahupana masucya ri sira satata.</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">huvus ika maradin manah alilaṅ aho,</l>
+                    <l n="b">lәkasi ta pagaventa kaṅ aṅinakana,</l>
+                    <l n="c">mapa karika manahta tulusa manusup,</l>
+                    <l n="d">tan asarag ahiḍәp mami kita sakarәṅ</l>
+                </lg>
+                <lg n="15">
+                    <l n="a">kunaṅ iki nayani ṅhulun iṅәtiṅәtәn,</l>
+                    <l n="b">saṅ arәjuna sireka lumәkasa tapa,</l>
+                    <l n="c">makaphala mara tan hana maṅapakara,</l>
+                    <l n="d">tumikәla taṅaniṅ vvaṅ anuduha hala.</l>
+                </lg>
+                <lg n="16">
+                    <l n="a">kunaṅ ikana tukar tar ala sәminika,</l>
+                    <l n="b">sulur ika pagavәnta hayu raja sura,</l>
+                    <l n="c">makakusuma taṅisnya makaphala pati,</l>
+                    <l n="d">rinatәṅaniṅ umah galagala ya pinәm,</l>
+                </lg>
+                <lg n="17">
+                    <l n="a">mataṅ ika paḍa ṅadva guṇa varaśara,</l>
+                    <l n="b">hәlәm i tәkanikaṅ bharata ya vaṅunәn,</l>
+                    <l n="c">paḍa matihaṅ asañjata ya ta pahayun,</l>
+                    <l n="d">niyatanika hәlәm juga ta ya vuruṅa.</l>
+                </lg>
+                <lg n="18">
+                    <l n="a">nahan ikana vuvus munivara karuṇa,</l>
+                    <l n="b">mamitәkәti ri saṅ nṛpati lima suta,</l>
+                    <l n="c">dadi ta nṛpati dharma sumahur atәgәg,</l>
+                    <l n="d">ri hilaṅ i pәtәṅ iṅ hati maluy apaḍaṅ.</l>
+                </lg>
+            </div>
+            <div type="canto" n="9" met="mālinī">
+                <note type="prosody">ᵕ ᵕ ᵕ | ᵕ ᵕ ᵕ |    | ᵕ   | ᵕ  ⏓ [15]</note>
+                <lg n="1">
+                    <l n="a">tulusakәna tikuṅ sih saṅ mahāpaṇḍitārya,</l>
+                    <l n="b">ri pukulun apan evәh ṅvaṅ kәda dhīra satya,</l>
+                    <l n="c">naya ra putu maharṣi pveki maṅkin saharṣa,</l>
+                    <l n="d">ri tulusani saṅ ārya phalgunāṅhyaṅ riṅ agra.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">pinәkәtana ri sandi jñana de saṅ munīndra,</l>
+                    <l n="b">lәkasiṅ atapa nisniṅ jñana sampun viśeṣa,</l>
+                    <l n="c">nāhan ikana vuvusniṅ nātha dharmātmajāsvī,</l>
+                    <l n="d">ri tulusani saṅ antәn śīghra maṅsə̄h manambah.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">mamituhu ta sirosәn saṅ kinon siṅ pakona,</l>
+                    <l n="b">ri sira dadi ta mojar saṅ ṛṣi nīti yogya,</l>
+                    <l n="c">riṅ ulahaniṅ acintyan dug sәḍәṅ dhyāna yogī,</l>
+                    <l n="d">havarah alaniṅ ambәk bañcana kveh musuhnya.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">hana ta musuh anūkṣmālit mamor iṅ acintya,</l>
+                    <l n="b">haṅiḍәrakәn anuntun riṅ katon mogha lamlam,</l>
+                    <l n="c">pinatitis iṅ alitniṅ jñāna nis tan paśeṣa,</l>
+                    <l n="d">mata pinati vinaṅsul sandhiniṅ yoga nidra.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">gavayakәna lәkasniṅ lakṣaṇāmūdra jāpa,</l>
+                    <l n="b">mata mulati lalāṭa byakta yogānta siddha,</l>
+                    <l n="c">katәmu taman inuṅsī vastuniṅ tan pavastu,</l>
+                    <l n="d">kadi laliniṅ aṅantuk lәs lәyәp riṅ kamokṣan.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">kavaca śara laras len taṅkulak tan madoha,</l>
+                    <l n="b">phalanika si kadhīranta rumakṣeṅ śarīra,</l>
+                    <l n="c">sәḍәṅ iṅ avamanan deni musuh tāka murkha,</l>
+                    <l n="d">sukha pәjaha siluṅluṅ taṅkulak len laras hru.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">hana ta vukir apurvāgə̄ṅ paran saṅ matīrtha,</l>
+                    <l n="b">saphala paraniṅ aṅhyaṅ byakta saṅ hyaṅ hanaṅkā,</l>
+                    <l n="c">giri varasura sākṣāt rīndrakīlāgra rāmya,</l>
+                    <l n="d">ya ta pinakakasiddhan ṅūni de saṅ hyaṅ indra.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">hana ta sira maharṣi khyāti riṅ svargaloka,</l>
+                    <l n="b">sirata rata paranyā yogya vus labdhacitta,</l>
+                    <l n="c">tuvi ṅaranira saṅ dvaipāyaneṅ rāt kavīryan, <note n="4">prasasta
+                        gp</note></l>
+                    <l n="d">sira ta vәkas i dharma hyaṅ śivā vus <note n="5">ṅkan gp</note>
+                        paralabdha.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">nahan ikana tuduh śrī dhomya riṅ nīti yogya,</l>
+                    <l n="b">tuvi rahina kamantyan tejaniṅ sūrya tumraṅ, <note n="6">lumraṅ gp</note></l>
+                    <l n="c">gagaṇa kadi sinapvan taṅ pәtәṅ tan paśeṣa,</l>
+                    <l n="d">kadi manah i saṅ amvit maṅkatāṅhyaṅ riṅ agra.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">dadi ta sira madandan saṅ tәlas labdhacitta,</l>
+                    <l n="b">pranata tәlasa muspeṅ saṅmahāpaṇḍitārya,</l>
+                    <l n="c">ibunira sira vinvit luhnirādṅrәs tan ampәt,</l>
+                    <l n="d">kadi tәhәra tan antuk denirāpan katrәsnan.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">hanāku yānaku māsku ṅke lah vuṅsuṅku śīghra,</l>
+                    <l n="b">ṅhulun umulat amәṅpə̄ṅ dak pahāvas ta putra,</l>
+                    <l n="c">mapa tika vuvusaṅkvā māsku tan vruhku mojar,</l>
+                    <l n="d">ri kita laki savetniṅ tibrā deniṅ larāgə̄ṅ.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">nahan ikana pasuṅkvā mah tikaṅ vastra taṅgap,</l>
+                    <l n="b">kәmulani tanayaṅkvāṅhiṅ pavehniṅ kahīnan, <note n="7">kadinan gp</note></l>
+                    <l n="c">anaku laki pahenak mah sәpah ṅke vajaṅku,</l>
+                    <l n="d">vacananira maper luh nityā madrәs tan ampәt.</l>
+                </lg>
+            </div>
+            <div type="canto" n="10" met="basantatilaka">
+                <note type="prosody">ᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕ| ⏓ [14]</note>
+                <lg n="1">
+                    <l n="a">taṅkeh tikaṅ lara yadin caritan bhaṭārī,</l>
+                    <l n="b">sampun saṅ ārya mamuhun ri narendraputra,</l>
+                    <l n="c">saṅ dharmaputra humәnәṅ magәgәh katikṣnan,</l>
+                    <l n="d">luh nityasāmili hilī ri pipi dravādrәs.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">mojar siraṅisәkisәk sәsәgәn tan ampәt,</l>
+                    <l n="b">hantәnku saṅ tulusa siddha ri pāda saṅ hyaṅ,</l>
+                    <l n="c">eṅәt kitāntәn i vuvusnira saṅ mahārṣi,</l>
+                    <l n="d">lāvan kayatnakәna nityā tikaṅ samādhi.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">nā liṅ narendra saha luhnira pan katṛṣṇan,</l>
+                    <l n="b">mamvit muvah sira ri saṅ vara bhīmasena,</l>
+                    <l n="c">saṅ bhīma yeka mahivaṅ panaṅisnya ṅәmbe,</l>
+                    <l n="d">lvir minda riṅ tәgal ayun malajәṅ kavarṣan.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">maṅkin taṅis pavanaputra maṅantugantug,</l>
+                    <l n="b">umbәl mijil gidәgidə̄ riṅ iruṅ ya madrәs,</l>
+                    <l n="c">lāvan ta lәtnya kumәlus mabaṅə̄r vәtunya,</l>
+                    <l n="d">kompol katon tan inivə̄ tәkap iṅ larāgə̄ṅ.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">tan ṅeh taṅisnya caritan pravarārya bhīma,</l>
+                    <l n="b">saṅ phalguneki mamuhun ri saṅ āri karva,</l>
+                    <l n="c">saṅ dropadi sira ta rūkṣa rapuh kalәsvan,</l>
+                    <l n="d">śokānaṅis maṅiḍupuk sira yar panәmbah.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">saṅ phalguneki manaṅis maṅadәg sinәmbah,</l>
+                    <l n="b">kepvan ta cittanira denya maśabda maṅrәs,</l>
+                    <l n="c">yekā mukәt pinakaśatru tәkapniṅ amrih,</l>
+                    <l n="d">hetunya yan kapihәnәṅ sira denya kepvan.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">siṅgih ḍaḍuṅ pinakapāśanikaṅ kamokṣan,</l>
+                    <l n="b">tṛṣṇā jugāgavaya sih mamilәt riṅ aṅga,</l>
+                    <l n="c">vyaktinya yan dadi śarīra muvah kabhāva,</l>
+                    <l n="d">ṣaḍmārga yeka dadi riṅ dadi mogha tṛṣṇa.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">maṅkin ta kāṅәn i halanya yadin katūta,</l>
+                    <l n="b">marmanya śīrna pinәgatnira riṅ kadhīran,</l>
+                    <l n="c">śantā sahiṣṇu pamunahnira tan paśeṣa,</l>
+                    <l n="d">hetunya śīrna malilaṅ dadi citta mahniṅ.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">maṅkat sirātәlas abhūsana ratna mabhrā,</l>
+                    <l n="b">lāvan sasañjata kabeh paḍa nora kantun,</l>
+                    <l n="c">luṅhā sirāṅinakinak tәka riṅ pradeśa,</l>
+                    <l n="d">akveh tikaṅ vinulatan magave praharsa.</l>
+                </lg>
+            </div>
+            <div type="canto" n="11" met="jagaddhita">
+                <note type="prosody">| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓ [23] [ed: ragakusuma]</note>
+                <lg n="1">
+                    <l n="a">rāmyārūm kahaḍaṅ kapāt lakuniran vahuvahu katiban javuh pisan</l>
+                    <l n="b">vahv āron səminiṅ tṛṇāṅkura latākiris asəmu hijonya kābunan</l>
+                    <l n="c">vahv aṅluṅ sakilan gaḍuṅnika lavan katirah aṅurukəl suṅutnika</l>
+                    <l n="d">aṅhiṅ kəmbaṅ ikaṅ mənur mvaṅ asanāṅruhuni ri pasəkarnikaṅ vuṅū</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">rəmrəm traṅ manisihnisih vahu mayat javuh ika malilaṅ kapāvanan</l>
+                    <l n="b">gəntər dohnya ləyəp tunenaṅənaṅən vahu lumarap ikaṅ ṭaṭit ləṅit</l>
+                    <l n="c">lumrādrəs mapalayvan iṅ gagana meghanika silih alintaṅ iṅ laṅit</l>
+                    <l n="d">məṇḍuṅməṇḍuṅ adoh riris ḍumavuh iṅ vukir aṅinaki cittaniṅ maṅə̄</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">tistis lampah irāṅavetan aṅalor tan agəlis aṅadəg sireṅ hənu</l>
+                    <l n="b">ləṅləṅ deni gərəhnikāmisiki karṇanira kadi makon manoliha</l>
+                    <l n="c">ṅkā maṇḍəg sira tan vavaṅ lumaku denya kadi pasayut iṅ haneṅ jinəm</l>
+                    <l n="d">marmāṅrəs tvas irāsəkəl dadi tumuṅkul aṅusapi ri luhnikaṅ mata</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">śokāṅlih kumətər tikaṅ hati baṅun tan apupula muvah tikuṅ manah</l>
+                    <l n="b">lāvan bhrāntani saṅ kināryakən ireka malara ri pasahnireṅ priya</l>
+                    <l n="c">yekāṅlūd ruməmək manahnira təkapniṅ aṅucapa kakūṅnya tan hana</l>
+                    <l n="d">aṅhiṅ luh kalavan taṅis juga siluṅluṅ ira yan iṅucap ndatan humuṅ</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">maṅkin citta nirāləməh dadi maluṅguh akəcap aṅəsah vuraṇḍuṅən</l>
+                    <l n="b">aṅlūd deniṅ aripnikaṅ mata pilih sira hinucap aṅāryakən ṭikā</l>
+                    <l n="c">lāvan trāsanikaṅ ləbū ya ta tiniṅhalan ikaṅ aṅuṅaṅ malar vruha</l>
+                    <l n="d">aṅhiṅ caṇḍinireka tambak inukir cinaviri mapucak patah muṅu</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">akveh kāri vimūrchitālara təkapnira kapihutaṅan karāsikan</l>
+                    <l n="b">bhrāntajñāna makiṅkiṅ osah aṅəsah rahina vəṅi taṅisnya tan pəgat</l>
+                    <l n="c">ṅūni hyun ika tan vəḍar katəmahan kavətu təkap i gə̄ṅnikaṅ lara</l>
+                    <l n="d">pə̄mpə̄man ri daləm pamə̄man i huvusnya ratəṅ ika paḍanya tan pahi</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">maṅkin kāṅənaṅən təkapnika ri tan ḍatəṅaniran asuṅ lare hati</l>
+                    <l n="b">aṅlampū pəjaheṅ tilam gatinikāruruba sapavəkasnireṅ karas</l>
+                    <l n="c">len tekaṅ humənəṅ maṅantyakəna liṅni kaḍatəṅan i saṅ mareṅ vukir</l>
+                    <l n="d">hetunyan pamuluṅmuluṅ kusuma paṅrəburəbunika muṅgaheṅ jinəm</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">vvantən bhakti mamuṣpa riṅ pratima ketaka sira ta vinimba tan vaneh</l>
+                    <l n="b">kəmbaṅ padmaśarīra gandha ri pipinya panirama ri luhnirantara</l>
+                    <l n="c">puṣpāvrāṅkən ikaṅ gəluṅ guduha tañjuṅ amiraga maghəṇṭa nopura</l>
+                    <l n="d">susv ahrit lurus iṅ təṅah ya pacarunya maṅucaraṇa sambat iṅ ṭikā</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">aṅgantaṅ punagîṅ tilam səkar aśoka rurubanika yan ḍatəṅ hələm</l>
+                    <l n="b">ramyārok ahuləs majənv i rakət iṅ maṅarəki huvus iṅ maveh səpah</l>
+                    <l n="c">lāvan yan humuvah kənaṅ tilam amaṅkvakəna kusuma jaṅga sampəta</l>
+                    <l n="d">len tekaṅ bakakak puḍak pamapasanya mabulakana piṅgir iṅ nadī.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">kāṅkən yajña manobhaveka panaṅisnika mabalik aveda sasmita</l>
+                    <l n="b">sə̄ṅniṅ candra mañar lumə̄ṅ ri hati kāṅkən apuyaniṅ ahoma nismara</l>
+                    <l n="c">lumrāvrā kukus iṅ pupur mələk avor vida ri jaja tibeṅ tapih suji</l>
+                    <l n="d">vvantən mūlya təmən sajinya vəkas iṅ kinəliran adhikeṅ pasaṅgaman</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">len taṅ yoga turū samādhinika rūpanira ya ta minuṣṭi riṅ hiḍəp</l>
+                    <l n="b">enak maṅgəh ikaṅ lulut manəmu sandhi sumurup amisarjaneṅ tutur</l>
+                    <l n="c">ātmārok si hurip məsat dadi turū təmahan ika maṅipy asaṅgama</l>
+                    <l n="d">sampun siddha sayogya riṅ pakasutan matəmu paḍa saharṣa sasmita</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">tan ṅeh yan caritan hiḍəpnira ri sambatan iṅ alara yan kināryakən</l>
+                    <l n="b">mvaṅ polahnika tan pəgat makapuput patinika yaya tan varəg lara</l>
+                    <l n="c">āpan jātinikaṅ manah juga tumūt yan ulurana katon tivasnika</l>
+                    <l n="d">ndan sūkṣmā humənəṅ surāṅaṅənaṅən hilaṅani malaniṅ daśendriya</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">śīghrā śīrṇa pətəṅnikaṅ hati dumehnira maṅaṅənaṅən lumampaha</l>
+                    <l n="b">samy ādan maṅadəg təlas lumaku tan hana maṅavara ramya tūt havan</l>
+                    <l n="c">məntas riṅ valahar matīrtha sira sampun arahup aradin tikuṅ hala</l>
+                    <l n="d">tūt mārga hana siṅgulan lәbalәban kamaṅi kapur avor pakis ḍaḍu.</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">garyaṅgaryaṅ ikaṅ tәgal kakacәman valikat upama vor kataṅkataṅ,</l>
+                    <l n="b">sәmbuṅ got kucubuṅ mavor pilapilū kutukutu kulurak lәpaṅ pahit,</l>
+                    <l n="c">paṅgil paṅgaga siṅkaban lavanlavan hana nanavidharā tapak liman,</l>
+                    <l n="d">lundāluṅ kalavan galiṅ lumalay iṅ vaduri lalavatan paḍāsinaṅ.</l>
+                </lg>
+            </div>
+            <div type="canto">
+                <lg n="1">
+                    <l n="a">sakaton paḍāmuhara rāmya ri havanira tan madoh dahat,</l>
+                    <l n="b">pagagan hañar binabadan pagәr ika rinurah tәkeṅ havan</l>
+                    <l n="c">inalih tәhәr sinariban hana tilas ika vetan iṅ pagәr</l>
+                    <l n="d">ya tinūt nirāṅinakinak duruṅ agәmәt apan havan hañar</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">maṅalor muvah katәmu mūlani havanira tan madoh dahat</l>
+                    <l n="b">sinamarsamar pagәr ikājajar amәnәr atūt havan magə̄ṅ</l>
+                    <l n="c">agәnәt ḍukutnya maradin sarisari avan iṅ tәkeṅ vukir,</l>
+                    <l n="d">galagah kidulnika tinunvan avurahanikaṅ manuk mibәr.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">malәsat valaṅnika manūt kukus amarәki riṅ sukәtsukәt,</l>
+                    <l n="b">garagat manamber aṅusī ḍaliḍali manucuk valaṅ kiṭik,</l>
+                    <l n="c">barabat barā mavurahan gulunika masavit valaṅ gayār,</l>
+                    <l n="d">umәnәṅ caṅaknya mavәdi raray aṅaruhi riṅ tәgal humuṅ.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">halivat sirerika sumәṅka ta lakunira tan madoh dahat,</l>
+                    <l n="b">pagagan sәḍәṅ vinulatan tanәmanika kabeh paḍāhijo,</l>
+                    <l n="c">jalureh lavan kacaṅ uris tәpinika masinaṅ bayәm suluh,</l>
+                    <l n="d">kamale valuh paḍa lumuṅ karavila mabiluṅkahan timun.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">jinajarjajar jalih ikaṅ jalu jura juvavut jabuṅ jarak,</l>
+                    <l n="b">cipakan hirәṅ muṣika tumbara kәsura jasun putih laja,</l>
+                    <l n="c">salarik jasun mirah avor pacar adilәm arok bayәm kakap,</l>
+                    <l n="d">sulasih kidulnya manisih patula paliṣa len kacaṅ hijo.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">kahalintaṅan tәkap irān panәmu tarukaniṅ siluksiluk,</l>
+                    <l n="b">mapabānyvan endah alaṅə̄ vuninika magulaṅgulaṅ pәtuṅ,</l>
+                    <l n="c">tinanәm tikaṅ kayu puriṅ jinajar i tәpiniṅ pagәrpagәr,</l>
+                    <l n="d">mayanāsinaṅ vuṅa talinya vuṅa vari mabāṅ hanāputih.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">maṅalor sirānәmu gәgәr śavayanikaṅ alas taluntalun,</l>
+                    <l n="b">ri lurah lәbak pasavahan bañunika maputih katiṅhalan,</l>
+                    <l n="c">masamīpa pə̄h pisaṅ alas nalikira hana riṅ juraṅjuraṅ,</l>
+                    <l n="d">halalәh tinolih alaṅə̄ maṅәḍapәḍap ikaṅ valīkaḍәp.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">maṅavetaniṅ gәgәr ikaṅ lakuni sira sumәṅka riṅ gunuṅ,</l>
+                    <l n="b">irikaṅ katon gәmәn alas vinulatan iṅuṅaṅ tikaṅ kidul,</l>
+                    <l n="c">daśadeśaniṅ nagara tan katәṅәr i paṅasutnikaṅ limut,</l>
+                    <l n="d">dinәlәṅ baṅun tan aratā lәmah ika kadi toyaniṅ tasik.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">patapan kapaṅgih alaṅə̄ havan ika titir olihiṅ mahas,</l>
+                    <l n="b">kabaṅәt kalinyan mamәluk lagi manucul i sandiniṅ tapih,</l>
+                    <l n="c">haradin puḍaknika bañar pinaraban anilib tәkeṅ kulәm,</l>
+                    <l n="d">vulakan pilih panulikan hana sәmi kadi layvaniṅ gәluṅ.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">hana tāhanaṅ katәmu riṅ havan alalәh aliṅgih iṅ vatu,</l>
+                    <l n="b">paṅadeśani ṅvaṅ umulat kәtәkәtәg ika mār sumamburat,</l>
+                    <l n="c">haṅagәm ḍuhuṅ lakinikā saṅ anakәbi ya tātapih sabuk,</l>
+                    <l n="d">kataraṅgul adbhuta tumon sira paḍa murәṅaṅ parәṅ madәg.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">alivatnirerika katon ta sukusukunikaṅ gunuṅ magə̄ṅ,</l>
+                    <l n="b">masәkar tikaṅ kayu palāśa kadi gunuṅ apuy katon murub,</l>
+                    <l n="c">hasanālәvas kadi hudan kanaka ḍumavuh iṅ lәmah marūm,</l>
+                    <l n="d">marirs rәbuk saha kilat vәlas harәp amulәt katon lumuṅ.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">mapasarpasar savaṅ ikā vukir amavā laṅə̄nya yan katon,</l>
+                    <l n="b">maḍasar gaḍuṅ mәnur avor katirah aravayan matūt havan,</l>
+                    <l n="c">matihaṅ lurukluruk aśoka dәlima mavade tahәn manis,</l>
+                    <l n="d">dagaṅanya sarvaphala yeki viphala vәḍәtan hanāñar.</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">pujiyan lәvih phalanikaṅ vukir avuni salakanya yan tasak,</l>
+                    <l n="b">hanamar mәtah vila lumutnya pisaṅ ika tumuṅkul iṅ havan,</l>
+                    <l n="c">kamiris ratәṅ kacapi juṅga masinaṅ atәguh taman rurū,</l>
+                    <l n="d">hana duryan aṅruhuriṅ ambavaṅ ika mapagәh paḍālurus.</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">sakaton tәkapnira baṅun tan anumata ruhurnikaṅ kayu,</l>
+                    <l n="b">hatugәl juraṅni kalukat bañunika lumәvih mareṅ kali,</l>
+                    <l n="c">pujiyan paḍāṅrәs ikanaṅ paraṅ apiṅit aroṅ dalәmnikā,</l>
+                    <l n="d">hamunah sәkar barat ikāṅhalani ri sapanāndhiṅiṅ vuṅu.</l>
+                </lg>
+                <lg n="15">
+                    <l n="a">tumurun sirerika katon lәbak ika hana simpaṅ iṅ hәnu,</l>
+                    <l n="b">humәnәṅ vatunya hulatәn ri lavas ika panambir iṅ kayu,</l>
+                    <l n="c">hatuhākәpuh vahu mataṅkil amasah i sarenikaṅ juraṅ,</l>
+                    <l n="d">pasaṅan lәlәh lәvas amaṅku kamatamata tuṅgakiṅ pәtuṅ.</l>
+                </lg>
+                <lg n="16">
+                    <l n="a">i samīpa vaṅkay iṅ apeki ta kunaṅ ahariṅ turuṅ lәvas,</l>
+                    <l n="b">hana valkalātulak alī kupina kayu lavan valuh tutub,</l>
+                    <l n="c">viku ganya saṅ mati pilih maṅaluśa tumurun sakeṅ vukir,</l>
+                    <l n="d">paṅadeśani ṅvaṅ umulat rāga sapi kulavuk hibәk cacah.</l>
+                </lg>
+                <lg n="17">
+                    <l n="a">hasamun hәnunya maṅalor ya ta havanira tūt alas magə̄ṅ,</l>
+                    <l n="b">asuṅәb sumə̄ṅ kayu rumambay avilәt arukәt lavan latā,</l>
+                    <l n="c">sirarānamun tapak ikaṅ kidaṅ adulur umaṅsul iṅ juraṅ,</l>
+                    <l n="d">muni tәp macanya hana riṅ sukәsukәt amarәki riṅ rәnәk.</l>
+                </lg>
+                <lg n="18">
+                    <l n="a">arәnәb hi sor kadi guhā tәkapiṅ aruṇa tan katon dahat,</l>
+                    <l n="b">haradin ta yaṅ ḍukut alit mati tәkap i patapnikaṅ sukәt,</l>
+                    <l n="c">kasilib kuciṅnya mamanek phala mamucak iliṅ vәsah tәpus,</l>
+                    <l n="d">kapitūt tәkeṅ vana lumuṅ maṅalaya manuduhnuduh tavaṅ.</l>
+                </lg>
+                <lg n="19">
+                    <l n="a">halivat nireka sumәṅkā ta lakunira rāmya tūt hiriṅ,</l>
+                    <l n="b">ri lәbaklәbaknya tan adoh vara kayu gumuliṅ lakar hañar,</l>
+                    <l n="c">mapaḍaṅ kidulnya babadan hana kadi patapan kacuntәnan,</l>
+                    <l n="d">muni poṅ kәpoṅ svaranikaṅ pamalumalu lavan tabaṅtabaṅ.</l>
+                </lg>
+                <lg n="20">
+                    <l n="a">ndā nihan kapaṅgih ikanaṅ patani lәvas avūk hatәpnikā,</l>
+                    <l n="b">vulәtan gigal katuruhan hana parab ika matra tan lәbur,</l>
+                    <l n="c">kakavin lutūr hana ta śeṣanika mapitәṅәt samarsamar,</l>
+                    <l n="d">suhunanya mesi ri lavasnya hana viku maṅambareṅ lәmah.</l>
+                </lg>
+                <lg n="21">
+                    <l n="a">ri havanya rāmya majajar kaniri kayu puriṅ tahәn manis,</l>
+                    <l n="b">kamuniṅ lavan kayu kuniṅ parajota marurub vәlas harәp</l>
+                    <l n="c">tinatā tinumpa tinapan vatu havan ika tūt hiriṅhiriṅ</l>
+                    <l n="d">tinalaṅnalaṅ bañunikā murus anәrusaniṅ juraṅjuraṅ</l>
+                </lg>
+            </div>
+            <div type="canto" n="13" met="girisa">
+                <note type="prosody">ᵕᵕᵕ| ᵕᵕᵕ|   |   ᵕ| ᵕᵕᵕ| ⏓ [16]</note>
+                <lg n="1">
+                    <l n="a">kalalu laku nirosən koṅaṅ taṅ patapan arūm</l>
+                    <l n="b">kagirigiri patapniṅ merv akveh makapuratuk</l>
+                    <l n="c">saviji tika maṅuṅgul tumpaṅnyādbhuta savəlas</l>
+                    <l n="d">pucak ika kadi teja hyaṅ sūryā vahu sumənə̄</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">pinatiga ya marəp pat pantinyāvəlar aratā</l>
+                    <l n="b">paḍa pinadu tinumpaṅ sakvehnyārəja hinəduk</l>
+                    <l n="c">ri natar ika mavəlālvātaṇḍəs mamarakata</l>
+                    <l n="d">paṅəḍapəḍap i tejanyan polah makagurilap.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">caracaranika rāmyāpan baprāhaləp aruhur</l>
+                    <l n="b">inukir inapi tekaṅ gopuntən rəcəp alaṅə̄</l>
+                    <l n="c">carita cinaritākram nyāsanyātulis atulis</l>
+                    <l n="d">ri pucak ika karəsrəs liṅgodbhāva cinarita</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">lalayan inukir arja ndan rāmāyaṇacarita</l>
+                    <l n="b">vray ika paḍa maṅaṅkat vuṅkal kral ta ya maṅusuṅ</l>
+                    <l n="c">hana ta kapi mamuṇḍut vuṅkal sevu ḍəpanika</l>
+                    <l n="d">pravara kapi hanūmān sugrīvāṅaliha gunuṅ</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">hana ta kapi matambak salvāniṅ pasir inusī</l>
+                    <l n="b">bañunika kadi molah mīnānūt ryak aṅicipir</l>
+                    <l n="c">aruñu‒ruñu kadi lvirniṅ byaktā vənaṅ alapən</l>
+                    <l n="d">təkap iṅ aṅukir āpan kīrṇa nyāsanika ləyəp.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">nṛpatisuta tumiṅhal riṅ lambaṅ ləṅəṅ alaləh</l>
+                    <l n="b">paṅikət ika hana vvaṅ miṅgat mvaṅ kalulut ika</l>
+                    <l n="c">rinasa‒rasa nireṅ tvas rəsrəsniṅ vahu hatəmu</l>
+                    <l n="d">sapada hana cinəṅgan cihnanyālara cinarik</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">dadi ta sira tumiṅhal riṅ paṇḍan səḍəṅ asəkar</l>
+                    <l n="b">puḍak ika maṅuḍoḍan līlā lvir vətis alaris</l>
+                    <l n="c">təṅah aṅəlih umambət lvirniṅ pādapa kasirir</l>
+                    <l n="d">sagəmuh i susuniṅ dyah taṅ nyuh danta pajapaja</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">iniṅətiṅət ira lvir tiṅkahniṅ puraṇa kəṭika</l>
+                    <l n="b">patapan arəcəp akveh nyāsanyāmuvuhi laṅə̄</l>
+                    <l n="c">niyatanika pasevan honya ṅ gopura maruhur</l>
+                    <l n="d">vvara ta vini ri saṇḍiṅniṅ kontən maṅucapucap.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">hana ta kili sake jro karvānama vasanika</l>
+                    <l n="b">lakunira gaja līlāken keṅis təkap iṅ aṅin</l>
+                    <l n="c">hayunira kadin aṅge rereh (sic?)niṅ mukha maluṅid</l>
+                    <l n="d">mata lumiriṅ añəpñəp yan polah təka riṅ alis</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">saviji makuniṅ arjāsusv ahrit səḍəṅ aləmən</l>
+                    <l n="b">təṅah alurus ajambət mambət solah ira vagəd</l>
+                    <l n="c">təka hararas aveh kūṅ sahyāsoṅ jamaṅ anipis</l>
+                    <l n="d">riṅa‒riṅanikuṅ ambək tan tuhvāni kaviratin</l>
+                </lg>
+            </div>
+            <div type="canto" n="14" met="kusumavilasitā">
+                <note type="prosody">ᵕᵕ|  ᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕᵕᵕ| ᵕ ᵕ|  ᵕ⏓ [21]</note>
+                <lg n="1">
+                    <l n="a">ramya parəṅ siran laku paḍākavaca mirah aṅambvakən təṅah</l>
+                    <l n="b">moga muṅup katon sadak irāputih anəlati śeṣaniṅ jaṭā</l>
+                    <l n="c">ndan minahā lukar‒lukar ikaṅ paṅisi tinigavarṇan iṅ putih</l>
+                    <l n="d">byaktani mūla‒mūlanira ṅūni kaka‒kaka sake daləm purī.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ṅkān dumunuṅ vulatnira rikaṅ yaśa kahanan i saṅ dhanañjaya</l>
+                    <l n="b">kāṇḍəg i heṅ vulatnira manon lituhayu kadi deva manmatha</l>
+                    <l n="c">meraṅ ikaṅ manah kadaluruṅ lakunira ya hetuniṅ mara</l>
+                    <l n="d">sampət irānaput‒naputi gātrani susunira moga tan katon</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">ñər ta manah nireki vəkasan kadikadi hana liṅsyaniṅ hiḍəp</l>
+                    <l n="b">hetuniran paśabda hana keraṅ ira masəmu harṣa tan vəḍar</l>
+                    <l n="c">rūmni vuvus nirāsəgə‒səgəh tuna‒tuna rasa tan təkeṅ hati</l>
+                    <l n="d">ndan ri halisnikan kadi kilat ri mata katəmu deniṅ aṅrəṅə̄</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">marma vuvusnira mpu kili yan sira kadi hana cihnaniṅ vruha</l>
+                    <l n="b">ndan paḍa meraṅ an vulat i saṅ vahu‒vahu təka riṅ vanāśrama</l>
+                    <l n="c">byakta bhaṭāra manmatha savaṅ paja‒pajanira saṅ hañar ḍatəṅ</l>
+                    <l n="d">ndan kadi buddhiniṅ lumihat iṅ haləsəs ika manah nire daləm</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">byakta saṅ arjuneki ri hiḍəpnira ri hati nihan paṅavruha</l>
+                    <l n="b">rūpa lavan laras mvaṅ ikanaṅ makuṭa kavaca ratna taṅkulak</l>
+                    <l n="c">lāvan ikaṅ manis ya panəṅərnira kadi madhu yan vinəṅyakən</l>
+                    <l n="d">hetuniran patakvan irikaṅ parananira mataṅniran ḍatəṅ</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">somya vuvus narendra mavalokana mavarah i don iran ḍatəṅ</l>
+                    <note>[arjuna]</note>
+                    <l n="b">“mahyun atīrtha riṅ vukir ameta patapana maṅiṣṭhy anugraha</l>
+                    <l n="c">“ātma‒śarīraśoṣaṇa gəgə̄n ranak ira ya ta hetuniṅ marā</l>
+                    <l n="d">pājar irāmanis duga‒dugāṅinaki ri sira devatā kili</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">“ndah varahən ranaknira ri saṅ pinakaguru haneṅ vanāśrama</l>
+                    <l n="b">“lāvan ikaṅ vanāśrama ṅaranya ya ta pavarahe ṅhulun təmən</l>
+                    <l n="c">liṅ nṛpaputra mojar i siraṅ kili dadi mavarah satorasih</l>
+                    <note>[kili, “female ascetic”]</note>
+                    <l n="d">sojar ire narendrasuta: “yeki kari vanavati prakaśita</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">“mvaṅ sira saṅ maṅanti pinakādiniṅ anaruka nora len vaneh</l>
+                    <l n="b">“śukla pavitra riṅ brata namaskara ṅaran ira saṅ mahāyanī</l>
+                    <l n="c">rājavadhū kamūlan ira ṅūni tuhu‒tuhu mahāgave tapa</l>
+                    <l n="d">yeka dumehnikaṅ patapan adbhuta kadi puraniṅ surāpsarī.”</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">maṅkana liṅnira mpu kili saṅ saviji sira ta keməṅan lara</l>
+                    <l n="b">meraṅ ikaṅ manah ya ta nimittaniran ahaliṅan duniṅ saka</l>
+                    <l n="c">ndan hana ganya polah ira ṅūni ri səḍəṅ ira ṅanti riṅ puri</l>
+                    <l n="d">śeṣanikaṅ lulut kabalunan ya ta mətu kadi kasturîṅ tutuk</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">saṅ nṛpaputra yeka maṅucap sira saha guyu medəm aṅlare</l>
+                    <l n="b">gātranikaṅ payodhara maśeṣa ta ragət ika mātra tan ləbur</l>
+                    <l n="c">yeka sinindhi‒sindhinira yan təlas anulus (s)ireṅ kilīnira</l>
+                    <l n="d">ndan lumiriṅ midəm kadi mulat riṅ atapih apaciṅciṅ iṅ bañu</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">tan huniṅan raras‒raras i śabdanira kadi mahāgave lara</l>
+                    <l n="b">hetuniran parā tumama riṅ patapan i kahanan mahāyanī</l>
+                    <l n="c">denira devatā kili paḍāṅdulurakən i saṅ ārya phālguna</l>
+                    <l n="d">kagyat (t)a saṅ vatək viku kabeh tapa tapi kavəṅan tumon sira</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">ṅkāna rikaṅ pasevan ahaləp ya ta dunuṅan iran ginocara</l>
+                    <l n="b">saṅ rəṣi goravāṅhaḍaṅakən phala hana bañu muṅgu riṅ tavik</l>
+                    <l n="c">lan sərəh arja riṅ pamucaṅan kinajaṅan ahaləp lavan madhu</l>
+                    <l n="d">somya səgəh‒səgəh munivareṅ sira mataña rikaṅ prayojana</l>
+                </lg>
+            </div>
+            <div type="canto" n="15" met="vilāsinī (wiśvalalita)">
+                <note type="prosody">ᵕᵕᵕ/ ᵕᵕ/ ᵕᵕ/ ᵕᵕ/  ᵕᵕ/ ᵕ⏓ [17]</note>
+                <note>[munivara, “excellent sage,” here: mahāyanī]</note>
+                <lg n="1">
+                    <l n="a">“bapa mapa hetuniṅ nṛpati yan ḍatəṅ hiṅ acala</l>
+                    <l n="b">“aməṅ‒aməṅeṅ vanāśrama kunəṅ sabhāgya ta laki</l>
+                    <l n="c">“tapa‒tapa tan gənəp təmu tahun ṅhulun cumaṭaka</l>
+                    <l n="d">“manaruka tapva yan təmu kadharman iṅ kadi kita</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“kunaṅ i ḍatəṅ narendra lumavad rikaṅ vanavatī</l>
+                    <l n="b">“kadi phalaniṅ tapa (n) pinaran iṅ vvaṅ uttamaguṇa</l>
+                    <l n="c">“athava bhaṭāra śakra manurun kunəṅ kavəlasən</l>
+                    <l n="d">“riṅ atapa lot sahiṣṇu mamaṅan gaṅan satumuvuh”</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">vuvus ira saṅ yatīndra mavalokanāṅupaśama</l>
+                    <l n="b">nṛpasuta kepvan iṅ sahur apan ta duhkha virati</l>
+                    <l n="c">lara katikeka hetuni ḍatəṅniran paməṅ‒aməṅ</l>
+                    <l n="d">ya tika nimittaniṅ mavacanātərəh saha taṅis</l>
+                    <note>[arjuna]</note>
+                </lg>
+                <lg n="4">
+                    <l n="a">“praṇata ri jə̄ṅ munīndra huniṅan taṅisniṅ alara</l>
+                    <l n="b">“mavaraha ri kahīnan iki donya riṅ kadi sira</l>
+                    <l n="c">“karaṇa jugeka hetuni ḍatəṅ manəh munivara</l>
+                    <l n="d">“nṛpati yudhiṣṭhireka kəna bañcane dyutanika</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">“kanaka maṇik lavan pura təlas haneri pukulun</l>
+                    <l n="b">“ratu śata‒koraveśvara ya duṣṭa tan sipi‒sipi</l>
+                    <l n="c">“hana ri pakumbakan sira kabeh lavan munivara</l>
+                    <l n="d">“sira babuni ṅhulun sira tumūt kapāpa kaluṣa</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">“kunaṅ iki hetuniṅ təka rikiṅ vanāśrama giri</l>
+                    <l n="b">“inutus i pun yudhiṣṭhira mareṅ girīndraśikhara</l>
+                    <l n="c">“gumavaya siddhaniṅ tapa lavan bratekana gəgə̄n</l>
+                    <l n="d">“təhəra tan antukekana yadin ta yāṅanumatā</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">nahan ika liṅ narendra saha luh nirādrəs i pipi</l>
+                    <l n="b">paḍa ta kapiluh saṅ viku kabeh tumon kasih‒arəp</l>
+                    <l n="c">dadi sumahur ta saṅ rəṣi tumūt ta luhnira mijil</l>
+                    <l n="d">iraṅ i manah nireki dalihan musap sipat ira</l>
+                    <note>[munivara]</note>
+                </lg>
+                <lg n="8">
+                    <l n="a">“kunaṅ iki pājaraṅkva ri bapaṅku mevəh atika</l>
+                    <l n="b">“tulusa hayunya riṅ sukha mamuktya tan kahavarā</l>
+                    <l n="c">“kunaṅ iki jātiniṅ hala hajəṅ paḍeki katəmu</l>
+                    <l n="d">“hayuni tapanta ṅūni kasəlan halāhayu tumut</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">“mataṅ ika saṅ vatək viku paḍāharəp kaləpasən</l>
+                    <l n="b">“apan ikanaṅ gave hayu ṅaranya nora manulus</l>
+                    <l n="c">“hala hayuniṅ manah juga tumūt ta yāsili‒silih</l>
+                    <l n="d">“paḍa maṅalap titahnya kətikaṅ janānvam atuha</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">“kadi hana taṅ vvaṅ uttama vənaṅ vinastu ləpasa</l>
+                    <l n="b">“viku sira səṅgahən ləpasa maṅkin evəh atika</l>
+                    <l n="c">“ratu sira vastunən ləpasa maṅkin evəh atika</l>
+                    <l n="d">“yadin i patinta tan vənaṅ akun ləpasnya tuduhən</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">“kadi hana jāti nityaśa ṅaranya yāvat ahurip</l>
+                    <l n="b">“kadi hana tan kəneṅ mala ṅaranya yāvat ahurip</l>
+                    <l n="c">“kadi hananiṅ sinaṅśaya ṅaranya yāvat ahurip</l>
+                    <l n="d">“kadi hana tan kəne pati ṅaranya yāvat ahuri.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">. “paməṅ‒aməṅan tikaṅ sukha bhinukti yan vruh atika</l>
+                    <l n="b">“paməṅ‒aməṅan tikaṅ guṇa makarma ya vruh atika</l>
+                    <l n="c">“paməṅ‒aməṅan tikaṅ nita pasaṅ yadin vruh atika</l>
+                    <l n="d">“paməṅ‒aməṅan tikaṅ gati śarīra yan vruh atika</l>
+                </lg>
+            </div>
+            <div type="canto" n="16" met="citrālaya">
+                <note type="prosody">ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ| ⏓ [13]</note>
+                <lg n="1">
+                    <l n="a">“kavikun karatun pva ya paḍa mamusuh</l>
+                    <l n="b">“kavi vāni marūpa maguṇa mapirak</l>
+                    <l n="c">“hina dīna tivas yaya juga hamusuh</l>
+                    <l n="d">“añale cinale ya maṅucap inucap.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“sira saṅ karakət kapaṅanan irika</l>
+                    <l n="b">“hala tan katutur təmahan ika tivas</l>
+                    <l n="c">“si rajah si tamah təka ta ya maṅusī</l>
+                    <l n="d">“mamilət manəvək ri hati ya sumaput</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“nṛpa dharmasuta pva sira karakətan</l>
+                    <l n="b">“irikaṅ kabisan guṇanira manita</l>
+                    <l n="c">“təmahan ya binañcana kinira‒kira</l>
+                    <l n="d">“inupāya pinet ri kahilaṅan ira</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“puput iṅ naya mevəh atika karatun</l>
+                    <l n="b">“vəkas iṅ guṇa sarvagata kira‒kira</l>
+                    <l n="c">“sira saṅ marəkeki pilihana təhər</l>
+                    <l n="d">“tiga saṅ vvaṅ inuttama marəka təmən” </l>
+                </lg>
+                <lg n="5">
+                    <l n="a">adavān vuvusən vacana munivara</l>
+                    <l n="b">sumurup ta ṅ aditya pətəṅ avun‒avun</l>
+                    <l n="c">atəhər ta narendra makuləm i daləm</l>
+                    <l n="d">ndan ikaṅ mata tan kəjəp aṅaṅən‒aṅən</l>
+                </lg>
+            </div>
+            <div type="canto" n="17" met="jagaddhita">
+                <note type="prosody">/ ᵕᵕ/ ᵕ ᵕ/ ᵕᵕ / ᵕᵕᵕ/ ᵕᵕᵕ/  ᵕ / ᵕ⏓ [23]</note>
+                <lg n="1">
+                    <l n="a">sore kāla ḍavuh pisan siran amaṅkuk aṅaraṅ aṅəsah vimūrchita</l>
+                    <l n="b">lvir mukṣā humənəṅ maṅə̄ lalin aturva hiḍəp ira ri śirṇaniṅ hati</l>
+                    <l n="c">kāṅən dohnikaṅ uṅsirən lavan i tan kavənaṅa paṅutus yudhiṣṭhira</l>
+                    <l n="d">yāṅdagdhātəmahan taṅis kadi taṅisniṅ inalapan i tapvan iṅ gati </l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ləṅləṅ saṅ nṛpaputra riṅ tvas ira kepvan iṅ ulaha savaṅ kuraṅ tutur</l>
+                    <l n="b">aṅruṅkuk makəmul carik maṅiḍukus tan aharip apan ardha kātisan</l>
+                    <l n="c">ñəpñəp taṅ manah aṅgagap turida tan katəmu rasanikaṅ prayojana</l>
+                    <l n="d">deniṅ bhrānta kunaṅ dumehnira mataṅhi maṅəm‒aṅən i ṅelnikaṅ dadi</l>
+                    <note>[arjuna] </note>
+                </lg>
+                <lg n="3">
+                    <l n="a">“yan vikvāku mapakṣa kəmbaṅ irikaṅ havan amarəki piṅgir iṅ nadī</l>
+                    <l n="b">“bhuktin tuṣṭaniṅ āṅaras pipi tamolaha riṅ asana kəmbaṅeṅ rahi</l>
+                    <l n="c">“tan tūteṅ vana śūnya mūḍhaniṅ aśoka ləvas inulah iṅ sadāgati</l>
+                    <l n="d">“enak ṅvaṅ maluyeṅ sabhānamun aṅuṅsira vəkas i liriṅniṅ aṅdyahi </l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“lāvan bāyu mapakṣan anglwaṅ iṅ iruṅ kahanan ika ri sandhiniṅ smṛti</l>
+                    <l n="b">“mvaṅ muṅgv iṅ təṅah iṅ vvaṅ adyah aməḍar tapih aṅəlih i kālaniṅ huyaṅ</l>
+                    <l n="c">“yan riṅ strī maṅisis gəluṅ katitihan kahariṅətən i sampun iṅ gati</l>
+                    <l n="d">“ṅhiṅ yan və̄tu riṅ ambəkan təmahanaṅkva ri səḍəṅ ika kenakan smarā </l>
+                </lg>
+                <lg n="5">
+                    <l n="a">liṅ saṅ pāṇḍusute daləm hati taṅeh laranira caritan davākəna</l>
+                    <l n="b">ñəpñəp rəp humənəṅ maṅardhana sireṅ hati vəkasan avā tikaṅ manah</l>
+                    <l n="c">kāṅən teki pakon munīndra ri siran gumavayakən siddhaniṅ tapa</l>
+                    <l n="d">yekānīrṇakəna lyan iṅ viṣaya hetuniran atutur iṅ prayojana </l>
+                </lg>
+                <lg n="6">
+                    <l n="a">tatkālā humənəṅ sireki caritan surakili saṅ inuttameṅ hajəṅ</l>
+                    <l n="b">saṅ tuṅgal marikāṅaran gulavuluh saṅ araras inucap sakeṅ purī</l>
+                    <l n="c">ṅkā tekin hana śeṣaniṅ turida harṣanira ri siraṅ ārya phālguna</l>
+                    <l n="d">ṅūnî jro puri rakva yan sira sarāga saturida kakumbaṅeṅ jinəm</l>
+                </lg>
+            </div>
+            <div type="canto" n="18" met="jagadnatha (jagatnatha)">
+                <note type="prosody">ᵕ ᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓ [23]</note>
+                <lg n="1">
+                    <l n="a">təṅah vəṅi səḍəṅ kəjəpni paturūnira para kili riṅ bale təṅah</l>
+                    <l n="b">lavan tapa tapî pasevan atunāguru kaki haturū haneṅ ləmah</l>
+                    <l n="c">dudū taṅ aturū hi sornikaṅ aśoka tapa tapi lukar tapihnika</l>
+                    <l n="d">katon kadi rare vaneh kadi siran vahu pinaras apan hañar viku </l>
+                </lg>
+                <lg n="2">
+                    <l n="a">sira mpu kili mār tikaṅ hati vavaṅ təṅah aṅəlih apan kakiṅkiṅan</l>
+                    <l n="b">ya hetunira yan lumampah aṅamər laku ḍatəṅa ri saṅ nṛpātmaja</l>
+                    <l n="c">anūt pətəṅ ikaṅ gaḍuṅ lumalay iṅ tarətəpan aṅadəg sirerika</l>
+                    <l n="d">tapihnira vavaṅ luse ri paṅagəmnira sərəh avalun jamaṅ kuniṅ </l>
+                </lg>
+                <lg n="3">
+                    <l n="a">tan eraṅ ucapən yadin hana kumavruhana ri sira yan maliṅ raras</l>
+                    <l n="b">savetni paməvəhnikaṅ smara tan olya kavuyuṅana de mahāyanī</l>
+                    <l n="c">ri tan kavənaṅ iṅ lulut sinapihan puhara lara sumə̄k təke hati</l>
+                    <l n="d">ya hetuni jamaṅ nire kaviratin tamah iran akukap kakandəlan </l>
+                </lg>
+                <lg n="4">
+                    <l n="a">tumindak i samīpaniṅ saka matūt hiriṅan i kahanan dhanañjaya</l>
+                    <l n="b">rasāməkula deni kuṅnira vavaṅ marək asəmək anūṅakən səḍah</l>
+                    <l n="c">dhanañjaya vulat nirāciṅaṅ apan hana kavədi tumiṅhale sira</l>
+                    <l n="d">nimittanira tan humuṅ mavacanātəhər aṅisər apan parək dahat</l>
+                    <note>[arjuna] </note>
+                </lg>
+                <lg n="5">
+                    <l n="a">“nini syapa siran ḍatəṅ ri kahanan ra putu sira baṅun mamañcana</l>
+                    <l n="b">“huvus hila‒hilā marək ri gati saṅhulun ataki‒takî tapa brata</l>
+                    <l n="c">“paran karika piṅgiṅa mpu kili riṅ kadi sira viku śukla uttama</l>
+                    <l n="d">“sakeṅ viku mabhārya kevəh iṅ ulah bari‒bari manalimpət iṅ hiḍəp.” </l>
+                </lg>
+                <lg n="6">
+                    <l n="a">na liṅ nṛpatiputra yeki sumahur ta saṅ ahayu savaṅ kilîṅ tulis</l>
+                    <note>[kili]</note>
+                    <l n="b">“tuhanku laki sugya tan vruha kite ṅhulun iki kavulanta ṅūny aku</l>
+                    <l n="c">“lanā pinakāsih iṅ kadi kitānulus araras arūm priyambada</l>
+                    <l n="d">“ṅhulun ta tiki kesiniṅ nagara lāgi pinakasuvəṅ iṅ kinonəṅan” </l>
+                </lg>
+                <lg n="7">
+                    <l n="a">raras‒raras i raśmi‒raśminira saṅ kili mavacana mār təkeṅ hati</l>
+                    <l n="b">mapolaha maśabda tuṅtuṅ iṅ alisnira ta karika nūtakən liriṅ</l>
+                    <l n="c">mrəṅəs luṅid i dūnikaṅ mata rasāməgatakəna hatin kapaṇḍəṅa</l>
+                    <l n="d">tuhun gula vuluh panəṅgah ira saṅ viku ri siran anorakən kilaṅ </l>
+                </lg>
+                <lg n="8">
+                    <l n="a">samaṅkana nirūpa saṅ kili savaṅ səkar asana tibā sakeṅ gəluṅ</l>
+                    <l n="b">kusut‒kusut ikaṅ payodharan inaṅsvakən iran umarək nṛpātmaja</l>
+                    <l n="c">narendrasuta heva miṅsər aṅusap ləṅən ira ri pagəhnikaṅ manah</l>
+                    <l n="d">ya hetuni vuvus nirāṅənək‒ənək mapitutur ikaṅ enakeṅ sarāt</l>
+                    <note>[arjuna] </note>
+                </lg>
+                <lg n="9">
+                    <l n="a">“nini hyaṅ aparan ta hetuniṅ amuṅpaṅa turida katon tivasnika</l>
+                    <l n="b">“paran karika paṅhiḍəp tanayaniṅ kadi sira viku yan pamet hala</l>
+                    <l n="c">“katuṅgalan ikaṅ tinuṅgalakən iṅ hiḍəp inayu sinimpən iṅ manah</l>
+                    <l n="d">“ya tānulus anəmvakən kaviratin tapanira tuməmu ṅ prayojana </l>
+                </lg>
+                <lg n="10">
+                    <l n="a">“sahiṣṇu muditā kasāttvikan ikaṅ pamunah ira ri gə̄ṅnikaṅ tamah</l>
+                    <l n="b">“si metri karuṇā kaśāntananikaṅ panapunira ri śaktiniṅ rajah</l>
+                    <l n="c">“huvus pva ya hilaṅ katon ta kəḍap iṅ manəmu‒nəmu katəmvan iṅ hilaṅ</l>
+                    <l n="d">“hananta ya hananta riṅ hana haneṅ kavənaṅan i vənaṅ ndatan vənaṅ </l>
+                </lg>
+                <lg n="11">
+                    <l n="a">“kaliṅan ika mevəh iṅ viku ṅaranya taki‒takin ikanānuṅ enaka</l>
+                    <l n="b">“mataṅnya paḍəmən tikaṅ tamah agə̄ṅ ri hati gəsəṅaneṅ adhidrava</l>
+                    <l n="c">“rajah ta viṣa bhaṣmi dohakən i liṅganiṅ acala kumambaṅeṅ pasir</l>
+                    <l n="d">“dalañcaṅ anipis hañut ri vəkas iṅ kilat aṅəḍap i mehaniṅ vəṅi” </l>
+                </lg>
+                <lg n="12">
+                    <l n="a">na liṅnira saṅ ārya phālguna maśabda mapitutur i sandhiniṅ licin</l>
+                    <l n="b">sira mpu kili kasrəpan humənəṅ epu laranira haluṅsuran taṅis</l>
+                    <l n="c">jamaṅnira kuniṅ mələs təkap i luhniran aṅapitu kālaniṅ kapat</l>
+                    <l n="d">kunaṅ hiḍəp ire daləm hati samātran aṅinakana vṛtta kampəta</l>
+                </lg>
+            </div>
+            <div type="canto" n="19" met="navaharṣa">
+                <note type="prosody">⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏓ [19]</note>
+                <lg n="1">
+                    <l n="a">vəkasan sira saṅ kili mavacana somya riṅ ambək arūm</l>
+                    <note>[kili]</note>
+                    <l n="b">“laki saṅ nṛpaputra tuhu‒tuhu vuvusta təmən rahayu</l>
+                    <l n="c">“ra tapîki katuhvan iṅ ulah amurug təkap iṅ viṣaya</l>
+                    <l n="d">“vulaṅun gatini ṅhulun iki bapa deni vəlasku tuhan”</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">adavān caritan sira kili paṅucapnira vah panaṅis</l>
+                    <l n="b">praṇa bhakti maṅañjali ta sira ri saṅ nṛpa pāṇḍusuta</l>
+                    <l n="c">atəhər maṅadəg sira humənəṅ i dāyaniran muliha</l>
+                    <l n="d">i larisnira tan vavaṅ agəlis anolih asoṅ lara sih</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">irika ta sirā nṛpasuta humәnәṅ kadi candra malek</l>
+                    <l n="b">sumirir taṅ anila kusuma tumibā taṅ aśoka marūm</l>
+                    <l n="c">muni taṅ taḍaharśa kadi manaṅis әñjuh apet karuṇa</l>
+                    <l n="d">paṅuhuhni kuvoṅ paḍa humuni manuknya hanan panito</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">rahina pva mijil hyaṅ aruṇa sumәnə̄ kadi citta lumə̄ṅ</l>
+                    <l n="b">irikān paṅadәg nṛpasuta mapuyәṅeṅ sira tan paturū</l>
+                    <l n="c">ya dumehnira tan vavaṅ umarәk i deni kәsәlniṅ avak</l>
+                    <l n="d">marahup sakarәṅ sira maśuci mamudra viśeṣa vidhi</l>
+                </lg>
+            </div>
+            <div type="canto" n="20" met="citrālaya">
+                <note type="prosody">⏑ ⏑ | ⏑ ⏑ | ᵕᵕᵕ| ᵕᵕᵕ| ⏓ [13]</note>
+                <lg n="1">
+                    <l n="a">mamuhun ta saṅ ārya tәlas iṅ arahup,</l>
+                    <l n="b">ri mahāmuni kapva kavәnaṅ amulat,</l>
+                    <l n="c">umijil sira riṅ gupura tәlas adoh,</l>
+                    <l n="d">ulih iṅ lumivat lalu tәka riṅ alas.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">prukutut muni riṅ paṅalayalayanan,</l>
+                    <l n="b">aṅukū dṛkukūnya muni masahuran,</l>
+                    <l n="c">paṅәtәrni putәrnya paḍa mavurahan,</l>
+                    <l n="d">hana len humibәr ya teka maṅaḍapaṅ.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">hana cukcak atindak i paṅ iṅ agaru,</l>
+                    <l n="b">anisik sinisik paḍa maṅariṅariṅ,</l>
+                    <l n="c">vudiniṅ tumiliṅ mamarәki pahatan,</l>
+                    <l n="d">katapaṅ ya mapaṅ kadi ta tinatapan.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">lvah agə̄ṅ madalәm katәmu tәkap ira,</l>
+                    <l n="b">umilī mahәniṅ bañunika mabhiru,</l>
+                    <l n="c">ri tәpinya lumutlumut ika mahijo,</l>
+                    <l n="d">padulurni pakuṅnya mamarәki vatu.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">hana mīna mahosya ri tәṅah ahayū,</l>
+                    <l n="b">putihan gumivaṅ gilap ika maputih,</l>
+                    <l n="c">kadi teja sәnə̄nya lumarap ahijo,</l>
+                    <l n="d">paṅacarni lajarnya mamarәki paruṅ.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">ri prәḍuṅnya midәr bañunika malivuṅ,</l>
+                    <l n="b">ri kәḍuṅnya mucul dәlәg ika maṅaluṅ,</l>
+                    <l n="c">tumәluṅ dumudul vuluh ika ri tәpi,</l>
+                    <l n="d">ri parasnya susuhnya maṅavat adulur.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">ri hiriṅnya pacar gunuṅ abaṅ aputih,</l>
+                    <l n="b">hana ciṇḍaga siṅgugu pakis aṅuvuṅ,</l>
+                    <l n="c">kasine makuniṅ vvah ika kunaṅunaṅ,</l>
+                    <l n="d">kadi kupyaragāyuta paḍa sumәnə̄.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">saruni riya mas kadi suvәṅ araras,</l>
+                    <l n="b">hana saṅga laṅit kuravara kamuniṅ,</l>
+                    <l n="c">paḍa mәmbaṅ i sornya vulakan ahәniṅ,</l>
+                    <l n="d">irika ta saṅ ārya marahup atәhәr.</l>
+                </lg>
+            </div>
+            <div type="canto" n="21" met="kusumavicitra">
+                <note type="prosody"> ᵕᵕᵕ| ᵕ | ᵕᵕᵕ| ᵕ⏓ [12]</note>
+                <lg n="1">
+                    <l n="a">atha ri huvusniṅ marahup atīrtha</l>
+                    <l n="b">lumaku sirātūt ri tәpinikaṅ lvah</l>
+                    <l n="c">jaha kayu paṅgaṅ ri tәpinikaṅ lvah</l>
+                    <l n="d">paḍa pukapūrug lәmah ika runtuh</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">bañunika manduk ri tәpi kavaṅsul,</l>
+                    <l n="b">gumuruh anәmpuh maṅәnani vuṅkal,</l>
+                    <l n="c">makaparapal paṅniṅ asana kontal,</l>
+                    <l n="d">kahava tәkapniṅ bañu gunuṅ adrәs.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">hana bañu muñcar mәtu saka ri roṅ</l>
+                    <l n="b">sumirat anәmbur maṅadәg anuṅguh</l>
+                    <l n="c">tumәḍuṅ i roṅniṅ juraṅ aparaṅ groṅ</l>
+                    <l n="d">muni gumuruṅguṅ paraṅ ika sumoṅ</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">kalalu kapaṅgih lakunira sәṅkan</l>
+                    <l n="b">kayunika mәmbaṅ paḍa ya makәmbaṅ</l>
+                    <l n="c">paḍa ya makumbaṅ muni makabrәṅə̄ṅ</l>
+                    <l n="d">hana muni riṅ paṅ manuk ika gәṇḍeṅ</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">jalada ya mәṇḍuṅ sumahab atimbun</l>
+                    <l n="b">gumuruh agәntәr patәr yeka ika medi</l>
+                    <l n="c">riṅ alavas onәṅ kadi kәna rāga</l>
+                    <l n="d">kadi ta ya masyaṅ hamisiki karṇa</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">nṛpatisutāṅlih lumaku kalәsvan</l>
+                    <l n="b">maṅadәg i sorniṅ kayu manis arja</l>
+                    <l n="c">haṅin ika madrәs kilat ika matruh</l>
+                    <l n="d">madulur alisyus camara muni syok</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">kalalu lumampah təka riṅ alas gə̄ṅ</l>
+                    <l n="b">vahu təka moghaṅ riris alit akrəp</l>
+                    <l n="c">narapati maṅkin lumaku tan aglis</l>
+                    <l n="d">payuṅira roniṅ kamumu ya malvā</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">təka ya ta sumyuk hudan ika madrəs</l>
+                    <l n="b">gumuruh agəntər kadi ta ya guntur</l>
+                    <l n="c">gəlap ika makrəp muni ya guməntər</l>
+                    <l n="d">kadi vəṅi taṅ rāt kalimunan andha</l>
+                </lg>
+            </div>
+            <div type="canto" n="22" met="atyaṣṭ group (?)">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕ ᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [16] [pṛtivitala ed]</note>
+                <lg n="1">
+                    <l n="a">narendra kumətər manambəṅ irikaṅ variṅin magə̄ṅ</l>
+                    <l n="b">təhər makiḍukus kəmulnira mələs vəḍihan putih</l>
+                    <l n="c">linūd kinasut iṅ limut kadi kukus rumakət matis</l>
+                    <l n="d">rəsəp sumusup iṅ kulit kadi kanin ya təke hati</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">narendra humənəṅ tatan vruh irikaṅ paran īkihən</l>
+                    <l n="b">kadi pva pəjaheṅ tahən juga hiḍəpnira kapyuhan</l>
+                    <l n="c">lavan ta kumusuhnikaṅ bañu matūt ləbak iṅ gunuṅ</l>
+                    <l n="d">bənərnya tuməḍun mareṅ juraṅ arəs maṅiris hati</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">lavan kasulayahnikaṅ kayu kabeh kapurug rəbah</l>
+                    <l n="b">rəmək ḍumavuh iṅ karaṅ kadi səpah təkap iṅ śilā</l>
+                    <l n="c">humuṅ ya gumuruh guməntər akətug təka riṅ laṅit</l>
+                    <l n="d">patəmpuh ikanaṅ śilā kadi kilat sumirat muru</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">panasnya valiraṅ kukusnya sumələk təka miṇḍuhur</l>
+                    <l n="b">gəmut sahananiṅ tahən kadi tatal humilī katūt</l>
+                    <l n="c">linətnya malulun lavan kayu magə̄ṅ madulur vatu</l>
+                    <l n="d">maṅut ya ta tumūt lajarnya kapələk mati riṅ kəḍuṅ</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">samantaji tikaṅ hudan mari lavan pətəṅ iṅ laṅit</l>
+                    <l n="b">mavā sahananiṅ vukir paḍa katon kayuniṅ vana</l>
+                    <l n="c">asāt mari humuṅ tikaṅ lvah adaləm təka riṅ kəḍuṅ</l>
+                    <l n="d">tuhun kadi rinəkrəkan sukət ikaṅ kayu tan rəbah</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">hanan kaḍəḍətan linət sahananiṅ vulakan pəjah</l>
+                    <l n="b">ikaṅ paraṅ aroṅ asāt dadi hunur təkap iṅ linət</l>
+                    <l n="c">huraṅnya hana śeṣa tan pəjah aneṅ rəṅat iṅ paraṅ</l>
+                    <l n="d">susuhnya kasəlat ri səlvaṅ ikanaṅ vatu len paras</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">vaneh vvara vataṅ kapəṇḍəm irikaṅ lagəḍū samar</l>
+                    <l n="b">tuhun kadi karaṅ vvad iṅ kayu magə̄ṅ maṅasut śilā</l>
+                    <l n="c">hanan kasaratan vatunya kasəlap ri paṅ iṅ kayu</l>
+                    <l n="d">cacal kulit ikaṅ tahən kagutuk vatu len paras</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">narendra maṅadəg madan lumaku mār tikanaṅ suku</l>
+                    <l n="b">taṅan kamakakən gigir valikatən kumayaṅ matīs</l>
+                    <l n="c">tuvin kəsəl ikaṅ pupū ya ta dumehnira yan malon</l>
+                    <l n="d">maṅinkin atəkən‒təkən sira təhər makəmul mələs</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">vuluh kadi galah rəbah sinubud iṅ prarupək vani</l>
+                    <l n="b">katūt sinusupan təkapnikaṅ aṅin sahasāṅrakut</l>
+                    <l n="c">pətuṅnya lumayah gəsiṅnya kaḍavut gumilir sivak</l>
+                    <l n="d">tugəl vataṅ ikāḍapur kajulinah papah iṅ hano</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">hulunya kababad sukunya kapipis təkap iṅ vatu</l>
+                    <l n="b">kidaṅnya malayū luvaknya manaṅis kalavan cucur</l>
+                    <l n="c">kuvoṅnya humənəṅ kagə̄m kakətəran svaraniṅ valik</l>
+                    <l n="d">manuknya hana cəb luput svaranikā hana riṅ tahən</l>
+                </lg>
+            </div>
+            <div type="canto" n="23" met="[tvaritagati]">
+                <lg n="1">
+                    <l n="a">atha halivat nṛpati suta,</l>
+                    <l n="b">katәmu tikaṅ vana kusuma,</l>
+                    <l n="c">papupulaniṅ kusuma matāp,</l>
+                    <l n="d">paḍa manәḍәṅ kusuma marūm,</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ravi sumurup laṅit akucәm,</l>
+                    <l n="b">pәtәṅ alimut maṅadahada,</l>
+                    <l n="c">kumucup ikaṅ sәkar aluru,</l>
+                    <l n="d">tәkapiṅ әbun rumarab atis,</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">kayu mavәnәs mari kumәñar,</l>
+                    <l n="b">tәkapiṅ aṅin sumirir alon,</l>
+                    <l n="c">asәpi tikaṅ vana kusuma,</l>
+                    <l n="d">manuk aturū mari ya muni.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">ri vijil ikaṅ vulan avәlu,</l>
+                    <l n="b">manuluhi riṅ bhuvana kabeh,</l>
+                    <l n="c">vahu mapaḍaṅ tikanaṅ alas,</l>
+                    <l n="d">gunuṅ aruhur vahu ya katon.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">nṛpati maṅel sira manusup,</l>
+                    <l n="b">ḍatәṅ i tәṅahnikanaṅ alas,</l>
+                    <l n="c">ri vaṅinikaṅ kusuma katon,</l>
+                    <l n="d">paḍa tan avas katuduhana.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">sahananikaṅ kayu majajar,</l>
+                    <l n="b">iniṅәtiṅәt kadi ta vayaṅ</l>
+                    <l n="c">gagana mavā kәlir ikahәn,</l>
+                    <l n="d">haṅin aṅudaṅ maṅulahakәn,</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">kayu matatā paḍa mapupul,</l>
+                    <l n="b">hana mamisah kadi maturū,</l>
+                    <l n="c">kayu malurus paḍa maṅadәg,</l>
+                    <l n="d">hana gumuliṅ kadi sumare.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">vatu humәnәṅ kadi kavәṅan,</l>
+                    <l n="b">mәnur aputih kadi muriṅis,</l>
+                    <l n="c">sәkar amirah kadi gumuyu,</l>
+                    <l n="d">camara humuṅ kadi masurak.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">vataṅ aguliṅ kadi maharip,</l>
+                    <l n="b">kayu mamilәt kadi mamәluk,</l>
+                    <l n="c">kadi kinәsat kulit ikanaṅ,</l>
+                    <l n="d">kayu malәṅis paḍa katisan.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">iniṅәtiṅәt mamuhara kuṅ,</l>
+                    <l n="b">kayunikanaṅ vana kusuma,</l>
+                    <l n="c">dadi maṅadәg sira sakarәṅ,</l>
+                    <l n="d">ri pәtәṅ ikaṅ kayu rumahab.</l>
+                </lg>
+            </div>
+            <div type="canto" n="24" met="ratoddhata">
+                <lg n="1">
+                    <l n="a">saṅ hyaṅ candra mavā sira manәṅah,</l>
+                    <l n="b">maṅkin sə̄k tikanaṅ kusuma katon,</l>
+                    <l n="c">aṅhiṅ pakṣi munīṅ kayu maruhur,</l>
+                    <l n="d">vūt būt ḍok muni riṅ kuvuṅ abәluk.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">rәsrәsniṅn karәṅə̄ mamәdimәdi,</l>
+                    <l n="b">pyakpyakniṅ kamanak muni madulur,</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ṭokṭokan hana kiñjәṅ avurahan,</l>
+                    <l n="b">ṅūk ṅūk ṅok svaraniṅ kuvuk abәluk.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">sakvehniṅ sakaton mamuhara rәs,</l>
+                    <l n="b">paṇḍan voṅ binabad mati magәlar,</l>
+                    <l n="c">rantan rambat ikaṅ gaḍuṅ umure,</l>
+                    <l n="d">baṅbaṅniṅ katirah paḍa ravayan.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">kandәl tvasnya tumūt milu kaḍavut,</l>
+                    <l n="b">kumbaṅ maṅhrәṅ i duryanika mati,</l>
+                    <l n="c">vokvok jaṅgut i saṅ ṛsi rumave,</l>
+                    <l n="d">kaknyāṅanti ri paṅnikaṅ asana.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">suṅsaṅ vok variṅinya pәtәṅ ri sor,</l>
+                    <l n="b">kalvaṅ rambat ikāṅgәlari tumāp,</l>
+                    <l n="c">lvir pәṇḍәm vvad ikaṅ kayu suminaṅ,</l>
+                    <l n="d">mambə̄ gandhanikaṅ kusuma rurū.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">robrobniṅ camarākusak asikan,</l>
+                    <l n="b">tuṅgakniṅ maṅunәṅ hana sapupu,</l>
+                    <l n="c">bātbātniṅ kәkәbeәt maburu namuk,</l>
+                    <l n="d">kәmbaṅniṅ taravarṣa kadi taṅan.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">kamvāgan masәkar kadi banara,</l>
+                    <l n="b">rampal ron iṅ aśoka lumalayan,</l>
+                    <l n="c">haṅrәṅgәk sәminiṅ tahәn atuha,</l>
+                    <l n="d">priṅyākiṅ kumisik tәkapiṅ aṅin.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">malvā ronya malad taṅ ilatilat,</l>
+                    <l n="b">kayvāgə̄ṅ ḍumavaṅḍavaṅ aluhur,</l>
+                    <l n="c">raṅrə̄ lvirnika rakṣasa gumuruh,</l>
+                    <l n="d">molah lvir maṅigәl tәkapiṅ aṅin.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">valyāgə̄ṅ mamilәt makaramayan,</l>
+                    <l n="b">krūra lvir masavit makasalivәt,</l>
+                    <l n="c">taṅkil varṇa kaluṅkaluṅ anәṅah,</l>
+                    <l n="d">bə̄bə̄ṅkah paḍaniṅ valuh aputih.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">buṅbuṅniṅ pahatan makakalar,</l>
+                    <l n="b">sandiṅnyā pataraṅ gigir atәhәr,</l>
+                    <l n="c">grot grot grit svaraniṅ kayu masalit,</l>
+                    <l n="d">paṅnyārok kalavan kayu tahulan.</l>
+                </lg>
+            </div>
+            <div type="canto" n="25" met="mṛdukomala">
+                <note type="prosody">   | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]</note>
+                <lg n="1">
+                    <l n="a">tan ṅehniṅ sakaton paḍāmuhara rəs təkapnira manon</l>
+                    <l n="b">luṅhā lampah irāṅavetan aṅalor hatūt alas agə̄ṅ</l>
+                    <l n="c">ṅkāne kakrəpaniṅ səkar hana ta teja kādbhuta ṅadəg</l>
+                    <l n="d">lāvan sodamanīndracāpa mamilət prabhānya kuməñar</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">suṇḍul iṅ raviloka digdaha savaṅ sənə̄nya dumilah</l>
+                    <l n="b">saṅ hyaṅ lek makucəm kasənvan abirū kadi pva sumurup</l>
+                    <l n="c">lāvan puṣpa sumamburat jənu sugandha kasturi miṅiṅ</l>
+                    <l n="d">ndan devī makateja maṅkana dudugnya maṅhibəki rāt</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">hyaṅhyaṅniṅ puri miṅgat iṅ vəṅi sirān haneṅ girivana</l>
+                    <l n="b">rīndraprastha ta rakva saṅkanira deva sūkṣmavanita</l>
+                    <l n="c">miṅgat deni kadurnayān nṛpati pāṇḍavālah anita</l>
+                    <l n="d">hetunyān dadi rūkṣa taṅ puri hilaṅ təkap saṅ alalis</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">yekā mār hati saṅ dhanañjaya manon surūpa yuvatī</l>
+                    <l n="b">hyaṅ śrī nora ta len hiḍəpnira tanora mānuṣa tuvi</l>
+                    <l n="c">lakṣmīniṅ pura katvaṅ iṅ ratu sinūkṣma nitya riṅ ati</l>
+                    <l n="d">yekān bhakti maṅastuti suranarendra yatna humarək</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">“oṃ śrī ratnapurī nihan mara kabhaktin i ṅhulun agə̄ṅ</l>
+                    <l n="b">“nityāṅimpunakən ləbūni caraṇanta saṅ śriyamaya</l>
+                    <l n="c">“saṅ hyaṅ lot pinakātma sāriniṅ acintya nitya tinutur</l>
+                    <l n="d">“sūkṣmālit maganal panəmbah i manəhta yeki huniṅan”</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">nān liṅ saṅ nṛpaputra saṅ hyaṅ ikanaṅ kaḍatvan avarah</l>
+                    <l n="b">“saṅkeṅ rājya vita ṅhulun munus avakpatan kahuniṅan</l>
+                    <l n="c">“de saṅ pāṇḍava tan rumakṣa saviśeṣa riṅ kadi kami</l>
+                    <l n="d">“durnītiṅ karatun kəneṅ dyuta vikalpa tan tuhu viku</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">“vruh tākun kita saṅ dhanañjaya kinon mareṅ girivana</l>
+                    <l n="b">“metānugraha riṅ vukir gumavayaṅ tapabrata gəgə̄n</l>
+                    <l n="c">“atyanteki giraṅku dentānaku satya bhakti makaka</l>
+                    <l n="d">“astu hyaṅ kiraṭāṅanugrahanaṅ astrarāja ri kita</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">“yan sampun kita siddha riṅ giri təkap bhaṭāra karaṇa</l>
+                    <l n="b">“ṅkā tākun maluyeṅ purinta muvaha ṅhulun hyaṅanikā</l>
+                    <l n="c">“rakṣa pvāku təkapta riṅ hayu maran rumakṣa ri kita</l>
+                    <l n="d">“sakvehniṅ magave prapañca ri hatinta tan valuyana</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">“dentāṅrakṣa śarīra hayva ta madāvamāna ri hati</l>
+                    <l n="b">“āpan saṅkanikaṅ musuh juga ri citta tan hana vaneh</l>
+                    <l n="c">“ya ṅke yuktinikaṅ maveh lara lavan sukhāparimita</l>
+                    <l n="d">“byaktanyā ri yave daləm pajuritan saṅ uttamanaya</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">“vāhyādhyātmika taṅ tutur ya pahayunta hayva malupa</l>
+                    <l n="b">“maṅke mvaṅ ri patinta yeka ta pasārasārana tikā</l>
+                    <l n="c">“yapvan sāk ri yave daləm sahananiṅ musuh paravaśa</l>
+                    <l n="d">“kesyan taṅ bhuvanekavīra ratu cakravarti saphala</l>
+                </lg>
+            </div>
+            <div type="canto" n="26" met="drutavilambita">
+                <note type="prosody">ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ|  ᵕ⏓ [12]</note>
+                <lg n="1">
+                    <l n="a">“hana musuh riṅ amet sukhaniṅ dadi</l>
+                    <l n="b">“daśamalādimalāmal alit mətu</l>
+                    <l n="c">“mala limaṅ lali lolita met lara</l>
+                    <l n="d">“tamah anūt malulut ri rajah tumūt</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“ya tumuvuh maṅikū rikanaṅ dadi</l>
+                    <l n="b">“dadi dadinya daridra lanāṅdasih</l>
+                    <l n="c">“daśamale tama mukti matuṅgalan</l>
+                    <l n="d">“lara viyoga maganti magantuṅan</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“tiga tinūt ya dumehnya lulū tumūt</l>
+                    <l n="b">“ya dadiniṅ tiga tan sah ikāṅlare</l>
+                    <l n="c">“lara lapā laraniṅ viṣayāviṣa</l>
+                    <l n="d">“viṣa bisanya maveh laraniṅ dadi</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“dadi tumūt satuvuhnikanaṅ dadi</l>
+                    <l n="b">“paḍa pəjah ketikaṅ mala kaśmala</l>
+                    <l n="c">“dadi təkeṅ mṛga pakṣi laṭāṅkura</l>
+                    <l n="d">“kala kaṭuṅka dumehnya kapātaka</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">.” kapana taṅ mala kaśmala kaṇḍəha</l>
+                    <l n="b">“saha sakeṅ tiga niṣkala mantəna</l>
+                    <l n="c">“taha si maṅkin ikā mala lot mətu</l>
+                    <l n="d">“avak ikaṅ tiga hetunikān tumūt</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">“tiga lanāməpəkiṅ sajagat kabeh</l>
+                    <l n="b">“tiga dumehnya kapāpanikaṅ sarāt</l>
+                    <l n="c">“tiga mamukti hajəṅ sukhaniṅ dadi</l>
+                    <l n="d">“tiga dumehnya lanāhuripiṅ dadi</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">hurip ikaṅ dadi māvak ikaṅ tamah</l>
+                    <l n="b">“tamah ikaṅ dadi tan varəg iṅ sukha</l>
+                    <l n="c">“sukha pinetnyan aṅel mahas iṅ paran</l>
+                    <l n="d">“paran i saṅkanikaṅ dadi tan katon</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">“hana ta rūpa tumūt sumaput malit</l>
+                    <l n="b">“alit acintya ya mor iṅ acintya ya</l>
+                    <l n="c">“ya ta samar manamar manilib vulat</l>
+                    <l n="d">“vulat ikaṅ matitis kasilib luput</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">“luput ikaṅ taya pakṣa maluy tiga</l>
+                    <l n="b">“tiga maluy ta ya rūpa katon māvak</l>
+                    <l n="c">“avak ikaṅ sapəṭik maluyeṅ katon</l>
+                    <l n="d">“ikaṅ anon ya maṅandəl i tan katon</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">“syapa katon satinonika saṅ manon</l>
+                    <l n="b">“syapa manon magave paraniṅ manon</l>
+                    <l n="c">“sira jugeki tumon sipi tan katon</l>
+                    <l n="d">“sahananiṅ sakaton kahanan manon</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">“ndi parananta yadin lepasekihən</l>
+                    <l n="b">“ləpasa mokṣa tikāṅhiṅ ikaṅ təmən</l>
+                    <l n="c">“ndi parananta yadin si ləpas təmən</l>
+                    <l n="d">“ndi ta si mokṣa paranya ditāləpas</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">“hana sireki vicakṣaṇa paṇḍita</l>
+                    <l n="b">“rva madulur maṅucap ta kamokṣakan</l>
+                    <l n="c">“saviji saṅ maharəp ləpaseṅ dadi</l>
+                    <l n="d">“saviji saṅ maharəp maluyeṅ dadi</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">“rasana teka vuvusnira tan salah</l>
+                    <l n="b">“paḍa ta vastunikaṅ kaharəpnika</l>
+                    <l n="c">“ndi kahananta yadin ləpaseṅ dadi</l>
+                    <l n="d">“ndi kahananta yadin maluyeṅ dadi</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">.”iṅətiṅət katikin hananiṅ dadi</l>
+                    <l n="b">iṅətiṅət katikin huripiṅ dadi</l>
+                    <l n="c">iṅətiṅət katikin huripiṅ hurip</l>
+                    <l n="d">iṅətakən ta huripta məne hilaṅ</l>
+                </lg>
+                <lg n="15">
+                    <l n="a">“kadi bavaṅ baṅ ikaṅ kinulit pinet</l>
+                    <l n="b">“ndi tuduhən ta vijinya ya tan hana</l>
+                    <l n="c">“saṅ aṅaran si bavaṅ hana len hilaṅ</l>
+                    <l n="d">“muvah ikān tanəmən mətu taṅ hurip.</l>
+                </lg>
+                <lg n="16">
+                    <l n="a">“hurip ikaṅ dadi sambhava yan katon</l>
+                    <l n="b">“hurip ikaṅ dadi yan vətu tan lanā</l>
+                    <l n="c">“kadi vulan katikaṅ dadi tan pahi</l>
+                    <l n="d">“alit agə̄ṅ satitahnya tumūt mətu</l>
+                </lg>
+                <lg n="17">
+                    <l n="a">vahu tumaṅgal ikaṅ yaśa kāyika</l>
+                    <l n="b">“daśaparārtha kapiṅpituniṅ vulan</l>
+                    <l n="c">“tapa samādhi ya pūrṇama tan kalen</l>
+                    <l n="d">“adika madhya kaniṣṭha tikaṅ hayu</l>
+                </lg>
+                <lg n="18">
+                    <l n="a">“ndi ta hurənta yadin maharəp sukha</l>
+                    <l n="b">“paḍa mamukti tikaṅ pagave kabeh</l>
+                    <l n="c">“kadi tahən vinaduṅ pinəraṅ pinet</l>
+                    <l n="d">“sapaməraṅnya tikāntuk ikāṅalap.</l>
+                </lg>
+                <lg n="19">
+                    <l n="a">“mataṅ ikaṅ gavayən hayu tan madoh</l>
+                    <l n="b">“hana riṅ aṅga tikaṅ pahayun təmən</l>
+                    <l n="c">“ya ta pamə̄ṅa huripta ya sādhana</l>
+                    <l n="d">“luput ikaṅ hayu yan hinələmhələm</l>
+                </lg>
+                <lg n="20">
+                    <l n="a">“ləkasananta tikaṅ si ləkas təpət</l>
+                    <l n="b">“sagavayənta yadin luməkas təpət</l>
+                    <l n="c">“təpətananta tikaṅ vəkasiṅ təpət</l>
+                    <l n="d">“maran avas parananta məne ləpas</l>
+                </lg>
+            </div>
+            <div type="canto" n="27" met="toṭaka">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [12]</note>
+                <lg n="1">
+                    <l n="a">“hana teki muvah pituturku rəṅə̄n</l>
+                    <l n="b">“si suyodhana motus amet ri kita</l>
+                    <l n="c">“ruməṅə̄ ri layat nṛpatin patapa</l>
+                    <l n="d">“ya nimittanikān paṅupāya hala</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ri huvusnira mājar ikaṅ rahayu</l>
+                    <l n="b">dadi sūkṣma ta saṅ hyaṅ amiśra taya</l>
+                    <l n="c">nṛpaputra maṅañjali riṅ gagana</l>
+                    <l n="d">kadi riṅ svapəneki katonanira</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">ri huvusnira maṅkana yatna ta saṅ</l>
+                    <l n="b">nṛpaputra madan sira śīghra madəg</l>
+                    <l n="c">maṅalor sira tūt gunuṅ ardha sukət</l>
+                    <l n="d">kasasar kavave təpiniṅ vulusan</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">tasika arja lәyәp masamīpa gunuṅ</l>
+                    <l n="b">bañuniṅ giri sarva pavitra tumus</l>
+                    <l n="c">mapuput paḍa tīrtha ya konәṅunәṅ</l>
+                    <l n="d">humilī mahәniṅ lumajur maṅalor</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">katәhak bañuniṅ tasik ardha lәṅәṅ</l>
+                    <l n="b">tәkap iṅ bañu madrәs avah gumuruh</l>
+                    <l n="c">dinәlәṅ ri vәkasnya lәṅit kumusuh</l>
+                    <l n="d">kadi megha samar ya pәtәṅ sumaput</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">arunodaya sə̄ṅnya mabaṅ makuniṅ</l>
+                    <l n="b">mәtu saṅka rikaṅ bañu rūpanika</l>
+                    <l n="c">kadi cakra murub mavәlu dumilah</l>
+                    <l n="d">sumurup ta bhaṭāra vulan makucәṁ</l>
+                </lg>
+            </div>
+            <div type="canto" n="28" met="navaharsa">
+                <note type="prosody"> ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏓ [19]</note>
+                <lg n="1">
+                    <l n="a">ya katon lәyәpiṅ pasir amuhara lәṅlәṅ anambәhi kuṅ,</l>
+                    <l n="b">kalavan gәrәh iṅ patәr akәtәr agәntәr aṅanti rәmәṅ,</l>
+                    <l n="c">ri pәtuṅnya namutnamut aṅәḍapa mukṣa kilatnya tinon,</l>
+                    <l n="d">kadi mukṣa hiḍepniṅ umulat i vәkasnya lәṅit dinәlə̄.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ana teki karaṅnya ri tәṅah aṅadәg kadi nūṣa katon,</l>
+                    <l n="b">lagi mukṣa minukṣaniṅ alun aṅasut kadi reka samar,</l>
+                    <l n="c">kumәḍap ketikaṅ bañu maṅipakipak ri tәpinya lanā,</l>
+                    <l n="d">mahirәṅ kadi kәmbaṅiṅ ahayu samar pinupurpupuran.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">hanānuṅ makaraṅ liman asәmu lәyәp malalәh ya tinon</l>
+                    <l n="b">ika ganya parantiniṅ amati laṅə̄ lumabuh riṅ alun</l>
+                    <l n="c">makacihna parabnya sumәlap i karaṅnya lavan lәpihan</l>
+                    <l n="d">hana ṅāri kasaṅnika kadi minahā ya sinampirakәn</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">ri tәpinya pasirpasir agәlar i sor pasuṅiṅ piḍaḍa,</l>
+                    <l n="b">karitipni karaṅnya hana matәbalan mabavaṅbavaṅan,</l>
+                    <l n="c">harәmis makupaṅkupaṅ ahuvuruvuṅ makәraṅ matirәm</l>
+                    <l n="d">paṅisisni sahiṅsahiṅ ika padulur dana kampad ika</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">ri parasnya paraṅ paruṅ aguhaguhā hana katka tikā</l>
+                    <l n="b">hana pakṣi guruṇḍaya lagi masәsәh ya karaṅkaraṅan</l>
+                    <l n="c">maṅaluṅ baḍavaṅnya ri tәpi hana pās vayavak vuhaya,</l>
+                    <l n="d">kumәlәm savaneh hana kadi maṅuṅap ya mucul sakarәṅ.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">sahaneṅ tәpiniṅ pasir amuhara rāmya yadin caritan,</l>
+                    <l n="b">maṅavetan ikaṅ lakunira ta saṅ ārya matūt pasisi,</l>
+                    <l n="c">hana paṇḍan aṅuṅkuli paraṅan arәs ya tinon alaṅə̄,</l>
+                    <l n="d">pamilәtni gaḍuṅnya mamәkasi puḍaknya rurū kasirir.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">ri vәkasnya śilā śayana kayu manisnya maṅə̄bi matis,</l>
+                    <l n="b">kamuniṅ kayu teja mәnur asana cāmpaka len surabhi,</l>
+                    <l n="c">kadi tāman apūrṇa lәyәpika maṅuṅkuli rāmya lәṅәṅ,</l>
+                    <l n="d">ana teki katon tәkapira kadi deva samar tan avās.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">hyaṅ anaṅga sireki haməṅaməṅ i daśanikaṅ vulusan</l>
+                    <l n="b">kalavan kalulutnira saṅ ahayu nora maḍeṅ amanis</l>
+                    <l n="c">sira saṅ kadiniṅ kusuma salaga nāma ratih vinuvus</l>
+                    <l n="d">dinulur sira deniṅ amaraduhitā pamuput riṅ arūm.</l>
+                </lg>
+            </div>
+            <div type="canto" n="29" met="jagadnātha">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕ| ᵕ⏓[23]</note>
+                <lg n="1">
+                    <l n="a">sәḍәṅnira bhaṭāra manmatha kapaṅgih amәṅamәṅ i deśaniṅ pasir,</l>
+                    <l n="b">tәkap nṛpatipura yekān atәtәg sira ḍatәṅa ri saṅ manobhava,</l>
+                    <l n="c">ya hetunira yan paṅanti sakarәṅ maṅiṅәtakәn aliṇḍuṅan kayu,</l>
+                    <l n="d">sinoṅaniṅ aśoka ronya rumahab kahananira manon ndatan tinon.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">jәṅәr tvas ira saṅ dhanañjaya manon vvaṅ ahayu tuvi tan pasiṅsiṅan,</l>
+                    <l n="b">mukhanya gumavaṅ manisni pamatanyan alaris aluṅid liriṅnikā,</l>
+                    <l n="c">lәmәsni paṅavaknya mambәt aṅәlih lumakulaku mapet raras hati,</l>
+                    <l n="d">tapihnya kasirirsirir kadi mahā tinunatuna miṅismiṅis katon.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">apan yan ucapәn rarasnyan apaṅus dalu hayunira tan kәnenusīr,</l>
+                    <l n="b">luput pinahiḍәp tuneṅ aṅәnaṅәn lәvu nener ika yan yan tiniṅhalan,</l>
+                    <l n="c">muṅәr kaputuṅan tikәl tanah iṅ aṅguritakәn hayunya riṅ karas.</l>
+                    <l n="d">mihat tәmahan aṅlәlәh sahananiṅ lukis amaḍamaḍā riṅ tulis.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">vaneh hayunikā manisnyan inapus tәṅah ika tinulis bәbәdnikā,</l>
+                    <l n="b">laṭinya mahirәṅ vajanya maputih tinikatika huvәlnikaṅ gәluṅ,</l>
+                    <l n="c">matanya mabhirū tәpinya malaris vahu kinәlabakәn tikuṅ halis,</l>
+                    <l n="d">titir liniriṅan tәkapniṅ alaṅə̄ lumaraṅi ya paṅruhun tika.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">paḍāṅalap ahurahuran sәkar anәmpal asana sapayuṅpayuṅ vuṅu,</l>
+                    <l n="b">savitnya katirah mәnur ya tinatānya ri patah atajugtajug sәkar,</l>
+                    <l n="c">gәluṅnya kinusutkusutnya minahā linukalukar inambәt iṅ vuhәl,</l>
+                    <l n="d">mukhanya sinabuknya riṅ sarinikaṅ kusuma surabi maṅlare hati.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">ikaṅ saviji raśmiraśminika yan gumuyu vaśavaśitva riṅ manis,</l>
+                    <l n="b">tәkanya hapaṅus pilih tuhatuhanya mamarahi mapet raras hati,</l>
+                    <l n="c">tuvin vvaṅ amanis mapañjaṅ anipis tahu viṣaniṅ akuṅ mamātyani,</l>
+                    <l n="d">titir pinakaśatruniṅ tapa lanā muruṅakәna samādhi saṅ viku.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">śilā śumayana paliṅgihanikā paḍa maṅurayakәn gәluṅ mәlәs,</l>
+                    <l n="b">vaneh ta ya matuṅtuṅan paḍa silih rәṅu maṅucap agoṣṭhi tan humuṅ,</l>
+                    <l n="c">hanāṅuvahi ken ikāṅirabakәn viruviruni tapihnya denalah,</l>
+                    <l n="d">hanān kadi rare ndatan vavarәṅə̄ riṅ umulata ri polahiṅ katon.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">vaneh tiki mapet laṅə̄ gumuliṅ iṅ karaṅ arurub aśokapādapa,</l>
+                    <l n="b">lәṅәṅ lumiyat iṅ pasir kadi mavor vәkas ika kalavan laṅitlaṅit,</l>
+                    <l n="c">ikāna ri tәṅah katon kadi gunuṅ tikan alulun anambәr aṅrubuṅ,</l>
+                    <l n="d">ya tekana tinonya lәṅlәṅ alaṅə̄ kadi kavi maṅikәt palambaṅa.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">vaneh tumuruniṅ pasir paḍa mapiṅkas aburu surudiṅ ryakiṅ bañu,</l>
+                    <l n="b">tumandaṅ aḍaḍapḍaḍap sәminikaṅ kayu manis atәvәktәvәk puḍak,</l>
+                    <l n="c">tekaṅ halun agə̄ṅ tumampuh aṅusī riya dadi tәlәs katūtutan,</l>
+                    <l n="d">tapihtapih ikā ya tātanya katon kadi mukha masaputsaput jamaṅ.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">kunaṅ sira bhaṭāra manmatha lavan kalulut iran aliṅgih iṅ śilā,</l>
+                    <l n="b">hanan kajәnәkan sinaṅhuluni kāsih ira saṅ araras kinaptyakәn,</l>
+                    <l n="c">tәhәr kadi paluṅnikaṅ gaḍuṅ aṅol sәkar amilәt agantuṅan tәṅah,</l>
+                    <l n="d">cucul vuhәl ikaṅ tapih tәkap i paṅharas i taṅanirāṅgamәl susu.</l>
+                </lg>
+            </div>
+            <div type="canto" n="30" met="turidagati">
+                <note type="prosody"> ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕ| ᵕᵕ| ⏓ [22]</note>
+                <lg n="1">
+                    <l n="a">lәṅәṅ alalәh tinon tәpinikaṅ pasir amuhara lәṅlәṅ iṅ mara,</l>
+                    <l n="b">kadi tinatā hәninya matulis vinurivuri tәkapnikaṅ surud,</l>
+                    <l n="c">hana lumarap katon kadi maṇik marakata kadi hintәnāhulap,</l>
+                    <l n="d">kadi ta kuvuṅkuvuṅ sirat ikaṅ bañu kinәkar iṅ tejaniṅ ravi.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">kavәlas arәp huraṅnya mati kāsatәn anәlati salvāṅiṅ karaṅ,</l>
+                    <l n="b">lagi pinaran titir tәkap ikaṅ sәmut adulur atūt pakis mure,</l>
+                    <l n="c">kamahuripәn suṅutnya makәdal katitisani paśesaniṅ bañu,</l>
+                    <l n="d">ikurikuriṅ paras paḍa lәvas hana mati kәna riṅ jariṅjariṅ.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">hana maputih katon ri tәṅahiṅ pasir aṅәḍapi polahiṅ bañu,</l>
+                    <l n="b">layariṅ amañjiṅ asraṅ anәṅah kadi gilagila mukṣa cet katon,</l>
+                    <l n="c">tәkapiṅ aṅin lavan kusuh ikaṅ bañu maṅalunalun maṅampuhan,</l>
+                    <l n="d">iniṅәtiṅәt hilaṅ kahidḍәpnya sahaja tiki yan katon muvah.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">hana ta muvah katon niyata rāmyaniṅ aṅanutan hana aṅhuvushuvus,</l>
+                    <l n="b">kumitikitir kәlabni paṅgavenya kapalipir i ḍuṅhus iṅ paraṅ,</l>
+                    <l n="c">lagi kasәpәr karok lavan ikaṅ sәkar asana tibeṅ karaṅ taṅan,</l>
+                    <l n="d">hana ta muvah katon pilihpilih bhanava rusak aṅaṇḍas iṅ karaṅ.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">sahananikaṅ katon paḍa maveh turida ri manahiṅ vvaṅ aṅlәṅәṅ,</l>
+                    <l n="b">nṛpasuta kapvaniṅ gati taṅeh manah ira ḍatәṅe prayojana,</l>
+                    <l n="c">kajәnәkaneṅ laṅə̄ tәvas aṅel karakәtana ri rāmyaniṅ pasir,</l>
+                    <l n="d">dadi humәnәṅ sirāṅaṅәnaṅәn ḍatәṅanira ri saṅ manobhava.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">dadi nṛpaputra śīghra maṅadәg ḍatәṅa ri kahanan manobhava,</l>
+                    <l n="b">mavaraha doniran ḍatәṅa riṅ vukir agavaya siddhaniṅ tapa,</l>
+                    <l n="c">karaṇaniran ḍatәṅ ri kahanan manasija tumuluy maṅastuti,</l>
+                    <l n="d">dadi sira saṅ manobhava sumambut i luṅayani saṅ dhanañjaya.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">uḍuh arini ṅhulun laki sabhāgya ta kita mapa taṅ prayojana,</l>
+                    <l n="b">amәṅamәṅeṅ pasir karika saṅ nṛpati kadi mahā mapet laṅə̄,</l>
+                    <l n="c">amarәṅi rāmyaniṅ masa kapat lumiyat ana ri rāmyaniṅ pasir,</l>
+                    <l n="d">iṅәtiṅәtәn ta rāmyani pasirnya guritakәna de nṛpātmaja,</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">vuvusira saṅ manobhava saharṣa ṅuniyuni tikaṅ surāṅganā,</l>
+                    <l n="b">nṛpasuta mājariṅ gati ri donanira yan inutusni saṅ kaka,</l>
+                    <l n="c">lumәkasa maṅhyaṅeṅ giri sumeru gumavayakәnaṅ tapa brata,</l>
+                    <l n="d">mvaṅ i kahilaṅniran kәna binañcana ya ta pavarahnirātәhәr.</l>
+                </lg>
+            </div>
+            <div type="canto" n="31" met="jagaddhita">
+                <note type="prosody">  | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕᵕ| ᵕᵕᵕ|  ᵕᵕ| ᵕ⏓ [23]</note>
+                <lg n="1">
+                    <l n="a">saṅ hyaṅ kāma sireki śīghra sumahur milu malara manahnirāṅrәṅə̄,</l>
+                    <l n="b">maṅka pvāku nimittaniṅ ḍatәṅa riṅ giri gumavaya yoga len brata,</l>
+                    <l n="c">antәnku ndya taṅ enakeki vuvusaṅkva ri kita bapa yogya rakṣanәn,</l>
+                    <l n="d">āpan mevәh ikaṅ gunāmaraha riṅ hayu maṅinakaneṅ vvaṅ aṅrәṅə̄.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">vyartha ṅvaṅ yan amuktya tan vruha ri mūlaniṅ anәmu sukhādi vīryavan,</l>
+                    <l n="b">nirvvā ṅvaṅ matuduh maṅə̄ ya tan akirtya tulada tәkapniṅ aṅlәṅәṅ,</l>
+                    <l n="c">tan rāmya maśarīra tan tulusa rūpa lituhayu vicakṣanāguṇa,</l>
+                    <l n="d">nirdon ṅvaṅ viku tan vәnaṅ tulusa paṇḍita magavaya dharmasādhana.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">akveh vvaṅ lumicin sumamyak aṅucap manayakәn i rusitniṅ akṣara,</l>
+                    <l n="b">liṅnyājyamujit ndatan vruh i vәnaṅnika kadi laghәnāsavit sәkar,</l>
+                    <l n="c">vyaktinyānuparәṅga bhūsana vuvusnira mәtu kadi luṅgahiṅ gaḍuṅ,</l>
+                    <l n="d">ndan sūkṣmeki lәkasniran kadi tulis carita cinaritanya tan katon.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">aṅhiṅ svarga jugā pinet paḍa mahurhuran aharәp amuktya riṅ sarāt,</l>
+                    <l n="b">rāmyāniṅ mahulun mamās marabi yeka ta karaṇanikān mahas maṅel,</l>
+                    <l n="c">tan vruh yan kadi robnikaṅ jaladhi tan tәhәra katәmu jātiniṅ sukha,</l>
+                    <l n="d">tan meṅәt pva ya mūdha tan vruh i pamuktyanika sinaput iṅ rajah tamah.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">tṛṣṇāgə̄ṅ mamilәt ri saṅ manәmu bhoga karakәt ika yan tinamtaman,</l>
+                    <l n="b">tan mantuk purihiṅ śarīra katәlәr tәkap i paṅapuy iṅ malendriya,</l>
+                    <l n="c">kaṇḍәh deni kasaktiniṅ daśamalārurah aṅadәhi polahiṅ tiga,</l>
+                    <l n="d">tan dva pvaṅ tumuvuh muvah mәtu cirinyan ahala mijiliṅ daśendriya.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">mevәh saṅ vruhi mūlaniṅ dadi padumya hala hayu tinūtnya yan titah,</l>
+                    <l n="b">lāvan saṅ vәnaṅ ekacitta ri sәḍәṅni patinira matiṅgaleṅ kriya,</l>
+                    <l n="c">yuktinyan pasilihsilih gatinikaṅ hurip i hananikaṅ pamuktyana,</l>
+                    <l n="d">tan tyāgā lumicinlicin ri hananiṅ tiga turuṅ apasah sakeṅ havak.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">dharmādhyakṣani saṅ caturjana ta saṅ ratu kumavaśākәn jagattraya,</l>
+                    <l n="b">yan sāmpun sira riṅ śivāgama rumakṣa hayunira saṅ ārya paṇḍita,</l>
+                    <l n="c">lāvan yan vruh i mūlaniṅ bhuvana vastuniṅ atapa mayajña śūnyatā,</l>
+                    <l n="d">ṅke riṅ rājya paḍeki dharma patapan gatinika makabhuktya taṅ sarāt</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">nā liṅ saṅ hyaṅ anaṅga yeki sumahur nṛpatanaya saharṣa taṅ manah,</l>
+                    <l n="b">āpan yeki nimittani ṅhulun ameta patapan amaṅiṣṭy anugraha,</l>
+                    <l n="c">mahyun paṅgiha seṣṭiniṅ ratu vәnaṅ gumavayakәna dharmasādhana,</l>
+                    <l n="d">yan labdhāvara de manәh kusumacāpa tәkapira bhaṭāra śaṅkara.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">śrī dvepāyana teki saṅ paranani ṅhulun avaraha riṅ śivāgama,</l>
+                    <l n="b">mvaṅ tekaṅ vukir indrakīla kahananya ya ta pavarahe ṅhulun tәmәn</l>
+                    <l n="c">lāvan yan ana sambhavāṅavara donanika ya tika pājare ṅhulun,</l>
+                    <l n="d">saṅ hyaṅ māsiha ri ṅhulun tumulusā varaha ri kahanan mahāmuni.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">liṅ saṅ pārtha maṅakṣamāṅasihasih mamalaku vinarah riṅ iṅgita,</l>
+                    <l n="b">lavan dohnikaṅ indraparvata sakeṅ kahanan i patapan mahāmuni,</l>
+                    <l n="c">yekan śīghra bhaṭāra kāma mavarah ri kahananikaṅ indraparvata,</l>
+                    <l n="d">vetan deśanikā mәnәr kadi bahitra kumurәb ahirәṅ magə̄ṅ katon.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">lor vetan sakariṅ girīndra hana pājaran arәcәp apūrva riṅ halәp,</l>
+                    <l n="b">śrī devapāyana saṅ maṅanti pinakādi sinamayanira hyaṅ īsvara,</l>
+                    <l n="c">yogyānuṅ dunuṅәn pavitra paraniṅ kadi kita gumave parakrama,</l>
+                    <l n="d">tan vvaṅ len sira de nәpātmaja vәnaṅ mavaraha sira riṅ śivāgama.</l>
+                </lg>
+            </div>
+            <div type="canto" n="32" met="śārdūlavikrīḍita">
+                <note type="prosody">   | ᵕᵕ| ᵕᵕ| ᵕᵕ|   ᵕ|   ᵕ| ⏓ [19]</note>
+                <lg n="1">
+                    <l n="a">vantәn rākṣasa murka śisyanira dug durgā bhaṭārīśvarī,</l>
+                    <l n="b">ndan tatkālaniran pamet ri tәmahan saṅ hyaṅ gaṇan paṅdadi</l>
+                    <l n="c">saṅke krodhanirāṅuhuh pәpәt ikaṅ brahmāṇḍa kāṇḍәg sivak,</l>
+                    <l n="d">ṅkā tekān umijil sake liḍah irākrak ghurṇitaṅ rāt kabeh.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ndān sampun makanāma saṅ nalamala kyātīṅ jagat digjaya,</l>
+                    <l n="b">tan mātya pva ya deniṅ astra ṅuniveh deniṅ suraṅgādhipa,</l>
+                    <l n="c">mvaṅ vyāghrāsurasiṅha len kala piśācā mṛtyu siṅ kādbhuta,</l>
+                    <l n="d">tan deniṅ ratu saktiman ṅuniṅuni yakṣāgni len kiṅkara.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">ṅūni tattvanikaṅ kaśaktin i kiteṅ rāt yan pamatyaṅ kala,</l>
+                    <l n="b">sakvehniṅ kulavarga dānava kabeh śīrnā ta denteṅ jagat,</l>
+                    <l n="c">yeka krodha ta yāṅrәṅə̄ ri kahanantā śakti vānīṅ kala,</l>
+                    <l n="d">yekā mahyun aṅadva śakti kalavan rakryan hәlәm riṅ kali,</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">ndān devīsira saṅ mataṅguh iriyā tan vәtva riṅ dvāpara,</l>
+                    <l n="b">ṅhiṅ yan riṅ kali yeki yan mijila saṅkeṅ śūnyatā liṅnira,</l>
+                    <l n="c">hetunyan humәnәṅ sahiṣṇu sakarәṅ maṅher tәkaniṅ kali,</l>
+                    <l n="d">byaktan vәetva hәlәm ri kālani madantāmatyanārinta ya.</l>
+                </lg>
+            </div>
+            <div type="canto" n="33" met="rajanī">
+                <note type="prosody"> ᵕᵕᵕ| ᵕᵕ|  ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [17]</note>
+                <lg n="1">
+                    <l n="a">si nalamalā tәhәr tiga śirahnya paḍāsavala,</l>
+                    <l n="b">ikaṅ i tәṅәn bhagādhipa śirahnya ya tulya gәlap,</l>
+                    <l n="c">ikaṅ i kivan kadi bhaṭāra gana paṅuhah,</l>
+                    <l n="d">ikaṅ i tәṅah kalāṅamahamah kadi siṅha jaya.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">avak ahirәṅ magə̄ṅ kadi gunuṅ sinusun maruhur,</l>
+                    <l n="b">mata kadi sūrya ya vәtu mābaṅ dumilah mapanas,</l>
+                    <l n="c">latulatu kādbhutākrәp ahirәṅ ta halisnya sukәt,</l>
+                    <l n="d">vivaranikaṅ hiruṅ kadi guhā paḍa bhīsana ya.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">kadi bәlahiṅ lәmah tutuk ikān umaṅaṅ malapā,</l>
+                    <l n="b">maṅaladalad liḍahnya kadi bahni murub dumilah,</l>
+                    <l n="c">silih alivat siyuṅnya kadi cāpa surādhipa ya,</l>
+                    <l n="d">kadi bañuniṅ kavah pilapilunya mabə̄ mahaṅi.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">kumis araverave kadi ḍukut sukәtiṅ pasisī,</l>
+                    <l n="b">kadi bәlahiṅ paraṅ paruṅ ikaṅ mūkha tulya karaṅ,</l>
+                    <l n="c">kadi layariṅ baluk limaṅ atus taliṅanya katon,</l>
+                    <l n="d">kadi pusәriṅ pasir lyaṅ i kapə̄nya pәṅuṅ madalәm.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">kadi jaladākәlin kәlәn atə̄b tika romanika,</l>
+                    <l n="b">kadi siluk iṅ pasir dūni mukhanya karalkaralәn,</l>
+                    <l n="c">yar aṅәnaṅәn riyā ṅvaṅ umaras kumәtәr tan aris,</l>
+                    <l n="d">kadi ta bhaṭāra rudra ri sәḍәṅnira nṛṣṭi jagat.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">gaganacarāṅlayaṅ kadi ta vāhana rūpanikā,</l>
+                    <l n="b">vәnaṅ aḍәmit hanan vәnaṅ agə̄ṅ ya sakahyunikā,</l>
+                    <l n="c">kadi ta gәrәh savranya karәṅə̄ prakaṭā gumuruh,</l>
+                    <l n="d">kadi ta ya rāvanāṅamahamah ri bhaṭāra hari.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">hana ri tәlәṅnikaṅ jaladhi yeka dumeh ya taya,</l>
+                    <l n="b">sahanahaneṅ tasik ya pinaranya tatan matakut,</l>
+                    <l n="c">ri punuk ikaṅ karaṅ juga yeka parantinikā,</l>
+                    <l n="d">ya tika dumeh ya tan hana kapaṅgiha de nṛpati.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">kunaṅ iki tattva bhūtanika yan hilaṅeṅ samara,</l>
+                    <l n="b">hana luṅid iṅ śivasmṛti vajanya ya cintamaṇi,</l>
+                    <l n="c">niyata matīriyāṅ duki sәḍәṅniṅ aṅuñci pәpәt,</l>
+                    <l n="d">hana panulaktulak tala ṅaranya vәnaṅ paṅalah.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">niyata hilaṅnya deniṅ asamādhi ya cintamaṇi,</l>
+                    <l n="b">apan ika śatruniṅ tapa musuhniṅ asādhya hayu,</l>
+                    <l n="c">hana riṅ avakta tan hana vaneh tikaṅ astra lәvih,</l>
+                    <l n="d">iṅәtiṅәtәn ta de nṛpati kottamaniṅ vinuvus.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">kunaṅ i mәnenya ya ḍatәṅ ahayva ta saṅ nәpati,</l>
+                    <l n="b">palәpalәh iṅ musuh lәkasi hayva tatan matihaṅ,</l>
+                    <l n="c">kami muliheṅ smarālaya lavan suraratnavadhu,</l>
+                    <l n="d">nāhan ika pājar iṅ smara parәṅ sira mūr adulur.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">hasәpi ta saṅ nṛpātmaja ri kārinireṅ pasisī,</l>
+                    <l n="b">humәnәṅ ikaṅ mayūra kadi rovaṅ iran paṅaraṅ,</l>
+                    <l n="c">sәkar alunut haneṅ vatu lavan lәpihan katәmu,</l>
+                    <l n="d">vinaca vijīnya bhāsa kakavinya turuṅ sayati.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">ya ta pamәkasnikaṅ suravadhū pavilāśa lәṅәṅ,</l>
+                    <l n="b">ri tәpinikaṅ samudra kahananyan amukti laṅə̄,</l>
+                    <l n="c">hana ta puḍak turuṅ tulus isinya tikā satugәl,</l>
+                    <l n="d">kalavan ikaṅ sadak gadiṅ i sornya pilih panulis.</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">kavәlas arәp sәkarnya kasirir tumibeṅ pasisī,</l>
+                    <l n="b">milu mavәnәs gaḍuṅnika lume hana riṅ paraṅan,</l>
+                    <l n="c">hana ta sәkar pilih paguliṅanya mapet kalaṅə̄n,</l>
+                    <l n="d">paṅisi tibeṅ karaṅ lavan ikaṅ maṅunәṅ malunut.</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">asana lәvas lavə̄nya kadi cihna rakәt ri pipi,</l>
+                    <l n="b">kalavanikaṅ mәnur niyata ṅūni ya sumpiṅ ikā,</l>
+                    <l n="c">y ata pinipilnire nәpәpakәn riṅ iruṅ vәkasan,</l>
+                    <l n="d">lagi mamәkul sәkar sira hanan vagugәn ri hati.</l>
+                </lg>
+                <lg n="15">
+                    <l n="a">nṛpasuta lәṅlәṅ epu haṅәsah sira tan tiṅgәnәsәn,</l>
+                    <l n="b">lagi tumiliṅ siran rәṅәrәṅə̄n tәkap iṅ bhramara,</l>
+                    <l n="c">riris adulur sadāgati mirir ya manisni sikuṅ,</l>
+                    <l n="d">maṅaṅәnaṅәn ta saṅ nṛpatiputra rikaṅ parana.</l>
+                </lg>
+            </div>
+            <div type="canto" n="34" met="pṛthivī (?)">
+                <lg n="1">
+                    <l n="a">narendra mulat iṅ laṅit paran ikaṅ tinon kādbhutha,</l>
+                    <l n="b">maṅuṅkuli pasir samar kadi kukus madәg riṅ bañu,</l>
+                    <l n="c">hanan kadi gunuṅ mibәr kadi gәrәh kәtugniṅ laṅit,</l>
+                    <l n="d">bañunya kumusuh tәkapnikaṅ aṅin manub miṇḍuhur.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">rikā ta yan avas katon kala piśāca tan len ḍatәṅ,</l>
+                    <l n="b">sakeṅ tәṅah ikaṅ pasir huvus amukti mīnāvәrə̄,</l>
+                    <l n="c">hanān kasulitәn tutuknya kinavilnya deniṅ tamah,</l>
+                    <l n="d">siyuṅnya matavan pәsut kaburayut lavan lәmbvara.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">hane nigitigit vaneh kasәlapiṅ bahәm len gaḍiṅ,</l>
+                    <l n="b">patuknya maluṅid mabaṅ kasavitan dagiṅ len usus,</l>
+                    <l n="c">hanān kadi bhaṭāra kala mamaṅun saray kādbhuta,</l>
+                    <l n="d">tәkāṅamahamah sayojana ruhurnya len gәṅnika.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">samantara katon tikaṅ nalamalāṅadәg riṅ karaṅ,</l>
+                    <l n="b">mulat ri kahanan saṅ arjuna paran kunaṅ liṅnika,</l>
+                    <l n="c">katon ta sira denya śīghra mavәlu vulatnyārәṅu,</l>
+                    <l n="d">vvaṅ ekaki ya tah manuṅgal aṅamuṅ nāhan liṅnika.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">katon tikanaṅ astra denya kalavan laras taṅkulak,</l>
+                    <l n="b">lavan kavaca ratna sampun ahalәp tikaṅ bhūsana,</l>
+                    <l n="c">hyaṅ indra ri hiḍәpnya tan hana vaneh katәmvīrika,</l>
+                    <l n="d">ya hetunika yan panantva humasə̄ ri saṅ bhūpati.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">arah paranikā gatinta masabhā rikeṅ tāṭaka,</l>
+                    <l n="b">tuvin lituhajәṅ mabhūsana maṇik surūpāhalәp,</l>
+                    <l n="c">surāpsara kunaṅ kiteki maṅәnәs mahapet laṅə̄,</l>
+                    <l n="d">varah tāku ri donyu yan syapa ṅaranta pājar kita.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">nāhan vuvus ikaṅ piśāca kala yan patakvan ṅaran,</l>
+                    <l n="b">sagadgada manah nṛpātmaja vavaṅ sirājar ṅaran,</l>
+                    <l n="c">ṅhulun katiki saṅ dhanāñjaya ṅaranku riṅ rāt gahan,</l>
+                    <l n="d">mareṅ vukir ameta śūnya patapan ya donkun ḍatәṅ.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">nāhan varah i saṅ dhanāñjaya vavaṅ tikaṅ rākṣasa,</l>
+                    <l n="b">masə̄ṅit aṅadәg kamānavibhavanyan aṅrik humuṅ,</l>
+                    <l n="c">pәpәt pәnuh ikaṅ jagat tәkap i śabdaniṅ rākṣasa,</l>
+                    <l n="d">kavәs tiḍәm ikaṅ surāvәnәs alek hyaṅ arkākucәm.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">vavaṅ ya maṅavil gunuṅ kabarubuh sivak taṅ karaṅ,</l>
+                    <l n="b">katūt pasīnikaṅ gunuṅ ya ḍinavutnya tan kārkaśa,</l>
+                    <l n="c">pәṅuṅ huvuṅuvuṅ luvaṅya hinuṅaṅ katon jronikā,</l>
+                    <l n="d">taṅan kiva ya śīghra yan kadi marindi tan pāntara.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">narendra matihaṅ śarottama tәlas madan bhūsana,</l>
+                    <l n="b">sapājar ira saṅ manobhava ya ṅūni keṅәtnira,</l>
+                    <l n="c">ya hetunira yan pacintya humәnәṅ tatan saṅśaya,</l>
+                    <l n="d">hapan vruh i katattvaniṅ kala dumeh sirādan muvah.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">tekānudiṅi taṅ kalāṅāmahamah ri saṅ bhūpati,</l>
+                    <l n="b">ayay narakajanma ko pva paṅaran si pārthādhama,</l>
+                    <l n="c">prayojananikiṅ kalātri malayan ḍatәṅ ko harah,</l>
+                    <l n="d">nda mah tamahamah gunuṅ vatu tikāṅ umatyā ri ko.</l>
+                </lg>
+            </div>
+            <div type="canto" n="35" met="dhṛti group (?)">
+                <note type="prosody">ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]</note>
+                <lg n="1">
+                    <l n="a">nāhan ta vacananyan aṅgrәgut aṅuṇḍa gunuṅ maruhur,</l>
+                    <l n="b">narendra mamapag riṅ astra śara bahni murub dumilah,</l>
+                    <l n="c">prakāṭa sumәnə̄ ya riṅ gagana maṅibәkiṅ bhuvana,</l>
+                    <l n="d">ilaṅ matәmahan lәbu sapaṅasәnikanaṅ kalana.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">gәsәṅ sahananiṅ tahәn ri tәpiniṅ hulusan kahava,</l>
+                    <l n="b">tәkapnikanaṅ astra bahni dumudug tәka riṅ viyati,</l>
+                    <l n="c">paḍāvrәg alayū tikaṅ sura kabeh mavәdīṅ pralaya,</l>
+                    <l n="d">tumon ri pamaṅan hyaṅ agniśara tan kavәnaṅ tinahәn.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">muvah ya maṅalap karaṅ bhujaga sevu ḍәpanya gәnәp,</l>
+                    <l n="b">ruhurnya davanya kadi bajra makas maluṅid,</l>
+                    <l n="c">ya pandәmakәna yeka maṅuhuh sahasānudiṅi,</l>
+                    <l n="d">sinep rinuhunan riṅ astra śara bahni tәkap nṛpati.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">ya hetunika yan masə̄ṅit aṅalap ta ya śūla bisa</l>
+                    <l n="b">saṅaṅ ḍәpa davanya gə̄ṅnika satal saha kasnya murub</l>
+                    <l n="c">tumindak aṅusap lәmah ta ya manūdiṅ amuṣṭi lipuṅ</l>
+                    <l n="d">taṅan kiva maṅuṇḍa mālih tәṅәn ya mapet pamәdi</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">huvusnika masə̄ ta yaṅgәlәm arәs muvah iṅ lumihat,</l>
+                    <l n="b">matanya mavәlū mabaṅ kadi ta sūrya sәḍәṅ dumilah,</l>
+                    <l n="c">cihah ta mahamah vulat ryaku nihan ta lipuṅku murub,</l>
+                    <l n="d">umatyana ri ko vikū narakajanma na liṅnikahәn.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">narendra matihaṅ śarottama tәlas pinasaṅnira ya,</l>
+                    <l n="b">tulak tala minuṣṭi rovaṅika bāyu masātma śara,</l>
+                    <l n="c">aṅinya mamusus gunuṅ kabarubuh gumuruh kumәtug</l>
+                    <l n="d">punah sahananiṅ tahәn kadi lәbū kumukus ya katūb</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">ikaṅ nalamalāṅadәg kavәvәṅәn ti tәṅahniṅ aṅin</l>
+                    <l n="b">pәtәṅ tәkap i śaktiniṅ śarana bāyu masātma śara</l>
+                    <l n="c">anusmaraṇa tan surudnika hilaṅ tikaṅ astra katub</l>
+                    <l n="d">tikәl kahabalaṅ ta śūlanika sāk tumibeṅ jaladhi</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">umūr ya sakarәṅ madan manah acintya vara prabhava,</l>
+                    <l n="b">aneka vәkasiṅ kaśaktin atikādbhuta riṅ katara,</l>
+                    <l n="c">vәnaṅ gumәsәṅeṅ sarāt sahananiṅ surajanma kabeh,</l>
+                    <l n="d">savaṅnya kadi saptasūrya dumәlə̄ tәkaniṅ pralaya.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">yadin maluya śūnya taṅ bhuvana denya na lor na kidul</l>
+                    <l n="b">lāvan ta ya lәmah laṅit hilaṅa denya tәkeṅ jaladhi</l>
+                    <l n="c">yan ahyuna ta meman iṅ samara liṅnya ya dadyakәna</l>
+                    <l n="d">ya hetunika yan payoga humәnәṅ ya maṅeka hiḍәp.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">enak mara hәniṅnya tan dva manarira bhaṭāra kala,</l>
+                    <l n="b">agə̄ṅ dumudug iṅ laṅit ruhur ikāmәkasīṅ aruhur,</l>
+                    <l n="c">taṅanya gumagap surālaya kavәs tikaṅ indrapada,</l>
+                    <l n="d">hyaṅ arka matakut kasuṇḍul alayū sumurup makucәm.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">lumaṅkah aṅalor kahәnti katikaṅ bhuvanāṇḍa kabeh,</l>
+                    <l n="b">kasat bañunikaṅ samudra tinavunya ri jə̄ṅnya pisan,</l>
+                    <l n="c">ivaknika katūt kasaṅsaṅ i sukunya pәsut vuhaya,</l>
+                    <l n="d">hanan kaburayut kasambit i vulunya savaṅ kapukәt.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">lәmah pracalitākәdut kadi ginañjuh ikaṅ pṛthivī,</l>
+                    <l n="b">hanān kadi midə̄ṅ tikaṅ bhūvana denya tәkeṅ gagana,</l>
+                    <l n="c">gunuṅ kadi bitin pracaṇḍa gumivaṅ kadi cakra midәr,</l>
+                    <l n="d">rәbah kabarubuh tikaṅ kayu kabeh sahaneṅ acala.</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">paḍāvrәg alayū tapatapa haneṅ hiriśūnya vana</l>
+                    <l n="b">kasuṅsaṅ apuyәṅ kajәmbak avalik hana kontal adoh,</l>
+                    <l n="c">hanan vuvus i matya liṅnika vuruṅ yan aminta tuluṅ,</l>
+                    <l n="d">vaneh muna vuruṅ ndatan tulus apan ya masambat avū.</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">samaṅkanani śaktiniṅ nalamalā mәpәkīṅ bhuvana,</l>
+                    <l n="b">ndatan tuhu bhisanya pan kali hinernya yadin mijila,</l>
+                    <l n="c">kunaṅ pva tәkap iṅ kamārkhan i hatinya pәtәṅ sumaput,</l>
+                    <l n="d">ya hetunika yan parāharәp anirnakәneṅ nṛpati.</l>
+                </lg>
+            </div>
+            <div type="canto" n="36" met="jagatī group (?)">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕ⏓ [12]</note>
+                <lg n="1">
+                    <l n="a">nṛpaāputra madan sira yoga sandhi,</l>
+                    <l n="b">matutur pavarah hyaṅ anaṅga ṅūni,</l>
+                    <l n="c">ri katattvanikaṅ kala śisya durga,</l>
+                    <l n="d">ya dumeh sira met tanaṅ astra siddhi.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">humәnәṅ ta narendra maṅekacitta,</l>
+                    <l n="b">patitisniṅ acintya tәlas pinәh ya,</l>
+                    <l n="c">pinasaṅnira taṅ vara pañcatīrtha,</l>
+                    <l n="d">makagәgvan ikaṅ taya śūnya laṅgәṅ.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">ri huvusniṅ amiśra śarīra śūnya,</l>
+                    <l n="b">manarīra ta saṅ hyaṅ aṅekapakṣa,</l>
+                    <l n="c">bhuvanāṇḍa kabeh humәnәṅ katikṣṇan,</l>
+                    <l n="d">tәkapiṅ nala cintamaṇi samādhi.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">sumәnə̄ ta bhaṭāra jagat pramāṇa,</l>
+                    <l n="b">sakarī nāda niṣkala sūkṣmatattva,</l>
+                    <l n="c">mapa rūpa bhaṭāra rikaṅ samaṅkā,</l>
+                    <l n="d">taya varṇa luput sira yan vinastu.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">savulatnikanaṅ kala śisya durga,</l>
+                    <l n="b">ri narendra katon bhaṭāra denya,</l>
+                    <l n="c">maṅadәg ri lalāṭa narendraputra,</l>
+                    <l n="d">kadi teja sәnə̄nira sarvavarna.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">ya dumehnikanaṅ kalā yan mavәdya,</l>
+                    <l n="b">matakut ri bhaṭāra jagat gurutva,</l>
+                    <l n="c">sira teki vәkasniṅ anṛṣṭi siddhi,</l>
+                    <l n="d">ya dumehnika yan matakut katona,</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">malayū tikanaṅ kalā keraṅan ya,</l>
+                    <l n="b">masәnə̄tan amor ya riṅ antarikṣa,</l>
+                    <l n="c">maṅguhuh ya maliṇḍuṅan iṅ ganākrәp,</l>
+                    <l n="d">sumave riṅ aran pravarārya pārtha.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">ndah ayay mara koṅ asu pārtha mūdha,</l>
+                    <l n="b">pakaśatrunikiṅ kala śaktimanta,</l>
+                    <l n="c">vinaliṅmu tatan pamahāku maṅke,</l>
+                    <l n="d">tan umātya ri ko pvāku kaṣṭa hīna,</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">hәlәm iṅ kali yan vijilāku riṅ rāt,</l>
+                    <l n="b">kalakeya tikā ṅaranaṅkva tan len,</l>
+                    <l n="c">tiga sanak ikaṅ kala dadyanaṅkva,</l>
+                    <l n="d">irikākun umatyana pāṇḍava rva.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">hana rākṣasa sūkṣma hulunku śakti,</l>
+                    <l n="b">manamāna kәdə̄ ya ta dadyananya,</l>
+                    <l n="c">ri hatinta tikān umahanya tan len,</l>
+                    <l n="d">ya dumadyakәnāmana citta mūrkha.</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">irikākun umәtva sakeṅ madanta,</l>
+                    <l n="b">taya śūnya tikā havanaṅkva tan dva,</l>
+                    <l n="c">ndan i vādamu sānak akun pamәṅan,</l>
+                    <l n="d">kali yekana herakәnaṅkva maṅke,</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">ya ta pājar ikaṅ kala śisya durga,</l>
+                    <l n="b">ri narendra mulat sira tan vigāni,</l>
+                    <l n="c">atәhәr tikanaṅ kala mūr vināśa,</l>
+                    <l n="d">kadi megha paḍanya hilaṅ kalahrun.</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">ri hilaṅnikanaṅ kalā śisya durga,</l>
+                    <l n="b">kavәṅan ta narendra tumon hilaṅnya,</l>
+                    <l n="c">kadi riṅ svapәnekia hilaṅnya sūkṣma,</l>
+                    <l n="d">tәkapiṅ nala cintamaṇin samādhi.</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">ya dumeh sira saṅ viku tan maṅela,</l>
+                    <l n="b">masamādhi tatan katәṅәr pamūjā,</l>
+                    <l n="c">ndan acintya lәkasnira sūkṣma teka,</l>
+                    <l n="d">vәnaṅ ekaśarīra sirāṅ payajña.</l>
+                </lg>
+                <lg n="15">
+                    <l n="a">iva maṅkana tā nṛpaputra pārtha,</l>
+                    <l n="b">paṅalahnira rākṣasa tan śarāstra,</l>
+                    <l n="c">aradin ya masimpәn alit pamāti,</l>
+                    <l n="d">sira yogya tinūt sira denta dhīra.</l>
+                </lg>
+                <lg n="16">
+                    <l n="a">irikā ta narendra madan lumampah,</l>
+                    <l n="b">ḍatәṅeṅ patapan kahanan munīndra,</l>
+                    <l n="c">savarah hyaṅ anaṅga tinūt nireka,</l>
+                    <l n="d">maṅavetan anūt sira jə̄ṅ iṅ agra.</l>
+                </lg>
+            </div>
+            <div type="canto" n="37" met="basantatilaka">
+                <lg n="1">
+                    <l n="a">maṇḍәg ta lampah ira deni gәrәhnikaṅ lvah,</l>
+                    <l n="b">lvir śabdaniṅ kala humuṅ juga paṅiḍәpnya,</l>
+                    <l n="c">nәr tvasnirāṅaṅәnaṅәn humәnәṅ katikṣṇan,</l>
+                    <l n="d">dvandvan sirā rәṅәrәṅәn tәkapiṅ piśāca.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">yekan lumampah anusup sira halas gə̄ṅ,</l>
+                    <l n="b">akveh tikaṅ vinulatan paḍa rāmya śobha,</l>
+                    <l n="c">kayvanya kapva masәkar manәḍәṅ kabehnya,</l>
+                    <l n="d">kumbaṅ tumāp riya hanan vahu mūr tan andәl.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">mraknyāṅiriṅ ri paṅ ikaṅ kayu teja mәbaṅ,</l>
+                    <l n="b">svecchātәhәr ya manisik mamivir hәlarnya,</l>
+                    <l n="c">lyan tekanaṅ maṅiḍukus maturū tan imba,</l>
+                    <l n="d">siṅsal hәlarnya kasilir gumilap hijonya.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">luṅghā ta lampah ira saṅ nṛpaputra pārtha,</l>
+                    <l n="b">yekān kapaṅgih ikanaṅ lvah agə̄ṅ pavitra,</l>
+                    <l n="c">tustusnikaṅ bañu sakeṅ vukir indrakīla,</l>
+                    <l n="d">madrәs hilīnya mahәniṅ kadi nīla molah.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">yekan patīrtha sira saṅ nṛpaputra pārtha,</l>
+                    <l n="b">tri śādyaniṅ maśuci lakṣana len rahupnya,</l>
+                    <l n="c">sampun maṅastuti sirāyuga mudra cakra,</l>
+                    <l n="d">madyus ta saṅ nṛpatiputra tәhәr makәmkәm.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">agrah maṅel gәyuh ikaṅ suku len śarīra,</l>
+                    <l n="b">maṅkәp gigirnira maṅel tәkapiṅ mayuddha,</l>
+                    <l n="c">lāvan tigaṅ vәṅi lavasnira tan kәneṅ mrәm,</l>
+                    <l n="d">mvaṅ tan kәneṅ nasi dumeh sira luhyaṅ ambәk.</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">rūkṣāvәnәs kadi vavar tikanaṅ śarīra,</l>
+                    <l n="b">ṅrәsnyan pukah kukunikaṅ suku lot kasaṇḍuṅ,</l>
+                    <l n="c">yekan kinə̄m tәhәr sinusur lәmahnya,</l>
+                    <l n="d">vuṅkal hitәm ya ta paluṅguhaniṅ makәmkәm.</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">mәntas ta saṅ nṛpatiputra tәlasnirādyus,</l>
+                    <l n="b">enak ta buddhinira denya tәlas matustus,</l>
+                    <l n="c">somyākәmul maṅiḍukus ta sirān paluṅguh,</l>
+                    <l n="d">ri vitnikaṅ kayu manis masamīpa señjaṅ.</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">ṅkā teka saṅ nṛpati yan humәnәṅ maṅunṅun,</l>
+                    <l n="b">monәṅ ri saṅ babu lavan kala len saṅ antәn,</l>
+                    <l n="c">yekāsәkәl ri hati luh tәmahanya tan dva,</l>
+                    <l n="d">madrәs vәtunya ri matāmuharosah aṅlih.</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">maṅkin sirāṅisәkisәk sәsәgәn tan ampәt,</l>
+                    <l n="b">kāṅәn sarāmyaniṅ amukti tәkapnireka,</l>
+                    <l n="c">lāvan rarasniṅ inucap tәkapiṅ vvaṅ adyah,</l>
+                    <l n="d">maṅkin tikaṅ hati pәtәṅ hibәkan laronәṅ.</l>
+                </lg>
+            </div>
+            <div type="canto" n="38" met="mṛdukomala">
+                <lg n="1">
+                    <l n="a">saṅ nṛpātmaja taṅeh laranira yan,</l>
+                    <l n="b">tūt ta riṅ lara hiḍәpnira vulaṅun,</l>
+                    <l n="c">yeka hetunira yan paṅaṅәnaṅәn,</l>
+                    <l n="d">vitnikaṅ kayu pinetnira riṅ ati.</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">sampuniṅ lara hilaṅ tәkap ira saṅ,</l>
+                    <l n="b">phalgunāmuhara citta kadi maṇik.</l>
+                    <l n="c">dhīraniṅ hati pinәh lagi tinutur,</l>
+                    <l n="d">yeka hetuni manahnira malicin.</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">vahvadan siran umaṅkata maṅadәg,</l>
+                    <l n="b">yeka yan kasuririṅ sira mapuyәṅ,</l>
+                    <l n="c">deni tisnikaṅ avak tәhәr alapā,</l>
+                    <l n="d">yeka hetuni panonira na kunәṅ.</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">tana vavaṅ sira lumampah apan aṅel,</l>
+                    <l n="b">dohnikaṅ parana yeka vinulatan,</l>
+                    <l n="c">tūt hiriṅ lakunirān panәbunәbu,</l>
+                    <l n="d">tovi mār suku nirāpamuhara lon.</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">mogga tāphala ratәṅ vahu tumiba</l>
+                    <l n="b">naṅka duryan atasak sәḍәṅ amanis</l>
+                    <l n="c">yeka teka hinalapnira pinaṅan</l>
+                    <l n="d">tuṣṭa tāmbәk ira māri kaṅәlihan.</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">tovi yan tinahapan bañu mahәniṅ</l>
+                    <l n="b">yeka hetuni manahniran asiga</l>
+                    <l n="c">sampun enak ika taṅ manah umәnәb</l>
+                    <l n="d">yeka yan lumaku saṅ nṛpatanaya</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">tūt gәgәr lakunirān panәmu laṅə̄</l>
+                    <l n="b">ton tikaṅ sakaparәk ri havanira</l>
+                    <l n="c">kayvan iṅ vana kabeh paḍa masәkar</l>
+                    <l n="d">bāna taṅguli rurū tәkap iṅ aṅin</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">śīghra lampah ira saṅ nṛpatanaya</l>
+                    <l n="b">jə̄ṅnikaṅ gunuṅ agə̄ṅ kahalivatan</l>
+                    <l n="c">kīrṇa taṅ vinulatan pamuhara kuṅ</l>
+                    <l n="d">paṅnikaṅ kayu kabeh paḍa tumayuṅ</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">priṅ pәtuṅ hana vuluh gәbaṅ atuha</l>
+                    <l n="b">priṅ pәsiṅ hana pisaṅ gaḍiṅ aphala</l>
+                    <l n="c">len tikaṅ kayu talok hana kaludan</l>
+                    <l n="d">lvā jirәt hana kәbәn paḍali vuni</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">jaṅga hambavaṅ i sornya hana ririh</l>
+                    <l n="b">poh limus hvit aritih vilah ariṅin</l>
+                    <l n="c">añjavar vruha limo hana nalәkәt</l>
+                    <l n="d">jāti kumbili tabāṅ vvah ika maṅap</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">len haneṅ aṅkāna muvah ya vinulatan</l>
+                    <l n="b">biṅla muṅguh i kuvuṅnya vahu muṅup</l>
+                    <l n="c">mvaṅ vvah iṅ kәpoh ikāmlәkah amirah</l>
+                    <l n="d">mesi tuṅgal amaṅun turida lulut.</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">jambv abāṅ sәkar ikā ya ta mavulu,</l>
+                    <l n="b">vok hanonya magatәl vvah ika lurū</l>
+                    <l n="c">maṅhәmu ḍaṅus ujaṅnya katitisan</l>
+                    <l n="d">lyab vәrәhnya maputih lagi tumitis.</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">len tikaṅ kararapārәpa maṅayuk</l>
+                    <l n="b">pādapāṅlih avәnәs tәkap iṅ aṅin</l>
+                    <l n="c">maṅlәyәp matanikaṅ kidaṅ aturū</l>
+                    <l n="d">lvir katus bañunikaṅ vulakan asat</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">nyā taṅ aṅrimaṅakәn ri manah ira</l>
+                    <l n="b">lvirnikaṅ kadi mahā maṅiṅiniṅin</l>
+                    <l n="c">riṅ nṛpātmaja mapәk i manahira</l>
+                    <l n="d">denya śoka sira mepu kasih arәp</l>
+                </lg>
+            </div>
+            <div type="canto" n="39" met="mṛdukomala">
+                <note type="prosody">   | ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [18]</note>
+                <lg n="1">
+                    <l n="a">tan ngeh yan caritan laṅə̄nikaṅ alas paḍāmuhara kuṅ</l>
+                    <l n="b">luṅhā lampah irā nṛpātmaja matūt gәgәr lәṅit adoh</l>
+                    <l n="c">ṅkāne himbaṅ ikaṅ vukir hana ta pājaran kavulatan</l>
+                    <l n="d">rāmyārūm racaṇanya sarva kusumānәḍәṅ mrik umiṅiṅ</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">ṅkā tekā nṛpaputra yan penәmu bhikṣukāmava raga</l>
+                    <l n="b">paksāmeta gaṅan hiḍәpnira ya hetuniṅ mariṅ alas</l>
+                    <l n="c">sahyāṅiṇḍitakәn patil sira matūt hiriṅ tan ahili</l>
+                    <l n="d">maṅso śīghra narendra yan laku mareṅ sirātañataña</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">dū saṅtabya rānak mpu saṅ tapa, magantya ta mpu sakarәṅ</l>
+                    <l n="b">ndā mahyun varahәn ṅhulun ri ṅaraniṅ vanāśrama katon</l>
+                    <l n="c">lāvan teki ṅaran saṅ ugratapa yogya pājara tәmәn</l>
+                    <l n="d">tasyasih pva bapaṅku mājara ri saṅhulun dugaduga</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">nān liṅ saṅ nṛpaputra yekan aṅadәg ta saṅ tapa mulat</l>
+                    <l n="b">yatnālepana teki yan kamәna mājarātvaṅ ararәm</l>
+                    <l n="c">dū sojarni bapaṅku tan hana vaneh sireki vinuvus</l>
+                    <l n="d">śrī dvaipāyana nāma saṅ pinakaliṅganiṅ sapatapan</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">lāvan teki garanyaṅ āśrama riṅ iṅgitāmṛtapada</l>
+                    <l n="b">kakhyāti vinuvus patīrthanira saṅ mamet kalәpasәn</l>
+                    <l n="c">vastu byakta pavitra māṅilaṅakәn gәlәhniṅ umara</l>
+                    <l n="d">nān liṅ saṅ tapa śīghra yan laku muvah mareṅ halas agə̄ṅ</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">enak buddhini saṅ nṛpātmaja təkapnira mpu mavarah</l>
+                    <l n="b">yekādan sira yan lumakva ḍatəṅe mahārəṣivara</l>
+                    <l n="c">ṅkā tekā nṛpaputra yan ḍatəṅ i jə̄ṅ munīndra karuṇa</l>
+                    <l n="d">yatnāmbah acāmanā ləmah i pāda saṅ yativara</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">ṅkān śīghrā maṅadəg munīndra maməkul ri saṅ nṛpasuta</l>
+                    <l n="b">om vuṅsuṅku sabhāgya yan təka putuṅku liṅ munivara</l>
+                    <l n="c">atyanteki giraṅku denta putu yan ḍatəṅ riṅ acala</l>
+                    <l n="d">ndah ṅke ṅke taśileṅ patāraṇā nā liṅnirāgəməgəmən</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">sākṣāt riṅ svapəne ḍatəṅ nṛpati tan pasaṅkan inucap</l>
+                    <l n="b">ndātan kram kita yan tinonku kadi rūpaniṅ prihatina</l>
+                    <l n="c">toh vuṅsuṅku mapeki donani ḍatəṅta riṅ kadi kami</l>
+                    <l n="d">dak pājar ta putuṅku riṅ daməlā liṅ munīndra mavuvus</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">yekān śīghra narendra mājar atəhər ta luhnira mijil</l>
+                    <l n="b">hasrət śabda nirāvarah təkap ikaṅ taṅis pva masəkəl</l>
+                    <l n="c">pun dharmātmaja yan hilaṅ kəna binañcaneṅ dyutanikā</l>
+                    <l n="d">de saṅ korava duṣṭa tan hana vaneh mamet kirakira</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">kālap taṅ pura len sabhūṣaṇa maṇik tut āsana rikā</l>
+                    <l n="b">lāvan dṛvya huvus təlas paḍa haneri pun kurupati</l>
+                    <l n="c">ṅkā luṅhā ṇṛpa dharmaputra mara riṅ pradeśa masənə̄t</l>
+                    <l n="d">kasyāsih makəmul carik paḍa matuntunan kadi tavan</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">ṅkā ta prāpta sira mpu dhomya kalavan saṅ ārya vidura</l>
+                    <l n="b">śokāśā manaṅis tumon kasih arəpnikaṅ lima suta</l>
+                    <l n="c">mvaṅ devī ibuni ṅhulun sira tumūt kapāpa kaluṣa</l>
+                    <l n="d">“tan śobhā mapupul kabeh sira lavan saṅ ārya vidura</l>
+                </lg>
+            </div>
+            <div type="canto" n="40" met="viṣamara">
+                <note type="prosody"> ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ| ᵕᵕ⏓ [15]</note>
+                <lg n="1">
+                    <l n="a">“dvan ikin ḍatəṅ ra putu saṅ munīndra ri sira</l>
+                    <l n="b">“inutusni saṅ nṛpati dharmaputra katika</l>
+                    <l n="c">kalavan munīndra rəṣi dhomya tan hana vaneh</l>
+                    <l n="d">maṅutus mareṅ vukir ameta śūnya patapan</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">vukir indrakīla patuduhnireki parana</l>
+                    <l n="b">riṅ amet anugraha bhaṭāra rudra saphala</l>
+                    <l n="c">kalavan ri pādanira yogya māsiha təmən</l>
+                    <l n="d">ya ta liṅnira mpu rəṣi dhomya yan mapitutur”</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">nā vuvus narendra saha luh nirādaravayan</l>
+                    <l n="b">humənəṅ ta saṅ rəṣi savetnikaṅ lara magə̄ṅ</l>
+                    <l n="c">vəkasan munīndra mavuvus ri saṅ nṛpasuta</l>
+                    <l n="d">atərəh ta śabdanira somya mardava marūm</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">putuni ṅhulun lalu təkapta durnaya dahat</l>
+                    <l n="b">katəkan malānaputi maṅruvat sukha magə̄ṅ</l>
+                    <l n="c">vruh akun titah juga tinūtnikaṅ hala hayu</l>
+                    <l n="d">mapa pājaraṅkva ri putuṅku menaka rəṅə̄n</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">“pituturku ṅūni ri putuṅku sampun apagəh</l>
+                    <l n="b">“purih iṅ rumakṣa sukhaniṅ śarīra katika</l>
+                    <l n="c">“mada rāga moha ya musuhta nitya maparək</l>
+                    <l n="d">“ya ta lot mijil jagani riṅ sahiṣṇu muditā</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">“nṛpa dharmaputra ri təlas kumavruhi rika</l>
+                    <l n="b">“dhana sama bheda guṇa karma kāma viṣaya</l>
+                    <l n="c">“naya rājanīti ṅuniveh śivāgama putus</l>
+                    <l n="d">“lalu yan kəneṅ mala vikalpa mogga vulaṅun</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">“hana ta vvaṅ uttama vicakṣaṇa vruh aṅaji</l>
+                    <l n="b">“mapirak surūpa manəhər sujanma guṇavan</l>
+                    <l n="c">“ri samaṅkananya hana tan tulusnya rahayu</l>
+                    <l n="d">“mada rāga moha ya dumehnya tan panulusa</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">“ndak ajar putuṅku ri katattvan iṅ kurukula</l>
+                    <l n="b">“ya dumehnya durjana kalā manahnya yan ala</l>
+                    <l n="c">“dadiniṅ surākala lavasnikaṅ vudubasu</l>
+                    <l n="d">“maharəp mamuktya ya dumehnya mūrkha satata</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">“niyatāṅariṣṭakəna denya riṅ tribhuvana</l>
+                    <l n="b">“makasādhanaṅ kala si medi mūrti śakuni</l>
+                    <l n="c">“sabatəknya kapva ya kabehnya tan hana vaneh</l>
+                    <l n="d">”dadiniṅ kalāharəp amuktya riṅ janapada</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">“tumurun ta sihnira bhaṭāra riṅ jana kabeh</l>
+                    <l n="b">“irikāṅutus ta sira deva pañcakuśika</l>
+                    <l n="c">“sira maṅdadī kita manāma pāṇḍava lima</l>
+                    <l n="d">“inahā mamatya kalā koraveśvara śata</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">“minahā mamuktya rumuhun tikaṅ kurukula</l>
+                    <l n="b">“avərә pva deni panəmunya bhoga marumah</l>
+                    <l n="c">“pamatəknikaṅ kala dumehnya yān aṅunaṅun</l>
+                    <l n="d">“pinasuknikaṅ kala malūya śīrṇa pəjaha</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">“kita teki rakva vəkasan gumanti sinivi</l>
+                    <l n="b">“irikaṅ sarāt kita viśeṣa riṅ tribhuvana</l>
+                    <l n="c">“mataṅenikaṅ lara ya kə̄lakən hananika</l>
+                    <l n="d">“makagəgvanaṅ kaviratin manahta sakarəṅ</l>
+                </lg>
+            </div>
+            <div type="canto" n="41" met="suvaṅśapattra">
+                <note type="prosody">⏑ ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ [18]</note>
+                <lg n="1">
+                    <l n="a">“muvah ika rəṅvakən pitutur i ṅhulun iki ta laki</l>
+                    <l n="b">“lavalavaniṅ vənaṅ gumavayaṅ brata tapa kavikun</l>
+                    <l n="c">“daśaparamārtha taṅ takitakin manəkəta riṅ ulah</l>
+                    <l n="d">“daśamala dohakən ya pinakādi musuh iṅ atapa</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“kadi hana siddhaniṅ viku yadin karakətan iṅ ulah</l>
+                    <l n="b">“kabakaba len sapolahiṅ abuddhi vulatana pujin</l>
+                    <l n="c">“kadi maṅicuk manahniṅ umulat gatinika rinasan</l>
+                    <l n="d">“paməṅaməṅan hananya tuvi tan ləvihakəna təmən</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“daluvaṅ ikan lanā panusupan kadi vana gahana</l>
+                    <l n="b">“lagi pasənə̄taniṅ hala hajəṅ vruh aṅemukemuki</l>
+                    <l n="c">“pinakapanihnaniṅ para panəṅgahan i kaviratin</l>
+                    <l n="d">“viku kari saṅ viku ndi panəṅərta ri viku rasika</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“daluvaṅ ikā savaṅ maṅurusuk ri manah iṅ umulat</l>
+                    <l n="b">“dalu pamuninya tan tuhu vaneh bəcik ika ri daləm</l>
+                    <l n="c">“dalihaniṅ alpa kasyāasih ikaṅ paṅucapira vaneh</l>
+                    <l n="d">“daluvaṅ ikā sumimpən iri saṅ tuhutuhu malicin</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">“kunaṅ apan evəh iṅ vənaṅ asevaka tulusa viku</l>
+                    <l n="b">“karaṇanikaṅ trikāya ginave ya kadi pati juti</l>
+                    <l n="c">“hana paṅahā ri saṅ viku tikaṅ gavayakəna ləvih</l>
+                    <l n="d">“phalaniṅ acintya bhakti ri bhāṭara karaṇa təvasən</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">“dalu ta riṅ mūḍhaniṅ vvaṅ aharəp riṅ phalanikaṅ ulah</l>
+                    <l n="b">“ya ta ṅuniveh kabhaktyan iṅ inastava linəvihakən</l>
+                    <l n="c">“apan ika tan tulus juga hayunya hana halanika</l>
+                    <l n="d">“masilisilih tikaṅ hala hajəṅ kadi rahina vəṅi</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">“pira kari hayvaniṅ viku ya tan tuhutuhu mudita</l>
+                    <l n="b">“ṅuny uni yan vvaṅ alpaguṇa nīdhana tuvin aləməh</l>
+                    <l n="c">“pravala təkāpəṅiṅ təhər aṅalpa lumicin aṅucap</l>
+                    <l n="d">“purih iṅ anak təkeṅ guru halanya lagi kajamalan</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">“hana kari siddhaniṅ vənaṅ analpaka ri gurunika</l>
+                    <l n="b">“hana kari siddhaniṅ guru ya tan tulusa varah ika</l>
+                    <l n="c">“hana kari siddhaniṅ hayu ṅaranya yan inayamayam</l>
+                    <l n="d">“hana kari siddhaniṅ viku ya tan luməkasa matapa</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">“mataṅ ikanaṅ ləkas juga viśeṣa tuməkakəna riṅ</l>
+                    <l n="b">“sakaharəpan kasiddha makataṅgvana manah aradin</l>
+                    <l n="c">“dalu halaniṅ hiḍəp kuṭila tan tuhutuhu luməkas</l>
+                    <l n="d">“manah anahātəmah mati kapātaka ya kapilaṅə̄</l>
+                </lg>
+                <lg n="10">
+                    <l n="a">“pira kari dohnikaṅ kaləpasən parananiṅ atapa</l>
+                    <l n="b">“hana kari rūpa saṅ vənaṅ anuṅgalakəna bhuvana</l>
+                    <l n="c">“ndi karika saṅ pinet syapa mamet parananiṅ umara</l>
+                    <l n="d">“kasilib ikaṅ sarāt ri kahanan saṅ amava vinava</l>
+                </lg>
+                <lg n="11">
+                    <l n="a">“maṅaku ta saṅ viku vruh i bhaṭāra dumadi riṅ avak</l>
+                    <l n="b">“sira satatāhurip hana riṅ aṅga ta ya hananira</l>
+                    <l n="c">“mapa kari cihnaniṅ tuməmu lāvan i katəmunira</l>
+                    <l n="d">“mapa ta ləkasni saṅ viku tuməmvakəna hananira</l>
+                </lg>
+                <lg n="12">
+                    <l n="a">“nihan iki rehniran katəmu de saṅ anəmu kavikun</l>
+                    <l n="b">“luput inucap tunenaṅənaṅən gatinika ri daləm</l>
+                    <l n="c">“sira ta bhaṭāra śaṅkara vibhuhnira mamənuhi rāt</l>
+                    <l n="d">“sira ta viśeṣa sūkṣma manuduh tan ilu katuduhan</l>
+                </lg>
+                <lg n="13">
+                    <l n="a">“nihan ika deyaniṅ matapa hayva kita paləpaləh</l>
+                    <l n="b">“alit aganal tikaṅ mala vətunya ya katuturakən</l>
+                    <l n="c">“ṅuniṅuni yan masambhava vətunya kadi kala jaya</l>
+                    <l n="d">“ləkas ika riṅ kadhīran i hatinta puruṣa pəjaha</l>
+                </lg>
+                <lg n="14">
+                    <l n="a">“hana ta hənūnikaṅ mala vaneh śara viṣakusuma</l>
+                    <l n="b">“araras atis rəsəp sumusup iṅ hati manusunusup</l>
+                    <l n="c">“lagi rumakət mālit ri hati mogga kadi kataluhan</l>
+                    <l n="d">“mapagəh amor iṅ ambək umijil turida raga lulut</l>
+                </lg>
+                <lg n="15">
+                    <l n="a">“katuturakən ta denta putu hayva kita paləpaləh</l>
+                    <l n="b">“niyata hilaṅnikaṅ tapa yadin kita para hənəṅa</l>
+                    <l n="c">jagajaga riṅ śivārcana samādhi vəkas iṅ inucap</l>
+                    <l n="d">“katəmu taman pinet gati bhaṭāra yan inaṅənaṅən</l>
+                </lg>
+            </div>
+            <div type="canto" n="42" met="(?) triṣṭubh group">
+                <note type="prosody">⏑ ⏑ ⏑ |   ᵕ| ⏑ ⏑ | ⏓ [11] [tristapa?]</note>
+                <lg n="1">
+                    <l n="a">“hana ta ya vvaṅ sukha tan pamukti</l>
+                    <l n="b">“hana mamukti ndan aṅel kahīnan</l>
+                    <l n="c">“hana ya mandəl katunan ya dṛvya</l>
+                    <l n="d">“hana kahīnan ya sugih madṛvya</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">“sukhanikaṅ jñāna viśeṣa mūlya</l>
+                    <l n="b">“yatika mandəl sukha tan rinakva</l>
+                    <l n="c">“kunaṅ ikaṅ vvaṅ sukha tan pamukti</l>
+                    <l n="d">“yatika mevəh tuduhən ta riṅ rāt</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">“nihan ikā yogya muvah rəṅə̄nta</l>
+                    <l n="b">“puput ikaṅ kuñci rahasya yoga</l>
+                    <l n="c">“hana tutupniṅ pamasəh pamaṇḍi</l>
+                    <l n="d">“kamənani dhyāna maśucya tīrtha</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">“huvus ikaṅ jñāna mamiṇḍa śūnya</l>
+                    <l n="b">“irika ta byakta bhaṭāra nitya</l>
+                    <l n="c">“ri pucak iṅ pūrva ta pañcatīrtha</l>
+                    <l n="d">“vruh ika polah ikaṅ aṇḍa bhūmi”</l>
+                </lg>
+            </div>
+            <div type="canto" n="43" met="upendrabajrā">
+                <note type="prosody"> ᵕᵕ/   ᵕ/ ᵕᵕ/ ⏓ [11]</note>
+                <lg n="1">
+                    <l n="a">nahan ta pājar pravarārya bhikṣu</l>
+                    <l n="b">ri saṅ nṛpatisuta yeka śīghra</l>
+                    <l n="c">siran panəmbah manəhər prayatna</l>
+                    <l n="d">təlas mamūjā ri harəp munīndra</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">huvus mara vruhnira riṅ samādhi</l>
+                    <l n="b">lavan titahniṅ dadi yan kabhāva</l>
+                    <l n="c">pamiṇḍaniṅ mokṣa lavan śivātma</l>
+                    <l n="d">ya teka sampun rinəgəp cinipta</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">muvah ta pājarnira saṅ munīndra</l>
+                    <l n="b">ri deyaniṅ vvaṅ ḍatəṅeṅ girīndra</l>
+                    <l n="c">lavan tikaṅ yogya parāna rāmya</l>
+                    <l n="d">hiriṅnya vetan hana tīrtha muñcar</l>
+                    <note>[dvaipāyana].</note>
+                </lg>
+                <lg n="4">
+                    <l n="a">“ḍatəṅ ta pūtuṅku riṅ indrakīla</l>
+                    <l n="b">“bratanta nāṅkən savulan yar dudva</l>
+                    <l n="c">“phalanya meṅgal karuṇā bhaṭāra</l>
+                    <l n="d">“maran ta siddhā vara denta putrā</l>
+                </lg>
+            </div>
+            <div type="canto" n="44" met="(?) jagatī group">
+                <note type="prosody">ᵕᵕ|⏑⏑| ᵕᵕ| ᵕ&gt;⏓[12] [bhujaṅgaprayatna?]</note>
+                <lg n="1">
+                    <l n="a">nā vuvus munīndra ri saṅ ārya pārtha</l>
+                    <l n="b">mamuhun ta saṅ nṛpati śīghra luṅhā</l>
+                    <l n="c">ḍatəṅeṅ girīndra ya pinakṣa tan len</l>
+                    <l n="d">maṅalor ta lampah ira tūt vanāgə̄ṅ</l>
+                </lg>
+                <lg n="2">
+                    <l n="a">saḍatəṅnireṅ gunuṅ agə̄ṅ pavitra</l>
+                    <l n="b">aruhur ta səṅkan ika durga mevəh</l>
+                    <l n="c">maṅadəg mapiṅgir aləyə̄ rinaṅkal</l>
+                    <l n="d">təkapiṅ lumampah arirī tan aglis</l>
+                </lg>
+                <lg n="3">
+                    <l n="a">ri ḍatəṅnire pucak ikaṅ girīndra</l>
+                    <l n="b">daśadeśaniṅ bhuvana rāmya koṅaṅ</l>
+                    <l n="c">kalavan pasir kadi laṅit bañunya</l>
+                    <l n="d">maputih katon kadi ta megha lumrā</l>
+                </lg>
+                <lg n="4">
+                    <l n="a">hana teka tīrtha ri hiriṅniṅ agra</l>
+                    <l n="b">ri ləbakləbaknya maratā tan alva</l>
+                    <l n="c">irikā ta saṅ nṛpati yan paṅanti</l>
+                    <l n="d">magave paṅāśrayananiṅ masādhya</l>
+                </lg>
+                <lg n="5">
+                    <l n="a">ri huvusniṅ āśrama tiniṅkah i jrə̄</l>
+                    <l n="b">luməkas ta saṅ nṛpatiputra pārtha</l>
+                    <l n="c">magave prayoga masamādhi deva</l>
+                    <l n="d">makataṅgvan abrata sahiṣṇu pūjā</l>
+                </lg>
+                <lg n="6">
+                    <l n="a">ri təlasnirājapa mamantra siddhi</l>
+                    <l n="b">humənəṅ masādhya ri bhaṭāra sūkṣma</l>
+                    <l n="c">rahiṇeṅ kuləm juga sirān pamūjā</l>
+                    <l n="d">mata tan hanaṅ lupa lanā masādhya</l>
+                </lg>
+                <lg n="7">
+                    <l n="a">pira tekihən lavasirān payoga</l>
+                    <l n="b">satahun ḍatəṅ ta karuṇā bhaṭāra</l>
+                    <l n="c">irikā sirān kiraṭarūpa saṅ hyaṅ</l>
+                    <l n="d">kamənāṅanugrahanaṅ astra rāja</l>
+                </lg>
+                <lg n="8">
+                    <l n="a">ri təlasni saṅ nṛpatiputra siddha</l>
+                    <l n="b">inanugrahan sira təkap bhaṭāra</l>
+                    <l n="c">sapaminta saṅ nṛpati yan sinūṅhan</l>
+                    <l n="d">ṅuniveh yadin muliha riṅ kamokṣan</l>
+                </lg>
+                <lg n="9">
+                    <l n="a">ri huvus nirān vara viseṣa riṅ rāt</l>
+                    <l n="b">jayaśatru saṅ nṛpatiputra pārtha</l>
+                    <l n="c">sira tekihən tirutirun təkapta</l>
+                    <l n="d">tuməmuṅ sinādhya təkap iṅ kadhīran</l>
+                </lg>
+            </div>
+        </body>
+    </text>
+</TEI>
