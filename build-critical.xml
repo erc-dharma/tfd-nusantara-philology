@@ -32,7 +32,7 @@
     <git-clone-pull repository="git://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
 
     <fileset id="criticalXML" dir="./editions" includes="DHARMA_CritEd*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
-    <fileset id="criticalHTML" dir="" includes="*.xml"/>
+    <fileset id="criticalHTML" dir="./output/critical-edition/editedXML" includes="*.xml"/>
 
     <!-- Transformation XML vers XML -->
     <xslt force="true" style="./project-documentation/EditorialStylesheets/tpl-editorialConvention.xsl" destdir="./output/critical-edition/editedXML" extension=".xml" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
