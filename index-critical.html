@@ -168,7 +168,7 @@
         let htmlString = '';
         for (let file of data.filter(filterFiles(filter)).sort(sortFiles(filter))) {
           const fileName = file.path.replace('.md', '');
-          const fileDisplayName = fileName.replace('output/critical-edition/', '').replace('.html', '');
+          const fileDisplayName = fileName.replace('output/critical-edition/html/', '').replace('.html', '');
           htmlString += `<li class="list-group-item"><a href="${fileName}">${fileDisplayName}</a></li>`;
         }
         document.getElementById('list').innerHTML = htmlString;

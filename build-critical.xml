@@ -45,7 +45,7 @@
     <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-edition.xsl" destdir="./output/critical-edition/html" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="criticalHTML"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <regexpmapper from="EDITED_(.*)" to="\1"/>
+        <regexpmapper from="EDITED_(.*).xml" to="\1.html"/>
     </xslt>
 
 </project>

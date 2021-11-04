@@ -2,168 +2,147 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="svayambhu"
-     xml:lang="eng"
-     type="edition">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title type="main">Svayambhu</title>
-            <title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
-            <editor ref="part:argr">
-               <forename>Arlo</forename>
-               <surname>Griffiths</surname>
-            </editor>
-            <editor ref="part:tilu">
-               <forename>Timothy</forename>
-               <surname>Lubin</surname>
-            </editor>
-            <respStmt>
-               <resp>structuring of the TEI file</resp>
-               <persName>Arlo Griffiths</persName>
-            </respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <authority>DHARMA</authority>
-            <pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
-            <idno type="filename">DHARMA_CritEdSvayambhu</idno>
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Arlo Griffiths &amp; Timothy Lubin.</p>
-               </licence>
-            </availability>
-            <date from="2019" to="2025">2019-2025</date>
-         </publicationStmt>
-         <sourceDesc>
-            <listWit>
-               <witness xml:id="L">Leiden, Universiteitsbibliotheek, the Netherlands, Or. 4530: Balinese script on paper, van der Tuuk collection; typed Roman transcript: Leiden BCB portfolio 165</witness>
-               <witness xml:id="K">Kirtya, Singaraja, Bali, Indonesia, 774 (kropak 3) II A/3/774: Balinese script on lontar; typed Roman transcript: HKS 1883 = Leiden Or. 15.027</witness>
-               <witness xml:id="M">Kirtya, Singaraja, Bali, Indonesia, 280 (kropak 3) II A/3/280: Balinese script on lontar; typed Roman transcript: HKS 3046 = Leiden Or. 16.190</witness>
-               <!--
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="svayambhu" xml:lang="eng" type="edition">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title type="main">Svayambhu</title>
+    <title type="sub" subtype="editorial"
+     >Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
+    <editor ref="part:argr"> <forename>Arlo</forename> <surname>Griffiths</surname> </editor>
+    <editor ref="part:tilu"> <forename>Timothy</forename> <surname>Lubin</surname> </editor>
+    <respStmt>
+     <resp>structuring of the TEI file</resp>
+     <persName>Arlo Griffiths</persName>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>DHARMA</authority>
+    <pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
+    <idno type="filename">DHARMA_CritEdSvayambhu</idno>
+    <availability>
+     <licence target="https://creativecommons.org/licenses/by/4.0/">
+      <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+      <p>Copyright (c) 2019-2025 by Arlo Griffiths &amp; Timothy Lubin.</p> </licence>
+    </availability>
+    <date from="2019" to="2025">2019-2025</date>
+   </publicationStmt>
+   <sourceDesc>
+    <listWit>
+     <witness xml:id="L"
+      >Leiden, Universiteitsbibliotheek, the Netherlands, Or. 4530: Balinese script on paper, van der Tuuk collection; typed Roman transcript: Leiden BCB portfolio 165</witness>
+     <witness xml:id="K"
+      >Kirtya, Singaraja, Bali, Indonesia, 774 (kropak 3) II A/3/774: Balinese script on lontar; typed Roman transcript: HKS 1883 = Leiden Or. 15.027</witness>
+     <witness xml:id="M"
+      >Kirtya, Singaraja, Bali, Indonesia, 280 (kropak 3) II A/3/280: Balinese script on lontar; typed Roman transcript: HKS 3046 = Leiden Or. 16.190</witness>
+     <!--
 					Witkam's Leiden catalogue, if it helps:
 Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisanggraha. Copied from a lontar manuscript of the Balai Penelitian Bahasa, Singaraja, No. 280, being (a copy of?) a text of I Ktut Ginarsa in Banjar Paketan, Singaraja. Copied by I Gde Wirawan, on May 1, 1980, cheked by I Ktut Ginarsa (signature on p. 30). HKS 3046. [*Mal. 11.118]
 -->
-               <witness xml:id="SvaMSS">The Sanskrit text as implied by the Svayambhu manuscripts</witness>
-               <witness xml:id="EdO">
-                  <abbr type="siglum">Ed<hi rend="superscript">O</hi>
-                  </abbr>
-                  <bibl>
-                     <ptr target="bib:Olivelle2005_01"/>
-                  </bibl>
-               </witness>
-            </listWit>
-            <listBibl>
-               <biblStruct type="book"
-                           xml:id="Mandlik1886_01"
-                           corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
-                  <monogr>
-                     <title level="m">Mānava-dharma śāstra</title>
-                     <editor>
-                        <forename>Vishwanath Narayan</forename>
-                        <surname>Mandlik</surname>
-                     </editor>
-                     <author>
-                        <name>Govindaraja</name>
-                     </author>
-                     <imprint>
-                        <pubPlace>Bombay</pubPlace>
-                        <publisher>Ganpat Krishnaji's press</publisher>
-                        <date>1886</date>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-               <biblStruct type="book"
-                           xml:id="Olivelle2005_01"
-                           corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
-                  <monogr>
-                     <title level="m">Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
-                     <author>
-                        <forename>Patrick</forename>
-                        <surname>Olivelle</surname>
-                     </author>
-                     <imprint>
-                        <pubPlace>New York</pubPlace>
-                        <publisher>Oxford University Press</publisher>
-                        <date>2005</date>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-            </listBibl>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-		 <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-		  <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-		  <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <schemaRef type="guide"
-                    key="EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-         </listPrefixDef>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-         </langUsage>
-      </profileDesc>
-      <revisionDesc>
-         <change when="2021-09-13" who="part:axja">Updating the encoding pattern with quote element</change>
-         <change when="2021-01-13" who="part:argr">resolved all validation problems except use of ab for chapter colophons</change>
-         <change when="2020-05-29" who="part:axja">changing the structure: moving the @source content inside a note @type="parallels"</change>
-         <change when="2020-04-23" who="part:argr">started creation of TEI document</change>
-      </revisionDesc>
-   </teiHeader>
-   <!-- material for notes in TEI header once proper structure has been applied:
+     <witness xml:id="SvaMSS">The Sanskrit text as implied by the Svayambhu manuscripts</witness>
+     <witness xml:id="EdO"> <abbr type="siglum">Ed<hi rend="superscript">O</hi> </abbr> <bibl> <ptr
+      target="bib:Olivelle2005_01"/> </bibl> </witness>
+    </listWit>
+    <listBibl>
+     <biblStruct type="book" xml:id="Mandlik1886_01"
+      corresp="http://zotero.org/groups/1633743/items/7TI7IEPB">
+      <monogr>
+       <title level="m">Mānava-dharma śāstra</title>
+       <editor> <forename>Vishwanath Narayan</forename> <surname>Mandlik</surname> </editor>
+       <author> <name>Govindaraja</name> </author>
+       <imprint>
+        <pubPlace>Bombay</pubPlace>
+        <publisher>Ganpat Krishnaji's press</publisher>
+        <date>1886</date>
+       </imprint>
+      </monogr>
+     </biblStruct>
+     <biblStruct type="book" xml:id="Olivelle2005_01"
+      corresp="http://zotero.org/groups/1633743/items/7XQ47XAA">
+      <monogr>
+       <title level="m"
+        >Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
+       <author> <forename>Patrick</forename> <surname>Olivelle</surname> </author>
+       <imprint>
+        <pubPlace>New York</pubPlace>
+        <publisher>Oxford University Press</publisher>
+        <date>2005</date>
+       </imprint>
+      </monogr>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <projectDesc>
+    <!-- Part mandatory -->
+    <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+    <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
+    <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+   </projectDesc>
+   <editorialDecl>
+    <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+    <correction>
+     <p/>
+    </correction>
+    <normalization>
+     <p/>
+    </normalization>
+    <punctuation>
+     <p/>
+    </punctuation>
+   </editorialDecl>
+   <samplingDecl>
+    <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+    <p/>
+   </samplingDecl>
+   <schemaRef type="guide" key="EGCv01"
+    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+   <!-- Will need to be updated once a more official realase is done -->
+   <variantEncoding method="parallel-segmentation" location="internal"/>
+   <!-- Part mandatory -->
+   <listPrefixDef>
+    <prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)"
+     replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+     <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+    </prefixDef>
+    <prefixDef ident="part" matchPattern="([a-z]+)"
+     replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
+     <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+    </prefixDef>
+    <prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)"
+     replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
+     <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+    </prefixDef>
+    <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+     <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+    </prefixDef>
+    <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+     <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+    </prefixDef>
+   </listPrefixDef>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="san-Latn">Sanskrit, romanized</language>
+    <language ident="kaw-Latn">Old Javanese, romanized</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change when="2021-09-13" who="part:axja"
+    >Updating the encoding pattern with quote element</change>
+   <change when="2021-01-13" who="part:argr"
+    >resolved all validation problems except use of ab for chapter colophons</change>
+   <change when="2020-05-29" who="part:axja"
+    >changing the structure: moving the @source content inside a note @type="parallels"</change>
+   <change when="2020-04-23" who="part:argr">started creation of TEI document</change>
+  </revisionDesc>
+ </teiHeader>
+ <!-- material for notes in TEI header once proper structure has been applied:
 - both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a
 
 -->
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+ <text xml:space="preserve" xml:lang="kaw-Latn">
 		<body>
 
 <!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t·, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji, la:van mantri riṁ [01-03] vruḥ maviveka:,
@@ -317,7 +296,7 @@ matmahan ta ya vvalu vlas vkasan.</p>
   </listApp>
 <lg met="anuṣṭubh">
 	<l n="a">strīpuṁdharmo<!-- argr: this word is not present in Svayambhu at all!--> vibhāgaś ca</l> <l n="b">dyūtam <app><lem wit="#EdO">āhvaya</lem><rdg wit="#SvaMSS">āhvānam</rdg></app> eva ca |</l>
-	<l n="c">padāny aṣṭādaśaitāni</l> <l n="d"><app><lem wit="#EdO">vyavahārasthitāv iha</lem><rdg wit="SvaMSS">vyavahārasthitānīha</rdg></app> ||</l>
+	<l n="c">padāny aṣṭādaśaitāni</l> <l n="d"><app><lem wit="#EdO">vyavahārasthitāv iha</lem><rdg wit="#SvaMSS">vyavahārasthitānīha</rdg></app> ||</l>
 </lg>
     <listApp type="parallels">
         <app>
@@ -349,21 +328,7 @@ tan <app>
 <term xml:lang="san-Latn"><app><lem wit="#M">dattasyānapakarma</lem><rdg wit="#L">dattasyanasaka:rmma</rdg><rdg wit="#K">dattasyana: karma</rdg></app> ca</term>,
 <app><lem wit="#L">*karuddhāniṅ</lem><rdg wit="#K">karadḍaniṁ</rdg><rdg wit="#M">karudahiṁ</rdg></app><!-- ka-ruddha-an not in OJED--> huvus vinehakən.</p>
 <p><term xml:lang="san-Latn">
-	<app>
-		<lem>
-		<app>
-			<lem wit="#L #M">vetanasya</lem>
-			<rdg wit="#K">veka:nasya</rdg>
-		</app>
-		na ca
-		<app>
-			<lem wit="#K #M">dānam</lem>
-			<rdg wit="#L">daniṁ</rdg>
-		</app>
-		</lem>
-		<note>All mss. indicate that this was the received Sanskrit text, which makes perfect sense, but is nevertheless problematic because it is unmetrical.</note>
-	</app>
-</term>,
+ <app><lem><app><lem wit="#L #M">vetanasya</lem><rdg wit="#K">veka:nasya</rdg></app>na ca<app><lem wit="#K #M">dānam</lem><rdg wit="#L">daniṁ</rdg></app></lem><note>All mss. indicate that this was the received Sanskrit text, which makes perfect sense, but is nevertheless problematic because it is unmetrical.</note></app></term>,
 <!-- <term xml:lang="san-Latn"><app><lem type="emn">vetanasyaiva cādānam</lem><rdg wit="#L">vetanasya na ca daniṁ</rdg><rdg wit="#K">veka:nasya na cadanaṁ*</rdg><rdg wit="#M">vetanasya na ca danam</rdg></app></term>-->
 tan <app><lem wit="#L #K">kavehaniṅ</lem><rdg wit="#M">tavehaniṁ</rdg></app> upahan.
 <term xml:lang="san-Latn">samvidaś<!-- <app><lem wit="#L">samvidaś</lem><rdg wit="#K">samviḍaś</rdg><rdg wit="#M">samvidas</rdg></app> --> ca vyatikramaḥ</term>, advā riṅ samaya.
