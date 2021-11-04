@@ -184,7 +184,7 @@
       }
       (async () => {
         // Get GitHub repository file info
-        const response = await fetch('https://api.github.com/repos/erc-dharma/tfd-nusantara-philology/contents/output/critical-edition/');
+        const response = await fetch('https://api.github.com/repos/erc-dharma/tfd-nusantara-philology/contents/output/critical-edition/html');
         const data = await response.json();
         // Initialize search fields and results
         const search_form = document.getElementById('search_form');
