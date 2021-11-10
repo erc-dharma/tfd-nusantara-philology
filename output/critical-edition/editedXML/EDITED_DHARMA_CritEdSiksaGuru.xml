@@ -2,88 +2,101 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksaguru" type="edition" xml:lang="eng">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">Śikṣā Guru</title>
-                <editor><name>Aditia Gunawan</name></editor>
-                <respStmt>
-                    <resp>creation of the file</resp>
-                    <resp>intellectual authorship of edition</resp>
-                    <persName ref="part:adgu">
-                        <name>Aditia Gunawan</name>
-                    </persName>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>DHARMA</authority>
-                <pubPlace>Paris (France)</pubPlace>
-                <idno type="filename">DHARMA_CritEdSiksaGuru</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by/4.0/">
-                        <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="siksaguru"
+     type="edition"
+     xml:lang="eng">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Śikṣā Guru</title>
+            <editor>
+               <name>Aditia Gunawan</name>
+            </editor>
+            <respStmt>
+               <resp>creation of the file</resp>
+               <resp>intellectual authorship of edition</resp>
+               <persName ref="part:adgu">
+                  <name>Aditia Gunawan</name>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Paris (France)</pubPlace>
+            <idno type="filename">DHARMA_CritEdSiksaGuru</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
                             Licence. To view a copy of the licence, visit
                             https://creativecommons.org/licenses/by/4.0/ or send a letter to
                             Creative Commons, 444 Castro Street, Suite 900, Mountain View,
                             California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
-                    </licence>
-                </availability>
-                <date from="2019" to="2025">2019-2025</date>
-            </publicationStmt>
-            <sourceDesc>
-                <listWit>
-                    <witness xml:id="L642">
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement>Jakarta</settlement> <institution>Perpusnas</institution> 
-                                <idno>L 642</idno>
-                            </msIdentifier>
-                            <physDesc>
-                                <p>Gebang leaves, measuring 37.5 × 3.6 cm, brown wooden box, 23 folios, four lines. The manuscript is from Cilegon, Tarogong District, Garut (Krom 1914:72). The manuscript was copied in the village Mahapavitra (unidentified), on the western slope of a place called Kaləpasən.</p>
-                            </physDesc>
-                        </msDesc>
-                    </witness>
-                    <witness xml:id="L633">
-                        <msDesc>
-                        <msIdentifier>
-                        <settlement>Jakarta</settlement> 
-                        <institution>Perpusnas</institution> 
-                            <idno>L 633</idno>
-                        </msIdentifier>
-                            <physDesc>
-                                <p>The manuscript consists of 41 gebang leaves, each measuring 22.6 × 4 cm, stored in a red wooden box, four lines per folio. The manuscript is from Tarogong, Garut (ROD 1914: 71). The pages are numbered 1–40 by the copyist, but there are some number- ing errors: 0 instead of 10 (fol. 11v), 6 instead of 16 (fol. 17v), 10 instead of 20, 30 instead of 40. In addition, among these 40 pages, there is no page 33; after page 16 the manuscript jumps to 19, back to number 17, then 18. However, the text is coherent in this arrangement.</p>
-                            </physDesc>
-                        </msDesc>
-                    </witness>
-                    <witness xml:id="L628">
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement>Jakarta</settlement> <institution>Perpusnas</institution> 
-                                <idno>L 628</idno>
-                            </msIdentifier>
-                            <physDesc>
-                                <p>The manuscript of 23 gebang palm leaves, measuring 35 × 3.3 cm, each of which consists of 4 lines of writing. Most of the leaves are poorly damaged at the edges. The manuscript is wrapped in a kind of wooden box bearing the words “ms. Merbaboe”, indicating its provenance. Based on the record, it originated from Gedakan (old name of present-day Kedakan), Grabag dis- trict, Magelang, Central Java, on the northwest slope of Mount Merbabu. This manuscript comes from the gift of Mr. H. D. Levyssohn Norman, a Dutch politician who had served as secretary to the governor-general of the Dutch East Indies in 1869–1883, as well as an honorary member of the Batavian So- ciety for Arts and Sciences (BGKW) (NBG 1864: 71 and 111; <bibl><ptr target="bib:Hoepermans1914_01"/><citedRange>152</citedRange></bibl>; <bibl><ptr target="bib:ROD1914"/><citedRange>240</citedRange></bibl>).</p>
-                            </physDesc>
-                        </msDesc>
-                    </witness>
-                </listWit>
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="san-Latn">Sanskrit, romanized</language>
-                <language ident="kaw-Latn">Old Javanese, romanized</language>
-                <language ident="osn-Latn">Old Sundanese, romanized</language>
-            </langUsage>
-        </profileDesc>
-        <revisionDesc>
-            <change when="2021-09-27" who="part:axja">Adding the colophon template</change>
-            <change when="2020-10-25" who="part:adgu">Initial encoding</change>
-        </revisionDesc>
-    </teiHeader>
-    <text xml:space="preserve" xml:lang="kaw-Latn">
+                  <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="L642">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Jakarta</settlement>
+                        <institution>Perpusnas</institution>
+                        <idno>L 642</idno>
+                     </msIdentifier>
+                     <physDesc>
+                        <p>Gebang leaves, measuring 37.5 × 3.6 cm, brown wooden box, 23 folios, four lines. The manuscript is from Cilegon, Tarogong District, Garut (Krom 1914:72). The manuscript was copied in the village Mahapavitra (unidentified), on the western slope of a place called Kaləpasən.</p>
+                     </physDesc>
+                  </msDesc>
+               </witness>
+               <witness xml:id="L633">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Jakarta</settlement>
+                        <institution>Perpusnas</institution>
+                        <idno>L 633</idno>
+                     </msIdentifier>
+                     <physDesc>
+                        <p>The manuscript consists of 41 gebang leaves, each measuring 22.6 × 4 cm, stored in a red wooden box, four lines per folio. The manuscript is from Tarogong, Garut (ROD 1914: 71). The pages are numbered 1–40 by the copyist, but there are some number- ing errors: 0 instead of 10 (fol. 11v), 6 instead of 16 (fol. 17v), 10 instead of 20, 30 instead of 40. In addition, among these 40 pages, there is no page 33; after page 16 the manuscript jumps to 19, back to number 17, then 18. However, the text is coherent in this arrangement.</p>
+                     </physDesc>
+                  </msDesc>
+               </witness>
+               <witness xml:id="L628">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Jakarta</settlement>
+                        <institution>Perpusnas</institution>
+                        <idno>L 628</idno>
+                     </msIdentifier>
+                     <physDesc>
+                        <p>The manuscript of 23 gebang palm leaves, measuring 35 × 3.3 cm, each of which consists of 4 lines of writing. Most of the leaves are poorly damaged at the edges. The manuscript is wrapped in a kind of wooden box bearing the words “ms. Merbaboe”, indicating its provenance. Based on the record, it originated from Gedakan (old name of present-day Kedakan), Grabag dis- trict, Magelang, Central Java, on the northwest slope of Mount Merbabu. This manuscript comes from the gift of Mr. H. D. Levyssohn Norman, a Dutch politician who had served as secretary to the governor-general of the Dutch East Indies in 1869–1883, as well as an honorary member of the Batavian So- ciety for Arts and Sciences (BGKW) (NBG 1864: 71 and 111; <bibl>
+                              <ptr target="bib:Hoepermans1914_01"/>
+                              <citedRange>152</citedRange>
+                           </bibl>; <bibl>
+                              <ptr target="bib:ROD1914"/>
+                              <citedRange>240</citedRange>
+                           </bibl>).</p>
+                     </physDesc>
+                  </msDesc>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="san-Latn">Sanskrit, romanized</language>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+            <language ident="osn-Latn">Old Sundanese, romanized</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2021-09-27" who="part:axja">Adding the colophon template</change>
+         <change when="2020-10-25" who="part:adgu">Initial encoding</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-Latn">
         <body>
                <div type="chapter" n="1">
           <head type="editorial" xml:lang="eng">the pure circle of three bodily domains</head>
@@ -132,7 +145,7 @@
                     <app><lem wit="#L642 #L633">apan</lem><rdg wit="#L628">hapa</rdg></app> sinaṅguh rambut lәpas, ṅa, vulu pasagi, ṅa, hana uḍika, hana tater, hana sorasa, ṅa, ika ta kabaih yvagya karika paṅapusan ta irikaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik 
                     <app><lem type="norm">sarveṣṭa</lem><rdg wit="#L628">ṣarvesṭa</rdg><rdg wit="#L642 #L633">ṣavesṭa</rdg></app>, taham pih yāpusәn ta ri gaṅsa tambaga lavan timah, aparan ta yvagyanika, paṅapusan ta irikaṅ maṇik anargha, paṅikә<pb edRef="#L642" n="3r"/>tan ta irikaṅ maṇik sarveṣṭa, nahan 
                     <app><lem wit="#L642 #L633">liṅnya</lem><rdg wit="#L628">lvirnya</rdg></app> ri saṅ hyaṅ śāstra, <quote><foreign>ləpas ca vuṁkunuṁ 
-                        <app><lem wit="#L633">ceva</lem><rdg wit="#L642">cova</rdg></app>, Aḍi Ikaṁ, Uḍi Ika:, tate:r tatur tatya tuṅgәṅ nu yvagyanika</foreign></quote>
+                        <app><lem wit="#L633">ceva</lem><rdg wit="#L642">cova</rdg></app>, Aḍi Ikaṁ, Uḍi Ika:, tate: r tatur tatya tuṅgәṅ nu yvagyanika</foreign></quote>
                     <!-- THIS PARAGRAPH IS STILL CONFUSING -->
                    <!-- Apan ṣinaṁguḥ ram·but· lpas· <g type="filler">§</g>
 <lb n="3v2"/>ṅaranya, vuluṁ pasagi hana vuṁkunuṁ ṅa<space type="binding-hole"/>ranya, ya Uḍika, hana svarasa tater
@@ -158,7 +171,7 @@
                     <app><lem wit="#L642">aparan</lem><rdg wit="#L633 #L628">paran</rdg></app> tar 
                     <app><lem type="norm">yuktinika</lem><rdg wit="#L642 #L633 #L628">uk·tinika</rdg></app>, salah nija salah karma, salah 
                     <app><lem type="norm">svabhava</lem><rdg wit="#L628">sobava</rdg><rdg wit="#L642">svara, bava</rdg></app> ṅaranika, iva maṅkana ta saṅ hyaṅ dharma viśeṣa, sira maṇik anargha, ṅuniveh avakta yeka manik sarveṣṭa ṅaranya, ndah ta yāṅkәn gaṅsa tambaga lavan timah, ika tan yvagya 
-                    <app><lem wit="#L642">rakәtakna</lem><rdg wit="#L633">ra:kən·takəna</rdg></app> iri<pb edRef="#L633" n="5v"/>kaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik sarveṣṭa.</p> 
+                    <app><lem wit="#L642">rakәtakna</lem><rdg wit="#L633">ra: kən·takəna</rdg></app> iri<pb edRef="#L633" n="5v"/>kaṅ maṇik anargha, paṅikәtan ta irikaṅ maṇik sarveṣṭa.</p> 
                    
                    <!--nihan ya
  
@@ -189,7 +202,7 @@
                     <app><lem wit="#L633">usən</lem><rdg wit="#L642">Usin</rdg></app> hayva kasәlapan ambәk magәlәh, nirmalaṁ 
                     <app><lem type="norm">hr̥dayam</lem><rdg wit="#L642">radayəm</rdg><rdg wit="#L633">hradayəm</rdg></app> citam, ndah pahaliṅlaṅ 
                     <app><lem wit="#L633">kaṅ</lem><rdg wit="#L642">taṁ</rdg></app> manah 
-                    <app><lem type="emn">pvāmbək</lem><rdg wit="#L642">pvambhik</rdg><rdg wit="#L633">pva ma:bək</rdg></app> tiṅәt maṅaṅәn-aṅәn<supplied reason="omitted">,</supplied> prihәn 
+                    <app><lem type="emn">pvāmbək</lem><rdg wit="#L642">pvambhik</rdg><rdg wit="#L633">pva ma: bək</rdg></app> tiṅәt maṅaṅәn-aṅәn<supplied reason="omitted">,</supplied> prihәn 
                     <app><lem type="emn">bhikṣālakṣanam</lem><rdg wit="#L642 #L633">bhəkṣalakṣanəm</rdg></app>.
                 </p>
                 
@@ -213,18 +226,18 @@
                </div>
             
                 <div type="chapter" n="2">
-          <head type="editorial" xml:lang="eng">Second teacher's love: daśaśīla</head>
+          <head type="editorial" xml:lang="eng">Second teacher’s love: daśaśīla</head>
                 <p>ika hana kapindva 
                     <app><lem wit="#L642">asih</lem><rdg wit="#L633">sih</rdg></app> saṅ paṇḍita ri saṅ sevaka dharma, ya daśaśīla, ṅa, ndya ya nihan, 
                     <app><lem type="emn"><term xml:lang="san-Latn">śrotra</term></lem><rdg wit="#L642 #L633">svaṭā</rdg><note>The list of ten organs is based on <ptr target="#L642"/>, <ptr target="#L633"/> contains a different enumeration, i.e., <foreign>svaṭā, təvək, cakṣuḥ, jihva, grana, vak, pani, pada, payu, pastra</foreign>. This implies to the different order on their explanations. Despite the order, both mss. generaly share the same readings, so the variant are recorded in the apparatus.</note></app>, <term xml:lang="san-Latn">cakṣuh</term>, <term xml:lang="san-Latn">ghrāṇa</term>, <term xml:lang="san-Latn">jihvā</term>, <term xml:lang="san-Latn">vāk</term>, <term xml:lang="san-Latn">tvak</term>, <term xml:lang="san-Latn">pāṇi</term>, 
-                    <app><lem type="norm"><term xml:lang="san-Latn">pāyūpastha</term></lem><rdg wit="#L642">payu:pasṭa</rdg><rdg wit="#L633">payu, pas·tra</rdg></app>, <term xml:lang="san-Latn">pāda</term>, 
+                    <app><lem type="norm"><term xml:lang="san-Latn">pāyūpastha</term></lem><rdg wit="#L642">payu: pasṭa</rdg><rdg wit="#L633">payu, pas·tra</rdg></app>, <term xml:lang="san-Latn">pāda</term>, 
                     <app><lem wit="#L642 #L633">ini</lem><note>The <ptr target="#L633"/> and <ptr target="#L642"/> have the same reading on this word. This word is not attested in OJ, but common in OS. I consider it as OS intervention.</note></app>*<!-- OS vocabulary --> rəṅәkna saṅ sevaka dharma, 
                 </p>
                
                <p><app><lem type="emn"><term xml:lang="san-Latn">śrotra</term></lem><rdg wit="#L642 #L633">svaṭā</rdg></app> ṅaraniṅ taliṅa, apa viṣayaniṅ taliṅa <pb edRef="#L642" n="6r"/>, 
                    <app><lem type="norm">pinakadvāraniṅ</lem><rdg wit="#L642">pinakaḍvaraniṁ</rdg><rdg wit="#L633">pinadvaraniṁ</rdg></app> maṅrəṅә ikaṅ śabda hala hayu, 
                    <app><lem wit="#L633">maṅrəṅә</lem><rdg wit="#L642">ṅə</rdg></app> kita śabda 
-                   <app><lem wit="#L633">manis arum</lem><rdg wit="#L642">hu<add place="below">ma</add>:sa:rum·</rdg></app> enak manahta, 
+                   <app><lem wit="#L633">manis arum</lem><rdg wit="#L642">hu<add place="below">ma</add>: sa: rum·</rdg></app> enak manahta, 
                    <app><lem wit="#L633">maṅrəṅә</lem><rdg wit="#L633">ṅa</rdg></app> pva kita śabda mahala, 
                    <app><lem type="emn">sәsәk</lem><rdg wit="#L642">səsə</rdg><rdg wit="#L633">sakṣak</rdg></app> 
                    <app><lem type="emn">ta kahiḍəpan</lem><rdg wit="#L642">ta<add place="below">ka</add>na hdap·</rdg><rdg wit="#L633">tan ahidəpən·</rdg></app> doṣanika, tan 
@@ -234,7 +247,7 @@
               <p><term xml:lang="san-Latn">cakṣuh</term> ṅaraniṅ mata, apa visayaniṅ mata, anon hala hayu, aveh sukhaduhkha, 
                   <app><lem type="emn">yar apa</lem><rdg wit="#L642">yar napa</rdg><rdg wit="#L633">ya yan apa</rdg></app> apa 
                   <app><lem wit="#L633">ika</lem><rdg wit="#L642">I</rdg></app> aveh 
-                  <app><lem type="norm">sukha</lem><rdg wit="#L633"></rdg><rdg wit="#L642">suka duka</rdg></app>, pinakapanonta ri ulah rahayu laṅsar kita denya, yan apa ika 
+                  <app><lem type="norm">sukha</lem><rdg wit="#L633"/><rdg wit="#L642">suka duka</rdg></app>, pinakapanonta ri ulah rahayu laṅsar kita denya, yan apa ika 
                   <app><lem wit="#L642">aveh</lem><rdg wit="#L633">paveḥ</rdg></app> duhkha, mulata mas ri paḍanya janma len saka rika, 
                   <app><lem wit="#L642">lumaku</lem><rdg wit="#L633">lumakva</rdg></app> ta kita mareṅ 
                   <app><lem type="norm">sabhān</lem><rdg wit="#L642 #L633">sabaAn·</rdg></app>, 
@@ -243,11 +256,11 @@
                   <app><lem wit="#L642">tәlihәn</lem><rdg wit="#L633">tilihən·</rdg></app>, buḍaya, tikәl<supplied reason="omitted">,</supplied> kәjәṅ<supplied reason="omitted">,</supplied> kәkәṅ, salvirniṅ 
                   <app><lem type="emn">virūpa</lem><rdg wit="#L642">biparupa</rdg><rdg wit="#L633">bimarupa</rdg></app> 
                   <app><lem wit="#L642">haneṅ</lem><rdg wit="#L633">hane</rdg></app> rat, ṅuniveh buta 
-                  <app><lem type="norm">tulīniṅ</lem><rdg wit="#L642">tuli:ni</rdg></app> panvan paṅrəṅə̄, hayva seḍa kunaṅ 
+                  <app><lem type="norm">tulīniṅ</lem><rdg wit="#L642">tuli: ni</rdg></app> panvan paṅrəṅə̄, hayva seḍa kunaṅ 
                   <app><lem type="emn">kita yan</lem><rdg wit="#L642">kita ya</rdg><rdg wit="#L633">yan kita</rdg></app> anvan vvaṅ chedakṣara, hayva ta kita maṅkana, 
                   <app><lem type="emn">caṇḍaparihāra</lem><rdg wit="#L642 #L633">cәndaparihara</rdg></app> ṅaranya, apan tar kinavruhan ikaṅ 
                   <app><lem wit="#L642">nijakarma</lem><rdg wit="#L633">najakamaḥ</rdg></app>, ṅuniveh vvaṅ duhkha 
-                  <app><lem wit="#L642">denika</lem><rdg wit="#L633"></rdg></app>, ya ta kayatnakna saṅ sevaka dharma.</p>
+                  <app><lem wit="#L642">denika</lem><rdg wit="#L633"/></app>, ya ta kayatnakna saṅ sevaka dharma.</p>
                 
                 <p><term xml:lang="san-Latn">ghrāṇa</term> ṅaraniṅ iruṅ, apa viṣayaniṅ iruṅ, pinakapaṅambuṅ ta gandha <term xml:lang="san-Latn">surabhi</term>, <term xml:lang="san-Latn">asurabhi</term>, 
                     <app><lem type="norm"><term xml:lang="san-Latn">asādhāraṇa</term></lem><rdg wit="#L633">Asadarana</rdg><rdg wit="#L642"/></app>, 
@@ -277,7 +290,7 @@
                         <app><lem type="emn">jәnәka</lem><rdg wit="#L642 #L633">jənək</rdg></app> ri sakita denya, hayva ta kita maṅkana, 
                         <app><lem type="emn">tәka kasādhyan</lem><rdg wit="#L633">təka kasadain·</rdg><rdg wit="#L642">təkan·</rdg></app> deniṅ viṣayanya, ya ta 
                         <app><lem wit="#L642">ketu</lem><rdg wit="#L633">ke</rdg></app> 
-                        <app><lem type="norm">tumiṅgalakna</lem><rdg wit="#L642">tumigala:kna</rdg><rdg wit="#L633">tumigalakna</rdg></app> kārya hayu ri saṅ guru, tan karasa ikaṅ trikāya maṇḍala pariśuddha, 
+                        <app><lem type="norm">tumiṅgalakna</lem><rdg wit="#L642">tumigala: kna</rdg><rdg wit="#L633">tumigalakna</rdg></app> kārya hayu ri saṅ guru, tan karasa ikaṅ trikāya maṇḍala pariśuddha, 
                         <app><lem wit="#L642">yar</lem><rdg wit="#L633">ya</rdg></app> maṅkana.</p>
                    
                     <p><term xml:lang="san-Latn">vāk</term> ṅaraniṅ śabda, 
@@ -301,7 +314,7 @@
                         <app><lem type="norm">panuduh asta mukha</lem><rdg wit="#L642">panuduḥ Asta muka</rdg><rdg wit="#L633">panuduḥhan ṣamuka</rdg></app> saṅ guru, tan 
                         <app><lem type="emn">pacumbana</lem><rdg wit="#L642">pacubakaḥ</rdg><rdg wit="#L633">cumukaḥ</rdg></app> 
                         <app><lem type="norm">ya gaməlәn taḍahәn</lem><rdg wit="#L642">ya gamlәn tadaḥhәn</rdg><rdg wit="#L633">yan· gaməlan tadaḥ</rdg></app> saṅ guru, 
-                        <app><lem  wit="#L642">athava ta<pb edRef="#L633" n="13r"/>n</lem><rdg wit="#L633">Atavan ta</rdg></app> paṅalap drabya hyaṅ saṅ guru, ṅuniveh ri rat kabaih, kaliṅanya, hayva palarcidra* yar hana 
+                        <app><lem wit="#L642">athava ta<pb edRef="#L633" n="13r"/>n</lem><rdg wit="#L633">Atavan ta</rdg></app> paṅalap drabya hyaṅ saṅ guru, ṅuniveh ri rat kabaih, kaliṅanya, hayva palarcidra* yar hana 
                         <app><lem wit="#L642">kahyunya</lem><rdg wit="#L633">kahyanya</rdg></app>, 
                         <app><lem type="norm">hanāsipattra</lem><rdg wit="#L633">hanasipatra</rdg><rdg wit="#L642">hana sipasṭa</rdg></app> ri aji saṅ viku, nihan deyanta rumakṣa 
                         <app><lem wit="#L642">ta<pb edRef="#L642" n="8v"/>ṅan</lem><rdg wit="#L633">taṅanta</rdg></app>.</p>
@@ -344,7 +357,7 @@
                    
                 </div>
                 <div type="chapter" n="3">
-          <head type="editorial" xml:lang="eng">Third teacher's love: Five Instructions</head>
+          <head type="editorial" xml:lang="eng">Third teacher’s love: Five Instructions</head>
                     <p>nihan ta kapintiganya sih saṅ paṇḍita, ri saṅ sevaka dharma, ni<pb edRef="#L642" n="9v"/>han pañcaśikṣā, ṅa, 
                         <app><lem wit="#L642">ndya ya</lem><rdg wit="#L633">ndya</rdg></app> nihan.</p> 
                     
@@ -353,7 +366,7 @@
         <app><lem type="emn">śaucam</lem><rdg wit="#L642 #L633">sucyam</rdg></app> āhāralāghavam</l> 
     <l n="2"><app><lem type="conj">apramādaś ca pañca vaite</lem><rdg wit="#L642">Apramaḍasvateḥ</rdg><rdg wit="#L633">Apramadasvate</rdg></app> 
         <app><lem type="norm">niyamāḥ</lem><rdg wit="#L642">niyamaḥ</rdg><rdg wit="#L633">niyama</rdg></app> 
-        <app><lem type="norm">parikīrtitāḥ</lem><rdg wit="#L642">sarikәta:taḥ</rdg><rdg wit="#L633">parikititaḥ</rdg></app></l>
+        <app><lem type="norm">parikīrtitāḥ</lem><rdg wit="#L642">sarikәta: taḥ</rdg><rdg wit="#L633">parikititaḥ</rdg></app></l>
 </lg>
                     <listApp type="parallels">
                         <app>
@@ -362,8 +375,8 @@
                         </app>
                     </listApp>
                   
-                    <p><app><lem type="norm"><term xml:lang="san-Latn">akrodho</term></lem><rdg wit="#L633">Akrodva</rdg><rdg wit="#L642">Anakroda:dva</rdg></app>, ṅa, tar dadi ika saṅ sevaka dharma, 
-                        <app><lem type="emn">mentonakәn</lem><rdg wit="#L642">mentona:kәna:</rdg><rdg wit="#L633">men·tvan·kən·</rdg></app> krodhanya i harəpәn saṅ guru, ṅuniveh i para sujanma 
+                    <p><app><lem type="norm"><term xml:lang="san-Latn">akrodho</term></lem><rdg wit="#L633">Akrodva</rdg><rdg wit="#L642">Anakroda: dva</rdg></app>, ṅa, tar dadi ika saṅ sevaka dharma, 
+                        <app><lem type="emn">mentonakәn</lem><rdg wit="#L642">mentona: kәna:</rdg><rdg wit="#L633">men·tvan·kən·</rdg></app> krodhanya i harəpәn saṅ guru, ṅuniveh i para sujanma 
                         <app><lem wit="#L642">kabaih</lem><rdg wit="#L633">kabeḥhan·</rdg></app>, 
                         <app><lem type="emn"><term xml:lang="san-Latn">guruśuśruṣā</term></lem><rdg wit="#L642">gurususra</rdg><rdg wit="#L633">gurusrusa</rdg></app> ṅaranya,  
                         <app><lem wit="#L642">bakty anukul</lem><rdg wit="#L633">bakty anuṁkulan</rdg></app> ta kita ri saṅ guru, tar madvah ri suku saṅ 
@@ -386,7 +399,7 @@
                         <app><lem type="emn">kāmakara</lem><rdg wit="#L642">kama ri</rdg><rdg wit="#L633">kumarak</rdg></app> śīghrānaḍah, hayva ta kita 
                         <app><lem wit="#L642">maṅkana</lem><rdg wit="#L633">makana</rdg></app>, 
                         <app><lem type="norm">ya kukṣi</lem><rdg wit="#L633">ya kuksi</rdg><rdg wit="#L642">tan kasi</rdg></app> pura ṅaranya, umapa pva deniṅ manaḍah kaliṅanya, ya ta prāṇa sadhāraṇa juga upajīvaniṅ 
-                        <app><lem wit="#L633">umaṅən-aṅәn</lem><rdg wit="#L642">Umaṅina:ṅәn</rdg></app> saṅ hyaṅ hayu, nihan pañcaśikṣā, ṅa, kayatnakna saṅ sevaka dharma.</p>
+                        <app><lem wit="#L633">umaṅən-aṅәn</lem><rdg wit="#L642">Umaṅina: ṅәn</rdg></app> saṅ hyaṅ hayu, nihan pañcaśikṣā, ṅa, kayatnakna saṅ sevaka dharma.</p>
                     
                 </div>
                 
@@ -398,7 +411,7 @@
                    
                     <lg xml:lang="san-Latn">
                         <l n="1"><app><lem type="norm">ālekhyam</lem><rdg wit="#L642">Alekyəm·</rdg><rdg wit="#L633">Alekyam·</rdg></app> 
-                            <app><lem type="emn">hasitam</lem><rdg wit="#L642">citəm</rdg><rdg wit="#L633"></rdg></app> 
+                            <app><lem type="emn">hasitam</lem><rdg wit="#L642">citəm</rdg><rdg wit="#L633"/></app> 
                             <app><lem type="emn">gītam</lem><rdg wit="#L642 #L633">gətəm</rdg></app> 
                             <app><lem type="norm">jr̥mbhanam</lem><rdg wit="#L642">jraḥbanәm</rdg><rdg wit="#L633">jrəmbhanəm</rdg></app> 
                             <app><lem type="conj" rend="check">ca kaṇṭhāravāñ</lem><rdg wit="#L642">kadaranəm</rdg><rdg wit="#L633"><add place="below">ka</add>daranəm·</rdg></app></l> 
@@ -426,7 +439,7 @@
                         <term xml:lang="san-Latn"><app><lem type="emn"><term xml:lang="san-Latn">jr̥mbhanam</term></lem><rdg wit="#L642">jraḥbhanәm·</rdg><rdg wit="#L633">jrəbanəm·</rdg></app></term> tan paṅucap lapā varəg ri harəpә<pb edRef="#L642" n="11r"/>n saṅ guru, <term xml:lang="san-Latn">kaṇṭhāra<pb edRef="#L633" n="17v"/>vam</term>, tan 
                         <app><lem type="emn">paṅhvab</lem><rdg wit="#L642">paṅvamka</rdg><rdg wit="#L633">paṅvambha</rdg></app>, 
                         <term xml:lang="san-Latn"><app><lem wit="#L642"><sic>akadanəm</sic></lem><rdg wit="#L633">Akadaranəm·</rdg></app></term> tan paṅulet ri harəpәn saṅ guru, <term xml:lang="san-Latn"><sic>sudәm</sic> phalarahasyam</term> tan 
-                        <app><lem type="emn">paṅucap aṅkara</lem><rdg wit="#L642">paṅucapa:kar</rdg><rdg wit="#L633">paṅucap aṁkar</rdg></app> ri harəpәn saṅ guru, ṅuniveh mikvanvakәn* namaniṅ mañal<supplied reason="omitted">,</supplied> hila-hila maṅkana, 
+                        <app><lem type="emn">paṅucap aṅkara</lem><rdg wit="#L642">paṅucapa: kar</rdg><rdg wit="#L633">paṅucap aṁkar</rdg></app> ri harəpәn saṅ guru, ṅuniveh mikvanvakәn* namaniṅ mañal<supplied reason="omitted">,</supplied> hila-hila maṅkana, 
                         <term xml:lang="san-Latn"><app><lem type="emn">na karotu</lem><rdg wit="#L642">na ka2teḥ</rdg><rdg wit="#L633">kvateḥ</rdg></app> gurumukhe</term> ṅaranya, nihan 
                         <app><lem wit="#L642">kaliṅanya</lem><rdg wit="#L633"><unclear>ta</unclear>n· linanya</rdg></app>, tar magavayakna saṅ sevaka dharma.</p>
               
@@ -434,7 +447,7 @@
                     
                     <lg xml:lang="san-Latn">
                         <l n="1"><app><lem type="emn">śalākāñjanam</lem><rdg wit="#L642">sellajanәm</rdg><rdg wit="#L633">selakajanəm·</rdg></app> suravile, 
-                            <app><lem type="emn">paṇadantagharsādhyasta</lem><rdg wit="#L642">panadartaga:svaḍyus</rdg><rdg wit="#L633">panadan·tagar sodya</rdg></app> 
+                            <app><lem type="emn">paṇadantagharsādhyasta</lem><rdg wit="#L642">panadartaga: svaḍyus</rdg><rdg wit="#L633">panadan·tagar sodya</rdg></app> 
                             <app><lem wit="#L642">ceva</lem><rdg wit="#L633">cava</rdg></app></l> 
                         <l n="2"><app><lem type="norm">maprayāsamagama</lem><rdg wit="#L642">maprayasamagama:</rdg><rdg wit="#L633">maprayasamaṁgama</rdg></app>, 
                             <app><lem wit="#L642">ceva masva ceva mibuḥ</lem><rdg wit="#L633">cava<unclear reason="eccentric_ductus">ma</unclear>so <space type="binding-hole"/>sevavibu</rdg></app></l> 
@@ -445,14 +458,14 @@
                     <p>ka, 
                         <app><lem type="emn"><term xml:lang="san-Latn">śalākāñjanam</term></lem><rdg wit="#L642 #L633">selajanәm·</rdg></app> ta<pb edRef="#L642" n="11v"/>n pacәləkan ri harəpәn saṅ guru, ri harəpәn *<app><lem wit="#L633">astri</lem><rdg wit="#L642">Asti</rdg></app> laraṅan, <term xml:lang="san-Latn">suravile</term> tan <app><lem type="emn">pakrala-krala</lem><rdg wit="#L642">tan pakrale-krale</rdg><rdg wit="#L633">tan pakrola</rdg></app>* yar paṅucap ṅuniveh yan pasila, 
                         <app><lem type="emn">tan lepana</lem><rdg wit="#L642 #L633">lepana</rdg></app>, tan pavәdakan, yar 
-                        <app><lem wit="#L642">baturan</lem><rdg wit="#L633"></rdg></app> saṅ guru, ṅuniveh mijil 
+                        <app><lem wit="#L642">baturan</lem><rdg wit="#L633"/></app> saṅ guru, ṅuniveh mijil 
                         <app><lem wit="#L642">valaharnya</lem><rdg wit="#L633">valahanya</rdg></app> panti, asvāgata 
                         <app><lem wit="#L642">kunaṅ</lem><rdg wit="#L633">kunə</rdg></app>, 
                         <app><lem type="emn" rend="check"><term xml:lang="san-Latn">dantagharsā</term></lem><rdg wit="#L642">dartaga</rdg><rdg wit="#L633">den·taga</rdg></app>, tan pasusur yan paṅucap lavan saṅ guru, 
                         <app><lem type="norm"><term xml:lang="san-Latn">adhyasta</term></lem><rdg wit="#L642">Aḍyasta</rdg><rdg wit="#L633">Adyus·ta</rdg></app> tar 
                         <app><lem wit="#L633">pahyasniṅ</lem><rdg wit="#L642">pahyaṁ sni</rdg></app> memen, 
                         <app><lem type="norm">agəṇḍiṅ</lem><rdg wit="#L633">Agədiṁ</rdg><rdg wit="#L642">Agdəḥ</rdg></app> kecaka, 
-                        <app><lem type="emn"><term xml:lang="san-Latn">hārahataḥ</term></lem><rdg wit="#L642">ha2hataḥ</rdg><rdg wit="#L633">Arva:hataḥ</rdg></app> tan pavaja 
+                        <app><lem type="emn"><term xml:lang="san-Latn">hārahataḥ</term></lem><rdg wit="#L642">ha2hataḥ</rdg><rdg wit="#L633">Arva: hataḥ</rdg></app> tan pavaja 
                         <app><lem type="emn">savilah</lem><rdg wit="#L633">salivaḥ</rdg></app>, 
                         <app><lem type="emn"><term xml:lang="san-Latn">prayāsa<pb edRef="#L633" n="19r"/>māgama</term></lem><rdg wit="#L642 #L633">prәyasamagama</rdg></app>, tan padәləan lavan 
                         <app><lem type="emn">istri</lem><rdg wit="#L642">Astra</rdg><rdg wit="#L633">as·tri</rdg></app> laraṅan, ṅuniveh 
@@ -510,7 +523,7 @@
           <head type="editorial" xml:lang="eng">daśakleśa</head>
                     <p>ndah nihan yuktinya.</p>
                     <lg xml:lang="san-Latn">
-                        <l n="1">vigataḥ kleśapāpe ’smin,</l> 
+                        <l n="1">vigataḥ kleśapāpe’smin,</l> 
                         <l n="2">vigataḥ sarvaduhkhinaḥ</l>
                         <l n="3">kurvanti kuśalam mahat</l>
                     </lg>
