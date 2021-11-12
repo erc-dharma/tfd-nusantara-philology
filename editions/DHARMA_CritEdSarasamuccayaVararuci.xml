@@ -10,25 +10,31 @@
       <fileDesc>
          <titleStmt>
             <title type="main">Sārasamuccaya</title>
+         	<title type="sub" subtype="editorial">Digital Critical Edition of an Anthology of Sanskrit Stanza on <foreign>dharma</foreign> with Old Javanese Paraphrase</title>
+	<author>Vararuci</author>
+	<editor ref="part:argr">Arlo Griffiths</editor>
             <respStmt>
                <persName>Unknown</persName>
                <resp>Typing of the Sanskrit parts</resp>
             </respStmt>
             <respStmt>
-               <persName>Eko Bastiawan</persName>
-               <resp>Typing of the Old Javanese parts (2020)</resp>
+               <persName ref="part:ekba">Eko Bastiawan</persName>
+               <resp>Typing of the Old Javanese parts (2020–2021)</resp>
             </respStmt>
             <respStmt>
-               <persName>Arlo Griffiths</persName>
-               <resp>Structuring of the TEI file and quality control</resp>
+               <persName ref="part:axja">Axelle Janiak</persName>
+               <resp>Structuring of the TEI file</resp>
             </respStmt>
+         	<respStmt>
+         		<persName ref="part:argr">Arlo Griffiths</persName>
+         		<resp>General supervision and quality control</resp>
+         	</respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Paris</pubPlace>
             <publisher>EFEO</publisher>
             <idno type="filename">DHARMA_CritEdSarasamuccayaVararuci</idno>
-            <!-- Replace by filename, e.g. DHARMA_CritEdSiksaGuru -->
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
@@ -39,12 +45,12 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-               <witness xml:id="ka">Raghu Vira's क: Leiden, UB, LOr 4471</witness>
-               <witness xml:id="kha">Raghu Vira's ख: Jakarta, Perpusnas, Br 661</witness>
-               <witness xml:id="ga">Raghu Vira's ग: Leiden, UB, LOr 4470</witness>
-               <witness xml:id="ca">Raghu Vira's च: Leiden, UB, LOr 4469</witness>
-               <witness xml:id="cha">Raghu Vira's छ: Jakarta, Perpusnas, 574, roman transcript on paper from lontar L 860</witness>
-               <witness xml:id="ja">Raghu Vira's ज: a lontar acquired by Raghu Vira on Bali.</witness>
+            	<witness xml:id="ka"><abbr type="siglum">क</abbr>Raghu Vira's क: Leiden, UB, LOr 4471</witness>
+            	<witness xml:id="kha"><abbr type="siglum">ख</abbr>Raghu Vira's ख: Jakarta, Perpusnas, Br 661</witness>
+            	<witness xml:id="ga"><abbr type="siglum">ग</abbr>Raghu Vira's ग: Leiden, UB, LOr 4470</witness>
+            	<witness xml:id="ca"><abbr type="siglum">च</abbr>Raghu Vira's च: Leiden, UB, LOr 4469</witness>
+            	<witness xml:id="cha"><abbr type="siglum">छ</abbr>Raghu Vira's छ: Jakarta, Perpusnas, 574, roman transcript on paper from lontar L 860</witness>
+            	<witness xml:id="ja"><abbr type="siglum">ज</abbr>Raghu Vira's ज: a lontar acquired by Raghu Vira on Bali.</witness>
                <witness xml:id="EdRV">
                   <abbr type="siglum">Ed<hi rend="superscript">RV</hi>
                   </abbr>
@@ -55,7 +61,8 @@
                <witness xml:id="EdA">
                   <abbr type="siglum">Ed<hi rend="superscript">A</hi>
                   </abbr>
-                  <bibl>
+                  <listBibl>
+	       <bibl>
                      <ptr target="bib:Ando2018_01"/>
                   </bibl>
                   <bibl>
@@ -66,7 +73,7 @@
                   </bibl>
                   <bibl>
                      <ptr target="bib:Ando2021_01"/>
-                  </bibl>
+                  </bibl></listBibl>
                </witness>
             </listWit>
          </sourceDesc>
@@ -78,7 +85,7 @@
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
          </projectDesc>
          <editorialDecl>
-				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
             <correction>
                <p/>
             </correction>
@@ -93,7 +100,7 @@
             </interpretation>
          </editorialDecl>
          <samplingDecl>
-				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+	<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
             <p/>
          </samplingDecl>
          <schemaRef type="guide"
@@ -150,7 +157,8 @@
 			<div type="dyad" n="1">
 				<p>bhagavān vararuci mupulakən sāra-sāra saṅ hyaṅ aṣṭādaśaparva, gave bhagavān byāsa, mataṅnyan panamaskāra sira i bhagavān byāsa, liṅnira,</p>
 			</div>
-			<div type="dyad" n="2"><quote type="base-text" xml:lang="san-Latn"> <lg n="1" met="upajāti">
+			<div type="dyad" n="2"><quote type="base-text" xml:lang="san-Latn"> 
+			   <lg n="1" met="upajāti" rend="met">
 				<l n="a">jajñe bahujñaṁ paramābhyudāraṁ</l>
 				<l n="b">yaṁ dvīpamadhye sutam ātmabhāvāt|</l>
 				<l n="c">parāśarāt satyavatī maharṣiṁ</l>
