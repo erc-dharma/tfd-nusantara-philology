@@ -2,153 +2,143 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="sarasamuccaya"
-     xml:lang="eng"
-     type="edition">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title type="main">Sārasamuccaya</title>
-         	<title type="sub" subtype="editorial">Digital Critical Edition of an Anthology of Sanskrit Stanza on <foreign>dharma</foreign> with Old Javanese Paraphrase</title>
-	<author>Vararuci</author>
-	<editor ref="part:argr">Arlo Griffiths</editor>
-            <respStmt>
-               <persName>Unknown</persName>
-               <resp>Typing of the Sanskrit parts</resp>
-            </respStmt>
-            <respStmt>
-               <persName ref="part:ekba">Eko Bastiawan</persName>
-               <resp>Typing of the Old Javanese parts (2020–2021)</resp>
-            </respStmt>
-            <respStmt>
-               <persName ref="part:axja">Axelle Janiak</persName>
-               <resp>Structuring of the TEI file</resp>
-            </respStmt>
-         	<respStmt>
-         		<persName ref="part:argr">Arlo Griffiths</persName>
-         		<resp>General supervision and quality control</resp>
-         	</respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <authority>DHARMA</authority>
-            <pubPlace>Paris</pubPlace>
-            <publisher>EFEO</publisher>
-            <idno type="filename">DHARMA_CritEdSarasamuccayaVararuci</idno>
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Arlo Griffiths and Eko Bastiwan.</p>
-               </licence>
-            </availability>
-            <date from="2020" to="2025">2020-2025</date>
-         </publicationStmt>
-         <sourceDesc>
-            <listWit>
-            	<witness xml:id="ka"><abbr type="siglum">क</abbr>Raghu Vira's क: Leiden, UB, LOr 4471</witness>
-            	<witness xml:id="kha"><abbr type="siglum">ख</abbr>Raghu Vira's ख: Jakarta, Perpusnas, Br 661</witness>
-            	<witness xml:id="ga"><abbr type="siglum">ग</abbr>Raghu Vira's ग: Leiden, UB, LOr 4470</witness>
-            	<witness xml:id="ca"><abbr type="siglum">च</abbr>Raghu Vira's च: Leiden, UB, LOr 4469</witness>
-            	<witness xml:id="cha"><abbr type="siglum">छ</abbr>Raghu Vira's छ: Jakarta, Perpusnas, 574, roman transcript on paper from lontar L 860</witness>
-            	<witness xml:id="ja"><abbr type="siglum">ज</abbr>Raghu Vira's ज: a lontar acquired by Raghu Vira on Bali.</witness>
-               <witness xml:id="EdRV">
-                  <abbr type="siglum">Ed<hi rend="superscript">RV</hi>
-                  </abbr>
-                  <bibl>
-                     <ptr target="bib:RaghuVira1962_01"/>
-                  </bibl>
-               </witness>
-               <witness xml:id="EdA">
-                  <abbr type="siglum">Ed<hi rend="superscript">A</hi>
-                  </abbr>
-                  <listBibl>
-	       <bibl>
-                     <ptr target="bib:Ando2018_01"/>
-                  </bibl>
-                  <bibl>
-                     <ptr target="bib:Ando2020_01"/>
-                  </bibl>
-                  <bibl>
-                     <ptr target="bib:Ando2020_02"/>
-                  </bibl>
-                  <bibl>
-                     <ptr target="bib:Ando2021_01"/>
-                  </bibl></listBibl>
-               </witness>
-            </listWit>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <projectDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sarasamuccaya" xml:lang="eng" type="edition">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Sārasamuccaya</title>
+				<title type="sub" subtype="editorial">Digital Critical Edition of an Anthology of Sanskrit Stanza on <foreign>dharma</foreign> with Old Javanese Paraphrase</title>
+				<author>Vararuci</author>
+				<editor ref="part:argr">Arlo Griffiths</editor>
+				<respStmt>
+					<persName>Unknown</persName>
+					<resp>Typing of the Sanskrit parts</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="part:ekba">Eko Bastiawan</persName>
+					<resp>Typing of the Old Javanese parts (2020–2021)</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="part:axja">Axelle Janiak</persName>
+					<resp>Structuring of the TEI file</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="part:argr">Arlo Griffiths</persName>
+					<resp>General supervision and quality control</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>DHARMA</authority>
+				<pubPlace>Paris</pubPlace>
+				<publisher>EFEO</publisher>
+				<idno type="filename">DHARMA_CritEdSarasamuccayaVararuci</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">
+						<p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+						<p>Copyright (c) 2019-2025 by Arlo Griffiths and Eko Bastiwan.</p>
+					</licence>
+				</availability>
+				<date from="2020" to="2025">2020-2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="ka"><abbr type="siglum">क</abbr>Raghu Vira's क: Leiden, UB, LOr 4471</witness>
+					<witness xml:id="kha"><abbr type="siglum">ख</abbr>Raghu Vira's ख: Jakarta, Perpusnas, Br 661</witness>
+					<witness xml:id="ga"><abbr type="siglum">ग</abbr>Raghu Vira's ग: Leiden, UB, LOr 4470</witness>
+					<witness xml:id="ca"><abbr type="siglum">च</abbr>Raghu Vira's च: Leiden, UB, LOr 4469</witness>
+					<witness xml:id="cha"><abbr type="siglum">छ</abbr>Raghu Vira's छ: Jakarta, Perpusnas, 574, roman transcript on paper from lontar L 860</witness>
+					<witness xml:id="ja"><abbr type="siglum">ज</abbr>Raghu Vira's ज: a lontar acquired by Raghu Vira on Bali.</witness>
+					<witness xml:id="EdRV">
+						<abbr type="siglum">Ed<hi rend="superscript">RV</hi>
+						</abbr>
+						<bibl>
+							<ptr target="bib:RaghuVira1962_01"/>
+						</bibl>
+					</witness>
+					<witness xml:id="EdA">
+						<abbr type="siglum">Ed<hi rend="superscript">A</hi>
+						</abbr>
+						<listBibl>
+							<bibl>
+								<ptr target="bib:Ando2018_01"/>
+							</bibl>
+							<bibl>
+								<ptr target="bib:Ando2020_01"/>
+							</bibl>
+							<bibl>
+								<ptr target="bib:Ando2020_02"/>
+							</bibl>
+							<bibl>
+								<ptr target="bib:Ando2021_01"/>
+							</bibl>
+						</listBibl>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
 				<!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-            <interpretation>
-               <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
-            </interpretation>
-         </editorialDecl>
-         <samplingDecl>
-	<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <schemaRef type="guide"
-                    key=" EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-         </listPrefixDef>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-         </langUsage>
-      </profileDesc>
-      <revisionDesc>
-         <change who="part:argr" when="2021-11-08" status="draft">started incorporating Ando's work</change>
-         <change who="part:ekba part:argr" when="2021-07-12" status="draft">romanized typing of the Old Javanese text, correcting of errors in Sanskrit text as previously typed by unknown person, insertion of English translations based on OCR from Raghu Vira 1962 </change>
-         <change who="part:ekba" when="2020-07-08">Moving the source value from (ptr target) to (item sameAs)</change>
-         <change who="part:axja" when="2020-05-29">Movinf the source value from quote to ptr. Added the note @type="parallels" structure</change>
-         <change who="part:axja" when="2020-04-20" status="draft">applying the structure to the rest of the file with regex</change>
-         <change who="part:argr" when="2020-04-18" status="draft">set up structure of the file using anonynously typed txt file with the Sanskrit stanzas as base</change>
-      </revisionDesc>
-   </teiHeader>
-   <text xml:lang="kaw-Latn" xml:space="preserve">
+				<p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+				<!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+			</projectDesc>
+			<editorialDecl>
+				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+				<correction>
+					<p/>
+				</correction>
+				<normalization>
+					<p/>
+				</normalization>
+				<punctuation>
+					<p/>
+				</punctuation>
+				<interpretation>
+					<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+				</interpretation>
+			</editorialDecl>
+			<samplingDecl>
+				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+				<p/>
+			</samplingDecl>
+			<schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+			<!-- Will need to be updated once a more official realase is done -->
+			<variantEncoding method="parallel-segmentation" location="internal"/>
+			<!-- Part mandatory -->
+			<listPrefixDef>
+				<prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+					<p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+				</prefixDef>
+				<prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
+					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+				</prefixDef>
+				<prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
+					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
+				</prefixDef>
+				<prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+					<p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+				</prefixDef>
+				<prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+					<p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+				</prefixDef>
+			</listPrefixDef>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="san-Latn">Sanskrit, romanized</language>
+				<language ident="kaw-Latn">Old Javanese, romanized</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change who="part:argr" when="2021-11-08" status="draft">started incorporating Ando's work</change>
+			<change who="part:ekba part:argr" when="2021-07-12" status="draft">romanized typing of the Old Javanese text, correcting of errors in Sanskrit text as previously typed by unknown person, insertion of English translations based on OCR from Raghu Vira 1962 </change>
+			<change who="part:ekba" when="2020-07-08">Moving the source value from (ptr target) to (item sameAs)</change>
+			<change who="part:axja" when="2020-05-29">Movinf the source value from quote to ptr. Added the note @type="parallels" structure</change>
+			<change who="part:axja" when="2020-04-20" status="draft">applying the structure to the rest of the file with regex</change>
+			<change who="part:argr" when="2020-04-18" status="draft">set up structure of the file using anonynously typed txt file with the Sanskrit stanzas as base</change>
+		</revisionDesc>
+	</teiHeader>
+	<text xml:lang="kaw-Latn" xml:space="preserve">
 		<body>
 			<div>
 				<ab type="invocation" xml:lang="san-Latn">om̐ avighnam astu.</ab>
@@ -182,18 +172,13 @@ lavan bhagavān parāśara, prasūta ri tṅahnikaṅ kr̥ṣṇadvīpa, bhagav�
 ṅaranira, sira ta səmbahən, kamnaniṅ hulun mujarakna sāraniṅ gavenira aji.</p></div>
 <!-- TRANSLATION
 <head>May there he no impediments.</head>
-<p>His Reverence Vararuci collected all the essentials of the Mahabharata, the
-composition of His Reverence Vyāsa, to whom Vararuci pays homage in the
+<p>His Reverence Vararuci collected all the essentials of the Mahabharata, the composition of His Reverence Vyāsa, to whom Vararuci pays homage in the
 following verse.</p>
-<quote>Obeisance to the Great Seer, of vast learning and supreme nobility, who dispels
-the darkness of ignorance, the son whom Satyavatī begot out of her own being
+<quote>Obeisance to the Great Seer, of vast learning and supreme nobility, who dispels the darkness of ignorance, the son whom Satyavatī begot out of her own being
 from Parāśara, in the midst of an island.</quote>
- <p><p>There was a great seer. There was nothing he did not know. He was
-honoured in the three worlds. He dispelled the darkness of ignorance of all beings.
-He was the son of Her Ladyship Satyavatī, begotten of her union with His Reverence
-Parāśara. He was horn in the middle of the Kr̥ṣṇa island. His name is
-His Reverence Vyāsa. Before this person should communicate the essence of his
-wise composition, he must pay his homage to His Reverence.</p>
+ <p>There was a great seer. There was nothing he did not know. He was honoured in the three worlds. He dispelled the darkness of ignorance of all beings.
+He was the son of Her Ladyship Satyavatī, begotten of her union with His Reverence Parāśara. He was horn in the middle of the Kr̥ṣṇa island. His name is
+His Reverence Vyāsa. Before this person should communicate the essence of his wise composition, he must pay his homage to His Reverence.</p>
 -->
 			<div type="dyad" n="3"><quote type="base-text" xml:lang="san-Latn"> 
 <lg n="2" met="anuṣṭubh">
@@ -258,20 +243,25 @@ kady aṅganiṅ triloka an vijil saṅke pañcamahābhūta.</p></div>
 <!-- TRANSLATION
 <p>Out of this excellent narrative are created poetic faculties. It is like the five elements out of which the mechanism of the three worlds is formed.</p>
 -->
-			<div type="dyad" n="6"><quote type="base-text" xml:lang="san-Latn"> <lg n="5" met="anuṣṭubh">
+<div type="dyad" n="6">
+	<quote type="base-text" xml:lang="san-Latn"> 
+		<lg n="5" met="anuṣṭubh">
 				<l n="a">anāśrityaitad ākhyānaṁ</l> 
 				<l n="b">kathā bhuvi na vidyate|</l>
 				<l n="c">āhāram anupāśritya</l> 
 				<l n="d">śarīrasyeva dhāraṇā ||</l>
 				</lg>
-<listApp type="parallels"><app>
-        	<note corresp="MBh01,002.240"><!-- differences in pādas cd -->
-	<lg>
+		<listApp type="parallels">
+		<app>
+        			<note corresp="MBh01,002.240"><!-- differences in pādas cd -->
+			<lg>
 		<l n="a">anāśrityaitad ākhyānaṃ</l> <l n="b">kathā bhuvi na vidyate</l>
         		<l n="c">āhāram anapāśritya</l> <l n="d">śarīrasyeva dhāraṇam</l>
-	</lg></note>
-        </app></listApp>
-  </quote>
+			</lg>
+			</note>
+        		</app>
+		</listApp>
+  	</quote>
  <p>tātan hana aji riṅ bhuvana, 
 tan pakāśraya <app><lem wit="#EdRV">ikiṅ</lem><rdg wit="#EdA">ikaṅ</rdg></app> byāsavasana, 
 kady aṅganiṅ śarīra tan hana, 
@@ -279,28 +269,28 @@ ya tan pakāśrayaṅ āhāra.</p></div>
 <!-- TRANSLATION
 <p>There is no tale in this world which does not hang on this narration. It is like unto a body which maintains itself on food.</p>
 -->
-<!-- @@@@ 2021-11-08 Arlo has revised the file using Ando2018_01 down to here -->
-			<div type="dyad" n="7"><quote type="base-text" xml:lang="san-Latn"> <lg n="6" met="anuṣṭubh">
-				<l n="a">śrutvā tv idam upākhyānaṁ śrāvyam anyan na rocate |</l>
-				<l n="b">puṁs ko kila rutaṁ śrutvā rukṣā dhvāṁkṣasya vāg iva ||6||</l>
-			</lg><listApp type="parallels"><app>
-        	<note sameAs="#MBh01,002.236"/>
-        </app></listApp>
-  </quote>
- <p>lavan vaneh kottamanira, yan hana sira tlas ruməṅə: rasaniki saṅ hyaṅ aji, pisaniṅu juga sira ahyuna ruməṅva kathāntara, tka riṅ gīta veṇu vīṇādi, kady aṅganiṅ vvaṅ ruməṅə: suśabdaniṅ kuvoṅ, huvus ruməsəp ri hati laṅəniṅ svaranya, amaṅun harṣaniṅ citta, tan hana gantāni kahyuna ruməṅva rəsniṅ śabdaniṅ gagak.</p>
-			<p>maṅkana liṅ bhagavān vararucin panamaskāra riṅ bhagavān byāsa, nəhər umujarakən kottamanikiṅ bhāratakathā, ikiṅ inaranan sārasamuccaya, sāra ṅaraniṅ viśeṣa, samuccaya papupulnya, nahan mataṅnyan sārasamuccaya ṅaranikiṅ saṅ hyaṅ aji, daməl bhagavān vararuci, nihan pinkət bhagavān vaiśampāyana iṅ mahārāja janamejaya, i kālanira cumaritākən ikaṅ bharatakathā, yatiki vitaniṅ sārasamuccaya.</p></div>
+<div type="dyad" n="7">
+	<quote type="base-text" xml:lang="san-Latn"> 
+		<lg n="6" met="anuṣṭubh">
+				<l n="a">śrutvā tv idam upākhyānaṁ</l> <l n="b">śrāvyam anyan na rocate|</l>
+				<l n="c">puṁskokilarutaṁ śrutvā</l> <l n="d">rūkṣā dhvāṁkṣasya vāg iva||</l>
+		</lg>
+	<listApp type="parallels">
+		<app>
+        			<note copyOf="#MBh01,002.236"/>
+        		</app>
+	</listApp>
+  	</quote>
+ <p>lavan vaneh kottamanira, yan hana sira tlas ruməṅə̄ rasaniki saṅ hyaṅ aji, pisaniṅu juga sira ahyuna ruməṅva kathāntara, tka riṅ gīta veṇu vīṇādi, kady aṅganiṅ vvaṅ ruməṅə̄ suśabdaniṅ kuvoṅ, huvus ruməsəp ri hati <app><lem wit="#EdA">laṅə̄niṅ</lem><rdg wit="#EdRV">laṅəniṅ</rdg></app> svaranya, amaṅun harṣaniṅ citta, tan hana gantāni <app><lem wit="#EdRV">kahyuna</lem><rdg wit="#EdA">kahyun</rdg></app> ruməṅva rəsniṅ śabdaniṅ gagak.</p>
+			<p>maṅkana liṅ bhagavān vararucin panamaskāra riṅ bhagavān byāsa, nəhər umujarakən kottaman<app><lem wit="#EdRV" rend="hyphenfront">ikiṅ bhāratakathā, ikiṅ inaranan sārasamuccaya</lem><rdg wit="#EdA"><gap reason="omitted"></gap></rdg></app>, sāra ṅaraniṅ viśeṣa, <app><lem wit="#EdRV">samuccaya</lem><rdg wit="#EdA">samuccya</rdg></app> papupulnya, nahan mataṅnyan sārasamuccaya ṅara<app><lem wit="#EdRV" rend="hyphenfront">nikiṅ</lem><rdg wit="#EdA">-nikaṅ</rdg></app> saṅ hyaṅ aji, daməl <app><lem wit="#EdRV">bhagavān</lem><rdg wit="#EdA">bhagavā</rdg></app> vararuci, 
+nihan pinkət bhagavān vaiśampāyana iṅ mahārāja janamejaya, i kālanira cumaritākən ikaṅ bhāratakathā, ya tiki vitaniṅ sārasamuccaya.</p>
+</div>
 <!-- TRANSLATION
-<p>After having heard this narrative another narrative will sound insipid. 
-Just as after having listened to the notes of a male cuckoo, the harsh cries of a crow jar
+<p>After having heard this narrative another narrative will sound insipid. Just as after having listened to the notes of a male cuckoo, the harsh cries of a crow jar
 on one's ears.</p>
-<p>Something more about this excellence. If somebody has enjoyed the hearing
-of this story how would it he possible for him to enjoy another tale or a song or a flute. 
-When the music of a cuckoo has pervaded the heart with the sweetness of its melody 
-then one would hardly find pleasure in listening to the cawings of a crow.</p>
-<p>Thus spoke Bhagavān Vararuci while paying his obeisance to Bhagavān Vyāsa. 
-Henceforth he will say what is best in this Bhārata epic. It is designated Sārasamuccaya. 
-Sāra signifies essence. Samuccaya is its accumulation. It is the work of Bhagavān Vararuci. 
-This didactic discourse was delivered at the time of the narration of the Bhārata epic 
+<p>Something more about this excellence. If somebody has enjoyed the hearing of this story how would it he possible for him to enjoy another tale or a song or a flute. 
+When the music of a cuckoo has pervaded the heart with the sweetness of its melody  then one would hardly find pleasure in listening to the cawings of a crow.</p>
+<p>Thus spoke Bhagavān Vararuci while paying his obeisance to Bhagavān Vyāsa. Henceforth he will say what is best in this Bhārata epic. It is designated Sārasamuccaya. Sāra signifies essence. Samuccaya is its accumulation. It is the work of Bhagavān Vararuci. This didactic discourse was delivered at the time of the narration of the Bhārata epic 
 by Bhagavān Vaiśampāyana to Mahārāja Janamejaya.</p>
 -->
 <!-- argr: the txt file used for the Sanskrit now presents the following lines, which don't agree with anything we see in Raghu Vira 1962
@@ -310,31 +300,42 @@ by Bhagavān Vaiśampāyana to Mahārāja Janamejaya.</p>
 	sukham 21 tīrthayātrā 22 daridraḥ 23 saṁsargaḥ 24 sādhuḥ 25 asādhuḥ 26
 	pūrvakarma 27 mr̥tyuḥ 28 pitr̥yānadevayāna 29 bodhaḥ 30 strī 31 rāgadveṣa 32
 	tr̥ṣṇā 33 mokṣaḥ jīvanasyoddeśyaḥ[sampādyatām] i -->
-			<div type="dyad" n="8"><quote type="base-text" xml:lang="san-Latn"> <lg n="7" met="anuṣṭubh">
-				<l n="a">dharme cārthe ca kāme ca mokṣe ca bharatarṣabha |</l>
-				<l n="b">yad ihāsti tad anyatra yan nehāsti na tat kvacit ||7||</l>
-			</lg><listApp type="parallels"><app>
-        	<note sameAs="#MBh01,002.236  MBh01,056.033  MBh18,005.038"/>
+<div type="dyad" n="8">
+	<quote type="base-text" xml:lang="san-Latn"> 
+		<lg n="7" met="anuṣṭubh">
+				<l n="a">dharme cārthe ca kāme ca</l> <l n="b">mokṣe ca bharatarṣabha|</l>
+				<l n="c">yad ihāsti tad anyatra</l> <l n="d">yan nehāsti na tat kvacit||</l>
+		</lg>
+	<listApp type="parallels"><app>
+        	<note copyOf="#MBh01,056.033  MBh18,005.038">The stanza appears in two places in the critical edition of the <title>Mahābhārata</title>, plus in two * passages (01,001.210d@003_0011 and 01,002.236d@005_0002), once with reading <foreign>paramarṣabha</foreign>.</note>
         </app></listApp>
   </quote>
- <p>anaku kamuṅ janamejaya, salvirniṅ vara-varah, yāvat makapadārthaṅ caturvarga, sāvataranya, sakopanyāsanya, hana juga ya ṅke, saṅkṣepanya, ikiṅ hana ṅke, ya ika hana iṅ len saṅkeriki, ikaṅ tan hana ṅke, tan hana ika riṅ len saṅkeriki.</p></div>
+ <p>anaku kamuṅ janamejaya, salvirniṅ vara-varah, yāvat maka<app><lem wit="#EdRV" rend="hyphenfront">padārthaṅ</lem><rdg wit="#EdA">-padārtha</rdg></app> caturvarga, <app><lem wit="#EdA">sāvatāranya</lem><rdg wit="#EdRV">sāvataranya</rdg></app>, sakopanyāsanya, hana juga ya ṅke, saṅkṣepanya, <app><lem wit="#EdRV">ikiṅ</lem><rdg wit="#EdA">ikaṅ</rdg></app> hana ṅke, ya ika hana iṅ len saṅkeriki, ikaṅ tan hana ṅke, tan hana ika riṅ <app><lem wit="#EdRV">len</lem><rdg wit="#EdA">lane</rdg></app> saṅkeriki.</p></div>
 <!-- TRANSLATION
-<p>You, scion of the Bharata race, in the field of dharma, artha, kāma and mokṣa, 
-whatever is recorded here that is to be found elsewhere, and what is not recorded 
-here is not to be found anywhere else.</p>
+<p>You, scion of the Bharata race, in the field of dharma, artha, kāma and mokṣa, whatever is recorded here that is to be found elsewhere, and what is not recorded here is not to be found anywhere else.</p>
 -->
-			<div type="dyad" n="9"><quote type="base-text" xml:lang="san-Latn"> <lg n="8" met="anuṣṭubh">
-				<l n="a">mānuṣaḥ sarvabhūteṣu vartate vai śubhāśubhe |</l>
-				<l n="b">aśubheṣu samāviṣṭaṁ śubheṣv evāvakārayet ||8||</l>
-			</lg><listApp type="parallels"><app>
-        	<note sameAs="#MBh12,297.019"/>
-        </app></listApp>
+<div type="dyad" n="9">
+	<quote type="base-text" xml:lang="san-Latn">
+		<lg n="8" met="anuṣṭubh">
+				<l n="a">mānuṣaḥ sarvabhūteṣu</l> <l n="b">vartate vai śubhāśubhe|</l>
+				<l n="c">aśubheṣu samāviṣṭaṁ</l> <l n="d">śubheṣv evāvakārayet||</l>
+		</lg>
+	<listApp type="parallels">
+	<app>
+        	<note corresp="#MBh12,297.019"><!-- differences in pādas a, c, d -->
+	<lg><l n="a">mānasaṃ sarvabhūteṣu</l> <l n="b">vartate vai śubhāśubhe</l>
+	<l n="c">aśubhebhyaḥ samākṣipya</l> <l n="d">śubheṣv evāvatārayet</l>
+	</lg>
+	</note>
+       	 </app>
+	</listApp>
   </quote>
- <p>ri sakvehniṅ sarvabhūta, ikiṅ janma vvaṅ juga vnaṅ gumavayakən ikaṅ śubhāśubhakarma, kunəṅ panəntasakna riṅ śubhakarma juga ikaṅ aśubhakarma, phalaniṅ dadi vvaṅ.</p></div>
+ <p>ri sakvehniṅ sarvabhūta, ikiṅ janma vvaṅ juga vnaṅ gumavayakən ikaṅ śubhāśubhakarma, kunəṅ <app><lem type="emn" rend="check">yan əntasakna</lem><rdg wit="#EdA">pan əntasakna</rdg><rdg wit="#EdRV">panəntasakna</rdg></app><!-- or emend maṅəntasakna? pvāṅəntasakna?  --> riṅ śubhakarma juga ikaṅ aśubhakarma, phalaniṅ dadi vvaṅ.</p></div>
 <!-- TRANSLATION
 <p>Among all beings man alone performs good and evil acts. 
 If one be engrossed in evil, he should be taken across towards good.</p>
 -->
+<!-- @@@@ 2021-11-12 Arlo has revised the file using Ando2018_01 down to here -->
 			<div type="dyad" n="10"><quote type="base-text" xml:lang="san-Latn"> <lg n="9" met="anuṣṭubh">
 				<l n="a">upabhogaiḥ parityaktaṁ nātmānam avasādayet |</l>
 				<l n="b">caṇḍālatve ’pi mānuṣyaṁ sarvathā tato durlabham ||9||</l>
@@ -342,7 +343,7 @@ If one be engrossed in evil, he should be taken across towards good.</p>
         	<note sameAs="#MBh12.286.031"/>
         </app></listApp>
   </quote>
- <p>mataṅyan hayva juga vvaṅ manastāpa, an tan paribhava, si dadi vvaṅ ta pva kagə:ṅakna ri ambək, apayapan paramadurlabha ikiṅ si janma mānuṣa ṅaranya, yadyapi caṇḍālayoni tuvi.</p></div>
+ <p>mataṅyan hayva juga vvaṅ manastāpa, an tan paribhava, si dadi vvaṅ ta pva kagə̄ṅakna ri ambək, apayapan paramadurlabha ikiṅ si janma mānuṣa ṅaranya, yadyapi caṇḍālayoni tuvi.</p></div>
 <!-- TRANSLATION
 <p>If one be devoid of prosperity one should not be unhappy about it. 
 The human frame even though as a pariah is most invaluable.</p>
@@ -378,7 +379,7 @@ of doing conscious noble deeds.</p>
         	<note sameAs="#MBh12,309.079"/>
         </app></listApp>
   </quote>
- <p>paramārthanya, pəṅpə:ṅən ta pva katəmvanikiṅ si dadi vvaṅ, durlabha vi ya ta, sākṣāt haṇḍaniṅ mara riṅ svarga ika, sanimittaniṅ tan tibā muvah ta pva damlakna.</p></div>
+ <p>paramārthanya, pəṅpə̄ṅən ta pva katəmvanikiṅ si dadi vvaṅ, durlabha vi ya ta, sākṣāt haṇḍaniṅ mara riṅ svarga ika, sanimittaniṅ tan tibā muvah ta pva damlakna.</p></div>
 <!-- TRANSLATION
 <p>Having acquired the human frame which is difficult of attainment and 
 which forms a ladder to heaven, one should act in such a manner that 
@@ -391,7 +392,7 @@ one does not slip down again.</p>
         	<note sameAs="#MBh03,245.018d*1176_01+03,245.019a  MBh03,247.035"/>
         </app></listApp>
   </quote>
- <p>apan ikiṅ janma maṅke, pagavayan śubhāśubhakarma juga ya, ikaṅ ri pəna pabhuktyan karmaphala ika, kaliṅanya, ikaṅ śubhāśubhakarma maṅke, ri pəna ika an kabhukti phalanya, ri pgatni kabhuktyanya, maṅjanma ta ya muvah, tumūta vāsanāniṅ karmaphala, vāsanā ṅaraniṅ saṅskāra, turahniṅ ambəmātra, ya tinūtniṅ paribhāṣā, svargacyuta, narakacyuta, kunaṅ ikaṅ śubhāśubhakarma ri pəna, tan paphala ika, mataṅnyan maṅke juga pəṅpə:ṅa śubhāśubhakarma.</p></div>
+ <p>apan ikiṅ janma maṅke, pagavayan śubhāśubhakarma juga ya, ikaṅ ri pəna pabhuktyan karmaphala ika, kaliṅanya, ikaṅ śubhāśubhakarma maṅke, ri pəna ika an kabhukti phalanya, ri pgatni kabhuktyanya, maṅjanma ta ya muvah, tumūta vāsanāniṅ karmaphala, vāsanā ṅaraniṅ saṅskāra, turahniṅ ambəmātra, ya tinūtniṅ paribhāṣā, svargacyuta, narakacyuta, kunaṅ ikaṅ śubhāśubhakarma ri pəna, tan paphala ika, mataṅnyan maṅke juga pəṅpə̄ṅa śubhāśubhakarma.</p></div>
 <!-- TRANSLATION
 <p>O Brahman, the human incarnation forms the domain of action. 
 Beyond is the domain of enjoyments of their results. Whatever deeds are performed here,
@@ -412,7 +413,7 @@ Hence one should perform actions good or evil in this world only.</p>
         	<note sameAs="#Subhasitaratnakarandakatha002"/>
         </app></listApp>
   </quote>
- <p>ikiṅ taṅ janma vvaṅ, kṣaṇikasvabhāva ta ya, tan pahi lavan kḍapniṅ kilat, durlabha tovi, mataṅnyan pə:ṅakna ya ri kagavayanniṅ dharmasādhana, sakāraṇaniṅ manāśanaṅ saṅsāra, svargaphala kunaṅ.</p></div>
+ <p>ikiṅ taṅ janma vvaṅ, kṣaṇikasvabhāva ta ya, tan pahi lavan kḍapniṅ kilat, durlabha tovi, mataṅnyan pə̄ṅakna ya ri kagavayanniṅ dharmasādhana, sakāraṇaniṅ manāśanaṅ saṅsāra, svargaphala kunaṅ.</p></div>
 <!-- TRANSLATION
 <p>Having attained the human body which is difficult 
 to acquire and which lasts only as long as a flash of lightning, 
@@ -460,7 +461,7 @@ from dharma. So why do people not pursue dharma?</p>
         	<note sameAs="#MBh05,122.035"/>
         </app></listApp>
   </quote>
- <p>yan paramārthanya, yan arthakāma sādhyan, dharma juga  ləkasakna rumuhun, niyata katəmvaniṅ arthakāma mne<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"></gap></rdg><witDetail wit="#EdRV">bal</witDetail></app> tan paramārtha vi katəmvaniṅ arthakāma, deniṅ anasar sakeṅ dharma.</p></div>
+ <p>yan paramārthanya, yan arthakāma sādhyan, dharma juga  ləkasakna rumuhun, niyata katəmvaniṅ arthakāma mne<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"/></rdg><witDetail wit="#EdRV">bal</witDetail></app> tan paramārtha vi katəmvaniṅ arthakāma, deniṅ anasar sakeṅ dharma.</p></div>
 <!-- TRANSLATION
 <p>Seeking kāma and artha one must start with the pursuit of dharma. 
 By ignoring dharma there is neither artha nor kāma.</p>
@@ -822,7 +823,7 @@ has no time to lose, as if death itself has caught hold of him by his hair.</p>
         	<note sameAs="#Panc_3.104"/>
         </app></listApp>
   </quote>
- <p>mataṅnyat rəṅə̄  sarvadāya, paramārthaniṅ sinaṅgah dharma<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"></gap></rdg><witDetail wit="#EdRV">bal</witDetail></app> tləs rinṅə̄nta cupvanantā ta ri hati, ikaṅ kadi liṅ mami ṅūni vih, sāsiṅ tan kahyun yāvakta, yatika tan ulahaknanta riṅ len.</p></div>
+ <p>mataṅnyat rəṅə̄  sarvadāya, paramārthaniṅ sinaṅgah dharma<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"/></rdg><witDetail wit="#EdRV">bal</witDetail></app> tləs rinṅə̄nta cupvanantā ta ri hati, ikaṅ kadi liṅ mami ṅūni vih, sāsiṅ tan kahyun yāvakta, yatika tan ulahaknanta riṅ len.</p></div>
 <!-- TRANSLATION
 <p>Listen to the quintessence of dharma. And having listened hold on to it. What you do not approve for yourself, that you must not do to others.</p>
 -->
@@ -867,7 +868,7 @@ has no time to lose, as if death itself has caught hold of him by his hair.</p>
         	<note sameAs="#MBh03,245.018"/>
         </app></listApp>
   </quote>
- <p>kunaṅ lvirnikaṅ mūḍha, jnək riṅ adharma, antasnya sakeṅ niraya, maṅjanma ta ya tiryak-prāṇī, meṣa-mahiṣādi, bvatniṅ janmanya jmah, maṅjanma ta ya riṅ nīca, kasakitan ta ya kinuñcaṅ <app><lem wit="#EdRV">iṅ</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"></gap><witDetail wit="#EdRV">bal</witDetail></rdg></app> lara prihatin, tan tmuṅ sukha.</p></div>
+ <p>kunaṅ lvirnikaṅ mūḍha, jnək riṅ adharma, antasnya sakeṅ niraya, maṅjanma ta ya tiryak-prāṇī, meṣa-mahiṣādi, bvatniṅ janmanya jmah, maṅjanma ta ya riṅ nīca, kasakitan ta ya kinuñcaṅ <app><lem wit="#EdRV">iṅ</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"/><witDetail wit="#EdRV">bal</witDetail></rdg></app> lara prihatin, tan tmuṅ sukha.</p></div>
 <!-- TRANSLATION
 <p>The dull-witted have no interest in dharma. They are born as low creatures. Thus incarnated they attain no joy.</p>
 -->
@@ -945,7 +946,7 @@ has no time to lose, as if death itself has caught hold of him by his hair.</p>
         	<note sameAs="#Manu10.04"/>
         </app></listApp>
   </quote>
- <p>brāhmaṇa ādiniṅ varṇa, tumūt kṣatriya, tumūt vaiśya, ika saṅ varṇa tiga, kapva dvijāti sira, dvijāti ṅaraniṅ piṅrva maṅjanma, apan ri sḍəṅniran brahmacārī gurukulavāsī<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"></gap><witDetail wit="#EdRV">bal</witDetail></rdg></app> kinənan sira dīkṣābratasaṅskāra, kapiṅrvaniṅ janmanira tika, ri huvusnira kr̥tasaṅskāra, nahan mataṅnyan kapva dvijāti sira katiga, kunaṅ ikaṅ śūdra kapātniṅ varṇa, ekajāti saṅ kadi rasika, tan dadi kinənan bratasaṅskāra, tātan brahmacārī, maṅkana kāṇḍanikaṅ varṇa an pāt, ya ika caturvarṇa ṅaranya, tan hana kalimaniṅ varṇa ṅaranya.</p></div>
+ <p>brāhmaṇa ādiniṅ varṇa, tumūt kṣatriya, tumūt vaiśya, ika saṅ varṇa tiga, kapva dvijāti sira, dvijāti ṅaraniṅ piṅrva maṅjanma, apan ri sḍəṅniran brahmacārī gurukulavāsī<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">dev</witDetail><rdg wit="#EdRV"><gap reason="omitted"/><witDetail wit="#EdRV">bal</witDetail></rdg></app> kinənan sira dīkṣābratasaṅskāra, kapiṅrvaniṅ janmanira tika, ri huvusnira kr̥tasaṅskāra, nahan mataṅnyan kapva dvijāti sira katiga, kunaṅ ikaṅ śūdra kapātniṅ varṇa, ekajāti saṅ kadi rasika, tan dadi kinənan bratasaṅskāra, tātan brahmacārī, maṅkana kāṇḍanikaṅ varṇa an pāt, ya ika caturvarṇa ṅaranya, tan hana kalimaniṅ varṇa ṅaranya.</p></div>
 <!-- TRANSLATION
 <p>Brāhmaṇa, kṣatriya and vaiśya are the three dvi-jātis ‘twice-born.'  Śūdra is the fourth. He is eka-jāti ‘once-born'. There is no fifth.</p>
 -->
@@ -984,7 +985,7 @@ has no time to lose, as if death itself has caught hold of him by his hair.</p>
         	<note sameAs="#MBh05,040.024"/>
         </app></listApp>
   </quote>
- <p>kunəṅ ulaha saṅ kṣatriya, umajya saṅ hyaṅ veda, nitya agnihotrā, magavayaṅ yajña, rumakṣaṅ rāt, huniṅa riṅ vadva<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">bal</witDetail><rdg wit="#EdRV"><gap reason="omitted"></gap></rdg><witDetail wit="#EdRV">dev</witDetail></app> tka riṅ kulagotra, maveha dāna, yapvan maṅkana, svargapada antukanira dlāha.</p></div>
+ <p>kunəṅ ulaha saṅ kṣatriya, umajya saṅ hyaṅ veda, nitya agnihotrā, magavayaṅ yajña, rumakṣaṅ rāt, huniṅa riṅ vadva<app><lem wit="#EdRV">,</lem><witDetail wit="#EdRV">bal</witDetail><rdg wit="#EdRV"><gap reason="omitted"/></rdg><witDetail wit="#EdRV">dev</witDetail></app> tka riṅ kulagotra, maveha dāna, yapvan maṅkana, svargapada antukanira dlāha.</p></div>
 <!-- TRANSLATION
 <p>A kṣatriya must study the Vedas, organise the fire, perform yajñas, protect the people, support his dependents, kinsmen and relatives, give alms. Thereby he goes to heaven.</p>
 -->
@@ -2352,7 +2353,7 @@ has no time to lose, as if death itself has caught hold of him by his hair.</p>
         	<note sameAs="#MBh???"/><!--reference number is not found-->
         </app></listApp>
 samaṅkeṅ amuhara gə̄ṅniṅ dānaphala, pratyekanya, deśa, kāla, āgama, kṣetra, dr̥bya, dātā, manah, hayun ika kabeh, yatika amaṅun bhāraniṅ dānaphala, deśa ṅaraniṅ bhūbhāga, anuṅ rahayva śucya tikaṅ bhūbhāga, deśa pavehana dāna, kāla ṅaraniṅ śubhakāla, nāṅ uttarāyaṇādi, āgama ṅaranya varah saṅ hyaṅ aji, anuṅ tumasakakəniṅ varah saṁ hyaṁ āgama, tah kramanya, kṣetra ṅaran saṅ vehana dāna, anuṅ sulakṣaṇa supātra ta sira, dr̥bya ikaṅ vastu dābhākna, anuṅ uttama ta ya, dātā ṅaran saṅ masuṅ dāna, saṅ yajamāna, magave dāna, manah, buddhi saṅ yajamāna, śraddhā lvā ta ya, makanimitta atiśayaniṅ dābhaphala, hetunyan panmuṅ hayva.</quote>
- <p></p></div>
+ <p/></div>
 <!-- TRANSLATION
 <p>Proper place, suitable time, right donee, correct amount and the noble mental attitudes of the giver enhance the value of gifts.</p>
 -->
@@ -3254,7 +3255,7 @@ samaṅkeṅ amuhara gə̄ṅniṅ dānaphala, pratyekanya, deśa, kāla, āgama
         	<note sameAs="#MBh12,281.019"/>
         </app></listApp>
   </quote>
- <p>apan ikaṅ artha, yan dharma lvirniṅ kārjananya, ya ika lābha ṅaranya, paramārthaniṅ amaṅgih sukha saṅ tuməmvakən ika, kunəṅ yan ardhamma lvirniṅ kārjananya, kaśmala ika, siniṅgahan de saṅ sajana, mataṅnyan hayva anasar saṅke dharma, yan taṅarjana.</p></div>
+ <p>apan ikaṅ artha, yan dharma lvirniṅ kārjananya, ya ika lābha ṅaranya, paramārthaniṅ amaṅgih sukha saṅ tuməmvakən ika, kunəṅ yan adharma lvirniṅ kārjananya, kaśmala ika, siniṅgahan de saṅ sajana, mataṅnyan hayva anasar saṅke dharma, yan taṅarjana.</p></div>
 <!-- TRANSLATION
 <p>Money earnt with dharma is gainful (or is the true wealth). What is got with adharma, fie on that. Dharma is an eternal value. Do not discard it for money.</p>
 -->
@@ -3618,7 +3619,7 @@ hereafter.</p>
         	<note sameAs="#MBh???"/><!--reference number is not found-->
         </app></listApp>
 lavan ta vaneh, nyaṅ kayu-kayu suṇḍe vilut purətən, pinaṅaniṅ bololan, pinakomahniṅ smut, rinambataniṅ ani, babak kulitnya deniṅ apuy alas, tumuvuh ta ya riṅ karikil gatarasa tiṅgaraṅ, samaṅkanani laranya, lavan saṅsāranya, ndān ləhəṅ tman ika saṅkeṅ duhkhaniṅ daridra, mvaṅ laraniṅ sadākāla mana-mana harəp-harəp, ṅuniveh yan pasevā harəp-harəp vevehan.</quote>
- <p></p></div>
+ <p/></div>
 <!-- TRANSLATION
 <p>Like a tree growing in saline soil, bent, eaten by ants and its bark scorched by fire, a beggar's life has no charms.</p>
 -->
@@ -4278,7 +4279,7 @@ lavan ta vaneh, nyaṅ kayu-kayu suṇḍe vilut purətən, pinaṅaniṅ bolola
         	<note sameAs="#MBh???"/>
         </app></listApp>
   </quote>
- <p></p></div>
+ <p/></div>
 <!-- TRANSLATION
 <p>...</p>
 -->
@@ -4289,7 +4290,7 @@ lavan ta vaneh, nyaṅ kayu-kayu suṇḍe vilut purətən, pinaṅaniṅ bolola
         	<note sameAs="#MBh???"/>
         </app></listApp>
   </quote>
- <p></p></div>
+ <p/></div>
 <!-- TRANSLATION
 <p>...</p>
 -->
@@ -4775,7 +4776,7 @@ to be delivered go by the Path of the Gods.</p>
         	<note sameAs="#MBh12,205.018"/>
         </app></listApp>
   </quote>
- <p>mataṅnyan hayva pramāda, dlə:na tikaṅ doṣa, an prasiddha kavaṅun deniṅ kalobhan, lavan ikaṅ ahaṅkārajñana, ahaṅkārajñāna ṅaranya jñāna maṅaku, anuṅku iki, sapa aku lavan iki, maṅkana liṅnya, tan eṅət iṅ prakr̥ti puruṣāntara, yatika ahaṅkārajñāna ṅaranya, vkasniṅ bandhana ika, puṅguṅ saṅkanika, yatika aryyakna.</p></div>
+ <p>mataṅnyan hayva pramāda, dlə̄na tikaṅ doṣa, an prasiddha kavaṅun deniṅ kalobhan, lavan ikaṅ ahaṅkārajñana, ahaṅkārajñāna ṅaranya jñāna maṅaku, anuṅku iki, sapa aku lavan iki, maṅkana liṅnya, tan eṅət iṅ prakr̥ti puruṣāntara, yatika ahaṅkārajñāna ṅaranya, vkasniṅ bandhana ika, puṅguṅ saṅkanika, yatika aryyakna.</p></div>
 <!-- TRANSLATION
 <p>Therefore one should duly keep watch on faults arising out of ignorance. Moreover one should ever avoid egoism.</p>
 -->
@@ -5292,7 +5293,7 @@ to be delivered go by the Path of the Gods.</p>
         	<note sameAs="#MBh03,002.034"/>
         </app></listApp>
 ikaṅ trəṣna ṅaranya, salvirniṅ hala hinanākənya, ilik lavan takut pinuharanya, inaku tikān kagə̄ṅṅaniṅ adharma, karəsthas niyata phala kapāpan.</quote>
- <p></p></div>
+ <p/></div>
 <!-- TRANSLATION
 <p>Trəṣṇā is the wickedest of all. It keeps a man excited all the while. It is infested with adharma. It is terrible. Its consequences are dire sin.</p>
 -->
