@@ -35,7 +35,7 @@
     <fileset id="criticalHTML" dir="./output/critical-edition/editedXML" includes="*.xml"/>
 
     <!-- Transformation XML vers XML -->
-    <xslt force="true" style="./project-documentation/EditorialStylesheets/tpl-editorialConvention.xsl" destdir="./output/critical-edition/editedXML" extension=".xml" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+    <xslt force="true" style="./project-documentation/EditorialStylesheets/tpl-critEdEditorialConvention.xsl" destdir="./output/critical-edition/editedXML" extension=".xml" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="criticalXML"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*)" to="EDITED_\1"/>
