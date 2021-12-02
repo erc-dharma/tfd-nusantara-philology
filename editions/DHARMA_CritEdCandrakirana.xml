@@ -4,8 +4,8 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
-     xml:id="id"
-     type="edition"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+     xml:id="candrakirana"
+     type="edition">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -46,10 +46,10 @@
                            <repository>Lontar</repository>
                            <idno>L. 631</idno>
                        </msIdentifier>
+                       <physDesc>
+                           <objectDesc><p>Actuellement en condition fort endommagée, il consiste en 49 ôles complets et en d’assez nombreux fragments. Chaque ôle mesure 44.5 × 3.5 cm et compte quatre lignes de texte par face. Les caractères empruntés ici sont très comparables à ceux que l’on connaît des manuscrits LOr 2266</p></objectDesc>
+                       </physDesc>
                    </msDesc>
-                   <physDesc>
-                       <objectDesc>Actuellement en condition fort endommagée, il consiste en 49 ôles complets et en d’assez nombreux fragments. Chaque ôle mesure 44.5 × 3.5 cm et compte quatre lignes de texte par face. Les caractères empruntés ici sont très comparables à ceux que l’on connaît des manuscrits LOr 2266</objectDesc>
-                   </physDesc>
                </witness>
                <witness xml:id="msjb">
                    <abbr type="siglum">J<hi rend="subscript">2</hi></abbr>
@@ -60,10 +60,10 @@
                            <collection>Merapi-Merbabu</collection>
                            <idno>L. 298</idno>
                        </msIdentifier>
+                       <physDesc>
+                           <objectDesc><p>51 feuilles de palmier lontar (Borassus flabellifer), mesurant 46.2 × 3.54 cm chacune, et porte quatre lignes par face</p></objectDesc>
+                       </physDesc>
                    </msDesc>
-                   <physDesc>
-                       <objectDesc>51 feuilles de palmier lontar (Borassus flabellifer), mesurant 46.2 × 3.54 cm chacune, et porte quatre lignes par face</objectDesc>
-                   </physDesc>
                </witness>
                <witness xml:id="msjc">
                    <abbr type="siglum">J<hi rend="subscript">3</hi></abbr>
@@ -73,17 +73,17 @@
                            <repository>Lontar</repository>
                            <idno>L. 241</idno>
                        </msIdentifier>
+                       <physDesc>
+                           <objectDesc>
+                               <!-- Here you can give a physical description of the manuscript in prose-->
+                               <p>32 folios mesurant 51 × 3.5 cm chacun, quatre lignes/folio, écrit recto-verso en caractères quadratiques anciens du Java-Ouest</p>
+                           </objectDesc>
+                       </physDesc>
                    </msDesc>
-                   <physDesc>
-                       <objectDesc>
-                           <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>32 folios mesurant 51 × 3.5 cm chacun, quatre lignes/folio, écrit recto-verso en caractères quadratiques anciens du Java-Ouest</p>
-                       </objectDesc>
-                   </physDesc>
                </witness>
                <witness xml:id="msba">
                    <abbr type="siglum">B<hi rend="subscript">1</hi></abbr>
-                   <msIdentifier>
+                   <msDesc><msIdentifier>
                        <settlement>Pusdok, Bali</settlement>
                    </msIdentifier>
                    <msContents>
@@ -92,8 +92,9 @@
                        </msItem>
                    </msContents>
                    <physDesc>
-                       <objectDesc>Manuscrit sur lontar (Borassus flabellifer), 34 folios mesurant 31 × 3.5 cm chacune, quatre lignes/folio, écrit recto-verso en caractères balinais, conservé à Pusdok, Bali.</objectDesc>
+                       <objectDesc><p>Manuscrit sur lontar (Borassus flabellifer), 34 folios mesurant 31 × 3.5 cm chacune, quatre lignes/folio, écrit recto-verso en caractères balinais, conservé à Pusdok, Bali.</p></objectDesc>
                    </physDesc>
+                   </msDesc>
                </witness>
                <witness xml:id="msbb">
                    <abbr type="siglum">B<hi rend="subscript">2</hi></abbr>
@@ -105,16 +106,16 @@
                        <collection>Special Collections</collection>
                        <idno>Or 11.185</idno>
                    </msIdentifier>
-                   </msDesc>
-                   <msContents>
-                       <msItem>
-                           <title>Aji Canda</title>
-                           <colophon>iti aji canda samapta. Oṁ dirgayurastu tatastu astu.</colophon>
-                       </msItem>
-                   </msContents>
-                   <physDesc>
-                       <objectDesc>Manuscrit sur papier, 13 pages mesurant 25 × 16 cm chacune, 38 lignes/page, écrit en caractères latins.</objectDesc>
-                   </physDesc>
+                       <msContents>
+                           <msItem>
+                               <title>Aji Canda</title>
+                               <colophon>iti aji canda samapta. Oṁ dirgayurastu tatastu astu.</colophon>
+                           </msItem>
+                       </msContents>
+                       <physDesc>
+                           <objectDesc><p>Manuscrit sur papier, 13 pages mesurant 25 × 16 cm chacune, 38 lignes/page, écrit en caractères latins.</p></objectDesc>
+                       </physDesc>
+                   </msDesc>                 
                </witness>
                <witness xml:id="msbc">
                    <abbr type="siglum">B<hi rend="subscript">3</hi></abbr>
@@ -126,15 +127,15 @@
                            <collection>Special Collections</collection>
                            <idno>Or 10.551</idno>
                        </msIdentifier>
-                   </msDesc>
-                   <msContents>
-                       <msItem>
-                           <title>Candrākṣara</title>
-                       </msItem>
-                   </msContents>
-                   <physDesc>
-                       <objectDesc>Manuscrit sur papier, 17 pages, écrit en caractères latins.</objectDesc>
-                   </physDesc>
+                       <msContents>
+                           <msItem>
+                               <title>Candrākṣara</title>
+                           </msItem>
+                       </msContents>
+                       <physDesc>
+                           <objectDesc><p>Manuscrit sur papier, 17 pages, écrit en caractères latins.</p></objectDesc>
+                       </physDesc>
+                   </msDesc>                  
                </witness>
                <witness xml:id="msbd">
                    <abbr type="siglum">B<hi rend="subscript">4</hi></abbr>
@@ -146,15 +147,15 @@
                            <collection>Special Collections</collection>
                            <idno>Or 14.710</idno>
                        </msIdentifier>
-                   </msDesc>
-                   <msContents>
-                       <msItem>
-                           <title>Guru-Laghu</title>
-                       </msItem>
-                   </msContents>
-                   <physDesc>
-                       <objectDesc>Manuscrit sur papier, 14 pages, écrit en caractères latins.</objectDesc>
-                   </physDesc>
+                       <msContents>
+                           <msItem>
+                               <title>Guru-Laghu</title>
+                           </msItem>
+                       </msContents>
+                       <physDesc>
+                           <objectDesc><p>Manuscrit sur papier, 14 pages, écrit en caractères latins.</p></objectDesc>
+                       </physDesc>
+                   </msDesc> 
                </witness>
             </listWit>
          </sourceDesc>
@@ -244,7 +245,7 @@
 <app><lem wit="#msjb">· om̐aum avighnam astu ·</lem><rdg wit="#msba">· aji caṇḍa · avighnam astu ·</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg></app>
 </ab>
 		</div>
-<div><head>Introduction</head>
+<div n="1" type="chapter"><head>Introduction</head>
 
 
 <p>
@@ -261,7 +262,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 </p>
 
 </div>
-<div><head>Origine des mètres de <foreign>kakavin</foreign></head>
+<div n="2" type="chapter"><head>Origine des mètres de <foreign>kakavin</foreign></head>
 
 
 
@@ -288,7 +289,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 <l n="a" real="pādānuṣṭup"><app><lem wit="#msjb">mvaṅ laku śloka nihan len</lem><rdg wit="#msja #msjc #msba"><gap reason="lost"/></rdg><note>1-3: Pādānuṣṭup, irrégulière</note></app></l></lg>
 
 
-</div><div><head>Syllabes longues</head>
+</div><div n="3" type="chapter"><head>Syllabes longues</head>
 <!--% _  _  _ | u  u  _ | u  _  u | u  u  _ | _  _  u | _  _  u | u_-->
 
 
@@ -359,7 +360,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 <l n="d"><app><lem type="norm">vvītan</lem><rdg wit="#msjb">vvittan</rdg><rdg wit="#msba">vitan</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg></app> juga <app><lem wit="#msba">prakr̥tinya</lem><rdg wit="#msjb">paknanya</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg></app> ·</l><note>pādānuṣṭup irrégulière</note></lg>
    <!-- \hfill{\textbf{\footnotesize{(\metrum{7-10: Pādānuṣṭubh}{irrégulière})}}}--> 
 </div>
-	<div><head>Aṣṭagaṇa</head>
+	<div n="4" type="chapter"><head>Aṣṭagaṇa</head>
 
 
 <!--%_  u  u | _  u  _ | u  u  u | _  u  u | u  u  u | u  u_-->
@@ -393,7 +394,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 <l n="d">saṅ <app><lem type="norm">r̥ṣi vaṁśapattrapatitā</lem><rdg wit="#msba">r̥ṣi vaṅśapatramanitah</rdg><rdg wit="#msjb">r̥ṣi bhaṅśapatramanitah</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg></app> sira <app><lem wit="#msjb">tiki</lem><rdg wit="#msba">tika</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msba">manata</lem><rdg wit="#msjb">manatha</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg></app> ·</l></lg>
 	    <!-- \hfill{\textbf{\footnotesize{(\metrum{1-4: vaṅśapattrapatita}{\tiny {\metricsymbols{_  u  u | _  u  _ | u  u  u | _  u  u | u  u  u | u  u_}}})}}} -->
 
-</div><div><head>Mètre Ārya</head>
+</div><div n="5" type="chapter"><head>Mètre Ārya</head>
 
 
 <!--%u  _  u | u  u  _ | u  _  u | u  u  u_-->
@@ -429,7 +430,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
     <!-- \hfill{\textbf{\footnotesize{(\metrum{1-4: Jaloddhatagati}{\tiny {\metricsymbols{u  _  u | u  u  _ | u  _  u | u  u  u_}}})}}}  -->
 
 
-</div><div><head>Mots avec Ṇa</head>
+</div><div n="6" type="chapter"><head>Mots avec Ṇa</head>
 
 <!--% u  u  u | u  _  u | u  u  u | u  u  u_ |-->
 
@@ -512,7 +513,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 <l n="d">kapva <app><lem type="norm">masaṅkhya</lem><rdg wit="#msba">masaṅkya</rdg><rdg wit="#msjb">masakya</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg></app> nihan savanehnya ·</l> </lg>
 <!-- \hfill{\textbf{\footnotesize{(\metrum{Dodhaka}{\tiny {\metricsymbols{_  u  u | _  u  u | _  u  u | _  u_}}})}}} -->
 
-</div><div><head>Mots avec Na</head>
+</div><div n="7" type="chapter"><head>Mots avec Na</head>
 
 
 
@@ -584,7 +585,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 
 
 
-</div><div><head>Mots avec Śa</head>
+</div><div n="8" type="chapter"><head>Mots avec Śa</head>
 <!--% | _  u  _ | u  u  u | _  u  u | u  u  u_ |-->
 
 
@@ -627,7 +628,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 %d. baca śivirākaśa śucimant-->
 
 
-</div><div><head>Mots avec Ṣa</head>
+</div><div n="9" type="chapter"><head>Mots avec Ṣa</head>
 
 <!--%u  _  u | u  u  _ | u  _  u | u  u  _ | u  _  _ | u  u_-->
 
@@ -675,7 +676,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 %c. baca vāsiṣṭha-->
 
 
-</div><div><head>Mots avec Sa</head>
+</div><div n="10" type="chapter"><head>Mots avec Sa</head>
 <!--%
 %_ _  u | _  u  u | u  _  u | u  _  u | _  u_-->
 
@@ -709,7 +710,7 @@ nahan <app><lem wit="#msba">byakta</lem><rdg wit="#msjb">bhyakta</rdg><rdg wit="
 
 <lg><l n="a"><app><lem wit="#msja #msba">iti</lem><rdg wit="#msjb #msjc">itih</rdg></app> paruṅguniṅ <app><lem wit="#msjc">akṣara</lem><rdg wit="#msja">akṣah</rdg><rdg wit="#msjb">hākṣara</rdg><rdg wit="#msba">aksara</rdg></app> ·</l></lg>
 </div>
-  <div><head>Sūtrasandhi</head>
+  <div n="11" type="chapter"><head>Sūtrasandhi</head>
 <p>
 nyan <app><lem type="norm">sūtrasandhi</lem><rdg wit="#msja #msjc #msba">sutrasandi</rdg><rdg wit="#msjb">sutrasandī</rdg></app> vuvusәn, <app><lem wit="#msja #msba">parakr̥ta</lem><rdg wit="#msjb">parakr̥t<del rend="strikeout">i</del>a</rdg><rdg wit="#msjc">parakr̥tha</rdg> </app> lvirnika pratiṅkahnya, <app><lem wit="#msba">matambayan</lem><rdg wit="#msja">hatambayan</rdg><rdg wit="#msjb #msjc">atambayan</rdg></app> <app><lem wit="#msba">mavkasan</lem><rdg wit="#msja #msjb">havkasan</rdg><rdg wit="#msjc"><gap reason="omitted"/></rdg></app>, <app><lem wit="#msja #msjb">nāhan</lem><rdg wit="#msjc #msba">nahan</rdg></app> ta ya <app><lem wit="#msja #msba">sinaṅguhan</lem><rdg wit="#msjb">sinaṅguhhan</rdg><rdg wit="#msjc">sinaṅguhanā</rdg></app><pb n="5v" edRef="#msja"/> <app><lem wit="#msja #msjb #msjc">varṇa</lem><rdg wit="#msba">varṇā</rdg></app> ·
 <app><lem wit="#msjb #msjc">tiniṅkah</lem><rdg wit="#msja">tinikah</rdg><rdg wit="#msba">tinitah</rdg></app> <app><lem wit="#msja #msjb #msba">pina<pb n="4r" edRef="#msjb"/><pb n="9v" edRef="#msba"/>rva</lem><rdg wit="#msjc">pinarva ṅ</rdg></app> vkasan, <app><lem wit="#msja #msjb #msjc">ikaṅ</lem><rdg wit="#msba">hikaṅ</rdg></app> namah yekihәn <app><lem wit="#msba">svara</lem><rdg wit="#msja #msjb #msjc">śvara</rdg></app> ṅaranya, yapvan <app><lem type="emn">kapūrvānta</lem><rdg wit="#msja">kapurvahanta</rdg><rdg wit="#msjb">kapurvyahanta</rdg><rdg wit="#msjc">\_purvahantyata</rdg><rdg wit="#msba">kapūrva anta</rdg></app>, sinaṅguhan vyañjana <app><lem wit="#msja #msjb #msba">nāma</lem><rdg wit="#msjc">namma</rdg></app> ·
@@ -721,7 +722,7 @@ varga ṅaranya lima likur, <app><lem type="norm">ka pinakapūrvanikaṅ</lem><r
 </p>
 
 
-</div><div><head>Armes de lettres</head>
+</div><div n="11" type="chapter"><head>Armes de lettres</head>
 
 
 <p>
@@ -757,7 +758,7 @@ hana <app><lem wit="#msja #msba">taṅ</lem><rdg wit="#msjb">kaṅ</rdg><rdg wit
 </p>
 
 
-</div><div><head>Chanda (Mètres)</head>
+</div><div n="12" type="chapter"><head>Chanda (Mètres)</head>
     <div><head>Noms de mètre selon nombre de syllabes</head>
 
 
@@ -983,7 +984,7 @@ nahan pratiṅkahnya, <app><lem wit="#msjb">sampun</lem><rdg wit="#msba">i sāmp
 
 <lg>
 <l n="a"><app><lem wit="#msba">yapvan</lem><rdg wit="#msja #msjb">yapyan</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msja #msba">ulah</lem><rdg wit="#msjb">uluh</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem type="norm">lāgi</lem><rdg wit="#msjb #msba">lagi</rdg><rdg wit="#msja">lāṅgvə</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msjb #msba">tivas</lem><rdg wit="#msja">vas</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app></l>
-<l n="b"><app><lem wit="#msba">hayva</lem><rdg wit="#msja">ayva</rdg><rdg wit="#msjb">ayya</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msja #msba">ginәṅ</lem><rdg wit="#msjb">ginī</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msja #msba">bvat</lem><rdg wit="#msjb">byat</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msjb">hantukan</lem><rdg wit="#msja #msba">antukan</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg><note><ptr traget="#msjb"/>Ce mot ne suit pas du tout le réglement métrique et je ne trouve pas encore la solution pour cela.</note></app></l>
+<l n="b"><app><lem wit="#msba">hayva</lem><rdg wit="#msja">ayva</rdg><rdg wit="#msjb">ayya</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msja #msba">ginәṅ</lem><rdg wit="#msjb">ginī</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msja #msba">bvat</lem><rdg wit="#msjb">byat</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem wit="#msjb">hantukan</lem><rdg wit="#msja #msba">antukan</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg><note><ptr target="#msjb"/>Ce mot ne suit pas du tout le réglement métrique et je ne trouve pas encore la solution pour cela.</note></app></l>
 <l n="c"><app><lem wit="#msba">doṣanikāmrih</lem><rdg wit="#msja">dośanika prī</rdg><rdg wit="#msjb">dośanika prih</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app> <app><lem type="norm">ka<pb n="9v" edRef="#msja"/>sulam</lem><rdg wit="#msba">kasulām</rdg><rdg wit="#msja">prī ka\_\_</rdg><rdg wit="#msjb">kaśulam</rdg><rdg wit="#msjc"><gap reason="lost"/></rdg></app></l>
 <l n="d" real="+--|++-|-="><app><lem type="norm">mā<pb n="7r" edRef="#msjb"/>ṇavakakrīḍita</lem><rdg wit="#msjb">mānavakakriddhita</rdg><rdg wit="#msba">mānavakakridita</rdg><rdg wit="#msja #msjc"><gap reason="lost"/></rdg><note>Le <ptr target="#msja"/> actuel a ensuite perdu les folios 10 et 11, mais le 10 a encore existé dans l'édition de Lokesh Chandra (1998, p. 163-165).</note></app> ya · || 16 || [15] </l></lg>
             
@@ -2156,7 +2157,7 @@ nahan pratiṅkahnya, <app><lem wit="#msjb">sampun</lem><rdg wit="#msba">i sāmp
 <lg><l n="a" real="---|+--|+--|---|-+-|-+-|-=">pracalita sumavur <app><lem wit="#msjb #msba">surakusuma</lem><rdg wit="#msja">śurakuśuma</rdg><rdg wit="#msjc">śurakusuma</rdg></app> lavan <app><lem type="norm">jәnu</lem><rdg wit="#msja #msjb #msjc #msba">jnu</rdg></app> <app><lem wit="#msja #msjb #msjc">mavaṅi</lem><rdg wit="#msba">vaṅi</rdg></app> <app><lem wit="#msjb">vadara ya gumuluṅ</lem><rdg wit="#msjc">vadara gumuluṅ</rdg><rdg wit="#msja #msba">vaḍara ya gumuluṅ</rdg></app> · || 93 ||</l></lg> 
 <lg><l n="a" real="---|-++|---|---|=">kadi <app><lem wit="#msja #msba">siṅha rūpanya</lem><rdg wit="#msjb">śiṅā rupanya</rdg><rdg wit="#msjc">sīṅha rupanya</rdg></app> ya <app><lem wit="#msja #msba">kagirigiri</lem><rdg wit="#msjb">kagirīgirī</rdg><rdg wit="#msjc">kagirigirī</rdg></app> · || 94 || <app><lem>[95]</lem><note>le nom dans la liste est Siṅhasāri.</note></app></l></lg>
 <lg><l n="a" real="---|---|+--|---|---|---|---|-+-|---|---|---|+--|---|-+-|---|--="> kadi hudan ikanaṅ <app><lem type="norm">kusumasadhana</lem><rdg wit="#msja">kusumāsaḍanā</rdg><rdg wit="#msjb">kusumasadarā</rdg><rdg wit="#msjc">kusumasadḍara</rdg><rdg wit="#msba">kusumasada</rdg></app> <app><lem wit="#msjb #msjc">rurus</lem><rdg wit="#msja #msba">rurūs</rdg></app> <app><lem type="emn">iniriṅ</lem><rdg wit="#msjb #msjc #msba">inirir</rdg><rdg wit="#msja">sīnirir</rdg></app> <app><lem wit="#msjb #msjc #msba">iṅ</lem><rdg wit="#msja">īṅ</rdg></app> <app><lem wit="#msja #msba">aṅin</lem><rdg wit="#msjb">aṅīn</rdg><rdg wit="#msjc">aṅiṇa</rdg></app> <app><lem wit="#msjb #msjc #msba">adrәs</lem><rdg wit="#msja">ādrәs</rdg></app> <app><lem wit="#msja #msjc">mapa</lem><rdg rend="check" wit="#msjb">maṅpa</rdg><rdg wit="#msba">bapa</rdg></app> <app><lem wit="#msjb #msjc #msba">maja</lem><rdg wit="#msja">majar</rdg></app> <app><lem wit="#msjb #msjc">r̥ṣigaṇa</lem><rdg wit="#msja">r̥ṣigāṇa</rdg><rdg wit="#msba">r̥ṣiṅgaṇa</rdg></app> <app><lem wit="#msjb #msba">ri</lem><rdg wit="#msjc">rī</rdg><rdg wit="#msja"><gap reason="omitted"/></rdg></app> bhaṭāra <app><lem wit="#msja #msjc #msba">paśupati</lem><rdg wit="#msjb">paṣupatī</rdg></app> nahan <app><lem wit="#msja #msjb #msjc">lalu</lem><rdg wit="#msba">lagu lalu</rdg></app> <app><lem wit="#msba">ṅaranikihěn</lem><rdg wit="#msja #msjb #msjc">ṅaranekihәn</rdg></app> · || 95 || [102]</l>
-<l n="b" real="+--|+--|+-(=)|+--|-+-|-+-|---|-+-|++-|-+-|-+-|+-="> <app><lem wit="#msja #msjb #msjc">sampun</lem><rdg wit="#msba">sāmpun</rdg></app> <app><lem wit="#msja #msjc #msba">ikaṅ</lem><rdg wit="#msjb">ika</rdg></app> <app><lem wit="#msba">rasa</lem><rdg wit="#msja #msjb #msjc">raṣa</rdg></app> <app><lem type="norm">chanda</lem><rdg wit="#msja #msjb #msjc">canda</rdg><rdg wit="#msba">caṇḍa</rdg></app> <app><lem wit="#msba" rend="check">śilyanya#msba</lem><rdg wit="#msja #msjb #msjc">lalunya</rdg></app> <app><lem type="norm">tәlas</lem><rdg wit="#msjb #msjc #msba">tlas</rdg><rdg wit="#msja"><gap reason="omitted"/></rdg></app> <app><lem type="norm">ginәlar</lem><rdg wit="#msja #msjb #msjc #msba">ginlar</rdg></app> <app><lem wit="#msja #msjb #msjc">hana</lem><rdg wit="#msba">ana</rdg></app> <app><lem wit="#msja #msjb #msba">riṅ</lem><rdg wit="#msjc">ri</rdg></app> guru <app><lem wit="#msjc">laghu</lem><rdg wit="#msja #msjb">lāghu</rdg><rdg wit="#msba">lagu</rdg></app> <app><lem type="norm">vәtunya</lem><rdg wit="#msja #msjb #msjc #msba">vtunya</rdg></app> <app><lem type="norm">sā<pb n="31v" edRef="#msba"/>kṣāt</lem><rdg wit="#msba">sakṣāt</rdg><rdg wit="#msja">saśat</rdg><rdg wit="#msjb">śaṣat</rdg><rdg wit="#msjc">śakṣat</rdg></app> ya ta<pb n="12v" edRef="#msjc"/> ḍaṇḍa <app><lem wit="#msjb #msba">ṅaranya</lem><rdg wit="#msja #msjc">ṅarannya</rdg></app> <app><lem wit="#msja #msjc #msba">tiṅhali</lem><rdg wit="#msjb">tiṅālī</rdg></app> · || 96 || [103] \\
+<l n="b" real="+--|+--|+-(=)|+--|-+-|-+-|---|-+-|++-|-+-|-+-|+-="> <app><lem wit="#msja #msjb #msjc">sampun</lem><rdg wit="#msba">sāmpun</rdg></app> <app><lem wit="#msja #msjc #msba">ikaṅ</lem><rdg wit="#msjb">ika</rdg></app> <app><lem wit="#msba">rasa</lem><rdg wit="#msja #msjb #msjc">raṣa</rdg></app> <app><lem type="norm">chanda</lem><rdg wit="#msja #msjb #msjc">canda</rdg><rdg wit="#msba">caṇḍa</rdg></app> <app><lem wit="#msba" rend="check">śilyanya</lem><rdg wit="#msja #msjb #msjc">lalunya</rdg></app> <app><lem type="norm">tәlas</lem><rdg wit="#msjb #msjc #msba">tlas</rdg><rdg wit="#msja"><gap reason="omitted"/></rdg></app> <app><lem type="norm">ginәlar</lem><rdg wit="#msja #msjb #msjc #msba">ginlar</rdg></app> <app><lem wit="#msja #msjb #msjc">hana</lem><rdg wit="#msba">ana</rdg></app> <app><lem wit="#msja #msjb #msba">riṅ</lem><rdg wit="#msjc">ri</rdg></app> guru <app><lem wit="#msjc">laghu</lem><rdg wit="#msja #msjb">lāghu</rdg><rdg wit="#msba">lagu</rdg></app> <app><lem type="norm">vәtunya</lem><rdg wit="#msja #msjb #msjc #msba">vtunya</rdg></app> <app><lem type="norm">sā<pb n="31v" edRef="#msba"/>kṣāt</lem><rdg wit="#msba">sakṣāt</rdg><rdg wit="#msja">saśat</rdg><rdg wit="#msjb">śaṣat</rdg><rdg wit="#msjc">śakṣat</rdg></app> ya ta<pb n="12v" edRef="#msjc"/> ḍaṇḍa <app><lem wit="#msjb #msba">ṅaranya</lem><rdg wit="#msja #msjc">ṅarannya</rdg></app> <app><lem wit="#msja #msjc #msba">tiṅhali</lem><rdg wit="#msjb">tiṅālī</rdg></app> · || 96 || [103] \\
 </l></lg>
 
 
