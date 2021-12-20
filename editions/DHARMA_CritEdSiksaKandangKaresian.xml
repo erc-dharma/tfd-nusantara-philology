@@ -3,7 +3,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="siksakandangkaresian"
+     xml:id="skk"
      type="edition"
      xml:lang="eng">
    <teiHeader>
@@ -105,8 +105,6 @@
                                         Research Council (ERC) under the European Union's Horizon
                                         2020 research and innovation programme (grant agreement no
                                         809994).</p>
-            <p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical
-                                                Editions in the DHARMA Project</ref>.</p>
          </projectDesc>
          <schemaRef type="guide"
                     key="EGCv01"
@@ -131,9 +129,14 @@
 In other words, you should search all cases where you have encoded only <rdg wit="..."/> and where this is not intended to express scribal omission but rather a physical gap in the witness. You should in all those cases encode a <gap/> inside the <rdg>, as in the example above.
 
 The display will provisionally be: "[...][...] B".      -->
-                <div type="chapter" n="1" xml:id="siksakandangkaresian_01">
+                <div type="chapter" n="1" xml:id="skk_01">
                 <head type="editorial" xml:lang="eng">The Ten Accomplishments</head>
+<<<<<<< HEAD
                     <p xml:id="siksakandangkaresian_01.01"><pb edRef="#A" n="1v"/>ndah
+=======
+                    <p xml:id="skk_01.01"><pb edRef="#A" n="1v"/>ndah
+
+>>>>>>> 998ea02176cc80ab71a53050c989a954ad958f07
                             <app><lem wit="#A #EdASD">nihan varahakna</lem><rdg wit="#B">na<gap reason="lost" unit="character" quantity="4"/>ḥhakca</rdg></app> saṅ sadu,
 	       <app><lem wit="#A #EdASD">de</lem><rdg wit="#B">den</rdg></app> saṅ mamet
                             <app><lem wit="#A #EdASD">hayu, hana ta</lem><rdg wit="#B">hayu,<lacunaStart/></rdg></app>
@@ -142,7 +145,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">nihan ujar</lem><rdg wit="#B"><lacunaEnd/> Ujar</rdg></app> saṅ sadu, ṅagəlarkәn saṅ hyaṅ siksa
                             <app><lem wit="#A #EdASD">kandaṅ</lem><rdg wit="#B">kadaṁ</rdg></app> karәsian.</p>
 
-                <p xml:id="siksakandangkaresian_01.02">ini saṅ hyaṅ <app><lem wit="#A #EdASD">dasa-krәta</lem><rdg wit="#B">da<gap reason="lost" quantity="3" unit="character"/></rdg></app>,
+                <p xml:id="skk_01.02">ini saṅ hyaṅ <app><lem wit="#A #EdASD">dasa-krәta</lem><rdg wit="#B">da<gap reason="lost" quantity="3" unit="character"/></rdg></app>,
                         <app><lem wit="#A #EdASD">kundaṅən</lem><rdg wit="#B">kudaṁṅən:a</rdg></app>
                         <app><lem wit="#A #EdASD">uraṅ reya</lem><rdg wit="#B">Uraṁ rye di na bvana pun·</rdg></app>,
                         <app><lem>asiṅ nu dek
@@ -159,13 +162,13 @@ kayatnakna voṅ sakabeh,
                         <app><lem xml:id="lem001" wit="#A">ñovana</lem><rdg wit="#EdASD" varSeq="1">ñavana</rdg><rdg wit="#EdASD" varSeq="2">ñevana</rdg></app>
 <!-- Wait and see if all witDetail is to be change to varSeq-->                        <app><lem wit="#A #EdASD">na uraṅ</lem><rdg wit="#B"><lacunaEnd/> na Uraṁ</rdg></app> reya.</p>
              
-                <p xml:id="siksakandangkaresian_01.03"><app><lem wit="#B #EdASD">ini</lem><rdg wit="#A"><gap reason="lost" unit="character" quantity="1"/>ni</rdg></app>
+                <p xml:id="skk_01.03"><app><lem wit="#B #EdASD">ini</lem><rdg wit="#A"><gap reason="lost" unit="character" quantity="1"/>ni</rdg></app>
                         <app><lem wit="#A">byaktana</lem><rdg wit="#B">byitana</rdg><rdg wit="#EdASD">byakta</rdg></app> saṅ hyaṅ
                         <app><lem wit="#A #EdASD">dasa-krәta</lem><rdg wit="#B">dasakrata</rdg></app> ṅaranya, kalaṅkaṅ saṅ hyaṅ <app><lem wit="#A #EdASD" rend="hyphenfront">dasa-sila</lem><rdg wit="#B">dasa<lacunaStart/></rdg></app>, maya-maya saṅ hyaṅ dasa-marga, kaprәtyaksaan na dasa-indriya, pakәn ṅrәtakәn
                         <app><lem wit="#A">di</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app> bumi lamba, di bumi
                         <app><lem type="emn">parәk</lem><rdg wit="#A">paR̥<unclear>ka</unclear></rdg><rdg wit="#EdASD">tan parək</rdg></app>.</p>
 
-                <p xml:id="siksakandangkaresian_01.04"><app><lem wit="#A #EdASD">ini pakәn</lem><rdg wit="#B"><lacunaEnd/> pak·kәn</rdg></app> uraṅ ṅrәtakәn bumi
+                <p xml:id="skk_01.04"><app><lem wit="#A #EdASD">ini pakәn</lem><rdg wit="#B"><lacunaEnd/> pak·kәn</rdg></app> uraṅ ṅrәtakәn bumi
                         <app><lem type="emn">lamba, caaṅ jalan</lem><rdg wit="#EdASD">lamba caaṅ jalan</rdg><rdg wit="#A">la<unclear>mbha</unclear><gap reason="lost" unit="character" quantity="3"/>ṁ<unclear>ja</unclear>lan·</rdg><rdg wit="#B">laba, caAṁ jalan</rdg></app>, pañjaṅ tajur, paka<app><lem wit="#A" rend="hyphenfront">pradana</lem><rdg wit="#B">-prədana</rdg><rdg wit="#EdASD">-pridana</rdg></app>, liñih pipir,
                         <app><lem wit="#B #EdASD">caaṅ</lem><rdg wit="#A"><unclear>ca</unclear>A</rdg></app>
                         <app><lem type="norm">bu<pb edRef="#A" n="2r"/>ruan, aṅgәs</lem><rdg wit="#A">buruAn·, agәs</rdg><rdg wit="#B">buruAn· A<lacunaStart/></rdg></app> ma imah kaәsi, lәit kaәsi, parañje kaәsi,
@@ -182,18 +185,18 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A #EdASD">makahurip na</lem><rdg wit="#B">makahurip<lacunaStart/></rdg></app> uraṅ reya, iña eta saṅ hyaṅ sasana 
                         <app><lem wit="#A #EdASD">krәta, di lamba</lem><rdg wit="#B"><lacunaEnd/> di laba</rdg></app> ṅaranna.</p>
 
-                <p xml:id="siksakandangkaresian_01.05">ini saṅ hyaṅ dasa-<app><lem wit="#A #EdASD" rend="hyphenfront">krәta</lem><rdg wit="#B">krata</rdg></app>, nu dipajarkәn
+                <p xml:id="skk_01.05">ini saṅ hyaṅ dasa-<app><lem wit="#A #EdASD" rend="hyphenfront">krәta</lem><rdg wit="#B">krata</rdg></app>, nu dipajarkәn
                         <app><lem wit="#A #EdASD">kalaṅkaṅ</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app> saṅ hyaṅ <app><lem wit="#A #EdASD">dasa-sila</lem><rdg wit="#B">dasa<lacunaStart/></rdg></app>
                         <app><lem wit="#A">ta</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>, ya maya-maya
                         <app><lem wit="#A #EdASD">saṅ hyaṅ</lem><rdg wit="#B"><gap reason="lost"/><lacunaEnd/> hyaṁ</rdg></app> 
                         <app><lem wit="#A #EdASD">dasa-marga ta</lem><rdg wit="#B">dasa-mrәga<lacunaStart/></rdg></app>, kaprәtyaksaan na dasa-indriya.</p>
-                <p xml:id="siksakandangkaresian_01.06">ini
+                <p xml:id="skk_01.06">ini
                         <app><lem wit="#A">byaktana, cǝli</lem><rdg wit="#EdASD">byakta, cǝli</rdg><rdg wit="#B"><lacunaEnd/>na, cəli</rdg></app>
                         <app><lem wit="#A #EdASD">ulah</lem><rdg wit="#B">mulah</rdg></app> baraṅ deṅe mo ma nu siәp dideṅe, kenana dora bañcana, saṅkan uraṅ nәmu
                         <app><lem wit="#A #EdASD">mala, na</lem><rdg wit="#B">mala,<lacunaStart/></rdg></app> lunas papa naraka, heṅan
                         <app><lem wit="#A">lamunna</lem><rdg wit="#B"><lacunaEnd/>n:a</rdg><rdg wit="#EdASD">lamun</rdg></app> kapahayu ma,
                         <app><lem wit="#B #EdASD">sinәṅ<pb edRef="#A" n="2v"/>guh</lem><rdg wit="#A">sinәguh</rdg></app> utama bijilna ti paṅrәṅә.</p>
-                <p xml:id="siksakandangkaresian_01.07">mata
+                <p xml:id="skk_01.07">mata
                         <app><lem wit="#A #EdASD">ulah</lem><rdg wit="#B">mulah</rdg></app>
                         <app><lem wit="#A #EdASD">baraṅ</lem><rdg wit="#B">salah</rdg></app>
                         <app><lem wit="#A #EdASD">dәlә, mo</lem><rdg wit="#B">dәlә, <lacunaStart/></rdg></app> ma nu siәp didәlә, kenana dora bañcana, 
@@ -202,31 +205,31 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A #B">mala, na</lem><rdg wit="#EdASD">mala na</rdg></app> lunas papa
                         <app><lem wit="#A #B">kalesa</lem><rdg wit="#EdASD">naraka</rdg><note>Or emend to <foreign>naraka</foreign>, as in the previous paragraphs?</note></app>, heṅan <app><lem wit="#A #B">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> kapahayu ma, sinaṅguh
                         <app><lem rend="check" type="conj">utama bijil ti mata</lem><rdg wit="#A #EdASD">utamaniṅ dәlә</rdg><rdg wit="#B">utama bijil ti<lacunaStart/></rdg><note>Or conjecture <foreign>paṅdələ</foreign>?</note></app>.</p>
-                <p xml:id="siksakandangkaresian_01.08">kulit ulah dipake gulaṅ-gasehan, ku panas ku tiis, 
+                <p xml:id="skk_01.08">kulit ulah dipake gulaṅ-gasehan, ku panas ku tiis, 
                         <app><lem wit="#A #EdASD">kenana</lem><rdg wit="#B"><lacunaEnd/>nana</rdg></app> dora bañcana, saṅkan uraṅ nәmu
                         <app><lem wit="#A #B">mala, na</lem><rdg wit="#EdASD">mala na</rdg></app> lunas papa naraka, heṅan lamunna kapahayu ma, sinәṅguh 
                         <app><lem wit="#A">utama</lem><rdg wit="#B">uta<lacunaStart/></rdg></app> bijilna ti kulit.</p>
-                <p xml:id="siksakandangkaresian_01.09">letah ulah salah nu dirasakәn, kenana dora bañcana, saṅkan uraṅ nәmu mala, na lunas papa naraka, heṅan lamunna kapahayu ma, sinәṅguh utama bijilna ti letah.</p>
-                <p xml:id="siksakandangkaresian_01.10">iruṅ ulah salah ambә, kenana dora bañcana, saṅkan uraṅ nәmu mala, na lunas papa <pb edRef="#A" n="3r"/>naraka, heṅan
+                <p xml:id="skk_01.09">letah ulah salah nu dirasakәn, kenana dora bañcana, saṅkan uraṅ nәmu mala, na lunas papa naraka, heṅan lamunna kapahayu ma, sinәṅguh utama bijilna ti letah.</p>
+                <p xml:id="skk_01.10">iruṅ ulah salah ambә, kenana dora bañcana, saṅkan uraṅ nәmu mala, na lunas papa <pb edRef="#A" n="3r"/>naraka, heṅan
                         <app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> kapahayu ma, sinәṅguh utama bijilna
                         <app><lem wit="#A">ti iruṅ</lem><rdg wit="#EdASD">timiruṅ</rdg><note>It seems that this is a misprint of the edition.</note></app>.</p>
-                <p xml:id="siksakandangkaresian_01.11">suṅut ulah baraṅ carek<supplied reason="omitted">,</supplied> kenana dora bañcana, na lunas papa naraka, heṅan
+                <p xml:id="skk_01.11">suṅut ulah baraṅ carek<supplied reason="omitted">,</supplied> kenana dora bañcana, na lunas papa naraka, heṅan
                         <app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> kapahayu ma, sinәṅguh utama bijilna ti suṅut.</p>
-                <p xml:id="siksakandangkaresian_01.12">lәṅәn mulah baraṅ cokot, kenana dora bañcana, na lunas papa naraka, heṅan
+                <p xml:id="skk_01.12">lәṅәn mulah baraṅ cokot, kenana dora bañcana, na lunas papa naraka, heṅan
                         <app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> kapahayu ma, sinәṅguh utama bijilna ti lәṅәn.</p>
-                <p xml:id="siksakandangkaresian_01.13">suku mulah baraṅ tiñcak, kenana dora bañcana, na lunas papa naraka, heṅan
+                <p xml:id="skk_01.13">suku mulah baraṅ tiñcak, kenana dora bañcana, na lunas papa naraka, heṅan
                         <app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> kapahayu ma, sinәṅguh utama bijilna ti suku.</p>
-                <p xml:id="siksakandangkaresian_01.14">payu ulah dipake kәtәr, kenana dora
+                <p xml:id="skk_01.14">payu ulah dipake kәtәr, kenana dora
                         <app><lem wit="#A">bañcana,</lem><rdg wit="#EdASD">bañcana</rdg></app> na lunas papa naraka, heṅan lamunna kapahayu ma, sinәṅguh utama bijilna ti payu.</p>
-                <p xml:id="siksakandangkaresian_01.15">baga purusa ulah dipake
+                <p xml:id="skk_01.15">baga purusa ulah dipake
                         <app><lem wit="#A">kañco<pb edRef="#A" n="3v"/>lah</lem><rdg wit="#EdASD">kañcoleh</rdg></app>, kenana dora bañcana, na lunas papa naraka, heṅan lamunna kapahayu ma, sinәṅguh utama bijilna ti baga lavan purusa, ya ta sinaṅguh dasa-krәta ṅaranna, aṅgәs
                         <app><lem wit="#A">ma kapahayu</lem><rdg wit="#EdASD">kapahayu ma</rdg></app>
                         <app><lem wit="#A">na dora</lem><rdg wit="#EdASD">dora</rdg></app> sapuluh, rampes tvah na uraṅ reya, makaṅuni tvah saṅ deva ratu.</p>
                 </div>
 
-          <div type="chapter" n="2" xml:id="siksakandangkaresian_02">
+          <div type="chapter" n="2" xml:id="skk_02">
                 <head type="editorial" xml:lang="eng">The Ten Devotions (<foreign>dasa-prəbakti</foreign>)</head>
-                <p xml:id="siksakandangkaresian_02.01">nihan sinaṅguh dasa-prәbakti ṅaranya,
+                <p xml:id="skk_02.01">nihan sinaṅguh dasa-prәbakti ṅaranya,
                         <app><lem wit="#EdASD">anak</lem><rdg wit="#A">Ana</rdg></app> bakti di bapa, <app><lem wit="#A"><num value="1">sa</num></lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>,
 												eve bakti di laki, <num value="2">2</num>,
 												hulun bakti di pacandaan, <num value="3">3</num>,
@@ -242,9 +245,9 @@ kayatnakna voṅ sakabeh,
 												devata bakti di hyaṅ,<!-- maybe mark this phrase as possible interpolation -->
 												<app><lem type="emn" wit="#EdASD">ya</lem><rdg wit="#A">yu</rdg></app> ta sinaṅguh dasa-prәbakti ṅaranna<!-- ṅarana in the msA, normalisation to note in the preface -->, <num value="10">0</num>.</p>
               </div>
-         <div type="chapter" n="3" xml:id="siksakandangkaresian_03">
+         <div type="chapter" n="3" xml:id="skk_03">
               <head type="editorial" xml:lang="eng">The Five Series</head>
-                 <p xml:id="siksakandangkaresian_03.01">ini na lakukәnәn, talatah saṅ sadu jati, oṅkara nama
+                 <p xml:id="skk_03.01">ini na lakukәnәn, talatah saṅ sadu jati, oṅkara nama
                         <app><lem wit="#A">sivaya</lem><rdg wit="#EdASD">sevaya</rdg></app>,
                         <app><lem wit="#A">sәmbahniṅ</lem><rdg wit="#EdASD">sәmbah iṅ</rdg></app> hulun, di saṅ hyaṅ pañca-tatagata,
 												pañca ṅaraniṅ lima, tata ma ṅaraniṅ sabda, gata ta ma ṅaraniṅ raga,
@@ -258,21 +261,21 @@ kayatnakna voṅ sakabeh,
                          <app><lem wit="#A">guruniṅ</lem><rdg wit="#EdASD">guru iṅ</rdg></app> janma,
 												 saṅmoha <app><lem wit="#A">ma</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>
                          <app><lem type="norm">saaṅgәsna</lem><rdg wit="#A">saAgәsna</rdg><rdg wit="#EdASD">saṅgәsna</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">sagəsna</rdg><witDetail wit="#EdASD" type="ac"/></app> aya bvana.</p>
-                <p xml:id="siksakandangkaresian_03.02">ini byaktana ṅaranya, ya pañca-byapara, saṅ hyaṅ prәtivi, apah, teja, bayu, mvaṅ akasa, carek saṅ sadu mahapurusa, eta keh drәbya uraṅ, kaṅkәn prәtivi kulit, kaṅkәn apah darah ciduh, kaṅkәn teja panon, kaṅkәn bayu tulaṅ, kaṅkәn akasa <pb edRef="#A" n="4v"/>kapala, iya
+                <p xml:id="skk_03.02">ini byaktana ṅaranya, ya pañca-byapara, saṅ hyaṅ prәtivi, apah, teja, bayu, mvaṅ akasa, carek saṅ sadu mahapurusa, eta keh drәbya uraṅ, kaṅkәn prәtivi kulit, kaṅkәn apah darah ciduh, kaṅkәn teja panon, kaṅkәn bayu tulaṅ, kaṅkәn akasa <pb edRef="#A" n="4v"/>kapala, iya
                         <app><lem type="emn" wit="#EdASD">prәtivi</lem><rdg wit="#A">prәvi</rdg></app> di sarira ṅaranya, ña mana
                         <app><lem type="norm" wit="#EdASD">dikaṅkәnkәn</lem><rdg wit="#A">dikaṅkәkәn</rdg></app>
                         <app><lem wit="#A">ka</lem><rdg wit="#EdASD">ku</rdg></app> nu mava bumi, ya maṅupati
                         <app><lem wit="#A">dadi</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>
                         <app><lem wit="#A">prabu</lem><rdg wit="#EdASD">pra</rdg><note>Atja &amp; Saleh Danasasmita note <q>Sesudah tarahan seharusnya ada prabu</q>. This note is ambiguous for it is more plausible that the word <foreign>prabu</foreign> appears before <foreign>rama</foreign>. But if it is the case, than it is misread since the manuscript undoubtedly contains the word <foreign>prabu</foreign> just before <foreign>rama</foreign>.</note></app> rama rәsi disi mvaṅ tarahan.</p>
-                <p xml:id="siksakandangkaresian_03.03">ini pañca-putra, <app><lem type="norm" wit="#EdASD">prətivi</lem><rdg wit="#A">prativi</rdg></app> saṅ maṅukuhan, apah saṅ katuṅ maralah, teja saṅ karuṅ kalah, bayu saṅ sandaṅ grәba, akasa saṅ
+                <p xml:id="skk_03.03">ini pañca-putra, <app><lem type="norm" wit="#EdASD">prətivi</lem><rdg wit="#A">prativi</rdg></app> saṅ maṅukuhan, apah saṅ katuṅ maralah, teja saṅ karuṅ kalah, bayu saṅ sandaṅ grәba, akasa saṅ
                         <app><lem type="emn" wit="#EdASD">vrәti kandayun</lem><rdg wit="#A">vr̥әtkiṇdayun·</rdg></app>.</p>
-                <p xml:id="siksakandangkaresian_03.04">ini pañca-kusika, saṅ kusika, di gunuṅ, saṅ garga di rumbut, saṅ
+                <p xml:id="skk_03.04">ini pañca-kusika, saṅ kusika, di gunuṅ, saṅ garga di rumbut, saṅ
                         <app><lem wit="#A">mestri</lem><rdg wit="#EdASD">mesti</rdg><note>The variation of readings is due to the problematic transciption of the character <foreign>ṭā</foreign>. In the Old West-Javanese manuscript corpus, this character can represent both <foreign>ṭā</foreign> or <foreign>tra</foreign>. Faced with the choice to read <foreign>mesṭi</foreign> or mestri, I prefer the latter, since it is the more common spelling in OS texts, i.e., <title>Carita Parahyaṅan</title>, <title>Saṅ Hyaṅ Sasana Mahaguru</title>, etc. Cf. Old Javanese <foreign>metri</foreign>.</note></app> di mahameru, saṅ purusa di mandiri, saṅ patañjala di pañjulan.</p>
-                <p xml:id="siksakandangkaresian_03.05"><app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> pahi kaopeksa saṅ hyaṅ vuku lima,
+                <p xml:id="skk_03.05"><app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> pahi kaopeksa saṅ hyaṅ vuku lima,
                         <app><lem wit="#A #EdASD">na</lem><witDetail wit="#EdASD" type="ac"/><rdg wit="#EdASD">dina</rdg><witDetail wit="#EdASD" type="pc"/></app> bvana boa halimpu, ikaṅ desa kabeh, desa
                         <app><lem type="emn">kabeh</lem><rdg wit="#A">beh</rdg></app> ṅaranya, purba, daksina,
                         <app><lem wit="#A">pasirma</lem><rdg wit="#EdASD">pasima</rdg><note>The spelling of this word, derived from Skt. <foreign>paścima</foreign>, shows considerable variation in the OS corpus. I retain the spelling of <ptr target="#A"/> as it occurs again in the next paragraph, and a similar spelling is found in <title>Kavih Mahañana</title>.</note></app>, utara, madya. </p>
-                <p xml:id="siksakandangkaresian_03.06"><app><lem type="emn" wit="#EdASD">purba, timur</lem><rdg wit="#A">purba ti timur</rdg></app><!-- dittography -->, kahanan hyaṅ isora, putih rupanya, daksina kidul,
+                <p xml:id="skk_03.06"><app><lem type="emn" wit="#EdASD">purba, timur</lem><rdg wit="#A">purba ti timur</rdg></app><!-- dittography -->, kahanan hyaṅ isora, putih rupanya, daksina kidul,
                         <app><lem><app><lem type="emn" wit="#EdASD">kahanan</lem><rdg wit="#A">kihanan·</rdg></app>
                         <app><lem type="emn" wit="#EdASD">hyaṅ</lem><rdg wit="#A">hya</rdg></app>
                         <app><lem type="norm" wit="#EdASD">brahma</lem><rdg wit="#A">br̥ḥma</rdg></app>, <app><lem wit="#A">baṅ</lem><rdg wit="#EdASD">mirah</rdg></app> rupanya,
@@ -282,35 +285,35 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A">rupanya</lem><note>Atja &amp; Saleh Danasasmita considered this word to be omitted in the manuscript, so they added it as though it were a conjecture, but actually it is simply there in <ptr target="#A"/>.</note></app>, <pb edRef="#A" n="5r"/>utara lor, kahanan hyaṅ visnu, hirәṅ rupanya, madya tәṅah, kahanan hyaṅ sivah,
                         <app><lem type="conj" wit="#EdASD">anekavarna</lem><rdg wit="#A">varna</rdg></app> rupanya, ña mana sakitu saṅ hyaṅ vuku lima
                         <app><lem wit="#A">di</lem><rdg wit="#EdASD">dina</rdg></app> bvana.</p>
-                <p xml:id="siksakandangkaresian_03.07">ini vuku lima di mahapandita, sandi ma karasa si tutur, tapa ma karasa si
+                <p xml:id="skk_03.07">ini vuku lima di mahapandita, sandi ma karasa si tutur, tapa ma karasa si
                         <app><lem wit="#A #EdASD">liṅlaṅ</lem><witDetail wit="#EdASD" type="ac"/><rdg wit="#EdASD">laṅlaṅ</rdg><witDetail wit="#EdASD" type="pc"/></app>, luṅguh ma karasa si pagәh, prәtyaksa ma karasa
                         <app><lem wit="#A">sy asәmbava</lem><rdg wit="#EdASD">si asәmbava</rdg></app>, kalәpasәn ma 
                         <app><lem type="emn">karasa si maṅdumi</lem><rdg wit="#A #EdASD">karasa madumi</rdg></app> tan kaduman,
                         <app><lem>maṅhiṅi tan
                         <app><lem type="emn">kahiṅanan</lem><rdg wit="#A">kahiṅinan</rdg></app></lem><rdg wit="#EdASD">maṅhiṅәtan tanpa hiṅa</rdg></app>, sakitu vuku lima di mahapandita.</p>
 
-                 <p xml:id="siksakandangkaresian_03.08">nihan pavvitaniṅ krәta, sya saṅ devata lima, pahi ṅavakan ṅaran di maneh, pahi mirәṅәh rua di maneh, heṅan lamunna mo
+                 <p xml:id="skk_03.08">nihan pavvitaniṅ krәta, sya saṅ devata lima, pahi ṅavakan ṅaran di maneh, pahi mirәṅәh rua di maneh, heṅan lamunna mo
                         <app><lem wit="#A">karaksa</lem><rdg wit="#EdASD">karasa</rdg></app> ma,
                         <app><lem wit="#EdASD">kady aṅganiṅ</lem><rdg wit="#A">kadyaganiṅ</rdg></app> vilut tumәmu vilutnya bәnәr tumәmu benernya, kitu keh eta, ku tvahniṅ janma mana krәta, ku tvahniṅ<pb edRef="#A" n="5v"/> janma mana na
                         <app><lem wit="#A">hayu</lem><rdg wit="#EdASD">layu</rdg><note>It seems this is a printing error.</note></app>.</p>
          </div>
 
-          <div type="chapter" n="4" xml:id="siksakandangkaresian_04">
+          <div type="chapter" n="4" xml:id="skk_04">
              <head type="editorial" xml:lang="eng">The Acts of the servant (<foreign>karmaniṅ hulun</foreign>)</head>
-                <p xml:id="siksakandangkaresian_04.01">ini karmaniṅ hulun, sakajalan uraṅ hulun, karma ma ṅaranya pibudiәn,
+                <p xml:id="skk_04.01">ini karmaniṅ hulun, sakajalan uraṅ hulun, karma ma ṅaranya pibudiәn,
                         <app><lem type="norm" wit="#EdASD">tiṅkah</lem><rdg wit="#A">tikah</rdg></app> paripolah, sakajalan ṅaranya, maka takut maka jarot, maka atoṅ maka tәaṅ, di tiṅkah di pitvahәn, di ulah di pisabdaan,
                         <app><lem>makaṅuni lamun di harәpәn saṅ deva ratu pun</lem><note>Atja &amp; Danasasmita consider this phrase as the beginning of the next paragraph.</note></app>.</p>
-                <p xml:id="siksakandangkaresian_04.02">maka satya di kahulunan,
+                <p xml:id="skk_04.02">maka satya di kahulunan,
                         <app><lem wit="#A">mana</lem><rdg wit="#EdASD">maka</rdg></app> lokat dasa-kalesa, boa ruvat mala mari papa,
                         <app><lem wit="#A">kapaṅguhniṅ</lem><rdg wit="#EdASD">kapaṅgihniṅ</rdg></app> kasorgaan.</p>
-                <p xml:id="siksakandangkaresian_04.03">lamun
+                <p xml:id="skk_04.03">lamun
                         <app><lem wit="#A">tәtәiṅ</lem><rdg wit="#EdASD">tә<supplied reason="omitted">ṅ</supplied>tәiṅ</rdg></app> ṅavakan karmaniṅ hulun,
                         <app><lem type="emn" wit="#EdASD">kitu</lem><rdg wit="#A">kәtu</rdg></app> eta lәvih  
                         <app><lem type="emn">madan usyat</lem><rdg wit="#A">madan:usya</rdg><rdg wit="#EdASD">madan usya</rdg></app> titindih ukir, ditapa di luhur gunuṅ, kena palaraṅ ditapa, di na
                         <app><lem wit="#A">hunur</lem><rdg wit="#EdASD">luhur</rdg></app> gajah hunur
                         <app><lem type="norm" wit="#EdASD">siṅha</lem><rdg wit="#A">siha</rdg></app>,
                         <app><lem type="emn" wit="#EdASD">dәkәt</lem><rdg wit="#A">dәkәt:ә</rdg></app> mahabañcana.</p>
-                <p xml:id="siksakandangkaresian_04.04">ini tvahniṅ janma, pigunaәn na uraṅ reya, ulah mo turut saṅ hyaṅ siksa
+                <p xml:id="skk_04.04">ini tvahniṅ janma, pigunaәn na uraṅ reya, ulah mo turut saṅ hyaṅ siksa
                         <app><lem type="norm" wit="#EdASD">ka<pb edRef="#A" n="6r"/>ndaṅ</lem><rdg wit="#A">kanda</rdg></app> karәsian, jaga raṅ dek luput iṅ na
                         <app><lem type="norm">pañca-gati saṅsara</lem><rdg wit="#A">pañcagantisaṁsara</rdg><rdg wit="#EdASD">pañcagati, saṅsara</rdg></app>, mulah carut mulah
                         <app><lem type="emn">sok rereh</lem><rdg wit="#A">sorereh</rdg><rdg wit="#EdASD">sarereh</rdg></app>, mulah
@@ -321,19 +324,19 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A">na</lem><rdg wit="#EdASD">nu</rdg></app> lain dipajar iña, ña
                         <app><lem wit="#A">karah hdapna</lem><rdg wit="#EdASD">karah <supplied reason="omitted">ә</supplied>dapna</rdg></app> makira-kira, budi-budi,
                         <app><lem type="emn" wit="#EdASD">ṅajәrum</lem><rdg wit="#A">ṅajrərum</rdg></app>, mijahәtan, eta byaktana ñaṅcarutkәn maneh ta ṅaranna.</p>
-                <p xml:id="siksakandangkaresian_04.05">ñaṅcarutkәn sakalih ma ṅaranna, mipit mo amit, ṅala mo
+                <p xml:id="skk_04.05">ñaṅcarutkәn sakalih ma ṅaranna, mipit mo amit, ṅala mo
                         <app><lem type="norm" wit="#EdASD">menta</lem><rdg wit="#A">meta</rdg></app>,
                         <app><lem type="norm">ṅajumput</lem><rdg wit="#A #EdASD">ṅajuput</rdg></app> mo sadu, makaṅuni
                         <app><lem wit="#A">tu numpu</lem><rdg wit="#EdASD">tu tunumpu</rdg></app> maliṅ, 
                         <app><lem type="norm">ṅәntal</lem><rdg wit="#A #EdASD">ṅətal</rdg></app> ṅabegal, siṅ savatәk cәkap carut, ya ñaṅcarutkәn sakalih ṅaranna.</p>
-                <p xml:id="siksakandangkaresian_04.06">saṅuni tu meor, ṅodok,
+                <p xml:id="skk_04.06">saṅuni tu meor, ṅodok,
                         <app><lem wit="#A">ñopet</lem><rdg wit="#EdASD">ñepet</rdg></app>, ṅarәbut, ṅarorogoh, papañjiṅan,<pb edRef="#A" n="6v"/> makaṅuni ṅotok ṅovo, di pamajikan, di paṅhulu tandaṅ, makaṅuni di tohaan di maneh, itu lәvih mulah dipiguna, dipitvah ku uraṅ hulun.</p>
-                <p xml:id="siksakandangkaresian_04.07">ulah mo pake na sabda atoṅ tәaṅ guru basa, bakti suksila di pada janma, di kulakadaṅ baraya, makaṅuni di tohaan uraṅ, suku ma pake disila, lәṅәn ma pake umun.</p>
-                <p xml:id="siksakandangkaresian_04.08">jaga raṅ pacarek dәṅ menak dәṅ
+                <p xml:id="skk_04.07">ulah mo pake na sabda atoṅ tәaṅ guru basa, bakti suksila di pada janma, di kulakadaṅ baraya, makaṅuni di tohaan uraṅ, suku ma pake disila, lәṅәn ma pake umun.</p>
+                <p xml:id="skk_04.08">jaga raṅ pacarek dәṅ menak dәṅ
                         <app><lem type="emn" wit="#EdASD">gusti</lem><rdg wit="#A">guti</rdg></app>, dәṅ buhaya iṅ kalih, dәṅ
                         <app><lem wit="#A">astri</lem><rdg wit="#EdASD">estri</rdg></app> laraṅan, makaṅuni dәṅ tohaan uraṅ, jaga raṅ
                         <app><lem wit="#A">digunakәn</lem><rdg wit="#EdASD">dipiguhakən</rdg></app>, mulah surah di tinәṅ uraṅ, saṅuni salah tembal, kajәәṅ sәmu mo suka ku tohaan uraṅ, ulah<supplied reason="omitted">,</supplied> pamali<supplied reason="omitted">,</supplied> bisi urug bәnaṅ ditapa, hilaṅ bәnaṅ cakal bakal, bisi lәṅit batri hese, kapaṅguh ku saṅ hyaṅ jagat saṅsara, katigra<pb edRef="#A" n="7r"/>ha ku saṅ deva ratu.</p>
-                <p xml:id="siksakandangkaresian_04.09">lamun hamo satya di tohaan uraṅ,
+                <p xml:id="skk_04.09">lamun hamo satya di tohaan uraṅ,
                         <app><lem type="norm" wit="#EdASD">aṅgәs</lem><rdg wit="#A">agәs</rdg></app> ma jaga raṅ vaya di kagәriṅ, jaga raṅ palay, jaga raṅ irәg, duga-duga majar maneh
                         <app><lem wit="#A #B">tәtәiṅ</lem><rdg wit="#EdASD">tә<supplied reason="omitted">ṅ</supplied>tәiṅ</rdg></app> amat<supplied reason="omitted">,</supplied> mana dipajar satya di kahulunan, heṅan jaga raṅ cәta ma mulah luhya, mulah kuciva, mulah
                         <app><lem type="norm" wit="#EdASD">ṅontoṅ</lem><rdg wit="#A">ṅotoṅ</rdg></app> dipivaraṅ, mulah hiri mulah dәṅki, dәṅ dәṅәn sakahulunan, makaṅuni ñәәṅ nu mәnaṅ
@@ -344,12 +347,12 @@ kayatnakna voṅ sakabeh,
                         <app><lem type="norm" wit="#EdASD">ditambaan</lem><rdg wit="#A">ditabaan</rdg></app>, jampe mo matih, paksa mo mrәtyaksa, ja
                         <app><lem type="emn" wit="#EdASD">hantә</lem><rdg wit="#A">hanәtә</rdg></app>
                         <app><lem wit="#A">katurutan</lem><rdg wit="#EdASD">katurutan ku</rdg></app> saṅ hyaṅ siksa kandaṅ karәsian.</p>
-                <p xml:id="siksakandangkaresian_04.10">kitu jaga raṅ
+                <p xml:id="skk_04.10">kitu jaga raṅ
                         <app><lem type="norm" wit="#EdASD">naṅganan</lem><rdg wit="#A">naganan</rdg></app>, mulah kira-ki<pb edRef="#A" n="7v"/>ra digəlaṅan, jaga raṅ kagәlaṅan, mulah mo bakti di nu naṅganan, kena itu
                         <app><lem type="emn" wit="#EdASD">tanda</lem><witDetail wit="#EdASD" type="pc"/><rdg wit="#A #EdASD">tunda</rdg><witDetail wit="#EdASD" type="ac"/></app> saṅ deva ratu.</p>
-                <p xml:id="siksakandangkaresian_04.11">jaga raṅ kәna pañuruhan, mulah mo raksa saṅ hyaṅ siksa kandaṅ karəsian, pakәn uraṅ satya di pivaraṅan, heṅan lamun nu ṅalor ṅidul ṅulon ṅetan, gәs ma mulah si vok
+                <p xml:id="skk_04.11">jaga raṅ kәna pañuruhan, mulah mo raksa saṅ hyaṅ siksa kandaṅ karəsian, pakәn uraṅ satya di pivaraṅan, heṅan lamun nu ṅalor ṅidul ṅulon ṅetan, gәs ma mulah si vok
                         <app><lem type="norm" wit="#EdASD">cante</lem><rdg wit="#A">cate</rdg></app>, mulah si mur cante, mulah si mar cante, mulah darma cante, ya ta sinaṅguh saṅ hyaṅ catur-yatna ṅaranya.</p>
-                <p xml:id="siksakandangkaresian_04.12">ini kaliṅana, si vok cante ma ṅaranna, kavujukan ku hakan inum, si mur cante ma ṅaranna, 
+                <p xml:id="skk_04.12">ini kaliṅana, si vok cante ma ṅaranna, kavujukan ku hakan inum, si mur cante ma ṅaranna, 
                         <app><lem wit="#A">salimaha milu</lem><rdg wit="#EdASD">salima hamilu</rdg></app> 
                         <app><lem type="emn">ṅaramankәn</lem><rdg wit="#A #EdASD"/></app> nu maliṅ, nu ṅarəbut, nu meor, ya salah doṅdonan ṅaranya, 
                         <app><lem>si mar cante ṅaranna</lem><note>Supply <foreign>ma</foreign> as in the analogous sentences in this paragraph?</note></app>, ṅala dagaṅan, mas pirak lalambaran, hantә di<pb edRef="#A" n="8r"/>titah ku nu mivaraṅ, ya salah
@@ -357,21 +360,21 @@ kayatnakna voṅ sakabeh,
                         <app><lem>ka</lem><note>Or to emend <foreign>ku</foreign>?</note></app> tohaan, gumanti ya ṅisәsan, kena vagәy, kena kulakadaṅ, kena baraya, eta ulah dipiguna,
                         <app><lem wit="#A">kena pamali salah binarih ṅaranna, itu darma cante ṅaranna, eta mulah dipitvah</lem><note type="altLem">kena ... dipitvah</note><rdg wit="#EdASD" cause="eye-skip"><gap reason="omitted"/></rdg><note>The omission in ASD seems to be due to eye-skip from <foreign>dipiguna</foreign> to <foreign>dipitvah</foreign>.</note></app> ku
                         <app><lem type="norm" wit="#EdASD">uraṅ</lem><rdg wit="#A">Ura</rdg></app> hulun, bogoh di kacәcәb, cәcәb di kabogoh, itu tan yogya dipitvah ku uraṅ hulun.</p>
-                <p xml:id="siksakandangkaresian_04.13">ini pakәn uraṅ nurut ka tohaan, pakәn uraṅ pañjaṅ dipihulun, pakәn uraṅ hәbәl diasa ku tohaan uraṅ, turut saṅ hyaṅ siksa kandaṅ karəsian, birəṅәh na paṅ<pb edRef="#A" n="8v"/>hulu tandaṅ,
+                <p xml:id="skk_04.13">ini pakәn uraṅ nurut ka tohaan, pakәn uraṅ pañjaṅ dipihulun, pakәn uraṅ hәbәl diasa ku tohaan uraṅ, turut saṅ hyaṅ siksa kandaṅ karəsian, birəṅәh na paṅ<pb edRef="#A" n="8v"/>hulu tandaṅ,
                         <app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> ñәsәl tohaan, milu uraṅ ñәsәl dәi dәṅ tohaan,
                         <app><lem wit="#A">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> muji tohaan, milu uraṅ muji dәi dәṅ tohaan, lamun hamo ma
                         <app><lem wit="#A">bisa</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app> milu muji milu meda dәṅ tohaan, tosta ciṅciṅ
                         <app><lem wit="#A">təhәr</lem><rdg wit="#EdASD">təgaṅ</rdg></app> uraṅ bakti ka tohaan.</p>
-                <p xml:id="siksakandangkaresian_04.14">jaga raṅ ləmpaṅ ṅalasan, baju simbut
+                <p xml:id="skk_04.14">jaga raṅ ləmpaṅ ṅalasan, baju simbut
                         <app><lem wit="#A">paṅadva, dataṅ ma ka sisi, sakarajәn dibaju, disimbut</lem><rdg wit="#EdASD" cause="eye-skip"><gap reason="omitted"/></rdg><note>Again, ASD shows <foreign>saut du même au même</foreign> caused by the repetition of the word simbut.</note></app>, lamun hamo dәṅ tohaan, isәskәn na siksa kandaṅ
                         <app><lem type="emn" wit="#EdASD">karəsian</lem><rdg wit="#A">kaśyin</rdg></app>,
                         <app><lem wit="#A #EdASD">siksaanana</lem><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">siksaanna</rdg><witDetail wit="#EdASD" type="ac"/><note>Diplomatically, the ms A reads <foreign>siksaAn:ana</foreign>. ASD interpret as <foreign>pamaéh</foreign> what I interpret as consonant doubling mark, and are hence obliged to emend in order to obtain the reading <foreign>siksaanana</foreign>.</note></app> ta, ulah dek
                         <app><lem type="norm" wit="#EdASD">ṅundәr</lem><rdg wit="#A">ṅudər</rdg></app> ka huma beet sakalih, ka kebon sakalih, hamo ma bәnaṅ uraṅ laku sadu.</p>
-                  <p xml:id="siksakandangkaresian_04.15">salaṅ kәboan iṅ alas, kayu batri naṅtu, bvah bәnaṅ
+                  <p xml:id="skk_04.15">salaṅ kәboan iṅ alas, kayu batri naṅtu, bvah bәnaṅ
                         <app><lem type="norm" wit="#EdASD">ṅararaṅgean</lem><rdg wit="#A">ṅararagyen</rdg></app>, 
                           <app><lem type="emn">taṅgәhan</lem><rdg wit="#A #EdASD">taṁgǝḥkǝn</rdg></app> suluh, turuban supa, caṅrədan tәvvan, odeṅ, ñәrua<pb edRef="#A" n="9r"/>n, eṅaṅ, ulam, parakan, siṅ savatәk babayan, ulah uraṅ baraṅ ala, saṅuni
                         <app><lem wit="#A">tu nurunkәn</lem><rdg wit="#EdASD">turunkən</rdg></app> sadapan sakalih, ulah eta dipiguna, kenana puhuniṅ dosa, taṅkalniṅ papa kalesa.</p>
-                <p xml:id="siksakandangkaresian_04.16">jaga raṅ nәmu <app><lem wit="#A #EdASD">jalan, gәde</lem><rdg wit="#B"><lacunaEnd/> gade</rdg></app> beet, baṅat
+                <p xml:id="skk_04.16">jaga raṅ nәmu <app><lem wit="#A #EdASD">jalan, gәde</lem><rdg wit="#B"><lacunaEnd/> gade</rdg></app> beet, baṅat
                         <app><lem wit="#A #EdASD">dicaṅcut</lem><rdg wit="#B">caṁcut</rdg></app>
                         <app><lem wit="#A #EdASD">dipaṅadva</lem><rdg wit="#B">paṅadva</rdg></app>, sugan uraṅ pajәәṅ dәṅ 
                         <app><lem wit="#A #EdASD">gusti, dәṅ</lem><rdg wit="#B">gu<lacunaStart/></rdg></app> mantri, ulah mo paṅidalkәn, 
@@ -382,9 +385,9 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A">paṅdәukәn</lem><rdg wit="#EdASD"><gap reason="lost"/></rdg></app>, 
                         <app><lem wit="#A #EdASD">kena</lem><rdg wit="#B"><lacunaEnd/> kena</rdg></app> itu guru saṅ prәbu.</p>
           </div>
-                        <div type="chapter" n="5" xml:id="siksakandangkaresian_05">
+                        <div type="chapter" n="5" xml:id="skk_05">
                                 <head type="editorial" xml:lang="eng">Rules of Interaction for Men and Women</head>
-                <p xml:id="siksakandangkaresian_05.01">iṅәtkәn na siksa kandaṅ karəsian, dәṅ 
+                <p xml:id="skk_05.01">iṅәtkәn na siksa kandaṅ karəsian, dәṅ 
                         <app><lem wit="#A #EdASD">isәskәn</lem><rdg wit="#B">i<lacunaStart/></rdg></app> na haloan, ulah dek
                         <app><lem wit="#A">ṅәrikәn</lem><rdg wit="#EdASD">ṅəriṅkən</rdg></app>
                         <app><lem wit="#A">astri</lem><rdg wit="#EdASD">estri</rdg></app> laraṅan sakalih, rara  
@@ -400,12 +403,12 @@ kayatnakna voṅ sakabeh,
                         <app><lem type="emn">aṅgasir</lem><rdg wit="#A #EdASD">Aṅgasin·</rdg><rdg wit="#B"><lacunaEnd/>sin</rdg></app>, itu keh na
                         <app><lem wit="#EdASD">iṅәtkәnən</lem><rdg wit="#A">Iṅətkən·</rdg><rdg wit="#B">Iṅәt·kәnәn:a</rdg></app>, lamun dek 
                         <app><lem wit="#A #EdASD">luput ti</lem><rdg wit="#B">luput <lacunaStart/></rdg></app> naraka.</p>
-                <p xml:id="siksakandangkaresian_05.02">saṅuni sapaṅinәpan, sapamajikan, satәpas, sabale, dәṅ saṅ hyaṅ kalih,
+                <p xml:id="skk_05.02">saṅuni sapaṅinәpan, sapamajikan, satәpas, sabale, dәṅ saṅ hyaṅ kalih,
                         <app><lem wit="#A #EdASD">dәṅ astri</lem><rdg wit="#EdASD">deṅ estri</rdg><rdg wit="#B"><lacunaEnd/> Astri</rdg></app> laraṅan sakalih, ṅaranna kәbo
                         <app><lem wit="#A #B">sapitunahan</lem><rdg wit="#EdASD">sapinahan</rdg></app>,
                         <app><lem wit="#B">iña</lem><rdg wit="#A #EdASD">ña</rdg></app>
                         <app><lem wit="#A #EdASD">keh na</lem><rdg wit="#B"><gap reason="lost" quantity="2" unit="character"/></rdg></app> iṅәtkәnәn,<pb edRef="#A" n="10r"/> sinaṅguh ulah pamali ṅaranna.</p> 
-                <p xml:id="siksakandangkaresian_05.03"><app><lem type="conj">kitu keh lamun uraṅ dek paparan, hayva</lem><rdg wit="#B">kitu keḥ lamu Uraṁ dek· paparran·</rdg><rdg wit="#A #EdASD">Itu hayva</rdg></app>, ulah dek <app><lem wit="#A #EdASD">diturut</lem><rdg wit="#B">katurut·</rdg></app> ku hulun sakalih, lamun
+                <p xml:id="skk_05.03"><app><lem type="conj">kitu keh lamun uraṅ dek paparan, hayva</lem><rdg wit="#B">kitu keḥ lamu Uraṁ dek· paparran·</rdg><rdg wit="#A #EdASD">Itu hayva</rdg></app>, ulah dek <app><lem wit="#A #EdASD">diturut</lem><rdg wit="#B">katurut·</rdg></app> ku hulun sakalih, lamun
                         <app><lem wit="#A #EdASD">uraṅ</lem><rdg wit="#B">Uraṁ ma</rdg></app> dek maan iña ma,
                         <app><lem wit="#A #EdASD">maka</lem><rdg wit="#B">maṅka</rdg></app> majar ka paṅhulu<app><lem wit="#A #B">-tandaṅna</lem><rdg wit="#EdASD">-tandaṅ</rdg></app>,
                         <app><lem wit="#A #EdASD">lamun</lem><rdg wit="#B">lamunna</rdg></app>
@@ -421,9 +424,9 @@ kayatnakna voṅ sakabeh,
                         <app><lem type="norm" wit="#EdASD">samaṅkana kayatnakna</lem><rdg wit="#A">saṁmaṁkana kayatnakna</rdg><rdg wit="#B">samaṁkanakan yatna-yatna</rdg></app>.</p>
                                 </div>
                         
-<div type="chapter" n="6" xml:id="siksakandangkaresian_06">
+<div type="chapter" n="6" xml:id="skk_06">
                                 <head type="editorial" xml:lang="eng">Taking Pleasure in Work</head>
-                        <p xml:id="siksakandangkaresian_06.01">nihan muvah jaga raṅ kadataṅan
+                        <p xml:id="skk_06.01">nihan muvah jaga raṅ kadataṅan
                         <app><lem wit="#A #EdASD">ku same, paṅuraṅ</lem><rdg wit="#B">ku menak <pb edRef="#B" n="1v"/>ku rama, ku paṅuraṅ</rdg></app>, dasa, calagara, upәti, paṅgәrəs rəma, maka suka
                         <app><lem type="norm" wit="#EdASD">gəiṅ</lem><rdg wit="#A">giI</rdg><rdg wit="#B">gəI</rdg></app> uraṅ, maka
                         <app><lem wit="#A #EdASD">rasa</lem><rdg wit="#B">asa</rdg></app> kadataṅan ku
@@ -436,7 +439,7 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A #B">ñaṅraha</lem><rdg wit="#EdASD">ñaṅgraha</rdg></app>, ka
                         <app><lem wit="#A #EdASD">hyaṅ</lem><rdg wit="#B">hyi</rdg></app> ka devata.</p>
 
-                        <p xml:id="siksakandangkaresian_06.02"><app><lem wit="#A #EdASD">aṅgәs</lem><rdg wit="#B">agəs</rdg></app> ma jaga raṅ
+                        <p xml:id="skk_06.02"><app><lem wit="#A #EdASD">aṅgәs</lem><rdg wit="#B">agəs</rdg></app> ma jaga raṅ
                         <app><lem wit="#A #B">digunakәn</lem><rdg wit="#EdASD">dipigunakən</rdg></app>, ka gaga ka savah, ka seraṅ agәṅ, ṅikis, marigi,
                         <app><lem wit="#A #EdASD">ṅandaṅ</lem><rdg wit="#B">ṅadaṁ</rdg></app>,
                         <app><lem wit="#A #EdASD">ṅaburaṅ</lem><rdg wit="#B">ṅa<gap reason="lost" unit="character" quantity="2"/></rdg></app>, marak,
@@ -448,9 +451,9 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A">gariṅsiṅ</lem><rdg wit="#B">garisiṁ</rdg><rdg wit="#EdASD">giriṅsiṅ</rdg></app>, pahi
                         <app><lem wit="#A #EdASD">suka<pb edRef="#B" n="2r"/>kәn</lem><rdg wit="#B">suka<gap reason="lost" unit="character" quantity="2"/></rdg></app> sareyanana, maka rasa guna uraṅ.</p>
                  </div>
-                        <div type="chapter" n="7" xml:id="siksakandangkaresian_07">
+                        <div type="chapter" n="7" xml:id="skk_07">
                         <head type="editorial" xml:lang="eng">Travel Etiquette</head>
-                                <p xml:id="siksakandangkaresian_07.01">ṅan
+                                <p xml:id="skk_07.01">ṅan
                         <app><lem wit="#A #EdASD">lamun</lem><rdg wit="#B">lamu</rdg></app> uraṅ pulaṅ ka dayәh<supplied reason="omitted">,</supplied> ulah ṅisiṅ di
                         <app><lem wit="#B #EdASD">piṅgir</lem><rdg wit="#A">pigir</rdg></app> jalan, di sisi imah di
                         <app><lem wit="#B #EdASD">tuṅtuṅ</lem><rdg wit="#A">tutuṁ</rdg></app> caaṅna, bisi
@@ -474,7 +477,7 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A #EdASD">di</lem><rdg wit="#B">di na</rdg></app> ulah pamali,
                         <app><lem wit="#A #B">ka, ulah</lem><rdg wit="#EdASD">kaulah</rdg><note>For another occurrence of the abbreviation <foreign>ka</foreign>, see 3.1.</note></app> ma duka, pamali ma
                         <app><lem wit="#A #EdASD">paeh</lem><rdg wit="#B" cause="lexical">pati<!-- sinonim --></rdg></app>.</p>
-      <p xml:id="siksakandangkaresian_07.02">dәṅ jәṅjәәṅ gagavar,
+      <p xml:id="skk_07.02">dәṅ jәṅjәәṅ gagavar,
                         <app><lem wit="#A #EdASD">pucuk</lem><rdg wit="#B">pucu</rdg></app>
                         <app><lem wit="#A #EdASD">tambaluṅ</lem><rdg wit="#B">tabaluṅ</rdg></app>, sugan tampyan daləm,
                         <app><lem wit="#A #EdASD">kandaṅ</lem><rdg wit="#B">kadaṅ</rdg></app>
@@ -484,7 +487,7 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#B #EdASD">liәk</lem><rdg wit="#A">lyək</rdg></app>, sugan
                         <app><lem wit="#A #EdASD">ṅarumpak</lem><rdg wit="#B">ṅarupak</rdg></app>, nәbuk, nәmbuṅ,
                         <app><lem wit="#A">mәgatan</lem><rdg wit="#B #EdASD">məgat</rdg></app> jajaran.</p>
-                <p xml:id="siksakandangkaresian_07.03">jaga
+                <p xml:id="skk_07.03">jaga
                         <app><lem wit="#A #B">raṅ</lem><rdg wit="#EdASD">uraṅ</rdg></app> dәuk ulah salah harəp, maka
                         <app><lem wit="#A #EdASD">rampes</lem><rdg wit="#B">rapesna</rdg></app> disila, dәṅ sugan uraṅ dibaan lemek ku tohaan,
                         <app><lem wit="#A #EdASD">tinәṅkәn</lem><rdg wit="#B">tinəṅkən na</rdg></app>
@@ -507,20 +510,21 @@ kayatnakna voṅ sakabeh,
                         <app><lem wit="#A #B">pamraṅ</lem><rdg wit="#EdASD">pam<supplied reason="omitted">a</supplied>raṅ</rdg></app>, paṅuraṅ dasa calagara, rare aṅon, paceleṅan, pakotokan, palika, prәtәləm, siṅ savatәk guna, aya ma nu satiya di guna
                         <app><lem wit="#A #EdASD">di</lem><rdg wit="#B">di na</rdg></app> kahulunan, eta keh na <app><lem>turutanәn, kena</lem><rdg wit="#B" cause="eye-skip">turutanən·, <span type="omissionStart"/></rdg></app> eta ṅavakan tapa di nagara.</p>
           </div>
-                        <div type="chapter" n="8" xml:id="siksakandangkaresian_08">
+                        <div type="chapter" n="8" xml:id="skk_08">
                         <head type="editorial" xml:lang="eng">Role Models</head>
-                                <p xml:id="siksakandangkaresian_08.01">aya ma na uraṅ nu kasәsәl ku tohaan, eta keh
+                                <p xml:id="skk_08.01">aya ma na uraṅ nu kasәsәl ku tohaan, eta keh
                         <app><lem type="norm" wit="#EdASD">ulah diturut tvahna, bisi</lem><rdg wit="#A">ulah diturutvahna, bisi</rdg></app> uraṅ kasәsәl dәi, ini babandiṅna, upama janma
                         <app><lem wit="#A">ləmpaṅ</lem><rdg wit="#EdASD">lə<supplied reason="omitted">m</supplied>paṅ</rdg></app> ṅala<pb edRef="#A" n="12r"/>san, niñcak cucuk, tiñcak keh dəi ku uraṅ, sarua
                          <app><lem wit="#A">sakitanana</lem><rdg wit="#EdASD">sakitna</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">sakitanna</rdg><witDetail wit="#EdASD" type="ac"/></app>, ña mana aya ma na uraṅ nu kapuji, si caṅciṅan, si laṅsitan,
                          <app><lem type="emn">pakapradana</lem><rdg wit="#A">paka prədana</rdg><rdg wit="#EdASD">maka prədana</rdg></app>, emet imət rajən ləkən, satya di guna tohaan, eta
                          <app><lem wit="#A">ma</lem><rdg wit="#EdASD">mah</rdg></app> turut tvahna dəṅ gunana, boa
                          <app><lem wit="#A">tu</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app> uraṅ kapuji dəi.</p>
-                 <p xml:id="siksakandangkaresian_08.02">aya ma
+                 <p xml:id="skk_08.02">aya ma
                         <app><lem wit="#A">na janma</lem><rdg wit="#EdASD"><del>na</del> janma</rdg></app> rampes ruana, rampes
                         <app><lem type="norm" wit="#EdASD">tiṅkahna</lem><rdg wit="#A">tikahna</rdg></app>, rampes 
                          <app><lem wit="#A #EdASD">tvahna, turut saagəṅna</lem><rdg wit="#B"><span type="omissionEnd"/> sakagəIṁna</rdg></app>, kena itu
                          <app><lem wit="#A #EdASD">sinaṅguh</lem><rdg wit="#B">sinaṅgah</rdg></app> janma utama ṅaranna.</p>
+<<<<<<< HEAD
                   <p><app><lem wit="#A #B">aya ma</lem><rdg wit="#EdASD"><span type="omissionStart"/></rdg></app> janma rampes ruana, goreṅ tvahna, irəg
                           <app><lem type="norm">tiṅkahna</lem><rdg wit="#A #B">tikaḥna</rdg></app>, itu dara jəəṅ rvana, ulah
                           <app><lem wit="#B">diturut tvahna</lem><rdg wit="#A">dəṁ turutvaḥna</rdg><note>This whole sentence is omitted in ASD.</note></app><!-- Should the missing of reduplication is normalised silently? --><!-- from aya ma line 298-300 tvahna omitted in AD-->.</p>
@@ -528,17 +532,29 @@ kayatnakna voṅ sakabeh,
                           <app><lem type="norm">tiṅkahna</lem><rdg wit="#A #B">tikaḥna</rdg><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>, itu dara jəəṅ rvana, 
                           <app><lem wit="#B">ulah diturut tvahna</lem><rdg wit="#A">Ulaḥ dəṁ turutvaḥna</rdg><rdg wit="#EdASD">ulah <span type="omissionEnd"/></rdg><note>This whole sentence is omitted in ASD.</note></app><!-- Should the missing of reduplication is normalised silently? --><!-- from aya ma line 298-300 tvahna omitted in AD-->.</p>
                     <p xml:id="siksakandangkaresian_08.04">aya ma janma goreṅ rvana, irəg
+=======
+                  <p xml:id="skk_08.03"><app><lem wit="#A #B">aya ma</lem><rdg wit="#EdASD"><span type="omissionStart"/></rdg></app> janma rampes ruana, goreṅ tvahna, irəg
+                          <app><lem type="norm">tiṅkahna</lem><rdg wit="#A #B">tikaḥna</rdg></app>, itu dara jəəṅ rvana, ulah
+                          <app><lem wit="#B">diturut tvahna</lem><rdg wit="#A">dəṁ turutvaḥna</rdg><note>This whole sentence is omitted in ASD.</note></app><!-- Should the missing of reduplication is normalised silently? --><!-- from aya ma line 298-300 tvahna omitted in AD-->.</p>
+                    <p xml:id="skk_08.04">aya ma janma goreṅ rvana, irəg
+>>>>>>> 998ea02176cc80ab71a53050c989a954ad958f07
                           <app><lem type="norm" wit="#EdASD">tiṅkahna</lem><rdg wit="#A">tikaḥna</rdg><rdg wit="#B"><gap reason="omitted"/></rdg></app>, rampes tvahna, itu
                           <app><lem wit="#A">ma</lem><rdg wit="#EdASD">mah</rdg></app> mulah
                           <app><lem type="norm" wit="#EdASD">diturut tiṅkahna</lem><rdg wit="#A">diturutiṁkaḥna</rdg></app>, dara sok jəəṅ rvana, turut ma tvahna.</p>
-                    <p xml:id="siksakandangkaresian_08.05">aya ma janma goreṅ rvana, irə<pb edRef="#A" n="12v"/>g
+                    <p xml:id="skk_08.05">aya ma janma goreṅ rvana, irə<pb edRef="#A" n="12v"/>g
                           <app><lem type="norm" wit="#EdASD">tiṅkahna</lem><rdg wit="#A">tikaḥna</rdg><rdg wit="#B">tikana</rdg></app>, goreṅ tvahna, itu ma
                           <app><lem wit="#A">caruniṅ</lem><rdg wit="#EdASD">carutniṅ</rdg><rdg wit="#B">caruni</rdg></app> bumi, silih diri na uraṅ sabuvana,
                           <app><lem type="norm">ṅaranna</lem><rdg wit="#A #B">ṅarana</rdg><rdg wit="#EdASD">ṅaran</rdg></app>
+<<<<<<< HEAD
                           <app><lem type="norm">calaniṅ</lem><rdg wit="#A #EdASD">calaṁniṁ</rdg><rdg wit="#B">calani</rdg></app> janma.</p>
                   <p>itu keh na iṅətkənən, hala, hayu, goreṅ<supplied reason="omitted">,</supplied> rampes<supplied reason="omitted">,</supplied> ala
                           <app><lem wit="#A #EdASD">calaṅniṅ</lem><rdg wit="#B">calani</rdg></app> janma.</p>
                   <p xml:id="siksakandangkaresian_08.06">itu keh na iṅətkənən, hala, hayu, goreṅ<supplied reason="omitted">,</supplied> rampes<supplied reason="omitted">,</supplied> ala
+=======
+                          <app><lem wit="#A #EdASD">calaṅniṅ</lem><rdg wit="#B">calani</rdg></app> janma.</p>
+                  <p xml:id="skk_08.06">itu keh na iṅətkənən, hala, hayu, goreṅ<supplied reason="omitted">,</supplied> rampes<supplied reason="omitted">,</supplied> ala
+
+>>>>>>> 998ea02176cc80ab71a53050c989a954ad958f07
                           <app><lem wit="#A #EdASD">guru</lem><rdg wit="#B">pagurvan</rdg></app>, ini
                           <app><lem type="emn" wit="#EdASD">peṅətna</lem><rdg wit="#A">paṁṅətna</rdg><rdg wit="#B">paṅiṅət<gap reason="lost" unit="character" quantity="1"/></rdg></app>, aya ma
                           <app><lem wit="#A #EdASD">janma</lem><rdg wit="#B">na jama</rdg></app> paeh maliṅ, paeh
@@ -546,7 +562,7 @@ kayatnakna voṅ sakabeh,
                           <app><lem wit="#A #EdASD">paeh ṅabegal</lem><rdg wit="#B">paEḥ ṅapu paEḥ ṅabegal·</rdg></app>, paeh meor, siṅ savatək cəkap carut,
                           <app><lem wit="#A #EdASD">eta jəəṅ</lem><rdg wit="#B">Eta keḥ jəqəṁ</rdg></app>
                           <app><lem wit="#A #EdASD">kena ulah</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="3"/>laḥ</rdg></app> diturutan, ya eta kaṅkən guru nista ṅaranna.</p>
-                 <p xml:id="siksakandangkaresian_08.07">aya
+                 <p xml:id="skk_08.07">aya
                           <app><lem wit="#A #EdASD">ta dəi</lem><rdg wit="#B">dəI</rdg></app>
                           <app><lem wit="#A #EdASD">lamun</lem><rdg wit="#B">lamu</rdg></app> uraṅ ñəəṅ nu
                           <app><lem wit="#A #EdASD">ṅavayaṅ</lem><rdg wit="#B">ṅaduṁ</rdg></app>, ṅadeṅekən nu
@@ -557,7 +573,7 @@ kayatnakna voṅ sakabeh,
                          <app><lem wit="#A #EdASD">paparahatan</lem><rdg wit="#B">papahətan·</rdg></app><pb edRef="#A" n="13r"/>, papaduṅan, tutulisan, sui naña ka nu
                          <app><lem wit="#A #EdASD">diguna</lem><rdg wit="#B" cause="lexical">dikuryik·</rdg></app><!-- use of synonim -->, tәmu ku rasa soraṅan, ku bәnaṅna ilik di guna sakalih, ya kaṅkәn guru
                          <app><lem type="norm" wit="#EdASD">vrәti</lem><rdg wit="#B">vəR̥ti</rdg><rdg wit="#A">vrəri</rdg></app> ṅaranna.</p>
-                  <p xml:id="siksakandangkaresian_08.08">nәmu agama ti anak, ya kaṅkәn guru rare ṅaranna, nәmu darma ti aki
+                  <p xml:id="skk_08.08">nәmu agama ti anak, ya kaṅkәn guru rare ṅaranna, nәmu darma ti aki
                          <app><lem wit="#A #EdASD">ma</lem><rdg wit="#B">ma ṅa<add place="below">na</add>na</rdg></app>, ya kaṅkәn guru kaki ṅaranna, nәmu darma ti lañcәk ma, ya kaṅkәn guru
                          <app><lem wit="#B #EdASD">kakaṅ</lem><rdg wit="#A">kaṁkaṁ</rdg></app> ṅaranna, nәmu darma ti toa ma, ya kaṅkәn guru uva ṅaranna, nәmu darma ti gәsan
                          <app><lem type="norm">lumәmpaṅ</lem><rdg wit="#A #B">lumәpaṁ</rdg><rdg wit="#EdASD">ləmpaṅ</rdg></app>, di
@@ -573,9 +589,9 @@ kayatnakna voṅ sakabeh,
                          <app><lem type="emn" wit="#EdASD">prəmana</lem><rdg wit="#A">primana</rdg><rdg wit="#B"><gap reason="omitted"/></rdg></app>, ya kaṅkәn gu<pb edRef="#A" n="13v"/>ru
                          <app><lem wit="#A #EdASD">kaupadesaan</lem><rdg wit="#B">kautamaan</rdg></app>, ya ta sinaṅguh catur-utama ṅaranna, </p>
                </div>
-                        <div type="chapter" n="9" xml:id="siksakandangkaresian_09">
+                        <div type="chapter" n="9" xml:id="skk_09">
                         <head type="editorial" xml:lang="eng">Praise and Insult</head>
-                    <p xml:id="siksakandangkaresian_09.01">ña mana kitu lamun
+                    <p xml:id="skk_09.01">ña mana kitu lamun
                             <app><lem type="norm" wit="#EdASD">aṅgәs</lem><rdg wit="#A #B">agəs</rdg></app> di
                             <app><lem wit="#A #EdASD">karmaniṅ akarma</lem><rdg wit="#B">karniṁ karma</rdg></app>, di
                             <app><lem wit="#B">tvahniṅ</lem><rdg wit="#A #EdASD">tvah riṅ</rdg></app> atvah,
@@ -591,7 +607,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="norm" wit="#EdASD">aṅgәs</lem><rdg wit="#A #B">agəs</rdg></app> ma dipake haṅkara, ja ṅarasa maneh aya di imah
                             <app><lem wit="#A">di</lem><rdg wit="#B #EdASD"/></app> maneh, ku hakan, ku inum, ku suka,
                             <app><lem wit="#A #EdASD">ku boga</lem><rdg wit="#B">boga</rdg></app>, ku pakaraṅ, teka dipake aṅgәhәn, eta kaṅkәn galah dava ta, eta kaṅkәn pare hapa ta ṅaranna.</p>
-                    <p xml:id="siksakandangkaresian_09.02"><pb edRef="#A" n="14r"/>kitu lamun aya nu meda uraṅ, aku sapameda sakalih, ña mana kadyaṅganiṅ galah cədәk tinugәlan tәka, upamana uraṅ kudil, eta kaṅkәn cai pamandyan, upamana uraṅ kurit, kaṅkәn dataṅ nu ṅamiñakan, upamana uraṅ poño, kaṅkәn dataṅ nu mere kejo, upama uraṅ ha<pb edRef="#B" n="5v"/>naaṅ, kaṅkәn
+                    <p xml:id="skk_09.02"><pb edRef="#A" n="14r"/>kitu lamun aya nu meda uraṅ, aku sapameda sakalih, ña mana kadyaṅganiṅ galah cədәk tinugәlan tәka, upamana uraṅ kudil, eta kaṅkәn cai pamandyan, upamana uraṅ kurit, kaṅkәn dataṅ nu ṅamiñakan, upamana uraṅ poño, kaṅkәn dataṅ nu mere kejo, upama uraṅ ha<pb edRef="#B" n="5v"/>naaṅ, kaṅkәn
                             <app><lem wit="#B">dataṅ nu</lem><rdg wit="#A"><gap reason="omitted"/></rdg><rdg wit="#EdASD"><supplied reason="omitted">dataṅ nu</supplied></rdg></app>
                             <app><lem wit="#A #EdASD">mavakәn</lem><rdg wit="#B">mavakən Uraṁ</rdg></app>
                             <app><lem wit="#A #B">arocәn</lem><rdg wit="#EdASD">arotən</rdg></app>,
@@ -602,7 +618,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">ya</lem><rdg wit="#B">ya ta</rdg></app> sinaṅguh
                             <app><lem wit="#A #EdASD">pañca-parisuda</lem><rdg wit="#B">pacaparisuda</rdg></app> ṅaranna, eta kaṅkәn galah cәdәk tinugәlan
                             <app><lem wit="#A">ta</lem><rdg wit="#B">tika</rdg><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>.</p>
-                    <p xml:id="siksakandangkaresian_09.03">lamun makasuka
+                    <p xml:id="skk_09.03">lamun makasuka
                             <app><lem wit="#A #EdASD">rasa</lem><rdg wit="#B">tinusa</rdg></app> uraṅ, kaṅkәn pare bәrat
                             <app><lem wit="#A #EdASD">saṅga</lem><rdg wit="#B">saṅga ta</rdg></app>, boa makahurip na uraṅ reya, ja katәmu
                             <app><lem wit="#A #EdASD">vvitniṅ</lem><rdg wit="#B">vuit</rdg></app> suka
@@ -618,13 +634,13 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">ña vvitniṅ</lem><rdg wit="#B">ya vvat na</rdg></app> hayu, ya
                             <app><lem wit="#A #EdASD">pu<pb edRef="#B" n="17r"/>huniṅ</lem><rdg wit="#B">pa<pb edRef="#B" n="17r"/><gap reason="lost" unit="character" quantity="2"/></rdg></app> bәnәr.</p>
           </div>
-        <div type="chapter" n="10" xml:id="siksakandangkaresian_10">
+        <div type="chapter" n="10" xml:id="skk_10">
         <head type="editorial" xml:lang="eng">Enhance of Action</head>
-                  <p xml:id="siksakandangkaresian_10.01">ini paṅimbuhniṅ tvah, pakәn
+                  <p xml:id="skk_10.01">ini paṅimbuhniṅ tvah, pakәn
                             <app><lem wit="#A">mo tivas sakala</lem><rdg wit="#EdASD">tivas kala</rdg><rdg wit="#B">vas·tu sakala</rdg></app> maṅhurip, pakәn vastu di imah di maneh, emet imәt rajәn ləkәn pakaprədana,
                             <app><lem wit="#B #EdASD">morogol-rogol</lem><rdg wit="#A">morogol, ragol</rdg></app>, purusa
                             <app><lem type="emn">riṅ savidagda</lem><rdg wit="#A">riṅ sa, vi<add place="below">da</add>gada</rdg><rdg wit="#B">vidadag</rdg><rdg wit="#EdASD">niṅ sa, vidagda</rdg></app>, hapitan karavaleya, caṅciṅan, laṅsitan.</p>
-                    <p xml:id="siksakandangkaresian_10.02">jaga raṅ ṅajadikәn gaga savah, tihap ulah saṅsara, jaga raṅ ñiәn
+                    <p xml:id="skk_10.02">jaga raṅ ṅajadikәn gaga savah, tihap ulah saṅsara, jaga raṅ ñiәn
                             <app><lem wit="#A #B #EdASD">kәboan</lem><witDetail wit="#EdASD" type="ac"/><rdg wit="#EdASD">kebon</rdg><witDetail wit="#EdASD" type="pc"/></app> tihap
                             <app><lem wit="#A #EdASD">mulah</lem><rdg wit="#B">ulah</rdg></app>
                             <app><lem type="norm" wit="#EdASD">ṅundәr</lem><rdg wit="#A #B">ṅudər</rdg></app> ka huma beet sakalih, ka huma ləga sakalih,
@@ -656,19 +672,19 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">boa</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app> rəjәṅ sasab ka naraka, ləṅit batri
                             <app><lem wit="#A #EdASD">raṅ ṅabakta</lem><rdg wit="#B">Uraṁ <add place="below">he</add>se</rdg></app>, hilaṅ bәnaṅ <pb edRef="#A" n="15v"/>cakal bagal.</p>
             </div>
-                    <div type="chapter" n="11" xml:id="siksakandangkaresian_11">
+                    <div type="chapter" n="11" xml:id="skk_11">
                     <head type="editorial" xml:lang="eng">Admonition of Dharma (<foreign>darmapitutur</foreign>)</head>
-                            <p xml:id="siksakandangkaresian_11.01">ini
+                            <p xml:id="skk_11.01">ini
                                     <app><lem wit="#A #EdASD">varah</lem><rdg wit="#B">paṁvaraḥ</rdg></app> saṅ darma pitutur, sugan
                                     <app><lem wit="#B #EdASD">uraṅ</lem><rdg wit="#A">Ura</rdg></app> tan
                                     <app><lem wit="#A #EdASD">pahdap</lem><rdg wit="#B">pahidəp</rdg></app>.</p>
-                    <p xml:id="siksakandangkaresian_11.02"><q><app><lem type="emn">sri opeksah</lem><rdg wit="#A">mrәOpekṣaḥ</rdg></app>
+                    <p xml:id="skk_11.02"><q><app><lem type="emn">sri opeksah</lem><rdg wit="#A">mrәOpekṣaḥ</rdg></app>
                                     <app><lem wit="#A #EdASD">samuta tah</lem><rdg wit="#B">saṁmutataḥ</rdg></app>, paesanteh tan
                                     <app><lem wit="#A #EdASD">susuriyәm</lem><rdg wit="#B">sasariyəm</rdg></app><pb edRef="#B" n="7r"/>,
                                     <app><lem wit="#A #EdASD">jambaṅan əsiniṅ</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="2"/>ṅaL̥səniṁ</rdg></app> bañu
                                     <app><lem wit="#A">mahәniṅ</lem><rdg wit="#B">mahana</rdg><rdg wit="#EdASD">ma həniṅ</rdg></app>, tah desana tah
                                     <app><lem wit="#A #EdASD">nora buksah</lem><rdg wit="#B">nobusaḥ</rdg></app></q>.</p> <!-- foreign or quote? OJ -->
-                    <p xml:id="siksakandangkaresian_11.03"><app><lem wit="#A">kaliṅana ta</lem><rdg wit="#B">kaliṅanya</rdg></app>, sri ma
+                    <p xml:id="skk_11.03"><app><lem wit="#A">kaliṅana ta</lem><rdg wit="#B">kaliṅanya</rdg></app>, sri ma
                             <app><lem wit="#A #EdASD">ṅaranya</lem><rdg wit="#B">ṅarana</rdg></app> omas, kitu na omas,
                             <app><lem wit="#A #B">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> hamo
                             <app><lem type="norm" wit="#EdASD">dilañja</lem><rdg wit="#A #B">dilaja</rdg></app>, pәlək rupana,
@@ -677,7 +693,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">rampes</lem><rdg wit="#B">rupana</rdg></app> ja
                             <app><lem wit="#A #EdASD">kaopeksa</lem><rdg wit="#B">kaOpesa</rdg></app>, kitu keh upama uraṅ janma ini, lamun nurut saṅ hyaṅ siksa, kapahayu rasana di uraṅ, kadyaṅganiṅ bәnәr, tumәmu bәnәrnya, kitu lamun hamo nurut saṅ hyaṅ
                             <app><lem wit="#A #EdASD">siksa krәta</lem><rdg wit="#B">sisa krata</rdg></app>, kadyaṅganiṅ vilut tumәmu vilutnya.</p>
-                      <p xml:id="siksakandangkaresian_11.04"><app><lem wit="#A #EdASD">paesan ma</lem><rdg wit="#B">paesan ta ma</rdg></app> ṅaranya
+                      <p xml:id="skk_11.04"><app><lem wit="#A #EdASD">paesan ma</lem><rdg wit="#B">paesan ta ma</rdg></app> ṅaranya
                             <app><lem wit="#A #EdASD">әntәṅ</lem><rdg wit="#B">qətəṁ</rdg></app>, kitu na
                             <app><lem type="norm" wit="#EdASD">әntәṅ</lem><rdg wit="#A">qətəṁ</rdg></app>,
                             <app><lem wit="#A #B">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> hamo
@@ -686,38 +702,38 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="norm" wit="#EdASD">әntәṅ</lem><rdg wit="#A">qәtәṁ</rdg></app> eta, kitu keh
                             <app><lem wit="#A #B">uraṅ janma</lem><rdg wit="#EdASD">janma</rdg></app> ini, bisa nurut upacara sakalih rampes ma, boa kalihasan ku rasa di maneh, lamun hamo ma bisa nurut pamagahan, puṅguṅ
                             <app><lem wit="#A">ta</lem><rdg wit="#B"><gap reason="omitted"/></rdg><rdg wit="#EdASD">tata</rdg></app> ṅaranna.</p>
-                      <p xml:id="siksakandangkaresian_11.05">jambaṅan ma ṅaranya pamuruyan, kaṅkәn cai hәniṅ ma hdap uraṅ krәta,
+                      <p xml:id="skk_11.05">jambaṅan ma ṅaranya pamuruyan, kaṅkәn cai hәniṅ ma hdap uraṅ krәta,
                             <app><lem wit="#A">ña kitu</lem><rdg wit="#B #EdASD">ña mana kitu</rdg></app> manana vaas,
                             <app><lem type="norm">təhәr</lem><rdg wit="#A">t:hər</rdg><rdg wit="#B">heraṁ</rdg><rdg wit="#EdASD">təgər</rdg></app>
                             <app><lem wit="#A #EdASD">rame</lem><rdg wit="#B">rampes</rdg></app>
                             <app><lem type="norm" wit="#EdASD">ambәk</lem><rdg wit="#A #B">Abək</rdg></app>.</p>
-                      <p xml:id="siksakandangkaresian_11.06">desa ma ṅaranya dayәh, na dayәh lamunna kosoṅ hantә turutanәnnana, kitu na sabda lamunna hamo kaәsi carut ṅaranna, heṅan lamunna
+                      <p xml:id="skk_11.06">desa ma ṅaranya dayәh, na dayәh lamunna kosoṅ hantә turutanәnnana, kitu na sabda lamunna hamo kaәsi carut ṅaranna, heṅan lamunna
                             <app><lem wit="#A #EdASD">kaәsyan</lem><rdg wit="#B">kaqəsyi</rdg></app> ma na kahanan, eta keh na turutanәn, kitu keh na sabda
                             <app><lem wit="#A #B">maka</lem><rdg wit="#EdASD">mana</rdg></app> kaәsyan, mana dipajar bәnәr laksana, </p>
-                    <p xml:id="siksakandangkaresian_11.07">kitu keh uraṅ janma ini, lamun dek ñaho di puhun suka lavan enak ma, iṅәtkәn sahur <pb edRef="#A" n="16v"/> saṅ darma pitutur, ini silokana.</p>
+                    <p xml:id="skk_11.07">kitu keh uraṅ janma ini, lamun dek ñaho di puhun suka lavan enak ma, iṅәtkәn sahur <pb edRef="#A" n="16v"/> saṅ darma pitutur, ini silokana.</p>
 
-                    <lg xml:id="siksakandangkaresian_11.08" met="anustubh" xml:lang="san-Latn">
+                    <lg xml:id="skk_11.08" met="anustubh" xml:lang="san-Latn">
                             <l n="1">tatakaṁ carita haṁsa, gajendra carita banәm, </l>
                             <l n="2"><app><lem type="emn" wit="#EdASD">matsyanәm</lem><rdg wit="#A">macanəm</rdg></app> carita sagarəm, puspanәm carita baṁbarəm </l>
                     </lg>
 
-                    <p xml:id="siksakandangkaresian_11.09">kaliṅanya kitu
+                    <p xml:id="skk_11.09">kaliṅanya kitu
                             <app><lem wit="#A #B">jaga raṅ</lem><rdg wit="#EdASD">ja uraṅ</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">ja raṅ</rdg><witDetail wit="#EdASD" type="ac"/></app> dek cәta, ulah salah gәsan naña, lamun hayaṅ ñaho di
                             <app><lem wit="#B">talaga heraṅ bañu atis</lem><rdg wit="#A">taman heraṅ, talaga bañu atis</rdg></app> ma, haṅsa taña, kaliṅana ma aya ma janma, atisti riṅ apraniti, heraṅ tinәṅ, rame ambәk,
                             <app><lem wit="#A">ña keh</lem><rdg wit="#B"><gap reason="omitted"/></rdg><rdg wit="#EdASD">ñoṅkah</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">ñokah</rdg><witDetail wit="#EdASD" type="ac"/></app> kaṅkәn haṅsa di na talaga heraṅ
                             <app><lem wit="#A">ta</lem><rdg wit="#B #EdASD"/></app>.</p>
-                        <p xml:id="siksakandangkaresian_11.10">hayaṅ ñaho di jroniṅ laut ma,
+                        <p xml:id="skk_11.10">hayaṅ ñaho di jroniṅ laut ma,
                             <app><lem type="emn" wit="#EdASD">matsya</lem><rdg wit="#A #B">maca</rdg></app> taña, kaliṅana ma
                             <app><lem wit="#A #EdASD">upama</lem><rdg wit="#B">upamana</rdg></app>
                             <app><lem wit="#A #B">janma</lem><rdg wit="#EdASD">hayaṅ</rdg></app> ñaho di hdap saṅ deva ratu, dәṅ di hdap mahapandita.</p>
-                        <p xml:id="siksakandangkaresian_11.11">hayaṅ ñaho di
+                        <p xml:id="skk_11.11">hayaṅ ñaho di
                                 <app><lem type="emn">lvirniṅ</lem><rdg wit="#A #B #EdASD">lvarniṁ</rdg></app> ləvәṅ ma gajah taña, ini kaliṅana, kaṅkәn
                             <app><lem wit="#A #B">ləvәṅ</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>
                             <app><lem type="emn">lvir</lem><rdg wit="#A #EdASD">lvar</rdg><rdg wit="#B">luAr</rdg></app> ta ma, ñaho di
                             <app><lem wit="#A">tinәṅ</lem><rdg wit="#B">hidə</rdg></app> nu reya, kaṅkәn
                             <app><lem wit="#A">gajah</lem><rdg wit="#B" cause="lexical">liman<!-- note synonim--></rdg></app> ta ma,
                             <app><lem wit="#A">ña keh</lem><rdg wit="#B">ñaho</rdg><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app> bәbәdas saṅ <pb edRef="#A" n="17r"/> deva ratu.</p>
-                      <p xml:id="siksakandangkaresian_11.12">hayaṅ ñaho di ruum amisniṅ kәmbaṅ ma,
+                      <p xml:id="skk_11.12">hayaṅ ñaho di ruum amisniṅ kәmbaṅ ma,
                               <app><lem type="emn" wit="#EdASD">baṅbara</lem><rdg wit="#A">baṁba<gap reason="lost" unit="character" quantity="1"/></rdg><rdg wit="#B"><gap reason="lost" unit="character" quantity="1"/><unclear>bar</unclear>ra</rdg></app> taña, kaliṅana ta kaṅkәn
                             <app><lem wit="#B #EdASD">baṅbara</lem><rdg wit="#A">babara</rdg></app> ma janma bisa, saba
                             <app><lem wit="#A #EdASD">ṅumbara</lem><rdg wit="#B">ṅubara</rdg></app> ñaho di
@@ -727,14 +743,14 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">amis</lem><rdg wit="#B">Asiḥ</rdg></app> baruṅusan, sәmu
                             <app><lem wit="#A">imuc</lem><rdg wit="#B" cause="lexical">guyu<!-- note synonim --></rdg><rdg wit="#EdASD">imut</rdg></app>
                             <app><lem wit="#B #EdASD">tiṅkah</lem><rdg wit="#A">tikaḥ</rdg></app> suka.</p>
-                    <p xml:id="siksakandangkaresian_11.13">kaliṅana ulah salah gәsan naña, hayaṅ
+                    <p xml:id="skk_11.13">kaliṅana ulah salah gәsan naña, hayaṅ
                             <app><lem wit="#A">dek</lem><rdg wit="#B #EdASD"/></app> ñaho di sakvehniṅ carita ma,
                             <app><lem wit="#A #EdASD">gәs ma</lem><rdg wit="#B">gəs</rdg></app>
                             <app><lem wit="#A #B">darmajati</lem><rdg wit="#EdASD">damarjati</rdg></app>, saṅ hyaṅ hayu, jayasena, sedamana,
                             <app><lem type="emn">kuñjarakarna</lem><rdg wit="#A">pujayakarna</rdg><rdg wit="#B">kuñjayakarna</rdg><rdg wit="#EdASD">pu jayakarma</rdg></app>, ramayana, adiparva,
                             <app><lem wit="#B">koravasrama</lem><rdg wit="#A #EdASD">koravasarma</rdg></app>, bimasorga, raṅga lave, boma, sumana, kalapurbaka, jarini,
                             <app><lem wit="#A #EdASD">tantri</lem><rdg wit="#B">taṁtri</rdg></app>, siṅ savatәk carita ma, memen taña.</p>
-                    <p xml:id="siksakandangkaresian_11.14"><app><lem wit="#A #B">dek</lem><rdg wit="#EdASD">hayaṅ</rdg></app> ñaho di
+                    <p xml:id="skk_11.14"><app><lem wit="#A #B">dek</lem><rdg wit="#EdASD">hayaṅ</rdg></app> ñaho di
                             <app><lem type="emn" wit="#EdASD">sakvehniṅ</lem><rdg wit="#A">sakvaḥniṁ</rdg><rdg wit="#B">sa<gap reason="lost" unit="character" quantity="1"/>oEḥniṁ</rdg></app> kavih ma, kavih
                             <app><lem wit="#A #B">bvat tuha</lem><rdg wit="#EdASD">bvatuha</rdg></app>, kavih
                             <app><lem wit="#A #EdASD">pañjaṅ</lem><rdg wit="#B">pujaṁ</rdg></app>, kavih lalaṅuan, kavih pañaraman, kavih
@@ -744,7 +760,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#B #EdASD">әrih</lem><rdg wit="#A">qəri</rdg></app>, kavih babahanan, kavih
                             <app><lem wit="#A #B #EdASD">babaroṅan</lem><witDetail wit="#EdASD" type="ac"/><rdg wit="#EdASD">baṅbaroṅan</rdg><witDetail wit="#EdASD" type="pc"/></app>, kavih taṅtuṅ, kavih
                             <app><lem type="norm" wit="#EdASD">sasambatan</lem><rdg wit="#A #B">sasabatan</rdg></app>, kavih igәl-igәlan, siṅ savatәk kavih ma, paraguna taña.</p>
-                    <p xml:id="siksakandangkaresian_11.15">hayaṅ ñaho di
+                    <p xml:id="skk_11.15">hayaṅ ñaho di
                             <app><lem wit="#A #EdASD">pamacәh</lem><rdg wit="#B">para macəh</rdg></app> ma, cәta macәh, cәta nirus, tatapukan,
                             <app><lem wit="#A #B #EdASD">babaroṅan</lem><witDetail wit="#EdASD" type="ac"/><rdg wit="#EdASD">baṅbaroṅan</rdg><witDetail wit="#EdASD" type="pc"/></app>, babakutrakan,
                             <app><lem wit="#A #B">abaṅ-abaṅan</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>, nәrәy
@@ -752,10 +768,10 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="norm" wit="#EdASD">ləmbur</lem><rdg wit="#A #B">L̥bur</rdg></app>, ṅadu ləsuṅ, asup ka na lantar, ṅadu nini, siṅ savatәk
                             <app><lem wit="#A #EdASD">kaulinan</lem><witDetail wit="#EdASD" type="pc"/><rdg wit="#B">Ulinan·</rdg><rdg wit="#EdASD">ulinan</rdg><witDetail wit="#EdASD" type="ac"/></app> ma,
                             <app><lem wit="#A #EdASD">hәmpul</lem><rdg wit="#B">həpul</rdg></app> taña.</p>
-                    <p xml:id="siksakandangkaresian_11.16">hayaṅ ñaho di pantun ma, laṅgalaraṅ, bañakcatra, silivaṅi, haturvaṅi, prәpantun taña.</p>
-                    <p xml:id="siksakandangkaresian_11.17"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalviran:iṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app> tulis ma,
+                    <p xml:id="skk_11.16">hayaṅ ñaho di pantun ma, laṅgalaraṅ, bañakcatra, silivaṅi, haturvaṅi, prәpantun taña.</p>
+                    <p xml:id="skk_11.17"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalviran:iṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app> tulis ma,
                             <app><lem type="norm">pupuñjəṅan</lem><rdg wit="#B">pupu<add place="below">jə</add>ṁṅan</rdg><rdg wit="#A">pupuñjәṁṅa<gap reason="lost" unit="character" quantity="1"/>·</rdg></app>, hihiṅgulan, kәkәmbaṅan, alas-alasan, uraṅ-uraṅan, mәmәtahan, sisiraṅan, ta<pb edRef="#A" n="18r"/>ruk hata, kәmbaṅ tarate, siṅ savatәk tulis ma, lukis taña.</p>
-                    <p xml:id="siksakandangkaresian_11.18"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A"><unclear>sava</unclear>lviraniṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app>
+                    <p xml:id="skk_11.18"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A"><unclear>sava</unclear>lviraniṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app>
                             <app><lem wit="#B #EdASD">tətəpaan</lem><rdg wit="#A"><unclear>t</unclear>ә<unclear>t</unclear>әpaAn·</rdg></app> ma, tәlu gaṅgaman,
                             <app><lem wit="#A #B">palainna</lem><rdg wit="#EdASD">palain</rdg></app>, gaṅgaman di saṅ prabu ma,
                             <app><lem wit="#A #EdASD">pәdaṅ</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>, abәt, pamuk, golok, peso
@@ -774,16 +790,16 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A">palainna</lem><rdg wit="#B">palaIna, mana lai dəI</rdg><rdg wit="#EdASD">palain</rdg></app> dәi, di saṅ prәbu, di saṅ voṅ tani, di saṅ pandita, kitu lamun<pb edRef="#A" n="18v"/> uraṅ hayaṅ ñaho di
                             <app><lem wit="#A">sareyana</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="3"/>na</rdg><rdg wit="#EdASD">sareanana</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">sarean</rdg><witDetail wit="#EdASD" type="ac"/></app> eta ma,
                             <app><lem type="norm" wit="#EdASD">panday</lem><rdg wit="#A #B">paday</rdg></app> taña.</p>
-                    <p xml:id="siksakandangkaresian_11.19"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalviran:iṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app> ukir ma, dinanagakәn, dibaroṅkәn, ditiru paksi, ditiru
+                    <p xml:id="skk_11.19"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalviran:iṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app> ukir ma, dinanagakәn, dibaroṅkәn, ditiru paksi, ditiru
                             <app><lem wit="#A #EdASD">vәre</lem><rdg wit="#B">vrəre</rdg></app>, ditiru siṅha, siṅ savatәk ukir-ukiran ma, maraṅguy taña.</p>
-                    <p xml:id="siksakandangkaresian_11.20"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalviran:iṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app> oolahan ma, ñupar-ñapir, rara
+                    <p xml:id="skk_11.20"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalviran:iṁ</rdg><rdg wit="#B">savalurran·niṁ</rdg></app> oolahan ma, ñupar-ñapir, rara
                             <app><lem type="norm" wit="#EdASD">mandi</lem><rdg wit="#A #B">madi</rdg></app>, ñocobek, ñopoṅ koneṅ, ñaṅlarkәn,
                             <app><lem wit="#A">ñarəṅsәṅ</lem><rdg wit="#B"><gap reason="omitted"/></rdg><rdg wit="#EdASD">ñareṅseṅ</rdg></app>, ñәsәṅit, ñayaṅ ku
                             <app><lem wit="#B #EdASD">pədəs</lem><rdg wit="#A">pidis</rdg></app>, bәbәləman,
                             <app><lem type="emn">papaṅgaṅan</lem><rdg wit="#A">paṁpagaṁṅan</rdg></app>, kakasian, hahañaṅan, raramәsan,
                             <app><lem type="emn" wit="#EdASD">diruruum</lem><rdg wit="#A">diruruAm·</rdg><rdg wit="#B">ruruUman·</rdg></app>, diamis-amis, siṅ savatәk
                             <app><lem wit="#A #EdASD">kaolahan</lem><rdg wit="#B">Olaḥ Olaḥhan·</rdg></app>, harəp catra taña.</p>
-                    <p xml:id="siksakandangkaresian_11.21"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalirraniṁ</rdg><rdg wit="#B">savalirran·niṁ</rdg></app>
+                    <p xml:id="skk_11.21"><app><lem type="emn" wit="#EdASD">salvirniṅ</lem><rdg wit="#A">savalirraniṁ</rdg><rdg wit="#B">savalirran·niṁ</rdg></app>
                             <app><lem wit="#B #EdASD">boeh</lem><rdg wit="#A">boE</rdg></app> ma, kәmbaṅ
                             <app><lem type="norm" wit="#EdASD">muñcaṅ</lem><rdg wit="#A #B">mucaṁ</rdg></app>, gagaṅ seṅgaṅ, same leg, sәmat sahurun, añam cayut, sigәji, pasi-pasi, kalaṅkaṅ ayakan, poleṅ
                             <app><lem wit="#A #B">raganis</lem><rdg wit="#EdASD">rəṅganis</rdg></app>,
@@ -797,11 +813,11 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="norm" wit="#EdASD">jayanti</lem><rdg wit="#A #B">jayati</rdg></app>, hujan riris, laris, boeh alus, ragen paṅanten,
                             <app><lem type="emn" wit="#EdASD">siṅ</lem><rdg wit="#A #B">si</rdg></app> savatәk boboehan ma, paṅәyәk taña.</p>
                             <!-- reach here 19-02-2021 -->
-                    <p xml:id="siksakandangkaresian_11.22">lamun hayaṅ ñaho dy agama pari agama ma, acara eleh ku adigama, adigama eleh ku gurugama, gurugama eleh ku tuhagama, tuhagama eleh ku satmata, satmata eleh ku surakloka, surakloka eleh ku
+                    <p xml:id="skk_11.22">lamun hayaṅ ñaho dy agama pari agama ma, acara eleh ku adigama, adigama eleh ku gurugama, gurugama eleh ku tuhagama, tuhagama eleh ku satmata, satmata eleh ku surakloka, surakloka eleh ku
                             <app><lem wit="#A #EdASD">niravәrah</lem><rdg wit="#B">navicara</rdg></app>, utama janma vaheya dosa, vaheya janma utama dosa, siṅ savatәk
                             <app><lem wit="#A">agama ma</lem><rdg wit="#B">Agama</rdg><rdg wit="#EdASD">agama <supplied reason="omitted">parigama</supplied> ma</rdg></app>,
                             <app><lem wit="#A">para tanda</lem><rdg wit="#B">para tada</rdg><rdg wit="#EdASD">pratanda</rdg></app> taña, </p>
-                    <p xml:id="siksakandangkaresian_11.23">sugan hayaṅ ñaho di tiṅkah praṅ ma,
+                    <p xml:id="skk_11.23">sugan hayaṅ ñaho di tiṅkah praṅ ma,
                             <app><lem wit="#A #EdASD">makarabihva</lem><rdg wit="#B">makarabyiha</rdg></app>,
                             <app><lem type="emn">sakatabihva</lem><rdg wit="#A">kaṭābihva</rdg><rdg wit="#B">kaṭābyiha</rdg><rdg wit="#EdASD">katrabihva</rdg></app>,
                             <app><lem wit="#A #EdASD">lisaṅbihva</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>,
@@ -816,25 +832,25 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">sakti</lem><rdg wit="#B">sak·sati</rdg></app>, pake
                             <app><lem wit="#A">praṅ juritan</lem><rdg wit="#B">saṁ hulujurit</rdg><rdg wit="#EdASD">prajurit</rdg></app>, tapa
                             <app><lem wit="#A #EdASD">sapәtrik</lem><rdg wit="#B">sabətrik</rdg></app>, saṅ hulujurit taña.</p>
-                    <p xml:id="siksakandangkaresian_11.24">hayaṅ ñaho di sakvehniṅ aji
+                    <p xml:id="skk_11.24">hayaṅ ñaho di sakvehniṅ aji
                             <app><lem wit="#A #EdASD">mantra</lem><rdg wit="#B">maṭā</rdg></app> ma,
                             <app><lem wit="#A #EdASD">jampa jampiya</lem><rdg wit="#B">japa japye</rdg></app>, gәgәiṅ, susuratan, sasaranaan,
                             <app><lem wit="#A #B">kaseraṅan</lem><rdg wit="#EdASD">kaseaṅan</rdg></app>,
                             <app><lem wit="#A #EdASD">pavayagahan</lem><rdg wit="#B">pivayagaḥhan</rdg></app>,
                             <app><lem wit="#B">pupuspaan</lem><rdg wit="#A">pus·paAn</rdg></app>, susudaan, hurip-huripan, tuduk iyәm, pararasen,
                             <app><lem type="norm">pasaṅkvan</lem><rdg wit="#A #B #EdASD">pasakvan</rdg></app>, siṅ savatәk aji ma, saṅ brahmana taña.</p>
-                    <p xml:id="siksakandangkaresian_11.25">hayaṅ ñaho di
+                    <p xml:id="skk_11.25">hayaṅ ñaho di
                             <app><lem wit="#A">pupuja</lem><rdg wit="#B">pamuja</rdg><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app> di saṅgar ma, patah, puja daun, gәlar
                             <app><lem wit="#A #B">palajaṅ</lem><rdg wit="#EdASD">palayaṅ</rdg></app>, puja kәmbaṅ,
                             <app><lem type="norm" wit="#EdASD">ñampiṅan</lem><rdg wit="#A #B">ñapiṅan</rdg></app> liṅga,
                             <app><lem type="norm" wit="#EdASD">ṅomean</lem><rdg wit="#A">ṅomeyan</rdg><rdg wit="#B">ṅome</rdg></app> saṅ hyaṅ, siṅ savatәk muja ma,
                             <app><lem type="norm" wit="#EdASD">jaṅgan</lem><rdg wit="#A">jagan</rdg><rdg wit="#B">bujaṁga</rdg></app> taña.</p>
-                    <p xml:id="siksakandangkaresian_11.26">hayaṅ ñaho di davuh nalika ma, bulan grәmpa, tahun
+                    <p xml:id="skk_11.26">hayaṅ ñaho di davuh nalika ma, bulan grәmpa, tahun
                             <app><lem wit="#B #EdASD">tan patәṅgәk</lem><rdg wit="#A">tan patəgək</rdg></app>, tan pasirah, sakala lumaku, sakala
                             <app><lem wit="#B">mandәg</lem><rdg wit="#A #EdASD">madəg</rdg></app>,
                             <app><lem type="norm" wit="#EdASD">bumi kapәndәm</lem><rdg wit="#A">bumi kapədəm</rdg><rdg wit="#B"><gap reason="omitted"/></rdg></app>, bumi grәmpa, siṅ savatәk ñaho di carek nu
                             <app><lem wit="#A #EdASD">bәhәla</lem><rdg wit="#B">ti həla</rdg></app>, bujaṅga taña.</p>
-                    <p xml:id="siksakandangkaresian_11.27">hayaṅ ñaho di
+                    <p xml:id="skk_11.27">hayaṅ ñaho di
                             <app><lem wit="#A #EdASD">darmasiksa</lem><rdg wit="#B">darmasik·sa ma</rdg></app>, siksa kandaṅ, pasuk tapa,
                             <app><lem wit="#A #B">padonaan</lem><rdg wit="#EdASD">padənaan</rdg></app>, mahapavitra,
                             <app><lem wit="#A #EdASD">siksa</lem><rdg wit="#B">sisa</rdg></app> guru,
@@ -842,8 +858,8 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">upadrava</lem><rdg wit="#B">Upradava</rdg></app>, cadusakti, tato buvana, tato sarira, tato ajñana
                             <app><lem wit="#A #EdASD">ma</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>, siṅ savatәk әsi pustaka ma, saṅ pandita
                             <app><lem wit="#A #EdASD">taña</lem><rdg wit="#B">ta<gap reason="lost" unit="character" quantity="1"/></rdg></app>.</p>
-                    <p xml:id="siksakandangkaresian_11.28">makaṅuni kasorgaan di sakala, kaprabuan, kamulyaan, kautamaan, kaprәmanaan, kavisesaan, ratu taña.</p>
-                    <p xml:id="siksakandangkaresian_11.29">hayaṅ ñaho di patitis bumi
+                    <p xml:id="skk_11.28">makaṅuni kasorgaan di sakala, kaprabuan, kamulyaan, kautamaan, kaprәmanaan, kavisesaan, ratu taña.</p>
+                    <p xml:id="skk_11.29">hayaṅ ñaho di patitis bumi
                             <app><lem wit="#A #EdASD">ma</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>,
                             <app><lem wit="#A #EdASD">ṅampihkәn bumi</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>, masinikәn na uraṅ
                             <app><lem wit="#A #EdASD">sajagat</lem><rdg wit="#B">rye</rdg></app>,
@@ -852,7 +868,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">midana</lem><rdg wit="#B">mipadana</rdg></app>, lamun luhur dipidatar,
                             <app><lem wit="#A #EdASD">añcol dipakpak</lem><rdg wit="#B">Acol· dipapak·</rdg></app>, siṅ savatәk
                             <app><lem wit="#A #EdASD">ampih-ampih</lem><rdg wit="#B">Apiḥ-Apiḥ</rdg></app> ma, maṅkubumi taña.</p>
-                    <p xml:id="siksakandangkaresian_11.30">lamun hayaṅ ñaho di
+                    <p xml:id="skk_11.30">lamun hayaṅ ñaho di
                             <app><lem type="norm" wit="#EdASD">sakvehniṅ</lem><rdg wit="#A">sakvaḥniṁ</rdg><rdg wit="#B">sakoEḥniṁ</rdg></app> labuhan ma, makaṅuni gosoṅ, goroṅ,
                             <app><lem wit="#A #EdASD">kabua</lem><rdg wit="#B">kabuAn· riAk·</rdg></app>, ryak
                             <app><lem type="emn" wit="#EdASD">mokprok</lem><rdg wit="#A">mokpra:k·</rdg><rdg wit="#B">mopro</rdg></app>, ryak maliṅ, alun aguṅ,
@@ -860,16 +876,16 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">pulo</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>, karaṅ
                             <app><lem wit="#B">nuṅgul</lem><rdg wit="#A #EdASD">nuṁguṁ</rdg></app>,
                             <app><lem wit="#A #EdASD">tuṅgara</lem><rdg wit="#B">tugaṁ karaṁ</rdg></app>, barat daya, siṅ savatәk saba di laut ma, lalayaran, puhavaṅ taña.</p>
-                    <p xml:id="siksakandangkaresian_11.31">hayaṅ ñaho di savatәk arəga ma, tәlu sayuta, tәlu
+                    <p xml:id="skk_11.31">hayaṅ ñaho di savatәk arəga ma, tәlu sayuta, tәlu
                             <app><lem wit="#B #EdASD">sakәti</lem><rdg wit="#A">sakətə</rdg></app>, tәlu salaksa, tәlu sarivu, tәlu satak, tәlu saratus, tәlu sapuluh, makaṅuni karo bəlah, katәlu bәlah, kapat bәlah, kalima bәlah, kanәm bәlah, kapitu bәlah, kavolu bәlah,
                             <app><lem wit="#A">kasaṅa bәlah</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>, siṅ savatәk
                             <app><lem wit="#A">arəgaan</lem><rdg wit="#B">AR̥ga</rdg><rdg wit="#EdASD">arəga</rdg></app> ma,
                             <app><lem wit="#A #EdASD">citri<pb edRef="#A" n="21r"/>k byapari </lem><rdg wit="#B">citri saṁ byipari</rdg></app>taña.</p>
-                    <p xml:id="siksakandangkaresian_11.32">hayaṅ ñaho di
+                    <p xml:id="skk_11.32">hayaṅ ñaho di
                             <app><lem wit="#A #EdASD">sandi</lem><rdg wit="#B">sadi</rdg></app>, tapa,
                             <app><lem wit="#A #EdASD">luṅguh</lem><rdg wit="#B">luguḥ</rdg></app>, pratyaksa, putus taṅkәs, kaləpasәn, tata hyaṅ, tata devata, rasa carita, kaləpacarita, siṅ savatәk nata-nata para devata kabeh, saṅ viku
                             <app><lem wit="#A #EdASD">paraloka</lem><rdg wit="#B">paraloka kabeḥ</rdg></app> taña.</p>
-                    <p xml:id="siksakandangkaresian_11.33">aya ma na uraṅ dek cәta, ulah salah gәsan naña,
+                    <p xml:id="skk_11.33">aya ma na uraṅ dek cәta, ulah salah gәsan naña,
                             <app><lem wit="#A #EdASD">lamun dek</lem><rdg wit="#B">hayaṁ</rdg></app> ñaho di carek para nusa ma, carek cina, kәliṅ, parasi, mәsir, samudra,
                             <app><lem wit="#A #EdASD">baṅgala</lem><rdg wit="#B">baṁgali</rdg></app>, makasar,
                             <app><lem wit="#A #EdASD">pahaṅ</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>,
@@ -908,14 +924,14 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">juru basa darmamurcaya</lem><rdg wit="#B">juru basa taña, saṁ darmurcaya</rdg></app> taña.</p>
                     </div>
 
-<div type="chapter" n="12" xml:id="siksakandangkaresian_12">
+<div type="chapter" n="12" xml:id="skk_12">
 <head type="editorial" xml:lang="eng">God's Threads (<foreign>taṅtu devata</foreign>)</head>
-                            <p xml:id="siksakandangkaresian_12.01">eta keh na kañahokәnәn, di tuhuna di yogyana, aya ma nu
+                            <p xml:id="skk_12.01">eta keh na kañahokәnәn, di tuhuna di yogyana, aya ma nu
                                     <app><lem wit="#A #EdASD">majar</lem><rdg wit="#B">majar maneḥ</rdg></app> mo
                             <app><lem wit="#A #B #EdASD">ñaho</lem><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">ñao</rdg><witDetail wit="#EdASD" type="ac"/></app>, eta nu mo satya di guna di maneh, mo tәiṅ di carek devata uraṅ,
                             <app><lem wit="#A">mo takut di upadrava, jagat ganti cadusakti saṅ pandita</lem><rdg wit="#B">mo taku di Upadrava, cadusak·ti, jagat· gan·ti saṁ pan·dita</rdg><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>, tan avuruṅ
                                     <app><lem wit="#A #EdASD">inanti deniṅ</lem><rdg wit="#B">Inaṁti deneṁ</rdg></app> kavah.</p>
-                    <p xml:id="siksakandangkaresian_12.02"><app><lem wit="#A">lamunna</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="3"/>na</rdg><rdg wit="#EdASD">lamun</rdg></app>
+                    <p xml:id="skk_12.02"><app><lem wit="#A">lamunna</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="3"/>na</rdg><rdg wit="#EdASD">lamun</rdg></app>
                             <app><lem wit="#A #EdASD">guna</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app> mo dipiguna,
                             <app><lem wit="#A">lamunna</lem><rdg wit="#B">lamu</rdg><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app> tvah mo
                             <app><lem wit="#A #EdASD">dipitvah</lem><rdg wit="#B">tvaḥ</rdg></app>, sahiṅaniṅ guna krəta, kena itu taṅtu hyaṅ taṅtu devata,
@@ -924,13 +940,13 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">patañjala</lem><rdg wit="#B">patajala</rdg></app>, bakti ka batara, siṅ para devata kabeh,
                             <app><lem wit="#A #EdASD">pada</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app> bakti ka batara seda niskala, pahi maṅgihkәn si tuhu, lavan
                             <app><lem wit="#B">pratyaksa</lem><rdg wit="#A #EdASD">prətyaksa</rdg></app>.</p>
-                    <p xml:id="siksakandangkaresian_12.03">ini na
+                    <p xml:id="skk_12.03">ini na
                             <app><lem wit="#A">paṅgihkәnәn</lem><rdg wit="#B">pagiḥkən:ən·</rdg><rdg wit="#EdASD">pamaṅgihkənən</rdg></app> di na sakala, taṅtu batara di bvana, pakәn pagәh jadi manik sakuruṅan, pakәnәn teja sabumi, hulun bakti di tohaan, eve bakti di laki, anak bakti di bapa, sisya bakti di guru, mantri bakti di maṅkubumi, maṅkubumi bakti di ratu, ratu bakti di devata, disuruh nәguhkәn di sarira<!-- note pronominal of 'self' -->,
                             <app><lem wit="#A #EdASD">matitiskən</lem><rdg wit="#B">matitikən·</rdg></app> bayu sabda
                             <app><lem wit="#B">hidəp</lem><rdg wit="#A #EdASD">hdap</rdg></app>.</p>
-                    <p xml:id="siksakandangkaresian_12.04"><app><lem wit="#A #EdASD">lamun</lem><rdg wit="#B">lamun:a</rdg></app> itu hamo kapiguna, kapitvah ku na janma, kanista madya utama, pada diti<pb edRef="#A" n="22v"/>bakәn ka na kavah si
+                    <p xml:id="skk_12.04"><app><lem wit="#A #EdASD">lamun</lem><rdg wit="#B">lamun:a</rdg></app> itu hamo kapiguna, kapitvah ku na janma, kanista madya utama, pada diti<pb edRef="#A" n="22v"/>bakәn ka na kavah si
                             <app><lem wit="#A #EdASD">tambrah gomuka</lem><rdg wit="#B">taman· braḥma muka</rdg></app>, vijaya jana janma<!-- or vijaya, ja na janma? -->, kavisesa ku devata pun.</p>
-                    <p xml:id="siksakandangkaresian_12.05">sahur saṅ darma pitutur, mujarakәn sabda saṅ rumuhun, aya dәi
+                    <p xml:id="skk_12.05">sahur saṅ darma pitutur, mujarakәn sabda saṅ rumuhun, aya dәi
                             <app><lem wit="#A #EdASD">babandiṅna</lem><rdg wit="#B">babadiṁṅan·nana</rdg></app>, kitu upamana uraṅ
                             <app><lem wit="#A #EdASD">ləmpaṅ</lem><rdg wit="#B">L̥paṁ</rdg></app>
                             <app><lem wit="#A #EdASD">ka java</lem><rdg wit="#B">ka java, dataṁ ka Alas· java</rdg></app>, hamo bisa nurut carekna, dәṅәn carana, maṅu rasa uraṅ, aṅgәs ma pulaṅ dәi ka sunda, hantә bisa
@@ -940,7 +956,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">hantә</lem><rdg wit="#B">hatə</rdg></app> bisa
                             <app><lem wit="#A #EdASD">nurut</lem><rdg wit="#B">nuru</rdg></app>
                             <app><lem wit="#B #EdASD">carekna</lem><rdg wit="#A">carena</rdg></app>.</p>
-                    <p xml:id="siksakandangkaresian_12.06">kitu uraṅ janma ini,
+                    <p xml:id="skk_12.06">kitu uraṅ janma ini,
                             <app><lem wit="#A #B">haṅәr</lem><rdg wit="#EdASD">ha<supplied reason="omitted">ṅ</supplied>gər</rdg></app> turun ti niskala, hantә katәmu
                             <app><lem wit="#A #EdASD">cara</lem><rdg wit="#B">carek·</rdg></app>
                             <app><lem wit="#A #EdASD">devata,</lem><rdg wit="#B">niskala, mo devata</rdg></app> gәra-gәra dek maṅjanma, ja
@@ -952,9 +968,9 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">ṅavisesakәn na</lem><rdg wit="#B">kavisesa ku</rdg></app> salah.</p>
 </div>
 
-<div type="chapter" n="13" xml:id="siksakandangkaresian_13">
+<div type="chapter" n="13" xml:id="skk_13">
 <head type="editorial" xml:lang="eng">Four Demons (<foreign>catur-buta</foreign>)</head>
-        <p xml:id="siksakandangkaresian_13.01">ini siloka tvah janma salah, buraṅkak,
+        <p xml:id="skk_13.01">ini siloka tvah janma salah, buraṅkak,
                 <app><lem type="emn" wit="#EdASD">marende</lem><rdg wit="#A">marande</rdg><rdg wit="#B">marede</rdg></app>, mariris, viraṅ, ya ta catur-buta ṅaranna,
                             <app><lem wit="#A">kaliṅanya</lem><rdg wit="#EdASD">kaliṅana</rdg></app>, buraṅkak ma ṅaranya gila, nu kaṅkәn makagila ta ma, tvah janma,
                 <app><lem wit="#B">dәṅki</lem><rdg wit="#A #EdASD">dəṅi</rdg></app>, tuṅi, toroṅ, gasoṅ,
@@ -965,7 +981,7 @@ kayatnakna voṅ sakabeh,
                 <app><lem wit="#A #EdASD">durgi durga</lem><rdg wit="#B">durga durgi</rdg></app>, kalabuta, gәsanna
                 <app><lem wit="#A #EdASD">ta</lem><rdg wit="#B">ma</rdg></app> di malaniṅ ləmah.</p>
 
-        <p xml:id="siksakandangkaresian_13.02"><app><lem wit="#A #EdASD">malaniṅ ləmah ṅaranna</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>,
+        <p xml:id="skk_13.02"><app><lem wit="#A #EdASD">malaniṅ ləmah ṅaranna</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>,
                 <app><lem wit="#A #EdASD">sodoṅ, saroṅge</lem><rdg wit="#B">so<gap reason="lost" unit="character" quantity="1"/>sekoṁ, soṁgeṁ</rdg></app>, cadas
                 <app><lem wit="#A #EdASD">gantuṅ</lem><rdg wit="#B">gatel</rdg></app>,
                 <app><lem wit="#B">muṅkal pateṅgaṅ</lem><rdg wit="#A">mukal pategaṁ</rdg><rdg wit="#EdASD">mu<supplied reason="omitted">ṅ</supplied>kal pategaṅ</rdg></app>,
@@ -978,7 +994,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#EdASD">kalomberan</lem><rdg wit="#A #B">kaloberran</rdg></app>,
                 <app><lem wit="#A #EdASD">jaryan, sәma</lem><rdg wit="#B">səma jaryin·</rdg></app>, savatәk ləmah kasiṅsal.</p>
 
-                    <p xml:id="siksakandangkaresian_13.03">sakitu
+                    <p xml:id="skk_13.03">sakitu
                             <app><lem wit="#A">kajajadyan</lem><rdg wit="#EdASD">kajadian</rdg><rdg wit="#B">kajajadyanana</rdg></app> nu
                             <app><lem wit="#A #EdASD">kәdә di tvahna</lem><rdg wit="#B">kə<gap reason="lost" unit="character" quantity="4"/> gopel·</rdg></app> gopel, ja
                             <app><lem wit="#A #EdASD">tvahniṅ janma</lem><rdg wit="#B">tvaḥ jama</rdg></app> nu mere gila
@@ -986,7 +1002,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">sasana</lem><rdg wit="#B">sisa</rdg></app> krəta, ja
                             <app><lem wit="#A #EdASD">ṅarumpak</lem><rdg wit="#B">ṅarupak·</rdg></app> saṅ hyaṅ siksa kandaṅ karəsyan, ña mana jadi mahagila, ya ta kaliṅaniṅ buraṅkak ṅaranna, </p>
 
-                    <p xml:id="siksakandangkaresian_13.04">marende ma ṅaranna, dibeka tiis ña karah
+                    <p xml:id="skk_13.04">marende ma ṅaranna, dibeka tiis ña karah
                             <app><lem wit="#A #B">panas</lem><rdg wit="#EdASD">panah</rdg></app>,
                             <app><lem wit="#A">dikahemankәn</lem><rdg wit="#B">di<add place="below">be</add>kahemakən·</rdg><rdg wit="#EdASD">dihemankən</rdg></app>, dikaruñaan, diipuk,
                             <app><lem wit="#A">dimemeh-memeh</lem><rdg wit="#B">dime<gap reason="lost" unit="character" quantity="4"/></rdg><rdg wit="#EdASD">dineneh</rdg></app>, dibere suka boga, hulun kuriṅ, ña karah
@@ -1008,7 +1024,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #B">kapapaaniṅ</lem><rdg wit="#EdASD">kapapaniṅ</rdg></app>
                             <app><lem wit="#A #EdASD">marende ṅaranya</lem><rdg wit="#B">marede ṅarana</rdg></app>.</p>
 
-                    <p xml:id="siksakandangkaresian_13.05"><app><lem wit="#A #EdASD">mariris</lem><rdg wit="#B">muriṅis·</rdg></app> ma ṅaranna, camah, jiji
+                    <p xml:id="skk_13.05"><app><lem wit="#A #EdASD">mariris</lem><rdg wit="#B">muriṅis·</rdg></app> ma ṅaranna, camah, jiji
                             <app><lem wit="#A #EdASD">manan</lem><rdg wit="#B">ma ṅarana</rdg></app> tahi, camah
                             <app><lem wit="#A #EdASD">manan</lem><rdg wit="#B">ma ṅanana</rdg></app> vaṅke
                             <app><lem wit="#A #B">abo</lem><rdg wit="#EdASD"><witDetail wit="#EdASD" type="pc">ambə</witDetail><witDetail wit="#EdASD" type="ac">abə</witDetail></rdg></app>, kitu keh tvah janma cacarokot, baraṅcokot,
@@ -1027,7 +1043,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">rea, ya ta</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="2"/></rdg></app>
                             <app><lem wit="#A #EdASD">sinaṅguh</lem><rdg wit="#B">sinagu</rdg></app> mariris ṅaranna.</p>
 
-                    <p xml:id="siksakandangkaresian_13.06">viraṅ ma
+                    <p xml:id="skk_13.06">viraṅ ma
                             <app><lem wit="#A #EdASD">ṅaranna</lem><rdg wit="#B">ṅaranyi</rdg></app>, mumul tuhu, mumul bәnәr, mumul
                             <app><lem wit="#A #EdASD">yogya</lem><rdg wit="#B">yoya</rdg></app>, mumul duga-duga, mumul bema,
                             <app><lem wit="#A #B">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app>
@@ -1041,16 +1057,16 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A">na catur-buta</lem><rdg wit="#B">caturbuta ṅaranya</rdg><rdg wit="#EdASD">ma caturbuta</rdg></app>.</p>
 
 </div>
-<div type="chapter" n="14" xml:id="siksakandangkaresian_14">
+<div type="chapter" n="14" xml:id="skk_14">
 <head type="editorial" xml:lang="eng">Three Consciousnesses (<foreign>trigəiṅ</foreign>)</head>
-        <p xml:id="siksakandangkaresian_14.01">ini ma upama janma tandaṅ ka cina, hәbәl maṅkuk di cina, ñaho di karma cina, di
+        <p xml:id="skk_14.01">ini ma upama janma tandaṅ ka cina, hәbәl maṅkuk di cina, ñaho di karma cina, di
                             <app><lem type="norm" wit="#EdASD">tiṅkah</lem><rdg wit="#A #B">tikaḥ</rdg></app> cina, di carek cina, di polah ci<pb edRef="#A" n="25r"/>na, di kararampesan cina, katәmu na carek tәlu, kanista, madya, utama, pahi ñaho di sabda saṅ prabu, saṅ rama, saṅ rəsi, bisa matitiskәn bayu sabda hdap, ña mana ñaho di
                             <app><lem type="norm" wit="#EdASD">gәiṅ</lem><rdg wit="#A #B">gəI</rdg></app>, di
                             <app><lem type="norm" wit="#EdASD">upagәiṅ</lem><rdg wit="#A">upagəI</rdg><rdg wit="#B">rupagəIṁ</rdg></app>, di
                             <app><lem wit="#B #EdASD">parigәiṅ</lem><rdg wit="#A">parigəI</rdg></app>, ya ta
                             <app><lem type="norm" wit="#EdASD">trigәiṅ</lem><rdg wit="#A #B">trigəI</rdg></app> ṅaranna.</p>
 
-                    <p xml:id="siksakandangkaresian_14.02"><app><lem type="norm" wit="#EdASD">gәiṅ</lem><rdg wit="#A #B">gəI</rdg></app> ma bisa ṅicap bisa
+                    <p xml:id="skk_14.02"><app><lem type="norm" wit="#EdASD">gәiṅ</lem><rdg wit="#A #B">gəI</rdg></app> ma bisa ṅicap bisa
                             <app><lem wit="#B">ṅinum</lem><rdg wit="#A"><unclear>ṅinum·</unclear></rdg><rdg wit="#EdASD">ṅicup</rdg></app> bisa di na kasukaan, ya
                             <app><lem type="norm" wit="#EdASD">gәiṅ</lem><rdg wit="#A #B">gəI</rdg></app> ṅaranna,
                             <app><lem type="norm" wit="#EdASD">upagәiṅ</lem><rdg wit="#A">upagəI</rdg><rdg wit="#B">Upa<add place="below">ma</add>gəI</rdg></app> ma ṅaranna, bisa ñandaṅ, bisa
@@ -1064,7 +1080,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #B">ku</lem><rdg wit="#EdASD">nu</rdg></app>
                             <app><lem wit="#A #EdASD">bәnaṅ</lem><rdg wit="#B">bənaṁna</rdg></app> milabuh siloka.</p>
 
-                    <p xml:id="siksakandangkaresian_14.03">lamun ka beet ma basana, utun, eten, orok, anakiṅ, adiiṅ, ka kolot ma basana, lañcәkiṅ,
+                    <p xml:id="skk_14.03">lamun ka beet ma basana, utun, eten, orok, anakiṅ, adiiṅ, ka kolot ma basana, lañcәkiṅ,
                             <app><lem type="norm">suvaniṅ</lem><rdg wit="#A #EdASD">suAniṁ</rdg><rdg wit="#B">sumaṁṅər</rdg></app>,
                             <app><lem type="norm">әñcuiṅ</lem><rdg wit="#A #B #EdASD">qəcuIṁ</rdg></app>,<!-- this word is misplaced, probably a crux -->
                             <app><lem wit="#A #B">toaiṅ</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>, akiiṅ, paṅvastuna ma su<pb edRef="#A" n="25v"/>maṅәr,
@@ -1072,7 +1088,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="emn">mukpruk</lem><rdg wit="#A">mupraruk</rdg><rdg wit="#B">mupru</rdg></app> ṅulas, ñәcәp ṅala aṅәn, ña mana suka buṅah padaṅ caaṅ nu dipivaraṅ, ya ta sinaṅguh
                             <app><lem type="norm" wit="#EdASD">parigәiṅ</lem><rdg wit="#A #B">parigəI</rdg></app> ṅaranna.</p>
 
-                    <p xml:id="siksakandangkaresian_14.04">
+                    <p xml:id="skk_14.04">
                             ini <app><lem type="emn" wit="#EdASD">silokana</lem><rdg wit="#A">salokana</rdg></app>, mas, pirak,
                                             <app><lem wit="#A #EdASD">komala</lem><rdg wit="#B">kobala</rdg></app>, hintәn, ya ta saṅ hyaṅ
                                             <app><lem wit="#A #EdASD">catur-yogya</lem><rdg wit="#B">tuhuyoya</rdg></app> ṅaranna, ini kaliṅana, mas ma ṅaranya, sabda tuhu, tәpәt byakta, pañcaksara, pirak ma ṅaranya, ambәk
@@ -1089,7 +1105,7 @@ kayatnakna voṅ sakabeh,
                                                     <lem>ini silokana, mas, pirak, komala, hintәn, ya ta saṅ hyaṅ catur-yogya ṅaranna</lem>
                                                     <note corresp="txt:SMG.21.1">ini catur-rahayu ṅaranya, silokanya nihan, mas pirak komala hintən,</note></app></listApp></p>
 
-                    <p xml:id="siksakandangkaresian_14.05">ya ta janma bijil ti nirmalaniṅ ləmah,
+                    <p xml:id="skk_14.05">ya ta janma bijil ti nirmalaniṅ ləmah,
                             <app><lem type="norm">nirmalaniṅ ləmah</lem><rdg wit="#A"><add place="below">nirmalani L̥maḥ</add></rdg><rdg wit="#B #EdASD"/></app>
                             <app><lem wit="#A">ṅaranna</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>, pahoman,
                             <app><lem type="norm">pabuntәlan</lem><rdg wit="#A #EdASD">pabutəlan</rdg></app>, pamujaan,
@@ -1106,9 +1122,9 @@ kayatnakna voṅ sakabeh,
 
 </div>
 
-<div type="chapter" n="15" xml:id="siksakandangkaresian_15">
+<div type="chapter" n="15" xml:id="skk_15">
              <head type="editorial" xml:lang="eng">Supreme Dharma &amp; Moksa</head>
-                <p xml:id="siksakandangkaresian_15.01">ini carita
+                <p xml:id="skk_15.01">ini carita
                             <app><lem type="emn">bәhəla</lem><rdg wit="#A">bəhala</rdg><rdg wit="#B">nu bəhəla</rdg><rdg wit="#EdASD">bahəla</rdg></app> nu
                         <app><lem wit="#A #EdASD">nañjәrkәn</lem><rdg wit="#B">najərkən</rdg></app> saṅ hyaṅ sasana
                         <app><lem wit="#A #EdASD">krəta</lem><rdg wit="#B">krata</rdg></app>, rahyaṅtaṅ
@@ -1119,16 +1135,16 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="norm">karaseyaaniṅ</lem><rdg wit="#A">karasyeAnniṁ</rdg><rdg wit="#B">rasyeniṁ</rdg><rdg wit="#EdASD">karaseyan niṅ</rdg></app> janma, ya ta sinaṅguh janma
                         <app><lem wit="#A #EdASD">rahaseya</lem><rdg wit="#B">rasye</rdg></app> ṅaranna.</p>
 
-                    <p xml:id="siksakandangkaresian_15.02"><app><lem wit="#A #B">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> pati ma eta atmana,
+                    <p xml:id="skk_15.02"><app><lem wit="#A #B">lamunna</lem><rdg wit="#EdASD">lamun</rdg></app> pati ma eta atmana,
                             <app><lem wit="#A #EdASD">maṅgihkәn</lem><rdg wit="#B">maṁgiḥ</rdg></app> sorga rahayu,
                             <app><lem wit="#A #EdASD">maṅgih</lem><rdg wit="#B">maṁgiḥkən·</rdg></app>
                             <app><lem wit="#A #EdASD">ra<pb edRef="#A" n="26v"/>hina</lem><rdg wit="#B">raḥhina sada</rdg></app> tan pabalik ptaṅ, suka tan pabalik duka, sorga tan pabalik papa, enak tan pabalik lara, hayu tan pabalik
                             <app><lem wit="#A #EdASD">hala</lem><rdg wit="#B">lapa</rdg></app>, nohan tan pabalik vogan, mokta tan pabalik byakta, nis tan pabalik hana, hyaṅ tan pabalik deva, ya ta sinaṅguh
                             <app><lem wit="#A #EdASD">paramaləñәp</lem><rdg wit="#B">paraL̥ñəp·</rdg></app> ṅaranna.</p>
 </div>
-<div type="chapter" n="16" xml:id="siksakandangkaresian_16">
+<div type="chapter" n="16" xml:id="skk_16">
              <head type="editorial" xml:lang="eng">Water Metafor</head>
-                    <p xml:id="siksakandangkaresian_16.01"><app><lem wit="#A #EdASD">kitu keh</lem><rdg wit="#B">katu keḥna</rdg></app> janma ayәna, upama uraṅ mandi, cai pitәmuәn uraṅ, heṅan ta na cai dva
+                    <p xml:id="skk_16.01"><app><lem wit="#A #EdASD">kitu keh</lem><rdg wit="#B">katu keḥna</rdg></app> janma ayәna, upama uraṅ mandi, cai pitәmuәn uraṅ, heṅan ta na cai dva
                             <app><lem wit="#A #B">pilihәnana</lem><rdg wit="#EdASD">pilihənna</rdg></app>, nu
                             <app><lem wit="#A #EdASD">kәruh</lem><rdg wit="#B">kiruh</rdg></app> dәṅәn nu heraṅ, kitu keh tvah janma, dva nu kapaknakәn, nu
                             <app><lem wit="#A #EdASD">goce</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="2"/>ce</rdg></app> dәṅәn nu rampes, kitu
@@ -1139,7 +1155,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">keh janma</lem><rdg wit="#B">keḥna jama</rdg></app>, manana
                             <app><lem wit="#A #EdASD">kapahayu</lem><rdg wit="#B">hayu</rdg></app>, ku tvahna nu mahayu iña, ña mana jan<app><lem wit="#A #EdASD">ma hala ku tvahna, mana hayu ku tvahna</lem><rdg wit="#B"><gap/></rdg></app>.</p>
 
-                    <p xml:id="siksakandangkaresian_16.02">kitu <app><lem wit="#A #EdASD">keh</lem><rdg wit="#B">keḥna</rdg></app> cai ta, mana dipajar dva na
+                    <p xml:id="skk_16.02">kitu <app><lem wit="#A #EdASD">keh</lem><rdg wit="#B">keḥna</rdg></app> cai ta, mana dipajar dva na
                             <app><lem wit="#A #EdASD">pilihәn ma</lem><rdg wit="#B">piliḥhan·nən:ana</rdg></app>, bañu <pb edRef="#A" n="27r"/>
                             <app><lem wit="#A #EdASD">asrəp</lem><rdg wit="#B">masərəp</rdg></app>
                             <app><lem type="emn" wit="#EdASD">lavan</lem><rdg wit="#A">lavan:a</rdg></app>
@@ -1163,9 +1179,9 @@ kayatnakna voṅ sakabeh,
 
 </div>
 
-<div type="chapter" n="17" xml:id="siksakandangkaresian_17">
+<div type="chapter" n="17" xml:id="skk_17">
              <head type="editorial" xml:lang="eng">Three causes of continuity of the world</head>
-                <p xml:id="siksakandangkaresian_17.01">ini ujar saṅ sadu, basana mahayu
+                <p xml:id="skk_17.01">ini ujar saṅ sadu, basana mahayu
                         <app><lem wit="#A #EdASD">drabyana</lem><rdg wit="#B">drabya</rdg></app>, ini
                             <app><lem wit="#A">tritantu</lem><rdg wit="#B">pratada</rdg><rdg wit="#EdASD">tritaṅtu</rdg></app> di bumi, bayu kita
                             <app><lem type="norm" wit="#EdASD">pinaka</lem><rdg wit="#A #B">pinaḥka</rdg></app>prabu, sabda kita
@@ -1174,7 +1190,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="norm" wit="#EdASD">pinaka</lem><rdg wit="#A #B">pinaḥka</rdg></app>rəsi, ya
                             <app><lem wit="#A">tritantu</lem><rdg wit="#B">trataṁtu</rdg><rdg wit="#EdASD">tritaṅtu</rdg></app> di bumi, ya kaṅkәn
                         <app><lem wit="#A #B">panә<pb edRef="#A" n="27v"/>guhniṅ</lem><rdg wit="#EdASD">pinəguh niṅ</rdg></app> bvana ṅaranna.</p>
-                <p xml:id="siksakandangkaresian_17.02">ini <app><lem wit="#A #EdASD">trivarga</lem><rdg wit="#B">travarga</rdg></app> di
+                <p xml:id="skk_17.02">ini <app><lem wit="#A #EdASD">trivarga</lem><rdg wit="#B">travarga</rdg></app> di
                         <app><lem wit="#A #EdASD">lamba</lem><rdg wit="#B">laba</rdg></app>, visnu kaṅkәn prabu, brahma kaṅkәn rama, isora kaṅkәn rəsi, ña mana
                             <app><lem wit="#A #EdASD">tritantu</lem><witDetail wit="#EdASD" type="ac"/><rdg wit="#B #EdASD">tritaṁtu</rdg><witDetail wit="#EdASD" type="pc"/></app>
                             <app><lem wit="#A">panәguhniṅ</lem><rdg wit="#B">pinaguḥniṁ</rdg><rdg wit="#EdASD">pinəguh niṅ</rdg></app> bvana,
@@ -1185,7 +1201,7 @@ kayatnakna voṅ sakabeh,
                             <app><lem type="emn" wit="#EdASD">krəta</lem><rdg wit="#A #B">krata</rdg></app> na bvana, mana hayu ikaṅ
                             <app><lem wit="#B">jagat</lem><rdg wit="#A">jat</rdg><rdg wit="#EdASD">ja<supplied reason="omitted">ga</supplied>t</rdg></app> kenana
                         <app><lem wit="#A #EdASD">tvahniṅ</lem><rdg wit="#B">tvaḥ</rdg></app> janma kapahayu.</p>
-                 <p xml:id="siksakandangkaresian_17.03">kitu <app><lem wit="#A #EdASD">keh</lem><rdg wit="#B">keḥna</rdg></app> saṅ pandita, pagәh di
+                 <p xml:id="skk_17.03">kitu <app><lem wit="#A #EdASD">keh</lem><rdg wit="#B">keḥna</rdg></app> saṅ pandita, pagәh di
                          <app><lem wit="#A">kapanditaanana</lem><rdg wit="#B">kapaditan· gəḥhan·niṁ</rdg></app>, krəta,
                          <app><lem wit="#A #EdASD">saṅ viku</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="3"/></rdg></app> pagәh di kavikuanana krəta, saṅ maṅuyu pagәh di
                             <app><lem type="norm">kamaṅuyuanana</lem><rdg wit="#A">kamaṅuyuAn:ana</rdg><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app> krəta, saṅ palikәn pagәh di
@@ -1218,9 +1234,9 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">sakakuruṅ</lem><witDetail wit="#EdASD" type="ac"/><rdg wit="#EdASD">saka kakuruṅ</rdg><witDetail wit="#EdASD" type="pc"/></app> deniṅ akasa, pahi maṅhurip ikaṅ sarvo janma kabeh.</p>
  </div>
 
-<div type="chapter" n="18" xml:id="siksakandangkaresian_18">
+<div type="chapter" n="18" xml:id="skk_18">
 <head type="editorial" xml:lang="eng">Types of beings</head>
-         <p xml:id="siksakandangkaresian_18.01">sarvo janma kabeh ṅaranna, janma tumuvuh, janma triyak, janma voṅ, janma sivoṅ, vastu sivoṅ, ña mana sakitu eta nu dapajar sarvo ja<pb edRef="#A" n="28v"/>nma
+         <p xml:id="skk_18.01">sarvo janma kabeh ṅaranna, janma tumuvuh, janma triyak, janma voṅ, janma sivoṅ, vastu sivoṅ, ña mana sakitu eta nu dapajar sarvo ja<pb edRef="#A" n="28v"/>nma
                             <app><lem wit="#A">kabeh</lem><rdg wit="#EdASD">kabeh ta</rdg></app>.</p>
         <listApp type="parallels">
         <app>
@@ -1230,10 +1246,10 @@ kayatnakna voṅ sakabeh,
         </app>
     </listApp>
         
-                    <p xml:id="siksakandangkaresian_18.02">janma tumuvuh ma ṅaranna, trәna, taru, lata, galuma, pahi maṅhurip hejo
+                    <p xml:id="skk_18.02">janma tumuvuh ma ṅaranna, trәna, taru, lata, galuma, pahi maṅhurip hejo
                             <app><lem type="norm">lembok</lem><rdg wit="#A">lebok</rdg><rdg wit="#EdASD">lembok</rdg></app> natar daṅkura, ya janma tumuvuh ṅaranna.</p>
-                    <p xml:id="siksakandangkaresian_18.03"><app><lem wit="#A">janma triyak ma ṅaranna, savatәk satoa, magәṅ madәmit, di darat di cai, ya janma triyak ṅaranna</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>.</p>
-                    <p xml:id="siksakandangkaresian_18.04">janma <app><lem wit="#A #EdASD">voṅ ma</lem><rdg wit="#B"><lacunaEnd/>ma</rdg></app> ṅaranna, ruana janma,
+                    <p xml:id="skk_18.03"><app><lem wit="#A">janma triyak ma ṅaranna, savatәk satoa, magәṅ madәmit, di darat di cai, ya janma triyak ṅaranna</lem><rdg wit="#EdASD"><gap reason="omitted"/></rdg></app>.</p>
+                    <p xml:id="skk_18.04">janma <app><lem wit="#A #EdASD">voṅ ma</lem><rdg wit="#B"><lacunaEnd/>ma</rdg></app> ṅaranna, ruana janma,
                             <app><lem wit="#A #EdASD">kena te</lem><rdg wit="#B">kenana hatə</rdg></app> hade yunina,
                             <app><lem wit="#A #EdASD">janma sivoṅ</lem><rdg wit="#B">jama siṁvoṁ</rdg></app> ma ṅaranna, rampes
                             <app><lem wit="#A #EdASD">yuni</lem><rdg wit="#B">yunina</rdg></app>, rampes
@@ -1242,10 +1258,10 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">acan ñaho di saṅ hyaṅ darma, vastu</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="11"/>tu</rdg></app>
                             <app><lem wit="#A #EdASD">sivoṅ</lem><rdg wit="#B">siṁvo</rdg></app> ma ṅaranna, nu tәgәr di bәnaṅna ñaho, vruh di saṅ hyaṅ darma, ñaho di tato saṅ hyaṅ ajñana, ya ta vastu
                             <app><lem wit="#A #EdASD">sivoṅ</lem><rdg wit="#B">siṁvo</rdg></app> ṅaranna.</p>
-                    <p xml:id="siksakandangkaresian_18.05"><app><lem wit="#A #EdASD">ini ma sugan hayaṅ kalihasan </lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="13"/></rdg></app>ku әsi bvana
+                    <p xml:id="skk_18.05"><app><lem wit="#A #EdASD">ini ma sugan hayaṅ kalihasan </lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="13"/></rdg></app>ku әsi bvana
                             <app><lem wit="#A #EdASD">reyana ta</lem><rdg wit="#B">rye Eta</rdg></app>, <num value="4">4</num>, ini ṅaranna, kurija,
                             <app><lem wit="#B">mataja</lem><rdg wit="#A #EdASD">mantaja</rdg></app>, bagaja, payuja.</p>
-                    <p xml:id="siksakandangkaresian_18.06">kurija ma ṅaranna, savatәk bijil ti suṅut,
+                    <p xml:id="skk_18.06">kurija ma ṅaranna, savatәk bijil ti suṅut,
                             <app><lem type="emn">mataja</lem><rdg wit="#A #EdASD">mantaja</rdg><rdg wit="#B"><gap reason="lost" unit="character" quantity="3"/></rdg></app>
                             <app><lem wit="#A #EdASD">ma ṅaranna, savatәk bijil ti</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="12"/></rdg></app> panon, bagaja ma
                             <app><lem wit="#A #EdASD">ṅaranna</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>, savatәk bijil ti <pb edRef="#A" n="29r"/>baga, payuja ma
@@ -1254,9 +1270,9 @@ kayatnakna voṅ sakabeh,
                             <app><lem wit="#A #EdASD">hyaṅ</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app> catur-mula ṅaranna.</p>
 
 </div>
-<div type="chapter" n="19" xml:id="siksakandangkaresian_19">
+<div type="chapter" n="19" xml:id="skk_19">
 <head type="editorial" xml:lang="eng">Six Uses of People</head>
-                        <p xml:id="siksakandangkaresian_19.01">ini guna janma di 
+                        <p xml:id="skk_19.01">ini guna janma di 
                                 <app><lem wit="#A #EdASD">bvana, 6, ṅaṅka, ñigi, ṅikәt</lem><rdg wit="#B">bva<gap reason="lost" unit="character" quantity="8"/></rdg></app>, ñigəṅ, ṅaruaṅ, 
                                 <app><lem wit="#A #EdASD">ṅaromboṅ</lem><rdg wit="#B">ṅa2boṁkәn·</rdg></app>, ṅaṅka ma ṅaranna, aṅәn-aṅәn, ñigi ma ṅaranna,
                             <app><lem type="norm" wit="#EdASD">uuntayan</lem><rdg wit="#A">Uutayan·</rdg><rdg wit="#B">Utay·-Utuyan·</rdg></app>, 
@@ -1266,53 +1282,53 @@ kayatnakna voṅ sakabeh,
                                 <app><lem wit="#A #EdASD">ya ta sinaṅguh sadguna ṅaranna, sakitu</lem><rdg wit="#B"><gap reason="lost"/></rdg></app> guna janma sareana.</p>
 </div>
 
- <div type="chapter" n="20" xml:id="siksakandangkaresian_20">
+ <div type="chapter" n="20" xml:id="skk_20">
 <head type="editorial" xml:lang="eng">People Desires</head>
-                        <p xml:id="siksakandangkaresian_20.01">ini kahayaṅ janma, 4, yun suda, yun suka, yun muṅgaḥ, yun luput, ini kaliṅanna, yun suda ma ṅaranna hayaṅ purna, mumul kәna ku sarba kasakit, yun suka ma ṅaranna, hayaṅ
+                        <p xml:id="skk_20.01">ini kahayaṅ janma, 4, yun suda, yun suka, yun muṅgaḥ, yun luput, ini kaliṅanna, yun suda ma ṅaranna hayaṅ purna, mumul kәna ku sarba kasakit, yun suka ma ṅaranna, hayaṅ
                             <app><lem wit="#B #EdASD">bәṅhar</lem><rdg wit="#A">bəhar</rdg></app>, mumul kaantunan<!-- only found kantun in MdS, without base form --> ku drabya, <pb edRef="#A" n="29v"/>yun muṅgah ma ṅaranna, hayaṅ sorga, mumul maṅgihkәn 
                                 <app><lem wit="#A #EdASD">bvana, yun</lem><rdg wit="#B">bvana, <lacunaStart/></rdg></app> luput ma ṅaranna, hayaṅ mokta, mumul kabava ku para sorga, ña mana sakitu kahayaṅ janma
                             <app><lem type="norm">sareyana</lem><rdg wit="#A">saryen:a</rdg><rdg wit="#EdASD">sareana</rdg><witDetail wit="#EdASD" type="pc"/><rdg wit="#EdASD">sareyan</rdg><witDetail wit="#EdASD" type="ac"/></app>.</p>
-                    <p xml:id="siksakandangkaresian_20.02">ini nu
+                    <p xml:id="skk_20.02">ini nu
                             <app><lem type="norm">mandi</lem><rdg wit="#A">madi</rdg><rdg wit="#EdASD">mandi</rdg></app> ka cai, 4, kaliṅana, lanaṅ, vadon, kәdә, malavadiṅ, sakitu eta reyana, sabaraha dagaṅan dipakәn eta, 2, kaliṅana, asak, dәṅ hatah, goce dәṅ rampes becet dәṅ gәde, sabaraha rasana, 6, kaliṅana, lavana, kaduka, tritka,
                             <app><lem wit="#A">amla</lem><rdg wit="#EdASD">amba</rdg></app>, kasaya, madura, lavana ma ṅaranna paṅset,
                             <app><lem type="emn">kaduka</lem><rdg wit="#A">kadakha</rdg></app> ma ṅaranna, lada, tritka ma ṅaranna pahit,
                             <app><lem wit="#A">amla</lem><rdg wit="#EdASD">amba</rdg></app> ma ṅaranna hasәm, kasaya ma ṅaranna pәləm, madura ma ṅaranna amis, sakitu karasana ku na janma sarerea.</p>
 </div>
-<div type="chapter" n="21" xml:id="siksakandangkaresian_21">
+<div type="chapter" n="21" xml:id="skk_21">
         <head type="editorial" xml:lang="eng">Property and inheritance</head>
-                    <p xml:id="siksakandangkaresian_21.01">ini pakәn uraṅ mibogaan maneh,
+                    <p xml:id="skk_21.01">ini pakәn uraṅ mibogaan maneh,
                             <app><lem wit="#A">pakәnna</lem><rdg wit="#EdASD">pakən</rdg></app> turun pativah-tivah ka <!-- From here is based on Atja Danasasmita reading for the folios are missing--> 
                             <app><lem wit="#EdASD">anak ka iñcu</lem><rdg wit="#A">anak<lacunaStart/></rdg></app>, ka umpi ka cicip, ka muniṅ, ka aṅgasantana, ka pratisantana, ka putuh vəkas sakabeh, nu siəp dipikakolotan dəṅ nu hamo siəp.</p>
-                    <p xml:id="siksakandangkaresian_21.02">bənaṅ cəkap hamo siəp dipikakolotan ṅaranna pinah iṅ buta raksasa, bənaṅ bobotoh, bənaṅ babalanjaan, hamo yogya dipikakolotan, ṅaranna vineh iṅ cipta ambara, heṅan pamere induṅ, pamere bapa, pamere paṅguruan, vənaṅ dipikakolotan, ṅaranna deva rumaksa di uraṅ, ladaṅ pəpəlakan vənaṅ dipikakolotan, ṅaranna ma ni bijil ti prətivi, ladaṅ həyək, ladaṅ cocooan, vənaṅ dipikakolotan, ṅaranna mirah tiba ti akasa.</p>
+                    <p xml:id="skk_21.02">bənaṅ cəkap hamo siəp dipikakolotan ṅaranna pinah iṅ buta raksasa, bənaṅ bobotoh, bənaṅ babalanjaan, hamo yogya dipikakolotan, ṅaranna vineh iṅ cipta ambara, heṅan pamere induṅ, pamere bapa, pamere paṅguruan, vənaṅ dipikakolotan, ṅaranna deva rumaksa di uraṅ, ladaṅ pəpəlakan vənaṅ dipikakolotan, ṅaranna ma ni bijil ti prətivi, ladaṅ həyək, ladaṅ cocooan, vənaṅ dipikakolotan, ṅaranna mirah tiba ti akasa.</p>
 </div>
 
-                    <div type="chapter" n="22" xml:id="siksakandangkaresian_22">
+                    <div type="chapter" n="22" xml:id="skk_22">
           <head type="editorial" xml:lang="eng">Noble and slave lineage</head>
-                    <p xml:id="siksakandangkaresian_22.01">janma nu bəṅhar teka nəbus vadon, tə ñaho induṅ bapana, ulah dipikaritikan, bisi uraṅ kabava salah.</p>
-                    <p xml:id="siksakandangkaresian_22.02">aya dəi, ñaho di induṅ bapana, syaran saṅkan ahulun, lamun tvah induṅ bapana rampes keneh na janma, ṅaranna kapapanas ku tvah kolot, vənaṅ dipikaritikan, heṅan lamun ku carut ma ulah dipikalələhəṅkən, ṅaranna janma midər iṅ naraka.</p>
-                    <p xml:id="siksakandangkaresian_22.03">aya dəi ma janma,
+                    <p xml:id="skk_22.01">janma nu bəṅhar teka nəbus vadon, tə ñaho induṅ bapana, ulah dipikaritikan, bisi uraṅ kabava salah.</p>
+                    <p xml:id="skk_22.02">aya dəi, ñaho di induṅ bapana, syaran saṅkan ahulun, lamun tvah induṅ bapana rampes keneh na janma, ṅaranna kapapanas ku tvah kolot, vənaṅ dipikaritikan, heṅan lamun ku carut ma ulah dipikalələhəṅkən, ṅaranna janma midər iṅ naraka.</p>
+                    <p xml:id="skk_22.03">aya dəi ma janma,
                             <app><lem type="emn">ṅa, rampes</lem><rdg wit="#EdASD">ṅarampes</rdg></app> tvahna, rampes susukna, rampes vvitna, ulah ma təbus, heṅan ulah tuluy dipisomah, bisi hulun turunana, ulah mapajikən ka kulakadaṅ uraṅ, gəs ma taña, bavakən səpahən sevaka ka uraṅ.</p>
-                    <p xml:id="siksakandangkaresian_22.04">sakitu tata jaṅjavokanana pakən dapurna pulaṅ ka jatina dəi,
+                    <p xml:id="skk_22.04">sakitu tata jaṅjavokanana pakən dapurna pulaṅ ka jatina dəi,
                             <app><lem type="emn">pakən</lem><rdg wit="#EdASD">pake</rdg></app> bətəṅ di<pb edRef="#A" n="31"/>ri ti pañjara, pakən maur baṅsa uraṅ rampes<supplied reason="omitted">,</supplied> pakən bətəṅ kapataka.</p>
                     </div>
 
-                    <div type="chapter" n="23" xml:id="siksakandangkaresian_23">
+                    <div type="chapter" n="23" xml:id="skk_23">
                             <head type="editorial" xml:lang="eng">Matchmaking</head>
-                    <p xml:id="siksakandangkaresian_23.01">ini pakən uraṅ ṅajajadikən budak, ulah havara dipitotohkən
+                    <p xml:id="skk_23.01">ini pakən uraṅ ṅajajadikən budak, ulah havara dipitotohkən
                             <app><lem type="emn">mo ma nu</lem><rdg wit="#EdASD">nu ma mo [nu]</rdg></app> bənər bitan uraṅ, kareyaan uraṅ, lamun leṅkeṅ bapa turun ka anak lalaki, lamun leṅkeṅ induṅ turun ka anak vadon, lamun pahi ma ti pañca ti bumi ngaranna buta sumurup iṅ kali, hantə yogya mijodokeun bocah, bisi kabava 
                             <app><lem wit="#EdASD">salah, bisi</lem><rdg wit="#B"><lacunaEnd/> bisi</rdg></app> kaparisədək nu ṅajadikən.</p>
                             </div>
 
-                    <div type="chapter" n="24" xml:id="siksakandangkaresian_24">
+                    <div type="chapter" n="24" xml:id="skk_24">
           <head type="editorial" xml:lang="eng">Closing</head>
-                    <p xml:id="siksakandangkaresian_24.01">samaṅkana kayatnakən talatah sang sadu, saur saṅ darma pitutur<supplied reason="omitted">,</supplied> mujarakən sabda saṅ rumuhun, turut tvah pakasabda, namo sivaya,
+                    <p xml:id="skk_24.01">samaṅkana kayatnakən talatah sang sadu, saur saṅ darma pitutur<supplied reason="omitted">,</supplied> mujarakən sabda saṅ rumuhun, turut tvah pakasabda, namo sivaya,
                             <app><lem type="emn">namo</lem><rdg wit="#EdASD">nami</rdg></app> budaya, namo sidam jiva palipurna, </p>
                     </div>
-                            <div type="chapter" n="25" xml:id="siksakandangkaresian_25">
+                            <div type="chapter" n="25" xml:id="skk_25">
           <head type="editorial" xml:lang="eng">Colophon</head>
-                    <p xml:id="siksakandangkaresian_25.01">saṅ amaca maka suka, saṅ nurut ma ujar rahayu ngarəgəp cipta nirmala, yatna saṅ sevaka darma.</p>
-                    <p xml:id="siksakandangkaresian_25.02">ini kavuvusan siksa kandaṅ karəsian ṅaranya, ja na pustakanipun saṅ ṅarəṅə pun.</p>
-                    <p xml:id="siksakandangkaresian_25.03">mula manibakən sastra duk iṅ teja divasan, huvus iṅ vulan katiga pun, ini babar iṅ pustakanipun, nora catur sagara wulan.</p>
+                    <p xml:id="skk_25.01">saṅ amaca maka suka, saṅ nurut ma ujar rahayu ngarəgəp cipta nirmala, yatna saṅ sevaka darma.</p>
+                    <p xml:id="skk_25.02">ini kavuvusan siksa kandaṅ karəsian ṅaranya, ja na pustakanipun saṅ ṅarəṅə pun.</p>
+                    <p xml:id="skk_25.03">mula manibakən sastra duk iṅ teja divasan, huvus iṅ vulan katiga pun, ini babar iṅ pustakanipun, nora catur sagara wulan.</p>
                </div>
                 </body>
         </text>

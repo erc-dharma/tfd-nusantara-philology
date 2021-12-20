@@ -3,163 +3,162 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">PUSDOK T/XXI/7/DOKBUD Tatwa Kabuddhan</title>
-            	<respStmt>
-            	<resp>EpiDoc Encoding</resp>
-            	<resp>intellectual authorship of edition</resp>
-            	<persName ref="part:argr">
-            		<forename>Arlo</forename>
-            		<surname>Griffiths</surname>
-            	</persName>
-            	</respStmt>
-            </titleStmt>
-        	<publicationStmt>
-        		<authority>DHARMA</authority>
-        		<pubPlace>Lyon</pubPlace>
-        		<idno type="filename">DHARMA_DiplEdPamutusBuddhistPUSDOKTattwaKabuddhan</idno>
-        		<availability>
-        			<licence target="https://creativecommons.org/licenses/by/4.0/">
-        				<p>This work is licensed under the Creative Commons Attribution 4.0 Unported
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">PUSDOK T/XXI/7/DOKBUD Tatwa Kabuddhan</title>
+            <respStmt>
+               <resp>EpiDoc Encoding</resp>
+               <resp>intellectual authorship of edition</resp>
+               <persName ref="part:argr">
+                  <forename>Arlo</forename>
+                  <surname>Griffiths</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Lyon</pubPlace>
+            <idno type="filename">DHARMA_DiplEdPamutusBuddhistPUSDOKTattwaKabuddhan</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
         					Licence. To view a copy of the licence, visit
         					https://creativecommons.org/licenses/by/4.0/ or send a letter to
         					Creative Commons, 444 Castro Street, Suite 900, Mountain View,
         					California, 94041, USA.</p>
-        				<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
-        			</licence>
-        		</availability>
-        		<date from="2019" to="2025">2019-2025</date>
-        	</publicationStmt>
-            <sourceDesc>
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement>Leiden</settlement>
-                                <institution>University Library (UB)</institution>
-                                <repository>Lontar</repository>
-                                <idno>Or. 23732</idno>
-                            </msIdentifier>
-                            <msContents>
+                  <p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Leiden</settlement>
+                  <institution>University Library (UB)</institution>
+                  <repository>Lontar</repository>
+                  <idno>Or. 23732</idno>
+               </msIdentifier>
+               <msContents>
                                 <!-- the msContents isn't mandatory -->
-                                <msItem>
-                                    <author>Śāntarakṣita</author>
-                                    <title>Vipañcitārthā</title>
-                                </msItem>
-                            </msContents>
-                            <physDesc>
-                                <objectDesc>
+                  <msItem>
+                     <author>Śāntarakṣita</author>
+                     <title>Vipañcitārthā</title>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
                                     <!-- Here you can give a physical description of the manuscript in prose-->
-                                    <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
-                                </objectDesc>
-                            </physDesc>
-                            <history>
+                     <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                  </objectDesc>
+               </physDesc>
+               <history>
                                 <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
-                            </history>
-                        </msDesc>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
+                  <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
                 <!-- Part mandatory -->
-                <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-                <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-            </projectDesc>
-            <editorialDecl>
+            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
                 <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-                <correction>
-                    <p/>
-                </correction>
-                <normalization>
-                    <p/>
-                </normalization>
-                <punctuation>
-                    <p/>
-                </punctuation>
-            </editorialDecl>
-            <samplingDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+         </editorialDecl>
+         <samplingDecl>
                 <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-                <p/>
-            </samplingDecl>
-            
-            <!--schemaRef  will need to be added once a  official realase is done -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
-            <!-- Part mandatory -->
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
+            <p/>
+         </samplingDecl>
+         <!--schemaRef  will need to be added once a  official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
-                <language ident="san-Latn">Sanskrit, romanized</language>
-                <language ident="kaw-Latn">Old Javanese, romanized</language>
-                <language ident="tam-Latn">Tamil, romanized</language>
-                <language ident="kan-Latn">Kannada, romanized</language>
-                <language ident="tel-Latn">Telugu, romanized</language>
-            </langUsage>
-            <textClass>
-                <keywords>
+            <language ident="san-Latn">Sanskrit, romanized</language>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+            <language ident="tam-Latn">Tamil, romanized</language>
+            <language ident="kan-Latn">Kannada, romanized</language>
+            <language ident="tel-Latn">Telugu, romanized</language>
+         </langUsage>
+         <textClass>
+            <keywords>
                     <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-                    <term/>
-                    <!-- Ignore this element for the time being. -->
-                </keywords>
-            </textClass>
-        </profileDesc>
-    	<revisionDesc>
-    	    <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
-    		<change who="part:argr" when="2021-04-18" status="draft">started diplomatic edition</change>
-    	</revisionDesc>
-    </teiHeader>
-    <text xml:space="preserve" xml:lang="kaw-Latn">
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
+         <change who="part:argr" when="2021-04-18" status="draft">started diplomatic edition</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-Latn">
       <body>
 <ab>
 
 <!-- https://archive.org/details/tatwa-kabuddhan/mode/1up -->
-<pb n="1r"/><!-- blank outer page -->
+<pb n="1r" xml:id="pb001"/><!-- blank outer page -->
 
 <!-- https://archive.org/details/tatwa-kabuddhan/page/n1/mode/1up -->
-<pb n="1v"/><fw place="left" n="1v"><num value="1"><supplied reason="omitted">1</supplied></num></fw>
+<pb n="1v" xml:id="pb002"/><fw place="left" n="1v"><num value="1"><supplied reason="omitted">1</supplied></num></fw>
 <lb n="1v1"/>// 0 // Aum̐ Avighna:m astu na:mo buddha:ya: // [SH] pamutus saṁ tuha: kayatna:kna: de saṁ śevaka: ḍarmma, saṁ§
 <lb n="1v2"/>mahyun maluya: viśeṣa:, R̥ṅə:n· kva:jaraniṁ ḍar[SH]mma:, Amaja:ṅakna: ptaṁ, ta:sakeṅ ajji, Aṅhiṁ byakta: tuhutu
 <lb n="1v3" break="no"/>hu jugeka:, Apan iṁṅ ajji ṅaranya:, hanenucap·, [SH] hana tinuḍuḥ, hana: ginagvan·, hana: Inaku, maṅkana: sva
 <lb n="1v4" break="no"/>bha:vaniṅ haji, ṅa, kun<unclear>əṁ</unclear> saṁ putus·, tan maka:ne[SH]ka:, bhaṭa:ra: sidḍaviśeṣa: juga: sina:maya:, tan su§
 
 <!-- https://archive.org/details/tatwa-kabuddhan/page/n1/mode/1up -->
-<pb n="2r"/>
+<pb n="2r" xml:id="pb003"/>
 <lb n="2r1"/>vaL̥n ka<unclear>p</unclear>iriṁ<!-- variant from #L --> śri bhakti bhoja:na, śri, ṅa, ma:s pira[SH]k· ratna:, bhakti, ṅa, səmbaḥ sarbvapraṇamya:, bhojana
 <lb n="2r2"/>, ṅa, paṇa:bhoga: sama:haL̥p·, ha:hayva: <del>mmaṁ</del> [SH] ttha maṅkana:, yan tumarimaṁ śri, ya:ṅkən· dinol· vinli saṁ
 <lb n="2r3"/>hyaṅ ḍarmma:, yan tumarimaṁ bhakti, yankən abedakə[SH]n· viśeṣa: Ika:, yan tumarimaṁ bhojaṇna:, ya:ṅkə§
 <lb n="2r4" break="no"/>n· kneṁ bvat anaḍaḥ kavtvaniṁ sa:maya:, hayva§ [SH] ta: maṅkana:, L̥ñok· yan tan adravya: kahaR̥p·,
 
 <!-- https://archive.org/details/tatwa-kabuddhan/page/n2/mode/1up -->
-<pb n="2v"/><fw place="left" n="2v"><num value="2">2</num></fw>@@@@@
+<pb n="2v" xml:id="pb004"/><fw place="left" n="2v"><num value="2">2</num></fw>@@@@@
 <lb n="2v1"/>
 <lb n="2v2" break="no"/>
 <lb n="2v3" break="no"/>
 <lb n="2v4"/> 
 
 <!-- https://archive.org/details/tatwa-kabuddhan/page/n2/mode/1up -->
-<pb n="3r"/>
+<pb n="3r" xml:id="pb005"/>
 <lb n="3r1"/>
 <lb n="3r2" break="no"/>
 <lb n="3r3" break="no"/>
  <lb n="3r4"/> 
 
 <!-- DSCF8925.JPG -->
-<pb n="3v"/><fw place="left" n="3v"><num value="2">3</num></fw>
+<pb n="3v" xml:id="pb006"/><fw place="left" n="3v"><num value="2">3</num></fw>
 <lb n="3v1"/>
 <lb n="3v2" break="no"/>
 <lb n="3v3" break="no"/>
 <lb n="3v4"/> 
 
 <!-- DSCF8925.JPG -->
-<pb n="3r"/>
+<pb n="3r" xml:id="pb007"/>
 <lb n="3r1"/>
 <lb n="3r2" break="no"/>
 <lb n="3r3" break="no"/>
  <lb n="3r4"/> 
 
 <!-- DSCF8925.JPG -->
-<pb n="3v"/><fw place="left" n="3v"><num value="2">3</num></fw>
+<pb n="3v" xml:id="pb008"/><fw place="left" n="3v"><num value="2">3</num></fw>
 <lb n="3v1"/>
 <lb n="3v2" break="no"/>
 <lb n="3v3" break="no"/>
