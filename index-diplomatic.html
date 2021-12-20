@@ -115,13 +115,15 @@
     </nav>
     <div class="container">
       <div class="row">
-        <h1>
-          <a href="https://github.com/erc-dharma/tfd-nusantara-philology">Sunda-Java-Bali Diplomatic Editions</a>
-        </h1>
-            <img src="https://img.shields.io/badge/licence-CC--BY-green.svg" class="img-fluid" alt="CC-BY"/>
-            <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" class="img-fluid" alt="Open Science"/>
+        <div class="col">
+          <h1>
+            <a href="https://github.com/erc-dharma/tfd-nusantara-philology">Sunda-Java-Bali Diplomatic Editions</a>
+          </h1>
+            <p><img src="https://img.shields.io/badge/licence-CC--BY-green.svg" class="img-fluid" alt="CC-BY"/>
+            <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" class="img-fluid" alt="Open Science"/></p>
           <p>Manuscripts edited in XML TEI by ERC-DHARMA Task Force D.</p>
-            <p><span  class="badge badge-warning">Number of files <b id="lenght"></b> </span> </p>
+            <p><span class="badge badge-warning">Number of files <b id="lenght"></b> </span> </p>
+          </div>
           </div>
           <div class="row">
         <div class="col-6">
@@ -196,8 +198,8 @@
             document.getElementById('list-logical').innerHTML += `<li class="list-group-item"><a href="${fileName}">${fileDisplayName}</a></li>`;
           }
         }
-        //document.getElementById('list-physical').innerHTML = htmlString;
-        //document.getElementById('lenght').innerHTML = data.length% 2;
+        //.innerHTML = htmlString;
+        document.getElementById('lenght').innerHTML = data.length%2;
       }
       // Quick navigate to file if perfect match
       const navigateToFile = (data, filter = '') => {
