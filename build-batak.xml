@@ -38,45 +38,45 @@
     <fileset id="capitFiles" dir="updates/pass3" includes="*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
     <fileset id="diploFiles" dir="updates/pass4" includes="*.xml"/>
     <fileset id="externalFiles" dir="batak" includes="*_biblio.xml *_trans*.xml _com*.xml"/>
-    
+
     <!-- Step 1 — transliteration updates -->
     <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-transliterationUpdates.xsl" destdir="updates/pass1" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="batakFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
-    
+
     <!-- Step 2 – normalization of capitale-->
     <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-batakEditorialNormalization.xsl" destdir="updates/pass2" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="translitFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
-    
+
     <!-- Step 3 – adding the capitalization for sentences -->
     <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-capitalize.xsl" destdir="updates/pass3" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="normFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
-    
+
     <!-- Step 4 – deleting punctuation for diplomatic version -->
     <xslt force="true" style="project-documentation/EditorialStylesheets/tpl-deletingPunctuation.xsl" destdir="updates/pass4" extension=".xml" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="capitFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
-    
+
     <!-- Step 5 – Transformation HTML Diplomatic into a version without space – temporary solution-->
     <xslt style="project-documentation/EditorialStylesheets/tpl-deleteSpace.xsl" in="updates/pass4/DHARMA_DiplEdBatakLeidenOr3429.xml" out="updates/pass4/DHARMA_DiplEdBatakLeidenOr3429-noSpace.xml" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
-    
-    <!-- Transformation XML vers HTML - DIPLOMATIC -->
+
+    <!-- Transformation XML vers HTML - Physical -->
     <xslt force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
-        <param name="edition-type" expression="diplomatic"/>
+        <param name="edition-type" expression="physical"/>
         <param name="corpus-type" expression="batak"/>
         <fileset refid="diploFiles"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*).xml" to="\1-diplomatic.html"/>
     </xslt>
-    
+
     <!-- Transformation XML vers HTML - LOGICAL -->
     <xslt force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <param name="edition-type" expression="logical"/>
@@ -85,7 +85,7 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*).xml" to="\1-logical.html"/>
     </xslt>
-      
+
       <!-- Transformation for commentary, translation and bibliography -->
     <!--<xslt force="true" style="project-documentation/stylesheets/diplomaticEditions/start-diplEd.xsl" destdir="output/batak" extension=".html" useImplicitFileset="false" classpath="project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
         <param name="edition-type" expression="logical"/>
