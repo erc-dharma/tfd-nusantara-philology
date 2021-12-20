@@ -3,12 +3,12 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title type="main">Siksa Guru L 628</title>
-        <!-- fill in the subtitle if necessary -->
-        <!-- Possibility to add the <editor> tag:
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Siksa Guru L 628</title>
+            <!-- fill in the subtitle if necessary -->
+            <!-- Possibility to add the <editor> tag:
         <editor ref="part:ID">
 					<forename></forename>
 					<surname></surname>
@@ -18,293 +18,284 @@
 					<name></name>
 				</editor>
         -->
-        <respStmt>
+            <respStmt>
           <!-- repeat the respStmt when necessary -->
-          <resp>intellectual authorship of edition</resp>
-          <persName ref="part:adgu">
-            <name>Aditia Gunawan</name>
-          </persName>
-        </respStmt>
-      </titleStmt>
-       <publicationStmt>
-                <authority>DHARMA</authority>
-                <pubPlace>Paris</pubPlace>
-                <idno type="filename">DHARMA_DiplEdSiksaGuruPerpusnasL628</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by/4.0/">
-                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
-                    </licence>
-                </availability>
-                <date from="2019" to="2025">2019-2025</date>
-            </publicationStmt>
-      <sourceDesc>
-        <msDesc>
-          <msIdentifier>
-            <repository>Perpustakan Nasional Republik Indonesia, Jakarta</repository>
-            <idno>L 628</idno>
-          </msIdentifier>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>description of object/monument (likely to include <material/>
+               <resp>intellectual authorship of edition</resp>
+               <persName ref="part:adgu">
+                  <name>Aditia Gunawan</name>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Paris</pubPlace>
+            <idno type="filename">DHARMA_DiplEdSiksaGuruPerpusnasL628</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Perpustakan Nasional Republik Indonesia, Jakarta</repository>
+                  <idno>L 628</idno>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>description of object/monument (likely to include <material/>
                 and <objectType/> information, <dimensions/>, etc.)</support>
-              </supportDesc>
-              <layoutDesc>
-                <layout>description of text field/campus</layout>
-              </layoutDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote>description of letters, possibly including <height>letter-heights</height>
-              </handNote>
-            </handDesc>
-          </physDesc>
-          <history>
-            <origin>
-              <origPlace>Place of origin</origPlace>
-              <origDate>Date of origin</origDate>
-            </origin>
-            <provenance type="found"> Findspot and circumstances/context
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>description of text field/campus</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>description of letters, possibly including <height>letter-heights</height>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origPlace>Place of origin</origPlace>
+                     <origDate>Date of origin</origDate>
+                  </origin>
+                  <provenance type="found"> Findspot and circumstances/context
             </provenance>
-            <provenance type="observed">Modern location(s) (if different from repository, above)
+                  <provenance type="observed">Modern location(s) (if different from repository, above)
             </provenance>
-          </history>
-        </msDesc>
-      </sourceDesc> 
-    </fileDesc>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
       <encodingDesc>
-        <projectDesc>
+         <projectDesc>
           <!-- Part mandatory -->
-          <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-          <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-        </projectDesc>
-        <editorialDecl>
+            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
           <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-          <correction>
-            <p/>
-          </correction>
-          <normalization>
-            <p/>
-          </normalization>
-          <punctuation>
-            <p/>
-          </punctuation>
-        </editorialDecl>
-        <samplingDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+         </editorialDecl>
+         <samplingDecl>
           <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-          <p/>
-        </samplingDecl>
-        
-        <!--schemaRef  will need to be added once a  official realase is done -->
-        <variantEncoding method="parallel-segmentation" location="internal"/>
-        <!-- Part mandatory -->
+            <p/>
+         </samplingDecl>
+         <!--schemaRef  will need to be added once a  official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
-        <langUsage>
+         <langUsage>
           <!-- choose the language(s) of your text, remove the others -->
-          <language ident="san-Latn">Sanskrit, romanized</language>
-          <language ident="kaw-Latn">Old Javanese, romanized</language>
-          <language ident="osn-Latn">Old Sundanese, romanized</language>
-        </langUsage>
-        <textClass>
-          <keywords>
+            <language ident="san-Latn">Sanskrit, romanized</language>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+            <language ident="osn-Latn">Old Sundanese, romanized</language>
+         </langUsage>
+         <textClass>
+            <keywords>
             <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-            <term/>
-            <!-- Ignore this element for the time being. -->
-          </keywords>
-        </textClass>
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
       </profileDesc>
-  
-    <revisionDesc>
-            <change who="part:adgu" when="2021-08-17" status="draft">Initial encoding of the edition</change>
-        </revisionDesc>
-  </teiHeader>  
-  <text xml:space="preserve" xml:lang="kaw-Latn">
+      <revisionDesc>
+         <change who="part:adgu" when="2021-08-17" status="draft">Initial encoding of the edition</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-Latn">
     <body>
       <ab>
 
 
 <!--DSCF8475.JPG-->
-<pb n="2r"/>
-<lb n="2r1"/><gap reason="lost" unit="character" quantity="2"/>gu<gap reason="lost" unit="character" quantity="6"/>ta <unclear>kana ya pana</unclear>hayu Ulaḥta, sabḍanta, hambhəkta, Avas kapaṅguḥ <unclear>naka</unclear>hayu ta yan ma<unclear>ṁkana</unclear>, ya ta matanyan=ha<unclear>na</unclear> ra<lb 
-    n="2r2" break="no"/>basa kumva maḍyas· voy tənəmunya kasvambhavaniṅ janma, hala tu<space type="binding-hole"/>mәmu halanya, hayu tumәmu hayunya, maṁkana lvirniṁ janma, ndya drasṭa:nta<g type="filler"/>
+<pb n="2r" xml:id="pb001"/>
+<lb n="2r1"/><gap reason="lost" unit="character" quantity="2"/>gu<gap reason="lost" unit="character" quantity="6"/>ta <unclear>kana ya pana</unclear>hayu Ulaḥta, sabḍanta, hambhəkta, Avas kapaṅguḥ <unclear>naka</unclear>hayu ta yan ma<unclear>ṁkana</unclear>, ya ta matanyan=ha<unclear>na</unclear> ra<lb n="2r2" break="no"/>basa kumva maḍyas· voy tənəmunya kasvambhavaniṅ janma, hala tu<space type="binding-hole"/>mәmu halanya, hayu tumәmu hayunya, maṁkana lvirniṁ janma, ndya drasṭa:nta<g type="filler"/>
 <lb n="2r3"/>I riki kaḍadyanya, hala ḍeniṁ halanya, hayu ḍeniṁ hayunya, <space type="binding-hole"/>nihan· Upaḍyanta, hana <unclear>ya ma</unclear>nik kanarga ṅaranya, tan kinavruḥhan m
 <lb n="2r4" break="no"/>lyanya, tala prameyaniṁ rahayu, kaliṅanya Ikaṁ manikk anarga, lavan· manik ṣavesṭa ṭā, yogya karika Apusən <unclear>ta</unclear> riṁ gaṁ<unclear>sa</unclear>, tambhaga lavan· tima
 
 <!--DSCF8451.JPG-->
-<pb n="2v"/><fw place="left" n="2v"><num value="1">1</num></fw>
-<lb n="2v1"/>Aparan ta yogyanika, niyata n mijil i srinaka, lavan ḍanuḥnika, mapa pveka yogya paṅapusanta Irika manik· kanaga, paṅikətan Irikaṁ mani<lb 
-    n="2v2" break="no"/>k ṣarves·ṭā, nihan· liṁnya ri sa hyaṁ sastra, lpas cabuṁkuniṁ ceva<space type="binding-hole"/>Aḍika Udika, taheṁ tutur ta tanagəṁ tapa devaniṁ gadyate, hapa<g type="filler"/>
+<pb n="2v" xml:id="pb002"/><fw place="left" n="2v"><num value="1">1</num></fw>
+<lb n="2v1"/>Aparan ta yogyanika, niyata n mijil i srinaka, lavan ḍanuḥnika, mapa pveka yogya paṅapusanta Irika manik· kanaga, paṅikətan Irikaṁ mani<lb n="2v2" break="no"/>k ṣarves·ṭā, nihan· liṁnya ri sa hyaṁ sastra, lpas cabuṁkuniṁ ceva<space type="binding-hole"/>Aḍika Udika, taheṁ tutur ta tanagəṁ tapa devaniṁ gadyate, hapa<g type="filler"/>
 <lb n="2v3"/>sinaṅguḥ rambut· lpas· ṅa rambut· lpas· ṅaranya, vulu pasagi, ṅa, hana vuṁkunuṁ ṅaranya<space type="binding-hole"/> hana Uḍika, hana tater, hana sorasa ṅaranya, Ika ta kabeḥ<g type="filler"/> 
-<lb n="2v4"/><gap reason="lost" unit="character" quantity="18"/>narga, pa<unclear>ṅ</unclear>ikәtan· Irikaṁ manik ṣarv<unclear>esṭa</unclear>, taham piḥ ya <unclear>sәca r</unclear>iṁ <unclear>gaṅaṁ</unclear> tambaga lava<!-- DSCF8452.JPG--><pb n="3r"/><lb 
-    n="3r1" break="no"/>n tamaḥ, Aparan· ta yvagyanika, paṅapu<unclear>santa Iraka manak a</unclear>narga, paṅikətan·ta <unclear>I</unclear>rikaṁ manik ṣavesṭa, nihan· lvir<lb 
-        n="3r2" break="no"/>nya rikaṁ saṁ hyaṁ sastra, lpas cavuṁkunuṁ ceva, Aḍikara di<g type="filler"/><space type="binding-hole"/>ka, tataitatur tatyatuṁgəṁnuyogunika, hana ya ma<lb 
-    n="3r3" break="no"/>s kanaka savtaṅoṁ ṅaranya, mas· kanaka jati marupa<space type="binding-hole"/> sakati mulyanya vr<unclear>uḥ</unclear>nya, hinapisan pituṅ apitu, ma<g type="filler"/>
+<lb n="2v4"/><gap reason="lost" unit="character" quantity="18"/>narga, pa<unclear>ṅ</unclear>ikәtan· Irikaṁ manik ṣarv<unclear>esṭa</unclear>, taham piḥ ya <unclear>sәca r</unclear>iṁ <unclear>gaṅaṁ</unclear> tambaga lava<!-- DSCF8452.JPG--><pb n="3r" xml:id="pb003"/><lb n="3r1" break="no"/>n tamaḥ, Aparan· ta yvagyanika, paṅapu<unclear>santa Iraka manak a</unclear>narga, paṅikətan·ta <unclear>I</unclear>rikaṁ manik ṣavesṭa, nihan· lvir<lb n="3r2" break="no"/>nya rikaṁ saṁ hyaṁ sastra, lpas cavuṁkunuṁ ceva, Aḍikara di<g type="filler"/><space type="binding-hole"/>ka, tataitatur tatyatuṁgəṁnuyogunika, hana ya ma<lb n="3r3" break="no"/>s kanaka savtaṅoṁ ṅaranya, mas· kanaka jati marupa<space type="binding-hole"/> sakati mulyanya vr<unclear>uḥ</unclear>nya, hinapisan pituṅ apitu, ma<g type="filler"/>
 <lb n="3r4" break="no"/>təmahan· ta ya satahil· I vat<unclear>u</unclear> bratnyanya, ya teka tuṁgəṁ, ganaləm·bak· tan L̥viḥ Ani<!--DSCF8476.JPG-->
-<pb n="3v"/><fw place="left" n="3v"><num value="2">2</num></fw><lb 
-    n="3v1" break="no"/>napi muvaḥ hapan ṣamaṅkana juga, pinakadiniṁ mas kabeḥ, nḍaḥ ya teka yogya rahayu paṅapusanta Irikaṁ manik·kanarga, paṅikətanta Irikaṁ manik ṣa«<lb 
-        n="3v2" break="no"/>vesṭa, ya ta kapusan ḍeniṁ gaṅśa tambhaga lavan timaḥ, tan mijilni srini<g type="filler"/><space type="binding-hole"/>ka, lavan <unclear>ḍa</unclear>nuḥnika, paran ta ruktinika, salaḥ nija, salaḥ kama:, sala
+<pb n="3v" xml:id="pb004"/><fw place="left" n="3v"><num value="2">2</num></fw><lb n="3v1" break="no"/>napi muvaḥ hapan ṣamaṅkana juga, pinakadiniṁ mas kabeḥ, nḍaḥ ya teka yogya rahayu paṅapusanta Irikaṁ manik·kanarga, paṅikətanta Irikaṁ manik ṣa«<lb n="3v2" break="no"/>vesṭa, ya ta kapusan ḍeniṁ gaṅśa tambhaga lavan timaḥ, tan mijilni srini<g type="filler"/><space type="binding-hole"/>ka, lavan <unclear>ḍa</unclear>nuḥnika, paran ta ruktinika, salaḥ nija, salaḥ kama:, sala
 <lb n="3v3"/>ḥ sobava ṅaranika, Iva maṅkana ta saṁ hyaṁ ḍarmma viseṣa, sira<space type="binding-hole"/> manikk anarga, ṅuniveḥ Avak·ta, yeka manik ṣarvesṭa ṅaranya
 <lb n="3v4"/>n<unclear>ḍa</unclear>ḥ ta yaṁkən <unclear>ga</unclear>ṁsa tam<unclear>ba</unclear>ga lavan <unclear>t</unclear>imaḥ, <unclear>I</unclear>kaṁ tan· <gap reason="lost" unit="character" quantity="6"/> <unclear>kətaka Irikaṁ</unclear> manik·k anarga, paṅikətanta Irikaṁ manik ṣarvesṭa, nihan ya
  
 
 
 <!--DSCF8454.JPG-->
-<pb n="4v"/><fw place="left" n="4v"><num value="3">3</num></fw>
+<pb n="4v" xml:id="pb005"/><fw place="left" n="4v"><num value="3">3</num></fw>
 <lb n="4v1"/>kanaka santaṅo ṅaranya, <unclear>U</unclear>laḥ rahayu, sabda rahayu, Ambhek· rahayu<!-- ha and ya stick as a ligature-->, harakṣakən i saṁ hyaṁ ḍarmma, nihan mataṁhyan· brata ya mas <gap reason="lost" unit="character" quantity="4"/>
 <lb n="4v2"/>ṅaranya, li saṁ panḍita, tri ṅaraniṁ təlu suḍa ta ya, trikaya man<unclear>ḍa</unclear>lə<space type="binding-hole"/>m· Itityatəm· nihan· trikaya li saṁ panḍita, nihan· təmbhəynya<g type="filler"/>
 <lb n="4v3"/>siḥ saṁ paṇḍi<unclear>ta</unclear> <unclear>r</unclear>i <unclear>sa</unclear>ṁ <unclear>sevaka ḍa</unclear>rmma, paris<unclear>u</unclear>ḍa ta riṁ Ambhək· rahayu<g type="filler"/><space type="binding-hole"/> Usən·, hayva ta səlapan· ambhək magəL̥ḥ, nir<!-- layar unik-->maL̥m· hraḍayəmcitəm·
 <lb n="4v4" break="no"/>» <unclear>naḥ pahalilaṁ taṁ manaḥ mət· tə</unclear> <gap reason="lost" unit="character" quantity="8"/> bek<unclear>sa</unclear> lakṣanam<unclear>·</unclear> nihan· lakṣananiku hayva trasna <unclear>r</unclear>iṁ <unclear>h</unclear>ulun· juga byakta taṁ ra
           
 <!--DSCF8479.JPG-->
-<pb n="5r"/> 
+<pb n="5r" xml:id="pb006"/> 
 <lb n="5r1" break="no"/>mubata pinəgatan·, ya tan pəgati, ki<gap reason="lost" unit="character" quantity="2"/> malaṁ kva hana, ya tika parisuda, tumpalakəna kunaṁ <unclear>pa</unclear>takna ya ta masri tri masəkar vañva ṅaranya, makana kita ma«
 <lb n="5r2" break="no"/>ṣsevaka ri saṁ paṇdita, hayva ta kita gumaveyakeəna guru talapakan·, ja<space type="binding-hole"/>gat upadrava, batakuta riṁ sira, bak·tyanuṁkul ta kita ri saṁ guru, gavayakna taṁ ka
 <lb n="5r3" break="no"/><unclear>su</unclear>prana, ri saṁ guru, təka ri saṁ panḍita, ḍataṁ ta ri kasaḍyanya, maṅkana ta kitha<space type="binding-hole"/> hulun· ri saṁ panḍita, ṅuniveḥ ri saṁ prabu, tan gavayakna prabu dohaka, də
 <lb n="5r4" break="no"/>ndana vinigraha tatuta ri sira, marapvan ta kitana kajval pati bisama, byaktya ta kita ri saṁ prabu, mataṁṅyan· təka ri kasadyanya, maṅkana ta kita rama <gap reason="lost" unit="character" quantity="2"/>
 
 <!-- DSCF8456.JPG-->
-<pb n="5v"/><fw place="left" n="5v"><num value="4">4</num></fw>
+<pb n="5v" xml:id="pb007"/><fw place="left" n="5v"><num value="4">4</num></fw>
 <lb n="5v1"/>gusti, patiḥ ri banva kuni darmma tulajñanani kadi kita, hayva ta kita t<unclear>i</unclear>mpaṁ svara ri byavaharaḥ, tan paṅivakən təṅən·, riṁ guna, dosa tan· yukt<unclear>a pu</unclear>
 <lb n="5v2"/>riḥniṁ vvaṁ matuha, hujar saṁ hyaṁ Agama, hayva tutuknan·<add place="below">ta</add>, ya ta mataṁ<space type="binding-hole"/>hyan katkan· trikaya man·ḍaL̥m cət:əm·, nihan ṣaṁ hyaṁ trikaya
 <lb n="5v3"/>manḍala parisuda ṅaranya, kayatnakna saṁ sevaka ḍarmma, ya təmbhə<space type="binding-hole"/>ynya siḥ saṁ paṇḍita, ri saṁ sevaka ḍarmma, ṅa,<g type="symbol"/>, Ika hana ta kapiḍo
 <lb n="5v4"/>nya siḥ saṁ pandita, ri saṁ sevaka ḍar<unclear>mma,</unclear> ya dasasilla <unclear>ṅa</unclear>ranya, ndya ya nihan·, sotra, təvəḥk·, cak·suḥ, jəho, grana, vak·
 
 <!--DSCF8478.JPG-->
-<pb n="6r"/>
+<pb n="6r" xml:id="pb008"/>
 <lb n="6r1"/>pani, pada, payu, pastra, Ini Ṛṅəkəna saṁ sevaka ḍarmma, sotra ṅaraniṁ taliṅa, Apa visayaniṁ taliṅa, pinaka dvaraniṁ maṁṚṅə Ikaṁ sabḍa hala hayu, ṅaṚṅə ki
 <lb n="6r2"/>sabḍa manis arum·, Enak manaḥta, maṁṚṅə pva kita sabḍa mahala, sakṣa<space type="binding-hole"/>k tan ahidəpən·, dosanika, tan paniḍakən ka:rta hayu riṁ saṁ guru, ya ta kaya<g type="filler"/>
 <lb n="6r3" break="no"/>tna saṁ śevaka ḍarmma, tuli maṁṚṅə haji saṁ <add place="below">v</add>iku ø tvək· ṅaraniṁ kulit·, A<space type="binding-hole"/>pa visayaniṁ kulit·, ṅarasa ṅahiḍəp panas tis·, Ikaṁ maṁkana kaliṅanya, <g type="filler"/>
 <lb n="6r4"/>ya priḥ pəgəṅən· juga, Ikaṁ visaya mijil ṣuka riṁ kulit· ø cakṣuḥ ṅaraniṁ mata, Apa visayaniṁ mata, Anon ta ya hala hayu, A<gap reason="lost" unit="character" quantity="1"/>e<gap reason="lost" unit="character" quantity="8"/>
 
 <!--DSCF8455.JPG-->
-<pb n="6v"/><fw place="left" n="6v"><num value="5">5</num></fw>
+<pb n="6v" xml:id="pb009"/><fw place="left" n="6v"><num value="5">5</num></fw>
 <lb n="6v1" break="no"/>pa Ika laveḥ suka, pinaka panon ta riṁ Ulaḥ rahayu, laṁsar kita denya, ya yanapa Ika, paveḥ duka, na hamulataṁ mas· ra<unclear>sa</unclear> <gap reason="lost" unit="character" quantity="5"/>ma <gap reason="lost" unit="character" quantity="1"/>le<gap reason="lost" unit="character" quantity="2"/>
 <lb n="6v2" break="no"/>ka lumakvata kita mareṁ sabaAn·, Anon mara kita <del rend="ui">A</del> voṁ ce<space type="binding-hole"/>da, vuḍug·, tugəl· təlihən· buvaya, tikəl· kəjəṁ kəkəḥ, salvir
 <lb n="6v3" break="no"/>niṁ bimarupahaneṁ rat·, ṅuniveḥ buta tuliniṁ panon hayva peda<space type="binding-hole"/> kunəṁ yan kita Anon· voṁ cekṣara, hayva ta kita maṅkana, cənḍaparihu
 <lb n="6v4" break="no"/>ra ṅaranya, Apan· tan· kinavruḥhan:ikiṁniṅ karma, ṅuniveḥ vvaṁ duka de(n)ika, ya ta kayatnakna saṁ śevaka ḍarmma 0, jəhva ṅaraniṁ liḍaḥ, Apa visa
 
 <!--DSCF8458.JPG-->
-<pb n="7r"/>
+<pb n="7r" xml:id="pb010"/>
 <lb n="7r1" break="no"/>yaniṁ liḍaḥ, pinaka paṁgos<unclear>ti</unclear>ni sadasa, sadasa ṅaranya, lavana, kaduka, tritta, Aməla, kasaya, madura, ya sinaṅgu<gap reason="lost" unit="character" quantity="7"/>
 <lb n="7r2" break="no"/>·, kaduka laḍa, trətta pahit·, Aməla hasəm·, kasaya vuduk· <space type="binding-hole"/> madura manis·, nihan sinəṁguḥ sadasa ṅara<unclear>n</unclear><gap reason="lost" unit="character" quantity="7"/>
 <lb n="7r3" break="no"/>ka denta, jə:nək· ri saṁ kita denya, hayva ta maṅkana, takasa<space type="binding-hole"/>n ḍe vniṁ visayanya, ya ta ketunta tu<unclear>maṅga</unclear><gap reason="lost" unit="character" quantity="7"/>
 <lb n="7r4"/><unclear>rasa I</unclear> kaṁ trikaya maṇḍala parisuda yan maṁkana, 0 grana ṅaraniṁṅ iruṁ, hapa visayaniṁṅ iruṁ, pinaka paṅa<unclear>maṁ ta ga</unclear><gap reason="lost" unit="character" quantity="7"/>
 
 <!--DSCF8481.JPG-->
-<pb n="7v"/><fw place="left" n="7v"><num value="6">6</num></fw>
+<pb n="7v" xml:id="pb011"/><fw place="left" n="7v"><num value="6">6</num></fw>
 <lb n="7v1"/>ṅaranya vaṅi, Asurabi ṅaranya Abo lavan hapək·, Asadarana ṅaranya haṅit·, mataṅyan· tri prabe<gap reason="lost" unit="character" quantity="10"/>
 <lb n="7v2" break="no"/>ṇḍa vaṅi, Enak manaḥta, haṁbhuṁ sokita bo pək·, tan e<space type="binding-hole"/>nak manaḥta, ya mətu krodanta, <gap reason="lost" unit="character" quantity="10"/>
 <lb n="7v3" break="no"/>kti, tan karasa Ikaṁ trikaya paramarta, ya ta mataṅyan prihən·»<space type="binding-hole"/>kayatnakna Ikaṁ visayaniṁṅ iruṁ, de sa<gap reason="lost" unit="character" quantity="9"/>
 <lb n="7v4" break="no"/>raniṁ sabda, hapa visayani sabda, tan· tutakəna sakvejarta, vak parasya capala Astarika ḍurbala<gap reason="lost" unit="character" quantity="9"/>
 
 <!--DSCF8480.JPG-->
-<pb n="8r"/>
+<pb n="8r" xml:id="pb012"/>
 <lb n="8r1"/>lokapara, kunaṁ hujar tan asabda manas arum·, vilat manohara, salvirniṁ madadyakən kaviratyanya, mvaṁ kaṚṅə deniṁ <gap reason="lost" unit="character" quantity="11"/>
 <lb n="8r2"/>makṣa sabda ø pani ṅaraniṁ taṅan·, Apa visayaniṁ taṅan·, masaguli<space type="binding-hole"/>niṁ taṅan matalakup·, yan paṅucap· lava<gap reason="lost" unit="character" quantity="11"/>
 <lb n="8r3" break="no"/>tuṅgalan· van ṣaṁ guru, ṅuniveḥ tan panuduḥha samuka saṁ guru, tan ru<space type="binding-hole"/>bakaḥ yan gaməlan taḍah saṁ guru, Atava <gap reason="lost" unit="character" quantity="11"/>
 <lb n="8r4" break="no"/>niveḥ riṁ rat kabeḥ, kaliṁṅanya hayva paracidra, yan hana kahyunya, hana sipat ri Aji sa viku, niha<gap reason="lost" unit="character" quantity="11"/>
 
 <!--DSCF8457.JPG-->
-<pb n="8v"/><fw place="left" n="8v"><num value="7">7</num></fw>
+<pb n="8v" xml:id="pb013"/><fw place="left" n="8v"><num value="7">7</num></fw>
 <lb n="8v1"/>ṅaraniṁ suku, Apa visayaniṁ suku, lumaṅku ya sisaparanta, yan maṅalor maṁṅiḍul· maṅulvan· maṅetan·, pa<gap reason="lost" unit="character" quantity="5"/>
 <lb n="8v2" break="no"/>nta maṁrakṣa suku, tan padədəlan·, tan paraṁkakan·, tan pamaṁgaA<space type="binding-hole"/>n·, tan pamire-mire, tan pakilun·, <gap reason="lost" unit="character" quantity="5"/>
 <lb n="8v3"/>, riṁ parabyaga ta kabeḥ, nihan ta deyanta rumakṣa suku 0 payu ṅa<space type="binding-hole"/>raniṁ L̥t·, Apa visayani L̥t·, Uta<gap reason="lost" unit="character" quantity="5"/>
 <lb n="8v4" break="no"/>nta rumakṣa silit·, tan pahətut· riṁ haṚpən ṣaṁ guru, jana tanpahṚpa voṁ yan aṅisiṁ, tan takvan· d<add place="below">e</add> saṁ guru <gap reason="lost" unit="character" quantity="5"/>
 
 <!--DSCF8482.JPG-->
-<pb n="9r"/>
+<pb n="9r" xml:id="pb014"/>
 <lb n="9r1" break="no"/>ḥ, nihan ḍeyanta rumakṣa silit· ø paṣtra ṅaraniṁ plat·, Apa visayaniṁ plat·, hanaṇda Aṅəyəḥ, nihan kaliṅanya, tan paṁhaṚpakna vvaṁ maṅəyəḥ ṅuniveḥ saṁ sujanma, la
 <lb n="9r2" break="no"/>naṁ vaḍon·, hulun hadyan· kanisṭa, madyamotama, hapan· Aṁ<space type="binding-hole"/>hiṁ Ika Agəṁ marucan pamətu papa rikaṁ vvaṁ, hapa pinaka papanya, hadnona ma
 <lb n="9r3"/>mara kita vvaṁ dinval·, ḍvasanya ta stri saṁgrahanya, mitradvaha, mupaṁ ra<space type="binding-hole"/>bi laraṅan· Aglis· Avuk ṣiki, tan ahayu yan maṁkana, kayatnakna saṁ sevaka
 <lb n="9r4"/>ḍarmma, //ø// hana kapiṁtiganya siḥ saṁ panḍita, ri saṁ sevaka ḍarmma, nihan pañ·ca sikṣa ṅaranya, nədya ya nihan·<gap reason="lost" unit="character" quantity="5"/>
 
 <!--DSCF8459.JPG-->
-<pb n="9v"/><fw place="left" n="9v"><num value="8">8</num></fw>
+<pb n="9v" xml:id="pb015"/><fw place="left" n="9v"><num value="8">8</num></fw>
 <lb n="9v1"/>maharalagavəm·, hapramaḍasvat/e\, niyama parikitataḥ, hakroḍa: ṅaranya, tan ḍadi Ika saṁ sevaka ḍarmma, metonakən· kroḍa:nya, I A
 <lb n="9v2" break="no"/>Ṛpən ṣaṁ guru, ṅuniveḥ I parasup· jakma keb<add place="below">e</add>han·, gurusrusa<g type="filler"/><space type="binding-hole"/> ṅaranya, bakotyanuṁkulan ta kita riṁ saṁ guru, tan maḍoḥ ri suku saṁ ma<g type="filler"/>
 <lb n="9v3"/>tuha, maṁkana yan hana pakon ṣaṁ guru, parisuḍa ta kunaṁ, ta ya<g type="filler"/><space type="binding-hole"/>tnakna ta trikaya paramarta, ya Ulaḥ rahayu, sabda rahayu, Ambhək·<g type="filler"/>
 <lb n="9v4"/>¶ <unclear>rahayu</unclear>hadoh apaṚk· kayat<unclear>na</unclear>kna, Ikaṁ trikaya man<unclear>da</unclear>la parisada, m<unclear>v</unclear>aṁ dasaśila, pañcasikṣa, kasrasuniṁ saṁ guru ṅaranya, sucya
 
 <!--DSCF8483.JPG-->
-<pb n="10r"/>
+<pb n="10r" xml:id="pb016"/>
 <lb n="10r1"/>masihan taṅan ajña kamnaṁniṁ magaməkan taḍaḥ saṁ guru, ṅuniveḥ drabya hya saṁ panḍita, haralagavə sigra ta kita vi/da\naḥ pahagəṁ təpəl·, humarak ṣagrana
 <lb n="10r2"/>daḥ hayva ta kita maṁkana, ya kukṣipura ṅaranya, Umapa pva «<space type="binding-hole"/>deniṁ manadaḥ, kaliṅanya ta:, ya ta prana sadarana juga, Upaji
 <lb n="10r3"/>vananiṁ Umaṅən-aṅən ṣaṁ hyaṁ hayu, nihan pañca sikṣa ṅara — — nya, kayatnakna saṁ sevaka darmma ø // ø nihan kapiṁpatnya<g type="filler"/>
 <lb n="10r4"/>siḥ saṁ panḍita, ri saṁ śevaka ḍarmma, Ini darmmasikṣa ṅaranya, nḍya ya nihan silokanya:, halekyama:masitən·gitəm (hajrə)
 
 <!--DSCF8460.JPG-->
-<pb n="10v"/><fw place="left" n="10v"><num value="9">9</num></fw>
+<pb n="10v" xml:id="pb017"/><fw place="left" n="10v"><num value="9">9</num></fw>
 <lb n="10v1" break="no"/>mbhanəm· kadaranəm· sudəm palarahasəm· karoteḥ gurumu(k)e ṅaranya, kaliṅanya halekyam· ṅaranya, hayva nurut·nu(rat)·
 <lb n="10v2" break="no"/>¶ L̥maḥ, hayva nurat saL̥, ṅuniveḥ sariranta, yan paseva<g type="filler"/><space type="binding-hole"/>ka ri sa(ṁ) guru, hapan hana vvaṁ n(u)lakṣana, hagləm· tu<del>ma</del> ləspupunya, ya
 <lb n="10v3"/>paṅucap· lavan saguru, hasitəm· tan paguyu guyuna ri sanḍ(i)<space type="binding-hole"/>sa guru, ṅuniveḥ habañval·, gətəm· tan pataṅiduṁ, danya paməkənka<g type="filler"/>
 <lb n="10v4"/>vijakṣananya, tan akon· de saṁ guru, jrambhanəm·, tan paṅ(u)capapa va(Ṛ)g·, riṁ haṚpən ṣaṁ guru, kaḍa(ra)nəm·, tan paṅomka, haka
 
 <!--DSCF8484.JPG-->
-<pb n="11r"/>
+<pb n="11r" xml:id="pb018"/>
 <lb n="11r1" break="no"/>ḍaranəm·, tan paṅulet· haṚpən ṣaṁ guru, sudəm palarahasyəm·, tan paṅucapa:kar ri haṚpən ṣaṁ guru, ṅuniveḥ mikonokən na:maniṁ mañal·
 <lb n="11r2" break="no"/> », hila-hila maṁkana, karoteḥ gurumuke ṅaranya, nihan tan· <space type="binding-hole"/>linanya, tan magavayakna saṁ śevaka darmma, nihan ta ḍarmmasikṣa ṅaranya, se
 <lb n="11r3" break="no"/>lakacanəm· suravile, paṁnadantaga, svaḍyu cava, maprayaṣamagama<space type="binding-hole"/> cava maso ceva, vibukramavidu cava nevayude, Udatayudena ta
 <lb n="11r4" break="no"/><del>m</del>L̥m· suparigrahastaḥ, kaliṅanya, selajanəm tan pacləka riṁ haṚpən ṣaṁ guru, ri haṚpən· Astri laraṅan·, suravile, tan pakrela«
 
 <!--DSCF8461.JPG-->
-<pb n="11v"/><fw place="left" n="11v"><num value="10">10</num></fw>
+<pb n="11v" xml:id="pb019"/><fw place="left" n="11v"><num value="10">10</num></fw>
 <lb n="11v1" break="no"/>krela yan paṅucap·, ṅuniveḥ yan pasila lepana kan pavḍəka:n· ya baturan ṣaṁ guru, ṅunive.g mijil· vala:hanya panti, hasvegatakunəṁ dentaga, tan pasu
 <lb n="11v2" break="no"/>sur yan paṅucap lavan ṣaṁ guru, hadyusta, tan pahyas niṁ memen· hagədiṁ keñca<g type="filler"/><space type="binding-hole"/>ka, harohataḥ tan pavaja savilaḥ, pṛyasamagama, tan padəL̥han· lavan·
 <lb n="11v3"/>stri laraṅan·, ṅuniveḥ hastri saṁ guru, mava Ivak masa dagiṁ tan paṅabyasa <space type="binding-hole"/>paṅani:num·, riṁ haṚpən ṣaṁ guru, ya Ika sinaṁguḥ ḍarmma sikṣa ṅaranya, kayatna
 <lb n="11v4" break="no"/>kna saṁ sevaka ḍarmma //0// nihan ta kapiṁ limanya siḥ saṁ pandita, riṁ saṁ sevaka ḍarmma, ndya ya nihan·, guru talpaka pravakasyami, mahayanəm· hya tasṭatidur, bagehina
 
 <!--DSCF8485.JPG-->
-<pb n="12r"/>
+<pb n="12r" xml:id="pb020"/>
 <lb n="12r1" break="no"/>saḥ bekṣyaḥ byapa panamyaśet·, Ini guru talapaka pravakṣyami, Umuccapan ṣaṁ hyaṁ hayu, mahayanəm· hyatinṭanti, hatisaya saṁ mahadika, svegata mahesvara, hana
 <lb n="12r2"/>hulun hadyan kanisṭa madyamotama, la/naṁ\ vaḍon·, ya vata: tan ṣaḍyanya, <space type="binding-hole"/>saṁ hyaṁ hayu, vinaraḥ ya riṁ guru talapaka rumuhun·, hapa dumeḥnya maṁkana, guru tan maṁ
 <lb n="12r3" break="no"/>gave durbagan· yanapa Ika, ya tinutaknanikaṁ guru talapaka rumuhyana <space type="binding-hole"/>sakabyasaḥ pranamyaṣetha tlasa pveki miumuptakənikaṁ guru talapaka ri kita
 <lb n="12r4"/>pranamya ya ta, səmbahan· kna səsəmbahəna ṅaranya, pituhunta liṅanya, hana mahita vakyam ahi, siṁha(rapañagrahate gara) saṁgasanəm· pratəm· grahate nama
 
 <!--DSCF8462.JPG-->
-<pb n="12v"/><fw place="left" n="12v"><num value="11">11</num></fw>
+<pb n="12v" xml:id="pb021"/><fw place="left" n="12v"><num value="11">11</num></fw>
 <lb n="12v1" break="no"/>nəmate, Apanamatan·, kapaṅguḥ namaniṁ guru, hinavakyam·, tan paṅucap ṣaṁ hya(ṁ) hayu, (tanupata samatuha, saharupañca: graha), kato<g type="filler"/>
 <lb n="12v2" break="no"/>n tan pinikvenakən·, kroda riṁ saṁ guru, tan ḍadi maṁkana, <space type="binding-hole"/>laṁguruśaṁgasanəm· praptatəm·, sumigaha, yan· kapapag saṁ guru
 <lb n="12v3"/>ri havan·, Anehapatuha riṁ śudesa kunaṁ, səmbahəna ta saṁ <space type="binding-hole"/>guru, mvaṁ tan· gləs movus·riṁ saṁ guru, ṅuniveḥ tan paruhunn ala
 <lb n="12v4" break="no"/>ku saṁ g(u)r(u), tan· vurugan· yan paḍyas·, <del>ya</del> tan panapak· maya saṁ guru, tan paṅəban saṁ guru, tan apaṅinuman· tvak ṣaṁ guru, tan pa
 
 <!--DSCF8486.JPG-->
-<pb n="13r"/>
+<pb n="13r" xml:id="pb022"/>
 <lb n="13r1" break="no"/>ṅambyan· tadahən ṣaṁ guru, tan paṅaṁgve Agəm:agəman śaṁ guru, ya tan kinven·, len śikarika, tan barya-baryan· ri Astri saṁ guru, yanak śaṅ guru, rama tuha saṁ
 <lb n="13r2"/>guru, pesṭi saṁ guru, kapvanakan ṣaṁ guru, tagon-tagon śaṁ guru, taḍi §<space type="binding-hole"/>nan saṁ guru, nihan śinaṅguḥ guru talapaka ṅaranya, kayatnakna saṁ śevaka ḍarmma
 <lb n="13r3"/> // Ø hana kapiṁnəm·nya siḥ saṁ paṇḍita, riṁ saṁ sevaka ḍarmma, nḍya ya§<space type="binding-hole"/><gap reason="lost" unit="character" quantity="1"/> yan saṁ hyaṁ jagat upadrava ṅaranya, nḍya ya nihan hala tuməmu halanya,
 <lb n="13r4"/>hayu tuməmu hayunya, vilutuməmu viplut·nya, bənər tuməmu bənərnya, suka tuməmu sukanya, duka tuməmu dukanya, Umapa kari kaṁ suka dukanikaṁ rat{1x}« 
 
 <!--DSCF8463.JPG-->
-<pb n="13v"/><fw place="left" n="13v"><num value="12">12</num></fw>
+<pb n="13v" xml:id="pb023"/><fw place="left" n="13v"><num value="12">12</num></fw>
 <lb n="13v1" break="no"/>beḥ, yan· kva kita, ta hana vaneḥ, saṁ hyaṁ trikaya parisuda, kaliṅanya, Apan saṁka ri Ulaḥ sabḍa lavan· Ambək saṁ kaniya, suka duka tikariya,
 <lb n="13v2" break="no"/>vruḥ pve kita saṁkaniṁ sila mahala, saṁkanikaṁ Upadrava mataṅyan sila ra<space type="binding-hole"/><unclear>ha</unclear>yu, ya ta gavəyakna ta, tan tasyan tan kopadrava, nihan ta jegat u
 <lb n="13v3" break="no"/>:padrava ṅaranya, kayatnakna saṁ sevaka darmma //0, hana§<space type="binding-hole"/> ya kapiṁpitunya siḥ saṁ panḍita, ri saṁ śevaka darmma, saṁ hyaṁ cadusakti
 <lb n="13v4"/>saṁ paṇḍita ṅaranya, Apa karikṣa matanyan· cadasak·ti ṅaranya, pat sakti ṅaranya, bisanya, ya ta pinaka sañjata saṁ paṇḍita,§
 
 <!--DSCF8487.JPG-->
-<pb n="14r"/>
+<pb n="14r" xml:id="pb024"/>
 <lb n="14r1"/>nḍya ya nihan·, cakra jalakunaṁ, cakra jalapakṣa, cakra sambhirana, cakra taraṁgabahu, nihan· lvirnya, hanu paṅupadrava saṁ paṇḍita, I
 <lb n="14r2" break="no"/>rikaṁ saṁ manadana, migəl saṁ manadana riṁ patala, jalakunaṁ, paṅupad<space type="binding-hole"/>rava saṁ paṇḍita, di vkasniṁ pata:la, di saṁ manadana, I sor patniṁ manada
 <lb n="14r3" break="no"/>na, ri pala, huməgəl ta ya riṁ tasik ṣuməḶm· riṁ pusə<del rend="ui">m</del>ran masagara<space type="binding-hole"/>ya jalapakṣa paṅupadrava saṁ paṇḍita, Irikaṁ samudra patnika saṁ manadana
 <lb n="14r4"/>saka ri samudra, Uməgil ta ya riṁ tlor kidul· kulven· vetan·, umagal ta ya ri <unclear>vasiṁṅa</unclear>ruhur, ya cakra taraṅgabahu paṅupadrava <unclear>saṁ paṇḍita ri</unclear> 
 
 <!--DSCF8464.JPG-->
-<pb n="14v"/><fw place="left" n="14v"><num value="13">13</num></fw>
+<pb n="14v" xml:id="pb025"/><fw place="left" n="14v"><num value="13">13</num></fw>
 <lb n="14v1"/>vkasniṁ I ruhur, syuḥ gṣəṁ kapravasa Ikaṁ vkasniṁ I ruhur, deniṁ sañjata, saṁ paṇḍita, n(i)han· lvi(r)nika saṁ hyaṁ cadusakti, pinaka(sañjata sa paṇḍita,)
 <lb n="14v2"/>pəpə<subst><del>t</del><add place="below">k</add></subst> pənuḥ, Ikaṁ buvana, di desantara de sañjata, kaliṅanya ya<space type="binding-hole"/>tna molaḥ, yatnañabḍa, yatna mambək·, ya ta mataṅyan· tan kopa
 <lb n="14v3" break="no"/>drava, ya ta sinaṅguḥ saṁ hyaṁ cadusakti ṅaranya, ya vkas·nika saṁ panḍi<space type="binding-hole"/>ta, yatna yatna saṁ sevaka ḍarmma // nḍah nihan· hatyanta yuktini vu
 <lb n="14v4" break="no"/><unclear>vu</unclear>s·, knaṅ vaṁ kadi kita, vvaṁ tuməkakən· Ika saṁ mahyaṁn· vr(u)hyaniṁ kagoravanika saṁ hyaṁ ḍarmma visesa, mvaṁ mula patiniṁ tejan· liṁ samaṁka
 
 <!--DSCF8466.JPG-->
-<pb n="15r"/>
+<pb n="15r" xml:id="pb026"/>
 <lb n="15r1" break="no"/>ka, mataṅyan· ramiguhakən saṁ hyaṁ ratna: padesa, saṁka ri hyaṁ matu(ha), hana saṁ hyaṁ trikayo pasanta ṅaranya, ya prihən kayatnakna tman·, Apa
 <lb n="15r2" break="no"/>n sira pva mulaha(la), lavan hayu, suka dukanika jan·ma« <!--taling untuk ka --> <space type="binding-hole"/>samaṅke, hanon· ta kita ṅvaṁ pinakensinəpal·, rinam(p)as dinol·, 
 <lb n="15r3"/>ramanya renanya, sinuvar kadaṁnya, kahavaha ramanya riṁ tani, hapa <space type="binding-hole"/>dumeḥnya maṅkana:, tan· prayatna ri kagavayni:ka saṁ hyaṁ trikayo 
-<lb n="15r4"/>» pasanta, kaliṅanya tan karananyaṁguḥ Ikaṁ papasaṅgara magəṁ I kita, maṅkana kapva pvaṁkulun·, drava denikaṁ (saṁ hyaṁ) <gap reason="lost" unit="character" quantity="1"/>ri <gap reason="lost" unit="character" quantity="6"></gap>
+<lb n="15r4"/>» pasanta, kaliṅanya tan karananyaṁguḥ Ikaṁ papasaṅgara magəṁ I kita, maṅkana kapva pvaṁkulun·, drava denikaṁ (saṁ hyaṁ) <gap reason="lost" unit="character" quantity="1"/>ri <gap reason="lost" unit="character" quantity="6"/>
         
 <!--DSCF8489.JPG -->
-<pb n="15v"/><fw place="left" n="15v"><num value="14">14</num></fw>
+<pb n="15v" xml:id="pb027"/><fw place="left" n="15v"><num value="14">14</num></fw>
 <lb n="15v1"/>kapva kaṁ janma, mataṁṅyan tan pahiṅaniṁṅ upadrava riṁ rat·, nyapan tahan· kva liṅanta, nihan· ta kami mavarahan {8x}
 <lb n="15v2"/>· pasanta, karma: pasanta, sabḍa pasanta, jña:na pasanta ṅaranya, Ambhək· <space type="binding-hole"/> » rahayu, tan kira-ki/ra\ riṁ rat·, mvaṁ tan paḍadyakəna dukaniṁ len·, ṅuni «
 <lb n="15v3"/>veḥ tan padaḍyakəna harvahara riṁ buvana, ya sinaṁguḥ jña:na pasanta, <space type="binding-hole"/> ṅaranya, karma: pasanta ṅaranya, Ulaḥ yogya, hulaḥ rahayu, U
@@ -345,7 +336,7 @@ DSCF8491.JPG
 DSCF8468.JPG
 [17]
 (1) mba ṅaranya, jənəkaṁ paṅan: inum: abvaturu, tan akiṁkiṁ hitavasa janma, ya dambha ṅaranya, lveba ṅaranya, kveḥ Ulaḥ tan ṣvapacara
-(2), ya loba ṅaranya, havəṚ ḍeniṁ sukanya, (A) special ductus -\- > vəṚ ḍeniṁ prajña:na — —, AvəṚ deniṁ paṅavruḥnya, havəṚ d/e\niṁ gunanya, ya mta ṅaranya, matṣar
+(2), ya loba ṅaranya, havəṚ ḍeniṁ sukanya, (A) special ductus -\- &gt; vəṚ ḍeniṁ prajña:na — —, AvəṚ deniṁ paṅavruḥnya, havəṚ d/e\niṁ gunanya, ya mta ṅaranya, matṣar
 (3) yya ṅaranya, timbhuru manon ahayu, habimana ṅaranya, ba — — riḥyu tama-tama:, murka ṅarananya, tan toliḥ ri ri viseśani janma, 
 (4) kuhaka ṅaranya, haṅaku-haku riṁ guna, sambinapralapa ṅaranya, haṅayam:ayam· drabyaniṁṅ adrabya, mvaṁ sukaniṁṅ asuka, pisuna ṅara§
 
@@ -383,7 +374,7 @@ DSCF8473.JPG
 (1) janma, hayva jahat· Ambhək·, ṅahanakən· Ambhək· menak·, Ambek heraṁ, Ambhək· rahayu, ya Ambək pasanta ṅaranya, yan akarasa Ikaṁ pasanta, kaha
 (2) nakən:ikaṁ kaya kayika darmma, yan tan karasa Ikaṁ pasanta, Ambhək· dusṭa ṅa — — nya maṁkana, //ø// Iti siksa guru ṅaranira, sam·pun təlas tinulis· riṁ batur riṁ
 (3) visa kasinoman· luraḥ kamulan·, dya saṁṅ aparab·, yaṁ buyut· <del rend="ui">ra</del> — — sida nurut·, pukulun· malahpaḥh iṅapura, punaṁ sasṭa tan parupa, tan pat(u)
-(4) t· ri varna sas(ṭa) tan papa:ruṁgu riṁṅ akṣara, loter bəkcek· tan· pavastu, kaya labəkeṁ yuyu cinacaṁ, makadi kuraṁ Ḷviḥ riṅ akṣara, pari(yata) _ _ _-->
+(4) t· ri varna sas(ṭa) tan papa:ruṁgu riṁṅ akṣara, loter bəkcek· tan· pavastu, kaya labəkeṁ yuyu cinacaṁ, makadi kuraṁ Ḷviḥ riṅ akṣara, pari(yata) _ _ _--&gt;
 </del>
 </del></ab>
     </body>

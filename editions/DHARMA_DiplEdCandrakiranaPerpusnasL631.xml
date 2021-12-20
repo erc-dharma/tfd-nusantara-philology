@@ -3,48 +3,49 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="main">Candrakiraṇa</title>
-                <!--Change the title of the file with the name of your text-->
-                <title type="subtitle">Digital Diplomatic Edition of Candrakiraṇa</title>
-                <!-- fill in the subtitle if necessary -->
-                <editor ref="part:zapa">
-                  <name>Zakariya Pamuji Aminullah</name>
-                </editor>
-                <respStmt>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Candrakiraṇa</title>
+            <!--Change the title of the file with the name of your text-->
+            <title type="subtitle">Digital Diplomatic Edition of Candrakiraṇa</title>
+            <!-- fill in the subtitle if necessary -->
+            <editor ref="part:zapa">
+               <name>Zakariya Pamuji Aminullah</name>
+            </editor>
+            <respStmt>
                     <!-- repeat the respStmt when necessary -->
-                    <resp>intellectual authorship of edition</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:zapa"><!-- update the id -->
-                        <name>Zakariya Pamuji Aminullah</name>
-                      </persName>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>DHARMA</authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-                <idno type="filename">DHARMA_DiplEdCandrakiranaPerpusnasL631</idno>
-                <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by/4.0/">
-                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by Zakariya Pamuji Aminullah.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
-                    </licence>
-                </availability>
-                <date from="2019" to="2025">2019-2025</date>
-            </publicationStmt>
-            <sourceDesc>
+               <resp>intellectual authorship of edition</resp>
+               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <persName ref="part:zapa"><!-- update the id -->
+                  <name>Zakariya Pamuji Aminullah</name>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+            <idno type="filename">DHARMA_DiplEdCandrakiranaPerpusnasL631</idno>
+            <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <p>Copyright (c) 2019-2025 by Zakariya Pamuji Aminullah.</p>
+                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
                 <!-- Give your witness an unique identifier -->
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
-                        <repository>Lontar</repository>
-                        <idno>Or. 631</idno>
-                    </msIdentifier>
-                   <!-- <msContents>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Leiden</settlement>
+                  <institution>University Library (UB)</institution>
+                  <repository>Lontar</repository>
+                  <idno>Or. 631</idno>
+               </msIdentifier>
+               <!-- <msContents>
                         <!-\- the msContents isn't mandatory -\->
                         <msItem>
                             <author>Śāntarakṣita</author>
@@ -61,59 +62,58 @@
                         <!-\- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -\->
                         <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
                     </history>-->
-                </msDesc>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <projectDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
                 <!-- Part mandatory -->
-                <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-                <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-            </projectDesc>
-            <editorialDecl>
+            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
                 <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-                <correction>
-                    <p/>
-                </correction>
-                <normalization>
-                    <p/>
-                </normalization>
-                <punctuation>
-                    <p/>
-                </punctuation>
-            </editorialDecl>
-            <samplingDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+         </editorialDecl>
+         <samplingDecl>
                 <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-                <p/>
-            </samplingDecl>
-            
-            <!--schemaRef  will need to be added once a  official realase is done -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
-            <!-- Part mandatory -->
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
+            <p/>
+         </samplingDecl>
+         <!--schemaRef  will need to be added once a  official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
-                <language ident="san-Latn">Sanskrit, romanized</language>
-                <language ident="kaw-Latn">Old Javanese, romanized</language>
-                <language ident="tam-Latn">Tamil, romanized</language>
-                <language ident="kan-Latn">Kannada, romanized</language>
-                <language ident="tel-Latn">Telugu, romanized</language>
-            </langUsage>
-            <textClass>
-                <keywords>
+            <language ident="san-Latn">Sanskrit, romanized</language>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+            <language ident="tam-Latn">Tamil, romanized</language>
+            <language ident="kan-Latn">Kannada, romanized</language>
+            <language ident="tel-Latn">Telugu, romanized</language>
+         </langUsage>
+         <textClass>
+            <keywords>
                     <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-                    <term/>
-                    <!-- Ignore this element for the time being. -->
-                </keywords>
-            </textClass>
-        </profileDesc>
-        <revisionDesc>
-            <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
-            <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
-        </revisionDesc>
-    </teiHeader>
-    <text xml:space="preserve" xml:lang="lg-code"><!-- update the language code -->
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
+         <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="lg-code"><!-- update the language code -->
       <body>
     <ab>
         <!--Translittération du manuscrit L631 à partir des photos d'Andrea Acri et la romanisation par Soegiarto
@@ -128,7 +128,7 @@ harus diselidiki apakah Soegiarto melakukan transliterasi dengan foto secara lan
 <graphic url="CK-L631diplo/006v.jpg"/>
 </figure>
 -->
-<pb n="5r"/>
+<pb n="5r" xml:id="pb001"/>
 <lb n="5r1"/> niśa, vika:śamvama:śa:daśadiśiśvahat·śūraraśika, śiva:śambuḥśūlatriśulaśuśalaśrīva<hi rend="check">va</hi>śiva, śavaḥvaṅśa 
 <!--śrīvava mungkin dibaca śrīvaca < śrīvatsa -->
 :veśyaḥśavariśivira:ka:śaśacaya ø <g type="symbol"/> ø kṣaṇikṣiṇikapakṣalakṣmiśanaya:hahәmma:nidi, kagantuṅagu<hi rend="check">ma</hi>
@@ -143,7 +143,7 @@ maḥśapr̥tthika ø mahaṙṣimahiṣīmahoṣadamaheṣameṣa:muṣa, °r̥
 tihiriṣyahaṙṣyanapuṣaḥhuṣaḥśadḍalen·, viṣa:viṣayayomiśeṣadadima:nuṣa:kaṣaya, nvata:kaluṣaki
 <lb n="5r4"/> lviṣa:ṅayuṣakaṣmala:ka:maṣa, nyataṁmamiyoṅgviṁnaṣama°r̥naḥnaṅinḍataya ø <g type="symbol"/> ø śa:ka:gamvaṁsapr̥tthīsadu
 lurika°r̥ṅәn· yekihәn· vaṙṇnanәna, śuśruṣa:śiṣyaśikṣaśviśitavkanikaṁhuśvaṣa:śeṣaśeśan·, śuśvat· 
-<pb n="5v"/>
+<pb n="5v" xml:id="pb002"/>
 <lb n="5v1"/> śiśinyaśośviśiṣinakaśaśidekaṁvaṣiṣṭa:śaviṣṭi, maṅka:tekaṁśaṭa:voṙśatayatiṅkiṅәt·yekiśaksat·
 vtunya // ø //  ma:ṣanika<unclear rend="check">ṁ</unclear>satanihan· vuvusәnpaḍanya, sa:dusada:satasabha:sisita:sita:si, sәta:susatya
 <lb n="5v2"/> rasasatriyasa:risaṁhyaṁ, sverasvabha:sarīsarīsatisa:risa:ri ø samva:sava:basumatībasusenasunuḥm<hi rend="check">va</hi>
@@ -154,7 +154,7 @@ sa:ḍakasvaṁ, ratkosvaniṁsataśarat·paknanyasaksat·  ø <g type="symbol"/
 <lb n="5v4"/> savarasutasaha, savinaṁsavanәn·sakalasakavasa, prajananmisadyantyanitikamivara ø <g type="symbol"/> ø °itiparuṅguniṅakṣaḥ
 <!-- kita menemukan kembali bentuk kṣa yang tidak lazim di sini, dan itu membuktikan bahwa secara paleografis bentuk kṣa diwakili dengan dua bentuk-->
 ø <g type="symbol"/> ø nyansutrasandivuvusәn·, parakr̥talviṙnikapatiṅkaḥnya, hatambayan·, havkasan·, na:hantaya:sinaṅguha<hi rend="check">n·:</hi>
-<pb n="6r"/>
+<pb n="6r" xml:id="pb003"/>
 <lb n="6r1"/> vaṙ<hi rend="check">ṇa</hi> ø tinikaḥpinarvavkasan·, °ikaṁnamaḥyekihәn·śvaraṅarannya, yapvankapuṙvvahanta, sinaṅguhan· vyaṁñjana:na:
 ma ø °ḷ, yantakadisa:mana, kumut·sinami, °i, puṙvvaka, vkasan·ghoṣa, sahlesahrisvabatәk·, °a°i°u°r̥°ḷ,
 <lb n="6r2"/> , lvi<unclear>r</unclear>nyakavruhana ø diṙgha:ṅaranyamanhәr·, °a°i°u°r̥°ḷ, limaṁvivisa:haya, sandyakṣaramunahaṅgәpan·, °e
@@ -165,7 +165,7 @@ ma ø °ḷ, yantakadisa:mana, kumut·sinami, °i, puṙvvaka, vkasan·ghoṣa, 
 <!--śuddhan atau śudḍan, untuk sementara waktu dibaca śudḍan-->
 <lb n="6r4"/> lava:tut·, osmanaśaṣahaṣimidaḥ, patiṅkaḥniṁsutrasantike ø (pva\maum) ø sampunpratekanikanaṅakṣarariṁvyañja:
 na:lavan·śvara, tucapatasañjatanikhahәn·, prakaraniṅaranyakavruhana ø ṅaranikaṅhulusavaneḥ, makuṭaruku
-<pb n="6v"/>
+<pb n="6v" xml:id="pb004"/>
 <lb n="6v1"/> haśrama:stakakaphala, tijakulaśekaramasiraḥ, na:hantaparina:maniṅśr̥ṅga ø di<hi rend="check">ṙ</hi>gha:hulumapalenan·, ºota
 klavankamñarakuñcir·, majaṭa magumbak·majambulaṅurai, svana:manidigha:yan·riṅhulu ø vindulavanmadhanakunaṅ, kuna
 <lb n="6v2"/> ṅkunaṁ<hi rend="check">,</hi> lantara:la:van·vintaṁ, tilakatitikkanisurahan·, na:hantaparinaman<hi rend="check">ī</hi>ṁcanda ø nyantaṁcakrajantraguluṅan·, 
@@ -181,7 +181,7 @@ putapuhana:mapayuṁ, °ikaṁmanaṅguḥkalambivaneḥ, daśa:na:maniṁturu�
 <graphic url="CK-L631diplo/009r.jpg"/>
 <graphic url="CK-L631diplo/009v.jpg}"/>
 </figure> -->
-<pb n="7r"/>
+<pb n="7r" xml:id="pb005"/>
 <lb n="7r1"/> ṇḍihrilavan·guduha, vajasaharuha, masuratija:hubha:manajnuvaneḥ, visaṙjjaniyekinahansabatәk· ø ma
 <!--ṇḍihri atau ṇdhihri-->
 tipjaḥśunyaturukunaṁ, paratraknabhajraliṇa:guliṅan·, ma:napayuṁmaruṅkilenasoṁsoṁ, na:hankatәṅәn·hi
@@ -191,7 +191,7 @@ tipjaḥśunyaturukunaṁ, paratraknabhajraliṇa:guliṅan·, ma:napayuṁmaru�
 l·, muṅgviṁpataraṇabantalkaraṅhuluyaya:takakvakvan· ø hanataṁhaṙvḍihanadheṁ, kr̥halabhujagana:gapa:kapi
 <lb n="7r4"/> nukәṙnya, kadivaṅkavayakumaluṁ, laras·viṇṭaṁnya, yatakakrakran ø °aṅgustalaḥnyabanala, kukumano
 l· sagayujñasivur·, pahat·yatinavanya, hananpasidkuṅamkultur·, kukunyatumakulkadikr̥kr̥ ø hanata:ṅi
-<pb n="7v"/>
+<pb n="7v" xml:id="pb006"/>
 <lb n="7v1"/> ṇḍitkuṙlava:k·, hanana:mavagadana:gakonta, tuhuklimpuṁkr̥talapaṇḍacurik·, śalviranikaṅinuṇḍa, yaya
 nyan·rajinuṁjuṁhika // 0 // saṁhyaṁjagattripuruṣa, na:ma:śiva:yataṅhulun·, °amvitumasthava:ṁkita, °am<hi rend="check">i</hi>ṇna
 <lb n="7v2"/> navaṙtthavtun·, gurunijagatkitaya, mulakṣaragurula:ghu, matrahaṙyyayataṅgaṇa, na:han·ṅarantaneṁcanda ø
@@ -200,7 +200,7 @@ kitamakarūpa:canda, gavaititimvaṁśloka, yatavarṇnanәnkuvtun·, yapanika:�
 keṅtakna, °akṣaratuṅgaliṁyati, yekasinaṅguhantyanta, rvaṅakṣara:puhatka ø tryyakṣaramadḍyamana:ma, pratiṣṭapa
 <lb n="7v4"/> taṅakṣara, śiśupratiṣṭayanlima, nmaṅakṣarajagattri ø °uṣṇikripituṅakṣara, vvalupvayapad<hi rend="check">ḍa</hi>:nuṣṭup·vr̥:
 hatisaṅaṅakṣara, sapuluḥpvasipakṣatiḥ ø saśamduhapvasavlas·, rvavlaspvayajagatī, °ahijagat·tiga:vlas·,
-<pb n="9r"/>
+<pb n="9r" xml:id="pb007"/>
 <lb n="9r1"/> dri, śr̥ddara, mandrakahniṁ, °aśvalalita, mәttakriḍi, kendran·, śighragati, turaṅgagati, pa:ḍaviśala, śa:
 kroñca, vahirat·, bhujaṅgavijrambika, vilaśini, jayavikrama, sameṇiṁ, samabhiṣama, candrakanta, siṅha
 <lb n="9r2"/> śarī, vijayadri, viṣalata, kuśuma, klikliṅan·, dhayakdhayakan·, jayakusuma, lalu, ḍaṇḍa, ḍaṇḍaka,
@@ -209,7 +209,7 @@ lakupisan·, matra, °aryya ø nda:samaṅkanaṅaraniṁlaku, °icca:niraṅka�
 taṇḍasku, jña:ṇaṅku, bhaktya:gәṁ, bha:drotiḥ ø °\textipa{\textdotbreve{r̥}} ø skarasәp·, padhanikiṁ, vacanacan·, vaṇamr̥ghi<gap reason="lost" unit="character" quantity="1"/> \\°r̥
 <lb n="9r4"/> hyaṅakaśa, bhuḥkiraṇondaḥ, °agnәmarut·vvai, o:\maum vijayanti ø °r̥ ø sakveḥhavatәkhyaṁ, muṅgiṁnavade
 śa, tontonpraṇaśaṅku, muṅgviṁtanumadya ø °r̥ ø liṇḍumarasaṁhyaṁ, °o:gaḥkriśimolaḥkeṅgәt<gap reason="lost" unit="character" quantity="3"/>
-<pb n="9v"/>
+<pb n="9v" xml:id="pb008"/>
 <lb n="9v1"/> hya, kanya:tanumaddya ø °r̥ ø sahananikirat·, naratarusatva, padhatapinūjeṁ, kuśumitaganda ø °r̥ ø ma
 tamulatahniṁ, damarūpamanika, vuvusamagaṁsarum·, madhukaralalita ø °r̥ ø sakveḥnyavatuka<gap reason="lost" unit="character" quantity="2"/> 
 <lb n="9v2"/> kyanuṁpamujaṅku, kleṣalva:ṅaphalanya, na:ṣṭa:niṁmadaleka ø °r̥ ø tlastaṅhulunamuja, nirogahunaviṇna
@@ -222,7 +222,7 @@ paraṇa, divyakadipvavitana ø °r̥ ø yapvanulaḥla:ṁg<hi rend="check">v</
 <graphic url="CK-L631diplo/012v.jpg"/>
 <graphic url="CK-L631diplo/014r.jpg"/>
 <graphic url="CK-L631diplo/014v.jpg"/></figure>-->
-<pb n="12r"/>
+<pb n="12r" xml:id="pb009"/>
 <lb n="12r1"/> prayatna ø °r̥ ø °aparankunaṁphalanikaṁkuhaka, °ina°r̥mta:sukamadoḥmataya, satajanmajanmasaparanya <hi rend="check">ṣ</hi>mә
 r·, bhramitakṣaranyasaparanyativas· ø °r̥ ø tekunyanprintaṅhulaḥsadubhuddhi, °apan·vyaṙttha<gap reason="lost" unit="character" quantity="3"/>
 <lb n="12r2"/> heriṁ, siṁṅvaṁsanvamatambәriṁra:mareṇa, maṅkastrīyaśatyayata:viṣvadevī ø °r̥ ø dvaniṅvaṅahurip·
@@ -232,7 +232,7 @@ vama:līṇījugabhiṣojar· ø °r̥ ø mataṅikasaṁvrugumagapikaṁme, vә
 <lb n="12r4"/> °<hi rend="check">i</hi>ikaṁvaḥmavaravaradoḥ, payatanasīkaṁkuśumapadanta ø °r̥ ø lviṙniṁvvaṁvaraṣaglәm·laṇavinasvas·, vruḥ
 <!--4570: kaṁtusuma-->
 mojaṙriṅalaratantahekaṅevә:, vvaṁprajña:sugihaṅajap·jugul·darindra, mevә:ṅvaṁmaṅa<gap reason="lost" unit="character" quantity="4"/>
-<pb n="12v"/>
+<pb n="12v" xml:id="pb010"/>
 <lb n="12v1"/>len· ø <hi rend="check">ṅa</hi> ø hahetusaṁvruhakulamitragәtaha, °upa:ḍatapvahinanakәnpaśaṅgraha, °ivә:nikigiṇamahuripa
 śada:śukha, nahantaton·śucirasna:tanpa:ḍana ø °r̥ ø tanmevә:lviṙniṁyaśadeśaṅkaruneṁra<hi rend="check">ta</hi><gap reason="lost" unit="character" quantity="3"/>\
 <lb n="12v2"/> śa:laviha:raśramabodḍi, pәḥmantramvaṁtaṅgulika:ka:yaśadonya, kaśyaṣiḥnimittamayura:tankiniṅki
@@ -243,7 +243,7 @@ puphulaniṅmaslaṇa:tkatanpinet·, sujanagunuṅapuṇḍakanyamamtvakәn·kal
 <lb n="12v4"/> jita ø °r̥ ø narapatikadibahnikatarariṅapan·, °asiṅumulatar̥smavdigirigirin·, varagalayagu°<hi rend="check">әṁ</hi>kala
 <!--apakah memang vokal ә memiliki tulisan seperti itu, harus dipastikan lagi-->
 ṇaparavaṣa, kadikapinususiṁpraharaṇakalika ø °r̥ ø tulyapraśa:ḍasirasaṁmunimanpinuja:<gap reason="lost" unit="character" quantity="2"/>
-<pb n="14r"/>
+<pb n="14r" xml:id="pb011"/>
 <lb n="14r1"/> tpva<hi rend="check">h</hi>vaṁvruhumujarakәndenika:bha:vabhaṅga, °ambәk·moha:ṅayamayaminak·bhuddhisatośayadoḥ
 vruḥtapvayan·vruhumujarakәn·śojariṁpustaka:ji, mantrakanta:jaliṇisiṅadumonaka:panpuṅguṅ <hi rend="check">ø <unclear>°r̥</unclear> ø</hi>
 <lb n="14r2"/> yaikalaṇa:vuṅambavahika:glәmanayanaya, śastraglaṙbratajivinija:vijahapajamujit·, yapvaginәṁraṣa:ni
@@ -254,7 +254,7 @@ kon·, °avitanariṁpisanpvasatahundaḷhә:ṅatika ø °r̥ ø śalaklaṁsә
 <!--4570: lintiḥ-->
 <lb n="14r4"/> ṅamanis·, kaśevan·kopadyanr̥ṣimutimutil·goḍakuhara, °asiṁśanta:karuṇyasiralinti
 ḥpaṇḍitatmәn·, matanyeka:saṁvruḥmakәkәsayavat·riṁśikariṇi ø °r̥ ø kadalitinәtәlmuṅgviṁdyunpa:
-<pb n="14v"/>
+<pb n="14v" xml:id="pb012"/>
 <lb n="14v1"/> t·kuḷmnyataśaktaya, śuraṣapinaṅanmaṅka:saṁvruḥkumәlmatapeṁvukir·, mtahayasimohambәk·krodḍa
 śekmabalik·brәsiḥ, maṇahiraśubhaśvecca:menakmaṇakmanohariṇipluta ø °r̥ ø tanadvakatika:vuvusniṅu
 <lb n="14v2"/> makūkalokeśvaran·, vuvus·knaśalaḥhala:hayuṅulaḥyataṅkәn·gunuṁ, nahansuśupanantahayvahuni
@@ -269,7 +269,7 @@ paḷpaḷḥpriḥbhabadriṁpraya:pәs·, vaita:hilyambәk·kuśumitalata:me�
 <graphic url="CK-L631diplo/015v.jpg"/>
 <graphic url="CK-L631diplo/016r.jpg"/>
 <graphic url="CK-L631diplo/016v.jpg"/></figure>-->
-<pb n="15r"/>
+<pb n="15r" xml:id="pb013"/>
 <!--ḷnakta?-->
 <lb n="15r1"/> lavikridita ø °r̥ ø dūrapvaṁvvaṁvnaṁmaṅkaṇatumuladaśaṁbhagya:kr̥tavara, °apanmakralmatiṅgarkadivatulumutә
 <!--4570: vnaṅvnaṅ, °apanmakmul-->
@@ -284,7 +284,7 @@ n·bhyaktakaśaḷyә:, nya:taṁvahyatrika:ya:kavnaṅasakar̥ṁgambiradahatә
 riṁgunuṁvitnīkadoḥ, siṁvvitpinriḥpinetsaṁvruhipaknanika:paṅhilaṁrogadonya, maṅka:saṁvruḥvnaṁpaṇḍi
 <lb n="15r4"/> taśaraṇanikiṁsaṙvvajanma:sihiṁrat·, tya:gīyogīsahiṣṇumaramanusunusup·riṁgunuṁman<hi rend="check">dh</hi>raradri ø °{r̥} ø
 yapvanma:pәsmanaḥtacalacalakavnaṅa:norabhaṅgaṅgaka:ra, ta:bhyaṣa:taṅasiḥmehikadhidhikavkas·hva
-<pb n="15v"/>
+<pb n="15v" xml:id="pb014"/>
 <lb n="15v1"/> <gap reason="lost" unit="character" quantity="2"/>sanniśraya:śan·, śvecca:nteṅrat·sakahyun·tkaniyatanikanda:vatkyәnanaḍīra, tan·rakva:tan·dlaha: 
 <!--4570: gveccanteṅ-->
 paramakalpasәn·śr̥ddhara:ri<unclear>ṅ</unclear>vatәkhyaṁ ø °r̥ ø bvattalkas·huvusgavayakәntikakaṁparahiteṁparampara°r̥gә:
@@ -296,7 +296,7 @@ paramakalpasәn·śr̥ddhara:ri<unclear>ṅ</unclear>vatәkhyaṁ ø °r̥ ø bv
 <lb n="15v4"/> <gap reason="lost" unit="character" quantity="2"/>brata:ṁ<hi rend="check">ś</hi>valalita ø °r̥ ø ndanahan·vignaniṅagavaitapabratalaṇa:marupuhirihati, yakadhә:ha
 nirayamaṅaḍīlaṇa:rivṅiya:tikakinatuturan·, niyata:manahiramagavaiytahantulakniṁjapasamaḍilaṇa 
 <!--bentuk : yang muncul dalam dua versi-->
-<pb n="16r"/>
+<pb n="16r" xml:id="pb015"/>
 <lb n="16r1"/> , °apana:karahimamaśakītasaṁmunivara:bhujagavilaśiha ø °{r̥} ø °ayva:taḥśaktebhogabvatpa°ḷpa°ḷ 
 haluparipavkasaṅatuha, nindra:paru<unclear>ṣ</unclear>yaṅvaṁdhaṙpaṅanamayakuraṅasinkuṅihayu, lobhantomvab· tr̥ṣ<gap reason="lost" unit="character" quantity="4"/>
 <lb n="16r2"/> yataṅusiraśukapiduvәganatanavak·, ra:ga:nta:gәṁmәttakridḍiṅvaṅaṅuluyanakbiniyatakita°ḷ°ḷb ø
@@ -305,7 +305,7 @@ haluparipavkasaṅatuha, nindra:paru<unclear>ṣ</unclear>yaṅvaṁdhaṙpaṅa
 jña:ṇanira:lot·citrapadhtrus·hśsiṅulahulahinabhimatayakendran· ø °r̥ ø saṙpabhiṣandata<gap reason="lost" unit="character" quantity="3"/>
 <lb n="16r4"/> <hi rend="check">ra</hi>°ḷkәrasiṅanudu}kiriyatakaviṣanmatәp·, maṅkanasaṁvrumamrīhumiṅkus·misanakaramavdikasaha
 havaṅadodoḥ, siṁvvaṅasampekoliyamatva:tkapiguṇanirayaśanirasamara:riṁra:t, pa:dha<hi rend="check">vi</hi><gap reason="lost" unit="character" quantity="2"/>
-<pb n="16v"/>
+<pb n="16v" xml:id="pb016"/>
 <lb n="16v1"/> yva<hi rend="check">ṙ</hi>nikanasaṁvruhina°ḷpaknasiratatumahahevәḥnya ø °{r̥} ø ka:lihikaṁvvaṁmem·bvatanuṅtuṁguragadhamahasiḥ
 kabtahinupaya, maṅkakinuṇḍa:gәṁhikaṅambәk·pinujipujiparajibhiṣamamacatulaṁ, tattvasahәntuttan·tka<gap reason="lost" unit="character" quantity="2"/>
 <lb n="16v2"/> yatapaṅayamayamanayatamavә°r̥, kroñcapadhaṁrat·depadhahyun·lviha°ḷpaknamavtutaya°ḷñok·
@@ -320,7 +320,7 @@ vaksaṁhyaṁśuṇyatmatahirikasiratayayabhaṭārajagat·guru, śveccadadya:m
 <graphic url="CK-L631diplo/017v.jpg"/>
 <graphic url="CK-L631diplo/018r.jpg"/>
 <graphic url="CK-L631diplo/018v.jpg"/></figure> -->
-<pb n="17r"/>
+<pb n="17r" xml:id="pb017"/>
 <lb n="17r1"/> bhujaṅgavijr̥mbita ø °{r̥} ø lviṙniṁdevivilaśinikitayatapa°r̥kmapakataḥ ø °{r̥} ø maṅkanarakvabhudḍinirasaṁbhuja
 ṅgavilaśita ø °{r̥} ø śaktibhaṭāramaṇaśijamakaṇaśarakuśumavilaśita ø °{r̥} ø bhujaṅgasisukr̥tajugapanikakagi
 <lb n="17r2"/> rigiri ø °{r̥} ø jatinikaruṇa:lalita:mulatikan·vulatiṅatanu ø °{r̥} ø jayakuśumaṅaraniṁlakuyatiṅka
@@ -330,7 +330,7 @@ yagumuluṁ ø °{r̥} ø kadiśiṅharupanyayakagirigiri ø °{r̥} ø kadihuda
 <lb n="17r4"/> majaṙ°r̥ṣiga:ṇabhaṭārapaśupatita:yanahanlaluṅaranekihәn· ø °{r̥} ø sampunikaṁraṣacandalalunyaginlaṙha
 nariṁgurula:ghuvtunyasaśat·yataḍaṇḍaṅarannyatiṅhali ø °{r̥} ø kṣamaknamatikevuvusniṁṅhulundaḥkamuhyaṁya<hi rend="check">śa</hi>
 <!--4570: gulagu-->
-<pb n="17v"/>
+<pb n="17v" xml:id="pb018"/>
 <lb n="17v1"/> kveḥtaśukma:gaṇalmuṅguhīda:śadeśantaresoṙriṅuṙdḍaḥlavanmadyadeśatmakadḍijagatlyab·śaka:lantade
 <!--4570: deggantare-->
 vaṙṣṭamuṙttīpratiṣṭantaśakṣat·°r̥ṅә:takṣama:nriṅhulun·śvastadiṙghayuṣamaṅguhainak·saḍayovaṇa:, ṅuni
@@ -347,7 +347,7 @@ ktirivahyagohyaṁku°ḷmsa:risa:rīpraṇa:tha:sata:ta:pradiptojvalambәk·kut
 <!--di sini pasangan kṣa dalam bentuk ke-2-->
 hetuka, puṅupuṅusatapatratuñjuṁhijoḍupaḍipa:ṙccaṇa:saṅkagha:ṇṭa:sata:ṙta:skaṙhr̥b·rinokrijnuvr̥ktisa:
 <!--4570: puṅgupuṅgu-->
-<pb n="18r"/>
+<pb n="18r" xml:id="pb019"/>
 <lb n="18r1"/> tejana:hantalimyә:naki<hi rend="check">ṁ</hi>ka:vikabhyaṣasaṁhyaṁkacandan·yavaṙttha:skaṙtan·kneṅlumpamūjaṅkumuṅgviṁrikaṙḍaṇḍaka
 :candana:hantavr̥ṣṭiprayatnastutīniṅhulunriṁvatәkdevatha ø °{r̥} ø °athasampunikaṁgurula:ghulavangaṇamatra
 <lb n="18r2"/> yatinyapaḍanyasacandamavaṙtthamatutmaṅgaranpinarakr̥tadenikasaṁkavida:śanama:manuma:ṇarisaṁmaha°r̥p
@@ -359,7 +359,7 @@ siṁsiramahyunatas·sisinahvaṅusiṙtikanaṁraṣagītakakakavyanirasaṁrah
 <lb n="18r4"/> phalatiśayantakatonsatirunsigәgәn<hi rend="check">ta</hi>°r̥ṅәnsapujinagatikiprihәniṁmagavaiyatadevathayoniṅaranya
 <!--4570: pujinatiki-->
 vnaṁkaviman·vihikan·tuhubhudḍimahankadiḍaṇḍakana:mamala:hatiyovvala°ḷṁnyamadәg· // ø // pәṅpәṅ
-<pb n="18v"/>
+<pb n="18v" xml:id="pb020"/>
 <lb n="18v1"/>tekuhurip·tatamrihatapa:ṅaratanakavikuphala:bhiṣa, °ayvaṅgә<hi rend="check">ṁ</hi>yaśaviṙyyaśastrakavi°ḷt·ṅvaṅika
 kasamaya:punaṙbhava, tontondūḥkhanikiṁdadivvaṅaduluṙprihatikaśakitanmamet·śuka, °aṁraṅkal·viṣayanya 
 <lb n="18v2"/> panpinakapa:śanikavulatanantatantirun· ø pośikniṁprihanuttakәn·bratasamadḍikaraṇanidhataṁnikaṁśu
