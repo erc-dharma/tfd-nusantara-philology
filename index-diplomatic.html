@@ -115,16 +115,24 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col">
-      <h1>
-        <a href="https://github.com/erc-dharma/tfd-nusantara-philology">Sunda-Java-Bali Diplomatic Editions</a>
-      </h1>
-          <img src="https://img.shields.io/badge/licence-CC--BY-green.svg" class="img-fluid" alt="CC-BY"/>
-          <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" class="img-fluid" alt="Open Science"/>
-        <p>Manuscripts edited in XML TEI by ERC-DHARMA Task Force D.</p>
-          <p><span  class="badge badge-warning">Number of files <b id="lenght"></b> </span> </p>
-      <ul id="list" class="list-group">
+        <h1>
+          <a href="https://github.com/erc-dharma/tfd-nusantara-philology">Sunda-Java-Bali Diplomatic Editions</a>
+        </h1>
+            <img src="https://img.shields.io/badge/licence-CC--BY-green.svg" class="img-fluid" alt="CC-BY"/>
+            <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" class="img-fluid" alt="Open Science"/>
+          <p>Manuscripts edited in XML TEI by ERC-DHARMA Task Force D.</p>
+            <p><span  class="badge badge-warning">Number of files <b id="lenght"></b> </span> </p>
+          </div>
+          <div class="row">
+        <div class="col-6">
+          <h2>Physical view</h2>
+      <ul id="list-physical" class="list-group">
       </ul>
+</div>
+<div class="col-6">
+  <h2>Logical view</h2>
+  <ul id="list-logical" class="list-group">
+  </ul>
 </div>
 </div>
 </div>
@@ -180,11 +188,16 @@
         let htmlString = '';
         for (let file of data.filter(filterFiles(filter)).sort(sortFiles(filter))) {
           const fileName = file.path.replace('.md', '');
-          const fileDisplayName = fileName.replace('output/diplomatic-edition/', '').replace('.html', '');
-          htmlString += `<li class="list-group-item"><a href="${fileName}">${fileDisplayName}</a></li>`;
+          const fileDisplayName = fileName.replace('output/diplomatic-edition/', '').replace('-logical.html', '').replace('-physical.html', '');
+          if (fileName.indexOf("physical") != -1) {
+              document.getElementById('list-physical').innerHTML += `<li class="list-group-item"><a href="${fileName}">${fileDisplayName}</a></li>`;
+              }
+          else if (fileName.indexOf("logical") != -1){
+            document.getElementById('list-logical').innerHTML += `<li class="list-group-item"><a href="${fileName}">${fileDisplayName}</a></li>`;
+          }
         }
-        document.getElementById('list').innerHTML = htmlString;
-        document.getElementById('lenght').innerHTML = data.length;
+        //document.getElementById('list-physical').innerHTML = htmlString;
+        //document.getElementById('lenght').innerHTML = data.length% 2;
       }
       // Quick navigate to file if perfect match
       const navigateToFile = (data, filter = '') => {
