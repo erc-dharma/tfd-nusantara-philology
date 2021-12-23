@@ -35,14 +35,14 @@
     <fileset id="criticalHTML" dir="./output/critical-edition/editedXML" includes="*.xml"/>
 
     <!-- Transformation XML vers XML -->
-    <xslt force="true" style="./project-documentation/EditorialStylesheets/tpl-critEdEditorialConvention.xsl" destdir="./output/critical-edition/editedXML" extension=".xml" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+    <xslt force="true" style="./project-documentation/editorialStylesheets/tpl-critEdEditorialConvention.xsl" destdir="./output/critical-edition/editedXML" extension=".xml" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="criticalXML"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*)" to="EDITED_\1"/>
     </xslt>
 
     <!-- Transformation XML vers HTML -->
-    <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-edition.xsl" destdir="./output/critical-edition/html" extension=".html" useImplicitFileset="false" classpath="./project-documentation/EditorialStylesheets/pipelineTools/saxon9he.jar">
+    <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-edition.xsl" destdir="./output/critical-edition/html" extension=".html" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="criticalHTML"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="EDITED_(.*).xml" to="\1.html"/>
