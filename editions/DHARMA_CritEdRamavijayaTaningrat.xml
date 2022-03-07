@@ -9,8 +9,10 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Ramavijaya Lengkap</title>
-            <title type="sub">Digital Critical Edition of Ramavijaya Lengkap</title>
+            <title type="main">Kakavin Rāmavijaya</title>
+            <title type="alt">Rāma's Conquest</title>
+            <title type="sub">Digital Critical Edition of the Kakavin Rāmavijaya</title>
+            <author>Tan iṅ Rāt</author>
             <editor ref="part:argr">
                <forename>Arlo</forename>
                <surname>Griffiths</surname>
@@ -44,17 +46,17 @@
                      </msIdentifier>
                      <msContents>
                             <!-- the msContents isn't mandatory -->
-                        <msItem>
+                        <!-- <msItem>
                            <author>Śāntarakṣita</author>
-                           <title>Vipañcitārthā</title>
+                           <title>Vipañcitārthā</title> -->
                            <!-- You can also add a colophon if needed -->
                            <!--<colophon></colophon> -->
-                        </msItem>
+                        <!-- </msItem> -->
                      </msContents>
                      <physDesc>
                         <objectDesc>
                                 <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                           <p>Typed transcription on carbon paper.</p>
                         </objectDesc>
                      </physDesc>
                      <history>
@@ -78,7 +80,7 @@
                <p/>
             </correction>
             <normalization>
-               <p/>
+               <p>The roman transcript makes no distinction between long/short vowel, between sibilants, between ə and e, between retroflex/dental consonant. All orthography is normalized taking metrical considerations and OJED spellings into account.</p>
             </normalization>
             <punctuation>
                <p/>
@@ -95,10 +97,10 @@
                     key=" EGCv01"
                     url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
          <!-- Will need to be updated once a more official realase is done -->
-         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
+         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
+
 			<variantEncoding method="parallel-segmentation" location="internal"/><variantEncoding method="location-referenced" location="internal"/>.
-			
+
 			Note that the current by default behaviour is set on parallel-segmentation -->
          <variantEncoding method="parallel-segmentation" location="internal"/>
          <!-- Part mandatory -->
@@ -147,14 +149,16 @@
          </textClass>
       </profileDesc>
       <revisionDesc>
+        <change who="part:argr" when="2022-03-07" status="draft">started applying further structure, correcting transcription erros, and filling in the teiHeader</change>
          <change who="part:axja" when="2022-03-07" status="draft">Converting docx into xml</change>
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="">
         <body>
-        <div xml:id="rt_01"><ab xml:id="rt_01.01"><pb n="1v"/><lb n="1"/>	Awinghnam astu. </ab></div>
-            <div type="canto" xml:id="rt_02">
-            <lg xml:id="rt_02.01" n="1"><l n="a"><lb n="2"/>Sri Kamo-Swara nis-kala-tmaka manresthi turida sedhenging karasikan, </l>
+        <div xml:id="rt_01"><ab type="invocation" xml:id="rt_01.01"><pb n="1v"/><lb n="1"/>awighnam astu.</ab></div>
+            <div type="canto" n="1" met="jagaddhita" xml:id="rt_02">
+              <note type="prosody">+++--+-+---+------+-+-+</note>
+            <lg xml:id="rt_02.01" n="1"><l n="a"><lb n="2"/>śrī kāmeśvara niṣkalātmaka manr̥ṣṭi turida səḍəṅiṅ karasikan,</l>
             <l n="b"><lb n="3"/>Sek tang raga pinindha munggwi hatining saharas I daleming pasanggaman, </l>
             <l n="c"><lb n="4"/>stikan raksa renghning adyah anahen lara pinuputan antyaning gati, </l>
             <l n="d"><lb n="5"/>Lila stula sarira aaka pada sunya muwah I huwusing madan tapih. </l></lg>
@@ -274,7 +278,7 @@
             <l n="b"><lb n="7"/>Twasning raga sinresthi sampun apageh mapatiga lara kung dinadya-ken, </l>
             <l n="c"><lb n="8"/>Pangning soka ginatra kori wangunanya turida mawilah karasikan, </l>
             <l n="d"><lb n="9"/>Mosuk haran lulut rinangrihana king-king hinadu pat eduk raras hati. </l></lg>
-            
+
             <lg xml:id="rt_02.31" n="31"><l n="a"><pb n="5r"/><lb n="10"/>Ngkana Sri Parame-Swari pinareking wang ahayu pinake-sining puri, </l>
             <l n="b"><lb n="11"/>Tus-tus wangsa kadang-kadang Aji aneka kula-kula marek mapawahan, </l>
             <l n="c"><lb n="12"/>Mwang stri wreddha karandhan ahyang ahalep mider ajajar atunggalan caka, </l>
@@ -395,7 +399,7 @@
             <l n="b"><lb n="31"/>Anghing teki tuhan-ku matya kaharep-ku malabuhana jeng-ta ring jinem, </l>
             <l n="c"><lb n="32"/>Dengan sirna kahandhem eng susu yadinya kacucuka ri landheping alis, </l>
             <l n="d"><lb n="33"/>Pinta ken-ta huwun luhar ya rurubang-kwa bibi penjaha ring pasanggaman. </l></lg>
-            
+
             <lg xml:id="rt_02.61" n="61"><l n="a"><pb n="9r"/><lb n="1"/>Akara pwa genep tigang wulan ateki katuturana ta-ku ring tilam, </l>
             <l n="b"><lb n="2"/>Candhin-ta kwi raras-raras-ta mawilung-lung lara turidan-ta ring halun, </l>
             <l n="c"><lb n="3"/>Ndan yan purnama kala carwana tengah-ta saha kusuma laywaning gelung, </l>
@@ -555,7 +559,7 @@
             <l n="b"><lb n="14"/>Away reseh pale-paleh magawe karaksan, </l>
             <l n="c"><lb n="15"/>Rakseka nojar ira Sang Prabhu saktya tiga, </l>
             <l n="d"><lb n="16"/>Rapwan rinaksa widhi Natha tekap niking rat. </l></lg>
-            
+
             <lg xml:id="rt_02.100" n="101"><l n="a"><pb n="13r"/><lb n="16"/>Kelik nikang bhuwana away gineng hinambah, </l>
             <l n="b"><lb n="17"/>Kahyun-ta yeka gaweyen-ta marang sukang rat, </l>
             <l n="c"><lb n="18"/>Sampun pwa yan kakawase-ka tekap narendra, </l>
@@ -875,7 +879,7 @@
 <lg xml:id="rt_02.183" n="184"><l n="a"><lb n="20"/>Ramya srep tang panataran aradin,	Kambangning jambu sumawur agelar, </l>
             <l n="b"><lb n="21"/>Tanjung len campaka surabhi ruru, 	Kumbangnya ngreng kadi manangis-aken. </l></lg>
 <lg xml:id="rt_02.184" n="185"><l n="a"><lb n="22"/>Lalya-la Sri Nrepati lepas adoh, 	Towin seb-seb panas asepi mameng, </l>
-            <l n="b"><lb n="23"/>Lwah-lwah geng-geng kaemu tara-tara, 	Kaywanya nghing rwi kadirawadara. </l> 
+            <l n="b"><lb n="23"/>Lwah-lwah geng-geng kaemu tara-tara, 	Kaywanya nghing rwi kadirawadara. </l>
             </lg><lg xml:id="rt_02.185" n="186"><l n="a"><pb n="21v"/><lb n="24"/>	.o. Margga-geng ya tinut nira maner agaryang asepi kadi tan ana wanga, </l>
             <l n="b"><lb n="25"/>Wanwa-doh pitosin tegal-tegal ayun tarung atiki panungga-nunggalan, </l>
             <l n="c"><lb n="26"/>Rangra kaywa nika sinang sedheng akembang ajahala saya wahing henu, (?)</l>
@@ -916,7 +920,7 @@
             <l n="b"><lb n="27"/>Dhatung sahananing wang angiring anut wuri manututi lampahing ratha</l>
             <l n="c"><lb n="28"/>Animpang angusir damargga kadi tan lepasa tekapi lon ikang laku,</l>
             <l n="d"><lb n="29"/>Miyat ri rusiting awan ana suengka tumurun apasingga-singgahan. </l>
-            
+
             </lg><lg xml:id="rt_02.195" n="176"><l n="a"><pb n="22v"/><lb n="30"/>	I sornya walahar trebis-trebis ares lumu-lumuten i rengnya kengkulan, </l>
             <l n="b"><lb n="31"/>Rengat-rengat ika temah rubuh hinambah arupek apedhek-pedhek awan, </l>
             <l n="c"><lb n="32"/>Males umis atut paras titising ertali manedhuni tinghasing karang, </l>
@@ -1163,7 +1167,7 @@
             <l n="b"><lb n="6"/>Ana kumedhap-kedhap manuk ika nawat-nawat anambayang lwpas adoh, </l>
             <l n="c"><lb n="7"/>Pater akter aneng remeng aganti mandra lumarapkilatnya tan awas, </l>
             <l n="d"><lb n="8"/>Masemu rengihning adyah hinamer ywa cancala tikel alisnya-ti nira. </l></lg>
-            
+
             <lg xml:id="rt_02.257" n="241"><l n="a"><pb n="29r"/><lb n="9"/>Ri tepi-tepinya pandhan akusa guling-gulingan ing karang saha thika, </l>
             <l n="b"><lb n="10"/>Ana kakawin palambang i lawenya majar i tangisnya tan tinurida, </l>
             <l n="c"><lb n="11"/>Lengeng asaput hima raras anyangweli paglari sekarnya tan hinunginga, </l>
@@ -1246,7 +1250,7 @@
             <l n="c"><lb n="16"/>Anan sinelangan kidungnya tau rakwa mangusira pi yan tikel alis ira, </l>
             <l n="d"><lb n="17"/>Widagdha bisa mangdadak-dadak amarnana kakawin anindha-nindha turida.</l>
 </lg>
-            
+
 <lg xml:id="rt_02.277" n="261">
     <l n="a"><pb n="31v"/><lb n="18"/>Lalung masa pilih dhawuh nem aturu sahana-ana nika ndatan ana ngumik, </l>
     <l n="b"><lb n="19"/>Sasangka gumawang mawa kalangan arjja mamungu-mungu raga tan duga-duga, </l>
@@ -1541,7 +1545,7 @@
             <l n="b"><lb n="34"/>Ndi tan salah rasa-rasanya tekapning ojar, </l>
             <l n="c"><lb n="35"/>Don Brahmanna nrepati ya mareke-ki tan lan, </l>
             <l n="d"><lb n="36"/>Jati warah-waraha ring kita yogya peten.</l>
-            
+
             </lg><lg xml:id="rt_02.348" n="331"><l n="a"><pb n="38v"/><lb n="37"/>	Nojar Dwijati saha santi saopa pati, </l>
             <l n="b"><lb n="38"/>Ndan Sri Narendra juga magha teka bhimana, </l>
             <l n="c"><lb n="39"/>Mojar sira sru mangusap lengen arddha kempen, </l>
@@ -1705,7 +1709,7 @@
             <l n="b"><lb n="16"/>Wang utiama pakemba-kembangan ateki makarah asusun widagdha ring ayun, </l>
             <l n="c"><lb n="17"/>Ulihnya padha wira ring rana sabhusana nika padha lurwa pitana kuning, </l>
             <l n="d"><lb n="18"/>Titir kaliliping musuh prang ika tan ana mangucap amundur eng pabharatan. </l>
-            
+
             </lg><lg xml:id="rt_02.388" n="371"><l n="a"><pb n="42v"/><lb n="19"/>	Anugraha Narendra taki umurun bala sahana nika prawira pinilih, </l>
             <l n="b"><lb n="20"/>Inundang i harep manembah umarek Nra Patih padha bhaktya linggih araren, </l>
             <l n="c"><lb n="21"/>Nasinghel akitir-kitir ana karah kalung areja sabhusananya rinasuk, </l>
@@ -1741,7 +1745,7 @@
 <lg xml:id="rt_02.396" n="380"><l n="a"><lb n="16"/>Katering pater angusa suhunan anganti ririsnya sumar, </l>
             <l n="b"><lb n="17"/>Lengeng angarih arya mupih-upiha teki regnih-ta nakung, </l>
             <l n="c"><lb n="18"/>Panedhengni sekarning asana karuhun kagereh-gerehan, </l>
-            <l n="d"><lb n="19"/>Mapawana suyang-ta pakena nika matya sinempal alun. </l>  
+            <l n="d"><lb n="19"/>Mapawana suyang-ta pakena nika matya sinempal alun. </l>
             </lg><lg xml:id="rt_02.397" n="381"><l n="a"><pb n="43v"/><lb n="20"/>	Na nuwun Mara Natha mamenge-mengen ojar asung turida,</l>
             <l n="b"><lb n="21"/>		Gerehing katiga raras asemu riris pinaka-mbok ira,</l>
             <l n="c"><lb n="22"/>	Ring ape-ici ya tan renge-rengen asemu late welas harep, </l>
@@ -1823,7 +1827,7 @@
             <l n="b"><lb n="11"/>Sampun mahyas abhusana-rjja sumena ratnanya munggwing jaja,</l>
             <l n="c"><lb n="12"/>Sighra-dan mangadeg sireng gupura harsan ten watek Ehaya,</l>
             <l n="d"><lb n="13"/>Lawon Sang Prabhu sewake-aji padha-nggeng bhekti tan langghyana.</l>
-           
+
             </lg><lg xml:id="rt_02.417" n="401"><l n=""><pb n="45v"/><lb n="14"/>	Nakryan Sang Mapatih widagdha ta sira mwat rya-jnya Sang Bhupati,</l>
             <l n="j"><lb n="15"/>Kapwa dan-dan aningka-ningkaha ri lampah Sang watek yuddhaga,</l>
             <l n="k"><lb n="16"/>Apan nghing winuwun wicaksana yan ing byuha pageh kottama,</l>
@@ -2034,7 +2038,7 @@
             <l n="b"><lb n="25"/>Praptang Gandharwwa Widhyadhara saha bala kosa dulur wahananya,</l>
             <l n="c"><lb n="26"/>Sar-sek lumreng Bhuwah Loka ngamara bala kapwa-ngregap sanjatanya,</l>
             <l n="d"><lb n="27"/>Yaksa mwang Raksasa-dhem pisaca gana-gana bhuta detya-ngga sangghya.</l>
-            
+
             </lg><lg xml:id="rt_02.466" n="451"><l n="a"><pb n="50v"/><lb n="28"/>	Rya-ngkatning Dewa sangghya nduluri laku niran Rama sampun senaddha,</l>
             <l n="b"><lb n="29"/>Sangkep munggwing gaja syandana turaga mawastra-rjja dewa-ngsuka bhra,</l>
             <l n="c"><lb n="30"/>Salwirning mulya ring Swargga ngabharana nike-ndah taya-Martya Loka,</l>
@@ -2075,7 +2079,7 @@
             <l n="b"><lb n="30"/>Kyating rat wara Mata Arta jinurun aneka wadwa dhika,</l>
             <l n="c"><lb n="31"/>Awyang bhawana tulya warna nika mangda katakutning mulat,</l>
             <l n="d"><lb n="32"/>Kadganye-ki padha-ti tikana telas anghret tenggeking dur-jana.</l>
-             
+
             </lg><lg xml:id="rt_02.476" n="461"><l n="a"><pb n="51v"/><lb n="33"/>	Ngkaneng paseima sirsa bhuta pinatih sahya-ti rodra-dbhuta,</l>
             <l n="b"><lb n="34"/>Lampahnya sru padha dharat wija-wijah sabdanya munggwing langit,</l>
             <l n="c"><lb n="35"/>Lindhu tang bhuwane-lah arddha gumiwang guntur tikang parwwata,</l>
@@ -2278,7 +2282,7 @@
             <l n="b"><lb n="10"/>Lwir Kendran mara aleping pakuwa-kuwan,</l>
             <l n="c"><lb n="11"/>Muntab sengni layu-layunya kadbhuta bhra,</l>
             <l n="d"><lb n="12"/>Gendhing dong gubar abarung dhinandha masrang. o.</l></lg>
-            
+
             <lg xml:id="rt_02.526" n="511"><l n="a"><pb n="56r"/><lb n="13"/>Sahana para Prabhu-ttama padha mrih anangkil adhem,</l>
             <l n="b"><lb n="14"/>Mucap i kasaktining musuh ri deyani manglagana,</l>
             <l n="c"><lb n="15"/>Mawetu wiweke sing rahata tingkahaning malaga,</l>
@@ -2570,7 +2574,7 @@
             <l n="b"><lb n="47"/>Sang Citra-nggadha yo mayat laras ira sampunya purna welu, </l>
             <l n="c"><lb n="48"/>Sek balanya ring antarala kumisik cap ceb tibanya nenge, </l>
             <l n="d"><lb n="49"/>Etunya wreg ikang musuh katalayah kanggek watek Ehaya. </l>
-           
+
             </lg><lg xml:id="rt_02.601" n="586"><l n=""><pb n="62v"/><lb n="50"/>	Srya-Wangga Dhipa tar wru yan sinusunan karya-njelag kesisan, </l>
             <l n="j"><lb n="51"/>Mangkin sinreg hinambulan kinucupan dhira ngadeg ring ratha, </l>
             <l n="k"><pb n="63r"/>1		Wruh (Sang) Citra-nggadha bana sakti ginegenya mrih mamenthang laras, </l>
@@ -2893,7 +2897,7 @@
             <l n="b"><lb n="43"/>Ahenek tan wenang angucap lana-pega-twas, </l>
             <l n="c"><lb n="44"/>Anghing luh nira juga aityanadres amwas, </l>
             <l n="d"><lb n="45"/>Amles rya-ngga Aji sinungkeman Sudewi. </l>
-           
+
             </lg><lg xml:id="rt_02.681" n="666"><l n="a"><pb n="70v"/><lb n="46"/>	Lagya maswasi muka Sang sedheng paratra, </l>
             <l n="b"><lb n="47"/>Marma mrih umusap-usap anan lining-ling, </l>
             <l n="c"><lb n="48"/>Mengis trang waja kadi harsa yan panungsung, </l>
@@ -2934,7 +2938,7 @@
             <l n="b"><lb n="35"/>Ri pangkwani Bapa-ngku tan sah anamar hinari-hari teher sisungkeman, </l>
             <l n="c"><lb n="36"/>Sabuk-ta ana randi yeki panalin-ta ri melasi tapih-ku kasrepan, </l>
             <l n="d"><lb n="37"/>Ujar-ta rinengen-ku yeka karana-ngkwa-dan atutur i sandhining tapih. </l>
-          
+
             </lg><lg xml:id="rt_02.694" n="679"><l n="a"><pb n="71v"/><lb n="38"/>	Ri ping-rwaning ulah kaping tiga telas wasa ri sarasaning karasikan, </l>
             <l n="b"><lb n="39"/>Dudu sawengi sih-ku sangsaya matembeh i kita kadi tambwaning sasi, </l>
             <l n="c"><lb n="40"/>Ridhep-ku kaka sih tatan luwara kesyana rasani wuwus-ta ring hulun, </l>
@@ -2975,7 +2979,7 @@
             <l n="b"><lb n="31"/>Telas marang citta su-dhira bhakti, 	Mangke juga nghing pejah eki tan len.</l></lg>
 <lg xml:id="rt_02.704" n="689"><l n="a"><lb n="32"/>Gelung lukar kolot i bau lumrang, 	Marme-najum ring kuku sampun epen, </l>
             <l n="b"><lb n="33"/>Tapih nira nindya sabuk Narendra, 	Marmanya tan sah ri tengah nira-nglih. </l>
-            
+
             </lg><lg xml:id="rt_02.705" n="690"><l n="a"><pb n="72v"/><lb n="34"/>	Telas manembah ri Narendra mamwit, 	Ginya-ken ing raga tekapning oneng, </l>
             <l n="b"><lb n="35"/>Yateka himper jaruman Naendra, 	Lwir majare gengni lulut nira gya. </l></lg>
 <lg xml:id="rt_02.706" n="691"><l n="a"><lb n="36"/>Huwus nira-dan mangadeg tan himba, 	Patrem pabelan ya telas minusthi, </l>
@@ -3015,7 +3019,7 @@
             <l n="b"><lb n="32"/>Bhaktya-ngku tan sah ikite-ki tuhan-ku ta-ngher, </l>
             <l n="c"><lb n="33"/>Sung-sung mara-ku ta dulur saparan matun-tun, </l>
             <l n="d"><lb n="34"/>Sugyan-ku ta-nglihaa ring henu durgga meweh. </l></lg>
-            
+
             <lg xml:id="rt_02.716" n="702"><l n="a"><pb n="73v"/><lb n="35"/>Anghing kite-ki parana-ngkwa wuwus Narendra, </l>
             <l n="b"><lb n="36"/>Paksa-nga yan srah-aken e kita rekwa nguni, </l>
             <l n="c"><lb n="37"/>Mangke pejah kaka ta sis mapa to-laha-ngkwa, </l>
@@ -3096,7 +3100,7 @@
             <l n="b"><lb n="24"/>…..         tan angu-angu amendhar-medhar sari, </l>
             <l n="c"><lb n="25"/>Bangun salahase-rarasnya juga tan ana lumihat apindha komengan, </l>
             <l n="d"><lb n="26"/>Mara-ngluh akecap titisni banyning makara tumus awarna kasrepan.  /u</l></lg>
-            
+
             <lg xml:id="rt_02.736" n="722"><l n="a"><pb n="76v"/><lb n="27"/>Ikang wang i dalem kadhatwan hinya len kaka-kaka padha soka duhkita, </l>
             <l n="b"><lb n="28"/>Miyat ri leyeping wulan kadi maha mituturana tangisnya tapwa ya, </l>
             <l n="c"><lb n="29"/>Wilasa Aji rakwa yan mangadeg ing natar araras akalihan ulas, </l>
