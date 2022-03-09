@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title type="main">Candrakiraṇa Manuscript Perpusnas L631</title>
-            <!--Change the title of the file with the name of your text-->
-            <title type="sub">Digital Diplomatic Edition</title>
-            <!-- fill in the subtitle if necessary -->
-            <editor ref="part:zapa">
-               <name>Zakariya Pamuji Aminullah</name>
-            </editor>
-            <respStmt>
-                    <!-- repeat the respStmt when necessary -->
-               <resp>intellectual authorship of edition</resp>
-               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-               <persName ref="part:zapa"><!-- update the id -->
-                  <name>Zakariya Pamuji Aminullah</name>
-               </persName>
-            </respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <authority>DHARMA</authority>
-            <pubPlace>Hamburg</pubPlace>
-            <idno type="filename">DHARMA_DiplEdCandrakiranaPerpusnasL631</idno>
-            <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Zakariya Pamuji Aminullah.</p>
-                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
-               </licence>
-            </availability>
-            <date from="2019" to="2025">2019-2025</date>
-         </publicationStmt>
-         <sourceDesc>
-                <!-- Give your witness an unique identifier -->
-            <msDesc>
-               <msIdentifier>
-                  <settlement>Jakarta</settlement>
-                  <institution>Perpustakaan Nasional Republik Indonesia</institution>
-                  <repository>Koleksi Naskah Nusantara</repository>
-                  <idno>L631</idno>
-               </msIdentifier>
-               <!-- <msContents>
-                        <!-\- the msContents isn't mandatory -\->
-                        <msItem>
-                            <author>Śāntarakṣita</author>
-                            <title>Vipañcitārthā</title>
-                        </msItem>
-                    </msContents>
-                    <physDesc>
-                        <objectDesc>
-                            <!-\- Here you can give a physical description of the manuscript in prose-\->
-                            <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
-                        </objectDesc>
-                    </physDesc>
-                    <history>
-                        <!-\- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -\->
-                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
-                    </history>-->
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-                <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="tam-Latn">Tamil, romanized</language>
-            <language ident="kan-Latn">Kannada, romanized</language>
-            <language ident="tel-Latn">Telugu, romanized</language>
-         </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
-         <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
-      </revisionDesc>
-   </teiHeader>
-   <text xml:space="preserve" xml:lang="lg-code"><!-- update the language code -->
-      <body>
-    <ab>
-        <!--Translittération du manuscrit L631 à partir des photos d'Andrea Acri et la romanisation par Soegiarto
+<?xml-model href="https:<g type="//"/>raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http:<g type="//"/>relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https:<g type="//"/>raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http:<g type="//"/>purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https:<g type="//"/>raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http:<g type="//"/>purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http:<g type="//"/>www.tei-c.org/ns/1.0" xml:lang="eng">
+  <teiHeader>
+   <fileDesc>
+     <titleStmt>
+      <title type="main">Candrakiraṇa Manuscript Perpusnas L631</title>
+      <!--Change the title of the file with the name of your text-->
+      <title type="sub">Digital Diplomatic Edition</title>
+      <!-- fill in the subtitle if necessary -->
+      <editor ref="part:zapa">
+        <name>Zakariya Pamuji Aminullah</name>
+      </editor>
+      <respStmt>
+          <!-- repeat the respStmt when necessary -->
+        <resp>intellectual authorship of edition</resp>
+        <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+        <persName ref="part:zapa"><!-- update the id -->
+         <name>Zakariya Pamuji Aminullah</name>
+        </persName>
+      </respStmt>
+     </titleStmt>
+     <publicationStmt>
+      <authority>DHARMA</authority>
+      <pubPlace>Hamburg</pubPlace>
+      <idno type="filename">DHARMA_DiplEdCandrakiranaPerpusnasL631</idno>
+      <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
+      <availability>
+        <licence target="https:<g type="//"/>creativecommons.org/licenses/by/4.0/">
+         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https:<g type="//"/>creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+         <p>Copyright (c) 2019-2025 by Zakariya Pamuji Aminullah.</p>
+         <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3" if necessary — the copyright is that of the encoder(s) -->
+        </licence>
+      </availability>
+      <date from="2019" to="2025">2019-2025</date>
+     </publicationStmt>
+     <sourceDesc>
+        <!-- Give your witness an unique identifier -->
+      <msDesc>
+        <msIdentifier>
+         <settlement>Jakarta</settlement>
+         <institution>Perpustakaan Nasional Republik Indonesia</institution>
+         <repository>Koleksi Naskah Nusantara</repository>
+         <idno>L631</idno>
+        </msIdentifier>
+        <!-- <msContents>
+            <!-\- the msContents isn't mandatory -\->
+            <msItem>
+              <author>Śāntarakṣita</author>
+              <title>Vipañcitārthā</title>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <!-\- Here you can give a physical description of the manuscript in prose-\->
+              <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+            </objectDesc>
+          </physDesc>
+          <history>
+            <!-\- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -\->
+            <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+          </history>-->
+      </msDesc>
+     </sourceDesc>
+   </fileDesc>
+   <encodingDesc>
+     <projectDesc>
+        <!-- Part mandatory -->
+      <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+      <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+     </projectDesc>
+     <editorialDecl>
+        <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+      <correction>
+        <p/>
+      </correction>
+      <normalization>
+        <p/>
+      </normalization>
+      <punctuation>
+        <p/>
+      </punctuation>
+     </editorialDecl>
+     <samplingDecl>
+        <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+      <p/>
+     </samplingDecl>
+     <!--schemaRef will need to be added once a official realase is done -->
+     <variantEncoding method="parallel-segmentation" location="internal"/>
+     <!-- Part mandatory -->
+   </encodingDesc>
+   <profileDesc>
+     <langUsage>
+        <!-- choose the language(s) of your text, remove the others -->
+      <language ident="san-Latn">Sanskrit, romanized</language>
+      <language ident="kaw-Latn">Old Javanese, romanized</language>
+      <language ident="tam-Latn">Tamil, romanized</language>
+      <language ident="kan-Latn">Kannada, romanized</language>
+      <language ident="tel-Latn">Telugu, romanized</language>
+     </langUsage>
+     <textClass>
+      <keywords>
+          <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords> -->
+        <term/>
+        <!-- Ignore this element for the time being. -->
+      </keywords>
+     </textClass>
+   </profileDesc>
+   <revisionDesc>
+     <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
+     <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+   </revisionDesc>
+  </teiHeader>
+  <text xml:space="preserve" xml:lang="lg-code"><!-- update the language code -->
+   <body>
+  <ab>
+    <!--Translittération du manuscrit L631 à partir des photos d'Andrea Acri et la romanisation par Soegiarto
 Cand[r]akiraṇa Ms. LOr 4570, Ju.Sup.Cat. I, 170.
 il semble que la translittération est très peu fiable pour ce qui est des quantités des voyelles
 harus diselidiki apakah Soegiarto melakukan transliterasi dengan foto secara langsung atau melalui perantara-->
@@ -135,143 +135,139 @@ harus diselidiki apakah Soegiarto melakukan transliterasi dengan foto secara lan
 <lb n="3r3"/>ka:ragaṇa la:ghu madhudhuk i tṅaḥ hetunikaṁ śaka:ragaṇ ama<supplied reason="lost">:tyəṅ a</supplied><gap reason="lost" unit="character" quantity="20" precision="low"/>
 <lb n="3r4"/>na:, na:karaga:ṇa təlva madhuluṙ tika ya laghuṁ paḍa <g type="circleCurve"/> nyan laghu ka:rva saṅ gu<supplied reason="lost">ru</supplied><gap reason="lost" unit="character" quantity="20" precision="low"/>
 <pb n="3v" xml:id="pb0002"/><fw n="3v" place="left"><num value="3">3</num></fw>
-<lb n="3v1"/>manitaḥ sira tika manata // 0 //
-<lb n="3v2"/>
-<lb n="3v3"/>
-<lb n="3v4"/>
-<!--  -->
+<lb n="3v1"/>manitaḥ sira tika manata <g type="//"/> 0 <g type="//"/> nihan gaṇani haṙyya yeṅtakna, jaka:ra kalavan· <supplied reason="lost"><unclear>bha</unclear></supplied><gap reason="lost" unit="character" quantity="20" precision="low"/>
+<lb n="3v2"/>matətəg·, Ikaṁ padha kapuṙvvaka tlu kunaṁ, gnəp· rvavlas aṁgəpanya kukuran· <g type="circleCurve"/> kapiṁ rva<gap reason="lost" unit="character" quantity="20" precision="low"/>
+<lb n="3v3"/>nikanaṁ jaka:ra matətəg·, kapiṁ rva maṅnəm· dvitīya kaśula, padha: rva<gap reason="lost" unit="character" quantity="20" precision="low"/>
+<lb n="3v4"/>ruṇa bharuṇa śaraṇa, Avaraṇa bharaṇa hapaṇa ṇa gəṁ <g type="//"/> 0<gap reason="lost" unit="character" quantity="20" precision="low"/>
+<!-- Perlu dicek lagi apakah potongan lempir 3rv ini ada di bagian lain atau tidak. Kalau iya, perlu disambungkan pada bagian ini.-->
 <pb n="5r" xml:id="pb001"/>
-<lb n="5r1"/><unclear>niśa</unclear>, vika:śa mva ma:śa: daśa diśi śvahat· śūra raśika, śiva: śambuḥ śūla triśula śuśala śrīvava śiva, śavaḥ vaṅśa<space type="binding-hole"/>: veśyaḥ śavari śivira:ka:śa śacaya <g type="circleCurve"/>Ř̥̇<g type="circleCurve"/> kṣaṇi kṣiṇi kapakṣa lakṣmi śanaya:hahәmm a:nidi, kagantuṅa guma
+<lb n="5r1"/><unclear>niśa</unclear>, vika:śa mva ma:śa: daśa diśi śvahat· śūra raśika, śiva: śambuḥ śūla triśula śuśala śrīvava śiva, śavaḥ vaṅśa<space type="binding-hole"/>: veśyaḥ śavari śivira:ka:śa śacaya <g type="circleCurve"/>R̥̆̇<g type="circleCurve"/> kṣaṇi kṣiṇi kapakṣa lakṣmi śanaya:hahәmm a:nidi, kagantuṅa guma
 <!--śrīvava mungkin dibaca śrīvaca < śrīvatsa -->
 <!--tanda <g type="symbol"/> di sini berbentuk r̥ vokal dengan layar atau candrabindu-->
 <!--langkah berikutnya harus menentukan tanda <g type="symbol"/> harus diganti dengan unicode yang lebih cocok dengan tanda aslinya-->
-<!--bentuk kṣaṇakṣini mirip traṇatriṇi, tetapi ada titik di bawah aksara, hal ini menarik karena kita memiliki kṣa dalam bentuk normal-->
-<lb n="5r2"/>ntuṅeṁ dhadha kuna<supplied reason="lost"><unclear>ṁ</unclear></supplied> sapr̥<supplied reason="lost">t</supplied>thītala, prahr̥ṣṭi parituṣṭa roṣa ruṣa koṣa tr̥ṣṇa praṣa, śakaṙṣaṇa ṣavr̥ṣṇi vr̥ṣṭa ṣalu:<space type="binding-hole"/>maḥ śapr̥tthika ø mahaṙṣi mahiṣī mahoṣada maheṣa meṣa: muṣa, R̥ṣaḥ muṣika puṣya poṣya kapuṣah praṣaṣṭa
+<!--bentuk kṣaṇakṣini mirip traṇatriṇi, tetapi ada titik di bawah aksara, hal ini menarik karena kita memiliki kṣa dalam bentuk normal. Kasus ini sama persis di L241-->
+<lb n="5r2"/>ntuṅeṁ dhadha kuna<supplied reason="lost"><unclear>ṁ</unclear></supplied> sapr̥<supplied reason="lost">t</supplied>thītala, prahr̥ṣṭi parituṣṭa roṣa ruṣa koṣa tr̥ṣṇa praṣa, śakaṙṣaṇa ṣavr̥ṣṇi vr̥ṣṭa ṣalu:<space type="binding-hole"/>maḥ śapr̥tthika <g type="circleCurve"/> mahaṙṣi mahiṣī mahoṣada maheṣa meṣa: muṣa, R̥ṣaḥ muṣika puṣya poṣya kapuṣah praṣaṣṭa
 <!--di transliterasi yang digunakan brandes, lokesh chandra dan soegiharto, kita menemukan cecak di kata « kunaṁ », tetapi di foto yang saya gunakan, bagian tersebut mungkin terhapus akibat dimakan rayap. Saran dari Pak Arlo, sebaiknya nanti membuat komando transliterasi untuk kasus semacam ini: \duluada{ṁ}-->
 <!-- Tidak ada bacaan ruṣa pada ketikan Soegiarto, tetapi ada di edisi Lokesh Chandra. -->
 <!--perlu dilakukan pengecekan terhadap bentuk « u: » dan ū, kemungkinan tarung di sini berfungsi sebagai line filler, yang berfungsi untuk memberikan tanda ganti baris, tetapi perlu diverifikasi dengan melihat lebih jauh fungsinya di L631-->
 <!-- Bentuk aksara 'dha' dan 'ḍa' masih simpang siur dalam naskah ini. Untuk sementara waktu, bentuk 'dha' yang dipilih, mengacu pada bentuk grafem yang ada pada L241 dan L298. -->
-<lb n="5r3"/>:maṣa, ṣadhaṅguli ṣadhaṅga bhūṣaṇa ṣabha:ṣa duṙbha:ṣita, Aṣa: paṣadhayo ṣadhīṣu viṣama <supplied reason="lost"><unclear>dvi</unclear></supplied>paḍa:ṣaṇa ø bhaviṣya<space type="binding-hole"/>ti hiriṣya haṙṣyana puṣaḥ huṣaḥ śaddha len·, viṣa: viṣaya yomi śeṣa dadi ma:nuṣa: kaṣaya, nvata: kaluṣa ki
-<lb n="5r4"/>lviṣa: ṅayuṣa kaṣmala: ka:maṣa, nyataṁ mami yoṅgviṁ naṣa maR̥naḥ naṅindha taya <g type="circleCurve"/>Ř̥̇<g type="circleCurve"/> śa:ka:ga mvaṁ sapr̥tthī sadu<space type="binding-hole"/>lur ika R̥ṅәn· yekihәn· vaṙṇnanәn <supplied reason="lost"><unclear>ta</unclear></supplied>, śuśruṣa: śiṣya śikṣa śviśita v<supplied reason="lost"><unclear>tu</unclear></supplied>nikaṁ huśvaṣa: śeṣaśeśan·, śuśvat·
-<!-- Lokesh Chandra membacanya 'śa:ka:śa' bukan "śa:ka:ga". Tidak ada laporan bahwa dia membetulkan bacaan terhadap kata itu.  -->
+<lb n="5r3"/>:maṣa, ṣadhaṅguli ṣadhaṅga bhūṣaṇa ṣabha:ṣa duṙbha:ṣita, Aṣa: paṣadhayo ṣadhīṣu viṣama <supplied reason="lost"><unclear>dvi</unclear></supplied>paḍa:ṣaṇa <g type="circleCurve"/> bhaviṣya<space type="binding-hole"/>ti hiriṣya haṙṣyana puṣaḥ huṣaḥ śaddha len·, viṣa: viṣaya yomi śeṣa dadi ma:nuṣa: kaṣaya, nvata: kaluṣa ki
+<lb n="5r4"/>lviṣa: ṅayuṣa kaṣmala: ka:maṣa, nyataṁ mami yoṅgviṁ naṣa maR̥naḥ naṅindha taya <g type="circleCurve"/>R̥̆̇<g type="circleCurve"/> śa:ka:ga mvaṁ sapr̥tthī sadu<space type="binding-hole"/>lur ika R̥ṅәn· yekihәn· vaṙṇnanәn <supplied reason="lost"><unclear>ta</unclear></supplied>, śuśruṣa: śiṣya śikṣa śviśita v<supplied reason="lost"><unclear>tu</unclear></supplied>nikaṁ huśvaṣa: śeṣaśeśan·, śuśvat·
+<!-- Lokesh Chandra membacanya 'śa:ka:śa' bukan "śa:ka:ga". Tidak ada laporan bahwa dia membetulkan bacaan terhadap kata itu. -->
 <pb n="5v" xml:id="pb002"/><fw n="5v" place="left"><num value="5">5</num></fw>
-<lb n="5v1"/>śiśinyaśośviśiṣinakaśaśidekaṁvaṣiṣṭa:śaviṣṭi, maṅka:tekaṁśaṭa:voṙśatayatiṅkiṅәt·yekiśaksat·
-vtunya // ø //  ma:ṣanika<unclear rend="check">ṁ</unclear>satanihan· vuvusәnpaḍanya, sa:dusada:satasabha:sisita:sita:si, sәta:susatya
-<lb n="5v2"/>rasasatriyasa:risaṁhyaṁ, sverasvabha:sarīsarīsatisa:risa:ri ø samva:sava:basumatībasusenasunuḥm<hi rend="check">va</hi>
-haikava:sahupava:savinә:sava:sa, duṙba:siduṙyyasanaduṙbyasanaprasastha, byaṙsa:sasa:dusasivinsapujinsap<hi rend="check">ū:</hi>
-<!-- kemungkinan terdapat tanda line filler (tanda ganti baris di lempir) dengan tanda yang mirip dengan tarung, untuk itu perlu dicermati di setiap tempat di L631. Jika itu memang benar merupakan tanda yang dimaksud, maka kita dapat menggantinya dengan §, sebagaimana Pak Arlo mengusulkan-->
-<lb n="5v3"/>jan· ø sa:svaṅgasaṅgasigiseṅgitasaṙggasajja, sә:gәḥsgaṁsigasugiḥsigiransaga:sor·, sa:svaṙggasa:garasagorava:
-sa:ḍakasvaṁ, ratkosvaniṁsataśarat·paknanyasaksat·  <g type="circleCurve"/>Ř̥̇<g type="circleCurve"/> surasaptasaraḥsarasasirasada· samasiḥmapasәn·
-<lb n="5v4"/>savarasutasaha, savinaṁsavanәn·sakalasakavasa, prajananmisadyantyanitikamivara <g type="circleCurve"/>Ř̥̇<g type="circleCurve"/> Itiparuṅguniṅakṣaḥ
+<lb n="5v1"/>śiśinya śośvi śiṣinaka śaśi de kaṁ vaṣiṣṭa: śaviṣṭi, maṅka: tekaṁ śa ṭa:voṙ śa tayat iṅtiṅәt· yeki śaksat·<space type="binding-hole"/> vtunya <g type="//"/><g type="circleCurve"/><g type="//"/> ma:ṣanika<supplied reason="lost"><unclear>ṁ</unclear></supplied> sata nihan· vuvus<supplied reason="lost"><unclear>ə</unclear></supplied>n padhanya, sa:dū sada: sata sabha: sisi ta:sita:si, sәta: susatya
+<lb n="5v2"/>rasa satriya sa:ri saṁ hyaṁ, svera svabha: sarīsarī sati sa:risa:ri <g type="circleCurve"/> samva: sava: basumatī basusena sunuḥ m<supplied reason="lost"><unclear>va</unclear></supplied> <space type="binding-hole"/> haikava:sa hupava:sa vinә:sa va:sa, duṙba: si duṙyyasana duṙbyasana prasastha, byaṙ sa:sa sa:du sasivin sapujin sapū⌈
+<!-- kemungkinan terdapat tanda line filler (tanda ganti baris di lempir) dengan tanda yang mirip dengan tarung, untuk itu perlu dicermati di setiap tempat di L631. Jika itu memang benar merupakan tanda yang dimaksud, maka kita dapat menggantinya dengan ⌈, sebagaimana Pak Arlo mengusulkan-->
+<lb n="5v3"/>jan· <g type="circleCurve"/> sa:svaṅga saṅga sigi seṅgita saṙgga sajja, sә:gәḥ sgaṁ siga sugiḥ sigiran saga:sor·, sa:svaṙgga sa:gara sagorava⌈ <space type="binding-hole"/> sa:dhaka svaṁ, rat kosvaniṁ sata śarat· paknanya saksat· <g type="circleCurve"/>R̥̆̇<g type="circleCurve"/> sura sapta saraḥ sarasa sira sada· samasiḥ mapasәn·
+<lb n="5v4"/>savara suta saha, savinaṁ savanәn· sakala sakavasa, praja nanmi sadyantya niti kamivara <g type="circleCurve"/>R̥̆̇<g type="circleCurve"/> Iti paruṅguniṅ akṣara <space type="binding-hole"/><g type="circleCurve"/>R̥̆̇<g type="circleCurve"/> nyan sutrasandi vuvusәn·, parakr̥ta lviṙnika patiṅkaḥnya, Atambayan·, havkasan·, na:han ta ya: sinaṅguhan⌈
 <!-- kita menemukan kembali bentuk kṣa yang tidak lazim di sini, dan itu membuktikan bahwa secara paleografis bentuk kṣa diwakili dengan dua bentuk-->
-<g type="circleCurve"/>Ř̥̇<g type="circleCurve"/> nyansutrasandivuvusәn·, parakr̥talviṙnikapatiṅkaḥnya, hatambayan·, havkasan·, na:hantaya:sinaṅguha<hi rend="check">n·:</hi>
 <pb n="6r" xml:id="pb003"/>
-<lb n="6r1"/>vaṙ<hi rend="check">ṇa</hi> ø tinikaḥpinarvavkasan·, Ikaṁnamaḥyekihәn·śvaraṅarannya, yapvankapuṙvvahanta, sinaṅguhan· vyaṁñjana:na:
-ma ø °ḷ, yantakadisa:mana, kumut·sinami, I, puṙvvaka, vkasan·ghoṣa, sahlesahrisvabatәk·, AIUR̥°ḷ,
-<lb n="6r2"/>, lvi<unclear>r</unclear>nyakavruhana ø diṙgha:ṅaranyamanhәr·, AIUR̥°ḷ, limaṁvivisa:haya, sandyakṣaramunahaṅgәpan·, °e
+<lb n="6r1"/>vaṙ<hi rend="check">ṇa</hi> <g type="circleCurve"/> tinikaḥpinarvavkasan·, Ikaṁnamaḥyekihәn·śvaraṅarannya, yapvankapuṙvvahanta, sinaṅguhan· vyaṁñjana:na:
+ma <g type="circleCurve"/> °ḷ, yantakadisa:mana, kumut·sinami, I, puṙvvaka, vkasan·ghoṣa, sahlesahrisvabatәk·, AIUR̥°ḷ,
+<lb n="6r2"/>, lvi<unclear>r</unclear>nyakavruhana <g type="circleCurve"/> diṙgha:ṅaranyamanhәr·, AIUR̥°ḷ, limaṁvivisa:haya, sandyakṣaramunahaṅgәpan·, °e
 <!--bentuk kṣa ditulis dengan cara kedua-->
-Ai°oAu, na:han·lviṙnya ø (pva\maum) ø kakha, cacha, tatha, papha, sakatlunihansahayaniṅaghoṣa, ga:gha:ṭadiyarala
-<lb n="6r3"/>vaha, siṇoṣan·rakvana:manika ø vaṙggaṅaranyalimalikur·, kapinakapuṙnnanika<unclear>ṅ</unclear>ma, mavkasanpinakavkasnya
-, kagakalimanyayaśud<hi rend="check">ḍ</hi>an·, raśaṣa:sahayanyavudḍavuḍaḥ ø Anunasikaṅañanana:ma, Antasthaṅaranika yar·
+Ai°oAu, na:han·lviṙnya <g type="circleCurve"/> (pva\maum) <g type="circleCurve"/> kakha, cacha, tatha, papha, sakatlunihansahayaniṅaghoṣa, ga:gha:ṭadiyarala
+<lb n="6r3"/>vaha, siṇoṣan·rakvana:manika <g type="circleCurve"/> vaṙggaṅaranyalimalikur·, kapinakapuṙnnanika<unclear>ṅ</unclear>ma, mavkasanpinakavkasnya
+, kagakalimanyayaśud<hi rend="check">ḍ</hi>an·, raśaṣa:sahayanyavudḍavuḍaḥ <g type="circleCurve"/> Anunasikaṅañanana:ma, Antasthaṅaranika yar·
 <!--śuddhan atau śudḍan, untuk sementara waktu dibaca śudḍan-->
-<lb n="6r4"/>lava:tut·, osmanaśaṣahaṣimidaḥ, patiṅkaḥniṁsutrasantike ø (pva\maum) ø sampunpratekanikanaṅakṣarariṁvyañja:
-na:lavan·śvara, tucapatasañjatanikhahәn·, prakaraniṅaranyakavruhana ø ṅaranikaṅhulusavaneḥ, makuṭaruku
+<lb n="6r4"/>lava:tut·, osmanaśaṣahaṣimidaḥ, patiṅkaḥniṁsutrasantike <g type="circleCurve"/> (pva\maum) <g type="circleCurve"/> sampunpratekanikanaṅakṣarariṁvyañja:
+na:lavan·śvara, tucapatasañjatanikhahәn·, prakaraniṅaranyakavruhana <g type="circleCurve"/> ṅaranikaṅhulusavaneḥ, makuṭaruku
 <pb n="6v" xml:id="pb004"/>
-<lb n="6v1"/>haśrama:stakakaphala, tijakulaśekaramasiraḥ, na:hantaparina:maniṅśr̥ṅga ø di<hi rend="check">ṙ</hi>gha:hulumapalenan·, ºota
-klavankamñarakuñcir·, majaṭa magumbak·majambulaṅurai, svana:manidigha:yan·riṅhulu ø vindulavanmadhanakunaṅ, kuna
-<lb n="6v2"/>ṅkunaṁ<hi rend="check">,</hi> lantara:la:van·vintaṁ, tilakatitikkanisurahan·, na:hantaparinaman<hi rend="check">ī</hi>ṁcanda ø nyantaṁcakrajantraguluṅan·,
-suḍaṙṣaṇa:yudḍakr̥ṣṇalensakaṭa, daka:na:mayekihuniṅan·, mvaṅañakrahuluyuktikavruhana ø yapvanikaṅtaliṅa
-<lb n="6v3"/>nihan·, kuṇḍalasumpiṁcapiṁlen·kaṙṇna, śrotasuvәṅmvaṅiṅtiṅәt·, phalagasuna:ma:nitaliṅa ø diṙgha:ṅa
+<lb n="6v1"/>haśrama:stakakaphala, tijakulaśekaramasiraḥ, na:hantaparina:maniṅśr̥ṅga <g type="circleCurve"/> di<hi rend="check">ṙ</hi>gha:hulumapalenan·, ºota
+klavankamñarakuñcir·, majaṭa magumbak·majambulaṅurai, svana:manidigha:yan·riṅhulu <g type="circleCurve"/> vindulavanmadhanakunaṅ, kuna
+<lb n="6v2"/>ṅkunaṁ<hi rend="check">,</hi> lantara:la:van·vintaṁ, tilakatitikkanisurahan·, na:hantaparinaman<hi rend="check">ī</hi>ṁcanda <g type="circleCurve"/> nyantaṁcakrajantraguluṅan·,
+suḍaṙṣaṇa:yudḍakr̥ṣṇalensakaṭa, daka:na:mayekihuniṅan·, mvaṅañakrahuluyuktikavruhana <g type="circleCurve"/> yapvanikaṅtaliṅa
+<lb n="6v3"/>nihan·, kuṇḍalasumpiṁcapiṁlen·kaṙṇna, śrotasuvәṅmvaṅiṅtiṅәt·, phalagasuna:ma:nitaliṅa <g type="circleCurve"/> diṙgha:ṅa
 ranya, tulale, Ikutaṅan·vastralen·galahadava, kirivilakuñcayaśavaneḥ, Asiṅadava:diṙgha:ḥkve
-<lb n="6v4"/><hi rend="check">ka</hi> ø kaṁraśukagoduhakeśamavaju, kakiṙkunaṁśaṅkalenkuruṅan·, Ikaṁkalambilavanhava:manaṅgaṁ, matha
+<lb n="6v4"/><hi rend="check">ka</hi> <g type="circleCurve"/> kaṁraśukagoduhakeśamavaju, kakiṙkunaṁśaṅkalenkuruṅan·, Ikaṁkalambilavanhava:manaṅgaṁ, matha
 <!--4570: ...tvaka..., mavajr̥-->
-putapuhana:mapayuṁ, Ikaṁmanaṅguḥkalambivaneḥ, daśa:na:maniṁturuṅaranyanahan· ø yapvan·ha:tika:maka
+putapuhana:mapayuṁ, Ikaṁmanaṅguḥkalambivaneḥ, daśa:na:maniṁturuṅaranyanahan· <g type="circleCurve"/> yapvan·ha:tika:maka
 <!-- <figure>
-  <graphic url="CK-L631diplo/007r.jpg"/>
+ <graphic url="CK-L631diplo/007r.jpg"/>
 <graphic url="CK-L631diplo/007v.jpg"/>
 <graphic url="CK-L631diplo/009r.jpg"/>
 <graphic url="CK-L631diplo/009v.jpg}"/>
 </figure> -->
 <pb n="7r" xml:id="pb005"/>
-<lb n="7r1"/>ṇḍihrilavan·guduha, vajasaharuha, masuratija:hubha:manajnuvaneḥ, visaṙjjaniyekinahansabatәk· ø ma
+<lb n="7r1"/>ṇḍihrilavan·guduha, vajasaharuha, masuratija:hubha:manajnuvaneḥ, visaṙjjaniyekinahansabatәk· <g type="circleCurve"/> ma
 <!--ṇḍihri atau ṇdhihri-->
 tipjaḥśunyaturukunaṁ, paratraknabhajraliṇa:guliṅan·, ma:napayuṁmaruṅkilenasoṁsoṁ, na:hankatәṅәn·hi
-<lb n="7r2"/>kayatiṅhakanasaṅajñanan· ø matkәn·gaḍaśukuśuku, phaluphaludanasahagada, vәntisalarispvakakuritan·
-, Asiṅadava:jәṁnyayekiknakәn· ø vatәkaluṅidmvaṁpaṇḍi, curighagadhiṁcandraha:śasuṅutinyun·, sihuṅumiṅis·
-<lb n="7r3"/>yatamalaris·, curigaknahan·huktitaka:kyakyan· ø śiva:pahrayatatinam·pil·, masadkuṅatyәṁhamluksiṅhә
-l·, muṅgviṁpataraṇabantalkaraṅhuluyaya:takakvakvan· ø hanataṁhaṙvḍihanadheṁ, kr̥halabhujagana:gapa:kapi
-<lb n="7r4"/>nukәṙnya, kadivaṅkavayakumaluṁ, laras·viṇṭaṁnya, yatakakrakran ø Aṅgustalaḥnyabanala, kukumano
-l· sagayujñasivur·, pahat·yatinavanya, hananpasidkuṅamkultur·, kukunyatumakulkadikr̥kr̥ ø hanata:ṅi
+<lb n="7r2"/>kayatiṅhakanasaṅajñanan· <g type="circleCurve"/> matkәn·gaḍaśukuśuku, phaluphaludanasahagada, vәntisalarispvakakuritan·
+, Asiṅadava:jәṁnyayekiknakәn· <g type="circleCurve"/> vatәkaluṅidmvaṁpaṇḍi, curighagadhiṁcandraha:śasuṅutinyun·, sihuṅumiṅis·
+<lb n="7r3"/>yatamalaris·, curigaknahan·huktitaka:kyakyan· <g type="circleCurve"/> śiva:pahrayatatinam·pil·, masadkuṅatyәṁhamluksiṅhә
+l·, muṅgviṁpataraṇabantalkaraṅhuluyaya:takakvakvan· <g type="circleCurve"/> hanataṁhaṙvḍihanadheṁ, kr̥halabhujagana:gapa:kapi
+<lb n="7r4"/>nukәṙnya, kadivaṅkavayakumaluṁ, laras·viṇṭaṁnya, yatakakrakran <g type="circleCurve"/> Aṅgustalaḥnyabanala, kukumano
+l· sagayujñasivur·, pahat·yatinavanya, hananpasidkuṅamkultur·, kukunyatumakulkadikr̥kr̥ <g type="circleCurve"/> hanata:ṅi
 <pb n="7v" xml:id="pb006"/>
 <lb n="7v1"/>ṇḍitkuṙlava:k·, hanana:mavagadana:gakonta, tuhuklimpuṁkr̥talapaṇḍacurik·, śalviranikaṅinuṇḍa, yaya
-nyan·rajinuṁjuṁhika // 0 // saṁhyaṁjagattripuruṣa, na:ma:śiva:yataṅhulun·, Amvitumasthava:ṁkita, Am<hi rend="check">i</hi>ṇna
-<lb n="7v2"/>navaṙtthavtun·, gurunijagatkitaya, mulakṣaragurula:ghu, matrahaṙyyayataṅgaṇa, na:han·ṅarantaneṁcanda ø
-kitamakarūpa:canda, gavaititimvaṁśloka, yatavarṇnanәnkuvtun·, yapanika:śuluhiṁrat· ø lviṙniṁcandataṅarannya,
-<lb n="7v3"/>kveḥriṁviyaṁniṅakṣara, rikanaṁpa:dasa:yati, pa:daṅaranyasakaṇḍaḥ, pataṁpa:daśaśokaṇḍa ø mulagya
-keṅtakna, Akṣaratuṅgaliṁyati, yekasinaṅguhantyanta, rvaṅakṣara:puhatka ø tryyakṣaramadḍyamana:ma, pratiṣṭapa
-<lb n="7v4"/>taṅakṣara, śiśupratiṣṭayanlima, nmaṅakṣarajagattri ø Uṣṇikripituṅakṣara, vvalupvayapad<hi rend="check">ḍa</hi>:nuṣṭup·vr̥:
-hatisaṅaṅakṣara, sapuluḥpvasipakṣatiḥ ø saśamduhapvasavlas·, rvavlaspvayajagatī, Ahijagat·tiga:vlas·,
+nyan·rajinuṁjuṁhika <g type="//"/> 0 <g type="//"/> saṁhyaṁjagattripuruṣa, na:ma:śiva:yataṅhulun·, Amvitumasthava:ṁkita, Am<hi rend="check">i</hi>ṇna
+<lb n="7v2"/>navaṙtthavtun·, gurunijagatkitaya, mulakṣaragurula:ghu, matrahaṙyyayataṅgaṇa, na:han·ṅarantaneṁcanda <g type="circleCurve"/>
+kitamakarūpa:canda, gavaititimvaṁśloka, yatavarṇnanәnkuvtun·, yapanika:śuluhiṁrat· <g type="circleCurve"/> lviṙniṁcandataṅarannya,
+<lb n="7v3"/>kveḥriṁviyaṁniṅakṣara, rikanaṁpa:dasa:yati, pa:daṅaranyasakaṇḍaḥ, pataṁpa:daśaśokaṇḍa <g type="circleCurve"/> mulagya
+keṅtakna, Akṣaratuṅgaliṁyati, yekasinaṅguhantyanta, rvaṅakṣara:puhatka <g type="circleCurve"/> tryyakṣaramadḍyamana:ma, pratiṣṭapa
+<lb n="7v4"/>taṅakṣara, śiśupratiṣṭayanlima, nmaṅakṣarajagattri <g type="circleCurve"/> Uṣṇikripituṅakṣara, vvalupvayapad<hi rend="check">ḍa</hi>:nuṣṭup·vr̥:
+hatisaṅaṅakṣara, sapuluḥpvasipakṣatiḥ <g type="circleCurve"/> saśamduhapvasavlas·, rvavlaspvayajagatī, Ahijagat·tiga:vlas·,
 <pb n="9r" xml:id="pb007"/>
 <lb n="9r1"/>dri, śr̥ddara, mandrakahniṁ, Aśvalalita, mәttakriḍi, kendran·, śighragati, turaṅgagati, pa:ḍaviśala, śa:
 kroñca, vahirat·, bhujaṅgavijrambika, vilaśini, jayavikrama, sameṇiṁ, samabhiṣama, candrakanta, siṅha
 <lb n="9r2"/>śarī, vijayadri, viṣalata, kuśuma, klikliṅan·, dhayakdhayakan·, jayakusuma, lalu, ḍaṇḍa, ḍaṇḍaka,
-lakupisan·, matra, Aryya ø nda:samaṅkanaṅaraniṁlaku, Icca:niraṅkaṇa, mvaṁhametalaku, le<hi rend="check">na</hi>śa
-<lb n="9r3"/>ṅkerika ø nihan·vaṙtthanya // 0 // °<hi rend="check">o</hi>:\maum, na:, nda:, stu ø °\textipa{\textdotbreve{r̥}} ø sambaḥ, kva:gәṅ, rihyaṁ, bhadra: ø °\textipa{\textdotbreve{r̥}} ø:
-taṇḍasku, jña:ṇaṅku, bhaktya:gәṁ, bha:drotiḥ ø °\textipa{\textdotbreve{r̥}} ø skarasәp·, padhanikiṁ, vacanacan·, vaṇamr̥ghi<gap reason="lost" unit="character" quantity="1"/>\\R̥
-<lb n="9r4"/>hyaṅakaśa, bhuḥkiraṇondaḥ, Agnәmarut·vvai, o:\maum vijayanti ø R̥ ø sakveḥhavatәkhyaṁ, muṅgiṁnavade
-śa, tontonpraṇaśaṅku, muṅgviṁtanumadya ø R̥ ø liṇḍumarasaṁhyaṁ, °o:gaḥkriśimolaḥkeṅgәt<gap reason="lost" unit="character" quantity="3"/>
+lakupisan·, matra, Aryya <g type="circleCurve"/> nda:samaṅkanaṅaraniṁlaku, Icca:niraṅkaṇa, mvaṁhametalaku, le<hi rend="check">na</hi>śa
+<lb n="9r3"/>ṅkerika <g type="circleCurve"/> nihan·vaṙtthanya <g type="//"/> 0 <g type="//"/> °<hi rend="check">o</hi>:\maum, na:, nda:, stu <g type="circleCurve"/> °\textipa{\textdotbreve{r̥}} <g type="circleCurve"/> sambaḥ, kva:gәṅ, rihyaṁ, bhadra: <g type="circleCurve"/> °\textipa{\textdotbreve{r̥}} <g type="circleCurve"/>:
+taṇḍasku, jña:ṇaṅku, bhaktya:gәṁ, bha:drotiḥ <g type="circleCurve"/> °\textipa{\textdotbreve{r̥}} <g type="circleCurve"/> skarasәp·, padhanikiṁ, vacanacan·, vaṇamr̥ghi<gap reason="lost" unit="character" quantity="1"/>\\R̥
+<lb n="9r4"/>hyaṅakaśa, bhuḥkiraṇondaḥ, Agnәmarut·vvai, o:\maum vijayanti <g type="circleCurve"/> R̥ <g type="circleCurve"/> sakveḥhavatәkhyaṁ, muṅgiṁnavade
+śa, tontonpraṇaśaṅku, muṅgviṁtanumadya <g type="circleCurve"/> R̥ <g type="circleCurve"/> liṇḍumarasaṁhyaṁ, °o:gaḥkriśimolaḥkeṅgәt<gap reason="lost" unit="character" quantity="3"/>
 <pb n="9v" xml:id="pb008"/>
-<lb n="9v1"/>hya, kanya:tanumaddya ø R̥ ø sahananikirat·, naratarusatva, padhatapinūjeṁ, kuśumitaganda ø R̥ ø ma
-tamulatahniṁ, damarūpamanika, vuvusamagaṁsarum·, madhukaralalita ø R̥ ø sakveḥnyavatuka<gap reason="lost" unit="character" quantity="2"/>
-<lb n="9v2"/>kyanuṁpamujaṅku, kleṣalva:ṅaphalanya, na:ṣṭa:niṁmadaleka ø R̥ ø tlastaṅhulunamuja, nirogahunaviṇna
-, phalaṅkvakanukuśala, kuma:ralalitahatoṁ ø R̥ ø nahansamṭaḥkvariṁdeva, karūhunrimunīvara<gap reason="lost" unit="character" quantity="4"/>
-<lb n="9v3"/>meṙṇnanajña:ṇavata:patya:thәṙvtun· ø R̥ ø sakveḥniṁpa:dha:yanpatya, ka:la:pha:la:ghūṅakṣara, pa::
-ḍa:ka:parvva:kapiṁpat·, pa:ḍa:nuṣṭuplviṙniṁlakū  ø R̥ ø Apan·yatikalintiḥ, jña:ṇa:hayulavanulaḥ, <unclear>pūjasa</unclear>
-<lb n="9v4"/>tatatanalum·, sa:pantikalagilagin· ø R̥ ø lviṙnikanaṁhayulagi, yekidlәntuladhana, śoṅavnaṁśa
-paraṇa, divyakadipvavitana ø R̥ ø yapvanulaḥla:ṁg<hi rend="check">v</hi>әvas, Ayvaginәṁbvatantukan·, dośanikapri<hi rend="check">ka</hi>
+<lb n="9v1"/>hya, kanya:tanumaddya <g type="circleCurve"/> R̥ <g type="circleCurve"/> sahananikirat·, naratarusatva, padhatapinūjeṁ, kuśumitaganda <g type="circleCurve"/> R̥ <g type="circleCurve"/> ma
+tamulatahniṁ, damarūpamanika, vuvusamagaṁsarum·, madhukaralalita <g type="circleCurve"/> R̥ <g type="circleCurve"/> sakveḥnyavatuka<gap reason="lost" unit="character" quantity="2"/>
+<lb n="9v2"/>kyanuṁpamujaṅku, kleṣalva:ṅaphalanya, na:ṣṭa:niṁmadaleka <g type="circleCurve"/> R̥ <g type="circleCurve"/> tlastaṅhulunamuja, nirogahunaviṇna
+, phalaṅkvakanukuśala, kuma:ralalitahatoṁ <g type="circleCurve"/> R̥ <g type="circleCurve"/> nahansamṭaḥkvariṁdeva, karūhunrimunīvara<gap reason="lost" unit="character" quantity="4"/>
+<lb n="9v3"/>meṙṇnanajña:ṇavata:patya:thәṙvtun· <g type="circleCurve"/> R̥ <g type="circleCurve"/> sakveḥniṁpa:dha:yanpatya, ka:la:pha:la:ghūṅakṣara, pa::
+ḍa:ka:parvva:kapiṁpat·, pa:ḍa:nuṣṭuplviṙniṁlakū <g type="circleCurve"/> R̥ <g type="circleCurve"/> Apan·yatikalintiḥ, jña:ṇa:hayulavanulaḥ, <unclear>pūjasa</unclear>
+<lb n="9v4"/>tatatanalum·, sa:pantikalagilagin· <g type="circleCurve"/> R̥ <g type="circleCurve"/> lviṙnikanaṁhayulagi, yekidlәntuladhana, śoṅavnaṁśa
+paraṇa, divyakadipvavitana <g type="circleCurve"/> R̥ <g type="circleCurve"/> yapvanulaḥla:ṁg<hi rend="check">v</hi>әvas, Ayvaginәṁbvatantukan·, dośanikapri<hi rend="check">ka</hi>
 <!--<figure><graphic url="CK-L631diplo/012r.jpg"/>
 <graphic url="CK-L631diplo/012v.jpg"/>
 <graphic url="CK-L631diplo/014r.jpg"/>
 <graphic url="CK-L631diplo/014v.jpg"/></figure>-->
 <pb n="12r" xml:id="pb009"/>
-<lb n="12r1"/>prayatna ø R̥ ø Aparankunaṁphalanikaṁkuhaka, InaR̥mta:sukamadoḥmataya, satajanmajanmasaparanya <hi rend="check">ṣ</hi>mә
-r·, bhramitakṣaranyasaparanyativas· ø R̥ ø tekunyanprintaṅhulaḥsadubhuddhi, Apan·vyaṙttha<gap reason="lost" unit="character" quantity="3"/>
-<lb n="12r2"/>heriṁ, siṁṅvaṁsanvamatambәriṁra:mareṇa, maṅkastrīyaśatyayata:viṣvadevī ø R̥ ø dvaniṅvaṅahurip·
+<lb n="12r1"/>prayatna <g type="circleCurve"/> R̥ <g type="circleCurve"/> Aparankunaṁphalanikaṁkuhaka, InaR̥mta:sukamadoḥmataya, satajanmajanmasaparanya <hi rend="check">ṣ</hi>mә
+r·, bhramitakṣaranyasaparanyativas· <g type="circleCurve"/> R̥ <g type="circleCurve"/> tekunyanprintaṅhulaḥsadubhuddhi, Apan·vyaṙttha<gap reason="lost" unit="character" quantity="3"/>
+<lb n="12r2"/>heriṁ, siṁṅvaṁsanvamatambәriṁra:mareṇa, maṅkastrīyaśatyayata:viṣvadevī <g type="circleCurve"/> R̥ <g type="circleCurve"/> dvaniṅvaṅahurip·
 śaraṇagata, mareṅagatisaṙvvakasihr̥p·, yapvan·vnaṅaśa:mataśaṇa <add>ha</add>, ḷhiṁmatmahan·tu<gap reason="lost" unit="character" quantity="3"/>
 <lb n="12r3"/>pasiratanpaṅasthavaśuśīla, matuhararaipaḍavruhikakan·sor·, kunaṅivәhiṁvnaṁpranaśabhakti, kadina
-vama:līṇījugabhiṣojar· ø R̥ ø mataṅikasaṁvrugumagapikaṁme, vәḥanumaneṁrat·ṅuni<gap reason="lost" unit="character" quantity="3"/>
-<lb n="12r4"/>°<hi rend="check">i</hi>ikaṁvaḥmavaravaradoḥ, payatanasīkaṁkuśumapadanta ø R̥ ø lviṙniṁvvaṁvaraṣaglәm·laṇavinasvas·, vruḥ
+vama:līṇījugabhiṣojar· <g type="circleCurve"/> R̥ <g type="circleCurve"/> mataṅikasaṁvrugumagapikaṁme, vәḥanumaneṁrat·ṅuni<gap reason="lost" unit="character" quantity="3"/>
+<lb n="12r4"/>°<hi rend="check">i</hi>ikaṁvaḥmavaravaradoḥ, payatanasīkaṁkuśumapadanta <g type="circleCurve"/> R̥ <g type="circleCurve"/> lviṙniṁvvaṁvaraṣaglәm·laṇavinasvas·, vruḥ
 <!--4570: kaṁtusuma-->
 mojaṙriṅalaratantahekaṅevә:, vvaṁprajña:sugihaṅajap·jugul·darindra, mevә:ṅvaṁmaṅa<gap reason="lost" unit="character" quantity="4"/>
 <pb n="12v" xml:id="pb010"/>
-<lb n="12v1"/>len· ø <hi rend="check">ṅa</hi> ø hahetusaṁvruhakulamitragәtaha, Upa:ḍatapvahinanakәnpaśaṅgraha, Ivә:nikigiṇamahuripa
-śada:śukha, nahantaton·śucirasna:tanpa:ḍana ø R̥ ø tanmevә:lviṙniṁyaśadeśaṅkaruneṁra<hi rend="check">ta</hi><gap reason="lost" unit="character" quantity="3"/>\
+<lb n="12v1"/>len· <g type="circleCurve"/> <hi rend="check">ṅa</hi> <g type="circleCurve"/> hahetusaṁvruhakulamitragәtaha, Upa:ḍatapvahinanakәnpaśaṅgraha, Ivә:nikigiṇamahuripa
+śada:śukha, nahantaton·śucirasna:tanpa:ḍana <g type="circleCurve"/> R̥ <g type="circleCurve"/> tanmevә:lviṙniṁyaśadeśaṅkaruneṁra<hi rend="check">ta</hi><gap reason="lost" unit="character" quantity="3"/>\
 <lb n="12v2"/>śa:laviha:raśramabodḍi, pәḥmantramvaṁtaṅgulika:ka:yaśadonya, kaśyaṣiḥnimittamayura:tankiniṅki
-n· ø R̥ ø śudyekasaṅvruḥhaḷpaknakinatyәṅan·, Apan·śudḍambәknirakadivariṅinmapan,<gap reason="lost" unit="character" quantity="3"/>
-<lb n="12v3"/>siratteṁśatva, pūcakniṁcrol·ṅvaṁgumavayasirasambhaddha ø R̥ ø taśikupamanisaṁḍaneṣṭitamaṙpahiṁpa:
+n· <g type="circleCurve"/> R̥ <g type="circleCurve"/> śudyekasaṅvruḥhaḷpaknakinatyәṅan·, Apan·śudḍambәknirakadivariṅinmapan,<gap reason="lost" unit="character" quantity="3"/>
+<lb n="12v3"/>siratteṁśatva, pūcakniṁcrol·ṅvaṁgumavayasirasambhaddha <g type="circleCurve"/> R̥ <g type="circleCurve"/> taśikupamanisaṁḍaneṣṭitamaṙpahiṁpa:
 puphulaniṅmaslaṇa:tkatanpinet·, sujanagunuṅapuṇḍakanyamamtvakәn·kaluṣatvasaṅe<gap reason="lost" unit="character" quantity="3"/>
 <!--4570: ..amambvakәn-->
-<lb n="12v4"/>jita ø R̥ ø narapatikadibahnikatarariṅapan·, Asiṅumulatar̥smavdigirigirin·, varagalayagu°<hi rend="check">әṁ</hi>kala
+<lb n="12v4"/>jita <g type="circleCurve"/> R̥ <g type="circleCurve"/> narapatikadibahnikatarariṅapan·, Asiṅumulatar̥smavdigirigirin·, varagalayagu°<hi rend="check">әṁ</hi>kala
 <!--apakah memang vokal ә memiliki tulisan seperti itu, harus dipastikan lagi-->
-ṇaparavaṣa, kadikapinususiṁpraharaṇakalika ø R̥ ø tulyapraśa:ḍasirasaṁmunimanpinuja:<gap reason="lost" unit="character" quantity="2"/>
+ṇaparavaṣa, kadikapinususiṁpraharaṇakalika <g type="circleCurve"/> R̥ <g type="circleCurve"/> tulyapraśa:ḍasirasaṁmunimanpinuja:<gap reason="lost" unit="character" quantity="2"/>
 <pb n="14r" xml:id="pb011"/>
 <lb n="14r1"/>tpva<hi rend="check">h</hi>vaṁvruhumujarakәndenika:bha:vabhaṅga, Ambәk·moha:ṅayamayaminak·bhuddhisatośayadoḥ
-vruḥtapvayan·vruhumujarakәn·śojariṁpustaka:ji, mantrakanta:jaliṇisiṅadumonaka:panpuṅguṅ <hi rend="check">ø <unclear>R̥</unclear> ø</hi>
+vruḥtapvayan·vruhumujarakәn·śojariṁpustaka:ji, mantrakanta:jaliṇisiṅadumonaka:panpuṅguṅ <hi rend="check"><g type="circleCurve"/> <unclear>R̥</unclear> <g type="circleCurve"/></hi>
 <lb n="14r2"/>yaikalaṇa:vuṅambavahika:glәmanayanaya, śastraglaṙbratajivinija:vijahapajamujit·, yapvaginәṁraṣa:ni
-ṅa<hi rend="check">v</hi>itattvayapamurukutut·, lviṙkadibhaṅśapatrapatita:vdikaruhunana ø R̥ ø viphalatkaptamamrihanakūla
+ṅa<hi rend="check">v</hi>itattvayapamurukutut·, lviṙkadibhaṅśapatrapatita:vdikaruhunana <g type="circleCurve"/> R̥ <g type="circleCurve"/> viphalatkaptamamrihanakūla
 <!--4570: jitattva-->
 <lb n="14r3"/>sdhaṁtararai, yanapayatankatolihavuvusnirasaṁmatuha, lvihatika:yakeṣyaṇakabeḥtikanaṁsapa
-kon·, Avitanariṁpisanpvasatahundaḷhә:ṅatika ø R̥ ø śalaklaṁsәb·poḥnaṅkaraṣalinvihṅka:si\\R̥
+kon·, Avitanariṁpisanpvasatahundaḷhә:ṅatika <g type="circleCurve"/> R̥ <g type="circleCurve"/> śalaklaṁsәb·poḥnaṅkaraṣalinvihṅka:si\\R̥
 <!--4570: lintiḥ-->
 <lb n="14r4"/>ṅamanis·, kaśevan·kopadyanr̥ṣimutimutil·goḍakuhara, Asiṁśanta:karuṇyasiralinti
-ḥpaṇḍitatmәn·, matanyeka:saṁvruḥmakәkәsayavat·riṁśikariṇi ø R̥ ø kadalitinәtәlmuṅgviṁdyunpa:
+ḥpaṇḍitatmәn·, matanyeka:saṁvruḥmakәkәsayavat·riṁśikariṇi <g type="circleCurve"/> R̥ <g type="circleCurve"/> kadalitinәtәlmuṅgviṁdyunpa:
 <pb n="14v" xml:id="pb012"/>
 <lb n="14v1"/>t·kuḷmnyataśaktaya, śuraṣapinaṅanmaṅka:saṁvruḥkumәlmatapeṁvukir·, mtahayasimohambәk·krodḍa
-śekmabalik·brәsiḥ, maṇahiraśubhaśvecca:menakmaṇakmanohariṇipluta ø R̥ ø tanadvakatika:vuvusniṅu
+śekmabalik·brәsiḥ, maṇahiraśubhaśvecca:menakmaṇakmanohariṇipluta <g type="circleCurve"/> R̥ <g type="circleCurve"/> tanadvakatika:vuvusniṅu
 <lb n="14v2"/>makūkalokeśvaran·, vuvus·knaśalaḥhala:hayuṅulaḥyataṅkәn·gunuṁ, nahansuśupanantahayvahuni
-ṅan·riliṁniśarat·, mulathumnәṅamrihabratakumәlsapr̥tthitala ø R̥ ø Apan·yeka:kleṣanisikaṅ:
+ṅan·riliṁniśarat·, mulathumnәṅamrihabratakumәlsapr̥tthitala <g type="circleCurve"/> R̥ <g type="circleCurve"/> Apan·yeka:kleṣanisikaṅ:
 <lb n="14v3"/>dadinyanpramadḍeṅuripnya, gәṁkrodḍa:gәṁmohamaṅapakariḥtan·vnaṁdyaḥmgәṁnyan·, vus·vruḥpvaṅvaṁhayvata
-paḷpaḷḥpriḥbhabadriṁpraya:pәs·, vaita:hilyambәk·kuśumitalata:meṣita:rumtaruṇya ø R̥ ø
+paḷpaḷḥpriḥbhabadriṁpraya:pәs·, vaita:hilyambәk·kuśumitalata:meṣita:rumtaruṇya <g type="circleCurve"/> R̥ <g type="circleCurve"/>
 <!--4570: iva taṅ-->
 <lb n="14v4"/>yansampunparituṣṭaniṙmmalaśukhaṅambәk·tḍuḥtan·cala, <hi rend="check">bhu</hi>ktekapadhamokranityamabnәṙmaluykapa
 ṅguḥmṅa, kleṣatimpәlasimpәnaṅdulurakәnmilva:varaḥriṅavan·, nora:nampәtatankavadḍatkapiṁśa:duṙ
@@ -282,48 +278,48 @@ paḷpaḷḥpriḥbhabadriṁpraya:pәs·, vaita:hilyambәk·kuśumitalata:me�
 <graphic url="CK-L631diplo/016v.jpg"/></figure>-->
 <pb n="15r" xml:id="pb013"/>
 <!--ḷnakta?-->
-<lb n="15r1"/>lavikridita ø R̥ ø dūrapvaṁvvaṁvnaṁmaṅkaṇatumuladaśaṁbhagya:kr̥tavara, Apanmakralmatiṅgarkadivatulumutә
+<lb n="15r1"/>lavikridita <g type="circleCurve"/> R̥ <g type="circleCurve"/> dūrapvaṁvvaṁvnaṁmaṅkaṇatumuladaśaṁbhagya:kr̥tavara, Apanmakralmatiṅgarkadivatulumutә
 <!--4570: vnaṅvnaṅ, Apanmakmul-->
 n·bhyaktakaśaḷyә:, nya:taṁvahyatrika:ya:kavnaṅasakar̥ṁgambiradahatәn·, śabdolaḥvaihiśomya:
 <!--bentuk : yang memiliki varian dengan pemanjangan bagian bawah-->
 <!--4570: nyateṅ-->
-<lb n="15r2"/>lmәsasmuguyulviṙniṁśuvaḍana ø °{r̥} ø sakveḥnikiṁdadikabeḥtanorakatunanhala:lavanayu, ndasaṁpina:
+<lb n="15r2"/>lmәsasmuguyulviṙniṁśuvaḍana <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> sakveḥnikiṁdadikabeḥtanorakatunanhala:lavanayu, ndasaṁpina:
 <!--4570: (smu? or soeg. add: pramaṇa, vesaka)-->
 ṇḍitaṅarannyatankaluputan·vruhahr̥tanaha, <hi rend="check">°ḷ</hi>naktaduṙbhaganikaṅhulaḥmahalayan·vimaṙggaginavai, ma:
 <!--4570: rinakta-->
-<lb n="15r3"/>siḥsireṅagatisaṙvvajanmaṅuniveḥmr̥ghaṅśarajanī ø R̥ ø tamba:roṇḍonlatamvaṁkakayukayuvaneḥ
+<lb n="15r3"/>siḥsireṅagatisaṙvvajanmaṅuniveḥmr̥ghaṅśarajanī <g type="circleCurve"/> R̥ <g type="circleCurve"/> tamba:roṇḍonlatamvaṁkakayukayuvaneḥ
 riṁgunuṁvitnīkadoḥ, siṁvvitpinriḥpinetsaṁvruhipaknanika:paṅhilaṁrogadonya, maṅka:saṁvruḥvnaṁpaṇḍi
-<lb n="15r4"/>taśaraṇanikiṁsaṙvvajanma:sihiṁrat·, tya:gīyogīsahiṣṇumaramanusunusup·riṁgunuṁman<hi rend="check">dh</hi>raradri ø °{r̥} ø
+<lb n="15r4"/>taśaraṇanikiṁsaṙvvajanma:sihiṁrat·, tya:gīyogīsahiṣṇumaramanusunusup·riṁgunuṁman<hi rend="check">dh</hi>raradri <g type="circleCurve"/> °{r̥} <g type="circleCurve"/>
 yapvanma:pәsmanaḥtacalacalakavnaṅa:norabhaṅgaṅgaka:ra, ta:bhyaṣa:taṅasiḥmehikadhidhikavkas·hva
 <pb n="15v" xml:id="pb014"/>
 <lb n="15v1"/><gap reason="lost" unit="character" quantity="2"/>sanniśraya:śan·, śvecca:nteṅrat·sakahyun·tkaniyatanikanda:vatkyәnanaḍīra, tan·rakva:tan·dlaha:
 <!--4570: gveccanteṅ-->
-paramakalpasәn·śr̥ddhara:ri<unclear>ṅ</unclear>vatәkhyaṁ ø R̥ ø bvattalkas·huvusgavayakәntikakaṁparahiteṁparamparaR̥gә:
+paramakalpasәn·śr̥ddhara:ri<unclear>ṅ</unclear>vatәkhyaṁ <g type="circleCurve"/> R̥ <g type="circleCurve"/> bvattalkas·huvusgavayakәntikakaṁparahiteṁparamparaR̥gә:
 <lb n="15v2"/><unclear>p</unclear>·, Aśramaśetratulyaniṅavak·skaṙkumuliliṁvuvustarahayu, vaihumidәṁpisaṁtbuvnaṁtaṅantamatalaṅkupa
-:ṅalapaśor·, tiṙthapavitratulyanimanaḥtaniṙmmalakadipvamandrakahniṁ ø R̥ ø saparaṇaniṁvnaṁtuhagaṇa:
+:ṅalapaśor·, tiṙthapavitratulyanimanaḥtaniṙmmalakadipvamandrakahniṁ <g type="circleCurve"/> R̥ <g type="circleCurve"/> saparaṇaniṁvnaṁtuhagaṇa:
 <lb n="15v3"/><unclear>b</unclear>rata:tapaśuśatyariṁkaviratin·, °ḷhәṅatika:sakeguragaḍa:ṅakūvruhiṅacintyariṁkalpasәn·
 , saṅapakunaṁsiran·vruhiparannikaṁpjahatәkava:nimaṅaku, duvәgulihantariṁśakalalokama:mrihaga<hi rend="check">vaṁ</hi>
 <!--4570: va:maṅaku-->
-<lb n="15v4"/><gap reason="lost" unit="character" quantity="2"/>brata:ṁ<hi rend="check">ś</hi>valalita ø R̥ ø ndanahan·vignaniṅagavaitapabratalaṇa:marupuhirihati, yakadhә:ha
+<lb n="15v4"/><gap reason="lost" unit="character" quantity="2"/>brata:ṁ<hi rend="check">ś</hi>valalita <g type="circleCurve"/> R̥ <g type="circleCurve"/> ndanahan·vignaniṅagavaitapabratalaṇa:marupuhirihati, yakadhә:ha
 nirayamaṅaḍīlaṇa:rivṅiya:tikakinatuturan·, niyata:manahiramagavaiytahantulakniṁjapasamaḍilaṇa
 <!--bentuk : yang muncul dalam dua versi-->
 <pb n="16r" xml:id="pb015"/>
-<lb n="16r1"/>, Apana:karahimamaśakītasaṁmunivara:bhujagavilaśiha ø °{r̥} ø Ayva:taḥśaktebhogabvatpa°ḷpa°ḷ
+<lb n="16r1"/>, Apana:karahimamaśakītasaṁmunivara:bhujagavilaśiha <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> Ayva:taḥśaktebhogabvatpa°ḷpa°ḷ
 haluparipavkasaṅatuha, nindra:paru<unclear>ṣ</unclear>yaṅvaṁdhaṙpaṅanamayakuraṅasinkuṅihayu, lobhantomvab· tr̥ṣ<gap reason="lost" unit="character" quantity="4"/>
-<lb n="16r2"/>yataṅusiraśukapiduvәganatanavak·, ra:ga:nta:gәṁmәttakridḍiṅvaṅaṅuluyanakbiniyatakita°ḷ°ḷb ø
-°{r̥} ø yekatasaṁvruḥmәṅgәpapuṅguṁritakutiratatanalaṇatinahakveḥ, Apanikaṁmelyanviṇatakabva<gap reason="lost" unit="character" quantity="2"/>
+<lb n="16r2"/>yataṅusiraśukapiduvәganatanavak·, ra:ga:nta:gәṁmәttakridḍiṅvaṅaṅuluyanakbiniyatakita°ḷ°ḷb <g type="circleCurve"/>
+°{r̥} <g type="circleCurve"/> yekatasaṁvruḥmәṅgәpapuṅguṁritakutiratatanalaṇatinahakveḥ, Apanikaṁmelyanviṇatakabva<gap reason="lost" unit="character" quantity="2"/>
 <lb n="16r3"/>kasaglisaṅasamaharavadḍa:, śovarikabrat·yenanumoḍananapihaR̥pa°ḷmәhiṅujarapañjaṁ,:
-jña:ṇanira:lot·citrapadhtrus·hśsiṅulahulahinabhimatayakendran· ø R̥ ø saṙpabhiṣandata<gap reason="lost" unit="character" quantity="3"/>
+jña:ṇanira:lot·citrapadhtrus·hśsiṅulahulahinabhimatayakendran· <g type="circleCurve"/> R̥ <g type="circleCurve"/> saṙpabhiṣandata<gap reason="lost" unit="character" quantity="3"/>
 <lb n="16r4"/><hi rend="check">ra</hi>°ḷkәrasiṅanudu}kiriyatakaviṣanmatәp·, maṅkanasaṁvrumamrīhumiṅkus·misanakaramavdikasaha
 havaṅadodoḥ, siṁvvaṅasampekoliyamatva:tkapiguṇanirayaśanirasamara:riṁra:t, pa:dha<hi rend="check">vi</hi><gap reason="lost" unit="character" quantity="2"/>
 <pb n="16v" xml:id="pb016"/>
-<lb n="16v1"/>yva<hi rend="check">ṙ</hi>nikanasaṁvruhina°ḷpaknasiratatumahahevәḥnya ø °{r̥} ø ka:lihikaṁvvaṁmem·bvatanuṅtuṁguragadhamahasiḥ
+<lb n="16v1"/>yva<hi rend="check">ṙ</hi>nikanasaṁvruhina°ḷpaknasiratatumahahevәḥnya <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> ka:lihikaṁvvaṁmem·bvatanuṅtuṁguragadhamahasiḥ
 kabtahinupaya, maṅkakinuṇḍa:gәṁhikaṅambәk·pinujipujiparajibhiṣamamacatulaṁ, tattvasahәntuttan·tka<gap reason="lost" unit="character" quantity="2"/>
 <lb n="16v2"/>yatapaṅayamayamanayatamavәR̥, kroñcapadhaṁrat·depadhahyun·lviha°ḷpaknamavtutaya°ḷñok·
 <!--4570: °ḷb(ñ?)ok-->
-ø °{r̥} ø tanmaṅkambәkirasaṅaṅisikavikunanmuraṣanikaviratin·rakva, yogīśvarasirasaṅanusup·saṅaṅi<gap reason="lost" unit="character" quantity="3"/>
+<g type="circleCurve"/> °{r̥} <g type="circleCurve"/> tanmaṅkambәkirasaṅaṅisikavikunanmuraṣanikaviratin·rakva, yogīśvarasirasaṅanusup·saṅaṅi<gap reason="lost" unit="character" quantity="3"/>
 <lb n="16v3"/>ṣayahikatuhulicintyaga, vaṅkaitulyanikavutatulibhisuhavakalupahalahayunikaṁṅloka, śuddhambә
-kniravaraṇahumidәṅalilaṅamavaśuluhirahavahirat· ø °{r̥} ø na:hanlviṙnyambәksaṁyogīsaṅanmuśu<gap reason="lost" unit="character" quantity="3"/>
+kniravaraṇahumidәṅalilaṅamavaśuluhirahavahirat· <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> na:hanlviṙnyambәksaṁyogīsaṅanmuśu<gap reason="lost" unit="character" quantity="3"/>
 <!--4570: lvinyambәk-->
 <lb n="16v4"/>viśeṣamasmaṇikiṁviku, laṅgәṁtuṅgәṁtanpolaḥpvakamahitanirakaditaśiktḍaḥmalba:hiR̥ṁ, vastunya:
 vaksaṁhyaṁśuṇyatmatahirikasiratayayabhaṭārajagat·guru, śveccadadya:moreṁgagaṇama<gap reason="lost" unit="character" quantity="3"/>
@@ -332,14 +328,14 @@ vaksaṁhyaṁśuṇyatmatahirikasiratayayabhaṭārajagat·guru, śveccadadya:m
 <graphic url="CK-L631diplo/018r.jpg"/>
 <graphic url="CK-L631diplo/018v.jpg"/></figure> -->
 <pb n="17r" xml:id="pb017"/>
-<lb n="17r1"/>bhujaṅgavijr̥mbita ø °{r̥} ø lviṙniṁdevivilaśinikitayatapaR̥kmapakataḥ ø °{r̥} ø maṅkanarakvabhudḍinirasaṁbhuja
-ṅgavilaśita ø °{r̥} ø śaktibhaṭāramaṇaśijamakaṇaśarakuśumavilaśita ø °{r̥} ø bhujaṅgasisukr̥tajugapanikakagi
-<lb n="17r2"/>rigiri ø °{r̥} ø jatinikaruṇa:lalita:mulatikan·vulatiṅatanu ø °{r̥} ø jayakuśumaṅaraniṁlakuyatiṅka
-hәnparavirakavi ø °{r̥} ø hanatalakunicandayekaR̥ṅәn·kuśumaśariṅaranyayekavulati ø °{r̥} ø manahalba:pi
-<lb n="17r3"/>nakavahaṇasaṁmunivarasatatasinagakuśuma ø °{r̥} ø pracalitasumavuṙśurakuśumalavan·jnumavaṅiyavaḍara
-yagumuluṁ ø °{r̥} ø kadiśiṅharupanyayakagirigiri ø °{r̥} ø kadihudanikanaṁkusuma:śaḍana:rurūssīnirirīṅaṅina:dr̥smapa
-<lb n="17r4"/>majaṙR̥ṣiga:ṇabhaṭārapaśupatita:yanahanlaluṅaranekihәn· ø °{r̥} ø sampunikaṁraṣacandalalunyaginlaṙha
-nariṁgurula:ghuvtunyasaśat·yataḍaṇḍaṅarannyatiṅhali ø °{r̥} ø kṣamaknamatikevuvusniṁṅhulundaḥkamuhyaṁya<hi rend="check">śa</hi>
+<lb n="17r1"/>bhujaṅgavijr̥mbita <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> lviṙniṁdevivilaśinikitayatapaR̥kmapakataḥ <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> maṅkanarakvabhudḍinirasaṁbhuja
+ṅgavilaśita <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> śaktibhaṭāramaṇaśijamakaṇaśarakuśumavilaśita <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> bhujaṅgasisukr̥tajugapanikakagi
+<lb n="17r2"/>rigiri <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> jatinikaruṇa:lalita:mulatikan·vulatiṅatanu <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> jayakuśumaṅaraniṁlakuyatiṅka
+hәnparavirakavi <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> hanatalakunicandayekaR̥ṅәn·kuśumaśariṅaranyayekavulati <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> manahalba:pi
+<lb n="17r3"/>nakavahaṇasaṁmunivarasatatasinagakuśuma <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> pracalitasumavuṙśurakuśumalavan·jnumavaṅiyavaḍara
+yagumuluṁ <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> kadiśiṅharupanyayakagirigiri <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> kadihudanikanaṁkusuma:śaḍana:rurūssīnirirīṅaṅina:dr̥smapa
+<lb n="17r4"/>majaṙR̥ṣiga:ṇabhaṭārapaśupatita:yanahanlaluṅaranekihәn· <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> sampunikaṁraṣacandalalunyaginlaṙha
+nariṁgurula:ghuvtunyasaśat·yataḍaṇḍaṅarannyatiṅhali <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> kṣamaknamatikevuvusniṁṅhulundaḥkamuhyaṁya<hi rend="check">śa</hi>
 <!--4570: gulagu-->
 <pb n="17v" xml:id="pb018"/>
 <lb n="17v1"/>kveḥtaśukma:gaṇalmuṅguhīda:śadeśantaresoṙriṅuṙdḍaḥlavanmadyadeśatmakadḍijagatlyab·śaka:lantade
@@ -360,7 +356,7 @@ hetuka, puṅupuṅusatapatratuñjuṁhijoḍupaḍipa:ṙccaṇa:saṅkagha:ṇ
 <!--4570: puṅgupuṅgu-->
 <pb n="18r" xml:id="pb019"/>
 <lb n="18r1"/>tejana:hantalimyә:naki<hi rend="check">ṁ</hi>ka:vikabhyaṣasaṁhyaṁkacandan·yavaṙttha:skaṙtan·kneṅlumpamūjaṅkumuṅgviṁrikaṙḍaṇḍaka
-:candana:hantavr̥ṣṭiprayatnastutīniṅhulunriṁvatәkdevatha ø °{r̥} ø Athasampunikaṁgurula:ghulavangaṇamatra
+:candana:hantavr̥ṣṭiprayatnastutīniṅhulunriṁvatәkdevatha <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> Athasampunikaṁgurula:ghulavangaṇamatra
 <lb n="18r2"/>yatinyapaḍanyasacandamavaṙtthamatutmaṅgaranpinarakr̥tadenikasaṁkavida:śanama:manuma:ṇarisaṁmahaR̥p
 vruhariṁparibha:ṣayatiśvakakavyavuvus·śakariṁyatadonanikanpanatirvanayanpaṅnematika:pinaraḥtkәnanta
 <!--4570: yatikvakavyavus-->
@@ -369,19 +365,19 @@ vruhariṁparibha:ṣayatiśvakakavyavuvus·śakariṁyatadonanikanpanatirvanaya
 siṁsiramahyunatas·sisinahvaṅusiṙtikanaṁraṣagītakakakavyanirasaṁrahatīparamet·rupitiṁparibha:ṣamaransa
 <lb n="18r4"/>phalatiśayantakatonsatirunsigәgәn<hi rend="check">ta</hi>R̥ṅәnsapujinagatikiprihәniṁmagavaiyatadevathayoniṅaranya
 <!--4570: pujinatiki-->
-vnaṁkaviman·vihikan·tuhubhudḍimahankadiḍaṇḍakana:mamala:hatiyovvala°ḷṁnyamadәg· // ø // pәṅpәṅ
+vnaṁkaviman·vihikan·tuhubhudḍimahankadiḍaṇḍakana:mamala:hatiyovvala°ḷṁnyamadәg· <g type="//"/><g type="circleCurve"/><g type="//"/> pәṅpәṅ
 <pb n="18v" xml:id="pb020"/>
 <lb n="18v1"/>tekuhurip·tatamrihatapa:ṅaratanakavikuphala:bhiṣa, Ayvaṅgә<hi rend="check">ṁ</hi>yaśaviṙyyaśastrakavi°ḷt·ṅvaṅika
 kasamaya:punaṙbhava, tontondūḥkhanikiṁdadivvaṅaduluṙprihatikaśakitanmamet·śuka, Aṁraṅkal·viṣayanya
-<lb n="18v2"/>panpinakapa:śanikavulatanantatantirun· ø pośikniṁprihanuttakәn·bratasamadḍikaraṇanidhataṁnikaṁśu
+<lb n="18v2"/>panpinakapa:śanikavulatanantatantirun· <g type="circleCurve"/> pośikniṁprihanuttakәn·bratasamadḍikaraṇanidhataṁnikaṁśu
 <!--4570: pinakayaśanikabhavulat-->
 ka, tansakeṁkaluṣalmәḥpa°ḷpa°ḷḥkarukarukuhakaptiniṁturu, yadyanpapraṅavikvatovimadagaṁtarupiru
 <!--4570: karukarukha, sapraṅa-->
-<lb n="18v3"/>pirikan·tketkan·, pūja:mvaṁbhyavaṣa:yataṅhipinaka:śrayanirarikatәmvaniṁhayu // ø // syapasirama
+<lb n="18v3"/>pirikan·tketkan·, pūja:mvaṁbhyavaṣa:yataṅhipinaka:śrayanirarikatәmvaniṁhayu <g type="//"/><g type="circleCurve"/><g type="//"/> syapasirama
 hyun·vikanamojar·, tamakhnataṁcandajinavadenya, Uvusapagәḥdentatumamakәnya, niyatabhiṣantaṅucapuca
-<lb n="18v4"/>penak· ø °{r̥} ø <hi rend="check">R̥</hi>tivaṙthasamapta ø <hi rend="check">o:\maum</hi> ø siddhirastu, bhaṣiddha // ø // bha:ṣapra:ṇa:pagәtañca, pralambaṁma
+<lb n="18v4"/>penak· <g type="circleCurve"/> °{r̥} <g type="circleCurve"/> <hi rend="check">R̥</hi>tivaṙthasamapta <g type="circleCurve"/> <hi rend="check">o:\maum</hi> <g type="circleCurve"/> siddhirastu, bhaṣiddha <g type="//"/><g type="circleCurve"/><g type="//"/> bha:ṣapra:ṇa:pagәtañca, pralambaṁma
 <!--R̥ti atau Iti?-->
-nurabhavit·, paśiṙvukiṙśa:garañca, paḍa:viramadḍyañca ø kalīṅanya, yan paṅabhyaṣakalaṅәn·, Ayvata
+nurabhavit·, paśiṙvukiṙśa:garañca, paḍa:viramadḍyañca <g type="circleCurve"/> kalīṅanya, yan paṅabhyaṣakalaṅәn·, Ayvata
 <!--4570: nurabhanәt-->
 <!--<figure><graphic url="CK-L631diplo/019r.jpg"/>
 <graphic url="CK-L631diplo/019v.jpg"/>
@@ -389,24 +385,24 @@ nurabhavit·, paśiṙvukiṙśa:garañca, paḍa:viramadḍyañca ø kalīṅan
 <graphic url="CK-L631diplo/020v.jpg"/></figure>-->
 <!-- {19\recto} -->
 <lb n="19r1"/>kaphalajña:ṇanta, yanlambaṁgitakunaṁ, priḥtaṁraṣamenaka, yanpaśiṁvukiṙkahyunta, vukiṙvuluṣankahyunta°ḷṅka
-ra, matapa:śṛṅgarakamiraṣa, Iriṅĕntaṁnava:naṭi, paṅḍa:vira:ma: ø (<hi rend="check">pva</hi>) ø śṛṅgaraviravibhakṣa, rodrahaṣyabhaya:
+ra, matapa:śṛṅgarakamiraṣa, Iriṅĕntaṁnava:naṭi, paṅḍa:vira:ma: <g type="circleCurve"/> (<hi rend="check">pva</hi>) <g type="circleCurve"/> śṛṅgaraviravibhakṣa, rodrahaṣyabhaya:
 <!--4570 écrit vibhakma-->
-<lb n="19r2"/>nakaḥ, karuṇadbhuta:śantaśca, naganadya:raṣahime øø\aum śṛṅgaraṅaranya, mujaraknakaraśikan·, yadhana:sa,:
-<!--harus mencari ide untuk simbol øø\aum, karena nampak seperti ada dua ø-->
-kaśrakeṅin·, konaṅunaṁ, śabda:raraṣarumkamiraṣa ø viraṅaranya, Apraṁ, Umujarakĕn·kavanin·, vibhakṣa:
-<lb n="19r3"/>ṅaranya, Umujarakĕnkaramiramiḥ, Apacĕh ø rodraṅaranya, Umujaraknaṁmoha, katatakut ø Aṣyaṅara
-nya, Umujarakĕnkaguyuguyu, paḍakaraṇa, Aṣya, pa:pacĕhan·, duli, goḍok·, pĕñcul· ø bhayanaka
-<lb n="19r4"/>ṅaranya, Umujarakĕnkavdivdi, ka°ṛ°ṛs·, bha:ya, kabha:ṙya ø karuṇaṅaranya, Ujaramaṙṇnasakatonsaka°ṛ
-ṅĕ:, mandadyakĕn·śanta:citta, kavlasha°ṛphasiḥ ø Adbhutaṅaranya, Umujarakĕnkagirigiri, Aścaryya ø śantaṅara
+<lb n="19r2"/>nakaḥ, karuṇadbhuta:śantaśca, naganadya:raṣahime <g type="circleCurve"/><g type="circleCurve"/>\aum śṛṅgaraṅaranya, mujaraknakaraśikan·, yadhana:sa,:
+<!--harus mencari ide untuk simbol <g type="circleCurve"/><g type="circleCurve"/>\aum, karena nampak seperti ada dua <g type="circleCurve"/>-->
+kaśrakeṅin·, konaṅunaṁ, śabda:raraṣarumkamiraṣa <g type="circleCurve"/> viraṅaranya, Apraṁ, Umujarakĕn·kavanin·, vibhakṣa:
+<lb n="19r3"/>ṅaranya, Umujarakĕnkaramiramiḥ, Apacĕh <g type="circleCurve"/> rodraṅaranya, Umujaraknaṁmoha, katatakut <g type="circleCurve"/> Aṣyaṅara
+nya, Umujarakĕnkaguyuguyu, paḍakaraṇa, Aṣya, pa:pacĕhan·, duli, goḍok·, pĕñcul· <g type="circleCurve"/> bhayanaka
+<lb n="19r4"/>ṅaranya, Umujarakĕnkavdivdi, ka°ṛ°ṛs·, bha:ya, kabha:ṙya <g type="circleCurve"/> karuṇaṅaranya, Ujaramaṙṇnasakatonsaka°ṛ
+ṅĕ:, mandadyakĕn·śanta:citta, kavlasha°ṛphasiḥ <g type="circleCurve"/> Adbhutaṅaranya, Umujarakĕnkagirigiri, Aścaryya <g type="circleCurve"/> śantaṅara
 <!-- {19\verso} -->
-<lb n="19v1"/>nya, Upaśama:ṁśomya ø Itinavanaṭi, krūraṅaranya, Umujaraknaṁkaroharohan· // ø // kunaṁ
+<lb n="19v1"/>nya, Upaśama:ṁśomya <g type="circleCurve"/> Itinavanaṭi, krūraṅaranya, Umujaraknaṁkaroharohan· <g type="//"/><g type="circleCurve"/><g type="//"/> kunaṁ
 phalani<hi rend="check">ṅ</hi>kadilambaṁyaninabhyaṁṣa, tan·vyaṙthaśvaṙggapa:ḍatmanta, kunaṁyan·gītabha:ṣanta, byaktamantukmariṁmakara
 <lb n="19v2"/>dvaja, mareṁvagiśvarita kunaṁ, kadaṁmitrama:siḥ, prabhuraṁma°ṛṣima:siḥphalanya, vnaṁmaṅiṇḍitakĕnkadaṁvaṙ
-gga, nda:nahantaphalanya ø nda:nmeṅĕtakitariṁraṣapiṅkĕt·, lviṙniṁpinalipalitandadikaślatariṁkakavin·, nda::
-<lb n="19v3"/>lviṙnyanihan· ø Aba:na, dyuna, maprabhaṅśa, durasambhaddha, viruddhabhaṣa, viruddha°ḷṅkara, viruddhavaiṣya, kahala
-ṅantava, Apanicanda, Apraganda, yatibhraṣṭa, Apakṣara, cedakṣara, śaṅgatapralapa, śrutikaṣṭa, duspakṛti ø
+gga, nda:nahantaphalanya <g type="circleCurve"/> nda:nmeṅĕtakitariṁraṣapiṅkĕt·, lviṙniṁpinalipalitandadikaślatariṁkakavin·, nda::
+<lb n="19v3"/>lviṙnyanihan· <g type="circleCurve"/> Aba:na, dyuna, maprabhaṅśa, durasambhaddha, viruddhabhaṣa, viruddha°ḷṅkara, viruddhavaiṣya, kahala
+ṅantava, Apanicanda, Apraganda, yatibhraṣṭa, Apakṣara, cedakṣara, śaṅgatapralapa, śrutikaṣṭa, duspakṛti <g type="circleCurve"/>
 <!--4570 écrit apakrara, L631 écrit en deuxième version-->
-<lb n="19v4"/>Ubhayabhraṣṭa ø banaṅaranya, kuraṁ, Akara, Ikara, Ukara, dyunaṅaranya, Ujarahmaro, tansiddhata
+<lb n="19v4"/>Ubhayabhraṣṭa <g type="circleCurve"/> banaṅaranya, kuraṁ, Akara, Ikara, Ukara, dyunaṅaranya, Ujarahmaro, tansiddhata
 ṅujaraknakavakanya, Isamaṅkaṇa, maprabhaṅśaṅaranya, Atyĕṅatmahanabacĕm·, pa:ḍavika:raṅaranya, I
 <!--4570 écrit atyĕgatma-->
 <!-- 20\recto -->
@@ -419,26 +415,26 @@ lahujahuvusdadi, Ujarahayukapuputahala, Apakṣaraṅanya, maṅgurvakĕnlaghu, 
 <!--4570 écrit Aṅavaṅakna-->
 hivaṁkunaṁ, śaṅgatapralapaṁṅaranya, tanpa:tut·caritanyarivurilavaniṅa°ṛp, mabheddhamujarakniṅa°ṛpmvaṅi
 <lb n="20r4"/>vuri, śratikaṣṭaṅaranya, tanenakka°ṛṅĕ:, mvaṁtunaraṣa:ṁ, kadyaṅganiṁka°ḷṅkara, °okakara, Ityevamadhi:
-ø dusprakṛtiṅaranya, Ikaṅujarahayumavoṙglĕh, Apa:candaṅaranya, kaṙparaṣa:candanya, Ubhayabhraṣṭaṅaranya, hujaṙtu
+<g type="circleCurve"/> dusprakṛtiṅaranya, Ikaṅujarahayumavoṙglĕh, Apa:candaṅaranya, kaṙparaṣa:candanya, Ubhayabhraṣṭaṅaranya, hujaṙtu
 <!--4570 écrit nya, ikaṅ ubhaya-->
 <!-- {20\verso} -->
 <lb n="20v1"/>natinuyusakniṅvuri, kahalaṅantavaṅaranya, Ujarahayumasmuhala, tansiddhataraṣanya, Ikaṁcinaritakari, katmuhancuma
 <!--4570 écrit kālaṅan-->
 ritahantyanivakyanya, śvarakamadyaṅaranya, śvarakatṅaḥdeniṁvyañjana, nda:lviṙnya, AIU°e°o, hilahilahikaṁbharaṁkastha
 <!--4570 : vyañja_va-->
-<lb n="20v2"/>nan· ø nda:nahantalviṙnika:siṅgahanamvaṁvruhariṁparibhaṣa, paribhaṣiki, Ujaṙparakṛta, mvaṁsaṅaskṛta, Ayvakavo:
+<lb n="20v2"/>nan· <g type="circleCurve"/> nda:nahantalviṙnika:siṅgahanamvaṁvruhariṁparibhaṣa, paribhaṣiki, Ujaṙparakṛta, mvaṁsaṅaskṛta, Ayvakavo:
 <!--bhaṣiki atau bhaṅṣiki atau bhaṙṣiki ?-->
 <!--4570 : saṅaskuta-->
-r·, denpadha:parakṛta, Ayvamaṅuripakna:kṣarasampunmatī, Ayvadeyatanpaśvara ø̧\aum nihanhakṣaramaha:praṇama:
+r·, denpadha:parakṛta, Ayvamaṅuripakna:kṣarasampunmatī, Ayvadeyatanpaśvara <g type="circleCurve"/>̧\aum nihanhakṣaramaha:praṇama:
 <!--4570 : hilang di bagian r· hingga Ayva-->
 <!--4570 écrit denya-->
-<lb n="20v3"/><hi rend="check">ha</hi>:ṁpra:ṁṇaṅaranya, Akṣarapantĕs·, nihanketuṅaranya // ø // bhaṭāraśivabhuddhatanhanavaneḥ, nimittaniṅuri
+<lb n="20v3"/><hi rend="check">ha</hi>:ṁpra:ṁṇaṅaranya, Akṣarapantĕs·, nihanketuṅaranya <g type="//"/><g type="circleCurve"/><g type="//"/> bhaṭāraśivabhuddhatanhanavaneḥ, nimittaniṅuri
 <!--4570 mulai dr praṅa ṅaranya-->
-pnikaṁpabuvaṇa, hanapvabha <del>bhi</del>ktimakvaṅasira, śukandhaṅunivehuriptamadava ø (<hi rend="check">pva</hi>) ø nahanphalanikaṁmanaḥśuciśaḍa, yasa:ṁ
+pnikaṁpabuvaṇa, hanapvabha <del>bhi</del>ktimakvaṅasira, śukandhaṅunivehuriptamadava <g type="circleCurve"/> (<hi rend="check">pva</hi>) <g type="circleCurve"/> nahanphalanikaṁmanaḥśuciśaḍa, yasa:ṁ
 <!--4570 écrit ...saṁ-->
-<lb n="20v4"/>dhanavnaṁaneṁvvaṁṅagati, sibhuddhimalkuḥpvayenūlahakĕn·, saduḥkabhayatan·vaneḥphalanika ø Ikaṁvacanabhaṅga
+<lb n="20v4"/>dhanavnaṁaneṁvvaṁṅagati, sibhuddhimalkuḥpvayenūlahakĕn·, saduḥkabhayatan·vaneḥphalanika <g type="circleCurve"/> Ikaṁvacanabhaṅga
 <!--4570 : jaṅga-->
-yekaśalahi, śabhagyaki <add><del>ḍa</del></add>tayan·tkeṁmanahulaḥ, yadin·rarayatanpabhada:kuviya, yatīkavikusa:ṁdupaṇḍitatmĕn· ø
+yekaśalahi, śabhagyaki <add><del>ḍa</del></add>tayan·tkeṁmanahulaḥ, yadin·rarayatanpabhada:kuviya, yatīkavikusa:ṁdupaṇḍitatmĕn· <g type="circleCurve"/>
 </ab>
 </body>
 </text>
