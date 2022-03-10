@@ -2,178 +2,166 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:lang="eng"
-     xml:id="rt"
-     type="edition">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title type="main">Kakavin Rāmavijaya</title>
-            <title type="alt">Rāma's Conquest</title>
-            <title type="sub">Digital Critical Edition of the Kakavin Rāmavijaya</title>
-            <author>Tan iṅ Rāt</author>
-            <editor ref="part:argr">
-               <forename>Arlo</forename>
-               <surname>Griffiths</surname>
-            </editor>
-         </titleStmt>
-         <publicationStmt>
-            <authority>DHARMA</authority>
-            <pubPlace>Paris</pubPlace>
-            <idno type="filename">DHARMA_CritEdKakavinRamavijayaTaningrat</idno>
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
-               </licence>
-            </availability>
-            <date from="2019" to="2025">2019-2025</date>
-         </publicationStmt>
-         <sourceDesc>
-            <listWit>
-               <!-- One witness for each manuscript. Update the content -->
-               <witness xml:id="L">
-                  <abbr type="siglum">L</abbr>
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>Leiden University Library</institution>
-                        <repository>Special Collections</repository>
-                        <idno>Or 4697</idno>
-                     </msIdentifier>
-                     <msContents>
-                     <!-- the msContents isn't mandatory -->
-                     <!-- <msItem>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="rt" type="edition">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Kakavin Rāmavijaya</title>
+				<title type="alt">Rāma's Conquest</title>
+				<title type="sub">Digital Critical Edition of the Kakavin Rāmavijaya</title>
+				<author>Tan iṅ Rāt</author>
+				<editor ref="part:argr">
+					<forename>Arlo</forename>
+					<surname>Griffiths</surname>
+				</editor>
+			</titleStmt>
+			<publicationStmt>
+				<authority>DHARMA</authority>
+				<pubPlace>Paris</pubPlace>
+				<idno type="filename">DHARMA_CritEdKakavinRamavijayaTaningrat</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">
+						<p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+						<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+					</licence>
+				</availability>
+				<date from="2019" to="2025">2019-2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<!-- One witness for each manuscript. Update the content -->
+					<witness xml:id="L">
+						<abbr type="siglum">L</abbr>
+						<msDesc>
+							<msIdentifier>
+								<settlement>Leiden</settlement>
+								<institution>Leiden University Library</institution>
+								<repository>Special Collections</repository>
+								<idno>Or 4697</idno>
+							</msIdentifier>
+							<msContents>
+								<!-- the msContents isn't mandatory -->
+								<!-- <msItem>
                            <author>Śāntarakṣita</author>
                            <title>Vipañcitārthā</title> -->
-                     <!-- You can also add a colophon if needed -->
-                     <!--<colophon></colophon> -->
-                     <!-- </msItem> --> </msContents>
-                     <physDesc>
-                        <objectDesc>
-                        <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Balinese script, handwritten on paper. 42 pages.</p>
-                        </objectDesc>
-                     </physDesc>
-                     <history>
-                     <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>Collection van der Tuuk, acquired in 1896. Cat. Juynboll I, p. 180; cat. Brandes IV, no. 1461; cat. Pigeaud II, p. 242; cat. Witkam V, 136. BCB 23 and 164 contain romanized copies by Soegiarto.</p>
-                     </history>
-                  </msDesc>
-               </witness>
-               <witness xml:id="JK">
-                  <abbr type="siglum">JK</abbr>
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Canberra</settlement>
-                        <institution>Australian National University???</institution>
-                        <repository>Hooykaas Ketut Sangka Collection</repository>
-                        <idno>4/3</idno>
-                     </msIdentifier>
-                     <msContents/>
-                     <physDesc>
-                        <objectDesc>
-                        <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Typed transcription on carbon paper.</p>
-                        </objectDesc>
-                     </physDesc>
-                     <history>
-                     <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>Transcribed in 1973 by Ida Bagus Gede Geria from a lontar held in griya Jero Kaningan, Sidemen, Karangasem, Bali.</p>
-                     </history>
-                  </msDesc>
-               </witness>
-            </listWit>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-            <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-            <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p>The roman transcript makes no distinction between long/short vowel, between sibilants, between ə and e, between ny and ñ, between retroflex/dental consonant. By contrast, it frequently maintains the doubling of consonants after r that is typical of the Balinese writing tradition. All orthography is normalized taking metrical considerations and OJED spellings into account.</p>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-            <interpretation>
-               <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
-            </interpretation>
-         </editorialDecl>
-         <samplingDecl>
-            <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <schemaRef type="guide"
-                    key=" EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
+								<!-- You can also add a colophon if needed -->
+								<!--<colophon></colophon> -->
+								<!-- </msItem> -->
+							</msContents>
+							<physDesc>
+								<objectDesc>
+									<!-- Here you can give a physical description of the manuscript in prose-->
+									<p>Balinese script, handwritten on paper. 42 pages.</p>
+								</objectDesc>
+							</physDesc>
+							<history>
+								<!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+								<p>Collection van der Tuuk, acquired in 1896. Cat. Juynboll I, p. 180; cat. Brandes IV, no. 1461; cat. Pigeaud II, p. 242; cat. Witkam V, 136. BCB 23 and 164 contain romanized copies by Soegiarto.</p>
+							</history>
+						</msDesc>
+					</witness>
+					<witness xml:id="JK">
+						<abbr type="siglum">JK</abbr>
+						<msDesc>
+							<msIdentifier>
+								<settlement>Canberra</settlement>
+								<institution>Australian National University???</institution>
+								<repository>Hooykaas Ketut Sangka Collection</repository>
+								<idno>4/3</idno>
+							</msIdentifier>
+							<msContents/>
+							<physDesc>
+								<objectDesc>
+									<!-- Here you can give a physical description of the manuscript in prose-->
+									<p>Typed transcription on carbon paper.</p>
+								</objectDesc>
+							</physDesc>
+							<history>
+								<!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+								<p>Transcribed in 1973 by Ida Bagus Gede Geria from a lontar held in griya Jero Kaningan, Sidemen, Karangasem, Bali.</p>
+							</history>
+						</msDesc>
+					</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<!-- Part mandatory -->
+				<p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+				<!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+			</projectDesc>
+			<editorialDecl>
+				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+				<correction>
+					<p/>
+				</correction>
+				<normalization>
+					<p>The roman transcript makes no distinction between long/short vowel, between sibilants, between ə and e, between ny and ñ, between retroflex/dental consonant. By contrast, it frequently maintains the doubling of consonants after r that is typical of the Balinese writing tradition. All orthography is normalized taking metrical considerations and OJED spellings into account.</p>
+				</normalization>
+				<punctuation>
+					<p/>
+				</punctuation>
+				<interpretation>
+					<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+				</interpretation>
+			</editorialDecl>
+			<samplingDecl>
+				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+				<p/>
+			</samplingDecl>
+			<schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+			<!-- Will need to be updated once a more official realase is done -->
+			<!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
 
 			<variantEncoding method="parallel-segmentation" location="internal"/><variantEncoding method="location-referenced" location="internal"/>.
 
 			Note that the current by default behaviour is set on parallel-segmentation -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-            <prefixDef ident="cal"
-                       matchPattern="([\w]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-               <p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
-            </prefixDef>
-         </listPrefixDef>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <!-- choose the language(s) of your text, remove the others -->
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="osn-Latn">Old Sundanese, romanized</language>
-         </langUsage>
-         <textClass>
-            <keywords>
-               <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
-         <change who="part:axja" when="2022-03-08" status="draft">Converting uppercase into lower case, ng into ṁ, w into v and e into é. Adding a structure with div for canto.</change>
-         <change who="part:argr" when="2022-03-07" status="draft">started applying further structure, correcting transcription errors, and filling in the teiHeader</change>
-         <change who="part:axja" when="2022-03-07" status="draft">Converting docx into xml</change>
-      </revisionDesc>
-   </teiHeader>
-   <text xml:space="preserve" xml:lang="">
+			<variantEncoding method="parallel-segmentation" location="internal"/>
+			<!-- Part mandatory -->
+			<listPrefixDef>
+				<prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+					<p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+				</prefixDef>
+				<prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
+					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+				</prefixDef>
+				<prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
+					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+				</prefixDef>
+				<prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+					<p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+				</prefixDef>
+				<prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+					<p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+				</prefixDef>
+				<prefixDef ident="cal" matchPattern="([\w]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
+					<p>Internal URIs using the cal prefix to point to calendar systems in <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
+				</prefixDef>
+			</listPrefixDef>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<!-- choose the language(s) of your text, remove the others -->
+				<language ident="san-Latn">Sanskrit, romanized</language>
+				<language ident="kaw-Latn">Old Javanese, romanized</language>
+				<language ident="osn-Latn">Old Sundanese, romanized</language>
+			</langUsage>
+			<textClass>
+				<keywords>
+					<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+					<term/>
+					<!-- Ignore this element for the time being. -->
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change who="part:axja" when="2022-03-08" status="draft">Converting uppercase into lower case, ng into ṁ, w into v and e into é. Adding a structure with div for canto.</change>
+			<change who="part:argr" when="2022-03-07" status="draft">started applying further structure, correcting transcription errors, and filling in the teiHeader</change>
+			<change who="part:axja" when="2022-03-07" status="draft">Converting docx into xml</change>
+		</revisionDesc>
+	</teiHeader>
+	<text xml:space="preserve" xml:lang="">
         <body>
         <div><ab type="invocation"><pb n="1v"/><lb n="1"/>avighnam astu.</ab></div>
 
@@ -187,7 +175,7 @@
 <lg n="6"><l n="a"><lb n="5"/>tambéniṅ carita-ki tapva vuvusén magéh-akéna manah saṅ aṁréṁa,</l>
 <l n="b"><lb n="6"/>ndah vantén prabhu siṁha dhérya sakalé-svara tuhu-tuhu bhumi phalaka,</l>
 <l n="c"><lb n="7"/>kyati śrī kréta sirya nama nira tan ana siriṁa nié para krama,</l>
-<l n="d"><lb n="8"/>sak riṅ svargga huvus karəṅvan ati virya subhaga magavé jagaddhita. </l><note>Stanza numbered 6 in <ptr target="#JK"/>.</note></lg></div>
+<l n="d"><lb n="8"/>sak riṅ svargga huvus karəṅvan ati virya subhaga magavé jagaddhita. o.</l><note>Stanza numbered 6 in <ptr target="#JK"/>.</note></lg></div>
 <div type="canto" met="jagadnātha">
   <note type="prosody">-+---+-+---+------+-+-=</note>
 <lg n="7"><l n="a"><lb n="9"/>sréka makaputra saṅ prabhu ané ry anupapura minuṣṭiniṅ jagat,</l>
@@ -235,7 +223,14 @@
 <lg n="2"><l n="a"><lb n="26"/>énkiṅ rakva huvusniṅ ahyas asalin sinjaṁ nira ṁasturi,</l><l n="b"><lb n="27"/>luhya liṁgih arajasan dadak amét lisyan tikélniṅ alis,</l><l n="c"><lb n="28"/>tan sulihniṅ aṁanti sansatha niran bvat lvir vulatniṅ tulis,</l><l n="d"><lb n="29"/>nahan out nikaṁ marék-marék arés somya ṁucap tan umuṁ. </l><note>Stanza numbered 35 in <ptr target="#JK"/>.</note></lg>
 <lg n="3"><l n="a"><lb n="30"/>sasiṅ solah ira gavé tarida kiṁ-kiṁniṅ mulat kasrépan,</l><l n="b"><lb n="31"/>pantés yan paṁadég lumimba yararas lvir polahiṅ padapa,</l><l n="c"><lb n="32"/>yapuan éva maha ṁiriṅ liriṅ ira ṁgat-gat maség-séṁ smita,</l><l n="d"><lb n="33"/>cumbva méndah arajasa misani yan pojar téka mlad prana.</l><note>Stanza numbered 36 in <ptr target="#JK"/>.</note></lg>
 <lg n="4"><l n="a"><pb n="6r"/><lb n="1"/>tis-tis masa ri liṁairiṅ ravi maṁa luhya ṁadég riṅ natar,</l><l n="b"><lb n="2"/>tan sobha maṁuré gəluṅ misis-akén susva-rjja deniṅ uyaṁ,</l><l n="c"><lb n="3"/>marma ṁémbani putra-putran iran énjuh édan patutan aji,</l><l n="d"><lb n="4"/>tan ryamban kiaudaṁ-kudaṁ nira pinak-pak cét tuhan liṅ nira. </l><note>Stanza numbered 37 in <ptr target="#JK"/>.</note></lg>
-<lg n="5"><l n="a"><lb n="5"/>yan soré humusiṅ dhavuh pitu maréṁ taman mahas lalana,</l><l n="b"><lb n="6"/>bhranta niṁhali cataka naṁis i rém-rémniṅ hima rantayan,</l><l n="c"><lb n="7"/>aṅhiṅ lét dinala-déla tiniṁhalan léṁ-léṁ mihat riṅ tavaṁ,</l><l n="d"><lb n="8"/>lvir muksaṁ kétériṅ patar sumilib améṁ-péṁ kédhapniṅ vulat, o.</l><note>Stanza numbered 38 in <ptr target="#JK"/>.</note></lg>
+<lg n="5">
+<l n="a"><lb n="5"/>yan soré humusiṅ dhavuh pitu maréṁ taman mahas lalana,</l>
+<l n="b"><lb n="6"/>bhranta niṁhali cataka naṁis i rém-rémniṅ hima rantayan,</l>
+<l n="c"><lb n="7"/>aṅhiṅ lét dinala-déla tiniṁhalan léṁ-léṁ mihat riṅ tavaṁ,</l>
+<l n="d"><lb n="8"/>lvir muksaṁ kétériṅ patar sumilib améṁ-péṁ kédhapniṅ vulat, o.</l>
+<note>Stanza numbered 38 in <ptr target="#JK"/>.</note></lg>
+</div>
+<div type="canto">
 <lg n="6"><l n="a"><lb n="9"/>sinésakan i ramyaniṅ taman atéki ayu niran apéndahan liriṁ,</l><l n="b"><lb n="10"/>lémas-lémas i luṁgahiaṁ gadhuṁ akét mara-marak i téṁah nira-ṁlurus,</l><l n="c"><lb n="11"/>pucaṁ-pucaṁaniṅ pucaṁ gadhiṅ aséva miriṅ i gémuhiṅ payédhara,</l><l n="d"><lb n="12"/>sasanjata pudhaknya téki makémit ri sétis ira paréntiniṅ kalé.</l><note>Stanza numbered 39 in <ptr target="#JK"/>.</note></lg>
 <lg n="7"><l n="a"><lb n="13"/>syapéka tén avédya maṁ-paṁa ajéṁ-ajéṁ ira ratuniṅ karasikan,</l><l n="b"><lb n="14"/>raras hati huvus manuṁkul anukula turda lara raga kuṅ lulut,</l><l n="c"><pb n="6v"/><lb n="15"/>lavan rudhita séka harsa makiris réṁih umatur i kiṁ-kiṁiṅ hati,</l><l n="d"><lb n="16"/>ya téka maharép-harép ri sédhéṁiṅ smara bhaya ri daləm pasaṁgaman.  </l><note>Stanza numbered 40 in <ptr target="#JK"/>.</note></lg>
 <lg n="8"><l n="a"><pb n="6v"/><lb n="17"/>aras vaṁ umulat ajéṁ niran abhusana kadi-kadi muksa riṅ riṅ sékar,</l><l n="b"><lb n="18"/>adandan aṁivis téṁah linuputan tapih aṁélih ikalaniṅ uyaṁ,</l><l n="c"><lb n="19"/>baṁun mupéta rakva luncipi alis nira tahér agélaṁ-gélaṁ susu,</l><l n="d"><lb n="20"/>savaṁ madhu pinindha manisa manis-manis ira tuhu murttiniṅ sari. </l><note>Stanza numbered 41 in <ptr target="#JK"/>.</note></lg>
