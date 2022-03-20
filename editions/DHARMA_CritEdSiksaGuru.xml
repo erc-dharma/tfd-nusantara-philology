@@ -2,102 +2,123 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="siksaguru"
-     type="edition"
-     xml:lang="eng">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title type="main">Śikṣā Guru</title>
-            <editor>
-               <name>Aditia Gunawan</name>
-            </editor>
-            <respStmt>
-               <resp>creation of the file</resp>
-               <resp>intellectual authorship of edition</resp>
-               <persName ref="part:adgu">
-                  <name>Aditia Gunawan</name>
-               </persName>
-            </respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <authority>DHARMA</authority>
-            <pubPlace>Paris (France)</pubPlace>
-            <idno type="filename">DHARMA_CritEdSiksaGuru</idno>
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksaguru" type="edition" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Śikṣā Guru</title>
+                <editor>
+                    <name>Aditia Gunawan</name>
+                </editor>
+                <respStmt>
+                    <resp>creation of the file</resp>
+                    <resp>intellectual authorship of edition</resp>
+                    <persName ref="part:adgu">
+                        <name>Aditia Gunawan</name>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>DHARMA</authority>
+                <pubPlace>Paris (France)</pubPlace>
+                <idno type="filename">DHARMA_CritEdSiksaGuru</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
                             Licence. To view a copy of the licence, visit
                             https://creativecommons.org/licenses/by/4.0/ or send a letter to
                             Creative Commons, 444 Castro Street, Suite 900, Mountain View,
                             California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
-               </licence>
-            </availability>
-            <date from="2019" to="2025">2019-2025</date>
-         </publicationStmt>
-         <sourceDesc>
-            <listWit>
-               <witness xml:id="L642">
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Jakarta</settlement>
-                        <institution>Perpusnas</institution>
-                        <idno>L 642</idno>
-                     </msIdentifier>
-                     <physDesc>
-                        <p>Gebang leaves, measuring 37.5 × 3.6 cm, brown wooden box, 23 folios, four lines. The manuscript is from Cilegon, Tarogong District, Garut (Krom 1914:72). The manuscript was copied in the village Mahapavitra (unidentified), on the western slope of a place called Kaləpasən.</p>
-                     </physDesc>
-                  </msDesc>
-               </witness>
-               <witness xml:id="L633">
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Jakarta</settlement>
-                        <institution>Perpusnas</institution>
-                        <idno>L 633</idno>
-                     </msIdentifier>
-                     <physDesc>
-                        <p>The manuscript consists of 41 gebang leaves, each measuring 22.6 × 4 cm, stored in a red wooden box, four lines per folio. The manuscript is from Tarogong, Garut (ROD 1914: 71). The pages are numbered 1–40 by the copyist, but there are some number- ing errors: 0 instead of 10 (fol. 11v), 6 instead of 16 (fol. 17v), 10 instead of 20, 30 instead of 40. In addition, among these 40 pages, there is no page 33; after page 16 the manuscript jumps to 19, back to number 17, then 18. However, the text is coherent in this arrangement.</p>
-                     </physDesc>
-                  </msDesc>
-               </witness>
-               <witness xml:id="L628">
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Jakarta</settlement>
-                        <institution>Perpusnas</institution>
-                        <idno>L 628</idno>
-                     </msIdentifier>
-                     <physDesc>
-                        <p>The manuscript of 23 gebang palm leaves, measuring 35 × 3.3 cm, each of which consists of 4 lines of writing. Most of the leaves are poorly damaged at the edges. The manuscript is wrapped in a kind of wooden box bearing the words “ms. Merbaboe”, indicating its provenance. Based on the record, it originated from Gedakan (old name of present-day Kedakan), Grabag dis- trict, Magelang, Central Java, on the northwest slope of Mount Merbabu. This manuscript comes from the gift of Mr. H. D. Levyssohn Norman, a Dutch politician who had served as secretary to the governor-general of the Dutch East Indies in 1869–1883, as well as an honorary member of the Batavian So- ciety for Arts and Sciences (BGKW) (NBG 1864: 71 and 111; <bibl>
-                              <ptr target="bib:Hoepermans1914_01"/>
-                              <citedRange>152</citedRange>
-                           </bibl>; <bibl>
-                              <ptr target="bib:ROD1914"/>
-                              <citedRange>240</citedRange>
-                           </bibl>).</p>
-                     </physDesc>
-                  </msDesc>
-               </witness>
-            </listWit>
-         </sourceDesc>
-      </fileDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="osn-Latn">Old Sundanese, romanized</language>
-         </langUsage>
-      </profileDesc>
-      <revisionDesc>
-         <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
-         <change when="2021-09-27" who="part:axja">Adding the colophon template</change>
-         <change when="2020-10-25" who="part:adgu">Initial encoding</change>
-      </revisionDesc>
-   </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+                        <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
+                    </licence>
+                </availability>
+                <date from="2019" to="2025">2019-2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="L642">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>Perpusnas</institution>
+                                <idno>L 642</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <p>Gebang leaves, measuring 37.5 × 3.6 cm, brown wooden box, 23
+                                    folios, four lines. The manuscript is from Cilegon, Tarogong
+                                    District, Garut (Krom 1914:72). The manuscript was copied in the
+                                    village Mahapavitra (unidentified), on the western slope of a
+                                    place called Kaləpasən.</p>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="L633">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>Perpusnas</institution>
+                                <idno>L 633</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <p>The manuscript consists of 41 gebang leaves, each measuring 22.6
+                                    × 4 cm, stored in a red wooden box, four lines per folio. The
+                                    manuscript is from Tarogong, Garut (ROD 1914: 71). The pages are
+                                    numbered 1–40 by the copyist, but there are some number- ing
+                                    errors: 0 instead of 10 (fol. 11v), 6 instead of 16 (fol. 17v),
+                                    10 instead of 20, 30 instead of 40. In addition, among these 40
+                                    pages, there is no page 33; after page 16 the manuscript jumps
+                                    to 19, back to number 17, then 18. However, the text is coherent
+                                    in this arrangement.</p>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="L628">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>Perpusnas</institution>
+                                <idno>L 628</idno>
+                            </msIdentifier>
+                            <physDesc>
+                                <p>The manuscript of 23 gebang palm leaves, measuring 35 × 3.3 cm,
+                                    each of which consists of 4 lines of writing. Most of the leaves
+                                    are poorly damaged at the edges. The manuscript is wrapped in a
+                                    kind of wooden box bearing the words “ms. Merbaboe”, indicating
+                                    its provenance. Based on the record, it originated from Gedakan
+                                    (old name of present-day Kedakan), Grabag dis- trict, Magelang,
+                                    Central Java, on the northwest slope of Mount Merbabu. This
+                                    manuscript comes from the gift of Mr. H. D. Levyssohn Norman, a
+                                    Dutch politician who had served as secretary to the
+                                    governor-general of the Dutch East Indies in 1869–1883, as well
+                                    as an honorary member of the Batavian So- ciety for Arts and
+                                    Sciences (BGKW) (NBG 1864: 71 and 111; <bibl>
+                                        <ptr target="bib:Hoepermans1914_01"/>
+                                        <citedRange>152</citedRange>
+                                    </bibl>; <bibl>
+                                        <ptr target="bib:ROD1914"/>
+                                        <citedRange>240</citedRange>
+                                    </bibl>).</p>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="san-Latn">Sanskrit, romanized</language>
+                <language ident="kaw-Latn">Old Javanese, romanized</language>
+                <language ident="osn-Latn">Old Sundanese, romanized</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of
+                contents</change>
+            <change when="2021-09-27" who="part:axja">Adding the colophon template</change>
+            <change when="2020-10-25" who="part:adgu">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve" xml:lang="kaw-Latn">
         <body>
                <div type="chapter" n="1" xml:id="siksaguru_01">
           <head type="editorial" xml:lang="eng">the pure circle of three bodily domains</head>
@@ -205,7 +226,7 @@
                     <app><lem type="emn">kavighāta</lem><rdg wit="#L642">kavigataḥ</rdg><rdg wit="#L633">kivigata</rdg><rdg wit="#L628">ki<gap reason="lost" unit="character" quantity="3"/></rdg></app> malaṅ kva hana, ya tika pariśuddha 
                     <app><lem type="norm">timpalakna</lem><rdg wit="#L642">timpalakənkan</rdg><rdg wit="#L633">timpalakəna</rdg><rdg wit="#L628">tumpalakəna</rdg></app> 
                     <app><lem wit="#L628">kunaṅ</lem><rdg wit="#L642 #L633">kuna</rdg></app> rətakna, ya ta mas 
-                    <app><lem wit="#L642" rend="check">r̥kr̥t</lem><rdg wit="#L628">ritri</rdg><rdg wit="#L633"></rdg></app> masəkar vañva, ṅa, maṅkana ta kita maseva<pb edRef="#L642" n="5r"/>ka *<foreign xml:lang="osn-Latn"><app><lem wit="#L642 #L633">di</lem><rdg wit="#L628">ri</rdg></app></foreign> saṅ paṇḍita, hayva ta kita gumavayakna <app><lem wit="#L642">gurutalpaka</lem><rdg wit="#L633">talapakanya</rdg><rdg wit="#L628">talapakan·</rdg></app>, jagat upadrava, 
+                    <app><lem wit="#L642" rend="check">r̥kr̥t</lem><rdg wit="#L628">ritri</rdg><rdg wit="#L633"/></app> masəkar vañva, ṅa, maṅkana ta kita maseva<pb edRef="#L642" n="5r"/>ka *<foreign xml:lang="osn-Latn"><app><lem wit="#L642 #L633">di</lem><rdg wit="#L628">ri</rdg></app></foreign> saṅ paṇḍita, hayva ta kita gumavayakna <app><lem wit="#L642">gurutalpaka</lem><rdg wit="#L633">talapakanya</rdg><rdg wit="#L628">talapakan·</rdg></app>, jagat upadrava, 
                     <app><lem wit="#L633">katakuta</lem><rdg wit="#L642">kathakutan·</rdg></app> ri sira, 
                     <app><lem wit="#L642 #L633">bhaktyānukul</lem><rdg wit="#L628">bak·tyanuṁkul</rdg></app> ta kita ri saṅ guru, gavayakna 
                     <app><lem type="emn">kasupraṇata</lem><rdg wit="#L642 #L633 #L628">kasuprana</rdg></app>, <foreign xml:lang="osn-Latn"><app><lem wit="#L642 #L633">di</lem><rdg wit="#L628">ri</rdg></app></foreign><!--OS--> saṅ guru, təka ri saṅ paṇḍita, dataṅ ta ri kasādhyanya.  
@@ -585,26 +606,28 @@
                      <app><lem wit="#L642">cakra ta<pb edRef="#L642" n="14v"/>raṅgabāhu</lem><rdg wit="#L633">cakra taraṁgabahu, cakra si tarupaḥ, cakra si Atala pakṣa, cakra si sakuR̥b</rdg></app>.</p>
                 
                  <p xml:id="siksaguru_07.02">nihan lvirnya, 
-                     <app><lem wit="#L642">an upadrava</lem><rdg wit="#L633">Anupa Upadrava</rdg></app> saṅ paṇḍita,<pb edRef="#L633" n="24r"/> irikaṅ saṅ mānadhana, 
-                     <app><lem type="emn">umigəl</lem><rdg wit="#L642 #L633">Umәgәl</rdg></app> saṅ mānadhana ri 
-                     <app><lem wit="#L642">tala</lem><rdg wit="#L633" cause="morphological">patala</rdg></app>, jalakuna paṅupadrava saṅ paṇḍita ri vəkasniṅ patala, <foreign xml:lang="osn-Latn">di</foreign> saṅ mānadhana, i svar 
-                     <app><lem wit="#L633">pat ri</lem><rdg wit="#L642">patniṁ</rdg></app> saṅ mānadhana, ri patala, umigəl ta ya ri tasik sumələm ri pusəran maṅsāgara, ya jalapakṣa paṅupadrava saṅ paṇḍita, irikaṅ samudra, patnikaṅ saṅ mānadhana, saka ri sāgara, umigəl ta ya ri lvar kidul kulvan vetan, ya cakra sambharaṇa paṅupadrava saṅ paṇḍita, irikaṅ lvar kidul kulvan vetan, umigəl ta ya  ri vəkasniṅ i ruhur, cakra taraṅga<pb edRef="#L642" n="15r"/>bahu paṅupaḍrava saṅ paṇḍita, ri vəkasniṅ i ruhur, syuh gəsəṅ kapravasa ika vəkasniṅ i ruhur, de sañjata saṅ paṇḍita, i svar i luhur, makuliliṅan.</p>
+                     <app><lem wit="#L642">an upadrava</lem><rdg wit="#L633">Anupa Upadrava</rdg><rdg wit="#L642">hanu paṅupadrava</rdg></app> saṅ paṇḍita,<pb edRef="#L633" n="24r"/> irikaṅ saṅ mānadhana, 
+                     <app><lem type="emn">umigəl</lem><rdg wit="#L642 #L633">Umәgәl</rdg><rdg wit="#L628">migəl</rdg></app> saṅ mānadhana ri 
+                     <app><lem wit="#L633 #L628">patala</lem><rdg wit="#L642" cause="morphological">tala</rdg></app>, 
+                     <app><lem wit="#L642 #L633">jalakuna</lem><rdg wit="#L628">jalakunaṁ</rdg></app> paṅupadrava saṅ paṇḍita 
+                     <app><lem wit="#L628 #L633">ri</lem><rdg wit="#L628">di</rdg></app> vəkasniṅ patala, <foreign xml:lang="osn-Latn">di</foreign> saṅ mānadhana, i svar 
+                     <app><lem wit="#L633">pat ri</lem><rdg wit="#L642 #L628">patniṁ</rdg></app> saṅ mānadhana, ri 
+                     <app><lem wit="#L642 #L633">patala</lem><rdg wit="#L628" cause="eye-skip">pala</rdg></app>, 
+                     <app><lem type="emn">umigəl</lem><rdg wit="#L642 #L633">Uməgəl</rdg><rdg wit="#L628">huməgəl</rdg></app> ta ya ri tasik, sumələm ri pusəran maṅsāgara, ya jalapakṣa 
+                     <app><lem wit="#L633 #L628">paṅupadrava</lem><rdg wit="#L642">paṅupava</rdg></app> saṅ paṇḍita, 
+                     <app><lem wit="#L642 #L628">irikaṅ</lem><rdg wit="#L633">Irəkəṁ</rdg></app> samudra, patnikaṅ saṅ mānadhana, saka ri 
+                     <app><lem wit="#L633 #L628">samudra</lem><rdg wit="#L642" cause="lexical">sagara</rdg></app>, 
+                     <app><lem type="emn">umigəl</lem><rdg wit="#L642">Umləgil</rdg><rdg wit="#L633">Uməgəl</rdg></app> ta ya ri lvar kidul kulvan vetan, 
+                     <app><lem>ya cakra 
+                     <app><lem type="emn">sambharaṇa</lem><rdg wit="#L642">sambhirana:</rdg><rdg wit="#L633">sabirana</rdg></app> paṅupadrava saṅ paṇḍita, irikaṅ lvar 
+                     <app><lem wit="#L633">kidul kulon</lem><rdg wit="#L642" cause="eye-skip">kiḍulvan·</rdg></app> kulvan vetan, 
+                     <app><lem wit="#L633">ya patniṅ saṅ mānadhana, saṅka ri lvar kidul kulon vetan</lem><rdg wit="#L642" cause="eye-skip"><gap reason="omitted"/></rdg></app></lem><note type="altLem">ya cakra...vetan</note><rdg wit="#L628" cause="eye-skip"><gap reason="omitted"/></rdg></app>, 
+                     <app><lem wit="#L642 #L633">umigəl</lem><rdg wit="#L628">Umagal</rdg></app> ta ya  ri 
+                     <app><lem wit="#L642">vəkasniṅ</lem><rdg wit="#L633">vəkasna</rdg><rdg wit="#L628"><unclear>vasiṁṅa</unclear></rdg></app> i ruhur, ya cakra taraṅga<pb edRef="#L642" n="15r"/>bahu paṅupaḍrava saṅ paṇḍita, ri vəkasniṅ i ruhur, syuh <app><lem wit="#L628">gəsəṅ</lem><rdg wit="#L642">gəsiṁ</rdg></app> kapravasa ika vəkasniṅ i ruhur, 
+                     <app><lem wit="#L642 #L633">de</lem><rdg wit="#L628">deniṁ</rdg></app> sañjata saṅ paṇḍita, 
+                     <app><lem wit="#L642 #L633">i svar i luhur, makuliliṅan</lem><rdg wit="#L628"><gap reason="omitted"/></rdg></app>.</p>
                  
-                 <!-- Umәgәl ta ya ri tasik sumlәm· ri pusәran masana<lb n="14v3" break="no"/>ra, ya jalapakṣa paṅupava saṁ pandita, Irikaṁ samuḍra, patnikaṁ <space type="binding-hole"/> saṁ manaḍana, saka ri sagara, Umlәgil ta ya ri lvar ki:<!-\- i long? -\->dul· kulvan·
-<lb n="14v4"/>⌉ vetan·, ya cakr̥ sambhirana: paṅupaḍrava saṁ pandita, Irikaṁ lvar kiḍulvan· vetan, Umәgәl ta ya  ri vkәsniṁ I ruhur, cakr̥ taraga<g type="filler">§</g><!-\-DSCF8938.JPG-\-><pb n="15r" xml:id="pb028"/><lb n="15r1" break="no"/>bahu paṅupaḍrava saṁ pandita, ri vkasniṁ I ruhur, syuḥ gәsiṁ kapr̥vasa, Ika vkәsniṁ I ruhur, ḍe sañjata saṁ pandita,-->
-                 
-                 <!-- Uməgə<lb n="24r3" break="no"/>l· ta ya ri tasik·, suməL̥m· ri<space type="binding-hole"/>pusəran maṁsagara, ya jalapakṣa, paṅupa<lb n="24r4" break="no"/>drava saṁ panḍita, I rəkəṁ samudra, patnikaṁ saṁ manadana, saka ri samudra, Uməgəl ta ya ri
-
-
-<!-\-SiGu_L633_24v.jpg-\->
-<pb n="24v" xml:id="pb047"/><fw place="left" n="24v"><num value="23">23</num></fw>
-<lb n="24v1"/>lva<unclear>r</unclear> kidula, kulvan· vetan·, ya cakrasabirana, paṅupadrava saṁ panḍita, Irikaṁ lvar
-<lb n="24v2"/>kidul· kulon· vetan·, ya pa<space type="binding-hole"/>t·niṁ saṁ manadana, saṁka ri lvar kidul· kulva<lb n="24v3" break="no"/>n· vetan·, Uməgəl ta ya ri vəkasna<space type="binding-hole"/>I ruhur, ya cakrataraṁgabahu, paṅupadra<lb n="24v4" break="no"/>va saṁ panḍita, ri vəkasniṁ I ruhur, syuḥ gsaṁ kapravasa, Ikaṁ vəkasniṁ I luhur, deniṁ sañjata
-
-<!-\-SiGu_L633_25r.jpg-\->
-<pb n="25r" xml:id="pb048"/>
-<lb n="25r1"/>saṁ panḍita, I svar I luhur, makuliṁliṁṅan·,-->
-                 <p xml:id="siksaguru_07.03">nihan lvirnya ikaṅ saṅ hyaṅ caduśakti pinakasañjata saṅ paṇḍita, pəpək pənuh ikeṅ bhuvana, <foreign xml:lang="osn-Latn">di</foreign> deśāntara de saṅjata, kaliṅanya, yatna mvalah, yatna mañabda, yatna māmbəkan yatanya tar kopadrava, ya ta sinaṅguh saṅ hyaṅ caduśakti, ya vəkasnikaṅ saṅ paṇḍita, yatnakna saṅ sevaka dharma.</p>
+                 <p xml:id="siksaguru_07.03">nihan lvirnya ikaṅ saṅ hyaṅ caduśakti pinakasañjata saṅ paṇḍita, pəpək pənuh ikeṅ bhuvana, <foreign xml:lang="osn-Latn">di</foreign> deśāntara de saṅjata, kaliṅanya, yatna molah, yatna mañabda, yatna māmbəkan yatanya tar kopadrava, ya ta sinaṅguh saṅ hyaṅ caduśakti, ya vəkasnikaṅ saṅ paṇḍita, yatnakna saṅ sevaka dharma.</p>
                  
              </div>
                 <div type="chapter" n="8" xml:id="siksaguru_08">
