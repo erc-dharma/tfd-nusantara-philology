@@ -43,15 +43,17 @@
                   </abbr>
                   <msDesc>
                      <msIdentifier>
+                        <settlement>Jakarta</settlement>
                         <institution>Perpustakaan Nasional Republik Indonesia</institution>
                         <repository>Lontar</repository>
+                        <collection>Koleksi Naskah Nusantara</collection>
                         <idno>L631</idno>
                      </msIdentifier>
-                     <physDesc>
+                     <!--  physDesc>
                         <objectDesc>
                            <p>Actuellement en condition fort endommagée, il consiste en 49 ôles complets et en d’assez nombreux fragments. Chaque ôle mesure 44.5 × 3.5 cm et compte quatre lignes de texte par face. Les caractères empruntés ici sont très comparables à ceux que l’on connaît des manuscrits LOr 2266</p>
                         </objectDesc>
-                     </physDesc>
+                     </physDesc> -->
                   </msDesc>
                </witness>
                <witness xml:id="msjb">
@@ -59,16 +61,17 @@
                   </abbr>
                   <msDesc>
                      <msIdentifier>
+                        <settlement>Jakarta</settlement>
                         <institution>Perpustakaan Nasional Republik Indonesia</institution>
                         <repository>Lontar</repository>
-                        <collection>Merapi-Merbabu</collection>
+                        <collection>Koleksi Naskah Nusantara</collection>
                         <idno>L298</idno>
                      </msIdentifier>
-                     <physDesc>
+                    <!-- <physDesc>
                         <objectDesc>
                            <p>51 feuilles de palmier lontar (Borassus flabellifer), mesurant 46.2 × 3.54 cm chacune, et porte quatre lignes par face</p>
                         </objectDesc>
-                     </physDesc>
+                     </physDesc> -->
                   </msDesc>
                </witness>
                <witness xml:id="msjc">
@@ -76,16 +79,17 @@
                   </abbr>
                   <msDesc>
                      <msIdentifier>
+                        <settlement>Jakarta</settlement>
                         <institution>Perpustakaan Nasional Republik Indonesia</institution>
                         <repository>Lontar</repository>
+                        <collection>Koleksi Naskah Nusantara</collection>
                         <idno>L241</idno>
                      </msIdentifier>
-                     <physDesc>
+                    <!-- <physDesc>
                         <objectDesc>
-                               <!-- Here you can give a physical description of the manuscript in prose-->
                            <p>32 folios mesurant 51 × 3.5 cm chacun, quatre lignes/folio, écrit recto-verso en caractères quadratiques anciens du Java-Ouest</p>
                         </objectDesc>
-                     </physDesc>
+                     </physDesc> -->
                   </msDesc>
                </witness>
                <witness xml:id="msba">
@@ -93,18 +97,21 @@
                   </abbr>
                   <msDesc>
                      <msIdentifier>
-                        <settlement>Pusdok, Bali</settlement>
+                        <settlement>Bali</settlement>
+                        <institution>Pusat Dokumentasi Dinas Kebudayaan Provinsi Bali</institution>
+                        <repository>Lontar</repository>
+                        <idno>K/I/2/DOKBUD</idno>
                      </msIdentifier>
                      <msContents>
                         <msItem>
                            <title>Aji Canda</title>
                         </msItem>
                      </msContents>
-                     <physDesc>
+                     <!-- <physDesc>
                         <objectDesc>
                            <p>Manuscrit sur lontar (Borassus flabellifer), 34 folios mesurant 31 × 3.5 cm chacune, quatre lignes/folio, écrit recto-verso en caractères balinais, conservé à Pusdok, Bali.</p>
                         </objectDesc>
-                     </physDesc>
+                     </physDesc> -->
                   </msDesc>
                </witness>
                <witness xml:id="msbb">
@@ -112,7 +119,7 @@
                   </abbr>
                   <msDesc>
                      <msIdentifier>
-                        <settlement>Leiden, the Netherlands</settlement>
+                        <settlement>Leiden</settlement>
                         <institution>Leiden University</institution>
                         <repository>Leiden University Libraries</repository>
                         <collection>Special Collections</collection>
@@ -124,14 +131,14 @@
                            <colophon>iti aji canda samapta. Oṁ dirgayurastu tatastu astu.</colophon>
                         </msItem>
                      </msContents>
-                     <physDesc>
+                     <!-- <physDesc>
                         <objectDesc>
                            <p>Manuscrit sur papier, 13 pages mesurant 25 × 16 cm chacune, 38 lignes/page, écrit en caractères latins.</p>
                         </objectDesc>
-                     </physDesc>
+                     </physDesc> -->
                   </msDesc>
                </witness>
-               <witness xml:id="msbc">
+               <!-- <witness xml:id="msbc">
                   <abbr type="siglum">B<hi rend="subscript">3</hi>
                   </abbr>
                   <msDesc>
@@ -176,7 +183,7 @@
                         </objectDesc>
                      </physDesc>
                   </msDesc>
-               </witness>
+               </witness>-->
             </listWit>
          </sourceDesc>
       </fileDesc>
@@ -257,23 +264,27 @@
          <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn"><!-- update the language code -->
-		<body>
-		<div xml:id="candrakirana_01">
-		    <ab xml:id="candrakirana_01.01" type="invocation" xml:lang="san-Latn">
+<text xml:space="preserve" xml:lang="kaw-Latn"><!-- update the language code -->
+
+<body>
+
+<div xml:id="candrakirana_01">
+<ab xml:id="candrakirana_01.01" type="invocation" xml:lang="san-Latn">
+<pb edRef="#msjb" n="1r"/><pb edRef="#msba" n="1v"/><pb edRef="#msbb" n="1v"/>
 <app><lem wit="#msjb">om̐ avighnam astu</lem>
-  <rdg wit="#msba">// 0 // Aji caṇḍa:,, 0,, Avighnam astu,, 0,,</rdg>
-  <rdg wit="#msbb">Avignam astu.</rdg>
+  <rdg wit="#msba">// 0 // aji caṇḍa:,, 0,, avighnam astu,, 0,,</rdg>
+  <rdg wit="#msbb">avignam astu</rdg>
   <rdg wit="#msja"><lacunaStart/></rdg>
   <rdg wit="#msjc"><lacunaStart/></rdg></app>
 </ab>
 		</div>
+
 <div n="1" type="chapter" xml:id="candrakirana_02"><head>Introduction</head>
 <lg met="anuṣṭubh" xml:id="candrakirana_02.01">
   <l n="a">
-    <app><lem type="emn">kiraṇo</lem><rdg wit="#msjb">kīraṇah</rdg><rdg wit="#msba">kiraṇa</rdg><rdg wit="#msbb">kirana</rdg></app>
+    <app><lem type="emn">kiraṇo</lem><rdg wit="#msjb">kīraṇaḥ</rdg><rdg wit="#msba">kiraṇa</rdg><rdg wit="#msbb">kirana</rdg></app>
     <app><lem type="emn">vyaktiś</lem><rdg wit="#msjb">viyaktiḥ</rdg><rdg wit="#msba #msbb">viyati</rdg></app>
-    <app><lem type="norm">candrāgniḥ</lem><rdg wit="#msjb">candraghnih</rdg><rdg wit="#msba #msbb">candragni</rdg></app>
+    <app><lem type="emn">candrāgneḥ</lem><rdg wit="#msjb">candraghniḥ</rdg><rdg wit="#msba #msbb">candragni</rdg></app>
   </l>
   <l n="b">
     <app><lem type="emn">dvijānāṁ kavir</lem><rdg wit="#msjb">dvijodaḥ koviḥmar</rdg><rdg wit="#msba #msbb">dvijadanovimar</rdg></app>
@@ -282,40 +293,49 @@
 </lg>
 <p xml:id="candrakirana_02.02">
 nahan byakta pinakaśarīra bhaṭāra,
-<app><lem wit="msba">milvājanmāgave</lem><rdg wit="#msjb">milv aja:nma gave</rdg><rdg wit="#msbb">milu anjanma agave</rdg></app>
-bhuvana sira
-<app><lem type="norm">tāṣṭatanu</lem><rdg wit="#msba">tastatanu</rdg><rdg wit="#msbb">ta astatanu</rdg><rdg wit="#msjb">tāṣvatanu</rdg></app>
-ṅaranira, sira
-<app><lem type="emn">tāṣṭadeśomidәr</lem><rdg wit="#msjb">tāṣvadeśomidәr</rdg><rdg wit="#msba">tastadesomiḍәp</rdg><rdg wit="#msbb">ta astadesa umidәp</rdg>
-<!-- Apakah bacaan "umidər" lebih baik daripada "umidəp"--></app>
-pinakavәṅku, sira
-<app><lem wit="#msjb">ta huripnikaṅ rat</lem><rdg wit="#msba #msbb">uripnikaṅ rāt</rdg></app>
+<app><lem wit="msba">milvājanmāgave</lem><rdg wit="#msjb">milvaja:nmagave</rdg><rdg wit="#msbb">milu anjanma agave</rdg></app>
+bhuvana,
+sira <app><lem type="norm">tāṣṭatanu</lem><rdg wit="#msba">tastatanu</rdg><rdg wit="#msbb">ta astatanu</rdg><rdg wit="#msjb">tāṣvatanu</rdg></app>
+ṅaranira,
+sira
+<app>
+  <lem type="norm">tāṣṭadeśomidәr</lem>
+  <rdg wit="#msjb">tāṣvadeśomidәr</rdg>
+  <rdg wit="#msba">tastadesomiḍәp</rdg>
+  <rdg wit="#msbb">ta astadesa umidәp</rdg></app>
+pinakavәṅku, sira <app><lem wit="#msjb">ta</lem><rdg wit="#msba #msbb"><gap reason="omitted"/></rdg></app>
+huripnikaṅ rāt,
+<!-- <app><lem wit="#msjb">ta huripnikaṅ rat</lem><rdg wit="#msba #msbb">uripnikaṅ rāt</rdg></app> -->
 <!-- di #msbb tertulis "rat" -->
 <!-- Apakah kita memerlukan particle "ta" pada kalimat ini? -->
 sira dumadyakәn vr̥ddhiniṅ janma kabeh,
-<app><lem type="norm">prāṇaprāṇī</lem><rdg wit="#msjb">praṇapraṇī</rdg><rdg wit="#msba">praṇapraṇi</rdg><rdg wit="#msbb">pranaprani</rdg></app>
-sarva hurip, ikanaṅ urip lavan avak,
-<app><lem wit="#msba">śarīra</lem><rdg wit="#msjb">śarira</rdg><rdg wit="#msbb">sarira</rdg></app>
+<app rend="hide"><lem type="norm">prāṇaprāṇī</lem><rdg wit="#msjb">praṇapraṇī</rdg><rdg wit="#msba">praṇapraṇi</rdg><rdg wit="#msbb">pranaprani</rdg></app>
+sarva hurip,
+<!-- interpret as sarvāhurip? the combination sarva mahurip occurs a few times -->
+ikanaṅ urip lavan avak,
+<app rend="hide"><lem wit="#msba">śarīra</lem><rdg wit="#msjb">śarira</rdg><rdg wit="#msbb">sarira</rdg></app>
 pamisanya riṅ
-<app><lem type="norm">sādhārādheya</lem><rdg wit="#msjb">sadharadeya</rdg><rdg wit="#msba">saḍaradeyan</rdg><rdg wit="#msbb">sadarade</rdg></app>,
-<app><lem wit="#msjb #msba">gumavay</lem><rdg wit="#msbb">yan gumave</rdg></app>
-ikaṅ sarva dadi, sira sinaṅguh
-<app><lem wit="#msba">pūrvaniṅ</lem><rdg wit="#msjb #msbb">purvaniṅ</rdg></app>
-janma.
+<app><lem type="norm">sādhārādheya</lem><rdg wit="#msjb">sadharadeya</rdg><rdg wit="#msba">saḍaradeyan</rdg><rdg wit="#msbb">sadaradeyan</rdg></app>,
+gumavay ikaṅ sarva dadi,
+sira sinaṅguh <app rend="hide"><lem wit="#msba">pūrvaniṅ</lem><rdg wit="#msjb #msbb">purvaniṅ</rdg></app> janma.
 </p>
 
 <p xml:id="candrakirana_02.03">
 umijil taṅ
-<app><lem wit="#msba">aṣṭatanu</lem><rdg wit="#msjb">āṣṭatanū</rdg><rdg wit="#msbb">astatanu</rdg></app>
-<app><lem type="emn">riṅ rat</lem><rdg wit="#msjb #msba #msbb">rat</rdg></app>,
-nara
-<app><lem wit="#msba">paśu, mr̥ga</lem><rdg wit="#msbb">pasu, mr̥ga</rdg><rdg wit="#msjb">mr̥gha paśu</rdg></app>
-janma
-<app><lem wit="#msba">sthāvara</lem><rdg wit="#msbb">astavara</rdg><rdg wit="#msjb">svara</rdg></app>,
-<app><lem wit="#msba">pakṣi</lem><rdg wit="#msjb">pakṣī</rdg></app>
-<app><lem type="norm">sarīsr̥pa mīna</lem><rdg wit="#msjb">sarīśr̥pa miṇa</rdg><rdg wit="#msba #msbb">sari sr̥pani</rdg></app>
+<app rend="hide"><lem wit="#msba">aṣṭatanu</lem><rdg wit="#msjb">āṣṭatanū</rdg><rdg wit="#msbb">astatanu</rdg></app>
+<!-- <app><lem type="conj">riṅ</lem><rdg wit="#msjb #msba #msbb"><gap reason="omitted"/></rdg></app> -->
+<supplied reason="omitted">riṅ</supplied>
+rat,
+nara,
+<app><lem wit="#msba">paśu, mr̥ga</lem><rdg wit="#msjb">mr̥gha paśu</rdg><rdg wit="#msbb" type="transposition">pasu mr̥ga</rdg></app>,
+  <!-- maybe we can use @cause="transposition" here -->
+janma,
+<app><lem wit="#msba">sthāvara</lem><rdg wit="#msjb">svara</rdg><rdg wit="#msbb">astavara</rdg></app>,
+<app rend="hide"><lem wit="#msba">pakṣi</lem><rdg wit="#msjb">pakṣī</rdg><rdg wit="#msbb">paksi</rdg></app>,
+<app rend="hide"><lem type="norm">sarīsr̥pa</lem><rdg wit="#msjb">sarīśr̥pa</rdg><rdg wit="#msba #msbb">sarisr̥pa</rdg></app>,
+<app><lem type="norm">mīna</lem><rdg wit="#msjb">miṇa</rdg><rdg wit="#msba #msbb">ni</rdg></app>,
 <app><lem type="norm">prabhāvaniṅ ādhārādheya</lem><rdg wit="#msjb">prabhavaniṅ aḍaradeya</rdg><rdg wit="#msba">svabhāvanikaṅ aḍaradeya</rdg><rdg wit="msbb">svabavanikaṅ adaradeya</rdg></app>.
-
+<!-- is prabhāva or svabhāva better here? -->
 <listApp type="parallels">
     <app><lem>nara, paśu, mr̥ga, janma, sthāvara, pakṣi, sarīsr̥pa, mīna</lem>
         <note corresp="txt:BrP73.14"><foreign>mānuṣa paśu mr̥ga sarīsr̥pa pakṣi sthāvara</foreign>.</note>
@@ -327,7 +347,7 @@ janma
 prabhu rāma
 <app><lem wit="#msba">r̥ṣi</lem><rdg wit="#msjb">r̥ṣī</rdg><rdg wit="#msbb">rsi</rdg></app>
 tiga
-<app><lem type="norm">sira, pramāṇa</lem><rdg wit="#msba">sirāpramāṇa</rdg><rdg wit="#msbb">sira pramana</rdg><rdg wit="#msjb">pramana</rdg></app>
+<app><lem type="norm">sira, pramāṇa</lem><rdg wit="#msba">sirāpramāṇa</rdg><rdg wit="#msjb">pramana</rdg><rdg wit="#msbb">sira pramana</rdg></app>
 riṅ rat,
 <app><lem type="norm">pakuniṅ</lem><rdg wit="#msjb #msbb">pakәniṅ</rdg><rdg wit="#msba">paknaniṅ</rdg></app>
 <app><lem wit="#msba">bhuvana</lem><rdg wit="#msjb">bhuvaṇa</rdg><rdg wit="msbb">buvana</rdg></app>,
@@ -337,39 +357,39 @@ tuvi sira
 guruniṅ
 <app><lem wit="#msba #msbb">janma</lem><rdg wit="#msjb">janmā</rdg></app>
 kabeh,
-<app><lem wit="#msbb">lvirnira</lem><rdg wit="msba">lvirnya</rdg><rdg wit="#msjb">līnran</rdg></app>
+<app><lem wit="#msbb">lvirnira</lem><rdg wit="#msjb">līnran</rdg><rdg wit="msba">lvirnya</rdg></app>
 <app><lem wit="#msjb">ikiṅ</lem><rdg wit="#msba #msbb">hirikaṅ</rdg></app>
-<app><lem type="norm">chanda</lem><rdg wit="#msba">caṇḍa</rdg><rdg wit="#msjb">canda</rdg></app>
+<app><lem type="norm">chanda</lem><rdg wit="#msjb">canda</rdg><rdg wit="#msba">caṇḍa</rdg></app>
 <app><lem wit="#msba #msbb">ṅaranira ṅkāna</lem><rdg wit="#msjb">nira ṅkaṇa</rdg></app>,
 sira tika
 <app><lem wit="#msba">siddhaguru</lem><rdg wit="#msjb #msbb">sidaguru</rdg></app>,
 sira
 <app><lem type="norm">tāṣṭagaṇa</lem><rdg wit="#msba">tastagaṇa</rdg><rdg wit="msbb">ta astagana</rdg><rdg wit="#msjb">haṣṭāgaṇa</rdg></app>
-<app><lem wit="#msba">guṇanira</lem><rdg wit="msbb">gunanira</rdg><rdg wit="#msjb"><gap reason="omitted"/></rdg></app>
+<app><lem wit="#msba">guṇanira</lem><rdg wit="#msjb"><gap reason="omitted"/></rdg><rdg wit="msbb">gunanira</rdg></app>
 gumavay ikaṅ
-<app><lem wit="#msba">varta sәk lumrā</lem><rdg wit="#msjb">varvāsәk lumrah</rdg></app>.
+<app><lem wit="#msba #msbb">varta sәk lumrā</lem><rdg wit="#msjb">varvāsәk lumrah</rdg></app>.
 </p>
 
 </div>
-<div n="2" type="chapter" xml:id="candrakirana_03"><head>Origine des mètres de <foreign>kakavin</foreign></head>
+<div n="2" type="canto" met="pādānuṣṭubh" xml:id="candrakirana_03"><head>Origin of the <foreign>kakavin</foreign> meters</head>
 
-<lg met="anuṣṭubh" xml:id="candrakirana_03.01" n="1">
-<l n="a">ikaṅ <app><lem wit="#msba">akṣaropamāvak</lem><rdg wit="#msjb">ākṣaropamavak</rdg></app></l>
-<l n="b">ika <app><lem wit="#msjb">ta</lem><rdg wit="#msba">taṅ</rdg></app> guru ṅaranya</l>
-<l n="c"><app><lem wit="#msba">yeki ta vinastu</lem><rdg wit="#msjb">yekī tuvi nāstu</rdg></app> <app><lem wit="#msjb">hurip</lem><rdg wit="#msba">urip</rdg></app></l>
-<l n="d">ya sinaṅguh guru <app><lem wit="#msjb">laghu</lem><rdg wit="#msba">lagu</rdg></app> ·</l></lg>
+<lg xml:id="candrakirana_03.01" n="1">
+<l n="a">ikaṅ <app><lem wit="#msba">akṣaropamāvak</lem><rdg wit="#msjb">ākṣaropamavak</rdg><rdg wit="#msbb">aksara pamavak</rdg></app>,</l>
+<l n="b">ika <app><lem wit="#msjb">ta</lem><rdg wit="#msba #msbb">taṅ</rdg></app> guru ṅaranya,</l>
+<l n="c"><app><lem wit="#msba #msbb">yeki ta vinastu</lem><rdg wit="#msjb">yekī tuvi nāstu</rdg></app> <app><lem wit="#msjb">hurip</lem><rdg wit="#msba #msbb">urip</rdg></app>,</l>
+<l n="d">ya sinaṅguh guru <app><lem wit="#msjb">laghu</lem><rdg wit="#msba #msbb">lagu</rdg></app>.</l></lg>
 
 <lg xml:id="candrakirana_03.02" n="2">
-<l n="a">ya <app><lem type="norm">pinakamūla chanda</lem><rdg wit="#msba">pinakamūlacaṇḍa</rdg><rdg wit="#msjb">panakamula canda</rdg></app></l>
-<l n="b"><app><lem wit="#msba">avaknikaṅ</lem><rdg wit="#msjb">avakniṅka</rdg></app> guru <app><lem type="norm">laghu</lem><rdg wit="#msjb">lāghu</rdg><rdg wit="#msba">lagu</rdg></app></l>
-<l n="c"><app><lem wit="#msjb">lavan</lem><rdg wit="#msba">lāvan</rdg></app> <app><lem type="norm">hurip</lem><rdg wit="#msjb #msba">urip</rdg></app> masaṅyoga</l>
-<l n="d"><app><lem wit="#msjb">umijil</lem><rdg wit="#msba">humijil</rdg></app> tikaṅ <app><lem wit="#msjb">trigaṇa</lem><rdg wit="#msba">tryāśa</rdg></app> ·</l></lg>
+<l n="a">ya <app><lem type="norm">pinakamūla chanda</lem><rdg wit="#msba">pinakamūlacaṇḍa</rdg><rdg wit="#msjb">panakamula canda</rdg><rdg wit="#msbb">pinakamula canda</rdg></app>,</l>
+<l n="b"><app><lem wit="#msba #msbb">avaknikaṅ</lem><rdg wit="#msjb">avakniṅka</rdg></app> guru <app><lem type="norm">laghu</lem><rdg wit="#msjb">lāghu</rdg><rdg wit="#msba #msbb">lagu</rdg></app>,</l>
+<l n="c"><app><lem wit="#msjb #msbb">lavan</lem><rdg wit="#msba">lāvan</rdg></app> <app><lem type="norm">hurip</lem><rdg wit="#msjb #msba #msbb">urip</rdg></app> <app><lem wit="#msjb #msba">masaṅyoga</lem><rdg wit="#msbb">pasaṅyoga</rdg></app>,</l>
+<l n="d"><app><lem wit="#msjb #msbb">umijil</lem><rdg wit="#msba">humijil</rdg></app> tikaṅ <app><lem wit="#msjb">trigaṇa</lem><rdg wit="#msba">tryāśa</rdg><rdg wit="#msbb">triyasa</rdg></app>.</l></lg>
 
 <lg xml:id="candrakirana_03.03" n="3">
-<l n="a"><app><lem wit="#msba">adәgnikaṅ</lem><rdg wit="#msjb">adīghnikaṅ</rdg></app> guru <app><lem type="norm">laghu</lem><rdg wit="#msjb">lāghu</rdg><rdg wit="#msba">lagu</rdg></app></l>
-<l n="b"><app><lem wit="#msba">aniganigeṅ</lem><rdg wit="#msjb">haniganigeṅ</rdg></app> sagaṇa</l>
-<l n="c"><app><lem wit="#msjb">yekāṣṭagaṇa</lem><rdg wit="#msba">yekāsthagaṇa</rdg></app> ṅaranya</l>
-<l n="d"><app><lem type="emn">saṅ mahāvyāpāre vr̥tta</lem><rdg wit="#msjb">sa mahādyapare vatvār</rdg><rdg wit="#msba">sa matabyāpareṅ varta</rdg></app>·</l></lg>
+<l n="a"><app><lem wit="#msba">adәgnikaṅ</lem><rdg wit="#msjb">adīghnikaṅ</rdg></app> guru <app><lem type="norm">laghu</lem><rdg wit="#msjb">lāghu</rdg><rdg wit="#msba">lagu</rdg></app>,</l>
+<l n="b"><app><lem wit="#msba">aniganigeṅ</lem><rdg wit="#msjb">haniganigeṅ</rdg></app> sagaṇa,</l>
+<l n="c"><app><lem wit="#msjb">yekāṣṭagaṇa</lem><rdg wit="#msba">yekāsthagaṇa</rdg></app> ṅaranya,</l>
+<l n="d"><app><lem type="emn">saṅ mahāvyāpāre vr̥tta</lem><rdg wit="#msjb">sa mahādyapare vatvār</rdg><rdg wit="#msba">sa matabyāpareṅ varta</rdg></app>.</l></lg>
 
 <lg xml:id="candrakirana_03.04" n="4">
 <l n="a" real="pādānuṣṭup"><app><lem wit="#msjb">mvaṅ laku śloka nihan len</lem><rdg wit="#msja #msjc #msba"><gap reason="lost"/></rdg><note>1-3: Pādānuṣṭup, irrégulière</note></app></l></lg>
