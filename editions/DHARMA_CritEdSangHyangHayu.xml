@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sanghyanghayu" type="edition" xml:lang="eng">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Saṅ Hyaṅ Hayu</title>
+            <editor ref="part:adgu">
+               <name>Aditia Gunawan</name>
+            </editor>
+            <respStmt>
+               <resp>TEI encoding</resp>
+               <!--TBM-->
+               <persName ref="part:adgu">
+                  <name>Aditia Gunawan</name>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Paris</pubPlace>
+            <idno type="filename">DHARMA_CritEdSangHyangHayu</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
+                     Licence. To view a copy of the licence, visit
+                     https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative
+                     Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041,
+                     USA.</p>
+                  <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C">Gebang, Ciburuy, Kropak 22 peti 2c
+                  <abbr type="siglum">C
+                  </abbr>
+               </witness>
+               <witness xml:id="J1">Gebang, Jakarta, Perpusnas, L 634
+                  <abbr type="siglum">J<hi rend="superscript">1</hi>
+                  </abbr>
+               </witness>
+               <witness xml:id="J2">Gebang, Jakarta, Perpusnas, L 635
+                  <abbr type="siglum">J<hi rend="superscript">2</hi>
+                  </abbr>
+               </witness>
+               <witness xml:id="J3">Gebang, Jakarta, Perpusnas, L 636
+                  <abbr type="siglum">J<hi rend="superscript">3</hi>
+                  </abbr>
+               </witness>
+               <witness xml:id="P">Gebang, Paris, MalPol 161</witness>
+               <witness xml:id="EdUAD">
+                  <abbr type="siglum">Ed<hi rend="superscript">UAD</hi>
+                  </abbr>
+                  <bibl>
+                     <ptr target="bib:UndangADarsa1998_01"/>
+                  </bibl>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>This project DHARMA has received funding from the European Research Council (ERC)
+               under the European Union's Horizon 2020 research and innovation programme (grant
+               agreement no 809994).</p>
+            <p>Encoded following the <ref
+                  target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"
+                  >Guide for Encoding Manuscript-Based Critical Editions in the DHARMA
+               Project</ref>.</p>
+         </projectDesc>
+         <schemaRef type="guide" key="EGCv01"
+            url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"
+         />
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:adgu" when="2022-04-08" status="draft">Initial encoding of the
+            edition</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-Latn">
+        <body>
+           <div type="chapter" n="1">
+                              <head type="editorial" xml:lang="eng">Rasacarita and Kalpacarita</head>
+              <p xml:id="shh_01.01">ndah saṅ hyaṅ hayu ikaṅ ajarakna mami 
+                 <app><lem type="norm">riṅ vvaṅ</lem><rdg wit="#EdUAD">ri ṅvaṅ</rdg><rdg wit="#C">riṅ va</rdg></app> kadi kita, kunaṅ deyanta 
+                 <app><lem type="norm">humiḍəpa</lem><rdg wit="#EdUAD">humədapa</rdg><rdg wit="#C">humidəpa</rdg></app> sarasanikeṅ vuvusmami, hayva kita *umavaya rasacarita, mvaṅ kalpa rakva *<app><lem type="norm">manavastha</lem><rdg wit="#C">manavasta</rdg><rdg wit="#EdUAD">manavas ta</rdg><note><ptr target="#EdUAD"/> consistently separates this word in the whole text, so I will not record this hereafter.</note></app>.</p>
+              <p xml:id="shh_01.02">ndya kari lvirnikaṅ rasacarita mvaṅ kalpa rakva manavastha, yar kva liṅanta ri kami, aum, nihan ta lvirnya, kady aṅganiṅ viku maṅucap 
+                 <app><lem wit="#C">kacaritanikaṅ</lem><rdg wit="#EdUAD">ta caritanikaṅ</rdg></app> hyaṅ devatā, kalpa pūrva bhaṭāra bhaṭārī hana ṅuni, an pakayugaṅ brahmā, viṣṇu, īśvara, mahādeva, mvaṅ kusika, garga, metri, kurusya, pātañjala, mvaṅ kagəlarani yakṣa, piśāca, 
+                 <app><lem wit="#C">preta</lem><rdg wit="#EdUAD">prata</rdg></app>, bhūta, pitara, śiva buddha, yeka rasacarita ṅaranya, adva rakva manavastha ṅaranika.</p>
+              <p xml:id="shh_01.03">syapa ta ri vənaṅ myaktakna ika, lena sakeṅ rakva juga ika.</p>
+              <p xml:id="shh_01.04">nihan ta vaneh anuṅ kalpa-rasacarita, vijilnya saṅka riṅ aji, inajarakənya saṅ śeva sogata, pitu rakva patumpaṅnikaṅ bhuvana i svarta mvaṅ i ruhurta rakva.</p>
+              <p xml:id="shh_01.05">ndya lvirnya<supplied reason="omitted">,</supplied> nihan, prativī ṅaranikaṅ bhuvana kahananta, i svarnikiṅ patala, i svarnikaṅ patala nitala, i svarnikaṅ nitala sutala, i svarnikaṅ sutala talantala, i svarnikaṅ talantala talaniṅ tala, i svarnikaṅ talaniṅ tala mahātala, i svar mahātala atyanta 
+                 <app><lem wit="#C">antapatala</lem><rdg wit="#EdUAD">artapatala</rdg></app>, nahan lvirnikaṅ saptapatala, i svar ta rakva, kadi ta ya patapniṅ 
+                 <app><lem wit="#C">tapey</lem><rdg wit="#EdUAD">tapal</rdg></app> inələp ri vakul rakva patapnya i svar.</p>
+              <p xml:id="shh_01.06">maṅkana patumpaṅnikaṅ bhuvana pitu i ruhurta rakva, ndya lvirnya<supplied reason="omitted">,</supplied> nihan, bhūhloka ṅaranikaṅ bhuvana kahananta, i ruhurnikaṅ muvah bhuvahloka, i ruhurnikaṅ bhuvahloka 
+                 <app><lem type="norm">svaloka</lem><rdg wit="#C #EdUAD">suvaḥloka</rdg></app>, i ruhurnikaṅ 
+                 <app><lem type="norm">svaloka</lem><rdg wit="#C #EdUAD">suvaḥloka</rdg></app> 
+                 <app><lem type="norm">janaloka</lem><rdg wit="#C #EdUAD">janahloka</rdg></app>, i ruhurnikaṅ janaloka tapoloka, i ruhurnikaṅ tapoloka satyaloka, i ruhur satyaloka mahāloka, i ruhurnikaṅ mahāloka atyanta antaloka, nda nahan lvirnikaṅ bhuvana pitu, i ruhurta rakva, kadi ta ya patumpaṅnika 
+                 <app><lem wit="#C">tavvan</lem><rdg wit="#EdUAD">təvvan</rdg></app> valuh 
+                 <app><lem wit="#C">lvirnyan</lem><rdg wit="#EdUAD">lvirnya</rdg></app> pagantuṅan i ruhurta rakva, ya ta mataṅyan ri madhyapada ṅaranikaṅ bhuvana kahananta maṅke rakva.</p>
+
+              
+           </div>
+           </body>
+    </text>
+</TEI>
