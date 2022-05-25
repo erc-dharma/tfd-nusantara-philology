@@ -2,137 +2,129 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="skk"
-     type="edition"
-     xml:lang="eng">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title type="main">Saṅ Hyaṅ Siksa Kandaṅ Karəsian</title>
-            <title type="sub">The Holy Precepts from the Hermitage Milieu</title>
-            <editor ref="part:adgu">
-               <name>Aditia Gunawan</name>
-            </editor>
-            <respStmt>
-               <resp>TEI encoding</resp>
-               <!--TBM-->
-               <persName ref="part:adgu">
-                  <name>Aditia Gunawan</name>
-               </persName>
-            </respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <authority>DHARMA</authority>
-            <pubPlace>Paris (France)</pubPlace>
-            <idno type="filename">DHARMA_CritEdSiksaKandangKaresian</idno>
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licensed under the Creative Commons
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="skk" type="edition" xml:lang="eng">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title type="main">Saṅ Hyaṅ Siksa Kandaṅ Karəsian</title>
+                                <title type="sub">The Holy Precepts from the Hermitage
+                                        Milieu</title>
+                                <editor ref="part:adgu">
+                                        <name>Aditia Gunawan</name>
+                                </editor>
+                                <respStmt>
+                                        <resp>TEI encoding</resp>
+                                        <!--TBM-->
+                                        <persName ref="part:adgu">
+                                                <name>Aditia Gunawan</name>
+                                        </persName>
+                                </respStmt>
+                        </titleStmt>
+                        <publicationStmt>
+                                <authority>DHARMA</authority>
+                                <pubPlace>Paris (France)</pubPlace>
+                                <idno type="filename">DHARMA_CritEdSiksaKandangKaresian</idno>
+                                <availability>
+                                        <licence
+                                                target="https://creativecommons.org/licenses/by/4.0/">
+                                                <p>This work is licensed under the Creative Commons
                                                   Attribution 4.0 Unported Licence. To view a copy
                                                   of the licence, visit
                                                   https://creativecommons.org/licenses/by/4.0/ or
                                                   send a letter to Creative Commons, 444 Castro
                                                   Street, Suite 900, Mountain View, California,
                                                   94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
-               </licence>
-            </availability>
-            <date from="2019" to="2025">2019-2025</date>
-         </publicationStmt>
-         <sourceDesc>
-            <listWit>
-               <witness xml:id="A">
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Jakarta</settlement>
-                        <institution>Perpustakaan Nasional</institution>
-                        <idno>L. 630</idno>
-                     </msIdentifier>
-                     <physDesc>
-                        <p>Old Western Javanese Quadratic script on gebang</p>
-                     </physDesc>
-                  </msDesc>
-               </witness>
-               <witness xml:id="B">
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Jakarta</settlement>
-                        <institution>Perpustakaan Nasional</institution>
-                        <idno>L. 624 &amp; L. 1+</idno>
-                     </msIdentifier>
-                     <physDesc>
-                        <p>Old Sundanese script on
-                                                lontar</p>
-                     </physDesc>
-                  </msDesc>
-               </witness>
-               <witness xml:id="EdASD">
-                  <abbr type="siglum">Ed<hi rend="superscript">ASD</hi>
-                  </abbr>
-                  <bibl>
-                     <ptr target="bib:Atja+SalehDanasasmita1981_03"/>
-                  </bibl>
-               </witness>
-            </listWit>
-            <listBibl>
-               <biblStruct type="book"
-                           xml:id="ASD"
-                           corresp="#bib:Atja+SalehDanasasmita1981_03">
-                  <monogr>
-                     <title>Sanghyang Siksa Kanda ng Karesian: Naskah
+                                                <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
+                                        </licence>
+                                </availability>
+                                <date from="2019" to="2025">2019-2025</date>
+                        </publicationStmt>
+                        <sourceDesc>
+                                <listWit>
+                                        <witness xml:id="A">
+                                                <msDesc>
+                                                  <msIdentifier>
+                                                  <settlement>Jakarta</settlement>
+                                                  <institution>Perpustakaan Nasional</institution>
+                                                  <idno>L. 630</idno>
+                                                  </msIdentifier>
+                                                  <physDesc>
+                                                  <p>Old Western Javanese Quadratic script on
+                                                  gebang</p>
+                                                  </physDesc>
+                                                </msDesc>
+                                        </witness>
+                                        <witness xml:id="B">
+                                                <msDesc>
+                                                  <msIdentifier>
+                                                  <settlement>Jakarta</settlement>
+                                                  <institution>Perpustakaan Nasional</institution>
+                                                  <idno>L. 624 &amp; L. 1+</idno>
+                                                  </msIdentifier>
+                                                  <physDesc>
+                                                  <p>Old Sundanese script on lontar</p>
+                                                  </physDesc>
+                                                </msDesc>
+                                        </witness>
+                                        <witness xml:id="EdASD">
+                                                <abbr type="siglum">Ed<hi rend="superscript"
+                                                  >ASD</hi>
+                                                </abbr>
+                                                <bibl>
+                                                  <ptr target="bib:Atja+SalehDanasasmita1981_03"/>
+                                                </bibl>
+                                        </witness>
+                                </listWit>
+                                <listBibl>
+                                        <biblStruct type="book" xml:id="ASD"
+                                                corresp="#bib:Atja+SalehDanasasmita1981_03">
+                                                <monogr>
+                                                  <title>Sanghyang Siksa Kanda ng Karesian: Naskah
                                                   Sunda Kuno tahun 1518 M</title>
-                     <editor>
-                        <name>Atja</name>
-                     </editor>
-                     <editor>
-                        <name>Saleh Danasasmita</name>
-                     </editor>
-                     <imprint>
-                        <pubPlace>Bandung</pubPlace>
-                        <publisher>Proyek Pengembangan Permuseuman Jawa
+                                                  <editor>
+                                                  <name>Atja</name>
+                                                  </editor>
+                                                  <editor>
+                                                  <name>Saleh Danasasmita</name>
+                                                  </editor>
+                                                  <imprint>
+                                                  <pubPlace>Bandung</pubPlace>
+                                                  <publisher>Proyek Pengembangan Permuseuman Jawa
                                                   Barat</publisher>
-                        <date when="1981">1981</date>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-            </listBibl>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-            <p>This project DHARMA has received funding from the European
+                                                  <date when="1981">1981</date>
+                                                  </imprint>
+                                                </monogr>
+                                        </biblStruct>
+                                </listBibl>
+                        </sourceDesc>
+                </fileDesc>
+                <encodingDesc>
+                        <projectDesc>
+                                <p>This project DHARMA has received funding from the European
                                         Research Council (ERC) under the European Union's Horizon
                                         2020 research and innovation programme (grant agreement no
                                         809994).</p>
-         </projectDesc>
-         <schemaRef type="guide"
-                    key="EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="osn-Latn">Old Sundanese, romanized</language>
-         </langUsage>
-      </profileDesc>
-           <revisionDesc>
-                   <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
-           </revisionDesc>
-   </teiHeader>
-   <text xml:space="preserve" xml:lang="osn-Latn">
+                        </projectDesc>
+                        <schemaRef type="guide" key="EGCv01"
+                                url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"
+                        />
+                </encodingDesc>
+                <profileDesc>
+                        <langUsage>
+                                <language ident="san-Latn">Sanskrit, romanized</language>
+                                <language ident="osn-Latn">Old Sundanese, romanized</language>
+                        </langUsage>
+                </profileDesc>
+                <revisionDesc>
+                        <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a
+                                table of contents</change>
+                </revisionDesc>
+        </teiHeader>
+        <text xml:space="preserve" xml:lang="osn-Latn">
                 <body>
-                         <!--      I have spoken with Axelle. She and I agree that the example at hand should be encoded as follows:
 
-<app><lem type="conj" wit="#EdASD">saṅ hyaṅ</lem><rdg wit="A"><gap reason="lost" quantity="1" unit="character"/><seg type="component" subtype="body"><gap reason="lost" quantity="1" unit="component"/></seg>yaṁ</rdg><rdg wit="#B"><gap reason="lost" quantity="2" unit="character"/></rdg></app>
-
-In other words, you should search all cases where you have encoded only <rdg wit="..."/> and where this is not intended to express scribal omission but rather a physical gap in the witness. You should in all those cases encode a <gap/> inside the <rdg>, as in the example above.
-
-The display will provisionally be: "[...][...] B".      -->
                 <div type="chapter" n="1" xml:id="skk_01">
-                <head type="editorial" xml:lang="eng">The Ten Accomplishments</head>
-
-                    
+                <head type="editorial" xml:lang="eng">The Ten Accomplishments</head>          
                     <p xml:id="skk_01.01"><pb edRef="#A" n="1v"/>ndah
                             <app><lem wit="#A #EdASD">nihan varahakna</lem><rdg wit="#B">na<gap reason="lost" unit="character" quantity="4"/>ḥhakca</rdg></app> saṅ sadu,
 	       <app><lem wit="#A #EdASD">de</lem><rdg wit="#B" cause="morphological">den</rdg></app> saṅ mamet
@@ -542,7 +534,7 @@ kayatnakna voṅ sakabeh,
                           <app><lem wit="#A #EdASD">eta jəəṅ</lem><rdg wit="#B">Eta keḥ jəqəṁ</rdg></app>
                           <app><lem wit="#A #EdASD">kena ulah</lem><rdg wit="#B"><gap reason="lost" unit="character" quantity="3"/>laḥ</rdg></app> diturutan, ya eta kaṅkən guru nista ṅaranna.</p>
                  <p xml:id="skk_08.07">aya
-                          <app><lem wit="#B">dəi</lem><rdg wit="#A #EdASD">ta dəI</rdg><note>Since <foreign>aya dəi</foreign> occurs without <foreign>ta</foreign> in 22.2 and 22.3, I adopt the same structure here from <ref target="#B"></ref>.</note></app><supplied reason="omitted">,</supplied>
+                          <app><lem wit="#B">dəi</lem><rdg wit="#A #EdASD">ta dəI</rdg><note>Since <foreign>aya dəi</foreign> occurs without <foreign>ta</foreign> in 22.2 and 22.3, I adopt the same structure here from <ref target="#B"/>.</note></app><supplied reason="omitted">,</supplied>
                           <app><lem wit="#A #EdASD">lamun</lem><rdg wit="#B">lamu</rdg></app> uraṅ ñəəṅ nu
                           <app><lem wit="#A #EdASD">ṅavayaṅ</lem><rdg wit="#B">ṅaduṁ</rdg></app>, ṅadeṅekən nu
                           <app><lem type="norm" wit="#EdASD">mantun</lem><rdg wit="#A #B">matun</rdg></app>, nəmu
@@ -938,11 +930,11 @@ kayatnakna voṅ sakabeh,
                     <p xml:id="skk_12.04"><app><lem wit="#A #EdASD">lamun</lem><rdg wit="#B">lamun:a</rdg></app> itu hamo kapiguna, kapitvah ku na janma, kanista madya utama, pada diti<pb edRef="#A" n="22v"/>bakən ka na kavah si
                             <app><lem wit="#A #EdASD">tambrah gomuka</lem><rdg wit="#B">taman· braḥma muka</rdg></app>, vijaya jana janma<!-- or vijaya, ja na janma? -->, kavisesa ku devata pun.</p>
                     <p xml:id="skk_12.05">sahur saṅ darma pitutur, mujarakən sabda saṅ rumuhun, aya dəi
-                            <app><lem wit="#A #EdASD">babandiṅna</lem><rdg wit="#B">babadiṁṅan·nana</rdg></app>, kitu upamana uraṅ
+                            <app><lem wit="#A #EdASD">babandiṅna</lem><rdg wit="#B" cause="morphological">babadiṁṅan·nana</rdg></app>, kitu upamana uraṅ
                             <app><lem wit="#A #EdASD">ləmpaṅ</lem><rdg wit="#B">L̥paṁ</rdg></app>
                             <app><lem wit="#A #EdASD">ka java</lem><rdg wit="#B">ka java, dataṁ ka Alas· java</rdg></app>, hamo bisa nurut carekna, dəṅən carana, maṅu rasa uraṅ, aṅgəs ma pulaṅ dəi ka sunda, hantə bisa
                             <app><lem wit="#A #EdASD">carek</lem><rdg wit="#B">care</rdg></app> java, asa
-                            <app><lem wit="#A #EdASD">hantə dataṅ</lem><rdg wit="#B" cause="lexical">hatə tadaṁ</rdg></app> ñaba, poos tukuna bənaṅ
+                            <app><lem type="norm">hantə tandaṅ</lem><rdg wit="#A #EdASD">hantə dataṅ</rdg><rdg wit="#B">hatə tadaṁ</rdg></app> ñaba, poos tukuna bənaṅ
                             <app><lem wit="#A #EdASD">tandaṅ</lem><rdg wit="#B">tadaṁ</rdg></app>, ja
                             <app><lem wit="#A #EdASD">hantə</lem><rdg wit="#B">hatə</rdg></app> bisa
                             <app><lem wit="#A #EdASD">nurut</lem><rdg wit="#B">nuru</rdg></app>
