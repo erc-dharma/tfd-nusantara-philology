@@ -122,6 +122,17 @@
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="kaw-Latn">
+        <!--1. I suppose the line indication [L633:2r5] as line 5 on p. 118 is an inconsistency in your encoding. Shouldn’t you have used #A, #B or #C there? done
+2. I suppose ḍr̥ṣṭānta in line 13 on p. 120 is a typo for dr̥ṣṭānta (done)
+3. The heading of 6.3 is infelicitous in English, because ‘Second teacher’s love’ will be interpreted by all readers as meaning the love of a second teacher, not the second love of the teacher. The latter is what the text means, as shown correctly in your translation. So please change the heading to ‘Second love of the teacher: …’. By the way, in the context ‘favor’ might be a more suitable translation than ‘love’.
+4. The English in the apparatus note on 3 śrotra on p. 130 needs a lot of correction. Please discuss with Andrea.
+5. I suspect <app> encoding errors in the apparatus entries 
+25 ceva ] b; cova a. (p. 122 — no <rdg> for #C?) (done)
+28 vrəttya ] ; vrət a b, vrnya c. (p. 122 — missing @type on <lem>) (I encode it as @type="conj", so it need to be transformed in LaTeX)
+14 paṅrəṅə̄] ; om. a b c. (p. 132 — missing @type on <lem>, or you could use <supplied> here) (same case, I put "conj" as conjecture, but I will use <supplied>). 
+40 athava tan ] a; Atavan ta b, Atavalac. c. (p. 136 — I don’t understand why there is a reading Atava plus the label lac.) (I do not specify the number of lost characters, now its done)
+47 aṅəyəh, nihan ] c; Aṅəyəḥhan b, Aṅ y ḥ a. (p. 138 — non UNICODE signs?) (done)
+56 padvaṅdaṅ ] a; padodaṁ b. (p. 140 — no <rdg> for #C?) (done)--> 
         <body>
                <div type="chapter" n="1" xml:id="siksaguru_01">
           <head type="editorial" xml:lang="eng">Pure Circle of Three Bodily Domains</head>
@@ -149,7 +160,7 @@
                     <app><lem type="emn">kasvabhāvaniṅ</lem><rdg wit="#A #B #C">kasvambhavaniṁ</rdg></app> janma, hala tuməmu halanya, hayu tuməmu hayunya, maṅkana 
                     <app><lem wit="#A #C">lvirniṅ</lem><rdg wit="#B">lvarniṁ</rdg></app> janma.</p>
                
-                <p xml:id="siksaguru_01.03">ndya ḍr̥ṣṭānta, iriki dadyanya, hala deniṅ halanya, hayu deniṅ hayunya, nihan upadyanta, hana ya maṇik anargha ṅaranya, tan 
+                <p xml:id="siksaguru_01.03">ndya dr̥ṣṭānta, iriki dadyanya, hala deniṅ halanya, hayu deniṅ hayunya, nihan upadyanta, hana ya maṇik anargha ṅaranya, tan 
                     <app><lem wit="#A #C">kinavruhan</lem><rdg wit="#B">kinavraḥhan·</rdg></app> mulyanya, 
                     <app><lem wit="#A">tan paprameya ri</lem><rdg wit="#B">tan paprameyani</rdg><rdg wit="#C">tala prameyaniṁ</rdg></app> rahayu, kaliṅanya ikaṅ maṇik anargha, lavan maṇik 
                     <app><lem type="emn">sarveṣṭa</lem><rdg wit="#A">ṣavesṭaṭā</rdg><rdg wit="#B">ṣavesṭa</rdg><rdg wit="#C">ṣavesṭa ṭā</rdg></app>, yvagya karikāpusənta ri gaṅsa, tambaga lavan timah<pb edRef="#C" n="2v"/>, aparan ta yvagyanika, niyatār <pb edRef="#A" n="2v"/> mijil śrīnika lavan dhanuhnika, maṅka pva 
@@ -169,7 +180,7 @@
                     <app><lem wit="#A #B">maṇik anargha</lem><rdg wit="#C"><gap reason="lost" unit="character" quantity="3"/>narga</rdg></app>, paṅikətanta irikaṅ maṇik 
                     <app><lem type="norm">sarveṣṭa</lem><rdg wit="#A #B">ṣavesṭa</rdg><rdg wit="#C">ṣarvesṭa</rdg></app>, taham pih yāpusən ta ri gaṅsa tambaga lavan timah, aparan ta yvagyanika, paṅapusan ta irikaṅ maṇik anargha, paṅikə<pb edRef="#A" n="3r"/>tan ta irikaṅ maṇik sarveṣṭa, nahan 
                     <app><lem wit="#A #B">liṅnya</lem><rdg wit="#C">lvirnya</rdg></app> ri saṅ hyaṅ śāstra, <quote><foreign>ləpas ca vuṁkunuṅ 
-                        <app><lem wit="#B">ceva</lem><rdg wit="#A">cova</rdg></app>, 
+                        <app><lem wit="#B #C">ceva</lem><rdg wit="#A">cova</rdg></app>, 
                         <app><lem type="norm">adhika</lem><rdg wit="#A">Aḍi Ikaṁ</rdg><rdg wit="#B">Adik·ka</rdg><rdg wit="#C">Aḍikara</rdg></app>, 
                         <app><lem type="emn">uḍika</lem><rdg wit="#A">Uḍi Ika:</rdg><rdg wit="#B">Uḍi Ika</rdg><rdg wit="#C">dika</rdg></app>, 
                         <app><lem wit="#A #B">tater</lem><rdg wit="#C">tatai</rdg></app> tatur tathya tuṅgəṅ nu 
@@ -289,8 +300,7 @@
                   *<app><lem wit="#A">buḍaya</lem><rdg wit="#B">budaya</rdg><rdg wit="#C">buhaya</rdg></app>, tikəl<supplied reason="omitted">,</supplied> kəjəṅ<supplied reason="omitted">,</supplied> 
                   *<app><lem wit="#A #B">kəkəṅ</lem><rdg wit="#C">kəkəḥ</rdg></app>, salvirniṅ 
                   *<app><lem type="norm">bhīmarūpa</lem><rdg wit="#A">biparupa</rdg><rdg wit="#B #C">bimarupa</rdg></app> 
-                  <app><lem wit="#A #C">haneṅ</lem><rdg wit="#B">hane</rdg></app> rat, ṅuniveh buta tulīniṅ panvan 
-                  <app><lem type="conj">paṅrəṅə̄</lem><rdg wit="#A #B #C"><gap reason="omitted"/></rdg></app>, hayva 
+                  <app><lem wit="#A #C">haneṅ</lem><rdg wit="#B">hane</rdg></app> rat, ṅuniveh buta tulīniṅ panvan <supplied reason="omitted">paṅrəṅə̄</supplied>, hayva 
                   <app><lem wit="#C">peda</lem><rdg wit="#A #B">seda</rdg></app> kunaṅ 
                   <app><lem wit="#B #C">yan kita</lem><rdg wit="#A">kita ya</rdg></app> anvan vvaṅ 
                   *<app><lem type="norm">chedakṣara</lem><rdg wit="#A #B">ceḍakṣara</rdg><rdg wit="#C">cekṣara</rdg></app>, hayva ta kita maṅkana, 
@@ -350,7 +360,7 @@
                         <app><lem type="norm">panuduh asta mukha</lem><rdg wit="#A">panuduḥ Asta muka</rdg><rdg wit="#B">panuduḥhan ṣamuka</rdg><rdg wit="#C">panuduḥha samuka</rdg></app> saṅ guru, tan 
                         <app><lem type="emn">pacumbana</lem><rdg wit="#A">pacubakaḥ</rdg><rdg wit="#B">cumukaḥ</rdg><rdg wit="#C">rubakaḥ</rdg></app> 
                         <app><lem type="emn">yan gamələn taḍahən</lem><rdg wit="#A">ya gamlən tadaḥhən</rdg><rdg wit="#B #C">yan· gaməlan tadaḥ</rdg></app> saṅ guru, 
-                        <app><lem wit="#A">athava ta<pb edRef="#B" n="13r"/>n</lem><rdg wit="#B">Atavan ta</rdg><rdg wit="#C">Atava<gap reason="lost"/></rdg></app> paṅalap drabya hyaṅ saṅ guru, ṅuniveh riṅ rat kabaih, kaliṅanya, hayva 
+                        <app><lem wit="#A">athava ta<pb edRef="#B" n="13r"/>n</lem><rdg wit="#B">Atavan ta</rdg><rdg wit="#C">Atava<gap reason="lost" unit="character" quantity="2"/></rdg></app> paṅalap drabya hyaṅ saṅ guru, ṅuniveh riṅ rat kabaih, kaliṅanya, hayva 
                         <app><lem wit="#C">paracidra</lem><rdg wit="#A #B">palarcidra</rdg></app> yar hana 
                         <app><lem wit="#A #C">kahyunya</lem><rdg wit="#B">kahyanya</rdg></app>, 
                         <app><lem type="norm">hanāsipattra</lem><rdg wit="#B">hanasipatra</rdg><rdg wit="#A">hana sipasṭa</rdg><rdg wit="#C">hana sipat</rdg></app> ri aji saṅ viku, nihan deyanta rumakṣa 
@@ -366,7 +376,8 @@
                     
                     <p xml:id="siksaguru_02.10"><app><lem type="emn">upastha</lem><rdg wit="#A">pasṭa</rdg><rdg wit="#B"><gap reason="omitted"/></rdg><rdg wit="#C">paṣtra</rdg></app> 
                         <app><lem wit="#A #C">ṅaraniṅ pəlat</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>, 
-                        <app><lem wit="#A #C">apa</lem><rdg wit="#B">Apan·</rdg></app> viṣayaniṅ pəlat, ānanda <app><lem wit="#C">aṅəyəh, nihan</lem><rdg wit="#B">Aṅəyə<space type="binding-hole"/>ḥhan</rdg><rdg wit="#A">Aṅәyәḥ</rdg></app> kaliṅanya, tan 
+                        <app><lem wit="#A #C">apa</lem><rdg wit="#B">Apan·</rdg></app> viṣayaniṅ pəlat, ānanda 
+                        <app><lem wit="#C">aṅəyəh, nihan</lem><rdg wit="#B">Aṅəyə<space type="binding-hole"/>ḥhan</rdg><rdg wit="#A">Aṅəyəḥ</rdg></app> kaliṅanya, tan 
                         <app><lem wit="#A">paharəpakna</lem><rdg wit="#B">pahaR̥pan</rdg><rdg wit="#C">paṁhaR̥pakna</rdg></app> 
                         <app><lem wit="#A #C">vvaṅ</lem><rdg wit="#B">vaṁ</rdg></app> maṅəyəh, ṅuniveh 
                         <app><lem wit="#A #B">para</lem><rdg wit="#C" cause="lexical">saṁ</rdg></app> sujanma 
@@ -392,8 +403,8 @@
                         <app><lem type="emn">anrap ta</lem><rdg wit="#A">Anap·tra</rdg><rdg wit="#B">Apas·tra</rdg><rdg wit="#C"><gap reason="lost"/></rdg></app> sila, kunaṅ deyanta maṅrakṣa suku, tan paḍəḍəlan, tan 
                         <app><lem type="norm">paṅraṅ<pb edRef="#B" n="13v"/>kakan</lem><rdg wit="#B">parakakan</rdg><rdg wit="#A">parikakan</rdg><rdg wit="#C">paraṁkakan·</rdg></app> tan 
                         *<app><lem type="norm">pamagah-magahan</lem><rdg wit="#A">pamaga-magahan·</rdg><rdg wit="#B">pamaṁgamaṁgahan·</rdg><rdg wit="#C">pamaṁgaAn·</rdg></app>, tan pamire-mire, tan 
-                        <app><lem type="emn">paluṇḍu</lem><rdg wit="#A">pa<space type="binding-hole"/>kilunda</rdg><rdg wit="#B">pakilunḍu</rdg><rdg wit="#C">pakilun·</rdg></app>, tan 
-                        *<app><lem wit="#A">padvaṅdaṅ</lem><rdg wit="#B">padodaṁ</rdg></app> ri harəpən saṅ guru, ri paramābhyāgata kabaih, nihan ta rumakṣa suku, kayatnakna saṅ sevaka dharma.</p>
+                        <app><lem type="emn">paluṇḍu</lem><rdg wit="#A">pa<space type="binding-hole"/>kilunda</rdg><rdg wit="#B">pakilunḍu</rdg><rdg wit="#C">pakilun·</rdg></app>,  
+                        <app><lem wit="#A">tan *padvaṅdaṅ</lem><rdg wit="#B">tan padodaṁ</rdg><rdg wit="#C"><gap reason="lost" unit="character" quantity="5"/></rdg></app> ri harəpən saṅ guru, ri paramābhyāgata kabaih, nihan ta rumakṣa suku, kayatnakna saṅ sevaka dharma.</p>
                    
                 </div>
                 <div type="chapter" n="3" xml:id="siksaguru_03">
@@ -450,7 +461,7 @@
                 </div>
                 
                 <div type="chapter" n="4" xml:id="siksaguru_04">
-          <head type="editorial" xml:lang="eng">Instructions of the Truth</head>
+          <head type="editorial" xml:lang="eng">Instructions of the Dharma</head>
                     <p xml:id="siksaguru_04.01">nihan 
                         <app><lem wit="#A #C">kapiṅpatnya</lem><rdg wit="#B">kapipatnya</rdg></app> sih 
                         <app><lem wit="#A #C">saṅ</lem><rdg wit="#B">sa</rdg></app> paṇḍita, ri saṅ sevaka dharma, <foreign xml:lang="osn-Latn">ini</foreign> dharmaśikṣā ṅaranya, ndya ya<supplied reason="omitted">,</supplied> nihan 
@@ -485,7 +496,7 @@
                         <app><lem wit="#B">kinvan</lem><rdg wit="#A">kinva</rdg><rdg wit="#C">akon·</rdg></app> de saṅ guru, 
                         <term xml:lang="san-Latn"><app><lem type="norm"><term xml:lang="san-Latn">jr̥mbhanam</term></lem><rdg wit="#A">jraḥbhanəm·</rdg><rdg wit="#B">jrəbanəm·</rdg><rdg wit="#C">jrambhanəm·</rdg></app></term> tan paṅucap 
                         <app><lem type="norm">lapā</lem><rdg wit="#A #B">lapa</rdg><rdg wit="#C">pa</rdg></app> varəg ri harəpə<pb edRef="#A" n="11r"/>n saṅ guru, 
-                        <term xml:lang="san-Latn"><app><lem type="conj">kaṇṭhāra<pb edRef="#B" n="17v"/>vam</lem><rdg wit="#A #B">kadaranәm</rdg><rdg wit="#C">kaḍa<unclear>ra</unclear>nəm·</rdg></app></term>, tan 
+                        <term xml:lang="san-Latn"><app><lem type="conj">kaṇṭhāra<pb edRef="#B" n="17v"/>vam</lem><rdg wit="#A #B">kadaranəm</rdg><rdg wit="#C">kaḍa<unclear>ra</unclear>nəm·</rdg></app></term>, tan 
                         <app><lem type="emn">paṅhvab</lem><rdg wit="#A">paṅvamka</rdg><rdg wit="#B">paṅvambha</rdg><rdg wit="#C">paṅomka</rdg></app>, 
                         <term xml:lang="san-Latn"><app><lem wit="#A"><sic>akadanəm</sic></lem><rdg wit="#B">Akadaranəm·</rdg></app></term> tan paṅulet ri harəpən saṅ guru, <term xml:lang="san-Latn"><sic>sudəm</sic> phalarahasyam</term> tan 
                         <app><lem type="emn">paṅucap aṅkara</lem><rdg wit="#A">paṅucapa:kar</rdg><rdg wit="#B">paṅucap aṁkar</rdg></app> ri harəpən saṅ guru, ṅuniveh mikvanvakən namaniṅ mañal, hila-hila maṅkana, 
@@ -525,7 +536,7 @@
                 </div>
                 
                 <div type="chapter" n="5" xml:id="siksaguru_05">
-          <head type="editorial" xml:lang="eng">The Footsole of the Teacher</head>
+          <head type="editorial" xml:lang="eng">Footsole of the Teacher</head>
                     <p xml:id="siksaguru_05.01"><app><lem wit="#A">nihan</lem><rdg wit="#B">nihan· ta</rdg></app> 
                         <app><lem type="norm">kapiṅlimanya</lem><rdg wit="#A #B">kapilimanya</rdg></app> sih saṅ paṇḍita, ri saṅ sevaka dharma, ndya ya, nihan.</p>
                    
@@ -596,7 +607,7 @@
             
 
             <div type="chapter" n="6" xml:id="siksaguru_06">
-          <head type="editorial" xml:lang="eng">The Misfortune of the World (<foreign>jagat upadrava</foreign>)</head>
+          <head type="editorial" xml:lang="eng">Misfortune of the World (<foreign>jagat upadrava</foreign>)</head>
                     <p xml:id="siksaguru_06.01">nihan ta 
                         <app><lem wit="#B">kapiṅgənəpnya</lem><rdg wit="#A">kapignəpnya</rdg></app> sih 
                         <app><lem wit="#A">saṅ</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app> paṇḍita ri saṅ sevaka dharma, ndya ya nihan saṅ hyaṅ jagat upadrava ṅaranya, 
@@ -621,7 +632,7 @@
                 
                  <p xml:id="siksaguru_07.02">nihan lvirnya, 
                      <app><lem wit="#A">an upadrava</lem><rdg wit="#B">Anupa Upadrava</rdg><rdg wit="#A">hanu paṅupadrava</rdg></app> saṅ paṇḍita,<pb edRef="#B" n="24r"/> irikaṅ saṅ mānadhana, 
-                     <app><lem type="emn">umigəl</lem><rdg wit="#A #B">Umәgәl</rdg><rdg wit="#C">migəl</rdg></app> saṅ mānadhana ri 
+                     <app><lem type="emn">umigəl</lem><rdg wit="#A #B">Uməgəl</rdg><rdg wit="#C">migəl</rdg></app> saṅ mānadhana ri 
                      <app><lem wit="#B #C">patala</lem><rdg wit="#A" cause="morphological">tala</rdg></app>, 
                      <app><lem wit="#A #B">jalakuna</lem><rdg wit="#C">jalakunaṁ</rdg></app> paṅupadrava saṅ paṇḍita 
                      <app><lem wit="#C #B">ri</lem><rdg wit="#C">di</rdg></app> vəkasniṅ patala, <foreign xml:lang="osn-Latn">di</foreign> saṅ mānadhana, i svar 
@@ -653,13 +664,13 @@
                                   
              </div>
                 <div type="chapter" n="8" xml:id="siksaguru_08">
-          <head type="editorial" xml:lang="eng">Three Pacified Domains</head>
+          <head type="editorial" xml:lang="eng">Three Pacifying Bodily Domains</head>
                     <p xml:id="siksaguru_08.01">ndah nihan 
                         <app><lem type="norm">arthya</lem><rdg wit="#A">Artya</rdg><rdg wit="#B">An·tyata</rdg><rdg wit="#C">hantyanta</rdg></app> yuktiniṅ 
                         <app><lem type="emn">vuvusaknaṅ</lem><rdg wit="#A">vuvus·kna</rdg><rdg wit="#B">vuvus·kəna</rdg><rdg wit="#C">vu<unclear>vu</unclear>s·, knaṅ</rdg></app> vvaṅ kadi kita, vvaṅ tuməkakən ikaṅ saṅ 
                         <app><lem wit="#A #B">mahyun</lem><rdg wit="#C">mahyaṁn·</rdg></app> vruh hyaṅ<pb edRef="#A" n="15v"/>nika goravanika, saṅ hyaṅ dharmaviśeṣa, mvaṅ mūla patiniṅ 
                         <app><lem type="norm">teja samaṅke</lem><rdg wit="#A">teja samake</rdg><rdg wit="#B">ter jan·ma samaṁke</rdg><rdg wit="#C">tejan· liṁ samaṁka</rdg></app><pb edRef="#C" n="15r"/>, mataṅyan 
-                        <app><lem type="norm">umaṅguhakən</lem><rdg wit="#A #B">Umaguḥhakәn</rdg><rdg wit="#C">Umiguhakən</rdg></app> saṅ hyaṅ 
+                        <app><lem type="norm">umaṅguhakən</lem><rdg wit="#A #B">Umaguḥhakən</rdg><rdg wit="#C">Umiguhakən</rdg></app> saṅ hyaṅ 
                         <app><lem type="norm">ratnopadeśa</lem><rdg wit="#A">ratnapaḍesa</rdg><rdg wit="#B">rat·nopadesa</rdg><rdg wit="#C">ratna: padesa</rdg></app>, saka ri hyaṅ matuha, hana saṅ hyaṅ 
                         <app><lem type="norm">tri<pb edRef="#B" n="26r"/>kāyo</lem><rdg wit="#B #C">trikayo</rdg></app> paśānta ṅaranya, ya prihən kayatnakna təmən, apan sira mūla 
                         <app><lem wit="#B #C">hala lavan</lem><rdg wit="#A" cause="haplography">halavan</rdg></app> hayu, sukha-duhkhanikaṅ janma samaṅke, anvan ta kitaṅ vvaṅ 
@@ -713,7 +724,7 @@
                         <app><lem wit="#A">kəkəṅ, vuṅkuk</lem><rdg wit="#B"><gap reason="omitted"/></rdg><rdg wit="#C">ṅavukuk·</rdg></app>, səkəl, vuta 
                         <app><lem wit="#A">salaya</lem><rdg wit="#B"><gap reason="omitted"/></rdg><rdg wit="#C">sak·ya</rdg></app>, 
                         <app><lem wit="#A">salvir vikāraniṅ</lem><rdg wit="#B"><gap reason="omitted"/></rdg><rdg wit="#C">salvirni vikara riṅ</rdg></app> avak rūpanya, ṅuniveh taṅ kərəṅan, sakvehniṅ *bhīmarūpa, ya pāpa ṅaranya, <foreign xml:lang="osn-Latn">mana</foreign> pā<pb edRef="#A" n="18r"/>pa ginavayakənya taṅ ñāna duṣṭa, karma duṣṭa, śabda duṣṭa, kady aṅganiṅ maliṅ, 
-                        <app><lem wit="#C">ahabət</lem><rdg wit="#A" cause="morphological">ṅahabәt·</rdg><rdg wit="#B"><gap reason="omitted"/></rdg></app>, ṅaracun, anəluh, ika 
+                        <app><lem wit="#C">ahabət</lem><rdg wit="#A" cause="morphological">ṅahabət·</rdg><rdg wit="#B"><gap reason="omitted"/></rdg></app>, ṅaracun, anəluh, ika 
                         <app><lem wit="#A">ginavayakənya</lem><rdg wit="#B">vəvəya:kənya</rdg><rdg wit="#C">ginavəyakən·</rdg></app>, mati pva kita <pb edRef="#C" n="17v"/> təmahan 
                         <app><lem wit="#A">tətək</lem><rdg wit="#B"> tətək:u</rdg><rdg wit="#C">təktək·</rdg></app> ulər, vəḍit, lintah, 
                         <app><lem type="emn">lakay</lem><rdg wit="#A">lantey·</rdg><rdg wit="#B">lan·tay·</rdg><rdg wit="#C">latay·</rdg></app> hiris pvah, 
@@ -738,7 +749,7 @@
                 </div>
                 
                 <div type="chapter" n="9" xml:id="siksaguru_09">
-          <head type="editorial" xml:lang="eng">The ten defects (<foreign>daśakleśa</foreign>)</head>
+          <head type="editorial" xml:lang="eng">Ten Defilements (<foreign>daśakleśa</foreign>)</head>
                     <p xml:id="siksaguru_09.01">ndah nihan 
                         <app><lem wit="#B">yuktinya</lem><rdg wit="#A #C">yaktinya</rdg></app>,</p>
                     
@@ -751,9 +762,9 @@
                     </lg>
                     
                     <p xml:id="siksaguru_09.03">kaliṅanya vənaṅa ta 
-                        <app><lem type="emn">śumuddhakən</lem><rdg wit="#A">sumiḍakәn</rdg><rdg wit="#B #C">sumidakən·</rdg></app> taṅ daśakleśa, yar dataṅ ri <pb edRef="#B" n="32r"/> kita, nyaṅ doṣa, 
+                        <app><lem type="emn">śumuddhakən</lem><rdg wit="#A">sumiḍakən</rdg><rdg wit="#B #C">sumidakən·</rdg></app> taṅ daśakleśa, yar dataṅ ri <pb edRef="#B" n="32r"/> kita, nyaṅ doṣa, 
                         <app><lem wit="#C">moha</lem><rdg wit="#A">mvah</rdg><rdg wit="#B">mvaha</rdg></app>, 
-                        <app><lem type="emn">drəmba</lem><rdg wit="#A"><add place="below">dәm·</add>ba</rdg><rdg wit="#B">dəmbha</rdg><rdg wit="#C">damba</rdg></app>, lobha, <app><lem type="emn">mātsarya</lem><rdg wit="#A">matṣayya</rdg><rdg wit="#B">məta, makṣarya</rdg><rdg wit="#C">mətta, matsayya</rdg></app>, 
+                        <app><lem type="emn">drəmba</lem><rdg wit="#A"><add place="below">dəm·</add>ba</rdg><rdg wit="#B">dəmbha</rdg><rdg wit="#C">damba</rdg></app>, lobha, <app><lem type="emn">mātsarya</lem><rdg wit="#A">matṣayya</rdg><rdg wit="#B">məta, makṣarya</rdg><rdg wit="#C">mətta, matsayya</rdg></app>, 
                         <app><lem type="norm">abhimāna</lem><rdg wit="#A">Ambhimana</rdg><rdg wit="#B">Abimana</rdg><rdg wit="#C">habimana</rdg></app>, 
                         <app><lem type="norm">mūrkha</lem><rdg wit="#A #C">murka</rdg><rdg wit="#B">marraka</rdg></app><pb edRef="#A" n="19r"/>, kuhaka, 
                         *<app><lem type="norm">sambhinnapralāpa</lem><rdg wit="#A">sambhinapralapa:</rdg><rdg wit="#B">sibinapralapa</rdg><rdg wit="#C">sibinapralapa</rdg></app>, peśuna.</p>
@@ -762,11 +773,11 @@
                         <app><lem type="norm">vīrya</lem><rdg wit="#A">virya</rdg><rdg wit="#B #C">parya</rdg></app>, ya sinaṅguh doṣa ṅaranya, <term xml:lang="san-Latn">moha</term> ṅaranya, tan pagavaya 
                         <app><lem wit="#A #B">sih</lem><rdg wit="#C">siha</rdg></app> ri paḍanya janma, 
                         <app><lem type="norm">drə<pb edRef="#C" n="33r"/>mba ṅaranya</lem><rdg wit="#A #B"><gap reason="omitted"/></rdg><rdg wit="#C">da:mba ṅaranya</rdg></app>, 
-                        <app><lem wit="#B">jənəkiṅ</lem><rdg wit="#A">jinәkә:ṁ</rdg><rdg wit="#C">jənəkaṁ</rdg></app> paṅan inum 
+                        <app><lem wit="#B">jənəkiṅ</lem><rdg wit="#A">jinəkə:ṁ</rdg><rdg wit="#C">jənəkaṁ</rdg></app> paṅan inum 
                         <app><lem wit="#A #B">bvat</lem><rdg wit="#C">abvat</rdg></app> turu, tan 
                         <app><lem wit="#A #B">akiṅkin</lem><rdg wit="#C">akiṁkiṁ</rdg></app> 
                         <app><lem type="norm">hitāvasānaniṅ</lem><rdg wit="#A #B">hitavasaniṁ</rdg><rdg wit="#C">hitavasa</rdg></app> janma, ya 
-                        <term xml:lang="kaw-Latn"><app><lem type="emn">drəmba</lem><rdg wit="#A #B">dәmbha</rdg><rdg wit="#C">dambha</rdg></app></term> ṅaranya, <term xml:lang="san-Latn">lobha</term> ṅaranya, 
+                        <term xml:lang="kaw-Latn"><app><lem type="emn">drəmba</lem><rdg wit="#A #B">dəmbha</rdg><rdg wit="#C">dambha</rdg></app></term> ṅaranya, <term xml:lang="san-Latn">lobha</term> ṅaranya, 
                         <app><lem wit="#B #C">kveh</lem><rdg wit="#A">kvaḥ</rdg></app> ulah tar sopacara, 
                         <app><lem wit="#B #C">ya lobha ṅaranya</lem><rdg wit="#A"><gap reason="omitted"/></rdg><note>Setelah lobha, naskah <ptr target="#B"/> dan <ptr target="#C"/> mengandung uraian tentang məta. Naskah <ptr target="#B"/> mengandung bacaan: <foreign>məta ṅaranya, AvəR̥ deniṁ su<g type="filler">§</g>kanya, AvərR̥ deniṁ prajñanya, AvəR̥ deniṁ gunanya, AvəR̥ deniṁ paṅavraḥnya, ya makṣarya ṅaranya</foreign>; naskah <ptr target="#C"/>: <foreign>havəR̥ ḍeniṁ sukanya, <unclear>A</unclear>vəR̥ ḍeniṁ prajña:na, AvəR̥ deniṁ paṅavruḥnya, havəR̥ d<add place="below">e</add>niṁ gunanya, ya mta ṅaranya</foreign>. Adanya uraian ini menjadikannya menjadi 11 elemen, bukan 10 sebagaimana yang diharapkan. Alasan mengapa saya menolak elemen ini sebagai bacaan yang benar terutama karena <foreign>məta</foreign> muncul sebagai elemen dalam daśamala di bawah § SiGu 10.</note></app>, 
                         <term xml:lang="san-Latn"><app><lem type="norm">mātsarya</lem><rdg wit="#A #C">matṣaryya</rdg><rdg wit="#B">makṣarya</rdg></app></term> ṅaranya, *timburu manon 
@@ -780,7 +791,7 @@
                 </div>
             
                   <div type="chapter" n="10" xml:id="siksaguru_10">
-          <head type="editorial" xml:lang="eng">Daśamala</head>
+          <head type="editorial" xml:lang="eng">Ten Stains</head>
                <p xml:id="siksaguru_10.01"><foreign xml:lang="san-Latn"><app><lem wit="#A #B">viga<pb edRef="#B" n="33v"/>taḥ</lem><rdg wit="#C">vagataḥ</rdg></app> 
                    <app><lem type="conj">sarvaduhkhinaḥ</lem><rdg wit="#A">maraḍuknaḥ</rdg><rdg wit="#B">malaraḍukənaḥ</rdg><rdg wit="#C">mara<gap reason="lost" unit="character" quantity="3"/></rdg></app></foreign>, 
                    <app><lem wit="#A">vənaṅa kari kita</lem><rdg wit="#B">vnaṁṅata ri kitita</rdg><rdg wit="#C"><gap reason="lost" unit="character" quantity="2"/>ṅa kara kita</rdg></app> sami bataṅ 
@@ -834,7 +845,7 @@
                         <app><lem type="emn">antaraniṅ</lem><rdg wit="#A">Artaraniṁ</rdg><rdg wit="#B">an·tarana</rdg><rdg wit="#C">hantara:na</rdg></app> paramārtha, <term xml:lang="san-Latn">prajñā</term> ṅaranya, 
                         <app><lem type="norm">utsāha</lem><rdg wit="#A #B">Ukṣaha</rdg><rdg wit="#C">Utṣaha</rdg></app> ri kahilaṅaniṅ 
                         <app><lem type="norm">daśakleśa</lem><rdg wit="#A">ḍasakalesa</rdg><rdg wit="#B">dasaklesa</rdg><rdg wit="#C">masaklesa</rdg></app> ri śarīranya, <term xml:lang="san-Latn">karuṇā</term> ṅaranya, 
-                        <app><lem type="norm">larā<pb edRef="#B" n="35v"/>mbək<pb edRef="#C" n="20v"/>nyāmaṅguhakən</lem><rdg wit="#A">larambhaknyamaguḥhakәn·</rdg><rdg wit="#B">larambhək·nya, maṁguḥ</rdg><rdg wit="#C"><unclear>laraməta</unclear>nyamaṁguḥ</rdg></app> 
+                        <app><lem type="norm">larā<pb edRef="#B" n="35v"/>mbək<pb edRef="#C" n="20v"/>nyāmaṅguhakən</lem><rdg wit="#A">larambhaknyamaguḥhakən·</rdg><rdg wit="#B">larambhək·nya, maṁguḥ</rdg><rdg wit="#C"><unclear>laraməta</unclear>nyamaṁguḥ</rdg></app> 
                         <app><lem type="norm">duhkhaniṅ</lem><rdg wit="#A">ḍukaniṁ</rdg><rdg wit="#B #C">duka Ikaṁ</rdg></app> len, <term xml:lang="san-Latn">mudita</term> ṅaranya, tar kepvan masukha
                         <app><lem type="emn">riṅ</lem><rdg wit="#A">niṁ</rdg><rdg wit="#B #C"><gap reason="omitted"/></rdg></app> len, 
                         <term xml:lang="san-Latn"><app><lem type="norm">metrī</lem><rdg wit="#A">metra</rdg><rdg wit="#B #C">metri</rdg></app></term> ṅaranya, vruh gumavayakna 
@@ -932,7 +943,7 @@
                               <app><lem wit="#C">ambək</lem><rdg wit="#A">Ambhak</rdg><rdg wit="#B">Ambhək</rdg></app> paśānta ṅaranya, 
                               <app><lem wit="#B">yan</lem><rdg wit="#A">ya</rdg><rdg wit="#C">yana</rdg></app> 
                               <app><lem wit="#A #C">karasa</lem><rdg wit="#B">kurasa</rdg></app> ikaṅ paśānta, 
-                              <app><lem type="norm" rend="hyphenback">kahanakən sakāya</lem><rdg wit="#A">kahanakәn sakaya</rdg><rdg wit="#B">kayatnakənnikaṁ</rdg><rdg wit="#C">kahanakən:ikaṁ</rdg></app>-kāyikadharma, yan tan karasa 
+                              <app><lem type="norm" rend="hyphenback">kahanakən sakāya</lem><rdg wit="#A">kahanakən sakaya</rdg><rdg wit="#B">kayatnakənnikaṁ</rdg><rdg wit="#C">kahanakən:ikaṁ</rdg></app>-kāyikadharma, yan tan karasa 
                               <app><lem wit="#B #C">i<pb edRef="#A" n="24r"/>kaṅ</lem><rdg wit="#A">Iririkaṁ</rdg></app> paśānta, 
                               <app><lem wit="#B">ambək</lem><rdg wit="#A">Ambhak·</rdg><rdg wit="#C">Ambhək·</rdg></app> duṣṭa 
                               <app><lem wit="#B">ṅaranya yan</lem><rdg wit="#A"><gap reason="omitted"/></rdg><rdg wit="#C">ṅanya</rdg></app> maṅkana.</p>
@@ -940,7 +951,7 @@
                 <div type="chapter" n="14" xml:id="siksaguru_14">
                     <!-- <head></head> si titre -->                             
                     <ab xml:id="siksaguru_14.01" type="colophon">A: nihan sikṣa saṁ pandita, sikṣa guru, ṅa, ya ta mataṅyan kayatnakna saṁ sevaka ḍarmma, ø
-            <lb n="24r2"/>//,//, Iti siksa guru, ṅa, lamun· vraḥ ḍi vvitniṁ bnәr thar kna kupaḍrava, lamun tar vr̥ḥ ḍi vviniṁ bnәr, kәna ku na Upaḍrava, ø, nihan· kavuvusa;n siksa guru, ṅa, kayatnakna saṁ sevaka ḍarmma, ø, tlәsinurath· ri ḍesa mahapaviṭā, tajak barath· kalpasәn pun·, malampaḥ Iṅapura ṅkanaṁ sasṭa 2cek:aḍi tapak· yuyu cinaṁcaṁ ri tasik· Uliḥ vvaṁ sinanaU, pun· I saka hlәr tvaya vu</ab>
+            <lb n="24r2"/>//,//, Iti siksa guru, ṅa, lamun· vraḥ ḍi vvitniṁ bnər thar kna kupaḍrava, lamun tar vr̥ḥ ḍi vviniṁ bnər, kəna ku na Upaḍrava, ø, nihan· kavuvusa;n siksa guru, ṅa, kayatnakna saṁ sevaka ḍarmma, ø, tləsinurath· ri ḍesa mahapaviṭā, tajak barath· kalpasən pun·, malampaḥ Iṅapura ṅkanaṁ sasṭa 2cek:aḍi tapak· yuyu cinaṁcaṁ ri tasik· Uliḥ vvaṁ sinanaU, pun· I saka hlər tvaya vu</ab>
                     <ab xml:id="siksaguru_14.02" type="colophon">B: Itiḥ sikṣa saṁ pandita, nihan ṣikṣa guru ṅaranya, yan mataṁṅyan kayatnakna saṁ sevaka darma, tman·, // // ø // //, tlas· tinulis· ri kasapuluḥ, Uvusan· purnama tiL̥m·, malam·paḥ hiṁṅampura saṅ amaca, puna tapak taṁṅan pukulun·<g type="filler">§</g> 2cek· lvater pukulun·, bənaṁ diAjar di desa sunya pun·</ab>
                     <ab xml:id="siksaguru_14.03" type="colophon">C: Iti siksa guru ṅaranira, sam·pun təlas tinulis· riṁ batur riṁ visa kasinoman· luraḥ kamulan·, dya saṁṅ aparab·, yaṁ buyut· <del rend="ui">ra</del><space type="binding-hole"/>sida nurut·, pukulun· malahpaḥh iṅapura, punaṁ sasṭa tan parupa, tan pat<unclear>u</unclear>t· ri varna sas<unclear>ṭa</unclear> tan papa:ruṁgu riṁṅ akṣara, loter bəkcek· tan· pavastu, kaya labəkeṁ yuyu cinacaṁ, makadi kuraṁ Ḷviḥ riṅ akṣara, pari<unclear>yata</unclear> ṅaḶviha, halvaṅana, pukulan dere vikan ṣira saṅ anulis· Apan a:tuk ṣinanaU, luṁhuṁ pva maniliḥ tan pvaliḥ, samaṁkana kahuvusan· <gap reason="lost" unit="character" quantity="2"/>ka, Oṁ sarasvati maya nama svahaḥ, //ø//I,, , sa,,,ka//Ø//</ab>
                 </div>
