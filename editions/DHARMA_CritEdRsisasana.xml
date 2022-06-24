@@ -143,13 +143,12 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+        <change who="part:argr" when="2021-12-15">resolved validation errors</change>
          <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
          <change who="part:axja" when="2021-09-13">Updating the encoding pattern with quote element</change>
-         <change when="2020-08-18" who="part:masc">Modifications in view of xslt transformation (choice
-				tags, removing some apps...)</change>
+         <change when="2020-08-18" who="part:masc">Modifications in view of xslt transformation (choice	tags, removing some apps...)</change>
          <change when="2020-08-01" who="part:masc">Small update in one śloka</change>
-         <change when="2020-07-16" who="part:masc">Encoding all edition with 3 mss., first
-				stage</change>
+         <change when="2020-07-16" who="part:masc">Encoding all edition with 3 mss., first stage</change>
          <change when="2020-05-21" who="part:masc">Reading div 1 and 2 with argr</change>
          <change when="2020-05-20" who="part:masc">Adding first paragraphs</change>
          <change when="2020-05-13" who="part:masc">creation of TEI document</change>
@@ -263,7 +262,7 @@ These catur-paramitā, i.e. metrī (friendliness), karuṇā (compassion), mudit
 		<app><lem wit="#B">marivuṅ</lem><rdg wit="#A #C">parivnaṅ</rdg></app><!--Reconsider? Tim and Aditia refer to prasasti Kaladi: a kind of hill tribe., see lists in inscriptions of Kediri, Kemūlan: (7) tuluṅ hutaṅ pobhaya paprāyāścitta kḍi valyan vidu maṅiduṅ sambal sumbul hulun haji jəṅgi timur siṅga (d) vuluṅ-vuluṅ vatək i jro Ityaivamādi, and EB: 1. ṅanyan vvaya para senāpati, ser nāyaka‚ parajuru, paravadvahaji, amanahagaṇḍi, hulun haji, tarahan timur, pabr̥si, sumbat gulma‚ silihan, humalintaṅ ri thāninya, mamalaku 2. skul, aveha ikaṅ karāman amaṅana; also in Balawi (and other Majapahit period inscriptions) for a list of pujut, jəṅgi including maṅiduṅ.-->, pujut, jəṅgi, boṇḍan, aluṅ, kəmir, kəḍi, valyan, saprakāraniṅ janmanya,
 		katəkana <app><lem wit="#B">pati</lem><rdg wit="#A #C">mati</rdg></app> riṅ patapan,
 		<app><lem wit="#A #C">savinavanya</lem></app> <!--check if #B also has this--> muvah ri <app><lem wit="#A #B">hananiṅ grāma</lem><rdg wit="#C">hana nigrama</rdg></app>, kaniṣṭhamadhyamottama, umuṅsir i həbnira riṅ patapan, lvirnya, <pb edRef="#A" n="4r"/><app><lem wit="#A #C">apaṇḍe vsi</lem><rdg wit="#B"><gap/></rdg></app>, apaṇḍe mās, salviraniṅ apaṇḍe,
-		ṅuniveh <app><lem type="emn">samagrig asambevara</lem><rdg wit="#A">samagrig<subst><del>ə</del><add>a</add></subst>sambehara</rdg><rdg wit="#B #C">samagrigə sambehara</rdg></app><!-- perhaps understand samagri-ṅ asambevara avalija ahukiran adagaṅ amalantən?-->,
+		ṅuniveh <app><lem type="emn">samagrig asambevara</lem><rdg wit="#A">samagrig<subst><del>ə</del><add place="below"><!-- check value of place -->a</add></subst>sambehara</rdg><rdg wit="#B #C">samagrigə sambehara</rdg></app><!-- perhaps understand samagri-ṅ asambevara avalija ahukiran adagaṅ amalantən?-->,
 		avalij<app><lem wit="#A #C">āvukiran</lem><rdg wit="#B">a ukir</rdg></app><!-- don't cut into a word or string of words in random manner, there is a parahu avalijan in a Sindok inscription, check further.-->, <app><lem wit="#B">adagaṅ</lem><rdg wit="#A #C">Adaṅ</rdg></app> amalantən,
 	</p>
 		<!--
@@ -275,8 +274,9 @@ These catur-paramitā, i.e. metrī (friendliness), karuṇā (compassion), mudit
 		(3) biluluk, asambevara sarvva papat, hadagaṅ, hamahat·, hajagal·, hamalantən·, hamdəl·, hamutər·, hanglakṣa haṅa-
 		(4)pu, maṅkana manih kaṅ atuṅgu kasiman·, asambevara, sarvva tuṅgal, hiku ta luputa riṁ arik-purih saprakara, padadah, pavivāha, -->
 	<p xml:id="rsisasana_05.02">
-		vnaṅ sir<app><lem wit="#A #B">āhuluna</lem><rdg wit="#C">ahulu</rdg></app> pujut, boṇḍan, kəmir, salviraniṅ sakeṅ sabraṅ, <app><lem wit="#B">ṅuniveh añjamaha</lem><rdg wit="#A #C">ṅuni<supplied reason="omitted">veh</supplied>
-		h<choice><sic>e</sic><corr>a</corr></choice>ñjamaha</rdg></app><!--Is this the correct way to encode the variant reading?--><!-- argr2masc: this encoding would imply that both #A and #C first read heñjamaha and then correct this to hañjamaha. in any case, no, you should not use <choice> with <sic>/<corr> in your critical editions, and rather follow the instructions in §Encoding readings ante and post correctionem of the EGC. --> rare kavula tan <app><lem wit="#A">sikaranən</lem><rdg wit="#B">svikaranən</rdg><rdg wit="#C">pikaranən</rdg></app>, saṅ maṅanti riṅ patapan, ṅuniveh sabhūṣaṇānira,<!--maybe some words missing here? sabhūṣaṇa tends to be followed by mention of types of garments -->
+		vnaṅ sir<app><lem wit="#A #B">āhuluna</lem><rdg wit="#C">ahulu</rdg></app> pujut, boṇḍan, kəmir, salviraniṅ sakeṅ sabraṅ, <app><lem wit="#B">ṅuniveh añjamaha</lem><rdg wit="#A #C">ṅuniheñjamaha</rdg></app><!-- Marine previously had
+    ṅuni<supplied reason="omitted">veh</supplied>	he</sic><corr>a</corr></choice>ñjamaha
+    check if she actually meant that a scribal correction os being made in both witnesses... --> rare kavula tan <app><lem wit="#A">sikaranən</lem><rdg wit="#B">svikaranən</rdg><rdg wit="#C">pikaranən</rdg></app>, saṅ maṅanti riṅ patapan, ṅuniveh sabhūṣaṇānira,<!--maybe some words missing here? sabhūṣaṇa tends to be followed by mention of types of garments -->
 	 	<app><lem type="emn">omaha</lem><rdg wit="#A #B #C">umah</rdg><note>Charters from the Kediri period often have <foreign>momaha</foreign>.</note></app><!-- Give examples from OJO LXXI, LXXII --> pañca-bale, anusuna <app><lem wit="#B">palaṅka</lem><rdg wit="#A">ḍalaṅka</rdg><rdg wit="#B">phalaṅka</rdg></app> binubut, <app><lem wit="#A #C">ajoṅ</lem><rdg wit="#B">ajənva</rdg></app> kuniṅ, hapayuṅ putih pinagut lavan vuluṅ, <app><lem type="norm">apattharaṇa</lem><rdg wit="#A #C">Apataraṇa</rdg><rdg wit="#B">apatarana</rdg></app> vuluṅ kuniṅ, tan <app><lem wit="#B">prativādhaka</lem><rdg wit="#A #C">*pratipaṅvadaka</rdg><note>The intended meaning could alternatively have been <foreign>prativādaka</foreign>, 'refusing, contradicting'.</note></app> saṅ prabhu irikā, maṅkana rasa pavəkas saṅ siddha mahāpuruṣa //
 	</p>
 </div>
@@ -288,7 +288,7 @@ These catur-paramitā, i.e. metrī (friendliness), karuṇā (compassion), mudit
 		*para prah,<!-- inscr. Wuang Got: paranakan· ⚬ paravat· ⚬ mahaliman· ⚬ Ityaivammādi saprakāra saṁ maṅilala dravya --> <app><lem type="emn">vadihaty akudur</lem><rdg wit="#A #C #B">vadihatya, akudur</rdg><note>See examples in inscriptions of Kediri.</note></app><!-- add examples from epigraphy-->, <app><lem wit="#A #B">sakveh</lem><rdg wit="#C">sakeḥ</rdg></app> saṅ makəmit vatəs,<!-- corr. vatək? --> tan tama riṅ saṅ paṇḍita, <app><lem type="emn">limus</lem><rdg wit="#A #B #C">limas</rdg></app> galuh, paṅaruhan,
 		<app><lem wit="#B">maniga</lem><rdg wit="#A #C">paniga</rdg></app>, vuṅkal tajəm, manimpiki, vuṅkal umalaṅ, <app><lem wit="#A #C">makmitan</lem><rdg wit="#B">pakəmitan</rdg></app> sipat <app><lem wit="#A #C">vilut</lem><rdg wit="#B">viluk</rdg></app>, paṅunəṅan, suṅgiṅ,
 		<app><lem wit="#A #C">rakadut</lem><rdg wit="#B">ragadut</rdg></app>, sukun, ma<!-- how to integrate this ma into the sentence? --> <app><lem wit="#A #C">rvaṁ</lem><rdg wit="#B">maṅrva</rdg><note>See parallel expression in Klungkung inscription C (994 Śaka), lines 3-4: <foreign>tahilaknanya i sira saṅ admak ākmitanāpigajihe rara aṅkən jyaiṣṭa matlu maṅrvaṅ
-		tahun,</foreign>.</note></app> tuhan, <app><lem type="norm">avita</lem><rdg wit="#A #C #B">Avvita</rdg><note>A similar spelling is used for all instances of this word in this paragraph. Ms. LB is the only witness that gives the spelling <foreign>avita</foreign>.</note></app>, ma ka <app><lem type="emn">1</lem><rdg wit="#A #C #B">ba:</rdg></app>, aṅuñjal rvaṅ viji, avita, <app><lem wit="#B">ma</lem><rdg wit="#A #C">ha</rdg></app> <!--Check whether this assumption is correct, does ha exist as an abbreviation, check in Wisseman Christie--> ka <app><lem type="emn">1</lem><rdg wit="#A #C #B">ba</rdg></app>, apadāti rvaṅ <app><lem wit="#A #C">siki</lem><rdg wit="#B">sisi</rdg></app>, avita, <app><lem wit="#B">ma sū 15</lem><rdg wit="#A">ha su ba<subst><del rend="strikeout">rū</del><add>tūr·</add></subst></rdg><rdg wit="#C">mā su, baur</rdg></app>, <app><lem wit="#B">amutər</lem><rdg wit="#A #C"> <surplus>A</surplus>Amutər</rdg></app> rvaṅ lumpaṅ, avita, <app><lem wit="#B">ma sū 15</lem><rdg wit="#A">ma su batūr·</rdg><rdg wit="#C">ma su tur·</rdg></app>,
+		tahun,</foreign>.</note></app> tuhan, <app><lem type="norm">avita</lem><rdg wit="#A #C #B">Avvita</rdg><note>A similar spelling is used for all instances of this word in this paragraph. Ms. LB is the only witness that gives the spelling <foreign>avita</foreign>.</note></app>, ma ka <app><lem type="emn">1</lem><rdg wit="#A #C #B">ba:</rdg></app>, aṅuñjal rvaṅ viji, avita, <app><lem wit="#B">ma</lem><rdg wit="#A #C">ha</rdg></app> <!--Check whether this assumption is correct, does ha exist as an abbreviation, check in Wisseman Christie--> ka <app><lem type="emn">1</lem><rdg wit="#A #C #B">ba</rdg></app>, apadāti rvaṅ <app><lem wit="#A #C">siki</lem><rdg wit="#B">sisi</rdg></app>, avita, <app><lem wit="#B">ma sū 15</lem><rdg wit="#A">ha su ba<subst><del rend="strikeout">rū</del><add place="below"><!--Check whether this place is correct -->tūr·</add></subst></rdg><rdg wit="#C">mā su, baur</rdg></app>, <app><lem wit="#B">amutər</lem><rdg wit="#A #C"> <surplus>A</surplus>Amutər</rdg></app> rvaṅ lumpaṅ, avita, <app><lem wit="#B">ma sū 15</lem><rdg wit="#A">ma su batūr·</rdg><rdg wit="#C">ma su tur·</rdg></app>,
 	</p>
 	<p xml:id="rsisasana_06.02">
 		kapva <app><lem wit="#B">tika kabeh</lem><rdg wit="#A #C">tana:na kabehana</rdg></app> <!--Revise?-->, tan knana paṅgaṅsal, mvaṅ <app><lem wit="#A #B">paṅdva</lem><rdg wit="#C">paṅdvo</rdg></app> mās, apan pamahayva <app><lem wit="#A #C">kapūjān</lem><rdg wit="#B">kapūjā</rdg></app>, mvaṅ <app><lem wit="#A #B">dr̥vya hyaṅ</lem><rdg wit="#C">dr̥vyatya</rdg></app> paknanya de mpuṅkv iṅ kaśaivan, *yathanyan svasthaṅ bhūvana, karuhun kasvasthadīrghāyur<app><lem wit="#A #B">ārogyan</lem><rdg wit="#C">a:rogya:</rdg></app><!--Revise? This does look like an OJ compound with circumfix ka-an where only the last element is provided with suffix -an--> saṅ prabhu, sakulasantānanira, maṅkana don saṅ hyaṅ ājñā haji śaivāśāsana, inanugrahakən i sirāmpu riṅ kaśai<pb edRef="#A" n="5r"/>van,
@@ -390,7 +390,7 @@ devasvaṃ vāpi yatnena sadā pariharet tataḥ  // Hbhv_11.749 //<BR>
 				</app>
 				<!--See also Vyāsa-subhāṣita-saṃgraha 43 (Sternbach 1969) and Vyasakāra 39 (Bechert 1962), for pādas ab-->
 		</listApp>
-	
+
 	<p xml:id="rsisasana_11.06">
 		nahan ta saṅ hyaṅ āgama, marahakən yan <app><lem type="conj">deva-dr̥vyā</lem><rdg wit="#A #B #C">dr̥vyā</rdg></app> <!--emend deva-dr̥vyā, check #B--> svadr̥vyānira, mataṅnyan tan gəma-gəmaha<app><lem type="norm">tah kumənakən</lem><rdg wit="#B">ta kumənakən</rdg><rdg wit="#A #C">taṁ tumnakən·</rdg></app> dr̥vyāniṅ kadi sira,
 	</p>
@@ -446,7 +446,7 @@ devasvaṃ vāpi yatnena sadā pariharet tataḥ  // Hbhv_11.749 //<BR>
 						<l n="ab">guror abhāvāt tadbhāvabhāvāc chāstrāṇi kārayet</l>
 						<l n="cd">mahad dhi devadevāya dvitīyaṁ cāpy athāgnaye</l>
 					</lg></quote>
-				
+
 				<note>.<!--Note a similar construction based on bhāgais tribhiḥ kāryam as found in the Agnipurana 53.019:
 				kaṇṭhaṃ bhāgais tribhiḥ kāryaṃ bhāgenaikena paṭṭikā
         dvyaṃgena cordhvapaṭṭan tu ekāṃśāḥ śeṣapaṭṭikā. Arlo also notes the use of mā-vipula in pada a.--></note>
@@ -533,7 +533,7 @@ hypothetical restoration
 kartavyam) of appropriate disciples on the basis of seniority (yathājyeṣṭhakrameṇa), always
 in accordance with correct procedure (nyāyena).”-->
 	</quote>
-	
+
 	<p xml:id="rsisasana_13.04">
 		nāhan tāji<!-- nahan haji? --> bvat saṅ hyaṅ mataṅga, nihan ajinya<!-- tajinya? #C--> ri saṅ hyaṅ <app><lem type="conj">vāthula</lem><rdg wit="#A #C">bakula</rdg><rdg wit="#B">barkula</rdg><note>The <foreign>Vāthula</foreign> seems to be another designation of the <foreign>Āgneyatantra</foreign>, one of the twenty-eight "principal" Siddhāntatantras which has no surviving work associated with it. However, a good number of <foreign>upabheda</foreign>s, including several recensions of the <foreign>Kālottara</foreign>, present themselves as redactions of the Āgneya/Vāthula (<bibl><ptr target="bib:Goodall1998_01"/><citedRange>xlv-xlvi</citedRange></bibl>, <bibl><ptr target="bib:Goodall2004_01"/><citedRange>xxiii-xxv</citedRange></bibl>).</note></app>
 	</p>
@@ -560,7 +560,7 @@ grāmyebhyaḥ?
 <!--tatra saṃdehaḥ. kiṃ yat parimitam ekā deyetyevamādi, tan na dātavyam iti pratiṣedho vidhīyate, in Jaimini: Mimamsasutra, with Sabara's Bhasya, Adhyayas 1-7 (in prose commentary)-->
 <!--'prohibition by the guru' /is performed / is applied [there].-->
 	</quote>
-	
+
 	<p xml:id="rsisasana_13.06">
 		maṅkana liṅ saṅ hyaṅ āgama, sira ta kinonakən śrī mahārāja kayatnakna mpuṅku riṅ kaśaivan makabehan, təka ri mpuṅku tamolah riṅ <app><lem type="norm">panaivāsikan</lem><rdg wit="#A #B #C">panevaśikan</rdg></app>,
 		saṅkā <app><lem type="emn">ri gə̄ṅny</lem><rdg wit="#B">ry agəṅ</rdg><rdg wit="#A">ryy a:{*}gə:ṁny</rdg><rdg wit="#C">yy agə:ṁny</rdg><note>Or would <foreign>saṅkā ry agə̄ṅny ārəmbha</foreign> be grammatically acceptable?</note></app> ārəmbha mahārāja manu ri mpuṅku riṅ kaśaivan,
@@ -615,10 +615,10 @@ we expect ghr̥ta-tilāhuti, with a and u
     saṅ panevasikan, kumayatnakəna saṅ hyaṅ sevasasana, katəguhakəna remba
     nugraha saṅ atita prabu, mvaṅ pagəhny adnja śrī maharaja // see mulakarya in Balinese inscriptions, Wisseman Christie 2009: 157, in the context of claims being made for different kinds of debts: there is one "for the mūlakarya-rituals" according to JWC-->
     hayva mpuṅku saṅ <app><lem wit="#B">pinakaviku</lem><rdg wit="#A #C">sinakaviku</rdg></app> pinintan *lvir-lvir, apan gave i jəro ṅaranikā, maṅkanā deyanika saṅ <app><lem wit="#B">citrakāra</lem><rdg wit="#A #C">citraṁka:ra</rdg></app>, səḍaṅ ampuṅku riṅ kaśaivan, pātrakāsihana gavaya vimāna,
-		<app><lem type="conj">paliddha</lem><rdg wit="#A #C">paliḍura</rdg><note>See supra note X.</note></app>, paṅhavvan, palaṅka, salvirniṅ <app><lem><supplied evidence="conjecture"><gap/></supplied></lem><note>A rather long passage seems to be missing here. The preceding objects appear in epigraphy in lists of ornaments the beneficiary of grants are allowed to display, so one would expect a term for a general category of objects to follow after <foreign>salvirniṅ</foreign>.</note></app><!--finish to draft up this note here and in EGD--> hyaṅ r̥ṣiśāsana, katəguhakna de saṅ aneṅ āśramanira sovaṅ-sovaṅ, ṅuniveh katəmvaniṅ <!--#C: katəmaniṅ--> strī laraṅan, tan dayan ata saṅ r̥ṣi, siṅ <app><lem wit="#B">mara riṅ</lem><rdg wit="#A #C">masiṁ</rdg></app> patapan,
+		<app><lem type="conj">paliddha</lem><rdg wit="#A #C">paliḍura</rdg><note>See supra note X.</note></app>, paṅhavvan, palaṅka, salvirniṅ <app><lem><supplied reason="lost" evidence="conjecture"><gap/></supplied></lem><note>A rather long passage seems to be missing here. The preceding objects appear in epigraphy in lists of ornaments which the beneficiary of grants are allowed to display, so one would expect a term for a general category of objects to follow after <foreign>salvirniṅ</foreign>.</note></app><!--finish to draft up this note here and in EGD--> hyaṅ r̥ṣiśāsana, katəguhakna de saṅ aneṅ āśramanira sovaṅ-sovaṅ, ṅuniveh katəmvaniṅ <!--#C: katəmaniṅ--> strī laraṅan, tan dayan ata saṅ r̥ṣi, siṅ <app><lem wit="#B">mara riṅ</lem><rdg wit="#A #C">masiṁ</rdg></app> patapan,
 		kadyaṅganiṅ caturjanma, brāhmaṇa, kṣatriya, vaiśya, śūdra,
 	<app>
-		<lem type="absent_elsewhere" wit="#A #C">macaṅkramāta riṅ patapan, amava sabhūṣaṇanya <!--subhūṣaṇānya: significant variant?-->,
+		<lem wit="#A #C">macaṅkramāta riṅ patapan, amava sabhūṣaṇanya <!--subhūṣaṇānya: significant variant?-->,
 		sakavava ri<!--hyp: edit this out?--> patapan atah, pramāṇa sabhūṣaṇanya, kavāva <!--#C: kavavā-->riṅ patapan,
 		tan kilalanən de saṅ ratu, tan kavāva riṅ rāma, tan ucapən deniṅ śūdra,
 		ṅuniveh <app><lem type="emn">sabanva</lem><rdg wit="#A #C">saṁ banva</rdg></app> uṅgvānira,
@@ -628,9 +628,8 @@ we expect ghr̥ta-tilāhuti, with a and u
 tan deyən· baryya-baryya śīla molah-ulaḥ, tan· paṅalapa (sa)linaraṅanikanaṁ tanayan thāni, tan· pamraṅa kayu-kayu
 "not to be neglectful of good conduct by causing disturbance; not to take anything reserved for the villagers; not to hew trees, ..." -->
 	</app> saṅ prabhu</lem>
-
 		<note type="altLem">macaṅkramāta ... saṅ prabhu</note>
-		<rdg wit="#B"><gap/></rdg>
+		<rdg wit="#B"><gap reason="omitted"/></rdg>
 		<note>The reading of <ptr target="#B"/>, jumping directly from <foreign>śūdra</foreign> to <foreign>salviranya</foreign>, seems equally satisfactory.</note>
 	</app><!--the translation suggested by OJED for sakāvakanya, <q>of whatever form</q> would fit much better as a direct continuation of śūdra. Consider that the original reading is B?-->, salviranya, sakāvakanya, sarūpanya, tan kəna riṅ rājaśikṣa,
 		ṅuniveh patih vahuta, nayaka, <app><lem wit="#B">partaya</lem><rdg wit="#A">ma:rthaya</rdg><rdg wit="#C">morthaya</rdg></app>, <app><lem wit="#A #B">rāma</lem><rdg wit="#C">ra:pa</rdg></app>,
