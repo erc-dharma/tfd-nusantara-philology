@@ -17,11 +17,15 @@
           <surname>Schoettel</surname>
         </editor>
         <respStmt>
-          <resp>EpiDoc encoding</resp>
+          <resp>TEI encoding</resp>
           <!--TBM-->
           <persName ref="part:masc">
             <forename>Marine</forename>
             <surname>Schoettel</surname>
+          </persName>
+          <persName ref="part:argr">
+            <forename>Arlo</forename>
+            <surname>Griffiths</surname>
           </persName>
         </respStmt>
       </titleStmt>
@@ -45,29 +49,51 @@
           <witness xml:id="L1">
             <msDesc>
               <msIdentifier>
-              <settlement>Leiden</settlement>
-              <institution>UB</institution>
-              <collection>Lontar</collection>
+                <settlement>Leiden, the Netherlands</settlement>
+                <repository>University Libraries</repository>
+                <collection>Special Collections</collection>
               <idno>Or. 3723 (1)</idno>
-              </msIdentifier>            
+              </msIdentifier>
+              <physDesc>
+                            <objectDesc>
+                               <p>Palm-leaf (lontar) manuscript. ... leaves in Balinese script.</p>
+                            </objectDesc>
+                            <handDesc>
+                              <handNote xml:id= "L1_H1" scriptRef="class:... maturity:...">
+    		                          <abbr type="hand">L<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr>
+                                  <p>main hand of the manuscript, ... ink</p>
+                                 </handNote>
+                             </handDesc>
+                </physDesc>
             </msDesc>
           </witness>
           <witness xml:id="L2">
             <msDesc>
               <msIdentifier>
-                <settlement>Leiden</settlement>
-                <institution>UB</institution>
-                <collection>Lontar</collection>
+                <settlement>Leiden, the Netherlands</settlement>
+                <repository>University Libraries</repository>
+                <collection>Special Collections</collection>
                 <idno>Or. 5098</idno>
           </msIdentifier>
+          <physDesc>
+                        <objectDesc>
+                           <p>Palm-leaf (lontar) manuscript. ... leaves in Balinese script.</p>
+                        </objectDesc>
+                        <handDesc>
+                          <handNote xml:id= "L2_H1" scriptRef="class:... maturity:...">
+		                          <abbr type="hand">L<hi rend="superscript">2</hi>H<hi rend="subscript">1</hi></abbr>
+                              <p>main hand of the manuscript, ... ink</p>
+                             </handNote>
+                         </handDesc>
+            </physDesc>
           </msDesc>
           </witness>
           <witness xml:id="L3">
             <msDesc>
               <msIdentifier>
                 <settlement>Jakarta</settlement>
-                <institution>Perpusnas</institution>
-                <collection>Lontar</collection>
+                <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                <!-- <collection>Lontar</collection> -->
                 <idno>L. 585</idno>
               </msIdentifier>
             </msDesc>
@@ -76,8 +102,8 @@
             <msDesc>
               <msIdentifier>
                 <settlement>Jakarta</settlement>
-                <institution>Perpusnas</institution>
-                <collection>Lontar</collection>
+                <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                <!-- <collection>Lontar</collection> -->
                <idno>L. 881</idno>
           </msIdentifier>
           </msDesc>
@@ -85,9 +111,9 @@
           <witness xml:id="Or4431">
             <msDesc>
               <msIdentifier>
-                <settlement>Leiden</settlement>
-                <institution>UB</institution>
-                <collection>Lontar</collection>
+                <settlement>Leiden, the Netherlands</settlement>
+                <repository>University Libraries</repository>
+                <collection>Special Collections</collection>
                 <idno>Or4431??</idno>
               </msIdentifier>
             </msDesc></witness>
@@ -103,7 +129,7 @@
           <witness xml:id="H">
             <msDesc>
               <msIdentifier>
-                <settlement>Leiden</settlement>
+                <settlement>Leiden, the Netherlands</settlement>
                 <institution>UB</institution>
                 <repository>Lontar</repository>
                 <idno>REM 214-213</idno>
@@ -134,6 +160,7 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
+      <change who="part:argr" when="2022-07-06">Took over charge of this file since masc has abandoned her work on it</change>
       <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
       <change who="part:axja" when="2021-09-13">Updating the encoding pattern with quote element</change>
     </revisionDesc>
