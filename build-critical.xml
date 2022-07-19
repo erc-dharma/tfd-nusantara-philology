@@ -40,12 +40,13 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="(.*)" to="EDITED_\1"/>
     </xslt>
-
+    
   <!-- Transformation XML vers txt -->
-  <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-txt.xsl" destdir="./output/critical-edition/texts" extension=".txt" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
-      <fileset refid="criticalXML"/>
-      <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-  </xslt>
+    <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-txt.xsl" destdir="./output/critical-edition/texts" extension=".txt" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
+        <fileset refid="criticalXML"/>
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+    </xslt>
+
     <!-- Transformation XML vers HTML -->
     <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-edition.xsl" destdir="./output/critical-edition/html" extension=".html" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="criticalHTML"/>
