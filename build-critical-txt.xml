@@ -32,10 +32,16 @@
     <git-clone-pull repository="https://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
 
     <fileset id="criticalXML" dir="./editions" includes="DHARMA_CritEd*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
-
+    <fileset id="criticalTXT" dir="./output/critical-edition/texts-xml"/>
   <!-- Transformation XML vers txt -->
-  <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-txt.xsl" destdir="./output/critical-edition/texts" extension=".txt" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
+  <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-txt.xsl" destdir="./output/critical-edition/texts-xml" extension=".txt" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
       <fileset refid="criticalXML"/>
+      <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+  </xslt>
+
+  <!-- Transformation cleaning spaces-->
+  <xslt force="true" style="./project-documentation/editorialStylesheets/tpl-cleanSpace.xsl" destdir="./output/critical-edition/texts" extension=".txt" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
+      <fileset refid="criticalTXT"/>
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
   </xslt>
 
