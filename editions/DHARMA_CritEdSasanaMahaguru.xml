@@ -2,7 +2,6 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="sasanamahaguru" type="edition" xml:lang="eng">
     <teiHeader>
         <fileDesc>
@@ -417,7 +416,7 @@
 <p xml:id="sasanamahaguru_07.05"><app><lem wit="#A">letah ma</lem><rdg wit="#B"><lacunaEnd/>ta ma</rdg></app> 
     <app><lem type="emn">ṅaranna</lem><rdg wit="#A">ṅarasa</rdg><rdg wit="#B">ṅa</rdg></app>, 
     <app><lem wit="#A">gəra bogoh sarasa-rasana</lem><rdg wit="#B">mulaḥ bvago saṁrasaran·</rdg></app>, lamun ku 
-    <app><lem wit="#B">bari</lem><rdg wit="#A">bira</rdg></app> ku tiis, ku bacin, <app><lem>ku 
+    <app><lem wit="#B">bari</lem><rdg wit="#A">bira</rdg></app> ku tiis, ku bacin, <app><lem type="reformulation">ku 
     <app><lem type="emn">hasəm</lem><rdg wit="#A">hasim</rdg></app>, ku lada, ku paṅset</lem><rdg wit="#B"><gap reason="omitted"/></rdg></app>, teka dipake usuh-asahan, 
     <app><lem wit="#A">byaktana</lem><rdg wit="#B">bya<lacunaStart/></rdg></app> ma, pirə, petal<supplied reason="omitted">,</supplied> cadel, sakitu<pb edRef="#A" n="9r"/> pipapaənana, di letah ṅaranna.</p> 
 <p xml:id="sasanamahaguru_07.06"><app><lem type="emn">suṅut</lem><rdg wit="#A">suṁṅat</rdg></app> ma ṅaranna, 
@@ -1310,7 +1309,8 @@ gurusaṁghāsanam prītam, gr̥hate namaniṁmate,
     <app><lem type="emn">vruh</lem><rdg wit="#A">vrə</rdg></app> yan maṅkana, ya ta mataṅyan sinaṅguh saṅ 
     <app><lem type="norm">hyaṅ</lem><rdg wit="#A">hya</rdg></app> suksəma, prətyaksa, laṅgəṅ 
         <app><lem type="emn">hana riṅ sarira</lem><rdg wit="#A">hana sarira</rdg></app>, lavan ikaṅ rat tan hana vaneh.</p> 
-<p xml:id="sasanamahaguru_38.15">ini <app><lem type="emn">vrəti</lem><rdg wit="#A">vradi</rdg></app> bayu sabda hədap, seṅniṅ bayu sabda hədap, 3, katuduhaniṅ bayu, 6, ini pañca-bvat-aji, 5, pañca-indriya, 5, varah <sic>de hvilaṅ</sic>, 3, paramarta, 4, paramakevalya, 4, asta-guna, 8, vuku añana, 3, <sic>kisiñan</sic>, 8, 
+<p xml:id="sasanamahaguru_38.15">ini <app><lem type="emn">vrəti</lem><rdg wit="#A">vradi</rdg></app> bayu sabda hədap, seṅniṅ bayu sabda hədap, 3, katuduhaniṅ bayu, 6, ini pañca-bvat-aji, 5, pañca-indriya, 5, varah de 
+    <app><lem type="emn">hinilaṅ</lem><rdg wit="#A">hvilaṅ</rdg><note>My emendation is based on the witness of SHH 11.9.</note></app>, 3, paramarta, 4, paramakevalya, 4, asta-guna, 8, vuku añana, 3, <sic>kisiñan</sic>, 8, 
     <app><lem type="emn">anendriya</lem><rdg wit="#A">Anen·Idraya</rdg></app>, <!-- SHH 40.1 anendriya ṅarannya tar katon taṅ panon. manon vijñana ṅarannya panon ta ri madvah ri buvana ləmbana. --> 3, ganal alit, 4, samaṅkana vukuaniṅ ajñana kvehnya<pb edRef="#A" n="28r"/>, kayatnakən saṅ sevaka darma.</p>
     </div>
                 
@@ -1344,13 +1344,21 @@ gurusaṁghāsanam prītam, gr̥hate namaniṁmate,
     <app><lem type="emn">kaliṅgihan</lem><rdg wit="#A">kalaṁ<add place="below">gaḥ</add>han·</rdg></app>, tan kavənaṅ 
     <app><lem type="emn" rend="check">inupakaran</lem><rdg wit="#A">Inup:akən·</rdg></app>, tan kavənaṅ pinitəṅənakən ri saṅ guru, <term xml:lang="san-Latn">sāratasvataḥ</term> juga, hana tan hinanakən, <quote xml:id="sasanamahaguru_39.05.01"><term xml:lang="san-Latn">na bhāryā, na putraḥ na 
         <app><lem type="norm">bandhūbiḥ</lem><rdg wit="#A">badubiḥ</rdg></app>, na <app><lem type="emn">mātā</lem><rdg wit="#A">mataḥ</rdg></app>, na pitam svataḥ</term>.</quote></p> 
+    
+        <listApp type="parallels">
+        <app>
+            <note corresp="txt:SHH42.23">ṅaranya, na sastratah tar kneṅ inajyan, tar katəmu deniṅ sastra, na gurutah luput tinakvanakən, tar kəna pinitəṅən deniṅ guru, kaliṅanya, sarattah svatah juga hana tar hinanakən, ṅaranya, na baryya na putra na banduboh, sira ta sinaṅguh darma tuṅgal makavak ikaṅ buvana lavan sarva janma.
+            </note>
+        </app>
+    </listApp>
+    
 <p xml:id="sasanamahaguru_39.06">ka, <term xml:lang="san-Latn">na bhāryā</term>, tan parabi, <term xml:lang="san-Latn">na putraḥ</term>, tan paanak tan 
     <app><lem type="emn">paputu</lem><rdg wit="#A">patpu</rdg></app>, 
     <app><lem type="conj"><term xml:lang="san-Latn">na mātā, na pitam svatah</term></lem><rdg wit="#A">na mataḥ, nataḥ na pitəm· svataḥ</rdg></app>, tan pabapa, tan paibu, avis mrətis.</p> 
     
     <listApp type="parallels">
         <app>
-            <note corresp="txt:SHH42.23">ṅaranya, na sastratah tar kneṅ inajyan, tar katəmu deniṅ sastra, na gurutah luput tinakvanakən, tar kəna pinitəṅən deniṅ guru, kaliṅanya, sarattah svatah juga hana tar hinanakən, ṅaranya, na baryya na putra na banduboh, sira ta sinaṅguh darma tuṅgal makavak ikaṅ buvana lavan sarva janma, na putra tah tar panak tar paputu, na barya tar parabi, na matatah na patəmpvatah, sira ta sva tah tar paraba tar pebu, tar pasaṅka tar paparan, avis mrati drəsti.
+            <note corresp="txt:SHH42.23">na putra tah tar panak tar paputu, na barya tar parabi, na matatah na patəmpvatah, sira ta sva tah tar paraba tar pebu, tar pasaṅka tar paparan, avis mrati drəsti.
             </note>
         </app>
     </listApp>
