@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="jm" type="edition">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">PNRI 277 Peti 89 CaritaWiwitJatiLuput</title>
+                <title type="main">Jati Mula</title>
                 <!--Change the title of the file with the name of your text-->
-                <title type="sub">Digital Diplomatic Edition of...</title>
+                <title type="sub">Digital Critical Edition of...</title>
                 <editor ref="part:ilnu">
                     <name>Ilham Nurwansah</name>              
                 </editor>
@@ -23,43 +23,62 @@
             <publicationStmt>
                 <authority>DHARMA</authority>
                 <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-                <idno type="filename">DHARMA_DiplEdCaritaWiwitJatiLuputPNRI277Peti89</idno>
-                <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
+                <idno type="filename">DHARMA_CritEdJatiMula</idno>
+                <!-- Replace by filename, e.g. DHARMA_CritEdSiksaGuru -->
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by Ilham Nurwansah.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+                        <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
                     </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
-                <!-- Give your witness an unique identifier -->
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
-                        <repository>Lontar</repository>
-                        <idno>Or. 23732</idno>
-                    </msIdentifier>
-                    <msContents>
-                        <!-- the msContents isn't mandatory -->
-                        <msItem>
-                            <author>Śāntarakṣita</author>
-                            <title>Vipañcitārthā</title>
-                        </msItem>
-                    </msContents>
-                    <physDesc>
-                        <objectDesc>
-                            <!-- Here you can give a physical description of the manuscript in prose-->
-                            <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
-                        </objectDesc>
-                    </physDesc>
-                    <history>
-                        <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
-                    </history>
-                </msDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Leiden</settlement>
+                                <institution>University Library (UB)</institution>
+                                <repository>Lontar</repository>
+                                <idno>Or. 23732</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author>Śāntarakṣita</author>
+                                    <title>Vipañcitārthā</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                                    <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -79,12 +98,18 @@
                 <punctuation>
                     <p/>
                 </punctuation>
+                <interpretation>
+                    <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+                </interpretation>
             </editorialDecl>
             <samplingDecl>
                 <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
                 <p/>
             </samplingDecl>
-            <!--schemaRef  will need to be added once a  official realase is done -->
+            
+            <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+            <!-- Will need to be updated once a more official realase is done -->
+            
             <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
 				
 			<variantEncoding method="parallel-segmentation" location="internal"/>
@@ -92,12 +117,33 @@
 			
 			Note that the current by default behaviour is set on parallel-segmentation -->
             <variantEncoding method="parallel-segmentation" location="internal"/>
+            <!-- Part mandatory -->
+            <listPrefixDef>
+                <prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+                    <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+                </prefixDef>
+                <prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
+                    <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+                </prefixDef>
+                <prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
+                    <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+                </prefixDef>
+                <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+                    <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+                </prefixDef>
+                <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+                    <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+                </prefixDef>
+                <prefixDef ident="cal" matchPattern="([\w]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
+                    <p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p></prefixDef>
+            </listPrefixDef>
         </encodingDesc>
         <profileDesc>
             <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
                 <language ident="san-Latn">Sanskrit, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
+                <language ident="osn-Latn">Old Sundanese, romanized</language>
                 <language ident="tam-Latn">Tamil, romanized</language>
                 <language ident="kan-Latn">Kannada, romanized</language>
                 <language ident="tel-Latn">Telugu, romanized</language>
@@ -111,20 +157,13 @@
             </textClass>
         </profileDesc>
         <revisionDesc>
-            <change who="part:axja" when="2022-12-13" status="draft">Transformation from docx to xml</change>
+            <change who="part:axja" when="2020-01-06" status="draft">Creation of the template</change>
+            <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve" xml:lang="lg-code"><!-- update the language code -->
-      <body>
-<!--           No. 277
-Scheppiṅs geschiedenis
-No.5 ci-Buruy
-Dibaca oleh Salfia Rahmavati 29 Juli 2013
-
-%ciburuy No.5
-%carita vivit jati luput,
-%ti puhun-->
-
+		<body>
+		    <div>
 <p><pb edRef="#Holle" n="1"/><lb edRef="#Holle" n="1-23"/><pb edRef="#PRNI" n="1a"/>Ndah varahhakna na puhun, jati luput tanpa katuduhhan, vuit mula tanpa nama, taṅkal mula tanpa ṅaran, vatu mula jati tan hana, na puhun luput jati saṅhiyaṅ hayu, ña mana hatә luput, bvana hatә, hatә katuduh, di jati luput niṅ hatә katuduh ti jati <pb edRef="#PRNI" n="1b"/> luput niṅ bihәṅ hatә katuduh, ti jati luput tan katuduh, tan kәna dituduh, ti jati luput tan katuduhhan, tan kәna dituduh, ti jati luput niskala tanpa katuduh, tan kәna dituduh, ti jati luput tan hana tanpa katuduhhan tan kәna dituduh; ña mana hatә katuduhhan, nu mәtukәn tan hana, jati tan hana, luput tan hana; ña mana puhun luput jati tanpa katuduhhan, ña mana dayәhhannana ña maha visesa, vәnaṅ nuṅgalkәn puhun jati luput laṅgәṅ sadakala, nu tanpa katuduh jati.</p>
 <p><pb edRef="#Holle" n="1"/><lb edRef="#Holle" n="23-26"/> Luput namana, luput tanpa namana, luputna tanpa ṅaranna, nu tanpa katuduh puhun ṅaraniya.</p>
 <p><pb edRef="#Holle" n="1"/><lb edRef="#Holle" n="26-30"/> Beak bahe gan agәs <note resp="#Holle">zie blg 7</note> <pb edRef="#PRNI" n="3"/>gәs di jati di maneh pun, ṅaraniya na tәgәr jatina bәnәr, laṅgәṅ na tәmәn sadakala, na agәs puhun tugal jati laṅgәṅ sadakala.</p>
@@ -163,7 +202,7 @@ Dibaca oleh Salfia Rahmavati 29 Juli 2013
 <p><pb edRef="#Holle" n="10"/><lb edRef="#Holle" n="31"/> Nu katuduh: lәmah, cai, kayu, batu, maka di sarva sato nikaṅ ja<pb edRef="#PRNI" n="18"/>gat, iṅ sor, iṅ ruhur, iṅ darat, iṅ cai, paṅәsi lmah lavan tasik, sakveh kumilip niṅ kaṅ prәtivi, sakvey kumәdap niṅ kaṅ bvana; pada mahi kaduumman, ma hurip nikaṅ sarira, pindah ka sarira, sarira hurip niṅ kaṅ bvana, ṅaranna katuduhhanniya.</p>
 <p><pb edRef="#Holle" n="10"/><lb edRef="#Holle" n="32-37"/> jati ma hurip, mataṅiyan pasraniṅ desa, pasraniṅ bvana, jati mataṅiyan ma hurip, pasra sagara hantara niṅ bvana, yan katuduhhanniya.</p>
 <p><pb edRef="#Holle" n="10-11"/><lb edRef="#Holle" n="38-13"/> Lamun dituduh jati patala, tan kәna dituduh, tala patala; ja jati vvat patala, jati <pb edRef="#Holle" n="11"/> bvana; tan kәna dituduhhan, lamun iṅ sor, iṅ ruhur tan kәna dituduh; kala di i-sor, tala sapta, patala niṅ tala, tan kәna dituduh: 
-di luhur, tapa-patala, tala niṅ tala, di sapta-tala <pb edRef="#PRNI" n="19"/> talaniya niṅ bvana laka, tan kәna dituduh tala, nu ñana puhun jati, nu ñiәn bvana; patala talaniṅ tala bvana loka; samaṅkana, katuduhhaniya ti jati niṅ tanpa katuduh, pun.</p>
+    di luhur, tapa-patala, tala niṅ tala, di sapta-tala <pb edRef="#PRNI" n="19"/> talaniya niṅ bvana laka, tan kәna dituduh tala, nu ñana puhun jati, nu ñiәn bvana; patala talaniṅ tala bvana loka; samaṅkana, katuduhhaniya ti jati niṅ tanpa katuduh, pun.</p>
 <p><pb edRef="#Holle" n="11-12"/><lb edRef="#Holle" n="14-13"/> Ini katuduhhan ti puhun, dәṅ ti jati ma hurip niṅ bvana; jati ajñana tanpa katuduh, jati sadakala tanpa katuduh, jatina laṅgәṅ tanpa katuduh, jatina saṅ Manon tanpa katuduhm jati saṅ visesa, tanpa katuduh, jati saṅ tuṅgal tanpa katuduh, jati saṅ prәmana, tanpa katuduh, jati mataṅiyan, tanpa katuduh; jati niṅ iyatna, tanpa katuduh, jati niṅ iṅәt, tanpa katuduh, jati niṅ tutur tanpa katuduh, jati niṅ hidәp tanpa katuduh, jati niṅ sabda tanpa katuduh; ja<pb edRef="#PRNI" n="20"/>ti niṅ bayu tanpa katuduh, jati niṅ tasa tanpa katuduh; jati niṅ sarira, tanpa katuduh; jati niṅ kama ratih, tanpa katuduh; jati bvana sarira tanpa katuduh bvana; jati niṅ alit tanpa katuduh, alit jati niṅ acitiya, tan kәna dituduh; acitiya, jatina cita <pb edRef="#Holle" n="12"/> tan kәna dituduh, cita; jatina lәñәp, tan kәna dituduh lәñәp, jati niṅ lәñәp, tan kәna dituduh lәñәp; jati niṅ lәṅәs, tan kәna dituduh lәṅәs; jatina nis, tan kәna dituduh nis, jatiniṅ purusa, tan kәna dituduh jati purusa; jati kamoksahhan, tan kәna dituduh kamoksahhan; jatina kalәpasan, tan kәna dituduh kalәpasan; jati niskala tanpa katuduhhan<pb edRef="#PRNI" n="21"/>nanna niṅ ajñana.</p>
 <p><pb edRef="#Holle" n="12"/><lb edRef="#Holle" n="14-26"/> Niskala tanpa namana, tanpa ṅaranna, jati nu namaan, tan kәna dinamaan; na jati nu ṅaranan, tanpa diṅaranan jati tan katuduhhan ku ajñana uraṅ sabvana; ja di nu sakala di nu niskala, ja nu puhun jati dayәhhananna, dina uraṅ sabvana, jatina tanpa katuduh di jati bvana lavan sarira; samaṅkana ajñana katuduhhan ti puhun ka jati, pun.</p>
 <p><pb edRef="#Holle" n="12-13"/><lb edRef="#Holle" n="27-5"/> Ini cipta ajñana, jati ti puhun, dougan vaya di nu tihәla, di nu pandәri, ti nu sakala, ti nu niskala; sugan vaya nu milaṅan iña, na tata ajñana di kakuraṅananna, tata ajñana; dipajarkәn ñasabkәn, maka ṅuni di kaluputananna kaduhhan ajñana; su<pb edRef="#PRNI" n="22"/>gan dipajarkәn ṅaduhuṅkәn nu agәs vәruh di puhun, sugan vaya nu milihhan iña, dәṅna iña, dәṅna lain, <pb edRef="#Holle" n="13"/> dәṅna juti, dәṅna jati; sugan vaya nu milaṅan ñana, tata katuduhhan niṅ ajñana, nu iyatna di taṅkal nu ilik di jati.</p>
@@ -252,6 +291,7 @@ di luhur, tapa-patala, tala niṅ tala, di sapta-tala <pb edRef="#PRNI" n="19"/>
 <p><pb edRef="#Holle" n="31"/><lb edRef="#Holle" n="3-5"/> Lamun aṅgәs, ñaho di aṅgәs uraṅ sabvana, uraṅ hantә ñaho di puhun, pun.</p>
 <p><pb edRef="#Holle" n="31"/><lb edRef="#Holle" n="6-8"/> Na vvat paṅ kuvus ti nu luput, tanpa katuduhhan ti puhun, pun.</p>
 <p><pb edRef="#Holle" n="31"/><lb edRef="#Holle" n="9-10"/> Tәlassi nulis riṅ saṅgara visesa, pun.</p>
-      </body>
-  </text>
+</div>
+		</body>
+	</text>
 </TEI>
