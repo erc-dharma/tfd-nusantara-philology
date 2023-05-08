@@ -28,7 +28,7 @@
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+                        <p>Copyright (c) 2019-2025 by Ilham Nurwansah.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
                     </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
@@ -66,6 +66,45 @@
                                     <!-- Create a handNote for each hand -->
                                     <handNote xml:id= "JaMuA" scriptRef="class:83241 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
                                       <p>Main hand of the manuscript, black ink, Old West Javanese script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>-</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                     <witness xml:id="B">
+                        <!-- Give your witness an unique identifier -->
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Garut</settlement>
+                                <institution>Kabuyutan Ciburuy</institution>
+                                <idno>Kropak 19 Peti 1a, Kropak 29 Peti 1d, Kropak 8 Peti 3a, Kropak 3 Peti 3b</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author>-</author>
+                                    <title>Untitled</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                                    <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Lontar manuscript. 28 leaves in Old Sundanese script. The manuscript leaves are scattered in several bundles and mixed with other texts </p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "JaMuB" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                                      <p>Main hand of the manuscript, Old Sundanese script</p><!-- provide a description of the hand -->
                                     </handNote>
                                 </handDesc>
                             </physDesc>
