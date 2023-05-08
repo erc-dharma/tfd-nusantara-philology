@@ -114,6 +114,44 @@
                             </history>
                         </msDesc>
                     </witness>
+                    <witness xml:id="B">
+                        <!-- Give your witness an unique identifier -->
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                                <idno>277 Peti 89</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author>-</author>
+                                    <title>Tjarita wiwit djati loepoet ti poehoen</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                                    <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <p>Roman transliteration made by K.F. Holle. </p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "JaMu_H" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                                      <p>Main hand of the manuscript, Old Sundanese script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>-</p>
+                            </history>
+                        </msDesc>
+                    </witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
