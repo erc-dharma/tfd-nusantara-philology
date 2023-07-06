@@ -15,9 +15,6 @@ jobs:
          with:
            distribution: 'zulu'
            java-version: '17'
-       - name: Build batak with Ant
-         run: ant -noinput -buildfile build-batak.xml
-
        - name: Build diplomatic editions with Ant
          run: ant -noinput -buildfile build-diplomatic.xml
 
