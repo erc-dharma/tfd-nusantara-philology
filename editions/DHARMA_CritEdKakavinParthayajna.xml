@@ -47,7 +47,7 @@
                      <msIdentifier>
                         <settlement>Leiden, the Netherlands</settlement>
                         <institution>Universiteit Leiden</institution>
-                        <repository>Leiden University Libraries</repository>
+                        <repository>Leiden University Library</repository>
                         <idno>Or. 5024</idno>
                      </msIdentifier>
                      <msContents>
@@ -64,7 +64,10 @@
                            <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
                         </objectDesc>
                          <handDesc>
-                             <p/>
+                             <handNote xml:id= "La" scriptRef="class:38769 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                                 <abbr type="hand">L<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
+                                 <p>The only hand of the manuscript, neat Balinese script</p><!-- provide a description of the hand -->
+                             </handNote>
                          </handDesc>
                      </physDesc>
                      <history>
@@ -155,7 +158,7 @@
             <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
                <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
             </prefixDef>
-            <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+            <prefixDef ident="maturity" matchPattern="(0-9]+)" replacementPattern="tba">
                <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
             </prefixDef>
          </listPrefixDef>
@@ -259,13 +262,13 @@
                         </app>
                          <app loc="b">
                          <lem wit="#EdSSA #EdZ #P">aṅgəsəṅ</lem>
-                         <rdg wit="#L">aṅgәsə̄ṅ</rdg>
+                         <rdg wit="#L">aṅgəsə̄ṅ</rdg>
                          </app>
                     </listApp>
                     
                 <!--
                               <l>yekiṅ ambək aṅel śumakti ri <app><lem wit="#EdZ #EdSSA">viyoganiṅ</lem><rdg wit="#L">viyogganiṅ</rdg></app> alara kəneṅ smarānala</l>
-                    <l>paṅdeniṅ lara rāga yeki tumuvuh ri hati mamunah <app><lem wit="#EdZ #EdSSA">aṅgəsəṅ</lem><rdg wit="#L">aṅgәsə̄ṅ</rdg></app> manah</l>
+                    <l>paṅdeniṅ lara rāga yeki tumuvuh ri hati mamunah <app><lem wit="#EdZ #EdSSA">aṅgəsəṅ</lem><rdg wit="#L">aṅgəsə̄ṅ</rdg></app> manah</l>
                     <l>tṛṣṇāgə̄ṅ sumaput pətəṅ təmahaniṅ rahina pati gagap-gagap tutur</l>
                     <l>kāmārtha pva ya hetuniṅ mapəniṅan mamulaṅuni ri saṅ huvus licin</l>
                 </lg>
@@ -273,7 +276,7 @@
                 <lg xml:id="kakavin_01.04" n="4">
                     <l n="a">yāṅde rañca ri citta maṅkin alaṅə̄ təkapiṅ alara śoka kāsyasih,</l>
                     <l n="b">ṅhiṅ vikvā jugaṅ enakānusupa riṅ vana tumulusa tan kabañcana,</l>
-                    <l n="c">śaktyāṅuṅsira siddhaniṅ manəmu sandhi kalәpasәn i patyaniṅ tiga,</l>
+                    <l n="c">śaktyāṅuṅsira siddhaniṅ manəmu sandhi kaləpasən i patyaniṅ tiga,</l>
                     <l n="d">ṅhiṅ tekā palakun ri pādanira saṅ yativara maləsvāvakājñana.</l>
                  </lg>
                          <listApp type="apparatus">
@@ -286,8 +289,8 @@
                          <rdg wit="#EdZ">tulusa</rdg>
                         </app>
                          <app loc="c">
-                         <lem wit="#EdSSA #L #P">kalәpasәn</lem>
-                         <rdg wit="#EdZ">kalәpasan</rdg>
+                         <lem wit="#EdSSA #L #P">kaləpasən</lem>
+                         <rdg wit="#EdZ">kaləpasan</rdg>
                          </app>
                                  <app loc="d">
                          <lem wit="#EdSSA #EdZ #P">tekā</lem>
@@ -296,15 +299,15 @@
                              <app loc="d">
                                      <lem wit="#EdZ">maləsvāvakājñana</lem>
                          <rdg wit="#EdSSA">malesāvak ajñāna</rdg>
-                                     <rdg wit="#L #P">malәsāvak ājñana</rdg>
+                                     <rdg wit="#L #P">maləsāvak ājñana</rdg>
                          </app>
                     </listApp>
                    
                 <!--
                      <l>yāṅde rañca ri citta maṅkin alaṅə̄ təkap iṅ alara śoka kāsyasih</l>
                     <l>ṅhiṅ <app><lem wit="#EdZ ">vikvā jugaṅ</lem><rdg wit="#L #EdSSA">vikvāṅ</rdg></app> enakānusupa riṅ vana <app><lem wit="#L #EdSSA">tumulusa</lem><rdg wit="#EdZ">tulusa</rdg></app> tan kabañcana</l>
-                    <l>śaktyāṅuṅsira siddhaniṅ manəmu sandhi <app><lem wit="#EdSSA #L">kalәpasәn</lem><rdg wit="#EdZ">kalәpasan</rdg></app> i patyaniṅ tiga</l>
-                    <l>ṅhiṅ <app><lem wit="#EdZ #EdSSA">tekā</lem><rdg wit="#L">tekāk</rdg></app> palakun ri pādanira saṅ yativara <app><lem wit="#EdZ">maləsvāvakājñana</lem><rdg wit="#EdSSA">malesāvak ajñāna</rdg><rdg wit="#L">malәsāvak ājñana</rdg></app></l>
+                    <l>śaktyāṅuṅsira siddhaniṅ manəmu sandhi <app><lem wit="#EdSSA #L">kaləpasən</lem><rdg wit="#EdZ">kaləpasan</rdg></app> i patyaniṅ tiga</l>
+                    <l>ṅhiṅ <app><lem wit="#EdZ #EdSSA">tekā</lem><rdg wit="#L">tekāk</rdg></app> palakun ri pādanira saṅ yativara <app><lem wit="#EdZ">maləsvāvakājñana</lem><rdg wit="#EdSSA">malesāvak ajñāna</rdg><rdg wit="#L">maləsāvak ājñana</rdg></app></l>
                     -->
             </div>
 
@@ -818,7 +821,7 @@
                     <l n="c">kəṭəṅ masimsim tuli yan pakaṅsi,</l>
                     <l n="d">ikaṅ samaṅkā pva dələ̄n təkapta.</l>
                 </lg>
-                <!-- <note>Z var kәkәṅ</note> -->
+                <!-- <note>Z var kəkəṅ</note> -->
                  <listApp type="apparatus">
                      <app loc="b">
                       <lem wit="#EdZ #EdSSA #L">mamaṅāniṅ</lem>
@@ -974,10 +977,10 @@
                     </app>
                                      </listApp>
                 <lg xml:id="kakavin_06.07" n="7">
-                    <l n="a">sәḍәṅnira saṅ ārya nāma vidurāmitutur i sira saṅ yudhiṣṭhira,</l>
-                    <l n="b">ḍatәṅ ta rәṣi dhomya śīghra sumuyug ri kahananira saṅ nareśvara,</l>
-                    <l n="c">vavaṅ nṛpati gadgadāṅadәg aṅañjali mamәkul i jə̄ṅ mahāmuni,</l>
-                    <l n="d">parәṅ paḍa humuṅ taṅisnira kabeh yativara kavәṅan sirāṅadәg.</l>
+                    <l n="a">səḍəṅnira saṅ ārya nāma vidurāmitutur i sira saṅ yudhiṣṭhira,</l>
+                    <l n="b">ḍatəṅ ta rəṣi dhomya śīghra sumuyug ri kahananira saṅ nareśvara,</l>
+                    <l n="c">vavaṅ nṛpati gadgadāṅadəg aṅañjali maməkul i jə̄ṅ mahāmuni,</l>
+                    <l n="d">parəṅ paḍa humuṅ taṅisnira kabeh yativara kavəṅan sirāṅadəg.</l>
                 </lg>
                 <listApp type="apparatus">
                      <app loc="a">
@@ -990,10 +993,10 @@
                                     </app>
                                      </listApp>
                 <lg xml:id="kakavin_06.08" n="8">
-                    <l n="a">taṅistaṅisirāsәkәl nṛpati dharmasuta mulati saṅ mahāmuni,</l>
+                    <l n="a">taṅistaṅisirāsəkəl nṛpati dharmasuta mulati saṅ mahāmuni,</l>
                     <l n="b">nda tiṅhalana teki pāpaniṅ apuṅguṅ i varahira saṅ pinaṇḍita,</l>
-                    <l n="c">agə̄ṅ sapṛthivī jugaṅ hala kabhukti tәkap i rahulun munīśvara,</l>
-                    <l n="d">hanā madhana tan hanāṅlәvihaneṅ adhama kaluṣa mūḍha kaśmala.</l>
+                    <l n="c">agə̄ṅ sapṛthivī jugaṅ hala kabhukti təkap i rahulun munīśvara,</l>
+                    <l n="d">hanā madhana tan hanāṅləvihaneṅ adhama kaluṣa mūḍha kaśmala.</l>
                 </lg>
                 <listApp type="apparatus">
                        <app loc="b">
@@ -1016,8 +1019,8 @@
                 <lg xml:id="kakavin_06.09" n="9">
                     <l n="a">nda liṅgihana saṅ mahāmuni da honya ta sira babuni ṅhulun hana,</l>
                     <l n="b">tumūt milu kapāpa dīna kadi lampuran aṅahasi deśa met nasi,</l>
-                    <l n="c">karәm ri tәṅahiṅ mahārṇava hiḍәpnira ri laranire samaṅkana,</l>
-                    <l n="d">abәh ta punikaṅ matāsrәt apәyәh svaranira karәṅə̄ nirantara.</l>
+                    <l n="c">karəm ri təṅahiṅ mahārṇava hiḍəpnira ri laranire samaṅkana,</l>
+                    <l n="d">abəh ta punikaṅ matāsrət apəyəh svaranira karəṅə̄ nirantara.</l>
                 </lg>
                 <listApp type="apparatus">
                  <app loc="a">
@@ -1038,10 +1041,10 @@
                                     </app>                 
                 </listApp>
                 <lg xml:id="kakavin_06.10" n="10">
-                    <l n="a">sabhāgya ri ḍatәṅ munīndra sira teki mavәlasa ri saṅ hulun kabeh,</l>
-                    <l n="b">ndan ahyun atәrәn ranaknira mareṅ vukir anusupa riṅ vanāśrama,</l>
-                    <l n="c">yadin tәhәra tan vanāśrama lәvih ta halani paṅucapnikaṅ sarāt,</l>
-                    <l n="d">sukhā pәjaha satya riṅ paraparan makaphala masiluṅluṅaṅ lara.</l>
+                    <l n="a">sabhāgya ri ḍatəṅ munīndra sira teki mavəlasa ri saṅ hulun kabeh,</l>
+                    <l n="b">ndan ahyun atərən ranaknira mareṅ vukir anusupa riṅ vanāśrama,</l>
+                    <l n="c">yadin təhəra tan vanāśrama ləvih ta halani paṅucapnikaṅ sarāt,</l>
+                    <l n="d">sukhā pəjaha satya riṅ paraparan makaphala masiluṅluṅaṅ lara.</l>
                 </lg>
                  <listApp type="apparatus">
                      <app loc="b">
@@ -1058,10 +1061,10 @@
                 <note type="prosody">--+-+---+-+-=</note>
                 <note>(skt mañjubhāṣiṇī)</note>
                 <lg xml:id="kakavin_07.01" n="1">
-                    <l n="a">panaṅisnirāṅrәs asәkәl nareśvara,</l>
-                    <l n="b">vәkasan ta saṅ ṛsi maśabda gorava,</l>
-                    <l n="c">ya ta hetu saṅ hulun apadgatan ḍatәṅ,</l>
-                    <l n="d">rumәṅə̄ ri bhūpati kabañcaneṅ nita.</l>
+                    <l n="a">panaṅisnirāṅrəs asəkəl nareśvara,</l>
+                    <l n="b">vəkasan ta saṅ ṛsi maśabda gorava,</l>
+                    <l n="c">ya ta hetu saṅ hulun apadgatan ḍatəṅ,</l>
+                    <l n="d">ruməṅə̄ ri bhūpati kabañcaneṅ nita.</l>
                 </lg>
                 <lg xml:id="kakavin_07.02" n="2">
                     <l n="a">nyama gə̄ṅnikuṅ lara ri saṅ nareśvara,</l>
@@ -1071,13 +1074,13 @@
                 </lg>
                 <!-- kiteki vastuni huripiṅ sarāt kabeh, here more variants in the entire verse K ms?-->
                 <lg xml:id="kakavin_07.03" n="3">
-                    <l n="a">syapa teki tan mavәlase kiteṅ sarāt,</l>
+                    <l n="a">syapa teki tan mavəlase kiteṅ sarāt,</l>
                     <l n="b">ri kasajjananta tuvi yan binañcana,</l>
                     <l n="c">pira teka pāpaniṅ asuṅ lare kita,</l>
-                    <l n="d">kala mūḍa mūrkha tuvi tan kәneṅ vәlas.</l>
+                    <l n="d">kala mūḍa mūrkha tuvi tan kəneṅ vəlas.</l>
                 </lg>
                 <lg xml:id="kakavin_07.04" n="4">
-                    <l n="a">yadiyan rumәṅvakәna saṅ mahāyati,</l>
+                    <l n="a">yadiyan ruməṅvakəna saṅ mahāyati,</l>
                     <l n="b">ri kadurjanan saṅ agave lare kita,</l>
                     <l n="c">matukup kapə̄ sira savetnikaṅ hala,</l>
                     <l n="d">atakut kapelutana pāpa durjana.</l>
@@ -1092,7 +1095,7 @@
                     <l n="a">ndak ajar kiteka rusitiṅ vvaṅ iṅ kalī,</l>
                     <l n="b">kavi sandhi vijña riṅ upāya ṅarṣaṇa,</l>
                     <l n="c">mamanis maśabda madulur valokana,</l>
-                    <l n="d">maṅimur magoṣṭhava mamet alәṅkara.</l>
+                    <l n="d">maṅimur magoṣṭhava mamet aləṅkara.</l>
                 </lg>
                 <listApp type="apparatus">
                      <app loc="b">
@@ -1102,15 +1105,15 @@
                 </listApp>
                 <lg xml:id="kakavin_07.06" n="6">
                     <l n="a">maṅucap sudharma guṇatattvaniṅ dadi,</l>
-                    <l n="b">mahalәp mataṅgvana saloka sākṣara,</l>
-                    <l n="c">ri tutuk juga vruh aṅucap taman tәpәt,</l>
+                    <l n="b">mahaləp mataṅgvana saloka sākṣara,</l>
+                    <l n="c">ri tutuk juga vruh aṅucap taman təpət,</l>
                     <l n="d">ri hatinya kimburu mabuddhi sādhana.</l>
                 </lg>
                 <lg xml:id="kakavin_07.07" n="7">
-                    <l n="a">riṅ agoṣṭhi śabda mamahā marәk ta ya,</l>
-                    <l n="b">maharәp ri kosvaniṅ ujar salah kәna,</l>
-                    <l n="c">kagiriṅ tikaṅ vvaṅ aṅucap ta yāpәpәr,</l>
-                    <l n="d">mamilәt vuvusnya dumalih mamatyana.</l>
+                    <l n="a">riṅ agoṣṭhi śabda mamahā marək ta ya,</l>
+                    <l n="b">maharəp ri kosvaniṅ ujar salah kəna,</l>
+                    <l n="c">kagiriṅ tikaṅ vvaṅ aṅucap ta yāpəpər,</l>
+                    <l n="d">mamilət vuvusnya dumalih mamatyana.</l>
                 </lg>
               <!-- kośvan SSA  -->
                 <lg xml:id="kakavin_07.08" n="8">
@@ -1126,9 +1129,9 @@
                       </app>
                 </listApp>
                 <lg xml:id="kakavin_07.09" n="9">
-                    <l n="a">hana duṣkarāharәp i duhkhaniṅ vaneh,</l>
+                    <l n="a">hana duṣkarāharəp i duhkhaniṅ vaneh,</l>
                     <l n="b">mamiveka polah aṅusī maveh hala,</l>
-                    <l n="c">mamilәt mabheda maṅucap sahāgama,</l>
+                    <l n="c">mamilət mabheda maṅucap sahāgama,</l>
                     <l n="d">yan alah vuvusnya maṅucap madudvana</l>
                 </lg>
                 <listApp type="apparatus">
@@ -1140,8 +1143,8 @@
                 </listApp>
                 <lg xml:id="kakavin_07.10" n="10">
                     <l n="a">hana duṣkṛtātuhaganan sapustaka,</l>
-                    <l n="b">rahineṅ kulәm vinaca nitya vus tama,</l>
-                    <l n="c">kahiḍәp rahasya tuhu dharma saṅ viku,</l>
+                    <l n="b">rahineṅ kuləm vinaca nitya vus tama,</l>
+                    <l n="c">kahiḍəp rahasya tuhu dharma saṅ viku,</l>
                     <l n="d">ndan isinya mudra kāla caṇḍapiṅgala.</l>
                 </lg>
                 <listApp type="apparatus">
@@ -1153,14 +1156,14 @@
                 <lg xml:id="kakavin_07.11" n="11">
                     <l n="a">hana len svabuddhinika rūpa bhikṣuka,</l>
                     <l n="b">mamanis maśabda mara riṅ pradhānika,</l>
-                    <l n="c">saha lepanāṅajarakәn vruheṅ guṇa,</l>
+                    <l n="c">saha lepanāṅajarakən vruheṅ guṇa,</l>
                     <l n="d">sipat iṅ kasiddhyana manon asambhava.</l>
                 </lg>
                 <lg xml:id="kakavin_07.12" n="12">
                     <l n="a">vara teki liṅnika katona maṅśila,</l>
-                    <l n="b">pinarәk sinevaka maminta sādhana,</l>
-                    <l n="c">tinәkan sakāptinika siṅ samenaka,</l>
-                    <l n="d">kuṭilā hatinya dadi miṅgat iṅ kulәm.</l>
+                    <l n="b">pinarək sinevaka maminta sādhana,</l>
+                    <l n="c">tinəkan sakāptinika siṅ samenaka,</l>
+                    <l n="d">kuṭilā hatinya dadi miṅgat iṅ kuləm.</l>
                 </lg>
                  <listApp type="apparatus">
                      <app loc="c">
@@ -1173,16 +1176,16 @@
                       </app>
                 </listApp>
                 <lg xml:id="kakavin_07.13" n="13">
-                    <l n="a">tәka riṅ mavalkala tatan mahājana,</l>
-                    <l n="b">pracәṭaṅ alәṅkara ri buddhiniṅ para,</l>
-                    <l n="c">maharәp kabhaktyana pujīniṅ āśrayan,</l>
-                    <l n="d">lumәvih sumamyak alicin vavaṅ tyajet.</l>
+                    <l n="a">təka riṅ mavalkala tatan mahājana,</l>
+                    <l n="b">pracəṭaṅ aləṅkara ri buddhiniṅ para,</l>
+                    <l n="c">maharəp kabhaktyana pujīniṅ āśrayan,</l>
+                    <l n="d">luməvih sumamyak alicin vavaṅ tyajet.</l>
                 </lg>
                 <lg xml:id="kakavin_07.14" n="14">
-                    <l n="a">ṅuniveh tikaṅ vvaṅ arәbut pamuktyana,</l>
-                    <l n="b">silih ol paḍāṅdәha mamet upāśrayan,</l>
-                    <l n="c">hana bañcanā hapan alit viṣāmrәta,</l>
-                    <l n="d">sumilib madoh kuṭila tan kәnenuha.</l>
+                    <l n="a">ṅuniveh tikaṅ vvaṅ arəbut pamuktyana,</l>
+                    <l n="b">silih ol paḍāṅdəha mamet upāśrayan,</l>
+                    <l n="c">hana bañcanā hapan alit viṣāmrəta,</l>
+                    <l n="d">sumilib madoh kuṭila tan kənenuha.</l>
                 </lg>
                  <listApp type="apparatus">
                      <app loc="b">
@@ -1202,32 +1205,32 @@
                 </lg>
                 <lg xml:id="kakavin_07.16" n="16">
                     <l n="a">kita teki tan vruh iṅ upāya riṅ nita,</l>
-                    <l n="b">tәkapiṅ suyodhana mameti bañcana,</l>
-                    <l n="c">śakuni ya tādadi parih tәkapnika,</l>
+                    <l n="b">təkapiṅ suyodhana mameti bañcana,</l>
+                    <l n="c">śakuni ya tādadi parih təkapnika,</l>
                     <l n="d">ya dumeh nitālaha tatan sakeṅ tivas.</l>
                 </lg>
                 <lg xml:id="kakavin_07.17" n="17">
                     <l n="a">vatuniṅ karaṅ paḍanikaṅ suyodhana,</l>
-                    <l n="b">maluṅid malaṇḍәp arusit pasaṅ lәyәp,</l>
-                    <l n="c">pinaran bayāṅanini tan kәnenapәs,</l>
-                    <l n="d">mrigigih makas kasәlatan sahiṅsahiṅ.</l>
+                    <l n="b">maluṅid malaṇḍəp arusit pasaṅ ləyəp,</l>
+                    <l n="c">pinaran bayāṅanini tan kənenapəs,</l>
+                    <l n="d">mrigigih makas kasəlatan sahiṅsahiṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_07.18" n="18">
-                    <l n="a">syapa lena saṅ vәnaṅ ataṅgәheṅ hala,</l>
+                    <l n="a">syapa lena saṅ vənaṅ ataṅgəheṅ hala,</l>
                     <l n="b">kadi bhīsma yogya pituhun vuvusnira,</l>
-                    <l n="c">yen apeka yan mapәsa saṅ suyodhana,</l>
-                    <l n="d">umәnәṅ pva yāpitulei tan kәnenavәr.</l>
+                    <l n="c">yen apeka yan mapəsa saṅ suyodhana,</l>
+                    <l n="d">umənəṅ pva yāpitulei tan kənenavər.</l>
                 </lg>
                      <listApp type="apparatus">
                      <app loc="a">
-                      <lem wit="#EdZ">ataṅgәheṅ</lem>
-                                         <rdg wit="#EdSSA">ataṅgәhiṅ</rdg>
+                      <lem wit="#EdZ">ataṅgəheṅ</lem>
+                                         <rdg wit="#EdSSA">ataṅgəhiṅ</rdg>
                       </app>
                 </listApp>
                 <lg xml:id="kakavin_07.19" n="19">
                     <l n="a">tuhu yan hanā kaliliran sakeṅ bapa,</l>
-                    <l n="b">vuta tan rinakva ri hatinya tan dәliṅ,</l>
-                    <l n="c">dumәliṅ yan iṅ hala manon ndatan vuta,</l>
+                    <l n="b">vuta tan rinakva ri hatinya tan dəliṅ,</l>
+                    <l n="c">duməliṅ yan iṅ hala manon ndatan vuta,</l>
                     <l n="d">pinasuknikaṅ mala maluṅ kadurjanan,</l>
                 </lg>
                      <listApp type="apparatus">
@@ -1243,7 +1246,7 @@
                 <lg xml:id="kakavin_07.20" n="20">
                     <l n="a">dalu pāpaniṅ vvaṅ amusuh paṅutpata,</l>
                     <l n="b">parabañcanāṅulahulah ri saṅ viku,</l>
-                    <l n="c">umәnәṅ ta saṅ sujana satya sāttvika,</l>
+                    <l n="c">umənəṅ ta saṅ sujana satya sāttvika,</l>
                     <l n="d">hapan āṅśadharma guṇatattva saṅ mahān.</l>
                 </lg>
                       <listApp type="apparatus">
@@ -1253,7 +1256,7 @@
                       </app>
                           </listApp>
                 <lg xml:id="kakavin_07.21" n="21">
-                    <l n="a">yadiyan kataṅkәpana riṅ kadurjanan,</l>
+                    <l n="a">yadiyan kataṅkəpana riṅ kadurjanan,</l>
                     <l n="b">paḍananta riṅ kirakirārusit malit,</l>
                     <l n="c">niyatārebut kavah amet kapāpa ṅel,</l>
                     <l n="d">mamaṅan tahīṅ paṅisiṅan mahurhuran.</l>
@@ -1265,15 +1268,15 @@
                       </app>
                               </listApp>
                 <lg xml:id="kakavin_07.22" n="22">
-                    <l n="a">kita teki yan malәsa riṅ kadurjanan,</l>
-                    <l n="b">manugәl sukunta tinapәlnikaṅ pәlus,</l>
-                    <l n="c">manәvәr liḍahta mavәdī rәhak vatuk,</l>
-                    <l n="d">rasananta teka mara tan tәmuṅ lara.</l>
+                    <l n="a">kita teki yan maləsa riṅ kadurjanan,</l>
+                    <l n="b">manugəl sukunta tinapəlnikaṅ pəlus,</l>
+                    <l n="c">manəvər liḍahta mavədī rəhak vatuk,</l>
+                    <l n="d">rasananta teka mara tan təmuṅ lara.</l>
                 </lg>
                           <listApp type="apparatus">
                      <app loc="c">
-                      <lem wit="#EdSSA">mavәdī</lem>
-                                         <rdg wit="#EdZ">mavәdīṅ</rdg>
+                      <lem wit="#EdSSA">mavədī</lem>
+                                         <rdg wit="#EdZ">mavədīṅ</rdg>
                       </app>
                               </listApp>
             </div>
@@ -1281,34 +1284,34 @@
                 <note type="prosody">------+------=</note>
                 <!-- [14] [śakvari group; not found elsewhere in oj] -->
                 <lg xml:id="kakavin_08.01" n="1">
-                    <l n="a">kaṅariṅasana kasnika matәguh apәs,</l>
-                    <l n="b">kapanasana tikādbhuta matәguh akas,</l>
-                    <l n="c">tinisan api tumūt maṅuluri malәmәs,</l>
+                    <l n="a">kaṅariṅasana kasnika matəguh apəs,</l>
+                    <l n="b">kapanasana tikādbhuta matəguh akas,</l>
+                    <l n="c">tinisan api tumūt maṅuluri maləməs,</l>
                     <l n="d">ya tika paḍani saṅ sujana parahita,</l>
                 </lg>
                 <lg xml:id="kakavin_08.02" n="2">
-                    <l n="a">havan aradin ataṇḍәs abәcik aratā,</l>
-                    <l n="b">kasukәtan araciṅ tahi majimәt arok,</l>
+                    <l n="a">havan aradin ataṇḍəs abəcik aratā,</l>
+                    <l n="b">kasukətan araciṅ tahi majimət arok,</l>
                     <l n="c">sinapu sinasapan muvah ika maradin,</l>
-                    <l n="d">ya tika paḍani citta saṅ anәmu hayu,</l>
+                    <l n="d">ya tika paḍani citta saṅ anəmu hayu,</l>
                 </lg>
                 <lg xml:id="kakavin_08.03" n="3">
-                    <l n="a">hana vәsi riti tambaga matahitahi,</l>
-                    <l n="b">salavas ika mijil juga tәhәr atahi,</l>
+                    <l n="a">hana vəsi riti tambaga matahitahi,</l>
+                    <l n="b">salavas ika mijil juga təhər atahi,</l>
                     <l n="c">ya ta paḍaniṅ avak matahitahi mala,</l>
                     <l n="d">radinana pahayun dadi mari mahala,</l>
                 </lg>
                 <lg xml:id="kakavin_08.04" n="4">
-                    <l n="a">halanika ri dalәm dadi mәtu ri yavā,</l>
-                    <l n="b">halanika ri yavā dadi mulih i dalәm,</l>
-                    <l n="c">hiṅәtiṅәtәn ikaṅ kadi damar akәlir,</l>
+                    <l n="a">halanika ri daləm dadi mətu ri yavā,</l>
+                    <l n="b">halanika ri yavā dadi mulih i daləm,</l>
+                    <l n="c">hiṅətiṅətən ikaṅ kadi damar akəlir,</l>
                     <l n="d">hala hayuniṅ ulah paḍa mamayamaya.</l>
                 </lg>
                 <lg xml:id="kakavin_08.05" n="5">
                     <l n="a">tivas ikaṅ añale hala hayuniṅ ulah,</l>
-                    <l n="b">tivas ikaṅ aṅalәm lumәvihakәn avak,</l>
-                    <l n="c">tivas ikaṅ aṅucap tәka mamaśamaśa,</l>
-                    <l n="d">tivas ikaṅ aṅalәm kadi maṅuguṅuguṅ.</l>
+                    <l n="b">tivas ikaṅ aṅaləm luməvihakən avak,</l>
+                    <l n="c">tivas ikaṅ aṅucap təka mamaśamaśa,</l>
+                    <l n="d">tivas ikaṅ aṅaləm kadi maṅuguṅuguṅ.</l>
                 </lg>
                 <listApp type="apparatus">
                      <app loc="a">
@@ -1317,10 +1320,10 @@
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_08.06" n="6">
-                    <l n="a">hana viku maṅidan maṅiḍәri bhuvana,</l>
-                    <l n="b">makuravit agәluṅ sukәr aburarutan,</l>
-                    <l n="c">tәhәr ikana purihniṅ avak apәniṅan,</l>
-                    <l n="d">si hurip ika ya vastu sukәr aburarut.</l>
+                    <l n="a">hana viku maṅidan maṅiḍəri bhuvana,</l>
+                    <l n="b">makuravit agəluṅ sukər aburarutan,</l>
+                    <l n="c">təhər ikana purihniṅ avak apəniṅan,</l>
+                    <l n="d">si hurip ika ya vastu sukər aburarut.</l>
                 </lg>
                     <listApp type="apparatus">
                      <app loc="c">
@@ -1329,17 +1332,17 @@
                       </app>
                         </listApp>
                 <lg xml:id="kakavin_08.07" n="7">
-                    <l n="a">hana sira lumicin viku lagәna muna,</l>
-                    <l n="b">vinulatan aradin taya sukәr iṅ avak,</l>
-                    <l n="c">tuhu saka ri hәniṅnira tәka ri dalәm,</l>
-                    <l n="d">tahā si purih ikaṅ hurip aṅaṅәnaṅәn</l>
+                    <l n="a">hana sira lumicin viku lagəna muna,</l>
+                    <l n="b">vinulatan aradin taya sukər iṅ avak,</l>
+                    <l n="c">tuhu saka ri həniṅnira təka ri daləm,</l>
+                    <l n="d">tahā si purih ikaṅ hurip aṅaṅənaṅən</l>
                 </lg>
                         <listApp type="apparatus">
                      <app loc="a">
                       <lem wit="#EdZ">muna</lem>
                                          <rdg wit="#EdSSA">mūna</rdg>
                       </app>
-                            <!-- hәniṅ mavanira ri dalәm -->
+                            <!-- həniṅ mavanira ri daləm -->
                             <app loc="d">
                                 <lem type="emn">tahā</lem>
                       <rdg wit="#EdZ">taha</rdg>
@@ -1347,10 +1350,10 @@
                       </app>
                             </listApp>
                 <lg xml:id="kakavin_08.08" n="8">
-                    <l n="a">iṅәtiṅәtәn ikaṅ manәmu sukha magə̄ṅ,</l>
-                    <l n="b">rasarasana tәkapta maṅinakana rāt,</l>
+                    <l n="a">iṅətiṅətən ikaṅ manəmu sukha magə̄ṅ,</l>
+                    <l n="b">rasarasana təkapta maṅinakana rāt,</l>
                     <l n="c">vvaṅ atika pinakārgadanika śaraṇa,</l>
-                    <l n="d">niyata pamalәsanya sukha phalanika.</l>
+                    <l n="d">niyata pamaləsanya sukha phalanika.</l>
                 </lg>
                 <listApp type="apparatus">
                 <app loc="c">
@@ -1363,17 +1366,17 @@
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_08.09" n="9">
-                    <l n="a">hana viku maṅigәl macarita rinubuṅ,</l>
+                    <l n="a">hana viku maṅigəl macarita rinubuṅ,</l>
                     <l n="b">bisa tivas ika siṅ vvaṅ atika vihikan,</l>
-                    <l n="c">vvaṅ atika maṅalem ri guṇanika lәvih,</l>
+                    <l n="c">vvaṅ atika maṅalem ri guṇanika ləvih,</l>
                     <l n="d">vvaṅ atika saṅ asuṅ mamiguṇani guṇa.</l>
                 </lg>
                 <!-- siṅ vaṅa teka vihikan -->
                 <lg xml:id="kakavin_08.10" n="10">
-                    <l n="a">syapa karika vinastu lәviha ya tәmәn,</l>
+                    <l n="a">syapa karika vinastu ləviha ya təmən,</l>
                     <l n="b">masuṅa varah anugrahana kavijayan,</l>
                     <l n="c">pamulikana bhaṭāra masuṅa karatun,</l>
-                    <l n="d">saṅ aṅaran ikā siṅ vvaṅ atika vulikәn</l>
+                    <l n="d">saṅ aṅaran ikā siṅ vvaṅ atika vulikən</l>
                 </lg>
                 <!-- vara manugrahana -->
                 <listApp type="apparatus">
@@ -1383,59 +1386,59 @@
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_08.11" n="11">
-                    <l n="a">katәmu mara tәkapta manәmu kavikun,</l>
-                    <l n="b">lәkasakәna lәkasnira niravaraṇa,</l>
-                    <l n="c">kaṅ aṅinakana riṅ jana ya ta gavayәn,</l>
-                    <l n="d">phalanikaṅ aṅucap hayu tәhәr apuji.</l>
+                    <l n="a">katəmu mara təkapta manəmu kavikun,</l>
+                    <l n="b">ləkasakəna ləkasnira niravaraṇa,</l>
+                    <l n="c">kaṅ aṅinakana riṅ jana ya ta gavayən,</l>
+                    <l n="d">phalanikaṅ aṅucap hayu təhər apuji.</l>
                 </lg>
                 <lg xml:id="kakavin_08.12" n="12">
                     <l n="a">ya ta karaṇanikanaṅ viku yan apitutur,</l>
-                    <l n="b">lumipura ri laranta phalanika tәmәn,</l>
+                    <l n="b">lumipura ri laranta phalanika təmən,</l>
                     <l n="c">purih ira saṅ agə̄ṅ sukhanira kalaran,</l>
-                    <l n="d">yan anәmu lara duhkha tan ari malavas</l>
+                    <l n="d">yan anəmu lara duhkha tan ari malavas</l>
                 </lg>
                 <lg xml:id="kakavin_08.13" n="13">
-                    <l n="a">kita mara laki sampun anәmu kavikun,</l>
-                    <l n="b">vaṅunәn ikaṅ acintya ri hati muliha,</l>
+                    <l n="a">kita mara laki sampun anəmu kavikun,</l>
+                    <l n="b">vaṅunən ikaṅ acintya ri hati muliha,</l>
                     <l n="c">matutura ri bhaṭāra karaṇa sira tah,</l>
                     <l n="d">parahupana masucya ri sira satata.</l>
                 </lg>
                 <lg xml:id="kakavin_08.14" n="14">
                     <l n="a">huvus ika maradin manah alilaṅ aho,</l>
-                    <l n="b">lәkasi ta pagaventa kaṅ aṅinakana,</l>
+                    <l n="b">ləkasi ta pagaventa kaṅ aṅinakana,</l>
                     <l n="c">mapa karika manahta tulusa manusup,</l>
-                    <l n="d">tan asaraga hiḍәp mami kita sakarәṅ</l>
+                    <l n="d">tan asaraga hiḍəp mami kita sakarəṅ</l>
                 </lg>
                 <lg xml:id="kakavin_08.15" n="15">
-                    <l n="a">kunaṅ iki nayani ṅhulun iṅәtiṅәtәn,</l>
-                    <l n="b">saṅ arәjuna sireka lumәkasa tapa,</l>
+                    <l n="a">kunaṅ iki nayani ṅhulun iṅətiṅətən,</l>
+                    <l n="b">saṅ arəjuna sireka luməkasa tapa,</l>
                     <l n="c">makaphala mara tan hana maṅapakara,</l>
-                    <l n="d">tumikәla taṅaniṅ vvaṅ anuduha hala.</l>
+                    <l n="d">tumikəla taṅaniṅ vvaṅ anuduha hala.</l>
                 </lg>
                 <lg xml:id="kakavin_08.16" n="16">
-                    <l n="a">kunaṅ ikana tukar tar ala sәminika,</l>
+                    <l n="a">kunaṅ ikana tukar tar ala səminika,</l>
                     <l n="b">sulur ika pagaventa hayu raja sura,</l>
                     <l n="c">makakusuma taṅisnya makaphala pati,</l>
-                    <l n="d">rinatәṅaniṅ umah galagala ya pinə̄m,</l>
+                    <l n="d">rinatəṅaniṅ umah galagala ya pinə̄m,</l>
                 </lg>
                 <lg xml:id="kakavin_08.17" n="17">
                     <l n="a">mataṅ ika paḍa ṅadva guṇa varaśara,</l>
-                    <l n="b">hәlәm i tәkanikaṅ bharata ya vaṅunәn,</l>
+                    <l n="b">hələm i təkanikaṅ bharata ya vaṅunən,</l>
                     <l n="c">paḍa matihaṅa sañjata ya ta pahayun,</l>
-                    <l n="d">niyatanika hәlәm juga taya vuruṅa.</l>
+                    <l n="d">niyatanika hələm juga taya vuruṅa.</l>
                 </lg>
                 <lg xml:id="kakavin_08.18" n="18">
                     <l n="a">nahan ikana vuvus munivara karuṇa,</l>
-                    <l n="b">mamitәkәti ri saṅ nṛpati lima suta,</l>
-                    <l n="c">dadi ta nṛpati dharma sumahur atәgәg,</l>
-                    <l n="d">ri hilaṅ i pәtәṅ iṅ hati maluy apaḍaṅ.</l>
+                    <l n="b">mamitəkəti ri saṅ nṛpati lima suta,</l>
+                    <l n="c">dadi ta nṛpati dharma sumahur atəgəg,</l>
+                    <l n="d">ri hilaṅ i pətəṅ iṅ hati maluy apaḍaṅ.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="9" met="mālinī" xml:id="kakavin_09">
                 <note type="prosody">------+++-++-+=</note>
                 <lg xml:id="kakavin_09.01" n="1">
-                    <l n="a">tulusakәna tikuṅ sih saṅ mahāpaṇḍitārya,</l>
-                    <l n="b">ri pukulun apan evәh ṅvaṅ kәdə̄ dhīra satya,</l>
+                    <l n="a">tulusakəna tikuṅ sih saṅ mahāpaṇḍitārya,</l>
+                    <l n="b">ri pukulun apan evəh ṅvaṅ kədə̄ dhīra satya,</l>
                     <l n="c">naya ra putu maharṣi pveki maṅkin saharṣa,</l>
                     <l n="d">ri tulusani saṅ āryā phālgunāṅhyaṅ riṅ agra.</l>
                 </lg>
@@ -1446,10 +1449,10 @@
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_09.02" n="2">
-                    <l n="a">pinәkәtana ri sandijñana de saṅ munīndra,</l>
-                    <l n="b">lәkasiṅ atapa nisniṅ jñana sampun viśeṣa,</l>
+                    <l n="a">pinəkətana ri sandijñana de saṅ munīndra,</l>
+                    <l n="b">ləkasiṅ atapa nisniṅ jñana sampun viśeṣa,</l>
                     <l n="c">nāhan ikana vuvusniṅ nātha dharmātmajāsvī,</l>
-                    <l n="d">ri tulusani saṅ antәn śīghra maṅsə̄h manambah.</l>
+                    <l n="d">ri tulusani saṅ antən śīghra maṅsə̄h manambah.</l>
                 </lg>
                 <listApp type="apparatus">
                 <app loc="d">
@@ -1458,10 +1461,10 @@
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_09.03" n="3">
-                    <l n="a">mamituhu ta sirosәn saṅ kinon siṅ pakona,</l>
+                    <l n="a">mamituhu ta sirosən saṅ kinon siṅ pakona,</l>
                     <l n="b">ri sira dadi ta mojar saṅ ṛṣī nīti yogya,</l>
-                    <l n="c">riṅ ulahaniṅ acintyan dug sәḍәṅ dhyānayogi,</l>
-                    <l n="d">havarah alaniṅ ambәk bañcanākveh musuhnya.</l>
+                    <l n="c">riṅ ulahaniṅ acintyan dug səḍəṅ dhyānayogi,</l>
+                    <l n="d">havarah alaniṅ ambək bañcanākveh musuhnya.</l>
                 </lg>
                 <listApp type="apparatus">
                 <app loc="b">
@@ -1475,7 +1478,7 @@
                     </listApp>
                 <lg xml:id="kakavin_09.04" n="4">
                     <l n="a">hana ta musuh anūkṣmālit mamor iṅ hacintya,</l>
-                    <l n="b">aṅiḍәrakәn anuntun riṅ katon mogha lamlam,</l>
+                    <l n="b">aṅiḍərakən anuntun riṅ katon mogha lamlam,</l>
                     <l n="c">pinatitis iṅ alitniṅ jñāna nis tan paśeṣa,</l>
                     <l n="d">mata pinati vinaṅsul sandhiniṅ yoganidra.</l>
                 </lg>
@@ -1486,16 +1489,16 @@
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_09.05" n="5">
-                    <l n="a">gavayakәna lәkasniṅ lakṣaṇāmūdra jāpa,</l>
+                    <l n="a">gavayakəna ləkasniṅ lakṣaṇāmūdra jāpa,</l>
                     <l n="b">mata mulati lalāṭa byakta yogānta siddha,</l>
-                    <l n="c">katәmu taman inuṅsī vastuniṅ tan pavastu,</l>
-                    <l n="d">kadi laliniṅ aṅantuk lәs lәyәp riṅ kamokṣan.</l>
+                    <l n="c">katəmu taman inuṅsī vastuniṅ tan pavastu,</l>
+                    <l n="d">kadi laliniṅ aṅantuk ləs ləyəp riṅ kamokṣan.</l>
                 </lg>
                 <lg xml:id="kakavin_09.06" n="6">
                     <l n="a">kavaca śara laras len taṅkulak tan madoha,</l>
                     <l n="b">phalanika si kadhīranyan rumakṣeṅ śarīra,</l>
-                    <l n="c">sәḍәṅ iṅ avamanan deniṅ musuhteka mūrkha,</l>
-                    <l n="d">sukha pәjaha siluṅluṅ taṅkulak len laras hrū.</l>
+                    <l n="c">səḍəṅ iṅ avamanan deniṅ musuhteka mūrkha,</l>
+                    <l n="d">sukha pəjaha siluṅluṅ taṅkulak len laras hrū.</l>
                 </lg>
                 <!-- kadhīranta -->
                 <listApp type="apparatus">
@@ -1519,7 +1522,7 @@
                     <l n="a">hana ta sira maharṣi khyāti riṅ svargaloka,</l>
                     <l n="b">sira ta rata paranyan yogya vus labdhacitta,</l>
                     <l n="c">tuvi ṅaranira saṅ dvaipāyaneṅ rāt kavīryan, </l>
-                    <l n="d">sira ta vәkas i dharma hyaṅ śivan vus pralabdha.</l>
+                    <l n="d">sira ta vəkas i dharma hyaṅ śivan vus pralabdha.</l>
                 </lg>
                     <!-- sira ta mata Z var -->
                 <!-- <note>ṅkan gp</note> -->
@@ -1537,26 +1540,25 @@
                 <lg xml:id="kakavin_09.09" n="9">
                     <l n="a">nahan ikana tuduh śrī dhomya riṅ nīti yogya,</l>
                     <l n="b">rahina tuvi kamantyan tejaniṅ sūrya tumraṅ,</l>
-                    <l n="c">gagaṇa kadi sinapvan taṅ pәtәṅ tan paśeṣa,</l>
+                    <l n="c">gagaṇa kadi sinapvan taṅ pətəṅ tan paśeṣa,</l>
                     <l n="d">kadi manah i saṅ amvit maṅkatāṅhyaṅ riṅ agra.</l>
                 </lg>
                 <lg xml:id="kakavin_09.10" n="10">
-                    <l n="a">dadi ta sira madandan saṅ tәlas labdhacitta,</l>
-                    <l n="b">praṇata tәlas amuspeṅ saṅ mahāpaṇḍitārya,</l>
-                    <l n="c">ibunira sira vinvit luhnirādrәs tan ampәt,</l>
-                    <l n="d">kadi tәhәra tan antuk denirāpan katrәsnan.</l>
+                    <l n="a">dadi ta sira madandan saṅ təlas labdhacitta,</l>
+                    <l n="b">praṇata təlas amuspeṅ saṅ mahāpaṇḍitārya,</l>
+                    <l n="c">ibunira sira vinvit luhnirādrəs tan ampət,</l>
+                    <l n="d">kadi təhəra tan antuk denirāpan katrəsnan.</l>
                 </lg>
                 <listApp type="apparatus">
                 <app loc="b">
-                        <lem type="emn">tәlas amuspeṅ</lem>
-                        <rdg>tәlas amuṣpeṅ</rdg>
-                      <rdg wit="#EdZ">tәlas amukṣe</rdg>
-                                         <rdg wit="#EdSSA">tәlasa musseṅ</rdg>
+                        <lem type="emn">təlas amuṣpeṅ</lem>
+                      <rdg wit="#EdZ">təlas amukṣe</rdg>
+                                         <rdg wit="#EdSSA">təlasa musseṅ</rdg>
                 </app>
                     </listApp>
                 <lg xml:id="kakavin_09.11" n="11">
                     <l n="a">anaku yanaku māsku ṅke lah uṅsuṅku śīghra,</l>
-                    <l n="b">ṅhulun umulat amәṅpə̄ṅ dak pahāvas ta putra,</l>
+                    <l n="b">ṅhulun umulat aməṅpə̄ṅ dak pahāvas ta putra,</l>
                     <l n="c">mapa tika vuvusaṅkvā māsku tan vruhku mojar,</l>
                     <l n="d">ri kita laki savetniṅ tībra deniṅ larāgə̄ṅ.</l>
                 </lg>
@@ -1576,9 +1578,9 @@
                     </listApp>
                 <lg xml:id="kakavin_09.12" n="12">
                     <l n="a">nahan ikana pasuṅkvā mah tikaṅ vastra taṅgap,</l>
-                    <l n="b">kәmulani tanayaṅkv āṅhiṅ pavehniṅ kahīnan, <note>kadinan gp</note></l>
-                    <l n="c">anaku laki pahenak mah sәpah ṅke vajaṅku,</l>
-                    <l n="d">vacananira maper luh nityā madrәs tan ampәt.</l>
+                    <l n="b">kəmulani tanayaṅkv āṅhiṅ pavehniṅ kahīnan, <note>kadinan gp</note></l>
+                    <l n="c">anaku laki pahenak mah səpah ṅke vajaṅku,</l>
+                    <l n="d">vacananira maper luh nityā madrəs tan ampət.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="10" met="vasantatilakā" xml:id="kakavin_10">
@@ -1586,14 +1588,14 @@
                 <lg xml:id="kakavin_10.01" n="1">
                     <l n="a">tan ṅeh tikaṅ lara yadin caritan bhaṭārī,</l>
                     <l n="b">sampun saṅ ārya mamuhun ri narendraputra,</l>
-                    <l n="c">saṅ dharmaputra humәnәṅ magәgәh katīkṣṇan,</l>
-                    <l n="d">luh nityaśāmilihilī ri pipi dravādrәs.</l>
+                    <l n="c">saṅ dharmaputra humənəṅ magəgəh katīkṣṇan,</l>
+                    <l n="d">luh nityaśāmilihilī ri pipi dravādrəs.</l>
                 </lg>
                 <lg xml:id="kakavin_10.02" n="2">
-                    <l n="a">mojar siraṅisәkisәk sәsәgәn tan ampәt,</l>
-                    <l n="b">antәnku saṅ tulusa siddha ri pāda saṅ hyaṅ,</l>
-                    <l n="c">eṅәt kitāntәn i vuvusnira saṅ mahārṣi,</l>
-                    <l n="d">lāvan kayatnakәna nitya tikaṅ samādhi.</l>
+                    <l n="a">mojar siraṅisəkisək səsəgən tan ampət,</l>
+                    <l n="b">antənku saṅ tulusa siddha ri pāda saṅ hyaṅ,</l>
+                    <l n="c">eṅət kitāntən i vuvusnira saṅ mahārṣi,</l>
+                    <l n="d">lāvan kayatnakəna nitya tikaṅ samādhi.</l>
                 </lg>
                 <listApp type="apparatus">
                  <app loc="d">
@@ -1604,31 +1606,31 @@
                 <lg xml:id="kakavin_10.03" n="3">
                     <l n="a">nā liṅ narendra saha luhnira pan katṛṣṇan,</l>
                     <l n="b">mamvit muvah sira ri saṅ vara bhīmasena,</l>
-                    <l n="c">saṅ bhīma yeka mahivaṅ panaṅisnya ṅәmbe,</l>
-                    <l n="d">lvir minda riṅ tәgal ayun malajәṅ kavarṣan.</l>
+                    <l n="c">saṅ bhīma yeka mahivaṅ panaṅisnya ṅəmbe,</l>
+                    <l n="d">lvir minda riṅ təgal ayun malajəṅ kavarṣan.</l>
                 </lg>
                 <lg xml:id="kakavin_10.04" n="4">
                     <l n="a">maṅkin taṅis pavanaputra maṅantugantug,</l>
-                    <l n="b">umbәl mijil gidәgidə̄ riṅ iruṅ ya madrәs,</l>
-                    <l n="c">lāvan ta lәtnya kumәlus mabaṅə̄r vәtunya,</l>
-                    <l n="d">kompol katon tan inivə̄ tәkapiṅ larāgə̄ṅ.</l>
+                    <l n="b">umbəl mijil gidəgidə̄ riṅ iruṅ ya madrəs,</l>
+                    <l n="c">lāvan ta lətnya kuməlus mabaṅə̄r vətunya,</l>
+                    <l n="d">kompol katon tan inivə̄ təkapiṅ larāgə̄ṅ.</l>
                 </lg>
                  <listApp type="apparatus">
                  <app loc="c">
-                      <lem wit="#EdSSA">lәtnya</lem>
+                      <lem wit="#EdSSA">lətnya</lem>
                                          <rdg wit="#EdZ">lotnya</rdg>
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_10.05" n="5">
                     <l n="a">tan ṅeh taṅisnya caritan pravarārya bhīma,</l>
                     <l n="b">saṅ phālguneki mamuhun ri saṅ āri karva,</l>
-                    <l n="c">saṅ dropadi sira ta rūkṣa rapuh kalәsvan,</l>
-                    <l n="d">śokānaṅis maṅiḍupuk sira yan panәmbah.</l>
+                    <l n="c">saṅ dropadi sira ta rūkṣa rapuh kaləsvan,</l>
+                    <l n="d">śokānaṅis maṅiḍupuk sira yan panəmbah.</l>
                 </lg>
                 <listApp type="apparatus">
                  <app loc="a">
                       <lem wit="#EdSSA">ṅeh</lem>
-                                         <rdg wit="#EdZ">ṅәh</rdg>
+                                         <rdg wit="#EdZ">ṅəh</rdg>
                       </app>
                     <app loc="c">
                         <lem type="emn">dropadi</lem>
@@ -1641,27 +1643,27 @@
                       </app>
                     </listApp>
                 <lg xml:id="kakavin_10.06" n="6">
-                    <l n="a">saṅ phālguneki manaṅis maṅadәg sinәmbah,</l>
-                    <l n="b">kepvan ta cittanira denya maśabda maṅrәs,</l>
-                    <l n="c">yekāmukәt pinakaśatru tәkapniṅ amrih,</l>
-                    <l n="d">hetunya yan kapihәnәṅ sira denya kepvan.</l>
+                    <l n="a">saṅ phālguneki manaṅis maṅadəg sinəmbah,</l>
+                    <l n="b">kepvan ta cittanira denya maśabda maṅrəs,</l>
+                    <l n="c">yekāmukət pinakaśatru təkapniṅ amrih,</l>
+                    <l n="d">hetunya yan kapihənəṅ sira denya kepvan.</l>
                 </lg>
                 <lg xml:id="kakavin_10.07" n="7">
                     <l n="a">siṅgih ḍaḍuṅ pinakapāśanikaṅ kamokṣan,</l>
-                    <l n="b">tṛṣṇā jugāgavaya sih mamilәt riṅ aṅga,</l>
+                    <l n="b">tṛṣṇā jugāgavaya sih mamilət riṅ aṅga,</l>
                     <l n="c">vyaktinya yan dadi śarīra muvah kabhāva,</l>
                     <l n="d">ṣaḍmārga yeka dadi riṅ dadi mogha tṛṣṇa.</l>
                 </lg>
                 <lg xml:id="kakavin_10.08" n="8">
-                    <l n="a">maṅkin ta kāṅәn i halanya yadin katūta,</l>
-                    <l n="b">marmanya śīrṇa pinәgatnira riṅ kadhīran,</l>
+                    <l n="a">maṅkin ta kāṅən i halanya yadin katūta,</l>
+                    <l n="b">marmanya śīrṇa pinəgatnira riṅ kadhīran,</l>
                     <l n="c">śāntā sahiṣṇu pamunahnira tan paśeṣa,</l>
                     <l n="d">hetunya śīrṇa malilaṅ dadi citta mahniṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_10.09" n="9">
-                    <l n="a">maṅkat sirātәlas abhūṣaṇa ratna mabhrā,</l>
+                    <l n="a">maṅkat sirātəlas abhūṣaṇa ratna mabhrā,</l>
                     <l n="b">lāvan sasañjata kabeh paḍa nora kantun,</l>
-                    <l n="c">luṅhā sirāṅinakinak tәka riṅ pradeśa,</l>
+                    <l n="c">luṅhā sirāṅinakinak təka riṅ pradeśa,</l>
                     <l n="d">akveh tikaṅ vinulatan magave praharṣa.</l>
                 </lg>
             </div>
@@ -1732,7 +1734,7 @@
                 <listApp type="apparatus">
                <app loc="d">
  	<lem wit="#EdZ">mabulakana</lem>
-      	<rdg wit="#EdSSA">mabulakәna</rdg>
+      	<rdg wit="#EdSSA">mabulakəna</rdg>
  </app>
  </listApp>
                 
@@ -1775,11 +1777,11 @@
                     <l n="b">samy ādan maṅadəg təlas lumaku tan hana maṅavara rāmya tūt havan</l>
                     <l n="c">məntas riṅ valahar matīrtha sira sampun arahup aradin tikuṅ hala</l>
                     <!-- EdZ stops here -->
-                    <l n="d">tūt mārga hana siṅgulan lәbalәban kamaṅi kapur avor pakis ḍaḍu.</l>
+                    <l n="d">tūt mārga hana siṅgulan ləbaləban kamaṅi kapur avor pakis ḍaḍu.</l>
                 </lg>
                 <lg xml:id="kakavin_11.14" n="14">
-                    <l n="a">garyaṅgaryaṅ ikaṅ tәgal kakacәman valikat upama vor kataṅkataṅ,</l>
-                    <l n="b">sәmbuṅ got kucubuṅ mavor pilapilū kutukutu kulurak lәpaṅ pahit,</l>
+                    <l n="a">garyaṅgaryaṅ ikaṅ təgal kakacəman valikat upama vor kataṅkataṅ,</l>
+                    <l n="b">səmbuṅ got kucubuṅ mavor pilapilū kutukutu kulurak ləpaṅ pahit,</l>
                     <l n="c">paṅgil paṅgaga siṅkaban lavanlavan hana nanavidharā tapak liman,</l>
                     <l n="d">lundāluṅ kalavan galiṅ lumalay iṅ vaduri lalavatan paḍāsinaṅ.</l>
                 </lg>
@@ -1788,48 +1790,48 @@
                 <note type="prosody">--+-+---+------+-+-=</note>
                 <lg xml:id="kakavin_12.01" n="1">
                     <l n="a">sakaton paḍāmuhara rāmya ri havanira tan madoh dahat,</l>
-                    <l n="b">pagagan hañar binabadan pagәr ika rinurah tәkeṅ havan</l>
-                    <l n="c">inalih tәhәr sinariban hana tilas ika vetan iṅ pagәr</l>
-                    <l n="d">ya tinūt nirāṅinakinak duruṅ agәmәt apan havan hañar</l>
+                    <l n="b">pagagan hañar binabadan pagər ika rinurah təkeṅ havan</l>
+                    <l n="c">inalih təhər sinariban hana tilas ika vetan iṅ pagər</l>
+                    <l n="d">ya tinūt nirāṅinakinak duruṅ agəmət apan havan hañar</l>
                 </lg>
                 <lg xml:id="kakavin_12.02" n="2">
-                    <l n="a">maṅalor muvah katәmu mūlani havanira tan madoh dahat</l>
-                    <l n="b">sinamarsamar pagәr ikājajar amәnәr atūt havan magə̄ṅ</l>
-                    <l n="c">agәnәt ḍukutnya maradin sarisari havan iṅ tәkeṅ vukir,</l>
-                    <l n="d">galagah kidulnika tinunvan avurahanikaṅ manuk mibәr.</l>
+                    <l n="a">maṅalor muvah katəmu mūlani havanira tan madoh dahat</l>
+                    <l n="b">sinamarsamar pagər ikājajar amənər atūt havan magə̄ṅ</l>
+                    <l n="c">agənət ḍukutnya maradin sarisari havan iṅ təkeṅ vukir,</l>
+                    <l n="d">galagah kidulnika tinunvan avurahanikaṅ manuk mibər.</l>
                 </lg>
                 <lg xml:id="kakavin_12.03" n="3">
-                    <l n="a">malәsat valaṅnya ya manūt kukus amarәki riṅ sukәtsukәt,</l>
+                    <l n="a">maləsat valaṅnya ya manūt kukus amarəki riṅ sukətsukət,</l>
                     <l n="b">garagat manamber aṅusī ḍaliḍali manucuk valaṅ kiṭik,</l>
                     <l n="c">barabat barā mahurahan gulunika masavit valaṅ gayār,</l>
-                    <l n="d">umәnәṅ caṅaknya mavәdi raray aṅaruhi riṅ tәgal humuṅ.</l>
+                    <l n="d">umənəṅ caṅaknya mavədi raray aṅaruhi riṅ təgal humuṅ.</l>
                 </lg>
                 <!-- valaṅnika manūt ... mavurahan (same meaning in Z s.v. vurah, hurah) -->
                 <lg xml:id="kakavin_12.04" n="4">
-                    <l n="a">halivat sirerika sumәṅka ta lakunira tan madoh dahat,</l>
-                    <l n="b">pagagan sәḍәṅ vinulatan tanәmanika kabeh paḍāhijo,</l>
-                    <l n="c">jalureh lavan kacaṅ uris tәpinika masinaṅ bayәm suluh,</l>
+                    <l n="a">halivat sirerika suməṅka ta lakunira tan madoh dahat,</l>
+                    <l n="b">pagagan səḍəṅ vinulatan tanəmanika kabeh paḍāhijo,</l>
+                    <l n="c">jalureh lavan kacaṅ uris təpinika masinaṅ bayəm suluh,</l>
                     <l n="d">kamale valuh paḍa lumuṅ karavila mabiluṅkahan timun.</l>
                 </lg>
                 <lg xml:id="kakavin_12.05" n="5">
                     <l n="a">jinajarjajar jalih ikaṅ jalu jura juvavut jabuṅ jarak,</l>
-                    <l n="b">cipakan hirәṅ muṣika tumbara kәsura jasun putih laja,</l>
-                    <l n="c">salarik jasun mirah avor pacar adilәm arok bayәm kakap,</l>
+                    <l n="b">cipakan hirəṅ muṣika tumbara kəsura jasun putih laja,</l>
+                    <l n="c">salarik jasun mirah avor pacar adiləm arok bayəm kakap,</l>
                     <l n="d">sulasih kidulnya manisih patula paliṣa len kacaṅ hijo.</l>
                 </lg>
                 <lg xml:id="kakavin_12.06" n="6">
-                    <l n="a">kahalintaṅan tәkap irān panәmu tarukaniṅ siluksiluk,</l>
-                    <l n="b">mapabañvan endah alaṅə̄ vuninika magulaṅgulaṅ pәtuṅ,</l>
-                    <l n="c">tinanәm tikaṅ kayu puriṅ jinajar i tәpiniṅ pagәrpagәr,</l>
+                    <l n="a">kahalintaṅan təkap irān panəmu tarukaniṅ siluksiluk,</l>
+                    <l n="b">mapabañvan endah alaṅə̄ vuninika magulaṅgulaṅ pətuṅ,</l>
+                    <l n="c">tinanəm tikaṅ kayu puriṅ jinajar i təpiniṅ pagərpagər,</l>
                     <l n="d">mayanāsinaṅ vuṅa talinya vuṅa vari mabāṅ hanāputih.</l>
                 </lg>
                 <!-- mapabānyvan -->
                 <listApp type="apparatus"><app loc="b"><lem type="emn">mapabañvan</lem><rdg wit="#EdSSA">mapabānyan</rdg></app></listApp>
                 <lg xml:id="kakavin_12.07" n="7">
-                    <l n="a">maṅalor sirānәmu gәgәr śavayanikaṅ alas taluntalun,</l>
-                    <l n="b">ri lurah lәbak pasavahan bañunika maputih katiṅhalan,</l>
+                    <l n="a">maṅalor sirānəmu gəgər śavayanikaṅ alas taluntalun,</l>
+                    <l n="b">ri lurah ləbak pasavahan bañunika maputih katiṅhalan,</l>
                     <l n="c">masamīpa pə̄h pisaṅ alas nalikira hana riṅ juraṅjuraṅ,</l>
-                    <l n="d">halalәh tinolih alaṅə̄ maṅәḍapәḍap ikaṅ valīkaḍәp.</l>
+                    <l n="d">halaləh tinolih alaṅə̄ maṅəḍapəḍap ikaṅ valīkaḍəp.</l>
                 </lg>
                <listApp type="apparatus"><app loc="b">
  	<lem wit="#EdSSA">tiniṅhalan</lem>
@@ -1841,90 +1843,90 @@
  </app>
 </listApp>
                 <lg xml:id="kakavin_12.08" n="8">
-                    <l n="a">maṅavetaniṅ gәgәr ikaṅ lakuni sira sumәṅka riṅ gunuṅ,</l>
-                    <l n="b">irikaṅ katon gәmәn alas vinulatan iṅuṅaṅ tikaṅ kidul,</l>
-                    <l n="c">daśadeśaniṅ nagara tan katәṅәr i paṅasutnikaṅ limut,</l>
-                    <l n="d">dinәlәṅ baṅun tan aratā lәmah ika kadi toyaniṅ tasik.</l>
+                    <l n="a">maṅavetaniṅ gəgər ikaṅ lakuni sira suməṅka riṅ gunuṅ,</l>
+                    <l n="b">irikaṅ katon gəmən alas vinulatan iṅuṅaṅ tikaṅ kidul,</l>
+                    <l n="c">daśadeśaniṅ nagara tan katəṅər i paṅasutnikaṅ limut,</l>
+                    <l n="d">dinələṅ baṅun tan aratā ləmah ika kadi toyaniṅ tasik.</l>
                 </lg>
                 <lg xml:id="kakavin_12.09" n="9">
                     <l n="a">patapan kapaṅgih alaṅə̄ havan ika titir olihiṅ mahas,</l>
-                    <l n="b">kabaṅәt kalinyan mamәluk lagi manucul i sandiniṅ tapih,</l>
-                    <l n="c">haradin puḍaknika bañar pinaraban anilib tәkeṅ kulәm,</l>
-                    <l n="d">vulakan pilih panulikan hana sәmi kadi layvaniṅ gәluṅ.</l>
+                    <l n="b">kabaṅət kalinyan maməluk lagi manucul i sandiniṅ tapih,</l>
+                    <l n="c">haradin puḍaknika bañar pinaraban anilib təkeṅ kuləm,</l>
+                    <l n="d">vulakan pilih panulikan hana səmi kadi layvaniṅ gəluṅ.</l>
                 </lg>
                 <listApp type="apparatus"><app loc="b"><lem type="emn">kalinyan</lem><rdg wit="#EdSSA">kalinya</rdg></app></listApp>
                 <lg xml:id="kakavin_12.10" n="10">
-                    <l n="a">hana tāhanaṅ katәmu riṅ havan alalәh aliṅgih iṅ vatu,</l>
-                    <l n="b">paṅadeśani ṅvaṅ umulat kәtәkәtәg ika mār sumamburat,</l>
-                    <l n="c">haṅagәm ḍuhuṅ lakinikā saṅ anakәbi ya tātapih sabuk,</l>
-                    <l n="d">kataraṅgul adbhuta tumon sira paḍa murәṅaṅ parәṅ madәg.</l>
+                    <l n="a">hana tāhanaṅ katəmu riṅ havan alaləh aliṅgih iṅ vatu,</l>
+                    <l n="b">paṅadeśani ṅvaṅ umulat kətəkətəg ika mār sumamburat,</l>
+                    <l n="c">haṅagəm ḍuhuṅ lakinikā saṅ anakəbi ya tātapih sabuk,</l>
+                    <l n="d">kataraṅgul adbhuta tumon sira paḍa murəṅaṅ parəṅ madəg.</l>
                 </lg>
                 <lg xml:id="kakavin_12.11" n="11">
                     <l n="a">alivatnirerika katon ta sukusukunikaṅ gunuṅ magə̄ṅ,</l>
-                    <l n="b">masәkar tikaṅ kayu palāśa kadi gunuṅ apuy katon murub,</l>
-                    <l n="c">hasanālәvas kadi hudan kanaka ḍumavuh iṅ lәmah marūm,</l>
-                    <l n="d">mariris rәbuk saha kilat vәlas harәp amulәt katon lumuṅ.</l>
+                    <l n="b">masəkar tikaṅ kayu palāśa kadi gunuṅ apuy katon murub,</l>
+                    <l n="c">hasanāləvas kadi hudan kanaka ḍumavuh iṅ ləmah marūm,</l>
+                    <l n="d">mariris rəbuk saha kilat vəlas harəp amulət katon lumuṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_12.12" n="12">
                     <l n="a">mapasarpasar savaṅ ikā vukir amavā laṅə̄nya yan katon,</l>
-                    <l n="b">maḍasar gaḍuṅ mәnur avor katirah aravayan matūt havan,</l>
-                    <l n="c">matihaṅ lurukluruk aśoka dәlima mavade tahәn manis,</l>
-                    <l n="d">dagaṅanya sarvaphala yeki viphala vәḍәtan hanāñar.</l>
+                    <l n="b">maḍasar gaḍuṅ mənur avor katirah aravayan matūt havan,</l>
+                    <l n="c">matihaṅ lurukluruk aśoka dəlima mavade tahən manis,</l>
+                    <l n="d">dagaṅanya sarvaphala yeki viphala vəḍətan hanāñar.</l>
                 </lg>
                 <lg xml:id="kakavin_12.13" n="13">
-                    <l n="a">pujiyan lәvih phalanikaṅ vukir avuni salakanya yan tasak,</l>
-                    <l n="b">hanamar mәtah vila lumutnya pisaṅ ika tumuṅkul iṅ havan,</l>
-                    <l n="c">kamiris ratәṅ kacapi juṅga masinaṅ atәguh taman rurū,</l>
-                    <l n="d">hana duryan aṅruhuriṅ ambavaṅ ika mapagәh paḍālurus.</l>
+                    <l n="a">pujiyan ləvih phalanikaṅ vukir avuni salakanya yan tasak,</l>
+                    <l n="b">hanamar mətah vila lumutnya pisaṅ ika tumuṅkul iṅ havan,</l>
+                    <l n="c">kamiris ratəṅ kacapi juṅga masinaṅ atəguh taman rurū,</l>
+                    <l n="d">hana duryan aṅruhuriṅ ambavaṅ ika mapagəh paḍālurus.</l>
                 </lg>
                 <lg xml:id="kakavin_12.14" n="14">
-                    <l n="a">sakaton tәkapnira baṅun tan anumata ruhurnikaṅ kayu,</l>
-                    <l n="b">hatugәl juraṅni kalukat bañunika lumәvih mareṅ kali,</l>
-                    <l n="c">pujiyan paḍāṅrәs ikanaṅ paraṅ apiṅit aroṅ dalәmnikā,</l>
-                    <l n="d">hamunah sәkar barat ikāṅhalani ri sapanāndhiṅiṅ vuṅu.</l>
+                    <l n="a">sakaton təkapnira baṅun tan anumata ruhurnikaṅ kayu,</l>
+                    <l n="b">hatugəl juraṅni kalukat bañunika luməvih mareṅ kali,</l>
+                    <l n="c">pujiyan paḍāṅrəs ikanaṅ paraṅ apiṅit aroṅ daləmnikā,</l>
+                    <l n="d">hamunah səkar barat ikāṅhalani ri sapanāndhiṅiṅ vuṅu.</l>
                 </lg>
                 <lg xml:id="kakavin_12.15" n="15">
-                    <l n="a">tumurun sirerika katon lәbak ika hana simpaṅ iṅ hәnu,</l>
-                    <l n="b">humәnәṅ vatunya hulatәn ri lavas ika panambir iṅ kayu,</l>
-                    <l n="c">hatuhākәpuh vahu mataṅkil amasah i sarenikaṅ juraṅ,</l>
-                    <l n="d">pasaṅan lәlәh lәvas amaṅku kamatamata tuṅgakiṅ pәtuṅ.</l>
+                    <l n="a">tumurun sirerika katon ləbak ika hana simpaṅ iṅ hənu,</l>
+                    <l n="b">humənəṅ vatunya hulatən ri lavas ika panambir iṅ kayu,</l>
+                    <l n="c">hatuhākəpuh vahu mataṅkil amasah i sarenikaṅ juraṅ,</l>
+                    <l n="d">pasaṅan lələh ləvas amaṅku kamatamata tuṅgakiṅ pətuṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_12.16" n="16">
-                    <l n="a">i samīpa vaṅkay iṅ apeki ta kunaṅ ahariṅ turuṅ lәvas,</l>
+                    <l n="a">i samīpa vaṅkay iṅ apeki ta kunaṅ ahariṅ turuṅ ləvas,</l>
                     <l n="b">hana valkalātulak alī kupina kayu lavan valuh tutub,</l>
                     <l n="c">viku ganya saṅ mati pilih maṅaluśa tumurun sakeṅ vukir,</l>
-                    <l n="d">paṅadeśani ṅvaṅ umulat rāga sapi kulavuk hibәk cacah.</l>
+                    <l n="d">paṅadeśani ṅvaṅ umulat rāga sapi kulavuk hibək cacah.</l>
                 </lg>
                 <lg xml:id="kakavin_12.17" n="17">
-                    <l n="a">hasamun hәnunya maṅalor ya ta havanira tūt alas magə̄ṅ,</l>
-                    <l n="b">asuṅәb sumə̄ṅ kayu rumambay avilәt arukәt lavan latā,</l>
+                    <l n="a">hasamun hənunya maṅalor ya ta havanira tūt alas magə̄ṅ,</l>
+                    <l n="b">asuṅəb sumə̄ṅ kayu rumambay avilət arukət lavan latā,</l>
                     <l n="c">sirarānamun tapak ikaṅ kidaṅ adulur umaṅsul iṅ juraṅ,</l>
-                    <l n="d">muni tәp macanya hana riṅ sukәsukәt amarәki riṅ rәnәk.</l>
+                    <l n="d">muni təp macanya hana riṅ sukəsukət amarəki riṅ rənək.</l>
                 </lg>
                 <lg xml:id="kakavin_12.18" n="18">
-                    <l n="a">arәnәb hi sor kadi guhā tәkapiṅ aruṇa tan katon dahat,</l>
-                    <l n="b">haradin ta yaṅ ḍukut alit mati tәkap i patapnikaṅ sukәt,</l>
-                    <l n="c">kasilib kuciṅnya mamanek phala mamucak iliṅ vәsah tәpus,</l>
-                    <l n="d">kapitūt tәkeṅ vana lumuṅ maṅalaya manuduhnuduh tavaṅ.</l>
+                    <l n="a">arənəb hi sor kadi guhā təkapiṅ aruṇa tan katon dahat,</l>
+                    <l n="b">haradin ta yaṅ ḍukut alit mati təkap i patapnikaṅ sukət,</l>
+                    <l n="c">kasilib kuciṅnya mamanek phala mamucak iliṅ vəsah təpus,</l>
+                    <l n="d">kapitūt təkeṅ vana lumuṅ maṅalaya manuduhnuduh tavaṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_12.19" n="19">
-                    <l n="a">halivat nireka sumәṅkā ta lakunira rāmya tūt hiriṅ,</l>
-                    <l n="b">ri lәbaklәbaknya tan adoh vara kayu gumuliṅ lakar hañar,</l>
-                    <l n="c">mapaḍaṅ kidulnya babadan hana kadi patapan kacuntәnan,</l>
-                    <l n="d">muni poṅ kәpoṅ svaranikaṅ pamalumalu lavan tabaṅtabaṅ.</l>
+                    <l n="a">halivat nireka suməṅkā ta lakunira rāmya tūt hiriṅ,</l>
+                    <l n="b">ri ləbakləbaknya tan adoh vara kayu gumuliṅ lakar hañar,</l>
+                    <l n="c">mapaḍaṅ kidulnya babadan hana kadi patapan kacuntənan,</l>
+                    <l n="d">muni poṅ kəpoṅ svaranikaṅ pamalumalu lavan tabaṅtabaṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_12.20" n="20">
-                    <l n="a">ndā nihan kapaṅgih ikanaṅ patani lәvas avūk hatәpnikā,</l>
-                    <l n="b">vulәtan gigal katuruhan hana parab ika matra tan lәbur,</l>
-                    <l n="c">kakavin lutūr hana ta śeṣanika mapitәṅәt samarsamar,</l>
-                    <l n="d">suhunanya mesi ri lavasnya hana viku maṅambareṅ lәmah.</l>
+                    <l n="a">ndā nihan kapaṅgih ikanaṅ patani ləvas avūk hatəpnikā,</l>
+                    <l n="b">vulətan gigal katuruhan hana parab ika matra tan ləbur,</l>
+                    <l n="c">kakavin lutūr hana ta śeṣanika mapitəṅət samarsamar,</l>
+                    <l n="d">suhunanya mesi ri lavasnya hana viku maṅambareṅ ləmah.</l>
                 </lg>
                 <listApp type="apparatus"><app loc="a"><lem type="emn">patani</lem><rdg wit="#EdSSA">pathani</rdg></app></listApp>
                 <lg xml:id="kakavin_12.21" n="21">
-                    <l n="a">ri havanya rāmya majajar kaniri kayu puriṅ tahәn manis,</l>
-                    <l n="b">kamuniṅ lavan kayu kuniṅ parajita marurub vәlas harәp</l>
+                    <l n="a">ri havanya rāmya majajar kaniri kayu puriṅ tahən manis,</l>
+                    <l n="b">kamuniṅ lavan kayu kuniṅ parajita marurub vəlas harəp</l>
                     <l n="c">tinatā tinumpa tinapan vatu havan ika tūt hiriṅhiriṅ</l>
-                    <l n="d">tinalaṅnalaṅ bañunikā murus anәrusaniṅ juraṅjuraṅ</l>
+                    <l n="d">tinalaṅnalaṅ bañunikā murus anərusaniṅ juraṅjuraṅ</l>
                 </lg>
             </div>
             
@@ -2011,10 +2013,10 @@
                     <l n="d">riṅariṅanikuṅ ambək tan tuhvāni kaviratin</l>
                 </lg>
                 <listApp type="apparatus">
-                    <app loc="a"><lem wit="#EdSSA">alәmәh</lem><rdg wit="#EdZ">alәmәn</rdg></app>
+                    <app loc="a"><lem wit="#EdSSA">aləməh</lem><rdg wit="#EdZ">aləmən</rdg></app>
                 </listApp>
             </div>
-            <!-- stop 20 april 2023 -->
+
             <div type="canto" rend="met" n="14" met="kusumavilasita" xml:id="kakavin_14">
                 <note type="prosody">+--+-+---+------+-+-=</note>
                 <lg xml:id="kakavin_14.01" n="1">
@@ -2051,7 +2053,7 @@
                     <l n="d">ndan kadi buddhiniṅ lumihat iṅ haləsəs ika manahnire daləm</l>
                 </lg>
                  <listApp type="apparatus">
-                    <app loc="b"><lem wit="#EdZ">meraṅ an</lem><rdg wit="#EdSSA">meraṅәn</rdg></app>
+                    <app loc="b"><lem wit="#EdZ">meraṅ an</lem><rdg wit="#EdSSA">meraṅən</rdg></app>
                 </listApp>
                 <lg xml:id="kakavin_14.05" n="5">
                     <l n="a">byakta saṅ arjuneki ri hiḍəpnira ri hati nihan paṅavruha</l>
@@ -2202,7 +2204,7 @@
                     <l n="d">“kadi hana tan kəne pati ṅaranya yāvat ahurip.</l>
                 </lg>
                 <listApp type="apparatus">
-                    <app loc="d"><lem wit="#EdZ">kәne</lem><rdg wit="#EdSSA">kәneṅ</rdg></app>
+                    <app loc="d"><lem wit="#EdZ">kəne</lem><rdg wit="#EdSSA">kəneṅ</rdg></app>
                 </listApp>
                 <lg xml:id="kakavin_15.12" n="12">
                     <l n="a">. “paməṅaməṅan tikaṅ sukha bhinukti yan vruh atika</l>
@@ -2247,7 +2249,6 @@
                     <l n="d">ndan ikaṅ mata tan kəjəp aṅaṅənaṅən</l>
                 </lg>
             </div>
-            <!-- stop 22 april 2023 -->
             <div type="canto" rend="met" n="17" met="jagaddhita" xml:id="kakavin_17">
                 <note type="prosody">+++--+-+---+------+-+-=</note>
                 <lg xml:id="kakavin_17.01" n="1">
@@ -2257,7 +2258,7 @@
                     <l n="d">yāṅdagdhātəmahan taṅis kadi taṅisniṅ inalapan i tapvaniṅ gati</l>
                 </lg>
                 <listApp type="apparatus">
-                    <app loc="c"><lem wit="#EdZ">kāṅәn</lem><rdg wit="#EdSSA">kāṅen</rdg></app>
+                    <app loc="c"><lem wit="#EdZ">kāṅən</lem><rdg wit="#EdSSA">kāṅen</rdg></app>
                 </listApp>
                 <lg xml:id="kakavin_17.02" n="2">
                     <l n="a">ləṅləṅ saṅ nṛpaputra riṅ tvasira kepvaniṅ ulaha savaṅ kuraṅ tutur</l>
@@ -2345,8 +2346,8 @@
                 </lg>
                     <listApp type="apparatus">
                         <app loc="b">
-                            <lem wit="#EdZ">anūṅakәn</lem>
-                            <rdg wit="#EdSSA">anuṅhakәn</rdg>
+                            <lem wit="#EdZ">anūṅakən</lem>
+                            <rdg wit="#EdSSA">anuṅhakən</rdg>
                         </app>
                     </listApp>
                 <lg xml:id="kakavin_18.05" n="5">
@@ -2368,7 +2369,7 @@
                             <rdg wit="#EdSSA">sugyan</rdg>
                         </app>
                         <app loc="d">
-                            <lem wit="#EdZ">pinakasuvәṅ</lem>
+                            <lem wit="#EdZ">pinakasuvəṅ</lem>
                             <rdg wit="#EdSSA">pinakasuveṅ</rdg>
                         </app>
                     </listApp>
@@ -2400,7 +2401,7 @@
                     <listApp type="apparatus">
                          <app loc="b">
                             <lem wit="#EdZ">karika paṅhiḍəp tanayaniṅ</lem>
-                            <rdg wit="#EdSSA">ta ri kapāṅiḍәpta naya niṅ</rdg>
+                            <rdg wit="#EdSSA">ta ri kapāṅiḍəpta naya niṅ</rdg>
                         </app>
                     </listApp>
                 <lg xml:id="kakavin_18.10" n="10">
@@ -2415,8 +2416,8 @@
                             <rdg wit="#EdSSA">karuṇā nikaṅ kaśantana nikaṅ</rdg>
                         </app>
                          <app loc="d">
-                            <lem wit="#EdZ">kavәnaṅan i</lem>
-                            <rdg wit="#EdSSA">kavәnaṅan iṅ</rdg>
+                            <lem wit="#EdZ">kavənaṅan i</lem>
+                            <rdg wit="#EdSSA">kavənaṅan iṅ</rdg>
                         </app>
                     </listApp>
                 <lg xml:id="kakavin_18.11" n="11">
@@ -2432,7 +2433,6 @@
                     <l n="d">kunaṅ hiḍəpire daləm hati samātran aṅinakana vṛtta kampəta</l>
                 </lg>
             </div>
-            <!-- end 23 April 2023 -->
             <div type="canto" rend="met" n="19" met="navaharṣa" xml:id="kakavin_19">
                 <note type="prosody">--+--+------+--+--=</note>
                 <lg xml:id="kakavin_19.01" n="1">
@@ -2449,14 +2449,14 @@
                     <l n="d">i larisnira tan vavaṅ agəlis anolih asoṅ lara sih</l>
                 </lg>
                 <lg xml:id="kakavin_19.03" n="3">
-                    <l n="a">irikā ta sirā nṛpasuta humәnәṅ kadi candra malәk</l>
+                    <l n="a">irikā ta sirā nṛpasuta humənəṅ kadi candra malək</l>
                     <l n="b">sumirir taṅ anīla kusuma tumibā taṅ aśoka marūm</l>
-                    <l n="c">muni taṅ taḍaharṣa kadi manaṅis әñjuh apet karuṇa</l>
+                    <l n="c">muni taṅ taḍaharṣa kadi manaṅis əñjuh apet karuṇa</l>
                     <l n="d">paṅuhuhni kuvoṅ paḍa humuni manuknya hanan pañiṭo</l>
                 </lg>
                  <listApp type="apparatus">
                          <app loc="a">
-                            <lem wit="#EdZ"> malәk</lem>
+                            <lem wit="#EdZ"> malək</lem>
                             <rdg wit="#EdSSA">malek</rdg>
                         </app>
                      <app loc="d">
@@ -2465,105 +2465,105 @@
                         </app>
                      </listApp>
                 <lg xml:id="kakavin_19.04" n="4">
-                    <l n="a">rahina pva mijil hyaṅ aruṇa sumәnə̄ kadi citta lumə̄ṅ</l>
-                    <l n="b">irikān paṅadәg nṛpasuta mapuyәṅ sira tan paturū</l>
-                    <l n="c">ya dumehnira tan vavaṅ umarәk i deni kәsәlniṅ avak</l>
-                    <l n="d">marahup sakarәṅ sira maśuci mamudra viśeṣa vidhi</l>
+                    <l n="a">rahina pva mijil hyaṅ aruṇa sumənə̄ kadi citta lumə̄ṅ</l>
+                    <l n="b">irikān paṅadəg nṛpasuta mapuyəṅ sira tan paturū</l>
+                    <l n="c">ya dumehnira tan vavaṅ umarək i deni kəsəlniṅ avak</l>
+                    <l n="d">marahup sakarəṅ sira maśuci mamudra viśeṣa vidhi</l>
                 </lg>
                 <listApp type="apparatus">
                          <app loc="a">
-                            <lem wit="#EdZ">mapuyәṅ</lem>
-                            <rdg wit="#EdSSA">mapuyәṅeṅ</rdg>
+                            <lem wit="#EdZ">mapuyəṅ</lem>
+                            <rdg wit="#EdSSA">mapuyəṅeṅ</rdg>
                          </app>
                 </listApp>
             </div>
             <div type="canto" rend="met" n="20" met="citrālaya" xml:id="kakavin_20">
                 <note type="prosody">--+--+------=</note>
                 <lg xml:id="kakavin_20.01" n="1">
-                    <l n="a">mamuhun ta saṅ ārya tәlas iṅ arahup,</l>
-                    <l n="b">ri mahāmuni kapva kavәnaṅ amulat,</l>
-                    <l n="c">umijil sira riṅ gupura tәlas adoh,</l>
-                    <l n="d">ulihiṅ lumivat lalu tәka riṅ alas.</l>
+                    <l n="a">mamuhun ta saṅ ārya təlas iṅ arahup,</l>
+                    <l n="b">ri mahāmuni kapva kavənaṅ amulat,</l>
+                    <l n="c">umijil sira riṅ gupura təlas adoh,</l>
+                    <l n="d">ulihiṅ lumivat lalu təka riṅ alas.</l>
                 </lg>
                 <lg xml:id="kakavin_20.02" n="2">
                     <l n="a">prukutut muni riṅ paṅalayalayanan,</l>
                     <l n="b">aṅukū dṛkukūnya muni masahuran,</l>
-                    <l n="c">paṅәtәrni putәrnya paḍa mavurahan,</l>
-                    <l n="d">hana len humibәr ya teka maṅaḍapaṅ.</l>
+                    <l n="c">paṅətərni putərnya paḍa mavurahan,</l>
+                    <l n="d">hana len humibər ya teka maṅaḍapaṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_20.03" n="3">
                     <l n="a">hana cukcak atindak i paṅiṅ agaru,</l>
                     <l n="b">anisik sinisik paḍa maṅariṅariṅ,</l>
-                    <l n="c">vudiniṅ tumiliṅ mamarәki pahatan,</l>
+                    <l n="c">vudiniṅ tumiliṅ mamarəki pahatan,</l>
                     <l n="d">katapaṅ ya mapaṅ kadi ta tinatapan.</l>
                 </lg>
                 <lg xml:id="kakavin_20.04" n="4">
-                    <l n="a">lvah agə̄ṅ madalәm katәmu tәkapira,</l>
-                    <l n="b">umilī mahәniṅ bañunika mabhiru,</l>
-                    <l n="c">ri tәpinya lumutlumut ika mahijo,</l>
-                    <l n="d">padulurni pakuṅnya mamarәki vatu.</l>
+                    <l n="a">lvah agə̄ṅ madaləm katəmu təkapira,</l>
+                    <l n="b">umilī mahəniṅ bañunika mabhiru,</l>
+                    <l n="c">ri təpinya lumutlumut ika mahijo,</l>
+                    <l n="d">padulurni pakuṅnya mamarəki vatu.</l>
                 </lg>
                 <lg xml:id="kakavin_20.05" n="5">
-                    <l n="a">hana mīna mahosya ri tәṅah ahayū,</l>
+                    <l n="a">hana mīna mahosya ri təṅah ahayū,</l>
                     <l n="b">putihan gumivaṅ gilap ika maputih,</l>
-                    <l n="c">kadi teja sәnə̄nya lumarap ahijo,</l>
-                    <l n="d">paṅacarni lajarnya mamarәki paruṅ.</l>
+                    <l n="c">kadi teja sənə̄nya lumarap ahijo,</l>
+                    <l n="d">paṅacarni lajarnya mamarəki paruṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_20.06" n="6">
-                    <l n="a">ri prәḍuṅnya midәr bañunika malivuṅ,</l>
-                    <l n="b">ri kәḍuṅnya mucul dәlәg ika maṅaluṅ,</l>
-                    <l n="c">tumәluṅ dumudul vuluh ika ri tәpi,</l>
+                    <l n="a">ri prəḍuṅnya midər bañunika malivuṅ,</l>
+                    <l n="b">ri kəḍuṅnya mucul dələg ika maṅaluṅ,</l>
+                    <l n="c">tuməluṅ dumudul vuluh ika ri təpi,</l>
                     <l n="d">ri parasnya susuhnya maṅavat adulur.</l>
                 </lg>
                 <lg xml:id="kakavin_20.07" n="7">
                     <l n="a">ri hiriṅnya pacar gunuṅ abaṅ aputih,</l>
                     <l n="b">hana ciṇḍaga siṅgugu pakis aṅuvuṅ,</l>
                     <l n="c">kasine makuniṅ vvah ika kunaṅunaṅ,</l>
-                    <l n="d">kadi kupyaragāyuta paḍa sumәnə̄.</l>
+                    <l n="d">kadi kupyaragāyuta paḍa sumənə̄.</l>
                 </lg>
                 <lg xml:id="kakavin_20.08" n="8">
-                    <l n="a">saruni riya mas kadi suvәṅ araras,</l>
+                    <l n="a">saruni riya mas kadi suvəṅ araras,</l>
                     <l n="b">hana saṅga laṅit kuravara kamuniṅ,</l>
-                    <l n="c">paḍa mәmbaṅ i sornya vulakan ahәniṅ,</l>
-                    <l n="d">irika ta saṅ ārya marahup atәhәr.</l>
+                    <l n="c">paḍa məmbaṅ i sornya vulakan ahəniṅ,</l>
+                    <l n="d">irika ta saṅ ārya marahup atəhər.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="21" met="kusumavicitrā" xml:id="kakavin_21">
                 <note type="prosody">----++----+=</note>
                 <lg xml:id="kakavin_21.01" n="1">
                     <l n="a">atha ri huvusniṅ marahup atīrtha</l>
-                    <l n="b">lumaku sirātūt ri tәpinikaṅ lvah</l>
-                    <l n="c">jaha kayu paṅgaṅ ri tәpinikaṅ lvah</l>
-                    <l n="d">paḍa pukapūrug lәmah ika runtuh</l>
+                    <l n="b">lumaku sirātūt ri təpinikaṅ lvah</l>
+                    <l n="c">jaha kayu paṅgaṅ ri təpinikaṅ lvah</l>
+                    <l n="d">paḍa pukapūrug ləmah ika runtuh</l>
                 </lg>
                 <lg xml:id="kakavin_21.02" n="2">
-                    <l n="a">bañunika manduk ri tәpi kavaṅsul,</l>
-                    <l n="b">gumuruh anәmpuh maṅәnani vuṅkal,</l>
+                    <l n="a">bañunika manduk ri təpi kavaṅsul,</l>
+                    <l n="b">gumuruh anəmpuh maṅənani vuṅkal,</l>
                     <l n="c">makaparapal paṅniṅ asana kontal,</l>
-                    <l n="d">kahava tәkapniṅ bañu gunuṅ adrәs.</l>
+                    <l n="d">kahava təkapniṅ bañu gunuṅ adrəs.</l>
                 </lg>
                 <lg xml:id="kakavin_21.03" n="3">
-                    <l n="a">hana bañu muñcar mәtu saka ri roṅ</l>
-                    <l n="b">sumirat anәmbur maṅadәg anuṅguh</l>
-                    <l n="c">tumәḍuṅ i roṅniṅ juraṅ aparaṅ groṅ</l>
+                    <l n="a">hana bañu muñcar mətu saka ri roṅ</l>
+                    <l n="b">sumirat anəmbur maṅadəg anuṅguh</l>
+                    <l n="c">tuməḍuṅ i roṅniṅ juraṅ aparaṅ groṅ</l>
                     <l n="d">muni gumuruṅguṅ paraṅ ika sumoṅ</l>
                 </lg>
                 <lg xml:id="kakavin_21.04" n="4">
-                    <l n="a">kalalu kapaṅgih lakunira sәṅkan</l>
-                    <l n="b">kayunika mәmbaṅ paḍa ya makәmbaṅ</l>
-                    <l n="c">paḍa ya makumbaṅ muni makabrәṅə̄ṅ</l>
-                    <l n="d">hana muni riṅ paṅ manuk ika gәṇḍeṅ</l>
+                    <l n="a">kalalu kapaṅgih lakunira səṅkan</l>
+                    <l n="b">kayunika məmbaṅ paḍa ya makəmbaṅ</l>
+                    <l n="c">paḍa ya makumbaṅ muni makabrəṅə̄ṅ</l>
+                    <l n="d">hana muni riṅ paṅ manuk ika gəṇḍeṅ</l>
                 </lg>
                 <lg xml:id="kakavin_21.05" n="5">
-                    <l n="a">jalada ya mәṇḍuṅ sumahab atimbun</l>
-                    <l n="b">gumuruh agәntәr patәr yeka ika medi</l>
-                    <l n="c">riṅ alavas onәṅ kadi kәna rāga</l>
+                    <l n="a">jalada ya məṇḍuṅ sumahab atimbun</l>
+                    <l n="b">gumuruh agəntər patər yeka ika medi</l>
+                    <l n="c">riṅ alavas onəṅ kadi kəna rāga</l>
                     <l n="d">kadi ta ya masyaṅ hamisiki karṇa</l>
                 </lg>
                 <lg xml:id="kakavin_21.06" n="6">
-                    <l n="a">nṛpatisutāṅlih lumaku kalәsvan</l>
-                    <l n="b">maṅadәg i sorniṅ kayu manis arja</l>
-                    <l n="c">haṅin ika madrәs kilat ika matruh</l>
+                    <l n="a">nṛpatisutāṅlih lumaku kaləsvan</l>
+                    <l n="b">maṅadəg i sorniṅ kayu manis arja</l>
+                    <l n="c">haṅin ika madrəs kilat ika matruh</l>
                     <l n="d">madulur alisyus camara muni syok</l>
                 </lg>
                 <lg xml:id="kakavin_21.07" n="7">
@@ -2596,8 +2596,8 @@
                 </lg>
                 <listApp type="apparatus">
                          <app loc="b">
-                            <lem wit="#EdZ">hiḍәpnira</lem>
-                            <rdg wit="#EdSSA">hiḍәpnirān</rdg>
+                            <lem wit="#EdZ">hiḍəpnira</lem>
+                            <rdg wit="#EdSSA">hiḍəpnirān</rdg>
                          </app>
                      </listApp>
                 <lg xml:id="kakavin_22.03" n="3">
@@ -2669,95 +2669,95 @@
                 <note type="prosody">-+---+-+---+--+-=</note>
                 <lg xml:id="kakavin_23.01" n="1">
                     <l n="a">atha halivat nṛpatisuta,</l>
-                    <l n="b">katәmu tikaṅ vana kusuma,</l>
+                    <l n="b">katəmu tikaṅ vana kusuma,</l>
                     <l n="c">papupulaniṅ kusuma matāp,</l>
-                    <l n="d">paḍa manәḍәṅ kusuma marūm,</l>
+                    <l n="d">paḍa manəḍəṅ kusuma marūm,</l>
                 </lg>
                 <lg xml:id="kakavin_23.02" n="2">
-                    <l n="a">ravi sumurup laṅit akucәm,</l>
-                    <l n="b">pәtәṅ alimut maṅadahada,</l>
-                    <l n="c">kumucup ikaṅ sәkar aluru,</l>
-                    <l n="d">tәkapiṅ әbun rumarab atis,</l>
+                    <l n="a">ravi sumurup laṅit akucəm,</l>
+                    <l n="b">pətəṅ alimut maṅadahada,</l>
+                    <l n="c">kumucup ikaṅ səkar aluru,</l>
+                    <l n="d">təkapiṅ əbun rumarab atis,</l>
                 </lg>
                 <lg xml:id="kakavin_23.03" n="2">
-                    <l n="a">kayu mavәnәs mari kumәñar,</l>
-                    <l n="b">tәkapiṅ aṅin sumirir alon,</l>
-                    <l n="c">asәpi tikaṅ vana kusuma,</l>
+                    <l n="a">kayu mavənəs mari kuməñar,</l>
+                    <l n="b">təkapiṅ aṅin sumirir alon,</l>
+                    <l n="c">asəpi tikaṅ vana kusuma,</l>
                     <l n="d">manuk aturū mari ya muni.</l>
                 </lg>
                 <lg xml:id="kakavin_23.04" n="4">
-                    <l n="a">ri vijil ikaṅ vulan avәlu,</l>
+                    <l n="a">ri vijil ikaṅ vulan avəlu,</l>
                     <l n="b">manuluhi riṅ bhuvana kabeh,</l>
                     <l n="c">vahu mapaḍaṅ tikanaṅ alas,</l>
                     <l n="d">gunuṅ aruhur vahu ya katon.</l>
                 </lg>
                 <lg xml:id="kakavin_23.05" n="5">
                     <l n="a">nṛpati maṅel sira manusup,</l>
-                    <l n="b">ḍatәṅ i tәṅahnikanaṅ alas,</l>
+                    <l n="b">ḍatəṅ i təṅahnikanaṅ alas,</l>
                     <l n="c">ri vaṅinikaṅ kusuma katon,</l>
                     <l n="d">paḍa tan avas katuduhana.</l>
                 </lg>
                 <lg xml:id="kakavin_23.06" n="6">
                     <l n="a">sahananikaṅ kayu majajar,</l>
-                    <l n="b">iniṅәtiṅәt kadi ta vayaṅ</l>
-                    <l n="c">gagana mavā kәlir ikahәn,</l>
-                    <l n="d">haṅin aṅudaṅ maṅulahakәn,</l>
+                    <l n="b">iniṅətiṅət kadi ta vayaṅ</l>
+                    <l n="c">gagana mavā kəlir ikahən,</l>
+                    <l n="d">haṅin aṅudaṅ maṅulahakən,</l>
                 </lg>
                 <lg xml:id="kakavin_23.07" n="7">
                     <l n="a">kayu matatā paḍa mapupul,</l>
                     <l n="b">hana mamisah kadi maturū,</l>
-                    <l n="c">kayu malurus paḍa maṅadәg,</l>
+                    <l n="c">kayu malurus paḍa maṅadəg,</l>
                     <l n="d">hana gumuliṅ kadi sumare.</l>
                 </lg>
                 <lg xml:id="kakavin_23.08" n="8">
-                    <l n="a">vatu humәnәṅ kadi kavәṅan,</l>
-                    <l n="b">mәnur aputih kadi muriṅis,</l>
-                    <l n="c">sәkar amirah kadi gumuyu,</l>
+                    <l n="a">vatu humənəṅ kadi kavəṅan,</l>
+                    <l n="b">mənur aputih kadi muriṅis,</l>
+                    <l n="c">səkar amirah kadi gumuyu,</l>
                     <l n="d">camara humuṅ kadi masurak.</l>
                 </lg>
                 <lg xml:id="kakavin_23.09" n="9">
                     <l n="a">vataṅ aguliṅ kadi maharip,</l>
-                    <l n="b">kayu mamilәt kadi mamәluk,</l>
-                    <l n="c">kadi kinәsat kulit ikanaṅ,</l>
-                    <l n="d">kayu malәṅis paḍa katisan.</l>
+                    <l n="b">kayu mamilət kadi maməluk,</l>
+                    <l n="c">kadi kinəsat kulit ikanaṅ,</l>
+                    <l n="d">kayu maləṅis paḍa katisan.</l>
                 </lg>
                 <lg xml:id="kakavin_23.10" n="10">
-                    <l n="a">iniṅәtiṅәt mamuhara kuṅ,</l>
+                    <l n="a">iniṅətiṅət mamuhara kuṅ,</l>
                     <l n="b">kayunikanaṅ vana kusuma,</l>
-                    <l n="c">dadi maṅadәg sira sakarәṅ,</l>
-                    <l n="d">ri pәtәṅ ikaṅ kayu rumahab.</l>
+                    <l n="c">dadi maṅadəg sira sakarəṅ,</l>
+                    <l n="d">ri pətəṅ ikaṅ kayu rumahab.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="24" met="rathoddhatā" xml:id="kakavin_24">
                 <note type="prosody">+-+---+-+-=</note>
                 <lg xml:id="kakavin_24.01" n="1">
-                    <l n="a">saṅ hyaṅ candra mavā sira manәṅah,</l>
+                    <l n="a">saṅ hyaṅ candra mavā sira manəṅah,</l>
                     <l n="b">maṅkin sə̄k tikanaṅ kusuma katon,</l>
                     <l n="c">aṅhiṅ pakṣi munīṅ kayu maruhur,</l>
-                    <l n="d">vūt būt ḍok muni riṅ kuvuṅ abәluk.</l>
+                    <l n="d">vūt būt ḍok muni riṅ kuvuṅ abəluk.</l>
                 </lg>
                 <lg xml:id="kakavin_24.02" n="2">
-                    <l n="a">rәsrәsniṅ karәṅə̄ mamәdimәdi,</l>
+                    <l n="a">rəsrəsniṅ karəṅə̄ mamədimədi,</l>
                     <l n="b">pyakpyakniṅ kamanak muni madulur,</l>
-                    <l n="c">ṭokṭokan hana kiñjәṅ avurahan,</l>
-                    <l n="d">ṅūk ṅūk ṅok svaraniṅ kuvuk abәluk.</l>
+                    <l n="c">ṭokṭokan hana kiñjəṅ avurahan,</l>
+                    <l n="d">ṅūk ṅūk ṅok svaraniṅ kuvuk abəluk.</l>
                 </lg>
                 <lg xml:id="kakavin_24.03" n="3">
-                    <l n="a">sakvehniṅ sakaton mamuhara rәs,</l>
-                    <l n="b">paṇḍan voṅ binabad mati magәlar,</l>
+                    <l n="a">sakvehniṅ sakaton mamuhara rəs,</l>
+                    <l n="b">paṇḍan voṅ binabad mati magəlar,</l>
                     <l n="c">rantan rambat ikaṅ gaḍuṅ umure,</l>
                     <l n="d">baṅbaṅniṅ katirah paḍa ravayan.</l>
                 </lg>
                 <lg xml:id="kakavin_24.04" n="4">
-                    <l n="a">kandәl tvasnya tumūt milu kaḍavut,</l>
-                    <l n="b">kumbaṅ maṅhrәṅ i duryanika mati,</l>
+                    <l n="a">kandəl tvasnya tumūt milu kaḍavut,</l>
+                    <l n="b">kumbaṅ maṅhrəṅ i duryanika mati,</l>
                     <l n="c">vokvok jaṅgut i saṅ ṛsi rumave,</l>
                     <l n="d">kaknyāṅanti ri paṅnikaṅ asana.</l>
                 </lg>
                 <lg xml:id="kakavin_24.05" n="5">
-                    <l n="a">suṅsaṅ vok variṅinya pәtәṅ ri sor,</l>
-                    <l n="b">kalvaṅ rambat ikāṅgәlari tumāp,</l>
-                    <l n="c">lvir pәṇḍәm vvad ikaṅ kayu suminaṅ,</l>
+                    <l n="a">suṅsaṅ vok variṅinya pətəṅ ri sor,</l>
+                    <l n="b">kalvaṅ rambat ikāṅgəlari tumāp,</l>
+                    <l n="c">lvir pəṇḍəm vvad ikaṅ kayu suminaṅ,</l>
                     <l n="d">mambə̄ gandhanikaṅ kusuma rurū.</l>
                 </lg>
                  <listApp type="apparatus">
@@ -2768,31 +2768,31 @@
                      </listApp>
                 <lg xml:id="kakavin_24.06" n="6">
                     <l n="a">robrobniṅ camarākusak asikan,</l>
-                    <l n="b">tuṅgakniṅ maṅunәṅ hana sapupu,</l>
-                    <l n="c">bātbātniṅ kәkәbәt maburu namuk,</l>
-                    <l n="d">kәmbaṅniṅ taravarṣa kadi taṅan.</l>
+                    <l n="b">tuṅgakniṅ maṅunəṅ hana sapupu,</l>
+                    <l n="c">bātbātniṅ kəkəbət maburu namuk,</l>
+                    <l n="d">kəmbaṅniṅ taravarṣa kadi taṅan.</l>
                 </lg>
                 <lg xml:id="kakavin_24.07" n="7">
-                    <l n="a">kamvāgan masәkar kadi banara,</l>
+                    <l n="a">kamvāgan masəkar kadi banara,</l>
                     <l n="b">rampal roniṅ aśoka lumalayan,</l>
-                    <l n="c">haṅrәṅgәk sәminiṅ tahәn atuha,</l>
-                    <l n="d">priṅyākiṅ kumisik tәkapiṅ aṅin.</l>
+                    <l n="c">haṅrəṅgək səminiṅ tahən atuha,</l>
+                    <l n="d">priṅyākiṅ kumisik təkapiṅ aṅin.</l>
                 </lg>
                 <lg xml:id="kakavin_24.08" n="8">
                     <l n="a">malvā ronya malad taṅ ilatilat,</l>
                     <l n="b">kayvāgə̄ṅ ḍumavaṅḍavaṅ aluhur,</l>
                     <l n="c">raṅrə̄ lvirnika rakṣasa gumuruh,</l>
-                    <l n="d">molah lvir maṅigәl tәkapiṅ aṅin.</l>
+                    <l n="d">molah lvir maṅigəl təkapiṅ aṅin.</l>
                 </lg>
                 <lg xml:id="kakavin_24.9" n="9">
-                    <l n="a">valyāgə̄ṅ mamilәt makaramayan,</l>
-                    <l n="b">krūra lvir masavit makasalivәt,</l>
-                    <l n="c">taṅkil varṇa kaluṅkaluṅ anәṅah,</l>
+                    <l n="a">valyāgə̄ṅ mamilət makaramayan,</l>
+                    <l n="b">krūra lvir masavit makasalivət,</l>
+                    <l n="c">taṅkil varṇa kaluṅkaluṅ anəṅah,</l>
                     <l n="d">bə̄bə̄ṅkah paḍaniṅ valuh aputih.</l>
                 </lg>
                 <lg xml:id="kakavin_24.10" n="10">
                     <l n="a">buṅbuṅniṅ pahatan makalakalar,</l>
-                    <l n="b">sandiṅnyā pataraṅ gigir atәhәr,</l>
+                    <l n="b">sandiṅnyā pataraṅ gigir atəhər,</l>
                     <l n="c">grot grot grit svaraniṅ kayu masalit,</l>
                     <l n="d">paṅnyārok kalavan kayu tahulan.</l>
                 </lg>
@@ -2934,7 +2934,7 @@
                 </listApp>
                 <lg xml:id="kakavin_26.04" n="4">
                     <l n="a">“dadi tumūt satuvuh rikanaṅ dadi</l>
-                    <l n="b">“paḍa pəjah kәtikaṅ mala kaśmala</l>
+                    <l n="b">“paḍa pəjah kətikaṅ mala kaśmala</l>
                     <l n="c">“dadi təkeṅ mṛga pakṣi laṭāṅkura</l>
                     <l n="d">“kala kaṭuṅka dumehnya kapātaka</l>
                 </lg>
@@ -2944,7 +2944,7 @@
                             <rdg wit="#EdSSA">satuvuhnikanaṅ</rdg>
                          </app>
                     <app loc="b">
-                            <lem wit="#EdZ">kәtikaṅ</lem>
+                            <lem wit="#EdZ">kətikaṅ</lem>
                             <rdg wit="#EdSSA">ketikaṅ</rdg>
                          </app>
                 </listApp>
@@ -2994,11 +2994,11 @@
                     <l n="a">“ndi parananta yadin lepasekihən</l>
                     <l n="b">“ləpasa mokṣa tikāṅhiṅ ikaṅ təmən</l>
                     <l n="c">“ndi parananta yadin si ləpas təmən</l>
-                    <l n="d">“ndi ta si mokṣa paranya di taṅ lәpas</l>
+                    <l n="d">“ndi ta si mokṣa paranya di taṅ ləpas</l>
                 </lg>
                 <listApp type="apparatus">
                 <app loc="d">
-                            <lem wit="#EdZ">di taṅ lәpas</lem>
+                            <lem wit="#EdZ">di taṅ ləpas</lem>
                             <rdg wit="#EdSSA">ditāləpas</rdg>
                          </app>
                 </listApp>
@@ -3084,61 +3084,61 @@
                     <l n="d">kasasar kavave təpiniṅ vulusan</l>
                 </lg>
                 <lg xml:id="kakavin_27.04" n="4">
-                    <l n="a">tasika arja lәyәp masamīpa gunuṅ</l>
+                    <l n="a">tasika arja ləyəp masamīpa gunuṅ</l>
                     <l n="b">bañuniṅ giri sarva pavitra tumus</l>
-                    <l n="c">mapuput paḍa tīrtha ya konәṅunәṅ</l>
-                    <l n="d">humilī mahәniṅ lumajur maṅalor</l>
+                    <l n="c">mapuput paḍa tīrtha ya konəṅunəṅ</l>
+                    <l n="d">humilī mahəniṅ lumajur maṅalor</l>
                 </lg>
                 <lg xml:id="kakavin_27.05" n="5">
-                    <l n="a">katәhak bañuniṅ tasik ardha lәṅәṅ</l>
-                    <l n="b">tәkapiṅ bañu madrәs avah gumuruh</l>
-                    <l n="c">dinәlәṅ ri vәkasnya lәṅit kumusuh</l>
-                    <l n="d">kadi megha samar ya pәtәṅ sumaput</l>
+                    <l n="a">katəhak bañuniṅ tasik ardha ləṅəṅ</l>
+                    <l n="b">təkapiṅ bañu madrəs avah gumuruh</l>
+                    <l n="c">dinələṅ ri vəkasnya ləṅit kumusuh</l>
+                    <l n="d">kadi megha samar ya pətəṅ sumaput</l>
                 </lg>
                 <lg xml:id="kakavin_27.06" n="6">
                     <l n="a">arunodaya sə̄ṅnya mabaṅ makuniṅ</l>
-                    <l n="b">mәtu saṅka rikaṅ bañu rūpanika</l>
-                    <l n="c">kadi cakra murub mavәlu dumilah</l>
-                    <l n="d">sumurup ta bhaṭāra vulan makucәṁ</l>
+                    <l n="b">mətu saṅka rikaṅ bañu rūpanika</l>
+                    <l n="c">kadi cakra murub mavəlu dumilah</l>
+                    <l n="d">sumurup ta bhaṭāra vulan makucəṁ</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="28" met="navaharṣa" xml:id="kakavin_28">
                 <note type="prosody">--+--+------+--+--=</note>
                 <lg xml:id="kakavin_28.01" n="1">
-                    <l n="a">ya katon lәyәpiṅ pasir amuhara lәṅlәṅ anambәhi kuṅ,</l>
-                    <l n="b">kalavan gәrәhiṅ patәr akәtәr agәntәr aṅanti rәmәṅ,</l>
-                    <l n="c">ri pәtuṅnya namutnamut aṅәḍapa mukṣa kilatnya tinon,</l>
-                    <l n="d">kadi mukṣa hiḍepniṅ umulat i vәkasnya lәṅit dinәlə̄.</l>
+                    <l n="a">ya katon ləyəpiṅ pasir amuhara ləṅləṅ anambəhi kuṅ,</l>
+                    <l n="b">kalavan gərəhiṅ patər akətər agəntər aṅanti rəməṅ,</l>
+                    <l n="c">ri pətuṅnya namutnamut aṅəḍapa mukṣa kilatnya tinon,</l>
+                    <l n="d">kadi mukṣa hiḍepniṅ umulat i vəkasnya ləṅit dinələ̄.</l>
                 </lg>
                 <lg xml:id="kakavin_28.02" n="2">
-                    <l n="a">ana teki karaṅnya ri tәṅah aṅadәg kadi nūṣa katon,</l>
+                    <l n="a">ana teki karaṅnya ri təṅah aṅadəg kadi nūṣa katon,</l>
                     <l n="b">lagi mukṣa minukṣaniṅ alun aṅasut kadi reka samar,</l>
-                    <l n="c">kumәḍap ketikaṅ bañu maṅipakipak ri tәpinya lanā,</l>
-                    <l n="d">mahirәṅ kadi kәmbaṅiṅ ahayu samar pinupurpupuran.</l>
+                    <l n="c">kuməḍap ketikaṅ bañu maṅipakipak ri təpinya lanā,</l>
+                    <l n="d">mahirəṅ kadi kəmbaṅiṅ ahayu samar pinupurpupuran.</l>
                 </lg>
                 <lg xml:id="kakavin_28.03" n="3">
-                    <l n="a">hanānuṅ makaraṅ liman asәmu lәyәp malalәh ya tinon</l>
+                    <l n="a">hanānuṅ makaraṅ liman asəmu ləyəp malaləh ya tinon</l>
                     <l n="b">ika ganya parantiniṅ amati laṅə̄ lumabuh riṅ alun</l>
-                    <l n="c">makacihna parabnya sumәlap i karaṅnya lavan lәpihan</l>
-                    <l n="d">hana ṅāri kasaṅnika kadi minahā ya sinampirakәn</l>
+                    <l n="c">makacihna parabnya suməlap i karaṅnya lavan ləpihan</l>
+                    <l n="d">hana ṅāri kasaṅnika kadi minahā ya sinampirakən</l>
                 </lg>
                 <lg xml:id="kakavin_28.04" n="4">
-                    <l n="a">ri tәpinya pasirpasir agәlar i sor pasuṅiṅ piḍaḍa,</l>
-                    <l n="b">karitipni karaṅnya hana matәbalan mabavaṅbavaṅan,</l>
-                    <l n="c">harәmis makupaṅkupaṅ ahuvuruvuṅ makәraṅ matirәm</l>
+                    <l n="a">ri təpinya pasirpasir agəlar i sor pasuṅiṅ piḍaḍa,</l>
+                    <l n="b">karitipni karaṅnya hana matəbalan mabavaṅbavaṅan,</l>
+                    <l n="c">harəmis makupaṅkupaṅ ahuvuruvuṅ makəraṅ matirəm</l>
                     <l n="d">paṅisisni sahiṅsahiṅ ika padulur dana kampad ika</l>
                 </lg>
                 <lg xml:id="kakavin_28.05" n="5">
                     <l n="a">ri parasnya paraṅ paruṅ aguhaguhā hana katka tikā</l>
-                    <l n="b">hana pakṣi guruṇḍaya lagi masәsәh ya karaṅkaraṅan</l>
-                    <l n="c">maṅaluṅ baḍavaṅnya ri tәpi hana pās vayavak vuhaya,</l>
-                    <l n="d">kumәlәm savaneh hana kadi maṅuṅap ya mucul sakarәṅ.</l>
+                    <l n="b">hana pakṣi guruṇḍaya lagi masəsəh ya karaṅkaraṅan</l>
+                    <l n="c">maṅaluṅ baḍavaṅnya ri təpi hana pās vayavak vuhaya,</l>
+                    <l n="d">kumələm savaneh hana kadi maṅuṅap ya mucul sakarəṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_28.06" n="6">
-                    <l n="a">sahaneṅ tәpiniṅ pasir amuhara rāmya yadin caritan,</l>
+                    <l n="a">sahaneṅ təpiniṅ pasir amuhara rāmya yadin caritan,</l>
                     <l n="b">maṅavetan ikaṅ lakunira ta saṅ ārya matūt pasisi,</l>
-                    <l n="c">hana paṇḍan aṅuṅkuli paraṅan arәs ya tinon alaṅə̄,</l>
-                    <l n="d">pamilәtni gaḍuṅnya mamәkasi puḍaknya rurū kasirir.</l>
+                    <l n="c">hana paṇḍan aṅuṅkuli paraṅan arəs ya tinon alaṅə̄,</l>
+                    <l n="d">pamilətni gaḍuṅnya maməkasi puḍaknya rurū kasirir.</l>
                 </lg>
                 <listApp type="apparatus">
                 <app loc="d">
@@ -3147,10 +3147,10 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_28.07" n="7">
-                    <l n="a">ri vәkasnya śilā śayana kayu manisnya maṅə̄bi matis,</l>
-                    <l n="b">kamuniṅ kayu teja mәnur asana cāmpaka len surabhi,</l>
-                    <l n="c">kadi tāman apūrṇa lәyәpika maṅuṅkuli rāmya lәṅәṅ,</l>
-                    <l n="d">hana teki katon tәkapira kadi deva samar tan avās.</l>
+                    <l n="a">ri vəkasnya śilā śayana kayu manisnya maṅə̄bi matis,</l>
+                    <l n="b">kamuniṅ kayu teja mənur asana cāmpaka len surabhi,</l>
+                    <l n="c">kadi tāman apūrṇa ləyəpika maṅuṅkuli rāmya ləṅəṅ,</l>
+                    <l n="d">hana teki katon təkapira kadi deva samar tan avās.</l>
                 </lg>
                 <lg xml:id="kakavin_28.08" n="8">
                     <l n="a">hyaṅ anaṅga sireki haməṅaməṅ i daśanikaṅ vulusan</l>
@@ -3160,118 +3160,118 @@
                 </lg>
                 <listApp type="apparatus">
                 <app loc="b">
-                            <lem wit="#EdZ">paḍәṅ</lem>
-                            <rdg wit="#EdSSA">maḍәṅ</rdg>
+                            <lem wit="#EdZ">paḍəṅ</lem>
+                            <rdg wit="#EdSSA">maḍəṅ</rdg>
                          </app>
                 </listApp>
             </div>
             <div type="canto" rend="met" n="29" met="jagadnātha" xml:id="kakavin_29">
                 <note type="prosody">-+---+-+---+------+-+-=</note>
                 <lg xml:id="kakavin_29.01" n="1">
-                    <l n="a">sәḍәṅnira bhaṭāra manmatha kapaṅgih amәṅamәṅ i deśaniṅ pasir,</l>
-                    <l n="b">tәkap nṛpatipura yekan atәtәg sira ḍatәṅa ri saṅ manobhava,</l>
-                    <l n="c">ya hetunira yan paṅanti sakarәṅ maṅiṅәtakәn aliṇḍuṅan kayu,</l>
+                    <l n="a">səḍəṅnira bhaṭāra manmatha kapaṅgih aməṅaməṅ i deśaniṅ pasir,</l>
+                    <l n="b">təkap nṛpatipura yekan atətəg sira ḍatəṅa ri saṅ manobhava,</l>
+                    <l n="c">ya hetunira yan paṅanti sakarəṅ maṅiṅətakən aliṇḍuṅan kayu,</l>
                     <l n="d">sinoṅaniṅ aśoka ronya rumahab kahananira manon ndatan tinon.</l>
                 </lg>
                 <lg xml:id="kakavin_29.02" n="2">
-                    <l n="a">jәṅәr tvasira saṅ dhanañjaya manon vvaṅ ahayu tuvi tan pasiṅsiṅan,</l>
+                    <l n="a">jəṅər tvasira saṅ dhanañjaya manon vvaṅ ahayu tuvi tan pasiṅsiṅan,</l>
                     <l n="b">mukhanya gumavaṅ manisni pamatanyan alaris aluṅid liriṅnikā,</l>
-                    <l n="c">lәmәsni paṅavaknya mambәt aṅәlih lumakulaku mapet raras hati,</l>
+                    <l n="c">ləməsni paṅavaknya mambət aṅəlih lumakulaku mapet raras hati,</l>
                     <l n="d">tapihnya kasirirsirir kadi mahā tinunatuna miṅismiṅis katon.</l>
                 </lg>
                 <lg xml:id="kakavin_29.03" n="3">
-                    <l n="a">apan yan ucapәn rarasnyan apaṅus dalu hayunika tan kәnenusīr,</l>
-                    <l n="b">luput pinahiḍәp tuneṅ aṅәnaṅәn lәvu nener ika yan tiniṅhalan,</l>
-                    <l n="c">muṅәr kaputuṅan tikәl tanah iṅ aṅguritakәn hayunya riṅ karas.</l>
-                    <l n="d">mihat tәmahan aṅlәlәh sahananiṅ lukis amaḍamaḍā ya riṅ tulis.</l>
+                    <l n="a">apan yan ucapən rarasnyan apaṅus dalu hayunika tan kənenusīr,</l>
+                    <l n="b">luput pinahiḍəp tuneṅ aṅənaṅən ləvu nener ika yan tiniṅhalan,</l>
+                    <l n="c">muṅər kaputuṅan tikəl tanah iṅ aṅguritakən hayunya riṅ karas.</l>
+                    <l n="d">mihat təmahan aṅlələh sahananiṅ lukis amaḍamaḍā ya riṅ tulis.</l>
                 </lg>
                 <lg xml:id="kakavin_29.04" n="4">
-                    <l n="a">vaneh hayunikā manisnyan inapus tәṅah ika tinulis bәbәdnikā,</l>
-                    <l n="b">laṭinya mahirәṅ vajanya maputih tinikatika huvәlnikaṅ gәluṅ,</l>
-                    <l n="c">matanya mabhirū tәpinya malaris vahu kinәlabakәn tikuṅ halis,</l>
-                    <l n="d">titir liniriṅan tәkapniṅ alaṅə̄ lumaraṅi ya paṅruhun tika.</l>
+                    <l n="a">vaneh hayunikā manisnyan inapus təṅah ika tinulis bəbədnikā,</l>
+                    <l n="b">laṭinya mahirəṅ vajanya maputih tinikatika huvəlnikaṅ gəluṅ,</l>
+                    <l n="c">matanya mabhirū təpinya malaris vahu kinəlabakən tikuṅ halis,</l>
+                    <l n="d">titir liniriṅan təkapniṅ alaṅə̄ lumaraṅi ya paṅruhun tika.</l>
                 </lg>
                 <lg xml:id="kakavin_29.05" n="5">
-                    <l n="a">paḍāṅalap ahurahuran sәkar anәmpal asana mapayuṅpayuṅ vuṅu,</l>
-                    <l n="b">savitnya katirah mәnur ya tinatānya ri patah atajugtajug sәkar,</l>
-                    <l n="c">gәluṅnya kinusutkusutnya minahā linukalukar inambәt iṅ vuhәl,</l>
+                    <l n="a">paḍāṅalap ahurahuran səkar anəmpal asana mapayuṅpayuṅ vuṅu,</l>
+                    <l n="b">savitnya katirah mənur ya tinatānya ri patah atajugtajug səkar,</l>
+                    <l n="c">gəluṅnya kinusutkusutnya minahā linukalukar inambət iṅ vuhəl,</l>
                     <l n="d">mukhanya sinabuknya riṅ sarinikaṅ kusuma surabi maṅlare hati.</l>
                 </lg>
                 <!-- Z sapayuṅpayuṅ (? not in transcript)-->
                 <lg xml:id="kakavin_29.06" n="6">
                     <l n="a">ikaṅ saviji raśmiraśminika yan gumuyu vaśavaśitva riṅ manis,</l>
-                    <l n="b">tәkanya hapaṅus pilih tuhatuhanya mamarahi mapet raras hati,</l>
+                    <l n="b">təkanya hapaṅus pilih tuhatuhanya mamarahi mapet raras hati,</l>
                     <l n="c">tuvin vvaṅ amanis mapañjaṅ anipis tahu viṣaniṅ akuṅ mamātyani,</l>
-                    <l n="d">titir pinakaśatruniṅ tapa lanā muruṅakәna samādhi saṅ viku.</l>
+                    <l n="d">titir pinakaśatruniṅ tapa lanā muruṅakəna samādhi saṅ viku.</l>
                 </lg>
                 <lg xml:id="kakavin_29.07" n="7">
-                    <l n="a">śilā śumayana paliṅgihanikā paḍa maṅurayakәn gәluṅ mәlәs,</l>
-                    <l n="b">vaneh ta ya matuṅtuṅan paḍa silih rәṅu maṅucap agoṣṭhi tan humuṅ,</l>
-                    <l n="c">hanāṅuvahi ken ikāṅirabakәn viruviruni tapihnya denalah,</l>
-                    <l n="d">hanān kadi rare ndatan vavarәṅə̄ riṅ umulata ri polahiṅ katon.</l>
+                    <l n="a">śilā śumayana paliṅgihanikā paḍa maṅurayakən gəluṅ mələs,</l>
+                    <l n="b">vaneh ta ya matuṅtuṅan paḍa silih rəṅu maṅucap agoṣṭhi tan humuṅ,</l>
+                    <l n="c">hanāṅuvahi ken ikāṅirabakən viruviruni tapihnya denalah,</l>
+                    <l n="d">hanān kadi rare ndatan vavarəṅə̄ riṅ umulata ri polahiṅ katon.</l>
                 </lg>
                 <lg xml:id="kakavin_29.08" n="8">
                     <l n="a">vaneh tiki mapet laṅə̄ gumuliṅ iṅ karaṅ arurub aśokapādapa,</l>
-                    <l n="b">lәṅәṅ lumiyat iṅ pasir kadi mavor vәkas ika kalavan laṅitlaṅit,</l>
-                    <l n="c">ikāna ri tәṅah katon kadi gunuṅ tikan alulun anambәr aṅrubuṅ,</l>
-                    <l n="d">ya tekana tinonya lәṅlәṅ alaṅə̄ kadi kavi maṅikәt palambaṅa.</l>
+                    <l n="b">ləṅəṅ lumiyat iṅ pasir kadi mavor vəkas ika kalavan laṅitlaṅit,</l>
+                    <l n="c">ikāna ri təṅah katon kadi gunuṅ tikan alulun anambər aṅrubuṅ,</l>
+                    <l n="d">ya tekana tinonya ləṅləṅ alaṅə̄ kadi kavi maṅikət palambaṅa.</l>
                 </lg>
                 <lg xml:id="kakavin_29.09" n="9">
                     <l n="a">vaneh tumuruniṅ pasir paḍa mapiṅkas aburu surudiṅ ryakiṅ bañu,</l>
-                    <l n="b">tumandaṅ aḍaḍapḍaḍap sәminikaṅ kayu manis atәvәktәvәk puḍak,</l>
-                    <l n="c">tekaṅ halun agə̄ṅ tumampuh aṅusī riya dadi tәlәs katūtutan,</l>
+                    <l n="b">tumandaṅ aḍaḍapḍaḍap səminikaṅ kayu manis atəvəktəvək puḍak,</l>
+                    <l n="c">tekaṅ halun agə̄ṅ tumampuh aṅusī riya dadi tələs katūtutan,</l>
                     <l n="d">tapihtapih ikā ya tātanya katon kadi mukha masaputsaput jamaṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_29.10" n="10">
                     <l n="a">kunaṅ sira bhaṭāra manmatha lavan kalulut iran aliṅgih iṅ śilā,</l>
-                    <l n="b">hanan kajәnәkan sinaṅhuluni kāsihira saṅ araras kinaptyakәn,</l>
-                    <l n="c">tәhәr kadi paluṅnikaṅ gaḍuṅ aṅol sәkar amilәt agantuṅan tәṅah,</l>
-                    <l n="d">cucul vuhәl ikaṅ tapih tәkap i paṅharas i taṅanirāṅgamәl susu.</l>
+                    <l n="b">hanan kajənəkan sinaṅhuluni kāsihira saṅ araras kinaptyakən,</l>
+                    <l n="c">təhər kadi paluṅnikaṅ gaḍuṅ aṅol səkar amilət agantuṅan təṅah,</l>
+                    <l n="d">cucul vuhəl ikaṅ tapih təkap i paṅharas i taṅanirāṅgaməl susu.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="30" met="turidagati" xml:id="kakavin_30">
                 <note type="prosody">----+-+---+------+-+-=</note>
                 <lg xml:id="kakavin_30.01" n="1">
-                    <l n="a">lәṅәṅ alalәh tinon tәpinikaṅ pasir amuhara lәṅlәṅ iṅ mara,</l>
-                    <l n="b">kadi tinatā hәninya matulis vinurivuri tәkapnikaṅ surud,</l>
-                    <l n="c">hana lumarap katon kadi maṇik marakata kadi hintәnāhulap,</l>
-                    <l n="d">kadi ta kuvuṅkuvuṅ sirat ikaṅ bañu kinәñar iṅ tejaniṅ ravi.</l>
+                    <l n="a">ləṅəṅ alaləh tinon təpinikaṅ pasir amuhara ləṅləṅ iṅ mara,</l>
+                    <l n="b">kadi tinatā həninya matulis vinurivuri təkapnikaṅ surud,</l>
+                    <l n="c">hana lumarap katon kadi maṇik marakata kadi hintənāhulap,</l>
+                    <l n="d">kadi ta kuvuṅkuvuṅ sirat ikaṅ bañu kinəñar iṅ tejaniṅ ravi.</l>
                 </lg>
                 <lg xml:id="kakavin_30.02" n="2">
-                    <l n="a">kavәlas arәp huraṅnya mati kāsatәn anәlati salvāniṅ karaṅ,</l>
-                    <l n="b">lagi pinaran titir tәkap ikaṅ sәmut adulur atūt pakis mure,</l>
-                    <l n="c">kamahuripәn suṅutnya makәdal katitisani paśeṣaniṅ bañu,</l>
-                    <l n="d">ikurikuriṅ paras paḍa lәvas hana mati kәna riṅ jariṅjariṅ.</l>
+                    <l n="a">kavəlas arəp huraṅnya mati kāsatən anəlati salvāniṅ karaṅ,</l>
+                    <l n="b">lagi pinaran titir təkap ikaṅ səmut adulur atūt pakis mure,</l>
+                    <l n="c">kamahuripən suṅutnya makədal katitisani paśeṣaniṅ bañu,</l>
+                    <l n="d">ikurikuriṅ paras paḍa ləvas hana mati kəna riṅ jariṅjariṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_30.03" n="3">
-                    <l n="a">hana maputih katon ri tәṅahiṅ pasir aṅәḍapi polahiṅ bañu,</l>
-                    <l n="b">layariṅ amañjiṅ asraṅ anәṅah kadi gilagila mukṣa cet katon,</l>
-                    <l n="c">tәkapiṅ aṅin lavan kusuh ikaṅ bañu maṅalunalun maṅampuhan,</l>
-                    <l n="d">iniṅәtiṅәt hilaṅ kahiḍәpnya sahaja tiki yan katon muvah.</l>
+                    <l n="a">hana maputih katon ri təṅahiṅ pasir aṅəḍapi polahiṅ bañu,</l>
+                    <l n="b">layariṅ amañjiṅ asraṅ anəṅah kadi gilagila mukṣa cet katon,</l>
+                    <l n="c">təkapiṅ aṅin lavan kusuh ikaṅ bañu maṅalunalun maṅampuhan,</l>
+                    <l n="d">iniṅətiṅət hilaṅ kahiḍəpnya sahaja tiki yan katon muvah.</l>
                 </lg>
                 <lg xml:id="kakavin_30.04" n="4">
                     <l n="a">hana ta muvah katon niyata rāmyaniṅ aṅanutan hana aṅhuvushuvus,</l>
-                    <l n="b">kumitikitir kәlabni paṅgavenya kapalipir i ḍuṅhus iṅ paraṅ,</l>
-                    <l n="c">lagi kasәpәr karok lavan ikaṅ sәkar asana tibeṅ karaṅ taṅan,</l>
+                    <l n="b">kumitikitir kəlabni paṅgavenya kapalipir i ḍuṅhus iṅ paraṅ,</l>
+                    <l n="c">lagi kasəpər karok lavan ikaṅ səkar asana tibeṅ karaṅ taṅan,</l>
                     <l n="d">hana ta muvah katon pilihpilih bhanava rusak aṅaṇḍas iṅ karaṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_30.05" n="5">
-                    <l n="a">sahananikaṅ katon paḍa maveh turida ri manahiṅ vvaṅ aṅlәṅәṅ,</l>
-                    <l n="b">nṛpasuta kepvaniṅ gati taṅeh manahira ḍatәṅe prayojana,</l>
-                    <l n="c">kajәnәkaneṅ laṅə̄ tәvas aṅel karakәtana ri rāmyaniṅ pasir,</l>
-                    <l n="d">dadi humәnәṅ sirāṅaṅәnaṅәn ḍatәṅanira ri saṅ manobhava.</l>
+                    <l n="a">sahananikaṅ katon paḍa maveh turida ri manahiṅ vvaṅ aṅləṅəṅ,</l>
+                    <l n="b">nṛpasuta kepvaniṅ gati taṅeh manahira ḍatəṅe prayojana,</l>
+                    <l n="c">kajənəkaneṅ laṅə̄ təvas aṅel karakətana ri rāmyaniṅ pasir,</l>
+                    <l n="d">dadi humənəṅ sirāṅaṅənaṅən ḍatəṅanira ri saṅ manobhava.</l>
                 </lg>
                 <lg xml:id="kakavin_30.06" n="6">
-                    <l n="a">dadi nṛpaputra śīghra maṅadәg ḍatәṅa ri kahanan manobhava,</l>
-                    <l n="b">mavaraha doniran ḍatәṅa riṅ vukir agavaya siddhaniṅ tapa,</l>
-                    <l n="c">karaṇaniran ḍatәṅ ri kahanan manasija tumuluy maṅastuti,</l>
+                    <l n="a">dadi nṛpaputra śīghra maṅadəg ḍatəṅa ri kahanan manobhava,</l>
+                    <l n="b">mavaraha doniran ḍatəṅa riṅ vukir agavaya siddhaniṅ tapa,</l>
+                    <l n="c">karaṇaniran ḍatəṅ ri kahanan manasija tumuluy maṅastuti,</l>
                     <l n="d">dadi sira saṅ manobhava sumambut i luṅayani saṅ dhanañjaya.</l>
                 </lg>
                 <lg xml:id="kakavin_30.07" n="7">
                     <l n="a">uḍuh arini ṅhulun laki sabhāgya ta kita mapa taṅ prayojana,</l>
-                    <l n="b">amәṅamәṅeṅ pasir karika saṅ nṛpati kadi mahā mapet laṅə̄,</l>
-                    <l n="c">amarәṅi rāmyaniṅ masa kapat lumihatana ri rāmyaniṅ pasir,</l>
-                    <l n="d">iṅәtiṅәtәn ta rāmyani pasirnya guritakәna de nṛpātmaja,</l>
+                    <l n="b">aməṅaməṅeṅ pasir karika saṅ nṛpati kadi mahā mapet laṅə̄,</l>
+                    <l n="c">amarəṅi rāmyaniṅ masa kapat lumihatana ri rāmyaniṅ pasir,</l>
+                    <l n="d">iṅətiṅətən ta rāmyani pasirnya guritakəna de nṛpātmaja,</l>
                 </lg>
                  <listApp type="apparatus">
                 <app loc="c">
@@ -3282,24 +3282,24 @@
                 <lg xml:id="kakavin_30.08" n="8">
                     <l n="a">vuvusira saṅ manobhava saharṣa ṅuniyuni tikaṅ surāṅganā,</l>
                     <l n="b">nṛpasuta mājariṅ gati ri donanira yan inutusni saṅ kaka,</l>
-                    <l n="c">lumәkasa maṅhyaṅeṅ giri sumeru gumavayakәnaṅ tapa brata,</l>
-                    <l n="d">mvaṅ i kahilaṅniran kәna binañcana ya ta pavarahnirātәhәr.</l>
+                    <l n="c">luməkasa maṅhyaṅeṅ giri sumeru gumavayakənaṅ tapa brata,</l>
+                    <l n="d">mvaṅ i kahilaṅniran kəna binañcana ya ta pavarahnirātəhər.</l>
                 </lg>
             </div>
             
             <div type="canto" rend="met" n="31" met="jagaddhita" xml:id="kakavin_31">
                 <note type="prosody">+++--+-+---+------+-+-=</note>
                 <lg xml:id="kakavin_31.01" n="1">
-                    <l n="a">saṅ hyaṅ kāma sireki śīghra sumahur milu malara manahnirāṅrәṅə̄,</l>
-                    <l n="b">maṅka pvāku nimittaniṅ ḍatәṅa riṅ giri gumavaya yoga len brata,</l>
-                    <l n="c">antәnku ndya taṅ enakeki vuvusaṅkva ri kita bapa yogya rakṣanәn,</l>
-                    <l n="d">āpan mevәh ikaṅ gunāmaraha riṅ hayu maṅinakaneṅ vvaṅ aṅrәṅə̄.</l>
+                    <l n="a">saṅ hyaṅ kāma sireki śīghra sumahur milu malara manahnirāṅrəṅə̄,</l>
+                    <l n="b">maṅka pvāku nimittaniṅ ḍatəṅa riṅ giri gumavaya yoga len brata,</l>
+                    <l n="c">antənku ndya taṅ enakeki vuvusaṅkva ri kita bapa yogya rakṣanən,</l>
+                    <l n="d">āpan mevəh ikaṅ gunāmaraha riṅ hayu maṅinakaneṅ vvaṅ aṅrəṅə̄.</l>
                 </lg>
                 <lg xml:id="kakavin_31.02" n="2">
-                    <l n="a">vyarthaṅ vvaṅ yan amuktya tan vruha ri mūlaniṅ anәmu sukhādi vīryavān,</l>
-                    <l n="b">nirvaṅ vvaṅ matuduh maṅə̄ ya tan akīrtya tuladana tәkapniṅ aṅlәṅәṅ,</l>
+                    <l n="a">vyarthaṅ vvaṅ yan amuktya tan vruha ri mūlaniṅ anəmu sukhādi vīryavān,</l>
+                    <l n="b">nirvaṅ vvaṅ matuduh maṅə̄ ya tan akīrtya tuladana təkapniṅ aṅləṅəṅ,</l>
                     <l n="c">tan rāmya maśarīra tan tulusa rūpa lituhayu vicakṣanāguṇa,</l>
-                    <l n="d">nirdon ṅ vvaṅ viku tan vәnaṅ tulusa paṇḍita magavaya dharmasādhana.</l>
+                    <l n="d">nirdon ṅ vvaṅ viku tan vənaṅ tulusa paṇḍita magavaya dharmasādhana.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="a">
@@ -3320,10 +3320,10 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_31.03" n="3">
-                    <l n="a">akveh vvaṅ lumicin sumamyak aṅucap manayakәn i rusitniṅ akṣara,</l>
-                    <l n="b">liṅny ajy ājamujit ndatan vruh i vәnaṅnika kadi laghәnāsavit sәkar,</l>
-                    <l n="c">vyaktinyānuparәṅga bhūsana vuvusnira mәtu kadi luṅgahiṅ gaḍuṅ,</l>
-                    <l n="d">ndan sūkṣmeki lәkasniran kadi tulis carita cinaritanya tan katon.</l>
+                    <l n="a">akveh vvaṅ lumicin sumamyak aṅucap manayakən i rusitniṅ akṣara,</l>
+                    <l n="b">liṅny ajy ājamujit ndatan vruh i vənaṅnika kadi laghənāsavit səkar,</l>
+                    <l n="c">vyaktinyānuparəṅga bhūsana vuvusnira mətu kadi luṅgahiṅ gaḍuṅ,</l>
+                    <l n="d">ndan sūkṣmeki ləkasniran kadi tulis carita cinaritanya tan katon.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="b">
@@ -3332,16 +3332,16 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_31.04" n="4">
-                    <l n="a">aṅhiṅ svarga jugā pinet paḍa mahurhuran aharәp amuktya riṅ sarāt,</l>
+                    <l n="a">aṅhiṅ svarga jugā pinet paḍa mahurhuran aharəp amuktya riṅ sarāt,</l>
                     <l n="b">rāmyāniṅ mahulun mamās marabi yeka ta karaṇanikān mahas maṅel,</l>
-                    <l n="c">tan vruh yan kadi robnikaṅ jaladhi tan tәhәra katәmu jātiniṅ sukha,</l>
-                    <l n="d">tan meṅәt pva ya mūdha tan vruh i pamuktyanika sinaput iṅ rajah tamah.</l>
+                    <l n="c">tan vruh yan kadi robnikaṅ jaladhi tan təhəra katəmu jātiniṅ sukha,</l>
+                    <l n="d">tan meṅət pva ya mūdha tan vruh i pamuktyanika sinaput iṅ rajah tamah.</l>
                 </lg>
                 <lg xml:id="kakavin_31.05" n="5">
-                    <l n="a">tṛṣṇāgə̄ṅ mamilәt ri saṅ manәmu bhoga karakәt ika yan tinamtaman,</l>
-                    <l n="b">tan mantuk purihiṅ śarīra katәlәr tәkap i paṅapuy iṅ malendriya,</l>
-                    <l n="c">kaṇḍәh deni kaśaktiniṅ daśamalāṅrurah aṅadәhi polahiṅ tiga,</l>
-                    <l n="d">tan dva pvaṅ tumuvuh muvah mәtu cirinyan ahala mijiliṅ daśendriya.</l>
+                    <l n="a">tṛṣṇāgə̄ṅ mamilət ri saṅ manəmu bhoga karakət ika yan tinamtaman,</l>
+                    <l n="b">tan mantuk purihiṅ śarīra katələr təkap i paṅapuy iṅ malendriya,</l>
+                    <l n="c">kaṇḍəh deni kaśaktiniṅ daśamalāṅrurah aṅadəhi polahiṅ tiga,</l>
+                    <l n="d">tan dva pvaṅ tumuvuh muvah mətu cirinyan ahala mijiliṅ daśendriya.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="c">
@@ -3350,28 +3350,28 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_31.06" n="6">
-                    <l n="a">mevәh saṅ vruhi mūlaniṅ dadi padumya hala hayu tinūtnya yan titah,</l>
-                    <l n="b">lāvan saṅ vәnaṅ ekacitta ri sәḍәṅni patinira matiṅgaleṅ kriya,</l>
+                    <l n="a">mevəh saṅ vruhi mūlaniṅ dadi padumya hala hayu tinūtnya yan titah,</l>
+                    <l n="b">lāvan saṅ vənaṅ ekacitta ri səḍəṅni patinira matiṅgaleṅ kriya,</l>
                     <l n="c">yuktinyan pasilihsilih gatinikaṅ hurip i hananikaṅ pamuktyana,</l>
                     <l n="d">tan tyāgā lumicinlicin ri hananiṅ tiga turuṅ apasah sakeṅ avak.</l>
                 </lg>
                 <lg xml:id="kakavin_31.07" n="7">
-                    <l n="a">dharmādhyakṣani saṅ caturjana ta saṅ ratu kumavaśākәn jagattraya,</l>
+                    <l n="a">dharmādhyakṣani saṅ caturjana ta saṅ ratu kumavaśākən jagattraya,</l>
                     <l n="b">yan sāmpun sira riṅ śivāgama rumakṣa hayunira saṅ ārya paṇḍita,</l>
                     <l n="c">lāvan yan vruh i mūlaniṅ bhuvana vastuniṅ atapa mayajña śūnyatā,</l>
                     <l n="d">ṅke riṅ rājya paḍeki dharma patapan gatinika makabhuktya taṅ sarāt</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="a">
-                            <lem wit="#EdZ">kumavaśakәn</lem>
-                            <rdg wit="#EdSSA">kumavaśākәn</rdg>
+                            <lem wit="#EdZ">kumavaśakən</lem>
+                            <rdg wit="#EdSSA">kumavaśākən</rdg>
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_31.08" n="8">
                     <l n="a">nā liṅ saṅ hyaṅ anaṅga yeki sumahur nṛpatanaya saharṣa taṅ manah,</l>
                     <l n="b">āpan yeki nimittani ṅhulun ameta patapana maṅiṣṭy anugraha,</l>
-                    <l n="c">mahyun paṅgiha seṣṭiniṅ ratu vәnaṅ gumavayakәna dharmasādhana,</l>
-                    <l n="d">yan labdhāvara de manәh kusumacāpa tәkapira bhaṭāra śaṅkara.</l>
+                    <l n="c">mahyun paṅgiha seṣṭiniṅ ratu vənaṅ gumavayakəna dharmasādhana,</l>
+                    <l n="d">yan labdhāvara de manəh kusumacāpa təkapira bhaṭāra śaṅkara.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="c">
@@ -3381,7 +3381,7 @@
                 </listApp>
                 <lg xml:id="kakavin_31.09" n="9">
                     <l n="a">śrī dvaipāyana teki saṅ paranani ṅhulun avaraha riṅ śivāgama,</l>
-                    <l n="b">mvaṅ tekaṅ vukir indrakīla kahananya ya ta pavarahe ṅhulun tәmәn</l>
+                    <l n="b">mvaṅ tekaṅ vukir indrakīla kahananya ya ta pavarahe ṅhulun təmən</l>
                     <l n="c">lāvan yan hana sambhavāṅavara donanika ya tika pājare ṅhulun,</l>
                     <l n="d">saṅ hyaṅ māsiha ri ṅhulun tumulusāvaraha ri kahanan mahāmuni.</l>
                 </lg>
@@ -3389,22 +3389,21 @@
                     <l n="a">liṅ saṅ pārtha maṅakṣamāṅasihasih mamalaku vinarah riṅ iṅgita,</l>
                     <l n="b">lāvan dohnikaṅ indraparvata sakeṅ kahanan i patapan mahāmuni,</l>
                     <l n="c">yekan śīghra bhaṭāra kāma mavarah ri kahananikaṅ indraparvata,</l>
-                    <l n="d">vetan deśanikā mәnәr kadi bahitra kumurәb ahirәṅ magə̄ṅ katon.</l>
+                    <l n="d">vetan deśanikā mənər kadi bahitra kumurəb ahirəṅ magə̄ṅ katon.</l>
                 </lg>
                 <lg xml:id="kakavin_31.11" n="11">
-                    <l n="a">lor vetan sakariṅ girīndra hana pājaran arәcәp apūrva riṅ halәp,</l>
+                    <l n="a">lor vetan sakariṅ girīndra hana pājaran arəcəp apūrva riṅ haləp,</l>
                     <l n="b">śrī dvaipāyana saṅ maṅanti pinakādi sinamayanira hyaṅ īśvara,</l>
-                    <l n="c">yogyānuṅ dunuṅәn pavitra paraniṅ kadi kita gumave parakrama,</l>
-                    <l n="d">tan vvaṅ len sira de nṛpātmaja vәnaṅ mavaraha sira riṅ śivāgama.</l>
+                    <l n="c">yogyānuṅ dunuṅən pavitra paraniṅ kadi kita gumave parakrama,</l>
+                    <l n="d">tan vvaṅ len sira de nṛpātmaja vənaṅ mavaraha sira riṅ śivāgama.</l>
                 </lg>
             </div>
-            <!-- stop 26 April 2023 -->
             <div type="canto" rend="met" n="32" met="śārdūlavikrīḍita" xml:id="kakavin_32">
                 <note type="prosody">+++--+-+---+++-++-=</note>
                 <lg xml:id="kakavin_32.01" n="1">
-                    <l n="a">vvantәn rākṣasa murka śiṣyanira dug durgā bhaṭārīśvarī,</l>
-                    <l n="b">ndan tatkālaniran pamet ri tәmahan saṅ hyaṅ gaṇan paṅdadi</l>
-                    <l n="c">saṅke krodhanirāṅuhuh pәpәt ikaṅ brahmāṇḍa kāṇḍәg sivak,</l>
+                    <l n="a">vvantən rākṣasa murka śiṣyanira dug durgā bhaṭārīśvarī,</l>
+                    <l n="b">ndan tatkālaniran pamet ri təmahan saṅ hyaṅ gaṇan paṅdadi</l>
+                    <l n="c">saṅke krodhanirāṅuhuh pəpət ikaṅ brahmāṇḍa kāṇḍəg sivak,</l>
                     <l n="d">ṅkā tekān umijil sake liḍah irākrak ghurṇitaṅ rāt kabeh.</l>
                 </lg>
                 <lg xml:id="kakavin_32.02" n="2">
@@ -3422,8 +3421,8 @@
                 <lg xml:id="kakavin_32.03" n="3">
                     <l n="a">ṅūni tattvanikaṅ kaśaktini kiteṅ rāt yan pamatyaṅ kala,</l>
                     <l n="b">sakvehniṅ kulavarga dānava kabeh śīrṇā ta denteṅ jagat,</l>
-                    <l n="c">yeka krodha ta yāṅrәṅə̄ ri kahanantan śakti vānīṅ kala,</l>
-                    <l n="d">yekā mahyun aṅadva śakti kalavan rakryan hәlәm riṅ kali,</l>
+                    <l n="c">yeka krodha ta yāṅrəṅə̄ ri kahanantan śakti vānīṅ kala,</l>
+                    <l n="d">yekā mahyun aṅadva śakti kalavan rakryan hələm riṅ kali,</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="c">
@@ -3432,10 +3431,10 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_32.04" n="4">
-                    <l n="a">ndān devīsira saṅ mataṅguh iriyan tan vәtva riṅ dvāpara,</l>
+                    <l n="a">ndān devīsira saṅ mataṅguh iriyan tan vətva riṅ dvāpara,</l>
                     <l n="b">ṅhiṅ yan riṅ kali yeki yan mijila saṅkeṅ śūnyatā liṅnira,</l>
-                    <l n="c">hetunyan humәnәṅ sahiṣṇu sakarәṅ maṅher tәkāniṅ kali,</l>
-                    <l n="d">byaktan vәtva hәlәm ri kālani madantāmatyanārinta ya.</l>
+                    <l n="c">hetunyan humənəṅ sahiṣṇu sakarəṅ maṅher təkāniṅ kali,</l>
+                    <l n="d">byaktan vətva hələm ri kālani madantāmatyanārinta ya.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="a">
@@ -3443,18 +3442,18 @@
                             <rdg wit="#EdSSA">iriyā</rdg>
                          </app>
                     <app loc="c">
-                            <lem wit="#EdZ">tәkāniṅ</lem>
-                            <rdg wit="#EdSSA">tәkaniṅ</rdg>
+                            <lem wit="#EdZ">təkāniṅ</lem>
+                            <rdg wit="#EdSSA">təkaniṅ</rdg>
                          </app>
                 </listApp>
             </div>
             <div type="canto" rend="met" n="33" met="rajanī" xml:id="kakavin_33">
                 <note type="prosody">----+-+---+--+--=</note>
                 <lg xml:id="kakavin_33.01" n="1">
-                    <l n="a">si nalamalā tәhәr tiga śirahnya paḍāsavala,</l>
-                    <l n="b">ikaṅ i tәṅәn khagādhipa śirahnya ya tulya gәlap,</l>
+                    <l n="a">si nalamalā təhər tiga śirahnya paḍāsavala,</l>
+                    <l n="b">ikaṅ i təṅən khagādhipa śirahnya ya tulya gəlap,</l>
                     <l n="c">ikaṅ i kivan liman kadi bhaṭāra gaṇan paṅuhuh,</l>
-                    <l n="d">ikaṅ i tәṅah kalāṅamahamah kadi siṅha jaya.</l>
+                    <l n="d">ikaṅ i təṅah kalāṅamahamah kadi siṅha jaya.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="b">
@@ -3467,9 +3466,9 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_33.02" n="2">
-                    <l n="a">avak ahirәṅ magə̄ṅ kadi gunuṅ sinusun maruhur,</l>
-                    <l n="b">mata kadi sūrya yan vәtu mābaṅ dumilah mapanas,</l>
-                    <l n="c">latulatu kādbhutākrәp ahirәṅ ta halisnya sukәt,</l>
+                    <l n="a">avak ahirəṅ magə̄ṅ kadi gunuṅ sinusun maruhur,</l>
+                    <l n="b">mata kadi sūrya yan vətu mābaṅ dumilah mapanas,</l>
+                    <l n="c">latulatu kādbhutākrəp ahirəṅ ta halisnya sukət,</l>
                     <l n="d">vivaranikaṅ hiruṅ kadi guhā paḍa bhīṣaṇa ya.</l>
                 </lg>
                 <listApp type="apparatus">
@@ -3479,22 +3478,22 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_33.03" n="3">
-                    <l n="a">kadi bәlahiṅ lәmah tutuk ikān umaṅaṅ malapā,</l>
+                    <l n="a">kadi bəlahiṅ ləmah tutuk ikān umaṅaṅ malapā,</l>
                     <l n="b">maṅaladalad liḍahnya kadi bahni murub dumilah,</l>
                     <l n="c">silih alivat siyuṅnya kadi cāpa surādhipa ya,</l>
                     <l n="d">kadi bañuniṅ kavah pilapilunya mabo mahaṅi.</l>
                 </lg>
                 <lg xml:id="kakavin_33.04" n="4">
-                    <l n="a">kumis araverave kadi ḍukut sukәtiṅ pasisī,</l>
-                    <l n="b">kadi bәlahiṅ paraṅ paruṅ ikaṅ mukha tulya karaṅ,</l>
+                    <l n="a">kumis araverave kadi ḍukut sukətiṅ pasisī,</l>
+                    <l n="b">kadi bəlahiṅ paraṅ paruṅ ikaṅ mukha tulya karaṅ,</l>
                     <l n="c">kadi layariṅ baluk limaṅ atus taliṅanya katon,</l>
-                    <l n="d">kadi pusәriṅ pasir lyaṅ i kapə̄nya pәṅuṅ madalәm.</l>
+                    <l n="d">kadi pusəriṅ pasir lyaṅ i kapə̄nya pəṅuṅ madaləm.</l>
                 </lg>
                 <lg xml:id="kakavin_33.05" n="5">
-                    <l n="a">kadi jaladākәlin kәlәn atə̄b tika romanika,</l>
-                    <l n="b">kadi siluk iṅ pasir duni mukhanya karalkaralәn,</l>
-                    <l n="c">yar aṅәnaṅәn riyaṅ vvaṅ umaras kumәtәr tan aris,</l>
-                    <l n="d">kadi ta bhaṭāra rudra ri sәḍәṅnira nṛṣṭi jagat.</l>
+                    <l n="a">kadi jaladākəlin kələn atə̄b tika romanika,</l>
+                    <l n="b">kadi siluk iṅ pasir duni mukhanya karalkaralən,</l>
+                    <l n="c">yar aṅənaṅən riyaṅ vvaṅ umaras kumətər tan aris,</l>
+                    <l n="d">kadi ta bhaṭāra rudra ri səḍəṅnira nṛṣṭi jagat.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="c">
@@ -3504,8 +3503,8 @@
                 </listApp>
                 <lg xml:id="kakavin_33.06" n="6">
                     <l n="a">gaganacarāṅlayaṅ kadi ta vāhana rūpanikā,</l>
-                    <l n="b">vәnaṅ aḍәmit hanan vәnaṅ agə̄ṅ ya sakahyunikā,</l>
-                    <l n="c">kadi ta gәrәh svaranya karәṅə̄ prakaṭā gumuruh,</l>
+                    <l n="b">vənaṅ aḍəmit hanan vənaṅ agə̄ṅ ya sakahyunikā,</l>
+                    <l n="c">kadi ta gərəh svaranya karəṅə̄ prakaṭā gumuruh,</l>
                     <l n="d">kadi ta ya rāvaṇāṅamahamah ri bhaṭāra hari.</l>
                 </lg>
                 <listApp type="apparatus">
@@ -3515,7 +3514,7 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_33.07" n="7">
-                    <l n="a">hana ri tәlәṅnikaṅ jaladhi yeka dumeh ya taya,</l>
+                    <l n="a">hana ri tələṅnikaṅ jaladhi yeka dumeh ya taya,</l>
                     <l n="b">sahanahaneṅ tasik ya pinaranya tatan matakut,</l>
                     <l n="c">ri punuk ikaṅ karaṅ bhujaga yeka parantinikā,</l>
                     <l n="d">ya tika dumeh ya tan hana kapaṅgiha de nṛpati.</l>
@@ -3523,118 +3522,118 @@
                 <lg xml:id="kakavin_33.08" n="8">
                     <l n="a">kunaṅ iki tattvabhūtanika yan hilaṅeṅ samara,</l>
                     <l n="b">hana luṅid iṅ śivasmṛti vajanya ya cintamaṇi,</l>
-                    <l n="c">niyata matīriyāṅduki sәḍәṅniṅ aṅuñci pәpәt,</l>
-                    <l n="d">hana panulaktulak tala ṅaranya vәnaṅ paṅalah.</l>
+                    <l n="c">niyata matīriyāṅduki səḍəṅniṅ aṅuñci pəpət,</l>
+                    <l n="d">hana panulaktulak tala ṅaranya vənaṅ paṅalah.</l>
                 </lg>
                 <lg xml:id="kakavin_33.09" n="9">
                     <l n="a">niyata hilaṅnya deniṅ asamādhi ya cintamaṇi,</l>
                     <l n="b">apan ika śatruniṅ tapa musuhniṅ asādhya hayu,</l>
-                    <l n="c">hana ri havakta tan hana vaneh tikaṅ astra lәvih,</l>
-                    <l n="d">iṅәtiṅәtәn ta de nṛpati kottamaniṅ vinuvus.</l>
+                    <l n="c">hana ri havakta tan hana vaneh tikaṅ astra ləvih,</l>
+                    <l n="d">iṅətiṅətən ta de nṛpati kottamaniṅ vinuvus.</l>
                 </lg>
                 <lg xml:id="kakavin_33.10" n="10">
-                    <l n="a">kunaṅ i mәnenya ya ḍatәṅ ahayva ta saṅ nṛpati,</l>
-                    <l n="b">palәpalәh iṅ musuh lәkasi hayva tatan matihaṅ,</l>
+                    <l n="a">kunaṅ i mənenya ya ḍatəṅ ahayva ta saṅ nṛpati,</l>
+                    <l n="b">paləpaləh iṅ musuh ləkasi hayva tatan matihaṅ,</l>
                     <l n="c">kami muliheṅ surālaya lavan suraratnavadhū,</l>
-                    <l n="d">nāhan ika pājariṅ smara parәṅ sira mūr adulur.</l>
+                    <l n="d">nāhan ika pājariṅ smara parəṅ sira mūr adulur.</l>
                 </lg>
                 <lg xml:id="kakavin_33.11" n="11">
-                    <l n="a">hasәpi ta saṅ nṛpātmaja ri kārinireṅ pasisī,</l>
-                    <l n="b">humәnәṅ ikaṅ mayūra kadi rovaṅiran paṅaraṅ,</l>
-                    <l n="c">sәkar alunut haneṅ vatu lavan lәpihan katәmu,</l>
+                    <l n="a">hasəpi ta saṅ nṛpātmaja ri kārinireṅ pasisī,</l>
+                    <l n="b">humənəṅ ikaṅ mayūra kadi rovaṅiran paṅaraṅ,</l>
+                    <l n="c">səkar alunut haneṅ vatu lavan ləpihan katəmu,</l>
                     <l n="d">vinaca vijīnya bhāsa kakavinya turuṅ sayati.</l>
                 </lg>
                 <lg xml:id="kakavin_33.12" n="12">
-                    <l n="a">ya ta pamәkasnikaṅ suravadhū pavilāśa lәṅәṅ,</l>
-                    <l n="b">ri tәpinikaṅ samudra kahananyan amukti laṅə̄,</l>
-                    <l n="c">hana ta puḍak turuṅ tulus isinya tikā satugәl,</l>
+                    <l n="a">ya ta paməkasnikaṅ suravadhū pavilāśa ləṅəṅ,</l>
+                    <l n="b">ri təpinikaṅ samudra kahananyan amukti laṅə̄,</l>
+                    <l n="c">hana ta puḍak turuṅ tulus isinya tikā satugəl,</l>
                     <l n="d">kalavan ikaṅ sadak gadiṅ i sornya pilih panulis.</l>
                 </lg>
                 <lg xml:id="kakavin_33.13" n="13">
-                    <l n="a">kavәlas arәp sәkarnya kasirir tumibeṅ pasisī,</l>
-                    <l n="b">milu mavәnәs gaḍuṅnika lume hana riṅ paraṅan,</l>
-                    <l n="c">hana ta sәkar pilih paṅuliṅanya mapet kalaṅə̄n,</l>
-                    <l n="d">paṅisi tibeṅ karaṅ lavan ikaṅ maṅunәṅ malunut.</l>
+                    <l n="a">kavəlas arəp səkarnya kasirir tumibeṅ pasisī,</l>
+                    <l n="b">milu mavənəs gaḍuṅnika lume hana riṅ paraṅan,</l>
+                    <l n="c">hana ta səkar pilih paṅuliṅanya mapet kalaṅə̄n,</l>
+                    <l n="d">paṅisi tibeṅ karaṅ lavan ikaṅ maṅunəṅ malunut.</l>
                 </lg>
                 <lg xml:id="kakavin_33.14" n="14">
-                    <l n="a">asana lәvas lavə̄nya kadi cihna rakәt ri pipi,</l>
-                    <l n="b">kalavanikaṅ mәnur niyata ṅūni ya sumpiṅ ikā,</l>
-                    <l n="c">ya ta pinipilnire nәpәpakәn riṅ iruṅ vәkasan,</l>
-                    <l n="d">lagi mamәkul sәkar sira hanan vagugәn ri hati.</l>
+                    <l n="a">asana ləvas lavə̄nya kadi cihna rakət ri pipi,</l>
+                    <l n="b">kalavanikaṅ mənur niyata ṅūni ya sumpiṅ ikā,</l>
+                    <l n="c">ya ta pinipilnire nəpəpakən riṅ iruṅ vəkasan,</l>
+                    <l n="d">lagi maməkul səkar sira hanan vagugən ri hati.</l>
                 </lg>
                 <lg xml:id="kakavin_33.15" n="15">
-                    <l n="a">nṛpasuta lәṅlәṅ epu haṅәsah sira tan tiṅgәnәsәn,</l>
-                    <l n="b">lagi tumiliṅ siran rәṅәrәṅə̄n tәkap iṅ bhramara,</l>
+                    <l n="a">nṛpasuta ləṅləṅ epu haṅəsah sira tan tiṅgənəsən,</l>
+                    <l n="b">lagi tumiliṅ siran rəṅərəṅə̄n təkap iṅ bhramara,</l>
                     <l n="c">riris adulur sadāgati mirir ya manisni sikuṅ,</l>
-                    <l n="d">maṅaṅәnaṅәn ta saṅ nṛpatiputra rikaṅ parana.</l>
+                    <l n="d">maṅaṅənaṅən ta saṅ nṛpatiputra rikaṅ parana.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="34" met="pr̥thvītala" xml:id="kakavin_34">
                 <note type="prosody">-+---+-+---+-++-=</note>
                 <lg xml:id="kakavin_34.01" n="1">
                     <l n="a">narendra mulat iṅ laṅit paran ikaṅ tinon kādbhutha,</l>
-                    <l n="b">maṅuṅkuli pasir samar kadi kukus madәg riṅ bañu,</l>
-                    <l n="c">hanan kadi gunuṅ mibәr kadi gәrәh kәtugniṅ laṅit,</l>
-                    <l n="d">bañunya kumusuh tәkapnikaṅ aṅin manub miṇḍuhur.</l>
+                    <l n="b">maṅuṅkuli pasir samar kadi kukus madəg riṅ bañu,</l>
+                    <l n="c">hanan kadi gunuṅ mibər kadi gərəh kətugniṅ laṅit,</l>
+                    <l n="d">bañunya kumusuh təkapnikaṅ aṅin manub miṇḍuhur.</l>
                 </lg>
                 <lg xml:id="kakavin_34.02" n="2">
-                    <l n="a">rikā ta yan avas katon kala piśāca tan len ḍatәṅ,</l>
-                    <l n="b">sakeṅ tәṅah ikaṅ pasir huvus amukti mīnāvәrə̄,</l>
-                    <l n="c">hanān kasulitәn tutuknya kinavilnya deniṅ tamah,</l>
-                    <l n="d">siyuṅnya matavan pәsut kaburayut lavan lәmbvara.</l>
+                    <l n="a">rikā ta yan avas katon kala piśāca tan len ḍatəṅ,</l>
+                    <l n="b">sakeṅ təṅah ikaṅ pasir huvus amukti mīnāvərə̄,</l>
+                    <l n="c">hanān kasulitən tutuknya kinavilnya deniṅ tamah,</l>
+                    <l n="d">siyuṅnya matavan pəsut kaburayut lavan ləmbvara.</l>
                 </lg>
                 <lg xml:id="kakavin_34.03" n="3">
-                    <l n="a">hane nigitigit vaneh kasәlapiṅ bahәm len gaḍiṅ,</l>
+                    <l n="a">hane nigitigit vaneh kasəlapiṅ bahəm len gaḍiṅ,</l>
                     <l n="b">patuknya maluṅid mabaṅ kasavitan dagiṅ len usus,</l>
                     <l n="c">hanān kadi bhaṭāra kāla mamaṅun saray kādbhuta,</l>
-                    <l n="d">tәkāṅamahamah sayojana ruhurnya len gәṅnika.</l>
+                    <l n="d">təkāṅamahamah sayojana ruhurnya len gəṅnika.</l>
                 </lg>
                 <lg xml:id="kakavin_34.04" n="4">
-                    <l n="a">samantara katon tikaṅ nalamalāṅadәg riṅ karaṅ,</l>
+                    <l n="a">samantara katon tikaṅ nalamalāṅadəg riṅ karaṅ,</l>
                     <l n="b">mulat ri kahanan saṅ arjuna paran kunaṅ liṅnika,</l>
-                    <l n="c">katon ta sira denya śīghra mavәlu vulatnyārәṅu,</l>
+                    <l n="c">katon ta sira denya śīghra mavəlu vulatnyārəṅu,</l>
                     <l n="d">vvaṅ ekaki ya tah manuṅgal aṅamuṅ nāhan liṅnika.</l>
                 </lg>
                 <lg xml:id="kakavin_34.05" n="5">
                     <l n="a">katon tikanaṅ astra denya kalavan laras taṅkulak,</l>
-                    <l n="b">lavan kavaca ratna sampun ahalәp tikaṅ bhūsana,</l>
-                    <l n="c">hyaṅ indra ri hiḍәpnya tan hana vaneh katәmvīrika,</l>
+                    <l n="b">lavan kavaca ratna sampun ahaləp tikaṅ bhūsana,</l>
+                    <l n="c">hyaṅ indra ri hiḍəpnya tan hana vaneh katəmvīrika,</l>
                     <l n="d">ya hetunika yan panantva humasə̄ ri saṅ bhūpati.</l>
                 </lg>
                 <lg xml:id="kakavin_34.06" n="6">
                     <l n="a">arah paranikā gatinta masabhā rikeṅ tāṭaka,</l>
-                    <l n="b">tuvin lituhajәṅ mabhūsana maṇik surūpāhalәp,</l>
-                    <l n="c">surāpsara kunaṅ kiteki maṅәnәs mahapet laṅə̄,</l>
+                    <l n="b">tuvin lituhajəṅ mabhūsana maṇik surūpāhaləp,</l>
+                    <l n="c">surāpsara kunaṅ kiteki maṅənəs mahapet laṅə̄,</l>
                     <l n="d">varah tāku ri donyu yan syapa ṅaranta pājar kita.</l>
                 </lg>
                 <lg xml:id="kakavin_34.07" n="7">
                     <l n="a">nāhan vuvus ikaṅ piśāca kala yan patakvan ṅaran,</l>
                     <l n="b">sagadgada manah nṛpātmaja vavaṅ sirājar ṅaran,</l>
                     <l n="c">ṅhulun katiki saṅ dhanāñjaya ṅaranku riṅ rāt gahan,</l>
-                    <l n="d">mareṅ vukir ameta śūnya patapan ya donkun ḍatәṅ.</l>
+                    <l n="d">mareṅ vukir ameta śūnya patapan ya donkun ḍatəṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_34.08" n="8">
                     <l n="a">nāhan varah i saṅ dhanāñjaya vavaṅ tikaṅ rākṣasa,</l>
-                    <l n="b">masə̄ṅit aṅadәg kamānavibhavanyan aṅrik humuṅ,</l>
-                    <l n="c">pәpәt pәnuh ikaṅ jagat tәkap i śabdaniṅ rākṣasa,</l>
-                    <l n="d">kavәs tiḍәm ikaṅ surāvәnәs alek hyaṅ arkākucәm.</l>
+                    <l n="b">masə̄ṅit aṅadəg kamānavibhavanyan aṅrik humuṅ,</l>
+                    <l n="c">pəpət pənuh ikaṅ jagat təkap i śabdaniṅ rākṣasa,</l>
+                    <l n="d">kavəs tiḍəm ikaṅ surāvənəs alek hyaṅ arkākucəm.</l>
                 </lg>
                 <lg xml:id="kakavin_34.09" n="9">
                     <l n="a">vavaṅ ya maṅavil gunuṅ kabarubuh sivak taṅ karaṅ,</l>
                     <l n="b">katūt pasīnikaṅ gunuṅ ya ḍinavutnya tan kārkaśa,</l>
-                    <l n="c">pәṅuṅ huvuṅuvuṅ luvaṅya hinuṅaṅ katon jronikā,</l>
+                    <l n="c">pəṅuṅ huvuṅuvuṅ luvaṅya hinuṅaṅ katon jronikā,</l>
                     <l n="d">taṅan kiva ya śīghra yan kadi marindi tan pāntara.</l>
                 </lg>
                 <lg xml:id="kakavin_34.10" n="10">
-                    <l n="a">narendra matihaṅ śarottama tәlas madan bhūsana,</l>
-                    <l n="b">sapājar ira saṅ manobhava ya ṅūni keṅәtnira,</l>
-                    <l n="c">ya hetunira yan pacintya humәnәṅ tatan saṅśaya,</l>
+                    <l n="a">narendra matihaṅ śarottama təlas madan bhūsana,</l>
+                    <l n="b">sapājar ira saṅ manobhava ya ṅūni keṅətnira,</l>
+                    <l n="c">ya hetunira yan pacintya humənəṅ tatan saṅśaya,</l>
                     <l n="d">hapan vruh i katattvaniṅ kala dumeh sirādan muvah.</l>
                 </lg>
                 <lg xml:id="kakavin_34.11" n="11">
                     <l n="a">tekānudiṅi taṅ kalāṅāmahamah ri saṅ bhūpati,</l>
                     <l n="b">ayay narakajanma ko pva paṅaran si pārthādhama,</l>
-                    <l n="c">prayojananikiṅ kalātri malayan ḍatәṅ ko harah,</l>
+                    <l n="c">prayojananikiṅ kalātri malayan ḍatəṅ ko harah,</l>
                     <l n="d">nda mah tamahamah gunuṅ vatu tikāṅ umatyā ri ko.</l>
                 </lg>
             </div>
@@ -3642,95 +3641,95 @@
                 <note type="prosody">-+---+-+---+--+--=</note>
                 <!--<div type="canto" rend="met" n="35" met="dhṛti group" xml:id="kakavin_35">  -->
                 <lg xml:id="kakavin_35.01" n="1">
-                    <l n="a">nahan ta vacananyan aṅgrәgut aṅuṇḍa gunuṅ maruhur,</l>
+                    <l n="a">nahan ta vacananyan aṅgrəgut aṅuṇḍa gunuṅ maruhur,</l>
                     <l n="b">narendra mamapag riṅ astra śara bahni murub dumilah,</l>
-                    <l n="c">prakāṭa sumәnə̄ ya riṅ gagana maṅibәkiṅ bhuvana,</l>
-                    <l n="d">ilaṅ matәmahan lәbu sapaṅasәnikanaṅ kalana.</l>
+                    <l n="c">prakāṭa sumənə̄ ya riṅ gagana maṅibəkiṅ bhuvana,</l>
+                    <l n="d">ilaṅ matəmahan ləbu sapaṅasənikanaṅ kalana.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="c">
-                            <lem wit="#EdZ">maṅibәkiṅ</lem>
-                            <rdg wit="#EdSSA">maṅibәki</rdg>
+                            <lem wit="#EdZ">maṅibəkiṅ</lem>
+                            <rdg wit="#EdSSA">maṅibəki</rdg>
                          </app>
                 </listApp>
-                <!-- Z has no text here, but the reading of the etext is maṅibәkiṅ -->
+                <!-- Z has no text here, but the reading of the etext is maṅibəkiṅ -->
                 <lg xml:id="kakavin_35.02" n="2">
-                    <l n="a">gәsәṅ sahananiṅ tahәn ri tәpiniṅ hulusan kahava,</l>
-                    <l n="b">tәkapnikanaṅ astra bahni dumudug tәka riṅ viyati,</l>
-                    <l n="c">paḍāvrәg alayū tikaṅ sura kabeh mavәdīṅ pralaya,</l>
-                    <l n="d">tumon ri pamaṅan hyaṅ agniśara tan kavәnaṅ tinahәn.</l>
+                    <l n="a">gəsəṅ sahananiṅ tahən ri təpiniṅ hulusan kahava,</l>
+                    <l n="b">təkapnikanaṅ astra bahni dumudug təka riṅ viyati,</l>
+                    <l n="c">paḍāvrəg alayū tikaṅ sura kabeh mavədīṅ pralaya,</l>
+                    <l n="d">tumon ri pamaṅan hyaṅ agniśara tan kavənaṅ tinahən.</l>
                 </lg>
                 <lg xml:id="kakavin_35.03" n="3">
-                    <l n="a">muvah ya maṅalap karaṅ bhujaga sevu ḍәpanya gәnәp,</l>
+                    <l n="a">muvah ya maṅalap karaṅ bhujaga sevu ḍəpanya gənəp,</l>
                     <l n="b">ruhurnya davanya kadi bajra makas maluṅid,</l>
-                    <l n="c">ya pandәmakәna yeka maṅuhuh sahasānudiṅi,</l>
-                    <l n="d">sinep rinuhunan riṅ astra śara bahni tәkap nṛpati.</l>
+                    <l n="c">ya pandəmakəna yeka maṅuhuh sahasānudiṅi,</l>
+                    <l n="d">sinep rinuhunan riṅ astra śara bahni təkap nṛpati.</l>
                 </lg>
                 <lg xml:id="kakavin_35.04" n="4">
                     <l n="a">ya hetunika yan masə̄ṅit aṅalap ta ya śūla bisa</l>
-                    <l n="b">saṅaṅ ḍәpa davanya gə̄ṅnika satal saha kasnya murub</l>
-                    <l n="c">tumindak aṅusap lәmah ta ya manūdiṅ amuṣṭi lipuṅ</l>
-                    <l n="d">taṅan kiva maṅuṇḍa mālih tәṅәn ya mapet pamәdi</l>
+                    <l n="b">saṅaṅ ḍəpa davanya gə̄ṅnika satal saha kasnya murub</l>
+                    <l n="c">tumindak aṅusap ləmah ta ya manūdiṅ amuṣṭi lipuṅ</l>
+                    <l n="d">taṅan kiva maṅuṇḍa mālih təṅən ya mapet pamədi</l>
                 </lg>
                 <lg xml:id="kakavin_35.05" n="5">
-                    <l n="a">huvusnika masə̄ ta yaṅgәlәm arәs muvah iṅ lumihat,</l>
-                    <l n="b">matanya mavәlū mabaṅ kadi ta sūrya sәḍәṅ dumilah,</l>
+                    <l n="a">huvusnika masə̄ ta yaṅgələm arəs muvah iṅ lumihat,</l>
+                    <l n="b">matanya mavəlū mabaṅ kadi ta sūrya səḍəṅ dumilah,</l>
                     <l n="c">cihah ta mahamah vulat ryaku nihan ta lipuṅku murub,</l>
-                    <l n="d">umatyana ri ko vikū narakajanma na liṅnikahәn.</l>
+                    <l n="d">umatyana ri ko vikū narakajanma na liṅnikahən.</l>
                 </lg>
                 <lg xml:id="kakavin_35.06" n="6">
-                    <l n="a">narendra matihaṅ śarottama tәlas pinasaṅnira ya,</l>
+                    <l n="a">narendra matihaṅ śarottama təlas pinasaṅnira ya,</l>
                     <l n="b">tulak tala minuṣṭi rovaṅika bāyu masātma śara,</l>
-                    <l n="c">aṅinya mamusus gunuṅ kabarubuh gumuruh kumәtug</l>
-                    <l n="d">punah sahananiṅ tahәn kadi lәbū kumukus ya katūb</l>
+                    <l n="c">aṅinya mamusus gunuṅ kabarubuh gumuruh kumətug</l>
+                    <l n="d">punah sahananiṅ tahən kadi ləbū kumukus ya katūb</l>
                 </lg>
                 <lg xml:id="kakavin_35.07" n="7">
-                    <l n="a">ikaṅ nalamalāṅadәg kavәvәgәn ti tәṅahniṅ aṅin</l>
-                    <l n="b">pәtәṅ tәkap i śaktiniṅ śarana bāyu masātma śara</l>
+                    <l n="a">ikaṅ nalamalāṅadəg kavəvəgən ti təṅahniṅ aṅin</l>
+                    <l n="b">pətəṅ təkap i śaktiniṅ śarana bāyu masātma śara</l>
                     <l n="c">anusmaraṇa tan surudnika hilaṅ tikaṅ astra katub</l>
-                    <l n="d">tikәl kahabalaṅ ta śūlanika sāk tumibeṅ jaladhi</l>
+                    <l n="d">tikəl kahabalaṅ ta śūlanika sāk tumibeṅ jaladhi</l>
                 </lg>
                 <lg xml:id="kakavin_35.08" n="8">
-                    <l n="a">umūr ya sakarәṅ madan manah acintya vara prabhava,</l>
-                    <l n="b">aneka vәkasiṅ kaśaktin atikādbhuta riṅ katara,</l>
-                    <l n="c">vәnaṅ gumәsәṅeṅ sarāt sahananiṅ surajanma kabeh,</l>
-                    <l n="d">savaṅnya kadi saptasūrya dumәlə̄ tәkaniṅ pralaya.</l>
+                    <l n="a">umūr ya sakarəṅ madan manah acintya vara prabhava,</l>
+                    <l n="b">aneka vəkasiṅ kaśaktin atikādbhuta riṅ katara,</l>
+                    <l n="c">vənaṅ guməsəṅeṅ sarāt sahananiṅ surajanma kabeh,</l>
+                    <l n="d">savaṅnya kadi saptasūrya dumələ̄ təkaniṅ pralaya.</l>
                 </lg>
                 <lg xml:id="kakavin_35.09" n="9">
                     <l n="a">yadin maluya śūnya taṅ bhuvana denya na lor na kidul</l>
-                    <l n="b">lāvan ta ya lәmah laṅit hilaṅa denya tәkeṅ jaladhi</l>
-                    <l n="c">yan ahyuna ta meman iṅ samara liṅnya ya dadyakәna</l>
-                    <l n="d">ya hetunika yan payoga humәnәṅ ya maṅeka hiḍәp.</l>
+                    <l n="b">lāvan ta ya ləmah laṅit hilaṅa denya təkeṅ jaladhi</l>
+                    <l n="c">yan ahyuna ta meman iṅ samara liṅnya ya dadyakəna</l>
+                    <l n="d">ya hetunika yan payoga humənəṅ ya maṅeka hiḍəp.</l>
                 </lg>
                 <lg xml:id="kakavin_35.10" n="10">
-                    <l n="a">enak mara hәniṅnya tan dva manarira bhaṭāra kala,</l>
-                    <l n="b">agə̄ṅ dumudug iṅ laṅit ruhur ikāmәkasīṅ aruhur,</l>
-                    <l n="c">taṅanya gumagap surālaya kavәs tikaṅ indrapada,</l>
-                    <l n="d">hyaṅ arka matakut kasuṇḍul alayū sumurup makucәm.</l>
+                    <l n="a">enak mara həniṅnya tan dva manarira bhaṭāra kala,</l>
+                    <l n="b">agə̄ṅ dumudug iṅ laṅit ruhur ikāməkasīṅ aruhur,</l>
+                    <l n="c">taṅanya gumagap surālaya kavəs tikaṅ indrapada,</l>
+                    <l n="d">hyaṅ arka matakut kasuṇḍul alayū sumurup makucəm.</l>
                 </lg>
                 <lg xml:id="kakavin_35.11" n="11">
-                    <l n="a">lumaṅkah aṅalor kahәnti katikaṅ bhuvanāṇḍa kabeh,</l>
+                    <l n="a">lumaṅkah aṅalor kahənti katikaṅ bhuvanāṇḍa kabeh,</l>
                     <l n="b">kasat bañunikaṅ samudra tinavunya ri jə̄ṅnya pisan,</l>
-                    <l n="c">ivaknika katūt kasaṅsaṅ i sukunya pәsut vuhaya,</l>
-                    <l n="d">hanan kaburayut kasambit i vulunya savaṅ kapukәt.</l>
+                    <l n="c">ivaknika katūt kasaṅsaṅ i sukunya pəsut vuhaya,</l>
+                    <l n="d">hanan kaburayut kasambit i vulunya savaṅ kapukət.</l>
                 </lg>
                 <lg xml:id="kakavin_35.12" n="12">
-                    <l n="a">lәmah pracalitākәdut kadi ginañjuh ikaṅ pṛthivī,</l>
-                    <l n="b">hanān kadi midə̄ṅ tikaṅ bhūvana denya tәkeṅ gagana,</l>
-                    <l n="c">gunuṅ kadi bitin pracaṇḍa gumivaṅ kadi cakra midәr,</l>
-                    <l n="d">rәbah kabarubuh tikaṅ kayu kabeh sahaneṅ acala.</l>
+                    <l n="a">ləmah pracalitākədut kadi ginañjuh ikaṅ pṛthivī,</l>
+                    <l n="b">hanān kadi midə̄ṅ tikaṅ bhūvana denya təkeṅ gagana,</l>
+                    <l n="c">gunuṅ kadi bitin pracaṇḍa gumivaṅ kadi cakra midər,</l>
+                    <l n="d">rəbah kabarubuh tikaṅ kayu kabeh sahaneṅ acala.</l>
                 </lg>
                 <lg xml:id="kakavin_35.13" n="13">
-                    <l n="a">paḍāvrәg alayū tapatapa haneṅ giriśūnya vana</l>
-                    <l n="b">kasuṅsaṅ apuyәṅ kajәmbak avalik hana kontal adoh,</l>
+                    <l n="a">paḍāvrəg alayū tapatapa haneṅ giriśūnya vana</l>
+                    <l n="b">kasuṅsaṅ apuyəṅ kajəmbak avalik hana kontal adoh,</l>
                     <l n="c">hanan vuvus i matya liṅnika vuruṅ yan aminta tuluṅ,</l>
                     <l n="d">vaneh muna vuruṅ ndatan tulus apan ya masambat avū.</l>
                 </lg>
                 <lg xml:id="kakavin_35.14" n="14">
-                    <l n="a">samaṅkanani śaktiniṅ nalamalā mәpәkīṅ bhuvana,</l>
+                    <l n="a">samaṅkanani śaktiniṅ nalamalā məpəkīṅ bhuvana,</l>
                     <l n="b">ndatan tuhu bhisanya pan kali hinernya yadin mijila,</l>
-                    <l n="c">kunaṅ pva tәkap iṅ kamūrkhan i hatinya pәtәṅ sumaput,</l>
-                    <l n="d">ya hetunika yan parāharәp anīrṇakәneṅ nṛpati.</l>
+                    <l n="c">kunaṅ pva təkap iṅ kamūrkhan i hatinya pətəṅ sumaput,</l>
+                    <l n="d">ya hetunika yan parāharəp anīrṇakəneṅ nṛpati.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="36" met="--+--+--+-+=" xml:id="kakavin_36">
@@ -3750,16 +3749,16 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_36.02" n="2">
-                    <l n="a">humәnәṅ ta narendra maṅekacitta,</l>
-                    <l n="b">patitisniṅ acintya tәlas pinәh ya,</l>
+                    <l n="a">humənəṅ ta narendra maṅekacitta,</l>
+                    <l n="b">patitisniṅ acintya təlas pinəh ya,</l>
                     <l n="c">pinasaṅnira taṅ vara pañcatīrtha,</l>
-                    <l n="d">makagәgvan ikaṅ taya śūnya laṅgәṅ.</l>
+                    <l n="d">makagəgvan ikaṅ taya śūnya laṅgəṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_36.03" n="3">
                     <l n="a">ri huvusniṅ amiśra śarīra śūnya,</l>
                     <l n="b">manarīra ta saṅ hyaṅ aṅekapakṣa,</l>
-                    <l n="c">bhuvanāṇḍa kabeh humәnәṅ katikṣṇan,</l>
-                    <l n="d">tәkapiṅ nala cintamaṇī samādhi.</l>
+                    <l n="c">bhuvanāṇḍa kabeh humənəṅ katikṣṇan,</l>
+                    <l n="d">təkapiṅ nala cintamaṇī samādhi.</l>
                 </lg>
                 <listApp type="apparatus">
                     <app loc="d">
@@ -3769,7 +3768,7 @@
                          </app>
                 </listApp>
                 <lg xml:id="kakavin_36.04" n="4">
-                    <l n="a">sumәnə̄ ta bhaṭāra jagatpramāṇa,</l>
+                    <l n="a">sumənə̄ ta bhaṭāra jagatpramāṇa,</l>
                     <l n="b">sakarī nāda niṣkala sūkṣmatattva,</l>
                     <l n="c">mapa rūpa bhaṭāra rikaṅ samaṅkā,</l>
                     <l n="d">taya varṇa luput sira yan vinastu.</l>
@@ -3783,20 +3782,20 @@
                 <lg xml:id="kakavin_36.05" n="5">
                     <l n="a">savulatnikanaṅ kala śiṣya durgā,</l>
                     <l n="b">ri narendra katon ta bhaṭāra denya,</l>
-                    <l n="c">maṅadәg ri lalāṭa narendraputra,</l>
-                    <l n="d">kadi teja sәnə̄nira sarvavarṇa.</l>
+                    <l n="c">maṅadəg ri lalāṭa narendraputra,</l>
+                    <l n="d">kadi teja sənə̄nira sarvavarṇa.</l>
                 </lg>
                 <lg xml:id="kakavin_36.06" n="6">
-                    <l n="a">ya dumehnikanaṅ kala yan mavәdya,</l>
+                    <l n="a">ya dumehnikanaṅ kala yan mavədya,</l>
                     <l n="b">matakut ri bhaṭāra jagat gurutva,</l>
-                    <l n="c">sira teki vәkasniṅ anṛṣṭi siddhi,</l>
+                    <l n="c">sira teki vəkasniṅ anṛṣṭi siddhi,</l>
                     <l n="d">ya dumehnika yan matakut katona,</l>
                 </lg>
                 <!-- end 26 April 2023 -->
                 <lg xml:id="kakavin_36.07" n="7">
                     <l n="a">malayū tikanaṅ kalā keraṅan ya,</l>
-                    <l n="b">masәnə̄tan amor ya riṅ antarikṣa,</l>
-                    <l n="c">maṅguhuh ya maliṇḍuṅan iṅ ganākrәp,</l>
+                    <l n="b">masənə̄ tan amor ya riṅ antarikṣa,</l>
+                    <l n="c">maṅguhuh ya maliṇḍuṅan iṅ ghanākrəp,</l>
                     <l n="d">sumave riṅ aran pravarārya pārtha.</l>
                 </lg>
                 <lg xml:id="kakavin_36.08" n="8">
@@ -3806,50 +3805,60 @@
                     <l n="d">tan umātya ri ko pvāku kaṣṭa hīna,</l>
                 </lg>
                 <lg xml:id="kakavin_36.09" n="9">
-                    <l n="a">hәlәm iṅ kali yan vijilāku riṅ rāt,</l>
+                    <l n="a">hələm iṅ kali yan vijilāku riṅ rāt,</l>
                     <l n="b">kalakeya tikā ṅaranaṅkva tan len,</l>
-                    <l n="c">tiga sanak ikaṅ kala dadyanaṅkva,</l>
+                    <l n="c">tiga sānak ikaṅ kala dadyanaṅkva,</l>
                     <l n="d">irikākun umatyana pāṇḍava rva.</l>
                 </lg>
                 <lg xml:id="kakavin_36.10" n="10">
                     <l n="a">hana rākṣasa sūkṣma hulunku śakti,</l>
-                    <l n="b">manamāna kәdə̄ ya ta dadyananya,</l>
+                    <l n="b">madamāna kədə̄ ya ta dadyananya,</l>
                     <l n="c">ri hatinta tikān umahanya tan len,</l>
-                    <l n="d">ya dumadyakәnāmana citta mūrkha.</l>
+                    <l n="d">ya dumadyakənan madacitta mūrkha.</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="b">
+                            <lem wit="#EdZ">madamāna</lem>
+                            <rdg wit="#EdSSA">manamāna</rdg>
+                         </app>
+                    <app loc="d">
+                            <lem wit="#EdZ">dumadyakənan madacitta </lem>
+                            <rdg wit="#EdSSA">dumadyakənāmana citta</rdg>
+                         </app>
+                </listApp>
                 <lg xml:id="kakavin_36.11" n="11">
-                    <l n="a">irikākun umәtva sakeṅ madanta,</l>
+                    <l n="a">irikākun umətva sakeṅ madanta,</l>
                     <l n="b">taya śūnya tikā havanaṅkva tan dva,</l>
-                    <l n="c">ndan i vādamu sānak akun pamәṅan,</l>
-                    <l n="d">kali yekana herakәnaṅkva maṅke,</l>
+                    <l n="c">ndan i vādamu sānak akun paməṅan,</l>
+                    <l n="d">kali yekana herakənaṅkva maṅke,</l>
                 </lg>
                 <lg xml:id="kakavin_36.12" n="12">
-                    <l n="a">ya ta pājar ikaṅ kala śisya durga,</l>
-                    <l n="b">ri narendra mulat sira tan vigāni,</l>
-                    <l n="c">atәhәr tikanaṅ kala mūr vināśa,</l>
+                    <l n="a">ya ta pājar ikaṅ kala śiṣya durgā,</l>
+                    <l n="b">ri narendra mulat sira tan vighāni,</l>
+                    <l n="c">atəhər tikanaṅ kala mūr vināśa,</l>
                     <l n="d">kadi megha paḍanya hilaṅ kalahrun.</l>
                 </lg>
                 <lg xml:id="kakavin_36.13" n="13">
-                    <l n="a">ri hilaṅnikanaṅ kalā śisya durga,</l>
-                    <l n="b">kavәṅan ta narendra tumon hilaṅnya,</l>
-                    <l n="c">kadi riṅ svapәnekia hilaṅnya sūkṣma,</l>
-                    <l n="d">tәkapiṅ nala cintamaṇin samādhi.</l>
+                    <l n="a">ri hilaṅnikanaṅ kalā śiṣya durgā,</l>
+                    <l n="b">kavəṅan ta narendra tumon hilaṅnya,</l>
+                    <l n="c">kadi riṅ svapəneka hilaṅnya sūkṣma,</l>
+                    <l n="d">təkapiṅ nala cintamaṇin samādhi.</l>
                 </lg>
                 <lg xml:id="kakavin_36.14" n="14">
                     <l n="a">ya dumeh sira saṅ viku tan maṅela,</l>
-                    <l n="b">masamādhi tatan katәṅәr pamūjā,</l>
-                    <l n="c">ndan acintya lәkasnira sūkṣma teka,</l>
-                    <l n="d">vәnaṅ ekaśarīra sirāṅ payajña.</l>
+                    <l n="b">masamādhi tatan katəṅər pamūjā,</l>
+                    <l n="c">ndan acintya ləkasnira sūkṣma teka,</l>
+                    <l n="d">vənaṅ ekaśarīra sirāṅ payajña.</l>
                 </lg>
                 <lg xml:id="kakavin_36.15" n="15">
                     <l n="a">iva maṅkana tā nṛpaputra pārtha,</l>
                     <l n="b">paṅalahnira rākṣasa tan śarāstra,</l>
-                    <l n="c">aradin ya masimpәn alit pamāti,</l>
+                    <l n="c">aradin ya masimpən alit pamāti,</l>
                     <l n="d">sira yogya tinūt sira denta dhīra.</l>
                 </lg>
                 <lg xml:id="kakavin_36.16" n="16">
                     <l n="a">irikā ta narendra madan lumampah,</l>
-                    <l n="b">ḍatәṅeṅ patapan kahanan munīndra,</l>
+                    <l n="b">ḍatəṅeṅ patapan kahanan munīndra,</l>
                     <l n="c">savarah hyaṅ anaṅga tinūt nireka,</l>
                     <l n="d">maṅavetan anūt sira jə̄ṅ iṅ agra.</l>
                 </lg>
@@ -3857,183 +3866,184 @@
             <div type="canto" rend="met" n="37" met="vasantatilakā" xml:id="kakavin_37">
                 <note type="prosody">++-+---+--+-+=</note>
                 <lg xml:id="kakavin_37.01" n="1">
-                    <l n="a">maṇḍәg ta lampah ira deni gәrәhnikaṅ lvah,</l>
-                    <l n="b">lvir śabdaniṅ kala humuṅ juga paṅiḍәpnya,</l>
-                    <l n="c">nәr tvasnirāṅaṅәnaṅәn humәnәṅ katikṣṇan,</l>
-                    <l n="d">dvandvan sirā rәṅәrәṅәn tәkapiṅ piśāca.</l>
+                    <l n="a">maṇḍəg ta lampahira deni gərəhnikaṅ lvah,</l>
+                    <l n="b">lvir śabdaniṅ kala humuṅ juga paṅiḍəpnya,</l>
+                    <l n="c">nər tvasnirāṅaṅənaṅən humənəṅ katikṣṇan,</l>
+                    <l n="d">dvandvan sirā rəṅərəṅən təkapiṅ piśāca.</l>
                 </lg>
                 <lg xml:id="kakavin_37.02" n="2">
                     <l n="a">yekan lumampah anusup sira halas gə̄ṅ,</l>
                     <l n="b">akveh tikaṅ vinulatan paḍa rāmya śobha,</l>
-                    <l n="c">kayvanya kapva masәkar manәḍәṅ kabehnya,</l>
-                    <l n="d">kumbaṅ tumāp riya hanan vahu mūr tan andәl.</l>
+                    <l n="c">kayvanya kapva masəkar manəḍəṅ kabehnya,</l>
+                    <l n="d">kumbaṅ tumāp riya hanan vahu mūr tan andəl.</l>
                 </lg>
                 <lg xml:id="kakavin_37.03" n="3">
-                    <l n="a">mraknyāṅiriṅ ri paṅ ikaṅ kayu teja mәbaṅ,</l>
-                    <l n="b">svecchātәhәr ya manisik mamivir hәlarnya,</l>
+                    <l n="a">mraknyāṅiriṅ ri paṅ ikaṅ kayu teja məbaṅ,</l>
+                    <l n="b">svecchātəhər ya manisik mamivir həlarnya,</l>
                     <l n="c">lyan tekanaṅ maṅiḍukus maturū tan imba,</l>
-                    <l n="d">siṅsal hәlarnya kasilir gumilap hijonya.</l>
+                    <l n="d">siṅsal həlarnya kasilir gumilap hijonya.</l>
                 </lg>
                 <lg xml:id="kakavin_37.04" n="4">
-                    <l n="a">luṅghā ta lampah ira saṅ nṛpaputra pārtha,</l>
+                    <l n="a">luṅghā ta lampahira saṅ nṛpaputra pārtha,</l>
                     <l n="b">yekān kapaṅgih ikanaṅ lvah agə̄ṅ pavitra,</l>
                     <l n="c">tustusnikaṅ bañu sakeṅ vukir indrakīla,</l>
-                    <l n="d">madrәs hilīnya mahәniṅ kadi nīla molah.</l>
+                    <l n="d">madrəs hilīnya mahəniṅ kadi nīla molah.</l>
                 </lg>
                 <lg xml:id="kakavin_37.05" n="5">
                     <l n="a">yekan patīrtha sira saṅ nṛpaputra pārtha,</l>
                     <l n="b">tri śādyaniṅ maśuci lakṣana len rahupnya,</l>
                     <l n="c">sampun maṅastuti sirāyuga mudra cakra,</l>
-                    <l n="d">madyus ta saṅ nṛpatiputra tәhәr makәmkәm.</l>
+                    <l n="d">madyus ta saṅ nṛpatiputra təhər makəmkəm.</l>
                 </lg>
                 <lg xml:id="kakavin_37.06" n="6">
-                    <l n="a">agrah maṅel gәyuh ikaṅ suku len śarīra,</l>
-                    <l n="b">maṅkәp gigirnira maṅel tәkapiṅ mayuddha,</l>
-                    <l n="c">lāvan tigaṅ vәṅi lavasnira tan kәneṅ mrәm,</l>
-                    <l n="d">mvaṅ tan kәneṅ nasi dumeh sira luhyaṅ ambәk.</l>
+                    <l n="a">agrah maṅel gəyuh ikaṅ suku len śarīra,</l>
+                    <l n="b">maṅkəp gigirnira maṅel təkapiṅ mayuddha,</l>
+                    <l n="c">lāvan tigaṅ vəṅi lavasnira tan kəneṅ mrəm,</l>
+                    <l n="d">mvaṅ tan kəneṅ nasi dumeh sira luhyaṅ ambək.</l>
                 </lg>
                 <lg xml:id="kakavin_37.07" n="7">
-                    <l n="a">rūkṣāvәnәs kadi vavar tikanaṅ śarīra,</l>
-                    <l n="b">ṅrәsnyan pukah kukunikaṅ suku lot kasaṇḍuṅ,</l>
-                    <l n="c">yekan kinə̄m tәhәr sinusur lәmahnya,</l>
-                    <l n="d">vuṅkal hitәm ya ta paluṅguhaniṅ makәmkәm.</l>
+                    <l n="a">rūkṣāvənəs kadi vavar tikanaṅ śarīra,</l>
+                    <l n="b">ṅrəsnyan pukah kukunikaṅ suku lot kasaṇḍuṅ,</l>
+                    <l n="c">yekan kinə̄m təhər sinusur ləmahnya,</l>
+                    <l n="d">vuṅkal hitəm ya ta paluṅguhaniṅ makəmkəm.</l>
                 </lg>
                 <lg xml:id="kakavin_37.08" n="8">
-                    <l n="a">mәntas ta saṅ nṛpatiputra tәlasnirādyus,</l>
-                    <l n="b">enak ta buddhinira denya tәlas matustus,</l>
-                    <l n="c">somyākәmul maṅiḍukus ta sirān paluṅguh,</l>
+                    <l n="a">məntas ta saṅ nṛpatiputra təlasnirādyus,</l>
+                    <l n="b">enak ta buddhinira denya təlas matustus,</l>
+                    <l n="c">somyākəmul maṅiḍukus ta sirān paluṅguh,</l>
                     <l n="d">ri vitnikaṅ kayu manis masamīpa señjaṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_37.09" n="9">
-                    <l n="a">ṅkā teka saṅ nṛpati yan humәnәṅ maṅunṅun,</l>
-                    <l n="b">monәṅ ri saṅ babu lavan kala len saṅ antәn,</l>
-                    <l n="c">yekāsәkәl ri hati luh tәmahanya tan dva,</l>
-                    <l n="d">madrәs vәtunya ri matāmuharosah aṅlih.</l>
+                    <l n="a">ṅkā teka saṅ nṛpati yan humənəṅ maṅunṅun,</l>
+                    <l n="b">monəṅ ri saṅ babu lavan kaka len saṅ antən,</l>
+                    <l n="c">yekāsəkəl ri hati luh təmahanya tan dva,</l>
+                    <l n="d">madrəs vətunya ri matāmuharosah aṅlih.</l>
                 </lg>
+                <!-- transcript has kala -->
                 <lg xml:id="kakavin_37.10" n="10">
-                    <l n="a">maṅkin sirāṅisәkisәk sәsәgәn tan ampәt,</l>
-                    <l n="b">kāṅәn sarāmyaniṅ amukti tәkapnireka,</l>
-                    <l n="c">lāvan rarasniṅ inucap tәkapiṅ vvaṅ adyah,</l>
-                    <l n="d">maṅkin tikaṅ hati pәtәṅ hibәkan laronәṅ.</l>
+                    <l n="a">maṅkin sirāṅisəkisək səsəgən tan ampət,</l>
+                    <l n="b">kāṅən sarāmyaniṅ amukti təkapnireka,</l>
+                    <l n="c">lāvan rarasniṅ inucap təkapiṅ vvaṅ adyah,</l>
+                    <l n="d">maṅkin tikaṅ hati pətəṅ hibəkan laronəṅ.</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="38" met="candravartma" xml:id="kakavin_38">
                  <note type="prosody">+-+---+----=</note>
                 <lg xml:id="kakavin_38.01" n="1">
                     <l n="a">saṅ nṛpātmaja taṅeh laranira yan,</l>
-                    <l n="b">tūt ta riṅ lara hiḍәpnira vulaṅun,</l>
-                    <l n="c">yeka hetunira yan paṅaṅәnaṅәn,</l>
+                    <l n="b">tūt ta riṅ lara hiḍəpnira vulaṅun,</l>
+                    <l n="c">yeka hetunira yan paṅaṅənaṅən,</l>
                     <l n="d">vitnikaṅ kayu pinetnira riṅ ati.</l>
                 </lg>
                 <lg xml:id="kakavin_38.02" n="2">
-                    <l n="a">sampuniṅ lara hilaṅ tәkap ira saṅ,</l>
+                    <l n="a">sampuniṅ lara hilaṅ təkapira saṅ,</l>
                     <l n="b">phalgunāmuhara citta kadi maṇik.</l>
-                    <l n="c">dhīraniṅ hati pinәh lagi tinutur,</l>
+                    <l n="c">dhīraniṅ hati pinəh lagi tinutur,</l>
                     <l n="d">yeka hetuni manahnira malicin.</l>
                 </lg>
                 <lg xml:id="kakavin_38.03" n="3">
-                    <l n="a">vahvadan siran umaṅkata maṅadәg,</l>
-                    <l n="b">yeka yan kasuririṅ sira mapuyәṅ,</l>
-                    <l n="c">deni tisnikaṅ avak tәhәr alapā,</l>
-                    <l n="d">yeka hetuni panonira na kunәṅ.</l>
+                    <l n="a">vahv adan siran umaṅkata maṅadəg,</l>
+                    <l n="b">yeka yan kasuririṅ sira mapuyəṅ,</l>
+                    <l n="c">deni tisnikaṅ avak təhər alapā,</l>
+                    <l n="d">yeka hetuni panonira na kunəṅ.</l>
                 </lg>
                 <lg xml:id="kakavin_38.04" n="4">
                     <l n="a">tana vavaṅ sira lumampah apan aṅel,</l>
                     <l n="b">dohnikaṅ parana yeka vinulatan,</l>
-                    <l n="c">tūt hiriṅ lakunirān panәbunәbu,</l>
+                    <l n="c">tūt hiriṅ lakunirān panəbunəbu,</l>
                     <l n="d">tovi mār suku nirāpamuhara lon.</l>
                 </lg>
                 <lg xml:id="kakavin_38.05" n="5">
-                    <l n="a">mogga tāphala ratәṅ vahu tumiba</l>
-                    <l n="b">naṅka duryan atasak sәḍәṅ amanis</l>
+                    <l n="a">mogga tāphala ratəṅ vahu tumiba</l>
+                    <l n="b">naṅka duryan atasak səḍəṅ amanis</l>
                     <l n="c">yeka teka hinalapnira pinaṅan</l>
-                    <l n="d">tuṣṭa tāmbәk ira māri kaṅәlihan.</l>
+                    <l n="d">tuṣṭa tāmbəkira māri kaṅəlihan.</l>
                 </lg>
                 <lg xml:id="kakavin_38.06" n="6">
-                    <l n="a">tovi yan tinahapan bañu mahәniṅ</l>
+                    <l n="a">tovi yan tinahapan bañu mahəniṅ</l>
                     <l n="b">yeka hetuni manahniran asiga</l>
-                    <l n="c">sampun enak ika taṅ manah umәnәb</l>
+                    <l n="c">sampun enak ika taṅ manah umənəb</l>
                     <l n="d">yeka yan lumaku saṅ nṛpatanaya</l>
                 </lg>
                 <lg xml:id="kakavin_38.07" n="7">
-                    <l n="a">tūt gәgәr lakunirān panәmu laṅə̄</l>
-                    <l n="b">ton tikaṅ sakaparәk ri havanira</l>
-                    <l n="c">kayvan iṅ vana kabeh paḍa masәkar</l>
-                    <l n="d">bāna taṅguli rurū tәkap iṅ aṅin</l>
+                    <l n="a">tūt gəgər lakunirān panəmu laṅə̄</l>
+                    <l n="b">ton tikaṅ sakaparək ri havanira</l>
+                    <l n="c">kayvan iṅ vana kabeh paḍa masəkar</l>
+                    <l n="d">bāna taṅguli rurū təkapiṅ aṅin</l>
                 </lg>
                 <lg xml:id="kakavin_38.08" n="8">
-                    <l n="a">śīghra lampah ira saṅ nṛpatanaya</l>
+                    <l n="a">śīghra lampahira saṅ nṛpatanaya</l>
                     <l n="b">jə̄ṅnikaṅ gunuṅ agə̄ṅ kahalivatan</l>
                     <l n="c">kīrṇa taṅ vinulatan pamuhara kuṅ</l>
                     <l n="d">paṅnikaṅ kayu kabeh paḍa tumayuṅ</l>
                 </lg>
                 <lg xml:id="kakavin_38.09" n="9">
-                    <l n="a">priṅ pәtuṅ hana vuluh gәbaṅ atuha</l>
-                    <l n="b">priṅ pәsiṅ hana pisaṅ gaḍiṅ aphala</l>
+                    <l n="a">priṅ pətuṅ hana vuluh gəbaṅ atuha</l>
+                    <l n="b">priṅ pəsiṅ hana pisaṅ gaḍiṅ aphala</l>
                     <l n="c">len tikaṅ kayu talok hana kaludan</l>
-                    <l n="d">lvā jirәt hana kәbәn paḍali vuni</l>
+                    <l n="d">lvā jirət hana kəbən paḍali vuni</l>
                 </lg>
                 <lg xml:id="kakavin_38.10" n="10">
                     <l n="a">jaṅga hambavaṅ i sornya hana ririh</l>
                     <l n="b">poh limus hvit aritih vilah ariṅin</l>
-                    <l n="c">añjavar vruha limo hana nalәkәt</l>
+                    <l n="c">añjavar vruha limo hana naləkət</l>
                     <l n="d">jāti kumbili tabāṅ vvah ika maṅap</l>
                 </lg>
                 <lg xml:id="kakavin_38.11" n="11">
                     <l n="a">len haneṅ aṅkāna muvah ya vinulatan</l>
                     <l n="b">biṅla muṅguh i kuvuṅnya vahu muṅup</l>
-                    <l n="c">mvaṅ vvah iṅ kәpoh ikāmlәkah amirah</l>
+                    <l n="c">mvaṅ vvah iṅ kəpoh ikāmləkah amirah</l>
                     <l n="d">mesi tuṅgal amaṅun turida lulut.</l>
                 </lg>
                 <lg xml:id="kakavin_38.12" n="12">
-                    <l n="a">jambv abāṅ sәkar ikā ya ta mavulu,</l>
-                    <l n="b">vok hanonya magatәl vvah ika lurū</l>
-                    <l n="c">maṅhәmu ḍaṅus ujaṅnya katitisan</l>
-                    <l n="d">lyab vәrәhnya maputih lagi tumitis.</l>
+                    <l n="a">jambv abāṅ səkar ikā ya ta mavulu,</l>
+                    <l n="b">vok hanonya magatəl vvah ika lurū</l>
+                    <l n="c">maṅhəmu ḍaṅus ujaṅnya katitisan</l>
+                    <l n="d">lyab vərəhnya maputih lagi tumitis.</l>
                 </lg>
                 <lg xml:id="kakavin_38.13" n="13">
-                    <l n="a">len tikaṅ kararapārәpa maṅayuk</l>
-                    <l n="b">pādapāṅlih avәnәs tәkap iṅ aṅin</l>
-                    <l n="c">maṅlәyәp matanikaṅ kidaṅ aturū</l>
+                    <l n="a">len tikaṅ kararapārəpa maṅayuk</l>
+                    <l n="b">pādapāṅlih avənəs təkapiṅ aṅin</l>
+                    <l n="c">maṅləyəp matanikaṅ kidaṅ aturū</l>
                     <l n="d">lvir katus bañunikaṅ vulakan asat</l>
                 </lg>
                 <lg xml:id="kakavin_38.14" n="14">
-                    <l n="a">nyā taṅ aṅrimaṅakәn ri manah ira</l>
+                    <l n="a">nyā taṅ aṅrimaṅakən ri manahira</l>
                     <l n="b">lvirnikaṅ kadi mahā maṅiṅiniṅin</l>
-                    <l n="c">riṅ nṛpātmaja mapәk i manahira</l>
-                    <l n="d">denya śoka sira mepu kasih arәp</l>
+                    <l n="c">riṅ nṛpātmaja mapək i manahira</l>
+                    <l n="d">denya śoka sira mepu kasih arəp</l>
                 </lg>
             </div>
             <div type="canto" rend="met" n="39" met="mr̥dukomala" xml:id="kakavin_39">
                 <note type="prosody">+++--+-+---+-+---=</note>
                 <lg xml:id="kakavin_39.01" n="1">
                     <l n="a">tan ngeh yan caritan laṅə̄nikaṅ alas paḍāmuhara kuṅ</l>
-                    <l n="b">luṅhā lamkpah irā nṛpātmaja matūt gәgәr lәṅit adoh</l>
+                    <l n="b">luṅhā lamkpahirā nṛpātmaja matūt gəgər ləṅit adoh</l>
                     <l n="c">ṅkāne himbaṅ ikaṅ vukir hana ta pājaran kavulatan</l>
-                    <l n="d">rāmyārūm racaṇanya sarva kusumānәḍәṅ mrik umiṅiṅ</l>
+                    <l n="d">rāmyārūm racaṇanya sarva kusumānəḍəṅ mrik umiṅiṅ</l>
                 </lg>
                 <lg xml:id="kakavin_39.02" n="2">
-                    <l n="a">ṅkā tekā nṛpaputra yan penәmu bhikṣukāmava raga</l>
-                    <l n="b">paksāmeta gaṅan hiḍәpnira ya hetuniṅ mariṅ alas</l>
-                    <l n="c">sahyāṅiṇḍitakәn patil sira matūt hiriṅ tan ahili</l>
+                    <l n="a">ṅkā tekā nṛpaputra yan penəmu bhikṣukāmava raga</l>
+                    <l n="b">pakṣāmeta gaṅan hiḍəpnira ya hetuniṅ mariṅ alas</l>
+                    <l n="c">sahyāṅiṇḍitakən patil sira matūt hiriṅ tan ahili</l>
                     <l n="d">maṅso śīghra narendra yan laku mareṅ sirātañataña</l>
                 </lg>
                 <lg xml:id="kakavin_39.03" n="3">
-                    <l n="a">dū saṅtabya rānak mpu saṅ tapa, magantya ta mpu sakarәṅ</l>
-                    <l n="b">ndā mahyun varahәn ṅhulun ri ṅaraniṅ vanāśrama katon</l>
-                    <l n="c">lāvan teki ṅaran saṅ ugratapa yogya pājara tәmәn</l>
+                    <l n="a">dū saṅtabya rānak mpu saṅ tapa, magantya ta mpu sakarəṅ</l>
+                    <l n="b">ndā mahyun varahən ṅhulun ri ṅaraniṅ vanāśrama katon</l>
+                    <l n="c">lāvan teki ṅaran saṅ ugratapa yogya pājara təmən</l>
                     <l n="d">tasyasih pva bapaṅku mājara ri saṅhulun dugaduga</l>
                 </lg>
                 <lg xml:id="kakavin_39.04" n="4">
-                    <l n="a">nān liṅ saṅ nṛpaputra yekan aṅadәg ta saṅ tapa mulat</l>
-                    <l n="b">yatnālepana teki yan kamәna mājarātvaṅ ararәm</l>
+                    <l n="a">nān liṅ saṅ nṛpaputra yekan aṅadəg ta saṅ tapa mulat</l>
+                    <l n="b">yatnālepana teki yan kaməna mājarātvaṅ ararəm</l>
                     <l n="c">dū sojarni bapaṅku tan hana vaneh sireki vinuvus</l>
                     <l n="d">śrī dvaipāyana nāma saṅ pinakaliṅganiṅ sapatapan</l>
                 </lg>
                 <lg xml:id="kakavin_39.05" n="5">
                     <l n="a">lāvan teki garanyaṅ āśrama riṅ iṅgitāmṛtapada</l>
-                    <l n="b">kakhyāti vinuvus patīrthanira saṅ mamet kalәpasәn</l>
-                    <l n="c">vastu byakta pavitra māṅilaṅakәn gәlәhniṅ umara</l>
+                    <l n="b">kakhyāti vinuvus patīrthanira saṅ mamet kaləpasən</l>
+                    <l n="c">vastu byakta pavitra māṅilaṅakən gələhniṅ umara</l>
                     <l n="d">nān liṅ saṅ tapa śīghra yan laku muvah mareṅ halas agə̄ṅ</l>
                 </lg>
                 <lg xml:id="kakavin_39.06" n="6">
@@ -4046,22 +4056,28 @@
                     <l n="a">ṅkān śīghrā maṅadəg munīndra maməkul ri saṅ nṛpasuta</l>
                     <l n="b">om vuṅsuṅku sabhāgya yan təka putuṅku liṅ munivara</l>
                     <l n="c">atyanteki giraṅku denta putu yan ḍatəṅ riṅ acala</l>
-                    <l n="d">ndah ṅke ṅke taśileṅ patāraṇā nā liṅnirāgəməgəmən</l>
+                    <l n="d">ndah ṅke ṅke taśileṅ patāraṇa nā liṅnirāgəməgəmən</l>
                 </lg>
                 <lg xml:id="kakavin_39.08" n="8">
                     <l n="a">sākṣāt riṅ svapəne ḍatəṅ nṛpati tan pasaṅkan inucap</l>
                     <l n="b">ndātan kram kita yan tinonku kadi rūpaniṅ prihatina</l>
                     <l n="c">toh vuṅsuṅku mapeki donani ḍatəṅta riṅ kadi kami</l>
-                    <l n="d">dak pājar ta putuṅku riṅ daməlā liṅ munīndra mavuvus</l>
+                    <l n="d">dak pājar ta putuṅku riṅ daməla liṅ munīndra mavuvus</l>
                 </lg>
                 <lg xml:id="kakavin_39.09" n="9">
                     <l n="a">yekān śīghra narendra mājar atəhər ta luhnira mijil</l>
-                    <l n="b">hasrət śabda nirāvarah təkap ikaṅ taṅis pva masəkəl</l>
-                    <l n="c">pun dharmātmaja yan hilaṅ kəna binañcaneṅ dyutanikā</l>
+                    <l n="b">hasrət śabdanirāvarah təkapikaṅ taṅis pva masəkəl</l>
+                    <l n="c">pun dharmātmaja yan hilaṅ kəna binañcaneṅ dyuta nita</l>
                     <l n="d">de saṅ korava duṣṭa tan hana vaneh mamet kirakira</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                       <lem wit="#EdSSA">dyuta nita</lem>
+                            <rdg wit="#EdZ">dyutanikā</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_39.10" n="10">
-                    <l n="a">kālap taṅ pura len ṣaṇa maṇik tut āsana rikā</l>
+                    <l n="a">kālap taṅ pura len ṣabhūṣaṇa maṇik tut āsana rikā</l>
                     <l n="b">lāvan dṛvya huvus təlas paḍa haneri pun kurupati</l>
                     <l n="c">ṅkā luṅhā ṇṛpa dharmaputra mara riṅ pradeśa masənə̄t</l>
                     <l n="d">kasyāsih makəmul carik paḍa matuntunan kadi tavan</l>
@@ -4107,9 +4123,9 @@
                 </lg>
                 <lg xml:id="kakavin_40.06" n="6">
                     <l n="a">“nṛpa dharmaputra ri təlas kumavruhi rika</l>
-                    <l n="b">“dhana sama bheda guṇa karma kāma viṣaya</l>
+                    <l n="b">“dhana sāma bheda guṇa karma kāmaviṣaya</l>
                     <l n="c">“naya rājanīti ṅuniveh śivāgama putus</l>
-                    <l n="d">“lalu yan kəneṅ mala vikalpa mogga vulaṅun</l>
+                    <l n="d">“lalu yan kəneṅ mala vikalpa moga vulaṅun</l>
                 </lg>
                 <lg xml:id="kakavin_40.07" n="7">
                     <l n="a">“hana ta vvaṅ uttama vicakṣaṇa vruh aṅaji</l>
@@ -4118,11 +4134,17 @@
                     <l n="d">“mada rāga moha ya dumehnya tan panulusa</l>
                 </lg>
                 <lg xml:id="kakavin_40.08" n="8">
-                    <l n="a">“ndak ajar putuṅku ri katattvan iṅ kurukula</l>
+                    <l n="a">“ndak ajar putuṅku ri katattvaniṅ kurukula</l>
                     <l n="b">“ya dumehnya durjana kalā manahnya yan ala</l>
                     <l n="c">“dadiniṅ surākala lavasnikaṅ vudubasu</l>
                     <l n="d">“maharəp mamuktya ya dumehnya mūrkha satata</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                        <lem type="emn">lavasnikaṅ</lem>
+                        <rdg wit="#EdSSA #EdZ">lavannikaṅ</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_40.09" n="9">
                     <l n="a">“niyatāṅariṣṭakəna denya riṅ tribhuvana</l>
                     <l n="b">“makasādhanaṅ kala si medi mūrti śakuni</l>
@@ -4133,14 +4155,20 @@
                     <l n="a">“tumurun ta sihnira bhaṭāra riṅ jana kabeh</l>
                     <l n="b">“irikāṅutus ta sira deva pañcakuśika</l>
                     <l n="c">“sira maṅdadī kita manāma pāṇḍava lima</l>
-                    <l n="d">“inahā mamatya kalā koraveśvara śata</l>
+                    <l n="d">“inahā mamatya kala koraveśvara śata</l>
                 </lg>
                 <lg xml:id="kakavin_40.11" n="11">
                     <l n="a">“minahā mamuktya rumuhun tikaṅ kurukula</l>
-                    <l n="b">“avərә pva deni panəmunya bhoga marumah</l>
+                    <l n="b">“avərə̄ pva deni panəmunya bhoga marumah</l>
                     <l n="c">“pamatəknikaṅ kala dumehnya yān aṅunaṅun</l>
                     <l n="d">“pinasuknikaṅ kala malūya śīrṇa pəjaha</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                        <lem wit="#EdZ">yan haṅunaṅun</lem>
+                        <rdg wit="#EdSSA">yān aṅunaṅun</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_40.12" n="12">
                     <l n="a">“kita teki rakva vəkasan gumanti sinivi</l>
                     <l n="b">“irikaṅ sarāt kita viśeṣa riṅ tribhuvana</l>
@@ -4156,42 +4184,80 @@
                     <l n="c">“daśaparamārtha taṅ takitakin manəkəta riṅ ulah</l>
                     <l n="d">“daśamala dohakən ya pinakādi musuh iṅ atapa</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                        <lem wit="#EdZ">lavalavaniṅ</lem>
+                        <rdg wit="#EdSSA">lavalavanī</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_41.02" n="2">
-                    <l n="a">“kadi hana siddhaniṅ viku yadin karakətan iṅ ulah</l>
+                    <l n="a">“kadi hana siddhaniṅ viku yadin karakətaniṅ ulah</l>
                     <l n="b">“kabakaba len sapolahiṅ abuddhi vulatana pujin</l>
                     <l n="c">“kadi maṅicuk manahniṅ umulat gatinika rinasan</l>
                     <l n="d">“paməṅaməṅan hananya tuvi tan ləvihakəna təmən</l>
                 </lg>
                 <lg xml:id="kakavin_41.03" n="3">
                     <l n="a">“daluvaṅ ikan lanā panusupan kadi vana gahana</l>
-                    <l n="b">“lagi pasənə̄taniṅ hala hajəṅ vruh aṅemukemuki</l>
-                    <l n="c">“pinakapanihnaniṅ para panəṅgahan i kaviratin</l>
+                    <l n="b">“lagi pasənə̄taniṅ hala hajəṅ vruh aṅəmukəmuki</l>
+                    <l n="c">“pinakapañihnaniṅ para panəṅgahan i kaviratin</l>
                     <l n="d">“viku kari saṅ viku ndi panəṅərta ri viku rasika</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="b">
+                        <lem wit="#EdZ">aṅəmukəmuki</lem>
+                        <rdg wit="#EdSSA">aṅemukemuki</rdg>
+                    </app>
+                    <app loc="c">
+                        <lem wit="#EdZ">pinakapañihnaniṅ</lem>
+                        <rdg wit="#EdSSA">pinakapanihnaniṅ</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_41.04" n="4">
-                    <l n="a">“daluvaṅ ikā savaṅ maṅurusuk ri manah iṅ umulat</l>
+                    <l n="a">“daluvaṅ ikā savaṅ maṅurusuk ri manahiṅ umulat</l>
                     <l n="b">“dalu pamuninya tan tuhu vaneh bəcik ika ri daləm</l>
-                    <l n="c">“dalihaniṅ alpa kasyāasih ikaṅ paṅucapira vaneh</l>
+                    <l n="c">“dalihaniṅ alpa kāsyasih ikaṅ paṅucapira vaneh</l>
                     <l n="d">“daluvaṅ ikā sumimpən iri saṅ tuhutuhu malicin</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                        <lem wit="#EdZ">kāsyasih</lem>
+                        <rdg wit="#EdSSA">kasyāsih</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_41.05" n="5">
-                    <l n="a">“kunaṅ apan evəh iṅ vənaṅ asevaka tulusa viku</l>
+                    <l n="a">“kunaṅ apan evəhiṅ vənaṅ asevaka tulusa viku</l>
                     <l n="b">“karaṇanikaṅ trikāya ginave ya kadi pati juti</l>
                     <l n="c">“hana paṅahā ri saṅ viku tikaṅ gavayakəna ləvih</l>
-                    <l n="d">“phalaniṅ acintya bhakti ri bhāṭara karaṇa təvasən</l>
+                    <l n="d">“phalaniṅ acintya bhakti ri bhaṭāra karaṇa təvasən</l>
                 </lg>
                 <lg xml:id="kakavin_41.06" n="6">
-                    <l n="a">“dalu ta riṅ mūḍhaniṅ vvaṅ aharəp riṅ phalanikaṅ ulah</l>
+                    <l n="a">“dalu ta ri mūḍhaniṅ vvaṅ aharəp ri phalanikaṅ ulah</l>
                     <l n="b">“ya ta ṅuniveh kabhaktyan iṅ inastava linəvihakən</l>
                     <l n="c">“apan ika tan tulus juga hayunya hana halanika</l>
                     <l n="d">“masilisilih tikaṅ hala hajəṅ kadi rahina vəṅi</l>
                 </lg>
+                 <listApp type="apparatus">
+                    <app loc="a">
+                        <lem wit="#EdZ">ri mūḍhaniṅ </lem>
+                        <rdg wit="#EdSSA">riṅ mudhaniṅ</rdg>
+                    </app>
+                     <app loc="a">
+                        <lem wit="#EdZ">ri phalanikaṅ</lem>
+                        <rdg wit="#EdSSA">riṅ phalanikaṅ</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_41.07" n="7">
                     <l n="a">“pira kari hayvaniṅ viku ya tan tuhutuhu mudita</l>
-                    <l n="b">“ṅuny uni yan vvaṅ alpaguṇa nīdhana tuvin aləməh</l>
-                    <l n="c">“pravala təkāpəṅiṅ təhər aṅalpa lumicin aṅucap</l>
+                    <l n="b">“ṅunyuni yan vvaṅ alpaguṇa nīdhana tuvin aləməh</l>
+                    <l n="c">“pravala təkāp əṅiṅ təhər aṅalpa lumicin aṅucap</l>
                     <l n="d">“purih iṅ anak təkeṅ guru halanya lagi kajamalan</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                        <lem wit="#EdZ">təkāp əṅiṅ </lem>
+                        <rdg wit="#EdSSA">tekā pəṅiṅ</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_41.08" n="8">
                     <l n="a">“hana kari siddhaniṅ vənaṅ analpaka ri gurunika</l>
                     <l n="b">“hana kari siddhaniṅ guru ya tan tulusa varah ika</l>
@@ -4204,6 +4270,16 @@
                     <l n="c">“dalu halaniṅ hiḍəp kuṭila tan tuhutuhu luməkas</l>
                     <l n="d">“manah anahātəmah mati kapātaka ya kapilaṅə̄</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="b">
+                        <lem wit="#EdZ">makataṅgvana</lem>
+                        <rdg wit="#EdSSA">makataṅgvan</rdg>
+                    </app>
+                    <app loc="d">
+                        <lem wit="#EdSSA">ya kapilaṅə̄</lem>
+                        <rdg wit="#EdZ">yan kapilaṅə̄</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_41.10" n="10">
                     <l n="a">“pira kari dohnikaṅ kaləpasən parananiṅ atapa</l>
                     <l n="b">“hana kari rūpa saṅ vənaṅ anuṅgalakəna bhuvana</l>
@@ -4228,10 +4304,16 @@
                     <l n="c">“ṅuniṅuni yan masambhava vətunya kadi kala jaya</l>
                     <l n="d">“ləkas ika riṅ kadhīran i hatinta puruṣa pəjaha</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                        <lem wit="#EdSSA">ṅuniṅuni</lem>
+                        <rdg wit="#EdZ">ṅuniyuni</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_41.14" n="14">
                     <l n="a">“hana ta hənūnikaṅ mala vaneh śara viṣakusuma</l>
                     <l n="b">“araras atis rəsəp sumusup iṅ hati manusunusup</l>
-                    <l n="c">“lagi rumakət mālit ri hati mogga kadi kataluhan</l>
+                    <l n="c">“lagi rumakət mālit ri hati moga kadi kataluhan</l>
                     <l n="d">“mapagəh amor iṅ ambək umijil turida raga lulut</l>
                 </lg>
                 <lg xml:id="kakavin_41.15" n="15">
@@ -4251,6 +4333,20 @@
                     <l n="c">“hana ya mandəl katunan ya dṛvya</l>
                     <l n="d">“hana kahīnan ya sugih madṛvya</l>
                 </lg>
+                 <listApp type="apparatus">
+                    <app loc="b">
+                        <lem wit="#EdZ">kahīnan</lem>
+                        <rdg wit="#EdSSA">kahinan</rdg>
+                    </app>
+                    <app loc="d">
+                        <lem wit="#EdZ">kahīnan</lem>
+                        <rdg wit="#EdSSA">kahinan</rdg>
+                         </app>
+                    <app loc="d">
+                        <lem wit="#EdZ">madṛvya</lem>
+                        <rdg wit="#EdSSA">dṛvya</rdg>
+                    </app>
+                </listApp>
                 <lg xml:id="kakavin_42.02" n="2">
                     <l n="a">“sukhanikaṅ jñāna viśeṣa mūlya</l>
                     <l n="b">“yatika mandəl sukha tan rinakva</l>
@@ -4266,7 +4362,7 @@
                 <lg xml:id="kakavin_42.04" n="4">
                     <l n="a">“huvus ikaṅ jñāna mamiṇḍa śūnya</l>
                     <l n="b">“irika ta byakta bhaṭāra nitya</l>
-                    <l n="c">“ri pucak iṅ pūrva ta pañcatīrtha</l>
+                    <l n="c">“ri pucakiṅ pūrva ta pañcatīrtha</l>
                     <l n="d">“vruh ika polah ikaṅ aṇḍa bhūmi”</l>
                 </lg>
             </div>
@@ -4274,10 +4370,16 @@
                 <note type="prosody">-+-++--+-+=</note>
                 <lg xml:id="kakavin_43.01" n="1">
                     <l n="a">nahan ta pājar pravarārya bhikṣu</l>
-                    <l n="b">ri saṅ nṛpatisuta yeka śīghra</l>
+                    <l n="b">ri saṅ nṛpātīsuta yeka śīghra</l>
                     <l n="c">siran panəmbah manəhər prayatna</l>
                     <l n="d">təlas mamūjā ri harəp munīndra</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="b">
+                        <lem wit="#EdZ">nṛpātīsuta</lem>
+                        <rdg wit="#EdSSA">nṛpatisuta</rdg>
+                    </app>
+                    </listApp>
                 <lg xml:id="kakavin_43.02" n="2">
                     <l n="a">huvus mara vruhnira riṅ samādhi</l>
                     <l n="b">lavan titahniṅ dadi yan kabhāva</l>
@@ -4291,6 +4393,12 @@
                     <l n="d">hiriṅnya vetan hana tīrtha muñcar</l>
                     <note>[dvaipāyana].</note>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="b">
+                        <lem wit="#EdZ">deyaniṅ vvaṅ</lem>
+                        <rdg wit="#EdSSA">deya ni ṅvaṅ</rdg>
+                    </app>
+                    </listApp>
                 <lg xml:id="kakavin_43.04" n="4">
                     <l n="a">"ḍatəṅ ta pūtuṅku riṅ indrakīla</l>
                     <l n="b">"bratanta nāṅkən savulan yar dudva</l>
@@ -4306,11 +4414,11 @@
                     <l n="a">nā vuvus munīndra ri saṅ ārya pārtha</l>
                     <l n="b">mamuhun ta saṅ nṛpati śīghra luṅhā</l>
                     <l n="c">ḍatəṅeṅ girīndra ya pinakṣa tan len</l>
-                    <l n="d">maṅalor ta lampah ira tūt vanāgə̄ṅ</l>
+                    <l n="d">maṅalor ta lampahira tūt vanāgə̄ṅ</l>
                 </lg>
                 <lg xml:id="kakavin_44.02" n="2">
                     <l n="a">saḍatəṅnireṅ gunuṅ agə̄ṅ pavitra</l>
-                    <l n="b">aruhur ta səṅkan ika durga mevəh</l>
+                    <l n="b">aruhur ta səṅkanika durga mevəh</l>
                     <l n="c">maṅadəg mapiṅgir aləyə̄ rinaṅkal</l>
                     <l n="d">təkapiṅ lumampah arirī tan aglis</l>
                 </lg>
@@ -4327,7 +4435,7 @@
                     <l n="d">magave paṅāśrayananiṅ masādhya</l>
                 </lg>
                 <lg xml:id="kakavin_44.05" n="5">
-                    <l n="a">ri huvusniṅ āśrama tiniṅkah i jrə̄</l>
+                    <l n="a">ri huvusniṅ āśrama tiniṅkah i jro</l>
                     <l n="b">luməkas ta saṅ nṛpatiputra pārtha</l>
                     <l n="c">magave prayoga masamādhi deva</l>
                     <l n="d">makataṅgvan abrata sahiṣṇu pūjā</l>
@@ -4342,8 +4450,14 @@
                     <l n="a">pira tekihən lavasirān payoga</l>
                     <l n="b">satahun ḍatəṅ ta karuṇā bhaṭāra</l>
                     <l n="c">irikā sirān kiraṭarūpa saṅ hyaṅ</l>
-                    <l n="d">kamənāṅanugrahanaṅ astra rāja</l>
+                    <l n="d">kamənāṅanugrahanaṅ astrarāja</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="b">
+                        <lem wit="#EdZ">satahun</lem>
+                        <rdg wit="#EdSSA">satavun</rdg>
+                    </app>
+                    </listApp>
                 <lg xml:id="kakavin_44.08" n="8">
                     <l n="a">ri təlasni saṅ nṛpatiputra siddha</l>
                     <l n="b">inanugrahan sira təkap bhaṭāra</l>
@@ -4351,10 +4465,10 @@
                     <l n="d">ṅuniveh yadin muliha riṅ kamokṣan</l>
                 </lg>
                 <lg xml:id="kakavin_44.09" n="9">
-                    <l n="a">ri huvus nirān vara viseṣa riṅ rāt</l>
+                    <l n="a">ri huvus nirān vara viśeṣa riṅ rāt</l>
                     <l n="b">jayaśatru saṅ nṛpatiputra pārtha</l>
                     <l n="c">sira tekihən tirutirun təkapta</l>
-                    <l n="d">tuməmuṅ sinādhya təkap iṅ kadhīran</l>
+                    <l n="d">tuməmuṅ sinādhya təkapiṅ kadhīran</l>
                 </lg>
             </div>
         </body>
