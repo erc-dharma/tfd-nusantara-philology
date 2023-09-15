@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:lang="eng"
+     xml:id="id"
+     type="edition"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Devaśāsana</title>
+            <title type="sub">Digital Critical Edition of an Old Javanese Code of Conduct</title>
+            <!-- fill in the subtitle if necessary -->
+            <editor ref="part:argr">
+               <forename>Arlo</forename>
+               <surname>Griffiths</surname>
+            </editor>
+            <respStmt>
+					<!-- repeat the respStmt when necessary -->
+               <resp>creation of the file</resp>
+               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <persName ref="part:mime">
+                  <forename>Michaël</forename>
+                  <surname>Meyer</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+            <idno type="filename">DHARMA_CritEdDevasasana</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <p>Copyright (c) 2019-2025 Arlo Griffiths.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+					<!--
+						Devaśāsana - Or. 9534
+						Departement van Onderwijs & Eeredienst de Taalambtenaar voor Bali ən Lombok
+						Verzameld door Kirtya.
+						no: 935.
+						uit sindu (Karangasem).
+						otv 18 Juli 1930.
+						getikt 6 December 1941.
+						door ni Ketut Hotel
+						nagəkəkən door:
+					-->
+					<!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="ms5046">
+						<!-- Give your witness an unique identifier -->
+                  <abbr type="L1"/>
+                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden</settlement>
+                        <institution>University Library (UB)</institution>
+                        <repository>Lontar</repository>
+                        <idno>Or. 5056</idno>
+                     </msIdentifier>
+                     <msContents>
+								<!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <author>...</author>
+                           <title>...</title>
+                           <!-- You can also add a colophon if needed -->
+                           <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                           <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+									<!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Palm-leaf manuscript. ... leaves in Balinese script. Apparently written ....</p>
+                        </objectDesc>
+                        <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+									<!-- Create a handNote for each hand -->
+                           <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                              <abbr type="hand">A<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi>
+                              </abbr>
+                              <!-- Give the abbreviation siglum for the hand built on siglum-of-the-manuscript_H1, the number being incremental -->
+                              <p>main hand of the manuscript, black ink, Balinese script</p>
+                              <!-- provide a description of the hand -->
+                           </handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+								<!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>...</p>
+                     </history>
+                  </msDesc>
+               </witness>
+               <witness xml:id="ms9534">
+						<!-- Give your witness an unique identifier -->
+                  <abbr type="L2"/>
+                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden</settlement>
+                        <institution>University Library (UB)</institution>
+                        <repository>Paper</repository>
+                        <idno>Or. 9534</idno>
+                     </msIdentifier>
+                     <msContents>
+								<!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <author>...</author>
+                           <title>...</title>
+                           <!-- You can also add a colophon if needed -->
+                           <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                           <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+									<!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Paper manuscript. Transcription in Roman script. Apparently written ....</p>
+                        </objectDesc>
+                     </physDesc>
+                     <history>
+								<!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>...</p>
+                     </history>
+                  </msDesc>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+				<!-- Part mandatory -->
+            <p>This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
+				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+            <interpretation>
+               <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+            </interpretation>
+         </editorialDecl>
+         <!--<refsDecl xml:id="ASLREF">
+				<cRefPattern matchPattern="(\S+) ([^.]+)\.(.*)"
+					replacementPattern="#xpath(//div1[@n='$1']/div2/[@n='$2']//lb[@n='$3'])">
+					<p>A reference is created by assembling the following, in the reverse order as that
+						listed here: <list>
+							<item>the <att>n</att> value of the preceding <gi>lb</gi>
+							</item>
+							<item>a period</item>
+							<item>the <att>n</att> value of the ancestor <gi>div2</gi>
+							</item>
+							<item>a space</item>
+							<item>the <att>n</att> value of the parent <gi>div1</gi>
+							</item>
+						</list>
+					</p>
+				</cRefPattern>
+			</refsDecl>-->
+         <samplingDecl>
+				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+            <p/>
+         </samplingDecl>
+         <schemaRef type="guide"
+                    key=" EGCv01"
+                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
+         <!-- Will need to be updated once a more official realase is done -->
+         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
+				
+			<variantEncoding method="parallel-segmentation" location="internal"/>
+			<variantEncoding method="location-referenced" location="internal"/>.
+			
+			Note that the current by default behaviour is set on parallel-segmentation -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+         <listPrefixDef>
+            <prefixDef ident="bib"
+                       matchPattern="([a-zA-Z0-9\-\_]+)"
+                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+            </prefixDef>
+            <prefixDef ident="part"
+                       matchPattern="([a-z]+)"
+                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+            </prefixDef>
+            <prefixDef ident="txt"
+                       matchPattern="([A-Za-z0-9]+)"
+                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+            </prefixDef>
+            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+            </prefixDef>
+            <prefixDef ident="maturity" matchPattern="([0-9]+)" replacementPattern="tba">
+               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+            </prefixDef>
+            <prefixDef ident="cal"
+                       matchPattern="([\w]+)"
+                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
+               <p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+				<!-- choose the language(s) of your text, remove the others -->
+            <language ident="san-Latn">Sanskrit, romanized</language>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+					<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:argr" when="2023-09-13" status="draft">Started editing the text</change>
+         <change who="part:mime" when="2023-09-13" status="draft">Conversion to XML</change>
+         <change who="part:tilu" when="2023-08-26">Digital transcription from typescript, normalized, but not fully checked</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-Latn">
+<body>
+			<div>
+				<ab type="invocation"><app><lem wit="#ms5056">avighnam astu</lem><rdg wit="#ms9534">namo buddhāya</rdg></app>.</ab>
+			</div>
+<div>
+<p>nihan pinakādiśāsananira saṅ paṇḍita, kavruhakəna de saṅ maharṣi kabeh, duk sira tan hana r̥ṣi, tan hana śiva, tan hana dharma, <app><lem wit="#5056">tan hana rāja, tan hana bāyu, tan hana śabda, tan hana ākāśa, tan hana pr̥thivī, tan hana dibya, tan hana vulan, tan hana teja, tan hana devata,</lem><note type="altLem">tan hana rāja, ..., tan hana devata,</note><rdg wit="#ms9534">tan hana hakaśa, tan hana bayu, tan hana hapah, tan hana teja, tan ana pṛtivi, tan hana haditya, tan hana hulan, tan ana devata</rdg></app> <app><lem wit="#ms5056">avaṅ aṅuvuṅ-uvuṅ</lem><rdg wit="#ms9534">havaṅ-havaṅ, huvuṅ-huvuṅ</rdg></app>, tan <app><lem wit="#ms5056">hananiṅ</lem><rdg wit="#ms9534">hana</rdg><note>Koravāśrama: maṅuluvuṅ ikaṅ bhuvana, tan hananiṅ sarva-sarva tan papramāṇa ikaṅ jagat, apan tan hananiṅ sarva-sarva tumuvuh.</note></app> sarva-sarva, 
+	duk sirenaranan saṅ hyaṅ no, tan aneṅ ucap samana.</p>
+<p>ndah lvirnya: na bhūmi, na jala mapi, na tejo, na ca marutah, nakasam, naravi-candra, na viyoga, tetadanam. na brāhmaṇācāram viṣṇu, hana lintaṅ na taraṅgana, na sato na pepelikan, na gulma na tanalata.</p>
+<p>artinya: tan hana teja, tan hana aṅin, tan hana ākāśa, tan hana ravi, tan hana candra, tan hana rupavarṇa, tan hana rahina-vəṅi, tan hana sukha-duḥkha, tan hana brahma viṣṇu, isvara, tan hana sakaton, sakaraṅa, tan hana sarva pepelika, kekelika, tan hana vintaṅ taraṅgana, kevala mənəṅ unur, tan hana juga pveka kabeh, yan ta sinəṅguh ekadarva ṅaranya, vetan, kidul, kulon, lor, i sor, i luhur, tan hana devata kabeh, noranaana liṅ bhaṭāra sukṣma.</p>
+<p>mayuga ta sira taya, ri yuga bhaṭāra sukṣma, mətu taṅ yuga pat, paran ta sinəṅguh yuga nat ṅaranya, narəṅ mətu lavan sariranya, apan sukṣma kahananira, tan hanaṅ rupanira mvaṅ sarireṅuni; yuga pat mavak ta sireṅ vəkasan, muṅgah ta sireṅ candra. parah ta sinəṅguh candra ṅaranya, paṅadəgani sakala, yan minduhur ya ta sinəṅguh candra ṅaranya, tumorun bhaṭāra sakiṅ candra, aṅetar sira riṅ vindu, pagantuṅaniṅ ākāśa, ya ta minduhur, ya ta sakala niskala ṅaranya, aparək parəka padohan, aparək taṅ niskala, ri urip taṅ adnyananta, tuməkerya, ya ta mataṅyan aparək ikaṅ niskala, ri uvus saṅ hyaṅ urip, adoh [2v] ikaṅ niskala, kapuṅkur taṅ sakala, ya ta prastavani sankala lavan niskala, adoh aparək, pveka təlas nika.</p>
+<p>mayuga bhaṭāra mvah, enak denira umənəṅ, umijil bhaṭāra mvah, sakiṅ kivanira bhaṭāra, marupa ta batari, varṇanira kuniṅ, akuniṅ pindanira, umijil sakiṅ taṅanta təṅən, riṅ təṅah uṅgvan bhaṭāra, ndatan mapasah bhaṭāra lavan batari, tumibakəniṅ avakira juga, sira ta sinəṅguh sana bhaṭāra sana batari sapocapan hiḍəp ati. ya mataṅnyan atəguh patəmu bhaṭāra lavan batari, samya malakya marabi, paḍa mapāpasihanta sira apan bhaṭāra tan pāpa lavan batari, sira ta tiniru de saṅ viku, apan sampun sinamaya dene ikaṅ lulut ṅaranya; ya ta sinəṅguh saṅgama pveka, taya tinuti saṅ viku kaidəp ati, təlas ika. mayuga ta sira mvah paran ta yuga bhaṭāra saṅ hyaṅ. saṅ hyaṅ candra mijil sakiṅ somyanayana, ikaṅ mata kiva kinon sumuluheṅ vəṅi, ulan bhaṭāra riṅ somya [3r] nayana. umijil saṅ hyaṅ āditya, sakiṅ mata təṅən, kinan sumuluhaneṅ rahina, andələṅ, abo avaṅi, ya ta hana panas, ulat bhaṭāra riṅ təṅən.</p>
+<p>mayuga ta sira mvah, kadi aṅganiṅ ariṅət mətu taya riṅ lələpan umijil sakiṅ sarira, maṅkana bataresvara mətu sakeṅ avak bhaṭāra, yata bataresvara ṅaranira, piṅe varṇanira, təlas nira.</p>
+<p>mayuga ta mvah sira, umijil bhaṭāra brahma sakiṅ taṅan təṅən, bhaṭāra viṣṇu umijil sakiṅ taṅan kiva, dadi panakto bhaṭāra brahma, viṣṇu isvara; sumahur saṅ tiga: “sajnya bhaṭāra hyaṅ mahatuva, paran karyaniṅulun sineṅan de hyaṅ matuha?” maṅkana sahuriṅulun. “saṅ trisamayata ṅaranta”. maṅkana liṅ hyaṅ matuha, tan vihaṅ saṅ trisamaya, sədəṅ tiniṅkah ikaṅ vetan, kidul, kulon, lor; bhaṭāra hyaṅ matuha muṅgviṅ təṅah, bhaṭāra brahma muṅguh kidul, bhaṭāra viṣṇu muṅguh lor, bhaṭāra isvara muṅguh vetan, hyaṅ batuha muṅguh riṅ [3v] təṅah, liṅ hyaṅ matuha, apan tan hana devata muṅguh kulon liṅ hyaṅ matuha anaku hyaṅ mahādeva.” sumahur hyaṅ mahādeva; “sajnya bhaṭāra, paran karyaniṅ hulun sineṅan de hyaṅ matuha?” maṅkana liṅ hyaṅ mahādeva, sumahur hyaṅ mahatuha: “anaku saṅ mahādeva, rovaṅana hulun agave jagat!” maṅkana liṅ hyaṅ matuha, tan vihaṅ hyaṅ mahādeva, liṅ hyaṅ matuha. “kunaṅ ṅaranta maṅke, saṅ hyaṅ brahma”. maṅkana liṅ hyaṅ matuha anaku kapa t, tan vihaṅ taṅ caturdevata, aparaṅ ta sira mayuga. bataresvara mayuga mahesvara; bhaṭāra brahma mayuga bhaṭāra rudra; bhaṭāra mahādeva mayuga bhaṭāra saṅkara; bhaṭāra viṣṇu mayuga bhaṭāra śambhu. hyaṅ matuva mayuga bhaṭāra śiva apan devata samaṅkana, ya ta sinəṅguh tatva bhuvana ṅaranira.</p>
+<p>pūrvakaniṅ sajnyesvarah, dakṣina brahma ekatva, neriti rudra devascah, [4r] pascimah mahādevanycah. bhayabyam saṅkaran tatah, utaro viṣṇu vijnyeyah, ersanya śambhu revasca, madhyasto saṅ sadasiva. təlas nika. ya ta sinəṅguh sariniṅ bhuvana ṅaranya, təlasnika.</p>
+<p>mayuga ta sira mvah hyaṅ atva, mayuga pañcamahabhūta, pañcamahabhūta ṅaranya: pr̥thivī, apah, teja, bayu, ākāśa, ya sinəṅguh pañcabayu ṅaranya, təlas nika.</p>
+<p>liṅ hyaṅ matuha: “anaku bhaṭāra brahma, viṣṇu, isvara, mahādeva, rovaṅaniṅ sun magave patapan riṅ gunuṅ janti, riṅ mədaṅtatva”. tan vihaṅ bhaṭāra brahma, viṣṇu, hyaṅ isvara, mahādeva, sakehikaṅ devata kabeh, ḍataṅ sireṅ mədaṅ, riṅ gunuṅ janti, magave kita patapan. sampun denira magave patapan, de bhaṭāra hyaṅ mahatuha, iṅayap sira de niṅ devata kabeh, isvara, maheśvara, brahma, rudra, mahādeva, śaṅkara, viṣṇu, śambhu, śiva, ṅuniveh tikaṅ caturlokapala mvah saptaloka, [4v] makādi parabhagavan, sama maṅayapiṅ bhaṭāra hyaṅ mahatuha, təlas nika.</p>
+<p>hana ta sira mamuja, maharṣi, katapanireṅ bhuvana, sumuṅku yajnyanireṅ yavadvapa, hilaṅ pāpaniṅ bhuvana denika, riṅ kalaniṅ dharma mahasadya riṅ bhuvana, maveh dharma sukhe buddhi, mayajnya dharma-dharma, sri batati pva sira, maṅrəṅa yan hana hyaṅ mahatuha tumurun irikaṅ batur aguṅ, irikaṅ gunuṅ janti, sira kanara makambah, ri saṅ paṇḍita mvaṅ taṇḍanira kabeh, tan kari taṅ vvaṅ riṅ tantu, liṅnira mataṇḍah.</p>
+<p>paṇḍita guru marthantu, visudamala kadana, ta parəṅ ta pan ujvalam, visesa buddhi yuktamam.</p>
+<p>“sajnya ra saṅ paṇḍita rakvavakira hyaṅ mahatuha, saṅ kumavənaṅ “sumapvanana pāpaniṅ bhuvana”. liṅira saṅ nata maṅkana.</p>
+<p>paṇḍita dharma karyakam, prabhu sapaladirgamam, antyanta vasidharmanam manah pratinam sakuləm. paṇḍitam guna niyaktam, brāhmaṇa sahajnyanako, sevahkara tutaratna, svaskatvam dharma-dharmanam.[5r]    sajnya aji saṅ prabhu, sirodani śabda, hana gaṅga, varahira saṅ paṇḍita, udani sasākṣi, pinakasākṣiniṅ bhuvana, yaṅkən dharma saṅaskara, sira paḍa pinupun de bhaṭāra hyaṅ matuha, saṅ hyaṅ āditya, saṅ hyaṅ ulan, saṅ hyaṅ ravi, saṅ hyaṅ əmega, saṅ hyaṅ əmbun, saṅ hyaṅ rahina, saṅ hyaṅ apah, saṅ hyaṅ pr̥thivī, saṅ hyaṅ əndəp-əndəp, saṅ hyaṅ taya, sira kabeh kuma vruhakən, vastu, rivaṅiniṅ sariniṅ puspa panatakona tak paṅaskara, pandavut payuṅ, paseva, pamañcaputra, panutur, paṅrājah, pasaṅka, pagənta, paṅasto, paṅlalabuh, panujnya, pañjənəṅ, pavadokala, paləbur. ika ta kabeh rovaṅaniṅ agave hayu bhuvana, pinakapamandiniṅ gumavayakən saṅ hyaṅ dharma paṅaskaran.</p>
+<p>pira ta kunaṅ gunaniṅ vvaṅ kaṅ kumavruh riṅ saṅ hyaṅ dharma, kaṅ viveka riṅ saṅ hyaṅ sarva dharma, sarva tatva, vidagdhaa riṅ guna [5v] sukhaa riṅ saṅ hyaṅ dharma. yan turu(ṅ) kaananiṅ dharma paṅaskaran ya teka sinəṅguh lvir ṅaranya, apan sira rakva pūrvakaniṅ sinəṅguh vastu, liṅ bhaṭāra hyaṅ matuha, makapapataṅ guna, makamala saṅ hyaṅ dharma, makavighna saṅ hyaṅ aji.</p>
+<p>yate kahanan saṅ hyaṅ dharma saṅaskara, yeku ta bajaṅ ṅaranya, nivandaniṅ hana sari madhyapada, ikaṅ rakətnya, taṅ sukṣama parambi-rambih. yan turuṅ kataman saṅaskara, nimitaniṅ hana ləmah seṅ, byakta madadi nuta pinakaloka, prasiddha saṅ hyaṅ dharma paṅaskara, ika ta liṅ bhaṭāra hyaṅ matuha riṅ padharmanireṅ bhuvana, magav-e anītih ri sakala [6r] gayvakəna rāja śāsana, śivaṅ paṅ gavekəna śiva śāsana, boda paṅ gaveyakəna boda śāsana, brāhmaṇa, magaveyakəna brāhmaṇa śāsana, matutura riṅ jambu-dvipa mandala, pagaveyakəna catur pramāṇa, saṅ manuh magave ya manuh-śāsana, paḍa magavekəna catur para-martha, liṅənta.</p>
+<p>tutur babu buyut, liṅga panyarikan, kabhayan, juru, paḍa devata vehakəna aji, manuh-śāsana.</p>
+<p>sri saṅ nata pva sira, paḍa pagavekəna raṅga, kanuruhan, dəmaṅ, patih, arya, rikṣaka kvehiṅ ratu, ramya ramla majaṅ, girimbaṅi, tuməṅguṅ, rikṣaka kvehiṅ adimantri, kajuron, taṇḍa pañji, rikṣaka kvehiṅ mantri, kabhayan, paragusti, ninakṣa kabeh, ikaṅ parataṇḍa, rovaṅanira sri maharata, amahayu bhuvana, makasopanaha, taṅ vadva ganda aji rakyan.</p>
+<p>kunaṅ pva saṅ r̥ṣi, siraṅgəgvanana caturparamārtha, magaveya caturasrama riṅ madhyapada, tan salah candaṅku, marapvan krota tekaṅ rat, [6v] vanavasa, mārgavasa, śūnyavasa, toyavasa.</p>
+<p>kunaṅ pratyekanya lakṣaṇanira saṅ vanavasa, aṅajar, tan hana kinatvaṅaniṅ bhuvana tan panolih sukha-duḥkha, tan pabalik sukha mariṅ artha, mari saṅsaya, mari lara maharṣa buddhi sukha sapaniskala, apan sira juga pinakṣanira.</p>
+<p>sira saṅ mārgavasa, aṅanti təpiniṅ havan aṅiliṅakən jagat, añjag-jagi prāṇaniṅ aprāṇa, nistura riṅ śabda, tan murdika ri paṅrəṅa, tan sukha-duḥkha riṅ panon.</p>
+<p>sira saṅ śūnyasasa, mpu sarata, tan kəliriṅ bhuvana, gina puruṣa, nirvəlas sih anonton.</p>
+<p>saṅ toyavasa pva sira, makəmiṅ banyu, niraṅga, nirprāṇa, nirbita masadya, tan panaha riṅ pati.</p>
+<p>gavenira saṅ caturāśrama, vasi, makādi saṅ yogīśvara, sira ta pinakacaturpramāṇa, apa ta ulahira. vasi pagavaya r̥ṣiśāsana, tuhun uttamaha riṅ tatapi, riṅ mārga, apan riṅ śīla yukti, tan apilih riṅ tatami, [7r] satyeṅ parayapra, tan sahamilva pakararsa.</p>
+<p>karma pva sira, paṅgavakəna pūrva siddhi, aruhur pva sira, maṅulahakəna pva sira, maṅulahakəna kayogyan, umiryakəna sukhaniṅ jagat, mantra maṅlaga riṅ buddhi.</p>
+<p>jnyani pva sira, kumavruhakəna saṅ hyaṅ riṅ vanavasa, aṅlugas jāti śāsananira riṅ eṅaniṅ taya, umayasaa riṅ śūnya, niradaha riṅ guna, rakṣaka eṅ patapan, məliṅa riṅ kapuruṣan.</p>
+<p>yogīśvara pva sira, sira saṅ deva guru, saṅ manak marabi, sira ta pinakagurvaniṅ sayavadvipa, sira ta umulahakən kasukhaniṅ jagat, sira ta vehana aṅgugonana saṅ hyaṅ dharma vanavāsaha, mvaṅ caturvitva, mvaṅ saṅ hyaṅ arkagatra, padakaniṅ śīlatatva parabikrama.</p>
+<p>sira teki kabeh pahayuhən teki rumuhun de saṅ prabhu, kəmitən tapanira, niṅ vadva aji, apan ika tan patrinaguna, sādhuman mariṅ saṅ prabhu, yan vala śīlanya, malapa sādhuman mariṅ saṅ prabhu, kaṅ uni [7v] ṅuni-yuni taṅ alpaturgniṅ ahurya, ya teka tan aniruktiniṅ tapa yan maṅkana.</p>
+<p>kunaṅ pva sira saṅ paramārtha yogi, tusniṅ prabhu lumaku viku, manakiṅ pavikvanira, sira tan vənaṅ.</p>
+<p>kunaṅ sira saṅ yogi, kala vasana kadaṅ aji, kula-kula, lumaku viku, mano-manak riṅ patapan, anaknya vənaṅ.</p>
+<p>kunaṅ ta sira saṅ paramārtha yogīśvara, sira saṅ tusniṅ devaguru, manak sira riṅ patapan, sira ta vənaṅ sapaniskara, tan vicāranən deniṅ sarat, apan sira vənaṅ riṅ sapaniskara, saṅ yogīśvara ṅaranira.</p>
+<p>kunaṅ sira saṅ pinakādi tusniṅ prabhu lumaku viku, manak sira riṅ patapan, sira taṅ pinakayogisvarsa.</p>
+<p>sira saṅ ləmbuguntuṅ, yen devagurva, sira ta saṅ adiyogi ṅaranira, sira ta kumavənaṅ riṅ jagat, sapaladi guna virya, sabavalakṣaṇanira, ṅuniveh vuvus samitra prabhu, sira ta viku śuddhajāti ṅaranira, sira ta siṅgih paṅulahakən yajña riṅ kasukhan.[8r]    matapakana ləmbu putih, kəbo bule, palaṅkan inubuk, apataranapiṅul, apayuṅ joṅ tumpaṅ pitu, magəlaṅ sarpasa pavahan gadiṅ ahulur talya, makajaṅ maravis, matomparaa, magoṅsyaṅ, mavida-vida, maciliriṅ, mapatarana, madamaṅamana, magoṅ, marəgoṅ, majaladi, mapadi, makarya-murya, masalimput, mapadaran, agəlaṅ kana, pamañca ṅahakəna, mavidanaa, manuliṅakəna, mavada uyun, manaṅkva, masampir-sampir, marismoṅ-rismoṅ risa.</p>
+<p>ṅuni manak manik, saṅ yogīśvara vənaṅ madodvat agiriṅsiṅ, linu beṅ luvih, mañjəti, cinde, cakomadəvi, raranden, piṅul, vanagraha, nagapuspa, aṅaṅgoakandaṅ tan pavaṅgah ri paṅaṅgonira vənaṅ, kavənaṅ-vənaṅira kabeh, vənaṅ saṅ yogīśvara aṅaṅgoa tan pasambatsaraha sakiṅ kanagara bhūmi, apan saṅ yogīśvara kabeh vənaṅ.</p>
+<p>devaguru, cabol, vuṅkuk, bule, bəlaṅ lampaṅ, tan purihən [8v] de saṅ prabhu, ṅuniveh taṅ curiga salvirani khaḍga, bajra, kagapasa, daṇḍa, nagacarma, gadalohita, duparāja, musalarāja, trisularāja, aṅkusrāja, pamayaṅan, sasaṅgiṅ, bima virati, tvək saṅkur, lugpus laṅi velu, gandeva, pili, larmaṅo, bvat spaṅ, vənaṅ saṅ yogīśvara maṅaṅgon, ṅuni-uni saṅ r̥ṣi kabeh, sevasogata, vənaṅ maṅaṅgoa.</p>
+<p>devaṅga, vanagraha, matampakana, na brahma, viṣṇu, isvara, maṅaṅgoa navaratna, saṅ yogīśvara vənaṅ; makavya-kavyana, amubuta, aṅukira, aṅlukisa, aninikəla, paməcakakəna naka, magave amañcale, magavea rājamandala, samādhi riṅ gunanira, matənuṅ-tənuṅana, mandudusa, kavənaṅ-vənaṅira saṅ yogīśvara; manilidi riya, ambadajaṅana, yan iṅ sananira vənaṅ, saprənahira pinakasimanira, yadyapin sakiṅ nusantara, goñjoke [9r] radi, cəlo, mañjāti, vagi, vastra cina, salviraniṅ vastram sakiṅ nusantara kavənaṅ-vənaṅira saṅ yogīśvara.</p>
+<p>unya saṅ yogīśvara tan kataman akidarsa, salviriṅ tatambaṅan, makatuṅsinəniṅ padu təlu, vive kabunan, nispala pakakokana, tan kavasaa saṅ yogīśvara, maṅkana liṅ hyaṅ matuha.</p>
+<p>maṅkana taṅ adivirya krama siddhani, padati, navaratna, kanaka vastra carana, curiga, kəbo, sapi vədus, banyak, yadyan sarupaaniṅ danu, tan patulada saṅ yogīśvara, apan saṅkeṅ pura tan pakañciṅ.</p>
+<p>yadyan macelevaka, astacandalaa, pañcakarmaa, dvādaśa candala, cutajanmaa, vadoajya, rakryan, nusantaraa, vadorājaa, paragopiti, vaṅsa kula, vvaṅ tani, taṇḍamantri, makaji saṅ prabhu, kṛtya valaśīla, samoda riṅ saṅ paṇḍita, tan dirgya vada saṅ yogīśvara, apan sira vənaṅ. [9v] nahan tantyaniṅ dana, karavista, ganitri, payuṅ joṅ, simpuruṅ, gəlar gadiṅ, varṇa barana, goṅ layaran.</p>
+<p>śīla paladana, ləmah seṅ, bhūmi kayaluh, vatəs kulumpaṅ, ləmah saṅar, pambajaṅan, səma gavenən mandala, siddha tan siṅ ṅgvanana, apan uvus deniṅ anyatur deśa, pakṣili titi bhukti, kapaṅguha saṅ hyaṅ dharma paṅaskara, ṅuni-yuni bhūmi tapəl, tan kaśiṣyanan deniṅ vadoaji, ṅuni-uni, deśa, apan olihira saṅ yogīśvara matopati, lah pakṣa pva sira malampaha, oṅ namu namu vastu.</p>
+<p>ləmah rama kapūrvarənan, kavṛddhar vayahan, kalolitan, gañjaran var, varukan, ika tan ucapən, tan vidinən, apan tan pasəgəh.</p>
+<p>gunuṅ sima karakətan, ika ta bhūmi saṅ yogīśvara, tan katambakṣaraa de saṅ nata, tan paṅuñcaraa, apan catunira saṅ puruṣa ləmah seṅ.</p>
+<p>kunaṅ saala rupaniṅ janma, yan umuṅsi saṅ hyaṅ dharma, saprakāra [10r] caturjanmaa: brāhmaṇaa, kṣatriyaa, vaiśyaa, śūdraa, puruṣaha, ntovi brāhmaṇaa, yan umuṅsi saṅ hyaṅ dharma, tumuta sasolah saṅ paṇḍita.</p>
+<p>lihaṅ saṅke riya, van-van iris mvaṅ apiṅe, vatu, rama, vugu-vugu, muravara misri paṅura, kandəmanimpiki, paranakan, limus galuh paṅavruhan, paragusti paṅaniṅan, para sugih aji, vatu ajəm, ama landaṅ, ləca, sukunya kaluvara, kutaka, taṅkil ragas, karəṅrəṅan kalyat, siṅgahan, vatu lavaṅ, ru tan pamanikan, tan paaji, buron, adagaṅ, maṅuri, juru gusạli, juru jimat, juru kandi, juru rahasya, juru arakan, juru jimat, juru kandi, juru rahasya, juru arakan, juru jalir, pinile, kakaṅgaran, maracaṅ paduracukan, majamba, maguñje, lvir tambaṅ, lvir kampuh, lvir tarəṅ, lvir sayañja, lvir pañja pakudan, pagajahan, pita n, palakənan, pajalaṅ, palavaṅ, [10v] tundan, prəkalakan, palikih, pagotoṅ, pakosaran, pakəraṅ, pavəlaṅ-vəlaṅ, luput saṅ r̥ṣi, saṅ yogīśvara riṅ jaluk-jalukan, luputiṅ ne parabi, tan kəna riṅ titi kapra, apan ika sadya ikaṅ tribaga.</p>
+<p>kunaṅ yan hana nyaṅaraa saṅ yogīśvara, tan valuyaa, oṅ namu namu vastu.</p>
+<p>kunaṅ sakveh ikaṅ parataṇḍa yan umuṅsi saṅ paṇḍita, tan devagu-rva, karyani eṅaṅgonaneṅ aveniṅ payasan, ambək cikarara datas, rakṣaka eṅ kami, amarəkakəna ron, satya eṅ paṅayap.</p>
+<p>tan mana pva devagurva, kəsika pavitraniṅ jagat, membuh trimala taṅ rat kavudadya saṅ sri nata, daṇḍa gurunya, śiṣyanya, samakəna lavan ātatāyi.</p>
+<p>kunaṅ pva saṅ r̥ṣi, vənaṅ madravyaa palulukehan, maṅalantarakəna sādhana, vənaṅ manandaṅa vastra kanaka, navaratna, vəsi sakalviranya.[11r]    tan panandaa bhūmi, yen hana e rajipramāṇa, tan paṅiraṅakəna tan irakəna yan nirakəna, siddhi luvar tan pahutaṅ, tan patutuh avaa pari riṅ lumbuṅ, dravya sor, vvaṅ sumlapa pari riṅ ṅunu, sideṅalap.</p>
+<p>kunaṅ pataraniṅ vaṅ, saṅ yogīśvara riṅ saṅ muṅguh riṅ adisikara parvata, nava, sira saṅ kavinaya sarva 5, sira saṅ deva-guru, anak-anak rabi sarva 2, adagaṅ 2, sutanan 2, apande 2, mahat 2, aṅluga 2, aṅlukya 2, amaraṅgi 2, salviraniṅ paravahulu, patataṇḍa, parakarya, aṅusi kadupasa kabeh, pelaṅ, banava, padati, vənaṅ saṅ yogīśvara adravyaa, aṅaṅgoa kandaṅ tan pavagah riṅ paṅaṅgenira kunaṅ yan ameta dagaṅa, sapuluh deśa iṅanya amañcadeśa.</p>
+<p>kunaṅ rupaniṅ dravyaso, kəbo bule, gampaṅ, pelaṅ, palaṅkan gadiṅ, bəlaṅ kaluṅ, vvaṅ bule, asu vavar, savuṅ pasək, savuṅ camara, sugih manek, kəbo makavalaṅ, ika ta dravyaso ṅaranya, pūjākəna [11v] riṅ bhaṭāra hyaṅ matuha.</p>
+<p>kunaṅ pva saṅ paṇḍita, yan tan eliṅ riṅ səṅkərira, pahayunən juga sira, tan pandulaṅana lare riṅ tani, tan paṅodanana, tan panaapuha, tan papepetana, tan pamemeta. yan hana maṅkana, daṇḍa 20, suku 2 anavur i saṅ prabhu 20, su ṅa, ləka.</p>
+<p>karaṅ sumurupiṅ loṅan ṅa, amurugul, sikəp taleni gulunya riṅ cavətnya, tuntunən riṅ pamaləhan. asu manahut ikuhnya ṅa. vvaṅ maṅgaməli strī riṅ paṅaṅson, riṅ kəbon, riṅ halas, sikəp taleni gulunya lavan sukunya, ənah riṅ səma, yan kampunanana dene pamicarane, daṇḍa, ləvo, su ṅa. 2, ma salavasanya ma asu maṅro ṅa. arabi dayaka, klaraṅan kunaṅ, daṇḍa 60, su ṅa. 2, ma</p>
+<p>masara ṅaranya, marabi śiṣyanya, mañjanmaa kunaṅ, daṇḍanya, labuhakən riṅ ve.</p>
+<p>asu makumkum ṅa. añjanmah kavulanya, daṇḍa labuh riṅ sumur [12r] atəbaraṅo kavulanya. kidaṅ asaṅsaṅ riṅ tuṅgak ṅa. viku aṅrebeni sundəl, daṇḍanya caṅcaṅ lvaṅaniṅ bale, pamañcavara 7 pəkən divasanya; vvaṅ aṅrabeni putunya paḍa lavan vvaṅ sundəl daṇḍanya.</p>
+<p>mañjara riṅ pabela ṅaranya, aṅlukari kili, daṇḍanya gantuṅən riṅ sumur duṅsaṅ.</p>
+<p>aṅalap vavaleni guru, daṇḍanya ləbakniṅ apuy.</p>
+<p>aṅlavani guru putri, daṇḍanya labuhiṅ luvaṅ.</p>
+<p>aṅlavani tatami, daṇḍanya labuh pakulahaniṅ vuruk.</p>
+<p>aṅlavani tutuluṅən, daṇḍanya gantuṅ riṅ vaṅas suṅsaṅ.</p>
+<p>viku aṅadu savuṅ, pərut kupiṅnya, añjajahakən dharma, daṇḍanya 10 su, 3, ma babaru aśiṣya ṅa. su 3, ma taṅijo aśiṣya, 3 va, ga, ma maṅastadana, duk aṅigəli vuvuṅan ṅa.</p>
+<p>viku amuja riṅ vatəs səṃa, pabajaṅan kunaṅ, tunduṅən.</p>
+<p>viku dəṅkiṅ aranya, arəp pva miluha riṅ saṅ yogīśvara, riṅ catuspakṣa, makādi saṅ vudug basur; yan tumameṅ saṅ yogīśvara, [12v] maṅardana səkul sacalitan, tok sacalitan, gaṅan sacalitan, tepasya matan satus dvalapan, mesi kupaṅ manatak-natak, siṅ puspa ṅa. 3, ma pamacakəna saṅ hyaṅ tatvadi.</p>
+<p>iti ta saṅ hyaṅ devaśāsana, yeka eliṅakəna ajnya paradah, pañca tapi, punda putra, ajnya paradah, aṅadivama nata, kuti rəṅ, ṅava ma pañcapatra, sobyakti, pipis 5, pa. ika ta kavruhakəna.</p>
+<p>mərak tamren-mreni, pərit maṅantiṅ tiṅgaran, ṅa. manandaṅana tuṅgak asmi, aṅgiṅgah ayam i  kuruṅan, maṅliṅliṅ lare əmbanan, maṅalani rovaṅnya sapanaṅsen.</p>
+<p>puyuh akipu ri tani, amaṅadəgakən bukur kunaṅ, tan vighna deśa, vighna taṅ bhūmi dēnya.</p>
+<p>asu aṅirid ikunya, devaguru anuta, daṇḍa, maṅko apantikarma.</p>
+<p>asu arəbut onan, aṅrabeni rovaṅnya, śāsanaṅsen, daṇḍa, ṅasu, ṅava, ma[13r]    asu arəbut tai ṅa. viku atoh-tohan, /daṇḍa, ṅasu, carma.</p>
+<p>asu amunduṅ ṅa. viku atukər riṅ pasar, daṇḍa, ṅasu 5, ma se. va.</p>
+<p>matukar riṅ dalan, ri ləbuh kunaṅ, maṅrurah kandaṅ, daṇḍa 3 o o o., taṅguṅən riṅ pananyakan 5 o o o, sasvamah, pambənturan, nasa sikəpnya.</p>
+<p>asu maṅlek baluṅ, ṅa., viku maṅan iṅ pasar, vavaruṅ kunaṅ, daṇḍa ṅasu 3, ma</p>
+<p>asu aṅalulur iṅ leṅ ṅa. viku añjajavat valaka, daṇḍa ṅa sov 5, ma</p>
+<p>ləmbu aṅrərah kandaṅ ṅa., viku aṅrabeni aṅulit, daṇḍa 6 o o o, 2 pa.</p>
+<p>viku mananda bhūmi, viku caciṅ ṅa., siddha ṅalap de hyaṅ matuha.</p>
+<p>viṅileṅ ṅa., viku aṅer iṅ bhūmi kavalakan, siddhapada tan hana pirak, 2 o o o, sore sadaṅan, esuk sadaṅan, savuṅ roṅ apus, pindo satahun, yen tan kavas ta mandaməla.</p>
+<p>karavaṅ adondegan ṅa. vikvaləmbur iṅ tani, daṇḍa, təka paləmburanya ṅa. su 2 ma[13v]    anukupi mata saṅ r̥ṣi, aṅilo riṅ payasan, daṇḍa, ma ṅa / su, 2 ma</p>
+<p>kunaṅ pvavakiṅ mala dharma, aməraṅ pagəriṅ mandala, aṅlvaṅiṅ dharma, manandakən dharma, aṅalihakən dharma, yan tan sədəṅ gvananya aṅalih, səma pabajaṅan, tapəl, vatəs kulumpaṅ,. kunaṅ yan tan ya sədəṅ ṅvananya aṅalih, ya ta daṇḍanən təka kaṅ aṅubhayani.</p>
+<p>aṅrubuhakən pahyasan mvaṅ tutukiṅ mandala, daṇḍa 2 ku, 2 masu, ṅa. daṇḍanya yeka kabeh.</p>
+<p>andudut pagəriṅ mandala, aṅubiṅ saṅ hyaṅ san, aməraṅ buddhi variṅin, ṅariṅ-ṅariṅ riṅ kabuyutan, aməraṅ galar, aṅikət kəbo sapi riṅ vudi variṅin, ambulu, riṅ pahyasan, riṅ bale, riṅ bañjaran kunaṅ, sideṅ halap denira saṅ yogīśvara, yan anəbus 2, ma 2 ma savuṅ sapus, sal, dadaṅan rvaṅ kulak, paṅuniṅakṣa sapikul.</p>
+<p>mərak amre-mr-eni, aṅuṅguh-uṅguh gumanti, aṅati tiṅgaran ṅa.</p>
+<p>uvaya maṅaṅsar ṅaranya, aṅalih tuṅgal sadeśa.[14r]    pərit maṅusuṅ susuh ṅa., / luṅa aṅgva umahnya.</p>
+<p>ləmbu sakandaṅ, makaron deśa lavan śiṣya.</p>
+<p>ika ta pahayunən de saṅ yogīśvara, amuja riṅ saṅ hyaṅ rājapati riṅ mandala, salviriṅ puspa ṅa. su 3, kukusiṅ dupa ṅa. va, ma, təhər pamacakəna saṅ hyaṅ devaśāsana, den enak denira ṅavruhakən riṅ bhaṭāra hyaṅ matuha.</p>
+<p>gagak putih maṅantiṅ vod, maṅaskareṅ vaṅke.</p>
+<p>asu jəmbul maṅantiṅ karaṅ, tetega, tabət-tabət, aməṅ-aməṅan śiṣya.</p>
+<p>gagak makaluṅ ganitri, devaguru amuja riṅ sava, maṅastavidana. yan valaka dok maṅigəli vuvuṅan, viku amuja riṅ səma vatəs pabajaṅan, devaguru vadon tunduṅən de saṅ prabhu, tan paṅantyaniṅ bhūmi java, vikvadəki ṅaranya.</p>
+<p>arəp pva milveṅ saṅ yogīśvara riṅ catur-pakṣa, maṅanti riṅ saṅ vudug basur; yan tumuta saṅ yogīśvara maṅardakakəna səkul [14v] sacalitan, tvak sacalitan, masyaman satus dolapan, / esi kupaṅ manatak-natak sariniṅ puspa, ṅasu 5, ma, kukusiṅ dupa, ṅava, ma; təhər pamacakəna saṅ hyaṅ devaśāsana, kasuda pāpaniṅ bhuvana, ṅuniveh hilaṅa pāpaniṅ saṅ prabhu.</p>
+<p>kunaṅ pva pañcaśīla ṅa. valakaśīla pitəkətana denira saṅ yogīśvara, kala kutila, guna buddhi, asimburuṅ, paradara, mapa ta kaliṅanya, viku aṅadu tukar, andoli lot, maṅajarakən kəduk timbul iṅ tani, kutila ṅaranya. añcalvaṅ, amaragi gunaniṅ maliṅ, guna buddhi ṅaranya; añjajahakən dharma, jijinah vvaṅ riṅ tani, takimburuh ṅaranya. amati-mati janma, asva candala, asta candala, aləkən tampakiṅ kikir, paradara ṅaranya. bavud, palakṣaṇa, aṅlavani si syanya, putu dharma, ambak panti, akili ṅuni-ṅuniveh valvaniṅ saṅ guru, ika ta vikunah janma ṅaranya; viku tarivuṅ, akuməl pv-a taṅ [15r] jagat / denya, ṅuniveh manak təka śiṣyanya, ika ta dohakəna de saṅ prabhu, kəmbulana de vado aji, ṅuniveh saṅ yogīśvara paḍa aṅəmbulana, sakvehniṅ janma manusa kabeh sama aṅəmbulana, paṅilakəna, apan ika paṅavakiṅ krəmi saṅkeṅ duratmaka, təraṅ-təraṅ ikaṅ laṅit, lavru denanakən denya madulur taṅ marana kveh, embuh pāpa saṅ prabhu denya.</p>
+<p>arəp pva tumutura riṅ bhūmi java, amalekəna tanah, bhakta prāṇa, masyaman satus dolapan, esi kupaṅ manatak-natak, banyak sapasaken, itik sapasaken, itik paḍa macucuk mas avrat samas, vədus 2, ləmbu 2, kəbo satəmpuh, sovaṅ paḍa asuṅu mas avrat samas riṅ saviji-viji, riṅ pəkən panandahana, təhər pamacakəna saṅ hyaṅ devaśāsana lavan saṅ hyaṅ mahacandra, ṅuniveh saṅ hyaṅ nandisvara, śiṣyanyamet [15v] turu mvah, apan vus kumləm tumutiṅ / pāpa kadya vatu.</p>
+<p>kunaṅ pva dasaśīla, den enak deniraṅrəṅə saṅ yogīśvara, pitəkətakəna, sapala riṅ anak dharma, hayva pepeka, tan hana mivala durśīla, satyeṅ paṅayapan, satyeṅ patapan, satya riṅ brata, atutureṅ pūjā brata, rakṣaa eṅ guna, vruha maṅaji, vivekaa riṅ śabda, rakṣaha eṅ āgama, rakṣaa eṅ paṅayap, sapaṅutusiṅ saṅ guru hayva laṅgyana, nikəlakən tuduh, marapvan rahayu tan kataman dasamala, trimala, tan luvit, tus gambi svara sira, saṅ kumavənaṅ umavasakəna riṅ jagat sahatita. saprayodnyana, hilaṅ pāpaniṅ bhuvana denya saṅ yogīśvara yan maṅkana.</p>
+<p>kaliṅanya, saṅ yogīśvara sira tusniṅ prabhu lumaku viku, tusniṅ apitra prabhu; saṅ paramārtha, yogīśvara ṅaranya; sira saṅ tusniṅ viku, sira saṅ adi yogīśvara ṅaranya; sira saṅ tusniṅ viku anuṅgal, [16r] sira saṅ kṛta, yogīśvara ṅaranya; sira saṅ tirta yogīśvara ṅaranya, sira saṅ tusniṅ devaguru, sira ta kumavənaṅ maṅalahakən pāpaniṅ bhuvana.</p>
+<p>kunaṅ pāpaniṅ viku aguru riṅ viku tarivuṅ, riṅ viku paval-śīla: sasākṣi, savisi, saravi candra. samaṅkana pāpaniṅ viku aguru riṅ viku paval-śīla lavan aguru riṅ viku tarivuṅ. ika tatan pinakaguru sakvehniṅ viku cuta ceda cedaṅga. ndya ta lvirnya viku ceda-cedaṅga: viku ro, amto, nakuni, pasuh, locana, napuṅsaka, anatas dada, kukṣa, valamadi. ika ta kabeh tan makagurvaniṅ loka, kemər pāpaniṅ bhuvana kapavitraniṅ jagat denya.</p>
+<p>ndya artinya: viku ro ṅa. strī. aməto ṅa. tan vəriṅ surat. viku nakuni ṅa. vuta, picək, bulər. viku pasuh ṅa. siṅkəl, piñcaṅ, tukuṅ, semper. viku locana ṅa. tuli. viku napuṅsaka ṅa. kədi. [16v] viku anatas dada ṅa. vikət. viku kusta ṅa. vikoakṣa, valavadi, ṅa. kabeh sakalviriṅ cuta cedaṅga tan makagurvaniṅ loka, apan aṅgavē panəsakən dasamala pveka.</p>
+<p>kunaṅ pvavakiṅ manuh-janma, abrəkya, amahat, aṅuṅge, anyilikitak, aṅulər, apande mas, aṅlibaṅ, ambədəl, amutər, adiun, ambuntəl, añjalagraha. ika ta kabeh, yan lumakvaa vikva, tan yogya makagurva. aṅiṅ doṣaana pahyasan, ambəcikana rat, bhaktya riṅ tami, mulea riṅ rat.</p>
+<p>yadyan malecaa, adəndəṅa, amariglaṅa, avayaṅa, amidva, ȧmula-mula, atiṅkaha, tan devagurva ika kabeh, umayapa riṅ tami. yanya vado-ajya, rakyan vikəsa tan devagurva, umayapa riṅ tami.</p>
+<p>kunaṅ sira devagurva, kunaṅ saṅ dana vastu, saṅ kalinañca, saṅ lavu putra putra mvaṅ taṇḍa adimantri, makādi prabhu manuh sira [17r] saṅ devagurva, tan pagavea, devaguru sira, apan parakula ṅaranya. manak pva sira riṅ pavikvan, anaknya vənaṅ devagurva, vənaṅ milva tata-luṅguh, sira ta paraguruloka ṅaranya.</p>
+<p>kunaṅ pva sira saṅ yogīśvara, sira saṅ siddha vənaṅ riṅ kuna, ika ta eliṅakəna de saṅ prabhu, ṅoniveh janma manusa kabeh rumakṣaa tapanira saṅ yogīśvara, apan saṅ yogīśvara paṅavakiṅ hyaṅ matuha, añjənəṅakən taṅ dharma silihasih, tan paṅalap ahurniṅ ahur, tan eliṅin</p>
+<p>kəndəṅ səṅkər, tan valuyaa liṅnira hyaṅ matuha.</p>
+<p>kunaṅ pva saṅ manuh adharmaa varsi, karakṣaaniṅ sarva tumuvuh təhər vehana paṅajya manuh-śāsana, eliṅa riṅ kandaṅ.</p>
+<p>kunaṅ saṅ prabhu, mantri, maṅaji dharma teja riṅ vanasrama, karakṣahaniṅ bala, mantrinira saṅ prabhu, amuvara sarva tinuku, ramyaaniṅ pəkən, kṛtaaniṅ rāja-nagara.</p>
+<p>kunaṅ pva saṅ r̥ṣi, adharmaa śūnya, siddhaaniṅ tapa, karakṣaaniṅ jagat kṛtaaniṅ bhūmi, lumrah asraṅ yajñanireṅ bhuvana, karakṣaa eṅ pūjā samādhi, eliṅa riṅ parikrama, ambək kasādhun sira.</p>
+<p>saṅ prabhu sira, ambəcikakəna ṅaranira, sira saṅ prabhu riṅ manuh, ambəcikana pakaryanyaṅan, liṅga prastadi.</p>
+<p>kabujaṅgan uṅgvananiṅ aṅaji saṅ hyaṅ dharmaśāstra sahāgama, kavivekan.</p>
+<p>kayaṅan vatu nululan, uṅgvananiṅ amuja riṅ deva, bhakti aśabda riṅ vvaṅ atva.</p>
+<p>liṅga vatu tinumpuk, uṅgvananiṅ amuja anurunakən udan, dadyaniṅ udan, kailaṅaniṅ maraha, karakṣāniṅ jagat.</p>
+<p>prastati mandala, uṅgvananiṅ adharma; dharma saṅaskara, uṅgvananiṅ lumaku viku, aṅruvatana dasamala, śāstra ṅgvananiṅ tagave hayu, pametaniṅ saṅ hyaṅ dharma, uṅgvananiṅ atapa, pametaniṅ saṅaskara hayu, vruha riṅ sarva tatva saṅ hyaṅ dharma, anduduk tali kapəndəm, amuṅəkən təs kabuliṅ, aneṅekən dharma, anuduhakəna riṅ śabda rahayu, anyukitana tuli bisu, andəliṅakən avuta, aṅirəkəna sira kahuvusaniṅ gave kabeh, hala-ayu.</p>
+<p>ika ta eliṅakəna śabda bhaṭāra hyaṅ mahatuha.</p>
+<p>kataṅgapana deniṅ devata kabeh, ṅuniveh taṅ devata caturlokapala, sakvehniṅ saptar̥ṣi, sakvehniṅ parabinagavan, aṅruṅo pitutur hyaṅ matuha. hayva lupa sira kabeh sakvehniṅ janma manusa, paḍa maṅrəṅə, ajana lupa.</p>
+<p>sri batati pva sira tumut lakṣaṇananiṅ bhaṭāra hyaṅ matuha, kari ta putranira pinakaratu riṅ mədaṅ, kṛta taṅ rat kabeh, atutur manahniṅ janma kabeh, padaṅruṅva; enak tapaniṅ r̥ṣi kabeh, rinakṣa ri deniṅ vado aji kabeh.</p>
+<p>dadyakəna-kəna taṅ rājasva lavan devasva, ganitri, saṅka, ganta-ganti makādi gondala, masiva pataranan; yan tatva yaraya, kaliṅanya, vənaṅ halapən tan panəbusan, mantuka de saṅ prabhu, hayva vinicara, maṅkana vəkas bhaṭāra hyaṅ matuha.</p>
+<p>maṅkana taṅ rājasva, paṅanugraha vidi bhaṭāra hyaṅ matuha, hana tekaṅ devata kabeh, samaṅruṅu yeka kabeh makādi sri batati lavan vvaṅ riṅ mədaṅ tantu, agavea parivastu, kavuriṅ sri batati irikaṅ batur aguṅ, ikaṅ gunuṅ janti apāpat kapasagi taṅ mandala riṅ batur aguṅ, sira asta stula bhaṭāra hyaṅ matuha.</p>
+<p>kunaṅ pva saṅ. muladrəmi, sira ta bhagavan, tantraba riṅ kayaṅan bhaṭāra hyaṅ matuha.</p>
+<p>kunaṅ pva sira saṅ mariṅ mədaṅ, sira ta ṅaran bhagavan sidora, sira kabeh rovaṅanira atapa.</p>
+<p>kunaṅ sira bhaṭāra hyaṅ matuha mantuk mariṅ svarganira, tumurun sira pisan savulan, seje pva ṅaranira savulan, agənti lavan bhagavan vṛhaspati.</p>
+<p>śuklapakṣa tumurun bhaṭāra hyaṅ matuha, sira kinabhaktyan.</p>
+<p>krəsnapakṣa riṅasada, bhagavan vṛhaspati sira tumurun, kinabhaktyan [19r] ḍataṅ sira tumampak riṅ nagara, maṅaskara sira / pala, nivandaniṅ hana muja asti, sakvəhniṅ dravyaso hana riṅ tani, pūjākəna riṅ bhaṭāra nyaṅ matuha, ṅuniveh riṅ bhagavan vṛhaspati. sakvehniṅ pāpaniṅ manuh-janma karuvat denira.</p>
+<p>nivandani ṅaraniṅ paṇḍita dinaṇḍa, tan eliṅ riṅ kəndəṅ səṅkər. den aṅgoa papeliṅgoh, triyakva pepeliṅgoh, sato, sumo vṛddhi sato, gumovah sanaso vighne, dasaso vighne mantrakveh. ka. pāpaniṅ tan paṇḍita, pāpanriṅan daṇḍa; yan tan yogya daṇḍanən, prasiddha taṅ pāpa tumampuh. ika ta eliṅakəna saṅ maṅrəṅa lavan saṅ sādhu mirhyaṅ, kavruhakəna pamatiniṅ kala, sadvargaripu.</p>
+<p>maṅkana patiṅgalira hyaṅ matuha, makādi pavəkasira saṅ tapa riṅ manuhjanma kabeh. sira bhaṭāra hyaṅ matuha lavan devata kabeh, sakvehniṅ parabinagavan sakvehniṅ saptaloka, sakvehniṅ caturlokapala, [19v] paḍa siratiṅgal pitəkət, sama taṅ manusa / eliṅakəna kabeh.</p>
+<p>oṅkara satata, a i nama śivaya, oṅkara samadaya, oṅ avighnam astu nama sidəm.</p>
+<p>iti devaśāsana, kayatnakəna de saṅ mahyun umavaseṅ devaśāsana, samaṅkana lvirnira.</p>
+<p>kunaṅ taṅ sinəṅguh tuhu viku pavitra, pāpat, lvirnya: grəhasta, bikṣuka, brahmacari, vanagrasta. ya taṅgugvana devaśāsana makādi r̥ṣiśāsana, saṅ hyaṅ rājapati gondala, hayva ta kemutan.</p>
+
+			</div>
+			    <!--<xi:include href="a.xml" xpointer="a1"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+		</body>
+	</text>
+</TEI>
