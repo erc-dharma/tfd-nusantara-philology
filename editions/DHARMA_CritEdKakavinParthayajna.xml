@@ -41,6 +41,7 @@
                   </abbr>
                   <!-- <bibl><ptr target="bib:.../></bibl> Zoetmulder, Sekar Iniket, Drukproef-->
                </witness>
+                
                <witness xml:id="L">
                   <abbr type="siglum">L</abbr>
                   <msDesc>
@@ -78,6 +79,7 @@
                      </history>
                   </msDesc>
                </witness>
+                
                <witness xml:id="P">
                   <abbr type="siglum">P</abbr>
                   <msDesc>
@@ -140,7 +142,42 @@
                     </msDesc>
                 </witness>
                 
-                
+                <witness xml:id="T">
+                    <abbr type="siglum">L</abbr>
+                    <msDesc>
+                        <msIdentifier>
+                            <settlement>Leiden, the Netherlands</settlement>
+                            <institution>Universiteit Leiden</institution>
+                            <repository>Leiden University Library</repository>
+                            <idno>Or. 20030</idno>
+                        </msIdentifier>
+                        <msContents>
+                            <!-- the msContents isn't mandatory -->
+                            <msItem>
+                                <colophon>
+                                    <quote xml:lang="kaw-Latn" type="diplomatic">...
+                                    </quote>
+                                </colophon>
+                            </msItem>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc>
+                                <!-- Here you can give a physical description of the manuscript in prose-->
+                                <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
+                            </objectDesc>
+                            <handDesc>
+                                <handNote xml:id= "Ta" scriptRef="class:38769 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                                    <abbr type="hand">T<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
+                                    <p>The only hand of the manuscript, neat Balinese script</p><!-- provide a description of the hand -->
+                                </handNote>
+                            </handDesc>
+                        </physDesc>
+                        <history>
+                            <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                            <p>...</p>
+                        </history>
+                    </msDesc>
+                </witness>
                 
             </listWit>
          </sourceDesc>
@@ -233,19 +270,20 @@
                 <listApp type="apparatus">
                       <app loc="a">
                         <lem type="emn">rudrāya</lem>
-                        <rdg wit="#EdSSA #EdZ #L #P">rudrākṣa</rdg>
+                        <rdg wit="#EdSSA #EdZ #L #P #T">rudrākṣa</rdg>
                         </app>
                      <!--  <app loc="b">
                         <lem wit="#EdSSA #EdZ #L #P">iṅ hiḍəp</lem>
                         <rdg wit="#K">iṅ iḍəp</rdg>
                         </app>-->
-                         <app loc="c">
-                         <lem wit="#EdZ">svarastuti</lem>
+                        <!-- <app loc="c">
+                         <lem wit="#EdZ #T">svarastuti</lem>
                          <rdg wit="#EdSSA #L #P">svarāstuti</rdg>
-                         </app>
+                         </app>-->
                      <app loc="d">
-                         <lem wit="#EdZ #EdSSA #L">riṅ</lem>
-                         <rdg wit="#P">rī</rdg>
+                         <lem wit="#EdZ #EdSSA #L">vijñātmaka riṅ</lem>
+                         <rdg wit="#P">vijñātmaka rī</rdg>
+                         <rdg wit="#T">vidyātmaka riṅ</rdg>
                          </app>
                     </listApp>
                 <!--  <lg n="1">
@@ -262,11 +300,11 @@
                  </lg>
                         <listApp type="apparatus">
                       <app loc="b">
-                        <lem wit="#L #EdSSA #P">sūkṣmā</lem>
+                        <lem wit="#L #EdSSA #P #T">sūkṣmā</lem>
                         <rdg wit="#EdZ">sūkṣmān</rdg>
                         </app>
                          <app loc="c">
-                         <lem wit="#EdSSA #L #P">sāriniṅ</lem>
+                         <lem wit="#EdSSA #L #P #T">sāriniṅ</lem>
                          <rdg wit="#EdZ">sarisiṅ</rdg>
                          </app>
                             <app loc="d">
@@ -275,17 +313,10 @@
                          <rdg wit="#EdZ">pinakakesiniṅ</rdg>
                             </app>
                             <app loc="d">
-                                  <lem wit="#EdSSA #L #P">lanāṅudaṅ</lem>
+                                  <lem wit="#EdSSA #L #P #T">lanāṅudaṅ</lem>
                          <rdg wit="#EdZ">lanāṅundaṅ</rdg>
                             </app>
                     </listApp>
-                  
-                  <!--
-                    <l>mevəh ṅvaṅ mucape kadarśitan i sarvagatanira haneṅ jagaddhita</l>
-                    <l>ndan <app><lem wit="#EdZ">sūkṣmān</lem><rdg wit="#EdSSA #L ">sūkṣmā</rdg></app> sumilib riṅ aṇḍajana kokiraniran atirūpa vīryavān</l>
-                    <l>saṅ tvasniṅ lara raga <app><lem wit="#EdSSA #L">sariniṅ</lem><rdg wit="#EdZ">sarisiṅ</rdg></app> unaṅ saṅ amisani rarasniṅ aṅrəṅə̄</l>
-                    <l>saṅ sākṣāt <app><lem wit="#EdZ #L">pinakesiniṅ</lem><rdg wit="#EdSSA">pinakakesiniṅ</rdg></app> manah akuṅ rahina vəṅi <app><lem wit="#EdSSA #L">lanāṅudaṅ</lem><rdg wit="#EdZ">lanāṅundaṅ</rdg></app> lulut</l>
-                -->
                 <lg xml:id="kakavin_01.03" n="3">
                     <l n="a">yekīṅ ambək aṅel śumakti ri viyoganiṅ alara kəneṅ smarānala,</l>
                     <l n="b">paṅdeniṅ lara rāga yeki tumuvuh ri hati mamunah aṅgəsəṅ manah,</l>
@@ -295,25 +326,13 @@
                    <listApp type="apparatus">
                         <app loc="a">
                         <lem wit="#EdZ #EdSSA #L">śumakti</lem>
-                        <rdg wit="#P">sumakti</rdg>
+                        <rdg wit="#P #T">sumakti</rdg>
                         </app>
-                      <app loc="a">
-                        <lem wit="#EdZ #EdSSA #P">viyoganiṅ</lem>
-                        <rdg wit="#L">viyogganiṅ</rdg>
+                        <app loc="d">
+                        <lem wit="#EdZ #EdSSA #L #P">mamulaṅuni</lem>
+                        <rdg wit="#T">mamulaṅuna</rdg>
                         </app>
-                         <app loc="b">
-                         <lem wit="#EdSSA #EdZ #P">aṅgəsəṅ</lem>
-                         <rdg wit="#L">aṅgəsə̄ṅ</rdg>
-                         </app>
                     </listApp>
-                    
-                <!--
-                              <l>yekiṅ ambək aṅel śumakti ri <app><lem wit="#EdZ #EdSSA">viyoganiṅ</lem><rdg wit="#L">viyogganiṅ</rdg></app> alara kəneṅ smarānala</l>
-                    <l>paṅdeniṅ lara rāga yeki tumuvuh ri hati mamunah <app><lem wit="#EdZ #EdSSA">aṅgəsəṅ</lem><rdg wit="#L">aṅgəsə̄ṅ</rdg></app> manah</l>
-                    <l>tṛṣṇāgə̄ṅ sumaput pətəṅ təmahaniṅ rahina pati gagap-gagap tutur</l>
-                    <l>kāmārtha pva ya hetuniṅ mapəniṅan mamulaṅuni ri saṅ huvus licin</l>
-                </lg>
-                -->
                 <lg xml:id="kakavin_01.04" n="4">
                     <l n="a">yāṅde rañca ri citta maṅkin alaṅə̄ təkapiṅ alara śoka kāsyasih,</l>
                     <l n="b">ṅhiṅ vikvā jugaṅ enakānusupa riṅ vana tumulusa tan kabañcana,</l>
@@ -322,46 +341,39 @@
                  </lg>
                          <listApp type="apparatus">
                       <app loc="b">
-                        <lem wit="#EdZ #P">vikvā jugaṅ</lem>
-                        <rdg wit="#L #EdSSA">vikvāṅ</rdg>
+                        <lem wit="#EdZ #P #L">vikvā jugaṅ</lem>
+                        <rdg wit="#EdSSA">vikvāṅ</rdg>
                       </app>   
                         <app loc="b">
-                         <lem wit="#EdSSA #L #P">tumulusa</lem>
+                         <lem wit="#EdSSA #L #P #T">tumulusa</lem>
                          <rdg wit="#EdZ">tulusa</rdg>
                         </app>
-                         <app loc="c">
-                         <lem wit="#EdSSA #L #P">kaləpasən</lem>
-                         <rdg wit="#EdZ">kaləpasan</rdg>
-                         </app>
                                  <app loc="d">
-                         <lem wit="#EdSSA #EdZ #P">tekā</lem>
+                         <lem wit="#EdSSA #EdZ #P #T">tekā</lem>
                          <rdg wit="#L">tekāk</rdg>
                                  </app>
                              <app loc="d">
-                                     
-                                 <lem wit="#L #P">maləsāvakājñana</lem>
-                         <rdg wit="#EdSSA">malesāvak ajñāna</rdg>
+                                 <lem wit="#L #P #T">maləsāvakājñana</lem>
+                         <rdg wit="#EdSSA">malesāvak ājñāna</rdg>
                                      <rdg wit="#EdZ">maləsvāvakājñāna</rdg>
                          </app>
                     </listApp>
-                   
-                <!--
-                     <l>yāṅde rañca ri citta maṅkin alaṅə̄ təkap iṅ alara śoka kāsyasih</l>
-                    <l>ṅhiṅ <app><lem wit="#EdZ ">vikvā jugaṅ</lem><rdg wit="#L #EdSSA">vikvāṅ</rdg></app> enakānusupa riṅ vana <app><lem wit="#L #EdSSA">tumulusa</lem><rdg wit="#EdZ">tulusa</rdg></app> tan kabañcana</l>
-                    <l>śaktyāṅuṅsira siddhaniṅ manəmu sandhi <app><lem wit="#EdSSA #L">kaləpasən</lem><rdg wit="#EdZ">kaləpasan</rdg></app> i patyaniṅ tiga</l>
-                    <l>ṅhiṅ <app><lem wit="#EdZ #EdSSA">tekā</lem><rdg wit="#L">tekāk</rdg></app> palakun ri pādanira saṅ yativara <app><lem wit="#EdZ">maləsvāvakājñana</lem><rdg wit="#EdSSA">malesāvak ajñāna</rdg><rdg wit="#L">maləsāvak ājñana</rdg></app></l>
-                    -->
             </div>
-
             <div type="canto" rend="met" n="2" met="pramitākṣarā" xml:id="kakavin_02">
                 <note type="prosody">--+-+---+--=</note>
                 <!--  <note>(skt <hi rend="italic">pramitākṣara</hi>)</note>-->
                 <lg xml:id="kakavin_02.01" n="1">
                     <l n="a">hana tāṣṭaliṅga ya vinastu ləvih,</l>
                     <l n="b">pinakopajīvaniṅ atīrtha hayu,</l>
-                    <l n="c">pagavay halāhayu ya vastu hilaṅ,</l>
+                    <l n="c">pagavay halā hayu ya vastu hilaṅ,</l>
                     <l n="d">ri vəkasni sandhiniṅ amukṣa hati.</l>
                 </lg>
+                <listApp type="apparatus">
+                    <app loc="c">
+                                 <lem wit="#EdSSA #EdZ #L #P">halā hayu</lem>
+                         <rdg wit="#T">hala hayu</rdg>
+                         </app>
+                </listApp>
                 <lg xml:id="kakavin_02.02" n="2">
                     <l n="a">ya ta hetuniṅ manəmu śabda tutur,</l>
                     <l n="b">apan evəhaṅ luputa riṅ vimala,</l>
@@ -369,8 +381,12 @@
                     <l n="d">ya dumehnikā manəmu pāpa magə̄ng.</l>
                 </lg>
                 <listApp type="apparatus">
+                    <app loc="c">
+                        <lem wit="#EdSSA #EdZ #L #P">yeka</lem>
+                        <rdg wit="#T">yekā</rdg>
+                      </app>  
                       <app loc="d">
-                        <lem wit="#EdZ #L #P">dumehnikā</lem>
+                        <lem wit="#EdZ #L #P #T">dumehnikā</lem>
                         <rdg wit="#EdSSA">dumehnika</rdg>
                       </app>   
                     </listApp>
@@ -383,18 +399,19 @@
                             <listApp type="apparatus">
                                  <app loc="a">
                         <lem wit="#EdSSA #L #P">vara</lem>
-                        <rdg wit="#EdZ">vvara</rdg>
+                        <rdg wit="#EdZ #T">vvara</rdg>
                            </app>
                       <app loc="b">
-                        <lem wit="#EdZ #L #P">pāṇḍaveki</lem>
+                        <lem wit="#EdZ #L #P #T">pāṇḍaveki</lem>
                         <rdg wit="#EdSSA">pāṇḍaveku</rdg>
                            </app>
                           <app loc="c">
                               <lem wit="#EdSSA #L #P">halāh anita</lem>
                         <rdg wit="#EdZ">halah manita</rdg>
+                              <rdg wit="#T">halah anita</rdg>
                       </app>   
                                   <app loc="d">
-                              <lem wit="#EdSSA #L #EdZ">kaṭuṅka</lem>
+                              <lem wit="#EdSSA #L #EdZ #T">kaṭuṅka</lem>
                         <rdg wit="#P">kaduṅka</rdg>
                       </app>  
                     </listApp>
@@ -408,11 +425,13 @@
                       <app loc="d">
                         <lem wit="#EdZ">manahniran</lem>
                         <rdg wit="#EdSSA #L #P">manahnirā</rdg>
+                                                  <rdg wit="#T">manahnira</rdg>
                       </app>
                           <app loc="d">        
                               <lem wit="#EdZ">hala</lem>
                         <rdg wit="#EdSSA">havak</rdg>
                           <rdg wit="#L #P">hava</rdg>
+                              <rdg wit="#T">yava</rdg>
                       </app>   
                     </listApp>
                 <lg xml:id="kakavin_02.05" n="5">
@@ -421,7 +440,6 @@
                     <l n="c">vihikan ta riṅ naya parārthaguṇa,</l>
                     <l n="d">lalu yan kəneṅ dyutavikalpa malā.</l>
                 </lg>
-                             
                 <lg xml:id="kakavin_02.06" n="6">
                     <l n="a">humənəṅ sireki sinəsəl vəkasan,</l>
                     <l n="b">təkap iṅ sarāt paḍa kabeh malara,</l>
@@ -431,25 +449,29 @@
                             <listApp type="apparatus">
                                     <app loc="a">
                         <lem wit="#EdZ">humənəṅ</lem>
-                                          <rdg wit="#EdSSA #P">umənəṅ</rdg>
+                                          <rdg wit="#EdSSA #P #T">umənəṅ</rdg>
                         <rdg wit="#L">umənə̄ṅ</rdg>
                                          </app>
                       <app loc="b">
-                        <lem wit="#EdZ">malara</lem><!--  (5936) -->
+                        <lem wit="#EdZ #T">malara</lem><!--  (5936) -->
                         <rdg wit="#EdSSA #L #P">marara</rdg>
                       </app>   
                     </listApp>
                 <lg xml:id="kakavin_02.07" n="7">
                     <l n="a">sira rena saṅ lima təmən kalaran,</l>
                     <l n="b">manaṅis masambat akusā kapati,</l>
-                    <l n="c">ri hilaṅnikaṅ kanakarājapurā,</l>
+                    <l n="c">ri hilaṅnikaṅ kanakarājapura,</l>
                     <l n="d">kalavan sabhūṣaṇa təlas karuhun.</l>
                 </lg>
                            <listApp type="apparatus">
+                               <app loc="a">
+                        <lem wit="#EdSSA #EdZ #L #P">saṅ lima</lem>
+                                          <rdg wit="#T">salima</rdg>
+                                         </app>
                                     <app loc="b">
                         <lem wit="#EdZ">akusā</lem>
                                           <rdg wit="#EdSSA">akuśa</rdg>
-                        <rdg wit="#L #P">akuśā</rdg>
+                        <rdg wit="#L #P #T">akuśā</rdg>
                                          </app>
                                </listApp>
                 <lg xml:id="kakavin_02.08" n="8">
@@ -461,11 +483,11 @@
                   <listApp type="apparatus">
                                     <app loc="a">
                         <lem wit="#EdZ #EdSSA">nṛpaputrikā rika rapuh</lem>
-                                          <rdg wit="#L #P">nṛpaputra kāri karapuh</rdg>
+                                          <rdg wit="#L #P #T">nṛpaputra kāri karapuh</rdg>
                                     </app>
                     <app loc="b">
                         <lem wit="#EdSSA #EdZ #P">śakunin</lem>
-                                          <rdg wit="#L #P">śakunīn</rdg>
+                                          <rdg wit="#L #P #T">śakunīn</rdg>
                         </app>   
                                </listApp>
                 <lg xml:id="kakavin_02.09" n="9">
@@ -481,16 +503,8 @@
                     <l n="d">rah ikaṅ suyodhana ya śucyanira.</l>
                 </lg>
                   <listApp type="apparatus">
-                             <app loc="a">
-                        <lem wit="#EdZ #L #P">maṅurai</lem>
-                                          <rdg wit="#EdSSA">maṅure</rdg>
-                                    </app>
-                         <app loc="c">
-                        <lem wit="#EdZ #EdSSA #L">ta</lem>
-                                          <rdg wit="#P">tā</rdg>
-                                    </app>
                                     <app loc="c">
-                        <lem wit="#EdZ #EdSSA #P">gəluṅən</lem>
+                        <lem wit="#EdZ #EdSSA #P #T">gəluṅən</lem>
                                           <rdg wit="#L">gəluṁṅən</rdg>
                                     </app>
                                </listApp>
@@ -500,13 +514,18 @@
                     <l n="c">mupuhe pupūni si suyodhana riṅ,</l>
                     <l n="d">palagan pratijñanira tan vuruṅa.</l>
                 </lg>
-                  
                 <lg xml:id="kakavin_02.12" n="12">
                     <l n="a">paḍa mətvakən vacana tan rahayu,</l>
                     <l n="b">sira saṅ suyodhana muvah mavuvus,</l>
                     <l n="c">niyatanya yan pəjaha liṅnya hələm,</l>
                     <l n="d">makatuṇḍa təṇḍas i musuhnya lima.</l>
                 </lg>
+                <listApp type="apparatus">
+                                    <app loc="c">
+                        <lem wit="#EdZ #EdSSA #L #P">hələm</lem>
+                                          <rdg wit="#T">hələn</rdg>
+                                    </app>
+                               </listApp>
                 <lg xml:id="kakavin_02.13" n="13">
                     <l n="a">ndya tikan patūta maluyeki muvah,</l>
                     <l n="b">ya ta kāṅəniṅ tvasira dharmasuta,</l>
@@ -517,11 +536,11 @@
                                     <app loc="a">
                         <lem wit="#EdZ">tikan patūta</lem>
                                           <rdg wit="#EdSSA #L">tikān patut ta</rdg>
-                                         <rdg wit="#P">tikān patūt ta</rdg>
+                                         <rdg wit="#P #T">tikān patūt ta</rdg>
                                     </app>
                     <app loc="d">
-                        <lem wit="#EdZ #L">tahun</lem>
-                                          <rdg wit="#EdSSA #P">tawun</rdg>
+                        <lem wit="#EdZ #L #T">tahun</lem>
+                                          <rdg wit="#EdSSA #P">tavun</rdg>
                         </app>   
                                </listApp>
                 <lg xml:id="kakavin_02.14" n="14">
@@ -534,6 +553,11 @@
                                     <app loc="b">
                         <lem wit="#EdZ">prihatin</lem>
                                           <rdg wit="#EdSSA #L #P">priyatin</rdg>
+                                         <rdg wit="#T">prihati</rdg>
+                                    </app>
+                          <app loc="d">
+                        <lem wit="#EdZ #EdSSA #L #P">maməlas</lem>
+                                         <rdg wit="#T">mavəlas</rdg>
                                     </app>
                                </listApp>
             </div>
