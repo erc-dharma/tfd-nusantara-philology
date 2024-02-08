@@ -92,8 +92,9 @@
                      <msContents>
                         <!-- the msContents isn't mandatory -->
                         <msItem>
-                           <colophon/>
-                           <quote xml:lang="kaw-Latn" type="diplomatic">iti pārthayajñā, samāpta, tlas. 0. puput riṃ dinā, vṛ, va, vatu gunuṃ, paṃ, piṃ, 12, śaśi, ka, 9, raḥ, 0, təṃ, 2, i śakavarṣā, 1820. ṅavitri ṅve, a, pva, kulavu, taṃ, piṃ, 10,. 0.</quote>
+                           <colophon>
+                              <quote xml:lang="kaw-Latn" type="diplomatic">iti pārthayajñā, samāpta, tlas. 0. puput riṃ dinā, vṛ, va, vatu gunuṃ, paṃ, piṃ, 12, śaśi, ka, 9, raḥ, 0, təṃ, 2, i śakavarṣā, 1820. ṅavitri ṅve, a, pva, kulavu, taṃ, piṃ, 10,. 0.</quote>
+                           </colophon>
                         </msItem>
                      </msContents>
                      <physDesc>
@@ -134,6 +135,15 @@
                                 <!-- Here you can give a physical description of the manuscript in prose-->
                            <p>Romanized transcription of a palm-leaf manuscript from Gedong Kirtya (IVb. 665/1). Typed in 1976.</p>
                         </objectDesc>
+                        <handDesc>
+                           <handNote xml:id="Ka" scriptRef="class:38769 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                              <abbr type="hand">K<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi>
+                              </abbr>
+                              <!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
+                              <p>The only hand of the manuscript, neat Balinese script</p>
+                              <!-- provide a description of the hand -->
+                           </handNote>
+                        </handDesc>
                      </physDesc>
                      <history>
                             <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
@@ -3028,10 +3038,10 @@
                 <!--  PYñ 13.8: iniṅĕt-iṅĕt ira lwir tiṅkah niṅ puraṇa tikā / patapan arĕcĕp (better the var. pura katika). -->
                     <listApp type="apparatus"><app loc="a"><lem wit="#P #T">pura katikā</lem><rdg wit="#EdSSA">puraṇa ṭika</rdg><rdg wit="#EdZ">puraka ṭikā</rdg></app>
                     <app loc="b"><lem wit="#EdZ #EdSSA">nyāsanyāmuvuhi</lem><rdg wit="#L">yaśanyāmuvuhi</rdg><rdg wit="#P">yāśanyāmuvuhi</rdg><rdg wit="#T">nyāsanyāmuhuhi</rdg></app>
-                        <lem wit="#T">vvaya ta viku ri</lem>
+                       <app loc="d"> <lem wit="#T">vvaya ta viku ri</lem>
                              <rdg wit="#EdZ #EdSSA">vyara ta vini ri</rdg>
                         <rdg wit="#L #P">vyara ta vinuri</rdg>
-                     
+                       </app>
                 <!-- 274122<P>PYñ 13.8: wyara ta winuri (r. wini ri? widu
 274123<P>ri?) saṇḍiṅ nī (r. niṅ?) maṅucap-ucap. -->
                 </listApp>
