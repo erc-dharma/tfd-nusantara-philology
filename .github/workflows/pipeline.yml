@@ -23,12 +23,8 @@ jobs:
 
        - name: Updating the edited texts in the repository
          run: |
-          git config user.name "Michaël Meyer"
-          git config user.email michaelnm.meyer@gmail.com
-          git add output/critical-edition/texts
-          git diff-index --quiet HEAD && git commit -m "Update plain text files"
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add output/
-          git diff-index --quiet HEAD && git commit -m "XML files are created"
+          git commit -m "XML files are created"
           git push
