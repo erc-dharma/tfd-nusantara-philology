@@ -135,23 +135,44 @@
                   </abbr>
                   <msDesc>
                      <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>Leiden University</institution>
-                        <repository>Leiden University Libraries</repository>
-                        <collection>Special Collections</collection>
-                        <idno>Or 11.185</idno>
+                        <settlement>Denpasar</settlement>
+                        <institution>Dinas Kebudayaan Provinsi Pemerintah Provinsi Bali</institution>
+                        <repository>Pusat Dokumentasi Dinas Kebudayaan Bali</repository>
+                        <idno>III C: 791/10</idno>
                      </msIdentifier>
                      <msContents>
                         <msItem>
                            <title>Aji Canda</title>
                            <colophon>
-                              <quote xml:lang="kaw-Latn">iti aji canda samapta. Oṁ dirgayur astu tatastu astu.</quote>
+                              <quote xml:lang="kaw-Latn">Ity aji caṇḍa sama:pta // Ø // Om̐ dīṙgha:yu rastu, tatastu, Astu</quote>
                            </colophon>
                         </msItem>
                      </msContents>
                      <!-- <physDesc>
       <objectDesc>
        <p>Manuscrit sur papier, 13 pages mesurant 25 × 16 cm chacune, 38 lignes/page, écrit en caractères latins.</p>
+      </objectDesc>
+      </physDesc> -->
+                  </msDesc>
+               </witness>
+               <witness xml:id="msbp">
+                  <abbr type="siglum">B<hi rend="subscript">16</hi>
+                  </abbr>
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Karangasem</settlement>
+                        <institution>Gria Cau</institution>
+                        <repository>Ida Pedanda Gede Putu Cau</repository>
+                        <idno>50/Ltr-G. Cau/Krasem/2015</idno>
+                     </msIdentifier>
+                     <msContents>
+                        <msItem>
+                           <title>Kāladaśabhūmi</title>
+                        </msItem>
+                     </msContents>
+                     <!-- <physDesc>
+      <objectDesc>
+       <p>Palm-leaf manuscript, 48 pages measuring 45 × 3.6 cm each, 4 lines/page, written in Balinese.</p>
       </objectDesc>
       </physDesc> -->
                   </msDesc>
@@ -163,7 +184,7 @@
                      <ptr target="bib:LokeshChandra1997_01"/>
                   </bibl>
                </witness>
-               <!-- <witness xml:id="msbc">
+               <!-- <witness xml:id="msbp">
      <abbr type="siglum">B<hi rend="subscript">3</hi>
      </abbr>
      <msDesc>
@@ -313,10 +334,11 @@
 <ab xml:id="candrakirana_01.01" type="invocation" xml:lang="san-Latn">
 <pb edRef="#msjb" n="1r"/><pb edRef="#msba" n="1v"/><pb edRef="#msbb" n="1v"/>
 <app><lem wit="#msjb">om̐ avighnam astu</lem>
- <rdg wit="#msba">// 0 // aji caṇḍa:,, 0,, avighnam astu,, 0,,</rdg>
- <rdg wit="#msbb">avignam astu</rdg>
+ <rdg wit="#edlc"><lacunaStart/></rdg>
  <rdg wit="#msja"><lacunaStart/></rdg>
- <rdg wit="#msjc"><lacunaStart/></rdg></app>
+ <rdg wit="#msjc #msba #msbp">avighnam astu</rdg>
+ <rdg wit="#msbb">avignam astu</rdg></app>
+
 </ab>
 		</div>
 
@@ -324,31 +346,30 @@
 <lg met="anuṣṭubh" xml:id="candrakirana_02.01">
 <!--axja: anuṣṭubh not correctly encoded -->
  <l n="a">
- <app><lem type="emn">kiraṇo</lem><rdg wit="#msjb">kīraṇaḥ</rdg><rdg wit="#msba">kiraṇa</rdg><rdg wit="#msbb">kirana</rdg></app>
- <app><lem type="emn">vyaktiś</lem><rdg wit="#msjb">viyaktiḥ</rdg><rdg wit="#msba #msbb">viyati</rdg></app>
- <app><lem type="emn">candrāgneḥ</lem><rdg wit="#msjb">candraghniḥ</rdg><rdg wit="#msba #msbb">candragni</rdg></app>,</l>
+ <app><lem type="emn">kiraṇo</lem><rdg wit="#msjb">kīraṇaḥ</rdg><rdg wit="#msjc #msba #msbb #msbp">kiraṇa</rdg></app>
+ <app><lem type="emn">vyaktiś</lem><rdg wit="#msjb">viyaktiḥ</rdg><rdg wit="#msjc">viyattiḥ</rdg><rdg wit="#msba #msbb #msbp">viyati</rdg></app>
+ <app><lem type="emn">candrāgneḥ</lem><rdg wit="#msjb #msjc">candraghniḥ</rdg><rdg wit="#msba">candragni</rdg><rdg wit="#msbb #msbp">candrāgni</rdg></app>,</l>
  <l n="b">
- <app><lem type="emn">dvijānāṁ kavir</lem><rdg wit="#msjb">dvijodaḥ koviḥmar</rdg><rdg wit="#msba #msbb">dvijadanovimar</rdg></app>
- <app><lem type="emn">uttamaḥ</lem><rdg wit="#msjb">utaraḥ</rdg><rdg wit="#msba #msbb">utara</rdg></app>.</l>
+ <app><lem type="emn">dvijānāṁ kavir uttamaḥ</lem><rdg wit="#msjb">dvijodaḥ koviḥ marutaraḥ</rdg><rdg wit="#msjc">dvijodaḥ ka:vi marutaraḥ</rdg><rdg wit="#msba #msbb">dvijadano vimarutara</rdg><rdg wit="#msbp">dvijadano vīmarūtara</rdg></app>.</l>
 </lg>
 <p xml:id="candrakirana_02.02">
 nahan byakta pinakaśarīra bhaṭāra,
-<app><lem wit="#msba">milvājanmāgave</lem><rdg wit="#msjb">milvajānmagave</rdg><rdg wit="#msbb">milu anjanma agave</rdg></app>
+<app><lem wit="#msjb #msjc #msba #msbb">milvājanmāgave</lem><rdg wit="#msbp">milvāṅjanmāgave</rdg></app>
 bhuvana,
-sira <app><lem type="norm">tāṣṭatanu</lem><rdg wit="#msba">tastatanu</rdg><rdg wit="#msbb">ta astatanu</rdg><rdg wit="#msjb">tāṣvatanu</rdg></app>
+sira <app><lem wit="#msjc #msba #msbb">tāṣṭatanu</lem><rdg wit="#msjb">tāṣvatanu</rdg><rdg wit="#msbp">tāṣṭatunu</rdg></app>
 ṅaranira,
 sira
 <app>
- <lem type="norm">tāṣṭadeśomidər</lem>
+ <lem wit="#msjc #msbp">tāṣṭadeśomidər</lem>
  <rdg wit="#msjb">tāṣvadeśomidər</rdg>
  <rdg wit="#msba">tastadesomiḍəp</rdg>
- <rdg wit="#msbb">ta astadesa umidəp</rdg></app>
-pinakavəṅku, sira <app><lem wit="#msjb">ta</lem><rdg wit="#msba #msbb"><gap reason="omitted"/></rdg></app>
+ <rdg wit="#msbb">tāstadesomiḍə</rdg></app>
+pinakavəṅku, sira <app><lem wit="#msjb #msjc #msbp">ta</lem><rdg wit="#msba #msbb"><gap reason="omitted"/></rdg></app>
 huripnikaṅ rāt,
 <!-- <app><lem wit="#msjb">ta huripnikaṅ rat</lem><rdg wit="#msba #msbb">uripnikaṅ rāt</rdg></app> -->
 <!-- di #msbb tertulis "rat" -->
 <!-- Apakah kita memerlukan particle "ta" pada kalimat ini? -->
-sira dumadyakən vr̥ddhiniṅ janma kabeh,
+<app><lem wit="#msjb #msjc #msba #msbb">sira</lem><rdg wit="#msbp">si</rdg></app> dumadyakən vr̥ddhiniṅ janma kabeh,
 <app rend="hide"><lem type="norm">prāṇaprāṇī</lem><rdg wit="#msjb">praṇapraṇī</rdg><rdg wit="#msba">praṇapraṇi</rdg><rdg wit="#msbb">pranaprani</rdg></app>
 sarva hurip,
 <!-- interpret as sarvāhurip? the combination sarva mahurip occurs a few times -->
@@ -656,7 +677,7 @@ gumavay<pb edRef="#msbb" n="2r"/> ikaṅ
  <app><lem type="norm">avās</lem><rdg wit="#msjb #msbb">avas</rdg><rdg wit="#msba">apa</rdg></app> śiva <app rend="hide"><lem wit="#msjb">haji</lem><rdg wit="#msba #msbb">aji</rdg></app> piturun,</l>
 <l n="d">saṅ <app rend="hide"><lem wit="#msjb #msba">r̥ṣi</lem><rdg wit="#msbb">r̥si</rdg></app>
  <app><lem rend="check" type="norm">vaṅśapātrapatitā</lem><rdg wit="#msjb">bhaṅśapatramanitah</rdg><rdg wit="#msba">vaṅśapatramanitah</rdg><rdg wit="#msbb">vaṅsapatramanitah</rdg><note>It could be acceptable that a variant name of meter <foreign>vaṅśapatrapatitā</foreign> is <foreign>vaṁśapatramanitah</foreign>?</note></app>
- sira <app><lem wit="#msjb">tiki</lem><rdg wit="#msba #msbb">tika</rdg></app> <app><lem wit="#msjb">manatha</lem><rdg wit="#msba #msbb">manata</rdg></app>.</l></lg>
+ sira <app><lem wit="#msjb">tiki</lem><rdg wit="#msba #msbb">tika</rdg></app> <app><lem wit="#msjb">manatha</lem><rdg wit="#msjc"><lacunaStart/></rdg><rdg wit="#msba #msbb">manata</rdg></app>.</l></lg>
 	 <!-- \hfill{\textbf{\footnotesize{(\metrum{1-4: vaṁśapatrapatita}{\tiny {\metricsymbols{_ u u | _ u _ | u u u | _ u u | u u u | u u_}}})}}} -->
 
 </div>
@@ -1633,9 +1654,9 @@ tuhuk limpuṅ kr̥tala <app><lem wit="#msjb #msba">pa<pb n="13r" edRef="#msba"/
 <l n="a"> <app><lem type="emn">atidhr̥ti</lem><rdg wit="#msba">ativr̥tti</rdg><rdg wit="#msjb">sivruddih ya</rdg><rdg wit="#msbb">ativr̥ti</rdg></app>
  <app><lem wit="#msbb">saṅavəlas</lem><rdg wit="#msjb">ta salapan</rdg><rdg wit="#msba">saṅhavlas</rdg></app>,</l>
 <l n="b">rvaṅpuluh <app><lem wit="#msba">ya</lem><rdg wit="#msjb">pya</rdg><rdg wit="#msbb">ya ta</rdg></app>
- <app><lem wit="#msbb">anukr̥ti</lem><rdg wit="#msjb">yanakr̥ti</rdg><rdg wit="#msba">tanukr̥ti</rdg></app> <app><lem wit="#msjb">kr̥ti</lem></app>,</l>
+ <app><lem wit="#msbb">anukr̥ti</lem><rdg wit="#msjb">yanakr̥ti</rdg><rdg wit="#msba">tanukr̥ti</rdg></app>,</l>
 <l n="c">prakr̥ti ya ta salikur,</l>
-<l n="d">rvalikur ikaṅ <app rend="hide"><lem type="norm">ākr̥ti</lem><rdg wit="#msjb">akr̥tīh</rdg><rdg wit="#msba #msbb">akr̥ti</rdg></app>.</l></lg>
+<l n="d">rvalikur ikaṅ <app><lem wit="#msba #msbb">ākr̥ti</lem><rdg wit="#msjb">akr̥tīh</rdg></app>.</l></lg>
 
 <lg xml:id="candrakirana_14.01.11" n="11">
 <l n="a"><app><lem wit="#msbb">təlulikur</lem><rdg wit="#msjb #msba">tlulikur</rdg></app>
@@ -2928,7 +2949,7 @@ nihan <app rend="hide"><lem wit="#msbb">vartanya</lem><rdg wit="#msja #msba">var
  <app><lem wit="#msba #msbb">ginəgə̄</lem><rdg wit="#msjb">ginəgən</rdg><rdg wit="#msjc">gəngən</rdg></app>,</l>
 <l n="c"><app><lem wit="#msba">mavaraṇa</lem><rdg wit="#msjb">maradhana</rdg><rdg wit="#msjc">maradana</rdg><rdg wit="#msbb">maravana</rdg></app>
  <app><lem type="norm">sukhaniṅ</lem><rdg wit="#msjb">śukaniṅ</rdg><rdg wit="#msjc">sukani</rdg><rdg wit="#msba #msbb">sukaniṅ</rdg></app>
- <app><lem wit="#msjb #msjc">ra<pb n="24v" edRef="#msba"/>t</lem><rdg wit="#msba #msbc">rāt</rdg></app>
+ <app><lem wit="#msjb #msjc">ra<pb n="24v" edRef="#msba"/>t</lem><rdg wit="#msba #msbp">rāt</rdg></app>
  <app rend="hide"><lem wit="#msjb #msba #msbb">sih</lem><rdg wit="#msjc">ṣih</rdg></app> saṅ hyaṅ
  <app rend="hide"><lem wit="#msjc #msba #msbb">tulusa masih</lem><rdg wit="#msjb">tuluṣa masīh</rdg></app>,</l>
 <l n="d"><app><lem wit="#msjc #msba #msbb">brata</lem><rdg wit="#msjb">bratā</rdg></app>
