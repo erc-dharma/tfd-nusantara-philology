@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="kalpabuddha" xml:lang="eng" type="edition">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Kalpabuddha</title>
+				<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Buddhist Text</title>
+				<editor ref="part:argr">
+					<forename>Arlo</forename>
+					<surname>Griffiths</surname>
+				 </editor>
+				<!-- <respStmt>
+					<persName xml:id="part:argr" ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
+					<resp>Typed the text (2011)</resp>
+					<resp>Re-edited the text (2018)</resp>
+				</respStmt>
+				<respStmt>
+					<persName ref="http://viaf.org/viaf/372149294434280521495" xml:id="part:anol">Andrew Ollett</persName>
+					<resp>Converted the text to TEI format (2018)</resp>
+				</respStmt>
+			-->
+			</titleStmt>
+			<publicationStmt>
+				<authority>DHARMA</authority>
+				<pubPlace>Jakarta</pubPlace>
+				<idno type="filename">DHARMA_CritEdKalpabuddha</idno>
+				<availability>
+				   <licence target="https://creativecommons.org/licenses/by/4.0/">
+					  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+					  <p>Copyright (c) 2024 by Arlo Griffiths.</p>
+				   </licence>
+				</availability>
+				<date from="2019" to="2025">2019-2025</date>
+			 </publicationStmt>
+			<sourceDesc>
+				<listWit>
+					<witness xml:id="edb1">
+					<abbr type="siglum">Ed<hi rend="superscript">B</hi></abbr>
+            		<listBibl>
+            			<bibl>
+            				<ptr target="bib:Bosch1929_02"/>
+            			</bibl>
+            		</listBibl>
+				</witness>
+					<witness xml:id="edb2">
+						<abbr type="siglum">Ed<hi rend="superscript">B2</hi></abbr>
+            		<listBibl>
+            			<bibl>
+            				<ptr target="bib:Bosch1929_02"/>
+            			</bibl>
+            		</listBibl>
+						<note>This translation/re-edition does not reproduce the footnotes with variant readings for the texts edited in the 1929 version.</note>
+					</witness>
+					<witness xml:id="ms876">A manuscript consulted by Bosch in Batavia and referred to by him as kropak 876, where the present text was found on folio 12v ff.</witness>
+					<witness xml:id="CB113">Leiden University Library CB 113: a transcript in Balinese script made on behalf of C.C. Berg in 1929 from a lontar in the collection of Jlantik. The present text is found on folios 22r through 25r of the original lontar as indicated in the transcript. Photographed by Andrea Acri in 2011.<!--IMG_0643-0645--></witness>
+					<witness xml:id="LOr9456">Leiden University Library Or 9456: a roman transcript from Kirtya IIIb.776/24. Photographed by Andrea Acri in 2011. The present text is found on pages 1–2.</witness>
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>Typed by <persName>Arlo Griffiths</persName> in 2011, with slight normalization of the spelling of Sanskrit words/names, and substitution of ṅ for ng and v for w. Re-edited and translated in 2018. If no <ptr target="#edb2"/> reading is cited, this means that the <ptr target="#edb2"/> reading is identical to that of <ptr target="#edb"/>. All emendations and normalizations indicated in the apparatus are by Arlo Griffiths.</p>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="kaw-Latn">Old Javanese, romanized</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2024-07-25" who="part:argr">revised teiHeader, removed @resp from apparatus entries</change>
+			<change when="2024-07-22" who="part:axja">Transform to DHARMA</change>
+			<change when="2018-10-03" who="part:argr">Revised edition adding variant readings from CB113 and LOr 9456.</change>
+			<change when="2018-09-30" who="part:argr">Modified bibliography; encoded variant readings from 1929 version, not included in English translation of Bosch' article.</change>
+			<change when="2018-05-16" who="part:argr">Modified language code from jav to kaw; small edits to text to conform to README; small edits to TEI header.</change>
+			<change when="2018-05-15" who="part:anol">Initial TEI encoding</change>
+			<!-- TO DO LIST:
+- refine encoding of ms. witnesses
+- encode variants still hidden in comments
+ -->
+		</revisionDesc>
+	</teiHeader>
+	<text xml:lang="kaw-Latn">
+		<body>
+			<p n="1">nihan hajinira<!-- sira CB113  LOr9456 --> bhaṭāra hyaṅ buddha, kayatnakna mahopadeśa ikā, rəṅə̄n salvirniṅ mantra, bhaṭāra buddha sira hana riṅ mahāpralaya, dumadi <app><lem type="norm">avaknira</lem><rdg wit="#edb">havaknira</rdg></app>, sira ta matmahan bhaṭāra pañcatathāgata, śarīranāmabheda, kapva apadudvan rūpanira, <app>
+					<lem type="norm" wit="#edb">bodhyagrī</lem>
+					<rdg wit="#ms876 #CB113">bodyāgri</rdg>
+				</app> mudrānira <!-- mudrā sira CB113 LOr9456 -->, <app>
+					<lem type="emn" wit="#edb">śāśvata</lem>
+					<rdg wit="#ms876">sasvatah</rdg>
+					<rdg wit="#CB113">sasvatvaḥ</rdg>
+				</app> jñānanira, cakra sañjatanira, riṅ sahavati ṅaraniṅ kaḍatvanira, siṅhātutuṅgaṅanira, sira bharālī sattvavajrī, sira bharālī dharmavajrī, sira bharālī karmavajrī, sira ta sahadevī amarivr̥tta <app><lem wit="#CB113 #LOr9456">ri</lem><rdg wit="#edb">riṅ</rdg></app> sira, muṅguh pva sira riṅ śarīra, <app><lem wit="#CB113">ri</lem><rdg wit="#edb">siṅ</rdg><rdg wit="#LOr9456">riṅ</rdg></app> jroniṅ pusuhpusuh, pinakasthānanira.</p>
+			<p n="2">sira bhaṭāra akṣobhya<!-- bhaṭārākṣobhya CB113 9456 -->, muṅguh riṅ pūrva, kr̥ṣṇa varṇanira, sira bharālī locanā devīnira, <app>
+					<lem type="norm">hūm̐</lem>
+					<rdg wit="#edb">hūm</rdg>
+			</app> mantranira, <app><lem wit="#edb">bhūsparśa</lem><rdg wit="#CB113">bhūḥsparśśana</rdg></app> mudrānira <!-- mudrā sira CB113 LOr9456 -->, <app>
+					<lem type="emn">ādarśa</lem>
+					<rdg wit="#edb">ādarśana</rdg><witDetail wit="#edb" type="emn"/>
+					<rdg wit="#ms876 #CB113">adharmma</rdg>
+			</app> jñānanira <!-- jñāna sira CB113 LOr9456 -->, vajra sañjatanira, riṅ abhirati ṅaraniṅ kasvarganira, gajah tutuṅgaṅanira, bhaṭāra vajrarāja, bhaṭāra vajrarāga, hyaṅ <app>
+					<lem type="norm">vajrasādhu</lem>
+					<rdg wit="#edb">bijrasādhu</rdg>
+					<rdg wit="#edb2 #CB113">bajrasādhu</rdg>
+				</app>, bhaṭāra vajradharādi, saṅ amarivr̥tta ri<!-- thus already edB --> sira, muṅguh pva sira riṅ <app>
+					<lem wit="#edb2 #CB113">śarīra</lem>
+					<rdg wit="#edb">carīra</rdg>
+				</app>, <app><lem wit="#CB113 #LOr9456">ri</lem><rdg wit="#edb">riṅ</rdg></app> jroniṅ paruparu pinakasthānanira.</p>
+			<p n="3">sira bhaṭāra ratnasambhava, muṅguh riṅ dakṣiṇa, pīta varṇanira, sira bharālī māmakī devīnira, <app>
+					<lem type="norm">tram̐</lem>
+					<rdg wit="#edb">traṁ</rdg>
+				</app> mantranira, <app>
+					<lem wit="#ms876">samatā</lem>
+					<rdg wit="#CB113">samata</rdg>
+					<rdg wit="#edb">ākāśamata</rdg>
+					<note>Bosch' emendation was inspired by a wrong emendation made by Kats in the <title>Advayasādhana</title>.</note>
+				</app> jñānanira, kapāla <!-- kaphala CB113 --> sañjatanira, <app><lem wit="#edb">riṅ</lem><rdg wit="#CB113 #LOr9456">ri</rdg></app> jroniṅ limpa pinakasthānanira.</p>
+			<p n="4">sira bhaṭāra amitābha <!-- hamittabha CB113 -->, muṅguh riṅ <!-- ri CB113> --> paścima, rakta varṇanira, sira bharālī <app>
+					<lem type="emn" wit="#edb">pāṇḍaravāsinī</lem>
+					<rdg wit="#ms876 #CB113">paṇḍavarisini</rdg>
+				</app> devīnira, <app>
+					<lem type="norm">hrīḥ</lem>
+					<rdg wit="#edb">hrih</rdg>
+					<rdg wit="#CB113">hriḥ</rdg>
+				</app> mantranira, pratyavekṣaṇa jñānanira <!-- jñāna sira CB113 LOr9456 -->, dhyāna mudrānira <!-- mudrā sira CB113 LOr9456 -->, nāgapāśa sañjatanira, riṅ sukhavati kasvarganira, sira bharāla <!-- bharali CB113 --> vajradharma, bhaṭāra vajratīkṣṇa, bhaṭāra <app>
+					<lem type="norm">vajrahetu</lem>
+					<rdg wit="#CB113">bajrahetu</rdg>
+					<rdg wit="#edb">vajraketu</rdg>
+				</app>, bhaṭāra <app>
+					<lem type="norm">vajrabhāṣa</lem>
+					<rdg wit="#CB113">bajrabhāṣa</rdg>
+					<rdg wit="#edb">bajrabāsa</rdg>
+				</app>, saṅ amarivr̥tta ri<!-- thus already edB --> sira, muṅguh pva sira <app>
+					<lem wit="#CB113">riṅ</lem>
+					<rdg wit="#edb">niṅ</rdg>
+				</app> śarīra, ri<!-- thus already edB --> jro hati pinakasthānanira.</p>
+			<p n="5">sira bhaṭāra <app>
+					<lem wit="#CB113">amoghasiddhi</lem><!-- hamoghasiddhi CB113 -->
+					<rdg wit="#edb">amoghasiddha</rdg>
+				</app>, muṅguh riṅ uttara<!-- riṁ huttara CB113 -->, viśva varṇanira, sira bharālī tārā devīnira, aḥ mantranira, <app>
+					<lem type="emn" wit="#edb">abhaya</lem>
+					<rdg wit="#ms876 #CB113">abhā</rdg>
+				</app> mudrānira<!-- mudrā sira CB113 LOr9456 -->, <app>
+					<lem type="emn">kr̥tyānuṣṭhāna</lem>
+					<rdg wit="#edb">kr̥tānusthāna</rdg>
+					<rdg wit="#ms876 #CB113">kr̥tanusthana</rdg>
+				</app> jñānanira, riṅ <app>
+					<lem type="emn" wit="#edb">kusumita</lem>
+					<rdg wit="#ms876">kusumiti</rdg>
+					<rdg wit="#CB113">kusumite</rdg>
+				</app> ṅaraniṅ kasvarganira, garuḍa tutuṅgaṅanira, sira bhaṭāra vajrakarma, bhaṭāra vajrarakṣa, <app>
+					<lem type="norm">bhaṭāra vajrayakṣa,</lem>
+					<rdg wit="#CB113">bhaṭāra bajrayakṣa</rdg>
+					<rdg wit="#edb"/>
+				</app> bhaṭāra <app>
+					<lem type="norm">vajrasandhi</lem>
+					<rdg wit="#edb">bajrasandhi</rdg>
+					<rdg wit="#ms876">bajrasaddhi</rdg>
+					<rdg wit="#CB113">bajrasandi</rdg>
+				</app> saṅ amarivr̥tta <app><lem wit="#CB113 #LOr9456">ri</lem><rdg wit="#edb">riṅ</rdg></app> sira, muṅguh pva sira riṅ <app><lem type="norm">śarīra, ri</lem><rdg wit="#edb">śarīra niṅ</rdg><rdg wit="#CB113 #LOr9456">śarīra, riṅ</rdg></app> jro <app><lem wit="#CB113 #LOr9456">hampru</lem><rdg wit="#edb">hampū</rdg></app> pinakasthānanira.</p>
+			<p n="6"><app>
+					<lem wit="#CB113 #LOr9456">kunəṅ</lem>
+					<rdg wit="#edb">kuneṅ</rdg>
+			</app> pva bhaṭāra pañcatathāgata, mulih riṅ <app><lem type="norm">lokadhātunira</lem><rdg wit="#edb">lokadhātūnira</rdg><rdg wit="#CB113">lokadhatunira</rdg></app>, hana <app><lem wit="#edb">riṅ</lem><rdg wit="#CB113">ri</rdg></app> śarīranta sira maṅke, sira <app><lem wit="#CB113">tātmahan</lem><rdg wit="#edb">katmahan</rdg></app> pañcajñāna, pañcajñāna ṅaranya, cakṣuh, śrota, ghrāṇa, jihvā, hr̥daya. cakṣuh ṅa mata. śrota ṅa taliṅa. ghrāṇa ṅa iruṅ. jihvā ṅa caṅkəm. hr̥daya ṅa hati. ya tika sinaṅguh pañcendriya ṅa. kunaṅ ta devataniṅ pañcendriya, ṅa, bhaṭāra akṣobhya<!-- bhaṭārākṣobhya CB113 --> muṅguh riṅ mata, bhaṭāra ratnasambhava muṅguh riṅ<!-- ri CB 113 --> taliṅa, <app>
+					<lem wit="#edb2 #CB113">bhaṭāra</lem>
+					<rdg wit="#edb">bhatāra</rdg>
+				</app> amitābha<!-- bhaṭāramittabha CB113 --> muṅgviṅ iruṅ, bhaṭāra amoghasiddhi muṅguh ri <app>
+					<lem wit="#edb2 #CB113">caṅkəm</lem>
+					<rdg wit="#edb">caṅhəm</rdg>
+				</app>, sira pinakapaṅrasa<!-- CB inserts ,, here --> bhaṭāra vairocana<!-- vairocāna CB113 -->, muṅguh ri<!-- riṁ CB113 --> <app><lem wit="#CB113">pusuhpusuh</lem><rdg wit="#edb">pupuhpupuh</rdg></app>, sira pinakāṅənaṅən. irika ta sahadevīnira sovaṅsovaṅ, ya tika sinaṅguh saṅ hyaṅ pañcātma ṅaranya, pinakāvak.</p>
+		<div><ab type="colophon">|| 0 || <app>
+					<lem type="emn" wit="#edb">kalpabuddha</lem>
+					<rdg wit="#ms876 #CB113">kalphaboddha</rdg><note>Should we not rather understand Kalpa Bauddha?</note>
+				</app> iti, paramarahasya || 0 ||</ab></div>
+		</body>
+	</text>
+
+</TEI>
