@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="edition" xml:lang="eng">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Saṅ Hyaṅ Kamahāyānan Mantranaya</title>
+           <!-- <funder>EFEO/EPHE (Université PSL)</funder>
+            <principal>
+               <persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName>
+            </principal>
+            <principal>
+               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
+            </principal>-->
+            <respStmt>
+               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="http://viaf.org/viaf/372149294434280521495">Andrew Ollett</persName>
+               <resp>Converted the text to TEI format (2018)</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority/>
+            <availability status="restricted">
+               <p><!-- add whatever license you like: !--></p>
+            </availability>
+            <date>2018</date>
+            <publisher><!-- EFEO/EPHE --></publisher>
+            <pubPlace><!-- Paris --></pubPlace>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="Speijer">
+                  <bibl>
+                    <analytic>
+                     <author>
+                        <name>
+                           <forename>J. S.</forename>
+                           <surname>Speijer</surname>
+                        </name>
+                     </author>
+                     <title level="a">Ein altjavanischer mahāyānistischer Katechismus</title>
+                  </analytic>
+                  <monogr>
+                     <title level="j">Zeitschrift der Deutschen Morgenländischen Gesellschaft</title>
+                     <imprint>
+                        <date when="1913">1913</date>
+                     </imprint>
+                     <biblScope unit="vol">67</biblScope>
+                     <biblScope unit="pp" from="347" to="362">347-362</biblScope>
+                  </monogr></bibl>
+               </witness>
+              <witness xml:id="Wulff">
+                  <bibl>
+                   
+                     <author>
+                        <name>
+                           <forename>K.</forename>
+                           <surname>Wulff</surname>
+                        </name>
+                     </author>
+                     <title level="m">Sang Hyang Kamahāyānan Mantrānaya, Ansprache bei der Weihe buddhistischer mönche aus dem altjavanischen übersetzt und sprachlich erläutert</title>
+                     <imprint>
+                        <pubPlace>København</pubPlace>
+                        <publisher>Levin and Munksgaard</publisher>
+                        <date when="1935">1935</date>
+                     </imprint>
+                  </bibl>
+               </witness>
+              <witness xml:id="deJong">
+                  <bibl><analytic>
+                     <author>
+                        <name>
+                           <forename>J. W.</forename>
+                           <surname>de Jong</surname>
+                        </name>
+                     </author>
+                     <title level="a">Notes on the sources and the text of the Sang Hyang Kamahayanan Mantranaya</title>
+                  </analytic>
+                  <monogr>
+                     <title level="j">BKI</title>
+                     <imprint>
+                        <date when="1974">1974</date>
+                     </imprint>
+                     <biblScope unit="vol">130</biblScope>
+                     <biblScope unit="pp" from="465" to="482">465–482</biblScope>
+                  </monogr></bibl>
+                  <!-- reporting emendations of Wogihara and other scholars !-->
+               </witness>
+              <witness xml:id="LokeshChandra">
+                 <bibl> <analytic>
+                     <author>
+                        <name>Lokesh Chandra</name>
+                     </author>
+                     <title level="a">Saṅ Hyaṅ Kamahāyānikan</title>
+                  </analytic>
+                  <monogr>
+                     <title level="m">Cultural Horizons of India</title>
+                     <imprint>
+                        <pubPlace>New Delhi</pubPlace>
+                        <publisher>International Academy of Indian Culture and Aditya Prakashan</publisher>
+                     </imprint>
+                     <biblScope unit="vol">4</biblScope>
+                     <biblScope unit="pp" from="295" to="434">295–434</biblScope>
+                  </monogr>
+                  <series>
+                     <title level="s">Śata-Piṭaka Series</title>
+                     <biblScope unit="number">381</biblScope>
+                  </series></bibl>
+               </witness>
+            </listWit>
+            <listWit>
+               <witness xml:id="msA">LOr. 5068</witness>
+               <!-- 
+	    insert a short description of ms A here !-->
+               <witness xml:id="msB">LOr. 5083</witness>
+               <witness xml:id="msC">LOr. 5129</witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+      <!-- insert fuller version of encoding description here !-->
+         <p>Character replacements:
+      - Old Javanese ng has been converted to ṅ 
+      - all cases of v have been converted to v
+      - spelling of words of Sanskrit origin has been normalized
+      - some modifications of spelling b/v have also been made in native Old Javanese vords, in accordance with OJED
+      </p>
+         <!--<refsDecl n="CTS">
+	<cRefPattern 
+	    n="level1"
+	    matchPattern="(\w+)"
+	    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:p[@n='$1'])">
+	  <p>This pointer pattern extracts paragraphs, which almost always contain an embedded Sanskrit verse, and which sometimes include embedded Sanskrit mantras.</p>
+	</cRefPattern>
+      </refsDecl>-->
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="kaw-Latn">Old Javanese, romanized</language>
+            <language ident="san-Latn">Sanskrit, romanized</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2024-07-21" who="part:axja">Transform to DHARMA</change>
+         <change when="2018-09-30" who="part:anol">Initial TEI encoding from AG’s text file</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-Latn">
+    <body>
+      <head xml:lang="san-Latn"><pb edRef="#msA" n="b8"/>namo buddhāya!</head>
+      <p n="0">nihan kaliṅaniṅ oṁ ah huṁ, yan pinakapaṅadhiṣṭhāna umajarakan an bhaṭāra tryakṣara sira paramārtha kāyavākcittavajra ṅaranira.</p>
+
+      <p n="1">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="1">
+	    <l n="a">ehi vatsa mahāyānaṁ <app><lem wit="#Speijer" type="emn">mantracaryānayaṁ</lem><rdg wit="#msA">mantravāryanayaṁ</rdg><rdg wit="#Kats">mantracāryanayaṁ</rdg></app> vidhiṁ</l>
+	    <l n="b">deśayiṣyāmi te samyak bhājanas tvaṁ mahānaye ||1||</l>
+	  </lg>
+	</quote>
+      ka: saṅ hyaṅ mahāyāna iki varahakna mami iri kita, <quote type="base-text">mantracaryānayaṁ vidhiṁ</quote>, saṅ hyaṅ mantranaya sira mahāyāna mahāmārga ṅaranira, <quote type="base-text">deśayiṣyāmi te <pb edRef="#msA" n="a9"/> samyak</quote>, sira teki deśanākna mami varahakna mami ri kita, <quote type="base-text">bhājanas tvaṁ mahānaye</quote>, ri kadadinyan kita pātrabhūta yogya varahĕn ri saṅ hyaṅ dharma mantranaya.</p>
+
+      <p n="2">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="2">
+	    <l n="a">atītā ye hi sambuddhāḥ tathā caivāpy anāgatāḥ </l>
+	    <l n="b">pratyutpannāś ca ye nāthāḥ tiṣṭhanti ca jagaddhitāḥ ||2||</l>
+	  </lg>
+	</quote>
+      ka: bhaṭāra hyaṅ buddha saṅ atīta, sa<del resp="#Kats">ṅ</del> maṅabhisaṁbuddha ṅūni riṅ āsītkāla, kadyaṅgān: bhaṭāra vipaśyī, viśvabhū, krakucchanda, kanakamuni, kāśyapa, atītabuddha, ṅaranira kabeh. <quote type="base-text">tathā caivāpy anāgatāḥ</quote>, kunaṅ bhaṭāra buddha saṅ anāgata, saṅ abhimukha maṅabhisaṁbuddha, kadyaṅgān: bhaṭāra āryamaitreyādi, <app><lem wit="#Wulff" type="emn">samantabhadraparyanta</lem><rdg wit="#Kats">samantai bhadra paryyanta</rdg></app>, anāgatabuddha ṅaranira kabeh <pb edRef="#msA" n="b9"/> <quote type="base-text">pratyutpannāś ca ye nāthāḥ</quote>, tumamvah bhaṭāra śrī śākyamuni, vartamānabuddha ṅaranira, sira ta pinakahyaṅ buddhanta maṅke, śāsananira ikeṅ tinūt atinta. <quote type="base-text">tiṣṭhanti ca jagaddhitāḥ</quote>, tamolah ta sira kumiṅkiṅ hitasukhaniṅ sarvasattva, umaṅĕnaṅĕna kalĕpasanikaṅ rāt kabeh saka riṅ saṅsāra, duvĕg kumirakira paḍamaniṅ mahāpralaya rike bhuvana.</p>
+
+      <p n="3">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="3">
+	    <l n="a">taiś ca sarvair imaṁ vajraṁ jñātvā mantravidhim paraṁ</l>
+	    <l n="b">prāptā sarvajñatā vīraiḥ bodhimūle hy <app><lem wit="#Speijer" type="emn">alakṣaṇā</lem><rdg wit="#Kats">alakṣaṇa</rdg></app> ||3||</l>
+	  </lg>
+	</quote>
+      ka: sira katiga bhaṭāra hyaṅ buddha ṅaranira, saṅ atītānāgatavartamāna, tan hana mārganira vaneh ar tinambakan ikaṅ kahyaṅbuddhan. <quote type="base-text">jñātvā mantravidhim paraṁ</quote>, ikiṅ <app><lem resp="part:argr" type="emn">&gt;mahāyāna</lem><rdg wit="#Kats">mahāyana</rdg></app> mahāmārga ya tinūtakĕnira, pinakamārganira ar ḍataṅ rikana <app><lem resp="part:argr" type="emn">nirvāṇanagara</lem><rdg wit="#Kats">nibāṇanagara</rdg></app>. <pb edRef="#msA" n="a10"/> <quote type="base-text">prāptā sarvajñatā vīraiḥ bodhimūle hy alakṣaṇā</quote>, inakni <app><lem wit="#Wulff" type="emn">denira</lem><rdg wit="#Kats">deni</rdg><note xml:lang="eng" resp="part:argr">emend <foreign xml:lang="kaw-Latn">denirar</foreign> or keep <foreign xml:lang="kaw-Latn">deni</foreign>?</note></app> gumĕgö ikaṅ <app><lem resp="part:argr" type="emn">mantranaya</lem><rdg wit="#Kats">mantrānaya</rdg></app>, ya ta mataṅ yar tĕmvakan kasarvajñān, ya ta hetunirār paṅguhakan ikaṅ kahyaṅbuddhān riṅ bodhimūla.</p>
+
+      <p n="4">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="4">
+	    <l n="a">mantraprayogam atulaṁ yena bhagnaṁ mahābalaṁ</l>
+	    <l n="b">mārasainyam mahāghoraṁ śākyasiṅhena tāyinā ||4||</l>
+	  </lg>
+	</quote>
+      ka: bhaṭāra śrī śākyamuni mataṅ yar tĕmvakan<add resp="#Kats">n</add> ikaṅ kamāravijayan, sakvehnikanaṅ māravighna alah denira: kleśamāra, skandhamāra, mṛtyumāra, devaputramāra, alah <app><lem wit="#OJED" type="emn">aluyuk</lem><rdg wit="#Kats">aṅuyuk</rdg></app> ikā kabeh de bhaṭāra hetunirār vĕnaṅ umalahakĕn ikaṅ māra, ābhānubhāva prabhāva saṅ hyaṅ samādhi śakti saṅ hyaṅ mantranaya inabhyāsa.</p>
+
+      <p n="5">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="5">
+	    <l n="a">tasmān matim imāṁ <app><lem wit="#Speyer" type="emn">vatsa</lem><rdg wit="#ed.">vārttāṁ</rdg></app> kuru sarvajñatāptaye</l>
+	    <l n="b"><pb edRef="#msA" n="b10"/><app><lem wit="#Wulff" type="emn">śṛṇu bhadrāśayaṁ</lem><rdg wit="#msA">gṛṇa bhadrāśayaṁ</rdg><rdg wit="#Kats">śṛṇu bhadrāśayan</rdg></app> nityaṁ samyak saṁhṛtya kalpanāḥ ||5||</l>
+	  </lg>
+	</quote>
+      ka: mataṅyan deyanta <quote type="base-text">kuru sarvajñātāptaye</quote>, hayva tālaṅalaṅ aṅĕnaṅĕnta rike saṅ hyaṅ mantranaya, pahapagĕh denta gumĕgö saṅ hyaṅ <app><lem resp="part:argr" type="emn">mantranaya</lem><rdg wit="#Kats">mantrānaya</rdg></app>, mataṅ yan kapaṅguha ikaṅ <app><lem wit="#Wulff" type="emn">kasarvajñatān</lem><rdg wit="#Kats">kasarbvatān</rdg></app> denta; <quote type="base-text"><app><lem wit="#wulff" type="emn">śṛṇu bhadrāśayaṁ</lem><rdg wit="#kats">gṛṇabhadrāśayan</rdg></app> nityaṁ</quote>, pahavās denta rumĕṅö iki varavarah mami ri kita, hayva <app><lem wit="#Wulff" type="emn">tan</lem><rdg wit="#Kats">vān</rdg></app> yatna vuvus mami. <quote type="base-text">samyak saṅhṛtya kalpanāḥ</quote>, <app><lem>karyakan</lem><note xml:lang="eng" resp="part:argr">em. <foreign xml:lang="kaw-Latn">kāryakĕn</foreign>? <foreign xml:lang="kaw-Latn">karyakĕn</foreign>?</note></app> taṅ buddhi savikalpaka, <app><lem>hilaṅakan</lem><rdg wit="#OJED" type="emn">hilaṅakĕn</rdg></app> taṅ ambĕk abhiniveśa, pahenak tāṅĕnaṅĕnta, hayva saṅśaya.</p>
+
+      <p n="6">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="6">
+	    <l n="a">eṣa mārgavaraḥ śrīmān mahāyānamahodayaḥ</l>
+	    <l n="b">yena yūyaṁ gamiṣyanto bhaviṣyatha tathāgatāḥ ||6||</l>
+	  </lg>
+	</quote>
+      ka: saṅ hyaṅ mahāyāna mahāmārga iki pintonakna mami ri kita, pahavās denta maṅrĕṅö, <quote type="base-text">mahāyānamahodayaḥ</quote>, <pb edRef="#msA" n="a11"/> yeki <del resp="#Kats">h</del>avan abĕnĕr tĕka ri svargāpavarga, vĕnaṅ umehakĕn<add resp="#Kats">n</add> ikaṅ kamahodayān. <quote type="base-text">mahodaya</quote>, ṅa, ikaṅ bāhyādhyātmikasukha, <app><lem wit="#Wulff" type="emn">vāhyasukha, ṅa</lem><rdg wit="#Kats"/></app>, ikaṅ kaśreṣṭhyan, kasugihan, kapamĕgĕtan, karatun, kacakravartin. ādhyātmikasukha, ṅa, ikeṅ lokottarasukha inak tan pavor duhkha, <quote type="base-text">ajarāmaraṇa</quote>, tan katĕkan tuha lara pati, nāṅ anuttara vara samyaksaṁbodhisukha, ikaṅ mokṣasukha, ikā taṅ bāhyasukha mvaṅ ādhyātmikasukha, ya ikā kamahodayan ṅa, anuṅ dinadyakĕn<add resp="#Kats">n</add> ikeṅ mahāyāna mahāmārga, yan inabhyāsa. <quote type="base-text">yena yūyaṁ gamiṣyanto</quote>, apan ri sĕḍaṅnyan apagĕha denta gumĕgö ikeṅ kamahāyānan; <quote type="base-text">bhaviṣyatha tathā<pb edRef="#msA" n="b11"/>gatāḥ</quote>, niyata kita tumamvaknaṅ kahyaṅbuddhān. sumākṣātkṛta ikaṅ kalĕpasĕn, <app><lem wit="#Wulfff" type="emn">ikanaṅ</lem><rdg wit="#Kats">ikā naṅ</rdg></app> dvayasambhāra, nāṅ jñānasambhāra, puṇyasambhāra kapaṅguha ikā denta. lāvan<add resp="#Kats">n</add> ikaṅ kasarvalokanamaskṛta kopalambha ikā denta.</p>
+
+      <p n="7">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="7">
+	    <l n="a">svayambhuvo mahābhāgāḥ sarvalokasya <app><lem wit="#Wogihara" type="emn">cetiyāḥ</lem><rdg wit="#Speijer">yetiyāḥ msA, yajñiyāḥ em. Kats, ye priyāḥ em.</rdg></app></l>
+	    <l n="b">astināstivyatikrāntaṁ ākāśam iva nirmalam ||7||</l>
+	  </lg>
+	</quote>
+      ka: kadyaṅgāniṅ ākāśa <app><lem wit="#Wulff" type="emn">anirmalasvabhāva</lem><rdg wit="#Kats">annirmmala svabhāva</rdg></app>, alakṣaṇa, avastuka, tan kavĕnaṅ tinuduh, tan agöṅ, tan aḍĕmit, tan hirĕṅ, tan putih, vyāpaka lumrā riṅ daśadeśa, maṅkana lvirnira.</p>
+
+      <quote type="base-text" xml:lang="san-Latn">
+	<lg n="8">
+	  <l n="a">gambhīraṁ <app><lem wit="#msA">sarvatarkebhir</lem><rdg wit="#Kats" type="emn">atigambhīram</rdg></app> apy atarkyam anāvilaṁ</l>
+	  <l n="b">sarvaprapañcarahitaṁ prapañcebhiḥ prapañcitaṁ ||8||</l>
+	</lg>
+      </quote>
+      <p n="8">ka: <app><lem wit="#Wulff" type="emn">nora</lem><rdg wit="#Kats">vora</rdg></app> mahāgambhīra lena saṅka rike saṅ hyaṅ mahāyāna mahāmārga sireki <quote type="base-text">gambhīrātigambhīra</quote>: <pb edRef="#msA" n="a12"/> adalĕm sakeṅ adalĕm; <quote type="base-text">apy atarkyaṁ</quote>: tan kavĕnaṅ tinarka, salah yan inuha; <quote type="base-text">anāvilaṁ</quote>, tar padoṣa; <quote type="base-text">sarvaprapañcarahitaṁ</quote>; tan katĕkan deniṅ sarvaprapañca, mvaṅ kleśopakleśa, nāṅ: mada, dambha, lobha, moha, rajah, tamah, tan tama ikā kabeh ri sira, tuhu karikā tan <app><lem wit="#Wulff" type="emn">&gt;pakāvak iṅ</lem><rdg wit="#Kats">pakavakaṅ</rdg></app> maṅkana tahāvih, <quote type="base-text">prapañcebhiḥ prapañcitaṁ</quote>, āpan ikaṅ rāga-dveṣa-moha, prapañca pinakāvaknira.</p>
+
+      <p n="9">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="9">
+	    <l n="a">karmakriyāvirahitaṁ satyadvayam anāśrayaṁ</l>
+	    <l n="b">idam yānavaraṁ śreṣṭhaṁ <app><lem wit="#msA">labhiṣyatha</lem><rdg wit="#Kats" type="emn">abhyasyata</rdg></app> naye sthitāḥ ||9||</l>
+	  </lg>
+	</quote>
+      ka: tan gave tan si magavai, <add resp="#Kats">tan si magavai</add> pinakāvaknira. <quote type="base-text">satyadvayaṁ</quote>: tamolah makarūpa ikaṅ satyadvaya, ṅa, saṁvṛttisatya, paramārthasatya, anuṅ pinakarūpanira. <pb edRef="#msA" n="b12"/> <quote type="base-text">anāśrayaṁ</quote>: tan pāndĕlan tan samvṛttisatya tan paramārthasatya kahananira, <quote type="base-text">idaṁ yānavaraṁ śreṣṭhaṁ</quote>, yekā sinaṅguh mahāyāna mahāmārga ṅa, manĕkakĕn irikaṅ svargāpavarga. <quote type="base-text">abhyasyata naye sthitāḥ</quote>, ya tikābhyasanta sārisāri mĕneṅ hĕlĕm saṅ hyaṅ mantranaya mahāyāna. </p>
+
+      <p n="10">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <ab type="mantra">oṁ! vajrodaka oṁ aḥ huṁ! iki śapathahṛdaya.</ab>
+	</quote>
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="10">
+	    <l n="a">idaṁ te <app><lem wit="#Kats" type="emn">nārakaṁ</lem><rdg wit="#msA">narakaṁ</rdg></app> vāri <app><lem wit="#Wulff" type="emn">samayātikramād dahet</lem><rdg wit="#msA">samayātikrama uhet</rdg><rdg wit="#Kats" type="emn">samayātikramo vahet</rdg></app></l>
+	    <l n="b">samayarakṣaṇāt <app><lem wit="#msA">siddhyai</lem><rdg wit="#Kats">siddhye</rdg></app> siddhaṁ vajrāmṛtodakaṁ ||10||</l>
+	  </lg>
+	</quote>
+      ka: vehana kita <app><lem resp="#Wulff" type="emn">manahapa</lem><rdg wit="#Kats">manah apa</rdg></app> vajrodaka. ikaṅ vajrodaka tan vvay samānya, vvai sakeṅ naraka ikā; <quote type="base-text">samayātikramo vahet</quote>, mārganiṅ duhkha kapaṅguha, bhraṣṭa <pb edRef="#msA" n="a13"/> sakulagotrabāndhava, ya tat pituhva samaya. kālanyat <app><lem wit="#Wulff" type="emn">varavīrya</lem><rdg wit="#Kats">barya-barya msA, bhāryabhārya em.</rdg></app> rikeṅ saṅ hyaṅ vajrajñāna, <quote type="base-text">samayarakṣaṇāt siddhye</quote>, kunaṅ ri sĕḍaṅnyat prayatna, tan paṅraparapā riṅ samaya, mārganiṅ hayu kasiddhyan kapaṅguha denta <quote type="base-text">siddhaṁ bajrāmṛtodakaṁ</quote>, saṅkṣepanya: viṣāmṛta ikeṅ vajrodaka, vvah sahiṅga <app><lem wit="#Wulff" type="emn">tinaṅkĕp</lem><rdg wit="#Kats">tinika</rdg></app>, pilih sukha pilih duhkha kapaṅguha. yat pramāda kita pamaṅguh duhkha, kunaṅ yat prayatna, avās ikaṅ sukha hayu kasiddhyan kapaṅguha usĕn, ṅūniveh dlāha.</p>
+
+      <p n="11">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="11">
+	    <l n="a">vajraṁ ghaṇṭāṁ ca mudrāṁ ca <app><lem resp="part:argr" type="emn">yady amaṇḍalino</lem><rdg wit="#msA">adyamaṇḍalino</rdg><rdg wit="#Wogihara" type="emn">na hy amaṇḍalino</rdg><rdg wit="#Speijer" type="emn">nādyāmaṇḍalino</rdg><rdg wit="#Kats" type="emn">tan nāmaṇḍalino</rdg></app> vadet</l>
+	    <l n="b">hased <app><lem resp="part:argr" type="emn">vāśraddhadāneva</lem><rdg wit="#Kats">vāśraddhavānena msA, vāśraddhavān eva em.</rdg></app> janaḥ saṁgaṇikāsthitaḥ ||11||</l>
+	  </lg>
+	</quote>
+      ka: hayva kita umaramarahakĕn ika saṅ hyaṅ vajra ghaṇṭā mudrā riṅ vvaṅ adṛṣṭamaṇḍala, tapvan sāmayika rahasyan <pb edRef="#msA" n="b13"/> kubdan atah sira, tan avaravīryākna irikaṅ vvaṅ tapvan kṛtopadeśa, <quote type="base-text">hased vāśraddhavān eva</quote>, athavi <app><lem wit="#Wulff">guyuguyun ta</lem><rdg wit="#Kats">guyuguyunta</rdg></app> kunaṅ si tan pituhun arthanira, tan āmbĕkta tĕmĕn tumarima brata bhaṭāra, hayva ta maṅkana, yāvat <del resp="#Kats">t</del>aṅ vvaṅ apahasa ri saṅ hyaṅ mārga, <quote type="base-text">janaḥ saṅganikāsthitaḥ</quote>, avās ikaṅ vvaṅ maṅkana, kasaṅsāra sadākāla, mataṅnyan hayva tan tulus adhimukti rike saṅ hyaṅ vajrajñāna, kayatnaknātah saṅ hyaṅ samaya.</p>
+
+      <p n="12">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="12">
+	    <l n="a">ayaṁ te samayo <app><lem wit="#msA" source="#Kats">vajri</lem><rdg wit="#Speijer" type="emn">vajrī</rdg></app> vajrasattva iti smṛtaḥ</l>
+	    <l n="b"><app><lem wit="#Wulff">āveśaya tu</lem><rdg wit="#Kats">āveśayatu</rdg></app> tenaiva vajrajñānam anuttaram ||12||</l>
+	  </lg>
+	</quote>
+      ka: saṅ hyaṅ samaya ta sira sinaṅguh bhaṭāra vajrasattva; <quote type="base-text">āveśayatu tenaiva bajrajñānam anuttaraṁ</quote>, sira teki pinakahṛdayanta maṅke, vajrajñāna ikuṅ pinaka<pb edRef="#msA" n="a14"/>hṛdayanta, pahenak tāmbĕkta.</p>
+
+      <p n="13">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="13">
+	    <l n="a">oṁ vajrasattvaḥ svayaṁ te 'dya cakṣūdghāṭanatatparaḥ</l>
+	    <l n="b">udghāṭayati sarvākṣo vajracakṣur anuttaram ||13||</l>
+	  </lg>
+	</quote>
+      ka: bhaṭāra śrī vajrasattva muvah hana ri matanta maṅke, <quote type="base-text">cakṣūdghāṭanatatparaḥ</quote>, denira dumliṅakna panonta, mataṅnya pahabuṅah tāmbĕkta, <quote type="base-text">udghāṭayati sarvākṣo bajracakṣur anuttaraṁ</quote>, dĕliṅakanta matanta, pahavās ta panonta ri saṅ hyaṅ maṇḍala.</p>
+
+      <p n="14">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="14">
+	    <l n="a">idaṁ ca maṇḍalam paśya śraddhāñ janaya <app><lem wit="#Speijer" type="emn">cādunā</lem><rdg wit="#Kats">thādhunā msA</rdg></app></l>
+	    <l n="b">kule jāto 'si buddhānāṁ sarvamantrair adhiṣṭhitaḥ ||14||</l>
+	  </lg>
+	</quote>
+      ka: vulat i saṅ hyaṅ maṇḍala, <quote type="base-text">śraddhāñ janayathādhunā</quote>, gavayakĕn taṅ śṛddha, hayva tan sagorava ri saṅ hyaṅ maṇḍala, <quote type="base-text">kule jāto 'si buddhānāṁ</quote>, apan kita <pb edRef="#msA" n="b14"/> buddhakula maṅke, apan bhaṭāra hyaṅ buddha ṅaranta mĕne, <quote type="base-text">sarvamantrair adhiṣṭhitaḥ</quote>, tuvi sampun kṛtādhiṣṭhāna iki de saṅ sarvatathāgata, inajyan sinaṅaskāra rikaṅ sarvamantra.</p>
+
+      <p n="15">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="15">
+	    <l n="a">sampado 'bhimukhāḥ sarvāḥ siddhayo gatayaś ca te</l>
+	    <l n="b">pālaya samayaṁ siddhyai mantreṣūdyogavān bhava ||15||</l>
+	  </lg>
+	</quote>
+      ka: aparĕk tekaṅ hayu ri kita, <quote type="base-text">siddhayo gatayaś ca te</quote>, samaṅkana ikaṅ kasiddhyan abhimukha ikā kabeh, agya kapaṅguha denta; <quote type="base-text">pālaya samayaṁ siddhye</quote>, lĕkas ta umabhyāsa saṅ hyaṅ samaya, marapvan katĕmu ikaṅ kasiddhyan usĕn denta; <quote type="base-text">mantreṣūdyogavān bhava</quote>, gavayakan taṅ utsāha ri mantra japa pūjā usĕn, hayva hĕlĕmhĕlĕm, yathānyan kopalambha ikaṅ kasugatin irikeṅ ihajanma ṅūniveh dlāha.</p>
+
+      <p n="16">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <ab type="mantra"><pb edRef="#msA" n="a15"/> iṁ oṁ <app><lem wit="#AG" type="emn">vajranetrāpahara hara paṭalaṁ hriḥ</lem><rdg wit="#msA">vajrasatvāya harahara paṭalīṁ hriḥ</rdg><rdg wit="#Kats" type="emn">vajranetrāya, harahara paṭalaṁ hṛdi</rdg></app></ab>
+	</quote>
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="16">
+	    <l n="a">ajñānapaṭalaṁ vatsa <app><lem wit="#Speijer" type="emn">apanītaṁ jinais</lem><rdg wit="#msA">punitaṁ jinanes</rdg><rdg wit="#Kats">punaṁ hi jinais</rdg></app> tava</l>
+	    <l n="b"><app><rdg>śalākair vaidyarājendraiḥ</rdg><rdg resp="part:argr" cert="low">śalākivaidyarājendraiḥ</rdg></app> yathā lokasya taimiraṁ ||16||</l>
+	  </lg>
+	</quote>
+      kaliṅanya: pahenak tāmbĕkta, huvus hilaṅ ikaṅ ajñānapaṭala ri hatinta, binabadan de bhaṭāra śrī vajradhara <quote type="base-text">śalākair vaidyarājendraiḥ yathālokasya taimiraṁ</quote>, kadyaṅgān<add resp="#Kats">n</add>ikanaṅ vvaṅ lara matan putikĕn, ramun matanya tinamvan ta ya de saṅ vedya cinĕlĕkan matanya, varas tekā matanya hĕniṅ, menak panonya vĕkasan ri hilaṅnikaṅ kavakamalādyupadravanya, maṅkana tekiṅ ajñānapaṭalanta an <app><lem wit="#Kats" type="emn">hilaṅ</lem><rdg wit="#msA">tilaṁ</rdg></app> tutas, tan paśeṣa sampun bina<pb edRef="#msA" n="b15"/>badan de bhaṭāra, mataṅyar pahenak ta aṅĕnaṅĕnta, hayva saṅśaya.</p>
+
+      <p n="17">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="17">
+	    <l n="a">pratibimbasamā dharmā acchāḥ śuddhā hy anāvilāḥ</l>
+	    <l n="b"><app><lem wit="#Speijer" type="emn">agrāhyānabhilāpyāś ca</lem><rdg wit="#Kats">agrāhyā abhilapyāś śa</rdg></app> hetukarmasamudbhavāḥ ||17||</l>
+	  </lg>
+	</quote>
+      ka: pahavās denta umulati ikaṅ sarvadharma, tan hana pahinya lāvan māyā riṅ darpaṇa ry avakta vās ākārarūpanikanaṅ māyā riṅ darpaṇa, ndatan kavĕnaṅ ginamĕl, apan tan hana tattvanya; maṅkana tekiṅ sarvabhāva, ṅūniveh janmamānuṣa hetukakarma dumadyakĕn ike, mataṅnya kadi katon mātramātra, kintu tan hana tĕmĕntĕmĕn.</p>
+
+      <p n="18">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="18">
+	    <l n="a">evaṁ jñātvā imān dharmān nissvabhāvān <app><lem wit="#Speiejer">anāvilān</lem><rdg wit="#Kats">svanāvilān</rdg></app></l>
+	    <l n="b">kuru sattvārtham atulaṁ jāto <app><lem wit="#Speijer">'sy urasa</lem><rdg wit="#Kats">aurasa</rdg></app> tāyinām ||18||</l>
+	  </lg>
+	</quote>
+      ka: pahavās ta denta gumĕgö māyopamani sarva<pb edRef="#msA" n="a16"/>dharma; <quote type="base-text">nissvabhāvān nānāvilān</quote>, hayva ta puṅguṅ an nissvabhāva ikiṅ sarvabhāva; <quote type="base-text">kuru satvārtham atulaṁ</quote>, gavayakan taṅ kaparārthan usĕn, <quote type="base-text">jāto aurasa tāyināṁ</quote>, apan kita maṅke <quote type="base-text">jinorasa</quote> ṅaranta: anak bhaṭāra hyaṅ buddha, mataṅnyan hayva ta tan <app><lem wit="#Wulff" type="emn">sārāmbĕk ata</lem><rdg wit="#Kats">sarambhakāta</rdg></app> riṅ kuśalakarma, mvaṅ aṅiṅkiṅ parārtha.</p>
+
+      <p n="19">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="19">
+	    <l n="a">vajrasattvaḥ prakṛtyaiva <app><lem wit="#Speijer">acchaśuddha</lem><rdg wit="#Kats">accāśuddhaḥ</rdg></app> anāvilaḥ </l>
+	    <l n="b">hṛdi tiṣṭhati te vatsa sarvabuddhādhipaḥ svayam ||19||</l>
+	  </lg>
+	</quote>
+      ka: pahenak tāṅĕnaṅĕnta, bhaṭāra vajrasattva miṅasthūla sira ri hatinta, bhaṭāra vajrasattva ṅaran<add resp="#Kats">n</add>ira; <quote type="base-text">accāśuddha hy anāvilaḥ</quote>, śuddhasvabhāva sira, tan hana rāga, dveṣa, moha ri sira, tuvi ta pinakapradhāna saṅ sarvatathāgata sira, pinakahatinta sira maṅke, mārganiṅ puṇya<pb edRef="#msA" n="b16"/>jñānasambhāra kapaṅguha denta donira hana, hayva ta sandeha.</p>
+
+      <p n="20">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="20">
+	    <l n="a">adyaprabhṛti lokasya cakraṁ vartaya tāyināṁ</l>
+	    <l n="b">sarvatra pūrya vimalaṁ dharmaśaṅkham anuttaram ||20||</l>
+	  </lg>
+	</quote>
+      ka: mĕne tamvayanta <quote type="base-text">cakraṁ vartaya tāyināṁ</quote>, umindĕrakan dharmacakra bhaṭāra śrī vajradhara rikaṅ sarvasattva; <quote type="base-text">sarvatra pūrya vimalaṁ dharmaśaṅkham anuttaraṁ</quote>, kunaṅ deyanta hibĕki lyābi pĕnuhi teki daśadig anantaparyyanta sakalalokadhātu, kapva <app><lem wit="#Wulff">hibĕkananta</lem><rdg wit="#Kats">hibĕkan an ta</rdg></app> dharmaśaṅkha ikā kabeh.</p>
+
+      <p n="21">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="21">
+	    <l n="a">na te 'tra vimatiḥ kāryā nirviśaṅkena cetasā</l>
+	    <l n="b">prakāśaya <app><lem>mahātulaṁ</lem><note xml:lang="eng">Speijer notes that the reading <foreign xml:lang="san-Latn">mahātulaṁ</foreign> is unmetrical.</note></app> <app><lem wit="#Wulff" type="emn">mantracaryānayam</lem><rdg wit="#Kats">mantracāryyanayam</rdg><rdg wit="#Speijer">mantrācāryanayam</rdg></app> param ||21||</l>
+	  </lg>
+	</quote>
+      ka: hayva kita vicikitsa, <quote type="base-text">nirviśaṅkena cetasā</quote>, ikaṅ nissandeha atah ambĕka<add resp="#Kats">ka</add>nta, PRAKĀŚAYA MAHĀTULAṀ <pb edRef="#msA" n="a17"/> <quote type="base-text">mantracāryyanayam paraṁ</quote>, at pintonakna ike, saṅ hyaṅ mantranaya mahāyāna.</p>
+
+      <p n="22">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="22">
+	    <l n="a">evaṁ kṛtajño buddhānāṁ upakārīti gīyate</l>
+	    <l n="b">te ca vajradharāḥ sarve rakṣanti tava sarvaśaḥ ||22||</l>
+	  </lg>
+	</quote>
+      ka: apan ikaṅ vvaṅ kadi kita huvus kṛtasaṅskāra ri bhaṭāra, gumave pūjā viśeṣa ri bhaṭāra hyaṅ buddha, <quote type="base-text">upakārīti gīyate</quote>, ya ikā sinaṅgah sampun maveh <app><lem wit="#Wulff" type="emn">upakāra ri</lem><rdg wit="#Kats">upakāri, </rdg></app> bhaṭāra ṅaran ikaṅ vvaṅ maṅkana, <quote type="base-text">te ca vajradharāḥ sarve rakṣanti tava sarvaśaḥ</quote>, kopakāran pva sira denta, rĕṇa tāmbĕknira, ya ta mataṅnya yatna rumakṣa kita ri rahina vĕṅi, sakvanta saparanta sagaventa, at kita kinayatnakĕn denira ri vruhnira an sampun kopakāran <pb edRef="#msA" n="b17"/> denta, ya mataṅnya hayva <app><lem wit="#Wulff" type="emn">vicikitsa</lem><rdg wit="#Kats">vivikitsa</rdg></app>, apan hana bhaṭāra śrī vajrasattva <app><lem resp="part:argr" type="emn">pinakātmarakṣanta</lem><rdg wit="#Kats">pinaka atmarakṣanta</rdg></app>  sira.</p>
+
+      <p n="23">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="23">
+	    <l n="a">nāsti kiñcid akartavyaṁ prajñopāyena cetasā </l>
+	    <l n="b">nirviśaṅkaḥ sadā bhūtvā prabhuṅkṣva kāmapañcakam ||23||</l>
+	  </lg>
+	</quote>
+      ka: nora gavai anuṅ <app><lem wit="#Wulff" type="emn">tan kavĕnaṅa gavayanta</lem><rdg wit="#Kats">tan ta kavĕnaṅa gavayan, ta</rdg></app> yadyapin tribhuvanaduṣkara lviraniṅ karma, tan kavĕnaṅa ginave de saṅ hana riṅ svarga, manuṣya, pātāla, ikān maṅkana atiduṣkaranikaṅ karma kavĕnaṅ <app><lem wit="#Wulff" type="emn">ikā ya</lem><rdg wit="#Kats">i taya</rdg><note xml:lang="eng">Wulff gives as alternative emendation <foreign xml:lang="kaw-Latn">ikā ta ya</foreign></note></app> ginave denta; <quote type="base-text">prajñopāyena cetasā</quote>, ndan ikaṅ prajñā atah <app><lem wit="#Wulff">ambĕkakĕnanta</lem><rdg wit="#Kats">ambĕka<add resp="#Kats">kĕna</add>nta</rdg></app>, <quote type="base-text">nirviśaṅkaḥ sadā bhūtvā</quote>, lāvan tan kahilaṅana atah kita irika nissandehacitta sadākāla; <quote type="base-text">prabhuṅkṣva kāmapañcakam</quote>, paribhogan taṅ pañca kāmaguṇa <pb edRef="#msA" n="a18"/> denta, salvirniṅ kaviṣaya<del resp="#Kats">n</del> hayva pinilihan paribhogan kabeh denta, āpan don<del resp="#Kats">n</del>i kadi kita sādhaka, ndan hayvatah tan pakāmbĕk ika nissaṅśaya.</p>
+
+      <p n="24">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="24">
+	    <l n="a">yathā hi vinayaṁ <app><lem wit="#Kats" type="emn">pānti</lem><rdg wit="#msA">yānti</rdg></app> bodhisattvāś <app><lem wit="#Speijer" type="emn">svabhāvataḥ</lem><rdg wit="#Kats">ca bhāvataḥ msA</rdg></app></l>
+	    <l n="b">tathā hi sarvasattvārthaṁ kuryād <app><lem wit="#Kats #Speijer">rāgādibhiś</lem><rdg wit="#Wulff">rāgādhibhiś</rdg></app> śuciḥ ||24||</l>
+	  </lg>
+	</quote>
+      ka: kadyaṅgān bhaṭāra sikasa bo<add resp="#Kats">d</add>dhisattva mahāsattvā <app><lem wit="#Wulff" type="emn">hanāmbĕk</lem><rdg wit="#Kats">an<add resp="#Kats">n</add>āmbĕk</rdg></app> tĕmĕn sira gumĕgö i saṅ hyaṅ mantranaya. ambĕk tĕmĕn ṅaranya: kumiṅkiṅa kaparārthān, tan kalepanāna deniṅ kleśa, tan <app><lem wit="#msA" source="#Wulff">kapalitana</lem><rdg wit="#Kats" type="emn">kapalitāna</rdg></app> deniṅ rāga dveṣa moha.</p>
+
+      <p n="25">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="25">
+	    <l n="a">ye cānye samayadviṣṭāḥ <app><lem wit="#Speijer">samayabhraṣṭā</lem><rdg wit="#Kats">samaybhraṣṭāḥ</rdg></app> ye janāḥ</l>
+	    <l n="b">māraṇīyāḥ prayatnena <app><lem wit="#Speijer">buddhaśāsanapālane</lem><rdg wit="#Kats">buddhāśāsanapālane</rdg></app> ||25||</l>
+	  </lg>
+	</quote>
+	<!-- does this belong here?
+	     b. Speijer notes that the reading mahātulaṁ is unmetrical.
+	     !-->
+      ka: hana vvaṅ dveṣa ri saṅ hya<del resp="#Kats">ṅ</del> samaya, melik ri <pb edRef="#msA" n="b18"/> saṅ hyaṅ <app><lem resp="part:argr" type="emn">mantranaya</lem><rdg wit="#Kats">mantrānaya</rdg></app>; <quote type="base-text">samayabhraṣṭāḥ ye janāḥ</quote>, hana vvaṅ samayabhraṣṭāḥ vih sampun kṛtasamaya, manaḍah upadeśa, apa kunaṅ <app><lem wit="#Wulff" type="emn">vaivartika</lem><rdg wit="#msA">vivartika em. Kats, vaivatika</rdg></app> ta ya vĕkasan? kinasampayan<del resp="#Kats">n</del>ya ta saṅ guru, inumpĕtnya sira. <quote type="base-text">māraṇīyāḥ prayatnena</quote>, ikaṅ vvaṅ maṅkana nāṅ samayadviṣṭa mvaṅ samayabhraṣṭa kinonakĕn ikā pĕjahana, tan patögvakna de bhaṭāra, <quote type="base-text">buddhaśāsanapālane</quote>, yatanyan karakṣā śāsana bhaṭāra hyaṅ buddha, lāvan katvaṅana saṅ hyaṅ samaya, maṅkana phalanyan patyana ikaṅ samayavidveṣādi.</p>
+
+      <p n="26">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="26">
+	    <l n="a">dṛṣṭaṁ praviṣṭaṁ paramaṁ <app><lem wit="#Speijer" type="emn">rahasyottamamaṇḍalaṁ</lem><rdg wit="#msA">rahasyātkhamamaṇḍalaṁ</rdg></app></l>
+	    <l n="b">sarvapāpair <app><lem wit="#Kats Speijer" type="emn">vinirmuktā</lem><rdg wit="#msA">vinirmuktaḥ</rdg></app> bhavanto 'dyaiva <app><lem wit="#de Jong" type="emn">susthitāḥ</lem><rdg wit="#msA">śuddhitāḥ</rdg><rdg wit="#Speijer" type="emn">sodhitāḥ</rdg></app> ||26||</l>
+	  </lg>
+	</quote>
+      ka: pakenak tāmbĕkta harah, sampun praviṣṭamaṇḍala <pb edRef="#msA" n="a19"/> ṅaranta maṅke, tumama ri saṅ hyaṅ paramarahasya. kunaṅ deyanta pahavās vulatta rike saṅ hyaṅ maṇḍala, <quote type="base-text">sarvapāpair vinirmuktaḥ</quote>, kita pva sampun tumama ri maṇḍala, vinarah ri <app><lem wit="#Wulff" type="emn">lavālavanikaṅ</lem><rdg wit="#Kats">lavalava nikaṅ</rdg></app> rahasya, mataṅnya hilaṅa sakvehni pāpanta, alilaṅa kadi vinasĕhan, hilaṅ <app><lem wit="#msA">samūlonmūlita</lem><rdg wit="#Kats" type="emn">samūlonmūlati</rdg></app>, <quote type="base-text">bhavanto 'dyeva śuddhitaḥ</quote>. pahenak tāmbĕkta, hayva saṅśaya.</p>
+
+      <p n="27">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="27">
+	    <l n="a">na bhūyo ramaṇam <app><lem wit="#Speijer #deJong" type="emn">bhoti</lem><rdg wit="#Kats">bhosti</rdg></app> yānād <app><lem wit="#Speijer">asmān</lem><rdg wit="#Kats">asmāt</rdg></app> mahāsukhāt</l>
+	    <l n="b"><app><lem wit="#Speijer" type="emn">adhṛṣyāś</lem><rdg wit="#Kats">avṛṣyāś</rdg></app> <app><lem wit="#de Jong">cāpy avadhyāś</lem><rdg wit="#Speijer" type="emn">cānavadyāś</rdg><rdg wit="#Kats">cāpy avandyāś</rdg></app> ca ramadhvam akutobhayāḥ ||27||</l>
+	  </lg>
+	</quote>
+      ka: kita <app><lem wit="#Wulff" type="emn">tan vaivartikā</lem><rdg wit="#Kats" type="emn">kita vivartika</rdg><rdg wit="#msA">kita vaivatika</rdg><note resp="part:argr" xml:lang="eng">another possibility would be to understand <foreign xml:lang="kaw-Latn">kitāvaivartika</foreign></note></app>, <quote type="base-text">yānād asmāt mahāsukhāt</quote>, saṅka rikeṅ mantranaya, hilahila vvaṅ kadi kita <app><lem wit="#Wulff" type="emn">vaivartika</lem><rdg wit="#msA">vivartika em. Kats, vaivatika</rdg></app> ri saṅ hyaṅ mārga, <quote type="base-text">avṛṣyāś cāpy avandyāś ca</quote>, kunaṅ <pb edRef="#msA" n="b19"/> ri sĕḍaṅnyat prayatna umabhyāsa saṅ hyaṅ mantra avās ikaṅ hayu kasiddhyan kapaṅguha denta, tan kavĕnaṅ inulahulah deniṅ māra <app><lem wit="#Wulff" type="emn">tīrthikādi</lem><rdg wit="#Kats">tirvikādi</rdg></app>; <quote type="base-text">ramadhvam akutobhayāḥ</quote>, mataṅnya pahenak tāmbĕkta, hayva sigasigun, <app><lem wit="#Wulff" type="emn">tulusakĕn pratipattinteri</lem><rdg>tulusakĕn<del resp="#Kats">a</del> pratipattinte ri</rdg></app> saṅ hyaṅ mantra.</p>
+
+      <p n="28">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="28">
+	    <l n="a">ayaṁ vaḥ satataṁ rakṣyaḥ <app><lem wit="#msA">siddhasamayasaṁvaraḥ</lem><rdg wit="#Wulff" type="emn">siddhasamayaśambaraḥ</rdg></app></l>
+	    <l n="b"><app><lem wit="#msA">sarvabuddhasamaṁ proktaḥ</lem><rdg wit="#Wulff" type="emn">sarvabuddhasamāḥ proktāḥ</rdg><rdg wit="#deJong" type="emn">sarvabuddhaiḥ samaṁ proktaḥ</rdg></app>  <app><lem wit="#Speijer" type="emn">ājñā paramaśāśvatī</lem><rdg wit="#msA">ajñāpāramaṁśāśvatī</rdg><rdg wit="#Kats" type="emn">ājñāṁ pāraya śāśvatīṁ</rdg></app> ||28||</l>
+	  </lg>
+	</quote>
+      ka: prayatna tah kita rumakṣa saṅ hyaṅ samaya, hayva <app><lem wit="#Wulff" type="emn">tan eṅĕt i</lem><rdg wit="#Kats">tannaṁti</rdg></app> kuṇḍaṅ rahasyanatah sira denta, vruha ta kita rikaṅ yogya varahĕn ri saṅ hyaṅ samaya, hayva ta <app><lem wit="#Wulff" type="emn">deny adhika</lem><rdg wit="#Kats">dinadhi</rdg></app> kavvaṅanya, āmbĕknya, ulahnya, maryādanya, kunaṅ pva yan tuhutuhu śṛddhānya, acchedyābhedya ri saṅ hyaṅ mantra, irikā ta <app><lem wit="#Wulff" type="emn">kitad varaha ya</lem><rdg wit="#Kats">kita dvarahaya</rdg></app> ri saṅ hyaṅ <pb edRef="#msA" n="a20"/> rahasya; hayva saṅśaya, hayva kundulkundul umarahakĕn ri saṅ hyaṅ samaya rikāṅ adhimuktikasattva, <quote type="base-text">sarvabuddhasamaṁ proktaḥ</quote>, āpan sampun kita kṛtānujñāta de saṅ sarvatathāgata, inanumoda de bhaṭāra umintonakna saṅ hyaṅ samaya, <quote type="base-text">ājñāṁ pāraya śāśvatīṁ</quote>, kita iko <app><lem wit="#Wulff" type="emn">katibān anujñāta</lem><rdg wit="#Kats">tatibānyanujñāta</rdg></app> bhaṭāra, sumiddhākna sapakon saṅ sarvatathāgata.</p>
+
+      <p n="29">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="29">
+	    <l n="a">bodhicittaṁ <app><lem wit="#Speijer">tavātyājyaṁ</lem><rdg wit="#Wulff" type="emn">tvayātyājyaṁ</rdg><note xml:lang="eng" resp="part:argr">de Jong comments that Wulff's silent emendation is unnecessary</note></app> yad vajram iti mudrayā</l>
+	    <l n="b">yasyotpādaikamātreṇa buddha eva na saṁśayaḥ ||29||</l>
+	  </lg>
+	</quote>
+      ka: saṅ hyaṅ bodhicitta tan tiṅgalakna denta; bodhicitta ṅa: <quote type="base-text">yad bajram iti mudrayā</quote>, saṅ hyaṅ vajra sira bodhicitta ṅaranira lāvan saṅ hyaṅ mudrā,  <quote type="base-text">yasyotpādaikamātreṇa</quote>, denikā kāraṇan saṅ hyaṅ vajra lāvan <pb edRef="#msA" n="b20"/> mudrā, <quote type="base-text">buddha eva na saṅśayaḥ</quote>, hyaṅ buddha kita dlāha, kasākṣātkṛta ikaṅ kalĕpasĕn denta, ri sĕḍaṅnyat prayatna ri saṅ hyaṅ vajra ghaṇṭā mvaṅ mudrā. </p>
+
+      <p n="30">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="30">
+	    <l n="a">saddharmo na pratikṣepyaḥ na tyājyaś ca kadācana</l>
+	    <l n="b">ajñānād atha mohād vā na vai <app><lem wit="#Speijer">vivṛṇuyāt sa tu</lem><rdg wit="#Kats" type="emn">vivṛṇuyās tataḥ</rdg><note xml:lang="eng">despite De Jong's suggestion that <foreign xml:lang="san-Latn">vivarṇayet</foreign> is better here, GuSaMaVi 383 has the same reading here</note></app> ||30||</l>
+	  </lg>
+	</quote>
+      ka: tan tulaka saṅ hyaṅ saddharma, <quote type="base-text">na tyājyaś ca kadācana</quote>, lāvan tan tiṅgalakna sira, <quote type="base-text">ajñānād atha mohād vā na vai vivṛṇuyās tataḥ</quote>, tan dadi vvaṅ kadi kita umivāraṇe saṅ hyaṅ saddharma, saṅka riṅ ajñāna lāvan kamohan, mataṅnyan hayva maṅkana, laraṅan ikaṅ vvaṅ mantranaya <app><lem wit="#Wulff" type="emn">mahāyānānuyāyī</lem><rdg wit="#Kats">mahāyānānuyi</rdg></app>, umivāraṇa saṅ hyaṅ sūtrānta.</p>
+
+      <p n="31">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="31">
+	    <l n="a">svam ātmānam parityajya tapobhir <app><lem wit="#after GuSaMaVi 384 etc.">na ca pīḍayet</lem><rdg wit="#msA">ḥnaḥtha pīḍayet</rdg><rdg wit="#Kats" type="emn">nātipīḍayet</rdg><rdg wit="#Wulff" type="emn">nātipīḍayet</rdg></app></l>
+	    <l n="b">yathāsukhaṁ sukhaṁ dhāryaṁ <app><lem wit="#msA" source="#Speijer">sambuddho 'yam</lem><rdg wit="#Kats">sambuddheyam</rdg></app> anāgataḥ ||31||</l>
+	  </lg>
+	</quote>
+      <pb edRef="#msA" n="a21"/> ka: <app><lem wit="#Wulff" type="emn">paṭavarikāvakta</lem><rdg wit="#Kats">patavarikāvakta msA, prativārikāvakta em.</rdg></app>, svakāyanirapekṣataḥ kita, hayva tṛṣṇa riṅ avak, <quote type="base-text">tapobhir nātipīḍayet</quote>, hayva <app><lem wit="#msA">pinisakitan</lem><note xml:lang="eng" resp="part:argr">possibly msA reads <foreign xml:lang="kaw-Latn">pinirsakitan</foreign></note><rdg wit="#Wulff" type="emn">pinrisakitan</rdg><rdg wit="#Kats">pini<add resp="#Kats">r</add>sakitan</rdg></app> riṅ tapa, hayva vineh gumavayakan kavĕnaṅnya, <quote type="base-text">yathāsukhaṁ sukhan dhāryyaṁ</quote>, <app><lem resp="part:argr" type="emn">yathāsukhātah</lem><rdg wit="#Wulff" type="emn">yathāsukātah</rdg><rdg wit="#Kats">yathāsukatāh</rdg></app> lvirantat gavayaknaṅ bodhimārga, <quote type="base-text">sambuddho 'yam anāgataḥ</quote>, hayva gyā hyaṅ buddha kita dlāha.</p>
+
+      <p n="32">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="32">
+	    <l n="a">vajraṁ ghaṇṭāṁ ca mudrāṁ ca na saṁtyajya kadācana</l>
+	    <l n="b">ācāryo nāvamantavyaḥ sarvabuddhasamo hy asau ||32||</l>
+	  </lg>
+	</quote>
+      ka: saṅ hyaṅ vajra, ghaṇṭā mvaṅ mudrā hayva kari sira denta, sakvanta, saparanta, kuṇḍaṅanta sira, ĀCĀRYO NĀVAMANTAVYAḤ, lāvan ta veh tan gavayaknaṅ gurudrohaka, tan vĕnaṅ ikā vvaṅ avamāna ri ḍaṅ ācārya, mataṅnyan tan kāvamānana sira denta, <quote type="base-text">sarvabuddha<pb edRef="#msA" n="b21"/>samo hy asau</quote>, sarvabuddhasama sira, paḍa lāvan bhaṭāra hyaṅ buddha kabeh.</p>
+
+      <p n="33">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="33">
+	    <l n="a">yaś cāvamanyed ācāryaṁ sarvabuddhasamaṁ guruṁ</l>
+	    <l n="b">sarvabuddhāvamānena nityaṁ duḥkham avāpnuyāt ||33||</l>
+	  </lg>
+	</quote>
+      ka: apan ikaṅ vvaṅ avajñā, avamāna, masampe guru, sa <quote type="base-text">nityan duḥkham <app><lem>avāpnuyāt</lem><rdg wit="#Kats">apnuyāt</rdg></app></quote>, ya ikā mulih riṅ naraka, tibā riṅ kavah saṅ yama, pinakahitipniṅ tāmragomukha; maṅkana pāpaniṅ vvaṅ avamāna maguru.</p>
+
+      <p n="34">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="34">
+	    <l n="a">tasmāt sarvaprayatnena vajrācāryyam mahāguruṁ</l>
+	    <l n="b">pracchannavarakalyāṇaṁ, nāvamanyet kadācana ||34||</l>
+	  </lg>
+	</quote>
+      ka: hayva tan prayatna maguru, yadyapi, <quote type="base-text">pracchannavarakalyāṇa</quote>, ika gurunta tan katona hayunira guṇanira denta, ikan samaṅkana, <quote type="base-text">nāvamanyet kadācana</quote>, <pb edRef="#msA" n="a22"/> tan avamāna ta kita ri sira, āpan mahāpāpa mahāduhkha ikaṅ tan atvaṅ maguru, mataṅnya <app><lem wit="#Wulff" type="emn">varaprayatna</lem><rdg wit="#Kats">vvara prayatna</rdg></app> tah ri <app><lem>kavyāpāra</lem><rdg wit="#OJED" type="emn" cert="low">kavyāpāran</rdg></app> saṅ guru.</p>
+
+      <p n="35">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="35">
+	    <l n="a">nityaṁ svasamayaḥ sādhyo nityaṁ <app><lem wit="#Speijer" type="emn">pūjyās tathāgatāḥ</lem><rdg wit="#msA">pūjyas tathāgataḥ</rdg><note xml:lang="eng">see i.a. GuSaMaVi 390</note></app></l>
+	    <l n="b">nityaṁ ca <app><lem resp="#AO" type="emn">gurave deyaṁ</lem><rdg wit="#msA">guruvedeyaṁ</rdg><rdg wit="#Speijer" type="emn">guruvaiddheyyaṁ</rdg><note xml:lang="eng">cf. de Jong, GuSaMaVi 390</note></app> sarvabuddhasamo hy asau ||35||</l>
+	  </lg>
+	</quote>
+      ka: hayva kaluban kita gumavayakna saṅ hyaṅ samaya, <quote type="base-text">nityaṁ pūjyas tathāgataḥ</quote>, lāvan śāśvata kita gumavayaknaṅ tathāgatapūjā, <quote type="base-text">nityañ ca guruvaidheyaṁ</quote>, <app><lem resp="part:argr" type="emn">nityaśa</lem><rdg wit="#Kats">nityasa</rdg></app>  kita gumavayakĕn guruśuśrūṣā, umyāpāra saṅ guru, <quote type="base-text">sarvabuddhasamo hy asau</quote>, <app><lem wit="#Wulff" type="emn">apayapan</lem><rdg wit="#Kats">apa yāpan</rdg></app> sarvatathāgatasama saṅ guru ṅaranira, mataṅyan sira pagavayaknanta <app><lem wit="#Kats #OJED">kaśuśrūṣā</lem><rdg wit="#Wulff" type="emn" cert="low">kaśuśrūṣān</rdg></app></p>
+
+      <p n="36">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="36">
+	    <l n="a">datte <app><lem wit="#Kats">'smin</lem><rdg resp="part:argr" type="emn" cert="low">'smai</rdg><note xml:lang="eng">cf. GuSaMaVi 391</note></app> sarvabuddhebhyo dattam bhavati cākṣayam</l>
+	    <l n="b">taddānāt puṇyasambhāraḥ sambhārāt siddhir uttamā ||36||</l>
+	  </lg>
+	</quote>
+      <pb edRef="#msA" n="b22"/> ka: apan ikaṅ vvaṅ kadi kita gumavayakĕn ikaṅ guruśuśrūṣā, maveh upahārādi ri ḍaṅ guru, yeka paṅipuk dānasambhāra ri bhaṭāra hyaṅ buddha ṅaranya, <quote type="base-text">taddānāt puṇyasambhāraḥ</quote>, ya sambhandhanyan katĕmu ikaṅ puṇyasambhāra, <quote type="base-text">sambhārāt siddhir uttamā</quote>, ri kapaṅguhan ikaṅ puṇyasambhāra, ya dumeh rikaṅ kasiddhyan sulabha ri kita, ri prayatnanta rika guruśuśrūṣā.</p>
+
+      <p n="37">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="37">
+	    <l n="a">nityaṁ svasamayācāryaṁ prāṇair api nijair bhajet</l>
+	    <l n="b">adeyaiḥ putradārair vā kim punar vibhavaiś calaiḥ ||37||</l>
+	  </lg>
+	</quote>
+      ka: hurip tuvi tinarimakan ri ḍaṅ guru, gumavaya kabyāpāranira donya, <quote type="base-text">adeyaiḥ putradārair vā</quote>, āstām ikaṅ anak rabi inarpaṇākĕn ikā kabeh i bharāla guru, dāsa<pb edRef="#msA" n="a23"/>bhūtā, hulunanira umyāpāra ri sira pakĕnanya, <quote type="base-text">kim punar vibhavaiś calaiḥ</quote>, hayva ta vinuvus ikaṅ dṛvya ṅaranya, kadyāṅganiṅ mās maṇik dodot pirak pinūjākĕn<add resp="#Kats">n</add> ikā kabeh i ḍaṅ guru.</p>
+
+      <p n="38">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="38">
+	    <l n="a">yasmāt sudurlabhaṁ nityaṁ kalpāsaṁkhyeyakoṭibhiḥ</l>
+	    <l n="b">buddhatvam udyogavate dadātīhaiva janmani ||38||</l>
+	  </lg>
+	</quote>
+      ka: apan<add resp="#Kats">n</add> ikaṅ kahyaṅbuddhan atyanta paramadurlabha kĕtekā, yadyapin <quote type="base-text">kalpāsaṅkhyeyakoṭijanma</quote>, lāvasaniṅ vvaṅ gumavayaknaṅ kuśalamūla dānapāramitādi sumādhyaṅ kahyaṅbuddhan, ikān maṅkana tan niyata kapaṅguha, saṅka ri durlabhanikaṅ kalĕpasan ṅaranya, <pb edRef="#msA" n="b23"/> <quote type="base-text">buddhatvam udyogavate dadātīhaiva janmani</quote>, ikaṅ kahyaṅbuddhan yateka vinehakan de bharāla guru irikeṅ janmanta maṅke, ṅhiṅ hīṅanan i göṅny <app><lem wit="#Wulff" type="emn">anugrahanire</lem><rdg wit="#Kats">anugrahanira</rdg></app> kita, mataṅnya tan halaṅ tan luṇḍu tan vĕlaṅ vĕlutĕn <app><lem wit="#OJED" type="emn">aṅĕnaṅĕnta</lem><rdg wit="#Kats">aṅönaṅanta</rdg></app> an pūjākĕn huripta mvaṅ anak rabinta ri ḍaṅ guru.</p>
+
+      <p n="39">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="39">
+	    <l n="a">adya vaḥ saphalaṁ janma yad asmin <app><lem wit="#Speijer" type="emn">supratiṣṭhitāḥ</lem><rdg wit="#392">supratiṣṭhitaḥ msA Kats – cf. GuSaMaVi</rdg></app></l>
+	    <l n="b"><app><lem resp="part:argr" type="emn">samāḥ samayadevānām</lem><rdg wit="#msA">samaḥ samāyadevānām</rdg><rdg wit="#Speijer" type="emn">samasamā ye devānām</rdg><rdg wit="#Kats" type="emn">samāḥ samā hi devānām</rdg><note xml:lang="eng">cf. GuSaMaVi 392</note></app> adya jātāḥ <app><lem wit="#Speijer" type="emn">svayambhavaḥ</lem><rdg wit="#Kats">svayambhavaḥ msA</rdg></app> ||39||</l>
+	  </lg>
+	</quote>
+      <quote type="base-text">adya vaḥ saphalañ janma yad asmin supratiṣṭhitaḥ</quote>: an pakaśaraṇa saṅ hyaṅ samaya, <quote type="base-text">samāḥ samā hi devānām adya jātāḥ svayaṁbhavaḥ</quote>: āpan avak hyaṅ buddha kita maṅke usĕn, karatalavyavasthita, ikaṅ <app><lem resp="part:argr" type="emn">kahyaṅbuddhān</lem><rdg wit="#Kats">kahyaṅbuddhātvan</rdg><note xml:lang="eng">or emend <foreign xml:lang="kaw-Latn">kahyaṅbuddhatvan</foreign>?</note></app> ri kita, kāgĕm kamuṣṭi ikaṅ kalĕpasĕn denta.</p>
+
+      <p n="40">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="40">
+	    <l n="a">adyābhiṣiktāyuṣmantaḥ sarvabuddhaiḥ savajribhiḥ</l>
+	    <l n="b"><pb edRef="#msA" n="a24"/> traidhātukamahārājye rājādhipatayaḥ sthitāḥ ||40||</l>
+	  </lg>
+	</quote>
+      ka: pahenak <app><lem>tāmbĕkta</lem><rdg wit="#Kats" type="misprint">tămbĕkta</rdg></app>, sampun kṛtābhiṣeka kita de <app><lem wit="#Wulff" type="emn">saṅ</lem><rdg wit="#Kats"><add resp="#Kats">sa</add></rdg></app> sarvatathāgata lāvan saṅ sarvatathāgatī; ṅaran ikaṅ abhiṣeka tinarimanta: cakravartyabhiṣeka ṅaranya.</p>
+
+      <p n="41">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="41">
+	    <l n="a">adya <app><lem resp="part:argr" type="emn">mārān</lem><rdg wit="#Speijer">māraṁ Kats</rdg></app> vinirjitya praviṣṭāḥ paramaṁ puraṁ</l>
+	    <l n="b">prāptam adyaiva buddhatvaṁ bhavadbhir nātra saṁśayaḥ ||41||</l>
+	  </lg>
+	</quote>
+      ka: avās alahnikaṅ mārakarma denta, <quote type="base-text">praviṣṭāḥ paramam puraṁ</quote>, niyata ikā nirvāṇapura katĕkan denta maṅke, <quote type="base-text">prāptam adyaiva buddhatvaṁ</quote>, kapaṅguha niyatanikaṅ kamokṣan denta ri janmanta maṅke, <quote type="base-text">bhavadbhir nātra saṅśayaḥ</quote>: pahenak tāṅĕnaṅĕnta, hayva saṅśaya.</p>
+
+      <p n="42">
+	<quote type="base-text" xml:lang="san-Latn">
+	  <lg n="42" met="puṣpitāgra">
+	    <l n="a">iti kuruta manaḥ prasādāvajraṁ <app><lem wit="#Speijer">svasamayam</lem><rdg wit="#Kats">svasamāyam</rdg></app> akṣayasaukhyadam bhajadhvaṁ</l>
+	    <l n="b"><pb edRef="#msA" n="b24"/> jagati <app><lem wit="#Speijer">laghu sukhe 'dya</lem><rdg wit="#Kats">laghusukheti</rdg></app> <app><lem resp="part:argr" type="emn">sarvabuddhapratisamaśāśvatatāṁ</lem><rdg wit="#Speijer">sarvabuddhapratisamaśāśvatitāṁ</rdg><rdg wit="#Kats">sarvabuddhapratisamāś śāśvatitāṅ</rdg><note xml:lang="eng" resp="part:argr">GuSaMaVi 395 <foreign xml:lang="san-Latn">vajrasattvapratisamaśāśvatatāṁ</foreign></note></app> gatā bhavantaḥ.</l>
+	  </lg>
+	</quote>
+      ka: mataṅnya tulusakĕnta śṛddhānta, pahapagĕh ta manahta, makamārga saṅ hyaṅ mantranaya mahāyāna, <quote type="base-text">svasamāyaṁ akṣayasaukhyadaṁ bhajadhvaṁ</quote>, <app><lem wit="#Kats">atikāsta</lem><rdg wit="#Wulff" type="emn">atikāṣṭa</rdg><rdg wit="#OJED" type="emn" cert="low">at lĕkas ta</rdg></app> rumakṣa saṅ hyaṅ samaya, āpan sira vĕnaṅ umehakan ikaṅ anuttarasukha, <quote type="base-text">jagati laghusukheti sarvabuddhapratisamāś śāśvatitāṅ gatā bhavantaḥ</quote>, āpan ikeṅ janma manuṣya ṅaranya, akĕḍik sukhanya; yathānyat paṅguhakna kahyaṅbuddhan, paḍā lāvan saṅ sarvatathāgata, mataṅnyan lĕkasa <app><lem wit="#Wulff" type="emn">umabhyāsa</lem><rdg wit="#Kats">umabhyasa</rdg></app> saṅ hyaṅ samaya, gumavayakna saṅ hyaṅ mantranaya mahāyāna, hayva ta pra<pb edRef="#msA" n="a25"/>māda kita, kayatnakan tĕmĕntĕmĕn, yathānyan sulabha ikaṅ kasiddhyan kapaṅguha denta.</p>
+      <trailer>iti saṅ hyaṅ kamahāyānan mantranaya samāpta.</trailer>
+    </body>
+  </text>
+</TEI>
