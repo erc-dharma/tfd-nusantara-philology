@@ -10,64 +10,39 @@
       <fileDesc>
          <titleStmt>
             <title type="main">Smaradahana</title>
-            <title type="sub">Digital Critical Edition of Smaradahana</title>
+            <title type="sub">Digital Critical Edition of An Old Javanese Cout Poem</title>
             <author>Mpu Dharmaja</author>
             <editor ref="part:anol">
                <forename>Andrew</forename>
                <surname>Ollett</surname>
             </editor>
+            <editor ref="part:argr">
+               <forename>Arlo</forename>
+               <surname>Griffiths</surname>
+            </editor>
+            <respStmt>
+               <resp>structuring of the TEI file</resp>
+               <persName ref="part:anol">
+                  <forename>Andrew</forename>
+                  <surname>Ollett</surname>
+               </persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
-            <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-            <idno type="filename">DHARMA_CritEdSmaradahana</idno>
-            <!-- Replace by filename, e.g. DHARMA_CritEdSiksaGuru -->
+            <pubPlace>Chicago, Jakarta</pubPlace>
+            <idno type="filename">DHARMA_CritEdKakavinSmaradahana</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Andrew Ollett.</p>
+                  <p>Copyright (c) 2019-2025 by Andrew Ollett &amp; Arlo Griffiths.</p>
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
-            <biblFull>
-               <titleStmt>
-                  <title>Smaradahana</title>
-                  <author>Mpu Dharmaja</author>
-                  <funder>EFEO/EPHE (PSL Research University)</funder>
-                  <principal>
-                     <persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName>
-                  </principal>
-                  <principal>
-                     <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
-                  </principal>
-                  <respStmt>
-                     <persName xml:id="ZA">Zakariya Pamuji Aminullah</persName>
-                     <resp>Cleaned a txt document from OCR-ed text</resp>
-                  </respStmt>
-                  <respStmt>
-                     <persName xml:id="AO">Andrew Ollett</persName>
-                     <resp>Converted text to TEI.</resp>
-                  </respStmt>
-                  <respStmt>
-                     <persName xml:id="AG">Arlo Griffiths</persName>
-                     <resp>Cleaned up and edited the txt and xml data.</resp>
-                  </respStmt>
-               </titleStmt>
-               <editionStmt>
-                  <p>First digital edition made by EFEO/EPHE (PSL Research University).
-            </p>
-               </editionStmt>
-               <publicationStmt>
-                  <authority/>
-                  <date>2020</date>
-                  <publisher>EFEO/EPHE (Université of PSL) </publisher>
-                  <pubPlace>Paris</pubPlace>
-               </publicationStmt>
-            </biblFull>
             <listWit>
-               <witness xml:id="EdP">
+               <witness xml:id="edp">
                   <abbr type="siglum">Ed<hi rend="superscript">P</hi>
                   </abbr>
                   <bibl>
@@ -75,21 +50,6 @@
                   </bibl>
                </witness>
             </listWit>
-            <listBibl>
-               <biblStruct type="book" xml:id="Poerbatjaraka1931_01">
-                  <monogr>
-                     <author>
-                        <name>Poerbatjaraka</name>
-                     </author>
-                     <title level="m">Smaradahana: Oud-Javaansche tekst met vertaling uitgegeven</title>
-                     <imprint>
-                        <pubPlace>Bandoeng</pubPlace>
-                        <publisher>A.C. Nix &amp; Co.</publisher>
-                        <date when="1931">1931</date>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
@@ -104,7 +64,12 @@
                <p/>
             </correction>
             <normalization>
-               <p>Typed by <persName ref="part:zapa">Zakariya Pamuji Aminullah</persName>, with normalisation of some letters.</p>
+               <p>Some orthographic normalization towards the standard proposed in OJED has been carried out without comment. These concern cases where Poebartjaraka accepts spellings with
+	       <list>
+                     <item>deaspiration or degemination</item>
+                     <item>long ā before double consonant cluster</item>
+                  </list>
+               </p>
             </normalization>
             <punctuation>
                <p/>
@@ -194,19 +159,14 @@
          <langUsage>
             <language ident="kaw-Latn">Old Javanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-          <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
-         <change when="2022-04-05" who="part:axja">Updating the template</change>
-         <change when="2020-02-28" who="part:anol">Final TEI edits</change>
-         <change when="2018-06-11" who="part:anol">Conversion of text to TEI</change>
-         <change when="2018-06-05" who="part:zapa">Initial TEI encoding of header</change>
+         <change when="2024-09" who="part:anol part:argr">revised sarga 1, updated teiHeader</change>
+         <change when="2022-04-05" who="part:axja">updating the template</change>
+         <change when="2020-02-28" who="part:anol">more TEI edits</change>
+         <change when="2018-06-11" who="part:anol">conversion of text to TEI</change>
+         <change when="2018-06-05" who="part:zapa">initial TEI encoding of teiHeader</change>
+         <change when="2018" who="part:zapa">cleaning result of OCR</change>
       </revisionDesc>
    </teiHeader>
    <text xml:lang="kaw-Latn" xml:space="preserve">
@@ -216,106 +176,112 @@
       </div>
       <div type="canto" rend="met" met="śārdūlavikrīḍita" n="1" xml:id="Smaradahana_02">
         <lg xml:id="Smaradahana_02.01" n="1">
-          <l n="a">pūjāniṅ kavi saṅgraheṅ kaləṅəṅan maṅde <app><lem type="norm">kadīrghāyuṣan</lem><rdg>kadīrghyāyuṣan</rdg></app></l>
-          <l n="b">muṅgviṅ padma məkar pratiṣṭha siniram deniṅ rərəbniṅ kapāt</l>
+          <l n="a">pūjāniṅ kavi saṅgraheṅ kaləṅəṅan maṅde <app><lem type="norm">kadīrghāyuṣan</lem><rdg wit="#edp">kadīrghyāyuṣan</rdg></app></l>
+          <l n="b">muṅgv iṅ padma məkar pratiṣṭha siniram deniṅ rərəbniṅ kapāt</l>
           <l n="c">vījanyākṣara lambaṅ endah inurākən riṅ tətə̄niṅ yaśa</l>
-          <l n="d">dhūpākāra limut maghəṇṭa panaṅisniṅ ṣaḍpadā riṅ səkar</l>
+          <l n="d">dhūpākāra limut maghəṇṭa<!-- textual problem? --> panaṅisniṅ ṣaḍpadā riṅ səkar</l>
         </lg>
         <lg xml:id="Smaradahana_02.02" n="2">
           <l n="a">ūṅ indah ta bhaṭāra manmatha rəṅə̄n sambatniṅ aṅgə̄ṅ laṅə̄</l>
           <l n="b">saṅ sākṣāt makadrəvya luhniṅ aṅaraṅ saṅ devaniṅ ken lukar</l>
           <l n="c">saṅ rəm byāpaka riṅ raras hati vəkasniṅ kiṅkiṅ aṅləsvakən</l>
-          <l n="d">saṅ saṅkan paraniṅ raras kita basāveh rāga lāvan lulut</l>
+          <l n="d">saṅ saṅkan paraniṅ raras kita <app><lem type="norm">baśāveh</lem><rdg wit="#edp">baśāveh</rdg></app> rāga lāvan lulut</l>
         </lg>
         <lg xml:id="Smaradahana_02.03" n="3">
           <l n="a">tan tuṅgal kahananta riṅ pakasutan layvan hunor iṅ susu</l>
           <l n="b">saṅ muṅgv iṅ juraṅ iṅ karas tutuganiṅ lambaṅ gurūniṅ tanah</l>
-          <l n="c">śrīniṅ paṅgəlaran ṭikā saḍavatāniṅ rəm kasənvan ravi</l>
+          <l n="c">śrīniṅ paṅgəlaran ṭikā<!-- is tikā intended? --> saḍavatāniṅ rəm kasənvan ravi</l>
           <l n="d">riṅ lvah lūh aməgat pupur kita hane tuṅgakni luṅniṅ gaḍuṅ</l>
         </lg>
         <lg xml:id="Smaradahana_02.04" n="4">
-          <l n="a">taṅkil roma gəluṅ valū gr̥halatā deśanta yan paṅlare</l>
+          <l n="a">taṅkil roma gəluṅ valū gr̥ha latā deśanta yan paṅlare</l>
           <l n="b">saṅ muṅgv iṅ vatəsiṅ pupuk pamasaran tiṅhal maliṅ yan liriṅ</l>
-          <l n="c">paṅhilyan śavaniṅ ṭikānakanakan sūkṣmeṅ laruṅ ketaki</l>
-          <l n="d">iṅ pamraṅmraṅaniṅ halis tikəl arəs hyaṅniṅ pamāḍan lulut</l>
+          <l n="c">paṅhilyan śavaniṅ ṭikānak-anakan sūkṣmeṅ laruṅ ketaki</l>
+          <l n="d">iṅ pamraṅ-mraṅaniṅ halis tikəl arəs hyaṅniṅ pamāḍan lulut</l>
         </lg>
         <lg xml:id="Smaradahana_02.05" n="5">
           <l n="a">saṅ rəs rāga ṅaranta riṅ pasir adoh ləṅləṅ kiteṅ parvata</l>
           <l n="b">saṅ kiṅkiṅ kita riṅ tavaṅ saṅ aṅaraṅ nāhan ṅaranteṅ rəməṅ</l>
-          <l n="c">saṅ śokāṅaluseṅ taman saṅ alaṅə̄ yan saṅhubiṅ sāgara</l>
+          <l n="c">saṅ <app><lem type="norm">śokāṅaluṣeṅ</lem><rdg wit="#edp">śokāṅaluseṅ</rdg></app> taman saṅ alaṅə̄ yan saṅhubiṅ sāgara</l>
           <l n="d">riṅ kumbaṅ maṅajap ṅaranta karəṅə̄ nāhan dadinta prabhu</l>
         </lg>
         <lg xml:id="Smaradahana_02.06" n="6">
-          <l n="a">yan riṅ praṅ kita siṅha vīra taruṇārjāpañji śūreṅ raṇa</l>
-          <l n="b">sākṣāt rāga səkar kiteṅ kavi kiduṅ prālambaṅiṅ rāt kabeh</l>
-          <l n="c">tambākūṅ kita riṅ tilam kita sinəṅgah dhīramantrānulus</l>
+          <l n="a">yan riṅ praṅ kita siṅha vīrataruṇārjāpañji śūreṅ raṇa</l>
+          <l n="b">sākṣāt rāga səkar kiteṅ kavi kiduṅ prālambaṅ iṅ rāt kabeh</l>
+          <l n="c">tambākūṅ kita riṅ tilam kita sinəṅgah dhīramantrānulus</l><!--vīramantry ānulus?-->
           <l n="d">śrī kāmeśvara nāma lāgi vinuvus riṅ rāt kabeh nityaśa</l>
         </lg>
         <lg xml:id="Smaradahana_02.07" n="7">
           <l n="a">doniṅ mastuti kīrti saṅ mamava rāt muṅgv iṅ carikniṅ karas</l>
           <l n="b">cūḍāmaṇyanira mpu dharmaja kədə̄ marṇāṅga saṅ hyaṅ smara</l>
-          <l n="c">ndan dūrān kavaśāṅaveśa vaśaniṅ puṅguṅ riyāpan tuhu</l>
+          <l n="c">ndan dūrān kavaśāṅaveśa vaśaniṅ puṅguṅ ri yāpan tuhu</l>
           <l n="d">sotan taṅ kavi vāhu vanva ri kilatniṅ sāgarāṅde ləyəp</l>
         </lg>
         <lg xml:id="Smaradahana_02.08" n="8">
-          <l n="a">ṅūnī kāla bhaṭāranātha magave yogādi sanismr̥ti</l>
-          <l n="b">ṅkēneṅ meru vukir viśeṣa patapān saṅ siddha yogīśvara</l>
-          <l n="c">hə̄bniṅ darśana tovi duṅhusi pasirniṅ lvah gihānyāparə̄</l>
+          <l n="a">ṅūnī kāla bhaṭāra nātha magave yogādi sanismr̥ti<!-- textual problem?--></l>
+          <l n="b">ṅkāneṅ meru vukir viśeṣa patapān saṅ siddhayogīśvara</l>
+          <l n="c">hə̄bniṅ darśana tovi duṅhusi pasirniṅ lvah gihā nyāparə̄</l><!-- understand duṅhus[n]i-->
           <l n="d">hyaṅniṅ hyaṅ pva sirātapāpa ta kunaṅ sādhyan muvah denira</l>
         </lg>
         <lg xml:id="Smaradahana_02.09" n="9">
-          <l n="a">sotan tāpan avakniraṅ parama tatvānūti sarvāgama</l>
-          <l n="b">ūṅkārādi śivāṅgasandhi patatāniṅ brāhmamantrākṣara</l>
+          <l n="a">sotan tāpan avakniraṅ paramatattvānūti<!-- norm. --> sarvāgama</l>
+          <l n="b">ūṅkārādi śivāṅgasandhi patatāniṅ brahma<!-- brāhm edp -->mantrākṣara</l>
           <l n="c">tiṅkahniṅ daśamūrti nitya ginəlar pə̄hniṅ svaravyañjana</l>
-          <l n="d">sūkṣmajñāna viśeṣa rakva humiḍəṅ dhyāyīnirālambana</l>
+          <l n="d">sūkṣmajñāna viśeṣa rakva humiḍəṅ dhyāyī nirālambana</l>
         </lg>
         <lg xml:id="Smaradahana_02.10" n="10">
-          <l n="a">enak tiṅkahi de bhaṭāra ruməgəp lyusniṅ samādhī hati</l>
-          <l n="b">tan vaṅ mātra sumiṅhiteṅ suka lavan krīḍādi nārīkrama</l>
+          <l n="a">enak tiṅkahi de<!-- textual problem? --> bhaṭāra ruməgəp lyusniṅ samādhī hati</l><!-- tiṅkah[n]i-->
+          <l n="b">tan vaṅ mātra sumiṅhiteṅ sukha<!-- norm. --> lavan krīḍādi nārīkrama</l>
           <l n="c">heman rūmnikaṅ apsarī tan inivə̄ de hyaṅ jagatkāraṇa</l>
           <l n="d">lāvan rūmni manis girīndraduhitādevī sumantən rara</l>
         </lg>
         <lg xml:id="Smaradahana_02.11" n="11">
-          <l n="a">kāvit pvaṅ <app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> mogha sinukū deniṅ vatək rākṣasa</l>
+          <l n="a">kāvit pvaṅ <app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> mogha sinukū deniṅ vatək rākṣasa</l>
           <l n="b">vadvāniṅ jaya nīlarudraka sumār sə̄sə̄k təkeṅ kahyaṅan</l>
           <l n="c">riṅ senāpura tāṅaran ri sukuniṅ hemādri lambvan kidul</l>
-          <l n="d">ṅkānan durga kuṭanya bhīṣaṇa lurah śobhārarəm durjaya</l>
+          <l n="d">ṅkānan<!-- ṅkānaṅ? ṅkāneṅ? --> durga kuṭanya bhīṣaṇa lurah śobhārarəm durjaya</l>
         </lg>
         <lg xml:id="Smaradahana_02.12" n="12">
-          <l n="a">yekāṅde gigu ri hyaṅ ādbhuta kabeh riṅ svargalokārurah</l>
-          <l n="b">sakveh saṅ daśalokarakṣaka mahə̄m tansah paḍālapkəna</l>
-          <l n="c">saṅ siddhārṣi vasiṣṭha nārada tumūt gandharva len apsara</l>
+          <l n="a">yekāṅde gigu ri hyaṅ adbhuta kabeh riṅ svargalokārurah</l>
+          <l n="b">sakveh saṅ daśalokarakṣaka mahə̄m tan sah paḍālapkəna</l>
+          <l n="c">saṅ siddharṣi vasiṣṭha nārada tumūt gandharva len apsara</l>
           <l n="d">saṅ hyaṅ śakra sirādhikāra pinatih ṅkāneṅ sabhāmaṇḍala</l>
         </lg>
         <lg xml:id="Smaradahana_02.13" n="13">
           <l n="a">sampunyān patatāvatāraniṅ ahə̄m saṅ hyaṅ trinetrāvuvus</l>
-          <l n="b">sojar vīra surāpṣara kita kabeh ndin dāya dentāpraṅa</l>
-          <l n="c">brāhmā viṣṇu huvus kavəs kavənəsan sor sāra tovin laga</l>
-          <l n="d">tan svīnən ṅhulun iṅ raṇāṅgana hanāmetāśrayāṅdohana</l>
+          <l n="b">sojar vīra surāpsara<!-- surāpṣara edp --> kita kabeh ndin dāya dentāpraṅa</l>
+          <l n="c">brahmā<!-- brāhmā edp --> viṣṇu huvus kavəs kavənəsan sor sāra tovin laga</l>
+          <l n="d">tan svīnən ṅhulun iṅ raṇāṅgana hanāmetāśrayāṅdohana</l><!-- problem with hana? -->
         </lg>
         <lg xml:id="Smaradahana_02.14" n="14">
-          <l n="a">yadyan hyaṅ parameśvarāstu śaraṇā tanpāṅgəgə̄ sañjata</l>
-          <l n="b">āpan saṅgraha riṅ samastabhuvanālaṅgəṅ təḍuh niścala</l>
-          <l n="c">ṅhiṅ rūpādi viśeṣa pañcaviṣayāṅde rāga vahyendriya</l>
+          <l n="a">yadyan hyaṅ parameśvarāstu śaraṇā tan paṅgəgə̄ sañjata</l>
+          <l n="b">āpan saṅgraha riṅ samastabhuvanālaṅgəṅ təḍuh niścala</l><!-- āpan saṅharaniṅ?-->
+          <l n="c">ṅhiṅ rūpādiviśeṣa pañcaviṣayāṅde rāga vāhyendriya</l>
           <l n="d">tan vyāpāra manahnirerika kabeh kevalya nirgrāhaka</l>
         </lg>
         <lg xml:id="Smaradahana_02.15" n="15">
-          <l n="a">mojar saṅ maṅaran vr̥haspati: nihan topāya devādhipa</l>
-          <l n="b">saṅ hyaṅ kāma sira prihən səkuṅanāmbək radvijan yogyana</l>
+          <l n="a">mojar saṅ maṅaran vr̥haspati nihan topāya devādhipa</l>
+          <l n="b">saṅ hyaṅ kāma sira prihən səkuṅanāmbək ra dvijan yogyana</l>
           <l n="c">konəntāmanaheṅ raras hati maran rāgī bhaṭārālulut</l>
           <l n="d">paṅgil saṅ hyaṅ umā kakūṅananirāṅiṅkiṅ səḍəṅ kanyakā</l>
         </lg>
         <lg xml:id="Smaradahana_02.16" n="16">
           <l n="a">yapvan sampun aśukraśonita sirāpaṅgih paḍāṅgə̄ṅ smara</l>
-          <l n="b">vehən pvaṅ səkar aṅlaṅit maṅiḍama śrī parvatī prārthanan</l>
-          <l n="c">ṅkā ta vehən anona vāhana salahrūpā dvipendrānana</l>
+          <l n="b">vehən pvaṅ səkar <app><lem wit="#edp">aṅlaṅit</lem><note>Emend iṅ laṅit? eṅ laṅit? (Zoetmulder)</note></app>
+            <!--
+              Sum 29.10a abhrā lvir səkar iṅ laṅit braja katon paməvəh i supit iṅ sahiṅ-sahiṅ
+              Sum 179.3c vvantən luṅgah ikâṅavetan amənər səkar ika kadi kəmbaṅ iṅ laṅit
+              BY <13.04b> sumyuk taṅ rudhirâparəṅ lavan urāni səkarira vatək ṛṣîṅ laṅit
+                -->
+             maṅiḍama śrī pārvatī prārthanan</l>
+          <l n="c">ṅkā tā vehən anona vāhana salahrūpā dvipendrānana</l>
           <l n="d">rodrārudranikeṅ upāya vulikən petən pagantākəna</l>
         </lg>
         <lg xml:id="Smaradahana_02.17" n="17">
           <l n="a">nāhan sāra vuvus vr̥haspati yinogyan de hyaṅ indrāṅaləm</l>
           <l n="b">āpan paṇḍita siddhavākya pinatih deniṅ vatək devatā</l>
           <l n="c">tovin śabdaka vedapāraga vəkasniṅ nīti riṅ kahyaṅan</l>
-          <l n="d">vruh riṅ śāstra kuṭāramantra ṅuniveh cārakya kāmandaka</l>
+          <l n="d">vruh riṅ śāstra kuṭāramantra ṅuniveh <app><lem>cāṇakya</lem><rdg wit="#edp">cārakya</rdg></app> kāmandaka</l>
         </lg>
         <lg xml:id="Smaradahana_02.18" n="18">
           <l n="a">saṅsiptan vuvusən mareṅ smarasabhāṅgəh saṅ vatək devatā</l>
@@ -324,37 +290,40 @@
           <l n="d">hintən gātrani gopuranya lumarap sākṣāt kəḍapniṅ kilat</l>
         </lg>
         <lg xml:id="Smaradahana_02.19" n="19">
-          <l n="a">bapranyāṅililan karaṅ tinara vaṅ līlān paniñjo tavaṅ</l>
+          <l n="a">bapranyāṅililan karaṅ tinaravaṅ līlān paniñjo tavaṅ</l>
           <l n="b">ləṅləṅ deni ruhurnya lāgi hinarasniṅ cāmarāriṅguṅan</l>
-          <l n="c">sə̄ṅniṅ candra siniddhikāra ginave bvat rāga suddhāputih</l>
+          <l n="c">sə̄ṅniṅ candra siniddhikāra ginave bvat rāga <app><lem type="norm">śuddhāputih</lem><rdg wit="#edp">suddhāputih</rdg></app></l>
+          <!-- Sum 42.7d  mavvat rāga vilāpa cihna niṅ akūṅ alah aləh akirim-kirim ṭikā
+          CK viṣaya si tama humvat rāga vr̥ddhi,
+          -->
           <l n="d">tapvan marma hatəpnya megha minirahniṅ sandhyakālānipis</l>
         </lg>
         <lg xml:id="Smaradahana_02.20" n="20">
-          <l n="a">parpātniṅ vataṅan təkeṅ alunalun mās jāti norāsəlat</l>
-          <l n="b">tan pendah rəm apiṇḍa tambaki <app><lem type="norm">gaḍuh</lem><rdg>guḍuh</rdg></app>nyāṅde hulapniṅ mulat</l>
-          <l n="c">sinvamniṅ kayu kalpavr̥kṣa tinatākumrām vuvuṅnyāmirah</l>
+          <l n="a">parpātniṅ vataṅan təkeṅ alun-alun mās jāti norāsəlat</l>
+          <l n="b">tan pendah rəm apiṇḍa tambaki <app><lem type="norm">gaḍuh</lem><rdg wit="#edp">guḍuh</rdg></app>nyāṅde hulapniṅ mulat</l>
+          <l n="c">sinvamniṅ kayu kalpavr̥kṣa tinatākumram vuvuṅnyāmirah</l>
           <l n="d">humbutniṅ suradāru vastrani patākanyāṅəpər kāṅinan</l>
         </lg>
         <lg xml:id="Smaradahana_02.21" n="21">
-          <l n="a">tanpa mvas maṇicandranīla rinəmək saśrī natarnyākiris</l>
+          <l n="a">tanpa mvas maṇicandranīla<!-- em. maṇi sendranīla? --> rinəmək saśrī natarnyākiris</l>
           <l n="b">aṅlīlā kayu pārijāta ri tamanyānraṅ pralambāvilət</l>
           <l n="c">kəmbaṅnyāñjrah anekavarṇa sinavuṅniṅ jaṅga jambat mure</l>
           <l n="d">sumrāk rūmni rurūnya lāgi pinaləhniṅ kasturi mvaṅ jənu</l>
         </lg>
         <lg xml:id="Smaradahana_02.22" n="22">
-          <l n="a">lor vetanya gunuṅgunuṅ marakatāṅde kūṅ cinaṇḍyāruhur</l>
-          <l n="b">vvainyāhniṅ sumirat mareṅ avaṅavaṅ saṅke pucaknyāṅadəg</l>
-          <l n="c">hīshīsnyāniramiṅ tahən satumuvuh ṅkāne taman hyaṅ smara</l>
-          <l n="d">pakṣinyārja majīvajīva sumahur harṣe kukusniṅ bañu</l>
+          <l n="a">lor vetanya gunuṅ-gunuṅ marakatāṅde kūṅ cinaṇḍyāruhur</l>
+          <l n="b">vvainyāhniṅ sumirat mareṅ avaṅ-avaṅ saṅke pucaknyāṅadəg</l>
+          <l n="c">hīs-hīsnyāniram iṅ tahən satumuvuh ṅkāne taman hyaṅ smara</l>
+          <l n="d">pakṣinyārja majīva-jīva sumahur harṣe kukusniṅ bañu</l>
         </lg>
         <lg xml:id="Smaradahana_02.23" n="23">
-          <l n="a">tanṅeh yan vuvusən laṅə̄ni pakəkəsniṅ kāmadevāgr̥ha</l>
+          <l n="a">tanṅeh yan vuvusən laṅə̄ni pakəkəsniṅ kāmadevagr̥ha</l>
           <l n="b">sakvehniṅ hyaṅ alah maṅə̄ təkapikāṅ nyāsātiśobhāhaləp</l>
-          <l n="c">āpan ṅke sariniṅ manohara vəkasniṅ tatva liṅ saṅ kavi</l>
+          <l n="c">āpan ṅke sariniṅ manohara vəkasniṅ tattva liṅ saṅ kavi</l>
           <l n="d">vvitniṅ śāsana kāmatantra tinəṅət pinrākr̥tāṅde kathā</l>
         </lg>
       </div>
-      <div type="canto" rend="met" met="LLGLGLLLGLLLLLLGLGLG" n="2" xml:id="Smaradahana_03">
+      <div type="canto" rend="met" met="--+-+---+------+-+-=" n="2" xml:id="Smaradahana_03">
         <lg xml:id="Smaradahana_03.01" n="1">
           <l n="a">ararəm hyaṅ indra ḍatəṅ iṅ smarabhavana lavan vatək r̥ṣi</l>
           <l n="b">makaradhvajākrama sumaṅgraha vihikan i tiṅhaliṅ tamuy</l>
@@ -492,11 +461,11 @@
         <lg xml:id="Smaradahana_04.04" n="4">
           <l n="a">paṅdeniṅ daśalokapāla sahajāmujimuji guṇakāyaniṅ hulun</l>
           <l n="b">paṅgə̄ṅ karya bhaṭāra cakra karuhun paṅasihasihiraṅ vatək r̥ṣi</l>
-          <l n="c">sambandhanya bhaṭāranātha jənək iṅ tapa tan atutur iṅ samāgama</l>
+          <l n="c">sambandhanya bhaṭāra nātha jənək iṅ tapa tan atutur iṅ samāgama</l>
           <l n="d">muṅgv iṅ meru ṣaḍaṅga yoga sinamāhitaniran asamādhi nityaśa</l>
         </lg>
         <lg xml:id="Smaradahana_04.05" n="5">
-          <l n="a">ndā tan lyan <app><lem wit="#EdP">hinamər ruməñcəm</lem><rdg>hinamə̄ ruməñcəma</rdg></app> raras hatiniran abhiyoga riṅ brata</l>
+          <l n="a">ndā tan lyan <app><lem wit="#edp">hinamər ruməñcəm</lem><rdg>hinamə̄ ruməñcəma</rdg></app> raras hatiniran abhiyoga riṅ brata</l>
           <l n="b">aṅhiṅ sañjata rāka rakryan inadr̥śya rumimaṅa bhaṭāra śaṅkara</l>
           <l n="c">tan hyaṅ manmatha paṅhiḍəpku rari yan luputa sira linakṣan iṅ hulun</l>
           <l n="d">rapvan siddha pakon śatakratu kr̥tajña rumuraha tapa hyaṅ īśvara</l>
@@ -672,7 +641,7 @@
           <l n="d">ceṅniṅ curiṅ pilipilih sajiniṅ jahat ken</l>
         </lg>
       </div>
-      <div type="canto" rend="met" met="LLLLLLGGGGGLLLLG" n="5" xml:id="Smaradahana_06"> 
+      <div type="canto" rend="met" met="giriśa" n="5" xml:id="Smaradahana_06"> 
         <lg xml:id="Smaradahana_06.01" n="1">
           <l n="a">sahaja suməpaṅ endah sə̄ṅniṅ parvata humaraṅ</l>
           <l n="b">sahidu mirah asəṅhit kosap deniṅ aṅarəki</l>
@@ -951,7 +920,7 @@
         </lg>
         <lg xml:id="Smaradahana_09.02" n="2">
 	  <l n="a">saṅsiptāvuṅu sira saṅ səḍəṅ kəneṅ tvas</l>
-	  <l n="b">kontā riṅ viṣaya haneṅ <app><lem wit="#EdP">manah humaṅgəh</lem><rdg>manā humaṅgəh</rdg></app></l>
+	  <l n="b">kontā riṅ viṣaya haneṅ <app><lem wit="#edp">manah humaṅgəh</lem><rdg>manā humaṅgəh</rdg></app></l>
 	  <l n="c">rodrāṅrəs dinavutireṅ samādhirāja</l>
 	  <l n="d">pyah tībrā təkan i ḍaḍā hilīnikāṅ luh</l>
 	</lg>
@@ -1006,7 +975,7 @@
         <lg xml:id="Smaradahana_09.11" n="11">
           <l n="a">kāla hyaṅ śiva maṅadəg vivr̥ddhadeha</l>
           <l n="b">yatna hyaṅ smara maṅave ri saṅ hyaṅ indra</l>
-          <l n="c">doniṅ syaṅ haturakəne bhaṭāranātha</l>
+          <l n="c">doniṅ syaṅ haturakəne bhaṭāra nātha</l>
           <l n="d">āpan maṅkana paṅucap hyaṅ indra ṅūni</l>
         </lg>
         <lg xml:id="Smaradahana_09.12" n="12">
@@ -1737,7 +1706,7 @@
         </lg>
         <lg xml:id="Smaradahana_21.05" n="5">
           <l n="a">eṅgal təmən yan mamituhva māsku</l>
-          <l n="b">ndah tūtakən śāpa bhaṭāranātha</l>
+          <l n="b">ndah tūtakən śāpa bhaṭāra nātha</l>
           <l n="c">paṅheranantālavasiṅ haneṅ rāt</l>
           <l n="d">svāmīnta maṅjanma katəmva denta</l>
         </lg>
@@ -1890,7 +1859,7 @@
           <l n="d">kuṅkaṅnyāṅaruhi prapañca kadi medi moyutiṅ akūṅ</l>
         </lg>
         <lg xml:id="Smaradahana_23.04" n="4">
-          <l n="a">ndan kapvāvul i kārya himbaṅika tan hanāvaravarah</l>
+          <l n="a">ndan kapvāvul i kārya himbaṅika tan hanāvara-varah</l>
           <l n="b">kayvanyān vinəgilvəgilniṅ alarāpi tan vruh atəṅət</l>
           <l n="c">priṅ nirvāmata posikiṅ vuluh aśabda tan hana mulat</l>
           <l n="d">aṅhiṅ luṅgahikāṅ vanājar i vəkasta māsih atuduh</l>
@@ -2386,7 +2355,7 @@
           <l n="a">hənəṅakəna bhaṭārī śailaputrīn kavoran</l>
           <l n="b">tucapa sahananiṅ hyaṅ pāḍa yatnān panīti</l>
           <l n="c">təkapaniṅ amikāre garbha saṅ vāhu kesyan</l>
-          <l n="d">maran avətu salah lvir yeka <app><lem wit="#EdP">pinrih hinə̄mhə̄m</lem><rdg>pinrī hinə̄mhə̄m</rdg></app></l>
+          <l n="d">maran avətu salah lvir yeka <app><lem wit="#edp">pinrih hinə̄mhə̄m</lem><rdg>pinrī hinə̄mhə̄m</rdg></app></l>
         </lg>
 	<lg xml:id="Smaradahana_29.02" n="2">
           <l n="a">atutur i samayāniṅ daitya nīlāṅga dhīran</l>
@@ -2496,7 +2465,7 @@
           <l n="a">liṅ saṅ daityādhipa parəṅ umijil</l>
           <l n="b">uśvāsādrəs bhrukuṭinira tikəl</l>
           <l n="c">muntab taṅ krodha ri hati dumilah</l>
-          <l n="d">śīghrān <app><lem wit="#EdP">mojar ri</lem><rdg>mojā ri</rdg></app> balanira kabeh</l>
+          <l n="d">śīghrān <app><lem wit="#edp">mojar ri</lem><rdg>mojā ri</rdg></app> balanira kabeh</l>
         </lg>
         <lg xml:id="Smaradahana_30.05" n="5">
           <l n="a">sakvehniṅ daityabala paḍa masə̄</l>
@@ -2655,7 +2624,7 @@
         <lg xml:id="Smaradahana_32.09" n="9">
 	  <l n="a">māsih saṅ hyaṅ aveh vara karuṇa</l>
           <l n="b">ai sakvehta surāpsara humatur</l>
-          <l n="c">putraṅkvīki <app><lem wit="#EdP">vavan</lem><rdg>vəvə̄</rdg></app> tuli vulati</l>
+          <l n="c">putraṅkvīki <app><lem wit="#edp">vavan</lem><rdg>vəvə̄</rdg></app> tuli vulati</l>
           <l n="d">astu bhraṣṭa musuhta təkap ike</l>
 	</lg>
         <lg xml:id="Smaradahana_32.10" n="10">
@@ -2735,7 +2704,7 @@
         <lg xml:id="Smaradahana_33.11" n="11">
           <l n="a">hyaṅ dhanapāla puṣpaka vimāna havanira tumūt</l>
           <l n="b">mās minatan pirak dhvajanirāniganiga jinajar</l>
-          <l n="c">guhyakaśūra lokakəmitan guṇagaṇa <app><lem wit="#EdP">pinatik</lem><rdg>pinəṭik</rdg></app></l>
+          <l n="c">guhyakaśūra lokakəmitan guṇagaṇa <app><lem wit="#edp">pinatik</lem><rdg>pinəṭik</rdg></app></l>
           <l n="d">tanpa balik halāgəməm akuñci pəpət apəpətan</l>
         </lg>
         <lg xml:id="Smaradahana_33.12" n="12">
@@ -2767,7 +2736,7 @@
         <lg xml:id="Smaradahana_34.01" n="1">
           <l n="a">sampun saṅ hyaṅ surendrāgəlar asirasiran mabyūha humarək</l>
           <l n="b">lāvan sakvehnikāṅ deva tumihaṅ atumaṅ təṅranya humabət</l>
-          <l n="c">ton taṅ daityānarambah prasama kadi gəlap <app><lem wit="#EdP">krūrakrak kumupak</lem><rdg>krūrākrak umupak</rdg></app></l>
+          <l n="c">ton taṅ daityānarambah prasama kadi gəlap <app><lem wit="#edp">krūrakrak kumupak</lem><rdg>krūrākrak umupak</rdg></app></l>
           <l n="d">kapvāṅambul parəṅ ghūrṇita paḍa gumuluṅ lāvan gaja ratha</l>
         </lg>
         <lg xml:id="Smaradahana_34.02" n="2">
@@ -2813,7 +2782,7 @@
           <l n="d">len taṅ rodrāmupak taṇḍasiṅ asura katūt nāḍinya saḍəpa</l>
         </lg>
         <lg xml:id="Smaradahana_34.09" n="9">
-          <l n="a">glānaṅ vidyādharavrəg silih <app><lem wit="#EdP">idək kapədək</lem><rdg>idək apəḍək</rdg></app> kāhrət kapipitan</l>
+          <l n="a">glānaṅ vidyādharavrəg silih <app><lem wit="#edp">idək kapədək</lem><rdg>idək apəḍək</rdg></app> kāhrət kapipitan</l>
           <l n="b">abyūran keṅgut olah binəsu ginurumuṅ təṅgəknya pinəgat</l>
           <l n="c">kīrṇākveh taṅ katimpal taṅanika sinavat bāhunya tumibā</l>
           <l n="d">dudvāṅohan hinoran sinakitan inirit pādanya ginalit</l>
@@ -2871,7 +2840,7 @@
         <lg xml:id="Smaradahana_35.03" n="3" met="LLLLGLLLLLLGLLLLLLGLLLLLLG">
           <l n="a">pəjah ananāṅ vivudhabala kalaṅkuṅan alah asakit mati kapatəṅahan</l>
           <l n="b">gaja ratha śīrṇa vinugari ḍinəṇḍa maguliṅan aṅohan aməkasi hurip</l>
-          <l n="c">papupuli vaṅkayika kadi gunuṅ hana sura patitān <app><lem wit="#EdP">pakanin</lem><rdg>pakani</rdg></app> katitihan</l>
+          <l n="c">papupuli vaṅkayika kadi gunuṅ hana sura patitān <app><lem wit="#edp">pakanin</lem><rdg>pakani</rdg></app> katitihan</l>
           <l n="d">curiga curik makaciriṅih ikāṅ galah avaja katiṅgal anəsəki raṇa</l>
         </lg>
         <lg xml:id="Smaradahana_35.04" n="4" met="LLLLGLLLLLLGLLLLLLGLLLLLLG">
@@ -2886,7 +2855,7 @@
           <l n="a">sampunyān kahalālayū girigirin sakvehnikāṅ hyaṅ kabeh</l>
           <l n="b">ṅəsṅə̄sən maluye raṇāṅganasabhā kapvālupeṅ sañjata</l>
           <l n="c">puṅgəl taṇḍa bhaṭāra durmukha katūb deniṅ hyaṅ āvrəg bubak</l>
-          <l n="d">aṅriṅraṅ kadi <app><lem wit="#EdP">nīradan</lem><rdg>nāradān</rdg></app> kasuririṅ tambis kəneṅ jampariṅ</l>
+          <l n="d">aṅriṅraṅ kadi <app><lem wit="#edp">nīradan</lem><rdg>nāradān</rdg></app> kasuririṅ tambis kəneṅ jampariṅ</l>
         </lg>
         <lg xml:id="Smaradahana_36.02" n="2">
           <l n="a">saṅ hyaṅ rota vināyakāmrih aṅadəg yan ton ikāṅ hyaṅ kabeh</l>
@@ -2910,7 +2879,7 @@
           <l n="a">lvir saṅ rvān papagut sudhīra suməgut gutgūtən aṅhrik masə̄</l>
           <l n="b">kapvāḍəṇḍa ḍinəṇḍa tañ jrih arukət kapvārəbut sañjata</l>
           <l n="c">akveh astra ləpas huvus hana tikəl tīkṣṇāsakit denira</l>
-          <l n="d">sākṣāt mr̥tyu jugān <app><lem wit="#EdP">padvandva</lem><rdg>padandva</rdg></app> səḍəṅiṅ saṅhārakālādbhuta</l>
+          <l n="d">sākṣāt mr̥tyu jugān <app><lem wit="#edp">padvandva</lem><rdg>padandva</rdg></app> səḍəṅiṅ saṅhārakālādbhuta</l>
         </lg>
         <lg xml:id="Smaradahana_36.06" n="6">
           <l n="a">saṅ hyaṅ durmukha kātarāmijilakən kālāgnirudrānaput</l>
@@ -3052,7 +3021,7 @@
           <l n="a">atītan alavas piraṅ yuga bhaṭāra sedampati</l>
           <l n="b">gənəp gaṇakumāra putra parameśvareṅ kahyaṅan</l>
           <l n="c">makin kavilət apriyakrama bhaṭāra sarvakriya</l>
-          <l n="d">kasiddhyaniṅ asādhya tatva siran ardhanarīśvara</l>
+          <l n="d">kasiddhyaniṅ asādhya tattva siran ardhanarīśvara</l>
         </lg>
       </div>
       <div type="canto" rend="met" met="vasantatilaka" n="38" xml:id="Smaradahana_39">
