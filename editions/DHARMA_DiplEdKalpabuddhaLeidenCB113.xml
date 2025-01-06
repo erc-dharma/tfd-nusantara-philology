@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Kalpabuddha CB113</title>
+            <title type="sub">Digital Diplomatic Edition</title>
+            <editor ref="part:dacc">
+                    <name>Dewa Ayu Carma Citrawati</name>
+            </editor>
+            <respStmt>
+               <resp>intellectual authorship of edition</resp>
+               <persName ref="part:dacc">
+                  <persName>
+                     <name>Dewa Ayu Carma Citrawati</name>
+                  </persName>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Hamburg</pubPlace>
+            <idno type="filename">DHARMA_DiplEd KalpabuddhaLeidenCB113</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
+                            a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s)-->
+               </licence>
+            </availability> 
+            <date from="2024" to="2025">2024-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Leiden</settlement>
+                  <institution>University Library (UB)</institution>
+                  <repository>Paper</repository>
+                  <idno>CB 113</idno>
+               </msIdentifier>
+               <msContents>
+                                <!--the msContents isn't mandatory -->
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                     <p>Leiden University Library CB 113: a transcript in Balinese script made on behalf of C.C. Berg in 1929 from a lontar in the collection of Jlantik. The present text is found on folios 22r through 25r of the original lontar as indicated in the transcript. Photographed by Andrea Acri in 2011</p>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                  <p>
+                  </p>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+                    <!-- Part mandatory -->
+            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
+                    <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+         </editorialDecl>
+         <samplingDecl>
+                    <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+            <p/>
+         </samplingDecl>
+         <!--schemaRef  will need to be added once a  official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+                <!-- choose the language(s) of your text, remove the others -->
+            <language ident="kaw-Latn">Old Javanese, Balinese</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:dacc" when="2024-12-25" status="draft">Updating the template</change>
+         <change who="part:dacc" when="2024-12-26" status="draft">Initial encoding of the edition (first folia)</change>
+      </revisionDesc>
+      <!-- HandDesc: 
+            (1) layar is in Balinese position
+            (2) dh and ḍ seem to be used without any distinction, nor are any distinctions made between sa śa and ṣa-->
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-ban">
+        <body>
+            <ab>
+            <!--image_0643-->  
+      <pb n="22v" xml:id="folio22v"/> 
+         <lb n="17"/>nta, byakta Ilaṁ kleśanya, Ityomaśarīra<g type="ddandaOrnate"/><g type="circleCurve"/><g type="ddandaOrnate"/> nihan hajinira sira bha
+         <lb n="18"/><milestone unit="folio-note" n="22b"></milestone>ṭara<g type="long-line"/>hyaṁ budḍa, kayatnakna mahopadeśa Ika:, paṅe:nsa lvirniṁ mantra, bhaṭara
+         <lb n="19"/>budḍa sira hana riṁ maha: pralaya, dumadi havaknira, sira ta matmahan· bhaṭara pa
+         <lb n="20"/>ñcatathagata, śarīra nama bheda, lapva hapadudvan· rūpa:nira, bodya:gri
+         <!-- image_0644 -->
+      <pb n="23r" xml:id="folio23r"/>
+         <note type="pencil-top-right">17</note>
+         <lb n="1"/>mudra: sira, sasvataḥjña:nanira, cakra sañjatanira, riṁ sahavati ṅaraniṁ kaḍa
+         <lb n="2"/>tvanira, siṅha:tutuṅgaṅanira, sira bharali satvabajri, sira bharali ḍarmmabajri, 
+         <lb n="3"/>sira bharali kar:mmaba:jri, sira ta sahadevī hamarivr̥tta ri sira, muṅguḥ pva sira riṁ 
+         <lb n="4"/>śarīra, ri jroniṁ pusuḥpusuḥ, pinakasthananira<g type="ddandaOrnate"/>sira bhaṭa:ra:kṣobhya, mu
+         <lb n="5"/><milestone unit="folio-note" n="23 a"></milestone>ṅguḥ riṁ pūrvva:, kr̥ṣṇa varṇnanira, sira bhara:li locana devīnira, hūm̐,<g type="long-line"/>mantranira
+         <lb n="6"/>, bhūḥsparśśa:na mudra: sira, Aḍarmmajña:na sira, bajra sañjatanira, riṅ abhirati 
+         <lb n="7"/>ṅaraniṁ kasvargganira, gajaḥ tutuṅganira, bhaṭa:ra bajrara:ja, bhaṭa:ra ba
+         <lb n="8"/>jrara:ga, hyaṁ bajrasa:ḍu, bhaṭa:ra ba:jraḍara:di, saṅ amarivr̥tta ri sira, mu
+         <lb n="9"/>ṅguḥ pva sira riṁ śarīra, ri jroniṁ paruparu pinakasthananira.<g type="ddandaOrnate"/>sira bhaṭa:ra ratna
+         <lb n="10"/>sambhava, muṅguḥ riṁ dakṣiṇa, pita varṇnanira, sira bharali mamaki devīnira, tram̐, 
+         <lb n="11"/>mantranira, samatajña:na sira, kaphala sañjatanira, ri jroniṁ limpa pinakastha
+         <lb n="12"/>nanira<g type="ddandaOrnate"/>sira bhaṭa:ra hamittabha, muṅguḥ ri paścima, rakta varṇnanira, sira bharali pa
+         <lb n="13"/>ṇḍaravasini devīnira, hriḥ, mantranira, pratyavekṣaṇa jña:na sira, ḍya:namudra:
+         <lb n="14"/> sira,<g type="long-line"/>sañjatanira, riṁ sukavati kasvargganira, sira bharali bajraḍarmma, 
+         <lb n="15"/>bhaṭa:ra bajratikṣṇa:, bhaṭa:ra bajrahetu, bhaṭa:ra bajrabha:ṣa, saṅ amarivr̥tta
+         <lb n="16"/> ri sira, muṅguḥ pva sira riṁ śarīra, ri jro hati pinakasthananira<g type="long-line"/>sira bhaṭa:ra ha
+         <lb n="17"/>moghasidḍi, muṅguḥ riṁ hūttara, viśvavarṇna sira, sira bharali tara devīnira, Aḥ,
+         <lb n="18"/>mantranira, Abha:mudra: sira, kr̥tanūsthanajña:nanira, riṁ kusumite ṅaraniṁ kasvargga
+         <lb n="19"/>nira, garuḍa tutuṅgaṅanira, sira bhaṭa:ra bajraka:rmma, bhaṭa:ra bajrara:kṣa, bhaṭa:ra 
+         <lb n="20"/>bajrayakṣa, bhaṭa:ra bajrasandi, saṅ amarivr̥tta ri sira, muṅguḥ pva sira ri śarīra, riṁ
+          <!-- image_0645 -->
+         <pb n="24v" xml:id="folio24v"/>
+           <note type="pencil-top-right">18</note>
+         <lb n="1"/>jro hamprū pinakasthananira<g type="ddandaOrnate"/>kunəṁ pva bhaṭa:ra pañcatathagata, muliḥ riṁ lo
+         <lb n="2"/><milestone unit="folio-note" n="24 a"></milestone> kaḍatuni<g type="long-line"/>ra, hana ri śarīranta sira maṅke, sira ta: tmahan· pañcajña:na, pañca
+         <lb n="3"/>jña:na ṅaranya, cakṣuḥ, śrota, graṇa, jihva:, hr̥daya <g type="Ddandaornate"/>cakṣu, ṅa, mata. śro
+         <lb n="4"/>ta, ṅa, taliṅa. graṇa, ṅa, Iruṁ. jīhva:, ṅa, caṅkəm·. hr̥daya, ṅa, hati. ya
+         <lb n="5"/>tika: sinaṅguḥ pañcendriya, ṅa. kunaṁ ta devataniṁ pañcendriya. ṅa, bhaṭa:ra:kṣo
+         <lb n="6"/>bhya, muṅguḥ riṁ mata. bhaṭa:ra ratnasambhava:, muṅguḥ riṁ taliṅa. bhaṭa:ra mittabha, muṅgviṁṅ iruṁ
+         <lb n="7"/>.bhaṭa:ra hamoghasidḍi, muṅguḥ riṁ caṅkəm· sira pinakapaṁrasa:. bhaṭa:ra vairoca:na
+         <lb n="8"/><milestone unit="folio-note" n="24 b"></milestone>, muṅguḥ ri pusuḥ pusuḥ, sira pinaka:ṅənaṅən·, Irika ta saha devīnira sovaṁ 
+         <lb n="9"/>sovaṁ, yatika: sinaṅguḥ saṁ hyaṁ pañca<g type="long-line"/>:tma ṅaranya, pinaka:vak·<g type="Ddandaornate"/>ka:lpa
+         <lb n="10"/>bodḍa Iti, paramarahasya<g type="DdandaOrnate-circleCurve-DdandaOrnate-long-line"/>
+         <lb n="11"/><milestone unit="folio-note" n="25 a"></milestone> Adva:yajña:na<g type="space"/><note type="image">drawing of a face</note><g type="space"/>Adva:ya
+         <lb n="12"/>sūryya:rūpa: I<g type="space"/><note type="image">drawing of a face</note><g type="space"/>candrarūpa:
+         <lb n="13"/>kaṅavak·, ya<g type="space"/><note type="image">drawing of a face</note><g type="space"/>Ikaṅ avak·
+         <lb n="14"/>sūryya:smr̥tya:<g type="space"/><note type="image">drawing of a face</note><g type="space"/>ya candra:smr̥tya:rane.
+         <lb n="15"/>rane<g type="space"/>guruṁ gu<g type="space"/>ruṅa· stha:na
+         <lb n="16"/><g type="ddandaOrnate"/>vyaktinyan· patmu riṁ ka:ṇṭabhu, Ikaṁ vindvaneṁ kaṇṭamula:, ya maha:praṇava Ika:, 
+         <lb n="17"/>Umiṅsor sumuṁsaṁ riṁ lariṁ hr̥daya: ṅadəg·, laṭa:praṇava Om̐ ka:ra,<note type="image"></note>
+         <lb n="18"/>ma:ḍya ya rumiṇḍuhur paranya, Ayva tan prayatna, pan tan dadi pinuraṁpuraṁ na:da:niran·,
+         <lb n="19"/>sanugraha saṁ hyaṁ kaśūnyan· juga: tūtakna paraniramput·, tka: Iriṅən·, yan mukṣa
+         <lb n="20"/>ṅaḍaḥ mvaṁ riṅ ūrdḍa:, tan pama:rgga kunaṁ<g type="ddandaOrnate"/><g type="circleCurve"/><g type="ddandaOrnate"/><g type="long-line"/>
+      </ab>
+    </body>
+  </text>
+</TEI>
