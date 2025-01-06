@@ -2,13 +2,13 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kutaraManava" type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kutaramanava" type="edition">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Kuṭāra Mānava</title>
+				<title type="main" xml:lang="kaw-Latn">Kuṭāra Mānava</title>
 				<!--Change the title of the file with the name of your text-->
-				<title type="sub">Digital Critical Edition of...</title>
+				<title type="sub">Digital Critical Edition and Translation of an Old Javanese Penal Code</title>
 				<editor ref="part:tilu">
 					<forename>Timothy</forename>
 					<surname>Lubin</surname>
@@ -23,6 +23,19 @@
 				<respStmt>
 					<!-- repeat the respStmt when necessary -->
 					<resp>creation of the file</resp>
+					<!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+					<persName ref="part:argr">						<!-- update the id -->
+						<forename>Arlo</forename>						<!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+						<surname>Griffiths</surname>
+					</persName>
+					<persName ref="part:tilu">						<!-- update the id -->
+						<forename>Tim</forename>						<!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+						<surname>Lubin</surname>
+					</persName>
+				</respStmt>
+				<respStmt>
+					<!-- repeat the respStmt when necessary -->
+					<resp>encoding of the edition</resp>
 					<!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
 					<persName ref="part:nuha">						<!-- update the id -->
 						<forename>Nurmalia</forename>						<!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
@@ -55,19 +68,9 @@
 								<repository>Lontar</repository>
 								<idno>Or. 2215</idno>
 							</msIdentifier>
-						</msDesc>
-					</witness>
-					<witness xml:id="le2">
-						<!-- Give your witness an unique identifier -->
-						<abbr type="siglum">B</abbr>
-						<!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-						<msDesc>
-							<msIdentifier>
-								<settlement>Leiden</settlement>
-								<institution>University Library (UB)</institution>
-								<repository>Lontar</repository>
-								<idno>Or. 6203a</idno>
-							</msIdentifier>
+							<physDesc>
+								<p>L.Or. 2215, a Balinese palm-leaf manuscript housed in the Leiden Library, served as the primary manuscript (referred to as "I") in Jonker's edition. According to Jonker, the manuscript lacks a title, with the only external identifier being the word "agama" inscribed on its outer surface. No additional information about its date of composition or copying is available, and the text concludes abruptly mid-sentence. The manuscript consists of 71 palm leaves, each bearing either three or four lines of text. Despite being in relatively good condition overall, it exhibits minor damage in a few areas. However, it is riddled with errors and omissions, with the quality of the handwriting noticeably deteriorating toward the end.</p>
+							</physDesc>
 						</msDesc>
 					</witness>
 					<witness xml:id="lo1">
@@ -82,21 +85,8 @@
 								<idno>BL Add. 12277</idno>
 							</msIdentifier>
 							<physDesc>
-								<p>It is written on palm leaves, and lacks a title; it does not mention a place or date of transcription, and abruptly ends in the middle of a sentence. Outside, it says: Cuntara Manava Sastra, a paraphrase of the Institutes of Manu, in the Kawi or ancient Javanese language. Presented to J. Crawfurd Esq. by the Rajah of Billing 1814. The manuscript is completely intact and very clearly written</p>
+								<p>The British Museum manuscript, cataloged as No. 12277 Ad., referred to as "II" in Jonker's edition, is written on palm leaves and, like the Leiden manuscript, lacks a title, as well as any reference to the place or date of its transcription. The text concludes abruptly in the middle of a sentence. An external inscription identifies it as Cuntara Manava Sastra, described as a paraphrase of the Institutes of Manu in the Kawi (Old Javanese) language. It includes the note: "Presented to J. Crawfurd Esq. by the Rajah of Billing, 1814." The manuscript is entirely intact and remarkably clear in its handwriting. It bears a striking resemblance to the Leiden manuscript, with the readings of the two aligning almost perfectly.</p>
 							</physDesc>
-						</msDesc>
-					</witness>
-					<witness xml:id="lo2">
-						<!-- Give your witness an unique identifier -->
-						<abbr type="siglum">Y</abbr>
-						<!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-						<msDesc>
-							<msIdentifier>
-								<settlement>London</settlement>
-								<institution>British Library (BL)</institution>
-								<repository></repository>
-								<idno>BL Add. 12326</idno>
-							</msIdentifier>
 						</msDesc>
 					</witness>
 					<witness xml:id="ma1">
@@ -804,11 +794,11 @@ riṅ voṅ aṅhəbaṅ-həbaṅ, asaṅgup aveha pisis, dadi pasusuratan, huvu
 
 <p n="151"> 
 riṅ voṅ ahutaṅ tan paveh kalāntara putra mariṅ apihutaṅ, anikəl piṅro uga hutaṅe, savuse anikəl piṅro, tan hana panahure, riṅ voṅ maṅkana anutakəna hutaṅe, dadi kavula; alavas dene anutakən dadi kavula tan kavaśa dene anambut-gaveniṅ pr̥dana, vəkasan miṅgat sakiṅ gustine, katəmu manih deniṅ <app>
-<lem>pr̥dana</lem>
-<rdg type="norm">pradhana</rdg>
+<lem type="norm">pradhana</lem>
+<rdg wit="edj">pr̥dana</rdg>
 </app>, aveha pavadal gave salavase tan aṅlakoni gaveniṅ <app>
 <lem>pr̥dana</lem>
-<rdg type="norm">pradhana</rdg>
+<rdg wit="edj">pradhana</rdg>
 </app>, vəkasan mati riṅ sukuniṅ gusti, anake anahura hutaṅ anikəl piṅro.</p>
 
 <p n="152"> 
@@ -957,7 +947,7 @@ riṅ kbo sapi agalak asiṅhat iṅ voṅ tan pakāraṇa, aṅamuk ikā arane,
 <p n="190"> 
 riṅ voṅ amaduṅ kayo, aṅrubuhi voṅ, aṅgugutuk olih voṅ, yen upacāra kagutuk, yen tan den-maha, aṅajarakən halahapene kaṅ kagutuk ikā, lavan karubuhan kayu, yen mati kbo sapi salvir iṅ upacāra kaṅ karubuhan kayu, kaṅ kagutuk, aṅlenana samuleniṅ u<unclear reason="eccentric_ductus">pa</unclear>cā<unclear reason="eccentric_ductus">ra</unclear> kaṅ mati, rəganana sarəgane aṅlekna satṅah mariṅ kaṅ adr̥ve, apan tan den-maha dene aṅrubuhi, dene aṅgutuk ikā, maṅkana śāsananiṅ loka apan iṅ upacāra mūḍha nora vəruh iṅ kagutuk<supplied reason="unknown">a</supplied> yen a<unclear>ṅ</unclear>larani upacāra karubuhan kayu, kagutuk, makādi voṅ, aveha patuku tamba kaṅ aṅrubuhi lavan <app>
 <lem>kagutuk</lem>
-<rdg>aṅgutuk</rdg>
+<rdg wit="edj">aṅgutuk</rdg>
 </app> ikā, ahiṅana savarase, tur kaḍəṇḍaha limaṅ tali denira saṅ amava bhumi, kaluvarane pagavene <supplied reason="unknown">ra</supplied> taṅane, yen mati voṅ kaṅ karubuhan kayu ikā kaṅ aṅgutuk, kaṅ aṅrubuhi aveha <unclear>pa</unclear>kuramas, lāvan patəpuṅ tavar, isuh-isuh mariṅ kadaṅ-varganiṅ mati, yen gustine kunəṅ pakambaligine lavan pakuramas roṅ tali, maṅkana śāsanane, kunəṅ yen tan ahiḍəp liṅ iṅ āgama, kaṅ aṅrubuhi ikā lavan aṅgutuk pāpane paḍa lavan <unclear>ā</unclear>tatāyi riṅ pātaka, yen anaṅtaṅ ababaribinan, kalah dene aucapan, kaṅ mati mulihanikəl piṇḍo, ḍəṇḍa pataṅ lakṣa, paḍakəna lāvan amateni akāraṇa kasr̥ṅən, <app>
 <lem>amata</lem>
 <rdg wit="edj">amaha</rdg>
@@ -967,14 +957,14 @@ riṅ voṅ amaduṅ kayo, aṅrubuhi voṅ, aṅgugutuk olih voṅ, yen upacār
 <p n="191"> 
 riṅ aomah-omah, yen tan aveh <app>
 <lem>vavacan</lem>
-<rdg type="emn">upahan?</rdg>
+<rdg wit="edj">upahan?</rdg>
 </app>
 <app>
 <lem>valaga</lem>
-<rdg type="emn">valagara</rdg>
-</app> riṅ deśa, tan siddha pomah-omahe<supplied>,</supplied> voṅ alaki-rabi, yen tan asrah <app>
+<rdg wit="edj">valagara</rdg>
+</app> riṅ deśa, tan siddha pomah-omahe<supplied reason="unknown">,</supplied> voṅ alaki-rabi, yen tan asrah <app>
 <lem>papan</lem>
-<rdg type="emn">upahan?</rdg>
+<rdg wit="emn">upahan?</rdg>
 </app> valagara riṅ deśa manih riṅ sirah, ḍəṇḍa voluṅ tali denira saṅ amava bhumi, yan riṅ strī uttamā voluṅ tali, yan iṅ stri madhyā pataṅ tali, yan riṅ strī kaniṣṭhā sevu nəm atus, yen tinagih deniṅ deśa tan asrah, maṅkana doṣane.</p>
 
 <p n="192"> 
@@ -1129,7 +1119,7 @@ riṅ pāruṣya ucapən maṅke. riṅ kṣatriya aṅuman-uman brāhmaṇa de 
 riṅ voṅ aṅuman-uman voṅ paḍa kula-kavoṅane, kaṅ aṅuman-uman ḍəṇḍanən satak salave; maṅkana ajar iṅ śāstra.</p>
 
 <p n="222"> 
-yen saṅ kṣatriya aṅuman-uman iṅ voṅ tani, ḍəṇḍaniṅ saṅ kṣatriya sevu, riṅ voṅ tani aṅuman-uman iṅ bot <supplied>da</supplied>dagaṅ, ḍəṇḍaniṅ voṅ tani sevu, ḍəṇḍaniṅ voṅ tan<unclear>i</unclear> aṅuman-uman iṅ kṣatriya ḍəṇḍanən ikaṅ voṅ tani roṅ eyu <unclear>evu</unclear>.
+yen saṅ kṣatriya aṅuman-uman iṅ voṅ tani, ḍəṇḍaniṅ saṅ kṣatriya sevu, riṅ voṅ tani aṅuman-uman iṅ bot <supplied reason="unknown">da</supplied>dagaṅ, ḍəṇḍaniṅ voṅ tani sevu, ḍəṇḍaniṅ voṅ tan<unclear>i</unclear> aṅuman-uman iṅ kṣatriya ḍəṇḍanən ikaṅ voṅ tani roṅ eyu <unclear>evu</unclear>.
 </p>
 
 <p n="223"> 
@@ -1168,7 +1158,7 @@ yen iṅ śūdra cāṇḍāla aṅuyuhi riṅ saṅ brāhmaṇa <pb edRef="#EdJ
 </app>, yen amləciṅ tugəlana plate lavan taṅane denira saṅ prabhu.</p>
 
 <p n="230"> 
-yen hana voṅ pāruṣya akāraṇa kakayu, vatu dene aṅlarani, patikiven makādi ye<unclear>n a</unclear>ṅlarani voṅ, sasḍəṅniṅ dukhane kaṅ den arani, pinatut lāvan guṅ lit iṅ ḍəṇḍa denira saṅ adr̥ve bhumi amrayogakən ḍəṇḍa, yenora pati alara dene amraṅ, amukul, aṅgatuk den alit ḍəṇḍane limaṅ atus, yen madhyama kanin ḍəṇḍa sevu<supplied>s</supplied>, yen uttama kanin <unclear>t</unclear>əka riṅ baluṅ makādi, yen tikəl, ḍəṇḍa roṅ lakṣa, yen abaṅ kulite emu, aṅəmu gətih, ḍəṇḍa roṅ tali, tur voṅ pāruṣya apatiba jampi, patuku tamba, hiṅana savarase tatu kaṅ <unclear>den-</unclear>pāruṣyani<supplied>n</supplied>.
+yen hana voṅ pāruṣya akāraṇa kakayu, vatu dene aṅlarani, patikiven makādi ye<unclear reason="eccentric_ductus">n a</unclear>ṅlarani voṅ, sasḍəṅniṅ dukhane kaṅ den arani, pinatut lāvan guṅ lit iṅ ḍəṇḍa denira saṅ adr̥ve bhumi amrayogakən ḍəṇḍa, yenora pati alara dene amraṅ, amukul, aṅgatuk den alit ḍəṇḍane limaṅ atus, yen madhyama kanin ḍəṇḍa sevu<supplied reason="unknown">s</supplied>, yen uttama kanin <unclear reason="eccentric_ductus">t</unclear>əka riṅ baluṅ makādi, yen tikəl, ḍəṇḍa roṅ lakṣa, yen abaṅ kulite emu, aṅəmu gətih, ḍəṇḍa roṅ tali, tur voṅ pāruṣya apatiba jampi, patuku tamba, hiṅana savarase tatu kaṅ <unclear reason="eccentric_ductus">den-</unclear>pāruṣyani<supplied reason="unknown">n</supplied>.
 </p>
 
 <p n="231"> 
@@ -1177,7 +1167,7 @@ riṅ voṅ aṅrəməkakən dr̥veniṅ voṅ, anikəlakən, aṅgəmpalakən, 
 <p n="232"> 
 riṅ voṅ anuṅgaṅ paḍati, ye<unclear>n a</unclear>jarana tinuṅgaṅan kunəṅ, sakalviraniṅ tuṅgaṅtinuṅaṅan, aṅgəpok aṅidəki voṅ, yen mati voṅ ikā kaṅ den-gəpok, den-idək ikā, kaṅ anuṅgaṅ yen kaṅ asarathi kunəṅ, ḍəṇḍanən roṅ lakṣa denira saṅ amava bhumi, tur aveha pamidāra voluṅ tali riṅ kaṅ adr̥ve <app>
 <lem>sovaṅ</lem>
-<rdg>rovaṅ</rdg>
+<rdg wit="edj">rovaṅ</rdg>
 </app> yen iṅ kadaṅ-varganiṅ mati, gənahaniṅ aveh. <pb edRef="#EdJ" n="84"/>
 </p>
 
