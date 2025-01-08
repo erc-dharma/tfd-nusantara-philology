@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Kalpabuddha Or 9456</title>
+            <title type="sub">Digital Diplomatic Edition</title>
+            <editor ref="part:dhapu">
+                    <name>I Gde Agus Darma Putra</name>
+            </editor>
+            <respStmt>
+               <resp>intellectual authorship of edition</resp>
+               <persName ref="part:dhapu">
+                  <persName>
+                     <name>I Gde Agus Darma Putra</name>
+                  </persName>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Paris</pubPlace>
+            <idno type="filename">DHARMA_DiplEdKalpabuddhaLeidenOr9456</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
+                            a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s)-->
+               </licence>
+            </availability> 
+            <date from="2025" to="2025">2025-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Leiden</settlement>
+                  <institution>University Library (UB)</institution>
+                  <repository>Paper</repository>
+                  <idno>Or 9456</idno>
+               </msIdentifier>
+               <msContents>
+                                <!--the msContents isn't mandatory -->
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                     <p>Leiden University Library Or 9456: a roman transcript from Kirtya IIIb.776/24. Photographed by Andrea Acri in 2011. The present text is found on pages</p>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                  <p>
+                  </p>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+                    <!-- Part mandatory -->
+            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
+                    <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+         </editorialDecl>
+         <samplingDecl>
+                    <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+            <p/>
+         </samplingDecl>
+         <!--schemaRef  will need to be added once a  official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+                <!-- choose the language(s) of your text, remove the others -->
+            <language ident="kaw-Latn">Old Javanese, Balinese</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:dhapu" when="2025-01-08" status="draft">Updating the template</change>
+         <change who="part:dhapu" when="2025-01-08" status="draft">Initial encoding of the edition (first folia)</change>
+      </revisionDesc>
+      <!-- HandDesc: 
+            (1) layar is in Balinese position
+            (2) dh and ḍ seem to be used without any distinction, nor are any distinctions made between sa śa and ṣa-->
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-latn">
+        <body>
+            <ab>
+            <!--IMG_0620-->
+            <!--IMG_0621-->  
+      <pb n="1v" xml:id="folio1v"/> 
+         <lb n="1"/>No: IIID: 776/21.
+         <lb n="2"/>Dikoempoelkan oleh Kirtya.
+         <lb n="3"/>Dari: Boeleleng.
+         <lb n="4"/>Terima pada:
+         <lb n="5"/>Disalin pada: 24-11-48.
+         <lb n="6"/>Oleh: I Mangkoe Resi Kadjeng.
+         <lb n="7"/>Diperiksa oleh: Ida Poetoe Sweta.
+         <lb n="8"/>KALPA BOEDA
+         <lb n="9"/>Awignam astoe:
+         <lb n="10"/>Nihan hadjinira sira Batara Hiang Boeda, kajatnakena mahopa-
+         <lb n="11"/>désa ika, rengen saloeiring mantra. Batara Boeda sira hanaring 
+         <lb n="12"/>mahapralaja, doemadi awaknira, sira ta matemahan Batara Pantja 
+         <lb n="13"/>Tatagata, sarira nama béda, kapoea apadoedwan roepanira, bodiagari 
+         <lb n="14"/>moedra sira, saswatah djnjananira, tjakra sandjatanira ring Saha-
+         <lb n="15"/>wati ngaraning kadatwanira, singa toetoengganganira, sira Barali 
+         <lb n="16"/>Darma Badjri, sira Barali Karma Badjri, sira ta sahadéwi Amari-
+         <lb n="17"/>wreta ri sira, moenggoeh poea sira ring sarira, ring djroning poe
+         <lb n="18"/>soeh-poesoeh pinaka atanira.
+         <lb n="19"/>Sira Bataraksobia, moenggoeh ring poerwa, kresna warnanira,
+         <lb n="20"/>sira Barali Lotjana déwinira, hoeng mantranira, boeh separsa na-
+         <lb n="21"/>moedra sira, badjra sandjatanira, adarma djnjana sira, ring Abi-
+         <lb n="22"/>rati ngaraning ka swarganira, gadjah toetoengganganira, Batara Ba-
+         <lb n="23"/>2a. djraradja, Batara Badjraraga, Hiang Badjrasadoe, Batara Badjra-
+         <lb n="24"/>daradi, sang amariwreta ri sira, moenggoeh poea sira ring sarira, 
+         <lb n="25"/>ri djroning paroe-paroe pinaka stananira.
+         <lb n="26"/>Sira Batara Ratna Sambawa, moengoeh ring daksina, pita war-
+         <lb n="27"/>nanira, sira Barali Mamaki déwinira, trang, mantranira, samatad-
+         <lb n="28"/>njana sira, kapala sandjatanira, ri djroning limpa pinaka stana-
+         <lb n="29"/>nira.
+         <lb n="30"/>Sira Batara Amitaba, moengoeh ring pastjima, rakta warnanira, 
+         <lb n="31"/>sira Barali Pandawarisini déwinira, hrih, mantranira, pratia wék-
+         <lb n="32"/>sanadnjana sira, diananoedra sira, nagapasa sandjatanira, ring 
+         <lb n="33"/>Soekawati ka swarganta.
+         <lb n="34"/>Sira Barali Badjradarma, Batara Badjratiksna, Batara Badjra-
+         <lb n="35"/>hétoe, Batara Badjrabasa, sang amariwreta ri sira, moengoeh poea 
+         <lb n="36"/>sira ring sarira, ring djro ati pinaka stananira.
+         <lb n="37"/>Sira Batara Amogasidi, moenggoeh ring oetara, wiswa warna 
+         <lb n="38"/>sira, sira Baralitara déwinira, ah, mantranira, abamoedra sira,
+         <lb n="39"/>2b. kreta noestanadnjananira, ring Koesoemité ngaraning ka swargan-
+         <lb n="40"/>ira, garoeda toetoengganganira, sira Batara Badjrakarma, Batara
+         <lb n="41"/>Badjraraksa, Batara Badjrajaksa, Batara Badjrasandi, sang amari-
+      </ab>
+    </body>
+  </text>
+</TEI>
