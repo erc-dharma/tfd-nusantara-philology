@@ -4,14 +4,14 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
-     xml:id="kutaraManava"
+     xml:id="kutaramanava"
      type="edition">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Kuṭāra Mānava</title>
+            <title type="main" xml:lang="kaw-Latn">Kuṭāra Mānava</title>
             <!--Change the title of the file with the name of your text-->
-            <title type="sub">Digital Critical Edition of...</title>
+            <title type="sub">Digital Critical Edition and Translation of an Old Javanese Penal Code</title>
             <editor ref="part:tilu">
                <forename>Timothy</forename>
                <surname>Lubin</surname>
@@ -26,6 +26,21 @@
             <respStmt>
 					<!-- repeat the respStmt when necessary -->
                <resp>creation of the file</resp>
+               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <persName ref="part:argr">						<!-- update the id -->
+                  <forename>Arlo</forename>
+                  <!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                  <surname>Griffiths</surname>
+               </persName>
+               <persName ref="part:tilu">						<!-- update the id -->
+                  <forename>Tim</forename>
+                  <!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                  <surname>Lubin</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+					<!-- repeat the respStmt when necessary -->
+               <resp>encoding of the edition</resp>
                <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
                <persName ref="part:nuha">						<!-- update the id -->
                   <forename>Nurmalia</forename>
@@ -59,19 +74,9 @@
                         <repository>Lontar</repository>
                         <idno>Or. 2215</idno>
                      </msIdentifier>
-                  </msDesc>
-               </witness>
-               <witness xml:id="le2">
-						<!-- Give your witness an unique identifier -->
-                  <abbr type="siglum">B</abbr>
-                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
-                        <repository>Lontar</repository>
-                        <idno>Or. 6203a</idno>
-                     </msIdentifier>
+                     <physDesc>
+                        <p>L.Or. 2215, a Balinese palm-leaf manuscript housed in the Leiden Library, served as the primary manuscript (referred to as "I") in Jonker’s edition. According to Jonker, the manuscript lacks a title, with the only external identifier being the word "agama" inscribed on its outer surface. No additional information about its date of composition or copying is available, and the text concludes abruptly mid-sentence. The manuscript consists of 71 palm leaves, each bearing either three or four lines of text. Despite being in relatively good condition overall, it exhibits minor damage in a few areas. However, it is riddled with errors and omissions, with the quality of the handwriting noticeably deteriorating toward the end.</p>
+                     </physDesc>
                   </msDesc>
                </witness>
                <witness xml:id="lo1">
@@ -86,21 +91,8 @@
                         <idno>BL Add. 12277</idno>
                      </msIdentifier>
                      <physDesc>
-                        <p>It is written on palm leaves, and lacks a title; it does not mention a place or date of transcription, and abruptly ends in the middle of a sentence. Outside, it says: Cuntara Manava Sastra, a paraphrase of the Institutes of Manu, in the Kawi or ancient Javanese language. Presented to J. Crawfurd Esq. by the Rajah of Billing 1814. The manuscript is completely intact and very clearly written</p>
+                        <p>The British Museum manuscript, cataloged as No. 12277 Ad., referred to as "II" in Jonker’s edition, is written on palm leaves and, like the Leiden manuscript, lacks a title, as well as any reference to the place or date of its transcription. The text concludes abruptly in the middle of a sentence. An external inscription identifies it as Cuntara Manava Sastra, described as a paraphrase of the Institutes of Manu in the Kawi (Old Javanese) language. It includes the note: "Presented to J. Crawfurd Esq. by the Rajah of Billing, 1814." The manuscript is entirely intact and remarkably clear in its handwriting. It bears a striking resemblance to the Leiden manuscript, with the readings of the two aligning almost perfectly.</p>
                      </physDesc>
-                  </msDesc>
-               </witness>
-               <witness xml:id="lo2">
-						<!-- Give your witness an unique identifier -->
-                  <abbr type="siglum">Y</abbr>
-                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement>London</settlement>
-                        <institution>British Library (BL)</institution>
-                        <repository/>
-                        <idno>BL Add. 12326</idno>
-                     </msIdentifier>
                   </msDesc>
                </witness>
                <witness xml:id="ma1">
@@ -818,11 +810,11 @@ riṅ voṅ aṅhəbaṅ-həbaṅ, asaṅgup aveha pisis, dadi pasusuratan, huvu
 <p n="151"> 
 riṅ voṅ ahutaṅ tan paveh kalāntara putra mariṅ apihutaṅ, anikəl piṅro uga hutaṅe, savuse anikəl piṅro, tan hana panahure, riṅ voṅ maṅkana anutakəna hutaṅe, dadi kavula; alavas dene anutakən dadi kavula tan kavaśa dene anambut-gaveniṅ pr̥dana, vəkasan miṅgat sakiṅ gustine, katəmu manih deniṅ <app>
 <lem type="norm">pradhana</lem>
-<rdg>pr̥dana</rdg>
+<rdg wit="edj">pr̥dana</rdg>
 </app>, aveha pavadal gave salavase tan aṅlakoni gaveniṅ 
 <app>
 <lem type="norm">pradhana</lem>
-<rdg>pr̥dana</rdg>
+<rdg wit="edj">pr̥dana</rdg>
 </app>, vəkasan mati riṅ sukuniṅ gusti, anake anahura hutaṅ anikəl piṅro.</p>
 
 <p n="152"> 
@@ -971,7 +963,7 @@ riṅ kbo sapi agalak asiṅhat iṅ voṅ tan pakāraṇa, aṅamuk ikā arane,
 <p n="190"> 
 riṅ voṅ amaduṅ kayo, aṅrubuhi voṅ, aṅgugutuk olih voṅ, yen upacāra kagutuk, yen tan den-maha, aṅajarakən halahapene kaṅ kagutuk ikā, lavan karubuhan kayu, yen mati kbo sapi salvir iṅ upacāra kaṅ karubuhan kayu, kaṅ kagutuk, aṅlenana samuleniṅ u<unclear reason="eccentric_ductus">pa</unclear>cā<unclear reason="eccentric_ductus">ra</unclear> kaṅ mati, rəganana sarəgane aṅlekna satṅah mariṅ kaṅ adr̥ve, apan tan den-maha dene aṅrubuhi, dene aṅgutuk ikā, maṅkana śāsananiṅ loka apan iṅ upacāra mūḍha nora vəruh iṅ kagutuk<supplied reason="unknown">a</supplied> yen a<unclear>ṅ</unclear>larani upacāra karubuhan kayu, kagutuk, makādi voṅ, aveha patuku tamba kaṅ aṅrubuhi lavan <app>
 <lem>kagutuk</lem>
-<rdg>aṅgutuk</rdg>
+<rdg wit="edj">aṅgutuk</rdg>
 </app> ikā, ahiṅana savarase, tur kaḍəṇḍaha limaṅ tali denira saṅ amava bhumi, kaluvarane pagavene <supplied reason="unknown">ra</supplied> taṅane, yen mati voṅ kaṅ karubuhan kayu ikā kaṅ aṅgutuk, kaṅ aṅrubuhi aveha <unclear>pa</unclear>kuramas, lāvan patəpuṅ tavar, isuh-isuh mariṅ kadaṅ-varganiṅ mati, yen gustine kunəṅ pakambaligine lavan pakuramas roṅ tali, maṅkana śāsanane, kunəṅ yen tan ahiḍəp liṅ iṅ āgama, kaṅ aṅrubuhi ikā lavan aṅgutuk pāpane paḍa lavan <unclear>ā</unclear>tatāyi riṅ pātaka, yen anaṅtaṅ ababaribinan, kalah dene aucapan, kaṅ mati mulihanikəl piṇḍo, ḍəṇḍa pataṅ lakṣa, paḍakəna lāvan amateni akāraṇa kasr̥ṅən, <app>
 <lem>amata</lem>
 <rdg wit="edj">amaha</rdg>
@@ -985,7 +977,7 @@ riṅ aomah-omah, yen tan aveh <app>
 </app>
 <app>
 <lem type="emn">valagara</lem>
-<rdg>valaga</rdg>
+<rdg wit="edj">valaga</rdg>
 </app> riṅ deśa, tan siddha pomah-omahe<supplied reason="omitted">,</supplied> voṅ alaki-rabi, yen tan asrah 
 <app><lem>papan</lem><note>Emend upahan?</note></app> valagara riṅ deśa manih riṅ sirah, ḍəṇḍa voluṅ tali denira saṅ amava bhumi, yan riṅ strī uttamā voluṅ tali, yan iṅ stri madhyā pataṅ tali, yan riṅ strī kaniṣṭhā sevu nəm atus, yen tinagih deniṅ deśa tan asrah, maṅkana doṣane.</p>
 
@@ -1154,16 +1146,16 @@ riṅ voṅ nīca caṇḍālajanma aṅuman-uman iṅ saṅ brāhmaṇa, riṅ 
 <p n="225"> 
 ḍəṇḍapāruṣya ucapən maṅke. riṅ voṅ amukul, anuduk iṅ kayu, aṅgitikiṅ vatu aṅlarani, aṅəmu gətih, atatuha kunəṅ, anugəlakən, anikəlakən baluṅ, makādi yen amatenana sarvasato, yen voṅ ādine, araniṅ ulah vivijinən, salah tuṅgala ikā ḍəṇḍapāruṣya arane, liṅ saṅ paṇḍita, maṅkana riṅ voṅ amraṅ iṅ sañjata, anuduk ādine, aṅgitik iṅ vatu, riṅ viṅkā, amukul iṅ kayu, riṅ baluṅ, anaṇḍat guluniṅ len iṅ tatali, aniləpakən iṅ bañu, anampel, amərəp, aṅgarut, anəpak, andədəl, <app>
 <lem>aṅgoñoh</lem>
-<rdg>aṅgocoh</rdg>
+<rdg wit="edj">aṅgocoh</rdg>
 </app>, aṅgapuk, anahuthamok, amlaciṅ, aṅidoni, <app>
 <lem>aniratra ambal</lem>
-<rdg>anirati umbəl</rdg>
+<rdg wit="edj">anirati umbəl</rdg>
 </app> ilu, anampəki kəkəmahan, anampəki ririgən, aṅgutuk iṅ tai, aṅantepakən iṅ tai, anuṇḍuṅakən iṅ tai, riṅ patunan iṅ celeṅ, iku pratyekaniṅ ḍəṇḍapāruṣya.</p>
 
 <p n="226"> 
 riṅ bot dagaṅ aṅlarani riṅ brāhmaṇa, asādhana taṅan, suku, caṅkəm, śirah, ḍaḍa, gigir, bāhu, plat, <app>
 <lem>silip</lem>
-<rdg>silit</rdg>
+<rdg wit="edj">silit</rdg>
 </app> iku ta sādhanane pāruṣya riṅ samajanma ləvih kaṅ den-pāruṣyani, siṅ sādhanane aṇḍamalani, tu<supplied reason="omitted">ṅ</supplied>gelana de saṅ prabhu, maṅkana liṅ bha<unclear>ga</unclear>vā<unclear>n</unclear> manu riṅ śāsana.</p>
 
 <p n="227"> 
@@ -1176,7 +1168,7 @@ riṅ cāṇḍāla <unclear>śūdra</unclear> aṅluṅguhi kaluṅguhanira sa�
 yen iṅ śūdra cāṇḍāla aṅuyuhi riṅ saṅ brāhmaṇa <pb edRef="#EdJ" n="83"/>
  ikaṅ cāṇḍāla śūdra tugəlana plate, yen ikaṅ cāṇḍāla śūdra hamivakarpyiṅ, amiji<supplied reason="omitted">ṅ</supplied>t iruṅ amumuṇḍak, aṅgutuk iṅ tai, añjəṅkaṅakən, aṅantəpakən iṅ tai, ikaṅ śūdra cāṇḍāla tugəlana taṅane, yen ikaṅ śūdra cāṇḍāla aṅissiṅ<unclear>h</unclear>i riṅ saṅ brāhmaṇa, duləkən iṅ vsi abaṅ <app>
 <lem>hilihe</lem>
-<rdg>silite</rdg>
+<rdg wit="edj">silite</rdg>
 </app>, yen amləciṅ tugəlana plate lavan taṅane denira saṅ prabhu.</p>
 
 <p n="230"> 
@@ -1189,17 +1181,17 @@ riṅ voṅ aṅrəməkakən dr̥veniṅ voṅ, anikəlakən, aṅgəmpalakən, 
 <p n="232"> 
 riṅ voṅ anuṅgaṅ paḍati, ye<unclear>n a</unclear>jarana tinuṅgaṅan kunəṅ, sakalviraniṅ tuṅgaṅtinuṅaṅan, aṅgəpok aṅidəki voṅ, yen mati voṅ ikā kaṅ den-gəpok, den-idək ikā, kaṅ anuṅgaṅ yen kaṅ asarathi kunəṅ, ḍəṇḍanən roṅ lakṣa denira saṅ amava bhumi, tur aveha pamidāra voluṅ tali riṅ kaṅ adr̥ve <app>
 <lem>sovaṅ</lem>
-<rdg>rovaṅ</rdg>
+<rdg wit="edj">rovaṅ</rdg>
 </app> yen iṅ kadaṅ-varganiṅ mati, gənahaniṅ aveh. <pb edRef="#EdJ" n="84"/>
 </p>
 
 <p n="233"> 
 yen aṅidək sapi, yen aṅidəki ajaran, yen uṣṭra mati den-idəki ikā, kaṅ <app>
 <lem>asarami</lem>
-<rdg>asarath</rdg>
+<rdg wit="edj">asarath</rdg>
 </app> ḍəṇḍanən salakṣa <app>
 <lem>vur</lem>
-<rdg>tur</rdg>
+<rdg wit="edj">tur</rdg>
 </app> aṅəlenana sarəgane, samajanane kaṅ mati ikā.</p>
 
 <p n="234"> 
@@ -1214,7 +1206,7 @@ riṅ rabi, anak, kavula lanaṅ, kavula vadon, sanakunəṅ, yan śiṣya, saud
 <p n="237"> 
 riṅ voṅ añoloṅ ivak iṅ tambak manih yen larane, ḍəṇḍaniṅ añoloṅ voluṅ tali denira saṅ amava bhumi, yen akeh kaṅ añoloṅ vivijinen amoluṅ tali riṅ voṅ <unclear>s</unclear>atuṅgal-tuṅgal, tur ivak kaṅ deñ-coloṅ mulihanikəl piṅro, yen vəṅi kāla dene añoloṅ patenana <app>
 <lem>uba</lem>
-<rdg>uga</rdg>
+<rdg wit="edj">uga</rdg>
 </app> doṣane.</p>
 
 <p n="238"> 
@@ -1224,33 +1216,33 @@ riṅ voṅ añoloṅ pari, ləvih sakiṅ sapuluh tənah olihe añoloṅ patena
 <p n="239"> 
 riṅ voṅ añoloṅ kəmbaṅ, añoloṅ pari yen akəḍik olihe, bobotana, savərate bobote atikəlakəna <app>
 <lem>piṅlavlas</lem>
-<rdg>piṅsavlas</rdg>
+<rdg wit="edj">piṅsavlas</rdg>
 </app>, riṅ añoloṅ gaṅan, kuni<unclear>r</unclear>, təmu, gamoṅan, añoloṅ priṅ, añoloṅ odod-ododan, bubuṅkaban, akəḍik olihe añoloṅ, tan mule pañoloṅe, ḍəṇḍanən satak denira saṅ amava bhumi, tur olihe añoloṅ <app>
 <lem>əka</lem>
-<rdg>ikā</rdg>
+<rdg wit="edj">ikā</rdg>
 </app>, mulihanikəl mariṅ kaṅ cinoloṅan.
 	<!--% riṅ: the first word of this section is printed in italics.--></p>
 
 <p n="240"> 
 riṅ voṅ añoloṅ mās, manih añoloṅ ratna, yen añoloṅ dodot, yen ləvih sakiṅ haji satus doṣa patiniṅ añoloṅ denira saṅ amava bhumi, yen ləvih <unclear>sakiṅ</unclear> haji save, dr̥ve kaṅ de<unclear>n</unclear>-coloṅ ikā tugəlana taṅane riṅ kaṅ añoloṅ denira saṅ adr̥ve bhumi, yen dur<unclear>u</unclear>ṅ sakiṅ haji save kaṅ den-coloṅ ikā, tikəlakəna savlas, samuleniṅ dr̥ve den-coloṅ ikā ḍəṇḍanə<unclear>n</unclear> denira saṅ amava bhumi, tur olihe añoloṅ <app>
 <lem>kikelakna</lem>
-<rdg>tikəlakəna</rdg>
+<rdg wit="edj">tikəlakəna</rdg>
 </app> piṅro mariṅ <app>
 <lem>taṅ</lem>
-<rdg>kaṅ</rdg>
+<rdg wit="edj">kaṅ</rdg>
 </app> adr̥ve<supplied reason="omitted">ne</supplied> kaṅ cinoloṅan.</p>
 
 <p n="241"> 
 riṅ voṅ auoloṅ sajəṅ riṅ umah, añoloṅ skul añoloṅ kəklan, añoloṅ ivak mtah rateṅ añoloṅ manuk<supplied reason="omitted">a</supplied>, añoloṅ miñak, añoloṅ lṅa, añoloṅ madhu, <app>
 <lem>pdan</lem>
-<rdg>pəhan</rdg>
+<rdg wit="edj">pəhan</rdg>
 </app>, ma<supplied reason="omitted">h</supplied>lam, pulut, <supplied reason="omitted">tut</supplied>, gagaraṅan, kuvuk, laṇḍak, yen haneṅ umah den-coloṅ, akāraṇa harəpe riṅ iya, manih añoloṅ anam-anaman .. makādi raga, kicir, yen lagi riṅ umah, añoloṅ guci, piṅgan sakeh iṅ vavaḍah vigil pa .. n, kəṇḍi kunəṅ, añoloṅ uyah, tarasi <app>
 <lem>asəs</lem>
-<rdg>asəm</rdg>
+<rdg wit="edj">asəm</rdg>
 </app>
 <app>
 <lem>prak</lem>
-<rdg>vrak</rdg>
+<rdg wit="edj">vrak</rdg>
 </app>, jruk, sahananiṅ raragi haneṅ umah manih añoloṅ bhasmara avu, arəṅ ikā, kaṅ den-coloṅ salah tuṅgala, makādi bras riṅ pasimpənan den-coloṅ, kaṅ añoloṅ, ḍəṇḍanən samulane rəgane kaṅ den-coloṅ ikā tikəlakəna pi<unclear>ṅ</unclear>ṇḍo, tur kaṅ den-coloṅ mulihanikəl mariṅ kaṅ adr̥ve, ḍəṇḍa anikəl piṅro sarəgane mariṅ saṅ amava bhumi.
 <!--	%anam-anaman .. makādi: the string man .. mak is printed in italics.--></p>
 
@@ -1261,16 +1253,16 @@ riṅ voṅ aṅivat voṅ ṅahabika voṅ vadon <pb edRef="#EdJ" n="86"/>
 <p n="243"> 
 yen hana voṅ añoloṅ kbo sa<supplied reason="omitted">m</supplied>pi, paṅiridira saṅ ləvih, makādi saṅ amava bhumi kaṅ adṛ<unclear>ve</unclear> paṅirid, yen añoloṅ guguluniṅ paḍati, kaṅ <app>
 <lem>añoluṅ</lem>
-<rdg>añoloṅ</rdg>
+<rdg wit="edj">añoloṅ</rdg>
 </app> tugəlana sukune satəṅah denira saṅ amava bhumi.</p>
 
 <p n="244"> 
 riṅ voṅ sāhasa aṅrusāk <app>
 <lem>graha</lem>
-<rdg>gṛha</rdg>
+<rdg wit="edj">gṛha</rdg>
 </app>nira saṅ ləvih, aṅrusak titiṅkahanira saṅ amava bhumi aṅrusak gənah iṅ sañjata, aṅrusakabuyutan, amalat gajah, amalat ajaran, ratha paṅiridira saṅ amava bhumi den-valat <app>
 <lem>aṅ</lem>
-<rdg>iṅ</rdg>
+<rdg wit="edj +">iṅ</rdg>
 </app> voṅ, ikā ta kaṅ amalat patenana denira saṅ amava bhumi, tan rasanana, yen harəp ahuripa kaṅ amalat ikā, yen iṅapura denira saṅ amava bhumi ḍəṇḍan ikā denira salima deniṅ voṅ maṅkana.</p>
 
 <p n="245"> 
@@ -1284,19 +1276,19 @@ riṅ voṅ aṅgaməli rabiniṅ arabi, tugəlana taṅane kaṅ aṅgaməli de
 riṅ voṅ aṅucap-ucap lavan rabiniṅ arabi, riṅ śunya riṅ taman, riṅ alas, riṅ kali, <pb edRef="#EdJ" n="87"/>
  sagənahane aṅucap-ucap <app>
 <lem>uṣ</lem>
-<rdg>uga?</rdg>
+<rdg wit="edj">uga?</rdg>
 </app> kikivan uga hana səmune mariṅ voṅ vadon ikā, naṅiṅ tan kalavanan deniṅ vadon, voṅ vadon ikā tan istri rabiniṅ arabi, tan kapiṅhit, <supplied reason="omitted">kiṅ</supplied> anəmoni guyu, <app>
 <lem>aṅujarvatiṅ</lem>
-<rdg>aṅujivati</rdg>
+<rdg wit="edj">aṅujivati</rdg>
 </app> strīsaṅgrahaṇa arane, ḍəṇḍanən kaṅ anəmoni guyu ikā limaṅ tali, saṅkane <app>
 <lem>aṇḍik</lem>
-<rdg>akəḍik</rdg>
+<rdg wit="edj">akəḍik</rdg>
 </app> ḍəṇḍane, rehiṅ voṅ vadon tan kapiṅhit, dudu laraṅan iṅ uttamajanma.</p>
 
 <p n="248"> 
 riṅ voṅ aṅucap-ucap lavan rabiniṅ voṅ tumul<unclear>i</unclear> kapiṅ<unclear>h</unclear>it dene lakine voṅ uttamajanma, <app>
 <lem>iku</lem>
-<rdg>strī</rdg>
+<rdg wit="edj">strī</rdg>
 </app>saṅgrahaṇa arane...</p>
 
 <p n="249">yen aṅucap-ucap kararaṅguhan iṅ asəpi, aṅhiṅ dene ararasan ika, tan akāraṇa sakiṅ harəp iṅ voṅ vadon ikā, tan asəmu paṅucap-ucap iṅ basaja, kevala sakiṅ tan vəruhe riṅ laki, riṅ voṅ maṅkana ḍəṇḍanən limaṅ tali, doṣane [BR464 lacuna begins] strīsaṅgrahaṇa kalilane (corr. kaliṅane) riṅ voṅ lanaṅ lavan voṅ vadon, yen ujar iṅ śāstra, tan vənaṅ yen asapocapana riṅ asəpi, lavan rabiniṅ arabi, yen rabihaniṅ sanak, rabihaniṅ paman, uva kunəṅ, rabihaniṅ anakmantu sakalviraniṅ stri laraṅan, tan yogya rovaṅaniṅ sapocapan riṅ asəpi, tan ulahanira saṅ vəruh iṅ haṅ (corr. saṅ hyaṅ) āgama, apan maṅkana dharmaniṅ dadi jahaṅət iṅ brahma.</p>
@@ -1305,7 +1297,7 @@ riṅ voṅ aṅucap-ucap lavan rabiniṅ voṅ tumul<unclear>i</unclear> kapi�
 riṅ voṅ amahugi rabiniṅ arabi <supplied reason="omitted">niṅi</supplied>, lavan amahugi laraṅan iṅ alaraṅan, amahugiha riṅ <supplied reason="omitted">ka</supplied>
 <supplied reason="omitted">rikaṅ?</supplied> kavula dāsihnira saṅ ləvih, makādi kavulanira saṅ amava bhumi, amahugi pinahugi deniṅ voṅ vadon, akāraṇa paḍa karəpe, kaṅ denpahugenən burat, kəmbaṅ, suvəṅ, ali-ali, ladiṅ panunuratan, paṅririṅgitan, dodot, bhūṣaṇa, sapavevehiṅ amahugi <app>
 <lem>haga</lem>
-<rdg>uga</rdg>
+<rdg wit="edj">uga</rdg>
 </app> pavehvehe kaṅ lanaṅ manih pavevehe kaṅ vadon ikā, katəmu asisivo<unclear>n</unclear> lāvan voṅ vadon riṅ <pb edRef="#EdJ" n="88"/>
  asəpi, makādi, yen aṅguguṇananana, iku strīsaṅgrahaṇa arane, ḍəṇḍa pati doṣane; maṅkana doṣana liṅ saṅ paṇḍita.</p>
 <!--	%doṣana: doṣa?-->
@@ -1313,16 +1305,16 @@ riṅ voṅ amahugi rabiniṅ arabi <supplied reason="omitted">niṅi</supplied>
 <p n="251"> 
 riṅ voṅ abcikula kajatine iṅuṅgahan deniṅ rarā, <app>
 <lem>han</lem>
-<rdg>tan</rdg>
+<rdg wit="edj">tan</rdg>
 </app> doṣanana kaṅ iṅuṅgahan ikā, denira saṅ amava bhumi. riṅ voṅ asor kajat<unclear>i</unclear>ne, sor kulane,iṅ<unclear>u</unclear>ṅgahan iṅ rarā paramenakajatine, pisahakəna rarā ikā lavan kaṅ den-uṅgahi, huvus apisah, takonana denira voṅ-atuvane rarā ikā, yen dudu karəpe mantu voṅ lanaṅ sor kulane ikā, patenana voṅ lanaṅ ikā denira, rarā ikā ulihakəna mariṅ rarā<unclear>ma</unclear>ne, manih yen paḍa karəpe rarā ikā lavan rarāmane lanaṅ, voṅ lanaṅ <supplied reason="omitted">k</supplied>asor kulane ikā, aveha tukon mariṅ bapaniṅ rarā ikā, javikapatəharane.</p>
 
 <p n="252"> 
 riṅ <unclear>voṅ</unclear> vadon amaraṅ, akon <app>
 <lem>aharaṅ</lem>
-<rdg>amaraṅa</rdg>
+<rdg wit="edj">amaraṅa</rdg>
 </app> m<unclear>i</unclear>trane vadon, lavan hana voṅ vadon sapadaluran lavan voṅ vadon luṅhā atata<supplied reason="omitted">r</supplied>van <app>
 <lem>iṅ</lem>
-<rdg>tin-</rdg>
+<rdg wit="edj">tin-</rdg>
 </app>utakən deniṅ voṅ lanaṅ, manih hana vadon aveh dunuṅan iṅ voṅ luṅhā, riṅ voṅ vadon maṅkana katəlu iku ḍəṇḍanən pataṅ tali denira saṅ amava bhumi.</p>
 
 <p n="253"> 
@@ -1332,16 +1324,16 @@ riṅ voṅ muṅgah mariṅ pat<unclear>u</unclear>ron iṅ apaturon tan pakone
 <p n="254"> 
 riṅ voṅ tinambaṅ dene lakine, kaṅ lanaṅ luṅhā amet dharma, atakitaki, ulahayu, antinən dene kaṅ vadon voluṅ tahun, yen luṅhā aṅaji amet śāstra <app>
 <lem>yantəkna</lem>
-<rdg>antekna</rdg>
+<rdg wit="edj">antekna</rdg>
 </app> nəm tahun, yen luṅhā adagaṅ alayar, amet artha, antekna sapuluh tahun, yen luṅhā <supplied reason="omitted">y</supplied> arabiyantekna təluṅ tahun, yenora akikirim kaṅ lanaṅ riṅ rabine <unclear>i</unclear>kā, vənaṅ alakiya riṅ len; riṅ voṅ vadon tinambaṅ <unclear>de</unclear>ne lakine kaṅ lanaṅ apaparan anduradeśa, antinən pataṅ tahun dene voṅ vadon ikā, [BR464 lacuna ends] nora təka pataṅ tahun, vənaṅ <app>
 <lem>p</lem>
-<rdg>k</rdg>
+<rdg wit="edj">k</rdg>
 </app>aṅ vadon alakiya riṅ len.</p>
 
 <p n="255"> 
 riṅ voṅ vadon alaki riṅ len, yen kaṅ lanaṅ mula hilaṅ, māti riṅ parane<supplied reason="omitted">ku</supplied>, karuṅ<unclear>u</unclear> lumaku viku, kumiṅ tan kavaśa riṅ saṅgama makādi vuḍug <app>
 <lem>ḍ</lem>
-<rdg>l</rdg>
+<rdg wit="edj">l</rdg>
 </app>arane, yen maṅkana tiṅkahiṅ voṅ lanaṅ ikā, kaṅ vadon vənaṅ <unclear>a</unclear>lakiya riṅ len.</p>
 
 <p n="256"> 
@@ -1350,7 +1342,7 @@ riṅ voṅ lanaṅ yen edan-edanən, yen ahriṅ aṅgirih larane, yen ayan lar
 <p n="257"> 
 riṅ voṅ vadon elik iṅ lakine, <app>
 <lem>antinak</lem>
-<rdg>antinən</rdg>
+<rdg wit="edj">antinən</rdg>
 </app> satahun dene lakine, yen malər elik riṅ satahun voṅ vadon ikā, amaṅsulakəna tukon anikəla piṇḍo amañcal turon arane.</p>
 
 <p n="258">
@@ -1360,16 +1352,16 @@ riṅ voṅ vadon elik iṅ lakine, <app>
 hana ta vətuniṅ anak rovəlas ucapən maṅke <pb edRef="#EdJ" n="90"/>
  liṅ bhaṭāra <app>
 <lem>madu</lem>
-<rdg>manu</rdg>
+<rdg wit="edj">manu</rdg>
 </app> mavarah riṅ janma kabeh, iṅətakəna sapatiṅ ambatgave, nənəm kehiṅ anak, vehana dr̥ve kaliliran, kaṅ nənəmaniṅ anak tan vehana dr̥ve kaliliran, paran ta patuṅgal-tuṅgalane? anakiṅ ragisakan rarehan duk paḍa jajaka rara, olihiṅ ramā-reṇa amaraṅ, rabi kapiṅroniṅ aomah-omah, huvus akiṅa tuvi, <app>
 <lem>bh</lem>
-<rdg>ṅ</rdg>
+<rdg wit="edj">ṅ</rdg>
 </app>aṅiṅ tan hana pocapane hala, tan pavada, tur kinon alakiha deniṅ rāma-reṇane, anak pavevehiṅ sanak, kadaṅ varga, anak pinalaku anakiṅ voṅ len, anak olihiṅ rabi abibisan, kinon deniṅ laki, saṅkane anak-anak, anakiṅ voṅ len <app>
 <lem>debuñjal</lem>
-<rdg>den-buñcal</rdg>
+<rdg wit="edj">den-buñcal</rdg>
 </app> pinupu-pupu iṅaku anak, <app>
 <lem>hinubaṅ</lem>
-<rdg>iku kaṅ</rdg>
+<rdg wit="edj">iku kaṅ</rdg>
 </app> nənəm, vənaṅ amet<unclear>a</unclear> dr̥ve <supplied reason="omitted">li</supplied> kaliliran. əndi ta kaṅ nənəm<unclear>a</unclear>ne <unclear>nora</unclear> vənaṅ ameta dr̥ve kaliliran? anak səḍəṅiṅ rarā tan kasapekṣan kaṅ pinakabapa, anak casaruban akehanḍuha, anakiṅ voṅ vadon apəpəgatan lavan lakine tumuli alaki riṅ len, mahu kavorran voṅ vadon ikā, mati lakine kaṅ piṇḍo, tan alavas muli<unclear>h</unclear> r<unclear>iṅ</unclear> lakine mula anutugadən dadihanirara ikā, anak<supplied reason="omitted">iṅ</supplied> olihiṅ atuku, anakiṅ voṅ len amalaku iṅaku anak, anakiṅ kavula sor kavoṅane iṅaku anak.</p>
 
 <p n="260"> 
@@ -1378,20 +1370,20 @@ yen anak paveveh, lavan anakiṅ voṅ len ginave anak, vehana satəṅah dum-du
 <p n="261"> 
 riṅ dr̥ve vinevehakən iṅ rabine deniṅ lakine, manih riṅ anak vineha<unclear>n</unclear> dr̥ve deniṅ bapa, duk lagi huripe kasapekṣan deniṅ anak-rabi jīvane arane, riṅ dr̥ve maṅkana tan <app>
 <lem>m</lem>
-<rdg>v</rdg>
+<rdg wit="edj">v</rdg>
 </app>ənaṅ udalən deniṅ palara sanak kaṅ mətu <app>
 <lem>sana</lem>
-<rdg>sakiṅ</rdg>
+<rdg wit="edj">sakiṅ</rdg>
 </app> rabi len, kaṅ vinehan j<unclear>i</unclear>vadana, <app>
 <lem>huta</lem>
-<rdg>uga</rdg>
+<rdg wit="edj">uga</rdg>
 </app> viśeṣa riṅ dr̥ve paveveh ikā. <pb edRef="#EdJ" n="91"/>
 </p>
 
 <p n="262">tiṅkahiṅ putra riṅ pisis, varahakəna patutuṅgalan ikaṅ arane, kāyavr̥ddhi, voṅ a<supplied reason="omitted">p</supplied>mutrani aṅkokiṅave, abotadaṅan, kālavr̥ddhi voṅ 
 <app><lem>ahutaṅ</lem><rdg wit="#ms">ahukaṅ</rdg></app> 
 amətoni naṅ<supplied reason="omitted">an</supplied>kən vulan, 
-<app><lem>karaka</lem><rdg>kāritā vr̥ddhi</rdg></app> 
+<app><lem>karaka</lem><rdg wit="edj">kāritā vr̥ddhi</rdg></app> 
 voṅ ahutaṅ tinuduhan gave, 
 cakravr̥ddhi voṅ ah<unclear>u</unclear>taṅ anikəl aṅguluṅ putrane, papat kehiṅ kalāntara <app>
 <lem>putraniṅ</lem>
@@ -1427,16 +1419,16 @@ riṅ bhukten pucaṅ, riṅ tisan, badeg, savalan, vovohan sakalviriṅ vovohan
 <p n="268"> 
 apan iṅ <app>
 <lem>bhukti</lem>
-<rdg>bhumi</rdg>
+<rdg wit="edj">bhumi</rdg>
 </app> bhinukti deniṅ len <app>
 <lem>kinvavuhan</lem>
-<rdg>kinavruhan</rdg>
+<rdg wit="edj">kinavruhan</rdg>
 </app> deniṅ adr̥ve bhumi<supplied reason="omitted">.</supplied> riṅ roṅ puluh tahun lavase bhinukti deniṅ para mənəṅ tan paṅucap kaṅ adr̥ve <app>
 <lem>bhukti</lem>
-<rdg>bhumi</rdg>
+<rdg wit="edj">bhumi</rdg>
 </app>, yan maṅkana hilaṅ dr̥vene bhumine, maṅkana <app>
 <lem>hinaṅ</lem>
-<rdg>ikaṅ</rdg>
+<rdg wit="edj">ikaṅ</rdg>
 </app> pavevehira s<unclear>i</unclear>ṅ vatək dāna, bhuktinən deniṅ voṅ len, akaraṇa sakiṅ valate hilaṅ pavevehira saṅ
 aveveh, yadyapin ikaṅ <supplied reason="omitted">riṅ</supplied> mas tuvi, vinalat iṅ para, sakiṅ vədine amanəpakuha riṅ mas kaṅ den-valat deniṅ voṅ ikā, mənəṅ tan paṅucap kaṅ adr̥ve riṅ sadaśa tahun lavase, hilaṅ ikaṅ samaṅkana.</p>
 
@@ -1452,7 +1444,7 @@ kunəṅ riṅ voṅ ahutaṅ sakiṅ paṅane, yen tan alavas dene aṅavula, h
 <p n="272"> 
 riṅ voṅ <app>
 <lem>amaraśrada</lem>
-<rdg>amarāśraya</rdg>
+<rdg wit="edj">amarāśraya</rdg>
 </app> aṅher bhuminiṅ abhumi, deśaniṅ adeśa, aṅavula <pb edRef="#EdJ" n="93"/>
  kinavulakən tan harəp, viniddhi kinonkon deniṅ gusti deniṅ lobhaniṅ amarāśraya<unclear>,</unclear> gustine ḍəṇḍanən salakṣa denira saṅ amava bhumi.</p>
 
@@ -1462,22 +1454,22 @@ riṅ voṅ adol kavula tan yogya dolən, tan kaharəpe dinol, den-viśeṣa den
 <p n="274"> 
 riṅ voṅ anambani nora vəruh riṅ osadha, nora vəruh amantra prayoga, tan vəruh tahvaniṅ lara, aṅalap ta <app>
 <lem>ya</lem>
-<rdg>paṅ</rdg>
+<rdg wit="edj">paṅ</rdg>
 </app>həbaṅ-həbaṅ riṅ voṅ agəriṅ ikā, riṅ voṅ maṅkana paḍakəna lavan maliṅ liñok riṅ voṅ anambani maṅkana, yen anambani <app>
 <lem>upasara</lem>
-<rdg>upacāra</rdg>
+<rdg wit="edj">upacāra</rdg>
 </app> tan varas avəkasan <app>
 <lem>mani</lem>
-<rdg>mati</rdg>
+<rdg wit="edj">mati</rdg>
 </app> ḍəṇḍanən pataṅ tali təluṅ atak, yen hana anambani voṅ tan varas anuli mati ḍəṇḍa salakṣa, yen anambani riṅ saṅ brāhmaṇa tan varas anuli mati ḍəṇḍa roṅ lakṣa <app>
 <lem>derara</lem>
-<rdg>nira</rdg>
+<rdg wit="edj">nira</rdg>
 </app> saṅ amava bhumi, yen mati kaṅ den-tambani<supplied reason="omitted">n</supplied>, vənaṅ patenana kaṅ anambani ikā, denira saṅ amava bhumi, maṅkana pagehiṅ dharma, śāsananiṅ samavarṇa.</p>
 
 <p n="275"> 
 nihan lviriṅ voṅ yogya gavenən sākṣ<unclear>i</unclear> voṅ agave gr̥ha, sugih mas <app>
 <lem>pirat</lem>
-<rdg>k</rdg>
+<rdg wit="edj">k</rdg>
 </app> voṅ ake .......</p>
 </div>
 
