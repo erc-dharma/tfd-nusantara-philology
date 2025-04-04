@@ -212,6 +212,7 @@
 			</projectDesc>
 			<editorialDecl>
 				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+				<!-- rdg is filled with maximally normalized versions of the actual ms. readings, meaning that words or affixes different from the lem will be presented in normalized form  -->
 				<correction>
 					<p/>
 				</correction>
@@ -259,14 +260,8 @@
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
-				<!-- choose the language(s) of your text, remove the others -->
 				<language ident="san-Latn">Sanskrit, romanized</language>
 				<language ident="kaw-Latn">Old Javanese, romanized</language>
-				<language ident="ori-Latn">Oriya, romanized</language>
-				<language ident="osn-Latn">Old Sundanese, romanized</language>
-				<language ident="tam-Latn">Tamil, romanized</language>
-				<language ident="kan-Latn">Kannada, romanized</language>
-				<language ident="tel-Latn">Telugu, romanized</language>
 			</langUsage>
 			<textClass>
 				<keywords>
@@ -280,57 +275,98 @@
 			<change who="part:axja" when="2024-10-20" status="draft">Creating an xml edition for the Kutara Manava</change>
 		</revisionDesc>
 	</teiHeader>
-	<text xml:space="preserve" xml:lang="kaw-Latn">		<!-- update the language code -->
+	<text xml:space="preserve" xml:lang="kaw-Latn">
 		<body>
 			<div>
 				<!-- (alias "Kuṭāra Mānava" or "Āgama")
-
 e-text based on Jonker's edition, by Timothy Lubin, Arlo Griffiths and Nurmalia Habibah,
 started around 2019, finished in 2024
-
-
 
 [Based on a comparison of the Jonker (= J) and Hoadley & Hooker (= H) editions, with standardized transliteration.  Numbers in parentheses refer to numbered section in H.  Square brackets enclose words omited in Jonker ed. Elided pepets restored.      atikatik / paṅkon
 Typed by Timothy Lubin.]
 
 §0     [‘introduction’, based on H (partly corrected by TL); deemed by J a later addition to the work and hence omitted by him]-->
 
-				<ab>|| avignam astu ||</ab>
+<ab>|| avignam astu ||</ab>
 
-				<p>ana pva ya maṅke vuvusna | kālanira <app> 
-				<lem wit="L">bhaṭāra</lem>
-				<rdg wit="edH">dhttara</rdg>
-				</app> 
-				rāma | amirәṅvani saṅ ari brata katatvaniṅ paṅarcana saṅ amukti || ndya ta liṅira | riṅ umuṅguh den-amasti iṅ śīlakrama | ambək mavr̥ddhālus tan avamana | aṅgəṅ kasəmbahan niṅ saṅ Deva Pitra | amrih kanurageṅ sama tumuvuh | tan aracuk tuvuh iṅ rasa kayogan | jənək tumirutiru śruti niṅ aji śāstra gəmət | tan aṅudekən  manah ḍevek tulus tan pa saksi | bvat gumisa baṅga kuhaka | tan kədva malajokən tvasta jalukən | avrabot pupujiṅ lepya kalubaniṅ lontar | sira-sira isun-isun ṅisun uga | tan maparəkaṅ rāga dveṣa kimbura | jeku kaṅ dumadya pahilanya || tan umneṅ-vulat iṅ bala amarikṣa laralapanya | jəjəpən kavruhira sənak tan enakəna | prih kalulutan uga pasevan | katapiya kamuddhan varahna krama-iya | jen purugen trapna tata-sthisi ṅulah | duga-duga prayogya riṅ ṅibani vigraha panakaryya | den-kadi amthiki tatanman sarva sari kavva vahan | aḍəmit pinet luṅgahnya lumuṅ pva ja vasananya | avah sumək sumuhun pkarmana iṅ bala | deniṅ amivdhen prayatna volatan tal ṅgalari | katkan iṅ duṣṭa durjjana maliṅ corah | nyata tan kalen kadi medan iṅ mindha | avdaneniṅ kaju madhəg | anpu mendhe inak pva ya parantun nuta vivijah | kaliṅanya tan pa iriṅ saṅ manuṅgaṅira tavihi kanasva Medhaṅ iṅ Ṅasarati | riṅ apan ta Vetara lakunya aparaṅaparuṅ | maṅka nenak andhəl-ira saṅ ta maṅku bumi | ya tanyan pamuhara vigna risira ||</p>
+<p>ana pva ya maṅke vuvusna | kālanira <app> 
+	<lem wit="L">bhaṭāra</lem>
+	<rdg wit="edH">dhttara</rdg>
+	</app> 
+	rāma | amirәṅvani saṅ ari brata katatvaniṅ paṅarcana saṅ amukti || ndya ta liṅira | riṅ umuṅguh den-amasti iṅ śīlakrama | ambək mavr̥ddhālus tan avamana | aṅgəṅ kasəmbahan niṅ saṅ Deva Pitra | amrih kanurageṅ sama tumuvuh | tan aracuk tuvuh iṅ rasa kayogan | jənək tumirutiru śruti niṅ aji śāstra gəmət | tan aṅudekən  manah ḍevek tulus tan pa saksi | bvat gumisa baṅga kuhaka | tan kədva malajokən tvasta jalukən | avrabot pupujiṅ lepya kalubaniṅ lontar | sira-sira isun-isun ṅisun uga | tan maparəkaṅ rāga dveṣa kimbura | jeku kaṅ dumadya pahilanya || tan umneṅ-vulat iṅ bala amarikṣa laralapanya | jəjəpən kavruhira sənak tan enakəna | prih kalulutan uga pasevan | katapiya kamuddhan varahna krama-iya | jen purugen trapna tata-sthisi ṅulah | duga-duga prayogya riṅ ṅibani vigraha panakaryya | den-kadi amthiki tatanman sarva sari kavva vahan | aḍəmit pinet luṅgahnya lumuṅ pva ja vasananya | avah sumək sumuhun pkarmana iṅ bala | deniṅ amivdhen prayatna volatan tal ṅgalari | katkan iṅ duṣṭa durjjana maliṅ corah | nyata tan kalen kadi medan iṅ mindha | avdaneniṅ kaju madhəg | anpu mendhe inak pva ya parantun nuta vivijah | kaliṅanya tan pa iriṅ saṅ manuṅgaṅira tavihi kanasva Medhaṅ iṅ Ṅasarati | riṅ apan ta Vetara lakunya aparaṅaparuṅ | maṅka nenak andhəl-ira saṅ ta maṅku bumi | ya tanyan pamuhara vigna risira ||</p>
 
-				<p>ana maṅkana ya hunturən saṅ hyaṅ aji Pūrvādhigama | ajo riṅ aṅamplaganplagen | apan maha dharalita siṅgit susvare ṅakṣara | riṅ ariṅanən densriṅ siriṅen sisiṅganih ṅakveh |  mavvenvyar tan kapariba voṅ kleśani śarīra ||</p>
+	<p>ana maṅkana ya hunturən saṅ hyaṅ aji Pūrvādhigama | ajo riṅ aṅamplaganplagen | apan maha dharalita siṅgit susvare ṅakṣara | riṅ ariṅanən densriṅ siriṅen sisiṅganih ṅakveh |  mavvenvyar tan kapariba voṅ kleśani śarīra ||</p>
 
-				<p>ana pva riṅ purvādhi liṅen | hyaṅ Yama Dipa sira upapati iṅ devata | asavaka hinantharka riṅ parīkṣa-yusa | pakantuk-ira atrapan dhahub deniṅ ḍəṇḍa | vvaṅ tan salah | kavigrah riṅ vidhi-vasatmah mānuṣa | sinurun sakiṅ Devalaya | katkeṅ Janaloka | deva tuvi kata mariṅ pati | iku kaṅ kayatna kəna ||</p>
+	<p>ana pva riṅ purvādhi liṅen | hyaṅ Yama Dipa sira upapati iṅ devata | asavaka hinantharka riṅ parīkṣa-yusa | pakantuk-ira atrapan dhahub deniṅ ḍəṇḍa | vvaṅ tan salah | kavigrah riṅ vidhi-vasatmah mānuṣa | sinurun sakiṅ Devalaya | katkeṅ Janaloka | deva tuvi kata mariṅ pati | iku kaṅ kayatna kəna ||</p>
 
-				<p>ana vaneh Bagavan Adhi Mandavya sira | maṅanaken Brata Mona Masa | kasper iṅ maliṅ | rinuruh deniṅ taṇḍa | katəmu maṅətətan iṅ kuṇḍa | sinikəp vaya sinaṅkala | tatapi saṅ Brahma na kavaha uga vigraha ||</p>
+	<p>ana vaneh Bagavan Adhi Mandavya sira | maṅanaken Brata Mona Masa | kasper iṅ maliṅ | rinuruh deniṅ taṇḍa | katəmu maṅətətan iṅ kuṇḍa | sinikəp vaya sinaṅkala | tatapi saṅ Brahma na kavaha uga vigraha ||</p>
 
-				<p>hakveh paribasaniṅ tatvad tmika | makasipta vayeṅ parvvalyan yeku ṅgvan iṅ sumiriṅ tagu-tagu || riṅ amtokən pustaka tujunən verahyu | agave maṅgala rumuhun abrasiha sila-krama pajəg sahenak manah ta | sambut saṅ hyaṅ āgama yo sasalahiṅe | padaṅun turena vəkasiṅ tumuvuh saṅ Pesanya | rasa-rinasa yvah akāraṇa cəṅṅila ceceṅgiṅən | tan maṅkana kajariṅ ṅaji Sastragama na || nihan vaneh darśaniya reppeṅgubən antik | dharmaśukla aprāṇacitta tan kaparekiṅ lunda-jana || tan amigraheṅ tan papideśa | api hnəṅiṅ apideśa || ta havədi hiṅkinabitan | tan laga variṅ avədi | | tuhuhna uga sakaranane | ayo paṅliṅya den-kavruha uga ruhun | rarasiṅ priṅgatik sbaniṅ asaya hagrata | den-kadi duṅu lan iṅkara pasaren jīvalana || mapatal viriṅ siva lan palaranya | supiten sarisari apus isanurnya pinəka || riṅ avoṅ palaranya | palunen sarisari heṅguṅən ubəsəniri-sirisa || kunaṅ hiṅ karambəl | vujekən ginarəm pari-sari bəbə den atəguh rinəna || riṅ apa nera mətu haduhnya amratani havurip | siku sikvakniṅ si-patuku rasar-ira | sugyan purvanyana saṅ sipta muṅgviṅ tuntukən aviteṅ banu | yeku mana iṅ vəneh tan pahi lāvan śarīra | śrəddha-kinaśrəddhan || maṅkanaṅ śarīra | apan asəkinatik səbana ||</p>
-
-			</div>
+	<p>hakveh paribasaniṅ tatvad tmika | makasipta vayeṅ parvvalyan yeku ṅgvan iṅ sumiriṅ tagu-tagu || riṅ amtokən pustaka tujunən verahyu | agave maṅgala rumuhun abrasiha sila-krama pajəg sahenak manah ta | sambut saṅ hyaṅ āgama yo sasalahiṅe | padaṅun turena vəkasiṅ tumuvuh saṅ Pesanya | rasa-rinasa yvah akāraṇa cəṅṅila ceceṅgiṅən | tan maṅkana kajariṅ ṅaji Sastragama na || nihan vaneh darśaniya reppeṅgubən antik | dharmaśukla aprāṇacitta tan kaparekiṅ lunda-jana || tan amigraheṅ tan papideśa | api hnəṅiṅ apideśa || ta havədi hiṅkinabitan | tan laga variṅ avədi | | tuhuhna uga sakaranane | ayo paṅliṅya den-kavruha uga ruhun | rarasiṅ priṅgatik sbaniṅ asaya hagrata | den-kadi duṅu lan iṅkara pasaren jīvalana || mapatal viriṅ siva lan palaranya | supiten sarisari apus isanurnya pinəka || riṅ avoṅ palaranya | palunen sarisari heṅguṅən ubəsəniri-sirisa || kunaṅ hiṅ karambəl | vujekən ginarəm pari-sari bəbə den atəguh rinəna || riṅ apa nera mətu haduhnya amratani havurip | siku sikvakniṅ si-patuku rasar-ira | sugyan purvanyana saṅ sipta muṅgviṅ tuntukən aviteṅ banu | yeku mana iṅ vəneh tan pahi lāvan śarīra | śrəddha-kinaśrəddhan || maṅkanaṅ śarīra | apan asəkinatik səbana ||</p>
+</div>
+<div>
+<ab xml:lang="san-Latn">avignam astu.</ab>
+<p n="1">riṅ <app><lem wit="#le2 #le3 #lo1 #ma1 #ja1 #edj #edh">aṣṭaduṣṭa varahakəna</lem>
+<rdg wit="#le1">aṣṭaduṣṭa maṅke varahakəna</rdg></app>.
+<app><lem wit="#le1 #le2 #lo1 #ma1 #ja1 #edj #edh">amateni</lem><rdg wit="#le3">amatenin</rdg></app> voṅ tan padoṣa, 
+akon <app><lem wit="#le1 #le2 #lo1 #ma1 #edj #edh">amatenana</lem>
+<rdg wit="#le3">amatenin</rdg>
+<rdg wit="#ja1">amateni</rdg></app> voṅ tan padoṣa, 
+<app><lem><app><lem wit="#le1 #le2 #lo1 #ma1 #edj #edh">aṅanini</lem>
+<rdg wit="#le3" cause="lexical">anatonin</rdg>
+<rdg wit="#ja1" cause="haplography">aṅani</rdg></app> voṅ tan padoṣa,</lem>
+<note>This sentence is represented twice in <ptr target="#le1"/>, an illegible gap intervening.</note>
+</app>
+<app><lem wit="#le3 #lo1 #ma1 #edj #edh">akəmbulan paṅan lavan</lem>
+<rdg wit="#le1">akbulan paṅan lavan</rdg>
+<rdg wit="#le2">akəmbulan lavan</rdg>
+<rdg wit="#ja1">akəmbulan paṅan lava</rdg>
+</app> duṣṭa, 
+sapaduluran <app><lem wit="#le1 #le2 #lo1 #ma1 #edj #edh">saparane lavan duṣṭa</lem>
+<rdg wit="#le3" cause="syntactic">saparane duṣṭa</rdg>
+<rdg wit="#ja1">panparane duṣṭa</rdg>
+</app>,
+<app><lem wit="#le1 #le2 #le3 #lo1 #ma1 #edj #edh">
+	<app><lem wit="#le1 #le3 #edj #edh">amitra</lem>
+	<rdg wit="#le2">samitra</rdg>
+	<rdg wit="#lo1">hamamitra</rdg>
+	<rdg wit="#ma1">apamitra</rdg>
+	</app> lavan duṣṭa,</lem>
+<rdg wit="#ja1"><gap reason="omitted"/></rdg></app> 
+<app><lem wit="#le1 #le3 #lo1 #ma1 #edj #edh">aveh</lem>
+<rdg wit="#le2" cause="lexical">agave</rdg>
+<rdg wit="#ja1">veh</rdg>
+</app> gənah <app>
+<lem wit="#le1 #le3 #lo1 #ma1 #edj #edh">riṅ</lem>
+<rdg wit="#le2 #ja1">iṅ</rdg>
+</app> duṣṭa, 
+atuluṅ duṣṭa, 
+iku aṣṭaduṣṭa <app><lem wit="#le1 #le3 #ma1 #ja1 #edj #edh">arane</lem>
+<rdg wit="#le2">ṅa</rdg>
+<rdg wit="#lo1">ṅaranya</rdg>
+</app>.
 <!--
- le1:	,,0|| A:vigna:m astu ,,,0|| [#1] riṅ aṣṭadḍu:ṣṭa maṅke varahakna: ,, 0 ,, A:mateni voṁ [SH] tan padoṣa, hakon amatenana vo[ṁ] tan padoṣa,, A:ṅan[i]n[i] vo[ṁ] ta(n padoṣa,,) [+3][1r2]ṅanini tan padoṣa,, Akbulan<reg>Akəmbulan<\reg> paṅan lavan ḍuṣṭa,, ṣapaduluran saparane lavan ḍusṭa:,, A[SH]mitra lavan ḍuṣṭa,, haveḥ gnaḥ riṁ duṣṭa,, Atuluṁ duṣṭa,, Iku aṣṭaduṣṭa harane,, 
- le2:	[01-01]// Om̐ havighnam astu // 0 // riṁṅ aṣṭaduṣṭa varaha:kna. hamate- [01-02]ni voṁ tan padoṣa:, hakon amatenana: voṁ tan padoṣa, Aṅani- [01-03]ni voṁ tan padoṣa, Ak<subst><del rend="corrected">i</del><add place="overstrike">ә</add></subst>mbulan lavan duṣṭa:, sapadulura:n sapa<subst><del rend="strikeout">ṅa</del><add place="above">ra</add></subst>ne [01-04]lavan duṣṭa:, samitra lavan duṣṭa:, Agave gnaḥhiṁ duṣṭa:, hatulūṁ du- [01-05]ṣṭa:. Iku haṣṭaduṣṭa:, ṅa, 
- le3:	[01-01]// 0 // Avighnam aśtu: // | riṁṅ aśṭaḍuśṭa varahakna:, [01-02]Amatenin voṁ tan padoṣa:, Akvan ama:tenin voṁ [01-03]tan padośa:, Anatonin voṁ tan padośa:, [01-04]Akәmbulan paṅan lavan ḍuśṭa:, sapaduluran saparane ḍu- [01-05]ṣṭa:, Amitra lavan ḍuṣṭa:, Aveḥ gnaḥ riṁ ḍuṣṭa:, Atuluṁ ḍu- [01-06]ṣṭa:, Iku haṣṭaḍuṣṭa harane
- lo1:	riṅ aṣṭaduṣṭa: varaha:kna ,, 0,, hamateni voṁ tan padoṣa:,, hakon amatena:na voṁ tan padoṣa,, haṅaninī voṁ tan padoṣa,, hakəmbulan paṅa: n lavan ḍuṣṭa:,, sapaduluran saparane lavan ḍuṣṭa:,, hamamitra lavan ḍuṣṭa:,, haveḥ gnaḥ riṁ duṣṭa:,, hatuluṁ duṣṭa:,, Iku Aṣṭaduṣṭa ṅaranya,,
- ma1:	[1v1] ,, va ,, Avighnam astu  ,, va ,,  [#1] riṁ haṣṭaduṣṭa varahakna ,, 0 ,, hamateni voṁ tan padoṣa [SH] , Akon amatenana voṁ tan padoṣa, Aṅanini voṁ tan padoṣa, hakəmbula[1v2]n paṅan lavan duṣṭa, sapaduluran saparane lavan duṣṭa, Apamitra lavan duṣṭa, haveḥ gnaḥ § [SH] riṁ duṣṭa, Atuluṁ duṣṭa, Iku haṣṭaduṣṭa harane
- ja1:	[01v-01]// 0 // Avighna:m astu nama: siḍәm·  // 0 // [01v-02]riṁ ha:ṣṭa:dusta: varaha:kna . 0 . [01v-03]hamateni voṁ tan padoṣa, hakon· hamateni voṁ tan padoṣa:, [01v-04]haṅani voṁ tan padoṣa:, hakәmbulan paṅan lava ḍusta:, sapadulura [01v-05]n pan parane duṣṭa:, veḥ gnaḥhiṁ dusta:, hatuluṁ duṣṭa:, hiku hasta:du- [01v-06]ṣṭa:, harane,
- edJ:	Amateni wong tanpadoṣa, akon amatenana wong tanpadoṣa, anganini wong tanpadoṣa, akĕmbulan pangan lawan duṣṭa, sapaduluran saparane lawan duṣṭa, amitra lawan duṣṭa aweh gnah ring duṣṭa, atulung duṣṭa, iku aṣṭaduṣṭa arane.
- edH:	ring astha dustha warahakna 110114 a.mateni wong tanpa dosa I I akon amatenana wong tanpa dose. I I a.nganini wong tanpa dosa II akembulan pangan lawan dustha I I sapaduluran saparane lawan dustha II am.amitra5 lawan dustha I I aweh gnah ring dustha II atulune; dustha II iku astha dustha ara 14 r./ ne
+ le1: 
+ 
+ le2:  
+ 
+ le3: 
+ 
+ lo1:
+ 
+ ma1: 
+
+ ja1: 
+
+ edj: 
+
+ edh: 
 -->
-
-
-			<div>
-				<p n="1">(1) || riṅ aṣṭaduṣṭa varahakəna ||
-amateni voṅ tan padoṣa | akon amatenana voṅ tan padoṣa | aṅanini voṅ tan padoṣa |
-akəmbulan paṅan lāvan duṣṭa | sapaduluran saparane lāvan duṣṭa |
-amitra lāvan duṣṭa | aveh gənah riṅ duṣṭa | atuluṅ duṣṭa | iku aṣṭaduṣṭa arane ||
+<!-- #le1 #le2 #le3 #lo1 #ma1 #ja1 #edj #edh  -->
 riṅ aṣṭaduṣṭa kaṅ tətəlu adoṣa pati | kaṅ lilima adoṣa artha | katuturəna deniṅ
-harəp vəruha patutuṅgalane | əndi ta kaṅ adoṣa pati ? (2) riṅ voṅ amateni voṅ tan padoṣa | doṣa pati || riṅ akon amatenana voṅ tan padoṣa | doṣa pati || riṅ anatoni voṅ tan padoṣa | doṣa pati || (3) əndi ta kaṅ lilima adoṣa hartha || sapaṅan lāvan duṣṭa | samitra lāvan duṣṭa | sapaduluran saparane lāvan duṣṭa | aveh gənah riṅ duṣṭa | atuluṅ duṣṭa | iku ta kaṅ lilima paḍa adoṣa artha || nora vənaṅ doṣanana pati denira saṅ amava bhumi || amateni voṅ tan padoṣa | akon amatenana voṅ tan padoṣa | anatoni voṅ tan padoṣa || duṣṭa tətəlu iku | yan sayəkti sacihna | katəlu ḍəṇḍa pati | arane katlu duṣṭa atoh avake | yan amalaku huripən iṅ saṅ amava bhumi | katəlu ḍəṇḍanən pataṅ lakṣa vivijinən iṅ duṣṭa satuṅgalsatuṅgal kahilaṅane doṣane || (4) hana dene kaṅ sapaṅan lāvan duṣṭa | sadulur lāvan duṣṭa | amitra lāvan duṣṭa | aveh gənah riṅ duṣṭa | iku kalima paḍa ḍəṇḍanən
+harəp vəruha patutuṅgalane | əndi ta kaṅ adoṣa pati?</p>
+<p n="2">riṅ voṅ amateni voṅ tan padoṣa | doṣa pati || riṅ akon amatenana voṅ tan padoṣa | doṣa pati || riṅ anatoni voṅ tan padoṣa | doṣa pati ||</p>
+<p n="3">əndi ta kaṅ lilima adoṣa hartha || sapaṅan lāvan duṣṭa | samitra lāvan duṣṭa | sapaduluran saparane lāvan duṣṭa | aveh gənah riṅ duṣṭa | atuluṅ duṣṭa | iku ta kaṅ lilima paḍa adoṣa artha || nora vənaṅ doṣanana pati denira saṅ amava bhumi || amateni voṅ tan padoṣa | akon amatenana voṅ tan padoṣa | anatoni voṅ tan padoṣa || duṣṭa tətəlu iku | yan sayəkti sacihna | katəlu ḍəṇḍa pati | arane katlu duṣṭa atoh avake | yan amalaku huripən iṅ saṅ amava bhumi | katəlu ḍəṇḍanən pataṅ lakṣa vivijinən iṅ duṣṭa satuṅgalsatuṅgal kahilaṅane doṣane || 
+(4) hana dene kaṅ sapaṅan lāvan duṣṭa | sadulur lāvan duṣṭa | amitra lāvan duṣṭa | aveh gənah riṅ duṣṭa | iku kalima paḍa ḍəṇḍanən
 aṅroṅ lakṣa denira saṅ amava bhumi <app>
 					<lem wit="#HH">amitra lāvan duṣṭa || atuluṅ duṣṭa || aveh gənah riṅ duṣṭa  | iku kalima paḍa ḍəṇḍanən | denira saṅ amava bhumi | aṅroṅ lakṣa riṅ voṅ duṣṭa satuṅgalsatuṅgal |</lem>
 				</app> yen <app>
