@@ -4,21 +4,22 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:id="svayambhu"
-     xml:lang="eng"
-     type="edition">
+     xml:lang="eng">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Svayambhu</title>
             <title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
-            <editor ref="part:argr">
+           <respStmt>
+             <resp>Author of the Digital Edition</resp>
+             <persName ref="part:argr">
                <forename>Arlo</forename>
                <surname>Griffiths</surname>
-            </editor>
-            <editor ref="part:tilu">
+            </persName>
+           <persName ref="part:tilu">
                <forename>Timothy</forename>
                <surname>Lubin</surname>
-            </editor>
+            </persName></respStmt>
             <respStmt>
                <resp>structuring of the TEI file</resp>
                <persName ref="part:argr">
@@ -243,7 +244,7 @@ Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisang
    <!-- material for notes in TEI header once proper structure has been applied:
 - both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a -->
    <text xml:space="preserve" xml:lang="kaw-Latn">
-		<body>
+		<body><div type="edition">
 <div xml:id="svayambhu_01">
   <!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t·, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji,
   la:van mantri riṁ [01-03] vruḥ maviveka:,
@@ -8599,6 +8600,12 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 </div>
 <!-- TG+AG have reached here on 2025-01-12 -->
 <!-- end of div type edition -->
+		</div>
+		<div type="translation">
+         <div>
+    <p n="1" corresp="#svayambhu_02.01.02"><supplied reason="subaudible"><quote rend="stanza" corresp="txt:MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied> Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
+</div>
+      </div>
 		</body>
 	</text>
 </TEI>

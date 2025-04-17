@@ -1,27 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
-     type="edition"
      xml:id="dharmaPatanjala">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Dharma Pātañjala</title>
-            <editor ref="part:anac">
-               <forename>Andrea</forename>
-               <surname>Acri</surname>
-            </editor>
             <respStmt>
+               <resp>Author of the Digital Edition</resp>          
                <persName ref="part:anac">
                   <forename>Andrea</forename>
                   <surname>Acri</surname>
                </persName>
-               <resp>Edited the text (2006–2011); typed and maintained the text file (2006–2018)</resp>
-               <resp>Converted the text to TEI format (2018–2023)</resp>
-            </respStmt>
+              </respStmt>
          </titleStmt>
          <publicationStmt>
             <publisher>EFEO/EPHE (Université PSL)</publisher>
@@ -82,7 +76,9 @@
          <projectDesc>
             <p>Project funded by EFEO/EPHE (Université PSL)</p>
             <p>Typed by Andrea Acri. Corrections of misprints in the 2011 edition, as well as more substantial changes (e.g. alternative emendations/reconstructions), have been applied on the basis of the 2017 edition; corrections of misprints in the 2017 edition have been applied tacitly.</p>
-            <p>Andrea Acri converted the transcription to compliiance with DHARMA norms.</p>
+            <p>Andrea Acri converted the transcription to comply with DHARMA norms.</p>
+            <p>Edited the text (2006–2011); typed and maintained the text file (2006–2018)</p>
+            <p>Converted the text to TEI format (2018–2023)</p>
          </projectDesc>
       </encodingDesc>
       <profileDesc>
@@ -98,7 +94,7 @@
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="kaw-Latn">
-    <body> 
+    <body><div type="edition"> 
        <div xml:id="dharmaPatanjala_01">
 <pb n="194"/>
        <p xml:id="dharmaPatanjala_01.01"><pb n="0v" edRef="ms"/><lb/>siddhir astu</p>
@@ -1322,7 +1318,7 @@ palvir tinonta, apan ta pva pratyakṣa ya, yāvat tan palvir ikaṅ jagat, tāv
           </div>
 <div xml:id="dharmaPatanjala_02"><ab xml:id="dharmaPatanjala_02.01" type="colophon">tәlas sinurat iṅ antiraga pun, iti dharma pātañjala samāpta ◆ titi māsa padūpvan vulan kasapuluh, pañcavara, u, trivara, dva, saptavara, a, aṣṭavara, yama, vuku vuyai, i śaka, parab iṅ sakala lavaṅ gajah guṇa vvaṅ ◆</ab></div>
           
-    </body>
+    </div></body>
   </text>
 </TEI>
 <!-- bhoga</foreign> <foreign xml:lang="san-Latn">upabhoga -->

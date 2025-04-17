@@ -4,8 +4,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:id="jinarthiprakrti"
-     xml:lang="eng"
-     type="edition">
+     xml:lang="eng">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -14,11 +13,11 @@
       	<principal><persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName></principal>
       	<principal><persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName></principal>-->
             <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/" xml:id="part:argr">Arlo Griffiths</persName>
+               <persName xml:id="part:argr">Arlo Griffiths</persName>
                <resp>Typed the text (2011)</resp>
             </respStmt>
             <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/" xml:id="part:argr">Arlo Griffiths</persName>
+               <persName xml:id="part:argr">Arlo Griffiths</persName>
                <resp>Converted the text to TEI format</resp>
             </respStmt>
          </titleStmt>
@@ -86,7 +85,7 @@
       </revisionDesc>
    </teiHeader>
    <text xml:lang="kaw-Latn">
-      <body>
+      <body><div type="edition">
          <div type="canto" n="1" met="śārdūlavikrīḍita">
             <lg n="1">
                <l n="a">nāhan lakṣaṇa saṅ tathāgata mahāyāna pva yan kavruhi |</l>
@@ -330,6 +329,6 @@
          <div>
             <ab type="colophon">jinārthiprakr̥ti || pralambaṅ kamahāyānin  ||</ab>
          </div>
-      </body>
+      </div></body>
    </text>
 </TEI>

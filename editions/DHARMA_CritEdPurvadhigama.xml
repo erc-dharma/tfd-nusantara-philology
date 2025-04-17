@@ -1,29 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
   xml:id="purvadhigama"
-  xml:lang="eng"
-  type="edition">
+  xml:lang="eng">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title type="main" xml:lang="kaw-Latn">Pūrvādhigamaśāsana</title>
         <title type="sub">Digital Critical Edition and Translation of an Old Javanese Legal
           Code</title>
-        <editor ref="part:masc">
+        <respStmt>
+          <resp>Author of Digital Edition</resp>
+          <persName ref="part:masc">
           <forename>Marine</forename>
           <surname>Schoettel</surname>
-        </editor>
-        <editor ref="part:argr">
+        </persName>
+          <persName ref="part:argr">
           <forename>Arlo</forename>
           <surname>Griffiths</surname>
-        </editor>
-        <editor ref="part:tilu">
+        </persName>
+          <persName ref="part:tilu">
           <forename>Timothy</forename>
           <surname>Lubin</surname>
-        </editor>
+        </persName></respStmt>
       </titleStmt>
       <publicationStmt>
         <authority>DHARMA</authority>
@@ -197,7 +198,7 @@
     </revisionDesc>
   </teiHeader>
   <text xml:space="preserve" xml:lang="kaw-Latn">
-    <body>
+    <body><div type="edition">
 	<div xml:id="purvadhigama_01"><ab xml:id="purvadhigama_01.01" type="invocation" xml:lang="san-Latn"><app><lem wit="#L1 #L3 #D #Or4431">avighnam astu</lem><rdg wit="#B">|| 0 || nama śivaya || 0 ||</rdg><rdg wit="#E">Avighnam astu tatastu hastu nama</rdg></app></ab></div>
 <div n="1" type="chapter" xml:id="purvadhigama_02">
 <head type="editorial" xml:lang="eng">Introduction: origin of the Pūrvādhigama</head>
@@ -369,6 +370,6 @@
   </div>
 <div xml:id="purvadhigama_17"><ab type="colophon" xml:id="purvadhigama_17.01">// 0 // iti śivaśāsana sāroddhr̥ta</ab></div>
 
-    </body>
+    </div></body>
   </text>
 </TEI>

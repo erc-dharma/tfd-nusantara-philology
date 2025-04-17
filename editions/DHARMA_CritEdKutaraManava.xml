@@ -2,16 +2,17 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kutaramanava" type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kutaramanava">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main" xml:lang="kaw-Latn">Kuṭāra Mānava</title>
 				<!--Change the title of the file with the name of your text-->
 				<title type="sub">Digital Critical Edition and Translation of an Old Javanese Penal Code</title>
-				<editor ref="part:nuha">
+				<respStmt>
+					<resp>Author of Digital Edition</resp><persName ref="part:nuha">
 					<name>Nurmalia Habibah</name>
-				</editor>
+				</persName></respStmt>
 				<respStmt>
 					<!-- repeat the respStmt when necessary -->
 					<resp>creation of the file</resp>
@@ -255,7 +256,7 @@
 		</revisionDesc>
 	</teiHeader>
 	<text xml:space="preserve" xml:lang="kaw-Latn">
-		<body>
+		<body><div type="edition">
 			<div>
 				<!-- (alias "Kuṭāra Mānava" or "Āgama")
 e-text based on Jonker's edition, by Timothy Lubin, Arlo Griffiths and Nurmalia Habibah,
@@ -1741,6 +1742,6 @@ nihan lviriṅ voṅ yogya gavenən sākṣ<unclear>i</unclear> voṅ agave gr̥
 </app> voṅ ake .......</p>
 </div>
 
-</body>
+</div></body>
 </text>
 </TEI>

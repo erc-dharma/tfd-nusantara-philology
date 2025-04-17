@@ -2,16 +2,17 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="kalpabuddha" xml:lang="eng" type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="kalpabuddha" xml:lang="eng>
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title type="main">Kalpabuddha</title>
 				<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Buddhist Text</title>
-				<editor ref="part:argr">
+				<respStmt>
+					<resp>Author of Digital Edition</resp><persName ref="part:argr">
 					<forename>Arlo</forename>
 					<surname>Griffiths</surname>
-				</editor>
+				</persName></respStmt>
 				<!-- <respStmt>
 					<persName xml:id="part:argr" ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
 					<resp>Typed the text (2011)</resp>
@@ -107,7 +108,7 @@
 		</revisionDesc>
 	</teiHeader>
 	<text xml:lang="kaw-Latn">
-		<body>
+		<body><div type="edition">
 			<p n="1">nihan hajinira <app>
 					<lem wit="#ms2 #ms3 #ms4">sira</lem>
 					<rdg wit="#ms1">sari</rdg>
@@ -394,7 +395,7 @@ Abhisamayamañjarī by Śubhākaragupta: akoṣobhyavajraḥ savajrabhūsparṣa
 						<note>Should we not rather understand Kalpa Bauddha?</note>
 					</app> iti, paramarahasya || 0 ||</ab>
 			</div>
-		</body>
+		</div></body>
 	</text>
 
 </TEI>
