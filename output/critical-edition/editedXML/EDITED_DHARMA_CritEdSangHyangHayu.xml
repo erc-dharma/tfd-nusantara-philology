@@ -3,20 +3,13 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="shh"
-     type="edition"
-     xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="shh" xml:lang="eng">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Saṅ Hyaṅ Hayu</title>
-            <editor ref="part:adgu">
-               <name>Aditia Gunawan</name>
-            </editor>
             <respStmt>
-               <resp>TEI encoding</resp>
-               <!--TBM-->
+               <resp>Author of the Digital Edition</resp>
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
                </persName>
@@ -218,7 +211,7 @@
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="kaw-Latn">
-        <body>
+        <body><div type="edition">
            <div type="chapter" n="1">
                               <head type="editorial" xml:lang="eng">Wrong Rasacarita and Kalpacarita</head>
               <p xml:id="shh_01.01">ndah saṅ hyaṅ hayu ikaṅ ajarakna mami 
@@ -911,6 +904,6 @@
            <div>
 <ab type="colophon">iti srinanta agəṅ kahuvusan saṅ hyaṅ pustaka pun.</ab>
            </div>
-           </body>
+           </div></body>
     </text>
 </TEI>

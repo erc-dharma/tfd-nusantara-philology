@@ -2,10 +2,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:lang="eng"
-     xml:id="rt"
-     type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="rt">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,10 +10,13 @@
             <title type="alt">Rāma’s Conquest</title>
             <title type="sub">Digital Critical Edition of the Kakavin Rāmavijaya</title>
             <author>Tan iṅ Rāt</author>
-            <editor ref="part:argr">
-               <forename>Arlo</forename>
-               <surname>Griffiths</surname>
-            </editor>
+            <respStmt>
+               <resp>Author of the Digital Edition</resp>
+               <persName ref="part:argr">
+                  <forename>Arlo</forename>
+                  <surname>Griffiths</surname>
+               </persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
@@ -188,7 +188,7 @@
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="">
-        <body>
+        <body><div type="edition">
         <div xml:id="rt_01"><ab xml:id="rt_01.01" type="invocation"><pb edRef="#JK" n="1v"/><lb n="1"/>avighnam astu.</ab></div>
 
 <div type="canto" rend="met" met="jagaddhita" n="1" xml:id="rt_02">
@@ -4318,6 +4318,6 @@
   <div xml:id="rt_105">
              <ab xml:id="rt_105.01" type="colophon">iti kakavin rāmavijaya, samāpta. təlas sinurat riṅ gəria piḍaḍa, duk taṅgal 30 april 1973. varsaniṅ loka.-</ab>
            </div>
-        </body>
+        </div></body>
     </text>
 </TEI>
