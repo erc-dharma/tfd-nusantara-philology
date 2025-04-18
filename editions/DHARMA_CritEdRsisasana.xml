@@ -4,7 +4,6 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:id="rsisasana"
-     type="edition"
      xml:lang="eng">
    <teiHeader>
       <fileDesc>
@@ -13,19 +12,21 @@
             <title type="alt">Ordinance for the Sages</title>
             <title type="sub">Digital Critical Edition and Translation of an Old Javanese Code of Conduct for Hermits</title>
             <!--need to revise the idea of "a code", and that of "conduct"-->
-            <editor ref="part:masc">
+         	<respStmt>
+         		<resp>Author of the digital edition</resp>
+         		<persName ref="part:masc">
                <forename>Marine</forename>
                <surname>Schoettel</surname>
-            </editor>
-         	<editor ref="part:argr">
+            </persName>
+         	<persName ref="part:argr">
          		<forename>Arlo</forename>
          		<surname>Griffiths</surname>
-         	</editor>
-         	<editor ref="part:tilu">
+         	</persName>
+         	<persName ref="part:tilu">
          		<forename>Timothy</forename>
          		<surname>Lubin</surname>
-         	</editor>
-            <respStmt>
+         	</persName>
+</respStmt>            <respStmt>
                <resp>initial TEI encoding</resp>
                <!--TBM-->
                <persName ref="part:masc">
@@ -179,7 +180,7 @@
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="kaw-Latn">
-	<body>
+	<body><div type="edition">
 <div xml:id="rsisasana_01">
 <ab xml:id="rsisasana_01.01" type="invocation" xml:lang="san-Latn"><pb edRef="#A" n="1v"/>//0// om̐ <app><lem type="norm">namaḥ</lem><rdg wit="#A #B #C #D">nama</rdg></app> śivāya //0//</ab>
 </div>
@@ -685,6 +686,6 @@ vudug, vuta, ajan, edan, lara-laran, busuṅ, tuli, bisu.-->, tan  <app><lem typ
 </div>
 
 <div xml:id="rsisasana_17"><ab xml:id="rsisasana_17.01" type="colophon">iti <app><lem wit="#A #B">saṅ</lem><rdg wit="#C">sa</rdg></app> hyaṅ <app><lem wit="#A #C">r̥ṣiśāsana</lem><rdg wit="#C">R̥ṣiśa:śana <!--<lb/>--><del>Irika: divaśa rahyaṁta ri mḍaṁ, Ampu sidḍa pa:ṇḍita, makon· kumayatnakna, ri kadeyakna hikanaṁ janma manuṣa,</del></rdg><rdg wit="#C">R̥śiśa:śana</rdg><note>The fact that the scribe has cancelled the extra text in <ptr target="#A"/> reinforces my impression that it is an interpolation. </note></app></ab></div>
-</body>
+</div></body>
 </text>
 </TEI>

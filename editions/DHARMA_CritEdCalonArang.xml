@@ -2,25 +2,18 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="ca" type="edition"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="ca"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="main">Calon Araṅ</title>
                 <!--Change the title of the file with the name of your text-->
-                <title type="sub">Digital Critical Edition of Calon Araṅ</title>
-                <!-- fill in the subtitle if necessary -->
-                <editor ref="part:argr">
-                    <forename>Arlo</forename>
-                    <surname>Griffiths</surname>
-                </editor>
+                <title type="sub">Digital Critical Edition of Calon Araṅ</title>          
                 <respStmt>
-                    <!-- repeat the respStmt when necessary -->
-                    <resp>creation of the file</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:jodo"><!-- update the id -->
-                        <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Doe</surname>
+                    <resp>Author of the digital edition</resp>
+                    <persName ref="part:argr">
+                        <forename>Arlo</forename>
+                        <surname>Griffiths</surname>
                     </persName>
                 </respStmt>
             </titleStmt>
@@ -115,7 +108,7 @@
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve" xml:lang="und"><!-- update the language code -->
-		<body>
+		<body><div type="edition">
 			<div>
 <ab>
 <!--wangsa bajra wong java buddha
@@ -269,6 +262,6 @@ lontar calon arang
 label: kasujarahane empu baradah, lontar calon araṅ
 <note n="1"/> komentar:-->
 </ab>			</div>
-		</body>
+		</div></body>
 	</text>
 </TEI>

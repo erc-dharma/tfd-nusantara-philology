@@ -2,17 +2,14 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="jm" type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="jm">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="main">Jati Mula</title>
                 <title type="alt">The True Origin</title>
-                <editor ref="part:ilnu">
-                    <name>Ilham Nurwansah</name>
-                </editor>
                 <respStmt>
-                    <resp>intellectual authorship of edition</resp>
+                    <resp>Author of the digital edition</resp>
                     <persName ref="part:ilnu">
                         <name>Ilham Nurwansah</name>
                     </persName>
@@ -208,7 +205,7 @@
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve" xml:lang="osn-Latn">
-		<body>
+		<body><div type="edition">
 		    <div type="chapter" n="1" xml:id="jamu_01">
 <pb edRef="#H" n="1"/><lb edRef="#H" n="1-23"/><pb edRef="#A" n="1a(H);2r"/>
                 ndah <app><lem type="norm">varahakna</lem><rdg wit="#A #H">varahhakna</rdg></app> na puhun, jati luput <app><lem wit="#A">tan</lem><rdg wit="#H" cause="morphological">tanpa</rdg></app> pakatuduhan,
@@ -368,6 +365,6 @@
 <p><pb edRef="#H" n="31"/><lb edRef="#H" n="6-8"/> na vvat paṅ kuvus ti nu luput, tanpa katuduhhan ti puhun, pun.</p>
 <p><pb edRef="#H" n="31"/><lb edRef="#H" n="9-10"/> tәlassi nulis riṅ saṅgara visesa, pun.</p>
 </div>
-		</body>
+		</div></body>
 	</text>
 </TEI>

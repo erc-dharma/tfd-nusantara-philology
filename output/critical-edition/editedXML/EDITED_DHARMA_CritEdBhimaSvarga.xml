@@ -2,21 +2,13 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:lang="eng"
-     xml:id="bhimaSvarga"
-     type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="bhimaSvarga">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Bhīma Svarga</title>
-            <editor>
-               <name>Aditia Gunawan</name>
-            </editor>
             <respStmt>
-                    <!-- repeat the respStmt when necessary -->
-               <resp>creation of the file</resp>
-               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <resp>Author of the digital edition</resp>
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
                </persName>
@@ -259,7 +251,7 @@
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="kaw-Latn">
-		<body>
+		<body><div type="edition">
     <div>
 <p><app><lem type="norm">oṁ avighnam astu</lem><rdg wit="#A">// Ø // o<unclear>ṁ</unclear> avignam as<unclear>tu</unclear></rdg><rdg wit="#B">//  ba // <g type="symbol" subtype="danda"/>Ø<g type="symbol" subtype="danda"/> - oṁ me // /// Ø<g type="symbol" subtype="danda"/> oṁ avignәm astu nama sidәm<g type="symbol" subtype="danda"/>  Ø <g type="symbol" subtype="danda"/> Ø</rdg><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">oṁ avignamastu</rdg></app>.</p>
         
@@ -1957,6 +1949,6 @@ lah guru, <app><lem type="norm">aṣṭa araniṅ vvavvalu</lem><rdg wit="#A">as
 <app><lem type="norm">oṁkāra namah śivāya</lem><rdg wit="#A">oṁkara nama sivaya</rdg><rdg wit="#B">oṁkara na<unclear>masi</unclear>hvaya</rdg><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">omka:ra na:ma śivaya:</rdg></app> <app><lem type="norm">sa bā ta a ī</lem><rdg wit="#A">sa ba ta a i</rdg><rdg wit="#B">sa ba ta a iṅ</rdg><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">sa ba ta a i na:ma śivaya:</rdg></app>.
 </p>
 </div>
-</body>
+</div></body>
 	</text>
 </TEI>

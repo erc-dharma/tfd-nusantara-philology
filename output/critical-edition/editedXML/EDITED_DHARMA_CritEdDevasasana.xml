@@ -2,20 +2,20 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:lang="eng"
-     xml:id="id"
-     type="edition"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Devaśāsana</title>
             <title type="sub">Digital Critical Edition of an Old Javanese Code of Conduct</title>
             <!-- fill in the subtitle if necessary -->
-            <editor ref="part:argr">
-               <forename>Arlo</forename>
-               <surname>Griffiths</surname>
-            </editor>
+            <respStmt>
+               <resp>Author of the digital edition</resp>
+               <persName ref="part:argr">
+                  <forename>Arlo</forename>
+                  <surname>Griffiths</surname>
+               </persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
@@ -230,7 +230,7 @@
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve" xml:lang="kaw-Latn">
-<body>
+<body><div type="edition">
 			<div>
 				<ab type="invocation"><app><lem wit="#ms5056">avighnam astu</lem><rdg wit="#ms9534">namo buddhāya</rdg></app>.</ab>
 			</div>
@@ -449,6 +449,6 @@ na devā na ca dikpālā na vedā na guruḥ kvacit || 36 ||
 			</div>
 			    <!--<xi:include href="a.xml" xpointer="a1"
         xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
-		</body>
+		</div></body>
 	</text>
 </TEI>

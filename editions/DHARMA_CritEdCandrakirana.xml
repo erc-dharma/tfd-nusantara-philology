@@ -4,8 +4,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
   xml:lang="eng"
-  xml:id="candrakirana"
-  type="edition">
+  xml:id="candrakirana">
  <teiHeader>
   <fileDesc>
    <titleStmt>
@@ -13,12 +12,9 @@
    <title type="alt">Ray of the Moon</title>
    <title type="sub">Digital Critical Edition and Translation of an Old Javanese Poetological Treatise</title>
    <!-- fill in the subtitle if necessary -->
-   <editor ref="part:zapa">
-    <name>Zakariya Pamuji Aminullah</name>
-   </editor>
    <respStmt>
      <!-- repeat the respStmt when necessary -->
-    <resp>intellectual authorship of edition</resp>
+    <resp>Author of the digital edition</resp>
     <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
     <persName ref="part:zapa"><!-- update the id -->
      <name>Zakariya Pamuji Aminullah</name>
@@ -41,7 +37,7 @@
 <listWit>
    <witness xml:id="msj">
          <abbr type="siglum">J</abbr>
-         <desc>The Javanese Manuscripts</desc></witness>
+         <desc>The Javanese Manuscripts</desc>
    <listWit>
     <witness xml:id="msja">
      <abbr type="siglum">J<hi rend="subscript">1</hi></abbr>
@@ -108,12 +104,11 @@
      </msDesc>
     </witness>
     </listWit> 
-   </listWit> 
+   </witness>
 
-<listWit>
    <witness xml:id="msb">
          <abbr type="siglum">B</abbr>
-         <desc>The Balinese Manuscripts</desc></witness>
+         <desc>The Balinese Manuscripts</desc>
     <listWit>
     <witness xml:id="msba">
      <abbr type="siglum">B<hi rend="subscript">1</hi>
@@ -195,12 +190,13 @@
      </msDesc>
     </witness>
     </listWit> 
+   </witness>
 
-<listWit>
-   <witness xml:id="ed">
+   <witness
+    xml:id="ed">
          <abbr type="siglum">Ed</abbr>
          <desc>The Published Edition</desc></witness>
-   <listWit>
+
     <witness xml:id="edlc">
      <abbr type="siglum">Ed<hi rend="superscript">LC</hi>
      </abbr>
@@ -208,8 +204,8 @@
       <ptr target="bib:LokeshChandra1997_02"/>
      </bibl>
     </witness>
-   </listWit> 
-   </listWit>
+    
+   
 </listWit>
 
    <listBibl>
@@ -308,7 +304,7 @@
  </teiHeader>
  <text xml:space="preserve" xml:lang="kaw-Latn">
 
-<body>
+<body><div type="edition">
 
 <div xml:id="candrakirana_01">
 <ab xml:id="candrakirana_01.01" type="invocation" xml:lang="san-Latn">
@@ -13847,6 +13843,6 @@ māsa śrāvaṇa, īśvara; <app><lem wit="#msja #msjb">bhādravada</lem><rdg w
 
 </div>
 
-</body>
+</div></body>
 </text>
 </TEI>
