@@ -7,18 +7,11 @@
                 <!--Change the title of the file with the name of your text-->
                 <!--<title type="subtitle">Digital Diplomatic Edition of...</title>-->
                 <!-- fill in the subtitle if necessary -->
-                <editor ref="part:nuha">
-                    <name>Nurmalia Habibah</name>
-                </editor>
-                <!--axja: Gregory and Anne Young  were given as author of the word doc-->
                 <respStmt>
-                    <!-- repeat the respStmt when necessary -->
-                    <resp>creation of the file</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:jodo"><!-- update the id -->
-                        <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Doe</surname> </persName>
-                </respStmt>
+                    <resp>Author of the digital edition</resp>
+                    <persName ref="part:nuha">
+                    <name>Nurmalia Habibah</name>
+                </persName></respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>DHARMA</authority>
@@ -854,6 +847,15 @@
 14. 12. 05-->
    <!-- axja: not sure you wanted to keep this, so I commented -->
 </ab></div>
-<div type="bibliography"> 				<p/> 				<listBibl type="primary"> 				<bibl n="siglum"/> 			</listBibl>            <listBibl type="secondary">               <bibl/>            </listBibl> 			</div> 		</body>
-</text>
+           <div type="bibliography">
+               <p>Gregory and Anne Young  were given as author of the word doc</p>
+               <listBibl type="primary">
+				<bibl n="siglum"/><!-- one <bibl/> per item of primary bibliography. Every entry mentionned in apparatus  should hava a @n to declare its sigla -->
+			</listBibl>
+           <listBibl type="secondary">
+              <bibl/><!-- one <bibl/> per item of secondary bibliography -->
+           </listBibl>
+           </div>
+       </body>
+    </text>
 </TEI>
