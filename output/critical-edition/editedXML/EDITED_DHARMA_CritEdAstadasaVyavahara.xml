@@ -2,25 +2,16 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id">
+	<!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Aṣṭādaśavyavahāra</title>
-            <title type="sub">Digital Critical Edition of and Old Javanese Juridical Text</title>
-            <editor ref="part:argr">
-               <forename>Arlo</forename>
-               <surname>Griffiths</surname>
-            </editor>
-            <editor ref="part:tilu">
-               <forename>Timothy</forename>
-               <surname>Lubin</surname>
-            </editor>
-            <editor ref="part:nuha">
-               <name>Nurmalia Habibah</name>
-            </editor>
+            <title>Aṣṭādaśavyavahāra</title>
+            <!--	<title type="sub"
+					>Digital Critical Edition of and Old Javanese Juridical Text</title>-->
             <respStmt>
-               <resp>diplomatic edition of the codex unicus</resp>
+               <resp>Author of the digital edition</resp>
                <persName ref="part:argr">
                   <forename>Arlo</forename>
                   <surname>Griffiths</surname>
@@ -29,12 +20,8 @@
                   <forename>Timothy</forename>
                   <surname>Lubin</surname>
                </persName>
-            </respStmt>
-            <respStmt>
-               <resp>encoding of the edition</resp>
-               <persName ref="part:argr">
-                  <forename>Arlo</forename>
-                  <surname>Griffiths</surname>
+               <persName ref="part:nuha">
+                  <name>Nurmalia Habibah</name>
                </persName>
             </respStmt>
          </titleStmt>
@@ -164,7 +151,7 @@
          </langUsage>
          <textClass>
             <keywords>
-	<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords> -->
+					<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords> -->
                <term/>
                <!-- Ignore this element for the time being. -->
             </keywords>
@@ -978,6 +965,26 @@ nato na mato komatah, nākṣa kr̥ṣṇonapisitah, nā sumārtvo na karmato na
 </p>
 </div>
 </div>
-		<div type="bibliography"> 				<p/> 				<listBibl type="primary"> 				<bibl n="siglum"/> 			</listBibl>            <listBibl type="secondary">               <bibl/>            </listBibl> 			</div> 		</body>
+			<div type="bibliography">
+				<p><respStmt>
+	<resp>diplomatic edition of the codex unicus</resp>
+		<persName ref="part:argr">
+			<forename>Arlo</forename>
+			<surname>Griffiths</surname>
+		</persName>
+		<persName ref="part:tilu">
+			<forename>Timothy</forename>
+			<surname>Lubin</surname>
+		</persName>
+		</respStmt>
+				<respStmt>
+					<resp>encoding of the edition</resp>
+					<persName ref="part:argr"> <forename>Arlo</forename>
+						<surname>Griffiths</surname> </persName>
+				</respStmt></p>
+				<listBibl type="primary"> 				<bibl n="siglum"/> 			</listBibl>
+				<listBibl type="secondary">               <bibl/>            </listBibl>
+			</div>
+		 		</body>
 	</text>
 </TEI>
