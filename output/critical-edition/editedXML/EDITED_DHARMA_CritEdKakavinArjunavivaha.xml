@@ -27,6 +27,51 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
+               <witness xml:id="R">
+                  <!-- axja to argr and anol: can you please fill in the following declaration for your ms R? -->
+                  <abbr type="siglum"/>
+                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>XXX</settlement>
+                        <institution>XXX</institution>
+                        <repository>XXX</repository>
+                        <idno>XXX</idno>
+                     </msIdentifier>
+                     <msContents>
+                           <!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <author>xxx</author>
+                           <title>xxx</title>
+                           <!-- You can also add a colophon if needed -->
+                           <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                           <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+                              <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>xxx</p>
+                        </objectDesc>
+                        <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                              <!-- Create a handNote for each hand -->
+                           <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                              <abbr type="hand">A<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi>
+                              </abbr>
+                              <!-- Give the abbreviation siglum for the hand built on siglum-of-the-manuscript_H1, the number being incremental -->
+                              <p>main hand of the manuscript, black ink, Sundanese script</p>
+                              <!-- provide a description of the hand -->
+                           </handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                           <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>XXXX</p>
+                     </history>
+                  </msDesc>
+               </witness>
                <witness xml:id="edP">
                   <bibl>
                      <analytic>
@@ -155,8 +200,8 @@
          <change when="2024-07-21" who="part:axja">Transform to DHARMA</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:lang="kaw-Latn" xml:space="preserve">
-      <body><div type="edition">
+   <text xml:space="preserve">
+      <body><div type="edition" xml:lang="kaw-Latn">
          <head>avighnam astu</head>
          <div type="canto" n="1">
 	<!-- śārdūlavikrīḍita: - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = !-->
@@ -206,7 +251,7 @@
                <l n="b">maṅgəh maṅgalaniṅ mikət kavijayan saṅ pārtha riṅ kahyaṅan</l>
                <l n="c">
                   <app>
-                     <lem type="emn" resp="#AG">sambandhanya</lem>
+                     <lem type="emn" resp="part:AG">sambandhanya</lem>
                      <rdg wit="#edP #edR">sambaddhanya</rdg>
                      <rdg wit="#F #R">sambandhāvva</rdg>
                      <rdg wit="#G">sambandha pva</rdg>
@@ -2796,8 +2841,13 @@
 
 
       </div>
-         <div type="translation"><p/></div>
-
+         <div type="translation">
+  <p/>
+ </div>
+ <div type="commentary">
+               <p/>                              
+            </div>
+	
      <div type="bibliography">
             <p> 
       <respStmt>
