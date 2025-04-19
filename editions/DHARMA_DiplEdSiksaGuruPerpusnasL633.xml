@@ -108,9 +108,9 @@
          <change who="part:adgu" when="2020-07-21" status="draft">Initial encoding of the edition</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
         <body>  
-                <div type="edition"><ab>
+                <div type="edition" xml:lang="kaw-Latn"><ab>
 
 <!--SiGu_L633_1v.jpg-->
 <pb n="1v" xml:id="pb001"/>
@@ -430,8 +430,23 @@
 <lb n="41v2"/>ø // // // 
 
                     </ab></div>
-           <div type="translation"><p/></div>
+            <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl type="primary"> 				
+            <bibl n="siglum"/> 			
+         </listBibl>            
+         <listBibl type="secondary">               
+            <bibl/>            
+         </listBibl> 			
+      </div> 	
+           
 
-    <div type="bibliography"> 				<p/> 				<listBibl type="primary"> 				<bibl n="siglum"/> 			</listBibl>            <listBibl type="secondary">               <bibl/>            </listBibl> 			</div> 		</body>
+     		</body>
   </text>
 </TEI>
