@@ -10,8 +10,7 @@
             <title>Candrakiraṇa Manuscript Perpusnas L298</title>
             
             <respStmt>
-               <resp>Author of the digital edition</resp>
-               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <resp>Author of the digital edition</resp> 
                <persName ref="part:zapa"><!-- update the id -->
                   <name>Zakariya Pamuji Aminullah</name>
                </persName>
@@ -79,9 +78,9 @@
          <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="und"><!-- update the language code -->
+   <text xml:space="preserve"><!-- update the language code -->
       <body>
-    <div type="edition"><ab>
+    <div type="edition" xml:lang="und"><ab>
 <!-- <figure><graphic url="CK-L298diplo/001r.jpg"/>
 <graphic url="CK-L298diplo/001v.jpg"/>
 <graphic url="CK-L298diplo/002r.jpg"/>
@@ -759,8 +758,22 @@ byantarya <g type="ddandaOrnate"/><g type="circleCurve"/><g type="ddandaOrnate"/
 <pb n="49r" xml:id="pb097"/>
 <lb n="49r1"/>17, ----⏑⏑⏑⏑⏑--⏑<add place="above below" rend="mark">-</add>-⏑--, mandrakanta,<del rend="strikeout">,</del> 17 <g type="circleCurve"/><g type="vmar"/><g type="circleCurve"/>
     </ab></div>
-         <div type="translation"><p/></div>
+         <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl type="primary">
+                 <bibl/> 			
+              </listBibl>            
+              <listBibl type="secondary">               
+                 <bibl/>            
+              </listBibl> 		
+           </div> 
 
-<div type="bibliography"> 				<p/> 				<listBibl type="primary"> 				<bibl n="siglum"/> 			</listBibl>            <listBibl type="secondary">               <bibl/>            </listBibl> 			</div> 		</body>
+ 		</body>
     </text>
 </TEI>

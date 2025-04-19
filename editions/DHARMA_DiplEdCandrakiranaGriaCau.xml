@@ -7,11 +7,8 @@
         <fileDesc>
             <titleStmt>
                 <title>Candrakiraṇa Gria Cau, Karangasem</title>
-                <!--Change the title of the file with the name of your text-->
                 
-
-                <respStmt>
-                    <!-- repeat the respStmt when necessary -->
+                <respStmt>  
                     <resp>Author of the digital edition</resp>
                     <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
                     <persName ref="part:zapa"><!-- update the id -->
@@ -102,9 +99,9 @@
             <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve" xml:lang="und"><!-- update the language code -->
+    <text xml:space="preserve"><!-- update the language code -->
       <body>
-    <div type="edition">
+    <div type="edition" xml:lang="und">
         <ab>
 
 <pb n="1v"/>
@@ -402,8 +399,21 @@
 <lb n="25v4"/>
 
     </ab></div>
-          <div type="translation"><p/></div>
-
-<div type="bibliography"> 				<p/> 				<listBibl type="primary"> 				<bibl n="siglum"/> 			</listBibl>            <listBibl type="secondary">               <bibl/>            </listBibl> 			</div> 		</body>
+      <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl type="primary">
+                 <bibl/> 			
+              </listBibl>            
+              <listBibl type="secondary">               
+                 <bibl/>            
+              </listBibl> 		
+           </div> 
+      </body>
     </text>
 </TEI>

@@ -7,9 +7,6 @@
       <fileDesc>
          <titleStmt>
             <title>Aṣṭādaśa Vyavahāra, Perpusnas L. 882</title>
-            <!--Change the title of the file with the name of your text-->
-            <!--<title type="sub">Digital Diplomatic Edition of...</title>-->
-            <!-- fill in the subtitle if necessary -->
             <respStmt>
               <resp>Author of the digital edition</resp>
               <persName ref="part:argr">
@@ -19,8 +16,8 @@
            <persName ref="part:tilu">
                <forename>Timothy</forename>
                <surname>Lubin</surname>
-            </persName></respStmt>
-            
+            </persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
@@ -136,9 +133,9 @@
          <change who="part:axja" when="2021-08-05" status="draft">Transformation of a googleDocs into XML-TEI P5</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
     <body>
-      <div type="edition">
+      <div type="edition" xml:lang="kaw-Latn">
         <ab>
         <!-- photo DSCF7962 bottom -->
         <pb n="1r" xml:id="pb001"/>
@@ -604,8 +601,12 @@
         <!-- photo DSCF7988 -->
         <pb n="37v" xml:id="pb074"/>
       </ab></div>
-      <div type="translation"><p/></div>
-
+      <div type="translation">
+        <p/>
+      </div>
+  <div type="commentary">
+               <p/>                              
+            </div>
       <div type="bibliography">
         <p><respStmt>
           <!-- repeat the respStmt when necessary -->
@@ -615,8 +616,11 @@
                   <name>Aditia Gunawan</name>
                </persName>
             </respStmt></p>
-        <listBibl type="primary"> 				<bibl n="siglum"/> 			</listBibl>            <listBibl type="secondary">               <bibl/>            </listBibl> 	
+        <listBibl type="primary"> 			
+          <bibl n="siglum"/> 			</listBibl>            
+        <listBibl type="secondary">               <bibl/>            </listBibl> 	
       </div>
+      
       
      	</body>
   </text>
