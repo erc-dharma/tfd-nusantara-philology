@@ -34,7 +34,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
-            <!-- Give your witness an unique identifier -->
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <settlement>Paris</settlement>
@@ -58,35 +62,17 @@
                   </scriptDesc>
                </physDesc>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
             <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) under the
                European Union's Horizon 2020 research and innovation programme (grant agreement no
                809994).</p>
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-            <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-            <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -94,13 +80,6 @@
             <language ident="san-Latn">Sanskrit, romanized</language>
             <language ident="kaw-Latn">Old Javanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-               <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:adgu" when="2021-11-06" status="draft">Revising the encoding base on
@@ -1216,7 +1195,7 @@ kur denta, tovi pira saraniṅ mata rvaṅ viji mata sadu li-
             </div>
       <div type="bibliography"> 			
          <p/> 				
-         <listBib> 				
+         <listBibl> 				
             <bibl/> 			
          </listBibl>            
           			

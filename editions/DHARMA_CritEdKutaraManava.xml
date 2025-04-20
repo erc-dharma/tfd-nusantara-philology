@@ -125,71 +125,15 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<projectDesc>
+			
 				<!-- Part mandatory -->
-				<p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-
-			</projectDesc>
-			<editorialDecl>
-				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-				<!-- rdg is filled with maximally normalized versions of the actual ms. readings, meaning that words or affixes different from the lem will be presented in normalized form  -->
-				<correction>
-					<p/>
-				</correction>
-				<normalization>
-					<p/>
-				</normalization>
-				<punctuation>
-					<p/>
-				</punctuation>
-				<interpretation>
-					<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.
-					</p>
-				</interpretation>
-			</editorialDecl>
-			<samplingDecl>
-				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-				<p/>
-			</samplingDecl>
-
-			<schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-			<!-- Will need to be updated once a more official realase is done -->
-
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<!-- Part mandatory -->
-			<listPrefixDef>
-				<prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-					<p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-				</prefixDef>
-				<prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-				</prefixDef>
-				<prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-				</prefixDef>
-				<prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-					<p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-				</prefixDef>
-				<prefixDef ident="maturity" matchPattern="([0-9]+)" replacementPattern="tba">
-					<p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-				</prefixDef>
-				<prefixDef ident="cal" matchPattern="([\w]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-					<p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
-				</prefixDef>
-			</listPrefixDef>
+				<p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>	
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
 				<language ident="san-Latn">Sanskrit, romanized</language>
 				<language ident="kaw-Latn">Old Javanese, romanized</language>
 			</langUsage>
-			<textClass>
-				<keywords>
-					<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-					<term/>
-					<!-- Ignore this element for the time being. -->
-				</keywords>
-			</textClass>
 		</profileDesc>
 		<revisionDesc>
 			<change who="part:axja" when="2024-10-20" status="draft">Creating an xml edition for the Kutara Manava</change>
@@ -1867,10 +1811,12 @@ nihan lviriṅ voṅ yogya gavenən sākṣ<unclear>i</unclear> voṅ agave gr̥
 
 </div>
 <div type="translation"><p/></div>
-<div type="commentary"><p/></div>
+<div type="commentary">	<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.
+					</p>
+</div>
 <div type="bibliography"> 
 	<p>First edited by Jonker mainly from Le1. Edited again by Hoadley &amp; Hooker from Lo. The text of Jonker's edition OCR-ed and checked by Arlo Griffiths &amp; Timothy Lubin. Based thereon, this digitial edition was prepared by Nurmalia Habibah with collation of eight witnesses.</p> 
-				<listBib> 	
+				<listBibl> 	
 					<bibl><ptr target="bib:Jonker1885_01"/></bibl>			
 					<bibl><ptr target="bibHoadley+Hooker1981_01"/></bibl>
 				</listBibl>            
