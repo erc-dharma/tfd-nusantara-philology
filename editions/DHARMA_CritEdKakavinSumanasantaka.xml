@@ -15,14 +15,6 @@
             <principal>
                <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
             </principal>-->
-            <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
-               <resp>Conversion to a text file (2018)</resp>
-            </respStmt>
-            <respStmt>
-               <persName ref="http://viaf.org/viaf/372149294434280521495">Andrew Ollett</persName>
-               <resp>Converted the text to TEI format (2018)</resp>
-            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority/>
@@ -77,19 +69,8 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>A decision needs to be taken on what to do with: spaces before particle n; capital letters; circumflexes on a, i, u, e, o, also in capital letters; notes at end of file.</p>
-         <!--<refsDecl n="CTS">
-            <cRefPattern n="level2"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1']/tei:lg[@n='$2'])">
-               <p>This pointer pattern extracts line groups (verses).</p>
-            </cRefPattern>
-            <cRefPattern n="level1"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1'])">
-               <p>This pointer pattern extracts divisions (cantos).</p>
-            </cRefPattern>
-         </refsDecl>-->
+         <!-- Part mandatory -->
+         <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -101,8 +82,8 @@
          <change when="2018-06-04" who="part:anol">Initial TEI encoding</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:lang="kaw-Latn" xml:space="preserve">
-      <body><div type="edition">
+   <text xml:space="preserve">
+      <body><div type="edition" xml:lang="kaw-Latn">
          <div n="1">
             <head>avighnam astu</head>
             <!--  Jagaddhita   – – – |⏑ ⏑ – | ⏑ – ⏑ |⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ |– ⏑ – | ⏑ ⏓     !-->
@@ -7558,6 +7539,27 @@
                <l n="d">siddhi mpuṅkv i garuṅ tirun saṅ anulis katəkana sasinādhya saṅ viku</l>
             </lg>
          </div>
-      </div></body>
+      </div>
+         <div type="translation"><p/></div>
+         <div type="commentary">
+            <p>A decision needs to be taken on what to do with: spaces before particle n; capital letters; circumflexes on a, i, u, e, o, also in capital letters; notes at end of file.</p>
+         </div>
+
+         <div type="bibliography"> 				
+            <p><respStmt>
+               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
+               <resp>Conversion to a text file (2018)</resp>
+            </respStmt>
+            <respStmt>
+               <persName ref="http://viaf.org/viaf/372149294434280521495">Andrew Ollett</persName>
+               <resp>Converted the text to TEI format (2018)</resp>
+            </respStmt>
+      </p> 			
+        <listBibl> 				
+        <bibl/> 			
+      </listBibl>            
+      
+         </div> 		
+      </body>
    </text>
 </TEI>

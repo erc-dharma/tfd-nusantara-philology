@@ -6,8 +6,8 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Kalpabuddha</title>
-				<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Buddhist Text</title>
+				<title>Kalpabuddha</title>
+				<!--<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Buddhist Text</title>-->
 				<respStmt>
 					<resp>Author of the digital edition</resp><persName ref="part:argr">
 					<forename>Arlo</forename>
@@ -85,8 +85,8 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p>Typed by <persName>Arlo Griffiths</persName> in 2011, with slight normalization of the spelling of Sanskrit words/names, and substitution of ṅ for ng and v for w. Re-edited and translated in 2018, then revised in 2024. If no <ptr target="#edb2"/> reading is cited, this means that the <ptr target="#edb2"/> reading is identical to that of <ptr target="#edb"/>. All emendations and normalizations indicated in the apparatus are by Arlo Griffiths.</p>
-			<p>Readings cited in the apparatus have been normalized to loose transliteration of Old Javanese.</p>
+			<!-- Part mandatory -->
+			<p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
@@ -107,8 +107,8 @@
  -->
 		</revisionDesc>
 	</teiHeader>
-	<text xml:lang="kaw-Latn">
-		<body><div type="edition">
+	<text xml:space="preserve">
+		<body><div type="edition" xml:lang="kaw-Latn">
 			<p n="1">nihan hajinira <app>
 					<lem wit="#ms2 #ms3 #ms4">sira</lem>
 					<rdg wit="#ms1">sari</rdg>
@@ -395,7 +395,20 @@ Abhisamayamañjarī by Śubhākaragupta: akoṣobhyavajraḥ savajrabhūsparṣa
 						<note>Should we not rather understand Kalpa Bauddha?</note>
 					</app> iti, paramarahasya || 0 ||</ab>
 			</div>
-		</div></body>
+		</div>
+			<div type="translation"><p/></div>
+			<div type="commentary">
+				<p>Readings cited in the apparatus have been normalized to loose transliteration of Old Javanese.</p>
+			</div>
+       
+       <div type="bibliography"> 				
+  <p>Typed by <persName>Arlo Griffiths</persName> in 2011, with slight normalization of the spelling of Sanskrit words/names, and substitution of ṅ for ng and v for w. Re-edited and translated in 2018, then revised in 2024. If no <ptr target="#edb2"/> reading is cited, this means that the <ptr target="#edb2"/> reading is identical to that of <ptr target="#edb"/>. All emendations and normalizations indicated in the apparatus are by Arlo Griffiths.</p>
+						
+  <listBibl> 				
+   <bibl/> 			
+  </listBibl>            
+   			
+ </div>
+	</body>
 	</text>
-
 </TEI>

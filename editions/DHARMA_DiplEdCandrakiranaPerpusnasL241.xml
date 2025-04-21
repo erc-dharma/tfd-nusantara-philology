@@ -6,13 +6,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Candrakiraṇa Manuscript Perpusnas L241</title>
-                <!--Change the title of the file with the name of your text-->
-                <title type="sub">Digital Diplomatic Edition</title>
-                <!-- fill in the subtitle if necessary -->
-                <editor ref="part:zapa">
-                    <name>Zakariya Pamuji Aminullah</name>
-                </editor>
+                <title>Candrakiraṇa Manuscript Perpusnas L241</title>
+
                 <respStmt>
                     <!-- repeat the respStmt when necessary -->
                     <resp>Author of the digital edition</resp>
@@ -36,7 +31,11 @@
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
-                <!-- Give your witness an unique identifier -->
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
                 <msDesc>
                     <msIdentifier>
                         <settlement>Jakarta</settlement>
@@ -64,34 +63,14 @@
                         <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
                     </history>-->
                 </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc>
                 <!-- Part mandatory -->
                 <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
                 <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-            </projectDesc>
-            <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-                <correction>
-                    <p/>
-                </correction>
-                <normalization>
-                    <p/>
-                </normalization>
-                <punctuation>
-                    <p/>
-                </punctuation>
-            </editorialDecl>
-            <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-                <p/>
-            </samplingDecl>
-
-            <!--schemaRef  will need to be added once a  official realase is done -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
-            <!-- Part mandatory -->
         </encodingDesc>
         <profileDesc>
             <langUsage>
@@ -101,23 +80,16 @@
                 <language ident="tam-Latn">Tamil, romanized</language>
                 <language ident="kan-Latn">Kannada, romanized</language>
                 <language ident="tel-Latn">Telugu, romanized</language>
-            </langUsage>
-            <textClass>
-                <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-                    <term/>
-                    <!-- Ignore this element for the time being. -->
-                </keywords>
-            </textClass>
+            </langUsage>         
         </profileDesc>
         <revisionDesc>
             <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
             <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve" xml:lang="und"><!-- update the language code -->
+    <text xml:space="preserve"><!-- update the language code -->
       <body>
-    <div type="edition"><ab>
+    <div type="edition" xml:lang="und"><ab>
 <!--<figure><graphic url="CK-L241diplo/001r.jpg"/>
 <graphic url="CK-L241diplo/001v.jpg"/>
 <graphic url="CK-L241diplo/002r.jpg"/>
@@ -646,6 +618,20 @@
 <lb n="40v3"/>taḥ, ṅa, kuvoṁ, Uṙṇnanabha, maṙkkaṭaka, ṅa, garagatti, saṇḍuka, palavaṙggaḥ, bhetaḥ, vaṙsabuḥ, daṙcura, ṅṅa, vihuṁ, paṙ=ṇnava, paṇiruha,<space type="binding-hole"/> karaja, ṅa, kugu, kukṣi, dara, gaṙbha, Udhara, ṅa, vtaṁ, hapamaghna, vilagna, madyagna, madya, ṅa, tṅaḥ, tilaka, dadhula, piṣma, ṅa, haṇḍəṅ-aṇḍəṁ, bhra
 <lb n="40v4"/>mara, kaḥ, kadiri, ṅa, gəgəpuṁ, ṣapipəḥ, ṣavataṅ<!-- text is blackened --><unclear>ḍa</unclear>, muṙdi sikara, ṅa, tajjuk·, Atalyaḥ, veṣya, ṅa, hahyas·, mañjīra, padataṭaka<space type="binding-hole"/>, tulakodhi, nupura, ṅa, glaṁ, paṅśa, kṣedhaḥ, renu, cuṙṇna, dhuli, ṅa, L̥mbu, jambalaḥ, kaṙmmaddhama, bhada, siddhara, ṅa, latək·, Ummīḥ,<gap reason="lost" unit="character" quantity="3"/>
     </ab></div>
-</body>
+          <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
+
+      </body>
     </text>
 </TEI>

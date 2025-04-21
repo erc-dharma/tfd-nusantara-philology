@@ -6,11 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Jati Mula (Ciburuy Peti 1a, 1d, &amp; 3a)</title>
-            <title type="sub">Digital Diplomatic Edition of Jati Mula (Ciburuy)</title>
-            <editor ref="part:ilnu">
-               <name>Ilham Nurwansah</name>              
-            </editor>
+            <title>Jati Mula (Ciburuy Peti 1a, 1d, &amp; 3a)</title>
+            <!--<title type="sub">Digital Diplomatic Edition of Jati Mula (Ciburuy)</title>-->
             <respStmt>
                <resp>Author of the digital edition</resp>
                <persName ref="part:ilnu">
@@ -31,6 +28,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <settlement>Garut</settlement>
@@ -59,58 +61,29 @@
                   <p>To be checked later.</p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
             <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-         </projectDesc>
-         <editorialDecl>
-            <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-            <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-			
-			Note that the current by default behaviour is set on parallel-segmentation -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="osn-Latn">Old Sundanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-               <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2022-12-13" status="draft">Transformation from docx to xml</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="osn-Latn"><!-- update the language code -->
+   <text xml:space="preserve"><!-- update the language code -->
       <body>
          <!--<p>Transliteration of Jatimula</p>
          <p>from the collection of Ciburuy Peti 1a, 1d, &amp; 3a</p>-->
-         <div type="edition"><ab>
+         <div type="edition" xml:lang="osn-Latn">
+            <ab>
          <!-- 280_Peti3a_KrpkcbrXIII_21 &lt;r33&gt; -->
          <pb n="33r"/>
             <lb n="1"/>sәja hatә nu tihәla, midi susaḥ ti kahanan· sugan· vaya nu dipisuka sadea, atәn· baritәn· pideqәn· sugan· vaya nu dipika L̥vaḥ <gap reason="lost" unit="character" quantity="2"/> 
@@ -507,6 +480,21 @@
             <lb n="4"/>mokṣaḥ ku nirmala, tan· katәmu , Ø, mo ma ku jatina, lamun· vaya nu Iyat·na di puhun· jatiniṁ bәnәr, di maneḥ pun· Ø maka nis·kala  
          
             </ab></div>
-      </body>
+          <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
+         
+
+       		</body>
    </text>
 </TEI>

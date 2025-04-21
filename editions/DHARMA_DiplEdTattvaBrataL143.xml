@@ -6,11 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Tattva Brata L 143 </title>
-            <title type="sub">Digital Diplomatic Edition</title>
-            <editor ref="part:pegy">
-                    <name>Putu Eka Guna Yasa</name>
-            </editor>
+            <title>Tattva Brata L 143 </title>
+            
             <respStmt>
                <resp>Author of the digital edition</resp>
                <persName ref="part:pegy">
@@ -34,6 +31,11 @@
             <date from="2025" to="2025">2025-2025</date>
          </publicationStmt>
          <sourceDesc>
+               <listWit>
+                  <!-- One witness for each manuscript. Update the content -->
+                  <witness xml:id="fakeID">
+                     <!-- Give your witness an unique identifier -->
+                     <abbr type="siglum"></abbr>            
             <msDesc>
                <msIdentifier>
                   <settlement>Jakarta</settlement>
@@ -56,46 +58,21 @@
                   </p>
                </history>
             </msDesc>
+                  </witness>
+               </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
                     <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) MANTRATANTRAM (Consolidator Grant no. 101124214).</p>
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                    <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                    <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
             <language ident="kaw-Latn">Old Javanese</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:pegy" when="2025-01-25" status="draft">Updating the template</change>
@@ -105,9 +82,9 @@
             (1) layar is in Balinese position
             (2) dh and ḍ seem to be used without any distinction, nor are any distinctions made between sa śa and ṣa-->
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-ban">
+   <text xml:space="preserve">
         <body>
-            <div type="edition"><ab>
+            <div type="edition" xml:lang="kaw-ban"><ab>
            
       <pb n="7r" xml:id="folio7r"/> 
          <lb n="7r1"/>// <g type="circleCurve"/> // Ana brata mijil ṣakiṁ parahu, pan· yuga bhaṭara guru, kayatknakna de saṁ śevaka<space type="binding-hole"/>ḍaṙmma, marapvan kapaṅgiḥ kasidanya, vruḥ kajatmikanya, sa mayyun· humoktakna, janma, ṅkadyaṅganiṅ adaṅ esuk·, Esukk amaṅa
@@ -185,6 +162,22 @@
          <lb n="12v1"/>ta, hadyus asakuramasa, hasuciya, sahaśiṣiga, haririhana, Iti, saṁ hyaṁ tatva brata hayo vera,<space type="binding-hole"/>cavuḥ, brata nira, ḍarma rahasya tmən·, Itiḥ tatva brata, samapta tlas·, cinītra, I jəṅ ira, saṁ hyaṁ pamriyan·, I
          <lb n="12v2"/>mbha ghneya, vuku, mara, haguṁ, śanis·cara, ta, pa, ḍa <g type="circleCurve"/> sasaka ya 
       </ab></div>
-    </body>
+            <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+      <div type="bibliography"> 				
+         <p><editor ref="part:pegy">
+                    <name>Putu Eka Guna Yasa</name>
+            </editor></p> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>            
+          			
+      </div> 	
+
+        </body>
   </text>
 </TEI>

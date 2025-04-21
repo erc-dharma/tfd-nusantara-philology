@@ -6,25 +6,17 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Aṣṭādaśa Vyavahāra, Perpusnas L. 882</title>
-            <!--Change the title of the file with the name of your text-->
-            <!--<title type="sub">Digital Diplomatic Edition of...</title>-->
-            <!-- fill in the subtitle if necessary -->
-            <editor ref="part:argr">
+            <title>Aṣṭādaśa Vyavahāra, Perpusnas L. 882</title>
+            <respStmt>
+              <resp>Author of the digital edition</resp>
+              <persName ref="part:argr">
                <forename>Arlo</forename>
                <surname>Griffiths</surname>
-            </editor>
-            <editor ref="part:tilu">
+            </persName>
+           <persName ref="part:tilu">
                <forename>Timothy</forename>
                <surname>Lubin</surname>
-            </editor>
-            <respStmt>
-          <!-- repeat the respStmt when necessary -->
-               <resp>Photos</resp>
-               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-               <persName ref="part:adgu">
-                  <name>Aditia Gunawan</name>
-               </persName>
+            </persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -42,8 +34,12 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
-        <!-- Give your witness an unique identifier -->
-            <msDesc>
+           <listWit>
+             <!-- One witness for each manuscript. Update the content -->
+             <witness xml:id="fakeID">
+               <!-- Give your witness an unique identifier -->
+               <abbr type="siglum"></abbr>            
+               <msDesc>
                <msIdentifier>
                   <institution>Perpustakaan Nasional Republik Indonesia</institution>
                   <repository>Lontar</repository>
@@ -81,69 +77,26 @@
             <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
           </history>
             </msDesc>
+             </witness>
+           </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
-        <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+       <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
             <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-        <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-        <!--
-      <p>ā-mātrā (length mark) <foreign>tədoṅ</foreign> :</p>
-      <p>e-mātrā <foreign>taliṅ</foreign> -e</p>
-      <p>repha <foreign>suraṅ</foreign> r</p>
-      <p>anusvāra (to express ṅ) <foreign>cəcək</foreign> ṁ</p>
-      <p>anusvāra (to express m) <foreign>ulu ricəm</foreign> ṁ*</p>
-      <p>anunāsika <foreign>ulu candra</foreign> m̐</p>
-      <p>comma <foreign>carik siki </foreign>,</p>
-      <p>double comma <foreign>carik kalih</foreign> ,, (also called <foreign>carik parèrèn</foreign>)</p>
-      <p>circular sign (like zero) <foreign>carik aguṅ</foreign> 0</p>
-      <p>double daṇḍa <foreign>panti/pantən</foreign> ||</p>
-      <p>special opening double daṇḍa <foreign>pamada</foreign> //</p>
-      <p>space filler <foreign>pamənəṅ</foreign> <g type="filler">§</g></p>
-      <p>virāma <foreign>adəg-adəg ·</p>
-    -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-        <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="kaw-Latn">Old Javanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-          <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-08-05" status="draft">Transformation of a googleDocs into XML-TEI P5</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
     <body>
-      <div type="edition">
+      <div type="edition" xml:lang="kaw-Latn">
         <ab>
         <!-- photo DSCF7962 bottom -->
         <pb n="1r" xml:id="pb001"/>
@@ -609,6 +562,41 @@
         <!-- photo DSCF7988 -->
         <pb n="37v" xml:id="pb074"/>
       </ab></div>
-    </body>
+      <div type="translation">
+        <p/>
+      </div>
+  <div type="commentary">
+               <p>
+                 <!--
+      <p>ā-mātrā (length mark) <foreign>tədoṅ</foreign> :</p>
+      <p>e-mātrā <foreign>taliṅ</foreign> -e</p>
+      <p>repha <foreign>suraṅ</foreign> r</p>
+      <p>anusvāra (to express ṅ) <foreign>cəcək</foreign> ṁ</p>
+      <p>anusvāra (to express m) <foreign>ulu ricəm</foreign> ṁ*</p>
+      <p>anunāsika <foreign>ulu candra</foreign> m̐</p>
+      <p>comma <foreign>carik siki </foreign>,</p>
+      <p>double comma <foreign>carik kalih</foreign> ,, (also called <foreign>carik parèrèn</foreign>)</p>
+      <p>circular sign (like zero) <foreign>carik aguṅ</foreign> 0</p>
+      <p>double daṇḍa <foreign>panti/pantən</foreign> ||</p>
+      <p>special opening double daṇḍa <foreign>pamada</foreign> //</p>
+      <p>space filler <foreign>pamənəṅ</foreign> <g type="filler">§</g></p>
+      <p>virāma <foreign>adəg-adəg ·</p>
+    -->
+               </p>                              
+            </div>
+      <div type="bibliography">
+        <p><respStmt>
+          <!-- repeat the respStmt when necessary -->
+               <resp>Photos</resp>
+               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <persName ref="part:adgu">
+                  <name>Aditia Gunawan</name>
+               </persName>
+            </respStmt></p>
+        <listBibl> 			
+          <bibl/> 		
+          </listBibl>                    	
+      </div>
+     	</body>
   </text>
 </TEI>

@@ -6,10 +6,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Buddhist Texts from Bali</title>
-            <title type="sub">Digital Diplomatic Edition of PUSDOK T/XXI/7/DOKBUD Tatwa Kabuddhan</title>
+            <title>Buddhist Texts from Bali</title>
+            <!--<title type="sub">Digital Diplomatic Edition of PUSDOK T/XXI/7/DOKBUD Tatwa Kabuddhan</title>-->
             <respStmt>
-               <resp>TEI Encoding</resp>
                <resp>Author of the digital edition</resp>
                <persName ref="part:argr">
                   <forename>Arlo</forename>
@@ -34,6 +33,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <settlement>Denpasar</settlement>
@@ -77,33 +81,15 @@
                   <p>....</p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
                 <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -111,13 +97,6 @@
             <language ident="san-Latn">Sanskrit, romanized</language>
             <language ident="kaw-Latn">Old Javanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:argr" when="2024-12-04" status="draft">resumed diplomatic edition</change>
@@ -125,9 +104,9 @@
          <change who="part:argr" when="2021-04-18" status="draft">started diplomatic edition</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
       <body>
-<div type="edition"><ab>
+<div type="edition" xml:lang="kaw-Latn"><ab>
 <!-- https://archive.org/details/tatwa-kabuddhan/mode/1up -->
 <pb n="1r" xml:id="pb001"/><!-- blank outer page -->
 
@@ -212,7 +191,21 @@ ka, saṅke ma:saka:la  ikaṅ śarīra, [jump-fol7v1], taha si, a:pan  katavə�
 <lb n="3v4"/> 
 
 </ab></div>
+         <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
 
-      </body>
+
+       		</body>
   </text>
 </TEI>

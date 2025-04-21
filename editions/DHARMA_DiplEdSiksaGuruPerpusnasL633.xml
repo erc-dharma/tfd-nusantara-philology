@@ -6,12 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Śikṣā Guru L 633</title>
-            <editor ref="part:adgu">
-               <name>Aditia Gunawan</name>				
-            </editor>   
+            <title>Śikṣā Guru L 633</title>  
             <respStmt>
-               <resp>creation of the file</resp>
                <resp>Author of the digital edition</resp>
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
@@ -31,6 +27,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <institution>Perpustakaan Nasional Republik Indonesia</institution>
@@ -63,33 +64,15 @@
                   <p>The manuscript is from Tarogong, Garut (ROD 1914: 71).</p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
                 <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -98,13 +81,6 @@
             <language ident="kaw-Latn">Old Javanese, romanized</language>
             <language ident="osn-Latn">Tamil, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
@@ -112,9 +88,9 @@
          <change who="part:adgu" when="2020-07-21" status="draft">Initial encoding of the edition</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
         <body>  
-                <div type="edition"><ab>
+                <div type="edition" xml:lang="kaw-Latn"><ab>
 
 <!--SiGu_L633_1v.jpg-->
 <pb n="1v" xml:id="pb001"/>
@@ -434,6 +410,21 @@
 <lb n="41v2"/>ø // // // 
 
                     </ab></div>
-    </body>
+            <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>            
+          			
+      </div> 	
+           
+
+     		</body>
   </text>
 </TEI>

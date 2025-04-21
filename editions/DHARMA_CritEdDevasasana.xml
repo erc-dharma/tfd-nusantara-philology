@@ -6,9 +6,9 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Devaśāsana</title>				
-				<title type="sub">Digital Critical Edition of an Old Javanese Code of Conduct</title>
-				<!-- fill in the subtitle if necessary -->
+				<title>Devaśāsana</title>				
+			<!--	<title type="sub">Digital Critical Edition of an Old Javanese Code of Conduct</title>
+-->				<!-- fill in the subtitle if necessary -->
         	<respStmt>	
         		<resp>Author of the digital edition</resp>
         		<persName ref="part:argr">
@@ -123,92 +123,17 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<projectDesc>
+			
 				<!-- Part mandatory -->
 				<p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
 				<!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-			</projectDesc>
-			<editorialDecl>
-				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-				<correction>
-					<p/>
-				</correction>
-				<normalization>
-					<p/>
-				</normalization>
-				<punctuation>
-					<p/>
-				</punctuation>
-				<interpretation>
-					<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
-				</interpretation>
-			</editorialDecl>
-			<!--<refsDecl xml:id="ASLREF">
-				<cRefPattern matchPattern="(\S+) ([^.]+)\.(.*)"
-					replacementPattern="#xpath(//div1[@n='$1']/div2/[@n='$2']//lb[@n='$3'])">
-					<p>A reference is created by assembling the following, in the reverse order as that
-						listed here: <list>
-							<item>the <att>n</att> value of the preceding <gi>lb</gi>
-							</item>
-							<item>a period</item>
-							<item>the <att>n</att> value of the ancestor <gi>div2</gi>
-							</item>
-							<item>a space</item>
-							<item>the <att>n</att> value of the parent <gi>div1</gi>
-							</item>
-						</list>
-					</p>
-				</cRefPattern>
-			</refsDecl>-->
-			<samplingDecl>
-				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-				<p/>
-			</samplingDecl>
-			
-			<schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-			<!-- Will need to be updated once a more official realase is done -->
-			
-			<!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-			
-			Note that the current by default behaviour is set on parallel-segmentation -->
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<!-- Part mandatory -->
-			<listPrefixDef>
-				<prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-					<p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-				</prefixDef>
-				<prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-				</prefixDef>
-				<prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-				</prefixDef>
-				<prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-					<p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-				</prefixDef>
-				<prefixDef ident="maturity" matchPattern="([0-9]+)" replacementPattern="tba">
-					<p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-				</prefixDef>
-				<prefixDef ident="cal" matchPattern="([\w]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-					<p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p></prefixDef>
-			</listPrefixDef>
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
 				<!-- choose the language(s) of your text, remove the others -->
 				<language ident="san-Latn">Sanskrit, romanized</language>
 				<language ident="kaw-Latn">Old Javanese, romanized</language>
-			</langUsage>
-			<textClass>
-				<keywords>
-					<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-					<term/>
-					<!-- Ignore this element for the time being. -->
-				</keywords>
-			</textClass>
+			</langUsage>	
 		</profileDesc>
 		<revisionDesc>
 			<change who="part:argr" when="2023-09-13" status="draft">Started editing the text</change>
@@ -218,9 +143,8 @@
 	</teiHeader>
 	<text xml:space="preserve" xml:lang="kaw-Latn">
 <body><div type="edition">
-			<div>
 				<ab type="invocation"><app><lem wit="#ms5056">avighnam astu</lem><rdg wit="#ms9534">namo buddhāya</rdg></app>.</ab>
-			</div>
+			
 <div>
 <p n="1">nihan pinakādiśāsananira saṅ paṇḍita, kavruhakəna de saṅ maharṣi kabeh, duk sira tan hana r̥ṣi, tan hana śiva, tan hana dharma, <app><lem wit="#5056">tan hana rāja, tan hana bāyu, tan hana śabda, tan hana ākāśa, tan hana pr̥thivī, tan hana dibya, tan hana vulan, tan hana teja, tan hana devata,</lem><note type="altLem">tan hana rāja, ..., tan hana devata,</note><rdg wit="#ms9534">tan hana hakaśa, tan hana bayu, tan hana hapah, tan hana teja, tan ana pr̥tivi, tan hana haditya, tan hana hulan, tan ana devata</rdg></app> <app><lem wit="#ms5056">avaṅ aṅuvuṅ-uvuṅ</lem><rdg wit="#ms9534">havaṅ-havaṅ, huvuṅ-huvuṅ</rdg></app>, tan <app><lem wit="#ms5056">hananiṅ</lem><rdg wit="#ms9534">hana</rdg><note>Koravāśrama: maṅuluvuṅ ikaṅ bhuvana, tan hananiṅ sarva-sarva tan papramāṇa ikaṅ jagat, apan tan hananiṅ sarva-sarva tumuvuh.</note></app> sarva-sarva, 
 	duk sirenaran suṅy aṅrva-rva, tan hananiṅ ucap samāna.</p>
@@ -434,8 +358,21 @@ na devā na ca dikpālā na vedā na guruḥ kvacit || 36 ||
 <p>kunaṅ taṅ sinəṅguh tuhu viku pavitra, pāpat, lvirnya: grəhasta, bikṣuka, brahmacari, vanagrasta. ya taṅgugvana devaśāsana makādi r̥ṣiśāsana, saṅ hyaṅ rājapati gondala, hayva ta kemutan.</p>
 
 			</div>
-			    <!--<xi:include href="a.xml" xpointer="a1"
-        xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
-		</div></body>
+			   		</div>
+	<div type="translation">
+  <p/>
+ </div>
+ <div type="commentary">
+               <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>                              
+            </div>
+
+ <div type="bibliography"> 				
+  <p/> 				
+  <listBibl> 				
+   <bibl/> 			
+  </listBibl>            
+   			
+ </div> 		
+</body>
 	</text>
 </TEI>

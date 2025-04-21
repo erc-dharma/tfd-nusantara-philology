@@ -6,11 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Amaramālā-Tridaśa Proktaḥ</title>
-            <title type="sub">Digital Diplomatic Edition</title>
-            <editor ref="part:zapa">
-                    <name>Zakariya Pamuji Aminullah</name>
-            </editor>
+            <title>Amaramālā-Tridaśa Proktaḥ</title>
             <respStmt>
                <resp>Author of the digital edition</resp>
                <persName ref="part:zapa">
@@ -34,6 +30,11 @@
             <date from="2024" to="2025">2024-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <settlement>Leiden</settlement>
@@ -56,46 +57,20 @@
                   </p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
                     <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                    <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                    <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
             <language ident="kaw-Latn">Old Javanese, Balinese</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:dacc" when="2024-12-25" status="draft">Updating the template</change>
@@ -105,9 +80,9 @@
             (1) layar is in Balinese position
             (2) dh and ḍ seem to be used without any distinction, nor are any distinctions made between sa śa and ṣa-->
    </teiHeader>
-   <text xml:space="preserve" xml:lang="sans-kaw">
+   <text xml:space="preserve">
         <body>
-            <div type="edition">
+            <div type="edition" xml:lang="sans-kaw">
                <ab> 
       <pb n="1"/><fw place="top" n="1"><num value="1">1</num></fw>
          <lb n="9"/>oṅ avignam astu,
@@ -572,7 +547,25 @@
          <lb n="44"/>ṅa. gata. kata, ṅa. vaṅ manapuk. 
 
 
-      </ab></div>
-    </body>
+      </ab>
+            </div>
+            <div type="translation">
+               <p/>
+            </div>
+             <div type="commentary">
+               <p/>
+                <!-- axja to zaki : you could use this new section to document 
+                   roughly the handDesc comment you made at the top of your file-->
+                
+            </div>
+
+           <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 	
+        </body>
   </text>
 </TEI>

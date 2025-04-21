@@ -6,16 +6,11 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-            	<title type="main">Buddhist Texts from Bali</title>
-            	<title type="sub">Digital Diplomatic Edition of PUSDOK T/XX/9/DOKBUD Tatwa Buddha</title>
+            	<title>Buddhist Texts from Bali</title>
+            	<!--<title type="sub">Digital Diplomatic Edition of PUSDOK T/XX/9/DOKBUD Tatwa Buddha</title>-->
+            	
             	<respStmt>
-            		<resp>original diplomatic edition</resp>
-            		<persName ref="part:ibks">
-            			<name>Ida Bagus Komang Sudarma</name>
-            		</persName>
-            	</respStmt>
-            	<respStmt>
-            		<resp>TEI Encoding</resp>
+            		<resp>Author of the digital edition</resp>
             		<persName ref="part:argr">
             			<forename>Arlo</forename>
             			<surname>Griffiths</surname>
@@ -35,7 +30,11 @@
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
                         <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
                         <msDesc>
                         	<msIdentifier>
                         		<settlement>Denpasar</settlement>
@@ -57,60 +56,29 @@
                                 <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
                             </history>
                         </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc>
+            
                 <!-- Part mandatory -->
                 <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
                 <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-                <!-- -->
-            </projectDesc>
-            <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-                <correction>
-                    <p/>
-                </correction>
-                <normalization>
-                    <p/>
-                </normalization>
-                <punctuation>
-                    <p/>
-                </punctuation>
-            </editorialDecl>
-            <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material. ..-->
-                <p/>
-            </samplingDecl>
-            <!--schemaRef  will need to be added once a  official realase is done -->
-            <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-			
-			Note that the current by default behaviour is set on parallel-segmentation -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
         </encodingDesc>
         <profileDesc>
             <langUsage>
                 <language ident="san-Latn">Sanskrit, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
             </langUsage>
-            <textClass>
-                <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-                    <term/>
-                    <!-- Ignore this element for the time being. -->
-                </keywords>
-            </textClass>
         </profileDesc>
         <revisionDesc>
             <change who="part:argr" when="2025-01-10" status="draft">started encoding IBKS's provisional edition</change>
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve" xml:lang="kaw-Latn">
+    <text xml:space="preserve">
       <body>
-         <div type="edition">
+         <div type="edition" xml:lang="kaw-Latn">
           <ab>
 <pb n="1v"/>
 <fw place="left" n="1v">1</fw>
@@ -473,6 +441,22 @@ Alañcana, ṅa, Alañcananiṁ ḍarmma:deśana pinaka
 <lb n="3"/>6.  taṅgal masehi, 12, juli, 1994.  0.  sinurat=hantu<space type="binding-hole"/>k saṅ apanlaḥ, hi kətut səṅod·, sakiṁ deśa pidpid kalor da
 <lb n="4" break ="no"/> vuḥ margga, vargga pasək·, kadeśahan pidpid·, kacamata<space type="binding-hole"/>n habaṁ, kabhupaten karaṅasəm·.  0. </ab>
          </div>
-      </body>
+          <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p>original diplomatic edition
+              	<persName ref="part:ibks">
+            			<name>Ida Bagus Komang Sudarma</name>
+            		</persName></p> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
+      		</body>
   </text>
 </TEI>

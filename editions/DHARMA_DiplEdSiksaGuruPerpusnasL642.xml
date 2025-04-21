@@ -6,12 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Śikṣā Guru L 642</title>
-            <editor ref="part:adgu">
-               <name>Aditia Gunawan</name>				
-            </editor>   
+            <title>Śikṣā Guru L 642</title>   
             <respStmt>
-               <resp>creation of the file</resp>
                <resp>Author of the digital edition</resp>
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
@@ -31,6 +27,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <settlement>Jakarta</settlement>
@@ -59,33 +60,15 @@
                   <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
                 <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. --> 
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -94,13 +77,6 @@
             <language ident="kaw-Latn">Old Javanese, romanized</language>
             <language ident="osn-Latn">Old Sundanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
@@ -113,9 +89,9 @@
          <change who="part:adgu" when="2020-03-10" status="draft">Initial encoding of the edition</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
         <body>
-     <div type="edition">
+     <div type="edition" xml:lang="kaw-Latn">
         <ab>
 
 <!--DSCF8949.JPG-->
@@ -254,7 +230,21 @@
 <lb n="23v1"/>manva:hara, sabda maḍava, sabda manisa:rum·, ya sabda pasanta, ṅa, Ulaḥ pasanta, ṅa, Ulaḥ mena:k·, Ulaḥ rahayu:, hayva palar ci<lb n="23v2" break="no"/>dra, hayva sraṁ Ulaḥ hala hayu:, taṁṅan· masaṁguli, matala<space type="binding-hole"/>kup·, yan paṅucap lavan· vvaṁṅ atuha, ya Ulaḥ pasanta, ṅa, Ambha<lb n="23v3" break="no"/>k pasanta, ṅa, hayva ḍaḍakara, hiji payvagya, ri paḍanya janma<space type="binding-hole"/>, hayva jahəta:mbhək·, ṅahanakən· Ambhak· <!-- special K --> menak· Ambha
         <lb n="23v4"/>k· heraṁ, Ambak rahayu:, ya Ambhak pasanta, ṅa, ya karasa Ikaṁ pasanta, kahanakən sakaya kayika ḍaṙmma, ya tar karasa I<!--DSCF8947.JPG--><lb n="24r1" break="no"/>ririkaṁ pasanta, Ambhak· ḍusṭa maṁkana, ø, nihan sikṣa saṁ pandita, sikṣa guru, ṅa, ya ta mataṅyan kayatnakna saṁ sevaka ḍarmma, ø
             <lb n="24r2"/>//,//, Iti siksa guru, ṅa, lamun· vraḥ ḍi vvitniṁ bnər thar <space type="binding-hole"/> kna kupaḍrava, lamu<!-- ma pasangan here -->n tar vr̥ḥ ḍi vviniṁ bnər, kəna ku na Upaḍrava, ø, ni<lb n="24r3" break="no"/>han· kavuvusa;n siksa guru, ṅa, kayatnakna saṁ sevaka <space type="binding-hole"/> ḍarmma, ø, tləsinurath· ri ḍesa mahapaviṭā<!-- tra -->, tajak barath· kalpa<lb n="24r4" break="no"/>sən pun·, malampaḥ Iṅapura ṅkanaṁ sasṭa 2cek:a<!-- good example of consonant gemination -->ḍi tapak· yuyu cinaṁcaṁ ri tasik· Uliḥ vvaṁ sinanaU, pun· I saka hlər tvaya vu
-                    </ab></div>    
-        </body>
+                    </ab></div>  
+            <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>            
+          			
+      </div> 	
+
+         		</body>
   </text>
 </TEI>

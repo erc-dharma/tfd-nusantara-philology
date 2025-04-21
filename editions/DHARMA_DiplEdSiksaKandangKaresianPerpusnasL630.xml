@@ -6,11 +6,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Saṅ Hyaṅ Siksa Kandaṅ Karesian A</title>
-            <editor ref="part:adgu">
-               <name>Aditia Gunawan</name>				
-            </editor>               <respStmt>
-               <resp>creation of the file</resp>
+            <title>Saṅ Hyaṅ Siksa Kandaṅ Karesian A</title>             
+            <respStmt>
                <resp>Author of the digital edition</resp>
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
@@ -31,6 +28,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <settlement>Jakarta</settlement>
@@ -56,33 +58,15 @@
                   <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
                 <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -93,13 +77,6 @@
             <language ident="kan-Latn">Kannada, romanized</language>
             <language ident="tel-Latn">Telugu, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
@@ -108,9 +85,9 @@
          <change who="part:adgu" when="2019-02-15" status="draft">Initial encoding of the edition</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="osn-Latn">
+   <text xml:space="preserve">
         <body>
-                <div type="edition"><ab>
+                <div type="edition" xml:lang="osn-Latn"><ab>
 <!-- SSKK_L630_1v.jpeg-->
                 <pb n="1v" xml:id="pb001"/>
                     <lb n="1v1"/>//, ø, // ndaḥ nihan· varaḥhakna saṁ sadu, de saṁ mamet· hayu, hana ta <space type="binding-hole"/> <gap reason="lost" unit="character" quantity="1"/><seg type="component" subtype="body"><gap reason="lost" quantity="1" unit="component"/></seg>yaṁ ṣikṣa kandaṁ kaR̥ṣiAn· ṅaranya, kayatnak<unclear>n</unclear>a voṁ sakabeḥ, nihan· Ujar saṁ sadu, ṅagə<g type="filler">§</g><lb n="1v2" break="no"/>larkən· saṁ hyaṁ sikṣa kandaṁ kaR̥ṣiAn·, Ini saṁ hyaṁ dasa krəta, kundaṁṅən· Uraṁ r<space type="binding-hole"/>ye, Asiṁ nu dek· najərkən saṁ hyaṁ sasana krəta, pakənən=həbəl· hirup· həbəl· ñavana    
@@ -292,6 +269,20 @@
 <lb n="29v3"/>dəṁ gəde, sabaraha rasana, 6, kaliṅana, lavan:a, kadukha, tritka, amla, kasaya, madu<space type="binding-hole"/>ra, lavan:a ma ṅarana paṁset·, kadakha  ma ṅarana, lada, tritka ma ṅarana pahit·, amla ma ṅarana hasə <lb n="29v4" break="no"/>m·, kasaya ma ṅarana pəL̥m·, madura ma ṅarana Amis· sakitu: karasana ku na janma⌈<space type="binding-hole"/><unclear>sarereA</unclear>, //, Ini pakən· Uraṁ mibogaAn maneḥ, pakən:a turun pativaḥ tivaḥ ka Anak·
 
                 </ab></div>
-    </body>
+            <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>            
+          			
+      </div> 	
+           
+ 		</body>
   </text>
 </TEI>

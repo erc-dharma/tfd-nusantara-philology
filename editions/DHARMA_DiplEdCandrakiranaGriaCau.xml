@@ -6,15 +6,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Candrakiraṇa Gria Cau, Karangasem</title>
-                <!--Change the title of the file with the name of your text-->
-                <title type="sub">Digital Diplomatic Edition</title>
-                <!-- fill in the subtitle if necessary -->
-                <editor ref="part:zapa">
-                    <name>Zakariya Pamuji Aminullah</name>
-                </editor>
-                <respStmt>
-                    <!-- repeat the respStmt when necessary -->
+                <title>Candrakiraṇa Gria Cau, Karangasem</title>
+                
+                <respStmt>  
                     <resp>Author of the digital edition</resp>
                     <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
                     <persName ref="part:zapa"><!-- update the id -->
@@ -36,8 +30,11 @@
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
-                <!-- Give your witness an unique identifier -->
-                <msDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>                <msDesc>
                     <msIdentifier>
                         <settlement>Karangasem</settlement>
                         <institution>Property of Ida Pedanda Gede Putu Cau</institution>
@@ -62,34 +59,14 @@
                     </history>-->
                     </msIdentifier>
                 </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc>
                 <!-- Part mandatory -->
                 <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
                 <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-            </projectDesc>
-            <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-                <correction>
-                    <p/>
-                </correction>
-                <normalization>
-                    <p/>
-                </normalization>
-                <punctuation>
-                    <p/>
-                </punctuation>
-            </editorialDecl>
-            <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-                <p/>
-            </samplingDecl>
-
-            <!--schemaRef  will need to be added once a  official realase is done -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
-            <!-- Part mandatory -->
         </encodingDesc>
         <profileDesc>
             <langUsage>
@@ -105,9 +82,9 @@
             <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve" xml:lang="und"><!-- update the language code -->
+    <text xml:space="preserve"><!-- update the language code -->
       <body>
-    <div type="edition">
+    <div type="edition" xml:lang="und">
         <ab>
 
 <pb n="1v"/>
@@ -405,6 +382,19 @@
 <lb n="25v4"/>
 
     </ab></div>
-</body>
+      <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
+      </body>
     </text>
 </TEI>

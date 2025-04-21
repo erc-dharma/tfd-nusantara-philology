@@ -6,16 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Svayambhu</title>
-            <title type="sub">Digital Diplomatic Edition of Kirtya II A/3/774</title>
-            <editor ref="part:tilu">
-               <forename>Timothy</forename>
-               <surname>Lubin</surname>
-            </editor>
-            <editor ref="part:argr">
-               <forename>Arlo</forename>
-               <surname>Griffiths</surname>
-            </editor>
+            <title>Svayambhu. Digital Diplomatic Edition of Kirtya II A/3/774</title>
             <respStmt>
                     <!-- repeat the respStmt when necessary -->
                <resp>Author of the digital edition</resp>
@@ -42,6 +33,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                         <!--Kirtya, Singaraja, Bali, Indonesia, 774 (kropak 3) II A/3/774: Balinese script on lontar-->
@@ -60,57 +56,32 @@
                         <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
                     </history>-->
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
+         
                 <!-- Part mandatory -->
             <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
             <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
-            <p>The Romanized transcript of LOr. 4530, kept in BCB 2 at Leiden UL, was retyped and then used as base-text for transliterating from photos made by Ida Bagus Komang Sudarma of the lontar. </p>
+            
             <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
       </encodingDesc>
       <profileDesc>
          <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
             <language ident="kaw-Latn">Old Javanese, romanized</language>
             <language ident="osn-Latn">Old Sundanese, romanized</language>
-         </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
+         </langUsage>      
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-09-22" status="draft">Conversion into XML</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
       <body>
-         <div type="edition"><ab>
+         <div type="edition" xml:lang="kaw-Latn"><ab>
 <pb n="1v" xml:id="pb001"/><lb n="1v1"/> || ○ ||
 Avighnam a:stu || ○ ||
 kunaṁ hulaha: saṁ prabhu, Uniṅanira taṁ vyavaharani<g type="filler">§</g><space type="binding-hole"/>kaṁ ra:t·, harovaṅa ta sira: brahma:<del>kar</del><add place="below">ṇa</add> vihikan maṅaji, lavan mantri, vruḥ mavikveka:, śūlakṣa<lb n="1v2"/>ṇa:ha: ta sira tumamaha: riṁ śabha: || 
@@ -568,6 +539,20 @@ Ikaṁ saṁ prabhu tan a:na maliṁ ri kadatvanira, paḍḍa lavan· śvarghga
 <lb n="45v4"/> || 
 puput· śinura:t riṁ dina:, ca, va, varatambir, titi, paṁ, piṁ, 4, saśiḥdeṣṭa:, būśaka, * <space type="binding-hole"/> 1854,,
          </ab></div>
-      </body>
+          <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p>The Romanized transcript of LOr. 4530, kept in BCB 2 at Leiden UL, was retyped and then used as base-text for transliterating from photos made by Ida Bagus Komang Sudarma of the lontar. </p>                              
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>            
+          			
+      </div> 	
+
+       		</body>
   </text>
 </TEI>

@@ -6,9 +6,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Saṅ Hyaṅ Siksa Kandaṅ Karəsian</title>
+            <title>Saṅ Hyaṅ Siksa Kandaṅ Karəsian</title>
             <title type="alt">The Hermits’ Holy Precepts for Society</title>
-            <title type="sub">Digital Critical Edition and Translation of the Old Sundanese Rules for Society</title>
+            <!--<title type="sub">Digital Critical Edition and Translation of the Old Sundanese Rules for Society</title>-->
             <respStmt>
                <resp>Author of the digital edition</resp>
                <persName ref="part:adgu">
@@ -136,41 +136,13 @@
                                                 </msDesc>
                                         </witness>-->
             </listWit>
-            <listBibl>
-               <biblStruct type="book"
-                           xml:id="ASD"
-                           corresp="#bib:Atja+SalehDanasasmita1981_03">
-                  <monogr>
-                     <title>Sanghyang Siksa Kanda ng Karesian: Naskah
-                                                  Sunda Kuno tahun 1518 M</title>
-                     <editor>
-                        <name>Atja</name>
-                     </editor>
-                     <editor>
-                        <name>Saleh Danasasmita</name>
-                     </editor>
-                     <imprint>
-                        <pubPlace>Bandung</pubPlace>
-                        <publisher>Proyek Pengembangan Permuseuman Jawa
-                                                  Barat</publisher>
-                        <date when="1981">1981</date>
-                     </imprint>
-                  </monogr>
-                  <!-- CATAT Perbedaan penulisan spasi dalam EdASD akan dianggap variasi bacaan -->
-               </biblStruct>
-            </listBibl>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
-            <p>The project DHARMA has received funding from the European
+         <p>The project DHARMA has received funding from the European
                                         Research Council (ERC) under the European Union’s Horizon
                                         2020 research and innovation programme (grant agreement no
                                         809994).</p>
-         </projectDesc>
-         <schemaRef type="guide"
-                    key="EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -179,12 +151,12 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a
-                                table of contents</change>
+         <change who="part:axja part:argr" when="2025-04">some changes to the structure of the file to comply with revised encoding model</change>
+         <change who="part:axja" when="2021-12-15">adding the @xml:id to obtain a table of contents</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="osn-Latn">
-                <body><div type="edition">
+   <text xml:space="preserve">
+                <body><div type="edition" xml:lang="osn-Latn">
                 <div type="chapter" n="1" xml:id="skk_01">
                 <head type="editorial" xml:lang="eng">The Ten Accomplishments</head>
                     <p xml:id="skk_01.01"><pb edRef="#A" n="1v"/>ndah
@@ -1645,6 +1617,14 @@
 <p corresp="#skk_23.02">Happy shall be the reader who intends that the good words be absorbed completely (<foreign>kasukma</foreign>),<note>I interpret <foreign>kasukma</foreign> as an equivalent of <foreign>sinūkṣma</foreign> in OJ ‘to absorb completely (make into the <foreign>sūkṣma</foreign>, the essence, of one’s heart)’. Another possibility is to take <foreign>kasukma</foreign> as a noun, then the alternative translation would be ‘those who expect the secret of the good words’.</note> [and] who is firm in his pure mind. Please be attentive O servant of the <foreign>dharma</foreign>. This is the completion of what are called ‘The Hermits’ Precepts for Society’, the title of the book. <foreign>Pun.</foreign><note>For a discussion of <foreign>pun</foreign>, see Aditia Gunawan &amp; Griffiths 2021: 150–151.</note></p>
 </div>
       </div>
-                </body>
+       <div type="commentary"><p/></div>
+        <div type="bibliography"> 			
+                        <p/> 				
+        <listBibl> 				
+                                <bibl><ptr target="bib:Atja+SalehDanasasmita1981_03"/></bibl> 	
+                                <!-- CATAT Perbedaan penulisan spasi dalam EdASD akan dianggap variasi bacaan -->		
+        </listBibl>      			
+        </div> 		
+        </body>
         </text>
 </TEI>
