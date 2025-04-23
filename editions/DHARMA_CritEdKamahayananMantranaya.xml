@@ -21,7 +21,7 @@
          </titleStmt>
          <publicationStmt>
             <authority/>
-            <availability status="restricted">
+            <availability>
                <p><!-- add whatever license you like: !--></p>
             </availability>
             <date>2018</date>
@@ -119,8 +119,29 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <!-- Part mandatory -->
-         <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+         </projectDesc>
+         <editorialDecl>        
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <!-- insert fuller version of encoding description here !-->
+               <p>Character replacements:
+                  - Old Javanese ng has been converted to ṅ 
+                  - all cases of v have been converted to v
+                  - spelling of words of Sanskrit origin has been normalized
+                  - some modifications of spelling b/v have also been made in native Old Javanese vords, in accordance with OJED
+               </p>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>    
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -242,7 +263,7 @@
       <p n="12">
 	<quote type="base-text" xml:lang="san-Latn">
 	  <lg n="12">
-	    <l n="a">ayaṁ te samayo <app><lem wit="#msA" source="#Kats">vajri</lem><rdg wit="#Speijer" type="emn">vajrī</rdg></app> vajrasattva iti smṛtaḥ</l>
+	    <l n="a">ayaṁ te samayo <app><lem wit="#msA" resp="#Kats">vajri</lem><rdg wit="#Speijer" type="emn">vajrī</rdg></app> vajrasattva iti smṛtaḥ</l>
 	    <l n="b"><app><lem wit="#Wulff">āveśaya tu</lem><rdg wit="#Kats">āveśayatu</rdg></app> tenaiva vajrajñānam anuttaram ||12||</l>
 	  </lg>
 	</quote>
@@ -523,19 +544,16 @@
 	  </lg>
 	</quote>
       ka: mataṅnya tulusakĕnta śṛddhānta, pahapagĕh ta manahta, makamārga saṅ hyaṅ mantranaya mahāyāna, <quote type="base-text">svasamāyaṁ akṣayasaukhyadaṁ bhajadhvaṁ</quote>, <app><lem wit="#Kats">atikāsta</lem><rdg wit="#Wulff" type="emn">atikāṣṭa</rdg><rdg wit="#OJED" type="emn" cert="low">at lĕkas ta</rdg></app> rumakṣa saṅ hyaṅ samaya, āpan sira vĕnaṅ umehakan ikaṅ anuttarasukha, <quote type="base-text">jagati laghusukheti sarvabuddhapratisamāś śāśvatitāṅ gatā bhavantaḥ</quote>, āpan ikeṅ janma manuṣya ṅaranya, akĕḍik sukhanya; yathānyat paṅguhakna kahyaṅbuddhan, paḍā lāvan saṅ sarvatathāgata, mataṅnyan lĕkasa <app><lem wit="#Wulff" type="emn">umabhyāsa</lem><rdg wit="#Kats">umabhyasa</rdg></app> saṅ hyaṅ samaya, gumavayakna saṅ hyaṅ mantranaya mahāyāna, hayva ta pra<pb edRef="#msA" n="a25"/>māda kita, kayatnakan tĕmĕntĕmĕn, yathānyan sulabha ikaṅ kasiddhyan kapaṅguha denta.</p>
-      <trailer>iti saṅ hyaṅ kamahāyānan mantranaya samāpta.</trailer>
+      <ab type="colophon">iti saṅ hyaṅ kamahāyānan mantranaya samāpta.</ab>
     </div>
        <div type="translation"><p/></div>
-        <div type="commentary"><!-- insert fuller version of encoding description here !-->
-         <p>Character replacements:
-      - Old Javanese ng has been converted to ṅ 
-      - all cases of v have been converted to v
-      - spelling of words of Sanskrit origin has been normalized
-      - some modifications of spelling b/v have also been made in native Old Javanese vords, in accordance with OJED
-      </p></div>
-       <div type="bibliography"> 				<p><respStmt>
-               <persName ref="http://viaf.org/viaf/372149294434280521495">Andrew Ollett</persName>
-               <resp>Converted the text to TEI format (2018)</resp>
-            </respStmt></p> 				<listBibl> 				<bibl/> 			</listBibl>             			</div> 		</body>
+        <div type="commentary"><p/></div>
+       <div type="bibliography"> 				
+          <p>Andrew Ollett converted the text to TEI format (2018).</p> 	
+          <listBibl> 				
+             <bibl/> 			
+          </listBibl>             			
+       </div> 		
+    </body>
   </text>
 </TEI>

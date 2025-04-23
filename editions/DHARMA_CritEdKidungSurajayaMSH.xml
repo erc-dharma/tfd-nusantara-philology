@@ -12,8 +12,8 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Leiden</pubPlace>
-             <idno type="filename">DHARMA_DiplEdKidungSurajayaMSH</idno>
-            <!-- Replace by filename, e.g. DHARMA_DiplEd<gap reason="lost" extent="unknown"/> -->
+             <idno type="filename">DHARMA_CritEdKidungSurajayaMSH</idno>
+            <!-- Replace by filename, e.g. DHARMA_DiplEd<gap reason="lost" extent="unknown" unit="character"/> -->
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
@@ -65,12 +65,25 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
              </listWit>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         
-                <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-      </encodingDesc>
+       <encodingDesc>
+           <projectDesc>
+               <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+           </projectDesc>
+           <editorialDecl>        
+               <correction>
+                   <p/>
+               </correction>
+               <normalization>
+                   <p/>
+               </normalization>
+               <interpretation>
+                   <p/>
+               </interpretation>
+           </editorialDecl>
+           <samplingDecl>
+               <p/>
+           </samplingDecl>    
+       </encodingDesc>
       <profileDesc>
          <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
@@ -85,9 +98,9 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
          <change who="part:axja" when="2022-08-30" status="draft">Converting the edition into XML</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="und"><!-- update the language code -->
+   <text xml:space="preserve">
       <body>
-          <div type="edition">
+          <div type="edition"  xml:lang="und"> <!-- update the language code -->
        <div>
 <ab><pb n="1r"/><lb n="1r1"/> Dhandhanggula //0//  om̐ avighnam astu //0//</ab>
        </div>
@@ -158,7 +171,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">yyaktiku hamulaṁuni,</l>
 <l n="5">kumara yayaḥ hapanas tītahakna maṁke</l>
 <l n="6">sadeniṁ adu matiṁkaḥ</l>
-<l n="7"><pb n="2r"/><lb n="2r1"/><gap reason="lost" extent="unknown"/> gur̥nan</l>
+<l n="7"><pb n="2r"/><lb n="2r1"/><gap reason="lost" extent="unknown" unit="character"/> gur̥nan</l>
 <l n="8">hana maṁke ki siṁāmada halit than vriṁ reḥ</l>
 <l n="9">sanake nora śudi,</l>
 <l n="10">mapan tuṁ<lb n="2r"/>gal. yayaḥ maṙmaṇiṁ tan mule</l>
@@ -248,7 +261,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">Ki Panguvusan berkata, pilu hatinya,</l>
 <l n="10">"Ki Baru kemarilah!”.</l>
 </lg><lg n="01.016"><l n="1">ø Si Murid datang sambil menyembah,</l>
-<l n="2">"Ada apa memanggil <unclear><gap reason="lost" extent="unknown"/> ?</unclear>".</l>
+<l n="2">"Ada apa memanggil <unclear><gap reason="lost" extent="unknown" unit="character"/> ?</unclear>".</l>
 <l n="3">"Siapkan buah-buahan dan makanan . Bersegeralah!,</l>
 <l n="4">Sang Tamu agaknya lapar".</l>
 <l n="5">Tidak membantah Ki Baru segera pergi.</l>
@@ -316,7 +329,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">vus dum yavakisun</l>
 <l n="8">sa deṇiṁ ṁar̥p.lviḥha,</l>
 <l n="9">raga niṣṭa kapuraṁ  deni pavr̥ti,</l>
-<l n="10">haṁe<lb n="4r"/>l. <gap reason="lost" extent="unknown"/>latana</l>
+<l n="10">haṁe<lb n="4r"/>l. <gap reason="lost" extent="unknown" unit="character"/>latana</l>
 </lg><lg n="01.023"><l n="1">ø ganta<gap reason="lost" unit="character" quantity="1"/> hupamaṇiṁ raga,</l>
 <l n="2">kəḷm, kneṁ samudra,</l>
 <l n="3">maṁṣa livāta hisiṇe</l>
@@ -325,7 +338,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">mon toṇiṁ aniṁ suka, ṇiṁ amukti rame,</l>
 <l n="7">tan apik phr̥na hilaṁ</l>
 <l n="8">mariṁ guṇuṁ ri ṁam <pb n="4v"/><lb n="4v1"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/>taṇe havrat kalabane</l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/>taṇe havrat kalabane</l>
 <l n="10">haṁahub svaṙniṁ piśis</l>
 <l n="11">nisṭa dama taṇn ana, pulakr̥tinipun.</l>
 </lg><lg n="01.024"><l n="1">ø pacə vr̥<lb n="4v"/>dayanira hyaṁ vasi,</l>
@@ -382,7 +395,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">hakveḥ bavā lkas nora tapa,</l>
 <l n="3">milupra hiṁ apaṁgave</l>
 <l n="4">savaniḥ saṁ aviku</l>
-<l n="5">hakveḥ kasilib.<lb n="5r"/> <gap reason="lost" extent="unknown"/>  kaki,</l>
+<l n="5">hakveḥ kasilib.<lb n="5r"/> <gap reason="lost" extent="unknown" unit="character"/>  kaki,</l>
 <l n="6">havis phutuse virasa,</l>
 <l n="7">pamantesiṁ vuvus</l>
 <l n="8">hadika muruṁ ra maṁan  ṣukla,</l>
@@ -390,7 +403,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">hamriḥ polihiṁ brata</l>
 </lg><lg n="01.030"><l n="1">ø anaṁ ṣarāraghaṁel aṁəliḥ</l>
 <l n="2">tapa mādiginəṁ ṇityasa,</l>
-<l n="3">hamriḥ suka <pb n="5v"/><lb n="5v1"/> <gap reason="lost" extent="unknown"/>kten.</l>
+<l n="3">hamriḥ suka <pb n="5v"/><lb n="5v1"/> <gap reason="lost" extent="unknown" unit="character"/>kten.</l>
 <l n="4">leku tapa valaṁun</l>
 <l n="5">gəṁṇiṁ tamaḥ kaṁ deṇulati,</l>
 <l n="6">haṁuripurip ḍriya,</l>
@@ -778,7 +791,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">menuju ke pagar. Riuh</l>
 <l n="5">ada yang menyanyi yang lain ber "kakavin",</l>
 <l n="6">yang lain lagi menyanyi sambil menari.</l>
-<l n="7">Ki Sagati <unclear><gap reason="lost" extent="unknown"/>?</unclear>,</l>
+<l n="7">Ki Sagati <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>,</l>
 <l n="8">Ki Puja jelas mahir.</l>
 <l n="9">Ki Sarontak sebagai pemimpinnya menguasai keadaan,</l>
 <l n="10">sebagai tempat berguru.</l>
@@ -913,7 +926,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">haṁgaru<lb n="14r"/> mvaṁ kukusi śamida vaṁi,</l>
 <l n="10">mr̥buk ghāniṁ dupa</l>
 </lg><lg n="01.096"><l n="1">ø Riuh suara genta, merdu,</l>
-<l n="2">suara <unclear><gap reason="lost" extent="unknown"/>?</unclear> ramai bercampur dengan tujuh suara.</l>
+<l n="2">suara <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> ramai bercampur dengan tujuh suara.</l>
 <l n="3">Terompet siput berbunyi bersama dengan alat musik pereret</l>
 <l n="4">berlomba mengiringi puji-pujian,</l>
 <l n="5"><unclear>suaranya</unclear> berbelitan di angkasa</l>
@@ -1042,7 +1055,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">saśaya vruḥheṁ naya</l>
 </lg><lg n="02.009"><l n="1">ø tan lon bapā lkasniṁ ākikin</l>
 <l n="2">ragha nastitī jatī byantara</l>
-<l n="3">hayya<lb n="16r"/> kveḥ svaraniṁ <gap reason="lost" extent="unknown"/>et</l>
+<l n="3">hayya<lb n="16r"/> kveḥ svaraniṁ <gap reason="lost" extent="unknown" unit="character"/>et</l>
 <l n="4">baghna kakī riṁ vuvus.</l>
 <l n="5">raganira hukihən kaki</l>
 <l n="6">denahniṁ pañcenḍriya,</l>
@@ -1052,7 +1065,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">dipunmukṣe vr̥daya</l>
 </lg><lg n="02.010"><l n="1">//0 manaḥta  laṁgəṁ lila mahniṁ</l>
 <l n="2">sa kacakrabava nikaṁ bu<pb n="16v"/><lb n="16v1"/> vaṇa</l>
-<l n="3">kaṁ ala <gap reason="lost" extent="unknown"/>ḥhna kabeḥ</l>
+<l n="3">kaṁ ala <gap reason="lost" extent="unknown" unit="character"/>ḥhna kabeḥ</l>
 <l n="4">r̥gəp sila rahayu</l>
 <l n="5">sambi praya bapa gughvani</l>
 <l n="6">haja gave titiṁa</l>
@@ -1206,7 +1219,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">sebelah barat daya diantaranya.</l>
 <l n="7">Arah barat mengalihkan perhatian</l>
 <l n="8">barat laut ada "kabuyutan"</l>
-<l n="9">sebelah utara sunyi, di tengah <unclear><gap reason="lost" extent="unknown"/>?</unclear> terpuji <unclear>?</unclear>.</l>
+<l n="9">sebelah utara sunyi, di tengah <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> terpuji <unclear>?</unclear>.</l>
 <l n="10">Semuanya hendaklah disapa.</l>
 </lg><lg n="02.023"><l n="1">ø Apa lagi lainnya.</l>
 <l n="2">Duhai masih ada yang engkau levatkan, anakku.</l>
@@ -1409,7 +1422,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">jika sabar, tahu pada pencegahan nafsu</l>
 <l n="10">sebagai tujuan tertinggi dari badan".</l>
 </lg><lg n="02.043"><l n="1">ø "Banyak perbuatan yang berlagak sakti,</l>
-<l n="2">siang malam, Nini, <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+<l n="2">siang malam, Nini, <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="3">Jika tidak menguasai aturan-aturan,</l>
 <l n="4">hati-hatilah dalam menjalani laku".</l>
 <l n="5">Kemudian berkata Ni Tejasari,</l>
@@ -1486,7 +1499,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">diambil kata-kata apa adanya.</l>
 <l n="7">Semua sudah lengkap</l>
 <l n="8">menghitung vaktu bumi dan pohon,</l>
-<l n="9">goncangnya kerajaan seperti <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="9">goncangnya kerajaan seperti <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="10">Asṭavaranya Sri,</l>
 <l n="11">dan pavukon sudah dihitung.</l>
 </lg><lg n="02.051"><l n="1">ø Pikiran adalah pintu, hati yang mengartikan.</l>
@@ -1560,7 +1573,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">Itulah akhir dari ajaran Dharma, tidak ada yang lain.</l>
 <l n="10">Samarkanlah nafsumu.</l>
 </lg><lg n="02.058"><l n="1">ø Jauhilah kebohongan dan ketidakjujuran hati</l>
-<l n="2"><unclear><gap reason="lost" extent="unknown"/>?</unclear> kebenaran tertinggi,</l>
+<l n="2"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> kebenaran tertinggi,</l>
 <l n="3">budinya memperoleh anugerah.</l>
 <l n="4">Itulah yang dianggap sebagai viku.</l>
 <l n="5">Sungguh sulit, Ngger, seorang resi itu,</l>
@@ -1652,7 +1665,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="02.067"><l n="1">ø Dipersingkat suaranya dihormati.</l>
 <l n="2">Sang Mahamuni seperti bercerita</l>
 <l n="3">disusun dibentangkan semua,</l>
-<l n="4">larinya <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+<l n="4">larinya <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="5">Carilah, telusurilah, Ngger,</l>
 <l n="6"><unclear>meski</unclear> harus menenun dunia;</l>
 <l n="7"><unclear>dari</unclear> utara ke selatan.</l>
@@ -2219,7 +2232,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">Kebanyakan, Adi, semuanya ini tidak berhasil,</l>
 <l n="8">besar kepastiannya <unclear>akan hal itu</unclear> pada orang-orang.</l>
 </lg><lg n="03.051"><l n="1">ø <unclear>Hal itu</unclear> yang disebut permulaan,</l>
-<l n="2">ujudkanlah, jangan <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+<l n="2">ujudkanlah, jangan <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="3">Ini tingkatkan lagi.</l>
 <l n="4">Tujuan hidup adalah</l>
 <l n="5">untuk mempersempit tiga hal yang tidak ujud.</l>
@@ -2232,7 +2245,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">emas permata kemala manikam -</l>
 <l n="5">diberi petunjuk sabda yang sejati.</l>
 <l n="6">Tidak sulit, sudah diterima,</l>
-<l n="7">mendapatkan kemustahilan <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+<l n="7">mendapatkan kemustahilan <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="8">Permatanya tubuh dijaga.</l>
 </lg><lg n="03.053"><l n="1">ø Tidak diceritakan lagi</l>
 <l n="2">pada malam hari perbincangan itu.</l>
@@ -2348,7 +2361,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">senang hatinya dan terpesona.</l>
 </lg><lg n="03.068"><l n="1">ø Segera kata-katanya, <unclear>Hamongraga</unclear>,</l>
 <l n="2">"Yang menjadi hidangan buah-buahan</l>
-<l n="3">tiga rasa <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="3">tiga rasa <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="4">Silakan mengunyah sirih Sang Tamu,</l>
 <l n="5">jangan dibiarkan saja".</l>
 <l n="6">Berkata dia yang baru saja datang,</l>
@@ -2394,7 +2407,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="03.074"><l n="1">ø "Beliau mpu Sakala, <unclear>adapun</unclear></l>
 <l n="2">sebenarnya nama ibuku,</l>
 <l n="3">saya ingat-ingat lupa-</l>
-<l n="4"><unclear><gap reason="lost" extent="unknown"/>?</unclear> usiaku ketika ditinggal</l>
+<l n="4"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> usiaku ketika ditinggal</l>
 <l n="5">vafat ayahanda".</l>
 <l n="6">Ni Manguyu menepuk-nepuk dada,</l>
 <l n="7">air matanya mengalir, hatinya tidak tahu apa yang akan diperbuat</l>
@@ -2540,7 +2553,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">vinoṙ nalaṇnipun</l>
 <l n="8">katuvon ṣḍəṁ lara,</l>
 <l n="9">ki surajaya maṁsa vuruṁa braṁti,</l>
-<l n="10">haṁidəri bu<pb n="36r"/><lb n="36r1"/><gap reason="lost" extent="unknown"/>ṇa</l>
+<l n="10">haṁidəri bu<pb n="36r"/><lb n="36r1"/><gap reason="lost" extent="unknown" unit="character"/>ṇa</l>
 </lg><lg n="04.012"><l n="1">ø manampha sipta ki surajaya,</l>
 <l n="2">uni panapaṇiṁ vacana,</l>
 <l n="3">kumñut rasanyatine</l>
@@ -2649,7 +2662,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">haṁr̥s amuluḥ sigaṙ,</l>
 <l n="7">larane densamun</l>
 <l n="8">kacaṙyyan ka mihaṙsa,</l>
-<l n="9">tan maṁga mr̥ma sa<pb n="37v"/><lb n="37v1"/><gap reason="lost" extent="unknown"/> veḥniṁ amiragə</l>
+<l n="9">tan maṁga mr̥ma sa<pb n="37v"/><lb n="37v1"/><gap reason="lost" extent="unknown" unit="character"/> veḥniṁ amiragə</l>
 <l n="10">hastan vruḥha ri rupa</l>
 </lg><lg n="04.023"><l n="1">//0 umnəṁ kepvan phyuḥ cipta niki,</l>
 <l n="2">hanambut basa daṙmmapari<lb n="37v"/>pta,</l>
@@ -2691,7 +2704,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">sumuśup iṁ phrana tanṣaḥ</l>
 <l n="9">tan sipi ṁeliṁa paksayu varusit</l>
 <l n="10">maṁkya maṁgiḥ talaya</l>
-</lg><lg n="04.027"><l n="1">//0 hiṁ kuna<lb n="38r"/><gap reason="lost" extent="unknown"/>sun ḍuk vahu praphti,</l>
+</lg><lg n="04.027"><l n="1">//0 hiṁ kuna<lb n="38r"/><gap reason="lost" extent="unknown" unit="character"/>sun ḍuk vahu praphti,</l>
 <l n="2">haṁurateṇī saṁ adītuva</l>
 <l n="3">daya taṇn ana simphaṁe</l>
 <l n="4">hanuṁgal mareṁṁ ayu</l>
@@ -2700,7 +2713,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">taṇn aṙse vvaṁ ayu</l>
 <l n="8">lviḥ śiḥhe ni rumita,</l>
 <l n="9">kumadamā ni vaṙṇna ṁadvakən kapti¡,</l>
-<l n="10">ni takī<lb n="38r"/><gap reason="lost" extent="unknown"/>ri brata</l>
+<l n="10">ni takī<lb n="38r"/><gap reason="lost" extent="unknown" unit="character"/>ri brata</l>
 </lg><lg n="04.028"><l n="1">ø kaṁ apaksa milv amoṁ karasmi</l>
 <l n="2">øi rumitā haṁevəhiṁ lamphaḥ</l>
 <l n="3">ni vani kadi rare,</l>
@@ -2718,7 +2731,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">hayu lalavan tan ṣadu,</l>
 <l n="5">sir̥pi voṁ tan kəna guliṁ</l>
 <l n="6">śurajaya kaṁelan</l>
-<l n="7">hamoṁ <pb n="38v"/><lb n="38v1"/><gap reason="lost" extent="unknown"/>san</l>
+<l n="7">hamoṁ <pb n="38v"/><lb n="38v1"/><gap reason="lost" extent="unknown" unit="character"/>san</l>
 <l n="8">pun.</l>
 <l n="9">vr̥daya kuyaṁ kayiṁan</l>
 <l n="10">haṁi kavaṙṇna pinareṁ lulutth asiḥ</l>
@@ -2728,7 +2741,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">henak ḍenira kule</l>
 <l n="4">ki skaṙṣara turu</l>
 <l n="5">haṁimpəlu haṁr̥ṁeḥr̥ṁəḥ</l>
-<l n="6">mesə<lb n="38v"/><gap reason="lost" extent="unknown"/> surajaya,</l>
+<l n="6">mesə<lb n="38v"/><gap reason="lost" extent="unknown" unit="character"/> surajaya,</l>
 <l n="7">dalu tanpha turu</l>
 <l n="8">svəḥ pamtuni dyuta,</l>
 <l n="9">vusṣ anuṁgal jivaṇira pulaṁ asiḥ</l>
@@ -2737,8 +2750,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">ki surajaya tan vriṁṁ enaka,</l>
 <l n="3">pira yatnaneṁ maṁke</l>
 <l n="4">sr̥niṁ beda sumaput</l>
-<l n="5">huniṁanən saṁ jyaḥ śumiṁi<lb n="38v"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>əṁṇiṁ cipta kasmaran</l>
+<l n="5">huniṁanən saṁ jyaḥ śumiṁi<lb n="38v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>əṁṇiṁ cipta kasmaran</l>
 <l n="7">ḍulu tanpha turu</l>
 <l n="8">jivane ki surajaya,</l>
 <l n="9">kajaṁ siraḥ tləs ḍeniṁ haluḥ humijil</l>
@@ -2748,7 +2761,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">dr̥sniṁ luḥ mijil tan phanten</l>
 <l n="4">katuvon yavakiṁsun</l>
 <l n="5">saṁa<lb n="38v"/>ra gh</l>
-<l n="6"><gap reason="lost" extent="unknown"/> praphta tan jati,</l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/> praphta tan jati,</l>
 <l n="7">vekni ragā tan ḍəṙmman</l>
 <l n="8">makya maṁgiḥ kayun</l>
 <l n="9">katuju bahusantana,</l>
@@ -2786,7 +2799,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">sakara taṁiya</l>
 <l n="10">vo¡ṁ añaṙr adikṣu</l>
 <l n="11">lamat kar̥ṁə supna</l>
-<l n="12">va<lb n="39r"/><gap reason="lost" extent="unknown"/> ḷyəp ki surajayā hataṁi</l>
+<l n="12">va<lb n="39r"/><gap reason="lost" extent="unknown" unit="character"/> ḷyəp ki surajayā hataṁi</l>
 <l n="13">pyuḥni daya saśaran.</l>
 </lg><lg n="04.036"><l n="1">//0 siṙnaṇiṁ jiva pralu mati,</l>
 <l n="2">humnəṁṁ amet kəṙti<lb n="39r"/>ṇni nala,</l>
@@ -2795,7 +2808,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">rakaṇira tan vuruṁ mati,</l>
 <l n="6">taḍaḥ sajiniṁ kala</l>
 <l n="7">vtuṇiṁ tan sadu,</l>
-<l n="8">punapa kaṙ <pb n="39v"/><lb n="39v1"/><gap reason="lost" extent="unknown"/></l>
+<l n="8">punapa kaṙ <pb n="39v"/><lb n="39v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="9">ni tejasarī maṁkiṇ amar̥pkə</l>
 <l n="10">manira nuṇuṁṣuṁa</l>
 </lg><lg n="04.037"><l n="1">//0 ki surajaya kakaṁku kaki,</l>
@@ -2830,8 +2843,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">lviḥ nisṭaṇiṁ raga</l>
 </lg><lg n="04.040"><l n="1">//0 aṁuvakən phasaṙvva ləṁəṁ</l>
 <l n="2">han. tənkə maskə juvita,</l>
-<l n="3">kaphalis haṁoṁ yayi<pb n="40r"/><lb n="40r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="4">punapayvaṇi<gap reason="lost" extent="unknown"/> laku</l>
+<l n="3">kaphalis haṁoṁ yayi<pb n="40r"/><lb n="40r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4">punapayvaṇi<gap reason="lost" extent="unknown" unit="character"/> laku</l>
 <l n="5">hakramahā ri sira nini,</l>
 <l n="6">balik phagəṙ turusa,</l>
 <l n="7">knaha tiniru</l>
@@ -2839,8 +2852,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">saśra tahun viṇuvus ḍataṇ abcik.</l>
 <l n="10">yeku tinaha taha</l>
 </lg><lg n="04.041"><l n="1">//0 hambək ḍuṙgama tmahañ jati,</l>
-<l n="2">ki surajaya meḥ kapə<lb n="40r"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>uture saçanṭel</l>
+<l n="2">ki surajaya meḥ kapə<lb n="40r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>uture saçanṭel</l>
 <l n="4">kagora tvasipun.</l>
 <l n="5">yen aṁlamphaḥhana tañ jati,</l>
 <l n="6">duk vahunisun ṣuməṁ<lb n="40r"/>ka,</l>
@@ -2848,7 +2861,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">katiṁgal iṁ rama rena</l>
 <l n="9">øagara nastapaṇi sarira tan sipi sīpi</l>
 <l n="10">phinisaḥ deniṁ sanak.</l>
-</lg><lg n="04.042"><l n="1">ø<gap reason="lost" extent="unknown"/><lb n="40r"/> taṇ eliṁ salaḥ saviji,</l>
+</lg><lg n="04.042"><l n="1">ø<gap reason="lost" extent="unknown" unit="character"/><lb n="40r"/> taṇ eliṁ salaḥ saviji,</l>
 <l n="2">taṁekna nini ñanaṇira,</l>
 <l n="3">pan orana purane</l>
 <l n="4">visaya lamon ti<lb n="40r"/>nut.</l>
@@ -2856,16 +2869,16 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">yen sira təmbya krama</l>
 <l n="7">rakaṇira tuluṁ</l>
 <l n="8">āṁi si maṁṣa livata</l>
-<l n="9">yeṇ añunpho<lb n="40r"/><gap reason="lost" extent="unknown"/></l>
-<l n="10"><gap reason="lost" extent="unknown"/> mbaṁa lepana</l>
+<l n="9">yeṇ añunpho<lb n="40r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="10"><gap reason="lost" extent="unknown" unit="character"/> mbaṁa lepana</l>
 </lg><lg n="04.043"><l n="1">//0 epuḥ nalanira saṁ taruṇi,</l>
 <l n="2">kumtəṙ cipta lu pavoṙ<lb n="40r"/> maras</l>
 <l n="3">kepyan tan mijil sabḍaṇe</l>
 <l n="4">suśaḥ tan kəṇeṁṁ əjum</l>
 <l n="5">ḍeṇi sipī phtəṁiṁ āti,</l>
 <l n="6">haḷk tan phajamuga,</l>
-<l n="7">r̥mə˚ daya <pb n="40r"/><lb n="40r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="8"><gap reason="lost" extent="unknown"/></l>
+<l n="7">r̥mə˚ daya <pb n="40r"/><lb n="40r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="8"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="9">riṁ sun muliḥ haṙseṁ voṁ tan kapaḍan siḥ</l>
 <l n="10">puphuji pakaṇira</l>
 </lg><lg n="04.044"><l n="1">//0 maṁga ta<lb n="40r"/>n mintara sākiṁ riki,</l>
@@ -2873,7 +2886,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">ni tejasarī vuvusṣe</l>
 <l n="4">ki purun kakaṁisun</l>
 <l n="5">hujaṙ ṇā paḍa ṁmaṣi,</l>
-<l n="6">kakaṁ<lb n="40r"/><gap reason="lost" extent="unknown"/> phara</l>
+<l n="6">kakaṁ<lb n="40r"/><gap reason="lost" extent="unknown" unit="character"/> phara</l>
 <l n="7">lavaṇ īsun</l>
 <l n="8">honəṁṁ añar apəphəṇḍak</l>
 <l n="9">phakanira paṁeran maṙganiṁ pati,</l>
@@ -2882,7 +2895,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">sapaṁinaṁ suvene tan mojaṙ</l>
 <l n="3">luvaṙ tanṣaḥ pr̥manaṇe</l>
 <l n="4">ḷḷḥ kataman ləsu</l>
-<l n="5">hamihaṙsa,<lb n="40r"/> <gap reason="lost" extent="unknown"/> mijil</l>
+<l n="5">hamihaṙsa,<lb n="40r"/> <gap reason="lost" extent="unknown" unit="character"/> mijil</l>
 <l n="6">maṙgahani palastra</l>
 <l n="7">śumurupiṁṁ amphru,</l>
 <l n="8">satuvuḥ maṁṣa lipura</l>
@@ -2891,7 +2904,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.046"><l n="1">//0 tulusakna sihira niṇi,</l>
 <l n="2">rakanira yayī samirana,</l>
 <l n="3">hayva kavəntar iṁ akeḥ<lb n="40r"/></l>
-<l n="4">so<gap reason="lost" extent="unknown"/></l>
+<l n="4">so<gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="5">denasamun siḍəmə ṁ ati,</l>
 <l n="6">malaṙ vikaṇeṁ utaṁ</l>
 <l n="7">hanahureṁ ayu</l>
@@ -2899,7 +2912,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">ni tejasari maṙgahanisun sakṭi,</l>
 <l n="10">livata ri naraka</l>
 </lg><lg n="04.047"><l n="1">ø  guladrava sab. danira kaki,</l>
-<l n="2">kadi <pb n="41r"/><lb n="41r1"/><gap reason="lost" extent="unknown"/>sela,</l>
+<l n="2">kadi <pb n="41r"/><lb n="41r1"/><gap reason="lost" extent="unknown" unit="character"/>sela,</l>
 <l n="3">r̥mək tan sipa manisṣe</l>
 <l n="4">lviṙ kilaṁ havoṙ madu</l>
 <l n="5">sr̥ṁniṁ laṭī tan kəneṁ ati,</l>
@@ -2908,7 +2921,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">mantuka navy ana</l>
 <l n="9">vikan phakanira karipan phiṇḍa haṁliḥ</l>
 <l n="10">keva tan kavṁan.</l>
-</lg><lg n="04.048"><l n="1">//0 saḥ<lb n="41r"/> <gap reason="lost" extent="unknown"/>teṇa pr̥gi,</l>
+</lg><lg n="04.048"><l n="1">//0 saḥ<lb n="41r"/> <gap reason="lost" extent="unknown" unit="character"/>teṇa pr̥gi,</l>
 <l n="2">hamet silib liṙ panḍuṁ kacərak</l>
 <l n="3">phraptī jromaḥ lamphaḥnyaghe</l>
 <l n="4">tka liṁgiḥ maṁu<lb n="41r"/></l>
@@ -2916,8 +2929,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">kunaṁ ki surajaya</l>
 <l n="7">çiptanira ṁuṁ√n</l>
 <l n="8">hiḍəp liṙ katutunan</l>
-<l n="9">sakiṁ surālaya laṁni śura<lb n="41r"/> <gap reason="lost" extent="unknown"/></l>
-<l n="10"><gap reason="lost" extent="unknown"/>ne hlah</l>
+<l n="9">sakiṁ surālaya laṁni śura<lb n="41r"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="10"><gap reason="lost" extent="unknown" unit="character"/>ne hlah</l>
 <l n="11">aḥ</l>
 </lg><lg n="04.049"><l n="1">ø tan pholiḥ don raga vus kagiṁṣiṙ</l>
 <l n="2">saṁ anḍon laṁə tan vruḥh i lavan</l>
@@ -2926,24 +2939,24 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">sabḍa lviḥ kaṁ denulati,</l>
 <l n="6">sumiliba snətan</l>
 <l n="7">bañcana katmu</l>
-<l n="8">ki surajaya kaṁela<lb n="41r"/><gap reason="lost" extent="unknown"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/>ni sr̥ti¡,</l>
+<l n="8">ki surajaya kaṁela<lb n="41r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/>ni sr̥ti¡,</l>
 <l n="10">kaguṁṁan phañcenḍriya</l>
 </lg><lg n="04.050"><l n="1">//0 pr̥mmana molaḥ dḍaya gumtiṙ</l>
 <l n="2"><lb n="41r"/>ḷṁḷṁ manaḥhira habalayaṁan</l>
 <l n="3">sr̥ṁniṁ vighna tan sareḥ</l>
 <l n="4">kadiya vuru hapyu</l>
 <l n="5">hapuhara mnəṁ tanpha ṁli</l>
-<l n="6">saṙvva mtə <pb n="41v"/><lb n="41v1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="7"><gap reason="lost" extent="unknown"/></l>
-<l n="8"><gap reason="lost" extent="unknown"/>umtəṙ ñāṇa tan molaḥ</l>
+<l n="6">saṙvva mtə <pb n="41v"/><lb n="41v1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="7"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="8"><gap reason="lost" extent="unknown" unit="character"/>umtəṙ ñāṇa tan molaḥ</l>
 <l n="9">gəṁniṁ tr̥snaniṁ sumaputvas aṁranhi</l>
 <l n="10">dr̥sniṁ luḥ ma<lb n="41v"/>nḍravayan.</l>
 </lg><lg n="04.051"><l n="1">//0 viniraśa sr̥ṁni lulut phrapti,</l>
 <l n="2">sariraniṁsun tan vuruṁ pjaḥ</l>
 <l n="3">yen voṁən kadi kar̥pe</l>
-<l n="4">phunapā hayuha<lb n="41v"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>laku hāḍuṣṭa ṇi<gap reason="lost" extent="unknown"/>ṁ ati,</l>
+<l n="4">phunapā hayuha<lb n="41v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>laku hāḍuṣṭa ṇi<gap reason="lost" extent="unknown" unit="character"/>ṁ ati,</l>
 <l n="6">hiya yen tanpha sanaka,</l>
 <l n="7">vnaṁ pinalīku</l>
 <l n="8">sun aṁudiya sarira,</l>
@@ -2951,7 +2964,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">pan tan kəneṁ pinuraṁ</l>
 </lg><lg n="04.052"><l n="1">ø ya ḍuḥ masṣiśuṇi teja<supplied reason="omitted">śa</supplied>ri,</l>
 <l n="2">denira bisa gave praphañca,<lb n="41v"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>su<gap reason="lost" extent="unknown"/> virage</l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>su<gap reason="lost" extent="unknown" unit="character"/> virage</l>
 <l n="4">tan sipi tr̥ṣnanïṁśun</l>
 <l n="5">tan kavasā mgata hutaṁ siḥ</l>
 <l n="6">panabḍani ñāna</l>
@@ -2959,8 +2972,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">sa<lb n="41v"/>rira yen bavatiya,</l>
 <l n="9">ḍipta lana koṭilā kagirigiri,</l>
 <l n="10">lviṙ kusvara ne brahma</l>
-</lg><lg n="04.053"><l n="1">//0 taṁeḥ paṁucapphani<lb n="41v"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>ṁ amaṁgiḥ braṁta kasmaran</l>
+</lg><lg n="04.053"><l n="1">//0 taṁeḥ paṁucapphani<lb n="41v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>ṁ amaṁgiḥ braṁta kasmaran</l>
 <l n="3">hapaphag lulut asiḥhe</l>
 <l n="4">sami tr̥sna mapuphul.</l>
 <l n="5">rinañcana ye¡n tu<lb n="41v"/>hu sakti,</l>
@@ -2968,7 +2981,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">vasa nitya nurup</l>
 <l n="8">hayuni raga miseśa</l>
 <l n="9">mijil sakiṁ lalaṭā hamaliḥ kavi,</l>
-<l n="10">tejasari <pb n="42r"/><lb n="42r1"/> <gap reason="lost" extent="unknown"/>k.</l>
+<l n="10">tejasari <pb n="42r"/><lb n="42r1"/> <gap reason="lost" extent="unknown" unit="character"/>k.</l>
 </lg><lg n="04.054"><l n="1">//0 lviṙ cantaka malaṙ dr̥sniṁ riris</l>
 <l n="2">ṣambatsambatira maṁun vəlas</l>
 <l n="3">maṁsa vuruṁa kageghe<lb n="42r"/></l>
@@ -2977,7 +2990,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">havet raga ṁambara,</l>
 <l n="7">manavanḍaluruṁ</l>
 <l n="8">rasaṇiṁ daya vus kalaḥ</l>
-<l n="9">hamiveka sr̥ṁniṁ<lb n="42r"/> du<gap reason="lost" extent="unknown"/>ga lavan jati,</l>
+<l n="9">hamiveka sr̥ṁniṁ<lb n="42r"/> du<gap reason="lost" extent="unknown" unit="character"/>ga lavan jati,</l>
 <l n="10">ri daḷmm aṁsraṁśraṁṁan.</l>
 </lg><lg n="04.055"><l n="1">ø ki suravaṇī tan kəneṁ mr̥m ṣavṁi</l>
 <l n="2">ṁeliṁ sarira lamon ka<lb n="42r"/>rasa,</l>
@@ -2987,7 +3000,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">daṙmmaka sobava,</l>
 <l n="7">skaṙṣara vuṁu</l>
 <l n="8">rahina ta<lb n="42r"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/>vaṙṇna,</l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/>vaṙṇna,</l>
 <l n="10">hasmu maras. vr̥dayaṇira saṁ tami,</l>
 <l n="11">noraghane tīṇḍaha</l>
 </lg><lg n="04.056"><l n="1">//0 pamr̥citaṇiṁ daya gu<lb n="42r"/>mtiṙ</l>
@@ -2995,25 +3008,25 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">ki daṙmmakivi liṁgiḥ riṁ made</l>
 <l n="4">surajaya dḍinulu</l>
 <l n="5">lviṙ taṇ eghaṙ rasaneṁ ati,</l>
-<l n="6">ru<lb n="42r"/><gap reason="lost" extent="unknown"/></l>
-<l n="7"><gap reason="lost" extent="unknown"/></l>
-<l n="8"><gap reason="lost" extent="unknown"/>k rasaṇiṁ vr̥daya,</l>
+<l n="6">ru<lb n="42r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="7"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="8"><gap reason="lost" extent="unknown" unit="character"/>k rasaṇiṁ vr̥daya,</l>
 <l n="9">halaravak  tan kəneṁ turu savṁi</l>
 <l n="10">pr̥mmana mavalikan.<lb n="42r"/></l>
 </lg><lg n="04.057"><l n="1">//0 ni tejasarī duruṁ ataṁi</l>
 <l n="2">lagya ṇuṁkmi vahəni vastra</l>
 <l n="3">hasmu heraṁ cipta leteṙ</l>
 <l n="4">təñuḥ hamiṇḍa layu</l>
-<l n="5">daṙmma<pb n="42v"/><lb n="42v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>nakivvaṁ</l>
+<l n="5">daṙmma<pb n="42v"/><lb n="42v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>nakivvaṁ</l>
 <l n="7">tatas hana vuṁu</l>
 <l n="8">taṇn ana kutugiṁ dupa,</l>
 <l n="9">samun hadan avuṁu saṁ vaṇi<lb n="42v"/>ta glis</l>
 <l n="10">ṣigra mareṁ padyusan.</l>
 </lg><lg n="04.058"><l n="1">//0 kveḥni paravan phaḍa kapaṁgiḥ</l>
 <l n="2">raṁḍa vulañjaṙ mara riṁ səṇḍaṁ</l>
-<l n="3">riṁ maṙga tan lyan sabḍa<lb n="42v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>taminera kedul</l>
+<l n="3">riṁ maṙga tan lyan sabḍa<lb n="42v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>taminera kedul</l>
 <l n="5">phragivakā bisa kakavin</l>
 <l n="6">kaṁ atī halamalam</l>
 <l n="7">hamihaṙsa kiduṁ</l>
@@ -3030,7 +3043,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">paṁavara bude smaṁ</l>
 <l n="9">ki suranāta havayaḥ hanmu visik</l>
 <l n="10">linokakəṇ iṁ karas.</l>
-</lg><lg n="04.060"><l n="1">//0 tuṁgal ñanaṇi<lb n="42v"/><gap reason="lost" extent="unknown"/>sa<gap reason="lost" extent="unknown"/> ṁavi,</l>
+</lg><lg n="04.060"><l n="1">//0 tuṁgal ñanaṇi<lb n="42v"/><gap reason="lost" extent="unknown" unit="character"/>sa<gap reason="lost" extent="unknown" unit="character"/> ṁavi,</l>
 <l n="2">ki surajayā puphusiṁ sabḍa,</l>
 <l n="3">haṙtinən savenya saviśayane</l>
 <l n="4">ni tejasari vinuvu<lb n="42v"/>s</l>
@@ -3038,8 +3051,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">caçaṁkrimaṇiṁ ulaḥ</l>
 <l n="7">pramaṙtaṇi laku</l>
 <l n="8">kabeḥ sabḍa mahaprana,</l>
-<l n="9">mon katmu rupa<pb n="43r"/><lb n="43r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="10"><gap reason="lost" extent="unknown"/> ke hisiniṁ pralambaṁ</l>
+<l n="9">mon katmu rupa<pb n="43r"/><lb n="43r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="10"><gap reason="lost" extent="unknown" unit="character"/> ke hisiniṁ pralambaṁ</l>
 </lg><lg n="04.061"><l n="1">//0 tan ṣipi ṁeliṁṁ aripta kavi,</l>
 <l n="2">hamriḥ yasā kavr̥diṇiṁ ña<lb n="43r"/>na,</l>
 <l n="3">ragha kumavī harane</l>
@@ -3047,8 +3060,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">rare¡ vadoṇn avaraḥ jati,</l>
 <l n="6">hagave paṁrañcaṇa,</l>
 <l n="7">tutn iṁ apuguṁ</l>
-<l n="8">hasuṁ vṁa<lb n="43r"/><gap reason="lost" extent="unknown"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/>ranaṇiṁṁ anunulis tanpha viniḥ</l>
+<l n="8">hasuṁ vṁa<lb n="43r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/>ranaṇiṁṁ anunulis tanpha viniḥ</l>
 <l n="10">kaṙsani kaneṁ cipta</l>
 </lg><lg n="04.062"><l n="1">//0 paksaniṁ guṇā vaṙṇna pr̥tivi,<lb n="43r"/></l>
 <l n="2">sakakalāṇniṁ gita kinaṙyya</l>
@@ -3056,7 +3069,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">di pranaḥhiṁ aṁāpus</l>
 <l n="5">ḍuk vinaṙṇa ki suravaṇi,</l>
 <l n="6">nityasa naraveca,<lb n="43r"/></l>
-<l n="7"><gap reason="lost" extent="unknown"/></l>
+<l n="7"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="8">hāṁikət phramavīrasa,</l>
 <l n="9">hamr̥citā kalaṁniṁ gunuṁ kavi,</l>
 <l n="10">hasaṁu lara viraṁ</l>
@@ -3064,16 +3077,16 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">de¡niṁṁ amagiḥ dyuta vighraha,</l>
 <l n="3">sarira vus phavr̥teṇe</l>
 <l n="4">kavataṁe pamuvus</l>
-<l n="5">ki maṁuyu ma<lb n="43r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>ni dika,</l>
+<l n="5">ki maṁuyu ma<lb n="43r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>ni dika,</l>
 <l n="7">ramya ṁinumm inum</l>
 <l n="8">hantyata tusṭani maṇaḥ</l>
 <l n="9">ki para maṁuyv amopara kaka<lb n="43r"/>ven</l>
 <l n="10">lviṙniṁ puṙbya tinilas.</l>
 </lg><lg n="04.064"><l n="1">//0 sāpasaṙ lavasnya tataṁi,</l>
 <l n="2">luvaṙ tanṣaḥ hane pagubugan</l>
-<l n="3">rahina vṁi karame<pb n="43v"/><lb n="43v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>intu</l>
+<l n="3">rahina vṁi karame<pb n="43v"/><lb n="43v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>intu</l>
 <l n="5">rob tan ṣurudḍepun vantoni,</l>
 <l n="6">hapajəg rombeḥ paphat</l>
 <l n="7">ki maṁuyv avuru</l>
@@ -3081,7 +3094,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">ṣuṁga piluvaṁ tan lyan kaṁ denrasani,</l>
 <l n="10">vany aṁucap hatakan.</l>
 </lg><lg n="04.065"><l n="1">//0 kasinomaṇya hakveḥ halit alit</l>
-<l n="2"><lb n="43v"/><gap reason="lost" extent="unknown"/>n</l>
+<l n="2"><lb n="43v"/><gap reason="lost" extent="unknown" unit="character"/>n</l>
 <l n="3">ḥ milv ataṇḍak</l>
 <l n="4">ni heṇḍaṁ suka budine</l>
 <l n="5">menḍra voṙ salaḥ smu</l>
@@ -3090,7 +3103,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">suka ki maṁuyu,</l>
 <l n="9">havuru sayanḍoleya,</l>
 <l n="10">hasasaṙ suśuṙ tāṁane hanaṁgapahiṙ</l>
-<l n="11">ḍaḍasare ka<lb n="43v"/><gap reason="lost" extent="unknown"/></l>
+<l n="11">ḍaḍasare ka<lb n="43v"/><gap reason="lost" extent="unknown" unit="character"/></l>
 </lg><lg n="04.066"><l n="1">ø vaniḥ tiba goṇipun aliṁgiḥ</l>
 <l n="2">kasiṁṣal bavane hakoṭeṭeran</l>
 <l n="3">hana mutaḥ riṁ ha<lb n="43v"/>jaṁ</l>
@@ -3099,14 +3112,14 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">hana tiba karaṁkaṁ</l>
 <l n="7">muñəṁ panoṇipun</l>
 <l n="8">hataṁi taṁi kajəṁkaṁ</l>
-<l n="9">ya<lb n="43v"/><gap reason="lost" extent="unknown"/>r amava budi,</l>
+<l n="9">ya<lb n="43v"/><gap reason="lost" extent="unknown" unit="character"/>r amava budi,</l>
 <l n="10">radāvoṙ mumutaḥhan.</l>
 </lg><lg n="04.067"><l n="1">//0 tutugh nalikaniṁ atata<lb n="43v"/>ṁi,</l>
 <l n="2">tatas eñjaṁ maṁke kavaṙṇnaha,</l>
 <l n="3">ni hiṇḍaṁ maka ta ḍerek</l>
 <l n="4">phaḍa saśaman kampuḥ</l>
 <l n="5">koṇniṁahā ni tejasari,</l>
-<l n="6"><pb n="44r"/><lb n="44r1"/><gap reason="lost" extent="unknown"/></l>
+<l n="6"><pb n="44r"/><lb n="44r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="7">vusnya ṣalin kamphuḥ</l>
 <l n="8">pik vinaṙṇna lariṁ atat</l>
 <l n="9">hasiñjaṁ pṭolalus nataṙ putiḥ</l>
@@ -3114,8 +3127,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.068"><l n="1">//0 lməsni tṁaḥ gora halisig</l>
 <l n="2">mimbat mayat liṙni kasayaka</l>
 <l n="3">ko¡nusakiṁ saruṁaṁne</l>
-<l n="4">pamulv akuṁ a<lb n="44r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>muṁvaṁhakən ṣiḥ</l>
+<l n="4">pamulv akuṁ a<lb n="44r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>muṁvaṁhakən ṣiḥ</l>
 <l n="6">halis mayat kumñaṙ</l>
 <l n="7">hagave haṙsa kuṁ</l>
 <l n="8">padma lviṙ ratna kanaka</l>
@@ -3124,16 +3137,16 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.069"><l n="1">ø piṁeni vaja vahu siṣig</l>
 <l n="2">sinahasaṇ i laṭa ṁatiraḥ</l>
 <l n="3">lviṙ maṁgis r̥mək ghuyune</l>
-<l n="4">ka<lb n="44r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/> taḥ tumibeṁ gəṇḍis</l>
+<l n="4">ka<lb n="44r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> taḥ tumibeṁ gəṇḍis</l>
 <l n="6">phajapajaniṁ ula</l>
 <l n="7">tikṣnāne panḍulu,</l>
 <l n="8">haśuṁ laraṇi lu<lb n="44r"/>miyat</l>
 <l n="9">thibraniṁ cipta nira ki surajaya tan ənti</l>
 <l n="10">sihe kady alamalam.</l>
 </lg><lg n="04.070"><l n="1">//0 hakeḥni vanita hamoṁ karasme</l>
-<l n="2">øi ru<lb n="44r"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> n le ratnā sare,</l>
+<l n="2">øi ru<lb n="44r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> n le ratnā sare,</l>
 <l n="4">tumut phaḍa milət.</l>
 <l n="5">yeṇi rumavit ni rumaṇi</l>
 <l n="6">śuvaṙṇna,<lb n="44r"/></l>
@@ -3141,8 +3154,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">phaḍanomm ayu riṁ rupa,</l>
 <l n="9">kaṁ savijī lviṙ sukṣma vaṇita manis</l>
 <l n="10">haparab ni vinitaṙja</l>
-</lg><lg n="04.071"><l n="1">ø roro sa<pb n="44v"/><lb n="44v1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/> rupaṇirā ni skaṙ</l>
+</lg><lg n="04.071"><l n="1">ø roro sa<pb n="44v"/><lb n="44v1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/> rupaṇirā ni skaṙ</l>
 <l n="3">ni dosā makavaṙṇane</l>
 <l n="4">ni śumaṙsā hahibu</l>
 <l n="5">məgəparipolaḥ<lb n="44v"/>nya haris</l>
@@ -3150,8 +3163,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">ñañil tiṁkaḥhipun</l>
 <l n="8">samya vacaneṁ vaṇita</l>
 <l n="9">nora kaya kakaṁku ni tejasari</l>
-<l n="10">liṙ skaṙri naga<lb n="44v"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="04.072"><l n="1"><gap reason="lost" extent="unknown"/> rupa hasmu kuniṁ</l>
+<l n="10">liṙ skaṙri naga<lb n="44v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="04.072"><l n="1"><gap reason="lost" extent="unknown" unit="character"/> rupa hasmu kuniṁ</l>
 <l n="2">ratnasarī kadi pisaṁ vigaṙ</l>
 <l n="3">hana kuṇiṁ pamulv avəleḥ</l>
 <l n="4">ni śuvaṙṇna pamulu</l>
@@ -3159,7 +3172,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">haṁroron phoḥ yen i rupa,</l>
 <l n="7">vaṙṇanya ḷḷru,</l>
 <l n="8">sami lumakv amoṁ menḍra</l>
-<l n="9">haṁḷḷntreḥ vaṙṇa<lb n="44v"/> <gap reason="lost" extent="unknown"/></l>
+<l n="9">haṁḷḷntreḥ vaṙṇa<lb n="44v"/> <gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="10">lviṙ padapha kaṁinan</l>
 </lg><lg n="04.073"><l n="1">//0 paḍa hegaṙ sakveḥni pavistri,</l>
 <l n="2">manaḥ menḍra haməməp iṁ ulat<lb n="44v"/>.</l>
@@ -3168,16 +3181,16 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">rara guṇuṁ bəsuś ataṇi,</l>
 <l n="6">havastra piṇḍa hivaṁ</l>
 <l n="7">lamoṇa saśampuṙ</l>
-<l n="8">kaya voṁ ha<lb n="44v"/><gap reason="lost" extent="unknown"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/> baṁ priyaka ṁbəki kupiṁ</l>
+<l n="8">kaya voṁ ha<lb n="44v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/> baṁ priyaka ṁbəki kupiṁ</l>
 <l n="10">liṙ moga ṁasab asab.</l>
 </lg><lg n="04.074"><l n="1">ø ni tejāsarī tan lyan phinuji,</l>
 <l n="2">kaṁ<lb n="44v"/> ginunəm ṣakveḥni taruna,</l>
 <l n="3">kavaṙṇna paripolahe</l>
 <l n="4">hasuṁ braṁtani laku</l>
 <l n="5">hakeḥ haṙsā tan kapaḍan ṣiḥ,</l>
-<l n="6">tan lo<pb n="45r"/><lb n="45r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="7"><gap reason="lost" extent="unknown"/>ṁa sini daya kuṁ</l>
+<l n="6">tan lo<pb n="45r"/><lb n="45r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="7"><gap reason="lost" extent="unknown" unit="character"/>ṁa sini daya kuṁ</l>
 <l n="8">hasamaṙ tan kataragal</l>
 <l n="9">cipta larā minukṣmā riṁ daḷm ati¡,</l>
 <l n="10">tan mədal iṁ vacana<lb n="45r"/></l>
@@ -3185,16 +3198,16 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">vimuṙçita vr̥daya sukṣkaṙ</l>
 <l n="3">nora lyan pharaṇy atine</l>
 <l n="4">ki surajaya ke¡tuṁ</l>
-<l n="5">pinet rara<lb n="45r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>riṁaṇīṁ taṇḍak.</l>
+<l n="5">pinet rara<lb n="45r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>riṁaṇīṁ taṇḍak.</l>
 <l n="7">ṁr̥sniṁ vvaṁṁ avuyuṁ</l>
 <l n="8">sinivi ri kavibasa,</l>
 <l n="9">pinīguṇā ri boga ki  su<lb n="45r"/>rajaya,</l>
 <l n="10">daṙpa kveḥni katr̥snan.</l>
 </lg><lg n="04.076"><l n="1">//0 ni tejaśarī maṁkya rumihi</l>
 <l n="2">øi śumaṙsā lavaṇ ni vitaṙja,</l>
-<l n="3">ni skaṙ ni dosa ḍe<lb n="45r"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>luṙ</l>
+<l n="3">ni skaṙ ni dosa ḍe<lb n="45r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>luṙ</l>
 <l n="5">tiniṁalan liṙ vidaḍari,</l>
 <l n="6">hajaṁkrama ṁudyana,</l>
 <l n="7">hapet rasəmy alaṁu</l>
@@ -3202,8 +3215,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">ni runtaṙjā ni ratnasara hi vuri,</l>
 <l n="10">ni rumavit. vəkasan.</l>
 </lg><lg n="04.077"><l n="1">ø samphun mintaṙ saṁ anḍo karasmin</l>
-<l n="2">ki surajaya ṁiṇḍaṁī la<lb n="45r"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>ṁe</l>
+<l n="2">ki surajaya ṁiṇḍaṁī la<lb n="45r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>ṁe</l>
 <l n="4">kasinomanya duluṙ</l>
 <l n="5">sami hayas phaḍa suśumphiṁ</l>
 <l n="6">tan kavaṙṇnahe maṙga</l>
@@ -3211,8 +3224,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">vus aṁleṙ hi paṁajaran</l>
 <l n="9">ramya taṇḍak haṁgatya yādan alaris.</l>
 <l n="10">tansa hasalin ṣəkaṙ</l>
-</lg><lg n="04.078"><l n="1">ø hapaphatuḥha<pb n="45v"/><lb n="45v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>kajā muṙciteṁ daya,</l>
+</lg><lg n="04.078"><l n="1">ø hapaphatuḥha<pb n="45v"/><lb n="45v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>kajā muṙciteṁ daya,</l>
 <l n="3">tr̥ptiniṁ jahinaṁ kabeḥ</l>
 <l n="4">rupanya hayuhayu</l>
 <l n="5">haṁiṁ tuṁgal kaṁ mi<lb n="45v"/>kadi,</l>
@@ -3221,7 +3234,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">śoṙ kaṁ kucubuṁ kasihan</l>
 <l n="9">miṇaka vaṙṇnanira ni tejasari,</l>
 <l n="10">saksat jamuṙ komara<lb n="45v"/></l>
-</lg><lg n="04.079"><l n="1"><gap reason="lost" extent="unknown"/>ras denya śusumphiṁ</l>
+</lg><lg n="04.079"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>ras denya śusumphiṁ</l>
 <l n="2">luṁiṁ kateraḥ  sinatmateṁ kanaṁa</l>
 <l n="3">lviṙ guṇuṁ kəmbaṁ rumave</l>
 <l n="4">cumə<lb n="45v"/>k tanpha talutuḥ</l>
@@ -3229,8 +3242,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">liṙ nagevəḥh i rupa,</l>
 <l n="7">haṁiṁ tanpha nulus</l>
 <l n="8">kaṣv aśiḥ muṁgviṁ pravvata,</l>
-<l n="9">taṇn ahiva<gap reason="lost" extent="unknown"/> skaṙra<lb n="45v"/><gap reason="lost" extent="unknown"/></l>
-<l n="10"><gap reason="lost" extent="unknown"/>ṁn i ravoṁira</l>
+<l n="9">taṇn ahiva<gap reason="lost" extent="unknown" unit="character"/> skaṙra<lb n="45v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="10"><gap reason="lost" extent="unknown" unit="character"/>ṁn i ravoṁira</l>
 </lg><lg n="04.080"><l n="1">//0 niṙ kula niṙ rupa niṙ prakavi,</l>
 <l n="2">kap√raṁ tanpha sadana,</l>
 <l n="3">kasv aśiḥ ta<lb n="45v"/>ṇn ana mule</l>
@@ -3238,8 +3251,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">hənḍi vite kaṁ pulakr̥ti</l>
 <l n="6">taṇn adoḥ sakiṁ ragha,</l>
 <l n="7">tuṁgal phupusṣipun</l>
-<l n="8">hapan tan. kəna pi<lb n="45v"/><gap reason="lost" extent="unknown"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/>ṇe jati laksanane lviḥ</l>
+<l n="8">hapan tan. kəna pi<lb n="45v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/>ṇe jati laksanane lviḥ</l>
 <l n="10">vijiliṁ tapa brata</l>
 </lg><lg n="04.081"><l n="1">ø ukaraniṁ sabḍa ṁubatth abit</l>
 <l n="2">saka vr̥<lb n="45v"/>diniṁ jñana,</l>
@@ -3247,8 +3260,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">tuṁgal virasanipun</l>
 <l n="5">phira kveḥhe hisiniṁ bumi,</l>
 <l n="6">səśək. tan phaligaran</l>
-<l n="7">tatan kəneṁṁ ī<pb n="46r"/><lb n="46r1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="8"><gap reason="lost" extent="unknown"/>ṁniṁ basa,</l>
+<l n="7">tatan kəneṁṁ ī<pb n="46r"/><lb n="46r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="8"><gap reason="lost" extent="unknown" unit="character"/>ṁniṁ basa,</l>
 <l n="9">haṁiṁ tuṁgal phriḥ rupaṇira saṁ  kavi,</l>
 <l n="10">nityasa cumarita</l>
 </lg><lg n="04.082"><l n="1">//0 hapa janma haranana kavi,<lb n="46r"/></l>
@@ -3257,7 +3270,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">saṁ akaṙya pamuvus</l>
 <l n="5">ki śurajaya kaṁ aṁ√lati,</l>
 <l n="6">voṁṁ anom tan vriṁ  naya,</l>
-<l n="7">ha<lb n="46r"/><gap reason="lost" extent="unknown"/>yu</l>
+<l n="7">ha<lb n="46r"/><gap reason="lost" extent="unknown" unit="character"/>yu</l>
 <l n="8">mapan vusṣ aneṁ sarira,</l>
 <l n="9">maṙmaniṁ bañcana hagəṁ haṁranhī hati,</l>
 <l n="10">haṁimuṙrimuṙ lamphaḥ</l>
@@ -3265,7 +3278,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">halavas ḍeniṁ amaṁun vəlas</l>
 <l n="3">himbuḥ tanpha loṁ kaṙsane</l>
 <l n="4">tr̥ṣna gəṁ rob tan ṣurud</l>
-<l n="5">tan ḍarana,<lb n="46r"/> <gap reason="lost" extent="unknown"/>naṇḍaṁ kanin</l>
+<l n="5">tan ḍarana,<lb n="46r"/> <gap reason="lost" extent="unknown" unit="character"/>naṇḍaṁ kanin</l>
 <l n="6">baya ṁmasi pjaḥ</l>
 <l n="7">yen buvati yeṁ śun</l>
 <l n="8">meḥ ghnəpa tigaṁ vulan</l>
@@ -3275,16 +3288,16 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">hasmu kepvan phanaṙka daya,</l>
 <l n="3">vyaṙ katutuṙ tanpha gave</l>
 <l n="4">tan ka<lb n="46r"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="6">hat</l>
-<l n="7">t <gap reason="lost" extent="unknown"/> ṙga ki suravaṇi,</l>
+<l n="7">t <gap reason="lost" extent="unknown" unit="character"/> ṙga ki suravaṇi,</l>
 <l n="8">hamiveka parasa,</l>
 <l n="9">taṇ ana kasambut</l>
 <l n="10">ḍatan kavaṙṇnaheṁ maṙgha</l>
 <l n="11">pra<lb n="46r"/>phteṁ vesma lamphaḥhira saṁ taruni,</l>
 <l n="12">hantya toya sarira</l>
 </lg><lg n="04.085"><l n="1">//0 ki surajaya siḥhe taṇ ənti,</l>
-<l n="2">hapuvarā sa<pb n="46v"/><lb n="46v1"/><gap reason="lost" extent="unknown"/>hayun kesaḥ</l>
+<l n="2">hapuvarā sa<pb n="46v"/><lb n="46v1"/><gap reason="lost" extent="unknown" unit="character"/>hayun kesaḥ</l>
 <l n="3">ḥku hemaṇ evehe</l>
 <l n="4">haṁuṙ luṁa hateṁśun</l>
 <l n="5">hasāniga maṁkyadan phamit</l>
@@ -3292,7 +3305,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">śun akatoliḥ laku</l>
 <l n="8">hamoṁaragha saṁṣaya,</l>
 <l n="9">gəghnəpā siraja ra kelaṁan kari,</l>
-<l n="10">biḃi varasva<lb n="46v"/><gap reason="lost" extent="unknown"/>sa</l>
+<l n="10">biḃi varasva<lb n="46v"/><gap reason="lost" extent="unknown" unit="character"/>sa</l>
 </lg><lg n="04.086"><l n="1">//0 sipi tr̥ṣnanira saṁ apamit</l>
 <l n="2">kī daṙmmakavī hataṁgəḥ lamphaḥ</l>
 <l n="3">ghaṙjita voṙ maras maṁke</l>
@@ -3311,7 +3324,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">kapavanan. kr̥bət gumtiṙ</l>
 <l n="6">kadya ṁaveṇi betra</l>
 <l n="7">panaṙgani lulut</l>
-<l n="8">phrapta simphaṁ<lb n="46v"/><gap reason="lost" extent="unknown"/>ṇiṁ səṇḍaṁ</l>
+<l n="8">phrapta simphaṁ<lb n="46v"/><gap reason="lost" extent="unknown" unit="character"/>ṇiṁ səṇḍaṁ</l>
 <l n="9">kapaphag lamphaḥhe ni tejasari,</l>
 <l n="10">kuməñut ḍayane tumiṁal.</l>
 </lg><lg n="04.088"><l n="1">//0 ḷyəpniṁ jiva<lb n="46v"/> yayaḥ kasiliḥ</l>
@@ -3319,7 +3332,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">tñuḥhi nala sinaren</l>
 <l n="4">hayu vijiliṁ vuvus</l>
 <l n="5">phanabḍane ki surava<pb n="47r"/><lb n="47r1"/>ni,</l>
-<l n="6"><gap reason="lost" extent="unknown"/>mpun kelaṁan</l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>mpun kelaṁan</l>
 <l n="7">rakanira muhun</l>
 <l n="8">moga  kariya linamaṙ</l>
 <l n="9">hasr̥tiṁ sabḍa  ni thejara sataṁis</l>
@@ -3327,8 +3340,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.089"><l n="1">//0 punapa karanira lalis</l>
 <l n="2">manira kakaṁ vruḥha riṁ pakanira,</l>
 <l n="3">manavy abaḃatuṙ ḍevek</l>
-<l n="4">tan kar̥ṁə deni<lb n="47r"/> <gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>ṇa saṁṣayaniṁ ati,</l>
+<l n="4">tan kar̥ṁə deni<lb n="47r"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>ṇa saṁṣayaniṁ ati,</l>
 <l n="6">sumaput</l>
 <l n="7">agave r̥ntaṁṁiṁ prana,</l>
 <l n="8">lavasṣ iśun haṁeca ri sina ni,</l>
@@ -3337,7 +3350,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">raka ṇira ninī bavatiya,</l>
 <l n="3">kariya suṇ aṁulanṭe</l>
 <l n="4">sigra lamphaḥnya daruṁ</l>
-<l n="5">luṁā ṁiṁkis niṙ<lb n="47r"/><gap reason="lost" extent="unknown"/>toliḥ</l>
+<l n="5">luṁā ṁiṁkis niṙ<lb n="47r"/><gap reason="lost" extent="unknown" unit="character"/>toliḥ</l>
 <l n="6">pingat iṁ kadiran</l>
 <l n="7">sa jyaḥ kari maṁu</l>
 <l n="8">braṁtaṁgəṁ tan phr̥naḥ suka,</l>
@@ -3346,7 +3359,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.091"><l n="1">//0 haṁgəṁ maṁu tan lon kaṁ kahiṣṭi</l>
 <l n="2">ki surajaya muṁgiṁ vr̥daya</l>
 <l n="3">ye¡n ratri tan kəneṁ kule<lb n="47r"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>ughu</l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>ughu</l>
 <l n="5">saṁṁ aṁecā paraniṁ ati,</l>
 <l n="6">liṙ gumantuṁṁ iṁ tiṁal</l>
 <l n="7">kākaṁku ke purun</l>
@@ -3354,7 +3367,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="9">mon kagughu kaya ṁmasṣana pati,</l>
 <l n="10">yen sira tan təkaha</l>
 </lg><lg n="04.092"><l n="1">//0 samunən laranira saṁ kari,</l>
-<l n="2">sira saṁ a<pb n="47v"/><lb n="47v1"/><gap reason="lost" extent="unknown"/></l>
+<l n="2">sira saṁ a<pb n="47v"/><lb n="47v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="3">kocapā sira saṁ amoṁ virage</l>
 <l n="4">sagoṇi kapiraṁu,</l>
 <l n="5">kalaran ṣiḥ braṁta ṁula<lb n="47v"/>ti,</l>
@@ -3362,7 +3375,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">phati denphalaku,</l>
 <l n="8">lumamphaḥ hasaṁu lara,</l>
 <l n="9">saparanaṇi raga kaṁ, suṇ ulati,</l>
-<l n="10">pjaḥhe<lb n="47v"/><gap reason="lost" extent="unknown"/></l>
+<l n="10">pjaḥhe<lb n="47v"/><gap reason="lost" extent="unknown" unit="character"/></l>
 </lg><lg n="04.093"><l n="1">ø piraṁ vulan lavasipun maṁkin</l>
 <l n="2">ki surajaya hansana maṙga</l>
 <l n="3">ghəṁ riṁ savitra dukape</l>
@@ -3371,8 +3384,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">tlas kaṁ paṁubonan</l>
 <l n="7">sagoṇe dumuṇuṁ</l>
 <l n="8">hakveḥ kasmaran i rapa,</l>
-<l n="9">hlahlā vaniḥ katiṁgal a<lb n="47v"/><gap reason="lost" extent="unknown"/></l>
-<l n="10"><gap reason="lost" extent="unknown"/>saha nutakən lampaḥ</l>
+<l n="9">hlahlā vaniḥ katiṁgal a<lb n="47v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="10"><gap reason="lost" extent="unknown" unit="character"/>saha nutakən lampaḥ</l>
 </lg><lg n="04.094"><l n="1">//0 hakeḥ haṙseṁ rupa tan katoliḥ</l>
 <l n="2">kinadaman makin tan katr̥snā<lb n="47v"/>n</l>
 <l n="3">tan kacipta rumave</l>
@@ -3381,7 +3394,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">tuṁgal. tləṁṁi jñaṇa,</l>
 <l n="7">tan luvaṙ pinkul</l>
 <l n="8">saṁ kari suka varasa<lb n="47v"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/>kaṁ minaka tatali,</l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/>kaṁ minaka tatali,</l>
 <l n="10">panistaṇiṁ lamphaḥ</l>
 </lg><lg n="04.095"><l n="1">ø vus kedəran ṣakaṙsvaṇniṁṁ ati,</l>
 <l n="2">piraguṁe ri guṇuṁ<lb n="47v"/> pavitra,</l>
@@ -3389,8 +3402,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">habalik saya haṁidul</l>
 <l n="5">vus kapuṁkuṙ manḍara śuci,</l>
 <l n="6">saya kaluntalunta,</l>
-<l n="7">hatut jəṁniṁ gu<pb n="48r"/><lb n="48r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="8"><gap reason="lost" extent="unknown"/> rajuṇa,</l>
+<l n="7">hatut jəṁniṁ gu<pb n="48r"/><lb n="48r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="8"><gap reason="lost" extent="unknown" unit="character"/> rajuṇa,</l>
 <l n="9">hamaksakən phraptaha vetaṇniṁ kavi,</l>
 <l n="10">hapralalu matiya</l>
 </lg><lg n="04.096"><l n="1">//0 saṁśaraṇiṁ raga<lb n="48r"/> kavlas veśiḥ</l>
@@ -3398,7 +3411,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">duṙgamma rusit maṙgaṇe</l>
 <l n="4">budḍi kadi kaduhuṁ</l>
 <l n="5">braṁta ri masarira ṁliḥ</l>
-<l n="6">liṙ lalaya<lb n="48r"/><gap reason="lost" extent="unknown"/></l>
+<l n="6">liṙ lalaya<lb n="48r"/><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="7">lamphus phrana layu</l>
 <l n="8">niṙ vaṇa praṁga tan ketaṁ</l>
 <l n="9">sakveḥniṁ baya kevuḥ nora kahiṣṭi</l>
@@ -3407,7 +3420,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">sarira kadya labuha juraṁ</l>
 <l n="3">haṁgegheha kapatine</l>
 <l n="4">hasurakara ṇesun</l>
-<l n="5">ta<lb n="48r"/><gap reason="lost" extent="unknown"/> veta hurip</l>
+<l n="5">ta<lb n="48r"/><gap reason="lost" extent="unknown" unit="character"/> veta hurip</l>
 <l n="6">tan kavasa naṇḍaṁṁa,</l>
 <l n="7">cipta kaṁ sadu tan sadu</l>
 <l n="8">lviḥ  deṇisun kasmaran</l>
@@ -3416,7 +3429,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.098"><l n="1">ø ki surajayalon lamphaḥ niki</l>
 <l n="2">lviḥ toliḥ maṁu maṇḍəg.</l>
 <l n="3">smu ketaṁ saṁ aśuṁ virage<lb n="48r"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="5">karahitani tejasari,</l>
 <l n="6">lila vayaṁvayaṁan</l>
 <l n="7">saṁṣaya kaghugu</l>
@@ -3425,7 +3438,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">ḍəḍət rasani manaḥ</l>
 </lg><lg n="04.099"><l n="1">//0 praphti juraṁjuraṁ lamphaḥ niki,</l>
 <l n="2">gəñjoṙ gumtəṙ pada kaṁelan</l>
-<l n="3"><pb n="48v"/><lb n="48v1"/> <gap reason="lost" extent="unknown"/></l>
+<l n="3"><pb n="48v"/><lb n="48v1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="4">ciptane</l>
 <l n="5">təmbiṁni ka maṙgaghuṁ</l>
 <l n="6">hatya reren ki suravaṇi,</l>
@@ -3435,7 +3448,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">kadya kon məṙma śvarani paksi gəṇḍiṁ</l>
 <l n="11">munya ṁukuli maṙga</l>
 </lg><lg n="04.100"><l n="1">//0 vahv aḷyəp grahitaniṁṁ ati</l>
-<l n="2">ka<lb n="48v"/><gap reason="lost" extent="unknown"/>nara,</l>
+<l n="2">ka<lb n="48v"/><gap reason="lost" extent="unknown" unit="character"/>nara,</l>
 <l n="3">hadan lako ṁadeyade</l>
 <l n="4">śumyuk ṣvaraniṁ vagyut</l>
 <l n="5">vanḍra mayatibrani riris</l>
@@ -3522,7 +3535,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6"><unclear>Ragasamaya</unclear> berjalan sampai di Kagenengan.</l>
 <l n="7">Mantap hatinya</l>
 <l n="8">sebab tidak lagi terpikirkan hidupnya.</l>
-<l n="9">Ragasamaya sedang tertimpa <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="9">Ragasamaya sedang tertimpa <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="10">ketika sampai di Kagenengan.</l>
 </lg><lg n="04.109"><l n="1">ø Seperti petunjuk dari Hyang Nugraha Widi,</l>
 <l n="2">Ragasamaya terhenti langkahnya</l>
@@ -3540,7 +3553,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">Ragasamaya menerima</l>
 <l n="7">sapaan, tahu caranya bertindak.</l>
 <l n="8">Tidak mendapat javaban atas pertanyaannya.</l>
-<l n="9">"Dari timur temanmu ini, hatinya <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+<l n="9">"Dari timur temanmu ini, hatinya <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="10">Saya tidak mempunyai tempat tinggal.</l>
 </lg><lg n="04.111"><l n="1">ø Aku hendak ganti bertanya Ki Sanak.</l>
 <l n="2">Di mana tempat tinggalmu?".</l>
@@ -3903,7 +3916,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.147"><l n="1">ø Ada yang jelas-jelas baru saja bertapa</l>
 <l n="2">turut pada larangan dia yang unggul</l>
 <l n="3">kemahiranya jauh <unclear>darinya</unclear>. Bunga katakatanya</l>
-<l n="4">besar dalam <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="4">besar dalam <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="5">tampak amat sangat kurus,</l>
 <l n="6">mahir dalam ber"tandak".</l>
 <l n="7">Terkena kerlingan matanya <unclear>orang jadi</unclear> rindu.</l>
@@ -4049,7 +4062,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">Surajaya marah</l>
 <l n="8">kemantapannya beryoga tidak goyah.</l>
 <l n="9">Ni Sekarja berkehendak kuat  datang secara diam-diam pada malam hari</l>
-<l n="10">tiada <unclear><gap reason="lost" extent="unknown"/>?</unclear> menguasai.</l>
+<l n="10">tiada <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> menguasai.</l>
 </lg><lg n="04.162"><l n="1">Dicoba dilupakan semakin menguasai pikiran,</l>
 <l n="2">dicoba untuk ditekan, cintanya semakin membara.</l>
 <l n="3"><unclear>Ia</unclear> mendesah mulai tergila-gila</l>
@@ -4083,7 +4096,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="04.165"><l n="1">ø Agak bingung hati gemetar</l>
 <l n="2">tertegun tanpa bicara,</l>
 <l n="3">Surajaya hilang akal kini</l>
-<l n="4">kacau atas perasaan raganya yang <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+<l n="4">kacau atas perasaan raganya yang <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="5">"Menyadari rasa hati ini</l>
 <l n="6">aku tidak urung mati.</l>
 <l n="7">Itulah tujuanku</l>
@@ -4148,7 +4161,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">dengan segala hasrat indriyanya.</l>
 <l n="7">"Saya tidak akan melakukan</l>
 <l n="8">perbuatan jahat.</l>
-<l n="9">Sangat aku <unclear><gap reason="lost" extent="unknown"/>?</unclear> engkau Nini</l>
+<l n="9">Sangat aku <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> engkau Nini</l>
 <l n="10">tetapi sembunyikan saja".</l>
 </lg><lg n="04.172"><l n="1">ø Semakin besar cintanya, pasti.</l>
 <l n="2">Semakin tidak melepas tangan.</l>
@@ -4262,13 +4275,13 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10"><unclear>tetapi</unclear> mengabaikan kevaspadaan.</l>
 </lg><lg n="04.183"><l n="1">ø "Kakang Surajaya sepertinya tidak mempunyai kelebihan.</l>
 <l n="2">Sudah kelihatan tingkahmu yang bodoh.</l>
-<l n="3">Jangan-jangan kesalahan itu <unclear><gap reason="lost" extent="unknown"/>?</unclear>,</l>
+<l n="3">Jangan-jangan kesalahan itu <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>,</l>
 <l n="4">karena tidak tahu.</l>
 <l n="5">Ingat akan kelebihan barangkali terabaikan</l>
 <l n="6">besarlah kesengsaraannya.</l>
 <l n="7">Adapun yang aku dengar</l>
 <l n="8">tampak keburukan dunia.</l>
-<l n="9">Mana ujudnya sorga, dosa <unclear><gap reason="lost" extent="unknown"/>?</unclear> dan manikam itu</l>
+<l n="9">Mana ujudnya sorga, dosa <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> dan manikam itu</l>
 <l n="10">yang merupakan bayangan berupa katakata.</l>
 </lg><lg n="04.184"><l n="1">ø Banyak <unclear>orang</unclear> yang bisa berkata-kata berlagak pandai</l>
 <l n="2">tetapi tersamar dalam perbuatan</l>
@@ -4370,7 +4383,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">Ia berhias daun bervarna-varni,</l>
 <l n="9">samar-samar, berantakan sepasang ikal rambut kecilnya di dahi</l>
 <l n="10">didesak-desak oleh bunga.</l>
-</lg><lg n="04.194"><l n="1">ø Bermacam-macam tingkah mereka <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+</lg><lg n="04.194"><l n="1">ø Bermacam-macam tingkah mereka <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="2">Ragasamaya bertindak.</l>
 <l n="3">Wajahnya muram</l>
 <l n="4">Ki Surajaya kacau balau</l>
@@ -4477,7 +4490,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">mengetahui akan keadaan yang menyenangkan.</l>
 <l n="7">Kini badanku</l>
 <l n="8">makan nasi "əngi".</l>
-<l n="9">Jika ada <unclear><gap reason="lost" extent="unknown"/>?</unclear> <unclear>memberi</unclear> kesenangan pada pikiran,</l>
+<l n="9">Jika ada <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> <unclear>memberi</unclear> kesenangan pada pikiran,</l>
 <l n="10">selalu makan dari pemberian"</l>
 </lg><lg n="04.205"><l n="1">ø Sungguh indah pertapaan di <unclear>gunung</unclear> Kavi,</l>
 <l n="2">tempat perkumpulan para viku bijaksana.</l>
@@ -4511,7 +4524,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="10">berjalan di mega mendung".</l>
 </lg><lg n="04.208"><l n="1">ø Perjalanan mereka menemukan tanaman berderet,</l>
 <l n="2">air sungainya <unclear>?</unclear> baru saja disalurkan.</l>
-<l n="3">Sampai di Sukma, <unclear><gap reason="lost" extent="unknown"/>?</unclear> terhenti,</l>
+<l n="3">Sampai di Sukma, <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> terhenti,</l>
 <l n="4">singgah di padepokan besar.</l>
 <l n="5">Dia yang gembira lalu membersihkan diri</l>
 <l n="6">menyeka badan.</l>
@@ -4825,167 +4838,167 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">Hatinya semakin senang</l>
 <l n="4">melevati jurang-jurang curam.</l>
 <l n="5">Menyambar-nyambar dengan gesit burung sriti</l>
-<l n="6"><unclear><gap reason="lost" extent="unknown"/>?</unclear> berebut lubang</l>
+<l n="6"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> berebut lubang</l>
 <l n="7">sarangnya yang hanya satu.</l>
 <l n="8">Terheran-heran hati orang yang melihat</l>
 <l n="9">ujud batunya menjulang serupa vayang</l>
 <l n="10">yang lain seperti gapura.</l>
-</lg><lg n="04.240"><l n="1"><gap reason="lost" extent="unknown"/>ṁak<gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>dady aneṁ paṁajaran</l>
+</lg><lg n="04.240"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>ṁak<gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>dady aneṁ paṁajaran</l>
 <l n="3">kaṁtrini dira lavase</l>
 <l n="4">haṁepuk<lb n="48v"/>. brata lulut mano kaṙyya saṁṁ apaliṁgiḥ</l>
 <l n="5">siḍəmən sakṣana,</l>
 <l n="6">gantyaṇiṁ pamuvus</l>
 <l n="7">hayəṁani panataran</l>
-<l n="8">canḍra vesva kamuṙtviniṁ<lb n="48v"/><gap reason="lost" extent="unknown"/></l>
-<l n="9"><gap reason="lost" extent="unknown"/></l>
-<l n="10"><gap reason="lost" extent="unknown"/> d. // 0 //</l>
+<l n="8">canḍra vesva kamuṙtviniṁ<lb n="48v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="9"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="10"><gap reason="lost" extent="unknown" unit="character"/> d. // 0 //</l>
 </lg></div>
            <div n="5"><lg n="05.001"><l n="1">uçapən sira saṁṁ aprabu</l>
 <l n="2">sa<lb n="48v"/>ṁa bala vaṇā samphuna tiyaṁ</l>
 <l n="3">kuda pnuḥ tr̥ṁgalā lavan phaḍati,</l>
 <l n="4">sami gaṙjitā sakveḥhi vadya humuṁ</l>
-<l n="5">ramyadan busana<lb n="48v"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.002"><l n="1"><gap reason="lost" extent="unknown"/>tlas aṁrasukaprabun</l>
+<l n="5">ramyadan busana<lb n="48v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.002"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>tlas aṁrasukaprabun</l>
 <l n="2">saṙvv aratnā busanaṇnira saṁ nata<lb n="48v"/>,</l>
 <l n="3">abra murub sakṣat ṣuṙyya humijil</l>
 <l n="4">ṣakiṁṁ udayagirī vəkasiṁ timuṙ</l>
 <l n="5">bavsvaraṇi kiṙṇa śr̥ṁniṁ cunḍa manik.</l>
-<l n="6">yayeṁ tu<pb n="68r"/><lb n="68r1"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.003"><l n="1"><gap reason="lost" extent="unknown"/>śvetā tuvalus</l>
+<l n="6">yayeṁ tu<pb n="68r"/><lb n="68r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.003"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>śvetā tuvalus</l>
 <l n="2">phinar̥mas hasabuk ghiriṁsiṁ vayaṁ<lb n="68r"/></l>
 <l n="3">hatris alaṇḍeyan mogan aṁravit</l>
 <l n="4">habiṁgəl kamītuvuḥ linubeṁ luhuṙ</l>
 <l n="5">pinatikiṁ ratna pakaja ṁidəri,</l>
-<l n="6">abahura<lb n="68r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.004"><l n="1"><gap reason="lost" extent="unknown"/></l>
+<l n="6">abahura<lb n="68r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.004"><l n="1"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="2">rum</l>
 <l n="3">habrasinaṁ śuvaṙṇna muṁṁgviṁ palana,</l>
 <l n="4">kumbaṇni<lb n="68r"/>pun saha kombala noṁi,</l>
 <l n="5">rinəṁga kanakā juṙjə jnəṁipun</l>
 <l n="6">hakajaṁ vaṁgā padakaniṁ aṣṭi¡,</l>
-<l n="7">hinucvarā riṁ kuśa<lb n="68r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.005"><l n="1">ø saṁ nata sam<gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>nā gumər̥bəg lamphaḥhe bala</l>
+<l n="7">hinucvarā riṁ kuśa<lb n="68r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.005"><l n="1">ø saṁ nata sam<gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>nā gumər̥bəg lamphaḥhe bala</l>
 <l n="3">mvaṁ voṁ batuṙ<lb n="68r"/> tuṣṭa nuraga ṁiriṁ</l>
 <l n="4">para gustī paḍa paphatuhan kampuḥ</l>
 <l n="5">ta para mantriy avraghadesa hadi,</l>
-<l n="6">hatuṁgalan phaḍati ri<lb n="68r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.006"><l n="1"><gap reason="lost" extent="unknown"/>boṁ hadu<gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>bra sinaṁ lumakv ayuṇiṁ gajaḥ,</l>
+<l n="6">hatuṁgalan phaḍati ri<lb n="68r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.006"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>boṁ hadu<gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>bra sinaṁ lumakv ayuṇiṁ gajaḥ,</l>
 <l n="3">svaranya saluṙ saha ku<lb n="68r"/>dḍa karihin</l>
 <l n="4">vragapaṁalasan hatuṁgalan phayuṁ</l>
 <l n="5">haśraṁ munya raraṁin kəṇḍaṁ goṁ karihin</l>
-<l n="6">munya ghanti murava gəntu<pb n="68v"/><lb n="68v1"/> <gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.007"><l n="1"><gap reason="lost" extent="unknown"/></l>
+<l n="6">munya ghanti murava gəntu<pb n="68v"/><lb n="68v1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.007"><l n="1"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="2">ṣurud</l>
 <l n="3">hage lamphahi bala vus phraptī phalasa,</l>
 <l n="4">hakuvvə vaṙṇnanən rakya<lb n="68v"/>na patiḥ</l>
 <l n="5">senapatī haraṁga kaṇḍuruhan moṁ</l>
 <l n="6">ki¡ juru paṁalasan ṣigradan aṁiriṁ</l>
 <l n="7">kadi guntuṙ svaraniṁ mr̥daṁga</l>
-</lg><lg n="05.008"><l n="1">//0 kəṇḍaṁ<lb n="68v"/><gap reason="lost" extent="unknown"/>ne habaru<gap reason="lost" extent="unknown"/></l>
-<l n="2">gaṙjita t<gap reason="lost" extent="unknown"/>īsi<gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> ṁiriṁ tan vriṁ smu,</l>
+</lg><lg n="05.008"><l n="1">//0 kəṇḍaṁ<lb n="68v"/><gap reason="lost" extent="unknown" unit="character"/>ne habaru<gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2">gaṙjita t<gap reason="lost" extent="unknown" unit="character"/>īsi<gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> ṁiriṁ tan vriṁ smu,</l>
 <l n="4">cuçuṁaḥ cipta niki,</l>
 <l n="5">kadya ṁipī<lb n="68v"/> jñaṇane milv abaṁun</l>
 <l n="6">hañaṙ haṁavula,</l>
 <l n="7">sira saṁ tameṁ rasa</l>
 </lg><lg n="05.009"><l n="1">ø paphaṇḍen liṙ havunavun</l>
-<l n="2">halivran kumlab rinavisan ka<gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
+<l n="2">halivran kumlab rinavisan ka<gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="5">danta lvan voṁ tame smu,</l>
 <l n="6">lumañcaṙ prapteṁ labu<lb n="68v"/>hapi,</l>
 <l n="7">voṁ bəḃəntī jana pagubugan.</l>
 </lg><lg n="05.010"><l n="1">//0 vvaṁ cumakiraṁ karuhun</l>
 <l n="2">aṁantī rum</l>
 <l n="3">voṁṁ añutrā lvan ānuṁgul</l>
-<l n="4">vaṁ ti<lb n="68v"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>trā <gap reason="lost" extent="unknown"/> duluṙ</l>
+<l n="4">vaṁ ti<lb n="68v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>trā <gap reason="lost" extent="unknown" unit="character"/> duluṙ</l>
 <l n="6">paḍa coçokəlvaṁan ḍapa yayeṁ tuli<lb n="68v"/>s</l>
 <l n="7">ta re¡reṇ i kumarapa</l>
 </lg><lg n="05.011"><l n="1">//0 prapteṁ makasaṙ kva hyuhyun</l>
 <l n="2">hutamega hatoḥ pvavaṙṇna təṇḍas</l>
-<l n="3">baṁ kañcanā puncara co<pb n="69r"/><lb n="69r1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>riṁn</l>
+<l n="3">baṁ kañcanā puncara co<pb n="69r"/><lb n="69r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>riṁn</l>
 <l n="5">habuḃuhan soṇa kar̥s r̥ṣni tani,</l>
 <l n="6">hanḍaru kī pora<lb n="69r"/> kveḥ vacaṇa</l>
 </lg><lg n="05.012"><l n="1">//0 haglaṙ kavaṙṇnaha ṁnu</l>
 <l n="2">sigra tan ṣurud. prapta heṁ panataran</l>
 <l n="3">səṣək phnuḥ lampaḥhirā vado haji,</l>
-<l n="4"><lb n="69r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/> laneṁ ḍaṁka lyan taṁ nare¡śvari,</l>
+<l n="4"><lb n="69r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> laneṁ ḍaṁka lyan taṁ nare¡śvari,</l>
 <l n="6">tuṣṭa caṁkramma saṁga<lb n="69r"/> karuna</l>
 </lg><lg n="05.013"><l n="1">//0 hantyata viṙyyani laku</l>
 <l n="2">sira saṁ amaṁgiḥ hayu</l>
 <l n="3">danapuṇyane katmu,</l>
 <l n="4">viseśaṇiṁ sabumi,</l>
-<l n="5">səśək tapa pha<lb n="69r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>, <gap reason="lost" extent="unknown"/>jiliṁ tañjavi</l>
+<l n="5">səśək tapa pha<lb n="69r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>, <gap reason="lost" extent="unknown" unit="character"/>jiliṁ tañjavi</l>
 <l n="7">saṙvva kañcana vus katarima</l>
 </lg><lg n="05.014"><l n="1">ø tlasiṁ<lb n="69r"/> bakti hamuluṙ</l>
 <l n="2">tapa bra niyasā samphun apasaḥ</l>
 <l n="3">śami mantuk sakveḥni vadya hanaṁkil</l>
-<l n="4">vaṁ tanī karuhun phara binu<lb n="69r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5">phrapamā hadum <gap reason="lost" extent="unknown"/>ṙyyā paṙt<gap reason="lost" extent="unknown"/>iva lu<gap reason="lost" extent="unknown"/></l>
+<l n="4">vaṁ tanī karuhun phara binu<lb n="69r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5">phrapamā hadum <gap reason="lost" extent="unknown" unit="character"/>ṙyyā paṙt<gap reason="lost" extent="unknown" unit="character"/>iva lu<gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="6">hatoliḥ pakukuvon sakṣana</l>
 </lg><lg n="05.015"><l n="1">//0 sigra riṁ ra<lb n="69r"/>tī kavuvu</l>
 <l n="2">saṁ hyaṁṁ aṙka vahu śumurup.</l>
 <l n="3">kuməñaṙ saṁ hyaṁ saṣi</l>
 <l n="4">ramya sakuvukuvu</l>
 <l n="5">śvaraṇipun haśraṁ munya saṁgaṇi,</l>
-<l n="6">kadi <pb n="69v"/><lb n="69v1"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.016"><l n="1">//0 gḍṇḍi. <gap reason="lost" extent="unknown"/>ni halalatu</l>
+<l n="6">kadi <pb n="69v"/><lb n="69v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.016"><l n="1">//0 gḍṇḍi. <gap reason="lost" extent="unknown" unit="character"/>ni halalatu</l>
 <l n="2">lviṙ kadva naṁvekən vuyuṁ</l>
 <l n="3">sa kataman ṣiḥ kavuṁu<lb n="69v"/></l>
 <l n="4">saṁ kavy anaṙ karasmi</l>
 <l n="5">haməvəhī laṁni pratamā ṁiduṁ</l>
 <l n="6">vanyaḥ paphajaran phunaṁ vvaṁṁ akmit</l>
 <l n="7">loṙ vetan hana kuruṁv aṁguntaṁ<lb n="69v"/></l>
-</lg><lg n="05.017"><l n="1">ø <gap reason="lost" extent="unknown"/> <gap reason="lost" extent="unknown"/>ra <gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/></l>
+</lg><lg n="05.017"><l n="1">ø <gap reason="lost" extent="unknown" unit="character"/> <gap reason="lost" extent="unknown" unit="character"/>ra <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="3">ḍrā baṁun rahīna</l>
 <l n="4">praptaṁ esuk saṁ hyaṁṁ aṙka humī<lb n="69v"/>jil</l>
 <l n="5">ki surajaya valuya ne¡ṁ vuvus</l>
 <l n="6">lagya ṇamun vihyaṁ tan kavasā ṁiriṁ</l>
 <l n="7">hanaratenī budī praphañca</l>
-</lg><lg n="05.018"><l n="1">//0 tan pho<lb n="69v"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/></l>
+</lg><lg n="05.018"><l n="1">//0 tan pho<lb n="69v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="3">tan phahiṁaṇ ciptanipun</l>
 <l n="4">ketaṁ maṙgaṇi pati,</l>
 <l n="5">saṁṣaya<lb n="69v"/> ṁmasī braṁta lulut ḍuḥ</l>
 <l n="6">samphun ñumanā tanpha saneki</l>
 <l n="7">punapa maṙgahaniśun phjaḥ</l>
 </lg><lg n="05.019"><l n="1">ø  kadyana sabḍa karuṁu</l>
-<l n="2">vr̥tane<lb n="69v"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> phraṁ jabugvaṁī para mantri,</l>
+<l n="2">vr̥tane<lb n="69v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> phraṁ jabugvaṁī para mantri,</l>
 <l n="4">haṁadu jurit phukulun</l>
 <l n="5">rame<lb n="69v"/> kaṁ ayəṁan tan ana maḍani,</l>
 <l n="6">tontonaṇni rabut phanataran.</l>
 </lg><lg n="05.020"><l n="1">//0 egaṙ vr̥da ruṁu</l>
-<l n="2">raghasamayā ha<pb n="70r"/><lb n="70r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> sakiṁṁ i riki,¡</l>
+<l n="2">raghasamayā ha<pb n="70r"/><lb n="70r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> sakiṁṁ i riki,¡</l>
 <l n="4">saṁṣaye ṁoṁ vikanā riṁ jbugarum</l>
 <l n="5">laḥ saṙ<lb n="70r"/>vv aniniṁal kilaṇiṁ jurit</l>
 <l n="6">laḥ taṇ nuvu ki raghasaṁṣaya</l>
 </lg><lg n="05.021"><l n="1">//0 hasr̥tniṁṁ ujaṙ tan mətu</l>
 <l n="2">ragasamayā hariniśun</l>
-<l n="3">pha<lb n="70r"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/> ṇira prasida məṁasī lamphus</l>
+<l n="3">pha<lb n="70r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> ṇira prasida məṁasī lamphus</l>
 <l n="6">matiya ri palaḥ kaṙsaniśu<lb n="70r"/>ṇ ya yayi,</l>
 <l n="7">hanambuta vata ra pasamaran.</l>
 </lg><lg n="05.022"><l n="1">ø yen ṣira haśiḥ hiri śun</l>
 <l n="2">tulusakna yayi¡ sahiṁana sanakira</l>
-<l n="3">kalayv a<lb n="70r"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>heva mar̥ṁə vuvuse</l>
+<l n="3">kalayv a<lb n="70r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>heva mar̥ṁə vuvuse</l>
 <l n="5">haseṁ yaya hedan sipta ni<lb n="70r"/>ra kaki,</l>
 <l n="6">niṙ tanpha rasā, navi tan katamphakana</l>
 </lg><lg n="05.023"><l n="1">//0 tulusakna riṁ kayun</l>
 <l n="2">laḥ depunphrasidḍa kakī hasura</l>
-<l n="3">karana<lb n="70r"/><gap reason="lost" extent="unknown"/> hin</l>
+<l n="3">karana<lb n="70r"/><gap reason="lost" extent="unknown" unit="character"/> hin</l>
 <l n="4">ray</l>
 <l n="5">n</l>
 <l n="6">ra caçul milu heṁ kuvu</l>
@@ -4993,313 +5006,313 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="8">heñciṁeñciṁan phalburajaḥ</l>
 </lg><lg n="05.024"><l n="1">ø hənti vlasiṁ vlasipuṇ aruṁu</l>
 <l n="2">hamiveka rahayvaṇniṁ kaṁ vacana,</l>
-<l n="3">tuhu <pb n="70v"/><lb n="70v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>ya pati kelu kaluntuṙ,</l>
+<l n="3">tuhu <pb n="70v"/><lb n="70v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>ya pati kelu kaluntuṙ,</l>
 <l n="5">haṁr̥gəp kasatyan ḍatan. tr̥sneṁṁ ri<lb n="70v"/>p</l>
 <l n="6">hasura sara tuhu saṣanak.</l>
 </lg><lg n="05.025"><l n="1">//0 tan phenḍaḥ bineda ri kuṁ</l>
 <l n="2">hasmara haṁuñcaṁṁ aveḥ lulutt īṁ atapa,</l>
-<l n="3">sa<lb n="70v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/> ṁ anom hakveḥ kaduhuṁ</l>
+<l n="3">sa<lb n="70v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/> ṁ anom hakveḥ kaduhuṁ</l>
 <l n="5">kavilt iṁ tr̥snā maṙma<lb n="70v"/>ne kagisiṙ</l>
 <l n="6">budi lana yen vinavava</l>
 </lg><lg n="05.026"><l n="1">ø saḥniṁ hyaṁ kade tanpha suṁ</l>
 <l n="2">yen alastarekna manaḥ duṙjaṇa,</l>
-<l n="3">maṙmaniṁ tutuṙ jati ka<lb n="70v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/> karasā pavaraḥhira saṁ adi,</l>
+<l n="3">maṙmaniṁ tutuṙ jati ka<lb n="70v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> karasā pavaraḥhira saṁ adi,</l>
 <l n="6">luvaṙ tansaḥ paṁuñcaṁṁī tr̥<lb n="70v"/>sna</l>
 </lg><lg n="05.027"><l n="1">//0 raghasamayā hariṇiśun</l>
 <l n="2">hiḍəpku kneṁṁ upasaṙgha sakṣana</l>
 <l n="3">tulya supnuḥ phtaṁ rasaniṁ ati,</l>
-<l n="4">maṁko daḍi hapaḍaṁ<lb n="70v"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>  vilis</l>
+<l n="4">maṁko daḍi hapaḍaṁ<lb n="70v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>  vilis</l>
 <l n="6">ṣaṙvv aniniṁali panataran.</l>
 </lg><lg n="05.028"><l n="1">ø sveca rasa<lb n="70v"/>nyatiniśun</l>
 <l n="2">raghasamaya ha<supplied reason="omitted">ṁ</supplied>liṁ sakahayuṇira</l>
 <l n="3">nurut lamoṇn aja pritin</l>
-<l n="4">kakaṁ samono denira braṁta ṁliṁ ṁuru<pb n="71r"/><lb n="71r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>ni ka<gap reason="lost" extent="unknown"/>iyan ḍuka nastapa</l>
+<l n="4">kakaṁ samono denira braṁta ṁliṁ ṁuru<pb n="71r"/><lb n="71r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>ni ka<gap reason="lost" extent="unknown" unit="character"/>iyan ḍuka nastapa</l>
 </lg><lg n="05.029"><l n="1">//0 tuhu vuvustariṇiṁśun</l>
 <l n="2">raḥhayu<lb n="71r"/> dahat maṁko saya karasa,</l>
 <l n="3">pavarahira duk iṁ guṇuṁ kavi</l>
 <l n="4">tan kapihaṙsā sḍəṁṁi budḍi layu</l>
-<l n="5">øala kiṁkiṁan tan hana katoli<lb n="71r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.030"><l n="1"><gap reason="lost" extent="unknown"/> ky arinisun</l>
+<l n="5">øala kiṁkiṁan tan hana katoli<lb n="71r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.030"><l n="1"><gap reason="lost" extent="unknown" unit="character"/> ky arinisun</l>
 <l n="2">riṁ samphunya yamit sigra hadan lumamphaḥ</l>
 <l n="3">haṇn asə<lb n="71r"/>ṇḍ√ samphun phrapti gariṁgiṁ</l>
 <l n="4">hanḍaruṁ maṁilyan keḥniṁa voṁ taduluṙ</l>
 <l n="5">lyan tekaṁ kapaphag kavuri kaperiṁ</l>
-<l n="6">malija sluṙ paḍa<lb n="71r"/> <gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.031"><l n="1"><gap reason="lost" extent="unknown"/> hanḍaruṁ</l>
+<l n="6">malija sluṙ paḍa<lb n="71r"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.031"><l n="1"><gap reason="lost" extent="unknown" unit="character"/> hanḍaruṁ</l>
 <l n="2">rabutbuntəl kapṁkuṙ</l>
 <l n="3">praphti tgal. tgal kaduṁka</l>
 <l n="4">pr̥<lb n="71r"/>desa dalira</l>
 <l n="5">duk phrapti jaganlu mako haṁantun antun</l>
 <l n="6">riṁ rabutsivalan kaduṁkap aliṁgiḥ</l>
-<l n="7">madyani selā tphini<lb n="71r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.032"><l n="1"><gap reason="lost" extent="unknown"/>hup</l>
+<l n="7">madyani selā tphini<lb n="71r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.032"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>hup</l>
 <l n="2">ṣami hasucī haṁusapi sarira,</l>
 <l n="3">hadan <supplied reason="omitted">lakva</supplied> hagoñjoṁ<lb n="71r"/>goñjoṁṁ aris.</l>
 <l n="4">lviḥ toliḥ kasmaran manaḥ tvan ḍulu</l>
 <l n="5">miyat ḍum siṁ paraṁ roṁ priṁga noṁi</l>
-<l n="6">havaṁavaṁṁə<pb n="71v"/><lb n="71v1"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.033"><l n="1"><gap reason="lost" extent="unknown"/>ṙṇnaheṁṁnu</l>
+<l n="6">havaṁavaṁṁə<pb n="71v"/><lb n="71v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.033"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>ṙṇnaheṁṁnu</l>
 <l n="2">praphti lopat ki surajaya lonlonan</l>
 <l n="3">lamphaḥ<lb n="71v"/>hipun phrapti riṁ karaṁ laguṇḍi,</l>
 <l n="4">kahaṙsa tkeṁ kapulehan hapiṇḍa lṣu</l>
 <l n="5">vusnya tumbasḍaḥ hare¡ryen aliṁgiḥ</l>
-<l n="6">ki surajaya<lb n="71v"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.034"><l n="1"><gap reason="lost" extent="unknown"/>pun</l>
+<l n="6">ki surajaya<lb n="71v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.034"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>pun</l>
 <l n="2">hadaruṁ punaṁ maṙgā praphtaheṁ panataran</l>
 <l n="3">siṁgiḥ pa<lb n="71v"/>ṁeran tan sipaṁ lumaris</l>
 <l n="4">atut phanaban sada ṁidul</l>
 <l n="5">sakṣana hadan mintaṙ hyaṁṁ aṙka dum kapiṁ</l>
-<l n="6">pacima duk. tkeṁ kaba™a<lb n="71v"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.035"><l n="1"><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/> reren kar̥piṁsun</l>
+<l n="6">pacima duk. tkeṁ kaba™a<lb n="71v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.035"><l n="1"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/> reren kar̥piṁsun</l>
 <l n="3">ṣami hulaḥha kaṙyyayu</l>
 <l n="4">sakaṙsaṇira ka<lb n="71v"/>ki¡</l>
 <l n="5">ki surajayā lamphaḥhira kaduṇuṁ</l>
 <l n="6">sa munḍra saṁbrahma nape¡ṁ saṁ tami,</l>
 <l n="7">karuna manis ikeṁ vvacana</l>
-</lg><lg n="05.036"><l n="1">//0 ḍuḥ bagya  ki<lb n="71v"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>tan</l>
-<l n="3"><gap reason="lost" extent="unknown"/>i pinakaṇira saṁṁ añaṙ phrapti,</l>
+</lg><lg n="05.036"><l n="1">//0 ḍuḥ bagya  ki<lb n="71v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>tan</l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>i pinakaṇira saṁṁ añaṙ phrapti,</l>
 <l n="4">ki surajaya naphanī ta<lb n="71v"/>meṁ hyun</l>
 <l n="5">phrayatneṁṁ ujaṙ saksat madu gəṇḍis,</l>
 <l n="6">phaśraṁniṁ ciptā samiṙ lepana</l>
 </lg><lg n="05.037"><l n="1">//0 tan pholiḥ tanya pukulun</l>
-<l n="2">phu<pb n="72r"/><lb n="72r1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> lut. <gap reason="lost" extent="unknown"/>na kadyaṁoṇ aṁin</l>
+<l n="2">phu<pb n="72r"/><lb n="72r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> lut. <gap reason="lost" extent="unknown" unit="character"/>na kadyaṁoṇ aṁin</l>
 <l n="4">hañjat ivaṁ budi kadya havuru,<lb n="72r"/></l>
 <l n="5">lumaṁko jaṁgamā taṇ ana kahisṭi</l>
 <l n="6">lagya lamat sadyaṇiṁ sarira</l>
 </lg><lg n="05.038"><l n="1">//0 tameṁ saṁ śipta vruḥ smu,</l>
-<l n="2">śaṁṁ apaliṁgiḥ mapa<lb n="72r"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> ra sanḍi¡,</l>
+<l n="2">śaṁṁ apaliṁgiḥ mapa<lb n="72r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> ra sanḍi¡,</l>
 <l n="4">tlas akveḥ ni pravvata kanḍa rinatus</l>
 <l n="5">madevasasanā<lb n="72r"/> lviṙṇīṁ rajyaniti,</l>
 <l n="6">kuṇḍala vus katarima</l>
 </lg><lg n="05.039"><l n="1">ø r̥śisaṣana vinaṁun</l>
 <l n="2">tinata kamulaṇipun.</l>
 <l n="3">ki surajayanakiṁsu</l>
-<l n="4">rama<lb n="72r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/> teṁ ību</l>
+<l n="4">rama<lb n="72r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> teṁ ību</l>
 <l n="6">kaṁ kakbiṁṁaṇi lambarā noṁi,</l>
 <l n="7">bayu sa<lb n="72r"/>bḍa hiḍəp ḍuruṁṁ apasaḥ</l>
 </lg><lg n="05.040"><l n="1">//0 ki surajaya tanyeṁsun</l>
 <l n="2">phuṇapa ḍapuṙrirā saṁ ānaraveca,</l>
-<l n="3">glaripun varah iṁoṁ de<lb n="72r"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>s</l>
+<l n="3">glaripun varah iṁoṁ de<lb n="72r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>s</l>
 <l n="5">phunapeṁṁ ulatan hutamaṇniṁ lviḥ</l>
 <l n="6">nḍi kaṁ sinəṁguḥ laku jaṁgama<lb n="72r"/></l>
 </lg><lg n="05.041"><l n="1">//0 ḍuḥ  tabe pukulun</l>
 <l n="2">ranakira kumavy aratura vacana,</l>
 <l n="3">laṁgaheṁsun luputeṁ tulaḥ sarik</l>
-<l n="4">phun ṣurajaya so<pb n="72v"/><lb n="72v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>piṁsun kaki¡,</l>
+<l n="4">phun ṣurajaya so<pb n="72v"/><lb n="72v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>piṁsun kaki¡,</l>
 <l n="6">voṁṁ anom lamon tameṁ paṁrasa</l>
 </lg><lg n="05.042"><l n="1">//0 tan vruḥ pa<lb n="72v"/>layuṇiṁ vuvus.</l>
 <l n="2">lviḥ muḍa kasmalaṇiṁ sabuvaṇa,</l>
 <l n="3">lagya puṁguṁ taṇn ana ṁatihati,</l>
 <l n="4">maṙmmaniṁ aṁeçā midəṙr alaṁṁut</l>
-<l n="5">ḍalu<lb n="72v"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>ṁu mayoṁ tan vri paran.</l>
+<l n="5">ḍalu<lb n="72v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>ṁu mayoṁ tan vri paran.</l>
 </lg><lg n="05.043"><l n="1">ø hantuka vukiṙ sapuluḥ</l>
 <l n="2">najya<lb n="72v"/>n təlasa kavəṁku kabuvaṇa</l>
 <l n="3">denira ṁlaṁut bapa niṙ tanpha gave</l>
 <l n="4">lamon tan vruḥ saśaṇanira saṁ viku</l>
-<l n="5">lampaḥ tanpha kayya<lb n="72v"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/> h</l>
+<l n="5">lampaḥ tanpha kayya<lb n="72v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/> h</l>
 <l n="7">ṁ sira</l>
 </lg><lg n="05.044"><l n="1">//0 pera lavasira ṁaməṁ</l>
 <l n="2">tanpha sanā ki sura<lb n="72v"/>jayanakiṁvvaṁ</l>
 <l n="3">punapa bapha kaṁ dera hulati,</l>
 <l n="4">manira kaki nuṇuṁśuṁṁeṁ laku</l>
 <l n="5">holiḥhira ṁeca ṁoṁṁ aguru hapanti,</l>
-<l n="6">va<lb n="72v"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.045"><l n="1"><gap reason="lost" extent="unknown"/> heṁ riṁśun</l>
+<l n="6">va<lb n="72v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.045"><l n="1"><gap reason="lost" extent="unknown" unit="character"/> heṁ riṁśun</l>
 <l n="2">mevəḥ tan kəna vinastu</l>
 <l n="3">deni maṙga duṙbala<lb n="72v"/> mevuḥ</l>
 <l n="4">talib ḍeniṁ karasmin</l>
 <l n="5">phun ṣurajaya midəṙra maṇiguṇuṁ</l>
 <l n="6">hanastapā tatva vedyastuti,</l>
-<l n="7">tlas akveḥni tatva cari<pb n="73r"/><lb n="73r1"/> <gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.046"><l n="1"><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/> sogata tlas kaparan</l>
+<l n="7">tlas akveḥni tatva cari<pb n="73r"/><lb n="73r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.046"><l n="1"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/> sogata tlas kaparan</l>
 <l n="3">ḍevaguru muvaḥ saṁ amr̥ti</l>
 <l n="4">vīsa<lb n="73r"/>tya maṙgalavu devaṇā samphun</l>
 <l n="5">phranahiṁ aṁecā hamulik tan pholiḥ</l>
 <l n="6">punika maṙmaniṁ tanpha sana</l>
-</lg><lg n="05.047"><l n="1">//0 ake<lb n="73r"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>vus</l>
+</lg><lg n="05.047"><l n="1">//0 ake<lb n="73r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>vus</l>
 <l n="3">tan kapigiṁṁaṇ iṁ kayun</l>
 <l n="4">phratama kaṙyya vaṁsit</l>
 <l n="5">than kabutuḥ cakṣyu<lb n="73r"/>ḥ sabḍane kumatug.</l>
 <l n="6">yen aglaṙ sabḍa vikaṇ i paranti,</l>
 <l n="7">hakbitanpha ñu<supplied reason="omitted">ma</supplied>na buvaṇa</l>
 </lg><lg n="05.048"><l n="1">ø sami deniśun kabutuḥ</l>
-<l n="2">hamihaṙsa<lb n="73r"/> <gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> di tatva lviḥ</l>
+<l n="2">hamihaṙsa<lb n="73r"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> di tatva lviḥ</l>
 <l n="4">kaya holihya sapikul</l>
 <l n="5">maṁkin kavaciçan mana<lb n="73r"/>ḥ mmanaḥkv i linilin</l>
 <l n="6">ḍeṇiro paksa vijiliṁ saṣtra</l>
 </lg><lg n="05.049"><l n="1">//0 yeṇn ana varahiṁsun</l>
 <l n="2">ṣira saṁ jatī yatuhu lilā varana</l>
-<l n="3">kaṁ suṁ<lb n="73r"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>ḥ paḍane kabutuḥ</l>
+<l n="3">kaṁ suṁ<lb n="73r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>ḥ paḍane kabutuḥ</l>
 <l n="5">haṁr̥ṁə vr̥daya kasilib</l>
 <l n="6">kacaṁkiraṁan vi<lb n="73r"/>jili śvara</l>
 </lg><lg n="05.050"><l n="1">ø tuhu vuvustanakisun</l>
 <l n="2">samphun kapuraṁ pamgati virasa,</l>
 <l n="3">vus katmu kabeḥ deṇira kaki,</l>
-<l n="4">tuh√ prayatna tama<pb n="73v"/><lb n="73v1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>nak hyaṁ kumavi</l>
+<l n="4">tuh√ prayatna tama<pb n="73v"/><lb n="73v1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>nak hyaṁ kumavi</l>
 <l n="6">yayaḥ vulaṁun phun ṣurajaya</l>
 </lg><lg n="05.051"><l n="1">//0 maṁke ki<lb n="73v"/>teṁsun anmu,</l>
 <l n="2">mahapranaṇiṁ sabḍa hari manaḥ</l>
 <l n="3">saṁṁ alaṁut phutus i naya sanḍi,</l>
 <l n="4">jatīniṁ guru gurite vus katmu</l>
-<l n="5">litan kumalamaṙ tuṙr a<lb n="73v"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>phaḥ</l>
+<l n="5">litan kumalamaṙ tuṙr a<lb n="73v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>phaḥ</l>
 </lg><lg n="05.052"><l n="1">ø havaḷṙ bapeṁṁ amuvus</l>
 <l n="2">ṣira saṁṁ atapa lumaky amrabajita<lb n="73v"/>,</l>
 <l n="3">vaniḥ sa vruḥ tatvaniṁ sabḍa gati,</l>
 <l n="4">kumalviḥ hapiṇḍa bisā tan ṣud</l>
 <l n="5">hanḍādaṙ vvaçanā ḍapuṙriṁ daṙmmahaji,</l>
 <l n="6">tiga pinəñcaṙ manaka vataṁ<lb n="73v"/></l>
-</lg><lg n="05.053"><l n="1"><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>sarira lavan buvana</l>
+</lg><lg n="05.053"><l n="1"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>sarira lavan buvana</l>
 <l n="3">səṣək phnuḥ tambəḥ hana ta daṙmmaji,</l>
 <l n="4">kiraṁ vṁi ye<lb n="73v"/>n añjajara paṁavruḥ</l>
 <l n="5">holiya tiga masphaḍa dene talib</l>
 <l n="6">gunaṇira saṁṁ agave sabḍa</l>
-</lg><lg n="05.054"><l n="1">//0 punika liṁira saṁ vaspha<lb n="73v"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>ḥ deṇiṁ tanpha rasa heṁṁ āti,</l>
+</lg><lg n="05.054"><l n="1">//0 punika liṁira saṁ vaspha<lb n="73v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>ḥ deṇiṁ tanpha rasa heṁṁ āti,</l>
 <l n="4">saguṇani janma pratyaksa putus</l>
 <l n="5">ha<lb n="73v"/>laḥ deniṁ muḍā laraṁan arusit</l>
 <l n="6">saṁ pratameṁ siptaphi muḍa</l>
 </lg><lg n="05.055"><l n="1">ø havthatara tuṁgaṁ guṇuṁ</l>
 <l n="2">tlas ḍivasanira saṁ hyaṁ baskara,</l>
-<l n="3">hanakiṁ<pb n="74r"/><lb n="74r1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>ḥ</l>
+<l n="3">hanakiṁ<pb n="74r"/><lb n="74r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>ḥ</l>
 <l n="5">taṇn ananiṁ boga tiḷm ḍeṇiṁ praphti,</l>
 <l n="6">duraḍaraniṁ sabḍa tan tə<lb n="74r"/>lag.</l>
 </lg><lg n="05.056"><l n="1">//0 saṁṁ apaliṁgiḥ tumurun</l>
 <l n="2">phraptī pasamohan kantun</l>
 <l n="3">ki surajaya nhəṙ kagughu</l>
 <l n="4">paśraṁniṁ sabḍa mijil</l>
-<l n="5">tan kavaṙ<lb n="74r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>ḍaṁan tatabuhan muṇi,</l>
+<l n="5">tan kavaṙ<lb n="74r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>ḍaṁan tatabuhan muṇi,</l>
 <l n="7">rahina tatas laməṁ saṁ hyaṁṁ aṙka</l>
 </lg><lg n="05.057"><l n="1">ø <lb n="74r"/>kalivon eñjaṁ kavuvus</l>
 <l n="2">phrasama ḍataṁ sakveḥni śura praṁ</l>
 <l n="3">daṙmmakuvu myaṁ sakveḥniṁ prajurit</l>
-<l n="4">jaburvi baḍak phrapta sa<lb n="74r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>maja<gap reason="lost" extent="unknown"/> sakveḥni venih eliṁ</l>
+<l n="4">jaburvi baḍak phrapta sa<lb n="74r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>maja<gap reason="lost" extent="unknown" unit="character"/> sakveḥni venih eliṁ</l>
 <l n="6">makaṇṭī sovaṁ sovaṁ</l>
 </lg><lg n="05.058"><l n="1">voṁ piṁgirak<lb n="74r"/>.sa vus ravuḥ</l>
 <l n="2">sakveḥni kuvu taṇn ana kalivatan</l>
 <l n="3">phrapteṁ esuk phunaṁ voṁ luraḥ gintiṙ</l>
-<l n="4">jana vetaṇn i kavy amasəḥ ka<lb n="74r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>ṇira mantri,</l>
+<l n="4">jana vetaṇn i kavy amasəḥ ka<lb n="74r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>ṇira mantri,</l>
 <l n="6">binoroṁ riṁ para taṇḍa</l>
 </lg><lg n="05.059"><l n="1">//0 voṁ daṙmma tlas a<lb n="74r"/>kumphul</l>
 <l n="2">sakveḥniṁ kabayan ravuḥ</l>
 <l n="3">voṁ balitaṙ vusṣ acuc√l</l>
 <l n="4">phrapta burvi vaturit</l>
 <l n="5">vaṁ maṁuri jana pakaṇḍaṁan ravuḥ</l>
-<l n="6"><pb n="74v"/><lb n="74v1"/> <gap reason="lost" extent="unknown"/></l>
+<l n="6"><pb n="74v"/><lb n="74v1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="7">phaḍa krigan sakiduliṁ alas.</l>
 </lg><lg n="05.060"><l n="1">//0 maṁgiḥ hasap tan konḍuṙ</l>
 <l n="2">ka<lb n="74v"/>kratalā kabayan sakiṁṁ uravan</l>
 <l n="3">ḍan satuvuk timbul tan vri raḥ niki,</l>
 <l n="4">dḍatan vavahu kinəmbulan tan keguḥ</l>
 <l n="5">tinub tan giṁsiṙ</l>
-<l n="6">titiga sa<lb n="74v"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.061"><l n="1"><gap reason="lost" extent="unknown"/>van ki samun</l>
+<l n="6">titiga sa<lb n="74v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.061"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>van ki samun</l>
 <l n="2">gajaḥpatisət varuju</l>
 <l n="3">katiṁgal iṁ yayaḥ hibu</l>
 <l n="4">karaṇniṁ a<lb n="74v"/>jurit</l>
 <l n="5">vetiṁ sarira nastapā kavlas ayun</l>
 <l n="6">haṁudḍiy atitaḥ suka lamon mati</l>
 <l n="7">tan ṣurudeṁ rana pabaratan.</l>
-</lg><lg n="05.062"><l n="1">//0 sam<lb n="74v"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>śraṁ kumandaṁa</l>
+</lg><lg n="05.062"><l n="1">//0 sam<lb n="74v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>śraṁ kumandaṁa</l>
 <l n="3">pet eñjuḥ har̥r̥pat i piṁgiṙ</l>
 <l n="4">ghaṙjitaṁ r̥ṁi tatabu<lb n="74v"/>han gumuruḥ</l>
 <l n="5">śvaraṇiṁ paraḍaḥ manī hasaṁgaṇi,</l>
 <l n="6">lyan taṁ kəṇḍaṁ goṁ daṙpa gənturan</l>
 </lg><lg n="05.063"><l n="1">saṁ śuradipa hamaṁguṁ</l>
 <l n="2">riṁa liman ramyaslaṙ</l>
-<l n="3">paṁalasan a<lb n="74v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/> patrā dibya karuhun</l>
+<l n="3">paṁalasan a<lb n="74v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> patrā dibya karuhun</l>
 <l n="6">phraptaṁ lburajaḥ muvaḥ samphun phrapti,</l>
 <l n="7">ki sura<lb n="74v"/>jaya sigra hane ḍaṁka</l>
 </lg><lg n="05.064"><l n="1">ø tan talag ka suśuluṁ</l>
 <l n="2">saka vetan tumahap ta buruḥ kəmbaṁ</l>
 <l n="3">voṁ kuvu kabeḥ vus ḍataṁ</l>
-<l n="4">liṁira meṇniṁ <pb n="75r"/><lb n="75r1"/> ra<gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>iṙ karuṁ tinaṇḍiṁ</l>
+<l n="4">liṁira meṇniṁ <pb n="75r"/><lb n="75r1"/> ra<gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>iṙ karuṁ tinaṇḍiṁ</l>
 <l n="6">gaṙjita voṙ maras tvəṣni viraṁ</l>
 </lg><lg n="05.065"><l n="1">ø ciçireṇira saṁ pra<lb n="75r"/>bu,</l>
 <l n="2">lilimā paḍa hasaṁgub</l>
 <l n="3">hamuśuḥva tigaṁ puluḥ</l>
 <l n="4">sura sara toḥ pati</l>
 <l n="5">sinudakulā nama lalana sambu</l>
-<l n="6">myaṁ bañakphutəra<lb n="75r"/><gap reason="lost" extent="unknown"/></l>
-<l n="7"><gap reason="lost" extent="unknown"/>visaya</l>
+<l n="6">myaṁ bañakphutəra<lb n="75r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="7"><gap reason="lost" extent="unknown" unit="character"/>visaya</l>
 </lg><lg n="05.066"><l n="1">ø umaṁgiḥ cayaṇi kuvu,</l>
 <l n="2">saṁguphe lalanasamphun</l>
 <l n="3">tuma<lb n="75r"/>nḍaṁ kadyaṁuṇaṁun</l>
 <l n="4">phinapag ri pajurit</l>
 <l n="5">ḍatan kaṁṣiṙ paphag phaḍa saṁgup</l>
 <l n="6">vany anmu virā paḍa śraṁ tumitiḥ</l>
-<l n="7">hantyanta sukanira<lb n="75r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.067"><l n="1"><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/> tanḍaṁe lviṙ baṇḍeṁ kacuṙnan</l>
+<l n="7">hantyanta sukanira<lb n="75r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.067"><l n="1"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/> tanḍaṁe lviṙ baṇḍeṁ kacuṙnan</l>
 <l n="3">kadya vuru hasuśumbaṙ yen vani,</l>
 <l n="4">haba<lb n="75r"/>kal təvə kadya moṙr i musuḥ,</l>
 <l n="5">ki bañakphutəran kala huvaḥ haviḥ</l>
 <l n="6">tumanḍaṁ lviṙ tr̥ṁga kasayuban.</l>
-</lg><lg n="05.068"><l n="1">//0 mahisa bo<lb n="75r"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>ṇḍu</l>
+</lg><lg n="05.068"><l n="1">//0 mahisa bo<lb n="75r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>ṇḍu</l>
 <l n="3">kaghet kaṁ praṁ dahut</l>
 <l n="4">phayuṁ siṙṇna taṇn ana puliḥ</l>
 <l n="5">sakveḥniṁ pravi<lb n="75r"/>ra vr̥g phaḍa malayu</l>
 <l n="6">kabayaṇniṁ palaḥ haṁuṁṣiṙ paṁavin</l>
 <l n="7">taṇn ana mapaga tanḍaṁi man.</l>
 </lg><lg n="05.069"><l n="1">ø halara dene kaburu</l>
-<l n="2">maṇḍə<pb n="75v"/><lb n="75v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> nan han√li mati¡,</l>
+<l n="2">maṇḍə<pb n="75v"/><lb n="75v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> nan han√li mati¡,</l>
 <l n="4">haṁukveḥ mati¡ hatavan kivul</l>
 <l n="5">maṁsəḥ śureṁranā<lb n="75v"/> taṇn ana katoliḥ</l>
 <l n="6">denphri matiya riṁ paṁar̥pan.</l>
 </lg><lg n="05.070"><l n="1">//0 kaṁ surakrame guməntus</l>
-<l n="2">kavoran gegheṙ dene ko<lb n="75v"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>til</l>
+<l n="2">kavoran gegheṙ dene ko<lb n="75v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>til</l>
 <l n="4">ṣinikəp iṁ ataṇḍa rovaṁnya ṁamuk</l>
 <l n="5">narahitā pasaṙ layat phiṇḍa<lb n="75v"/> vrin vrin</l>
 <l n="6">valijā malayv abalasaran.</l>
 </lg><lg n="05.071"><l n="1">ø sakveḥni para maṁuyu</l>
 <l n="2">malayv ako™eṭeran badaṇe katimphal</l>
-<l n="3">havoṙ gu<lb n="75v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>da ni maṁuyu</l>
+<l n="3">havoṙ gu<lb n="75v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>da ni maṁuyu</l>
 <l n="5">malayv atuntunan ṣutane hanaṁis</l>
 <l n="6">kaghum ḍeniṁ sura<lb n="75v"/>k tan phantara</l>
-<l n="7"><gap reason="lost" extent="unknown"/>n hanaṁkis litaṁkis</l>
+<l n="7"><gap reason="lost" extent="unknown" unit="character"/>n hanaṁkis litaṁkis</l>
 <l n="8">hame ravī taṇn ana kakociva</l>
 </lg>
                <lg n="05.072">
                    <l n="1">//0 suveṇiṁ gegheṙ tan ṣurud</l> 
                    <l n="2">kaget kaṁ praṁ ghuṙṇitā rusakiṁ pasaṙ</l> 
-                   <l n="3">voṁ sinuduk maḷs anudukoka<lb n="75v"/><gap reason="lost" extent="unknown"/></l> 
-                   <l n="4"><gap reason="lost" extent="unknown"/>ḍuhuṁ</l> 
+                   <l n="3">voṁ sinuduk maḷs anudukoka<lb n="75v"/><gap reason="lost" extent="unknown" unit="character"/></l> 
+                   <l n="4"><gap reason="lost" extent="unknown" unit="character"/>ḍuhuṁ</l> 
                    <l n="5">karasukan ḍuṙgama ṁanḍəli,</l> 
                    <l n="6">haṁamuk taṇn ana ṁəmbarana</l></lg>
                <lg n="05.073">
@@ -5307,51 +5320,51 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
                    <l n="2">ghaṙjita ciptaṇiṁ kuvu</l> 
 <l n="3">mvaü voü daœmma kna p®malayu,</l>
 <l n="4">tatabuhaøe tan muni</l>
-                   <l n="5">hatagaltapraüvvataümasƒ ̇<pb n="76r"/><lb n="76r1"/><gap reason="lost" extent="unknown"/></l>
-                   <l n="6"><gap reason="lost" extent="unknown"/>n hanaükis litaükis</l>
+                   <l n="5">hatagaltapraüvvataümasƒ ̇<pb n="76r"/><lb n="76r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+                   <l n="6"><gap reason="lost" extent="unknown" unit="character"/>n hanaükis litaükis</l>
                    <l n="7">hame rav∆ taøn ana kakociva</l>
                </lg>
                <lg n="05.074"><l n="1">ø praṁ jbəṁ hayu<lb n="76r"/>hayu</l>
 <l n="2">ki sora muvus harereṇ</l>
 <l n="3">ayo kaluntuṙ taṁeḥ praṁṁira kaki,</l>
 <l n="4">haṁijenanā paphaliṇiṁ praṁ lbuṙ,</l>
-<l n="5">me riṁṁ uḍa<lb n="76r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/> t <gap reason="lost" extent="unknown"/> saravuṁan.</l>
+<l n="5">me riṁṁ uḍa<lb n="76r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/> t <gap reason="lost" extent="unknown" unit="character"/> saravuṁan.</l>
 </lg><lg n="05.075"><l n="1">//0 vus munḍuṙ kabayan kuvu</l>
 <l n="2">sapiḥni praṁ vataṁ paḍa vu<lb n="76r"/>s apiraṁnya</l>
 <l n="3">duluṙ mvaṁ voṁṁ aniniṁali</l>
 <l n="4">mareṁ uḍan rame har̥but ḍucuṁ</l>
 <l n="5">lamphaḥhiṁ turaṁga sigra samphun phrapti,</l>
-<l n="6">hare<lb n="76r"/><gap reason="lost" extent="unknown"/></l>
+<l n="6">hare<lb n="76r"/><gap reason="lost" extent="unknown" unit="character"/></l>
 </lg><lg n="05.076"><l n="1">ø hyaṁṁ aṙka tumiliṁ timuṙ</l>
 <l n="2">sampuṇn adan lumamphaḥ  kasiṁaṁṣana,</l>
 <l n="3">saha sahuṙ<lb n="76r"/> pereret ni tan javi,</l>
 <l n="4">saka muni haptīnipu saḍya baruṁ,</l>
 <l n="5">lviṙ savaṙga lamamphaḥ goṁ mr̥daṁga ṁīriṁ</l>
-<l n="6">kadi gər̥ḥ svaraniṁ pa<lb n="76r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.077"><l n="1"><gap reason="lost" extent="unknown"/>naṁ kar</l>
+<l n="6">kadi gər̥ḥ svaraniṁ pa<lb n="76r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.077"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>naṁ kar</l>
 <l n="2">hun</l>
 <l n="3">rabut jujuluk aduluṙ svaṙvva kañcana,</l>
 <l n="4">vinaṁun mahaṙdika viyaṁ ya<lb n="76r"/>yeṁ</l>
 <l n="5">śuralaya ciptaṇiṁ aṁlaṁut</l>
 <l n="6">ṣurajaya mulat sakṣat i praṁ lagi,</l>
 <l n="7">kadya ṁipī rehi vahu mulat.</l>
-</lg><lg n="05.078"><l n="1">ø katikṣna<pb n="76v"/><lb n="76v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>ra sa<gap reason="lost" extent="unknown"/> janmo tama,</l>
+</lg><lg n="05.078"><l n="1">ø katikṣna<pb n="76v"/><lb n="76v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>ra sa<gap reason="lost" extent="unknown" unit="character"/> janmo tama,</l>
 <l n="3">tusṭa vibuḥ saha turaṁga ṁīriṁ</l>
 <l n="4">sakveḥni para putra ḍa<lb n="76v"/>rat riṁ nu</l>
 <l n="5">hamava yaya kārasmi paḍa lṁi</l>
 <l n="6">saha busanā liṁga suvaṙṇa</l>
 </lg><lg n="05.079"><l n="1">//0 riṁ maṙga səṣək ṣuphnuḥ</l>
-<l n="2">tanpha ligaran kadi jala<lb n="76v"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>kaniṁ saṁ kavi¡,</l>
+<l n="2">tanpha ligaran kadi jala<lb n="76v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>kaniṁ saṁ kavi¡,</l>
 <l n="4">lviṙ mandura kusuma kr̥bətiṁ tuṁṁgal.</l>
 <l n="5">kombala viltan bala vr̥gu mi<lb n="76v"/>riṙ</l>
 <l n="6">paḍatī kudḍa vraniṁ maṙga</l>
 </lg><lg n="05.080"><l n="1">//0 sakveḥniṁ buruḥ lumurug</l>
 <l n="2">voṁ daṙmma prasamā hamava galaḥ</l>
-<l n="3">lviṙr iṁuguṁ tatabuhane mu<lb n="76v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>van ki samun</l>
+<l n="3">lviṙr iṁuguṁ tatabuhane mu<lb n="76v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>van ki samun</l>
 <l n="5">ḍira tan luvaṙ səkphira titiḥ sami</l>
 <l n="6">haṁaṁgo tvək bot lavas<lb n="76v"/>.</l>
 </lg><lg n="05.081"><l n="1">ø ki sorra liṁira muvus</l>
@@ -5362,100 +5375,100 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </lg><lg n="05.077"><l n="1">ø Kereta berkilauan <unclear>ada</unclear> di depan</l>
 <l n="2">gajaḥpanist arinisun phaṁeran</l>
 <l n="3">moṁ ki samun hayvadoḥ kalavan kami</l>
-<l n="4">mne lamo<lb n="76v"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>k phutəran ḍenphrayatneṁ siṁkiṙ</l>
+<l n="4">mne lamo<lb n="76v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>k phutəran ḍenphrayatneṁ siṁkiṙ</l>
 <l n="6">sakiṁ paḍaratan.</l>
 </lg><lg n="05.082"><l n="1">//0 mahisa bo<lb n="76v"/>™o hatguḥ</l>
 <l n="2">pañji visayā hasagup.,</l>
 <l n="3">magəḥ tenataḥ vus luhuṁ</l>
 <l n="4">ki lalā uvahaviḥ</l>
 <l n="5">taṇn ana vaṇī hamapaga kaṁ buruḥ</l>
-<l n="6">sa<pb n="77r"/><lb n="77r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="7">vo<gap reason="lost" extent="unknown"/> palaḥ niṙ don ḍenya goṇḍala</l>
+<l n="6">sa<pb n="77r"/><lb n="77r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="7">vo<gap reason="lost" extent="unknown" unit="character"/> palaḥ niṙ don ḍenya goṇḍala</l>
 </lg><lg n="05.083"><l n="1">//0 ki samun liṁe śumahuṙ</l>
 <l n="2">hi<lb n="77r"/>ḥ taṇn ana gunaṇipun</l>
 <l n="3">hajriḥh iṁ lalana sambu,</l>
 <l n="4">paḍa ṁambaḥ prativi¡</l>
 <l n="5">tuṁgal pinaṁan voḥhiṁ dami kinukus</l>
-<l n="6">maṁṁga kalaha ri sa<lb n="77r"/><gap reason="lost" extent="unknown"/></l>
-<l n="7"><gap reason="lost" extent="unknown"/>n phəpək ḍeṇira saṁ nata</l>
+<l n="6">maṁṁga kalaha ri sa<lb n="77r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="7"><gap reason="lost" extent="unknown" unit="character"/>n phəpək ḍeṇira saṁ nata</l>
 </lg><lg n="05.084"><l n="1">ø gajaḥpanisət ṣumahuṙ</l>
 <l n="2">manira kakaṁ bubohana<lb n="77r"/>, titiga,</l>
 <l n="3">kaṁ vus luhuṁ ṁoṁ paphage pribudi,</l>
 <l n="4">lamon konḍuṙ saḍəpa ri sun akəmphut</l>
 <l n="5">ḍuḥ tan makanahā siptani pajurit</l>
-<l n="6">hema<lb n="77r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.085"><l n="1"><gap reason="lost" extent="unknown"/> pacəḥ dayaṇiṁ aruṁu</l>
+<l n="6">hema<lb n="77r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.085"><l n="1"><gap reason="lost" extent="unknown" unit="character"/> pacəḥ dayaṇiṁ aruṁu</l>
 <l n="2">saṁgupe ki kabayan tutugh</l>
 <l n="3">kavaniṇe voṁ iki</l>
 <l n="4">la<lb n="77r"/>mphaḥniṁ siṁāṁśana samphun anḍaruṁ</l>
 <l n="5">praptaṁ pasamaran muyəṁ taṁ pusaḍi,</l>
 <l n="6">saksana manḍəg aṁadu pəraṁ</l>
 </lg><lg n="05.086"><l n="1">ø har̥r̥pat ḍataṇ asru</l>
-<l n="2">kaṁ<lb n="77r"/> <gap reason="lost" extent="unknown"/></l>
+<l n="2">kaṁ<lb n="77r"/> <gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="3">miṁgək miṁguḥ vataṁṁe denkaḍiri,</l>
 <l n="4">tameṁ ravit hanəmbuṁ maḷs anəmbuṁ<lb n="77r"/></l>
 <l n="5">mesəm ṣaṙvv aṁayat hegaṙ kaṁ pavestri,</l>
 <l n="6">vaniḥ maṙmma kon munḍura</l>
 </lg><lg n="05.087"><l n="1">//0 hana buruḥ hasmu ḍusun</l>
 <l n="2">tumanḍaṁṁ amr̥kusu</l>
-<l n="3">mi<pb n="77v"/><lb n="77v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/> tutu<gap reason="lost" extent="unknown"/> ṁ āsiśirigh</l>
+<l n="3">mi<pb n="77v"/><lb n="77v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/> tutu<gap reason="lost" extent="unknown" unit="character"/> ṁ āsiśirigh</l>
 <l n="5">kasuliriṁ meḥ kalbuva riṁ śumuṙ</l>
 <l n="6">munḍura ṁujivat mata ka<lb n="77v"/>lohan phuputiḥ</l>
 <l n="7">liṁṁiṁ kaminīṁ moga knaha</l>
 </lg><lg n="05.088"><l n="1">//0 vataṁe vilut iṁ puphus</l>
 <l n="2">hambaraṁkal gugulune pahumaṇ  iṁ kumbaṁ</l>
-<l n="3">tuṙ<lb n="77v"/><gap reason="lost" extent="unknown"/>çiḍil</l>
+<l n="3">tuṙ<lb n="77v"/><gap reason="lost" extent="unknown" unit="character"/>çiḍil</l>
 <l n="4">phatutaṇe holiye hamumupu</l>
 <l n="5">gotoṁ abaṇḍaṁ patṁahe<lb n="77v"/> gsəṁ</l>
 <l n="6">sakiṁ kadohan kaya cuçukan.</l>
 </lg><lg n="05.089"><l n="1">//0 cavəte hubəd. piṁ tlu</l>
 <l n="2">saśambuṁan ḍaluvaṁ dengave koñca</l>
-<l n="3">basuṣ ta<lb n="77v"/><gap reason="lost" extent="unknown"/></l>
+<l n="3">basuṣ ta<lb n="77v"/><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="4">ntiṁantiṁe timaḥ haji roṁṁ evu</l>
 <l n="5">densəṁguḥ salaka blikare hu<lb n="77v"/>piḥ</l>
 <l n="6">kaṁṁ ajujuluk satruniṁ raḍa</l>
 </lg><lg n="05.090"><l n="1">ø haṁuṇḍa vataṁṁ apəṁkuḥ</l>
 <l n="2">tan vruḥ yen ciciṇḍile patiṁ puluñcat</l>
-<l n="3">kumbaṁṁipun mibərā<lb n="77v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/> k<gap reason="lost" extent="unknown"/>eḥhi buruḥ gumuyu</l>
+<l n="3">kumbaṁṁipun mibərā<lb n="77v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/> k<gap reason="lost" extent="unknown" unit="character"/>eḥhi buruḥ gumuyu</l>
 <l n="5">ma<supplied reason="omitted">ki</supplied>n  kasahutan phaksane haṁukveḥ</l>
 <l n="6">tinə<lb n="77v"/>mbuṁ vataṁe hamarapat.</l>
 </lg><lg n="05.091"><l n="1">//0 rakyan apatiḥ haṁadu</l>
 <l n="2">sakveḥniṁ aghatī paḍa vus ambar̥ṁ</l>
-<l n="3">asuśuluṁ marā sa<pb n="78r"/><lb n="78r1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/> gusti tan kantun</l>
+<l n="3">asuśuluṁ marā sa<pb n="78r"/><lb n="78r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/> gusti tan kantun</l>
 <l n="5">lon taṁ voṁ ambaṁpaṁ, ṁnaṁn aṁən tan kari,</l>
 <l n="6">lyan taṁ parimbo<lb n="78r"/>n sasaphuṇ ar̥pat.</l>
 </lg><lg n="05.092"><l n="1">//0 voṁ vetan kadya kadya binaṁun</l>
 <l n="2">phar̥ṁ tanḍaṁṁe hanəmphuḥ</l>
 <l n="3">tan vriṁ baya praṁṁe koñjuk</l>
-<l n="4">voṁ lama<lb n="78r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>muśuḥ luhuṁ</l>
+<l n="4">voṁ lama<lb n="78r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>muśuḥ luhuṁ</l>
 <l n="6">hakveḥ kakocivan ṣubaga tan manḍi,</l>
 <l n="7">kapaṁaruhan ḍine voṁ<lb n="78r"/> daṙmma</l>
 </lg><lg n="05.093"><l n="1">ø lalanasambu haṁubuṁ</l>
 <l n="2">koṭila saṁṣayanipun</l>
 <l n="3">hadikara kasub luhuṁ</l>
 <l n="4">praṁṁe kaghirigiri,</l>
-<l n="5">muṁal tanḍaṁe kaṇṭi<lb n="78r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/> sorā harine denliriṁṁi,</l>
+<l n="5">muṁal tanḍaṁe kaṇṭi<lb n="78r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/> sorā harine denliriṁṁi,</l>
 <l n="7">ki samun hanista lañciṁan.</l>
 </lg><lg n="05.094"><l n="1">//0 gajaḥ<lb n="78r"/>panisət vriṁ smu</l>
 <l n="2">haṁusap ləmaḥ tvəke deṇḍəpanī piṁ tiga,</l>
 <l n="3">haṁi tan phragalba haṁanti gati,</l>
-<l n="4">sḍəṁi vvaṁ daṙmma kon. duṙ praṁ vataṁ<lb n="78r"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>tiḥ</l>
-<l n="6">kar̥mmiṁ palva tanpha<lb n="78r"/><gap reason="lost" extent="unknown"/></l>
+<l n="4">sḍəṁi vvaṁ daṙmma kon. duṙ praṁ vataṁ<lb n="78r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>tiḥ</l>
+<l n="6">kar̥mmiṁ palva tanpha<lb n="78r"/><gap reason="lost" extent="unknown" unit="character"/></l>
     <l n="7">lalanasambu dinr̥ṁiṁ tiṁal.</l>
 </lg><lg n="05.095">
     <l n="1">ṇ sḍəṁi patī rumavuḥ</l> 
     <l n="2">kala<lb n="78r"/>dutaṇe praptī saka loṙ vetan</l> 
     <l n="3">gora humuṁ sabḍaniṁ nilapaksi,</l> 
     <l n="4">lalanasambu molaḥ sariraṇnipuṇ</l>   
-    <l n="5">cacalani ma<pb n="78v"/><lb n="78v1"/><gap reason="lost" extent="unknown"/></l> 
-    <l n="6"><gap reason="lost" extent="unknown"/>va rudita</l>
+    <l n="5">cacalani ma<pb n="78v"/><lb n="78v1"/><gap reason="lost" extent="unknown" unit="character"/></l> 
+    <l n="6"><gap reason="lost" extent="unknown" unit="character"/>va rudita</l>
 </lg>
               <lg n="05.096">
                   <l n="1">//0 kacipta svapnanipun</l> 
@@ -5464,55 +5477,55 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 </l>
                   <l n="4">hakamπu ̇ sveta kacakrabaveü laku</l> 
                   <l n="5">praπteü madyani¥ eœøavå taü kakadi</l> 
-                  <l n="6">ka®mmiü palva tanπa<lb n="78v"/><gap reason="lost" extent="unknown"/></l>
+                  <l n="6">ka®mmiü palva tanπa<lb n="78v"/><gap reason="lost" extent="unknown" unit="character"/></l>
 
                   </lg>
                <lg n="05.097">
-                   <l n="1"><gap reason="lost" extent="unknown"/>su</l>
+                   <l n="1"><gap reason="lost" extent="unknown" unit="character"/>su</l>
 <l n="2">lanasambu tan vruḥ riṁ lavan rovan</l>
 <l n="3">ikī duk sinuduk. mr̥gəghəḥ tan a<lb n="78v"/>pataṁkis</l>
 <l n="4">kapranan gumavaṁ ḍaḍaṇipun</l>
 <l n="5">tərus hanuju valikat hana maḷs tan pholiḥ</l>
 <l n="6">ptəṁniṁ panon jīva muṙ hilaṁ</l>
-</lg><lg n="05.098"><l n="1">ø voṁ<lb n="78v"/> <gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/> lalanasambu</l>
+</lg><lg n="05.098"><l n="1">ø voṁ<lb n="78v"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/> lalanasambu</l>
 <l n="3">bañakphutəraṇn aruṁu</l>
 <l n="4">yen kanṭinipun vus mati,</l>
 <l n="5">pañjivisaya ma<lb n="78v"/>dḍanane lviṙ sinəmbuṙ</l>
 <l n="6">ri galuga tal brahmatya toḥ pati,</l>
 <l n="7">kadaḍy amjəka vsi miraḥ</l>
 </lg><lg n="05.099"><l n="1">ø mahisaboṭo hamuvus</l>
-<l n="2">aśumbaṙ<lb n="78v"/><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>mpaḥ kaki la huva haviḥ</l>
+<l n="2">aśumbaṙ<lb n="78v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>mpaḥ kaki la huva haviḥ</l>
 <l n="4">tlas phrayatna ki sorā tameṁ smu</l>
 <l n="5">dvatan kəneṁ<lb n="78v"/> maras tuhuniṁ prajurit</l>
 <l n="6">hamatitis ḍuruṁ kakocivan.</l>
 </lg><lg n="05.100"><l n="1">ø rame hambura binuru</l>
 <l n="2">pra vata praṁ ḍaḍap ḍaṙpha gənturan</l>
-<l n="3">saha sa<pb n="79r"/><lb n="79r1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
+<l n="3">saha sa<pb n="79r"/><lb n="79r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="5">nton kabeḥ paḍa mayu</l>
 <l n="6">reḥniṁṁ adaḍayan ciptaniṁ jəjəriḥ</l>
 <l n="7">hakəkə<lb n="79r"/>sṣa ṁutlati ponḍuran.</l>
 </lg><lg n="05.101"><l n="1">//0 ki sora sinr̥ṁ rinəbu</l>
 <l n="2">lan kabayaṇniṁ panataran</l>
-<l n="3">siggra tuluṁ koṇiṁan ḍenira<lb n="79r"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/> hatəmbun</l>
+<l n="3">siggra tuluṁ koṇiṁan ḍenira<lb n="79r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/> hatəmbun</l>
 <l n="5">sanapiḥ tan kəneṁ kveḥni buruḥ mati,</l>
 <l n="6">kaṁ praṁ rusak phaḍa kaja<lb n="79r"/>buṁan.</l>
 </lg><lg n="05.102"><l n="1">ø pañjivisaya haṁivuṁ</l>
 <l n="2">taṇ ana maḍanī hamagut</l>
 <l n="3">meḥ kokiya denyanuduk</l>
 <l n="4">vasphada riṁ panaṁkis</l>
-<l n="5">ṣinr̥ṁ dinḍəṙ buboha<lb n="79r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>yahi voṁṁ alit</l>
+<l n="5">ṣinr̥ṁ dinḍəṙ buboha<lb n="79r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>yahi voṁṁ alit</l>
 <l n="7">limphaṇisət sigra tumimbaṁ</l>
 </lg><lg n="05.103"><l n="1">//0 ki sora hañjaga kidul</l>
 <l n="2">ma<lb n="79r"/>hisaboṭo lavan bañakphutəran</l>
 <l n="3">muśuḥhipun sinr̥ṁ tan valagirin</l>
 <l n="4">phañjivisaya linambuṁ saka kidul</l>
-<l n="5">ṣinudukapranan kaget saṙvv a<lb n="79r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>la<gap reason="lost" extent="unknown"/> va halayanan.</l>
+<l n="5">ṣinudukapranan kaget saṙvv a<lb n="79r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>la<gap reason="lost" extent="unknown" unit="character"/> va halayanan.</l>
 </lg><lg n="05.104"><l n="1">//0 gajaḥpanisət than udu</l>
 <l n="2">ki samun haglis tumuluṁ</l>
 <l n="3">ki sora vas<lb n="79r"/>. pada ḍulu</l>
@@ -5520,64 +5533,64 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">voṁ daṙmma kuvu lumayu</l>
 <l n="6">paḍa tiṁgal vataṁ haṁuṁṣi paṁavi</l>
 <l n="7">hananambut vastra vetth iṁ katr̥sna<pb n="79v"/><lb n="79v1"/> ..</l>
-</lg><lg n="05.105"><l n="1"><gap reason="lost" extent="unknown"/>layu</l>
+</lg><lg n="05.105"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>layu</l>
 <l n="2">mahisabo™o lavan bañakphutəran</l>
 <l n="3">vəṙg alayu dvanḍon sariraṇipu<lb n="79v"/>n</l>
 <l n="4">phañjivisayā lavan lalanasambu</l>
 <l n="5">vit iṁ bojanā havak phaḍa dene mati,</l>
 <l n="6">vaniḥ haṁambə sarireki riṁka tan matiya</l>
-</lg><lg n="05.106"><l n="1">//0 <lb n="79v"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/>layu tukup</l>
+</lg><lg n="05.106"><l n="1">//0 <lb n="79v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/>layu tukup</l>
 <l n="3">goṇḍalā yayaḥ liśus</l>
 <l n="4">təmphuḥhi vira ṁiris</l>
 <l n="5">jaburi vriṁ paḍa ka<lb n="79v"/>ṇḍiḥ bu™ohanipun</l>
 <l n="6">malayu suśupan ḍahut loṙ kaghiṁṣiṙ</l>
 <l n="7">voṁ lamajaṁ paḍa tiṁgal vataṁ</l>
 </lg><lg n="05.107"><l n="1">ø galaḥ barutvi taśusun</l>
-<l n="2">kasulayaḥ<lb n="79v"/> <gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> ru kunaṁ si burv agati</l>
+<l n="2">kasulayaḥ<lb n="79v"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> ru kunaṁ si burv agati</l>
 <l n="4">vaniḥ haṁambəkambəkaruṁu ṁaḍuḥ</l>
 <l n="5">tatune tan phraṇnā<lb n="79v"/> linud tikṣnaniṁ kris</l>
 <l n="6">tuṣṭani daṙpha ṁukveḥ gañjaran.</l>
 </lg><lg n="05.108"><l n="1">//0 taṁisīṁ kuṇḍaṁ habaruṁ</l>
 <l n="2">hasahuran vetan kidul</l>
-<l n="3">ṣami tr̥sna soma<lb n="79v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>ṁavara śvaraṇi surak humuṁ</l>
+<l n="3">ṣami tr̥sna soma<lb n="79v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>ṁavara śvaraṇi surak humuṁ</l>
 <l n="6">tutugiṁ akasā kadyalun amaṁgiḥ</l>
 <l n="7">gumək gu<lb n="79v"/>mməntər asiluluṁan.</l>
 </lg><lg n="05.109"><l n="1">ø sinavuṁṁ iṁ kala mr̥tyu</l>
 <l n="2">saṁ pravirā sinapiḥ maṁkin ujvala,</l>
 <l n="3">hakakaṭuk tulya butā non ḍagiṁ</l>
-<l n="4">kaba<pb n="80r"/><lb n="80r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/> ṁuṁsi humaḥ, kala huvahaviḥ</l>
+<l n="4">kaba<pb n="80r"/><lb n="80r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> ṁuṁsi humaḥ, kala huvahaviḥ</l>
 <l n="6">malayu ṁuṁṣi ri rabutlayat.</l>
 </lg><lg n="05.110"><l n="1">//0 <lb n="80r"/>maṁkin amumuvuhi bavuṙ</l>
 <l n="2">kataruvag sakveḥniṁ anonton laga</l>
 <l n="3">vr̥ga riḍu deni dvirada r̥siṁ</l>
-<l n="4">maṁkrak añjrit anujaḥ ho<lb n="80r"/><gap reason="lost" extent="unknown"/></l>
+<l n="4">maṁkrak añjrit anujaḥ ho<lb n="80r"/><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="5">makin agənturan kadbutaṇiṁ asṭi,</l>
 <l n="6">kavoran ḍeni kḍo bratayan.</l>
 </lg><lg n="05.111"><l n="1">ø <lb n="80r"/>kaṁ aniniṁalī malayu</l>
 <l n="2">kavus ḍeni kola ṁamuk</l>
 <l n="3">riṁ pasaṙ ciptanipun</l>
 <l n="4">manava hurip maniḥ</l>
-<l n="5">holiḥ kanṭī maṙmaniṁ gegheṙ<lb n="80r"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>niṁ pḍaṁ liṁ lagy</l>
+<l n="5">holiḥ kanṭī maṙmaniṁ gegheṙ<lb n="80r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>niṁ pḍaṁ liṁ lagy</l>
 <l n="7">ayan rusak iṁ laga</l>
 </lg><lg n="05.112"><l n="1">//0 saṁ nata liṁira bənḍu</l>
 <l n="2">k tumon ma<lb n="80r"/>r̥k akveḥniṁṁ aśura, praṁ</l>
 <l n="3">sami matuṙ sahanaṇiṁ mantri,</l>
 <l n="4">sa prabu mavacana hasmu hagaṁsu</l>
 <l n="5">laḥ hunḍurakna kavula hajurit</l>
-<l n="6">sapara<lb n="80r"/><gap reason="lost" extent="unknown"/></l>
+<l n="6">sapara<lb n="80r"/><gap reason="lost" extent="unknown" unit="character"/></l>
 </lg><lg n="05.113"><l n="1">//0 ki dojva liṁe humatuṙ</l>
 <l n="2">siṁgiḥ pukulun kaṁṁ anama pun sora</l>
 <l n="3">lyan<lb n="80r"/>. pun samun phanisət vuragil</l>
 <l n="4">sakiṁṁ uravan tanpha sana havakipun</l>
 <l n="5">saṁ nata mavacanā hiḥ hanom prajurit</l>
-<l n="6">sinuṁan ci<pb n="80v"/><lb n="80v1"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.114"><l n="1"><gap reason="lost" extent="unknown"/>saḥ ka<gap reason="lost" extent="unknown"/> pra<gap reason="lost" extent="unknown"/> pinayu</l>
+<l n="6">sinuṁan ci<pb n="80v"/><lb n="80v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.114"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>saḥ ka<gap reason="lost" extent="unknown" unit="character"/> pra<gap reason="lost" extent="unknown" unit="character"/> pinayu</l>
 <l n="2">ki sora lavan ki samun</l>
 <l n="3">gajaḥ tan luvaṙ pinuluṙ</l>
 <l n="4">tan ṣaḥ dera saṁ ha<lb n="80v"/>ji,</l>
@@ -5585,100 +5598,100 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">vaniḥ pinigunan kalya ñuṙṇnani,</l>
 <l n="7">hakveḥ vinusan madyani rana</l>
 </lg><lg n="05.115"><l n="1">//0 sinuṁan vastra lan sabuk</l>
-<l n="2">ma<lb n="80v"/><gap reason="lost" extent="unknown"/>ṇa,</l>
+<l n="2">ma<lb n="80v"/><gap reason="lost" extent="unknown" unit="character"/>ṇa,</l>
 <l n="3">palanipun saṁ pravira toh pati,</l>
 <l n="4">ki sora tan lyan kasihirā saṁ prabu</l>
 <l n="5"><lb n="80v"/>sinuṁan gañjaran təlas phinisalin</l>
 <l n="6">kinoṇ amiliḥhana kasugihan.</l>
 </lg><lg n="05.116"><l n="1">ø ucapən lalanasambu</l>
 <l n="2">pañjivisayā haduluṙ</l>
-<l n="3">mari svaṙ<lb n="80v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
+<l n="3">mari svaṙ<lb n="80v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="5">ḥ</l>
 <l n="6">svaṙgaṇiṁ jayeṁranā paḍa tan kevəḥ</l>
 <l n="7">prabavaṇiṁ meru mas ṣaṙvva kañca<lb n="80v"/>ṇa,</l>
 <l n="8">amaṁgiḥ kusumaṇni gaga</l>
 </lg><lg n="05.117"><l n="1">//0 hakveḥ koniṁaheṁ vuvus</l>
 <l n="2">tan təlag ḍeṇi kavv amiveka sabḍa</l>
-<l n="3">hala hayu puṇika pinari<lb n="80v"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/>pala<gap reason="lost" extent="unknown"/></l>
+<l n="3">hala hayu puṇika pinari<lb n="80v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/>pala<gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="5">saṁṣaya vitaṇnā kamen kaṁ lviḥ</l>
 <l n="6">hapti vikana vkasiṁ jala</l>
 </lg><lg n="05.118"><l n="1">ø sapiḥniṁ<lb n="80v"/> lagyadan murud.</l>
 <l n="2">siṁasana sakveḥniṁ putra kusuma</l>
 <l n="3">ramya duluṙ sabumi phala ṁiriṁ</l>
 <l n="4">sakveḥniṁ taṇḍamantrī sveca duluṙ</l>
-<l n="5">sakve<pb n="81r"/><lb n="81r1"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/>la madyani raṇa</l>
+<l n="5">sakve<pb n="81r"/><lb n="81r1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/>la madyani raṇa</l>
 </lg><lg n="05.119"><l n="1">//0 ki surajaya hati tñuḥ</l>
 <l n="2">hañjənək ali ma<lb n="81r"/>dyani pasamaran</l>
 <l n="3">ṣaṙvv amuvus ḍuḥ hariṇiśun kaki,</l>
 <l n="4">hantyanta kaviṙyyaṇiṁ tameṁ paṁāvruḥ</l>
 <l n="5">saṙgga sabyantara virasanənh yayi,</l>
-<l n="6">punapha holi<lb n="81r"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.120"><l n="1"><gap reason="lost" extent="unknown"/>huṙ</l>
+<l n="6">punapha holi<lb n="81r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.120"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>huṙ</l>
 <l n="2">panaṙkani tyas āmaṁuna kavi,</l>
 <l n="3">sa kamy anḍulu nugrahaniṁ amu<lb n="81r"/>kti,</l>
 <l n="4">muṁgviṁ sara nata muṙva kalaṁun</l>
 <l n="5">viseṣaṇiṁ jagat ḍatan ana nori,</l>
 <l n="6">minaka raghaṇiṁ sabuvana</l>
-</lg><lg n="05.121"><l n="1">//0 hiḥ tan maṁkanaha ri<lb n="81r"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/> lagya puguṁ vacana kaki,</l>
+</lg><lg n="05.121"><l n="1">//0 hiḥ tan maṁkanaha ri<lb n="81r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/> lagya puguṁ vacana kaki,</l>
 <l n="4">haja sinabḍa ñumanāne vus vibuḥ</l>
 <l n="5">gumga<lb n="81r"/>reṁ prajā vijil iṁ daṙmmaji,</l>
 <l n="6">tiga saṁāra muṁokən ṣunya</l>
 </lg><lg n="05.122"><l n="1">//0 kavṁan kamv amuṙvva kuṁ</l>
 <l n="2">patine lalanasambu</l>
-<l n="3">pañjivisaya<lb n="81r"/><gap reason="lost" extent="unknown"/></l>
-<l n="4"><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>ne lilimmā hasaṁgup tan muḍuṙ</l>
+<l n="3">pañjivisaya<lb n="81r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="4"><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>ne lilimmā hasaṁgup tan muḍuṙ</l>
 <l n="6">ñumana hatiṁgal phanaṙkaniṁ ati,</l>
 <l n="7">ki so<lb n="81r"/>ra lviḥ taṇn ana maḍani</l>
 </lg><lg n="05.123"><l n="1">ø sipi vanine ki samun</l>
 <l n="2">gajaḥ panisət ḍatan kəna ṁupaya,</l>
 <l n="3">duṙggamevuḥ maṙgaṇipun mati</l>
-<l n="4">raghasama<pb n="81v"/><lb n="81v1"/><gap reason="lost" extent="unknown"/></l>
-<l n="5"><gap reason="lost" extent="unknown"/>nana vulikən taṁ vaṇi,</l>
+<l n="4">raghasama<pb n="81v"/><lb n="81v1"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/>nana vulikən taṁ vaṇi,</l>
 <l n="6">mvaṁ kaghiṁṣiṙ dene ki sora</l>
 </lg><lg n="05.124"><l n="1">//0 ṁiṁ maṙga sa<lb n="81v"/>mphuṇn asamun</l>
 <l n="2">hadan mintaṙ ki surajaya lonlonan</l>
 <l n="3">lamphaḥhipun harine tan se vuri</l>
 <l n="4">prapti kabuyutan sakṣana haliṁgiḥ</l>
-<l n="5">riṁ maṇḍa<lb n="81v"/><gap reason="lost" extent="unknown"/></l>
-<l n="6"><gap reason="lost" extent="unknown"/> k<gap reason="lost" extent="unknown"/>eṁ d</l>
+<l n="5">riṁ maṇḍa<lb n="81v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="6"><gap reason="lost" extent="unknown" unit="character"/> k<gap reason="lost" extent="unknown" unit="character"/>eṁ d</l>
 <l n="7">ta</l>
 </lg><lg n="05.125"><l n="1">//0 ragasamaya hamuvus</l>
 <l n="2">kakaṁ laḥ ta ṇiniṁali daḷm phi<lb n="81v"/>san</l>
 <l n="3">saṁśaya sun vikane rismi lviḥ</l>
 <l n="4">sakaptinira yayi teṁśuṇn anurut</l>
 <l n="5">sakṣanā hadan lamphaḥ haśucī bot ravi,</l>
-<l n="6">saṁṁ amoṁ ra<lb n="81v"/><gap reason="lost" extent="unknown"/></l>
-</lg><lg n="05.126"><l n="1"><gap reason="lost" extent="unknown"/>kadya siṇuṁśuṁ</l>
+<l n="6">saṁṁ amoṁ ra<lb n="81v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+</lg><lg n="05.126"><l n="1"><gap reason="lost" extent="unknown" unit="character"/>kadya siṇuṁśuṁ</l>
 <l n="2">praphta samiranā kadya hatuṙ ganḍa</l>
 <l n="3">hamrik ṣumavuṙ lviṙ<lb n="81v"/> jyaḥ manogataṇi,</l>
 <l n="4">panjraḥniṁ saṙvva sarī kadya muṙvva kuṁ</l>
 <l n="5">paṁr̥sniṁ madubratā navaṁ kamini,</l>
 <l n="6">vahu kataman gatini kvakuṁ</l>
-</lg><lg n="05.127"><l n="1">//0 <lb n="81v"/><gap reason="lost" extent="unknown"/></l>
-<l n="2"><gap reason="lost" extent="unknown"/> vṁan rarasīṁ nala,</l>
+</lg><lg n="05.127"><l n="1">//0 <lb n="81v"/><gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="2"><gap reason="lost" extent="unknown" unit="character"/> vṁan rarasīṁ nala,</l>
 <l n="3">haḷpiṁ meru tulya saṙgga sari,</l>
 <l n="4">ra sakṣat ra<lb n="81v"/> śuralaya paṁiḍəpiṁ phusphita</l>
 <l n="5">øni vr̥daya maṙ vimuṙcita kiṁkiṁ</l>
 <l n="6">mihat vaṙṇnaniṁ svaṙva kanaka</l>
 </lg><lg n="05.128"><l n="1">ø lagya ṁidəri baḃatuṙ</l>
-<l n="2">ha<pb n="82r"/><lb n="82r1"/> <gap reason="lost" extent="unknown"/></l>
-<l n="3"><gap reason="lost" extent="unknown"/>kalā mlok milviṙ</l>
+<l n="2">ha<pb n="82r"/><lb n="82r1"/> <gap reason="lost" extent="unknown" unit="character"/></l>
+<l n="3"><gap reason="lost" extent="unknown" unit="character"/>kalā mlok milviṙ</l>
 <l n="4">mvaṁ koci lamīniṁ yasa kabeḥ ka<lb n="82r"/>puṙvvanipun</l>
 <l n="5">sakveḥni gopitā gopura mvaṁ aji,</l>
 <l n="6">hudyanā kavaḥ gubaṙ vus ketuṁ</l>
 </lg><lg n="05.129"><l n="1">//0 ragasamaya liṁipun</l>
 <l n="2">"Kakang tahun berapa "meru" selesai dibuat?".</l>
-<l n="3">"Selesai dibuat<unclear><gap reason="lost" extent="unknown"/>?</unclear> menimbulkan pesona pada</l>
+<l n="3">"Selesai dibuat<unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> menimbulkan pesona pada</l>
 <l n="4">"rupa guna yasa ratu"<unclear>=1431</unclear></l>
 <l n="5">sengkala "milir"nya : pratama ji vijaya ṁukih</l>
 <l n="6">tri bangun parastra.</l>
-</lg><lg n="05.130"><l n="1">ø Lamanya <unclear><gap reason="lost" extent="unknown"/>?</unclear> dibangun kembali <unclear>pada</unclear>:</l>
+</lg><lg n="05.130"><l n="1">ø Lamanya <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> dibangun kembali <unclear>pada</unclear>:</l>
 <l n="2">"naga nahut buntute sevu <unclear>= tahun 1138</unclear>.</l>
 <l n="3">Sudah dihitung tahunnya:</l>
 <l n="4">"bramana paksa vana tunggal <unclear>= tahun 1528</unclear></l>
@@ -5704,8 +5717,8 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
                     <l n="3">kakaü s∆nadja saü kaduøuü</l> 
                     <l n="4">¢urup hyaü¥ aœka v¥i</l>
                     <l n="5">kadukap ∂avu pisan πi ro piü tlu</l>
-                    <l n="6">saksa<lb n="82r"/><gap reason="lost" extent="unknown"/></l>
-                    <l n="7"><gap reason="lost" extent="unknown"/>¥gi ̇ had£an πan akaœyya</l>
+                    <l n="6">saksa<lb n="82r"/><gap reason="lost" extent="unknown" unit="character"/></l>
+                    <l n="7"><gap reason="lost" extent="unknown" unit="character"/>¥gi ̇ had£an πan akaœyya</l>
                 </lg>
                <lg n="05.134"><l n="1">ø Pagi sudah sempurna terceritalah</l>
 <l n="2">Sang Raja diceritakan.</l>
@@ -5725,7 +5738,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">selama berkeliling</l>
 <l n="7">sudah ahli terhadap bencana besar.</l>
 <l n="8">Godaan pikiran yang bercampur aduk menghancurkan</l>
-<l n="9"><unclear><gap reason="lost" extent="unknown"/>?</unclear> tidak sama dengan kehendak hati,</l>
+<l n="9"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> tidak sama dengan kehendak hati,</l>
 <l n="10">banyak pengetahuan yang membingungkan.</l>
 </lg><lg n="06.002"><l n="1">ø Beberapa lamanya menuruti kesenangan,</l>
 <l n="2">mengikuti langkah kaki, tidak gembira jua</l>
@@ -5785,7 +5798,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">bingung dan bercampur kelelahan</l>
 <l n="7">khavatir pikiranpun merana</l>
 <l n="8">bingung akhirnya hilang."</l>
-<l n="9">"Duhai badan ini masakan urung <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="9">"Duhai badan ini masakan urung <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="10">mengabdi pada yang bukan Java <unclear>?</unclear>.</l>
 </lg><lg n="06.008"><l n="1">ø Ragasamaya menghiba,</l>
 <l n="2">"Wahai Kakangku, Ki Surajaya</l>
@@ -5796,7 +5809,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">bisa mendesak laku,</l>
 <l n="8">merupakan pertanda perolehan melaksanakan yoga.</l>
 <l n="9">Meski mempersembahkan korban seorang pertapa<unclear>?</unclear> berujud uang</l>
-<l n="10"><unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="10"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 </lg><lg n="06.009"><l n="1">ø Angkernya hutan lebat tidak ada orang yang berani</l>
 <l n="2">menjelajah. "Kakang engkau terlalu berani menerjang</l>
 <l n="3">engkau sangat tidak sabar</l>
@@ -6060,7 +6073,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">Bagaimana ujudnya perkataanmu</l>
 <l n="3">yang kau ucapkan banyaknya itu</l>
 <l n="4">dan juga kedudukannya?.</l>
-<l n="5"><gap reason="lost" extent="unknown"/> membicarakan yang suci murni.</l>
+<l n="5"><gap reason="lost" extent="unknown" unit="character"/> membicarakan yang suci murni.</l>
 <l n="6">Ada dua yang berhakekat "tidak".</l>
 <l n="7">Beritahukan aku.</l>
 <l n="8">Bagaimana ujudnya nafsu</l>
@@ -6083,7 +6096,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">atas vangsit dari dia yang sempurna.</l>
 <l n="6">Daun muda gebang pun menjadi satu,</l>
 <l n="7">seribu matahari</l>
-<l n="8"><unclear><gap reason="lost" extent="unknown"/>?</unclear> tanpa asal,</l>
+<l n="8"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> tanpa asal,</l>
 <l n="9">Gong yang kosong apa yang menyebabkan berbunyi</l>
 <l n="10">yang memenuhi bumi?".</l>
 </lg><lg n="06.038"><l n="1">ø Ki Surajaya menerima vangsit,</l>
@@ -6236,7 +6249,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="3">Puja brata sebagai pengiringnya menuju kematian.</l>
 <l n="4">Mampu mengurangi tidur</l>
 <l n="5">menyatakan dengan kesengsaraan raga</l>
-<l n="6">agar <unclear><gap reason="lost" extent="unknown"/>?</unclear> kehendaknya.</l>
+<l n="6">agar <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> kehendaknya.</l>
 <l n="7">Terasa kesengsaraannya</l>
 <l n="8">nelangsa yang berlebih-lebih.</l>
 </lg><lg n="07.008"><l n="1">ø Disamarkan semakin terus terpikirkan,</l>
@@ -6335,7 +6348,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">Ki Surajaya berusaha menguasai</l>
 <l n="7">tahu akan ujud</l>
 <l n="8">kesejatian raga yang diharapkan.</l>
-</lg><lg n="07.020"><l n="1">ø Berlatih terus menerus <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+</lg><lg n="07.020"><l n="1">ø Berlatih terus menerus <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="2">tiga hari lamanya,</l>
 <l n="3">Ki Surajaya berusaha menguasai</l>
 <l n="4">itulah sebabnya tidak makan dan tidur,</l>
@@ -6359,7 +6372,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">di angkasa berbintik-bintik</l>
 <l n="7">ada yang kecil ada yang besar</l>
 <l n="8">turun mencari tempat untuk melarikan diri.</l>
-<l n="9">tidak <gap reason="lost" extent="unknown"/> menakutkan <gap reason="lost" extent="unknown"/></l>
+<l n="9">tidak <gap reason="lost" extent="unknown" unit="character"/> menakutkan <gap reason="lost" extent="unknown" unit="character"/></l>
 <l n="10">berhati-hati, kini</l>
 <l n="11">Ki Surajaya tidak goyah,</l>
 <l n="12">malah lebih dibuat benteng</l>
@@ -6573,7 +6586,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="5">Memberitahukan yang  diberitahukan.</l>
 <l n="6">Engkau adalah asal mula <unclear>dari segala</unclear> yang rahasia.</l>
 <l n="7">Jalani lebih dahulu</l>
-<l n="8"><unclear><gap reason="lost" extent="unknown"/>?</unclear> vaktumu, Adi.</l>
+<l n="8"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> vaktumu, Adi.</l>
 </lg><lg n="07.050"><l n="1">ø Janganlah terlalu mengharapkan pada suatu yang tumbuh</l>
 <l n="2">demikian caramu bercocok tanam.</l>
 <l n="3">Masakan terlevatkan apa yang seharusnya terjadi.</l>
@@ -6607,7 +6620,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="7">tahu pada susunan laku,</l>
 <l n="8">melihat dengan jelas tujuannya pulang.</l>
 </lg><lg n="07.054"><l n="1">ø <unclear>Memang</unclear> sulit jika belum ditemukan,</l>
-<l n="2">berhentilah pada <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="2">berhentilah pada <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="3">sangatlah besar bedanya.</l>
 <l n="4">Halangannya bertumpuk-tumpuk</l>
 <l n="5">di depan dan menghalangi</l>
@@ -6618,7 +6631,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">besar sekutunya tidak habis-habisnya,</l>
 <l n="3">raja segala godaan.</l>
 <l n="4">Sesuai dengan keinginannya, menyebar,</l>
-<l n="5"><unclear><gap reason="lost" extent="unknown"/>?</unclear> ketika vaktu sepi.</l>
+<l n="5"><unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> ketika vaktu sepi.</l>
 <l n="6">Kakangmu ini menghindar tetapi tidak berhasil.</l>
 <l n="7">Malam hari berburunya <unclear>godaan itu</unclear></l>
 <l n="8">sudah berjungkir balik.</l>
@@ -6812,7 +6825,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="4">asyik bermabok-mabok,</l>
 <l n="5">seharian selalu <unclear>bertamu?</unclear></l>
 <l n="6">tiga bulan tidak makan nasi.</l>
-<l n="7">Ni Tejasari <unclear><gap reason="lost" extent="unknown"/>?</unclear></l>
+<l n="7">Ni Tejasari <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear></l>
 <l n="8">sakitnya karena pikiranya tergoncang.</l>
 </lg><lg n="07.080"><l n="1">ø Setelah ia memikirkan tentang</l>
 <l n="2">penguasaan atas mati dan hidup,</l>
@@ -6906,7 +6919,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">menggoyangkan badan,</l>
 <l n="3">memeluk-meluk tindakkannya</l>
 <l n="4">mengikuti kebiasaannya untuk menarik perhatian.</l>
-<l n="5">Berjalan <unclear><gap reason="lost" extent="unknown"/>?</unclear>.</l>
+<l n="5">Berjalan <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear>.</l>
 <l n="6">Tersenyum segenap bidadari.</l>
 <l n="7">Ia mendatangi, dia yang disongsong</l>
 <l n="8">gembira ria memeluk dengan kasih.</l>
@@ -6942,7 +6955,7 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="6">Sebab pikiran merupakan keindahan</l>
 <l n="7">berlagak berani, menjadi bahan tertavaan,</l>
 <l n="8">dicemooh oleh para kavi.</l>
-</lg><lg n="07.096"><l n="1">ø Berdirinya <unclear><gap reason="lost" extent="unknown"/>?</unclear> disusun,</l>
+</lg><lg n="07.096"><l n="1">ø Berdirinya <unclear><gap reason="lost" extent="unknown" unit="character"/>?</unclear> disusun,</l>
 <l n="2">Hantakarana digubah</l>
 <l n="3">artikanlah yang tersirat maupun yang tersurat</l>
 <l n="4">isi syair mengenai tiga <unclear>orang</unclear>,</l>
@@ -7033,15 +7046,18 @@ baru (Kartika Setyawati dkk 2002:190-191). -->
 <l n="2">desas-desus di pasar dicemooh</l>
 </lg></div>
               <div>
-                  <ab>//0// puḥ mesalaṁit //0//  itiḥ kiduṁ surajaya <lb n="82r"/> ṣinurat jəṁṁirā saṁ hyaṁṁ āṙdi madaraghni, ṁimbaṁṁ utara gəghər iṁ cakol batuṙ<lb n="82r"/> ripun lagi binaṁuṇn añaṙ, prasadu pukulun mavi vontən ṣudiy ammaca, kaṁ lviḥ dipunloṁṁana, kaṁ kiraṁ dipunvuvuḥhana, samiraḥ<lb n="82r"/> <gap reason="lost" extent="unknown"/>n harok hasalamburan hanə</ab>
-<ab>ut gatəl hanuvək hadugaṁ, prasadu deniṁ saṣtra haguṁṁ āli<lb n="82r"/>t sri gitiṁən kadi cinakaṙ riṁ mañura, deṇiṁ dereṁ milaṁ cada, tanpha tut ya riṁ tatamaṙga, sinamphunan tahun kali<lb n="82r"/><gap reason="lost" extent="unknown"/>luḥ, vuku daḷm maḍaṁkuṁan vuku jaba gubrag navara, da, hasṭavara, hu, saptavara, vr̥<lb n="82r"/>, sadvara, pa, catuṙvara, śri, trivara, bya, i sakala, gaṙva mati hoyaggī voṁ //0//</ab>
+                  <ab>//0// puḥ mesalaṁit //0//  itiḥ kiduṁ surajaya <lb n="82r"/> ṣinurat jəṁṁirā saṁ hyaṁṁ āṙdi madaraghni, ṁimbaṁṁ utara gəghər iṁ cakol batuṙ<lb n="82r"/> ripun lagi binaṁuṇn añaṙ, prasadu pukulun mavi vontən ṣudiy ammaca, kaṁ lviḥ dipunloṁṁana, kaṁ kiraṁ dipunvuvuḥhana, samiraḥ<lb n="82r"/> <gap reason="lost" extent="unknown" unit="character"/>n harok hasalamburan hanə</ab>
+<ab>ut gatəl hanuvək hadugaṁ, prasadu deniṁ saṣtra haguṁṁ āli<lb n="82r"/>t sri gitiṁən kadi cinakaṙ riṁ mañura, deṇiṁ dereṁ milaṁ cada, tanpha tut ya riṁ tatamaṙga, sinamphunan tahun kali<lb n="82r"/><gap reason="lost" extent="unknown" unit="character"/>luḥ, vuku daḷm maḍaṁkuṁan vuku jaba gubrag navara, da, hasṭavara, hu, saptavara, vr̥<lb n="82r"/>, sadvara, pa, catuṙvara, śri, trivara, bya, i sakala, gaṙva mati hoyaggī voṁ //0//</ab>
            </div>
           </div>
           <div type="translation"><p/></div>
 
-      <div type="bibliography"> 				<p><editor>
-               <forename>Kartika</forename>
-               <surname>Setyawati</surname>
-            </editor></p> 				<listBibl> 				<bibl/> 			</listBibl>             			</div> 		</body>
+      <div type="bibliography"> 				
+          <p>Edited by Kartika Setyawati</p> 				
+          <listBibl> 				
+              <bibl/> 			
+          </listBibl>             			
+      </div> 		
+      </body>
   </text>
 </TEI>

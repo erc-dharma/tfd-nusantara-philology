@@ -15,7 +15,7 @@
                      </titleStmt>
          <publicationStmt>
             <authority/>
-            <availability status="restricted">
+            <availability>
                <p><!-- add whatever license you like: !--></p>
             </availability>
             <date>2018</date>
@@ -25,7 +25,7 @@
          <sourceDesc>
       <!--	Based on the edition by J. Schoterman & A. Teeuw in their article ``Jinārthiprakṛti: A Monk's ABC'', in Sulastin Sutrisno, Darusuprapta & Sudaryanto (eds.), Bahasa-Sastra-Budaya: Ratna Manikam Untaian Persembahan Kepada Prof. Dr. P.J. Zoetmulder, Yogyakarta, Gadjah Mada University Press, 1985, 202-239.-->
             <listWit>
-               <witness>
+               <witness xml:id="">
                   <analytic>
                      <author>
                         <name>
@@ -63,7 +63,23 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>Typed by <persName>Arlo Griffiths</persName>, with normalization of the spelling of Sanskrit words/names, substitution of ṅ for ng, h for ḥ and v for w.</p>
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+         </projectDesc>
+         <editorialDecl>        
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p>Typed by <persName>Arlo Griffiths</persName>, with normalization of the spelling of Sanskrit words/names, substitution of ṅ for ng, h for ḥ and v for w.</p>            
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>    
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -332,17 +348,10 @@
          </div>
  
          <div type="bibliography">
-            <p><respStmt>
-               <persName xml:id="part:argr">Arlo Griffiths</persName>
-               <resp>Typed the text (2011)</resp>
-            </respStmt>
-               <respStmt>
-                  <persName xml:id="part:argr">Arlo Griffiths</persName>
-                  <resp>Converted the text to TEI format</resp>
-               </respStmt>
-            </p>
-            <listBibl> 				<bibl/> 			</listBibl>
-            
+            <p>Arlo Griffiths typed the text (2011) and converted it to TEI format</p>
+            <listBibl> 			
+               <bibl/> 			
+            </listBibl>
          </div>
       </body>
    </text>
