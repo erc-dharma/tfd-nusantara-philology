@@ -2,20 +2,14 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:lang="eng"
-     xml:id="jm"
-     type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="jatiMula">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Jati Mula</title>
+            <title>Jati Mula</title>
             <title type="alt">The True Origin</title>
-            <editor ref="part:ilnu">
-               <name>Ilham Nurwansah</name>
-            </editor>
             <respStmt>
-               <resp>intellectual authorship of edition</resp>
+               <resp>Author of the digital edition</resp>
                <persName ref="part:ilnu">
                   <name>Ilham Nurwansah</name>
                </persName>
@@ -138,69 +132,23 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-                <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
          </projectDesc>
          <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
             <correction>
                <p/>
             </correction>
             <normalization>
                <p/>
             </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
             <interpretation>
                <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
             </interpretation>
          </editorialDecl>
          <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
             <p/>
          </samplingDecl>
-         <schemaRef type="guide"
-                    key=" EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
-
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-
-			Note that the current by default behaviour is set on parallel-segmentation -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturity" matchPattern="(0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-            <prefixDef ident="cal"
-                       matchPattern="([\w]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-               <p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
-            </prefixDef>
-         </listPrefixDef>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -208,42 +156,35 @@
             <language ident="kaw-Latn">Old Javanese, romanized</language>
             <language ident="osn-Latn">Old Sundanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2020-01-06" status="draft">Creation of the template</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="osn-Latn">
-		<body>
+   <text xml:space="preserve">
+		<body><div type="edition" xml:lang="osn-Latn">
 		    <div type="chapter" n="1" xml:id="jamu_01">
-<pb edRef="#H" n="1"/><lb edRef="#H" n="1-23"/><pb edRef="#A" n="1a(H);2r"/>
+<ab><pb edRef="#H" n="1"/><lb edRef="#H" n="1-23"/><pb edRef="#A" n="1a(H);2r"/>
                 ndah <app><lem type="norm">varahakna</lem><rdg wit="#A #H">varahhakna</rdg></app> na puhun, jati luput <app><lem wit="#A">tan</lem><rdg wit="#H" cause="morphological">tanpa</rdg></app> pakatuduhan,
                 <app><lem type="norm">vvit</lem><rdg wit="#A #H">vuit</rdg></app> mula tan panama, taṅkal mula
                 <app><lem wit="#A">tan</lem><rdg wit="#H" cause="morphological">tanpa</rdg></app> paṅaran,
                 <app><lem wit="#A">vvat</lem><rdg wit="#H">vatu</rdg></app> mula jati tan hana, na puhun luput jati saṅ
                 <app><lem wit="#A">hyaṅ</lem><rdg wit="#H">hiyaṅ</rdg></app> hayu,<witDetail wit="#A #B #H" type="retained"/>
-                <note>This paragraph is the begining of the text in <ptr target="#A"/> and <ptr target="#H"/> but missing in <ptr target="#B"/>. Manuscript <ptr target="#B"/> has a longer text with different sentences at the beginning (3 pages of leaves), then it is continued to the same section in <ptr target="#A"/> and <ptr target="#H"/>.</note>
+                <note>This paragraph is the begining of the text in <ptr target="#A"/> and <ptr target="#H"/> but missing in <ptr target="#B"/>. Manuscript <ptr target="#B"/> has a longer text with different sentences at the beginning (3 pages of leaves), then it is continued to the same section in <ptr target="#A"/> and <ptr target="#H"/>.</note></ab>
             </div>
 
             <div type="chapter" n="2" xml:id="jamu_02">
-                <pb edRef="#B" n="9r"/><app><lem wit="#A">ña</lem><rdg wit="#A #H">ña</rdg><rdg wit="#B">Ø iña</rdg> </app> mana
+                <ab><pb edRef="#B" n="9r"/><app><lem wit="#A">ña</lem><rdg wit="#A #H">ña</rdg><rdg wit="#B">Ø iña</rdg> </app> mana
                 <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app><app><lem wit="#A #B">katuduhan dayәhanana jati hantә</lem><rdg wit="#H"><gap reason="omitted"/></rdg></app> luput, bvana
                 <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app>, <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app> katuduh, di jati luputniṅ
                 <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app> katuduh ti jati <pb edRef="#A" n="1b(H);3v"/> luputniṅ bihәṅ
                 <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app> katuduh, ti jati luput tan katuduh, tan kәna dituduh, ti jati luput tan <app><lem type="norm">katuduhan</lem><rdg wit="#A #B #H">katuduhhan</rdg></app>, tan kәna dituduh, ti jati luput niskala
                 <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> pakatuduh, tan kәna dituduh, ti jati luput tan hana
-                <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app><app><lem type="norm">pakatuduhan</lem><rdg wit="#A">pakatuduhhan</rdg><rdg wit="#H" cause="morphological">katuduhhan</rdg></app> tan kәna dituduh;
+                <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app><app><lem type="norm">pakatuduhan</lem><rdg wit="#A">pakatuduhhan</rdg><rdg wit="#H" cause="morphological">katuduhhan</rdg></app> tan kәna dituduh;</ab>
             </div>
             <div type="chapter" n="3" xml:id="jamu_03">
-                ña mana <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app> <app><lem type="norm">katuduhhan</lem><rdg wit="#A #B #H"/></app>, nu mәtukәn tan hana, jati tan <pb edRef="#B" n="6r"/>hana, luput tan hana; ña mana puhun luput jati
-                <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app><app><lem type="norm">pakatuduhan</lem><rdg wit="#A">pakatuduhhan</rdg><rdg wit="#H" cause="morphological">katuduhhan</rdg></app>, ña mana dayәhhannana ña maha visesa, vәnaṅ nuṅgalkәn puhun jati luput laṅgәṅ sadakala, nu tanpa katuduh jati.
+                <ab>ña mana <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app> <app><lem type="norm">katuduhhan</lem><rdg wit="#A #B #H"/></app>, nu mәtukәn tan hana, jati tan <pb edRef="#B" n="6r"/>hana, luput tan hana; ña mana puhun luput jati
+                <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app><app><lem type="norm">pakatuduhan</lem><rdg wit="#A">pakatuduhhan</rdg><rdg wit="#H" cause="morphological">katuduhhan</rdg></app>, ña mana dayәhhannana ña maha visesa, vәnaṅ nuṅgalkәn puhun jati luput laṅgәṅ sadakala, nu tanpa katuduh jati.</ab>
                 <p><pb edRef="#H" n="1"/><lb edRef="#H" n="23-26"/> luput namana, luput tanpa namana, luputna tanpa ṅaranna, nu tanpa katuduh puhun ṅaraniya.</p>
                 <p><pb edRef="#H" n="1"/><lb edRef="#H" n="26-30"/> beak bahe gan agәs <note resp="#H">zie blg 7</note> <pb edRef="#A" n="3"/>gәs di jati di maneh pun, ṅaraniya na tәgәr jatina bәnәr, laṅgәṅ na tәmәn sadakala, na agәs puhun tugal jati laṅgәṅ sadakala.</p>
             </div>
@@ -310,7 +251,7 @@
 <p><pb edRef="#H" n="15"/><lb edRef="#H" n="7-16"/> jati mula niṅ iyatna, vvat jatiniṅ lәṅis, puhun jatiniṅ tutur, vvat jati niṅ hidәp, na mula jatiniṅ sabva, na puhun jatiniṅ bayu, na mula jatiniṅ rasa, na vvat jati sarira, puhun vvat jati kama ratih, vvat jati niṅ bvana.</p>
 <p><pb edRef="#H" n="15-16"/><lb edRef="#H" n="17-3"/> Tuṅtuṅ tәgәlan na carita, +nis di <pb edRef="#A" n="25"/>kaliṅaniṅ tuṅgal, tuṅgal ñaho kafi kaliṅaniṅ bәnәr, bәnәr ñaho kadi kaliṅaniṅ tәgәr, tәgәr ñaho, kadi kaliṅaniṅ tәmәn, tәmәn ñaho, kadi kaliṅaniṅ jati, jati ñaho, kadi kaliṅaniṅ laṅgәṅ, laṅgәṅ ñaho, kadi kaliṅaniṅ sadakala, sadakala ñaho, kadi kaliṅaniṅ puhun, puhun ñaho, kadi kaliṅaniṅ agәs, agәs ñaho, kadi kaliṅaniṅ hatә, hatә ñaho kadi kaliṅaniṅ tanpa katuduhhan, tanpa katuduhhan ñaho, kadi kaliṅaniṅ tanpa nama, tanpa nama, ñaho kadi kaliṅaniṅ tanpa ṅaran; ñana luput puhun, tanpa katuduhhan-nanna, ajñana uraṅ sabvana, di nu sakala, di nu niskala, <pb edRef="#H" n="16"/> ja hatә tanpa katuduh, ja bihәṅ tan<pb edRef="#A" n="26"/>pa katuduh, ja luput tan<pb edRef="#A" n="26"/>pa katuduh, ja tan katuduh.</p>
 <p><pb edRef="#H" n="16"/><lb edRef="#H" n="4-7"/> tan kәna dituduh, ja niskala tanpa katuduh; ja tan hana tanpa katuduh, tanpa namana, tanpa ṅaranna.</p>
-<p><pb edRef="#H" n="16"/><lb edRef="#H" n="8-39"/> ja na puhun luput, nu maka luput, tanpa katuduhhan niṅ tanpa ṅaran, ja luput nu maka luput, niṅ tanpa katuduhhan tanpa nama, ja nu maka luput, nu luput, luputna niṅ tanpa katuduhan niṅ tan hana, ja nu maka luput, luput-luputna, tanpa katuduhhan na niskala; ja nu maka luput, nu luput, luputna tanpa katuduh ti nu luput; tan katuduh, ja nu maka luput, luput-luputna, tanpa katuduh ti nu luput; ja nu maka luput, luput-luputna, <pb edRef="#A" n="27"/>tanpa katuduh na bihәṅ, ja nu maka luput, nu luput-luputna, tanpa katuduh; tina hatә, ja nu ñiәn puhun hatә katuduh, di puhun; iña di jati tan hana, iña di jati niskala, iña di jati satiya, saṅ pandita, iña di jati devata, iña di jatina seda, iña di jatina <app><lem>sakati</lem> <rdg>sakti</rdg></app>, iña di jati manusa, jati suda, iña di jati sakala, jati niskala, pun.</p>
+<p><pb edRef="#H" n="16"/><lb edRef="#H" n="8-39"/> ja na puhun luput, nu maka luput, tanpa katuduhhan niṅ tanpa ṅaran, ja luput nu maka luput, niṅ tanpa katuduhhan tanpa nama, ja nu maka luput, nu luput, luputna niṅ tanpa katuduhan niṅ tan hana, ja nu maka luput, luput-luputna, tanpa katuduhhan na niskala; ja nu maka luput, nu luput, luputna tanpa katuduh ti nu luput; tan katuduh, ja nu maka luput, luput-luputna, tanpa katuduh ti nu luput; ja nu maka luput, luput-luputna, <pb edRef="#A" n="27"/>tanpa katuduh na bihәṅ, ja nu maka luput, nu luput-luputna, tanpa katuduh; tina hatә, ja nu ñiәn puhun hatә katuduh, di puhun; iña di jati tan hana, iña di jati niskala, iña di jati satiya, saṅ pandita, iña di jati devata, iña di jatina seda, iña di jatina <app><lem>sakati</lem><rdg>sakti</rdg></app>, iña di jati manusa, jati suda, iña di jati sakala, jati niskala, pun.</p>
 <p><pb edRef="#H" n="16-17"/><lb edRef="#H" n="40-11"/> lamun ñaho ma di kaliṅaniya, <pb edRef="#H" n="17"/> di nu ñiәn puhun, di jati di agәs, hatә katuduh di tanpa namana, di tanpa ṅaranna, di jatina hatә katuduhhan-nanna uraṅ sabvana, di sakala, di niskala; lamun ñaho ma di jati hatә katuduhhananna, ñaho di puhun hatә katu<pb edRef="#A" n="28"/>duhhananna, ñaho ma di agәs hatә katuduhhan-nanna.</p>
 <p><pb edRef="#H" n="17"/><lb edRef="#H" n="12-25"/> lamun ñaho ma di kaliṅaniya, di agәs hatә katuduhhananna, ñaho di agәs di jati agәs, di maneh; ñaho di puhun agәs di maneh, ñaho di agәs, agәs di maneh, agәs katuduhhananna; ṅaraniya, kaliṅaniya ñaho di jati di maneh; lamun hatә ñaho di jati agәs, hatә katuduh di puhun agәs, hatә katuduh di agәs, hatә katuduh; lamun lamun ñaho di kaliṅaniya, ñaho di jati di maneh.</p>
 <p><pb edRef="#H" n="17"/><lb edRef="#H" n="25-27"/> lamun hatә ñaho di kaliṅaniya, hatә ñaho di jati di maneh, pun.</p>
@@ -381,6 +322,23 @@
 <p><pb edRef="#H" n="31"/><lb edRef="#H" n="6-8"/> na vvat paṅ kuvus ti nu luput, tanpa katuduhhan ti puhun, pun.</p>
 <p><pb edRef="#H" n="31"/><lb edRef="#H" n="9-10"/> tәlassi nulis riṅ saṅgara visesa, pun.</p>
 </div>
-		</body>
+		</div>
+		    <div type="translation">
+  <p/>
+ </div>
+ <div type="commentary">
+               <p/>                      
+            </div>
+
+ <div type="bibliography"> 				
+  <p/> 				
+  <listBibl> 				
+   <bibl/> 			
+  </listBibl>            
+   			
+ </div> 		
+		    
+
+		     		</body>
 	</text>
 </TEI>

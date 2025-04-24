@@ -1,18 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="jatiMulaPerpusnasL1097peti69">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-             <title type="main">Jati Mula (L 1097 Peti 69)</title>
-             <title type="sub">Digital Diplomatic Edition of Jati Mula (L 1097 Peti 69)</title>
-              <editor ref="part:ilnu">
-                <name>Ilham Nurwansah</name>              
-              </editor>
+             <title>Jati Mula (L 1097 Peti 69)</title>
+             <!--<title type="sub">Digital Diplomatic Edition of Jati Mula (L 1097 Peti 69)</title>-->
                 <respStmt>
-                  <resp>intellectual authorship of edition</resp>
+                  <resp>Author of the digital edition</resp>
                   <persName ref="part:ilnu">
                       <name>Ilham Nurwansah</name>
                     </persName>
@@ -31,6 +28,11 @@
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
                         <msDesc>
                             <msIdentifier>
                                 <settlement>Jakarta</settlement>
@@ -54,38 +56,28 @@
                                 <p>To be checked later</p>
                             </history>
                         </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <!-- Part mandatory -->
-                <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-                <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+                <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
             </projectDesc>
-            <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <editorialDecl>        
                 <correction>
                     <p/>
                 </correction>
                 <normalization>
                     <p/>
                 </normalization>
-                <punctuation>
+                <interpretation>
                     <p/>
-                </punctuation>
+                </interpretation>
             </editorialDecl>
             <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
                 <p/>
-            </samplingDecl>
-            <!--schemaRef  will need to be added once a  official realase is done -->
-            <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
-
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-
-			Note that the current by default behaviour is set on parallel-segmentation -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
+            </samplingDecl>    
         </encodingDesc>
         <profileDesc>
             <langUsage>
@@ -93,19 +85,12 @@
                 <language ident="osn-Latn">Old Sundanese, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
             </langUsage>
-            <textClass>
-                <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-                    <term/>
-                    <!-- Ignore this element for the time being. -->
-                </keywords>
-            </textClass>
         </profileDesc>
         <revisionDesc>
             <change who="part:axja" when="2022-12-13" status="draft">Transformation from docx to xml</change>
         </revisionDesc>
     </teiHeader>
-  <text xml:space="preserve" xml:lang="osn-Latn">
+  <text xml:space="preserve">
   <body>
     <!-- Transliteration of Jati Mula (L 1097 Peti 69)
       Collection of Perpustakaan Nasional Indonesia
@@ -113,7 +98,7 @@ By Ilham Nurwansah
 
 The pages has been reconstructed from photos taken by Ilham.
  -->
-<ab>
+<div type="edition" xml:lang="osn-Latn"><ab>
 <pb n="1r"/><!-- empty -->
 <pb n="1V"/><!-- empty -->
 <pb n="2v"/><!-- empty -->
@@ -673,7 +658,22 @@ The pages has been reconstructed from photos taken by Ilham.
 <pb n="54v"/><!-- empty -->
 <pb n="55r"/><!-- empty -->
 <pb n="55v"/><!-- empty -->
- </ab>
-</body>
+ </ab></div>
+      <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
+      
+
+ 		</body>
 </text>
 </TEI>

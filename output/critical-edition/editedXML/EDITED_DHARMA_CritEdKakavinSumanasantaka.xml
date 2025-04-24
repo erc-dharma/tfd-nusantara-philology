@@ -2,7 +2,9 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="edition" xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:lang="eng"
+     xml:id="sumanasantaka">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -15,18 +17,10 @@
             <principal>
                <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
             </principal>-->
-            <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
-               <resp>Conversion to a text file (2018)</resp>
-            </respStmt>
-            <respStmt>
-               <persName ref="http://viaf.org/viaf/372149294434280521495">Andrew Ollett</persName>
-               <resp>Converted the text to TEI format (2018)</resp>
-            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority/>
-            <availability status="restricted">
+            <availability>
                <p><!-- add whatever license you like: !--></p>
             </availability>
             <date>2018</date>
@@ -77,19 +71,24 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>A decision needs to be taken on what to do with: spaces before particle n; capital letters; circumflexes on a, i, u, e, o, also in capital letters; notes at end of file.</p>
-         <!--<refsDecl n="CTS">
-            <cRefPattern n="level2"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1']/tei:lg[@n='$2'])">
-               <p>This pointer pattern extracts line groups (verses).</p>
-            </cRefPattern>
-            <cRefPattern n="level1"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1'])">
-               <p>This pointer pattern extracts divisions (cantos).</p>
-            </cRefPattern>
-         </refsDecl>-->
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
+         </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p>A decision needs to be taken on what to do with: spaces before particle n; capital letters; circumflexes on a, i, u, e, o, also in capital letters; notes at end of file.</p>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -101,8 +100,8 @@
          <change when="2018-06-04" who="part:anol">Initial TEI encoding</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:lang="kaw-Latn" xml:space="preserve">
-      <body>
+   <text xml:space="preserve">
+      <body><div type="edition" xml:lang="kaw-Latn">
          <div n="1">
             <head>avighnam astu</head>
             <!--  Jagaddhita   – – – |⏑ ⏑ – | ⏑ – ⏑ |⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ |– ⏑ – | ⏑ ⏓     !-->
@@ -7558,6 +7557,19 @@
                <l n="d">siddhi mpuṅkv i garuṅ tirun saṅ anulis katəkana sasinādhya saṅ viku</l>
             </lg>
          </div>
+      </div>
+         <div type="translation"><p/></div>
+         <div type="commentary">
+            <p/>
+         </div>
+
+         <div type="bibliography"> 				
+            <p>Arlo Griffiths converted it to a text file (2018) and Andrew Ollett converted the text to TEI format (2018)</p> 			
+        <listBibl> 				
+        <bibl/> 			
+      </listBibl>            
+      
+         </div> 		
       </body>
    </text>
 </TEI>

@@ -1,24 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+﻿<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="sabhaParvaPerpusnasL092">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Sabhāparva, Perpusnas L. 92</title>
-                <!--Change the title of the file with the name of your text-->
-                <!--<title type="subtitle">Digital Diplomatic Edition of...</title>-->
-                <!-- fill in the subtitle if necessary -->
-                <editor ref="part:nuha">
-                    <name>Nurmalia Habibah</name>
-                </editor>
-                <!--axja: Gregory and Anne Young  were given as author of the word doc-->
+                <title>Sabhāparva, Perpusnas L. 92</title>
                 <respStmt>
-                    <!-- repeat the respStmt when necessary -->
-                    <resp>creation of the file</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:jodo"><!-- update the id -->
-                        <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Doe</surname> </persName>
-                </respStmt>
+                    <resp>Author of the digital edition</resp>
+                    <persName ref="part:nuha">
+                    <name>Nurmalia Habibah</name>
+                </persName></respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>DHARMA</authority>
@@ -34,7 +24,11 @@
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
-                <!-- Give your witness an unique identifier -->
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
                 <msDesc>
                     <msIdentifier>
                         <institution>Perpustakaan Nasional Republik Indonesia</institution>
@@ -61,58 +55,41 @@
                         <p>entered the BG collection in 18??</p>
                     </history>
                 </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <!-- Part mandatory -->
-                <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-                <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+                <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
             </projectDesc>
-            <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides· Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <editorialDecl>        
                 <correction>
                     <p/>
                 </correction>
                 <normalization>
                     <p/>
                 </normalization>
-                <punctuation>
+                <interpretation>
                     <p/>
-                </punctuation>
+                </interpretation>
             </editorialDecl>
             <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
                 <p/>
-            </samplingDecl>
-            <!--schemaRef  will need to be added once a  official realase is done -->
-            <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus· If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
-
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-
-			Note that the current by default behaviour is set on parallel-segmentation -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
+            </samplingDecl> 
         </encodingDesc>
         <profileDesc>
             <langUsage>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
             </langUsage>
-            <textClass>
-                <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-                    <term/>
-                    <!-- Ignore this element for the time being. -->
-                </keywords>
-            </textClass>
         </profileDesc>
         <revisionDesc>
             <change who="part:axja" when="2022-09-19" status="draft">Transformation of a Docs into XML-TEI P5</change>
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve" xml:lang="kaw-Latn">
+    <text xml:space="preserve">
        <body>
-<ab><!-- beginning of diplomatic edition -->
+<div type="edition" xml:lang="kaw-Latn"><ab><!-- beginning of diplomatic edition -->
   <pb n="1r"/><!-- 1 -->
 <!-- status: not yet checked -->
 <!-- image00124 and image00121 + file from the other photo folder -->
@@ -853,7 +830,22 @@
     <!--[end of the last line]
 14. 12. 05-->
    <!-- axja: not sure you wanted to keep this, so I commented -->
-</ab>
-</body>
-</text>
+</ab></div>
+           <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+           <div type="bibliography">
+               <p>Gregory and Anne Young  were given as author of the word doc</p>
+               <listBibl>
+				<bibl/><!-- one <bibl/> per item of primary bibliography. Every entry mentionned in apparatus  should hava a @n to declare its sigla -->
+			</listBibl>
+           <listBibl>
+              <bibl/><!-- one <bibl/> per item of secondary bibliography -->
+           </listBibl>
+           </div>
+       </body>
+    </text>
 </TEI>

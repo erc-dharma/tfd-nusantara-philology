@@ -31,7 +31,7 @@
     <!-- git clone then pull -->
     <git-clone-pull repository="https://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
 
-    <fileset id="criticalXML" dir="./editions" includes="DHARMA_CritEd*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
+    <fileset id="criticalXML" dir="./editions" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
     <fileset id="criticalHTML" dir="./output/critical-edition/editedXML" includes="*.xml"/>
 
     <!-- Transformation XML vers XML -->

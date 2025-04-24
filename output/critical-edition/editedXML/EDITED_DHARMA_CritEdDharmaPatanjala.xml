@@ -4,23 +4,17 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
-     type="edition"
      xml:id="dharmaPatanjala">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Dharma Pātañjala</title>
-            <editor ref="part:anac">
-               <forename>Andrea</forename>
-               <surname>Acri</surname>
-            </editor>
+            <title>Dharma Pātañjala</title>
             <respStmt>
+               <resp>Author of the digital edition</resp>
                <persName ref="part:anac">
                   <forename>Andrea</forename>
                   <surname>Acri</surname>
                </persName>
-               <resp>Edited the text (2006–2011); typed and maintained the text file (2006–2018)</resp>
-               <resp>Converted the text to TEI format (2018–2023)</resp>
             </respStmt>
          </titleStmt>
          <publicationStmt>
@@ -36,34 +30,6 @@
             <date when="2018">2018</date>
          </publicationStmt>
          <sourceDesc>
-            <listBibl>
-               <biblStruct>
-                  <monogr>
-                     <author>
-                        <name>Andrea Acri</name>
-                     </author>
-                     <title level="j">Dharma Pātañjala: A Śaiva Scripture from Ancient Java Studied in the Light of Related Old Javanese and Sanskrit Texts</title>
-                     <imprint>
-                        <date when="2017">2017</date>
-                        <publisher>Aditya Prakashan</publisher>
-                        <pubPlace>New Delhi</pubPlace>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-               <biblStruct>
-                  <monogr>
-                     <author>
-                        <name>Andrea Acri</name>
-                     </author>
-                     <title level="j">Dharma Pātañjala: A Śaiva Scripture from Ancient Java Studied in the Light of Related Old Javanese and Sanskrit Texts</title>
-                     <imprint>
-                        <date when="2011">2011</date>
-                        <publisher>Egbert Forsten</publisher>
-                        <pubPlace>Groningen</pubPlace>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-            </listBibl>
             <listWit>
                <witness xml:id="Ed2">
                   <abbr type="siglum">Ed<hi rend="superscript">2</hi>
@@ -79,10 +45,24 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-            <p>Project funded by EFEO/EPHE (Université PSL)</p>
-            <p>Typed by Andrea Acri. Corrections of misprints in the 2011 edition, as well as more substantial changes (e.g. alternative emendations/reconstructions), have been applied on the basis of the 2017 edition; corrections of misprints in the 2017 edition have been applied tacitly.</p>
-            <p>Andrea Acri converted the transcription to compliiance with DHARMA norms.</p>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
+            <p>Project funded by EFEO/EPHE</p>
          </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -92,12 +72,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change who="part:axja part:argr" when="2025-04">various structural changes to adapt the file to new encoding model</change>
          <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
-         <change when="2018-06-05" who="part:anol">Initial TEI encoding</change>
+         <change who="part:anol" when="2018-06-05">Initial TEI encoding</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
-    <body> 
+   <text xml:space="preserve">
+    <body><div type="edition" xml:lang="kaw-Latn"> 
        <div xml:id="dharmaPatanjala_01">
 <pb n="194"/>
        <p xml:id="dharmaPatanjala_01.01"><pb n="0v" edRef="ms"/><lb/>siddhir astu</p>
@@ -1319,10 +1300,25 @@ ike jagat, apa yan kasaṅśayakna, yan maṅ<pb n="88v" edRef="ms"/>kana liṅa
 palvir tinonta, apan ta pva pratyakṣa ya, yāvat tan palvir ikaṅ jagat, tāvat<lb/>
    <foreign xml:lang="san-Latn">pralaya</foreign>, <foreign xml:lang="san-Latn">pralaya</foreign> ṅaranya, mәtu vaḍavānala yan tәkā, apan icchā bhaṭāra in<lb break="no"/>apekṣānya, ◉</p>
           </div>
-<div xml:id="dharmaPatanjala_02"><ab xml:id="dharmaPatanjala_02.01" type="colophon">tәlas sinurat iṅ antiraga pun, iti dharma pātañjala samāpta ◆ titi māsa padūpvan vulan kasapuluh, pañcavara, u, trivara, dva, saptavara, a, aṣṭavara, yama, vuku vuyai, i śaka, parab iṅ sakala lavaṅ gajah guṇa vvaṅ ◆</ab></div>
-          
-    </body>
-  </text>
+<div xml:id="dharmaPatanjala_02"><ab xml:id="dharmaPatanjala_02.01" type="colophon">tәlas sinurat iṅ antiraga pun, iti dharma pātañjala samāpta ◆ titi māsa padūpvan vulan kasapuluh, pañcavara, u, trivara, dva, saptavara, a, aṣṭavara, yama, vuku vuyai, i śaka, parab iṅ sakala lavaṅ gajah guṇa vvaṅ ◆</ab>
+</div>
+</div>
+<div type="translation">
+<p/>
+</div>
+<div type="commentary">
+<p/>                              
+</div>
+<div type="bibliography"> 				
+<p>Andrea Acri edited this text over the years 2006–2011, and published the first editions of it in 2011, the second in 2017. He typed and maintained a text file (2006–2018) which was cast into a TEI structure over the years Converted the text to TEI format 2018–2023. The transcription was changed to comply with DHARMA norms in 2023.</p>
+<p>In this digital edition, corrections of misprints in the 2011 edition, as well as more substantial changes (e.g, alternative emendations/reconstructions), have been applied on the basis of the 2017 edition; corrections of misprints in the 2017 edition have been applied tacitly.</p> 				
+  <listBibl>				
+      <bibl><ptr target="bib:Acri2011_01"/></bibl>
+      <bibl><ptr target="bib:Acri2017_01"/></bibl>
+  </listBibl>  	
+ </div> 		
+</body>
+</text>
 </TEI>
 <!-- bhoga</foreign> <foreign xml:lang="san-Latn">upabhoga -->
 <!--  pada nāhan - , SUPPLIED-->

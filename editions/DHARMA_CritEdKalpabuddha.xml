@@ -2,16 +2,17 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="kalpabuddha" xml:lang="eng" type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="kalpaBuddha" xml:lang="eng">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Kalpabuddha</title>
-				<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Buddhist Text</title>
-				<editor ref="part:argr">
+				<title>Kalpabuddha</title>
+				<!--<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Buddhist Text</title>-->
+				<respStmt>
+					<resp>Author of the digital edition</resp><persName ref="part:argr">
 					<forename>Arlo</forename>
 					<surname>Griffiths</surname>
-				</editor>
+				</persName></respStmt>
 				<!-- <respStmt>
 					<persName xml:id="part:argr" ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
 					<resp>Typed the text (2011)</resp>
@@ -84,8 +85,23 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<p>Typed by <persName>Arlo Griffiths</persName> in 2011, with slight normalization of the spelling of Sanskrit words/names, and substitution of ṅ for ng and v for w. Re-edited and translated in 2018, then revised in 2024. If no <ptr target="#edb2"/> reading is cited, this means that the <ptr target="#edb2"/> reading is identical to that of <ptr target="#edb"/>. All emendations and normalizations indicated in the apparatus are by Arlo Griffiths.</p>
-			<p>Readings cited in the apparatus have been normalized to loose transliteration of Old Javanese.</p>
+			<projectDesc>
+				<p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+			</projectDesc>
+			<editorialDecl>        
+				<correction>
+					<p/>
+				</correction>
+				<normalization>
+					<p>Readings cited in the apparatus have been normalized to loose transliteration of Old Javanese.</p>
+				</normalization>
+				<interpretation>
+					<p/>
+				</interpretation>
+			</editorialDecl>
+			<samplingDecl>
+				<p/>
+			</samplingDecl>    
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
@@ -106,8 +122,8 @@
  -->
 		</revisionDesc>
 	</teiHeader>
-	<text xml:lang="kaw-Latn">
-		<body>
+	<text xml:space="preserve">
+		<body><div type="edition" xml:lang="kaw-Latn">
 			<p n="1">nihan hajinira <app>
 					<lem wit="#ms2 #ms3 #ms4">sira</lem>
 					<rdg wit="#ms1">sari</rdg>
@@ -121,14 +137,14 @@
 					<witDetail type="retained" wit="#ms2"/>
 					<note type="altLem">pratyekani...devīnira,</note>
 					<rdg wit="#edb #ms1 #ms3 #ms4" cause="eye-skip"><gap reason="omitted"/></rdg>
-				</app>
+				</app> 
 				<!-- we have finished encoding down to here on 2024-12-13 -->
 				<app rend="hide">
 					<lem wit="#edb" rend="hyphenright">bodhyagrī</lem>
 					<rdg wit="#ms1 #ms3 #ms4">bodyāgri-</rdg>
 					<rdg wit="#ms2">bodḍyagrī-</rdg></app><app>
 					<lem rend="hyphenleft" wit="#ms1 #ms2 #ms3 #ms4">mudrā sira</lem>
-					<!-- we require a bahuvrīhi compound hence theoretically not -ā but -u -->
+					<!-- we require a bahuvrīhi compound hence theoretically not -ā but -a -->
 					<rdg wit="#edb">mudrā nira</rdg>
 					<note>Bosch silently emends <foreign>sira</foreign> to <foreign>nira</foreign> and consequently has to consider <foreign>bodhyagrī</foreign> and <foreign>mudrā</foreign> to be separate words.</note>
 				</app>, <app>
@@ -160,7 +176,7 @@
 						</app>,</lem>
 					<witDetail wit="#edb #ms1 #ms2 #ms3"/>
 					<rdg wit="#ms4" cause="eye-skip"><gap reason="omitted"/></rdg>
-				</app>
+				</app> 
 				<app>
 					<lem type="omitted_elsewhere">sira bharālī <app>
 									<lem type="emn">ratnabajrī</lem>
@@ -179,12 +195,16 @@
 				<app>
 					<lem wit="#ms2 #ms3 #ms4">ri</lem>
 					<rdg wit="#ms1 #edb">riṅ</rdg>
-				</app> sira, muṅguh pva sira riṅ śarīra, <app>
+				</app> sira, 
+				muṅguh pva sira riṅ śarīra, <app>
 					<lem wit="#ms2 #ms3">ri</lem>
 					<rdg wit="#edb">siṅ</rdg>
 					<rdg wit="#ms1 #ms4">riṅ</rdg>
 				</app> jroniṅ <app><lem wit="#ms1 #ms3 #ms4 #edb">pusuh-pusuh</lem><rdg wit="#ms2">pusu-pusuh</rdg></app>, pinakasthānanira.</p>
-			<p n="2">sira <app><lem wit="#ms2 #edb">bhaṭāra akṣobhya</lem><rdg wit="#ms1 #ms3 #ms4">bhaṭārākṣobhya</rdg></app>, muṅguh riṅ pūrva, kr̥ṣṇa varṇanira, sira bharālī locanā devīnira, <app rend="hide">
+			<p n="2">sira <app><lem wit="#ms2 #edb">bhaṭāra akṣobhya</lem><rdg wit="#ms1 #ms3 #ms4">bhaṭārākṣobhya</rdg></app>, 
+			muṅguh riṅ pūrva, 
+			kr̥ṣṇa varṇanira, sira bharālī locanā devīnira, 
+				<app rend="hide">
 					<lem wit="#ms1 #ms2 #ms3 #ms4">hūm̐</lem>
 					<rdg wit="#edb">hūm</rdg>
 				</app> mantranira, <app>
@@ -225,93 +245,137 @@ Abhisamayamañjarī by Śubhākaragupta: akoṣobhyavajraḥ savajrabhūsparṣa
 			<rdg wit="#ms1 #ms2 #ms3 #ms4 #edb2">bajrasādhu</rdg>
 			<rdg wit="#edb">bijrasādhu</rdg>
 		</app>,
-<!-- 
-	ms1 bhaṭa:ra ba:jraḍa:ra:di, saṅ amarivr̥tta ri sira, muṅguḥ pva si§[SH]ra riṁ śarīra, riṁ jroniṁ paruparu pinakastananira || 
-
-	ms2 bhaṭa:ra ba:jraḍara:di, saṅ amarivr̥tta ri sira, muṅguḥ pva sira riṅ śarī§[17r3]ra, ri jroniṁ paru-paru pinakastha:nanira. sira bhaṭa:ra ra:tnasa:mbhava, muṅguḥ riṁ dakṣiṇa, pitta varṇnanira, sira bha:rali ◯ mama:R̥ki devīnira, tram̐, mantranira, sama:ta: jña:na sira, kapa:la sañjatanira, ri jroniṁ limpa pinaka:stha:nanira. 
-	
-	ms3 , bhaṭa:ra ba:jraḍara:di, saṅ amarivr̥tta ri sira, mu[9]ṅguḥ pva sira riṁ śarīra, ri jroniṁ paruparu pinakasthananira.
-	
-	ms4  batara bajra [27]daradi, saṅ amarivr̥ta ri sira, muṅguh pva sira riṅ sarira, [28]ri jroniṅ paru-paru pinakastananira. 
--->
 <!-- we have finished encoding down to here on 2025-01-24 -->
-			bhaṭāra vajradharādi, saṅ amarivr̥tta ri<!-- thus already edB --> sira, muṅguh pva sira riṅ <app>
-					<lem wit="#edb2 #ms3">śarīra</lem>
+			bhaṭāra bajradharādi, 
+			saṅ amarivr̥tta ri sira, 
+			muṅguh pva sira riṅ 
+				<app rend="hide">
+					<lem wit="#ms1 #ms2 #ms3 #ms4 #edb2">śarīra</lem>
 					<rdg wit="#edb">carīra</rdg>
-				</app>, <app>
-					<lem wit="#ms3 #ms4">ri</lem>
-					<rdg wit="#edb">riṅ</rdg>
+				</app>, 
+				<app>
+					<lem wit="#ms2 #ms3 #ms4">ri</lem>
+					<rdg wit="#ms1 #edb">riṅ</rdg>
 				</app> jroniṅ paru-paru pinakasthānanira.</p>
-			<p n="3">sira bhaṭāra ratnasambhava, muṅguh riṅ dakṣiṇa, pīta varṇanira, sira bharālī māmakī devīnira, <app>
-					<lem type="norm">tram̐</lem>
+			<p n="3">sira bhaṭāra ratnasambhava, 
+			muṅguh riṅ dakṣiṇa, 
+			pīta<!-- ms2 pitta --> varṇanira, 
+			sira bharālī <app><lem wit="#ms1 #ms3 #ms4 #edb">māmakī</lem><rdg wit="#ms2">mama:R̥ki</rdg></app> devīnira, 
+				<app rend="hide">
+					<lem wit="#ms1 #ms2 #ms3">tram̐</lem>
+					<rdg wit="#ms4">traṅ</rdg>
 					<rdg wit="#edb">traṁ</rdg>
-				</app> mantranira, <app>
-					<lem wit="#ms1">samatā</lem>
-					<rdg wit="#ms3">samata</rdg>
+				</app> mantranira, 
+				<app>
+					<lem wit="#ms1 #ms2 #ms3 #ms4">samatā-</lem>
 					<rdg wit="#edb">ākāśamata</rdg>
 					<note>Bosch' emendation was inspired by a wrong emendation made by Kats in the <title>Advayasādhana</title>.</note>
-				</app> jñānanira, kapāla <!-- kaphala ms3 --> sañjatanira, <app>
-					<lem wit="#edb">riṅ</lem>
-					<rdg wit="#ms3 #ms4">ri</rdg>
+				</app>jñāna <app><lem wit="#ms1 #ms2 #ms3 #ms4">sira</lem><rdg wit="#edb">nira</rdg></app>, 
+				kapāla sañjatanira, 
+				<app>
+					<lem wit="#ms2 #ms3 #ms4">ri</lem>
+					<rdg wit="#ms1 #edb">riṅ</rdg>
 				</app> jroniṅ limpa pinakasthānanira.</p>
-			<p n="4">sira bhaṭāra amitābha <!-- hamittabha ms3 -->, muṅguh riṅ <!-- ri ms3> --> paścima, rakta varṇanira, sira bharālī <app>
-					<lem wit="#edb">pāṇḍaravāsinī</lem>
-					<rdg wit="#ms1 #ms3">paṇḍavarisini</rdg>
-				</app> devīnira, <app>
-					<lem type="norm">hrīḥ</lem>
-					<rdg wit="#edb">hrih</rdg>
-					<rdg wit="#ms3">hriḥ</rdg>
-				</app> mantranira, pratyavekṣaṇa jñānanira <!-- jñāna sira ms3 ms4 -->, dhyāna mudrānira <!-- mudrā sira ms3 ms4 -->, nāgapāśa sañjatanira, riṅ sukhavati kasvarganira, sira bharāla <!-- bharali ms3 --> vajradharma, bhaṭāra vajratīkṣṇa, bhaṭāra <app>
-					<lem type="norm">vajrahetu</lem>
-					<rdg wit="#ms3">bajrahetu</rdg>
+<!-- we have finished encoding down to here on 2025-01-31 -->
+			<p n="4">sira bhaṭāra amitābha, muṅguh <app>
+			<lem wit="#ms1 #ms4 #edb">riṅ</lem>
+			<rdg wit="#ms2 #ms3">ri</rdg>
+			</app> paścima, rakta varṇanira, sira bharālī <app>
+					<lem wit="#ms1 #ms3 #edb">pāṇḍaravāsinī</lem>
+					<rdg wit="#ms2 #ms4">pāṇḍavarisinī</rdg>
+				</app> devīnira, 
+				hrīḥ mantranira,
+				pratyavekṣaṇa jñāna <app>
+				<lem wit="#ms1 #ms2 #ms3 #ms4">sira</lem>
+				<rdg wit="#edb">nira</rdg>
+				</app>, 
+				dhyāna mudrā <app>
+				<lem wit="#ms1 #ms2 #ms3 #ms4">sira</lem>
+				<rdg wit="#edb">nira</rdg>
+				</app>, 
+				<app><lem wit="#ms1 #ms2 #ms4 #edb">nāgapāśa</lem><rdg wit="#ms3"><gap reason="omitted"/></rdg></app> sañjatanira, 
+				riṅ sukhavati kasvarganira, 
+				sira <app><lem type="emn" wit="#edb">bharāla</lem>
+				<rdg wit="#ms1 #ms2 #ms3 #ms4">bharālī</rdg> 
+				</app> bajradharma, 
+				bhaṭāra bajratīkṣṇa, 
+				bhaṭāra <app>
+					<lem wit="#ms1 #ms2 #ms3 #ms4">bajrahetu</lem>
 					<rdg wit="#edb">vajraketu</rdg>
-				</app>, bhaṭāra <app>
-					<lem type="norm">vajrabhāṣa</lem>
-					<rdg wit="#ms3">bajrabhāṣa</rdg>
-					<rdg wit="#edb">bajrabāsa</rdg>
-				</app>, saṅ amarivr̥tta ri<!-- thus already edB --> sira, muṅguh pva sira <app>
-					<lem wit="#ms3">riṅ</lem>
+				</app>, 
+				bhaṭāra <app>
+					<lem wit="#ms1 #ms2 #ms3">bajrabhāṣa</lem>
+					<rdg wit="#ms4 #edb">bajrabāsa</rdg>
+				</app>, 
+				saṅ amarivr̥tta ri sira, 
+				muṅguh pva sira <app>
+					<lem wit="#ms1 #ms2 #ms3 #ms4">riṅ</lem>
 					<rdg wit="#edb">niṅ</rdg>
-				</app> śarīra, ri<!-- thus already edB --> jro hati pinakasthānanira.</p>
+				</app> śarīra, 
+				ri jro hati pinakasthānanira.</p>		
+<!-- we have finished encoding down to here on 2025-02-21 -->
 			<p n="5">sira bhaṭāra <app>
-					<lem wit="#ms3">amoghasiddhi</lem>
-					<!-- hamoghasiddhi ms3 -->
+					<lem wit="#ms1 #ms2 #ms3 #ms4">amoghasiddhi</lem>
 					<rdg wit="#edb">amoghasiddha</rdg>
-				</app>, muṅguh riṅ uttara<!-- riṁ huttara ms3 -->, viśva varṇanira, sira bharālī tārā devīnira, aḥ mantranira, <app>
-					<lem type="emn" wit="#edb">abhaya</lem>
-					<rdg wit="#ms1 #ms3">abhā</rdg>
-				</app> mudrānira<!-- mudrā sira ms3 ms4 -->, <app>
+				</app>, muṅguh riṅ uttara, 
+				viśva<app><lem rend="hyphenleft" wit="#ms1 #ms2 #ms3 #ms4">varṇa sira</lem><rdg wit="#edb">varṇanira</rdg></app>, 
+				sira bharālī tārā devīnira, 
+				aḥ mantranira,<!-- #edb maṇtra nira --> <app>
+					<lem rend="hyphenright" wit="#ms1 #ms2 #edb">abhaya</lem>
+					<rdg wit="#ms3 #ms4">abhā</rdg>
+				</app><app><lem rend="hyphenleft" wit="#ms1 #ms2 #ms3 #ms4">mudrā sira</lem><rdg wit="#edb">-mudrānira</rdg></app>,
+				<app>
 					<lem type="emn">kr̥tyānuṣṭhāna</lem>
-					<rdg wit="#edb">kr̥tānusthāna</rdg>
-					<rdg wit="#ms1 #ms3">kr̥tanusthana</rdg>
-				</app> jñānanira, riṅ <app>
+					<rdg wit="#ms1 #ms2 #ms3 #ms4 #edb">kr̥tānusthāna</rdg>
+				</app> jñānanira, 
+				riṅ <app>
 					<lem type="emn" wit="#edb">kusumita</lem>
-					<rdg wit="#ms1">kusumiti</rdg>
-					<rdg wit="#ms3">kusumite</rdg>
-				</app> ṅaraniṅ kasvarganira, garuḍa tutuṅgaṅanira, sira bhaṭāra vajrakarma, bhaṭāra vajrarakṣa, <app>
-					<lem type="norm">bhaṭāra vajrayakṣa,</lem>
-					<rdg wit="#ms3">bhaṭāra bajrayakṣa</rdg>
-					<rdg wit="#edb"/>
-				</app> bhaṭāra <app>
-					<lem type="norm">vajrasandhi</lem>
-					<rdg wit="#edb">bajrasandhi</rdg>
-					<rdg wit="#ms1">bajrasaddhi</rdg>
-					<rdg wit="#ms3">bajrasandi</rdg>
-				</app> saṅ amarivr̥tta <app>
-					<lem wit="#ms3 #ms4">ri</lem>
-					<rdg wit="#edb">riṅ</rdg>
-				</app> sira, muṅguh pva sira riṅ <app>
-					<lem type="norm">śarīra, ri</lem>
-					<rdg wit="#edb">śarīra niṅ</rdg>
-					<rdg wit="#ms3 #ms4">śarīra, riṅ</rdg>
-				</app> jro <app>
-					<lem wit="#ms3 #ms4">hampru</lem>
-					<rdg wit="#edb">hampū</rdg>
+					<rdg wit="#ms1 #ms2 #ms3 #ms4">kusumite</rdg>
+					<note>Bosch wrongly reports that his manuscript reads <foreign>kusumiti</foreign>.</note>
+				</app> <app>
+					<lem wit="#ms1 #ms3 #ms4 #edb">ṅaraniṅ</lem>
+					<rdg wit="#ms2">ṅariṇi</rdg>
+					</app> kasvarganira, 
+				garuḍa <app>
+				<lem wit="#ms2 #ms3 #ms4 #edb">tutuṅgaṅanira</lem>
+				<rdg wit="#ms1">tutuṅganira</rdg>
+				</app>, 
+				sira bhaṭāra bajrakarma, 
+				bhaṭāra bajrarakṣa, 
+				<app>
+					<lem wit="#ms1 #ms2 #ms3 #ms4">bhaṭāra bajrayakṣa</lem>
+					<rdg wit="#edb" cause="eye-skip"><gap reason="omitted"/></rdg>
+				</app>, 
+				bhaṭāra bajrasandhi,
+				saṅ amarivr̥tta <app>
+					<lem wit="#ms2 #ms3 #ms4">ri</lem>
+					<rdg wit="#ms1 #edb">riṅ</rdg>
+				</app> sira, 
+				muṅguh pva sira <app><lem wit="#ms2 #ms4 #edb">riṅ</lem><rdg wit="#ms1 #ms3">ri</rdg></app> 
+				<app>
+					<lem wit="#ms1 #ms3 #ms4">śarīra, riṅ</lem>
+					<rdg wit="#ms2">śarīra, ri</rdg>
+					<rdg wit="#edb">śarīraniṅ</rdg>
+				</app> <app>
+					<lem wit="#ms1 #ms3 #ms4">jro ampru</lem>
+					<rdg wit="#ms2">jroniṅ ampru</rdg>
+					<rdg wit="#edb">jro hampū</rdg>
 				</app> pinakasthānanira.</p>
+<!-- 
+	ms1 kunəṁ pva bhaṭa:ra pañcatatha:gata, muliḥ riṁ lokaḍatunira, hana riṁ śarīranta [fol13v2] sira maṅke, sira ta tma:han· pañcajña:na, pañcajña:na ṅaranya, cakṣūḥ, śrota, graṇa, jihva:, hr̥dḍaya || cakṣu, ṅa, mata | śrota, ṅa, taliṅa | gra§[SH]ṇa, ṅa, Iruṁ | jīhva:, ṅa, caṅkəm· | hr̥dḍaya, ṅa, hati | yatika sinaṅguḥ pañcendriya, ṅa | kunaṁ ta devataniṁ pañcendriya | ṅa, bhaṭa:ra:kṣobhya, muṅguḥ riṁ§ [fol13v3] mata | bhaṭa:ra ratnasambhava:, muṅguḥ riṁ taliṅa | bhaṭa:ra:mitabha:, muṅgviṁ hiruṁ | bhaṭa:ra ha(mo)ghasidḍi, muṅguḥ riṁ caṅkəm· sira pinakapaṁrasa: | bhaṭa:[SH]ra vairocana, muṅguḥ ri pusuḥ pusuḥ, sira pinakaṅənaṅən·, Irika ta saha devīnira sovaṁ sovaṁ, yatika sinaṅguḥ saṁ hyaṁ pañcatma ṅaranya, pinaka:vak· [fol13v4] || 0 || ka:lphabodḍa Iti, paramarahasya || 0 ||
+
+	ms2 kunaṁ pva bhaṭa:ra pañcatatagata, mulih riṁ lokaḍatunira, hana riṁ śarīranta si§◯ra maṅke, sira ta:tmahan pañcajña:na, pañcajña:na ṅaranya, ca:kṣu, śrote, graṇa, jīhva:, hr̥daya. ca:kṣu, ṅa, mata. śrota, ṅa, taliṅa. graṇa, ṅa, Iruṁ. jīhva:, ṅa, caṅkəm·. hr̥daya, ṅa, hati. ya tika sinaṅguḥ pañcendri◯ya, ṅa, kunaṁ ta devataniṁ pañcendriya, ṅa, bhaṭa:ra Akṣobhya, muṅguḥ riṁ mata. bhaṭa:ra ra:tnasa:mbhava, muṅguḥ riṁ taliṅa.[18r1]bhaṭa:ra:mitabha:, muṅguḥ riṁ Iruṁ, bhaṭa:ra Amoghasidḍi, muṅguḥ riṁ caṅkəm·,⟦,⟧ sira pinakapaṁraṣa. bhaṭa:ra vairocana, ◯ muṅguḥ riṁ pusuḥ-pusuḥ, sira pinaka:ṅənaṅən·, Irika: ta sahadevīnira sovaṁ-sovaṁ, ya tika: sinaṅguḥ saṁ hyaṁ pañca:tma: ṅaranya, pinaka:vak·. kalpabodḍa Iti, paramarahaṣya ||
+	
+	ms3 kunəṁ pva bhaṭa:ra pañcatathagata, muliḥ riṁ lo [2] kaḍatunira, hana ri śarīranta sira maṅke, sira ta: tmahan· pañcajña:na, pañca [3]jña:na ṅaranya, cakṣuḥ, śrota, graṇa, jihva:, hr̥daya. cakṣu, ṅa, mata. śro [4]ta, ṅa, taliṅa. graṇa, ṅa, Iruṁ. jīhva:, ṅa, caṅkəm·. hr̥daya, ṅa, hati. ya [5]tika: sinaṅguḥ pañcendriya, ṅa. kunaṁ ta devataniṁ pañcendriya. ṅa, bhaṭa:ra:kṣo [6]bhya, muṅguḥ riṁ mata. bhaṭa:ra ratnasambhava:, muṅguḥ riṁ taliṅa. bhaṭa:ra mittabha, muṅgviṁṅ iruṁ [7].bhaṭa:ra hamoghasidḍi, muṅguḥ riṁ caṅkəm· sira pinakapaṁrasa:. bhaṭa:ra vairoca:na [8] muṅguḥ ri pusuḥ pusuḥ, sira pinaka:ṅənaṅən·, Irika ta saha devīnira sovaṁ [9]sovaṁ, yatika: sinaṅguḥ saṁ hyaṁ pañca:tma ṅaranya, pinaka:vak·||ka:lpa [10]bodḍa Iti, paramarahasya 
+	
+	ms4 kunaṅ pva bhaṭa:ra pañca tatha:gata, muliḥ riṅ lokadatun [4]/>ira, hana ri śarīran ta sira maṅke, sira ta tǝmahan pañcajña [5]/>na. pañcajña:na ṅaranira, cakṣuḥ, srote, grana jihva, hra [6]/>daya. cakṣu, ṅa, mata. srote, ṅa, taliṅa. graṇa, ṅa, iruṁ. [7]jihva, ṅa, caṅkǝm, hr̥daya, ṅa., ati. yatika sinaṅguh pañ [8]/>cendrya, ṅa. [9]kunaṅ ta devataniṅ pañcendrya, ṅa., bhaṭa:ra:kṣobya, muṅ [10]/>guḥ riṅ mata. bhaṭa:ra ratna sambava, muṅguḥ riṅ taliṅa. [11]bhaṭa:ra:mitaba, muṅguḥ iṅ iruṅ. bhaṭa:ra amogasidi, muṅguḥ [12]riṅ caṅkǝm, sira pinakapaṅrasa. bhaṭa:ra vairocana muṅguh [13]3a./riṅ pusuḥ pusuḥ, sira pinakaṅǝnaṅǝn. irika ta sahadevin [14]/>ira sovaṅ sovaṅ, yatika sinaṅguh saṅhyaṅ pañca:tma ṅaranya, [15]pinaka:vak. [16]kalpa boda iti paramarahasya. 
+-->
+<!-- we have finished encoding down to here on 2025-03-14 -->		
 			<p n="6"><app>
 					<lem wit="#ms3 #ms4">kunəṅ</lem>
 					<rdg wit="#edb">kuneṅ</rdg>
-				</app> pva bhaṭāra pañcatathāgata, mulih riṅ <app>
+				</app> pva bhaṭāra pañcatathāgata, 
+				mulih riṅ <app>
 					<lem type="norm">lokadhātunira</lem>
 					<rdg wit="#edb">lokadhātūnira</rdg>
 					<rdg wit="#ms3">lokadhatunira</rdg>
@@ -321,7 +385,14 @@ Abhisamayamañjarī by Śubhākaragupta: akoṣobhyavajraḥ savajrabhūsparṣa
 				</app> śarīranta sira maṅke, sira <app>
 					<lem wit="#ms3">tātmahan</lem>
 					<rdg wit="#edb">katmahan</rdg>
-				</app> pañcajñāna, pañcajñāna ṅaranya, cakṣuh, śrota, ghrāṇa, jihvā, hr̥daya. cakṣuh ṅa mata. śrota ṅa taliṅa. ghrāṇa ṅa iruṅ. jihvā ṅa caṅkəm. hr̥daya ṅa hati. ya tika sinaṅguh pañcendriya ṅa. kunaṅ ta devataniṅ pañcendriya, ṅa, bhaṭāra akṣobhya<!-- bhaṭārākṣobhya ms3 --> muṅguh riṅ mata, bhaṭāra ratnasambhava muṅguh riṅ<!-- ri CB 113 --> taliṅa, <app>
+				</app> pañcajñāna, pañcajñāna ṅaranya, cakṣuh, śrota, ghrāṇa, jihvā, hr̥daya. 
+				cakṣuh ṅa mata. 
+				śrota ṅa taliṅa. 
+				ghrāṇa ṅa iruṅ. 
+				jihvā ṅa caṅkəm. 
+				hr̥daya ṅa hati. 
+				ya tika sinaṅguh pañcendriya ṅa. 
+				kunaṅ ta devataniṅ pañcendriya, ṅa, bhaṭāra akṣobhya<!-- bhaṭārākṣobhya ms3 --> muṅguh riṅ mata, bhaṭāra ratnasambhava muṅguh riṅ<!-- ri CB 113 --> taliṅa, <app>
 					<lem wit="#edb2 #ms3">bhaṭāra</lem>
 					<rdg wit="#edb">bhatāra</rdg>
 				</app> amitābha<!-- bhaṭāramittabha ms3 --> muṅgviṅ iruṅ, bhaṭāra amoghasiddhi muṅguh ri <app>
@@ -339,7 +410,20 @@ Abhisamayamañjarī by Śubhākaragupta: akoṣobhyavajraḥ savajrabhūsparṣa
 						<note>Should we not rather understand Kalpa Bauddha?</note>
 					</app> iti, paramarahasya || 0 ||</ab>
 			</div>
-		</body>
+		</div>
+			<div type="translation"><p/></div>
+			<div type="commentary">
+			<p/>
+			</div>
+       
+       <div type="bibliography"> 				
+  <p>Typed by <persName>Arlo Griffiths</persName> in 2011, with slight normalization of the spelling of Sanskrit words/names, and substitution of ṅ for ng and v for w. Re-edited and translated in 2018, then revised in 2024. If no <ptr target="#edb2"/> reading is cited, this means that the <ptr target="#edb2"/> reading is identical to that of <ptr target="#edb"/>. All emendations and normalizations indicated in the apparatus are by Arlo Griffiths.</p>
+						
+  <listBibl> 				
+   <bibl/> 			
+  </listBibl>            
+   			
+ </div>
+	</body>
 	</text>
-
 </TEI>

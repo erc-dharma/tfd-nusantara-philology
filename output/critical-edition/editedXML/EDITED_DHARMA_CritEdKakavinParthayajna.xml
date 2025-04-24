@@ -2,18 +2,18 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     type="edition"
-     xml:lang="eng"
-     xml:id="parthayajna">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="parthaYajna">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Kakavin Pārthayajña</title>
-            <editor ref="part:anac">
-               <forename>Andrea</forename>
-               <surname>Acri</surname>
-            </editor>
+            <title>Kakavin Pārthayajña</title>
+            <respStmt>
+               <resp>Author of the digital edition</resp>
+               <persName ref="part:anac">
+                  <forename>Andrea</forename>
+                  <surname>Acri</surname>
+               </persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
@@ -195,71 +195,29 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-                <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
          </projectDesc>
          <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
             <correction>
                <p/>
             </correction>
             <normalization>
                <p/>
             </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
             <interpretation>
                <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
             </interpretation>
          </editorialDecl>
          <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
             <p/>
          </samplingDecl>
-         <schemaRef type="guide"
-                    key=" EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <variantEncoding method="location-referenced" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturity" matchPattern="(0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-         </listPrefixDef>
       </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="san-Latn">Sanskrit, romanized</language>
             <language ident="kaw-Latn">Old Javanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
@@ -268,8 +226,8 @@
          <change who="part:axja" when="2020-10-05">automatic conversion from a word docx</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
-        <body>
+   <text xml:space="preserve">
+        <body><div type="edition" xml:lang="kaw-Latn">
             <div type="canto" rend="met" n="1" met="jagaddhita" xml:id="kakavin_01">
 	       <note type="prosody">+++--+-+---+------+-+-+</note>
                 <lg xml:id="kakavin_01.01" n="1">
@@ -9575,6 +9533,19 @@
                     </app>
                 </listApp>
             </div>
+        </div>
+            <div type="translation"><p/></div>
+            <div type="commentary">
+                <p/>
+            </div>
+
+            <div type="bibliography"> 				
+                <p/> 				
+                <listBibl> 				
+                    <bibl/> 			
+                </listBibl>           
+                 			
+            </div> 		
         </body>
     </text>
 </TEI>

@@ -2,7 +2,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="edition" xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="arjunaVivaha">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -15,18 +15,10 @@
             <principal>
                <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
             </principal>-->
-            <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
-               <resp>Typed the text from Poerbatjaraka's edition (2008); revised first TEI file after Robson's edition (2018)</resp>
-            </respStmt>
-            <respStmt>
-               <persName ref="http://viaf.org/viaf/372149294434280521495">Andrew Ollett</persName>
-               <resp>Converted the text to TEI format (2018)</resp>
-            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority/>
-            <availability status="restricted">
+            <availability>
                <p><!-- add whatever license you like: !--></p>
             </availability>
             <date>2018</date>
@@ -35,114 +27,79 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
+               <witness xml:id="R">
+                  <!-- axja to argr and anol: can you please fill in the following declaration for your ms R? -->
+                  
+                     <abbr type="siglum"></abbr>
+                     <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                     <msDesc>
+                        <msIdentifier>
+                           <settlement>XXX</settlement>
+                           <institution>XXX</institution>
+                           <repository>XXX</repository>
+                           <idno>XXX</idno>
+                        </msIdentifier>
+                        <msContents>
+                           <!-- the msContents isn't mandatory -->
+                           <msItem>
+                              <author>xxx</author>
+                              <title>xxx</title>
+                              <!-- You can also add a colophon if needed -->
+                              <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                              <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                           </msItem>
+                        </msContents>
+                        <physDesc>
+                           <objectDesc>
+                              <!-- Here you can give a physical description of the manuscript in prose-->
+                              <p>xxx</p>
+                           </objectDesc>
+                           <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                              <!-- Create a handNote for each hand -->
+                              <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                                 <abbr type="hand">A<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on siglum-of-the-manuscript_H1, the number being incremental -->
+                                 <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
+                              </handNote>
+                           </handDesc>
+                        </physDesc>
+                        <history>
+                           <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                           <p>XXXX</p>
+                        </history>
+                     </msDesc>
+               </witness>
                <witness xml:id="edP">
-                  <bibl><analytic>
-                     <author>
-                        <name>Poerbatjaraka</name>
-                     </author>
-                     <title level="a">Arjuna-Wiwāha, tekst en vertaling</title>
-                  </analytic>
-                  <monogr>
-                     <title level="j">Bijdragen tot de Taal-, Land- en Volkenkunde</title>
-                     <imprint>
-                        <date when="1926">1926</date>
-                     </imprint>
-                     <biblScope unit="vol">82</biblScope>
-                     <biblScope unit="pp" from="181" to="305">181–305</biblScope>
-                  </monogr></bibl>
+                  <bibl><ptr target="bib:Poerbatjaraka1926_03"/></bibl>
                </witness>
                <witness xml:id="edK">
-                  <bibl>
-                     <author>
-                        <name>I. Kuntara Wiryamartana</name>
-                     </author>
-                     <title level="m">Arjunawiwāha: transformasi teks Jawa Kuna lewat tanggapan dan penciptaan di lingkungan sastra Jawa</title>
-                     <idno type="ISBN">979-8139-07-0</idno>
-                     <idno type="callNumber">Microfiche 90/50101 (P)</idno>
-                     <imprint>
-                        <pubPlace>Yogyakarta</pubPlace>
-                        <publisher>Duta Wacana University Press</publisher>
-                        <date when="1990">1990</date>
-                     </imprint>
-                  </bibl>
+                  <bibl><ptr target="bib:KuntaraWiryamartana1990_01"/></bibl>
                </witness>
-               <witness type="book"
-                           xml:id="edR"
-                           corresp="http://zotero.org/users/1544859/items/VR8WX9E2">
-                  <bibl>
-                     <title level="m">Arjunawiwāha: the marriage of Arjuna of Mpu Kanwa</title>
-                     <title type="short">Arjunawiwāha</title>
-                     <idno type="ISBN">978-90-6718-321-5</idno>
-                     <author>
-                        <forename>Stuart</forename>
-                        <surname>Robson</surname>
-                     </author>
-                     <imprint>
-                        <pubPlace>Leiden</pubPlace>
-                        <publisher>KITLV Press</publisher>
-                        <date>2008</date>
-                     </imprint>
-                  </bibl>
-                  <series>
-                     <title level="s">Bibliotheca Indonesica</title>
-                     <biblScope unit="volume">34</biblScope>
-                  </series>
-               </witness>
-               <witness type="journalArticle"
-                           xml:id="Berg"
-                           corresp="http://zotero.org/users/1544859/items/7BGSERN6">
-                  <analytic>
-                     <title level="a">De Çiwa-hymne van de Arjunawiwāha</title>
-                     <author>
-                        <forename>C.C.</forename>
-                        <surname>Berg</surname>
-                     </author>
-                  </analytic>
-                  <bibl>
-                     <title level="j">Bijdragen tot de Taal-, Land- en Volkenkunde</title>
-                     <imprint>
-                        <biblScope unit="volume">90</biblScope>
-                        <biblScope unit="issue">2-3</biblScope>
-                        <biblScope unit="page">173-238</biblScope>
-                        <date>1933</date>
-                     </imprint>
-                  </bibl>
-               </witness>
-               <witness type="book"
-                           xml:id="OJED"
-                           corresp="http://zotero.org/users/1544859/items/TT9B3XV4">
-                  <bibl>
-                     <title level="m">Old Javanese-English dictionary</title>
-                     <author>
-                        <forename>P.J.</forename>
-                        <surname>Zoetmulder</surname>
-                     </author>
-                     <imprint>
-                        <pubPlace>'s-Gravenhage</pubPlace>
-                        <publisher>Martinus Nijhoff</publisher>
-                        <date>1982</date>
-                     </imprint>
-                  </bibl>
+               <witness xml:id="edR">
+                  <bibl><ptr target="bib:Robson2008_01"/></bibl>
                </witness>
             </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>The text was first typed in 2008b by Arlo Griffiths. Some corrections of the word division of Poerbatjaraka's text, and of misprints in it, were applied tacitly, but in general, real changes to Poerbatjaraka's text (P) were indicated at the end of the respective line. Most of these changes were inspired by a reading of the text with I. Kuntara Wiryamartana (<ref target="#K">Kuntara Wiryamartana 1990</ref>). For Sargas 10 and 11, see C.C. Berg’s article (<ref target="#Berg">Berg 1933</ref>).</p>
-         <p>Andrew Ollett converted the transcript to ISO-15919 in June 2018.</p>
-         <p>Arlo Griffiths adjusted the resulting XML file after Robson's text  (<ref target="#edR">Robson 1990</ref>) in June-July 2018.</p>
-        <!-- <refsDecl n="CTS">
-            <cRefPattern n="level2"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1']/tei:lg[@n='$2'])">
-               <p>This pointer pattern extracts line groups (verses).</p>
-            </cRefPattern>
-            <cRefPattern n="level1"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1'])">
-               <p>This pointer pattern extracts divisions (cantos).</p>
-            </cRefPattern>
-         </refsDecl>-->
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+         </projectDesc>
+         <editorialDecl>        
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>    
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -161,8 +118,8 @@
         <change when="2024-07-21" who="part:axja">Transform to DHARMA</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:lang="kaw-Latn" xml:space="preserve">
-      <body>
+   <text xml:space="preserve">
+      <body><div type="edition" xml:lang="kaw-Latn">
          <head>avighnam astu</head>
          <div type="canto" n="1">
 	<!-- śārdūlavikrīḍita: - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = !-->
@@ -200,7 +157,7 @@
             <lg n="2" met="śārdūlavikrīḍita">
                <l n="a">
                   <app>
-                     <lem wit="#edP edR">uṣṇīṣaṅkv</lem>
+                     <lem wit="#edP #edR">uṣṇīṣaṅkv</lem>
                      <rdg wit="#R">uṣṇīṣakv</rdg>
                   </app> i <app>
                      <lem wit="#edP #edR">ləbūni</lem>
@@ -212,7 +169,7 @@
                <l n="b">maṅgəh maṅgalaniṅ mikət kavijayan saṅ pārtha riṅ kahyaṅan</l>
                <l n="c">
                   <app>
-                     <lem type="emn" resp="#AG">sambandhanya</lem>
+                     <lem type="emn" resp="part:argr">sambandhanya</lem>
                      <rdg wit="#edP #edR">sambaddhanya</rdg>
                      <rdg wit="#F #R">sambandhāvva</rdg>
                      <rdg wit="#G">sambandha pva</rdg>
@@ -341,7 +298,7 @@
                <l n="b">atuṅgalan unaṅ rumūpaka saṅ arjuna vahu təka dūtaniṅ lara</l>
                <l n="c">linud ri ləṅəṅiṅ vanāntara katon inuluran i pakəmbaṅ iṅ gaḍuṅ</l>
                <l n="d">rapuh ta juga rakva <app>
-                     <lem type="norm" resp="#AG">mūrchita</lem>
+                     <lem type="norm" resp="part:argr">mūrchita</lem>
                      <rdg wit="#edR">mūrcita</rdg>
                      <rdg wit="#edP">mūrccita</rdg>
                   </app> hatinya pinasukan i śaktiniṅ smara</l>
@@ -355,7 +312,7 @@
                <l n="b">təhər kinəmulan səvə̄ hana pənədnya ta kunaṅ avəḍakvəḍak lumut</l>
                <l n="c">samīpa hana poh rurū vruh iṅ aṅel lvah asaji bañu tan madoh i sor</l>
                <l n="d">ikāṅ amarakāminī paḍa kapeṅin umulati <app>
-                     <lem type="norm" resp="#AG">vilāsa</lem>
+                     <lem type="norm" resp="part:argr">vilāsa</lem>
                      <rdg wit="#edP #edR">vilāśa</rdg>
                   </app> maṅkana</l>
             </lg>
@@ -420,7 +377,7 @@
                <l n="b">ambəknyāku ləvih ya ta pva kalarāku tak alara panarkaniṅ mulat</l>
                <l n="c">yekān rājasa yan hanāmaca tulis mañaritakən arəṅva ta pva ya</l>
                <l n="d">ndan riṅ <app>
-                     <lem type="norm" resp="#AG">rātri</lem>
+                     <lem type="norm" resp="part:argr">rātri</lem>
                      <rdg wit="#edP #edR">ratri</rdg>
                   </app> jugān kinon təkap i kūṅnya majarumana tambvaṅ iṅ vulan</l>
             </lg>
@@ -433,12 +390,12 @@
             </lg>
             <lg n="5" met="jagaddhita">
                <l n="a">maṅkat śīghra katon tikaṅ vivara <app>
-                     <lem type="norm" resp="#AG">ramya</lem>
+                     <lem type="norm" resp="part:argr">ramya</lem>
                      <rdg wit="#edP #edR">rāmya</rdg>
                   </app> pinakapatapan saṅ arjuna</l>
                <l n="b">arddhāhə̄t harəpanya tan təka tigaṅ ḍəpa dunuṅan ikaṅ surāṅganā</l>
                <l n="c">vetan rakva <app>
-                     <lem type="norm" resp="#AG">mukhanya</lem>
+                     <lem type="norm" resp="part:argr">mukhanya</lem>
                      <rdg wit="#edP #edR">mukanya</rdg>
                   </app> maṅharəpakəñ juraṅ aṅəḍap ikaṅ valikkaḍəp</l>
                <l n="d">kady ākon masukāvarah ri hana saṅ kinirakira səḍəṅ pakolihən</l>
@@ -452,14 +409,14 @@
             <lg n="7" met="jagaddhita">
                <l n="a">āpan sāmpun ikaṅ anāśrayasamādhi tinəmunira saṅ hane daləm</l>
                <l n="b">lekan rakva sirān pasampunan <app>
-                     <lem type="norm" resp="#AG">aṅarcana</lem>
+                     <lem type="norm" resp="part:argr">aṅarcana</lem>
                      <rdg wit="#edP">aṅarccana</rdg>
                      <rdg wit="#edR">aṅarcaṇa</rdg>
                   </app> kuməñar ikaṅ prabhāṅadəg</l>
                <l n="c">rūpanyān paśilātəhər kumisapuṅ taṅan apatitis agranāsika</l>
                <l n="d">
                   <app>
-                     <lem type="norm" resp="#AG">līnaṅ</lem>
+                     <lem type="norm" resp="part:argr">līnaṅ</lem>
                      <rdg wit="#edP #edR">līṇaṅ</rdg>
                   </app> sūkṣmaśarīra māri karəṅə̄ praṇava huvus apiṇḍa niṣkala</l>
             </lg>
@@ -558,7 +515,7 @@
                      <rdg wit="#edP">laṅhā ṅ dinākara</rdg>
                   </app> ginantyanikaṅ śaśāṅka</l>
                <l n="c">tāmtām aniṅhali <app>
-                     <lem type="norm" resp="#AG">vilāsanikaṅ</lem>
+                     <lem type="norm" resp="part:argr">vilāsanikaṅ</lem>
                      <rdg wit="#edP">vilāśanikāṅ</rdg>
                      <rdg wit="#edP">vilāśa nikaṅ</rdg>
                   </app> surastrī</l>
@@ -573,7 +530,7 @@
             </lg>
             <lg n="2" met="vasantatilaka">
                <l n="a">lvirnyān kədə̄ mulati gātra saṅ <app>
-                     <lem type="norm" resp="#AG">ārya</lem>
+                     <lem type="norm" resp="part:argr">ārya</lem>
                      <rdg wit="#edP">āryya</rdg>
                      <rdg wit="#edR">arya</rdg>
                   </app> pārtha</l>
@@ -592,7 +549,7 @@
             </lg>
             <lg n="4" met="vasantatilaka">
                <l n="a">līlā hanāmaṭimaṭi vruh amet <app>
-                     <lem type="norm" resp="#AG">vilāsa</lem>
+                     <lem type="norm" resp="part:argr">vilāsa</lem>
                      <rdg wit="#edP">vīlāśa</rdg>
                      <rdg wit="#edR">vilāśa</rdg>
                   </app>
@@ -600,7 +557,7 @@
                <l n="b">maṅlālanāṅhapiti rakva taṅan saṅ ārya</l>
                <l n="c">edan mahān tukupakənya rike susunya</l>
                <l n="d">kady āṅrəṅə̄ vuluh aghāṣa hatinya <app>
-                     <lem type="norm" resp="#AG">mūrcha</lem>
+                     <lem type="norm" resp="part:argr">mūrcha</lem>
                      <rdg wit="#edP">mūrcca</rdg>
                      <rdg wit="#edR">mūrca</rdg>
                   </app>
@@ -643,7 +600,7 @@
                <l n="b">pañcendriyāvədi tumon viṣayanya ṅūni</l>
                <l n="c">vruh maṅrəṅə̄ vruh umulat juga tan vikalpa</l>
                <l n="d">māry <app>
-                     <lem type="norm" resp="#AG">āṅaveśa</lem>
+                     <lem type="norm" resp="part:argr">āṅaveśa</lem>
                      <rdg wit="#edP #edR">āṅaveṣa</rdg>
                   </app> ri hinəṅnira saprahāra</l>
             </lg>
@@ -671,14 +628,14 @@
                   </app> vr̥tta śrī pāṇḍutanaya mamaṅgih kasutapan</l>
                <l n="c">yayā taṇḍasniṅ daityapati juga kavvat hiḍəpira</l>
                <l n="d">tuhun tuṅgal sandeha <app>
-                     <lem type="norm" resp="#AG">talətəhikaṅ</lem>
+                     <lem type="norm" resp="part:argr">talətəhikaṅ</lem>
                      <rdg wit="#edR">talətəh ikaṅ</rdg>
                      <rdg wit="#edP">talətəhikāṅ</rdg>
                   </app> harṣa kavəkas</l>
             </lg>
             <lg n="2" met="śikhariṇī">
                <l n="a">kavairāgyan saṅ pārtha <app>
-                     <lem type="norm" resp="#AG">kavaśanikaṅ</lem>
+                     <lem type="norm" resp="part:argr">kavaśanikaṅ</lem>
                      <rdg wit="#edP">kavaśanikāṅ</rdg>
                      <rdg wit="#edR">kavaśan ikaṅ</rdg>
                   </app> dhyāna vimala</l>
@@ -714,7 +671,7 @@
                <!-- Andrew: how is this to encode the fact that the words mahas riṅ girivana have been (inadvertently) dropped in edR? (they do figure in Robson's translation!)  -->
                <l n="b">anon teja nda ṅke paraparahikaṅ lakṣaṇa katon</l>
                <l n="c">pilih tīrtha pvekaṅ madhanuha <app>
-                     <lem resp="#AG">yatan</lem>
+                     <lem resp="part:argr">yatan</lem>
                      <rdg wit="#edP">ya tān</rdg>
                      <rdg wit="#edR">ya tan</rdg>
                   </app> paṇḍita tapa</l>
@@ -750,7 +707,7 @@
                <l n="b">huvus vruh towin yan valulaṅ inukir molah aṅucap</l>
                <l n="c">haturniṅ vaṅ tr̥ṣṇeṅ viṣaya malahā tar vihikana</l>
                <l n="d">ri <app>
-                     <lem type="norm" resp="#AG">tattvanyān</lem>
+                     <lem type="norm" resp="part:argr">tattvanyān</lem>
                      <rdg wit="#edP #edR">tatvanyān</rdg>
                   </app> māyā sahanahananiṅ bhāva siluman</l>
             </lg>
@@ -839,11 +796,11 @@
                <l n="b">tulusakəna tikuṅ prih meh saṅ hyaṅ hayu ḍatəṅa</l>
                <l n="c">muliha ta kami maṅke liṅ hyaṅ śakra tan asuve</l>
                <l n="d">ri huvusira <app>
-                     <lem type="norm" resp="#AG">sinambahh antarlīṇa</lem>
+                     <lem type="norm" resp="part:argr">sinambahh antarlīṇa</lem>
                      <rdg wit="#edP">sinambah antarlīṇa</rdg>
                      <rdg wit="#edR">sinambah hantarlīṇa</rdg>
                   </app> namunamu</l>
-               <!-- Andrew: using '<lem type="norm" resp="#AG">sinambahh antarlīṇa</lem>' for creation of the rather abnormally spelt word sinambahh is somewhat counterintuitive; is there really any need to specify @type? -->
+               <!-- Andrew: using '<lem type="norm" resp="part:argr">sinambahh antarlīṇa</lem>' for creation of the rather abnormally spelt word sinambahh is somewhat counterintuitive; is there really any need to specify @type? -->
             </lg>
             <lg n="9" met="girīśa">
                <l n="a">ri vurinira matambəh prih saṅ pārtha <app>
@@ -867,7 +824,7 @@
                <l n="b">maṅgəh tāmbək bhaṭārendra musuhira tikin matta sampūrṇavīrya</l>
                <l n="c">saṅkəp sāmanta mantrī saha bala balavān vallabhān kapva bela</l>
                <l n="d">maṅkin lobhān idī kahyaṅan aṅusakasik sə̄k səsə̄k <app>
-                     <lem type="norm" resp="#AG">rakṣakanya</lem>
+                     <lem type="norm" resp="part:argr">rakṣakanya</lem>
                      <rdg wit="#edP #edR">rākṣakanya</rdg>
                   </app>
                </l>
@@ -914,7 +871,7 @@
                <l n="b">yatnādandan rukuh mvaṅ kavaca miṅətiṅət dadyaniṅ daitya mūrkha</l>
                <l n="c">ardhādoh ndān aṅinyan təka mamusus ikāṅ vr̥kṣa rūg tan paśeṣa</l>
                <l n="d">kālanyāṅher təkanya nda tucapa ta ḍatəṅ śrī <app>
-                     <lem resp="#AG">mahānīlakaṇṭha</lem>
+                     <lem resp="part:argr">mahānīlakaṇṭha</lem>
                      <rdg wit="#edP">mahā nīlakaṇṭha</rdg>
                      <rdg wit="#edR">mahānīlakaṇṭa</rdg>
                   </app>
@@ -1056,7 +1013,7 @@
                <l n="c">āṅin mādrəs akilat aṅdəmak hudanya</l>
                <l n="d">
                   <app>
-                     <lem type="norm" resp="#AG">dhvastekāṅ</lem>
+                     <lem type="norm" resp="part:argr">dhvastekāṅ</lem>
                      <rdg wit="#edP #edR">dhvāstekāṅ</rdg>
                   </app> apuy alilaṅ parəṅ vināśa</l>
             </lg>
@@ -2797,6 +2754,25 @@
                <l n="d">śrī airlaṅgha namo stu saṅ panikəlan tanah aṅanumata</l>
             </lg>
             <ab>ity arjunavivāha samāpta</ab>
+         </div>
+
+
+
+      </div>
+         <div type="translation">
+  <p/>
+ </div>
+ <div type="commentary">
+               <p/>                              
+            </div>
+	
+     <div type="bibliography">
+        <p>The text was first typed in 2008b by Arlo Griffiths. Some corrections of the word division of Poerbatjaraka's text, and of misprints in it, were applied tacitly, but in general, real changes to Poerbatjaraka's text (P) were indicated at the end of the respective line. Most of these changes were inspired by a reading of the text with I. Kuntara Wiryamartana (<ref target="#K">Kuntara Wiryamartana 1990</ref>). For Sargas 10 and 11, see C.C. Berg’s article (<ref target="#Berg">Berg 1933</ref>).</p>
+         <p>Andrew Ollett converted the transcript to ISO-15919 in June 2018.</p>
+         <p>Arlo Griffiths adjusted the resulting XML file after Robson's text  (<ref target="#edR">Robson 1990</ref>) in June-July 2018.</p>
+            <listBibl> 				
+               <bibl><ptr target="bib:Berg1933_01"/></bibl> 			
+            </listBibl>
          </div>
       </body>
    </text>

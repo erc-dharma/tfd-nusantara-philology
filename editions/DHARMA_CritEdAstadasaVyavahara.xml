@@ -2,41 +2,20 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id" type="edition"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="astadasaVyavahara">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Aṣṭādaśavyavahāra</title>
-				<title type="sub">Digital Critical Edition of and Old Javanese Juridical Text</title>
-    	 <editor ref="part:argr">
-		<forename>Arlo</forename>
-    	 	<surname>Griffiths</surname>
-    	 </editor>
-    	 <editor ref="part:tilu">
-    	 		<forename>Timothy</forename>
-    	 		<surname>Lubin</surname>
-    	 </editor>
-    	 <editor ref="part:nuha">
-    	 		<name>Nurmalia Habibah</name>
-    	 </editor>
-	<respStmt>
-	<resp>diplomatic edition of the codex unicus</resp>
-		<persName ref="part:argr">
-			<forename>Arlo</forename>
-			<surname>Griffiths</surname>
-		</persName>
-		<persName ref="part:tilu">
-			<forename>Timothy</forename>
-			<surname>Lubin</surname>
-		</persName>
-		</respStmt>
-	<respStmt>
-	<resp>encoding of the edition</resp>
-		<persName ref="part:argr">
-			<forename>Arlo</forename>
-			<surname>Griffiths</surname>
-		</persName>
-	</respStmt>
+				<title>Aṣṭādaśavyavahāra</title>
+			<!--	<title type="sub"
+					>Digital Critical Edition of and Old Javanese Juridical Text</title>-->
+				<respStmt>
+					<resp>Author of the digital edition</resp>
+					<persName ref="part:argr"> <forename>Arlo</forename>
+						<surname>Griffiths</surname> </persName>
+					<persName ref="part:tilu"> <forename>Timothy</forename> <surname>Lubin</surname> </persName>
+					<persName ref="part:nuha"> <name>Nurmalia Habibah</name> </persName>
+				</respStmt>				
 			</titleStmt>
 			<publicationStmt>
 				<authority>DHARMA</authority>
@@ -45,23 +24,20 @@
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">
 						<p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-						<p>Arlo Griffiths, Timothy Lubin &amp; Nurmalia Habibah.</p>
-					</licence>
+						<p>Arlo Griffiths, Timothy Lubin &amp; Nurmalia Habibah.</p> </licence>
 				</availability>
 				<date from="2019" to="2025">2019-2025</date>
 			</publicationStmt>
 			<sourceDesc>
 				<listWit>
 					<!-- One witness for each manuscript. Update the content -->
-					<witness xml:id="L882">
-						<abbr type="siglum">MS</abbr>
-				<!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-						<msDesc>
-							<msIdentifier>
-								<settlement>Jakarta</settlement>
-								<institution>Perpustakaan Nasional Republik Indonesia</institution>
-								<idno>L882</idno>
-							</msIdentifier>
+					<witness xml:id="L882"> <abbr type="siglum">MS</abbr>
+						<!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript --> <msDesc>
+						<msIdentifier>
+							<settlement>Jakarta</settlement>
+							<institution>Perpustakaan Nasional Republik Indonesia</institution>
+							<idno>L882</idno>
+						</msIdentifier>
 						<!--	<msContents>
 								<msItem>
 									<author>...</author>
@@ -71,105 +47,65 @@
 									</colophon>
 								</msItem>
 							</msContents> -->
-							<physDesc>
-								<objectDesc>
-	<p>This manuscript is a <foreign>lontar</foreign> (<foreign>ləmpiran</foreign>), 44 cm long, extending over 37 folios. Folio numbering in the left margin of the verso of each folio. Four lines per side. Three binding holes; rectangular space kept free around central hole.</p>
-								</objectDesc>
-	<handDesc>
-		<handNote xml:id= "MS_H1" scriptRef="class:83239 maturity:83215"> 
-		<p>Only a single hand is observed: black ink, neat Balinese script.</p>
-		</handNote>
-	</handDesc>
-							</physDesc>
-							<history>
-	<p>Listed by Behrend (1998: 363, peti 60, L 882). First described by Juynboll (1911: 188–189, MCCCXXXI, cod. 882) as follows:
-<quote rend="block">Lĕmpiran, lang 44 cM. en groot 37 fol., bevattende een O. Jav. wetboek, dat <foreign>Aṣṭâdaça wyawahâra</foreign> schijnt te heeten. Het begin luidt <foreign>Awighnam astu. Nihan Aṣṭâdaça wyawahâra kawruhakna de sang mahyun aglarakna wyawahârawicedana</foreign>. Het is in zuiver O. Jav. geschreven, waarschijnlijk in het <hi rend="italic">Majapahitsche</hi> tijdperk, want de naam van dit rijk komt er eenige malen in voor. Dikwijls worden Sanskṛtverzen aangehaald. Reeds op regel 3 van fol. 1 worden de <foreign>aṣṭaduṣṭa</foreign> genoemd, waarmede de door dr. Jonker uitgegeven <foreign>Kuṭâra-mânawa</foreign> begint, doch hier afwijkend. Op fol. a, 36 staat: <foreign>Nihan ta ngaran ing Dewâgama</foreign>. Het is afkomstig uit Den Pasar. Eigendom van het Bat. Gen, in bruikleen bij het leg. Warn.</quote>
- </p>
-							</history>
-						</msDesc>
-					</witness>
+						<physDesc>
+							<objectDesc>
+								<p>This manuscript is a <foreign>lontar</foreign> (<foreign>ləmpiran</foreign>), 44 cm long, extending over 37 folios. Folio numbering in the left margin of the verso of each folio. Four lines per side. Three binding holes; rectangular space kept free around central hole.</p>
+							</objectDesc>
+							<handDesc>
+								<handNote xml:id="MS_H1" scriptRef="class:83239 maturity:83215">
+									<p>Only a single hand is observed: black ink, neat Balinese script.</p>
+								</handNote>
+							</handDesc>
+						</physDesc>
+						<history>
+							<p>Listed by Behrend (1998: 363, peti 60, L 882). First described by Juynboll (1911: 188–189, MCCCXXXI, cod. 882) as follows:
+<quote rend="block"
+								>Lĕmpiran, lang 44 cM. en groot 37 fol., bevattende een O. Jav. wetboek, dat <foreign>Aṣṭâdaça wyawahâra</foreign> schijnt te heeten. Het begin luidt <foreign>Awighnam astu. Nihan Aṣṭâdaça wyawahâra kawruhakna de sang mahyun aglarakna wyawahârawicedana</foreign>. Het is in zuiver O. Jav. geschreven, waarschijnlijk in het <hi
+								rend="italic"
+								>Majapahitsche</hi> tijdperk, want de naam van dit rijk komt er eenige malen in voor. Dikwijls worden Sanskṛtverzen aangehaald. Reeds op regel 3 van fol. 1 worden de <foreign>aṣṭaduṣṭa</foreign> genoemd, waarmede de door dr. Jonker uitgegeven <foreign>Kuṭâra-mânawa</foreign> begint, doch hier afwijkend. Op fol. a, 36 staat: <foreign>Nihan ta ngaran ing Dewâgama</foreign>. Het is afkomstig uit Den Pasar. Eigendom van het Bat. Gen, in bruikleen bij het leg. Warn.</quote>
+							</p>
+						</history>
+						</msDesc> </witness>
 				</listWit>
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<projectDesc>
-				<!-- Part mandatory -->
-				<p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-				<!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+				<p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
 			</projectDesc>
-			<editorialDecl>
-				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+			<editorialDecl>        
 				<correction>
 					<p/>
 				</correction>
 				<normalization>
 					<p/>
 				</normalization>
-				<punctuation>
-					<p/>
-				</punctuation>
 				<interpretation>
-					<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+					<p/>
 				</interpretation>
 			</editorialDecl>
 			<samplingDecl>
-				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
 				<p/>
-			</samplingDecl>
-
-			<schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-			<!-- Will need to be updated once a more official realase is done -->
-
-			<!-- variantEncoding is a mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use @method="location-referenced".
-
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-
-			Note that the current by default behaviour is set on parallel-segmentation -->
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<!-- Part mandatory -->
-			<listPrefixDef>
-				<prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-					<p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-				</prefixDef>
-				<prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-				</prefixDef>
-				<prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-					<p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-				</prefixDef>
-				<prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-					<p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-				</prefixDef>
-				<prefixDef ident="maturity" matchPattern="(0-9]+)" replacementPattern="tba">
-					<p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-				</prefixDef>
-				<prefixDef ident="cal" matchPattern="([\w]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-					<p>Internal URIs using the cal prefix to point to calendar systems in <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p></prefixDef>
-			</listPrefixDef>
+			</samplingDecl> 
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
 				<language ident="san-Latn">Sanskrit, romanized</language>
 				<language ident="kaw-Latn">Old Javanese, romanized</language>
 			</langUsage>
-			<textClass>
-				<keywords>
-	<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords> -->
-					<term/>
-					<!-- Ignore this element for the time being. -->
-				</keywords>
-			</textClass>
+			
 		</profileDesc>
 		<revisionDesc>
-			<change who="part:argr" when="2023-04-15" status="draft">created the file and started encoding the edition</change>
+			<change who="part:argr" when="2023-04-15" status="draft"
+				>created the file and started encoding the edition</change>
 		</revisionDesc>
 	</teiHeader>
-	<text xml:space="preserve" xml:lang="kaw-Latn">
+	<text xml:space="preserve">
 		<body>
-<div>
+			<div type="edition" xml:lang="kaw-Latn">
+			
 	<ab type="invocation"><pb edRef="#L882" n="1r"/><pb edRef="#L882" n="1v"/>avighnam astu.</ab>
-</div>
+
 <div type="chapter" n="1">
 <head type="editorial">Definitions</head>
 <p n="1">nihan aṣṭādaśavyavahāra kavruhakəna de saṅ mahyun a<supplied reason="omitted">ṅ</supplied>gəlarakəna vyavahāravicchedana, ndya ta lvirnira, pinakādi, <term xml:lang="san-Latn">r̥ṇa</term>, ṅa, <supplied reason="omitted">hutaṅ</supplied> <num value="1">1</num>, <term xml:lang="san-Latn"><app><lem type="emn">adānam</lem><rdg wit="#L882">hadaniṁ</rdg><note>But cf. <ref target="DHARMA_CritEdSvayambhu">Svayambhu</ref> 5.1 <foreign>tan kasahuraniṅ hutaṅ, hādiniṅ vyavahāra</foreign>.</note></app></term>, tan kavehanya, <num value="2">2</num>, <app><lem type="emn">nikṣepa</lem><rdg wit="#L882">dikṣepa</rdg></app>, ṅa, <app><lem>dravya tinitipakən, <num value="3">3</num>,<supplied reason="lost" evidence="internal"><gap/></supplied>,
@@ -967,7 +903,18 @@ nato na mato komatah, nākṣa kr̥ṣṇonapisitah, nā sumārtvo na karmato na
 <pb edRef="#L882" n="37v"/>
 </p>
 </div>
+</div>
+			<div type="translation"><p/></div>
+			<div type="commentary">
+				<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+			</div>
 
-		</body>
+			<div type="bibliography">
+				<p>Diplomatic edition of the codex unicus by Arlo Griffiths and Tim Lubin. Encoding by Arlo Griffiths.</p>
+	<listBibl> 				
+		<bibl/> 			
+	</listBibl>
+			</div>
+	</body>
 	</text>
 </TEI>

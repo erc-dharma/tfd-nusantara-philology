@@ -2,7 +2,9 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" type="edition" xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:lang="eng"
+     xml:id="vrttaSancaya">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -14,18 +16,10 @@
             <principal>
                <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
             </principal>-->
-            <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
-               <resp>Typed the text (2011)</resp>
-            </respStmt>
-            <respStmt>
-               <persName ref="http://viaf.org/viaf/372149294434280521495">Andrew Ollett</persName>
-               <resp>Converted the text to TEI format (2018)</resp>
-            </respStmt>
          </titleStmt>
          <publicationStmt>
             <authority/>
-            <availability status="restricted">
+            <availability>
                <p><!-- add whatever license you like: !--></p>
             </availability>
             <date>2018</date>
@@ -39,15 +33,24 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p><!-- ? !--></p>
-         <!--<refsDecl n="CTS">
-	<cRefPattern 
-	    n="level1"
-	    matchPattern="(\w+)"
-	    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:lg[@n='$1'])">
-	  <p>This pointer pattern extracts verses.</p>
-	</cRefPattern>
-      </refsDecl>-->
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
+         </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -59,8 +62,8 @@
          <change when="2018-06-04" who="part:anol">Initial TEI encoding</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
-    <body>
+   <text xml:space="preserve">
+    <body><div type="edition" xml:lang="kaw-Latn">
       <head> avignam astu |</head>
       <lg n="1" met="sragdharā">
         <l n="a">saṅ hyaṅ vāgīśvararīndaḥ lihati satatabhaktiṅkvi jə̄ṅ dhātr̥devī |</l>
@@ -823,6 +826,17 @@
            <l n="d">kavyeñjuhanvaminucap magave panastvas ||</l>
       </lg>
       <ab>iti vr̥ttasañcaya || cakravākadūtacarita || tanakuṅ ||</ab>
-    </body>
-  </text>
+    </div> 
+       <div type="translation"><p/></div>
+       <div type="commentary"><p/></div>
+
+  <div type="bibliography">
+     <p>Arlo Griffiths typed the text (2011). Andrew Ollett converted the text to TEI format (2018).</p>
+<listBibl>
+				<bibl/>
+			</listBibl>
+           
+       </div>
+</body>
+   </text>
 </TEI>

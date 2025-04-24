@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:lang="eng"
+     xml:id="kalpaBuddhaLeidenCB113">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Kalpabuddha CB113</title>
+            <respStmt>
+               <resp>Author of the digital edition</resp>
+               <persName ref="part:dacc">
+                  <persName>
+                     <name>Dewa Ayu Carma Citrawati</name>
+                  </persName>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Hamburg</pubPlace>
+            <idno type="filename">DHARMA_DiplEdKalpabuddhaLeidenCB113</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
+                            a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s)-->
+               </licence>
+            </availability>
+            <date from="2024" to="2025">2024-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"/>
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden</settlement>
+                        <institution>University Library (UB)</institution>
+                        <repository>Paper</repository>
+                        <idno>CB 113</idno>
+                     </msIdentifier>
+                     <msContents>
+                                <!--the msContents isn't mandatory -->
+               </msContents>
+                     <physDesc>
+                        <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Leiden University Library CB 113: a transcript in Balinese script made on behalf of C.C. Berg in 1929 from a lontar in the collection of Jlantik. The present text is found on folios 22r through 25r of the original lontar as indicated in the transcript. Photographed by Andrea Acri in 2011</p>
+                        </objectDesc>
+                     </physDesc>
+                     <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>
+                  </p>
+                     </history>
+                  </msDesc>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
+         </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+                <!-- choose the language(s) of your text, remove the others -->
+            <language ident="kaw-Latn">Old Javanese, Balinese</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:dacc" when="2024-12-25" status="draft">Updating the template</change>
+         <change who="part:dacc" when="2024-12-26" status="draft">Initial encoding of the edition (first folia)</change>
+      </revisionDesc>
+      <!-- HandDesc: 
+            (1) layar is in Balinese position
+            (2) dh and ḍ seem to be used without any distinction, nor are any distinctions made between sa śa and ṣa-->
+   </teiHeader>
+   <text xml:space="preserve">
+        <body>
+            <div type="edition" xml:lang="kaw-ban">
+               <ab>
+            <!--image_0643-->  
+      <pb n="22v"/>
+         <lb n="17"/>nta, byakta Ilaṁ kleśanya, Ityomaśarīra|| nihan hajinira sira bha
+         <lb n="18"/>hyaṁ budḍa, kayatnakna mahopadeśa Ika:, paṅe:nsa lvirniṁ mantra, bhaṭara
+         <lb n="19"/>budḍa sira hana riṁ maha: pralaya, dumadi havaknira, sira ta matmahan· bhaṭara pa
+         <lb n="20"/>ñcatathagata, śarīra nama bheda, lapva hapadudvan· rūpa:nira, bodya:gri
+         <!-- image_0644 -->
+      <pb n="23r"/>
+   
+         <lb n="1"/>mudra: sira, sasvataḥjña:nanira, cakra sañjatanira, riṁ sahavati ṅaraniṁ kaḍa
+         <lb n="2"/>tvanira, siṅha:tutuṅgaṅanira, sira bharali satvabajri, sira bharali ḍarmmabajri, 
+         <lb n="3"/>sira bharali kar:mmaba:jri, sira ta sahadevī hamarivr̥tta ri sira, muṅguḥ pva sira riṁ 
+         <lb n="4"/>śarīra, ri jroniṁ pusuḥpusuḥ, pinakasthananira. sira bhaṭa:ra:kṣobhya, mu
+         <lb n="5"/>ṅguḥ riṁ pūrvva:, kr̥ṣṇa varṇnanira, sira bhara:li locana devīnira, hūm̐, mantranira
+         <lb n="6"/>, bhūḥsparśśa:na mudra: sira, Aḍarmmajña:na sira, bajra sañjatanira, riṅ abhirati 
+         <lb n="7"/>ṅaraniṁ kasvargganira, gajaḥ tutuṅganira, bhaṭa:ra bajrara:ja, bhaṭa:ra ba
+         <lb n="8"/>jrara:ga, hyaṁ bajrasa:ḍu, bhaṭa:ra ba:jraḍara:di, saṅ amarivr̥tta ri sira, mu
+         <lb n="9"/>ṅguḥ pva sira riṁ śarīra, ri jroniṁ paruparu pinakasthananira. sira bhaṭa:ra ratna
+         <lb n="10"/>sambhava, muṅguḥ riṁ dakṣiṇa, pita varṇnanira, sira bharali mamaki devīnira, tram̐, 
+         <lb n="11"/>mantranira, samatajña:na sira, kaphala sañjatanira, ri jroniṁ limpa pinakastha
+         <lb n="12"/>nanira. sira bhaṭa:ra hamittabha, muṅguḥ ri paścima, rakta varṇnanira, sira bharali pa
+         <lb n="13"/>ṇḍaravasini devīnira, hriḥ, mantranira, pratyavekṣaṇa jña:na sira, ḍya:namudra:
+         <lb n="14"/> sira,sañjatanira, riṁ sukavati kasvargganira, sira bharali bajraḍarmma, 
+         <lb n="15"/>bhaṭa:ra bajratikṣṇa:, bhaṭa:ra bajrahetu, bhaṭa:ra bajrabha:ṣa, saṅ amarivr̥tta
+         <lb n="16"/> ri sira, muṅguḥ pva sira riṁ śarīra, ri jro hati pinakasthananira. sira bhaṭa:ra ha
+         <lb n="17"/>moghasidḍi, muṅguḥ riṁ hūttara, viśvavarṇna sira, sira bharali tara devīnira, Aḥ,
+         <lb n="18"/>mantranira, Abha:mudra: sira, kr̥tanūsthanajña:nanira, riṁ kusumite ṅaraniṁ kasvargga
+         <lb n="19"/>nira, garuḍa tutuṅgaṅanira, sira bhaṭa:ra bajraka:rmma, bhaṭa:ra bajrara:kṣa, bhaṭa:ra 
+         <lb n="20"/>bajrayakṣa, bhaṭa:ra bajrasandi, saṅ amarivr̥tta ri sira, muṅguḥ pva sira ri śarīra, riṁ
+          <!-- image_0645 -->
+         <pb n="24v"/>
+
+         <lb n="1"/>jro hamprū pinakasthananira. kunəṁ pva bhaṭa:ra pañcatathagata, muliḥ riṁ lo
+         <lb n="2"/> kaḍatunira, hana ri śarīranta sira maṅke, sira ta: tmahan· pañcajña:na, pañca
+         <lb n="3"/>jña:na ṅaranya, cakṣuḥ, śrota, graṇa, jihva:, hr̥daya. cakṣu, ṅa, mata. śro
+         <lb n="4"/>ta, ṅa, taliṅa. graṇa, ṅa, Iruṁ. jīhva:, ṅa, caṅkəm·. hr̥daya, ṅa, hati. ya
+         <lb n="5"/>tika: sinaṅguḥ pañcendriya, ṅa. kunaṁ ta devataniṁ pañcendriya. ṅa, bhaṭa:ra:kṣo
+         <lb n="6"/>bhya, muṅguḥ riṁ mata. bhaṭa:ra ratnasambhava:, muṅguḥ riṁ taliṅa. bhaṭa:ra mittabha, muṅgviṁṅ iruṁ
+         <lb n="7"/>.bhaṭa:ra hamoghasidḍi, muṅguḥ riṁ caṅkəm· sira pinakapaṁrasa:. bhaṭa:ra vairoca:na
+         <lb n="8"/> muṅguḥ ri pusuḥ pusuḥ, sira pinaka:ṅənaṅən·, Irika ta saha devīnira sovaṁ 
+         <lb n="9"/>sovaṁ, yatika: sinaṅguḥ saṁ hyaṁ pañca:tma ṅaranya, pinaka:vak·||ka:lpa
+         <lb n="10"/>bodḍa Iti, paramarahasya
+         <lb n="11"/>Adva:yajña:na<g type="space"/><note type="image">drawing of a face</note><g type="space"/>Adva:ya
+         <lb n="12"/>sūryya:rūpa: I<g type="space"/><note type="image">drawing of a face</note><g type="space"/>candrarūpa:
+         <lb n="13"/>kaṅavak·, ya<g type="space"/><note type="image">drawing of a face</note><g type="space"/>Ikaṅ avak·
+         <lb n="14"/>sūryya:smr̥tya:<g type="space"/><note type="image">drawing of a face</note><g type="space"/>ya candra:smr̥tya:rane.
+         <lb n="15"/>rane<g type="space"/>guruṁ gu<g type="space"/>ruṅa· stha:na
+         <lb n="16"/>. vyaktinyan· patmu riṁ ka:ṇṭabhu, Ikaṁ vindvaneṁ kaṇṭamula:, ya maha:praṇava Ika:, 
+         <lb n="17"/>Umiṅsor sumuṁsaṁ riṁ lariṁ hr̥daya: ṅadəg·, laṭa:praṇava Om̐ ka:ra,<note type="image"/>
+         <lb n="18"/>ma:ḍya ya rumiṇḍuhur paranya, Ayva tan prayatna, pan tan dadi pinuraṁpuraṁ na:da:niran·,
+         <lb n="19"/>sanugraha saṁ hyaṁ kaśūnyan· juga: tūtakna paraniramput·, tka: Iriṅən·, yan mukṣa
+         <lb n="20"/>ṅaḍaḥ mvaṁ riṅ ūrdḍa:, tan pama:rgga kunaṁ||
+         <lb n="21"/>||nihan vaṁ janma rahasya, kayatnakna ka:laniṁ roga saṅsara, bodḍa
+         <lb n="21"/>pra:ptaviḍi, sḍaṅiṅ hurip· haṅəntakəntak·, keṅətakna pasūknya ṅke yya:rvakta, suru
+      </ab></div>
+           <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
+
+     		</body>
+  </text>
+</TEI>

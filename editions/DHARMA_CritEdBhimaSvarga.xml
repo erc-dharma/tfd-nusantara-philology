@@ -2,19 +2,14 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="bhimaSvarga" type="edition">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="bhimaSvarga">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Bhīma Svarga</title>
-                <editor>
-                    <name>Aditia Gunawan</name>
-                </editor>
+                <title>Bhīma Svarga</title>            
                 <respStmt>
-                    <!-- repeat the respStmt when necessary -->
-                    <resp>creation of the file</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:adgu">
+                    <resp>Author of the digital edition</resp>
+                        <persName ref="part:adgu">
                         <name>Aditia Gunawan</name>
                     </persName>
                 </respStmt>
@@ -165,80 +160,37 @@
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <!-- Part mandatory -->
-                <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-                <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+                <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
             </projectDesc>
-            <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <editorialDecl>        
                 <correction>
                     <p/>
                 </correction>
                 <normalization>
                     <p/>
                 </normalization>
-                <punctuation>
-                    <p/>
-                </punctuation>
                 <interpretation>
-                    <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+                    <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.
+                    </p> 
                 </interpretation>
             </editorialDecl>
             <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
                 <p/>
-            </samplingDecl>
-            <schemaRef type="guide" key=" EGCv01" url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-            <!-- Will need to be updated once a more official realase is done -->
-            
-            <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-			
-			Note that the current by default behaviour is set on parallel-segmentation -->
-            <variantEncoding method="parallel-segmentation" location="internal"/>
-            <!-- Part mandatory -->
-            <listPrefixDef>
-                <prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-                    <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-                </prefixDef>
-                <prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-                    <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-                </prefixDef>
-                <prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-                    <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-                </prefixDef>
-                <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-                    <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-                </prefixDef>
-                <prefixDef ident="maturity" matchPattern="(0-9]+)" replacementPattern="tba">
-                    <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-                </prefixDef>
-                <prefixDef ident="cal" matchPattern="([\w]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-                    <p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p></prefixDef>
-            </listPrefixDef>
+            </samplingDecl> 
         </encodingDesc>
         <profileDesc>
             <langUsage>
                 <language ident="san-Latn">Sanskrit, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
             </langUsage>
-            <textClass>
-                <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-                    <term/>
-                    <!-- Ignore this element for the time being. -->
-                </keywords>
-            </textClass>
+            
         </profileDesc>
         <revisionDesc>   
             <change who="part:axja" when="2021-12-27" status="draft">transformation from tex to TEI</change>
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve" xml:lang="kaw-Latn">
-		<body>
-    <div>
+    <text xml:space="preserve">
+		<body><div type="edition" xml:lang="kaw-Latn">
 <p><app><lem type="norm">oṁ avighnam astu</lem><rdg wit="#A">// Ø // o<unclear>ṁ</unclear> avignam as<unclear>tu</unclear></rdg><rdg wit="#B">//  ba // <g type="symbol" subtype="danda"/>Ø<g type="symbol" subtype="danda"/> - oṁ me // /// Ø<g type="symbol" subtype="danda"/> oṁ avignәm astu nama sidәm<g type="symbol" subtype="danda"/>  Ø <g type="symbol" subtype="danda"/> Ø</rdg><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">oṁ avignamastu</rdg></app>.</p>
         
 <p><app><lem type="norm">hana</lem><rdg wit="#A #B">ana</rdg><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q"><gap reason="omitted"/></rdg></app> sira 
@@ -601,7 +553,7 @@ dak varah <app><lem wit="#A #B #C">ta kita guru</lem><rdg wit="#Q">kita</rdg></a
 </p>
 
 <p>
-<app><lem type="norm">aḍoh</lem><rdg wit="#A">ado</rdg><rdg wit="#B">advah</rdg><rdg wit="#C"><gap reason="lost" unit="character" quantity="1"/>dva</rdg><rdg wit="#Q">aduh</rdg></app> <app><lem wit="#Q">bhīma</lem><rdg wit="#A #B #C"> bima</rdg></app>, <app><lem wit="#A #B #C">denta</lem><rdg wit="#Q">demu</rdg></app> <app><lem type="norm">cūrṇa</lem><rdg wit="#A">carna</rdg><rdg wit="#B">curna</rdg><rdg wit="#C">cur</rdg><rdg wit="#Q">cūrṇna</rdg></app> <app><lem wit="#B #Q">kaṅ pustaka</lem><rdg wit="#A">si kaṅ pustaka</rdg><rdg wit="#C">si pustaka</rdg></app>, <app><lem type="norm">kapūhan</lem><rdg wit="#A #B #Q"> kapuhan</rdg><rdg wit="#C">kapuḥhan</rdg></app> aku <app><lem wit="#Q">bhīma</lem><rdg wit="#A #B #C"> bima</rdg></app>, <app><lem wit="#B">kva</lem><rdg wit="#A #C"> ko</rdg><rdg wit="#Q">denta</rdg></app> <app><lem wit="#A #B">vani</lem><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">vnaṅ</rdg></app> <app><lem type="emn">aṅlәbur</lem><rdg wit="#A #B #C #Q"> halәbur</rdg></app> <app><lem wit="#A #B #C">pustaka</lem><rdg wit="#Q">kaṅ puṣṭaka</rdg></app>, tan <app><lem type="emn">katamana</lem><rdg wit="#A">kataman</rdg><rdg wit="#B">kaman</rdg><witDetail wit="#B" type="cc"/><rdg wit="#B #C"> kataman</rdg><witDetail wit="#B" type="pc"/> <rdg wit="#Q">kamalan</rdg></app> <app><lem wit="#A #B #C">roga</lem><rdg wit="#Q">lara: rogha:</rdg></app>.
+<app><lem type="norm">aḍoh</lem><rdg wit="#A">ado</rdg><rdg wit="#B">advah</rdg><rdg wit="#C"><gap reason="lost" unit="character" quantity="1"/>dva</rdg><rdg wit="#Q">aduh</rdg></app> <app><lem wit="#Q">bhīma</lem><rdg wit="#A #B #C"> bima</rdg></app>, <app><lem wit="#A #B #C">denta</lem><rdg wit="#Q">demu</rdg></app> <app><lem type="norm">cūrṇa</lem><rdg wit="#A">carna</rdg><rdg wit="#B">curna</rdg><rdg wit="#C">cur</rdg><rdg wit="#Q">cūrṇna</rdg></app> <app><lem wit="#B #Q">kaṅ pustaka</lem><rdg wit="#A">si kaṅ pustaka</rdg><rdg wit="#C">si pustaka</rdg></app>, <app><lem type="norm">kapūhan</lem><rdg wit="#A #B #Q"> kapuhan</rdg><rdg wit="#C">kapuḥhan</rdg></app> aku <app><lem wit="#Q">bhīma</lem><rdg wit="#A #B #C"> bima</rdg></app>, <app><lem wit="#B">kva</lem><rdg wit="#A #C"> ko</rdg><rdg wit="#Q">denta</rdg></app> <app><lem wit="#A #B">vani</lem><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">vnaṅ</rdg></app> <app><lem type="emn">aṅlәbur</lem><rdg wit="#A #B #C #Q"> halәbur</rdg></app> <app><lem wit="#A #B #C">pustaka</lem><rdg wit="#Q">kaṅ puṣṭaka</rdg></app>, tan <app><lem type="emn">katamana</lem><rdg wit="#A">kataman</rdg><rdg wit="#B">kaman</rdg><witDetail wit="#B" type="ac"/><rdg wit="#B #C"> kataman</rdg><witDetail wit="#B" type="pc"/> <rdg wit="#Q">kamalan</rdg></app> <app><lem wit="#A #B #C">roga</lem><rdg wit="#Q">lara: rogha:</rdg></app>.
 </p>
 <listApp type="parallels"><app>
     <lem>tan katamana roga</lem>
@@ -1934,7 +1886,20 @@ lah guru, <app><lem type="norm">aṣṭa araniṅ vvavvalu</lem><rdg wit="#A">as
 <p>
 <app><lem type="norm">oṁkāra namah śivāya</lem><rdg wit="#A">oṁkara nama sivaya</rdg><rdg wit="#B">oṁkara na<unclear>masi</unclear>hvaya</rdg><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">omka:ra na:ma śivaya:</rdg></app> <app><lem type="norm">sa bā ta a ī</lem><rdg wit="#A">sa ba ta a i</rdg><rdg wit="#B">sa ba ta a iṅ</rdg><rdg wit="#C"><gap reason="lost"/></rdg><rdg wit="#Q">sa ba ta a i na:ma śivaya:</rdg></app>.
 </p>
+
 </div>
-</body>
+		    <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                            
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>                    			
+      </div>
+		</body>
 	</text>
 </TEI>

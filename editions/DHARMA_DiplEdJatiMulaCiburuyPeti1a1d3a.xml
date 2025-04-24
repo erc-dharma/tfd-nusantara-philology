@@ -1,18 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="jatiMulaCiburuyPeti1a1d3a">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Jati Mula (Ciburuy Peti 1a, 1d, &amp; 3a)</title>
-            <title type="sub">Digital Diplomatic Edition of Jati Mula (Ciburuy)</title>
-            <editor ref="part:ilnu">
-               <name>Ilham Nurwansah</name>              
-            </editor>
+            <title>Jati Mula (Ciburuy Peti 1a, 1d, &amp; 3a)</title>
+            <!--<title type="sub">Digital Diplomatic Edition of Jati Mula (Ciburuy)</title>-->
             <respStmt>
-               <resp>intellectual authorship of edition</resp>
+               <resp>Author of the digital edition</resp>
                <persName ref="part:ilnu">
                   <name>Ilham Nurwansah</name>
                </persName>
@@ -31,6 +28,11 @@
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
                   <settlement>Garut</settlement>
@@ -59,58 +61,44 @@
                   <p>To be checked later.</p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
          </projectDesc>
-         <editorialDecl>
-            <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+         <editorialDecl>        
             <correction>
                <p/>
             </correction>
             <normalization>
                <p/>
             </normalization>
-            <punctuation>
+            <interpretation>
                <p/>
-            </punctuation>
+            </interpretation>
          </editorialDecl>
          <samplingDecl>
-            <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
             <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-			
-			Note that the current by default behaviour is set on parallel-segmentation -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
+         </samplingDecl>    
       </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="osn-Latn">Old Sundanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-               <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2022-12-13" status="draft">Transformation from docx to xml</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="osn-Latn"><!-- update the language code -->
+   <text xml:space="preserve"><!-- update the language code -->
       <body>
          <!--<p>Transliteration of Jatimula</p>
          <p>from the collection of Ciburuy Peti 1a, 1d, &amp; 3a</p>-->
-         <ab>
+         <div type="edition" xml:lang="osn-Latn">
+            <ab>
          <!-- 280_Peti3a_KrpkcbrXIII_21 &lt;r33&gt; -->
          <pb n="33r"/>
             <lb n="1"/>sәja hatә nu tihәla, midi susaḥ ti kahanan· sugan· vaya nu dipisuka sadea, atәn· baritәn· pideqәn· sugan· vaya nu dipika L̥vaḥ <gap reason="lost" unit="character" quantity="2"/> 
@@ -219,7 +207,7 @@
             <lb n="4"/>n· ja lu<add place="below">pu</add>t· hatә katuduḥhan· na kahan·nan· ja luput· bvana, hatә <add place="below">na kahan·nan·</add> na kahan·nan· hatә luput· mana hatә namana, jati mana b<unclear>vana mana</unclear>, ha 
          
          <!-- 280_Peti1a_Krpk19_8  v3 -->
-         <pb n="3v"/><fw n="32">32</fw>
+         <pb n="3v"/><fw n="3v"><num value="32">32</num></fw>
             <lb n="1"/>tә ja <add place="below">ha</add>tә katuduḥhan· tan· kәna dibasaAn· tan· kәna dinamaAn· tan· kәna diṅaran·nan· Ø ñatu dayәḥhan·nan· nu <unclear>lu<add place="below">pu</add>t·</unclear> t<unclear>i</unclear> puhu
             <lb n="2"/>n· tan· kәna, dituduḥ ja ni ñiqәn· tan· pakatuduḥ, ja nu ñiqәn· tan· panama, ja nu ñiqәn· tan· ṅaran· ja nu ñiqәn· luput· ja nu ñiqәn· 
             <lb n="3"/>puhun· ja nu ñiqәn· luput· mana, ja nu ñiqәn· jati mana, ja nu ñi<space type="binding-hole"/>qәn· tan· hana, ja nu ñiqәn· nis·kala, ja <add place="below">nu</add> ñiqәn· tan· pakatu  
@@ -506,7 +494,22 @@
             <lb n="3"/>l· ku visesa, tan· katәmu, ku alit· Acityi tan· ka<space type="binding-hole"/>tәmu, ku l̥ñәp· ku l̥ñәp· ku l̥ṅis· ku nis· ku l̥pas· ku 
             <lb n="4"/>mokṣaḥ ku nirmala, tan· katәmu , Ø, mo ma ku jatina, lamun· vaya nu Iyat·na di puhun· jatiniṁ bәnәr, di maneḥ pun· Ø maka nis·kala  
          
-            </ab>
-      </body>
+            </ab></div>
+          <div type="translation">
+              <p/>
+          </div>
+          <div type="commentary">
+               <p/>                              
+            </div>
+          <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 
+         
+
+       		</body>
    </text>
 </TEI>

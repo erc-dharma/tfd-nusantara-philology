@@ -3,9 +3,8 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="jinarthiprakrti"
-     xml:lang="eng"
-     type="edition">
+   xml:id="jinarthiPrakrti"
+     xml:lang="eng">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,18 +12,10 @@
             <!--	<funder><!-\- to be filled in? !-\-></funder>
       	<principal><persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName></principal>
       	<principal><persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName></principal>-->
-            <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/" xml:id="part:argr">Arlo Griffiths</persName>
-               <resp>Typed the text (2011)</resp>
-            </respStmt>
-            <respStmt>
-               <persName ref="https://viaf.org/viaf/11026260/" xml:id="part:argr">Arlo Griffiths</persName>
-               <resp>Converted the text to TEI format</resp>
-            </respStmt>
-         </titleStmt>
+                     </titleStmt>
          <publicationStmt>
             <authority/>
-            <availability status="restricted">
+            <availability>
                <p><!-- add whatever license you like: !--></p>
             </availability>
             <date>2018</date>
@@ -34,7 +25,7 @@
          <sourceDesc>
       <!--	Based on the edition by J. Schoterman & A. Teeuw in their article ``Jinārthiprakṛti: A Monk's ABC'', in Sulastin Sutrisno, Darusuprapta & Sudaryanto (eds.), Bahasa-Sastra-Budaya: Ratna Manikam Untaian Persembahan Kepada Prof. Dr. P.J. Zoetmulder, Yogyakarta, Gadjah Mada University Press, 1985, 202-239.-->
             <listWit>
-               <witness>
+               <witness xml:id="">
                   <analytic>
                      <author>
                         <name>
@@ -72,7 +63,23 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <p>Typed by <persName>Arlo Griffiths</persName>, with normalization of the spelling of Sanskrit words/names, substitution of ṅ for ng, h for ḥ and v for w.</p>
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+         </projectDesc>
+         <editorialDecl>        
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p>Typed by <persName>Arlo Griffiths</persName>, with normalization of the spelling of Sanskrit words/names, substitution of ṅ for ng, h for ḥ and v for w.</p>            
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>    
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -85,8 +92,8 @@
          <change when="2024-07-22" who="part:axja">Transform to DHARMA</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:lang="kaw-Latn">
-      <body>
+   <text xml:space="preserve">
+      <body><div type="edition" xml:lang="kaw-Latn">
          <div type="canto" n="1" met="śārdūlavikrīḍita">
             <lg n="1">
                <l n="a">nāhan lakṣaṇa saṅ tathāgata mahāyāna pva yan kavruhi |</l>
@@ -329,6 +336,22 @@
          </div>
          <div>
             <ab type="colophon">jinārthiprakr̥ti || pralambaṅ kamahāyānin  ||</ab>
+         </div>
+         
+         
+      </div> 	
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+            <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>                             
+         </div>
+ 
+         <div type="bibliography">
+            <p>Arlo Griffiths typed the text (2011) and converted it to TEI format</p>
+            <listBibl> 			
+               <bibl/> 			
+            </listBibl>
          </div>
       </body>
    </text>

@@ -2,27 +2,19 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:lang="eng"
-     xml:id="id"
-     type="edition"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="devaSasana"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Devaśāsana</title>
-            <title type="sub">Digital Critical Edition of an Old Javanese Code of Conduct</title>
+            <title>Devaśāsana</title>
+            <!--	<title type="sub">Digital Critical Edition of an Old Javanese Code of Conduct</title>
+-->
             <!-- fill in the subtitle if necessary -->
-            <editor ref="part:argr">
-               <forename>Arlo</forename>
-               <surname>Griffiths</surname>
-            </editor>
             <respStmt>
-					<!-- repeat the respStmt when necessary -->
-               <resp>creation of the file</resp>
-               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-               <persName ref="part:mime">
-                  <forename>Michaël</forename>
-                  <surname>Meyer</surname>
+               <resp>Author of the digital edition</resp>
+               <persName ref="part:argr">
+                  <forename>Arlo</forename>
+                  <surname>Griffiths</surname>
                </persName>
             </respStmt>
          </titleStmt>
@@ -125,6 +117,9 @@
 									<!-- Here you can give a physical description of the manuscript in prose-->
                            <p>Paper manuscript. Transcription in Roman script. Apparently written ....</p>
                         </objectDesc>
+                        <handDesc>
+                           <p/>
+                        </handDesc>
                      </physDesc>
                      <history>
 								<!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
@@ -137,86 +132,23 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-				<!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
          </projectDesc>
          <editorialDecl>
-				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
             <correction>
                <p/>
             </correction>
             <normalization>
                <p/>
             </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
             <interpretation>
                <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
             </interpretation>
          </editorialDecl>
-         <!--<refsDecl xml:id="ASLREF">
-				<cRefPattern matchPattern="(\S+) ([^.]+)\.(.*)"
-					replacementPattern="#xpath(//div1[@n='$1']/div2/[@n='$2']//lb[@n='$3'])">
-					<p>A reference is created by assembling the following, in the reverse order as that
-						listed here: <list>
-							<item>the <att>n</att> value of the preceding <gi>lb</gi>
-							</item>
-							<item>a period</item>
-							<item>the <att>n</att> value of the ancestor <gi>div2</gi>
-							</item>
-							<item>a space</item>
-							<item>the <att>n</att> value of the parent <gi>div1</gi>
-							</item>
-						</list>
-					</p>
-				</cRefPattern>
-			</refsDecl>-->
          <samplingDecl>
-				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
             <p/>
          </samplingDecl>
-         <schemaRef type="guide"
-                    key=" EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
-			<variantEncoding method="parallel-segmentation" location="internal"/>
-			<variantEncoding method="location-referenced" location="internal"/>.
-			
-			Note that the current by default behaviour is set on parallel-segmentation -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturity" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-            <prefixDef ident="cal"
-                       matchPattern="([\w]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-               <p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
-            </prefixDef>
-         </listPrefixDef>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -224,13 +156,6 @@
             <language ident="san-Latn">Sanskrit, romanized</language>
             <language ident="kaw-Latn">Old Javanese, romanized</language>
          </langUsage>
-         <textClass>
-            <keywords>
-					<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
       </profileDesc>
       <revisionDesc>
          <change who="part:argr" when="2023-09-13" status="draft">Started editing the text</change>
@@ -238,11 +163,10 @@
          <change who="part:tilu" when="2023-08-26">Digital transcription from typescript, normalized, but not fully checked</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
-<body>
-			<div>
+   <text xml:space="preserve">
+<body><div type="edition" xml:lang="kaw-Latn">
 				<ab type="invocation"><app><lem wit="#ms5056">avighnam astu</lem><rdg wit="#ms9534">namo buddhāya</rdg></app>.</ab>
-			</div>
+			
 <div>
 <p n="1">nihan pinakādiśāsananira saṅ paṇḍita, kavruhakəna de saṅ maharṣi kabeh, duk sira tan hana r̥ṣi, tan hana śiva, tan hana dharma, <app><lem wit="#5056">tan hana rāja, tan hana bāyu, tan hana śabda, tan hana ākāśa, tan hana pr̥thivī, tan hana dibya, tan hana vulan, tan hana teja, tan hana devata,</lem><note type="altLem">tan hana rāja, ..., tan hana devata,</note><rdg wit="#ms9534">tan hana hakaśa, tan hana bayu, tan hana hapah, tan hana teja, tan ana pr̥tivi, tan hana haditya, tan hana hulan, tan ana devata</rdg></app> <app><lem wit="#ms5056">avaṅ aṅuvuṅ-uvuṅ</lem><rdg wit="#ms9534">havaṅ-havaṅ, huvuṅ-huvuṅ</rdg></app>, tan <app><lem wit="#ms5056">hananiṅ</lem><rdg wit="#ms9534">hana</rdg><note>Koravāśrama: maṅuluvuṅ ikaṅ bhuvana, tan hananiṅ sarva-sarva tan papramāṇa ikaṅ jagat, apan tan hananiṅ sarva-sarva tumuvuh.</note></app> sarva-sarva, 
 	duk sirenaran suṅy aṅrva-rva, tan hananiṅ ucap samāna.</p>
@@ -347,9 +271,9 @@ na devā na ca dikpālā na vedā na guruḥ kvacit || 36 ||
 	mari saṅśaya, mari lara, <app><lem wit="#ms5056">mari dharma</lem><rdg wit="#ms9534">maharṣa</rdg></app>,
 	 buddhi sukha sapaniṣkara, apan sira juga <app><lem wit="#ms9534">pinakṣanira</lem><rdg wit="#ms5056">panakṣanira</rdg></app>.</p>
 <p>sira saṅ mārgavāsa, aṅanti təpiniṅ havan, aṅilaṅakən jagat, añjag-jagi prāṇaniṅ aprāṇa, nistura<!-- 5056 prāṇanistura eye-skip  --> riṅ śabda, 
-	tan <app><lem wit="ms5056">māndika</lem><rdg wit="#ms9534">murdika</rdg></app> ri paṅrəṅə̄, 
+	tan <app><lem wit="#ms5056">māndika</lem><rdg wit="#ms9534">murdika</rdg></app> ri paṅrəṅə̄, 
 	tan sukha-duḥkha riṅ panon.</p>
-<p>sira saṅ śūnyavāsa, <app><lem type="emn">lupa rāga, tan iṅət bhūṣaṇa</lem><rdg wit="#ms5056">luṣa rāga, tan iṅi buṣaṇā</rdg><rdg wit="ms9534">mpu sarata, tan kəliriṅ bhuvana,</rdg></app> <app><lem wit="emn">hīnaporuṣa</lem><rdg wit="#ms5056">ināpuruṣa</rdg><rdg wit="ms9534">ginapuruṣa</rdg></app>, <app><lem wit="#ms9534">nirvəlas-sih anonton</lem><rdg wit="#ms5056">nivlas· | nekatvan·</rdg></app>.</p>
+<p>sira saṅ śūnyavāsa, <app><lem type="emn">lupa rāga, tan iṅət bhūṣaṇa</lem><rdg wit="#ms5056">luṣa rāga, tan iṅi buṣaṇā</rdg><rdg wit="#ms9534">mpu sarata, tan kəliriṅ bhuvana,</rdg></app> <app><lem type="emn">hīnaporuṣa</lem><rdg wit="#ms5056">ināpuruṣa</rdg><rdg wit="#ms9534">ginapuruṣa</rdg></app>, <app><lem wit="#ms9534">nirvəlas-sih anonton</lem><rdg wit="#ms5056">nivlas· | nekatvan·</rdg></app>.</p>
 <p>saṅ toyavāsa pva sira, makəmiṅ<!-- 5056 makmi — emend makəmita ?  --> bañu, niraṅga,<!-- reverse order 5056, with nirāga --> nirprāṇa, nirbhīta masadya, tan panahur iṅ pati.</p>
 <p>gavenira saṅ caturāśrama, vasi,<!-- 5056 adds bāni/ñãni --> makādi saṅ yogīśvara, sira ta pinakacaturpramāṇa<!-- 5056 pinakacaturāśrama -->, 
 	apa ta ulahira. 
@@ -359,12 +283,12 @@ na devā na ca dikpālā na vedā na guruḥ kvacit || 36 ||
 <p>jñāni<!-- 5056 only ni --> pva sira, kumavruhakəna saṅ hyaṅ riṅ vanavasa<!-- 5056 rivaṣa-->, aṅlugas jāti śāsananira, riṅ eṅaniṅ taya<!-- 5056 riṅ eṅā riṅ-->, umayaśaa riṅ śūnya, niradaha riṅ guṇa, rakṣaka eṅ patapan, məliṅa riṅ kapuruṣan<!-- 5056 heliṅa riṅ kapuruṣanya -->.</p>
 <p>yogīśvara pva sira, sira saṅ deva guru, saṅ manak marabi, sira ta pinakagurvaniṅ sayavadvīpa, 
 	sira ta umulahakən kasukhaniṅ jagat, 
-	sira ta vehana aṅgugonana saṅ hyaṅ dharma vanavāsaha<!-- 5056 saṅ hyaṅ dharmaśāsana -->, mvaṅ <app><lem wit="#ms5056">caturvidyā</lem><rdg wit="9534">caturvitva</rdg></app>, mvaṅ saṅ hyaṅ arkagatra, pādakaniṅ śīlatattva parabikrama<!-- 5056 parātrikrama-->.</p>
+	sira ta vehana aṅgugonana saṅ hyaṅ dharma vanavāsaha<!-- 5056 saṅ hyaṅ dharmaśāsana -->, mvaṅ <app><lem wit="#ms5056">caturvidyā</lem><rdg wit="#ms9534">caturvitva</rdg></app>, mvaṅ saṅ hyaṅ arkagatra, pādakaniṅ śīlatattva parabikrama<!-- 5056 parātrikrama-->.</p>
 <p>sira teki kabeh pahayuhən teki<!-- 5056 payunən, no rep. of teki --> rumuhun de saṅ prabhu, kəmitən tapanira deniṅ vadva haji, apan ika tan patrinaguṇa<!-- 5056 -śaña-->, sadūman mariṅ saṅ prabhu, yan vala śīlanya, malapa sādhuman mariṅ saṅ prabhu, ṅūni-ṅūni aṅalapa turgniṅ ahurya<!-- 5056 hurṇnaṅahur -->, ya teka tananiruktiniṅ tapa yan maṅkana.</p>
 <p>kunaṅ pva sira saṅ paramārthayogi, tusniṅ prabhu lumaku viku, manakiṅ pavikvanira, sira tan vənaṅ<!-- 5056 pavikvanira kumavənaṅ -->.</p>
 <p>kunaṅ pva sira saṅ yogi, kulavaṅśa kaḍaṅ haji, kula-kula<!-- 5056 kula-kala-->, lumaku viku, mano-manak riṅ<!-- 5056 manakiṅ --> patapan, anaknya vənaṅ.</p>
 <p>kunaṅ <app><lem wit="#ms5056">pva</lem><rdg wit="#ms9534">ta</rdg></app> sira saṅ <pb edRef="#ms5056" n="3v"/> paramārtha yogīśvara, sira saṅ tusniṅ devaguru, manak <app><lem wit="#ms5056">ta</lem><rdg wit="#ms9534"><gap reason="omitted"/></rdg></app> sira riṅ patapan, sira ta vənaṅ <app><lem wit="#ms5056">riṅ</lem></app> sapaniṣkāra, tan vicāranən deniṅ sarāt, apan sira vənaṅ riṅ sapaniskāra, saṅ yogīśvara ṅaranira.</p>
-<p>kunaṅ sira saṅ pinakādi tusniṅ prabhu lumaku viku, manak sira riṅ patapan, <app><lem wit="#ms5056">sirāta</lem><rdg wit="ms9534">sira taṅ</rdg></app> pinakayogīśvaraa.</p>
+<p>kunaṅ sira saṅ pinakādi tusniṅ prabhu lumaku viku, manak sira riṅ patapan, <app><lem wit="#ms5056">sirāta</lem><rdg wit="#ms9534">sira taṅ</rdg></app> pinakayogīśvaraa.</p>
 <p>sira saṅ <app><lem wit="#ms9534">ləmbu guntuṅ</lem><rdg wit="#ms5056">aləmbu guntur</rdg></app>, yen devagurva<!-- 5056 devaguru -->, sira ta<!-- om 5056--> saṅ ādiyogīśvara ṅaranira, sira ta kumavənaṅ riṅ jagat, sapaladi<!-- 5056 sapāladi — em. saphalādi?--> guṇavīrya<!-- 5056 varyya-->, sabavalakṣaṇanira, ṅuniveh huvus samitra prabhu, sira ta viku śuddhajāti<!-- 5056 sira tāviśūddhagati --> ṅaranira, sira ta siṅgih paṅulahakən<!-- 5056 -kna--> yajña riṅ kasukhan.</p>
 <p>[8r] matapakana<!-- 5056 matampatana --> ləmbu putih<!-- 5056 om. putih-->, kəbo bule, palaṅka binubut, apatarana piṅul, apayuṅ joṅ atumpaṅ pitu, magəlaṅ sarpasa pavahan gadiṅ<!-- 5056 maglaṁ mapahavahan gaḍiṁ-->, ahulur<!-- 5056 aluhur--> talya, makajaṅ maravis, matomparaa, <app><lem wit="#ms9534">magoṅsyaṅ</lem><rdg wit="#ms5056"><gap reason="omitted"/></rdg></app>, mavida-vida, maciliriṅ, mapatarana, madamaṅamana<!-- 5056 mapahana matapantamana-->, magoṅ, marəgoṅ, majaladi, mapadi<!-- 5056 mapāpadi-->, makārya<!-- 5056 matāryya-->murya, masalimput, mapadaran, magəlaṅ kana, pamañca ṅahakəna<!-- 5056 pamacaḥkna -->, mavidanaa, manuliṅakəna, mavada uyun<!-- 5056 hulun-->, manaṅkva<!-- 5056 manaṅgaha-->, masampir-sampir, marismoṅ-rismoṅ risa.</p>
 <p>ṅūni manak manik, saṅ yogīśvara vənaṅ madodvat agiriṅsiṅ, linu beṅ luvih, mañjəti, cinde, cakomadəvi, raranden, piṅul, vanagraha, nagapuspa, aṅaṅgoakandaṅ tan pavaṅgah ri paṅaṅgonira vənaṅ, kavənaṅ-vənaṅira kabeh, vənaṅ saṅ yogīśvara aṅaṅgoa tan pasambatsaraha sakiṅ kanagara bhūmi, apan saṅ yogīśvara kabeh vənaṅ.</p>
@@ -456,8 +380,21 @@ na devā na ca dikpālā na vedā na guruḥ kvacit || 36 ||
 <p>kunaṅ taṅ sinəṅguh tuhu viku pavitra, pāpat, lvirnya: grəhasta, bikṣuka, brahmacari, vanagrasta. ya taṅgugvana devaśāsana makādi r̥ṣiśāsana, saṅ hyaṅ rājapati gondala, hayva ta kemutan.</p>
 
 			</div>
-			    <!--<xi:include href="a.xml" xpointer="a1"
-        xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
-		</body>
+			   		</div>
+	<div type="translation">
+  <p/>
+ </div>
+ <div type="commentary">
+               <p/>                     
+            </div>
+
+ <div type="bibliography"> 				
+  <p/> 				
+  <listBibl> 				
+   <bibl/> 			
+  </listBibl>            
+   			
+ </div> 		
+</body>
 	</text>
 </TEI>
