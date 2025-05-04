@@ -8,57 +8,36 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Jinārthiprakr̥ti</title>
-            <!--	<funder><!-\- to be filled in? !-\-></funder>
-      	<principal><persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName></principal>
-      	<principal><persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName></principal>-->
-                     </titleStmt>
+            <title>Jinārthiprakr̥ti: Digital Edition</title>
+            <respStmt>
+               <resp>Author of the digital edition</resp>
+             <persName ref="part:argr">
+               <forename>Arlo</forename>
+               <surname>Griffiths</surname>
+            </persName>
+         </respStmt>
+         </titleStmt>
          <publicationStmt>
-            <authority/>
+            <authority>DHARMA</authority>
+            <pubPlace>Jakarta</pubPlace>
+            <idno type="filename">DHARMA_CritEdSvayambhu</idno>
             <availability>
-               <p><!-- add whatever license you like: !--></p>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+               </licence>
             </availability>
-            <date>2018</date>
-            <publisher><!-- EFEO/EPHE --></publisher>
-            <pubPlace><!-- Paris --></pubPlace>
+            <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
       <!--	Based on the edition by J. Schoterman & A. Teeuw in their article ``Jinārthiprakṛti: A Monk's ABC'', in Sulastin Sutrisno, Darusuprapta & Sudaryanto (eds.), Bahasa-Sastra-Budaya: Ratna Manikam Untaian Persembahan Kepada Prof. Dr. P.J. Zoetmulder, Yogyakarta, Gadjah Mada University Press, 1985, 202-239.-->
             <listWit>
-               <witness xml:id="">
-                  <analytic>
-                     <author>
-                        <name>
-                           <forename>J.</forename>
-                           <surname>Schoterman</surname>
-                        </name>
-                        <name>
-                           <forename>A.</forename>
-                           <surname>Teeuw</surname>
-                        </name>
-                     </author>
-                     <title level="a">Jinārthiprakṛti: A Monk's ABC</title>
-                  </analytic>
-                  <monogr>
-                     <title level="m">Bahasa, Sastra, Budaya: Ratna Manikam Untaian Persembahan Kepada Prof. Dr. P.J. Zoetmulder</title>
-                     <idno type="ISBN">(none)</idno>
-                     <editor>
-                        <name>Sulastin Sutrisno</name>
-                     </editor>
-                     <editor>
-                        <name>Darusuprapta</name>
-                     </editor>
-                     <editor>
-                        <name>Sudaryanto</name>
-                     </editor>
-                     <imprint>
-                        <publisher>Gadjah Mada University Press</publisher>
-                        <date when="1985">1985</date>
-                        <pubPlace>Yogyakarta</pubPlace>
-                     </imprint>
-                     <biblScope unit="pp" from="202" to="239">202–239</biblScope>
-                  </monogr>
-               </witness>
+               <witness xml:id="edst">
+						<abbr type="siglum">Ed<hi rend="superscript">ST</hi></abbr>
+						<bibl>
+							<ptr target="bib:Schoterman+Teeuw1985_01"/>
+						</bibl>
+					</witness>
             </listWit>
          </sourceDesc>
       </fileDesc>
@@ -71,11 +50,12 @@
                <p/>
             </correction>
             <normalization>
-               <p>Typed by <persName>Arlo Griffiths</persName>, with normalization of the spelling of Sanskrit words/names, substitution of ṅ for ng, h for ḥ and v for w.</p>            
+               <p>Normalization of the spelling of Sanskrit words/names, substitution of ṅ for ng, h for ḥ and v for w.</p>            
             </normalization>
             <interpretation>
-               <p/>
-            </interpretation>
+			      <p><!-- The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.
+					 --></p>
+               </interpretation>
          </editorialDecl>
          <samplingDecl>
             <p/>
@@ -87,9 +67,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2025-05-04" who="part:argr">Revised TEI encoding</change>
+         <change when="2024-07-22" who="part:axja">Transform to DHARMA</change>
          <change when="2018-05-16" who="part:argr">Initial TEI encoding</change>
          <change when="2018-05-16" who="part:argr">Modified language code from jav to kaw; small edits to text to confirm to README.</change>
-         <change when="2024-07-22" who="part:axja">Transform to DHARMA</change>
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve">
@@ -337,20 +318,16 @@
          <div>
             <ab type="colophon">jinārthiprakr̥ti || pralambaṅ kamahāyānin  ||</ab>
          </div>
-         
-         
       </div> 	
          <div type="translation">
             <p/>
          </div>
          <div type="commentary">
-            <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>                             
-         </div>
- 
+            <p/> </div>
          <div type="bibliography">
-            <p>Arlo Griffiths typed the text (2011) and converted it to TEI format</p>
+            <p>Edited by <bibl><ptr target="bib:Schoterman+Teeuw1985_01"/></bibl>. Arlo Griffiths typed the text (2011) and converted it to TEI format.</p>
             <listBibl> 			
-               <bibl/> 			
+               <bibl><ptr target="bib:Schoterman+Teeuw1985_01"/></bibl> 			
             </listBibl>
          </div>
       </body>
