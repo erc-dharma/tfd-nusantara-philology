@@ -3,32 +3,31 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Sabhāparva, Perpusnas L. 92</title>
+                <title>The Old Javanese Sabhāparva: Digital Diplomatic Edition of Perpusnas L. 92</title>
                 <respStmt>
                     <resp>Author of the digital edition</resp>
-                    <persName ref="part:nuha">
-                    <name>Nurmalia Habibah</name>
-                </persName></respStmt>
+                    <persName ref="part:argr">
+                        <forename>Arlo</forename>
+                        <surname>Griffiths</surname>
+                     </persName>
+                </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>DHARMA</authority>
-                <pubPlace>
-                    <!-- fill in here the place or places where the encoding has been done --> </pubPlace>
+                <pubPlace>Jakarta</pubPlace>
                 <idno type="filename">DHARMA_DiplEdSabhaparvaPerpusnasL092</idno>
                 <availability>
                     <licence target="https://creativecommons·org/licenses/by/4.0/">
                         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons·org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900,
                             Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by Nurmalia Habibah.</p> </licence>
+                        <p>Copyright (c) 2019-2025 by Arlo Griffiths.</p> </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <!-- One witness for each manuscript. Update the content -->
-                    <witness xml:id="fakeID">
-                        <!-- Give your witness an unique identifier -->
-                        <abbr type="siglum"></abbr>
+                    <witness xml:id="MS">
+                        <abbr type="MS"></abbr>
                 <msDesc>
                     <msIdentifier>
                         <settlement>Jakarta</settlement>
@@ -36,24 +35,18 @@
                         <repository>Lontar</repository>
                         <idno>L. 92</idno>
                     </msIdentifier>
-                    <msContents>
-                        <!-- the msContents isn't mandatory -->
-                        <!--<msItem>
-              <author>Śāntarakṣita</author>
-              <title>Vipañcitārthā</title>
-            </msItem>--> </msContents>
+                    <msContents/>
                     <physDesc>
                         <objectDesc>
-                            <!-- Here you can give a physical description of the manuscript in prose-->
-                            <p>Palm-leaf manuscript. 66 leaves in Buda script.</p>
+                            <p>Palm-leaf manuscript. 66 leaves in Merapi-Merbabu script.</p>
                         </objectDesc>
                         <handDesc>
-                          <p>the hand distinguishes two different forms of tarung, one having x height, the other extending significantly above x height, look at fol 60r image00120</p>
+                          <p>The hand distinguishes two different forms of tarung, one having x height, the other extending significantly above x height, look at fol 60r image00120</p>
                         </handDesc>
                     </physDesc>
                     <history>
                         <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>entered the BG collection in 18??</p>
+                        <p>Entered the BG collection in 18??</p>
                     </history>
                 </msDesc>
                     </witness>
@@ -90,7 +83,8 @@
     </teiHeader>
     <text xml:space="preserve">
        <body>
-<div type="edition" xml:lang="kaw-Latn"><ab><!-- beginning of diplomatic edition -->
+<div type="edition" xml:lang="kaw-Latn">
+    <ab><!-- beginning of diplomatic edition -->
   <pb n="1r"/><!-- 1 -->
 <!-- status: not yet checked -->
 <!-- image00124 and image00121 + file from the other photo folder -->
@@ -839,12 +833,9 @@
                <p/>                              
             </div>
            <div type="bibliography">
-               <p>Gregory and Anne Young  were given as author of the word doc</p>
-               <listBibl>
-				<bibl/><!-- one <bibl/> per item of primary bibliography. Every entry mentionned in apparatus  should hava a @n to declare its sigla -->
-			</listBibl>
+               <p>Manuscript contents analyzed in <bibl><ptr target="bib:Supomo2011_01"/></bibl>. The same scholkar shared with Arlo Griffiths an MSWord file containing his decipherment of the manuscript.<!-- Gregory and Anne Young  were given as author of the word doc--> The present diplomatic edition is based on the same, adapted to DHARMA transliteration and encoding norms, rechecked against the photogtaphs of the original manuscript.</p>
            <listBibl>
-              <bibl/><!-- one <bibl/> per item of secondary bibliography -->
+              <bibl><ptr target="bib:Supomo2011_01"/></bibl>
            </listBibl>
            </div>
        </body>
