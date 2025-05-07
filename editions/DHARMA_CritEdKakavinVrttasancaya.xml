@@ -6,30 +6,40 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Vr̥ttasañcaya</title>
-            <!--<funder>EFEO/EPHE (Université PSL)</funder>
-            <principal>
-               <persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName>
-            </principal>
-            <principal>
-               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
-            </principal>-->
-            
+         	<title>Vr̥ttasañcaya: Digital Edition</title>
+         	<respStmt>
+         		<resp>Author of the digital edition</resp>
+         		<persName ref="part:argr">
+         			<forename>Arlo</forename>
+         			<surname>Griffiths</surname>
+         		</persName>
+         	</respStmt>
          </titleStmt>
-         <publicationStmt>
-            <authority/>
-            <availability>
-               <p><!-- add whatever license you like: !--></p>
-            </availability>
-            <date>2018</date>
-            <publisher><!-- EFEO/EPHE --></publisher>
-            <pubPlace><!-- Paris --></pubPlace>
-         </publicationStmt>
-         <sourceDesc>
-            <p>
-	    <!-- ? !-->
-	</p>
-         </sourceDesc>
+      	<publicationStmt>
+      		<authority>DHARMA</authority>
+      		<pubPlace>Jakarta</pubPlace>
+      		<idno type="filename">DHARMA_CritEdKakavinVrttasancaya</idno>
+      		<availability>
+      		<licence target="https://creativecommons.org/licenses/by/4.0/">
+      		<p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+      		<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+      		</licence>
+      		</availability>
+      		<date from="2019" to="2025">2019-2025</date>
+      	</publicationStmt>
+      	<sourceDesc>
+   <!-- based on Kern, Johan Hendrik Caspar, ed. 1875. Wṛtta-sañćaya, oudjavaansch leerdicht over versbouw in Kawi-tekst en nederlandsche vertaling. Leiden: Brill.
+.-->
+      		<listWit>
+      			<witness xml:id="edk">
+      				<abbr type="siglum">Ed<hi rend="superscript">K</hi>
+      				</abbr>
+      				<bibl>
+      					<ptr target="bib:Kern1875_01"/>
+      				</bibl>
+      			</witness>
+      		</listWit>
+      	</sourceDesc>
       </fileDesc>
       <encodingDesc>
          <projectDesc>
@@ -56,13 +66,14 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-        <change when="2024-07-21" who="part:axja">Transform to DHARMA</change>
-         <change when="2018-06-04" who="part:anol">Initial TEI encoding</change>
+      	<change when="2015-05-07" who="part:argr">Modifications for complicance with EGC v2</change>
+        	<change when="2024-07-21" who="part:axja">Transform to DHARMA</change>
+        	<change when="2018-06-04" who="part:anol">Initial TEI encoding</change>
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve">
     <body><div type="edition" xml:lang="kaw-Latn">
-      <head> avignam astu |</head>
+      <head>avignam astu |</head>
       <lg n="1" met="sragdharā">
         <l n="a">saṅ hyaṅ vāgīśvararīndaḥ lihati satatabhaktiṅkvi jə̄ṅ dhātr̥devī |</l>
            <l n="b">pinriḥ riṅ citta muṅgviṅ sarasija ri daləmtvas lanenastavaṅku ||</l>
@@ -829,11 +840,11 @@
        <div type="commentary"><p/></div>
 
   <div type="bibliography">
-     <p>Arlo Griffiths typed the text (2011). Andrew Ollett converted the text to TEI format (2018).</p>
-<listBibl>
-				<bibl/>
-			</listBibl>
-           
+     <p>Edited by Kern (1875). Arlo Griffiths typed the text (2011). Andrew Ollett converted the text to TEI format (2018).</p>
+	<listBibl>
+	<bibl><ptr target="bib:Kern1875_01"/></bibl>
+	<bibl><ptr target="bib:Hunter2001_01"/></bibl>
+	</listBibl>
        </div>
 </body>
    </text>
