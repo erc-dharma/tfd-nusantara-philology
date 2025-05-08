@@ -10,70 +10,36 @@
             <author>Mpu Monaguṇa</author>
             <respStmt>
                <resp>Author of the digital edition</resp>
-               <!--<persName ref="part:anac">
-                  <forename>Andrea</forename>
-                  <surname>Acri</surname>
-               </persName>-->
                <persName ref="part:argr">
                   <forename>Arlo</forename>
                   <surname>Griffiths</surname>
                </persName>
             </respStmt>
          </titleStmt>
-         <publicationStmt>
-            <authority>DHARMA</authority>
-            <pubPlace>Paris, Jakarta</pubPlace>
-            <idno type="filename">DHARMA_CritEdKakavinSumanasantaka</idno>
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2024 by Arlo Griffiths.</p>
-               </licence>
-            </availability>
-            <date when="2018">2018</date>
-         </publicationStmt>
-         <sourceDesc>
-            <listWit>
-               <witness>
-                  <bibl>
-                     <editor>
-                        <name>
-                           <forename>Peter M.</forename>
-                           <surname>Worsley</surname>
-                        </name>
-                     </editor>
-                     <editor>
-                        <name>
-                           <forename>S.</forename>
-                           <surname>Supomo</surname>
-                        </name>
-                     </editor>
-                     <editor>
-                        <name>
-                           <forename>Thomas M.</forename>
-                           <surname>Hunter</surname>
-                        </name>
-                     </editor>
-                     <editor>
-                        <name>
-                           <forename>Margaret</forename>
-                           <surname>Fletcher</surname>
-                        </name>
-                     </editor>
-                     <title level="m">Mpu Monaguṇa’s Sumanasāntaka: An Old Javanese Epic Poem, Its Indian Source and Balinese Illustrations</title>
-                     <imprint>
-                        <publisher>Brill</publisher>
-                        <pubPlace>Leiden</pubPlace>
-                        <date when="2013">2013</date>
-                     </imprint>
-                  </bibl>
-                  <series>
-                     <title level="s">Bibliotheca Indonesica</title>
-                     <biblScope unit="vol">36</biblScope>
-                  </series>
-               </witness>
-            </listWit>
-         </sourceDesc>
+      	<publicationStmt>
+      		<authority>DHARMA</authority>
+      		<pubPlace>Jakarta</pubPlace>
+      		<idno type="filename">DHARMA_CritEdKakavinSumanasantaka</idno>
+      		<availability>
+      			<licence target="https://creativecommons.org/licenses/by/4.0/">
+      				<p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+      				<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+      			</licence>
+      		</availability>
+      		<date from="2019" to="2025">2019-2025</date>
+      	</publicationStmt>
+      	<sourceDesc>
+      		<!-- based on Worsley, Peter, Supomo Suryohudoyo, Thomas M. Hunter & Margaret Fletcher. 2013. Mpu Monaguṇa’s Sumanasāntaka: An Old Javanese Epic Poem, Its Indian Source and Balinese Illustrations. Bibliotheca Indonesica 36. Leiden: Brill. .-->
+      		<listWit>
+      			<witness xml:id="edw">
+      				<abbr type="siglum">Ed<hi rend="superscript">W</hi>
+      				</abbr>
+      				<bibl>
+      					<ptr target="bib:Worsley+al2013_01"/>
+      				</bibl>
+      			</witness>
+      		</listWit>
+      	</sourceDesc>
       </fileDesc>
       <encodingDesc>
          <projectDesc>
@@ -100,14 +66,15 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
+         <change when="2015-05-08" who="part:argr">Modifications for complicance with EGC v2</change>
          <change when="2024-07-21" who="part:axja">Transform to DHARMA</change>
          <change when="2018-06-04" who="part:anol">Initial TEI encoding</change>
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve">
       <body><div type="edition" xml:lang="kaw-Latn">
+	<ab type="invocation">avighnam astu</ab>
          <div n="1">
-            <head>avighnam astu</head>
             <!--  Jagaddhita   – – – |⏑ ⏑ – | ⏑ – ⏑ |⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ |– ⏑ – | ⏑ ⏓     !-->
             <lg n="1">
                <l n="a">saṅ hyaṅ-hyaṅ pinakādideva ni karas para kavi makatattva ṅ akṣara</l>
@@ -7568,11 +7535,11 @@
          </div>
 
          <div type="bibliography"> 				
-            <p>Arlo Griffiths converted it to a text file (2018) and Andrew Ollett converted the text to TEI format (2018)</p> 			
+            <p>Critical edition by <bibl><ptr target="bib:Worsley+al2013_01"/></bibl> (Indonesian edition <bibl><ptr target="bib:Worsley+al2014_01"/></bibl>), converted from word to text file by Arlo Griffiths (2018), and from text file to TEI format by Andrew Ollett (2018).</p> 			
         <listBibl> 				
-        <bibl/> 			
-      </listBibl>            
-      
+        	<bibl><ptr target="bib:Worsley+al2013_01"/></bibl>
+	<bibl><ptr target="bib:Worsley+al2014_01"/></bibl>		
+      </listBibl>
          </div> 		
       </body>
    </text>
