@@ -6,12 +6,10 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Candrakiraṇa Manuscript Perpusnas L241</title>
-                <respStmt>
-                    <!-- repeat the respStmt when necessary -->
-                    <resp>Author of the digital edition</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:zapa"><!-- update the id -->
+                <title type="editorial">Candrakiraṇa: Digital Diplomatic Edition of Manuscript Perpusnas L241</title>
+                <respStmt>                   
+                    <resp>author of digital edition</resp>
+                    <persName ref="part:zapa">
                         <name>Zakariya Pamuji Aminullah</name>
                     </persName>
                 </respStmt>
@@ -20,21 +18,18 @@
                 <authority>DHARMA</authority>
                 <pubPlace>Hamburg</pubPlace>
                 <idno type="filename">DHARMA_DiplEdCandrakiranaPerpusnasL241.xml</idno>
-                <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by Zakariya Pamuji Aminullah.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+                        <p>Copyright (c) 2019-2025 by Zakariya Pamuji Aminullah.</p>
                     </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <!-- One witness for each manuscript. Update the content -->
-                    <witness xml:id="fakeID">
-                        <!-- Give your witness an unique identifier -->
-                        <abbr type="siglum"></abbr>
+                    <witness xml:id="MS">
+                        <abbr type="siglum">MS</abbr>
                 <msDesc>
                     <msIdentifier>
                         <settlement>Jakarta</settlement>
@@ -70,17 +65,16 @@
         </encodingDesc>
         <profileDesc>
             <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
                 <language ident="san-Latn">Sanskrit, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
             </langUsage>         
         </profileDesc>
         <revisionDesc>
+            <change who="part:zapa" when="2023-01-01" status="draft">Completed transliteration of the manuscript</change>
             <change who="part:axja" when="2021-11-25" status="draft">Conversion from Latex to XML</change>
-            <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve"><!-- update the language code -->
+    <text xml:space="preserve">
       <body>
     <div type="edition" xml:lang="kaw-Latn"><ab>
 <!--<figure><graphic url="CK-L241diplo/001r.jpg"/>
