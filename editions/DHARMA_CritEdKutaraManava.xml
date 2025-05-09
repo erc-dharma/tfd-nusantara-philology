@@ -2,16 +2,19 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kutaraManava">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+xml:lang="eng" xml:id="kutaraManava">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Kuṭāra Mānava</title>
-				<title type="alt">Digital Critical Edition and Translation of an Old Javanese Penal Code</title>
+				<title type="editorial">Kuṭāra Mānava: Digital Critical Edition and Translation of an Old Javanese Penal Code</title>
+			<!--	<title type="original"></title> not filled in because unclear of KM is actually the original title-->
 				<respStmt>
-					<resp>Author of the digital edition</resp><persName ref="part:nuha">
-					<name>Nurmalia Habibah</name>
-				</persName></respStmt>
+					<resp>author of  digital edition</resp>
+					<persName ref="part:nuha">
+						<name>Nurmalia Habibah</name>
+					</persName>
+				</respStmt>
 				</titleStmt>
 			<publicationStmt>
 				<authority>DHARMA</authority>
@@ -26,10 +29,11 @@
 				<date from="2019" to="2025">2019-2025</date>
 			</publicationStmt>
 			<sourceDesc>
-				<listWit>
-					<witness xml:id="le1">
-						<abbr type="siglum">Le<hi rend="subscript">1</hi></abbr>
-						<!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+		<listWit>
+			<listWit xml:id="mssleiden">	
+				<head>Manuscripts kept in Leiden</head> 	
+				<witness xml:id="le1">
+					<abbr type="siglum">Le<hi rend="subscript">1</hi></abbr>
 						<msDesc>
 							<msIdentifier>
 								<settlement>Leiden</settlement>
@@ -38,7 +42,7 @@
 								<idno>Or. 2215</idno>
 							</msIdentifier>
 							<physDesc>
-								<p>L.Or. 2215, a Balinese palm-leaf manuscript housed in the Leiden Library, served as the primary manuscript (referred to as "I") in Jonker's edition. According to Jonker, the manuscript lacks a title, with the only external identifier being the word "agama" inscribed on its outer surface. No additional information about its date of composition or copying is available, and the text concludes abruptly mid-sentence. The manuscript consists of 71 palm leaves, each bearing either three or four lines of text. Despite being in relatively good condition overall, it exhibits minor damage in a few areas. However, it is riddled with errors and omissions, with the quality of the handwriting noticeably deteriorating toward the end.</p>
+								<p>This Balinese palm-leaf manuscript served as the primary witness (referred to as <q>I</q>) in Jonker's edition. According to Jonker, the manuscript lacks a title, with the only external identifier being the word <foreign>agama</foreign> inscribed on its outer surface. No additional information about its date of composition or copying is available, and the text concludes abruptly mid-sentence. The manuscript consists of 71 leaves, each bearing either three or four lines of text on both faces. Despite being in relatively good condition overall, it exhibits minor damage in a few areas. However, it is riddled with errors and omissions, with the quality of the handwriting noticeably deteriorating toward the end.</p>
 								<handDesc>
 									<p/>
 								</handDesc>
@@ -55,7 +59,7 @@
 								<idno>Or. 3904</idno>
 							</msIdentifier>
 							<physDesc>
-								<objectDesc><p>A Balinese 19th century paper manuscript. This archival note or catalog entry refers to "Bundle 53," which contains multiple texts or manuscripts grouped together. Bl. 1-54: Refers to folios (bladen) 1-54, which contain the text titled Kutaramanawa. Bl. 54-65: Refers to folios 54-65, which are labeled as containing the text titled Swaradjambu. However, this designation may require further research and verification, as the Kutaramanawa is known to conclude with a śloka from the Sārasamuccaya. This observation suggests that the delineation of texts within this bundle might not be entirely clear-cut, and there may be overlaps or textual continuations that merit closer philological examination.</p></objectDesc>
+								<objectDesc><p>A Balinese 19th-century paper manuscript. This archival note or catalog entry refers to "Bundle 53," which contains multiple texts or manuscripts grouped together. Bl. 1-54: Refers to folios (bladen) 1-54, which contain the text titled Kutaramanawa. Bl. 54-65: Refers to folios 54-65, which are labeled as containing the text titled Swaradjambu. However, this designation may require further research and verification, as the Kutaramanawa is known to conclude with a śloka from the Sārasamuccaya. This observation suggests that the delineation of texts within this bundle might not be entirely clear-cut, and there may be overlaps or textual continuations that merit closer philological examination.</p></objectDesc>
 								<handDesc>
 									<p/>
 								</handDesc>
@@ -79,9 +83,12 @@
 							</physDesc>		
 						</msDesc>
 					</witness>
-					<witness xml:id="lo1">
-						<abbr type="siglum">Lo</abbr>
-						<msDesc>
+</listWit><!-- end of Leiden mss. -->
+<listWit xml:id="mssuk">
+<head>Manuscripts kept in the UK</head>
+	<witness xml:id="lo1">
+		<abbr type="siglum">Lo</abbr>
+			<msDesc>
 							<msIdentifier>
 								<settlement>London</settlement>
 								<institution>British Library (BL)</institution>
@@ -89,7 +96,7 @@
 								<idno>BL Add. 12277</idno>
 							</msIdentifier>
 							<physDesc>
-								<objectDesc><p>The British Museum manuscript, cataloged as No. 12277 Ad., referred to as "II" in Jonker's edition, is written on palm leaves and, like the Leiden manuscript, lacks a title, as well as any reference to the place or date of its transcription. The text concludes abruptly in the middle of a sentence. An external inscription identifies it as Cuntara Manava Sastra, described as a paraphrase of the Institutes of Manu in the Kawi (Old Javanese) language. It includes the note: "Presented to J. Crawfurd Esq. by the Rajah of Billing, 1814.". The manuscript is entirely intact and remarkably clear in its handwriting. It bears a striking resemblance to the Leiden manuscript, with the readings of the two aligning almost perfectly.</p></objectDesc>
+			<objectDesc><p>The British Museum manuscript, cataloged as No. 12277 Ad., referred to as "II" in Jonker's edition, is written on palm leaves and, like the Leiden manuscript, lacks a title, as well as any reference to the place or date of its transcription. The text concludes abruptly in the middle of a sentence. An external inscription identifies it as Cuntara Manava Sastra, described as a paraphrase of the Institutes of Manu in the Kawi (Old Javanese) language. It includes the note: "Presented to J. Crawfurd Esq. by the Rajah of Billing, 1814.". The manuscript is entirely intact and remarkably clear in its handwriting. It bears a striking resemblance to the Leiden manuscript, with the readings of the two aligning almost perfectly.</p></objectDesc>
 								<handDesc>
 									<p/>
 								</handDesc>
@@ -111,11 +118,13 @@
 								<p/>
 							</handDesc>
 							</physDesc>
-							
 						</msDesc>
 					</witness>
-					<witness xml:id="ja1">
-						<abbr type="siglum">Ja</abbr>
+</listWit><!-- end of UK mss -->
+<listWit xml:id="jakartamss">
+	<head>A manuscript kept in Jakarta</head>
+<witness xml:id="ja1">
+			<abbr type="siglum">Ja</abbr>
 						<msDesc>
 							<msIdentifier>
 								<settlement>Jakarta</settlement>
@@ -131,7 +140,10 @@
 							</physDesc>
 						</msDesc>
 					</witness>
-					<witness xml:id="edj">
+</listWit><!-- end of Jakarta mss. -->
+				<listWit xml:id="eds">
+<head>Published editions</head>	
+<witness xml:id="edj">
 						<abbr type="siglum">Ed<hi rend="superscript">J</hi></abbr>
 						<bibl>
 							<ptr target="bib:Jonker1885_01"/>
@@ -143,7 +155,8 @@
 							<ptr target="bib:Hoadley-Hooker1981_01"/>
 						</bibl>
 					</witness>
-				</listWit>
+				</listWit><!-- end of editions -->
+			</listWit>
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
