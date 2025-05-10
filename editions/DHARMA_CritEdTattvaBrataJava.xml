@@ -7,8 +7,8 @@
         <fileDesc>
             <titleStmt>
                 <title type="editorial">Digital Critical Edition and Parallel Translation of Tattva Brata Merapi Merbabu</title>
-                <!--Change the title of the file with the name of your text-->
-                <!--<title type="alt"></title>-->
+                <title type="original" xml:lang="kaw-Latn">Tattva Brata</title>
+                <title type="alt">Saṅ Hyaṅ Tattva Brata</title>
                 <!-- fill in any alternative title if necessary -->
                 <!--<author></author>-->
                 <!-- fill in any author if necessary -->
@@ -20,8 +20,8 @@
                 </respStmt>
             </titleStmt>
             <publicationStmt>
-                <authority>DHARMA</authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <authority>DHARMA/ERC MANTRATANTRAM101124214</authority>
+                <pubPlace>Paris</pubPlace>
                 <idno type="filename">DHARMA_CritEdTattvaBrataJava.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
@@ -32,7 +32,8 @@
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
-                <listWit>
+                <listWit xml:id="mssperpusnas"> 
+        <head>Manuscripts kept in National Library of Indonesia</head>
                     <!-- One witness for each manuscript. Update the content -->
                     <witness xml:id="A">
                         <!-- Give your witness an unique identifier -->
@@ -40,44 +41,67 @@
                         <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
                         <msDesc>
                             <msIdentifier>
-                                <settlement>Leiden</settlement>
-                                <institution>University Library (UB)</institution>
+                                <settlement>Jakarta</settlement>
+                                <institution>National Library of Republic Indonesia</institution>
                                 <repository>Lontar</repository>
-                                <idno>Or. 23732</idno>
+                                <idno>4L 143</idno>
                             </msIdentifier>
                             <msContents>
                                 <!-- the msContents isn't mandatory -->
                                 <msItem>
-                                    <author>Śāntarakṣita</author>
-                                    <title>Vipañcitārthā</title>
+                                    <author></author>
+                                    <title>Tattva Brata</title>
                                     <!-- You can also add a colophon if needed -->
-                                    <!--<colophon>
-										<quote></quote>
-										</colophon> -->
+                                    <colophon>
+										<quote>Itiḥ tatva brata, samapta tlas·, cinītra, I jəṅ ira, saṁ hyaṁ pamriyan·, Imbha ghneya, vuku, mara, haguṁ, śanis·cara, ta, pa, dha ۝ sasaka ya </quote>
+										</colophon>
                                     <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
                                 </msItem>
                             </msContents>
                             <physDesc>
                                 <objectDesc>
                                     <!-- Here you can give a physical description of the manuscript in prose-->
-                                    <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                                    <p>Palm-leaf manuscript. 5 leaves in Buddha script. Date unknown. </p>
                                 </objectDesc>
-                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
-                                    <!-- Create a handNote for each hand -->
-                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
-                                        <abbr type="hand">A<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on siglum-of-the-manuscript_H1, the number being incremental -->
-                                        <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
-                                    </handNote>
-                                </handDesc>
                             </physDesc>
-                            <history>
-                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                             <!-- <history>
+                               Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation 
                                 <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
-                            </history>
+                            </history>-->
                         </msDesc>
                     </witness>
                     <witness xml:id="B">
-                        <!-- to be declared as above -->
+                          <abbr type="siglum"></abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>National Library of Republic Indonesia</institution>
+                                <repository>Lontar</repository>
+                                <idno>8L 89</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author></author>
+                                    <title>Tattva Brata</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <colophon>
+										<quote>Itiḥ tatva brata, samapta tlas· nicitra, I— —tuṁ jəṅira saṁ hyaṁ pamrihan· //۝//</quote>
+										</colophon>
+                                    <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 7 leaves in Buddha script. Date unknown. </p>
+                                </objectDesc>
+                            </physDesc>
+                             <!-- <history>
+                               Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation 
+                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                            </history>-->
                     </witness>
                 </listWit>
             </sourceDesc>
@@ -104,18 +128,14 @@
         <profileDesc>
             <langUsage>
                 <!-- choose the language(s) of your text, remove the others -->
-                <language ident="san-Latn">Sanskrit, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
-                <language ident="ori-Latn">Oriya, romanized</language>
-                <language ident="osn-Latn">Old Sundanese, romanized</language>
-                <language ident="tam-Latn">Tamil, romanized</language>
-                <language ident="kan-Latn">Kannada, romanized</language>
-                <language ident="tel-Latn">Telugu, romanized</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
-            <change/>
-        </revisionDesc>
+<revisionDesc>
+   <change who="part:pegy" when="2025-05-10">started building edition</change>
+   <change who="part:axja" when="2025-05-09" status="draft">Transformation from docx to xml</change>
+   <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+  </revisionDesc>
     </teiHeader>
     <text>
 	<body>
