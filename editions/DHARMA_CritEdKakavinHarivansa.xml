@@ -2,46 +2,37 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kakavinHarivansa">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">Harivaṅśa</title>
-                <!--Change the title of the file with the name of your text-->
-                <!--<title type="alt"></title>-->
-                <!-- fill in any alternative title if necessary -->
-                <!--<author></author>-->
-                <!-- fill in any author if necessary -->
+                <title type="editorial">Harivaṅśa: Digital Edition</title>
+            	<title type="alt">After the edition by Teeuw (1950)</title>
+            	<title type="original">Harivaṅśa</title>
                 <respStmt>
-                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
                     <resp>author of digital edition</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:jodo"><!-- update the id -->
-                        <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Doe</surname>
-                    </persName>
+                	<persName ref="part:argr">
+                		<forename>Arlo</forename>
+                		<surname>Griffiths</surname>
+                	</persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>DHARMA</authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-                <idno type="filename">CriticalEditions.xml</idno>
-                <!-- Replace by identifier, e.g. SiksaGuru -->
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DHARMA_CritEdKakavinHarivansa.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
-                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+                    	<p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    	<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
                     </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <witness xml:id="">
-                        <bibl>Teeuw, dr. A., Harivansa, tekst en critisch apparaat; in Verhandelingen van het Koninklijk Instituut voor Taal-, Land- en Volkenkunde, deel IX, martinus nijhoff, ’s-gravenhage 1950</bibl> 
-                    </witness>
-                    <witness xml:id="">
-                        <bibl>2021: e-text by Danielle Chen based on OCR-ed version of Teeuw's edition, with manual correction of transcription errors and manual application of metrical structure</bibl>
+                    <witness xml:id="edt">
+                    	<bibl><ptr target="bib:Teeuw1950_01"/></bibl> 
                     </witness>
                 </listWit>
             </sourceDesc>
@@ -67,26 +58,19 @@
         </encodingDesc>
         <profileDesc>
             <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
                 <language ident="san-Latn">Sanskrit, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
-                <language ident="ori-Latn">Oriya, romanized</language>
-                <language ident="osn-Latn">Old Sundanese, romanized</language>
-                <language ident="tam-Latn">Tamil, romanized</language>
-                <language ident="kan-Latn">Kannada, romanized</language>
-                <language ident="tel-Latn">Telugu, romanized</language>
             </langUsage>
         </profileDesc>
         <revisionDesc>
-            <change/>
+        	<change when="2025-05-11" who="part:argr">added teiHeader and bibliography, corrected spellings of meter names</change>
+        	<change when="2025-05-07" who="part:axja">conversion of text to TEI follows DHARMA EGC v2</change>
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve">
 		<body>
-			<div type="edition" xml:lang="und">  
-
-
-<div><ab>avighnam astu namaḥ śivāya</ab></div>
+			<div type="edition" xml:lang="kaw-Latn">  
+<div><ab type="invocation">avighnam astu namaḥ śivāya</ab></div>
 
 <div type="canto" n="1" met="śārdūlavikrīḍita">
 <lg n="1">
@@ -687,7 +671,7 @@
 </lg>
 </div>
 
-<div type="canto" n="8" met="udgataviṣama?"> 
+<div type="canto" n="8" real="+---------=/--+-+---+-+-="><!-- Teeuw proposed udgatavisama but doesn't seem to be correct -->
 
 <lg n="1">
 <l n="1a">masku mapa kunəṅ ikan ulaha</l>
@@ -1038,7 +1022,7 @@
 </lg>
 
 </div>
-<div type="canto" n="13" met="śardūlavikrīḍita"> 
+<div type="canto" n="13" met="śārdūlavikrīḍita"> 
 
 <lg n="1">
 <l n="1a">luṅhȧn kāla təṅah kuləm səḍəṅ akəg nidrā vvaṅ iṅ jro kabeh</l>
@@ -1462,7 +1446,7 @@
 </lg>
 
 </div>
-<div type="canto" n="18" met="vasaṅtatilakā">
+<div type="canto" n="18" met="basantatilakā">
 
 <lg n="1">
 <l n="1a">luṅlhāṅ priyambada marêṅ vəgilanya ṅūni</l> 
@@ -1899,7 +1883,7 @@ d) ləṅnəṅ b; iṅ iṅiṅənan AE, iṅiṅiṅidan B2, iṅiṅiə C1, i
 </lg>
 
 </div>
-<div type="canto" n="23" met="girīśa">
+<div type="canto" n="23" met="giriśa">
 
 <lg n="1">
 <l n="1a">ana paraṅ aṅuṅaṅ groṅ rāmyâsoṅ səkar asana</l> 
@@ -2841,7 +2825,7 @@ d) ləṅnəṅ b; iṅ iṅiṅənan AE, iṅiṅiṅidan B2, iṅiṅiə C1, i
 </lg> 
 
 </div>
-<div type="canto" n="34" met="śardūlavikrīḍita">
+<div type="canto" n="34" met="śārdūlavikrīḍita">
  
 <lg n="1">
 <l n="1a">ndā tatkālani saṅ vatək ratu jarāsandhā ḍataṅ sāhasa</l>
@@ -2849,7 +2833,6 @@ d) ləṅnəṅ b; iṅ iṅiṅənan AE, iṅiṅiṅidan B2, iṅiṅiə C1, i
 <l n="1c">sāmantā juru sāna tut lari sira śrī kṛṣṇa norâṅhavər</l>
 <l n="1d">akveh māti lavan padātibala śīrṇâlyus təkêṅ vāhana</l>
 	 <!--<app>c) sānna F; tūlari ABE.</app> -->
-
 
 </lg>
 <lg n="2">
@@ -3187,7 +3170,7 @@ d) ləṅnəṅ b; iṅ iṅiṅənan AE, iṅiṅiṅidan B2, iṅiṅiə C1, i
 </lg>
 
 </div>
-<div type="canto" n="37" met="suvaṅśapatra">
+<div type="canto" n="37" met="suvaṅśapattra">
 
 <lg n="1">
 <l n="1a">səḍəṅ anahən larâtiśaya saṅ nṛpati kasih-arəp</l>
@@ -4356,7 +4339,6 @@ AE; ahyā F; d) kabhar A1.</app> -->
 
 </div>
 <div type="canto" n="55" met="anuṣṭubh">
- 
 <lg n="1">
 <l n="1a">harivaṅśa kathānyasta</l>
 <l n="1b">jarāsandha parājaya</l>
@@ -4374,9 +4356,10 @@ AE; ahyā F; d) kabhar A1.</app> -->
 			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
 			  </div>
 		    <div type="bibliography">
-		        <p><!-- explain the process of your edition here --></p>
+		        <p>Edited by Teeuw (1950). Acquisition of digital data by Arlo Griffiths through OCR. First round of structuring and cleaning in txt by Danielle Chen (2021), after which Axelel Janiak structured the data in TEI format (2025).</p>
+<!--  2021: e-text by Danielle Chen based on OCR-ed version of Teeuw's edition, with manual correction of transcription errors and manual application of metrical structure -->
 		        <listBibl>
-		            <bibl/>
+		            <bibl><ptr target="Teeuw1950_01"/></bibl>
 		        </listBibl>
 		    </div>
 		</body>
