@@ -6,7 +6,21 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-           <title type="editorial">Smaradahana. Digital critical edition...</title>
+           <title type="editorial">Smaradahana, or The Burning of Smara, by Mpu Dharmaja: Digital Critical Edition</title>
+         	<title type="alt">After the edition by Poerbatjaraka (1931)</title>
+         	<title type="original">Vr̥ttasañcaya</title>
+         	<author>Tanakuṅ</author>
+         	<respStmt>
+         		<resp>author of digital edition</resp>
+         		<persName ref="part:anol">
+         			<forename>Andrew</forename>
+         			<surname>Ollett</surname>
+         		</persName>
+         		<persName ref="part:argr">
+         			<forename>Arlo</forename>
+         			<surname>Griffiths</surname>
+         		</persName>
+         	</respStmt>
          </titleStmt>
         <publicationStmt>
             <authority>DHARMA</authority>
@@ -22,6 +36,24 @@
          </publicationStmt>
          <sourceDesc>
            <listWit>
+           	<witness xml:id="msL884">
+           		<abbr type="siglum">Ja<hi rend="superscript">1</hi>
+           		</abbr>
+           		<msDesc>
+           			<msIdentifier>
+           				<settlement>Jakarta</settlement>
+           				<institution>Perpustakaan Nasional Republik Indonesia</institution>
+           				<repository>Layanan Naskah Nusantara</repository>
+           				<idno>L 884</idno>
+           			</msIdentifier>
+           			<physDesc>
+           				<objectDesc><p>The main manuscript collated by Poerbatjaraka. Catalogus Juynboll II blz. 492</p></objectDesc>
+           				<handDesc>
+           					<p/>
+           				</handDesc>
+           			</physDesc>
+           		</msDesc>
+           	</witness>
              <witness xml:id="edp">
                <abbr type="siglum">Ed<hi rend="superscript">P</hi>
                </abbr>
@@ -81,7 +113,12 @@
               <p/>
             </correction>
             <normalization>
-              <p/>
+            	<p>Some orthographic normalization towards the standard proposed in OJED has been carried out without comment. These concern cases where Poebartjaraka accepts spellings with
+            		<list>
+            			<item>deaspiration or degemination</item>
+            			<item>long ā before double consonant cluster</item>
+            		</list>
+            	</p>
             </normalization>
             <interpretation>
               <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
@@ -97,7 +134,8 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-        <change when="2024-09" who="part:anol part:argr">revised sarga 1, updated teiHeader</change>
+         <change when="2025-05-11" who="part:argr">encoded two witnesses in teiHeader; resolved most validation errors</change>
+         <change when="2024-09" who="part:anol part:argr">revised sarga 1, updated teiHeader</change>
          <change when="2022-04-05" who="part:axja">updating the template</change>
          <change when="2020-02-28" who="part:anol">more TEI edits</change>
          <change when="2018-06-11" who="part:anol">conversion of text to TEI</change>
@@ -282,7 +320,7 @@
 	  <l n="a">na vuvus hyaṅ indra sumahur hyaṅ atanu tan ulahniṅ āśraya</l>
 	  <l n="b">mapa dāyaniṅ hulun aveha lara turida rāganiṅ guru</l>
 	  <l n="c">sira devaniṅ sura viśeṣa satata niyatāṅupadrava</l>
-	  <l n="d">kadi <app><lem type="norm">laṅghanā</lem><rdg>laṅghyanā</rdg></app> ṅvaṅ i pakon surapati ri patik śatakratu</l>
+	  <l n="d">kadi <app><lem type="norm">laṅghanā</lem><rdg wit="#edp">laṅghyanā</rdg></app> ṅvaṅ i pakon surapati ri patik śatakratu</l>
 	</lg>
         <lg xml:id="Smaradahana_03.05" n="5">
           <l n="a">mavuvus vr̥haspati gumanti gumaṇagaṇa nīti riṅ hati</l>
@@ -303,7 +341,7 @@
           <l n="d">mara riṅ mahāgiri tumūtakəna saṅ adhikāra manmatha</l>
         </lg>
         <lg xml:id="Smaradahana_03.08" n="8">
-          <l n="a"><app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> māntuk iniriṅnira sahaja huvus ginopitan</l>
+          <l n="a"><app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> māntuk iniriṅnira sahaja huvus ginopitan</l>
           <l n="b">i rikāṅ pituṅ vəṅi hiner śubhadivasa ri taṅgaliṅ kapāt</l>
           <l n="c">makaradhvajā madəg adan krama tumama sire daləm puri</l>
           <l n="d">madarāganiṅ hati sumə̄k sama jaladhi ri pūrṇaniṅ śaśi</l>
@@ -401,7 +439,7 @@
           <l n="d">muṅgv iṅ meru ṣaḍaṅga yoga sinamāhitaniran asamādhi nityaśa</l>
         </lg>
         <lg xml:id="Smaradahana_04.05" n="5">
-          <l n="a">ndā tan lyan <app><lem wit="#edp">hinamər ruməñcəm</lem><rdg>hinamə̄ ruməñcəma</rdg></app> raras hatiniran abhiyoga riṅ brata</l>
+          <l n="a">ndā tan lyan <app><lem wit="#edp" type="norm">hinamər ruməñcəm</lem><rdg wit="#msL884">hinamə̄ ruməñcəma</rdg></app> raras hatiniran abhiyoga riṅ brata</l>
           <l n="b">aṅhiṅ sañjata rāka rakryan inadr̥śya rumimaṅa bhaṭāra śaṅkara</l>
           <l n="c">tan hyaṅ manmatha paṅhiḍəpku rari yan luputa sira linakṣan iṅ hulun</l>
           <l n="d">rapvan siddha pakon śatakratu kr̥tajña rumuraha tapa hyaṅ īśvara</l>
@@ -731,7 +769,7 @@
           <l n="d">umaṅguh aṅhayvani śīghra luṅhā</l>
         </lg>
         <lg xml:id="Smaradahana_07.13" n="13">
-          <l n="a">saharṣa tekāṅ <app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> tuṣṭa</l>
+          <l n="a">saharṣa tekāṅ <app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> tuṣṭa</l>
           <l n="b">ri sampuni vruhnya rikāṅ kinārya</l>
           <l n="c">paḍāturun siddhaniṅ ātmarakṣa</l>
           <l n="d">adr̥śya mr̥tyuñjayamantra śakti</l>
@@ -856,7 +894,7 @@
         </lg>
         <lg xml:id="Smaradahana_09.02" n="2">
 	  <l n="a">saṅsiptāvuṅu sira saṅ səḍəṅ kəneṅ tvas</l>
-	  <l n="b">kontā riṅ viṣaya haneṅ <app><lem wit="#edp">manah humaṅgəh</lem><rdg>manā humaṅgəh</rdg></app></l>
+	  <l n="b">kontā riṅ viṣaya haneṅ <app><lem wit="#edp">manah humaṅgəh</lem><rdg wit="#msL884">manā humaṅgəh</rdg></app></l>
 	  <l n="c">rodrāṅrəs dinavutireṅ samādhirāja</l>
 	  <l n="d">pyah tībrā təkan i ḍaḍā hilīnikāṅ luh</l>
 	</lg>
@@ -916,7 +954,7 @@
         </lg>
         <lg xml:id="Smaradahana_09.12" n="12">
           <l n="a">maṅke pve ḍatəṅi gələṅ triśūlapāti</l>
-          <l n="b">sakvehniṅ suravara<app><lem type="norm">saṅgha</lem><rdg>saṅghya</rdg></app> yatna luṅhā</l>
+          <l n="b">sakvehniṅ suravara<app><lem type="norm">saṅgha</lem><rdg wit="#edp">saṅghya</rdg></app> yatna luṅhā</l>
           <l n="c">kapvāṅhə̄t avədi katona de hyaṅ īśa</l>
           <l n="d">aṅlampū ta siraṅ anaṅga duhkha mātya</l>
         </lg>
@@ -924,7 +962,7 @@
           <l n="a">saṅ hyaṅ rudra variṅutən ri puṣpacāpa</l>
           <l n="b">kālāgni pramukha mijil sakeṅ trinetra</l>
           <l n="c">nirdhūmāka ṅarabarab kabhinnabhinna</l>
-          <l n="d">lvir saṅhāra luməburaṅ triloka<app><lem type="norm">saṅgha</lem><rdg>saṅghya</rdg></app></l>
+          <l n="d">lvir saṅhāra luməburaṅ triloka<app><lem type="norm">saṅgha</lem><rdg wit="#edp">saṅghya</rdg></app></l>
         </lg>
         <lg xml:id="Smaradahana_09.14" n="14">
           <l n="a">maṅkin vr̥ddhi dilahikāṅ apuy pradīpta</l>
@@ -940,7 +978,7 @@
         </lg>
         <lg xml:id="Smaradahana_09.16" n="16">
           <l n="a">ndā tan māti tan ahurip saranta duhkha</l>
-          <l n="b"><app><lem type="norm">saṅsārāmalaku</lem><rdg>saṅsarāmalaku</rdg></app> tuluṅ sireṅ vatək hyaṅ</l>
+          <l n="b"><app><lem type="norm">saṅsārāmalaku</lem><rdg wit="#edp">saṅsarāmalaku</rdg></app> tuluṅ sireṅ vatək hyaṅ</l>
           <l n="c">aṅreṅān inigitigit riṅ antabahni</l>
           <l n="d">lot mānaṅ məkəh anaṅis ratih katr̥ṣṇan</l>
         </lg>
@@ -1276,7 +1314,7 @@
       <div type="canto" rend="met" met="mr̥tagaṅśa" n="14" xml:id="Smaradahana_15">
         <lg xml:id="Smaradahana_15.01" n="1">
           <l n="a">ṅūnī kāla bhaṭāra manmatha mareṅ girivana manukū</l>
-          <l n="b">lāvan saṅ <app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> sapta r̥ṣi rovaṅira paḍa tumut</l>
+          <l n="b">lāvan saṅ <app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> sapta r̥ṣi rovaṅira paḍa tumut</l>
           <l n="c">tambe hyaṅ ratih abratāsəmu nadī ri daləm abhuhaya</l>
           <l n="d">tan sor iṅ gənəpiṅ manis tuvi yayāsriṅ aṅuraṅuraṅi</l>
         </lg>
@@ -1499,7 +1537,7 @@
           <l n="d">toh ndyaṅ duhkha sake riya ləviha</l>
         </lg>
         <lg xml:id="Smaradahana_19.13" n="13">
-          <l n="a">sakveh saṅ <app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> təka huvus</l>
+          <l n="a">sakveh saṅ <app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> təka huvus</l>
           <l n="b">mvaṅ saṅ paṇḍita sapta vahu ḍatəṅ</l>
           <l n="c">luh saṅ śoka marambəhan umətu</l>
           <l n="d">yan ton saṅ vivudhāṅga paḍa təka</l>
@@ -2291,7 +2329,7 @@
           <l n="a">hənəṅakəna bhaṭārī śailaputrīn kavoran</l>
           <l n="b">tucapa sahananiṅ hyaṅ pāḍa yatnān panīti</l>
           <l n="c">təkapaniṅ amikāre garbha saṅ vāhu kesyan</l>
-          <l n="d">maran avətu salah lvir yeka <app><lem wit="#edp">pinrih hinə̄mhə̄m</lem><rdg>pinrī hinə̄mhə̄m</rdg></app></l>
+          <l n="d">maran avətu salah lvir yeka <app><lem wit="#edp" type="norm">pinrih hinə̄mhə̄m</lem><rdg wit="#msL884">pinrī hinə̄mhə̄m</rdg></app></l>
         </lg>
 	<lg xml:id="Smaradahana_29.02" n="2">
           <l n="a">atutur i samayāniṅ daitya nīlāṅga dhīran</l>
@@ -2363,7 +2401,7 @@
           <l n="a">smararipu sira yatnān ton bhaṭārī kagə̄man</l>
           <l n="b">umarihara saṅ elik yan mihat riṅ svaputra</l>
           <l n="c">ibu phalani giriste vāhana hyaṅ surendra</l>
-          <l n="d">hana dinuluran icchā deṅku <app><lem type="norm">vighnantatatva</lem><rdg>vighnārthatatva</rdg></app></l>
+          <l n="d">hana dinuluran icchā deṅku <app><lem type="emn">vighnāntatatva</lem><rdg wit="#msL884">vighnārthatatva</rdg><note>Poerbatjaraka, who proposed this emendation, noted that two other manuscripts he consulted had the same reading as L884.</note></app></l>
         </lg>
         <lg xml:id="Smaradahana_29.14" n="14">
           <l n="a">gaṇagaṇani vuvustāmətvakən bhinnaśabda</l>
@@ -2401,7 +2439,7 @@
           <l n="a">liṅ saṅ daityādhipa parəṅ umijil</l>
           <l n="b">uśvāsādrəs bhrukuṭinira tikəl</l>
           <l n="c">muntab taṅ krodha ri hati dumilah</l>
-          <l n="d">śīghrān <app><lem wit="#edp">mojar ri</lem><rdg>mojā ri</rdg></app> balanira kabeh</l>
+          <l n="d">śīghrān <app><lem wit="#edp" type="norm">mojar ri</lem><rdg wit="#msL884">mojā ri</rdg></app> balanira kabeh</l>
         </lg>
         <lg xml:id="Smaradahana_30.05" n="5">
           <l n="a">sakvehniṅ daityabala paḍa masə̄</l>
@@ -2560,7 +2598,7 @@
         <lg xml:id="Smaradahana_32.09" n="9">
 	  <l n="a">māsih saṅ hyaṅ aveh vara karuṇa</l>
           <l n="b">ai sakvehta surāpsara humatur</l>
-          <l n="c">putraṅkvīki <app><lem wit="#edp">vavan</lem><rdg>vəvə̄</rdg></app> tuli vulati</l>
+          <l n="c">putraṅkvīki <app><lem wit="#edp">vavan</lem><rdg wit="#msL884">vəvə̄</rdg></app> tuli vulati</l>
           <l n="d">astu bhraṣṭa musuhta təkap ike</l>
 	</lg>
         <lg xml:id="Smaradahana_32.10" n="10">
@@ -2591,7 +2629,7 @@
         </lg>
         <lg xml:id="Smaradahana_33.03" n="3">
           <l n="a">sesinikāṅ sakendran avajūvaju kavaca rukuh</l>
-          <l n="b">mvaṅ <app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> yatna təka tan paləpaləh inatag</l>
+          <l n="b">mvaṅ <app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> yatna təka tan paləpaləh inatag</l>
           <l n="c">sakṣaṇa sək səsək vəki tikāṅ gaja turaga ḍatəṅ</l>
           <l n="d">rəṅganikāṅ gajāśva ratha kādbhuta makagurilap</l>
         </lg>
@@ -2640,7 +2678,7 @@
         <lg xml:id="Smaradahana_33.11" n="11">
           <l n="a">hyaṅ dhanapāla puṣpaka vimāna havanira tumūt</l>
           <l n="b">mās minatan pirak dhvajanirāniganiga jinajar</l>
-          <l n="c">guhyakaśūra lokakəmitan guṇagaṇa <app><lem wit="#edp">pinatik</lem><rdg>pinəṭik</rdg></app></l>
+          <l n="c">guhyakaśūra lokakəmitan guṇagaṇa <app><lem wit="#edp" type="emn">pinatik</lem><rdg wit="#msL884">pinəṭik</rdg></app></l>
           <l n="d">tanpa balik halāgəməm akuñci pəpət apəpətan</l>
         </lg>
         <lg xml:id="Smaradahana_33.12" n="12">
@@ -2657,7 +2695,7 @@
         </lg>
         <lg xml:id="Smaradahana_33.14" n="14">
           <l n="a">vuntatikāṅ balānila bhaṭāra gaṇa sira tumūt</l>
-          <l n="b">sə̄k <app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> deva puluṅan sanasini sumaput</l>
+          <l n="b">sə̄k <app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> deva puluṅan sanasini sumaput</l>
           <l n="c">viṣṇu pitāmahādinikanaṅ pinakabalanira</l>
           <l n="d">taṇḍa navagrahāpupul aṅ aṣṭabasu r̥ṣigaṇa</l>
         </lg>
@@ -2672,7 +2710,7 @@
         <lg xml:id="Smaradahana_34.01" n="1">
           <l n="a">sampun saṅ hyaṅ surendrāgəlar asirasiran mabyūha humarək</l>
           <l n="b">lāvan sakvehnikāṅ deva tumihaṅ atumaṅ təṅranya humabət</l>
-          <l n="c">ton taṅ daityānarambah prasama kadi gəlap <app><lem wit="#edp">krūrakrak kumupak</lem><rdg>krūrākrak umupak</rdg></app></l>
+          <l n="c">ton taṅ daityānarambah prasama kadi gəlap <app><lem wit="#edp" type="emn">krūrākrak umupak</lem><rdg wit="#msL884">krūrākrak kumupak</rdg></app></l>
           <l n="d">kapvāṅambul parəṅ ghūrṇita paḍa gumuluṅ lāvan gaja ratha</l>
         </lg>
         <lg xml:id="Smaradahana_34.02" n="2">
@@ -2718,7 +2756,7 @@
           <l n="d">len taṅ rodrāmupak taṇḍasiṅ asura katūt nāḍinya saḍəpa</l>
         </lg>
         <lg xml:id="Smaradahana_34.09" n="9">
-          <l n="a">glānaṅ vidyādharavrəg silih <app><lem wit="#edp">idək kapədək</lem><rdg>idək apəḍək</rdg></app> kāhrət kapipitan</l>
+          <l n="a">glānaṅ vidyādharavrəg silih <app><lem wit="#edp" type="emn">idək apəḍək</lem><rdg wit="#msL884">idək kapəḍək</rdg></app> kāhrət kapipitan</l>
           <l n="b">abyūran keṅgut olah binəsu ginurumuṅ təṅgəknya pinəgat</l>
           <l n="c">kīrṇākveh taṅ katimpal taṅanika sinavat bāhunya tumibā</l>
           <l n="d">dudvāṅohan hinoran sinakitan inirit pādanya ginalit</l>
@@ -2776,7 +2814,7 @@
         <lg xml:id="Smaradahana_35.03" n="3" met="LLLLGLLLLLLGLLLLLLGLLLLLLG">
           <l n="a">pəjah ananāṅ vivudhabala kalaṅkuṅan alah asakit mati kapatəṅahan</l>
           <l n="b">gaja ratha śīrṇa vinugari ḍinəṇḍa maguliṅan aṅohan aməkasi hurip</l>
-          <l n="c">papupuli vaṅkayika kadi gunuṅ hana sura patitān <app><lem wit="#edp">pakanin</lem><rdg>pakani</rdg></app> katitihan</l>
+          <l n="c">papupuli vaṅkayika kadi gunuṅ hana sura patitān <app><lem wit="#edp" type="conj">pakani</lem><rdg wit="#msL884">pakanin</rdg></app> katitihan</l>
           <l n="d">curiga curik makaciriṅih ikāṅ galah avaja katiṅgal anəsəki raṇa</l>
         </lg>
         <lg xml:id="Smaradahana_35.04" n="4" met="LLLLGLLLLLLGLLLLLLGLLLLLLG">
@@ -2791,7 +2829,7 @@
           <l n="a">sampunyān kahalālayū girigirin sakvehnikāṅ hyaṅ kabeh</l>
           <l n="b">ṅəsṅə̄sən maluye raṇāṅganasabhā kapvālupeṅ sañjata</l>
           <l n="c">puṅgəl taṇḍa bhaṭāra durmukha katūb deniṅ hyaṅ āvrəg bubak</l>
-          <l n="d">aṅriṅraṅ kadi <app><lem wit="#edp">nīradan</lem><rdg>nāradān</rdg></app> kasuririṅ tambis kəneṅ jampariṅ</l>
+          <l n="d">aṅriṅraṅ kadi <app><lem wit="#edp" type="emn">nīradan</lem><rdg wit="#msL884">nāradān</rdg></app> kasuririṅ tambis kəneṅ jampariṅ</l>
         </lg>
         <lg xml:id="Smaradahana_36.02" n="2">
           <l n="a">saṅ hyaṅ rota vināyakāmrih aṅadəg yan ton ikāṅ hyaṅ kabeh</l>
@@ -2815,7 +2853,7 @@
           <l n="a">lvir saṅ rvān papagut sudhīra suməgut gutgūtən aṅhrik masə̄</l>
           <l n="b">kapvāḍəṇḍa ḍinəṇḍa tañ jrih arukət kapvārəbut sañjata</l>
           <l n="c">akveh astra ləpas huvus hana tikəl tīkṣṇāsakit denira</l>
-          <l n="d">sākṣāt mr̥tyu jugān <app><lem wit="#edp">padvandva</lem><rdg>padandva</rdg></app> səḍəṅiṅ saṅhārakālādbhuta</l>
+          <l n="d">sākṣāt mr̥tyu jugān <app><lem wit="#edp">padandva</lem><note>Poerbatjaraka noted that this is <foreign>metri causa</foreign> for <foreign>padvandva</foreign>.</note></app> səḍəṅiṅ saṅhārakālādbhuta</l>
         </lg>
         <lg xml:id="Smaradahana_36.06" n="6">
           <l n="a">saṅ hyaṅ durmukha kātarāmijilakən kālāgnirudrānaput</l>
@@ -2849,7 +2887,7 @@
         </lg>
         <lg xml:id="Smaradahana_36.11" n="11">
           <l n="a">maṅkin krodha bhaṭāra gāṇajananān puṅgəl sulurniṅ mukha</l>
-          <l n="b">yatnān sambut ikāṅ kuṭāra paṅasih śrīśāna <app><lem type="norm">gaurīpati</lem><rdg>ghorīpati</rdg></app></l>
+          <l n="b">yatnān sambut ikāṅ kuṭāra paṅasih śrīśāna <app><lem type="norm">gaurīpati</lem><rdg wit="#edp">ghorīpati</rdg></app></l>
           <l n="c">saṅ hyaṅ tumburunāthamantra kinənākən sendhikātaijana</l>
           <l n="d">saṅ senāpuranātha dīna kapəsan pinraṅ bəlah taṅ ḍaḍa</l>
         </lg>
@@ -2950,7 +2988,7 @@
         <lg xml:id="Smaradahana_38.13" n="13">
 	  <l n="a">nda tan hana vaneh inastutinikāṅ hyaṅ aprārthana</l>
           <l n="b">vr̥haspati jugāgave suka" vuvusnikāṅ devatā</l>
-          <l n="c">apan vətuni nīti saṅ yati nimitta <app><lem type="norm">gaurīpatin</lem><rdg>ghorīpatin</rdg></app></l>
+          <l n="c">apan vətuni nīti saṅ yati nimitta <app><lem type="norm">gaurīpatin</lem><rdg wit="#edp">ghorīpatin</rdg></app></l>
           <l n="d">makānak i bhaṭāra durmukha yamāka śelātmajā</l>
 	</lg>
         <lg xml:id="Smaradahana_38.14" n="14">
@@ -2962,7 +3000,7 @@
       </div>
       <div type="canto" rend="met" met="vasantatilakā" n="38" xml:id="Smaradahana_39">
         <lg xml:id="Smaradahana_39.01" n="1">
-          <l n="a">saṅsipta mātra gatiniṅ <app><lem type="norm">surasaṅgha</lem><rdg>surasaṅghya</rdg></app> tuṣṭa</l>
+          <l n="a">saṅsipta mātra gatiniṅ <app><lem type="norm">surasaṅgha</lem><rdg wit="#edp">surasaṅghya</rdg></app> tuṣṭa</l>
           <l n="b">saṅ mūlaniṅ cinariteki gumantya varṇan</l>
           <l n="c">hyaṅ kāma saṅ gəsəṅ apiṇḍa ratihnirāsih</l>
           <l n="d">siṅhitni janmanira yan kəna śāpa varṇan</l>
@@ -3000,8 +3038,8 @@
         <lg xml:id="Smaradahana_39.07" n="7">
           <l n="a">ṅkān pinta bhasma kusumeṣu madadya janma</l>
           <l n="b">śighrān vinehakən atīta təkap bhaṭāra</l>
-          <l n="c"><app><lem type="norm">ñāmuṣṭa</lem><rdg>ñamuṣṭa</rdg></app> saṅ hyaṅ atanū havu mānuṣāstu</l>
-          <l n="d"><app><lem type="norm">ñāmuṣṭi</lem><rdg>ñamuṣṭi</rdg></app>ñamuṣṭi nāmani dadi hyaṅ anaṅga sūkṣma</l>
+          <l n="c"><app><lem type="norm">ñāmuṣṭa</lem><rdg wit="#edp">ñamuṣṭa</rdg></app> saṅ hyaṅ atanū havu mānuṣāstu</l>
+          <l n="d"><app><lem type="norm">ñāmuṣṭi</lem><rdg wit="#edp">ñamuṣṭi</rdg></app> nāmani dadi hyaṅ anaṅga sūkṣma</l>
         </lg>
         <lg xml:id="Smaradahana_39.08" n="8">
           <l n="a">śrī puṣpitāṅśa dadi ratnavatī kasaṅkyā</l>
@@ -3043,7 +3081,7 @@
           <l n="a">tatvanya ṅūni riṅ uśāna rəṅə̄n kramanya</l>
           <l n="b">riṅ kāśmirān prathita pustaka saṅ kumāra</l>
           <l n="c">siṅsal yuga kṣaṇa śināpa təkap bhaṭāra</l>
-          <l n="d"><app><lem type="norm">nūṣātirāmya</lem><rdg>nuṣātirāmya</rdg></app> təmahanya magə̄ṅ halimpuṅ</l>
+          <l n="d"><app><lem type="norm">nūṣātirāmya</lem><rdg wit="#edp">nuṣātirāmya</rdg></app> təmahanya magə̄ṅ halimpuṅ</l>
         </lg>
         <lg xml:id="Smaradahana_39.15" n="15">
           <l n="a">ndah ṅkā tikin vəkasi janma bhaṭāra kāma</l>
@@ -3081,7 +3119,7 @@
           <l n="a">luhniṅ strīniṅ arin pəjah lvah ika rāmyātīs ḍatəṅ riṅ purī</l>
           <l n="b">vuṅkalniṅ matukəltukəl hati vatunyākāra gə̄ṅniṅ susu</l>
           <l n="c">rāhniṅ māti patibratā kasarakat yāṅkən matuñjuṅ mirah</l>
-          <l n="d"><app><lem type="norm">milvākə̄m</lem><rdg>milvakə̄m</rdg></app> paṅisinya sāk dadi lumutkəmbaṅnya muṅgv iṅ susu</l>
+          <l n="d"><app><lem type="norm">milvākə̄m</lem><rdg wit="#edp">milvakə̄m</rdg></app> paṅisinya sāk dadi lumutkəmbaṅnya muṅgv iṅ susu</l>
         </lg>
         <lg xml:id="Smaradahana_40.04" n="4">
           <l n="a">byātītan gati saṅ nareśvara haneṅ rājyāṅikət kaprabhun</l>
@@ -3196,30 +3234,8 @@ What’s more, he was skilled in language, and reached the furthest shores of th
              <p n="22" corresp="#Smaradahana_02.22">In its northeast were emerald hills that caused longing, in the shape of lofty temples, with clear water that sprinkled the sky from its straight peaks. Its streams watered the trees, all the trees that grew there in Smara’s grove. Its birds were beautiful, in lively dialogue, taking joy in the mist of the water.</p>
              <p n="23" corresp="#Smaradahana_02.23">There would be no end if we kept talking about their rapture at the way in which Kāma’s residence was built. All the gods were at a loss, enraptured by its extremely beautiful and charming buildings. For poets say that this is the essence of what is charming, the limit of reality. This is reason why the texts of erotics, which had been kept secret, are being rendered into Javanese: to produce this story.</p>
           </div>
-          <div n="1" type="canto" corresp="#Smaradahana_02">
-            <p n="1" corresp="#Smaradahana_02.01">De eerbiedige hulde des dichters richte zich tot al wat bekoorlijk is ter bevordering van den levensduur; tot een ontloken lotusbloem als (goden)beeld, besprenkeld door de
-            regens van de maand Kapat.<note>De vierde maand waarin op Java na den drogen tijd de eerste regens van het jaar vallen.</note> Als wija<note>Geel gemaakte rijstkorrels (bĕras) onmisbaar bij gewijde handelingen.</note> (bij dit gebed) worden gebezigd de letters, in plaats van gewijde formulieren worden gezongen liefelijke lyrische beschrijvingen, als wierook worden aangewend de wolkjes en als bidschel het gegons der bijen in de bloemen.</p>
-             <p n="2" corresp="#Smaradahana_02.02">O god der liefde, hoor toch de klachten van hen, die zich verdiepen in het schoone. Gij, de ware beheerscher van de tranen der bedroefden, de god van de geslaakte kain. Gij zijt de roes die innig verbonden is met (al wat) aangenaam is voor het hart; en de redding uit het afmattende verdriet. Gij zijt de afkomst en de bestemming van het welgevallen en zijt meester in het geven van liefde en gehechtheid.</p>
-            <p n="3-4">...</p>
-             <p n="5" corresp="#Smaradahana_02.05">Van de zee zijt gij de diep gevoelde bekoring en van den berg het aangename ver(gezicht). Voor de verliefden zijt gij in het luchtruim<note>Volgens de gangbare poëtische voorstelling, kijken verliefden gaarne naar het luchtruim.</note> en voor de mijmerzieken in de schemering. Voor de verbijsterde bedroefden zijt gij in de lusthoven en voor de schoonheidsvrienden in de nevelen der zee. Bij den hommel zijt gij bekend als het gezoem. Dat zijn alle uwe vormen, o koning.</p>
-             <p n="6" corresp="#Smaradahana_02.06">In den strijd zijt gij de jonge, wakkere leeuw-held Apanji  Çūreng-rana. De aangename maat zijt gij in alle gedichten, liedjes en lyrische poëzie die er bestaan. In de sponde zijt  gij het middel tegen liefdeskrankheid; ook wordt gij erkend  als 't onfeilbare, ware mantra. Çrī Kamegwara is uw naam, die steeds genoemd wordt door de geheele wereld.</p>
-             <p n="7" corresp="#Smaradahana_02.07">De bedoeling van het prijzen der deugden van den heerscher door middel van letters op het palmblad is, dat dit tot  huldeblijk moge strekken van Mpu Dharmaja, die het lichaam  van god Smara wenscht te beschrijven. Edoch, 't is er verre  van dat hij daartoe in staat zal zijn; (immers) de macht van  zijn onwetendheid maakt zich van hem meester. Hij is immers  een dichter, die nauwelijks kennis heeft gemaakt met het  weerlichten boven de zee.<note>De samenvoeging van Sa-Ba-Ta-A-I met Na-Ma-Çi-Wa-Ya ? Zie Gons, Bijdrage tot de kennis der Oud-Jav. en Bal. Theologie, Leidsch Proefschrift blz. 123.</note></p>
-             <p n="8" corresp="#Smaradahana_02.08">In vroeger tijd gaf Çiwa zich over aan yoga met de daarbij behoorende overpeinzing daar op den heiligen berg  Meru, de plaats waar de volmaakte meesters onder de  yogins hunne boetedoening verrichten, in de schaduw van een darçana-boom op een heuvel aan den oever van een  meer npij een grot. Hij is de god der goden en toch  verricht hij nog boete; wat verlangt hij nog meer?</p>
-             <p n="9" corresp="#Smaradahana_02.09">Zijn wezen toch is de hoogste Waarheid, die voor alle  godsdiensten geldt. De heilige syllpe Ong en verder (iemand,  die) opgaat in het lichaam van Çiwa, de rij der letters van  het Brahma-mantra (?), de schikking van zijn tien lichamen  en de kern van het alphpet, (dat zijn alle) de vaste aanduidingen (van (Çiwa's vorm); (maar) in werkelijkheid is  hij, in (een staat van) psolute onbewustheid, verzonken  in zijn onafhankelijke, diepe gepeins.</p>
-             <p n="10" corresp="#Smaradahana_02.10">Ongestoord was de wijze waarop de god de volmaakte  samadhi in zijn hart uitvoerde. Hij helde zelfs niet voor een  oogenblik over naar vreugde en vermaken, nog minder naar  den omgang met vrouwen, 't Was te betreuren voor de schoonheid der hemelnymphen, waaraan de god, de Oorzaak der  wereld, zich niet stoorde; evenmin aan de liefelijke schoonheid  der jeugdige godin (Uma), de dochter van den koning der bergen.</p>
-             <p n="11" corresp="#Smaradahana_02.11">Juist toen werden de scharen der goden onverwachts aangevallen door de daemonen, onderdanen van den zegevierenden Nīlarudraka, die in dichte gelederen den hemel bereikten. Senapura, op den Zuidelijken voet van den Himalaya, was de naam van zijn ontoegankelijke, geweldige burcht, welvoorzien, luisterrijk, geducht en onoverwinnelijk.</p>
-             <p n="12" corresp="#Smaradahana_02.12">Dit veroorzaakte onrust onder de goden, die in den hemel bevreesd werden en in de war geraakten. Alle tien wereldhoeders kwamen bijeen en beraadslaagden er eindeloos over. De siddha's en de rĕsi's (onder wie) Narada en Wasistha, waren mede aanwezig benevens de gandharwa's en apsarasen. God Çakra werd aangewezen om als voorzitter der vergadering op te treden.</p>
-             <p n="13" corresp="#Smaradahana_02.13">Toen de punten van bespreking gerangschikt waren, nam de Drie-oogige (Indra) het woord. „Met uw verlof, gij allen, dappere goden en apsarasen; op welke wijze zult gij nu ten strijde gaan ? Brahma en Wisnu zijn reeds afgeschrikt, bevreesd; zij moesten het in dapperheid en kracht afleggen. Mij behoeft gij niet te dwingen tot den strijd; zoekt maar ergens — als ze er is — toevlucht in de verte".</p>
-             <p n="14" corresp="#Smaradahana_02.14">„Indien het mogelijk ware toevlucht te zoeken bij Çiwa, dan zou hij geen wapen behoeven te gebruiken. Immers hij omvat het heelal, bestendig, rustig, en onbewegelijk.<note>Daardoor kan men van hem geen bescherming verwachten.</note> Slechts de vorm en anderszins, de machtige vijf gebieden der zinnen, zijn in staat begeerte te verwekken door middel van de zintuigen. Maar zijn hart bemoeit zich er ganschelijk niet mede; dit blijft ten eenen male onaantastbaar daarvoor".</p>
-             <p n="15" corresp="#Smaradahana_02.15">Wrĕhaspati kwam toen aan het woord: „Deze list moet de koning der goden (Indra) toepassen: Karna moet gij trachten te winnen, bij hem aandringen, hem vereeren en als bondgenoot nemen; verzoekt hem den god (Çiwa) met zijn  minnepijl te willen treffen, opdat deze verliefd worde en naar minnelust verlange, en godin Uma, die juist in haar vollen, maagdelijken groei is, het voorwerp van zijn liefde worde".</p>
-             <p n="16" corresp="#Smaradahana_02.16">„Wanneer zij elkander ontmoet, zich vereenigd hebben en opgegaan zijn in hunne liefde, dan is het niet onmogelijk dat Parwatī de teekenen van zwangerschap *) vertoonen zal; dit hopen wij. In dat geval, maakt dan dat zij het rijdier<note>De olifant van Indra, genaamd Airawana.</note> ziet, opdat een monster, (een jongen) met een olifantskop (geboren moge worden). Het al dan niet gevaarlijke van deze list moet gij onderzoeken, goed onder oogen nemen en in overweging geven".</p>
-             <p n="17" corresp="#Smaradahana_02.17">Zoo waren de kernachtige woorden van Wrĕhaspati. Indra was het met hem eens en prees hem. Immers hij was een geleerde, die bij de goden groot aanzien genoot, en wiens woorden steeds vervuld werden. Bovendien was hij wel- bespraakt, volleerd in de weda's en de grootste staatsman in den hemel. Hij was doorkneed in het leerboek Kutara-mantra als ook in de Canakya *) en in de Kamandaka *). </p>
-             <p n="18" corresp="#Smaradahana_02.18">In het kort worde nu verteld, dat de goden voornemens waren naar de verblijfplaats van Karna te gaan. Verspreid door de lucht gingen zij Oostwaarts over verschillende wel- varende streken. Vol verbazing zagen zij daar de stad van Karna met hare bekoorlijke gebouwen van bloemen. Van diamant waren de onderdeelen van de poort, glinsterend als de flikkering der bliksemstralen. </p>
-             <p n="19" corresp="#Smaradahana_02.19">De in het oog vallende ommuring was van uitgebeitelde koraalsteen gemaakt, zoodat men er de lucht door kon zien (d.i. à jour). Bekoorlijk door haar (aanmerkelijke) hoogte werd zij bestreken door (de takken der) sparren, die zich heen en weer bewogen. Bewerkte maansteenen waren gemaakt tot een badplaats, schoon en helder. Maar dat was nog niet het schoonste; de daken waren van wolken, rood- gekleurd door de zachte schemering. </p>
-             <p n="20" corresp="#Smaradahana_02.20">De aaneengerijde gebouwen tot de aloon-aloon toe waren van zuiver goud zonder eenige onderbreking. Gelijk een partij wolken waren de ringmuren van den tempel,<note>Tekst: guduh lees echter gaduh — tempel</note> die de oogen verblindde. De schitterend roode nokken waren gemaakt van geordende jonge bladeren van den kalpa-boom, terwijl de vlaggedoeken, die in den wind wapperden, van de spruitjes van den ceder-boom waren. </p>
-             <p n="21" corresp="#Smaradahana_02.21">Zonder in glans te verflauwen lagen de blauwe maan-kristallen, in stukjes geslagen, bekoorlijk en schitterend op de erven. Vol luister waren de parijata-boomen gelijkende op guirlandes-met-slingeringen in den tuin. De bloemen prijkten in verschillende kleuren, omkronkeld door den lang hangen den gadung-rank. Verkwikkend was de geur der gevallen (bloemen), die versterkt werd door muscus en saffraan. </p>
-             <p n="22" corresp="#Smaradahana_02.22">Ten Noord-Oosten (van de stad) stonden de indrukwekkende, glanzende bergen; men vond er hooge tempels. Van de toppen (dier bergen) spoot het heldere water rechtop naar boven. De druppels besproeiden alle boomen, die daar in Kama's hof groeiden. De dartelende vogels vermaakten zich, vol blijdschap zingend, in de waterdampen.</p>
-             <p n="23" corresp="#Smaradahana_02.23">Het zou eindeloos zijn indien er verteld werd over den luister van de deelen van Kama's woning. Alle goden waren zeer verbaasd over de prachtige, luisterrijke gebouwen. Want hier was de kern van al wat aangenaam is voor het hart en het puik van al wat er bestaat, volgens zeggen van de dichters. Dit is de oorzaak, waarom de Kamatantra-leer, die (in den regel) geheim gehouden wordt, (door mij) wordt geopenbaard om er een verhaal van te maken.</p>
+          <div n="2" type="canto" corresp="#Smaradahana_03">
+            <p n="1" corresp="#Smaradahana_03.01"></p>
           </div>
       </div>
       <div type="translation" xml:lang="nld" source="bib:Poerbatjaraka1931_01">
@@ -3690,20 +3706,12 @@ What’s more, he was skilled in language, and reached the furthest shores of th
 	<p n="B" corresp="#Smaradahana_42.02">Beëindigd op Zaterdag Wage, (wuku) Kurantil, den 8ste van de 5de maand     ………    in het Çaka-jaar 1813 ( = A.D. 1891).</p>
 	</div>
   </div>
-      <div type="commentary"><p>Some orthographic normalization towards the standard proposed in OJED has been carried out without comment. These concern cases where Poebartjaraka accepts spellings with
-	       <list>
-          <item>deaspiration or degemination</item>
-          <item>long ā before double consonant cluster</item>
-	       </list>
-        </p>
-        
-      </div>
+      <div type="commentary"/>
     <div type="bibliography"> 				
-      <p>Andrew Ollet structured the TEI file</p> 				
+      <p>Data by Arlo Griffiths acquisition through OCR. First round of structuring and cleaning in txt by Zakariya Pamuji Aminullah (2018), after which Andrew Ollett structured the data in TEI format (2018). Adaptation to DHARMA norms by Axelle Janiak (2022). Encoding of apparatus and English translation started by Andrew Ollett and Arlo Griffiths in 2024.</p> 				
       <listBibl> 				
-        <bibl/> 			
-      </listBibl>            
-       			
+        <bibl><ptr target="bib:Poerbatjaraka1931_01"/></bibl> 			
+      </listBibl>            		
     </div> 		
     </body>
   </text>

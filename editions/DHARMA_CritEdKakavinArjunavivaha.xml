@@ -6,77 +6,209 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="editorial">Arjunavivāha</title>
-            <author>Mpu Kaṇva</author>
-            <!--<funder><!-\- to be filled in? !-\-></funder>
-            <principal>
-               <persName ref="https://viaf.org/viaf/201252222">Andrea Acri</persName>
-            </principal>
-            <principal>
-               <persName ref="https://viaf.org/viaf/11026260/">Arlo Griffiths</persName>
-            </principal>-->
+            <title type="editorial">Arjunavivāha, or Arjuna's Wedding by Mpu Kaṇva: Digital Critical Editon</title>
+         	<title type="original">Arjunavivāha</title>
+         	<author>Mpu Kaṇva</author>
+         	<respStmt>
+         		<resp>author of digital edition</resp>
+         		<persName ref="part:argr">
+         			<forename>Arlo</forename>
+         			<surname>Griffiths</surname>
+         		</persName>
+         	</respStmt>
          </titleStmt>
-         <publicationStmt>
-            <authority/>
-            <availability>
-               <p><!-- add whatever license you like: !--></p>
-            </availability>
-            <date>2018</date>
-            <publisher><!-- EFEO/EPHE --></publisher>
-            <pubPlace><!-- Paris --></pubPlace>
-         </publicationStmt>
+      	<publicationStmt>
+      		<authority>DHARMA</authority>
+      		<pubPlace>Jakarta</pubPlace>
+      		<idno type="filename">DHARMA_CritEdKakavinArjunavivaha.xml</idno>
+      		<availability>
+      			<licence target="https://creativecommons.org/licenses/by/4.0/">
+      				<p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+      				<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+      			</licence>
+      		</availability>
+      		<date from="2019" to="2025">2019-2025</date>
+      	</publicationStmt>
          <sourceDesc>
             <listWit>
-               <witness xml:id="R">
-                  <!-- axja to argr and anol: can you please fill in the following declaration for your ms R? -->
-                  
-                     <abbr type="siglum"></abbr>
-                     <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-                     <msDesc>
-                        <msIdentifier>
-                           <settlement>XXX</settlement>
-                           <institution>XXX</institution>
-                           <repository>XXX</repository>
-                           <idno>XXX</idno>
-                        </msIdentifier>
-                        <msContents>
-                           <!-- the msContents isn't mandatory -->
-                           <msItem>
-                              <author>xxx</author>
-                              <title>xxx</title>
-                              <!-- You can also add a colophon if needed -->
-                              <!--<colophon>
-										<quote></quote>
-										</colophon> -->
-                              <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
-                           </msItem>
-                        </msContents>
-                        <physDesc>
-                           <objectDesc>
-                              <!-- Here you can give a physical description of the manuscript in prose-->
-                              <p>xxx</p>
-                           </objectDesc>
-                           <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
-                              <!-- Create a handNote for each hand -->
-                              <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
-                                 <abbr type="hand">A<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on siglum-of-the-manuscript_H1, the number being incremental -->
-                                 <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
-                              </handNote>
-                           </handDesc>
-                        </physDesc>
-                        <history>
-                           <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                           <p>XXXX</p>
-                        </history>
-                     </msDesc>
+               <witness xml:id="msL634">
+               	<abbr type="siglum">J</abbr>
+               	<msDesc>
+               		<msIdentifier>
+               			<settlement>Jakarta</settlement>
+               			<institution>Perpustakaan Nasional Republik Indonesia</institution>
+               			<repository>Lontar</repository>
+               			<idno>L 634</idno>
+               		</msIdentifier>
+               		<msContents>
+               			<msItem>
+               				<p/>
+               			</msItem>
+               		</msContents>
+               		<physDesc>
+               			<objectDesc>
+               				<p>The manuscript is written on gebang leaves, measuring ... x ... cm, ... folios, 4 lines of each folio.</p>
+               				<p>Behrend; Kuntara W.</p>
+               			</objectDesc>
+               			<handDesc><p/></handDesc>
+               			<scriptDesc>
+               				<p>Written in Old West Javanese quadratic script.</p>
+               			</scriptDesc>
+               		</physDesc>
+               	</msDesc>
                </witness>
-               <witness xml:id="edP">
+	<witness xml:id="msMP165">
+                     <abbr type="siglum">P</abbr>
+               	<msDesc>
+               		<msIdentifier>
+               			<settlement>Paris</settlement>
+               			<institution>Bibliothèque nationale de France</institution>
+               			<repository>Département des manuscrits</repository>
+               			<idno>MalPol 165</idno>
+               		</msIdentifier>
+               		<msContents>
+               			<msItem>
+               				<p/>
+               			</msItem>
+               		</msContents>
+               		<physDesc>
+               			<objectDesc>
+               				<p>The manuscript is written on lontar leaves, measuring ... x ... cm, ... folios, 4 lines of each folio.</p>
+               				<p>It was described by Cabaton (1912: ...) and more recently by Agung Kriswanto &amp; Aditia Gunawan (2019: ...).</p>
+               			</objectDesc>
+               			<handDesc><p/></handDesc>
+               			<scriptDesc>
+               				<p>Written in Merapi Merbabu type script.</p>
+               			</scriptDesc>
+               		</physDesc>
+               	</msDesc>
+               </witness>
+            	<witness xml:id="msRA">
+            		<abbr type="siglum">R<hi rend="superscript">A</hi></abbr>
+            		<msDesc>
+            			<msIdentifier>
+            				<settlement>...</settlement>
+            				<institution>...</institution>
+            				<repository>...</repository>
+            				<idno>...</idno>
+            			</msIdentifier>
+            			<physDesc>
+            				<objectDesc><p>Robson's ms. A.</p></objectDesc>
+            				<handDesc>
+            					<p/>
+            				</handDesc>
+            			</physDesc>
+            		</msDesc>
+            	</witness>
+            	<witness xml:id="msRC">
+            		<abbr type="siglum">R<hi rend="superscript">C</hi></abbr>
+            		<msDesc>
+            			<msIdentifier>
+            				<settlement>...</settlement>
+            				<institution>...</institution>
+            				<repository>...</repository>
+            				<idno>...</idno>
+            			</msIdentifier>
+            			<physDesc>
+            				<objectDesc><p>Robson's ms. C.</p></objectDesc>
+            				<handDesc>
+            					<p/>
+            				</handDesc>
+            			</physDesc>
+            		</msDesc>
+            	</witness>
+            	<witness xml:id="msRD">
+            		<abbr type="siglum">R<hi rend="superscript">D</hi></abbr>
+            		<msDesc>
+            			<msIdentifier>
+            				<settlement>...</settlement>
+            				<institution>...</institution>
+            				<repository>...</repository>
+            				<idno>...</idno>
+            			</msIdentifier>
+            			<physDesc>
+            				<objectDesc><p>Robson's ms. D.</p></objectDesc>
+            				<handDesc>
+            					<p/>
+            				</handDesc>
+            			</physDesc>
+            		</msDesc>
+            	</witness>
+            	<witness xml:id="msRF">
+            		<abbr type="siglum">R<hi rend="superscript">F</hi></abbr>
+            		<msDesc>
+            			<msIdentifier>
+            				<settlement>...</settlement>
+            				<institution>...</institution>
+            				<repository>...</repository>
+            				<idno>...</idno>
+            			</msIdentifier>
+            			<physDesc>
+            				<objectDesc><p>Robson's ms. F.</p></objectDesc>
+            				<handDesc>
+            					<p/>
+            				</handDesc>
+            			</physDesc>
+            		</msDesc>
+            	</witness>
+            	<witness xml:id="msRG">
+            		<abbr type="siglum">R<hi rend="superscript">G</hi></abbr>
+            		<msDesc>
+            			<msIdentifier>
+            				<settlement>...</settlement>
+            				<institution>...</institution>
+            				<repository>...</repository>
+            				<idno>...</idno>
+            			</msIdentifier>
+            			<physDesc>
+            				<objectDesc><p>Robson's ms. G.</p></objectDesc>
+            				<handDesc>
+            					<p/>
+            				</handDesc>
+            			</physDesc>
+            		</msDesc>
+            	</witness>
+            	<witness xml:id="msRK">
+            		<abbr type="siglum">R<hi rend="superscript">K</hi></abbr>
+            		<msDesc>
+            			<msIdentifier>
+            				<settlement>...</settlement>
+            				<institution>...</institution>
+            				<repository>...</repository>
+            				<idno>...</idno>
+            			</msIdentifier>
+            			<physDesc>
+            				<objectDesc><p>Robson's ms. K.</p></objectDesc>
+            				<handDesc>
+            					<p/>
+            				</handDesc>
+            			</physDesc>
+            		</msDesc>
+            	</witness>
+            	<witness xml:id="msRR">
+            		<abbr type="siglum">R<hi rend="superscript">R</hi></abbr>
+            		<msDesc>
+            			<msIdentifier>
+            				<settlement>...</settlement>
+            				<institution>...</institution>
+            				<repository>...</repository>
+            				<idno>...</idno>
+            			</msIdentifier>
+            			<physDesc>
+            				<objectDesc><p>Robson's ms. R.</p></objectDesc>
+            				<handDesc>
+            					<p/>
+            				</handDesc>
+            			</physDesc>
+            		</msDesc>
+            	</witness>
+               <witness xml:id="edp">
                   <bibl><ptr target="bib:Poerbatjaraka1926_03"/></bibl>
                </witness>
-               <witness xml:id="edK">
+               <witness xml:id="edk">
                   <bibl><ptr target="bib:KuntaraWiryamartana1990_01"/></bibl>
                </witness>
-               <witness xml:id="edR">
+               <witness xml:id="edr">
                   <bibl><ptr target="bib:Robson2008_01"/></bibl>
                </witness>
             </listWit>
@@ -107,15 +239,10 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2018-06-04" who="part:abol">Initial TEI encoding</change>
-        <change when="2018-06-27" who="part:argr">Revision of sarga 1</change>
-        <change when="2018-06-28" who="part:argr">Revision of sarga 2</change>
-        <change when="2018-06-29" who="part:argr">Revision of sarga 3</change>
-        <change when="2018-06-30" who="part:argr">Revision of sarga 4</change>
-        <change when="2018-07-01" who="part:argr">Revision of sarga 5</change>
-        <change when="2018-07-02" who="part:argr">Revision of sargas 6-10</change>
-         <change when="2018-07-03" who="part:argr">Revision of sargas 11-12</change>
-        <change when="2024-07-21" who="part:axja">Transform to DHARMA</change>
+          <change when="2025-05-11" who="part:argr" status="draft">Endoded teiHeader and bibliograhy</change>
+          <change when="2024-07-21" who="part:axja" status="draft">Transform to DHARMA</change>
+          <change when="2018-07-03" who="part:argr" status="draft">Revision of sargas 1-12</change>
+          <change when="2018-06-04" who="part:anol" status="draft">Initial TEI encoding</change>
       </revisionDesc>
    </teiHeader>
    <text xml:space="preserve">
@@ -125,74 +252,72 @@
 	<!-- śārdūlavikrīḍita: - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = !-->
             <lg n="1" met="śārdūlavikrīḍita"><!-- 1.1 !-->
                <l n="a">ambək saṅ paramārthapaṇḍita huvus limpad sakeṅ <app>
-                     <lem wit="#edP #edR">śūnyatā</lem>
-                     <rdg wit="#R">śūnyatan</rdg>
+                     <lem wit="#edp #edr">śūnyatā</lem>
+                     <rdg wit="#msRR">śūnyatan</rdg>
                   </app>
                </l>
                <l n="b">tan saṅkeṅ viṣaya <app>
-                     <lem wit="#edP #edR">prayojananira</lem>
-                     <rdg wit="#edK">prayojñana nira</rdg>
+                     <lem wit="#edp #edr">prayojananira</lem>
+                     <rdg wit="#edk">prayojñana nira</rdg>
                   </app> lvir <app>
-                     <lem wit="#edP #edR">saṅgraheṅ</lem>
-                     <rdg wit="#R">saṅgrahe</rdg>
+                     <lem wit="#edp #edr">saṅgraheṅ</lem>
+                     <rdg wit="#msRR">saṅgrahe</rdg>
                   </app> lokika</l>
-               <!-- Andrew: do we need to make a list of witnesses (for #R etc to point to)? Please insert a model in the right place, and I'll do the rest. -->
-               <!-- Andrew: and would it be a good idea to prefix ms to the labels for witnesses (msA, msB, etc.) just as we prefix ed to sigla for editions? -->
                <l n="c">
                   <app>
-                     <lem wit="#edP #edR">siddhāniṅ</lem>
-                     <rdg wit="#D">siddhaṅ niṅ</rdg>
+                     <lem wit="#edp #edr">siddhāniṅ</lem>
+                     <rdg wit="#msRD">siddhaṅ niṅ</rdg>
                   </app> yaśavīrya donira sukhāniṅ rāt <app>
-                     <lem wit="#edR">kininkinnira</lem>
-                     <rdg wit="#A #C #F #G">kininkin ira</rdg>
-                     <rdg wit="#B #P #edP">kiniṅkiṅ nira</rdg>
-                     <rdg wit="#D">kiniṅkin ira</rdg>
+                     <lem wit="#edr">kininkinnira</lem>
+                     <rdg wit="#msRA #msRC #msRF #msRG">kininkin ira</rdg>
+                     <rdg wit="#B #P #edp">kiniṅkiṅ nira</rdg>
+                     <rdg wit="#msRD">kiniṅkin ira</rdg>
                   </app>
                </l>
                <l n="d">santoṣāhələtan kəlir <app>
-                     <lem wit="#edP #edK #edR">sira</lem>
-                     <rdg wit="#C">nira</rdg>
+                     <lem wit="#edp #edk #edr">sira</lem>
+                     <rdg wit="#msRC">nira</rdg>
                   </app> sakeṅ saṅ hyaṅ jagatkāraṇa</l>
             </lg>
             <lg n="2" met="śārdūlavikrīḍita">
                <l n="a">
                   <app>
-                     <lem wit="#edP #edR">uṣṇīṣaṅkv</lem>
-                     <rdg wit="#R">uṣṇīṣakv</rdg>
+                     <lem wit="#edp #edr">uṣṇīṣaṅkv</lem>
+                     <rdg wit="#msRR">uṣṇīṣakv</rdg>
                   </app> i <app>
-                     <lem wit="#edP #edR">ləbūni</lem>
-                     <rdg wit="#D">ləbuniṅ</rdg>
+                     <lem wit="#edp #edr">ləbūni</lem>
+                     <rdg wit="#msRD">ləbuniṅ</rdg>
                   </app> pādukanirā <app>
-                     <lem wit="#edP #edR">saṅ maṅkana</lem>
-                     <rdg wit="#D">samaṅkana</rdg>
+                     <lem wit="#edp #edr">saṅ maṅkana</lem>
+                     <rdg wit="#msRD">samaṅkana</rdg>
                   </app> lvirnira</l>
                <l n="b">maṅgəh maṅgalaniṅ mikət kavijayan saṅ pārtha riṅ kahyaṅan</l>
                <l n="c">
                   <app>
                      <lem type="emn" resp="part:argr">sambandhanya</lem>
-                     <rdg wit="#edP #edR">sambaddhanya</rdg>
-                     <rdg wit="#F #R">sambandhāvva</rdg>
-                     <rdg wit="#G">sambandha pva</rdg>
-                     <rdg wit="#edK">sambaddha pva</rdg>
+                     <rdg wit="#edp #edr">sambaddhanya</rdg>
+                     <rdg wit="#msRF #msRR">sambandhāvva</rdg>
+                     <rdg wit="#msRG">sambandha pva</rdg>
+                     <rdg wit="#edk">sambaddha pva</rdg>
                   </app> bhaṭāra śakra katəkan durnīti lāvan bhaya</l>
                <l n="d">vvantən daitya madəg nivātakavacākhyātiṅ jagat digjaya</l>
             </lg>
             <lg n="3" met="śārdūlavikrīḍita">
                <l n="a">jə̄ṅniṅ meru kidul kuṭanya maharəp <app>
-                     <lem wit="#edR">sumyūhaṅ</lem>
-                     <rdg wit="#C">sumūhyaṅ</rdg>
+                     <lem wit="#edr">sumyūhaṅ</lem>
+                     <rdg wit="#msRC">sumūhyaṅ</rdg>
                   </app> indrālaya</l>
                <l n="b">mvaṅ molih varavīrya tan pəjaha <app>
-                     <lem wit="#edR">deniṅ</lem>
-                     <rdg wit="#A">ḍḍeniṅ</rdg>
+                     <lem wit="#edr">deniṅ</lem>
+                     <rdg wit="#msRA">ḍḍeniṅ</rdg>
                   </app> devayakṣāsura</l>
                <l n="c">ṅhiṅ yan mānuṣa śakti yatna juga ko nā liṅ bhaṭāreriya</l>
                <l n="d">yekā nitya hinə̄m vatək r̥ṣi kabeh riṅ svarga hārohara</l>
             </lg>
             <lg n="4" met="śārdūlavikrīḍita">
                <l n="a">saṅ hyaṅ śakra sumimpəniṅ naya kumon <app>
-                     <lem wit="#edR">pə̄hniṅ</lem>
-                     <rdg wit="#D">pə̄hni</rdg>
+                     <lem wit="#edr">pə̄hniṅ</lem>
+                     <rdg wit="#msRD">pə̄hni</rdg>
                   </app> rasālapkəna</l>
                <l n="b">an vvaṅ śakti sahāyaniṅ məjahanekaṅ śatru petən təkā</l>
                <l n="c">saṅ pārtha pva hañar karəṅvan atapāsādhyājayā riṅ raṇa</l>
@@ -200,16 +325,16 @@
             </lg>
             <lg n="5" met="śārdūlavikrīḍita">
                <l n="a">vyarthekāṅ japamantra yan kasalimur deniṅ <app>
-                     <lem wit="#edR">rajah</lem>
-                     <rdg wit="#D">raja</rdg>
+                     <lem wit="#edr">rajah</lem>
+                     <rdg wit="#msRD">raja</rdg>
                   </app> mvaṅ tamah</l>
                <l n="b">ṅhiṅ yan laṅgəṅ ikāṅ śivasmr̥ti ḍatəṅ śraddhā bhaṭāreśvara</l>
                <l n="c">ambək nirviṣayālilaṅ huvahuvā lvirnyān sukhādhyātmika</l>
                <!-- Andrew: how would you encode the variants for the preceding pāda recorded by Robson, p. 151? -->
                <!-- variant readings in edR not recorded beyond this point.  -->
                <l n="d">siṅhit <app>
-                     <lem wit="#edP">mātra</lem>
-                     <rdg wit="#edR">matra</rdg>
+                     <lem wit="#edp">mātra</lem>
+                     <rdg wit="#edr">matra</rdg>
                   </app> juga prabhedanika lāvan prih kayogīśvaran</l>
             </lg>
             <lg n="6" met="śārdūlavikrīḍita">
@@ -246,8 +371,8 @@
             <lg n="11" met="śārdūlavikrīḍita">
                <l n="a">liṅ hyaṅ śakra nahan sinambahakən iṅ vidyādharī mūr təhər</l>
                <l n="b">və̄rnyālon kadi <app>
-                     <lem wit="#edP">mandamāruta</lem>
-                     <rdg wit="#edR">mandamarūta</rdg>
+                     <lem wit="#edp">mandamāruta</lem>
+                     <rdg wit="#edr">mandamarūta</rdg>
                   </app> yayan meṅgal ḍatəṅ riṅ paran</l>
                <l n="c">akveh tāpsaraceṭikā milu tuhun kapvāṅiriṅ doh kabeh</l>
                <l n="d">ton tekāṅ vukir indrakīla maparə̄ maṅkin tumampā ta ya</l>
@@ -299,21 +424,21 @@
                <l n="c">linud ri ləṅəṅiṅ vanāntara katon inuluran i pakəmbaṅ iṅ gaḍuṅ</l>
                <l n="d">rapuh ta juga rakva <app>
                      <lem type="norm" resp="part:argr">mūrchita</lem>
-                     <rdg wit="#edR">mūrcita</rdg>
-                     <rdg wit="#edP">mūrccita</rdg>
+                     <rdg wit="#edr">mūrcita</rdg>
+                     <rdg wit="#edp">mūrccita</rdg>
                   </app> hatinya pinasukan i śaktiniṅ smara</l>
             </lg>
             <lg n="4" met="jagadnātha">
                <l n="a">
                   <app>
-                     <lem wit="#edP">śilāśayana</lem>
-                     <rdg wit="#edR">śila śayana</rdg>
+                     <lem wit="#edp">śilāśayana</lem>
+                     <rdg wit="#edr">śila śayana</rdg>
                   </app> yan paṅantyana hanārjunataru maṅisapvakən riya</l>
                <l n="b">təhər kinəmulan səvə̄ hana pənədnya ta kunaṅ avəḍakvəḍak lumut</l>
                <l n="c">samīpa hana poh rurū vruh iṅ aṅel lvah asaji bañu tan madoh i sor</l>
                <l n="d">ikāṅ amarakāminī paḍa kapeṅin umulati <app>
                      <lem type="norm" resp="part:argr">vilāsa</lem>
-                     <rdg wit="#edP #edR">vilāśa</rdg>
+                     <rdg wit="#edp #edr">vilāśa</rdg>
                   </app> maṅkana</l>
             </lg>
             <lg n="5" met="jagadnātha">
@@ -321,8 +446,8 @@
                <l n="b">dudū taṅ aṅuḍoḍa riṅ lvah aṅəlihṅəlih asəmu sumāmijət vətis</l>
                <l n="c">hanārahup alon təkapnya mañavuk bañu dudu gavayākukur gəluṅ</l>
                <l n="d">matanya dinələ̄nya riṅ bañu pilih <app>
-                     <lem wit="#edR">tumakitaki</lem>
-                     <rdg wit="#edP">tumukitaki</rdg>
+                     <lem wit="#edr">tumakitaki</lem>
+                     <rdg wit="#edp">tumukitaki</rdg>
                   </app> təkapnyan aṅlare</l>
             </lg>
             <lg n="6" met="jagadnātha">
@@ -334,8 +459,8 @@
             <lg n="7" met="jagadnātha">
                <l n="a">haneki kajənəknya kocapanikaṅ vvaṅ ahayu lavan iṅgitā mati</l>
                <l n="b">asiṅ <app>
-                     <lem wit="#edR">mamanisiṅ</lem>
-                     <rdg wit="#edP">minanisiṅ</rdg>
+                     <lem wit="#edr">mamanisiṅ</lem>
+                     <rdg wit="#edp">minanisiṅ</rdg>
                   </app> samānuṣa paḍāa tuladana ri denya molaha</l>
                <l n="c">marapva tan asambhavān dulurananya mata ya ləkas iṅ kadevatan</l>
                <l n="d">ikāṅ hayu riniñci varṇa lavan ambək apuhara dudū vinarṇana</l>
@@ -350,8 +475,8 @@
                <l n="a">ikaṅ vvaṅ atulis vulatvulat ahadyan arudita katon ḍatəṅ rəṅu</l>
                <l n="b">anaṇḍaṅ anamun yayāhayu gəluṅnya makusuta yayā jugāraras</l>
                <l n="c">agaṅgaṅ anipis ləvih susu kuraṅ təṅah apamulu <app>
-                     <lem wit="#edR">gora</lem>
-                     <rdg wit="#edP">ghora</rdg>
+                     <lem wit="#edr">gora</lem>
+                     <rdg wit="#edp">ghora</rdg>
                   </app> ta pva ya</l>
                <l n="d">titir maṅaraṅiṅ puḍak mara hayunya mətu saka ri tuṅtuṅiṅ tanah</l>
             </lg>
@@ -378,7 +503,7 @@
                <l n="c">yekān rājasa yan hanāmaca tulis mañaritakən arəṅva ta pva ya</l>
                <l n="d">ndan riṅ <app>
                      <lem type="norm" resp="part:argr">rātri</lem>
-                     <rdg wit="#edP #edR">ratri</rdg>
+                     <rdg wit="#edp #edr">ratri</rdg>
                   </app> jugān kinon təkap i kūṅnya majarumana tambvaṅ iṅ vulan</l>
             </lg>
             <lg n="4" met="jagaddhita">
@@ -391,12 +516,12 @@
             <lg n="5" met="jagaddhita">
                <l n="a">maṅkat śīghra katon tikaṅ vivara <app>
                      <lem type="norm" resp="part:argr">ramya</lem>
-                     <rdg wit="#edP #edR">rāmya</rdg>
+                     <rdg wit="#edp #edr">rāmya</rdg>
                   </app> pinakapatapan saṅ arjuna</l>
                <l n="b">arddhāhə̄t harəpanya tan təka tigaṅ ḍəpa dunuṅan ikaṅ surāṅganā</l>
                <l n="c">vetan rakva <app>
                      <lem type="norm" resp="part:argr">mukhanya</lem>
-                     <rdg wit="#edP #edR">mukanya</rdg>
+                     <rdg wit="#edp #edr">mukanya</rdg>
                   </app> maṅharəpakəñ juraṅ aṅəḍap ikaṅ valikkaḍəp</l>
                <l n="d">kady ākon masukāvarah ri hana saṅ kinirakira səḍəṅ pakolihən</l>
             </lg>
@@ -410,14 +535,14 @@
                <l n="a">āpan sāmpun ikaṅ anāśrayasamādhi tinəmunira saṅ hane daləm</l>
                <l n="b">lekan rakva sirān pasampunan <app>
                      <lem type="norm" resp="part:argr">aṅarcana</lem>
-                     <rdg wit="#edP">aṅarccana</rdg>
-                     <rdg wit="#edR">aṅarcaṇa</rdg>
+                     <rdg wit="#edp">aṅarccana</rdg>
+                     <rdg wit="#edr">aṅarcaṇa</rdg>
                   </app> kuməñar ikaṅ prabhāṅadəg</l>
                <l n="c">rūpanyān paśilātəhər kumisapuṅ taṅan apatitis agranāsika</l>
                <l n="d">
                   <app>
                      <lem type="norm" resp="part:argr">līnaṅ</lem>
-                     <rdg wit="#edP #edR">līṇaṅ</rdg>
+                     <rdg wit="#edp #edr">līṇaṅ</rdg>
                   </app> sūkṣmaśarīra māri karəṅə̄ praṇava huvus apiṇḍa niṣkala</l>
             </lg>
             <lg n="8" met="jagaddhita">
@@ -429,11 +554,11 @@
             <lg n="9" met="jagaddhita">
                <l n="a">vvantən sūkṣma ləkasnikaṅ saviji rakva mara marək aṅusvakən vuvus</l>
                <l n="b">rakryan śrī <app>
-                     <lem wit="#edR">drupadātmajā</lem>
-                     <rdg wit="#edP">drupadātmatjā</rdg>
+                     <lem wit="#edr">drupadātmajā</lem>
+                     <rdg wit="#edp">drupadātmatjā</rdg>
                   </app> pəjah akūṅ makatəmahan <app>
-                     <lem wit="#edR">ikiṅ</lem>
-                     <rdg wit="#edP">ikin</rdg>
+                     <lem wit="#edr">ikiṅ</lem>
+                     <rdg wit="#edp">ikin</rdg>
                   </app> mare kita</l>
                <l n="c">mantuk riṅ suraloka tan təmu kitātunuturakəna gatinta sanmatan</l>
                <l n="d">saṅkeṅ svarga ta saṅhulun mahal avak mami madulur anambahe kita</l>
@@ -453,8 +578,8 @@
             <lg n="12" met="jagaddhita">
                <l n="a">anvam pahyas ikaṅ vaneh turuṅ anūpura kuməñar ikāṅ murit mirah</l>
                <l n="b">kambaṅnyān panəlat rikaṅ kasay aniṅgahi halis <app>
-                     <lem wit="#edP">ahəmuk</lem>
-                     <rdg wit="#edR">ahəmūk</rdg>
+                     <lem wit="#edp">ahəmuk</lem>
+                     <rdg wit="#edr">ahəmūk</rdg>
                   </app> təkeṅ kapə̄</l>
                <l n="c">ləṅgaṅ mātra kurugnya riṅ jaja magātra kadi pəṭə təkapnikaṅ susu</l>
                <l n="d">olug ndān inukurnya denya matapih parəṅ umiṅisa yan sirir pisan</l>
@@ -463,9 +588,9 @@
                <l n="a">tuṅgal saṅ magəluṅ grət oləm asəkar taji kuməñar ikaṅ tutup gəluṅ</l>
                <l n="b">mekət ken mvaṅ abāhurakṣa maṇi hīra marakata sadarpa riṅ hayu</l>
                <l n="c">hintən rūmnya <app>
-                     <lem type="emn" resp="#OJED">manoharāṅhadahadāṅhudani</lem>
-                     <rdg wit="#edR">manoharāṅadahadāhudani</rdg>
-                     <rdg wit="#edP">manoharāṅhadahadā hudan i</rdg>
+                     <lem type="emn" source="bib:Zoetmulder1982_01">manoharāṅhadahadāṅhudani</lem>
+                     <rdg wit="#edr">manoharāṅadahadāhudani</rdg>
+                     <rdg wit="#edp">manoharāṅhadahadā hudan i</rdg>
                   </app> rava sənə̄nya riṅ mukha</l>
                <l n="d">sumrak kasturi riṅ vijaṅ kanaka cūrṇa sakasagaritāṅhulap-hulap</l>
                <!-- issue p-h -->
@@ -475,13 +600,13 @@
                <l n="b">vāhv adyus makəmul putih katitihan gəluṅ akiris atə̄b hañar mure</l>
                <l n="c">piṅheniṅ vaja pintigān kininaṅan gisigisi juga hīṅaniṅ mirah</l>
                <l n="d">mrik taṅ <app>
-                     <lem wit="#OJED">saptakumārikāṅləṅa vaṅinya</lem>
-                     <rdg wit="#edP">sapta kumā rikāṅ ləṅa-vaṅinya</rdg>
-                     <rdg wit="#edR">saptakumārikā ṅ ləṅa vaṅinya</rdg>
+                     <lem source="bib:Zoetmulder1982_01">saptakumārikāṅləṅa vaṅinya</lem>
+                     <rdg wit="#edp">sapta kumā rikāṅ ləṅa-vaṅinya</rdg>
+                     <rdg wit="#edr">saptakumārikā ṅ ləṅa vaṅinya</rdg>
                   </app>
                   <app>
-                     <lem wit="#OJED">pinakamukhavāsaniṅ</lem>
-                     <rdg wit="#edR">pinakamukhavāśaniṅ</rdg>
+                     <lem source="bib:Zoetmulder1982_01">pinakamukhavāsaniṅ</lem>
+                     <rdg wit="#edr">pinakamukhavāśaniṅ</rdg>
                   </app> tapih</l>
                <!-- provisional translation: ‘The saptakumārika was fragrant; its scent aṅləṅa (wafted?), serving as perfume for the dress.’ -->
             </lg>
@@ -489,16 +614,16 @@
                <l n="a">tanṅeh buddhinikaṅ vaneh mara ri viṅkiṅanira tumitihtitih mahā</l>
                <l n="b">nyāsanyāṅəsəsan vaśāṅarasakən susu mahaṅət arūm kinumkuman</l>
                <l n="c">deniṅ harṣa kinolakənya ri <app>
-                     <lem wit="#edR">gulūn</lem>
-                     <rdg wit="#edP">gulū</rdg>
+                     <lem wit="#edr">gulūn</lem>
+                     <rdg wit="#edp">gulū</rdg>
                   </app> taṅanira təka kosapiṅ təṅah</l>
                <l n="d">kenyāraṅ kadi varṇaniṅ hima taraṅtaṅən aṅavara vimbaniṅ vulan</l>
             </lg>
             <lg n="16" met="jagaddhita">
                <l n="a">anyat mālihaṅan pupū təhər asaṅga vəhaṅ asidəhāṅdələ̄ mata</l>
                <l n="b">maṅhat-hat <app>
-                     <lem wit="#edP #edR">karavaṅnikaṅ</lem>
-                     <rdg wit="#edK">karavitnikaṅ</rdg>
+                     <lem wit="#edp #edr">karavaṅnikaṅ</lem>
+                     <rdg wit="#edk">karavitnikaṅ</rdg>
                   </app> giṇa karāsikanira tinəmunya riṅ mata</l>
                <!-- issue t-h -->
                <l n="c">tan vruh yan hinilan vulat ri vulatiṅ taruṇa nipuṇa riṅ smarāgama</l>
@@ -511,28 +636,28 @@
                <l n="a">akveh təkapnya rumuvat brata pāṇḍuputra</l>
                <l n="b">
                   <app>
-                     <lem wit="#edR">luṅhā ṅ divaṅkara</lem>
-                     <rdg wit="#edP">laṅhā ṅ dinākara</rdg>
+                     <lem wit="#edr">luṅhā ṅ divaṅkara</lem>
+                     <rdg wit="#edp">laṅhā ṅ dinākara</rdg>
                   </app> ginantyanikaṅ śaśāṅka</l>
                <l n="c">tāmtām aniṅhali <app>
                      <lem type="norm" resp="part:argr">vilāsanikaṅ</lem>
-                     <rdg wit="#edP">vilāśanikāṅ</rdg>
-                     <rdg wit="#edP">vilāśa nikaṅ</rdg>
+                     <rdg wit="#edp">vilāśanikāṅ</rdg>
+                     <rdg wit="#edp">vilāśa nikaṅ</rdg>
                   </app> surastrī</l>
                <l n="d">
                   <app>
-                     <lem wit="#edR">oyut</lem>
-                     <rdg wit="#edP">ūyut</rdg>
+                     <lem wit="#edr">oyut</lem>
+                     <rdg wit="#edp">ūyut</rdg>
                   </app> mahānuluhi ləs <app>
-                     <lem wit="#edR">sumilih</lem>
-                     <rdg wit="#edP">sumilib</rdg>
+                     <lem wit="#edr">sumilih</lem>
+                     <rdg wit="#edp">sumilib</rdg>
                   </app> kameghan</l>
             </lg>
             <lg n="2" met="vasantatilakā">
                <l n="a">lvirnyān kədə̄ mulati gātra saṅ <app>
                      <lem type="norm" resp="part:argr">ārya</lem>
-                     <rdg wit="#edP">āryya</rdg>
-                     <rdg wit="#edR">arya</rdg>
+                     <rdg wit="#edp">āryya</rdg>
+                     <rdg wit="#edr">arya</rdg>
                   </app> pārtha</l>
                <l n="b">miṅmaṅ mamañcana kabañcana deniṅ kūṅnya</l>
                <l n="c">māry ānahāṅiduṅiduṅ humirib laranya</l>
@@ -543,30 +668,30 @@
                <l n="b">ndān susvasusvani kinolnya hanan liniṅliṅ</l>
                <l n="c">rakryan vədinta tan akun ləvu paṅhavista</l>
                <l n="d">heman kitābapa <app>
-                     <lem wit="#edR">nirāgraha</lem>
-                     <rdg wit="#edP">niragraha</rdg>
+                     <lem wit="#edr">nirāgraha</lem>
+                     <rdg wit="#edp">niragraha</rdg>
                   </app> māsku liṅnya</l>
             </lg>
             <lg n="4" met="vasantatilakā">
                <l n="a">līlā hanāmaṭimaṭi vruh amet <app>
                      <lem type="norm" resp="part:argr">vilāsa</lem>
-                     <rdg wit="#edP">vīlāśa</rdg>
-                     <rdg wit="#edR">vilāśa</rdg>
+                     <rdg wit="#edp">vīlāśa</rdg>
+                     <rdg wit="#edr">vilāśa</rdg>
                   </app>
                </l>
                <l n="b">maṅlālanāṅhapiti rakva taṅan saṅ ārya</l>
                <l n="c">edan mahān tukupakənya rike susunya</l>
                <l n="d">kady āṅrəṅə̄ vuluh aghāṣa hatinya <app>
                      <lem type="norm" resp="part:argr">mūrcha</lem>
-                     <rdg wit="#edP">mūrcca</rdg>
-                     <rdg wit="#edR">mūrca</rdg>
+                     <rdg wit="#edp">mūrcca</rdg>
+                     <rdg wit="#edr">mūrca</rdg>
                   </app>
                </l>
             </lg>
             <lg n="5" met="vasantatilakā">
                <l n="a">len taṅ mareṅ natar <app>
-                     <lem wit="#edR">agoṣṭhi</lem>
-                     <rdg wit="#edP">agoṣṭhi</rdg>
+                     <lem wit="#edr">agoṣṭhi</lem>
+                     <rdg wit="#edp">agoṣṭhi</rdg>
                   </app> mahāṅiriṅ doh</l>
                <l n="b">denyāvisikvisik avor guyu śabda mesi</l>
                <l n="c">mañjiṅ muvah manəmu leśya muritnya kāri</l>
@@ -575,8 +700,8 @@
             <lg n="6" met="vasantatilakā">
                <l n="a">
                   <app>
-                     <lem wit="#edR">svecchā</lem>
-                     <rdg wit="#edP">sveccā</rdg>
+                     <lem wit="#edr">svecchā</lem>
+                     <rdg wit="#edp">sveccā</rdg>
                   </app> hanan təhər asaṅhulunan ləkasnya</l>
                <l n="b">məṅgəp kənəp hinilagan kapituṅgal aṅher</l>
                <l n="c">kenken miṅis kadi pacəh təkapiṅ kaśaktin</l>
@@ -588,20 +713,20 @@
                <l n="c">toh hyaṅ vulan ndak aminaṅ pva raras lavan rūm</l>
                <l n="d">
                   <app>
-                     <lem wit="#edR">ndak</lem>
-                     <rdg wit="#edP">ndā k</rdg>
+                     <lem wit="#edr">ndak</lem>
+                     <rdg wit="#edp">ndā k</rdg>
                   </app> syuh samādhinira saṅ viku vītarāga</l>
             </lg>
             <lg n="8" met="vasantatilakā">
                <l n="a">nā liṅnya saṅ pravara <app>
-                     <lem wit="#edR">phalguna</lem>
-                     <rdg wit="#edP">phālguṇa</rdg>
+                     <lem wit="#edr">phalguna</lem>
+                     <rdg wit="#edp">phālguṇa</rdg>
                   </app> niskalaṅka</l>
                <l n="b">pañcendriyāvədi tumon viṣayanya ṅūni</l>
                <l n="c">vruh maṅrəṅə̄ vruh umulat juga tan vikalpa</l>
                <l n="d">māry <app>
                      <lem type="norm" resp="part:argr">āṅaveśa</lem>
-                     <rdg wit="#edP #edR">āṅaveṣa</rdg>
+                     <rdg wit="#edp #edr">āṅaveṣa</rdg>
                   </app> ri hinəṅnira saprahāra</l>
             </lg>
             <lg n="9" met="vasantatilakā">
@@ -623,21 +748,21 @@
                <l n="a">huvus maṅgəh tāmbək surapati lavan devata kabeh</l>
                <l n="b">
                   <app>
-                     <lem wit="#edR">ḍəṅə̄</lem>
-                     <rdg wit="#edP">ṇḍəṅə̄</rdg>
+                     <lem wit="#edr">ḍəṅə̄</lem>
+                     <rdg wit="#edp">ṇḍəṅə̄</rdg>
                   </app> vr̥tta śrī pāṇḍutanaya mamaṅgih kasutapan</l>
                <l n="c">yayā taṇḍasniṅ daityapati juga kavvat hiḍəpira</l>
                <l n="d">tuhun tuṅgal sandeha <app>
                      <lem type="norm" resp="part:argr">talətəhikaṅ</lem>
-                     <rdg wit="#edR">talətəh ikaṅ</rdg>
-                     <rdg wit="#edP">talətəhikāṅ</rdg>
+                     <rdg wit="#edr">talətəh ikaṅ</rdg>
+                     <rdg wit="#edp">talətəhikāṅ</rdg>
                   </app> harṣa kavəkas</l>
             </lg>
             <lg n="2" met="śikhariṇī">
                <l n="a">kavairāgyan saṅ pārtha <app>
                      <lem type="norm" resp="part:argr">kavaśanikaṅ</lem>
-                     <rdg wit="#edP">kavaśanikāṅ</rdg>
-                     <rdg wit="#edR">kavaśan ikaṅ</rdg>
+                     <rdg wit="#edp">kavaśanikāṅ</rdg>
+                     <rdg wit="#edr">kavaśan ikaṅ</rdg>
                   </app> dhyāna vimala</l>
                <l n="b">didin siṅhit riṅ mokṣaphala malupeṅ vāhyavibhava</l>
                <l n="c">luput pvekaṅ sādhyā ya ta karaṇaniṅ mahyun umara</l>
@@ -647,16 +772,16 @@
                <l n="a">vavaṅ prāptāpan hyaṅ kadi makahavan hyunnira təka</l>
                <l n="b">kapaṅgih tekaṅ āśrama vinuni deniṅ jaladhara</l>
                <l n="c">hudan pvekaṅ kālāṅgəgəs <app>
-                     <lem wit="#edR">ata</lem>
-                     <rdg wit="#edP">atha</rdg>
+                     <lem wit="#edr">ata</lem>
+                     <rdg wit="#edp">atha</rdg>
                   </app> sirāṅinkin atəkən</l>
                <l n="d">maṅantī tuṅhāniṅ vivara mapi tan vruh makiḍukus</l>
             </lg>
             <lg n="4" met="śikhariṇī">
                <l n="a">
                   <app>
-                     <lem wit="#edP">asove</lem>
-                     <rdg wit="#edR">sove</rdg>
+                     <lem wit="#edp">asove</lem>
+                     <rdg wit="#edr">sove</rdg>
                   </app> tan sinvāgatan api vatuk lāgi maḍahəm</l>
                <l n="b">aparvāmbək saṅ pārtha linəsuniraṅ yoga sakarəṅ</l>
                <l n="c">katon saṅ pāṇḍyāveh ta sira sakapūjāniṅ atithi</l>
@@ -664,20 +789,20 @@
             </lg>
             <lg n="5" met="śikhariṇī">
                <l n="a">ṅhulun mābhyāsātīrthagamana <app>
-                     <lem wit="#edP">mahas riṅ girivana</lem>
-                     <rdg wit="#edR"/>
+                     <lem wit="#edp">mahas riṅ girivana</lem>
+                     <rdg wit="#edr"/>
                   </app>
                </l>
                <!-- Andrew: how is this to encode the fact that the words mahas riṅ girivana have been (inadvertently) dropped in edR? (they do figure in Robson's translation!)  -->
                <l n="b">anon teja nda ṅke paraparahikaṅ lakṣaṇa katon</l>
                <l n="c">pilih tīrtha pvekaṅ madhanuha <app>
                      <lem resp="part:argr">yatan</lem>
-                     <rdg wit="#edP">ya tān</rdg>
-                     <rdg wit="#edR">ya tan</rdg>
+                     <rdg wit="#edp">ya tān</rdg>
+                     <rdg wit="#edr">ya tan</rdg>
                   </app> paṇḍita tapa</l>
                <l n="d">kṣamā tāntən tan paṅlalarana <app>
-                     <lem wit="#edP">samādhīṅ</lem>
-                     <rdg wit="#edP">samādhī</rdg>
+                     <lem wit="#edp">samādhīṅ</lem>
+                     <rdg wit="#edp">samādhī</rdg>
                   </app> kadi kita</l>
             </lg>
             <lg n="6" met="śikhariṇī">
@@ -691,8 +816,8 @@
                <l n="b">kənoh pəṅpə̄ṅən siṅhitakəna mareṅ uttamapada</l>
                <l n="c">
                   <app>
-                     <lem wit="#edR">aṅiṣṭi</lem>
-                     <rdg wit="#edP">maṅiṣṭi</rdg>
+                     <lem wit="#edr">aṅiṣṭi</lem>
+                     <rdg wit="#edp">maṅiṣṭi</rdg>
                   </app> pvekaṅ vāhyaphala luməkas teka kasasar</l>
                <l n="d">ndya doniṅ janmātiṅgal amr̥ta mahāṅuṅsira viṣa</l>
             </lg>
@@ -708,7 +833,7 @@
                <l n="c">haturniṅ vaṅ tr̥ṣṇeṅ viṣaya malahā tar vihikana</l>
                <l n="d">ri <app>
                      <lem type="norm" resp="part:argr">tattvanyān</lem>
-                     <rdg wit="#edP #edR">tatvanyān</rdg>
+                     <rdg wit="#edp #edr">tatvanyān</rdg>
                   </app> māyā sahanahananiṅ bhāva siluman</l>
             </lg>
             <lg n="10" met="śikhariṇī">
@@ -717,8 +842,8 @@
                <l n="c">kunaṅ yan dharma kṣatriya yaśa lavan vīrya linəvih</l>
                <l n="d">
                   <app>
-                     <lem wit="#edP">ya yāvat</lem>
-                     <rdg wit="#edP">yayadvat</rdg>
+                     <lem wit="#edp">ya yāvat</lem>
+                     <rdg wit="#edp">yayadvat</rdg>
                   </app> riṅ gəgvan makaputusa saṅ hyaṅ kaləpasən</l>
             </lg>
             <lg n="11" met="śikhariṇī">
@@ -736,15 +861,15 @@
                <l n="b">pinakahalanikaṅ rāt yan rāgopahr̥ta juga</l>
                <l n="c">sipi marika kaśaktinyaṅ pañcendriya linagan</l>
                <l n="d">alah <app>
-                     <lem wit="#edR">amarəki ta</lem>
-                     <rdg wit="#edP">amarəkita</rdg>
+                     <lem wit="#edr">amarəki ta</lem>
+                     <rdg wit="#edp">amarəkita</rdg>
                   </app> ndah saṅsāranta katətəhan</l>
                <!-- OJED (s.v. katĕtĕhan) proposes to emend tan doh -->
             </lg>
             <lg n="2" met="giriśa">
                <l n="a">tuhaburu təmahan moṅ śakteṅ <app>
                      <lem type="norm">sattva</lem>
-                     <rdg wit="#edP #edR">satva</rdg>
+                     <rdg wit="#edp #edr">satva</rdg>
                   </app> dahat ikā</l>
                <l n="b">tuharava vuhayekān dadyāniṅ dr̥ḍha riṅ ivak</l>
                <l n="c">sakatiliṅaniṅ ambək tan vyarthān dadi kapitūt</l>
@@ -765,8 +890,8 @@
             <lg n="5" met="giriśa">
                <l n="a">harəp ayaśa mahayvaṅ rāt lāvan kaparahitan</l>
                <l n="b">juga raputu <app>
-                     <lem wit="#edP">maharṣin</lem>
-                     <rdg wit="#edR">mahārṣin</rdg>
+                     <lem wit="#edp">maharṣin</lem>
+                     <rdg wit="#edr">mahārṣin</rdg>
                   </app> pamrihmrih matakitaki</l>
                <l n="c">yatan anumata saṅ hyaṅ tāde matya tan uliha</l>
                <l n="d">nahan ujarira yekān pendah rūpa munivara</l>
@@ -776,8 +901,8 @@
                <l n="b">luṅayanira sinambut de saṅ māsih atanaya</l>
                <l n="c">anaku bapa pahenak tiṅhaltāku surapati</l>
                <l n="d">niyata sira bhaṭāra <app>
-                     <lem wit="#edP">hyaṅ</lem>
-                     <rdg wit="#edR"/>
+                     <lem wit="#edp">hyaṅ</lem>
+                     <rdg wit="#edr"/>
                   </app> rudrāsiha ri kita</l>
                <!-- Andrew: another case of a word inadvertently omitted in edR -->
             </lg>
@@ -787,8 +912,8 @@
                <l n="c">hana kavədi mataṅnya ndak tvasteṅ rasa kavikun</l>
                <!-- c: em. ndat tvas? -->
                <l n="d">taya <app>
-                     <lem wit="#edR">təhəra virāgyā</lem>
-                     <rdg wit="#edP">təhər avirāgyā</rdg>
+                     <lem wit="#edr">təhəra virāgyā</lem>
+                     <rdg wit="#edp">təhər avirāgyā</rdg>
                   </app> tan polih ṅvaṅ apunagi</l>
             </lg>
             <lg n="8" met="giriśa">
@@ -797,21 +922,21 @@
                <l n="c">muliha ta kami maṅke liṅ hyaṅ śakra tan asuve</l>
                <l n="d">ri huvusira <app>
                      <lem type="norm" resp="part:argr">sinambahh antarlīṇa</lem>
-                     <rdg wit="#edP">sinambah antarlīṇa</rdg>
-                     <rdg wit="#edR">sinambah hantarlīṇa</rdg>
+                     <rdg wit="#edp">sinambah antarlīṇa</rdg>
+                     <rdg wit="#edr">sinambah hantarlīṇa</rdg>
                   </app> namunamu</l>
                <!-- Andrew: using '<lem type="norm" resp="part:argr">sinambahh antarlīṇa</lem>' for creation of the rather abnormally spelt word sinambahh is somewhat counterintuitive; is there really any need to specify @type? -->
             </lg>
             <lg n="9" met="giriśa">
                <l n="a">ri vurinira matambəh prih saṅ pārtha <app>
-                     <lem wit="#edR">daśaguṇa</lem>
-                     <rdg wit="#edP">daśaguṇa</rdg>
+                     <lem wit="#edr">daśaguṇa</lem>
+                     <rdg wit="#edp">daśaguṇa</rdg>
                   </app>
                </l>
                <l n="b">kadi gatinikaṅ usvan yan vāhv āvukus apanas</l>
                <l n="c">maṅinakinaka <app>
-                     <lem wit="#edR">taṅ vvaṅ</lem>
-                     <rdg wit="#edP">ta ṅ vaṅ</rdg>
+                     <lem wit="#edr">taṅ vvaṅ</lem>
+                     <rdg wit="#edp">ta ṅ vaṅ</rdg>
                   </app> byaktā tan pavijil apuy</l>
                <l n="d">vahu lumacalacāṅ don maṅkin ṅ vaṅ tan upirupir</l>
                <!-- issue ṅ -->
@@ -825,7 +950,7 @@
                <l n="c">saṅkəp sāmanta mantrī saha bala balavān vallabhān kapva bela</l>
                <l n="d">maṅkin lobhān idī kahyaṅan aṅusakasik sə̄k səsə̄k <app>
                      <lem type="norm" resp="part:argr">rakṣakanya</lem>
-                     <rdg wit="#edP #edR">rākṣakanya</rdg>
+                     <rdg wit="#edp #edr">rākṣakanya</rdg>
                   </app>
                </l>
             </lg>
@@ -837,8 +962,8 @@
             </lg>
             <lg n="3" met="sragdharā">
                <l n="a">vvantən vəltiknikaṅ vr̥tta vinarahakəniṅ cāra <app>
-                     <lem wit="#edP">core pracāra</lem>
-                     <rdg wit="#edR">corepracāra</rdg>
+                     <lem wit="#edp">core pracāra</lem>
+                     <rdg wit="#edr">corepracāra</rdg>
                      <note>OJED s.v. core expresses the opinion that <quote>corepracāra = cauryapr. seems less likely for AW</quote>. It is unclear if (and if so why) Robson really opined differently.</note>
                   </app>
                </l>
@@ -854,7 +979,7 @@
             </lg>
             <lg n="5" met="sragdharā">
                <l n="a">ambək saṅ pārtha molah kadi <app>
-                     <lem wit="#edP #edR">vinarah ikāṅ</lem>
+                     <lem wit="#edp #edr">vinarah ikāṅ</lem>
                      <note>OJED s.v. wara III reads
         		winara hikaṅ dhyāna lāwan samādhi and states: <quote>Perhaps winara is passive from wara &lt; awara, hence = inawara. KBW has the var. mawara, not given by Pb., who reads winarah ikaṅ; bal. com.: kasaṅkala, binañcana.</quote>
                      </note>
@@ -862,8 +987,8 @@
                <l n="b">təkvan kolāhalekaṅ vivara vahu rəṅat deni sovenya liṇḍu</l>
                <l n="c">hetunyāṅlīlalīlāmijil amava laras hrū təke taṅkulaknya</l>
                <l n="d">tonton tekaṅ varāhāṅrurah acala <app>
-                     <lem wit="#edP">śilā</lem>
-                     <rdg wit="#edR">śila</rdg>
+                     <lem wit="#edp">śilā</lem>
+                     <rdg wit="#edr">śila</rdg>
                   </app> śīrṇa sinvabnya kabvaṅ</l>
             </lg>
             <lg n="6" met="sragdharā">
@@ -872,8 +997,8 @@
                <l n="c">ardhādoh ndān aṅinyan təka mamusus ikāṅ vr̥kṣa rūg tan paśeṣa</l>
                <l n="d">kālanyāṅher təkanya nda tucapa ta ḍatəṅ śrī <app>
                      <lem resp="part:argr">mahānīlakaṇṭha</lem>
-                     <rdg wit="#edP">mahā nīlakaṇṭha</rdg>
-                     <rdg wit="#edR">mahānīlakaṇṭa</rdg>
+                     <rdg wit="#edp">mahā nīlakaṇṭha</rdg>
+                     <rdg wit="#edr">mahānīlakaṇṭa</rdg>
                   </app>
                </l>
             </lg>
@@ -909,8 +1034,8 @@
                <l n="a">nir taṅ valkala majaṭā hāneṅ vanādri</l>
                <!-- read nirvaṅ? -->
                <l n="b">hiṅsākarma tan ahaləp <app>
-                     <lem wit="#edR">viruddhaveṣa</lem>
-                     <rdg wit="#edP">viruddhaveśa</rdg>
+                     <lem wit="#edr">viruddhaveṣa</lem>
+                     <rdg wit="#edp">viruddhaveśa</rdg>
                   </app>
                </l>
                <l n="c">pakṣa pveku viku ləkas nirāgamanyu</l>
@@ -920,17 +1045,17 @@
                <l n="a">aṅhiṅ saṅ gurumu kapātakan təkapmu</l>
                <l n="b">hāh dūrān hana daśaśīla kavruhamva</l>
                <l n="c">burankv īki <app>
-                     <lem wit="#edP">hinalaṅanmu</lem>
-                     <rdg wit="#edR">ṅ inalaṅanmu</rdg>
+                     <lem wit="#edp">hinalaṅanmu</lem>
+                     <rdg wit="#edr">ṅ inalaṅanmu</rdg>
                   </app> tan vruh iṅ rāt</l>
                <l n="d">tan vriṅ tvaṅ kuhaka sapatyanāvamāna</l>
             </lg>
             <lg n="5" met="praharṣiṇī">
                <l n="a">cəb pəṅ karṇa nr̥patiputra de bhaṭāra</l>
                <l n="b">krodhāṅdagdha sahurirātərəh tar <app>
-                     <lem wit="#OJED">agyā</lem>
-                     <rdg wit="#edP">agya</rdg>
-                     <rdg wit="#edR">āgya</rdg>
+                     <lem source="bib:Zoetmulder1982_01">agyā</lem>
+                     <rdg wit="#edp">agya</rdg>
+                     <rdg wit="#edr">āgya</rdg>
                   </app>
                </l>
                <l n="c">āyay hayva kadaluruṅ təkapmu mojar</l>
@@ -946,15 +1071,15 @@
                <l n="a">nistanyan kalivat ujarmu karṇaśūla</l>
                <l n="b">yan mopakṣama ri ləbūni pādukaṅku</l>
                <l n="c">tan dady āku <app>
-                     <lem wit="#edR">təhəra vaira</lem>
-                     <rdg wit="#edP">təhər avera</rdg>
+                     <lem wit="#edr">təhəra vaira</lem>
+                     <rdg wit="#edp">təhər avera</rdg>
                   </app> dīrgharoṣa</l>
                <l n="d">yan tan supraṇata katon pəjahmu deṅku</l>
             </lg>
             <lg n="8" met="praharṣiṇī">
                <l n="a">liṅ saṅ <app>
-                     <lem wit="#edR">phalguna</lem>
-                     <rdg wit="#edP">phālguṇa</rdg>
+                     <lem wit="#edr">phalguna</lem>
+                     <rdg wit="#edp">phālguṇa</rdg>
                   </app> tuməke kirātarūpa</l>
                <l n="b">sumyūk taṅ śaravara siddhasaṅgha makrak</l>
                <l n="c">kapvāṅambuli maṅasut mañakra maṅduk</l>
@@ -963,14 +1088,14 @@
             <lg n="9" met="praharṣiṇī">
                <l n="a">hetunyān pamanahakən ta bāyubajra</l>
                <l n="b">sātus tambana pavanāmaṅun <app>
-                     <lem wit="#edR">śarīra</lem>
-                     <rdg wit="#edP">śarīa</rdg>
+                     <lem wit="#edr">śarīra</lem>
+                     <rdg wit="#edp">śarīa</rdg>
                   </app>
                </l>
                <!-- possibly sātus stambhana? -->
                <l n="c">kabvaṅ dhvāsta kahabalaṅ <app>
-                     <lem wit="#edR">musuhnirāvri</lem>
-                     <rdg wit="#edP">musuh mirāvu</rdg>
+                     <lem wit="#edr">musuhnirāvri</lem>
+                     <rdg wit="#edp">musuh mirāvu</rdg>
                   </app>
                </l>
                <l n="d">saṅ hyaṅ śaṅkara juga kāri nirvikāra</l>
@@ -990,8 +1115,8 @@
             <lg n="12" met="praharṣiṇī">
                <l n="a">hrū vailamba paḍa sənāha tan pramāda</l>
                <l n="b">sevu <app>
-                     <lem wit="#edR">kvehnya</lem>
-                     <rdg wit="#edP">kveknya</rdg>
+                     <lem wit="#edr">kvehnya</lem>
+                     <rdg wit="#edp">kveknya</rdg>
                   </app> mamukha loha saprasāda</l>
                <l n="c">atyanta prakaṭa parəṅ ləpas mavantah</l>
                <l n="d">guntur sakṣaṇa ri təṅahnikaṅ raṇāṅga</l>
@@ -1005,8 +1130,8 @@
             </lg>
             <lg n="14" met="praharṣiṇī">
                <l n="a">hrū sambartaka <app>
-                     <lem wit="#edR">pamapagnirādhikāra</lem>
-                     <rdg wit="#edP">pamapagnirādhitāra</rdg>
+                     <lem wit="#edr">pamapagnirādhikāra</lem>
+                     <rdg wit="#edp">pamapagnirādhitāra</rdg>
                   </app>
                </l>
                <l n="b">meghānuṅgul aṅadəg iṅ raṇāṅgamadhya</l>
@@ -1014,7 +1139,7 @@
                <l n="d">
                   <app>
                      <lem type="norm" resp="part:argr">dhvastekāṅ</lem>
-                     <rdg wit="#edP #edR">dhvāstekāṅ</rdg>
+                     <rdg wit="#edp #edr">dhvāstekāṅ</rdg>
                   </app> apuy alilaṅ parəṅ vināśa</l>
             </lg>
          </div>
@@ -1049,48 +1174,48 @@
                <l n="b">vrug riṅ saṅsiptapūjā sira humarəpakən hyaṅ rudra tan adoh</l>
                <l n="c">mudra mvaṅ kūṭamantrasmr̥ti vimala nahan puṣpāñjalinira</l>
                <l n="d">sampunyān <app>
-                     <lem wit="#edR">maṅkanāṅastuti</lem>
-                     <rdg wit="#edP">maṅkanā mastuti</rdg>
+                     <lem wit="#edr">maṅkanāṅastuti</lem>
+                     <rdg wit="#edp">maṅkanā mastuti</rdg>
                   </app> ta sira rəṅə̄n uccāraṇanira</l>
             </lg>
          </div>
          <div type="canto" n="10">
-	<!-- mṛdukomala: - - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ = !-->
-            <lg n="1" met="mṛdukomala">
+	<!-- mr̥dukomala: - - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ = !-->
+            <lg n="1" met="mr̥dukomala">
                <l n="a">aum səmbahniṅ anātha tiṅhalana de trilokaśaraṇa</l>
                <l n="b">vāhyādhyātmika səmbahiṅ hulun i jə̄ṅta tan hana vaneh</l>
                <l n="c">saṅ <app>
-                     <lem wit="#edR">lvīr</lem>
-                     <rdg wit="#edP">lvir</rdg>
+                     <lem wit="#edr">lvīr</lem>
+                     <rdg wit="#edp">lvir</rdg>
                   </app> agni sakeṅ tahən kadi miñak sakeṅ dadhi kita</l>
                <l n="d">saṅ sākṣāt mətu yan hana vvaṅ amutər tutur pinahayu</l>
             </lg>
-            <lg n="2" met="mṛdukomala">
+            <lg n="2" met="mr̥dukomala">
                <l n="a">
                   <app>
-                     <lem wit="#Berg">vyāpi</lem>
-                     <rdg wit="#edP #edR">vyāpī</rdg>
+                     <lem source="bib:Berg1933_01">vyāpi</lem>
+                     <rdg wit="#edp #edr">vyāpī</rdg>
                   </app>vyāpaka sāriniṅ <app>
                      <lem type="norm">paramatattva</lem>
-                     <rdg wit="#edP #edR">paramatattva</rdg>
+                     <rdg wit="#edp #edr">paramatattva</rdg>
                   </app> durlabha kita</l>
                <l n="b">
                   <app>
-                     <lem wit="#edR">icchāntāṅ</lem>
-                     <rdg wit="#edP">iccāntā ṅ</rdg>
-                     <rdg wit="#Berg">iccānta ṅ</rdg>
+                     <lem wit="#edr">icchāntāṅ</lem>
+                     <rdg wit="#edp">iccāntā ṅ</rdg>
+                     <rdg source="bib:Berg1933_01">iccānta ṅ</rdg>
                   </app> hana tan hanāganal alit lavan halahayu</l>
                <l n="c">utpattisthiti<app>
-                     <lem wit="#Berg">līnaniṅ</lem>
-                     <rdg wit="#edP #edR">līṇaniṅ</rdg>
+                     <lem source="bib:Berg1933_01">līnaniṅ</lem>
+                     <rdg wit="#edp #edr">līṇaniṅ</rdg>
                   </app> dadi kitāta <app>
-                     <lem wit="#edP">kāraṇanika</lem>
-                     <rdg wit="#edR">kāraṇa nikā</rdg>
+                     <lem wit="#edp">kāraṇanika</lem>
+                     <rdg wit="#edr">kāraṇa nikā</rdg>
                   </app>
                </l>
                <l n="d">saṅ saṅkan paraniṅ sarāt sakala<app>
-                     <lem wit="#edR">niṣkalātmaka</lem>
-                     <rdg wit="#edP">niskalātmaka</rdg>
+                     <lem wit="#edr">niṣkalātmaka</lem>
+                     <rdg wit="#edp">niskalātmaka</rdg>
                   </app> kita</l>
             </lg>
          </div>
@@ -1108,8 +1233,8 @@
                <l n="c">kavənaṅta mareka si tan kavənaṅ</l>
                <l n="d">
                   <app>
-                     <lem wit="#edR">paramārthaśivatva</lem>
-                     <rdg wit="#edP">paramārtha śivatva</rdg>
+                     <lem wit="#edr">paramārthaśivatva</lem>
+                     <rdg wit="#edp">paramārtha śivatva</rdg>
                   </app> nirāvaraṇa</l>
             </lg>
          </div>
@@ -1121,8 +1246,8 @@
                <l n="c">hana paṅanugrahankva caduśakti vinimba śara</l>
                <l n="d">
                   <app>
-                     <lem wit="#edP">paśupatiśastrakāstu</lem>
-                     <rdg wit="#edR">paśupatiśastrāstu</rdg>
+                     <lem wit="#edp">paśupatiśastrakāstu</lem>
+                     <rdg wit="#edr">paśupatiśastrāstu</rdg>
                   </app> paṅaranya nihan vulati</l>
             </lg>
             <lg n="2" met="rajanī">
@@ -1148,8 +1273,8 @@
                <l n="a">hana mara janma tan papihutaṅ brata yoga tapa</l>
                <l n="b">
                   <app>
-                     <lem wit="#edR">aṅəṭul</lem>
-                     <rdg wit="#edP">aṅədul</rdg>
+                     <lem wit="#edr">aṅəṭul</lem>
+                     <rdg wit="#edp">aṅədul</rdg>
                   </app> aminta vīrya sukhaniṅ vidhi sāhasikā</l>
                <l n="c">binalikakən purihnika ləvih tinəmunya lara</l>
                <l n="d">sinakitaniṅ rajah tamah inaṇḍəhaniṅ prihatin</l>
@@ -1189,8 +1314,8 @@
                <l n="b">ndan asuma saṅ hinundaṅ avəlas ri kakārinira</l>
                <l n="c">
                   <app>
-                     <lem wit="#edR">laraniṅ</lem>
-                     <rdg wit="#edP">lanariṅ</rdg>
+                     <lem wit="#edr">laraniṅ</lem>
+                     <rdg wit="#edp">lanariṅ</rdg>
                   </app> inaryakən paḍani kūṅniṅ aniṅgalakən</l>
                <l n="d">karaṇanirān hənəṅ rudita śoka sumə̄ṅ ri mata</l>
             </lg>
@@ -1204,8 +1329,8 @@
                <l n="a">ya marika hetuniṅ kapihənəṅ kṣama tan vihaṅa</l>
                <l n="b">laraniṅ inambvakən kadi mavīrya lavan maguṇa</l>
                <l n="c">makadadahāṅ <app>
-                     <lem wit="#edR">hurip</lem>
-                     <rdg wit="#edP">hirip</rdg>
+                     <lem wit="#edr">hurip</lem>
+                     <rdg wit="#edp">hirip</rdg>
                   </app> tuvi yayā tika keraṅiraṅ</l>
                <l n="d">guṇani kadevatānira jugākr̥takr̥tya hələm</l>
             </lg>
@@ -1226,18 +1351,18 @@
                <l n="a">mamvit narendrātmaja riṅ tapovana</l>
                <l n="b">
                   <app>
-                     <lem wit="#edR">maṅañjali</lem>
-                     <rdg wit="#edP">māṅañjali</rdg>
+                     <lem wit="#edr">maṅañjali</lem>
+                     <rdg wit="#edp">māṅañjali</rdg>
                   </app> ry agraniṅ indraparvata</l>
                <l n="c">tan vismr̥tī saṅkanikaṅ hayun <app>
-                     <lem wit="#edR">təkā</lem>
-                     <rdg wit="#edP">təka</rdg>
+                     <lem wit="#edr">təkā</lem>
+                     <rdg wit="#edp">təka</rdg>
                   </app>
                </l>
                <l n="d">
                   <app>
-                     <lem wit="#edR">svabhāva</lem>
-                     <rdg wit="#edP">svābhāva</rdg>
+                     <lem wit="#edr">svabhāva</lem>
+                     <rdg wit="#edp">svābhāva</rdg>
                   </app> saṅ sajjana rakva maṅkana</l>
             </lg>
             <lg n="2" met="indravaṅśa">
@@ -1297,121 +1422,121 @@
          </div>
          <div type="canto" n="14">
 	<!-- kāmamāla: ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ = !-->
-            <lg n="1" met="kāmamāla">
+            <lg n="1" met="kāmamālā">
                <l n="a">hadi harṣaniṅ tarulatāṅəlih aṅayamayam labuh kapāt</l>
                <l n="b">sukhaniṅ sakendran i ḍatəṅ nr̥pasuta kadi tambay iṅ hudan</l>
                <l n="c">ṅuniveh tikāṅ suravadhū dumadak asəmi kūṅnya denira</l>
                <l n="d">kətəriṅ patər paḍani vr̥tta nira lagi rinəṅvarəṅvakən</l>
             </lg>
-            <lg n="2" met="kāmamāla">
+            <lg n="2" met="kāmamālā">
                <l n="a">ri səḍəṅ nirān tama sinaṅgraha ta sira təkapniṅ apsarī</l>
                <l n="b">amapag sakeṅ paṅuṅaṅan maka pasaji manisnikāṅ mata</l>
                <l n="c">hinuvusnya riṅ crəmin ikāṅ liriṅ aluru binaṅkitan guyu</l>
                <l n="d">asəgəh manahnya tamuyan vənaṅ asiliha riṅ smarāgama</l>
             </lg>
-            <lg n="3" met="kāmamāla">
+            <lg n="3" met="kāmamālā">
                <l n="a">surakanyakā sahananiṅ kararan atiki tan hanāṅuṅaṅ</l>
                <l n="b">kadi tan pamātra turidanya linacalacaniṅ kakāṅhyasi</l>
                <l n="c">aviṅitviṅit sinuruyan dalidalihana riṅraṅiṅ hati</l>
                <l n="d">agələm ta yāñalukakən sahaja cala tinagvatagvakən</l>
             </lg>
-            <lg n="4" met="kāmamāla">
+            <lg n="4" met="kāmamālā">
                <l n="a">hana tāpi tan vruh i ḍatəṅ nr̥patanaya mahāṅhadehade</l>
                <l n="b">ndan atən tumiṅhali susunya maṅuvahi tapihnya tan lukar</l>
                <l n="c">hana lālananya ginavenya madana həlariṅ madhubrata </l>
                <l n="d">anasar təkapnya n agave hinaməramər alaṇḍəsan kuku</l>
             </lg>
-            <lg n="5" met="kāmamāla">
+            <lg n="5" met="kāmamālā">
                <l n="a">mvaṅ ikāṅ pituṅ siki rikāna kadaluruṅ ulahnya riṅ gihā</l>
                <l n="b">kataman hiraṅ paḍa mapet silib acatu hanāgəlar nita</l>
                <l n="c">aṅikət səkartaji vaneh titir aṅuvahi mogha tan tulus</l>
                <l n="d">apa tan vuruṅ rəṅərəṅə̄n pati rəṅurəṅu yan hanāṅucap</l>
             </lg>
-            <lg n="6" met="kāmamāla">
+            <lg n="6" met="kāmamālā">
                <l n="a">aṅənəs vaneh mapi turū mapi lara mapupuk vulanvulan</l>
                <l n="b">aṅanam vilāśa ri hatinya ta kunəṅ anuṅ endahāraras</l>
                <l n="c">ulahanya lāvan ujaranya hələm i sira saṅ hañar ḍatəṅ</l>
                <l n="d">aturū mateki vəkasan kadikadi maṅipīpi rakva ya</l>
             </lg>
-            <lg n="7" met="kāmamāla">
+            <lg n="7" met="kāmamālā">
                <l n="a">maṅucap vaneh samasamitra maguñəpan avarṇa gopita</l>
                <l n="b">lalitā harəp=harəpan ahyas ajajar ataviṅtaviṅ crəmin</l>
                <l n="c">asalin ginoṣṭinika yan kadurugan agave vulat dudū</l>
                <l n="d">ahirit svaranya karəṅə̄ tinunatuna tinuṅtuṅan halis</l>
             </lg>
-            <lg n="8" met="kāmamāla">
+            <lg n="8" met="kāmamālā">
                <l n="a">adavān kathākəna rarasrarasi hati nikāṅ surāṅgaṇā</l>
                <l n="b">sira saṅ dhanañjaya ḍatəṅ dumunuṅ i kahanan surādhipa</l>
                <l n="c">kahaḍaṅ gumopita ṅ upāya gavayira lavan vr̥haspati</l>
                <l n="d">hana devatā milu tuhun makəḍika taya dumpidumpilan</l>
             </lg>
-            <lg n="9" met="kāmamāla">
+            <lg n="9" met="kāmamālā">
                <l n="a">ararəm saṅ arjuna səḍəṅ praṇata vinuvusan surādhipa</l>
                <l n="b">śivam astu śāśvata vəkaṅku śaraṇaniṅ anātha digjaya</l>
                <l n="c">taśileṅ paṭārana sabhāgya ta kita bapa tan kagiṇḍala</l>
                <l n="d">bapa kāryakāraṇa mataṅhulun i kita manuṅsuṅiṅ bhaya</l>
             </lg>
-            <lg n="10" met="kāmamāla">
+            <lg n="10" met="kāmamālā">
                <l n="a">iki hetuniṅ hulun ahə̄m pralayabhaya tuhun mapadgata</l>
                <l n="b">hana daitya śakti si nivātakavaca subhageṅ jagattraya</l>
                <l n="c">kṣatrakr̥tya tan pəjaha deniṅ asura r̥ṣi deva dānava</l>
                <l n="d">kunəṅ antakanya laki mānuṣa juga pavəkas hyaṅ īśvara</l>
             </lg>
-            <lg n="11" met="kāmamāla">
+            <lg n="11" met="kāmamālā">
                <l n="a">karəṅə̄ pva vr̥tta mami miñjəm i kita tumuluy prakāśita</l>
                <l n="b">aṅutus ta yāsura viśeṣa məjahana kiteṅ tapovana</l>
                <l n="c">ya tikā varāha təmahanya pinarəṅanira hyaṅ īśvara</l>
                <l n="d">pakaleśya taṅ maburu ṅūni səḍəṅira ṅanugrahe kita</l>
             </lg>
-            <lg n="12" met="kāmamāla">
+            <lg n="12" met="kāmamālā">
                <l n="a">nda huvus katon kr̥tavaranta təkapika pakāśrayan mami</l>
                <l n="b">tumihaṅ ta rakva ya śumīrṇa sahanahananiṅ kadevatan</l>
                <l n="c">alavas harəp luməbura ṅ surapada madaləm galaknikā</l>
                <l n="d">kita teki rākṣasa harānaku pakayaśa saṅ hulun kabeḥ</l>
             </lg>
-            <lg n="13" met="kāmamāla">
+            <lg n="13" met="kāmamālā">
                <l n="a">na vuvus hyaṅ indra sumahur nr̥patanaya huvus kr̥tāñjali</l>
                <l n="b">apa yan tahan kari təkapniṅ aṅutusa saliṅ surādhipa</l>
                <l n="c">inanugrahan ṅaraniki n vinadal i liḍahiṅ huvus vibhuh</l>
                <l n="d">riṅ apan paniṣphala ṅ acāmana rarabi ləbūni jə̄ṅ prabhu</l>
             </lg>
-            <lg n="14" met="kāmamāla">
+            <lg n="14" met="kāmamālā">
                <l n="a">aparan tikāṅ ulaha yan mapa putusanikāṅ alapkəna</l>
                <l n="b">varahən patiksurapati ndya ta vəkasiṅ upāya sādhana</l>
                <l n="c">taña saṅ dhanañjaya pagəhni manahira kumon surādhipa</l>
                <l n="d">bhagavān vr̥haspati marah sira ri putusikāṅ alapkəna</l>
             </lg>
-            <lg n="15" met="kāmamāla">
+            <lg n="15" met="kāmamālā">
                <l n="a">laki kumva pə̄hni naya saṅ vivudhapati lavan vatək r̥ṣi</l>
                <l n="b">aləməh təkāna niyata ṅ surapada ya viśīrṇa kambaha</l>
                <l n="c">anəkāna ta pva kita śatru parəpəkana tan tahəntvasən</l>
                <l n="d">varavīrya śaktini bapaṅku juga lagi hiner pakāśrayan</l>
             </lg>
-            <lg n="16" met="kāmamāla">
+            <lg n="16" met="kāmamālā">
                <l n="a">mvaṅ ikāṅ nivātakavacātiśaya nipuṇa śakti nītimān</l>
                <l n="b">śatajarjjharīkr̥ta ta rakva niyata juga yāhurip muvah</l>
                <l n="c">ri luput nikāṅ paramaśakti hana ta ya vəkasnikaṅ varah</l>
                <l n="d">kahananya teki viniveka viphala ṅ alagāṅhavaghavag</l>
             </lg>
-            <lg n="17" met="kāmamāla">
+            <lg n="17" met="kāmamālā">
                <l n="a">hana tāpsarī pinalakunya malavas i surendra tan kaveh</l>
                <l n="b">kinirim vaneh juga ya lāgi salahasa titir harəp=harəp</l>
                <l n="c">rinasan katuhvan atikin tan ika vənaṅa marvanī ratiḥ</l>
                <l n="d">ya tikā maṅuṅgahana jātyanika gərəmə tan panaṅśaya</l>
             </lg>
-            <lg n="18" met="kāmamāla">
+            <lg n="18" met="kāmamālā">
                <l n="a">palarən ta yājara hələm sigisiginən ikāṅ anugraha</l>
                <l n="b">makahīṅana ṅ kagaməlātiki saṅ inarananta suprabhā</l>
                <l n="c">usənā ta yāvaraha yan pavaraha ṅ asurādhipe riya</l>
                <l n="d">atəhər ta yāṅhira salampah i kita tadulur harānaku</l>
             </lg>
-            <lg n="19" met="kāmamāla">
+            <lg n="19" met="kāmamālā">
                <l n="a">anubhāra donani bapaṅku vulatana sabhānikaṅ musuh</l>
                <l n="b">bhaya durganiṅ kuṭa lavan pagəlarana dəlāha kavruhi</l>
                <l n="c">takalambi kambala tapāduka tacələk adr̥śyasādhana</l>
                <l n="d">kami pārccayānaku kapāna kita bapa kasambya denikā</l>
             </lg>
-            <lg n="20" met="kāmamāla">
+            <lg n="20" met="kāmamālā">
                <l n="a">ndan araryarayyana matānaku labuhana de sureśvara</l>
                <l n="b">hana tān panaṅgraha mami ṅ atithi juga bapaṅku tasyasih</l>
                <l n="c">palarən vatək r̥ṣi kabeh maləsa kita riṅ ambək uttama</l>
@@ -1644,74 +1769,74 @@
             </lg>
          </div>
          <div type="canto" n="18">
-	<!-- mṛdukomala: - - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ = !-->
-            <lg n="1" met="mṛdukomala">
+	<!-- mr̥dukomala: - - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ = !-->
+            <lg n="1" met="mr̥dukomala">
                <l n="a">ḍū nohanku kakān kacuṇḍuk i kitān dunuṅ kadi dine</l>
                <l n="b">maṅkeka pva haləpnikāṅ i maṇimantakāparimitta</l>
                <l n="c">ṅūni ṅvaṅ mara yan vruhāləviha saṅka riṅ surapada</l>
                <l n="d">maṅkin śīrṇa kəta ṅ surālaya huvus hilaṅ malaradan</l>
             </lg>
-            <lg n="2" met="mṛdukomala">
+            <lg n="2" met="mr̥dukomala">
                <l n="a">sambandhanya huvus katon saṅ asurādhipān lumuruga</l>
                <l n="b">byaktā bhrāṣṭanikāṅ surālaya viśīrṇa həntya kahala</l>
                <l n="c">yekin kāraṇaniṅ ḍatəṅ humulu pādapaṅkaja haji</l>
                <l n="d">maṅlonloni kasevakan ṅhulun abhaktya tan kahañaṅa</l>
             </lg>
-            <lg n="3" met="mṛdukomala">
+            <lg n="3" met="mr̥dukomala">
                <l n="a">vīnāṅ dyah pira harṣa saṅ prabhu ruməṅva denta mavuvus</l>
                <l n="b">lvir śrīniṅ madhumāsakāla təka riṅ hapit juga kita</l>
                <l n="c">kiṅkiṅniṅ tr̥ṇavr̥kṣa tulyani lulut saṅ onəṅ i kita</l>
                <l n="d">induṅ mājara saṅhulun dr̥ḍha tumona garjjita haji</l>
             </lg>
-            <lg n="4" met="mṛdukomala">
+            <lg n="4" met="mr̥dukomala">
                <l n="a">rvekāṅ mājara kāri tunṅal aṅucap lavan saṅ asumā</l>
                <l n="b">prāptekāṅ mavarah satorasi ri saṅ nivātakavaca</l>
                <l n="c">sojar saṅ prabhu suprabhān vahu ḍatəṅ suməmbah i haji</l>
                <l n="d">maṅke prāpta sakeṅ surālaya haneṅ taman kasiharəp</l>
             </lg>
-            <lg n="5" met="mṛdukomala">
+            <lg n="5" met="mr̥dukomala">
                <l n="a">hetunyān təka kūṅnya ṅūni hulune pananmata haji</l>
                <l n="b">saṅ hyaṅ śakra jugātəṅət mahal avaknya teki vəkasan</l>
                <l n="c">āpan byakta viśīrṇaniṅ surapadān təkap saṅ ahulun</l>
                <l n="d">prajñāṅloni kasevakan dugadugāləməh kahañaṅa</l>
             </lg>
-            <lg n="6" met="mṛdukomala">
+            <lg n="6" met="mr̥dukomala">
                <l n="a">nāhan liṅnya kinon marəkmarəka de nivātakavaca</l>
                <l n="b">harṣāṅgañjar i raśminiṅ guyu sirāmanis vulatira</l>
                <l n="c">saṅ konəṅnira ṅūni rakva təka tanpa saṅkan inucap</l>
                <l n="d">tanpojar sakarəṅ pijər mənəbənəb raras hatinira</l>
             </lg>
-            <lg n="7" met="mṛdukomala">
+            <lg n="7" met="mr̥dukomala">
                <l n="a">mojar bhāgya jugāṇ ḍatəṅ maṇikikāṅ surendrabhavana</l>
                <l n="b">lakṣmīniṅ suraloka kagraha təkapku sāmpun aṅalih</l>
                <l n="c">nāhan liṅnya madān umaṅkata mareṅ taman mamapaga</l>
                <l n="d">luṅhāṅgopita denirān laku tanora kapriya tumūt</l>
             </lg>
-            <lg n="8" met="mṛdukomala">
+            <lg n="8" met="mr̥dukomala">
                <l n="a">sāmpun prāpta sireṅ tamān alasalasnya tulya rahina</l>
                <l n="b">deniṅ lek gumavaṅ linūdan i kəñar nikāṅ maṇimaya</l>
                <l n="c">riṅ raṅkaṅ sphaṭikān dunuṅ mulati gātra saṅ vahu ḍatəṅ</l>
                <l n="d">māmbət bhāvanirān panəmbah aṅəlih pinaṅkvakənira</l>
             </lg>
-            <lg n="9" met="mṛdukomala">
+            <lg n="9" met="mr̥dukomala">
                <l n="a">muṅgah muṅgvirikāṅ gr̥ha sphaṭika saṅ nivātakavaca</l>
                <l n="b">saṅ konəṅ kinisapvakən titir umiṅsər epu maṅəsah</l>
                <l n="c">luṅhā taṅ paricarikā syapa kasaṅśayan təkapira</l>
                <l n="d">mojar saṅ maṇimantakādhipa təhər makon lumihata</l>
             </lg>
-            <lg n="10" met="mṛdukomala">
+            <lg n="10" met="mr̥dukomala">
                <l n="a">ndyah maṅke pva baliknikāṅ hr̥daya mār paranti rumaras</l>
                <l n="b">rva ṅ ve ta pva kakanta māsku kumətər halisku ri təṅən</l>
                <l n="c">akveh dūtanikāṅ sukhāpuhara harṣa tan pajamuga</l>
                <l n="d">ipyankvību kagunturan madhu balik pva tan kita təkā</l>
             </lg>
-            <lg n="11" met="mṛdukomala">
+            <lg n="11" met="mr̥dukomala">
                <l n="a">lāvan tebu hiḍəp-hiḍəpku ri pananmatanta tan i rāt</l>
                <l n="b">lvir sambegani luṅgahiṅ gaḍuṅ aṅolakən kayu ragas</l>
                <l n="c">truhniṅ megha kunaṅ kitānuruni cātakāməlasarəp</l>
                <l n="d">saṅ hyaṅ lek tumurun kamāsihən anon cucur kari kita</l>
             </lg>
-            <lg n="12" met="mṛdukomala">
+            <lg n="12" met="mr̥dukomala">
                <l n="a">nāhan liṅnira saṅ nivātakavacācavuh maṅarəki</l>
                <l n="b">meh meh rājasa met pasambulihaniṅ tapih juga sira</l>
                <l n="c">saṅ sinvamniṅ aśoka kaṅlihan atākiput kasiharəp</l>
@@ -2070,7 +2195,7 @@
                <l n="b">
                   <app>
                      <lem>śuṣka</lem>
-                     <rdg wit="#edP">śuska</rdg>
+                     <rdg wit="#edp">śuska</rdg>
                   </app> kuraṅ bañu pə̄ṅ vadarā havaniṅ ləvu guntur atap tikāṅ vatu</l>
                <l n="c">priṅga juraṅnya kakilyan i rāryanirān humaḍaṅ humarəp rikāṅ musuh</l>
                <l n="d">ṅkāna ta saṅkananiṅ maməgatməgat i pratisāra hanāṅrəpeṅ sukət</l>
@@ -2156,8 +2281,8 @@
             <lg n="1" met="daṇḍasagala">
                <l n="a">kahalaṅ amara de saṅ asurapati māti matip atitihan inidək inamahamah</l>
                <l n="b">ikaṅ apuliha tan panəmu havan anə̄r <app>
-                     <lem wit="#edP">i galahika nətər ~ ~ ~ anəsərakən</lem>
-                     <rdg wit="#K">i galah anəsəki mamanah anəsərakən</rdg>
+                     <lem wit="#edp">i galahika nətər ~ ~ ~ anəsərakən</lem>
+                     <rdg wit="#msRK">i galah anəsəki mamanah anəsərakən</rdg>
                   </app>
                </l>
                <l n="c">yama rika rasa rākṣasa təka mamulir hulu haṅunaṅun anəkək anəpak anəpah</l>
@@ -2339,8 +2464,8 @@
                <l n="b">sphaṭikānaravaṅ pinahad udadhimanthana tuṅkubikā</l>
                <l n="c">sahaneṅ hariloka śivapada pitāmahaloka təka</l>
                <l n="d">pinakesinikāṅ paramarasa sama <app>
-                     <lem wit="#K">mvaṅ acintyapada</lem>
-                     <rdg wit="#edP">mvaṅ ~ ntyapana</rdg>
+                     <lem wit="#msRK">mvaṅ acintyapada</lem>
+                     <rdg wit="#edp">mvaṅ ~ ntyapana</rdg>
                   </app>
                </l>
             </lg>
@@ -2365,85 +2490,85 @@
          </div>
          <div type="canto" n="30">
 	<!-- kāmamāla: ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ = !-->
-            <lg n="1" met="kāmamāla">
+            <lg n="1" met="kāmamālā">
                <l n="a">vara menakā sira kinon surapati marəke dhanañjaya</l>
                <l n="b">sira katvaṅiṅ suravadhū pinituhu təkapiṅ sakahyaṅan</l>
                <l n="c">tuvi tan vaneh tuhatuhāṅgəhira makakulārya phalguṇa</l>
                <l n="d">sira tāṅucap kadi lumālana sivuhən i saṅ dhanañjaya</l>
             </lg>
-            <lg n="2" met="kāmamāla">
+            <lg n="2" met="kāmamālā">
                <l n="a">laki hantuṣākəna ta gañjaraniṅ amənaṅiṅ raṇāṅgana</l>
                <l n="b">pratuhun pamañcananikiṅ kapitu bapa təkap nr̥pātmaja</l>
                <l n="c">hayu cakravartiniṅ arūm pinakaguru manis kinatvaṅan</l>
                <l n="d">riṅ ulah vagəd paḍa huvus mayaśa paḍa təlas makabvatan</l>
             </lg>
-            <lg n="3" met="kāmamāla">
+            <lg n="3" met="kāmamālā">
                <l n="a">nya ta suprabhā nitanitan lihati makalavan tilottamā</l>
                <l n="b">təkapiṅ maminta parihe riṅ avahiri ḍatəṅ tatan humuṅ</l>
                <l n="c">amənaṅ hiḍepnikaṅ alah makin araras arumpukan gaḍuṅ</l>
                <l n="d">papagən liriṅnya laki məṅgəp aṅuvahi gəluṅnya tan lukar</l>
             </lg>
-            <lg n="4" met="kāmamāla">
+            <lg n="4" met="kāmamālā">
                <l n="a">nya vaneh dr̥ḍhāmava vilāpa hana vahu huvus madarpana</l>
                <l n="b">guməluṅgəluṅ kakakakānya sinurusuruyanya riṅ taṅan</l>
                <l n="c">hana maṅgupit ruditagīta manamanama hastakośala</l>
                <l n="d">kadi hintən esi dinələ̄ tiṅətiṅətakəniṅ pasaṅgaman</l>
             </lg>
-            <lg n="5" met="kāmamāla">
+            <lg n="5" met="kāmamālā">
                <l n="a">vəkasiṅ vəkas tiki kabeh nda tak amihəri tāku riṅ vaneh</l>
                <l n="b">laku ta truhun tumama riṅ tilam aku mutuseka ṅayvana</l>
                <l n="c">iti maṅkanojarira saṅ vinuvusan atikiṅ salah sahur</l>
                <l n="d">aṅucap vaneh kadi nirāgraha tuhun umasuk mareṅ jinəm</l>
             </lg>
-            <lg n="6" met="kāmamāla">
+            <lg n="6" met="kāmamālā">
                <l n="a">vara suprabhā sir kinon mamuṅarana rikāṅ samaṅkana</l>
                <l n="b">phalaniṅ huvus mapihutaṅ priya parəṅ umasuk mareṅ jinəm</l>
                <l n="c">alvas patūtnira lavan padulurira ri kāla riṅ hənu</l>
                <l n="d">rasa tan papaṅgila kinol rəṅurəṅunira tan təkeṅ hati</l>
             </lg>
-            <lg n="7" met="kāmamāla">
+            <lg n="7" met="kāmamālā">
                <l n="a">arəṇah saṅ arjuna marəkmarək aṅusapi gātra pet sivi</l>
                <l n="b">anəpak taṅan saṅ anulak vahuvahu kinayuh təṅahnira</l>
                <l n="c">asaputsaput susu parəṅ rva karika tinahānikāṅ ulah</l>
                <l n="d">aləməh katona tumukup kətəkətəgira mār sumamburat</l>
             </lg>
-            <lg n="8" met="kāmamāla">
+            <lg n="8" met="kāmamālā">
                <l n="a">mavuvus ta saṅ nr̥patiputra mijil upasikāṅ karāsikan</l>
                <l n="b">ibu tāsyasih mapa manista n alarisa halista yan lihat</l>
                <l n="c">avanəh rəṅunta yat aməm vaja huvus atasak mirahnikā</l>
                <l n="d">laraniṅhulun hinənəṅan kadi maṅucapucap lavan tulis</l>
             </lg>
-            <lg n="9" met="kāmamāla">
+            <lg n="9" met="kāmamālā">
                <l n="a">mapa deniṅ ahyas ibu ṅūni karaṇaniṅ anəmvakən hayu</l>
                <l n="b">maṅunəṅ galuh karika nitya karamasiṅ anə̄bakən gəluṅ</l>
                <l n="c">apupur mənur mavida kembaṅ asana karikā dyahiṅhulun</l>
                <l n="d">athavāsusur təbu kita dyah ari tuhagaṇāpəpəh madhu</l>
             </lg>
-            <lg n="10" met="kāmamāla">
+            <lg n="10" met="kāmamālā">
                <l n="a">sira saṅ minaṅkana kahənti hatinira tuhun mapet sivi</l>
                <l n="b">aṅəlihṅəlih makasahur paṅəsahira lavan rəṅihnira</l>
                <l n="c">katəmu pva muṣṭini tapihnira lukar irikān tiniṇḍihan</l>
                <l n="d">mata mesi manmatha tiniṅhalakən i mata tan lumismata</l>
             </lg>
-            <lg n="11" met="kāmamāla">
+            <lg n="11" met="kāmamālā">
                <l n="a">ri huvusnirān kavava mukṣa hatinira maṅuṇḍəṅiṅ dagan</l>
                <l n="b">anaṅis tumuṅkul umusap hariṅətira matūt grətiṅ təṅah</l>
                <l n="c">asaput huləs juga sirāgila təkapi mələsnikāṅ tapih</l>
                <l n="d">mvaṅ ikāṅ pupū kadi kukū gaḍiṅ amayamayā təkeṅ wətis</l>
             </lg>
-            <lg n="12" met="kāmamāla">
+            <lg n="12" met="kāmamālā">
                <l n="a">nr̥paputra mātyakən avaknira riṅ ulah arūm priyambada</l>
                <l n="b">təka piṅrva pintiga sirenubhaya hañar atūt ulahnira</l>
                <l n="c">vuluh aṅharas təbu papaṅgihira paḍa rināmyaniṅ manis</l>
                <l n="d">aṅənoh vavaṅ matəmu ros matəmu vuku silih dələ̄ mata</l>
             </lg>
-            <lg n="13" met="kāmamāla">
+            <lg n="13" met="kāmamālā">
                <l n="a">ndah aneka lālana pararyanira sasumukānaṅ indriya</l>
                <l n="b">hana yan vijil suməlaṅ ahyas ajajar atitihtitih pupū</l>
                <l n="c">aṅatag narendrasuta mañjiṅa ñamuñamur iṅ rasādhika</l>
                <l n="d">gətihiṅ kukap kadi təgəl mamutani kadi hampasiṅ madhu</l>
             </lg>
-            <lg n="14" met="kāmamāla">
+            <lg n="14" met="kāmamālā">
                <l n="a">krama kāla meh təka ta nālikanira matutur ta suprabhā</l>
                <l n="b">tumurun mareṅ bañu təhər mulih amirah ikāṅ matāpəḍe</l>
                <l n="c">akədə̄kədə̄ lakunirāmirumiru təpiniṅ tapih lukar</l>
@@ -2695,7 +2820,7 @@
             <lg n="9" met="jagaddhita">
                <l n="a">nāhan liṅnira saṅ hyaṅ indra maṅadəg nr̥patanaya huvus <app>
                      <lem>sinaṅgraha</lem>
-                     <rdg wit="#edP">sinaṅraha</rdg>
+                     <rdg wit="#edp">sinaṅraha</rdg>
                   </app>
                </l>
                <l n="b">de saṅ mātali muṅgahiṅ ratha sasañjatanira tumihaṅ sinimpənam</l>
@@ -2765,13 +2890,16 @@
  <div type="commentary">
                <p/>                              
             </div>
-	
      <div type="bibliography">
-        <p>The text was first typed in 2008b by Arlo Griffiths. Some corrections of the word division of Poerbatjaraka's text, and of misprints in it, were applied tacitly, but in general, real changes to Poerbatjaraka's text (P) were indicated at the end of the respective line. Most of these changes were inspired by a reading of the text with I. Kuntara Wiryamartana (<ref target="#K">Kuntara Wiryamartana 1990</ref>). For Sargas 10 and 11, see C.C. Berg’s article (<ref target="#Berg">Berg 1933</ref>).</p>
-         <p>Andrew Ollett converted the transcript to ISO-15919 in June 2018.</p>
-         <p>Arlo Griffiths adjusted the resulting XML file after Robson's text  (<ref target="#edR">Robson 1990</ref>) in June-July 2018.</p>
-            <listBibl> 				
-               <bibl><ptr target="bib:Berg1933_01"/></bibl> 			
+        <p>The text was first typed in 2008 by Arlo Griffiths. Some corrections of the word division of Poerbatjaraka's text, and of misprints in it, were applied tacitly, but in general, real changes to Poerbatjaraka's text were indicated at the end of the respective line. Most of these changes were inspired by a reading of the text with I. Kuntara Wiryamartana in 2008. For Sargas 10 and 11, see <bibl><ptr target="bib:Berg1933_01"/></bibl>.</p>
+         <p>Andrew Ollett converted the plain text file to ISO-15919 and TEI format in June 2018.</p>
+         <p>Arlo Griffiths adjusted the resulting XML file after Robson's edirion in June-July 2018.</p>
+         <p>Collation of editions and old manuscripts has only made a modest beginning. The edition is unfinished at this time.</p>
+            <listBibl> 	
+	<bibl><ptr target="bib:Poerbatjaraka1926_03"/></bibl>			
+               <bibl><ptr target="bib:Berg1933_01"/></bibl>
+               <bibl><ptr target="bib:KuntaraWiryamartana1990_01"/></bibl>
+                <bibl><ptr target="bib:Robson2008_01"/></bibl>		
             </listBibl>
          </div>
       </body>
