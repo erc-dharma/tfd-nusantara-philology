@@ -2,48 +2,37 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="sutasoma">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">SUTASOMA</title>
-                <!--Change the title of the file with the name of your text-->
-                <!--<title type="alt"></title>-->
-                <!-- fill in any alternative title if necessary -->
-                <!--<author></author>-->
-                <!-- fill in any author if necessary -->
-                <respStmt>
-                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
-                    <resp>author of digital edition</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:argr">
-                        <forename>Arlo</forename>
-                        <surname>Griffiths</surname>
-                    </persName>
-                    <persName ref="part:masc">
-                        <forename>Marine</forename>
-                        <surname>Schoettel</surname>
-                    </persName>
-                    
+            	<title type="editorial">Sutasoma: Digital Edition</title>
+            	<title type="alt">After the edition by Soewito Santoso (1975)</title>
+            	<title type="original">Sutasoma</title>
+            	<respStmt>
+            		<resp>author of digital edition</resp>
+            		<persName ref="part:argr">
+            			<forename>Arlo</forename>
+            			<surname>Griffiths</surname>
+            		</persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority>DHARMA</authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-                <idno type="filename">CriticalEditions.xml</idno>
-                <!-- Replace by identifier, e.g. SiksaGuru -->
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DHARMA_CritEdKakavinSutasoma.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <p>Copyright (c) 2019-2025 by John Doe.</p><!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
+                    	<p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
                     </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <witness xml:id="">
-                        <bibl>Soevito Santoso. — 1975. Sutasoma: A Study in Javanese Wajrayana. Śata-Piṭaka Series 213. Nev Delhi: International Academy of Indian Culture.</bibl>
+                    <witness xml:id="edss">
+                    	<bibl><ptr target="bib:SoewitoSantoso1975_01"/></bibl>
                     </witness>
                 </listWit>
             </sourceDesc>
@@ -57,22 +46,22 @@
                     <p/>
                 </correction>
                 <normalization>
-                    <p>The folloving (often silent) modifications have been carried out during data entry:
-                        conversion of misprint ṛṇn to rṇṇ (and then normalization to rṇ)
-                        conversion of ng to ṅ
-                        conversion of v to v
-                        normalization of spelling of single/double consonants
-                        normalization of spelling of aspirated consonants
-                        normalization of spelling of sililants (ś/ṣ/s)
-                        normalization of spelling of dental/retroflex consonant
-                        normalization of spelling of vovel length (notably unvanted vovel length in position that vould othervise also be metrically long, or unvanted short vovel vhere metrical position that requires a long vovel and vhere grammar or Sanskrit spelling also require a long vovel)
-                        conversion of capital letters to lover case
-                        joining vords printed separately, in the case of Sanskrit compounds, but also vith -(n)i(ṅ), -nika(ṅ), -nya and -(n)ira, etc.; the conjunction -(a)n.
-                        splitting vords printed together
-                        
-                        Simple misprints and spelling errors in Soevito Santoso's English translation are silently corrected.
-                        
-                        Modifications judged to be significant are indicated belov the respective stanza in the format "modified reading" &lt; "Soevito Santoso's reading".</p>
+                    <p>The following (often silent) modifications have been carried while processing OCR data:
+                        <list>
+                        <item>simple misprints and spelling errors in Soewito Santoso's English translation have been silently corrected</item>
+		<item>conversion of misprint ṛṇn to rṇṇ (and then normalization to rṇ)</item>
+                       <item> conversion of ng to ṅ</item>
+                        <item>conversion of v to v</item>
+                        <item>normalization of spelling of single/double consonants</item>
+                        <item>normalization of spelling of aspirated consonants</item>
+                        <item>normalization of spelling of sililants (ś/ṣ/s)</item>
+                        <item>normalization of spelling of dental/retroflex consonant</item>
+                        <item>normalization of spelling of vovel length (notably unwanted vowel length in position that vould otherwise also be metrically long, or unwanted short vowel where metrical position requires a long vowel and where grammar or Sanskrit spelling also require a long vovel)</item>
+                        <item>conversion of capital letters to lower case</item>
+                        <item>joining words printed separately, in the case of Sanskrit compounds, but also vith -(n)i(ṅ), -nika(ṅ), -nya and -(n)ira, etc.; the conjunction -(a)n.</item>
+                        <item>splitting words printed together</item>
+</list>
+     	Modifications deemed to be significant are indicated below the respective stanza in the format "modified reading" &lt; "Soewito Santoso's reading".</p>
                 </normalization>
                 <interpretation>
                     <p/>
@@ -84,30 +73,26 @@
         </encodingDesc>
         <profileDesc>
             <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
                 <language ident="san-Latn">Sanskrit, romanized</language>
                 <language ident="kaw-Latn">Old Javanese, romanized</language>
-                <language ident="ori-Latn">Oriya, romanized</language>
-                <language ident="osn-Latn">Old Sundanese, romanized</language>
-                <language ident="tam-Latn">Tamil, romanized</language>
-                <language ident="kan-Latn">Kannada, romanized</language>
-                <language ident="tel-Latn">Telugu, romanized</language>
             </langUsage>
         </profileDesc>
         <revisionDesc>
-            <change/>
+        	<change when="2025-05-11" who="part:argr">added teiHeader and bibliography, corrected spellings of meter names</change>
+        	<change when="2025-05-07" who="part:axja">conversion of text to TEI following DHARMA EGC v2</change>
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve">
 		<body>
-			<div type="edition" xml:lang="und"> 
-			    
-<div type="canto" n="1">
-<ab>avighnam astu.*</ab>
+			<div type="edition" xml:lang="kaw-Latn"> 
+<div><ab type="invocation">avighnam astu.*</ab></div>
 
-<lg n="1"><l>śrī bajrajñāna śūnyātmaka parama sirānindya riṅ rāt viśeṣa,</l>
-<l>līlā śuddhā <!--<app><lem>-->pratiṣṭheṅ<!--</lem><rdg resp="Santoso">pratiṣṭeṅ</rdg></app>--> hṛdaya jayajayāṅkən mahāsvargaloka,</l>
-<l><!--<app><lem>-->ekacchatreṅ<!--</lem><rdg resp="Santoso">ekācatreṅ</rdg></app>--> śarīrāṅuripi sahananiṅ bhūr bhuvah svah prakīrṇa,</l>
+<div type="canto" n="1">
+
+<lg n="1">
+<l>śrī bajrajñāna śūnyātmaka parama sirānindya riṅ rāt viśeṣa,</l>
+<l>līlā śuddhā <!--<app><lem>-->pratiṣṭheṅ<!--</lem><rdg wit="#edss">pratiṣṭeṅ</rdg></app>--> hṛdaya jayajayāṅkən mahāsvargaloka,</l>
+<l><!--<app><lem>-->ekacchatreṅ<!--</lem><rdg wit="#edss">ekācatreṅ</rdg></app>--> śarīrāṅuripi sahananiṅ bhūr bhuvah svah prakīrṇa,</l>
 <l>sākṣāt candrārka pūrṇādbhuta ri vijilirān saṅka riṅ <!--<app><lem>-->boddhacitta<!--</lem><rdg type="emn">bodhicitta?</rdg></app>-->.</l>
  <!--<app>* B. C. D. E. F. G. H. A.W has no avighnam astu — 1c  B. D. E. ekacatreṅ. — C. śarīrāṅuripī.</app> -->
 </lg>
@@ -120,25 +105,25 @@
 <lg n="3"><l>ndah yekān maṅkana śānti kinəñəp i tutur saṅ huvus siddha yogi,</l>
 <l>pūjān riṅ jñāna śuddhāparimita śaraṇāniṅ mikət laṅvalaṅvan,</l>
 <l>dūran ṅvaṅ siddha kavyāṅiduṅa hivaṅ apan tan vruh iṅ śāstra mātra,*</l>
-<l>ṅhiṅ kevran deniṅ ambək ragaragan i manah saṅ <!--<app><lem>-->kavī rājya<!--</lem><rdg resp="Santoso">kavīrājya</rdg></app>--> śobha.</l>
+<l>ṅhiṅ kevran deniṅ ambək ragaragan i manah saṅ <!--<app><lem>-->kavī rājya<!--</lem><rdg wit="#edss">kavīrājya</rdg></app>--> śobha.</l>
  <!--<app>	* C. D. E.  — 3a B. śanti. C. yoggi. — 3b F. pūjān. — 3c A. B. F. G. H. matra. B. hīva. C. D. E. dūra.</app> -->
 </lg>
 <lg n="4"><l>pūrva prastāvaniṅ parva racana ginəlar saṅka riṅ boddhakavya,</l>
 <l>ṅūnī dvāpāra riṅ treta kṛtayuga siraṅ sarvadharmāṅgakāra,</l>
-<l>tan len hyaṅ <!--<app><lem>-->brahmaviṣṇvīśvara<!--</lem><rdg resp="Santoso">brāhma viṣṇviśvara</rdg></app>--> sira matəmah bhūpatī martyaloka,</l>
+<l>tan len hyaṅ <!--<app><lem>-->brahmaviṣṇvīśvara<!--</lem><rdg wit="#edss">brāhma viṣṇviśvara</rdg></app>--> sira matəmah bhūpatī martyaloka,</l>
 <l>maṅke prāptaṅ kali śrī jinapati manurun mātyanaṅ kālamūrkha.</l>
 	 <!--<app>4a D. parva. — 4b B. dharmaṅgaran. C. dharmaṅgarakṣa. D. dharmaṅgarakṣa.
 </app> -->
 </lg>
-<lg n="5"><l>sambandhan śrī mahāketu kurukula sirānakniraṅ <!--<app><lem>-->koravāṅśa<!--</lem><rdg resp="Santoso">koravāṅṣa</rdg></app>-->,</l>
+<lg n="5"><l>sambandhan śrī mahāketu kurukula sirānakniraṅ <!--<app><lem>-->koravāṅśa<!--</lem><rdg wit="#edss">koravāṅṣa</rdg></app>-->,</l>
 <l>devī prajñādharī kāsihira pinuji riṅ rāt putus riṅ kahayvan,</l> 
-<l>ṅkāneṅ rājyādhikeṅ hastina sinivi təkapniṅ <!--<app><lem>-->mahāvīrasaṅgha<!--</lem><rdg resp="Santoso">mahāvīra saṅghya</rdg></app>-->,*</l>
+<l>ṅkāneṅ rājyādhikeṅ hastina sinivi təkapniṅ <!--<app><lem>-->mahāvīrasaṅgha<!--</lem><rdg wit="#edss">mahāvīra saṅghya</rdg></app>-->,*</l>
 <l>sakvehkveh saṅ vatək bhūpati sira mararəm bhakti riṅ śrī narendra.</l>
  <!--<app>	* C. D. G. — 5b D.niṅ rat. — 5c A. B. E. F. G. H. saṅgha.</app> -->
 </lg>
 <lg n="6"><l>śobhaṅ rājyahaləp lvir smarabhavana ləyəp sarvadibyāprameya,</l>
 <l>dvāranyārmarpat atyadbhuta kanaka murub lvir gunuṅ bahni muntab,</l>
-<l>sə̄k raṅkaṅ mās maṇīndre* daləm ika kuməñar <!--<app><lem>-->ratnasaṅghanya<!--</lem><rdg resp="Santoso">ratna saṅghyanya</rdg><note>but see OJED s.v. ratnasaṅgha; the spelling ratnasaṅghya seems videspread.</note></app>--> muñcar,</l>
+<l>sə̄k raṅkaṅ mās maṇīndre* daləm ika kuməñar <!--<app><lem>-->ratnasaṅghanya<!--</lem><rdg wit="#edss">ratna saṅghyanya</rdg><note>but see OJED s.v. ratnasaṅgha; the spelling ratnasaṅghya seems videspread.</note></app>--> muñcar,</l>
 <l>dīptāvā rātri denyan rahina sama hiḍəpniṅ vvaṅ iṅ jro kaḍatvan.</l>
  <!--<app>	* C. — 6e A. B. D. E. F. G. H. manindre. — 6d C. vaṅ.</app> -->
 </lg>
@@ -151,14 +136,14 @@ vrinvrin sakveh vatək bhāratakula karuhun saṅ tapasvī nagāgra.</l>
 </lg>
 <lg n="8"><l>nā hetu śrī narendrāṅutus i sahananiṅ vīrayodhādbhuteṅ praṅ,</l>
 <l>mvaṅ saṅ yogīśvarāṅampəha ri pamanas iṅ daitya kālāgnitulya,</l>
-<l>ndātan māntun* jugāṅhiṅ sutahaji karəṅə̄ <!--<app><lem>-->bhasmyaniṅ<!--</lem><rdg resp="Santoso">bhaṣmya niṅ</rdg></app>--> śatru śakti,</l>
+<l>ndātan māntun* jugāṅhiṅ sutahaji karəṅə̄ <!--<app><lem>-->bhasmyaniṅ<!--</lem><rdg wit="#edss">bhaṣmya niṅ</rdg></app>--> śatru śakti,</l>
 <l>maṅkā liṅ saṅ munīndrākirakira ri hajə̄ṅ śrī mahāketurāja.</l>
  <!--<app>	* H. — 8C A. B. C. D. E. F. G. māntuk.</app> -->
 </lg>
 <lg n="9"><l>varṇan saṅ śrī narendrādhipa sira maharəp mānaka mvaṅ sudevī,</l>
-<l>hetunyan <!--<app><lem>-->bodhicitt<!--</lem><rdg resp="Santoso">bodhicitt-?</rdg></app>-->enulahulahira riṅ sthāna saṅ hyaṅ jinārca,</l>
-<l>rəp prāptaṅ rātri* tistis marəṅi həniṅ ikaṅ <!--<app><lem>-->jñāna<!--</lem><rdg resp="Santoso">jñana</rdg></app>--> candropamanya,</l>
-<l>ṅkā ta śrī <!--<app><lem>-->bodhisattvājar<!--</lem><rdg resp="Santoso">boddhisatvājar</rdg></app>--> i gatinira yan sūnva saṅ śrī narendra.</l>
+<l>hetunyan <!--<app><lem>-->bodhicitt<!--</lem><rdg wit="#edss">bodhicitt-?</rdg></app>-->enulahulahira riṅ sthāna saṅ hyaṅ jinārca,</l>
+<l>rəp prāptaṅ rātri* tistis marəṅi həniṅ ikaṅ <!--<app><lem>-->jñāna<!--</lem><rdg wit="#edss">jñana</rdg></app>--> candropamanya,</l>
+<l>ṅkā ta śrī <!--<app><lem>-->bodhisattvājar<!--</lem><rdg wit="#edss">boddhisatvājar</rdg></app>--> i gatinira yan sūnva saṅ śrī narendra.</l>
  <!--<app>	* B. C. — 9a C. maharəp. — 9b B. F. ri. — 9c A. D. E. F. G. H. ratri — 9d C. sunvana.</app> -->
 </lg>
 <lg n="10"><l>tuṣṭāmbək śrī mahāketu manəmu paramānugraha hyaṅ jinendra,</l> 
@@ -176,19 +161,19 @@ vrinvrin sakveh vatək bhāratakula karuhun saṅ tapasvī nagāgra.</l>
 <lg n="12"><l>ndah sakvehkvehnikaṅ strī daləm ika ruməṅə̄ garbhini śrī supatnī,</l>
 <l>vṛddhaṅ lek śīghra molah vətəṅira matutur saṅ haneṅ garbha dibya,</l>
 <l>liṇḍū taṅ bhūmi tejānaravata dumilah trus sakeṅ svargaloka,</l>
-<l>hūṅhūṅniṅ <!--<app><lem>-->devasaṅgheṅ<!--</lem><rdg resp="Santoso">devasaṅghyeṅ</rdg></app>--> laṅit ajayajayan sotaniṅ buddhajanma</l>
+<l>hūṅhūṅniṅ <!--<app><lem>-->devasaṅgheṅ<!--</lem><rdg wit="#edss">devasaṅghyeṅ</rdg></app>--> laṅit ajayajayan sotaniṅ buddhajanma</l>
 	 <!--<app>12a C. D. H. ndā. — C. ḍaləm aga ruməṅə̄.</app> -->
 </lg>
 
 </div>
 <div type="canto" n="2">
-<lg n="1"><l>atha ri səḍəṅ vatək hyaṅ ika yan <!--<app><lem>-->pamūrṣita<!--</lem><rdg resp="Santoso">pamūrṣita</rdg></app>--> mamuṣpa riṅ* nāgara,</l>
-<l>pramukha bhaṭāra śakra saha kinnarādhipa surarṣi <!--<app><lem>-->devāṅganā<!--</lem><rdg resp="Santoso">devaṅghyana</rdg></app>-->,</l>
+<lg n="1"><l>atha ri səḍəṅ vatək hyaṅ ika yan <!--<app><lem>-->pamūrṣita<!--</lem><rdg wit="#edss">pamūrṣita</rdg></app>--> mamuṣpa riṅ* nāgara,</l>
+<l>pramukha bhaṭāra śakra saha kinnarādhipa surarṣi <!--<app><lem>-->devāṅganā<!--</lem><rdg wit="#edss">devaṅghyana</rdg></app>-->,</l>
 <l>kṣaṇan umijil bhaṭāra jina śuddharūpa** kularājaputrādhika,</l>
 <l>sukha ta manah narendra lumihat sireṅ anak apūrva riṅ kādbhuta.</l>
  <!--<app>	* D. F. H.		** B. C. D. E. F. H. — 1a A. B. C. E. G. mamuṣpaniṅ. — B. ya mamūrsita. — 1c A.G. jinarūpaśuddha.</app> -->
 </lg>
-<lg n="2"><l>api tuvi sarvapāpa ya vināśa <!--<app><lem>-->bhasmi<!--</lem><rdg resp="Santoso">bhaṣmi</rdg></app>--> ri vijilnirānindita,</l>
+<lg n="2"><l>api tuvi sarvapāpa ya vināśa <!--<app><lem>-->bhasmi<!--</lem><rdg wit="#edss">bhaṣmi</rdg></app>--> ri vijilnirānindita,</l>
 <l>tumitis umuṅkut ārja mabənər bule valaka suṣṭa maryāhala,</l>
 <l>kimuta tikaṅ vujil dadi magə̄ṅ tapas hirəṅ aneka roga kṣaya,</l>
 <l>karaṇanikaṅ sarājya paḍa bhaktyaṅastuti ri jə̄ṅ narendrātmaja.</l>
@@ -196,7 +181,7 @@ vrinvrin sakveh vatək bhāratakula karuhun saṅ tapasvī nagāgra.</l>
 </lg>
 <lg n="3"><l>ṅuniṅuni saṅ vvaṅ adyah i daləm kapūhan i sirāmihat kasrəpan,</l>
 <l>kakakaka len uveña matuluṅ paḍāṅdan i hajə̄ṅnirāṅde sukha,</l>
-<l>hana sira vṛddha kilyanikəlīka rakvan inutus <!--<app><lem>-->narendrādhipa<!--</lem><rdg resp="Santoso">narendrādhipa</rdg></app>-->,</l>
+<l>hana sira vṛddha kilyanikəlīka rakvan inutus <!--<app><lem>-->narendrādhipa<!--</lem><rdg wit="#edss">narendrādhipa</rdg></app>-->,</l>
 <l>valinira tan kuraṅ capaṅ ikārja sampun arəpat samākveh marək*</l>
 	 <!--<app>* From II.2d to II.3d derived from B. C. D. E. F. G. H. — 3a H. sirān mihat. — 3c C. kilyakəl. — 3d C. capaniṅ arjju. — E. F. H. valiṅ ira. — H. carpaṅ.
 </app> -->
@@ -210,7 +195,7 @@ vrinvrin sakveh vatək bhāratakula karuhun saṅ tapasvī nagāgra.</l>
 <l>saṅke varṇanirāgave sukhanikaṅ bhuvana pinakamuṣṭiniṅ hiḍəp.</l> 
   <!--<app>— 1b C. pitu.</app> -->
 </lg>
-<lg n="2"><l>lvir riṅ svapna tuvuh nireṅgal aṅadəg laku* talayu <!--<app><lem>-->kumāra<!--</lem><rdg resp="Santoso">kumara</rdg></app>--> sadṛśa,**</l>
+<lg n="2"><l>lvir riṅ svapna tuvuh nireṅgal aṅadəg laku* talayu <!--<app><lem>-->kumāra<!--</lem><rdg wit="#edss">kumara</rdg></app>--> sadṛśa,**</l>
 <l>solah bhāvanireki cumbu pinacəhpacəh analuki hetuniṅ guyu,</l>
 <l>saṅsiptān ri huvusnirāpupak agə̄ṅ tumaruṇa paripūrṇa suśrama,</l>
 <l>hyaṅniṅ kiṅkin aṅiṇḍarat səmuni rūmnira vahu tumurun sakeṅ tavaṅ.</l>
@@ -224,9 +209,9 @@ baryan rātri** guritnireki viniveka rinasan amaṅun lare hati.</l>
  <!--<app>	* C. D. — ** C. — 3a B. C. D. rāja kadi. — 3b G. strī-strī. — 3c A. B. C. F. G. H. pralapit. — 3d A. B. D. E. F. G. H. ratri.
 </app> -->
 </lg>
-<lg n="4"><l>maṅkin <!--<app><lem>-->tībra<!--</lem><rdg resp="Santoso">tībra</rdg></app>--> manahnya yan maṅən i <!--<app><lem>-->raśminira<!--</lem><rdg resp="Santoso">rāśmi nira</rdg></app>--> pinakadevaniṅ puri,</l>
-<l><!--<app><lem>-->prajñeṅ gīta<!--</lem><rdg resp="Santoso">prajñeṅgīta</rdg></app>-->  vicakṣaṇānvam aguṇa vruh aṅinaki ri buddhiniṅ para,</l>
-<l><!--<app><lem>-->śāstrajñādhika<!--</lem><rdg resp="Santoso">śāstrajñādika</rdg></app>--> vṛddhacitta masih iṅ kasihan ika parārtha kevala,</l>
+<lg n="4"><l>maṅkin <!--<app><lem>-->tībra<!--</lem><rdg wit="#edss">tībra</rdg></app>--> manahnya yan maṅən i <!--<app><lem>-->raśminira<!--</lem><rdg wit="#edss">rāśmi nira</rdg></app>--> pinakadevaniṅ puri,</l>
+<l><!--<app><lem>-->prajñeṅ gīta<!--</lem><rdg wit="#edss">prajñeṅgīta</rdg></app>-->  vicakṣaṇānvam aguṇa vruh aṅinaki ri buddhiniṅ para,</l>
+<l><!--<app><lem>-->śāstrajñādhika<!--</lem><rdg wit="#edss">śāstrajñādika</rdg></app>--> vṛddhacitta masih iṅ kasihan ika parārtha kevala,</l>
 <l>sarvāstrādbhuta saṅka riṅ manah aneka tuhutuhu jinātmakeṅ praja.</l>
 	 <!--<app>4b C. vicakṣaṇā vruh aṅinaki. — 4d F. inaka. G. ineka.
 </app> -->
@@ -251,7 +236,7 @@ baryan rātri** guritnireki viniveka rinasan amaṅun lare hati.</l>
 </app> -->
 </lg>
 <lg n="8"><l>buddhi śrī naranātha maṅkin atələb sihira ri sira saṅ nṛpātmaja,</l> 
-<l>ṅhiṅ <!--<app><lem>-->strīratna<!--</lem><rdg resp="Santoso">stīratna</rdg></app>--> viśeṣa yogya pasuṅe sira mayugala rājaputrikā,</l>
+<l>ṅhiṅ <!--<app><lem>-->strīratna<!--</lem><rdg wit="#edss">stīratna</rdg></app>--> viśeṣa yogya pasuṅe sira mayugala rājaputrikā,</l>
 <l>təkvan rakva sirekinastvakna bhūpati paṅucapire nareśvarī.</l> 
 <l>ṅkā saṅ nātha ta rakva maṅjuru* sumivya tumuta ri siraṅ vatək ratu.</l>
  <!--<app>	* B. C. D. F. H. — 8d B. C. D. F. H. rakva maṅjuru.
@@ -280,7 +265,7 @@ baryan rātri** guritnireki viniveka rinasan amaṅun lare hati.</l>
 <lg n="3"><l>təkvan rakva kiteki maṅgala viśeṣāmumpuni stry ahajə̄ṅ,</l>
 <l>ratna mvaṅ maṇirāja pakṣi curiga ndan siṅ ləvih riṅ jagat,</l>
 <l>maṅgəh dṛvyani saṅ narendra karuhun taṅ jivaniṅ rāt kabeh,</l>
-<l>yapvan <!--<app><lem>-->laṅghanavāda<!--</lem><rdg resp="Santoso">laṅghyanavāda</rdg></app>--> ḍaṇḍa niyata ṅvvaṅ yan prasaṅghe kita.</l>
+<l>yapvan <!--<app><lem>-->laṅghanavāda<!--</lem><rdg wit="#edss">laṅghyanavāda</rdg></app>--> ḍaṇḍa niyata ṅvvaṅ yan prasaṅghe kita.</l>
 	 <!--<app>3b C. F. curigā.
 </app> -->
 </lg>
@@ -299,13 +284,13 @@ baryan rātri** guritnireki viniveka rinasan amaṅun lare hati.</l>
 </app> -->
 </lg>
 <lg n="6"><l>āpan rakva haneki paṇḍita mahāduṣṭātisādhun katon,</l>
-<l>muṅgv iṅ maṇḍala <!--<app><lem>-->śiṣyasaṅgha<!--</lem><rdg resp="Santoso">śiṣya saṅghya</rdg></app>--> vək i sə̄k strīstryārja makveh viku,</l>
+<l>muṅgv iṅ maṇḍala <!--<app><lem>-->śiṣyasaṅgha<!--</lem><rdg wit="#edss">śiṣya saṅghya</rdg></app>--> vək i sə̄k strīstryārja makveh viku,</l>
 <l>len taṅ strā rabiniṅ pravīra masurud saṅskāra bhaktiṅ sənəṅ,</l>
 <l>tan luptān pinaranya lisya mavarah dharmātəmah saṅgama.</l>
 	</lg>
 <lg n="7"><l>yekāṅde huyaṅ iṅ triloka magave saṅhāra hārohara,</l>
 <l>siṅgih yan suta tattvaniṅ parama śiṣyāṅkən guru mvaṅ bapa,</l>
-<l>traṅtraṅ <!--<app><lem>-->vyoma<!--</lem><rdg resp="Santoso">bhyoma</rdg></app>--> hudan salah masa vətunyan sarvavījān vagu,</l>
+<l>traṅtraṅ <!--<app><lem>-->vyoma<!--</lem><rdg wit="#edss">bhyoma</rdg></app>--> hudan salah masa vətunyan sarvavījān vagu,</l>
 <l>tistis taṅ daśadeśa duṣṭa malivər griṅ tan pakālāṅasut.</l>
 </lg>
 <lg n="8"><l>saṅksepanya duvəg tibāna vara ḍaṇḍā paṇḍya yan maṅkana,</l>
@@ -328,13 +313,13 @@ baryan rātri** guritnireki viniveka rinasan amaṅun lare hati.</l>
 <l>strīratnādhika bhoga bhojana pənuh yekāmaṅun pātaka.</l>
 </lg>
 <lg n="11"><l>təkvan tan kavənaṅ sumiṅgahana sakvehniṅ mahādurjana,</l>
-<l>stryānak mvaṅ <!--<app><lem>-->kulavandhu<!--</lem><rdg resp="Santoso">kulavaṇḍu</rdg></app>--> yeka haməsən yāṅkən kaləṅkeṅ jagat,</l>
+<l>stryānak mvaṅ <!--<app><lem>-->kulavandhu<!--</lem><rdg wit="#edss">kulavaṇḍu</rdg></app>--> yeka haməsən yāṅkən kaləṅkeṅ jagat,</l>
 <l>yadyan rākṣasa daitya bhūta muburaṅ rāt deva tovyadbhuta,</l>
 <l>maṅgəh śatru təkap saṅ aṅdiri ləhəṅ yan vīra śaktiṅ raṇa.</l>
 </lg>
 <lg n="12"><l>yapvan sor sipi kaśmalanyan inucap byaktāṅhət iṅ rorava,</l>
 <l>rug* sakveh nikanaṅ svarājya kahavaṅ dharma pratiṣṭheṅ daṅū,**</l>
-<l>śūrātyanta ri kāstavanyan atupis yan <!--<app><lem>-->śatrunāśādbhuta<!--</lem><rdg resp="Santoso">śatrun aśādbhuta</rdg></app>-->,***</l> 
+<l>śūrātyanta ri kāstavanyan atupis yan <!--<app><lem>-->śatrunāśādbhuta<!--</lem><rdg wit="#edss">śatrun aśādbhuta</rdg></app>-->,***</l> 
 <l>hiṅsā pāpa nikeka tan dva rumavuh dūrāṅ**** kayogīśvaran.</l>
  <!--<app>* C. — ** C. — *** B. C. D. E. F. G. H. — **** B. D. — 12b A. B. D. E. F. G. H. rūk. daṅu. — 12c A. dāśādata. — 12d A. C. E. F. G. H. dūrān.</app> -->
 </lg>
@@ -371,16 +356,16 @@ baryan rātri** guritnireki viniveka rinasan amaṅun lare hati.</l>
  <!--<app>	* B. D. F. H. — ** B. C. D. E. F. H. — 17a B. D. F. G. lələh an. G. lələhān. — 17b G. dadyāparagyātəṅən. — 17c A.G. laməsə̄. — 17d C. paṅiḍəmən.
 </app> -->
 </lg>
-<lg n="18"><l>ratnānopama <!--<app><lem>-->tāmrabandha<!--</lem><rdg resp="Santoso">tāmrabaṇḍha</rdg></app>--> mara rūm tāṅde panasniṅ hati,</l>
-<l>candrārkādbhuta <!--<app><lem>-->pūrṇa<!--</lem><rdg resp="Santoso">puṛṇna</rdg></app>--> tapva ri səḍəṅniṅ megha kāmbvan riris,</l> 
+<lg n="18"><l>ratnānopama <!--<app><lem>-->tāmrabandha<!--</lem><rdg wit="#edss">tāmrabaṇḍha</rdg></app>--> mara rūm tāṅde panasniṅ hati,</l>
+<l>candrārkādbhuta <!--<app><lem>-->pūrṇa<!--</lem><rdg wit="#edss">puṛṇna</rdg></app>--> tapva ri səḍəṅniṅ megha kāmbvan riris,</l> 
 <l>śāstrajñādhika paṇḍiteṅ kujana bhūmyātyanta riṅ nisphala,</l>
 <l>maṅkā kṣatriyajanma rājasuta yan muṅsyamriheṅ śūnyata.</l>
 	 <!--<app>18d D. muṅsyāmriheṅ.
 </app> -->
 </lg>
 <lg n="19"><l>tuvin rakva haneka dharma karəṅə̄ de saṅ mahābhikṣuka,</l>
-<l>vṛddhyānak putu yogya yeka pasuṅeṅ <!--<app><lem>-->mātāpitānindita<!--</lem><rdg resp="Santoso">mattā pitānindita</rdg></app>-->,</l>
-<l><!--<app><lem>-->vidyāgocara<!--</lem><rdg resp="Santoso">vidhyāgocara</rdg></app>--> kīrṇa śiṣya pasuṅeṅ ḍaṅ gurvanantākrama,</l>
+<l>vṛddhyānak putu yogya yeka pasuṅeṅ <!--<app><lem>-->mātāpitānindita<!--</lem><rdg wit="#edss">mattā pitānindita</rdg></app>-->,</l>
+<l><!--<app><lem>-->vidyāgocara<!--</lem><rdg wit="#edss">vidhyāgocara</rdg></app>--> kīrṇa śiṣya pasuṅeṅ ḍaṅ gurvanantākrama,</l>
 <l>dharmādeśana śuddhalakṣaṇa tapānun dāna riṅ rāt kabeh.</l>
 	 <!--<app>19b B. F. pasuṅe mātā. D. mātā. — 19 C. pasuṅeṅ gurvantākrama.
 </app> -->
@@ -397,7 +382,7 @@ baryan rātri** guritnireki viniveka rinasan amaṅun lare hati.</l>
 </lg>
 <lg n="2"><l>kunəṅ phalanikeki tan pagavayambək analahasa duhkhhaniṅ jagat,</l>
 <l>narendra sira līna sampun atuhā ndin asayuta ri saṅ nṛpātmaja,</l>
-<l>hana pva ri taṅisnikaṅ stryanaka tovi tan ucapən <!--<app><lem>-->avarṇa<!--</lem><rdg resp="Santoso">avaṛṇa</rdg></app>--> bañcana,</l>
+<l>hana pva ri taṅisnikaṅ stryanaka tovi tan ucapən <!--<app><lem>-->avarṇa<!--</lem><rdg wit="#edss">avaṛṇa</rdg></app>--> bañcana,</l>
 <l>purīṣa həyəh iṅ padamvan ika tan kahatakna təkap maharddhika.</l>
 	 <!--<app>2d C. kahətakna.
 </app> -->
@@ -449,7 +434,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <lg n="7"><l>pūjā samādhi rinəgəpnira dhīracitta,</l> 
 <l>ṅkāne təṅah miṅiṅ arūm alurus* sugandha,</l>
 <l>mantranya ta pva rəṅih iṅ kakənan smarāmrat,</l>
-<l><!--<app><lem>-->susv arja<!--</lem><rdg resp="Santoso">susvārjja</rdg></app>--> lepana yayan tuməmuṅ kasiddhyan.</l>
+<l><!--<app><lem>-->susv arja<!--</lem><rdg wit="#edss">susvārjja</rdg></app>--> lepana yayan tuməmuṅ kasiddhyan.</l>
  <!--<app>	* B. C. D. E. F. G. — 7b A. H. maluru. — 7c D. smarāmrāt. — 7d D. yan.
 </app> -->
 </lg>
@@ -477,7 +462,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <lg n="11"><l>nahan vuvusnira tatan kavənaṅ vinighnan,</l> 
 <l>śrī hastinendra kalavan naranāthapatnī,*</l> 
 <l>kədvā marabyakna liṅnira rakva maṅke,</l>
-<l>pūjān sireṅ nagara de para <!--<app><lem>-->vīrasaṅgha<!--</lem><rdg resp="Santoso">vīra saṅghya</rdg></app>-->.</l>
+<l>pūjān sireṅ nagara de para <!--<app><lem>-->vīrasaṅgha<!--</lem><rdg wit="#edss">vīra saṅghya</rdg></app>-->.</l>
  <!--<app>	* B. C. D. E. — 11b A. F. G. H. naranāthapatni. — 11d G. sira.
 </app> -->
 </lg>
@@ -507,7 +492,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </lg>
 <lg n="3"><l>nāhan hetunireki śīghran umijil məgat i lulut ireṅ yayah bibi sinər,</l>
 <l>sampun prāpta sireṅ paṅastryanan* ikaṅ bala hinalivatan paḍāmrəm aturu,</l>
-<l>sakvehniṅ <!--<app><lem>-->gupurāṅdadak<!--</lem><rdg resp="Santoso">ghupurāṅdadak</rdg></app>--> məṅa tatan vinəṅakən i təkap narendratanaya,</l>
+<l>sakvehniṅ <!--<app><lem>-->gupurāṅdadak<!--</lem><rdg wit="#edss">ghupurāṅdadak</rdg></app>--> məṅa tatan vinəṅakən i təkap narendratanaya,</l>
 <l>deniṅ jñāna viśeṣa tan hana vənaṅ humavərana** ri muṣṭiniṅ tvas inamər.</l>
  <!--<app>	* D. F. G. H. — ** B. C. D. E. F. G. H. — 3a B. sinə̄r. — C. sənə̄ra. F. G. H.nireka. — 3b A. B. C. E. paṅastryananan. — 3d A. humavaraṇa.
 </app> -->
@@ -546,7 +531,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <lg n="3"><l>syapānuṅ usirənku rakva makajīvita ri vuyuṅa* saṅ nareśvara,</l>
 <l>pilih tan agəgə̄h laraṅku yadiyan rva təluṅ anak akārya riṅ puri,</l>
 <l>kita pva juga tan hanāṅuvuhi tan sapinalapala ri ṅhulun təmən,</l>
-<l><!--<app><lem>-->uḍū<!--</lem><rdg resp="Santoso">udhū</rdg></app>--> ləhəṅa tāku matya supadin** kita tan umuliheṅ*** svanāgara.</l>
+<l><!--<app><lem>-->uḍū<!--</lem><rdg wit="#edss">udhū</rdg></app>--> ləhəṅa tāku matya supadin** kita tan umuliheṅ*** svanāgara.</l>
  <!--<app>	* C. D. E. F. ** B. C. D. E. F. H.	*** D. H. — 3a A. B. G. H. vuyuṅ i saṅ. — 3b C. D. E. purī. — 3d A. G. sapadin. — A. B. C. E. F. G. muliheṅ. 
 </app> -->
 </lg>
@@ -637,7 +622,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
  <!--<app>	* E.	** C. D. — 6a B. F. makəməkan. — 6b A. B. G. D. F. H. padu. — 6c A. B. E. F. G. H. kaphala.
 </app> -->
 </lg>
-<lg n="7"><l><!--<app><lem>-->nyagrodhāsəlur<!--</lem><rdg resp="Santoso">nyaṅgrodhāsəlur</rdg></app>--> iṅ ləmah kəpuh agə̄ṅ karamayan amilət təkeṅ ruhur,</l>
+<lg n="7"><l><!--<app><lem>-->nyagrodhāsəlur<!--</lem><rdg wit="#edss">nyaṅgrodhāsəlur</rdg></app>--> iṅ ləmah kəpuh agə̄ṅ karamayan amilət təkeṅ ruhur,</l>
 <l>sak raṅkaṅnyan amarpatāpaḍu vitāna ri təṅah ikanārja kokiran,</l>
 <l>byātītan ri surup hyaṅ arka nṛpaputra sira ḍatəṅ arāryan iṅ yaśa,</l>
 <l>ṅkān mañjiṅ sira riṅ paṅarcaṇan aṅarcaṇa ri saṅ atirūpa bheravī.</l>
@@ -661,9 +646,9 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
   <!--<app>— 1b C. hana sa ni parok. — B. gyat śrī. sūkṣmyarūpa. E. aig śrī.
 </app> -->
 </lg>
-<lg n="2"><l>ghoraṅ <!--<app><lem>-->varṇāhirəṅ<!--</lem><rdg resp="Santoso">vaṛṇnāhirəṅ</rdg></app>--> dvādaśamukha dumilah sə̄ṅnikaṅ netra rakta,</l>
-<l><!--<app><lem>-->daṅṣṭra<!--</lem><rdg resp="Santoso">dhaṅṣtra</rdg></app>--> rvāgātitīkṣṇāṅriṅiriṅi* masavit kāga kṛṣṇābhimāna,</l>
-<l>keśāvyaṅ bāṅ kapālādbhuta səkar ira riṅ <!--<app><lem>-->karṇa<!--</lem><rdg resp="Santoso">kaṛṇna</rdg></app>--> tulya dvicandra,</l>
+<lg n="2"><l>ghoraṅ <!--<app><lem>-->varṇāhirəṅ<!--</lem><rdg wit="#edss">vaṛṇnāhirəṅ</rdg></app>--> dvādaśamukha dumilah sə̄ṅnikaṅ netra rakta,</l>
+<l><!--<app><lem>-->daṅṣṭra<!--</lem><rdg wit="#edss">dhaṅṣtra</rdg></app>--> rvāgātitīkṣṇāṅriṅiriṅi* masavit kāga kṛṣṇābhimāna,</l>
+<l>keśāvyaṅ bāṅ kapālādbhuta səkar ira riṅ <!--<app><lem>-->karṇa<!--</lem><rdg wit="#edss">kaṛṇna</rdg></app>--> tulya dvicandra,</l>
 <l>malvālaṇḍuṅ təḍuṅ iṅ vətəṅ akavaca moṅ carmma siṅhāṅgarūpa.</l>
  <!--<app>	* D. — 2b A. B. C. E. F. G. H. rvāgratitikṣnāṅriṅi-riṅi. — 2d G. təṇḍuh.
 </app> -->
@@ -687,8 +672,8 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <div type="canto" n="11">
 <lg n="1"><l>he vruh matāku kita yan jinamūrti sākṣāt,</l>
 <l>anvam suśīla jitacakṣu hanindyamantra,</l>
-<l>ṣaḍvargaśatru matakut kəta* denta <!--<app><lem>-->śīrṇa<!--</lem><rdg resp="Santoso">śīṛṇna</rdg></app>-->,</l>
-<l>len taṅ trivighna malayū paḍa sapta <!--<app><lem>-->bhasma<!--</lem><rdg resp="Santoso">bhaṣma</rdg></app>-->.</l>
+<l>ṣaḍvargaśatru matakut kəta* denta <!--<app><lem>-->śīrṇa<!--</lem><rdg wit="#edss">śīṛṇna</rdg></app>-->,</l>
+<l>len taṅ trivighna malayū paḍa sapta <!--<app><lem>-->bhasma<!--</lem><rdg wit="#edss">bhaṣma</rdg></app>-->.</l>
  <!--<app>	* H. — 10 A. B. G. D. E. F. G. kita. — 1d E. F. mada. 
 </app> -->
 </lg>
@@ -723,7 +708,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 	 <!--<app>* B. C. D. E. F. H. — 1d A. G. siddhottama.
 </app> -->
 </lg>
-<lg n="2"><l>tuvin ri səḍəṅanta dhīra mahaseṅ <!--<app><lem>-->śmaśānālaya<!--</lem><rdg resp="Santoso">smaśānālaya</rdg></app>-->,</l>
+<lg n="2"><l>tuvin ri səḍəṅanta dhīra mahaseṅ <!--<app><lem>-->śmaśānālaya<!--</lem><rdg wit="#edss">smaśānālaya</rdg></app>-->,</l>
 <l>nirāgraha maliṅgiheṅ kunapa lot madevāśraya,</l>
 <l>samaṅkana kitān pamūrchitaknaṅ mahānugraha,</l>
 <l>avās ri təkaniṅ prayojana sasādhya saṅ sādhaka.</l>
@@ -792,7 +777,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <div type="canto" n="14">
 <lg n="1"><l>honyādbhuta hiriṅ ika ramya taṅ patapan ārja masəmu siluman,</l>
 <l>ṅkāne harəp i ḍukuh ikān pahoman atiśobhita kagirigiri,</l>
-<l>tumpaṅ pitu vuvuṅ ika meru <!--<app><lem>-->bhāsvara<!--</lem><rdg resp="Santoso">bhaśvara</rdg></app>--> pucaknya maṇimaya lumə̄ṅ,</l>
+<l>tumpaṅ pitu vuvuṅ ika meru <!--<app><lem>-->bhāsvara<!--</lem><rdg wit="#edss">bhaśvara</rdg></app>--> pucaknya maṇimaya lumə̄ṅ,</l>
 <l>dīptāsəmu havanani saṅ makahyaṅan umuṅsira paramapada.</l>
 </lg>
 <lg n="2"><l>sə̄k sarvakusuma hana handvaṅ arja masamīpa vulakan alaṅə̄,</l>
@@ -820,7 +805,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </lg>
 <lg n="4"><l>hetunya maṅkana maharddhika harṣani ṅvaṅ,</l>
 <l>yan ton narārya niyataṅ giribhūmi śuddha,</l> 
-<l>ṅhiṅ <!--<app><lem>-->saṅgha<!--</lem><rdg resp="Santoso">saṅghya</rdg></app>--> ta ṅhulun i denta təkā svadeha,</l>
+<l>ṅhiṅ <!--<app><lem>-->saṅgha<!--</lem><rdg wit="#edss">saṅghya</rdg></app>--> ta ṅhulun i denta təkā svadeha,</l>
 <l>duhkhottama pravalaniṅ mara nissahāya.</l>
 </lg>
 <lg n="5"><l>rakryan tuhanku mapa hetuniṅ osahāmbək,</l>
@@ -874,11 +859,11 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <lg n="2"><l>nahan liṅ śrī bhūpālakatanaya sukhāmbək yativara,</l>
 <l>rikā sakveh saṅ paṇḍita masəgəh iṅ saṅ* nṛpasuta,</l>
 <l>pənuh taṅ bhojānindya haraka taləs vvainya sumaji,</l>
-<l>sale puntī <!--<app><lem>-->duryan<!--</lem><rdg resp="Santoso">durryan</rdg><note>(misprint for duryyan?)</note></app>--> panasa paṅinum vvai saha səḍah.</l>
+<l>sale puntī <!--<app><lem>-->duryan<!--</lem><rdg wit="#edss">durryan</rdg><note>(misprint for duryyan?)</note></app>--> panasa paṅinum vvai saha səḍah.</l>
  <!--<app>	* E. — 2b A. B. C. D. F. G. H. iṅ nṛpasuta. — 2C B. C. D. vveh.
 </app> -->
 </lg>
-<lg n="3"><l>ndatan <!--<app><lem>-->varṇan<!--</lem><rdg resp="Santoso">vaṛṇnan</rdg></app>--> tiṅkahnira vəṅi təkāṅ aṇḍa* sumaput,</l>
+<lg n="3"><l>ndatan <!--<app><lem>-->varṇan<!--</lem><rdg wit="#edss">vaṛṇnan</rdg></app>--> tiṅkahnira vəṅi təkāṅ aṇḍa* sumaput,</l>
 <l>samaṅka śrī rājeśvarasuta məgil keśava sira,</l>
 <l>təhər mojar rakvāpti vihikana riṅ meruvivara,</l>
 <l>rikāṅ ənah śrī gaurīpati sira mamaṅguh kasutapan.</l>
@@ -886,8 +871,8 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </app> -->
 </lg>
 <lg n="4"><l>kunaṅ saṅ paṇḍyānūt sakaharəpirānindita təmən,</l>
-<l>taṅeh yan <!--<app><lem>-->varṇan<!--</lem><rdg resp="Santoso">vaṛṇnan</rdg></app>--> riṅ kṣaṇa maguliṅ iṅ bvat halusira,</l>
-<l><!--<app><lem>-->bhaviṣyāmrəm<!--</lem><rdg resp="Santoso">bhavisyāmrəm</rdg></app>--> kālih sira kalalu maseñjiṅ avuṅu,</l>
+<l>taṅeh yan <!--<app><lem>-->varṇan<!--</lem><rdg wit="#edss">vaṛṇnan</rdg></app>--> riṅ kṣaṇa maguliṅ iṅ bvat halusira,</l>
+<l><!--<app><lem>-->bhaviṣyāmrəm<!--</lem><rdg wit="#edss">bhavisyāmrəm</rdg></app>--> kālih sira kalalu maseñjiṅ avuṅu,</l>
 <l>mirir taṅ bāyvātis muni manuk ikeṅ vvahan* arəbut.</l>
  <!--<app>	*C. D. E. F. — 4a D. pāṇḍyānūt. — 4c C. avuṅū. — 4d A. B. G. H. vvah-vvah.
 
@@ -911,15 +896,15 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </app> -->
 </lg>
 <lg n="2"><l>kusumāṅjrah iṅ natar aṅuṅkuli juraṅ alaṅə̄ kadīṅ tulis,</l>
-<l>bhramarāṅrəṅ iṅ gaḍuṅ <!--<app><lem>-->avarṇa<!--</lem><rdg resp="Santoso">avaṛṇna</rdg></app>--> manələhi siraṅ nṛpātmaja,</l>
-<l>karuhun munīndra saṅ akahyaṅatiki <!--<app><lem>-->sahaharṣagorava<!--</lem><rdg resp="Santoso">sahahaṛṣagorava</rdg></app>-->,</l>
+<l>bhramarāṅrəṅ iṅ gaḍuṅ <!--<app><lem>-->avarṇa<!--</lem><rdg wit="#edss">avaṛṇna</rdg></app>--> manələhi siraṅ nṛpātmaja,</l>
+<l>karuhun munīndra saṅ akahyaṅatiki <!--<app><lem>-->sahaharṣagorava<!--</lem><rdg wit="#edss">sahahaṛṣagorava</rdg></app>-->,</l>
 <l>bhagavān sumitra panəlahnira guruvana pakṣa sogata.</l>
 	 <!--<app>2c D. G. H. akahyaṅan atiki.
 </app> -->
 </lg>
 <lg n="3"><l>vacanārya paṇḍita sabhāgya sira mihat i saṅ nṛpātmaja,</l>
 <l>syapa teki liṅnira ri saṅ para ṛṣi sama masraṅādulur,*</l> 
-<l>sipi <!--<app><lem>-->harṣa<!--</lem><rdg resp="Santoso">haṛṣa</rdg></app>--> ni ṅhulun i denira parama surūpa digjaya,</l>
+<l>sipi <!--<app><lem>-->harṣa<!--</lem><rdg wit="#edss">haṛṣa</rdg></app>--> ni ṅhulun i denira parama surūpa digjaya,</l>
 <l>paramārtha sūkṣma maśarīra mətu ri səḍəṅ iṅ nirātmaka.</l>
  <!--<app>	* B. C. D. E. F. G. H. — 3b A. hasraṅādulur. — 3c C. nira marama.
 </app> -->
@@ -949,7 +934,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <lg n="2"><l>nahan liṅira keśavājar i gatī nṛpasuta mahas aṅjajah laṅə̄,</l>
 <l>siraṅ viku sumitra garjita mavākta* madhura ri siraṅ nṛpātmaja,</l>
 <l>tuhanku bapa devaśṛddha ri hiḍəpkvi təkani tanayaṅkv ikiṅ vukir,</l>
-<l>ri denta kurunāthavaṅśa putu <!--<app><lem>-->liṅku<!--</lem><rdg resp="Santoso">liugku</rdg></app>--> kita saka ri saṅ nareśvarī.</l>
+<l>ri denta kurunāthavaṅśa putu <!--<app><lem>-->liṅku<!--</lem><rdg wit="#edss">liugku</rdg></app>--> kita saka ri saṅ nareśvarī.</l>
  <!--<app>	* B. C. D. E. F. G. H. — 2b A. mavakta.
 </app> -->
 </lg>
@@ -1067,7 +1052,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </app> -->
 </lg>
 <lg n="6"><l>sahapatər adulur mvaṅ liṇḍū gə̄ṅ prabhavanira,</l>
-<l>kusuma ravuh ikā saṅkeṅ <!--<app><lem>-->byomāṅibəki<!--</lem><rdg resp="Santoso">bhyomāṅibəki</rdg></app>--> pura,</l>
+<l>kusuma ravuh ikā saṅkeṅ <!--<app><lem>-->byomāṅibəki<!--</lem><rdg wit="#edss">bhyomāṅibəki</rdg></app>--> pura,</l>
 <l>suravacana humuṅ brahmājānindita karəṅə̄,</l>
 <l>tinut iṅaranirān saṅ brahmājān pinagəhakən.</l>
 	 <!--<app>6a C. D. lindvāgə̄ṅ. — 6d C. brahmājān. E. pinagəhan.
@@ -1179,10 +1164,10 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <l>tan dadya liṅ saṅ jinamūrti durlabha,</l>
 <l>yan tona deniṅ hati mūrkha hiṅsaka.</l>
 </lg>
-<lg n="11"><l>hetunya <!--<app><lem>-->mary adhika<!--</lem><rdg resp="Santoso">māryyādhika</rdg></app>--> hiṅsakojjvala,</l>
+<lg n="11"><l>hetunya <!--<app><lem>-->mary adhika<!--</lem><rdg wit="#edss">māryyādhika</rdg></app>--> hiṅsakojjvala,</l>
 <l>maṅgəh ri somyānikanaṅ karākṣasan,</l>
 <l>hyunhyun manah śrī jinamūrti taṅgapa,</l>
-<l>śīghrān sirojar vara <!--<app><lem>-->dharmadeśanā<!--</lem><rdg resp="Santoso">dhaṛṃmadeśanā</rdg></app>-->.</l>
+<l>śīghrān sirojar vara <!--<app><lem>-->dharmadeśanā<!--</lem><rdg wit="#edss">dhaṛṃmadeśanā</rdg></app>-->.</l>
 	 <!--<app>nc C. D. G. H. taṅgama.
 </app> -->
 </lg>
@@ -1206,7 +1191,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <lg n="3"><l>anindyaguṇa śakti riṅ brata suśīla satuvuh ika* rāja bhūpati,</l>
 <l>sudhīra ri kalakvan iṅ japa samādhi taman alupa riṅ jinasmṛti,</l>
 <l>ya kāraṇa bhaṭāra rudra manurun manurun iri siraṅ nareśvara,</l>
-<l><!--<app><lem>-->prahāsana<!--</lem><rdg resp="Santoso">prahāsaṇa</rdg></app>--> ri kīrti saṅ paramabuddha ri gatinika śāntikātmaka.</l>
+<l><!--<app><lem>-->prahāsana<!--</lem><rdg wit="#edss">prahāsaṇa</rdg></app>--> ri kīrti saṅ paramabuddha ri gatinika śāntikātmaka.</l>
  <!--<app>	* D. H.	— 3a A. B. C. E. F. G. ira. — 3c E. manurun i sih ireṅ. H. tumurun manurun. — 3d H. prayasana.
 </app> -->
 </lg>
@@ -1227,14 +1212,14 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 <lg n="6"><l>kunaṅ kəta ri ṅūni mūlanika yan prabhu nara makarūpa rākṣasa,</l>
 <l>haneka jurubhojakārya mabaṅun jaṅan aṅinakane nareśvara,</l>
 <l>amogha ta hilaṅ lavəhlavəhikān hinahal iṅ asu sūkarottama,</l>
-<l>mijil ta ya mamet pahəlyanāmukaṅ kunapa jana təlas <!--<app><lem>-->miniśrakən<!--</lem><rdg resp="Santoso">miniśrākən</rdg></app>-->.</l>
+<l>mijil ta ya mamet pahəlyanāmukaṅ kunapa jana təlas <!--<app><lem>-->miniśrakən<!--</lem><rdg wit="#edss">miniśrākən</rdg></app>-->.</l>
 	 <!--<app>6a H. təka. — 6d H. manut paṅənyanamu.
 </app> -->
 </lg>
 <lg n="7"><l>haturnya ri narendra tan dva təka maṅrahati pamatəkiṅ* karākṣasan,</l>
 <l>usāna riṅ usāna tapvan amaṅan jaṅan atiśaya bhukti ṣaḍrasa,</l>
 <l>nimittanika yan matakvan i lavəhlavəh ika riṅ akārya tan bəsur,</l>
-<l>nyameki pəjahanya yan matura madva karaṇanika <!--<app><lem>-->jāti<!--</lem><rdg resp="Santoso">jati</rdg></app>--> tan salah.</l> 
+<l>nyameki pəjahanya yan matura madva karaṇanika <!--<app><lem>-->jāti<!--</lem><rdg wit="#edss">jati</rdg></app>--> tan salah.</l> 
  <!--<app>	*H. — 7a A. B. C. D. E. F. G. pamatəkaṅ.
 </app> -->
 </lg>
@@ -1278,7 +1263,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </lg>
 <lg n="4"><l>ṅhiṅ atiki saṅ nare rasuta rakva saṅ pinalar iṅ samantabhuvana,</l>
 <l>maḍəmana duhkhaniṅ jagat aṅuṅsya dharma yaśa kīrti riṅ pabharatan,</l>
-<l>apan iṅ usānajanma kitaṅ agrasesuka <!--<app><lem>-->ṅaranta<!--</lem><rdg resp="Santoso">ṅarants</rdg></app>--> vīra suyaśa,</l>
+<l>apan iṅ usānajanma kitaṅ agrasesuka <!--<app><lem>-->ṅaranta<!--</lem><rdg wit="#edss">ṅarants</rdg></app>--> vīra suyaśa,</l>
 <l>svabhava kitān pamatyan i kamūrkhaniṅ kalana śūciloma vəkasan.</l>
 </lg>
 <lg n="5"><l>ika si jayāntaka pva təmah iṅ mahāsura si śūciloma tumuvuh,</l>
@@ -1291,8 +1276,8 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 
 </div>
 <div type="canto" n="24">
-<lg n="1"><l>nā liṅ munivara sumahur narendrasuta <!--<app><lem>-->vādhaka<!--</lem><rdg resp="Santoso">vāḍaka</rdg></app>--> riṅ ujar arūm,</l>
-<l><!--<app><lem>-->ḍū<!--</lem><rdg resp="Santoso">dhū</rdg></app>--> maṅkana kaki ya nimittani ṅhulun umuṅsir iṅ alas aləyəp,</l>
+<lg n="1"><l>nā liṅ munivara sumahur narendrasuta <!--<app><lem>-->vādhaka<!--</lem><rdg wit="#edss">vāḍaka</rdg></app>--> riṅ ujar arūm,</l>
+<l><!--<app><lem>-->ḍū<!--</lem><rdg wit="#edss">dhū</rdg></app>--> maṅkana kaki ya nimittani ṅhulun umuṅsir iṅ alas aləyəp,</l>
 <l>rəsniṅ kinirakira kinon gumantya sivin iṅ bhuvana sukhatara,</l>
 <l>bhūpālaka giṇa ya təkap narendra muharātaṅis analahasa.</l> 
 	 <!--<app>1a B. ryyujar. — 1d B. H. muharān taṅis. C. maharān. H. sira ya təkap.
@@ -1386,7 +1371,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </lg>
 <lg n="3"><l>ri tan somyanteṅ bhūmi sahana muvah riṅ kadi kami,</l>
 <l>avās taṅ rāt syuh durbala ri pamatəkniṅ kaliyuga,</l>
-<l>mahī nirvījekaṅ <!--<app><lem>-->rasa nirasa<!--</lem><rdg resp="Santoso">raṣa niraṣa</rdg><note>Should one understand rasa nīrasa?</note></app>--> taṅ nīca sulabha,</l>
+<l>mahī nirvījekaṅ <!--<app><lem>-->rasa nirasa<!--</lem><rdg wit="#edss">raṣa niraṣa</rdg><note>Should one understand rasa nīrasa?</note></app>--> taṅ nīca sulabha,</l>
 <l>narendrāthelik* riṅ parahita mahādharma viśata.</l>
  <!--<app>	* B. C. D. E. — 3d A. F. G. H. narendrātelik.
 </app> -->
@@ -1399,7 +1384,7 @@ byaktaṅ svacitta mapagəh təka riṅ nirātmya.</l>
 </app> -->
 </lg>
 <lg n="5"><l>daridrākveh dātāsugih akuməd atyanta kasihan,</l>
-<l>dhirāyuh <!--<app><lem>-->taṅ<!--</lem><rdg resp="Santoso">tan</rdg></app>--> pāpī tuna hurip ikaṅ buddhi kuśala,</l>
+<l>dhirāyuh <!--<app><lem>-->taṅ<!--</lem><rdg wit="#edss">tan</rdg></app>--> pāpī tuna hurip ikaṅ buddhi kuśala,</l>
 <l>kulīnādāśālpaṅ kujana ratu siṅ māna sinivi,</l>
 <l>pratiṅkahniṅ rāt yan kaliyuga sukhāmbək diyadiyu.</l>
 	 <!--<app>5b B. tapa pītuna. G. sirāyuh taṅ papituna. D. F. taṅ papituna. E. dhīrāyuh tāpā pituna. — 5c A. E. kujana ratu.
@@ -1448,9 +1433,9 @@ sākṣāt vvayulih*** iṅ amutər tasik təkapirāmṛta ri yativara.</l>
 </app> -->
 </lg>
 <lg n="2"><l>vvantən teki muvah maharṣi mavuvus sodāhaṅan riṅ manah,</l>
-<l>he śrī bhūpatiputra hayva kəta maṅkāmbəkta <!--<app><lem>-->mūḍheṅ<!--</lem><rdg resp="Santoso">muḍeṅ</rdg></app>--> jagat,</l>
+<l>he śrī bhūpatiputra hayva kəta maṅkāmbəkta <!--<app><lem>-->mūḍheṅ<!--</lem><rdg wit="#edss">muḍeṅ</rdg></app>--> jagat,</l>
 <l>nicchā śāsana saṅ narārya yadiyan luṅhāmriheṅ śūnyata,</l>
-<l>tīrthāmet <!--<app><lem>-->viṣa<!--</lem><rdg resp="Santoso">vīṣa</rdg></app>--> sadṛśanta* viphalaṅ svargā madadyaṅ kavah.</l>
+<l>tīrthāmet <!--<app><lem>-->viṣa<!--</lem><rdg wit="#edss">vīṣa</rdg></app>--> sadṛśanta* viphalaṅ svargā madadyaṅ kavah.</l>
  <!--<app>	*B. D. E. — 2d A. C. F. G. H. sadṛsanta.
 </app> -->
 </lg>
@@ -1540,7 +1525,7 @@ pitovi sira buddhamūrti riṅ apan sira kavatəka riṅ punarbhava,</l>
 </app> -->
 </lg>
 <lg n="8"><l>narendrasuta yeka tan dva marahup sira vəkasan asūryasevana,* 
-təlas kahalivat** larisnira sakerika saha <!--<app><lem>-->ṛṣisaṅgha<!--</lem><rdg resp="Santoso">ṛṣisaṅghya</rdg></app>--> maṅdulur,</l>
+təlas kahalivat** larisnira sakerika saha <!--<app><lem>-->ṛṣisaṅgha<!--</lem><rdg wit="#edss">ṛṣisaṅghya</rdg></app>--> maṅdulur,</l>
 <l>juraṅjuraṅ arəs haneki vaṭavṛkṣa kəpuh agəṅ arambayan matə̄b,</l>
 <l>paranti paran iṅ mahakalana duṣṭa mamatimati sattva riṅ vana.</l>
  <!--<app>	* B. C. E. H. ** B. C. — 8a A. D. F. G. asūryyaśevana. — 8b A. D. E. F. G. H. ta halivat. B. madulur.
@@ -1610,7 +1595,7 @@ təlas kahalivat** larisnira sakerika saha <!--<app><lem>-->ṛṣisaṅgha<!--<
 <lg n="4"><l>aho syape koṅ nara dibyarūpa,</l>
 <l>təkery aku mvaṅ ṛṣi śuddhavarṇa,</l>
 <l>ləvəs ri tan vruhmu rikaṅ parāna,</l>
-<l>lugeṅ urip parvata <!--<app><lem>-->laṅghana<!--</lem><rdg resp="Santoso">laṅghyana</rdg></app>--> ṅke.</l>
+<l>lugeṅ urip parvata <!--<app><lem>-->laṅghana<!--</lem><rdg wit="#edss">laṅghyana</rdg></app>--> ṅke.</l>
 </lg>
 <lg n="5"><l>ndya teku kāryanyu dumeh para ṅke,</l>
 <l>mṛgendra khāgādhipa deva tovi,</l>
@@ -1667,7 +1652,7 @@ mahāyaśārtheki sudharma pinrih,</l>
 <lg n="13"><l>apan mahāpātakaṅ arddha hiṅsa,</l>
 <l>tiniṇḍa riṅ rāt para sādhu melik,</l>
 <l>madoh sakeṅ śūnyapadān paratra,* 
-sasar mareṅ <!--<app><lem>-->gomukhatāmra<!--</lem><rdg resp="Santoso">gohmukatamra</rdg></app>-->** təmbe.</l>
+sasar mareṅ <!--<app><lem>-->gomukhatāmra<!--</lem><rdg wit="#edss">gohmukatamra</rdg></app>-->** təmbe.</l>
  <!--<app>	* B. ** B. C. D. E. F. H. — 13b C. D. E. niṅ. — 13c A. G. D. E. F. G. H. paratra. — 13d A. G. gohmukatambra.
 </app> -->
 </lg>
@@ -1836,7 +1821,7 @@ makrak saṅ para deva ghūrṇa lumihat mohūt i saṅ hyaṅ gaṇa.</l>
 </app> -->
 </lg>
 <lg n="11"><l>pūrṇaṅ teja baṅun śaśāṅka ri taṅan śrī hastinendrātmaja,</l>
-<l>tempuhnye* ḍaḍa saṅ gajendramukha gək gər <!--<app><lem>-->ghora<!--</lem><rdg resp="Santoso">ghyora</rdg></app>--> tan pamyati,</l>
+<l>tempuhnye* ḍaḍa saṅ gajendramukha gək gər <!--<app><lem>-->ghora<!--</lem><rdg wit="#edss">ghyora</rdg></app>--> tan pamyati,</l>
 <l>saṅkeṅ drəsnya savaṅ girīndra ḍumavuh puh tvasnikaṅ rākṣasa,</l>
 <l>glānāṅlah juga tar vənaṅ malap ikaṅ bajra bvat aṅliṇḍihi.</l>
  <!--<app>	* D. E. G. — 11b A. B. G. H. təmpuh ne. D. pāmyati. F. təmpuh nyeṅ.
@@ -1933,7 +1918,7 @@ makrak saṅ para deva ghūrṇa lumihat mohūt i saṅ hyaṅ gaṇa.</l>
  <!--<app>	* C. D. E. F. G. — 1a A. B. H. tan yaṅlilir.
 </app> -->
 </lg>
-<lg n="2"><l>ya tinūtnya yan praṇata bhakti ri suku jinamūrti <!--<app><lem>-->sādara<!--</lem><rdg resp="Santoso">sāḍara</rdg></app>-->,</l>
+<lg n="2"><l>ya tinūtnya yan praṇata bhakti ri suku jinamūrti <!--<app><lem>-->sādara<!--</lem><rdg wit="#edss">sāḍara</rdg></app>-->,</l>
 <l>gajavaktra harṣaja mihat milu musapi ləbūni jə̄ṅnira,</l>
 <l>karuhun maharṣi paḍa mastuti ri sira təkapnya śāntika,</l>
 <l>kavəṅan turnon ri kamahātmyanira tuhu bhaṭāra riṅ jagat.</l>
@@ -1992,7 +1977,7 @@ makrak saṅ para deva ghūrṇa lumihat mohūt i saṅ hyaṅ gaṇa.</l>
 </app> -->
 </lg>
 <lg n="11"><l>akire vaneh ṅvaṅ iki tan hana kavənaṅ ikiṅ mṛgeṅ vana,</l>
-<l>pramukhaṅ <!--<app><lem>-->kənas<!--</lem><rdg resp="Santoso">kəṇas</rdg></app>--> kapi lutuṅ vijuṅ ika sama durbalālayu,</l> 
+<l>pramukhaṅ <!--<app><lem>-->kənas<!--</lem><rdg wit="#edss">kəṇas</rdg></app>--> kapi lutuṅ vijuṅ ika sama durbalālayu,</l> 
 <l>ṅūniveh ta saṅ tapa kavəs girigirin i kamūrtiniṅ hulun,</l>
 <l>karaṇaṅku yan suta subhojana ri pamatək iṅ hilālapa.</l>
 	 <!--<app>11c H. kamūrkkan i ṅhulun. — 11d C. suka subhojana.
@@ -2016,13 +2001,13 @@ makrak saṅ para deva ghūrṇa lumihat mohūt i saṅ hyaṅ gaṇa.</l>
 </app> -->
 </lg>
 <lg n="2"><l>prodbhūtaṅ hakṣi mūlyar siyuṅ ika maluṅid katarāṅapnikālva,</l>
-<l>karvaṅ hastātitīkṣṇāriṅiriṅi rumakut <!--<app><lem>-->ry aṅga<!--</lem><rdg resp="Santoso">ryyāṅa</rdg></app>--> saṅ nāthaputra,</l>
+<l>karvaṅ hastātitīkṣṇāriṅiriṅi rumakut <!--<app><lem>-->ry aṅga<!--</lem><rdg wit="#edss">ryyāṅa</rdg></app>--> saṅ nāthaputra,</l>
 <l>mumbul saṅkeṅ jajādrəs gətihira cinucup denikaṅ sattvanātha,</l>
-<l>glānāṅlah citta <!--<app><lem>-->nirvāṇa<!--</lem><rdg resp="Santoso">nirbbāna</rdg></app>-->* ya rinəgepirān mantukeṅ buddhaloka.</l>
+<l>glānāṅlah citta <!--<app><lem>-->nirvāṇa<!--</lem><rdg wit="#edss">nirbbāna</rdg></app>-->* ya rinəgepirān mantukeṅ buddhaloka.</l>
  <!--<app>	* B. C. D. G. H. — 2a B. D. E. aksi. — 2d A. F. glānāṅlah nirbāṇa. E. citta nirbāṇa. E. boddhaloka.
 </app> -->
 </lg>
-<lg n="3"><l>ndan saṅ <!--<app><lem>-->hastīndravaktra<!--</lem><rdg resp="Santoso">hastīnendravaktra</rdg></app>--> mvaṅ uraga kalavan keśava glānacitta,</l>
+<lg n="3"><l>ndan saṅ <!--<app><lem>-->hastīndravaktra<!--</lem><rdg wit="#edss">hastīnendravaktra</rdg></app>--> mvaṅ uraga kalavan keśava glānacitta,</l>
 <l>kepvan deniṅ manah tan vənaṅ asayut i saṅ śrī mahārājaputra, 
 āpan sampun purih saṅ kumavaśakən ikaṅ bodhisattvopadeśa,* 
 tulyekāmbəknirānuṅ pəjaha mahuripāṅhiṅ yaśāvṛddhi mūlya.</l>
@@ -2031,13 +2016,13 @@ tulyekāmbəknirānuṅ pəjaha mahuripāṅhiṅ yaśāvṛddhi mūlya.</l>
 </lg>
 <lg n="4"><l>byātītan līna saṅ śrī jinakula pinaṅan denikaṅ sattvanātha,</l>
 <l>liṇḍū taṅ bhūmi tan kram hyaṅ aruṇa malara lvirnirāṅdoh maṅulvan,</l>
-<l>tan śobhaṅ byoma kadyāṅəmu taṅis i təḍuhniṅ <!--<app><lem>-->ghanāsaṅhub<!--</lem><rdg resp="Santoso">ghyaṇāsaṅhub</rdg></app>--> aṅluh,</l>
+<l>tan śobhaṅ byoma kadyāṅəmu taṅis i təḍuhniṅ <!--<app><lem>-->ghanāsaṅhub<!--</lem><rdg wit="#edss">ghyaṇāsaṅhub</rdg></app>--> aṅluh,</l>
 <l>gəntərnyāsambasambat kilat asəmu kəḍapniṅ təñuh katīkṣṇan.</l>
 	 <!--<app>4d B. C. E. F. G. təñuh mār katīkṣṇan.
 </app> -->
 </lg>
 <lg n="5"><l>lāvan saṅ sattvanāthāsəmu kahuvan* i pəjah śrī mahārājaputra,</l>
-<l>deniṅ rah kesəp ardhāmṛta mamarəgi garbhāmaṅun <!--<app><lem>-->śāntacitta<!--</lem><rdg resp="Santoso">śāntācitta</rdg></app>-->,</l>
+<l>deniṅ rah kesəp ardhāmṛta mamarəgi garbhāmaṅun <!--<app><lem>-->śāntacitta<!--</lem><rdg wit="#edss">śāntācitta</rdg></app>-->,</l>
 <l>maṅkin kaṅən varah saṅ munivara sira yan rājasunvānivārya,</l>
 <l>hetunyan bhakti tan sah manaṅis iri dagan saṅ mahānāthaputra.</l>
  <!--<app>	* D. E. G. H. — 5a A. F. kavuhan. B. rahuvan. C. kavuvan. — 5c C. yan bhāja.
@@ -2062,7 +2047,7 @@ tulyekāmbəknirānuṅ pəjaha mahuripāṅhiṅ yaśāvṛddhi mūlya.</l>
 <l>sattvendra yekāmrih aminta patyana,</l>
 <l>de hastivaktroraga mukhya saṅ ṛṣi.</l>
 </lg>
-<lg n="2"><l>ndan saṅ śinabdan sira teki <!--<app><lem>-->laṅghana<!--</lem><rdg resp="Santoso">laṅghyana</rdg></app>-->,</l>
+<lg n="2"><l>ndan saṅ śinabdan sira teki <!--<app><lem>-->laṅghana<!--</lem><rdg wit="#edss">laṅghyana</rdg></app>-->,</l>
 <l>puh tvasnirān kevala duhkhitānaṅis,</l>
 <l>sattvendra dhīrāptya tumārjanaṅ tanu,</l>
 <l>dīptaṅ nakāṅhiṅ pvaṅ iniṣṭi pālaga.</l>
@@ -2139,7 +2124,7 @@ patyanya nirdon karuṇanta riṅ jagat.</l>
 </div>
 <div type="canto" n="38">
 <lg n="1"><l>sattvendroraga tika mukhya hastivaktra,</l>
-<l><!--<app><lem>-->bhaktyāṅañjali<!--</lem><rdg resp="Santoso">bhyaktyāṅañjali</rdg></app>--> ri siraṅ narendraputra,</l>
+<l><!--<app><lem>-->bhaktyāṅañjali<!--</lem><rdg wit="#edss">bhyaktyāṅañjali</rdg></app>--> ri siraṅ narendraputra,</l>
 <l>kapvāminta vinarah iṅ mahopadeśa,</l>
 <l>dvārānuṅ tutən iṅ acintya śūnyamārga.</l> 
 	 <!--<app>1d G. D. F. śūnyadharmma.
@@ -2226,7 +2211,7 @@ patyanya nirdon karuṇanta riṅ jagat.</l>
 <lg n="5"><l>acintyānumpak riṅ taya matapakan bhāskara vulan,</l>
 <l>ikā lvir saṅ līnādhika sama lavan mokṣakaraṇa,</l>
 <l>nda saṅsiptan siṅ solaha juga lamun nirmala sadā,</l>
-<l>prasiddhāmor iṅ tan hana kaluput iṅ <!--<app><lem>-->vāhyavibhava<!--</lem><rdg resp="Santoso">vāhyu vibhava</rdg></app>-->.</l>
+<l>prasiddhāmor iṅ tan hana kaluput iṅ <!--<app><lem>-->vāhyavibhava<!--</lem><rdg wit="#edss">vāhyu vibhava</rdg></app>-->.</l>
 	 <!--<app>5d E. vāhya.</app> -->
 </lg>
 
@@ -2253,7 +2238,7 @@ patyanya nirdon karuṇanta riṅ jagat.</l>
 </lg>
 <lg n="4"><l>prāṇāyāma ṅaranya bāyu vinatək mareṅ hulu təṅah,</l>
 <l>sarvadvāra minəb təkapnya tinūt iṅ viśeṣa katəmu,</l>
-<l><!--<app><lem>-->oṁkāra<!--</lem><rdg resp="Santoso">aṁ kāra</rdg></app>--> praṇaveki muṅgu ri daləm tvas ardha ya kasə̄k,</l>
+<l><!--<app><lem>-->oṁkāra<!--</lem><rdg wit="#edss">aṁ kāra</rdg></app>--> praṇaveki muṅgu ri daləm tvas ardha ya kasə̄k,</l>
 <l>vetniṅ tattva śivatva dhāraṇa ṅaranya yoga saphala.</l>
 	 <!--<app>4b B. təkap tinut i viśeṣa.
 </app> -->
@@ -2305,12 +2290,12 @@ patyanya nirdon karuṇanta riṅ jagat.</l>
 <lg n="4"><l>nāhan hetu bhaṭāra buddha kahiḍəp putrāprameyeṅ jagat,</l>
 <l>saṅ hyaṅ advaya rāma tattvanira de saṅ paṇḍitāṅhayvani,</l>
 <l>prajñāparimitebu tan sah i səḍəṅniṅ yoga sānusmṛti,</l>
-<l>tan rāgodaya <!--<app><lem>-->bhinna<!--</lem><rdg resp="Santoso">bhīna</rdg></app>--> rakva kalavan hyaṅ durmukheṅātmaja.</l>
+<l>tan rāgodaya <!--<app><lem>-->bhinna<!--</lem><rdg wit="#edss">bhīna</rdg></app>--> rakva kalavan hyaṅ durmukheṅātmaja.</l>
 	 <!--<app>4a B. putrāpramayeṅ.
 </app> -->
 </lg>
 <lg n="5"><l>maṅkā śīlanireṅ mahāyana vəkasniṅ bodhisattvān laku,</l>
-<l>vetniṅ tattva viśeṣa tan huniṅa riṅ <!--<app><lem>-->aṣṭeśvarānindita<!--</lem><rdg resp="Santoso">asteśvarāniṇḍita</rdg></app>-->,* 
+<l>vetniṅ tattva viśeṣa tan huniṅa riṅ <!--<app><lem>-->aṣṭeśvarānindita<!--</lem><rdg wit="#edss">asteśvarāniṇḍita</rdg></app>-->,* 
 yāvat prokṣaka rakva tāvat ikanaṅ niśśreyaseveh pinet,</l>
 <l>nāhan hetuniraṅ śivatva makaḍat muṅsyāmriheṅ śūnyata.</l>
  <!--<app>	* B. C. D. E. H. — 5b A. F. G. haṣṭasvarānindita. — 5d B. D. E. H. ni saṅ śīvatva
@@ -2353,14 +2338,14 @@ yāvat prokṣaka rakva tāvat ikanaṅ niśśreyaseveh pinet,</l>
 </lg>
 <lg n="6"><l>saṅ keśavarṣi masayut sira tan vikalpa,*</l>
 <l>maṅkin kadhīran i manahnirāṅekacitta,**</l> 
-<l>nā hetu saṅ ṛṣi mulih sahamitra<!--<app><lem>-->saṅgha<!--</lem><rdg resp="Santoso">saṅghya</rdg></app>-->,</l>
+<l>nā hetu saṅ ṛṣi mulih sahamitra<!--<app><lem>-->saṅgha<!--</lem><rdg wit="#edss">saṅghya</rdg></app>-->,</l>
 <l>sampun sirojar i munīndra sumitra bauddha.</l>
  <!--<app>	* F. G. H. ** H.6a A. B. C. D. E. vekalpa.	A. B. C. D. E. F. G. niranekacitta. H. sudhira i manah.	s C. H. sirajar.</app> -->
 </lg>
 
 </div>
 <div type="canto" n="43">
-<lg n="1"><l>byātītan ri lavasnireṅ <!--<app><lem>-->vana<!--</lem><rdg resp="Santoso">vaṇa</rdg></app>--> mahə̄m suragaṇa ṛṣi<!--<app><lem>-->saṅgha<!--</lem><rdg resp="Santoso">saṅghya</rdg></app>--> varṇanən,</l>
+<lg n="1"><l>byātītan ri lavasnireṅ <!--<app><lem>-->vana<!--</lem><rdg wit="#edss">vaṇa</rdg></app>--> mahə̄m suragaṇa ṛṣi<!--<app><lem>-->saṅgha<!--</lem><rdg wit="#edss">saṅghya</rdg></app>--> varṇanən,</l>
 <l>vrinvrin deni kaśaktiniṅ sudaśaputra ri patapa nareśvarātmaja,</l>
 <l>māyā bañcana teki rakva gəlarən təkapira ri mahardhikeṅ manah,</l>
 <l>donyān maryanirān nirāgrahanirāśrayan atəmaha bhūmipālaka.</l>
@@ -2450,7 +2435,7 @@ yāvat prokṣaka rakva tāvat ikanaṅ niśśreyaseveh pinet,</l>
 <lg n="14"><l>ceṭinyāglar aneka riṅ natar apet raras araupu səkar telas rurū,</l>
 <l>len tekaṅ hana riṅ batur marək i jə̄ṅ rasiki rəsəp amaṅku pavvahan,</l>
 <l>təkvan vruh ri tuhanya yan milu viraṅrvaṅ aṅəsəsan anambyakən lulut,</l>
-<l>marmanyāsəmu rāga hetuka vuvusnya kadi madhu <!--<app><lem>-->pinəñcər<!--</lem><rdg resp="Santoso">piñəncər</rdg></app>--> iṅ juruh.</l>
+<l>marmanyāsəmu rāga hetuka vuvusnya kadi madhu <!--<app><lem>-->pinəñcər<!--</lem><rdg wit="#edss">piñəncər</rdg></app>--> iṅ juruh.</l>
 	 <!--<app>14b C. rəsəp amaṅkva.
 </app> -->
 </lg>
@@ -2526,7 +2511,7 @@ anaṅgamālaratna rūmira tatan pakatuduhan anūkṣmakən vulat,</l>
 </app> -->
 </lg>
 <lg n="11"><l>prasiddha raras iṅ səkar hilaṅ i tan təkanira rasikaṅ macaṅkrama,</l>
-<l>hilaṅ raras i rasminiṅ hinələm iṅ sanagara yadi tan <!--<app><lem>-->sinanmata<!--</lem><rdg resp="Santoso">sinānmatha</rdg></app>-->,</l>
+<l>hilaṅ raras i rasminiṅ hinələm iṅ sanagara yadi tan <!--<app><lem>-->sinanmata<!--</lem><rdg wit="#edss">sinānmatha</rdg></app>-->,</l>
 <l>ndātan pahi lavan rarasraras i raśminiṅ iṅutus anūkṣma bañcana,</l>
 <l>hilaṅ mara rarasnya tan pararasan rarasira təkap iṅ jitendriya.</l>
 </lg>
@@ -2569,7 +2554,7 @@ anaṅgamālaratna rūmira tatan pakatuduhan anūkṣmakən vulat,</l>
 <div type="canto" n="47">
 <lg n="1"><l>taṅeh yan ucapən laranyan aməgə̄ṅ taṅis yāsəkəl,</l>
 <l>lalu pva ri tiliṅ hyaṅ arka masa tistisiṅ ve ḍatəṅ,</l>
-<l>huvus sama <!--<app><lem>-->maśaivaśauca<!--</lem><rdg resp="Santoso">maśevaśoca</rdg><note>Or is maveṣaśauca intended? See variant readings.</note></app>--> śubhalakṣaṇaṅ apsarī,</l>
+<l>huvus sama <!--<app><lem>-->maśaivaśauca<!--</lem><rdg wit="#edss">maśevaśoca</rdg><note>Or is maveṣaśauca intended? See variant readings.</note></app>--> śubhalakṣaṇaṅ apsarī,</l>
 <l>nda śīghra tumuluy suməṅka ri hiriṅhiriṅniṅ talun.</l>
 	 <!--<app>1a H. taṅis nya təkap i larāṅde səkəl. — 1c B. G. E. F. G. maveśaśoca. H. maveśaśoca sulaṅ apsari laksana.
 </app> -->
@@ -2599,7 +2584,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 </div>
 <div type="canto" n="48">
 <lg n="1"><l>sākṣāt sūkṣma viśeṣa riṅ bhuvana rūpanira ratuni devaniṅ rimaṅ,</l>
-<l><!--<app><lem>-->ekacchattra<!--</lem><rdg resp="Santoso">ekācatra</rdg></app>--> sireṅ manis siniviniṅ juruh i vulat irāgranāsika,</l>
+<l><!--<app><lem>-->ekacchattra<!--</lem><rdg wit="#edss">ekācatra</rdg></app>--> sireṅ manis siniviniṅ juruh i vulat irāgranāsika,</l>
 <l>mudrākāra bhaṭāra śākyamuni taṅ kinatuturan i* tuṅtuṅ iṅ hiḍəp,</l>
 <l>lvir hyaṅniṅ kusumāsamādhi maharəp turunana ri kalaṅvan iṅ kapāt.</l>
  <!--<app>	* B. C. E. H. — 1a C.niṅ rima. — 1b B. C. D. ekāccatra sire manis. — 1c A. D. F. G. kinatutura ri tuṅtuṅ.
@@ -2639,7 +2624,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <lg n="7"><l>len tekaṅ mara madyus iṅ makara kendriya mapatələsan putih mirir,</l>
 <l>madhya* lvir pupusiṅ gəḍaṅ gaḍiṅ avarṇa pəpəsa təkap iṅ samīraṇa,</l>
 <l>len tekaṅ maśarīra yāṅucurakən gəgər i kucur i pəñcuriṅ bañu,</l>
-<l>siñjaṅnyārja mirir kinañcutakən iṅ pupu <!--<app><lem>-->majənar<!--</lem><rdg resp="Santoso">majeñar</rdg></app>--> aṅambvakən smara.</l>
+<l>siñjaṅnyārja mirir kinañcutakən iṅ pupu <!--<app><lem>-->majənar<!--</lem><rdg wit="#edss">majeñar</rdg></app>--> aṅambvakən smara.</l>
  <!--<app>	* B. D. E. — 7b A. C. F. G. H. madhya. — 7c D. E. gigir i kucur.
 </app> -->
 </lg>
@@ -2715,7 +2700,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 </lg>
 <lg n="2"><l>lvir pə̄hniṅ jaladhāṅəmū vari tətəlniṅ roma vetniṅ hirəṅ,</l>
 <l>saṅ hyaṅ candra sireki moləm avənəs deniṅ mukhārjālila,</l>
-<l>nyū dantārəja tan padharma təkap iṅ susv <!--<app><lem>-->ahrit<!--</lem><rdg resp="Santoso">āṅhrit</rdg></app>--> arjātənəṅ,</l>
+<l>nyū dantārəja tan padharma təkap iṅ susv <!--<app><lem>-->ahrit<!--</lem><rdg wit="#edss">āṅhrit</rdg></app>--> arjātənəṅ,</l>
 <l>madhya lvir curigenunus rarasirānraṅ pādapā kāṅinan.</l>
 	 <!--<app>2b B. mukārjālilā. — 2d B. mādhya. padapān.
 </app> -->
@@ -2744,7 +2729,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <div type="canto" n="52">
 <lg n="1"><l>tistis māsa ri sampuniṅ ravi tumuṅgaṅ acala sahateja riṅ laṅit,</l>
 <l>maṅkin ləṅləṅ i rūmnirān vinulatan ləṅəṅ i rarasirāṅure gəluṅ,</l>
-<l>līlā yan paṅalih* tapihnira <!--<app><lem>-->limuṅsuṅaniṅ<!--</lem><rdg resp="Santoso">linuṅsuṅan iṅ</rdg></app>--> uraga śuddha mār mirir,</l>
+<l>līlā yan paṅalih* tapihnira <!--<app><lem>-->limuṅsuṅaniṅ<!--</lem><rdg wit="#edss">linuṅsuṅan iṅ</rdg></app>--> uraga śuddha mār mirir,</l>
 <l>māyāmāyā tikaṅ hane daləm avarṇa śaśadhara ri saṅhubiṅ laṅit.</l>
  <!--<app>	* B. G. D. H. — 1c A. E. F. G. yan yaṅalih.
 </app> -->
@@ -2916,7 +2901,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 </lg>
 <lg n="5"><l>kālānikaṅ devagaṇān paṅastuti,</l> 
 <l>ṅkāne paḍa hyaṅ parameṣṭhi gotama,</l>
-<l>yekān tutur kapva sirān <!--<app><lem>-->vinurṣita<!--</lem><rdg resp="Santoso">vinūrṣtya</rdg></app>-->,</l>
+<l>yekān tutur kapva sirān <!--<app><lem>-->vinurṣita<!--</lem><rdg wit="#edss">vinūrṣtya</rdg></app>-->,</l>
 <l>rəp sakṣaṇa ndah valuyaṅ nṛpātmaja.</l>
 	 <!--<app>5c B. C. H. yekā.
 </app> -->
@@ -2938,7 +2923,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <lg n="8"><l>nā hetuniṅ mantuka seṣṭiniṅ hati,</l> 
 <l>śīghrādavaṅ romanirāpatah muvah,</l>
 <l>māmvīt sirāṇamya rikaṅ mahāgiri,</l> 
-<l>ṅkā keśava prāpta <!--<app><lem>-->sire samantara<!--</lem><rdg resp="Santoso">sira samāntara</rdg></app>-->.</l>
+<l>ṅkā keśava prāpta <!--<app><lem>-->sire samantara<!--</lem><rdg wit="#edss">sira samāntara</rdg></app>-->.</l>
 	 <!--<app>8d B. C. H. sire.
 </app> -->
 </lg>
@@ -2948,14 +2933,14 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <l>deniṅ vatək devagaṇān panaṅguhi.</l>
 	 <!--<app>9 B. kasmala.</app> -->
 </lg>
-<lg n="10"><l>meraṅhulun denira saṅ vatək <!--<app><lem>-->ṛṣi<!--</lem><rdg resp="Santoso">rəsi</rdg></app>-->,</l>
+<lg n="10"><l>meraṅhulun denira saṅ vatək <!--<app><lem>-->ṛṣi<!--</lem><rdg wit="#edss">rəsi</rdg></app>-->,</l>
 <l>menak jugākvāhiḍəpe vuvusnira,</l> 
 <l>ḍū hayva saṅ śrī nṛpaputra maṅkana,</l>
 <l>yogīśvara ndin kadi māskun uttama.</l>
 </lg>
 <lg n="11"><l>doniṅ śarīreki muvah kadīṅ daṅū,</l>
 <l>icchānta tan bañcana roga hetukā,</l>
-<l>sihteṅ mahāsattva <!--<app><lem>-->sudharma<!--</lem><rdg resp="Santoso">suddharma</rdg></app>--> karaṇa,</l>
+<l>sihteṅ mahāsattva <!--<app><lem>-->sudharma<!--</lem><rdg wit="#edss">suddharma</rdg></app>--> karaṇa,</l>
 <l>mvaṅ svasthaniṅ* sarvajagat pramāṇa ya.</l>
  <!--<app>	* B. — 11a B. kadiṅ daṅu. 11b F. raga. — 11d A. C. D. E. F. G. H. svasta.
 </app> -->
@@ -2997,7 +2982,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <lg n="3"><l>taṅeh yan ucapən gatinya ri layatnira ri təkanirāmaṅun laṅə̄,</l>
 <l>baṅun katurunan hyaṅ iṅ masa kapāt sahanahananikaṅ sakendriya,</l>
 <l>byatīta ri larisnireki tucapaṅ sudahana vararākṣasottama,</l>
-<l><!--<app><lem>-->valaṅ<!--</lem><rdg resp="Santoso">balaṅ</rdg></app>--> nṛpati poruṣāḍa kaburan təkapira daśabāhu riṅ vana*.</l>
+<l><!--<app><lem>-->valaṅ<!--</lem><rdg wit="#edss">balaṅ</rdg></app>--> nṛpati poruṣāḍa kaburan təkapira daśabāhu riṅ vana*.</l>
  <!--<app>	* D. H. — 3d C. kasuran təkap. D. balā nṛpati. A. B. G E. F. G. riṅ raṇa.
 </app> -->
 </lg>
@@ -3022,7 +3007,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <lg n="7"><l>bhaviṣyati ḍatəṅ narendra daśabāhu rumuruh irikaṅ mahāsura,</l>
 <l>sahāyudha surakṣa gadgada manahnira lumihat i saṅ nṛpātmaja,</l>
 <l>pilih ratunikaṅ mahāsura nimittanika marək anamya sādara,</l>
-<l>bhaṭāra karikānurun panaha saṅ prabhu <!--<app><lem>-->karaṇanirojvalāmuvus<!--</lem><rdg resp="Santoso">karaṇa irojvalāmuvus</rdg></app>-->.</l>
+<l>bhaṭāra karikānurun panaha saṅ prabhu <!--<app><lem>-->karaṇanirojvalāmuvus<!--</lem><rdg wit="#edss">karaṇa irojvalāmuvus</rdg></app>-->.</l>
 	 <!--<app>7c E. rarāmya sādara. — 7d B. nirojvalāmuvus.
 </app> -->
 </lg>
@@ -3109,7 +3094,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <l>tan varṇan sira muṅgah iṅ ratha kalih saṅ keśavāmvit maluy,</l>
 <l>mvaṅ taṅ rākṣasa sampun amvit i sirān bhikṣvātapeṅ parvata.</l>
 </lg>
-<lg n="10"><l>līlālon lariniṅ rathātut i hujuṅniṅ <!--<app><lem>-->parvatājə̄ṅ<!--</lem><rdg resp="Santoso">parvata jə̄ṅ</rdg></app>--> kidul,</l>
+<lg n="10"><l>līlālon lariniṅ rathātut i hujuṅniṅ <!--<app><lem>-->parvatājə̄ṅ<!--</lem><rdg wit="#edss">parvata jə̄ṅ</rdg></app>--> kidul,</l>
 <l>sə̄k tekaṅ balayodhasaṅgha maṅiriṅ ghūrṇaṅ mṛdaṅgāsəlur,</l>
 <l>ndan śrī bhūpati rakva sārathi ri saṅ śrī hastinendrātmaja,</l>
 <l>sākṣāt kṛṣṇa dhanañjaye huvusirāpraṅ mvaṅ vatək korava.</l>
@@ -3137,7 +3122,7 @@ anūkṣma kadi tan kavastvana sire padevāśrayan,</l>
 <lg n="14"><l>karvālah təkapiṅ hulun masusupan boṅ ləs matiṅgal pura,</l>
 <l>yekān rakva tinūtnya* bhaktin umusir śrī ratnakāṇḍādhipa;
 liṅ saṅ bhūpati saṅ nṛpātmaja matakvan hetuniṅ praṅ daṅu,</l>
-<l>lāvan maṅkana pan sumitra karəṅə̄ dadya <!--<app><lem>-->prabhaṅgenucap<!--</lem><rdg resp="Santoso">prabhaṅśenucap</rdg><note>s.v. prabhaṅga OJED 1377</note></app>-->.</l>
+<l>lāvan maṅkana pan sumitra karəṅə̄ dadya <!--<app><lem>-->prabhaṅgenucap<!--</lem><rdg wit="#edss">prabhaṅśenucap</rdg><note>s.v. prabhaṅga OJED 1377</note></app>-->.</l>
  <!--<app>	* B. D. G. H. — 14b A. C. E. F. ni. B. umusī.
 </app> -->
 </lg>
@@ -3210,7 +3195,7 @@ liṅ saṅ bhūpati saṅ nṛpātmaja matakvan hetuniṅ praṅ daṅu,</l>
 <l>susv arjārəja keṅineṅin asavaṅ kəna tulisa kasambat iṅ maṅə̄.</l>
 </lg>
 <lg n="4"><l>taṅheh yan vuvusən hajə̄ṅnira təkeṅ luṅayan asəmu luṅgahiṅ gaḍuṅ,</l>
-<l>kīrṇaṅ ṣaṭpada keṅis aṅrasi* vətisnira kadi <!--<app><lem>-->məkar<!--</lem><rdg resp="Santoso">mūkar</rdg></app>--> ānamar puḍak,</l>
+<l>kīrṇaṅ ṣaṭpada keṅis aṅrasi* vətisnira kadi <!--<app><lem>-->məkar<!--</lem><rdg wit="#edss">mūkar</rdg></app>--> ānamar puḍak,</l>
 <l>suṅsutsuṅsutireki rakva caritan dumadak amahi rāganiṅ mihat,</l>
 <l>kəmbəṅkəmbəṅ i luhnirāsəmu ririsriris i paṅayatiṅ** labuh kapāt.</l>
  <!--<app>	* E. F. ** C. F.4b A. B. C. D. G. H. keṅisāṅrəs. — 4d A. B. D. E. G. H. iraṅayat iṅ labuh.</app> -->
@@ -3370,7 +3355,7 @@ təkvan saṅ hinarəp=harəp sira səḍəṅ karma suputrīṅ puri,</l>
 <lg n="3"><l>təkvan rakva kayogyan i ṅvaṅ iki yan kaka haji tulusāsiheṅ hulun,</l>
 <l>kəmbaṅkəmbaṅa* donku ratnaduhitānira taləra makesiniṅ puri,</l>
 <l>denya ṅvaṅ piṅitən malar sira hanāṅlamara ratu suməmbahe** haji,</l>
-<l><!--<app><lem>-->tan gyāgyākəna siṅ<!--</lem><rdg resp="Santoso">tan gyagyakən asiṅ</rdg></app>--> rəsəprəsəp aṅampunana rəsəpa riṅ kadiṅ hulun.</l>
+<l><!--<app><lem>-->tan gyāgyākəna siṅ<!--</lem><rdg wit="#edss">tan gyagyakən asiṅ</rdg></app>--> rəsəprəsəp aṅampunana rəsəpa riṅ kadiṅ hulun.</l>
  <!--<app>	* B. C. D. E. F. H.	** D. F. H. — 3b A. G. kəmbaṅkəmbaṅ donku. — 3c A. B. C. E. G. suməmbaha haji.
 </app> -->
 </lg>
@@ -3382,7 +3367,7 @@ təkvan saṅ hinarəp=harəp sira səḍəṅ karma suputrīṅ puri,</l>
 </app> -->
 </lg>
 <lg n="5"><l>hah rāmaṅku bibiṅku saṅ lumah iṅ agranagara dadi sūkṣmadevata,</l>
-<l><!--<app><lem>-->tiṅhal te kasiharṣaniṅ kavəkas<!--</lem><rdg resp="Santoso">tiṅhal teki si harṣaniṅ kavəkas</rdg><note>(OJED s.v. kavəkas)</note></app>-->* iṅ kakak dinulur i tan sihiṅ vidhi,</l>
+<l><!--<app><lem>-->tiṅhal te kasiharṣaniṅ kavəkas<!--</lem><rdg wit="#edss">tiṅhal teki si harṣaniṅ kavəkas</rdg><note>(OJED s.v. kavəkas)</note></app>-->* iṅ kakak dinulur i tan sihiṅ vidhi,</l>
 <l>dūran teki manəhta yan kita samāhuripa tulusa sanmateṅ hulun,</l>
 <l>saṅsiptān dudutən ṅhulun bapa tibāna lara havananiṅ hulun pəjah.</l>
  <!--<app>	* B. C. E. F. — 5b A. D. G. H. kavəlas. B. tiṅhalte ta. C. D. tiṅhal teka. C. E. kavəkas i kakak.
@@ -3479,7 +3464,7 @@ sīnlan gīta palambaṅ arja mamanismanisi vuvusikāmaṅun laṅə̄,</l>
 
 </div>
 <div type="canto" n="66">
-<lg n="1"><l>byātītan ri larisnireki təka <!--<app><lem>-->riṅ hudyāna<!--</lem><rdg resp="Santoso">riṅ udyāna</rdg><note>(m.c.)</note></app>--> ratnālaya,</l>
+<lg n="1"><l>byātītan ri larisnireki təka <!--<app><lem>-->riṅ hudyāna<!--</lem><rdg wit="#edss">riṅ udyāna</rdg><note>(m.c.)</note></app>--> ratnālaya,</l>
 <l>honyekaṅ gupurāpucak maṇi murub lvir tejaniṅ bhāskara,</l>
 <l>sakvehniṅ ratha* ramya maṇḍəg irikāglar** taṅ dvipāṅgāḍəḍə,</l>
 <l>kañcit śrī parameśvarī sira ḍatəṅ mvaṅ saṅ maṇikniṅ puri.</l>
@@ -3507,7 +3492,7 @@ mvaṅ tekaṅ kakavin sinūkṣma ya kənojarnyār umuṅgv iṅ jinəm.</l>
  <!--<app>	* E. — 4a E. H. i piṅgir aṅudoḍāṅ. — 4c C. latə. E. lavə̄. H. laṅə̄və̄. — 4d H. kakavin si ..va savaṅ (this part is overlooked up to 5c).
 </app> -->
 </lg>
-<lg n="5"><l>guṇḍik <!--<app><lem>-->vval<!--</lem><rdg resp="Santoso">valə</rdg><note>(OJED s.v. guṇḍik)</note></app>--> hana kuñja len kakakakānvam lvir ratih riṅ hajə̄ṅ,</l>
+<lg n="5"><l>guṇḍik <!--<app><lem>-->vval<!--</lem><rdg wit="#edss">valə</rdg><note>(OJED s.v. guṇḍik)</note></app>--> hana kuñja len kakakakānvam lvir ratih riṅ hajə̄ṅ,</l>
 <l>ramyādyus paḍa garjitāvudavude tusniṅ taṭākādaləm,</l>
 <l>akveh lvirnya baṅun vulan mava savaṅ kevran təkapniṅ rəməṅ,</l>
 <l>len tekaṅ kadi śaṅkhabāhu riṅ apekin tan subhuktyeṅ tilam.</l>
@@ -3566,7 +3551,7 @@ mvaṅ tekaṅ kakavin sinūkṣma ya kənojarnyār umuṅgv iṅ jinəm.</l>
 </lg>
 <lg n="7"><l>ramyākveh tṛṇa kañcanāsəmu vəlas harəp amilət aśokapādapa,</l>
 <l>dhūpā kastuririṅ pahoman amələk kadi hana sira bhikṣv aṅarcana,
-ñjrah taṅ <!--<app><lem>-->kāñcanavṛkṣa cāmara<!--</lem><rdg resp="Santoso">vṛkṣa kañcana cāmara</rdg><note>(m.c.)</note></app>--> ri heṅ muvah ika hana sattva kasturi,</l>
+ñjrah taṅ <!--<app><lem>-->kāñcanavṛkṣa cāmara<!--</lem><rdg wit="#edss">vṛkṣa kañcana cāmara</rdg><note>(m.c.)</note></app>--> ri heṅ muvah ika hana sattva kasturi,</l>
 <l>mvaṅ səṅgah kanakārja rakva mavilāsa maməṅaməṅ avarṇa bañcana.</l>
 	 <!--<app>7b B. bhīkṣvaṅarccana. — 7c B. D. F. H. kañcanavṛkṣa. C. D. i tahən asatva.
 </app> -->
@@ -3589,7 +3574,7 @@ mvaṅ tekaṅ kakavin sinūkṣma ya kənojarnyār umuṅgv iṅ jinəm.</l>
 <lg n="1"><l>kunaṅ ika saṅ savaṅ hyaṅ i kalaṅvaniṅ kusuma katvaṅ iṅ sanagara,</l>
 <l>hana sira riṅ bukūr i təpiniṅ juraṅ liniput iṅ gaḍuṅ vahu mure,</l>
 <l>ləṅəṅ alaṅə̄ mihat ri ləyəpiṅ kalaṅvan atiśobhitāparimita,</l>
-<l>təkapi haləpnikaṅ sphaṭikaveśmaratna manaruh <!--<app><lem>-->dināvyaṅ<!--</lem><rdg resp="Santoso">dināvyan</rdg><note>(OJED, s.v. avyaṅ)</note></app>--> umurub.</l>
+<l>təkapi haləpnikaṅ sphaṭikaveśmaratna manaruh <!--<app><lem>-->dināvyaṅ<!--</lem><rdg wit="#edss">dināvyan</rdg><note>(OJED, s.v. avyaṅ)</note></app>--> umurub.</l>
 </lg>
 <lg n="2"><l>riniṅariṅa pva mṛga kadi tan pamātra muvaheka rakva ya dələ̄n,</l>
 <l>kadi məsateṅ kṣaṇāmarəṅane kəḍapniṅ umaraṅikət səkar arūm,</l>
@@ -3791,7 +3776,7 @@ mvaṅ tekaṅ kakavin sinūkṣma ya kənojarnyār umuṅgv iṅ jinəm.</l>
 <lg n="3"><l>ya kāraṇanirā ndatan hana vənaṅ mahasa ri kalaṅə̄nya durgama,</l>
 <l>samāpta para devasaṅgha mavədiṅ hilahila gurutalpakenucap,</l>
 <l>bhaṭāra ravicandra tan panəṅah iṅ taman i larisirāpradakṣiṇa,</l>
-<l>sameriṅ atibhakti riṅ guru <!--<app><lem>-->sahasthiti sira<!--</lem><rdg resp="Santoso">sahāsvi ta sira</rdg><note>(OJED s.v. upadrava)</note></app>--> mavədīṅ upadrava.</l>
+<l>sameriṅ atibhakti riṅ guru <!--<app><lem>-->sahasthiti sira<!--</lem><rdg wit="#edss">sahāsvi ta sira</rdg><note>(OJED s.v. upadrava)</note></app>--> mavədīṅ upadrava.</l>
 	 <!--<app>3d H. sahasthiti.
 </app> -->
 </lg>
@@ -3852,7 +3837,7 @@ nimittaniṅ arūpa manmatha lavan ratih atikin aṅayva saṅgama,</l>
 <lg n="5"><l>ramyākveh madədəh haneṅ vvat alaṅə̄ ləṅləṅ mihat kasrəpan,</l>
 <l>deniṅ paṅkaja kāñcanārja sumənə̄ lvir tejaniṅ vai murub,</l>
 <l>len tekaṅ mahavan kidul hana sakeṅ pūrvottarāgyārəbut,</l>
-<l>vval vuṅkuk malajəṅ kakānvam aṅure <!--<app><lem>-->golyāmavaṅ<!--</lem><rdg resp="Santoso">lolyāmavaṅ</rdg><note>(OJED, s.v. vval)</note></app>--> pavvahan.*</l>
+<l>vval vuṅkuk malajəṅ kakānvam aṅure <!--<app><lem>-->golyāmavaṅ<!--</lem><rdg wit="#edss">lolyāmavaṅ</rdg><note>(OJED, s.v. vval)</note></app>--> pavvahan.*</l>
 	 <!--<app>* B. C. D. F. H. — 5d A. G. pavvatan. E. the vhole sloka is overlooked.
 </app> -->
 </lg>
@@ -3895,7 +3880,7 @@ nimittaniṅ arūpa manmatha lavan ratih atikin aṅayva saṅgama,</l>
 <lg n="11"><l>buddhi śrī jinamūrti ləṅləṅ alaṅə̄ de śrī narendrātmajā,</l>
 <l>rūpa hyaṅ suranātha ṅūnin atəmah strī tan tumaṇḍiṅ* pisan,</l>
 <l>tan hopən tikanaṅ mamañcana kabeh sakvehnikaṅ hapsarī,</l>
-<l>norāmarpataneka <!--<app><lem>-->tan sva<!--</lem><rdg resp="Santoso">tan svaṅ</rdg><note>(OJED, s.v. taman)</note></app>-->** marəke jə̄ṅ śrī** suputrīṅ taman.</l>
+<l>norāmarpataneka <!--<app><lem>-->tan sva<!--</lem><rdg wit="#edss">tan svaṅ</rdg><note>(OJED, s.v. taman)</note></app>-->** marəke jə̄ṅ śrī** suputrīṅ taman.</l>
  <!--<app>	* D. E. F.	** S.	*** C. D. F. H.	– 11b A. B. G. G. H. tan tumandaṅ.	– 11d A. B. E. G. marəke jə̄ṅ suputrīṅ.
 </app> -->
 </lg>
@@ -3916,7 +3901,7 @@ nimittaniṅ arūpa manmatha lavan ratih atikin aṅayva saṅgama,</l>
 <lg n="14"><l>śobhāgə̄ṅ haṅalun tikaṅ kuvu sənaddha śrī narendrāməgil,</l>
 <l>bāpra mvaṅ gupuranya tuṇḍa saṅa yatnaṅ vīrayodhākəmit,</l>
 <l>sə̄k raṅkaṅnya huvus kinaṇṭa tinateṅ jro lvir rarasniṅ puri,</l>
-<l>deśākveh para <!--<app><lem>-->kuvv asaṅgraha<!--</lem><rdg resp="Santoso">kuvvasaṅgraha</rdg></app>--> lavan jurvādi samyāmaṅun.*</l>
+<l>deśākveh para <!--<app><lem>-->kuvv asaṅgraha<!--</lem><rdg wit="#edss">kuvvasaṅgraha</rdg></app>--> lavan jurvādi samyāmaṅun.*</l>
 	 <!--<app>* B. C. D. E. H. — 14a H. kuvu-kuvu nya śrī. — 14d A. F. G. saṅ māmaṅun.
 </app> -->
 </lg>
@@ -3992,9 +3977,9 @@ nimittaniṅ arūpa manmatha lavan ratih atikin aṅayva saṅgama,</l>
 </app> -->
 </lg>
 <lg n="7"><l>endah lvir siluman sapolahira tan pamanəhi kadi devaniṅ taman,</l>
-<l>lvir <!--<app><lem>-->mukṣa n dinələ̄ katon<!--</lem><rdg resp="Santoso">mūkṣāndi kələ̄ katon</rdg><note>(OJED, s.v. mokṣa)</note></app>--> kadi mahānəvasi hatiniṅ aṅjajah ləṅə̄,</l>
+<l>lvir <!--<app><lem>-->mukṣa n dinələ̄ katon<!--</lem><rdg wit="#edss">mūkṣāndi kələ̄ katon</rdg><note>(OJED, s.v. mokṣa)</note></app>--> kadi mahānəvasi hatiniṅ aṅjajah ləṅə̄,</l>
 <l>yan tiṅhal kadi polahiṅ kumuda kāṅinan* amuhara rāganiṅ rimaṅ,</l>
-<l><!--<app><lem>-->ndin tan syūha ṅ akūṅ<!--</lem><rdg resp="Santoso">ndin tan syuh taṅ akūṅ</rdg><note></note></app>--> tumiṅhala ri polahira rəṅihanāməḍar tapih.</l>
+<l><!--<app><lem>-->ndin tan syūha ṅ akūṅ<!--</lem><rdg wit="#edss">ndin tan syuh taṅ akūṅ</rdg><note></note></app>--> tumiṅhala ri polahira rəṅihanāməḍar tapih.</l>
  <!--<app>	* B. C. D. E. H. — 7c A. F. G. kāṅlihan. — 7d B. D. E. G. H. ndī tan syuhaṅ.
 </app> -->
 </lg>
@@ -4082,7 +4067,7 @@ nimittaniṅ arūpa manmatha lavan ratih atikin aṅayva saṅgama,</l>
 	 <!--<app>* 8d–11c B. C. D. E. H. — 8d A. G. ṅusiraṅ vanāṅañuta duhka niṅ hati. Stanzas 9, 10 and 11 are missing in A. G.
 </app> -->
 </lg>
-<lg n="9"><l><!--<app><lem>-->maṇik ambu<!--</lem><rdg resp="Santoso">maṇikamənyu</rdg><note>(OJED, s.v. luru)</note></app>--> rakva mavavan kanaka luru paḍaṅku riṅ raras,</l>
+<lg n="9"><l><!--<app><lem>-->maṇik ambu<!--</lem><rdg wit="#edss">maṇikamənyu</rdg><note>(OJED, s.v. luru)</note></app>--> rakva mavavan kanaka luru paḍaṅku riṅ raras,</l>
 <l>lvir tararavuh adulur bhujaga,*</l>
 <l>təmahiṅ hulun kaka dudū lavan vulan.</l>
  <!--<app>	* F. H.
@@ -4269,7 +4254,7 @@ sākṣāt saṅ hyaṅ smara mvaṅ ratihira mapupul liṅnikaṅ vvaṅ tumi�
 </app> -->
 </lg>
 <lg n="7"><l>saṅ kady ānaṅgarūpāsəmu madhu lumihat saṅ ləṅəṅ riṅ kisapvan,</l>
-<l><!--<app><lem>-->marmāmarmāmrahāsāṅiliṅiliṅi<!--</lem><rdg resp="Santoso">marmāmarmāmrahāsānāṅiliṅiliṅi</rdg><note>(OJED, s.v. buṅah)</note></app>--> buṅahniṅ təṅah lvir tulis mās,</l>
+<l><!--<app><lem>-->marmāmarmāmrahāsāṅiliṅiliṅi<!--</lem><rdg wit="#edss">marmāmarmāmrahāsānāṅiliṅiliṅi</rdg><note>(OJED, s.v. buṅah)</note></app>--> buṅahniṅ təṅah lvir tulis mās,</l>
 <l>jaṅgāṅol nyū gaḍiṅ rūmniran aṅamər urojārja saṅ śrī sudevī,</l>
 <l>sojar pojarnira lvir gərəh amisiki sinvamnvamiṅ nāgapuṣpa.</l>
 	 <!--<app>7b B. marmma-marmmāmrahasaṅili-iliṅi buṅah.
@@ -4327,7 +4312,7 @@ sākṣāt saṅ hyaṅ smara mvaṅ ratihira mapupul liṅnikaṅ vvaṅ tumi�
 <lg n="1"><l>saṅ śrīniṅ asana kakənan manisni viṣaniṅ vuvus amaji kapə̄,</l>
 <l>lvir tan huniṅa vulatirān vavaṅ tikəl ikaṅ halis amarəpəhi,</l>
 <l>rəsrəsnira kavənaṅa hetuniṅ masəmu suṅsut atulak inamər,</l>
-<l>kūṅ rāganira maṅulanəh <!--<app><lem>-->mapeṅ<!--</lem><rdg resp="Santoso">mapet</rdg><note> (OJED, s.v. ahañutan)</note></app>--> hati baṅun manahiṅ ahañutan.</l>
+<l>kūṅ rāganira maṅulanəh <!--<app><lem>-->mapeṅ<!--</lem><rdg wit="#edss">mapet</rdg><note> (OJED, s.v. ahañutan)</note></app>--> hati baṅun manahiṅ ahañutan.</l>
 </lg>
 <lg n="2"><l>nirvā vəlasira ri narendraputra paḍa denira suməṅ agila,</l>
 <l>nirvā rəmənira ri raras jinendratanu dūra siran aṅaməra,</l>
@@ -4371,7 +4356,7 @@ sākṣāt saṅ hyaṅ smara mvaṅ ratihira mapupul liṅnikaṅ vvaṅ tumi�
 <lg n="3"><l>toh ndin ṅvaṅ harəperiyāsəmu pasāhira tan ana vəlas maṅaryakən,</l>
 <l>sis ndin vanya kətaṅ liraṅ vinilət iṅ gaḍuṅ i puputikāməgat sari,
 āpan kenakaniṅ səkar tumanək iṅ bhramara jənək i ramyaniṅ taman,*</l>
-<l>sinvam konəṅunəṅ kasumpaṅa gatinya kahatakənaniṅ <!--<app><lem>-->macaṅkrama<!--</lem><rdg resp="Santoso">caṅkrama</rdg><note>(OJED, s.v. kasumpaṅa)</note></app>-->.</l>
+<l>sinvam konəṅunəṅ kasumpaṅa gatinya kahatakənaniṅ <!--<app><lem>-->macaṅkrama<!--</lem><rdg wit="#edss">caṅkrama</rdg><note>(OJED, s.v. kasumpaṅa)</note></app>-->.</l>
  <!--<app>	* B. C. D. E. F. G. H. — 3a B. C. D. F. H. pasaṅkuh ira tan avəlas. E. pasaṅguh ira tan avəlas. — 3b B. vilətan. C. D. E. F. G. H. vilətən iṅ. — 3c A. āpan tan kenakan iṅ səkar tumanək iṅ bhramara jənək i rāmya niṅ kapat.
 	
 </app> -->
@@ -4434,7 +4419,7 @@ sākṣāt saṅ hyaṅ smara mvaṅ ratihira mapupul liṅnikaṅ vvaṅ tumi�
 </lg>
 <lg n="4"><l>tan huniṅan rarasnira bhaviṣyati gumuliṅ akālihan huləs,</l>
 <l>śrī nṛpaputra yeka tumitih muvah i lulutireṅ suputrikā,</l>
-<l>ndah mavəlas kabeh taṅ anaviṅ maṅən i laranirān <!--<app><lem>-->kapiṅrvani<!--</lem><rdg resp="Santoso">kapiṅrvana</rdg><note>(OJED, s.v. anaviṅ)</note></app>-->,</l>
+<l>ndah mavəlas kabeh taṅ anaviṅ maṅən i laranirān <!--<app><lem>-->kapiṅrvani<!--</lem><rdg wit="#edss">kapiṅrvana</rdg><note>(OJED, s.v. anaviṅ)</note></app>-->,</l>
 <l>liṅnikanaṅ vaneh ndi ta hanāṅ krəvag alara pəjah kinə̄luhan.</l>
 </lg>
 
@@ -4479,7 +4464,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 <lg n="7"><l>yekāṅde rəsəp iṅ tumiṅhal i sirāsəmu madhu kalavan guladrava,</l>
 <l>sakvehniṅ maṅiriṅ kapūhan aṅaləm ri sira kadi sakiṅ smarālaya,</l>
 <l>līlālon lariniṅ rathātut* i pəlukniṅ** acala juraṅ adbhutādaləm,</l>
-<l><!--<app><lem>-->sumbərsumbərikāhniṅ<!--</lem><rdg resp="Santoso">sumbərikāhəniṅ</rdg><note>(OJED, s.v. sumbər)</note></app>--> adrəs i hilīnya tṛṇataru rumambay iṅ bañu.</l>
+<l><!--<app><lem>-->sumbərsumbərikāhniṅ<!--</lem><rdg wit="#edss">sumbərikāhəniṅ</rdg><note>(OJED, s.v. sumbər)</note></app>--> adrəs i hilīnya tṛṇataru rumambay iṅ bañu.</l>
  <!--<app>	*B. D. E. F. H.	** B. D. E. F. G. H. — 7c A. C. G. ratha tūt. A. ikanaṅ acala. C. iṅ acala.
 </app> -->
 </lg>
@@ -4500,10 +4485,10 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 <lg n="10"><l>deśākveh təpiniṅ pasir muvah hanāśrama tinəmu kadiṅ lamatlamat,</l>
 <l>ramyaṅ vvaṅ hamukət hanāmayaṅ amañciṅ* anəṅah agave ṅrəs iṅ hati,</l>
 <l>kombak kombul ikaṅ bahitra yaya rakva karəma təkapiṅ drəs iṅ barat,</l>
-<l>maṅkin dhīra ta <!--<app><lem>-->yāṅajar pilah<!--</lem><rdg resp="Santoso">yāṅaya pāpilih</rdg><note>(OJED, s.v. papilih)</note></app>--> agə̄ṅ ivakika karaṇanyan ujvala.</l>
+<l>maṅkin dhīra ta <!--<app><lem>-->yāṅajar pilah<!--</lem><rdg wit="#edss">yāṅaya pāpilih</rdg><note>(OJED, s.v. papilih)</note></app>--> agə̄ṅ ivakika karaṇanyan ujvala.</l>
  <!--<app>	* D. E F. G. H. — 10a B. D. F. H. lamad-lamad. H. phalvākveh. 10b A. B. C. amañjiṅ. — 10d D. E. F. G. yāṅayāpilah.</app> -->
 </lg>
-<lg n="11"><l>kayvanyārja <!--<app><lem>-->maniṅgilis<!--</lem><rdg resp="Santoso">maniṅgil iṅ</rdg><note>(OJED, s.v. ahañutan)</note></app>--> kadi manahniṅ ahañutan i duṅhusiṅ paruṅ,</l>
+<lg n="11"><l>kayvanyārja <!--<app><lem>-->maniṅgilis<!--</lem><rdg wit="#edss">maniṅgil iṅ</rdg><note>(OJED, s.v. ahañutan)</note></app>--> kadi manahniṅ ahañutan i duṅhusiṅ paruṅ,</l>
 <l>paṇḍan vvaṅnya baṅun mataṅgəh asaput hima tinaṅisan iṅ həlaṅ muni,</l>
 <l>lor vetanya karaṅ liman kinasut iṅ ryak asəmu gərəh iṅ labuh kapat,</l>
 <l>ghorānəmburakən vvayiṅ tasik avarṇa maguliṅa tuməṅha riṅ tavaṅ.</l>
@@ -4527,7 +4512,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 <lg n="3"><l>taṅeh yan varṇan rūmni kaləṅəṅaniṅ sindhu vuvusən,</l>
 <l>vivakṣan prāpta śrī narapati lavan saṅ nṛpavadhū,</l>
 <l>muvah śrī putrī mvaṅ nṛpasuta təkānindita təmən,</l>
-<l>nda maṅkin ramyāṅimbuhi <!--<app><lem>-->haləpikaṅ<!--</lem><rdg resp="Santoso">haləpikana</rdg></app>--> sāgara ləṅə̄ṅ.</l>
+<l>nda maṅkin ramyāṅimbuhi <!--<app><lem>-->haləpikaṅ<!--</lem><rdg wit="#edss">haləpikana</rdg></app>--> sāgara ləṅə̄ṅ.</l>
 	 <!--<app>3d H. ləyəp ikaṅ sāgara.
 </app> -->
 </lg>
@@ -4584,8 +4569,8 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 </div>
 <div type="canto" n="87">
 <lg n="1"><l>ndan śrī nṛpasuta hana riṅ karaṅ sira lavan narapatiduhitā,</l>
-<l>ləṅləṅ <!--<app><lem>-->maṅənaṅən<!--</lem><rdg resp="Santoso">maṅənmaṅən</rdg><note>(OJED, s.v. siluman)</note></app>--> i kalaṅvaniṅ pasir avarṇa siluman <!--<app><lem>-->alaṅə<!--</lem><rdg>laṅə ̄</rdg></app>-->,</l>
-<l><!--<app><lem>-->mūkṣāsəmusəmu<!--</lem><rdg resp="Santoso">mūkhāsəmusəmu</rdg><note>(OJED, s.v. limutnya)</note></app>--> ya mamiśra riṅ taya limutnyan amulaṅunakən,</l>
+<l>ləṅləṅ <!--<app><lem>-->maṅənaṅən<!--</lem><rdg wit="#edss">maṅənmaṅən</rdg><note>(OJED, s.v. siluman)</note></app>--> i kalaṅvaniṅ pasir avarṇa siluman <!--<app><lem>-->alaṅə<!--</lem><rdg>laṅə ̄</rdg></app>-->,</l>
+<l><!--<app><lem>-->mūkṣāsəmusəmu<!--</lem><rdg wit="#edss">mūkhāsəmusəmu</rdg><note>(OJED, s.v. limutnya)</note></app>--> ya mamiśra riṅ taya limutnyan amulaṅunakən,</l>
 <l>gəntərnya hana juga titir karəṅv amarəṅī surakiṅ alun agə̄ṅ.</l> 
 	 <!--<app>— 1b C. F. H. alaṅə̄ iṅ pasir. G. maṅən-aṅən i pasir alaṅə̄.</app> -->
 </lg>
@@ -4642,7 +4627,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 </lg>
 
 <lg n="5"><l>nāhan hetunireki ləṅləṅ aṅikət kakavin inuparəṅgan iṅ maṅə̄,</l>
-<l>sampun rakva <!--<app><lem>-->rinekhakən<!--</lem><rdg resp="Santoso">rinehakən</rdg></app>--> ri vilahiṅ yaśa təmunən iṅ aṅjajah karaṅ,</l>
+<l>sampun rakva <!--<app><lem>-->rinekhakən<!--</lem><rdg wit="#edss">rinehakən</rdg></app>--> ri vilahiṅ yaśa təmunən iṅ aṅjajah karaṅ,</l>
 <l>ndan saṅ śrī nṛpaputrikā milu kalaṅvan amuvuhi gurit nṛpātmaja,</l>
 <l>yekān rakva gənəp kalih caturapādika vinacanirān linaṅkvakən.</l>
 	 <!--<app>5b E. rinekakən ri vilah. — 5d B. E. linaṅkvakən. 
@@ -4651,8 +4636,8 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 
 </div>
 <div type="canto" n="89">
-<lg n="1"><l>ləṅləṅa rasaku tan intarā ri <!--<app><lem>-->təkapī<!--</lem><rdg resp="Santoso">təkapi</rdg></app>--> sakamatan alaṅə̄,</l>
-<l>lvir ginaməlan iṅ akūṅ* lumuṅ <!--<app><lem>-->gaḍuṅikāsmu<!--</lem><rdg resp="Santoso">gaḍuṅikāsəmu</rdg></app>--> luṅayan amilət,</l>
+<lg n="1"><l>ləṅləṅa rasaku tan intarā ri <!--<app><lem>-->təkapī<!--</lem><rdg wit="#edss">təkapi</rdg></app>--> sakamatan alaṅə̄,</l>
+<l>lvir ginaməlan iṅ akūṅ* lumuṅ <!--<app><lem>-->gaḍuṅikāsmu<!--</lem><rdg wit="#edss">gaḍuṅikāsəmu</rdg></app>--> luṅayan amilət,</l>
 <l>nyū gaḍiṅ arəja sasāntəniṅ mahas apet raras akarakaraṅ,</l>
 <l>kumbaṅ amisiki səkar baṅun rəṅihikaṅ kavənaṅ arabhasan.</l>
  <!--<app>	* B. C. D. E. F. G. H. — 1b A. ginaməlan aku kūṅ.̃̃̃̃
@@ -4681,7 +4666,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 	
 </app> -->
 </lg>
-<lg n="2"><l>ramyākveh <!--<app><lem>-->madədə<!--</lem><rdg resp="Santoso">maḍəḍət</rdg></app>-->̄</l> <l>tikaṅ ratha* matūt sisi hana gaja len turaṅga rumuhun,</l>
+<lg n="2"><l>ramyākveh <!--<app><lem>-->madədə<!--</lem><rdg wit="#edss">maḍəḍət</rdg></app>-->̄</l> <l>tikaṅ ratha* matūt sisi hana gaja len turaṅga rumuhun,</l>
 <l>mvaṅ tekaṅ maḍarat səsə̄k pənuh ikaṅ havan avəkasanāmuraṅmuraṅ adoh,</l>
 <l>mary ātūt təpiniṅ pasir sira təkeṅ hiriṅiriṅ i kalaṅvaniṅ girivana,</l>
 <l>vanvālit ri ləpitləpitnya hana maṇḍala kuṭikuṭi dharmaśāla katəmu,</l>
@@ -4696,7 +4681,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 </app> -->
 </lg>
 <lg n="4"><l>ndah sampun halivat* sirerika təgaltəgal arata sayojanālva katəmu,</l>
-<l>ṅke keryāna hana dukut mrak <!--<app><lem>-->alalaṅ<!--</lem><rdg resp="Santoso">ilalaṅ</rdg><note>(OJED, s.v. kamurugan)</note></app>-->** sumarasah irikā lavan kamurugan,</l>
+<l>ṅke keryāna hana dukut mrak <!--<app><lem>-->alalaṅ<!--</lem><rdg wit="#edss">ilalaṅ</rdg><note>(OJED, s.v. kamurugan)</note></app>-->** sumarasah irikā lavan kamurugan,</l>
 <l>pintən ṅganya huvus kagunturan i ṅūni karaṇani natarnyan āṅrəs i suku,</l>
 <l>vatv akveh savaluh salumpaṅ amijah*** hana saduruṅ avarṇa gopura rubuh.</l>
  <!--<app>	* H.	** B. C. D. E. G. H.	*** B. C. D. E. F. G. — 4a A. B. C. D. E. F. G. nalivat. E. təgal-təgal aratha. — 4b A. F. amrak alalaṅ. — 4d A. H. amijā hana.
@@ -4748,7 +4733,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 </lg>
 <lg n="3"><l>luṅhāṅdoh saka riṅ kaḍatvan alaris saṅ śrī narendrādhipa,</l>
 <l>tan līṅən tikanaṅ pradeśa kahavan lvah səṅkasəṅkan miriṅ,</l>
-<l>prāpteṅ dharma <!--<app><lem>-->kaboddhan adbhuta<!--</lem><rdg resp="Santoso">kabodhādbhuta</rdg></app>--> ri heṅnyan yāśa gə̄ṅ śobhita,</l>
+<l>prāpteṅ dharma <!--<app><lem>-->kaboddhan adbhuta<!--</lem><rdg wit="#edss">kabodhādbhuta</rdg></app>--> ri heṅnyan yāśa gə̄ṅ śobhita,</l>
 <l>ṅkā toṅgvānira yan paṅantya ri ḍatəṅ saṅ śrī narendrātmaja.</l>
 	 <!--<app>3b H. kalavan lvah. — 3c C. kaboddhān adbhuta.
 </app> -->
@@ -4770,7 +4755,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 </app> -->
 </lg>
 <lg n="6"><l>nā liṅ śrī parameśvarī muvah ikā saṅ śrī narendrāmuvus,</l>
-<l>hah rakryan ndi paranta hetuni <!--<app><lem>-->bapaṅkun<!--</lem><rdg resp="Santoso">bapaṅku</rdg><note>(OJED, s.v. katuṇḍəs)</note></app>--> tan katuṇḍəs pinet,</l>
+<l>hah rakryan ndi paranta hetuni <!--<app><lem>-->bapaṅkun<!--</lem><rdg wit="#edss">bapaṅku</rdg><note>(OJED, s.v. katuṇḍəs)</note></app>--> tan katuṇḍəs pinet,</l>
 <l>mevvivvaṅ balavīracāraka mareṅ* deśāntara mvaṅ vana,</l>
 <l>həntyaṅ rājya mahādri sindhu pinaran nda tan kapaṅgih kita.</l>
  <!--<app>	* C. D. E. F. G. H. — 6c A. B. pareṅ deśāntara.
@@ -4816,7 +4801,7 @@ nāhan hetunireki mamvit i narendra sira saha lavan suputrikā,</l>
 <lg n="12"><l>kapvāṅhyaṅ ri bhaṭāra tan tulusaniṅ mokṣa pramādeṅ* jagat,</l> 
 <l>śāntāniṅ prabhu poruṣāḍa huniṅan de śrī mahāgotama,</l>
 <l>nāhan hetunireki bhakti təka somye jə̄ṅ narendrādhipa,</l>
-<l>tan deniṅ <!--<app><lem>-->varabañcaneki<!--</lem><rdg resp="Santoso">varabañcananeki</rdg></app>--> sihireṅ bhūrloka cūrṇā hələm.</l>
+<l>tan deniṅ <!--<app><lem>-->varabañcaneki<!--</lem><rdg wit="#edss">varabañcananeki</rdg></app>--> sihireṅ bhūrloka cūrṇā hələm.</l>
  <!--<app>	* D. E. F. G. H. — 12a A. C. pramādaṅ. B. pramaṇeṅ. B. C. D. E. F. tan tulusa. — 12c H. somya təka bhaktī joṅ. — 12d B. bañcaneki. B. C. D. E. G. cūrṇān.
 	
 </app> -->
@@ -4853,7 +4838,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 	
 </app> -->
 </lg>
-<lg n="2"><l>təkeṅ bala samūha nora vinuvusnya <!--<app><lem>-->saka ri sira saṅ<!--</lem><rdg resp="Santoso">saka ri saṅ</rdg><note>for 2a othervise lacks tvo syllables</note></app>--> nṛpātmaja,</l>
+<lg n="2"><l>təkeṅ bala samūha nora vinuvusnya <!--<app><lem>-->saka ri sira saṅ<!--</lem><rdg wit="#edss">saka ri saṅ</rdg><note>for 2a othervise lacks tvo syllables</note></app>--> nṛpātmaja,</l>
 <l>surūpa sira darśanīya sakaleśvara guṇanira nora tan vruha,</l>
 <l>nda tan dva sira teki rakva sumilih prabhu luməvih i hastineśvara,</l>
 <l>bhaṭāra sutasoma teki panəlahnira mari maṅaran nṛpātmaja.</l>
@@ -4906,7 +4891,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <div type="canto" n="94">
 <lg n="1"><l>byatīta ri huvus bhaṭāra sugatendra bhūpālaka,</l>
 <l>narādhipati ratnakāṇḍa caritan mahaduhkhita,</l>
-<l>bəlah sukunire təṅən pva <!--<app><lem>-->kajiriṅ<!--</lem><rdg resp="Santoso">kajriṅ</rdg></app>--> śilāgrāluṅid,</l>
+<l>bəlah sukunire təṅən pva <!--<app><lem>-->kajiriṅ<!--</lem><rdg wit="#edss">kajriṅ</rdg></app>--> śilāgrāluṅid,</l>
 <l>ri kālanira ṅūni yan maburu mānuṣāṅlālana. </l>
 	 <!--<app>— 1c H. kadiriṅ.</app> -->
 </lg>
@@ -5023,10 +5008,10 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="7"><l>ndah śīghra prāpta riṅ mālava ri puranira śrī mahācandranātha,</l>
 <l>molah taṅ bhūmi kagyat sahanahananikaṅ vvaṅ ri heṅniṅ kaḍatvan,</l>
 <l>vvil bhūtākveh makāpaṅharəp avudavudātūt pəkən tan vriṅ ambək,</l>
-<l>len taṅ bhūtāmalaṅkrik purusika mabuṅah kātarāṅiṅ <!--<app><lem>-->kagiṅgaṅ<!--</lem><rdg resp="Santoso">kagiṅkag</rdg></app>-->.</l>
+<l>len taṅ bhūtāmalaṅkrik purusika mabuṅah kātarāṅiṅ <!--<app><lem>-->kagiṅgaṅ<!--</lem><rdg wit="#edss">kagiṅkag</rdg></app>-->.</l>
 </lg>
 <lg n="8"><l>honyāṅambil hulam riṅ pajagalan aṅəmah limpa rodrāṅinum rah,</l>
-<l>kīrṇekaṅ garva himpər kasajəṅan avərə̄ <!--<app><lem>-->siṅ<!--</lem><rdg resp="Santoso">iṅ</rdg></app>--> kacuṇḍuk tinūtnya,</l>
+<l>kīrṇekaṅ garva himpər kasajəṅan avərə̄ <!--<app><lem>-->siṅ<!--</lem><rdg wit="#edss">iṅ</rdg></app>--> kacuṇḍuk tinūtnya,</l>
 <l>pūh tan vriṅ de tikaṅ vvaṅ kakətəran alayū mājar iṅ śrī narendra,</l>
 <l>hetu śrī bhūmināthāgaravalan umijil mvaṅ mahāvīra rodra.</l>
 	 <!--<app>8 B. C. D. E. mahāvīra yodha.</app> -->
@@ -5137,7 +5122,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <l>ndah yeka tiṅgalakneṅ təkaniṅ bhayāgə̄ṅ,</l>
 <l>nirdon mateki ri haləpnya rinəṅgarəṅga.</l>
 </lg>
-<lg n="2"><l>milvaṅ subhūṣaṇa kuṭāgra riṅ <!--<app><lem>-->uttamāṅga<!--</lem><rdg resp="Santoso">uttamāṅśa</rdg><note>(OJED, s.v. subhūṣaṇa)</note>
+<lg n="2"><l>milvaṅ subhūṣaṇa kuṭāgra riṅ <!--<app><lem>-->uttamāṅga<!--</lem><rdg wit="#edss">uttamāṅśa</rdg><note>(OJED, s.v. subhūṣaṇa)</note>
 </app>-->,</l> 
 <l>ūrṇā bukaśry adhika ratnamaṇinya muñcar,</l>
 <l>bvaṅən palayvakəna kāryanikeṅ payuddhan,</l>
@@ -5262,7 +5247,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="6"><l>liṅ saṅ paṇḍita pə̄hniṅ āgama caturjaneka linəvih,</l>
-<l>vvaṅ śukleṅ rəṇa <!--<app><lem>-->bhojadāna<!--</lem><rdg resp="Santoso">bhoja dhāna</rdg></app>--> səḍəṅ iṅ subhikṣa satata,</l>
+<l>vvaṅ śukleṅ rəṇa <!--<app><lem>-->bhojadāna<!--</lem><rdg wit="#edss">bhoja dhāna</rdg></app>--> səḍəṅ iṅ subhikṣa satata,</l>
 <l>mvaṅ tan duhkha sucitta rakva səḍəṅ iṅ sineṣṭava sukha,</l> 
 <l>śūrātyanta sudhīra riṅ* raṇapadeki mukhyaṅ** usirən.</l>
  <!--<app>	* C. D. E. F.	** D. — 6a C. catur janeki. — 6b C. raṇa bhoja. — 6d A. B. H. sudhira raṇapadeki. A. B. C. E. F. G. H. mulyaṅ. G. raṇapadeka.
@@ -5376,7 +5361,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="13"><l>aneka lvaṅniṅ rākṣasa pəjah ikā de nṛpasuta,</l>
-<l>vaneh bhraṣṭā riṅ havyat asura tibākveh <!--<app><lem>-->katələbuk<!--</lem><rdg resp="Santoso">katələbək</rdg></app>-->,</l>
+<l>vaneh bhraṣṭā riṅ havyat asura tibākveh <!--<app><lem>-->katələbuk<!--</lem><rdg wit="#edss">katələbək</rdg></app>-->,</l>
 <l>savaṅ varṣādrəs taṅ kuṇapa matəmah parvata śava,</l>
 <l>humilyaṅ rah lvīr abdhi rudhira karaṅ sarvaniśita.</l>
 	 <!--<app>13b B. C. D. E. H. katləbuk. D. E. F. H. braṣṭeṅ ākāśaṅ asura.
@@ -5433,8 +5418,8 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 	 <!--<app>7b C. vīramantrī tinudiṅan.
 </app> -->
 </lg>
-<lg n="8"><l>tandvān trus karva <!--<app><lem>-->bhinnaṅ<!--</lem><rdg resp="Santoso">bhīnaṅ</rdg></app>--> ḍaḍa taravaṅ abāṅ rahnikādrəs manəmbur,</l>
-<l>māṅlah riṅ syandana syūh rəñuhika kasavat mvaṅ <!--<app><lem>-->tikāṅ aśva<!--</lem><rdg resp="Santoso">tikaṅ haśva</rdg><note>(OJED, s.v. rimpuṅ)</note></app>--> rimpuṅ,</l>
+<lg n="8"><l>tandvān trus karva <!--<app><lem>-->bhinnaṅ<!--</lem><rdg wit="#edss">bhīnaṅ</rdg></app>--> ḍaḍa taravaṅ abāṅ rahnikādrəs manəmbur,</l>
+<l>māṅlah riṅ syandana syūh rəñuhika kasavat mvaṅ <!--<app><lem>-->tikāṅ aśva<!--</lem><rdg wit="#edss">tikaṅ haśva</rdg><note>(OJED, s.v. rimpuṅ)</note></app>--> rimpuṅ,</l>
 <l>maṅkin śūrāṅivuṅ rakryan apatih aṅamūk cūrṇitaṅ daityayodha,</l>
 <l>puṅgəl taṅ khaḍga cūrṇan kapəlaṅ* i siyuṅiṅ rākṣasān krūra rodra.</l>
  <!--<app>	* B. C. D. E. F. G. H. — 8a C. tandva trus. — 8d A. kəpəliṅ.
@@ -5495,7 +5480,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="8"><l>hyunhyun ghora paḍāhyun oliha ri saṅ śrī bhūmināthaprabhu,</l>
 <l>kīrṇekaṅ manikəp taṅan suku təṅah ndātan kənākral sira,</l>
 <l>dhīrāmbəknira tan dva yan prəp ikanaṅ śatrv adbhutāmah gunuṅ,</l>
-<l><!--<app><lem>-->rəmpuh<!--</lem><rdg resp="Santoso">rəmpū</rdg></app>--> syūh sahananya deni tapakiṅ hastātulis cakra ya.</l>
+<l><!--<app><lem>-->rəmpuh<!--</lem><rdg wit="#edss">rəmpū</rdg></app>--> syūh sahananya deni tapakiṅ hastātulis cakra ya.</l>
 </lg>
 <lg n="9"><l>akveh taṅ bala daityayakṣa kapəṅəl rəñcəm tibā riṅ ləmah,</l>
 <l>mañcurmañcur ike baṭuknya ya bəlah deniṅ nakhāgrāluṅid,</l>
@@ -5582,7 +5567,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="3"><l>ndan saṅ śrī naranātha rakva ruməṅə̄ sira ri pakakavin* nareśvarī,</l>
-<l>moghālə̄k sira saṅśaye hati <!--<app><lem>-->hanonəṅ<!--</lem><rdg resp="Santoso">tan oniṅ</rdg><note>(OJED, s.v. palambaṅ)</note></app>--> akirima palambaṅiṅ puḍak,</l>
+<l>moghālə̄k sira saṅśaye hati <!--<app><lem>-->hanonəṅ<!--</lem><rdg wit="#edss">tan oniṅ</rdg><note>(OJED, s.v. palambaṅ)</note></app>--> akirima palambaṅiṅ puḍak,</l>
 <l>devī marmavatī sirekin avarah yan ulihiṅ anulad sakeṅ taman,</l>
 <l>ndah yekān pinaran narendra ya lutur katuruhan i basahnikaṅ hatəp.</l>
  <!--<app>	* B. D. E. F. H. — 3a A. C. G. pakakavī.
@@ -5644,7 +5629,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="11"><l>honyaṅ lvir makaraṅkaraṅ saha taṅisnyan asəmu gərəh iṅ labəh kapat,</l>
-<l>tiṅkahniṅ vvaṅ apet kakuṅnyan aṅurit śava ri təpiniṅ abdhi <!--<app><lem>-->śonita<!--</lem><rdg resp="Santoso">śobhita</rdg><note>(OJED, s.v. aṅurit)</note></app>-->,*</l>
+<l>tiṅkahniṅ vvaṅ apet kakuṅnyan aṅurit śava ri təpiniṅ abdhi <!--<app><lem>-->śonita<!--</lem><rdg wit="#edss">śobhita</rdg><note>(OJED, s.v. aṅurit)</note></app>-->,*</l>
 <l>mvaṅ tekaṅ maṅusir gunuṅ sira tatan jrih i rubuhanikaṅ liman śava,</l>
 <l>dhīrekān panapak raṅin saha təvəknya kadi paraṅ i tuṅhaniṅ batur.</l>
  <!--<app>	* D. G. H. — 11b A. B. C. E. F. abdiśonita. F. ṣavah i təpi.</app> -->
@@ -5663,7 +5648,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="13"><l>vetanye harəpiṅ catuṣpatha haneka variṅin atiśobhitāhaləp,</l>
-<l>parnah lor saka riṅ bale baṅ añəpət kakidul ika sakeṅ <!--<app><lem>-->yaśādavā<!--</lem><rdg resp="Santoso">yaśādeva</rdg><note>(OJED, s.v. añəpət)</note></app>-->,</l> 
+<l>parnah lor saka riṅ bale baṅ añəpət kakidul ika sakeṅ <!--<app><lem>-->yaśādavā<!--</lem><rdg wit="#edss">yaśādeva</rdg><note>(OJED, s.v. añəpət)</note></app>-->,</l> 
 <l>ṅkā toṅgvan prabhu siṅhalendre pəjah iṅ raṇan umulahakən parākrama,</l>
 <l>mvaṅ sakveh para vīrayodha karuhun rari haji paḍa bhakti tan kasah.</l>
 	 <!--<app>13b C. śādavā. J. yaśādava. — 13c H. parīkrama.
@@ -5774,7 +5759,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="8"><l>hurubnikāṅ agni sumə̄ṅ i vaktra,</l>
 <l>kady aṅgyakən polahirān pabela,</l>
-<l>tapihniran <!--<app><lem>-->caṅvli<!--</lem><rdg resp="Santoso">cavəli</rdg></app>--> mirir lavə̄nya,</l>
+<l>tapihniran <!--<app><lem>-->caṅvli<!--</lem><rdg wit="#edss">cavəli</rdg></app>--> mirir lavə̄nya,</l>
 <l>lagy āṅure veni mələs tinelan.</l>
 	 <!--<app>8a H. nikāṅ bahni. — 8c B. cavəli milir.
 </app> -->
@@ -5851,7 +5836,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="3"><l>apituvi saṅ narendra ri vidarbha mahāsuyaśa,</l>
 <l>vəkavəka tusniṅ adbhuta viśeṣa jayeṅ bhuvana,</l> 
 <l>ṅaranira saṅ maharddhika maharddhika śaktinira,</l>
-<l>nṛpa jayavikramopama kinārya təvas <!--<app><lem>-->masuve<!--</lem><rdg resp="Santoso">masove</rdg></app>-->.</l>
+<l>nṛpa jayavikramopama kinārya təvas <!--<app><lem>-->masuve<!--</lem><rdg wit="#edss">masove</rdg></app>-->.</l>
 	 <!--<app>3b C. vəka vəkas niṅ adbhuta. — 3c C. saṅ maharddhika śakti. — 3d H. vəkas nya təvas asuve.
 </app> -->
 </lg>
@@ -5892,7 +5877,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="3"><l>kīrṇaṅ vīrāpajəg riṅ ləbuh ika maṅalun lvir vahiṅ parvatāgə̄ṅ,</l>
 <l>ṅkāneṅ pūrvottarātryaṅ gaja ratha marivəg koṭikoṭy aprameya,</l>
 <l>kulvan rvaṅ kośa* riṅ dakṣiṇa daśayuta taṅ cakrabajrāgra śakti,</l>
-<l>saṅke <!--<app><lem>-->gə̄ṅniṅ<!--</lem><rdg resp="Santoso">gə̄ṅ</rdg><note>(OJED, s.v. gə̄ṅ) </note></app>--> vikalpānaha ri təkanikaṅ poruṣāḍādinātha.</l>
+<l>saṅke <!--<app><lem>-->gə̄ṅniṅ<!--</lem><rdg wit="#edss">gə̄ṅ</rdg><note>(OJED, s.v. gə̄ṅ) </note></app>--> vikalpānaha ri təkanikaṅ poruṣāḍādinātha.</l>
  <!--<app>	* C. D. F. G. I. — 3a B. C. D. F. lvir vvah. E. lvir nikaṅ parvvatāgə̄ṅ. — 3c A. B. E. H. koṭi.
 </app> -->
 </lg>
@@ -5942,7 +5927,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <l>tan maṅka denta viparīta mahāprabhaṅśa,</l>
 <l>lvir buddhiniṅ lumurugāmrihaṅ indraloka.</l>
 </lg>
-<lg n="5"><l>yekāmaṅun paṅupət iṅ <!--<app><lem>-->bhuvanan tininda<!--</lem><rdg resp="Santoso">bhuvanātiniṇḍa</rdg><note>(OJED, s.v. upət)</note></app>-->,</l>
+<lg n="5"><l>yekāmaṅun paṅupət iṅ <!--<app><lem>-->bhuvanan tininda<!--</lem><rdg wit="#edss">bhuvanātiniṇḍa</rdg><note>(OJED, s.v. upət)</note></app>-->,</l>
 <l>nirdon pasuṅta sukha riṅ para paṇḍitārya,</l>
 <l>riṅ svarga devata pamiṅhət i denta māmbək,</l>
 <l>heman carunta kahiḍəp caruśeṣa tulya.</l>
@@ -6028,7 +6013,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="2"><l>yekā hetuniraṅ jayāntakan umaṅkat sah sakeṅ parvata,</l>
 <l>sakvehkveh bala rākṣasāruharuhan milvāṅiriṅ bhīṣaṇa,</l>
-<l>rəp śīghrāməgatīṅ havan pravara <!--<app><lem>-->siddharṣi ṅharan<!--</lem><rdg resp="Santoso">siddharṣīṅaran</rdg></app>--> nārada,</l>
+<l>rəp śīghrāməgatīṅ havan pravara <!--<app><lem>-->siddharṣi ṅharan<!--</lem><rdg wit="#edss">siddharṣīṅaran</rdg></app>--> nārada,</l>
 <l>huṅhuṅkāra jayāstu yeka paṅaśīrvāderi saṅ bhūpati.</l>
 	 <!--<app>2d H. paṅasirvvāde siraṅ.
 </app> -->
@@ -6064,7 +6049,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="1"><l>lvir saṅ hyaṅ kuməmit mahāmṛta kamaṇḍalu pva mapupul,</l>
 <l>tiṅkah saṅ prabhu śevane nṛpati buddhamūrti sinivi,</l>
 <l>tan sah riṅ rahineṅ kuləm paḍa haneṅ gajahvaya sadā,</l>
-<l>vetniṅ sih dṛdhabhakti <!--<app><lem>-->yāṅhəlahəlā<!--</lem><rdg resp="Santoso">yāṅhəlāhəla</rdg></app>--> suməmbah i haji.</l>
+<l>vetniṅ sih dṛdhabhakti <!--<app><lem>-->yāṅhəlahəlā<!--</lem><rdg wit="#edss">yāṅhəlāhəla</rdg></app>--> suməmbah i haji.</l>
 	</lg>
 <lg n="2"><l>ndan sakveh suta saṅ narendra kavənaṅ təkapta kasikəp,</l>
 <l>kapvāṅuṅsir i hastinendra saha yodhasaṅgha suməsək,</l>
@@ -6158,7 +6143,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="15"><l>ghorākrak pənuh iṅ vaṅuntur apajəg təkeṅ pəkən agə̄ṅ,</l>
 <l>huṅniṅ goṅ kahalātighūrṇa saha paṅhrikiṅ gaja kuda,</l>
-<l>ketv abhrālivəran baṅun jalada kāṅinan <!--<app><lem>-->kabaranaṅ<!--</lem><rdg resp="Santoso">kabharaṇaṅ</rdg></app>-->,</l>
+<l>ketv abhrālivəran baṅun jalada kāṅinan <!--<app><lem>-->kabaranaṅ<!--</lem><rdg wit="#edss">kabharaṇaṅ</rdg></app>-->,</l>
 <l>kambvan deni sənə̄nikaṅ muśala cakra sūrya sakala.</l>
 </lg>
 <lg n="16"><l>lvir saṅhāra mahāprakampa ri vijil mahāsurapati,</l>
@@ -6216,7 +6201,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 </div>
 <div type="canto" n="114">
-<lg n="1"><l>maṅkat saṅ prabhu poruṣāḍa <!--<app><lem>-->panutubniṅ<!--</lem><rdg resp="Santoso">panutupniṅ</rdg></app>--> lampah atyadbhuta,</l>
+<lg n="1"><l>maṅkat saṅ prabhu poruṣāḍa <!--<app><lem>-->panutubniṅ<!--</lem><rdg wit="#edss">panutupniṅ</rdg></app>--> lampah atyadbhuta,</l>
 <l>sākṣāt hyaṅ parameśvarānitihi goh śuddhātiśakty ojvala,</l>
 <l>maṅkā tiṅkahireṅ vimāna madulur teja praləmbeṅ laṅit,</l>
 <l>muntab lvir śikharādrirājan uməsat lvir mṛtyu riṅ bhāsvara.</l>
@@ -6277,10 +6262,10 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 	
 </app> -->
 </lg>
-<lg n="9"><l>aśvāṅgāhulu sāmajendra <!--<app><lem>-->pamatəknyāṅhir<!--</lem><rdg resp="Santoso">pamatəknyaṅ hiṅ</rdg><note>(OJED, s.v. vəsi)</note></app>--> rathanyā vəsi,</l>
+<lg n="9"><l>aśvāṅgāhulu sāmajendra <!--<app><lem>-->pamatəknyāṅhir<!--</lem><rdg wit="#edss">pamatəknyaṅ hiṅ</rdg><note>(OJED, s.v. vəsi)</note></app>--> rathanyā vəsi,</l>
 <l>sarvāstrāyudha bhūta kālan umijil saṅkeṅ tutuk bhīṣaṇa,</l>
 <l>gāṇḍevādbhuta bāṇa bahni hinayat glānaṅ triloka kṣaya,</l>
-<l>cūrṇekaṅ bhuvanan sayat rəṅat <!--<app><lem>-->aləh<!--</lem><rdg resp="Santoso">alə̄t</rdg><note>(OJED, s.v. sayat)</note></app>--> saṅ hyaṅ pṛthivy ānaṅis.</l> 
+<l>cūrṇekaṅ bhuvanan sayat rəṅat <!--<app><lem>-->aləh<!--</lem><rdg wit="#edss">alə̄t</rdg><note>(OJED, s.v. sayat)</note></app>--> saṅ hyaṅ pṛthivy ānaṅis.</l> 
 	 <!--<app>9a C. pamatək nya...bhisaṇa. — 9 B. aləh saṅ. H. śayal pasaləh saṅ.
 </app> -->
 </lg>
@@ -6349,7 +6334,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="6"><l>mvaṅ taṅ vāhana rājavāhana vimānanira humilu śakti siddhimān,</l>
 <l>dṛśyādṛśya ri kālaniṅ laga nirantaka tan atakut iṅ sureśvara,</l>
 <l>bvatniṅ pārthivasaṅgha sātusika ṅūni sakala giri mandaropama,</l>
-<l>tan kevran juga tan <!--<app><lem>-->titig<!--</lem><rdg resp="Santoso">titī</rdg></app>--> gatinira pravala kadi khagendravāhana.</l>
+<l>tan kevran juga tan <!--<app><lem>-->titig<!--</lem><rdg wit="#edss">titī</rdg></app>--> gatinira pravala kadi khagendravāhana.</l>
 	 <!--<app>6a C. D. F. milu suśaktya. H. milu suśakti. — 6b C. nirāntaka.
 </app> -->
 </lg>
@@ -6366,7 +6351,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <div type="canto" n="116">
 <lg n="1"><l>muvah balanireki tan paravaśaṅ nagara sahana bhārateśvara,</l>
 <l>subhikṣa təka riṅ* svavarga suta ghāra bala sahana pūrṇa śāśvata,</l>
-<l>apan niyata <!--<app><lem>-->cūrṇa<!--</lem><rdg resp="Santoso">cūrṇan</rdg></app>--> bhasmi sahananta yadi kita tumandaṅ apraṅa,</l>
+<l>apan niyata <!--<app><lem>-->cūrṇa<!--</lem><rdg wit="#edss">cūrṇan</rdg></app>--> bhasmi sahananta yadi kita tumandaṅ apraṅa,</l>
 <l>avās hilaṅ ikaṅ sudharma kuṭi śāla kahava təkapiṅ praṅ adbhuta.</l>
  <!--<app>	* B. D. E. F. H. I. J. — 1a B. nireku. C. D. nireka. — 1b A. C. niṅ. I. pati-pati niṅ jagat. — 1c C. E. cūrṇṇa.
 	
@@ -6374,7 +6359,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="2"><l>nahan liṅira saṅ narendra sumahur saṅ apatih ativīra kottama,</l>
 <l>prabhuṅku parameśvaraṅku kita bhūpati patinikanaṅ jagat kabeh,</l>
-<l>kənoh sahana saṅ narendra riṅ apan luputa ri <!--<app><lem>-->paṅuhā<!--</lem><rdg resp="Santoso">paṅuvā</rdg></app>--> nṛpeśvara,</l>
+<l>kənoh sahana saṅ narendra riṅ apan luputa ri <!--<app><lem>-->paṅuhā<!--</lem><rdg wit="#edss">paṅuvā</rdg></app>--> nṛpeśvara,</l>
 <l>apan sakala buddhamūrti kita tattvanika paramadūradarśana.</l>
 	 <!--<app>2b D. F. H. J. niṅ jagat. — 2c B. C. D. paṅuhā. — 2 B. D. E. F. H. I. J. Buddhamūrti śivamūrti kita parama dūra.
 	    2d: choose the reading vhich is represented by the largest number of manuscripts?
@@ -6397,7 +6382,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="5"><l>praśasta mara tan haneka guṇa rūpaniṅ anivi yatan suśīlavān,</l>
-<l>hilaṅ sihira riṅ <!--<app><lem>-->sənəṅ<!--</lem><rdg resp="Santoso">sənə̄ṅ</rdg></app>--> yadi tan ilva ri patinika tan tapodhara,</l>
+<l>hilaṅ sihira riṅ <!--<app><lem>-->sənəṅ<!--</lem><rdg wit="#edss">sənə̄ṅ</rdg></app>--> yadi tan ilva ri patinika tan tapodhara,</l>
 <l>nda maṅkana jugaṅ pravīra niyataṅ yamapada tinəmunya tan vuruṅ,</l>
 <l>yatan panuta dharmaniṅ kavula tan kavula ya ṅuniveh kadiṅ hulun.</l>
 	 <!--<app>5b B. C. D. E. F. H. ika. — 5d E. yan tan panuta.	
@@ -6405,14 +6390,14 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="6"><l>kalīṅanika tan pamātra manahiṅ* ṅhulun ahiḍəpa saṅ nareśvara,</l>
 <l>ndatan vuvusən ājñalaṅghana patik haji tan ulahaniṅ masevita,</l>
-<l>taha prabhu parāparaṅ laku vənaṅ <!--<app><lem>-->tutakəna<!--</lem><rdg resp="Santoso">tutakna</rdg></app>--> paṅutus nareśvara,</l>
+<l>taha prabhu parāparaṅ laku vənaṅ <!--<app><lem>-->tutakəna<!--</lem><rdg wit="#edss">tutakna</rdg></app>--> paṅutus nareśvara,</l>
 <l>si tan lamuna teki** rakva yadiyan bəcikanira ta yogya laṅghanan.</l>
  <!--<app>	* B. C. ** B. C. D. E. F. H. — 6a A. D. E. F. H. I. J. pamatra manah iṅ. C. nareśvari. — 6d A. I. J. lamunaneki rakva.
 	
 </app> -->
 </lg>
 <lg n="7"><l>muvah liṅira saṅ munīndra guṇaniṅ musuh atiśaya yogya kastutin,</l>
-<l>prasaṅga mara doṣaniṅ guru vənaṅ <!--<app><lem>-->vuvusakəna<!--</lem><rdg resp="Santoso">vuvusakna</rdg></app>--> ri madhyaniṅ sabhā,</l>
+<l>prasaṅga mara doṣaniṅ guru vənaṅ <!--<app><lem>-->vuvusakəna<!--</lem><rdg wit="#edss">vuvusakna</rdg></app>--> ri madhyaniṅ sabhā,</l>
 <l>nimittani patik narendra juga tan ragaragan i manah nareśvara,</l>
 <l>apan pravala pakṣapāta kahiḍəp ṅhulun ahiḍəpa saṅ nareśvara.</l>
 	 <!--<app>7a C. D. liṅ nira saṅ. — 7c C. J. nṛpāti. E. nṛpati.
@@ -6420,7 +6405,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="8"><l>hana pva ri pəjah patik nṛpati durbala saha balakośavāhana,</l>
 <l>muvah sahana saṅ nareśvara viśīrṇa təlas ika mamarvateṅ raṇa,</l>
-<l>samaṅka ta narendra yan larisa <!--<app><lem>-->carvakəna<!--</lem><rdg resp="Santoso">carvakna</rdg></app>--> təkapi śaktiniṅ musuh,</l>
+<l>samaṅka ta narendra yan larisa <!--<app><lem>-->carvakəna<!--</lem><rdg wit="#edss">carvakna</rdg></app>--> təkapi śaktiniṅ musuh,</l>
 <l>kunəṅ ri hananiṅ hulun syapa tikā vənaṅ umalapa saṅ nareśvara.</l>
 	 <!--<app>8a C. narendra durbala. — 8b C. D. E. F. I. J. saṅ vatək ratu visirnna.
 </app> -->
@@ -6433,7 +6418,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="10"><l>nda sākṣya sira saṅ vatək ratu ruməṅvakəna rasani vākyaniṅ hulun,</l>
 <l>pitovi manaveki* rakva hana bañcananika ləvədən nareśvara,</l>
 <l>nda śīghra sumahur narendra daśabāhu parama sukha garjiteṅ hati,</l>
-<l>prakopa** kadi siṅha rodra ruməṅə̄ <!--<app><lem>-->dviradavacana<!--</lem><rdg resp="Santoso">dvarada vacana</rdg></app>--> ghūrṇiteṅ vana,</l>
+<l>prakopa** kadi siṅha rodra ruməṅə̄ <!--<app><lem>-->dviradavacana<!--</lem><rdg wit="#edss">dvarada vacana</rdg></app>--> ghūrṇiteṅ vana,</l>
 	 <!--<app>* C. D. E. F. H. ** B. D. F. — 10b A. I. tan ateki rakva. B. manaveni rakva. H. hana cañcala. J. hana teki rakva. — 10c B. garjjite. — 10d A. C. E. H. I. J. prakośa.
 </app> -->
 </lg>
@@ -6474,7 +6459,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="5"><l>saṅkṣepanya* ndi tekā karaṇaniṅ** arəsānuṅkuleṅ śatru śakti,</l>
 <l>vvaṅ melik riṅ mahāsvarga ṅaranika yadin kumyuseṅ vīrakārya,</l>
-<l>yadyan tan mātya yan tan pujin ika ya <!--<app><lem>-->ləhəṅ<!--</lem><rdg resp="Santoso">ləhə̄ṅ</rdg></app>--> riṅ pəjah śūra riṅ praṅ,</l>
+<l>yadyan tan mātya yan tan pujin ika ya <!--<app><lem>-->ləhəṅ<!--</lem><rdg wit="#edss">ləhə̄ṅ</rdg></app>--> riṅ pəjah śūra riṅ praṅ,</l>
 <l>āpan doniṅ tuvuh rakva ya mulahakənaṅ dharma kastutyaniṅ rāt.</l>
  <!--<app>	* H. ** D. F. — 6a A. saṅsiptā nya ndi hetu nyan atikiṅ. B. I. ndi hetu kakaraṇa niṅ arəs. C. E. J. ndi tekā karaṇa ni karəsanuṅkule. H. saṅkṣepanya ndi tekaṅ lara karaṇa niṅ arəs.
 	
@@ -6482,7 +6467,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="6"><l>liṅ saṅ kāśīndra citrāṅsuka sira sumahur dvāravatyādirāja, 
 ḍū bhāgyā denta nāthaṅ huluniki tumutā selvane saṅ narendra,</l>
-<l>yan saṅ śry āvaṅga yekan <!--<app><lem>-->kapaṅulu<!--</lem><rdg resp="Santoso">kapaṅhulu</rdg></app>--> ṅuniveh māgadhendrādinātha,</l>
+<l>yan saṅ śry āvaṅga yekan <!--<app><lem>-->kapaṅulu<!--</lem><rdg wit="#edss">kapaṅhulu</rdg></app>--> ṅuniveh māgadhendrādinātha,</l>
 <l>maṅgəh ṅvaṅ karva tan jrih sakaharəpan ikā mon silih bajrabajra.</l>
 	 <!--<app>6a H. sira ratu niṅ dvāravatyeki mojar.
 	
@@ -6515,7 +6500,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 	
 </app> -->
 </lg>
-<lg n="11"><l>nā hetunyāhurip rakva tinut ika marək <!--<app><lem>-->byāpakeṅ<!--</lem><rdg resp="Santoso">yapakeṅ</rdg><note>(OJED, s.v. byāpaka)</note></app>--> bhārata ṅke,</l>
+<lg n="11"><l>nā hetunyāhurip rakva tinut ika marək <!--<app><lem>-->byāpakeṅ<!--</lem><rdg wit="#edss">yapakeṅ</rdg><note>(OJED, s.v. byāpaka)</note></app>--> bhārata ṅke,</l>
 <l>mvaṅ sakvehkvehnikaṅ rājya mari kasakitan denikaṅ yakṣa rodra,</l>
 <l>maṅke prāpteki maṅdon yaya riṅ apa mənaṅnyan təkap saṅ narendra,</l>
 <l>aṅhiṅ pinrihnya pintən sukha pəjaha təkap saṅ mahākṣatriyeṅ rāt.</l>
@@ -6685,7 +6670,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <l>mvaṅ tekaṅ kadi candra pūrṇa sumənə̄ vintaṅ samāniṅ bala.</l>
 </lg>
 <lg n="2"><l>saṅ śrī dvāravatīki rakva makapaṅhañjur vatək bhūpati,</l>
-<l>muṅgv iṅ sāmaja śuddhavarṇa ya baṅun <!--<app><lem>-->śācīndraṅ<!--</lem><rdg resp="Santoso">śācīndra</rdg><note>(OJED, s.v. sāmaja)</note></app>--> airāvaṇa,</l>
+<l>muṅgv iṅ sāmaja śuddhavarṇa ya baṅun <!--<app><lem>-->śācīndraṅ<!--</lem><rdg wit="#edss">śācīndra</rdg><note>(OJED, s.v. sāmaja)</note></app>--> airāvaṇa,</l>
 <l>dīptaṅ bajra sutīkṣṇa yeka ginəgə̄ lvir hyaṅ surendrāṅlurug,</l>
 <l>gandharvāpsara tulyaniṅ balagaṇa lvir rodra mūreṅ* tavaṅ.</l>
  <!--<app>	* B. D. E. F. J. — 2b H. baṅun hastīndra. — 2d A. C. moreṅ. H. mə̄reṅ.
@@ -6731,7 +6716,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 	
 </app> -->
 </lg>
-<lg n="2"><l>ḍyam taṅ balagaṇa kagəman tumiṅhali sirān asəmu kadi <!--<app><lem>-->məsat<!--</lem><rdg resp="Santoso">məsata</rdg></app>-->*,</l>
+<lg n="2"><l>ḍyam taṅ balagaṇa kagəman tumiṅhali sirān asəmu kadi <!--<app><lem>-->məsat<!--</lem><rdg wit="#edss">məsata</rdg></app>-->*,</l>
 <l>hah ndin hana mamapaga saṅ narendra ri hiḍəpnyaṅ asura sahana,</l>
 <l>maṅkāṅ para ratu paḍa garjitāmbəkika yan malahakəna musuh,</l>
 <l>len taṅ guragaḍa maṅusap ləṅən kadi hayam vahu ya kinələgan.</l>
@@ -6904,7 +6889,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 	
 </app> -->
 </lg>
-<lg n="12"><l>liṇḍūṅ bhūmi baṅun śilādri ya rubuh maṅlah <!--<app><lem>-->luməṇḍveṅ<!--</lem><rdg resp="Santoso">luməṇḍen</rdg></app>--> ləmah,</l>
+<lg n="12"><l>liṇḍūṅ bhūmi baṅun śilādri ya rubuh maṅlah <!--<app><lem>-->luməṇḍveṅ<!--</lem><rdg wit="#edss">luməṇḍen</rdg></app>--> ləmah,</l>
 <l>mahyaṅ kṣatriyarājasaṅgha lumihat mvaṅ yodha pekākrama,</l>
 <l>kapvāṅastuti dibya saṅ prabhusutan siṅgih jinendrātmaja,</l>
 <l>mvaṅ saṅ deva rəsīṅ laṅit saha səkar mrik mār paḍāṅastuti.</l>
@@ -6913,7 +6898,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 	
 </app> -->
 </lg>
-<lg n="13"><l>ndah śīghraṅ sumalā prakopan umasə̄ <!--<app><lem>-->sambuttakən<!--</lem><rdg resp="Santoso">sambūtakən</rdg></app>--> betala,</l>
+<lg n="13"><l>ndah śīghraṅ sumalā prakopan umasə̄ <!--<app><lem>-->sambuttakən<!--</lem><rdg wit="#edss">sambūtakən</rdg></app>--> betala,</l>
 <l>sakrośaṅ bala vāhananya gumərəh prāptāṅalun sāhasa,</l>
 <l>cakrā tomara sañjatanya magave syūhniṅ vatək hastina,</l>
 <l>ṅkā tānak prabhu vālabhekana pəjah mvaṅ gupta luptan parəṅ.</l>
@@ -7104,7 +7089,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="2"><l>yekā hetu narendra tan vavaṅ umaṅkat i tayanira saṅ pinetnira,</l>
 <l>saṅ śrī bhūpati koṣa rakva tinuduhnira makapatiniṅ balāsura,</l>
 <l>mvaṅ devāntaka vīrarāja tumutāmapagakəna kaśaktiniṅ musuh,</l>
-<l>lyan <!--<app><lem>-->saṅke<!--</lem><rdg resp="Santoso">sake</rdg></app>--> sira saṅ kaliṅga tinuduhnira sulabha panəṅgah iṅ sarāt.</l>
+<l>lyan <!--<app><lem>-->saṅke<!--</lem><rdg wit="#edss">sake</rdg></app>--> sira saṅ kaliṅga tinuduhnira sulabha panəṅgah iṅ sarāt.</l>
  <!--<app>	* C. — 2c A. B. D. E. F. H. J. tumutāmapagakna kaśaktin.
 	2c is one syllable too long. Follov reading in A. B. D. E. F. H. J., tumutāmapagakəna kaśaktiniṅ &lt; tumutāmapagakna ri* kaśaktiniṅ ?
 </app> -->
@@ -7118,7 +7103,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="4"><l>sāmantaprabhu vīrayodha karuhun balagaṇa hana daitya rākṣasa,</l>
-<l>krośakrośa kabehnya rakva tumuteṅ magadhapatin umətva <!--<app><lem>-->riṅ raṇa<!--</lem><rdg resp="Santoso">riṅ sabhā</rdg></app>-->,</l>
+<l>krośakrośa kabehnya rakva tumuteṅ magadhapatin umətva <!--<app><lem>-->riṅ raṇa<!--</lem><rdg wit="#edss">riṅ sabhā</rdg></app>-->,</l>
 <l>ājñā saṅ prabhu maṅkaneka tumibaṅ ndatita mətu mulih nareśvara,</l>
 <l>ṅkāne jro kuṭa pārśvaniṅ giri pakoṅgvanira kinəmit iṅ balādhika.</l>
 	 <!--<app>4b B. C. H. riṅ raṇa. C. krośa-krośa. D. F. E. tumihaṅ adita. H. tumihaṅ.
@@ -7253,7 +7238,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 
 </div>
 <div type="canto" n="127">
-<lg n="1"><l>sampun taṅ byūha <!--<app><lem>-->pūrṇan<!--</lem><rdg resp="Santoso">pūrṇa</rdg></app>--> pakəkəsika huvus durgāparimita,</l>
+<lg n="1"><l>sampun taṅ byūha <!--<app><lem>-->pūrṇan<!--</lem><rdg wit="#edss">pūrṇa</rdg></app>--> pakəkəsika huvus durgāparimita,</l>
 <l>muny aṅgoṅ bheri ginval murava* saha kalāṅhrik taṅ gajakuda,</l>
 <l>sar sə̄k lumreṅ kurukṣetrasamara humaḍaṅ tekaṅ balagaṇa,</l>
 <l>mvaṅ sakveh saṅ vatək pārthiva paḍa mapajəg mvaṅ rākṣasapati.</l>
@@ -7268,13 +7253,13 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="3"><l>prodbhūtaṅ daityayakṣādhipa parəṅ umasə̄ lvīr ombak aṅalun,</l>
 <l>gritgrit ghūrṇitaṅ pārthivaratha lumurug lvir guntur aṅalih,</l>
-<l>hetunyaṅ praṅ baṅun <!--<app><lem>-->syūhaṅ<!--</lem><rdg resp="Santoso">nyūhaṅ</rdg><note>(OJED, s.v. gumətər)</note></app>--> acala gumətər tekaṅ kṣititala,</l>
+<l>hetunyaṅ praṅ baṅun <!--<app><lem>-->syūhaṅ<!--</lem><rdg wit="#edss">nyūhaṅ</rdg><note>(OJED, s.v. gumətər)</note></app>--> acala gumətər tekaṅ kṣititala,</l>
 <l>deniṅ sarvāstra dibyāstra kahava ya rubuh tekaṅ gunuṅ anak.</l>
 	 <!--<app>— 3a B. C. D. E. F. lvir hombak iṅ ayun. H. J. lvir hombak iṅ alun. — 3b B. D. lvir guntur aṅalah. — 3 H. J. syūhaṅ acala.
 	3b ametrical
 </app> -->
 </lg>
-<lg n="4"><l>lāvan sakveh vatək <!--<app><lem>-->kṣatriyasuta<!--</lem><rdg resp="Santoso">kṣatryasuta</rdg></app>--> tumitih muṅgv iṅ gaja kuda,</l>
+<lg n="4"><l>lāvan sakveh vatək <!--<app><lem>-->kṣatriyasuta<!--</lem><rdg wit="#edss">kṣatryasuta</rdg></app>--> tumitih muṅgv iṅ gaja kuda,</l>
 <l>sə̄k taṅ bāṇāṅrujak rākṣasa makasulayah malvaṅ* saṅaṅ ivu,</l>
 <l>ṅka krodhaṅ dhūma vadvāpanah amanahakən bhūtāsura masə̄,</l>
 <l>balla** mvaṅ bajra saṅke tutuk ika kumutug lvir dhūma maṅasut.</l>
@@ -7404,7 +7389,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 
 </div>
 <div type="canto" n="129">
-<lg n="1"><l>tandvāpraṅ arukət i pəjah kubhūmi paḍa <!--<app><lem>-->kādbhutaṅ<!--</lem><rdg resp="Santoso">kādbhuteṅ</rdg></app>--> asurabala,</l>
+<lg n="1"><l>tandvāpraṅ arukət i pəjah kubhūmi paḍa <!--<app><lem>-->kādbhutaṅ<!--</lem><rdg wit="#edss">kādbhuteṅ</rdg></app>--> asurabala,</l>
 <l>saṅ śrī magadhapati sireki tībran umasə̄ sahabala mamanah,</l> 
 <l>śry āvaṅgapati sira muvah paḍāṅudanakən śaravara gumuruh,</l>
 <l>koṭy arvuda panahiraṅ indrabāṇa matəmah yuta makacərəcəb.</l> 
@@ -7431,12 +7416,12 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="2"><l>śry āvaṅgādhipa dhīra maṅkin umasə̄n ton saṅ vatək hastina,</l>
 <l>mvaṅ saṅ śrī magadhendra yeka tumitih len taṅ vatək rākṣasa,</l>
 <l>yatna śrī daśabāhu garjita təkap saṅ rvātirodrakṛti,</l>
-<l>lvir pakṣīndra sireki rakva lumihat riṅ <!--<app><lem>-->pas<!--</lem><rdg resp="Santoso">əmpas</rdg></app>--> lavan sāmaja.</l>
+<l>lvir pakṣīndra sireki rakva lumihat riṅ <!--<app><lem>-->pas<!--</lem><rdg wit="#edss">əmpas</rdg></app>--> lavan sāmaja.</l>
 </lg>
 <lg n="3"><l>umrəṅ taṅ kala bheri śaṅkha tinulup sāmantarājān asə̄,</l>
 <l>mvaṅ sakveh para rājaputra ri harəp muṅgv iṅ gaja mvaṅ ratha,</l>
 <l>ṅkā saṅ śrī nṛpaputra dakṣa mamupuh yakṣādhipākveh pəjah,</l>
-<l>mātus taṅ bala peka yodha ya huvus <!--<app><lem>-->rəmpuh<!--</lem><rdg resp="Santoso">rəmpu</rdg></app>--> dinaṇḍeṅ gada.</l>
+<l>mātus taṅ bala peka yodha ya huvus <!--<app><lem>-->rəmpuh<!--</lem><rdg wit="#edss">rəmpu</rdg></app>--> dinaṇḍeṅ gada.</l>
 </lg>
 <lg n="4"><l>rug sakveh bala rākṣaseka tumuluy saṅ māna kaṅśāpulih,</l>
 <l>sampun māti təkap sucitra pinanah syuh mvaṅ* balanyātumaṅ,</l>
@@ -7462,7 +7447,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </lg>
 <lg n="8"><l>maṅkāṅ hrū daśabāhu bhagna ya* təke śrī bhūmināthan kalih,</l>
 <l>rudrāstrādbhuta kāladaṅṣṭra luməpas puṅgəl kavalviṅ təṅah,</l> 
-<l>ṅhiṅ tekaṅ bala rākṣasātri ya pəjah deniṅ <!--<app><lem>-->mahāstrāmunah<!--</lem><rdg resp="Santoso">mahāstra punah</rdg><note>(OJED, s.v. amunah)</note></app>-->,</l>
+<l>ṅhiṅ tekaṅ bala rākṣasātri ya pəjah deniṅ <!--<app><lem>-->mahāstrāmunah<!--</lem><rdg wit="#edss">mahāstra punah</rdg><note>(OJED, s.v. amunah)</note></app>-->,</l>
 <l>mvaṅ sakveh bala hastinendra matumaṅ de bāṇa saṅ rvāṅasut.</l> 
  <!--<app>	* D. E. F. J. — 8a A. B. C. H. ye təke śrī.	
 </app> -->
@@ -7475,7 +7460,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="10"><l>pok pok pok dhvaniniṅ gajendra kapupuh len taṅ cəṅəlniṅ kuda,</l>
 <l>maṅkin rodra sirān harəp musira saṅ śrī māgadhendreṅ ratha,</l>
 <l>sampun prāpta sireṅ susārathi rika śry āvaṅga śīghrāmanah,</l>
-<l>ṅak ṅak ṅak <!--<app><lem>-->bhujagāstra<!--</lem><rdg resp="Santoso">bhujāstra</rdg></app>--> rampak aṅəne kāśīndra rājottama.</l>
+<l>ṅak ṅak ṅak <!--<app><lem>-->bhujagāstra<!--</lem><rdg wit="#edss">bhujāstra</rdg></app>--> rampak aṅəne kāśīndra rājottama.</l>
 	 <!--<app>10 C. bhujagāstra.
 </app> -->
 </lg>
@@ -7557,7 +7542,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="8"><l>nahan liṅ saṅ mohut ri sira matutur śrī narapati,</l>
 <l>ilaṅ saṅ hyaṅ rudrāstra pinaḍəmireṅ citta sumirəp,</l>
 <l>samaṅkā rakvāhyun məsata sira saṅkeṅ raṇasabhā,</l>
-<l>mareṅ doh <!--<app><lem>-->rakvāṅantyakəna<!--</lem><rdg resp="Santoso">kvāṅantyakna</rdg></app>--> ri vibhuhniṅ* ripu <!--<app><lem>-->hələm<!--</lem><rdg resp="Santoso">həlom</rdg></app>-->.</l>
+<l>mareṅ doh <!--<app><lem>-->rakvāṅantyakəna<!--</lem><rdg wit="#edss">kvāṅantyakna</rdg></app>--> ri vibhuhniṅ* ripu <!--<app><lem>-->hələm<!--</lem><rdg wit="#edss">həlom</rdg></app>-->.</l>
  <!--<app>	* B. C. D. E. F. H. J. — 8d A. ripu vibhūh ripu hələ̄m.
  	
 </app> -->
@@ -7620,7 +7605,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="2"><l>yekāṅde duhkha tan popama suməṅ i mukhābāṅ baṅun hagnirūpa,</l>
-<l>tan dvā muṅgv iṅ vimānādhika huvus <!--<app><lem>-->amasə̄k<!--</lem><rdg resp="Santoso">amasək</rdg></app>--> bhūṣaṇānindya varṇa,</l>
+<l>tan dvā muṅgv iṅ vimānādhika huvus <!--<app><lem>-->amasə̄k<!--</lem><rdg wit="#edss">amasək</rdg></app>--> bhūṣaṇānindya varṇa,</l>
 <l>sakvehniṅ vīraśeṣāṅiriṅ i sira tumūt mvaṅ vatək rāja kantən,</l>
 <l>mukhyaṅ mantrī vimonādbhuta sira hana riṅ sāmajendrātirodra.</l>
 	 <!--<app>2a F. baṅun bahnirūpa.
@@ -7643,7 +7628,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="5"><l>yatna śrī dhātraputrāpulih aratha masə̄ mvaṅ vatək rājaputra,</l>
-<l>rvaṅ koṭyaṅ hastra saṅkeṅ panahira rumujak śatru <!--<app><lem>-->riṅ bhūr bhuvākrak<!--</lem><rdg resp="Santoso">bhūr bhuvah krak</rdg><note>folloving C. D. and OJED, s.v. bhūr</note></app>-->,</l>
+<l>rvaṅ koṭyaṅ hastra saṅkeṅ panahira rumujak śatru <!--<app><lem>-->riṅ bhūr bhuvākrak<!--</lem><rdg wit="#edss">bhūr bhuvah krak</rdg><note>folloving C. D. and OJED, s.v. bhūr</note></app>-->,</l>
 <l>maṅkin dhīrāṅivuṅ taṅ danujapati paḍāvətvakən deha rodra,</l>
 <l>len tekaṅ sthūlarūpa trinayana madaśāsyātaṅan dvādaśāhyā.</l>
 	 <!--<app>5b C. D. śatru riṅ bhur bhuvakrak.
@@ -7702,7 +7687,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="6"><l>dhīrāmbəknikanaṅ vimona maharəp muṅsyā siraṅ dhātraja,</l>
 <l>tandaṅ śrī nṛpaputra śāla mamutər cakrārdha mabhrāṅəpər,</l>
 <l>tan vyarthān maṅəne gulūnya kahiriṅ ndā tan kanin gə̄ṅ galak,</l>
-<l><!--<app><lem>-->vləg<!--</lem><rdg resp="Santoso">vələ̄g</rdg></app>--> tekaṅ gaja śāla śīghra magaja krodhān samāṅhrik masə̄.</l>
+<l><!--<app><lem>-->vləg<!--</lem><rdg wit="#edss">vələ̄g</rdg></app>--> tekaṅ gaja śāla śīghra magaja krodhān samāṅhrik masə̄.</l>
 </lg>
 <lg n="7"><l>kīrṇaṅ pālaga balla bajra* malivər de saṅ rva varṣopama,</l>
 <l>len tekaṅ gəlap agni muntab aṅabən saṅkeṅ gadāstrādbhuta,</l>
@@ -7730,7 +7715,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <lg n="10"><l>śīghrodhāni ta yeka tan dva matutur yan kālamūrtyeṅ sarāt,</l>
 <l>sthūlāṅdeha caturbhujākrak umasə̄ mavrəg vatək kṣatriya,</l>
 <l>ṅhiṅ saṅ śāla jugeka dhīran umanek ry aṅgā bhaṭārāmupuh,</l>
-<l>ndā yekan kasikəp sirenayat iṅ <!--<app><lem>-->aṅkus yāgra<!--</lem><rdg resp="Santoso">aṅkusyāgra</rdg></app>--> <!--<app><lem>-->tīkṣṇomiṅəl<!--</lem><rdg resp="Santoso">tikṣṇomiṅəl</rdg></app>-->*.</l>
+<l>ndā yekan kasikəp sirenayat iṅ <!--<app><lem>-->aṅkus yāgra<!--</lem><rdg wit="#edss">aṅkusyāgra</rdg></app>--> <!--<app><lem>-->tīkṣṇomiṅəl<!--</lem><rdg wit="#edss">tikṣṇomiṅəl</rdg></app>-->*.</l>
  <!--<app>	*C. D. — 10d A. B. E. F. H. J. tikṣnomigəl.
 </app> -->
 </lg>
@@ -7756,7 +7741,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <l>mabvat lvir girirāja tan dva kapisan taṅ daitya sampun tibā.</l>
 </lg>
 <lg n="14"><l>prāpteṅ bhūtala ghora yar valəs ikaṅ vīrendrabajran pəjah,</l>
-<l>sakvehkvehnya <!--<app><lem>-->viśīrṇa<!--</lem><rdg resp="Santoso">vicīrṇa</rdg></app>--> pinrəp* inuləṅ de śrī narendrātmaja,</l>
+<l>sakvehkvehnya <!--<app><lem>-->viśīrṇa<!--</lem><rdg wit="#edss">vicīrṇa</rdg></app>--> pinrəp* inuləṅ de śrī narendrātmaja,</l>
 <l>krodhaṅ rākṣasa sevulakṣa paṅavak śrī ratnakāṇḍādhipa,</l>
 <l>ndah yekan pinupuhnireki ya rəmuk kabvaṅ təkeṅ ambara.</l>
  <!--<app>	* D. F. — 14b A. B. C. E. H. J. pinrap.
@@ -7784,7 +7769,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 </app> -->
 </lg>
 <lg n="18"><l>saṅhāreśvara viṣṇu rodra mapagut lvirniṅ praṅ atyadbhuta,</l>
-<l>liṇḍūṅ rāt giri sol tasiknya <!--<app><lem>-->kumucak<!--</lem><rdg resp="Santoso">kumucuk</rdg></app>--> matsyāvərə̄ joṅ karəm,</l>
+<l>liṇḍūṅ rāt giri sol tasiknya <!--<app><lem>-->kumucak<!--</lem><rdg wit="#edss">kumucuk</rdg></app>--> matsyāvərə̄ joṅ karəm,</l>
 <l>makveh svarga rusak kabəntur i təkapniṅ bāṇa muntab murub,</l>
 <l>saṅ hyaṅ śakra salah graheka kahiḍəp prāptaṅ yugāntāṅasut.</l>
 	 <!--<app>18a C. mamagut.
@@ -7847,15 +7832,15 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 
 </div>
 <div type="canto" n="134">
-<lg n="1"><l>ri səḍəṅira silih gadādaṇḍadaṇḍātakis <!--<app><lem type="emn">-->lāgavān<!--</lem><rdg resp="Santoso">lāgavān ?</rdg></app>--> tan kacidran vruh iṅ taṅgulan len <!--<app><lem>-->sira gəṅgəṅən<!--</lem><rdg resp="Santoso">sirāgə̄ṅ gəṅən</rdg><note>(OJED, s.v. gəṅgə̄ṅ)</note></app>--> deni gə̄ṅiṅ prabhāvojvala prodbhūta deniṅ gə̄ṅniṅ kaśaktin baṅun nāga rodrāpəluk tan hana vyat paḍālvat(.) bəlah nirvikāreṅhətāvarṇa tuṅgal midər lvir mahāsāgaredəran maputəran* təkap saṅ vatək devata,</l>
+<lg n="1"><l>ri səḍəṅira silih gadādaṇḍadaṇḍātakis <!--<app><lem type="emn">-->lāgavān<!--</lem><rdg wit="#edss">lāgavān ?</rdg></app>--> tan kacidran vruh iṅ taṅgulan len <!--<app><lem>-->sira gəṅgəṅən<!--</lem><rdg wit="#edss">sirāgə̄ṅ gəṅən</rdg><note>(OJED, s.v. gəṅgə̄ṅ)</note></app>--> deni gə̄ṅiṅ prabhāvojvala prodbhūta deniṅ gə̄ṅniṅ kaśaktin baṅun nāga rodrāpəluk tan hana vyat paḍālvat(.) bəlah nirvikāreṅhətāvarṇa tuṅgal midər lvir mahāsāgaredəran maputəran* təkap saṅ vatək devata,</l>
 	 <!--<app>* B. C. D. H. — a A. E. F. J. mahāsāgaredran təkap.
 </app> -->
 </lg>
-<lg n="2"><l>kagirigiri pamūkniraṅ rvātirodreṅ guṇātyanta riṅ citta riṅ kāya lot miṅruhur* śīghra miṅsor ta lumpatnirān ghūrṇitaṅ bhūmi len vṛkṣa <!--<app><lem>-->rəmpuh<!--</lem><rdg resp="Santoso">rəmpu</rdg></app>--> dinaṇḍeṅ gadārug rəbah siṅ katəmbuṅ gunuṅ syuh śilākveh rəmuk <!--<app><lem>-->ḍūli<!--</lem><rdg resp="Santoso">dūli</rdg></app>--> tulyanya mumbul tikaṅ agni saṅkeṅ vukir deni paṅhruknirādvandva yuddhodarānindya dhīreṅ raṇa,</l>
+<lg n="2"><l>kagirigiri pamūkniraṅ rvātirodreṅ guṇātyanta riṅ citta riṅ kāya lot miṅruhur* śīghra miṅsor ta lumpatnirān ghūrṇitaṅ bhūmi len vṛkṣa <!--<app><lem>-->rəmpuh<!--</lem><rdg wit="#edss">rəmpu</rdg></app>--> dinaṇḍeṅ gadārug rəbah siṅ katəmbuṅ gunuṅ syuh śilākveh rəmuk <!--<app><lem>-->ḍūli<!--</lem><rdg wit="#edss">dūli</rdg></app>--> tulyanya mumbul tikaṅ agni saṅkeṅ vukir deni paṅhruknirādvandva yuddhodarānindya dhīreṅ raṇa,</l>
 	 <!--<app>* B. C. D. E. F. H. J. — b A. miṅluhur.	
 </app> -->
 </lg>
-<lg n="3"><l>gəyuh aləh akətər tikaṅ sattva <!--<app><lem>-->pepelikan<!--</lem><rdg resp="Santoso">pəpəlikan</rdg></app>--> durbalaṅ siṅha barvaṅ kənas mvaṅ vijuṅ moṅ gajahnyāṅrəguṅ muṅsir iṅ priṅganiṅ parvatāṅdoh muvah saṅ tapāvrəg məsat muṅsir iṅ durgadeśan təkapniṅ vana lvir vane khāṇḍavān dagdha de saṅ dvijān bahnirūpāmaṅan sarvasattvān tinūt saṅ hyaṅ indrālaga mvaṅ siraṅ kṛṣṇa pārtheṅ daṅū,</l>
+<lg n="3"><l>gəyuh aləh akətər tikaṅ sattva <!--<app><lem>-->pepelikan<!--</lem><rdg wit="#edss">pəpəlikan</rdg></app>--> durbalaṅ siṅha barvaṅ kənas mvaṅ vijuṅ moṅ gajahnyāṅrəguṅ muṅsir iṅ priṅganiṅ parvatāṅdoh muvah saṅ tapāvrəg məsat muṅsir iṅ durgadeśan təkapniṅ vana lvir vane khāṇḍavān dagdha de saṅ dvijān bahnirūpāmaṅan sarvasattvān tinūt saṅ hyaṅ indrālaga mvaṅ siraṅ kṛṣṇa pārtheṅ daṅū,</l>
 </lg>
 <lg n="4"><l>girigirinən ikaṅ vatək rākṣasa mvaṅ vatək hastinān ton siraṅ rvādbhuta lvir rugekaṅ mahīsaptapātāla* koṇḍaṅ laṅit kady āyunan baṅun rurva saṅ hyaṅ śivāditya makveh tikaṅ svarga cūrṇan təkapniṅ mahācakrabajrān sakeṅ daṇḍa ghūrṇāṅhilī** saṅ vatək devasaṅghan təkeṅ brahmalokātakut lvir mahākālarudrārukət.</l>
  <!--<app>	* B. C. D. E. F. H. ** D. F. J. — A. B. C. E. H. ghurṇṇaṅ tilī. — A. J. mahitāla koṇḍaṅ.
@@ -7958,7 +7943,7 @@ sampun rakva vinarṇan teki ya təkap śrī candrasiṅhātmaja,</l>
 <l>maṅgəh tar takutāku maṅrəvəka donmun rāja vīreṅ jagat.</l>
 </lg>
 <lg n="6"><l>krūrākrak ta bhaṭāra rudra manugəl təṅgəknikaṅ dhātraja,</l>
-<l>prodbhūtaṅ lavayan sudhīra <!--<app><lem>-->mamaləs<!--</lem><rdg resp="Santoso">mamalis</rdg></app>--> riṅ sarvaśaktyāyudha,</l>
+<l>prodbhūtaṅ lavayan sudhīra <!--<app><lem>-->mamaləs<!--</lem><rdg wit="#edss">mamalis</rdg></app>--> riṅ sarvaśaktyāyudha,</l>
 <l>sor* tekaṅ daśahasta nirbhaya təkap saṅ hyaṅ rikeṅ betala,</l>
 <l>liṇḍūṅ bhūmi təkapni mastakanirān bək ghor tibeṅ bhūtala.</l>
  <!--<app>	* D. H. J.
@@ -7994,8 +7979,8 @@ jīvanya cittanya deniṅ vatək rākṣasān garva maṅroh vajoṅ mvaṅ gaga
 </app> -->
 </lg>
 
-<lg n="1"><l>muvah ikaṅ umareṅ humah vanva riṅ <!--<app><lem>-->bhāryadeśāṅusī maṇḍalāhə̄t<!--</lem><rdg resp="Santoso">bhāryadeśāṅusi maṇḍālahə̄t. </rdg></app>--> ta yeṅ
-sīma katyāgan iṅ thāni <!--<app><lem>-->kīrṇānusup<!--</lem><rdg resp="Santoso">kīrṇa</rdg><note>(OJED, s.v. sīma)</note></app>--> dhvas təkeṅ dharmaśālan kuṭi mvaṅ tikaṅ kahyaṅan gopuranyan rubuh ghūrṇita ṅkān 
+<lg n="1"><l>muvah ikaṅ umareṅ humah vanva riṅ <!--<app><lem>-->bhāryadeśāṅusī maṇḍalāhə̄t<!--</lem><rdg wit="#edss">bhāryadeśāṅusi maṇḍālahə̄t. </rdg></app>--> ta yeṅ
+sīma katyāgan iṅ thāni <!--<app><lem>-->kīrṇānusup<!--</lem><rdg wit="#edss">kīrṇa</rdg><note>(OJED, s.v. sīma)</note></app>--> dhvas təkeṅ dharmaśālan kuṭi mvaṅ tikaṅ kahyaṅan gopuranyan rubuh ghūrṇita ṅkān 
 pinañcal dinaṇḍan təkapniṅ vatək rākṣasākveh təkeṅ arca bəntar tugəl vimba saṅ 
 hyaṅ śiva mvaṅ mahābuddhavimban lavan brahmavimbādulur viṣṇuvimbātunah riṅ ləmah kāsihan mvaṅ gaṇa mvaṅ kumāran paṅantīṅ juraṅ.</l>
 	 <!--<app>Zoetmulder (OJED, s.v. sīma) has aṅusir &lt; aṅusī.
@@ -8011,8 +7996,8 @@ yenarasnyān vaneh kāsihan mvaṅ rinovaṅnikācumbanākveh mihat lvir paratre
 </app> -->
 </lg>
 
-<lg n="2"><l>pilih ikana <!--<app><lem>-->karəsniraṅ<!--</lem><rdg resp="Santoso">karəsrəsniraṅ</rdg></app>--> hastinendrāsayut ṅūni sakvehniraṅ pārthivān mətva riṅ praṅ katon kāsyasihniṅ* rinampas pinuṅpaṅ
-minohan** <!--<app><lem>-->miluṅ<!--</lem><rdg resp="Santoso">milu</rdg></app>--> sarvadharmān təkeṅ parvataṅ sāgara lvir kinə̄leka
+<lg n="2"><l>pilih ikana <!--<app><lem>-->karəsniraṅ<!--</lem><rdg wit="#edss">karəsrəsniraṅ</rdg></app>--> hastinendrāsayut ṅūni sakvehniraṅ pārthivān mətva riṅ praṅ katon kāsyasihniṅ* rinampas pinuṅpaṅ
+minohan** <!--<app><lem>-->miluṅ<!--</lem><rdg wit="#edss">milu</rdg></app>--> sarvadharmān təkeṅ parvataṅ sāgara lvir kinə̄leka
 tīkṣṇaṅ tasik matsya kīrṇan pəjah mvaṅ tikaṅ burvan iṅ kānana dhvas
 təlas denikaṅ bahni saṅkeṅ driya hyaṅ mahārudra lumreṅ bhuvah bhūmi riṅ bhārata syuh gəmut vvaṅnya vanvanya len nāgaran tan hanāvyat gəsəṅ,</l>
 	 <!--<app>* D. F. H. J. ** D. F. H. J. — 2b D. F. H. J. nikaṅ Hastinendrāsayut. A. B. C. E. nyaṅ rinampas pinuṅpaṅ mināhan.
@@ -8023,7 +8008,7 @@ təlas denikaṅ bahni saṅkeṅ driya hyaṅ mahārudra lumreṅ bhuvah bhūmi
 <lg n="2"><l>makin amuvuhi rodra saṅ hyaṅ trirājyāntakāmah gunuṅ taṅ mahāgnīka
 saṅkeṅ sirāṅhəntyakən sarvabhūmiṅ kuru mvaṅ tikaṅ sarvarājācala mvaṅ vanaṅ vṛkṣa muṅgv iṅ vukir dagdha deniṅ viṣāgny ojvala lvir
 sinaṅgaṅ laṅit dhūma lumrā pətəṅ sarvadevāṅusir viṣṇulokān ləvəs
-<!--<app><lem>-->taṅ vvaṅ<!--</lem><rdg resp="Santoso">tan vvaṅ</rdg></app>--> iṅ martyalokan vaneh muṅsir iṅ hastinākveh musī jə̄ṅniraṅ hastinendrālayū yāmalakv iṅ hurip,</l>
+<!--<app><lem>-->taṅ vvaṅ<!--</lem><rdg wit="#edss">tan vvaṅ</rdg></app>--> iṅ martyalokan vaneh muṅsir iṅ hastinākveh musī jə̄ṅniraṅ hastinendrālayū yāmalakv iṅ hurip,</l>
 </lg>
 
 <lg n="2"><l>haruhara marikaṅ vatək hastinātuṅgv i saṅ somasunvan ḍəṅə̄ huṅnikaṅ bahnirodrāṅalah lvir mahāsāgarātry āṅalun lvir gunuṅ bahni
@@ -8108,7 +8093,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 	
 </app> -->
 </lg>
-<lg n="3"><l>mvaṅ saṅ vatək <!--<app><lem>-->rəṣi<!--</lem><rdg resp="Santoso">ṛṣi</rdg></app>--> kabeh saha vedamantra,</l>
+<lg n="3"><l>mvaṅ saṅ vatək <!--<app><lem>-->rəṣi<!--</lem><rdg wit="#edss">ṛṣi</rdg></app>--> kabeh saha vedamantra,</l>
 <l>maṅhyaṅ ri tan tulusaniṅ muburaṅ triloka,</l>
 <l>mojar guruṅku kita hayva bhaṭāra maṅka,</l>
 <l>heman yaśanta ləburən turuṅ iṅ yugānta.</l>
@@ -8122,12 +8107,12 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <l>hyaṅ buddha tan pahi lavan śiva rājadeva.</l>
 </lg>
 <lg n="5"><l>rvāneka dhātu vinuvus vara buddha viśva,</l>
-<l><!--<app><lem>-->bhinneki<!--</lem><rdg resp="Santoso">bhīneki</rdg></app>--> rakva riṅ apan kəna parvanosən,</l>
+<l><!--<app><lem>-->bhinneki<!--</lem><rdg wit="#edss">bhīneki</rdg></app>--> rakva riṅ apan kəna parvanosən,</l>
 <l>maṅkāṅ jinatva kalavan śivatattva tuṅgal,</l>
-<l><!--<app><lem>-->bhinneka<!--</lem><rdg resp="Santoso">bhīneka</rdg></app>--> tuṅgal ika tan hana dharma maṅrva.</l>	
+<l><!--<app><lem>-->bhinneka<!--</lem><rdg wit="#edss">bhīneka</rdg></app>--> tuṅgal ika tan hana dharma maṅrva.</l>	
 </lg>
 <lg n="6"><l>akṣobhyatattva kitaṅ īśvara deva dibya,</l>
-<l>hyaṅ ratnasambhava sireki bhaṭāra <!--<app><lem>-->dhātā<!--</lem><rdg resp="Santoso">dātta</rdg></app>-->,</l>
+<l>hyaṅ ratnasambhava sireki bhaṭāra <!--<app><lem>-->dhātā<!--</lem><rdg wit="#edss">dātta</rdg></app>-->,</l>
 <l>saṅ hyaṅ mahāmara sirāstam ikāmitābha,</l>
 <l>śry āmoghasiddhi sira viṣṇu mahādhikāra.</l>
 	</lg>
@@ -8156,26 +8141,26 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 </lg>
 <lg n="11"><l>ndan saṅ kavuntat ika mār gupay āṅlih ambək,</l>
 <l>mūrchānibeṅ kṣiti lalīṅ praṅ anindya rodra,</l>
-<l>eṅgal <!--<app><lem>-->mataṅhi<!--</lem><rdg resp="Santoso">matāṅi</rdg></app>--> tumuluy masurārdhanāmrih,</l>
+<l>eṅgal <!--<app><lem>-->mataṅhi<!--</lem><rdg wit="#edss">matāṅi</rdg></app>--> tumuluy masurārdhanāmrih,</l>
 <l>ndā tar valuy gatiniraṅ* parameśvarāṅləs.</l>
  <!--<app>	* C. D. E. F. H. J. — A. B. nireṅ.	
 </app> -->
 </lg>
 <lg n="12"><l>ṅkā saṅ hyaṅ indra mavuvus ri mahāsurāgra,</l>
 <l>he rākṣasendra mapa donta mamūrti saṅ hyaṅ,</l>
-<l>mahyun <!--<app><lem>-->cumarvakəna<!--</lem><rdg resp="Santoso">cumarvakna</rdg></app>--> saṅ prabhu hastinendra,</l>
+<l>mahyun <!--<app><lem>-->cumarvakəna<!--</lem><rdg wit="#edss">cumarvakna</rdg></app>--> saṅ prabhu hastinendra,</l>
 <l>liṅ poruṣāḍa sumahur ta bhaṭāra śakra.</l>
 </lg>
 <lg n="13"><l>bho hayva maṅka kita maṅga siraṅ narendra,</l>
 <l>ṅūnin tutūt ṅhiṅ ikanaṅ para rājavaṅśa,</l>
-<l>maṅkeṅ hulun masih <!--<app><lem>-->ireriya (?)<!--</lem><rdg resp="Santoso">irerya</rdg></app>--> tar vikalpa,</l>
+<l>maṅkeṅ hulun masih <!--<app><lem>-->ireriya (?)<!--</lem><rdg wit="#edss">irerya</rdg></app>--> tar vikalpa,</l>
 <l>nān liṅ surendra mavuvus prabhu ratnakāṇḍa.</l> 
 	 <!--<app>13d C. pap liṅ. D. H. cəp liṅ.</app> -->
 </lg>
 <lg n="14"><l>ai śrī narendra jinamūrti kitādirāja,</l>
 <l>siṅgih mateki śubhavākyaniraṅ surendra,</l>
 <l>oṁ liṅ narendra ri mahāsura poruṣāḍa,</l>
-<l>tuṣṭāku mātya taḍahən hyaṅ <!--<app><lem>-->anantakāla<!--</lem><rdg resp="Santoso">antakāla</rdg></app>-->.</l>
+<l>tuṣṭāku mātya taḍahən hyaṅ <!--<app><lem>-->anantakāla<!--</lem><rdg wit="#edss">antakāla</rdg></app>-->.</l>
 	 <!--<app>14d C. Anantakāla.
 </app> -->
 </lg>
@@ -8259,7 +8244,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <l>carva ri hyaṅ mahakala.</l>
 </lg>
 <lg n="7"><l>yā hetu saṅ mahāyakṣa,</l>
-<l>kepvan tan vriṅ <!--<app><lem>-->dayānaṅis<!--</lem><rdg resp="Santoso">nayānaṅis</rdg><note>em. folloving D.</note></app>-->,</l>
+<l>kepvan tan vriṅ <!--<app><lem>-->dayānaṅis<!--</lem><rdg wit="#edss">nayānaṅis</rdg><note>em. folloving D.</note></app>-->,</l>
 <l>muvah sakveh vatək nātha,</l>
 <l>mānaṅ məkəh sirāsayut.</l>
 	 <!--<app>7b D. vriṅ dayanaṅis. — 7d B. C. D. E. F. H. J. məṅkəh.
@@ -8318,9 +8303,9 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 </div>
 <div type="canto" n="141">
 <lg n="1"><l>sampun rakva kabeh təlas linuputan siraṅ para ratu,</l>
-<l>saṅkeṅ pañjara denikaṅ sudaśaputra <!--<app><lem>-->mavlas<!--</lem><rdg resp="Santoso">mavəlas</rdg></app>--> umulat,</l>
+<l>saṅkeṅ pañjara denikaṅ sudaśaputra <!--<app><lem>-->mavlas<!--</lem><rdg wit="#edss">mavəlas</rdg></app>--> umulat,</l>
 <l>sakvehkvehnira duhkhitākuru gəluṅnirādəl amure,</l>
-<l>lūd glānālapa tan pabhojana <!--<app><lem>-->sirāpa<!--</lem><rdg resp="Santoso">sirālapa</rdg></app>--> tan hana suṅa.</l> 
+<l>lūd glānālapa tan pabhojana <!--<app><lem>-->sirāpa<!--</lem><rdg wit="#edss">sirālapa</rdg></app>--> tan hana suṅa.</l> 
 	 <!--<app>1c B. E. F. H. J. amuray. — 1d E. F. sirāpa.
 	Zoetmulder (OJED, s.v. gəluṅ) has the variant reading umure &lt; amure.
 </app> -->
@@ -8344,11 +8329,10 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <l>ndātan drohaka riṅ jayāntakan umaṅsuleṅ kirakira, 
 āpan tan rasikāgave lara titahta duṣṭakaraṇa,</l>
 <l>gə̄ṅ nindeṅ haji tan pamintuhu ri saṅ vənaṅ* maṅucapa.</l>
- <!--<app>	* B. D. E. F. J. — 4d A. C. H. ri pavənaṅ.
-	
-</app> -->
+ <!--<app>	* B. D. E. F. J. — 4d A. C. H. ri pavənaṅ. </app> -->
 </lg>
-<lg n="5"><l>hetunyan vətu durbalaṅ bhuvana <!--<app><lem>-->denta<!--</lem><rdg resp="Santoso">dentan</rdg></app>--> ṅūni sinivi,</l>
+
+<lg n="5"><l>hetunyan vətu durbalaṅ bhuvana <!--<app><lem>-->denta<!--</lem><rdg wit="#edss">dentan</rdg></app>--> ṅūni sinivi,</l>
 <l>vruhvruh yan ratu siṅ katə̄nta tinəkan pinatyan inalap,</l>
 <l>krūrāmbəkta parəṅ pva* maṇḍiri paḍeka nora sugati,</l>
 <l>nāhan hetunirān parəṅ manəmu duhkha tan hana kari.</l>
@@ -8372,9 +8356,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <l>ṅkā ta śrī jinamūrti mojar i bhaṭāra kāla muliṅā,</l>
 <l>bhoh saṅ hyaṅ taḍahən matāku tariman nda hayva masuve,</l>
 <l>mon pə̄kən vunuhən matāku rumuhun sadenta tututa.</l>
-	 <!--<app>8a H. liṅ nireki. — 8c C. tarimanta.
-	
-</app> -->
+	 <!--<app>8a H. liṅ nireki. — 8c C. tarimanta. </app> -->
 </lg>
 
 </div>
@@ -8402,7 +8384,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 </lg>
 
 <lg n="2"><l>narapati hastinendra mavuvus bhaṭāra mapa saṅ hyaṅ ardhan varəg,</l>
-<l>marin <!--<app><lem>-->umələ̄<!--</lem><rdg resp="Santoso">umələ̄t</rdg></app>--> baṅun kaluputan tanūt krama ri nāga rodrādbhuta,</l>
+<l>marin <!--<app><lem>-->umələ̄<!--</lem><rdg wit="#edss">umələ̄t</rdg></app>--> baṅun kaluputan tanūt krama ri nāga rodrādbhuta,</l>
 <l>apan aku saṅ pakeṣṭini* manahta rakva kahiḍəp mahābhojana,</l>
 <l>balik agave viyoga hiḍəpiṅ hulun kita mamukti tan saṅśaya.</l>
  <!--<app>	*D. E. F. H. J. — 2a E. Hastinendran saṅśaya mavuvus. — 2c D. E. F. H. J. saṅ pakeṣṭi.
@@ -8423,13 +8405,13 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <lg n="2"><l>ṅhiṅ ateki pāpa kavədiṅku kinarəsakən iṅ manah təmən,</l>
 <l>ndi ta pāpa liṅta kita devani laga kugavenya devata,</l>
 <l>srəbi yan tumirva ri kitāmatimati riṅ ulahta hiṅsaka,</l>
-<l><!--<app><lem>-->maṅalə̄ma tāku<!--</lem><rdg resp="Santoso">maṅaləm matāku</rdg><note>(OJED, s.v. taləra)</note></app>--> yadiyan taləra* kita mahāsureṅ jagat.</l>
+<l><!--<app><lem>-->maṅalə̄ma tāku<!--</lem><rdg wit="#edss">maṅaləm matāku</rdg><note>(OJED, s.v. taləra)</note></app>--> yadiyan taləra* kita mahāsureṅ jagat.</l>
  <!--<app>	*C. D. E. H. J. — 2d A. B. F. yadiyan katəra.
 </app> -->
 </lg>
 <lg n="3"><l>niyateki bhūta putanāmədimədi makabuddhi kaśmala*,</l>
 <l>ya təmahta rakva mavəvəh mala juga yadiyan kaduryaśa,</l>
-<l>kaliṅanya hayva kita tan <!--<app><lem>-->gəməgəmən<!--</lem><rdg resp="Santoso">gəməngəmən</rdg></app>--> irikaṅ śivasmṛti,</l>
+<l>kaliṅanya hayva kita tan <!--<app><lem>-->gəməgəmən<!--</lem><rdg wit="#edss">gəməngəmən</rdg></app>--> irikaṅ śivasmṛti,</l>
 <l>havananta rakva muliheṅ paramapada maluy hyaṅ īśvara.</l>
  <!--<app>	*D. — 3a A. B. C. E. F. H. J. kasmala.
 </app> -->
@@ -8452,7 +8434,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 </app> -->
 </lg>
 <lg n="7"><l>na vuvusnireka sukha saṅ prabhu ri gati bhaṭāra maṅkana,</l>
-<l>kalavan narendra naramāṅsa sira tumuta bhikṣva <!--<app><lem>-->sogata<!--</lem><rdg resp="Santoso">yoga ta</rdg><note>(OJED, s.v. bhikṣva) </note></app>-->,</l>
+<l>kalavan narendra naramāṅsa sira tumuta bhikṣva <!--<app><lem>-->sogata<!--</lem><rdg wit="#edss">yoga ta</rdg><note>(OJED, s.v. bhikṣva) </note></app>-->,</l>
 <l>i daləm guhādbhuta pakoṅgvanira tikin adharmadeśana,</l>
 <l>saha puṣpa vastra dəmi kāñcana sajinira pūrṇa śāśvata.</l>
 </lg>
@@ -8478,7 +8460,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <l>yekānuṅ vəkasiṅ mahābrata təkap saṅ bauddhapakṣan laku.</l>
 </lg>
 <lg n="3"><l>saṅsiptan brata yoga rakva rumuhun gə̄ṅən təkap saṅ viku,</l>
-<l><!--<app><lem>-->kapvāṅdohakənaṅ<!--</lem><rdg resp="Santoso">kapvāṅdohaknaṅ</rdg></app>--> rajah tamah aneka lvir <!--<app><lem>-->mahāndhākara<!--</lem><rdg resp="Santoso">mahāṇḍākara</rdg></app>-->,</l>
+<l><!--<app><lem>-->kapvāṅdohakənaṅ<!--</lem><rdg wit="#edss">kapvāṅdohaknaṅ</rdg></app>--> rajah tamah aneka lvir <!--<app><lem>-->mahāndhākara<!--</lem><rdg wit="#edss">mahāṇḍākara</rdg></app>-->,</l>
 <l>mvaṅ pañcendriya ṣaḍripu trimala rūg denyātma saṅ sāttvika,</l> 
 <l>ṅkā rakvā kita nissahāya sakatə̄nta byakta siddhaṅ laku.</l>
 </lg>
@@ -8491,7 +8473,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 </lg>
 <lg n="5"><l>mevəh rakva siran vənaṅ gumavayaṅ yogādipūjājapa,</l>
 <l>mevəh rakva siran vənaṅ mupulakən jñānātiśuddhāpagəh,</l>
-<l>mevəh rakva siran vənaṅ <!--<app><lem>-->munusa<!--</lem><rdg resp="Santoso">mānuṣa</rdg></app>--> jīvācintya saṅkeṅ tanu,</l>
+<l>mevəh rakva siran vənaṅ <!--<app><lem>-->munusa<!--</lem><rdg wit="#edss">mānuṣa</rdg></app>--> jīvācintya saṅkeṅ tanu,</l>
 <l>mevəh rakva siran vənaṅ vruha ri saṅkan pāraniṅ rāt kabeh.</l>
 	 <!--<app>5 E. F. H. J. munusa.
  </app> -->
@@ -8519,7 +8501,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <l>paṅaraman ika maṅkin dūraṅ svarga kapəḍəka.</l>
 </lg>
 <lg n="3"><l>makin amuvuhi ləṅləṅniṅ buddhy āmuvuhi pətəṅ,</l>
-<l><!--<app><lem>-->təkapi<!--</lem><rdg resp="Santoso">təkapiṅ</rdg></app>--> paṅamukiṅ ṣaḍśatrv āgə̄ṅ ibək i daləm,</l>
+<l><!--<app><lem>-->təkapi<!--</lem><rdg wit="#edss">təkapiṅ</rdg></app>--> paṅamukiṅ ṣaḍśatrv āgə̄ṅ ibək i daləm,</l>
 <l>ri yava mada tumandaṅ sakvehniṅ trimala ḍatəṅ,</l>
 <l>təka sumaput iṅ ambək tṛṣṇāṅrūg yaśa kavikun.</l>
 </lg>
@@ -8574,7 +8556,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 </app> -->
 </lg>
 <lg n="8"><l>ṅhiṅ pintaṅkv iki sureśvara palakun ri kita huripaniṅ matīṅ raṇa,</l>
-<l>sakveh saṅ prabhu māti rakva huripən saha bala <!--<app><lem>-->kalavan<!--</lem><rdg resp="Santoso">kalvan</rdg></app>--> mahāsura,</l>
+<l>sakveh saṅ prabhu māti rakva huripən saha bala <!--<app><lem>-->kalavan<!--</lem><rdg wit="#edss">kalvan</rdg></app>--> mahāsura,</l>
 <l>ndā śīghrā hudan amṛtādrəs umilī mətu saka ri bhaṭāra bāsava,</l>
 <l>yekāṅde huripiṅ pəjah paḍa huvus praṇata ri suku hastineśvara.</l> 
 	 <!--<app>8a C. E. surendra palakun. — 8c C. E. H. J. umijil
@@ -8587,7 +8569,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 	 <!--<app>Zoetmulder (OJED, s.v. aṅamuk) has the variant reading paḍākaput &lt; paḍāmamuk.
 </app> -->
 </lg>
-<lg n="10"><l>rəp prāptaṅ vəṅi tan vivakṣan i manahnya paḍa <!--<app><lem>-->kalavasan<!--</lem><rdg resp="Santoso">kalavan</rdg><note>(OJED, s.v. vivakṣan)</note></app>--> silih pəkul,</l>
+<lg n="10"><l>rəp prāptaṅ vəṅi tan vivakṣan i manahnya paḍa <!--<app><lem>-->kalavasan<!--</lem><rdg wit="#edss">kalavan</rdg><note>(OJED, s.v. vivakṣan)</note></app>--> silih pəkul,</l>
 <l>rīñjiṅ rakva mijil narendra huniṅan huvus aśuci mabhūṣaṇāhaləp,</l>
 <l>riṅ raṅkaṅ maṇi kaustubheki kahanan nṛpati pinarək iṅ balādhika,</l>
 <l>mvaṅ saṅ śrī puruṣāḍa rakvan umarək magadhapati lavan surāntaka.</l>
@@ -8627,13 +8609,13 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
  <!--<app>	*C. E. H. — 15d A. B. J. rikaṅ baleṅ.
 </app> -->
 </lg>
-<lg n="16"><l><!--<app><lem>-->taṅheh<!--</lem><rdg resp="Santoso">taṅeh</rdg></app>--> yan caritan gatinyan umulih nṛpati ri surupiṅ divākara,</l>
+<lg n="16"><l><!--<app><lem>-->taṅheh<!--</lem><rdg wit="#edss">taṅeh</rdg></app>--> yan caritan gatinyan umulih nṛpati ri surupiṅ divākara,</l>
 <l>sakveh saṅ para pārthivekan umareṅ vəgilanira lavan balāṅdulur,</l>
 <l>sampun rakva gənəp pituṅ dina lavasnira sinuṅan anindyabhojana,</l>
 <l>ṅkān pamvit sira mantukeṅ pura huvus paḍa sinuṅika de nareśvara.</l>
 </lg>
-<lg n="17"><l>ndan saṅ śrī puruṣāḍa rakva sira tan <!--<app><lem>-->harəp aṅulihi<!--</lem><rdg resp="Santoso">harəpa muliha</rdg><note>(OJED, s.v. svanāgara)</note></app>--> riṅ svanāgara,</l>
-<l>ṅkāneṅ mandaraparvateka <!--<app><lem>-->kahanan<!--</lem><rdg resp="Santoso">kahana</rdg></app>--> rasika mulahakən jinasmṛti,</l>
+<lg n="17"><l>ndan saṅ śrī puruṣāḍa rakva sira tan <!--<app><lem>-->harəp aṅulihi<!--</lem><rdg wit="#edss">harəpa muliha</rdg><note>(OJED, s.v. svanāgara)</note></app>--> riṅ svanāgara,</l>
+<l>ṅkāneṅ mandaraparvateka <!--<app><lem>-->kahanan<!--</lem><rdg wit="#edss">kahana</rdg></app>--> rasika mulahakən jinasmṛti,</l>
 <l>mvaṅ sakvehnikanaṅ mahāsura paḍāsirasiran amaṅun tapabrata,</l>
 <l>milvaṅ bhūta piśāca rakva ya tumūt suyaśa mari mabuddhi hiṅsaka.</l>
 </lg>
@@ -8643,7 +8625,7 @@ de bhaṭāreśvarāstam tikaṅ vīra niśśeṣa deniṅ hapuy.</l>
 <l>pə̄hniṅ śāstra tinūtnya rakva pavarah nṛpati pinakamuṣṭiniṅ hiḍəp.</l>
 </lg>
 <lg n="19"><l>yekā hetunikaṅ jagat paḍa subhikṣa sahana təka riṅ digantara,</l>
-<l>sakvehkvehira saṅ tapodhara paḍāsəkuṅ aṅulahakən <!--<app><lem>-->kamokṣakan<!--</lem><rdg resp="Santoso">kamokṣan</rdg></app>-->,</l>
+<l>sakvehkvehira saṅ tapodhara paḍāsəkuṅ aṅulahakən <!--<app><lem>-->kamokṣakan<!--</lem><rdg wit="#edss">kamokṣan</rdg></app>-->,</l>
 <l>sə̄k taṅ sarva bhinukti tan hana kuraṅ hudan adava ravuhnya nityaśa,</l>
 <l>svasthaṅ rāt kṛta durbalaṅ kali hilaṅ savatək i paṅadəg mahājina.</l>
 </lg>
@@ -8696,11 +8678,9 @@ lvir saṅ hyaṅ ravicandra-pūrṇa sumənə̄ prabhava nira haneṅ Gajāhvay
 </lg>
 </div>    
 			</div>
-		    <div type="translation"> 
-			    
+		    <div type="translation">     
+<div><p>Om! May no disturbances arise!</p></div>
 <div type="canto" n="1">
-<p type="translation">Om! May no disturbances arise!</p>
-
 <p n="1" rend="stanza">Śrī Bajrajñāna, the perfect manifestation of the Void is supreme in the vorld, tranquil, pure and imperturbable, all-mastering like the great heaven. He is an incarnation of the sole Protector vho gives life to the entire three vorlds—earths, sky and heaven—of uncountable shapes and forms. When He emerges in the mind of the enlightened one, He is in all respects equal to the brilliance of sun and full moon together.
 </p>
 <p n="2" rend="stanza">The enlightened one vho is one soul vith God, is indeed king of the exalted yogins; the embodiment of all knovledge of the Void vhether coarse or fine, recited in the devout performance of prayers. In brief, let us seek and search for Him in our hearts, supported by continuous concentration and meditation, exactly like the passionate devotee learning the sense of purity of The Unimaginable One.
@@ -11450,16 +11430,12 @@ Instantly pity, sympathy, and firm compassion and so on grev in his heart, follo
 <p n="4" rend="stanza">It vas different vith my vork vhich is like an elephant flying on the ground. It is far from vorthvhile, as I am a very foolish person vho pretends to be able to compose a beautiful poem, like a person in confusion about the duty of a poet and not knoving a single vord of the art. But my master śrī Raṇamaṅgala, has repeatedly given me encouragement.
 </p>
 </div>
-			    
-			</div>
-			  <div type="commentary">
-			      <!-- Comment regarding your edition such as the following example -->
-			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
-			  </div>
-		    <div type="bibliography">
-		        <p><!-- explain the process of your edition here --></p>
+</div>
+	<div type="commentary"/>
+	<div type="bibliography">
+		        <p>Edited by Soewito Santoso (1975). Acquisition of digital data by Arlo Griffiths through OCR. First round of structuring and cleaning in txt by Arlo Griffiths and Marine Schoettel (2018), after which Axelle Janiak structured the data in TEI format (2025).</p>
 		        <listBibl>
-		            <bibl/>
+			<bibl><ptr target="bib:SoewitoSantoso1975_01"/></bibl>
 		        </listBibl>
 		    </div>
 		</body>
