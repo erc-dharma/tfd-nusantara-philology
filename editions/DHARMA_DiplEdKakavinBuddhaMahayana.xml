@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Kakavin Buddha Mahayana</title>
+            <title type="sub">Digital Diplomatic Edition</title>
+               <editor ref="part:pegy">
+                <name>Putu Eka Guna Yasa</name>
+            </editor>
+            <editor ref="part:dapu">
+               <name>I Gde Agus Darma Putra</name>
+            </editor>
+             <editor ref="part:dacc">
+                  <name>Dewa Ayu Carma Citrawati</name>      
+            </editor>
+            <respStmt>
+               <resp>intellectual authorship of edition</resp>
+               <persName ref="part:pegy"></persName>
+                     <name>Putu Eka Guna Yasa</name>
+                <persName ref="part:dapu"></persName>
+                        <name>I Gde Agus Darma Putra</name>
+                      <persName ref="part:dacc"></persName>
+                           <name>Dewa Ayu Carma Citrawati</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Paris</pubPlace>
+            <idno type="filename">DHARMA_DiplEdKakavinBuddhaMahayana</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
+                            a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s)-->
+               </licence>
+            </availability> 
+            <date from="2025" to="2025">2025-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Denpasar</settlement>
+                  <institution>Pusat Dokumentasi</institution>
+                  <repository>Lontar</repository>
+                  <idno>Ka/III/4/DOKBUD</idno>
+               </msIdentifier>
+               <msContents>
+                                <!--the msContents isn't mandatory -->
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                     <p>Documentation Center of Bali Cultural Departement in Balinese script. The present text is found on folios 1v through 8v of the original lontar. Photographed by Internet Archive</p>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                  <p>
+                  </p>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+                    <!-- Part mandatory -->
+            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+         </projectDesc>
+         <editorialDecl>
+                    <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p/>
+            </punctuation>
+         </editorialDecl>
+         <samplingDecl>
+                    <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
+            <p/>
+         </samplingDecl>
+         <!--schemaRef  will need to be added once a  official realase is done -->
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <!-- Part mandatory -->
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+                <!-- choose the language(s) of your text, remove the others -->
+            <language ident="kaw-Latn">Old Javanese</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
+               <term/>
+               <!-- Ignore this element for the time being. -->
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="part:pegy" when="2025-05-12" status="draft">Initial encoding of the edition (first folia)</change>
+         <change who="part:dapu" when="2025-05-12" status="draft">Initial encoding of the edition (first folia)</change>
+         <change who="part:dacc" when="2025-05-12" status="draft">Initial encoding of the edition (first folia)</change>
+      </revisionDesc>
+      <!-- HandDesc: 
+            (1) layar is in Balinese position
+            (2) dh and ḍ seem to be used without any distinction, nor are any distinctions made between sa śa and ṣa-->
+   </teiHeader>
+   <text xml:space="preserve" xml:lang="kaw-ban">
+        <body>
+            <ab>
+
+<pb n="1v"/>
+<fw place="left" n="1v">1</fw>
+   <lb n="1v1"/>//<g type="circleCurve"/>//Aum̐ na:mo budḍa: ya//<g type="circleCurve"/>// na:han lakṣaṇa saṁ tatha:gata maha<space type="binding-hole"/>:ya:na pva yan kavruhi, pūrṇneṁ ru:pa sacihna saṁ viku huvus ma:ndəl haneṅ jro hati, muṇḍi: go
+   <lb n="1v2"/> ḍuha len gaṇitri paragi mvaṁ sa:mbaranya: putiḥ, mvaṁ tekaṁ kaṭivaṇḍa yoggapa<space type="binding-hole"/>da sakvehniṁ sinaṅguh krama// nyan· muṇḍi pva ṅaranya saṁ makamanah ḍarmma: svabha:va: həniṅ
+   <lb n="1v3"/>, śūdḍa: prakr̥ti niṣprapañcamaya śūnya: jña:na nissaṅgraha, nirsamboḍana nir<space type="binding-hole"/>vika:lpaka maya:līlaṅ maha:śa:śvata:, muṇḍi pveki ṅaranya nitya maparas· mūrdḍa: l̥ṅis ni
+   <lb n="1v4"/> tyasa// jña:na: vruḥ maṅiriṅ pasuk vətunikaṅ {ui da} pra:ṇa:di budḍotsaha, mvaṁ vru<space type="binding-hole"/>ḥ riṁ darika: śarīra mahilin medran lana: cakravat·, ndaḥ nitya:ṅhanakən praveśa ma
+               
+   <lb n="2r1"/>kadon prityaṁ praja: maṇḍala, na:han teki gaṇitri tan pasalahan de saṅ maha<space type="binding-hole"/>: paṇḍita// nisbya:pa:ranikaṁ manaḥ ya ta maveha prītyaniṁ rat kabeḥ, mvaṁ saṁ deva si
+   <lb n="2r2"/>reka mukya ginave tuṣṭa:nira:n laṅgəṅa, mvaṁ saṁ na:tha sireka laṅgeṅa sivin·<space type="binding-hole"/>maṅde suka:niṁ praja:, yeka: goḍuha tan kasaḥ ri sira saṁ mahyun tuməmvaṁ taya// budḍi lvir 
+   <lb n="2r3"/>raviteja lumra sumənə̄ riṁ sarbva tatvottama, ṇda:t sanḍa:gḍa rajaḥ tamaḥ paḍa<space type="binding-hole"/>gəsəṁ sakveḥ nikaṅ ṣaḍripu,Artha mvaṅ kama śabda len daśamala: bha:ya:laha:vr̥g hilaṁ, na:han taṁ 
+   <lb n="2r4"/>paragi prasidḍa tinəṅət de saṁ masaḍya: hayu// jña:na: lvir həniṅiṁ laṅit kinataya<space type="binding-hole"/>n deniṁ hima: mvaṁ limut·, vruḥ riṁ sarvaviśeṣa tatva ṅuniveh riṁ budḍa ma:rgottama, tiṅ
+
+<fw place="left" n="2r">2</fw>
+   <lb n="2v1"/> kaḥ śrī jina riṁ śarīra kahiḍəp· devīniran sakrama, yeka: sa:mbara tan vənaṁ<space type="binding-hole"/>vinasəhan tan bhaṣmi deniṁ panas// jña:na vruh Umiḍəp·  ri śūnyata: rikaṁ sarbvatva ḍar
+   <lb n="2v2"/> mma:tmaka, sthīra:niṅsəti tuṅgaliṁ sakalatatva mvaṁ śarīrakrama, mvaṁ pañcendri[]ya budḍi tan pamiṣaya: pan ka:pusan bya:para, na:han taṅ kaṭivaṇḍa riṁ paramatatva: 
+   <lb n="2v3"/> dan ginuhyeṁ manah// prajña: vruḥ riṅ aveśa guhya atiyogga: mvaṁ hi<space type="binding-hole"/>ḍəp vīryyava:n·, salvirniṁ surapūja yeka kahiḍəp· nāṁ deva:ha: ra:krama, sarvvo
+   <lb n="2v4"/> pa:kriya sarbvadeśaṇa təlas taṁ mantra tantra stuti, yeka: yoggapada: prasi<space type="binding-hole"/>dḍa kumavitttan vətvaniṁ dūrnaya// jña:notsa:ha: taman pəgat· mulahakən pūja: 
+               
+   <lb n="3r1"/>  stutī śrī jina, supta: dikriya tan ta lalyani nivə̄ naṅkən tri sa:ṇḍya:tutur, ma<space type="binding-hole"/>ṅga:ṅhela tan arttha karya magave ḍarmma: trika:yottama, yeka:ṅkən kaharan savit· 
+   <lb n="3r2"/> ri sira saṁ paṇḍya: hyunī śūnyata: // pūja:nta sthiti sarvvalakṣaṇa ya pūja: siṁ<space type="binding-hole"/>sasolah bhava, salvirniṁ vacana: manis parahita:ṅkən mantra nitya:sthiti, siṅ cittanta ja
+   <lb n="3r3"/> pa: prayoga magalar ba:yu tri ratnya:traya, siṁ karyanta ya yoggaka:raṇa riṁ<space type="binding-hole"/>sidḍa:niṁ kayogīśvaran// śīlanta:ṅinakiṁ mulat ya tika kəmbaṁ tan malumvityasa,
+   <lb n="3r4"/> siṁ sojarta kapaṇḍitan mijil· arūm· gaṇḍa: vaṅinya:n sumar, vruḥteṁ tattva<space type="binding-hole"/>viśeṣa budḍa ya tika: vījanta nitya:gəlar, jña:na: hniṁ humiḍəṅ maya: kadi miñak· 
+
+<fw place="left" n="3v">3</fw> 
+   <lb n="3v1"/>yeka: nivedya:hal̥p·// na:han hetuni saṅ huvus· vru hirikaṁ dvi:<space type="binding-hole"/>ma:tratava:licin·, byakta: tiṅhala tattva sakramanikaṁ tantrenusir saṁ viku, Aṅhiṁ
+   <lb n="3v2"/>jña:naviśeṣa budḍa kahiḍəp· tan du:ra tan saṅśaya, ndan saṁ maṅkana ta: <space type="binding-hole"/> n sapekṣa riṅ ulaḥ lvir bhranta riṁ lakṣaṇa // vvantən teki gəgən kr̥ta:ṅkənan ikaṁ de
+   <lb n="3v3"/>saṁ makinkin hayu, na:ṁ ṣadpa:ramita: praka:ṣita gəgən taṅ da:na riṁ pūrvvaka, ⌈<space type="binding-hole"/> len taṁ śīla muvaḥ ta santi saha vīryya: ḍya:na len kavruhi, prajña:ntya:nya ya teka
+   <lb n="3v4"/>kavruhinihan taṁ da:na tiṅkaḥnika: // Ambək nitya ləba: riṅ artha ṅuni ⌈<space type="binding-hole"/> veh yan tvak səkul bhojana, la:van· strī tuvi putra yadiyan ta:vehakən mi
+
+   <lb n="4r1"/>ynta riṁ, raḥ len ma:ṅśa hatinta soca yadiyan ta:vehakə̄niṁ minta, na:ha <space type="binding-hole"/> n teka ya da:na pa:ramita: yekin tambayan kavruhi // ra:kṣekaṅ jinaśa:śaṇa kramani
+   <lb n="4r2"/>kaṁ śikṣe katǝṅgǝgvani, tan vya:pa:ra tikaṁ trika:ya riṅ ulaḥ yan ton suka: <space type="binding-hole"/> niṁ para, na:ṁ pra:ṇa:tipata:vira:tyadi ya teka: dohakən pūrvvaka, na:han ka
+   <lb n="4r3"/>vruhi śīlapa:ramita maṅgəḥ ṅvaṁ tuməmvaṅ hayu // A:mbək· lvir maḍu sinyuka:n ma <space type="binding-hole"/> ḍu səḍəṁniṅ vaṅ maveh duhkita, tan molaḥ Umiḍəṁ viśudḍa mahəniṁ himpər viyat· nir
+   <lb n="4r4"/>bbhaṇa, Aptya:veha sukeṁ maveḥ lara kəḍə̄ mahyun suka:niṁ para, śa: <space type="binding-hole"/> ntīpa:ramita: pva na:ma nikahən· yeka:n gəgǝn nityaṣa // tan varsiḥnikanaṁ tri
+    
+<fw place="left" n="4v">4</fw>
+   <lb n="4v1"/>ka:ya magave karmma:hajəṁ nityaṣa, yapvan riṅ rahinenisipva maṅajiṁ mvaṅ <space type="binding-hole"/> lot mamūja:nulis·, yan riṅ ra:tri majagra yogga japa la:van dya:na pūja: stuti,
+   <lb n="4v2"/>, vīryya:pa:rimiteki kavruhi maha:margga:ṅusir śūnyata: // jña:na:nu <space type="binding-hole"/> ṅgalakən· śarīra kalavan siṁ sarbvasa:tva:tmaka, dehaṅkv a:jana sarbvasatva mari§
+   <lb n="4v3"/>ka: dehaṅku satva:tmaka, na:han hetuni siḥ nirakṣama rika: satva: <space type="binding-hole"/> ḍika:ḍah tuvi, yeka: ḍya:na ṅaranya pa:rimita teka svarggamarga:pagəḥ //
+   <lb n="4v4"/>jña:na: vruḥ riṅ atinta len anagata: mvaṁ vartthama:nakrama, mvaṁ riṁ sarbva vi⌈ <space type="binding-hole"/> śeṣatatva samaya: mvaṅ sarbvaśa:stra:gama, vahya:ḍya:tmi viśeṣayogga sakala: mvaṁ 
+               
+   <lb n="5r1"/>dikvidikdevata:, pra:jña:pa:ramita: kramanya ta gəgə̄n· maṅgəḥ vəkasniṅ§ <space type="binding-hole"/> brata // na:ṁ ṣadpa:ramiteka pūrvvaka gəgə̄ yan ma:hyun iṅ śūnyata, bya:kta:siḥ pva bhaṭa:
+   <lb n="5r2"/>ra budḍa ri sira: sampun kacitta:śraha, A:pan· mūla viśeṣatantra vəkas iṁ <space type="binding-hole"/> tattvenucap saṁ viku, jña:na:dva:ya viśeṣatatva nikihən· devī maha:ka:ra
+   <lb n="5r3"/>ṇa // vvantən pa:r<del>i</del>mita: kramanya acaturbrahma:viha:ra:pagəḥ, metri mvaṁ <space type="binding-hole"/> karṇa:dulur muḍita len teka:ṅ upekṣa:ṅiriṅ, na:ṁ ṣadpa:ramita:puḍul pva ya
+   <lb n="5r4"/>lavan brahma:viha:ra:təmu, yeka: pa:ramita: prasidḍa daśa sa:kṣa:t kara <space type="binding-hole"/> ṇeṁ śrī jina // na:han metri ṅaranya budḍi gumave ka:hayvan iṅ rat kabeḥ, la:
+
+<fw place="left" n="5v">5</fw>
+   <lb n="5v1"/>van taṁ karuṇa: pva budḍi malara:non vaṁ maha:duhkhita, len tekaṁ muḍita: <space type="binding-hole"/> pva budḍi suka yan ton· tuṣṭaniṅ vvaṁ vaneḥ, Ambək· śudḍa para:rtha tan palakatə̄n· 
+   <lb n="5v2"/>popekṣa liṁ saṁ viku // <g type="circleCurve"/> // [Canto 2] la:van ta hayva malupeṅ bhuvana: śarī <space type="binding-hole"/> ra, Abḍi mvaṁṅ adri paramottamadehatattva, maṅgəḥ paṅa:śrayananiṁ maṅusir kamo
+   <lb n="5v3"/>kṣan, A:pan tikaṁ vvaṅ hapaR̥saki pa:da saṁ hyaṁ // na:han ta tiṅkah iṅ avakta <space type="binding-hole"/> ta si kkramanya, ra:ganta tan patəpi yeka bañunya majro, dveṣanta mevəh ika ⌈
+   <lb n="5v4"/>teka karaṁnya dūrgga, mohanta vibrama sumək ya tikombaka:gə̄ṁ // damba <space type="binding-hole"/> nta tan pahaməṅan krūramīṇa rodra, Irṣya:nta sarvvaviṣa sarppa viśeṣa maṇḍi, ma:tsar
+               
+   <lb n="6r1"/>yya yeka talatəknya sukət mahevəḥ, la:van tikaṁ trimala yeka ha <space type="binding-hole"/> rusnya ma:dr̥s· // la:van· rajaḥ tamah ika: taṅ alusnya nitya, kroḍanta ye
+   <lb n="6r2"/> ka ta rivut· marivuṁ haṅinya, pañcendriya:ṅkəna hudanya bharat hali <space type="binding-hole"/> syus·, jña:nanta mūda raṣaniṁ bañu ṭikta lumra // jña:nanta ḍīra ya ta paṅhilaṅa:ṁ 
+   <lb n="6r3"/> mahevəḥ, prajña:nta yeka matəmaḥ kṣirasa:gara:lva:, yekan putər ta <space type="binding-hole"/> ya riṅ adri mala:viśeṣa, na:ṅ liṅgacetya himava:n jina maṇḍala:nik· // teka:ṁ
+   <lb n="6r4"/> gaṇitri ya ta sarbvajinan patiṅkaḥ, yaṅkən vatək hyaṅ amutər tikaṅ adrili <space type="binding-hole"/> ṅga, na:ṁ sutra teki paramottamabudḍisattva, ka:ṅkənya na:ga pamutərnikanaṅ vatə
+               
+<fw place="left" n="6v">6</fw>
+   <lb n="6v1"/> k hyaṁ // henak pva denta mamutər kramaniṁ gaṇitri, vijña:na pa:ramita ⌈<space type="binding-hole"/> teki vilaṁnya śūnya, hyaṁ śrī ya ta:ṅgahaniran· rumuhun ta vəlkaḥ, ka:ṅkən ta pa:vaka
+   <lb n="6v2"/> niṅ a:mr̥ta meḥ katəmva // henak pva nirviṣayaniṁ kṣiracitta śūnya, ba:yu triratna humənəṁ sthiti hekata:na, yeka: ta darśśaṇa bhaṭa:ra viśeṣa
+   <lb n="6v3"/> budḍa, ma:ya: prabha:svara sira: niraka:radeya // sakṣat sireka ta <space type="binding-hole"/> maha:mr̥ta śudḍa śucci, ndaḥ yeka taṁ pana sirerika sa:risa:ri, byakta: luput·
+   <lb n="6v4"/> sira sakeṁ maraṇa:tivr̥dḍa, byaktekaṅ aṣṭaguṇa tan sah avas panūtnya: // na:han ta tiṅkah ika aṅga samudratatva, tiṅkaḥhikaṁ tanu mahendranihan·
+   
+   <lb n="7r1"/>kramanya, nda:n ūttama:ṅga ya ta śr̥ṅganiṅ aṅgapa:rvva,pa:danta pa:danikaṅ adri <space type="binding-hole"/> śarīratatva // ṣaḍva:rgga dūrgama sukətnya juraṁnya majro, moṁ siṅha ba:rvaṅ ika
+   <lb n="7r2"/>naṁ praṇala:tirodra, dūrśīlatr̥ṣṇa paraṅan hana sarppa maṇḍi, mvaṁ taṁ raja<space type="binding-hole"/>ḥ tama{ui ha}danya gəlap halisyus· // yeka: paṅa:śrayananiṁ maṅusir kasidḍan·, bəntar 
+   <lb n="7r3"/>babad· sukət ikaṁ hati riṁ kaḍīra:n·, vruḥteṁ maha:paramatatva vadūṁ tati <space type="binding-hole"/>kṣṇa:, vijña:na ḍarmma tarukan· pagagan ta donya // ndaḥ yeka tunvani tayeṅ smr̥
+   <lb n="7r4"/>ti sūryyatīkṣṇa:, byaktan· gəsəṁ saha:naniṁ sukət iṁ śarīra, sampun pva nirmma<space type="binding-hole"/>la gəsəṁ gələh iṁ svacitta, maṅgəḥ tayan· vuluku riṁ brata pūja mantra // sampun pva tandu
+               
+<fw place="left" n="7v">7</fw>
+   <lb n="7v1"/>rana yogga lavan sama:ḍi, raṅka:tta yeṁ kuśalavūlvani śīla yukti, jña:na<space type="binding-hole"/>:həniṁ ya maṅənə̄ṁ: divakantacandra, byakta:ṁ jina:smr̥ti tuvuḥnika sa:svata:gə̄ṁ // byakta: 
+   <lb n="7v2"/>phala: pva ri katona bhaṭa:ra budḍa, maṅgəḥ sireka paṅaranta makopajīva<space type="binding-hole"/>, henak pva denta masamūha lavan bhaṭa:ra, sidḍeka sidḍa kaharan· təkaniṁ kamo
+   <lb n="7v3"/>kṣan //<g type="circleCurve"/> // Irika ta karaṇanya:ya ndan kavruhi rumuhun·, nihan i<space type="binding-hole"/>ki phala maṅgəḥ na:han kavruhi vəkasan·, krama ni tanu bhaṭa:ra hyaṁ budḍa:ṅibəki sara
+   <lb n="7v4"/>t·,Agaṇal alit anūkṣma:ṣṭeśvaryeccanira suka // kunaṅ ikiṅ inuca:<space type="binding-hole"/>p· doniṁ don ta:ṁ mucap irika:, Apan ika təka pə̄ḥniṁ ka:ryya: mvaṁ karaṇa pinet·, nira
+               
+   <lb n="8r1"/>varaṇa nikin ton· lvirniṁ jña:na niralaya, ApaR̥ək ika sakeṁ śrī sarvajña:<space type="binding-hole"/> saha mavəkas· // <g type="circleCurve"/> // puniki kakavin·, budḍa maha:yaṇa// <g type="circleCurve"/> //babo
+   <lb n="8r2"/> nñane, kasurat riṁ bloṁ sukuniṁ gunuṁ hyaṁ piṅgan·, dr̥ven paḍaṇḍa: vayan· <space type="binding-hole"/>jlaṇṭik· riṁ budḍa:kliṁ. duk puput kasurat· riṁ dina, bu, va, mrakiḥ, titi, paṁ, piṁ, 
+   <lb n="8r3"/>18, śaśiḥ, ka, 6, raḥ.<g type="circleCurve"/>. təṁ, 5, Iśaka, 1858. varṣa:niṁ bumi, riṁ<space type="binding-hole"/>batur vahusyagan· husan sorok· // <g type="circleCurve"/> // puput sinurat manḍun· riṁ rahina
+   <lb n="8r4"/>,śu, U, varakulavu, thithi, taṁ, piṁ, 8, śaśiḥ kasaṅa, raḥ, 2, taṁ, 1, I<space type="binding-hole"/>śaka, 1912. taṅgal maśehi, 22, pebrohari, 1991.<g type="circleCurve"/>.sinura
+
+<fw place="left" n="8v">8</fw>
+    <lb n="8v1"/>t holiḥ saṅapanlaḥ, hi ktut səṅod·, riṁ deśa pidpid kaler davuḥ margga<space type="binding-hole"/>, vargga pasək·, kadeśahan pidpid·, kacamatan habaṁ, kabhupaten karaṅhasəm·// <g type="circleCurve"/> // <g type="circleCurve"/> //
+            </ab>
+        </body>
+    </text>
+</TEI>
