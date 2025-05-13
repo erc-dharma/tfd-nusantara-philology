@@ -2,12 +2,12 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksaGuru" xml:lang="eng">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="siksaguru" xml:lang="eng">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">Śikṣā Guru</title>
-                <title type="alt">The Instructions of the Teacher</title>
+            	<title type="editorial">Śikṣā Guru, or The Instructions of the Teacher: Digital Critical Edition</title>
+            	<title type="original">Śikṣā Guru</title>
                 <respStmt>
                     <resp>author of digital edition</resp>
                     <persName ref="part:adgu">
@@ -21,25 +21,20 @@
                 <idno type="filename">DHARMA_CritEdSiksaGuru.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
-                        <p>This work is licensed under the Creative Commons Attribution 4.0 Unported
-                            Licence. To view a copy of the licence, visit
-                            https://creativecommons.org/licenses/by/4.0/ or send a letter to
-                            Creative Commons, 444 Castro Street, Suite 900, Mountain View,
-                            California, 94041, USA.</p>
-                        
+                        <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
                     </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
-              
                 <listWit>
                     <witness xml:id="A">
                         <msDesc>
                             <msIdentifier>
                                 <settlement>Jakarta</settlement>
                                 <institution>Perpustakaan Nasional Republik Indonesia</institution>
-                                <repository>Koleksi Naskah Nusantara</repository>                                <idno>L 642</idno>
+                                <repository>Koleksi Naskah Nusantara</repository>                                
+		   <idno>L 642</idno>
                             </msIdentifier>
                             <msContents>
                                   <msItem>
@@ -51,14 +46,12 @@
                                     folios, four lines.</p>
                                     <handDesc>
                                         <handNote xml:id= "SiGuA_H1" scriptRef="class:83241 maturity:83215"><!-- values to be filled in -->
-			                                     <p>The only hand of the manuscript, black ink, Old West Javanese quadratic script.</p>
+			           <p>The only hand of the manuscript, black ink, Old West Javanese quadratic script.</p>
                                          </handNote>
                                       </handDesc>
                             </physDesc>
                             <history>
-                                <p>The manuscript is from Cilegon, Tarogong District, Garut, as reported in <bibl><ptr target="bib:ROD1914"/><citedRange unit="item">208</citedRange><citedRange unit="page">71-72</citedRange></bibl>.
-                                  The manuscript was copied in the village Mahapavitra, on the western slope of a place called Kaləpasən,
-                                  possibly in the Śaka 1420s, i.e., near the end of the 15th century CE.</p>
+                                <p>The manuscript is from Cilegon, Tarogong District, Garut, as reported in <bibl><ptr target="bib:ROD1914"/><citedRange unit="item">208</citedRange><citedRange unit="page">71-72</citedRange></bibl>. The manuscript was copied in the village Mahapavitra, on the western slope of a place called Kaləpasən,  possibly in the Śaka 1420s, i.e., near the end of the 15th century CE.</p>
                             </history>
                         </msDesc>
                     </witness>
@@ -75,15 +68,9 @@
                                 </msItem>
                             </msContents>
                             <physDesc>
-                                <objectDesc><p>The manuscript consists of 41 gebang leaves, each measuring 22.6
-                                    × 4 cm, stored in a red wooden box, four lines per folio. The pages are
-                                    numbered 1–40 by the copyist, but there are some number- ing
-                                    errors: 0 instead of 10 (fol. 11v), 6 instead of 16 (fol. 17v),
-                                    10 instead of 20, 30 instead of 40. In addition, among these 40
-                                    pages, there is no page 33; after page 16 the manuscript jumps
-                                    to 19, back to number 17, then 18. However, the text is coherent
-                                    in this arrangement.</p>
-</objectDesc>                                <handDesc>
+                                <objectDesc><p>The manuscript consists of 41 gebang leaves, each measuring 22.6 × 4 cm, stored in a red wooden box, four lines per folio. The pages are numbered 1–40 by the copyist, but there are some numbering errors: 0 instead of 10 (fol. 11v), 6 instead of 16 (fol. 17v), 10 instead of 20, 30 instead of 40. In addition, among these 40 pages, there is no page 33; after page 16 the manuscript jumps to 19, back to number 17, then 18. However, the text is coherent in this arrangement.</p>
+</objectDesc>                                
+		<handDesc>
                                     <handNote xml:id= "SiGuB_H1" scriptRef="class:83241 maturity:83215"><!-- values to be filled in -->
                                     </handNote>
                                 </handDesc>
@@ -105,31 +92,16 @@
                                     <colophon><quote type="diplomatic" xml:lang="osn-Latn">Iti siksa guru ṅaranira, sam·pun təlas tinulis· riṁ batur riṁ visa kasinoman· luraḥ kamulan·, dya saṁṅ aparab·, yaṁ buyut· <del rend="ui">ra</del><space type="binding-hole"/>sida nurut·, pukulun· malahpaḥh iṅapura, punaṁ sasṭa tan parupa, tan pat<unclear>u</unclear>t· ri varna sas<unclear>ṭa</unclear> tan papa:ruṁgu riṁṅ akṣara, loter bəkcek· tan· pavastu, kaya labəkeṁ yuyu cinacaṁ, makadi kuraṁ Ḷviḥ riṅ akṣara, pari<unclear>yata</unclear> ṅaḶviha, halvaṅana, pukulan dere vikan ṣira saṅ anulis· Apan a:tuk ṣinanaU, luṁhuṁ pva maniliḥ tan pvaliḥ, samaṁkana kahuvusan· <gap reason="lost" unit="character" quantity="2"/>ka, Oṁ sarasvati maya nama svahaḥ,,/ø//I,,, sa,,,ka//Ø//</quote></colophon>
                                 </msItem>
                             </msContents>
-                            
                             <physDesc>
-                                <objectDesc><p>The manuscript of 23 gebang palm leaves, measuring 35 × 3.3 cm,
-                                    each of which consists of 4 lines of writing. Most of the leaves
-                                    are poorly damaged at the edges.</p></objectDesc>
+                                <objectDesc><p>The manuscript of 23 gebang palm leaves, measuring 35 × 3.3 cm, each of which consists of 4 lines of writing. Most of the leaves are badly damaged at the edges.</p>
+		</objectDesc>
                                 <handDesc>
                                     <handNote xml:id= "SiGuC_H1" scriptRef="class:83241 maturity:83215">
                                     </handNote>
                                 </handDesc>
-                                
                             </physDesc>
                             <history>
-                                <p>The manuscript is wrapped in a
-                                    kind of wooden box bearing the words “ms. Merbaboe”, indicating
-                                    its provenance. Based on the record, it originated from Gedakan
-                                    (old name of present-day Kedakan), Grabag dis- trict, Magelang,
-                                    Central Java, on the northwest slope of Mount Merbabu. This
-                                    manuscript comes from the gift of Mr. H. D. Levyssohn Norman, a
-                                    Dutch politician who had served as secretary to the
-                                    governor-general of the Dutch East Indies in 1869–1883, as well
-                                    as an honorary member of the Batavian Society for Arts and
-                                    Sciences (BGKW), as reported in <bibl><ptr target="bib:NBG01_1862-1863"/><citedRange>71 and 111</citedRange></bibl>; <bibl><ptr target="bib:Hoepermans1914_01"/><citedRange>152</citedRange>
-                                    </bibl>; <bibl>
-                                        <ptr target="bib:ROD1914"/>
-                                        <citedRange>240</citedRange>
+                                <p>The manuscript is wrapped in a kind of wooden box bearing the words “ms. Merbaboe”, indicating  its provenance. Based on the record, it originated from Gedakan (old name of present-day Kedakan), Grabag district, Magelang, Central Java, on the northwest slope of Mount Merbabu. This manuscript comes from the gift of Mr. H. D. Levyssohn Norman, a Dutch politician who had served as secretary to the governor-general of the Dutch East Indies in 1869–1883, as well as an honorary member of the Batavian Society for Arts and Sciences (BGKW), as reported in <bibl><ptr target="bib:NBG01_1862-1863"/><citedRange>71 and 111</citedRange></bibl>; <bibl><ptr target="bib:Hoepermans1913_01"/><citedRange>152</citedRange></bibl>; <bibl><ptr target="bib:ROD1914"/><citedRange>240</citedRange>
                                     </bibl>).</p>
                             </history>
                         </msDesc>
@@ -138,9 +110,10 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc>
-                <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
-            </projectDesc>
+        	<projectDesc>
+        		<p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC Project DHARMA</ref>.</p>
+        		<p>The edition has been carried out as part of the author’s research towards a PhD thesis defended on the 26th of May, 2023 at the École Pratique des Hautes Études, Paris. This research was part of the project DHARMA, which received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+        	</projectDesc>
             <editorialDecl>        
                 <correction>
                     <p/>
@@ -167,11 +140,11 @@
             </langUsage>
         </profileDesc>
         <revisionDesc>
-            <change who="part:adgu" when="2022-06-24">Structuring metadata header</change>
-            <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of
-                contents</change>
-            <change when="2021-09-27" who="part:axja">Adding the colophon template</change>
-            <change when="2020-10-25" who="part:adgu">Initial encoding</change>
+            <change who="part:argr" when="2025-05-13" status="draft">Modified teiHeader</change>
+            <change who="part:adgu" when="2022-06-24" status="draft">Structuring metadata header</change>
+            <change who="part:axja" when="2021-12-15" status="draft">Adding the @xml:id to obtain a table of contents</change>
+            <change when="2021-09-27" who="part:axja" status="draft">Adding the colophon template</change>
+            <change when="2020-10-25" who="part:adgu" status="draft">Initial encoding</change>
         </revisionDesc>
     </teiHeader>
 
