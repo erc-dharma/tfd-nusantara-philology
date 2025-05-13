@@ -2,7 +2,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="arjunaVijaya">
     <teiHeader>
         <fileDesc>
         	<titleStmt>
@@ -121,6 +121,7 @@
             </langUsage>
         </profileDesc>
         <revisionDesc>
+        	<change when="2025-05-13" who="part:argr">adjusted meter names to prosodicPatterns</change>
         	<change when="2025-05-12" who="part:argr">added teiHeader and bibliography</change>
         	<change when="2025-05-12" who="part:axja">conversion of text to TEI following DHARMA EGC v2</change>
         </revisionDesc>
@@ -131,7 +132,7 @@
 			    
 <div><ab type="invocation">avighnam astu*.</ab></div>
 
-<div type="canto" n="1" met="śārdūlavikrīdita">
+<div type="canto" n="1" met="śārdūlavikrīḍita">
 <!--Śārdūlavikrīdita:  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | =-->
 <lg n="1">
 <l n="a">om śrī parvatarājadeva, huripiṅ sarvapramāṇeṅ jagat;</l>
@@ -333,7 +334,7 @@
 	<!-- <app>(c) E2 -āṅləs.</app> -->
 </lg>
 </div>
-<div type="canto" n="3" met="kilayu manədəṅ">
+<div type="canto" n="3" met="kilayu manəḍəṅ">
 <!--Kilayu manədəṅ:  - - ~ | ~ ~ ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | =-->
 <lg n="1">
 <l n="a">lvir meru sakala haləpiṅ kaḍatvan, atibhīṣaṇa kagirigiri;</l>
@@ -521,7 +522,7 @@
 	<!-- <app>(a) y maṅkā liṅ saṅ daśāsya ri vəkasan.</app> -->
 </lg>
 </div>
-<div type="canto" n="5" met="vasantatilaka">
+<div type="canto" n="5" met="basantatilakā">
 <!--Vasantatilaka:   - - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =-->
 <lg n="1"><l n="a">dhūmrākṣa vīra makapaṅharəp iṅ lumampah,</l><l n="b">muṅgv iṅ rathāṅgamaṇi bhāsvara kātarā ya;</l><l n="c">morṇāsavit ya masəkartaji ratna muñcar,</l><l n="d">khaḍgāstra tīkṣṇa ginəgə̄nya sudīpta malvā.</l>
 </lg>
@@ -812,9 +813,13 @@
 <!--<app>	(a) z katrag kadi ta ya: kagyat təmahana; (b) A hika; v maṅka, y molah.</app>-->
 	</lg>
 </div>
-<div type="canto" n="9" met="madhulenda">
+<div type="canto" n="9" met="madhulenda"><!-- or maduliṇḍa? see canto 57 -->
 <!--Madhulenda:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - -->
-<lg n="1"><l n="a">səḍəṅnira silih pupuh silih arug* pragalbha masuve sirāpraṅ arukət,</l><l n="b">nda tan hana kacidra rakva, paḍa śakti lāghava mahāprabhāva riṅ ayun,</l><l n="c">rika prabhu daśāsya śīghran uməsat mareṅ gagana mukṣa tan patuduhan,</l><l n="d">pətəṅ ḍəḍət ikaṅ svarājya sumaput təkapnira lavan prahāra kumusuh.</l>
+<lg n="1">
+<l n="a">səḍəṅnira silih pupuh silih arug* pragalbha masuve sirāpraṅ arukət,</l>
+<l n="b">nda tan hana kacidra rakva, paḍa śakti lāghava mahāprabhāva riṅ ayun,</l>
+<l n="c">rika prabhu daśāsya śīghran uməsat mareṅ gagana mukṣa tan patuduhan,</l>
+<l n="d">pətəṅ ḍəḍət ikaṅ svarājya sumaput təkapnira lavan prahāra kumusuh.</l>
 <!--<app>	(a) F paḍāsilih pupuh arug.</app>-->
 	</lg>
 <lg n="2"><l n="a">gəyuh manah i saṅ dhanendra vulaṅun, hilaṅ tuturireṅ caturdik umuṅən*;</l>
@@ -830,7 +835,7 @@
 <!--<app>	(d) F suməḍut.</app>-->
 	</lg>
 </div>
-<div type="canto" n="10" met="vasantatilaka">
+<div type="canto" n="10" met="basantatilakā">
 <!--Vasantatilaka:  - - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =-->
 <lg n="1"><l n="a">'dhik hāh ta koṅ asu dhaneśvara deva pāpa;</l><l n="b">bhoh, bhukti yeku təmahiṅ paraninda riṅ rāt,</l><l n="c">gə̄ṅ bhakti riṅ sura, sadālpa rikeṅ suyakṣa,</l><l n="d">kədv āharəp malap ikaṅ kaḍaton ri* ləṅkā.</l>
 <!--<app>	(d) z malapa ta nagara ri.</app>-->
@@ -1052,9 +1057,13 @@
 <!--<app>	(a) E2z doṣa; (d) F makarṣa, Bz makarta.</app>-->
 	</lg>
 </div>
-<div type="canto" n="13" met="pṛthvītala">
+<div type="canto" n="13" met="pr̥thvītala">
 <!--Pṛthvītala:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ - - | ~ =-->
-<lg n="1"><l n="a">nahan liṅira mārdaveki*; sumahur ta saṅ rāvaṇa:</l><l n="b">'ibuṅku, kita hayva maṅkana; niniṅku, mūḍhādhama* </l><l n="c">pitovi ri kədə̄nta rakva pakasādhya saṅ hyaṅ hari </l><l n="d">ikaṅ rumabhase tuvuhta makamuṣṭyaniṅ valkalī,</l>
+<lg n="1">
+<l n="a">nahan liṅira mārdaveki*; sumahur ta saṅ rāvaṇa:</l>
+<l n="b">'ibuṅku, kita hayva maṅkana; niniṅku, mūḍhādhama* </l>
+<l n="c">pitovi ri kədə̄nta rakva pakasādhya saṅ hyaṅ hari </l>
+<l n="d">ikaṅ rumabhase tuvuhta makamuṣṭyaniṅ valkalī,</l>
 	<!-- <app>(a) z mardaveka; (b) y mūḍha-: suta-.</app> -->
 </lg>
 <lg n="2"><l n="a">apan rasika deva hīna putus iṅ mahāduryaśa;</l>
@@ -1299,9 +1308,13 @@
 <!--<app>	(a) q gəntər.</app>-->
 	</lg>
 </div>
-<div type="canto" n="19" met="praharṣiṇi">
+<div type="canto" n="19" met="praharṣiṇī">
 <!--Praharṣiṇi:  - - - | ~ ~ ~ | ~ - ~ | - ~ - | =-->
-<lg n="1"><l n="a">byātītan pəjahira saṅ narendra riṅ praṅ,</l><l n="b">dhvastekaṅ bala para nātha* tan hanāvyat;</l><l n="c">rəp, śīghrāṅlilir ika saṅ narendra jīvan,</l><l n="d">krodhānāpatha tumudiṅ ri saṅ daśāsya:</l>
+<lg n="1">
+<l n="a">byātītan pəjahira saṅ narendra riṅ praṅ,</l>
+<l n="b">dhvastekaṅ bala para nātha* tan hanāvyat;</l>
+<l n="c">rəp, śīghrāṅlilir ika saṅ narendra jīvan,</l>
+<l n="d">krodhānāpatha tumudiṅ ri saṅ daśāsya:</l>
 	<!-- <app>(b) y paravasa.</app> -->
 </lg>
 <lg n="2"><l n="a">‘ai koṅ* kuprabhu daśavaktra tucchabuddhi,</l>
@@ -1317,7 +1330,7 @@
 	<!-- <app>(a) F lumənḍā.</app> -->
 </lg>
 </div>
-<div type="canto" n="20" met="jagatnātha">
+<div type="canto" n="20" met="jagadnātha">
 <!--Jagatnātha:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ ~-->
 <lg n="1"><l n="a">ta ṅeh yan ucapən sapolahikanaṅ daśamukha kalavan balāsura,</l><l n="b">sukhāmbək atighora, nora* juga tan hilaṅa sahananiṅ purāntara. </l><l n="c">saṅ arjuna sahasrabāhu caritan, prabhu paramaviśeṣa digjaya,</l><l n="d">sireka sinivīṅ* mahispati, kaḍatvanira kadi maheśvarālaya.</l>
 	<!-- <app>(b) C tapva; (d) BFz sinivī.</app> -->
@@ -1442,7 +1455,7 @@
 <!--<app>	(a) F -āṅunduli, y aṅuṅkuli.</app>-->
 </lg>
 </div>
-<div type="canto" n="23" met="vasantatilaka">
+<div type="canto" n="23" met="basantatilakā">
 <!--Vasantatilaka:  - - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =-->
 <lg n="1"><l n="a">ṅkāne ruhurnika tapovana saṅ maharṣi</l><l n="b">mvaṅ taṅ paṅubvanan, i pārśvanikaṅ gagākveh;</l><l n="c">ramyaṅ mahantən i samīpanike ḍukuhnya,</l><l n="d">vvay mumbul* ardha ri harəpnya mahātiśuddha.</l>
 	<!-- <app>(d) y mumbul vvay.</app> -->
@@ -1536,7 +1549,11 @@
 </div>
 <div type="canto" n="26" met="suvadanā">
 <!--Suvadanā:  - - - | - ~ - | - ~ ~ | ~ ~ ~ | ~ - - | - ~ ~ | ~ =-->
-<lg n="1"><l n="a">ambək śrī nātha harṣāsəmu jəṅər i təkapnyānraṅ purasabhā,</l><l n="b">mvaṅ saṅ śrī rājapatnī sira vahu tumurun saṅkeṅ ratha maṇik;</l><l n="c">ndan sakvehkvehnikaṅ* vvaṅ ri daləmika marək sampun masaniga,</l><l n="d">tan sah ramyāṅiriṅ rakva lakunira mareṅ dharmānuli ləṅəṅ,</l>
+<lg n="1">
+<l n="a">ambək śrī nātha harṣāsəmu jəṅər i təkapnyānraṅ purasabhā,</l>
+<l n="b">mvaṅ saṅ śrī rājapatnī sira vahu tumurun saṅkeṅ ratha maṇik;</l>
+<l n="c">ndan sakvehkvehnikaṅ* vvaṅ ri daləmika marək sampun masaniga,</l>
+<l n="d">tan sah ramyāṅiriṅ rakva lakunira mareṅ dharmānuli ləṅəṅ,</l>
 	<!-- <app>(c) y sakveh nikanaṅ.</app> -->
 </lg>
 <lg n="2"><l n="a">tan varṇan, śīghra sampun sira kahalivat iṅ dvārāparimita;</l>
@@ -1557,30 +1574,41 @@
 	<!--<app>(a) AB bho bho; C -karakiṅ dharma n parimita; (d) ADv -bodhyaśrimudrā-.</app>-->
 </lg>
 </div>
-<div type="canto" n="27" met="vasantatilaka">
+<div type="canto" n="27" met="basantatilakā">
 <!--Vasantatilaka:  - - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =-->
-<lg n="1"><l n="a">akṣobhya pūrva sira teki bhaṭāra rudra,</l><l n="b">hyaṅ ratnasambhava ri dakṣiṇa dhātṛdeva,</l><l n="c">saṅ śry āmitābha sira pāścima deva māha,* </l><l n="d">śry āmoghasiddhi sira lor harimūrtideva*.</l>
+<lg n="1">
+<l n="a">akṣobhya pūrva sira teki bhaṭāra rudra,</l>
+<l n="b">hyaṅ ratnasambhava ri dakṣiṇa dhātṛdeva,</l>
+<l n="c">saṅ śry āmitābha sira pāścima deva māha,*</l>
+<l n="d">śry āmoghasiddhi sira lor harimūrtideva*.</l>
 	<!-- <app>(c) F mahādeva; (d) y Haridevatulya.</app> -->
 </lg>
-<lg n="2"><l n="a">ndah kantənanya, haji, tan hana bheda* saṅ hyaṅ:</l>
+<lg n="2">
+<l n="a">ndah kantənanya, haji, tan hana bheda* saṅ hyaṅ:</l>
 <l n="b">hyaṅ buddha rakva kalavan śiva rājadeva,</l>
 <l n="c">kālih sameka* sira saṅ pinakeṣṭi dharma,</l>
 <l n="d">riṅ dharma sīma tuvi yan ləpas advitīya.</l>
 	<!-- <app>(a) y deva; (c) y sireki.</app> -->
 </lg>
 </div>
-<div type="canto" n="28" met="vaṅsastha">
+<div type="canto" n="28" met="vaṅśastha">
 <!--Vaṅsastha:  = - ~ | - - ~ | ~ - ~ | - ~ =-->
-<lg n="1"><l n="a">nihan tikaṅ* dharma ləpas ya tojarən:</l><l n="b">bhūdāna* parnahnya təkapni saṅ prabhu,</l><l n="c">yinogyakən riṅ ṛṣi śaiva saugata,</l><l n="d">naivedya donyan pakajīvitaṅ vaneh.</l>
+<lg n="1">
+<l n="a">nihan tikaṅ* dharma ləpas ya tojarən:</l>
+<l n="b">bhūdāna* parnahnya təkapni saṅ prabhu,</l>
+<l n="c">yinogyakən riṅ ṛṣi śaiva saugata,</l>
+<l n="d">naivedya donyan pakajīvitaṅ vaneh.</l>
 <!--<app>	(a) A tikā; (b) F bhūṭāna. </app>-->
 </lg>
-<lg n="2"><l n="a">kunaṅ tikaṅ dharma hajīki yan sinuk,*</l>
+<lg n="2">
+<l n="a">kunaṅ tikaṅ dharma hajīki yan sinuk,*</l>
 <l n="b">prāpteṅ mahāvaṅśa satūsni saṅ prabhu;</l>
 <l n="c">sameka dharmānupameṅ ləpas sinuk,* </l>
 <l n="d">dibyottamaṅ dharma, viśeṣa riṅ sarāt.</l>
 	<!-- <app>(a) A tinūt; (c) F vinūk.</app> -->
 </lg>
-<lg n="3"><l n="a">apan jugā rehnira saṅ prabhūttama,</l>
+<lg n="3">
+<l n="a">apan jugā rehnira saṅ prabhūttama,</l>
 <l n="b">ramyāmaṅan mvaṅ suta vandhu len ghara;* </l>
 <l n="c">muvah tikaṅ vīrabalan vineh səkul,</l>
 <l n="d">donyan surakṣeki ya hetuniṅ maveh*.</l>
@@ -1589,17 +1617,22 @@
 </div>
 <div type="canto" n="29" met="śārdūlavikrīḍita">
 <!--Śārdūlavikrīḍita:  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | =-->
-<lg n="1"><l n="a">ndā tan maṅkana rakva de saṅ amaṅun dānānurāgeṅ jagat! </l><l n="b">tan saṅkeṅ hana kāraṇanya vinahan bhojāna māṅsāpəṭar*,</l><l n="c">lūd hīnālpaguṇārdha sādhu katunan byāpāra doniṅ vineh;</l><l n="d">saṅ sambe rika rakva dibya kahiḍəp saṅ hyaṅ jagatkāraṇa.</l>
+<lg n="1">
+<l n="a">ndā tan maṅkana rakva de saṅ amaṅun dānānurāgeṅ jagat!</l>
+<l n="b">tan saṅkeṅ hana kāraṇanya vinahan bhojāna māṅsāpəṭar*,</l>
+<l n="c">lūd hīnālpaguṇārdha sādhu katunan byāpāra doniṅ vineh;</l>
+<l n="d">saṅ sambe rika rakva dibya kahiḍəp saṅ hyaṅ jagatkāraṇa.</l>
 	<!-- <app>(b) q pətar.</app> -->
 </lg>
-<lg n="2"><l n="a">nāhan hetuni saṅ narendra riṅ uśānāṅgə̄ṅ sudharmeṅ para,</l>
+<lg n="2">
+<l n="a">nāhan hetuni saṅ narendra riṅ uśānāṅgə̄ṅ sudharmeṅ para,</l>
 <l n="b">āpan rakva mahātidāna vəkas iṅ kīrtīnucap saṅ viku,</l>
 <l n="c">tan sor deni kadibyaniṅ ratu matī* praṅ śūrasiṅheṅ ayun;</l>
 <l n="d">byakta svarga mahāviśeṣa katəmun* de śrī mahābhūpati.</l>
 <!--<app>	(c) Aq matīṅ; (d) E1 matəmun, E2 patəmun.</app>-->
 </lg>
 </div>
-<div type="canto" n="30" met="jagatnātha">
+<div type="canto" n="30" met="jagadnātha">
 <!--Jagatnātha:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ ~-->
 <lg n="1"><l n="a">nda hayva juga maṅkaneki kaharəpkv iri kita pinakeṣṭiniṅ hati:</l><l n="b">ndatan panuka* dharma kevala, tikaṅ huvus iki pahajə̄ṅ nareśvara;</l><l n="c">kitāmriha ri denya tan kaparahe* para, taləra* subhuktya saṅ viku. </l><l n="d">kabauddhan ika bauddha saṅ suṅana dharma kuṭikuṭi ləpas kaṣadpadan,</l>
 	<!-- <app>(b) y panuti; (c) F kaparaheṅ; y parata.</app> -->
@@ -1798,7 +1831,7 @@
 	<!-- <app>(d) ACq kuṅkuṅ i rumta.</app> -->
 </lg>
 </div>
-<div type="canto" n="33" met="jagatnātha">
+<div type="canto" n="33" met="jagadnātha">
 <!--Jagatnātha:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ ~-->
 <lg n="1"><l n="a">nahan rasani deny asambat alaṅə̄ tinulisakən i paṅhrət iṅ yaśa. </l><l n="b">nda tan huniṅanən gatinya; caritan nṛpati sira lavan nareśvarī,</l><l n="c">huvusnira haneṅ karaṅ garuḍavaktra sinaput i kalaṅvaniṅ səkar,</l><l n="d">baṅun məsata rakva rūpanira len kakakaka muliheṅ surālaya.</l>
 	<!--<app>(a) deny asambat &lt; denyāsambat</app>-->
@@ -2150,9 +2183,13 @@
 	<!--<app>(b) y puri.</app>-->
 </lg>
 </div>
-<div type="canto" n="41" met="śikharini">
+<div type="canto" n="41" met="śikhariṇī">
 <!--Śikharini:  ~ - - | - - - | ~ ~ ~ | ~ ~ - | - ~ ~ | ~ = -->
-<lg n="1"><l n="a">‘tuhankv induṅ, saṅ lvir hyaṅi ləṅəṅ i ləṅləṅniṅ udadhi,</l><l n="b">marāṅicchāṅantī jaja masəmu muṅgv iṅ karaṅ arəs;</l><l n="c">masaṅhub* romāvrāhirəṅ akila* kady ātəmaha rəm;</l><l n="d">kəḍapniṅ socānraṅ taṭit umətu saṅkeṅ* śaśadhara;</l>
+<lg n="1">
+<l n="a">‘tuhankv induṅ, saṅ lvir hyaṅi ləṅəṅ i ləṅləṅniṅ udadhi,</l>
+<l n="b">marāṅicchāṅantī jaja masəmu muṅgv iṅ karaṅ arəs;</l>
+<l n="c">masaṅhub* romāvrāhirəṅ akila* kady ātəmaha rəm;</l>
+<l n="d">kəḍapniṅ socānraṅ taṭit umətu saṅkeṅ* śaśadhara;</l>
 	<!-- <app>(c) F asaṅhub; AqF asila, By aśila; (d) CF saṅke.</app> -->
 </lg>
 <lg n="2"><l n="a">urojārjānraṅ nyū gaḍiṅ i təpiniṅ sāgara ləyəp;</l>
@@ -2204,7 +2241,7 @@
 	<!-- <app>(a) F inoṣṭa; Fy maṅde; (c) q paṅəbək; (d) C musir.</app> -->
 </lg>
 </div>
-<div type="canto" n="42" met="jagatnātha">
+<div type="canto" n="42" met="jagadnātha">
 <!--Jagatnātha:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ ~-->
 <lg n="1"><l n="a">byatīta, ri huvus daśāsya maṅalih maṅusir i hujuṅiṅ vukir maṇi,</l><l n="b">ḍatəṅ sahananiṅ balāsura kinon juməjəpa mahaseṅ vanāntara,</l><l n="c">makāśya sukhaśāraṇeka humatur ri* hananiṅ agave gəṅ iṅ bañu:</l><l n="d">‘saṅ arjuna sahasrabāhu pakanāma rasika ratu hehayottama.</l>
 <!--<app>	(c) ABCqv humatūr i. </app>-->
@@ -2283,7 +2320,7 @@
 	<!-- <app>(a) q sakṣepan, F saṅkṣepa.</app> -->
 </lg>
 </div>
-<div type="canto" n="45" met="vasantatilaka">
+<div type="canto" n="45" met="basantatilakā">
 <!--Vasantatilaka:  - - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =-->
 <lg n="1"><l n="a">yekāmaṅun halihalinkviki*, saṅ daśāsya,</l><l n="b">yar gə̄ṅ prabhaṅga ri siraṅ prabhu hehayāṅśa,</l><l n="c">āpan vidagdha tuvi śakti mahāprabhāva,</l><l n="d">tan sor dahat juga təkap madhusūdaneṅ praṅ.</l>
 	<!-- <app>(a) F halinalinkv.</app> -->
@@ -2394,7 +2431,7 @@
 	<!--<app>(b) y ya pva.</app>-->
 </lg>
 </div>
-<div type="canto" n="46" met="kilayu manədəṅ">
+<div type="canto" n="46" met="kilayu manəḍəṅ">
 <!--Kilayu manədəṅ:  - - ~ | ~ ~ ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | =-->
 <lg n="1"><l n="a">ahyā daśamukhan atigarjite* pamujiniṅ* bala paḍa suməgut,</l><l n="b">maṅkin guragaḍa kadi kālarudra* maharəp mamaṅana bhuvana. </l><l n="c">rəp, riṅ kṣaṇa vavaṅ atisaumya śobhita sahāstra muśala ginəgə̄,</l><l n="d">ṅkāne ruhur i valakaṅiṅ vimāna sira śīghran umibər i tavaṅ.</l>
 	<!-- <app>(a) A paḍa garjite, C hatigarjite papuji; (b) y Kālarūpa.</app> -->
@@ -2500,7 +2537,7 @@
 	<!-- <app>(b) F bhaktī.</app> -->
 </lg>
 </div>
-<div type="canto" n="48" met="vasantatilaka">
+<div type="canto" n="48" met="basantatilakā">
 <!--Vasantatilaka:  - - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - = -->
 <lg n="1"><l n="a">nojar daśāsya; sumahur* saṅ anindyamantrī,</l><l n="b">śūrātidhīra juga tan hana rəsniṅ ambək:</l><l n="c">‘ai rākṣasendra, huniṅan da təkapku mojar!</l><l n="d">tan śry arjunāku, tuvi tan vəka vandhuvarga.</l>
 	<!-- <app>(a) A sumavur.</app> -->
@@ -2529,7 +2566,7 @@
 <l n="d">brahmāstra konta hala len gada cakra bajra.’</l>
 </lg>
 </div>
-<div type="canto" n="49" met="indravajra">
+<div type="canto" n="49" met="indrabajra">
 <!--Indravajra:  - - ~ | - - ~ | ~ - ~ | - =-->
 <lg n="1"><l n="a">liṅ saṅ sumantrī paramātidhīra;</l><l n="b">sakrodha saṅ rāvaṇa kādbhutojar:</l><l n="c">‘dhik hah ta koṅ vīrabalātituccha,</l><l n="d">āḍācəmər, lvir tuhu vāni garva.</l>
 </lg>
@@ -2688,7 +2725,7 @@
 	<!--<app>(c) denikāṅ &lt; denikaṅ</app>-->
 </lg>
 </div>
-<div type="canto" n="51" met="śardūlavikrīḍita">
+<div type="canto" n="51" met="śārdūlavikrīḍita">
 <!--Śardūlavikrīḍita:  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">maṅkin ghūrṇita tekanaṅ vvil alayū; krodhaṅ mahārākṣasa,</l>
@@ -2770,9 +2807,13 @@
 	<!-- <app>(a) C papupuh; (b) y ya rəmuk.</app> -->
 </lg>
 </div>
-<div type="canto" n="52" met="śikharinī">
+<div type="canto" n="52" met="śikhariṇī">
 <!--Śikharinī:  ~ - - | - - - | ~ ~ ~ | ~ ~ - | - ~ ~ | ~ =-->
-<lg n="1"><l n="a">ya hetu śry āvaṅgādhipa sira lavan māgadhapati,</l><l n="b">muvah saṅ sodhāmrih riṅ iṣu paramānindya luməpas;</l><l n="c">nda tan kevran saṅ rāvaṇa manikəp aṅlvāṅi mamapas,</l><l n="d">sudhīrāmrəp, tan jrih rinəbut, amupuh sarvaniśita.</l>
+<lg n="1">
+<l n="a">ya hetu śry āvaṅgādhipa sira lavan māgadhapati,</l>
+<l n="b">muvah saṅ sodhāmrih riṅ iṣu paramānindya luməpas;</l>
+<l n="c">nda tan kevran saṅ rāvaṇa manikəp aṅlvāṅi mamapas,</l>
+<l n="d">sudhīrāmrəp, tan jrih rinəbut, amupuh sarvaniśita.</l>
 </lg>
 <lg n="2"><l n="a">prayatnāmbək śry āvantipura masikəp tomara murub,</l>
 <l n="b">vavaṅ duk pyah saṅ rāvaṇa, kasidəkuṅ tuṅgəṅ atəguh;</l>
@@ -2792,17 +2833,20 @@
 	<!--<app>(a) q pupuh.
 	(c) gupe pūh (em.) &lt; gupəpu</app>-->
 </lg>
-<lg n="5"><l n="a">samaṅkojar saṅ rāvaṇa guragaḍa lvir gəlap ahə̄m:</l>
+<lg n="5">
+<l n="a">samaṅkojar saṅ rāvaṇa guragaḍa lvir gəlap ahə̄m:</l>
 <l n="b">‘nda paṅlampū koṅ alpaguṇa, mamapag vūkku riṅ ayun,</l> 
 <l n="c">arah, sambat tekiṅ gumavay i tuvuhmv iṅ janapada!</l> 
 <l n="d">aḍā, lvāmbəkmu, ndin luputamu təkapkv iṅ pabharatan?’</l>
 </lg>
-<lg n="6"><l n="a">nahan liṅ saṅ yakṣādhipa, maṅadu minde narapati,</l>
+<lg n="6">
+<l n="a">nahan liṅ saṅ yakṣādhipa, maṅadu minde narapati,</l>
 <l n="b">rəmuk syūh bəntar karva śirahira, rahnyotək uməsat;</l>
 <l n="c">vimūrchālək saṅ siṅhala pəjah i jə̄ṅ saṅ daśamukha,</l>
 <l n="d">kaliṅgekī sampun dinukakənireṅ arjunabala.</l>
 </lg>
-<lg n="7"><l n="a">nda yekālahniṅ hehayabala, larut kabvaṅ atakut*,</l>
+<lg n="7">
+<l n="a">nda yekālahniṅ hehayabala, larut kabvaṅ atakut*,</l>
 <l n="b">vinuk pinrih; len māgadhapati murud mvaṅ para ratu,</l>
 <l n="c">umuṅsī priṅgāhritniṅ acala guhā groṅ* juraṅ arəs,</l>
 <l n="d">vaneh prāptoṅgvan saṅ ṛṣi, tinutikā deniṅ asura.</l>
@@ -2817,13 +2861,15 @@
 <l n="c">paṅher, hayva murud manahta maharəp matilara ri kaśaktiniṅ musuh,</l>
 <l n="d">āpan rakva pinetta rakva pinakeṣṭiniṅ apəniṅan iṅ raṇāṅgaṇa.</l>
 </lg>
-<lg n="2"><l n="a">maṅka pveki təkaṅ prayojana, baṅun salahaśa ri katəmvan iṅ hiḍəp;</l>
+<lg n="2">
+<l n="a">maṅka pveki təkaṅ prayojana, baṅun salahaśa ri katəmvan iṅ hiḍəp;</l>
 <l n="b">ndā tan dharmani saṅ pravīra makaṅūni manahanira saṅ nareśvara;</l>
 <l n="c">nirdon taṅ paramāstra tīkṣṇa ginəgə̄*, yadi vavanən ikan curī raṇa,</l>
 <l n="d">byaktekānəmu pāpa yan pəjaha jīvana* tuvi niyataṅ kapātaka.</l>
 	<!-- <app>(c) y rinəgəp; (d) A jīnava.</app> -->
 </lg>
-<lg n="3"><l n="a">saṅsiptanya sudhīrabuddhi gavayənta, gumavaya tapeṅ praṅ adbhuta,</l>
+<lg n="3">
+<l n="a">saṅsiptanya sudhīrabuddhi gavayənta, gumavaya tapeṅ praṅ adbhuta,</l>
 <l n="b">lagy āhoma ri madhyaniṅ samara: kuṇḍanika pagəlariṅ musuh ḍatəṅ,</l>
 <l n="c">kapvāvṛkṣa śarīra dibya, masavit dhvaja, macaru rathādivāhana,</l>
 <l n="d">sarvāstrāgni mahojvalāṅarabarab, rudhirajaladhi taila kottama,</l>
@@ -2837,10 +2883,15 @@
 </div>
 <div type="canto" n="54" met="sragdharā">
 <!--Sragdharā:  - - - | - ~ - | - ~ ~ | ~ ~ ~ | ~ - - | ~ - - | ~ - =-->
-<lg n="1"><l n="a">nā liṅ saṅ vīramantrī*; prasamasama masə̄ saṅ vatək hehayāṅśa,</l><l n="b">mvaṅ sakveh saṅ vatək bhūpati sama lumurug maṅrəṅə̄ vākya hetu. </l><l n="c">śry āvaṅgānindya riṅ praṅ* samaratha rinəgəp tandaṅ iṅ vīra rodra,</l><l n="d">līlāyajñeṅ raṇāṅgājapa sukha pəjahā deniraṅ yakṣanātha.</l>
+<lg n="1">
+<l n="a">nā liṅ saṅ vīramantrī*; prasamasama masə̄ saṅ vatək hehayāṅśa,</l>
+<l n="b">mvaṅ sakveh saṅ vatək bhūpati sama lumurug maṅrəṅə̄ vākya hetu.</l>
+<l n="c">śry āvaṅgānindya riṅ praṅ* samaratha rinəgəp tandaṅ iṅ vīra rodra,</l>
+<l n="d">līlāyajñeṅ raṇāṅgājapa sukha pəjahā deniraṅ yakṣanātha.</l>
 	<!-- <app>(a) y vīrarāja; (c) CE ri praṅ.</app> -->
 </lg>
-<lg n="2"><l n="a">hetunyaṅ yakṣa rodrāṅhudani śaravara mvaṅ triśūla pradīpta;</l>
+<lg n="2">
+<l n="a">hetunyaṅ yakṣa rodrāṅhudani śaravara mvaṅ triśūla pradīpta;</l>
 <l n="b">syuh bhraṣṭālvaṅ salakṣāṅ asurabala vinuk deniraṅ sūryaketu;</l>
 <l n="c">pakṣāmūke* siraṅ rāvaṇa maṅayatakən daṇḍa muṅsī rathāṅga,</l>
 <l n="d">krūrāmbək saṅ daśāsyāṅduk i jajanika saṅ bhūpatī, tan dva līna.</l>
@@ -2848,13 +2899,15 @@
 	(c) pakṣāmūke &lt; pakṣāmuke
 	(d) bhūpatī &lt; bhūpati</app>-->
 </lg>
-<lg n="3"><l n="a">ry aṅkat* śrī māgadhendrārdharatha ya kinəñəp tiṅkah iṅ vīra riṅ praṅ,</l>
+<lg n="3">
+<l n="a">ry aṅkat* śrī māgadhendrārdharatha ya kinəñəp tiṅkah iṅ vīra riṅ praṅ,</l>
 <l n="b">mvaṅ saṅ śry āvantināthātiratha taṅ inivə̄ tiṅkah iṅ dharmayuddha;</l>
 <l n="c">maṅgəh matye harəpniṅ dhvaja, ri təpi kunaṅ, karva pinrih riṅ ambək,</l>
 <l n="d">āpan byaktaṅ mahāpātaka katəmu, yadin matya riṅ ketupṛṣṭha.</l>
 	<!--<app>(a) ry aṅkat: y maṅka.</app>-->
 </lg>
-<lg n="4"><l n="a">nā hetu śrī narendrāmanah amahi masə̄ tan jrih iṅ śatru śakti;</l>
+<lg n="4">
+<l n="a">nā hetu śrī narendrāmanah amahi masə̄ tan jrih iṅ śatru śakti;</l>
 <l n="b">trus pyah śry āvantināthātəkən i dhanuhiran māti śūreṅ raṇāṅga,</l>
 <l n="c">lāvan saṅ māgadhendrādbhuta sama pinanah māti de saṅ daśāsya;</l>
 <l n="d">ndah* sampun pūrṇa pūjānira, tinut i larut saṅ vatək hehayāvrəg.</l>
@@ -2863,7 +2916,11 @@
 </div>
 <div type="canto" n="55" met="mattarāga">
 <!--Mattarāga:  - - ~ | - ~ ~ | ~ - ~ | - ~ ~ | ~ - ~ | - ~ ~ | ~ =-->
-<lg n="1"><l n="a">ṅkā saṅ suvandha sira vīra rota juga tan tumut kapalayū,</l><l n="b">līlāṅadəg sira ri rəṅganiṅ ratha, mahārathādi kinəñəp;</l><l n="c">dūran sirāharəpa matya tan panuta dharmaniṅ balapati;</l><l n="d">sampun sirāṅayatakən varāstra, śara dibya śakti luməpas</l>
+<lg n="1">
+<l n="a">ṅkā saṅ suvandha sira vīra rota juga tan tumut kapalayū,</l>
+<l n="b">līlāṅadəg sira ri rəṅganiṅ ratha, mahārathādi kinəñəp;</l>
+<l n="c">dūran sirāharəpa matya tan panuta dharmaniṅ balapati;</l>
+<l n="d">sampun sirāṅayatakən varāstra, śara dibya śakti luməpas</l>
 </lg>
 <lg n="2"><l n="a">śūlāstra bajra hala tomarāṅarabarab sake* taṅanira,</l>
 <l n="b">mvaṅ bāyubajra saha parvatāgni tutug iṅ nabhastala murub;</l>
@@ -2880,7 +2937,11 @@
 </div>
 <div type="canto" n="56" met="śārdūlavikrīḍita">
 <!--Śārdūlavikrīḍita:  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | =-->
-<lg n="1"><l n="a">yekā hetuni saṅ daśāsya masikəp sy āmoghaśakty ujvala*,</l><l n="b">pakṣāmə̄ka* ri saṅ suvandha kaharəp, sampun təkeṅ sārathi;</l><l n="c">ndā tan dvan dinuk iṅ triśūla, kumətug kaṅgək tibeṅ bhūtala;</l><l n="d">de rakryan mapatih tinūtnira, məsat saṅ rāvaṇātyadbhuta.</l>
+<lg n="1">
+<l n="a">yekā hetuni saṅ daśāsya masikəp sy āmoghaśakty ujvala*,</l>
+<l n="b">pakṣāmə̄ka* ri saṅ suvandha kaharəp, sampun təkeṅ sārathi;</l>
+<l n="c">ndā tan dvan dinuk iṅ triśūla, kumətug kaṅgək tibeṅ bhūtala;</l>
+<l n="d">de rakryan mapatih tinūtnira, məsat saṅ rāvaṇātyadbhuta.</l>
 	<!-- <app>(a) y tikṣṇojvala; (b) y kapvāmə̄ka.</app> -->
 </lg>
 <lg n="2"><l n="a">yekākrak, matəmah sahasra, maṅuhuh* saṅkeṅ* laṅit ghūrṇita,</l>
@@ -2913,56 +2974,70 @@
 	<!--<app>From 6c to 61.7c are missing in v.</app>-->
 </lg>
 </div>
-<div type="canto" n="57" met="madulinḍa">
+<div type="canto" n="57" met="madulinḍa"><!-- or madhulenda? see canto 9 -->
 <!--Madulinḍa:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ =-->
-<lg n="1"><l n="a">byatīta; ri pəjah suvandha, gumuruh dahut sahananiṅ pravīra malayū,</l><l n="b">makāsya para bhūminātha sira puh gəyuh təkap i śakti saṅ daśamukha. </l><l n="c">amogha ri surup hyaṅ arka, tinut iṅ sapih ya, karaṇanya rakva mahurip;</l><l n="d">daśāsya sira tan kathākəna haneṅ gunuṅ maṇi suramya meru sakala.</l>
+<lg n="1">
+<l n="a">byatīta; ri pəjah suvandha, gumuruh dahut sahananiṅ pravīra malayū,</l>
+<l n="b">makāsya para bhūminātha sira puh gəyuh təkap i śakti saṅ daśamukha.</l>
+<l n="c">amogha ri surup hyaṅ arka, tinut iṅ sapih ya, karaṇanya rakva mahurip;</l>
+<l n="d">daśāsya sira tan kathākəna haneṅ gunuṅ maṇi suramya meru sakala.</l>
 </lg>
-<lg n="2"><l n="a">narendrasuta sodha śaiśuka sireki rakva mahurip; nda yeka vuvusən,</l>
+<lg n="2">
+<l n="a">narendrasuta sodha śaiśuka sireki rakva mahurip; nda yeka vuvusən,</l>
 <l n="b">lavan sahana saṅ vatək ratu sahehayāṅśabalaśeṣa* mepu kapəgan,</l>
 <l n="c">ri tan ḍatəṅi* saṅ narendra ri mahispati, prabhu viśeṣa śakti subhaga;</l>
 <l n="d">sireki karaṇanya rakva maləs aṅrugaṅ ripu, makolihaṅ daśamukha.</l>
 	<!-- <app>(b) sa: y ri; (c) F ḍatəṅa.</app> -->
 </lg>
-<lg n="3"><l n="a">tuvin* hana maṅənhaṅən muliha bhaktya maṅśulakəne siraṅ narapati,</l>
+<lg n="3">
+<l n="a">tuvin* hana maṅənhaṅən muliha bhaktya maṅśulakəne siraṅ narapati,</l>
 <l n="b">umantuka mareṅ svarājya kaharəpnya rakva sira tan tumandaṅ amuka*,</l>
 <l n="c">savetni gəṅi saṅśayanya təkap iṅ musuh sakala rudramūrti kahiḍəp,</l>
 <l n="d">prasaṅga ri kaparjayanya, karaṇanyan osah aṅəsah prapañca sivuhən.</l>
 	<!-- <app>(a) y vaneh; (b) y amuvah.</app> -->
 </lg>
-<lg n="4"><l n="a">taṅeh yan ucapən gatinya; huvusiṅ ḍavuh rva ri kəjəpnikaṅ balagaṇa,</l>
+<lg n="4">
+<l n="a">taṅeh yan ucapən gatinya; huvusiṅ ḍavuh rva ri kəjəpnikaṅ balagaṇa,</l>
 <l n="b">gəlāna malageka rakva karaṇanya nimna juga tan paśabda maturū;</l>
 <l n="c">kunaṅ ryakikaṅ abdhi śoṇita karəṅv anəmpuh amagut karaṅ śava humuṅ,</l>
 <l n="d">lavan panaṅisiṅ kənātri ya turuṅ pəjah salisu karṇa mandra karəṅə̄.</l>
 </lg>
-<lg n="5"><l n="a">nda tan kahuniṅan gatinya; caritan saṅ arjuna sahasrabāhu mavuṅu,</l>
+<lg n="5">
+<l n="a">nda tan kahuniṅan gatinya; caritan saṅ arjuna sahasrabāhu mavuṅu,</l>
 <l n="b">lavan nṛpavadhū sirekin inamər; nda tan dva sira saumyarūpa vəkasan,</l>
 <l n="c">uməntas umareṅ mahantən i samīpaniṅ lvah atiśuddha, ramya pinarək;</l>
 <l n="d">muvah sahananiṅ macaṅkrama sameka məntas amavaṅ* suratna kanaka.</l>
 	<!--<app>(d) A amavā. 
 	5a to 6d are missing in y.</app>-->
 </lg>
-<lg n="6"><l n="a">nda śīghra vinarah sire tayanikaṅ suvandha mamapag ri saṅ daśamukha,</l>
+<lg n="6">
+<l n="a">nda śīghra vinarah sire tayanikaṅ suvandha mamapag ri saṅ daśamukha,</l>
 <l n="b">lavan nṛpati rājarāja patuduh suvandha sira rakṣake narapati. </l>
 <l n="c">ya hetunira gadgadāgaravalan, kuləm sira yayan saroṣa lumurug,</l>
 <l n="d">təgaltəgal ayun gunuṅ juraṅ arəs kalalvanika* deniraṅ narapati.</l>
 	<!-- <app>(d) C kalakvan-.</app> -->
 </lg>
-<lg n="7"><l n="a">samāntara ri mehaniṅ dina, ḍatəṅ* saṅ arjuna sireṅ raṇāṅgaṇa huvus*,</l>
+<lg n="7">
+<l n="a">samāntara ri mehaniṅ dina, ḍatəṅ* saṅ arjuna sireṅ raṇāṅgaṇa huvus*,</l>
 <l n="b">lavan sahana saṅ vatək ratu surakṣa kāri surasena mukhya maṅiriṅ*. </l>
 <l n="c">siraṅ magadhaputra* siṅhalasuteki sampun umarək ri jə̄ṅ saṅ ahulun,</l>
 <l n="d">paḍājar i təlas vatək ratu muvah suvandha kavənaṅ təkap daśamukha.</l>
 	<!-- <app>(a) A ḍataṅ; y -Arjunasahasrabāhu tumutut; (b) BD haṅiriṅ, E ṅ aṅiriṅ; (c) A Magadhasuta.</app> -->
 </lg>
-<lg n="8"><l n="a">narendra sira śūra dhīra juga tan vikalpa, makin ujvalaṅ tvas apagəh,</l>
+<lg n="8">
+<l n="a">narendra sira śūra dhīra juga tan vikalpa, makin ujvalaṅ tvas apagəh,</l>
 <l n="b">prakopa kadi siṅha rodra magalak harəp mihata riṅ gajāgəṅ aruhur. </l>
 <l n="c">nda śīghra təka tan pasaṅkan inucap maharṣi varanāradāṅanumata,</l>
 <l n="d">maśānti ri harəp narendra majayājayāstu karəṅə̄ pamurṣitanira:</l>
 	<!--<app>(a) apagəh &lt; apegəh</app>-->
 </lg>
 </div>
-<div type="canto" n="58" met="vasantatilaka">
+<div type="canto" n="58" met="basantatilakā">
 <!--Vasantatilaka:  - - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =-->
-<lg n="1"><l n="a">‘ḍū saṅ narendra paramarddhika bhūmipāla,</l><l n="b">riṅ rūpa dibya kahiḍəp kusumāyudheṅ rāt,</l><l n="c">riṅ vīrya tulya parameśvara tan pahīṅan,</l><l n="d">devādi tan hana vənaṅ mihate* guṇanta.</l>
+<lg n="1"><l n="a">‘ḍū saṅ narendra paramarddhika bhūmipāla,</l>
+<l n="b">riṅ rūpa dibya kahiḍəp kusumāyudheṅ rāt,</l>
+<l n="c">riṅ vīrya tulya parameśvara tan pahīṅan,</l>
+<l n="d">devādi tan hana vənaṅ mihate* guṇanta.</l>
 	<!-- <app>(d) A mihateṅ, y mulateṅ.</app> -->
 </lg>
 <lg n="2"><l n="a">solah svabhāva haji tan hana topamanya*,</l>
@@ -3204,7 +3279,7 @@
 	<!--<app>(b) y milve, BCF milvī, Aqv milviṅ.</app>-->
 </lg>
 </div>
-<div type="canto" n="63" met="pṛthvītala">
+<div type="canto" n="63" met="pr̥thvītala">
 <!--Pṛthvītala:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ - - | ~ =-->
 <lg n="1"><l n="a">‘aha prabhu daśāsya, hah, ndi ta vuvus patik bhūpati,</l>
 <l n="b">prasaṅga ri gatinta yan malaga vairanāthārjuna? </l>
@@ -3260,7 +3335,7 @@
 	<!--<app>(b) keməṅan &lt; kaməṅan</app>-->
 </lg>
 </div>
-<div type="canto" n="64" met="jagatnātha">
+<div type="canto" n="64" met="jagadnātha">
 <!--Jagatnātha:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ ~-->
 <lg n="1">
 <l n="a">‘prabhuṅku kita saṅ maharddhika, nihan karaṇani pati saṅ nareśvarī:</l>
@@ -3440,53 +3515,69 @@
 </div>
 <div type="canto" n="70" met="sragdharā">
 <!--Sragdharā:  - - - | - ~ - | - ~ ~ | ~ ~ ~ | ~ - - | ~ - - | ~ - =-->
-<lg n="1"><l n="a">nojar* saṅ vipra; tuṣṭaṅ daśamukha masuṅekaṅ* kaḍatvan ri ləṅkā,</l><l n="b">maṅgəh ṅūnin baṅun liṅ dvija vara; mavuvus śrī* narendrānivārya:</l><l n="c">‘he he yakṣendra, tātan sukha kami ri gatintāvvataṅ rājya śobha. </l><l n="d">ṅhiṅ yan tuhvekiṅ ambək, matəlasana kitābuddhi mūrkhāvamāna!</l>
+<lg n="1">
+<l n="a">nojar* saṅ vipra; tuṣṭaṅ daśamukha masuṅekaṅ* kaḍatvan ri ləṅkā,</l>
+<l n="b">maṅgəh ṅūnin baṅun liṅ dvija vara; mavuvus śrī* narendrānivārya:</l>
+<l n="c">‘he he yakṣendra, tātan sukha kami ri gatintāvvataṅ rājya śobha. </l>
+<l n="d">ṅhiṅ yan tuhvekiṅ ambək, matəlasana kitābuddhi mūrkhāvamāna!</l>
 	<!-- <app>(a) ACqz sojar; A masuṅeṅkaṅ; (b) C trī.</app> -->
 </lg>
-<lg n="2"><l n="a">āpan noreka yogyan gavayakənana de śrī mahābhūminātha;</l>
+<lg n="2">
+<l n="a">āpan noreka yogyan gavayakənana de śrī mahābhūminātha;</l>
 <l n="b">mitrādoh, śatru makveh, mamənaṅa tuvi tan dharma kastutyan iṅ rāt;</l>
 <l n="c">maṅkin yan sora dontāsakit ika; huniṅan rakva maṅke təkapta:</l>
 <l n="d">byaktā tan sah kiteṅ pañjara, yadin aku tan masihe saṅ dvijendra.</l>
 </lg>
-<lg n="3"><l n="a">saṅsiptan, hayva, tātan hana hiniriṅan iṅ vvaṅ təkapniṅ lumampah;</l>
+<lg n="3">
+<l n="a">saṅsiptan, hayva, tātan hana hiniriṅan iṅ vvaṅ təkapniṅ lumampah;</l>
 <l n="b">gə̄ṅ māna vruhvruheṅ śakti parama, tan* ikā buddhya saṅ nītimanta. </l>
 <l n="c">yadyan ṅvaṅ matya, maṅgəh, lamun anuvukane saṅ mahāsādhu riṅ rāt,</l>
 <l n="d">āpan vvantən tivasniṅ laku, yadi tan ikānuṅ pratiṅkah narendra.</l>
 	<!--<app>(b) F paramartan.</app>-->
 </lg>
-<lg n="4"><l n="a">siṅgih yan bhūmināthan tayaṅ ulahakəna lena saṅkeṅ parārtha,</l>
+<lg n="4">
+<l n="a">siṅgih yan bhūmināthan tayaṅ ulahakəna lena saṅkeṅ parārtha,</l>
 <l n="b">kāruṇyeṅ sarvalokāṅinakana manah iṅ kāsyasih buddhi hīna;</l>
 <l n="c">āpan byakteka don saṅ prabhu sinivi təkapniṅ mahāvīrasaṅgha;</l>
 <l n="d">yan tan maṅkān anindaṅ para rivarivaniṅ muṅsir iṅ rauravāṅga.</l>
 </lg>
 </div>
-<div type="canto" n="71" met="jagatnātha">
+<div type="canto" n="71" met="jagadnātha">
 <!--Jagatnātha:  ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ ~-->
-<lg n="1"><l n="a">kayogyanika, hayva tan suyaśadharmaṅ ulahakəna, saṅ daśānana,</l><l n="b">nda tan muvaha mūrkha, sādhu kita; tan pakaraṇa mamatī prabhūttama,</l><l n="c">nda yeka marəneki rakva kaharəpku pakadhana panuṅkuleṅ hulun;</l><l n="d">mahādhana təkapku nora juga lena ləviha saka riṅ jagaddhita.’</l>
+<lg n="1">
+<l n="a">kayogyanika, hayva tan suyaśadharmaṅ ulahakəna, saṅ daśānana,</l>
+<l n="b">nda tan muvaha mūrkha, sādhu kita; tan pakaraṇa mamatī prabhūttama,</l>
+<l n="c">nda yeka marəneki rakva kaharəpku pakadhana panuṅkuleṅ hulun;</l>
+<l n="d">mahādhana təkapku nora juga lena ləviha saka riṅ jagaddhita.’</l>
 </lg>
-<lg n="2"><l n="a">nahan liṅira saṅ narendra; sukha saṅ daśamukha; mavuvus dvijeśvara;</l>
+<lg n="2">
+<l n="a">nahan liṅira saṅ narendra; sukha saṅ daśamukha; mavuvus dvijeśvara;</l>
 <l n="b">‘uḍu prabhu, mahottameka kaharəpta, tuhutuhu viśeṣabhūpati;</l> 
 <l n="c">apan kramani saṅ narendra juga tan paləpaləh i karakṣaniṅ jagat,</l>
 <l n="d">makāsya sira saṅ munīndra sahaneṅ girivana ya rinakṣa saṅ prabhu.</l>
 </lg>
-<lg n="3"><l n="a">sudhīra manahiṅ tapodhara manah nṛpati paramapaṇḍitottama,</l>
+<lg n="3">
+<l n="a">sudhīra manahiṅ tapodhara manah nṛpati paramapaṇḍitottama,</l>
 <l n="b">ləyəpni haləpiṅ svarājya giritulya paṅalusani saṅ nareśvara;</l>
 <l n="c">ikaṅ kuhaka duṣṭadurjana ya bañcananika mamaṅun prakampita,</l>
 <l n="d">pənuh mibəki sarvaloka ya baṅun suravaravaniteṅ tapovana.</l>
 </lg>
-<lg n="4"><l n="a">dudū marika durgamanya kalavan rusiti manah ikaṅ* surāṅganā,</l>
+<lg n="4">
+<l n="a">dudū marika durgamanya kalavan rusiti manah ikaṅ* surāṅganā,</l>
 <l n="b">hilaṅ pva ya milag kabeh juga lamun hənəṅakəna təkap munīśvara*;</l>
 <l n="c">svajātinikanaṅ durātmaka, yadin hənəṅakəna, makin ta yāvəvəh;</l>
 <l n="d">mataṅnyan ika hayva saṅ prabhu harəp kasiliba təkapiṅ prabañcana.</l>
 	<!-- <app>(a) y i saṅ; (b) y nareśvara.</app> -->
 </lg>
-<lg n="5"><l n="a">kunaṅ phalanikeki rakva yadiyan kavaśakəna təkap nareśvara,</l>
+<lg n="5">
+<l n="a">kunaṅ phalanikeki rakva yadiyan kavaśakəna təkap nareśvara,</l>
 <l n="b">prabhāvanira* viṣṇumūrti kahiḍəp, sinivi saphala bhūmipālaka;</l>
 <l n="c">pitovi mara saptajanmani tuvuhta niyata matəmah prabhūttama,</l>
 <l n="d">nda tan titisa rakva dibya kavənaṅ titisa juga, paran kasaṅśaya*.</l>
 	<!-- <app>(b) nira: y kita; (d) q paranta saṅśaya.</app> -->
 </lg>
-<lg n="6"><l n="a">apan sira minuṣṭiniṅ japa samādhi, sinamaya ri tuṅtuṅiṅ hiḍəp,</l>
+<lg n="6">
+<l n="a">apan sira minuṣṭiniṅ japa samādhi, sinamaya ri tuṅtuṅiṅ hiḍəp,</l>
 <l n="b">hiḍəpnira tikāṅhiḍəp, vuvusiran vinuvusakən i saṅ mahāmuni;</l>
 <l n="c">prasiddha sira rāmareṇa təkapiṅ tribhuvana, huripiṅ jagat kabeh,</l>
 <l n="d">ndatan pahi lavan sinādhyanira saṅ viku saṅ inusi saṅ nareśvara.</l>
@@ -3500,7 +3591,7 @@
 	<!--<app>(b) Ay aməjahikaṅ.</app>-->
 </lg>
 </div>
-<div type="canto" n="72" met="śardūlavikrīḍita">
+<div type="canto" n="72" met="śārdūlavikrīḍita">
 <!--Śardūlavikrīḍita:  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | =-->
 <lg n="1">
 <l n="a">‘he he saṅ paramarṣi, siṅgih ikanojartātiguhyottama,</l>
@@ -3535,7 +3626,8 @@
 <l n="c">sampun rakva mulih kabeh marək i jə̄ṅ śrī bhūmināthaprabhu,</l>
 <l n="d">mvaṅ tekaṅ bala rākṣaseka paḍa bhaktī jə̄ṅniraṅ rāvaṇa.</l>
 </lg>
-<lg n="6"><l n="a">tan varṇan ri patūtnirekin umulih saṅ vipra sampun məsat,</l>
+<lg n="6">
+<l n="a">tan varṇan ri patūtnirekin umulih saṅ vipra sampun məsat,</l>
 <l n="b">mvaṅ san rāvaṇa mantuk iṅ pura huvus mamvit ri* jə̄ṅ bhūpati.</l>
 <l n="c">tuṣṭāmbək prabhu hehayāṅśa kalavan saṅ śrī supatnīśvarī,</l>
 <l n="d">de saṅ brāhmaṇa siddhi hetuni huripniṅ vīra mātīṅ* raṇa.</l>
@@ -3558,7 +3650,7 @@
 <l n="d">mvaṅ sarvāmara sādhubuddhi maṅaləm de śrī narendrādhipa.</l>
 </lg>
 </div>
-<div type="canto" n="73" met="kilayu manədəṅ">
+<div type="canto" n="73" met="kilayu manəḍəṅ">
 <!--Kilayu manədəṅ:  - - ~ | ~ ~ ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - -->
 <lg n="1">
 <l n="a">nāhan juga valərikanaṅ kathābuka daśāsyacaritan inikət,</l>
