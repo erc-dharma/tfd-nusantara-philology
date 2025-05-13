@@ -2,7 +2,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kunjarakarnaDharmaKathana">
     <teiHeader>
         <fileDesc>
         	<titleStmt>
@@ -39,93 +39,84 @@ mss. indicates a common reading of all five mss.
                         <abbr type="siglum">Ed<hi rend="superscript">TR</hi></abbr>
                     	<bibl><ptr target="bib:Teeuw+Robson1981_01"/></bibl>
                     </witness>
-                        <witness xml:id="msr">
+                	<witness xml:id="msP">
+                		<abbr type="siglum">P</abbr>
+                		<msDesc>
+                			<msIdentifier>
+                				<settlement>Leiden</settlement>
+                				<institution>Leiden University Libraries (UB)</institution>
+                				<repository>Special collections</repository>
+                				<idno>Or. 5023 II</idno>
+                			</msIdentifier>
+                			<msContents>
+                				<!-- the msContents isn't mandatory -->
+                				<msItem>
+                					<author></author>
+                					<title></title>
+                					<colophon>
+                						<quote type="diplomatic">Iti Kuñjarakārna, Dharmakathanā, samapta, kīrti sirā Mpu Dusun. Tlas in nular iṅ Kañcana, tkap Nirārtha Pamasah, niyata kampuraha dya nira saṅ sudy amacêṅ kātha, ri kuraṅ-lvihnya, kapayuṅā de saṅ vriṅ sāstra, āpan matra milyâṅrekā hatanūt iṅ tuladdan, carūb iṅ vargāksara, reh iṅ vikālpāksara, tan iṅ pasaṅan, nir uṅgvan alit āganal, misra ṅkānêṅ Śivalān, riṅ Kavyan desa niṅ Bālīpulina, i Sāka, duk tinaṅguṅ ripu, babad pgat paṅrasa vināya pisan, 1660. Śukra masa niṅ sūklapāksa riṅ padasamyā (?), ka, bu, vara Duṅhulān, mina rasi, ar, o, tu, srī, . . . va, u, samaṅkana kovusanya ṅanurat. Niyata maṅdadya-kən kadirghāyūsan ira saṅ manurat, mvaṅ saṅ adrəvyā, oṅ, ksama sāmpūrna ya nāmah svāhā.</quote>
+                						<quote type="translation">This is the Kuñjarakarṇa, the story of the Law, completed, the work of Mpu Dusun. The copying vas finished in Kañcana, by Nirartha Pamasah: it must surely be pardoned by those vho are prepared to read the story because of its shortcomings, and be protected by those vho are knovledgeable about literature; for it is simply an attempt to vrite it out, folloving the original, but it makes a mess of the types of letters, confuses them, leaving out subscribed letters, putting them not in the proper place, making them too small or too big, so that all is mixed up on the page; in Kavyan, a village in the island of Bali, in the Sāka year vhen oppressed by the enemy, 'the clearing broken of, the feeling of the leader at once' (??or: 'the taste and the feeling at once' ??), 1660; on Friday, at the time of the bright moon, … on the day Buda-Klivon, in the vuku Duṅulan, the sign Pisces . . . that vas the time vhen it vas completed. It vill certainly bring long life to him vho vrites it and him vho ovns it; Om. may there be complete forgiveness; honour and hail!</quote>
+                						<note>For more details we refer to the discussion of the colophons of the śR and Nāg, to be found in the same MS. in R (1969: 156f) and Pigeaud (1960-63: I 76, III 115, IV 347ff) ; see also above, pp. 47ff, and the study by Berg quoted there.</note>  
+                					</colophon> 
+                					<!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                				</msItem>
+                			</msContents>
+                			<physDesc>
+                				<objectDesc>
+                					<p/>
+                				</objectDesc>
+                				<handDesc>
+                					<p/>
+                				</handDesc>
+                			</physDesc>
+                			<history>
+                				<p/>
+                			</history>
+                		</msDesc>
+                	</witness>
+                        <witness xml:id="msR">
                             <abbr type="siglum">R</abbr>
-                            R = typed transliteration of ms. Kirtya 674 S = typed transliteration of ms.  Kirtya 675 T = lontar ms. in the possession of Teeuw
+                            R = typed transliteration of ms. Kirtya 674
                     </witness>
-                    <witness xml:id="msy">
+                	<witness xml:id="msS">
+                		<abbr type="siglum">S</abbr>
+                		<msDesc>
+                			<msIdentifier>
+                				<settlement>Singaraja, Bali</settlement>
+                				<institution>Dinas</institution>
+                				<repository>Kirtya</repository>
+                				<idno>675</idno>
+                			</msIdentifier>
+                			<msContents>
+                				<msItem>
+                					<colophon>                						
+                						<quote type="diplomatic">Iti Kuñjarakarṇa, kakavin darma-kata samapta. This is followed by another Canto consisting of three stanzas in the Jagaddhita metre, although with many irregularities; the text, adapted to the spelling system used in this book, runs as follows:
+                							pascāt sinrat i de dvijā hinagunā aparinama Jayestha Kāgəman sinvīkāra kinon iraṅ dipatiputra makaṅaran irârya Luṅluṅan tus niṅ vaṅsa su-Pañjisakti sira kaprakasita mavivekasaṅgraha prājñêṅ gīta vicaksanânvam agunādhika kadi ta saṅ Uddhavêṅ sabhā
+                							āvas ninda nikah mulat ri ulah i ṅhulun atisaya hiṅsakāksara ginantuṅ bana len pinatyan ikanā sama-sama kadi vuryan iṅ sata aṅhiṅ ta ksama de ni saṅ sujana sudy amaca ulih iṅ atpadêṅ laṅə̄ paṅgil mampir asih Wagīsvari riki ṅhulun atita nirartha duryasa
+                							yan kāṅən kahituṅ lyan īka cara saṅ viku kuniṅan iraṅ manah licin kasaktan rikanaṅ kadharman apagəh manah ira kadi tan təkêṅ pati nāhan lvir saṅ aṅisti ləmbana satāta sira-n umulaha-ṅ bratātapa nityâmoṅ ta ri saṅ hyaṅ Agni tiga mūrti dharaṇa i sakāla ṅarcana</quote>
+                						<quote type="translation">1. The writing was completed by the brahmana of little virtue who bears the name Jayestha Kagəman, Who was hard pressed by the orders of the royal prince who is called the noble Luṅluṅan. As a scion of the family of Pañji Śakti he is renowned for his great intelligence (?); He is an expert in poetry, a man of sense, young, of excellent virtue, like Uddhava in council. 2. Obviously there will be blame from those who vatch me making a hopeless mess of the letters, Some of which hang betveen the lines, and others have lost their vowels, altogether an awful scrawl (Dutch hanepoten, "cock's footprints"). But may there be pardon for me from the good people who deign to read the product of one who tries to serve the art of poetry. And may love of Sarasvatī pass my way, even though I am totally worthless and without merit. 3. All considered, the way the monk takes account of a released mind is quite different, He is a devotee to the Law, of steadfast mind, as if he will never die. Thus is the nature of one who longs for a mainstay; he constantly carries out austerities, Permanently tending the god Agni in his three manifestations, the support of all who venerate him.</quote>
+                					</colophon> 
+                				</msItem>
+                			</msContents>
+                			<physDesc>
+                				<objectDesc>
+                					<p>Typed transliteration of ms. Kirtya 675.</p>
+                				</objectDesc>
+                				<handDesc><p/></handDesc>
+                			</physDesc>
+                		</msDesc>
+                	</witness>
+                	<witness xml:id="msT">
+                		<abbr type="siglum">T</abbr>
+                		T = lontar ms. in the possession of Teeuw
+                	</witness>
+                    <witness xml:id="msY">
                         <abbr type="siglum">Y</abbr>
                         Y indicates a common reading of RSTV 
                     </witness>
-                    <witness xml:id="msv">
+                    <witness xml:id="msV">
                         <abbr type="siglum">V</abbr>
                         typewritten ms., LOr 12.895
-                    </witness>
-                    <witness xml:id="msp">
-                        <abbr type="siglum">P</abbr>
-                        <msDesc>
-                        <msIdentifier>
-                        	<settlement>Leiden</settlement>
-                        	<institution>Leiden University Libraries (UB)</institution>
-                            <repository>Special collections</repository>
-                            	<idno>Or. 5023 II</idno>
-                        </msIdentifier>
-                        <msContents>
-                            <!-- the msContents isn't mandatory -->
-                            <msItem>
-                                <author></author>
-                                <title></title>
-                                <colophon>
-                                    <quote type="diplomatic">Iti Kuñjarakārna, Dharmakathanā, samapta, klrti sirā Mpu Dusun. Tlas in nular iṅ Kañcana, tkap Nirārtha Pamasah, niyata kampuraha dya nira saṅ sudy amacêṅ kātha, ri kuraṅ-lvihnya, kapayuṅā de saṅ vriṅ sāstra, āpan matra milyâṅrekā hatanūt iṅ tuladdan, carūb iṅ vargāksara, reh iṅ vikālpāksara, tan iṅ pasaṅan, nir uṅgvan alit āganal, misra ṅkānêṅ Śivalān, riṅ Kavyan desa niṅ Bālīpulina, i Sāka, duk tinaṅguṅ ripu, babad pgat paṅrasa vināya pisan, 1660. Śukra masa niṅ sūklapāksa riṅ padasamyā (?), ka, bu, vara Duṅhulān, mina rasi, ar, o, tu, srī, . . . va, u, samaṅkana kovusanya ṅanurat. Niyata maṅdadya-kən kadirghāyūsan ira saṅ manurat, mvaṅ saṅ adrəvyā, oṅ, ksama sāmpūrna ya nāmah svāhā.</quote>
-                                    <quote type="translation">This is the Kuñjarakarṇa, the story of the Law, completed, the work of Mpu Dusun. The copying vas finished in Kañcana, by Nirartha Pamasah: it must surely be pardoned by those vho are prepared to read the story because of its shortcomings, and be protected by those vho are knovledgeable about literature; for it is simply an attempt to vrite it out, folloving the original, but it makes a mess of the types of letters, confuses them, leaving out subscribed letters, putting them not in the proper place, making them too small or too big, so that all is mixed up on the page; in Kavyan, a village in the island of Bali, in the Sāka year vhen oppressed by the enemy, 'the clearing broken of, the feeling of the leader at once' (??or: 'the taste and the feeling at once' ??), 1660; on Friday, at the time of the bright moon, … on the day Buda-Klivon, in the vuku Duṅulan, the sign Pisces . . . that vas the time vhen it vas completed. It vill certainly bring long life to him vho vrites it and him vho ovns it; Om. may there be complete forgiveness; honour and hail!</quote>
-                                    <note>For more details we refer to the discussion of the colophons of the śR and Nāg, to be found in the same MS. in R (1969: 156f) and Pigeaud (1960-63: I 76, III 115, IV 347ff) ; see also above, pp. 47ff, and the study by Berg quoted there.</note>  
-                                </colophon> 
-                                <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
-                            </msItem>
-                        </msContents>
-                        <physDesc>
-                            <objectDesc>
-                                <p/>
-                            </objectDesc>
-                            <handDesc>
-                                <p/>
-                            </handDesc>
-                        </physDesc>
-                        <history>
-                            <p/>
-                        </history>
-                        </msDesc>
-                    </witness>
-                    <witness xml:id="msX">
-                        <abbr type="siglum">X</abbr>
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement></settlement>
-                                <institution></institution>
-                                <repository></repository>
-                                <idno></idno>
-                            </msIdentifier>
-                            <msContents>
-                                <!-- the msContents isn't mandatory -->
-                                <msItem>
-                                    <author></author>
-                                    <title></title>
-                                    <colophon>
-                                        <quote type="diplomatic">Iti Kuñjarakārna, Dharmakathanā, samapta, klrti sirā Mpu Dusun. Tlas in nular iṅ Kañcana, tkap Nirārtha Pamasah, niyata kampuraha dya nira saṅ sudy amacêṅ kātha, ri kuraṅ-lvihnya, kapayuṅā de saṅ vriṅ sāstra, āpan matra milyâṅrekā hatanūt iṅ tuladdan, carūb iṅ vargāksara, reh iṅ vikālpāksara, tan iṅ pasaṅan, nir uṅgvan alit āganal, misra ṅkānêṅ Śivalān, riṅ Kavyan desa niṅ Bālīpulina, i Sāka, duk tinaṅguṅ ripu, babad pgat paṅrasa vināya pisan, 1660. Śukra masa niṅ sūklapāksa riṅ padasamyā (?), ka, bu, vara Duṅhulān, mina rasi, ar, o, tu, srī, . . . va, u, samaṅkana kovusanya ṅanurat. Niyata maṅdadya-kən kadirghāyūsan ira saṅ manurat, mvaṅ saṅ adrəvyā, oṅ, ksama sāmpūrna ya nāmah svāhā.</quote>
-                                        <quote type="translation">This is the Kuñjarakarṇa, the story of the Law, completed, the work of Mpu Dusun. The copying was finished in Kañcana, by Nirartha Pamasah: it must surely be pardoned by those who are prepared to read the story because of its shortcomings, and be protected by those who are knowledgeable about literature; for it is simply an attempt to write it out, following the original, but it makes a mess of the types of letters, confuses them, leaving out subscribed letters, putting them not in the proper place, making them too small or too big, so that all is mixed up on the page; in Kawyan, a village in the island of Bali, in the Sāka year when oppressed by the enemy, 'the clearing broken of, the feeling of the leader at once' (??or: 'the taste and the feeling at once' ??), 1660; on Friday, at the time of the bright moon, … on the day Buda-Kliwon, in the wuku Duṅulan, the sign Pisces . . . that was the time when it was completed. It will certainly bring long life to him who writes it and him who owns it; Om. may there be complete forgiveness; honour and hail!</quote>
-                                        <note>For more details we refer to the discussion of the colophons of the śR and Nāg, to be found in the same MS. in R (1969: 156f) and Pigeaud (1960-63: I 76, III 115, IV 347ff) ; see also above, pp. 47ff, and the study by Berg quoted there.</note>
-                                        <quote type="diplomatic">Iti Kuñjarakarṇa, kakavin darma-kata samapta. This is followed by another Canto consisting of three stanzas in the Jagaddhita metre, although with many irregularities; the text, adapted to the spelling system used in this book, runs as follows:
-                                            pascāt sinrat i de dvijā hinagunā aparinama Jayestha Kāgəman sinvīkāra kinon iraṅ dipatiputra makaṅaran irârya Luṅluṅan tus niṅ vaṅsa su-Pañjisakti sira kaprakasita mavivekasaṅgraha prājñêṅ gīta vicaksanânvam agunādhika kadi ta saṅ Uddhavêṅ sabhā
-                                            āvas ninda nikah mulat ri ulah i ṅhulun atisaya hiṅsakāksara ginantuṅ bana len pinatyan ikanā sama-sama kadi vuryan iṅ sata aṅhiṅ ta ksama de ni saṅ sujana sudy amaca ulih iṅ atpadêṅ laṅə̄ paṅgil mampir asih Wagīsvari riki ṅhulun atita nirartha duryasa
-                                            yan kāṅən kahituṅ lyan īka cara saṅ viku kuniṅan iraṅ manah licin kasaktan rikanaṅ kadharman apagəh manah ira kadi tan təkêṅ pati nāhan lvir saṅ aṅisti ləmbana satāta sira-n umulaha-ṅ bratātapa nityâmoṅ ta ri saṅ hyaṅ Agni tiga mūrti dharaṇa i sakāla ṅarcana</quote>
-                                           
-                                            <quote type="translation">1. The writing was completed by the brahmana of little virtue who bears the name Jayestha Kagəman, Who was hard pressed by the orders of the royal prince who is called the noble Luṅluṅan.
-                                            As a scion of the family of Pañji Śakti he is renowned for his great intelligence (?);
-                                            He is an expert in poetry, a man of sense, young, of excellent virtue, like Uddhava in council.
-                                            2. Obviously there will be blame from those who vatch me making a hopeless
-                                            mess of the letters,
-                                            Some of which hang betveen the lines, and others have lost their vowels,
-                                            altogether an awful scrawl (Dutch hanepoten, "cock's footprints"). But may there be pardon for me from the good people who deign to read the
-                                            product of one who tries to serve the art of poetry. And may love of Sarasvatī pass my way, even though I am totally worthless and without merit.
-                                            3. All considered, the way the monk takes account of a released mind is quite different,
-                                            He is a devotee to the Law, of steadfast mind, as if he will never die. Thus is the nature of one who longs for a mainstay; he constantly carries out austerities,
-                                            Permanently tending the god Agni in his three manifestations, the support of all who venerate him.</quote>
-                                            
-										</colophon> 
-                                    <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
-                                </msItem>
-                            </msContents>
-                        </msDesc>
                     </witness>
                 </listWit>
             </sourceDesc>
@@ -156,6 +147,7 @@ mss. indicates a common reading of all five mss.
             </langUsage>
         </profileDesc>
         <revisionDesc>
+        	<change when="2025-05-13" who="part:argr">adjusted meter names to prosodicPatterns</change>
         	<change when="2025-05-11" who="part:argr">added teiHeader and bibliography</change>
         	<change when="2025-05-07" who="part:axja">conversion of text to TEI following DHARMA EGC v2</change>
         </revisionDesc>
@@ -216,7 +208,7 @@ mss. indicates a common reading of all five mss.
 <l n="d">mvaṅ sakveh para bajrapāṇisuranātha yama baruṇa len dhanādhipa</l></lg>
 
 </div>
-<div type="canto" n="2" met="not known from elsewhere">
+<div type="canto" n="2" met="-++--+-++--=">
 <note type="prosody">~ - - | ~ ~ - | ~ - - | ~ ~ =</note>
 <lg n="1">
 <l n="a">bharālipratisāra labdhe samaya</l>
@@ -411,7 +403,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="6" met="pṛthvītala">
+<div type="canto" n="6" met="pr̥thvītala">
 <note type="prosody">~ - ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ - - | ~ =</note>
 <lg n="1">
 <l n="a">saṅ ugratapa śīghra maṅkat ahavan viyat nirbhaya</l>
@@ -789,7 +781,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="11" met="mṛdukomala">
+<div type="canto" n="11" met="mr̥dukomala">
 <note type="prosody">- - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ =</note>
 <lg n="1"><l n="a">prāpteṅ jro pura saṅ tapāṅdunuṅi saṅ hyaṅ antakapati</l>
 <l n="b">ṅkāneṅ veśma suvarṇa sambhrama bhaṭāra rakva matamuy</l>
@@ -1276,7 +1268,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="19" met="basantatilaka">
+<div type="canto" n="19" met="basantatilakā">
 <note type="prosody">- - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =</note>
 <lg n="1"><l n="a">ātmā ṅaranyaṅ avaloka mulat rikiṅ rāt</l>
 <l n="b">tar paṅrəṅə̄ svara kabeh yatikaṅ parātmā</l> 
@@ -1345,7 +1337,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="21" met="mṛgāṅśa">
+<div type="canto" n="21" met="mr̥gāṅśa">
 <note type="prosody">- - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | =</note>
 <lg n="1"><l n="a">yekin janmarahasya mūlya pavarahkv iri kita pituhun</l>
 <l n="b">ndah yatneriya paṅrəṅə̄ varavarahku tan imanimanən</l>
@@ -1626,7 +1618,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="28" met="kilayu anədəṅ">
+<div type="canto" n="28" met="kilayu anəḍəṅ">
 <note type="prosody">- - ~ | ~ ~ ~ | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | =</note>
 <lg n="1"><l n="a">səmbahnikiṅ asurasamantabhṛtya ri padāntakapati huniṅan</l>
 <l n="b">saṅ pūrṇavijaya pukulun kinonakən i saṅ hyaṅ alavasa kəlan</l>
@@ -1671,7 +1663,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="29" met="basantatilaka">
+<div type="canto" n="29" met="basantatilakā">
 <note type="prosody">- - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =</note>
 <lg n="1"><l n="a">mantuk bhaṭāra yamarāja tatan vivakṣan</l>
 <l n="b">saṅ nātha pūrṇavijayātmanireki vaktan</l>
@@ -1787,7 +1779,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="31" met="mṛdukomala">
+<div type="canto" n="31" met="mr̥dukomala">
 <note type="prosody">- - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ - ~ | ~ ~ =</note>
 <lg n="1"><l n="a">nāhan liṅ vivudhendra məṅgəp aṅalap kasor vulatira</l>
 <l n="b">marmāpet sivi harṣajāṅusapi luhniraṅ suravadhū</l> 
@@ -2008,7 +2000,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="35" met="basantatilaka">
+<div type="canto" n="35" met="basantatilakā">
 <note type="prosody">- - ~ | - ~ ~ | ~ - ~ | ~ - ~ | - =</note>
 <lg n="1"><l n="a">honyeki mūlyaphala parvata dibya ramya</l>
 <l n="b">ṅkānaṅ gavenya patapan masamīpa mārga</l>
@@ -2225,7 +2217,7 @@ mss. indicates a common reading of all five mss.
 <l n="d">mvaṅ sira gandhavaty aṅusiraṅ tapānuta sənəṅ</l></lg>
 
 </div>
-<div type="canto" n="40" met="girīśa">
+<div type="canto" n="40" met="giriśa">
 <note type="prosody">~ ~ ~ | ~ ~ ~ | - - - | - - ~ | ~ ~ ~ | =</note>
 <lg n="1"><l n="a">ri huvusira manambah riṅ śrī śākyamunisura</l>
 <l n="b">mijil iniriṅ i sakvehniṅ vadvā vivudha tumut</l>
