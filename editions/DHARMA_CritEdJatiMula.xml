@@ -6,7 +6,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">Jati Mula</title>
+                <title type="editorial">Jati Mula: Digital Critical Edition</title>
+                <title type="original">Jati Mula</title>
                 <title type="alt">The True Origin</title>
                 <respStmt>
                     <resp>author of digital edition</resp>
@@ -32,6 +33,7 @@
                 <listWit>
                     <!-- One witness for each manuscript. Update the content -->
                     <witness xml:id="A">
+                         <abbr type="siglum">A</abbr>
                         <!-- Give your witness an unique identifier -->
                         <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
                         <msDesc>
@@ -55,8 +57,9 @@
                                 <objectDesc>
                                     <p>Gebang manuscript. 57 leaves in Old West Javanese script with reddish wooden box. 21,4 x 3,7 cm. 4 lines of texts on each page.</p>
                                 </objectDesc>
-                                <handDesc>
-                                    <handNote xml:id="JaMuA" scriptRef="class:83241 maturity:83215">
+                                <handDesc hands="1">
+                                    <handNote xml:id="A_H1" scriptRef="class:83241 maturity:83215">
+                                        <abbr type="hand">AH<hi rend="subscript">1</hi></abbr>
                                       <p>Main hand of the manuscript, black ink, Old West Javanese script</p>
                                     </handNote>
                                 </handDesc>
@@ -67,6 +70,7 @@
                         </msDesc>
                     </witness>
                      <witness xml:id="B">
+                         <abbr type="siglum">B</abbr>
                         <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
                         <msDesc>
                             <msIdentifier>
@@ -88,7 +92,8 @@
                                     <p>Lontar manuscript. 28 leaves in Old Sundanese script. The manuscript leaves are scattered in several bundles and mixed with other texts </p>
                                 </objectDesc>
                                 <handDesc>
-                                    <handNote xml:id="JaMuB" scriptRef="class:57470 maturity:83215">
+                                    <handNote xml:id="B_H1" scriptRef="class:57470 maturity:83215">
+                                        <abbr type="hand">BH<hi rend="subscript">1</hi></abbr>
                                     <p>Main hand of the manuscript, Old Sundanese script</p>
                                     </handNote>
                                 </handDesc>
