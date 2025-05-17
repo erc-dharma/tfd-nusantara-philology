@@ -67,7 +67,7 @@
                            <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
                         </objectDesc>
                          <handDesc hands="1">
-                             <handNote xml:id= "L_H1" scriptRef="class:38769 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
+                             <handNote xml:id= "L_H1" scriptRef="class:38769 maturity:83215"><!-- update the content of the @xml:id and the @scriptRef -->
                                  <abbr type="hand">LH<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
                                  <p>The only hand of the manuscript, neat Balinese script</p><!-- provide a description of the hand -->
                              </handNote>
@@ -98,13 +98,12 @@
                      </msContents>
                      <physDesc>
                         <objectDesc>
-                        <!-- Here you can give a physical description of the manuscript in prose-->
                            <p>Palm-leaf manuscript. 36 leaves in Balinese script. Copied in ...</p>
                         </objectDesc>
                           <handDesc hands="1">
-                             <handNote xml:id= "P_H1" scriptRef="class:38769 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
-                                 <abbr type="hand">PH<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
-                                 <p>The only hand of the manuscript, neat Balinese script</p><!-- provide a description of the hand -->
+                             <handNote xml:id= "P_H1" scriptRef="class:38769 maturity:83215">
+                                 <abbr type="hand">PH<hi rend="subscript">1</hi></abbr>
+                                 <p>The only hand of the manuscript, neat Balinese script</p>
                              </handNote>
                          </handDesc>
                      </physDesc>
@@ -120,7 +119,7 @@
                         <msIdentifier>
                             <settlement>Leiden, the Netherlands</settlement>
                             <institution>Leiden University Libraries (UB)</institution>
-                            <repository></repository>
+                            <repository>Special collections</repository>
                             <idno>Or. 15.006</idno>
                         </msIdentifier>
                         <!--<msContents>
@@ -134,16 +133,14 @@
                         </msContents>-->
                         <physDesc>
                             <objectDesc>
-                                <!-- Here you can give a physical description of the manuscript in prose-->
                                 <p>Romanized transcription of a palm-leaf manuscript from Gedong Kirtya (IVb. 665/1). Typed in 1976.</p>
                             </objectDesc>
                             <handDesc>
-                                <handNote xml:id= "K_H1" scriptRef="class:38769 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
-                                    <abbr type="hand">KH<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
-                                    <p>The only hand of the manuscript, neat Balinese script</p><!-- provide a description of the hand -->
+                                <handNote xml:id= "K_H1" scriptRef="class:38769 maturity:83215">
+                                    <abbr type="hand">KH<hi rend="subscript">1</hi></abbr>
+                                    <p>The only hand of the manuscript, neat Balinese script</p>
                                 </handNote>
                             </handDesc>
-                            
                         </physDesc>
                         <!--<history>
                             <!-\- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -\->
@@ -155,9 +152,9 @@
                     <abbr type="siglum">T</abbr>
                     <msDesc>
                         <msIdentifier>
-                            <settlement>Leiden, the Netherlands</settlement>
-                            <institution>Universiteit Leiden</institution>
-                            <repository>Leiden University Library</repository>
+                        	<settlement>Leiden, the Netherlands</settlement>
+                        	<institution>Leiden University Libraries (UB)</institution>
+                        	<repository>Special collections</repository>
                             <idno>Or. 20030</idno>
                         </msIdentifier>
                         <msContents>
@@ -171,24 +168,21 @@
                         </msContents>
                         <physDesc>
                             <objectDesc>
-                                <!-- Here you can give a physical description of the manuscript in prose-->
                                 <p>Palm-leaf manuscript. ... leaves in Balinese script. Copied in ...</p>
                             </objectDesc>
                             <handDesc>
-                                <handNote xml:id= "T_H1" scriptRef="class:38769 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef -->
-                                   <abbr type="hand">TH<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand build on siglum-of-the-manuscript_H1, the number being incremental -->
-                                    <p>The only hand of the manuscript, neat Balinese script</p><!-- provide a description of the hand -->
+                                <handNote xml:id= "T_H1" scriptRef="class:38769 maturity:83215">
+                                   <abbr type="hand">TH<hi rend="subscript">1</hi></abbr>
+                                    <p>The only hand of the manuscript, neat Balinese script</p>
                                 </handNote>
                             </handDesc>
                         </physDesc>
-                        
                         <!--<history>
                             <!-\- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -\->
                             <p>...</p>
                         </history>-->
                     </msDesc>
                 </witness>
-                
             </listWit>
          </sourceDesc>
       </fileDesc>
@@ -210,7 +204,9 @@
            <samplingDecl>
                <p/>
            </samplingDecl> 
-       </encodingDesc><revisionDesc>
+       </encodingDesc>
+      <revisionDesc>
+         <change who="part:argr" when="2025-05-17" status="draft">Revision value of @met</change>
          <change who="part:dacc" when="2025-05-12" status="draft">Revision handNote</change>
          <change who="part:axja" when="2021-12-15" status="draft">Adding the @xml:id to obtain a table of contents</change>
          <change who="part:axja" when="2021-10-19" status="draft">updating the template and numbering the verse lines</change>
@@ -905,7 +901,7 @@
                                     </app>
                                      </listApp>
             </div>
-            <div type="canto" rend="met" n="6" met="jagadnātha (jagatnātha)" xml:id="kakavin_06">
+            <div type="canto" rend="met" n="6" met="jagadnātha" xml:id="kakavin_06">
                 <note type="prosody">-+---+-+---+------+-+-=</note>
                 <lg xml:id="kakavin_06.01" n="1">
                     <l n="a">ariṅku laki saṅ dhanañjaya kiteki bapa pinalar i ṅhulun təmən,</l>
@@ -9534,7 +9530,9 @@
             <div type="bibliography"> 				
                 <p/> 				
                 <listBibl> 				
-                    <bibl/> 			
+                    <bibl>
+                     <ptr target="bib:SriSukesiAdiwimarta1993_01"/>
+                  </bibl>		
                 </listBibl>           
                  			
             </div> 		
