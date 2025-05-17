@@ -31,7 +31,7 @@
     <!-- git clone then pull -->
     <git-clone-pull repository="https://github.com/erc-dharma/project-documentation.git" dest="project-documentation" />
 
-    <fileset id="criticalXML" dir="./editions" includes="DHARMA_CritEd*.xml" excludes="*_biblio.xml *_trans*.xml _com*.xml"/>
+    <fileset id="criticalXML" dir="./editions"/>
     <fileset id="criticalHTML" dir="./output/critical-edition/editedXML" includes="*.xml"/>
 
     <!-- Transformation XML vers XML -->
@@ -48,7 +48,7 @@
     </xslt>
 
     <!-- Transformation XML vers HTML -->
-    <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start-edition.xsl" destdir="./output/critical-edition/html" extension=".html" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
+    <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start_v02.xsl" destdir="./output/critical-edition/html" extension=".html" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="criticalHTML"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="EDITED_(.*).xml" to="\1.html"/>

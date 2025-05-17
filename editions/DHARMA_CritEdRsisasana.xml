@@ -3,51 +3,38 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="rsisasana"
-     type="edition"
+     xml:id="rsiSasana"
      xml:lang="eng">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main" xml:lang="kaw-Latn">R̥ṣiśāsana</title>
-            <title type="alt">Ordinance for the Sages</title>
-            <title type="sub">Digital Critical Edition and Translation of an Old Javanese Code of Conduct for Hermits</title>
+         	<title type="editorial">R̥ṣiśāsana, or Ordinance for the Sages: Digital Critical Edition</title>
+         	<title type="original">R̥ṣiśāsana</title>
+            <!-- Digital Critical Edition and Translation of an Old Javanese Code of Conduct for Hermits -->
             <!--need to revise the idea of "a code", and that of "conduct"-->
-            <editor ref="part:masc">
+         	<respStmt>
+         		<resp>author of digital edition</resp>
+         		<persName ref="part:masc">
                <forename>Marine</forename>
                <surname>Schoettel</surname>
-            </editor>
-         	<editor ref="part:argr">
+            </persName>
+         	<persName ref="part:argr">
          		<forename>Arlo</forename>
          		<surname>Griffiths</surname>
-         	</editor>
-         	<editor ref="part:tilu">
+         	</persName>
+         	<persName ref="part:tilu">
          		<forename>Timothy</forename>
          		<surname>Lubin</surname>
-         	</editor>
-            <respStmt>
-               <resp>initial TEI encoding</resp>
-               <!--TBM-->
-               <persName ref="part:masc">
-                  <forename>Marine</forename>
-                  <surname>Schoettel</surname>
-               </persName>
-              </respStmt>
-         	<respStmt>
-         	 <resp>revision of TEI encoding</resp>
-            	 <persName ref="part:argr">
-            		<forename>Arlo</forename>
-            		<surname>Griffiths</surname>
-            	</persName></respStmt>
+         	</persName>
+</respStmt>            
                     </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Paris, Jakarta</pubPlace>
-            <idno type="filename">DHARMA_CritEdRsisasana</idno>
+            <idno type="filename">DHARMA_CritEdRsisasana.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
-                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,	94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Marine Schoettel, Arlo Griffiths &amp; Timothy Lubin.</p>
+                  <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
@@ -83,7 +70,7 @@
                         </msItem>                       
                      </msContents>
                      <physDesc>
-                        <p>Balinese script on lontar, 44 cm</p>
+                        <objectDesc><p>Balinese script on lontar, 44 cm</p></objectDesc>                     	
                      	<handDesc>
                      		<p/>
                      	</handDesc>
@@ -99,10 +86,10 @@
                      <msIdentifier>
                         <settlement>Singaraja, Bali</settlement>
                         <institution>Kirtya Liefrinck-Van der Tuuk</institution>
-                        <idno>IIb.78b/1</idno>
+                        <idno>IIb/78b/1</idno>
                      </msIdentifier>
                      <physDesc>
-                        <p>Balinese script on lontar</p>
+                        <objectDesc><p>Balinese script on lontar</p></objectDesc>
                      	<handDesc>
                      		<p/>
                      	</handDesc>
@@ -115,11 +102,11 @@
                   <msDesc>
                      <msIdentifier>
                         <settlement>Jakarta, Indonesia</settlement>
-                        <institution>Perpustakaan Nasional</institution>
-                        <idno>Br 144</idno>
+                        <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                        <idno>Br. 144</idno>
                      </msIdentifier>
                      <physDesc>
-                        <p>Manuscript copy by Brandes on paper</p>
+                        <objectDesc><p>Manuscript copy by Brandes on paper</p></objectDesc>
                      	<handDesc>
                      		<p/>
                      	</handDesc>
@@ -138,7 +125,7 @@
                         <idno>Or. 3958</idno>
                      </msIdentifier>
                      <physDesc>
-                        <p>Latin script on paper</p>
+                        <objectDesc><p>Latin script on paper</p></objectDesc>
                      	<handDesc>
                      		<p/>
                      	</handDesc>
@@ -149,28 +136,30 @@
             </listWit>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-            <p>The project DHARMA has received funding from the European Research Council (ERC) under
-					the European Union's Horizon 2020 research and innovation programme (grant agreement no
-					809994).</p>
-            <p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
-         </projectDesc>
-         <schemaRef type="guide"
-                    key="EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-         </langUsage>
-      </profileDesc>
-      <revisionDesc>
-        <change who="part:argr" when="2021-12-15">resolved validation errors</change>
+   	<encodingDesc>
+   		<projectDesc>
+   			<p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+   		</projectDesc>
+   		<editorialDecl>        
+   			<correction>
+   				<p/>
+   			</correction>
+   			<normalization>
+   				<p/>
+   			</normalization>
+   			<interpretation>
+   				<p/>
+   			</interpretation>
+   		</editorialDecl>
+   		<samplingDecl>
+   			<p/>
+   		</samplingDecl> 
+   	</encodingDesc><revisionDesc>
+         <change who="part:argr" when="2025-05-17">resolved validation errors, encoded teiHeader bibliography paragraph</change>
+         <change who="part:argr" when="2021-12-15">resolved validation errors</change>
          <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
          <change who="part:axja" when="2021-09-13">Updating the encoding pattern with quote element</change>
-         <change when="2020-08-18" who="part:masc">Modifications in view of xslt transformation (choice	tags, removing some apps...)</change>
+         <change when="2020-08-18" who="part:masc">Modifications in view of xslt transformation (choice tags, removing some apps...)</change>
          <change when="2020-08-01" who="part:masc">Small update in one śloka</change>
          <change when="2020-07-16" who="part:masc">Encoding all edition with 3 mss., first stage</change>
          <change when="2020-05-21" who="part:masc">Reading div 1 and 2 with argr</change>
@@ -178,15 +167,13 @@
          <change when="2020-05-13" who="part:masc">creation of TEI document</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
-	<body>
-<div xml:id="rsisasana_01">
+   <text xml:space="preserve">
+	<body><div type="edition" xml:lang="kaw-Latn">
 <ab xml:id="rsisasana_01.01" type="invocation" xml:lang="san-Latn"><pb edRef="#A" n="1v"/>//0// om̐ <app><lem type="norm">namaḥ</lem><rdg wit="#A #B #C #D">nama</rdg></app> śivāya //0//</ab>
-</div>
 <div n="1" type="chapter" xml:id="rsisasana_02">
 	<head type="editorial" xml:lang="eng">Introduction (<foreign>maṅgala</foreign>)</head>
 	<lg xml:id="rsisasana_02.01" met="upajāti">
-		<l n="a"><app><lem type="norm">nr̥po</lem><rdg wit="#B #A #D #C">nr̥paḥ</rdg></app><!-- check wit on rdg --> manuḥ <app><lem wit="#B">pūrvakadevatāsīt</lem><rdg wit="#A">pūrvvatadevata:<unclear>s</unclear>ət</rdg><rdg wit="#C #D">pūrvvatadetasət</rdg><note>Note the use of the term <foreign>devatā</foreign>, which is used in epigraphy within curse formulas since the Central Javanese period (inscriptions of Mantyasih from 829 Śaka, Sugih Manek from 837 Śaka) to invoke the spirits of royal ancestors (<bibl><ptr target="bib:Naerssen1976_01"/><citedRange>301-302</citedRange></bibl>; <bibl><ptr target="bib:Casparis+Mabbett1999_01"/><citedRange>310</citedRange></bibl>). In the Mantyasih inscription of king Balitung we find a clear illustration of the inclusion of the names of deceased rulers under the designation <foreign>rahyaṅta rumuhun</foreign>, a formula which is later replaced by <foreign>devata prasiddha</foreign>.</note></app><!--Note which rather pertains to the translation div, see notes in article by AG and EC on Laguna copperplate for discussion of devata.-->,</l>
+		<l n="a"><app><lem type="norm">nr̥po</lem><rdg wit="#B #A #D #C">nr̥paḥ</rdg></app><!-- check wit on rdg --> manuḥ <app><lem wit="#B">pūrvakadevatāsīt</lem><rdg wit="#A">pūrvvatadevata:<unclear>s</unclear>ət</rdg><rdg wit="#C #D">pūrvvatadetasət</rdg><note>Note the use of the term <foreign>devatā</foreign>, which is used in epigraphy within curse formulas since the Central Javanese period (inscriptions of Mantyasih from 829 Śaka, Sugih Manek from 837 Śaka) to invoke the spirits of royal ancestors (<bibl><ptr target="bib:Naerssen1976_01"/><citedRange>301-302</citedRange></bibl>; <bibl><ptr target="bib:Casparis+Mabbett1992_01"/><citedRange>310</citedRange></bibl>). In the Mantyasih inscription of king Balitung we find a clear illustration of the inclusion of the names of deceased rulers under the designation <foreign>rahyaṅta rumuhun</foreign>, a formula which is later replaced by <foreign>devata prasiddha</foreign>.</note></app><!--Note which rather pertains to the translation div, see notes in article by AG and EC on Laguna copperplate for discussion of devata.-->,</l>
 		<l n="b"><app><lem type="norm">dattvā</lem><rdg wit="#A">da:tva</rdg><rdg wit="#B">datva</rdg><!-- add readings of other witnesses --></app>
 		<app><lem type="emn">suśāstraṁ</lem><rdg wit="#B #A #D">suśa:ntraṁ*</rdg><rdg wit="#C">suśantraṅ</rdg></app>
 		<app><lem type="norm">śivaśāsanākhyam</lem><rdg wit="#A">śiva:śa:śanakyaṁ*</rdg><rdg wit="#B">sivasasanakiyam</rdg><rdg wit="#C #D">śaṣakyəṅ</rdg></app>,</l>
@@ -280,7 +267,7 @@ These catur-paramitā, i.e. metrī (friendliness), karuṇā (compassion), mudit
 <div n="4" type="chapter" xml:id="rsisasana_05">
 	<head type="editorial" xml:lang="eng">Privileges: ownership of controlled types of property</head>
 	<p xml:id="rsisasana_05.01">
-		muvah vənaṅ sir<app><lem type="norm">āpaṭāraṇa</lem><rdg wit="#A #B #C">a:patharaṇa</rdg><note>The normalized spelling follows OJED, although the epigraphical record shows a preponderance for spelling <foreign>pataraṇa</foreign> with dental t and short a.</note></app> <app><lem wit="#A #C">kuniṅ</lem><rdg wit="#B">kunəṁ</rdg></app>, <app><lem wit="#A #C">asurāga kuniṅ</lem><rdg wit="#B">asaraga kunəṁ</rdg></app> <!--OJED has asuraga with short a, depends on editorial policy-->, <app><lem wit="#A #C">apayuṅ joṅ kuniṅ</lem><rdg>saprakara apayuṅ kuniṅ</rdg></app>, saprakāra, arəgaṅa, <app><lem>acuriṅa</lem><rdg wit="#A #C"><gap/></rdg></app>, muvah yadyapin sira katəkana <app><lem wit="#B">pati</lem><rdg wit="#A #C">mati</rdg></app> riṅ patapan,
+		muvah vənaṅ sir<app><lem type="norm">āpaṭāraṇa</lem><rdg wit="#A #B #C">a:patharaṇa</rdg><note>The normalized spelling follows OJED, although the epigraphical record shows a preponderance for spelling <foreign>pataraṇa</foreign> with dental t and short a.</note></app> <app><lem wit="#A #C">kuniṅ</lem><rdg wit="#B">kunəṁ</rdg></app>, <app><lem wit="#A #C">asurāga kuniṅ</lem><rdg wit="#B">asaraga kunəṁ</rdg></app> <!--OJED has asuraga with short a, depends on editorial policy-->, <app><lem wit="#A #C">apayuṅ joṅ kuniṅ</lem><rdg wit="#B">saprakara apayuṅ kuniṅ</rdg></app>, saprakāra, arəgaṅa, <app><lem>acuriṅa</lem><rdg wit="#A #C"><gap/></rdg></app>, muvah yadyapin sira katəkana <app><lem wit="#B">pati</lem><rdg wit="#A #C">mati</rdg></app> riṅ patapan,
 		salviraniṅ kavvaṅanira, lvirnya, taṇḍa rakryan, paməgət, hulun aji, mantri,<!--Mention superfluous repetition in #B?--> rājaputra, rājaputrī, ṅuniveh taṅ sarvajanma, mambaṅ, havaṅ, *<app><lem type="norm">parasi</lem><rdg wit="#A #B #C">paraṣi</rdg><note>This ethnonym is rare but not absent from Old Javanese inscriptions. Damais (<bibl rend="omitname"><ptr target="bib:Damais1970_01"/><citedRange>758</citedRange></bibl>) records four occurrences in Old Javanese inscriptions, and one in an Old Sundanese manuscript (<bibl><ptr target="bib:Holle1867_01"/><citedRange>459</citedRange></bibl>). It also appears in the Dharma Pātañjala (210.1), within a list of foreigners travelling overseas to Java. In this last text, it is also juxtaposed with <foreign>uñjəman</foreign>, a term which denotes another category of Persians (perhaps non-Zoroastrians?).</note></app>, uñjəman, *<app><lem wit="#A">karṣa</lem><rdg wit="#C">karṣma</rdg><rdg wit="#B">kasar·</rdg></app><!-- SKK 11.32: parasi, mәsir, samudra, (610)baṅgala, makasar, (611)pahaṅ, (612)palembaṅ, (613)siәm, (614)kalatәn, baṅka, (615)buvun, (616)betәn,
 -->, *juhut, *<app><lem cert="low">bahijən</lem><note>This series of three terms are not listed in OJED and probably warrant emendation. Possible lessons are <foreign>kutak</foreign>, <foreign>kuruṅ</foreign>, <foreign>kliṅ</foreign>, <foreign>judi</foreign>, <foreign>jalir</foreign>, <foreign>pabəsar</foreign>, all terms appearing among lists of foreigners in inscriptions from the 9th to the 15th century.</note></app>, <app><lem wit="#B">tumutuṅ</lem><rdg wit="#A #C">tumut taṅ</rdg><note>See OJED mututuṅ?</note></app> janma *savūk-savūk, *<app><lem wit="#A #B">hiṇḍavan</lem><rdg wit="#C">hiṅḍavan</rdg></app>, mumuhan, sulap, timur,
 		<app><lem wit="#B">marivuṅ</lem><rdg wit="#A #C">parivnaṅ</rdg></app><!--Reconsider? Tim and Aditia refer to prasasti Kaladi: a kind of hill tribe., see lists in inscriptions of Kediri, Kemūlan: (7) tuluṅ hutaṅ pobhaya paprāyāścitta kḍi valyan vidu maṅiduṅ sambal sumbul hulun haji jəṅgi timur siṅga (d) vuluṅ-vuluṅ vatək i jro Ityaivamādi, and EB: 1. ṅanyan vvaya para senāpati, ser nāyaka‚ parajuru, paravadvahaji, amanahagaṇḍi, hulun haji, tarahan timur, pabr̥si, sumbat gulma‚ silihan, humalintaṅ ri thāninya, mamalaku 2. skul, aveha ikaṅ karāman amaṅana; also in Balawi (and other Majapahit period inscriptions) for a list of pujut, jəṅgi including maṅiduṅ.-->, pujut, jəṅgi, boṇḍan, aluṅ, kəmir, kəḍi, valyan, saprakāraniṅ janmanya,
@@ -639,7 +626,7 @@ we expect ghr̥ta-tilāhuti, with a and u
     saṅ panevasikan, kumayatnakəna saṅ hyaṅ sevasasana, katəguhakəna remba
     nugraha saṅ atita prabu, mvaṅ pagəhny adnja śrī maharaja // see mulakarya in Balinese inscriptions, Wisseman Christie 2009: 157, in the context of claims being made for different kinds of debts: there is one "for the mūlakarya-rituals" according to JWC-->
     hayva mpuṅku saṅ <app><lem wit="#B">pinakaviku</lem><rdg wit="#A #C">sinakaviku</rdg></app> pinintan *lvir-lvir, apan gave i jəro ṅaranikā, maṅkanā deyanika saṅ <app><lem wit="#B">citrakāra</lem><rdg wit="#A #C">citraṁka:ra</rdg></app>, səḍaṅ ampuṅku riṅ kaśaivan, pātrakāsihana gavaya vimāna,
-		<app><lem type="conj">paliddha</lem><rdg wit="#A #C">paliḍura</rdg><note>See supra note X.</note></app>, paṅhavvan, palaṅka, salvirniṅ <app><lem><supplied reason="lost" evidence="conjecture"><gap/></supplied></lem><note>A rather long passage seems to be missing here. The preceding objects appear in epigraphy in lists of ornaments which the beneficiary of grants are allowed to display, so one would expect a term for a general category of objects to follow after <foreign>salvirniṅ</foreign>.</note></app><!--finish to draft up this note here and in EGD--> hyaṅ r̥ṣiśāsana, katəguhakna de saṅ aneṅ āśramanira sovaṅ-sovaṅ, ṅuniveh katəmvaniṅ <!--#C: katəmaniṅ--> strī laraṅan, tan dayan ata saṅ r̥ṣi, siṅ <app><lem wit="#B">mara riṅ</lem><rdg wit="#A #C">masiṁ</rdg></app> patapan,
+		<app><lem type="conj">paliddha</lem><rdg wit="#A #C">paliḍura</rdg><note>See supra note X.</note></app>, paṅhavvan, palaṅka, salvirniṅ <app><lem><supplied reason="lost"><gap/></supplied></lem><note>A rather long passage seems to be missing here. The preceding objects appear in epigraphy in lists of ornaments which the beneficiary of grants are allowed to display, so one would expect a term for a general category of objects to follow after <foreign>salvirniṅ</foreign>.</note></app><!--finish to draft up this note here and in EGD--> hyaṅ r̥ṣiśāsana, katəguhakna de saṅ aneṅ āśramanira sovaṅ-sovaṅ, ṅuniveh katəmvaniṅ <!--#C: katəmaniṅ--> strī laraṅan, tan dayan ata saṅ r̥ṣi, siṅ <app><lem wit="#B">mara riṅ</lem><rdg wit="#A #C">masiṁ</rdg></app> patapan,
 		kadyaṅganiṅ caturjanma, brāhmaṇa, kṣatriya, vaiśya, śūdra,
 	<app>
 		<lem wit="#A #C">macaṅkramāta riṅ patapan, amava sabhūṣaṇanya <!--subhūṣaṇānya: significant variant?-->,
@@ -661,7 +648,7 @@ tan deyən· baryya-baryya śīla molah-ulaḥ, tan· paṅalapa (sa)linaraṅan
 		i sira mpu riṅ patapan, ṅuniveh ikaṅ sāmānya-janma kabeh, <app><lem wit="#A #B #C">sakāṅkus</lem><rdg wit="#C">sakaṅkup</rdg></app><!--Check #A and #B--> deniṅ sayavadvīpamaṇḍala,
 	</p>
 	<p xml:id="rsisasana_15.02">
-		tan paṅavun-avuna, tan <app><lem wit="#A #C">panisik-nisika</lem><rdg wit="#B">panik-nisika</rdg></app>, tan muṅil-muṅila, tan <app><lem wit="#B">panahi-tikusa</lem><rdg wit="#A #C">pahitikusa</rdg></app>, tan <app><lem wit="#B">paguṇa-doṣa</lem><rdg wit="#A #C">paṅguṇa-doṣa</rdg></app><!--upper folio L580--> <app><lem wit="#B">sirāmpu</lem><rdg wit="#A #C">Arampu</rdg></app> ri patapan, tan kəna sira riṅ <app><lem wit="#A #B">ivak hyaṅ</lem><rdg>ivak i hyaṁ</rdg></app>, apan ya sakahananira juga, <app><lem wit="#B">kṣetra svatantra, tan paṅekadeśa kavənaṅnira, tan pahiṅan kaliṅanya yan iṅ paradeśa sakabalanya-balanya, sakasīmanya-sīmanya, sakadharmanya-dharmanya, nitya laṅgəṅa juga</lem><note type="altLem">kṣetra...juga</note><rdg wit="#A #C" cause="eye-skip"><gap/></rdg><note>Emend <foreign>sakabala-balanya</foreign>, etc.?</note></app> kavənaṅnira mpu riṅ patapan, apan uvus <app><lem wit="#A #C #B">kr̥tānugrahanira</lem><note>Or emend <foreign>kr̥tānugraha sira</foreign>? See other examples in <foreign>Agastyaparva</foreign> where we have -nira instead of expected sira.</note></app> denira rahyaṅta saṅ apūrbvacakra <app><lem wit="#B #C">riṅ</lem><rdg wit="#A">ri</rdg></app> mḍaṅ, tlas karuhun ikaṅ saṅaskāranira ri saṅ hyaṅ śivopakaraṇa, brata, <!--#C has śivopakaraṇa-brata--> <app><lem wit="#A #B">tapa</lem><rdg wit="#C">tama</rdg></app>, samādhi, i kaləpasaniṅ <app><lem wit="#A #B">pāpanikaṅ</lem><rdg wit="#C">pa:ma</rdg></app> sarva-janma mānuṣa kabeh,
+		tan paṅavun-avuna, tan <app><lem wit="#A #C">panisik-nisika</lem><rdg wit="#B">panik-nisika</rdg></app>, tan muṅil-muṅila, tan <app><lem wit="#B">panahi-tikusa</lem><rdg wit="#A #C">pahitikusa</rdg></app>, tan <app><lem wit="#B">paguṇa-doṣa</lem><rdg wit="#A #C">paṅguṇa-doṣa</rdg></app><!--upper folio L580--> <app><lem wit="#B">sirāmpu</lem><rdg wit="#A #C">Arampu</rdg></app> ri patapan, tan kəna sira riṅ <app><lem wit="#A #B">ivak hyaṅ</lem><rdg wit="#C">ivak i hyaṁ</rdg></app>, apan ya sakahananira juga, <app><lem wit="#B">kṣetra svatantra, tan paṅekadeśa kavənaṅnira, tan pahiṅan kaliṅanya yan iṅ paradeśa sakabalanya-balanya, sakasīmanya-sīmanya, sakadharmanya-dharmanya, nitya laṅgəṅa juga</lem><note type="altLem">kṣetra...juga</note><rdg wit="#A #C" cause="eye-skip"><gap/></rdg><note>Emend <foreign>sakabala-balanya</foreign>, etc.?</note></app> kavənaṅnira mpu riṅ patapan, apan uvus <app><lem wit="#A #C #B">kr̥tānugrahanira</lem><note>Or emend <foreign>kr̥tānugraha sira</foreign>? See other examples in <foreign>Agastyaparva</foreign> where we have -nira instead of expected sira.</note></app> denira rahyaṅta saṅ apūrbvacakra <app><lem wit="#B #C">riṅ</lem><rdg wit="#A">ri</rdg></app> mḍaṅ, tlas karuhun ikaṅ saṅaskāranira ri saṅ hyaṅ śivopakaraṇa, brata, <!--#C has śivopakaraṇa-brata--> <app><lem wit="#A #B">tapa</lem><rdg wit="#C">tama</rdg></app>, samādhi, i kaləpasaniṅ <app><lem wit="#A #B">pāpanikaṅ</lem><rdg wit="#C">pa:ma</rdg></app> sarva-janma mānuṣa kabeh,
 	</p>
 </div>
 <div n="15" type="chapter" xml:id="rsisasana_16">
@@ -685,6 +672,21 @@ vudug, vuta, ajan, edan, lara-laran, busuṅ, tuli, bisu.-->, tan  <app><lem typ
 </div>
 
 <div xml:id="rsisasana_17"><ab xml:id="rsisasana_17.01" type="colophon">iti <app><lem wit="#A #B">saṅ</lem><rdg wit="#C">sa</rdg></app> hyaṅ <app><lem wit="#A #C">r̥ṣiśāsana</lem><rdg wit="#C">R̥ṣiśa:śana <!--<lb/>--><del>Irika: divaśa rahyaṁta ri mḍaṁ, Ampu sidḍa pa:ṇḍita, makon· kumayatnakna, ri kadeyakna hikanaṁ janma manuṣa,</del></rdg><rdg wit="#C">R̥śiśa:śana</rdg><note>The fact that the scribe has cancelled the extra text in <ptr target="#A"/> reinforces my impression that it is an interpolation. </note></app></ab></div>
+</div>
+		<div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+       
+
+		<div type="bibliography">
+			<p>Draft edition and TEI encoding by Marine Schoettel (2019–2022). Revisions by Arlo Griffiths &amp; Timothy Lubin.</p>
+			<listBibl> 				
+			<bibl/> 			
+			</listBibl>
+		</div>
 </body>
 </text>
 </TEI>

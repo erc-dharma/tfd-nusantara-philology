@@ -1,41 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
   xml:id="purvadhigama"
-  xml:lang="eng"
-  type="edition">
+  xml:lang="eng">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title type="main" xml:lang="kaw-Latn">Pūrvādhigamaśāsana</title>
-        <title type="sub">Digital Critical Edition and Translation of an Old Javanese Legal
-          Code</title>
-        <editor ref="part:masc">
+        <title type="editorial">Pūrvādhigamaśāsana</title>
+        <!--<title type="sub">Digital Critical Edition and Translation of an Old Javanese Legal
+          Code</title>-->
+        <respStmt>
+          <resp>author of digital edition</resp>
+          <persName ref="part:masc">
           <forename>Marine</forename>
           <surname>Schoettel</surname>
-        </editor>
-        <editor ref="part:argr">
+        </persName>
+          <persName ref="part:argr">
           <forename>Arlo</forename>
           <surname>Griffiths</surname>
-        </editor>
-        <editor ref="part:tilu">
+        </persName>
+          <persName ref="part:tilu">
           <forename>Timothy</forename>
           <surname>Lubin</surname>
-        </editor>
+        </persName></respStmt>
       </titleStmt>
       <publicationStmt>
         <authority>DHARMA</authority>
         <pubPlace>Paris, Jakarta</pubPlace>
-        <idno type="filename">DHARMA_CritEdPurvadhigama</idno>
+        <idno type="filename">DHARMA_CritEdPurvadhigama.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">
             <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To
               view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
               a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,
               94041, USA.</p>
-            <p>Copyright (c) 2019-2025 by Marine Schoettel, Arlo Griffiths &amp; Timothy Lubin.</p>
+            
           </licence>
         </availability>
         <date from="2019" to="2025">2019-2025</date>
@@ -51,15 +52,8 @@
               <idno>Or. 3723 (1)</idno>
               </msIdentifier>
               <physDesc>
-                            <objectDesc>
-                               <p>Palm-leaf (lontar) manuscript. ... leaves in Balinese script.</p>
-                            </objectDesc>
-                            <handDesc>
-                              <handNote xml:id= "L1_H1" scriptRef="class:... maturity:...">
-    		                          <abbr type="hand">L<hi rend="superscript">1</hi>H<hi rend="subscript">1</hi></abbr>
-                                  <p>main hand of the manuscript, ... ink</p>
-                                 </handNote>
-                             </handDesc>
+                    <objectDesc><p/></objectDesc>
+                    <handDesc><p/></handDesc>
                 </physDesc>
             </msDesc>
           </witness>
@@ -73,13 +67,10 @@
           </msIdentifier>
           <physDesc>
                         <objectDesc>
-                           <p>Palm-leaf (lontar) manuscript. ... leaves in Balinese script.</p>
+                           <p/>
                         </objectDesc>
                         <handDesc>
-                          <handNote xml:id= "L2_H1" scriptRef="class:... maturity:...">
-		                          <abbr type="hand">L<hi rend="superscript">2</hi>H<hi rend="subscript">1</hi></abbr>
-                              <p>main hand of the manuscript, ... ink</p>
-                             </handNote>
+                          <p/>
                          </handDesc>
             </physDesc>
           </msDesc>
@@ -92,6 +83,8 @@
                 <!-- <collection>Lontar</collection> -->
                 <idno>L. 585</idno>
               </msIdentifier>
+              <physDesc><objectDesc><p/></objectDesc>
+                <handDesc><p/></handDesc></physDesc>
             </msDesc>
           </witness>
         	<witness xml:id="LSL">
@@ -123,6 +116,7 @@
         					<p>Palm-leaf (lontar) manuscript. 53 leaves in Balinese script, 4 × 53 cm.</p>
         				</objectDesc>
         				<!-- The cover boards also measure 4 cm in height and 53 cm in width. -->
+        			  <handDesc><p/></handDesc>
         			</physDesc>
         		</msDesc>
         	</witness>
@@ -134,6 +128,8 @@
                 <!-- <collection>Lontar</collection> -->
                <idno>L. 881</idno>
           </msIdentifier>
+              <physDesc><objectDesc><p/></objectDesc>
+                <handDesc><p/></handDesc></physDesc>
           </msDesc>
           </witness>
           <witness xml:id="Or4431">
@@ -144,6 +140,8 @@
                 <collection>Special Collections</collection>
                 <idno>Or4431??</idno>
               </msIdentifier>
+              <physDesc><objectDesc><p/></objectDesc>
+                <handDesc><p/></handDesc></physDesc>
             </msDesc></witness>
           <witness xml:id="E">
             <msDesc>
@@ -152,6 +150,8 @@
                 <repository>collection ...</repository>
                 <collection>Lontar</collection>
               </msIdentifier>
+              <physDesc><objectDesc><p/></objectDesc>
+                <handDesc><p/></handDesc></physDesc>           
             </msDesc>
            </witness>
           <witness xml:id="H">
@@ -162,6 +162,8 @@
                 <repository>Lontar</repository>
                 <idno>REM 214-213</idno>
           </msIdentifier>
+              <physDesc><objectDesc><p/></objectDesc>
+                <handDesc><p/></handDesc></physDesc> 
           </msDesc>
           </witness>
         </listWit>
@@ -175,30 +177,31 @@
     </fileDesc>
     <encodingDesc>
       <projectDesc>
-        <p>The project DHARMA has received funding from the European Research Council (ERC) under
-          the European Union's Horizon 2020 research and innovation programme (grant agreement no
-          809994).</p>
-        <p>Encoded following the <ref target="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#">Guide for Encoding Manuscript-Based Critical Editions in the DHARMA Project</ref>.</p>
+        <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
       </projectDesc>
-      <schemaRef type="guide"
-        key="EGCv01"
-        url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-    </encodingDesc>
-    <profileDesc>
-      <langUsage>
-        <language ident="san-Latn">Sanskrit, romanized</language>
-        <language ident="kaw-Latn">Old Javanese, romanized</language>
-      </langUsage>
-    </profileDesc>
-    <revisionDesc>
+      <editorialDecl>        
+        <correction>
+          <p/>
+        </correction>
+        <normalization>
+          <p/>
+        </normalization>
+        <interpretation>
+          <p/>
+        </interpretation>
+      </editorialDecl>
+      <samplingDecl>
+        <p/>
+      </samplingDecl> 
+    </encodingDesc><revisionDesc>
       <change who="part:argr" when="2022-07-06">Took over charge of this file since masc has abandoned her work on it</change>
       <change who="part:axja" when="2021-12-15">Adding the @xml:id to obtain a table of contents</change>
       <change who="part:axja" when="2021-09-13">Updating the encoding pattern with quote element</change>
     </revisionDesc>
   </teiHeader>
-  <text xml:space="preserve" xml:lang="kaw-Latn">
-    <body>
-	<div xml:id="purvadhigama_01"><ab xml:id="purvadhigama_01.01" type="invocation" xml:lang="san-Latn"><app><lem wit="#L1 #L3 #D #Or4431">avighnam astu</lem><rdg wit="#B">|| 0 || nama śivaya || 0 ||</rdg><rdg wit="#E">Avighnam astu tatastu hastu nama</rdg></app></ab></div>
+  <text xml:space="preserve">
+    <body><div type="edition" xml:lang="kaw-Latn">
+	<ab xml:id="purvadhigama_01.01" type="invocation" xml:lang="san-Latn"><app><lem wit="#L1 #L3 #D #Or4431">avighnam astu</lem><rdg wit="#B">|| 0 || nama śivaya || 0 ||</rdg><rdg wit="#E">Avighnam astu tatastu hastu nama</rdg></app></ab>
 <div n="1" type="chapter" xml:id="purvadhigama_02">
 <head type="editorial" xml:lang="eng">Introduction: origin of the Pūrvādhigama</head>
   <p xml:id="purvadhigama_02.01">nihan pūrvādhigama-śāsana śāstra-sāroddhr̥ta, <app><lem wit="#L1 #D #Or4431">pūrvārambha</lem><rdg wit="#B">pūrvarambha</rdg><rdg wit="#E">purvaramā</rdg></app> saṅ təlas vr̥ddhācārya rājapurohita sarvaguṇajña, <foreign xml:lang="san-Latn">bhānu-raśmi-sādr̥śa</foreign><app type="parallel"><lem><foreign xml:lang="san-Latn">-sarva-jana-hr̥daya-tamisra-haraṇa</foreign></lem><note>The same word occurs also in <ptr target="txt:SSMG"/>3.4.5.</note></app>, <foreign xml:lang="san-Latn">sakalāgra-cūḍā-maṇi śirasi <app><lem type="norm">pratiṣṭhita</lem><rdg wit="#L1 #B">pratiṣṭita</rdg><rdg wit="#D">pratiṣṭita<surplus>ta</surplus></rdg><rdg wit="#E">pratistita</rdg></app></foreign><!--keeping this in view of rdg #D--> təkap sahana parācārya śiva kabeh, <foreign xml:lang="san-Latn">kaniṣṭha-madhyamottama</foreign>,</p>
@@ -369,6 +372,20 @@
   </div>
 <div xml:id="purvadhigama_17"><ab type="colophon" xml:id="purvadhigama_17.01">// 0 // iti śivaśāsana sāroddhr̥ta</ab></div>
 
-    </body>
+    </div>
+      <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>            
+          			
+      </div> 
+       		</body>
   </text>
 </TEI>

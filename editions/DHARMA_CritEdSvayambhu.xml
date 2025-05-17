@@ -4,37 +4,32 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:id="svayambhu"
-     xml:lang="eng"
-     type="edition">
+     xml:lang="eng">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Svayambhu</title>
-            <title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>
-            <editor ref="part:argr">
+            <title type="editorial">Svayambhu</title>
+            <!--<title type="sub" subtype="editorial">Digital Critical Edition and Translation of an Old Javanese Juridical Text</title>-->
+           <respStmt>
+             <resp>author of digital edition</resp>
+             <persName ref="part:argr">
                <forename>Arlo</forename>
                <surname>Griffiths</surname>
-            </editor>
-            <editor ref="part:tilu">
+            </persName>
+           <persName ref="part:tilu">
                <forename>Timothy</forename>
                <surname>Lubin</surname>
-            </editor>
-            <respStmt>
-               <resp>structuring of the TEI file</resp>
-               <persName ref="part:argr">
-                  <forename>Arlo</forename>
-                  <surname>Griffiths</surname>
-               </persName>
-            </respStmt>
+            </persName></respStmt>
+            
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
-            <idno type="filename">DHARMA_CritEdSvayambhu</idno>
+            <idno type="filename">DHARMA_CritEdSvayambhu.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Arlo Griffiths &amp; Timothy Lubin.</p>
+                  
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
@@ -107,7 +102,7 @@ Nomor keropak: IIA/3
                 <abbr type="siglum">B</abbr>
                <msDesc>
                  <msIdentifier>
-                   <settlement>XYZ, Bali, Indonesia</settlement>
+                   <settlement>Jalan Wisnu no. 46, Banjar Peken, Desa Peken, Kecamatan Marga, Kabupaten Tabanan, Bali, Indonesia</settlement>
                    <repository>Gria Gede Belayu</repository>
                   <!-- <idno>...</idno> -->
                  </msIdentifier>
@@ -134,105 +129,29 @@ Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisang
                   </bibl>
                </witness>
             </listWit>
-            <listBibl>
-               <biblStruct type="book"
-                           xml:id="Mandlik1886_01"
-                           corresp="https://zotero.org/groups/1633743/items/7TI7IEPB">
-                  <monogr>
-                     <title level="m">Mānava-dharma śāstra</title>
-                     <editor>
-                        <forename>Vishwanath Narayan</forename>
-                        <surname>Mandlik</surname>
-                     </editor>
-                     <author>
-                        <name>Govindaraja</name>
-                     </author>
-                     <imprint>
-                        <pubPlace>Bombay</pubPlace>
-                        <publisher>Ganpat Krishnaji's press</publisher>
-                        <date>1886</date>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-               <biblStruct type="book"
-                           xml:id="Olivelle2005_01"
-                           corresp="https://zotero.org/groups/1633743/items/7XQ47XAA">
-                  <monogr>
-                     <title level="m">Manu's code of law: a critical edition and translation of the Mānava-Dharmásāstra</title>
-                     <author>
-                        <forename>Patrick</forename>
-                        <surname>Olivelle</surname>
-                     </author>
-                     <imprint>
-                        <pubPlace>New York</pubPlace>
-                        <publisher>Oxford University Press</publisher>
-                        <date>2005</date>
-                     </imprint>
-                  </monogr>
-               </biblStruct>
-            </listBibl>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-    <!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-    <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p/>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-         </editorialDecl>
-         <samplingDecl>
-    <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <schemaRef type="guide"
-                    key="EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_IdListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_IdListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturity" matchPattern="(0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-         </listPrefixDef>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-         </langUsage>
-      </profileDesc>
-      <revisionDesc>
+     <encodingDesc>
+       <projectDesc>
+         <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+         <p>Lubin's work has been supported by fellowships from the National Endowment for the Humanities (USA) and the American Council of Learned Societies.</p>
+       </projectDesc>
+       <editorialDecl>        
+         <correction>
+           <p/>
+         </correction>
+         <normalization>
+           <p/>
+         </normalization>
+         <interpretation>
+           <p/>
+         </interpretation>
+       </editorialDecl>
+       <samplingDecl>
+         <p/>
+       </samplingDecl>    
+     </encodingDesc><revisionDesc>
+	  	<change when="2025-01-12" who="part:argr" status="draft">completed first round of editing the text</change>
          <change when="2021-09-13" who="part:axja" status="draft">Updating the encoding pattern with quote element</change>
          <change when="2021-01-13" who="part:argr" status="draft">resolved all validation problems except use of ab for chapter colophons</change>
          <change when="2020-05-29" who="part:axja" status="draft">changing the structure: moving the @source content inside a note @type="parallels"</change>
@@ -241,8 +160,8 @@ Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisang
    </teiHeader>
    <!-- material for notes in TEI header once proper structure has been applied:
 - both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a -->
-   <text xml:space="preserve" xml:lang="kaw-Latn">
-		<body>
+   <text xml:space="preserve">
+		<body><div type="edition" xml:lang="kaw-Latn">
 <div xml:id="svayambhu_01">
   <!-- L: [01-01] || 0 || Avighnam a:stu || 0 || kunaṁ hulaha saṁ prabhu, Uniṅa:nira taṁ vya:[01-02]va:haranikaṁ ra:t·, harovaṅa ta sira brahma:ṇa vihikan maṅa:ji,
   la:van mantri riṁ [01-03] vruḥ maviveka:,
@@ -1041,9 +960,9 @@ yan adharma, kavruhana ika de saṅ <app><lem wit="#L #K">prāgvivāka</lem><rdg
  vənaṅ rumakṣa dravyanya, vehakəna ikaṅ dravya iriya.</p>
  </div>
  <div type="dyad" n="30" xml:id="svayambhu_03.02"><!--
-   L: stri valvavalvan ma:nak· rara{*}y· rakṣa[04-03]nən ika: de saṁ prabhu, stri valva tan pabavebu, stri valu vya:di, makapaṅgvan satya[04-04]nya riṁ jalunya, Ika ta katiga ra:kṣanən de saṁ prabhu, sira haṅilaṅakna yan ana vva[04-05]ṅ a:vama:na hiriya, mataṅhyan maṅkana:,   Ika kasatyan haneriya, pa:vak· bha[04-06]ṭa:ra ḍarmma: katvaṅananira, kunaṁ yan satya Ikaṁ stri, tayva saṁ prabhu parabyapara I[04-07]rika: kabeḥ ||
-K: [5v2b] stri valvavalva§[SH]n manak· raray· rakṣanan ika: de saṁ prabhu, stri valva: tan pabapebu, stri v{u}alu vyadi, makapaṅgvan satya§[5v3]nya riṁ jalunya, Ika: ta katiga ra:kṣanən ḍe saṁ prabhu, sira haṅilaṅakna yan avvaṁṅamana hiri[SH]ya, mataṅhyan maṅkana:, Ika: kasatyan haneriya, pavak bhaṭa:ra ḍarmma: katatvaṅarananira, kunaṁ yan sa[5v4]tya Ikaṅ stri, hayva saṁ prabhu parabyapara: hirika: kabeḥ ||
-M: [5v26] stri valva-valvan manak rare, raksanən ika de saṁ pra[5v27]bu, stri vala tan pabapebu, stri vulu vyadi, makapaṅgavan [5v28] satyanya riṁ jalunya, ika ta katiga raksanən de saṁ prabu, [5v29] sira aṅilaṅakəna yan hana vaṅ avamana i riya, mataṅyan [5v30] maṅkana, ikaṁ kasatyan hane riya, pavak bhatara ḍarma [5v31] katvaṅanira. kunaṁ yan satya kaṁ stri, ayva saṁ prabu [5v32] parabyapara i rika kabeḥ.
+   	L: stri valvavalvan ma:nak· rara{*}y· rakṣa[04-03]nən ika: de saṁ prabhu, stri valva tan pabavebu, stri valu vya:di, makapaṅgvan satya[04-04]nya riṁ jalunya, Ika ta katiga ra:kṣanən de saṁ prabhu, sira haṅilaṅakna yan ana vva[04-05]ṅ a:vama:na hiriya, mataṅhyan maṅkana:,   Ika kasatyan haneriya, pa:vak· bha[04-06]ṭa:ra ḍarmma: katvaṅananira, kunaṁ yan satya Ikaṁ stri, tayva saṁ prabhu parabyapara I[04-07]rika: kabeḥ ||
+	K: [5v2b] stri valvavalva§[SH]n manak· raray· rakṣanan ika: de saṁ prabhu, stri valva: tan pabapebu, stri v{u}alu vyadi, makapaṅgvan satya§[5v3]nya riṁ jalunya, Ika: ta katiga ra:kṣanən ḍe saṁ prabhu, sira haṅilaṅakna yan avvaṁṅamana hiri[SH]ya, mataṅhyan maṅkana:, Ika: kasatyan haneriya, pavak bhaṭa:ra ḍarmma: katatvaṅarananira, kunaṁ yan sa[5v4]tya Ikaṅ stri, hayva saṁ prabhu parabyapara: hirika: kabeḥ ||
+	M: [5v26] stri valva-valvan manak rare, raksanən ika de saṁ pra[5v27]bu, stri vala tan pabapebu, stri vulu vyadi, makapaṅgavan [5v28] satyanya riṁ jalunya, ika ta katiga raksanən de saṁ prabu, [5v29] sira aṅilaṅakəna yan hana vaṅ avamana i riya, mataṅyan [5v30] maṅkana, ikaṁ kasatyan hane riya, pavak bhatara ḍarma [5v31] katvaṅanira. kunaṁ yan satya kaṁ stri, ayva saṁ prabu [5v32] parabyapara i rika kabeḥ.
 	 -->
 	 <quote xml:id="svayambhu_03.02.01" type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg xml:id="svayambhu_03.02.01.01" met="anuṣṭubh">
@@ -1056,18 +975,19 @@ M: [5v26] stri valva-valvan manak rare, raksanən ika de saṁ pra[5v27]bu, stri
 			 </app>
  </listApp>
  </supplied></quote>
- <p xml:id="svayambhu_03.02.02">strī valva-valvan mānak <app><lem wit="#M">rare</lem><rdg wit="#L #K">raray</rdg></app>
- <app><lem wit="#L #M">rakṣanən</lem><rdg wit="#K">rakṣanan</rdg></app> ika de saṅ prabhu,
- strī <app><lem type="emn">valu</lem><rdg wit="#L">valva</rdg><rdg wit="#K">valva:</rdg><rdg wit="#M">vala</rdg></app> tan <app><lem wit="#K #M">pabapebu</lem><rdg wit="#L">pabavebu</rdg></app>,
- strī <app><lem wit="#L #K">valu</lem><rdg wit="#M">vulu</rdg></app> vyādhi,
- <app><lem type="norm">*makapaṅguhan</lem><rdg wit="#L #K">makapaṅgvan</rdg><rdg wit="#M">makapaṅgavan</rdg><note>The same form is found also in <ptr target="#svayambhu_06.02"/>. We do not see any other solution than to ignore the <foreign>ma-</foreign> prefix. Emend <foreign>sakapaṅgihan</foreign>?</note></app> satyanya riṅ jalunya,
+ <p xml:id="svayambhu_03.02.02">strī valva-valvan mānak <app><lem wit="#M #B">rare</lem><rdg wit="#L #K">raray</rdg></app>
+ <app><lem wit="#L #M #B">rakṣanən</lem><rdg wit="#K">rakṣanan</rdg></app> ika de saṅ prabhu,
+ strī <app><lem type="emn">valu</lem><rdg wit="#L #B">valva</rdg><rdg wit="#K">valva:</rdg><rdg wit="#M">vala</rdg></app> tan <app><lem wit="#K #M">pabapebu</lem><rdg wit="#L">pabavebu</rdg><rdg wit="#B">pa<subst><del>gave</del><add place="below">pe</add></subst>bhū</rdg></app>,
+ strī <app><lem wit="#L #K">valu</lem><rdg wit="#M #B">vulu</rdg></app> vyādhi,
+ <app><lem type="norm">*makapaṅguhan</lem><rdg wit="#L #K #B">makapaṅgvan</rdg><rdg wit="#M">makapaṅgavan</rdg><note>The same form is found also in <ptr target="#svayambhu_06.02"/>. We do not see any other solution than to ignore the <foreign>ma-</foreign> prefix. Emend <foreign>sakapaṅgihan</foreign>?</note></app> 
+ <app><lem wit="#L #K #M">satyanya</lem><rdg wit="#B">patyanya</rdg></app> riṅ jalunya,
  ika ta katiga rakṣanən de saṅ prabhu,
- sira aṅilaṅakəna yan <app><lem wit="#L #M">hana vvaṅ avamāna</lem><rdg wit="#K">avvaṁṅamana</rdg></app> iriya,
- <app><lem type="norm">mataṅnyan</lem><rdg wit="#L #K">mataṅhyan</rdg><rdg wit="#K">mataṅyan</rdg></app> maṅkana,
- <app><lem wit="#M">ikaṅ</lem><rdg wit="#L">Ika</rdg><rdg wit="#K">Ika:</rdg></app> kasatyan haneriya,
- pāvak bhaṭāra dharma <app><lem wit="#L">katvaṅananira</lem><rdg wit="#K">katatvaṅarananira</rdg><rdg wit="#M">katvaṅanira</rdg></app>,
- kunaṅ yan satya <app><lem wit="#L #M">ikaṅ</lem><rdg wit="#M">kaṁ</rdg></app> strī,
- <app><lem wit="#M #K">hayva</lem><rdg wit="#L">tayva</rdg></app> saṅ prabhu parabyāpāra irikā kabeh.</p>
+ sira aṅilaṅakəna<!-- #B inserts , --> yan <app><lem wit="#L #M #B">hana vvaṅ avamāna</lem><rdg wit="#K">avvaṁṅamana</rdg></app> iriya,
+ <app><lem type="norm">mataṅnyan</lem><rdg wit="#L #K #B">mataṅhyan</rdg><rdg wit="#M">mataṅyan</rdg></app> maṅkana,
+ <app><lem wit="#M #B">ikaṅ</lem><rdg wit="#L">Ika</rdg><rdg wit="#K">Ika:</rdg></app> kasatyan haneriya,
+ pāvak bhaṭāra dharma <app><lem wit="#L #B">katvaṅananira</lem><rdg wit="#K">katatvaṅarananira</rdg><rdg wit="#M">katvaṅanira</rdg></app>,
+ kunaṅ <app><lem type="emn">yan <supplied reason="omitted">tan</supplied></lem><rdg wit="#L #K #M #B">yan</rdg></app> satya <app><lem wit="#L #K #B">ikaṅ</lem><rdg wit="#M">kaṁ</rdg></app> strī,
+ <app><lem wit="#K #M #B">hayva</lem><rdg wit="#L">tayva</rdg></app> saṅ prabhu parabyāpāra irikā kabeh.</p>
  </div>
  <!-- AG+TL have reached here on 2020-09-11 -->
  <div type="dyad" n="31" xml:id="svayambhu_03.03"><!--
@@ -1123,7 +1043,7 @@ suggested emendations
  </supplied></quote>
  <p xml:id="svayambhu_04.01.02">kunaṅ ikaṅ dravya tan hana saṅ madravya,
    kəkəsana de saṅ prabhu<!-- #M inserts ,--> ikaṅ dravya maṅkana,
-   tluṅ tahun <app><lem wit="#L">lavasanya</lem><rdg wit="#K #M">lavasnya</rdg></app>,
+   təluṅ tahun <app><lem wit="#L">lavasanya</lem><rdg wit="#K #M">lavasnya</rdg></app>,
    yapvan <app><lem wit="#L #M">təka</lem><rdg wit="#K">tkiṁ</rdg></app> <app><lem wit="#M">ikaṅ</lem><rdg wit="#L #K">tikaṁ</rdg></app> madravya,
  aminta i sira,<!-- #L omits , --> vehakəna ikaṅ dravya de saṅ prabhu,
  yapvan alivat <app><lem wit="#L">sakeṅ</lem><rdg wit="#K #M">sakiṁ</rdg></app> tigaṅ tahun,
@@ -1377,7 +1297,7 @@ M: mataṅyan maṅkana inalapnira [7r4] sapanəmunikaṁ vaṁ manəmu paruha, 
  mvaṅ <app><lem wit="#L #M">kinapagəhakən iṅ</lem><rdg wit="#K">kapagəhakniṅ</rdg></app> <app><lem type="norm">thāni</lem><rdg wit="#L #M">tani</rdg><rdg wit="#K">taniṁ</rdg></app> janapada,
  kinapagəhakən iṅ <app><lem type="norm">baṇyāga</lem><rdg wit="#L">bha:nyaga</rdg><rdg wit="#K">na:nyaga:</rdg><rdg wit="#M">banyaga</rdg></app> <app><lem wit="#L #K">kunəṅ</lem><rdg wit="#M">kuni</rdg></app>,
  kinapagəhakən iṅ <app><lem wit="#M">kavatəkanya kunaṅ, ika</lem><rdg wit="#L">kavatəkanya, kunaṁ Ika</rdg><rdg wit="#K">kavatəkanya kunaṁ hika</rdg></app> ta kabeh<!-- #K inserts , --> kapagəhakəna<!-- #K inserts , --> de saṅ prabhu,
- <app><lem type="emn" rend="check">yan</lem><rdg wit="#L #K #M">ya</rdg><note>Or would <foreign>yar i</foreign> be syntactially permissible here, and allow the same translation? Or can <foreign>ika ta kabeh kapagəhakəna de saṅ prabu ya ri svadharma</foreign> stand as equivalent to <foreign>ika ta kabeh kapagəhakəna ya de saṅ prabu ri svadharma</foreign>?</note></app> ri svadharmanya,
+ <app><lem type="emn" rend="check">yan</lem><rdg wit="#L #K #M">ya</rdg><note>Or would <foreign>yar i</foreign> be syntactially permissible here, and allow the same translation? Or can <foreign>ika ta kabeh kapagəhakəna de saṅ prabhu ya ri svadharma</foreign> stand as equivalent to <foreign>ika ta kabeh kapagəhakəna ya de saṅ prabhu ri svadharma</foreign>?</note></app> ri svadharmanya,
  rumakṣa ri svadharmanira yan maṅkana.</p>
  </div>
  <div type="dyad" n="44" xml:id="svayambhu_04.13"><!--
@@ -1880,11 +1800,11 @@ hana tatan hana kahyun yan <app><lem wit="#K #M">huvus</lem><rdg wit="#L">vuhus<
  <p xml:id="svayambhu_05.15.02">hana vvaṅ managih-nagih,
    <app><lem wit="#L #M">tinakvanan</lem><rdg wit="#K">tinakvana:</rdg></app> <app><lem wit="#L #K">kāraṇaniṅ</lem><rdg wit="#M">karaniṁ</rdg></app> <app><lem wit="#L">pihutaṅnya</lem><rdg wit="#K">pahutaṁnya</rdg><rdg wit="#M">pyutaṅnya</rdg></app>,
  tatan sumahur <app><lem wit="#L #M">kapənət</lem><rdg wit="#K">kapət·</rdg></app>,
- <app><lem wit="#K #M">sikəpən</lem><rdg wit="#L">sikən·</rdg></app> yogya <app><lem wit="#L #K">daṇḍan ika</lem><rdg wit="#M">danda ika</rdg></app>,
+ <app><lem wit="#K #M #B">sikəpən</lem><rdg wit="#L">sikən·</rdg></app>,<!-- #B has comma, #L#K#M omit it --> yogya <app><lem wit="#L #K">daṇḍan ika</lem><rdg wit="#M">danda ika</rdg></app>,
  <app><lem wit="#M">satinagihakənanya</lem><rdg wit="#L">satinagiḥ<lb n="07-11"/>nya</rdg><rdg wit="#K">raśa:tinagiha:knanya</rdg></app>
  <app><lem wit="#L #K">ləpihakəna</lem><rdg wit="#M">ṅapihakəna</rdg></app>.
 	kunaṅ ikaṅ anagih<!-- K inserts "," here--> tan <app><lem wit="#M">paṅujarakəna</lem><rdg wit="#L">pahujarakna</rdg><rdg wit="#K">pahujar=rakna</rdg><note>Or could the form <foreign>paüjarakəna</foreign> have been intended by the author?</note></app>,
-  <term xml:lang="san-Latn"><app><lem type="emn">tripakṣa</lem><rdg wit="#L #K #M"><add></add>trisakṣi</rdg><note>All mss. read <foreign>tripakṣa</foreign> in <seg rend="check">§93</seg>.</note></app></term>, <app><lem wit="#L #M">ndya</lem><rdg wit="#K">ṇḍyan·</rdg></app> lvirnya,
+  <term xml:lang="san-Latn"><app><lem type="emn">tripakṣa</lem><rdg wit="#L #K #M">trisakṣi</rdg><note>All mss. read <foreign>tripakṣa</foreign> in <seg rend="check">§93</seg>.</note></app></term>, <app><lem wit="#L #M">ndya</lem><rdg wit="#K">ṇḍyan·</rdg></app> lvirnya,
   sākṣi, likhita, bhukti, yogya sorakəna vicāranya,<!-- #K #M omits "," --> de saṅ prāgvivāka.<note>All witnesses indicate a strong punctuation after <foreign>ləpihakəna</foreign>.</note></p>
  </div>
  <div type="dyad" n="63" xml:id="svayambhu_05.16"><!--
@@ -1948,7 +1868,7 @@ M: [9v24] hana vaṅ aṅas yan pahutaṁ, hana vaṁ managiḥ riṁ tan [9v25]
  </app>,
  apuhaka pva
    <!-- <app><lem type="emn">hapuhaka, kapva</lem><rdg wit="#L">, hapuha:kapva</rdg><rdg wit="#K">, hapuhaka:pva</rdg></app> --> ya pintonakəna<!-- K inserts "," here--> i saṅ brāhmaṇa,
-	 <app><lem wit="#L #M">sākṣyakəna ri</lem><rdg wit="#K">sakṣihakna I</rdg></app> rva tlu.</p>
+	 <app><lem wit="#L #M">sākṣyakəna ri</lem><rdg wit="#K">sakṣihakna I</rdg></app> rva təlu.</p>
  </div>
  <div type="dyad" n="65" xml:id="svayambhu_05.18"><!--
    L: sakveḥnikaṁ pakṣi, hinanahakniṁ praḍaṇa: riṁ vya:[07-20]vahara:, salviriṁṅ ujar tuhu, varahakna riṁ sakṣi, varahaknaṅkv i dla:ha, maṅkana: [07-21] liṁnikaṁ praḍaṇ{ḍ}a || Iti R̥ṇacarita |||
@@ -3940,7 +3860,7 @@ M: [20v25] ikaṁ maṅaku tan aṅgataniṁ mahutaṁ, ikaṁ vaṅ aṅa[20v26
    <rdg wit="#M">sesaniṁ, sesa vəlyan, ika ta kabeḥ yan mati kaṁ mahutaṁ, tan yogya tagihən anaknya</rdg>
    <rdg type="paradosis" wit="#K #M">śeṣaniṅ daṇḍa, śeṣa vlyan, ika ta kabeh, yan matīkaṅ mahutaṅ, tan yogya tagihən hanaknya</rdg>
    <note>The two alternative ways of reading the last sentence,
-	 represented respectively by <ptr target="#L"/> and <ptr target="#K #M"/>, seem equally acceptable. It is remarkable that where <ptr target="#L"/> reads <foreign>śeṣaniṅ tukon</foreign>, <ptr target="#K #M"/> seem to reflect <foreign>śeṣa vlyan</foreign> in their hyparchetype, while they agree with <ptr target="#L"/> on reading <foreign>śeṣaniṅ ḍaṇḍa</foreign>. There is external textual evidence in Perpusnas L882 (<foreign>mvah hutaṅ tan kaliliranā deniṅ putra, hutaṅ tan paputra, hutaṅ totohan, śeṣadaṇḍa, hutaṅ tukon, hutaṅ sajə̄ṅ</foreign>) that might support conjecturing <foreign>śeṣa ḍaṇḍa</foreign> in our text. There is also evidence that <foreign>tukon</foreign> and <foreign>vəlyan</foreign> were felt to be equivalent in this genre of literature UBL Or 5037 (<foreign>ana vvaṅ istrī linamar saptapayu sinrahan ikaṅ tukon mati taṅ istrīkaṅ sinrahan tukon vəlyan ika si baṅavan ika tan vaṅsulakna ikaṅ tukon</foreign>).</note></app>.</p>
+	 represented respectively by <ptr target="#L"/> and <ptr target="#K #M"/>, seem equally acceptable. It is remarkable that where <ptr target="#L"/> reads <foreign>śeṣaniṅ tukon</foreign>, <ptr target="#K #M"/> seem to reflect <foreign>śeṣa vlyan</foreign> in their hyparchetype, while they agree with <ptr target="#L"/> on reading <foreign>śeṣaniṅ ḍaṇḍa</foreign>. There is external textual evidence in Perpusnas L882 (<foreign>mvah hutaṅ tan kaliliranā deniṅ putra, hutaṅ tan paputra, hutaṅ totohan, śeṣadaṇḍa, hutaṅ tukon, hutaṅ sajə̄ṅ</foreign>) that might support conjecturing <foreign>śeṣa ḍaṇḍa</foreign> in our text. There is also evidence in UBL Or 5037 that <foreign>tukon</foreign> and <foreign>vəlyan</foreign> were felt to be equivalent in this genre of literature (<foreign>ana vvaṅ istrī linamar saptapayu sinrahan ikaṅ tukon mati taṅ istrīkaṅ sinrahan tukon vəlyan ika si baṅavan ika tan vaṅsulakna ikaṅ tukon</foreign>).</note></app>.</p>
  </div>
  <div type="dyad" n="142" xml:id="svayambhu_07.34"><!--
 	 L: hutaṁ ginava[16-01]yakn iṁṅ anak·, kapahayvan iṁ kuhumbi donya, ri sḍəṁṅiṁ bapanta lara:, Ika: ta hutaṅiṁṅ ana:[16-02]k maṅkana:, yogya sahuR̥niṁ maṅkana: bapa:nya, pira:kniṁ bapa taḥ panavuranya ||
@@ -4184,9 +4104,9 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
  <note sameAs="txt:EdMaDhaSa2005_08.169">MDhŚ 8.169</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_07.42.03">tlu <app><lem wit="#L #M">lvirniṅ</lem><rdg wit="#K">lvirnin</rdg></app> kasakitan iṅ <app><lem type="emn">parārtha</lem><rdg wit="#L #M">pararṣa:</rdg><rdg wit="#K">para:ṣa</rdg></app>,<!-- #M omits , -->
- ndya ta ya, <app><lem wit="#L #M">sākṣi</lem><rdg wit="#K">kaṁ sakṣi</rdg></app>, maṅaku hutaṅ, <app><lem type="emn">vkaniṅ</lem><rdg wit="#L #K">vkasaniṁṅ</rdg><rdg wit="#M">vəkasaniṅ</rdg></app> ahutaṅ,
-	 kunaṅ ikaṅ vr̥ddhi pat <app><lem wit="#K">kvehnya</lem><rdg wit="#L"><gap reason="omitted"/></rdg><rdg wit="#M">kuvehnya</rdg></app>, lvirnya, <app><lem wit="#L #M">vipra,</lem><rdg wit="#M"><gap reason="omitted"/></rdg></app>, saṅ prabhu, vvaṅ sugih,
+ <p xml:id="svayambhu_07.42.03">təlu <app><lem wit="#L #M">lvirniṅ</lem><rdg wit="#K">lvirnin</rdg></app> kasakitan iṅ <app><lem type="emn">parārtha</lem><rdg wit="#L #M">pararṣa:</rdg><rdg wit="#K">para:ṣa</rdg></app>,<!-- #M omits , -->
+ ndya ta ya, <app><lem wit="#L #M">sākṣi</lem><rdg wit="#K">kaṁ sakṣi</rdg></app>, maṅaku hutaṅ, <app><lem type="emn">vəkaniṅ</lem><rdg wit="#L #K">vkasaniṁṅ</rdg><rdg wit="#M">vəkasaniṅ</rdg></app> ahutaṅ,
+	 kunaṅ ikaṅ vr̥ddhi pat <app><lem wit="#K">kvehnya</lem><rdg wit="#L"><gap reason="omitted"/></rdg><rdg wit="#M">kuvehnya</rdg></app>, lvirnya, <app><lem wit="#L #M">vipra,</lem><rdg wit="#M"><gap reason="omitted"/></rdg></app> saṅ prabhu, vvaṅ sugih,
 	 <app><lem wit="#K #M">vaṇija</lem><rdg wit="#L">vinija:</rdg></app>.</p>
  </div>
  <div type="dyad" n="151" xml:id="svayambhu_07.43"><!--
@@ -4204,9 +4124,9 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
  <note sameAs="txt:EdMaDhaSa2005_08.170">MDhŚ 8.170</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_07.43.02">yadyapin <app><lem type="norm">duhkhaha</lem><rdg wit="#L #K">ḍuka:</rdg><rdg wit="#M">dukaha</rdg></app> saṅ prabhu,
- hayva sira malap dravya<!-- #K inserts , --> tan yukti <app><lem wit="#K">alapənira</lem><rdg wit="#L"><gap reason="omitted"/></rdg><rdg wit="#M">a<locus type="displacement" from="12r2" to="21r2"/>pənira</rdg></app>, yadyapin sukhaha sira, sugiha sira,
- hayva sira tan <app><lem wit="#L #M">maṅalap</lem><rdg wit="#K">malap</rdg></app> ikaṅ dravya yogya alapənira, mon akḍika.</p>
+ <p xml:id="svayambhu_07.43.02">yadyapin <app><lem type="norm">duhkhaa</lem><rdg wit="#L #K">ḍuka:</rdg><rdg wit="#M">dukaha</rdg></app> saṅ prabhu,
+ hayva sira malap dravya<!-- #K inserts , --> tan yukti <app><lem wit="#K">alapənira</lem><rdg wit="#L"><gap reason="omitted"/></rdg><rdg wit="#M">a<locus type="displacement" from="12r2" to="21r2"/>pənira</rdg></app>, yadyapin sukhaa sira, sugiha sira,
+ hayva sira tan <app><lem wit="#L #M">maṅalap</lem><rdg wit="#K">malap</rdg></app> ikaṅ dravya yogya alapənira, mon akəḍika.</p>
  </div>
  <div type="dyad" n="152" xml:id="svayambhu_07.44"><!--
 	 L: kunaṁ saṁ prabhū yan paṅalapa: dr̥ve tan ogya halapənira:, ḍūrb(bh)ala: [17-08]sira yan maṅkana:, Ilaṁ sira: maṅk{o>}e, Ilaṁ sira: dla/+ha\n· ||
@@ -4260,8 +4180,8 @@ M: [21v20] kadi ulaha bhatara yama ulaha saṁ prabu, ayvana kasih [21v21] denir
 </listApp></supplied></quote>
  <p xml:id="svayambhu_07.46.02">kadi <app><lem wit="#K #M">ulaha</lem><rdg wit="#L">Ulahan·</rdg></app> bhaṭāra yama<!--#L inserts ,--> ulaha saṅ prabhu, hayva hana kasih denira, <app><lem wit="#L">hayva hana</lem><rdg wit="#K">Ayva habha:</rdg><rdg wit="#M">Ayvana</rdg></app> kalalis denira.
  <app><lem wit="#L #M">kady aṅganiṅ</lem><rdg wit="#K">kadḍihaṅganiṁ</rdg></app> bhaṭāra yama,<!-- #M omits , --> <app><lem type="emn">mandaṇḍa</lem><rdg wit="#L #M">manaṇḍa</rdg><rdg wit="#K">manaṇḍa:</rdg></app> riṅ pāpa, maveh svarga riṅ mapuṇya,<!-- #K omits , --> maṅkana ta sira,<!-- #M omits , -->
- <app><lem wit="#K #M">duməṇḍaha</lem><rdg wit="#L">duməṇḍata</rdg></app> duṣṭa, <app><lem wit="#K #M">rumakṣaha</lem><rdg wit="#L">rumakṣata</rdg></app> sādhu, hayvāgə̄ṅ krodha sira,
- hayva tumut riṅ <app><lem type="conj" rend="check">asihiṅ indriya</lem><rdg wit="#L">hasihiṁṅiṁya</rdg><rdg wit="#K">hasihiṅiṁya</rdg><rdg wit="#M">iya</rdg></app> sira.</p>
+ <app><lem type="norm">dumaṇḍaa</lem><rdg wit="#L">duməṇḍata</rdg><rdg wit="#K #M #B">duməṇḍaha</rdg></app> duṣṭa, <app><lem type="norm">rumakṣaa</lem><rdg wit="#L">rumakṣata</rdg><rdg wit="#K #M">rumakṣaha</rdg></app> sādhu, hayvāgə̄ṅ krodha sira,
+ hayva tumut riṅ <app><lem type="conj" rend="check">asihiṅ indriya</lem><rdg wit="#L">hasihiṁṅiṁya</rdg><rdg wit="#K">hasihiṅiṁya</rdg><rdg wit="#M #B">iya</rdg></app> sira.</p>
 </div><div type="dyad" n="155" xml:id="svayambhu_07.47"><!--
 L: kunaṁ saṁ prabhū, yan gumavayakən ikaṁ Aḍarmma:, puṅguṁ hetunira:, śi[17-16]ghra Alaḥ sira deniṁ śatru maṅkana: halanya,
 K: kunaṁ saṁ prabhu, yan gumavayakən ikaṁ haḍa:rmma:, puṅguṁ hetunira, śighra: halaḥ sira deniṁ śa§[SH]tru, halanya yan maṅkana: ||
@@ -4277,13 +4197,14 @@ M: [21v25] kunaṁ saṁ prabu yan gumavayakən ikaṅ adarma, puṅguṅ [21v26
  <note sameAs="txt:EdMaDhaSa2005_08.174">MDhŚ 8.174</note>
 			 </app>
 </listApp></supplied></quote>
-<p xml:id="svayambhu_07.47.02">kunaṅ saṅ prabhu,<!-- #M omits , --> yan gumavayakən ikaṅ adharma, puṅguṅ hetunira, śīghra <app><lem wit="#L #K">alah</lem><rdg wit="#M">kalah</rdg></app> sira deniṅ śatru,<!-- #L #M omit , --> <app><lem wit="#L">maṅkana halanya</lem><rdg wit="#K #M" cause="syntactic">halanya yan maṅkana</rdg><note>The phrasing transmitted by <ptr target="#K #M"/> would be suitable only if what follows stated a negative consequence.
+<p xml:id="svayambhu_07.47.02">kunaṅ saṅ prabhu,<!-- #M omits , --> yan gumavayakən ikaṅ adharma, puṅguṅ hetunira, śīghra <app><lem wit="#L #K">alah</lem><rdg wit="#M #B">kalah</rdg></app> sira deniṅ śatru,<!-- #L #M #B omit , --> <app><lem wit="#L">maṅkana halanya</lem><rdg wit="#K #M #B" cause="syntactic">halanya yan maṅkana</rdg><note>The phrasing transmitted by <ptr target="#K #M #B"/> would be suitable only if what follows stated a negative consequence.
 Cf. <ref target="#svayambhu_07.20">§128</ref>
 <foreign>halanya yan kalavasan, lələb mvaṅ hinaku de saṅ patuvavan</foreign>.</note></app>.<!-- #L has plain , here --></p>
 </div><div type="dyad" n="156" xml:id="svayambhu_07.48"><!--
-L: kunaṁ hulahaniṁ saṁ prabhū, pgəṁni[17-17]ran tikaṁ hyun·, mvaṁ kroda hiṅətaknanira Ikaṁ dr̥vya yo/gya\ halapənira: Ika: ta sira saṁ [17-18]prabhū tinut deniṁ rat kabeḥ, kadi vyahniṁ milv asin· yan təkeṁ tasik· ||
+L: kunaṁ hulahaniṁ saṁ prabhū, pgəṁni[17-17]ran tikaṁ hyun·, mvaṁ kroda hiṅətaknanira Ikaṁ dr̥vya yo/gya\ halapənira: Ika: ta sira saṁ [17-18]prabhū tinut deniṁ rat kabeḥ, kadi vyahniṁ milv asin· yan tǝkeṁ tasik· || 
 K: kunaṁ hulaha: saṁ prabhu, pgəṁnira:n hikaṁ hyun·, mvaṁ kroḍḍa:, Iṅətakna:nira, Ika dr̥vya y[22r1]ogya:lapənira, Ika: ta saṁ prabhu, tinut sira deniṁ ra:t kabeḥ, kaḍi vyaniṁ lvaḥ yan· tkeṁ ta§[SH]sik· ||
-M: [21v27] kunaṁ ulaha saṁ prabu, pagəḥnira ikaṁ hyun mvaṁ kroda, [21v28] iṅətakənanira ikaṁ drəvya yogyalapənira. ika ta saṁ prabu [21v29] maṅkana, tinut sira denikaṁ rat kabeḥ, kadi vyaniṁ lvaḥ, [21v30] milv asin yan təkeṁ tasik.
+M: kunaṁ hu[SH]laha saṁ prabhu, pagəḥnira hikaṁ hyun· mvaṁ kroḍa, Iṅətaknanira hikaṁ dr̥vya: yogya:lapənira, Ika: ta saṁ prabhu ma[21v4]ṅkana, tinūt sira denikaṁ ra:t kabeḥ, kadi vya:hniṁ lvaḥ, milv asin· yan təkeṁ tasik·.
+B: kunaṁ hulaḥha saṁ prabhū, pgəṁnira hikaṁ hyun·, mvaṅ kroḍa, Iṅətakna[51r1]nira Ikaṁ dr̥vya: yogya halapənira, Ika: ta saṁ prabhū maṅkana, tinūt sira deniṁ ra:t kabeḥ, kadi vya:hniṁ [SH]lva, milv a:sin yan· tkeṅ tasik·.
 	 -->
 	 <quote xml:id="svayambhu_07.48.01" type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg xml:id="svayambhu_07.48.01.01" met="anuṣṭubh">
@@ -4295,21 +4216,25 @@ M: [21v27] kunaṁ ulaha saṁ prabu, pagəḥnira ikaṁ hyun mvaṁ kroda, [21
  <note sameAs="txt:EdMaDhaSa2005_08.175">MDhŚ 8.175</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_07.48.02">kunaṅ <app><lem wit="#K #M">ulaha saṅ</lem><rdg wit="#L">hulahaniṁ saṁ</rdg></app> prabhu,
- <app><lem type="emn">pəgəṅənira ikaṅ</lem><rdg wit="#K">pgəṁniran tikaṁ</rdg><rdg wit="#K">pgəṁnira:n hikaṁ</rdg><rdg wit="#M">pagəḥnira Ikaṁ</rdg></app>
+ <p xml:id="svayambhu_07.48.02">kunaṅ <app><lem wit="#K #M #B">ulaha saṅ</lem><rdg wit="#L">hulahaniṁ saṁ</rdg></app> prabhu,
+ <app><lem type="emn">pəgəṅənira ikaṅ</lem><rdg wit="#K">pgəṁniran tikaṁ</rdg><rdg wit="#K">pgəṁnira:n hikaṁ</rdg><rdg wit="#M">pagəḥnira Ikaṁ</rdg><rdg wit="#B">pgəṁnira hikaṁ</rdg></app>
  hyun,<!-- #M omits , --> mvaṅ krodha,<!-- #L omits , -->
- iṅətaknanira<!-- #K inserts, --> <app><lem wit="#L #M">ikaṅ</lem><rdg wit="#K">ika</rdg></app> dravya yogya alapənira,<!-- #L omits , -->
+ iṅətakənanira<!-- #K inserts, --> <app><lem wit="#L #M #B">ikaṅ</lem><rdg wit="#K">ika</rdg></app> dravya yogya alapənira,<!-- #L omits , -->
  <app>
-  	<lem wit="#K">ika ta saṅ prabhu, tinut <seg type="highlight">sira</seg> deniṅ rat kabeh</lem>
+  	<lem wit="#B">ika ta saṅ prabhu maṅkana, tinūt sira deniṅ rāt kabeh</lem>
     <rdg wit="#L" cause="transposition">Ika: ta <seg type="highlight">sira</seg> saṁ prabhū tinut deniṁ rat kabeḥ</rdg>
-  	<rdg wit="#M">ika ta saṁ prabu <seg type="highlight">maṅkana</seg>, tinut <seg type="highlight">sira</seg> de<seg type="highlight">nikaṁ</seg> rat kabeḥ</rdg>
+	<rdg wit="#K">ika ta saṅ prabhu, tinut <seg type="highlight">sira</seg> deniṅ rat kabeh</rdg>
+  	<rdg wit="#M">Ika: ta saṁ prabhu ma<lb n="21v4"/>ṅkana, tinūt sira <seg type="highlight">denikaṁ</seg> ra:t kabeḥ</rdg>
   </app>,
-kadi <app><lem type="norm">vvainiṅ</lem><rdg wit="#L">vyahniṁ</rdg><rdg wit="#K #M">vyaniṁ</rdg></app> <app><lem wit="#M">lvah, milv asin</lem><rdg wit="#L">milv asin·</rdg><rdg wit="#K">lvaḥ</rdg></app> yan təkeṅ tasik.</p>
+kadi <app><lem type="emn">vvay ahəniṅ<supplied reason="omitted">niṅ</supplied></lem><rdg wit="#L">vyahniṁ</rdg><rdg wit="#M #B">vya:hniṁ</rdg><rdg wit="#K #M">vyaniṁ</rdg><note>The emendations we make and the entire syllable that we supply are required by the sense of the passage and supported by some parallel expressions, notably <title>Ādiparva</title> (p. 65) <foreign>inuparəṅga riṅ nadī śuci nirmala, sutīrtha venya mahəniṅ</foreign> and (p. 195) <foreign>pinarivr̥tta deniṅ lvah śuci nirmala mahəniṅ venya</foreign>.</note></app>
+<app><lem wit="#K #M">lvah</lem><rdg wit="#L"><gap reason="omitted"/></rdg><rdg wit="#B">lva</rdg></app>, 
+<app><lem wit="#L #M #B">milv asin</lem><rdg wit="#K"><gap reason="omitted"/></rdg></app> yan təkeṅ tasik.</p>
  </div>
  <div type="dyad" n="157" xml:id="svayambhu_07.49"><!--
-	 L: Ikaṁ voṁ [17-19]kinon managiḥnagiḥ, kḍənya tikaṁ mahutaṁ, vijilikaṁ pihutaṁ denya, hanaka[17-20]R̥pisaṁ tumonya, hikaṁ kinonkon maṅkana:, yogya ḍaṇḍa de saṁ prabhū, [17-21]sapapa:nikaṁ tinagihakənya ḍaṇḍanya, hikaṁ pihutaṁ senalapnya, veha[17-22]kən riṁ saṁ makon·, t:hər tan upahana: ||
-	K:  Ikaṁ vvaṁ kinon managiḥnagiḥ, kḍənya hikaṁ mahutaṁ, vijil iṁka pihutaṁ denya, Ana: kahaR̥pisana: ku[22r2]monya, Ikaṁ kinonkon maṅkana:, ḍaṇḍa yogya de saṁ prabhu, sata:pan tinagiḥhakənya ḍaṇḍanya, hikaṁ [SH] pihutaṁ senalapnya, vehaknanya riṁ saṁ makon·, t:hər tan hapahana: ||
-	M: [21v31] ikaṁ vaṁ kinon managih-nagiha, kədənya tikaṁ mahutaṁ, [21v32] vijilikaṁ pihutaṁ denya, hanakaharəpisaṅ ku,okaṁ kino[22r1]nakən maṅkana, dandan ya de saṁ prabu, sapapanikaṅ [22r2] tinagihakənya, ikaṁ pihutaṁ senalapnya vehakənanya ri saṅ [22r3] makon, təhər tan upalana.
+	L: Ikaṁ voṁ [17-19]kinon managiḥnagiḥ, kḍənya tikaṁ mahutaṁ, vijilikaṁ pihutaṁ denya, hanaka[17-20]R̥pisaṁ tumonya, hikaṁ kinonkon maṅkana:, yogya ḍaṇḍa de saṁ prabhū, [17-21]sapapa:nikaṁ tinagihakənya ḍaṇḍanya, hikaṁ pihutaṁ senalapnya, veha[17-22]kən riṁ saṁ makon·, t:hər tan upahana: || 
+	K:  Ikaṁ vvaṁ kinon managiḥnagiḥ, kḍənya hikaṁ mahutaṁ, vijil iṁ kapihutaṁ denya, Ana:kahaR̥pisana: ku[22r2]monya, Ikaṁ kinonkon maṅkana:, ḍaṇḍa yogya de saṁ prabhu, sata:pan tinagiḥhakənya ḍaṇḍanya, hikaṁ [SH] pihutaṁ senalapnya, vehaknanya riṁ saṁ makon·, t:hər tan hapahana: || 
+	M: Ikaṁ vvaṁ ki⌈[SH]non managiḥ-nagiha:, kdə:nya tikaṁ mahutaṁ, vijil ikaṁ pihutaṁ denya, hanakahaR̥pisaṁ ku,monya, ikaṁ kino§⌈-[22r1]nkon· maṅkana, ḍaṇḍan· ya de saṁ prabhu, sapa:panikaṁ tinagihakənya ḍaṇḍanya, Ikaṁ pihutaṁ senalapnya ⌈ve[SH]haknanya ri saṁ makon·, t:hə:r tan upalana.
+	B: Ikaṁ vvaṁ kinon managiḥ-nagiḥ, kədə:nya tikaṁ mahutaṁ, vijil iṁ kapihutaṁ [51r2]ḍenya, hanakahaR̥pisa kumonya, Ikaṁ  kino{na}nkon maṅkana, ḍaṇḍa yogya de saṁ prabhū, sapapani[SH]kaṁ tinagiḥhakənya ḍaṇḍanya, Ikaṁ pihutaṁ senalapnya vehaknanya ri saṁ makon·, tat:hər nupahana.
 	 -->
 	 <quote xml:id="svayambhu_07.49.01" type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg xml:id="svayambhu_07.49.01.01" met="anuṣṭubh">
@@ -4321,15 +4246,18 @@ kadi <app><lem type="norm">vvainiṅ</lem><rdg wit="#L">vyahniṁ</rdg><rdg wit=
  <note sameAs="txt:EdMaDhaSa2005_08.176">MDhŚ 8.176</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_07.49.02">ikaṅ vvaṅ kinon managih<app><lem wit="#M">-nagiha</lem><rdg wit="#L #K" cause="morphological">-nagih</rdg></app>,
- kədə̄n ya <app><lem wit="#L #M">tikaṅ</lem><rdg wit="#K">hikaṁ</rdg></app> mahutaṅ, <app><lem type="conj">mijilaknikaṅ</lem><rdg wit="#L #M">vijilikaṁ</rdg><rdg wit="#K">vijiliṁka</rdg><note>The paradosis <foreign>vijilikaṅ</foreign> seems unacceptable; our conjecture follows <foreign>kinon ta ya mijilakna sākṣinya</foreign> (div 61).</note></app> pihutaṅ denya,
- <app><lem type="conj">tan sakaharəpnikaṅ</lem><rdg wit="#L #M">hanakaR̥pisaṁ</rdg><rdg wit="#K">Ana:kahaR̥pisana:</rdg></app> <app><lem wit="#K">kumonya, ikaṅ</lem><rdg wit="#L">tumonya, hikaṁ</rdg><rdg wit="#M">ku,okaṁ</rdg>
- <note>It is clear that a part of the error in <ptr target="#M"/> is due to the typist mistyping comma for m.</note></app>
- <app><lem wit="#L #K">kinonkon</lem><rdg wit="#M">kinonakən</rdg></app> maṅkana,
- <app><lem type="emn">yogya daṇḍan</lem><rdg wit="#L">yogya daṇḍa</rdg><rdg wit="#K">ḍaṇḍa yogya</rdg><rdg wit="#M">dandan ya</rdg></app> de saṅ prabhu,
- <app><lem type="emn">sapapātanikaṅ</lem><rdg wit="#L #M">sapapa:nikaṁ</rdg><rdg wit="#K">sata:pan</rdg><note>The transmission has become corrupt due to interference from sentences like <foreign>sapāpaniṅ maliṅ kapaṅguh denira</foreign> (div 42).</note></app> tinagihakənya <app><lem wit="#L #K">daṇḍanya</lem><rdg wit="#M"><gap reason="omitted"/></rdg></app>,
- ikaṅ pihutaṅ senalapnya,<!-- #M omits , --> <app><lem wit="#K #M">vehaknanya</lem><rdg wit="#L">vehakən</rdg></app> <app><lem wit="#M">ri</lem><rdg wit="#L #K">riṁ</rdg></app> saṅ makon,
- təhər tan <app><lem wit="#L">upahana</lem><rdg wit="#K">hapahana:</rdg><rdg wit="#M">upalana</rdg></app>.
+ <p xml:id="svayambhu_07.49.02">ikaṅ vvaṅ kinon managih<app><lem wit="#L #K #B">-nagih</lem><rdg wit="#M" cause="morphological">-nagiha:</rdg></app>,
+ kədə̄nya <app><lem wit="#L #M #B">tikaṅ</lem><rdg wit="#K">hikaṁ</rdg></app> mahutaṅ, 
+ <app><lem type="emn">mijil</lem><rdg wit="#L #K #M #B">vijil</rdg></app>
+ <!-- The paradosis <foreign>vijilikaṅ</foreign> seems unacceptable; our conjecture follows <foreign>kinon ta ya mijilakna sākṣinya</foreign> (div 61). --> 
+ <app><lem wit="#L #M">ikaṅ pihutaṅ</lem><rdg wit="#K #B">iṁ kapihutaṁ</rdg></app> denya,
+ <app><lem type="conj">tan sakaharəpnikaṅ</lem><rdg wit="#L">hanakaR̥pisaṁ</rdg><rdg wit="#K">Ana:kahaR̥pisana:</rdg><rdg wit="#M">hanakahaR̥pisaṁ</rdg><rdg wit="#B">hanakahaR̥pisa</rdg></app> 
+ <app><lem wit="#K #M #B">ku<!-- #M inserts ,-->monya</lem><rdg wit="#L">tumonya</rdg></app>, 
+ ikaṅ kinonkon maṅkana,
+ <app><lem wit="#M">ḍaṇḍan ya</lem><!-- <lem type="emn">yogya daṇḍan</lem> --><rdg wit="#L">yogya daṇḍa</rdg><rdg wit="#K #B">ḍaṇḍa yogya</rdg></app> de saṅ prabhu,
+ <app><lem type="emn">saparapatanikaṅ</lem><!-- sapapātanikaṅ--><rdg wit="#L #M #B">sapapa:nikaṁ</rdg><rdg wit="#K">sata:pan</rdg><note>The transmission has become corrupt due to interference from sentences like <foreign>sapāpaniṅ maliṅ kapaṅguh denira</foreign> (<seg rend="check">§42</seg>). In <seg rend="check">§20</seg> we have <foreign>saparapatan</foreign> clearly supported by all witnesses, though it is imaginable that our author actually wrote <foreign>sapapātanikaṅ</foreign> here.</note></app> tinagihakənya daṇḍanya,
+ ikaṅ pihutaṅ senalapnya,<!-- #M #B omit , --> <app><lem wit="#K #M #B">vehakənanya</lem><rdg wit="#L" cause="morphological">vehakən</rdg></app> <app><lem wit="#M #B">ri</lem><rdg wit="#L #K">riṁ</rdg></app> saṅ makon,
+ <app><lem wit="#L #K #M">təhər tan</lem><rdg wit="#B">tat:hərn</rdg></app> <app><lem wit="#L #B">upahana</lem><rdg wit="#K">hapahana:</rdg><rdg wit="#M">upalana</rdg></app>.
 </p>
  </div>
  <!-- AG+TL have reached here on 2021-09-19 -->
@@ -4353,7 +4281,7 @@ kadi <app><lem type="norm">vvainiṅ</lem><rdg wit="#L">vyahniṁ</rdg><rdg wit=
 	 <app><lem wit="#L">dadya ya huluna</lem><rdg wit="#K">danya:huluna:</rdg><rdg wit="#M">dadyayanuluna</rdg></app> de saṅ pahutaṅan,
 	 kunaṅ <app><lem wit="#L #K">yan</lem><rdg wit="#M">yaṁ</rdg></app> ləvih janmanya,<!-- #M omits , -->
 	  ikaṅ ahutaṅ,<!-- #L #M omit , --> <app><lem wit="#L #K">sakeṅ</lem><rdg wit="#M">saṅke</rdg></app> pradhana,
-		yatnāṅantyakna <app><lem type="conj" rend="check">ta<supplied reason="omitted">n pana</supplied>gih</lem><rdg wit="#L #K #M">tagiḥ</rdg><note>Our provisional conjecture helps solve the problem that <foreign>tagih</foreign> can hardly stand as a noun.</note></app><!-- #L #K #M have , here -->
+		yatnāṅantyakəna <app><lem type="conj" rend="check">ta<supplied reason="omitted">n pana</supplied>gih</lem><rdg wit="#L #K #M">tagiḥ</rdg><note>Our provisional conjecture helps solve the problem that <foreign>tagih</foreign> can hardly stand as a noun.</note></app><!-- #L #K #M have , here -->
 	 manahura<supplied reason="omitted">,</supplied>
 	 <app><lem type="emn">ikaṅ</lem><rdg wit="#L">harikaṁ</rdg><rdg wit="#K">hirikaṁ</rdg><rdg wit="#M">ikaṁkəna</rdg></app> pradhana,
 	 yan sor janmanya.</p>
@@ -4378,11 +4306,11 @@ M: [22r8] ikaṁ vyavavara kaliḥ, sampun teka iniṅət-iṅət de saṅ [22r9
 	 sampun teka <app><lem wit="#K #M">iniṅət-iṅət</lem><rdg wit="#L">hiṅiṅət:hiṅət</rdg></app> de <app><lem wit="#L #K">saṅ prāgvivāka</lem><rdg wit="#M">saṁ saṁ pragivaka</rdg></app>,<!-- #K omits , -->
 	 makanimitta <app><lem wit="#M">kahiḍəpaniṅ</lem><rdg wit="#L">kaI<del>ḍpappa</del>ḍpaniṁ</rdg><rdg wit="#K">kahidəpani</rdg></app>
 	 <app><lem wit="#L #M">varah-varahniṅ</lem><rdg wit="#K">varavaraḥ</rdg></app> sākṣi,
-	 pgataknanira ya,
+	 pəgatakənanira ya,
 	 maka<app><lem wit="#M" rend="hyphenleft">sādhanaṅ</lem><rdg wit="#L">-sadana</rdg><rdg wit="#M">-sḍana:ṅ</rdg></app> āgama,<!-- #L #M omit , -->
 	 <app><lem type="norm">daṇḍa yathāparādhī</lem><rdg wit="#L #M">ḍaṇḍayata:paraḍi</rdg><rdg wit="#K">ḍaṇḍasataparadi</rdg><note>Cf. <foreign>yathāparādha</foreign> in <ptr target="#svayambhu_06.43"/><!-- §108  -->.</note></app>.</p>
  </div>
- <div xml:id="svayambhu_07.52"><ab xml:id="svayambhu_07.52.01" type="colophon">iti <app><lem rend="hyphenright" type="conj">sabhā</lem><rdg wit="#L #K #M">cara:-</rdg><note rend="check">The appearance of the word <foreign>sabhā</foreign> in the sentence supports our conjecture. The similarity of the <foreign>akṣara</foreign>s <foreign>sa</foreign> to <foreign>ca</foreign> and <foreign>bha</foreign> to <foreign>ra</foreign> seems to underlie an error shared here by all mss.</note></app>carita.</ab>
+ <div xml:id="svayambhu_07.52"><ab xml:id="svayambhu_07.52.01" type="colophon">iti <app><lem rend="hyphenright" type="conj">sabhā</lem><rdg wit="#L #K #M">cara:-</rdg><note rend="check">The appearance of the word <foreign>sabhā</foreign> in the next sentence supports our conjecture. The similarity of the <foreign>akṣara</foreign>s <foreign>sa</foreign> to <foreign>ca</foreign> and <foreign>bha</foreign> to <foreign>ra</foreign> seems to underlie an error shared here by all mss.</note></app>carita.</ab>
 </div></div><!-- end of chapter 6-->
 <div type="chapter" n="7" xml:id="svayambhu_08">
 	<head type="editorial">Topic of deposits</head>
@@ -4409,27 +4337,33 @@ M: [22r8] ikaṁ vyavavara kaliḥ, sampun teka iniṅət-iṅət de saṅ [22r9
 </listApp></supplied></quote>
 <!--
 L: [17-29]saṁ prajña mamkasakna matuvava, riṁ yogya, vvaṁṅ akajanmanya, vaṁ satyavacana:, [18-01] paṅ akveḥ kadaṁnya, vaṁ sugiḥ voṁ saḍu || 0 ||
-K: Ikaṁ saṁ prajña mamkasaṇa:, matuvava, riṁ yogya, vvaṅ akajadmanya, vvaṁ sa§[SH]tyavacaṇna, vvaṁ hakveḥ kaḍaṁnya, vvaṁ sugiḥ,  vvaṁ śaḍu ||
-M: [22r13] ika saṁ pradña maməkasakəna patuvava riṁ yogya, vaṅ aka[22r14]vaṅsa kajanmanya, vaṁ satyavacana, saṅ akveḥ kadaṅ[22r15]nya, vaṁ sugiḥ, vaṁ sadu.
+K: Ikaṁ saṁ prajña mamkasaṇa:, matuvava, riṁ yogya, vvaṅ akajadmanya, vvaṁ sa§[SH]tyavacaṇna, vvaṁ hakveḥ kaḍaṁnya, vvaṁ sugiḥ, vvaṁ śaḍu ||
+M: [22r4] Ika saṁ prajña: mamkasakna patuva:va riṁ yogya, vvaṅa:kajanmanya, vvaṁ satyava:cana, vvaṅ akveḥ kadaṁnya, [SH] vvaṁ sugiḥ, vvaṁ sa:ḍu.
+B: Ika: saṁ prajña: mamkasakna matuva:va, riṁ yogya, vvaṅ akajanmanya, vvaṁ satya[SH]vacana, vvaṅ akveḥ kadaṁnya, vvaṁ sugiḥ, vvaṁ saḍu.
  -->
- <p xml:id="svayambhu_08.01.03"><app><lem wit="#L">saṅ</lem><rdg wit="#K">Ikaṁ saṁ</rdg><rdg wit="#M">Ika saṁ</rdg></app> prajña
-	 <app><lem wit="#L #M">maməkasakəna</lem><rdg wit="#K">mamkasaṇa:</rdg></app><!-- #K inserts , -->
-   <app><lem>patuvava</lem><rdg wit="#L #M">matuvava</rdg></app> riṅ yogya, vvaṅ
-   <app><lem type="emn">akavaṅśan kajanmanya</lem>
-    <rdg wit="#L">vvaṁṅ akajanmanya</rdg>
-    <rdg wit="#K">vvaṅ akajadmanya,</rdg>
-    <rdg wit="#M">vaṅ akavaṅsa kajanmanya</rdg>
+ <p xml:id="svayambhu_08.01.03">
+ <app><lem wit="#M #B">ika</lem>
+ <rdg wit="#L" cause="haplography"><gap reason="omitted"/></rdg>
+ <rdg wit="#K">Ikaṁ</rdg>
+ </app> saṅ prajña
+	 <app><lem wit="#L #M #B">maməkasakəna</lem><rdg wit="#K">mamkasaṇa:</rdg></app><!-- #K inserts , -->
+   <app><lem wit="#M">patuvava</lem><rdg wit="#L #K #B">matuvava</rdg></app><!-- #L #K #B insert ,--> riṅ yogya, 
+   <app><lem type="emn">vvaṅ <seg rend="check">akavaṅśan</seg> kajanmanya</lem>
+    <rdg wit="#L #B">vvaṁṅakajanmanya</rdg>
+    <rdg wit="#K">vvaṅakajadmanya</rdg>
+    <rdg wit="#M">vvaṅa:kajanmanya</rdg>
     <note>In <title>Ślokāntara</title> 56, <foreign>kulaja</foreign> is glossed <foreign>ikaṅ vvaṅ yan aluhur kulanya</foreign>.</note>
   </app>,
  vvaṅ satyavacana,
- <app><lem wit="#K">vvaṅ</lem><rdg wit="#L">paṅ</rdg><rdg wit="#M">saṅ</rdg></app> akveh kadaṅnya,
- vvaṅ sugih,<!-- #L omit ,  --> vvaṅ sādhu.</p>
+ <app><lem wit="#K #M #B">vvaṅ</lem><rdg wit="#L">paṅ</rdg></app> akveh kadaṅnya,
+ vvaṅ sugih,<!-- #L omits ,  --> vvaṅ sādhu.</p>
  </div>
  	<!-- AG+TL have reached here on 2021-11-17 -->
  <div type="dyad" n="161" xml:id="svayambhu_08.02"><!--
-   L: Ikaṁ voṁ matuvava dr̥vya, Ikaṁ dr̥[18-02]vya patuvava, hi taṅanikaṁ patuvava, Ikaṁṅ atuvavan· dr̥vya:, /+ya\ Umalap hikaṁ dr̥vya pa[18-03]tuvava, hi taṅanikaṁ patuvavan·, mataṁnyan maṅkana:, Ikaṁṅ atuvava ya Umala:pa [18-04]ya ri taṅanikaṁ patuvavan· ||
- K: Ikaṁ vvaṁ matuvava dr̥vya, Ikaṁ dr̥vya patuvava, I taṅani[22v2]kaṅ patuvavan·, Ikaṁṅ atuvavan· dr̥vya:, ya humalap ikaṁ dr̥vya: patuvava, I{*}ka:{ui ta}[SH]ṅanikaṁ patuvavvan·, mataṅhyan maṅkana:, Ikaṁṅ atuvava, ya Umalapa: ya:, ri taṅan ikaṁ patuvavan· [22v3] || 0 ||
- M: [22v16] ikaṁ vaṁ matuvava avya, ikaṁ drəvya patuvava, i taṅa[22v17]nikaṁ patuvava, ikaṅ atuvava drəvya, ya umalapi ikaṁ drə[22v18]vya patuvava, i taṅanikaṁ patuvavan, mataṅnyan maṅkana, i[22v19]kaṅ atuvava ya umalapa ya ri taṅan ikaṁ patuvava.
+	L: Ikaṁ voṁ matuvava dr̥vya, Ikaṁ dr̥[18-02]vya patuvava, hi taṅanikaṁ patuvava, Ikaṁṅ atuvavan· dr̥vya:, /+ya\ Umalap hikaṁ dr̥vya pa[18-03]tuvava, hi taṅanikaṁ patuvavan·, mataṁnyan maṅkana:, Ikaṁṅ atuvava ya Umala:pa [18-04]ya ri taṅanikaṁ patuvavan· ||
+	K: Ikaṁ vvaṁ matuvava dr̥vya, Ikaṁ dr̥vya patuvava, I taṅani[22v2]kaṅ patuvavan·, Ikaṁṅ atuvavan· dr̥vya:, ya humalap ikaṁ dr̥vya: patuvava, I{*}ka:{ui ta}[SH]ṅanikaṁ patuvavvan·, mataṅhyan maṅkana:, Ikaṁṅ atuvava, ya Umalapa: ya:, ri taṅan ikaṁ patuvavan· [22v3] || 0 ||
+	M: ikaṁ vvaṁ matuva:va havya:, Ikaṁ dr̥vya patuva:va, I taṅanikaṁ patuva:van·, Ikaṅ atuva:va dr̥v[22v1]ya:, ya Umalapi Ikaṁ dr̥vya patuva:va, I taṅanikaṁ patuva:van·, mataṁnyan maṅkana, Ikaṅ atuva[SH]:va ya Umalapa ya ri taṅanikaṁ patuva:van·.
+	B: Ikaṁ vvaṅ matuva:va dr̥vya: matuva:va, I taṅanikaṁ matuva:van· [51v2], ikaṁṅ atuva:van dr̥{da}vya:, ya Umalap ikaṁ dr̥vya: patuva:va, I taṅanikaṁ matuva:van·, mataṁnyan maṅka[SH]na, Ikaṅ atuva:va ya Upalapa ya ri taṅanikaṁ patuva:van· ||
 	 -->
 	 <quote xml:id="svayambhu_08.02.01" type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg xml:id="svayambhu_08.02.01.01" met="anuṣṭubh">
@@ -4441,18 +4375,21 @@ M: [22r13] ika saṁ pradña maməkasakəna patuvava riṁ yogya, vaṅ aka[22r1
  <note sameAs="txt:EdMaDhaSa2005_08.180">MDhŚ 8.180</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_08.02.02">ikaṅ vvaṅ matuvava <app><lem type="norm">dravya</lem><rdg wit="#L #K">dr̥vya</rdg><rdg wit="#M">Avya</rdg></app>,
- ikaṅ dravya patuvava, i taṅanikaṅ <app><lem wit="#K">patuvavan</lem><rdg wit="#L #M">patuvava</rdg></app>,
- ikaṅ <app><lem type="emn" rend="check">tuvavan</lem><rdg wit="#L #K">atuvavan·</rdg><rdg wit="#M">atuvava</rdg></app> dravya,
- ya <app><lem wit="#L #K">umalap</lem><rdg wit="#M">umalapi</rdg></app> ikaṅ dravya patuvava,
- <app><lem wit="#L #M">i taṅanikaṅ patuvavan</lem><!-- emend tuvavān ?--><rdg wit="#K">I<del><gap reason="illegible"/></del>ka:<del rend="ui">ta</del>ṅanikaṁ patuvavvan·</rdg></app>,
- mataṅnyan maṅkana<!-- #L #K #M insert , --> ikaṅ atuvava ya umalapa ya ri taṅanikaṅ <app><lem wit="#L #K">patuvavan</lem><rdg wit="#M">patuvava</rdg></app>.</p>
+ <p xml:id="svayambhu_08.02.02">ikaṅ vvaṅ matuvava 
+ <app><lem wit="#L #K">dravya, ikaṅ dravya patuvava</lem><rdg wit="#M">havya:, Ikaṁ dr̥vya patuva:va</rdg><rdg wit="#B" cause="eye-skip">dr̥vya: matuva:va</rdg></app>,
+ i taṅanikaṅ <app><lem wit="#K #M">patuvavan</lem><rdg wit="#L">patuvava</rdg><rdg wit="#B">matuva:van·</rdg></app>,
+ ikaṅ <app><lem wit="#M">atuvava</lem><rdg wit="#L #K #B">atuvavan·</rdg></app> dravya,
+ ya <app><lem wit="#L #K #B">umalap</lem><rdg wit="#M">Umalapi</rdg></app> ikaṅ dravya patuvava,
+ <app><lem wit="#L #M">i taṅanikaṅ patuvavan</lem><!-- emend tuvavān ?--><rdg wit="#K">I<del><gap reason="illegible"/></del>ka:<del rend="ui">ta</del>ṅanikaṁ patuvavvan·</rdg><rdg wit="#B">I taṅanikaṁ matuva:van·</rdg></app>,
+ mataṅnyan maṅkana,<!-- all mss have , here--> 
+ ikaṅ atuvava<!-- #K inserts ,--> ya <app><lem wit="#L #K #M">umalapa</lem><rdg wit="#B">Upalapa</rdg></app> ya<!-- #K inserts ,--> ri taṅanikaṅ patuvavan.</p>
  </div>
 <!-- AG+TL have reached here on 2021-12-10 -->
  <div type="dyad" n="162" xml:id="svayambhu_08.03"><!--
   L: pininta ya denikaṁ matuvava, tan vinehakən·, [18-05]ya Ikaṁ patuvava, Ikaṁ patuvava maṅkana:, konən· ya mehakna Irikaṁ patuvava, [18-06]ri haR̥p·nya de saṁ pragviva:ka: ||
   K:  pininta ya: denikaṁ patuvava, tan vinehakən·, ya hikaṁ patuvava:, Ikaṁ [SH] patuvava maṅkana:, konən mehakna, hirikaṁ patuvava, riṁ haR̥pnya de saṁ pragvivaka: ||
-  M: [22v20] ika patuvava, paninta ya denikaṁ matuvava, tan vinehakən [22v21] ya ikaṁ patuvava, ikaṁ patuvava maṅkana, konən ya vehakəna [22v22] irikaṁ patuvava ri arəpnya de saṁ pragivaka.
+  M: Ika patuva:va, pininta ya denikaṁ matuva:va, tan vineha:§[22v2]kən· ya hikaṁ patuva:va, Ikaṁ patuva:va maṅkana, konən· ya mehakna Irikaṁ patuva:va ri haR̥pn[SH]ya de saṁ pragviva:ka.
+  B: pininta ya denikaṁ patuva:va, tan vi⌈[51v3]nehakən· ya ikaṁ patuva:va, Ikaṁ patuva:va maṅkana, konən· ya mehakna Ikaṁ patuva:va, ri ha[SH]R̥pnya de saṁ pragviva:ka.
 	 -->
 	 <quote xml:id="svayambhu_08.03.01" type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg xml:id="svayambhu_08.03.01.01" met="anuṣṭubh">
@@ -4464,13 +4401,26 @@ M: [22r13] ika saṁ pradña maməkasakəna patuvava riṁ yogya, vaṅ aka[22r1
  <note sameAs="txt:EdMaDhaSa2005_08.181">MDhŚ 8.181</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_08.03.02"><app><lem type="emn">ikaṅ patuvava,</lem><rdg wit="#L #K" cause="haplography"><gap reason="omitted"/></rdg><rdg wit="#M">ika patuvava,</rdg></app>
- <app><lem wit="#L #K">pininta</lem><rdg wit="#M">paninta</rdg></app> ya denikaṅ <app><lem wit="#L #M">matuvava</lem><rdg wit="#K">patuvava</rdg></app>,
+ <p xml:id="svayambhu_08.03.02">
+ <app>
+ 	<lem type="omitted_elsewhere">
+		<app>
+ 			<lem type="norm">ikaṅ</lem>
+			<rdg wit="#M">ika</rdg>
+		</app> patuvava,
+	</lem>
+	<witDetail type="retained" wit="#M"/>
+ 	<rdg wit="#L #K #B" cause="haplography"><gap reason="omitted"/></rdg>
+</app>
+ pininta ya denikaṅ <app><lem wit="#L #M">matuvava</lem><rdg wit="#K #B">patuvava</rdg></app>,
    tan vinehakən<!-- #L #K insert , --> ya ikaṅ patuvava,
-   ikaṅ patuvava maṅkana,
-   konən <app><lem wit="#L #M">ya</lem><rdg wit="#K"><gap reason="omitted"/></rdg></app> <app><lem wit="#M">vehakəna</lem><rdg wit="#L #K">mehakna</rdg></app><!-- #K inserts , -->
-   irikaṅ <app><lem type="emn">matuvava</lem><rdg wit="#M #L #K">patuvava</rdg></app>,<!-- #M omits , -->
-   <app><lem wit="#L #M">ri</lem><rdg wit="#K">riṁ</rdg></app> harəpnya de saṅ <app><lem wit="#L #M">prāgvivāka</lem><rdg wit="#M">pragivaka</rdg></app>.</p>
+   ikaṅ <app><lem type="emn">patuvava<supplied reason="omitted">n</supplied></lem><rdg wit="#L #K #M #B">patuvava</rdg></app> maṅkana,
+   konən <app><lem wit="#L #M #B">ya</lem><rdg wit="#K"><gap reason="omitted"/></rdg></app> 
+   mehakəna<!-- #K inserts , -->
+   <app><lem wit="#L #K #M">irikaṅ</lem><rdg wit="#B">Ikaṁ</rdg></app> 
+   patuvava,<!-- #M omits , -->
+   <app><lem wit="#L #M #B">ri</lem><rdg wit="#K">riṁ</rdg></app> harəpnya de saṅ 
+   prāgvivāka.</p>
  </div>
  <!-- AG+TL have reached here on 2021-12-15 -->
  <div type="dyad" n="163" xml:id="svayambhu_08.04">
@@ -4494,7 +4444,7 @@ M: [22r13] ika saṁ pradña maməkasakəna patuvava riṁ yogya, vaṅ aka[22r1
  <!-- cf. div 170 -->
  <app>
    <lem type="reformulated_elsewhere">hanan pasākṣi,
- ri *parvarvan <app><lem wit="#L #M">kunaṅ</lem><rdg wit="#K">kinaṁ</rdg></app>,</lem>
+ ri *parva-rvan <app><lem wit="#L #M">kunaṅ</lem><rdg wit="#K">kinaṁ</rdg></app>,</lem>
  <witDetail wit="#L #K" type="retained"/>
    <note type="altLem">hanan ... kunaṅ</note>
    <rdg wit="#M">ri pa<lb n="22v25"/>rvan-rvan kunaṁ, hanan pasaksi,</rdg>
@@ -4545,7 +4495,7 @@ M: [22v27] ikaṁ patuvava, tinarima parvarva, sopaṅsuḥ, avani, avə[22v28]d
      <note>An ancestor of <ptr target="#L"/> and <ptr target="#K"/> has skipped back from <foreign>ri parva-rvan</foreign> to the same words in the preceding section, leading to wholesale repetition of an extensive passage.</note>
 </app>,
    <term xml:lang="san-Latn">sopāṅśuḥ</term>, <term xml:lang="san-Latn"><app><lem wit="#L #M">avibhāvyaḥ</lem><rdg wit="#K">Avibavya</rdg></app></term>,
-   tan katon rupanya,
+   tan katon rūpanya,
    <app><lem wit="#M">inalap</lem><rdg wit="#L">Inalapa</rdg><rdg wit="#K">Ivnalapa</rdg></app> <app><lem wit="#L #M">ri parva-rvan</lem><rdg wit="#K">riṁ rvarvan·</rdg></app><!-- #L #K insert, --> de saṅ matuvava,
    <app><lem wit="#M">upanidhi</lem><rdg wit="#L">Upadini</rdg><rdg wit="#K">Upadiniṁ</rdg></app> ṅaraniṅ patuvava maṅkana muvah.</p>
  </div>
@@ -4802,7 +4752,7 @@ ikaṅ vruh yan patuvava, <hi rend="check">sambhava yanana, sadva ta ya,</hi>
  <p xml:id="svayambhu_08.17.02">kunaṅ yan mati ikaṅ <app><lem wit="#L #K">atuvava</lem><rdg wit="#M">matuvava</rdg></app>,
   vehakəna ikaṅ patuvava <app><lem wit="#M">ri anaknikaṅ matuvava</lem><rdg wit="#L #K" cause="eye-skip"><gap reason="omitted"/></rdg></app>,
   <app><lem wit="#M">ika taṅ</lem><rdg wit="#L">hikaṁ</rdg><rdg wit="#K">Ika:ṁ</rdg></app> patuvava maṅkana,
-  tan <app><lem wit="#L">kilalan</lem><rdg wit="#K">hilala:na:</rdg><rdg wit="#M">kila<lb n="24r15"/>na</rdg></app> de saṅ prabu,
+  tan <app><lem wit="#L">kilalan</lem><rdg wit="#K">hilala:na:</rdg><rdg wit="#M">kila<lb n="24r15"/>na</rdg></app> de saṅ prabhu,
   <app><lem type="emn">mvaṅ</lem><rdg wit="#L"><gap reason="omitted"/></rdg><rdg wit="#K">vvaṁ</rdg><rdg wit="#M">vaṁ</rdg></app> sānaknikaṅ atuvava,<!-- #K #M omit , -->
   tan <app><lem wit="#L #K">pakilalaa</lem><rdg wit="#M">pakilanaha</rdg></app> iriya.</p>
  </div>
@@ -6301,7 +6251,7 @@ M: [gap]
  athavā deniṅ <app><lem wit="#L">aṅartha</lem><rdg wit="#K">aṅaṭa:</rdg></app>, 
  tan hana vənaṅ aṅisyani dravya-hajinya, 
  pūrvasthiti kinavənaṅakən ya kunaṅ, 
- alapən de saṅ prabhu<!-- #K inserts , --> ikaṅ sīmā, vruh<!-- #L vru --> riṅ dharma sira<supplied reason="subaudible">,</supplied> yan maṅkana, 
+ alapən de saṅ prabhu<!-- #K inserts , --> ikaṅ sīmā, vruh<!-- #L vru --> riṅ dharma sira<supplied reason="omitted">,</supplied> yan maṅkana, 
  vehakəna ya i mantrinira, 
  <app><lem type="norm">paṅivva</lem><rdg wit="#L #K">paṅiva</rdg></app> dharma hetunya, 
  athavā deniṅ <app><lem wit="#L">aṅartha</lem><rdg wit="#K">aṅa:rṭa:</rdg></app>, 
@@ -6399,7 +6349,7 @@ M: [gap]
 	  </listApp>
    </supplied>
  </ab>
- <p>ikaṅ <app><lem wit="#L">vvaṅ manaṅguh</lem><rdg wit="#K">pinaṅguḥ</rdg></app> vuta, vuta kita liṅnya, ikaṅ sinaṅguh vuta <app><lem wit="#L">tuhva</lem><rdg wit="#">tuha:</rdg></app> ya vuta, ṅaraniṅ ujar maṅkana, vākparuṣya ṅaranya<!-- #K inserts ,--> muvah liṅ saṅ paṇḍita.
+ <p>ikaṅ <app><lem wit="#L">vvaṅ manaṅguh</lem><rdg wit="#K">pinaṅguḥ</rdg></app> vuta, vuta kita liṅnya, ikaṅ sinaṅguh vuta <app><lem wit="#L">tuhva</lem><rdg wit="#K">tuha:</rdg></app> ya vuta, ṅaraniṅ ujar maṅkana, vākparuṣya ṅaranya<!-- #K inserts ,--> muvah liṅ saṅ paṇḍita.
 </p>
  </div>
  <div type="dyad" n="244"><!--
@@ -6707,7 +6657,7 @@ M: Ikaṅ akasa gaṅśuḥ, limpuṁ vsi§ [SH] nunvakna riṅ apvay, taṅan k
 		  </listApp>
 	   </supplied>
 	 </ab>
-	<p>ikaṅ aṅlarani vvaṅ, <app><lem wit="#M">aṅrahi vvaṅ,</lem><rdg wit="#L #K" cause="eye-skip"><gap reason="omitted"/></rdg></app> anikəlana, <app><lem type="norm">anibākəna</lem><rdg wit="#L #K #M">haniva:kna</rdg><note>In §<ptr target="115"/>, all mss. read the expected <foreign>b</foreign> instead of the <foreign>v</foreign> we find here.</note></app>, <app><lem wit="#L #M">amatyanana</lem><rdg wit="#K">hamatyana</rdg></app> kunaṅ, ṅaraniṅ ulah maṅkana, 
+	<p>ikaṅ aṅlarani vvaṅ, <app><lem wit="#M">aṅrahi vvaṅ,</lem><rdg wit="#L #K" cause="eye-skip"><gap reason="omitted"/></rdg></app> anikəlana, <app><lem type="norm">anibākəna</lem><rdg wit="#L #K #M">haniva:kna</rdg><note>In §<ptr target="#115"/>, all mss. read the expected <foreign>b</foreign> instead of the <foreign>v</foreign> we find here.</note></app>, <app><lem wit="#L #M">amatyanana</lem><rdg wit="#K">hamatyana</rdg></app> kunaṅ, ṅaraniṅ ulah maṅkana, 
 		<app><lem wit="#L #K">daṇḍapāruṣya</lem><rdg wit="#M">ḍaṇḍareṣya</rdg></app> ṅaranya, liṅ saṅ paṇḍita.</p>
    </div>
    <div type="dyad" n="260"><!--
@@ -7317,8 +7267,12 @@ M: kunaṁṅ ikaṁ ratha:ṅalaḥ, hana § [SH] satva kavdinya:, lima:n·, ku
    </listApp></supplied></quote>
 	<p>ikaṅ strī <app><lem type="norm">aməḍəl</lem><rdg wit="#L #K">hamḍəl·</rdg><rdg wit="#M">hamdəl·</rdg></app> <app><lem wit="#L #K">rare</lem><rdg wit="#M">rareṁ</rdg></app> jro vətəṅ, 
 		<app><lem wit="#K #M">pāpanya</lem><rdg wit="#L">pa:<lb n="31-17"/>panyo</rdg></app> pinerakənya <app><lem type="norm">ri</lem><rdg wit="#L #K #M">riṁ</rdg></app> saṅ maveh səkul iriya, 
-		ikaṅ halvan yan <app><lem wit="#L #M">mənəṅa</lem><rdg wit="#K">mənṅə</rdg></app> jalunya, tan pamatyani ya, pinerakənya <app><lem wit="#L #M">pāpanya</lem><rdg wit="#K" cause="eye-skip"><gap reason="omitted"/></rdg></app> riṅ jalunya, 
-		ikaṅ śiṣya,<!-- #M omits , --> mvaṅ guru, tan pavarah riṅ daśaśīla, sapāpanya <app><lem wit="#L #M">śiṣya</lem><rdg wit="#K">sisiya</rdg></app>, pinerakənya<!-- #K inserts ,--> <app><lem wit="#L #M">sapāpanya ri saṅ</lem><rdg wit="#K">sapa:pariṁ</rdg></app> <app></app> guru, 
+		ikaṅ halvan yan 
+<app><lem wit="#L #M">mənəṅa</lem><rdg wit="#K">mənṅə</rdg></app> jalunya, tan pamatyani ya, pinerakənya 
+<app><lem wit="#L #M">pāpanya</lem><rdg wit="#K" cause="eye-skip"><gap reason="omitted"/></rdg></app> 
+riṅ jalunya, ikaṅ śiṣya,<!-- #M omits , --> mvaṅ guru, tan pavarah riṅ daśaśīla, sapāpanya 
+<app><lem wit="#L #M">śiṣya</lem><rdg wit="#K">sisiya</rdg></app>, pinerakənya<!-- #K inserts ,--> 
+<app><lem wit="#L #M">sapāpanya ri saṅ</lem><rdg wit="#K">sapa:pariṁ</rdg></app> guru, 
 		saṅ prabhu yan tan <app><lem wit="#M">paṅdaṇḍa</lem><rdg wit="#L">paḍaṇḍa</rdg><rdg wit="#K">paṇa:ṇḍa:</rdg></app> maliṅ, sapāpaniṅ maliṅ <app><lem wit="#L #M">pinerakənya</lem><rdg wit="#K">pinerakən</rdg></app> <app><lem wit="#L">ri</lem><rdg wit="#K #M">riṁ</rdg></app> saṅ prabhu.</p>
    </div>
    <div type="dyad" n="291"><!--
@@ -7412,7 +7366,7 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 	<p>ikaṅ vvaṅ <app><lem wit="#L #M">aṅalap</lem><rdg wit="#K">hinalap·</rdg></app> salviriṅ tinarajvan, 
 		mvaṅ tinakər, yan ləvih sakeṅ satus <app><lem wit="#L #K">kati</lem><rdg wit="#M">tati</rdg></app>, 
 		mvaṅ <app><lem type="norm">satus sukat</lem><rdg wit="#L">sacatu su<unclear>ka</unclear>t·</rdg><rdg wit="#K #M">satusukat·</rdg></app>, patyana ya.
-		 <app><lem type="omitted_elsewhere" wit="#M"><app><lem type="norm">ikaṅ aṅalap pirak</lem><rdg wit="#K"><gap reason="omitted"/></rdg><rdg wit="#K #M">Ikaṅ aṅalapirak·</rdg></app>, vastra uttama kunaṅ,<!-- thus #K; the comma stands before kunaṅ in #M --> patyana ya.</lem><note type="altLem">ikaṅ aṅalap ... patyana ya</note><rdg wit="#L" cause="eye-skip"><gap reason="omitted"/></rdg><note>The whole second sentence is omitted in <ptr target="#L"/>, clearly due to eye-skip, while <ptr target="#K"/> omits the first three words of the second sentence, without it being evident how this would have come about.</note>
+		 <app><lem type="omitted_elsewhere"><app><lem type="norm">ikaṅ aṅalap pirak</lem><rdg wit="#K"><gap reason="omitted"/></rdg><rdg wit="#K #M">Ikaṅ aṅalapirak·</rdg></app>, vastra uttama kunaṅ,<!-- thus #K; the comma stands before kunaṅ in #M --> patyana ya.</lem><note type="altLem">ikaṅ aṅalap ... patyana ya</note><witDetail wit="#M" type="retained"/><rdg wit="#L" cause="eye-skip"><gap reason="omitted"/></rdg><note>The whole second sentence is omitted in <ptr target="#L"/>, clearly due to eye-skip, while <ptr target="#K"/> omits the first three words of the second sentence, without it being evident how this would have come about.</note>
 		</app></p>
    </div>
    <div type="dyad" n="296"><!--
@@ -7503,7 +7457,7 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 		<l n="a">matsyānāṁ pakṣiṇāṁ caiva</l> <l n="b">tailasya ca ghr̥tasya ca |</l>
 		<l n="c">māṁsasya madhunaś caiva</l> <l n="d">yac cānyat paśusaṁbhavam ||</l>
 	</lg>
-	<lg met="anuṣṭhubh">
+	<lg met="anuṣṭubh">
 		<l n="a">anyeṣāṁ caivamādīnāṁ</l> <l n="b">adyānām odanasya ca |</l><!-- var.: -īnāṁ madyānām -->
 		<l n="c">pakvānnānāṁ ca sarveṣāṁ</l> <l n="d">tanmūlyād dviguṇo damaḥ ||</l>
 	</lg>	
@@ -7920,7 +7874,7 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 	<note sameAs="txt:EdMaDhaSa2005_08.348">MDhŚ 8.348. Olivelle reports a variant read <foreign>jātīnāṁ ca savarṇānāṁ</foreign> from his witness MTr6.</note>
 		 </app>
    </listApp></supplied></quote>
-	<p>dharma saṅ brāhmaṇa, tan yogya ri<!-- #K riṁ --> sañjata, <app><lem wit="#L #M">yadyapi</lem><rdg wit="#K">yadyapin</rdg></app> maṅkana, <app><lem wit="#L #M">səḍəṅiṅ</lem><rdg wit="#K">sḍaṁṅiṁ</rdg></app> <app><lem type="conj"><supplied reason="omitted">sa</supplied>varṇa</lem><rdg wit="#L #K #M">varṇna, tuluṅən</rdg><note>The word <foreign>tuluṅən</foreign> seems intrusive here, so we suppress it.</note></app> katəkan duhkha sināhasan, tan savarṇaa kunaṅ, tuluṅən <app><lem wit="#L">katəkan duhkha sināhasan</lem><rdg wit="#K">katkan ḍuḥka: kaṁ <space type="binding-hole"/> sinahasan·</rdg><rdg wit="#M">tka:n duḥka sihina<space type="binding-hole"/>ha:san·</rdg></app>, apan <app><lem wit="#L #M">phalanyan</lem><rdg wit="K">palanya</rdg></app> gəgə̄n.</p>
+	<p>dharma saṅ brāhmaṇa, tan yogya ri<!-- #K riṁ --> sañjata, <app><lem wit="#L #M">yadyapi</lem><rdg wit="#K">yadyapin</rdg></app> maṅkana, <app><lem wit="#L #M">səḍəṅiṅ</lem><rdg wit="#K">sḍaṁṅiṁ</rdg></app> <app><lem type="conj"><supplied reason="omitted">sa</supplied>varṇa</lem><rdg wit="#L #K #M">varṇna, tuluṅən</rdg><note>The word <foreign>tuluṅən</foreign> seems intrusive here, so we suppress it.</note></app> katəkan duhkha sināhasan, tan savarṇaa kunaṅ, tuluṅən <app><lem wit="#L">katəkan duhkha sināhasan</lem><rdg wit="#K">katkan ḍuḥka: kaṁ <space type="binding-hole"/> sinahasan·</rdg><rdg wit="#M">tka:n duḥka sihina<space type="binding-hole"/>ha:san·</rdg></app>, apan <app><lem wit="#L #M">phalanyan</lem><rdg wit="#K">palanya</rdg></app> gəgə̄n.</p>
    </div>
     <!-- TG+AG have reached here on 2024-06-19 -->
    <div type="dyad" n="320"><!--
@@ -8011,7 +7965,7 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 	<note sameAs="txt:EdMaDhaSa2005_08.352">MDhŚ 8.352</note>
 		 </app>
    </listApp></supplied></quote>
-	<p>ikaṅ vvaṅ aməkul strī laraṅan, cihnana ya de saṅ prabhu, salvirniṅ daṇḍa kelik-elik daṇḍaanya, <term xml:lang="san-Latn"><app><lem type="emn">pravāsayet</lem><rdg wit="#L #M">pravarayet·</rdg><note>Cf. <ptr target="svayambhu_06.43"/> <seg rend="check">(§108)</seg>.</note></app></term><!-- (em.: pravāsayet?)-->, dohakəna ya.</p>
+	<p>ikaṅ vvaṅ aməkul strī laraṅan, cihnana ya de saṅ prabhu, salvirniṅ daṇḍa kelik-elik daṇḍaanya, <term xml:lang="san-Latn"><app><lem type="emn">pravāsayet</lem><rdg wit="#L #M">pravarayet·</rdg><note>Cf. <ptr target="#svayambhu_06.43"/> <seg rend="check">(§108)</seg>.</note></app></term><!-- (em.: pravāsayet?)-->, dohakəna ya.</p>
 </div>
 <div type="dyad" n="324">
 	<quote type="base-text" xml:lang="san-Latn"><supplied reason="omitted">
@@ -8169,7 +8123,7 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 	<note sameAs="txt:EdMaDhaSa2005_08.364">MDhŚ 8.364</note>
 		 </app>
    </listApp></supplied></quote>
-	<p>ikaṅ vvaṅ sāhasāmuṅpaṅ kanyā, ika taṅ maṅkana, yogya <app><lem type="emn">patyana usən ya de</lem><rdg wit="L">patyanya Usən· ya de</rdg><rdg wit="#K">patyanya, Usə<lb n="43r3"/>n ḍe</rdg><rdg wit="#M">pa:tya:nya Usə:n· ya de</rdg></app> saṅ prabhu, 
+	<p>ikaṅ vvaṅ sāhasāmuṅpaṅ kanyā, ika taṅ maṅkana, yogya <app><lem type="emn">patyana usən ya de</lem><rdg wit="#L">patyanya Usən· ya de</rdg><rdg wit="#K">patyanya, Usə<lb n="43r3"/>n ḍe</rdg><rdg wit="#M">pa:tya:nya Usə:n· ya de</rdg></app> saṅ prabhu, 
 		kunaṅ yan mahyun ikaṅ kanyā, <app><lem wit="#M">mvaṅ paḍa kavvaṅanya,</lem><rdg wit="#L #K" cause="eye-skip"><gap reason="omitted"/></rdg></app> tan patyanana ikaṅ maṅkana.</p>
    </div>
    <div type="dyad" n="331"><!--
@@ -8366,7 +8320,7 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 				 </app>
 	 </listApp>
 	</supplied></ab>
-	<p>ikaṅ vərə-vərəh,<!-- #M omits ,--> huvus <app><lem wit="#L #K">amvati</lem><rdg wit="#M" cause="lexical">hamviti</rdg></app> vəlyaniṅ kanyā, *pinasatya<app><lem wit="#L #M">-samayakən</lem><rdg>-smaya§<lb n="44v2"/>kən·</rdg></app> təkaaniṅ śubhadivasa,<!-- #L #M omit ,--> <app><lem wit="#L #M">uṅgahanya</lem><rdg wit="#K">huṅganya</rdg></app>, mithyā ta ya, tan <app><lem wit="#L #M">paṅantyakən</lem><rdg wit="#K">paṅantikən·</rdg></app>, marabi ta ya kili-kili lañji, caṇḍāla, dāsī kunaṅ, atiṅgal paməlinya, ya daṇḍanya, kunaṅ yan <app><lem wit="#L">ahyun</lem><rdg wit="#K">ayun</rdg><rdg wit="#M">ayūn</rdg></app> <app><lem wit="#K #M">anomaha</lem><rdg wit="#L">hanomahana</rdg></app> <app><lem wit="#L #K">malih</lem><rdg wit="#M">maniḥ</rdg></app>, paməlinya dviguṇākəna ya, akurəna ta ya, aməli piṅrva təkanya.</p>
+	<p>ikaṅ vərə-vərəh,<!-- #M omits ,--> huvus <app><lem wit="#L #K">amvati</lem><rdg wit="#M" cause="lexical">hamviti</rdg></app> vəlyaniṅ kanyā, *pinasatya<app><lem wit="#L #M">-samayakən</lem><rdg wit="#K">-smaya§<lb n="44v2"/>kən·</rdg></app> təkaaniṅ śubhadivasa,<!-- #L #M omit ,--> <app><lem wit="#L #M">uṅgahanya</lem><rdg wit="#K">huṅganya</rdg></app>, mithyā ta ya, tan <app><lem wit="#L #M">paṅantyakən</lem><rdg wit="#K">paṅantikən·</rdg></app>, marabi ta ya kili-kili lañji, caṇḍāla, dāsī kunaṅ, atiṅgal paməlinya, ya daṇḍanya, kunaṅ yan <app><lem wit="#L">ahyun</lem><rdg wit="#K">ayun</rdg><rdg wit="#M">ayūn</rdg></app> <app><lem wit="#K #M">anomaha</lem><rdg wit="#L">hanomahana</rdg></app> <app><lem wit="#L #K">malih</lem><rdg wit="#M">maniḥ</rdg></app>, paməlinya dviguṇākəna ya, akurəna ta ya, aməli piṅrva təkanya.</p>
    </div>
    <div type="dyad" n="342"><!--
 	L: Ikaṁ dr̥vya: Uliḥniṁ maṇḍaṇḍa tan kəkəsana [36-10]ya de saṁ prabhu, tan beyahaniṁ magave ḍarmma, vehakna dmakaniṁ vadva siṅgiḥ do[36-11]nanya || 
@@ -8500,12 +8454,14 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 				 </app>
 	 </listApp>
 	</supplied></ab>
-	<p>kunaṅ yan rahina kālanya mara, ndatan strī kahyunya hetu, pūrvasāhasa daṇḍaaanya, de saṅ prabhu, mā, 12, ku, <app><lem wit="#L #M">2</lem><rdg wit="#K">ṅa</rdg></app>, təkanya.</p>
+	<p>kunaṅ yan rahina kālanya mara, ndatan strī kahyunya hetu, pūrvasāhasa daṇḍaanya, de saṅ prabhu, mā, 12, ku, <app><lem wit="#L #M">2</lem><rdg wit="#K">ṅa</rdg></app>, təkanya.</p>
    </div>
    <!-- TG+AG have reached here on 2024-11-30 -->
    <div type="dyad" n="351"><!--
-	L:
-	 K:
+	L: yan pamava sañjata, Ikaṁ vvaṁ mare{ṁ}yy umaḥ[36-27]niṁṅ len· riṁ rahina, Uttamasaha:sa ḍaṇḍanya, ma:, śū, 3, ma:, 2, tka:nya ||
+	K: yan pamava sañjatṭa, hikaṁ vvaṁ mareyy umaḥ{*}niṁṅ len· riṁ rahina:, Uttama:sahasa: ḍaṇḍahanya, ma:, sū, ma:, 2, tka§[45v3]nya || 0 || 
+	M: tan pamava sañjata, Ikaṁ vvaṁ mareyy umaḥniṅ len riṅ rahi[36v4]na, Uttamasaha:sa ḍaṇḍa:nya, ma:, sū, 3, mā, 2, tka:nya ||  
+	B: yan pamava sañjata, Ika:ṁ vvaṁ mareyy umaḥniṁ len· [76v2] riṁ rahina:, Uttama:saha:sa ḍaṇḍanya, ma:, śu, 3, ma:, 2, tka:nya.
 	 -->
 	 <ab><supplied reason="implied"><gap/>
 		<listApp type="parallels">
@@ -8514,11 +8470,15 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 				 </app>
 	 </listApp>
 	</supplied></ab>
-	<p>tan pamava sañjata, ikaṅ vvaṅ marery umahniṅ len riṅ rahina, uttamasāhasa ḍaṇḍanya, mā, su, 3, mā, 2, təkanya.</p>
+	<p><app><lem wit="#L #K #B">yan</lem><rdg wit="#M">tan</rdg></app> pamava sañjata, 
+	ikaṅ vvaṅ <app><lem type="emn">marery</lem><rdg wit="#K #M #B">mareyy</rdg><rdg wit="#L">mare<del>ṁ</del>yy</rdg><note>It is notable that all witnesses transmit <foreign>yy</foreign> instead of expected <foreign>ryy</foreign>.</note></app> umahniṅ len riṅ rahina, uttamasāhasa <app><lem wit="#K">ḍaṇḍaanya</lem><rdg wit="#L #B">ḍaṇḍanya</rdg><rdg wit="#M">ḍaṇḍa:nya</rdg></app>, mā, su, <app><lem wit="#L #M #B">3,</lem><rdg wit="#K"><gap reason="omitted"/></rdg></app> mā, 2, təkanya.</p>
    </div>
    <div type="dyad" n="352"><!--
-	L:
-	 K:
+	L: Ika saṁ pra:[36-28]bhu, tan hana maliṁ riṁ kaḍatvanira, tan hanarabi-rabi laraṅan·, muvaḥ tan ana hala hujar[37-01]nya, tan a[[interpolation: jar iṁ sastra:, kūnaṁ yan handaliḥ lvaṁ tan hana ha:pisor, vinalik ṣadya, vnaṁ juga pinate[37-02]n· || 0 || kunaṁ voṁ din{l}aliḥ hatarvaṇna:, dūruṁ hamatyani sadūjana, kevala: hamana[37-03]si voṁ, yan hamarihaṅkən·, vnaṁ ya pinaten·, yan tan hamarihaṅkəni, vnaṁ tinunduṁ, do[37-04]hakna haneṅ rajyanira: saṁ prabhū, hayva vineḥ mapaR̥k·, hapan voṁṅ abicaruka: || 0 || [37-05]voṁ kinuṅkuṁṅan denekaṁṅ adr̥ve niṣṭa:, dadi hana voṁṅ len·, pitvi sanak mitra⌈[37-06]ne, tūmiñjo mapaR̥k· rikaṁ kinuṅkuṁ, tan sumdək hamit rikaṁṅ adr̥ve niṣṭa:, sahuṅku⌈[37-07]reṁ liṅgar· hikaṁ niṣṭa:, yan samaṅkana, tampuha:kna Ikaṁ mapaR̥k· riṁ kaṁ niṣṭa:, sama[37-08]la:niṁ voṁ niṣṭa: hapan voṁ Ina viyoga, kapasuk· sakara: Itta: kojarriṁ sa:[37-09]stra || 0 || tatanira: saṁ ratū, hamava ra:t·, tan vənaṁ sira: haṅR̥ṅə [37-10]hiṁṅ atūr-hatūr voṁṅ avicara:, yan ḍuruṁ kabhavaraṣa riṁṅ ūpapati, phala:nya cə[37-11]ṇḍək pamuktyanira: saṁ prabhu, hapan hiṅimur riṁṅ acəṅil·, ma{*}dəg keṅaṁ brahma: dur[37-12]ga kala:]]na pati praṁ-praṁṅana, Ika ta saṁ prabhu maṅkana kramanira, tan a:na pati[37-13]nira kalavan· bhaṭa:ra Indra kaḍatvanira, paḍa lavan· bhaṭa:ra Indra kada[37-14]tvanira, pada lavan· svargga: || 
+	K: Ikaṁ saṁ prabhu tan a:na maliṁ ri kadatvanira, [[EYESKIP]] paḍḍa lavan· śvarghga:
+	K1: Ikaṁ saṁ prabhū [57v3] tan a:na maliṁ ri kaḍatvanira, paḍa: lavan· śvarghga:
+	M: Ika: saṁ prabhu, tan a:na maliṁ riṁ kaḍatvanira, § [SH] tan ana:rabi-rabi laraṅan·, muvaḥ tan a:na hala hujarnya,  tan a:na pati praṁ-praṅa, Ika ta saṁ prabhu maṅka:na krama§[37r1]nira, tan a:na patinira kala:van· bhaṭa:ra Indra kaḍatvanira, paḍa la:van· svargga: ||
+	B:  Ika saṁ prabhū, tan ana maliṁ riṁ kada[SH]tvanira, tan anarabi-rabi laraṅan·, muvaḥ tan ana hala Ujarnya, tan ana pati praṁ-praṅa, Ika ta sa:ṁ [76v3] prabhū maṅkana kramanira, tan ana pahinira kalavan· bhaṭa:ra Indra kadatvanira, paḍa lavan· śvargga:.
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg met="anuṣṭubh">
@@ -8530,11 +8490,14 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 	<note sameAs="txt:EdMaDhaSa2005_08.386">MDhŚ 8.386</note>
 		 </app>
    </listApp></supplied></quote>
-	<p>ika saṅ prabhu, tan hana maliṅ riṅ kaḍatvanira, tan hana rabi-rabi laraṅan, muvah tan hana hala ujarnya, tan <!-- L has interpolation here -->hana pati praṅ-praṅa, ika ta saṅ prabhu maṅkana kramanira, tan hana pahinira kalavan bhaṭāra indra kaḍatvanira, paḍa lavan svarga.</p>
+	<p>ika saṅ prabhu,<!-- #K omits ,--> tan hana maliṅ <app><lem wit="#L #M #B">riṅ</lem><rdg wit="#K">ri</rdg></app> kaḍatvanira, <app><lem type="omitted_elsewhere">tan <app><lem type="norm">hanārabi-rabi</lem><rdg wit="#L">hanarabi-rabi</rdg><rdg wit="#M">ana:rabi-rabi</rdg><rdg wit="#B">anarabi-rabi</rdg><note>It is impossible to be sure from the manuscript evidence whether our author intended <foreign>hana rabi-rabi</foreign> or <foreign>hanārabi-rabi</foreign>. We opt for the latter as it makes the paraphrase agree with the meaning of the Sanskrit original; moreover, the phrase <foreign>arabi laraṅan</foreign> is attested in <title>Dharma Pātañjala</title> (ed. <seg rend="check">Acri 2017, p. 262, l. 14</seg>).</note></app> laraṅan, muvah tan hana hala ujarnya, <app><lem wit="#M #B">tan hana</lem><rdg wit="#L">tan a<seg type="interpolation">jar iṁ sastra:, kūnaṁ yan handaliḥ lvaṁ tan hana ha:pisor, vinalik ṣadya, vnaṁ juga pinate<lb n="37-02"/>n· || 0 || kunaṁ voṁ din<del>l</del>aliḥ hatarvaṇna:, dūruṁ hamatyani sadūjana, kevala: hamana<lb n="37-03"/>si voṁ, yan hamarihaṅkən·, vnaṁ ya pinaten·, yan tan hamarihaṅkəni, vnaṁ tinunduṁ, do<lb n="37-04"/>hakna haneṅ rajyanira: saṁ prabhū, hayva vineḥ mapaR̥k·, hapan voṁṅ abicaruka: || 0 || <lb n="37-05"/>voṁ kinuṅkuṁṅan denekaṁṅ adr̥ve niṣṭa:, dadi hana voṁṅ len·, pitvi sanak mitra⌈<lb n="37-06"/>ne, tūmiñjo mapaR̥k· rikaṁ kinuṅkuṁ, tan sumdək hamit rikaṁṅ adr̥ve niṣṭa:, sahuṅku⌈<lb n="37-07"/>reṁ liṅgar· hikaṁ niṣṭa:, yan samaṅkana, tampuha:kna Ikaṁ mapaR̥k· riṁ kaṁ niṣṭa:, sama<lb n="37-08"/>la:niṁ voṁ niṣṭa: hapan voṁ Ina viyoga, kapasuk· sakara: Itta: kojarriṁ sa:<lb n="37-09"/>stra || 0 || tatanira: saṁ ratū, hamava ra:t·, tan vənaṁ sira: haṅR̥ṅə <lb n="37-10"/>hiṁṅ atūr-hatūr voṁṅ avicara:, yan ḍuruṁ kabhavaraṣa riṁṅ ūpapati, phala:nya cə<lb n="37-11"/>ṇḍək pamuktyanira: saṁ prabhu, hapan hiṅimur riṁṅ acəṅil·, ma{*}dəg keṅaṁ brahma: dur<lb n="37-12"/>ga kala:</seg>na</rdg></app> pati <app><lem wit="#M #B">praṅ-praṅa</lem><rdg wit="#L">praṁ-praṁṅana</rdg></app>, ika ta saṅ prabhu maṅkana kramanira, tan hana <app><lem wit="#B">pahinira</lem><rdg wit="#L #M">patinira</rdg><note>A roman hand (possibly van der Tuuk's) in <ptr target="#L"/> corrected <foreign>ti</foreign> to <foreign>hi</foreign>.</note></app> kalavan bhaṭāra indra kaḍatvanira,</lem><note type="altLem">tan hana ... bhaṭāra indra kaḍatvanira,</note><witDetail wit="#L #M #B" type="retained"/><rdg wit="#K" cause="eye-skip"><gap reason="omitted"/></rdg></app> <app><lem wit="#K #M #B">paḍa lavan svarga</lem><rdg wit="#L">paḍa lavan· <seg type="interpolation">bhaṭa:ra Indra kada<lb n="37-14"/>tvanira, pada lavan·</seg> svargga:</rdg></app>.</p><!-- no final punctuation in K -->
 </div>
 <div type="dyad" n="353"><!--
-	L:
-	 K:
+	L: saṁ prabhu Umaṅgvakn ikaṁ ra:jya Uttama:, makanimitta [37-15]paṁḍaṇḍanira riṁ dūrjja:ṇa:, coradi, ri svadeśanira, lumra: yaśanira riṁ lo[37-16]ka: || 0  || I{ka}ti strisaṅgrahanacarita || 0 ||
+	K: saṁ prabhu Umaṅgvakn ikaṁ rajya: § [SH] Uttama:, maka:nimita: paṁḍaṇḍanira: ḍūrjjana:, cora:dī, ri śvadeṣanira:, lumra: yaśanira: riṁ loka: || 0 || [45v] || puput· śinura:t riṁ dina:, ca, va, varatambir, titi, paṁ, piṁ, 4, saśiḥdeṣṭa:, bū śaka, * [SH] 1854,,
+	K1: saṁ prabhū Umaṅgvakn ikaṁ ra[SH]jya Utṭama:, maka:nimita: paṁḍaṇḍanira: cūrjjana:, cora:dḍi, ri śvadeṣanira:, lumra: yaṣanira: riṁ loka: || 0 || || puput sinūra:t· ri raIna[SH]:, co, U, mdaṁkuṅan·,, druve vakul ṭastrayuUḍaṇa:  
+	M: saṁ prabhu Umaṅgu[SH]hakn ikaṁ ra:jya Uttama, makanimitta paṁḍaṇḍa:nira riṁ durjjana, cora:di, ri svadeśanira, lumra: yaśanira riṁ lo[37r2]ka || Iti strisaṅgraha:ṇacarita || hayva tuduḥ-tuduḥ kiva harane kidul·, tka:niṁ pasir || Ø || puput si[SH]nurat· riṁ ḍina:, ra, U, vara:gadyan·, || Ø ||
+	B:  saṁ pra[SH]bhū hamaṅguhakn iṁkaṁ ra:jya Uttama:, maka:nimitta paṁḍaṇḍanira riṁ dūrjjana, coradi, riṁ svadeśanira, lumra ya [76v4]śarira riṁ loka || Iti strisaṅgraha:ṇacarita: || 
 	 -->
 	 <quote type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg met="anuṣṭubh">
@@ -8546,14 +8509,30 @@ M: Ikaṁ vvaṁ malap timbaniṁ sumūr·, ta:linya kunaṁ, vvaṁ ha:R̥mpak�
 	<note sameAs="txt:EdMaDhaSa2005_08.387">MDhŚ 8.387</note>
 		 </app>
    </listApp></supplied></quote>
-	<p>saṅ prabhu umaṅgvakən ikaṁ rājya uttama, makanimitta paṅdaṇḍanira riṅ durjana, corādi, ri svadeśanira, lumrā yaśanira riṅ loka.</p>
+	<p>saṅ prabhu <app><lem wit="#M">umaṅguhakən</lem><rdg wit="#L #K">Umaṅgvakn</rdg><rdg wit="#B" cause="morphological">hamaṅguhakn</rdg></app> ikaṅ rājya uttama, makanimitta paṅdaṇḍanira <app><lem wit="#L #M #B">riṅ</lem><rdg wit="#K"><gap reason="omitted"/></rdg></app> durjana, corādi, <app><lem wit="#L #K #M">ri</lem><rdg wit="#B">riṁ</rdg></app> svadeśanira, lumrā yaśanira riṅ loka.</p>
    </div>
    <div>
-	<ab type="colophon">iti strīsaṅgrahaṇacarita.</ab>
+	<ab type="colophon"><app><lem wit="#L #M #B">iti strīsaṅgrahaṇacarita.</lem><rdg wit="#K"><gap reason="omitted"/></rdg><note>Before the postcolophon, <ptr target="#M"/> adds <foreign>hayva tuduḥ-tuduḥ kiva harane kidul·, tka:niṁ pasir ||</foreign>.</note></app></ab>
 	</div>
 </div>
+<!-- TG+AG have reached here on 2025-01-12 -->
 <!-- end of div type edition -->
-
-		</body>
-	</text>
+		</div>
+		<div type="translation">
+         <div>
+    <p n="1" corresp="#svayambhu_02.01.02"><supplied reason="subaudible"><quote rend="stanza" corresp="txt:MDhŚ08.001">When the king is going to try a case, he should enter the court modestly accompanied by Brahmins and counselors who are experts in policy</quote></supplied> Now should his Majesty undertake to attend to litigation/affairs of this world, let him take as companions Brahmins who are knowledgeable and study Scripture, and likewise ministers with the wisdom to judge with discernment; with good conduct, he should enter the council.</p>
+</div>
+      </div>
+		  <div type="commentary"><p/></div>
+		<div type="bibliography"> 				
+			<p>For the first time critically edited here by Arlo Griffiths &amp; Timoth Lubin. 
+				Some excerpts from this text were included in van der Tuuk's KBNW and some of those were taken over by Zoetmulder.
+				The text has been mentioned in a small number of secondary writings (van Naerssen, Creese).</p> 				
+		<listBibl>
+			<bibl><ptr target="bib:Olivelle2005_01"/></bibl>
+			<bibl><ptr target="bib:Mandlik1886_01"/></bibl>
+		</listBibl>		
+	</div> 		
+</body>
+</text>
 </TEI>

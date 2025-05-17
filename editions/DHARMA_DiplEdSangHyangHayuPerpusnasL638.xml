@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="sangHyangHayuPerpusnasL638">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Saṅ Hyaṅ Hayu</title>
+            <title type="editorial">Saṅ Hyaṅ Hayu</title>
             <!-- fill in the subtitle if necessary -->
-            <editor ref="part:adgu">
-               <name>Aditia Gunawan</name>
-            </editor>
             <respStmt>
-               <resp>intellectual authorship of edition</resp>
+               <resp>author of digital edition</resp>
                <!-- work done in the file, e.g. editor, Intellectual authorship of edition ...-->
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
@@ -22,21 +19,26 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-            <idno type="filename">DHARMA_DiplEdSangHyangHayuPerpusnasL638</idno>
+            <idno type="filename">DHARMA_DiplEdSangHyangHayuPerpusnasL638.xml</idno>
             <!-- Replace by filename, e.g. DHARMA_DiplEd... -->
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street·, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by John Doe.</p>
+                  
                   <!-- Replace year and name, Use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
-                <!-- Give your witness an unique identifier -->
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"></abbr>
             <msDesc>
                <msIdentifier>
+                  <settlement>Jakarta</settlement>
                   <institution>Perpustakaan Nasional Republik Indonesia</institution>
                   <repository>Gebang</repository>
                   <idno>L. 638</idno>
@@ -53,131 +55,128 @@
                             <!-- Here you can give a physical description of the manuscript in prose-->
                      <p>Palm-leaf manuscript. </p>
                   </objectDesc>
+                  <handDesc><p/></handDesc>
                </physDesc>
                <history>
                         <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
                   <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
                </history>
             </msDesc>
+               </witness>
+            </listWit>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-                <!-- Part mandatory -->
-            <p>This project has received funding from the European Researcḥ Council (ERC) under the European Union's Horizon 2020 researcḥ and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
          </projectDesc>
-         <editorialDecl>
-                <!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, Its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all·, you may eventually remove this entire section of the file. -->
+         <editorialDecl>        
             <correction>
                <p/>
             </correction>
             <normalization>
                <p/>
             </normalization>
-            <punctuation>
+            <interpretation>
                <p/>
-            </punctuation>
+            </interpretation>
          </editorialDecl>
          <samplingDecl>
-                <!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
             <p/>
-         </samplingDecl>
-         <!--schemaRef  will need to be added once a  official realase is done -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
+         </samplingDecl> 
       </encodingDesc>
-      <profileDesc>
-         <langUsage>
-                <!-- choose the language(s) of your text·, remove the others -->
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-         </langUsage>
-         <textClass>
-            <keywords>
-                    <!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
-      </profileDesc>
       <revisionDesc>
           <change who="part:adgu" when="2023-06-27">First encoding</change>
          <change who="part:axja" when="2021-11-19" status="draft">transformation from txt to xml</change>
          <!-- replace this by a line that has you as @who, that has the @date on whicḥ you finished the first basic encoding of the file, And that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for eacḥ significant change to the file. -->
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="kaw-Latn">
+   <text xml:space="preserve">
       <body>
-         <ab>
-             <pb n="1r" xml:id="pb001"/>
-<pb n="1v" xml:id="pb002"/>
-<lb n="1v1"/>//ø// nḍaḥ saṁ hyaṁ hayu Iki Ujarakna mami I saṁ sevaka ḍarmma, kunaṁ deyanta humidapa saṁ hyaṁ darmma, la:van saṁ hyaṁ Ajña:na, <g type="symbol" subtype="filler"/>
+         <div type="edition" xml:lang="kaw-Latn">
+            <ab>
+             <pb n="1r"/>
+<pb n="1v"/>
+<lb n="1v1"/>//ø// nḍaḥ saṁ hyaṁ hayu Iki Ujarakna mami I saṁ sevaka ḍarmma, kunaṁ deyanta humidapa saṁ hyaṁ darmma, la:van saṁ hyaṁ Ajña:na, <g type="symbol">$</g>
 <lb n="1v2"/>pavkasira saṁ siddha yogisvara ṅuni Ikaṁ kayatnakna, Apa <gap reason="lost" unit="character" quantity="1"/> ta vakṣesa saṁ sidḍa yvagisvara I saṁ sevaka darmma, nihan· liṁnira
-<lb n="1v3"/>, hayva vinava ri rakva rakva, hayva vinava riṁ A<unclear>ma</unclear>yoṁ ma<gap reason="lost" unit="character" quantity="1"/>la:van a:vasta, Apa deyanta humidapa ya, sahiṅani tuhu, <g type="symbol" subtype="filler"/>
+<lb n="1v3"/>, hayva vinava ri rakva rakva, hayva vinava riṁ A<unclear>ma</unclear>yoṁ ma<gap reason="lost" unit="character" quantity="1"/>la:van a:vasta, Apa deyanta humidapa ya, sahiṅani tuhu, <g type="symbol">$</g>
              <lb n="1v4"/>sahiṅaniṁ tpət·, pratyakṣa vartamana, nahan ḍenta humidapa vuvusaṁ pa:nḍita, nḍya nuṁ rakva-rakva, la:van a:vasta, pavaraḥ saṁ viku lvakika
 
-<pb n="2r" xml:id="pb003"/>
+<pb n="2r"/>
              <lb n="2r1"/>na:, laṅgəṁ nira:śraya Abyantara taya ṅaranika: Ø I ruhurnika: manaḥ tan matra, budḍi guna, pradana, pañcatanmatra ṅaranika Ø I
              <lb n="2r2"/>ruhurnika sunyan taya nirmala taya, Ḷñəp·, vinḍu pəpət<space type="binding-hole"/>· taravaṁ, pisaniṅu, tutur puṅguṁ, lupa, Arahan ta sarira, seśa A
              <lb n="2r3" break="no"/>nta guru mokṣa lə:pas· Ø I ruhurnika: kanisrayasa:<space type="binding-hole"/>n·, kanisrayasan· ṅaranya, hiṅaniṁ hiḍapnika:ṁ rat kabeḥ, ya:
              <lb n="2r4" break="no"/>n a:ṅalor, yan a:ṅidul·, yan paṅulvan·, paṅavetan· <gap reason="lost" quantity="1" unit="character"/>svar minduhur, makuliliṅan· Irikaṁ buvana:, sinaṅguḥ Anasti 
              
              <!--image00009.jpg-->
-             <pb n="2v" xml:id="pb004"/><fw n="2v" place="left"><num value="3">3</num></fw>
+             <pb n="2v"/><fw n="2v" place="left"><num value="3">3</num></fw>
              <lb n="2v1"/>deva, katuna:n ḍeniṁ vatək ḍevata kabeḥ, naha:n· Ikaṁ kanisrayasa:n· ṅaranya, rinahasya ḍe saṁ lokika paramarta:
              <lb n="2v2"/>kabeḥ, ya teka tiṅgalakna, Apan· rakva-rakva, ana:<space type="binding-hole"/>vasta lvirnya Ø sojar mahapa:nḍita, tan· vnaṁ ra:nak maha:pa:nḍita
              <lb n="2v3"/>, tumiṅgalakən i samaṅka:na:, Iki Avakna ranak maha:pa<space type="binding-hole"/>nḍita, tuṅgal-tuṅgal· Eka <unclear>pə·</unclear> sarira, laṅgana pva riṁ vuvusnikaṁ sabu
              <lb n="2v4" break="no"/>vana:, Atakut· rana:k maha:paṇḍita, sapapa:niṁ samaṅka:na, pa:pa paṅguhən· ra:nak maha:pa:nḍita, Apa:n pva ya yan maṁkana, sa
              
              <!--image00010.jpg-->
-             <pb n="3r" xml:id="pb005"/>
+             <pb n="3r"/>
              <lb n="3r1" break="no"/>śvargganiṁ samaṅka:na, svargga paṅguhən· ranak maha:pa:nḍita, nyapan thaha:n kva liṁ saṁ sevaka darmma, kaḍi mevəḥ kami tiṅgalakna, yan maṁkana liṅa
              <lb n="3r2" break="no"/>nta, Apa ta deyanta tumiṅgalakən kami, hana: pariba:śa timpa<space type="binding-hole"/>l tali riṁ ḍaḍin vaṁ ṅaranya, maṁkana: ta deyanta tiṅgalakən saṁ pa:nḍi
              <lb n="3r3" break="no"/>ta, Aparan tekiṁ vastu timpal tali ṅaranya, tahinta maṅke <space type="binding-hole"/> ta tuha: kariya, tahampiḥ, kaṅəna:ṅən· kocap kate
              <lb n="3r4" break="no"/>ka, tahinta kapan pva, tahinta ṅuni tambhay ta mijil ṣaṁka ri gabarvasa, vijil ta saṁka riṁ gohya, pinasaha:kən· kita la:van· A
              
              <!--image00011.jpg-->
-             <pb n="3v" xml:id="pb006"/><fw n="3v" place="left"><num value="4">4</num></fw>
+             <pb n="3v"/><fw n="3v" place="left"><num value="4">4</num></fw>
              <lb n="3v1" break="no"/>ri-Arinta deneṁ Ibunta, kinasa yan ḍinyusan linəṅan ta kita, huvus linəṅan·, binarutan·, ta kita tlas binarut ḍinulaṁ ta kita, riṁ sku:
              <lb n="3v2" break="no"/>l ṣakəpəl· haṚṁ la:van kunir, pira ta lavasnya ni vtaṁ so<space type="binding-hole"/>ve savṅini ya:tanya, mijil ta ya śaka ri vtaṁ, tinadaḥ ta ya ri vḍiṁ-vḍiṁ
              <lb n="3v3"/>, tinimpalakəna ya deniṁ Ibunta, tahinta rasa maṅka:na <space type="binding-hole"/> lavasnya, kaṅən-aṅən karika: denta, ya tan ka:mi mujarakna ya
              <lb n="3v4"/>maṅkai, taham piḥ tan kahidapa ya dainta:, ya matanyan hana paribha:ṣa timpal tahi, Adyapi tka: maṅkai, Ika ta ya pvac maṅka:
              
              <!--image00012.jpg-->
-             <pb n="4r" xml:id="pb007"/>
-             <lb n="4r1" break="no"/>na: denta tumiṅgalakən saṁ pa:nḍita, tan· kna kita riṅ upadrava, yapvan kaḍi den katiṅgalakən tahinta maṅke ta tuha:, denta tu<g type="symbol" subtype="filler"/>
-             <lb n="4r2" break="no"/>miṅgalakən saṁ pa:nḍita, kna ta kita riṁṅ upadrava, Apa ya:pa<space type="binding-hole"/>n tiṅgalakən si tuhu la:van· byakta, svajar maha:panḍita, tukupə<g type="symbol" subtype="filler"/>
+             <pb n="4r"/>
+             <lb n="4r1" break="no"/>na: denta tumiṅgalakən saṁ pa:nḍita, tan· kna kita riṅ upadrava, yapvan kaḍi den katiṅgalakən tahinta maṅke ta tuha:, denta tu<g type="symbol">$</g>
+             <lb n="4r2" break="no"/>miṅgalakən saṁ pa:nḍita, kna ta kita riṁṅ upadrava, Apa ya:pa<space type="binding-hole"/>n tiṅgalakən si tuhu la:van· byakta, svajar maha:panḍita, tukupə<g type="symbol">$</g>
              <lb n="4r3" break="no"/>n pva tutuk maha:panḍita, hidvakən ikaṁ sabḍa tan· ṣyakti ka<space type="binding-hole"/>liṅaniṁ vuvus· ranak mahapa:nḍita, yan tambhəhanaA tekaṁ buvana:
              <lb n="4r4"/>svargga patala, raṅk̄əpakna ranak mahapa:nḍita, Ata sojar mahapa:nḍita, tan· byaktanyan katakutana:, yan paṅucapa ya saṁ hyaṁ ḍarmma,
 
 <!--image00013.jpg-->
-             <pb n="4v" xml:id="pb008"/><fw n="4v" place="left"><num value="5">5</num></fw>
+             <pb n="4v"/><fw n="4v" place="left"><num value="5">5</num></fw>
              <lb n="4v1"/>yan· rakva-rakva Anavasta Ikaṅ ujaraknanya, Apa mataṁnyan kataku:tana:, kaliṅaniṁ sabḍa ranak mahapa:nḍita, yan hegya ra:nak maha
-             <lb n="4v2"/>pa:nḍita, Anugṛhana Irikaṁ tuhu la:van· byakta, yan ka<space type="binding-hole"/>sahur saṁ sevaka ḍarmma, Om bhagya ta yan maṁkana:, kumva ta kami, ni<g type="symbol" subtype="filler"/>             
+             <lb n="4v2"/>pa:nḍita, Anugṛhana Irikaṁ tuhu la:van· byakta, yan ka<space type="binding-hole"/>sahur saṁ sevaka ḍarmma, Om bhagya ta yan maṁkana:, kumva ta kami, ni<g type="symbol">$</g>             
              <lb n="4v3" break="no"/>ha:n kami mujarakna tuhu la:van· byakta, hana: tiga vinu<space type="binding-hole"/>s maha:pa:nḍita, ya teka hidapən·, paṅanumananta Irikaṁ tu
              <lb n="4v4" break="no"/>hu lavan· byakta, mapa tekaṁ vastu tiga ṅaranya, maha:pa:nḍita juta rikaṁ maṅujarakən tiga Irikaṁ rat· pantaha:nkva saṁ sevaka ḍarmma
              
              <!--image00014.jpg-->
-            <pb n="5r" xml:id="pb009"/><lb n="5r1"/>, taha: paḍa Ikaṁ rat kabeḥ, maṅujarakən tiga, ndan· Abaida Ikaṁ tiga liṁnikaṁ rat kabaiḥ, la:vannikaṁ tiga liṁ saṁ pa:nḍita, Apa ta bai
+            <pb n="5r"/><lb n="5r1"/>, taha: paḍa Ikaṁ rat kabeḥ, maṅujarakən tiga, ndan· Abaida Ikaṁ tiga liṁnikaṁ rat kabaiḥ, la:vannikaṁ tiga liṁ saṁ pa:nḍita, Apa ta bai
             <lb n="5r2"/>danya, hana tiga Anavasta, Inujarakən saṁ lokika parama:r — — ta, Ika taṁ tiga Anavasta, Ujarakna mami Ateka ri saṁ sevaka ḍa:
             <lb n="5r3" break="no"/>rmma, nḍan· Ṛṅən tan hidapən· visaya, vuvusa:vuvusakən· ri pa — — naha:pan·, bañol-bañola paknanya, pasvagata riṁ tamuy·
             <lb n="5r4"/>pa:knanya, Apan maḍvala:van· Ana:vasta lvirnya, ndya ya: nyapan taha:n kva liṅanta, ø, nihan· taṁ brahma:, visnu, mahisvara, saṅaranika, niha
             
             <!--image00015.jpg-->
-            <pb n="5v" xml:id="pb010"/><fw n="5v" place="left"><num value="6">6</num></fw>
+            <pb n="5v"/><fw n="5v" place="left"><num value="6">6</num></fw>
             <lb n="5v1" break="no"/>: ntaṁ budḍi, manaḥ, Ahəṅkara, tryantaḥkarana ṅaranya ḍenika:ṁ lauka la:van para, rva ṅaranika:,, niha:n taṁ prabu, ra:ma, Ṛsi, tiniganika:ṁ
             <lb n="5v2"/>ṣḍaṁ bagavat· tlu ṅaranika:,, niha:n taṁ ḍarmmakaya, ḍarmmaḍatu, — — ḍarmma: tar, Isara viha:ra, pa:t ṅaranika:,, niha:n taṁ ka:ya vak cipta,
             <lb n="5v3"/>I sira maha:yana:, lima ṅaranika:, niha:n taṁ prativi, A — — paḥ teja, nəm ṅaranika:,, niha:n taṁ prativi, Antara, luvan akasa, pi
             <lb n="5v4" break="no"/>tu ṅaranika:,, niha:n taṁ satva, rajaḥ tamaḥ, paṅan· Inum la:van turu, vvalu ṅaranika:,, niha:n taṁ mata, taliṅa, tutuk·, saṅa ṅaranika
             
             <!--image00016.jpg-->
-            <pb n="6r" xml:id="pb011"/>
+            <pb n="6r"/>
             <lb n="6r1" break="no"/>:,, niha:n taṁ pasukniṁ bayu, vtunya, mvaṁ Antaranya, sapuluḥ ṅaranika:,, niha:n taṁ sunya, taya, paramarta, yeka pinaka:ḍinikaṁ tiga Anavasta,
             <lb n="6r2"/>denikaṁ ra:t kabeḥ, savlasta pindanikaṁ tiga Anavasta, Inujara — — kən ikaṁ rat· ø maṅka:na: ta rikaṁ tiga liṁ maha:panḍita, taham piḥ
             <lb n="6r3"/>, nḍya pva Ika:ṁ tiga liṁ maha:pa:nḍita, nyapan taha:n· kva liṅa — — nta ø AUm· AṁṚṅyə Ata kita, Ujar maha:pa:nḍita ṅuni riṁ kṛ§
             <lb n="6r4"/>
-         </ab>
-      </body>
+         </ab></div>
+         <div type="translation">
+            <p/>
+         </div>
+         <div type="commentary">
+               <p/>                              
+            </div>
+      <div type="bibliography"> 				
+         <p/> 				
+         <listBibl> 				
+            <bibl/> 			
+         </listBibl>            
+          			
+      </div> 		
+
+       		</body>
   </text>
 </TEI>

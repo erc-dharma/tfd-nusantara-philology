@@ -4,28 +4,28 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
-     xml:id="rt"
-     type="edition">
+     xml:id="ramaVijayaTaningrat">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Kakavin Rāmavijaya</title>
+            <title type="editorial">Kakavin Rāmavijaya</title>
             <title type="alt">Rāma's Conquest</title>
-            <title type="sub">Digital Critical Edition of the Kakavin Rāmavijaya</title>
             <author>Tan iṅ Rāt</author>
-            <editor ref="part:argr">
+            <respStmt>
+            	<resp>author of digital edition</resp>
+            	<persName ref="part:argr">
                <forename>Arlo</forename>
                <surname>Griffiths</surname>
-            </editor>
+            </persName></respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Paris</pubPlace>
-            <idno type="filename">DHARMA_CritEdKakavinRamavijayaTaningrat</idno>
+            <idno type="filename">DHARMA_CritEdKakavinRamavijayaTaningrat.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Arlo Griffiths.</p>
+                  
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
@@ -43,9 +43,9 @@
 					<witness xml:id="L"> <abbr type="siglum">L</abbr> <msDesc>
 						<msIdentifier>
 							<settlement>Leiden</settlement>
-							<institution>Leiden University Library</institution>
+							<institution>Leiden University Libraries (UB)</institution>
 							<repository>Special Collections</repository>
-							<idno>Or 4697</idno>
+							<idno>Or. 4697</idno>
 						</msIdentifier>
 						<msContents>
 							<!-- the msContents isn't mandatory -->
@@ -98,95 +98,33 @@
             </listWit>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <projectDesc>
-				<!-- Part mandatory -->
-            <p>This project has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
-            <!-- Optionally add here a second <p> to describe the specifics of the subproject that has led to this edition. -->
-         </projectDesc>
-         <editorialDecl>
-				<!-- As stated in the EGC, this element shall be used only if your edition follows principles that are different from or more fine-grained than those established in the project's guides. Among the following elements, you may keep only the ones your need for your edition. If you use one, its contents must be contained in at least one <p> of free text. If you don't need any <editorialDecl> at all, you may eventually remove this entire section of the file. -->
-            <correction>
-               <p/>
-            </correction>
-            <normalization>
-               <p>The roman transcript makes no distinction between long/short vowel, between sibilants, between ə and e, between ny and ñ, between retroflex/dental consonants, between vowel- and h-initial syllables. By contrast, it frequently maintains the doubling of consonants after r that is typical of the Balinese writing tradition. All orthography is normalized taking metrical considerations and OJED spellings into account.</p>
-            </normalization>
-            <punctuation>
-               <p/>
-            </punctuation>
-            <interpretation>
-               <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
-            </interpretation>
-         </editorialDecl>
-         <samplingDecl>
-				<!-- To be kept only to explain in prose the method to choose the corpus, e.g. ommission of the material ...-->
-            <p/>
-         </samplingDecl>
-         <schemaRef type="guide"
-                    key=" EGCv01"
-                    url="https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit#"/>
-         <!-- Will need to be updated once a more official realase is done -->
-         <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
-
-			<variantEncoding method="parallel-segmentation" location="internal"/><variantEncoding method="location-referenced" location="internal"/>.
-
-			Note that the current by default behaviour is set on parallel-segmentation -->
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <!-- Part mandatory -->
-         <listPrefixDef>
-            <prefixDef ident="bib"
-                       matchPattern="([a-zA-Z0-9\-\_]+)"
-                       replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
-               <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
-            </prefixDef>
-            <prefixDef ident="part"
-                       matchPattern="([a-z]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="txt"
-                       matchPattern="([A-Za-z0-9]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
-               <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
-            </prefixDef>
-            <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
-            </prefixDef>
-            <prefixDef ident="maturity" matchPattern="(0-9]+)" replacementPattern="tba">
-               <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
-            </prefixDef>
-            <prefixDef ident="cal"
-                       matchPattern="([\w]+)"
-                       replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
-               <p>Internal URIs using the cal prefix to point to calendar systems in <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
-            </prefixDef>
-         </listPrefixDef>
-      </encodingDesc>
-      <profileDesc>
-         <langUsage>
-				<!-- choose the language(s) of your text, remove the others -->
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="osn-Latn">Old Sundanese, romanized</language>
-         </langUsage>
-         <textClass>
-            <keywords>
-					<!-- In due course we will can use this element to declare keywords as <term>s, but at the moment please ignore <keywords>  -->
-               <term/>
-               <!-- Ignore this element for the time being. -->
-            </keywords>
-         </textClass>
-      </profileDesc>
-      <revisionDesc>
+   	<encodingDesc>
+   		<projectDesc>
+   			<p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+   		</projectDesc>
+   		<editorialDecl>        
+   			<correction>
+   				<p/>
+   			</correction>
+   			<normalization>
+   				<p>The roman transcript makes no distinction between long/short vowel, between sibilants, between ə and e, between ny and ñ, between retroflex/dental consonants, between vowel- and h-initial syllables. By contrast, it frequently maintains the doubling of consonants after r that is typical of the Balinese writing tradition. All orthography is normalized taking metrical considerations and OJED spellings into account.</p>
+   			</normalization>
+   			<interpretation>
+   				<p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>
+   			</interpretation>
+   		</editorialDecl>
+   		<samplingDecl>
+   			<p/>
+   		</samplingDecl>    
+   	</encodingDesc><revisionDesc>
          <change who="part:axja" when="2022-03-11" status="draft">Renumbering cantos</change>
          <change who="part:axja" when="2022-03-08" status="draft">Converting uppercase into lower case, ng into ṅ, w into v and e into é. Adding a structure with div for canto.</change>
          <change who="part:argr" when="2022-03-07" status="draft">started applying further structure, correcting transcription errors, and filling in the teiHeader</change>
          <change who="part:axja" when="2022-03-07" status="draft">Converting docx into xml</change>
       </revisionDesc>
    </teiHeader>
-   <text xml:space="preserve" xml:lang="">
-        <body>
+   <text xml:space="preserve">
+        <body><div type="edition" xml:lang="und">
         <div xml:id="rt_01"><ab xml:id="rt_01.01" type="invocation"><pb edRef="#JK" n="1v"/><lb n="1"/>avighnam astu.</ab></div>
 
 <div type="canto" rend="met" met="jagaddhita" n="1" xml:id="rt_02">
@@ -696,7 +634,7 @@
 	<l n="b"><lb n="30"/>tumuluy asanti mupakṣama aira paḍa harṣa mulat magiraṅ,</l>
 	<l n="c"><lb n="31"/>padi madulur tumameṅ pura sira sukha yar sinégé-sigéhan,</l>
 	<l n="d"><lb n="32"/>hana kéta padya sumaṅgraha saha saréh arja madhupa marum. o.</l><note>Stanza numbered 94 in <ptr target="#JK"/>.</note></lg></div>
-<div type="canto" rend="met" met="basantatilaka" n="17" xml:id="rt_18">
+<div type="canto" rend="met" met="basantatilakā" n="17" xml:id="rt_18">
 	<note type="prosody">++-+---+--+-+=</note>
 	<lg xml:id="rt_18.01" n="1">
 	<l n="a"><lb n="33"/>nāhan vuvus nr̥pati bhāgya ta saṅ maharṣi,</l>
@@ -1957,7 +1895,7 @@
 	<l n="b"><lb n="4"/>yapvan sampun taya doṣa yatika hamésan lakva saṅ niti manta,</l>
 	<l n="c"><lb n="5"/>ndah yan tapvan tayāṅdon maya tika vulikén met-metən tan tahən tvas,</l>
 	<l n="d"><lb n="6"/>hayvenaṅgəh vavan adah rasana ya ləvədən havya tan yatna-yatna. o.</l><note>Stanza numbered 311 in <ptr target="#JK"/>.</note></lg></div>
-<div type="canto" rend="met" met="basantatilaka" xml:id="rt_52" n="51">
+<div type="canto" rend="met" met="basantatilakā" xml:id="rt_52" n="51">
   <note type="prosody">++-+---+--+-+=</note>
 	<lg xml:id="rt_52.01" n="1">
 	<l n="a"><lb n="7"/>nda kantənanya aji havya bharaṅ lumampah,</l>
@@ -4305,7 +4243,7 @@
 	<l n="c"><lb n="21"/>kagyat-gyat manahiṅ hulun dadi maṅa rumasa-rama ri tan sidéṅ gati,</l>
 	<l n="d"><lb n="22"/>tan saṅkaṅ pamihaṅkv astuniṅ asuṅkava təkapi kahinasiṅ hulan. o.</l><note>Stanza numbered 765 in <ptr target="#JK"/>.</note></lg>
 </div>
-<div type="canto" rend="met" met="basantatilaka" xml:id="rt_104" n="103">
+<div type="canto" rend="met" met="basantatilakā" xml:id="rt_104" n="103">
   <note type="prosody">++-+---+--+-+=</note>
 	<lg xml:id="rt_104.01" n="1">
 	<l n="a"><lb n="23"/>santoṣa tekini manehta apan vimūḍha,</l>
@@ -4316,6 +4254,19 @@
   <div xml:id="rt_105">
              <ab xml:id="rt_105.01" type="colophon">iti kakavin rāmavijaya, samāpta. təlas sinurat riṅ gəria piḍaḍa, duk taṅgal 30 april 1973. varsaniṅ loka.-</ab>
            </div>
+        </div>
+        	<div type="translation"><p/></div>
+            <div type="commentary">
+            	<p/>
+            </div>
+
+            <div type="bibliography"> 				
+                <p/> 				
+                <listBibl> 				
+                    <bibl/> 			
+                </listBibl>           
+                 			
+            </div> 
         </body>
     </text>
 </TEI>
