@@ -6,9 +6,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">Jati Mula: Digital Critical Edition</title>
-                <title type="original">Jati Mula</title>
-                <title type="alt">The True Origin</title>
+                <title type="editorial">Jati Mula, or The True Origin: Digital Critical Edition</title>
+            	<title type="original" xml:lang="osn-Latn">Jati Mula</title>
                 <respStmt>
                     <resp>author of digital edition</resp>
                     <persName ref="part:ilnu">
@@ -18,28 +17,24 @@
             </titleStmt>
             <publicationStmt>
                 <authority>DHARMA</authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <pubPlace>Jakarta</pubPlace>
                 <idno type="filename">DHARMA_CritEdJatiMula.xml</idno>
-                <!-- Replace by filename, e.g. DHARMA_CritEdSiksaGuru -->
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                        <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
                     </licence>
                 </availability>
                 <date from="2019" to="2025">2019-2025</date>
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <!-- One witness for each manuscript. Update the content -->
                     <witness xml:id="A">
                          <abbr type="siglum">A</abbr>
-                        <!-- Give your witness an unique identifier -->
-                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-                        <msDesc>
+                      <msDesc>
                             <msIdentifier>
                                 <settlement>Jakarta</settlement>
                                 <institution>Perpustakaan Nasional Republik Indonesia</institution>
+		        <repository>Koleksi Naskah Nusantara</repository>
                                 <idno>L. 1097</idno>
                             </msIdentifier>
                             <msContents>
@@ -48,9 +43,9 @@
                                     <author>-</author>
                                     <title>Jati Mula</title>
                                         <colophon>
-										<quote type="diplomatic" xml:lang="osn-Latn">tlәs· sinulis· ri saga⟨⟨ra⟩⟩ visesa, pun· </quote>
-										</colophon>
-                                    <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+				<quote type="diplomatic" xml:lang="osn-Latn">tlәs· sinulis· ri saga⟨⟨ra⟩⟩ visesa, pun·</quote>
+			   </colophon>
+                                    <!-- colophon should be structured with quote elements with attributed @type and @xml:lang when necessary -->
                                 </msItem>
                             </msContents>
                             <physDesc>
@@ -59,19 +54,18 @@
                                 </objectDesc>
                                 <handDesc hands="1">
                                     <handNote xml:id="A_H1" scriptRef="class:83241 maturity:83215">
-                                        <abbr type="hand">AH<hi rend="subscript">1</hi></abbr>
+                                        <abbr type="hand">A:H<hi rend="subscript">1</hi></abbr>
                                       <p>Main hand of the manuscript, black ink, Old West Javanese script</p>
                                     </handNote>
                                 </handDesc>
                             </physDesc>
                             <history>
-                                <p>The manuscript was originated from Kabuyutan Koleang, Jasinga in Bogor. The romanized copies of it can be found in the National Library of Indonesia in Plt. 149 peti 119, No. 277 peti 89, No. 155 peti 89 and Ciburuy V (Javanese script)</p>
+                                <p>The manuscript originates from Kabuyutan Koleang, Jasinga in Bogor. Romanized copies of it can be found in the National Library of Indonesia in Plt. 149 peti 119, No. 277 peti 89, No. 155 peti 89 and Ciburuy V (Javanese script).</p>
                             </history>
                         </msDesc>
                     </witness>
                      <witness xml:id="B">
                          <abbr type="siglum">B</abbr>
-                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
                         <msDesc>
                             <msIdentifier>
                                 <msName>Constituent parts of Kropak 19, 29, 8, dan 3</msName>
@@ -112,8 +106,8 @@
                                     <author>-</author>
                                     <title>Untitled</title>
                                     <!--<colophon>
-										<quote></quote>
-										</colophon> -->
+				<quote></quote>
+			</colophon> -->
                                 </msItem>
                             </msContents>
                             <physDesc>
@@ -122,7 +116,7 @@
                                 </objectDesc>
                                 <handDesc>
                                     <handNote xml:id="B_H1" scriptRef="class:57470 maturity:83215">
-                                        <abbr type="hand">BH<hi rend="subscript">1</hi></abbr>
+                                        <abbr type="hand">B:H<hi rend="subscript">1</hi></abbr>
                                     <p>Main hand of the manuscript, Old Sundanese script</p>
                                     </handNote>
                                 </handDesc>
@@ -137,8 +131,9 @@
                         <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
                         <msDesc>
                             <msIdentifier>
-                                <settlement>Jakarta</settlement>
-                                <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                            	<settlement>Jakarta</settlement>
+                            	<institution>Perpustakaan Nasional Republik Indonesia</institution>
+                            	<repository>Koleksi Naskah Nusantara</repository>
                                 <idno>277 Peti 89</idno>
                             </msIdentifier>
                             <msContents>
@@ -146,13 +141,13 @@
                                     <author>-</author>
                                     <title>Carita Wiwit Jati Luput Ti Puhun</title>
                                     <colophon>
-										<quote xml:lang="kaw-Latn" type="diplomatic">tәlassi nulis riṅ saṅgara visesa, pun.</quote>
-									</colophon>
+				<quote xml:lang="kaw-Latn" type="diplomatic">tәlassi nulis riṅ saṅgara visesa, pun.</quote>
+			</colophon>
                                 </msItem>
                             </msContents>
                             <physDesc>
                                 <objectDesc>
-                                    <p>Roman transliteration made by K.F. Holle. It seems to be the Romanized copy of L 1097</p>
+                                    <p>Roman transliteration made by K.F. Holle. It seems to be the Romanized copy of L. 1097.</p>
                                 </objectDesc>
                                 <handDesc>
                                     <p/>
@@ -182,6 +177,7 @@
                 <p/>
             </samplingDecl>    
         </encodingDesc><revisionDesc>
+        	<change who="part:argr" when="2025-05-17" status="draft">Adjusted teiHeader</change>
             <change who="part:axja" when="2020-01-06" status="draft">Creation of the template</change>
         </revisionDesc>
     </teiHeader>
