@@ -16,7 +16,10 @@ jobs:
            distribution: 'zulu'
            java-version: '17'
        - name: Build critical editions with Ant
-         run: ant -noinput -buildfile build-critical.xml
+         run: ant -noinput -buildfile -Daccess_token=GH_TOKEN build-critical.xml
+         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
        - name: Updating the edited texts in the repository
          run: |

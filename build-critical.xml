@@ -50,6 +50,7 @@
     <!-- Transformation XML vers HTML -->
     <xslt force="true" style="./project-documentation/stylesheets/criticalEditions/start_v02.xsl" destdir="./output/critical-edition/html" extension=".html" useImplicitFileset="false" classpath="./project-documentation/editorialStylesheets/pipelineTools/saxon9he.jar">
         <fileset refid="criticalHTML"/>
+        <property name="access_token" value="${access_token}"/>
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <regexpmapper from="EDITED_(.*).xml" to="\1.html"/>
     </xslt>
