@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
      xml:id="kutaraManavaManchesterB2">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Kuṭāra Mānava Manchester Balinese 2</title>
+            <title type="editorial">Kuṭāra Mānava Manchester Balinese 2</title>
             <respStmt>
-               <resp>Author of the digital edition</resp>
+               <resp>author of digital edition</resp>
                <persName ref="part:tilu">
                   <forename>Timothy</forename>
                   <surname>Lubin</surname>
@@ -23,11 +23,10 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-            <idno type="filename">DHARMA_DiplEdKutaraManavaManchesterB2</idno>
+            <idno type="filename">DHARMA_DiplEdKutaraManavaManchesterB2.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Timothy Lubin and Eko Bastiawan.</p>
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
@@ -74,16 +73,6 @@
             <p/>
          </samplingDecl>
       </encodingDesc>
-      <profileDesc>
-         <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="tam-Latn">Tamil, romanized</language>
-            <language ident="kan-Latn">Kannada, romanized</language>
-            <language ident="tel-Latn">Telugu, romanized</language>
-         </langUsage>
-      </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-09-27" status="draft">Converting a txt file into XML-TEI</change>
       </revisionDesc>

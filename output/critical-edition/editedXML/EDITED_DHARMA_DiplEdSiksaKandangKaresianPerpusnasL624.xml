@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
      xml:id="siksaKandangKaresianPerpusnasL624">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Saṅ Hyaṅ Siksa Kandaṅ Karəsian B</title>
+            <title type="editorial">Saṅ Hyaṅ Siksa Kandaṅ Karəsian B: Digital Diplomatic Edition of Perpusnas L624</title>
+            <title type="original" xml:lang="kaw-Latn">Saṅ Hyaṅ Siksa Kandaṅ Karesian</title>
             <respStmt>
-               <resp>Author of the digital edition</resp>
+               <resp>author of digital edition</resp>
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
                </persName>
@@ -19,39 +20,38 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Paris</pubPlace>
-            <idno type="filename">DHARMA_DiplEdSiksaKandangKaresianPerpusnasL624</idno>
+            <idno type="filename">DHARMA_DiplEdSiksaKandangKaresianPerpusnasL624.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
-            <listWit>
-               <!-- One witness for each manuscript. Update the content -->
+            <listWit xml:id="mssperpusnas">
+               <head>Manuscripts kept in National Library of Indonesia</head>
                <witness xml:id="fakeID">
                   <!-- Give your witness an unique identifier -->
                   <abbr type="siglum"/>
                   <msDesc>
                      <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
+                        <settlement>Jakarta</settlement>
+                        <institution>Perpustakaan Nasional Republik Indonesia</institution>
                         <repository>Lontar</repository>
-                        <idno>Or. 23732</idno>
+                        <idno>L. 624</idno>
                      </msIdentifier>
                      <msContents>
                 <!-- the msContents isn't mandatory -->
                         <msItem>
-                           <author>Śāntarakṣita</author>
-                           <title>Vipañcitārthā</title>
+                           <author>Anonymous</author>
+                           <title>Saṅ Hyaṅ Siksa Kandaṅ Karesian</title>
                         </msItem>
                      </msContents>
                      <physDesc>
                         <objectDesc>
                   <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                           <p>Palm-leaf manuscript. 25 leaves in Old Sundanese Script, Date unknown.</p>
                         </objectDesc>
                         <handDesc>
                            <p> Generally, this manuscript show some characteristic like those we found in Old Sundanese manuscript tradition (1) The use of CyV to be read as CVy just like we find in Old Sundanese manuscripts; (2) Differentiation between pasangan r and r̥ ; (3) Hard to distinguish the use of : whether for make a long vocal or to geminate the consonant, both cases are found; (4) The use of special type of virāma under the aksara k; (5) The use of the number 2 for the segment ro; (6) The use of pasangan in the main line of text, e.g., l and m ; (7) The use of two dots to represent ulu (vocalisation i) and three dots to represent pepet; (8) There are two type of layar, Indonesian and Indian style </p>
@@ -59,7 +59,7 @@
                      </physDesc>
                      <history>
                 <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                        <p>he manuscript describes the daily life of the Sundanese people as early as the 16th century and is considered a kind of Old Sundanese encyclopedia</p>
                      </history>
                   </msDesc>
                </witness>
@@ -86,16 +86,6 @@
             <p/>
          </samplingDecl>
       </encodingDesc>
-      <profileDesc>
-         <langUsage>
-        <!-- choose the language(s) of your text, remove the others -->
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="tam-Latn">Tamil, romanized</language>
-            <language ident="kan-Latn">Kannada, romanized</language>
-            <language ident="tel-Latn">Telugu, romanized</language>
-         </langUsage>
-      </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
          <change who="part:adgu" when="2020-03-10" status="draft">Initial encoding of the edition</change>

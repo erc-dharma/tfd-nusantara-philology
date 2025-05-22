@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
      xml:id="kalpaBuddhaLeidenCB113">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Kalpabuddha CB113</title>
+            <title type="editorial">Kalpabuddha CB. 113:Digital Diplomatic Edition</title>
+            <title type="original" xml:lang="kaw-Latn">Kalpabuddha</title>
             <respStmt>
-               <resp>Author of the digital edition</resp>
+               <resp>author of digital edition</resp>
                <persName ref="part:dacc">
                   <persName>
                      <name>Dewa Ayu Carma Citrawati</name>
@@ -21,7 +22,7 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Hamburg</pubPlace>
-            <idno type="filename">DHARMA_DiplEdKalpabuddhaLeidenCB113</idno>
+            <idno type="filename">DHARMA_DiplEdKalpabuddhaLeidenCB113.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
@@ -40,9 +41,9 @@
                   <msDesc>
                      <msIdentifier>
                         <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
+                        <institution>Leiden University Libraries (UB)</institution>
                         <repository>Paper</repository>
-                        <idno>CB 113</idno>
+                        <idno>CB. 113</idno>
                      </msIdentifier>
                      <msContents>
                                 <!--the msContents isn't mandatory -->
@@ -86,12 +87,6 @@
             <p/>
          </samplingDecl>
       </encodingDesc>
-      <profileDesc>
-         <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
-            <language ident="kaw-Latn">Old Javanese, Balinese</language>
-         </langUsage>
-      </profileDesc>
       <revisionDesc>
          <change who="part:dacc" when="2024-12-25" status="draft">Updating the template</change>
          <change who="part:dacc" when="2024-12-26" status="draft">Initial encoding of the edition (first folia)</change>
@@ -146,13 +141,13 @@
          <lb n="8"/> muṅguḥ ri pusuḥ pusuḥ, sira pinaka:ṅənaṅən·, Irika ta saha devīnira sovaṁ 
          <lb n="9"/>sovaṁ, yatika: sinaṅguḥ saṁ hyaṁ pañca:tma ṅaranya, pinaka:vak·||ka:lpa
          <lb n="10"/>bodḍa Iti, paramarahasya
-         <lb n="11"/>Adva:yajña:na<g type="space"/><note type="image">drawing of a face</note><g type="space"/>Adva:ya
-         <lb n="12"/>sūryya:rūpa: I<g type="space"/><note type="image">drawing of a face</note><g type="space"/>candrarūpa:
-         <lb n="13"/>kaṅavak·, ya<g type="space"/><note type="image">drawing of a face</note><g type="space"/>Ikaṅ avak·
-         <lb n="14"/>sūryya:smr̥tya:<g type="space"/><note type="image">drawing of a face</note><g type="space"/>ya candra:smr̥tya:rane.
-         <lb n="15"/>rane<g type="space"/>guruṁ gu<g type="space"/>ruṅa· stha:na
+         <lb n="11"/>Adva:yajña:na<space type="feature"/>Adva:ya
+         <lb n="12"/>sūryya:rūpa: I<space type="feature"/>candrarūpa:
+         <lb n="13"/>kaṅavak·, ya<space type="feature"/>Ikaṅ avak·
+         <lb n="14"/>sūryya:smr̥tya:<space type="feature"/>ya candra:smr̥tya:rane.
+         <lb n="15"/>rane<space/>guruṁ gu<space type="feature"/>ruṅa· stha:na
          <lb n="16"/>. vyaktinyan· patmu riṁ ka:ṇṭabhu, Ikaṁ vindvaneṁ kaṇṭamula:, ya maha:praṇava Ika:, 
-         <lb n="17"/>Umiṅsor sumuṁsaṁ riṁ lariṁ hr̥daya: ṅadəg·, laṭa:praṇava Om̐ ka:ra,<note type="image"/>
+         <lb n="17"/>Umiṅsor sumuṁsaṁ riṁ lariṁ hr̥daya: ṅadəg·, laṭa:praṇava Om̐ ka:ra,<space type="feature"/>
          <lb n="18"/>ma:ḍya ya rumiṇḍuhur paranya, Ayva tan prayatna, pan tan dadi pinuraṁpuraṁ na:da:niran·,
          <lb n="19"/>sanugraha saṁ hyaṁ kaśūnyan· juga: tūtakna paraniramput·, tka: Iriṅən·, yan mukṣa
          <lb n="20"/>ṅaḍaḥ mvaṁ riṅ ūrdḍa:, tan pama:rgga kunaṁ||

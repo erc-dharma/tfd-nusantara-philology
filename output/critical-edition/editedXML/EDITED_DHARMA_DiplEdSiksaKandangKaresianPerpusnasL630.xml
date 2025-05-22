@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
      xml:id="siksaKandangKaresianPerpusnasL63">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Saṅ Hyaṅ Siksa Kandaṅ Karesian A</title>
+            <title type="editorial">Saṅ Hyaṅ Siksa Kandaṅ Karesian A: Digital Diplomatic Edition of Perpusnas L630</title>
+            <title type="original" xml:lang="kaw-Latn">Saṅ Hyaṅ Siksa Kandaṅ Karesian</title>
             <respStmt>
-               <resp>Author of the digital edition</resp>
+               <resp>author of digital edition</resp>
                <persName ref="part:adgu">
                   <name>Aditia Gunawan</name>
                </persName>
@@ -19,19 +20,18 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Paris</pubPlace>
-            <idno type="filename">DHARMA_DiplEdSiksaKandangKaresianPerpusnasL630</idno>
+            <idno type="filename">DHARMA_DiplEdSiksaKandangKaresianPerpusnasL630.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <p>Copyright (c) 2019-2025 by Aditia Gunawan.</p>
                   <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
          </publicationStmt>
          <sourceDesc>
-            <listWit>
-               <!-- One witness for each manuscript. Update the content -->
+            <listWit xml:id="mssperpusnas">
+               <head>Manuscripts kept in National Library of Indonesia</head>
                <witness xml:id="fakeID">
                   <!-- Give your witness an unique identifier -->
                   <abbr type="siglum"/>
@@ -40,7 +40,7 @@
                         <settlement>Jakarta</settlement>
                         <institution>Perpustakaan Nasional Republik Indonesia</institution>
                         <repository>Lontar</repository>
-                        <idno>L 630</idno>
+                        <idno>L. 630</idno>
                      </msIdentifier>
                      <msContents>
                                 <!-- the msContents isn't mandatory -->
@@ -52,7 +52,7 @@
                      <physDesc>
                         <objectDesc>
                                     <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1518 CE.</p>
+                           <p>Gebang manuscript. 29 leaves in Old Western Javanese quadratic script. Apparently written in 1518 CE.</p>
                         </objectDesc>
                         <handDesc>
                            <p/>
@@ -60,7 +60,7 @@
                      </physDesc>
                      <history>
                                 <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                        <p>The manuscript describes the daily life of the Sundanese people as early as the 16th century and is considered a kind of Old Sundanese encyclopedia</p>
                      </history>
                   </msDesc>
                </witness>
@@ -87,16 +87,6 @@
             <p/>
          </samplingDecl>
       </encodingDesc>
-      <profileDesc>
-         <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
-            <language ident="san-Latn">Sanskrit, romanized</language>
-            <language ident="kaw-Latn">Old Javanese, romanized</language>
-            <language ident="tam-Latn">Tamil, romanized</language>
-            <language ident="kan-Latn">Kannada, romanized</language>
-            <language ident="tel-Latn">Telugu, romanized</language>
-         </langUsage>
-      </profileDesc>
       <revisionDesc>
          <change who="part:axja" when="2021-04-19" status="draft">Updating the template</change>
          <change who="part:adgu" when="2020-09-01" status="draft">Finish Encoding (part 1)</change>

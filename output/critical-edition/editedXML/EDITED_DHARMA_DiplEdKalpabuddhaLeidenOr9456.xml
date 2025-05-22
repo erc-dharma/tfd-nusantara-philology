@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
      xml:id="kalpaBuddhaLeidenOr9456">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Kalpabuddha Or 9456</title>
+            <title type="editorial">Kalpabuddha Or 9456</title>
             <respStmt>
-               <resp>Author of the digital edition</resp>
+               <resp>author of digital edition</resp>
                <persName ref="part:dapu">
                   <persName>
                      <name>I Gde Agus Darma Putra</name>
@@ -21,7 +21,7 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Paris</pubPlace>
-            <idno type="filename">DHARMA_DiplEdKalpabuddhaLeidenOr9456</idno>
+            <idno type="filename">DHARMA_DiplEdKalpabuddhaLeidenOr9456.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
@@ -40,9 +40,9 @@
                   <msDesc>
                      <msIdentifier>
                         <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
-                        <repository>Paper</repository>
-                        <idno>Or 9456</idno>
+                        <institution>Leiden University Libraries (UB)</institution>
+                        <repository>Special collections</repository>
+                        <idno>Or. 9456</idno>
                      </msIdentifier>
                      <msContents>
                                 <!--the msContents isn't mandatory -->
@@ -85,12 +85,6 @@
             <p/>
          </samplingDecl>
       </encodingDesc>
-      <profileDesc>
-         <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
-            <language ident="kaw-Latn">Old Javanese, Balinese</language>
-         </langUsage>
-      </profileDesc>
       <revisionDesc>
          <change who="part:dapu" when="2025-01-08" status="draft">Updating the template</change>
          <change who="part:dapu" when="2025-01-08" status="draft">Initial encoding of the edition (first folia)</change>

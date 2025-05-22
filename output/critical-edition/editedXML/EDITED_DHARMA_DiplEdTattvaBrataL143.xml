@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xml:lang="eng"
      xml:id="tattvaBrataL143">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Tattva Brata L 143 </title>
+            <title type="editorial">Tattva Brata L 143 </title>
             <respStmt>
-               <resp>Author of the digital edition</resp>
+               <resp>author of digital edition</resp>
                <persName ref="part:pegy">
                   <persName>
                      <name>Putu Eka Guna Yasa</name>
@@ -21,7 +21,7 @@
          <publicationStmt>
             <authority>DHARMA</authority>
             <pubPlace>Paris</pubPlace>
-            <idno type="filename">DHARMA_DiplEdTattvaBrataL143</idno>
+            <idno type="filename">DHARMA_DiplEdTattvaBrataL143.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
@@ -40,9 +40,9 @@
                   <msDesc>
                      <msIdentifier>
                         <settlement>Jakarta</settlement>
-                        <institution>Perpustakaan Nasional</institution>
+                        <institution>Perpustakaan Nasional Republik Indonesia</institution>
                         <repository>Lontar</repository>
-                        <idno>L 143</idno>
+                        <idno>L. 143</idno>
                      </msIdentifier>
                      <msContents>
                                 <!--the msContents isn't mandatory -->
@@ -58,8 +58,7 @@
                      </physDesc>
                      <history>
                                 <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>
-                  </p>
+                        <p/>
                      </history>
                   </msDesc>
                </witness>
@@ -86,12 +85,6 @@
             <p/>
          </samplingDecl>
       </encodingDesc>
-      <profileDesc>
-         <langUsage>
-                <!-- choose the language(s) of your text, remove the others -->
-            <language ident="kaw-Latn">Old Javanese</language>
-         </langUsage>
-      </profileDesc>
       <revisionDesc>
          <change who="part:pegy" when="2025-01-25" status="draft">Updating the template</change>
          <change who="part:pegy" when="2025-01-25" status="draft">Initial encoding of the edition (first folia)</change>
