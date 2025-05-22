@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:lang="eng"
+     xml:id="amaramalaLeidenOr9610">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="editorial">Amaramālā-Tridaśa Proktaḥ: Digital Diplomatic Edition</title>
+            <respStmt>
+               <resp>author of digital edition</resp>
+               <persName ref="part:zapa">
+                  <persName>
+                     <name>Zakariya Pamuji Aminullah</name>
+                  </persName>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>DHARMA</authority>
+            <pubPlace>Hamburg</pubPlace>
+            <idno type="filename">DHARMA_DiplEdAmaramala-TridasaProktahOr9610.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send
+                            a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s)-->
+               </licence>
+            </availability>
+            <date from="2024" to="2025">2024-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="mstp1">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum">TP<hi rend="subscript">1</hi>
+                  </abbr>
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Singaraja</settlement>
+                        <institution>UPTD Gedong Kirtya</institution>
+                        <repository>Lontar collections</repository>
+                        <idno>IIIc. 1071</idno>
+                     </msIdentifier>
+                     <msContents>
+                                <!--the msContents isn't mandatory -->
+               </msContents>
+                     <physDesc>
+                        <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>The original palm-leaf manuscript is kept in UPTD Gedong Kirtya, cataloged as IIIc. 1071.</p>
+                        </objectDesc>
+                        <handDesc>
+                           <p/>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p/>
+                     </history>
+                  </msDesc>
+               </witness>
+               <witness xml:id="mstp2">
+                  <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum">TP<hi rend="subscript">2</hi>
+                  </abbr>
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden</settlement>
+                        <institution>Leiden University Libraries (UB)</institution>
+                        <repository>Special collections</repository>
+                        <idno>Or. 9610</idno>
+                     </msIdentifier>
+                     <msContents>
+                                <!--the msContents isn't mandatory -->
+               </msContents>
+                     <physDesc>
+                        <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>This is a transcript in Latin script made based on palm-leaf manuscript Kirtya No. IIIc. 1071. This transcript was made by Gusti Nyoman Ngurah Prongot in 3 September 1941, and checked by I Ketut Badung. Photographed by Zakariya Pamuji Aminullah in 2019.</p>
+                        </objectDesc>
+                        <handDesc>
+                           <p/>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p/>
+                     </history>
+                  </msDesc>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref>
+            </p>
+         </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="part:zapa" when="2025-04-01" status="draft">Completed transliteration of the manuscript</change>
+         <change who="part:dacc" when="2024-12-25" status="draft">Updating the template</change>
+         <change who="part:dacc" when="2024-12-26" status="draft">Initial encoding of the edition (first folia)</change>
+      </revisionDesc>
+      <!-- HandDesc: 
+            (1) layar is in Balinese position
+            (2) dh and ḍ seem to be used without any distinction, nor are any distinctions made between sa śa and ṣa-->
+   </teiHeader>
+   <text xml:space="preserve">
+        <body>
+            <div type="edition" xml:lang="kaw-Latn">
+               <ab> 
+      <pb edRef="#mstp2" n="1"/><fw place="top" n="1"><num value="1">1</num></fw>
+         <lb n="9"/>oṅ avignam astu,
+         <lb n="10"/>avarah tridasa proktaḥ, srivanah vivuda surah, vr̥dirakah 
+         <lb n="11"/>aditeja, dajvarah danavadvitsah.lekah sarvasino s
+         <lb n="12" break="no"/>vapnah, trivesah sudasinah, deva svargasado mityah, r̥buva 
+         <lb n="13"/>mr̥tavah tata. aditeyah sumanasah, suparvano dito sakasah, de
+         <lb n="14" break="no"/>vatas tu triyah muktah, sandeva vani sruhatah.
+         <lb n="15"/>amarah tridasa, sinava, vivudha, surah, vradakara, adite
+         <lb n="16" break="no"/>ja, danavadita, loka, sarvasina, asvapna, tridivesah, suda
+         <lb n="17" break="no"/>sina, deva svarga, sada, amartya, r̥bu, amr̥tapa, aditeya, su
+         <lb n="18" break="no"/>manasa, suparva, divosaka, devata, ṅa. devata ika. siva sarva vi
+         <lb n="19" break="no"/>rupaksa, mahadeva mahisvarah, srikandah saṅkaro ganah, somavra
+         <lb n="20" break="no"/>ka nilalohikah.  kapidik cata vasas ca, rudra gaṅga<pb edRef="#mstp1" n="2r"/>dara harah, 
+         <lb n="21"/>krasanuretah kamirah, panartih vr̥saketanah. durjati tryamba
+         <lb n="22" break="no"/>rah bimah, sarva ajña giriso mr̥dah, ugra pasupati sulih, ba
+         <lb n="23" break="no"/>madeva ganadipah. isah isvarah isana, kapali pamesvarah, sivi
+         <lb n="24" break="no"/>pisto vyomas kesah, tripurarih dilocanah. oṅkaraya namah s
+         <lb n="25" break="no"/>vaha. aran batara isvara, giva, sarva, virupaksa, mahadeva, mahe
+         <lb n="26" break="no"/>svara, srikanta, saṅkara, garba, soma, vraka, nilalohita, kamadi, 
+         <lb n="27"/>krativasa, rudra, gaṅgadara, hara, krasanu
+         <lb n="28" break="no"/>rota, kamarih, vrasaketana, pinaki, durjadi, tryambara, bima, 
+         <lb n="29"/>sarvajña, girisa, mrada, ugre, nandakavaha, pasupati, suli, 
+         <lb n="30"/>bamadeva, ganadipa, isa, isana, isvara, kapali, paramesvara, byo
+         <lb n="31" break="no"/>makesa, tripurari, trilocana, vr̥sabadvaja, kr̥tr̥, samba, 
+         <lb n="32"/>sarva bava, stanu, sula, br̥tya, sokamala sacah.
+         <lb n="33"/>oṅkara namah brah<pb edRef="#mstp1" n="2v"/>ma, srasda, atmabuh, data, paramesdi, pitama
+         <lb n="34" break="no"/>ha, hiranya, garba arva vidi, viriñci, caturmukha, lokesa, vi
+         <lb n="35" break="no"/>svasrak, vedah, suranyasdah, prajapati, vidata, padmayoni, 
+         <lb n="36"/>svambuh, kamalalocana, kr̥tavarsa,, sivi, bahni, viba, vasu, 
+         <lb n="37"/>sarvabut, hutataha, mataramuka, vahana, varagəni, jataveda, 
+         <lb n="38"/>dumaketu, vroja, hutabuk, kamala, bava, hutagana, anala, lo
+         <lb n="39" break="no"/>hitasva, sorathi, visvanara, asdaca, saptaparca, rasraya hi
+         <lb n="40" break="no"/>madaha, jusaksani, hiranareka, jvalana, saṅ uda, kr̥panu, 
+         <lb n="41"/>tanunapat, vihiraksa, titihotre, danañcaya, krapyahyani, manda
+         <lb n="42" break="no"/>dahana, ramuni, habyasana, marutabaka, aṅsavatana, ṅa. batara brahma ika.
+
+      <pb edRef="#mstp2" n="2"/><fw place="top" n="2"><num value="2">2</num></fw>
+         <lb n="1"/>brahmani, baga giva, livasa, veda, vidyayamabrat, dara, imu, kavista, 
+         <lb n="2"/>tripurantaka, kandakavahana, si anda<pb edRef="#mstp1" n="3r"/>karipu, pramesti, kamalada
+         <lb n="3" break="no"/>hana, berava, lokesvara, pradesada, jivatma, pitambara, mani, 
+         <lb n="4"/>jagatnata, nilakanta, oṅkara namah, ṅa. baṅkara namah, ṅa. 
+         <lb n="5"/>batara guru ika. 
+         <lb n="6"/>paramesvari, bagani, beravi, caṅgi, daṅgih, rudrasih, 
+         <lb n="7"/>sarvani, skandamiti, adrija, saparni, gori, keri, parvati, 
+         <lb n="8"/>mahisavahana, durga, geṅgi, rodri, vahini, mahisi, mani, ganda
+         <lb n="9" break="no"/>ri, rohini, padmi, kundi, mandri, krodi, bagavati, vidali, mar
+         <lb n="10" break="no"/>di, ṅa. batari uma ika.
+         <lb n="11"/>brahmasrapdah, tvabudatah, parametdi pitamaha, hiranya
+         <lb n="12" break="no"/>gabor ta vidih, viriñcih sya caturmukah.
+         <lb n="13"/>lokesu visresreska vedah, suradyasdah prajapatih, vidata 
+         <lb n="14"/>padmayonis ca, svayambuh ja. batari, dani, sastravit, sude
+         <lb n="15" break="no"/>vi, dari, kumari, gaṅgadari, prajña, nari, tatvavit, vaji, 
+         <lb n="16"/>mandari, vilasini, sastradara, ṅa. batara svati ika. 
+         <lb n="17"/>visnu narayana<pb edRef="#mstp1" n="3v"/> sorih, cakrapani janardanah, padmana
+         <lb n="18" break="no"/>bo r̥sikesah, vekunda visdarasravah. indravaraja upendrah,
+         <lb n="19"/>govindo garudadvajah, kesava punadarikaksa, kr̥sna pitam
+         <lb n="20" break="no"/>baro cyata. visvaksenah svabuh saṅgi, danavari adoksa
+         <lb n="21" break="no"/>jah, vr̥kapih dasudevah, madave madusudanah.
+         <lb n="22"/>oṅkara namah, ṅa. batara visnu, nrayana, gori, cakra
+         <lb n="23" break="no"/>pani, janardana, padmanaba, r̥sikesa, vekunda, visdarasrava, 
+         <lb n="24"/>indravaraja, upendra, govinda, garudadvaja, pundariksa, 
+         <lb n="25"/>kr̥sna, pitambara, acruta, visvaksena, svasuh, 
+         <lb n="26"/>aduksaja, vrasikapi, basudeva, madadva, madusudana, rama
+         <lb n="27" break="no"/>badra, garudavahana, kapidvaja, basra, dara, kariṅi, hari, 
+         <lb n="28"/>kesava, gori, pundarika, goraja, vesnava, ahatpajanadana, vida
+         <lb n="29" break="no"/>sena, sarsi, detyaripu, srida, rana, damodana, sañjaya, a<pb edRef="#mstp1" n="4r"/>d
+         <lb n="30" break="no"/>vama ja, kapraksakapi, bamana, trivikrama, kayarudra, detyad
+         <lb n="31" break="no"/>vipa, tripita, praṅlada, sripati, pravahumna, aniruda, sitara
+         <lb n="32" break="no"/>ta, citarata, sukeka, ari, ṅa. batara visnu ika.
+         <lb n="33"/>sri, haripriya, padmavasa, padma nari, kamali, laksmi buk
+         <lb n="34" break="no"/>ti, laksmi, danapati, ratnadari, ṅa. batari sri ika.
+         <lb n="35"/>indra viloja valabit, puruhutah purunmurah, vrada
+         <lb n="36" break="no"/>srava sanasinah, vr̥treha pakasasanah.
+         <lb n="37"/>saṅkrandada syavanah, sutamah kandalah vr̥sa, marut
+         <lb n="38" break="no"/>vi vasavah vahkrah, aditya, savita, vrada, sura, surya divaṅgara, 
+         <lb n="39"/>visvakarma, sahasraṅsu, tarani, tavana, ravi, vetaṅkana, ha
+         <lb n="40" break="no"/>ridasva, saptasapti, ṅuna, aryama, upaṅaṅsu, aṅsuman, 
+
+      <pb edRef="#mstp2" n="3"/><fw place="top" n="3"><num value="3">3</num></fw>
+         <lb n="1"/>pusa, divasvan, baskara uparakta, aruna, dinaṅkara, aditi, 
+         <lb n="2"/>dadisu, svavahana, ṅ ve, ṅa. saṅ hyaṅ aditya ika.
+         <lb n="3"/>kunaṅ yan suryagrahana, somaplava ṅaranya. 
+         <lb n="4"/>vesvaba<pb edRef="#mstp1" n="4v"/>runa lo bahni, rohitaso hutasanah, saptadir usra
+         <lb n="5" break="no"/>yasa gnih, dahanañ casuksuksanih. hiranyaretah jvalanah, pavaka 
+         <lb n="6"/>syad uvadah, krasanuh krasnavartas ca, jatavedah tanukapat.
+         <lb n="7"/>havibuh tosrahadrunah, citri otra dananjayah, kupitayoni da
+         <lb n="8" break="no"/>numan, havyadaha marutsakah. vesvanira, anala, bahni, rohata
+         <lb n="9" break="no"/>sva, hutasana, saptarci, asrayasa, agni, dahana susuksani, 
+         <lb n="10"/>hiranyace, hasrakra satakratuh. pasopatih loksanah, hayaso maga
+         <lb n="11" break="no"/>van tarih, tusarata sotrabita bajri, r̥buksa si divaspatih.
+         <lb n="12"/>indra, vipoja, valabit, puruhuta, purandara, vr̥dasrava, sa
+         <lb n="13" break="no"/>nasika, vratraha, pakasasana, sakradana, dyasyavana, satama, a
+         <lb n="14" break="no"/>kandaya, vrasa, parutvan, vasana, sakra, satakr̥tu, vasopati, 
+         <lb n="15"/>lekaspar<pb edRef="#mstp1" n="5r"/>sa, haryasva, magavan, harih, tusarata, gotribitya, bajri, 
+         <lb n="16"/>r̥buksa, divaspati, ṅa. saṅ hyaṅ indra ika.
+         <lb n="17"/>adityah savita vr̥dah, surah surya divakara, dinakrat 
+         <lb n="18"/>himiro bosvan, martanda ka prabaṅkara.
+         <lb n="19"/>visvakarma sagraṅku, karanih hapano ravih, vekartano ha
+         <lb n="20" break="no"/>ridasvah, sastasasti anaryi yamam. upbaṅ suhaṅ gumar̥sah,
+         <lb n="21"/>divasvan castu baskarah, umarakto ravicandrah, sadṅih so
+         <lb n="22" break="no"/>maplato matah. satya siṅgo ca latamah. samantadadrah sagatah, dar
+         <lb n="23" break="no"/>maraja vinayakah, sarva asida bagavan, trikaleñjo sa sarajita.
+         <lb n="24"/>buda, jina, dasabala, munindra, tatagata, madarijña, 
+         <lb n="25"/>sahyasiṅa, gotama, samantabadra, sugata, darmadara, atmadara, 
+         <lb n="26"/>pretamasa, daksinasva, papa tatparna, ṅa, saṅ hyaṅ buda ika.
+         <lb n="27"/>halabadro hala<pb edRef="#mstp1" n="5v"/> ramah, kamayalo halayudah, kakarsanah pralambagə
+         <lb n="28" break="no"/>nah, baladevo citagrajah. musali talalaksmañ ca, nilambaro 
+         <lb n="29"/>hineyah, revatiramanah ñalah, siranis cah laṅgyali. 
+         <lb n="30"/>balabadra, hali, rama, kamapala, halayudda, kakarsana, pralam
+         <lb n="31" break="no"/>bagna, baladeva, acyatagraja, musali, talaksma, bilambara, ro
+         <lb n="32" break="no"/>hini, laṅgalyapi, ṅa. baladeva ika. 
+         <lb n="33"/>manusyadharma danadah, kuvera navahanah, rata, jvala
+         <lb n="34" break="no"/>na, pavaka, ursahuda, krasanu krasnavarta, javaveda, tanunap
+         <lb n="35"/>, havibubut, vrahadrunu, citihetre, dhanajaya, kupivayoni, da
+         <lb n="36" break="no"/>numan, vyavaha, marut, saka, ṅaraniṅ apuyi, ika.
+         <lb n="37"/>pavana svasana, bamaruyuh ramanomara dasugah, ma
+         <lb n="38" break="no"/>tarisvanilo vatah, samiras ca samiranah. nabasvan ga<pb edRef="#mstp1" n="6r"/>ndavahas ca,
+         <lb n="39"/>vr̥sadasvah prabañcanah, sapasanah pavamanas ca, tatah prabah 
+         <lb n="40"/>sadagatih.
+         <lb n="41"/>pavana, svasana, bayu maruta, asuga, matarisva, ani
+
+      <pb edRef="#mstp2" n="4"/><fw place="top" n="4"><num value="4">4</num></fw>
+         <lb n="1" break="no"/>la, vata, samirana, narasvan, gandavaha, vramajasva, prabañ
+         <lb n="2" break="no"/>cana, pavamana, prana, sadagati, aṅin, asvasan, maruta, ji
+         <lb n="3" break="no"/>vantaka, jivambara, mr̥taṅga, svadamani, vyañjana, ṅa, saṅ 
+         <lb n="4"/>hyaṅ bayu ika.
+         <lb n="5"/>budo jino sadabalah, munindras ca tagatah, satabijṅas 
+         <lb n="6"/>ru sarvajñah, ṅa. saṅ hyaṅ kamadeva ika. 
+         <lb n="7"/>indra candro nisanateh, sitaṅsu sasalañcanah, mragaṅ
+         <lb n="8" break="no"/>gah candramah somah, vidhu tarapatih sasih.
+         <lb n="9"/>osadiso himaṅsu pa, upepe ndo nisakara, candrakav ekava
+         <lb n="10" break="no"/>kyaca, puspavente prakititah.
+         <lb n="11"/>indra candra, nisanasa, sataṅsu, sasa lañcana, mrataṅ
+         <lb n="12" break="no"/>ga, candrama, soma, vidu, tarapati, sasi, osadipa, himaravi, si
+         <lb n="13" break="no"/>giraṅga, timirat<pb edRef="#mstp1" n="6v"/> sitarasmi, ama, sitaṅsu, avuntru, sasada
+         <lb n="14" break="no"/>ra, udipa, sitakara, indu, graharana, sasaṅka, mr̥gaṅsu dikcaya, 
+         <lb n="15"/>sisa uṅkukan, ṅa. saṅ hyaṅ ulan, ika. candrakav ekyasa, vas
+         <lb n="16" break="no"/>patano prakiṅtitah. kunaṅ yan paṅekakala saṅ hyaṅ ulan, 
+         <lb n="17"/>mvaṅ saṅ yaṅ aditya, paspata ṅa.nya.
+         <lb n="18"/>naktañcarah anyajanah, kavyadah raksanadacarah, raksasa ne
+         <lb n="19" break="no"/>kaseyas ca, traulavilva vesravanah, rajaraja ta yaksarad.
+         <lb n="20"/>utarasapatih sridah, yolastya guhyakadipa, yaksapunya, jane
+         <lb n="21" break="no"/>sa, niraresuvara, yaguh kuvadrapa, amarana, harya, ginarendra, 
+         <lb n="22"/>guhyaka, jambulaṅ, manibadra, purnamendra, ratnadata, maha
+         <lb n="23" break="no"/>dahni, naradahana, alavila, dravipati, yaksadipa, punyajanepa, 
+         <lb n="24"/>tabesa, ṅa. batara vesravana.
+         <lb n="25"/>madahda padmato mara, kardave darsakah smarah, pradyumna nyajo 
+         <lb n="26"/>nayah, si<pb edRef="#mstp1" n="7r"/>tayonih manobavah. ucayoṅ sa suketus ca, pañcamuh 
+         <lb n="27"/>kusumayudah, brahmasurih sakdetuñ ca, aniruda upapatih.
+         <lb n="28"/>madana, manmata, mara, kadarpa, darpaka, smara, pradyumna, adany
+         <lb n="29" break="no"/>aja, anaṅga, citayoni, manobava, erascaya, sukatu, pañcamu
+         <lb n="30"/>, kusumayuda, brahmasuri, saketu, adiruda, usapati, ṅa. vi.
+         <lb n="31"/>sudi, surapa, matiman, sankyapan, pandita, uda, praptarupa, 
+         <lb n="32"/>krati, prajña, dosajña, krato, mr̥du, santa, santya, satvi
+         <lb n="33" break="no"/>ka, yata, nibrata, yativara, munindra, dyaya, diyi, satatma, kra
+         <lb n="34" break="no"/>panu, kasali, darmasu, darmatma, vakta, vascita, jñavat, sra
+         <lb n="35" break="no"/>mana, citajña, muniti, pipañcit, prano, pandya, munisvara, yogi, 
+         <lb n="36"/>dharmajña, viku, r̥si, biksuka, bujaṅga, kalyanadarma, ṅa. 
+         <lb n="37"/>saṅ hyaṅ pandita ika.
+         <lb n="38"/>dvisan dasyu sapatni rah, vipaksaritisatravah, paripantyahitami
+         <lb n="39" break="no"/>trah, ripudvesanaveri<pb edRef="#mstp1" n="7v"/>neh.
+         <lb n="40"/>pratipaksa bisa, tiduvit, jigaṅsu jurhrnado samah, drataksa
+         <lb n="41" break="no"/>durkitavah, dyutakaraksadinah. dvisan, dasya, sapatna, ari, 
+
+      <pb edRef="#mstp2" n="5"/><fw place="top" n="5"><num value="5">5</num></fw>
+         <lb n="1"/>vipaksa, ariti, satru, paripanti, atita, ripu, dvesana, ve
+         <lb n="2" break="no"/>ri, pratipaksa, dvita, jigaṅsu, asama, ṅa. vyanetratatona
+         <lb n="3" break="no"/>pah. 
+         <lb n="4"/>yatudanañ ca vyakatih, klide dve saturaksasih, r̥sayah sap
+         <lb n="5" break="no"/>tadivadṅih, citramutahsikandinah. 
+         <lb n="6"/>nakjañcarah adajana, kravyada, anya, ksanadacara, raksasa, 
+         <lb n="7"/>nekaseyah, trava, nedraha, konapa, yatudana, kunan ikaṅ yatuh 
+         <lb n="8"/>mvaṅ raksasa, napuṅsakaliṅsa ika, ṅa. raksasa ika. 
+         <lb n="9"/>r̥sayah sapta dipadsih, smutah, citrasikandih. mavalena kunan, 
+         <lb n="10"/>ya saṅ saptar̥si, citrasikanda ṅaranya, liṅ saṅ mahapurusa. 
+         <lb n="11"/>diro dirupo surih san, vidvan diman, vinaksanah, labdavarno 
+         <lb n="12"/>manisañ ca, tə<pb edRef="#mstp1" n="8r"/>vadu kavih. 
+         <lb n="13"/>sudih surupo timan, saṅkyavan pandita vr̥dah, praṅguru pah 
+         <lb n="14" break="no"/>krati, krasdih, pañca dosajña eva ca. 
+         <lb n="15"/>adira, abirupa, suri, sana, vidvan, diman, vicaksana, labda
+         <lb n="16"/>varna, maniti, vuvapañcyat, kaviduh, kabagañ ceva, krimibut 
+         <lb n="17"/>ceva jihmanah. 
+         <lb n="18"/>bujaṅga, bujaga, sarpa, dandaka, bujaṅgama, asivisa dara, 
+         <lb n="19"/>pradaku, svasanasana, kakodarah, caksusrava, uraga, gupa
+         <lb n="20" break="no"/>pat, jali, sarisr̥pa, bogi punyaga, darvikara, mandalika, vyala, 
+         <lb n="21"/>vyada, kundali, viliyah, dvidasana, krimibuta, jihmaga, sar
+         <lb n="22" break="no"/>padipa, dasra, kaga, baṅga, krapibut, usa teksaka, matrajiva, 
+         <lb n="23"/>rodra, ahi, basuki pani, tadratanaya, anipi, ṅa. ula ika. 
+         <lb n="24"/>gugo visako kreñcarih, saktibrat vartipavahah, genanih sara skandah, 
+         <lb n="25"/>kumarah sanmuko gənibreh. 
+         <lb n="26"/>gana,<pb edRef="#mstp1" n="8v"/> visaka, kroñcarih, saktibr̥t, vartivaha, sanajih, sara
+         <lb n="27" break="no"/>jah, skanda, sanmukha, agni, brah, ṅa. saṅ kumbara ika. 
+         <lb n="28"/>protadipah pitrapatih, kinasah samano kajah, vepasvatah samavitih, 
+         <lb n="29"/>darmaraja musuh ika, 19. 
+         <lb n="30"/>kunan ika, duvitaksa, durta, dyutakara, aksajiva, ṅa. ba
+         <lb n="31" break="no"/>botoh ika. 
+         <lb n="32"/>pataṅgah patatah paksih, patrarato da nidajah, patri patatri saku
+         <lb n="33" break="no"/>ni, sakuntah salaba tan. 
+         <lb n="34"/>vihaṅgo vihaṅgah vaji, vihas cah vihaṅgamah, vistiro vikiro vis 
+         <lb n="35"/>cah, nagotah syan anekajah. 
+         <lb n="36"/>pataṅga, pataga, paksi, patrerata, danidaja, patri, sakuni, sa
+         <lb n="37" break="no"/>kunta, vihaṅga, vihaga, vaji, vihaya, vihaṅgama, vistara, vi
+         <lb n="38" break="no"/>kara, vi. nagota, nekata, kədis, ṅa. manuk kabeh ika. 
+         <lb n="39"/>bujaṅgo bujaṅgah sarpah, dandasuko bujaṅgamah, agivis
+         <lb n="40" break="no"/>yo visadarah, pradakuh svasanasanah.<pb edRef="#mstp1" n="9r"/>
+         <lb n="41"/>kakodarah caksusravah, urago pupali, sarisrapa dvijihnasu va,
+
+      <pb edRef="#mstp2" n="6"/><fw place="top" n="6"><num value="6">6</num></fw>
+         <lb n="1"/>mato bogis ca panagah. 
+         <lb n="2"/>darvikara mandakah, vyalo vyadas ca kundali, viloya dibunata, 
+         <lb n="3"/>bupati, bubrat, bupala, adisvara, nr̥pati, naresvara, naranata, 
+         <lb n="4"/>narendra, patarnana, narapati, yanasa, maharaja, nrapa, bupala
+         <lb n="5" break="no"/>ka, pati, bramali, agani, sundari, anina, maranari, kramari bagi, 
+         <lb n="6"/>ṅa. ratu ika. 
+         <lb n="7"/>manusya manusya matyan, manusan manavañ caran, purun pu
+         <lb n="8" break="no"/>rusa nr̥pas ca, pañcajananya smarana vindu. manusya, mana
+         <lb n="9" break="no"/>sya, mat manuja, manava, nara, purusa, dr̥sca, na. jana 
+         <lb n="10"/>jadma, voṅ, tahu, jantu, uraṅ, ṅa. vaṅ ika. suta ksan
+         <lb n="11" break="no"/>ta nihantas ca, stipasarvesmaheva ca prajita daksinasuvan ca, 
+         <lb n="12"/>sadi saravir ucyate. suta, santa, niyanta, astipa, sarvasta, 
+         <lb n="13"/>prajita, daksinabasma, ṅa. sariti ika. 
+         <lb n="14"/>putras tu tanayah sunuh, santu<pb edRef="#mstp1" n="9v"/>nas ca satmajanta, sutuh 
+         <lb n="15"/>stripriyam sutih tanujah, kopatyas ca napusake. putra, 
+         <lb n="16"/>tanaya, sunu, yamantukah. 
+         <lb n="17"/>pratadipa, pitrapati, kinasa, sano kaja, evasvata, samavirti, 
+         <lb n="18"/>darmaraja, antaka, ṅa, baṭara yama ika. 
+         <lb n="19"/>asurah danujah detyu, purvadevah suvaradvisah, ditijah 
+         <lb n="20"/>canavas cevah, dokeyah danusudanah. asura, danuja, dety
+         <lb n="21" break="no"/>a, paṅuvadeva, suradvisa, ditija, danava, deteya, danu
+         <lb n="22"/>sudana, ṅa. detya ika. 
+         <lb n="23"/>vraspati suradarya, sipatih disalo guruh, vahaspati aṅgiras ca, jvah citrasikandinah.
+         <lb n="24"/>vraspati, suracarya, sipati, dimana, guru, vahaspati, aṅ
+         <lb n="25" break="no"/>giri, jiva, sikandika, ṅa. bagavan vraspati ika.
+         <lb n="26"/>raja rat partovo bukpit, ina ksanbrat naradipa, bunato bupa
+         <lb n="27" break="no"/>tih bubrat, bupalo dasvaro drapah.<pb edRef="#mstp1" n="10r"/>
+         <lb n="28"/>raṅa rat, pativa, ina ksmabrat, buksit, naradipa, bunata, bu
+         <lb n="29" break="no"/>yo, sva cacavr̥ka, ṅa mavala ika. 
+         <lb n="30"/>bramara satpado braṅgah, puspalit silimukas cah, diroka li ma
+         <lb n="31" break="no"/>hadukarah, dvirarupa madubrata. brahmara, sadpada, puspa
+         <lb n="32" break="no"/>lit, silimuka, diramuka, madukara, dvirarupa, madubrata, 
+         <lb n="33"/>madu pa, kumbaṅ, tambuliliṅan, ṅa. tavon ika. 
+         <lb n="34"/>kadgah kr̥pano nistriṅguh, narapalas ru sayakah, r̥sti ca man
+         <lb n="35" break="no"/>dalagra sat, asih nokseya tatah. 
+         <lb n="36"/>kadga, kr̥pana, nistriṅsa, karapala, sayaka, r̥sta, mandalagra, 
+         <lb n="37"/>asih, kokseya, ṅa. gadga paksi ika. 
+         <lb n="38"/>isu vastri prasaṅkas ca, bano ta margano rapaḥ, kanda sajitma
+         <lb n="39" break="no"/>ga madi. isu, prasaṅka, kalamba, visaka, sara, bana, margaha,
+
+      <pb edRef="#mstp2" n="7"/><fw place="top" n="7"><num value="7">7</num></fw>
+         <lb n="1"/>rova, kandala, jihmaga, sulamuka, saka, sravara, varayaṅ, 
+         <lb n="2"/>saya, santana, atma<pb edRef="#mstp1" n="10v"/>raja, suta, apatya, pranu, tunuru, vəka, 
+         <lb n="3"/>kosa, karija, tosi, tanuja, vahu, prajana, ṅa. pyanak ika. 
+         <lb n="4"/>coro malimlus dasyuh, taskara pratiro dakah, vatimosi paras
+         <lb n="5" break="no"/>kandi, suvekegorikah tatah. 
+         <lb n="6"/>corah, malimloca, dasyu, taskara, pratimosa, paraskandi, 
+         <lb n="7"/>stena, kagorika, sasyu, kukarya, tasyu, malina, vike, tri
+         <lb n="8" break="no"/>gari, kambaloh, aboyah, mandarka, laṅkira, godana, danahari, pan
+         <lb n="9" break="no"/>duṅ, ṅa. maliṅ, ika. 
+         <lb n="10"/>prakr̥ta, pomano nica, krukalah procyate kalah, avidvani va
+         <lb n="11"/>kr̥tas ca, nikr̥smo pr̥sañcanah.
+         <lb n="12"/>pamana, kasulakah, laka, avidvan, avakkrasta, kalana, kalana, ṅa. vaṅ 
+         <lb n="13"/>nista ika. 
+         <lb n="14"/>kurah, sarameyas ca, sca ca salavr̥ko makah. 
+         <lb n="15"/>koleyakah, mragadaṅsu, basaka, sunata, kuṅkara, saramora, 
+         <lb n="16"/>anapati, vignantaka, vinayaka, pramoda, stimuka, berava, 
+         <lb n="17"/><pb edRef="#mstp1" n="11r"/> vagraha, danañjaya, ṅa. batara gana ika. 
+         <lb n="18"/>sasabrat, pasipr̥ceta, yadapati, dularat, pasamr̥ta, gout, 
+         <lb n="19"/>yambaha, pr̥keta, praharoda, minadipa, matsyadara, yanorarat, pra
+         <lb n="20" break="no"/>koti, mragaya, jaladi, patimbara, ṅa. saṅ hyaṅ baruna ika. 
+         <lb n="21"/>usanah, bagavah kavah, detyaguru, bragu, ṅa. bagavan sukra ika. 
+         <lb n="22"/>svargahbuh, vasah, sahikeyah, ṅa. kalaravu ika. 
+         <lb n="23"/>kuja, lohitaṅsu, bumija, ṅa aṅgara ika. 
+         <lb n="24"/>vipraṅ, aṅryajana, dvijati, dvija, deta, vara, ñayaj
+         <lb n="25" break="no"/>ñopa, jivana, vedavi, camino, dandi, vadakuva, kavaya, su
+         <lb n="26" break="no"/>ci, daṅ hyaṅ, ṅa. saṅ brahmana ika. 
+         <lb n="27"/>varatri darani ksoni, ksiti visvambara stira, urvi kuh prati
+         <lb n="28" break="no"/>vi pr̥ti, medini jya vasundaraka. astra, kandah, vajib, nara
+         <lb n="29" break="no"/>vara, sapaṅga, cakra, ṅa. sañjata həru ika. 
+         <lb n="30"/>upasaṅgas ca banadih,<pb edRef="#mstp1" n="11v"/> saradis capi tunistri, isudih vastri
+         <lb n="31" break="no"/>yam bavet. 
+         <lb n="32"/>turna, kənisaṅka, tunira, upasaṅga, banadi, isudi, ṅa. taṅkulak ika. 
+         <lb n="33"/>saras koṅdanda, kamurka, capa, daṅsa, danuh, danur, vadaṅ
+         <lb n="34" break="no"/>ka, ayuda, danuven, sarasana, gande, pamabah, ṅa. laras ika. 
+         <lb n="35"/>r̥sih, r̥ksah, cakra, bajra, vejendra, tomara, limpuṅ, ma
+         <lb n="36" break="no"/>sanda, parasvada, tuhhuka, konta, prata, ugra, mugari, mu
+         <lb n="37" break="no"/>sala, basama, venesa, təvək, pandita, manala, gayuṅ, trisula, 
+         <lb n="38"/>badama, utprana, jantra lapaka, gandi, danda, gada parasu, 
+         <lb n="39"/>nagasavah, ṅa. sañjata anduk ika. 
+
+      <pb edRef="#mstp2" n="8"/><fw place="top" n="8"><num value="8">8</num></fw>
+         <lb n="1"/>hiramba, vigəna, nara, darvinaya, durmuka, sumukañcadaya, 
+         <lb n="2"/>dvitisa, akaja, gaṅgesvada, madarika, indivara, nilotpa
+         <lb n="3" break="no"/>la, arivida, kunila, ṅa. tuñjuṅ ika. 
+         <lb n="4"/>tuva, andupana, vasara, vyasta, kr̥maya, upa, ṅa. sumbar ika. 
+         <lb n="5"/><pb edRef="#mstp1" n="12r"/> vartani, prajana, sana senu, calada, ca sami rujan, sahaya, br̥t
+         <lb n="6" break="no"/>ya, ṅa. vadva. 
+         <lb n="7"/>rosa, vuyuṅ, arah kaja, mana, dirgaja, oka, moha kroda, vis
+         <lb n="8" break="no"/>vadi, koma, ṅa. gələṅ ika. 
+         <lb n="9"/>ganita, kala, saya, kagasa, dandala, canda, r̥kta, tr̥sa, kalma
+         <lb n="10" break="no"/>sa, preta, naraka, daraka, samala, codyama, ninya, nisaya, na
+         <lb n="11" break="no"/>tana, proktah, nahina, avika, avatya, niraya, ṅa. papa ika. 
+         <lb n="12"/>kasani, dari, dustri, pracali, kañcalmi, reni, dusani, dursi
+         <lb n="13" break="no"/>la, sagani, dumuvi, vandani, ṅa. lvir ika. 
+         <lb n="14"/>kamare, hyaṅvari, radar, cidra, kartatiṅ, ila, gariṅ, marma, 
+         <lb n="15"/>lyavana, svapna yaga, jaga, supna, ṅa. ipyan. 
+         <lb n="16"/>kasisak sovanih, gotra, mahi sarvasahasalah, visuda ka basumatih, 
+         <lb n="17"/>prokta bumidararatah. 
+         <lb n="18"/>varatri, varani, kseni, kitri, visvambara, stira, urvi, kuh, 
+         <lb n="19"/>pritivi, ləmah, natar, ṅa. tanah ika. 
+         <lb n="20"/>abina, asamada, antaka, yama, peta, lokahra<pb edRef="#mstp1" n="12v"/>ta, korda, rudrakali, 
+         <lb n="21"/>vijaya, tayarat,, ṅa. saṅ hyaṅ kala ika. 
+         <lb n="22"/>seki, sikandi, kalasi, varhi, varhinah, sikandina, mayura, vehala, sa
+         <lb n="23" break="no"/>tina, nilakanta, levahana, sakanda, mandri, mañura, ṅa. mrak ika. 
+         <lb n="24"/>balibuta karajah, kata, balipacya, vadasa, valimuk, kr̥sna, 
+         <lb n="25"/>dumara, kasa, savavadara, kosi, keri, baṅku, vaksana, daṅdaṅ, 
+         <lb n="26"/>nilapaksi, ṅa. gagak ika. 
+         <lb n="27"/>paṅkaja, sarasija, nalina, padma, sakarika, pundakika, sata
+         <lb n="28" break="no"/>patra, tamara, saroja, saroruha, amaboda, parija, kukumu, 
+         <lb n="29"/>satya, tatva, rəpat, buvi, yartapa, druva, tatya, avitarta, 
+         <lb n="30"/>yakti patya, arya, vada, tyakta, anuma, vastu, tuhu, saja, 
+         <lb n="31"/>iya, ṅa. təman ika. 
+         <lb n="32"/>samradah, dana vana, mut, apsa, apya, sriman, dani, danesti, pra
+         <lb n="33" break="no"/>dana, vrahadana, unya, dunya, kutambi, vibuh, vibogi, deva
+         <lb n="34"/>yogi, danavari, danisri, yaksadara, yaksa<pb edRef="#mstp1" n="13r"/>vara, dunya, ṅa su
+         <lb n="35" break="no"/>gih ika. 
+         <lb n="36"/>kamitih, yeranis, payudan, pasraman, pilis, triyasra, laga, sama
+         <lb n="37" break="no"/>ra, ranaṅgana, rana, siyat, kambah, kagənah, paviraman, pasaṅ
+         <lb n="38" break="no"/>grahan, pasamaran, yuda, saṅgrama, dira, mandvadva, vilis, 
+         <lb n="39"/>triyasa, praṅ, ṅa payudan ika. 
+         <lb n="40"/>vastra, paṭa, civara, vasana, sotar, cela, kambalra, sutra, 
+         <lb n="41"/>mañcane, coda, coda, simbura, aye, asuka, karuka, saput,
+
+      <pb edRef="#mstp2" n="9"/><fw place="top" n="9"><num value="9">9</num></fw>
+         <lb n="1"/>kain, ṅa dodot ika. sva suvarna, kañcana, hema, rukmi, candrana, ana
+         <lb n="2" break="no"/>ka, jati, prasana, hi bavadi avani, medini, vr̥sni, darani, sun
+         <lb n="3" break="no"/>dara, siti, butala, mahi, basundari, bumi, pritivi, ṅa. ləmah. 
+         <lb n="4"/>kilalajanaka, pani, sambara, mega, puspa, jala, varih, tirta, sa
+         <lb n="5" break="no"/>ra, puskara, vicira, tomi, ṅa. toya. 
+         <lb n="6"/>kramiyoni, jayuveda, pavaka, guna, dahana, anala, citrabanu, vi
+         <lb n="7" break="no"/>nasu, bahni, uta,<pb edRef="#mstp1" n="13v"/> gəni. 
+         <lb n="8"/>bayu, sadagati, gandavaya, anila, semirana, maruta, jivantaka, 
+         <lb n="9"/>pavana, nabasuvan, vata, pr̥bañcana, seduṅ, alindadar, ṅa. aṅin. 
+         <lb n="10"/>viyat, virupa, akasa, nuvidik, ndu, andariksa, ambara, nabastala, 
+         <lb n="11"/>nalambara, merusr̥ṅga, ananta, sunyatala, sunyataya, ṅa. laṅit. 
+         <lb n="12"/>ima, nirada, jaladara, varibaṅ, saṅub, payoda, jalagra paramesva
+         <lb n="13" break="no"/>ri, roradi, rudrasih, gandavari, rohini, padmi, rajalaksmi, padmi
+         <lb n="14" break="no"/>ra, ṅa. batari uma. 
+         <lb n="15"/>dupaketu, viroja, srajapati, caturmuka, ṅa. batara indra. 
+         <lb n="16"/>sudevi, vilasini, ṅa. batari soti. 
+         <lb n="17"/>sumanasa, prasuna, kusumasana, pusparasa, sumanaraja, varsi
+         <lb n="18" break="no"/>ki, roguyut, ṅa. campaka.
+         <lb n="19"/>tulañjana, yalipriya, mitasala, sajaka, javaka, javakta, jama
+         <lb n="20" break="no"/>ka, baudkarana, ṅa. kəmbaṅ ṅasa<pb edRef="#mstp1" n="14r"/>na.
+         <lb n="21"/>nilotpala, nilele paṅkaja, tuñjuṅ biru, rakta jyutpala, roh
+         <lb n="22" break="no"/>ita paṅkaja, ṅa. tuñjuṅ baṅ. binini, padma makya, aravinda, 
+         <lb n="23"/>arajitva.
+         <lb n="24"/>dajahana, kesava, madusudana, kepnava, sidarona, padmanaba, da
+         <lb n="25" break="no"/>modara, madava, trivikrama, dadana, arimurti, ṅa. batara visnu.
+         <lb n="26"/>aripralimut, navun-navun, ṅa. mega.
+         <lb n="27"/>telerep, tatit, kundali, sodani, mandra-mandra, damani, kr̥p, ju
+         <lb n="28" break="no"/>mi, kramani, ṅa. kilap.
+         <lb n="29"/>laja, teja, indra, capa, kukuvuṅ, saliprana, jyati, sna, da
+         <lb n="30" break="no"/>nu, sunya, aṅpu, kirana, dipta, jasna, ṅa. teja.
+         <lb n="31"/>grəh, puter, ktab, gəntər, ṅa. gludug.
+         <lb n="32"/>daṅpu, candra, sasadara, mr̥gañdañcana, sitaṅsu, sitagusama, 
+         <lb n="33"/>paramagoda, sasih, sasaṅka, lek, ṅa. ulan.
+         <lb n="34"/>surya, divakara, dinakara, baskara, prabaṅkara, vibakara, basuvan
+         <lb n="35"/>, kuvan, vikarta, arka, layasuvaṅsu, sasrakirana, vasvakarma, 
+         <lb n="36"/>mataṅga,<pb edRef="#mstp1" n="14v"/> savita, ravi, ṅa. raditya.
+         <lb n="37"/>nilalolita, krativana, pásupati, ganadipa, paramesvara, pramesti ja
+         <lb n="38" break="no"/>gatnata, nilakanta, ṅa. batara guru.
+         <lb n="39"/>mṅa, tamarasa, mahotpala, paṅkeruha, sarijati, mayati, ṅa. mənur.
+
+      <pb edRef="#mstp2" n="10"/><fw place="top" n="10"><num value="10">10</num></fw>
+         <lb n="1"/>puspavada, dəgi, ṅa. gambir. syama, dadalasta, sikari, ṅa. ga
+         <lb n="2" break="no"/>duṅ. raktakusuma voṅaridalamba, varukusuma, landavara, 
+         <lb n="3"/>japakusuma, ṅa voṅa vari. karavira, ṅa. kanyri pətak. yalina, ṅa. 
+         <lb n="4"/>kuranta. cabolatuva, mandakaki, padmakara, campaka lumbuṅ, 
+         <lb n="5"/>candala, kalak, pr̥ndotpala, ṅa. kanigara. kesara, ṅa. tañjuṅ. 
+         <lb n="6"/>dutanlipur, ṅa kayu puri. madusadaka, ṅa. kayu manis. 
+         <lb n="7"/>pediyaṅgula, tutuṅgulan, yanamika, jariji. kanistaka, ca
+         <lb n="8" break="no"/>liliṅan, entakalalata, kataksa, ṅa. batuk. kapola, vəhaṅ, ṅa. 
+         <lb n="9"/>pipi. ananta, sivaduvara, ṅa. vunvunan.<pb edRef="#mstp1" n="15r"/> sika, seka, kaca, ke
+         <lb n="10" break="no"/>sarja, veni, brayakaya, padmavasa, ṅa. batara sri. manobava, a
+         <lb n="11" break="no"/>tanu, manmata, manasija, kadarpaya, kamadeva, pradyumna, yani
+         <lb n="12" break="no"/>ruda, virakusuma, kusumayuda, brahmasuri, pandakara, ṅa. ba
+         <lb n="13" break="no"/>tara smara. 
+         <lb n="14"/>vaṅgana, ṅa. suratri. turaṅgana, ṅa. vuṅa taṅi. vasarudi
+         <lb n="15" break="no"/>ta, kahutah, kadali, penti, ṅa. pisaṅ gədaṅ. liraṅ, yeno, ṅa. 
+         <lb n="16"/>badeg. suvalapatra, savalan, ṅa. əntal; nilikira, nyu, ṅa. kla
+         <lb n="17" break="no"/>pa. buvaka, ṅa. jambe. devagaru, ṅa. candana. pralyaya, ṅa. 
+         <lb n="18"/>kayu garu. sodrava, ṅa. madu. candra, dravina, ṅa. sajəṅ. 
+         <lb n="19"/>nara, janma, manusa, ṅa. voṅ. kati muti, yatmaka, ṅa. sarira. 
+         <lb n="20"/>caksu, nayana locana, kaksi, driya, soca, netra, ṅa. mata. sro
+         <lb n="21" break="no"/>te, kapəṅ, kovera, kupiṅ karna, ṅa. taliṅa. puskara, ṅa. tu
+         <lb n="22" break="no"/>vuṅ. basita, smita, vasana, vuvus,<pb edRef="#mstp1" n="15v"/> nada, ṅa. sabda. gayana, 
+         <lb n="23"/>vana, ṅa. alas. nilaṅgi, nyihjalasayana, vaṅgini, nalinisaṅki
+         <lb n="24" break="no"/>ni, səntaṅ, talaga, ṅa. beji. kuma, ṅa. sumur. toya, air, 
+         <lb n="25"/>tirta, gaṅga, salodaka, jalave, udaka, datu, ṅa. bañu. dat
+         <lb n="26" break="no"/>kura, ṅa. undagi. kumbakara, ṅa. panejun. citrakara, ca
+         <lb n="27" break="no"/>ya, mahindra, himadri, madalava, parvata, mavan, parnata, 
+         <lb n="28"/>ukir, ṅa. gunuṅ. sila, upala, vuṅkal, ṅa. 
+         <lb n="29"/>vatu. vanayuja, ṅa. paras. kicipit, ṅa. cayut. pracika, ṅa ka
+         <lb n="30" break="no"/>tuṅgeṅ. lugolika, ṅa. tiṅgiliṅ. varaha, vek, baluka, cu
+         <lb n="31" break="no"/>luṅostan, ṅa. celeṅ alas. baluka, kandaka, candala, ṅa. va
+         <lb n="32" break="no"/>rak. vyagra, mr̥gadipa, yayaksa, kara, roma, ṅa. rambut. patih, 
+         <lb n="33"/>ṅa. ulu. nujabavu, kara, ṅa. luṅayan. asta, ṅa. taṅan. tar
+         <lb n="34" break="no"/>jini, tutuduh, dasi, vanita, kamini, tas<pb edRef="#mstp1" n="16r"/>tama, ṅa. tan ucap. 
+         <lb n="35"/>aṅka, ṅa. samapa. kaṅka, ṅa. bintin. kuvoṅ, ṅa. tuhu-tuhu. 
+         <lb n="36"/>madyadiya, ṅa. sajəṅ. kasadivatsava, ṅa. juru savah. 
+         <lb n="37"/>vasnaha, ṅa. asih. anumuda, ṅa. vəlas. pravasa, ṅa. adoh. 
+         <lb n="38"/>tyaga, ṅa. aveh. pranayat, ṅa. tan pavilasa. granti, ṅa. sinu
+         <lb n="39" break="no"/>rat. aruna, ṅa. abaṅ. daksa, ṅa. vənaṅ. 
+         <lb n="40"/>ina, ṅa. asti. dapaṅga, matəṅga, samaja, ṅa. liman. kaləṅ
+         <lb n="41" break="no"/>ka, tr̥vana, ṅa. gələh. raksakagi, puhun, voṅ, ṅa. macan. 
+
+      <pb edRef="#mstp2" n="11"/><fw place="top" n="11"><num value="11">11</num></fw>
+         <lb n="1"/>ulun, maneh, caraka, pr̥kr̥ti, ṅa. kahula. 
+         <lb n="2"/>duskr̥ta, durgati, durlaba, ṅa. evəh. jaravərdah, takul, ṅa. 
+         <lb n="3"/>tuva. badra, vicitra, ləṅis, ṅa. purna. glana, murcita, sy
+         <lb n="4" break="no"/>uhan, nindar, kr̥paka, ṅa. larasmara. aṅgavarana, kutarahasya, 
+         <lb n="5"/>ṅa. siñjaṅ. urak, vyadi, gadamaya, ṅa. lara. kambi<pb edRef="#mstp1" n="16v"/>ni, vilasi
+         <lb n="6" break="no"/>ni, patni, yuvati, ṅa. stri. kanya, taruni, vuvuja, 
+         <lb n="7"/>paravan, ṅa. rara. kaksayastra, vidata, ṅa. raṅdastri. suta, ta
+         <lb n="8" break="no"/>naya, atmaja, putra, sunu, vəka, ṅa. anak. cita, aṅən-aṅən, 
+         <lb n="9"/>budi, manah praya, ista, dyaya, naya, jona, ṅa. kahyun. atma, 
+         <lb n="10"/>juvita, prana, pramena, ṅa. urip. marana, paratra, tralaya, mok
+         <lb n="11" break="no"/>ta, ṅa. pati. konaṅ-unaṅ, kakarsa, ṅa. rəsəp. duratmaka, sa
+         <lb n="12"/>valapaksa, ripu, niratmaka, ṅa. satru. mardaka, astena, taskara, 
+         <lb n="13"/>panduṅ, ṅa. maliṅ. nr̥ta, aduva, duvapara, durta, ṅa. liñok. 
+         <lb n="14"/>suviti, laṅgaṅ, pugəh, təmən, dasaṅ mahyun basa basiki, yanya 
+         <lb n="15"/>vaṅ vruha, pinakarumniṅ vacana, mvaṅ mandarta aṅde tus
+         <lb n="16"/>taniṅ praja, saksat tambis aṅucap, tan vruh nayakaniṅ basa, 
+         <lb n="17"/>katəmuniṅ iṅaran gramya vacana, nihan lvirnya: gamyasyati, ṅa. 
+         <lb n="18"/>kapaṅguh. 
+         <lb n="20"/><pb edRef="#mstp1" n="17r"/> antarudita, aṅgapataka, jataka, ranapata, drumaṅgala, papa, do
+         <lb n="21" break="no"/>sa, hala, ṅa. runtik. ariñah, randu, ṅa. putih asəmu kuniṅ. 
+         <lb n="22"/>davala, sukla, suci, ṅa. putih. sahatya, hr̥daye, ṅa, patemu vahita. 
+         <lb n="23"/>yamuda, lohika, vinusti, rinahasya, ṅa. tan kavədar. lapa, van
+         <lb n="24" break="no"/>du, vat, ṅa. kədik. mardava, drati, pəniṅ manah. vila, muhardika
+         <lb n="25"/>, saṅ, ṅa. pandita. mudra, na. 
+         <lb n="26"/>nihan saṅ akr̥tabasa kavruhakəna do, ṅa. vaṅ maṅigəl. 
+         <lb n="27"/>gayata, ṅa. vaṅ ṅiduṅ. pataṅga, ṅaku kənoh, ṅa. əndi. 
+         <lb n="28"/>gamya, ṅa. kabeh. juga, ṅa. tanusa. tanusa, ṅa. sarira. ləvu, 
+         <lb n="29"/>ṅa. apagəh. sədəṅ, ṅa. laṅgəṅ. prayama, ṅa. yoga. jambət, ṅa. 
+         <lb n="30"/>aləp. aho, ṅa. həniṅ. aho, ṅa. rahina. salisuh, ṅa. aputək. 
+         <lb n="31"/>kinarya, ṅa. inaṅen-aṅeṅ. ndah, ṅa. uvus. basuvara, ṅa. mi
+         <lb n="32" break="no"/>rah. hun<pb edRef="#mstp1" n="17v"/>ur, ṅa. gagumuk. padma, saroja, saroruha, ṅa. tuñ
+         <lb n="33" break="no"/>juṅ. manobava, ṅa. ləvih. kadyutanavakən, curik, ṅa. kadga. 
+         <lb n="34"/>tañcari, ṅa. petrəm. juluk-juluk, ṅa. susuṅkul. jala-ja
+         <lb n="35" break="no"/>la, ṅa. irəṅ. cara, vilasa sampadipa, ṅa. vijilakəna. ayata, ṅa. 
+         <lb n="36"/>adava laris. dara, ṅa. pupu. rajasiṅa, ṅa. jəjəṅku. pina, 
+         <lb n="37"/>ṅa. agəṅ. aliṅgana, ṅa. maṅol. kutara, ṅa. vaduṅpr̥kul. 
+         <lb n="38"/>kaya, ṅa, ṅa. sarira. marana, ṅa. pati. smarana, ṅa. yoga. nire
+         <lb n="39" break="no"/>tah, ṅa. surud. svah, ṅa. svarga. ruda, ṅa. tinavəṅan. 
+         <lb n="40"/>timira, ṅa. pətəṅ. timira, ṅa tan vruhiṅ laku. melakala, ṅa. kəndit. valaya, ṅa 
+         <lb n="41"/>ṅa. aṅliga. vara, ṅa. sabda. vivartika, ṅa. aṅigəl. kisalaya, ṅa. 
+         <lb n="42"/>səvəh, padapa. pana, ṅa. araniṅ minum-minuman. jatita, ṅa. vi
+         <lb n="43" break="no"/>natvaken. juvara, ṅa. lara. sundari, ṅa. mr̥tpinda. ləma, 
+         <lb n="44"/>ṅa. gata. kata, ṅa. vaṅ manapuk. 
+
+      </ab>
+            </div>
+            <div type="translation">
+               <p/>
+            </div>
+             <div type="commentary">
+               <p/>
+                <!-- axja to zaki : you could use this new section to document 
+                   roughly the handDesc comment you made at the top of your file-->
+                
+            </div>
+
+           <div type="bibliography"> 			
+              <p/> 			
+              <listBibl>
+                 <bibl/> 			
+              </listBibl>            
+               		
+           </div> 	
+        </body>
+  </text>
+</TEI>
