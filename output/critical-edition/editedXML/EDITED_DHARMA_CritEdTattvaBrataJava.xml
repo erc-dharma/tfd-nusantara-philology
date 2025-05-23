@@ -2,13 +2,15 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:lang="eng"
+     xml:id="tattvaBrataJava">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="editorial">Tattva Brata Merapi Merbabu: Digital Critical Edition and Parallel Translation</title>
+            <title type="editorial">Tattva Brata as Transmitted in Merapi-Merbabu Manuscripts: Digital Critical Edition and Parallel Translation</title>
             <title type="original" xml:lang="kaw-Latn">Tattva Brata</title>
-            <title type="alt">Saṅ Hyaṅ Tattva Brata</title>
+            <!--<title type="alt"></title>-->
             <!-- fill in any alternative title if necessary -->
             <!--<author></author>-->
             <!-- fill in any author if necessary -->
@@ -26,7 +28,6 @@
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  <!-- Replace year and name, use format "Forename1 Surname1 & Forename2 Surname2" or "Forename1 Surname1, Forename2 Surname2 & Forename3 Surname3"  if necessary — the copyright is that of the encoder(s) -->
                </licence>
             </availability>
             <date from="2025" to="2025">2025-2025</date>
@@ -34,16 +35,13 @@
          <sourceDesc>
             <listWit xml:id="mssperpusnas">
                <head>Manuscripts kept in National Library of Indonesia</head>
-               <!-- One witness for each manuscript. Update the content -->
-               <witness xml:id="A">
-                        <!-- Give your witness an unique identifier -->
-                  <abbr type="siglum"/>
-                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+               <witness xml:id="msA">
+                  <abbr type="siglum">A</abbr>
                   <msDesc>
                      <msIdentifier>
                         <settlement>Jakarta</settlement>
-                        <institution>National Library of Republic Indonesia</institution>
-                        <repository>Lontar</repository>
+                        <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                        <repository>Koleksi Naskah Nusantara</repository>
                         <idno>4L 143</idno>
                      </msIdentifier>
                      <msContents>
@@ -53,7 +51,7 @@
                            <title>Tattva Brata</title>
                            <!-- You can also add a colophon if needed -->
                            <colophon>
-                              <quote>Itiḥ tatva brata, samapta tlas·, cinītra, I jəṅ ira, saṁ hyaṁ pamriyan·, Imbha ghneya, vuku, mara, haguṁ, śanis·cara, ta, pa, dha ۝ sasaka ya </quote>
+                              <quote type="diplomatic">Itiḥ tatva brata, samapta tlas·, cinītra, I jəṅ ira, saṁ hyaṁ pamriyan·, Imbha ghneya, vuku, mara, haguṁ, śanis·cara, ta, pa, dha <g type="circleCurve"/> sasaka ya </quote>
                            </colophon>
                            <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
                         </msItem>
@@ -61,7 +59,7 @@
                      <physDesc>
                         <objectDesc>
                                     <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Palm-leaf manuscript. 5 leaves in Buddha script. Date unknown. </p>
+                           <p>Palm-leaf manuscript. 5 leaves in Merapi-Merbabu script. Date unknown. </p>
                         </objectDesc>
                         <handDesc>
                            <p/>
@@ -73,14 +71,13 @@
                             </history>-->
                   </msDesc>
                </witness>
-               <witness xml:id="B">
-                  <abbr type="siglum"/>
-                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+               <witness xml:id="msB">
+                  <abbr type="siglum">B</abbr>
                   <msDesc>
                      <msIdentifier>
                         <settlement>Jakarta</settlement>
-                        <institution>National Library of Republic Indonesia</institution>
-                        <repository>Lontar</repository>
+                        <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                        <repository>Koleksi Naskah Nusantara</repository>
                         <idno>8L 89</idno>
                      </msIdentifier>
                      <msContents>
@@ -90,7 +87,7 @@
                            <title>Tattva Brata</title>
                            <!-- You can also add a colophon if needed -->
                            <colophon>
-                              <quote>Itiḥ tatva brata, samapta tlas· nicitra, I— —tuṁ jəṅira saṁ hyaṁ pamrihan· //۝//</quote>
+                              <quote type="diplomatic">Itiḥ tatva brata, samapta tlas· nicitra, I<space type="binding-hole"/>tuṁ jəṅira saṁ hyaṁ pamrihan· //<g type="circleCurve"/>//</quote>
                            </colophon>
                            <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
                         </msItem>
@@ -98,7 +95,7 @@
                      <physDesc>
                         <objectDesc>
                                     <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Palm-leaf manuscript. 7 leaves in  script. Date unknown. </p>
+                           <p>Palm-leaf manuscript. 7 leaves in Merapi-Merbabu script. Date unknown. </p>
                         </objectDesc>
                         <handDesc>
                            <p/>
@@ -134,1052 +131,1052 @@
          </samplingDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="part:pegy" when="2025-05-10">started building edition</change>
+         <change who="part:argr" when="2025-05-23" status="draft">various revisions</change>
+         <change who="part:pegy" when="2025-05-10" status="draft">started building edition</change>
          <change who="part:axja" when="2025-05-09" status="draft">Transformation from docx to xml</change>
-         <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="edition" xml:lang="kaw-Latn">
             <p n="1">hana brata mijil sakiṅ parahupan<app>
-                  <lem wit="#B">parahupan</lem>
-                  <rdg wit="#A">parahu, pan</rdg>
+                  <lem wit="#msB">parahupan</lem>
+                  <rdg wit="#msA">parahu, pan</rdg>
                </app> yoga<app>
                   <lem type="emn">yoga</lem>
-                  <rdg wit="#A #B">yuga</rdg>
+                  <rdg wit="#msA #msB">yuga</rdg>
                </app> bhaṭāra guru, kayatnakәna de saṅ<app>
-                  <lem wit="#A">saṅ</lem>
-                  <rdg wit="#B">sa</rdg>
+                  <lem wit="#msA">saṅ</lem>
+                  <rdg wit="#msB">sa</rdg>
                </app> śevaka dharma, marapvan kapaṅgih kasiddhanya vruh adyatmika<app>
-                  <lem wit="#B">adyatmika</lem>
-                  <rdg wit="#A">kajatmikanya</rdg>
+                  <lem wit="#msB">adyatmika</lem>
+                  <rdg wit="#msA">kajatmikanya</rdg>
                </app>, saṅ<app>
                   <lem type="emn">saṅ</lem>
-                  <rdg wit="#A #B">sa</rdg>
+                  <rdg wit="#msA #msB">sa</rdg>
                </app> mahyun<app>
                   <lem type="norm">mahyun</lem>
-                  <rdg wit="#A">mayyun</rdg>
-                  <rdg wit="#B">mahyan</rdg>
+                  <rdg wit="#msA">mayyun</rdg>
+                  <rdg wit="#msB">mahyan</rdg>
                </app> umoktakәna janma, kady aṅganiṅ aḍaṅ esuk, esuk amaṅan, avan aḍaṅ avan amaṅan, vәṅi aḍaṅ vәṅi amaṅan. </p>
             <p n="2">hana brata śakti guṅ<app>
-                  <lem wit="#A">guṁ</lem>
-                  <rdg wit="#B">gu</rdg>
+                  <lem wit="#msA">guṁ</lem>
+                  <rdg wit="#msB">gu</rdg>
                </app> śīrṣasatya<app>
                   <lem type="conj">śīrṣasatya</lem>
-                  <rdg wit="#A #B">śirna satya</rdg>
+                  <rdg wit="#msA #msB">śirna satya</rdg>
                </app> mahāpavitra, salavas<app>
-                  <lem wit="#B">salavas</lem>
-                  <rdg wit="#A">savlas</rdg>
+                  <lem wit="#msB">salavas</lem>
+                  <rdg wit="#msA">savlas</rdg>
                </app> lek pakṣa hәniṅa, ya ta sinaṅgaha<app>
-                  <lem wit="#B">sinaṅgaha</lem>
-                  <rdg wit="#A">singuha</rdg>
+                  <lem wit="#msB">sinaṅgaha</lem>
+                  <rdg wit="#msA">singuha</rdg>
                </app> tapa ṅaranya, amaṅun ayu, gavayakәna, taṅ kaśāntikan.</p>
             <p n="2.1"> śravaṇa<app>
                   <lem type="norm">śravaṇa</lem>
-                  <rdg wit="#A">sravana</rdg>
-                  <rdg wit="#B">śrathaṇa</rdg>
+                  <rdg wit="#msA">sravana</rdg>
+                  <rdg wit="#msB">śrathaṇa</rdg>
                </app>, tan pamaṅana sarva buṅkah, phalanya, lәkən kaśaktin<app>
-                  <lem wit="#A">kaśaktin</lem>
-                  <rdg wit="#B">kasatin</rdg>
+                  <lem wit="#msA">kaśaktin</lem>
+                  <rdg wit="#msB">kasatin</rdg>
                </app>, tan rәṅka, mara bhaṭāra śrī vvadi roma. </p>
             <p n="2.2"> bhādravada <app>
                   <lem type="norm">bhādravada</lem>
-                  <rdg wit="#A">badra</rdg>
-                  <rdg wit="#B">bhadravaddha</rdg>
+                  <rdg wit="#msA">badra</rdg>
+                  <rdg wit="#msB">bhadravaddha</rdg>
                </app>, tan pamaṅana sapi<app>
-                  <lem wit="#B">sapi</lem>
-                  <rdg wit="#A">sasapi</rdg>
+                  <lem wit="#msB">sapi</lem>
+                  <rdg wit="#msA">sasapi</rdg>
                </app>, phalanya tan kataman sasab, bhaṭāra dhana sira nurun. </p>
             <p n="2.3">asuji, tan pamaṅana bavi, phalanya tan kataman gәriṅ<app>
                   <lem type="emn">gәriṅ</lem>
-                  <rdg wit="#A">śri</rdg>
-                  <rdg wit="#B">gri</rdg>
+                  <rdg wit="#msA">śri</rdg>
+                  <rdg wit="#msB">gri</rdg>
                </app> tәmən, tәhər<app>
-                  <lem wit="#A">tәhәr</lem>
-                  <rdg wit="#B">tagər</rdg>
+                  <lem wit="#msA">tәhәr</lem>
+                  <rdg wit="#msB">tagər</rdg>
                </app> lituhayu, bhaṭāra padma mandəl iṅ śarīra. </p>
             <p n="2.4">kārrtika, tan pamaṅana roṇḍon<app>
                   <lem type="norm">roṇḍon</lem>
-                  <rdg wit="#A #B">rodhon</rdg>
+                  <rdg wit="#msA #msB">rodhon</rdg>
                </app>, phalanya vrәddhi<app>
                   <lem type="conj">vr̥dhi</lem>
-                  <rdg wit="#A #B">vvaddhi</rdg>
+                  <rdg wit="#msA #msB">vvaddhi</rdg>
                </app> satapak taṅan, bhaṭāra dameṅ dara mandəl iṅ śarīra.  </p>
             <p n="2.5">mārgaśira,<app>
                   <lem type="emn">mārgaśira (= mārgaśīrṣa)</lem>
-                  <rdg wit="#A #B">maṙgga</rdg>
+                  <rdg wit="#msA #msB">maṙgga</rdg>
                </app> tan paluluṅan, aja ṅinəp adoh aparәk, phalanya sugih rare ri pavvaṅan<app>
                   <lem type="emn">pavvaṅan</lem>
-                  <rdg wit="#A">pavaṅan</rdg>
-                  <rdg wit="#B">padaṅan</rdg>
+                  <rdg wit="#msA">pavaṅan</rdg>
+                  <rdg wit="#msB">padaṅan</rdg>
                </app>, bhaṭāra ṣepa mandəl iṅ śarīra. </p>
             <p n="2.6">poṣya, tan pāmәṅi rare, phalanya kedhәp dinulur<app>
-                  <lem wit="#A">kedhәp dinulur</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">kedhәp dinulur</lem>
+                  <rdg wit="#msB">
                      <unclear>kedhiph di</unclear>nulur</rdg>
                </app> deniṅ anak, bhaṭāra vanu<app>
-                  <lem wit="#A">vanu</lem>
-                  <rdg wit="#B">vana</rdg>
+                  <lem wit="#msA">vanu</lem>
+                  <rdg wit="#msB">vana</rdg>
                </app> mandəl iṅ śarīra. </p>
             <p n="2.7">māgha<app>
                   <lem type="emn">māgha</lem>
-                  <rdg wit="#A #B">maṅga</rdg>
+                  <rdg wit="#msA #msB">maṅga</rdg>
                </app>, <sic>sira pañca</sic> , tan pamaṅana camah, salvirani camah<app>
-                  <lem wit="#A">camaḥ</lem>
-                  <rdg wit="#B">canaḥ</rdg>
+                  <lem wit="#msA">camaḥ</lem>
+                  <rdg wit="#msB">canaḥ</rdg>
                </app>, phalanya vruha sahanani<app>
                   <lem type="conj">sahanani</lem>
-                  <rdg wit="#A #B">saṅgaṅani</rdg>
+                  <rdg wit="#msA #msB">saṅgaṅani</rdg>
                </app> jagat, bhaṭāra suvindha mandəl<app>
-                  <lem wit="#A">mandhəl</lem>
-                  <rdg wit="#B">madәl</rdg>
+                  <lem wit="#msA">mandhəl</lem>
+                  <rdg wit="#msB">madәl</rdg>
                </app> iṅ śarīra.  </p>
             <p n="2.8">phālguna, tan pamaṅana suku pat, phalanya sugih vәnaṅ vәnaṅ, bhaṭāra humava<app>
-                  <lem wit="#B">humava</lem>
-                  <rdg wit="#A">lac.</rdg>
+                  <lem wit="#msB">humava</lem>
+                  <rdg wit="#msA">lac.</rdg>
                </app> mandəl iṅ śarīra. </p>
             <p n="2.9">cetra<app>
                   <lem type="emn">cetra (=caitra)</lem>
-                  <rdg wit="#A">cetraka</rdg>
-                  <rdg wit="#B">cacatraka</rdg>
+                  <rdg wit="#msA">cetraka</rdg>
+                  <rdg wit="#msB">cacatraka</rdg>
                </app>, tan pamaṅana asu, phalanya abәcik tan pahyas<app>
                   <lem type="emn">pahyas</lem>
-                  <rdg wit="#A #B">payas</rdg>
+                  <rdg wit="#msA #msB">payas</rdg>
                </app>, bhaṭāra viṣṇu<app>
                   <lem type="norm">viṣṇu</lem>
-                  <rdg wit="#A">vignu</rdg>
-                  <rdg wit="#B">visnu</rdg>
+                  <rdg wit="#msA">vignu</rdg>
+                  <rdg wit="#msB">visnu</rdg>
                </app> mandəl iṅ śarīra. </p>
             <p n="2.10">veśaka, tan panәṅa laṅit, phalanya katәmu kaṅ<app>
-                  <lem wit="#A">kaṁ</lem>
-                  <rdg wit="#B">ka</rdg>
+                  <lem wit="#msA">kaṁ</lem>
+                  <rdg wit="#msB">ka</rdg>
                </app> pinalaku<app>
-                  <lem wit="#B">pinalaku</lem>
-                  <rdg wit="#A">pinaku</rdg>
+                  <lem wit="#msB">pinalaku</lem>
+                  <rdg wit="#msA">pinaku</rdg>
                </app> bhaṭāra dusudana<app>
-                  <lem wit="#A">duswaddhana</lem>
-                  <rdg wit="#B">dusdana</rdg>
+                  <lem wit="#msA">duswaddhana</lem>
+                  <rdg wit="#msB">dusdana</rdg>
                </app> mandəl iṅ<app>
-                  <lem wit="#A">iṁ</lem>
-                  <rdg wit="#B">i</rdg>
+                  <lem wit="#msA">iṁ</lem>
+                  <rdg wit="#msB">i</rdg>
                </app> śarīra. </p>
             <p n="2.11"> jyeṣṭha<app>
                   <lem type="conj">jyeṣṭha (=jyaiṣṭha)</lem>
-                  <rdg wit="#A">riṁ śukra</rdg>
-                  <rdg wit="#B">ri sukra</rdg>
+                  <rdg wit="#msA">riṁ śukra</rdg>
+                  <rdg wit="#msB">ri sukra</rdg>
                </app>, tan pamaṅana sata, phalanya<app>
-                  <lem wit="#A">phalanya</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">phalanya</lem>
+                  <rdg wit="#msB">
                      <unclear>phalanya</unclear>
                   </rdg>
                </app> kedhəp aṅucap<app>
-                  <lem wit="#A">aṅucap</lem>
-                  <rdg wit="#B">ṅucap</rdg>
+                  <lem wit="#msA">aṅucap</lem>
+                  <rdg wit="#msB">ṅucap</rdg>
                </app>, bhaṭāra vikrama, mandəl iṅ sarira. </p>
             <p n="2.12">aṣādha<app>
                   <lem type="conj">aṣādha</lem>
-                  <rdg wit="#A">citta</rdg>
-                  <rdg wit="#B">cətta</rdg>
+                  <rdg wit="#msA">citta</rdg>
+                  <rdg wit="#msB">cətta</rdg>
                </app>, tan paturu lavan istri, tan panuku<app>
-                  <lem wit="#A">panuku</lem>
-                  <rdg wit="#B">panuka</rdg>
+                  <lem wit="#msA">panuku</lem>
+                  <rdg wit="#msB">panuka</rdg>
                </app>, bhaṭāra manatas mandəl iṅ sarira. </p>
             <p n="3">hana brata amaṅan alalamak pattra, amuktipatra haranya, saṅ hyaṅ pakirṇna māndəl iṅ śarīra, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app>  yen pinaruputan, siddha hayuni vvaṅ pәjah tan pahavan kadga. </p>
             <p n="4">hana brata apatrāhāra haranya, amaṅan rondhon sari sari, saṅ hyaṅ iśvara devatanya, phalanya mulih mariṅ<app>
-                  <lem wit="#A">mariṁ</lem>
-                  <rdg wit="#B">mari</rdg>
+                  <lem wit="#msA">mariṁ</lem>
+                  <rdg wit="#msB">mari</rdg>
                </app> svarga<app>
-                  <lem wit="#A">svaṙgga</lem>
-                  <rdg wit="#B">saṙgga</rdg>
+                  <lem wit="#msA">svaṙgga</lem>
+                  <rdg wit="#msB">saṙgga</rdg>
                </app> bhaṭāra guru, sasarnya<app>
-                  <lem wit="#A">sasaṙnya</lem>
-                  <rdg wit="#B">saṙsaṙnya</rdg>
+                  <lem wit="#msA">sasaṙnya</lem>
+                  <rdg wit="#msB">saṙsaṙnya</rdg>
                </app> mulih mariṅ<app>
-                  <lem wit="#A">mariṁ</lem>
-                  <rdg wit="#B">mari</rdg>
+                  <lem wit="#msA">mariṁ</lem>
+                  <rdg wit="#msB">mari</rdg>
                </app> bhaṭāra brahmā, bhaṭāra viṣṇu muvah. </p>
             <p n="5">hana brata akarvan patrāhāra ṅaranya<app>
-                  <lem wit="#B">ṅaranya</lem>
-                  <rdg wit="#A">haranya</rdg>
+                  <lem wit="#msB">ṅaranya</lem>
+                  <rdg wit="#msA">haranya</rdg>
                </app>, pituṅ tahun samayanya, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> mulih mariṅ<app>
-                  <lem wit="#A">mariṁ</lem>
-                  <rdg wit="#B">mari</rdg>
+                  <lem wit="#msA">mariṁ</lem>
+                  <rdg wit="#msB">mari</rdg>
                </app> svarga<app>
                   <lem type="norm">svarga</lem>
-                  <rdg wit="#A">svargga</rdg>
-                  <rdg wit="#B">sargga</rdg>
+                  <rdg wit="#msA">svargga</rdg>
+                  <rdg wit="#msB">sargga</rdg>
                </app> saṅ<app>
-                  <lem wit="#A">saṁ</lem>
-                  <rdg wit="#B">sar</rdg>
+                  <lem wit="#msA">saṁ</lem>
+                  <rdg wit="#msB">sar</rdg>
                </app> hyaṅ iśvara, sasarnya ajanma riṅ juru basana, sugih hulun<app>
-                  <lem wit="#A">hulun</lem>
-                  <rdg wit="#B">huhlun</rdg>
+                  <lem wit="#msA">hulun</lem>
+                  <rdg wit="#msB">huhlun</rdg>
                </app>, labdha ri saṅ prabhu.</p>
             <p n="6">hana brata akaṇakadarvva<app>
-                  <lem wit="#B">daṙvva</lem>
-                  <rdg wit="#A">deṙvva</rdg>
+                  <lem wit="#msB">daṙvva</lem>
+                  <rdg wit="#msA">deṙvva</rdg>
                </app> ṅaranya, amaṅana<app>
-                  <lem wit="#B">amaṅana</lem>
-                  <rdg wit="#A">yamaṅana</rdg>
+                  <lem wit="#msB">amaṅana</lem>
+                  <rdg wit="#msA">yamaṅana</rdg>
                </app> sәga kinuñit<app>
-                  <lem wit="#B">kinuñit</lem>
-                  <rdg wit="#A">kinuṅit</rdg>
+                  <lem wit="#msB">kinuñit</lem>
+                  <rdg wit="#msA">kinuṅit</rdg>
                </app>, tәluṅ tahun<app>
-                  <lem wit="#A">tahun</lem>
-                  <rdg wit="#B">tahuna</rdg>
+                  <lem wit="#msA">tahun</lem>
+                  <rdg wit="#msB">tahuna</rdg>
                </app> samayanya, phalanya mulih mariṅ<app>
                   <lem type="emn">mariṁ</lem>
-                  <rdg wit="#A">lac.</rdg>
-                  <rdg wit="#B">mari</rdg>
+                  <rdg wit="#msA">lac.</rdg>
+                  <rdg wit="#msB">mari</rdg>
                </app> svarga saṅ hyaṅ mahādeva<app>
                   <lem type="norm">mahādeva</lem>
-                  <rdg wit="#A">mahadeva</rdg>
-                  <rdg wit="#B">madeva</rdg>
+                  <rdg wit="#msA">mahadeva</rdg>
+                  <rdg wit="#msB">madeva</rdg>
                </app>, sasarnya ajanma ri dham puhavaṅ sugih. </p>
             <p n="7">hana brata arakta haranya, amaṅana kәtan irәṅ, phalanya mulih mariṅ<app>
-                  <lem wit="#A">mariṁ</lem>
-                  <rdg wit="#B">mari</rdg>
+                  <lem wit="#msA">mariṁ</lem>
+                  <rdg wit="#msB">mari</rdg>
                </app> svarga bhaṭāra viṣṇu, sasarnya ajanma<app>
-                  <lem wit="#B">hajanma</lem>
-                  <rdg wit="#A">hañjama</rdg>
+                  <lem wit="#msB">hajanma</lem>
+                  <rdg wit="#msA">hañjama</rdg>
                </app> ri mantrī sugih.</p>
             <p n="8">hana brata ajavala ṅaranya, amaṅan java jali, sari-sari, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya mulih</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> mariṁ<app>
                   <lem type="emn">mariṁ</lem>
-                  <rdg wit="#A #B">mariṁ</rdg>
+                  <rdg wit="#msA #msB">mariṁ</rdg>
                </app> bhaṭāra iśvara<app>
                   <lem type="norm">iśvara</lem>
-                  <rdg wit="#A #B">hivvara</rdg>
+                  <rdg wit="#msA #msB">hivvara</rdg>
                </app>, sasarnya<app>
-                  <lem wit="#A">sasaṙnya</lem>
-                  <rdg wit="#B">sasanya</rdg>
+                  <lem wit="#msA">sasaṙnya</lem>
+                  <rdg wit="#msB">sasanya</rdg>
                </app> ajanma ri viku<app>
-                  <lem wit="#B">viku</lem>
-                  <rdg wit="#A">vīku</rdg>
+                  <lem wit="#msB">viku</lem>
+                  <rdg wit="#msA">vīku</rdg>
                </app> śakti brāhmaṇa seva sogata. </p>
             <p n="9">hana brata anәrәbuṅ<app>
                   <lem type="emn">anәrәbuṅ</lem>
-                  <rdg wit="#A">hanrimbhu</rdg>
-                  <rdg wit="#B">hanәr̥mbu</rdg>
+                  <rdg wit="#msA">hanrimbhu</rdg>
+                  <rdg wit="#msB">hanәr̥mbu</rdg>
                </app> haranya, salviraniṅ əbuṅ<app>
                   <lem type="conj">əbuṅ</lem>
-                  <rdg wit="#A #B">əmbu</rdg>
+                  <rdg wit="#msA #msB">əmbu</rdg>
                </app> tan pinaṅan, satahun samanya, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> mulih mariṅ<app>
-                  <lem wit="#A">mariṁ</lem>
-                  <rdg wit="#B">mari</rdg>
+                  <lem wit="#msA">mariṁ</lem>
+                  <rdg wit="#msB">mari</rdg>
                </app>
                <app>
                   <lem type="conj">
                      <supplied reason="omitted">svarga</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app>saṅ hyaṅ rudra, sasarnya mulih mariṅ<app>
-                  <lem wit="#A">mariṁ</lem>
-                  <rdg wit="#B">mari</rdg>
+                  <lem wit="#msA">mariṁ</lem>
+                  <rdg wit="#msB">mari</rdg>
                </app> kadaṅ haji, kulaputra. </p>
             <p n="10">hana brata aṅasadha, anaṅkәn pūrṇamani aṣādha, amati āhāra tigaṅ aṣādha, phalanya<app>
-                  <lem wit="#A">phalanya</lem>
-                  <rdg wit="#B">Aphalanya</rdg>
+                  <lem wit="#msA">phalanya</lem>
+                  <rdg wit="#msB">Aphalanya</rdg>
                </app> mulih mariṅ <app>
                   <lem type="conj">
                      <supplied reason="omitted">svarga</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> saṅ hyaṅ indra, sasarnya<app>
-                  <lem wit="#A">sasaṙnya</lem>
-                  <rdg wit="#B">sasarna</rdg>
+                  <lem wit="#msA">sasaṙnya</lem>
+                  <rdg wit="#msB">sasarna</rdg>
                </app> ajanma ri lituhayu<app>
-                  <lem wit="#A">lītuhayu</lem>
-                  <rdg wit="#B">lidhuhayu</rdg>
+                  <lem wit="#msA">lītuhayu</lem>
+                  <rdg wit="#msB">lidhuhayu</rdg>
                </app> paripūrṇa, suka ri dәlaha<app>
                   <lem type="emn">dәlaha</lem>
-                  <rdg wit="#A">dəllaḥhan</rdg>
-                  <rdg wit="#B">da<hi rend="subscript">la</hi>han</rdg>
+                  <rdg wit="#msA">dəllaḥhan</rdg>
+                  <rdg wit="#msB">da<hi rend="subscript">la</hi>han</rdg>
                </app>, prajñan, sugih saṅkan  rare. </p>
             <p n="11">hana brata aṅapitu, amatiāhāra<app>
                   <lem type="emn">amatiāhāra</lem>
-                  <rdg wit="#B">amatihahara</rdg>
-                  <rdg wit="#A">lac.</rdg>
+                  <rdg wit="#msB">amatihahara</rdg>
+                  <rdg wit="#msA">lac.</rdg>
                </app> tigaṅ kapitu, phalanya mulih mariṅ<app>
                   <lem>mariṅ</lem>
-                  <rdg wit="#B">mari</rdg>
-                  <rdg wit="#A">lac.</rdg>
+                  <rdg wit="#msB">mari</rdg>
+                  <rdg wit="#msA">lac.</rdg>
                </app>
                <app>
                   <lem type="conj">
                      <supplied reason="omitted">svarga</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> saṅ hyaṅ brahmā, sasarnya ajanma ri sugih <app>
                   <lem type="conj">
                      <supplied reason="omitted">saṅkan</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> rare<app>
                   <lem type="emn">rare</lem>
-                  <rdg wit="#B">rarare</rdg>
-                  <rdg wit="#A">lac.</rdg>
+                  <rdg wit="#msB">rarare</rdg>
+                  <rdg wit="#msA">lac.</rdg>
                </app> nәhər lituhayu paripūrṇa. </p>
             <p n="12">hana brata aṅalivon, olaha<app>
                   <lem type="emn">olaha</lem>
-                  <rdg wit="#A #B">oliha</rdg>
+                  <rdg wit="#msA #msB">oliha</rdg>
                </app> tәluṅ kalivon tumpəke amatiāhāra<app>
                   <lem type="emn">amatiāhāra</lem>
-                  <rdg wit="#A #B">amatihara</rdg>
+                  <rdg wit="#msA #msB">amatihara</rdg>
                </app>, phalanya prih tәka, saṅ prih mās pirak tәka kveh.</p>
             <p n="13">hana brata akedusiṅ<app>
-                  <lem wit="#A">hakedusiṅ</lem>
-                  <rdg wit="#B">hake<hi rend="superscript strikethrough">ja</hi>ddusi</rdg>
+                  <lem wit="#msA">hakedusiṅ</lem>
+                  <rdg wit="#msB">hake<hi rend="superscript strikethrough">ja</hi>ddusi</rdg>
                </app> ṅaranya, anaṅkən<app>
                   <lem type="emn">anaṅkən</lem>
-                  <rdg wit="#A #B">anakən</rdg>
+                  <rdg wit="#msA #msB">anakən</rdg>
                </app> pūrṇamani kasapuluh amatiāhāra<app>
                   <lem type="emn">amatiāhāra</lem>
-                  <rdg wit="#A #B">amatihara</rdg>
+                  <rdg wit="#msA #msB">amatihara</rdg>
                </app>, oliha tigaṅ kasapuluh, phalanya mulih mariṅ<app>
                   <lem type="emn">mariṅ</lem>
-                  <rdg wit="#A #B">mari</rdg>
+                  <rdg wit="#msA #msB">mari</rdg>
                </app>
                <app>
                   <lem type="conj">
                      <supplied reason="omitted">svarga</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> saṅ hyaṅ iśvara, sasarnya ajanma ri viku śakti brahmāṇa seva sogata. </p>
             <p n="14">hana brata tan pāñale siṅ<app>
                   <lem type="emn">pāñale siṅ</lem>
-                  <rdg wit="#A">pañale sisi</rdg>
-                  <rdg wit="#B">aṅaleyi si</rdg>
+                  <rdg wit="#msA">pañale sisi</rdg>
+                  <rdg wit="#msB">aṅaleyi si</rdg>
                </app> pinaṅan ṅuniveh salvirani solah bhāva, yeka brata sambә haranya, sambә haranya viryya<app>
                   <lem type="emn">vīrya</lem>
-                  <rdg wit="#B">vәryya</rdg>
-                  <rdg wit="#A">viṙṣva</rdg>
+                  <rdg wit="#msB">vәryya</rdg>
+                  <rdg wit="#msA">viṙṣva</rdg>
                </app> māśih<app>
                   <lem type="emn">maśih</lem>
-                  <rdg wit="#A #B">magih</rdg>
+                  <rdg wit="#msA #msB">magih</rdg>
                </app>, <sic>… deva maśih …</sic> siddha mantri<app>
-                  <lem wit="#A">mantri</lem>
-                  <rdg wit="#B">mati</rdg>
+                  <lem wit="#msA">mantri</lem>
+                  <rdg wit="#msB">mati</rdg>
                </app>, lituhayu paripūrṇa, sugih saṅkan rare.</p>
             <p n="15">hana brata adurlabha<app>
                   <lem type="emn">adurlabha</lem>
-                  <rdg wit="#A #B">adurla</rdg>
+                  <rdg wit="#msA #msB">adurla</rdg>
                </app> ṅaranya, amaṅan jali skul, limaṅ<app>
-                  <lem wit="#A">limaṁ</lem>
-                  <rdg wit="#B">lima</rdg>
+                  <lem wit="#msA">limaṁ</lem>
+                  <rdg wit="#msB">lima</rdg>
                </app> lek samayanya, phalanya, mulih i svarga saṅ hyaṅ viṣnu, sasarnya ajanma ri viku bahu śiṣya<app>
                   <lem type="emn">śiṣya</lem>
-                  <rdg wit="#A">sikṣya</rdg>
-                  <rdg wit="#B">yikṣya</rdg>
+                  <rdg wit="#msA">sikṣya</rdg>
+                  <rdg wit="#msB">yikṣya</rdg>
                </app>. </p>
             <p n="16">hana brata aṅasaṅa, an aṅkən pūrṇama ni kasaṅa amatiāhāra<app>
                   <lem type="emn">amatiāhāra</lem>
-                  <rdg wit="#A #B">matihara</rdg>
+                  <rdg wit="#msA #msB">matihara</rdg>
                </app>, oliha tigaṅ kasaṅa, phalanya mulih<app>
-                  <lem wit="#A">muliḥ</lem>
-                  <rdg wit="#B">muli</rdg>
+                  <lem wit="#msA">muliḥ</lem>
+                  <rdg wit="#msB">muli</rdg>
                </app>  i<app>
-                  <lem wit="#B">i</lem>
-                  <rdg wit="#A">iṁ</rdg>
+                  <lem wit="#msB">i</lem>
+                  <rdg wit="#msA">iṁ</rdg>
                </app> svarga<app>
                   <lem type="emn">svarga</lem>
-                  <rdg wit="#A">syagga</rdg>
-                  <rdg wit="#B">sarga</rdg>
+                  <rdg wit="#msA">syagga</rdg>
+                  <rdg wit="#msB">sarga</rdg>
                </app> saṅ hyaṅ indra, sasarnya ajanma ri<app>
-                  <lem wit="#B">ri</lem>
-                  <rdg wit="#A">
+                  <lem wit="#msB">ri</lem>
+                  <rdg wit="#msA">
                      <gap reason="omitted"/>
                   </rdg>
                </app> lituhayu lan<app>
-                  <lem wit="#B">lan</lem>
-                  <rdg wit="#A">
+                  <lem wit="#msB">lan</lem>
+                  <rdg wit="#msA">
                      <gap reason="omitted"/>
                   </rdg>
                </app> prajñan<app>
-                  <lem wit="#B">prajñan</lem>
-                  <rdg wit="#A">pragñan</rdg>
+                  <lem wit="#msB">prajñan</lem>
+                  <rdg wit="#msA">pragñan</rdg>
                </app> sugih saṅkan rare. </p>
             <p n="17">hana brata aṅekapakṣa ṅaranya, amaṅan pisan sarahina, satahun samayanya, phalanya prih tәka, subhaga<app>
                   <lem type="norm">subhaga</lem>
-                  <rdg wit="#A">sumbaga</rdg>
-                  <rdg wit="#B">śubhaga</rdg>
+                  <rdg wit="#msA">sumbaga</rdg>
+                  <rdg wit="#msB">śubhaga</rdg>
                </app> kita siddha sakaryyanta.</p>
             <p n="18">hana brata bhūmipatra <app>
                   <lem type="conj">
                      <supplied reason="omitted">haranya,</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> amaṅan ajaṅ<app>
-                  <lem wit="#B">ajaṅ</lem>
-                  <rdg wit="#A">haja</rdg>
+                  <lem wit="#msB">ajaṅ</lem>
+                  <rdg wit="#msA">haja</rdg>
                </app> lәmah, satahun samayanya, phalanya kasambut<app>
-                  <lem wit="#A">kasambut</lem>
-                  <rdg wit="#B">kasambu</rdg>
+                  <lem wit="#msA">kasambut</lem>
+                  <rdg wit="#msB">kasambu</rdg>
                </app> de<app>
-                  <lem wit="#A">de</lem>
-                  <rdg wit="#B">deni</rdg>
+                  <lem wit="#msA">de</lem>
+                  <rdg wit="#msB">deni</rdg>
                </app> paṇḍita, imbuh lәmah, kadaṅ varga<app>
                   <lem type="emn">varga</lem>
-                  <rdg wit="#A #B">vragga</rdg>
+                  <rdg wit="#msA #msB">vragga</rdg>
                </app> akveh. </p>
             <p n="19">hana brata ṅinaṅ tan den valik, satahun samayanya, phalanya, cinavәtaniṅ istri, tan mandi kaṅ viṣya<app>
-                  <lem wit="#A">viṣya</lem>
-                  <rdg wit="#B">viyya</rdg>
+                  <lem wit="#msA">viṣya</lem>
+                  <rdg wit="#msB">viyya</rdg>
                </app>. </p>
             <p n="20">hana brata tan paṅinum bañu yen huvus amaṅan, phalanya kesyan<app>
                   <lem type="emn">kesyan</lem>
-                  <rdg wit="#A #B">hesen</rdg>
+                  <rdg wit="#msA #msB">hesen</rdg>
                </app> ṣakaryanta<app>
-                  <lem wit="#A">sakaryanta</lem>
-                  <rdg wit="#B">sakәryyanta</rdg>
+                  <lem wit="#msA">sakaryanta</lem>
+                  <rdg wit="#msB">sakәryyanta</rdg>
                </app>.</p>
             <p n="21">hana brata dhaṅ patra haranya, kamala<app>
                   <lem type="emn">kamala</lem>
-                  <rdg wit="#A #B">kama</rdg>
+                  <rdg wit="#msA #msB">kama</rdg>
                </app> patra gagaṅan tәka hivaknya<app>
-                  <lem wit="#A">hivaknya</lem>
-                  <rdg wit="#B">hivakna</rdg>
+                  <lem wit="#msA">hivaknya</lem>
+                  <rdg wit="#msB">hivakna</rdg>
                </app>, satahun<app>
-                  <lem wit="#A">satahun</lem>
-                  <rdg wit="#B">satahuna</rdg>
+                  <lem wit="#msA">satahun</lem>
+                  <rdg wit="#msB">satahuna</rdg>
                </app> samayanya <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> sugih, kāma agəṅ ,lituhayu paripurṇna. </p>
             <p n="22">hana brata turu pisan tan aturu manih<app>
-                  <lem wit="#A">manih</lem>
-                  <rdg wit="#B">mannah</rdg>
+                  <lem wit="#msA">manih</lem>
+                  <rdg wit="#msB">mannah</rdg>
                </app> yen huvus ataṅi,<app>
-                  <lem wit="#A">,</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">,</lem>
+                  <rdg wit="#msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> phalanya, tan kәnaniṅ<app>
-                  <lem wit="#A">kәnaniṅ</lem>
-                  <rdg wit="#B">akne</rdg>
+                  <lem wit="#msA">kәnaniṅ</lem>
+                  <rdg wit="#msB">akne</rdg>
                </app> gәriṅ<app>
-                  <lem wit="#B">gәriṅ</lem>
-                  <rdg wit="#A">agәriṁ</rdg>
+                  <lem wit="#msB">gәriṅ</lem>
+                  <rdg wit="#msA">agәriṁ</rdg>
                </app>.</p>
             <p n="23">hana brata<app>
-                  <lem wit="#B">ana brata</lem>
-                  <rdg wit="#A">
+                  <lem wit="#msB">ana brata</lem>
+                  <rdg wit="#msA">
                      <gap reason="omitted"/>
                   </rdg>
                </app> aṅekāhāra<app>
                   <lem type="emn">aṅekāhāra</lem>
-                  <rdg wit="#A #B">aṅeka</rdg>
+                  <rdg wit="#msA #msB">aṅeka</rdg>
                </app> haranya, amaṅan<app>
-                  <lem wit="#A">hamaṅan</lem>
-                  <rdg wit="#B">hamaṅana</rdg>
+                  <lem wit="#msA">hamaṅan</lem>
+                  <rdg wit="#msB">hamaṅana</rdg>
                </app> sakәpəl sarahina, pituṅ ve samayanya, phalanya prih tәka meṅgal<app>
                   <lem>meṅgal</lem>
-                  <rdg wit="#A">megaṅgal</rdg>
+                  <rdg wit="#msA">megaṅgal</rdg>
                </app>. </p>
             <p n="24">hana brata araditya<app>
                   <lem type="conj">araditya</lem>
-                  <rdg wit="#A">haranyithya</rdg>
-                  <rdg wit="#B">aharanyitya</rdg>
+                  <rdg wit="#msA">haranyithya</rdg>
+                  <rdg wit="#msB">aharanyitya</rdg>
                </app> haranya, aṅhanakәn<app>
                   <lem type="emn">an aṅkәn</lem>
-                  <rdg wit="#A #B">hanakәn</rdg>
+                  <rdg wit="#msA #msB">hanakәn</rdg>
                </app> raditya amatiāhāra <app>
                   <lem type="emn">amatiāhāra</lem>
-                  <rdg wit="#A #B">amatihara</rdg>
+                  <rdg wit="#msA #msB">amatihara</rdg>
                </app>, phalanya, avāk bajra, siddha mantri<app>
-                  <lem wit="#A">mantri</lem>
-                  <rdg wit="#B">matri</rdg>
+                  <lem wit="#msA">mantri</lem>
+                  <rdg wit="#msB">matri</rdg>
                </app>, jayeṅ<app>
-                  <lem wit="#A">jayeṅ</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">jayeṅ</lem>
+                  <rdg wit="#msB">
                      <hi rend="strikethrough">ha</hi>jayeṁ</rdg>
                </app> śatru. </p>
             <p n="25">hana brata tridhā<app>
                   <lem type="emn">tridhā</lem>
-                  <rdg wit="#A #B">trīdya</rdg>
+                  <rdg wit="#msA #msB">trīdya</rdg>
                </app> haranya, piṅ<app>
-                  <lem wit="#A">piṅ</lem>
-                  <rdg wit="#B">pi</rdg>
+                  <lem wit="#msA">piṅ</lem>
+                  <rdg wit="#msB">pi</rdg>
                </app> tiga adus arahina vәṅi<app>
-                  <lem wit="#B">adus arahina vṅi</lem>
-                  <rdg wit="#A">sarahina, hadyus· vṅi</rdg>
+                  <lem wit="#msB">adus arahina vṅi</lem>
+                  <rdg wit="#msA">sarahina, hadyus· vṅi</rdg>
                </app>, pituṅ lek samayanya<app>
-                  <lem wit="#A">,</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">,</lem>
+                  <rdg wit="#msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app>, phalanya suka magə̄ṅ, vicakṣaṇa, prāgivāka<app>
-                  <lem wit="#A">pragivaka</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">pragivaka</lem>
+                  <rdg wit="#msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> tan pamaḍa<app>
                   <lem type="emn">pamaḍa</lem>
-                  <rdg wit="#A #B">pameda</rdg>
+                  <rdg wit="#msA #msB">pameda</rdg>
                </app>. </p>
             <p n="26">hana brata tan kәneṅ<app>
-                  <lem wit="#A">kәneṁ</lem>
-                  <rdg wit="#B">akne</rdg>
+                  <lem wit="#msA">kәneṁ</lem>
+                  <rdg wit="#msB">akne</rdg>
                </app> dyus tan kәneṅ lәṅa, tigaṅ lek samayanya, phalanya, kveh<app>
-                  <lem wit="#A">kveh</lem>
-                  <rdg wit="#B">hakve</rdg>
+                  <lem wit="#msA">kveh</lem>
+                  <rdg wit="#msB">hakve</rdg>
                </app> vvaṅ<app>
-                  <lem wit="#A">vvaṁṅ</lem>
-                  <rdg wit="#B">rvaṁ</rdg>
+                  <lem wit="#msA">vvaṁṅ</lem>
+                  <rdg wit="#msB">rvaṁ</rdg>
                </app> asih<app>
-                  <lem wit="#A">asih</lem>
-                  <rdg wit="#B">asah</rdg>
+                  <lem wit="#msA">asih</lem>
+                  <rdg wit="#msB">asah</rdg>
                </app>.</p>
             <p n="27">hana brata trisamaya haranya, amaṅan oliha tigaṅ kәpәl sarahina, tәlu vәṅi<app>
                   <lem type="emn">vәṅi</lem>
-                  <rdg wit="#A">ṣavәṅi</rdg>
-                  <rdg wit="#B">śavṅi</rdg>
+                  <rdg wit="#msA">ṣavәṅi</rdg>
+                  <rdg wit="#msB">śavṅi</rdg>
                </app> samayanya, phalanya mulih iṅ svarga saṅ hyaṅ viṣṇu, sasarnya ajanma ri<app>
-                  <lem wit="#B">ri</lem>
-                  <rdg wit="#A">
+                  <lem wit="#msB">ri</lem>
+                  <rdg wit="#msA">
                      <gap reason="omitted"/>
                   </rdg>
                </app> lituhayu paripurṇa, sakiṅ<app>
-                  <lem wit="#A">sakiṅ</lem>
-                  <rdg wit="#B">saki</rdg>
+                  <lem wit="#msA">sakiṅ</lem>
+                  <rdg wit="#msB">saki</rdg>
                </app> kendran vicakṣaṇa. </p>
             <p n="28"> hana brata tan pamaṅan buṅkah, avrәtibya haranya, saṅ hyaṅ viśeṣa, sira nandaṅ bhāva, phalanya, abәcik ulahe, kacakra tan paśatru, pustaka lәṅәn<app>
-                  <lem wit="#A">l̥ṅən</lem>
-                  <rdg wit="#B">lәṅin</rdg>
+                  <lem wit="#msA">l̥ṅən</lem>
+                  <rdg wit="#msB">lәṅin</rdg>
                </app>.</p>
             <p n="29">hana brata araka aṅkən<app>
                   <lem type="emn">aṅkәn</lem>
-                  <rdg wit="#A #B">nakәn</rdg>
+                  <rdg wit="#msA #msB">nakәn</rdg>
                </app> vulan, satahun samayanya, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> siddha sakaryyanta, lituhayu subhaga kita. </p>
             <p n="30">hana brata ṅupavāsa<app>
                   <lem type="norm">ṅupavāsa</lem>
-                  <rdg wit="#A">ṅupavasa</rdg>
-                  <rdg wit="#B">ṅupvasa</rdg>
+                  <rdg wit="#msA">ṅupavasa</rdg>
+                  <rdg wit="#msB">ṅupvasa</rdg>
                </app> pituṅ vәṅi samayanya, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> siṅ<app>
                   <lem type="emn">siṅ</lem>
-                  <rdg wit="#A #B">si</rdg>
+                  <rdg wit="#msA #msB">si</rdg>
                </app> sakarәp katәkan, vīrya, lavan kinasihani hyaṅ. </p>
             <p n="31">hana brata ṅumbhakarṇa ṅaranya, aturu tan pālahan, nәhәr<app>
-                  <lem wit="#A">nәhәr</lem>
-                  <rdg wit="#B">nag(ә)r </rdg>
+                  <lem wit="#msA">nәhәr</lem>
+                  <rdg wit="#msB">nag(ә)r </rdg>
                </app> aṅupavaśa, tәluṅ tahun samayanya, phalanya mulih iṅ<app>
-                  <lem wit="#A">iṅ</lem>
-                  <rdg wit="#B">i</rdg>
+                  <lem wit="#msA">iṅ</lem>
+                  <rdg wit="#msB">i</rdg>
                </app> svarga<app>
-                  <lem wit="#A">svarga</lem>
-                  <rdg wit="#B">sargga</rdg>
+                  <lem wit="#msA">svarga</lem>
+                  <rdg wit="#msB">sargga</rdg>
                </app> saṅ hyaṅ rudra, sasarnya, ajanma mantrī labda ri saṅ prabhu. </p>
             <p n="32">hana brata turu sumaṇdhah, tigaṅ tahun samayanya<app>
                   <lem type="norm">sumaṇdhah</lem>
-                  <rdg wit="#A">sumaṇdha</rdg>
-                  <rdg wit="#B">suma_ _ _ _ _ _ _ _ _ _ lac.</rdg>
+                  <rdg wit="#msA">sumaṇdha</rdg>
+                  <rdg wit="#msB">suma_ _ _ _ _ _ _ _ _ _ lac.</rdg>
                </app>, phalanya labdhavara, mandi svara, anurāga kita ri sarva janma.</p>
             <p n="33">hana brata amaṅan roṇḍon<app>
                   <lem type="norm">rondhon</lem>
-                  <rdg wit="#A">
+                  <rdg wit="#msA">
                      <hi rend="subscript">ruṇ</hi>dhon</rdg>
-                  <rdg wit="#B">rodhon</rdg>
+                  <rdg wit="#msB">rodhon</rdg>
                </app> sarahup sinaṅga ri taṅan kiva<app>
-                  <lem wit="#A">kiva</lem>
-                  <rdg wit="#B">kivah</rdg>
+                  <lem wit="#msA">kiva</lem>
+                  <rdg wit="#msB">kivah</rdg>
                </app>, vinoran kalapa tinunu, tan ahimbhuh<app>
-                  <lem wit="#A">vinoran kalapa tinunu, tan ahimbhuḥ</lem>
-                  <rdg wit="#B">vi _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ lac.</rdg>
+                  <lem wit="#msA">vinoran kalapa tinunu, tan ahimbhuḥ</lem>
+                  <rdg wit="#msB">vi _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ lac.</rdg>
                </app> salavasnya, amadma haranya<app>
-                  <lem wit="#B">haranya</lem>
-                  <rdg wit="#A">ṅaranya</rdg>
+                  <lem wit="#msB">haranya</lem>
+                  <rdg wit="#msA">ṅaranya</rdg>
                </app>, saṅ hyaṅ tampur i<app>
-                  <lem wit="#B">tampuri</lem>
-                  <rdg wit="#A">dha<hi rend="superscript">m</hi>purit</rdg>
+                  <lem wit="#msB">tampuri</lem>
+                  <rdg wit="#msA">dha<hi rend="superscript">m</hi>purit</rdg>
                </app> rāt<app>
-                  <lem wit="#B">rat</lem>
-                  <rdg wit="#A">lac.</rdg>
+                  <lem wit="#msB">rat</lem>
+                  <rdg wit="#msA">lac.</rdg>
                </app> sira nurun abrata<app>
                   <lem type="emn">abrata</lem>
-                  <rdg wit="#A #B">brata</rdg>
+                  <rdg wit="#msA #msB">brata</rdg>
                </app>, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> pamuluniṅ<app>
-                  <lem wit="#A">niṁ</lem>
-                  <rdg wit="#B">ni</rdg>
+                  <lem wit="#msA">niṁ</lem>
+                  <rdg wit="#msB">ni</rdg>
                </app> jariji pinakakuku, tәhәr<app>
-                  <lem wit="#A">tәhәr</lem>
-                  <rdg wit="#B">hagər</rdg>
+                  <lem wit="#msA">tәhәr</lem>
+                  <rdg wit="#msB">hagər</rdg>
                </app> kinasihani rāt kita. </p>
             <p n="34">hana brata amaṅan tumpəṅ ivaknya<app>
-                  <lem wit="#A">ivaknya</lem>
-                  <rdg wit="#B">hivvakna</rdg>
+                  <lem wit="#msA">ivaknya</lem>
+                  <rdg wit="#msB">hivvakna</rdg>
                </app> sarva śuci, tigaṅ vәṅi samayanya, akiryasadā<app>
-                  <lem wit="#A">akiryasada</lem>
-                  <rdg wit="#B">akiryapada</rdg>
+                  <lem wit="#msA">akiryasada</lem>
+                  <rdg wit="#msB">akiryapada</rdg>
                </app> ṅaranya, hyaṅ iśvara hyaṅnya, phalanya<app>
-                  <lem wit="#A">phalanya</lem>
-                  <rdg wit="#B">phala</rdg>
+                  <lem wit="#msA">phalanya</lem>
+                  <rdg wit="#msB">phala</rdg>
                </app> enak ruṅunya<app>
                   <lem type="norm">ruṅunya</lem>
-                  <rdg wit="#A">ruṅonya</rdg>
-                  <rdg wit="#B">ulvaniṅ</rdg>
+                  <rdg wit="#msA">ruṅonya</rdg>
+                  <rdg wit="#msB">ulvaniṅ</rdg>
                </app> aṅiduṅ. </p>
             <p n="35">hana brata aṅasva<app>
                   <lem type="emn">aṅasva</lem>
-                  <rdg wit="#A #B">anasva</rdg>
+                  <rdg wit="#msA #msB">anasva</rdg>
                </app> ṅaranya, tan amaṅan skul iṅiṅ<app>
                   <lem type="conj">iṅiṅ</lem>
-                  <rdg wit="#A #B">iṅi</rdg>
+                  <rdg wit="#msA #msB">iṅi</rdg>
                </app> kevala skul kalavan uyah,<app>
-                  <lem wit="#A">uyah,</lem>
-                  <rdg wit="#B">uyah</rdg>
+                  <lem wit="#msA">uyah,</lem>
+                  <rdg wit="#msB">uyah</rdg>
                </app> śatahun ṣamayanya kalavan tigaṅ lek, bhāṭārī rājalakṣmī hyaṅnya, aguṅ kasiddhanya, subhaga kita.</p>
             <p n="36">hana brata madhu<app>
                   <lem type="emn">madhu</lem>
-                  <rdg wit="#A">maṇdha</rdg>
-                  <rdg wit="#B">maṇdhu</rdg>
+                  <rdg wit="#msA">maṇdha</rdg>
+                  <rdg wit="#msB">maṇdhu</rdg>
                </app> ṅaranya, amaṅan<app>
                   <lem type="emn">hamaṅan</lem>
-                  <rdg wit="#A">hamava</rdg>
-                  <rdg wit="#B">hamaṅ</rdg>
+                  <rdg wit="#msA">hamava</rdg>
+                  <rdg wit="#msB">hamaṅ</rdg>
                </app> kunir arәṅ, tumpeṅ sәganya, phalanya, yovana prajñan. </p>
             <p n="37">hana brata bhū harәṅ<app>
                   <lem type="norm">bhū harәṅ</lem>
-                  <rdg wit="#A">bhu har̥ṁ</rdg>
-                  <rdg wit="#B">tabhu harәṅ</rdg>
+                  <rdg wit="#msA">bhu har̥ṁ</rdg>
+                  <rdg wit="#msB">tabhu harәṅ</rdg>
                </app> haranya, yen amaṅan agugut uyah arәṅ rumuhun, tigaṅ tahun samayanya, bhāṭārī saṅgī hyaṅnya<app>
-                  <lem wit="#A">bhaṭari saṅgī hyaṁnya</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">bhaṭari saṅgī hyaṁnya</lem>
+                  <rdg wit="#msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app>, phalanya mol amirәṅ<app>
                   <lem type="emn">amirәṅ</lem>
-                  <rdg wit="#A #B">perәṅ</rdg>
+                  <rdg wit="#msA #msB">perәṅ</rdg>
                </app> sapolahiṅ<app>
-                  <lem wit="#A">sapolahiṁ</lem>
-                  <rdg wit="#B">sapolahi</rdg>
+                  <lem wit="#msA">sapolahiṁ</lem>
+                  <rdg wit="#msB">sapolahi</rdg>
                </app> jagat, subhaga kita. </p>
             <p n="38">hana bratālandhəp<app>
                   <lem type="emn">bratālandhәp</lem>
-                  <rdg wit="#A">brata tandhəp</rdg>
-                  <rdg wit="#B">brata ndhəp</rdg>
+                  <rdg wit="#msA">brata tandhəp</rdg>
+                  <rdg wit="#msB">brata ndhəp</rdg>
                </app> haranya, yan amaṅan agugut uyah rumuhun, bhaṭāra viṣnu hyaṅnya, pituṅ tahun samayanya, phalanya, kedhəp aṅucap kapintuhu, akeh<app>
-                  <lem wit="#A">akeh</lem>
-                  <rdg wit="#B">keh</rdg>
+                  <lem wit="#msA">akeh</lem>
+                  <rdg wit="#msB">keh</rdg>
                </app> asih avlas, deva masih iri<app>
                   <lem type="emn">iri</lem>
-                  <rdg wit="#A #B">irikiri</rdg>
+                  <rdg wit="#msA #msB">irikiri</rdg>
                </app> kita. </p>
             <p n="39">hana brata añjalāntara<app>
-                  <lem wit="#A">hañjalantara</lem>
-                  <rdg wit="#B">ha<hi rend="strikethrough">saṅ</hi>jalantara</rdg>
+                  <lem wit="#msA">hañjalantara</lem>
+                  <rdg wit="#msB">ha<hi rend="strikethrough">saṅ</hi>jalantara</rdg>
                </app> ṅaranya, tan pamaṅana vija kәla<app>
                   <lem type="emn">kәla</lem>
-                  <rdg wit="#B">kela</rdg>
-                  <rdg wit="#A">le</rdg>
+                  <rdg wit="#msB">kela</rdg>
+                  <rdg wit="#msA">le</rdg>
                </app>, voh vohan tan matəṅ deniṅ apuy, anaṅkən<app>
                   <lem type="emn">anaṅkən</lem>
-                  <rdg wit="#A #B">anakәn</rdg>
+                  <rdg wit="#msA #msB">anakәn</rdg>
                </app> taṅgaliṅ<app>
                   <lem type="emn">taṅgaliṅ</lem>
-                  <rdg wit="#A">tagaliṁ</rdg>
-                  <rdg wit="#B">tagali</rdg>
+                  <rdg wit="#msA">tagaliṁ</rdg>
+                  <rdg wit="#msB">tagali</rdg>
                </app> kasaṅa amvitana<app>
                   <lem type="emn">amvitana</lem>
-                  <rdg wit="#A #B">amitana</rdg>
+                  <rdg wit="#msA #msB">amitana</rdg>
                </app>, lakṣaṇakәna tigaṅ māsa kabeh Asadha oliha ro vәṅi ri kaśa, tigaṅ tahun samayanya, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> kasiddhan kasadguṇan<app>
-                  <lem wit="#A">kasiddha<hi rend="superscript">n</hi> kasaddh·gunan</lem>
-                  <rdg wit="#B">_ _ _ _ _ _ _ _ _n  </rdg>
+                  <lem wit="#msA">kasiddha<hi rend="superscript">n</hi> kasaddh·gunan</lem>
+                  <rdg wit="#msB">_ _ _ _ _ _ _ _ _n  </rdg>
                </app> kaprajñan<app>
-                  <lem wit="#B">kaprajñan</lem>
-                  <rdg wit="#A">kapragñan</rdg>
+                  <lem wit="#msB">kaprajñan</lem>
+                  <rdg wit="#msA">kapragñan</rdg>
                </app>, kavīryan kasubhagan<app>
-                  <lem wit="#B">kasubhagan</lem>
-                  <rdg wit="#A">kasumbhagan</rdg>
+                  <lem wit="#msB">kasubhagan</lem>
+                  <rdg wit="#msA">kasumbhagan</rdg>
                </app> mas pirak yadyastun tәkaniṅ kamokṣan. </p>
             <p n="40">hana brata <app>
                   <lem>amūlāhāra</lem>
                   <note>Another possibility for this conjecture is <foreign>amalasara</foreign> because of the explanation of the text containing one eats <foreign>palasara</foreign> (<foreign>Alyxia stellata</foreign>).</note>
                </app> ṅaranya, amaṅan palasara, saṅ hyaṅ brahmā hyaṅnya<app>
                   <lem type="norm">saṅ hyaṅ brahmā hyaṅnya</lem>
-                  <rdg wit="#A">saṁ hyaṁ brāhma hyaṁnya</rdg>
-                  <rdg wit="#B">(saṁ hyaṁ brahma hyaṁnya)</rdg>
+                  <rdg wit="#msA">saṁ hyaṁ brāhma hyaṁnya</rdg>
+                  <rdg wit="#msB">(saṁ hyaṁ brahma hyaṁnya)</rdg>
                </app>, phalanya, mulih iṅ svarga<app>
                   <lem type="emn">svarga</lem>
-                  <rdg wit="#A">svagga</rdg>
-                  <rdg wit="#B">sargga</rdg>
+                  <rdg wit="#msA">svagga</rdg>
+                  <rdg wit="#msB">sargga</rdg>
                </app> bhaṭāra guru, saṅ hyaṅ śivapada<app>
                   <lem type="emn">śivapada</lem>
-                  <rdg wit="#A #B">śivahpada</rdg>
+                  <rdg wit="#msA #msB">śivahpada</rdg>
                </app>, sasarnya ajanma ri viku śakti, sugih ri janmanya. </p>
             <p n="41">hana brata <hi rend="italic">adhūma</hi>
                <app>
                   <lem type="emn">adhūma</lem>
-                  <rdg wit="#B">hadurmma</rdg>
-                  <rdg wit="#A">handhuṙmma</rdg>
+                  <rdg wit="#msB">hadurmma</rdg>
+                  <rdg wit="#msA">handhuṙmma</rdg>
                </app> ṅaranya, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> mulih mariṅ<app>
-                  <lem wit="#A">mariṁ</lem>
-                  <rdg wit="#B">mari</rdg>
+                  <lem wit="#msA">mariṁ</lem>
+                  <rdg wit="#msB">mari</rdg>
                </app>
                <app>
                   <lem type="conj">
                      <supplied reason="omitted">svarga</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> hyaṅ iśvara, sasarnya ajanma riṅ<app>
                   <lem type="norm">riṅ</lem>
-                  <rdg wit="#A">riṁ</rdg>
-                  <rdg wit="#B">ri</rdg>
+                  <rdg wit="#msA">riṁ</rdg>
+                  <rdg wit="#msB">ri</rdg>
                </app> kulaputra. </p>
             <p n="42">hana brata alavar haranya, saṅ hyaṅ śaṅkara hyaṅnya<app>
-                  <lem wit="#B">hyaṅnya</lem>
-                  <rdg wit="#A">yaṁnya</rdg>
+                  <lem wit="#msB">hyaṅnya</lem>
+                  <rdg wit="#msA">yaṁnya</rdg>
                </app>, phalanya<app>
                   <lem type="conj">phalanya</lem>
-                  <rdg wit="#A #B">sasarnya</rdg>
+                  <rdg wit="#msA #msB">sasarnya</rdg>
                </app> ajanma ri lituhayu, prajñan kita.</p>
             <p n="43">hana brata amaṅan luṅgahi campaka anәrus<app>
                   <lem type="conj">anәrus</lem>
-                  <rdg wit="#B">bhasirus</rdg>
-                  <rdg wit="#A">bharu</rdg>
+                  <rdg wit="#msB">bhasirus</rdg>
+                  <rdg wit="#msA">bharu</rdg>
                </app> pucuke<app>
-                  <lem wit="#A">pucuke</lem>
-                  <rdg wit="#B">pucukeh</rdg>
+                  <lem wit="#msA">pucuke</lem>
+                  <rdg wit="#msB">pucukeh</rdg>
                </app>, saṅ hyaṅ śambhu<app>
-                  <lem wit="#A">sambhu</lem>
-                  <rdg wit="#B">masambha</rdg>
+                  <lem wit="#msA">sambhu</lem>
+                  <rdg wit="#msB">masambha</rdg>
                </app> hyaṅnya, phalanya, mulih<app>
-                  <lem wit="#B">mulih</lem>
-                  <rdg wit="#A">lihi</rdg>
+                  <lem wit="#msB">mulih</lem>
+                  <rdg wit="#msA">lihi</rdg>
                </app> iṅ svarga<app>
                   <lem type="norm">svarga</lem>
-                  <rdg wit="#A">svaṙgga</rdg>
-                  <rdg wit="#B">sargga</rdg>
+                  <rdg wit="#msA">svaṙgga</rdg>
+                  <rdg wit="#msB">sargga</rdg>
                </app> bhaṭāra guru, mvaṅ ika bhaṭāra śiva<app>
                   <lem type="emn">śiva</lem>
-                  <rdg wit="#A #B">śivah</rdg>
+                  <rdg wit="#msA #msB">śivah</rdg>
                </app>. </p>
             <p n="44">hana brata amaṅan jala<app>
-                  <lem wit="#A">jala</lem>
-                  <rdg wit="#B">(ja)la</rdg>
+                  <lem wit="#msA">jala</lem>
+                  <rdg wit="#msB">(ja)la</rdg>
                </app> pucukiṅ alaṅ-alaṅ, tigaṅ lek samayanya, phalanya, siddha mantri avāk bajra, jayeṅ<app>
-                  <lem wit="#A">jayeṁ</lem>
-                  <rdg wit="#B">jaya</rdg>
+                  <lem wit="#msA">jayeṁ</lem>
+                  <rdg wit="#msB">jaya</rdg>
                </app> śatru. </p>
             <p n="45">hana brata<app>
-                  <lem wit="#A">brata</lem>
-                  <rdg wit="#B">bra(ta)</rdg>
+                  <lem wit="#msA">brata</lem>
+                  <rdg wit="#msB">bra(ta)</rdg>
                </app> tan<app>
-                  <lem wit="#A">tan</lem>
-                  <rdg wit="#B">(ta)n</rdg>
+                  <lem wit="#msA">tan</lem>
+                  <rdg wit="#msB">(ta)n</rdg>
                </app> paṅinum bañu yan maṅan tan kasәrәtan<app>
-                  <lem wit="#A">kasr̥tan</lem>
-                  <rdg wit="#B">kasaratan</rdg>
+                  <lem wit="#msA">kasr̥tan</lem>
+                  <rdg wit="#msB">kasaratan</rdg>
                </app>, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> siṅ<app>
-                  <lem wit="#A">siṁ</lem>
-                  <rdg wit="#B">si</rdg>
+                  <lem wit="#msA">siṁ</lem>
+                  <rdg wit="#msB">si</rdg>
                </app> sādhyanta prih tәka meṅgal, pituṅ<app>
-                  <lem wit="#A">pituṁ</lem>
-                  <rdg wit="#B">pitu</rdg>
+                  <lem wit="#msA">pituṁ</lem>
+                  <rdg wit="#msB">pitu</rdg>
                </app> tahun samayanya.</p>
             <p n="46">hana brata lәgaprāṇa haranya, yan amaṅan asaṇdhiṅ<app>
-                  <lem wit="#A">asaṇdhiṁ</lem>
-                  <rdg wit="#B">asaṇdhi</rdg>
+                  <lem wit="#msA">asaṇdhiṁ</lem>
+                  <rdg wit="#msB">asaṇdhi</rdg>
                </app> dhuhuṅ, satahun ṣamayanya, lavan pituṅ<app>
-                  <lem wit="#A">pituṅ</lem>
-                  <rdg wit="#B">pitu</rdg>
+                  <lem wit="#msA">pituṅ</lem>
+                  <rdg wit="#msB">pitu</rdg>
                </app> lek, saṅ hyaṅ rudra hyaṅnya, phalanya, akveh vvaṅ tumalaṅ jīva, akveh vәlas asih.</p>
             <p n="47">hana brata anūtakən vulan, yan taṅgal<app>
-                  <lem wit="#A">taṅgal</lem>
-                  <rdg wit="#B">ta(ṅg)al</rdg>
+                  <lem wit="#msA">taṅgal</lem>
+                  <rdg wit="#msB">ta(ṅg)al</rdg>
                </app> pisan ṣakәpəl olihanta maṅan, lakṣanakәna imbuh<app>
-                  <lem wit="#A">himbuḥ</lem>
-                  <rdg wit="#B">himbu</rdg>
+                  <lem wit="#msA">himbuḥ</lem>
+                  <rdg wit="#msB">himbu</rdg>
                </app> taṅgal rahina, makahiṅan<app>
-                  <lem wit="#B">makahiṅan</lem>
-                  <rdg wit="#A">maṅgkahiṅan</rdg>
+                  <lem wit="#msB">makahiṅan</lem>
+                  <rdg wit="#msA">maṅgkahiṅan</rdg>
                </app> purṇama, 14, palvaṅ<app>
-                  <lem wit="#A">palvaṅ</lem>
-                  <rdg wit="#B">palva</rdg>
+                  <lem wit="#msA">palvaṅ</lem>
+                  <rdg wit="#msB">palva</rdg>
                </app> śuddha kәpəlta, makahīṅan<app>
                   <lem type="emn">makahiṅan</lem>
-                  <rdg wit="#A">maṅkahiṅan</rdg>
-                  <rdg wit="#B">maṅgahīṅan</rdg>
+                  <rdg wit="#msA">maṅkahiṅan</rdg>
+                  <rdg wit="#msB">maṅgahīṅan</rdg>
                </app> panilәman, tigaṅ<app>
-                  <lem wit="#A">tigaṁ</lem>
-                  <rdg wit="#B">tiga</rdg>
+                  <lem wit="#msA">tigaṁ</lem>
+                  <rdg wit="#msB">tiga</rdg>
                </app> lek samayanya, saṅ hyaṅ indra devatanya, phalanya, prajñan viveka<app>
-                  <lem wit="#B">viveka</lem>
-                  <rdg wit="#A">
+                  <lem wit="#msB">viveka</lem>
+                  <rdg wit="#msA">
                      <gap reason="omitted"/>
                   </rdg>
                </app>, siddha sakaryanta vruh agamәl aṅiduṅ. </p>
             <p n="48">hana brata keta ṅaranya, amaṅan sakәpəl sarahina, pituṅ vәṅi samayanya, phalanya<app>
-                  <lem wit="#B">phalanya</lem>
-                  <rdg wit="#A">phalana</rdg>
+                  <lem wit="#msB">phalanya</lem>
+                  <rdg wit="#msA">phalana</rdg>
                </app> prih tәka. </p>
             <p n="49">hana brata amāndava ṅaranya, oliha limaṅ kәpəl sarahina, limaṅ lek samayanya, <app>
                   <lem type="conj">
                      <supplied reason="omitted">phalanya</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> kasadguṇan kita kasambegan<app>
                   <lem type="emn">kasambegan</lem>
-                  <rdg wit="#A #B">kasambhagan</rdg>
+                  <rdg wit="#msA #msB">kasambhagan</rdg>
                </app> paripurṇa. </p>
             <p n="50">hana brata amaṅan pituṅ kәpəl sarahina, pataṅ lek samayanya, phalanyāmrәddhyakən<app>
                   <lem type="emn">phalanyāmrәddhyakən</lem>
-                  <rdg wit="#A #B">phalanya mr̥ddhyakən</rdg>
+                  <rdg wit="#msA #msB">phalanya mr̥ddhyakən</rdg>
                </app> kita. </p>
             <p n="51">hana brata, tan kәneṅ<app>
                   <lem type="emn">kәneṅ</lem>
-                  <rdg wit="#A #B">kәne</rdg>
+                  <rdg wit="#msA #msB">kәne</rdg>
                </app> lәṅa, tigaṅ lek<app>
                   <lem type="emn">lek</lem>
-                  <rdg wit="#A #B">kle</rdg>
+                  <rdg wit="#msA #msB">kle</rdg>
                </app> samayanya, phalanya, lituhayu paripurnṇa vicakṣaṇa, kinasihan iṅ rat.</p>
             <p n="52">hana brata tan paṅinaṅ, satahun ṣamayanya, phalanya, mebər rūpanya akveh ahyun i<app>
                   <lem type="emn">ahyuni</lem>
-                  <rdg wit="#A #B">hayuni</rdg>
+                  <rdg wit="#msA #msB">hayuni</rdg>
                </app> ri kita. </p>
             <p n="53">hana brata sada ṅaranya, yan amaṅan ve<app>
-                  <lem wit="#A">ve</lem>
-                  <rdg wit="#B">(ve)</rdg>
+                  <lem wit="#msA">ve</lem>
+                  <rdg wit="#msB">(ve)</rdg>
                </app> kəmbaṅ rumuhun, tәluṅ<app>
                   <lem type="emn">tәluṅ</lem>
-                  <rdg wit="#A">tlu</rdg>
-                  <rdg wit="#B">tmu</rdg>
+                  <rdg wit="#msA">tlu</rdg>
+                  <rdg wit="#msB">tmu</rdg>
                </app> tahun samayanya, hyaṅ asmara hyaṅnya, phalanya akveh harәpiṅ<app>
-                  <lem wit="#A">arәpiṅ</lem>
+                  <lem wit="#msA">arәpiṅ</lem>
                </app> kita.</p>
             <p n="54">hana brata mavidu<app>
                   <lem type="emn">mavidu</lem>
-                  <rdg wit="#A #B">mwida</rdg>
+                  <rdg wit="#msA #msB">mwida</rdg>
                </app> ṅaranya, tan amaṅan sәga vadhaṅ, pituṅ<app>
-                  <lem wit="#A">pituṁ</lem>
-                  <rdg wit="#B">pitu</rdg>
+                  <lem wit="#msA">pituṁ</lem>
+                  <rdg wit="#msB">pitu</rdg>
                </app> lek samayanya, phalanya akeh ahyun i kita. </p>
             <p n="55">hana brata sabha ṅaranya, taṅgal<app>
-                  <lem wit="#A">taṁgal</lem>
-                  <rdg wit="#B">tagal</rdg>
+                  <lem wit="#msA">taṁgal</lem>
+                  <rdg wit="#msB">tagal</rdg>
                </app> piṅ<app>
-                  <lem wit="#A">piṁ</lem>
-                  <rdg wit="#B">pi</rdg>
+                  <lem wit="#msA">piṁ</lem>
+                  <rdg wit="#msB">pi</rdg>
                </app> rva vlasiṅ<app>
-                  <lem wit="#A">vlasiṁ</lem>
-                  <rdg wit="#B">vlasi</rdg>
+                  <lem wit="#msA">vlasiṁ</lem>
+                  <rdg wit="#msB">vlasi</rdg>
                </app> kapitu, tan kәneṅ mәrәm<app>
-                  <lem wit="#B">mr̥m</lem>
-                  <rdg wit="#A">yamum</rdg>
+                  <lem wit="#msB">mr̥m</lem>
+                  <rdg wit="#msA">yamum</rdg>
                </app>, phalanya, avāk bajra jayeṅ<app>
-                  <lem wit="#A">jayeṁ</lem>
-                  <rdg wit="#B">jaya</rdg>
+                  <lem wit="#msA">jayeṁ</lem>
+                  <rdg wit="#msB">jaya</rdg>
                </app> śatru kedhәp i rat, prajñan bisa gamәl aṅiduṅ, mas pirak tәka kveh kәbo sapi, kramanya tәṅah vәṅi aṅadәg aṅekapada, tan kәneṅ turu, aguṇa siddhi kita. </p>
             <p n="56">hana brata amañca<app>
-                  <lem wit="#A">hamañca</lem>
-                  <rdg wit="#B">mañca</rdg>
+                  <lem wit="#msA">hamañca</lem>
+                  <rdg wit="#msB">mañca</rdg>
                </app> mona<app>
-                  <lem wit="#A">mona</lem>
-                  <rdg wit="#B">
+                  <lem wit="#msA">mona</lem>
+                  <rdg wit="#msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app>, mona maṅan, mona nanapuh<app>
-                  <lem wit="#B">nanapuh</lem>
-                  <rdg wit="#A">nanapun</rdg>
+                  <lem wit="#msB">nanapuh</lem>
+                  <rdg wit="#msA">nanapun</rdg>
                </app>, mona bhasma, mona susur<app>
                   <lem type="emn">susur</lem>
-                  <rdg wit="#A #B">susar</rdg>
+                  <rdg wit="#msA #msB">susar</rdg>
                </app>, mona ṅisiṅ,</p>
             <p n="56.1">mona maṅan,<app>
                   <lem type="conj">mona maṅan</lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> phalanya, kināptyan<app>
                   <lem type="conj">kinaptiyan</lem>
-                  <rdg wit="#A #B">kinuptiṅan</rdg>
+                  <rdg wit="#msA #msB">kinuptiṅan</rdg>
                </app>, viryavan<app>
                   <lem type="emn">viryavan</lem>
-                  <rdg wit="#A #B">viyyavan</rdg>
+                  <rdg wit="#msA #msB">viyyavan</rdg>
                </app> bahu siṣya<app>
                   <lem type="emn">siṣya</lem>
-                  <rdg wit="#A #B">sikṣya</rdg>
+                  <rdg wit="#msA #msB">sikṣya</rdg>
                </app>, dīrghāyuṣa, tigaṅ tahun samayanya, saṅ hyaṅ rudra hyaṅnya.</p>
             <p n="56.2">phalani<app>
-                  <lem wit="#A">phalani</lem>
-                  <rdg wit="#B">phalanya</rdg>
+                  <lem wit="#msA">phalani</lem>
+                  <rdg wit="#msB">phalanya</rdg>
                </app> mona nanapuh<app>
                   <lem type="emn">nanapuh</lem>
-                  <rdg wit="#A #B">nanapu</rdg>
+                  <rdg wit="#msA #msB">nanapu</rdg>
                </app>, kinasihaniṅ viku, saṅ prabhu<app>
-                  <lem wit="#A">prabhu</lem>
-                  <rdg wit="#B">prabha</rdg>
+                  <lem wit="#msA">prabhu</lem>
+                  <rdg wit="#msB">prabha</rdg>
                </app> asih, lituhayu.</p>
             <p n="56.3">phalani mona bhasma mulih iṅ<app>
-                  <lem wit="#B">iṅ</lem>
-                  <rdg wit="#A">i</rdg>
+                  <lem wit="#msB">iṅ</lem>
+                  <rdg wit="#msA">i</rdg>
                </app> svarga<app>
-                  <lem wit="#A">svarga</lem>
-                  <rdg wit="#B">sargga</rdg>
+                  <lem wit="#msA">svarga</lem>
+                  <rdg wit="#msB">sargga</rdg>
                </app> bhaṭāra guru, sasarnya ajanma<app>
-                  <lem wit="#A">hajanma</lem>
-                  <rdg wit="#B">hajan _ </rdg>
+                  <lem wit="#msA">hajanma</lem>
+                  <rdg wit="#msB">hajan _ </rdg>
                </app> ri <app>
                   <lem type="conj">
                      <supplied reason="omitted">viku</supplied>
                   </lem>
-                  <rdg wit="#A #B">
+                  <rdg wit="#msA #msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app> bahu śiṣya<app>
                   <lem type="emn">śiṣya</lem>
-                  <rdg wit="#A">sikṣa</rdg>
-                  <rdg wit="#B">śikṣa</rdg>
+                  <rdg wit="#msA">sikṣa</rdg>
+                  <rdg wit="#msB">śikṣa</rdg>
                </app>.</p>
             <p n="56.4">phalani<app>
-                  <lem wit="#A">phalani</lem>
-                  <rdg wit="#B">phalaniṅ</rdg>
+                  <lem wit="#msA">phalani</lem>
+                  <rdg wit="#msB">phalaniṅ</rdg>
                </app> mona susur lituhayu prajñan<app>
                   <lem type="emn">prajñan</lem>
-                  <rdg wit="#A">jñan</rdg>
-                  <rdg wit="#B">jña(n)</rdg>
+                  <rdg wit="#msA">jñan</rdg>
+                  <rdg wit="#msB">jña(n)</rdg>
                </app>, bisa agamәl<app>
                   <lem type="emn">agamәl</lem>
-                  <rdg wit="#A #B">gamәl</rdg>
+                  <rdg wit="#msA #msB">gamәl</rdg>
                </app> aṅiduṅ, moghāṅjanma<app>
                   <lem type="emn">moghāṅjanma</lem>
-                  <rdg wit="#A #B">moghaṅti janma</rdg>
+                  <rdg wit="#msA #msB">moghaṅti janma</rdg>
                </app>.</p>
             <p n="56.5">phalani<app>
-                  <lem wit="#B">phalani</lem>
-                  <rdg wit="#A">phalanyiṅ</rdg>
+                  <lem wit="#msB">phalani</lem>
+                  <rdg wit="#msA">phalanyiṅ</rdg>
                </app> mona ṅisiṅ siddha prajñan prih<app>
-                  <lem wit="#B">prih</lem>
-                  <rdg wit="#A">pih</rdg>
+                  <lem wit="#msB">prih</lem>
+                  <rdg wit="#msA">pih</rdg>
                </app> tәka. </p>
             <p n="57">nihan kālanira hanakən<app>
                   <lem type="emn">hanakən</lem>
-                  <rdg wit="#A #B">nakən</rdg>
+                  <rdg wit="#msA #msB">nakən</rdg>
                </app>  brata<app>
-                  <lem wit="#A">brata</lem>
-                  <rdg wit="#B">brataha</rdg>
+                  <lem wit="#msA">brata</lem>
+                  <rdg wit="#msB">brataha</rdg>
                </app> adyusa<app>
                   <lem type="emn">adyusa</lem>
-                  <rdg wit="#A">hadyus</rdg>
-                  <rdg wit="#B">jadyus</rdg>
+                  <rdg wit="#msA">hadyus</rdg>
+                  <rdg wit="#msB">jadyus</rdg>
                </app>, akuramasa, aśucya,<app>
-                  <lem wit="#A">aśucya</lem>
-                  <rdg wit="#B">aśuci</rdg>
+                  <lem wit="#msA">aśucya</lem>
+                  <rdg wit="#msB">aśuci</rdg>
                </app> asisiga<app>
                   <lem type="norm">asisiga</lem>
-                  <rdg wit="#B">asisig</rdg>
-                  <rdg wit="#A">
+                  <rdg wit="#msB">asisig</rdg>
+                  <rdg wit="#msA">
                      <hi rend="strikethrough">sa</hi>haśiṣiga</rdg>
                </app>, aririhana, </p>
             <p>iti<app>
-                  <lem wit="#A">Iti</lem>
-                  <rdg wit="#B">itih</rdg>
+                  <lem wit="#msA">Iti</lem>
+                  <rdg wit="#msB">itih</rdg>
                </app> saṅ hyaṅ<app>
-                  <lem wit="#A">hyaṅ</lem>
-                  <rdg wit="#B">(hyaṅ)</rdg>
+                  <lem wit="#msA">hyaṅ</lem>
+                  <rdg wit="#msB">(hyaṅ)</rdg>
                </app> tattva brata, hayva vera cavuh bratanira, dharma rahasya<app>
-                  <lem wit="#A">rahasya</lem>
-                  <rdg wit="#B">rahayu</rdg>
+                  <lem wit="#msA">rahasya</lem>
+                  <rdg wit="#msB">rahayu</rdg>
                </app> tәmən, </p>
             <ab type="colophon">iti<app>
                   <lem type="emn">iti</lem>
-                  <rdg wit="#A #B">itih</rdg>
+                  <rdg wit="#msA #msB">itih</rdg>
                </app> tattva brata, samapta tәlas  cinitra<app>
-                  <lem wit="#A">cinitra</lem>
-                  <rdg wit="#B">nicitra</rdg>
+                  <lem wit="#msA">cinitra</lem>
+                  <rdg wit="#msB">nicitra</rdg>
                </app>, i jəṅira saṅ hyaṅ pamrihan imbha āgneya<app>
                   <lem type="norm">āgneya</lem>
-                  <rdg wit="#A">ghneya</rdg>
-                  <rdg wit="#B">
+                  <rdg wit="#msA">ghneya</rdg>
+                  <rdg wit="#msB">
                      <gap reason="omitted"/>
                   </rdg>
                </app>, vuku, mara aguṅ, śaniscara, pa, dha.</ab>
