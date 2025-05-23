@@ -18,17 +18,16 @@
            <persName ref="part:tilu">
                <forename>Timothy</forename>
                <surname>Lubin</surname>
-            </persName></respStmt>
-            
+            </persName>
+	</respStmt>
          </titleStmt>
          <publicationStmt>
             <authority>DHARMA</authority>
-            <pubPlace>Lyon (France) &amp; Lexington, VA (USA)</pubPlace>
+            <pubPlace>Lyon (France), Jakarta (Indonesia) &amp; Lexington, VA (USA)</pubPlace>
             <idno type="filename">DHARMA_CritEdSvayambhu.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licensed under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
-                  
                </licence>
             </availability>
             <date from="2019" to="2025">2019-2025</date>
@@ -140,7 +139,7 @@ Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisang
            <p/>
          </correction>
          <normalization>
-           <p/>
+         	<p>All mss. show the strong tendency for a length-mark to be applied to clause-final <foreign>-a</foreign>. In many cases we have ignored this length mark and opted for a reading/normalization with <foreign>-a</foreign>.</p>
          </normalization>
          <interpretation>
            <p/>
@@ -149,16 +148,16 @@ Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisang
        <samplingDecl>
          <p/>
        </samplingDecl>    
-     </encodingDesc><revisionDesc>
-	  	<change when="2025-01-12" who="part:argr" status="draft">completed first round of editing the text</change>
+     </encodingDesc>
+     <revisionDesc>
+         <change when="2025-05-24" who="part:argr" status="draft">changes in light of revision of schema</change>
+         <change when="2025-01-12" who="part:argr" status="draft">completed first round of editing the text</change>
          <change when="2021-09-13" who="part:axja" status="draft">Updating the encoding pattern with quote element</change>
          <change when="2021-01-13" who="part:argr" status="draft">resolved all validation problems except use of ab for chapter colophons</change>
          <change when="2020-05-29" who="part:axja" status="draft">changing the structure: moving the @source content inside a note @type="parallels"</change>
          <change when="2020-04-23" who="part:argr" status="draft">started creation of TEI document</change>
       </revisionDesc>
    </teiHeader>
-   <!-- material for notes in TEI header once proper structure has been applied:
-- both mss. show the strong tendency for a length-mark to be applied to clause-final -a: in many cases we have ignored this length mark and opted for a reading/normalization with -a -->
    <text xml:space="preserve">
 		<body><div type="edition" xml:lang="kaw-Latn">
 <div xml:id="svayambhu_01">
@@ -361,8 +360,8 @@ tan <app><lem wit="#L #K">kavehaniṅ</lem><rdg wit="#M">tavehaniṁ</rdg></app>
  <!-- AG+TL have reached here on 2020-06-03 -->
  <term xml:lang="san-Latn"><app><lem type="norm">steyam</lem><rdg wit="#L">stheyam</rdg><rdg wit="#K">sveyam</rdg><rdg wit="#M">steyəm</rdg></app></term>, pavr̥ttiniṅ maliṅ.
  <term xml:lang="san-Latn">sāhasam</term>, ulah sāhasa.
- <term xml:lang="san-Latn"><app><lem type="conj"><supplied reason="omitted" evidence="external">strī</supplied>saṁgrahaṇam eva ca</lem><rdg wit="#L">saṅgrahaname Uva:cca:</rdg><rdg wit="#K">saṅgrahaname Uva:cca</rdg><rdg wit="#M">saṅgrahaname uvaca</rdg></app></term>,
- ulah tan yogya riṅ <supplied reason="omitted" evidence="external">strī, <term xml:lang="san-Latn">strīpuṁdharmo</term>, dharmaniṅ</supplied> laki-strī.</p>
+ <term xml:lang="san-Latn"><app><lem type="conj"><supplied reason="omitted" evidence="parallel">strī</supplied>saṁgrahaṇam eva ca</lem><rdg wit="#L">saṅgrahaname Uva:cca:</rdg><rdg wit="#K">saṅgrahaname Uva:cca</rdg><rdg wit="#M">saṅgrahaname uvaca</rdg></app></term>,
+ ulah tan yogya riṅ <supplied reason="omitted" evidence="parallel">strī, <term xml:lang="san-Latn">strīpuṁdharmo</term>, dharmaniṅ</supplied> laki-strī.</p>
 <p xml:id="svayambhu_02.05.05"><term xml:lang="san-Latn"><app><lem wit="#M">vibhāgaś</lem><rdg wit="#L #K">vinagaś</rdg></app> ca</term>, kadumaniṅ dravya.
 	<term xml:lang="san-Latn"><app><lem type="emn">dyūtam</lem><rdg wit="#L #K #M">dyuta</rdg></app></term>, totohan <app><lem wit="#L #M">tan</lem><rdg wit="#K"><gap reason="omitted"/></rdg></app> prāṇi.
 	<term xml:lang="san-Latn"><app><lem type="norm">āhvānam</lem><rdg wit="#L #K #M">Ahvanam·</rdg><note>The vulgate reading of MānDhŚ is <foreign>āhvaya</foreign> here, but several mss. used by <ptr target="#EdO"/> share the reading with <foreign>n</foreign> that seems to have been received on Bali.</note></app></term>, totohan prāṇi.
@@ -611,7 +610,7 @@ M: [3r11] saṁ brahmana sasiki, pada vruḥ maṅaji, hana ta brah[3r12]mana sa
  hayvāṅilaṅakən dharma, liṅniṅ vvaṅ,<!-- #M omits , -->
  tan paṅilaṅakən <app><lem wit="#L #M">pva kita</lem><rdg wit="#K"><gap reason="omitted"/></rdg></app> dharma,
  tan paṅilaṅakən sira iri ya,
- <app><lem wit="#K #M">maṅkana</lem><rdg wit="#L">maṅka</rdg></app> liṅ <app><lem><supplied reason="omitted" evidence="conjecture"><gap/>.</supplied></lem><note>All mss. have <foreign>atəhər</foreign> (spelled <foreign>at:hər</foreign>) directly following <foreign>liṅ</foreign>. This seems grammatically impossible, as <foreign>maṅkana liṅ</foreign> is always used in a possessive construction immediately followed by a designation of the speaker. We can only guess that words like <foreign>bhaṭāra manu</foreign> have been omitted.</note></app>
+ <app><lem wit="#K #M">maṅkana</lem><rdg wit="#L">maṅka</rdg></app> liṅ <app><lem><supplied reason="omitted"><gap/>.</supplied></lem><note>All mss. have <foreign>atəhər</foreign> (spelled <foreign>at:hər</foreign>) directly following <foreign>liṅ</foreign>. This seems grammatically impossible, as <foreign>maṅkana liṅ</foreign> is always used in a possessive construction immediately followed by a designation of the speaker. We can only guess that words like <foreign>bhaṭāra manu</foreign> have been omitted.</note></app>
 </p>
  </div>
  <div type="dyad" n="16" xml:id="svayambhu_02.16">
@@ -2973,7 +2972,7 @@ M: [15v25] kunaṁ yan stri kahyunyan adva, dasagunakəna ikaṁ purva[15v26]sah
 </listApp></supplied></quote>
 <!-- AG+TL have reached here on 2021-06-09 -->
  <p xml:id="svayambhu_06.41.02"><app><lem wit="#K #M">kunaṅ</lem><rdg wit="#L"><gap reason="omitted"/></rdg></app> yan
- *<app><lem type="conj">istri-kahyunya <supplied reason="omitted" evidence="internal">hetunya</supplied> adva</lem><rdg wit="#L">histri-kahyunya hadva</rdg><rdg wit="#K">iṁstri-kahyunyan hadva:</rdg><rdg wit="#M">stri-kahyunyan adva</rdg><note rend="check">Cf. two other case of <foreign>istri-kahyun</foreign> in <seg rend="check">§348-349</seg>, and an occurrence of <foreign>strī-vicāra</foreign> in <ptr target="#svayambhu_06.32"/>.
+ *<app><lem type="conj">istri-kahyunya <supplied reason="omitted" evidence="parallel">hetunya</supplied> adva</lem><rdg wit="#L">histri-kahyunya hadva</rdg><rdg wit="#K">iṁstri-kahyunyan hadva:</rdg><rdg wit="#M">stri-kahyunyan adva</rdg><note rend="check">Cf. two other case of <foreign>istri-kahyun</foreign> in <seg rend="check">§348-349</seg>, and an occurrence of <foreign>strī-vicāra</foreign> in <ptr target="#svayambhu_06.32"/>.
  <seg rend="check">Assume the compound to be <foreign>histri-kahyun</foreign> or <foreign>strī-kahyun</foreign>?</seg></note></app>,
  <app><lem wit="#L #M">daśaguṇakəna</lem><rdg wit="#K">daguṇa:kna</rdg></app> ikaṅ pūrva<app><lem rend="hyphenleft" wit="#L #M">sāhasa</lem><rdg wit="#K">-sahapa</rdg></app>,
  <abbr>ma</abbr>, <abbr>su</abbr>, 7, <abbr>mā</abbr>, <app><lem rend="check" wit="#L #K #M">1</lem><note>Conjecture 13?</note></app>,<app><lem wit="#K #M">təkanya</lem><rdg wit="#L"><gap reason="omitted"/></rdg></app>.
@@ -3075,7 +3074,7 @@ M: [15v25] kunaṁ yan stri kahyunyan adva, dasagunakəna ikaṁ purva[15v26]sah
 </listApp></supplied></quote>
  <p xml:id="svayambhu_07.02.02">lvirnya, upastha, <app><lem wit="#K">vətəṅ</lem><rdg wit="#L">vtaṁ</rdg><rdg wit="#M">vətaṁ</rdg></app>, ilat, taṅan, suku, mata, taliṅa, iruṅ, pāyu, avak,
  nahan <app><lem type="norm">sthānaniṅ</lem><rdg wit="#L">svarṇaniṁ</rdg><rdg wit="#K">svananiṁ</rdg><rdg wit="#M">stananiṁ</rdg></app>
- <app><lem type="conj"><supplied reason="omitted" evidence="internal">ḍaṇḍa riṅ trivarṇa,</supplied></lem><rdg wit="#L #K #M"><gap reason="omitted"/></rdg><note>Our restitution is based on the parallel in <ptr target="#svayambhu_07.01"/><!-- div 109-->.</note></app> sapuluh kvehnya.</p>
+ <app><lem type="conj"><supplied reason="omitted" evidence="parallel">ḍaṇḍa riṅ trivarṇa,</supplied></lem><rdg wit="#L #K #M"><gap reason="omitted"/></rdg><note>Our restitution is based on the parallel in <ptr target="#svayambhu_07.01"/><!-- div 109-->.</note></app> sapuluh kvehnya.</p>
  </div>
  <!-- AG+TL have reached here on 2021-06-23  -->
  <div type="dyad" n="111" xml:id="svayambhu_07.03"><!--
@@ -3387,7 +3386,7 @@ ikaṅ nəmbəlas riṅ mas, dharaṇa ṅaranya, ikaṅ nəmbəlas i pirak, pur
 			 </app>
 </listApp></supplied></quote>
  <p xml:id="svayambhu_07.14.02">rvaṅ atus <app><lem wit="#L">limaṅ</lem><rdg wit="#K #M">lima</rdg></app> puluh <app><lem wit="#L #K">paṇa, paṇa</lem><rdg wit="#M">paṇa</rdg></app> ṅaranya,<!-- #K omits comma here -->
- <app><lem wit="#K #M">tāmra</lem><rdg wit="#L">hamra</rdg></app> saga, <app><lem><supplied reason="omitted" evidence="internal">mā,</supplied></lem><rdg wit="#L #K #M"><gap reason="omitted"/></rdg><note>In order for the arithmetic in this paragraph to work, we absolutely need this sentence to state a quantity of twelve and a half <foreign>māṣa</foreign>s (i.e., 12 <foreign>māṣa</foreign> + 2 <foreign>kupaṅ</foreign>). Should we also supply <foreign>ma</foreign> before <foreign>mā</foreign>? Probably not, as <foreign>ku</foreign> in the last sentence is also not preceded by <foreign>ma</foreign>. For our author, <foreign>ma, su</foreign> seems to have been a fixed combination with <foreign>ma</foreign> no longer able freely to be combined with other units, as happens in the epigraphic corpus.</note></app> 12, <abbr>ku</abbr>,
+ <app><lem wit="#K #M">tāmra</lem><rdg wit="#L">hamra</rdg></app> saga, <app><lem><supplied reason="omitted">mā,</supplied></lem><rdg wit="#L #K #M"><gap reason="omitted"/></rdg><note>In order for the arithmetic in this paragraph to work, we absolutely need this sentence to state a quantity of twelve and a half <foreign>māṣa</foreign>s (i.e., 12 <foreign>māṣa</foreign> + 2 <foreign>kupaṅ</foreign>). Should we also supply <foreign>ma</foreign> before <foreign>mā</foreign>? Probably not, as <foreign>ku</foreign> in the last sentence is also not preceded by <foreign>ma</foreign>. For our author, <foreign>ma, su</foreign> seems to have been a fixed combination with <foreign>ma</foreign> no longer able freely to be combined with other units, as happens in the epigraphic corpus.</note></app> 12, <abbr>ku</abbr>,
  <app><lem wit="#L #K">2</lem><rdg wit="#M">ṅa</rdg></app>,
  təkanya<!-- #M inserts comma here --> <app><lem wit="#M">yan iṅ pirak</lem><rdg wit="#L">pira:k·</rdg><rdg wit="#K">yani pirak·</rdg></app>,<!-- #M omits comma here --> ḍaṇḍaniṅ prathamasāhasa.
  limaṅ atus paṇa,<!-- #K omits comma here -->
@@ -3422,7 +3421,7 @@ ikaṅ nəmbəlas riṅ mas, dharaṇa ṅaranya, ikaṅ nəmbəlas i pirak, pur
  <p xml:id="svayambhu_07.15.02">kunaṅ <app><lem wit="#L #K">pavarah</lem><rdg wit="#M">varaḥ</rdg></app> bhagavān <app><lem wit="#L #K">vasiṣṭha</lem><rdg wit="#M">visista</rdg></app>,<!-- #M omits comma here --> riṅ kalāntara,
  <app><lem wit="#L #M">gavayakəna</lem><rdg wit="#K">kavayakna</rdg></app> saṅ pradhana, sapavvaluṅ-puluhan iṅ <app><lem wit="#L #K">satus</lem><rdg wit="#M">satis</rdg></app> <app><lem type="emn">māṣa</lem><rdg wit="#L #K #M">ma:s·</rdg></app>,
  de saṅ <app><lem wit="#M">pradhanāṅalāntarakəna</lem><rdg wit="#L">praḍana:, ṅalantarakna</rdg><rdg wit="#K">pr̥daṇa:kalantarakna</rdg></app> riṅ salek,
- <abbr>mā</abbr>, 1, <app><lem><abbr>ku</abbr>, <supplied reason="omitted" evidence="internal">1,</supplied></lem><rdg wit="#L #K">ku,</rdg><rdg wit="#M">ksa</rdg><note>All witnesses omit the number <foreign>1</foreign> that is required after unit <foreign>ku</foreign>.</note></app>
+ <abbr>mā</abbr>, 1, <app><lem><abbr>ku</abbr>, <supplied reason="omitted">1,</supplied></lem><rdg wit="#L #K">ku,</rdg><rdg wit="#M">ksa</rdg><note>All witnesses omit the number <foreign>1</foreign> that is required after unit <foreign>ku</foreign>.</note></app>
  təkaniṅ <app><lem wit="#K">kalāntaraniṅ</lem><rdg wit="#L">ṅala<del><unclear>ṅa</unclear></del>nta:raniṁ</rdg><rdg wit="#M">aṅalantaraniṁ</rdg></app> pihutaṅ,
  <app><lem wit="#L #M">ma, su, 9</lem><rdg wit="#K">ma:, 1, 9</rdg></app>, mā, <app><lem type="conj">6, riṅ sapuluh tahun</lem><rdg wit="#L #K">A riṁ salek·</rdg><rdg wit="#M">A, riṁ salek·</rdg><note>The witnesses clearly point to a value of 9 <foreign>suvarṇa</foreign>s. This means the total number of <foreign>māṣa</foreign>s in question is at least 144, i.e., a factor of 10 times the annual yield on the loan. For this reason, we conjecture that the number corruptly transmitted as <foreign>A</foreign> in all witnesses was a <foreign>6</foreign>, reject the reading <foreign>riṅ salek</foreign> despite unanimous manuscript support for it, and conjecture <foreign>sapuluh tahun</foreign>.
  It is not evident why our author would have thought of a ten-year period in the present context, but it may be relevant that this duration will be mentioned explicitly two times not far below (<ptr target="#svayambhu_07.22 #svayambhu_07.24"/><!-- div 130, 132 -->).</note></app>.
@@ -4143,7 +4142,7 @@ M: [TEXT DISPLACED HERE from middle of Div 144 up to middle of Div 151]
  <note sameAs="#EdMaDhaSa2005_08.171">MDhŚ 8.171</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_07.44.02">kunaṅ saṅ prabhu<!-- #K inserts , --> yan <app><lem wit="#K #M">paṅalap</lem><rdg wit="#L">paṅalapa:</rdg></app> dravya tan <app><lem wit="#K #M">yogya</lem><rdg wit="#L">ogya</rdg></app> alapənira, <supplied reason="omitted" evidence="conjecture"><gap/></supplied>
+ <p xml:id="svayambhu_07.44.02">kunaṅ saṅ prabhu<!-- #K inserts , --> yan <app><lem wit="#K #M">paṅalap</lem><rdg wit="#L">paṅalapa:</rdg></app> dravya tan <app><lem wit="#K #M">yogya</lem><rdg wit="#L">ogya</rdg></app> alapənira, <supplied reason="omitted"><gap/></supplied>
  durbala sira yan maṅkana, hilaṅ sira <app><lem wit="#L #K">maṅke</lem><witDetail wit="#L" type="pc"/><rdg wit="#L #M">maṅko</rdg><witDetail wit="#L" type="ac"/></app>, hilaṅ sira <app><lem wit="#L #K">dlāhan</lem><rdg wit="#M">dlaha</rdg></app>.</p>
 </div><div type="dyad" n="153" xml:id="svayambhu_07.45"><!--
 L: yan malap· sira: dr̥⌈[17-09]ve yogya ha:lapəni{ni}ra:, ḍarmma saṁsargga: ṅaranira:, karakṣaha:niṁ de[17-10]ṣa durbbhala, Ika: ta kabeḥ ya nimitta,niṅ agəṁ prabhava saṁ prabhū, vr̥ḍḍi ma[17-11]ṅke sira: mvaṁ dla:ha: ||
@@ -4634,7 +4633,7 @@ M: [22v27] ikaṁ patuvava, tinarima parvarva, sopaṅsuḥ, avani, avə[22v28]d
    </supplied></ab>
  <p xml:id="svayambhu_08.12.02">ikaṅ kāla yogya <app><lem type="emn">padvalakəna</lem><rdg wit="#L #M">padvalana:</rdg><rdg wit="#K">padvalaṇa:</rdg></app>
    bhāṇḍa <app><lem wit="#L #K">irikaṅ</lem><rdg wit="#M">rikaṁ</rdg></app> deśa,
-   kunaṅ ikaṅ bhāṇḍa <supplied reason="omitted" evidence="conjecture"><gap/></supplied> makanimitta sepnya ri kāla <app><lem wit="#L">padvalanya</lem><rdg wit="#K #M">padvalana:</rdg></app>,
+   kunaṅ ikaṅ bhāṇḍa <supplied reason="omitted"><gap/></supplied> makanimitta sepnya ri kāla <app><lem wit="#L">padvalanya</lem><rdg wit="#K #M">padvalana:</rdg></app>,
    <app><lem wit="#L #M">salābhanikaṅ</lem><rdg wit="#K">salabhahika:ṅ</rdg></app> amənaṅi kāla,
    ya daṇḍanikaṅ <app><lem wit="#K #M">anarima</lem><rdg wit="#L">a<lb n="19-02"/>mna:rima:</rdg></app>
    <term xml:lang="san-Latn"><app><lem type="norm">bhāṇḍāḥ</lem><rdg wit="#L #K #M">vandaḥ</rdg></app></term>,
@@ -7188,7 +7187,7 @@ M: kunaṁṅ ikaṁ ratha:ṅalaḥ, hana § [SH] satva kavdinya:, lima:n·, ku
 	<note sameAs="#EdMaDhaSa2005_08.304">MDhŚ 8.304</note>
 		 </app>
    </listApp></supplied></quote>
-	<p><app><lem type="emn">sapanəmanira</lem><rdg wit="#L #M">sapanəmva:nira</rdg><rdg wit="#K">ṣapa<add place="below">na</add>śvaranira:</rdg></app> saṅ hyaṅ dharma sakeṅ sarvavarṇa, tinəmu saṅ prabhu, phalanira parakṣa <supplied reason="omitted" evidence="conjecture"><gap/></supplied>.<note>All of the manuscripts shows only a minor punctuation mark (as opposed to the usual section-ending mark) after <foreign>phalanira parakṣa</foreign> and there is no trace of transmission/paraphrase of the second half of the Sanskrit stanza. It appears that eye-skip led to loss of the corresponding segment of text at some stage of transmission. There is no way of knowing when this happened but it may have happened quite recently, hence we do not present this section merged with the next.</note></p>
+	<p><app><lem type="emn">sapanəmanira</lem><rdg wit="#L #M">sapanəmva:nira</rdg><rdg wit="#K">ṣapa<add place="below">na</add>śvaranira:</rdg></app> saṅ hyaṅ dharma sakeṅ sarvavarṇa, tinəmu saṅ prabhu, phalanira parakṣa <supplied reason="omitted"><gap/></supplied>.<note>All of the manuscripts shows only a minor punctuation mark (as opposed to the usual section-ending mark) after <foreign>phalanira parakṣa</foreign> and there is no trace of transmission/paraphrase of the second half of the Sanskrit stanza. It appears that eye-skip led to loss of the corresponding segment of text at some stage of transmission. There is no way of knowing when this happened but it may have happened quite recently, hence we do not present this section merged with the next.</note></p>
    </div>
    <div type="dyad" n="287"><!--
 	L: saṁ[31-10]maṅa:ji, saṁ mayajña:, saṁ mapūṇya, {*}saṁ matapa, sapanəmvaniṅ ḍarmma:nira ⌈-[31-11]sovaṁ-sovaṁ, tinmunira saṁ prabhu, Apan hayuniṁ ma:ṁ/+ ra:\{ka:}kṣa saṁ prabhu, hehu[31-12]niṁ sidḍa: paṅajīnira, siddha: yajña:nira, pūṇyanira, tapanira || 
