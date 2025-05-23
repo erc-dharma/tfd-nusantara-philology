@@ -2,7 +2,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kunjdhka">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,8 +43,60 @@ mss. indicates a common reading of all five mss.
                </witness>
                <witness xml:id="msr">
                   <abbr type="siglum">R</abbr>
-                            R = typed transliteration of ms. Kirtya 674 S = typed transliteration of ms.  Kirtya 675 T = lontar ms. in the possession of Teeuw
+                            R = typed transliteration of ms. Kirtya 674 
                     </witness>
+               <witness xml:id="mss">
+                  <abbr type="siglum">S</abbr>
+                		S = typed transliteration of ms. Kirtya 675 
+                		<msDesc>
+                     <msIdentifier>
+                        <settlement>Singaraja, Bali</settlement>
+                        <institution>Kirtya</institution>
+                        <idno>675</idno>
+                     </msIdentifier>
+                     <msContents>
+                				<!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <author/>
+                           <title/>
+                           <colophon>
+                              <quote type="diplomatic">Iti Kuñjarakarṇa, kakavin darma-kata samapta. This is followed by another Canto consisting of three stanzas in the jagaddhita metre, although with many irregularities; the text, adapted to the spelling system used in this book, runs as follows:
+            pascāt sinrat i de dvijā hinaguṇā aparinama Jayestha Kāgəman 
+	sinvīkāra kinon iraṅ dipatiputra makaṅaran irârya Luṅluṅan 
+	tus niṅ vaṅśa su-Pañjiśakti sira kaprakasita mavivekasaṅgraha 
+	prājñêṅ gīta vicakṣaṇânvam aguṇādhika kadi ta saṅ Uddhavêṅ sabhā
+	āvas ninda nikaṅ mulat ri ulah i ṅhulun atiśaya hiṅsakākṣara 
+	ginantuṅ hana len pinatyan ikanā sama-sama kadi vuryan iṅ sata 
+	aṅhiṅ ta kṣama de ni saṅ sujana sudy amaca ulih iṅ atpadêṅ laṅə̄ 
+	paṅgil mampir asih Vagīśvari riki ṅhulun atita nirartha duryaśa
+            yan kāṅən kahituṅ lyan īka cara saṅ viku kuniṅan iraṅ manah licin 
+	kasaktan rikanaṅ kadharman apagəh manah ira kadi tan təkêṅ pati 
+	nāhan lvir saṅ aṅiṣṭi ləmbana satāta sira-n umulaha-ṅ bratātapa 
+	nityâmoṅ ta ri saṅ hyaṅ Agni tiga mūrti dharaṇa i sakāla ṅarcana</quote>
+                              <quote type="translation">
+1. The writing was completed by the brahmana of little virtue who bears the name Jayestha Kagəman, Who was hard pressed by the orders of the royal prince who is called the noble Luṅluṅan. As a scion of the family of Pañji Śakti he is renowned for his great intelligence (?);He is an expert in poetry, a man of sense, young, of excellent virtue, like Uddhava in council.
+2. Obviously there will be blame from those who watch me making a hopeless mess of the letters, Some of which hang betveen the lines, and others have lost their vowels, altogether an awful scrawl (Dutch hanepoten, "cock’s footprints"). But may there be pardon for me from the good people who deign to read the product of one who tries to serve the art of poetry. And may love of Sarasvatī pass my way, even though I am totally worthless and without merit.
+3. All considered, the way the monk takes account of a released mind is quite different, He is a devotee to the Law, of steadfast mind, as if he will never die. Thus is the nature of one who longs for a mainstay; he constantly carries out austerities, Permanently tending the god Agni in his three manifestations, the support of all who venerate him.</quote>
+                           </colophon>
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+                           <p/>
+                        </objectDesc>
+                        <handDesc>
+                           <p/>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                        <p/>
+                     </history>
+                  </msDesc>
+               </witness>
+               <witness xml:id="mst">
+                  <abbr type="siglum">T</abbr>
+                		T = lontar ms. in the possession of Teeuw
+                	</witness>
                <witness xml:id="msy">
                   <abbr type="siglum">Y</abbr>
                         Y indicates a common reading of RSTV 
@@ -68,9 +120,9 @@ mss. indicates a common reading of all five mss.
                            <author/>
                            <title/>
                            <colophon>
-                              <quote type="diplomatic">Iti Kuñjarakārna, Dharmakathanā, samapta, klrti sirā Mpu Dusun. Tlas in nular iṅ Kañcana, tkap Nirārtha Pamasah, niyata kampuraha dya nira saṅ sudy amacêṅ kātha, ri kuraṅ-lvihnya, kapayuṅā de saṅ vriṅ sāstra, āpan matra milyâṅrekā hatanūt iṅ tuladdan, carūb iṅ vargāksara, reh iṅ vikālpāksara, tan iṅ pasaṅan, nir uṅgvan alit āganal, misra ṅkānêṅ Śivalān, riṅ Kavyan desa niṅ Bālīpulina, i Sāka, duk tinaṅguṅ ripu, babad pgat paṅrasa vināya pisan, 1660. Śukra masa niṅ sūklapāksa riṅ padasamyā (?), ka, bu, vara Duṅhulān, mina rasi, ar, o, tu, srī, . . . va, u, samaṅkana kovusanya ṅanurat. Niyata maṅdadya-kən kadirghāyūsan ira saṅ manurat, mvaṅ saṅ adrəvyā, oṅ, ksama sāmpūrna ya nāmah svāhā.</quote>
-                              <quote type="translation">This is the Kuñjarakarṇa, the story of the Law, completed, the work of Mpu Dusun. The copying vas finished in Kañcana, by Nirartha Pamasah: it must surely be pardoned by those vho are prepared to read the story because of its shortcomings, and be protected by those vho are knovledgeable about literature; for it is simply an attempt to vrite it out, folloving the original, but it makes a mess of the types of letters, confuses them, leaving out subscribed letters, putting them not in the proper place, making them too small or too big, so that all is mixed up on the page; in Kavyan, a village in the island of Bali, in the Sāka year vhen oppressed by the enemy, ’the clearing broken of, the feeling of the leader at once’ (??or: ’the taste and the feeling at once’ ??), 1660; on Friday, at the time of the bright moon, … on the day Buda-Klivon, in the vuku Duṅulan, the sign Pisces . . . that vas the time vhen it vas completed. It vill certainly bring long life to him vho vrites it and him vho ovns it; Om. may there be complete forgiveness; honour and hail!</quote>
-                              <note>For more details we refer to the discussion of the colophons of the śR and Nāg, to be found in the same MS. in R (1969: 156f) and Pigeaud (1960-63: I 76, III 115, IV 347ff) ; see also above, pp. 47ff, and the study by Berg quoted there.</note>
+                              <quote type="diplomatic">Iti Kuñjarakārna, Dharmakathanā, samapta, kīrti sirā Mpu Dusun. Tlas iṅ nular iṅ Kañcana, tkap Nirārtha Pamasah, niyata kampuraha dya nira saṅ sudy amacêṅ kātha, ri kuraṅ-lvihnya, kapayuṅā de saṅ vriṅ śāstra, āpan matra milyâṅrekā hatanūt iṅ tuladdan, carūb iṅ vargākṣara, reh iṅ vikālpākṣara, tan iṅ pasaṅan, nir uṅgvan alit āganal, miśra ṅkānêṅ śivalān, riṅ Kavyan desa niṅ Bālīpulina, i Śāka, duk tinaṅguṅ ripu, babad pgat paṅrasa vināya pisan, 1660. Śukra māsa niṅ śūklapākṣa riṅ padasamyā (?), ka, bu, vara Duṅhulān, miṇa rasi, ar, o, tu, śrī, . . . vā, u, samaṅkana kovusanya ṅanurat. Niyata maṅdadyakən kadirghāyūṣan ira saṅ manurat, mvaṅ saṅ adrəvyā, oṅ, kṣama sāmpūrṇa ya nāmah svāhā.</quote>
+                              <quote type="translation">This is the Kuñjarakarṇa, the story of the Law, completed, the work of Mpu Dusun. The copying vas finished in Kañcana, by Nirartha Pamasah: it must surely be pardoned by those who are prepared to read the story because of its shortcomings, and be protected by those who are knovledgeable about literature; for it is simply an attempt to write it out, following the original, but it makes a mess of the types of letters, confuses them, leaving out subscribed letters, putting them not in the proper place, making them too small or too big, so that all is mixed up on the page; in Kavyan, a village in the island of Bali, in the Sāka year when oppressed by the enemy, ’the clearing broken of, the feeling of the leader at once’ (?? or: ’the taste and the feeling at once’ ??), 1660; on Friday, at the time of the bright moon, … on the day Buda-Klivon, in the vuku Duṅulan, the sign Pisces . . . that vas the time vhen it vas completed. It vill certainly bring long life to him who writes it and him who owns it; Om. may there be complete forgiveness; honour and hail!</quote>
+                              <note>For more details we refer to the discussion of the colophons of the śR and Nāg, to be found in the same MS. in R (1969: 156f) and Pigeaud (1960-63: I 76, III 115, IV 347ff); see also above, pp. 47ff, and the study by Berg quoted there.</note>
                            </colophon>
                            <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
                         </msItem>
@@ -86,45 +138,6 @@ mss. indicates a common reading of all five mss.
                      <history>
                         <p/>
                      </history>
-                  </msDesc>
-               </witness>
-               <witness xml:id="msX">
-                  <abbr type="siglum">X</abbr>
-                  <msDesc>
-                     <msIdentifier>
-                        <settlement/>
-                        <institution/>
-                        <repository/>
-                        <idno/>
-                     </msIdentifier>
-                     <msContents>
-                                <!-- the msContents isn't mandatory -->
-                        <msItem>
-                           <author/>
-                           <title/>
-                           <colophon>
-                              <quote type="diplomatic">Iti Kuñjarakārna, Dharmakathanā, samapta, klrti sirā Mpu Dusun. Tlas in nular iṅ Kañcana, tkap Nirārtha Pamasah, niyata kampuraha dya nira saṅ sudy amacêṅ kātha, ri kuraṅ-lvihnya, kapayuṅā de saṅ vriṅ sāstra, āpan matra milyâṅrekā hatanūt iṅ tuladdan, carūb iṅ vargāksara, reh iṅ vikālpāksara, tan iṅ pasaṅan, nir uṅgvan alit āganal, misra ṅkānêṅ Śivalān, riṅ Kavyan desa niṅ Bālīpulina, i Sāka, duk tinaṅguṅ ripu, babad pgat paṅrasa vināya pisan, 1660. Śukra masa niṅ sūklapāksa riṅ padasamyā (?), ka, bu, vara Duṅhulān, mina rasi, ar, o, tu, srī, . . . va, u, samaṅkana kovusanya ṅanurat. Niyata maṅdadya-kən kadirghāyūsan ira saṅ manurat, mvaṅ saṅ adrəvyā, oṅ, ksama sāmpūrna ya nāmah svāhā.</quote>
-                              <quote type="translation">This is the Kuñjarakarṇa, the story of the Law, completed, the work of Mpu Dusun. The copying was finished in Kañcana, by Nirartha Pamasah: it must surely be pardoned by those who are prepared to read the story because of its shortcomings, and be protected by those who are knowledgeable about literature; for it is simply an attempt to write it out, following the original, but it makes a mess of the types of letters, confuses them, leaving out subscribed letters, putting them not in the proper place, making them too small or too big, so that all is mixed up on the page; in Kawyan, a village in the island of Bali, in the Sāka year when oppressed by the enemy, ’the clearing broken of, the feeling of the leader at once’ (??or: ’the taste and the feeling at once’ ??), 1660; on Friday, at the time of the bright moon, … on the day Buda-Kliwon, in the wuku Duṅulan, the sign Pisces . . . that was the time when it was completed. It will certainly bring long life to him who writes it and him who owns it; Om. may there be complete forgiveness; honour and hail!</quote>
-                              <note>For more details we refer to the discussion of the colophons of the śR and Nāg, to be found in the same MS. in R (1969: 156f) and Pigeaud (1960-63: I 76, III 115, IV 347ff) ; see also above, pp. 47ff, and the study by Berg quoted there.</note>
-                              <quote type="diplomatic">Iti Kuñjarakarṇa, kakavin darma-kata samapta. This is followed by another Canto consisting of three stanzas in the Jagaddhita metre, although with many irregularities; the text, adapted to the spelling system used in this book, runs as follows:
-                                            pascāt sinrat i de dvijā hinagunā aparinama Jayestha Kāgəman sinvīkāra kinon iraṅ dipatiputra makaṅaran irârya Luṅluṅan tus niṅ vaṅsa su-Pañjisakti sira kaprakasita mavivekasaṅgraha prājñêṅ gīta vicaksanânvam agunādhika kadi ta saṅ Uddhavêṅ sabhā
-                                            āvas ninda nikah mulat ri ulah i ṅhulun atisaya hiṅsakāksara ginantuṅ bana len pinatyan ikanā sama-sama kadi vuryan iṅ sata aṅhiṅ ta ksama de ni saṅ sujana sudy amaca ulih iṅ atpadêṅ laṅə̄ paṅgil mampir asih Wagīsvari riki ṅhulun atita nirartha duryasa
-                                            yan kāṅən kahituṅ lyan īka cara saṅ viku kuniṅan iraṅ manah licin kasaktan rikanaṅ kadharman apagəh manah ira kadi tan təkêṅ pati nāhan lvir saṅ aṅisti ləmbana satāta sira-n umulaha-ṅ bratātapa nityâmoṅ ta ri saṅ hyaṅ Agni tiga mūrti dharaṇa i sakāla ṅarcana</quote>
-                              <quote type="translation">1. The writing was completed by the brahmana of little virtue who bears the name Jayestha Kagəman, Who was hard pressed by the orders of the royal prince who is called the noble Luṅluṅan.
-                                            As a scion of the family of Pañji Śakti he is renowned for his great intelligence (?);
-                                            He is an expert in poetry, a man of sense, young, of excellent virtue, like Uddhava in council.
-                                            2. Obviously there will be blame from those who vatch me making a hopeless
-                                            mess of the letters,
-                                            Some of which hang betveen the lines, and others have lost their vowels,
-                                            altogether an awful scrawl (Dutch hanepoten, "cock’s footprints"). But may there be pardon for me from the good people who deign to read the
-                                            product of one who tries to serve the art of poetry. And may love of Sarasvatī pass my way, even though I am totally worthless and without merit.
-                                            3. All considered, the way the monk takes account of a released mind is quite different,
-                                            He is a devotee to the Law, of steadfast mind, as if he will never die. Thus is the nature of one who longs for a mainstay; he constantly carries out austerities,
-                                            Permanently tending the god Agni in his three manifestations, the support of all who venerate him.</quote>
-                           </colophon>
-                           <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
-                        </msItem>
-                     </msContents>
                   </msDesc>
                </witness>
             </listWit>
@@ -151,6 +164,7 @@ mss. indicates a common reading of all five mss.
          </samplingDecl>
       </encodingDesc>
       <revisionDesc>
+         <change when="2025-05-23" who="part:argr">corrected meter names</change>
          <change when="2025-05-11" who="part:argr">added teiHeader and bibliography</change>
          <change when="2025-05-07" who="part:axja">conversion of text to TEI following DHARMA EGC v2</change>
       </revisionDesc>
@@ -159,8 +173,9 @@ mss. indicates a common reading of all five mss.
 		<body>
 			<div type="edition" xml:lang="kaw-Latn">
 
-			    <div><ab type="invocation">avighnam astu.</ab></div>
-<div type="canto" n="1" met="Jagaddhita">
+<div><ab type="invocation">avighnam astu.</ab></div>
+
+<div type="canto" n="1" met="jagaddhita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | \- ~ \- | ~ =</note> -->
 <lg n="1">
 <l n="a">saṅ dhīrāmrih ayuddha riṅ raṇa tapabrata makalaga vīraṣaḍripu</l>
@@ -210,31 +225,35 @@ mss. indicates a common reading of all five mss.
 <l n="d">mvaṅ sakveh para bajrapāṇisuranātha yama baruṇa len dhanādhipa</l></lg>
 
 </div>
-<div type="canto" n="2" met="not known from elsewhere">
+<div type="canto" n="2" met="-++--+-++--=">
 <!-- <note type="prosody">~ \- \- | ~ ~ \- | ~ \- \- | ~ ~ =</note> -->
-<lg n="1"><l n="a">bharālipratisāra labdhe samaya</l>
+<lg n="1">
+<l n="a">bharālipratisāra labdhe samaya</l>
 <l n="b">sudharmādhikatattva sampun katama</l>
 <l n="c">vəkasniṅ paramārthikovus kahiḍəp</l> 
 <l n="d">varah śrī ṣaḍabhijña kāruṇyamaya</l>
 <!-- <app>(a) RS bharalya-; P lan desamaya, RS labda samaya, TV labde samaya; (c) PV paramārthikavus, T -kāvus, R paramarsikovus.</app> --> 
 
 </lg>
-<lg n="2"><l n="a">təlas rakva bharāly amūjā prathama</l>
+<lg n="2">
+<l n="a">təlas rakva bharāly amūjā prathama</l>
 <l n="b">gumantyaṅ hyaṅ anukramāyajña marək</l> 
 <l n="c">savaṅ vṛṣṭy amṛtaṅ sudharmaśravaṇa</l>
 <l n="d">avas lvir tṛṇa buddhiniṅ hyaṅ masavuṅ</l>
 <!-- <app>(b) Y mataṅnyaṅ; (d) TV kṛṇa; mss. masavaṅ.</app> --> 
 
 </lg>
-<lg n="3"><l n="a">huvus pveki dineśanan dharma kabeh</l>
+<lg n="3">
+<l n="a">huvus pveki dineśanan dharma kabeh</l>
 <l n="b">təkap hyaṅ jina tuṣṭa harṣan ruməṅə̄</l>
 <l n="c">paḍāṅarcana sādare śrī sugata</l> 
 <l n="d">byatītan ry ulih iṅ vatək hyaṅ sakala</l></lg>
 
 </div>
-<div type="canto" n="3" met="Navaharṣa">
+<div type="canto" n="3" met="navaharṣa">
 <!-- <note type="prosody">~ ~ \- | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | \- ~ ~ | \- ~ ~ | =</note> -->
-<lg n="1"><l n="a">atha kuñjarakarṇacarita matapeṅ varamerugiri</l>
+<lg n="1">
+<l n="a">atha kuñjarakarṇacarita matapeṅ varamerugiri</l>
 <l n="b">pinakāgratapodhara tan alupa riṅ sugatasmaraṇa</l>
 <l n="c">makasādhana yoganira saphalavīrya sinādhyanira</l> 
 <l n="d">tuvi rākṣasarūpa pinakamala hetuniran patapa</l>
@@ -261,7 +280,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="4" met="Śikhariṇī">
+<div type="canto" n="4" met="śikhariṇī">
 <!-- <note type="prosody">~ \- \- | \- \- \- | ~ ~ ~ | ~ ~ \- | \- ~ ~ | ~ =</note> -->
 <lg n="1"><l n="a">savaṅ strīratna lvirniṅ acala ləṅə̄ṅ ləṅləṅ alaṅə̄</l>
 <l n="b">asiñjaṅ ñjrahniṅ pādapa huvus agandhāsəkar arūm</l>
@@ -299,7 +318,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="5" met="Turidagati">
+<div type="canto" n="5" met="turidagati">
 <!-- <note type="prosody">~ ~ ~ | ~ \- ~ | \- ~ ~ | ~ \- ~ | ~ ~ ~ | ~ ~ \- | ~ \- ~ | =</note> -->
 <lg n="1"><l n="a">tuhu mara yan viśeṣagirirāja sakahavan aṅāśrayeṅ laṅə̄</l>
 <l n="b">upaśama tiṅkah iṅ tahən ataṅkil apagəh apa tan salah-bhava</l> 
@@ -391,87 +410,100 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="6" met="Pṛthvītala">
+<div type="canto" n="6" met="pr̥thvītala">
 <!-- <note type="prosody">~ \- ~ | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ \- \- | ~ =</note> -->
-<lg n="1"><l n="a">saṅ ugratapa śīghra maṅkat ahavan viyat nirbhaya</l>
+<lg n="1">
+<l n="a">saṅ ugratapa śīghra maṅkat ahavan viyat nirbhaya</l>
 <l n="b">hanan kadi khagendra maṅlayaṅ iṅ agraniṅ parvata</l>
 <l n="c">svabhāvanira yakṣa śakti madulur prabhāvādbhuta</l> 
 <l n="d">prahāra kumusuh təkādrəs amusus tahən riṅ vukir</l>
 
 </lg>
-<lg n="2"><l n="a">ləpas larinirāṅidul tucapa taṅ sakātuṅkulan</l>
+<lg n="2">
+<l n="a">ləpas larinirāṅidul tucapa taṅ sakātuṅkulan</l>
 <l n="b">pradeśa mapatuṅgatuṅgalan akāṇḍakāṇḍālaṅə̄</l>
 <l n="c">təkeṅ vukir alasnya kubvan arəṇəb gagātūt hiriṅ</l> 
 <l n="d">pucaṅ tirisan aryan arnəb atatā tahən vva-vvahan</l>
 
 </lg>
-<lg n="3"><l n="a">gəgər paṅalusan hañar tinarukāpramāṇeṅ juraṅ</l>
+<lg n="3">
+<l n="a">gəgər paṅalusan hañar tinarukāpramāṇeṅ juraṅ</l>
 <l n="b">huvus tinapak iṅ vanāgni savalərvalərnyan gəsəṅ</l>
 <l n="c">dudug təka riṅ agra mākrəp atumaṅ harəṅnyāpupul</l> 
 <l n="d">śilā kumalaśāputih rəṅat arekharekhā pəṭa</l>
 <!-- <app>(b) RS savaṅva natarnya gəsəṅ, T savaṅ valərnya gəsəṅ (or gusəṅ?), V asavaṅ valərnyan gəsəṅ.</app> --> 
 
 </lg>
-<lg n="4"><l n="a">ikaṅ gunuṅ aroṅ katon hana i sor giha lvir gəḍoṅ</l>
+<lg n="4">
+<l n="a">ikaṅ gunuṅ aroṅ katon hana i sor giha lvir gəḍoṅ</l>
 <l n="b">paraṅnika sumoṅ sajoṅ kadi masoṅ vinoṅvoṅ mara</l> 
 <l n="c">sirobvan umulat paḍāmava vajoṅ kajoṅkoṅ tibā</l>
 <l n="d">aboṅ umuni kagyat avri ginəroṅnikaṅ moṅ alon</l>
 <!-- <app>(b) Y kajoṅ (text sajoṅ); (d) P añoṅ; Y ginəra (-ā T).</app> --> 
 
 </lg>
-<lg n="5"><l n="a">adə̄dəṅ aputih vvay iṅ valahar embuh akveh gunuṅ</l>
+<lg n="5">
+<l n="a">adə̄dəṅ aputih vvay iṅ valahar embuh akveh gunuṅ</l>
 <l n="b">savah sphaṭikamārga śuddha lumarap bañunyālaris</l>
 <l n="c">tutug təka ri vindhyaparvata paḍāṅavetan ləpas</l> 
 <l n="d">tumampuh i gihānikaṅ jaladhi ghūrṇitāgənturan</l>
 
 </lg>
-<lg n="6"><l n="a">rərəb sinavaveṅ riris kilat alivran abhrāsinaṅ</l>
+<lg n="6">
+<l n="a">rərəb sinavaveṅ riris kilat alivran abhrāsinaṅ</l>
 <l n="b">sateja dumilah prabhāvanira kuñjarāvyomaga</l>
 <l n="c">paḍānahanahan mulat kaburəṅaṅ tuməṅheṅ laṅit</l> 
 <l n="d">mapendah iki liṅnikaṅ vvaṅ apa tan hanā maṅkana</l>
 <!-- <app>(d) P hanammaṅkana.</app> --> 
 
 </lg>
-<lg n="7"><l n="a">tiniṅhalanirāparə̄ giri sumeru lambvaṅ kidul</l>
+<lg n="7">
+<l n="a">tiniṅhalanirāparə̄ giri sumeru lambvaṅ kidul</l>
 <l n="b">baṅun sira sinambhrameṅ alas akon marārāryana</l>
 <l n="c">humuṅ svaranikaṅ manuk vijavijah lvir asvāgata</l>
 <l n="d">lutuṅnika lumumpat agya susugun kadi kṣepa ya</l>
 <!-- <app>(a) ST -āparā; (b) RT marāryana.</app> --> 
 
 </lg>
-<lg n="8"><l n="a">bhaviṣyati katon kṛtābhinava taṅ vihārāhaləp</l>
+<lg n="8">
+<l n="a">bhaviṣyati katon kṛtābhinava taṅ vihārāhaləp</l>
 <l n="b">agopura suvarṇa ratna mapucak maṇīndrārjuna</l>
 <l n="c">ndatan pagati taṅ divākara śaśāṅka keraṅiraṅ</l> 
 <l n="d">təkapniṅ atibhāsvarānələhi bapra śuddhākila</l>
 <!-- <app>(c) RS divaṅkara; Ed. śaśaṅka.</app> --> 
 
 </lg>
-<lg n="9"><l n="a">vavaṅ sira təkeṅ vihāra varabodhicittāmala</l>
+<lg n="9">
+<l n="a">vavaṅ sira təkeṅ vihāra varabodhicittāmala</l>
 <l n="b">tumuntən umarək kṛtāñjali ri pāduka hyaṅ jina</l> 
 <l n="c">vruh iṅ paramadevakarṣaṇa viśeṣapūjastuti</l>
 <l n="d">ya kāraṇa bhaṭāra tuṣṭa tumuluy manantve sira</l>
 
 </lg>
-<lg n="10"><l n="a">vəkaṅku tija bhāgya saṅ tapa marək ri jə̄ṅniṅ hulun</l>
+<lg n="10">
+<l n="a">vəkaṅku tija bhāgya saṅ tapa marək ri jə̄ṅniṅ hulun</l>
 <l n="b">ndya donta laki yan parery aku mapaṅ pinintānaku</l> 
 <l n="c">huvus vruh aku yan tasak bratatapanta ṅūnīṅ vukir</l>
 <l n="d">usə̄n təpətakən juga prih ikanaṅ kayogīśvaran</l>
 
 </lg>
-<lg n="11"><l n="a">na liṅnira bhaṭāra buddha sumahur ta saṅ tāpasa</l>
+<lg n="11">
+<l n="a">na liṅnira bhaṭāra buddha sumahur ta saṅ tāpasa</l>
 <l n="b">bhaṭāra huniṅan ṅhulun varahaniṅ sudharmādhika</l> 
 <l n="c">maran saphalajanma marya makajāti yakṣākṛti</l>
 <l n="d">apan pisaniṅun manəmvakəna vīrya devaprabhu</l>
 
 </lg>
-<lg n="12"><l n="a">muvah mapa ta vastu sambulih i janmaniṅ rāt kabeh</l>
+<lg n="12">
+<l n="a">muvah mapa ta vastu sambulih i janmaniṅ rāt kabeh</l>
 <l n="b">nimittanika yan hanaṅ tuməmu duhkha lāvan sukha</l> 
 <l n="c">ləvəs mara ri tan paḍanya hana kasyasih mvaṅ sugih</l>
 <l n="d">pitovi hana pūrṇarūpa savaneh manaṇḍaṅ mala</l>
 <!-- <app>(d) P lara (text mala).</app> --> 
 
 </lg>
-<lg n="13"><l n="a">nahan pataña saṅ tapāsura ri jə̄ṅnira hyaṅ jina</l>
+<lg n="13">
+<l n="a">nahan pataña saṅ tapāsura ri jə̄ṅnira hyaṅ jina</l>
 <l n="b">pradīpta ravitulya rakva karuṇan bhaṭāreṅ jagat</l>
 <l n="c">ya kāraṇani buddhi saṅ yati mekar savaṅ paṅkaja</l> 
 <l n="d">haləpnya kahatur mareṅ pada bhaṭāra tuṣṭāmuvus</l>
@@ -514,7 +546,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="7" met="Śārdūlavikrīḍita">
+<div type="canto" n="7" met="śārdūlavikrīḍita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | \- \- ~ | \- \- ~ | =</note> -->
 <lg n="1"><l n="a">āpan durlabha taṅ dadi vvaṅ inusirniṅ sarvabhāveṅ jagat</l>
 <l n="b">yadyan mānuṣa durlabha-ṅ vvaṅ atəmah jalv āmiśeṣeṅ priyā</l>
@@ -688,7 +720,7 @@ mss. indicates a common reading of all five mss.
 <l n="d">nāhan hetunikālayū sahananiṅ pāpāvədin kantuna</l></lg>
 
 </div>
-<div type="canto" n="8" met="Daṇḍaka">
+<div type="canto" n="8" met="daṇḍaka">
 <!-- <note type="prosody">46\-49 × × ~ ~ ~ | ~ ~ ~ [\- ~ \-:]</note> -->
 
 <lg n="1"><l n="a">atha səḍəṅ alayə̄ṅ vatək pātakāvrəg tumon śīrṇa rovaṅnyan akveh sinujyan ta yeṅ śūla siṅ kary amet uṅgvanāhət=hətan taṅ vatək pātakāvor səsək tan vriṅ rātnyan silih-kol silih-tuṇḍuṅ amrih təṅah kedəkan deni rovaṅnya śīghrāṅaḍal yan tumaṅgal suməṇḍal ri jə̄ṅniṅ dulur ṅkān pinañcal kabuñcah cacal ghrāṇanikāprameyan tibāṅaṅsaraṅsar jumoṅkoṅ manoñjol i sorniṅ pakompolan iṅ rovah aṅhiṅ lamun tan katon deni śocānikaṅ rākṣasāmigrahāmburv anūt riṅ vatək pātaka</l>
@@ -708,7 +740,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="9" met="Sragdhara">
+<div type="canto" n="9" met="sragdhara">
 <!-- <note type="prosody">\- \- \- | \- ~ \- | \- ~ ~ | ~ ~ ~ | ~ \- \- | ~ \- \- | ~ \- =</note> -->
 <lg n="1"><l n="a">tatkāla kleśaniṅ kiṅkaragaṇa kapahuṅ denikaṅ pātakāmuk</l>
 <l n="b">tan vriṅ rovaṅnya kevran sinaləsək inirup laṅguk astranya kabvaṅ</l>
@@ -725,7 +757,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="10" met="Śikhariṇī">
+<div type="canto" n="10" met="śikhariṇī">
 <!-- <note type="prosody">~ \- \- | \- \- \- | ~ ~ ~ | ~ ~ \- | \- ~ ~ | ~ =</note> -->
 <lg n="1"><l n="a">hana rvaṅ lakṣa kvehnya sinudukan iṅ śūla madava</l>
 <l n="b">parəṅ riñcuṅ lvirnyan banava kajahat kaṇḍəm ananā</l> 
@@ -761,7 +793,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="11" met="Mṛdukomala">
+<div type="canto" n="11" met="mr̥dukomala">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ \- ~ | ~ ~ =</note> -->
 <lg n="1"><l n="a">prāpteṅ jro pura saṅ tapāṅdunuṅi saṅ hyaṅ antakapati</l>
 <l n="b">ṅkāneṅ veśma suvarṇa sambhrama bhaṭāra rakva matamuy</l>
@@ -880,7 +912,7 @@ mss. indicates a common reading of all five mss.
 <l n="d">tṛṣṇeṅ cetana kāraṇanya dadi tuṅgal ātma kalima</l></lg>
 
 </div>
-<div type="canto" n="12" met="Jaloddhatagati">
+<div type="canto" n="12" met="jaloddhatagati">
 <!-- <note type="prosody">~ \- ~ | ~ ~ \- | ~ \- ~ | ~ ~ =</note> -->
 <lg n="1"><l n="a">nimittanika yan mareṅ yamapada</l>
 <l n="b">təkapnikaṅ adharma duṣkṛta tumūt</l> 
@@ -961,7 +993,7 @@ mss. indicates a common reading of all five mss.
 </lg> 
 
 </div>
-<div type="canto" n="13" met="Sragdhara">
+<div type="canto" n="13" met="sragdhara">
 <!-- <note type="prosody">\- \- \- | \- ~ \- | \- ~ ~ | ~ ~ ~ | ~ \- \- | ~ \- \- | ~ \- =</note> -->
 <lg n="1"><l n="a">vvantən gandharvanātha prakaśita subhageṅ kendran atyanta śakti</l>
 <l n="b">tan len nāmanya saṅ pūrṇavijaya paḍa riṅ svarga lāvan hyaṅ indra</l> 
@@ -1026,7 +1058,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="14" met="Śikhariṇī">
+<div type="canto" n="14" met="śikhariṇī">
 <!-- <note type="prosody">~ \- \- | \- \- \- | ~ ~ ~ | ~ ~ \- | \- ~ ~ | ~ =</note> -->
 <lg n="1"><l n="a">tuməṇḍas riṅ svargedran umulat i ramyāṣṭakapada</l>
 <l n="b">riṅ indrasvargan vetan analapadāgneya kaparək</l> 
@@ -1050,37 +1082,42 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="15" met="Jagadnātha">
+<div type="canto" n="15" met="jagadnātha">
 <!-- <note type="prosody">~ \- ~ | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | \- ~ \- | ~ =</note> -->
-<lg n="1"><l n="a">samantara kavəṅyan amrih aṅusir paranani saṅ iniṣṭi pājarən</l>
+<lg n="1">
+<l n="a">samantara kavəṅyan amrih aṅusir paranani saṅ iniṣṭi pājarən</l>
 <l n="b">tuhun kadi śaśāṅka taṅ rajatabapra gupuramaṇi sarva bhāsvara</l>
 <l n="c">təlas kahalivat sirerikaṅ apantv akəmit i yava tan panaṅśaya</l> 
 <l n="d">apan vruh i samitra saṅ pravara pūrṇavijaya ya ta hetuniṅ laris</l>
 <!-- <app>(a) Ed. samāntara; V aṅiṣṭi; (c) Y kalivatan; RSV apintv.</app> --> 
-
 </lg>
-<lg n="2"><l n="a">ḍatəṅ tumama riṅ lavaṅ ri daləm asyaṅ atəhər anatabnatab lavaṅ</l>
+
+<lg n="2">
+<l n="a">ḍatəṅ tumama riṅ lavaṅ ri daləm asyaṅ atəhər anatabnatab lavaṅ</l>
 <l n="b">səḍəṅ pva maturū sira pravara pūrṇavijaya ri kisapvan iṅ priyā</l> 
 <l n="c">siraṅ kusumagandhavaty adhikanāmaniran ahayu kastavenaləm</l>
 <l n="d">kataṅgamaṅ anaṅhi saṅ sənəṅ ajar sira ri hananiṅ asyaṅ iṅ lavan</l>
 <!-- <app>(b) RV siraṅ; mss. priya; (c) T nira hayu; (d) V kataṅgama manaṅis; R anaṅis, S anaṅi.</app> --> 
-
 </lg>
-<lg n="3"><l n="a">samaṅkana saṅ apsarādhipa ruməṅvakən analiṅa śabda saṅ ḍatəṅ</l>
+
+<lg n="3">
+<l n="a">samaṅkana saṅ apsarādhipa ruməṅvakən analiṅa śabda saṅ ḍatəṅ</l>
 <l n="b">kakaṅkv asura kuñjareki liṅirāsyah aṅutus aməhākənaṅ lavaṅ</l>
 <l n="c">kakaṅku tija bhāgya teki kadi riṅ svapəna ḍatəṅ i kālaniṅ vəṅi</l> 
 <l n="d">haneki yayi kārya bhāra karaṇaṅkva halinalin i masku tan sipi</l>
 <!-- <app>(b) P aməṅākəna, R ambə̄kəna-ṅ, T aməṅākəneṅ, SV = text; (d) V ali-alin.</app> --> 
-
 </lg>
-<lg n="4"><l n="a">ṅhulun marək i jə̄ṅ bhaṭāra sugatādhipa riṅ amṛtabodhi nirmala</l>
+
+<lg n="4">
+<l n="a">ṅhulun marək i jə̄ṅ bhaṭāra sugatādhipa riṅ amṛtabodhi nirmala</l>
 <l n="b">kumon ta sira muṅsireṅ yamapadāṅlihatana riṅ amukti pātaka</l> 
 <l n="c">mavās pva mulati ṅvaṅ iṅ sakalapātaka paḍa humiḍəp larādhika</l>
 <l n="d">tuhun hana ta roravan vinasəhan tinañakən i kakanta don ikā</l>
 <!-- <app>(a) Y ri; Ed. jə̄n.</app> --> 
-
 </lg>
-<lg n="5"><l n="a">kitekana kəlan sahasraśatavarṣa mara ya lavasanta riṅ kavah</l>
+
+<lg n="5">
+<l n="a">kitekana kəlan sahasraśatavarṣa mara ya lavasanta riṅ kavah</l>
 <l n="b">huvus pva kita riṅ kavah vavan iṅ astrataru təkap ikaṅ khagāsura</l>
 <l n="c">təlasnya mara riṅ ayahdharaṇipattana ta kita ginantuṅ iṅ pətuṅ</l> 
 <l n="d">kunaṅ mara hiner pituṅ vəṅi vəkas kita lumabuha rakva riṅ kavah</l>
@@ -1135,7 +1172,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="16" met="Suvadanā">
+<div type="canto" n="16" met="suvadanā">
 <!-- <note type="prosody">\- \- \- | \- ~ \- | \- ~ ~ | ~ ~ ~ | ~ \- \- | \- ~ ~ | ~ =</note> -->
 <lg n="1"><l n="a">maṅkat gandharvanāthāhaləp aṅiriṅakən sāmitra sutapa</l>
 <l n="b">ramyaṅ vidyādharī mvaṅ vivudhabala tumūt ṅkāne vuri pənuh</l>
@@ -1159,7 +1196,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="17" met="Śārdūlavikrīḍita">
+<div type="canto" n="17" met="śārdūlavikrīḍita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | \- \- ~ | \- \- ~ | =</note> -->
 <lg n="1"><l n="a">oṃ səmbahniṅ aṅarcane padayuga śrī dharmarājādhika</l>
 <l n="b">saṅ muṅgv iṅ varalokadhātu makacaityaṅ byoma tar popama</l> 
@@ -1248,7 +1285,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="19" met="Basantatilaka">
+<div type="canto" n="19" met="basantatilakā">
 <!-- <note type="prosody">\- \- ~ | \- ~ ~ | ~ \- ~ | ~ \- ~ | \- =</note> -->
 <lg n="1"><l n="a">ātmā ṅaranyaṅ avaloka mulat rikiṅ rāt</l>
 <l n="b">tar paṅrəṅə̄ svara kabeh yatikaṅ parātmā</l> 
@@ -1265,7 +1302,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="20" met="Bhujaṅgaprayāta">
+<div type="canto" n="20" met="bhujaṅgaprayāta">
 <!-- <note type="prosody">~ \- \- | ~ \- \- | ~ \- \- | ~ \- =</note> -->
 <lg n="1"><l n="a">sinuṅsuṅ kitenāpti de saṅ bibinta</l>
 <l n="b">asiṅ saprakāranya mānak ginəṅnya</l> 
@@ -1317,7 +1354,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="21" met="Mṛgāṅśa">
+<div type="canto" n="21" met="mr̥gāṅśa">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | =</note> -->
 <lg n="1"><l n="a">yekin janmarahasya mūlya pavarahkv iri kita pituhun</l>
 <l n="b">ndah yatneriya paṅrəṅə̄ varavarahku tan imanimanən</l>
@@ -1347,7 +1384,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="22" met="Sragdhara">
+<div type="canto" n="22" met="sragdhara">
 <!-- <note type="prosody">\- \- \- | \- ~ \- | \- ~ ~ | ~ ~ ~ | ~ \- \- | ~ \- \- | ~ \- =</note> -->
 <lg n="1"><l n="a">nāhan tekaṅ sinājñan ya tuhutuhu śarīraṅkun āvak bhaṭāra</l>
 <l n="b">ya ṅkā ya ṅke sinaṅguh ya kita ya ta kami khyāti riṅ svargaloka</l> 
@@ -1371,7 +1408,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="23" met="Jagaddhita">
+<div type="canto" n="23" met="jagaddhita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | \- ~ \- | ~ =</note> -->
 <lg n="1"><l n="a">maṅkā lvirnika saṅ guməgvani tapabrata maparəbutan manahnika</l>
 <l n="b">nāhan kāraṇaniṅ vatək viku haneṅ janapada kasilib ndatan ləpas</l>
@@ -1456,7 +1493,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="24" met="Aśvalalita">
+<div type="canto" n="24" met="aśvalalita">
 <!-- <note type="prosody">~ ~ ~ | ~ \- ~ | \- ~ ~ | ~ \- ~ | \- ~ ~ | ~ \- ~ | \- ~ ~ | ~ =</note> -->
 <lg n="1"><l n="a">atha ri huvusnirāmuhun aṅañjalī pada bhaṭāra buddha caritan</l>
 <l n="b">mijil iniriṅniṅ apsarabalādhikāra surakanyakāṅaləpakən</l>
@@ -1494,7 +1531,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="25" met="Śārdūlavikrīḍita">
+<div type="canto" n="25" met="śārdūlavikrīḍita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | \- \- ~ | \- \- ~ | =</note> -->
 <lg n="1"><l n="a">byātītan vivudhādhipātmaniran aṅgə̄ṅ glāna muṅgv iṅ kavah</l>
 <l n="b">saṅ kārīṅ suraloka rakva caritan śokānaṅis duhkhita</l> 
@@ -1525,72 +1562,83 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="26" met="Udgatavisama">
+<div type="canto" n="26" met="udgatavisama">
 <!-- <note type="prosody">~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | \- ~ \- | ~ = // \- ~ ~ | ~ ~ ~ | ~ \- ~ | ~ = // ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ \- ~ | =</note> -->
-<lg n="1"><l n="a">iti maṅkana śrutini sambatira kusumagandhikānaṅis</l>
+<lg n="1">
+<l n="a">iti maṅkana śrutini sambatira kusumagandhikānaṅis</l>
 <l n="b">dagdha manahira lələh kalaran</l> 
 <l n="c">ri haturnika prihati śoka kasyasih</l>
 
 </lg>
-<lg n="2"><l n="a">alisū gupe ləsu śarīranira təkap i śaktiniṅ lara</l>
+<lg n="2">
+<l n="a">alisū gupe ləsu śarīranira təkap i śaktiniṅ lara</l>
 <l n="b">sə̄k hatinira vulat ardha pətəṅ</l>
 <l n="c">kaləṅə̄r sumuṅkəm i vijaṅni saṅ sənəṅ</l>
-
 </lg>
-<lg n="3"><l n="a">paricārikāpsaravadhū tumuluṅ i sira marma sārjava</l>
+
+<lg n="3">
+<l n="a">paricārikāpsaravadhū tumuluṅ i sira marma sārjava</l>
 <l n="b">ḍū patutur ibu nahan pavuṅū</l> 
 <l n="c">niyatāhurip muvaha teki saṅ pəjah</l>
 <!-- <app>(b) P natan.</app> --> 
-
 </lg>
-<lg n="4"><l n="a">paṅadeśan i ṅvaṅ i katuhvan i samayanirāpsarādhipa</l>
+
+<lg n="4">
+<l n="a">paṅadeśan i ṅvaṅ i katuhvan i samayanirāpsarādhipa</l>
 <l n="b">tonən i marinira kuṣṭamala</l> 
 <l n="c">viparīta mithya sira teki liṅnira</l>
 <!-- <app>(a) T katūtan; (b) Y a (text i).</app> --> 
-
 </lg>
-<lg n="5"><l n="a">ri təlasny anugraha bhaṭāra daśabala ri saṅ surādhipa</l>
+
+<lg n="5">
+<l n="a">ri təlasny anugraha bhaṭāra daśabala ri saṅ surādhipa</l>
 <l n="b">tan hana mari ya kasaṅśayanən</l> 
 <l n="c">apan uttamāmṛta sudharma liṅnira</l>
 <!-- <app>(b) T marika ya saṅśayanən, V mara rika saṅśayanən.</app> --> 
-
 </lg>
-<lg n="6"><l n="a">ndya ta vāsananta rari tan tumutura ri kakuṅta saṅ pəjah</l>
+
+<lg n="6">
+<l n="a">ndya ta vāsananta rari tan tumutura ri kakuṅta saṅ pəjah</l>
 <l n="b">herən i samayanirāhuripa</l> 
 <l n="c">ri halintaṅ iṅ samaya sādhya taṅ pati</l>
-
 </lg>
-<lg n="7"><l n="a">na vuvusniṅ apsaravadhū mapitutur agave srəp iṅ manah</l>
+
+<lg n="7">
+<l n="a">na vuvusniṅ apsaravadhū mapitutur agave srəp iṅ manah</l>
 <l n="b">mogha ta ya təkapirān karəṅə̄</l>
 <l n="c">hana mātra paṅlilir i saṅ kakiṅkiṅan</l>
 <!-- <app>(a) TV mamitutur.</app> -->
 </lg>
 
 </div>
-<div type="canto" n="27" met="Kusumavilasita">
+<div type="canto" n="27" met="kusumavilasita">
 <!-- <note type="prosody">\- ~ ~ | \- ~ \- | ~ ~ ~ | \- ~ ~ | ~ ~ ~ | ~ \- ~ | \- ~ =</note> -->
-<lg n="1"><l n="a">ndan sira saṅ haneṅ niraya rakva carita ri saṅaṅ kuləmnira</l>
+<lg n="1">
+<l n="a">ndan sira saṅ haneṅ niraya rakva carita ri saṅaṅ kuləmnira</l>
 <l n="b">ṅkān kahanan tutur sira tatan sapira karasa tīkṣṇaniṅ kavah</l>
 <l n="c">ndug sapuluh kuləmnira samādhi rinəgəpira cittanirmala</l> 
 <l n="d">bhraṣṭa tikaṅ kavah lavan apuynya mati mahəli ratnapaṅkaja</l>
 <!-- <app>(c) RST dug.</app> --> 
-
 </lg>
-<lg n="2"><l n="a">mvaṅ taru khaḍga ramyaparijāta təmahan ika sarvaśobhita</l>
+
+<lg n="2">
+<l n="a">mvaṅ taru khaḍga ramyaparijāta təmahan ika sarvaśobhita</l>
 <l n="b">vvahnyan anindyaratna maṇi kostubha makusuma hāra kañcana</l> 
 <l n="c">komala patrapādapanikāmrik avaṅi rudhiranya motkaṭa</l>
 <l n="d">mary ahapək masaṅhir apəṅuk saguṇanika balik maveh sukha</l>
 <!-- <app>(b) P haratna kañcana, RS hara kañcana; (d) RS mahaṅir.</app> --> 
-
 </lg>
-<lg n="3"><l n="a">rākṣasa bahnivaktran umulat paravaśaniṅ aveci nirhapuy</l>
+
+<lg n="3">
+<l n="a">rākṣasa bahnivaktran umulat paravaśaniṅ aveci nirhapuy</l>
 <l n="b">sambut ikaṅ triśūla təhər aṅdhik anudiṅi kivāndrəṅ aṅgrəgut</l>
 <l n="c">syuh kahala triśūlanika mūr kadi havunika kādrəsan barat</l> 
 <l n="d">luṅha kameraṅən muvah akon ri dulurika gumanty amigraha</l>
 <!-- <app>(a) P avaiciniṅ apuy, RS avveci nir apuy; (b) PRSV aṅdik.</app> --> 
-
 </lg>
-<lg n="4"><l n="a">tan dva təkāgalak śakuni khaḍga maṅabalaṅakən karaṅ vəsi</l>
+
+<lg n="4">
+<l n="a">tan dva təkāgalak śakuni khaḍga maṅabalaṅakən karaṅ vəsi</l>
 <l n="b">sādrisuta pramāṇanika dūli təmahan iki kabvaṅ iṅ tavaṅ</l> 
 <l n="c">maṅkana salvir iṅ yamabalāṅhalahala paḍa mogha keraṅan</l>
 <l n="d">hetunikaṅ vatək yamanirākṣasa humatur i saṅ hyaṅ antaka</l>
@@ -1598,11 +1646,11 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="28" met="Kilayu anədəṅ">
+<div type="canto" n="28" met="kilayu anəḍəṅ">
 <!-- <note type="prosody">\- \- ~ | ~ ~ ~ | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | =</note> -->
 <lg n="1"><l n="a">səmbahnikiṅ asurasamantabhṛtya ri padāntakapati huniṅan</l>
 <l n="b">saṅ pūrṇavijaya pukulun kinonakən i saṅ hyaṅ alavasa kəlan</l>
-<l n="c">hīṅanya mara śatasahasravarṣa lavasanya yatika karəṅə</l>̄ 
+<l n="c">hīṅanya mara śatasahasravarṣa lavasanya yatika karəṅə̄</l>
 <l n="d">maṅke pva ya təka sapuluh kuləm niyata bhagna dadi surapada</l>
 <!-- <app>(a) P ikiṅ.</app> --> 
 
@@ -1641,7 +1689,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="29" met="Basantatilaka">
+<div type="canto" n="29" met="basantatilakā">
 <!-- <note type="prosody">\- \- ~ | \- ~ ~ | ~ \- ~ | ~ \- ~ | \- =</note> -->
 <lg n="1"><l n="a">mantuk bhaṭāra yamarāja tatan vivakṣan</l>
 <l n="b">saṅ nātha pūrṇavijayātmanireki vaktan</l>
@@ -1698,7 +1746,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="30" met="Jagaddhita">
+<div type="canto" n="30" met="jagaddhita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | \- ~ \- | ~ =</note> -->
 <lg n="1"><l n="a">nāhan tojariraṅ surādhipa rasanya karaṇani pasuṅsut iṅ priyā</l>
 <l n="b">āpan deni lulutnya tan kəna kinas həla-həla manivīṅ pasaṅgaman</l> 
@@ -1757,7 +1805,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="31" met="Mṛdukomala">
+<div type="canto" n="31" met="mr̥dukomala">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ \- ~ | ~ ~ =</note> -->
 <lg n="1"><l n="a">nāhan liṅ vivudhendra məṅgəp aṅalap kasor vulatira</l>
 <l n="b">marmāpet sivi harṣajāṅusapi luhniraṅ suravadhū</l> 
@@ -1814,7 +1862,7 @@ mss. indicates a common reading of all five mss.
 <l n="d">līlāmukti laṅə̄ hanan panaḍah iṅ natar saha kasih</l></lg>
 
 </div>
-<div type="canto" n="32" met="Sragdhara">
+<div type="canto" n="32" met="sragdhara">
 <!-- <note type="prosody">\- \- \- | \- ~ \- | \- ~ ~ | ~ ~ ~ | ~ \- \- | ~ \- \- | ~ \- =</note> -->
 <lg n="1"><l n="a">ndah luṅhāṅ kāla rātri krama təlas inatag saṅ vatək devasena</l>
 <l n="b">śīghrādan salviriṅ bhūṣaṇa parəṅ umijil riṅ ləbuh mvaṅ priyanya</l>
@@ -1859,58 +1907,66 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="33" met="Mālinī">
+<div type="canto" n="33" met="mālinī">
 <!-- <note type="prosody">~ ~ ~ | ~ ~ ~ | \- \- \- | ~ \- \- | ~ \- =</note> -->
-<lg n="1"><l n="a">irika ta hana manyup kāla advandva śaṅkha</l>
+<lg n="1">
+<l n="a">irika ta hana manyup kāla advandva śaṅkha</l>
 <l n="b">gumuruh abaruṅ atry ābheri lāvan mṛdaṅga</l>
 <l n="c">murava paḍahi boñjiṅ len mahāsāra muṇḍa</l> 
 <l n="d">dvanika paḍati vindā mārdavāsraṅ svaranya</l>
 <!-- <app>(a) P kālahanvandva, RS kala advandvan, TV kālahadvandva; Ed. śaṅka; (b) RS atri beri; (c) RS padati; PTV boñji; R munan, TV munda; (d) TV dhvanika; Y paḍahi.</app> --> 
-
 </lg>
-<lg n="2"><l n="a">tuvin amuvuhi ramyāṅ apsara mvaṅ surastrī</l>
+
+<lg n="2">
+<l n="a">tuvin amuvuhi ramyāṅ apsara mvaṅ surastrī</l>
 <l n="b">mijilakən i guṇanyānṛtta lālitya riṅ de</l> 
 <l n="c">vijah agaməl anekaṅ vadva ghūrṇa dhvaninya</l>
 <l n="d">pinakaśubhaviramyāṅdadyakən tuṣṭacitta</l>
 <!-- <app>(b) RS mijilakəna; T lāgityāṅde, V lagitya riṅ de; (c) P ghūrṇaṅ; (d) RS pinaka guda ri ramya, TV pinakagubariramya.</app> --> 
-
 </lg>
-<lg n="3"><l n="a">agəlis asəmu cumbv an kinnarābhaṇḍagarya</l>
+
+<lg n="3">
+<l n="a">agəlis asəmu cumbv an kinnarābhaṇḍagarya</l>
 <l n="b">kalih ika paḍa kambo lāghavādhārabhaṇḍa</l>
 <l n="c">kadi gilagila harṣānəmvakən bhāva hāsya</l> 
 <l n="d">calita tuhu matampil solahiṅ vruh tar olug</l>
 <!-- <app>(b) RS lagava dara banda, V laghava dhara bhandha; (d) R cali tutu, ST calita tutu; V tutut atampil; P tarolu, T tarogul.</app> --> 
-
 </lg>
-<lg n="4"><l n="a">aparimita kiduṅniṅ deva lāvan surastrī</l>
+
+<lg n="4">
+<l n="a">aparimita kiduṅniṅ deva lāvan surastrī</l>
 <l n="b">sahananika manojña prastutī devapūjā</l> 
 <l n="c">hana ta maṅabhivādeṅ śloka soccāraṇārūm</l>
 <l n="d">gurulaghunira patyātūt lavan kaṅsi vīṇa</l>
 <!-- <app>(d) Ed. kaṅśivinna.</app> --> 
-
 </lg>
-<lg n="5"><l n="a">ikaṅ i vuri luməṅhe hyus luse tan sasampur</l>
+
+<lg n="5">
+<l n="a">ikaṅ i vuri luməṅhe hyus luse tan sasampur</l>
 <l n="b">kadi minaha katonā madhya rosnyāṅgaluṅgaṅ</l>
 <l n="c">pujipuji savaveṅ rosniṅ vuluh danta śuddha</l> 
 <l n="d">syapa ləviha kadi ṅvaṅ ceṣṭaniṅ buddhy aḍaṅhan</l>
 <!-- <app>(a) P ika ri; RS lyan, TV lyas (text hyus); R ta saṅ sampur, STV tāsasampur; (b) T -āṅgaluntaṅ.</app> --> 
-
 </lg>
-<lg n="6"><l n="a">saṅ atəlasan anṛttāninditānvam tuvuhnya</l>
+
+<lg n="6">
+<l n="a">saṅ atəlasan anṛttāninditānvam tuvuhnya</l>
 <l n="b">iniriṅ i vuri len taṅ cārakākveh ri vuntat</l> 
 <l n="c">pilih amənaṅ ataṇḍiṅ rūm sakeṅ kāmaloka</l>
 <l n="d">hayunika tuvin aṅsal yan təkeṅ rūmnya devī</l>
 <!-- <app>(b) P tā; RS sato kveh riṅ untat; (d) RS deva.</app> --> 
-
 </lg>
-<lg n="7"><l n="a">atha səḍəṅ asəlur taṅ ghoṣaniṅ sarvapūjā</l>
+
+<lg n="7">
+<l n="a">atha səḍəṅ asəlur taṅ ghoṣaniṅ sarvapūjā</l>
 <l n="b">atiśaya karəṅə̄ riṅ svargaloka prakāśa</l>
 <l n="c">paḍa sukha manah apty aṅrəṅvakən saṅ vatək hyaṅ</l> 
 <l n="d">gumuṇita riṅ ulah mahyun tumontona ramya</l>
 <!-- <app>(c) P mahaptyaṅ- (tṛ subscribed after ha); Y apta rəṅvakən.</app> --> 
-
 </lg>
-<lg n="8"><l n="a">yama baruṇa kuvera mvaṅ bhaṭārendra mukhya</l>
+
+<lg n="8">
+<l n="a">yama baruṇa kuvera mvaṅ bhaṭārendra mukhya</l>
 <l n="b">paḍa təka sira lāvan saṅ vatək devatārṣi lvir</l> 
 <l n="c">inatagakən eṅgal prāpta riṅ bodhicitta</l>
 <l n="d">praṇata paḍa hanəmbah sādare jə̄ṅ jinendra</l>
@@ -1918,58 +1974,66 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="34" met="Śārdūlavikrīḍita">
+<div type="canto" n="34" met="śārdūlavikrīḍita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | \- \- ~ | \- \- ~ | =</note> -->
-<lg n="1"><l n="a">ṅkā saṅ hyaṅ yama mojar atvaṅ i pada śrī śākyasiṅhādhipa</l>
+<lg n="1">
+<l n="a">ṅkā saṅ hyaṅ yama mojar atvaṅ i pada śrī śākyasiṅhādhipa</l>
 <l n="b">saṅ hyaṅ ndyeki nimitta pūrṇavijayeṅgal pātakanyan</l>
 <l n="c">hilaṅ āpan ṅūni ranak bhaṭāra ruməṅə̄ sojar vatək devatā</l> 
 <l n="d">an rakvālavaseṅ kavah rasika len riṅ lohabhūpātana</l>
 <!-- <app>(b) RS -nya ṅ ilaṅ.</app> --> 
-
 </lg>
-<lg n="2"><l n="a">lāvan kāraṇa tattva bhūtanika ṅūnīṅ rāt dumeh pātaka</l>
+
+<lg n="2">
+<l n="a">lāvan kāraṇa tattva bhūtanika ṅūnīṅ rāt dumeh pātaka</l>
 <l n="b">hetunyan patəmah surādhipa tuhun kleśanya tapvan hilaṅ</l> 
 <l n="c">nāhan takvanira hyaṅ antakapati ṅkā saṅ hyaṅ ojar sira</l>
 <l n="d">he sakveh para devatā miḍəṅəre śabdaṅku yatnā kita</l>
 <!-- <app>(d) PTV miḍənəreṅ.</app> --> 
-
 </lg>
-<lg n="3"><l n="a">vvantən ṅūni ri martyaloka kahananyaṅ vadva nityenaləm</l>
+
+<lg n="3">
+<l n="a">vvantən ṅūni ri martyaloka kahananyaṅ vadva nityenaləm</l>
 <l n="b">khyātīṅ rāt vara bhūmimaṇḍala ṅaranyārnəb subhikṣāhaləp</l>
 <l n="c">ṅkā taṅ śreṣṭha haranya mūladhara səh riṅ dṛvya mas mvaṅ maṇi</l> 
 <l n="d">kāsihnyāhayu nāma saṅ sumaliṇī hatyanta bhaktīṅ sənəṅ</l>
 <!-- <app>(a) Y madhyaloka; T kahananyā; PRT -enaləp; (b) RS ṅaranyarnah, T ṅaranyarṇag; (d) RS kasihnyayu anama; T antyanta; P bhaktī.</app> --> 
-
 </lg>
-<lg n="4"><l n="a">vvah durśīla vənaṅ malap sakaharəp strī dṛvyaniṅ vvaṅ vaneh</l>
+
+<lg n="4">
+<l n="a">vvah durśīla vənaṅ malap sakaharəp strī dṛvyaniṅ vvaṅ vaneh</l>
 <l n="b">bvat kopāṅavamāna hīna mṛṣaśabda crolnya coreṅ laku</l> 
 <l n="c">hiṅsākarma masampay iṅ vvaṅ atuha mvaṅ riṅ vatək paṇḍita</l>
-<l n="d">sakvehniṅ vvah adah kaniṣṭha ri hiḍəpnya śreṣṭha mūrkhāvərə</l>̄
+<l n="d">sakvehniṅ vvah adah kaniṣṭha ri hiḍəpnya śreṣṭha mūrkhāvərə̄</l>
 <!--<app>(d) PTV aḍah.</app> --> 
-
 </lg>
-<lg n="5"><l n="a">yekā tāṅhanakən yaśāhaləp i piṅgirniṅ havan gə̄ṅ ayun</l>
+
+<lg n="5">
+<l n="a">yekā tāṅhanakən yaśāhaləp i piṅgirniṅ havan gə̄ṅ ayun</l>
 <l n="b">ramyāpan hana dharmapātra saphalākveh tvak səkul brəm kilaṅ</l>
 <l n="c">lāvan dāna suvarṇa ratna rajatā vastrāmbara mvaṅ paśu</l> 
 <l n="d">āstām taṅ kahatur təlas mara ri saṅ hyaṅ dharma siddhaṅ ləpas</l>
 <!-- <app>(d) RSV sida ləpas.</app> --> 
-
 </lg>
-<lg n="6"><l n="a">vvantən teki muvah vvaṅ atpada ṅaranyotsāhadharma sthiti</l>
+
+<lg n="6">
+<l n="a">vvantən teki muvah vvaṅ atpada ṅaranyotsāhadharma sthiti</l>
 <l n="b">ndan kāsihnya ṅaran sudharmika śuci vruh bhakty agurv iṅ sənəṅ</l> 
 <l n="c">santoṣāhəniṅ iṅ manah lakibi dharmeṣṭi tiśṛddheṅ tamuy</l>
 <l n="d">sāntuknyāgəmət iṅ gaṅan lalab ulihnyākāyikan sakrama</l>
 <!-- <app>(c) Y ri laki (text lakibi); RS darmestiti grədeṅ; T dharmesthī; (d) Y santusnya-.</app> --> 
-
 </lg>
-<lg n="7"><l n="a">nāhan rakva vinehakən dinuluranyan citta tuṣṭāhəniṅ</l>
+
+<lg n="7">
+<l n="a">nāhan rakva vinehakən dinuluranyan citta tuṣṭāhəniṅ</l>
 <l n="b">aṅkən riṅ halivat havan ḍatəṅ arāryan ṅke gṛhanyālaṅə̄</l>
 <l n="c">tovin ramya natarnya marsik agənət lumrāṅ səkar tanduran</l> 
 <l n="d">ṅkāne heṅ payaśan muvah tiki haneṅ jro muṅgv i saṇḍiṅ bale</l>
 <!-- <app>(a) T -āsənəṅ; (b) T tkeṅ, V təke; (d) PV ṅkaneṅ; RSV hane; PRSV muṅgvasaṇḍiṅ; RS iṅ bala (text bale).</app> --> 
-
 </lg>
-<lg n="8"><l n="a">moghāsaṇḍiṅ i kīrti mūladhara taṅ veśmāparək riṅ hənū</l>
+
+<lg n="8">
+<l n="a">moghāsaṇḍiṅ i kīrti mūladhara taṅ veśmāparək riṅ hənū</l>
 <l n="b">yekān hetuni duhkha mūladhara ri sy utsāhadharmāyaśa</l> 
 <l n="c">krodhan tuṇḍuṅ ikaṅ vvaṅ atpada tumūt riṅ buddhidharmeṅ jagat</l>
 <l n="d">luṅhāləs ri huvusnikāṅulihulih kālih priyā kasyasih</l>
@@ -1977,7 +2041,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="35" met="Basantatilaka">
+<div type="canto" n="35" met="basantatilakā">
 <!-- <note type="prosody">\- \- ~ | \- ~ ~ | ~ \- ~ | ~ \- ~ | \- =</note> -->
 <lg n="1"><l n="a">honyeki mūlyaphala parvata dibya ramya</l>
 <l n="b">ṅkānaṅ gavenya patapan masamīpa mārga</l>
@@ -2024,7 +2088,7 @@ mss. indicates a common reading of all five mss.
 <l n="d">nāhan phalanya ruməṅə̄ pavarahku dharma</l></lg>
 
 </div>
-<div type="canto" n="36" met="Toṭaka">
+<div type="canto" n="36" met="toṭaka">
 <!-- <note type="prosody">~ ~ \- | ~ ~ \- | ~ ~ \- | ~ ~ =</note> -->
 <lg n="1"><l n="a">ya ta hetunikaṅ varadeva kabeh</l>
 <l n="b">varadharma gəgən sipi dibyanira</l> 
@@ -2047,7 +2111,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="37" met="Vīralalita = Jagatpramudita">
+<div type="canto" n="37" met="vīralalita">
 <!-- <note type="prosody">\- ~ ~ | \- ~ \- | ~ ~ ~ | \- ~ \- | ~ ~ ~ | =</note> -->
 <lg n="1"><l n="a">sampun i saṅ vatək hyaṅ umulih mareṅ surapada</l>
 <l n="b">ṅkā ta marək muvah vivudhanātha pūrṇavijaya</l> 
@@ -2071,7 +2135,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="38" met="Śārdūlavikrīḍita">
+<div type="canto" n="38" met="śārdūlavikrīḍita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | \- \- ~ | \- \- ~ | =</note> -->
 <lg n="1"><l n="a">mvaṅ taṅ dāna catuṣprakāra kahatur puṇyādhikāreṅ jagat</l>
 <l n="b">kambaṅ pālava len gaṅan kayu uyah toyānna sāsiṅ hana</l>
@@ -2102,7 +2166,7 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="39" met="Vīralalita = Jagatpramudita">
+<div type="canto" n="39" met="vīralalita">
 <!-- <note type="prosody">\- ~ ~ | \- ~ \- | ~ ~ ~ | \- ~ \- | ~ ~ ~ | =</note> -->
 <lg n="1"><l n="a">maṅkana kupva sandhiniṅ upāya puṇya rahayu</l>
 <l n="b">ṅhiṅ pukulun tulustulusa saṅ hyaṅ ojara muvah</l>
@@ -2194,44 +2258,50 @@ mss. indicates a common reading of all five mss.
 <l n="d">mvaṅ sira gandhavaty aṅusiraṅ tapānuta sənəṅ</l></lg>
 
 </div>
-<div type="canto" n="40" met="Girīśa">
+<div type="canto" n="40" met="giriśa">
 <!-- <note type="prosody">~ ~ ~ | ~ ~ ~ | \- \- \- | \- \- ~ | ~ ~ ~ | =</note> -->
-<lg n="1"><l n="a">ri huvusira manambah riṅ śrī śākyamunisura</l>
+<lg n="1">
+<l n="a">ri huvusira manambah riṅ śrī śākyamunisura</l>
 <l n="b">mijil iniriṅ i sakvehniṅ vadvā vivudha tumut</l>
 <l n="c">sukha manahira līlāpan siddhaṅ kṛtasamaya</l> 
 <l n="d">abhinavanira tan len siddhāniṅ laris atapa</l>
 <!-- <app>(d) P siddhanni ṅ-, RS sidaniṅ, V siddhaniṅ.</app> --> 
-
 </lg>
-<lg n="2"><l n="a">rinasanira ləhəṅ yan prāpteṅ parvata tumuluy</l>
+
+<lg n="2">
+<l n="a">rinasanira ləhəṅ yan prāpteṅ parvata tumuluy</l>
 <l n="b">supadi sira təkā riṅ kendran maṅkata matapa</l> 
 <l n="c">tinaha kasuvayāṅher kekət riṅ viṣaya daṅū</l>
 <l n="d">makin atəguh i gə̄ṅniṅ tṛṣṇāmbandhana pinəgat</l>
 <!-- <app>(a) P tumiliy; (b) lacking in P; V maṅkatatapa.</app> --> 
-
 </lg>
-<lg n="3"><l n="a">karaṇaniran arāryan ramyāhəmhəman apupul</l>
+
+<lg n="3">
+<l n="a">karaṇaniran arāryan ramyāhəmhəman apupul</l>
 <l n="b">hana patani mapañjaṅ ya toṅgvanira pinarək</l>
 <l n="c">huvus ahaləp atiṅkah padmāsthāna kinənakən</l> 
 <l n="d">irika ta sira mojar maṅde vlasnikaṅ anivi</l>
 <!-- <app>(a) PRV ramyaṅhəmhəman, T rāmyaṅhə̄mhə̄man; (c) T padmasthāna, V padmasvana; (d) P niṅ anivi.</app> --> 
-
 </lg>
-<lg n="4"><l n="a">kṣamakəna vuvus i ṅvaṅ de gandharvabala kabeh</l>
+
+<lg n="4">
+<l n="a">kṣamakəna vuvus i ṅvaṅ de gandharvabala kabeh</l>
 <l n="b">ṅhulun atiki viśāteṅ adry amrihmriha matapā</l> 
 <l n="c">muliha ta kita maṅke riṅ svargālaya valuyi</l>
 <l n="d">apan iki gatini ṅvah lvir nāthānilihi bala</l>
 <!-- <app>(b) SV ateki; (c) P vuluyi, Y valuya.</app> --> 
-
 </lg>
-<lg n="5"><l n="a">yadi hana suranātha dlāhāṅgantyani sinivi</l>
+
+<lg n="5">
+<l n="a">yadi hana suranātha dlāhāṅgantyani sinivi</l>
 <l n="b">umuyahana samudra ṅvaṅ maṅke mucap i kita</l>
 <l n="c">rusit iṅ aṅiriṅ ambək riṅ svāmin paṅinakana</l> 
 <l n="d">tuhutuhu dṛḍha bhaktyāśuśrūṣānuṅ ulahakən</l>
 <!-- <app>(a) P yadiyana.</app> --> 
 
 </lg>
-<lg n="6"><l n="a">jhaṭiti parəṅ anəmbah sakveh saṅ vivudhabala</l>
+<lg n="6">
+<l n="a">jhaṭiti parəṅ anəmbah sakveh saṅ vivudhabala</l>
 <l n="b">ṅuni hayunira kanyā gandharva praṇata marək</l> 
 <l n="c">kimuta lara saṅ antən sakveh saṅ mamalihi kuṅ</l>
 <l n="d">hana tumaṅisi jə̄ṅ śrī gandharvādhipa masayut</l>
@@ -2239,9 +2309,10 @@ mss. indicates a common reading of all five mss.
 </lg>
 
 </div>
-<div type="canto" n="41" met="Jagaddhita">
+<div type="canto" n="41" met="jagaddhita">
 <!-- <note type="prosody">\- \- \- | ~ ~ \- | ~ \- ~ | ~ ~ \- | ~ ~ ~ | ~ ~ ~ | \- ~ \- | ~ =</note> -->
-<lg n="1"><l n="a">tāṅeh yan huniṅan pataṅgəh ikaṅ apsarabala kalavan varāpsarī</l>
+<lg n="1">
+<l n="a">tāṅeh yan huniṅan pataṅgəh ikaṅ apsarabala kalavan varāpsarī</l>
 <l n="b">śrī vidyādharanātha tṛṣṇa pinəgatnira makakaraṇaṅ sthirabrata</l>
 <l n="c">nāhan hetuniran laris lumaku maṅkat atapa makapaṅharəp priyā</l> 
 <l n="d">sampun rakva sulakṣaṇa kramanirāmagəhi tapa mahāyanabrata</l>
