@@ -2,32 +2,25 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="pararaton">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">Pararaton</title>
-                <!--change the title of the edition starting, if possible, with the title of your text-->
-                <!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
-                <!--<title type="alt"></title>-->
-                <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
-                <!--<title type="original" xml:lang="...-Latn"></title>-->
-                <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+                <title type="editorial">Pararaton, or The Monarchs: Digital Edition</title>
+                <title type="alt">after the editions by Brandes (1896, 1920)</title>
+            	 <title type="original" xml:lang="kaw-Latn">Pararaton</title>
                 <!--<author></author>-->
-                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
-                <respStmt>
-                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
-                    <resp>author of digital edition</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:jodo"><!-- update the id -->
-                        <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Doe</surname>
-                    </persName>
-                </respStmt>
+            	<respStmt>
+            		<resp>author of digital edition</resp>
+            		<persName ref="part:wjsa">
+            			<forename>Wayan Jarrah</forename>
+            			<surname>Sastrawan</surname>
+            		</persName>
+            	</respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <pubPlace>Canberra</pubPlace>
                 <idno type="filename">DHARMA_CritEdPararaton.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
@@ -38,48 +31,13 @@
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <!-- One witness for each manuscript. Update the content -->
-                    <witness xml:id="fakeID">
-                        <!-- Give your witness an unique identifier -->
-                        <abbr type="siglum"></abbr>
-                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement>Leiden</settlement>
-                                <institution>University Library (UB)</institution>
-                                <repository>Lontar</repository>
-                                <idno>Or. 23732</idno>
-                            </msIdentifier>
-                            <msContents>
-                                <!-- the msContents isn't mandatory -->
-                                <msItem>
-                                    <author>Śāntarakṣita</author>
-                                    <title>Vipañcitārthā</title>
-                                    <!-- You can also add a colophon if needed -->
-                                    <!--<colophon>
-										<quote></quote>
-										</colophon> -->
-                                    <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
-                                </msItem>
-                            </msContents>
-                            <physDesc>
-                                <objectDesc>
-                                    <!-- Here you can give a physical description of the manuscript in prose-->
-                                    <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
-                                </objectDesc>
-                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
-                                    <!-- Create a handNote for each hand -->
-                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
-                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
-                                        <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
-                                    </handNote>
-                                </handDesc>
-                            </physDesc>
-                            <history>
-                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
-                            </history>
-                        </msDesc>
+                     <witness xml:id="ed1896">
+                		<abbr type="siglum">Ed<hi rend="superscript">1</hi></abbr>
+                		<bibl><ptr target="bib:Brandes1896_01"/></bibl>
+                     </witness>
+                    <witness xml:id="ed1920">
+                        		<abbr type="siglum">Ed<hi rend="superscript">2</hi></abbr>
+			<bibl><ptr target="bib:Brandes1920_01"/></bibl>
                     </witness>
                 </listWit>
             </sourceDesc>
@@ -104,7 +62,7 @@
                         ə  -> ə
                     </p>
                     <p>The macron diacritic is represented by ¯ rather than by the editors' ^.</p>
-                    <p>The editors' punctuation is preserved. </p>
+                    <p>The editors' punctuation is preserved.</p>
                 </normalization>
                 <interpretation>
                     <p/>
@@ -115,16 +73,19 @@
             </samplingDecl>    
         </encodingDesc>
         <revisionDesc>
-            <change who="part:axja" when="2021-12-23" status="draft">Updating the content for variantEncoding</change>
+        	<change who="part:argr" when="2025-05-25" status="draft">encoded teiHeader and bibliography</change>
+        	<change who="part:axja" when="2025-05-24" status="draft">conversion from googledoc to XML-TEI</change>
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve">
 		<body>
-			<div type="edition" xml:lang="und"> 
+			<div type="edition" xml:lang="kaw-Latn"> 
 
-<div><ab type="invocation">
-<pb n="3"/>
-<lb n="1:1"/>oṁ avighnam astu namas siddhaṁ.</ab></div>
+<div>
+<ab type="invocation">
+<pb edRef="#ed1920" n="3"/>
+<lb n="1:1"/>oṁ avighnam astu namas siddhaṁ.</ab>
+</div>
 
 <div type="section">
 <lb n="1:2"/>nihan katuturanira ken aṅrok. mulanira duk dinadekən manuṣa, hana
@@ -146,7 +107,7 @@
 <div type="section">
 təlasira maṅkana mūr ta sira mariṅ viṣṇubhuvana, tan
 <lb n="1:16"/>liñok iṅ rasaniṅ saṅketanira saṅ pinakacaru amalaku ta sira titisakəna
-<pb n="4"/>
+<pb edRef="#ed1920" n="4"/>
 <lb n="1:17"/>ri vetaniṅ kavi. sira bhaṭāra brahmā aṅiliṅiliṅi ta sira rovaṅanirāyu-
 <lb n="1:18"/>gaha, huvusiṅ maṅkana hana ta voṅ apaṅantenan hañar, səḍəṅ akurənan
 <lb n="1:19"/>sih, lanaṅ aran sira gajahpara, vadon aran sira ken əṇḍok, aṅulahakən
@@ -177,9 +138,9 @@ təlasira maṅkana mūr ta sira mariṅ viṣṇubhuvana, tan
 </div>
 <div type="section">
 vəkasan huvus gənəp lekiṅ rare mətu
-<lb n="2:23"/>rare lanaṅ, binuñcal iṅ pabajaṅan denira ken əṇḍok. dadi hana voṅ ama-
-<pb n="5"/>
-<lb n="2:24"/>maliṅ, aran sira lemboṅ, kasasar iṅ pabajaṅan tumiṅhal iṅ murub,
+<lb n="2:23"/>rare lanaṅ, binuñcal iṅ pabajaṅan denira ken əṇḍok. dadi hana voṅ ama<pb 
+edRef="#ed1920" n="5" break="no"/><lb 
+n="2:24" break="no"/>maliṅ, aran sira lemboṅ, kasasar iṅ pabajaṅan tumiṅhal iṅ murub,
 <lb n="2:25"/>pinaran denira lemboṅ, amirəsəp rare anaṅis, pinarəkan denira lemboṅ,
 <lb n="2:26"/>siṅgih kaṅ murub rare anaṅis ika, sinambut iṅəmban bhinakta mantuk, den-
 <lb n="2:27"/>aku vəka dera lemboṅ. aṅruṅu sira ken əṇḍok yen sira lemboṅ aṅa-
@@ -210,7 +171,7 @@ vəkasan huvus gənəp lekiṅ rare mətu
 <lb n="3:15"/>kiṅ karuman ananakti mariṅ rabut jalu, aṅrəṅə̄ ujar sakiṅ ākāśa kinon
 <lb n="3:16"/>muliha manih mariṅ karuman, "hana anakmami aṅhuvusakəna hutaṅta aran
 <lb n="3:17"/>sira ken aṅrok." sah sira baṅo samparan sakiṅ rabut jalu, lumampah
-<pb n="6"/>
+<pb edRef="#ed1920" n="6"/>
 <lb n="3:18"/>saratri, dadi amaṅgih rare, kahitaṅ vidhiniṅ hyaṅ denira baṅo samparan,
 <lb n="3:19"/>siṅgih ta sira ken arok, bhinakta mantuk mariṅ karuman, iṅaku vəka
 <lb n="3:20"/>denira baṅo samparan. anuli mariṅ kabotohan, kapaṅgih sira malandaṅ  
@@ -223,8 +184,8 @@ vəkasan huvus gənəp lekiṅ rare mətu
 <lb n="3:27"/>ta sira iṅaku anak ta denira gənuk buntu. alavas sira haneṅ karuman,
 <lb n="3:28"/>tan apatut sira kalavan parapañji kabeh, donira ken aṅrok sah sakiṅ
 <lb n="3:29"/>karuman. 
-
 </div>
+
 <div type="section">
 tumuli sira riṅ kapuṇḍuṅan amaṅgih sira raryāṅon anakira
 <lb n="3:30"/>tuvan sahaja, buyut iṅ sagəṅgəṅ, aran sira tuvan tita, apasanakan
@@ -244,7 +205,7 @@ tumuli sira riṅ kapuṇḍuṅan amaṅgih sira raryāṅon anakira
 <lb n="4:9"/>vohiṅ jambu punika, maha kacitta vohiṅ jambu punika. təkaniṅ saratri,
 <lb n="4:10"/>māsa sirəpiṅ voṅ aturu, sira ken aṅrok sira aturu, maṅke taṅ lalavah
 <lb n="4:11"/>mətu sakiṅ vunvunanira ken aṅrok adulurdulur tanpapəgatan, savəṅi ama-
-<pb n="7"/>
+<pb edRef="#ed1920" n="7"/>
 <lb n="4:12"/>ṅan vohiṅ jambunira jaṅgan. tumuli riṅ eñjaṅ katiṅhalan agəlar
 <lb n="4:13"/>vohiṅ jambu punika riṅ natar, pinupu deniṅ pəpəḍəkira jaṅgan. sira 
 <lb n="4:14"/>jaṅgan tumon vohiṅ jambu rusak agəlar iṅ natar, śoka sira jaṅgan, li-
@@ -276,7 +237,7 @@ tumuli sira riṅ kapuṇḍuṅan amaṅgih sira raryāṅon anakira
 <div type="section">
 maṅkin mərsah sira ken
 <lb n="5:4"/>aṅrok, vəkasan sira analava voṅ malintaṅ havan, ya ta kavərta təkeṅ
-<pb n="8"/>
+<pb edRef="#ed1920" n="8"/>
 <lb n="5:5"/>nagareṅ daha denira ken aṅrok aṅrusuh, ya ta iṅilaṅakən sakiṅ tumapəl
 <lb n="5:6"/>denira saṅ akuvu aran tuṅgul amətuṅ. sah sira ken aṅrok sakiṅ sa-
 <lb n="5:7"/>gəṅgəṅ, aṅuṅsi ta sira mariṅ rabut garontol. "mogha ta kabəbəṅ riṅ bañu
@@ -305,7 +266,7 @@ maṅkin mərsah sira ken
 <lb n="5:30"/>tuṅgal, kari lilima; kaṅ luṅha ginanten atanəma denira ken aṅrok, təka
 <lb n="5:31"/>kaṅ amburu riṅ sira, tur aṅucap riṅ siramaṇḍala: "e kaki maṇḍala, hana
 <lb n="5:32"/>voṅ arusuh isun-buru, aṅuṅsi iṅkene mahu". sumahur siramaṇḍala: "kaki
-<pb n="9"/>
+<pb edRef="#ed1920" n="9"/>
 <lb n="5:33"/>dayakanira tan tuhu aliñok iṅsun kaki, yen noreṅkene; hanānakiṅsun nənəm,
 <lb n="5:34"/>iki atanəm gənəp nənəm, vilaṅən uga denira, manava ləvih sakiṅ nənəm,
 <lb n="6:1"/>tuhu hana voṅ len iṅkene". ujariṅ amburu: "tuhu yen anakira maṇḍala
@@ -335,7 +296,7 @@ anuli sira ken anrok aṅuṅsi riṅ ano. sah sira riṅ alas
 <lb n="6:21"/>yen hana luve, amalampaha səkul naṅkən dina, apan iṅsun pratidina aṅa-
 <lb n="6:22"/>ḍaṅaḍaṅ təkahaniṅ tatamu". təhər iṅajak sira ken aṅrok ḍatəṅ iṅ
 <lb n="6:23"/>batur denira maṇḍala, sinvagatan sireṅ səkul ulam. liṅira maṇḍala riṅ
-<pb n="10"/> 
+<pb edRef="#ed1920" n="10"/> 
 <lb n="6:24"/>istrinira: "nini bhaṭari iṅsun aməməkas iṅ sira, lamun ken aṅrok
 <lb n="6:25"/>maririka, mon iṅsun tan hana riṅ umah tuvi, kukurənən tumuli, aməla-
 <lb n="6:26"/>sakən". 
@@ -368,7 +329,7 @@ ya ta ken aṅrok katutur naṅkən dina təka, luṅhanira sakiṅ rika
 <lb n="7:16"/>kəna lakar katunanira maṇḍaleṅ bapa. maṅkat sira ken aṅrok ḍatəṅ riṅ
 <lb n="7:17"/>kabalon, tan kapihandəl sira ken aṅrok denira saṅ apaliṅgih riṅ kabalon.
 <lb n="7:18"/>samaṅka ta sərṅən sira ken aṅrok: "mogha hana əmbaṅ riṅ panapen".
-<pb n="11"/>
+<pb edRef="#ed1920" n="11"/>
 <lb n="7:19"/>sinuduk denira ken aṅrok, malayu aṅuṅsi riṅ hyaṅ buyut iṅ kaba-
 <lb n="7:20"/>lon, iṅatagakən sira parakategan sahaneṅ kabalon paraguruhyaṅ təkaniṅ 
 <lb n="7:21"/>kapuntan, sama mədal amava palugaṅśa, amburu riṅ sira ken aṅrok
@@ -400,7 +361,7 @@ ya ta ken aṅrok katutur naṅkən dina təka, luṅhanira sakiṅ rika
 <lb n="8:9"/>liṅira nini riṅ panitikan: "mami aṅrovaṅana asənətana kita bapa, tan
 <lb n="8:10"/>hananiṅ vruha, mami ta ananapua riṅ gunuṅ ləjar səḍəṅiṅ deva ahum  
 <lb n="8:11"/>kabeh." maṅkana liṅira nini panitikan. ya ta mara sira ken aṅrok riṅ 
-<pb n="12"/>
+<pb edRef="#ed1920" n="12"/>
 <lb n="8:12"/>gunuṅ ləjar. katəkan pva budha hirəṅ iṅ varigadyan, mara pva sira
 <lb n="8:13"/>riṅ pahəman. ya ta sira asənətan iṅ pavuhan iṅurugan sukət denira ra-
 <lb n="8:14"/>nini panitikan. təhər muni kaṅ saptasvara gəntər patər liṇḍu kətug kilat
@@ -428,7 +389,7 @@ ya ta ken aṅrok katutur naṅkən dina təka, luṅhanira sakiṅ rika
 <lb n="9:2"/>kabotohan, vinaspaḍakən siṅgih kaṅ katon iṅ puja denira ḍaṅhyaṅ
 <lb n="9:3"/>lohgave. tumuli sira tinañan, liṅira ḍaṅhyaṅ lohgave: "iya sira kaki,
 <lb n="9:4"/>aran ken aṅrok, saṅkaniṅsun vruh iṅ sira, katon iṅ puja deniṅsun".
-<pb n="13"/>
+<pb edRef="#ed1920" n="13"/>
 <lb n="9:5"/>sumahur ken aṅrok: "siṅgih pukulun, ranakira aran ken aṅrok." ri-
 <lb n="9:6"/>naṅkul sira denira saṅ brahmaṇa. liṅira ḍaṅhyaṅ lohgave: "iṅsun-
 <lb n="9:7"/>aku anak sira kaki, iṅsun-rovaṅ suk anastapa, iṅsun-voṅ saparanira." 
@@ -460,7 +421,7 @@ ya ta ken aṅrok katutur naṅkən dina təka, luṅhanira sakiṅ rika
 <lb n="9:30"/>sira mpu purva anibakən samaya tan rahaju, liṅira: "lah kaṅ amaloyakən 
 <lb n="9:31"/>anakiṅsun mogha tan tutuga pamuktine matia binahud aṅəris; maṅkana voṅ 
 <lb n="9:32"/>panavijen asata paṅaṅsone, mogha tan mətua bañune bejine iki, dosane nora
-<pb n="14"/>
+<pb edRef="#ed1920" n="14"/>
 <lb n="9:33"/>avarah iriṅsun yen anakiṅsun den-valatiṅ voṅ". maṅkana liṅira mpu
 <lb n="9:34"/>purva. "kalavan ta anakiṅsun marajakən karma amamaḍaṅi, aṅhiṅ sot- 
 <lb n="9:35"/>mami riṅ anakmami mogha anəmva rahayu den-aguṅ bhāgyane". maṅ- 
@@ -488,7 +449,7 @@ ya ta ken aṅrok katutur naṅkən dina təka, luṅhanira sakiṅ rika
 <lb n="10:22"/>"lamun maṅkana, bapa, iṅsun, amit iṅ sira". sumahur saṅ brahmaṇa: "ma- 
 <lb n="10:23"/>riṅ punəṇḍi ta sira kaki". sumahur ken aṅrok: "iṅsun ḍatəṅ iṅ karuman  
 <lb n="10:24"/>vontən bobotoh aṅaṅkən vəka iriṅsun, aran sira baṅo samparan, asih iriṅsun;
-<pb n="15"/>  
+<pb edRef="#ed1920" n="15"/>  
 <lb n="10:25"/>punika iṅsun-tarinipun kadi ayogyanana". liṅira ḍaṅhyaṅ: "rahayu yan
 <lb n="10:26"/>maṅkana, sampun ta, kaki, sira alavas iṅ karuman". liṅira ken aṅrok:
 <lb n="10:27"/>"punapa karyaniṅsun alavasa". 
@@ -517,7 +478,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="11:11"/>suduka riṅ kəris kuraṅ yoninya. hana mitraniṅsun paṇḍe riṅ lulumbaṅ,
 <lb n="11:12"/>aran mpu gandriṅ, yoni olih agave kəris, norana voṅ atəguh dene pagavene,
 <lb n="11:13"/>tan amiṅroni yen sinudukakən, ika konən akarya ḍuhuṅ. yen huvus dadi
-<pb n="16"/>
+<pb edRef="#ed1920" n="16"/>
 <lb n="11:14"/>kəris, ṅgenirāñidra riṅ ki tuṅgul amətuṅ". maṅkana vəkasira baṅo
 <lb n="11:15"/>samparan riṅ ken aṅrok. liṅira ken aṅrok: "amit iṅsun, bapa, mariṅ
 <lb n="11:16"/>lulumbaṅ". sah sira karuman, nuri maliṅ lulumbaṅ, katəmu sira
@@ -549,7 +510,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 
 </div>
 <div type="section">
-<pb n="17"/>
+<pb edRef="#ed1920" n="17"/>
 <lb n="12:10"/>hana kakasihira tuṅgul amətuṅ, aran kəbo hijo, apavoṅ sanak
 <lb n="12:11"/>asihsihan lavan ken aṅrok. satiṅhalira kəbo hijo riṅ sira ken aṅrok anuṅ-
 <lb n="12:12"/>kəlaṅ ḍuhuṅ hañar, adaṅanañ caṅkriṅ katut rinipun tanpagagala vuṅkul,
@@ -577,7 +538,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="12:34"/>tiṅkah-polahira ken aṅrok, maṅkana sakadaṅ-varganira tuṅgul amətuṅ
 <lb n="12:35"/>mənəṅ tan hana vənaṅ aṅucapa, ya ta apaṅgih ken aṅrok lavan ken 
 <lb n="12:36"/>ḍəḍəs. sampun ta sira abobot tigaṅ lek katiṅgal denira tuṅgul amətuṅ,
-<pb n="18"/>
+<pb edRef="#ed1920" n="18"/>
 <lb n="12:37"/>kavoran denira ken aṅrok, atyanta denira silihasih sira ken aṅrok lavan
 <lb n="13:1"/>ken ḍəḍəs, alavas papaṅgihira. gənəp lekiṅ rare mijil anakira ken ḍəḍəs
 <lb n="13:2"/>lanaṅ, patutanira tuṅgul amətuṅ, iṅaranan saṅ anusapati, papañjinira saṅ
@@ -610,7 +571,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="13:26"/>daha, sama tan harəp anəmbaha tur mərsah paḍa aṅuṅsi mariṅ tumapəl aseva-
 <lb n="13:27"/>ka riṅ ken aṅrok. samaṅka mulaniṅ tumapəl tan ahiḍəp iṅ nagareṅ daha.
 <lb n="13:28"/>tumuli sira ken aṅrok inastvakən prabhu riṅ tumapəl, araniṅ
-<pb n="19"/>
+<pb edRef="#ed1920" n="19"/>
 <lb n="13:29"/>nagara riṅ siṅasari, abhiṣekanira śri rajasa, bhaṭāra saṅ amūrvabhū-
 <lb n="13:30"/>mi, iṅastryan deniṅ bhujaṅga seva-sogata kaṅ sakiṅ daha, makadi sira
 <lb n="13:31"/>ḍaṅhyaṅ lohgave sira asaṅkapaṇi, kunəṅ kaṅ asih avəlas riṅ sira
@@ -639,7 +600,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="14:20"/>raden mahiṣa valuṅan, lavan mantrinira pravira aran gubar baləman; moktah-
 <lb n="14:21"/>niṅ arinira ḍaṅḍaṅ gəṇḍis mvah vadva pinakatihati sira gubar baləman
 <lb n="14:22"/>kalih karəbat deniṅ vado tumapəl, amah guṇuṅ denipun apraṅ. samaṅka
-<pb n="20"/> 
+<pb edRef="#ed1920" n="20"/> 
 <lb n="14:23"/>ta vado daha kapalayu, apan kaṅ pinakadiniṅ praṅ sampun kavənaṅ.
 <lb n="14:24"/>irika ta sañjata daha bubar tavon, puṅkur vəḍus, dahut payuṅ, tan hana
 <lb n="14:25"/>pulih manih. samaṅka ta siraji ḍaṅḍaṅ gəṇḍis murud sakiṅ papraṅan, 
@@ -672,7 +633,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="15:15"/>riṅ kaməgətanira. vontən ta paṅalasanira riṅ baṭil, inundaṅ denira
 <lb n="15:16"/>nūṣapati kinon amatenana ken aṅrok, sinuṅ ḍuhuṅ antukipun gandriṅ 
 <lb n="15:17"/>akarya, ṅgenipun amatenana riṅ saṅ amūrvabhūmi, iṅəbaṅ voṅ baṭil
-<pb n="21"/>
+<pb edRef="#ed1920" n="21"/>
 <lb n="15:18"/>denira nūṣapati. maṅkat voṅ baṭil mariṅ daləm kaḍaton, kapaṅgih saṅ
 <lb n="15:19"/>amūrvabhūmi səḍəṅira anaḍah, təhər sinuduk sira deniṅ voṅ baṭil. duk
 <lb n="15:20"/>sira kacūrṇa vərhaspati pon iṅ landəp; masanira anaḍah saṇḍe jabuṅ,
@@ -708,7 +669,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 
 </div>
 <div type="section">
-<pb n="22"/>
+<pb edRef="#ed1920" n="22"/>
 <lb n="16:15"/>gumanti sirāpañji tohjaya añjənəṅ ratu riṅ tumapəl. hana ta pu-
 <lb n="16:16"/>tranira saṅ anūṣapati, aran sira raṅga vuni, kapərnah kaponakan denirā-
 <lb n="16:17"/>pañji tohjaya. sira mahiṣa voṅ atələṅ, sanakirāpañji tohjaya tuṅgaliṅ
@@ -738,7 +699,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="17:4"/>ilaṅakəna bhaṭāra, yen iṅsun atut harəp ilaṅakəna, nora doṣaniṅsun". pina-
 <lb n="17:5"/>ruruṅokən denirāpañji patipati: "rahaden atut, yen pakanira iṅilaṅakən pun
 <lb n="17:6"/>ləmbu ampal sinalahan". maṅkin enak denirāsənətan kalih, rinuruh sira ra-
-<pb n="23"/>
+<pb edRef="#ed1920" n="23"/>
 <lb n="17:7"/>haden kalih tan kapaṅgih. pinaruruṅokən tan kaparuṅon panarira. ya ta
 <lb n="17:8"/>sinəṅgeh sira ləmbu ampal sakārayita lavan raden kalih denira bhaṭāra.
 <lb n="17:9"/>samaṅka sira ləmbu ampal iṅilaṅakən, malayu tasənətan iṅ tataṅganirā-
@@ -769,7 +730,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="17:34"/>sama amit mantuk voṅ sinəlir lavan voṅ rajasa. katəkan sore masa sama
 <lb n="17:35"/>ravuh kalih batur amava sahaya, sama marək iṅ ayunira rahaden kalih, sama
 <lb n="17:36"/>vano; anuli maṅkat ambaranaṅ mareṅ jəro kaḍaton. mogha kagyat sirā-
-<pb n="24"/>
+<pb edRef="#ed1920" n="24"/>
 <lb n="17:37"/>pañji tohjaya, malajəṅ kapisah, tinumbak tan kapisanan. mariniṅ geger,
 <lb n="17:38"/>rinuruh deniṅ kavulanira, pinikul pinlayokən mariṅ kataṅ lumbaṅ. kaṅ 
 <lb n="18:1"/>amikul kasiṅse gaḍage katon pamuṅkure. liṅirāpañji tohjaya ri kaṅ
@@ -807,7 +768,7 @@ sah sira ken aṅrok sakiṅ tumapəl, təka
 <lb n="18:27"/>pəl saṅ apañjy aragani aṅaturi taḍahan pratidina, akasukan sirāji kərtanagara.
 <lb n="18:28"/>hana ta pasavalanira lavan sirāji jaya katoṅ ratu iṅ daha, pinakamu-
 <lb n="18:29"/>suhira sirāji kərtanagara, kempər paṅaladeśaniṅ śatru, tan eṅət yan doṣa-
-<pb n="25"/>
+<pb edRef="#ed1920" n="25"/>
 <lb n="18:30"/>nira. sira bañak viḍe atuvuh pataṅ puluh tiga duk pamalayu, amitra lavan
 <lb n="18:31"/>sirāji jaya katoṅ, asuravean akenkenan sakiṅ maḍura sira bañak viḍe apa-
 <lb n="18:32"/>səṅgahan arya viraraja; maṅkana sirāji jaya katoṅ autusan mariṅ maḍura.
@@ -844,7 +805,7 @@ raden vijaya sira tinuturakən maṅalor, iṅaturan
 <lb n="19:22"/>patih tuha sampun aṅəmasi, sama umiriṅi talampakanira bhaṭāra. samaṅka
 <lb n="19:23"/>raden vijaya maṅsul, sakavulanira sama apapalayon mariṅ tumapəl. təka-
 <lb n="19:24"/>nira riṅ tumapəl amapulihakən tanpantuk, gumanti sira kabalik, binuru tinut
-<pb n="26"/>
+<pb edRef="#ed1920" n="26"/>
 <lb n="19:25"/>denipun kəbo mundaraṅ, suməṅka raden vijaya aṅuṅsi ri savah miriṅ,
 <lb n="19:26"/>pakṣanipun kəbo mundaraṅ anduka riṅ buntal. raden vijaya amañcal si-
 <lb n="19:27"/>siṅkalaniṅ amuluku, ḍaḍanipun kəbo mundaraṅ təkeṅ mukanipun kəbək
@@ -876,7 +837,7 @@ raden vijaya sira tinuturakən maṅalor, iṅaturan
 <lb n="20:16"/>aṅaṇḍəg iṅ voṅ daha. sira gajah pagon katumbak pupune trus, aṅhiṅ
 <lb n="20:17"/>kavasa lumaku. andikanira raden vijaya: "gajah pagon kavaśa sira lumaku, 
 <lb n="20:18"/>lamun tan kavaśa, lah paḍa aṅamuk". "kavaśa manira, paṅeran, aṅiṅ
-<pb n="27"/>
+<pb edRef="#ed1920" n="27"/>
 <lb n="20:19"/>alonlonan". voṅ daha tan patya denipun anut iṅ sira, avəkasan maṅsul iṅ
 <lb n="20:20"/>talaga pagər. raden vijaya aṅayam alas lavan kavulanira sakehiṅ aṅi-
 <lb n="20:21"/>riṅ, sama aganti aṅəmban iṅ raden yayistri; vəkasan kavulanira abhava-
@@ -916,7 +877,7 @@ raden vijaya anabaraṅ maṅalor, tumurun
 <lb n="21:13"/>apan sira viraraja vontən sineba. maṅkat rahaden vijaya mariṅ pasebanira
 <lb n="21:14"/>viraraja. saḍatəṅira raden iṅ paseban, sira raden vijaya tiniṅhalan denira
 <lb n="21:15"/>viraraja, kaget sira viraraja tumon iṅ rahaden, tumurun sira viraraja tur
-<pb n="28"/>
+<pb edRef="#ed1920" n="28"/>
 <lb n="21:16"/>anuli mantuk, ḍatəṅ iṅ pagərhan, aluvaran sineba. kaṅgək tvasira raden
 <lb n="21:17"/>vijaya, aṅandika riṅ sira sora, sira raṅga lave: "lah paran si ujarisun,
 <lb n="21:18"/>akeh denisun aviraṅ, baya luhuṅ isun aṅəmasana pati duk aṅamuk ika". anuli
@@ -950,7 +911,7 @@ raden vijaya anabaraṅ maṅalor, tumurun
 <lb n="22:8"/>don-pakanira asevaka punika ta pakanira-iṅətakəna voṅira sirāji jaya ka-
 <lb n="22:9"/>toṅ kaṅ tuhu, kaṅ vani, kaṅ jəjərih, kaṅ bisa, makadi buddhinipun kəbo
 <lb n="22:10"/>mundaraṅ, pakanira-kavruhana, sampun katəpas kabeh, pakanira amita aṅ-
-<pb n="29"/>
+<pb edRef="#ed1920" n="29"/>
 <lb n="22:11"/>hera riṅ antukiṅ kavula maḍura anaruka alasiṅ voṅ trik; pakantukipun ta
 <lb n="22:12"/>manih manavi vontən kavula-pakanira kaṅ sakiṅ tumapəl, mantuk manih
 <lb n="22:13"/>marək iṅ pakanira, pakanira-taṅgapana, yadyan kavula sakiṅ daha ayun
@@ -989,7 +950,7 @@ maṅkat
 <lb n="23:3"/>vijaya sapekṣa yan kasoran mantri daha deniṅ voṅira. tumuli akirim
 <lb n="23:4"/>andika riṅ sira viraraja, tumuli sira viraraja avəkas atur akon anəḍaha alasiṅ
 <lb n="23:5"/>voṅ trik. suka sirāji katoṅ. ya ta mulaniṅ anaruka alasiṅ voṅ trik. duk
-<pb n="30"/>
+<pb edRef="#ed1920" n="30"/>
 <lb n="23:6"/>mahu tinaruka deniṅ maḍura, hana voṅ alapa kuraṅ saṅunipun ababad,
 <lb n="23:7"/>amaṅan maja, kapahitən, sama depun-buñcal antukipun aruru maja punika,
 <lb n="23:8"/>kasub yan vontən vohiṅ maja dahat apahit rasanipun, siṅgih ta iṅaran iṅ
@@ -1027,7 +988,7 @@ maṅkat
 <lb n="23:37"/>raṅga lave. aṅucap sira kəbo mundaraṅ riṅ sira raṅga lave: "ki raṅga
 <lb n="23:38"/>lave, hana anakiṅsun vadon, den-alapa dene ki sora, gañjarane vani". si-
 <lb n="23:39"/>rāji jaya katoṅ anəmpuh maṅalor asikəp ḍaḍap karəbut deniṅ voṅ tatar,
-<pb n="31"/>
+<pb edRef="#ed1920" n="31"/>
 <lb n="24:1"/>apuhara kasikəp, sira kapañjara deniṅ voṅ tatar. raden vijaya agəlis
 <lb n="24:2"/>mañjiṅ iṅ jəro kaḍatoniṅ daha, amalayokən iṅ raden yayistri sira saṅ
 <lb n="24:3"/>anom. anuli bhinakta mariṅ majapahit, satəkanira riṅ majhapahit təka voṅ
@@ -1073,7 +1034,7 @@ tuṅgal pamalayu
 <div type="section">
 <lb n="24:34"/>samaṅka raden vijaya añjənəṅ prabhu i śaka rasa-rupa-dvi-śitaṅśu,
 <lb n="24:35"/>1216. vəkasan patutan lavan raden dara pəṭak putra lanaṅ, kakṣatriyanira raden
-<pb n="32"/>
+<pb edRef="#ed1920" n="32"/>
 <lb n="24:36"/>kala gəmət. kunəṅ putranira bhaṭāra śivabuddha stri kalih siki, kaṅ cinayakən
 <lb n="24:37"/>iṅ voṅ tatar, iṅalap kalih denira raden vijaya, sira saṅ atuha añjənəṅ riṅ
 <lb n="24:38"/>kahuripan, sira saṅ anom añjənəṅ iṅ daha. abhiṣekanira raden vijaya duk
@@ -1127,7 +1088,7 @@ sira nambi pinisunakən denira mahapati, tan kina-
 </div>
 <div type="section"> 
 guntur paluṅge i 
-<pb n="33"/>
+<pb edRef="#ed1920" n="33"/>
 <lb n="25:28"/>śaka api-api-taṅan-tuṅgal, 1233. 
 
 </div>
@@ -1184,7 +1145,7 @@ tumuli rakuṭi.
 <lb n="26:21"/>mulih, tan vinehan denira gajah mada, polahiṅ kavula aṅiriṅ akəḍik,
 <lb n="26:22"/>amaksakən mulih. sinuduk denira gajah mada, done manava hana avavarah
 <lb n="26:23"/>yen abhaṭāra dumunuṅ riṅ umahipun buyutiṅ  baḍaṇḍər, manava ra kuṭi
-<pb n="34"/>
+<pb edRef="#ed1920" n="34"/>
 <lb n="26:24"/>vruh. akara sapasar amit sira gajah mada mariṅ majhapahit. təka riṅ
 <lb n="26:25"/>majhapahit, sira gajah mada tinakontakonan de saṅ amañcanagara riṅ pər-
 <lb n="26:26"/>nahira bhaṭāra, avarah yen huvus kasambut deniṅ rovaṅe ra kuṭi. samā-
@@ -1230,7 +1191,7 @@ tumuli rakuṭi.
 </div>
 <div type="section">
 <lb n="27:19"/>bhreṅ kahuripan aputra titiga, mijil bhaṭara prabhu, kasirkasirira śri
-<pb n="35"/>
+<pb edRef="#ed1920" n="35"/>
 <lb n="27:20"/>hayam vuruk, raden tetep, jujulukira yen anapuk sira ḍalaṅ tritaraju, lamun
 <lb n="27:21"/>amadoni sira pagər antimun, lamun avayaṅ bañol sira gagak katavaṅ, yan 
 <lb n="27:22"/>riṅ kaśevan sira mpu janeśvara, bhiṣekanira śri rajasanagara, kaprabhunira
@@ -1264,7 +1225,7 @@ tumuli rakuṭi.
 <lb n="28:11"/>paṅeranmu iku". luṅha kaṅ kinon amaliṅgiha, avərta saujarira kəmbar.
 <lb n="28:12"/>mənəṅ sira gajah mada, təka vinahonan kinəpaṅ saḍeṅ. tuhan
 <lb n="28:13"/>vuruju devapura sakiṅ pamələkahan, lamun añjəplakakən pəpəcut, karuṅu
-<pb n="36"/>
+<pb edRef="#ed1920" n="36"/>
 <lb n="28:14"/>riṅ antarikṣa. kaget voṅ majhapahit. kañcit təka saṅ sinuhun aṅalaha-
 <lb n="28:15"/>kən saḍeṅ. 
 
@@ -1307,7 +1268,7 @@ təka sakiṅ
 <lb n="29:5"/>uraṅ saya, raṅga kaveni, uraṅ siriṅ, satrajali, jagat saya, sakvehiṅ
 <lb n="29:6"/>vado suṇḍa parəṅ asurak. pinagut iṅ uni deniṅ reyoṅ, ghūrṇitaniṅ su-
 <lb n="29:7"/>rak kadi guntur. saṅ prabhu maharaja vus aṅəmasi karuhun, mati
-<pb n="37"/>
+<pb edRef="#ed1920" n="37"/>
 <lb n="29:8"/>lan tuhan usus. bhra parameśvara sira mariṅ bubat, tan sapekṣa yan 
 <lb n="29:9"/>voṅ suṇḍa akeh kari, tur adinya menak anəmpuh. maṅidul voṅ suṇḍa,
 <lb n="29:10"/>rusak voṅ majapahit. kaṅ anaṅkis sañjata amapulihakən sirarya səṇ-
@@ -1365,7 +1326,7 @@ patiniṅ putri suṇḍa bhaṭara prabhu aṅalap putri bhra prameśvara,
 <div type="section">
 <lb n="30:3"/>bhra hyaṅ viśesāpuputra mijil bhre tumapəl; putrestri mijil bhre
 <lb n="30:4"/>prabhu stri, bhiṣeka devi suhita; manih putra pamuṅsu jalu bhre tumapəl
-<pb n="38"/>
+<pb edRef="#ed1920" n="38"/>
 <lb n="30:5"/>śri kərtavijaya. bhre paṇḍan salas aputra mijil bhre koripan, bhra hyaṅ
 <lb n="30:6"/>parameśvara, siraji ratnapaṅkaja bhisekanira, aṅalap bhra prabhu istri, tan apu-
 <lb n="30:7"/>putra sira; manih putranira mijil stri bhre lasəm, kalap denira bhre tumapəl;
@@ -1425,7 +1386,7 @@ patiniṅ putri suṇḍa bhaṭara prabhu aṅalap putri bhra prameśvara,
 
 </div>
 <div type="section">
-<pb n="39"/>
+<pb edRef="#ed1920" n="39"/>
 <lb n="31:3"/>bhra hyaṅ viśeṣa apupurikan lavan bhra virabhumi. dadi denira
 <lb n="31:4"/>ḍampul, abəlah mati siraḍampul i śaka 1323.
 
@@ -1498,7 +1459,7 @@ bhra hyaṅ viśeṣa mokta dhinarmeṅ lalaṅon, bhiṣekaniṅ dharma
 <div type="section">
 <lb n="31:35"/>bhre parameśvara mokta, saṅ mokta riṅ viṣṇubhavana i śaka naga-
 <lb n="31:36"/>ganāgni-sitaṅśu, 1368, dhinarmeṅ siṅhajaya. bhre kəliṅ mokta, dhinarmeṅ
-<pb n="40"/>
+<pb edRef="#ed1920" n="40"/>
 <lb n="31:37"/>apaapa. bhre prabhu istri mokta i śaka nawa-rasāgni-śitaṅśu, 1369, tuṅgal
 <lb n="31:38"/>dhinarmeṅ siṅhajaya.
 
@@ -1574,7 +1535,7 @@ bhre
 <div> <ab type="colophon">
     <!-- ms="b" -->
 <lb n="32:28"/>təlas sinurat iṅ iccasada riṅ śela pənək, i śaka viṣaya-guṇa-bayu-
-<pb n="41"/>
+<pb edRef="#ed1920" n="41"/>
 <lb n="32:29"/>niṅ-voṅ, 1535. ṅkana kovusanira sinərat dina, pa., sa., varigadyan, masa
 <lb n="32:30"/>kṛṣṇapaṣa dvitiyaniṅ karva. sampun tan kapaharjaha de saṅ śuddhāmaca.
 <lb n="32:31"/>tunaləvihiṅ sastra durbhikṣa tan opən kvehaniṅ naśa, mapan olihiṅ arddha
@@ -1582,7 +1543,6 @@ bhre
 <lb n="32:33"/>astu kintu saṅ anurat.
 </ab>
 </div>
-
 
 			</div>
 		    <div type="translation">
@@ -1593,9 +1553,10 @@ bhre
 			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
 			  </div>
 		    <div type="bibliography">
-		        <p>Pararaton, edition by J.L.A. Brandes (1896), revised 2nd edition by N.J. Krom with J.C.G. Jonker, H. Kraemer and R.Ng. Poerbatjaraka (1920). Scanned with OCR by Arlo Griffiths. Proofread and reformatted by Wayan Jarrah Sastrawan.</p>
+		        <p>Pararaton, edition by J.L.A. Brandes (1896), revised 2nd edition by N.J. Krom with J.C.G. Jonker, H. Kraemer and R.Ng. Poerbatjaraka (1920). Data acquired by OCR from scans by Arlo Griffiths (2011); proofread and reformatted by Wayan Jarrah Sastrawan (2020); converted to TEI-XML format in 2025.</p>
 		        <listBibl>
-		            <bibl/>
+		              <bibl><ptr target="bib:Brandes1896_01"/></bibl>
+			<bibl><ptr target="bib:Brandes1920_01"/></bibl>
 		        </listBibl>
 		    </div>
 		</body>
