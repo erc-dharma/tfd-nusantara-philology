@@ -3,23 +3,24 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">DEŚAVARṆANA</title>
-                <title type="alt">revised edition by Arlo Griffiths and Wayan Jarrah Sastrawan</title>
+                	<title type="editorial">Deśavarṇana, or Description of the Territories by Mpu Prapañca: Digital Critical Edition</title>
+            	<title type="original">Deśavarṇana</title>
+		<author>Mpu Prapañca</author>
                 <respStmt>
-                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
                     <resp>author of digital edition</resp>
                     <persName ref="part:argr">
                         <forename>Arlo</forename>
                         <surname>Griffiths</surname>
                     </persName>
                      <persName ref="part:jasw">
-                        <name>Wayan Jarrah Sastrawan</name>
+                        <forename>Wayan Jarrah </forename>
+                     	<surname>Sastrawan</surname>
                     </persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <pubPlace>Lyon and Paris (France); Jakarta (Indonesia); Canberra (Australia)</pubPlace>
                 <idno type="filename">DHARMA_CritEdKakavinDesavarnana.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
@@ -30,11 +31,8 @@
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <!-- One witness for each manuscript. Update the content -->
-                    <witness xml:id="fakeID">
-                        <!-- Give your witness an unique identifier -->
-                        <abbr type="siglum"></abbr>
-                        Ms. Or. Leyden University Library , p. 135. <hi rend="bold">[Pigeaud]</hi>
+                	<witness xml:id="mslo">
+                    	<abbr type="siglum">MS<hi rend="superscript">1</hi></abbr>
                         <msDesc>
                             <msIdentifier>
                                 <settlement>Leiden</settlement>
@@ -45,33 +43,59 @@
                             <msContents>
                                 <!-- the msContents isn't mandatory -->
                                 <msItem>
-                                    <author>Śāntarakṣita</author>
-                                    <title>Vipañcitārthā</title>
+                                   <!-- <author></author>
+                                    <title></title>-->
                                     <colophon>
-										<quote>Itī nāgarakr̥tāgama samāpta, saṅkatha śrī mahārāja wilwātikta, (135b) tkeṅ nuṣa pranuṣā kacayeṅ sira, makādi bālīrājya pratiṣṭāṅkana‚ makānimitaṅ saṅhyaṅ praśāsti waśītā, tkeṅ yawadwīpa samantā.</quote>
+				<quote>Itī nāgarakr̥tāgama samāpta, saṅkatha śrī mahārāja wilwātikta, (135b) tkeṅ nuṣa pranuṣā kacayeṅ sira, makādi bālīrājya pratiṣṭāṅkana‚ makānimitaṅ saṅhyaṅ praśāsti waśītā, tkeṅ yawadwīpa samantā.</quote>
                                         <quote>Samaṅkana tlas tinular, tkāpnirārcapamāsah, ṅkāneṅ khañcānasthāna, hiṅ pulina bālī, riṅ thānī pradeśa kawyān riṅ wetān iṅ talaga dwāja, sḍəṅiṅ tinaṅguṅ rīpu, kuraṅ kawotnya kapayuṅā de saṅ lotātī śr̥ddhā māccha, āpan tan tameṅ guru laghū pasaṅān, hakeh prabheḍanyā, kewalwya milwa matraṅ nurāt, riṅ dinā, u, wr̥, khiraṅgāpahaṅ; kārttikha māsaniṅ paniḷmān, i śāka, pakṣaṅ r̥ṅə̄ ghanā dewa, 1662; samana kowusanya sinurāt, kāmpuraha dyanira saṅ manəmvaṅ dlāha makadi saṅ amāccha, dumadyāknaṅ kadirghāyūṣanira saṅ anurat, om dirghāyūr astu tatāstu hastu, auṃ sāmasāmpūrṇnaya nāmah swāhā.</quote>
-										</colophon>
+				</colophon>
                                     <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
                                 </msItem>
                             </msContents>
                             <physDesc>
                                 <objectDesc>
-                                    <p>Dewa Gede Catra’s paper copy of Griya Pidada</p>
+                                    <p>Lontar manuscript from the Lombok collection. ... leaves in Balinese script.</p>
                                 </objectDesc>
                                 <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
                                     <!-- Create a handNote for each hand -->
                                     <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
                                         <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
-                                        <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
+                                        <p>main hand of the manuscript, black ink, Balinese script</p><!-- provide a description of the hand -->
                                     </handNote>
                                 </handDesc>
                             </physDesc>
                             <history>
-                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                                <p>Looted from Puri Cakaranegara; stored in Leiden Universiry Library; restored to Indonesia; entered into Perpystakaan Nasional Republik Indonesia.</p>
                             </history>
                         </msDesc>
                     </witness>
+                	<witness xml:id="edpi">
+                		<abbr type="siglum">Ed<hi rend="superscript">Pi</hi></abbr>
+                		<bibl><ptr target="bib:Pigeaud1960-1963_01"/><citedRange unit="volume">1</citedRange></bibl>
+                		<!--p. 135.-->
+                	</witness>
+                    <witness xml:id="Catra84">
+                		<abbr type="siglum">Ed<hi rend="subscript">C</hi></abbr>
+                		<msDesc>
+                			<msIdentifier>
+                				<settlement>Karangasem, Bali</settlement>
+                				<repository>Private collection of Dewa Gede Catra</repository>
+                			</msIdentifier>
+                			<physDesc>
+                				<objectDesc>
+                					<p>Dewa Gede Catra’s paper copy of (or edition based on) Griya Pidada</p>
+                				</objectDesc>
+                				<handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                					<!-- Create a handNote for each hand -->
+                					<handNote xml:id= "Catra84_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                						<abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                						<p>Main hand of the manuscript, black ink, Balinese script</p><!-- provide a description of the hand -->
+                					</handNote>
+                				</handDesc>
+                			</physDesc>
+                			
+                		</msDesc>
+                	</witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
@@ -90,7 +114,7 @@
                     <p><foreign>Pepet</foreign>: We have freely inserted or removed <foreign>pepet</foreign>s when required by meter, without recording the normalizations in our apparatus.</p>
                     <p>Vocalic liquids: In words of Austronesian origin, we normalise graphemes [r̥] and [R̥] as [rə] or [ər], and similarly, we normalise [l̥] and [L̥] as [lə] or [əl]. In words of Indo-Aryan origin, for which /r̥/ and /l̥/ are distinct phonemes, we represent them as [r̥] and [l̥]. Hence for the Old Javanese word /gərəh/ “thunder”, the spelling [gəR̥ḥ] is normalised to [gərəh], while for the Sanskrit word /kr̥ta/ “done”, the spelling [kr̥ta] is retained.</p>
                     <p>Vowel length: We have normalized vowel length using OJED spelling as norm, except when OJED spelling would have yielded an unmetrical sequence. Vowels at the end of pādas are very often written long, frequently without evident justification: we have not shied away from shortening vowels whose length seemed unjustifiable in grammatical terms. </p>
-                    <!-- AG: <hi>as of now, we have quite a few apparatus entries that concern only vowel length. we can try to weed some of them out in due course, but for now I will continue adding some, here and there, whenever it seems useful.</hi> -->
+                    <!-- AG, before conversion to XML: as of now, we have quite a few apparatus entries that concern only vowel length. we can try to weed some of them out in due course, but for now I will continue adding some, here and there, whenever it seems useful. -->
                      <p>Consonant gemination after r: We have silently degeminated double consonants after r to obtain normal dictionary spellings of words. </p>
                      <p>Aspiration: We have silently normalized the spelling of aspirated/unaspirated consonants. We do not record variant readings that only concern aspiration of consonants. The Cakranagara manuscript abounds in needless aspiration.</p>
                 </normalization>
@@ -103,14 +127,15 @@
             </samplingDecl>    
         </encodingDesc>
         <revisionDesc>
-            <change who="part:axja" when="2021-12-23" status="draft">Updating the content for variantEncoding</change>
+        	<change who="part:argr" when="2025-05-25" status="draft">encoded teiHeader; revised meter names</change>
+            <change who="part:axja" when="2025-05-24" status="draft">conversion from googledoc to XML-TEI</change>
         </revisionDesc>
     </teiHeader>
             <text xml:space="preserve">
                 <body>
-                    <div type="edition" xml:lang="und">                 
+                    <div type="edition" xml:lang="kaw-Latn">                 
 <div type="chapter" n="1"><head>CHAPTER 1: THE ROYAL FAMILY</head>
-    <div type="canto" n="1" rend="met" met="Jagaddhita">
+    <div type="canto" n="1" rend="met" met="jagaddhita">
 <lg n="1">
 <l n="a">oṃ nāthāya namo stu te stutiniṅ atpada ri pada bhaṭāra nityaśa, </l>
 <l n="b">saṅ sūkṣmeṅ tələṅ iṅ samādhi śiva buddha sira sakala niṣkalātmakā, </l>
@@ -176,7 +201,7 @@
  <!-- <p>b. majapahit-] majhapahit- EdPi.</p>
 <p>	c. tribhuvanavijayottuṅgadevī] em., tribhūvana jīvayottuṅgal devī EdPi. Robson's translation implies the emendation proposed here, which makes more sense and solves metrical incongruity, but he gives no note.</p>-->
 </div>
-<div type="canto" n="3" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="3" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">təkvan bhakti sirān makebu ri sira śrī rājapatnīśvarī, </l>
@@ -225,7 +250,7 @@
 
 <p>	*AG&amp;MS: probably hayvaniṅ thāni here rather means the same as kahayvaniṅ thāni, so 'welfare of farmers'. See kahayvan in next stanza, in different meaning.</p>-->
 </div>
-<div type="canto" n="5" rend="met" met="Praharṣinī">
+<div type="canto" n="5" rend="met" met="praharṣiṇī">
 <!--  - - - | ~ ~ ~ | ~ - ~ | - ~ - | =  -->
 <lg n="1">
 <l n="a">vvantən tāri haji ri vilvatikta rājñī,</l>
@@ -245,7 +270,7 @@
 <p>b. i] em. m.c., iṅ EdPi.</p>
 <p>	d. təkapniraṅ] em. m.c. tkapniraṅ EdPi.</p>-->
 </div>
-<div type="canto" n="6" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="6" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | =  -->
 <lg n="1">
 <l n="a">penan śrī naranātha kapva ta huvus labdhābhiṣeka prabhū, </l>
@@ -288,7 +313,7 @@
 <p>	c. nāga-] naga- EdPi.</p>
 <p>	d. ekasthāna] ekhasthāna EdPi.</p>-->
 </div>
-<div type="canto" n="7" rend="met" met="Jagaddhita">
+<div type="canto" n="7" rend="met" met="jagaddhita">
 <lg n="1">
 <l n="a">varṇan śrī naranātha kastavaniran dinakarasama digjaya prabhu‚</l>
 <l n="b">bhraṣṭaṅ śatru baṅun tamisra sahane bhuvana rinavasan nareśvara‚ </l>
@@ -395,7 +420,7 @@
 <p>	b. tinitah] em. (Pigeaud), tiniṅkah EdPi., tinika Kern.</p>
 <p>	c. kapvaṅ veśma] em. (Kern), kapwar weśma em. (Pigeaud), kapwa wweśma EdPi.</p>-->
 </div>
-<div type="canto" n="9" rend="met" met="Sragdharā:">
+<div type="canto" n="9" rend="met" met="sragdharā">
 <!-- - - - | - ~ - | - ~ ~ | ~ ~ ~ | ~ - - | ~ - - | ~ - = -->
 <lg n="1">
 <l n="a">nāhan lvirnyaṅ manaṅkil paṅalasan iṅaran kvehnya tan papramāṇa, </l>
@@ -468,7 +493,7 @@
 <p>	b. vitāna] vitānā EdPi.</p>
 <p>c. sapta adulur] em, sapta dulur EdPi., saptādulur Ke.</p>-->
 </div>
-<div type="canto" n="11" rend="met" met="Jagaddhita">
+<div type="canto" n="11" rend="met" met="jagaddhita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ = -->
 <lg n="1">
 <l n="a">nā lvir saṅ marək iṅ vitāna pinakedaləm inapi rinaṅga śobhita, </l>
@@ -489,7 +514,7 @@
 <p>c. gr̥hādhika] gr̥hāḍika EdPi.</p>
 <p>d. campaka-] cāmpaka- EdPi.</p>-->
 </div>
-<div type="canto" n="12" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="12" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">varṇan tiṅkahikaṅ pikandəl atatātūt kaṇṭaniṅ nāgara, </l>
@@ -557,7 +582,7 @@
 </div>
 </div>
 <div type="chapter" n="3"><head>CHAPTER 3: TRIBUTARIES</head>
-<div type="canto" n="13" rend="met" met="Suvadanā">
+<div type="canto" n="13" rend="met" met="suvadanā">
 <!--  - - - | - ~ - | - ~ ~ | ~ ~ ~ | ~ - - | - ~ ~ | ~ = -->
 <lg n="1">
 <l n="a">lvi niṅ nūṣa pranūṣa pramukha sakahavat kṣoṇī ri malayu,</l>
@@ -717,7 +742,7 @@
  <!-- <p>a. sakahəmbaniṅ] sakhahəmbaniṅ EdPi.</p>-->
 </div></div>
 <div type="chapter" n="4"><head>THE ROYAL PROGRESS</head>
-<div type="canto" n="17" rend="met" met="Jagaddhita">
+<div type="canto" n="17" rend="met" met="jagaddhita">
 <lg n="1">
 <l n="a">sampun rabdha pagəhny adəg nr̥pati riṅ yavadharaṇi jayeṅ digantara, </l>
 <l n="b">ṅkāne śrī phalatiktanāgara sirān sinivi mulahakən jagaddhita, </l>
@@ -929,7 +954,7 @@
 </lg>
  <!-- <p>b. kāmukan] kāmukhan EdPi.</p>-->
 </div>
-<div type="canto" n="19" rend="met" met="Jagaddhita">
+<div type="canto" n="19" rend="met" met="jagaddhita">
 <lg n="1">
 <l n="a">eñjiṅ ry aṅkatiraṅ narendra ḍatəṅ aṅhinəp i bhaya laṅə̄ tigaṅ kuləm, </l>
 <l n="b">sah saṅkerika taṅ kəḍuṅ dava rame janapada kahalintaṅan huvus, </l>
@@ -956,7 +981,7 @@
 <p>	d. -sevana] -śevana EdPi.</p>
 
 <p>This is where the King betook himself, and his rest-house was put into good order and beautifully decorated; arriving by way of Trasuṅay he bathed at Capahan and worshipped at the holy bathing-place.</p> --> </div>
-<div type="canto" n="20" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="20" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">prāptaṅ deśa kasaugatan sahana mavvat bhaktapāne haji, </l>
@@ -1117,7 +1142,7 @@
 
 <p>	*Rather: "The setting (sirəp = surup) of the dim (manda) sun was a hindrance ...".</p>
 <p>	*vehicle?</p> --> </div>
-<div type="canto" n="25" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="25" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">tāṅeh yan caritan pratiṅkahikanaṅ svabhr̥tya mantry ādulur, </l>
@@ -1802,7 +1827,7 @@
 <l n="d">tumīrwa saṅ atītarāja riṅ usāna magəhakna wr̥ddhiniṅ jagat.</l>
     </lg>
 </div>
-<div type="canto" n="43" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="43" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">liṅ niṅ śāstra narendra pāṇḍawa rikaṅ dwāpāra ṅūni prabhū, </l>
@@ -1866,7 +1891,7 @@
 <p>	b. təkvan ardhanareśvarī] tkvan nārddhanareśvari EdPi.</p>
 <p>	d. lyaṅ] liyaṅ EdPi.</p>-->
 </div>
-<div type="canto" n="44" rend="met" met="Suvadanā">
+<div type="canto" n="44" rend="met" met="suvadanā">
 <!--  - - - | - ~ - | - ~ ~ | ~ ~ ~ | ~ - - | - ~ ~ | ~ = -->
 <lg n="1">
 <l n="a">tatkāla śrī narendrā kr̥tanagara mulih riṅ buddhabhawana, </l>
@@ -1929,7 +1954,7 @@
 </lg>
  <!-- <p>b. sayawakṣiti] sayawākṣithi EdPi.</p>-->
 </div>
-<div type="canto" n="46" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="46" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">ndan saṅ śrī parameśvarī tribhuvanā nāmāgrajānindita, </l>
@@ -2079,7 +2104,7 @@
  <!-- <p>d. jə̄ṅ śrī narendra] jə̄ṅ narendra EdPi.</p>-->
 </div></div>
 <div type="chapter" n="6"><head>THE CHASE</head>
-<div type="canto" n="50" rend="met" met="Praharṣinī">
+<div type="canto" n="50" rend="met" met="praharṣiṇī">
 <!--  - - - | ~ ~ ~ | ~ - ~ | - ~ - | =  -->
 <lg n="1">
 <l n="a">varṇnan śrī nr̥pati mahās mareṅ paburvan, </l>
@@ -2245,7 +2270,7 @@
 <l n="d">tumut aṅivə̄ kavāhyan alupān huvus krtavarā.</l>
 </lg>
 </div>
-<div type="canto" n="54" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="54" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1">
 <l n="a">varṇnan śrī naranātha sāmpun umanek riṅ syandananinditā, </l>
@@ -2639,7 +2664,7 @@
 
 <!-- <p>the last day of Śrāwana All the craftsmen doubled their efforts erecting a lion-throne in the outer courtyard. Others were preparing trays for food, processional shrines and floats with all their accessories. Joined by the ḍaḍap-makers, gold and silversmiths who were busily occupied increasing their production.</p>
 <p>4. Daarna, onmiddellijk voor (het begin) van de Bhadrawada, op den laatsten dag der donkere maandhelft Qrawana, ? het zij (hier) vermeld ? verdubbelden alle schilders hun ijver in het op maken van de Leeuwenplaats in de Manguntur (tegenwoordig: de Sitinggil). Anderen drappeerden de spijsstellages, kleine gebouwtjes en beelden in soorten; mede hadden de makers van koper-, goud- en zilverwerken het druk met het uitoefenen van hun vermeerderde bezigheden</p> --> </div>
-<div type="canto" n="64" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="64" rend="met" met="śārdūlavikrīḍita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | - - ~ | - - ~ | = -->
 <lg n="1"><l n="a"> ndah prāptaṅ śubhakhala sāmpun atitah tekaṅ sabhānindita, </l>
 <l n="b">ṅkāne madhya witāna śobhita rinəṅga lvir prisaḍyāruhur, </l>
@@ -2666,7 +2691,7 @@
 <l n="c">saṅ hyaṅ puspa yinoga ri wṅi linakwan supratiṣṭakriyā,</l>
 <l n="d">pə̄h niṅ ḍyana samāḍi siddhi kinnākən de (120a) mahāsthāpakā.</l></lg>
 </div>
-<div type="canto" n="65" rend="met" met="Jagaddhita">
+<div type="canto" n="65" rend="met" met="jagaddhita">
 <!--  - - - | ~ ~ - | ~ - ~ | ~ ~ - | ~ ~ ~ | ~ ~ ~ | - ~ - | ~ = -->
 <lg n="1"><l n="a"> eñjiṅ pūrṇnamakāla kālani wijilnira pinar̥k i madhyaniṅ sabhā, </l>
 <l n="b">ghūrṇnaṅ kāhala śāṅka len paḍaha gāñjaran i har̥p aśaṅkyamaṅdulur,</l>
@@ -2748,7 +2773,7 @@
 <!-- <p>b-c. dadyanya … abhūmiśū-] This whole string is missing from Catra84, but it is present in PUSDOK. Robson’s notes give no indication that the string is missing from MS A.</p>
 
 <p>Moreover the ground had already been consecrated in Śaka 'fires-seven-suns'(1273, AD 1351); It was Śrī Jñānavidhi who performed it and who had then made a brahmayajña as his act of worship.</p> --> </div>
-<div type="canto" n="68" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="68" rend="met" met="śārdūlavikrīḍita">
 <!--  – – – ⏑ ⏑ – ⏑ – ⏑ ⏑ ⏑ – || – – ⏑ – – ⏑ ⏓ -->
 <lg n="1">
 <l n="a">nāhan tattvanikaṅ kamal vidita deniṅ sampradāya sthiti, </l>
@@ -2957,7 +2982,7 @@
 <l n="c">mvaṅ pikatan bukul javajavāntaṅ antaraśacī kālaṅ brat i jaga, </l>
 <l n="d">len balitar śilāhrit i valeri babəg i kukap ri lumbaṅ i pagə̄r.</l></lg>
 </div>
-<div type="canto" n="74" rend="met" met="Praharṣinī">
+<div type="canto" n="74" rend="met" met="praharṣiṇī">
 <!--  - - - | ~ ~ ~ | ~ - ~ | - ~ - | =  -->
 <lg n="1"><l n="a"> mukyāntahpura sagalāthavā ri simpiṅ, </l>
 <l n="b">mvaṅ śrī raṅgapura muvah riṅ buddhi kuñcir, </l>
@@ -3113,7 +3138,7 @@
 <p><hi>A vatĕk pilaṅgu figures in the "copperplate from Museum Sri Wedari" where we also have a kryan ladheyan saṅ lumāh riṅ alas.</hi></p>
 <p>vaṅkalimvaṅ i bǝru<hi> : to be modified to Wangkal Imbang or Wankal Limbang</hi></p>
  --> </div>
-<div type="canto" n="78" rend="met" met="Śārdūlavikrīḍita">
+<div type="canto" n="78" rend="met" met="śārdūlavikrīḍita">
 <!--  – – – ⏑ ⏑ – ⏑ – ⏑ ⏑ ⏑ – || – – ⏑ – – ⏑ ⏓ -->
 <lg n="1">
 <l n="a">lvirniṅ dharma ləpas kar̥ṣyan ikanaṅ sumpud rupit mvaṅ pilan, </l>
@@ -3438,7 +3463,7 @@ Gandhakuti and Terep!
 <l n="c">viprādi sira maveh amr̥ta varakuṇdyādi vavanikāpnəd, </l>
 <l n="d">mantrī para pamgət kapva mar̥k amuṣpañjali par̥ṅ asraṅ.</l></lg>
 </div>
-<div type="canto" n="85" rend="met" met="Suvadanā">
+<div type="canto" n="85" rend="met" met="suvadanā">
 <!--  - - - | - ~ - | - ~ ~ | ~ ~ ~ | ~ - - | - ~ ~ | ~ = -->
 <lg n="1"><l n="a"> taṅgalniṅ cetra tekaṅ balagaṇa mapuluṅ rahyā (130a) həm apupul, </l>
 <l n="b">mantrī mvaṅ taṇḍa len gusti sahana ṅuniweh wadwā haji tumūt, </l>
@@ -3449,22 +3474,24 @@ Gandhakuti and Terep!
 <l n="b">kapwānūttājariṅ rāja kapakapa sadāṅkən cetra winaca, </l>
 <l n="c">hayvāṅambah ri tan lakwan ika manəkəteṅ wastrādyaraṇa, </l>
 <l n="d">devasvādinya tātan purugən ika maran swasthāṅ pura sadā.</l></lg>
-
-<!-- <p>regarding the right clothing and so on to be worn. And the property of the gods he is not to lay hands on, so that the city may be safe and sound forever.</p> --> </div>
-<div type="canto" n="86" rend="met" met="Metre">
+<!-- <p>regarding the right clothing and so on to be worn. And the property of the gods he is not to lay hands on, so that the city may be safe and sound forever.</p> --> 
+</div>
+<div type="canto" n="86" rend="met" met="mandrākrāntā">
 <!--  - - - - @ @ @ @ @ - - @ - - @ - = -->
-<!--<p>17 feet, mandrākrāntā.</p>-->
-<lg n="1"><l n="a"> ākāra rwaṅ dina muvah ikaṅ kāryya kewwan narendrā, </l>
+<lg n="1">
+<l n="a"> ākāra rwaṅ dina muvah ikaṅ kāryya kewwan narendrā, </l>
 <l n="b">wawwan lor niṅ pura tgal anāmaṅ bubat kaprakāśa,</l>
 <l n="c">śrī nāthāṅkən mara makahawan sthāna siṅhāpadudwan, </l>
 <l n="d">sabhr̥tyānorakn idəran atyadbhutaṅ vvaṅ manonton. </l></lg>
 
-<lg n="2"><l n="a"> ndan tiṅkahniṅ bubat araharārddhāratā taṇḍəs alwa, </l>
+<lg n="2">
+<l n="a"> ndan tiṅkahniṅ bubat araharārddhāratā taṇḍəs alwa, </l>
 <l n="b">madhya krośakaranikan amūrwwānutug rājamārgga, </l>
 <l n="c">maddhyārddha krośa kta paṅalornyānutug piṅgiriṅ lwah, </l>
 <l n="d">kedran deniṅ bhawana kuwuniṅ mantrī sasə̄k mapaṇṭa.</l></lg>
 
-<lg n="3"><l n="a"> bwatbwat muṅgwiṅ tṅah aruhur atyadbhutādegnya śobhā, </l>
+<lg n="3">
+<l n="a"> bwatbwat muṅgwiṅ tṅah aruhur atyadbhutādegnya śobhā, </l>
 <l n="b">stambhanyākveh hinukir anathā parwwa tiṅkahni- (130b) kāpnəd, </l>
 <l n="c">skanḍawāre nikaṭa nika kulwaṇ rakət lvir pure jro,</l>
 <l n="d">ṅgwan śrī nāthan dunuṅ i tkaniṅ cetramāsan pamaṅguṅ.</l></lg>
@@ -3496,18 +3523,20 @@ Gandhakuti and Terep!
 <l n="d">rowaṅ ikan paḍamvit i sḍaṅ na– (131a)reśwara sirān tinaṅkilapupul.</l></lg>
 
 <!--<p>came to take leave in the interior: Ārya Raṇādhikara accompanied by the governor of Trung next morning came into the presence. And Ārya Mahādhikāra‚ the juru and five tanda as heads of the padələgan Were their companions as they took leave while the King gave audience to them gathered there.</p>-->
-<lg n="2"><l n="a"> ṅkān pawuwus nareśwara ri wəṅkər ojar i parāndyanādi wadana, </l>
+<lg n="2">
+<l n="a"> ṅkān pawuwus nareśwara ri wəṅkər ojar i parāndyanādi wadana, </l>
 <l n="b">e khita hayva tan tuhu susatya bhaktyasih aniwyanātha ri hajī, </l>
 <l n="c">sthitya khiteṅ kaweśyan i siṅāṅdane hajəṅaniṅ pradeśa ya gṅən, </l>
 <l n="d">setu ḍamarggā wanḍira gr̥hādi salvir ikanaṅ sukīrtti pahayun.</l></lg>
 
-<lg n="3"><l n="a"> mukya nikaṅ gagā sawah asiṅ tinandur iṅ kawr̥ddhya rakṣan amər̥n, </l>
+<lg n="3">
+<l n="a"> mukya nikaṅ gagā sawah asiṅ tinandur iṅ kawr̥ddhya rakṣan amər̥n, </l>
 <l n="b">yāwat ikaṅ lmah pinakarāmakən pagəha tanpa dadya waluha, </l>
 <l n="c">hetu nikaṅ kulīna tan atuṇḍuṅeṅ amaradeśa yan patarukā,</l>
 <l n="d">naṅ pratiguṇḍalanya ya tutən ri gə̄ṅanikanaṅ pradeśan uṣir̥n.</l></lg>
-
 <!--<p>be fruitful, guard it and cherish it! Any land that has been made into village land must continue so, and not become neutral ground. And so the inhabitants should not push off to other areas when they open up new land. This is the regulation that has to be followed -\- it is the expansion of the country districts that should be striven for.</p>-->
-<lg n="4"><l n="a"> śrī kr̥tawardhaneśwara hamaywanī kageṅan iṅ pradeśa gawayən, </l>
+<lg n="4">
+<l n="a"> śrī kr̥tawardhaneśwara hamaywanī kageṅan iṅ pradeśa gawayən, </l>
 <l n="b">ndan wilaṅən mahānasār ikan pramādanika riṅ pjah śaśi sāda‚ </l>
 <l n="c">milwa ta yomapekṣa hananiṅ durātmaka makādyañidra lawana, </l>
 <l n="d">wr̥ddhyani dr̥wya sang prabhu phalanya sāḍananirān rumakṣabhuwana.</l></lg>
@@ -3516,18 +3545,20 @@ Gandhakuti and Terep!
 <l n="b">sāmya ṅaranya rakwa kadadinya teki katkanya hayva wisamma, </l>
 <l n="c">yan hana rājakāryya palawaṅ makadi nika tan hanan nḷwata, </l>
 <l n="d">yan pa– (131b) sgəh muvvah wruhanahā s\vadehanika sāmyalakṣaṇagəgən.</l></lg>
-
-<!-- <p>one fail in this. And when entertaining guests you should also try to consider who you are and adhere to the characteristics of a sāmya.</p> --> </div>
+<!-- <p>one fail in this. And when entertaining guests you should also try to consider who you are and adhere to the characteristics of a sāmya.</p> --> 
+</div>
 <div type="canto" n="89" rend="met" met="Metre">
 <!--  -@@-@@-@@@@@@-@@-@@= -->
 <!--<p>20 feet, a kind of kr̥ti.</p>-->
-<lg n="1"><l n="a"> mvaṅ rasaniṅ pratiguṇḍala paṅadəgirebu hajīka tutən, </l>
+<lg n="1">
+<l n="a"> mvaṅ rasaniṅ pratiguṇḍala paṅadəgirebu hajīka tutən, </l>
 <l n="b">eñjiṅa yan paḍaṅāṅratṅana sabhinuktinikān pasgəh, </l>
 <l n="c">yan hana mūrkka tikaṅ sin-gəban agawe lara sāhasikā, </l>
 <l n="d">tūt sasinambat ikā siṅawakanika tājarakən ri kami.</l></lg>
-
 <!--<p>distress and being violent. follow up the whole complaint – no matter what it is, we must be informed.</p>-->
-<lg n="2"><l n="a"> āpan ikaṅ pura len swawiṣaya siṅhā lawan gahana, </l>
+
+<lg n="2">
+<l n="a"> āpan ikaṅ pura len swawiṣaya siṅhā lawan gahana, </l>
 <l n="b">yan rusakaṅ thani 1nilwaṅ akuraṅ upajiwa tikaṅ nāgara, </l>
 <l n="c">yan taya bhr̥tya katon wayanīka para nūṣa tkāṅr̥wəkā, </l>
 <l n="d">etunikān paḍa rakṣan apagəha kalih phalaniṅ mawuwus.</l></lg>
@@ -3548,9 +3579,10 @@ Gandhakuti and Terep!
 <l n="c">śwāna kara krimi mūṣika hilahila len wiyuṅ ṅalpa dahat, </l>
 <l n="d">śatrw awamāna hurip kṣaya cala nika rakwa yadi purugən.</l></lg>
 </div>
-<div type="canto" n="90" rend="met" met="Praharṣinī">
+<div type="canto" n="90" rend="met" met="praharṣiṇī">
 <!--  - - - | ~ ~ ~ | ~ - ~ | - ~ - | = . -->
-<lg n="1"><l n="a"> prāptaṅ bhojana makadon rikaṅ vvaṅ akveh, </l>
+<lg n="1">
+<l n="a"> prāptaṅ bhojana makadon rikaṅ vvaṅ akveh, </l>
 <l n="b">saṅkəp sarvvarājatha bhojananya śobhā, </l>
 <l n="c">matsyāsaṅkya sahana riṅ darat mvaṅ i wwai, </l>
 <l n="d">rāpr̥p drāk rumavub anūt kramānuwartta.</l></lg>
@@ -3629,7 +3661,7 @@ Gandhakuti and Terep!
 <l n="d">tan wuwusən stuti(133b)nya haji sampun umulih hi daḷm.</l></lg>
 </div></div>
 <div><head>CHAPTER 15 - CONCLUSION</head>
-<div type="canto" n="92" rend="met" met="Jagaddhita">
+<div type="canto" n="92" rend="met" met="jagaddhita">
 <lg n="1">
 <l n="a">maṅkā tiṅkahiran pamukti sukha riṅ pura tuməkani seṣṭiniṅ manah, </l>
 <l n="b"><hi rend="check">tātahhan lara dahat</hi> ndatan malupa riṅ kaparahitan i hayvaniṅ prajā,</l>
@@ -3685,7 +3717,7 @@ Gandhakuti and Terep!
 <p>	b. ṅgvannirekin] norm., ṅgvānirekin EdPi Catra84</p>
 <p>	c. stuti nr̥pati] nr̥ does not make position.</p>-->
 </div>
-<div type="canto" n="94" rend="met" met="Jagaddhita">
+<div type="canto" n="94" rend="met" met="jagaddhita">
 <lg n="1">
 <l n="a">ambek saṅ maparab prapañca kapitūt mihat i para kavīśvareṅ pura,</l>
 <l n="b">milvāmarṇa ri kastavanr̥pati dūra paṅikət ika lumra riṅ sabhā, </l>
