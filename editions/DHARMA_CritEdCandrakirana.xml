@@ -33,12 +33,9 @@
    </publicationStmt>
    <sourceDesc>
 <listWit>
-   <witness xml:id="mssj">
-         <abbr type="siglum">J</abbr>
-   <listWit>
-    <head>Javanese Manuscripts</head>
-    <!--<desc>Witnesses for the Javanese recension of the text</desc>-->
-   	<!--<desc>Siglum used for the Javanese recension</desc>-->
+   <!-- <witness xml:id="mssj"><abbr type="siglum">J</abbr>-->
+   <listWit xml:id="mssj">
+    <head><hi rend="bold">[J]</hi> Javanese Manuscripts</head>
     <witness xml:id="msja">
      <abbr type="siglum">J<hi rend="subscript">1</hi></abbr>
      <msDesc>
@@ -157,13 +154,11 @@
      	</msFrag>
      </msDesc>
     </witness>
-    </listWit> 
-   </witness>
-   <witness xml:id="mssb">
-    <abbr type="siglum">B</abbr>
-    <!--<desc>Siglum used for the Balinese recension</desc>-->
-    <listWit>
-     <head>Balinese Manuscripts</head>
+    </listWit>
+   <!--</witness>-->
+   <!-- <witness xml:id="mssb"><abbr type="siglum">B</abbr> -->
+    <listWit xml:id="mssb">
+     <head><hi rend="bold">[B]</hi> Balinese Manuscripts</head>
     <witness xml:id="msba">
      <abbr type="siglum">B<hi rend="subscript">1</hi>
      </abbr>
@@ -262,34 +257,17 @@
      </msDesc>
     </witness>
     </listWit> 
-   </witness>
-   <witness
-    xml:id="ed">
-         <abbr type="siglum">Ed</abbr>
-    <listWit>
-     <head>The Published Edition</head>
+   <!-- </witness> -->
+   <!-- <witness xml:id="ed"><abbr type="siglum">Ed</abbr> -->
+    <listWit xml:id="ed">
+     <head><hi rend="bold">[Ed]</hi> The Published Edition</head>
      <witness xml:id="edlc">
      <abbr type="siglum">Ed<hi rend="superscript">LC</hi>
      </abbr>
-     <bibl>
-      <ptr target="bib:LokeshChandra1997_02"/>
-     </bibl>
-    </witness></listWit></witness>
+     <bibl><ptr target="bib:LokeshChandra1997_02"/></bibl>
+    </witness></listWit>
+   <!-- </witness> -->
 </listWit>
-   <!--<listBibl>
-    <biblStruct type="bookSection" xml:id="Lokesh_Chandra1997" corresp="http://zotero.org/groups/1633743/items/84HBME8W">
-     <monogr>
-      <!-\- Place your bibliographic information here -\->
-      <author>Lokesh Chandra</author>
-      <title level="a">Chanda-Karaṇa: the art of writing poetry</title>
-      <imprint>
-      <pubPlace>New Delhi</pubPlace>
-      <publisher>International Academy of Indian Culture and Aditya Prakashan</publisher>
-      <date>1997</date>
-      </imprint>
-     </monogr>
-    </biblStruct>
-   </listBibl>-->
    </sourceDesc>
   </fileDesc>
   <encodingDesc>
@@ -1398,7 +1376,7 @@ tuhuk limpuṅ kr̥tala <app><lem wit="#msjb #msjc #msba #msbb">pa<pb n="13r" ed
 
 <lg xml:id="candrakirana_14.01.10" n="10">
 <l n="a"> <app><lem type="emn">atidhr̥ti</lem><rdg wit="#msjb">sivruddih ya</rdg><rdg wit="#msjc">sivr̥ddhih ya</rdg><rdg wit="#msba #msbb" cause="lexical">ativr̥ti</rdg><rdg wit="#msbp" cause="subtractive">avr̥ti</rdg></app>
- <app><lem wit="#msba #msbb #msbp">saṅavəlas</lem><rdg wit="#msjb #msjc" cause="lexical">ta salapan</rdg><note>The term <foreign>salapan</foreign> exists in Modern Javanese but with different meaning, it is the cycle when a day of the five-day week coincides with a day of the seven-day week (<bibl><ptr target="bib:Robson+SinggihWibisono2002_01"/></bibl>).</note></app>,</l>
+ <app><lem wit="#msba #msbb #msbp">saṅavəlas</lem><rdg wit="#msjb #msjc" cause="lexical">ta salapan</rdg><note>The term <foreign>salapan</foreign> exists in Modern Javanese but with different meaning, it is the cycle when a day of the five-day week coincides with a day of the seven-day week (see <bibl><ptr target="bib:Robson+SinggihWibisono2002_01"/></bibl>).</note></app>,</l>
 <l n="b">rvaṅpuluh <app><lem wit="#msba #msbb #msbp">ya</lem><rdg wit="#msjb #msjc" cause="lexical">pva</rdg></app>
  <app><lem wit="#msba #msbb #msbp">tānu</lem><rdg wit="#msjb" cause="lexical">yana</rdg><rdg wit="#msjc" cause="lexical">yāna</rdg></app> kr̥ti,</l>
 <l n="c">prakr̥ti ya ta salikur,</l>
