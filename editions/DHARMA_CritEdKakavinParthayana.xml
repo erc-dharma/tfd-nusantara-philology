@@ -2,32 +2,25 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="parthayana">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="editorial">Pārthāyaṇa-The Journeying of Pārtha</title>
-                <!--change the title of the edition starting, if possible, with the title of your text-->
-                <!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
-                <!--<title type="alt"></title>-->
-                <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
-                <!--<title type="original" xml:lang="...-Latn"></title>-->
-                <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
-                <!--<author></author>-->
-                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+                <title type="editorial">Pārthāyaṇa, or The Journeying of Pārtha: Digital Critical Edition</title>
+            	<title type="alt">after Creese (1998)</title>
+            	<title type="original" xml:lang="kaw-Latn">Pārthāyaṇa</title>
+            	<!--<author></author>-->
                 <respStmt>
-                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
                     <resp>author of digital edition</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:jodo"><!-- update the id -->
-                        <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Doe</surname>
+                    <persName ref="part:hecr">
+                        <forename>Helen</forename>
+                        <surname>Creese</surname>
                     </persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <pubPlace>Jakarta</pubPlace>
                 <idno type="filename">DHARMA_CritEdKakavinParthayana.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
@@ -38,56 +31,28 @@
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <!-- One witness for each manuscript. Update the content -->
-                    <witness xml:id="fakeID">
-                        <!-- Give your witness an unique identifier -->
-                        <abbr type="siglum"></abbr>
-                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
-                        <msDesc>
-                            <msIdentifier>
-                                <settlement>Leiden</settlement>
-                                <institution>University Library (UB)</institution>
-                                <repository>Lontar</repository>
-                                <idno>Or. 23732</idno>
-                            </msIdentifier>
-                            <msContents>
-                                <!-- the msContents isn't mandatory -->
-                                <msItem>
-                                    <author>Śāntarakṣita</author>
-                                    <title>Vipañcitārthā</title>
-                                    <!-- You can also add a colophon if needed -->
-                                    <!--<colophon>
-										<quote></quote>
-										</colophon> -->
-                                    <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
-                                </msItem>
-                            </msContents>
-                            <physDesc>
-                                <objectDesc>
-                                    <!-- Here you can give a physical description of the manuscript in prose-->
-                                    <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
-                                </objectDesc>
-                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
-                                    <!-- Create a handNote for each hand -->
-                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
-                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
-                                        <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
-                                    </handNote>
-                                </handDesc>
-                            </physDesc>
-                            <history>
-                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
-                            </history>
-                        </msDesc>
-                    </witness>
+ <!-- 
+K 	= 	lontar ms from Puri Kawan, Singaraja (HKS 2715 = HKS 5202)
+L 	= 	HKS 3995 
+J 	= 	common reading of KL
+R 	= 	HKS Bundle 9, no 7 = LOr.13.324
+S 	= 	HKS 2694
+Q 	=	common reading of RS
+MSS 	=	reading of all manuscripts
+* 	=	word or phrase is discussed in the Notes.
+†...†	=	blurred sections of MS K
+ -->
+                    <witness xml:id="edc">
+                    		<abbr type="siglum">Ed<hi rend="superscript">C</hi></abbr>
+                    		<bibl><ptr target="bib:Creese1998_01"/></bibl>
+                    	</witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
             <projectDesc>
                 <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
-                <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+ <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
   -->
             </projectDesc>
             <editorialDecl> 
@@ -96,7 +61,12 @@
                     <p/>
                 </correction>
                 <normalization>
-                    <p/>
+                    <p>
+                    	change		rṇn	to	rṇa
+                    	change		ĕ	to	ə
+                    	change		ö	to	ə̄
+                    	change		w	to	v
+		</p>
                 </normalization>
                 <interpretation>
                     <p/>
@@ -107,24 +77,15 @@
             </samplingDecl>    
         </encodingDesc>
         <revisionDesc>
-            <change who="part:axja" when="2021-12-23" status="draft">Updating the content for variantEncoding</change>
+        	<change who="part:argr" when="2025-05-26" status="draft">filling in teiHeader and bibliography; standardizing meter names</change>
+            <change who="part:axja" when="2025-05-25" status="draft">conversion to TEI-XML from word files</change>
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve">
-        <!-- K 	= 	lontar ms from Puri Kawan, Singaraja (HKS 2715 = HKS 5202)
-L 	= 	HKS 3995 
-J 	= 	common reading of KL
-R 	= 	HKS Bundle 9, no 7 = LOr.13.324
-S 	= 	HKS 2694
-Q 	=	common reading of RS
-MSS 	=	reading of all manuscripts
-* 	=	word or phrase is discussed in the Notes.
-†...†	=	blurred sections of MS K
- -->
 		<body>
-			<div type="edition" xml:lang="und">
-<div><ab>Awighnam astu</ab></div>
-<div type="canto" rend="met" n="1" met="Jagaddhita">
+			<div type="edition" xml:lang="kaw-Latn">
+<div><ab type="invocation">Awighnam astu</ab></div>
+<div type="canto" rend="met" n="1" met="jagaddhita">
 <lg n="1"><l n="a">tustus ning kalangön anindya paramārtha pinahuwus i tatwa ning kawi</l>
 <l n="b">dhyāyī sātmya ri lĕnglĕng ing kamala hadwaya pinatĕh i sāndhi ning hiḍĕp</l>
 <l n="c">nyāsan ring kakawin tinap pinakasāntĕn i jurang ing acaṇḍya lung langö</l>
@@ -287,7 +248,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 28 (a) R pangdesa, S pangudesa (b) = LQ, K jaga -->
 </div>
-<div type="canto" rend="met" n="2" met="Nawaharṣa">
+<div type="canto" rend="met" n="2" met="navaharṣa">
 <lg n="1"><l n="a">irikā ta muwah lumaku sira ri lingsir ikang diwasa</l>
 <l n="b">paran ing twas iniṣṭi nira taya waneh nghing ikang Himawān</l>
 <l n="c">ndah amūrwwa ta lampah ira taman angel mahawan palapat</l>
@@ -343,7 +304,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 9 (a) L surêng for sirêng (b) S anisih -->
 </div>
-<div type="canto" rend="met" n="3" met="Śikhariṇī">
+<div type="canto" rend="met" n="3" met="śikhariṇī">
 <lg n="1"><l n="a">sawang mosik tingkah ni para-parah ing parwwata lĕngöng</l>
 <l n="b">bangun masyang tang cāmara kumisik osah kapawanan</l>
 <l n="c">halah herherĕn lwir ni pakusikan ing pādapa mingĕl</l>
@@ -407,7 +368,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 11 (b) Q ri (c) L pangaweśa -->
 </div>
-<div type="canto" rend="met" n="4" met="Praharṣiṇī">
+<div type="canto" rend="met" n="4" met="praharṣiṇī">
 <lg n="1"><l n="a">ngkā rakwân salila ta sang narāryya Pārtha</l>
 <l n="b">lāgy âköm ri wiwara ning nadī pawitra</l>
 <l n="c">lyab-lyabnyâtiśaya maweh manah wiśuddha</l>
@@ -519,7 +480,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 20 (a) MSS tandĕl; L ira (b) = L; Q manta -->
 </div>
-<div type="canto" rend="met" n="5" met="Śārdūlawikrīḍita">
+<div type="canto" rend="met" n="5" met="śārdūlavikrīḍita">
 <lg n="1"><l n="a">sāntĕn-sāntĕn ikang sukôttama huwus kesyan tĕkap ning yayah</l>
 <l n="b">yângde wyāpara tar jĕnĕk saka ri göng ning śreṣthi kady âwarĕg</l>
 <l n="c">āmbĕk tan winaḍa n mahāngrarah i rūm ning deśa śūnyâsĕnöt</l>
@@ -1143,7 +1104,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">kady anggyākĕn ikang rahina tĕkā</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="16" met="Girisa">
+<div type="canto" rend="met" n="16" met="girisa">
 <lg n="1"><l n="a">atha sumĕgĕp atingkah salwir ning wali sumaji</l>
 <l n="b">krama tumama tikang wwang ngkānêng heng paḍa tumatā</l>
 <l n="c">diwasa wimala tumrang hyang wai bhāswara sumirat</l>
@@ -1289,7 +1250,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 11 (c) Q tĕmpuh yê (d) L mangṛṣa ri sira -->
 </div>
-<div type="canto" rend="met" n="18" met="Praharṣiṇī">
+<div type="canto" rend="met" n="18" met="praharṣiṇī">
 <lg n="1"><l n="a">sāmpunya n kawawa gupe wimūrccha sang dyah</l>
 <l n="b">himpĕr pādapa mawĕnĕs hañar kalahrwan</l>
 <l n="c">mĕnggah mār mawungu marêng dagan manguṇḍĕng</l>
@@ -1343,7 +1304,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 5 (d) S ing for ring -->
 </div>
-<div type="canto" rend="met" n="20" met="Nawaharṣa">
+<div type="canto" rend="met" n="20" met="navaharṣa">
 <lg n="1"><l n="a">i kapingrwa nikang gati nṛpaduhitânglih alah mawĕnĕs</l>
 <l n="b">manis ing muka molĕm aluru kadi candra sĕḍĕng makucĕm</l>
 <l n="c">tuwi kembuhan ing damar anuluhi mogha tĕkângrahati</l>
@@ -1368,7 +1329,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 4 (b) = Q; Q anglĕngĕngi -->
 </div>
-<div type="canto" rend="met" n="21" met="Swāgata">
+<div type="canto" rend="met" n="21" met="svāgatā">
 <lg n="1"><l n="a">sang hyang ārkka sumĕnö wahu tumrang</l>
 <l n="b">warṇna raśmi ning amöm smita rāgī</l>
 <l n="c">māwa tang kiraṇa bhāswara lumrā</l>
@@ -1380,7 +1341,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">kapwa mĕñcuh atisomya saharṣa</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="22" met="Śikhariṇī">
+<div type="canto" rend="met" n="22" met="śikhariṇī">
 <lg n="1"><l n="a">kunĕng sang karwâpöm lagi karahinan luhya saharas</l>
 <l n="b">makin kagyat wāhw ânglilira* lukar ing ken pinahayu</l>
 <l n="c">mijil sangkêng jro pāmrĕman ata sirân tinghal apĕḍay</l>
@@ -1444,7 +1405,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 5 (c) = L (d) Q apangkat -->
 </div>
-<div type="canto" rend="met" n="24" met="Śārdūlawikrīḍita">
+<div type="canto" rend="met" n="24" met="śārdūlavikrīḍita">
 <lg n="1"><l n="a">rāmyârūm wangi ning taman kapawanan hūng ning mayūrâlangö</l>
 <l n="b">ngkā tâdan nṛpaputra mangkat alaris ring rājyadhāny ân laku</l>
 <l n="c">lunghā ng ratri katon tikang saḍawatā kalrān rarab ning rĕmĕng</l>
@@ -1907,7 +1868,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">strī rājya harṣa sahananya rikang kaḍatwan</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="31" met="Udgatawisama">
+<div type="canto" rend="met" n="31" met="udgatavisama">
 <lg n="1"><l n="a">riy ulih nira ndan alawas pwa pakurĕn ira rāmya ring dalĕm</l>
 <l n="b">pūrṇna sanagara kagöngan inak</l>
 <l n="c">kawawê sutṛpta haji de sang Arjjuna</l>
@@ -1962,7 +1923,7 @@ MSS 	=	reading of all manuscripts
 <l n="c">tuhu sādhu satya satirun sirêng sarāt</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="32" met="Jagaddhita">
+<div type="canto" rend="met" n="32" met="jagaddhita">
 <lg n="1"><l n="a">sangsiptan ri tĕlas nirâmuhun umangkat atĕhĕr alaris tĕkê yawa</l>
 <l n="b">tan maglis dahatĕn ta lampah ira tūt hawan anginak-inak pijĕr mangö</l>
 <l n="c">rāmyânon langĕ ning pradeśa kadi tan bĕsur asayut asanggrahê sira</l>
@@ -2098,7 +2059,10 @@ MSS 	=	reading of all manuscripts
 </lg>
 </div>
 <div type="canto" rend="met" n="34" met="Wisarjita">
-<lg n="1"><l n="a">rāmya nikang sakatinghalan i laku nirê tĕpi ning hudadhi</l>
+<note>+--+--+------+--+--=</note>
+<!-- add to prosodicPatterns  -->
+<lg n="1">
+<l n="a">rāmya nikang sakatinghalan i laku nirê tĕpi ning hudadhi</l>
 <l n="b">tĕkwan ikang masa tunggang acala diwasanya ya tânglĕngĕngi</l>
 <l n="c">towi wĕlĕk ni kukus ning amadĕk i samīpa nikang wulusan</l>
 <l n="d">mukṣa paroknya ri sānghub ing udadhi hatur sapadĕlwan unĕng</l>
@@ -2171,7 +2135,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">yêku kalotakĕnanta ri hatur ira yan taya ring nagara</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="35" met="Jagaddhita">
+<div type="canto" rend="met" n="35" met="jagaddhita">
 <lg n="1"><l n="a">nā ling sang prawarâryya Sāmbha ri sirâdara taya winihang Dhanañjaya</l>
 <l n="b">ndah mangkat sira karwa munggah irikang ratha Yadukula kapwa mangdulur</l>
 <l n="c">līlâtah tuwi darśśanīya pakatonan ing angiringakĕn paḍâhalĕp</l>
@@ -2315,7 +2279,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">tan pendah wali ning rara dyah anawung śṛnggāra munggw ing jinĕm</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="37" met="Girisa">
+<div type="canto" rend="met" n="37" met="girisa">
 <lg n="1"><l n="a">kalĕngĕngan ika ñĕpñĕp ngkānê kwan paḍa rumĕsĕp</l>
 <l n="b">tuwi kĕtĕr i kusuh ning tūbanya n lagi karĕngö</l>
 <l n="c">palu daluwang ikânggyat śabdanyâmuhara lĕngöng</l>
@@ -2585,7 +2549,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 15 (a) = LQ (b) Q mangkin for makin -->
 </div>
-<div type="canto" rend="met" n="41" met="Jagaddhita">
+<div type="canto" rend="met" n="41" met="jagaddhita">
 <lg n="1"><l n="a">wwang ri jro nagarâlangö paḍa katon raras ika kadi wimba ning tulis</l>
 <l n="b">rāmyânĕmpala puṣpa pādapa hangendahi hayu nika kapwa komala</l>
 <l n="c">lwir hintĕn liningir patinghalan ikânglĕngĕng amija-mijah macangkrama</l>
@@ -2664,7 +2628,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 14 (a) L syuha; R inserts (adoh) after pasir -->
 </div>
-<div type="canto" rend="met" n="42" met="Praharṣiṇī">
+<div type="canto" rend="met" n="42" met="praharṣiṇī">
 <lg n="1"><l n="a">ngkā sang Pārtha sira ḍatĕng tumūt ri Kṛṣṇa</l>
 <l n="b">harṣâmbĕk nira mulat ing wanādri rāmya</l>
 <l n="c">ndan sang Phalguṇa sira mogha tibra lĕnglĕng</l>
@@ -2716,7 +2680,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 9 (a) L mangkān ng, S mangkyang for mangka ng (c) = LQ -->
 </div>
-<div type="canto" rend="met" n="43" met="Suwadanā">
+<div type="canto" rend="met" n="43" met="suvadanā">
 <lg n="1"><l n="a">sangsiptan lwir narāryyârjjuna tucapa tikang Wṛṣṇi n kapalajöng</l>
 <l n="b">prāptânambah marê śrī Haladhara mawarah reh Pārtha ri sira</l>
 <l n="c">yêkā n sakrodha sang bhūpati wawang angadĕg tang mānawibhawa</l>
@@ -2777,7 +2741,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">göng ning śaktinta sākṣāt jalanidhi winuwus atyanta madalĕm</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="44" met="Turagagati">
+<div type="canto" rend="met" n="44" met="turagagati">
 <lg n="1"><l n="a">nda nihan paramārtha tūtananta</l>
 <l n="b">purih ing paṇḍita ring jagat guṇajña</l>
 <l n="c">taya lamban amet wiweka yukti</l>
@@ -2830,7 +2794,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 9 (c) Q rikang -->
 </div>
-<div type="canto" rend="met" n="45" met="Mṛdukomala">
+<div type="canto" rend="met" n="45" met="mr̥dukomala">
 <lg n="1"><l n="a">yan swīnĕn pwa ya de nareśwara hade hiḍĕpku wiphala</l>
 <l n="b">āpan byakta katoñ jayārtha nika ring swayambara dangū</l>
 <l n="c">yadyastun hana têki ganta nika yan prihĕn kawĕnanga</l>
@@ -3044,7 +3008,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">kĕtĕb ing lumakwa kadi Karttika siniring i śabda ning patĕr</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="48" met="Jagaddhita">
+<div type="canto" rend="met" n="48" met="jagaddhita">
 <lg n="1"><l n="a">munggah ring gṛha ratna nīla pinakonggwan ira tinawung ing samāgama</l>
 <l n="b">mār mrat rūmnya sinaptagopita paragyan ika minging arūm kinumkuman</l>
 <l n="c">mrik ning karpura gandha ning jĕnu-jĕnunya makatilaka ning pasanggaman</l>
@@ -3123,7 +3087,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 5 (a) L ing for i -->
 </div>
-<div type="canto" rend="met" n="50" met="Jagaddhita">
+<div type="canto" rend="met" n="50" met="jagaddhita">
 <lg n="1"><l n="a">hāh ndin koluyan ing langö ngwang iki denya mucapakĕna sotan ing rimang</l>
 <l n="b">dūran yan hana mātra kampirakĕnêng kĕtĕ-kĕtĕg ika n amriyambada</l>
 <l n="c">simbantĕn ngwang atön ri denya n amĕkul tĕngah ahuyang aminta sanmata</l>
@@ -3161,7 +3125,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">nṛpasuta mangkin anghudanakĕn prahāsana nira lwir ārṇnawa madhu</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="52" met="Jagaddhita">
+<div type="canto" rend="met" n="52" met="jagaddhita">
 <lg n="1"><l n="a">dyah [h]iṣṭangkw ibu puṇya denta pamatanta tan arĕngu minge tuminghala</l>
 <l n="b">heman têbu rirista tan panguningêng alara turida kokalan lulut</l>
 <l n="c">tan luh tan pangĕsah lawan prihati hetu ning akalib asewa tan lining</l>
@@ -3233,7 +3197,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">tĕhĕr angaras awantö rūm ning ojar sawang truh</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="54" met="Jagaddhita">
+<div type="canto" rend="met" n="54" met="jagaddhita">
 <lg n="1"><l n="a">sang sākṣāt kadang ing wulan sang apatĕr turida sang ariris-riris langö</l>
 <l n="b">sang nityângdani kingking i ngwang asĕwö hunang athawa lulutkw asinwama</l>
 <l n="c">marmângol i raras-rarasta sahajâmwatakĕna sĕkar ing karāsikan</l>
@@ -3273,7 +3237,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 4 (a) LQ kumawaśêng -->
 </div>
-<div type="canto" rend="met" n="56" met="Nawaharṣa">
+<div type="canto" rend="met" n="56" met="navaharṣa">
 <lg n="1"><l n="a">kalalu ng wĕngi tan dwa rahina mawa teja ning ārkka lumöng</l>
 <l n="b">irikā ta ḍatĕng kraban ira sahananya huwus marĕpat </l>
 <l n="c">paḍa tânupamâparimita kadi sangka ring Indrapada</l>
@@ -3324,7 +3288,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">apan uttama wīryya haji sakala pāwak ing āṣṭaguṇa</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="57" met="Praharṣiṇī">
+<div type="canto" rend="met" n="57" met="praharṣiṇī">
 <lg n="1"><l n="a">ndah yan mangkana papupul nirâtirāmya</l>
 <l n="b">tan warsih samanah irâhurup lulut kung</l>
 <l n="c">lunghā ng lek ata malawas [h]ulah nirâtūt</l>
@@ -3388,7 +3352,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 11 (a) S yan for tan -->
 </div>
-<div type="canto" rend="met" n="58" met="Jagaddhita">
+<div type="canto" rend="met" n="58" met="jagaddhita">
 <lg n="1"><l n="a">eñjing sang nṛpaputra karwa kalulut nira mawungu mijil sakêng jinĕm</l>
 <l n="b">ndah yêkā n tumuluy marêng makara rāmya sira tiki parĕng macāmana</l>
 <l n="c">ngkā n mĕntas sira kālih ing bañu silih tusapi muka paḍĕmwan ing mata</l>
@@ -3441,7 +3405,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 9 (a) MSS kṛtañjali (d) L ya ta for niyata -->
 </div>
-<div type="canto" rend="met" n="59" met="Bhramarawilasita">
+<div type="canto" rend="met" n="59" met="bhramaravilasita">
 <lg n="1"><l n="a">byātītan lwir nira n angucap-ucap</l>
 <l n="b">lunghā ng dūtâmawa wacana haji</l>
 <l n="c">ri śrī Dharmātmaja yugala nira</l>
@@ -3465,7 +3429,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 4 (d) Q anĕsĕl for asĕkĕl -->
 </div>
-<div type="canto" rend="met" n="60" met="Śārdūlawikrīḍita">
+<div type="canto" rend="met" n="60" met="śārdūlavikrīḍita">
 <lg n="1"><l n="a">wwang ring rājya parĕng madandan umiwö wyāpāra munggw ing dalĕm</l>
 <l n="b">ewör <foreign>denya</foreign> samângarĕp madadakan kapwâsipĕt wruh kabeh</l>
 <l n="c">tan wāktan tikanang tumūt mara ring Indrapraṣṭha magyā parĕng</l>
@@ -3473,7 +3437,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 1 (b) MSS denyā -->
 </div>
-<div type="canto" rend="met" n="61" met="Śikhariṇī">
+<div type="canto" rend="met" n="61" met="śikhariṇī">
 <lg n="1"><l n="a">wiwākṣan ring heñjing śubhadiwasa tang deśa wimala</l>
 <l n="b">lumampah Pārtha mwang kalulut ira māmwīt sira huwus</l>
 <l n="c">parĕng munggah munggw ing ratha sira n akarwan winulatan</l>
@@ -3533,7 +3497,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">pratāpa śrī Dharmātmaja parama diwyâmayungi rāt</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="62" met="Jagaddhita">
+<div type="canto" rend="met" n="62" met="jagaddhita">
 <lg n="1"><l n="a">sāmpūrṇnân kadi sang hyang Indra mapa hanglĕwihi wibhawa anglyab ing hajöng</l>
 <l n="b">erang māryya kĕta[ng] durātmaka wiśīrṇna sulabha sira sang mahājana</l>
 <l n="c">ndin panglwang pitutur mahārṣi mawarah patayaśa śapa tanggwan indriya</l>
@@ -6640,9 +6604,9 @@ MSS 	=	reading of all manuscripts
 			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
 			  </div>
 		    <div type="bibliography">
-		        <p><!-- explain the process of your edition here --></p>
+		        <p>Edited and translated by Creese (1998). Digital data furnished by the author processed tgo XML-TEI by Axelle Janiak and Arlo Griffiths (2025).</p>
 		        <listBibl>
-		            <bibl/>
+		            <bibl><ptr target="bib:Creese1998_01"/></bibl>
 		        </listBibl>
 		    </div>
 		</body>
