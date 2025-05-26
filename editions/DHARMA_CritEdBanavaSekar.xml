@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+        	<titleStmt>
+        		<title type="editorial">Banava Səkar, or Flower Boat by Tanakung: Digital Edition</title>
+            		<title type="alt">after Zoetmulder (1974)</title>
+        		<title type="original" xml:lang="kaw-Latn">Banava Səkar</title>
+            		<!--<author></author>-->
+            		<respStmt>
+            			<resp>author of digital edition</resp>
+            			<persName ref="part:argr">
+            				<forename>Arlo</forename>
+            				<surname>Griffiths</surname>
+            			</persName>
+            		</respStmt>
+            	</titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DHARMA_CritEdBanavaSekar.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2019" to="2025">2019-2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="edz">
+                    	<abbr type="siglum">Ed<hi rend="superscript">Z</hi></abbr>
+                    	<bibl><ptr target="bib:Zoetmulder1974_01"/><citedRange unit="mixed">pp. 365–366, 554, n. 21, app. V</citedRange></bibl>
+		Zoetmulder (1974: 554 n. 21): <q>I have given in Appendix V the text as found in the Kirtya manuscript. It contains the Wr̥ttasañcaya and the seven Bhāṣa Tanakung</q>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                <projectDesc>
+                    <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+                    <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl> 
+                <p></p>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+            <change who="part:argr" when="2025-05-26" status="draft">encoded the text</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="kaw-Latin">
+<div type="canto" met="śārdūlavikrīḍita" rend="met" n="1"> 	
+<lg n="1">
+<l n="a">Atyantādhikaniṅ sukārya vinaṅun śrī Jīvanendrādhipa</l> 
+<l n="b">tan lyan śrāddha bhaṭāra mokta maluy iṅ somyālayādhiprabhu</l> 
+<l n="c">maṅke mūrti niran cinarvan apagəh riṅ śvetasiṅhāsana</l> 
+<l n="d">sakvehniṅ bala mukhya saṅ nr̥pa kabeh dampaty amuṣpa krama.</l>
+</lg>
+<lg n="2">
+<l n="a">lvir guntur pakatonan iṅ taḍah anekātryāsusun tar pəgat</l> 
+<l n="b">mily āpānakabhojanāna ḍumavuh riṅ peka muṅgv iṅ sabhā</l> 
+<l n="c">len taṅ dāna ri saṅ mahādvija gənəp riṅ śaṅkha tapvan kuraṅ</l> 
+<l n="d">gohdānādi sabhūṣanāśva ratha len vastrādulur kañcana.</l>
+</lg>
+<lg n="3">
+<l n="a">varṇan tiṅkah i saṅ vatək ratu madudvan vətva-vətvan kabeh</l> 
+<l n="b">vvantən gīta nirakṣarātika vināhyākən laṅə̄nyeṅ gunuṅ</l> 
+<l n="c">mambətniṅ dyah aṅañjalîniriṅakən deniṅ <app><lem wit="#edz">kakuṅnyekati</lem><note>Zoetmulder suggests <foreign>ekaki</foreign>.</note></app></l> 
+<l n="d">śrī nātheṅ Kr̥tabhūmi məṅgəp amaṅun tiṅkah vidagdheṅ raras.</l>
+</lg>
+<lg n="4">
+<l n="a">tan sor śrī naranātha riṅ Mataram i<supplied reason="omitted">ṅ</supplied> tiṅkah laṅə̄niṅ gunuṅ</l> 
+<l n="b">cārāṅrakta vado hajîki vinaṅun tiṅkah madadyan vukir</l>
+<l n="c">harṣekaṅ vvaṅ anon kakuṅ saha lavan dyah ceṭikeṅ āśrama</l> 
+<l n="d">siṅgih yan tama riṅ laṅə̄ nr̥pati maṅdānî raras tan sipi.</l>
+</lg>
+<lg n="5">
+<l n="a">kocap saṅ nr̥pati Pamotan adhikāreṅ rūm praśāsteṅ laṅə̄ </l>
+<l n="b">ndan tiṅkah gaga vətva-vətvan ira moghānraṅ laṅə̄niṅ gaga</l>
+<l n="c">vvantən stry arja kalih jalunya n ahañaṅ (ṅ)kāne siriṅniṅ hənu</l> 
+<l n="d">prāyāṅjantən ajaṅga riṅ java kapaṅgih ndan matəṅgə̄ gaga.</l>
+</lg>
+<lg n="6">
+<l n="a">saṅke śrī parameśvareṅ Lasəm apūrva<supplied reason="omitted">ṅ</supplied> vətva-vətvan ləyəp</l> 
+<l n="b">strī muṅgv iṅ daləm iṅ taman manalukat lāvan kakuṅnyālaṅə̄ </l>
+<l n="c">apnəd deniṅ aniṅkah uttama laṅə̄nyāmānuṣāṅde ləṅəṅ</l> 
+<l n="d">toh piṅhe ṅaran iṅ kiduṅnya ginave tiṅkah maveh kuṅ lulut.</l>
+</lg>
+<lg n="7">
+<l n="a">vvantən parvata tan si<supplied reason="omitted">pi</supplied>ṅ kaləṅəṅan sākṣāt pavitrācala</l> 
+<l n="b">tan len amrətamāsa gīta tuladan kāryātəmah parvata</l> 
+<l n="c">ndah byaktaṅ jalatuṇḍa taṅ śaraṇa saṅkəp tan hanāṅul kabeh</l> 
+<l n="d">savvat śrī naranātha riṅ Kahuripan sotan kavīndrānulus.</l></lg>
+</div>
+<div type="canto" met="jagaddhita" rend="met" n="2"> 	
+<lg n="1">
+<l n="a">śrī nātha prabhu saṅ makāntya mahatur banava mavaṅunan səkar miṅiṅ </l>
+<l n="b">lañcaṅ-lañcaṅ ikārja padapa tinap sinalisir alunas-lunas puḍak</l> 
+<l n="c">kuñcupniṅ taravarṣa tīhaṅa mabāhu sarasija mabaṅ katiṅhalan</l> 
+<l n="d">arcəp varṇa nikālayārja riṅ apiṇḍa jari-jariṅan iṅ valantiṅan.</l></lg>
+<lg n="2">
+<l n="a">jaṅgāmrik makatambiraṅnya yaśa pāṅin-aṅinan ika səh səkar marum</l> 
+<l n="b">raśminya n pahatəp sminiṅ i riṅ avuvuṅ jalada tuhu ləyəp tiniṅhalan</l> 
+<l n="c">roṇḍon iṅ kayu kañcanārja kamuḍinya makuniṅ anamar-namar tatur</l> 
+<l n="d">a<supplied reason="omitted">r</supplied>jāslat prabhu sanmatāsana lavan vuṅu pinakakatin nikāraras.</l></lg>
+<lg n="3">
+<l n="a">sinvām iṅ taru raśmi pātaka nikāṅavay-avay i siri<supplied reason="omitted">r</supplied>nikāṅ aṅin</l> 
+<l n="b">tiṅkahnyan pavide rvan iṅ katirah apnəd inaṅit araras vinarṇan<supplied reason="omitted">a</supplied></l> 
+<l n="c">saṅgākāśa lavan vlasapti tali dandan alabuh upalāsəpət gaḍiṅ</l> 
+<l n="d">tan pendah kadi joṅ səkar manəṅah iṅ jaladhi mara pana<supplied reason="omitted">r</supplied>kaniṅ mulat.</l>
+</lg>
+<lg n="4">
+<l n="a">tuṅgal saṅ kavi maṅləṅəṅ puvavah iṅ banava maṅə maliṅgih iṅ vukir</l>
+<l n="b">secchā maṅku karas nirendah apapan kanaka saha tanah nireṅ kapə̄ </l>
+<l n="c">lvir mahyun mikataṅ sakendriya təhər nəmahakəna palambaṅ iṅ karas</l> 
+<l n="d">yan sampun srahəneṅ narendra samudāya malar asuṅa sanmateṅ maṅə̄.</l></lg>
+</div>
+<div type="canto" rend="met" n="3"> 
+<lg n="1">
+<l n="a">na Ivirniṅ vətva-vətvan nr̥pati sama samāmuṅvakən kuṅniṅ adyah</l> 
+<l n="b">byakteki n tan hanāsor laṅə nika dinələ̄ riṅ satiṅkah-<supplied reason="omitted">satiṅkah</supplied></l>
+<l n="c">siṅgih yan tan haneṅ pūrvaka gati kadi maṅke mahāśrāddha dibya</l> 
+<l n="d">ṅhiṅ sotniṅ vvaṅ manonton sahana nika kabeh laṅgəṅāchattraniṅ rat.</l></lg>
+</div>
+</div>
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+		        <p>Provisional edition by Zoetmulder (1974); comments on historical context by Noorduyn (1978); digital data acquired via OCR by Arlo Griffiths and encoded by him in TEI-XML (2025).</p>
+		        <listBibl>
+		            <bibl><ptr target="bib:Zoetmulder1974_01"/><citedRange unit="mixed">pp. 365–366, 554, n. 21, app. V</citedRange></bibl>
+			<bibl><ptr target="bib:Noorduyn1978_01"/><citedRange unit="page">240, 264</citedRange><citedRange unit="note">16</citedRange></bibl>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
