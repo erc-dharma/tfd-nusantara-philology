@@ -46,6 +46,14 @@ MSS 	=	reading of all manuscripts
                     		<abbr type="siglum">Ed<hi rend="superscript">C</hi></abbr>
                     		<bibl><ptr target="bib:Creese1998_01"/></bibl>
                     	</witness>
+                	<witness xml:id="msK">
+                		<abbr type="siglum">L</abbr>
+                		lontar ms from Puri Kawan, Singaraja (HKS 2715 = HKS 5202) 
+                	</witness>
+                	<witness xml:id="msL">
+                		<abbr type="siglum">L</abbr>
+                		HKS 3995  
+                	</witness>
                 </listWit>
             </sourceDesc>
         </fileDesc>
@@ -56,15 +64,25 @@ MSS 	=	reading of all manuscripts
   -->
             </projectDesc>
             <editorialDecl> 
-                <p></p>
+                <p>need to deal with 
+		<list>
+			<item>square brackets [...] in edition</item>
+			<item>spaces before ira/nira, ing/ning, n in edition</item>
+			<item>use of italics in edition: metri causa departures from spelling of K (as explained by Creese, p. 11) — to be encoded as ḍīpa in 53.2</item>
+		</list></p>
                 <correction>
                     <p/>
                 </correction>
                 <normalization>
                     <p>
                     	change		rṇn	to	rṇa
+                    	change		ê	to	e
+                    	change		â	to	ā
+                    	change		î	to	ī
                     	change		ĕ	to	ə
                     	change		ö	to	ə̄
+                    	change		ṛ	to	r̥
+                    	change		ng	to	ṅ
                     	change		w	to	v
 		</p>
                 </normalization>
@@ -86,162 +104,190 @@ MSS 	=	reading of all manuscripts
 			<div type="edition" xml:lang="kaw-Latn">
 <div><ab type="invocation">Awighnam astu</ab></div>
 <div type="canto" rend="met" n="1" met="jagaddhita">
-<lg n="1"><l n="a">tustus ning kalangön anindya paramārtha pinahuwus i tatwa ning kawi</l>
+<lg n="1">
+<l n="a">tustus ning kalangön anindya paramārtha pinahuwus i tatwa ning kawi</l>
 <l n="b">dhyāyī sātmya ri lĕnglĕng ing kamala hadwaya pinatĕh i sāndhi ning hiḍĕp</l>
 <l n="c">nyāsan ring kakawin tinap pinakasāntĕn i jurang ing acaṇḍya lung langö</l>
 <l n="d">manggĕh lit ning adṛśyatantra madanodaya wĕkas ing acintya niṣkala</l>
 </lg>
-<lg n="2"><l n="a">āpan yan winidāna kastawan irân pangawaki rĕcĕp ing pasir wukir</l>
+<lg n="2">
+<l n="a">āpan yan winidāna kastawan irân pangawaki rĕcĕp ing pasir wukir</l>
 <l n="b">byaktâmiśra luput ndatan pahamĕngan mamiṣayani raras hanêng kapö</l>
 <l n="c">tāwat yan guru ning tanah tutug ing ākṣara pinakahirĕng hanêng karas</l>
 <l n="d">nāhan prastuti ning mangarccana rarab ni suku nira winimba nityasa</l>
 </lg>
-<lg n="3"><l n="a">mangke ngwang lĕngĕng angdadak tumura warṇnana palupuy anātpadêng langö</l>
+<lg n="3">
+<l n="a">mangke ngwang lĕngĕng angdadak tumura warṇnana palupuy anātpadêng langö</l>
 <l n="b">ndan dūra n katĕkāna kewala mahângriwĕgi kapana rakwa yan singi</l>
 <l n="c">hāmhām de ni kĕtĕr nikang jalada tibra kagagat angalap karas tanah</l>
 <l n="d">tan tungkul ri kapingging ing hati cumĕngga raga-ragan angiṣṭi kośala</l>
 </lg>
     <!-- 3 (a) Q awarṇa, S palupuya -->
-<lg n="4"><l n="a">yan kāngĕn hala ning tuwuh wiphala nistura gati nika tan pangenaka</l>
+<lg n="4">
+<l n="a">yan kāngĕn hala ning tuwuh wiphala nistura gati nika tan pangenaka</l>
 <l n="b">wet ning duṣkṛta lot mahambalan ibĕk prihati wiraha śoka lampunĕn</l>
 <l n="c">lĕnglĕng bhranta pinöm halib taya ta sāmbatĕn amanĕhi tan sih ing widhi</l>
 <l n="d">manggā mūra matinggalêng śana wanāśrama ya juga parāna menaka</l>
 </lg>
-<lg n="5"><l n="a">donya n māntĕna kaśmalanya hana darśśana ta sira sang āryya Phalguṇa</l>
+<lg n="5">
+<l n="a">donya n māntĕna kaśmalanya hana darśśana ta sira sang āryya Phalguṇa</l>
 <l n="b">śrī Drupadātmajâpupul i Dharmmatanaya dinunung nirê dalĕm</l>
 <l n="c">yângde trāsa manah Dhanañjaya mangiṣṭya layat awanawāśa tan waneh</l>
 <l n="d">ngkā n māmwīt ta sirê narendra pakamanggala kamĕna nirân humangkata</l>
 </lg>
-<lg n="6"><l n="a">eñjing wāhu lumöng bhaṭāra rawi munggu ring udaya madan nṛpātmaja</l>
+<lg n="6">
+<l n="a">eñjing wāhu lumöng bhaṭāra rawi munggu ring udaya madan nṛpātmaja</l>
 <l n="b">sāmpun mĕntas angarccana krama mijil ta sira saka rikang purângĕnĕs</l>
 <l n="c">tar sah tang warayang laras kawaca yêka ta winawa nira ng warāyudha</l>
 <l n="d">jāti kṣatriyadharmma mangkana purih sang ataki-taki wīryya ring prajā</l>
 </lg>
     <!-- 6 (a) S aswi for rawi (c) Q tan -->
-<lg n="7"><l n="a">ndah śīghrân lĕpas ing swarājya laku sang nṛpatanaya sinanggrahêng langö</l>
+<lg n="7">
+<l n="a">ndah śīghrân lĕpas ing swarājya laku sang nṛpatanaya sinanggrahêng langö</l>
 <l n="b">akweh sobha taman-taman katĕmu de nira ri wĕlahan ing purāśrama</l>
 <l n="c">kaywanyân pakĕmul-kĕmul hima sawang lumuh alara mame kakingkingan</l>
 <l n="d">humbut ning lirang ārjja rumbay amĕḍar sawang angĕsah akung hameri luh</l>
 </lg>
     <!-- 7 (c) L pakĕmu-kĕmul (d) L rumambay; -->
-<lg n="8"><l n="a">lunghā lampah i sang narendrasuta mangkin umaliwat adoh sakêng sabhā</l>
+<lg n="8">
+<l n="a">lunghā lampah i sang narendrasuta mangkin umaliwat adoh sakêng sabhā</l>
 <l n="b">oruk tingkah ikang kināryyakĕn awarṇna salahasa yadin katoliha</l>
 <l n="c">tistis lwīr akĕkĕs-kĕkĕs kalamukan hawuk amuni langönya sungkawa</l>
 <l n="d">krām ning wai manisih ya tâbalut apiṇḍa pamatan ing unĕng linurwakĕn</l>
 </lg>
     <!-- 8 (c) L alamukan awuk -->
-<lg n="9"><l n="a">tĕkwan rāmya nikang basantamasa rāmya ri hawan ira rāmya tūt hĕnu</l>
+<lg n="9">
+<l n="a">tĕkwan rāmya nikang basantamasa rāmya ri hawan ira rāmya tūt hĕnu</l>
 <l n="b">kāryy ânwam hangĕlih-ngĕlih sĕmi nikang kayu kasirir awarṇna koyangan</l>
 <l n="c">polahnyân angĕsah sawang pangĕsah ing ruḍita wiphala kungnya de nira</l>
 <l n="d">awrā kīrṇna tibêng lĕmah paḍa luñut kusuma nika katon sumamburat</l>
 </lg>
     <!-- 9 (b) Q angĕlih-ĕlih  -->
-<lg n="10"><l n="a">nyagrodhânwam aneka boddhi nika yan paruruhurana len prih ambulu</l>
+<lg n="10">
+<l n="a">nyagrodhânwam aneka boddhi nika yan paruruhurana len prih ambulu</l>
 <l n="b">lumrā ng pakṣy anacar paḍâsira-siran tĕka sumayab aliwran ing tahĕn</l>
 <l n="c">mĕnggĕp syungnya na medi-medi sinameni bayan ika marĕk sagocara</l>
 <l n="d">ahrit śabda nikang kuwong siniring ing walik alara tinambang ing cucur</l>
 </lg>
-<lg n="11"><l n="a">prāptêng pora ḍusun-ḍusun hana tĕgal-tĕgal i hiringan ing gunung-gunung</l>
+<lg n="11">
+<l n="a">prāptêng pora ḍusun-ḍusun hana tĕgal-tĕgal i hiringan ing gunung-gunung</l>
 <l n="b">wwang māhwan ya paḍângaring ndan alĕbā patarukan i gagānya tūt gĕgĕr</l>
 <l n="c">dudw âmöh susu kapwa mangkana lanā gawayan ika marĕk marêng pura</l>
 <l n="d">rîndrapraṣṭha nahan prasiddha pahulanya suruhan i gawenya nityasa</l>
 </lg>
     <!-- 11 (c) R gawe nika n umarĕk, S gawa nika n umarĕk  -->
-<lg n="12"><l n="a">mĕṇḍung wāhu sumār jawuhnya maniram-nirami tarukan ing lurah-lurah</l>
+<lg n="12">
+<l n="a">mĕṇḍung wāhu sumār jawuhnya maniram-nirami tarukan ing lurah-lurah</l>
 <l n="b">mangkin kentar ado[h] himanya tĕkap ing pawana mahĕli teja ning rawi</l>
 <l n="c">bhrantā ng cātaka manglangūt ri surud ing jalada malih i rāmya ning wukir</l>
 <l n="d">hetunya n pangamarmmakĕn ri sira kelu salahasa tuminghali ng tawang</l>
 </lg>
     <!-- 12 (b) L ketar; = Q -->
-<lg n="13"><l n="a">tan magyā ta laris nirân krama halintang i tataraban ing wanāntara</l>
+<lg n="13">
+<l n="a">tan magyā ta laris nirân krama halintang i tataraban ing wanāntara</l>
 <l n="b">kweh katyāgan aneka tang kabuyutan tinĕmu nira katon paḍâhalĕp</l>
 <l n="c">lāwan maṇḍala dharmmaśāla kuṭi pājaran arĕja wihāra söh langö</l>
 <l n="d">lingsir ning sawitā pirêka lawas ing diwasa tĕka sirêng Saraswatī</l>
 </lg>
     <!-- 13 (a) S alari -->
-<lg n="14"><l n="a">singgih nirmmala bañw inuttama pawitra pinakabañu ning wanāśrama</l>
+<lg n="14">
+<l n="a">singgih nirmmala bañw inuttama pawitra pinakabañu ning wanāśrama</l>
 <l n="b">towin śuddha hi maikalanya n apasir-pasir analaga mādrakâḍake</l>
 <l n="c">rañjing-rañjing ikâlangö panilukanya n asaji-saji pūrṇna pangkaja</l>
 <l n="d">panglinggan ri dalĕmnya tan patatalan marahakĕna gatinya n uttama</l>
 </lg>
     <!-- 14 (b) Q śuddha i; L makalanya -->
-<lg n="15"><l n="a">āmbĕk sang nṛpaputra harṣaja tuminghali kalĕngĕngan ing mahānadī</l>
+<lg n="15">
+<l n="a">āmbĕk sang nṛpaputra harṣaja tuminghali kalĕngĕngan ing mahānadī</l>
 <l n="b">mambö rāmya ni posik ing jaladhi posik i bañu nika mosik ombakan</l>
 <l n="c">mātrânūb lari ning samīraṇa matangnya kumucak amangun larap-larap</l>
 <l n="d">ryyak-ryyaknyân lalitâmijah lwir agirang ta mamapag i sang āryya Phalguṇa</l>
 </lg>
     <!-- 15 (b) Q kombakan -->
-<lg n="16"><l n="a">hangsa śweta ya tânĕlat ri tĕngah ing sarayi mahas awarṇna manglĕngĕng</l>
+<lg n="16">
+<l n="a">hangsa śweta ya tânĕlat ri tĕngah ing sarayi mahas awarṇna manglĕngĕng</l>
 <l n="b">kahyun-hyun tumiling-tiling ri kĕtĕr ing bhramara wijah amanwa-manwakĕn</l>
 <l n="c">lwir mājar hĕning ing nadī tiki n inulwala ning anila medy aringgĕkan</l>
 <l n="d">denyâsnāna nirāgrahêng wipula pangkaja kahanan ikâpuḍe-puḍe</l>
 </lg>
     <!-- 16 (a) S sarayu (b) L māhamban hyun for kahyun-hyun -->
-<lg n="17"><l n="a">ngkānê lwāni pasir-pasirnya tamatan dahat adalĕm angāmbĕk-āmbĕki</l>
+<lg n="17">
+<l n="a">ngkānê lwāni pasir-pasirnya tamatan dahat adalĕm angāmbĕk-āmbĕki</l>
 <l n="b">honyêkang kaga cakrawāka kalawan priya mangalihi mendung-endungan</l>
 <l n="c">munggwîng pangkaja lot yathāsuka mapahyunan amiruru bajra keśara</l>
 <l n="d">kengĕl pwa ng harawinda marmmara kacūrṇnan i pakĕpĕk ikang wihanggama</l>
 </lg>
-<lg n="18"><l n="a">aśrī reh ni hiring-hiringnya n ahijo paḍa marĕja bangun linangwakĕn</l>
+<lg n="18">
+<l n="a">aśrī reh ni hiring-hiringnya n ahijo paḍa marĕja bangun linangwakĕn</l>
 <l n="b">de ning śewala mĕnggĕp angragĕti pantĕs aniru-niru gātra ning pupur</l>
 <l n="c">nāntĕn têki sawang paras-paras ikang wwang ahayu sahajâmangun raras</l>
 <l n="d">lwir saptangkura sumrak anglĕlĕh i denya n awangi pakis ĕṇḍah ing bañu</l>
 </lg>
     <!-- 18 (b) S don ing -->   
-<lg n="19"><l n="a">wwantĕn satpada medran angrarah amūrwwa raras i lĕngĕng ing saroruha</l>
+<lg n="19">
+<l n="a">wwantĕn satpada medran angrarah amūrwwa raras i lĕngĕng ing saroruha</l>
 <l n="b">darpanyâliwĕran ya monĕng akarang-karang angarĕki kosapêng hṛbuk</l>
 <l n="c">hūmrĕng lwir kĕtĕr ing kapat tuwin arūm lalita jaya-jayanya komala</l>
 <l n="d">lwir hūngkāra pamūrṣitanya ri narendratanaya rumĕsĕp nirāntara</l>
 </lg>
-<lg n="20"><l n="a">ngkā rakwân tumĕḍun sirârahup acāmana lumĕkas asūryyasaiwana</l>
+<lg n="20">
+<l n="a">ngkā rakwân tumĕḍun sirârahup acāmana lumĕkas asūryyasaiwana</l>
 <l n="b">māryy ângel sira denya mangkin alilang twas ira tĕlas irân pangarccana</l>
 <l n="c">ndah mĕntas tumuluy sakêng bañu tathāpi kajĕnĕkana ring śilātala</l>
 <l n="d">harṣânon ri pakungnya yâwing-awingan watu hangingin-ingin mungup-mungup</l>
 </lg>
     <!-- 20 (c) S tumuluya -->
-<lg n="21"><l n="a">len tang harṣa nirân mulat ri gati ning pingul amijah i lo nikang bañu</l>
+<lg n="21">
+<l n="a">len tang harṣa nirân mulat ri gati ning pingul amijah i lo nikang bañu</l>
 <l n="b">tĕkwan medi lĕkas niki n pangicipir hana gumiwang anambi ring watu</l>
 <l n="c">yêkângde kusut ing nadī jaga-jaga ng kuluma milu kawĕs marambĕhan</l>
 <l n="d">ngkā n kāgyat tĕkap ing wihangga kumucup karaṇa nika larup* marêng rĕṇĕk</l>
 </lg>
     <!-- 21 (d) Q larut -->
-<lg n="22"><l n="a">mangkin konang-unang tikang walahar anglĕngĕngi kadi hamiṇḍa ring tawang</l>
+<lg n="22">
+<l n="a">mangkin konang-unang tikang walahar anglĕngĕngi kadi hamiṇḍa ring tawang</l>
 <l n="b">singhit pwa ng rawi rukṣa tang kusuma honya ta kasawur i pombak ing bañu</l>
 <l n="c">lwir wintang dinĕlö halĕpnya sumarambah anama-nama raśmi ning suji</l>
 <l n="d">lwir puṣpāñjali śuddha tulya pasayutnya yan angucapa rakwa ling nira</l>
 </lg>
     <!-- 22 (c) S anamar-namar -->
-<lg n="23"><l n="a">nyâśokâsana puṣpa bāṇa paḍa lurwa kakiraṇan i tīra ning nadī</l>
+<lg n="23">
+<l n="a">nyâśokâsana puṣpa bāṇa paḍa lurwa kakiraṇan i tīra ning nadī</l>
 <l n="b">kapwâśā magĕyuh langönya katawan smi ta kusuma nikang tahĕn madhu</l>
 <l n="c">tan samwas makire manis mala-malar susupana ring akung macangkrama</l>
 <l n="d">rāmyânūt ri patinggal ing bhramara māri mangarĕki hinernya yan rurū</l>
 </lg>
     <!-- 23 (d) LS mangrĕki -->
-<lg n="24"><l n="a">rūmnya ngganya parantya ning rimang angarccana madanawilāśa ring jinĕm</l>
+<lg n="24">
+<l n="a">rūmnya ngganya parantya ning rimang angarccana madanawilāśa ring jinĕm</l>
 <l n="b">honya ng tañjung angambwakĕn kusuma mār mrat angawadi sugandha kānginan</l>
 <l n="c">mambw ârūm panĕḍĕng nikang śikari mogha tan akalib aliṇḍungan wungū</l>
 <l n="d">tapwan marmma hure ni sāntĕn ika molur acawit ajagêng smarātura</l>
 </lg>
     <!-- 24 (a) Q paranti ning  -->
-<lg n="25"><l n="a">kālanya n ri tiling hyang ārkka makucĕm kalĕngĕngan ika suksĕkâlangö</l>
+<lg n="25">
+<l n="a">kālanya n ri tiling hyang ārkka makucĕm kalĕngĕngan ika suksĕkâlangö</l>
 <l n="b">heman tan hana ning mahas-mahas acangkrama mangucapa rūmnya ring karas</l>
 <l n="c">sis denya n wwaya tang mayūra sahajângaring-aring anamar mahas mangö</l>
 <l n="d">pantĕs yan kĕkĕsĕnya ring rasa wilāpa kalĕngĕngan ikang Saraswati</l>
 </lg>
     <!-- 25 (b) Q mahas-ahas; Q ramya for rūmnya (c) R inserts (amahas) before mahas -->
-<lg n="26"><l n="a">manggĕh buddhi nirân mangö mingĕt-ingĕt [r]yy amĕna nira nahan rinūpaka</l>
+<lg n="26">
+<l n="a">manggĕh buddhi nirân mangö mingĕt-ingĕt [r]yy amĕna nira nahan rinūpaka</l>
 <l n="b">siddhā ning lumicin mangiṣṭya pawĕkas parama ṛṣi rikāna lakṣyakĕn</l>
 <l n="c">wet ning lwā nikanang daśendriya rumĕñcĕm amaribhawa litnya ring tutur</l>
 <l n="d">yêkângde hilang ing Śiwasmṛti lĕbur bisama madĕg ikang rajah tamah</l>
 </lg>
     <!-- 26 (a) = Q (c) Q mamaribhawa  -->
-<lg n="27"><l n="a">ānghing kottaman ing hiḍĕp taki-takin ring anĕmu-nĕmu tatwa ning hurip</l>
+<lg n="27">
+<l n="a">ānghing kottaman ing hiḍĕp taki-takin ring anĕmu-nĕmu tatwa ning hurip</l>
 <l n="b">byaktâwās kadi cakra ning ratha yadin hulurana lĕwu denya tan padon</l>
 <l n="c">āpañ jāti nikang śarīra taya leñ juga dadahakĕn ing yaśâdhikā</l>
 <l n="d">yêkī n kenaka ning tuwuh niyata haywa malĕmĕha ring wiṣṭi ning hayu</l>
 </lg>
     <!-- 27 (b) L huluranā -->
-<lg n="28"><l n="a">nāhan wastu ni de nirângangĕn-angĕn tulusa ni pangadeśa sang ṛṣi</l>
+<lg n="28">
+<l n="a">nāhan wastu ni de nirângangĕn-angĕn tulusa ni pangadeśa sang ṛṣi</l>
 <l n="b">lwir bhrantâkuyĕngañ juga* ng hati dhumāraṇa kapatĕha ning daśendriya.</l>
 <l n="c">āpan bheda nikang hiḍĕp ya ta maweh sukĕr alĕmĕh i sandhi ning smṛti</l>
 <l n="d">hetunya n humĕnĕng samāntaji winodanan i kĕtĕr i śabda ning kuwong</l>
@@ -249,7 +295,8 @@ MSS 	=	reading of all manuscripts
     <!-- 28 (a) R pangdesa, S pangudesa (b) = LQ, K jaga -->
 </div>
 <div type="canto" rend="met" n="2" met="navaharṣa">
-<lg n="1"><l n="a">irikā ta muwah lumaku sira ri lingsir ikang diwasa</l>
+<lg n="1">
+<l n="a">irikā ta muwah lumaku sira ri lingsir ikang diwasa</l>
 <l n="b">paran ing twas iniṣṭi nira taya waneh nghing ikang Himawān</l>
 <l n="c">ndah amūrwwa ta lampah ira taman angel mahawan palapat</l>
 <l n="d">alangö mulat ing manuk angada-hadā ta larinya lĕyĕp</l>
@@ -628,8 +675,10 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 3 (b) S ring  -->
 </div>
-<div type="canto" rend="met" n="8" met="Wirat Tĕbu Sol">
-<lg n="1"><l n="a">kaparah tikāng acala rāmya amanuṣa langönya durggama</l>
+<div type="canto" rend="met" n="8" met="kāmamālā">
+<note>Creese calls this meter Wirat Tĕbu Sol.</note>
+<lg n="1">
+<l n="a">kaparah tikāng acala rāmya amanuṣa langönya durggama</l>
 <l n="b">giri Nīlaśṛngga karĕngö tuwi gahana sukĕt nikang wukir</l>
 <l n="c">apĕluk jurangnya n adalĕm śikara nika kahundul ing parung</l>
 <l n="d">kumisik bañunya ya manumbĕr i muka tumĕḍun marêng jurang</l>
@@ -737,8 +786,10 @@ MSS 	=	reading of all manuscripts
 <l n="d">anganty anginĕp ing tapowana nahan tatâmbĕk nira</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="10" met="Wirat Tĕbu Sol">
-<lg n="1"><l n="a">ndah iwön ta sang ṛṣi kabeh mijil agarawalan panungsunga</l>
+<div type="canto" rend="met" n="10" met="kāmamālā">
+<note>Creese calls this meter Wirat Tĕbu Sol.</note>
+<lg n="1">
+<l n="a">ndah iwön ta sang ṛṣi kabeh mijil agarawalan panungsunga</l>
 <l n="b">tapi-tapy adandan umijil sahana nira hanêng tapowana</l>
 <l n="c">ndan apadgaṭâmĕkasakĕn* daluwang ira tĕhĕr ndatan hiner</l>
 <l n="d">agirang-girang lumihat ing lituhayu ya tikângjĕngĕr hati</l>
@@ -799,7 +850,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 11 (c) L sajña -->
 </div>
-    <div type="canto" rend="met" n="11" met="Rajanī">
+    <div type="canto" rend="met" n="11" met="rajanī">
 <lg n="1"><l n="a">sira ta narendra Citradahanânak anindya hayu</l>
 <l n="b">kadi paśarīra ning raras amiṇḍa ri gātra nira</l>
 <l n="c">swang awangi gandha ning kusuma tan pagap arddha marĕs</l>
@@ -963,7 +1014,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">panonan ing suka mijilêng mukâbungah</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="13" met="Kusumawilasita">
+<div type="canto" rend="met" n="13" met="kusumavilasita">
 <lg n="1"><l n="a">prāpta narendra ring gṛha cumuṇḍuk i kahanan i sang nareśwarī</l>
 <l n="b">lāgi sinungsung ing smita ḍatĕng nira tinamakĕn ing wulat marūm</l>
 <l n="c">de nira sang narendramahiṣī dadi mawara-warah nareśwara</l>
@@ -1027,7 +1078,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 11 (b) L śokā; L omits kaka -->
 </div>
-<div type="canto" rend="met" n="14" met="Mattarāga">
+<div type="canto" rend="met" n="14" met="mattarāga">
 <lg n="1"><l n="a">strī-strī hanêng nagara lĕnglĕng osik angarang linurwan ing unĕng</l>
 <l n="b">bhrantâlangö kasarik ing manis nṛpatiputra tibra mangani</l>
 <l n="c">mogâhuyang hamuni kungnya moyut amajang śaśāngka ri dalĕm</l>
@@ -1189,7 +1240,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 15 (a) L ing -->
 </div>
-<div type="canto" rend="met" n="17" met="Mṛdukomala ">
+<div type="canto" rend="met" n="17" met="mr̥dukomala">
 <lg n="1"><l n="a">mangke pwâmiṣayêng langönya tĕkap ing wulan manĕpuhi</l>
 <l n="b">abhrâwā gumawang wangun-wangunan ing <hi rend="superscript">†</hi>gṛhâparimita</l>
 <l n="c">lāwan söng ni wuwungnya kañcana rinĕngga ning maṇimaya</l>
@@ -1377,31 +1428,39 @@ MSS 	=	reading of all manuscripts
     <!-- 6 (c) L ning (d) = L, K tuṣūi  -->
 </div>
 <div type="canto" rend="met" n="23" met="Nāgata">
-<lg n="1"><l n="a">byakta huwus amatĕh līlā citta narapati</l>
+<note>new meter +-----++++----=</note>
+<!-- add to prosodicPatterns -->
+<lg n="1">
+<l n="a">byakta huwus amatĕh līlā citta narapati</l>
 <l n="b">mangkin apulih inak wwang ring rājya sapurati</l>
 <l n="c">wṛddhi wawang umaluy krām ning wīryya sanagara</l>
 <l n="d">nora sumukĕri ng āmbĕk nirwighna sama-sama</l>
 </lg>
-<lg n="2"><l n="a">tan hucapa ta lawas ning lek sang rwa silih-asih</l>
+<lg n="2">
+<l n="a">tan hucapa ta lawas ning lek sang rwa silih-asih</l>
 <l n="b">nora kawiwal irâtūt sakrandana ri dalĕm</l>
 <l n="c">kapwa paḍa mangĕne twas ning nāla gāti [ni]ra</l>
 <l n="d">tulya mangunĕng umangkĕp mwang jangga silih-asih</l>
 </lg>
     <!-- 2 (a) S ucapĕn (c) = Q  -->
-<lg n="3"><l n="a">mangkin anupama sih sang nāthân panĕkakĕna</l>
+<lg n="3">
+<l n="a">mangkin anupama sih sang nāthân panĕkakĕna</l>
 <l n="b">de nira nṛpatiputrâweh sobha manah ira</l>
 <l n="c">mogha tĕlĕb alulut sang Pārthâta juga lanā</l>
 <l n="d">towi sumĕkar ing āmbĕk ning wargga bala hita</l>
 </lg>
     <!-- 3 (a) L upama  -->
-<lg n="4"><l n="a">prāpta pangĕtĕr ikang rĕtw âkon mahas alangö</l>
+<lg n="4">
+<l n="a">prāpta pangĕtĕr ikang rĕtw âkon mahas alangö</l>
 <l n="b">sang nṛpatanaya hāmhām ny āmbĕk nira rumĕngö</l>
 <l n="c">hetu nira ta madan mangdon mangraraha langö</l>
 <l n="d">tīrtha wimala nahan bhyāṣan ling nira n atutur</l>
 </lg>
-<lg n="5"><l n="a">sāmpun inanumata n winwīt sang kalulut ira</l>
-<l n="b">mukya sira naranātha mwang śrī waramahiṣīndah [h]atita sakatambe mangkat nṛpatanaya</l>
-<l n="c">rabdha bala haji milwā mangkat paḍa marĕpat</l>
+<lg n="5">
+<l n="a">sāmpun inanumata n winwīt sang kalulut ira</l>
+<l n="b">mukya sira naranātha mwang śrī waramahiṣī</l>
+<l n="c">ndah [h]atita sakatambe mangkat nṛpatanaya</l>
+<l n="d">rabdha bala haji milwā mangkat paḍa marĕpat</l>
 </lg>
     <!-- 5 (c) = L (d) Q apangkat -->
 </div>
@@ -1447,7 +1506,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 7 (b) Q mon ing for monĕng (d) = L, K lwir -->
 </div>
-<div type="canto" rend="met" n="25" met="Kilayu anĕḍĕng">
+<div type="canto" rend="met" n="25" met="kilayu anəḍəṅ">
 <lg n="1"><l n="a">lunghā ta laku nira huwus makin katĕmu tang sakamatan alangö</l>
 <l n="b">wwantĕn lura-lurah alĕbā n inambah ira tūt halas-alas arĕnĕb</l>
 <l n="c">aśrī pagaga-gagan aneka tanduran ikâta pinuyu-puyuran</l>
@@ -1627,7 +1686,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">ya kāraṇa narendraputra karĕṇan matakwan sira</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="29" met="Puṣpitāgra">
+<div type="canto" rend="met" n="29" met="puṣpitāgrā">
 <lg n="1"><l n="a">krama mawara-warah tikang surastrī</l>
 <l n="b">surawanitā ngwang iki n manĕhta sākṣāt</l>
 <l n="c">hulunan ira Dhanādhipa pratīta</l>
@@ -1696,7 +1755,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">paḍa ta matunggalan ing nadī ya tângher</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="30" met="Basantatilaka">
+<div type="canto" rend="met" n="30" met="basantatilakā">
 <lg n="1"><l n="a">nā ling nikang surawadhū ri sang āryya Pārtha</l>
 <l n="b">ndātan wihang nṛpatiputra hinop asantwa</l>
 <l n="c">yêkā n lum[am]pah adulur tikanang surastrī</l>
@@ -2059,7 +2118,7 @@ MSS 	=	reading of all manuscripts
 </lg>
 </div>
 <div type="canto" rend="met" n="34" met="Wisarjita">
-<note>+--+--+------+--+--=</note>
+<note>new meter +--+--+------+--+--=</note>
 <!-- add to prosodicPatterns  -->
 <lg n="1">
 <l n="a">rāmya nikang sakatinghalan i laku nirê tĕpi ning hudadhi</l>
@@ -2244,7 +2303,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">tibrângrĕs hadamar wulan pangucaranya ya kamuni unĕngnya mūrcchita</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="36" met="Śārdūlawikrīḍita ">
+<div type="canto" rend="met" n="36" met="śārdūlavikrīḍita">
 <lg n="1"><l n="a">ndan sang wyāpaka sūkṣma ning raras arūm śrī ning ṭikângiṇḍarat</l>
 <l n="b">antĕn pwânggĕh irê narendra Baladewânopamêng kadyahan</l>
 <l n="c">singgih yan karĕngö hajöng nira Subhadrā sang maṇik ning purī</l>
@@ -2343,7 +2402,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 11 (a) Q Yadu kabeh for Yadukula  -->
 </div>
-<div type="canto" rend="met" n="38" met="Aśwalalita">
+<div type="canto" rend="met" n="38" met="aśvalalita">
 <lg n="1"><l n="a">makin asinang tikang kuśala koparĕnggan i samūha ning Yadu kabeh</l>
 <l n="b">amanuṣa rehnya tulya suraloka kapwa winiśeṣa kārcanan ikā</l>
 <l n="c">apan adukūla söh saha manitra kairatila mulyawastra tinatā</l>
@@ -2398,7 +2457,7 @@ MSS 	=	reading of all manuscripts
 <l n="d">makin awĕrö kabehnya tuwi kāmbahan drawina sindu māstawa marūm</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="39" met="Sragdhara">
+<div type="canto" rend="met" n="39" met="sragdhara">
 <lg n="1"><l n="a">nā lwir ning pūja winyākṛti tĕkap ira sang wīra Wṛṣṇy âdimukya</l>
 <l n="b">sangsiptan rakwa sāmpun panaḍah ira kabeh prīti de śrī narāryya</l>
 <l n="c">kintu pwa ng Wṛṣṇi bhṛtya prasama-sama huwus pūrṇna ring pāṇa bhukti</l>
@@ -2464,13 +2523,15 @@ MSS 	=	reading of all manuscripts
 <l n="d">kāsĕngkānyê hajöng tulya sakadang ing akung de nikâpet manisnya</l>
 </lg>
 </div>
-<div type="canto" rend="met" n="40" met="Indrawangśa/Wangśastha">
-<lg n="1"><l n="a">śrī Kṛṣṇa Pārthâta sirêki warṇnanĕn</l>
+<div type="canto" rend="met" n="40" met="vaṁśamālā">
+<lg n="1">
+<l n="a">śrī Kṛṣṇa Pārthâta sirêki warṇnanĕn</l>
 <l n="b">matūt gĕgĕr lampah irân yathāsuka</l>
 <l n="c">himbang ri sor byakta langönya kongkulan</l>
 <l n="d">katon mawit rāmya niki n tininghalan</l>
 </lg>
-<lg n="2"><l n="a">wwainyârjja muñcar kumiriñcing ing jurang</l>
+<lg n="2">
+<l n="a">wwainyârjja muñcar kumiriñcing ing jurang</l>
 <l n="b">waneh pwa tūsnyânalagâmangun langö</l>
 <l n="c">sāśrī pwa lumbunya nahan kasĕmburan</l>
 <l n="d">byaktêki* kalyan maṇi ratna sök riya</l>
@@ -2908,39 +2969,46 @@ MSS 	=	reading of all manuscripts
     <!-- 20 (a) R sirêhiring (b) MSS sirastu -->
 </div>
 <div type="canto" rend="met" n="46" met="Wirat Nĕtĕg">
-<lg n="1"><l n="a">ḍatĕng ta sira sang watĕk Yadu hanêng nagara lagi sinungsung ing wwang angungang</l>
+<lg n="1">
+<l n="a">ḍatĕng ta sira sang watĕk Yadu hanêng nagara lagi sinungsung ing wwang angungang</l>
 <l n="b">manahnya paḍa kāñaran mulat i sang nṛpatanaya sirâdhikāra karĕngö</l>
 <l n="c">ya hetu niki kapwa māprĕgi sawet ning abhinawa wawang marāmpak i yawa</l>
 <l n="d">rare matuha len ulañjar angaḍang hana lilu tumakul ya milwa mijila</l>
 </lg>
     <!-- 1 (d) Q wulañjar -->
-<lg n="2"><l n="a">paḍâgarawalan parĕng kapalayū hanan anguhuh arĕpnya tan karuhuna</l>
+<lg n="2">
+<l n="a">paḍâgarawalan parĕng kapalayū hanan anguhuh arĕpnya tan karuhuna</l>
 <l n="b">silih sĕḍĕk arok waneh tang apipit-pipit aruh-aruhan tayêng lĕbuh agöng</l>
 <l n="c">alah ya nirupekṣa ring hyas asulung-sulung arĕbut anon ri sang nṛpasuta</l>
 <l n="d">dudū tang amahaywa kenya umijil ya katĕrag alayū ndatan dwa kawudan</l>
 </lg>
     <!-- 2 (a) Q kapilayu; S angubah for anguhuh; S kawruhana for karuhuna (d) Q kataragal alayu for katĕrag alayu -->
-<lg n="3"><l n="a">atīta ri ḍatĕng Dhanañjaya lawan narapati madulur cumuṇḍuk i dalĕm</l>
+<lg n="3">
+<l n="a">atīta ri ḍatĕng Dhanañjaya lawan narapati madulur cumuṇḍuk i dalĕm</l>
 <l n="b">yathākrama sirângusap lĕmah i jöng narapati Basudewa len nṛpawadhū</l>
 <l n="c">katanggama sirê Dhanañjaya apan lituhayu tuwi śūra śakti guṇawān</l>
 <l n="d">lawan sawawa molihê prabhusutā hiḍĕp ira taya len pasānakan ira</l>
 </lg>
     <!-- 3 (d) Q mulihê for molihê -->
-<lg n="4"><l n="a">nihan ling ira he wĕkangku kita Pārtha kunang iki ujarku māsku ri kita</l>
+<lg n="4">
+<l n="a">nihan ling ira he wĕkangku kita Pārtha kunang iki ujarku māsku ri kita</l>
 <l n="b">prasiddha kita śāraṇangkwa taya len wwaya tiki Harimūrtty Akarṣaṇa tuwi</l>
 <l n="c">pahaywakĕna têki māsku kinatunggalakĕna bapa tan dagêng manah anūt</l>
 <l n="d">apan sakura nora bheda ngaran ing kadi kita sasawīja haywa malupa</l>
 </lg>
     <!-- 4 (a) L ujarmu (d) Q sakuru for sakura -->
-<lg n="5"><l n="a">wuwus nṛpati sārjjawâmṛta haturnya manginaki sang angrĕngö rasa nikā</l>
+<lg n="5">
+<l n="a">wuwus nṛpati sārjjawâmṛta haturnya manginaki sang angrĕngö rasa nikā</l>
 <l n="b">tuwin saphala wṛddhabhūpati huwus kṛtasamaya ri sandhi ning parahita</l>
 <l n="c">sirang winuwusan mangañjali umastwakĕna hayu ni wākya sang narapati</l>
 <l n="d">mahânginakakĕn rĕsĕp ri manah ing bala gaṇa rumĕngö saharṣa mamuji</l>
 </lg>
     <!-- 5 (c) S amastwakĕna -->
 </div>
-<div type="canto" rend="met" n="47" met="Wirat Tĕbu Sol">
-<lg n="1"><l n="a">ri huwus nirângucap-ucap krama tinuduh ikang balâdhikā</l>
+<div type="canto" rend="met" n="47" met="kāmamālā">
+<note>Creese calls this meter Wirat Tĕbu Sol.</note>
+<lg n="1">
+<l n="a">ri huwus nirângucap-ucap krama tinuduh ikang balâdhikā</l>
 <l n="b">tumitah tikang pamiḍuḍuk pasaji-saji nikang smarāgama</l>
 <l n="c">ri hatur narendraduhitā tiki n inayu lawan Dhanañjaya</l>
 <l n="d">śubhakāla rakwa sakatambaya ta sira ciniṇḍya de haji</l>
@@ -3112,7 +3180,7 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 4 (d) LQ ngganya -->
 </div>
-<div type="canto" rend="met" n="51" met="Aśwalalita">
+<div type="canto" rend="met" n="51" met="aśvalalita">
 <lg n="1"><l n="a">ling ira narendraputra sira sang narendraduhitângĕsah kaparihan</l>
 <l n="b">gupay anukĕr sirâtulak i pangrĕmih nira ta sang narendratanaya</l>
 <l n="c">wiphala pupug tikang kuku nahan pamādhaka nirâla[h] arddha kabalik</l>
@@ -3150,15 +3218,17 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 4 (d) S anĕcĕp -->
 </div>
-<div type="canto" rend="met" n="53" met="Māliṇi">
-<lg n="1"><l n="a">ri huwus ira pinurwânglih lume śrī suputrī</l>
+<div type="canto" rend="met" n="53" met="mālinī">
+<lg n="1">
+<l n="a">ri huwus ira pinurwânglih lume śrī suputrī</l>
 <l n="b">nṛpatanaya manambut mār mrata twas nirônĕng</l>
 <l n="c">sang ahayu sira sākṣāt raśmi ning padma rukṣa</l>
 <l n="d">cinulu-culuh ing ojar de nirângrĕs manguṇḍĕng</l>
 </lg>
     <!-- 1 (b) Q mrat ta -->
-<lg n="2"><l n="a">nṛpasuta sira mangkin tibra de śrī suputrī</l>
-<l n="b">kawuwuhan i kĕñar ning <foreign>ḍīpa</foreign> molĕm ndatan krām</l>
+<lg n="2">
+<l n="a">nṛpasuta sira mangkin tibra de śrī suputrī</l>
+<l n="b">kawuwuhan i kĕñar ning <app><lem wit="#edc #msL">ḍīpa</lem><rdg wit="#msK">ḍipa</rdg></app> molĕm ndatan krām</l>
 <l n="c">makin asĕmu tulis mās de nirânglih tar olah</l>
 <l n="d">nṛpasuta tatan aśrw ângol amangkwângajum ken</l>
 </lg>
@@ -3211,14 +3281,17 @@ MSS 	=	reading of all manuscripts
 </lg>
     <!-- 2 (a) L ta rêbu; = LQ -->
 </div>
-<div type="canto" rend="met" n="55" met="Wirat Tĕbu Sol">
-<lg n="1"><l n="a">iti nā ta lālana nirânglipurakĕn i narendraputrikā</l>
+<div type="canto" rend="met" n="55" met="kāmamālā">
+<note>Creese calls this meter Wirat Tĕbu Sol.</note>
+<lg n="1">
+<l n="a">iti nā ta lālana nirânglipurakĕn i narendraputrikā</l>
 <l n="b">araras mananghulu maweh sĕpah arĕja mahânĕsĕp laṭi</l>
 <l n="c">tĕhĕr angririh-ririhi roma nira tama hamatya-matyani</l>
 <l n="d">amasang-masang ndatan alĕh mayat i gĕmuh ikang payodhara</l>
 </lg>
     <!-- 1 (a) L -putrīkā (b) S saha for mahâ (c) L nirā (d) R ndan atalĕh, S nda atalĕh for ndatan alĕh -->
-<lg n="2"><l n="a">ahirit sinambangan irêng kakawin asĕmu mombakan langö</l>
+<lg n="2">
+<l n="a">ahirit sinambangan irêng kakawin asĕmu mombakan langö</l>
 <l n="b">sinĕlan-sĕlān ri rĕsĕp ing mangarĕki pipi rāmya meñjuha</l>
 <l n="c">ri pamāhwa-māhwan i manis ni culu-culuh irâmriyambada</l>
 <l n="d">anusah mayang wahu mĕkar ndan amanĕhi rinĕngwa-rĕngwakĕn</l>
@@ -3260,7 +3333,8 @@ MSS 	=	reading of all manuscripts
 <l n="d">sinara n hana<hi rend="superscript">†</hi> ning kaka-kaka sararasnya n amaṇḍaga sök</l>
 </lg>
     <!-- 4 (a) LQ awās sira; S ajajar  -->
-<lg n="5"><l n="a">wĕkasan wwaya <foreign>tâmwang</foreign> ira tinuha ring pura somya tuwi</l>
+<lg n="5">
+<l n="a">wĕkasan wwaya <foreign>tâmwang</foreign> ira tinuha ring pura somya tuwi</l>
 <l n="b">winiweka sulakṣaṇa mangarahakĕn ri sirân mijila</l>
 <l n="c">irikā sira sang rwa tumuluy angadĕg mijilêng pasabhān</l>
 <l n="d">paripūrṇna ta sang Yadukula hiniwö manaḍah ri yawa</l>
