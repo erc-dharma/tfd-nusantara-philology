@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="editorial">Diplomatic edition of London ms. BL Add ms 12277</title>
+            <!--change the title of the edition starting, if possible, with the title of your text-->
+            <!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
+            <!--<title type="alt"></title>-->
+            <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+            <!--<title type="original" xml:lang="...-Latn"></title>-->
+            <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+            <!--<author></author>-->
+            <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+            <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+               <resp>author of digital edition</resp>
+               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <persName ref="part:argr">
+                  <forename>Arlo</forename>
+                  <surname>Griffiths</surname>
+               </persName>
+               <persName ref="part:nuha">
+                  <name>Nurmalia Habibah</name>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>
+               <ref target="{URI for DHARMA website}">DHARMA</ref>
+            </authority>
+            <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+            <idno type="filename">Fill in the filename with the xml extension</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"/>
+                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden</settlement>
+                        <institution>University Library (UB)</institution>
+                        <repository>Lontar</repository>
+                        <idno>Or. 23732</idno>
+                     </msIdentifier>
+                     <msContents>
+                                <!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <author>Śāntarakṣita</author>
+                           <title>Vipañcitārthā</title>
+                           <!-- You can also add a colophon if needed -->
+                           <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                           <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                           <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                        </objectDesc>
+                        <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                           <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                              <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi>
+                              </abbr>
+                              <!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                              <p>main hand of the manuscript, black ink, Sundanese script</p>
+                              <!-- provide a description of the hand -->
+                           </handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                     </history>
+                  </msDesc>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+            <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+         </projectDesc>
+         <editorialDecl>
+            <p/>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="part:axja" when="2025-05-25" status="draft">transformation in TEI</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="und">
+<ab>
+<pb n="1r"/>
+<lb n="1r1"/> // 0 // Avighnam astu: /// 0 /// hana pva ya maṅke vuvusna:, kalanira: bha:ṭa:ra rama:, hamiR̥ṅvanī saṅ a:rī bhraṭa: katatvaniṁ paṅarcca:ṇa: 
+<lb n="1r2"/> saṅ amukti,, ṇḍya ta: liṅira:, riṁ humuṅguḥ den-amasti hiṁ sila:krama:, hambək maredḍa:lus tan ava:mana:, haṅgəṁ kasəmbahaniṁ saṁ deva pitr̥, hamri-
+<lb n="1r3"/>ḥ kanurageṁ sama tumuvuḥ, tan aracuk cavuhiṁ raṣa: kayogyan·, jnək tumiru-tiru śrutiniṁṅ ajī śa:sra gmət·, tan aṅudokən manaḥ de-
+<lb n="1r4"/>vek tulus tan pasakṣi, bvat gumiśa: baṅga: kuhaka:, tan kədva: malayokən tvas jajalukən·, havr̥ bot pupuji ṁ lepya kalubaniṁ lo-
+<pb n="1v"/>
+<fw place="left" n="1" hand="1"><num>1</num></fw>
+<fw place="right" n="roman-1" hand="1"><num>1</num></fw>
+<lb n="1v1"/> bha:, sira-sira hisun-isun-hisun uga:, tan mapaR̥kaṁ ragha: dveṣa: kimburu, yekū
+kaṁ dumadya pahilanya,, tan ūmnəṁ vulat iṁ bala: hamarikṣa
+<lb n="1v2"/>lara:lapanya, jəjəpən kavruhira: senak tan enaknya, priḥ kalulutanya huga paśevan·,
+katapi ya: kamudḍa:n· varahna: krama hi ya, ya-
+<lb n="1v3"/>n purugən trapna: tata-ṣṭithiṅ ulaḥ, ḍuga-ḍuga: prayogha: riṁṅ anibanī vighraha: panakaryya, den-kadi hamṭiki tatanman sarvva sarī kavva-
+<lb n="1v4"/>vahan·, haḍmit pinet luṅgaḥnya lumuṁ pva ya:vaśaṇanya, havaḥ sumək ṣumuhun skar manahiṁ bala:, deniṁ hamivḍen prayatna polata:n ta-
+<pb n="2r"/>
+<lb n="2r1"/>ṅlalari, katkan iṁ duṣṭa: dūrjjaṇa: maliṁ coraḥ, nyata: tan kalen kadḍi meda:niṁ miṇḍa, avḍy anon iṁ kayu maḍəg·, An sumeṇḍe hinak pva
+<lb n="2r2"/>ya parantunanya nūta: vivijaḥ, kaliṅanya tan pahiriṁ saṁ manuṅgaṅi raṭa: vihikan aśvameḍaniṁṅ asaratī, riṅ apan harohara: lakunya hapara- 
+<lb n="2r3"/>ṅ-aparūṁ, maṅkanenak haṇḍəlira: saṅ ha:maṅku bhūmī, yatanyan pamuhara: vighna: ri sira: ,, 0,, An maṅkaṇa: ya huñcaR̥n saṁ hyaṁ hajī pūrvvaḍi-
+<lb n="2r4"/>gama, hayo riṅ aṅamplag-amplagən·, hapan maha:bha:ra:lita siṅhit sūśvareṅ akṣara:, riṅa-riṅhanən denaśriṁ sisiriṅən pisiṅgiṅni<hi>§-</hi>
+<pb n="2v"/>
+<fw place="left" n="2" hand="1"><num>2</num></fw>
+<fw place="right" n="roman-2" hand="1"><num>2</num></fw>
+<lb n="2v1"/>ṅ akveḥ, marapvan vyartan kaparibhaveṁ kleśaniṅ aśarira: || hana pva riṁ parvvaḍḍi liṅən·, hyaṁ yama:dipa: sira hupapatiniṁ devaṭa:, Aṣa-
+<lb n="2v2"/>va:ka hinanṭa:rkka: riṁ parikṣayuṣa:, pakantukira: hatrap aṇḍa-huṇḍiniṁ ḍaṇḍa:, vvaṁ tan salaḥ, kavighraha: riṁ viḍḍīvaṣa tmaḥ manuṣa:, sinurun sa-
+<lb n="2v3"/>kiṁ deva:laya:, katkeṁ jana:loka:, deva tuvī katama riṁ patī, hiku kaṅ kayatna:kna, <hi>||</hi> Aṇa: vaneḥ bhagavan aḍḍī maṇḍavya sira:,
+<lb n="2v4"/>maṅanakən braṭa: mona: maṣa:, kaspəriṁ maliṁ, rinuruḥ deniṁ taṇḍa:, katmu maṅəttaniṁ kuṇḍa, sinikəpva ya sinaṅkala:, tatapi saṁ brahma- 
+<pb n="3r"/>
+<!--  in the left margin is a mark that has the shape of a plus sign with dots in the four intermediate directions; it seems to have been made by a secondary hand, in pen written on the leaf   -->
+<lb n="3r1"/>ṇa: kavaha: huga:vighraha:,, hakveḥ paribhaṣaniṁ tatvadyatmika:, maka:siptavayeṃ parvva lyan· yekuṅgvaniṁ sumiriṅa:tagutagu,, riṅ a:-
+<lb n="3r2"/>mtokən puṣṭaka: tujunən ve rahayu, hagave maṅgala: rumuhun abr̥siha: silakrama pajəg pahenak manaḥta:, sambut saṁ hyaṁ Agama: yo-
+<lb n="3r3"/>sasalahiṅe, pana:ṅuñcaR̥ṇna: vkasiṁ tumuvuḥ saṅsepanya, raṣa rinaṣa: yva hakaraṇa: cəṅhil acəcəṅgiṅən·, tan maṅkana: kajariṁṅ a:-
+<lb n="3r4"/>jī śastragamana:,, nihan vaneḥ ḍarṣaniya: R̥p səṅgunənañcik·, ḍarmma sūkla haprabha citta: tan kapaR̥kiṁ lubḍa jana:,, tan amighraheṁ
+<pb n="3v"/>
+<fw place="left" n="3" hand="1"><num>3</num></fw>
+<fw place="right" n="roman-3" hand="1"><num>3</num></fw>
+<!-- in the right margin is a mark that has the shape of an X sign; it seems to have been made by a secondary hand, in pen written on the leaf. Arlo: here I'd say the pen of stylus has made a scratch into the leaf, which is different from from I think we see on 3r left margin  -->
+<lb n="3v1"/>tan papidoṣa:, hapi hnəṅiṁ hapidośa,, taha: vḍi hiṅ kinabhitan·, tan lagava riṅ avḍi,, tuhu hna: huga sakaraṇane, hayo pa-
+<lb n="3v2"/>ṅliṅya den anula:ra:ṣa:,, kaliṅanya den kavruha: huga ruhun·, rarasiṁ priṅga:ṭikṣṇaniṅ asayaha brat·, den kadi duṅulaniṅ ka:ra
+<lb n="3v3"/>phasaren śivalan·,, mapa ta: lviriṁ śivala{<del rend="strikethrough">bh/n}</del>n palaranya, supitən sari-sarī hapus i sanurnya pinək·,, riṅ ano phalaranya, palunən sa-
+<lb n="3v4"/>rī-sarī heṅguṅən ubəsən iris-iris·,, kunaṁ hiṅ karambil·, vujəkən ginaR̥m sari-sari bəbəden atguḥ ri nəb·,, riṅ apa nora
+<pb n="4r"/>
+<lb n="4r1"/>mtu ha:ḍuḥnya hamr̥ta:ni havurip·, siku-sikvakniṁ siphat ukura śarira, sugyan pūrvvanya na sisip hamuṅgviṁ habaṅiṁ tuñjuṁ kinaviteṁ bañu, ye-
+<lb n="4r2"/>ku manahiṁ veneḥ tan pahi lavan śarira:, śr̥dḍa: kinasr̥dḍa:n·,, maṅka:naṅ śarira:, hapanas kinaṭikṣṇan·,, // 0 // <!-- #1 -->riṅ aṣṭaduṣṭa: vara-
+<lb n="4r3"/>ha:kna <hi>,, 0,,</hi> hamateni voṁ tan padoṣa:,, hakon amatena:na voṁ tan padoṣa,, haṅaninī voṁ tan padoṣa,, hakəmbulan paṅa:-
+<lb n="4r4"/>n lavan ḍuṣṭa:,, sapaduluran saparane lavan ḍuṣṭa:,, hamamitra lavan ḍuṣṭa:,, haveḥ gnaḥ riṁ duṣṭa:,, hatuluṁ duṣṭa:,, Iku Aṣṭaduṣṭa ṅara-
+<pb n="4v"/>
+<fw place="left" n="4" hand="1"><num>4</num></fw>
+<fw place="left" hand="2">, riṅ aṣṭad(u)</fw>
+<fw place="left" hand="3">ṣṭa:</fw>
+<fw place="right" n="roman-4" hand="1"><num>4</num></fw>
+<lb n="4v1"/>nya,, riṁ Aṣṭa:duṣṭa kaṁ tətlu hadoṣa patī, kaṁ lilima: hadoṣa hartha, katutuR̥na deniṁ haR̥p· vəruha: patutuṅgalane,, həndi ta: ka-
+<lb n="4v2"/>ṅ ha:dośa patī<hi>,, 0,,</hi>  riṁ voṁ hamatenī tan padośa, dośa pati,, riṁ hakon amatenana voṁ tan padośa, dośa pati,, riṁ hana-<hi>⌈</hi>
+<lb n="4v3"/>tonī voṁ tan padośa, dośa pati <hi>,, 0,,</hi> həndi ta: kaṁ lilima: hadośa: hartha,, śapaṅan lavan ḍuṣṭa:,, samitra: lavan ḍuṣṭa:,, śapadulu-
+<lb n="4v4"/>ran lavan ḍuṣṭa:,, haveḥ gnaḥ riṁ ḍuṣṭa:,, hatuluṁ duṣṭa:,, Iku ta kalima: paḍa hadośa hartha,, nora vnaṁ dośanana pati denira saṅ ha:-
+<pb n="5r"/>
+<lb n="5r1"/>mava: bhūmi,, hamateni tan padośa:,, hakon amatenana voṁ tanpa dośa,, hanatoni voṁ tan padośa:,, duṣṭa: tətlu hiku, yen sa-
+<lb n="5r2"/>yakṭi sacihna, katəlu ḍəṇḍa pati, harane katlu duṣṭa: hatoh avake,, yen amalaku huripəniṁ saṅ ha:mava: bhūmī, katlu ḍəṇḍanən pataṁ lakṣa
+<lb n="5r3"/>vivijinənniṁ duṣṭa: satuṅgal-satuṅgal·, kahilaṅane dośane <hi>,, 0,,</hi> hana dene kaṁ sapaṅan lavan ḍuṣṭa:,, sadulur lavan ḍuṣṭa:,, hamitra:
+<lb n="5r4"/>lavan ḍuṣṭa:,, hatuluṁ duṣṭa:,, haveḥ gnaḥ riṁ duṣṭa:,, Iku ta kalima: paḍḍa ḍəṇḍanən· denira saṅ ha:mava: bhūmi, Aṁroṁ lakṣa: riṁ voṁ<hi>§</hi>
+<pb n="5v"/>
+<fw place="left" n="5" hand="1"><num>5</num></fw>
+<fw place="left" hand="2">, voṁ hala-</fw>
+<fw place="left" hand="3">vas hapami-</fw>
+<fw place="left" hand="4">tra, </fw>
+<fw place="right" n="roman-5" hand="1"><num>5</num></fw>
+<lb n="5v1"/>duṣṭa: satuṅgal-satuṅgal·, yen vuvus enak kasapekṣan deniṁ sa:kṣi kaduṣṭa:ne,, 0,, <!-- #2 -->maniḥ yen ana: voṁ halavas hapamitra: lava-
+<lb n="5v2"/>n ḍuṣṭa:, haṅhi<hi>ṁ</hi> nora: vəruḥ yen ḍuṣṭa, dene dohe humahe, dohe deśane, kaṅ amitra hiṅ hiya:, kadəṇḍaha pataṁ talī tluṅ ata-
+<lb n="5v3"/>k denira saṅ amava: bhūmī,, saṅkane kaḍəṇḍa:, dene halavas hamitra:, tur anəṅguḥ tan vəruh iṁṅ iya yen ḍuṣṭa:,, 0,, yen tan alavas ḍe-
+<lb n="5v4"/>ne hamitra:, tuhu-tuhu tan vəruḥh iṁṅ iya yen ḍuṣṭa:,, tan kaḍəṇḍaha: denira: saṅ ha:mava bhūmī, hapan tan alavas dene hamitra:, tur du-
+
+<pb n="6r"/>
+<fw place="left" hand="1">, kavula: mi(ṅ)ga(t)·</fw>
+<fw place="left" hand="2">, kavula: ha-</fw>
+<fw place="left" hand="3">met ga(v)e,</fw>
+<lb n="6r1"/>ruṁ vəruḥ yen ḍuṣṭa:,, maṅkaṇa: raṣa: saṁ hyaṁ hagama || 0 ||<!-- #3 --> hana kavula: va:don miṅgat sakiṁ gustine, hiṅiṅgatakən deniṁ voṁ len·,
+<!--  The scribe here changes the symbols used for breaks in the text, from </hi><graphic n="1001" width="0.8995833333333333cm" height="0.5820833333333333cm" url="media/image1.png" rend="inline"/><hi> transliterated as ,, 0,, , to </hi><graphic n="1002" width="1.1377083333333333cm" height="0.635cm" url="media/image2.png" rend="inline"/><hi> transliterated as || 0 ||. Perhaps the latter is to announce a new topic while the former is to mark a division within the same topic? -->
+<lb n="6r2"/>katmū dene gustine, kaṅ ha:ṅiṅgatakən kaḍəṇḍaha: pataṁ lakṣa: denira: saṅ ha:mava bhūmī, hana dene hutaṅe voṁ vadon kaṅ hiṅiṅga-
+<lb n="6r3"/>takən ika:, muliha: hanikəl saguṅiṁ hutaṁ, tūr palakonana pavaḍal gave śalavaśe miṅgat sakiṁ gusti, hapan maliṁ ṅaraniṁ voṁ haṅi-
+<lb n="6r4"/>ṅgata:kən· kavulaniṁ voṁ || 0 || <!-- #4 -->hana kavulaniṁ voṁ den kona:meta: gavene gustine, Asiṁ sagavehane, hiṅupa§-
+
+<pb n="6v"/>
+<fw place="left" n="6" hand="1"><num>6</num></fw>
+<fw place="left" hand="2">, hapəpgata(n)·</fw>
+<fw place="left" hand="3">halaki, </fw>
+<fw place="left" hand="4">{haṅrusak titipa-}</fw>
+<fw place="left" hand="5">n·, </fw>
+<fw place="right" n="roman-6" hand="1"><num>6</num></fw>
+<lb n="6v1"/>han gavene deniṁ len·, na:ṅkən holiḥ hupahan gustine hamet·, vkasan matī kavula hika:, pinaten deniṁ duṣṭa:, yen ḍuruṁ haveḥ hu-
+<lb n="6v2"/>pahan· kaṅ ha:ṅupah-upaḥ, Aveha: hupahan iṁ kaṅ ha:duve kavula:, deniṁ patine kahulane, tan vənaṁ kaṅ ha:ṅupaḥ-hupaḥ yan vicaranən·
+<lb n="6v3"/> || 0 ||<!-- #5 --> hana voṁ hapəpəgatan alakī harabi, papat· yaktiniṁ hapəpga:tan·, cihnane, sakṣī, haṅgəṅgəmpal pisis hadulur hujar riṁ laki, haveḥ bañu ra-
+<lb n="6v4"/>vup·, haveḥ vija bras· Iku ta: L̥viḥ pinaka:cihna-yaktīniṁ hapəpgatan·, śiḍa: hatadin harane,, yen ora na: yakṭine papat iku, dudu tadin ha-
+
+<pb n="7r"/>
+<fw place="left" hand="1">, haṅrusak ti-</fw>
+<fw place="left" hand="2">tipan·, </fw>
+<fw place="left" hand="3">, hamateni kavu-</fw>
+<fw place="left" hand="4">la voṁ tan pado-</fw>
+<fw place="left" hand="5">sa</fw>
+<!-- in the right margin is a mark that has the shape of an X sign scratched repeatedly; it seems to </hi>have been made by a secondary hand, in pen written on the leaf  -->
+<lb n="7r1"/>rane, duruṁ pgat uga phalaki-rabine,, hana po voṁ vadon maṅkaṇa:, tan pacihna hapəpgatan·, tumuli halaki riṁ len·, kaṅ ha:ṅalap· ḍəṇḍanən pataṁ
+<lb n="7r2"/>lakṣa: de saṅ amava bhūmī || 0 || <!-- #6 -->hana voṁ haṅrusak titipan·, yaktine, denbukṭī, denaṅgo, densalini rupa:, tan pamit iṁ kaṅ ha:dr̥ve titipan·,
+<lb n="7r3"/>hika: ta vnaṁ haranena va:lat,, tiṅkahe padḍa kalavan saṇḍa rinusak·, saguṅiṁ paṅr̥ganiṁ titipan· phalakunən denmulih anikəl·, mariṁ kaṅ ha:-
+<lb n="7r4"/>titip·, tūr ḍəṇḍanən roṁ lakṣa: denira saṅ ha:mava bhūmī, kaliṅaniṁ haṅrusak titipan· paḍo lavan maliṁ || 0 || <!-- #7 -->hana voṁ hamateni kavu-
+
+<pb n="7v"/>
+<fw place="left" n="7" hand="1"><num>7</num></fw>
+<fw place="left" hand="2">{?},</fw>
+<fw place="left" hand="3">, dr̥ve titi-</fw>
+<fw place="left" hand="4">pan·, </fw>
+<fw place="right" n="roman-7" hand="1"><num>7</num></fw>
+<lb n="7v1"/>laniṁ voṁ, tan padośa:, vetiṁ səR̥ṅəne, kaṁ hamatenī,, kaṅ ha:matenī hamanavurana: hutaṅe kaṁ denpateni hika:, mulih anikəl· ma-
+<lb n="7v2"/>riṁ kaṅ ha:dr̥ve kavula:, tūrr aveha: paṅli sava: voluṅ uṇṭiṁ, hika: kahilaṅane dośane, hamateni,, 0,, manih ana voṁ hamatenī voṁ
+<lb n="7v3"/>tan padośa, dudu kavula:niṁ voṁ, savetiṁ səR̥ṅəne kaṅ amatenī, yogya kaṅ ha:mateni ḍəṇḍanən· denira saṅ ha:mava bhūmī, ḍəṇḍa pataṁ
+<lb n="7v4"/>lakṣa, tur aveha: paṅli sava:, mariṁ sanaka:ḍaṁ vargganiṁ matī, paṅli voluṁ talī || 0 || <!-- #8 -->dr̥ve titīpan· yen pinet denira saṅ ha:mava: bhūmī, yen co-
+
+<pb n="8r"/>
+<fw place="left" hand="1">, hahutaṁ pa-</fw>
+<fw place="left" hand="2">ri,</fw>
+<fw place="left" hand="3">kavula: ha-</fw>
+<fw place="left" hand="4">təmviṁ paṅiṅga-</fw>
+<fw place="left" hand="5">tan·,</fw>
+<lb n="8r1"/>loṅən deniṁ maliṁ,, yen bahakən deniṁ voṁ, yen katunona:, yen keliya: riṁ bañu, yen ilaṅa: kata:hurag ḍeniṁ guṅiṁ praṁ, tan vənaṁ hika palaku-
+<lb n="8r2"/>nən dene kaṅ ha:titip·, Apan kapañcasaḍaraṇa: harane || 0 || <!-- #9 -->riṁ voṁ havutaṁ parī yen tan hamanahurī tumulī, yen livat sakiṁ limaṁ tavun·, hi-
+<lb n="8r3"/>ṅane hanikəl piṁlima:, hiku patəḥ-patəhe sakiṁ hagama: || 0 || <!-- #10 -->kahula: vadon· yen miṅgat sakiṁ gu/+sti\ne, manih ana kahula: lanaṁ miṅgat sa-
+<lb n="8r4"/>kiṁ gustine, hatmu paḍa: kavula:niṁ voṁ riṁ paṅiṅgatan·, halakī harabī padḍa: miṅgat·, halavas hana riṁ deśa len·, hakeḥ hanake
+<pb n="8v"/>
+<fw place="left" n="8" hand="1"><num>8</num></fw>
+<fw place="right" n="8" hand="roman"><num>8</num></fw>
+<lb n="8v1"/>hana lanaṁ vadon·, vkasan karuruḥ dene gustine, kaṅ hadr̥ve kahula: vadon·, dene kaṅ ha:dr̥ve kahula: lanaṁ, hanake du§-
+<lb n="8v2"/>mən·, mariṁ kaṅ ha:dr̥ve kavula: lanaṁ roṁ duman·, mariṁ kaṅ ha:dr̥ve kavula: vadon·, saduman·, yen matī kaṁ lanaṁ karuhun·, kaṅ adr̥-
+<lb n="8v3"/>ve kavula: vadon hameta: pomah-omahe sasuhun·, kavula vadon muliha: mariṁ gustine maniḥ,, yen mati kaṁ vadon karuhun·, ka-
+<lb n="8v4"/>ṅ ha:dr̥ve kavula: lanaṁ hameta: pomah-omahe saR̥mbat·, kavula: lanaṁ muliha: mariṁ gustine maniḥ, saR̥mbat sasuhun uga paḍuma:-
+<pb n="9r"/>
+<fw place="left" hand="1">, kavula vado-</fw>
+<fw place="left" hand="2">n maL̥r ri gustine,</fw>
+<fw place="left" hand="3">, kavula lanaṁ ha-</fw>
+<fw place="left" hand="4">rabi voṁ tan pa-</fw>
+<fw place="left" hand="5">hutaṁ,</fw>
+<!--  there is a reversed spiral drawing? that looks like it was added to the palmleaf with ballpen, between the body of the text and the marginal space  -->
+<lb n="9r1"/>ne, maṅkana: hujariṁ sa hyaṁ śastra: || 0 || <!-- #11 -->kavula: vadon maL̥r riṁ gustine, pinalaku deniṁ kavulaniṁ voṁ, yen phalakunən· deniṁ voṁ pinaka:rabi<hi>⌈</hi>-
+<lb n="9r2"/>ne, vetiṁ haR̥pe riṁ kavula: vadon ika:, hanutakən paṅavula:niṁ kavula: vadon·, sakehe hanake, sadr̥vene, kaṅ ha:dr̥ve kavula: va-
+<lb n="9r3"/>don uga viśeṣa, vnaṁ hameta: || 0 || <!-- #12 -->hana voṁ lanaṁ kavulaniṁ voṁ, harabī voṁ tan pahutaṁ, yen arabiha: voṁ menak·, vuvus anak-a:-
+<lb n="9r4"/>nak· ro tlu papat lima, hanake, dr̥vene, kaṅ ha:dr̥ve kavula: lanaṁ viśeṣa, vnaṁ hameta:, yen rabine voṁ menak·, mo-
+
+<pb n="9v"/>
+<fw place="left" hand="1">, 9</fw>
+<fw place="left" hand="2">, riṁ voṁ hatiti-</fw>
+<fw place="left" hand="3">p· dr̥ve riṁ voṁ</fw>
+<fw place="left" hand="4">tan panak·,</fw>
+<fw place="left" hand="5">, riṁ voṁṅ atata-</fw>
+<fw place="left" hand="6">van lavan rara,</fw>
+<fw place="right" n="9" hand="roman"><num>9</num></fw>
+<lb n="9v1"/>n matī kavula: lanaṁṅ ika:, kaṁ vadon· menak aḍumana: hanake satuṅgal· kevala:, maṅkana: ḍarmane sakiṁ hagama: || 0 || <!-- #13 --> riṁ voṁ ha-
+<lb n="9v2"/>titip· dr̥ve riṁ <hi>{*}</hi>voṁ tan panak-a:nak·, yen atitipa dr̥ve riṁ voṁ hanluḥ duruṁ denpalaku titipane hika:, kablət mati kaṁ dentitipi,
+<lb n="9v3"/>nora kavaśa: titipane hika: yen den phalakuha:, hanumpak iṁ paṅ akiṁ haraniṁ dr̥ve yan maṅkana: || 0 || <!-- #14 -->riṁ voṁ hatatavan lavan rara:,
+<lb n="9v4"/>densiṅidakən riṁṅ alas· karakṣahane, yen atmū ḍeniṁ bapaniṁ rara: kaṅ ha:navanakən·, yogya hamatenana voṁ ha-
+
+<pb n="10r"/>
+<fw place="left" hand="1">, riṁ voṁ hatata-</fw>
+<fw place="left" hand="2">van lavan rara(,)</fw>
+<fw place="left" hand="3">, voṁ haño-</fw>
+<fw place="left" hand="4">loṁ prahu,</fw>
+<lb n="10r1"/>tuvane rara: hika:,, yen katmū ha:roron-roron iṁ deśaha:, yen iṁ vṅiha:, nora vnaṁ patenana deniṁ voṁ hatuvane rara hika:, ka-
+<lb n="10r2"/>ṅ anavanakən ika:, haṅiṁ ḍunuṅaniṁ hatatavan· ḍəṇḍanən roṁ lakṣa: denira: saṅ ha:mava: bhūmī || 0 || <!-- #15 -->yen ana rare ha{*}lit· duruṁ bhiṣa: ha-
+<lb n="10r3"/>nambut gave haṅher-ṅer iṁ voṁ, hahutaṁ paṅan·, bha:kṭa ḍaśa: harane, yan aR̥p luṅha:ha: sakiṁ gnahe haṅher, mahu biṣa: hanambut gave luṅha:
+<lb n="10r4"/>kaR̥pe, panahurane hutaṁ paṅan· kaliḥ talī riṁ kaṅ ha:ṅiṅonī saṅkan alit ika:, maṅkaṇa: śaśana:ne śakiṁ śastra || 0 || <!-- #16 -->yen ana <hi>⌈</hi>-
+
+
+<pb n="10v"/>
+<fw place="left" n="10" hand="1"><num>10</num></fw>
+<fw place="left" hand="2">, voṁ hamala-</fw>
+<fw place="left" hand="3"> kekən rabi(n)iṁ</fw> <!--  perforation of the </hi><hi rend="color(1F1F1F)">the string hole has caused loss of expected na</hi><hi>  -->
+<fw place="left" hand="4">voṁ,</fw>
+<fw place="right" n="10" hand="roman"><num>10</num></fw>
+<lb n="10v1"/>voṁ hañoloṁ paravuniṁ haparavu, dudu paravunira: saṅ ha:mava: bhūmī, yen paravu sarupane, kala rahina: dene hañoloṁ, ḍəṇḍanə-
+<lb n="10v2"/>n salakṣa: denira: saṅ ha:mava: bhūmī, tūr paravu kaṁ dencoloṁṅ ika: muliḥ hanikəl· samulene R̥gane || 0 || <!-- #17 -->yen ana: voṁ hamalakekə-
+<lb n="10v3"/>n rabiniṁ voṁ haṅundaṅ-undaṅ iṁ tuṅgale sapakaraman·, lavan kaḍaṁ vargganiṁ lanaṁ, kaḍaṁ vargganiṁ vadon·, paḍa denundaṁ, hiku voṁ hamaraṁ laraṅa-
+<lb n="10v4"/>n arane, kaṅ amalakekən· ḍəṇḍa pataṁ lakṣa, dene kaṅ adr̥ve rabī, haṇḍəṇḍaha:, kaṁ kinareh alakī-harabi, vnaṁ patenana: karo
+
+<pb n="11r"/>
+<fw place="left" hand="1">, voṁ hatuva-</fw>
+<fw place="left" hand="2">niṁ rara vus ana-</fw>
+<fw place="left" hand="3">ṅgapi tuko-</fw>
+<fw place="left" hand="4">niṁ haṅlamar,</fw>
+<lb n="11r1"/>hika: dene kaṅ ha:dr̥ve rabi mula:, yen amalaku hiṅurip·, lanaṅe, vadone, paḍa kaḍəṇḍaha: hamataṁ lakṣa:, malaniḥ hundaṅ-undaṅane, sa<hi>⌈</hi>-
+<lb n="11r2"/>kehe kaṁ vəruḥ yen rabiniṁ voṁ kaṁ denvaraṅ ika:, kaḍəṇḍaha: roṁ lakṣa: riṁ voṁ satuṅgal-satuṅgal·, tan vəruḥ yen laraṅan kaṁ denvaraṅ hika:, milu
+<lb n="11r3"/>koṇḍaṁ, ḍəṇḍa: salakṣa:, riṁ satuṅgal-satuṅgal·, voṁ kaṁ milu hanambuṅi luṅguḥ nora vəruha vadine, kaḍəṇḍaha: limaṁ talī riṁ voṁ satuṅga-   
+<lb n="11r4"/>l-satuṅgal· || 0 || <!-- #18 -->hanaha voṁ hatuvaniṁ rara, vuvus a:naṅgapi tukoniṁ haṅlalamar samapṭa: payu, hasaṅketa: patəmune, havavaraṅan·,
+
+<pb n="11v"/>
+<fw place="left" n="11" hand="1"><num>11</num></fw>
+<fw place="left" hand="2">, voṁ vado-</fw>
+<fw place="left" hand="3">n helik iṁ la[k]i-</fw>
+<fw place="left" hand="4">ne,</fw>
+<fw place="left" hand="5">, ta nukoni pa-</fw>
+<fw place="left" hand="6">ri riṁ savaḥ,</fw>
+<fw place="left" hand="7">, haṣṭacoraḥ, </fw>
+<fw place="right" n="11" hand="roman"><num>11</num></fw>
+<lb n="11v1"/>jajaka: hika: haṅantī sahujariṁ voṁṅ atuva:niṁ rara:, tka:niṁ pasamaya:, denphalakekən iṁ voṁ len·, deniṁ bapaniṁ rara:, yen maṅkana:, {ve}
+<lb n="11v2"/>saguṅiṁ tukon mūliḥ hanikəl·, tūr voṁ hatuvaniṁ rara:, kaḍəṇḍaha: pataṁ lakṣa: denira saṅ ha:mava: bhūmī || 0 || <!-- #19 --> yen ana voṁ vadon· heli-
+<lb n="11v3"/>k iṁ lakine, vet iṁ tan paR̥pe, tukone muliḥ hanikəl·, hamadal saṅgama: harane || 0 || <!-- #20 --> yen ana: voṁ hanukonī parī riṁ savah i§-
+<lb n="11v4"/>ṅ aśavaḥ, saguṁ-lit iṁ parī mulihanikəl· piṁlima: mariṁ kaṅ ha:dr̥ve parī, tūr ḍəṇḍanən roṁ lakṣa: denira: saṅ ha:mava: bhūmī || 0 || riṁ haṣṭa<hi>⌈</hi>-
+
+
+<pb n="12r"/>
+<!--  there is a faint black or dark smudge with a somewhat irregular spiraling shape placed close to the string hole, in the marginal space  -->
+<lb n="12r1"/>coraḥ maṅke varaha:kna,, lakṣaṇa: hamamaliṁ,, hakon amamaliṁṅa:,, haveḥ paṅan iṁ maliṁ,, haveḥ gnah iṁ maliṁ,, samitra lavan maliṁ,, ha-
+<lb n="12r2"/>tuduḥ saṅkaniṁ maliṁ holiha dalan·,, manih atuluṁ maliṁ,, haniṅiḍakən maliṁ,, hiku haṣṭa:coraḥ harane, yogya ḍəṇḍanən denira saṅ ha:-
+<lb n="12r3"/>mava bhūmī,, riṁ voṁ lakṣaṇa: maliṁ,, lavan akon amaliṅana:, yen sacihna: sayaktī, hadośa patī karo hiku denira: saṅ ha:mava bhūmī,
+<lb n="12r4"/>hanak rabiniṁ maliṁ, lavan sadr̥vene, (ha)&lt;!-- eccentric_ductus --&gt;pañjiṁ, ginənaha:kən iṁ pavonira: saṅ ha:mava: bhūmī, paknane dinol· vinevehakə<hi>⌈</hi>-
+
+
+<pb n="12v"/>
+<fw place="left" n="12" hand="1"><num>12</num></fw>
+<fw place="left" n="xxxx" hand="2">xxxx</fw><!--  unreadable, faded and worn characters, Arlo: </hi><hi rend="color(444746)">clearly this has been written with ink on the lead rather than with stylus-engraving into the leaf</hi><hi>   -->
+<fw place="right" n="12" hand="roman"><num>12</num></fw> <!-- there is a drawing that is similar to roman numeral 3 just below the number 12  -->
+<lb n="12v1"/>n denira saṅ ha:mava: bhūmī,, kunəṁ hanak rabiniṁ hakon amamaliṁṅa: karī, ḍəṇḍanən salakṣa: denira saṅ ha:mava bhūmī, yen paḍa: hakon ama-
+<lb n="12v2"/>maliṅana lavan anak rabine, paḍa: dośanana patī denira: saṅ ha:mava: bhūmī,, riṁ voṁ haveḥ gnah iṁ maliṁ, lavan kaṅ aveḥ paṅan·, ye-
+<lb n="12v3"/>n sacihna sayakti, ḍəṇḍanə roṁ lakṣa denira: saṅ hamava: bhūmī, den{u&gt;}anuṅgal·-nuṅgal iṁ voṁ satuṅgal·,, hanak rabine tan ḍəṇḍanən ika:,,
+<lb n="12v4"/>riṁ voṁ haniṅidakən maliṁ, lavan aṅrakṣa maliṁ, hamuvus· yan tan maliṁ, hanḍohakən maliṁ, tūr karuvan sacihna sayakṭī yen maliṁ, ḍəṇḍanə§-
+
+
+<pb n="13r"/>
+<lb n="13r1"/>n pataṁ lakṣa: denira: saṅ ha:mava: bhūmī, kaṅ ha:ṅubuṅi maliṁ,, vəruḥ yen hana: maliṁ tur mnəṁ, hapan pamitrane maliṅ ika:, ḍəṇḍanən salakṣa denira: sa-
+<lb n="13r2"/>ṅ ha:mava: bhūmī, dośane vəruḥ yen maliṁ tur api tan vəruḥ tūr pamaL̥rana:, marīha: hapamitra lavan maliṁ, kaṅ amamaliṁ yen kacaṇḍak patine, hanak ra-
+<lb n="13r3"/>bine, dr̥vene, petən denira: saṅ ha:mava: bhūmī, yen ana kavulane lanaṁ vadon·, tan petən denira: saṅ ha:mava: bhūmī, luvarakna savu-
+<lb n="13r4"/>taṅe riṁ maliṁ hika:,, panəbuṣaniṁ maliṁ yen amalaku hiṁṅurip·, voluṁ talī riṁ voṁ satuṅgal-satuṅgal·, maṅkaṇa: kaluva:rane, ḍəṇḍa-
+
+
+<pb n="13v"/>
+<fw place="left" n="13" hand="1"><num>13</num></fw>
+<fw place="left" hand="2">, deśa kampi-</fw><!--  The "X" shape between the marginalia and the body of the text appears to be a deliberate mark, possibly a scribal annotation indicating a correction or reference point for the reader or scribe. It seems to cancel out "desa kampihan" because the section of the main text next to it refers instead to "maling."   -->
+<fw place="left" hand="3">han holi(ḥ)</fw>
+<fw place="left" hand="4">maliṁ,</fw>
+<fw place="left" hand="5">, voṁ have-</fw>
+<fw place="left" hand="6">h upakara riṁ maliṁ</fw>
+<fw place="right" n="13" hand="roman"><num>13</num></fw>
+<lb n="13v1"/>pataṁ lakṣa: mariṁ saṅ ha:mava: bhūmī, paṅli śava: mariṁ kaṁ minaliṅan·, saguṅiṁ dr̥ve hiṅalapiṁ maliṁ, muliha:nikəl mariṁ minaliṅan·,, maṅkaṇa: li-
+<lb n="13v2"/>ṅiṁ hagama:,, 0,, yen ana deśa: ha:na kahampihan holiḥ maliṁ, təṇḍasiṁ maliṁ, lavan pomah-omahe, hanak rabine, haturakna riṁ saṅ ha:ma-
+<lb n="13v3"/>va: bhūmī, maṅkaṇa: yuktiniṁ laku, kunəṁ kaḍaṁ vargganiṁ maliṁ, yen tan milu ha:mamaliṁ, tan yukti hika: ḍəṇḍanən·,, voṁ haveh upakara: riṁ maliṁ, ha-
+<lb n="13v4"/>veḥ mantraniṁ hamaliṁ, ya guruniṁ maliṁ ṅarane, vulaṅun haraniṁ voṁ maṅkana:, ḍəṇḍanən· nəm lakṣa de saṅ ha:mava: bhūmī,, riṁ maliṁ yen sayaktī sa-
+
+<pb n="14r"/>
+<fw place="left" hand="1">, voṁ hamet u-</fw>
+<fw place="left" hand="2">paḥ hamateni</fw>
+<fw place="left" hand="3">voṁ</fw>
+<lb n="14r1"/>cihna, yen malayu, ruruhən patenana: deniṁ voṁ rama deśa:, yen rahina:ha, yen vəṅiha:, patenana huga:, hana po mulat· mnəṁṅ ikaṁ rama
+<lb n="14r2"/>deśa:, tan aR̥p hamatenana maliṁ, ḍəṇḍanin ikaṁ mulat· mnəṁ pataṁ lakṣa denira: saṅ ha:mava: bhūmī || 0 || riṁ voṁ hamet upaḥhan amatenī voṁ ta-
+<lb n="14r3"/>n padośa, mati kaṅ iṅupahakən deniṁ haṅalap hupaḥ, hamalaku hupahan· nora vinehan deniṁ haṅupahakən·, dadḍi patukare haṅucapan·
+<lb n="14r4"/>padḍa: kasəR̥ṅən kaṅ iṅupaḥ lavan aṅupaḥ, tan hana maṅga: salaḥ savijī mnəṅa:, Aṅaṅgas tan vinehan hatī harane liṁ saṁ hyaṁ hagama:,, vkasan kasa<hi>⌈</hi>-
+
+<pb n="14v"/>
+<fw place="left" n="14" hand="1"><num>14</num></fw>
+<fw place="left" hand="2">, riṁ voṁ hambə-</fw>
+<fw place="left" hand="3">k ḍuṣṭa:,</fw>
+<fw place="left" hand="4">, voṁ ginəna-</fw>
+<fw place="left" hand="5">han deniṁ duṣṭa</fw>
+<fw place="right" n="14" hand="roman"><num>14</num></fw>
+<lb n="14v1"/>pekṣan dene haṅalap hupaḥ dene haṅupahakən·, hapan hahucapan baribin·, karuhan· yen hamatenī voṁ tan padośa:, hiku padḍa co-
+<lb n="14v2"/>raḥ harane hujariṁ śastra,, yen ana voṁ maṅkaṇa:, karo hadośa patī, denira: saṅ ha:mava: bhūmī || 0 || riṁ voṁ hambək ḍuṣṭa: siṁ sahulahe ha-
+<lb n="14v3"/>la:, sagavene hagave papa:pataka:ne havake, makadḍī maliṁ, luṅha: sakiṁ gnahe, malayu saparane ruruhən denira: saṅ ha:ṅrakṣa bhūmī, ka-
+<lb n="14v4"/>təmu po hikaṁ voṁ maṅkana:, patenana kayogyanipun denira: saṅ ha:mava: bhūmī, sakehe kaṁ milu hiṅ iya: || 0 || riṁ voṁ ginənahan deniṁ duṣṭa-
+<pb n="15r"/>
+<fw place="left" hand="1">voṁṅ ado-</fw>
+<fw place="left" hand="2">śa riṁ sira sa(ṅha:)-</fw> <!-- perforation of the the stringhole has caused loss of expected ṅha: -->
+<fw place="left" hand="3">mava bhūmi,</fw>
+<lb rend="check" n="15r1"/>dahat arusuḥ makadḍī maliṁ, kayogyane patenana rumuhun kaṁ duṣṭa: da:hat arusuh ika:, makadḍi maliṁ, kayogyaniṁ laku kaṁ gnah iṅ arusuh ika:, sahana{ke}ne 
+<lb rend="check" n="15r2"/>dr̥vene ra:mpasən ika: denira: saṅ ha:R̥p iṁ kr̥tta haṅrakṣa bhūmīnira || 0 || yen ana voṁ hadośa: riṁ sira saṅ ha:mava bhūmī, hana ta voṁ tan paveḥ pati-
+<lb rend="check" n="15r3"/>hane kaṅ adośa {patī} riṁ sira hika:, vetiṁ sihe hiṅ iya, yen aguṁ pavehe suka: riṁ voṁ kaṅ ha:dośa: riṁ saṅ ha:mava bhūmī hika:, munḍur saṁ rumakṣa ha-
+<lb rend="check" n="15r4"/>meta:yuhaniṁ bhūmīnira den-avara:, saṅkane vuruṅa mati voṁ kaṅ arusuh ika:, yen hana voṁ maṅkana:, yogya hilokna kapatiniṁ harusuḥ duṣṭa:,
+
+
+<pb n="15v"/>
+<fw place="left" n="15" hand="1"><num>15</num></fw>
+<fw place="left" hand="2">riṁ voṁṅ ahula-</fw>
+<fw place="left" hand="3">⌉h sahaṣa</fw> <!-- there is a distinct mark near the string hole, with a curved line surrounding part of the hole -->
+<fw place="right" n="15" hand="roman"><num>15</num></fw>
+<lb rend="check" n="15v1"/>makadḍi maliṁ, hambhahak·, hambharaṇaṁ, hambegal·, hamlaganḍaṁ, haṅalap laraṅaniṅ alaraṅan·, hamatenī voṁ tanpa dośa, haṅupasī, hanə-
+<lb rend="check" n="15v2"/>luḥ,, ya hiku sarvva rusuḥ harane, yen sacihna sayakṭi, maṅkana: liṅira: saṁ paṇḍiṭa: saṁ pgat iṁ hajī kuṭa:ra mana:va, saṁ vəruḥ riṁ hala:hayu, saṁ vəruḥ riṁ margga-
+<lb rend="check" n="15v3"/>niṁ papa:, lavan margganiṁ hanmū śvargga,, yen ana voṁ haṅiloni harusuḥ hapihalaṅa:ṅavara: riṁ sabḍa kevala:, ḍəṇḍan ika: roṁ lakṣa denira saṅ ha:-
+<lb rend="check" n="15v4"/>mava: bhūmī,, kaṅ apihalaṁ śabḍa hiku, voṁ hamaṅikətakən· suka:niṁ vaṅke harane || 0 || riṁ voṁ havulaḥ sahaśa hucapən maṅke,, hana voṁ sa-
+
+<pb n="16r"/>
+<fw place="left" hand="1">, riṁ voṁ hanu-</fw>
+<fw place="left" hand="2">tuhi kayu (si-) </fw><!-- perforation of the the stringhole has caused loss of expected ‘si’ -->
+<fw place="left" hand="3">luṁṅluṁ,</fw>
+<fw place="left" hand="4">hamaduṁ kayu</fw>
+<fw place="left" hand="5">siluṁluṁ,</fw>
+<lb rend="check" n="16r1"/>haśa:, hakəlar dene kavanine, haṅadekən hakeh varggane, haṅadekən dene sugiḥ, saṅkane tan ana denkeriṅī, hahuru dene kinavə-
+<lb rend="check" n="16r2"/>den iṁ sama-samane, haməraṁ pagəriṁ hapagər, nora denpet holihe haməraṁ pagər ika:, yen maṅkana: ḍəṇḍa limaṁ talī,, denpet pagər ika:,
+<lb rend="check" n="16r3"/>ḍəṇḍa salakṣa, bhaṅga tur anaṁtaṁ ḍəṇḍa roṁ lakṣa, ḍəṇḍane katūr riṁ saṅ ha:mava: bhumī || 0 || riṁ voṁ hanutuh iṁ kayu siluṁluṁ, sakiṁ tan vəruhe
+<lb rend="check" n="16r4"/>nora denpet·, ḍəṇḍa roṁ talī, yen ora vəruḥ tūr den-alap olihe hanutuḥ, ḍəṇḍa pataṁ talī,, 0,, yen ana:
+
+<pb n="16v"/>
+<fw place="left" n="16" hand="1"><num>16</num></fw>
+<fw place="left" hand="2">, riṁ voṁ saha-</fw>
+<fw place="left" hand="3">śa:malat· ko-</fw> <!-- perforation of the the stringhole has caused loss of expected ‘gempelan b’ -->
+<fw place="left" hand="4">sapi,</fw>
+<fw place="left" hand="5">, sahasa malat voṁ</fw>
+<fw place="left" hand="6">ṅiṁ len·,</fw>
+<fw place="right" n="16" hand="roman"><num>16</num></fw>
+<lb rend="check" n="16v1"/>voṁ hamaḍūṁ kayu siluṁluṁ, Akaraṇa sakiṁ valat·, samulene R̥ganiṁ kayu siluṁluṁ den-uliha:kna hanikəl piṁ ro, tūr kaḍəṇḍaha: roṁ lakṣa:
+<lb rend="check" n="16v2"/>denira saṅ ha:mava bhūmī,, yen ana voṁ hamaḍūṁ kayu-kayuniṁ len·, Akaraṇa: sahaśa:, ḍəṇḍa pataṁ talī || 0 || yen sahaśa: hamalat· kbo
+<lb rend="check" n="16v3"/>sapiniṁ len·, ḍəṇḍa roṁ lakṣa|| 0 || sahaśa:, hamalat voṅiṁ len·, ḍəṇḍa roṁ lakṣa:, ḍəṇḍa kahatūr iṁ saṅ ha:mava: bhūmī, huli-hulihaniṁ⌈-
+<lb rend="check" n="16v4"/>kbo sapī, salvire kaṁ den valat·, makaḍḍī yen voṁ, muliha:nikəl piṁ ro, mariṁ kaṅ hadr̥ve,, yen ana voṁ sahaśa: riṁ dr̥veniṁ voṁ, tur akaraṇa
+
+<pb n="17r"/>
+<fw place="left" hand="1">, sahaśa riṁ dr̥-</fw>
+<fw place="left" hand="2">veniṁ voṁ</fw>
+<lb rend="check" n="17r1"/>kaśr̥ṅən dene hamalat·, dr̥ve kaṁ densahaśa: mulih anikəl piṁ ro, samuleniṁ vinalat·, mariṁ kaṅ ha:dr̥ve, kaṅ ha:malat· ḍəṇḍa roṁ lakṣa: ka-
+<lb rend="check" n="17r2"/>hatūr iṁ saṅ ha:mava: bhūmī, dośane kaṅ ha:malat· lobha: ,, 0,, voṁṅ amalat· dr̥veniṁ len·, sakalviraniṁ dr̥ve, denvalatkara hiṁ voṁ, Aka-
+<lb n="17r3"/>raṇa hambək tan sareḥ, pinəṅiṁ laṅgaṇa:, Akas tan ahiḍəp ūja:riṁ hapa maL̥r, yan ana voṁ maṅkana:, yogya patenana denira: saṅ ha:mava: bhūmī, ⌈-
+<lb rend="check" n="17r4"/>yen iṁ vṅī kalane hamet·,, yen aR̥p ahuripa: ḍəṇḍa pataṁ lakṣa: kahatūr iṁ saṅ ha:mava: bhūmī, deniṁ dr̥ve kaṁ denvalat·, mulih anikəl piṁ§
+
+
+<pb n="17v"/>
+<fw place="left" n="17" hand="1"><num>17</num></fw>
+<fw place="left" hand="2">, sahaśa ṅrusa-</fw>
+<fw place="left" hand="3">k varana,</fw>
+<fw place="left" hand="4">, hamraṁ varana,</fw>
+<fw place="left" hand="5">hamraṁ lavaṁṅiṁ</fw>
+<fw place="left" hand="6">len·</fw>
+<fw place="left" hand="7">hamraṁ kayuniṁ len·,</fw>  <!-- perforation of the the stringhole has caused loss of expected ulu and surang above na -->
+<fw place="right" n="17" hand="roman"><num>17</num></fw>
+<lb rend="check" n="17v1"/>ro mariṁ kaṁ densa:haśa ,, 0,, yen ana voṁ sahaśa: haṅrusak avaraṇa:, babatan iṁ humahiṁ voṁ, haṅrusak lavaṁ, ḍəṇḍa limaṁ talī, denira:
+<lb rend="check" n="17v2"/>saṅ ha:mava: bhūmī, tūr kaṁ denrusak· muliha: sampurṇna: den kaya duk iṁ kuna:,, 0,, voṁ hamraṁṅ avaraṇa:, sakiṁ śr̥ṅəne, tūr anaṁtaṁ, yen rahina: kala,
+<lb rend="check" n="17v3"/>ḍəṇḍa pataṁ lakṣa, yen vəṅi kala:ne, dośa patī denira saṅ ha:mava: bhūmī, padḍakna lavan maliṁṅ ika:,, maṅkana: riṁ hamraṁ lavaṅiṁ len·, sakiṁ śr̥ṅə⌈-
+<lb rend="check" n="17v4"/>ne, tur anaṁtaṁ, yen rahina:, ḍəṇḍa pataṁ lakṣa, yen vəṅi kala:, patenana de saṅ ha:mava: bhūmī, maliṁṅ ika: liṁniṁ hagama: || 0 || hana ta voṁ
+
+
+<pb n="18r"/>
+<fw place="left" hand="1">ḍəṇḍaniṁ voṁ</fw>
+<fw place="left" hand="2">hanahaśa</fw>
+<lb rend="check" n="18r1"/>hamraṁ kayu-kayuniṁ len, nora hamit iṁ kaṅ a:dr̥ve kayu, ḍəṇḍa pataṁ talī denira saṅ ha:mava: bhūmī, yen vəṅi kala:, pati dośane deni-
+<lb rend="check" n="18r2"/>ra saṅ ha:mava: bhūmī, kayu kaṁ denpraṁ muliha:nikəl samulene || 0 || riṁ ḍəṇḍaniṁ voṁ hanahaśa:, va:latiṁ dr̥veniṅ ha:dr̥ve, hika: gaveni-
+<lb rend="check" n="18r3"/>ra: saṅ ha:mava bhūmī, sasḍəṅiṁ ḍəṇḍa, hanuta: guṁ litiṁ dośa:,, haguṁ dośa: haguṁ ḍəṇḍa,, halit dośa: halit· ḍəṇḍa:,, donira: saṅ ha:mava
+<lb rend="check" n="18r4"/>bhūmī haṅənakən· ḍəṇḍa, patəhaniṁ budḍiniṁ voṁ, hayo hana ha:nalaṣa: riṁ hambək·, hayo lumaku hamuraṁ-muraṁ dalan·, hanuta: sa§-
+
+
+<pb n="18v"/>
+<fw place="left" n="18" hand="1"><num>18</num></fw>
+<fw place="left" hand="2">, patuṅgala-</fw>
+<fw place="left" hand="3">niṁ ḍəṇḍa(,)</fw> <!-- perforation of the </hi><hi rend="color(1F1F1F)">the stringhole has caused loss of expected carik siki</hi> <hi>-->
+<fw place="right" n="18" hand="roman"><num>18</num></fw>
+<lb rend="check" n="18v1"/>patəḥ {saṁ pra}-patəḥ saṁ prabhū riṁ kr̥ttha, rahayuhaniṁ bhūmī, hapan iṁ hambək· rahayu, hatmahan rahayu, hamava mariṁ śvargga phalane,, maṅkaṇa: hiṅ u-
+<lb rend="check" n="18v2"/>lah ala:, hatmaḥ hala:, Amava: mariṁ pataka:, pinaka:palane || 0 || patuṅgal-tuṅgala:niṁ ḍəṇḍa, haguṅ alit ikī,, kaṁ sakiṁ hagama:, vini-
+<lb rend="check" n="18v3"/>jī-vijī,, samas·,, domas·,, roṁ talī,, pataṁ talī,, salakṣa,, roṁ lakṣa,, pataṁ lakṣa,, sakətī nəm lakṣa,, denprayatna ta deni-
+<lb rend="check" n="18v4"/>ra:, saṅ ha:mava: bhūmī, hamaruṅgokən· ḍəṇḍa, guṁ litiṁ ḍəṇḍa, hayo salaḥ paruṅgu, hayo hanḍośa niṁ voṁ tanpa dośa:,
+
+<pb n="19r"/>
+<fw place="left" hand="1">, hambəciki po-</fw>
+<fw place="left" hand="2">mahan·,</fw>
+<lb rend="check" n="19r1"/>hayo tanpandəṇḍa riṁ voṁ sudośa:, hayo haṅənəṅakən iṁ havulaḥ salaḥ, maṅkana: ḍarmmanira saṅ ha:mava: bhūmī, yen aR̥p· rahayuha-
+<lb rend="check" n="19r2"/>niṁ bhūminira: || 0 || yen ana voṁ pakṣa hambəciki pomahan·, kubon,, taman·,, kakalen·,, savaḥ,, talaga:,, bəbəṅan·,, śiva:-
+<lb rend="check" n="19r3"/>kan·,, sakalviranikaṁ denbəcikī tūr dudu dr̥vene, dudu pakone kaṅ ha:dr̥ve,, yen ana voṁ maṅkana:, tan veḥhana labha kaṅ ha:mbə-
+<lb rend="check" n="19r4"/>cikī hika: dene kaṅ ha:dr̥ve,, denbukṭi po holihe hambəcikī hika:, phalakunən ika: dene kaṅ ha:dr̥ve haja kapa-
+
+<pb n="19v"/>
+<fw place="left" n="19" hand="1"><num>19</num></fw>
+<fw place="left" hand="2">, voṁ hamit avu-</fw>
+<fw place="left" hand="3">laḥ savaḥ,</fw>
+<fw place="left" hand="4">, voṁṅ año-</fw>
+<fw place="left" hand="5">loṁ sarvva vija,</fw>
+<fw place="left" hand="6">, voṁṅ año⌈-</fw>
+<fw place="left" hand="7">loṁ sajəṁ,</fw>
+<fw place="right" n="19" hand="roman"><num>19</num></fw>
+<lb rend="check" n="19v1"/>rihnəṁ, tūr kadəṇḍaha roṁ lakṣa: denira: saṅ ha:mava: bhūmī || 0 || voṁ hamita:vulaḥ śavaḥ, vkasan tan inulaḥ hnəṁ hikaṁ śavaḥ, tagihən bukṭī
+<lb rend="check" n="19v2"/>hamumuluhi hadəgiṁ bhūkṭī parī saguṅiṁ lolihiṁ śavaḥ, ḍəṇḍa padḍa lavan loṁloṅiṁ bhūkṭī denira saṅ ha:mava: bhūmī || 0 || riṁ voṁ haño-
+<lb rend="check" n="19v3"/>-⌉loṁ sarvva vija, bubuṅkilan·, sarvva phala:, yen vəṅī kalane, dośa patī de saṁ prabhū, yen rahina: ka:lane, tikəlakna piṁ
+<lb rend="check" n="19v4"/>tlu,, riṁ voṁṅ aṇḍampul· rahina:, ḍəṇḍa tikəlakna piṁ tlu saholihe haṇḍampul· || 0 || riṁ voṁ hañoloṁ sajəṁṅ iṁ tuyuha-
+<pb n="20r"/>
+<fw place="left" hand="1">,voṁ hanavu si-</fw>
+<fw place="left" hand="2">vakan i vṅi,</fw>
+<fw place="left" hand="3">,voṁ haño-</fw>
+<fw place="left" hand="4">loṁ hayam·,</fw>
+<fw place="left" hand="5">,hañoloṁ</fw>
+<fw place="left" hand="6">hayam i kuruṅan·,</fw>
+<fw place="left" hand="5">,ñoloṁ maha paśu,</fw>
+<lb n="20r1"/>n·, riṁ kubaṁ, savaḍahane, ḍəṇḍa pataṁ talī, tūrr ikaṁ sajəṁ mulih anikəl piṁ ro || 0 || <!-- #48 -->voṁṅ anavu sivakan īṁ vṅi, dośa patī, de sa-
+<lb n="20r2"/>ṅ ha:mava: bhūmī, hayo hinurip· || 0 || <!-- #49 -->voṁ hañoloṁ hayam·, śr̥gala:, celeṁ, yan rahina:, ḍəṇḍa pataṁ talī, kaṁ denco-
+<lb n="20r3"/>loṁ mulih a:nikəl piṁ ro, yen vəṅī kalane hañoloṁ, dośa patī de saṁ prabhū || 0 || <!-- #50 -->riṁ voṁṅ hañoloṁ hayam iṁ kuruṅan·,
+<lb n="20r4"/>riṁ caṁ-caṅan·, ḍəṇḍa roṁ lakṣa: de saṅ ha:mava: bhūmī || 0 || <!-- #51 -->yen ana: voṁ hañoloṁ maha: paśu harane, kbo sapī, ḍəṇḍa roṁ
+
+
+<pb n="20v"/>
+<fw place="left" n="20" hand="1"><num>20</num></fw>
+<fw place="left" hand="2">, voṁṅ añoloṁ</fw>
+<fw place="left" hand="3">madyapaśu,</fw>
+<fw place="left" hand="4">ñoloṁ sudra</fw>
+<fw place="left" hand="5">paśu,, ñoloṁ</fw>
+<fw place="left" hand="6">dr̥ve tan ka-</fw>
+<fw place="left" hand="7">ton,</fw>
+<fw place="right" n="20" hand="roman"><num>20</num></fw>
+<lb n="20v1"/>lakṣa: de saṅ ha:mava: bhūmī || 0 || yen añoloṁ madya paśu, harane vḍus·, bañak·, bebek·, ḍəṇḍa: salakṣa || 0 || ye-
+<lb n="20v2"/>n añoloṁ sudra paśu, harane celeṁ, camra, hayam·, sahiṅon-iṅonaniṁ voṁ tanī, ḍəṇḍaniṁ hañoloṁ limaṁ talī, ḍəṇḍa: ka-
+<lb n="20v3"/>hatūr riṁ saṅ ha:mava: bhūmī, hulih-ulihan sakehe kaṁ den-coloṁ muliha:nikəl piṁ ro,, yen kaṁ den-coloṁ vṅī dośa patī de
+<lb n="20v4"/>saṅ ha:mava: bhūmī || 0 || <!-- #52 -->voṁ hañoloṁ dr̥ve, tan katon dene hambukṭi, təgəse, haṅləpit savaḥ, sakalviraniṁ bhūkṭī den-ləpit·, ha
+
+<pb n="21r"/>
+<fw place="left" hand="1">, dr̥veniṁ voṁ</fw>
+<fw place="left" hand="2">cinoloṁ (de-)</fw><!--  perforation of the the stringhole has caused loss of expected “de”  -->
+<fw place="left" hand="3">niṁ maliṁ,</fw>
+<lb n="21r1"/>ṅlali-lali gagaḍuhan· salviriṁ gagaḍuhan·, vkasan karuruḥ kasapekṣan deniṁ voṁ hakeḥ, maliṁ riṁ voṁ moṅkono, harane, patenana denira:
+<lb n="21r2"/>saṅ ha:mava: bhūmī, maṅkana: hujariṁ śastra || 0 || <!-- #53 -->hana dr̥veniṁ voṁ cinoloṁ deniṁ maliṁ, cidraniṁ maliṁ, den-gənahakən iṁ humahiṁ voṁ len deniṁ ma-
+<lb n="21r3"/>liṁ, kalaniṁ vṅī, nora vəruḥ kaṅ ha:dr̥ve humaḥ yen tiniban-tiban·, yen tanpa varaha: riṁ rama:deśa:, riṁ tataṅga, tan pasaduha:, tan amivru-
+<lb n="21r4"/>hakna riṁ voṁ hakeḥ sarupa varṇna:ne kaṁ cinoloṅ iṁ maliṅ ika:, dośa: sadośaniṁ katiban vulu-vulu,, kaṁ tiniban-tiban·, ka-
+
+<pb n="21v"/>
+<fw place="left" n="21" hand="1"><num>21</num></fw>
+<fw place="left" hand="2">, voṁṅ atitip·</fw>
+<fw place="left" hand="3">lavan asaṇḍa {*},</fw>
+<fw place="left" hand="4">, voṁ haṅalap·</fw>
+<fw place="left" hand="5">dr̥ve tuṅgal· sa-</fw>
+<fw place="left" hand="6">gnaḥ,</fw>
+<lb n="21v1"/>bcikane haprasaduha:, haveha:vəruhiṁ hakeḥ, yen tan aveḥ pivruḥ, ḍəṇḍa roṁ lakṣa, kahatūr iṁ saṅ ha:mava: bhūmī, tan vənaṁ yan pa-
+<lb n="21v2"/>tenana, hapan tan maliṁ harane, || 0 || <!-- #54 -->hana voṁ hatitip·, yen aśaśaṇḍaha:, hana maniḥ voṁ len a:titip·, yen aśaśaṇḍaha: kunəṁ, pa-
+<lb n="21v3"/>ḍa ta: rupane titipan ika:, tuṅgal· varṇna:ne, korup iṁ pasaṇḍan·, riṁ patitipa:n·, tan dəṇḍanən ika: denira: saṅ ha:mava: bhūmī, yen ta:-
+<lb n="21v4"/>n amakṣakna:ṅalap·, tūr muliha: dr̥vene mula: hika: kaṁ korup·,,<!-- #55 -->voṁ haṅalap· dr̥ve, tuṅgal sagnaḥ lavan dr̥veniṁ voṁ len·, ta-
+
+
+<pb n="22r"/>
+<fw place="left" hand="1">, kavulaniṁ ratu</fw>
+<fw place="left" hand="2">mantri, Ulaḥ</fw>
+<fw place="left" hand="3">duṣṭa:,</fw>
+<lb n="22r1"/>n abnər dene haṅulihakən·, kaṁ gnahe hika:, vuvus vəruḥ yeṇ ḍudu dr̥vene, den-taṅgapi huga:, Apan· L̥viḥ rupa: L̥viḥ varṇna: dr̥ve-
+<lb n="22r2"/>niṁ len ika:, dene haR̥pe, tumon iṁṅ habcik·, tka: den-alap·, riṁ voṁ maṅkana:, ḍəṇḍanən·, roṁ lakṣa: de saṅ ha:mava: bhūmī, tūr hikaṁ
+<lb n="22r3"/>dr̥ve muliha:nikəl piṁ ro || 0 || kavula:nira: saṁ ratu, mantriya:, Ulaḥniṁ duṣṭa: den lakokən·, makadḍī Ulahe hatatayī, mu
+<lb rend="check" n="22r4"/>vaḥ haṅuhakən· coraḥ haṅiloniṁ maliṁ gavene,, yen ana kavulaniṁ ratu maṅkana:, yen ana kavulaniṁ mantrī maṅkana:, yen pi
+
+
+<pb n="22v"/>
+<fw place="left" hand="1">,voṁ hapasili</fw>
+<fw place="left" hand="2">⌉ḥ sañja:ta,</fw>
+<fw place="left" hand="3">,haroro</fw>
+<fw place="left" hand="4">vaṁ{ṣṭa:}, duṣṭa,</fw>
+<lb rend="check" n="22v1"/>naten deniṁ voṁ, tan vənaṁ vicaranən kapatine, Apan ḍośaniṁ duṣṭa, dośaniṁ hatatayī, dośaniṁ maliṁ, katəlu hiku dośa
+<lb rend="check" n="22v2"/>patī Agamane, denira saṅ ha:mava: bhūmī || 0 || yen ana voṁ hapasiliḥ sañja:ta:, riṁ voṁ duṣṭa:, siṅ ha:matenī holihe, savarṇna:
+<lb rend="check" n="22v3"/>niṁ lalaṇḍəp·, tumuli gnahe hamateni voṁ, mati voṁ kaṁ den-pateni hika:, yen atatuha:, kasakitan deniṁ duṣṭa:, kaṅ ha:pasiliḥ sañja:
+<lb rend="check" n="22v4"/>ta: riṁ duṣṭa: hika:, ḍəṇḍanən roṁ lakṣa: denira: saṅ ha:mava: bhūmī || 0 || riṁ voṁ harorovaṁ duṣṭa:, vəruḥ yen ḍuṣṭa:, tūr de/n·\voṁṅī, ka
+<pb n="23r"/>
+<fw place="left" hand="1">,riṁ voṁ hanuduk·</fw>
+<fw place="left" hand="2">hanumbak·,</fw>
+<fw place="left" hand="3">,riṁ voṁ hanuduk ha</fw>
+<fw place="left" hand="4">mukul iṁ kayu,</fw>
+<lb rend="check" n="23r1"/>vr̥ta riṁ deśa:paradeśa:, kaṅ harorovaṁ duṣṭa: ḍəṇḍanən pataṁ lakṣa, denira: saṅ ha:mava bhūmī,, yen tan vəruḥ yen ḍusta, tan ḍəṇḍa nika de saṁ
+<lb rend="check" n="23r2"/>ra: saṁ prabhū || 0 || riṁ voṁ hanuduk·, hanumbak·, anulup·, salwiriṁ sañjata haṅənani hawakiṅ para:, yen iṁ gigir, taṅan·, suku, ḍəṇḍa salakṣa,
+<lb rend="check" n="23r3"/>yen maḍya tatune:, yen hanuduk gulu, siraḥ, ḍəṇḍa roṁ laksa, yen utama: tatune iku, ḍəṇḍa mariṁ saṅ a:mava: bhūmī || 0 || riṁ voṁ hanudu-
+<lb rend="check" n="23r4"/>k· hamukul iṁ kayu, haṅgithik iṁ vathū, ḍəṇḍa limaṁ tali, denira: saṅ a:mava: bhūmī, hiku yan tan patiha lara: tatune,, yen hamr̥p·, aṅgo-
+
+
+<pb n="23v"/>
+<fw place="left" n="23" hand="1"><num>23</num></fw>
+<fw place="left" hand="2">riṁ voṁ vadon ha-</fw>
+<fw place="left" hand="3">mukul· nuduk (riṁ) ka-</fw>
+<fw place="left" hand="4">yu riṁ marune,</fw>
+<lb rend="check" n="23v1"/>co riṁ tan·, ḍəṇḍa satak·, yen paḍḍa rorovaṅe sabran dina hamə haməṁ || 0 || riṁ voṁ vadon hamukul a:nuduk iṁ kayu riṁ marune, ha-
+<lb rend="check" n="23v2"/>ṅgitik iṁ watu, hambaṇḍəm·, tanpa karana:, yen kaṁ den-gitik· den-baṇḍəm· utama tatune, tikəl·, muñcar, kaṅ aṅgitik· yen ambhaṇḍəma
+<lb rend="check" n="23v3"/>:, ḍənḍa, roṅ lakṣa denira: saṅ ha:mava: bhūmī, yen mathi kaṁ den-gitik hika, patenana: kaṅ aṅgitik· denira: saṅ ha:mava: bhūmī || 0 ||
+<lb rend="check" n="23v4"/>riṁ voṁ vadon· hanuduk iṁ marune riṁ kris·, riṁ pḍaṁ, tumbak·, salviriṁ lalaṇḍəp den-sudukakən·, Utama tatune kaṁ den-suduk·, ke
+
+<pb n="24r"/>
+<fw place="left" hand="1">riṁ voṁ sahaśa</fw>
+<fw place="left" hand="2">hamraṁ hanuduk·,</fw>
+<fw place="left" hand="3">rare duruṁ wə[xyz]</fw>
+<fw place="left" hand="4">hiṁ hala hayu,</fw>
+<fw place="left" hand="5">riṁ voṁ hamraṁ ta-</fw>
+<fw place="left" hand="6">n minaha,</fw>
+<lb rend="check" n="24r1"/>śapathi ka anuduk·, denira: saṅ ha:mava: bhūmī, maṅkana: huja riṁ śaśaṇa: nira: bagavan·, bhr̥gu || 0 || riṁ voṁ sahaśa: hamraṁ anuduk·, yen kata-
+<lb rend="check" n="24r2"/>ton kaṁ den puduk den praṁ, haweha patiba: jampi, riṁ kaṁ sinuduk ika, sasḍəṅe pawehe, Ahiṅana sawarase tatune, tur kaḍənḍaha roṅ lakṣa ka-
+<lb rend="check" n="24r3"/>beh sahanane kaṅ a:ṅrowa iṁ haṅadokəniṅ naṅ hanuduk·, ḍənḍa kahaturiṁ saṅ ha:mava: bhūmī,, rare duruṁ vəruhiṁ hala: hayu, yen duruṁ sapuluḥ ta-
+<lb rend="check" n="24r4"/>wun·, vayahe, yenana hulahe dudu, tan yogya ḍənḍanən denira: saṅ ha:mava: bhūmī, mwaṁ saṅ a:mawa deśa || 0 || riṁ voṁ kapraṁ tan mina
+
+<pb n="24v"/>
+<fw place="left" n="24" hand="1"><num>24</num></fw>
+<fw place="left" hand="2">,habuburu</fw>
+<fw place="left" hand="3">riṁ laraṅan·</fw>
+<fw place="left" hand="4">,</fw>
+<lb rend="check" n="24v1"/>ha dene pinraṁ sakiṁ tan wəruhe kaṅ aməraṅ, halahipene kaṅ kapəraṁ, yen ora hatatu, yen ora halara:, tan kaḍənḍaha kaṅ aməraṁ,,
+<lb rend="check" n="24v2"/>hatatu po kaṁ kapəraṁ, kaṁ aməraṁ haveha: patuku tamba sahukure varasiṁ tatu, tur kaṅ amraṁ kaḍənḍaha limaṁ atus denira: ha:mava: bhūmī || 0 ||
+<lb rend="check" n="24v3"/>riṁ voṁ habuburu riṁ laraṅan·, yen oliḥ ḍənḍa wuluṁ taliṁ riṁ voṁ satuṅgal satuṅgal·, vivijinən·, denira: saṅ ha:mava: bhūmī, tur I-
+<lb rend="check" n="24v4"/> kaṁ buron tikəla:kna muliḥ roro riṁ satuṅgal satuṅgal·, yen tan oliḥ ḍəṇḍaha mataṁ tali riṁ voṁ satuṅgal satuṅgal·,, maṅkana:
+
+<pb n="25r"/>
+<fw place="left" hand="1">vaṅkay· ginə-</fw>
+<fw place="left" hand="2">naḥ deniṁ du-</fw>
+<fw place="left" hand="3">ṣṭa</fw>
+<lb rend="check" n="25r1"/>sanak· niṁ habuburu riṁ laraṅan iṁ laraṅan·, Ujar baga:van· bhr̥gu || 0 || vaṅke ginənaḥ deniṁ duṣṭa, hamateni voṁ, riṁ de-
+<lb rend="check" n="25r2"/>ṣa niṁ ṅadeṣa, kala niṁ wṅi, nora vəruḥ kaṅ adr̥we lmaḥ, ḍəṇḍa nika hadr̥we L̥əmaḥ yen mulat· mnə dene kasalahan vaṅke yen kawəṅen nikaṁ va-
+<lb rend="check" n="25r3"/>ṅke, ḍəṇḍane roṁ lakṣa:, denira saṅ ha:mava: bhūmī, ṣapakaramane milu kaḍəṇḍa, harane katəmu niṁ vaṅke kabunan·,, kunəṁ yen tuhu niṁ,
+<lb rend="check" n="25r4"/>tan vəruḥ riṁ kahamateni, turasaḍu riṁ deṣa, pakaraman·, riṁ tataṅga: deṣa, tpi siriṁ, makadḍi hasadu riṁ pamaṇcun·, tan aləL̥ə-
+
+<pb n="25v"/>
+<fw place="left" n="25" hand="1"><num>25</num></fw>
+<fw place="left" hand="2">{riṁ voṁ paḍa</fw>
+<fw place="left" hand="3">ptite, paḍa</fw>
+<fw place="left" hand="4">galake}</fw>
+<lb rend="check" n="25v1"/>t· vṅi, tan ḍoṣanana denira: saṅ ha:mava: bhūmī, yen ahəta vṅi pasadune doṣa:, maṅkana: darmmane yadyaṣtu haprasaḍuha, ye-
+<lb rend="check" n="25v2"/>n ana vəruḥ jəjəpe, yen paṅavak deṣa: hamateni voṁ mati hika, doṣa: hikaṁ deṣa: denira: saṅ ha:mava: bhūmī,, riṁ sawa yen kani-
+<lb rend="check" n="25v3"/>n deniṁ sanja:ta tampake, haneṁ halas·, niṁ savaḥ, riṁ margga snət·, riṁ margga guṁ, riṁ luvaṅ, riṁ piṅgi-
+<lb rend="check" n="25v4"/>r iṁ loḥ, makadḍi riṁ ba:ṇjar, yen ka/ sa \pekṣaṇa kaṅ amateni, yen tan kasapekṣaṇa, haṅiṁ haprasaḍuha huga: voṁ deṣa, vəruḥ riṁ
+
+<pb n="26r"/>
+<fw place="left" hand="1">riṁ voṁ sṅite,</fw>
+<fw place="left" hand="2">pada gala[ke]</fw>
+<lb rend="check" n="26r1"/>kaṅ amateni nora haṅarani, hakaraṇa: haṅubuṅi duṣṭa, ḍəṇḍa pataṁ lakṣa, mulat· mnəṁ tumon iṁ vaṅke, tan aprasaḍu riṁ kaṁ yogya sa-
+<lb rend="check" n="26r2"/>donana:, ḍənḍa roṁ lakṣa, doṣa niṁ mulat· mnəṁ trapakna denira saṅ ha:mava: bhūmī || 0 || riṁ voṁ pada: səṅite, paḍa galake, paḍa va-
+<lb rend="check" n="26r3"/>nine, pada: laṇḍəpe, krise, tumbake, hatukar, paḍa panuḍuke, yen maṭhi salaḥ tuṅgal·, kaṁ kari hahurip·, tan ḍəṇḍanəni kaṁ
+<lb rend="check" n="26r4"/>kari denira: saṅ ha:mava: bhūmī, kroḍḍa viro:ḍḍa: harane liṅi, hagama:,, yen ana voṁ hanapiḥ voṁ hatukar paḍḍa vanine, ka-
+
+<pb n="26v"/>
+<fw place="left" n="26" hand="1"><num>26</num></fw>
+<fw place="left" hand="2">riṁ voṁ hatu-</fw>
+<fw place="left" hand="3">kar harukəta,</fw>
+<lb rend="check" n="26v1"/>suduk deniṁ kris iṅ hatukar, yen ktumbaka, siṁ sanja:ta holiḥha riṁ hananapiḥ, tan ucapən ika denira: saṅ ha:mava: bhūmī, Apan ha-
+<lb rend="check" n="26v2"/>mukṭi ḍuḥka niṁ hananapiḥ, harane,, riṁ voṁ hatukar, tan aṅvaśakən patukare, kasoran dene lavane riṁ vkasan·, malayu haṅu-
+<lb rend="check" n="26v3"/>ṅsi humaḥ, den tut dene lavane hatukar, maṭi kaṁ malayu hika, yen kaṅ anutamburu matiha, salaḥ tuṅgala maṭi, tan vicaranən kaṅ ha:ma-
+<lb rend="check" n="26v4"/>teni|| 0 ||riṁ voṁ hatukar harukət·, paḍa vanine, malayu salaḥ tuṅgal· hanut·, tka niṁ humahe, mati salaḥ tuṅgal·, tan pəṅgu
+
+<pb n="27r"/>
+<fw place="left" hand="1">maL̥əm,</fw>
+<lb rend="check" n="27r1"/>nən aṅamuk hikaṅ amateni, hatukar huga: harane,, riṅ atukar kala niṁ vṅi, hamateni pinaten·, sḍəṅe hatukar riṁ vṅi hika, hamateni śatr̥u
+<lb rend="check" n="27r2"/>harane, kaliṅaniṅ atukar vṅi, yen vuvus papiḥ, tan yogya hamalenana patukare maniḥ, tka riṁ rahina, hapan yen ambakalana hatukar maniḥ, riṁ rahi-
+<lb rend="check" n="27r3"/>na, tanpa karaṇa: maniḥ, tur amateni, paḍa: kna lavan aṅamuk·, yogya patihane kaṅ ha:nutukakən tukar hika, denira: saṅ ha:mava: bhūmī, ka-
+<lb rend="check" n="27r4"/>liṅane riṁ hatukar yen vuvus apiḥ, kambəṅan deniṁ rahina, kambəṅan· deniṁ vṅi, tan kavaṣa yen ambakalana pitukare maniḥ, maṅkaṇa
+
+<pb n="27v"/>
+<fw place="left" n="27" hand="1"><num>27</num></fw>
+<fw place="left" hand="2">tiṅkahiṁ ha[pi]</fw>
+<fw place="left" hand="3">hutaṁ hucapən ma-</fw>
+<fw place="left" hand="4">ṇke</fw>
+<lb rend="check" n="27v1"/>śabda riṁ hagama:|| 0 ||tiṅkahiṁ hapihutaṁ hucapən iṁsun maṅke, śaśaṇane, hayo tka hapihutaṁ, hadusakaramaśa rumuhun·, Araravupa
+<lb rend="check" n="27v2"/>:, haradina sarira reh iṁ hapihutaṁ, vusiṁ habəbəprasiḥ, hamətonana riṁ hamalaku hahutaṅa:, paṅgavakna mas·, pisis·, salaka, sakaprape
+<lb rend="check" n="27v3"/>kaṁ denutaṁ vehanna, kala niṁ hapihutaṁ hayo salaḥ dina, riṁ soma:, riṁ vr̥haspaṭi, tur den pr̥ayatna deninṁ hapihutaṁ, tulisana harane ka-
+<lb rend="check" n="27v4"/>ṅ ahutaṁ, tka niṁ deśane, baṇja:re, tulisən iṁ haR̥əp iṁ hahutaṁ, lavan guṅe hutaṅe, tulisakna tavune, maśa titine, taṅgal· pa-
+
+<pb n="28r"/>
+<lb rend="check" n="28r1"/> ṅlaṁṅe,  sapta varane, paṇca: varane, sadva:rane, lavan ukune, makadḍi guṅe hutaṅe, tka niṁ putrane, den puha saksi, pinana:nḍi ci-
+<lb rend="check" n="28r2"/>rine, kaṅ ahutaṁ, pekya harane riṁ ciri, piku surat pavitan harane,, riṁ hahutaṁ haveḥ putra kalantara:, naṅkən tavun·, riṁ hapihutaṁ, vka-
+<lb rend="check" n="28r3"/>san ora haveḥ kalantara putra:, kaṅ ha:hutaṅ ika, tagihən hanikəl piṁ ro huga: panahurane, riṁ hapihutaṁ, norana surat·, pihu-
+<lb rend="check" n="28r4"/>taṁ, tan hana saksi, tan hana bukṭi kalantara sabran vulan·, sabran tahun·, ṅlalaṁ hikaṁ pihutaṁ yen maṅkana,, yen apihutaṁ haṅgə
+
+<pb n="28v"/>
+<fw place="left" n="28" hand="1"><num>28</num></fw>
+<fw place="left" hand="2">riṁ voṁ hapihu-</fw>
+<fw place="left" hand="3">taṁ, haṅlə[vihi]</fw>
+<fw place="left" hand="4">panagihe,</fw>
+<lb rend="check" n="28v1"/>gəmana yakṭi niṁ hapiyutaṁ tətəlu, paran ta yakṭine, sakiṁ saksi yakṭi niṁ pihutaṁ, sakiṁ bukṭi putra paṅalantara: yakṭi niṁ hapihutaṁ:,, sa-
+<lb rend="check" n="28v2"/>ksi halaḥ deniṁ susuratan·, pasusuratan·, halaḥ deniṁ bukṭi, patṅərane yen ahutaṁ, yakṭi tətəlu hiku huga gəgəmana deniṁ hapi-
+<lb rend="check" n="28v3"/>hutaṁ,, yen tan ana yakṭi tətəlu hiku, linyo:k haraniṁ hapihutaṁ maṅkaṇa:,, Apan· yakṭi tətəlu hiku vnaṁ panagihakna: deniṁ hapihu-
+<lb rend="check" n="28v4"/>taṁ tumusiṁ hanak putu, pihutaṁ tuhu yen hana pramana traya harane hiku,, riṁ voṁ hapihutaṁ haṅləvihi panagihe putra: paṅlanta-
+
+<pb n="29r"/>
+<fw place="left" hand="1">tiṅkah iṁ voṁ</fw>
+<fw place="left" hand="2">haṅalap· dr-</fw>
+<fw place="left" hand="3">ve</fw>
+<lb rend="check" n="29r1"/>ra:, kaduk pamete putra, duruṁ tka niṁ pasaṅkeṭa tumuli hanagiḥ, lobba haraniṁ hapihutaṁ maṅkana, riṁ voṁ hapihutaṁ tanpa nut pahuja
+<lb rend="check" n="29r2"/>riṁ hagamma, tanpa reḥ panagihe, tanpa reḥ dene hamumutrakən·, Atmahan kavlaśaśiḥ yen tanpa nut·, ḍarmmaniṁ hapihutaṁ, tan vuruṁ hanmu
+<lb rend="check" n="29r3"/>hupadrava: niṁ hyaṁ, kaliṅane sagavehane denanut dalan guṅ aguṁ || 0 || tiṅkah iṁ voṁ haṅalap· dr̥ve niṁ voṁ, sakiṁ tan yukti pamete
+<lb rend="check" n="29r4"/>, piṅətakna riṁ sajəroniṁ nəm vulan·, hilaṅ ikaṁ dr̥ve pinet iṁ ta{yui}n· yukti, maniḥ yen tan ilaṁ hiṁ nəm ṇulan·, hiṅətakna, vka
+
+<pb n="29v"/>
+<fw place="left" n="29" hand="1"><num>29</num></fw>
+<fw place="left" hand="2">,voṁ hapəpəga-</fw>
+<fw place="left" hand="3">tan halaki[...]ra</fw>
+<fw place="left" hand="4">bi,, voṁ pgat hana-</fw>
+<fw place="left" hand="5">k anak·,</fw>
+<lb rend="check" n="29v1"/>śe riṁ nəm tahun·, hilaṁ tka niṁ pavitane kaṅ a:ṅalap iṁ tan· yukṭi,, kaliṅane haja hamet pisis·, Akaraṇa:  sakiṁ tan·, yukṭi, hi-
+<lb rend="check" n="29v2"/>la hila: tmən sakiṁ kajar iṁ śaśtra|| 0 ||yen hana voṁ hapəpəgatan alaki harabi, yen salaḥ tuṅgal mati kaṅ apəpəgatan ika, hanake
+<lb rend="check" n="29v3"/>hanabahuraṇa: sahutaṅe kaṅ apəpəgatan ika, kaṅ apihutaṁ haja mnəṁ, pgatane hutaṅe kaṁ mati hika, hiku ḍarmmane,, yen hana voṁ pgat a-
+<lb rend="check" n="29v4"/>nak anak·, vet iṁ bapa: hibune tanpa pga panak anak iṁ hiya:, tanpa nut iṁ hambək ahayu Anake hika, Aveh ayakṭi riṁ rama deśa, riṁ
+
+<pb n="30r"/>
+<fw place="left" hand="1">,hutaṁ tumus ma</fw>
+<fw place="left" hand="2">riṁ hanak·,</fw>
+<fw place="left" hand="3">voṁ vus hanavuri</fw>
+<fw place="left" hand="4">hutaṁ,</fw>
+<lb rend="check" n="30r1"/>banja:r, haveha vija:, maniḥ haveha banju dus lavan iśuh isuḥ, tpuṁ tavar, saha sakṣi, den sacihna: sayakṭi pgat·, maraṁ hanak anak iṁ
+<lb rend="check" n="30r2"/>hiya:, Ikaṅ ha:nak ika yen vuvus maṅkana, tanpa ṅalap adr̥ve niṁ bapa hibu, tab tagihən hutaṁ hiṁ bapa: hibu, deniṁ hapihutaṁ,, duk hana: kaṅ a:hutaṁ hu-
+<lb rend="check" n="30r3"/>ga: Palakunən den pga:t· || 0 || riṁ hutaṁ tumus mariṁ hanak·, hutaṁ puputran·, hutaṁ seseban·, hutaṁ manji:ṅ anuṅgu, hutaṁ gnah iṁ haṅə-
+<lb rend="check" n="30r4"/>ntasakən· voṅ atuva, hutaṁ deniṁ handarmma voṅ atuva, kabeḥ hika kapanahuraṇa: deniṁ hanak·, tan kavaśa: yen tan sahuR̥ə-
+
+<pb n="30v"/>
+<fw place="left" n="30" hand="1"><num>30</num></fw>
+<lb rend="check" n="30v1"/>n iṁ hanak putu kramane,, riṁ voṁ vuvus amahuri hutaṁ, səbitəb ikaṁ pasusuratan·, riṁ haR̥əp iṁ hahutaṁ, dene kaṅ apihutaṁ, makadḍi
+<lb rend="check" n="30v2"/>yen ana sakṣi, kavuvuśan iṁ hutaṁ Palane,, riṁ voṁ hapihutaṁ, yen atguḥ, sareh iṁ darmma niṁ hapihutaṁ, Agave vr̥dḍi niṁ mas pirak·, Uja:riṁ
+<lb rend="check" n="30v3"/>haji, hiku labane,, riṁ hanahur utaṁ, nora den səbit pasusuratane, riṁ haR̥əp iṅ ahutaṁ, dene kaṅ a:pihutaṁ, savuvuśe hana-
+<lb rend="check" n="30v4"/>hur, yen hana maṅka:na, saguṅe panahure kaṅ a:hutaṅ ika, saṁ viśeśa riṁ bhumī vnaṁ hameta pihutaṅe voṁ hika, tur ḍvutən pasu
+
+<pb n="31r"/>
+<fw place="left" hand="1">,riṁ voṁ hapi</fw>
+<fw place="left" hand="2">hutaṁ,</fw>
+<lb rend="check" n="31r1"/>suratane riṁ kaṅ a:pihutaṁ, vehakna riṁ kaṅ a:hutaṁ, de saṅ a:mava bhumī, dośane tan ahiḍəp iṁ da:rmma śaśaṇa: niṁ hapihutaṁ || 0 || riṁ voṁ
+<lb rend="check" n="31r2"/>hapihutaṁ ṅa:halap iṁ dr̥ve niṁ hahutaṁ, yen paḍa guṅ iṁ pihutaṁ lavan guhe kaṁ den alap· vuvus pgat iṁ pihutaṁ yen maṅkana:, pasusuratane huli-
+<lb rend="check" n="31r3"/>hakna mariṁ kaṅ a:hutaṁ, maṅkana: lakṣaṇa niṁ hapihutaṁ,, yen aguṁ dr̥ve niṁ hahutaṁ den alap·, deniṁ hapihutaṁ, hamalekna sahləvihe sakiṁ
+<lb rend="check" n="31r4"/>pihutaṁhe hika, yen kaṅ ahutaṅ a:malakuha sakiṁ paṅaləvihe hutaṅe hika, riṁ ṅapihutaṁ, tanpa veh po śapaṅləvih iṁ hu-
+
+<pb n="31v"/>
+<fw place="left" n="31" hand="1"><num>31</num></fw>
+<fw place="left" hand="2">, hanak rabi niṁ hahu</fw>
+<fw place="left" hand="3">taṁ,</fw>
+<lb rend="check" n="31v1"/>taṁ, kaṅ apihutaṁ, ḍəṇḍanən· roṁ lakśa denira: saṁ viśeṣa riṁ bhumī, tur ḍavutən saguṅ iṁ dr̥ve kaṁ den alap ika, hulihakna riṁ kaṅ ahu-
+<lb rend="check" n="31v2"/>taṁ, śapaṅləvih iṁ dr̥ve, sabnər iṁ hutaṁ halapən denira: saṅ a:dr̥ve bhumī, lavan pasusuratane hulihakna mariṁ kaṅ ahutaṁ, pgat tanpa hutaṁ ha-
+<lb rend="check" n="31v3"/>rane hika, Apan vuvus iṅalap denira saṅ a:mava: bhumī || 0 || riṁ hanak rabi niṁ hahutaṁ, yen rovaṅe vadon· lanaṁ, sakah tuṅgal·
+<lb rend="check" n="31v4"/>kahaṇḍəgan de hapihutaṁ, yen dudu trape paṅaṇdəge, Akaraṅa: valat·, riṁ hutaṁ maṅkana: pga:t tanpa nahura:na: deniṁ hahutaṁ, tur ka-
+
+<pb n="32r"/>
+<fw place="left" hand="1">,riṁ voṁ haṅasi</fw>
+<fw place="left" hand="2">hutaṁ, </fw>
+<fw place="left" hand="3">,hanagi[ḥ ta]npa</fw>
+<fw place="left" hand="4">pihutaṁ,</fw>
+<lb rend="check" n="32r1"/>hiṅaṇḍəg· muliha, tan aveha oanahur utaṁ || 0 || riṁ voṁ haṅaśi hutaṁ, tagihən hanikəl piṁ ro,, hana maniḥ kaṁ sakiṅ ha:gamma vaneḥ, yen sa-
+<lb rend="check" n="32r2"/>tus vit· dadḍi pataṁ atus·,, yen sevu vit·, dadḍi pataṁ tali, sakehane maṅkana huga,, kaliṅane saṅkane tinagih anikəl piṁ pat, pina-
+<lb rend="check" n="32r3"/>ka ḍəṇḍane duk tinikəlakən piṁ pat iku || 0 || hana maniḥ voṁ hananagiḥ tanpa pihutaṁ, katikəlakna piṁ ro śapanagihe, savuvuse kalah a-
+<lb rend="check" n="32r4"/>hucapan·, tur ḍəṇḍanən· den kaya: kaṅ a:ṅaṅasi hutaṁ hika, yen satus panagihe, dadi pataṁ ṅatus·, yen sevu panagihe, dadḍi pa-
+
+<pb n="32v"/>
+<fw place="left" n="32" hand="1"><num>32</num></fw>
+<fw place="left" hand="2">,hahutaṁ k[bo] sa-</fw>
+<fw place="left" hand="3">pi,</fw>
+<fw place="left" hand="4">,voṁ haṅaṇḍəla-</fw>
+<fw place="left" hand="5">kən tanpa layuniṁ</fw>
+<fw place="left" hand="6">taṁ hahutaṁ,</fw>
+<lb rend="check" n="32v1"/>taṁ tali, saguṅe panagihe valikakna piṁ pat· denira: saṅ a:mava: bhumī, ḍəṇḍa niṁ hanagiḥ, yanpa pihutaṁ maṅkana || 0 || riṁ voṁ hahutaṁ
+<lb rend="check" n="32v2"/>kbo sapi, və{*}vnaṁ, hanavura: hanikəl piṁ ro kaṅ ka:hutaṁ, yen· tluṁ tavin lavaśe,, yen ahutaṁ kbo sapu, vuvus iṅajen samulene R̥əga-
+<lb rend="check" n="32v3"/>ne, hana niṁ pasusuratan· paṁR̥əgane paṭik vənaṁ hihutaṅ ika, padḍa kalavan avutaṁ pisis·, panavurana: hanikəl piṁ ro saguṅ iṁ paṁR̥əgane,
+<lb rend="check" n="32v4"/>yen· tka riṁ pataṁ tavun· || 0 || voṁ haṅaṇḍalakən tanPa layuha niṁ voṁ hahutaṁ, tur malayu kaṅ ahutaṁ, yen matiya kunəṁ, Amanavu
+
+<pb n="33r"/>
+<fw place="left" hand="1">, haṅaṇḍəlakən ka- </fw>
+<fw place="left" hand="2">təmu niṁ pisis·,</fw>
+<fw place="left" hand="3">ḍaL̥əḍ 33</fw>
+<lb rend="check" n="33r1"/>rana sakavit· kaṅ a:ṅaṇḍəlakən·,, tan katagiha hanikəl deniṁ hapihutaṁ,, yen mati kaṅ a:ṅaṇḍəlakən·, tan tumusa mariṁ hanak putu ning haṅa-
+<lb rend="check" n="33r2"/>ṇḍəl,, yen aṅaṇḍəlakən katəmu haniṁ pisis·, mati kaṅ ahutaṁ, yen malayuha, kaṅ a:ṅaṇḍəlakən kanavura: saguṅ iṁ hutaṁ, tka niṁ putra: paṅa-
+<lb rend="check" n="33r3"/>lantara:, yen alavas  tanpa navur, tikəlakna piṁ ro saguṅ iṁ hutaṁ, tur tumus riṁ hanak iṁ haṅaṇḍəlakən ikaṁ hutaṁ || 0 || riṁ kavula: niṁ voṁ ye-
+<lb rend="check" n="33r4"/>n lanaṁ, yen vadona, kinon anarimaha pisis olih iṅ ahutaṁ, deniṁ gusti, du{*}du yen aranana haṅaṇḍəlakən ika, tan katagiha
+
+<pb n="33v"/>
+<fw place="left" n="33" hand="1"><num>33</num></fw>
+<fw place="left" hand="2">,riṁ voṁ yen lanaṁ</fw>
+<fw place="left" hand="3">vadon ahutaṁ pa</fw>
+<fw place="left" hand="4">ri, hasaṇḍa kbo</fw>
+<fw place="left" hand="5">sapi,</fw>
+<lb rend="check" n="33v1"/>riṁ kavula: lanaṁ vadon anariṁa pisis ika, yen vadvaha kunəṁ, Apan kevala: kinonkon hati kavula: mula konkonan· gavene || 0 ||
+<lb rend="check" n="33v2"/>riṁ voṁ hahutaṁ pari yen ora: kapanahuran tumuli, tikəlakna piṁ lima:, gumuluṅ a:naṅkən tavun·, hiṅane mariṁ hanikəlimaṁ tavun· || 0 || voṁ
+<lb rend="check" n="33v3"/>hasaṇḍa vnaṁ vnaṁ kbo sapi, hantəṁ riṁ pasaṇḍan·, hanak iṁ kbo sapi, kahalapa: dene kaṅ asasaṇḍa, nora vnaṁ kaṅ isi niṁ sasaṇḍan alapən deniṁ
+<lb rend="check" n="33v4"/>hanaṇḍa, hapan anak iṁ sasaṇḍan tan petən deniṁ hanaṇḍa, kevala: pagave huga: pakolih iṁ voṁ hanaṇḍa:, maṅkaṇa pagəh iṁ śaṇḍa niṁ ha-
+
+<pb n="34r"/>
+<fw place="left" hand="1">,voṁ hatitip və-</fw>
+<fw place="left" hand="2">vnaṁ,</fw>
+<fw place="left" hand="3">titip [la]va-</fw>
+<fw place="left" hand="4">n pasandan· i-</fw>
+<fw place="left" hand="5">ṅ alap deniṁ ratu,</fw>
+<lb rend="check" n="34r1"/>gamma riṁ rat kabeh, tutən deniṁ loka || 0 || riṁ voṁ hatitip· vəvnaṁ, kbo sapi hadḍine,, lavan salvir iṁ dr̥ve, mas· ra:tna hadine,
+<lb rend="check" n="34r2"/>, maniḥ yen sasaṇḍana:, Ilaṁ po deniṁ tinnitipan· yen ilaṁ deniṁ hanaṇḍa, tan milu dr̥ve niṁ hanaṇḍa Ilang, kevala: kaṁ titipan· lavan·
+<lb rend="check" n="34r3"/>sasaṇḍan ilaṁ, yen maṅkaṇa: kaṁ titipan lavan sasaṇḍan·, həlenana deniṁ tinitipan lavan deniṁ hanaṇḍa, samule niṁ dr̥ve Ilaṁ hika || 0
+<lb rend="check" n="34r4"/> || Ana ta titipan· lavan sasaṇḍan·, yen iṅala[ ḍenira: saṁ ratu, saṁ viśeṣa: hamava: bhumī deśa:, cinoloṁ deniṁ maliṁ, mani-
+
+
+<pb n="34v"/>
+<fw place="left" n="34" hand="1"><num>34</num></fw>
+<fw place="left" hand="2">,voṁ haṇḍavu-</fw>
+<fw place="left" hand="3">t saṇḍa,</fw>
+<lb rend="check" n="34v1"/>ḥ katunon· keli riṁ bañu, kabaraṇaṁ deniṁ coraḥ lavan ḍuṣṭa:, yen maṅkaṇa: nora yogya həlenana kaṁ titipan lavan sasaṇḍa:
+<lb rend="check" n="34v2"/>n· || 0 || hana tha voṅ aṇḍavut saṇḍa, tanpa nahur putra: kalantara:, tan anavur pavitan iṁ panaṇḍa, kevala: haR̥əp tanpa nəbus sasaṇḍa:
+<lb rend="check" n="34v3"/>n·, hiku ta dośane, vit pisis· mulih anikəl·, mariṁ kaṁ anaṇḍa, maniḥ R̥əganana hikaṁ saṇḍa: samule niṁ saṇḍa:, lavan ituṅən guṅ iṁ pu-
+<lb rend="check" n="34v4"/>tra kalantara:, hiku ta saguṅ iṁ pisis· vuvus iṅituṁ kehe kabeḥ, pinaka ḍəṇḍaha niṁ ṅamalat saṇḍa, denira: saṅ a:mava bhumī· || 0 ||
+
+<pb n="35r"/>
+<fw place="left" hand="1">,voṁ hanaṇḍa vu-</fw>
+<fw place="left" hand="2">vus tinbus·,</fw>
+<lb rend="check" n="35r1"/>maṅkaṇa: riṁ voṁ hananaṇḍa vuvus tinəbus·, nora haṅuḍalakən sasaṇḍan·, samulene kaṁ sinaṇḍakən ika ḍəṇḍane denira: saṅ a:mava: bhu-
+<lb rend="check" n="35r2"/>mi, lavan saguṅ iṁ putra: kalantara: mariṁ ḍəṇḍa, saṇḍa mulih anikəl·, saR̥əgabe mariṁ kaṅ a:sasaṇḍa,, kaliṅane padḍa dośa niṁ handadut saṇḍan tan a-
+<lb rend="check" n="35r3"/>R̥əp anahura: hutaṁ, lavan voṁ hananaṇḍa: vuvus animbali pisis a:guṅ iṁ hutaṁ tka niṁ putra: kalantara:, tur nora: haṅudalakən saṇḍa, karo hiku
+<lb rend="check" n="35r4"/>hadośa denira saṅ a:mava: bhumī,, hana po: tiṅkah aniṁ titipan·, yeb sasaṇḍan kunəṁ, maL̥əra huga riṁ gnahe, den abəcik deni-
+
+<pb n="35v"/>
+<fw place="left" n="35" hand="1"><num>35</num></fw>
+<fw place="left" hand="2">, tiṅkahiṁ {ha}do</fw>
+<fw place="left" hand="3">l atuku</fw>
+<lb rend="check" n="35v1"/>ṅ asimpən·, den prayatna kaṅ a:naṇḍa, nora dadḍiṁ vicara: vkase, pradenipun· yan kadeśa: baṅga: baya: riṁ sasaṇḍan hilaṁ, ka-
+<lb rend="check" n="35v2"/>deśa baṅga: baya: harane, rusak iṁ deśa: deniṁ papəraṅ ira saṁ ratu padḍa ratu || 0 || tiṅkah iṁ hadol atuku hucapən maṅke,, riṁ voṁ hatu-
+<lb rend="check" n="35v3"/>ku dr̥ve niṁ voṁ, yen· kbo sapi, salviriṁ vnaṁ vnaṁ, vuvus den pisisi deniṁ hatuku, duriṁ den alap·, lagi maL̥ər iṁ kaṅ adol·, no-
+<lb rend="check" n="35v4"/>ra den pe tumuli dene kaṅ atuku, vkasan mati kaṁ vnaṁ vnaṁ, yen ilaṅa kunəṁ, tan egya Palakunən ikaṁ pisis patuku hika, deniṁ hatuku,
+
+<pb n="36r"/>
+<fw place="left" hand="1">,riṁ dr̥ve vuvus di-</fw>
+<fw place="left" hand="2">nol·,</fw>
+<lb rend="check" n="36r1"/>kapaten tukon harane hujar iṁ, yen den alap· sakiṁ prakaśa: valat ikaṁ patuku deniṁ hatuku, yen ahucap·, kalahakna kaṅ a-
+<lb rend="check" n="36r2"/>tuku, pisis den ulihakna hanikəl mariṁ kahadol || 0 || riṁ dr̥ve vuvus dinol·, maL̥ər ana riṁ hadol· kaṁ tinuku hika, lagi duruṁ
+<lb rend="check" n="36r3"/>katimbala{na}n deniṁ hatuku, vkasan cinoloṁ deniṁ maliṁ, Iṅalap deniṁ ratu kaṁ dinol ika, Ika tatan palakunən deniṁ hatuku,
+<lb rend="check" n="36r4"/>riṁ ṅadol·, bnəre paḍa kelaṅan·, muliha satṅaḥ pisis iṁ hatuku, yen tan ahiḍəp karo, kaṅ atuku kalavan kaṅ adol·, pa-
+
+
+<pb n="36v"/>
+<fw place="left" n="36" hand="1"><num>36</num></fw>
+<lb rend="check" n="36v1"/>ḍa laṅgaṇa: riṁ śaśaṇa:, yen salaḥ saviji rika tan aṅhiḍəp·, ḍəṇḍanən siṁ tan aṅhaḍəp iṁ hagamma, yen karo tan aṅaḍəp· ḍəṇḍanən ka-
+<lb rend="check" n="36v2"/>ro, dośa roṁ lakṣa: denira saṅ a:mava bhumī, tur alapən pisise patuku hika,, riṁ voṁ hasaṇḍa vəvnaṁ, makadḍi hajaran·, sake-
+<lb rend="check" n="36v3"/>h iṁ hasuku papat·, lavan asuku roro makadḍi bañak·, yen lagi hanom·, duruṁ hana gavene, yen maṅkana: kaṅ anaṇḍakə-
+<lb rend="check" n="36v4"/>n aveha kalantara: saputra niṁ pisis·,, kunəṁ yen asaṇḍa kahula: lanaṁ, vadon·, duruṁ biṣa: nambut gave, kaṅ anaṇḍakən ave-
+
+<pb n="37r"/>
+<fw place="left" hand="1">, riṁ voṁ hanaṇḍa-</fw>
+<fw place="left" hand="2">kən paṅa{ṅ}go,,</fw>
+<fw place="left" hand="3">, riṁ saṇḍa kavu</fw>
+<fw place="left" hand="4">la: L̥L̥p·,</fw>
+<fw place="left" hand="5">ṅaṅgo titipan·,</fw>
+<lb n="37r1"/>ha: paṅan sapaha: riṁ satavun·, knana leler arane, Iya hiku saṇḍa tinitipakən· || 0 || riṁ voṁ hana:ṇḍakən paṅaṅgo, vastra
+<lb n="37r2"/>L̥viḥ, yen livat sakiṁ limaṁ tahun· L̥L̥b·, tan palakunən deniṁ hanaṇḍakən· || 0 || <!-- #100 -->yen voṁ hanaṇḍakəṇ bumine, salavasane tan lə-
+<lb n="37r3"/>L̥b·, hapan· dr̥ve saṁ prabhū L̥mah ika:, maL̥ra huga: riṁ kaṅ anaṇḍa || 0 || <!-- #101 --> riṁ voṁ hanaṇḍakən kahula: lanaṁ va:don·, yen livat sa-
+<lb n="37r4"/>kiṁ saḍeśa tavun· lavase, L̥L̥b·, paḍa kalavan dinol ika:, yen aR̥p anəbuṣa: kaṅ a:sasaṇḍa, vnaṁ tan veha:kna deniṁ hana-
+
+
+<pb n="37v"/>
+<fw place="left" n="37" hand="1"><num>37</num></fw>
+<fw place="left" hand="2">, hamalaku haṅra-</fw>
+<fw place="left" hand="3">kṣa dr̥veniṁ- <hi>⌈</hi></fw>
+<fw place="left" hand="4">voṁ,</fw>
+<lb n="37v1"/>ṇḍa, yen miṅgata: maniḥ, kaṁ sinaṇḍakən ika:, savuvuse L̥L̥b·, maśiha kunəṁ, nora: yogya tagihən· kaṅ asasaṇḍa || 0 || <!-- #102 -->riṁ
+<lb n="37v2"/>voṁ haṅaṅgo dr̥ve titipan·, yen tan amit riṁ kaṅ a:titip·, titipan ika: mulih anikəl piṁ ro, tūr kaḍəṇḍaha: roṁ lakṣa: deni-
+<lb n="37v3"/>ra saṅ a:mava bhūmī, yen vuvus amittan dośanana, kevala: muliha: hikaṁ patukuvava: mariṁṅ atitip· || 0 || <!-- #103 -->riṁ voṁ hamalaku ha-
+<lb n="37v4"/>ṅrakṣa dr̥veniṁ voṁ, yen vəvnaṅa:, hilaṁ po dene haṅrakṣa dr̥ve, yen matiha kunəṁ, haṅəlenana kaṅ a:malaku haṅra-
+
+
+<pb n="38r"/>
+<fw place="left" hand="1">, riṁ voṁ hahutaṁ</fw>
+<fw place="left" hand="2">tanpa putra,,</fw>
+<fw place="left" hand="3">, riṁ voṁ hahutaṁ</fw>
+<fw place="left" hand="4">hañoloṁ su-</fw>
+<fw place="left" hand="5">rat·,</fw>
+<lb n="38r1"/>kṣa hika:, samuleniṁ dr̥ve hilaṁṅ ika:, bha:ṅga: paṅucap iṁ amalaku haṅrakṣa, tan aR̥p aṅalaha:, mulih anikəl piṁ ro dr̥ve den-rakṣa hi-
+<lb n="38r2"/>ka:, hiku kramane  || 0 || <!-- #104 -->riṁ voṁ hahutaṁ tanpa putra, yen təka: riṁ nəm tahun lavaśe, hanavura: hanikəl piṁ ro, hiku kramane || 0 || <!-- #105 -->riṁ voṁ
+<lb n="38r3"/>ṅ ahutaṁ hañoloṁ surat· pavitaniṁṅ ahutaṁ, dene lobhane kaṅ ahutaṁ, nora haR̥p anahura hutaṁ, maliṁ patra harane, haño-
+<lb n="38r4"/>loṁ rontal heṣi, ḍəṇḍa pataṁ lakṣa: denira: saṅ ha:ṅrakṣa bhūmī, tūr saguṅiṁ hutaṁ muliḥ hanikəl· mariṁ kaṅ a:pihutaṁ, kahilaṅha- <hi>⌈</hi>
+
+<pb n="38v"/>
+<fw place="left" n="38" hand="1"><num>38</num></fw>
+<fw place="left" hand="2">, riṁ voṁ vuvus ha-</fw>
+<fw place="left" hand="3">navur hutaṁ,</fw>
+<lb n="38v1"/>ne dośane || 0 || <hi rend="color(FF0000)">riṁ voṁ vuvus anavur hutaṁ, pgat sahutaṅe, surat pavitan· duruṁ kasəbit deniṁ hapihutaṁ, duruṁ vinehakən ro-</hi>
+<lb rend="check" n="38v2"/>ntale riṁ kaṅ ahutaṁ, hakeh vəruḥ yen vuvus anavur hutaṁ, makaḍi kaṅ aṅaṇḍəlakən· hiṅ hahutaṅan· sari sari pinalaku pasuusuratanipu-
+<lb rend="check" n="38v3"/>n tan den vətvakən·, hana hanəṅguḥ kamaliṅan·, vaneḥ hanəṅguh katunu riṁ ṅaPuy·, riṁ voṁ maṅkana hiya: haniṅiḍakən patra harane, vkasa-
+<lb rend="check" n="38v4"/>n mali kaṅ apihutaṁ, maniḥ ka riṁ vuri mətu pasusuratan ika, pinanagihakən deniṅ anak iṅ apihutaṁ, yen ana voṁ hananagiḥ, ma:ṅka:-
+
+<pb n="39r"/>
+<fw place="left" hand="1">,tanapap anahur</fw>
+<fw place="left" hand="2">hutaṁ,, riṁ ha-</fw>
+<fw place="left" hand="3">pihutaṁ tumuli</fw>
+<fw place="left" hand="4">sahaśa: hahuṅkuṁ</fw>
+<fw place="left" hand="5">riṁ hahutaṁ,</fw>
+<lb rend="check" n="39r1"/>na, ḍəṇḍanən pataṁ lakṣa: denira: saṅ a:mava: bhumī, tur saguṅe panagihe valikna: tagihna hanikəl piṁ ro, vehakna mariṁ kaṅ ahutaṁ
+<lb rend="check" n="39r2"/>tka niṁ pasusuratane ḍavutən·, maṅkaṇa: dośa niṁ hanagiḥ piṇḍo: || 0 || riṁ voṁ hatahutaṁ tan aR̥əp anahura:, katəmu deniṁ hapihutaṁ, ta-
+<lb rend="check" n="39r3"/>gihən upasamanən iṁ manis iṁ hujar tambehan·, kapiṇḍo hupayanən vətuha niṁ hutaṁ, kapiṁ tlu taṁtaṅən ahucapan·, kapiṁ pat·, bañcana-
+<lb rend="check" n="39r4"/>nən sisilihan·, kapiṁ lima: hirida:kna konən anuṅgonana saguṅ iṁ pisis || 0 || riṁ hapihutaṁ, tumuli sahaśa: haṅuṅkuṁ riṁ a-
+
+
+<pb n="39v"/>
+<fw place="left" n="39" hand="1"><num>39</num></fw>
+<fw place="left" hand="2">,hutaṁ tanpa</fw>
+<fw place="left" hand="3">susuratan·,</fw>
+<lb rend="check" n="39v1"/>hutaṁ, hanak iṁ kinuṅkuṁ vadon rinusuk hinalan deniṁ hapihutaṁ, Akarana: R̥əpe riṁ voṁ vadon ika, yen ana maṅkaṇa:, haṅrusak ratna:
+<lb rend="check" n="39v2"/>harane, ḍəṇḍanən ḍenira: saṅ a:mava bhumī, voluṁ lakṣa:, tur aveha tukon·, nəm tali tikəlakna piṁ tlu, maṅkana śaśaṇane piṁ
+<lb rend="check" n="39v3"/>bagavan· bhr̥gu || 0 || riṁ voṁ hahutaṁ tanpa susuratan·, Akeḥ voṁ vəruḥ yen tanpa susuratan·, vkasan hamanagihakən haməto-
+<lb rend="check" n="39v4"/>kən pasusuratan·, loba haraniṁ voṁ hapihutaṁ ma:ṅka:ṇa, hagave tan kapgatan iṁ surat·, ḍəṇḍanəṇ pataṁ lakṣa: denira saṁ
+
+<pb n="40r"/>
+<fw place="left" hand="1">,riṁ surat pavitan ru-</fw>
+<fw place="left" hand="2">sak deniṁ bubuk·,</fw>
+<fw place="left" hand="3">,tukon iṁ rara huca</fw>
+<fw place="left" hand="4">pən maṅke,</fw>
+<lb rend="check" n="40r1"/>ha:mava: bhumī, saguṅe panagihe valikna tagihən anikəl piṁ ro vehakna riṁ kaṁ tinagiḥ || 0 || riṁ surat pavitthan· rusak deniṁ bubuk·, deniṁ
+<lb rend="check" n="40r2"/>ṅət ṅət·, yen hilaṅa:, yen katunona, hanəlenana: surat kaṅ ahutaṁ || 0 || tukon iṁ rara: hucapən maṅke, riṁ rara: vinehan· dr̥ve,
+<lb rend="check" n="40r3"/>mapakna pinaka tunone, vkasan halaki hiṅ len·, vet iṁ R̥əpe hiṁ lanaṁ len ika, bapa niṁ rara: mnəṁ makadi yen amamaṅantenakna, hi{*}
+<lb rend="check" n="40r4"/>ya: hamaraṁ laraṅan harane, salviriṁ tukon iṁ haṅlamar karuhun·, muli hanikəl piṁ ro, tur bapa niṁ rara: ḍəṇḍanən pataṁ lakṣa: denira: sa-
+
+<pb n="40v"/>
+<fw place="left" n="40" hand="1"><num>40</num></fw>
+<fw place="left" hand="2">,rara vuruṁ patmu-</fw>
+<fw place="left" hand="3">ne,</fw>
+<lb rend="check" n="40v1"/>ṅ hamava: bhumī, hamada:l tukon harane,, kunəṁ hikaṅ alaki rabi kaliḥ hika, doṣanya pataṁ lakṣa: kaṁ stru laki vivijinən·, denira saṁ prabhu
+<lb rend="check" n="40v2"/> || 0 || riṁ voṁ haveḥ tukon iṁ rara:, vkasan mati rara kaṁ tinuku hika, tan amaṅsula: tukon ikaṁ rara mati, Apan kapatyan vəlyan arane || 0 ||
+<lb rend="check" n="40v3"/>riṁ rara: vuruṁ patəmune duk ṣḍəṅe sapaturon·, huruṁ deniṁ lanaṅe kamalan·, paran ta lara:ne maka vnəṁ vuruṁ iṁ patəmu, kumiṁ, tan kavaśa
+<lb rend="check" n="40v4"/>riṁ saṅgama, dudu lanaṁ, vuḍug· riṁ vtəṅ, riṁ pupu, riṁ bobokoṁ, tan katon iṁ jaba larane, hayan buyan·, hiku ta vnaṁ pamadalakna de
+
+<pb n="41r"/>
+<fw place="left" hand="1">,naṇḍa kbo sapi,</fw>
+<fw place="left" hand="2">,saṇḍa savi{jiniṁ}</fw>
+<fw place="left" hand="3">den saṇḍakən iṁ</fw>
+<fw place="left" hand="4">voṁ {ro}ro,,</fw>
+<fw place="left" hand="5">,sasaṇḍan vaḍaḥ L̥əL̥əb,</fw>
+<lb rend="check" n="41r1"/>niṁ rara, riṁ rara maṅkana: hamaṅsulakna tukon· nora hanikəl· || 0 || riṁ hanaṇḍa kbo sapi, yen anak anak iṁ pasaṇḍan·, kaṅ anaṇḍakən hameta nake
+<lb rend="check" n="41r2"/>yen ḍuruṁ livat sakeṁ tluṁ tavun· hiṅane || 0 || riṁ saṇḍa saviji, den saṇḍakən iṁ voṁ roro dene kaṅ anaṇḍakən·, siṁ rumuhun hanaṇḍa: hameta sa-
+<lb rend="check" n="41r3"/>ṇḍa hiku vnaṁ, kaṅ anaṇḍakən· ḍəṇḍanən roṁ lakṣa: de saṅ a:mava: bhumī || 0 || voṁ hanaṇḍakən savaḥ sapcal·, sumaṇḍa riṁ voṁ roro, baR̥əṁ de-
+<lb rend="check" n="41r4"/>ne hanaṇḍa, paḍa lavaśe, siṅ amukti rumuhun sida:kna pamukṭine, kaṅ anaṇḍakən· kaḍəṇḍaha roṁ lakṣa denira saṅ amava: bhumī || 0 || riṁ sasa-
+
+<pb n="41v"/>
+<fw place="right" hand="1-roman" n="41"><num>41</num></fw>
+<fw place="left" n="41" hand="1"><num>41</num></fw>
+<fw place="left" hand="2">,kahula lanaṁ va-</fw>
+<fw place="left" hand="3">don·, sinaṇḍa</fw>
+<fw place="left" hand="4">kən dene gusti-</fw>
+<fw place="left" hand="5">ne</fw>
+<lb rend="check" n="41v1"/>ṇḍan vava:ḍaḥ, tambaga: hadḍine, yen livat sakiṁ roṁ tavun· L̥əL̥əb ika || 0 || yen ana kavula: lanaṁ, vadon· sinaṇḍakən dene gustine, haño-
+<lb rend="check" n="41v2"/>loṁ dr̥ve ne kaṅ anaṇḍa, sakiṁ luvene, yen livat sakiṁ haji satus·, pañoloṅe riṁ dr̥ve niṁ hanaṇḍa, yogya patihane, voṁ sinaṇḍakən ika
+<lb rend="check" n="41v3"/>,dene kaṅ anaṇḍa, hiku kaṅ a:naṇḍakən coraḥ harane,, kaṅ aṇḍakən hanahura: hutaṅe sasaṇḍan ika,, hapur ikaṅ anaṇḍakən ika, patine
+<lb rend="check" n="41v4"/>kavulane, yen lanaṅ·, vadona, sasaṇḍan ika, {ka} dadi vyahara:, vinicara: kaṅanaṇḍa:, hahucapan·, yogya dośanana pati ka-
+
+<pb n="42r"/>
+<fw place="left" hand="1">,saṇḍa cinolo-</fw>
+<fw place="left" hand="2">ṅ maliṁ, ,saṇḍa</fw>
+<fw place="left" hand="3">kvula L̥əL̥əb·,</fw>
+<fw place="left" hand="4">,saṇḍa kbo sapi</fw>
+<fw place="left" hand="5">L̥əL̥əb·,</fw>
+<lb rend="check" n="42r1"/>ṅ naṇḍakəṇ· denira saṁ prabhu, hapan a:saṇḍa maliṁ, makadḍi yen año:loṅa dr̥ve niṅ asaṇḍa ri kala niṁ vṅi,, patenana huga: hagamane, yen kalaḥ dene
+<lb rend="check" n="42r2"/>habaribinan·, || 0 || riṁ saṇḍa cinoloṅ iṁ maliṁ riṁ pasisi{va}mpənan·, yen alapən deniṁ ratu, paḍa kelaṅan hagamane || 0 || saṇḍa: kavula: lanaṁ, ye-
+<lb rend="check" n="42r3"/>n vadona, mun livat sakiṁ limaṁ tavun· L̥əL̥əb·, paḍa lavan dinol·, kaṁ sakiṁ kuṭaragama: hiki,, yen sakiṁ manava: saḍaśa tavun· L̥əL̥əb· || 0
+<lb rend="check" n="42r4"/>|| saṇḍa kbo sapi, yen livat sakiṁ tluṁ tavun· L̥əL̥əb·, pada lavan diol·, kaṁ sakiṁ kuṭaragama: hiki,, kaṁ sakiṁ manava:gama:, limaṁ tavun·
+
+<pb n="42v"/>
+<fw place="right" n="42" hand="1-roman"><num>42</num></fw>
+<fw place="left" n="42" hand="1"><num>42</num></fw>
+<fw place="left" hand="2">,riṁ dr̥ve mas·</fw>
+<fw place="left" hand="3">kinonken· na</fw>
+<fw place="left" hand="4">niṅ apaṇḍe,</fw>
+<lb rend="check" n="42v1"/> L̥əL̥əbe, salaḥ tuṅgal· tutən· dudu haranana haṅadeni, hapan paḍa sakiṁ hagama: riṁ kr̥ttayuya:,, riṁ manava:śastra:, maharaja: manu haṅajarakə-
+<lb rend="check" n="42v2"/>n· maU niṁ ha:ṇa: voṁ samaṇa:, sira sakṣat· Baṭara: viṣnu || riṁ kuṭara:śastra:, Bagavan· Bhr̥gu hanajara:kən·, samaṅka tretayugga, sira sa-
+<lb rend="check" n="42v3"/>kṣat· baṭara: viṣnu:, tinut denira: bagavan· ra:ma paraśu, tinut deniṁ ra:t kabeḥ, dudu ginave maṅke:, sipat sakiṁ śastra: mula niṁ mula: ||
+<lb rend="check" n="42v4"/>0 || riṁ dr̥ve mas pinakadḍi, kinonkon iṁ hapaṇḍa mas· pahayunəṇ·, yen kaṁ bakal kinon· gavanən·, buṣaṇa:, pada kalavan doddo-
+
+<pb n="43r"/>
+<fw place="left" hand="1">,riṁ haveveḥ dr̥-</fw>
+<fw place="left" hand="2">ve,</fw>
+<lb rend="check" n="43r1"/>t·, kino{ni}n raninana riṁ hamalanṭən·, hiṅalap deniṁ ratu, hiṅalap deniṁ maliṁ, katunon·, salvira niṁ kinonken·, hakən·, haṅəlenana kaṁ
+<lb rend="check" n="43r2"/>kinonkon·, yen sambaraṇa: pepeka dene haṅrakṣa dr̥ve, muliha saR̥əhane kaṁ ṅilaṁ, yen yatna dene haṅrakṣa dr̥ve, hañci-
+<lb rend="check" n="43r3"/>k dene hasimpən·, tanpa ṅlenana, maṅkaba da:rmmane || 0 || riṁ voṁ ṅhaveveḥ dr̥ve riṁ hanak mantune, duk sḍəṅe mahu hahomaḥ omaḥ
+<lb rend="check" n="43r4"/>, yen mati kaṁ vadon·, halapən dene lakine, dr̥ve hika, yen mati kaṁ lanaṁ halapəṇ dene rabine dr̥ve hika, tan vənaṁ
+
+<pb n="43v"/>
+<fw place="right" n="43" hand="1-roman"><num>43</num></fw>
+<fw place="left" n="43" hand="1"><num>43</num></fw>
+<fw place="left" hand="2">,rara: vineha-</fw>
+<fw place="left" hand="3">n· dr̥ve, {riṁ}</fw>
+<fw place="left" hand="4">hanak·, mantune,</fw>
+<lb rend="check" n="43v1"/>halapən deniṁ haveveḥ maliḥ, yen vuvus avor pomahe, hiṅan iṁ havor iṁ voṁ halaki harabi rovlas tavun· || 0 || riṁ
+<lb rend="check" n="43v2"/>rara vinehan dr̥ve {ne} deniṁ bapa:, deniṁ sihe hiṁ hiya, vkasan halaki rara hika, tan alavas palakine, vksan mati rara hika, sadr̥ve-
+<lb rend="check" n="43v3"/>ne kaṁ den gava: halaki hika muliha mariṁ bapa hibu niṁ rara:, hapan ḍuruṁ havor Palaki rabine, maṅkana maniḥ sadr̥ve niṁ lanaṁ muli-
+<lb rend="check" n="43v4"/>ha mariṁ lanaṁ, śamaṅkana: darmmane || 0 || yen ana: voṁ helik iṁ mantune, tumuli hanake den pisaha:kən alaki harabi, deniṁ tuko-
+
+<pb n="44r"/>
+<fw place="left" hand="1">,rara vahu vunaraṁ,</fw>
+<fw place="left" hand="2">,helik iṁ hana-</fw>
+<fw place="left" hand="3">ke,</fw>
+<lb rend="check" n="44r1"/>n iṁ lanaṁ muli hanikəl piṁ ro, tur aṅulihakna pasəsəmbaḥ, sadulure riṁ kuna:,, vastra:, sabuk·, sinjaṁ:, vaṅsula:kna: mariṁ mantu tan kinaR̥əpan·, patuku
+<lb rend="check" n="44r2"/>susu tan maṅsula: || 0 || riṁ rara: mavu vinaraṁ, duruṁ sapaturon lavan lakine, vet iṁ tan aR̥əpe riṁ jajaka hika, tukon iṁ rara: muli hanikəl piṁ ro, hama-
+<lb rend="check" n="44r3"/>dal saṅgama: harane voṁ vadon maṅkana:, || 0 || riṁ voṁ helik iṁ hanake, dene dośane voṁ hatu{ui ka}vane vadon avor kavoṅane, siṁ do-
+<lb rend="check" n="44r4"/>śaha niṁ voṁ ṅatuvane vadon ika, yen mati voṅ atuvane lanaṁ, vnaṁ Ikaṁ hanak inelikan hameta dr̥ve kaliliran iṁ bapa:, putra:
+
+<pb n="44v"/>
+<fw place="right" n="44" hand="1-roman"><num>44</num></fw>
+<fw place="left" n="44" hand="1"><num>44</num></fw>
+<fw place="left" hand="2">,kavula niṁ</fw>
+<fw place="left" hand="3">vadin mati</fw>
+<fw place="left" hand="4">,haṅaku kahu-</fw>
+<fw place="left" hand="5">la:, haṅaku</fw>
+<fw place="left" hand="6">sanak riṁ voṁ {...}</fw>
+<fw place="left" hand="7">vadon·,</fw>
+<lb rend="check" n="44v1"/>hanumpak harane, padḍa hadum ḍumane lavan hanak ikaṁ kinaśiḥan ika, makadḍi yen kavalonakna, tur kavalone nora: hanak hanak·, hanak i-
+<lb rend="check" n="44v2"/>nekan huga: haṅala:pa dr̥vene raramne lanaṁ kabeḥ || 0 || riṁ kavula: lanaṁ vadon mati, sadr̥vehane gustine huga: hameta siṁ dr̥ve-
+<lb rend="check" n="44v3"/>ne, tan vənaṁ petən iṁ voṁ len·,, yen ana voṁ ṅhahutaṅ iṁ kavula: mati hika, hanahura: riṁ gustine || 0 || riṁ voṁ haṅaku kavula: niṅ a:-
+<lb rend="check" n="44v4"/>kavula:, liñok paṅakune, Aṅoho kavula: harane, kaṅ a:ṅaku haku vnaṁ tagihən sapaṅaji niṁ voṁ kaṁ den aku || 0 || riṁ voṁ
+
+
+<pb n="45r"/>
+<fw place="left" hand="1">,haṅaku sana-</fw>
+<fw place="left" hand="2">k riṁ voṁ vado-</fw>
+<fw place="left" hand="3">n·, ,Ulah</fw>
+<fw place="left" hand="4">hiṁ voṁ den pra-</fw>
+<fw place="left" hand="5">yatna,</fw>
+<lb rend="check" n="45r1"/>haṅaku sanak riṁ voṁ vadon·, kahapusan iṁ voṁ vadon kaR̥əpe, havkasan makarabine voṁ vadon kaṁ den aku kaḍaṅ hika, hakarana den valat·,
+<lb rend="check" n="45r2"/>yen hana voṁ maṅkana:, patenana: dośane, denira saṅ a:mava: bhumī || 0 || Ulah iṁ voṁ den prayatna: haṅrakṣa: hanak rabine, den praya-
+<lb rend="check" n="45r3"/>tna: haṅrakṣa: kavylane lanaṁ vadon·, yen avulaḥ salaḥ hikaṁ rabi, hanak·, kavula: lanaṁ vadon·, pamaL̥əra:na huga:, hapan ha
+<lb rend="check" n="45r4"/>gave dośa: niṁ sarira:, yen tab pamaL̥əraṇa: hulahe ḍuḍu hika,, hana po {ne} dene tan ahiḍəp·, vinaL̥ərakən·, riṁ rabi,
+
+<pb n="45v"/>
+<fw place="right" n="45" hand="1-roman"><num>45</num></fw>
+<fw place="left" n="45" hand="1"><num>45</num></fw>
+<lb rend="check" n="45v1"/>hanak·, lavan kavula: təmbuṅən ta riṁ priṁ, {təmbu} savilaḥ, yen iṁ kakayuha, havake giṭikən·, yen gigire, sukune, maniḥya ta-
+<lb rend="check" n="45v2"/>n hiḍəp·, talenana hayo hasiṅsət·, sarahina hiṅane, Uvakna, yen kavula: maṅkana:,, yen riṁ hanak rabi, hayo tinalen·,
+<lb rend="check" n="45v3"/>tan yogya hika, hana po deniṁ hanəmbaṁ hanak rabi, muvah kavula:, haja tinəmbuṁ sirahe, hapan iṁ sarira:, tan ana kadḍi Uṭamaṅga: L̥ə-
+<lb rend="check" n="45v4"/>viḥ tmən·, yen hanəmbuṁ sirahiṁ voṁ, ḍaṇḍa roṁ lakṣa: denira: saṅ a:mava: bhumī, yen siraḥ hatatu den yanəmbuṁ,, yen tatune ta-
+
+<pb n="46r"/>
+<fw place="left" hand="1">,riṁ voṁ haṅaku</fw>
+<fw place="left" hand="2">bumi, , riṁ tan</fw>
+<fw place="left" hand="3">aveḥ muliha bu-</fw>
+<fw place="left" hand="4">mi, ,ḍəṇḍa riṁ pa-</fw>
+<fw place="left" hand="5">radara, ḍəṇḍa sa-</fw>
+<fw place="left" hand="6">lakṣa</fw>
+<lb rend="check" n="46r1"/>n patiha jəro, ḍəṇḍa salakṣa, de saṅ a:mava bhumī,, yen hemu haṅəmu gtiḥ, ḍəṇḍa: limaṁ tali denira: saṅ a:mava: bhumī, riṁ hanəmbuṁ siraḥ hika
+<lb rend="check" n="46r2"/> || 0 || riṁ voṁ haṅaku bhumī, liñok paṅakune, ḍəṇḍa: sakəṭi nəm lakṣa, denira: saṅ a:mava: bhumī, haṅaku haku kaḍaṁ harane || 0 || riṁ tan a-
+<lb rend="check" n="46r3"/>veḥ miluha ha bhumī riṁ kaḍaṅe, ḍəṇḍa: sakṭi nəm lakṣa: denira: saṅ a:mava: bhumī, hatula kkaḍaṁ vargga haran iṁ voṁ maṅkana: || 0 || ḍəṇḍa niṁ pa-
+<lb rend="check" n="46r4"/>raḍara hucapakna maṅke,, paradara: harane, rabi niṁ voṁ len·, voṅ aṅaṅgamli rabi, sira saṁ prabhu riṁ kuna kuna hagave dəṇḍa: ha-
+
+<pb n="46v"/>
+<fw place="right" n="46" hand="1-roman"><num>46</num></fw>
+<fw place="left" n="46" hand="1"><num>46</num></fw>
+<fw place="left" hand="2">,voṁ hamuṁpaṁ rabi</fw>
+<fw place="left" hand="3">niṅ arabi, voṁ</fw>
+<fw place="left" hand="4">mariṁ paturon·, ha</fw>
+<fw place="left" hand="5">ṅgaməli rabi niṅ ara-</fw>
+<fw place="left" hand="6">bi,</fw>
+<lb rend="check" n="46v1"/>nuta sasḍəṅ iṁ dośa, guṅ iṁ ḍəṇḍa: roṁ lakṣa: mariṁ hadr̥ve rabi, patukune hurip· kaṅ aṅgamli, yen ṣtri hutama: || 0 || riṁ ḍəṇḍa: salakṣa
+<lb rend="check" n="46v2"/>ṣtri maḍyama: hika || 0 || riṁ ḍəṇḍa: limaṁ tali ṣtri kaniṣṭan ika,, dudu saṁ prabhu haṅalap·,, ḍaṇḍa hika,, kaṅ adr̥ve rabi: viśeṣa: riṁ dəṇḍa:, ye-
+<lb rend="check" n="46v3"/>n aR̥əp isis·, kunəṁ duk sḍəṅe haṅga:məli karuhan dene kaṅ arabi, vnaṁ palihan iṁ haṅgaməli || 0 || voṁ ṅamuṁpaṁ rabi niṅ arabi, den tut mariṁ gnah iṁ
+<lb rend="check" n="46v4"/>voṁ vadon ika, vet iṁ R̥əpe kaṅ amuṁpaṁ, deśa: pati denira: saṅ a:mava: bhumī  || 0 || riṁ voṁ mariṁ paturon iṁ ra-
+
+<pb n="47r"/>
+<fw place="left" hand="1">hakeḥ sana⌈</fw>
+<fw place="left" hand="2">ke hanuṅgoni</fw>
+<fw place="left" hand="3">,</fw>
+<fw place="left" hand="1">,voṁ ṅaṅgamli rabi</fw>
+<fw place="left" hand="2">niṅ arabi,</fw>
+<lb rend="check" n="47r1"/>bi niṅ arabi, kaR̥əpe haṅa:lonana:, ḍəṇḍa roṁ lakṣa:, yen luput ikaṁ rabu niṅ arabi den alon iṁ, ḍəṇḍa: mariṁ kaṅ adr̥ve rabi, patukune hu-
+<lb rend="check" n="47r2"/>ri hurip· kaṅ a:R̥əp aṅlonana:, yen kəna dene haṅaloni, ḍəṇḍa pati dene kaṅ a:dr̥ve rabi || 0 || riṁ voṁ haṅgaməli rabi niṅ arabi, tur a-
+<lb rend="check" n="47r3"/>ṅaloni pisan·, hana kaṅ aken aṅalonana, riṁ ṅumah iṁ voṁ kaṅ aken· gnahe haṅaloni, kaṅ adr̥ve humaḥ suka gnaḥ iṅ a:ṅaloni, ḍə-
+<lb rend="check" n="47r4"/>ṇḍanən kaṅ adr̥ve humaḥ, roṁ lakṣa, denira: saṅ a:mava: bhumī,, kaṅ aṅaloni deśa: pati riṁ lakine voṁ vadon kaṅ iṅalon ika,,
+
+<pb n="47v"/>
+<fw place="right" n="47" hand="1-roman"><num>47</num></fw>
+<fw place="left" n="47" hand="1"><num>47</num></fw>
+<fw place="left" hand="2">,haniliḥ paṅaṅgo,,</fw>
+<fw place="left" hand="3">,hahucap ucap riṁ {ra}bi</fw>
+<fw place="left" hand="4">niṁ harabi,</fw>
+<lb rend="check" n="47v1"/>yen sakiṁ manava hiki || 0 || yen sakiṁ khuṭara:, kaṅ a:ṅaloni deśa pati, yen aR̥əp ahurip· ḍəṇḍa: pataṁ lakṣa:, kaṅ aken tur aṅa-
+<lb rend="check" n="47v2"/>dyani haṅalonana riṁ humahe ḍəṇḍa pataṁ lakṣa, denira saṅ a:dr̥ve bhumī || 0 || riṁ voṁ haniliḥ paṅaṅgo riṁ rabi niṁ rabi riṅ aspi dene haniliḥ, vka-
+<lb rend="check" n="47v3"/>san kavr̥tta niṁ voṁ hakeḥ, kaṅ aniliḥ ḍəṇḍa: roṁ lakṣa:, dene kaṅ a:dr̥ve rabi || 0 || riṁ voṁ hahucap ucap lavan rabi niṅ arabi, riṅ aspi, haR̥əp a-
+<lb rend="check" n="47v4"/>hutaṅ ahujare, ḍəṇḍanən salakṣa, mantaṅe riṁ voṁ hayo haṅucap ucap· lavan rabi niṅ arabi, laraṅan iṁ halaraṅan·, riṅ aspi, hapane evəḥ riṁ
+
+
+<pb n="48r"/>
+<fw place="left" hand="1">,voṁ vadon·</fw>
+<fw place="left" hand="2">haṅiraṅakən ra-</fw>
+<fw place="left" hand="3">ra,</fw>
+<lb rend="check" n="48r1"/>smara: pinamaL̥əran·, yedya{saṁ}nsaṁ paṇḍita tuvi, hayo sira: sapocapan· lavan ṣtri riṁ ṅaspi, lavan iṁ samuh niṅ indriya, sakti ḍahat· hevuḥ linavan·,
+<lb rend="check" n="48r2"/>hala niṁ tan rumakṣa: riṅ indriya:, Ilaṁ ṅikaṁ kapaṇḍitan·, yan linumbar maṅkana: liṁ saṁ hyaṁ hagama: || 0 || riṁ voṁ vadon haṅiriṅakən rara:, den atərakən mariṁ
+<lb rend="check" n="48r3"/>humaḥ iṁ jajaka, maniḥ ana voṁ vadon haveḥ gnaḥ deniṁ jajaka lavan rara: haṭmu tan sareḥ, saṅkane haveḥ gnaḥ hika den upah upah iṁ deniṁ jajaka:
+<lb rend="check" n="48r4"/>lavan rara: hika, hika ta kaṅ aṅatərakən rara:, kaṅ aveḥ gnaḥ, karo voṁ vadon ika, ḍəṇḍanən pataṅ evu, denira: saṅ a:mava: bhumi
+
+<pb n="48v"/>
+<fw place="left" n="48" hand="1"><num>48</num></fw>
+<fw place="left" hand="2">, haṅgamli rara,</fw>
+<fw place="left" hand="3">, hatukar lava{n ra}-</fw>
+<fw place="left" hand="4">bi, , saśaṇa niṁ</fw>
+<fw place="left" hand="5">halakya rabi,</fw>
+<fw place="right" n="48" hand="1-roman"><num>48</num></fw>
+<lb rend="check" n="48v1"/>, kahilaṅane dośane || 0 || riṁ voṁ haṅgaməli rara:, haṅajak a:tatavan·, hamamanis iṁ hujar, haṅajak mariṁ haspi, momah omahan harane,
+<lb rend="check" n="48v2"/>ḍəṇḍanən pataṁ tali, denira saṅ a:mava: bhumi, yen hana: voṁ maṅkana: || 0 || riṁ voṁ hatukar lavan rabi niṅ arabi, hakeḥ voṁ vəruḥ patukare, riṁ
+<lb rend="check" n="48v3"/>voṁ lanaṁ maṅkana:, stri saṅgra:ha harane, ḍəṇḍa roṁ lakṣa: mariṁ hadr̥ve rabi || 0 || riṁ voṁ hatukar lavan rara ciliṁ, ḍəṇḍa roṁ lakṣa:, mariṁ saṅ ha-
+<lb rend="check" n="48v4"/>dr̥ve bhumi || 0 || śaśaṇa: niṁ halaki harabi, yen luṅha: hapaparan·, mintar alayar sapuluḥ tavun hiṅane, lavaśe luṅha:, mintar a:ṅulati pisi-
+
+<pb n="49r"/>
+<fw place="left" hand="1">, haṇḍavut ṣavi,</fw>
+<fw place="left" hand="2">hasḍahan·,</fw>
+<lb rend="check" n="49r1"/>s riṁ desantara:, pataṁ tahun hiṅane lavaśe luṅha:, mintar a:ṅajī sarvva sastra, nəm tavun lavaśe luṅha:,, hana ta voṁ luṅha: hatiṅgal rabīne, tan alaya(r),
+<lb rend="check" n="49r2"/>tan aṅula{pi}ti pisis makadon dadiya pomah-omaḥ,, tan luṅha: haṅajī sarvva śastra, yen hana voṁ maṅka:na:, rabine haṅantīha: pataṁ tavun·, yan livat·
+<lb rend="check" n="49r3"/>sakiṁ pataṁ tavun·, vnaṁ halakiha: riṁ len·, liṅiṁ manava: śastra: maṅkana: || yan iṁ kuṭara śastra: tluṁ tavun· vnaṁ halakiha: riṁ len·, lakine pūrvvaka:
+<lb rend="check" n="49r4"/>tan vənaṁ yen hanḍośanana, hujar iṁ hagama: pinisahakniṁ hyaṁ harane || 0 || riṁ voṁ handavut savī, hanəbit paṅubaya:, yen ḍuruṁ pgat iṁ
+
+<pb n="49v"/>
+<fw place="left" n="49" hand="1"><num>49</num></fw>
+<fw place="left" hand="2">, sḍahan· kbo</fw>
+<fw place="left" hand="3">sapi,</fw>
+<fw place="right" n="49" hand="1-roman"><num>49</num></fw>
+<lb rend="check" n="49v1"/>vicara:, ḍaṇḍa: pataṁ talī,, haməraṁ savī sakiṁ hagalak·, tur anaṁtaṁ, ḍəṇḍa: roṁ lakṣa:, denira: saṅ ha:mava: bhūmī || 0 || riṁ voṁ hasḍa:
+<lb rend="check" n="49v2"/>han· vəvnaṁ śakiṁ gusti, lvire, pakṣī, samra:, celeṁ, baña:k·, vḍus·, kbo, sapi, pagave, yen matī, yen ilaṅha:, dene haL̥ṅe sinə-
+<lb rend="check" n="49v3"/>ḍaḥ sḍahan·, haṅlenana pisis· voluṁ talī sanuṅgal-nuṅgal·, sakvehiṁ matī, lavan ilaṁ, samaṅkana: śaśaṇane || nora veruḥ duk ṣḍəṅe
+<lb rend="check" n="49v4"/>hilaṁ, nora vəruḥ duk ṣḍəṅe matī, gagaḍuhane, ḍəṇḍanən limaṁ talī,, vəruḥ tur nora vavaraḥ, ḍəṇḍa: salakṣa:, yen aṅkara: hujare, ḍə-
+
+<pb n="50r"/>
+<fw place="left" hand="1">, sḍahan· kbo sa</fw>
+<fw place="left" hand="2">pi, , kbo haga</fw>
+<fw place="left" hand="3">lak·, , kbo</fw>
+<fw place="left" hand="4">hatavan tatu,</fw>
+<lb rend="check" n="50r1"/> ṇḍa: roṁ lakṣa:, yen haniṅiḍakən· tūr den-paṅani kaṁ vnaṁ-vnaṁ, patenana denira: saṅ ha:dr̥ve vnaṁ-vnaṁ, makadḍī sira saṅ ha:mava: bhūmī || 0 || riṁ voṁ
+<lb rend="check" n="50r2"/>hasḍahan· kbo sapi, yen aL̥ṅe paṅrakṣane, ḍəṇḍa salakṣa:, paṁR̥ga: riṁ satuṅgal-satuṅgal·, voluṁ talī. yen sakiṁ saha:śa: paravaśaniṅ a:
+<lb rend="check" n="50r3"/>sḍahan·, ḍəṇḍanən· roṁ lakṣa:, de saṅ ha:mava bhūmī || 0 || riṁ kbo hagalak· haniṅat voṁ rva tlu pat·, hiku kbo haṅamuk harane, vnaṁ R̥butə
+<lb rend="check" n="50r4"/>n dagiṅe, yen vuvus matī || 0 || yen hana kbo hatavan tatu, pgat sakiṁ pamugəran·, yen pinugə kinəlu, yan ya mgata talī, haniṅha:t ika:, du§
+
+<pb n="50v"/>
+<fw place="left" hand="1">, kbo sapi paṅiri</fw>
+<fw place="left" hand="2">d·, </fw>
+<fw place="right" n="50" hand="1-roman"><num>50</num></fw>
+<lb rend="check" n="50v1"/>du haranana haṅamūk·, yen hana handalih a:ṅamuk iriya:, kbo sapi maṅkana: R̥butən dagiṅe, kbo sapī mulihanikəl piṁ ro, tuvi yan tanpa niṅhata:
+<lb rend="check" n="50v2"/>kbo sapi hika: tūr pinaten·, muliha:nikəl huga:, kaṅ amatenī, ḍəṇḍanən· roṁ lakṣa:, denira saṅ ha:mava: bhūmī || 0 || yen hana: kbo sapī paṅiri
+<lb rend="check" n="50v3"/>d·, hajaran·, gajaḥ, salviriṁ pamṅ-amṅan saṁ prabhū, haveḥ suka: riṁ sira: dene guṇane, rupane, varṇnane, tuhu-tuhuniṁ raja dr̥ve, hika ta: ye§
+<lb rend="check" n="50v4"/>n cinoloṁṅ iṁ voṁ, pinaten deniṁ voṁ, tan kəna: hiṅ hanana r̥gane, ḍəṇḍane kaṅ ha:matenī, kaṅ ha:ñoloṁ, hiṅan denira: saṁ prabhū riṁ kaṅ a
+
+<pb n="51r"/>
+<fw place="left" hand="1">, voṁ hadośa</fw>
+<fw place="left" hand="2">, mati,, voṅ a-</fw>
+<fw place="left" hand="3">ṅəbaṁ-ṅəbaṁ</fw>
+<lb n="51r1"/>matenī, lavan añoloṁ, Apan sira viśeṣa:, Amava bhūmī, vnaṁ sakaR̥pira:, harane sakiṁ śastra:, śvamī śobha pra:ḍa:,, haṅhiṁ yen sira: haR̥pa:
+<lb n="51r2"/>ṇḍəṇḍa: riṁ pisis· tutugiṁ {ṇḍ}ḍəṇḍa: tan ana maniḥ, sakəṭī nəm lakṣa:, tan ana haṅləvihi maniḥ, guṅiṁ ḍəṇḍa:, yen sakiṁ hagama: śastra:,, riṁ ḍəṇḍa: yen a:
+<lb n="51r3"/>ṅləvihī sakiṁ sakəṭī nəm lakṣa:, hila:-hila:, tan ulaha:nira: saṅ ha:mava ra:t haṅləvihana:, yen hanut hujariṁ ṣastra: kuṭa:ramanava: || 0 || <!-- #149 -->riṁ voṁ ha-
+<lb n="51r4"/>dośa:, matī duruṁ ta katkan dinośan·, tan tumusa: dośane riṅ anake || <!-- #150 -->riṁ voṁ haṅəbaṅ-həbaṁ, hasaṅgup haveha pisis·, dadḍi pasusuratan·
+
+<pb n="51v"/>
+<fw place="left" n="51" hand="1"><num>51</num></fw>
+<fw place="left" hand="2">, voṅ aṅutaṁ, ta-</fw>
+<fw place="left" hand="3">n paveḥ kalanta-</fw>
+<fw place="left" hand="4">ra,</fw>
+<fw place="right" n="51" hand="1-roman"><num>51</num></fw>
+<lb n="51v1"/>, vuvus prasidḍa gavene, duruṁ haveḥ paṅəbaṅ-həbaṁ, mati kaṅ aṅəbaṅ-əbaṁ, nora vnaṁ tumusa: tkeṁ hanake || 0 || <!-- #151 -->riṁ voṁ hahutaṁ tan paveḥ kalanta:
+<lb n="51v2"/>ra: putra:, mariṁ apihutaṁ, hanikəl piṁ ro huga: hutaṅe, savuse hanikəl piṁ ro, tan ana panahure, riṁ voṁ maṅkana: hanuta:kna: hutaṅe, dadḍī
+<lb n="51v3"/>kavula:, halavas dene hanuta:kən dadḍī kavula:, tan kavaśa: dene hanambut gaveniṁ pr̥ḍana:, vkasan miṅgat· sakiṁ gustine, katmu maniḥ deniṁ pr̥ḍa-
+<lb n="51v4"/>na:, haveha: pavaḍal gave, salavaśe tan aṅlakonī gaveniṁ pr̥ḍana:, vkasan matī ri sukuniṁ gustī, Anake hanahura: hutaṁṅ hanikəl pinḍo ||
+
+<pb n="52r"/>
+<fw place="left" hand="1">, hanak-a:nakiṁ ḍa</fw>
+<fw place="left" hand="2">ganiṁ gusti, , ha-</fw>
+<fw place="left" hand="3">nak vəsi, , kavu-</fw>
+<fw place="left" hand="4">la: miṅgat·,</fw>
+<lb n="52r1"/> 0 || <!-- #152 -->riṁ kavula: lanaṁ vadon· hanak-a:nakiṁ ḍaganiṁ gustī, yen iṁ paradeśa: ha:gnahe, sagnah{e}ane hanak-ana:k·, hiku hanak vəsi harane, hanakiṁ
+<lb n="52r2"/>kavula: satuhuk haṅavula:, liṁ saṁ paṇḍita:, haśevaka:ha: riṁ hanakiṁ tuvan uga: kramane || 0 || riṁ kavula: lanaṁ vadon· hanak vəsī, haṅalapa: hutaṁ§
+<lb n="52r3"/>sahutaṅe ramane lanaṁ vadon aməpəka:, hatuṅgalana:, den-paḍa: padum-ḍumane, maṅkana: ḍarmmane || 0 || <!-- #153 -->riṁ kavula: lanaṁ vadon miṅgat·, sakiṁ gu-
+<lb n="52r4"/>stī, kaṁ kaṁ lanaṁ miṅgat sakiṁ gustine, kaṁ vadon miṅgat sakiṁ gustine, hatmū riṁ paṅiṅgatan·, vkasan hanak-hanak·, kaṁ lanaṁ katəmu deniṁ kaṅ hadr̥ve ka-
+
+<pb n="52v"/>
+<fw place="left" n="52" hand="1"><num>52</num></fw>
+<fw place="left" hand="2">, kavula: lanaṁ va-</fw>
+<fw place="left" hand="3">don· tuṅgal</fw>
+<fw place="left" hand="4">gnahe haṅavula:</fw>
+<fw place="left" hand="5">, </fw>
+<fw place="right" n="52" hand="1-roman"><num>52</num></fw>
+<lb n="52v1"/>vula: lanaṁ, kaṁ vadon katəmu dene kaṅ hadr̥ve kavula: vadon·, katmu riṁ deśa len·, kaṅ ha:dr̥ve kavula: lanaṁ hameta: hanake la-
+<lb n="52v2"/>naṁ, kaṅ adr̥ve kavula: vadon· hameta: hanake vadon·, yen karuhun matī kavula: lanaṁṅ ika:, kaṅ adr̥ve kavula: lanaṁ hameta: sadr̥<hi>⌈</hi>
+<lb n="52v3"/>vene saR̥mbat·, kavula: vadon ika: muliha: mariṁ kaṅ adr̥ve kavula: vadon·. yen kavula: vadon ika: matī, kaṅ adr̥ve kavula: vadon ha-
+<lb n="52v4"/>ṅalapa: dr̥vene sasuhun·, kavula: lanaṁ muliha: mariṁ kaṅ ha:dr̥ve kavula: lanaṁ, maṅkana: ḍarmmane || 0 || <!-- #154 -->riṁ kavula: lanaṁ vadon tuṅgal·,
+
+<pb n="53r"/>
+<fw place="left" hand="1">,, harabi kavula</fw>
+<fw place="left" hand="2">ne,</fw>
+<lb n="53r1"/>gnahe haṅavula:, miṅgat sakiṁ gustine, halavas dene luṅha:, haṅeriṁ deśa len·, Alapən sadr̥vene, vəvnaṅe, hanake, dene kaṅ ha:dr̥ve kavu-
+<lb n="53r2"/>la:, vaḍalana gave śalavaśe miṅga{t}t·, kaṁ lanaṁ pavaḍal gave satus· riṁ sadina:,, kaṁ vadon pavadal gave, save riṁ sadina:, maṅkana: liṁ saṁ paṇḍittha
+<lb n="53r3"/> || 0 || <!-- #155 -->riṁ voṁ harabī riṁ kavula:ne, hanak-anakavula: hika:, hanake nora milu riṁṅ utaṅe kavula: vadon ika:, nora milu dr̥veniṁ ba
+<lb n="53r4"/>pa, yen tan anak-a:nak· po voṁ lanaṁ hika: lavan rabīne śaśamane voṁ menak hika:, hanakiṁ ḍaśi vnaṁṅ aṅali/li\r{i}ana sadr̥/ve\ne lanaṁ mena-
+
+<pb n="53v"/>
+<fw place="left" n="53" hand="1"><num>53</num></fw>
+<fw place="left" hand="2">, voṁṅ anəbus kavu-</fw>
+<fw place="left" hand="3">la,</fw>
+<fw place="left" hand="4">, voṁṅ aṅivat·,</fw>
+<fw place="right" n="53" hand="1-roman"><num>53</num></fw>
+<lb n="53v1"/>k·, hanahurana: hutaṁ maniḥ hanakiṁ ḍaśih ika:, maṅkana: ḍarmmane || 0 || riṁ voṁ hanəbus kavula:niṅ akavula:, vəruḥ yen kavulaniṁ voṁ, aṅhiṁ saṅkane
+<lb n="53v2"/>hanəbus· tan pavarah iṁ kaṅ hadr̥ve rovaṁ, dene sugiḥ pisis·, sakiṅ aklar dene hakeḥ rovaṅe, Aṅkara: budḍī, saṅkane vanī hanəbus· kavula-
+<lb n="53v3"/>niṁ voṁ, pisis panəbuse hika: tiba riṁ luvaṁ harane, hilaṁ siniliḥ mahakən·, kavula: kaṁ den-təbus· halapən deniṁ hadr̥ve rovaṁ pūrvvaka: || 0 ||
+<lb n="53v4"/> voṁ haṅivat· rovaṅiṅ arovaṁ, katmū riṁ havan·, riṁ paṅaṅśon·, riṁ tgal·, hakaraṇa: cidra, valatkara: paṅivatthe hika:, Akaraṇa: bañca:
+
+<pb n="54r"/>
+<fw place="left" hand="1">, kavulaniṁ voṁ la-</fw>
+<fw place="left" hand="2">gi lare</fw>
+<fw place="left" hand="3">, harabī kavulaniṁ</fw>
+<fw place="left" hand="4">voṁ,</fw>
+<lb rend="check" n="54r1"/>ṇa:, katmū dene kaṅ adr̥ve voṁ, kaṅ haṅivat ika:, patenana yogyane denira saṅ ha:mava: bhūmī, maṅkana: ṣaṣaṇa: sakiṁ ṣastra: || 0 || riṁṅ arabī kavulaniṁ⌈
+<lb rend="check" n="54r2"/>voṁ, hanaka:nakavula: hika: lavan voṁ sugiḥ, yen voṁ menaka:, hanake lavan kavula:niṁ voṁ hika: riṁ dumḍuman·, saduman·, hanak lavan rabī tmən· tluṁ duman·,
+<lb rend="check" n="54r3"/>maṅkana: ḍarmmane. yen ora hanakiṁ rabī, matī voṁ lanaṁ kaṅa:ṅalap kavula:niṁ voṁṅ ika:, rabine papaḍane kaṁ norana:kanak ika: karī, padanən ḍum-ḍu
+<lb rend="check" n="54r4"/>maniṁ balu tan paṅanakīlavan hanakiṁ kavula:niṁ voṁ hika:, yen matī balu tan hanak-anak ika:, hanakaṁ sakiṁ kavula:niṁ voṅ hika:, haṅalap· dr̥veniṁ
+
+<pb n="54v"/>
+<fw place="left" n="54" hand="1"><num>54</num></fw>
+<fw place="left" hand="2">, kavulaniṁ voṁ</fw>
+<fw place="left" hand="3">lanaṁ rare;</fw>
+<fw place="left" hand="4">, hamalaku huma-</fw>
+<fw place="left" hand="5">madal gave,</fw>
+<fw place="right" n="54" hand="1-roman"><num>54</num></fw>
+<lb rend="check" n="54v1"/>voṁ vadon baluniṁ bapa:, nora vnaṁ yen petən deniṁ kaḍaṁ varggane balu tan paṅanaki hika:, maṅkana: da:rmmane || 0 || riṁ kavula:niṁ voṁ lanaṁ vado
+<lb rend="check" n="54v2"/>n lagi rare, duruṁ biṣa: hanambut gave, den-alap den-itik-itik iṁ voṁ len·, haR̥p uripane rare lanaṁ lavan lare vadon hika:, yen tan henak ahuba:
+<lb rend="check" n="54v3"/>ya: kalavan· kaṅ adr̥ve kavula: riṁ rare hika:, kaṅ aṅitik-itik·, vnaṁ nora vehana təbusan·, haveḥ biluluk riṁ dudu celeṅe harane,
+<lb rend="check" n="54v4"/> || 0 || voṁ hamalaku pamada:l gave riṁ kavula:ne lanaṁ vadon·, tūr kavulane hika: vuvus anahurr utaṁ riṁ havake, vus marī dadḍī kavulane, ha:
+
+
+<pb n="55r"/>
+<fw place="left" hand="1">hakeḥ sana⌈</fw>
+<fw place="left" hand="2">ke hanuṅgoni</fw>
+<fw place="left" hand="3">,</fw>
+<lb rend="check" n="55r1"/>ṅhiṁ dene mūrkkane saṅkane hamalaku pavadol gave, sahaśa: hamalat·, hamaleni gave pgat harane, vnaṁ ḍəṇḍanən roṁ lakṣa: denira saṅ ga:mava: bhūmī || 0
+<lb rend="check" n="55r2"/> || riṁ voṁ hakeḥ sanake, paḍa hanuṅgonī hutaṅe voṅ atune lanaṁ vadon·, paḍa matī, karī paḍa: hakəmbulan susuratan·, hanakiṁ matī, yen a
+<lb rend="check" n="55r3"/>nuṅguha kaR̥pe sanake kabeḥ, dudu hutaṁ sakiṁ voṅ a:tuva:, padḍa: hakəmbulan pavitan utaṅ-utaṅan·, tan saḥ sakiṁ gutine, hanuhu paṅavula
+<lb rend="check" n="55r4"/>ne, mati salaḥ tuṅgal sanake riṁ panuṅgon·, kaṁ matī hikaṁ hanuhun utaṁ harane, haṅloṅana: pavitan sadum-ḍumane, yen tan matī miṅgat·
+
+<pb n="55v"/>
+<fw place="left" hand="1">, kavula lanaṁ va-</fw>
+<fw place="left" hand="2">don linəbarakə</fw> <!-- perforation of the the stringhole has caused loss of expected “kə” -->
+<fw place="left" hand="3">n utaṅe, , ka-</fw>
+<fw place="left" hand="4">vula miṅgat pisa-</fw>
+<fw place="left" hand="5">n balaka:,</fw>
+<fw place="right" n="55" hand="1-roman"><num>55</num></fw>
+<lb rend="check" n="55v1"/>salaḥ tuṅgal mariṁ paradeśa, maL̥ra saguṅiṁ hutaṅe, tan aṅloṅa pavitan·, duməniṁ sakehe sanake kaṁ karī, yen mati riṁ panuṅgonan· ha-
+<lb rend="check" n="55v2"/>ṅloṅa: riṁ ron tal pavitan·, huga: hutaṅe, sadum-ḍumaniṁ matī || 0 || riṁ kahula: lanaṁ, vadon·, linəbarakən hutaṅe deniṁ bapa:, vkasan pi⌈
+<lb rend="check" n="55v3"/>net hiṅalap deniṁ hanakiṁ haṅləbarakən·, tan ahiḍəp iṁ varaḥ-varahiṁ bapa:, ḍəṇḍanən pataṁ lakṣa: denira: saṅ ha:mava bhūmī, hanakiṁ ha:
+<lb rend="check" n="55v4"/>ṅləbarakən· kaṁ tan ahiḍəp hujare voṅ atuvane hika: || 0 || riṁ kavula: miṅgat pisan balaka:, katmū harabī voṁ tan pahutaṁ, maniha
+
+<pb n="56r"/>
+<lb rend="check" n="56r1"/>rabī voṁ menak iṁ parane miṅgat iṅ kana ; hahoma-homaḥ: katkan sugiḥ, riṁ kavula: maṅkana:, vnaṁ hanəbuṣa: havake, sapatutiṁ pisis· panəbuṣane riṁ
+<lb rend="check" n="56r2"/>gustine, tan evuhana: yen ṣḍəṁ panəbuse havake lavan hanake. yen vuvus anahurr utaṁniṁ kavula: tan kavaśa yen petən maniḥ deniṁ gusti
+<lb rend="check" n="56r3"/>, pati huripe tan kaśidḍi gaveha maniḥ tkaniṁ hanak putune buyute, hana ta: voṁ hamalat hanakiṁ kavula: vuvus hanavur utaṁ, pgat mariṁ kavula-
+<lb rend="check" n="56r4"/>ne, den-viśeṣa: den-irida:kna:, kaṅ amalat· kaḍəṇḍaha: roṁ lakṣa: denira saṅ ha:mava: bhūmī, maliṁ kavula: harane riṁ voṁ me-
+
+<pb n="56v"/>
+<fw place="left" n="56" hand="1"><num>56</num></fw>
+<fw place="left" hand="2">, kavula vado</fw>
+<fw place="left" hand="3">n miṅgat sakiṁ gusti-</fw> <!-- perforation of the the stringhole has caused loss of expected “sti” -->
+<fw place="left" hand="4">ne, , hamara</fw>
+<fw place="left" hand="5">ni kavula·,</fw>
+<fw place="right" n="56" hand="1-roman"><num>56</num></fw>
+<lb rend="check" n="56v1"/>:ṅkono || 0 || riṁ kavula: vadon miṁgat sakiṁ gustine, halaki riṁ voṁ tanpa hutaṁ, yen alakīha: voṁ menak avake, dr̥vene, vəvnaṅe
+<lb rend="check" n="56v2"/>, patəlunən deniṁ hadum·, kaṁ roṁ duman· den-peta: dene kaṅ ha:ṅalap daśīh ika:, sadumana:lapən deniṁ gustīniṁ kavula: vadon ika:, ma-
+<lb rend="check" n="56v3"/>ṅkana: hanake, hiku ḍarmmane || 0 || riṁ voṁ hamaranī kavula:ne vadon·, den-saha:śa: den-valat·, hanaṅis kavulane hika: nora haR̥-
+<lb rend="check" n="56v4"/>p·, kna dene hamaranī malayu riṁ rahina: haṅuṅsī kaḍaṁ varggane, voṅ atuvane makadḍī, hilaṅa: hutaṅiṁ kavula: vadon ika:, maka⌈
+
+<pb n="57r"/>
+<fw place="left" hand="1">kavula: tavan·,</fw>
+<lb rend="check" n="57r1"/>dośane hilaṁ ḍaśihe, tan kaḍəṇḍaha: hika: denira: saṅ ha:mava: bhūmī || riṁ voṁ hamaranī kavula: ḍaśī, yen paḍa kaR̥pe, lavan gustine, atmū, ta
+<lb rend="check" n="57r2"/>n asahura: vutaṁṅiṁ ka:vula: ḍaśī maṅkana:, pan sahutaṅane dadḍī tukone, hanakiṁ hamaranī ḍaśī tan vənaṁ hanagiha:, hutaṅiṁ kavula: hika:, vkasan ka
+<lb rend="check" n="57r3"/>vula: ḍaśī kaṁ pinaran ika: luṅha: halakī riṁ len·, dene haR̥pe hanak-anaka:, riṁ kavula: ḍaśī maṅkana:, hanavura: hutaṅe hanikəl piṁ ro,
+<lb rend="check" n="57r4"/>riṁ gusti kaṅ amaranī hika:, tūr kaṅ a:ṅalap· kaḍəṇḍaha: pataṁ lakṣa: dene gustīne kavula: hika: || 0 || riṁ kavula: tavan təbusane yen aR̥
+
+<pb n="57v"/>
+<fw place="left" n="57" hand="1"><num>57</num></fw>
+<fw place="left" hand="2">, hutaṁ paṅan·, </fw>
+<fw place="left" hand="3">, kavula vadon</fw> <!-- perforation of the the stringhole has caused loss of expected tedong -->
+<fw place="left" hand="4">⌉paR̥kanira saṁ L̥</fw>
+<fw place="left" hand="5">viḥ,</fw>
+<fw place="right" n="57" hand="1-roman"><num>57</num></fw>
+<lb rend="check" n="57v1"/>p a:sahura:, voluṁ tali patuku huripe, maṅkana: śaśaṇa:niṁ dva:para:, tiṅkahiṁ tavan· || 0 || hutaṅiṁ kavula: hahutaṁ paṅan· tan kavaśa:§
+<lb rend="check" n="57v2"/>nambut gave, sapa:{riṁ}ha riṁ satavune, iṁṅ iṅan limaṁ tavun tan biṣa riṁ gave, piṇḍaniṁ hutaṁ riṁ limaṁ tavun· holuṁ talī, panavuraniṁ hutaṅiṁ gusti || 0
+<lb rend="check" n="57v3"/> || riṁ kavula: vadon paR̥kanira: saṁ L̥viḥ, yen pinaka: rabī deniṁ voṁ jaba:, tan pamit·, sakiṁ tambuhe kaṅ a:ṅalap·, R̥gane ho
+<lb rend="check" n="57v4"/>luṅ i{yu}vu, ḍəṇḍa roṁ lakṣa:, kaluvarane doṣane, kaṅ aṅalap·, yen vəruh a:dośa patī kaṅ ha:ṅalap· || 0 || harabī ka:§
+
+<pb n="58r"/>
+<fw place="left" hand="1">, harabi kavula</fw>
+<fw place="left" hand="2">niṁ ratu, , vo</fw>
+<fw place="left" hand="3">ṅ arabi ḍaśi paR̥</fw><!-- perforation of the the stringhole has caused loss of expected ‘paR̥’ -->
+<fw place="left" hand="4">kanira saṁ prabhu,</fw>
+<lb rend="check" n="58r1"/>vulaniṁ ratu yen tan hamit·, sakiṁ tan vəruhe, voṁ vadon lagi duruṁ kaḍaL̥m, padḍa kaR̥pe kaṁ lanaṁ lavan kaṁ vadon·, saṅkane hatəmu, kaṅ a:ṅala
+<lb rend="check" n="58r2"/>p·, kaḍəṇḍaha pataṁ lakṣa:, R̥ganiṁ kavula:nira: roṁ lakṣa:, kaluvaraniṁ dośane haṅalap· || 0 || voṁṅ arabī ḍaśī paR̥kanira saṁ prabhū kaṁ vuvu§
+<lb rend="check" n="58r3"/>s mañjiṁṅ iṁ ḍaL̥m·, sakiṁ tan vruhe haṅalap·, paḍa kaR̥piṁ lanaṁ lavan vadon·, saṅkane hatmū, kaṅ a:ṅalap·, ḍəṇḍanən vo{e}luṁ lakṣa:, R̥ga
+<lb rend="check" n="58r4"/>niṁ kavula: paR̥kan·, roṁ lakṣa:,, yen sakiṁ veruhe valat·, dośa patī de saṁ prabhū, haṅlaṅkahī karaṅ hulu harane || 0 || hana
+
+<pb n="58v"/>
+<fw place="left" n="58" hand="1"><num>58</num></fw>
+<fw place="right" n="58" hand="1-roman"><num>58</num></fw>
+<lb rend="check" n="58v1"/>po kavula: paR̥kanira saṁ L̥viḥ, makadḍī paR̥kanira saṁ prabhū, vuvus katapak denira, aṅliṁ maL̥r mañjiṁ mtu gavene, kavaśa: mariṁ kaḍaṁ varggane, ma:
+<lb rend="check" n="58v2"/>riṁ bapa hibhune, hika ta: yen alapən iṁ voṁ, yen tan vəruḥha:, yen vəruha: kaṅ ha:ṅalap·, dośa patī huga || 0 || mulaniṁ dadḍi kavula: varaha:
+<lb rend="check" n="58v3"/>⌉kna maṅke,, kavula: holih iṁ hanavan·, dva:ja:hr̥ttha: harane,, riṁ kavula: duk· mtu sakiṁ humahe gustine,, gr̥hajja: ha{ja}rane,, haṅa:vu
+<lb rend="check" n="58v4"/>la: deniṁ ḍəṇḍa:, ḍəṇḍa:ḍaśa: harane,, haṅavula: deniṁ paṅane, bha:kṭaḍa:śa harane,, hiku ṭa kapat· śaśaṇane, maL̥ra riṁ gustine
+
+<pb n="59r"/>
+<fw place="left" hand="1">, riṁ voṁ hamate</fw>
+<fw place="left" hand="2">nī voṁ vadon·</fw>
+<fw place="left" hand="3">tanpa dośa[SH]</fw><!-- perforation of the the stringhole has caused loss of expected śa -->
+<fw place="left" hand="4">, voṁ vadon ha{va⌈}/do\</fw>
+<fw place="left" hand="5">l havake, ,voṅ a</fw>
+<fw place="left" hand="6">dol rabine,</fw>
+<lb rend="check" n="59r1"/>haṅulahakna saUlahiṁ kavula:, hanake kabeḥ ta: hulunakna Anak vəṣi || 0 || riṁ voṁ hamatenī voṁ vadon tanpa dośa:, hutaṅe muliḥ hanikəl·
+<lb rend="check" n="59r2"/>piṁ ro, tūr kaṅ amatenī haveha: patuku sava: pataṁ talī || 0 || riṁ voṁ vadon hadol havake, tan den-ḍol dene lakine, den-kavulakən de
+<lb rend="check" n="59r3"/>ne kaṁ hatuku, voṁ kaṅ atuku hiku, kaḍəṇḍaha: pataṁ lakṣa:, voṁ vadon davutən· Agave maliṁ strī harane || 0 || riṁ voṁṅ adol· rabi⌈
+<lb rend="check" n="59r4"/>ne, vkasan pinaka rabī deniṁ hatuku, tan dośa:ha: kaṅ atuku || 0 || riṁ kavula: lanaṁ vadon·, vuvus hasahur utaṁ riṁ gusti, den-pala⌈
+
+<pb n="59v"/>
+<fw place="left" n="59" hand="1"><num>59</num></fw>
+<fw place="left" hand="2">, riṁ voṁ hanulisa-</fw>
+<fw place="left" hand="3">kən haraniṁ voṁ,[SH]</fw><!-- perforation of the the stringhole has caused loss of expected tedong -->
+<fw place="right" n="59" hand="1-roman"><num>59</num></fw>
+<lb rend="check" n="59v1"/>konī vilaṅ gave denvalat·dene gustine lavan·, kaṅ amalaku vilaṅ gave, kaḍəṇḍaha: pataṁ lakṣa denira saṅ hamava bhūmī, tūr holi⌈
+<lb rend="check" n="59v2"/>he hamalaku vilaṅ gave mulihanikəl·, maliṁ gave harane voṁ maṅkana: || 0 || riṁ voṁ hanulisakən haraniṁ voṁ, riṁ dodotiṁ voṁ matī, riṁ
+<lb rend="check" n="59v3"/>laruṅane kunəṁ, maniḥ dodot a:rupa hanak-anakan·, yen hanak a:nakan gəL̥puṁ, saha:rane dentulisakən·, denpəṇḍəm iṁ sma:, de§
+<lb rend="check" n="59v4"/>n gənaha:kən riṁ ruhuriṁ kakayon·, riṁ L̥maḥ saṅar, riṁ catuspaṭa:, yen hana: voṁ maṅkana:, Agləḥ hanəluḥ harane,, 0 ,, maniḥ riṁ voṁ
+
+<pb n="60r"/>
+<lb rend="check" n="60r1"/>hanulisakən haraniṁ voṁ, riṁ baluṁ, riṁ kaphala:, den-voriṁ haptaṁ, lavan gətiḥ, lavan trika:tuka:, den-pəṇḍəm i tuban·, riṁ pamaṅhahan·, hiku ha{iə gl}gləḥ hanluḥ hara-
+<lb rend="check" n="60r2"/>ne, riṁ voṁ yen ahulaḥ moṅkono, patenana de sira: saṅ ha:mava: bhūmī, yen sacihna savyaktī, tka:niṁ hanak putune, bapa Ibhune, sakehe kabeḥ hayva
+<lb rend="check" n="60r3"/>na kerī, ri loka:, done rahayuhaniṁ bhūvaṇa:, kunəṁ sarvva dr̥vene kabeḥ halapən denira: saṅ ha:mava bhūmī, kaṁ hana riṁ gnahe,, yen hana riṁ deśa hadoḥ riṁ de
+<lb rend="check" n="60r4"/>śa len·, hayo pinet denira, hanak putuniṅ anəluḥ hagləḥ, patenana huga: de saṁ prabhū, hapan hanut śapa gavene bapa Ibhune, kunəṁ dr̥vene kabe
+<pb n="60v"/>
+<fw place="left" n="60" hand="1"><num>60</num></fw>
+<fw place="left" hand="2">, voṁ haṅulaḥ-</fw>
+<fw place="left" hand="3">hakən gave ? [SH]</fw>
+<fw place="right" n="60" hand="1-roman"><num>60</num></fw>
+<lb n="60v1"/>ḥ, kaṁ voṁ hagleh ika:, kaṁ haneṁ paradeśa, halapən denira saṁ prabhū, saṁ viśeṣa
+riṁ deśa: len ika:, həṅgone hatitip a:mtokna saguṅe titipane || 
+<lb n="60v2"/> 0 || yen hana: voṁṅ aṅulaḥhaken gave, savos sakiṁ tiṅkah iṁ hagləḥ, kasukahane havake done, saṅkane satrune marī hasṅit iṁ havake, habalik havkasana haśi-
+<lb n="60v3" rend="check"/>ḥ, saṅkaniṁ voṁ hakeḥ, makadḍi śiha:niṁ mitra, mitra anuraga: harane, paran ta hulahe, hanulisa:kən haraniṁ voṁ riṁ tambaga:, denpajokən iṁ kayu, riṁ§
+<lb n="60v4" rend="check"/>kabuyutan·, riṁ saraṅan·, hanulisa:kən haraniṁ voṁ riṁ kayu, hanampəki vija: kuniṁ, riṁ voṁ maṅkana: yen karuvan·, ḍəṇḍa voluṁ tali denira sa- 
+
+<pb n="61r"/>
+<fw place="left" hand="1">, haveḥ pinaṅa-</fw>
+<fw place="left" hand="2">n·, , voṁ k(ḍ)i</fw><!--  perforation of the </hi><hi rend="color(1F1F1F)">the stringhole has caused loss of parts of pasangan ḍ</hi><hi>  -->
+<fw place="left" hand="3">vkasan harabī, ,⌈-</fw>
+<fw place="left" hand="4">voṁ kḍi riṁ maliṁ,</fw>
+<lb n="61r1" rend="check"/>ṅ ha:mava bhūmī || 0 || voṅ aveḥ pinaṅan·, lavan aveḥh inum-inuman·, mati kaṁ den-ve{kaṁ}hi, dene kaṁ den-paṅan‚ den-inum ika:, kaṅ avaḥ
+<lb n="61r2" rend="check"/>ḍəṇḍa: pataṁ lakṣa: denira saṁ prabhū, Avuru po kaṁ vinehan·, matī tiba riṁ hapī, tiba riṁ bañu, matī deniṁ lalaṇḍəp· riṁ halas·, riṁ L̥buḥ, riṁ ḍalan-
+<lb n="61r3" rend="check"/>·, yen maṅkana: tan vicaranən· de saṅ ha:mava bhūmī || 0 || riṁ voṁ kḍi, vkasan harabī paḍa kaR̥pe lavan voṁ vadon a:lakī rabī, patenana de saṁ prabhū, praka:-
+<lb n="61r4" rend="check"/>ṣakna denira || 0 || voṁ kḍi riṁ maliṁ, riṁ hatatayī, yen sacihna sayaktī, patenana huga: denira saṅ ha:dr̥ve bhūmī, yen ana haṅavara: hanuṅku-
+<pb n="61v"/>
+<fw place="left" n="61" hand="1"><num>61</num></fw>
+<fw place="left" hand="2">, ri voṁ handali</fw>
+<fw place="left" hand="3">ḥ hanəluḥ,, [SH]</fw><!--  perforation of the </hi><hi rend="color(1F1F1F)">the stringhole has caused loss of expected ha</hi><hi>  -->
+<fw place="left" hand="4">ndaliḥ hatatayi,</fw>
+<fw place="right" n="61" hand="1-roman"><num>61</num></fw>
+<lb n="61v1"/>lakən ikaṁ kinon hamanana:, patīhaniṁ kḍī, maliṁ hatatayi, ḍəṇḍanen· pataṁ lakṣa:, de saṅ ha:mava bhūmī, yen vuvus dineṇḍa: kaṅ aṅavara: riṁṅ amateni
+<lb n="61v2"/>kḍī harabī, lavan riṁ hatatayī, patenana: denira || 0 || riṁ voṁ handalih a{kə}nəluḥ, riṁ voṁ tan panəluḥ, haṅever-everakən iṁ pakehanən iṁ voṁ,
+<lb n="61v3"/>tūr tan sacihna sayaktī, ḍəṇḍaniṁ havr̥ttha tur nora: hatut·, hamataṁ lakṣa riṁ voṁ satuṅgal-satuṅgal·, denira: saṅ ha:mava: bhūmī || 0 || riṁ voṁ handaliḥ 
+<lb n="61v4"/>hatatayī riṁ voṁ nora hatatayī, riṁ voṁ handaliḥ maliṁ riṁ nora maliṁ, liñok pandalihe, ḍəṇḍanen· roṁ lakṣa: denira saṅ ha:mava bhūmī, hanḍuvī
+<pb n="62r"/>
+<fw place="left" hand="1">, voṁ handaliḥ</fw>
+<fw place="left" hand="2">haṅaloni rabi</fw>
+<fw place="left" hand="3">niṁ voṁ, voṁ [SH]</fw><!--  perforation of the </hi><hi rend="color(1F1F1F)">the stringhole has caused loss of expected L̥</hi><hi>  -->
+<fw place="left" hand="4">viḥ pinaten de</fw>
+<fw place="left" hand="5">riṁ voṁ, , voṁṅ ata-</fw>
+<fw place="left" hand="6">tayi</fw>
+<lb n="62r1"/>latək harane || 0 || riṁ voṁ haṇḍalih a:ṅalonī rabīniṁ voṁ, yen liñok paṇḍalihe, ḍəṇḍa salakṣa: denira saṅ ha:mava bhūmī, hanḍuvisantən harane 
+<lb n="62r2"/> || 0 || riṁ voṁ L̥viḥ pinaten deniṁ vo ḍinaliḥh anəluḥ, tūr liñok pandalihe, hanuli hañjaraḥ pasusuratan·, hapan ana hutaṅe, haR̥p tan panahu-
+<lb n="62r3"/>ra: hutaṅe, saṅkane haṅaraṇa: handalih anəluḥ, hiku voṅ amaliṁ pahutaṅan harane,  ḍəṇḍanən· voluṁ-voluṁ lakṣa denira saṅ ha:mava bhūmī, tur ha-
+<lb n="62r4"/>navura hutaṅe mulihanikəl·, ḍəṇḍane hamataṁ lakṣa riṁ voṁ satuṅgal{sa}·-tuṅgal·,<!-- satuṅgal-satuṅgal· corrected to satuṅgal·-tuṅgal· --> || 0 || riṁ voṁ hatatayī, lavan voṁ habicara:, maniḥ maliṁ, 
+<pb n="62v"/>
+<fw place="left" n="62" hand="1"><num>62</num></fw>
+<fw place="left" hand="2">, riṁ voṁṅ avaraḥ</fw>
+<fw place="left" hand="3">riṁ saṁ L̥viḥ,</fw>
+<fw place="right" n="62" hand="1-latin"><num>62</num></fw>
+<lb n="62v1"/> yen paḍa sacihna sayaktī, patenana denira saṅ ha:mava bhūmī, den tan paśeṣa:, tka:niṁ hanak-putune, praka:śakna riṁ loka:, hayo hinurip denira 
+<lb n="62v2"/> saṅ ha:mava: bhūmī, yen malayu luput deniṁ kaṁ kinon amatenana, tan mənəṅa saṅ ha:mava bhūmī, yen aṅuṅsi riṁ deśa: paradeśa: denira:, katəmu pate-
+<lb n="62v3"/>nana huga:, buron harane riṁ voṁ maṅkana: || 0 || <!-- #182 -->riṁ voṁ havaraḥ riṁ saṁ L̥viḥ, yen ana siṁ pelag·, yen dr̥ve, vəvnaṁ, yen ana: vovohan·, ra:-
+<lb n="62v4"/>tna:dḍī, voṁ vadon· L̥viḥ, vkasan tan təmən·, tan karuhvan· L̥he, hiku voṁ haveḥ raga tan peṣī harane, riṁ voṁ maṅkana: havaraḥ tan tuhu, ḍə- 
+<pb n="63r"/>
+<lb n="63r1"/>ṇḍa: salaksa denira saṁ L̥viḥ,, //
+<pb n="63v"/>
+<fw place="left" n="63" hand="1"><num>63</num></fw>
+<fw place="right" n="63" hand="1-latin"><num>63</num></fw>
+<!-- end of ms. BL → -->
+</ab>
+</div>
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+		        <p><!-- explain the process of your edition here --></p>
+		        <listBibl>
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>

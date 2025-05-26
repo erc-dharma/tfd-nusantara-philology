@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="editorial">The lempiran L. 876 at Perpusnas, Part 2</title>
+            <!--change the title of the edition starting, if possible, with the title of your text-->
+            <!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
+            <!--<title type="alt"></title>-->
+            <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+            <!--<title type="original" xml:lang="...-Latn"></title>-->
+            <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+            <!--<author></author>-->
+            <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+            <respStmt>
+                <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+               <resp>author of digital edition</resp>
+               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+               <persName ref="part:jodo"><!-- update the id -->
+                  <forename>John</forename>
+                  <!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                  <surname>Doe</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>
+               <ref target="{URI for DHARMA website}">DHARMA</ref>
+            </authority>
+            <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+            <idno type="filename">Fill in the filename with the xml extension</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+               </licence>
+            </availability>
+            <date from="2019" to="2025">2019-2025</date>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+                <!-- One witness for each manuscript. Update the content -->
+               <witness xml:id="fakeID">
+                    <!-- Give your witness an unique identifier -->
+                  <abbr type="siglum"/>
+                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>Leiden</settlement>
+                        <institution>University Library (UB)</institution>
+                        <repository>Lontar</repository>
+                        <idno>Or. 23732</idno>
+                     </msIdentifier>
+                     <msContents>
+                            <!-- the msContents isn't mandatory -->
+                        <msItem>
+                           <author>Śāntarakṣita</author>
+                           <title>Vipañcitārthā</title>
+                           <!-- You can also add a colophon if needed -->
+                           <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                           <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
+                        </msItem>
+                     </msContents>
+                     <physDesc>
+                        <objectDesc>
+                           <p>This manuscript is a lontar (ləmpiran), 51 cm long, extending over 98 folios with text in Old Javanese language and Balinese script. It was described by Juynboll (1911: 326, MDCCCXXXVIII, cod. 876). It is preserved at Perpustakaan Nasional Republik Indonesia, listed by Behrend (1998: 370, 71 L 876). This manuscript was used by Bosch (1929) for editing the Kalpabuddha. It also contains other Buddhist texts. However, the manuscript contains two separately numbered parts. It is only one of them that contains Buddhist texts, plus material that seems to be Śaiva, while the first part contains only Śaiva material with no connection to Buddhism.</p>
+                        </objectDesc>
+                        <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                <!-- Create a handNote for each hand -->
+                           <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                              <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi>
+                              </abbr>
+                              <!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                              <p>main hand of the manuscript, black ink, Sundanese script</p>
+                              <!-- provide a description of the hand -->
+                           </handNote>
+                        </handDesc>
+                     </physDesc>
+                     <history>
+                            <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                     </history>
+                  </msDesc>
+               </witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+            <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+         </projectDesc>
+         <editorialDecl>
+            <p/>
+            <correction>
+               <p/>
+            </correction>
+            <normalization>
+               <p/>
+            </normalization>
+            <interpretation>
+               <p/>
+            </interpretation>
+         </editorialDecl>
+         <samplingDecl>
+            <p/>
+         </samplingDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="part:axja" when="2021-05-25" status="draft">transformation in TEI</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="edition" xml:lang="und">
+            <div>
+               <head>Part 2 (a). Buddhist Texts</head>
+               <!-- photo SAS_2016-2017 -->
+               <ab>
+<!--<p>[fol01r] blank </p>
+--><!-- photo SAS_2014-2015 -->
+                  <fw place="left" n="1">
+                     <num>1</num>
+                  </fw>
+                  <lb n="01v1"/> || 0 || namo budḍaya || 0 || hana ya haji sayogaḍara ṅaranya, tiga:kṣaranya, tiga:rttha:nya, lvirnya, Advaya, Iti maṅkana lvirni[SH]kaṅ aji, Advaya ṅaranya, mvaṁ hadvaya:jña:na, Am̐ Aḥ, Ikaṁ vruḥ tan pamika:lpa riṅ ana taya, mvaṁ ri slaniṅ ana taya, kevala humindəṁ nira:ka:-
+<lb n="01v2"/> ra, hana liṅanteri ya, taha, taṁ laliṅanteri ya, taha, ri slaniṅ ana taya liṅanteri ya, taha, mana:meya liṅanteri ya, taha, taha li[SH]ṅanteri ya, taha, ya kaliṅaniṁ manaṅguḥ Ayva juga saṅśaya, Apa pva: liṅanteri ya, Advaya:jña:na, maṅkana liṅa:nta, Ikaṁ Am̐ Aḥ, Advaya:jña:-
+<lb n="01v3"/> na ṅaranya, Am̐, pasukniṁ ba:yu, Am̐ śabdanya, lumra:ḥ riṁ śarīra, ṅūniveḥ riṁ nava:dva:ra, sūryyarūpa: hikaṁ śarīra, kahibəka:n· deniṁ§ [SH] smr̥tisūryya, śaranika: || Advaya ṅaranya, Aḥ, vijilniṁ ba:yu sakiṁ śarīra, Aḥ śabdanya, mukṣa riṁ śarīra, candra rūpa: hikaṁ śarīra, ri mukṣaniṁ ba:yu
+<lb n="01v4"/> riṁ śarīra, somya:lilaṁ hahniṁ Ikaṁ śarīra vkasaṇ santacandra ṅaranika:, santasmr̥ti ṅaranya vaneḥ, ri hananiṁ smr̥tisūryya santaca[SH]ndra, dadi taṅ a:dva:yajña:na, patəmuniṅ a:dva:ya, mvaṅ a:dva:yajña:na, yata:dadya: tan· divarūpa:, saṁ hyaṁ divarūpa sira ta bhaṭa:ra hyaṁ bu§-
+<!-- photo SAS_2016-2017 -->
+<lb n="02r1"/> dḍa ṅaranira, divarūpa ṅaranya, Ikaṁ katon apaḍaṁ rahina sada:ka:la, ri sḍaṁ ta mayoga, Ikaṅ a:dva:yajña:na, ya sinaṅguḥ bhara:li [SH] prajña:paramita ṅaranira, pinakaIbu de bhaṭa:ra hyaṁ budḍa, saṁ hyaṁ Adva:ya sira svami de bhara:li prajña:para:mita, bapa sira de bhaṭa:ra hyaṁ budḍa
+<lb n="02r2"/>, Apan· patmuniṅ a:dva:ya, mvaṁṅ a:dva:yajña:na, yatika: mijilakən divarūpa:, saṁkṣepaniṁ Am̐ Aḥ, mvaṅ a:dva:yajña:na, y arthaniṅ a:dva:yaśa:[SH]stra, Ajinta Artha:niṅ aji maṅkana, ya ta hudin·R̥tkna gsəṅana:nta ri sada:byasa, saḍa:santa: maṅgihakna kahyaṁbudḍan· || mapa ta deyaniṁ lumkasa, maka§-
+<lb n="02r3"/> saḍa:na saṁ hyaṁ Adva:ya, han kapaṅgiha saṁ hyaṁ dīvarūpa:, nihan ta deyanta, Ikaṁ ba:yu, Am̐, liṁnya, ya ta hispiṁ tutuk·, Andəla:kniṁ guruṁ gu[SH]ruṅan·, hayva ta vava R̥ṅə: ri pasuk· vtuniṁ ba:yu, sakeṅ hiruṁ Ika:ṅ īna:ndəla:kniṁ guruṁ guruṅan·, ya ta: lumra:h umibki śarīranta kabeḥ, matma:ḥ sūryya
+<lb n="02r4"/> rūpa: ra:ktavarṇna || muvaḥ dadya:kanta ṅ ba:yu, Aḥ, liṁnya, Andəlakniṁ guruṁ guruṅan·, mukṣa riṁ śarīra, Atmaḥ ta santacandra, hakuniṁ hapa§[SH]ḍaṁ katon rahina sada:, somya: lilaṁ sa:praṇaya:ma ṅaranika:, nityasa kita maṅkana, gsəṅ hilaṁ sarvva:kleśanta, pa:panta, sor phalaniṅ a:§-
+<!-- photo SAS_2014-2015 -->
+<fw place="left" n="2">
+                     <num>2</num>
+                  </fw>
+                  <lb n="02v1"/> brata, denika:byasaniṁ smr̥ti sūryyasantacandra:, kapaṅguḥ pva: kabha:vaniṁ smr̥ti sūryyasantacandra:, Andəla:kən taṁ budḍanusmaraṇa, budḍa:nu§[SH]smaraṇa ṅaranya, saṁ hyaṁ Adva:yajña:na, ṅka: sa:kṣat· kr̥taniṁ tan hananiṁ hiḍəp·, mvaṁ maṅhiḍəp· kramanya, Ikaṁ ba:yu tan masuk· vtu ri tutuk· ri hi-
+<lb n="02v2"/> ruṁ kunaṁ, mukṣa mvaṁ hikaṁ śarīra, deniṁ kaśaktin saṁ hyaṁ Adva:yajña:na, ri vkasan· hava:lilaṁ hahniṁ, havasikiṁ śarīra mvaṁ jña:na, tan aIḍa§[SH]p· tan iniḍap·, kevala:lilaṅ ahniṁ nira:varaṇa, Ikaṁ śarīra, nira:kara, Apaḍaṁ rahina sada:ka:la, śarīranta, kadi miñak inandəlan deniṁ
+<lb n="02v3"/> miñak·, sira ta sinaṅguḥ saṁ hyaṁ diva:rūpa: ṅaranira, pinaka:vak bhaṭa:ra hyaṁ budḍa, riṁ nira:ka:ra, sira ta sinaṅguḥ saṁ hyaṁ prama:ṇa, sira hisi§[SH]niṁ vindu vijilniṁ śūnya, sira ta sinaṅguḥ saṁ hyaṁ Atma: ṅaranira, liṁ saṁ vadi vaneḥ, sira sinaṅguḥ saṁ hyaṁ vaṅśil· ṅaranira, pinakahuripta, Evə:ḥ kapa§-
+<lb n="02v4"/> ṅgihanira de saṁ viku, yapvanitya sakaton sira ri paṅipyan·, denta pra:pta vr̥dḍi, kinasihaniṁ ra:t· kita, mvaṁ deva bhūta masih i[SH]ri kita, makapa:la niroga nirūpadrava:, sidḍamantravak·bajra, kunaṁ yan katon sira denta, sakahaR̥pta sidḍa tumona ri sira, dūrada:rśśa-
+<!-- photo SAS_2012-2013 -->
+<lb n="03r1"/>
+                  <seg rend="check">ṇa</seg> kita, vnaṁ humratyakṣakna vastu ri dūradeśa, mvaṁ vastu kavyavahitan·, sūkṣmadarśśaṇa, vnaṁ humratyakṣa<seg rend="check">ṇan piśśaca:</seg>dḍi, mvaṁ ṅatīta:na:gata, § [SH] maṅka:na phalanira katon· makaka:raṇa Icca yoganta, kavnaṁ pva kita makavaka ri sira, makanimitta ka:vakaniṁ yoganta, yatika sinaṅguḥ kumavakaka-
+<lb n="03r2"/> n ka:ṣṭeśvaryyan·, suka ṅaranya mamukti phalaniṁ yogabyaṣa, ka:ṣṭeśvaryyasuka ṅaranya || Anima, lagima, pra:pti, praka:mya, mahima:tattha, I[SH]śvaratva, vasitva, ka:mavasayitva || Anima, ṅa, vnaṅ kadadina:lit·, saṅkeṅ alit·, Agə:ṁ saṅkeṅ agə:ṁ ,, lagima, vnaṁ meṅgal· saparananta, paR̥ṁ kala:va§-
+<lb n="03r3"/> n kahyunta, mvaṁ riṁ deśa saparana:nta ,, pra:pti, ṅa, kavasa:siṁ vastu dūrasūkṣma sakahaR̥pta, makaka:raṇanta pr̥ka:mya ṅaranya, vnaṁ mamūktya sarvva suka [SH], muṅgva riṁ ratu riṁ sarvvajanma:, vnaṁ sumurupa riṁ mr̥ga pakṣi pa:śu miṇa, sarppa || mahimatatha:, ṅa, vnaṁ humuṅgva riṅ a:rcca, pratima:, pṭa:, caka:li, sada:manci, vnaṁ pinūja-
+<lb n="03r4"/> : riṁ ra:t kabeḥ || Iśvaratva, ṅa, vnaṁ kadadin· L̥viḥ saṅke L̥viḥ, sidḍi saṅke sidḍi, vnaṁ mamiṇḍa riṁ moha harūpa: varṇna, kr̥mvaṁ guṇa vijña:na || [SH] vasitva, ṅa, vnaṁ maṅalahakən· ja:ramaraṇa:di, tuva ti, vnaṁ marūpa:nvam·, vnaṁ marūpa:tuhva: || ka:mava:śa hita:, ṅa, kadadin· vnaṁ tka: sakakahyun-
+<!-- photo SAS_2010-2011 -->
+<fw place="left" n="3">
+                     <num>3</num>
+                  </fw>
+                  <lb n="03v1"/> · hira, yateka ka:ṣṭaiśvaryyasuka ṅaranya, phala: saṁyogajña:na, maṅka:na phala saṁ hyaṁ divarūpa, pinakavakta, kunang yan kavasa sira, pinaka[SH]:vakanta sada:kala, tan makaka:raṇa yoga, yatika sinaṅguḥ moktaśava ṅaranya, vnaṁ maṅlayaṁ riṁ śūnya, makasvabha:va niraka:ra, sira ta sinaṅguḥ si-
+<lb n="03v2"/> dḍayogiśvara ṅaranira, luput· saṅke bha:vacakra, tan paṁjanma sira riṁ triloka, kevala: ri sukavatiḍatur siran pamukti, ndaḥ maṅkana phala saṁ § [SH] hyaṅ a:dva:ya, pinakaśaraṇa saṁ viku, mahāyada:dḍi, saṁ matakitaki kabodḍisattvan·,  phalaniṅ a:ji hadva:ya Ika:, Ikaṁ tiga:kṣaranya, tiga:rttha:-
+<lb n="03v3"/> nya, Ayva ta kita tan prayatna ri varaḥ mami, kita jinavaṅśa, mvaṁ kulasa:ntana mami, maturu pva kita ruməgpa maṅka:na, yeka sinaṅguḥ yogani[SH]dra: ṅaranya, haturu tan paṅhipi, Evuḥ kapaṅguhanira de saṁ viku || nihan ta muvaḥ pavaraḥha mami ri kita, saḍa:naniṅ a:gagana:cara, Ajala:ntara, 
+<lb n="03v4"/> kunaṁ, Ikaṁ śarīra hi jro hi yava:, stupa: prasa:da: kunaṁ ta ṅaranya, Ikaṅ a:kṣara, namaḥ, siḍaṃ, A Ā, I I, U Ū, R̥ R̥, L̥ L̥̄, E Ai [SH], O Au, Am̐ Aḥ || nihan ta lvirny artthanya, namaḥ, ṅa, kayaśudḍa ,, siḍaṃ, ṅa, hniṁ suka || A A, ṅa, janma suka: ,, I I, ṅa, varṇnasa:teja ,, U U:, ṅa, rūpa:-
+<!-- photo SAS_2012-2013 -->
+<lb n="04r1"/> paripūrṇna ,, R̥ R̥, ṅa, mata mula:t· ,, L̥ L̥̄, ṅa, taliṅan maṅR̥ṅə: ,, E Ai, ṅa, Iruṁ maṅambuṁ ,, O Au, ṅa, payūpa:sta ,, Am̐ Aḥ, ṅa, jñānasūyyasantaca§[SH]ndra:, yatika pinaka:jña:na bhaṭa:ra hyaṁ budḍa ṅaranira, ri śarīranta huṅgvanira || na, ṅa, tahulan·, maḥ, ṅa, ruḍīra, śi, ṅa, dagiṁ, ḍī, ṅa, kulit· || A, ṅa, jñā-
+<lb n="04r2"/> na tṅə:n· || Ā, ṅa, lranya kiva || I, ṅa, varṇna ,, I, ṅa, lranya ,, U, ṅa, rūpa: || Ū, ṅa, lranya ,, R̥, ṅa, lranya || L̥, ṅa, taliṅan· || L̥̄, [SH] ṅa, lranya || E, ṅa, lyaṁ niṅ iruṁ || Ai, ṅa, lranya || O, ṅa, pa:yūpasta || Au, ṅa, lranya || Am̐, ṅa, sūryya || Aḥ, ṅa, santacandra: || 0 || ka ka ga gha ṅa, ca ca ja jha ña, §
+<lb n="04r3"/> ṅa, mata mvaṁ tinon· || ṭa ṭa ḍa ḍa ṇa, ṅa, taliṅa mvaṁ R̥ṅə: || ta tha da ḍa na, ṅa, Iruṁ mvaṁ ṅambuṁ || pa pha ba bha: ma, ṅa, pa:yūpa:sta || ya ra la va, ṅa, bhūmi || śa ṣa, [SH] suku kaliḥ || sa ha:, ṅa, taṅan ka:liḥ || 0 || ka ka ga gha ṅa, ṅa, pa pha ba bha: ma, ṅa, ka:maḍatu bha:gajala || ba na, ṅa, təL̥knya || ta tha: da ḍa, ya ra la va:, ṅa
+<lb n="04r4"/>, rūpyaḍa:tu || ka ka ga gha, ca ca ja jha, ṅa, Ayarūpyaḍatu, na, ṅa, təL̥knya || prayantanijña:na || ka, ṅa, Istrī || sa, ṅa, puruṣa || ma, ṅa, [SH] Usu[SH]s· na:gəṁ L̥kə:r· || (ha), ṅa, rasukniṅ a:dva:ya || Ikaṁ Akṣara, I I, kveḥnya, Adva:yatma:ka Ika: kabeḥ, Arok la:van· kleśa, Avlu rūpanya: ṅkeṁ śa-
+<!-- photo SAS_2010-2011 -->
+<fw place="left" n="4">
+                     <num>4?</num>
+                  </fw>
+                  <lb n="04v1"/> rīra, stupa hi heṁniṁ prasada, I jro kunaṁ, ratəṇḍasnikaṁ stupa prasada: śarīra, ṅka: ta kahanan· bhaṭa:ra hyaṁ budḍa, masamahitarūpa:nira ṅkana ||[SH] dadi taṁ sūryyaśarīra sumaput·, śarīranta, matanta kalih adītya saha teja, taliṅanta kalih adītya saha teja, hatinta, pusuḥ pusuḥta, limpanta, pa-
+<lb n="04v2"/> ruparunta:, Ususta, tkeṅ a:mprūnta, haditya saha: teja, yatika: pva śarīranta kabeḥ, gsəṁ ta śarīra havu, deniṁ sūryyaśarīra humibkiṁ yy a§[SH]vakta kabeḥ, ṅūniveḥ sarvva: kleśanta, pa:panta paḍa gsəṁ mukṣa tan paśeṣa, deniṁ kaśaktiniṁ sūryyajñāna sahanaṁ śarīra, la:mbenta I sor i ruhur
+<lb n="04v3"/> patmoknanta, handəlakna tuṁtuṁniṅ untunta hi sor i ruhur·, sarambut deyanta, Isəpta sakeṁ tutuk·, piṁsorakna tkeṁ pusər·, piṇḍuhurakna mu[SH]vah ikaṁ ba:yu, Umnəṅa tan polaha, Ikaṁ ba:yu sūkṣma:lit· tan katṅə:ra piṁsor piṇḍuhurnya, samaṅkana taṁ ba:yu ra:kta dadi mintabha:tmaka: || haditya pa-
+<lb n="04v4"/> ripūrṇa pva masuk· ri śarīra:nta, ri tlasnika:, dadi ta:ṁ jña:na halilaṅ ahniṅ a:mayamaya haho məL̥tukiṅ a:kaśa vnaṁ kumambaṅa hiṁ §[SH]vvai, tan kuməL̥ma, Ika: tahudiñjuga pavaraḥ mami hiri kita, marapvan· kapaṅguḥ rasani varaḥ parahasya Ika vuvus mami || nihan ta pavaraha mami ri kita 
+<!-- photo SAS_2008-2009 -->
+<lb n="05r1"/> sathananta ri kaparama:rthan·, maṅilaṅakna duḥkaniṁ para, maniṁkna sukaniṁ para, mvaṁ sidḍaniṁ saprayojña:nanta, kramanya, Iṅətiṅət· śarīra§[SH]nta, An a:ṣṭada:la vvalu lavə:nya, padmarūpa:, lvirnya, mata, ṅa, taliṅa, ṅa, Iruṁ, ṅa, tutuk·, ba, payūpasta, ba, nahan pinakalavə:lavə:nya vvalu, ya
+<lb n="05r2"/> ta hinandəlan· bajrajña:na, ṅa, ṅa, Adva:yasaḍana, Ikaṁ la:mbe hi sor i ruhur·, mvaṅ ilat·, ya ta bajrarūpa:, makavaraṁ§[SH]ka: tuṁtuṁniṁ jīva, makaśucika lambe hi sor i ruhur·, Ika ba:jra madəgiṁ śarīra, padmarūpa saṅkeṁ tuṁtuṁniṅ ilat· miṁsor taṁ A ka:ra, mandəl i soriṁ padma
+<lb n="05r3"/>, Ikaṅ ha: kara mandəl i soriṁ padma, ya ta tmaḥ sūryya dumilaḥnikaṁ sūryya, L̥bur arok deni taṁ Aḥ ka:ra, lumpasakən· L̥bur ikaṁ kabeḥ ,[SH] mukṣa L̥bur i paroknika:, mvaṅ īkaṁ A ka:ra, tlasnika dadi taṁ maṇik· nirmma:laka:ra, ya ta maṅanusmaraṇanta hirikaṁ ra:t kabeḥ, yan hana vvaṁ prihatin hana
+<lb n="05r4"/> laranya, katuturi tekaṁ ma:ṇik· jña:na:tmaka, kadi lvirniṁ cintamaṇi yan kavaśa denta, mambəka hikaṁ ma:ṇik· jña:na:tmaka, sidḍa§[SH] saprayojña:nanta, Apan· ya Ika: sinaṅgaḥ saṁ hyaṁ ma:ṇik a:ṣṭagiṇa ṅaranya, vnaṁ paṅhilaṁ duḥka, maṅasthītya suka, manidḍakna saprayojña:nanta || hana
+<!-- photo SAS_2006-2007 -->
+<fw place="left" n="5">
+                     <num>5</num>
+                  </fw>
+                  <lb n="05v1"/> ta muvaḥ pavaraha mami hiri kita, nimitaniṁ katkana sidḍa mantra vak· bajra, mandya savuvusta, hana ya sapta sama:ḍi ṅaranya, yatika byaṣananta [SH] sa:ri sa:ri, kramanya, (pgəṅ i)kaṁ ba:yu saprasa:śwa, Umnəṅa:mbəkan· tatan vavaR̥ṅəḥ riṅ hana taya, jambala:samaḍi haranika:, pūrvvasama:ḍi Ika: || huvusnika:-
+<lb n="05v2"/> mgəṁ jakən taṁ ba:yunta, hayva krakaśa vtunya, dadi taṅ a:mbək alilaṁ kadi manahiṁ manuk· vahu tətəs· riṅ antiga, vruḥ ri viśudḍani kaya va§[SH]k· cita, Alilaṁ nirmmala, Ikaṅ a:mbək· maṅkana, vagiśvarasama:ḍi ṅaranya || katon pvekaṁ sarvvasatva kasyasiḥ, deniṁ ra:ga:dḍi, dadi taṅ a:mbək u-
+<lb n="05v3"/> miṅkin a:yvaniṁ  sarbba:satva, masiḥ tan pasaṅkan· upaka:ra, Ikaṅ a:mbək· maṅkana, ya: lokaiśvara sama:ḍi ṅaranika: || dadi taṅ a:mbək maka:[SH]vak· bajrarodra, Umilaṅakəniṁ kasabba:duṣṭacitta, kumiṅkin a:yvaniṁ ra:t kabeḥ, Ikaṅ a:mbək· maṅkana, bajrasatva sama:ḍi ṅaranika: || dadi taṁ mana-
+<lb n="05v4"/> h alilaṁ, Animūrkaniṁ nirbbaṇa, kadi sūryya paripūrṇna, Alilaṅ a:hniṅ a:ho niravaraṇa, Avah apaḍaṁ, rahina sadḍaka:la, Ikaṅ a:mbə[SH]k· maṅkana, kumaranibbhaṇa cintama:ṇi ṅaranika: || Ika ta sapta sama:ḍi gava:yakən·, sa:risa:ri, makaphala sidḍimantra vak· bajra §
+<!-- photo SAS_2008-2009 -->
+<lb n="06r1"/> kita || nihan ta muvaḥ pavaraha: mami hiri kita, saḍananta:maṅgihakna kasidḍan·, vnaṁ maṅalihakna lvaḥ, prasadḍa, tambak·, maṅa:satakna sa:[SH]gara, mvaṁ mahr̥ta lampaḥniṁ vvai, megha, sūryya, candra:, tara, hr̥tən lakunya byakta kavaśa, kramanya, Iṅət iṅət ba:yunta, Ikaṁ ba:yu ri tṅən· Amitabha:
+<lb n="06r2"/> ṅaranira, Ikaṁ ba:yu ri kiva:, Amoghasidḍi ṅaranira, Ikaṁ ba:yu paR̥ṁ mtu, ratnasambava ṅaranira, tan vətu niṁ ba:yu kiva tṅən·, Akṣ[SH]obhya ta ṅaranira, vkasniṁ ba:yu, vairocana ta ṅaranira, kahanira ri tuṁtuṁniṅ iruṁ, hiṁ rahi, yry uṣniṣa, vkasnira hniṁ nirma:la, sudḍisudḍin sira kabeḥ, ka§-
+<lb n="06r3"/> lima, sira ta saṁ hyaṁ sanḍipañcarasa ṅaranira, kunaṁ yan ahyun· hnaṅaniṁ la:mpaḥniṁ sūryya:di, Ika ba:yu ri tṅən· ya ta pgəṁ, matma:han asūryya[SH], tan hana ta sūryya riṅ a:kaśa, pinaka:padma bhaṭa:ra:mitabha:, śarīranta hiḍap bhaṭa:ra:mitabha:, ḍyanamudra kita, ra:kta varṇna, sama ṅka: jña:na, yapvan kava-
+<lb n="06r4"/> śa ba:yv a:mitabha denta, Umnəṅa mvaṅ amitabha śarīra bha:vana tikṣṇa:, nyataknaṅaniṁ sūryyantara, Asiṁ sakahaR̥pta hr̥tən· vyakta kavaśa[SH] denta, kunaṁ yan alihaniṁ prasada:dḍi, Ikaṁ ba:yw amoghasidḍi, ya ta pgəṁ, matmahan agnimaṇḍala, gumsəṅana prasada:dḍi, maṅalihakna sakahaR̥panta§
+<!-- photo SAS_2006-2007 -->
+<fw place="left" n="6">
+                     <num>6</num>
+                  </fw>
+                  <lb n="06v1"/> varananya, katub kadi lvirniṁ kukus·, maṅkana lvirniṁ bha:vananta, sidḍa: saprayojña:nanta || kunaṁ  yan ahyuniṁ ka:rmma prasara kita, Ikaṁ ba:yu ri§[SH] tṅən a:gnimaṇḍala, trikonaka:ra, dumilaḥ ra:ktavarṇna, ma:ḍyanya triśula, saḍananta sarbbaka:rmma hika: || vaneḥ mahendramaṇḍala, dumilaḥ ma§-
+<lb n="06v2"/> pasagi kuniṁ varṇnanya kadi ma:s·, ma:ḍyanya, pañcaśucika bajra, mṅa, saḍananta ri vr̥dḍyaniṁ Urip· mvaṁ vr̥dḍyaniṁ saḍana Ika: || muvaḥ dad[SH]yakən manedramaṇḍala pasagi, bhedanya:putiḥ varṇnanya, somyabajra ri tṅaḥ, saḍananta ri kasvastan·, Ikaṁ catura:śramama:ṇḍala, dadi vaśika:raṇa
+<lb n="06v3"/>, saḍananta riṅ aka:rṣaṇa Ika: || Ikaṁ Uśvaṣe kiva:, Atma:han· ba:yumaṇḍala, nda niraka:ra IR̥ṁ, Ijo, kuniṁ varṇnanya, dumilaḥ[SH] tuṁtuṁnya kaliḥ, dva:ja cihna, pataka kunaṁ, taṅanira kiva maṁR̥gə:p aṅkus·, kuṇḍalaka:ra lvirnya, saḍananta riṅ hakarṣaṇa Ika:, sthambaṇa, Ucca:ka kunaṁ ||
+<lb n="06v4"/> la:vanta vaneḥ dadyakən· ba:ruṇamaṇḍala, Ikaṁ Uśvaṣe kiva:, Avlu dumilaḥ, putiḥ varṇnanya || sūkṣmamaṇḍala, Alit· kadi śudḍyama§[SH]sphaṭika, ri tṅaḥ pinakavarṇnanya, pinakacihnanya, saḍananta ri santika Ika: || kunaṅ ikaṁ paramaviśeṣa, ba:yu tan· polaḥniṅ uśvaṣa, kevala:hniṁ
+<!-- photo SAS_2004-2005 -->
+<lb n="07r1"/> halilaṁ niravaraṇa, Umindəṁ niraka:ra, riṁ graṇa pradeśanya, tka: riṁ rahi, yry ūṣṇiṣa, śuci ṣūdḍi tan· hana:gəL̥ḥ hiriya, yateka sinaṅgaḥ vai[SH]rocanasama:ḍi ṅaranira || muvaḥ hana ta saptajanma ṅaranya, gava:yaknanta kapratipa:tyaniṅ a:dva:ya, saḍananta mantra, tan· parovaṁ prajña:, kadi mana-
+<lb n="07r2"/>ḥniṁ rareṁ jro vtaṁ, ya jambalasama:ḍi ṅaranika: || kaR̥paniṅ a:dva:yayoga vruḥ ri tatva, kadi budḍiniṁ manuk vahu tətəsiṅ a:ntiga, ya va§[SH]giśvarasama:ḍi ṅaranika: || kaR̥gəpaniṅ a:dva:ya, mwaṁ prajña:ka:raṇa riṁ sarbvasatva:, ya lokaiśvarasama:ḍi ṅaranika: || kaR̥gəpaniṅ a:(dva:)ya, mvaṁ 
+<lb n="07r3"/> bajrakroḍaka:rūṇa riṁ kasarbvasatva:, ya bajrasatvasama:ḍi ṅaranika: || kaR̥gəpaniṅ a:dva:ya, mvaṁ prajña makakapuhara hanura:ga ri saṁ sar§[SH]bvasatva, muniva:ra cintama:ṇi ṅaranika: || kaR̥gəpaniṅ a:dva:ya, mvaṁ prajña makavaśanaṁ makavaraḥ ri heyopadeya rikaṁ sabvasatva, śveta-
+<lb n="07r4"/> ketusama:ḍi ṅaranika: || kaR̥gəpaniṁ ba:yu, Am̐, śabdanya, Umibki śarīra, sūryyarūpa Ikaṁ śarīra, Ilaṁ taṁ śarīra linpasakən de[SHniṁ ba:yu, Aḥ, śabdanya, (mu)kṣa tan pahamṅan·, tan hana:pasuk· vtuniṁ ba:yu, Indəṁniṁ ba:yu tan ana:taḥ, śarīra citta tan hanataḥ, samaṅkana
+<!-- photo SAS_2002-2003 -->
+<fw place="left" n="7">
+                     <num>7</num>
+                  </fw>
+                  <lb n="07v1"/> hava lilaṅ ahniṁ niraka:ravaraṇa, niraka:ra rahina sadakala pinaka:vaknya, kuma:ranirbba:ṇacintama:ṇisama:ḍi ṅaranika:, kapiṁ patu[SH]niṁ sama:ḍiniṁ meḥ muliha riṁ kolihan· hamaṅgihaknaṁ kamokṣan· || kayatnakna tmə:n· tmə:n·, sira tan· dadi dr̥śya deniṅ len sira, bvat paṁdadya§-
+<lb n="07v2"/> kən pa:pa, yan ka:jariṁ len· dadi varaḥ vinarahakən·, Irikaṁ vvaṁ || 0 || Iti saṁ hyaṅ ka:maha:yaṇikan· paramasamaya, mahopadeśa §[SH] Ika:, de saṁ bodḍa, tṅə:tən a:yo cavuḥ, vkasiṁ saṅketa sira, sa:riniṁ kapaṇḍitan sira || 0 || sira saṁ hyaṁ divarūpa ṅaranira, pinaka:vak bha-
+<lb n="07v3"/> ṭa:ra hyaṁ budḍa, sira ta devaviśeṣa, riṁ bodḍa, bhaṭa:ra paramaśūnya ṅaranira, sira ta bhaṭa:ra maha:budḍa ṅaranira, sira ta bhaṭa:ra pa[SH]ramaśiva ṅaranira, bhaṭa:ra puruṣa sira de saṁ vadi śiṣya bhagava:n kapila:, saṁ hyaṅ a:tma ṅaranira de saṁ vadi kanabhakṣa śiṣya, bhaṭa:ra nirguṇa
+<lb n="07v4"/> ṅaranira de saṁ vadi veṣna:va, sira ta phalanipratyakṣa de ḍaṅ aca:ryya niraka:ra, sira ta matmaḥ bhaṭa:ra ratnatraya, mvaṁ bhaṭa:ra pa§[SH]ñcataṭa:gata, de ḍaṅ aca:ryya śaṅka:ra, sira hinandəlakniṁ saṁ hyaṅ a:rcca:, pratima, pṭa, de ḍaṅ a:ca:ryya vahyaka, sira saṁ hyaṁ viśeṣa jīva ṅarani-
+<!-- photo SAS_2004-2005 -->
+<lb n="08r1"/> ra, sira ta saṁ hyaṁ vaṅśil· ṅaranira vaneḥ, haturu pva kita rumgəpa maṅkaṅa, yeka yoganidra: ṅaranya, Aturu tan paṅipi, Eviḥ kapa[SH]ṅgihanya, Apan sira phalaniṁ sarvva:yoga, sarvva:brata, vkasniṁ sarvva:pūja, sarbvapra:ṇamya, sarbvamantra, sarbvastuti, nityaśa pvasira katon denta, vnaṁ ta
+<lb n="08r2"/> kita Umratyakṣakna Ikaṁ dūrasūkṣma, kavaśa śvaśarīṛanta maṅekatva kalava:n sira, makanimitta kavaśaniṁ sama:ḍi denta, yeka sina[SH]ṅgah amaṅgihakən· ka:ṣṭeśvaryya suka ṅaranya, yapvan· śarīranta hekatva, kala:van sira sada:kala, tan prayoga ta kita, An ya kavakiṁ sira, yeka
+<lb n="08r3"/> sinaṅgaḥ mokṣa kanva:, sinaṅguḥ munindra:, ṅaranika: || saṁ hyaṅ a:dva:ya, mvaṁ saṁ hyaṅ a:dva:yajñana, sira ta vkasiṁ sarbvaśa:stra, sarvva haji ka[SH]beḥ, sarbvahagama, sarbvasamyakbyapaka de saṁ sarbopadeśa, sarbvasamaya, saṁ hyaṅ a:dvaya, mvaṁ saṅ hyaṅ a:dva:yajña:nataḥ, Apan sira vkasiṁ vinaraha-
+<lb n="08r4"/> kən·, ya ta mataṁnyan saṁ hyaṁ yogadi paramaneṁratma: ṅaranira vaneḥ, de saṁ bodḍa, Anantaparamananḍana, ṅaranira de saṁ bhai[SH]rava, ma:rggayodḍi parama:guhya de saṁ sida:nta, niskala:di parama: ṅaranira de saṁ veṣṇa:va, sira ta sodaśa tvanta ṅaranira, Evəḥ saṁ kuma§-
+<!-- photo SAS_2002-2003 -->
+<fw place="left" n="8">
+                     <num>8</num>
+                  </fw>
+                  <lb n="08v1"/> vruhaneṁ sira || 0 || lvirniṁ maha:ma:rgga, kavruh ikaṁ parama:guhya, mvaṁ maha:guhya ṅaranya, rūpaniṅ a:vak bharala, Āpan sinaṅguḥ maha:viśe[SH]ṣa, sira, kapratyakṣa de saṁ yogiśvara maha:guhya, Ika karaṇaniṁ kapaṅguhan· bharala, lvirnya, yoga, lavan bhavana, pat· lvirniṁ bhavana, yoga
+<lb n="08v2"/> pavkas· ḍaṅ a:ca:ryya śrī dina:gapada, lvirnya, mulayoga ma:ḍyayoga, vaśanayoga, Antayoga || mulayoga, ṅa, Umiḍapana bha§[SH]rala riṅ a:kaśa, ma:ḍyayoga, ṅa, humiḍapana bharala riṅ aśarīra, vaśanayoga, ṅa, humiḍapana bharala riṁ pr̥thivimaṇḍala, Antayoga, ṅa, jña:-
+<lb n="08v3"/> na humiḍapana bharala riṁ śūnyamaṇḍala, śūnyathāmaṇḍala ṅaranya deśaniṁ bhinavacana, kveḥniṁ bhavana, pat· lvirnya, santibhavana, Uṣṇibhava[SH]na, Urdḍabhavana, Agrabhavana || santibhavana ṅaranya, vikalpa ri hilaṁniṁ ra:ga, Uṣṇibhavana ṅaranya, vikalpa ri hilaṁniṁ deśa || Urdḍaḥ bhavana, ṅa, vi-
+<lb n="08v4"/> ka:lpa ri hilaṅniṁ moha || Agrabhavana ṅaranya, vikalpa ri hilaṁniṁ kleśatraya | kramaniṁ patmūniṁ bhavana, la:van· yoga, yeka§[SH] kavruhana panujunya || santibhavana ṅaranya, ka:raṇaniṁ mulayoga | Uṣṇibhavana, ṅa, ka:ra.naniṁ ma:ḍyayoga | Agrabhavana, ṅa, ka:ra(ṇani)
+<!-- photo SAS_2000-2001 -->
+<lb n="09r1"/> ṅ a:ntayoga || maṅka:na patmuniṁ bhavana mvaṁ yoga, tuṅgal· tatvanya, bhavana mvaṁ yoga, vaḍa:jña:na saṁ yogi Ika: || kunaṁ bhedanya, ka bhavana ma[SH]ṅhiḍap samanya, Ikaṁ yoga maṅhiḍap· svalakṣaṇa, dudūniṁ viśaya, tinūtniṁ bhedaniṁ pa:kṣa || 0 || śabda guru, ṅa, cahi, 3, siṁ viśaya tan· mandi ta§-
+<lb n="09r2"/>lanya || 0 || śabda kuma:ra, ṅa, A Aḥ, yan vil hi jro, tlatakna, phalanya tar kneṁ lara pati || pinraṁ puput·, ṅa, pisa:litakən taṅanta kaliḥ, tu[SH]rinagap·, phalanya, phalanya, tar kneṁ śabda sampe, maha:la || paṅga:vuluḥ, Adəggakən śikunta tṅən·, saṅga: ri taṅan· takiva:, phalanya tar kneṁ lara vighna || śr̥la§-
+<lb n="09r3"/> jīva, ṅa, Ilata sudukniṁ sor·, Inaṁkusnya, yan ana vvaṁ duṣṭa, sadḍya hala tka:mogha siḥ || pinraṁ luput·, ṅa, Ilatta śīghra śīghra hinaṅku[SH]snya, yan ana sadḍya hala hiri kita, mogha tka:siḥ hiri kita || buha:, ṅa, vka tan tutukta, Uśvaṣanta vijilakna, sumyūk tikaṁ kukusnya, At pət· vvaṁ kabe-
+<lb n="09r4"/> ḥ hiri kita || ba:yusaha:, ṅa, Iṅkupakna taṅanta, lambenta, gəR̥hakna ba:yunta I jro kadya haṅin· gumeR̥ḥ, phalanya hakveḥ paka[SH]tony a:vakta deniṁ musuḥ || 0 || nihan· kaliṅhaniṅ gaṇitri, ṅa, vahyaḍya:tmika, ri sira saṁ yogiśvara || Uśvaṣa, praśaṣva, ya gaṇitri, ṅa, pa§-
+<!-- photo SAS_1997-1999 -->
+<fw place="left" n="9">
+                     <num>9</num>
+                  </fw>
+                  <lb n="09v1"/> cuk· vtunya ,, bu, pasuknya, ḍa, vtunya, ya Antaranya | riṁ pasuk· vtu yeka: sinaṅgaḥnya, ya, ṅa, yeka:līlaṁ kevala, nira:grahalila tan pa§[SH]kaliṅan·, bvat· sogata Ika: | bvat· śeva, śi, pasuknya, va, vtunya, ya, Antaranya, ya śivaja:tīka:ya, ya ta mataṁnyan· sinaṅguḥ tuṅgal· I-
+<lb n="09v2"/> kaṁ śiva la:van· budḍa || na, Akṣobhya ,, mo, ratnasa:mbava, bu, Amitabha ,, Amoghasidḍi, dḍa: ,, vairoccha:na, ya || Iśvara, na | maha:de[SH]va, ma | bra:hma:, śi | viṣṇu, va| śaṅka:ra, sa |  śiva || bu, lokaiśvara | dḍa, bajra:paṇi | ya, siraśūnya, sinaṅgaḥ taliniṁ ganitri, sira sinaṅgaḥ sa:mbu-
+<lb n="09v3"/> liḥnix hurip· | śi, bra:hma: | va:, viṣṇu | ya, sira hurip·, sira: jña:na byapaka riṁ ra:t·, sira ta śivabudḍa, hriḥ, pasuknya ,, ṅriḥ vtunya ,, kriḥ, A[SH]ntaranya | Itya pūja: saṁ hyaṁ dya:tmika kamokṣan· || namo stu || 0 || Agnimaṇḍala, Akṣobhya, <seg rend="check">[drawing]</seg>, Amitabha:, <seg rend="check">[drawing]</seg> candra:maṇḍala || vairoca-§
+<lb n="09v4"/> na, sūryyama:ṇḍala, <seg rend="check">[drawing]</seg> || 0 || stha, goḥ, hamitabha: | stha:, Aśva, Amoghasidḍi ,, stha, maha:maṅśa, vairoccana || pa:ñca:[SH]jña:na Ika: || 0 || namo budḍa:ya, nama śiva:ya || Om̐ka: || 0 || 
+<!-- photo SAS_2000-2001 -->
+<lb n="10r1"/> || 0 || nihan· ja:nma rahasya, kavruhana de saṁ sevaka ḍarmma, ma:rgganiṁ muliha mariṁ kahyaṅan· muvaḥ hayva kaskan· maṅabyaṣa masama:[SH]ḍi, kunaṁ deya saṁ masamaḍi, daśaśila kava:śakna rumuhun·, daśaśila:rane, lvirnya || tan avadonən·, tan ūtsaha papati, tan paraḍara ,
+<lb n="10r2"/> tan· L̥bok·, tan· kroḍa, tan kaphala deniṁ bhakti maguru, tan arumiḥ, riṁ pinaṅan tan a:vuru, tan pamnemne laku raha:yu | maṅke ni[SH]ṅ amaca guguron·, tumulya: L̥kas·, saṁ hyaṁ pa:ñcatathagata sama:ḍi rumuhun·, A:pan sira vit· buṅkaḥ, Iṅ ka:yogiśvaran·, A:pan tan (ka)hə-
+<lb n="10r3"/> L̥tan analika, de saṁ mabyaṣa || nihan kramaniṁ masama:ḍi, yan saṁ yogi, tumiṅhaliṁ sakaton·, halaha, hayuha:, knaha, luputa, §[SH] sakalviraniṁ katon·, tka taṅ asiḥ, Asiḥ mesi tutur·, tutur mesi kasambegan kaviratin·, mesi tutur muvaḥ, sa:kṣatkate(ka) pakatonaniṁ
+<lb n="10r4"/> guruṁku, Ikaṁ katon deṅku, A:pan magave kasa, mbegan ka:viratin·, hiyy a:ku, ya mataṁnyan kaṁ katonaniṁ guruṅku, Ikaṁ katon deṅku, -[SH] saṁ yogi maṅkana, sa:kṣa:t makamata bhaṭa:ra:kṣobhya || 0 || kunaṁ sama:ḍi bhaṭa:ra ratnasambhava:, yan saṁ yogi maṁR̥ṅə: śabda, salviraniṁ śabda, Ala-
+<!-- photo SAS_1997-1999 -->
+<fw place="left" n="10">
+                     <num>10</num>
+                  </fw>
+                  <lb n="10v1"/> habcika, tka: taṅ a:siḥ sesi tutur·, tutur mesi kaviratin kasambegan·, mesi tutur muvaḥ, sa:kṣa:t· śabda sakiṁ guruṅku, Ika: kaR̥ṅə: deṅku, A[SH]:pan magave kasambegan· kaviratin·, ya ta mataŋnyan· śabdaniṁ guruṅku, Ikaṁ kaR̥ṅə: deṅku, saṁ yogi maṅka:na tuhutuhu mataliṅa bhaṭa:ra ratnasa:mbhava: || kunaṁ
+<lb n="10v2"/>sama:ḍi bhaṭa:ra:mitabha: || yan saṁ yogi maṅa:mbuṁ ganḍa, ya ta mataṅyan· ganḍaniṁ guruṅku, Ika ganḍa deṅku, A:pan magave kasambegan·, kaviratin· hi[SH]ryy aku, saṁ yogi maṅka:na, tuhutuhu makagraṇa bhaṭa:ra:mitabha: || kunəṁ sama:ḍi bhaṭara:moghasidḍi, yan saṁ yogi mamurug· siṁ kapurug·, hiṁ Ilat·, tka: ta
+<lb n="10v3"/> ṅ asiḥ mesi kasambegan·, mesi tutur muvaḥ, sa:kṣa:t· rasa gurugiŋ guru /Ika:\, Ika: karasa deṅku, A:pan magave kasambegan·, kaviratin· hi[SH]ryy aku, Ika:ṁ jña:na maṅka:na, tuhutuhu sa:kṣa:t· makakulit bhaṭa:ra:moghasidḍi || kunəṁ sama:ḍi bhaṭa:ra vairocca:na, yan saṁ yogi tumiṅha:l· hiṁ saka-
+<lb n="10v4"/> ton·, halaha hayuha, knaha, luputa, salviraniṁ katon kaR̥ṅə sina:bda, tka: taṅ asiḥ, Asiḥ mesi tutur·, tutur mesi kasambegan·, kavi[SH]ratin· mesi tutur muvaḥ, sa:ksa:t· kaṁ katoniṁ guruṅku,  Ikaṁ katon deṅku, A:pan magave sambegan· kaviratin· yya:ku, mataṁnyan taṁ katoniṁ guruṁ-
+<!-- photo SAS_1995-1996 -->
+<lb n="11r1"/> ku, Ika katon deṅku, saṁ yogi maṅkana, tuhu-tuhu sa:kṣa:t· makaśarīra bhaṭa:ra vairoccana || Iti saṁ hyaṁ pa:ñcatathagatasama:ḍi haranira, si[SH]ra ta sa:kṣat maṅilaṅakən· pa:pa kleśa, riṁ janma,  yan sira kinavaśakakən deniṅ a:ji || 0 || pañcakṣaraṃm idaṃ pūṇyaṃ, pavitraṃ pa:pa naśanaṃ, pa:pako-
+<lb n="11r2"/> ṭi sahaśraṇi, dagdumbhavatikaṣṭavat· || kaliṅanya, Ikaṁ pañcakṣara ṅaranya, vyaktinya viśeṣa, sira svyakti ha:ṅlampahi pañcatatha:gata§[SH]sama:ḍi, saṁ hilaṁ pa:pa kleśanira kabeḥ, A:paniṁ saṁ mahyun umaluya hahyaṁ, saḍiḍik· bratanira || kiñcit· brataṃ vr̥ttiyantu, Akroḍaṃ śokavarjji§-
+<lb n="11r3"/> taṃ, Alobhaṃ ka:rayet· yastu, tasmat devatam apnuyat· || raṣanya haklik tikaṁ brata, tatlu, tan· kroḍa, tan prihatin·, tan kapeṅin·, [SH]yeka nimittaniṁ valuya devata muvaḥ || 0 || hana panugraha bhaṭara:sobhya:, yan kinavasakən· sama:ḍinira, Avak saṁ yogiśvara kavasa ha-
+<lb n="11r4"/> pisan· kala:van pr̥thivi || hana panugraha bhaṭa:ra ratnasambhava, yan kinavaśakən sama:ḍinira, Avak saṁ yogiśvara kavaśa hajjalantara [SH], Apisan kala: vanvay· || hana ta panugraha bhaṭa:ramittabha, yan kinavaśakən sama:ḍinira, Avak saṁ yogiśvara kavaśahaha pisan kala:van teja, ta§
+<!-- photo SAS_1993-1994 -->
+<fw place="left" n="11">
+                     <num>11</num>
+                  </fw>
+                  <lb n="11v1"/> n viska:raginosna || hana ta panugraha: bhaṭa:ramoghasidḍi, yan kinavaśakən sama:ḍinira, A:vak saṁ yogiśvara haḍaṅan kaya kapuk·, §[SH]kavaśa:ṅgagana:cara, Apisan kala:van bayu || hana ta panugraha bhaṭa:ra vairoccana, yan kinavaśakən· sama:ḍinira, de saṁ yogiśvara, Avak saṁ yo-
+<lb n="11v2"/> giśvara, Apisan kala:van jña:na || 0 || nahan kramanya, Ikaṁ jña:na kakavaśa deniṁ lupa, Akveḥ Ikaṁ luṅha:, Akḍikaṁ kari, pa:pa Ika:, susu§[SH]pnya ṅaranya, guru, jaghra ṅaranya, taṅhi, I pantaraniṁ taṅhi la:van turu, yateka pasa:ransa:ran·, peṅgiteṅgitan·, ya pabaratan·, ya paṅhalahala 
+<lb n="11v3"/> n·, ya ka:raṇayajñan·, papraṅan saṅ atakitaki nisparigraha, yateka kavaśakna de saṁ magave kajitendriyan·, ri tka:niṅ harip mata: ,[SH]luṅha:nya, Andəlnya, ya kavruhana tkapiṁ sava:kta hanutura riṁ tapa, Apan ikaṁ turu vaṁklaṁniṁ kamokṣan·, yahika nandiśvara maha:kala, ya vatu mataṅkəp·, 
+<lb n="11v4"/> yatika pataṅkəpiṅ a:kaśa, mvaṅ hikaṁ pr̥thivi ṅaranya, Ikaṁ patmuniṁ taṅhi la:van turu, pahavasta denta saṁ sevaka ḍarmma, vruh irika:, hayva la[SH]mbalamba marapvan· henak denta Avakika: yogiśvaran· || 0 || nihan kramanya, yan va:hu tka:niṅ arip mata, dəL̥̄ tuṅgəṁ Ikaṁ śarīra, pahenak denta:dəL̥̄ṁ ,
+<!-- photo SAS_1995-1996 -->
+<lb n="12r1"/> saḍananta litniṁ jña:nanta, Enak· pva denta:dəL̥̄ṁ, Ilaṁ taṅ arip mata, deniṁ sama:ḍi, mvaṁ saha:nanikaṁ manaḥ pariva:ra kabeḥ, ri hilaṅ ika:, vkasanta:vakta mana[SH]ra vvaṁ, kadi kuruṅan·, vusnika:, dadi ta vnaṁ kita tumon a:vakta sakeṁ kahananta, A:pan ika kamokṣaṇan·, ṅa, ya vənaṅ amula tan paṁrakva,  tan pa:vak ika tatum-
+<lb n="12r2"/> ona riṁ ra:t·, ya cihnaniṁ kamokṣanika:, ya Ika vnaṅ atiṅgala śarīra Ika:, yateka muliḥ riṁ paramasūkṣma, ya Ika: paramaIśora, ya Ika I§[SH]śvara praṇiḍana sira, ya tlas maṁśūnyajña:na samaṅkana, sira ta maha:paramayogiśvara, sira lpas· sira vnaṁ ma:tya tan pasaṅkan lara, A:pan ainak denira:maṅguḥ kasūkṣmaniṁ§
+<lb n="12r3"/> jña:nanira, sira ta saṁ mokṣa lpas·, tan valuyvaluy· pūrṇnabha:va || Iti yoganira saṁ hyaṁ kalpasən· || 0 || hana:jña:na A:mbək· paṇḍita, mvaṁ saṅ ama§[SH]ṅun pratapa, kna deniṁ maṅiṣṭijña:na, luput sira riṁ sarbvalabha, sapaniskara Ikaṁ mulya, suka la:van· duḥka, ma:s paḍanya de saṁ paṇḍita, ma:s paḍa la:van śila:
+<lb n="12r4"/>, pirak paḍa la:van viṅka, Istrī paḍa la:van lintaḥ, maṅkana de saṁ paṇḍita, yan tumiṅaliṁ strī nismara, tləṅiṁ sa:mudra:, tləṅiṁ sa:mudra:, tasik apuy·, kavaḥ tatvanya, [SH]Ikaṁ strī hakveha halanya, kaliṅanya, tan hana hilik· la:van hyun·, sira ta hiya paṇḍita, ṅa, yan hana la:mpaḥ maṅkana kramanira || 0 || nihan hupadeśa:-
+<!-- photo SAS_1993-1994 -->
+<fw place="left" n="12">
+                     <num>12</num>
+                  </fw>
+                  <lb n="12v1"/> ntara, Ikaṁ ka:larudra:gni hana riṁ śarīra, muṅguḥ riṁ rudra:trikona, ndya:ṅkəna kuṇḍa, Ikaṁ baluṁ haṅapit nabhi, I ruhurniṁ jagana, yeka:ṅkən akon a§[SH]dva:ya, Ika: pva ya:ṅkən aṇekakona, ri daL̥mniṁ kuṇḍa trikona, pañcakuṇḍa Ika ta ka:larudra:gni ri kuṇḍa, mijil havan· mulaḍara:ṅkəna:gnimaṇḍala
+<lb n="12v2"/>, mulaḍara ṅaranya, pantaraniṁ payūpa:sta, yatika murub· miṁruhur· hanūt na:ditra:ya ṅaranya, Otvat agə:ṁ hi soriṁ na:bhi ṅggva:nya, bhedanya, §[SH]Iḍa, piṅgala, susumna, Ika: ta ginūtiṁ ka:larudra:gni mareṁ śiraḥ, gsəṁ taṁ sarvva:mala, sarvvaklaiśa denika:, muvah ana ta caṇḍala ri śiraḥ, Ika ta dra:va
+<lb n="12v3"/>, Iṣnyamiśra riṁ śara, humilaṅakən· sakvehniṁ kleśa ,, kunaṁ yan matuluṅan agriṁ, Iḍap vataṁ śarīraniṅ agriṁ kadya śarīranta, byakta Ilaṁ kleśanya, I[SH]tya: maśarīra || 0 || nihan hajinira sari bhaṭa:ra hyaṁ budḍa, kayatnakna mahopadeśa Ika:, R̥ṅə:n salvirniṁ mantra, bhaṭa:ra budḍa sira hana riṁ maha:pralaya, du-
+<lb n="12v4"/> madi havaknira, sira ta matmahan· bhaṭa:ra pañca tathagata, śarīra na:ma bheda, kapva hapadudvan· rūpanira, bodya:grimudra: sira, sasvataḥ[SH]jña:nanira, cakra sañjatanira, riṁ sahavati ṅaraniṁ kaḍatvanira, siṅha:tutuṅgaṅanira, sira bharali satvaba:jri, sira bharali ḍarmmaba:jri, sira bhara:li kar-
+<!-- photo SAS_1991-1992 -->
+<lb n="13r1"/> :mmaba:jri, sira ta sahadevī hamarivr̥tta riṁ sira, muṅguḥ pva sira riṁ śarīra, riṁ jroniṁ pusuḥpusuḥ, pinakastananira || sira bhaṭa:rakṣobhya, muṅguḥ riṁ pūrvva:[SH], kr̥ṣṇa varṇnanira, sira bhara:li locana devīnira, hūm̐, mantranira, bhūḥsparśśa:na mudra sira, Aḍarmmajña:na sira, ba:jra sañjatanira, riṅ abhirati ṅaraniṁ ka-
+<lb n="13r2"/> svargganira, gajaḥ tutuṅganira, bhaṭa:ra ba:jrara:ja, bhaṭa:ra ba:jrara:ga, hyaṁ ba:jrasaḍu, bhaṭa:ra ba:jraḍa:ra:di, saṅ amarivr̥tta ri sira, muṅguḥ pva si§[SH]ra riṁ śarīra, riṁ jroniṁ paruparu pinakastananira || sira bhaṭa:ra ratnasambhava, muṅguḥ riṁ dakṣiṇa, pita varṇnanira, sira bhara:li mamaki devīnira, tram̐, mantranira, sa-
+<lb n="13r3"/> mata:jña:na sira, kaphala sañjatanira, riṁ jroniṁ limpa pinakastananira || sira bhaṭara hamitabha, muṅguḥ riṁ paścima, ra:kta varṇnanira, sira bhara:li paṇḍa[SH]ravasini devīnira, hriḥ, mantranira, pratyavekṣaṇa: jña:na sira, ḍyanamudra sira, na:gapa:śa sañjatanira, riṁ sukavati kasvargganira, sira bhara:li ba:jraḍarmma, 
+<lb n="13r4"/> bhaṭa:ra ba:jratikṣṇa:, bhaṭa:ra ba:jrahetu, bhaṭa:ra ba:jrabha:ṣa, saṅ amarivr̥tta ri sira, muṅguḥ pva sira riṁ śarīra, ri jro hati pinakastananira ||[SH]sira bhaṭa:ra hamoghasidḍi, muṅguḥ riṁ hūtta:ra, viśvavarṇna sira, sira bhara:li tara devīnira, Aḥ, mantranira, Abha:yamudra: sira, kr̥tanusthana:jña:nani-
+<!-- photo SAS_1989-1990 -->
+<fw place="left" n="13">
+                     <num>13</num>
+                  </fw>
+                  <lb n="13v1"/> ra, riṁ kusumite ṅaraniṁ kasvargganira, garuḍa tutuṅganira, sira bhaṭa:ra ba:jraka:rmma, bhaṭa:ra ba:jrara:kṣa, bhaṭa:ra ba:jrayakṣa, bhaṭa:ra ba:jrasanḍi ,[SH] saṅ amarivr̥tta riṁ sira, muṅguḥ pva sira ri śarīra, riṁ jro hamprū pinakastananira || kunəṁ pva bhaṭa:ra pañcatatha:gata, muliḥ riṁ lokaḍatunira, hana riṁ śarīranta
+<lb n="13v2"/> sira maṅke, sira ta tma:han· pañcajña:na, pañcajña:na ṅaranya, cakṣūḥ, śrota, graṇa, jihva:, hr̥dḍaya || cakṣu, ṅa, mata | śrota, ṅa, taliṅa | gra§[SH]ṇa, ṅa, Iruṁ | jīhva:, ṅa, caṅkəm· | hr̥dḍaya, ṅa, hati | yatika sinaṅguḥ pañcendriya, ṅa | kunaṁ ta devataniṁ pañcendriya | ṅa, bhaṭa:ra:kṣobhya, muṅguḥ riṁ§
+<lb n="13v3"/> mata | bhaṭa:ra ratnasambhava:, muṅguḥ riṁ taliṅa | bhaṭa:ra:mitabha:, muṅgviṁ hiruṁ | bhaṭa:ra ha(mo)ghasidḍi, muṅguḥ riṁ caṅkəm· sira pinakapaṁrasa: | bhaṭa:[SH]ra vairocana, muṅguḥ ri pusuḥ pusuḥ, sira pinakaṅənaṅən·, Irika ta saha devīnira sovaṁ sovaṁ, yatika sinaṅguḥ saṁ hyaṁ pañcatma ṅaranya, pinaka:vak· 
+<lb n="13v4"/> || 0 || ka:lphabodḍa Iti, paramarahasya || 0 ||
+<!-- photo SAS_1991-1992 -->
+<lb n="14r1"/>
+                  <seg rend="check">Adva:yajña:na</seg> [drawing]<seg rend="check">Adva:ya</seg>[SH]<seg rend="check">|| vyaktinyan· patmū riṁ ka:ṇṭabhu, Ikaṁ vindv aneṁ ka:ṇṭamula:, ya maha:praṇava Ika:, Umiṅsor sumuṁsaṁ riṁ lariṁ hr̥daya ṅadəg· ,</seg>
+                  <lb n="14r2"/>
+                  <seg rend="check">sūryya:rūpa I-</seg> [drawing] <seg rend="check">candrarūpa Ika:-</seg> [SH] <seg rend="check">laṭa:praṇava Om̐ ka:ra, </seg>[drawing] <seg rend="check">maḍya yar umiṇḍuhur paranya, hayva tan prayatna, pan tan dadi pinuraṁpuraṁ na-</seg>
+                  <lb n="14r3"/>
+                  <seg rend="check">kaṅ avak·, </seg>[drawing] <seg rend="check">ṅ avak·, ya ca-</seg> [SH] <seg rend="check">da:niran· ,</seg>[drawing] <seg rend="check">sa:nugra:ha saṁ hyaṁ kaśūnyan· juga tūtakna paraniramput· tka: Iriṅə-</seg>
+                  <lb n="14r4"/>
+                  <seg rend="check">ya sūryya:smr̥-</seg> [drawing] <seg rend="check">ndra:smr̥ty arane, </seg>[SH]<seg rend="check">n·, yan mūkṣa ṅaḍaḥ mvaṁ riṅ ūrdḍa:, tan pama:rgga kunaṁ || 0 || </seg>
+                  <lb n="14r5"/>
+                  <seg rend="check">ty a:rane guruṁguruṅan· stha:na, </seg>
+                  <!-- photo SAS_1989-1990 -->
+                  <fw place="left" n="14">
+                     <num>14</num>
+                  </fw>
+                  <lb n="14v1"/> || 0 || nihan taṁ janmarahasya, kayatnakna kalaniṁ rogasaṅsara, bodḍapra:ptaviḍi, sḍaṅiṁ hurip· maṅəntakəntak·, keṅətakna pasuknya ṅke ryy avakta ,[SH] surupnya riṁ guhaniṁ praḍa:na, lumkas ta kita masama:ḍi, masamaIta, cipta rumgəpa tuṅgal ta la:van bhaṭa:ra viśeṣa, Ayva ta kita gumgə, Ananya janma svabha:va Uliha§-
+<lb n="14v2"/> nika:, Alokecakravat·, byakta muliḥ riṁ ma:ḍyapada, tamolah umiḍap· saṅsa:ra muvaḥ, ya(tha) pa:pa ṅaranya, Ayva gumgə tan hananya, nira:śra§-[SH]ya ṅaranika:, tamolah agamoṅan·, Aṅalayan· ṅaranika:, luput ika:, yan maṅkana || nḍyanuṁ R̥gəpənta ri sira, vitnya ta hatutura ri hananiṁ citta:hniṁ pina-
+<lb n="14v3"/>ka:pusapus·, hapagə:ha ta denta naṅkəpakən· riṁ bhaṭa:ra viśeṣa, tumama ta kita ri dal̥m pahoman·, ṅaranya, byumamaṅgalavivarasphaṭika: ,[SH] paguhaguhanya tka kabeḥ, yatha lumkas mayajña, maja:pa, mabrata, masama:ḍi, mvaṁ samaIta ṅaranya, maṅkana denira manṅətakən· ri hananta riṁ bhaṭa:ra viśe-
+<lb n="14v4"/> ṣa, saṁ hana riṁ hr̥dayaviva:rasphaṭika:, ri guhaniṁ pusuḥpusuḥ, Ayva ta kita kataman·, dr̥vya vnaṁvnaṁ, praka:ra, salvirniṁ tr̥ṣṇa:, Anak· rabi§[SH] ṅaranya, rajaḥ tamaḥ moha dambha matsaryya, kimburu, grahi, grahaka:, peśunya, Irṣya, nda:ḥ śravaka ta kita, śravaka ṅaranya, ri tan hananiṁ pəkuL̥-
+<!-- photo SAS_1986-1988 -->
+<lb n="15r1"/> n· vaneḥ, Aṅhiṁ bhaṭa:ra viśeṣa sira ta yatnaknanta, riṁ sama:ḍi sanḍijñana samaItayajñana nirmmalasphaṭika ṅaranika:, ri katmvaniṁ§[SH] tuṅgal· denta, hana ta y ambək tankvatankva, Ekatva katmvanya, Apagə:ḥ subhadḍa, tan liṅgara:tguḥ pratipati niti bhakti, laṅgəṁ tuṅgəṁ nira:śraya, yatha: hniṁ ṅa-
+<lb n="15r2"/> ranyakaliṅaniṁ hniṁ, mandəliṁ bhaṭa:ra hniṁniṁ hniṁ yatha: sanḍiniṁ hniṁ, riṁ hniṁ nitya Asannikaṅ anirmma:lasphaṭika ṅaranya, hnaṁniṁ ta dumadyakan katəmvaniṁ§[SH] śūnyata: nisaṅśaya, ya ṭa sinaṅgaḥ yogiśvarajña:na ṅaranya, hanabha:va ta kita, tan polaha, bhaṭa:ra sira sira Ulahanta, Ekacitta ta kita, Ayva
+<lb n="15r3"/> bhra:nta:, bhaṭa:ra juga:mbəkanta, Anika:rṇni ta kita, tan· R̥ṅə:R̥ṅə:na, bhaṭara juga sira R̥ṅvaknanta, hanavatya ta kita, tan· paṅajapa, bhaṭa:ra§[SH]  juga, sira hajapənta, hayva ta kita pativulat·vulati, bhaṭa:ra juga vulatananta, Animeṣya ta kita, tan· kḍapa, bhaṭa:ra juga sira dəL̥nta, hanasa ta kita, §
+<lb n="15r4"/> tan ambəka, bhaṭa:ra sira Alpananta, ya ṭa: sinaṅguḥ saptasama:ḍi, mvaṁ saptasamaIta, saptabudḍya:ṅgama:rgga ya jña:na pitu ṅaranya, pinijəḥ kinəmpə§[SH]l· pva rasa:niṁ pitu, Atmahan ta ya nəm·, nəm atmahan ta ya lima, lima tmahan pat·, pat atmahan· tlu, tlu matmahan· rva:, rva: matmahan tuṅgal·, ya ṭa: sinaṅgaḥ
+<!-- photo SAS_1984-1985 -->
+<fw place="left" n="15">
+                     <num>15</num>
+                  </fw>
+                  <lb n="15v1"/> Ekata ṅaranya, rasaniṁ tan pambək· viśeṣa, rasaniṁ tan pativulatvulati viśeṣa, rasaniṁ tan· polaḥ viśeṣa, Enak pva vruḥta ri tu[SH]ṅkal·, kala:van· bhaṭa:ra viśeṣa, sa:tmya:vaya śarīranta, dadi ta kita mapisan maraṅkəp· la:van bhaṭa:ra viśeṣa, samipa milu magave tan ilu gina-
+<lb n="15v2"/> ve, Ardḍakariśvari ṅaranya, ya tha: sinaṅgaḥ rasapiṇḍa ṅaranya, Avak mari molaḥ, vtaṁ mari ma:mbəkan·, gulunta ma:ryy a:sgu, tutukta huvus· mṅa, Uśvasa[SH]nta mari humili, matanta mari kumḍap·, ya tha: sinaṅgaḥ piṇḍadrava ṅaranya, dumrava Ika: samaṅkana kveḥnya, bhaṭa:ra viśeṣa paṅavruhanta ri bhaktinya, nihan ke§-
+<lb n="15v3"/> ṅətaknananta, sakvehnika: saṁ hyaṁ Urip· viśeṣa ṅko ryy avakta, ri taṅanta, ri suku, ri kulit·, ri dagiṁ, riṅ otvat·, ri tahulan·, ri sumsum[SH]·, ri vuṁśilan·, ri paruparu, ri hati, riṁ ha:mpru, ri hinban·, ya tha: makukud· makəmpəl·, satma:na ḍuḍut·, ṅka: ri hr̥dayaviva:ra sphaṭikaratna, ri guha§-
+<lb n="15v4"/> niṁ pusuḥpusuḥ, ṅka: ri ḍaḍanta, ya tha: kumtər·, ndaḥ rasapiṇḍa kinəmpəl· ta ṅaranika:, yan maṅkana, Ayva tatan· sara kita, Irika sḍaṁ maṅka[SH]na, priḥ petta rasanya, litlit pahabnar·, Ikaṁ hniṁ Iṅə:takən· polaḥta la:van saṁ hyaṁ pramaṇa viśeṣa, Iṅətiṅət pahenak·, pahantəs· ,
+<!-- photo SAS_1986-1988 -->
+<lb n="16r1"/> pahavas dentaṅgr̥gəp· ri bhaṭa:ra viśeṣa, Apa tan hana vaneḥ rovaṅanta mokta len asaṅke bhaṭa:ra saṁ hyaṁ viśeṣa, ya tha: mataṅhyan·[SH] prihən taməntəmən· sira kayatnakna, yatha:nyan tan· saṁsara kita, tan kavnaṁ pva sira prihən ataḥ sira denta sira ta sinaṅgaḥ rahina sada: ṅaranya, pañjutan paḍə§-
+<lb n="16r2"/> m· ṅaranya vaneḥ, Ivə: ta kita miṅətiṅət· polaḥ ta la:van saṁ hyaṁ viśeṣa, Alupa ta kita: ryy avakta, tatan hana katon·, tan hana ka§[SH]R̥ṅə:, ri pantaraniṁ lupa mvaṁ tutur·, hana ta śabda I ruhurta kaR̥ṅə: denta, kaliṅanika:, makon· maṅajya matguha saṁ hyaṁ viśeṣa pkul pahapagə:ḥ pahatguḥ 
+<lb n="16r3"/> riṁ tuṅgalta, Apisan ta kita mvaṁ saṁ hyaṁ paramartha viśeṣa, R̥gə:p ta sireṁ sama:ḍi, taṅkəs ta sireṁ samahita, yathanyan tan· saṁsa:ra dentayajña:, ya tha[SH] samyag·jña:na bha:priti Upapəttiparamartha: ṅaranya, vruhan tuṅgal· mvaṁ bhaṭa:ra, Ayva ta sigasigun·, Ayva kundukunduL̥n·, Ayva tan atur denta magə:ha tan· ri
+<lb n="16r4"/> bhaṭa:ra budḍaja:ti viśeṣa, ndaḥ vulatta ryy a:vakta, hana ta teja katon denta, kadiy a:puy i lambuṅniṁ daṁdaṁ, hanan kadi dilahniṁ taji ginuru[SH]vinda nandama teja Ika:, saṁ hyaṁ viśeṣa yan maṅkana, Agya luma:mpaha myata saṅke kahananira, Ayva ta kita pramada yan maṅkana, R̥gəp tikaṁ si pati, t=hət=hə§-
+<!-- photo SAS_1984-1985 -->
+<fw place="left" n="16">
+                     <num>16</num>
+                  </fw>
+                  <lb n="16v1"/> ran·, bnərakan pahatguḥ, Ayva liṅgar denta tumūtakən bhaṭa:ra viśeṣa, yavat· maṅkana dentaṁhanakan· yajña:sama:ḍi, mvaṁ samaIta:, byakta§[SH] kapaṅgiḥ Ika: tuṅgal· ta mvaṁ bhaṭa:ra budḍa ja:tiviśeṣa, ya kamoktan· mvaṁ moktapada ṅaranya, sa:tmyavayavasūkṣma ri parama:rthaviśeṣa, Apisan aci-
+<lb n="16v2"/> ntya la:van bhaṭa:ra hyaṁ budḍa:, surud· mokṣa viśiṣyate, maṅkana puruṅut· saṁ hyaṁ budḍa ḍarmma budḍaja:ti, vinuvusakən· saṁ paṇḍita, saṅ umaṅguhaka§[SH]n· viśeṣaniṁ jña:nanira, sira ta muliḥ ri ja:tika:ruṇa, ya tha kamoktan· saṁ hyaṁ budḍa jatika:ruṇa ṅaranya || ndaḥ pahenak· denta tumiṅgalakan· Ikaṁ
+<lb n="16v3"/> dr̥vya:tma:ka:, dr̥vya:tma:ka ṅaranya, śarīra hayva ta hana tinoliḥ, mvaṁ tan ana kinaniścayakən· salaḥ sasiki, yapvan enak denta Ikaṁ sarvvaviśa[SH]ya kabeḥ, ndaḥ dl̥nta, vasvas·, pahavas·, təpətakan pahapagəḥ, denta R̥gəp· la:van anuṅgalakən·, ri tuṅgalta la:van bhaṭa:ra viśeṣa, mapa ta lviranikaṁ jña:-
+<lb n="16v4"/> na R̥gəpənta || samyag·jña:na Ekatva nispannasphaṭika: paramarthaviśeṣa budḍi taravvaṁ || nihan deniṅ haṅa:bhyasa ri pati śarīranta rumuhun·, pati ṅa[SH]ranya, Animeśya:m·, tan· kḍapa, Animayam·, tan pambəkana, Akroḍa tan kroḍa, tan polaha, tan paR̥ṅə:R̥ṅə:na, yatika tapa sove, brata saṁse-
+<!-- photo SAS_1982-1983 -->
+<lb n="17r1"/> pta, Amra:tima: ṅaranya, kevala Ekacitta mapag=ha rumgəpa: jña:na paramartha viśeṣa, tan hana hana, tan hana ta:ya, Ambəkakna salaḥ sasiki, kevala[SH] bhaṭa:ra juga sira R̥gə:pənta, bhaṭa:ra ṅaranira, samyajña:na Ekanispannasphaṭika: hniṁ, viśeṣa riṁ paramartha, ndaḥ yan kavaśa sira, sira ta prasidḍa vnaṁ maṁlpasakna pa:§-
+<lb n="17r2"/> paniṁ sarvvasatva, ṅuniveḥ kavitan·, kadaṁ kulagotra:, vvaṁ sanak·, ṅuniveḥ sakvehniṁ pa:pa kabeḥ, tlas karuhun sarvvaklaiśaniṁ śarīranta || 0 ||[SH] Iti saṁ hyaṁ kahuvusan· ja:tiviśeṣā | 0 | maha:rahasya sira, laraṅan· tmən· || 0 || * || 0 || ...</ab>
+            </div>
+            <div>
+               <head>Parts 2 (b). More Śaiva Material</head>
+               <ab>
+                  <lb n="17r2"/> ... nihan kavruhana saṁ hyaṁ praṇava, 4, na:ḍinira, §
+<lb n="17r3"/> lvirnya, Inḍita, diptika, rocika, mocika, kaliṅanya kalivat· sakeṁ pañcaviṅśati, pada:rtta sira, sūkṣma: ṅaranira, vnaṁ sa:kala:, vnaṁ niṣkala[SH] sira kunaṁ vija:kṣaranira, Aum̐, bra:hma:ṅga sira, sadḍaśiva hyaṁnira, praḍiptavat·, kadi ḍama:riṁ vṅi sinahaban· rūpa:nira, Iṅśi kaUṅgvanira, kunaṁ śaktinira, 
+<lb n="17r4"/> 9, lvirnya, bha:mi ,, jeṣṭi, rodra, kala:vikiraṇaṃ, balavikiraṇaṃ, sarvvabhūta:madanaṃ, manonmaṇaṃ, prabhuśaktisigayatri, hi luhuriṁ śika, muṅguḥ[SH] taṁ praṇava ṅka:na, śukrata:ra, ka:di tejaniṁ vintaṁ, śukrata:ra sira, pa:t· na:ḍinira, lvirnya, sūkṣma:, susūkṣma:, Amr̥ta:, mr̥ta, śavitri, sira devī, para-
+<!-- photo SAS_1980-1981 -->
+<fw place="left" n="17">
+                     <num>17</num>
+                  </fw>
+                  <lb n="17v1"/> ba śinahyaṁnira, śiva:ṅgapraṇava sira, riṁ vindu stha:nanira, kunaṁ śaktinira, 10, lvirnya, parama:paripūrṇnata, parama:parikr̥tanta, parama:nantatarata, pa[SH]rama:ḍruvanaṇḍita, parama:cintya:ga, parama:śūdḍya:ta, parama:ṇḍata, parama:sambhitaṃ, parama:kṣarata, parama:śitva, niskala:kevala sira, Aum̐, vija:kṣarani§-
+<lb n="17v2"/> ra, ruhurnika: muṅguḥ kaṁ praṇava ṅka:na, tan kinavruhan kahananira, muvaḥ tan kinavruhan varṇnanira, dudūg i sor dudūg i ruhur·, rakva sira, riṁ dikvidikahananira, ta[SH]n kavista:ra sira hanerika, kunaṁ na:ḍinira kavruhana, nihan kramanira, vyapiṇaṃ, bhyomarūpa:, Ana:nta, natana:, kunaṁ vija:kṣaranira, <seg rend="check">[modre]</seg>, sira saṁ hyaṁ Amr̥takuṇḍa§-
+<lb n="17v3"/> lini praṇava ṅaranira, nirvaṇna sira, jña:na lpas· tan kinavruhan· kaha:nanira, sira ta kamoktan· ṅaranira, saṁ yoggi ṅaranira, Umnəṁ juga sira, Ayva §[SH]cavuḥ sira, parama: rahasya sira || 0 || bhrunahapuruṣaṇaśca, kanyacoroghrayajaka, Ajña:tas samvat sarikaḥ, pa:takaḥ parikirttitaḥ || goraṇḍaṃ yuvativaṇḍaṃ, va-
+<lb n="17v4"/> la vr̥ḍaś ca vanḍyate, Alpa:rada hi ca tatha, Upa:takaham ucyate || brahma:vaṇḍaṃ surūpaṇaṃ, suvarṇnastheyam eva ca, kanyavighna guroḥ vaṇḍam·, maha:[SH]pa:takam ucate || svamputra ra:jateyastu, ra:jateyastumataraṃ, yaścod·gr̥ṇatitaliṅgam·, Atipa:takam ucate || catuspa:taka Iti || bhrunaha, ṅa, vvaṅ a-
+<!-- photo SAS_1982-1983 -->
+<lb n="18r1"/> ma:ti rare jro vteṁ ,, puruṣaghna, ṅa, vvaṅ ama:ti saṁ puruṣa riṁ ra:t· ,, kanya cora, ṅa, vvaṅ amaliṁ kanya ,, Ugra ya jagat·, ṅa, vvaṅ alaky arabi maṅlumpati§[SH] kakanya ,, Ajña:tasamvatsarika, ṅa, vvaṅ asavaḥ tan sama:sa, Ika ta Inajarakən pa:taka || govaṇḍaṃ, ṅa, vvaṅ amati goḥ ,, yuvativaṇḍa, ṅa, vvaṅ amati histrī, vva-
+<lb n="18r2"/> ṅ amati rare, mvaṁ vvaṁ ha,ati vvaṁ huvus matuha, makadi vvaṅ amati bapebu ,, Agharadahi, ṅa, vvaṅ anunvani Umaḥ tan sakiṁ praṁ hetunya || Ika Inajarakə§[SH]n ūpa:taka || brahma:vaṇḍa, ṅa, vvaṅ amati brahma:ṇa, surapada, ṅa, vvaṅ akon aṅinuma tvakiṁ tan paṅinum tvak·, suvarnnastheya, ṅa, vvaṅ amalif ma:s·, kanyavighna, ṅa, vvaṅ ami-
+<lb n="18r3"/> ghnani rare tapvan· vnaṁ saṅgama ,, guruvaṇḍa, ṅa, vvaṅ amatyani guru, Inajarakən malapa:taka || sva:mputribajate, ṅa, vvaṅ arabya:naknya, matarabajate, ṅa ,[SH] vvaṅ arabi babunya, liṅga:gr̥ṇa, ṅa, vvaṅ andumpak· liṅga:, mvaṅə:ṁR̥mpək liṅga, Ika Inajarakən· Atipataka || 0 || Iti bhaṣma: tiga, śa, Idu baṁ, ma, Om̐ prajapati§
+<lb n="18r4"/> dipati nirvighna:ya namaḥ, Om̐ caturmukta devabhyuhaniṁ sarvvarogaya namaḥ, Om̐ bra:hma:dipati nirjjara maraṇa:ya namaḥ ,, pa:lanya haṅaṅgo§[SH] bhaṣma: tiga, dulurana hastiti hayo cavuḥ || nihan· saṁ hyaṁ bhaṣma: tiga, mariṁ rahi, A ,, riṅ ati, U, riṁ bahu, ma A U ,, Utpti hesuk abaṣma:, gumanti riṁ rahi
+<!-- photo SAS_1980-1981 -->
+<fw place="left" n="18">
+                     <num>18</num>
+                  </fw>
+                  <lb n="18v1"/>, tumuli vkas riṁ bahu, A U ma, stiti Ika: ,, bhaṣma: tṅaṅe, hati rumuhun·, gumanti riṁ bahu, vkas riṁ hati, U A ma, praliṇa Ika: ,, bhaṣma: sore, bahu ruhumu[SH]n·, gumanti riṁ rahi, tumuli riṅ ati ,, Ika: ta phalanya bhaṣma: riṁ rahi, la:mpah uni duk anom· tan pareḥ, hamateni voṁ matuha, hamateni voṁ yovaṇa: ,
+<lb n="18v2"/> hamateni bra:hma:ṇa, hamateni devaguru, hambuṅkar prasadḍa, hamateni L̥mbu, hamateni guru, haṅalap· dr̥vya:niṁ hyaṁ, hamaṅan· tan patuna, ha[SH]ṅluhuri sajə:ṁniṁ hyaṁ, Ilaṁ deniṁ bhaṣma: riṁ rahi || phalaniṁ bhaṣma:, riṅ ati, lampah uni duk lagy a:nom·, hahulaḥ tan pareḥ, haṅrabeni laraṅan·, hamighnani ka-
+<lb n="18v3"/> nya:, haṅrabeni pada lanaṁ, hamateni rare riṁ jro vtəṁ, hamlaḥ busu, hamateni hamtəṁ, hamateni voḍ tan padoṣa, hamateni voṁ sa:ḍu, §[SH] mcaḥ vot·, hambəñcaḥ bəbəṅan·, Ilaṁ deniṁ bhaṣma: riṅ ati ,, Utpti bhaṣma: riṁ bahu, lampah uni duk anom·, tan pareḥ, haṅalap· dr̥vya:niṁ hyaṁ, haṅalap-
+<lb n="18v4"/> ·, dr̥veniṁ kabuyutan·, hanunvani hala:s·, hanunva:ni humaḥ, hamahalasa, haṅr̥mpak payunan·, haṅrubuhakən· prasadḍa, Ilaṁ deniṁ bhaṣma:[SH] riṁ bahu, Ilaṁ sakveḥniṅ laku tan rahayu, vus kavuri ṅūni, vus pva kita mamaṅgiḥ bhaṣma: tiga, tan avalivali maniḥ hilaṁ mari dudū, Ilaṁ budḍinta prihən mariṁ raha-
+<!-- photo SAS_1978-1979 -->
+<lb n="19r1"/> yu ,, Iti pabhaṣma:n· || 0 || nihan krama saṁ hyaṁ rogasaṅha:ra, yan kita haR̥p tan katamana griṁ, sakalviraniṁ luputiṁ roga:, ya(n) ya piknaha riṁ griṁ, saka[SH]lviraniṁ la/ra\, tan lavas kita hanmū lara, yan maṅabhya:ṣa sa:risa:ri, nyan kramanya Agniḍa:raṇa, hana ta mūlaḍa:ra ṅaranika:, Uṅgvanya riṁ ḍəṭik· ḍəṭik· ,
+<lb n="19r2"/> ri vitniṁ puruṣa, la:van· yeka sūlaba:yu ṅaranika:, ha:(ś)ila den apagəh ayva molaḥ, matitis aṁgrana:sika:, hayva do Ika ṅulat·, kunəṁ[SH] masanya yan kalaniṁ tṅaḥ vṅi, śūnyakala hayva ruməṅvakən śabdaniṁ len·, kramanya, tutup· Ikaṁ ba:yu pahatguḥ, reḥnya nihan·, hayva vineḥ masaṅəta vtu§-
+<lb n="19r3"/> nya, sakiṁṅ iruṁ, Irika: kaṁ mūlaḍa:ra: gni R̥gəpən·, kadi damar tan pakukus·, rūpanira, ri buṅkaḥnikaṅ agni, hana ta padma I rika:, kadi lavə:§[SH]niṁ skar tarate Alavə: papat·, rakta varṇnanya, tuṁtuṅikaṅ agni riṁ na:bhī cakra, na:bhī cakra ṅaranya ri ma:ḍyaniṁ vudəl·, ri patṅaḥniṁ vudəl· mvaṁ mūlaḍa:ra ,
+<lb n="19r4"/> Ika: ta Inaran· maṅhoma, maṅurihan haranya bvat japanika:, Ika: kamūlastha:naniṁ dadi janma,  I ruhurikaṁ padma malavə: papat·, hana ta[SH] padma kadi ma:s varṇnanya, malava: nənəm·, Ika: ta Uṅgvan bhaṭa:ra bra:hma:loka, sira jagatkartta ṅaranira, magave ra:t kabeḥ, sira saṅkaniṁ dadi, sira ta mūla ,§
+<!-- photo SAS_1976-1977 -->
+<fw place="left" n="19">
+                     <num>19</num>
+                  </fw>
+                  <lb n="19v1"/> hayva vineḥ cala Ikaṁ ba:yu ṅka:na, kunaṁ saṁ hyaṅ a:gni hanerika:, hayva vineḥ halita, halanya yan alit aveḥ griṁ tmaḥnya, hetuniṅ agriṁ tan ha[SH]R̥p amaṅan·, saṁ hyaṁ hagni riṁka:na malit=hurubira, L̥su Ikaṁ śarīra, hasiṁ pinaṅan tan henak·, mataṅyan hayva linitakən·, Aparanta deniṅ a:ṅulaḥ sa-
+<lb n="19v2"/> ṅkaniṁ tan alita saṁ hyaṁṅ agni, ba:yu hayva vineḥ masaraga vtunya, hayva vineḥ malona tmən·, den sḍəṁsḍəṁ vtunya saṅkeṅ iruṁ, hayva vine[SH]ḥ malita ṅaranya, hayva pinatihara, hayva:maṅan tan kaR̥piṅ ati, halanya maveḥ hnək·, mutaḥ misiṁ lara kadadak·, yeka halanya, malit saṁ hyaṁṅ a-
+<lb n="19v3"/> :gni puharanya yan maṅkana, hayva vineḥ magə:ṅaranya, hayva manuruti paṅan hinumvaṁ turu, halanya habvat· Ikaṅ havak·, yan maṅkana, muvaḥ ya[SH]n manuvukana saṅgama, pasaṁyoga la:van· strī, magə:ṅ ikaṁ ba:yu yan maṅkana, pituvi yan aṅgə:ṅakna kroḍa, Agə:ṁ saṁ hyaṅ a:gni yan maṅkana, saṁsiptanika:
+<lb n="19v4"/> haguṁ Ikaṁ ba:yu hagə:ṅ ikaṅ a:gni, paṅanumananta, tumon i kita riṅ a:gni hiṅ alas·, riṅ umaḥ katunu, yan agə:ṅ haṅinya, Eṅgal bhasmi§[SH] sapinaṅan saṁ hyaṅ a:gni yeka rajaḥ, ṅa, Eṅgal bhasmi Ika śarīra yan maṅkana, mataṅyan ha:yvaṅgə:ṅakən sr̥ṅən·, hayva siṅhit iṅ amatimati, hayva
+<!-- photo SAS_1978-1978 -->
+<lb n="20r1"/> (maṅa)n kaṁ tan kinasnəṅaniṁ citta, halanya bvat alpa:yuṣa, vighna tka:, griṅan halanya, gəṁnya pa:pa katmu tmaḥnya, Iki paṅuñci kaba:yuviśeṣa[SH], nyan deniṅ aṅiriṁ, yan kita haturu priha vak·, ta luṅguh i tṅaḥ vṅi, maR̥p vetan·, ta:śīla padma:sana, sahaba:yu hayva vineh aśru, mantraknaṁ mantra ,§
+<lb n="20r2"/> Am̐, namo bhagavatyai rogasaṅha:ra:ya namaḥ, den ahniṁ kaṁ manaḥ, hayva salaḥ paran·, yan kita hataṅi riṁ sore haṅunyakən saṁ hyaṁ mantra, bhūta ma:[SH]siḥ, yan kita hataṅi riṁ tṅaḥ vṅi haṅunyakən saṁ hyaṁ mantra, deva ma:siḥ, yan kita hataṅi hesuk aṅunyakən saṁ hyaṁ mantra, sarvvajanma ma:siḥ, ri tlasiṁ saṁ hyaṁ mantra hiṅuccha-
+<lb n="20r3"/> :rakən·, Idəp saṁ hyaṁ Agni riṁ na:bhi padma: kadi damar tan pakukus·, I ruhurikaṁ padma: halavə: nənəm·, padma halavə: sadaśa, putiḥ varṇnanira, ri tṅaḥ§[SH] kadi maṇik· sphaṭikavarṇna kadi tejaniṅ aditya lumra:, ma, Om̐ Um̐ sūryya sahasra:ṅśu sarvvarogaharaṇaprati, hūm̐ hr̥daye namaḥ, hnəbikaṁ ba:yu hayva hayva sa§-
+<lb n="20r4"/> rag· mtunya, magəhakna riṁ hr̥dayamula, sira saṁ hyaṅ a:tma: ṅaranira, den asimpən hayva salaḥ tutur·, ri ruhuriṁ padma:lavə: sadaśa, hana ta padma§[SH] halavə: ro vlas·, Uṅgvanya ri vitiṁ gulu, śvetavarṇna, putiḥ ya, ri tṅaḥnya kadi tejaniṁ vulan pūrṇna, saṁ hyaṁ vindupūrṇna ṅaranira, huripiṁ ra:t sira, ye-
+<!-- photo SAS_1976-1977 -->
+<fw place="left" n="20">
+                     <num>20</num>
+                  </fw>
+                  <lb n="20v1"/> ka ba:yu viśeṣa, putiḥ śukla, tan patulutuḥ, nyan mantra ṅka:na, Om̐ kṣmūm̐ Amr̥ta sañjivanine namaḥ, phalanira minantrakən dirggha:yuṣa, tan ma:ti ya§[SH]n· tkaniṁ pati, saṁsiptanya hana janma ma:ti tan samasaniṁ patinya  kaliṅanika:, ri ruhurikaṁ padma halavə: rvavlas·, hana ta padma halavə: nəmbəlas·, riṁ rahi huṅgvani-
+<lb n="20v2"/> ra, kadi maṇik varṇna, ri tṅaḥnya kadi bañu muṅguḥ riṁ roniṁ kamumu, ma, Om̐ Im̐ namaḥ, sira ta devaguru, Ikaṁ ra:t kapnuhan denira, kadi śabdaniṁ catu§[SH]ssamudra gumuruḥ tan paruṅvan svaranira, hiṅətakna, yan ka:laniṅ hana lara tukup taliṅanta, kaR̥ṅə: svaranya, hayva tan prayatna, priḥ takvanakna ri saṁ guru, tutur
+<lb n="20v3"/> grakaśa, ya hana kaR̥ṅə: kadi taṅis· kadi svaraniṁ ghaṇṭa muniyanta R̥p· pratyakṣaha ri sḍəṁniṁ tka:niṁ roga tka:, saṁ hyaṁ jīva sira meḥ luṅha, hayva[SH] tan prayatna, R̥gəpən ikaṁ jña:narahasya sapavaraḥ saṁ guru, kaliṅaniṁ yan hana muni maṅkana, hyaṁniṁ ka:phala sira manaṅis·, mavaraḥ yan meḥ tka:niṁ pati ,, hayva
+<lb n="20v4"/> kita ṅgəgə: saṁ hyaṁ roga saṅha:ra, A:pan maveḥ saṅsa:ra, kahaṇḍəg saṁ hyaṁṅ a:tma, saṁsiptanya tan hana vvaṁ luputa saṁṅke kapatin·, A:pan ta[SH]n hana vvaṁ tuvuḥ vatuha deniṁ lkas·, ma, AUṣa:ḍa, sasayut·, yan sḍəṁniṁ pati tka:, Aṅhiṁ hiṅanya ka:ṇḍəg·, saḍavuḥ, rvaṁ ḍavuḥ, sadina rvaṁ dina, savula-
+<!-- photo SAS_1973-1974 -->
+<lb n="21r1"/> n· rvaṁ vulan·, nahan hīṅanya, nyan təṅranya yan· tka:niṁ pati, hyaṅ iṅ ka:pa:la manaṅis·, Akṣi tan panon·, taliṅa kuraṁ paṁR̥ṅə:, hilat tan paṁ§[SH]rasa ṣadrasa, hr̥daya mapanas·, yan maṅkana lakṣaṇaniṁ śarīra, hayva ṅaṅge saṁ hyaṁ roga saṅha:ra, halanya bvat· saṅsa:ra, kunəṁ yan tan ana lvaṁ lakṣaṇaniṁ
+<lb n="21r2"/> śarīra, ba:yu ma:riṁ, paṁrasa madəg·, Aṅgəhakna saṁ hyaṁ roga saṅha:ra, byakteṅgal varas·, mataṅyan vruha lakṣaṇaniṅ ha:la hayuniṁ təṅraniṁ śarīra, la[SH]van· yan pinrayogakəniṅ agriṁ, yan rabi, sa:nak·, Anak·, putu, yan magriṅ alara takvanana rumuhun·, yan hana təṅraniṁ pati riṅ avaknya, hayva pinrayogakə-
+<lb n="21r3"/> n saṁ hyaṁ roga saṅha:ra, halanya təvas saṅsa:ra, yan· gnəp sulakṣaṇaniṁ śarīra, prayogaknaṁ L̥kas kadiṁ śarīra juga, lavan· yan inabhya:ṣa sa:ri sira§[SH] kinatakutaniṅ avə:ḥ, bhūta, pisa:ca mavḍi, yeka phalanya, kunaṁ bratanya, hayva tan· təpətiṁ budḍi rahayu || Iti saṁ hyaṁ roga saṅha;ra, hayva cavuḥ, bva§-
+<lb n="21r4"/> tan mandi yan tan agəgvan· budḍi rahayu, ḍarmma budḍi juga gagə:n·, Ika: hevəḥnya || 0 || na:ma:śśiva:ya || 0 || Ikaṁ pinakama:rgganiṁ kapra§[SH]liṇan·, saṁ paṇḍita, tiga lvirnya, kaniṣṭa riṁ śivadva:ra, maḍya riṁ tuṁtuṁniṁ graṇa, Utama riṁ tutud·, Ika: ta katiga, nora muliḥ mariṁ janma: muvaḥ, ya-
+<!-- photo SAS_1971-1972 -->
+<fw place="left" n="21">
+                     <num>21</num>
+                  </fw>
+                  <lb n="21v1"/> n· kna kaR̥gəpaniṁ niṣka:lajña:na, ṅkana sinaṅgaḥ paramakevalya liṁ saṁ paṇḍita, sira acintyapada, ṅa, tan· kna deniṅ aṅənaṅə[SH]n·, ya sinaṅgaḥ Acintyapada sira, ya ta pataṅhyan tutugiṁ paṅavruḥ saṁ bhujaṅga sira saṁ riṁ kinakina, riṁ saṁ bodḍa śaiva, maṅkana, tan hana vaneḥ kumavruha ,
+<lb n="21v2"/> la:van tasaṁni laṅit· vibhuhnira, Uripiṁ ra:t· kabeḥ sira, tan hana vaneḥ || 0 || ka:laniṁ Urip=hapagə:ḥ tan salaḥ stha:na, tka:niṁ pati hiriṅən·[SH], piṁsorakna kaṅiṁ rahi den miṅsor·, Ika: saṁ hyaṁ na:da, Adu tuṁtuṁ riṅ gulu, ṅka:neṁ mūlakaṇṭa saṁ hya Oṅ ka:ra dadi tuṅgal·, hane vitniṅ hati stha:nanira, yan ka:-
+<lb n="21v3"/> vaśa denta, mukṣakna den· mūkta ṅke, I jroniṅ apaḍaṁ, kunaṁ yan· tan ka:va:śa, Iriṅən·, den miṇḍuhur a:nūt na:ḍi susumna:, Ama:rgga riṁ vunvunan· ,§[SH] ya sinaṅgaḥ sada:śivama:rgga, ṅa, Apaniṁku bhujaṅga, tan agavoka kavruhiṅ apaṅavruḥ, Aṅhiṁ śaiva budḍa juga ya tūtə:n· paṅavruhira, Apan sira:ṅavruhi kina-
+<lb n="21v4"/> vruhan·, hiṅanikaṅ ahisi la:van tan pesi, Ikaṁ ma:rgga tiga sira: laraṅan· tmən·tmən·, hayo vinarahakniṁ śiṣya hilahila, Aṅhiṁ Ika[SH]ṅ evəḥ śinabdakən· | cakrabhuvaneka:ḍa:tu, nḍya ta sira, saṁ hyaṁ tuṅgal· sira sinaṅgaḥ Añakrabhuva:na, Ikaṁ bhuva:na kabeḥ kavəṅku denira saṁ hyaṁ tu
+<!-- photo SAS_1973-1974 -->
+<lb n="22r1"/> ṅgal·, sira ta bhaṭa:ra sada:śiva, ṅa, sira sinaṅgaḥ prabhuniṁ ra:t kabeḥ, sa:lvavuṅiṁ ha:ti, tuṅgal kala:van laṅit kaṁ katon deniṁ voṁ kabeḥ, ya ku§[SH]vuṅiṅ hati Ika:, ya Aka:śa: īkaṁ tan patpi tan pa:nta, Aparanta deniṅ anuṅgalakən pikəkəsira, vyaktinya, kadyaṅganiṁ vuluḥ sinivak·, kuvunya ṅūni Ikaṁ
+<lb n="22r2"/> vuṁvaṅ i jro, muliḥ Anuṅgal· mariṅ a:ka:śa paranya, saṁsiptanika:, ya deva:mbarama:rgga:, parama:śiva:yoga ṅa, makama:rgga niścintya Ika:, Apan n[SH]ora:naṅənaṅən·, nira:bhipraya, tan hana saḍya:, nira:kṣara, tan pa:kṣara, tan hana śa:stra kabeḥ ,vuṁvaṁ niraka:ra, tan parūpa:, tan pavarṇna, vyoma nirmma:la sa:-
+<lb n="22r3"/> nibham·, Aparanta paḍanira, kady a:ka:śa tan pamala, maṅkana paraniṁ ma:ti, yan· kna deniṅ aṅaṅkuhakan· jña:na, pilihən ikaṁ mukta ṅke, la:vana§[SH] ma:rgga: vunvunan·, Ika ta paḍa, Ujariṁ tan vruḥ sahos·, ri kuvuṅiṅ hati la:van laṅit·, hayva maṅkana, tuṅgal ika: hayva va:vaR̥ṅəniṅ anavalani, I vitniṅ gulu d§-
+<lb n="22r4"/> eniṅ haṅidəp tuṁtuṁniṁ na:da saṁ hyaṁ Oṅ ka:ra Adu tuṁtuṁ, hayva tan· prayatna, la:van hayva vinehakniṁ śiṣya tan· voṁ menak·, piṅhitən·, ha[SH]yva biribiri, hayva:gampaṁ, vkasira para bhujaṅga riṅ a:naḍika: saṁ riṁ kunakuna, poma hayva tan prayatna: || 0 || Upamaniṁ sarvva: tumuvuḥ, sa-
+<!-- photo SAS_1971-1972 -->
+<fw place="left" n="22">
+                     <num>22</num>
+                  </fw>
+                  <lb n="22v1"/> hananya kabeḥ, kadi dyun mesi toya, bhaṭa:ra kadi sūryya: haneṅ a:ka:śa, dlən sira saṅke sor·, tuṅgaltuṅgal· sira tan akveḥ, tatha:pi nya ni[SH]kaṁ dyun· sevu sənva:kna ri sira, yadyastun salakṣakoṭini yuta kvehanya, sənvakne sira, tonənikaṁ toyeṁ ghaṭa, An· muṅgviṁ natar·, niyata pa§-
+<lb n="22v2"/> ḍa mesi sūryyavimba Ika toyeṁ dyun·, maṅkana bhaṭa:ra haneṁ hatiniṁ ra:t kabeḥ, tan hana kakuraṅan denira, Ibək· juga paḍa mesi sira hatinikaṁ sa[SH]rvva:bha:va, tan hana kakuraṅan denira, na:han paṅūpama: || 0 || I tṅaḥniṅ a:gni mesi sūryya, I tṅaḥniṁ sūryya, mesi candra, I tṅaḥni candra mesi śukla, I tṅaḥniṁ §
+<lb n="22v3"/> śukla nesi  śiva, na:bhy a:gni, Atisūryya, paruparu śukla, susumna na:ḍi śiva, ṅka:na stha:naniṁ tan pavastu, ṅka:noṅgvaniṁ tan· pa:ṅga, tan parū§[SH]pa:, tan pavarṇna:, tan pamala, tan paguṇa, tan padoṣa, suvuṁ taravaṁ, śūnya tan paha:mṅan·, sira sina:ḍya de saṁ paṇḍita, saṁ vruḥ rumgəpi sira, ya sinaṅgaḥ para§-
+<lb n="22v4"/> ma:yogi, ṅa, təṅra:nira yan· kna deniṅ a:ṅabhya:ṣa, yatika:ṅga tan paṁra:sa:ṅga ṅaranika:, sukaḍyatmika: juga sira, An· maṅkana ri kapa[SH]tinta tambe, yan katmu katuturakna nitya, de saṅ aha:R̥p aṅabhya:ṣa pati hayva ta:simpaṁ, kady aṅadu pucukiṁ rvi, kady anurupi lyaṅiṁ dom·, maṅka-
+<!-- photo SAS_1969-1970 -->
+<lb n="24r1"/> nika:, Ikaṁ parama:raha:sya tan· tūtənika:, havaniṁ tr̥ṣṇa Ika:, hayva kveh inidəp·, Amuha:ra pa:pa riṁ kapraliṇan·, tan apahos· tə[SH]ṅran·, I tka:niṁ kapraṇantikan·, Apan asiṁ  hr̥daya juga, Akṣi tar ppanoniṁ sarvva katiṅhalan·, yan maṅkana hayva tan prayatna:, R̥gəpən taṁ jña:na tan paha:-
+<lb n="24r2"/> mṅan·, tan paha:mṅan·, ṅa, tutugiṁ tan paṅhiḍəp· Ambək· maṅkin·, ri sḍəṅiṅ hurip· kramanya śūnyanən·, ya sira Oṅ kara: praṇavajña:na, ṅa, ka[SH]di ga:gana tan pamegha, suvuṁ huvuṅuvuṁ, sira parama:rtha jña:na ṅaranira, tūtəniṁ kapatin·, yan saṁ hyaṁ praṇava ba:yu mukṣeṁṅ a:mpru, pralīṇeṁ saṁ hy-
+<lb n="24r3"/> aṁ praṇava, kunaṁ yan· mukṣa: margga susumna na:ḍī saṁ hyaṁ praṇava, makahavan tuntun mareṁśivadva:ra saṁ hyaṁ ha:tma:, Alivat ma:reṁ dva:daśa:ṅgu[SH]la, sanugraha bhaṭa:ra tinūt·, yan· mukṣeṁ dva:ra I ruhur·, yaniṁ na:bhī kunaṁ, paḍa denira ha:ka:śa nirmma:la, ṅa, prabhedanya mukṣa ri śūnyaniṅ ampru ,
+<lb n="24r4"/> yan umiṅsor·, yan· śūnya ri ka:ḍalīpuṣpa, ya Umiṇḍuhurika:, kevala hiriṅən·, sanugraha saṁ hyaṁ kaśūnyan·, sira juga pinakaka[SH]ñciṁ hayva salaḥ para:niṁ tutur·, den· śūnya juga, Ayva:ṅhiḍap· ra:t· bhuvana, pa:pa Ika:, yan maṅkana, nahan hetu saṁ hyaṁ Oṅ kara hi so§-
+<!-- photo SAS_1967-1968 -->
+<fw place="left" n="24">
+                     <num>24</num>
+                  </fw>
+                  <lb n="24v1"/> r i ruhur tinulisakən·, maṅkana kramaniṁ lakuniṁ kapatin·, saṁ vruh i pa:nuṅgalira saṁ hyaṁ praṇava ri sor mvaṅ i ruhur·, I vruha saṁ paṇḍita yan tu§[SH]ṅgal· || Upadeśa:nira para bhūjaṅga ri ṅūniṅūni, varaḥvaraḥ riṅ ana:ḍīka:la Ike || 0 || <seg rend="check">[modre]</seg> || ka:laniṁ kapraṇanti-
+<lb n="24v2"/> kan· || <seg rend="check">[modre] </seg>| ka:laniṅ ahurip sira || 0 || nihan kaṁ hinaranan· saṁ hyaṁ Oṅ ka:ra riṁ śarīra, lyaṅ i vitniṅ hati, vitniṁ ba:§[SH]yu hanərus mariṁ vunvunan·, pinaka:havaniṁ ha:rdḍanaraiśvari yan məsa:t· sakeṁ śarīra, Inaranan· ha:rdḍana:raiśvari hiṁ śarīra, sakiṁ Ibu, ra:ḥ, dagiṁ
+<lb n="24v3"/>, sumsum·, sakalviraniṁ sasaranduniṅ a:ṅga sakiṅ ibu, kaṁ sakiṁ lanaṁ, ba:yu, hiku hinaranan· ha:rdḍa:naraiśvari, riṁ ba:yu lamun apasaḥ lan sara[SH]nduniṁ śarīra, Iku papasahiṁ ha:rdḍanaraiśvari, śūnyakna Ikaṁ haka:śama:rgga, Aka:śama:rgga, ṅa, lyaṅiṁ buṅkah i tuṁtuṅiṁ hr̥daya, ya Ika: hinaranan· A:-
+<lb n="24v4"/> kaśa:, norana ba:yu, nora:na śabda, panuṅgalaniṁ tutur lupa || Inaranan bhaṭa:ra tinūtiṁ pati saṁ paṇḍita, nya rūpata:jña:na ,, Utta§[SH]ma lamun mūkṣa riṁ hapayajña: || 0 0 ||  rva bhineda ṅaranira, Am̐ Aḥ, tuṅgal tuṅgal· rūpa:nira, Aṅhiṁ hanuśvara prabheda la:van visa:rgga:, Ikaṁ vi-
+<!-- photo SAS_1965-1966 -->
+<lb n="25r1"/> sargga: ba:yutatva, Ikaṁ hanuśvara hagnitatva, ndi ta stha:naniṅ hagni, riṁ na:bhi pradeśa:, ndi ta stha:naniṁ ba:yu, riṁ tuṁtuṅiṁ graṇa, ndi ta patmuniṅ a:gni la:van ba:[SH]yu, riṁ mulahr̥daya, ya vitniṁ trina:ḍi trus maluṅlaṅan mareṁ śivadva:ra, mataṁnyan· hikaṁ ba:yu kesəp· sakeṁ hiruṁ tṅa:n·, Am̐ svaranya, maṇḍəliṁ na:bhī, Aḥ svaranya ,§
+<lb n="25r2"/> maṇḍəliṅ iruṁ kiva:, papupulnya ri ma:ṇipūra hr̥daya, Ikaṁ sinaṅgaḥ sūkṣma, ṅa, ṅka: hinaranan hardḍa:naraiśvara, liṁ saṁ paṇḍita, maha:prabha: jyotiṣa ,[SH] sara:t katejan denira yadyapin iṁ triloka, ri papasaḥnikaṁ tri rva bhineda Ika ta vaṅunən maniḥ, Ikaṁ nistr̥ṣṇa: de saṁ vriṅ upadeśaka raha:syan sakeṁ guru
+<lb n="25r3"/>, nyan hikaṅ a:gni, ya prakr̥tti, Ikaṁ ba:yu ya puruṣa, mataṁnyan prada:na puruṣa, sira saṁ paṇḍita, Intepamiyakniṁ prada:na la:van puruṣa, vyakti§[SH]nya yan patmu pagə: Ikaṁ jīva:, pūrṇna Ikaṁ pitta, ṅa, Ampru, ṅka: toṅgvan saṁ hyaṁ rudra: riṅ atikr̥ṣṇa:, sira ta sinaṅgaḥ viṣṇu, sinaṅgaḥ na:ḍi lohanalaga§
+<lb n="25r4"/> kuməmbəṁ taṭa:sira talaga riṁ śarīra, sira ta sinaṅgaḥ śiva parama:, tan ana tan inandəlan denira, Atikr̥ṣṇa: vkasni təL̥ṅika:, ya Ika:[SH] śūnya:tiśūnya, ya sinaṅgaḥ Atma:liṅga: liṁ saṁ paṇḍita, tan· vetan· tan kidul· tan kulon·, tan i ruhur tan i sor·, mukta ṅke ,
+<!-- photo SAS_1963-1964 -->
+<fw place="left" n="25">
+                     <num>25</num>
+                  </fw>
+                  <lb n="25v1"/> hayva pinetiṅ adoḥ tan katmu, sasar puharanika:, ya sinaṅgaḥ vitniṁ bhuvana riṁ nora, ya hana, ya nora, ya taṅi ya:turu, ya Upadeśa[SH], ya nirdeśa, hayva siṁ vruha:ḍika: rva bhineda, ya bapebu sira, Etuniṁ, kinuñci riṅ ati tan ana vruha riṅ aranira || pamsatan saṅ hyaṅ atma:, kamokṣan si-
+<lb n="25v2"/> ra, 5, pinakastha:nanira mokta riṁ na:bhī, muvaḥ riṁ hr̥daya, yaniṁ kaṇṭa, yaniṁ talu, yaniṁ tuṁtuṁniṁ graṇa, yeka sinaṅguḥ pañcaparama:rtha, Uttama yan ila[SH]ṅiṁ na:bhī, yan ka:vaśa hilaṅiṁ ba:yu ḍaraṇa, paḍa ṅaranira, maṅastinanya || 0 || hana na:ḍīstha:na, ṅa, bnəriṁ pusə:r uṅgva:nya, I maḍyaniṁ sta:nḍana:ḍī, ṅka:na t§-
+<lb n="25v3"/> oṅgvaniṁ cakra na:ḍī, tṅahiṁ cakra na:ḍī, padma na:ḍī, Akṣara ṅka:na, Am̐, riṁ padma: na:ḍi ṅka: ta ṅgvaniṁ prakr̥tti la:van puruṣa, masaṁyo[SH]ga, prakr̥tti, ṅa, devi gayatri, puruṣa, ṅa, bhaṭa:ra sada:śiva, sira tiki sinaṅgah a:rdḍanariśvara, paranta rūpanira ri sḍaṅiṁ pasaṁyoga, kaḍi dama:r ttan pa§-
+<lb n="25v4"/> kukus·, I tṅahira saṁ hyaṅ a:gni, saṁ hyaṁ sūryya, I tṅahira saṁ hyaṁ sūryya, saṁ hyaṁ vulan·, ri tṅahira saṁ hyaṁ vulan· saṁ hyaṁ śūkla, ṅa, pa[SH]naṅkaniṁ ka:ma, rūpa kadi hbun haneṁ tuṁtuṅiṁ alaṅalaṁ, I jroniṁ śukla, Irika ta Uṅgva:n saṁ hyaṁ śiva, pinaka:Uripiṁ ra:t kabeḥ, kunaṁ yan apasaṁ
+<!-- photo SAS_1965-1966 -->
+<lb n="26r1"/>, pasaṁyyoganiṁ prakr̥tti la:van puruṣa, Ika taṁ jiva muliḥ mariṁ puruṣa, Ikaṁ prakr̥tti kari || 0 ||niska:la riṁ tuṁtuṅiṁ rambut·, nira:śraya, ro vla§[SH]s aṅgula sakiṁ tuṁtuṅiṁ rambut·, paraniṁ liṇa || 0 || nihan taṁ ja:nmaraha:sya kayatnakna, kalaniṁ rogasaṅsara, śivapra:ptaviḍi, I sḍaṅiṁ hurip· haṅənta-
+<lb n="26r2"/> kəntak·, keṅətakna pasūknya ṅke yy avakta, surupnya ri guhaniṁ praḍana, lumkasa ta kita masa:maḍi, kramanya, citta rumgapa tuṅgal·, kala:van bhaṭa:ra[SH] viśeṣa, Ayva ta kita gumga hana riṁ janmasvabha:va, Ulihanika:, Alokecakravat·, Apan iṁ janma tan vruḥ riṁ kapatinya, kadi cakraniṁ ratha, maluy· mariṁ ma:-
+<lb n="26r3"/> ḍyapada muvaḥ, tamolaḥ maṅhiḍap· saṅsara, ya ta pa:pa, ṅa, hayva rumgəp tan hana, tan paśraya, ṅa, tan molaha gamoṅan·, haṅalaya, ṅa, Apa[SH]n tan paṁR̥gəp· citta viśeṣa, luput· yan maṅkana, ndy anuṁ R̥gəpənta ri sira, vitnya matutura ri hananiṁ citta mahniṁ ya pinaka:pusapus·, paha:pagəḥta denta:naṅkəpakəna
+<lb n="26r4"/> tuturta ri bhaṭa:ra viśeṣa, tumamaha: ta kita ri daL̥m pahoman·, ṅa, vyomamaṇḍala sphaṭika, ṅa, ri vitniṅ hatinta, ya pahoman·, ṅa ,[SH] ri paguha:guha:nya:vakta kabeḥ, ṅka:na ta lumkasa mayajña:, majapa, masama:ḍi, masama:hita, ṅa, gumgə nirmma:lajñana, maṅka:na deniṁ manəṅətakən·, ri
+<!-- photo SAS_1963-1964 -->
+<fw place="left" n="26">
+                     <num>26</num>
+                  </fw>
+                  <lb n="26v1"/> patmunta la:van· bhaṭa:ra viśeṣa, saṅ haneṁ hr̥dayasphaṭika:, ri guha:niṁ pusuḥpusuḥ, hayva ta kataman· dr̥vya vnaṁvnaṁ sapraka:ra, mvaṁ tr̥ṣṇa:, Ana[SH]k· rabi, rajaḥ, tamaḥ, moha, dambha, ma:tsaryya, kimburu, grahi, grahaka:, piśuna, Irṣya:, nda:ḥ śrava:ka ta kita, ri tan hana: pəkuL̥n· vaneḥ, Aṅhiṁ bhaṭa:ra
+<lb n="26v2"/> viśeṣa sira viśeṣa sira kayatnaknanta, riṁ sama:ḍi sanḍijña:na sama:hita, ya jña:na nirmmala, sphaṭika:, ṅa, ri katəmvaniṁ tuṅgal· denta, hana ta y a:§[SH]mbək tankvatankva, ṅa, Ekatva katə:mvan· bhaṭa:ra, mapagə:ḥ subhadḍa tan liṅgar a:tguḥ pratipatti, ṅa, Atiśayayukti nīti bha:kti, prayatna riṁ nolahaniṁ citta nirmma:la, la§-
+<lb n="26v3"/> ṅgə:ṁ tuṅgəṁ kaniraśrayan·, vruḥ riṁ kapralīnan·, yatha: hniṁ ṅa, mandəl i pa:da bhaṭa:ra hniṁniṁ hniṁ, yata: sanḍiniṁ hniṁ sihniṁ[SH] nitya, Asaha:nikaṅ anirmma, Anirmma:la, ṅa, L̥tuḥniṁ citta, yata: Asaha:na riṁ jña:na sphaṭika:, ṅa, hnəhniṁ ta numa:dyakan katə:mvaniṁ śūnyata nissaṅśaya, ya§-
+<lb n="26v4"/> ta: sinaṅgaḥ yogiśvarajña:na, ṅa, hanabha:va kita tan dadi salaḥ polaha:, bhaṭa:ra sira sira Ulahanta, Eka:citta ta kita, hayva bhra:nta:mba[SH]k· vya:para,  bhaṭa:ra juga:mbəkanta, Anikarṇna ta: kita, tan patiR̥ṅə:R̥ṅə:nən·, bhaṭa:ra juga vulatananta, tan· patikumḍapa, bhaṭa:ra juga sira kḍapaka-
+<!-- photo SAS_1960-1962 -->
+<lb n="27r1"/> nta, anasa ta kita, tan a:mbəka:mbəkana, bhaṭa:ra juga sira:mbəkanta, maṅkana kramanira saṁ vruḥ riṁ kapatin·, ya ta sinaṅgaḥ saptasama:ḍi, ṅa, mvaṁ sa[SH]ptasamahīta, saptabudḍya:ṅgamamargga:, ṅa, ya: yajña pitu, ṅa, pinijəḥ kinəmpəḷ· pva rasa:niṁ pitu, hatma:han ta ya nəm·, nəm atma:han ta ya lima:, lima: ma-
+<lb n="27r2"/> tma:han ta ya pat·, pat a:tmahan ta ya tlu, tlu matma:han ta ya rva, rva: matma:han ta ya tuṅgal·, ya ṭa: sinaṅgaḥ Ekataraparama:, ṅa, rasa:niṁ tan pamba§[SH]k· ya rasa viśeṣa, ṅa, rasaniṁ tan pativulatvulati, ya rasa:niṁ vulat viśeṣa, rasaniṁ tan· polaḥ, ya rasaniṁ Ulaḥ viśeṣa, Enak· pva ya vruḥta
+<lb n="27r3"/> Antuṅgal· kala:van bhaṭa:ra viśeṣa, sa:tmya:va: śarīranta, dadi ta kita mapisan maraṅkəp la:van bhaṭa:ra viśeṣa, samipa, milu magave ta§[SH]n ilu ginave, ya Ardḍa:na:rīśvara, ṅa, ya ta sinaṅgaḥ rasapiṇḍa, ṅa, Avak mari molaḥ, vtaṁ maryy a:mbəkan·, gulū ma:ryy asgu, tutuk·ta huvus· mṅa: ,
+<lb n="27r4"/> Uśvasanta maryyomili, śocanta maryya kumḍap·, ya ta sinaṅgaḥ piṇḍadrava:, ṅa, dumra:va Ikaṁ samaṅkana kveḥnya, bhaṭa:ra viśeṣa pa[SH]ṅavruhanta bhaktinta, nihan keṅə:taknananta, sakveḥnikaṁ saṁ hyaṁ Urip· viśeṣa ṅke ryy avakta:, riṁ taṅan·, riṁ kulit·, riṁ dagiṁ, riṁ Autvat· ,
+<!-- photo SAS_1957-1958 -->
+<fw place="left" n="27">
+                     <num>27</num>
+                  </fw>
+                  <lb n="27v1"/> ri tahulan·, ri sumsum·, ri vuṅsilan·, ri paruparu, ri ha:ti, riṅ ampru, riṅ inəban·, ya ta makukud· makəmpəl·, satmana:ḍuḍuk·, ṅka: riṁ§[SH] hr̥dayavīva:ra sphaṭikaratna: ri guhaniṁ pusuḥpusuḥ, ṅka:na riṁ ḍaḍanta, ya ta: kumtə:r·, ndaḥ rasa:piṇḍa kinəmpəl·, ṅa, yan maṅkana, hayva tan· sa:ra
+<lb n="27v2"/> : kita, Irika sḍaṁ maṅkana, priḥ petta ya rasa:nya, litlit paha:bnər·, Ikaṁ hniṁ Iṅə:takna:, mvaṁ polaḥta la:van saṁ hyaṁ pramma:ṇa viśeṣa, Iṅə:§[SH]tiṅə:t· henak·, pahapantəs·, paha:vas· denta ruməgəp· bhaṭa:ra viśeṣa, A:pan tan hana rowaṁta mukta ṅke valya vaneḥ, saṅkeṁ hyaṁ bha§-
+<lb n="27v3"/> ṭa:ra viśeṣa, ya ta: mataṅhyan· prihə:n təməntəmən· sira ka:yatnakna, mataṅhyan tan kasa:sara kita, yan paveha nugraha: ri kita, yan kavnaṁ pva sira[SH] prihən ataḥ juga sira denta, hayva pramada:, sira ta sinaṅgaḥ rahina sada:, ṅa, vaneḥ Ivəḥ ta: paḍəm iṅətiṅə:t· polaḥta la:-
+<lb n="27v4"/> van saṁ hyaṁ viśeṣa, yan lupa ta kita: ryy avakta, tatan hana katon·, tan hana kaR̥ṅə: ri pa:ntaraniṁ lupa mvaṁ tutur·, hana ta śabda kaR̥§[SH]ṅə: I ruhur denta, ka:liṅanika:, makona maṅajya matguḥ I saṁ hyaṁ viśeṣa, pkul· riṁ jña:na paha:tguḥ, paha:pagə:ḥ ta: ri panuṅgalta  la:van·§
+<!-- photo SAS_1960-1962 -->
+<lb n="28r1"/> saṁ hyaṁ viśeṣa, Apisan ta kita mvaṁ bhaṭa:ra para:martha viśeṣa, R̥gəp ta sireṁ sama:ḍi, taṅkas ta sireṁ samahīta, yata:nyan tan saṁsa:ra dentayajña: ,[SH] ya ta: samyajña:na priti Upatti parama:rtha, ṅa, vruhan tuṅgal· mvaṁ bhaṭa:ra śiva parama:rtha, hayva ta sigasigun·, hayva kundukunduL̥n·, hayva tan atutur de-
+<lb n="28r2"/> nta: magə:hakən· bhaṭa:ra śivaja:ti An viśeṣa sira, ndaḥ vulatīyy avakta, hana teja: ka:ton· denta, kadi Apuy ī lambuṅiṁ daṁdaṁ, hanan ka[SH]di dilaḥniṁ ta:ji ginurinda, hanandamar teja Ika:, ya saṁ hyaṁ viśeṣa yan maṅkana, Agya luma:mpaha:mīśata: saṅke ka:hananika:, Ayva: ta kita pramada:
+<lb n="28r3"/> yan maṅkana, R̥gəpika si pati t=hə:rt=hə:r·, bnərakan paṅavruḥta: pahatguha:yva liṅgar·, denta tumūtakən bhaṭa:ra viśeṣa, yava:t· maṅkana denta[SH]ṅhə:nakən sama:ḍī, mvaṁ sama:hīta:, I sḍaṁta:yajña:, byakta kapaṅgiḥ Ika: tuṅgalta: mvaṁ bhaṭa:ra viśeṣa, ya kamoktan· ṅaranya, ya muktapada, ṅa, sa:tmya§
+<lb n="28r4"/> vaya:vasūkṣma riṁ parama:rthaviśeṣa, mapisan acintya la:van· bhaṭa:ra śiva:, ta:va:t· mokṣa viśiṣyate, ta:va:t· mokṣa vi§[SH]śiṣyate, ta:va:t· mokṣa viśeṣa, ṅa, yava:t· miśra ri saṁ hyaṁ śiva parama:rtha yan maṅkana, Umoriṁ ja:ti viśeṣa, ya vinuvusaṁ paṇḍita, §
+<!-- photo SAS_1957-1958 -->
+<fw place="left" n="28">
+                     <num>28</num>
+                  </fw>
+                  <lb n="28v1"/> saṅ umaṅguhakənta viśeṣaniṁ jña:nanira, sira ta muliḥ riṁ ja:tika:ruṇa, ya ta kamoktan· saṁ hyaṁ śiva jatika:ruṇa, sira ta vnaṁ mamrasidḍa:kən· L̥pasaniṁ sarvva:tatva, ṅūniveḥ kavitan kadaṁ kula gotra, mitra: vvaṁ sanak·, tlas karuhun· sakveḥniṁ tan ucapən sarvva:k§-
+<lb n="28v2"/> leṣaniṁ śarīra || 0 || Iti saṁ hyaṁ kahuvusan· ja:tiviśeṣā, maha:raha:sya sira, laraṅan· tmə:n de saṁ bhujaṅga śaiva bodḍa || 0 || 0[SH] 0 0 || 0 || trina:ḍī, ṅa, Iḍa:, piṅgala:, susumna | tryakṣara, ṅa, A:, U, ma:, ka:ḍī təṅən· A:vaniṁ skul· trus maluṅlaṅan· tkeṁ L̥̄t·, A, Akṣara§-
+<lb n="28v3"/> nira, bra:hma:devata sira, tejanira kadi sūryya vahu mtu, AL̥va:ha, ṅa || piṅgala:, ṅa, na:ḍī kiva:, Avaniṁ vve, trus maluṅlaṅan· tk§[SH]eṁ poyuhoyuhan·, U, Akṣaranira, viṣṇu devata sira, tejanira kadi candra pūrṇna, rasava:ha, ṅa || susumna:, ṅa, na:ḍī ri tṅaḥ, Avaniṁ ba:yu mareṁ§
+<lb n="28v4"/> śivadva:ra, ma, Akṣaranira, rudra devata sira, tejanira kadi Apuy· ri ka:laniṁ maha:pralaya, praṇava:ha, ṅa || kunaṁ Ikaṁ Om̐ ka:[SH]ra riṁ guhyapada, na:ḍy agə:ṁ tan kasla:tan· rakta, I pa:ntaraniṁ pusuḥpusuḥ, sada:śiva hyaṁnya ṅka:na, tejanira kadi tejaniṁ sūryya sahasra k-
+<!-- photo SAS_1955-1956 -->
+<lb n="29r1"/> oṭi, rva:ṅ kaliṅkiṅan dava:nya saṅkeṅ hati tkeṅ hulu || nyan kayatnan duk· bhaṭa:ra mvaṁ saṁ hyaṁ prama:ṇa meḥ mūra sakeṅ aṅga, hana sira riṁ brahma:stha:[SH]na, ṅa, riṅ antahr̥daya, pamyaktananta, mapanasiṁ hr̥daya, ri ka:lanira:n paṅanti ṅka:na, Ama:rgga sira riṁ Om̐ ka:ra, ṅa, ri vitniṁ pusuḥpusuḥ, Aṅkatnira§
+<lb n="29r2"/> saṅke rika:, mamarantika sira riṁ trina:ḍī, Irikaṁ Annava:ha, pra:ṇava:, kunaṅ Ikaṁ  na:ḍī tṅən· hurip·, ya jagrapada, ṅa, ya:ditya kunaṅ Ikaṁ[SH] na:ḍīnira kiva:, Atma:, ya svapnapada, ṅa, ya candra, Ikaṁ pra:ṇava:ha, ya na:ḍī /I\latniṁ taraju, ṅa, na:ḍī tṅaḥ Ika:, pra:ṇava:ha rīlatilatnya, ndya lavakaniṁ
+<lb n="29r3"/> taraju, Atma: la:van· Urip·, Ika: ta R̥gəp mareṅ ilatiṁ taraju, sahninira sakiṁ  trina:ḍī, Amgil sira riṁ puluṁ rasa, ṅa, Irikaṁ guruṅguruṅan·[SH], sahira saṅke rika: mamaranti sira riṁ vindu teja, ṅa, Ikaṁ rahi, Aṅkatnira saṅkerika: . mamaranti sira riṁ vindu, ṅa, riṅ ka:pa:la, Aṅkatnira saṅkerika:, ma
+<lb n="29r4"/> maranti sireṁ na:ḍa, ṅa, riṁ śika:gra, saḥnira saṅkerika:, mamaranti sireṁ niṣkala, ṅa, dva:daśa:ṅgula saṅke keśa:gra, dadi saṅkeṁ prakr̥§[SH]ti, lpasakna saṅke prakr̥ti, vruḥ pva kite samaṅkana, sa:mbut Ikaṁ jña:na tan pahamṅan·, Ikaṁ tan· patutugan·, tan pataṅhi tan paturū, tan paṁR̥ṅə:
+<!-- photo SAS_1953-1954 -->
+<fw place="left" n="29">
+                     <num>29</num>
+                  </fw>
+                  <lb n="29v1"/> tan paṁrasa, hayva hana katoliḥ, nistr̥ṣṇa juga, ya Adidrava ṅaranya, mast pamaṅsil· ṅaranya, paramarahasya sira || 0 || tlasta ṅabhakti[SH], ṅavaṅi, hanugraha, maṅluluhaṁ, tpu tavar, vasəḥ jə:ṁ, handilat·, ma, Om̐ Om̐ ka:lagni rudra:ya namaḥ, nuhun·, ma, Om̐ gmum̐ sada:śiva:ya namaḥ, tlas·, §
+<lb n="29v2"/> pataṅanan·, knani bhasma, Astramantra kabeḥ || ta:ṅalap· tuñjuṁ valulvan·, rujit tibakniṁ daśadeśaniṁ śarīranya, kavacamantra, tla[SH]sta:ṅalapa lalaṁ tluṁ tuvuḥ Usapakniṁ śarīranya, midər, 3, tlas·, gunti, pataṅanan·, ta ṅalap· tuñjuṁ, tutulaṁ caṇḍana, tutulaṁ riṁ śivadva:ranya, piṁ, 3
+<lb n="29v3"/>, ma, Om̐ (g)mum̐ śadaśivaya namaḥ, sa, halap· hatma:niṁ ginuntiṁ ma:van pada:ṅguṣṭa tṅən·, ma, Om̐ Am̐ Atma:ne namaḥ, tlas·, dagḍi, ma, Om̐ hūm̐ raḥ[SH] phaṭ· Astraka:lagni rudra:ya namaḥ ,, ta ṅalap· tuñjuṁ valulvan·, tutulakniṁ caṇḍana, harasakniṁ śivadva:ranya, Iḍəp maliḥ śarīranya paripūrṇna, saṁ hyaṁ Atma: ma-
+<lb n="29v4"/> luyaṅ antaḥhr̥dayanya, ka:rasodanani, sma, kon lumuḥ taṅanya, ṅa, glari sva:nuṣṭa:nanta:, bra:hma:ṅga, śivaṅga, sma, halapi skar·, va[SH]veṁ śivadva:ranya, glari sva:nuṣṭananta ka:di ṅūni, bra:hma:ṅga, śivaṅga, saṁkpi pūja:, bhasma, śi ,, nuhun puṣpa ,, siratana toya rumuhun·, praḍa-
+<!-- photo SAS_1955-1956 -->
+<lb n="30r1"/> kṣiṇakna, ma, Om̐ bhūr, bhuvaḥ, sva:ḥ, mariṁ ruhur·, tritatva, ma, tlas·, tītani || 0 || vusiṅ abhakti, hamaṅan· glar saṅa, tpuṁ tavar, cucuka[SH]n·, hadudus·, hanukiti dom·, hilir·, hlis·, catur kumbha, saṅaska:rani, puṣpagotra, kuśaparṣa, dagḍi, mr̥ttikaraṇa, jayajaya, bhasma, śir-
+<lb n="30r2"/> oviṣṭani, tlas· tirtthani ,, 0 ,,
+<!-- photo SAS_1953-1954 -->
+<fw place="left" n="30">
+                     <num>30</num>
+                  </fw>
+                  <!--<p>[fol30v] [rajaḥ]</p>-->
+               </ab>
+            </div>
+         </div>
+         <div type="translation">
+        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+    </div>
+         <div type="commentary">
+        <!-- Comment regarding your edition such as the following example -->
+        <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+    </div>
+         <div type="bibliography">
+            <p>Transliterated by Arlo Griffiths, Ida Bagus Komang Sudarma &amp; I Gde Agus Dharma Putra based on photographs</p>
+            <!--<p>original set of photos references in the transcription below</p>
+<p>https://sharedocs.huma-num.fr/wl/?id=ImN90k5xgnX4nTHRuyfduH0zFaMQP0kj</p>
+<p>new set of tiff photos</p>
+<p>https://sharedocs.huma-num.fr/wl/?id=jOSimD60lhzOxwz2kJb7nX32ufjtLtzS</p>-->
+            <listBibl>
+               <bibl/>
+            </listBibl>
+         </div>
+      </body>
+   </text>
+</TEI>
