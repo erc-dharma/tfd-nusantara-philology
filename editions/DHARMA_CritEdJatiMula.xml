@@ -44,8 +44,8 @@
                                     <author>-</author>
                                     <title>Jati Mula</title>
                                         <colophon>
-				                             <quote type="diplomatic" xml:lang="osn-Latn">tlәs· sinulis· ri saga⟨⟨ra⟩⟩ visesa, pun·</quote>
-			                            </colophon>
+				       <quote type="diplomatic" xml:lang="osn-Latn">tlәs· sinulis· ri saga⟨⟨ra⟩⟩ visesa, pun·</quote>
+			     </colophon>
                                     <!-- colophon should be structured with quote elements with attributed @type and @xml:lang when necessary -->
                                 </msItem>
                             </msContents>
@@ -71,8 +71,33 @@
                             <msIdentifier>
                                 <msName>Constituent parts of Kropak 19, 29, 8, dan 3</msName>
                             </msIdentifier>
+                        	<msContents>
+                        		<msItem>
+                        			<author/>
+                        			<title/>
+                        			<!--<colophon>
+                                        <quote></quote>
+                                    </colophon> -->
+                        		</msItem>
+                        	</msContents>
+                        	<physDesc>
+                        		<objectDesc>
+                        			<p>Lontar manuscript. 28 leaves in Old Sundanese script. The manuscript leaves are scattered in several bundles and mixed with other texts </p>
+                        		</objectDesc>
+                        		<handDesc>
+                        			<handNote xml:id="B_H1" scriptRef="class:57470 maturity:83215">
+                        				<abbr type="hand">B:H<hi rend="subscript">1</hi></abbr>
+                        				<p>Main hand of the manuscript, Old Sundanese script</p>
+                        			</handNote>
+                        		</handDesc>
+                        	</physDesc>
+                        	<history>
+                        		<p>This manuscript is part of the <origPlace>Kabuyutan</origPlace> Ciburuy collection in Garut, West Java, Indonesia. It's unclear how long these manuscripts have been there, but based on their materials and content, there's a strong indication that these manuscripts date back to a period when Hinduism, Buddhism, and local beliefs were still the dominant faiths among the local community, specifically <origDate>between the 15th and 18th centuries</origDate>. Due to generations of custodial care, the manuscripts, stored in three chests and several small wooden boxes, have become disorganized. Consequently, the page order of the Jati Mula text is generally no longer sequential. However, this particular text can be visually identified by the unique style of its script, which distinguishes it from other manuscripts.</p>
+                        	</history>
                             <msFrag xml:id="B19">
-                                <head><abbr type="siglum">B<hi rend="subscript">19</hi></abbr></head>
+                            	<!-- 
+for some reason, <head> is not allowed here, see https://github.com/erc-dharma/tfd-nusantara-philology/issues/224, so I have commented these cases of <head> on 2025-05-28
+			 <head><abbr type="siglum">B<hi rend="subscript">19</hi></abbr></head>-->
                                 <msIdentifier>
                                     <settlement>Garut</settlement>
                                     <institution>Kabuyutan Ciburuy</institution>
@@ -80,7 +105,7 @@
                                 </msIdentifier>
                             </msFrag>
                             <msFrag xml:id="B29">
-                                <head><abbr type="siglum">B<hi rend="subscript">29</hi></abbr></head>
+                                <!--<head><abbr type="siglum">B<hi rend="subscript">29</hi></abbr></head>-->
                                 <msIdentifier>
                                     <settlement>Garut</settlement>
                                     <institution>Kabuyutan Ciburuy</institution>
@@ -88,7 +113,7 @@
                                 </msIdentifier>
                             </msFrag>
                             <msFrag xml:id="B8">
-                                <head><abbr type="siglum">B<hi rend="subscript">8</hi></abbr></head>
+                               <!-- <head><abbr type="siglum">B<hi rend="subscript">8</hi></abbr></head>-->
                                 <msIdentifier>
                                     <settlement>Garut</settlement>
                                     <institution>Kabuyutan Ciburuy</institution>
@@ -96,36 +121,13 @@
                                 </msIdentifier>
                             </msFrag>
                                 <msFrag xml:id="B3">
-                                <head><abbr type="siglum">B<hi rend="subscript">3</hi></abbr></head>
+                                <!--<head><abbr type="siglum">B<hi rend="subscript">3</hi></abbr></head>-->
                                 <msIdentifier>
                                 <settlement>Garut</settlement>
                                 <institution>Kabuyutan Ciburuy</institution>
                                 <idno>Kropak 3 Peti 3b</idno>
                                 </msIdentifier>
                             </msFrag>
-                            <msContents>
-                                <msItem>
-                                    <author>-</author>
-                                    <title>Untitled</title>
-                                    <!--<colophon>
-                                        <quote></quote>
-                                    </colophon> -->
-                                </msItem>
-                            </msContents>
-                            <physDesc>
-                                <objectDesc>
-                                    <p>Lontar manuscript. 28 leaves in Old Sundanese script. The manuscript leaves are scattered in several bundles and mixed with other texts </p>
-                                </objectDesc>
-                                <handDesc>
-                                    <handNote xml:id="B_H1" scriptRef="class:57470 maturity:83215">
-                                        <abbr type="hand">B:H<hi rend="subscript">1</hi></abbr>
-                                    <p>Main hand of the manuscript, Old Sundanese script</p>
-                                    </handNote>
-                                </handDesc>
-                            </physDesc>
-                            <history>
-                               <p>This manuscript is part of the <origPlace>Kabuyutan</origPlace> Ciburuy collection in Garut, West Java, Indonesia. It's unclear how long these manuscripts have been there, but based on their materials and content, there's a strong indication that these manuscripts date back to a period when Hinduism, Buddhism, and local beliefs were still the dominant faiths among the local community, specifically <origDate>between the 15th and 18th centuries</origDate>. Due to generations of custodial care, the manuscripts, stored in three chests and several small wooden boxes, have become disorganized. Consequently, the page order of the Jati Mula text is generally no longer sequential. However, this particular text can be visually identified by the unique style of its script, which distinguishes it from other manuscripts.</p>
-                            </history>
                         </msDesc>
                     </witness>
                     <witness xml:id="H">
@@ -208,12 +210,13 @@
                 <ab>ña mana <app><lem type="norm">hantә</lem><rdg wit="#A #B #H">hatә</rdg></app> <app><lem type="norm">katuduhhan</lem><rdg wit="#A #B #H"></rdg></app>, nu mәtukәn tan hana, jati tan <pb edRef="#B" n="6r"/>hana, luput tan hana; ña mana puhun luput jati
                 <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app><app><lem type="norm">pakatuduhan</lem><rdg wit="#A">pakatuduhhan</rdg><rdg wit="#H" cause="morphological">katuduhhan</rdg></app>, ña mana dayәhhannana ña maha visesa, vәnaṅ nuṅgalkәn puhun jati luput laṅgәṅ sadakala, nu tanpa katuduh jati.</ab>
                 <p><pb edRef="#H" n="1"/><lb edRef="#H" n="23-26"/> luput namana, luput <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> panamana, luputna <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> paṅaranna, nu <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> pakatuduh puhun ṅaraniya.</p>
-                <p><pb edRef="#H" n="1"/><lb edRef="#H" n="26-30"/> beak bahe gan agәs <note resp="#H">zie blg 7</note> <pb edRef="#A" n="3"/>gәs di jati di maneh pun, ṅaraniya na tәgәr jatina bәnәr, laṅgәṅ na tәmәn sadakala, na agәs puhun tugal jati laṅgәṅ sadakala.</p>
+                <p><pb edRef="#H" n="1"/><label type="marginalia" place="top" n="1a">Holle: zie blg 7<!-- Arlo2Ilham: please apply the real value for place --></label> <lb edRef="#H" n="26-30"/> beak bahe gan agәs
+<pb edRef="#A" n="3"/>gәs di jati di maneh pun, ṅaraniya na tәgәr jatina bәnәr, laṅgәṅ na tәmәn sadakala, na agәs puhun tugal jati laṅgәṅ sadakala.</p>
             </div>
 
             <div type="chapter" n="4" xml:id="jamu_04">
 <p><pb edRef="#H" n="1-2"/><lb edRef="#H" n="31-5"/>
-            Iña <app><lem>kapagәhan</lem><rdg wit="#H #B">kapagәhhan</rdg><rdg wit="#A">kapagәhan</rdg></app> jati caritaniṅ bәnәr, ña kaliṅaniya pun. ñaho di puhun luput jati carita <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> <app><lem type="norm">pakatuhuan</lem><rdg wit="#A #B #H">pakatuduhhan</rdg></app>, ña puhun <app><lem type="norm"> tuṅtuṅ gantuṅ</lem><rdg wit="#H">tuṅtuṅ gantuṅ</rdg><rdg wit="#B">tutuṁ gatuṁ</rdg><rdg wit="#A">tutuṁgaluṁ</rdg></app>, <app><lem type="emn">tuṅtuṅ matuṅaniṅ</lem><rdg wit="H">tutuṅ ma-tuṅan di</rdg><rdg wit="#A #B">tutuṁ matuṁṅan·niṁ </rdg> </app> bvana, ti mana, bvana mana, hatә bvana hatә, hatә katuduhhannana, hatә namana,<pb edRef="#H" n="2"/> hatә ṅaranna, pun; iñana nu madiyana dayәhhannanna, nu vәnaṅ ṅavisesakәn uraṅ sabvana, <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> panamana, <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> paṅaranna, pun.</p>
+            Iña <app><lem>kapagәhan</lem><rdg wit="#H #B">kapagәhhan</rdg><rdg wit="#A">kapagәhan</rdg></app> jati caritaniṅ bәnәr, ña kaliṅaniya pun. ñaho di puhun luput jati carita <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> <app><lem type="norm">pakatuhuan</lem><rdg wit="#A #B #H">pakatuduhhan</rdg></app>, ña puhun <app><lem type="norm"> tuṅtuṅ gantuṅ</lem><rdg wit="#H">tuṅtuṅ gantuṅ</rdg><rdg wit="#B">tutuṁ gatuṁ</rdg><rdg wit="#A">tutuṁgaluṁ</rdg></app>, <app><lem type="emn">tuṅtuṅ matuṅaniṅ</lem><rdg wit="#H">tutuṅ ma-tuṅan di</rdg><rdg wit="#A #B">tutuṁ matuṁṅan·niṁ </rdg> </app> bvana, ti mana, bvana mana, hatә bvana hatә, hatә katuduhhannana, hatә namana,<pb edRef="#H" n="2"/> hatә ṅaranna, pun; iñana nu madiyana dayәhhannanna, nu vәnaṅ ṅavisesakәn uraṅ sabvana, <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> panamana, <app><lem type="norm">tan</lem><rdg wit="#H">tanpa</rdg></app> paṅaranna, pun.</p>
             </div>
 
             <div type="chapter" n="5" xml:id="jamu_05">
@@ -237,7 +240,7 @@
 <p><pb edRef="#H" n="6"/><lb edRef="#H" n="5-19"/> ña tu dayәhhannan nu luput ti puhun, tan kәna dituduh, ja nu ñiәn tanpa katuduh, ja nu ñiәn tanpa nama, ja nu ñiәn tu ṅaran, ja nu ñiәn luput, ja nu ñiәn puhun, ja nu ñiәn luput mana, ja nu ñuun jati mana, ja nu ñiәn tan hana, ja nu ñiәn <pb edRef="#A" n="11"/>niskala, ja nu ñiәn tanpa katuduhhan, ja nu ñiәn luput, ja nu ñiәn bihәṅ, ja nu ñiәn hatә, hatә katuduh.</p>
 <p><pb edRef="#H" n="6-7"/><lb edRef="#H" n="20-4"/> nu ñiәn puhunna na jati, tan kәna dituduh jati, nu ñiәn puhunna laṅgәṅ, tan kәna dituduh laṅgәṅ, nu ñiәn puhunna sadakala, tan kәna dituduh sadakala, nu ñiәn puhunna hurip, tan kәna dituduh sadakala, nu ñuun puyuna hurip, tan kәna dituduh hurip; ja nu maka hurip na hurip, tan kәna dipatian ku pati, ja matian nu pati, dihirupan nu maka hirup nu hirup; ñamana na jati tan kәna ku pati, tan kәna ku hurip, ja hatә ganal, hatә alit, ja na jati hatә katuduh, ja nu maka hatә ganal, ja nu maka hatә alit, ja na puhun jati tanpa katuduh, ja na <pb edRef="#A" n="12"/>puhun jati huripna laṅgәṅ, tan kәna dituduh laṅgәṅ, ja iña nu ma- <pb edRef="#H" n="7"/> ka laṅgәṅ, puhunna jati huripna sadakala, tan katuduh, ja nu maka sadakala, nu sadakala tan katuduh.</p>
 <p><pb edRef="#H" n="7"/><lb edRef="#H" n="5-22"/> nu ñiәn bvana, luput, maka jati mana, ti mana bvana hatә, nu ñiәn puhun, hatә katuduh, ja tan kәna dinamaan, tan kәna diṅaranan, ja puhun luput, jati tanpa katuduh, vvat jati mula tanpa nama, vvat mula tanpa ṅaran tu puhun, nu tan katuduh, nu tan mәtu hana, nu tan mәtu tan hana, ña na vvat nu mәtukәn na hana, ña na vvat sakeṅ tan hana, mataṅiyan vaya katuduhhan niṅ ajñana, tan hana; ti iña ñiәn bvana jati niskala, jati bvana lәṅis, jati bvana laraṅ.</p>
-<p><pb edRef="#H" n="7"/><lb edRef="#H" n="23-30"/> <note resp="#H">zie blg iH</note> <pb edRef="#A" n="13"/> hatә, bihәṅ, luput tan katuduh niskala tan hana, tanpa nama, tanpa ṅaran, tanpa katuduhhan-nanna; ñamana jati di puhun-niṅ luput, tanpa katuduh di puhun, luputna jati pun, tanpa katuduh nu agәs, pun.</p>
+<p><pb edRef="#H" n="7"/><lb edRef="#H" n="23-30"/><label type="marginalia" place="left" n="7a">Holle: zie blg iH<!-- Arlo2Ilham: please apply the correct value of "place" and please correct "iH", whatever it is meant to be  --></label> <pb edRef="#A" n="13"/> hatә, bihәṅ, luput tan katuduh niskala tan hana, tanpa nama, tanpa ṅaran, tanpa katuduhhan-nanna; ñamana jati di puhun-niṅ luput, tanpa katuduh di puhun, luputna jati pun, tanpa katuduh nu agәs, pun.</p>
 <p><pb edRef="#H" n="7"/><lb edRef="#H" n="31-37"/> ini na puhun, vvat mula jati carita niṅ bәnәr, vvat mua jati carita niṅ tanpa nama, luput carita tanpa ṅaranna, puhun luput carita niṅ tanpa katuduhhan.</p>
 <p><pb edRef="#H" n="7-8"/><lb edRef="#H" n="38-29"/> lamun hamo ñaho di jati carita, jati niṅ bәnәr, hamo ñaho di jati di maneh, lamun <pb edRef="#H" n="8"/> ñaho di puhun jati carita niṅ bәnәr, ñaho di jati di maneh, ñaho di jati bәnәr di maneh, kaliṅaniya bәnәrna tәgәrna tәmәn, dәṅ na agәs ñaho di <supplied reason="undefined">f <!-- 'f' terdapat dalam transkripsi Holle, cek kembali di tulisan tangan--> </supplied> kala <pb edRef="#A" n="14"/> tanpa katuduh, ja litana jati, vvatna ṅavayakәn ṅahatәkәn, tan kәna divayakәn ku nu vaya, tan kәna dihatәkәn ku hatә, ja na puhun jati laṅgәṅ tanpa katuduh, kaliṅaniya sadaṅ saṅ pandita, ti puhun kana jati, tanpa katuduh dipigәsan nuduh na jati ajñana, nuduhhan jati parayuga niṅ ajñana, jati saṅ Manon, puhun jati ma hurip niṅ bvana, mana vaya saṅ pandita nuduhhan ka jati niskala, di jati bvana, vvat mula niṅ devata; ka jati seda bvana, ka bvana jati suda, di vvat niṅ jati manusa, di hantara manusa bvana mәkah, di jati bvana cina, sakatuduh niṅ bvana loka, nu visesa di desaniṅ nusa haṅkarra.</p>
 <p><pb edRef="#H" n="8"/><lb edRef="#H" n="30-37"/> sakitu ti saṅ pandita, ja uraṅ agәs kavayakәn pa<pb edRef="#A" n="15"/>ṅgavay, ti puhun katuduhhan niṅ ajñana, sabvana loka, ti puhun ka jati, dipipaṅәsi bumi, lamba parәk aṅәsian bvana lamba, ṅәsian bvana parәk, әsina bvana lavan sarira.</p>
