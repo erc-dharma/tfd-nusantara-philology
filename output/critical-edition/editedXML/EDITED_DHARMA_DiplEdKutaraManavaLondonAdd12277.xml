@@ -6,19 +6,10 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="editorial">Diplomatic edition of London ms. BL Add ms 12277</title>
-            <!--change the title of the edition starting, if possible, with the title of your text-->
-            <!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
-            <!--<title type="alt"></title>-->
-            <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
-            <!--<title type="original" xml:lang="...-Latn"></title>-->
-            <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
-            <!--<author></author>-->
-            <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+            <title type="editorial">Kuṭāra Mānava diplomatic edition of London ms. BL Add. 12277</title>
+            <!--	<title type="original"></title> not filled in because unclear of KM is actually the original title-->
             <respStmt>
-                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
                <resp>author of digital edition</resp>
-               <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
                <persName ref="part:argr">
                   <forename>Arlo</forename>
                   <surname>Griffiths</surname>
@@ -32,8 +23,8 @@
             <authority>
                <ref target="{URI for DHARMA website}">DHARMA</ref>
             </authority>
-            <pubPlace>DHARMA_DiplEdKutaraManavaLondonAdd12277.xml</pubPlace>
-            <idno type="filename">Fill in the filename with the xml extension</idno>
+            <pubPlace>Paris</pubPlace>
+            <idno type="filename">DHARMA_DiplEdKutaraManavaLondonAdd12277.xml</idno>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/">
                   <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
@@ -43,49 +34,31 @@
          </publicationStmt>
          <sourceDesc>
             <listWit>
-                    <!-- One witness for each manuscript. Update the content -->
-               <witness xml:id="fakeID">
-                        <!-- Give your witness an unique identifier -->
-                  <abbr type="siglum"/>
-                  <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+               <witness xml:id="lo1">
+                  <abbr type="siglum">Lo</abbr>
                   <msDesc>
                      <msIdentifier>
-                        <settlement>Leiden</settlement>
-                        <institution>University Library (UB)</institution>
-                        <repository>Lontar</repository>
-                        <idno>Or. 23732</idno>
+                        <settlement>London</settlement>
+                        <institution>British Library (BL)</institution>
+                        <repository/>
+                        <idno>Add. 12277</idno>
                      </msIdentifier>
-                     <msContents>
-                                <!-- the msContents isn't mandatory -->
-                        <msItem>
-                           <author>Śāntarakṣita</author>
-                           <title>Vipañcitārthā</title>
-                           <!-- You can also add a colophon if needed -->
-                           <!--<colophon>
-										<quote></quote>
-										</colophon> -->
-                           <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
-                        </msItem>
-                     </msContents>
                      <physDesc>
                         <objectDesc>
-                                    <!-- Here you can give a physical description of the manuscript in prose-->
-                           <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                           <p>Palm-leaf manuscript. 63 leaves in Balinese script.</p>
                         </objectDesc>
-                        <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
-                                    <!-- Create a handNote for each hand -->
-                           <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
-                              <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi>
+                        <handDesc>
+                           <handNote xml:id="lo1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                              <abbr type="hand">Lo<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi>
                               </abbr>
                               <!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
-                              <p>main hand of the manuscript, black ink, Sundanese script</p>
-                              <!-- provide a description of the hand -->
+                              <p>Main hand of the manuscript, using black ink in a relatively consistent tone throughout. Script is a careful, formal Balinese style with clear and well-proportioned <foreign>aksara</foreign>. Letterforms are angular and upright, with consistent interlinear spacing and stroke thickness. Minor fluctuations in ink density and pressure occur occasionally, but these do not affect legibility. Overall, a single scribe appears responsible for the entire manuscript.</p>
                            </handNote>
                         </handDesc>
                      </physDesc>
                      <history>
                                 <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                        <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                        <p>An external inscription identifies the manuscript as <foreign>Cuntara Manava Sastra</foreign>, described as a paraphrase of the Institutes of Manu in the Kawi (Old Javanese) language. A further note states: <q>Presented to J. Crawfurd Esq. by the Rajah of Billing, 1814</q>, indicating its transfer to the British collector John Crawfurd during his mission to Java.</p>
                      </history>
                   </msDesc>
                </witness>
@@ -95,8 +68,7 @@
       <encodingDesc>
          <projectDesc>
             <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
-            <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
-  -->
+            <p>This edition is part of a doctoral research project at the École Pratique des Hautes Études – PSL, funded by the Indonesia Endowment Fund for Education (LPDP), Ministry of Finance of the Republic of Indonesia.</p>
          </projectDesc>
          <editorialDecl>
             <p/>
@@ -120,7 +92,7 @@
    </teiHeader>
    <text xml:space="preserve">
 		<body>
-			<div type="edition" xml:lang="und">
+			<div type="edition" xml:lang="kaw-Latn">
 <ab>
 <pb n="1r"/>
 <lb n="1r1"/> // 0 // Avighnam astu: /// 0 /// hana pva ya maṅke vuvusna:, kalanira: bha:ṭa:ra rama:, hamiR̥ṅvanī saṅ a:rī bhraṭa: katatvaniṁ paṅarcca:ṇa: 
