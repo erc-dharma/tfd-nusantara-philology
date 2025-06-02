@@ -1,4 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -15,16 +19,16 @@
                     <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
                     <resp>author of digital edition</resp>
                     <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:jodo"><!-- update the id -->
-                        <forename>John</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Doe</surname>
+                    <persName ref="part:dapu"><!-- update the id -->
+                        <forename>I Gde Agus</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Darma Putra</surname>
                     </persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
                 <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
-                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
-                <idno type="filename">Fill in the filename with the xml extension</idno>
+                <pubPlace>Paris</pubPlace>
+                <idno type="filename">DHARMA_DiplEdPerpusnasL876_1.xml</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
@@ -41,10 +45,10 @@
                         <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
                         <msDesc>
                             <msIdentifier>
-                                <settlement>Leiden</settlement>
-                                <institution>University Library (UB)</institution>
+                                <settlement>Jakarta</settlement>
+                                <institution>Perpustakaan Nasional Republik Indonesia</institution>
                                 <repository>Lontar</repository>
-                                <idno>Or. 23732</idno>
+                                <idno>L876</idno>
                             </msIdentifier>
                             <msContents>
                                 <!-- the msContents isn't mandatory -->
@@ -103,6 +107,7 @@
         </encodingDesc>
         <revisionDesc>
             <change who="part:axja" when="2021-05-25" status="draft">transformation into TEI</change>
+            <change who="part:dapu" when="2025-06-02" status="draft">updating the Header</change>
         </revisionDesc>
     </teiHeader>
     <text xml:space="preserve">
