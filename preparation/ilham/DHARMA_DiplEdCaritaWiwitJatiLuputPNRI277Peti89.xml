@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_DiplEDSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
     <teiHeader>
@@ -40,14 +40,14 @@
                                     <title>Carita Wiwit Jati Luput Ti Puhun</title>
                                     <colophon>
 									<quote xml:lang="kaw-Latn" type="diplomatic">Tәlassi nulis riṅ saṅgara visesa, pun.</quote>
-									</colophon> 
+									</colophon>
                                 </msItem>
                             </msContents>
                             <physDesc>
                                 <objectDesc>
                                     <p>Roman transliteration made by K.F. Holle. </p>
                                 </objectDesc>
-                                <handDesc> 
+                                <handDesc>
                                 <p/>
                                 </handDesc>
                             </physDesc>
@@ -77,11 +77,11 @@
                 <p/>
             </samplingDecl>
             <!--schemaRef  will need to be added once a  official realase is done -->
-            <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced". 
-				
+            <!-- variantEncoding is a  mandatory element. You have to select one of the two solutions given in DHARMA depending how you chave chosen to encode your apparatus. If inline, select @method="parallel-segmentation" as per section §5 of EGC, but if you are encoding your apparatus after any section, mostly being stanza, use  @method="location-referenced".
+
 			<variantEncoding method="parallel-segmentation" location="internal"/>
 			<variantEncoding method="location-referenced" location="internal"/>.
-			
+
 			Note that the current by default behaviour is set on parallel-segmentation -->
             <variantEncoding method="parallel-segmentation" location="internal"/>
         </encodingDesc>
@@ -149,13 +149,13 @@ Dibaca oleh Salfia Rahmavati 29 Juli 2013
 <p><pb edRef="#Holle" n="9"/><lb edRef="#Holle" n="9-17"/> Pәnuh ku katuduhhan niṅ ajñana, pәnuh ku bayu, pәnuh ku sabda, pәnuh ku hidәp, ku tutur, ku miṅәt saṅ Ma<pb edRef="#PRNI" n="16"/>non, pәnuh ku bvana rasa lavan sarira, pәnuh ka bumi ku kahanan, pәnuh ku sunia sunian taya, paramarata niṅ bvana loka.</p>
 <p><pb edRef="#Holle" n="9"/><lb edRef="#Holle" n="18-23"/> Saṅ pandita nuduhhan na paṅgavay ti puhun-na jati bvana laṅgәṅ; ña mana agәs visesa, dina jatina kahanan tutur laṅgәṅ, nuṅguan jatina bvana.</p>
 <p><pb edRef="#Holle" n="9"/><lb edRef="#Holle" n="24-26"/> Ditu dina prәtivi, di bvana lavan akasa, tutur laṅgәṅ jati ma hurip niṅ bvana.</p>
-<p><pb edRef="#Holle" n="9"/><lb edRef="#Holle" n="27-31"/> Kitu tutuṅgalna di vulan, ventaṅ, aditiya, tuṅgal laṅgәṅ tutur jati ma hurip di bvana lavan sarira, tutur bәnәr, tәgәr, tәmәn jatina laṅgәṅ namaniya.</p> 
+<p><pb edRef="#Holle" n="9"/><lb edRef="#Holle" n="27-31"/> Kitu tutuṅgalna di vulan, ventaṅ, aditiya, tuṅgal laṅgәṅ tutur jati ma hurip di bvana lavan sarira, tutur bәnәr, tәgәr, tәmәn jatina laṅgәṅ namaniya.</p>
 <p><pb edRef="#Holle" n="9-10"/><lb edRef="#Holle" n="32-6"/> Kitu na-mana na lәmah lavan laṅit, tuṅgal, ti puhun ka jati, sa-vvat ma hurip lavan bvana prәtivi; iñana jati vvat hurip niṅ kaṅ bvana <pb edRef="#PRNI" n="17"/>loka anәlan jati vvat mula jati pusәrran bvana, muliyana jati, citana jati <pb edRef="#Holle" n="10"/> pujar niṅ bvana, mataṅiyan vaya kahananna jati, ñamana dәdәg laṅgәṅ tutur jati; hurip bvana jati prәtivi; mataṅiyan vaya kahanan tәmahhan hurip niṅ kaṅ jagat.</p>
 <p><pb edRef="#Holle" n="10"/><lb edRef="#Holle" n="7-9"/> Kitu kapagәhanna jati bvana lavan sarira, sakaliṅannan na katuduhhan niṅ aydñana.</p>
 <p><pb edRef="#Holle" n="10"/><lb edRef="#Holle" n="10-19"/> Lamun vaya tәmahan di bvana lavan prәtivi; nu katuduh: vaya rupa, reka varna, maka ditrәna trәne, tarula, ta henake, guluma, lamun ron-ronan, uruta rarambatan; lamun neja ṅagәdәg sarva niṅ kakayon, maka divaya kasaṅga, tәmahhan niṅ kaṅ jagat.</p>
 <p><pb edRef="#Holle" n="10"/><lb edRef="#Holle" n="31"/> Nu katuduh: lәmah, cai, kayu, batu, maka di sarva sato nikaṅ ja<pb edRef="#PRNI" n="18"/>gat, iṅ sor, iṅ ruhur, iṅ darat, iṅ cai, paṅәsi lmah lavan tasik, sakveh kumilip niṅ kaṅ prәtivi, sakvey kumәdap niṅ kaṅ bvana; pada mahi kaduumman, ma hurip nikaṅ sarira, pindah ka sarira, sarira hurip niṅ kaṅ bvana, ṅaranna katuduhhanniya.</p>
 <p><pb edRef="#Holle" n="10"/><lb edRef="#Holle" n="32-37"/> jati ma hurip, mataṅiyan pasraniṅ desa, pasraniṅ bvana, jati mataṅiyan ma hurip, pasra sagara hantara niṅ bvana, yan katuduhhanniya.</p>
-<p><pb edRef="#Holle" n="10-11"/><lb edRef="#Holle" n="38-13"/> Lamun dituduh jati patala, tan kәna dituduh, tala patala; ja jati vvat patala, jati <pb edRef="#Holle" n="11"/> bvana; tan kәna dituduhhan, lamun iṅ sor, iṅ ruhur tan kәna dituduh; kala di i-sor, tala sapta, patala niṅ tala, tan kәna dituduh: 
+<p><pb edRef="#Holle" n="10-11"/><lb edRef="#Holle" n="38-13"/> Lamun dituduh jati patala, tan kәna dituduh, tala patala; ja jati vvat patala, jati <pb edRef="#Holle" n="11"/> bvana; tan kәna dituduhhan, lamun iṅ sor, iṅ ruhur tan kәna dituduh; kala di i-sor, tala sapta, patala niṅ tala, tan kәna dituduh:
 di luhur, tapa-patala, tala niṅ tala, di sapta-tala <pb edRef="#PRNI" n="19"/> talaniya niṅ bvana laka, tan kәna dituduh tala, nu ñana puhun jati, nu ñiәn bvana; patala talaniṅ tala bvana loka; samaṅkana, katuduhhaniya ti jati niṅ tanpa katuduh, pun.</p>
 <p><pb edRef="#Holle" n="11-12"/><lb edRef="#Holle" n="14-13"/> Ini katuduhhan ti puhun, dәṅ ti jati ma hurip niṅ bvana; jati ajñana tanpa katuduh, jati sadakala tanpa katuduh, jatina laṅgәṅ tanpa katuduh, jatina saṅ Manon tanpa katuduhm jati saṅ visesa, tanpa katuduh, jati saṅ tuṅgal tanpa katuduh, jati saṅ prәmana, tanpa katuduh, jati mataṅiyan, tanpa katuduh; jati niṅ iyatna, tanpa katuduh, jati niṅ iṅәt, tanpa katuduh, jati niṅ tutur tanpa katuduh, jati niṅ hidәp tanpa katuduh, jati niṅ sabda tanpa katuduh; ja<pb edRef="#PRNI" n="20"/>ti niṅ bayu tanpa katuduh, jati niṅ tasa tanpa katuduh; jati niṅ sarira, tanpa katuduh; jati niṅ kama ratih, tanpa katuduh; jati bvana sarira tanpa katuduh bvana; jati niṅ alit tanpa katuduh, alit jati niṅ acitiya, tan kәna dituduh; acitiya, jatina cita <pb edRef="#Holle" n="12"/> tan kәna dituduh, cita; jatina lәñәp, tan kәna dituduh lәñәp, jati niṅ lәñәp, tan kәna dituduh lәñәp; jati niṅ lәṅәs, tan kәna dituduh lәṅәs; jatina nis, tan kәna dituduh nis, jatiniṅ purusa, tan kәna dituduh jati purusa; jati kamoksahhan, tan kәna dituduh kamoksahhan; jatina kalәpasan, tan kәna dituduh kalәpasan; jati niskala tanpa katuduhhan<pb edRef="#PRNI" n="21"/>nanna niṅ ajñana.</p>
 <p><pb edRef="#Holle" n="12"/><lb edRef="#Holle" n="14-26"/> Niskala tanpa namana, tanpa ṅaranna, jati nu namaan, tan kәna dinamaan; na jati nu ṅaranan, tanpa diṅaranan jati tan katuduhhan ku ajñana uraṅ sabvana; ja di nu sakala di nu niskala, ja nu puhun jati dayәhhananna, dina uraṅ sabvana, jatina tanpa katuduh di jati bvana lavan sarira; samaṅkana ajñana katuduhhan ti puhun ka jati, pun.</p>
@@ -250,17 +250,17 @@ di luhur, tapa-patala, tala niṅ tala, di sapta-tala <pb edRef="#PRNI" n="19"/>
               <p/>
           </div>
           <div type="commentary">
-               <p/>                              
+               <p/>
             </div>
-          <div type="bibliography"> 			
-              <p/> 			
+          <div type="bibliography">
+              <p/>
               <listBibl type="primary">
-                 <bibl/> 			
-              </listBibl>            
-              <listBibl type="secondary">               
-                 <bibl/>            
-              </listBibl> 		
-           </div> 
+                 <bibl/>
+              </listBibl>
+              <listBibl type="secondary">
+                 <bibl/>
+              </listBibl>
+           </div>
        		</body>
   </text>
 </TEI>
