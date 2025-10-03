@@ -21,4 +21,5 @@ jobs:
           git config user.email github-actions@github.com
           git add html
           git commit -m "Convert critical editions to HTML" || true
+          git pull
           git push
