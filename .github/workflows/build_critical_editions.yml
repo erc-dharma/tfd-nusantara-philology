@@ -1,0 +1,24 @@
+name: Transform critical edition to HTML
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - run: |
+          sudo apt install -y libsaxonhe-java
+          git clone --depth=1 https://github.com/erc-dharma/project-documentation.git
+          test -d html || mkdir html
+          for f in editions/*.xml; do
+            out=`basename $f`
+            out=`echo $out | sed 's,\.xml$,.html,g'`
+            java -jar /usr/share/java/Saxon-HE.jar -xsl:project-documentation/stylesheets/criticalEditions/start_v02.xsl -s:$f > tmp || continue
+            mv tmp html/$out
+          done
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add html
+          git commit -m "Convert critical editions to HTML" || true
+          git push
