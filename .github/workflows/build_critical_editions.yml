@@ -19,7 +19,8 @@ jobs:
           done
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git config pull.rebase true
+          git checkout master
           git add html
           git commit -m "Convert critical editions to HTML" || true
-          git pull
           git push
