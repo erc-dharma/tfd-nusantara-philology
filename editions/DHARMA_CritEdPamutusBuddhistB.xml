@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+	xml:lang="eng"
+	xml:id="pamutusBuddhistBB">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="editorial">The Summum: Digital Critical Edition of a Buddhist Treatise in Old Javanese (version B)</title>
+				<title type="original" xml:lang="san-Latn">Saṅ Hyaṅ Pamutus</title>
+			<respStmt>
+					<resp>author of digital edition</resp>
+					<persName ref="part:anac">
+					<forename>Andrea</forename>
+					<surname>Acri</surname>
+					</persName>
+					<persName ref="part:argr">
+						<forename>Arlo</forename>
+						<surname>Griffiths</surname>
+					</persName>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>DHARMA</authority>
+				<pubPlace>Lyon, Paris, Jakarta</pubPlace>
+				<idno type="filename">DHARMA_CritEdPamutusBuddhistB.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">
+			<p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+					</licence>
+				</availability>
+				<date from="2019" to="2025">2019-2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<listWit>
+				<witness xml:id="D">
+				<abbr type="siglum">D</abbr>
+				<msDesc>
+				<msIdentifier>
+                                				<settlement>Denpasar</settlement>
+                  				<institution>Dinas Kebudayaan Provinsi Bali</institution>
+                  				<repository>Pusat Dokumentasi</repository>
+                  				<idno>T/XXI/7/DOKBUD</idno>
+                 				 <!-- https://archive.org/details/tatwa-kabuddhan -->
+                            			</msIdentifier>						
+					<physDesc>
+					<objectDesc>
+					<p>Palm-leaf manuscript. ... leaves in Balinese script.</p>
+					</objectDesc>
+					<handDesc>
+					<p/>
+					</handDesc>
+					</physDesc>
+					<history/>
+					</msDesc>
+					</witness>
+				<witness xml:id="K">
+					<abbr type="siglum">K</abbr>
+					<msDesc>
+					<msIdentifier>
+                                				<settlement>Singaraja, Bali, Indonesia</settlement>
+                  				<repository>Kirtya</repository>
+                  				<collection>Lontar</collection>
+                  				<idno>IIIb/408/16</idno>
+                            				</msIdentifier>						
+					<physDesc>
+					<objectDesc>
+					<p>Palm-leaf manuscript. 6 leaves in Balinese script.</p>
+					</objectDesc>
+						<handDesc>
+							<p/>
+						</handDesc>
+					</physDesc>
+					<history/>
+					</msDesc>
+					</witness>
+					<witness xml:id="or3963">
+						<abbr type="siglum">L1</abbr>
+						<msDesc>
+							<msIdentifier>
+								<settlement>Leiden</settlement>
+								<institution>Leiden University Libraries (UB)</institution>
+								<repository>Oosterse Handschriften</repository>
+								<idno>Or. 3963</idno>
+							</msIdentifier>							
+							<physDesc>
+								<objectDesc>
+									<p>Paper manuscript. 6 pages in Balinese script.</p>
+								</objectDesc>
+								<handDesc>
+									<p/>
+								</handDesc>
+							</physDesc>
+							<history/>
+						</msDesc>
+					</witness>
+					<witness xml:id="or5068">
+					<abbr type="siglum">L2</abbr>
+					<msDesc>
+					<msIdentifier>
+						<settlement>Leiden</settlement>
+						<institution>Leiden University Libraries (UB)</institution>
+						<repository>Oosterse Handschriften</repository>
+						<idno>Or. 5068</idno>
+					</msIdentifier>							
+					<physDesc>
+					<objectDesc>
+					<p>Palm-leaf manuscript. ... leaves in Balinese script.</p>
+								</objectDesc>
+								<handDesc>
+									<p/>
+								</handDesc>
+							</physDesc>
+							<history/>
+						</msDesc>
+					</witness>
+					<witness xml:id="M">
+						<abbr type="siglum">M</abbr>
+						<msDesc>
+							 <msIdentifier>
+                                <settlement>München</settlement>
+                                <institution>Bayerische Staatsbibliothek</institution>
+                                <repository>Handschriften-Abteilung</repository>
+                                <idno>Cod.jav. 64</idno>
+                                </msIdentifier>						
+			<physDesc>
+			<objectDesc>
+			<p>Palm-leaf manuscript. 47 leaves in Balinese script.</p><!-- total folio count of number of pages/folios for text in multitext ms.? -->
+								</objectDesc>
+								<handDesc>
+									<p/>
+								</handDesc>
+							</physDesc>
+							<history/>
+						</msDesc>
+					</witness>
+							<!-- Kirtya 4417 / III b — lontar, see the Kirtya's list-->
+							<!-- Kirtya 1398 = LOr 9762 -->
+							<!-- Kirtya IIIb.487 -->
+							<!-- Kirtya 408/16.IIIb-->
+							<!-- Kirtya IIIb. 4871 -->
+				</listWit>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of Project DHARMA</ref></p>
+			</projectDesc>
+			<editorialDecl>        
+				<correction>
+					<p/>
+				</correction>
+				<normalization>
+					<p/>
+				</normalization>
+				<interpretation>
+					<p/>
+				</interpretation>
+			</editorialDecl>
+			<samplingDecl>
+				<p/>
+			</samplingDecl> 
+		</encodingDesc><revisionDesc>
+			<change who="part:argr" when="2025-11-28" status="draft">started encoding the edition</change>
+		</revisionDesc>
+	</teiHeader>
+	<text xml:space="preserve">
+		<body>
+            <div type="edition" xml:lang="kaw-Latn">
+			<div xml:id="pamutusBuddhistB_01">
+<!-- 
+K: [1v1] // 0 // na:mo budḍa:ya: // 0 // bhagava:n· budḍa gotamma:, mavaraḥ-varaḥ riṁ siṣyanira, riṁ pa:[SH]mutusiṁ haji. E hanaku saṁ śevaka:ḍarmma:, saṁ mahyun malvaya viseṣa:, R̥ṅə:nən kumajar iṁṅ haji, kaṁ sinaṅgaḥ ḍarmma
+[1v2]:, Amajarakna: taṁ tathasakeṁṅ haji, haṅiṁ byakta tuhu-tuhu jugga:, hapaniṁṅ haji ṅaranya hananeṁ [SH] ṅucap·, Ana: tinuduḥ, hana ginəgvan·, hana hiṅaku, maṅkana śvabhavanya, karane hana hiṅaranan haji, 
+
+M: // [41v2] 0 // na:mo budḍaya: // 0 // bhagava:n· budḍa gotamma:, mavara-varaḥ ri śiṣyanira, ri pa◯mutusiṁ saṁ hyaṁ haji ◯. E hanaku saṁ sevaka:ḍa:rmma, saṁ mahyun· maluya viseṣa:, R̥ṅə:nən uja:r iṅ haji, saṁ sinaṅgaḥ ḍa:rmma, Ama:jarakna taṁ [41v3]tatasak iṅ haji, haṅhiṁ byakta: tuhu-tuhu jugga:, a:paniṅ haji ṅaranya hana-haneṅucap·, hana: tinuḍu◯ḥ, hana ginəgvan·, hana Iṅa:ku, maṅkana svabha:vanya, karaṇe hana Iṅaranan haji,
+-->
+<ab type="invocation" xml:lang="san-Latn" xml:id="pamutusBuddhistB_01.01"><pb n="1v" edRef="#K"/><pb n="41v" edRef="#M"/>namo buddhāya!</ab>
+<p n="1">bhagavān buddha gotama, mavara-varah <app><lem wit="#M">ri</lem><rdg wit="#K">riṅ</rdg></app> śiṣyanira, <app><lem wit="#M">ri</lem><rdg wit="#K">riṅ</rdg></app> pamutus <app><lem wit="#M">iṅ saṅ hyaṅ haji</lem><rdg wit="#K">iṅ haji</rdg></app>. e anakku saṅ sevaka dharma, saṅ mahyun <app><lem wit="#M">maluya</lem><rdg wit="#K">malvaya</rdg></app> viśeṣa, rəṅə̄nən <app><lem wit="#M">ujar</lem><rdg wit="#K">kumajar</rdg></app> iṅ haji, <app><lem wit="#K">kaṅ</lem><rdg wit="#M">saṅ</rdg></app> sinaṅgah dharma, amajarakəna taṅ <!-- ⟨M41v3⟩ --> <app><lem wit="#M">tatasak iṅ</lem><rdg wit="#K">tatasakeṅ</rdg></app> haji, aṅhiṅ byakta tuhu-tuhu juga, apaniṅ haji ṅaranya <app><lem wit="#M">hana-haneṅucap</lem><rdg wit="#K">hananeṅucap</rdg></app>, hana tinuḍuh, hana ginəgvan, hana iṅaku, maṅkana svabhāvanya, <seg rend="check">karaṇe hana iṅaranan haji</seg>.</p>
+
+<!-- 
+	K:
+	M: kunəṁ saṁ putus maṅkaneka:, bhaṭa:[41v4]ra sidḍa: juga: sinama:ya, tan arva L̥n kami riṁ śrī bhakti-bojaṇa. śrī, ṅaranya:, ma:s pirak·, ratna:di. bha◯kti ṅaranya, səmbaḥ sarvvapr̥namya. bhojaṇa ṅaranya, salviriṁ Upabhoga kaṅ aL̥p·. taha: hayva: ta maṅkana,
+-->
+<p xml:id="pamutusBuddhistB_01.02" n="2">kunəṅ saṅ putus maṅkaneka, bhaṭā⟨M41v4⟩ra siddha juga sinamaya, tan arvalən kami riṅ śrī bhakti bhojana. śrī, ṅaranya, mas pirak, ratnādi. bhakti ṅaranya, səmbah sarva praṇamya. bhojana ṅaranya, salviriṅ upabhoga kaṅ aləp. tahā hayva ta maṅkana, </p>
+
+<!-- 
+K:
+M:
+-->
+<p xml:id="pamutusBuddhistB_01.03" n="3">ya⟨M42r1⟩n tumarima śrī, yāṅkən dinol vidhi saṅ hyaṅ dharma, yan tumarima bhakti, yāṅkən bhedākən saṅ hyaṅ dharma. yan tumarima bhojana, anaḍah kavətvaniṅ samaya, hayva ta maṅkana, ləñok ṅaranya saṅ viku, yan hanādravya kaha⟨M42r2⟩rəp. yan tumarimaṅ śrī, ləñok ya ta kaviśeṣa riṅ lupa, yanhā tumarimaṅ bhakti, ləñok ya ta kaviśeṣa deniṅ tamah, apan yan amaṅan varəg, ya hetuniṅ enak turūnya, viparīta saṅ viku yan maṅkana, apa do⟨M42r3⟩n saṅ viku yan maṅkana, muṅsimaniṅ saṅśaya, vikalpa, tr̥ṣṇā, lupa, yan tumarimaṅ śrī, mas pirak, yan tuma◯rimaṅ səmbah ya sukha,Aksara kha as in list of aksaras Or. 5068. yan tumarimaṅ bhogapabhoga, hetuniṅ maṅkana, kapaṅgihaniṅ samaya, apan saṅ dharma mayajñā ⟨M42r4⟩ śūnyata, ndā maṅkana saṅ putus, kunaṅ prathama saṅ putus, sira ta saṅ maliṅgih riṅ padmāsana, saṅ tumari◯ma śrī bhakti bhojana, sira sinambah riṅ rāt, sira ta saṅ ratu guru, umarah riṅ nīti yogya, pān hana ṅarananira, ⟨M42v1⟩bhaṭāra akārya dharma sira, maṅkana ta rehanya, kaliṅanyānakku, pet pva kahilaṅaniṅ śarīra, ndah hayva tan inaku, tan inaku ṅaranya, kady aṅganiṅ vvaṅ amaṅan riṅ palətan, sumurup riṅ loṅan, tan inaku ṅaraniṅ śarīra ya⟨M42v2⟩n maṅkana, inaku ṅaranya tan hilaṅniṅ cara maryādā yukti, mvaṅ meṅet sakiṅ kinavruhanya, inaku ṅaraniṅ śarīra yan maṅkana, prih kahilaṅanya, makadvāra vruh riṅ saṅkan paran, prih kaləpasaniṅ bhuvana, ndā hayva ta hiṅatiləyəp, ⟨M42v3⟩ makadvāra yan vruh anāgata tan vipatthā, prih kahilaṅaniṅ bāyu, hayva hinəb, kaṅ makadvāra kanirupekṣān, prih kahilaṅaniṅ śabda, ndan hayva ta humənəṅ, makadvāra kasarbvajñānan, prih kahilaṅaniṅ iḍəp, hayva tan pagaləṅ ⟨M42v4⟩, makadon vruhaniṅ maṅavruhi, prih kahilaṅaniṅ tutūr, ayo tālupa, makadvāra vruhniṅ manon, hayva ta vuta, makadvāra katəmu tan pinet, ndān sira viśeṣa, prih kahilaṅaniṅ viśeṣa, makadvāra umaku ⟨M43r1⟩tan pavāstu, nahan prathama saṅ vuvus, ndāh yatika paḍa bhaṭāra, riṅ sakala pratyakṣa, riṅ kotsāhaniṅ  jagrapāda ika, cəp vaṅ jñāna, luput saṅkeṅ māyatattva, ya ta turyapāda ṅaranya, ri samaṅkana taṅ sinaṅguh vido⟨M43r2⟩n, lāvan sinaṅguh maturū tan paṅipi, ndā tan kəneṅ pramanan, makahetu paḍəmniṅ jñānendriya, misəp riṅ antahr̥daya, </p>
+
+<!-- 
+D:
+K:
+M:  apan yan amaṅan varəg, ya hetuniṅ enak turūnya, viparīta saṅ viku yan maṅkana, apa do⟨M42r3⟩n saṅ viku yan maṅkana, muṅsimaniṅ saṅśaya, vikalpa, tr̥ṣṇā, lupa, yan tumarimaṅ śrī, mas pirak, yan tuma◯rimaṅ səmbah ya sukha,Aksara kha as in list of aksaras Or. 5068. yan tumarimaṅ bhogapabhoga, hetuniṅ maṅkana, kapaṅgihaniṅ samaya, apan saṅ dharma mayajñā ⟨M42r4⟩ śūnyata, ndā maṅkana saṅ putus, kunaṅ prathama saṅ putus, sira ta saṅ maliṅgih riṅ padmāsana, saṅ tumari◯ma śrī bhakti bhojana, sira sinambah riṅ rāt, sira ta saṅ ratu guru, umarah riṅ nīti yogya, pān hana ṅarananira,
+
+-->
+<p xml:id="pamutusBuddhistB_01.04" n="4">hayva tan pratipakṣa, riṅ pakṣa maṅkana, hayva tastuti, apan prajñāparimitta, ikiṅ jñāna, mvaṅ sarvakār⟨M43r3⟩yakarta, ya tika hetuniṅ maṅatīta, mataṅnyan līna humənəṅ vruh tan apuṅguṅ, valyākəna pamutus ṅūni, mari śarīra deniṅ vruhniṅ saṅkan paran, ika tā ya vyaktinyan saṅkan, maṅandəliṅ kāma ratih, ikaṅ jñāna laki ta ya § ⟨M43r4⟩ ika, kunəṅ vyaktinyan paran, ri kālaniṅ pati ndin paranya, mareṅ śūnya jugeka, kaliṅanya dadi sakeṅ taya, maluya mariṅ taya, maṅkā svabhāvaniṅ janma, </p> 
+
+<!-- 
+D:
+K:
+or3963: 
+or5068: 
+M:
+-->
+<p xml:id="pamutusBuddhistB_01.05">kunaṅ saṅ putus, tan maluya riṅ saṅkan paran, nimittaniṅ mari ⟨M43v1⟩ maśarīra, apan mari kabhuvanan, deniṅ anāgata, tan vipatta ṅaranya, anāgata ṅaranya, tan karakətan deniṅ maraṇa bāyu, denikaṅ manon, deniṅ vruh katəmu tan pinet, yan maṅkana ya sinaṅgah pinet, yan maṅkana ⟨M43v2⟩ ya sinaṅgah viśeṣa, deniṅ tan pavastu, ndah anakku ya tikā kuñci rahasya ṅaranya, </p> 
+
+<!-- 
+D:
+K:
+or3963: 
+or5068: 
+M:
+-->
+<p xml:id="pamutusBuddhistB_01.06">ndah riṅ paramapaścat saṅ hyaṅ pramāṇa, sakiṅ tələṅniṅ hr̥daya, patiṅgalniṅ rekhamāya, gavenira riṅ sakala niṣkala, kaṅ katon karəṅə̄, kahambuṅ ka⟨M43v3⟩ücap, kaïḍəp, ya ta humisəp riṅ gave, pagavenira ṅaranya, ikaṅ iḍəp lāvan tutūr, ya ta mapisan riṅ pramāṇa, kaliṅaniṅ pramāṇa, marya mapramāṇakən, ya sinaṅgah viśeṣa, tan iṅgatiṅ viśeṣa, ya mokṣa ṅke ṅaranya, mapu⟨M43v4⟩təra siddhaniṅ kāla, rəp pva yi sira, humənəṅ humibəkiṅ tan kabhuvanan, tan śinarīran, tan hana ajñāna, ya kaliṅaniṅ siddhā mokṣa, ləpasiddhā ṅaranya, siṅ həniṅ siṅ həniṅ rūpa varṇa, mokṣa ṅaranya, ri denya tan kapaṅguhanya, lə⟨M44r1⟩pas ṅaranya, ri denyan luput iṅ jñāna mvaṅ śarīra, hayva tānakva hayva mine, hayva tinəmbe, hayva nāśana, riṅ kuna-kuna hayva minaṅkana, hayva minaṅke, apa pva juga, hava byakta tuhu-tuhu jugeka, kumva kunəṅ liṅanta, anakku saṅ sevaka dharma, 
+</p>
+
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+-->
+<p xml:id="pamutusBuddhistB_01.07">apa pva tan tərus tumon bhaṭāra riṅ campa, riṅ malayū, mvaṅ saṅ sarvadeśa, yan tuhu byāpaka arananta, havananta mariṅ sabəraṅ, kunaṅ yan ramon kaniṣṭīkā, yan banavva kunaṅ, madhyama ika, kunaṅ ikaṅ uttama, vivahana juga, vivahana ṅaranya, maṅkenucap maṅke təka. maṅke ta ṅaranya, iki bhaṭāra sinamaya. sama, ṅa, paḍa, paḍa, ṅa, ya. ṅa, tan dudū, vyaktinyan paḍa, ri kāla haripniṅ sarāt, vyaktinya⟨M44r4⟩n ya viśeṣa, ikaṅ iiki de saṅ umaṅgihakən, kaliṅanyānakku, mary atakon, mary aṅucap, mary avarah, māri vinarah, mari umet, mari pinet, apan bhaṭāra ṅucap, apan bhaṭāra inucap, bhaṭāra ⟨M44v1⟩ vinarah, bhaṭāra mavarah, bhaṭāra amet, bhaṭāra pinet, ya kaliṅaniṅ laṅgə̄ṅ, mənəṅ tan molah, vruh yan samaya viśeṣa, ika bhāṣa samaya ṅaranya, ika ṅke tan inucap, ya ikā kuñci rahasya ṅaranya, a⟨M44v2⟩tīta bhaṭāra riṅ bhuvana, pagehakəna riṅ tələṅiṅ svātma, hayvenaranan, hayo tinuḍuh, hayvānaku, hayvenuśana, kunaṅ hetuniṅ maṅaliha bhaṭāra riṅ bhuvana, mary asaṅśaya saṅ kinabhaktyaniṅ rāt, kunaṅ yan tumūt abhakti, rvāte⟨M44v3⟩ka keḍəpanya, kumvatakən bhaṭāra riṅ bhuvana, norakən bhaṭāra riṅ śarīra, bhrānta saṅ putus yan maṅkana, tumūtakən ambəkiṅ rāt, apan tuṅgal ya bhaṭāra riṅ śarīra, yan riṅ bhuvana tan enak tapa, gili-giligən mvaṅ bhaṭāra ⟨M44v3⟩ riṅ śarīra, ya hana saṅśayanən, tan molah humənəṅ juga, pinakasandhi-sandhi ṅaranya, maniddhākən anupadyanta, pamutusiṅ śarīra, yan avuk dravvahikaṅ śarīra, tan milu bhaṭāra avuk, hane prakr̥ti juga sira, pra⟨M45r1⟩kr̥ti ṅaranya, ikaṅ taya, kunaṅ hetuniṅ kasapu tan pətəṅ, ri təkaniṅ pati, apanya tan alah ikaṅ saṅśaya, ikaṅ vikalpa, tr̥ṣṇā, lupa, ri kālaniṅ urip, ya hetu mandadi mvah, saṅkāniṅ prakr̥ti ika, mandəliṅ śuklasoṇita, kelv-ilū bhaṭāra deniṅ iḍəp, apan hyamaṅənakən, tuṅtuṅ vikalpa, tuṅtuṅ nimittaniṅ kasaputan, riṅ antaśarīra, mataṅnyan hasoyi bhaṭāra manu riṅ rāt, tan milu bhuvana, tan kasaputan pətəṅ, tan kapaḍaṅan de ⟨M45r3⟩niṅ āditya, apan gavenira riṅ vikalpa Ikā, maṅke tiki vəkasiṅ viśeṣan ya paḍa, ta ya ṣi, apan katəvaṅan deniṅ sakala, pradhāna śarīra bhaṭāra, mataṅnyan tan vənaṅ maṅkana, kunəṅ riṅ antaśarīra, siddha viśeṣa mokṣāva⟨M45r4⟩k, tan hanamana vəṅi sira, kaliṅanya mati rumuhun, tinivahakən tan pagagaddhā, ikaṅ tumaki-taki ika, paḍa niṣkala patti, mvaṅ niṣkala maṅke, yata byakta tuhu-tuhu ṅaranya, hayo kadi aṅr̥ṅə̄ gərəh ⟨M 45v1⟩, deniṅ maṅrəṅə̄ kojaran bhaṭāra, kaliṅanya gumuru-guruh, tan vruh ri vəkasanya, hayva kadi haṅambuṅ səkar, kinadut deniṅ voṅ lyan, deni aṅrasani rasa bhaṭāra, maṅambuṅ tan vruh i uṅgvanya, kunaṅ saṅ putus vruh, riṅ u⟨M45v2⟩ṅgvaniṅ tan pahuṅgvan, vruh riṅ vəkasiṅ tan pavəkas, tan hinavitan ikaṅ don, ikaṅ don kaliṅanya, yeka śabdāśat ṅaranya, yāavat maṅkana sāri-sāri, ya pāvak bhaṭāra, ndan sira ta śrī jagatnātha, śrī ṅaranya, mahālpa ⟨M45v3⟩. jagat ṅaranya, bhuvana mvaṅ sarvajanma. nātha, ṅa, prabhu, ndan sira kavitniṅ sarvatatva, sirāmijilakən bhuvana, mvaṅ sarvajanma, sopakāranya, kaliṅanya sakeṅ masakala, hana ikaṅ śarīra, sakiṅ śarīra ikaṅ aji mvaṅ guṇa, ⟨M45v4⟩ sakiṅ guṇa aji ikaṅ deva, sakiṅ deva ikaṅ tuḍuh, sakiṅ tuḍuh hananiṅ sor mvaṅ i ruhur, sakiṅ sor ruhur, hana vetan, kidul, kulon, lor, madhya, ika saṅ hyaṅ pamutus, maṅkanānakku saṅ sevaka dharma, eṅətakəna ⟨M46r1⟩hayva cavuh, bvat upadrava, namo buddhāya svahā təlas.</p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+-->
+<p xml:id="pamutusBuddhistB_01.08"></p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+--><p xml:id="pamutusBuddhistB_01.09"></p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+--><p xml:id="pamutusBuddhistB_01.10"></p>
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+--><p xml:id="pamutusBuddhistB_01.11"></p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+--><p xml:id="pamutusBuddhistB_01.12"></p>
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+--><p xml:id="pamutusBuddhistB_01.13"></p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+--><p xml:id="pamutusBuddhistB_01.14"></p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+-->
+<p xml:id="pamutusBuddhistB_01.15"></p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+--><p xml:id="pamutusBuddhistB_01.16"></p> 
+
+<!-- 
+D:
+K:
+or5068: 
+M:
+-->
+
+<p xml:id="pamutusBuddhistB_01.18"></p>
+			</div>
+ <div xml:id="pamutusBuddhistB_02">
+ <!-- 
+D:
+K:
+or5068: 
+M:
+-->
+<ab xml:id="pamutusBuddhistB_02.01" type="colophon">....</ab>
+</div>
+		</div>
+			<div type="translation"><p/></div>
+			<div type="commentary"><p/></div>
+			<div type="bibliography"> 				
+				<p/> 			
+				<listBibl type="bibliography"> 		
+					<bibl/> 		
+				</listBibl>
+<!-- <listBibl type="editions">
+<bibl/></listBibl>      -->      
+				 			
+			</div> 	
+		</body>
+	</text>
+</TEI>
