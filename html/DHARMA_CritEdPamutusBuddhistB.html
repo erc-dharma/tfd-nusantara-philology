@@ -1,0 +1,786 @@
+<!DOCTYPE html><html xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>The Summum: Digital Critical Edition of a Buddhist Treatise in Old Javanese (version B) Saṅ Hyaṅ Pamutus</title>
+      <link>
+         <link name="viewport" content="width=device-width, initial-scale=1" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+         <link rel="icon" href="https://dharmalekha.info/favicon.svg">
+         <link rel="stylesheet" href="https://dharmalekha.info/fonts.css?v=1a9450aa77c9b125526d71a0e58819c086fa4cab">
+         <link rel="stylesheet" href="https://dharmalekha.info/base.css?v=1a9450aa77c9b125526d71a0e58819c086fa4cab">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/erc-dharma/project-documentation@refs/heads/master/stylesheets/criticalEditions/dharma-ms_v02.css?v=1xa9450aa77c9b125526d71a0e58819c086fa4cab"><script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.0"></script><script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script><script src="https://dharmalekha.info/base.js?v=1a9450aa77c9b125526d71a0e58819c086fa4cab"></script><script src="https://cdn.jsdelivr.net/gh/erc-dharma/project-documentation@refs/heads/master/stylesheets/criticalEditions/loader_v02.js?v=1a9450aa77c9b125526d71a0e58819c086fa4cab"></script>
+   </head>
+   <body>
+      <div id="contents">
+         <header>
+            <div id="menu-bar"><a id="dharma-logo" href="/"><img alt="DHARMA Logo" src="https://dharmalekha.info/dharma_bar_logo.svg"></a><a id="menu-toggle"><i class="fa-solid fa-caret-down fa-fw"></i></a><ul id="menu" class="hidden">
+                  <li><a href="https://dharmalekha.info/repositories"><i class="fa-brands fa-git-alt"></i> Repositories</a></li>
+                  <li><a href="https://dharmalekha.info/texts"><i class="fa-regular fa-file-lines"></i> Texts</a></li>
+                  <li class="submenu"><a>Conventions <i class="fa-solid fa-caret-down"></i></a><ul class="hidden">
+                        <li><a href="https://dharmalekha.info/editorial-conventions">Editorial Conventions</a></li>
+                        <li><a href="https://dharmalekha.info/prosody">Prosodic Patterns</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="https://dharmalekha.info/parallels"><i class="fa-solid fa-grip-lines-vertical"></i> Parallels</a></li>
+                  <li class="submenu"><a>Project Internal <i class="fa-solid fa-caret-down"></i></a><ul class="hidden">
+                        <li><a href="https://dharmalekha.info/errors"><i class="fa-solid fa-bug"></i> Texts Errors</a></li>
+                        <li><a href="https://dharmalekha.info/bibliography-errors"><i class="fa-solid fa-bug"></i> Bibliography Errors</a></li>
+                        <li><a href="https://dharmalekha.info/display">Display List</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </header>
+         <div id="sidebar">
+            <div id="toc">
+               <div id="toc-heading" class="toc-heading">Contents</div>
+               <nav id="toc-contents"></nav>
+            </div>
+            <div class="toc-heading">Display</div><label>Source view
+               <input id="toggle-xml-display" type="checkbox"></label><div class="toc-heading">External Links</div>
+            <nav>
+               <ul>
+                  <li><a href="https://raw.githubusercontent.com/erc-dharma/tfd-nusantara-philology/master/editions/DHARMA_CritEdPamutusBuddhistB.xml"><i class="fa-solid fa-code"></i> XML File
+                        </a></li>
+               </ul>
+            </nav>
+         </div>
+         <main>
+            <h1>The Summum: Digital Critical Edition of a Buddhist Treatise in Old Javanese (version
+               B)</h1>
+            <div id="inscription-display">
+               <p>Authors of digital edition:
+                  Andrea Acri &amp; Arlo Griffiths</p>
+               <p>Filename: <span class="text-id">DHARMA_CritEdPamutusBuddhistB.xml</span></p>
+               <p>Language: Old Javanese</p>
+               <p>Repository: Nusantara Philology <span class="text-id">(tfd-nusantara-philology)</span></p>
+               <p>Version:  part commented since without access_token with github actions api calls
+                  are limited – still working on it</p>
+               <hr>
+               <h2 id="witnesses">Witnesses</h2>
+               <ul>
+                  <li><a id="D"><b>
+                           [D]
+                           </b></a> Denpasar, Dinas Kebudayaan Provinsi Bali, Pusat Dokumentasi, T/XXI/7/DOKBUD
+                     <ul>
+                        <li><b>Physical Description: </b><span>Palm-leaf manuscript. ... leaves in Balinese script.</span></li>
+                     </ul>
+                  </li>
+                  <li><a id="K"><b>
+                           [K]
+                           </b></a> Singaraja, Bali, Indonesia, Kirtya, Lontar, IIIb/408/16
+                     <ul>
+                        <li><b>Physical Description: </b><span>Palm-leaf manuscript. 6 leaves in Balinese script.</span></li>
+                     </ul>
+                  </li>
+                  <li><a id="or3963"><b>
+                           [L1]
+                           </b></a> Leiden, Leiden University Libraries (UB), Oosterse Handschriften, Or. 3963
+                     <ul>
+                        <li><b>Physical Description: </b><span>Paper manuscript. 6 pages in Balinese script.</span></li>
+                     </ul>
+                  </li>
+                  <li><a id="or5068"><b>
+                           [L2]
+                           </b></a> Leiden, Leiden University Libraries (UB), Oosterse Handschriften, Or. 5068
+                     <ul>
+                        <li><b>Physical Description: </b><span>Palm-leaf manuscript. ... leaves in Balinese script.</span></li>
+                     </ul>
+                  </li>
+                  <li><a id="M"><b>
+                           [M]
+                           </b></a> München, Bayerische Staatsbibliothek, Handschriften-Abteilung, Cod.jav. 64
+                     <ul>
+                        <li><b>Physical Description: </b><span>Palm-leaf manuscript. 47 leaves in Balinese script.</span></li>
+                     </ul>
+                  </li>
+               </ul>
+               <hr>
+               <div class="edition">
+                  <h2 id="edition">Edition</h2>
+                  <div class="col-10"></div><span class="lb" data-tip="invocation">invocation</span><div class="row">
+                     <div class="col-10 text-col">
+                        <p id="pamutusBuddhistB_01.01"><span class="pagelike" data-tip="Page start">⟨<a class="siglum" href="#K">K</a>: 1v⟩</span><span class="pagelike" data-tip="Page start">⟨<a class="siglum" href="#M">M</a>: 41v⟩</span>namo buddhāya!<br></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p><b class="lb" data-tip="Paragraph number">§1 </b>bhagavān buddha gotama, mavara-varah <span class="lem" data-app="d1e311">ri</span> śiṣyanira, <span class="lem" data-app="d1e317">ri</span> pamutus <span class="lem" data-app="d1e323">iṅ saṅ hyaṅ haji</span>. e anakku saṅ sevaka dharma, saṅ mahyun <span class="lem" data-app="d1e329">maluya</span> viśeṣa, rəṅə̄nən <span class="lem" data-app="d1e335">ujar</span> iṅ haji, <span class="lem" data-app="d1e342">kaṅ</span> sinaṅgah dharma, amajarakəna taṅ  <span class="lem" data-app="d1e350">tatasak iṅ</span> haji, aṅhiṅ byakta tuhu-tuhu juga, apaniṅ haji ṅaranya <span class="lem" data-app="d1e356">hana-haneṅucap</span>, hana tinuḍuh, hana ginəgvan, hana iṅaku, maṅkana svabhāvanya, <span class="mark">karaṇe hana iṅaranan haji</span>.</p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e311" href="#to-app-app00001" title="Apparatus 1" id="from-app-app00001" data-app="d1e311">(1)</a><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e317" href="#to-app-app00002" title="Apparatus 2" id="from-app-app00002" data-app="d1e317">(2)</a><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e323" href="#to-app-app00003" title="Apparatus 3" id="from-app-app00003" data-app="d1e323">(3)</a><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e329" href="#to-app-app00004" title="Apparatus 4" id="from-app-app00004" data-app="d1e329">(4)</a><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e335" href="#to-app-app00005" title="Apparatus 5" id="from-app-app00005" data-app="d1e335">(5)</a><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e342" href="#to-app-app00006" title="Apparatus 6" id="from-app-app00006" data-app="d1e342">(6)</a><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e350" href="#to-app-app00007" title="Apparatus 7" id="from-app-app00007" data-app="d1e350">(7)</a><a class="side-app" data-toggle="popover" data-html="true" data-target="d1e356" href="#to-app-app00008" title="Apparatus 8" id="from-app-app00008" data-app="d1e356">(8)</a></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p><b class="lb" data-tip="Paragraph number">§2 </b>kunəṅ saṅ putus maṅkaneka, bhaṭā⟨M41v4⟩ra siddha juga sinamaya, tan arvalən kami riṅ
+                           śrī bhakti bhojana. śrī, ṅaranya, mas pirak, ratnādi. bhakti ṅaranya, səmbah sarva
+                           praṇamya. bhojana ṅaranya, salviriṅ upabhoga kaṅ aləp. tahā hayva ta maṅkana, </p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p><b class="lb" data-tip="Paragraph number">§3 </b>ya⟨M42r1⟩n tumarima śrī, yāṅkən dinol vidhi saṅ hyaṅ dharma, yan tumarima bhakti,
+                           yāṅkən bhedākən saṅ hyaṅ dharma. yan tumarima bhojana, anaḍah kavətvaniṅ samaya, hayva
+                           ta maṅkana, ləñok ṅaranya saṅ viku, yan hanādravya kaha⟨M42r2⟩rəp. yan tumarimaṅ śrī,
+                           ləñok ya ta kaviśeṣa riṅ lupa, yanhā tumarimaṅ bhakti, ləñok ya ta kaviśeṣa deniṅ
+                           tamah, apan yan amaṅan varəg, ya hetuniṅ enak turūnya, viparīta saṅ viku yan maṅkana,
+                           apa do⟨M42r3⟩n saṅ viku yan maṅkana, muṅsimaniṅ saṅśaya, vikalpa, tr̥ṣṇā, lupa, yan
+                           tumarimaṅ śrī, mas pirak, yan tuma◯rimaṅ səmbah ya sukha,Aksara kha as in list of
+                           aksaras Or. 5068. yan tumarimaṅ bhogapabhoga, hetuniṅ maṅkana, kapaṅgihaniṅ samaya,
+                           apan saṅ dharma mayajñā ⟨M42r4⟩ śūnyata, ndā maṅkana saṅ putus, kunaṅ prathama saṅ
+                           putus, sira ta saṅ maliṅgih riṅ padmāsana, saṅ tumari◯ma śrī bhakti bhojana, sira
+                           sinambah riṅ rāt, sira ta saṅ ratu guru, umarah riṅ nīti yogya, pān hana ṅarananira,
+                           ⟨M42v1⟩bhaṭāra akārya dharma sira, maṅkana ta rehanya, kaliṅanyānakku, pet pva kahilaṅaniṅ
+                           śarīra, ndah hayva tan inaku, tan inaku ṅaranya, kady aṅganiṅ vvaṅ amaṅan riṅ palətan,
+                           sumurup riṅ loṅan, tan inaku ṅaraniṅ śarīra ya⟨M42v2⟩n maṅkana, inaku ṅaranya tan
+                           hilaṅniṅ cara maryādā yukti, mvaṅ meṅet sakiṅ kinavruhanya, inaku ṅaraniṅ śarīra yan
+                           maṅkana, prih kahilaṅanya, makadvāra vruh riṅ saṅkan paran, prih kaləpasaniṅ bhuvana,
+                           ndā hayva ta hiṅatiləyəp, ⟨M42v3⟩ makadvāra yan vruh anāgata tan vipatthā, prih kahilaṅaniṅ
+                           bāyu, hayva hinəb, kaṅ makadvāra kanirupekṣān, prih kahilaṅaniṅ śabda, ndan hayva
+                           ta humənəṅ, makadvāra kasarbvajñānan, prih kahilaṅaniṅ iḍəp, hayva tan pagaləṅ ⟨M42v4⟩,
+                           makadon vruhaniṅ maṅavruhi, prih kahilaṅaniṅ tutūr, ayo tālupa, makadvāra vruhniṅ
+                           manon, hayva ta vuta, makadvāra katəmu tan pinet, ndān sira viśeṣa, prih kahilaṅaniṅ
+                           viśeṣa, makadvāra umaku ⟨M43r1⟩tan pavāstu, nahan prathama saṅ vuvus, ndāh yatika
+                           paḍa bhaṭāra, riṅ sakala pratyakṣa, riṅ kotsāhaniṅ  jagrapāda ika, cəp vaṅ jñāna,
+                           luput saṅkeṅ māyatattva, ya ta turyapāda ṅaranya, ri samaṅkana taṅ sinaṅguh vido⟨M43r2⟩n,
+                           lāvan sinaṅguh maturū tan paṅipi, ndā tan kəneṅ pramanan, makahetu paḍəmniṅ jñānendriya,
+                           misəp riṅ antahr̥daya, </p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p><b class="lb" data-tip="Paragraph number">§4 </b>hayva tan pratipakṣa, riṅ pakṣa maṅkana, hayva tastuti, apan prajñāparimitta, ikiṅ
+                           jñāna, mvaṅ sarvakār⟨M43r3⟩yakarta, ya tika hetuniṅ maṅatīta, mataṅnyan līna humənəṅ
+                           vruh tan apuṅguṅ, valyākəna pamutus ṅūni, mari śarīra deniṅ vruhniṅ saṅkan paran,
+                           ika tā ya vyaktinyan saṅkan, maṅandəliṅ kāma ratih, ikaṅ jñāna laki ta ya § ⟨M43r4⟩
+                           ika, kunəṅ vyaktinyan paran, ri kālaniṅ pati ndin paranya, mareṅ śūnya jugeka, kaliṅanya
+                           dadi sakeṅ taya, maluya mariṅ taya, maṅkā svabhāvaniṅ janma, </p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p>kunaṅ saṅ putus, tan maluya riṅ saṅkan paran, nimittaniṅ mari ⟨M43v1⟩ maśarīra, apan
+                           mari kabhuvanan, deniṅ anāgata, tan vipatta ṅaranya, anāgata ṅaranya, tan karakətan
+                           deniṅ maraṇa bāyu, denikaṅ manon, deniṅ vruh katəmu tan pinet, yan maṅkana ya sinaṅgah
+                           pinet, yan maṅkana ⟨M43v2⟩ ya sinaṅgah viśeṣa, deniṅ tan pavastu, ndah anakku ya tikā
+                           kuñci rahasya ṅaranya, </p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p>ndah riṅ paramapaścat saṅ hyaṅ pramāṇa, sakiṅ tələṅniṅ hr̥daya, patiṅgalniṅ rekhamāya,
+                           gavenira riṅ sakala niṣkala, kaṅ katon karəṅə̄, kahambuṅ ka⟨M43v3⟩ücap, kaïḍəp, ya
+                           ta humisəp riṅ gave, pagavenira ṅaranya, ikaṅ iḍəp lāvan tutūr, ya ta mapisan riṅ
+                           pramāṇa, kaliṅaniṅ pramāṇa, marya mapramāṇakən, ya sinaṅgah viśeṣa, tan iṅgatiṅ viśeṣa,
+                           ya mokṣa ṅke ṅaranya, mapu⟨M43v4⟩təra siddhaniṅ kāla, rəp pva yi sira, humənəṅ humibəkiṅ
+                           tan kabhuvanan, tan śinarīran, tan hana ajñāna, ya kaliṅaniṅ siddhā mokṣa, ləpasiddhā
+                           ṅaranya, siṅ həniṅ siṅ həniṅ rūpa varṇa, mokṣa ṅaranya, ri denya tan kapaṅguhanya,
+                           lə⟨M44r1⟩pas ṅaranya, ri denyan luput iṅ jñāna mvaṅ śarīra, hayva tānakva hayva mine,
+                           hayva tinəmbe, hayva nāśana, riṅ kuna-kuna hayva minaṅkana, hayva minaṅke, apa pva
+                           juga, hava byakta tuhu-tuhu jugeka, kumva kunəṅ liṅanta, anakku saṅ sevaka dharma,
+                           
+                           </p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p>apa pva tan tərus tumon bhaṭāra riṅ campa, riṅ malayū, mvaṅ saṅ sarvadeśa, yan tuhu
+                           byāpaka arananta, havananta mariṅ sabəraṅ, kunaṅ yan ramon kaniṣṭīkā, yan banavva
+                           kunaṅ, madhyama ika, kunaṅ ikaṅ uttama, vivahana juga, vivahana ṅaranya, maṅkenucap
+                           maṅke təka. maṅke ta ṅaranya, iki bhaṭāra sinamaya. sama, ṅa, paḍa, paḍa, ṅa, ya.
+                           ṅa, tan dudū, vyaktinyan paḍa, ri kāla haripniṅ sarāt, vyaktinya⟨M44r4⟩n ya viśeṣa,
+                           ikaṅ iiki de saṅ umaṅgihakən, kaliṅanyānakku, mary atakon, mary aṅucap, mary avarah,
+                           māri vinarah, mari umet, mari pinet, apan bhaṭāra ṅucap, apan bhaṭāra inucap, bhaṭāra
+                           ⟨M44v1⟩ vinarah, bhaṭāra mavarah, bhaṭāra amet, bhaṭāra pinet, ya kaliṅaniṅ laṅgə̄ṅ,
+                           mənəṅ tan molah, vruh yan samaya viśeṣa, ika bhāṣa samaya ṅaranya, ika ṅke tan inucap,
+                           ya ikā kuñci rahasya ṅaranya, a⟨M44v2⟩tīta bhaṭāra riṅ bhuvana, pagehakəna riṅ tələṅiṅ
+                           svātma, hayvenaranan, hayo tinuḍuh, hayvānaku, hayvenuśana, kunaṅ hetuniṅ maṅaliha
+                           bhaṭāra riṅ bhuvana, mary asaṅśaya saṅ kinabhaktyaniṅ rāt, kunaṅ yan tumūt abhakti,
+                           rvāte⟨M44v3⟩ka keḍəpanya, kumvatakən bhaṭāra riṅ bhuvana, norakən bhaṭāra riṅ śarīra,
+                           bhrānta saṅ putus yan maṅkana, tumūtakən ambəkiṅ rāt, apan tuṅgal ya bhaṭāra riṅ śarīra,
+                           yan riṅ bhuvana tan enak tapa, gili-giligən mvaṅ bhaṭāra ⟨M44v3⟩ riṅ śarīra, ya hana
+                           saṅśayanən, tan molah humənəṅ juga, pinakasandhi-sandhi ṅaranya, maniddhākən anupadyanta,
+                           pamutusiṅ śarīra, yan avuk dravvahikaṅ śarīra, tan milu bhaṭāra avuk, hane prakr̥ti
+                           juga sira, pra⟨M45r1⟩kr̥ti ṅaranya, ikaṅ taya, kunaṅ hetuniṅ kasapu tan pətəṅ, ri
+                           təkaniṅ pati, apanya tan alah ikaṅ saṅśaya, ikaṅ vikalpa, tr̥ṣṇā, lupa, ri kālaniṅ
+                           urip, ya hetu mandadi mvah, saṅkāniṅ prakr̥ti ika, mandəliṅ śuklasoṇita, kelv-ilū
+                           bhaṭāra deniṅ iḍəp, apan hyamaṅənakən, tuṅtuṅ vikalpa, tuṅtuṅ nimittaniṅ kasaputan,
+                           riṅ antaśarīra, mataṅnyan hasoyi bhaṭāra manu riṅ rāt, tan milu bhuvana, tan kasaputan
+                           pətəṅ, tan kapaḍaṅan de ⟨M45r3⟩niṅ āditya, apan gavenira riṅ vikalpa Ikā, maṅke tiki
+                           vəkasiṅ viśeṣan ya paḍa, ta ya ṣi, apan katəvaṅan deniṅ sakala, pradhāna śarīra bhaṭāra,
+                           mataṅnyan tan vənaṅ maṅkana, kunəṅ riṅ antaśarīra, siddha viśeṣa mokṣāva⟨M45r4⟩k,
+                           tan hanamana vəṅi sira, kaliṅanya mati rumuhun, tinivahakən tan pagagaddhā, ikaṅ tumaki-taki
+                           ika, paḍa niṣkala patti, mvaṅ niṣkala maṅke, yata byakta tuhu-tuhu ṅaranya, hayo kadi
+                           aṅr̥ṅə̄ gərəh ⟨M 45v1⟩, deniṅ maṅrəṅə̄ kojaran bhaṭāra, kaliṅanya gumuru-guruh, tan
+                           vruh ri vəkasanya, hayva kadi haṅambuṅ səkar, kinadut deniṅ voṅ lyan, deni aṅrasani
+                           rasa bhaṭāra, maṅambuṅ tan vruh i uṅgvanya, kunaṅ saṅ putus vruh, riṅ u⟨M45v2⟩ṅgvaniṅ
+                           tan pahuṅgvan, vruh riṅ vəkasiṅ tan pavəkas, tan hinavitan ikaṅ don, ikaṅ don kaliṅanya,
+                           yeka śabdāśat ṅaranya, yāavat maṅkana sāri-sāri, ya pāvak bhaṭāra, ndan sira ta śrī
+                           jagatnātha, śrī ṅaranya, mahālpa ⟨M45v3⟩. jagat ṅaranya, bhuvana mvaṅ sarvajanma.
+                           nātha, ṅa, prabhu, ndan sira kavitniṅ sarvatatva, sirāmijilakən bhuvana, mvaṅ sarvajanma,
+                           sopakāranya, kaliṅanya sakeṅ masakala, hana ikaṅ śarīra, sakiṅ śarīra ikaṅ aji mvaṅ
+                           guṇa, ⟨M45v4⟩ sakiṅ guṇa aji ikaṅ deva, sakiṅ deva ikaṅ tuḍuh, sakiṅ tuḍuh hananiṅ
+                           sor mvaṅ i ruhur, sakiṅ sor ruhur, hana vetan, kidul, kulon, lor, madhya, ika saṅ
+                           hyaṅ pamutus, maṅkanānakku saṅ sevaka dharma, eṅətakəna ⟨M46r1⟩hayva cavuh, bvat upadrava,
+                           namo buddhāya svahā təlas.</p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <div class="row">
+                     <div class="col-10 text-col">
+                        <p></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+                  <hr><span class="lb" data-tip="colophon">colophon</span><div class="row">
+                     <div class="col-10 text-col">
+                        <p id="pamutusBuddhistB_02.01">....<br></p>
+                     </div>
+                     <div class="col-2 apparat-col text-center"></div>
+                  </div>
+               </div>
+               <div class="apparatus">
+                  <h2 id="apparatus" class="collapsible">Apparatus <i class="fa-solid fa-angles-down"></i></h2>
+                  <div class="collapsible-content">
+                     <div class="ed-section"><br><a id="to-app-app00001" href="#from-app-app00001">^1</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">ri</span><b>]</b><b> <a class="siglum" href="#M">M</a></b>, </span><span class="bottom-reading-line"><span class="reading">riṅ</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><br><a id="to-app-app00002" href="#from-app-app00002">^2</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">ri</span><b>]</b><b> <a class="siglum" href="#M">M</a></b>, </span><span class="bottom-reading-line"><span class="reading">riṅ</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><br><a id="to-app-app00003" href="#from-app-app00003">^3</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">iṅ saṅ hyaṅ haji</span><b>]</b><b> <a class="siglum" href="#M">M</a></b>, </span><span class="bottom-reading-line"><span class="reading">iṅ haji</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><br><a id="to-app-app00004" href="#from-app-app00004">^4</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">maluya</span><b>]</b><b> <a class="siglum" href="#M">M</a></b>, </span><span class="bottom-reading-line"><span class="reading">malvaya</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><br><a id="to-app-app00005" href="#from-app-app00005">^5</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">ujar</span><b>]</b><b> <a class="siglum" href="#M">M</a></b>, </span><span class="bottom-reading-line"><span class="reading">kumajar</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><br><a id="to-app-app00006" href="#from-app-app00006">^6</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">kaṅ</span><b>]</b><b> <a class="siglum" href="#K">K</a></b>, </span><span class="bottom-reading-line"><span class="reading">saṅ</span> <b> <a class="siglum" href="#M">M</a></b></span></span></span><br><a id="to-app-app00007" href="#from-app-app00007">^7</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">tatasak iṅ</span><b>]</b><b> <a class="siglum" href="#M">M</a></b>, </span><span class="bottom-reading-line"><span class="reading">tatasakeṅ</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><br><a id="to-app-app00008" href="#from-app-app00008">^8</a>. <span class="bottomapp"><span class="app-entry"><span class="bottom-lemma-line"><span class="">hana-haneṅucap</span><b>]</b><b> <a class="siglum" href="#M">M</a></b>, </span><span class="bottom-reading-line"><span class="reading">hananeṅucap</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span></div>
+                  </div>
+               </div>
+               <div class="bibliography">
+                  <h2 id="bibliography">Bibliography</h2>
+                  <div class="col-10"></div>
+                  <p></p>
+                  <div class="ed-section">
+                     <h3 class="ed-heading" id="d1e454">References</h3> 		
+                     					
+                     <p class="bib-entry"></p> 		
+                     				</div>
+               </div>
+            </div>
+            <div id="inscription-source" class="hidden">
+               <fieldset>
+                  <legend>Display Options</legend><label>Word Wrap
+                     <input class="display-option" name="xml-wrap" type="checkbox" checked=""></label><label>Line Numbers
+                     <input class="display-option" name="xml-line-nos" type="checkbox" checked=""></label><label>Comments
+                     <input class="display-option" name="xml-hide-comments" type="checkbox" checked=""></label><label>Processing Instructions
+                     <input class="display-option" name="xml-hide-instructions" type="checkbox" checked=""></label></fieldset>
+               <div id="xml" class="xml xml-wrap xml-lines-nos">
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng"
+                           schematypens="http://relaxng.org/ns/structure/1.0"?&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng"
+                           schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch"
+                           type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">5</span><span class="xml-line-contents"><span class="instruction">&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">	xml:lang="eng"</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">	xml:id="pamutusBuddhistBB"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">	&lt;teiHeader&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">		&lt;fileDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">10</span><span class="xml-line-contents">			&lt;titleStmt&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;title type="editorial"&gt;The Summum: Digital Critical Edition of a Buddhist Treatise
+                        in Old Javanese (version B)&lt;/title&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">				&lt;title type="original" xml:lang="san-Latn"&gt;Saṅ Hyaṅ Pamutus&lt;/title&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;respStmt&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;resp&gt;author of digital edition&lt;/resp&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">15</span><span class="xml-line-contents">					&lt;persName ref="part:anac"&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;forename&gt;Andrea&lt;/forename&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;surname&gt;Acri&lt;/surname&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/persName&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;persName ref="part:argr"&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">20</span><span class="xml-line-contents">						&lt;forename&gt;Arlo&lt;/forename&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;surname&gt;Griffiths&lt;/surname&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/persName&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;/respStmt&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;/titleStmt&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">25</span><span class="xml-line-contents">			&lt;publicationStmt&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;authority&gt;DHARMA&lt;/authority&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;pubPlace&gt;Lyon, Paris, Jakarta&lt;/pubPlace&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">				&lt;idno type="filename"&gt;DHARMA_CritEdPamutusBuddhistB.xml&lt;/idno&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;availability&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">30</span><span class="xml-line-contents">					&lt;licence target="https://creativecommons.org/licenses/by/4.0/"&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;p&gt;This work is licenced under the Creative Commons Attribution 4.0 Unported Licence.
+                        To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/
+                        or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View,
+                        California, 94041, USA.&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/licence&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;/availability&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;date from="2019" to="2025"&gt;2019-2025&lt;/date&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">35</span><span class="xml-line-contents">			&lt;/publicationStmt&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;sourceDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;listWit&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">				&lt;witness xml:id="D"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;abbr type="siglum"&gt;D&lt;/abbr&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">40</span><span class="xml-line-contents">				&lt;msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;msIdentifier&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                                				&lt;settlement&gt;Denpasar&lt;/settlement&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                  				&lt;institution&gt;Dinas Kebudayaan Provinsi Bali&lt;/institution&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                  				&lt;repository&gt;Pusat Dokumentasi&lt;/repository&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">45</span><span class="xml-line-contents">                  				&lt;idno&gt;T/XXI/7/DOKBUD&lt;/idno&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                 				 &lt;!-- https://archive.org/details/tatwa-kabuddhan --&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                            			&lt;/msIdentifier&gt;						</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">50</span><span class="xml-line-contents">					&lt;p&gt;Palm-leaf manuscript. ... leaves in Balinese script.&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">55</span><span class="xml-line-contents">					&lt;/physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;history/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/witness&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">				&lt;witness xml:id="K"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">60</span><span class="xml-line-contents">					&lt;abbr type="siglum"&gt;K&lt;/abbr&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;msIdentifier&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                                				&lt;settlement&gt;Singaraja, Bali, Indonesia&lt;/settlement&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                  				&lt;repository&gt;Kirtya&lt;/repository&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">65</span><span class="xml-line-contents">                  				&lt;collection&gt;Lontar&lt;/collection&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                  				&lt;idno&gt;IIIb/408/16&lt;/idno&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                            				&lt;/msIdentifier&gt;						</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">70</span><span class="xml-line-contents">					&lt;p&gt;Palm-leaf manuscript. 6 leaves in Balinese script.&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;/handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">75</span><span class="xml-line-contents">					&lt;/physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;history/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/witness&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">					&lt;witness xml:id="or3963"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">80</span><span class="xml-line-contents">						&lt;abbr type="siglum"&gt;L1&lt;/abbr&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;msIdentifier&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;settlement&gt;Leiden&lt;/settlement&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;institution&gt;Leiden University Libraries (UB)&lt;/institution&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">85</span><span class="xml-line-contents">								&lt;repository&gt;Oosterse Handschriften&lt;/repository&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;idno&gt;Or. 3963&lt;/idno&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;/msIdentifier&gt;							</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">90</span><span class="xml-line-contents">									&lt;p&gt;Paper manuscript. 6 pages in Balinese script.&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;/objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">									&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;/handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">95</span><span class="xml-line-contents">							&lt;/physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;history/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;/msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/witness&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">					&lt;witness xml:id="or5068"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">100</span><span class="xml-line-contents">					&lt;abbr type="siglum"&gt;L2&lt;/abbr&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;msIdentifier&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;settlement&gt;Leiden&lt;/settlement&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;institution&gt;Leiden University Libraries (UB)&lt;/institution&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">105</span><span class="xml-line-contents">						&lt;repository&gt;Oosterse Handschriften&lt;/repository&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;idno&gt;Or. 5068&lt;/idno&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/msIdentifier&gt;							</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">110</span><span class="xml-line-contents">					&lt;p&gt;Palm-leaf manuscript. ... leaves in Balinese script.&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;/objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">									&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;/handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">115</span><span class="xml-line-contents">							&lt;/physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;history/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;/msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/witness&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">					&lt;witness xml:id="M"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">120</span><span class="xml-line-contents">						&lt;abbr type="siglum"&gt;M&lt;/abbr&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							 &lt;msIdentifier&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                                &lt;settlement&gt;München&lt;/settlement&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                                &lt;institution&gt;Bayerische Staatsbibliothek&lt;/institution&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">125</span><span class="xml-line-contents">                                &lt;repository&gt;Handschriften-Abteilung&lt;/repository&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                                &lt;idno&gt;Cod.jav. 64&lt;/idno&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">                                &lt;/msIdentifier&gt;						</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">130</span><span class="xml-line-contents">			&lt;p&gt;Palm-leaf manuscript. 47 leaves in Balinese script.&lt;/p&gt;&lt;!-- total folio count
+                        of number of pages/folios for text in multitext ms.? --&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;/objectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">									&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">								&lt;/handDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">135</span><span class="xml-line-contents">							&lt;/physDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;history/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">						&lt;/msDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;/witness&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;!-- Kirtya 4417 / III b — lontar, see the Kirtya&rsquo;s list--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">140</span><span class="xml-line-contents">							&lt;!-- Kirtya 1398 = LOr 9762 --&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;!-- Kirtya IIIb.487 --&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;!-- Kirtya 408/16.IIIb--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">							&lt;!-- Kirtya IIIb. 4871 --&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;/listWit&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">145</span><span class="xml-line-contents">			&lt;/sourceDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">		&lt;/fileDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">		&lt;encodingDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;projectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;p&gt;Encoded in TEI according to the &lt;ref target="{URI for DHARMA editorial conventions
+                        or page with link to Encoding Guides}"&gt;Conventions of Project DHARMA&lt;/ref&gt;&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">150</span><span class="xml-line-contents">			&lt;/projectDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;editorialDecl&gt;        </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;correction&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;/correction&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">155</span><span class="xml-line-contents">				&lt;normalization&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;/normalization&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;interpretation&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">160</span><span class="xml-line-contents">				&lt;/interpretation&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;/editorialDecl&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;samplingDecl&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;p/&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;/samplingDecl&gt; </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">165</span><span class="xml-line-contents">		&lt;/encodingDesc&gt;&lt;revisionDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;change who="part:argr" when="2025-11-28" status="draft"&gt;started encoding the edition&lt;/change&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">		&lt;/revisionDesc&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">	&lt;/teiHeader&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">	&lt;text xml:space="preserve"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">170</span><span class="xml-line-contents">		&lt;body&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">            &lt;div type="edition" xml:lang="kaw-Latn"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">			&lt;div xml:id="pamutusBuddhistB_01"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K: [1v1] // 0 // na:mo budḍa:ya: // 0 // bhagava:n· budḍa gotamma:, mavaraḥ-varaḥ
+                        riṁ siṣyanira, riṁ pa:[SH]mutusiṁ haji. E hanaku saṁ śevaka:ḍarmma:, saṁ mahyun malvaya
+                        viseṣa:, R̥ṅə:nən kumajar iṁṅ haji, kaṁ sinaṅgaḥ ḍarmma</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">175</span><span class="xml-line-contents">[1v2]:, Amajarakna: taṁ tathasakeṁṅ haji, haṅiṁ byakta tuhu-tuhu jugga:, hapaniṁṅ
+                        haji ṅaranya hananeṁ [SH] ṅucap·, Ana: tinuduḥ, hana ginəgvan·, hana hiṅaku, maṅkana
+                        śvabhavanya, karane hana hiṅaranan haji, </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M: // [41v2] 0 // na:mo budḍaya: // 0 // bhagava:n· budḍa gotamma:, mavara-varaḥ ri
+                        śiṣyanira, ri pa◯mutusiṁ saṁ hyaṁ haji ◯. E hanaku saṁ sevaka:ḍa:rmma, saṁ mahyun·
+                        maluya viseṣa:, R̥ṅə:nən uja:r iṅ haji, saṁ sinaṅgaḥ ḍa:rmma, Ama:jarakna taṁ [41v3]tatasak
+                        iṅ haji, haṅhiṁ byakta: tuhu-tuhu jugga:, a:paniṅ haji ṅaranya hana-haneṅucap·, hana:
+                        tinuḍu◯ḥ, hana ginəgvan·, hana Iṅa:ku, maṅkana svabha:vanya, karaṇe hana Iṅaranan
+                        haji,</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;ab type="invocation" xml:lang="san-Latn" xml:id="pamutusBuddhistB_01.01"&gt;&lt;pb n="1v"
+                           edRef="#K"/&gt;&lt;pb n="41v" edRef="#M"/&gt;namo buddhāya!&lt;/ab&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">180</span><span class="xml-line-contents">&lt;p n="1"&gt;bhagavān buddha gotama, mavara-varah &lt;app&gt;&lt;lem wit="#M"&gt;ri&lt;/lem&gt;&lt;rdg wit="#K"&gt;riṅ&lt;/rdg&gt;&lt;/app&gt;
+                        śiṣyanira, &lt;app&gt;&lt;lem wit="#M"&gt;ri&lt;/lem&gt;&lt;rdg wit="#K"&gt;riṅ&lt;/rdg&gt;&lt;/app&gt; pamutus &lt;app&gt;&lt;lem
+                        wit="#M"&gt;iṅ saṅ hyaṅ haji&lt;/lem&gt;&lt;rdg wit="#K"&gt;iṅ haji&lt;/rdg&gt;&lt;/app&gt;. e anakku saṅ sevaka
+                        dharma, saṅ mahyun &lt;app&gt;&lt;lem wit="#M"&gt;maluya&lt;/lem&gt;&lt;rdg wit="#K"&gt;malvaya&lt;/rdg&gt;&lt;/app&gt;
+                        viśeṣa, rəṅə̄nən &lt;app&gt;&lt;lem wit="#M"&gt;ujar&lt;/lem&gt;&lt;rdg wit="#K"&gt;kumajar&lt;/rdg&gt;&lt;/app&gt; iṅ
+                        haji, &lt;app&gt;&lt;lem wit="#K"&gt;kaṅ&lt;/lem&gt;&lt;rdg wit="#M"&gt;saṅ&lt;/rdg&gt;&lt;/app&gt; sinaṅgah dharma, amajarakəna
+                        taṅ &lt;!-- ⟨M41v3⟩ --&gt; &lt;app&gt;&lt;lem wit="#M"&gt;tatasak iṅ&lt;/lem&gt;&lt;rdg wit="#K"&gt;tatasakeṅ&lt;/rdg&gt;&lt;/app&gt;
+                        haji, aṅhiṅ byakta tuhu-tuhu juga, apaniṅ haji ṅaranya &lt;app&gt;&lt;lem wit="#M"&gt;hana-haneṅucap&lt;/lem&gt;&lt;rdg
+                        wit="#K"&gt;hananeṅucap&lt;/rdg&gt;&lt;/app&gt;, hana tinuḍuh, hana ginəgvan, hana iṅaku, maṅkana
+                        svabhāvanya, &lt;seg rend="check"&gt;karaṇe hana iṅaranan haji&lt;/seg&gt;.&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">	K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">	M: kunəṁ saṁ putus maṅkaneka:, bhaṭa:[41v4]ra sidḍa: juga: sinama:ya, tan arva L̥n
+                        kami riṁ śrī bhakti-bojaṇa. śrī, ṅaranya:, ma:s pirak·, ratna:di. bha◯kti ṅaranya,
+                        səmbaḥ sarvvapr̥namya. bhojaṇa ṅaranya, salviriṁ Upabhoga kaṅ aL̥p·. taha: hayva:
+                        ta maṅkana,</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">185</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.02" n="2"&gt;kunəṅ saṅ putus maṅkaneka, bhaṭā⟨M41v4⟩ra
+                           siddha juga sinamaya, tan arvalən kami riṅ śrī bhakti bhojana. śrī, ṅaranya, mas pirak,
+                           ratnādi. bhakti ṅaranya, səmbah sarva praṇamya. bhojana ṅaranya, salviriṅ upabhoga
+                           kaṅ aləp. tahā hayva ta maṅkana, &lt;/p&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">190</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.03" n="3"&gt;ya⟨M42r1⟩n tumarima śrī, yāṅkən dinol vidhi
+                           saṅ hyaṅ dharma, yan tumarima bhakti, yāṅkən bhedākən saṅ hyaṅ dharma. yan tumarima
+                           bhojana, anaḍah kavətvaniṅ samaya, hayva ta maṅkana, ləñok ṅaranya saṅ viku, yan hanādravya
+                           kaha⟨M42r2⟩rəp. yan tumarimaṅ śrī, ləñok ya ta kaviśeṣa riṅ lupa, yanhā tumarimaṅ
+                           bhakti, ləñok ya ta kaviśeṣa deniṅ tamah, apan yan amaṅan varəg, ya hetuniṅ enak turūnya,
+                           viparīta saṅ viku yan maṅkana, apa do⟨M42r3⟩n saṅ viku yan maṅkana, muṅsimaniṅ saṅśaya,
+                           vikalpa, tr̥ṣṇā, lupa, yan tumarimaṅ śrī, mas pirak, yan tuma◯rimaṅ səmbah ya sukha,Aksara
+                           kha as in list of aksaras Or. 5068. yan tumarimaṅ bhogapabhoga, hetuniṅ maṅkana, kapaṅgihaniṅ
+                           samaya, apan saṅ dharma mayajñā ⟨M42r4⟩ śūnyata, ndā maṅkana saṅ putus, kunaṅ prathama
+                           saṅ putus, sira ta saṅ maliṅgih riṅ padmāsana, saṅ tumari◯ma śrī bhakti bhojana, sira
+                           sinambah riṅ rāt, sira ta saṅ ratu guru, umarah riṅ nīti yogya, pān hana ṅarananira,
+                           ⟨M42v1⟩bhaṭāra akārya dharma sira, maṅkana ta rehanya, kaliṅanyānakku, pet pva kahilaṅaniṅ
+                           śarīra, ndah hayva tan inaku, tan inaku ṅaranya, kady aṅganiṅ vvaṅ amaṅan riṅ palətan,
+                           sumurup riṅ loṅan, tan inaku ṅaraniṅ śarīra ya⟨M42v2⟩n maṅkana, inaku ṅaranya tan
+                           hilaṅniṅ cara maryādā yukti, mvaṅ meṅet sakiṅ kinavruhanya, inaku ṅaraniṅ śarīra yan
+                           maṅkana, prih kahilaṅanya, makadvāra vruh riṅ saṅkan paran, prih kaləpasaniṅ bhuvana,
+                           ndā hayva ta hiṅatiləyəp, ⟨M42v3⟩ makadvāra yan vruh anāgata tan vipatthā, prih kahilaṅaniṅ
+                           bāyu, hayva hinəb, kaṅ makadvāra kanirupekṣān, prih kahilaṅaniṅ śabda, ndan hayva
+                           ta humənəṅ, makadvāra kasarbvajñānan, prih kahilaṅaniṅ iḍəp, hayva tan pagaləṅ ⟨M42v4⟩,
+                           makadon vruhaniṅ maṅavruhi, prih kahilaṅaniṅ tutūr, ayo tālupa, makadvāra vruhniṅ
+                           manon, hayva ta vuta, makadvāra katəmu tan pinet, ndān sira viśeṣa, prih kahilaṅaniṅ
+                           viśeṣa, makadvāra umaku ⟨M43r1⟩tan pavāstu, nahan prathama saṅ vuvus, ndāh yatika
+                           paḍa bhaṭāra, riṅ sakala pratyakṣa, riṅ kotsāhaniṅ  jagrapāda ika, cəp vaṅ jñāna,
+                           luput saṅkeṅ māyatattva, ya ta turyapāda ṅaranya, ri samaṅkana taṅ sinaṅguh vido⟨M43r2⟩n,
+                           lāvan sinaṅguh maturū tan paṅipi, ndā tan kəneṅ pramanan, makahetu paḍəmniṅ jñānendriya,
+                           misəp riṅ antahr̥daya, &lt;/p&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">195</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:  apan yan amaṅan varəg, ya hetuniṅ enak turūnya, viparīta saṅ viku yan maṅkana,
+                        apa do⟨M42r3⟩n saṅ viku yan maṅkana, muṅsimaniṅ saṅśaya, vikalpa, tr̥ṣṇā, lupa, yan
+                        tumarimaṅ śrī, mas pirak, yan tuma◯rimaṅ səmbah ya sukha,Aksara kha as in list of
+                        aksaras Or. 5068. yan tumarimaṅ bhogapabhoga, hetuniṅ maṅkana, kapaṅgihaniṅ samaya,
+                        apan saṅ dharma mayajñā ⟨M42r4⟩ śūnyata, ndā maṅkana saṅ putus, kunaṅ prathama saṅ
+                        putus, sira ta saṅ maliṅgih riṅ padmāsana, saṅ tumari◯ma śrī bhakti bhojana, sira
+                        sinambah riṅ rāt, sira ta saṅ ratu guru, umarah riṅ nīti yogya, pān hana ṅarananira,</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">200</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.04" n="4"&gt;hayva tan pratipakṣa, riṅ pakṣa maṅkana,
+                           hayva tastuti, apan prajñāparimitta, ikiṅ jñāna, mvaṅ sarvakār⟨M43r3⟩yakarta, ya tika
+                           hetuniṅ maṅatīta, mataṅnyan līna humənəṅ vruh tan apuṅguṅ, valyākəna pamutus ṅūni,
+                           mari śarīra deniṅ vruhniṅ saṅkan paran, ika tā ya vyaktinyan saṅkan, maṅandəliṅ kāma
+                           ratih, ikaṅ jñāna laki ta ya § ⟨M43r4⟩ ika, kunəṅ vyaktinyan paran, ri kālaniṅ pati
+                           ndin paranya, mareṅ śūnya jugeka, kaliṅanya dadi sakeṅ taya, maluya mariṅ taya, maṅkā
+                           svabhāvaniṅ janma, &lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">205</span><span class="xml-line-contents">or3963: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.05"&gt;kunaṅ saṅ putus, tan maluya riṅ saṅkan paran, nimittaniṅ
+                           mari ⟨M43v1⟩ maśarīra, apan mari kabhuvanan, deniṅ anāgata, tan vipatta ṅaranya, anāgata
+                           ṅaranya, tan karakətan deniṅ maraṇa bāyu, denikaṅ manon, deniṅ vruh katəmu tan pinet,
+                           yan maṅkana ya sinaṅgah pinet, yan maṅkana ⟨M43v2⟩ ya sinaṅgah viśeṣa, deniṅ tan pavastu,
+                           ndah anakku ya tikā kuñci rahasya ṅaranya, &lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">210</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or3963: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">215</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.06"&gt;ndah riṅ paramapaścat saṅ hyaṅ pramāṇa, sakiṅ tələṅniṅ
+                           hr̥daya, patiṅgalniṅ rekhamāya, gavenira riṅ sakala niṣkala, kaṅ katon karəṅə̄, kahambuṅ
+                           ka⟨M43v3⟩ücap, kaïḍəp, ya ta humisəp riṅ gave, pagavenira ṅaranya, ikaṅ iḍəp lāvan
+                           tutūr, ya ta mapisan riṅ pramāṇa, kaliṅaniṅ pramāṇa, marya mapramāṇakən, ya sinaṅgah
+                           viśeṣa, tan iṅgatiṅ viśeṣa, ya mokṣa ṅke ṅaranya, mapu⟨M43v4⟩təra siddhaniṅ kāla,
+                           rəp pva yi sira, humənəṅ humibəkiṅ tan kabhuvanan, tan śinarīran, tan hana ajñāna,
+                           ya kaliṅaniṅ siddhā mokṣa, ləpasiddhā ṅaranya, siṅ həniṅ siṅ həniṅ rūpa varṇa, mokṣa
+                           ṅaranya, ri denya tan kapaṅguhanya, lə⟨M44r1⟩pas ṅaranya, ri denyan luput iṅ jñāna
+                           mvaṅ śarīra, hayva tānakva hayva mine, hayva tinəmbe, hayva nāśana, riṅ kuna-kuna
+                           hayva minaṅkana, hayva minaṅke, apa pva juga, hava byakta tuhu-tuhu jugeka, kumva
+                           kunəṅ liṅanta, anakku saṅ sevaka dharma, </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;/p&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">220</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">225</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.07"&gt;apa pva tan tərus tumon bhaṭāra riṅ campa, riṅ
+                           malayū, mvaṅ saṅ sarvadeśa, yan tuhu byāpaka arananta, havananta mariṅ sabəraṅ, kunaṅ
+                           yan ramon kaniṣṭīkā, yan banavva kunaṅ, madhyama ika, kunaṅ ikaṅ uttama, vivahana
+                           juga, vivahana ṅaranya, maṅkenucap maṅke təka. maṅke ta ṅaranya, iki bhaṭāra sinamaya.
+                           sama, ṅa, paḍa, paḍa, ṅa, ya. ṅa, tan dudū, vyaktinyan paḍa, ri kāla haripniṅ sarāt,
+                           vyaktinya⟨M44r4⟩n ya viśeṣa, ikaṅ iiki de saṅ umaṅgihakən, kaliṅanyānakku, mary atakon,
+                           mary aṅucap, mary avarah, māri vinarah, mari umet, mari pinet, apan bhaṭāra ṅucap,
+                           apan bhaṭāra inucap, bhaṭāra ⟨M44v1⟩ vinarah, bhaṭāra mavarah, bhaṭāra amet, bhaṭāra
+                           pinet, ya kaliṅaniṅ laṅgə̄ṅ, mənəṅ tan molah, vruh yan samaya viśeṣa, ika bhāṣa samaya
+                           ṅaranya, ika ṅke tan inucap, ya ikā kuñci rahasya ṅaranya, a⟨M44v2⟩tīta bhaṭāra riṅ
+                           bhuvana, pagehakəna riṅ tələṅiṅ svātma, hayvenaranan, hayo tinuḍuh, hayvānaku, hayvenuśana,
+                           kunaṅ hetuniṅ maṅaliha bhaṭāra riṅ bhuvana, mary asaṅśaya saṅ kinabhaktyaniṅ rāt,
+                           kunaṅ yan tumūt abhakti, rvāte⟨M44v3⟩ka keḍəpanya, kumvatakən bhaṭāra riṅ bhuvana,
+                           norakən bhaṭāra riṅ śarīra, bhrānta saṅ putus yan maṅkana, tumūtakən ambəkiṅ rāt,
+                           apan tuṅgal ya bhaṭāra riṅ śarīra, yan riṅ bhuvana tan enak tapa, gili-giligən mvaṅ
+                           bhaṭāra ⟨M44v3⟩ riṅ śarīra, ya hana saṅśayanən, tan molah humənəṅ juga, pinakasandhi-sandhi
+                           ṅaranya, maniddhākən anupadyanta, pamutusiṅ śarīra, yan avuk dravvahikaṅ śarīra, tan
+                           milu bhaṭāra avuk, hane prakr̥ti juga sira, pra⟨M45r1⟩kr̥ti ṅaranya, ikaṅ taya, kunaṅ
+                           hetuniṅ kasapu tan pətəṅ, ri təkaniṅ pati, apanya tan alah ikaṅ saṅśaya, ikaṅ vikalpa,
+                           tr̥ṣṇā, lupa, ri kālaniṅ urip, ya hetu mandadi mvah, saṅkāniṅ prakr̥ti ika, mandəliṅ
+                           śuklasoṇita, kelv-ilū bhaṭāra deniṅ iḍəp, apan hyamaṅənakən, tuṅtuṅ vikalpa, tuṅtuṅ
+                           nimittaniṅ kasaputan, riṅ antaśarīra, mataṅnyan hasoyi bhaṭāra manu riṅ rāt, tan milu
+                           bhuvana, tan kasaputan pətəṅ, tan kapaḍaṅan de ⟨M45r3⟩niṅ āditya, apan gavenira riṅ
+                           vikalpa Ikā, maṅke tiki vəkasiṅ viśeṣan ya paḍa, ta ya ṣi, apan katəvaṅan deniṅ sakala,
+                           pradhāna śarīra bhaṭāra, mataṅnyan tan vənaṅ maṅkana, kunəṅ riṅ antaśarīra, siddha
+                           viśeṣa mokṣāva⟨M45r4⟩k, tan hanamana vəṅi sira, kaliṅanya mati rumuhun, tinivahakən
+                           tan pagagaddhā, ikaṅ tumaki-taki ika, paḍa niṣkala patti, mvaṅ niṣkala maṅke, yata
+                           byakta tuhu-tuhu ṅaranya, hayo kadi aṅr̥ṅə̄ gərəh ⟨M 45v1⟩, deniṅ maṅrəṅə̄ kojaran
+                           bhaṭāra, kaliṅanya gumuru-guruh, tan vruh ri vəkasanya, hayva kadi haṅambuṅ səkar,
+                           kinadut deniṅ voṅ lyan, deni aṅrasani rasa bhaṭāra, maṅambuṅ tan vruh i uṅgvanya,
+                           kunaṅ saṅ putus vruh, riṅ u⟨M45v2⟩ṅgvaniṅ tan pahuṅgvan, vruh riṅ vəkasiṅ tan pavəkas,
+                           tan hinavitan ikaṅ don, ikaṅ don kaliṅanya, yeka śabdāśat ṅaranya, yāavat maṅkana
+                           sāri-sāri, ya pāvak bhaṭāra, ndan sira ta śrī jagatnātha, śrī ṅaranya, mahālpa ⟨M45v3⟩.
+                           jagat ṅaranya, bhuvana mvaṅ sarvajanma. nātha, ṅa, prabhu, ndan sira kavitniṅ sarvatatva,
+                           sirāmijilakən bhuvana, mvaṅ sarvajanma, sopakāranya, kaliṅanya sakeṅ masakala, hana
+                           ikaṅ śarīra, sakiṅ śarīra ikaṅ aji mvaṅ guṇa, ⟨M45v4⟩ sakiṅ guṇa aji ikaṅ deva, sakiṅ
+                           deva ikaṅ tuḍuh, sakiṅ tuḍuh hananiṅ sor mvaṅ i ruhur, sakiṅ sor ruhur, hana vetan,
+                           kidul, kulon, lor, madhya, ika saṅ hyaṅ pamutus, maṅkanānakku saṅ sevaka dharma, eṅətakəna
+                           ⟨M46r1⟩hayva cavuh, bvat upadrava, namo buddhāya svahā təlas.&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">230</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">235</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.08"&gt;&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">240</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">--&gt;&lt;p xml:id="pamutusBuddhistB_01.09"&gt;&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">245</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">250</span><span class="xml-line-contents"><span class="instruction">--&gt;&lt;p xml:id="pamutusBuddhistB_01.10"&gt;&lt;/p&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">255</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">--&gt;&lt;p xml:id="pamutusBuddhistB_01.11"&gt;&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">260</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">--&gt;&lt;p xml:id="pamutusBuddhistB_01.12"&gt;&lt;/p&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">265</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">270</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">--&gt;&lt;p xml:id="pamutusBuddhistB_01.13"&gt;&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">275</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">--&gt;&lt;p xml:id="pamutusBuddhistB_01.14"&gt;&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">280</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">285</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.15"&gt;&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">290</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">--&gt;&lt;p xml:id="pamutusBuddhistB_01.16"&gt;&lt;/p&gt; </span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">295</span><span class="xml-line-contents">&lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">300</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;p xml:id="pamutusBuddhistB_01.18"&gt;&lt;/p&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;/div&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction"> &lt;div xml:id="pamutusBuddhistB_02"&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">305</span><span class="xml-line-contents"> &lt;!-- </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">D:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">K:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">or5068: </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">M:</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">310</span><span class="xml-line-contents">--&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"><span class="instruction">&lt;ab xml:id="pamutusBuddhistB_02.01" type="colophon"&gt;....&lt;/ab&gt;</span></span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;/div&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">		&lt;/div&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;div type="translation"&gt;&lt;p/&gt;&lt;/div&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">315</span><span class="xml-line-contents">			&lt;div type="commentary"&gt;&lt;p/&gt;&lt;/div&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;div type="bibliography"&gt; 				</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;p/&gt; 			</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				&lt;listBibl type="bibliography"&gt; 		</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">					&lt;bibl/&gt; 		</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">320</span><span class="xml-line-contents">				&lt;/listBibl&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;!-- &lt;listBibl type="editions"&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;bibl/&gt;&lt;/listBibl&gt;      --&gt;      </span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">				 			</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">			&lt;/div&gt; 	</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">325</span><span class="xml-line-contents">		&lt;/body&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">	&lt;/text&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents">&lt;/TEI&gt;</span></div>
+                  <div class="xml-line"><span class="xml-line-no hidden">.</span><span class="xml-line-contents"></span></div>
+               </div>
+            </div>
+         </main>
+      </div>
+      <div id="tip-box" class="hidden">
+         <div id="tip-contents"></div>
+         <div id="tip-arrow"></div>
+      </div>
+      <div id="modalsapp" class="hidden"><span class="popover-content d-none" id="d1e311"><span class="app-entry"><span class="lemma-line"><span class="">ri</span><b> <a class="siglum" href="#M">M</a></b><br></span><hr><span class="reading-line"><span class="reading">riṅ</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><span class="popover-content d-none" id="d1e317"><span class="app-entry"><span class="lemma-line"><span class="">ri</span><b> <a class="siglum" href="#M">M</a></b><br></span><hr><span class="reading-line"><span class="reading">riṅ</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><span class="popover-content d-none" id="d1e323"><span class="app-entry"><span class="lemma-line"><span class="">iṅ saṅ hyaṅ haji</span><b> <a class="siglum" href="#M">M</a></b><br></span><hr><span class="reading-line"><span class="reading">iṅ haji</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><span class="popover-content d-none" id="d1e329"><span class="app-entry"><span class="lemma-line"><span class="">maluya</span><b> <a class="siglum" href="#M">M</a></b><br></span><hr><span class="reading-line"><span class="reading">malvaya</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><span class="popover-content d-none" id="d1e335"><span class="app-entry"><span class="lemma-line"><span class="">ujar</span><b> <a class="siglum" href="#M">M</a></b><br></span><hr><span class="reading-line"><span class="reading">kumajar</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><span class="popover-content d-none" id="d1e342"><span class="app-entry"><span class="lemma-line"><span class="">kaṅ</span><b> <a class="siglum" href="#K">K</a></b><br></span><hr><span class="reading-line"><span class="reading">saṅ</span> <b> <a class="siglum" href="#M">M</a></b></span></span></span><span class="popover-content d-none" id="d1e350"><span class="app-entry"><span class="lemma-line"><span class="">tatasak iṅ</span><b> <a class="siglum" href="#M">M</a></b><br></span><hr><span class="reading-line"><span class="reading">tatasakeṅ</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span><span class="popover-content d-none" id="d1e356"><span class="app-entry"><span class="lemma-line"><span class="">hana-haneṅucap</span><b> <a class="siglum" href="#M">M</a></b><br></span><hr><span class="reading-line"><span class="reading">hananeṅucap</span> <b> <a class="siglum" href="#K">K</a></b></span></span></span></div>
+   </body><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script><script src="https://dharmalekha.info/base.js?v=1a9450aa77c9b125526d71a0e58819c086fa4cab"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/gh/erc-dharma/project-documentation@refs/heads/master/stylesheets/criticalEditions/loader_v02.js?v=1a9450aa77c9b125526d71a0e58819c086fa4cab"></script></html>
