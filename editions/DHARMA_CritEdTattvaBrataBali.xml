@@ -35,6 +35,42 @@
                 <listWit xml:id="mssbali"> 
         <head>Manuscripts from Bali</head>
                     <!-- One witness for each manuscript. Update the content -->
+        <witness xml:id="G">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum">G</abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Bali</settlement>
+                                <institution>Singaraja</institution>
+                                <repository>Nagasepaha</repository>
+                                <idno></idno> <!-- Penomoran berdasarkan Penyuluh Bahasa Bali Kabupaten Buleleng-->
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author></author>
+                                    <title>Tattva Brata</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <colophon>
+										<quote>Itiḥ tatva brata, samapta tlas·, cinītra, I jəṅ ira, saṁ hyaṁ pamriyan·, Imbha ghneya, vuku, mara, haguṁ, śanis·cara, ta, pa, dha ۝ sasaka ya </quote>
+										</colophon>
+                                    <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 51 leaves in Balinese script. Date unknown. </p>
+                                </objectDesc>
+                                <handDesc><p/></handDesc>
+                            </physDesc>
+                             <!-- <history>
+                               Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation 
+                                <p>In June 1934, Sāṅkṛtyāyana found this manuscript in the monastery of Kun-de-ling (Lhasa).</p>
+                            </history>-->
+                        </msDesc>
+                    </witness>
                     <witness xml:id="N">
                         <!-- Give your witness an unique identifier -->
                         <abbr type="siglum">N</abbr>
@@ -205,15 +241,13 @@
   </revisionDesc>
     </teiHeader>
     <text>
-
+<!-- Gulingan Mengwi: G-->
 <!-- Nagasepaha Singaraja: N-->
 <!-- Museum Bali: M-->
 <!-- Unit Lontar Universitas Udayana: U-->
 <!-- Pusat Dokumentasi Kebudayaan bali: P-->
 
-<!-- M:   tarimanәn iṁ sumur·, ca, -->
-<!-- U:   ri tarimanәn riṁ sumūṛ, caru -->
-<!-- P:   tarimanәn riṁ sumūṛ, caru -->
+
 	<body>
 	<div type="edition" xml:lang="kaw-Latn">
  <ab xml:id="tattvabrata_01" type="invocation" xml:lang="san-Latn"><app><lem wit="#P">om̐</lem><rdg wit="#N #U #M"><gap reason="omitted"/></rdg></app> avighnam astu</ab>               
@@ -239,20 +273,48 @@ brata, yan kita mabrata, hayva pati pati, yan <app>
         <rdg wit="#N #M">ca</rdg>
         </app>, 
 
-sdhah putih hijo, ma, pukulun kaki citra gopta, nini citra gopta, hiṅsun hamit habrata pukulun, dulurәn iṅsun abrata, katәkana sapinakṣan iṅsun, yan hasalah abratta, hasalaha riṅ saṅ asdhahan brata, sabratanta maṅkana.
+sdhah putih hijo, ma, pukulun kaki citra gopta, nini citra gopta, hiṅsun hamit habrata pukulun, dulurәn iṅsun abrata, katәkana sapinakṣan iṅsun, yan hasalah abratta, hasalaha riṅ saṅ asdhahan brata, sabratanta maṅkana. mvah sisigiṅ abrata, kaṅ rahayu tәmən, ambulu, pha, sugih mās, sisig kayən, pha, bahu putra, sisig vaṅkal, pha, sugih pari, sisig lampәni, pha, labdha vara kita. vor sama kvehnya, yogya kayatnakәna tәmən.
 </p>
 <p n="II">
-mvah sisigiṅ abrata, kaṅ rahayu tәmən, ambulu, pha, sugih mās, sisig kayən, pha, bahu putra, sisig vaṅkal, pha, sugih pari, sisig lampәni, pha, labdha vara kita. vor sama kvehnya, yogya kayatnakәna tәmən.
-</p>
-<p n="III">
 nihan saṅ hyaṅ tatva brata, kayatnakna de saṅ amet kasiddhan, kasidāniṅ brata, tan pavak tatva nira saṅ hyaṅ dharmma, rajəg turus, tatvanika, Apan pinakavak balәbəd, lavan tatvaniṅ brata, mvaṅ haṅlәpasakən kasiddhan sira, kadyaṅganiṅ havakiva tṅən, maṅkana saṅ hyaṅ tattva brata mvaṅ tapā, mataṅyan[2 r] lәkasakna de saṅ amet hayu, hanom alәkas hanom āṅggih phalani brata, nora dadi yan tan ginave , nora ṅalap titahiṅ atitah, kadyaṅgganiṅ adhaṅ hesuk hesuk amaṅan, havan hadhaṅ, havan amaṅan, yani soryya dhaṅ, soryya maṅan, yan tan padhaṅ tan pamaṅan, yan tan padhaṅ tan pamaṅan, saholah saholih, maṅkana kramanya, hapan hala hayu niṅ pagave katmu, mataṅyan larisakna pagave hayu, mijil sakeṅ tapā brata.
 </p>
-<p n="IV">
+<p n="III">
 nihan pariñciniṅ brata, kavruhakna
 </p>
-<p n="4.1">
+<p n="III.1">
 hana brata mgat raṣā, ṅa, yan satṅah amaṅan, suməṅkāṅinaṅ, hapnəd tan pahupa, vus āṅinaṅ, malih amaṅan, satahun samayanya, bhaṭāri humā hyaṅnya, ma, Om̐ mam̐ Uma ye namah, pamit, pha, tan pgat sihniṅ malakyarabi, mvaṅ samanta janmā padha sih.
 </p>
+
+<!-- G:    kabeḥ hiri kita|| -->
+
+<!-- M:     i kitthā||0|| -->
+
+<!-- P:     hiti kitā||0||--> 
+
+<!-- U:     iri kita|| -->
+ 
+
+   
+
+<p n="III.2">
+<app><lem wit="#G #M #N #U">hana brata 
+    <app><lem wit="#G #M #U">maṅan</lem><rdg wit="#N">amaṅan</rdg><rdg wit="#P">maṅana</rdg></app> 
+    sәga <app><lem wit="#G #N">ṅgi</lem><rdg wit="#M">ṅgih</rdg><rdg wit="#P">gaṅgi, ṅa</rdg><rdg wit="#U">slaṅgi</rdg></app>, 
+    satahun pituṅ lek samayanya bhaṭārī vastu hyaṅnya, ma, om̐ vastu 
+    <app><lem wit="#G">devyai</lem><rdg wit="#M #N #U">devye</rdg><rdg wit="#P">deva ya</rdg></app>  
+    namah, 
+    <app><lem wit="#G #M #N #U">pamit</lem><rdg wit="#P"><gap reason="omitted"/></rdg></app>, 
+    pha, tan 
+    <app><lem wit="#G #M #N #U">pәgat</lem><rdg wit="#P">pagәtan</rdg></app> 
+    sihniṅ malaky 
+    <app><lem wit="#G #M #N #U">arabi</lem><rdg wit="#P">amarabi</rdg></app>, 
+    <app><lem wit="#G #M #N #U">ṅuniveh</lem><rdg wit="#P">kunaṅ veh</rdg></app>  
+    <app><lem wit="#G #M #N">sihniṅ</lem><rdg wit="#P" cause="eye-skip">nikaṅ</rdg><rdg wit="#U" cause="eye-skip">niṅ</rdg></app> 
+    <app><lem wit="#G #M #N #U">samajanma</lem><rdg wit="#P" cause="lexical">janma kabeh</rdg></app> 
+    <app><lem wit="#G #M #N">padhāsih avәlas</lem><rdg wit="#P">padha vәlas asisih</rdg><rdg wit="#U" cause="haplography">padhāvlas</rdg></app> 
+    <app><lem wit="#M #N">i</lem><rdg wit="#G" cause="additive">kabeh iri</rdg><rdg wit="#P">hiti</rdg><rdg wit="#U">iri</rdg></app> kita.</lem><witDetail type="retained" wit="#G #M #N #U"/><note type="altLem">hana ... i kita.</note><rdg wit="#P" cause="transposition">hana ... iti kita</rdg><note>III.20 in <ptr target="#P"/>.</note></app>
+</p>
+
 <!-- Kamis 5 Juni 2025-->
 
 
