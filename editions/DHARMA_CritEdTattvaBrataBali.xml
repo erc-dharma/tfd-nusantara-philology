@@ -52,9 +52,9 @@
                                     <author></author>
                                     <title></title>
                                     <!-- You can also add a colophon if needed -->
-                                    <colophon>
+                                    <!--<colophon>
 										<quote></quote>
-										</colophon>
+										</colophon>-->
                                     <!-- colophon should be structures with quote elements with attribute @type and @xml:lang when necessary -->
                                 </msItem>
                             </msContents>
@@ -202,7 +202,7 @@
                             <physDesc>
                                 <objectDesc>
                                     <!-- Here you can give a physical description of the manuscript in prose-->
-                                    <p>Palm-leaf manuscript. 26 leaves in Balinese script. Containing 109 vratas. Date unknown. </p>
+                                    <p>Palm-leaf manuscript. 26 leaves in Balinese script. Containing 109 vratas.</p>
                                 </objectDesc>
                                 <handDesc><p/></handDesc>
                             </physDesc>
@@ -307,10 +307,10 @@ asәḍahan brata, sabratanta maṅkana.
 
 mvah <app>
         <lem wit="#G #M #N #P">sisigiṅ</lem>
-        <rdg wit="#U">sisiṅ</rdg></app> 
+        <rdg wit="#U" cause="haplography">sisiṅ</rdg></app> 
 abrata, kaṅ rahayu tәmən, ambulu, pha, sugih mās, <app>
         <lem wit="#G #M #N #P">sisig</lem>
-        <rdg wit="#U">sig</rdg></app> 
+        <rdg wit="#U" cause="haplography">sig</rdg></app> 
 <app>
         <lem wit="#G #N #P #U">kayən,</lem>
         <rdg wit="#M">hayәn</rdg></app> 
@@ -351,7 +351,7 @@ turus, <app>
     <rdg wit="#U">tatvanira</rdg></app>, 
 apan pinakāvak balәbəd, 
     <app><lem wit="#G #M #N #P">lavan</lem>
-    <rdg wit="#U">lavan ta</rdg></app> 
+    <rdg wit="#U" cause="additive">lavan ta</rdg></app> 
     <app><lem wit="#G #M #N #U">tattvaniṅ</lem>
         <rdg wit="#P">tatva</rdg></app> 
 brata, <app>
@@ -449,7 +449,7 @@ pagave katәmu, mataṅnyan larisakәna pagave hayu, mijil <app>
     <rdg wit="#U">saṅke</rdg></app> <app><lem wit="#G #P #U">tattva</lem>
     <rdg wit="#M #N"> tapa</rdg></app>
 <app><lem wit="#G #M #N #P">brata.</lem>
-    <rdg wit="#U">brata, ṅa</rdg></app>
+    <rdg wit="#U" cause="additive">brata, ṅa</rdg></app>
 </p>
 <p n="III">
 nihan pariñciniṅ brata, kavruhakәna.
@@ -490,7 +490,7 @@ namah, pamit, pha, tan pәgat sihniṅ malaky
 mvaṅ 
     <app><lem wit="#G #M #U">samanta</lem>
     <rdg wit="#G" cause="lexical">sarva</rdg>
-    <rdg wit="#P">kita katvaṅaniṅ</rdg>
+    <rdg wit="#P" cause="additive">kita katvaṅaniṅ</rdg>
     </app> 
     <app><lem wit="#G #M #N #U">janma</lem><rdg wit="#P">samaṅkana</rdg>
     </app> 
@@ -573,7 +573,7 @@ hana brata <app><lem wit="#M #N #U">nulamidam</lem><rdg wit="#G">anulamidhan</rd
 ṅa, aṅupavāsa savәguṅ, 
     <app><lem wit="#G #M #U">atәlasan</lem><rdg wit="#M">atrәsan</rdg><rdg wit="#P"><gap reason="omitted"></gap></rdg></app> 
     <app><lem wit="#G #M #N #U">savәguṅ</lem><rdg wit="#P"><gap reason="omitted"></gap></rdg></app>, 
-    <app><lem wit="#M #N #U">tigaṅ</lem><rdg wit="#P">tәluṅ</rdg></app> 
+    <app><lem wit="#M #N #U">tigaṅ</lem><rdg wit="#P" cause="lexical">tәluṅ</rdg></app> 
 lek samayanya, pha, <app><lem wit="#M #N #P #U">siṅ</lem><rdg wit="#G"><gap reason="omitted"></gap></rdg></app> 
     <app><lem wit="#G #M #N #P">prih</lem><rdg wit="#U">pinrih</rdg></app> 
 meṅgal katәmu 
@@ -602,7 +602,7 @@ brata, pha, apaḍaṅ kaṅ ati, praṇa aṅən aṅənta, ekasadya, ma, om̐ 
     <app><lem wit="#G #U">yan</lem><rdg wit="#M #N">tan</rdg><rdg wit="#P"><gap reason="omitted"></gap></rdg></app> 
     <app><lem wit="#M #N #P #U">kasurupan</lem><rdg wit="#G">kasurupaniṅ</rdg></app> 
     <app><lem wit="#P #U">saṅ hyaṅ sūrya,</lem><rdg wit="#G" cause="lexical">saṅ hyaṅ aditya</rdg><rdg wit="#M #N"><gap reason="omitted"></gap></rdg></app>
-    <app><lem wit="#M #N">satahun divasanya</lem><rdg wit="#G #M #P #U"></rdg></app>, 
+    <app><lem wit="#M #N">satahun divasanya</lem><rdg wit="#G #M #P #U"><gap reason="omitted"></gap></rdg></app>, 
     <app><lem wit="#G #P #U">bhaṭāra</lem><rdg wit="#M #N">saṅ hyaṅ</rdg></app> 
     <app><lem wit="#G #P #U">śiva</lem><rdg wit="#M #N" cause="additive">śiva raditya</rdg></app> 
     hyaṅnya, ma, Om̐ namā śiva 
