@@ -4,7 +4,7 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
 	xml:lang="eng"
-	xml:id="pamutusBuddhistBB">
+	xml:id="pamutusBuddhistB">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -35,11 +35,56 @@
 			</publicationStmt>
 			<sourceDesc>
 				<listWit>
+				<listWit xml:id="witnesses-pamutusb"> 
+					<head>Witnesses transmitting version B</head>	
+					<witness xml:id="K">
+						<abbr type="siglum">K</abbr>
+						<msDesc>
+						<msIdentifier>
+													<settlement>Singaraja, Bali, Indonesia</settlement>
+									  <repository>Kirtya</repository>
+									  <collection>Lontar</collection>
+									  <idno>IIIb/408/16</idno>
+												</msIdentifier>						
+						<physDesc>
+						<objectDesc>
+						<p>Palm-leaf manuscript. 6 leaves in Balinese script.</p>
+						</objectDesc>
+							<handDesc>
+								<p/>
+							</handDesc>
+						</physDesc>
+						<history/>
+						</msDesc>
+						</witness>
+						<witness xml:id="M">
+							<abbr type="siglum">M</abbr>
+							<msDesc>
+								 <msIdentifier>
+									<settlement>München</settlement>
+									<institution>Bayerische Staatsbibliothek</institution>
+									<repository>Handschriften-Abteilung</repository>
+									<idno>Cod.jav. 64</idno>
+									</msIdentifier>						
+				<physDesc>
+				<objectDesc>
+				<p>Palm-leaf manuscript. 47 leaves in Balinese script.</p><!-- total folio count of number of pages/folios for text in multitext ms.? -->
+									</objectDesc>
+									<handDesc>
+										<p/>
+									</handDesc>
+								</physDesc>
+								<history/>
+							</msDesc>
+						</witness>
+				</listWit>
+				<listWit xml:id="witnesses-pamutusa">  
+					<head>Witnesses transmitting version A</head>	
 				<witness xml:id="D">
 				<abbr type="siglum">D</abbr>
 				<msDesc>
 				<msIdentifier>
-                                				<settlement>Denpasar</settlement>
+                                <settlement>Denpasar</settlement>
                   				<institution>Dinas Kebudayaan Provinsi Bali</institution>
                   				<repository>Pusat Dokumentasi</repository>
                   				<idno>T/XXI/7/DOKBUD</idno>
@@ -52,26 +97,6 @@
 					<handDesc>
 					<p/>
 					</handDesc>
-					</physDesc>
-					<history/>
-					</msDesc>
-					</witness>
-				<witness xml:id="K">
-					<abbr type="siglum">K</abbr>
-					<msDesc>
-					<msIdentifier>
-                                				<settlement>Singaraja, Bali, Indonesia</settlement>
-                  				<repository>Kirtya</repository>
-                  				<collection>Lontar</collection>
-                  				<idno>IIIb/408/16</idno>
-                            				</msIdentifier>						
-					<physDesc>
-					<objectDesc>
-					<p>Palm-leaf manuscript. 6 leaves in Balinese script.</p>
-					</objectDesc>
-						<handDesc>
-							<p/>
-						</handDesc>
 					</physDesc>
 					<history/>
 					</msDesc>
@@ -116,18 +141,18 @@
 							<history/>
 						</msDesc>
 					</witness>
-					<witness xml:id="M">
-						<abbr type="siglum">M</abbr>
+					<witness xml:id="or15382">
+						<abbr type="siglum">L3</abbr>
 						<msDesc>
-							 <msIdentifier>
-                                <settlement>München</settlement>
-                                <institution>Bayerische Staatsbibliothek</institution>
-                                <repository>Handschriften-Abteilung</repository>
-                                <idno>Cod.jav. 64</idno>
-                                </msIdentifier>						
-			<physDesc>
-			<objectDesc>
-			<p>Palm-leaf manuscript. 47 leaves in Balinese script.</p><!-- total folio count of number of pages/folios for text in multitext ms.? -->
+							<msIdentifier>
+								<settlement>Leiden</settlement>
+								<institution>Leiden University Libraries (UB)</institution>
+								<repository>Oosterse Handschriften</repository>
+								<idno>Or. 15382</idno>
+							</msIdentifier>							
+							<physDesc>
+								<objectDesc>
+									<p>Paper manuscript. 14 pages in typed roman script. Transcription of a lontar from Bodakeling, also containing the Kamahāyānan Mantranaya. The Pamutus is found on pages 1-4.</p>
 								</objectDesc>
 								<handDesc>
 									<p/>
@@ -136,6 +161,7 @@
 							<history/>
 						</msDesc>
 					</witness>
+					</listWit>
 							<!-- Kirtya 4417 / III b — lontar, see the Kirtya's list-->
 							<!-- Kirtya 1398 = LOr 9762 -->
 							<!-- Kirtya IIIb.487 -->
@@ -163,6 +189,7 @@
 				<p/>
 			</samplingDecl> 
 		</encodingDesc><revisionDesc>
+			<change who="part:argr" when="2026-03-01" status="draft">restructured listWit</change>
 			<change who="part:argr" when="2025-11-28" status="draft">started encoding the edition</change>
 		</revisionDesc>
 	</teiHeader>
