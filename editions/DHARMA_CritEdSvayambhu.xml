@@ -118,7 +118,13 @@ Nomor keropak: IIA/3
 					Witkam's Leiden catalogue, if it helps:
 Or. 16.190 Javanese, Balinese, paper 30 pp., typewritten, Latin script. Strisanggraha. Copied from a lontar manuscript of the Balai Penelitian Bahasa, Singaraja, No. 280, being (a copy of?) a text of I Ktut Ginarsa in Banjar Paketan, Singaraja. Copied by I Gde Wirawan, on May 1, 1980, cheked by I Ktut Ginarsa (signature on p. 30). HKS 3046. [*Mal. 11.118]
 -->
-               <witness xml:id="SvaMSS">The Sanskrit text as implied by the Svayambhu manuscripts</witness>
+               <witness xml:id="SvaMSS">The Sanskrit text as implied by the Svayambhu manuscripts</witness><!-- used up to §117, to be replaced by one of the next two -->
+			   <witness xml:id="SvaS">
+				<abbr type="siglum">Sva<hi rend="superscript">S</hi></abbr>
+				Elements of the Sanskrit text explicitly embedded with the Old Javanese paraphrase</witness>
+			   <witness xml:id="SvaJ">
+				<abbr type="siglum">Sva<hi rend="superscript">J</hi></abbr>
+				The Sanskrit text as implied by the Old Javanese paraphrase</witness>
                <witness xml:id="EdO">
                   <abbr type="siglum">Ed<hi rend="superscript">O</hi>
                   </abbr>
@@ -3244,7 +3250,7 @@ B: pa[44v1]ganti-gantiniṁ savūrniṁ mavya:va:hara kaliḥ, kavrūhana de sa�
 	</lg>
 <listApp type="parallels">
 			 <app>
- <note>MDhŚ 8.126. The paraphrase suggests that our author knew the variant reading <foreign>sārāsāraṁ tathālokya</foreign>, recorded by Olivelle's for his witnesses aMdl TMd3 TMd4 aMct5 aMy [Jolly Nd] Nd (<foreign>°sārau</foreign>).</note>
+ <note>MDhŚ 8.126. The paraphrase suggests that our author knew the variant reading <foreign>sārāsāraṁ tathālokya</foreign>, recorded by Olivelle for his witnesses aMdl TMd3 TMd4 aMct5 aMy [Jolly Nd] Nd (<foreign>°sārau</foreign>).</note>
 			 </app>
 </listApp></supplied></quote>
  <p xml:id="svayambhu_07.03.02"><app><lem wit="#K #M #B">paganti-gantiniṅ</lem><rdg wit="#L">paganta-gantaniṁ</rdg></app>
@@ -3424,12 +3430,12 @@ B: nəm sasasavi kuniṁ, tṅaḥ yava ṅaranya, tigaṁ ya:va, sakr̥ṣṇa:
 	 -->
 	 <quote xml:id="svayambhu_07.10.01" type="base-text" xml:lang="san-Latn"><supplied reason="implied">
 	<lg xml:id="svayambhu_07.10.01.01" met="anuṣṭubh">
-		<l n="a">sarṣapāḥ ṣaḍ yavo madhyas</l> <l n="b">triyavaṁ tv eva kr̥ṣṇalam |</l>
+		<l n="a">sarṣapāḥ ṣaḍ yavo madhyas</l> <l n="b">triyavaṁ tv <app><lem wit="#SvaJ">ekakr̥ṣṇalam</lem><rdg wit="#EdO">eva kr̥ṣṇalam</rdg></app> |</l>
 		<l n="c">pañcakr̥ṣṇalako māṣas</l> <l n="d">te suvarṇas tu ṣoḍaśa ||</l>
 	</lg>
 <listApp type="parallels">
 			 <app>
- <note>MDhŚ 8.134</note>
+ <note>MDhŚ 8.134. The paraphrase suggests that our author knew the variant reading <foreign>ekakr̥ṣṇalam</foreign>, recorded by Olivelle for his witnesses BBe2 Be3 Bo Hy Jm Jo1 Jo2 WKt1 Kt2 WKt3 BKt5 Lo1 Lo2 Lo3 TMd4 OOr Ox2 Tj1 Tj2 Tr2 MTr3, and also attested by a number of commentaries and digests.</note>
 			 </app>
 </listApp></supplied></quote>
 <p xml:id="svayambhu_07.10.02">nəm <app><lem wit="#L #K #M">sasavi</lem><rdg wit="#B">sasasavi</rdg></app> kuniṅ,
@@ -3454,15 +3460,18 @@ satahil <app><lem wit="#M #B">kuna</lem><rdg wit="#L">kunaṁ</rdg></app> ṅara
 	</lg>
 <listApp type="parallels">
 			 <app>
- <note><!-- sameAs="#EdMaDhaSa2005_08.135" -->MDhŚ 8.135</note>
+ <note>MDhŚ 8.135</note>
 			 </app>
 </listApp></supplied></quote>
- <p xml:id="svayambhu_07.11.02"><app>
-		 	<lem wit="#L">pataṅ</lem><rdg wit="#M">kunaṁ pataṁ</rdg>
-			<!-- <note><ptr target="#M"/> has <foreign>kunaṅ</foreign> at the beginning and end of the clause.</note> -->
-		</app> tahil <app><lem type="emn">kuna</lem><rdg wit="#L #M">kunaṁ</rdg></app>, ya satahil pirak <app><lem wit="#L #M">ṅaranya, ikaṅ</lem><rdg wit="#K"><span type="omissionEnd"/> ikaṅ</rdg></app> sapuluh tahil <app><lem type="emn">kuna</lem><rdg wit="#L #K #M">kunaṁ</rdg></app>, ya <app><lem type="emn">sadharaṇa</lem><rdg wit="#L #K #M">sadara</rdg></app> ṅaranya,
-yan iṅ mas, <abbr>māsu</abbr>, <app><lem wit="#L">2, <abbr>mā</abbr>,</lem><rdg wit="#K #M">2, ṅa, ma:,</rdg></app> 8, təkanya <app><lem wit="#L">yan iṅ pirak</lem><rdg wit="#K #M">yan pirak·</rdg></app>,<!-- no punctuation sign here in #L and #K, a full stop in M -->
+ <p xml:id="svayambhu_07.11.02">
+<app><lem wit="#M #B">kunaṅ</lem><rdg wit="#L"><gap reason="omitted"/></rdg></app> tahil <app><lem type="emn">kuna</lem><rdg wit="#L #M #B">kunaṁ</rdg></app>, 
+ya satahil pirak <app><lem wit="#L #M #B">ṅaranya, ikaṅ</lem><rdg wit="#K"><span type="omissionEnd"/> ikaṅ</rdg></app> sapuluh tahil <app><lem type="emn">kuna</lem><rdg wit="#L #K #M #B">kunaṁ</rdg></app>, 
+ya <app><lem wit="#B">sadharaṇa</lem><rdg wit="#L #K #M">saḍara</rdg></app> ṅaranya,
+yan iṅ mas, 
+<abbr>māsu</abbr>, <app><lem wit="#L">2, <abbr>mā</abbr>,</lem><rdg wit="#K #M #B">2, ṅa, ma:,</rdg></app> <app rend="hide"><lem wit="#L #K #B">8</lem><rdg wit="#M">p·</rdg></app>, 
+təkanya <app><lem wit="#K #M #B">yan pirak</lem><rdg wit="#L">yan iṁ pira:k·</rdg></app>,<!-- #L #K omit , -->
 ikaṅ pirak<!-- #K inserts comma here --> sasaga vratnya,
+@@@@
 ya kaliṅaniṅ <term xml:lang="san-Latn"><app><lem type="norm">dve kr̥ṣṇale samadhr̥te</lem><rdg wit="#L">dve kr̥ṣṇale, sama:dr̥te</rdg><rdg wit="#K">dve trapbale, samadr̥te</rdg><rdg wit="#M">edvakrəsnale, samadrəte</rdg><note>All witnesses read a punctuation sign between <foreign>dve kr̥ṣṇale</foreign> and <foreign>samadhr̥te</foreign>.</note></app></term>,
 tarajvanana kālih,<!-- the comma is omitted in #K and #M --> vehən paḍa bvatnya,
 ya kaliṅaniṅ<!-- #K inserts comma here --> <term xml:lang="san-Latn"><app><lem type="norm">samadhr̥te</lem><rdg wit="#L #K #M">samadr̥te</rdg></app></term>,<!-- the comma is omitted in #M -->
@@ -5753,7 +5762,9 @@ saṅ maṅaji <app><lem wit="#L">sāmaveda</lem><rdg wit="#K">samadeva</rdg></a
  <p xml:id="svayambhu_11.02.03"><app><lem wit="#L">ikaṅ</lem><rdg wit="#K">Ika</rdg></app> adva riṅ <app><lem wit="#L">samaya</lem><rdg wit="#K">smaya</rdg></app>,<!-- #K omits , -->
  <app><lem wit="#L" rend="check">dadyaheri</lem><rdg wit="#K">dadyaherriṁ</rdg></app> tuhunya,
  <app><lem wit="#L">daṇḍan ta</lem><rdg wit="#K">ḍaṇḍa:</rdg></app> ya <app><lem wit="#L" rend="check">satus suvarṇa</lem><rdg wit="#K">satusvarṇna:</rdg></app>, <abbr>māsu</abbr>, 1, 6400,<!-- #K read 6,400, -->
- daṇḍaniṅ mithyasamaya riṅ grāma, <app><lem wit="#L">ma,</lem><rdg wit="#K" cause="eye-skip"><gap reason="omitted"/></rdg></app> <abbr>su</abbr>, 1, <abbr>mā</abbr>, 8, 9600,
+ daṇḍaniṅ mithyasamaya riṅ grāma, <app><lem wit="#L">ma,</lem><rdg wit="#K" cause="eye-skip"><gap reason="omitted"/></rdg></app> <abbr>su</abbr>,
+ <!-- we need <abbr>māsu</abbr>!-->
+ 1, <abbr>mā</abbr>, 8, 9600,
  <app><lem wit="#K">daṇḍaniṅ</lem><rdg wit="#L">caṇḍaniṁ</rdg></app> mithya riṁ deśa, <abbr>māsu</abbr>, 1, <app><lem wit="#K">mā</lem><rdg wit="#L">pa:</rdg></app>, 4, 14600,
  daṇḍanikaṅ mithya riṅ saṅgha,
  ya ika sinaṅguh sipatniṅ <app><lem wit="#L">nīrṇa</lem><rdg wit="#K">niṇna:</rdg></app> samaya,
