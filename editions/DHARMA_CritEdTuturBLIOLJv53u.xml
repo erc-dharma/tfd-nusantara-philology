@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="BLIOLJv53u"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="editorial">Digital Diplomatic Edition of BL IOL Jv. 53 u</title>
+                <!--change the title of the edition starting, if possible, with the title of your text-->
+		        <!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
+                <!--<title type="alt"></title>-->
+		        <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+		        <!--<title type="original" xml:lang="...-Latn"></title>-->
+                <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+                <!--<author></author>-->
+                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+                <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+                    <resp>author of digital edition</resp>
+                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                    <persName ref="part:mamu"><!-- update the id -->
+                        <forename>M. Aftharu</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Mulya</surname>
+                    </persName>
+                    <persName ref="part:ilnu"><!-- update the id -->
+                        <forename>Ilham</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Nurwansah</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <idno type="filename">DHARMA_CritEdTuturBLIOLJv53u.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2026" to="2026">2026-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="A">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+							<msIdentifier>
+								<settlement>London</settlement>
+								<institution>The British Library (BL)</institution>
+								<repository>Lontar</repository>
+								<idno>MS IOL Jav. 53 u</idno>
+							</msIdentifier>
+                            <!-- 
+                            <msContents>
+                            </msContents>
+                            -->
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>To be filled.</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Balinese script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>To be filled.</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                <projectDesc>
+                    <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+                    <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl> 
+                <p></p>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+            <change who="part:ilnu" when="2026-04-27" status="draft">Creating the XML File</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="kaw"> 
+
+<ab>
+<pb n="1r"/>
+<lb n="1r1"/> // 0 // Aum̐ avighnam astu namaḥ // 0 // gihan han ajar-ajaṙ[SH]: mtaḥ kinajarakən mulani dadi| sakisunətḍahun ṣariniṁ kapaṅa [±1 aks.partly lost] 
+<lb n="1r2"/>:nadani śa:rira: muvaḥ sarini ṣadraṣa| tmahan juvita:-juvita: matma[SH]n· śabda| hana sarəṁ sakil· lmaṇikiṁ hṛdaya|| hana| {*} dadiniṁ saka to [±1 aks.partly lost] 
+<lb n="1r3"/>kadadya ta śiva ja:tinira| matmahan· ba:yu yatika: hi/ṅa\ran [±1 aks.partly lost] [SH] matanta| hiya sadraṣa: kapaṅan kenum· deniṁ nanbi laki-laki la:ki hatma
+<lb n="1r4"/>hana marati| pat(ma)niṁ kamaratiḥ ri kridḍa gakoṇa gumlariṁ bha(ṭara)[SH] [±7 aks.partly lost] tama ja:ya kamaratiḥ| kama jaya: rila{*} naṁ|
+
+
+<pb n="1v"/>
+<lb n="1v1"/> // 0 // Aum̐ avighnam astu namaḥ // 0 //
+<lb n="1v2"/>empty
+<lb n="1v3"/>empty
+<lb n="1v4"/>empty
+
+<pb n="2r"/>
+<lb n="2r1"/> [±35 aks.partly lost] heja lumampaḥ tumadak pasan pak [±4 aks.partly lost] 
+<lb n="2r2"/>s· jumujug ṣumuṙ kumuyuḥ taṁku [±10 aks.partly lost] paṁgiḥ saṁ paṁgiḥ  [SH] [±1 aks.partly lost]  ṇḍa ta riṁ ja [±4 aks.partly lost]  ranten·| dak ṣampunn aṅaturi səmbaḥ bhakti ri saṁ maha:
+<lb n="2r3"/>hutama| mvaha ṅaturən supatra ⌈ [±4 aks.partly lost]  ṅambara| makalepa [SH] niṅ adu nas(pva)pa nugraha| sampun katampan ṣuka:r ajəṁ| lineran· vula daśi
+<lb n="2r4"/> [±15 aks.partly lost]  naṅana saṁ ḍatəṁ| [±3 aks.partly lost]  [SH] ri jəṅira sapinaṇḍita| hanunasa panugraha: vnaṅani hanambutta caṙ
+
+<pb n="2v"/>
+<lb n="2v1"/> [SH] lavon-lavon·| vruḥ rasaniṁ dukanastapa hańel haṅliḥ| kodadanta vanaḥ
+<lb n="2v2"/> san hevəḥ raṣani manaḥ| vvantən (pv)ək liṅati paṅati hṛdaya| sontə[SH] [±1 aks.partly lost] ṅ aṅən-aṅən·| vṅi haguliṁ| hantak ṣakəjəp kaliḥ kəjəp| katmu raṣaniṁ cipta
+<lb n="2v3"/>: vṛdḍaya| hati hyaṁ lumakṣa [±9 aks.partly lost] kadi pcak kaṅi [SH] [±1 aks.partly lost] (li)ṅ-iliṅ isi caka(ta)| kata raṣaniṁ cipta: Ṛsəpiṁ manaḥ| handikaniṅ anūka du
+<lb n="2v4"/> [±35 aks.partly lost]  ṣivaṙ camaṇi| hañibok toya riṁ panəṅa [±1 aks.partly lost] 
+
+
+<pb n="3r"/>
+<lb n="3r1"/>(m)ma bhuṣaṇa| kasanaṇḍa lavan ṣinuhun·| hasampət haba hiri[SH]| maṅkana kramaniṁ saṁ piṇḍita: hatampik pisan piṁ kaliḥ| piṁ tiga hanam·
+<lb n="3r2"/>pani ya pakṣanira saṅanunas panugraha| kaṁ saṙmma bhuṣaṇa kaṁ vna[SH]ṅa sinaṇḍaṁ lavan ṣinuhun·| hasampəta: ba:hiri habasma tiga| haga
+<lb n="3r3"/>nit(r)i haraja goṇḍala| mvaṁ salviriṁṅ upacara: raja: bhuṣaṇa| [SH] ndan ṣampunni nugrahan ṣapanunas ṣira| vnaṅaniṅ asaṇa: galaṁgaṁ deśa muvaḥ
+<lb n="3r4"/> [±3 aks.partly lost]  dusupan·| guva haṙgga duṅus pucakiṅ acala| patapa[SH]n adi vnaṁ yaduvus ṣanugraha: vastu vnaṁ| tumuluyya vinaraḥ riṁ śiṣya-śiṣya gama|
+
+<pb n="3v"/>
+<lb n="3v1"/> [±3 aks. partly lost] nakap tapa: brata yoga samadi| pagəhanikəp· caṙmma [SH] hadi tatva gama: danuṙveda śastra| kaputusanniṁ lakṣaṇanira saṁ lu [±2 aks.partly lost] 
+<lb n="3v2"/> [±3 aks. partly lost] śri laligihira| tugal· sira haṚpakən· mariṁ [SH] pati| haja vavarəṅə:n ṣavtune vaṙṇnita // 0 // ṇihan tiṁkahiṅ anusu
+<lb n="3v3"/>p· haḍuḍukuhan·| yan ababatura: batur adi tan adiya| tuṁga[SH]liṅ ulahakən·| nis karaṇa sakiṁ śvara hika| ṇihanta devataniṁ ḍukuḥ
+<lb n="3v4"/>yan batur·// haniṁ ddevataniṁ batuṙ duk tinaruka saṁ hyaṁ gaṇa [SH] giri| saṁ hyaṁ śūnya viśeṣa| saṁ hyaṁ gurū pati sumnə devataniṁ gni| saṁ hyaṁ mə
+
+<pb n="4r"/>
+<lb n="4r1"/>gu ja:ti sumnə: devataniṁ batur·| saṁ hyaṁ gṛha: raja: ⌈{ui da}{ui va}ta [SH] ja: sumnə:| devatani papayon·| saṁ hyaṁ raja: gṛ sumnə:| devataniṁ gḍo(ṁ)
+<lb n="4r2"/>saṁ hyaṁ vindu hamupusi| devataniṁ pomah-omahan·| saṁ hyaṁ ha[SH]ntagiyya hanukurat·| devataniṁ saṅgaṙ| saṁ hyaṁ guru taya| devataniṁ pa
+<lb n="4r3"/>hibon·| bhaṭari pṛtivi| devataniṁ pasamidan·| saṁ hyaṁ su[SH]kṣma gandarum·| devataniṁ taṚtəpan·| saṁ hyaṁ maha deva| vuriniṁ sa§
+<lb n="4r4"/>ṅgaṙ devatanira| bhaṭara sambu| haṚpiṁ saṅgaṙ| saṁ hyaṁ saṅkara| ⌈[SH]devatanira| vuriniṁ batuṙ saṁ hyaṁ gaṇa mukuṙ| devatanira| de{ui na}vata
+
+<pb n="4v"/>
+<fw place="left" n="3">3</fw>
+<lb n="4v1"/>napa lala yonan ṣaṁ hyaṁ sukṣma piti| devataniṁ pamarajan· saṁ [SH] hyaṁ śiva| devataniṁ panataraniṁ batur·| saṁ hyaṁ sela maṇiku malasaḥ| ha
+<lb n="4v2"/>Ṛpiṁ batuṙ devatanira| saṁ hyaṁ maṇik tinampa| devataniṅ ambal-amba[SH]l·| saṁ hyaṁ naga mala ṅatata| devataniṁ cacara saṁ hyaṁ kala rudra| devatani
+<lb n="4v3"/>ṅ adoṁ saṁ śri buṅaḥ| devataniṁ bañjaran ṣaṁ ratu məmbat·| devataniṁ [SH] tulak taṁgul·| saṁ hyaṁ kala: ki jaga satru| ki tulak baya| devataniṁ panatara
+<lb n="4v4"/>n kabeḥ bhaṭari pṛṭivi| devataniṁ saṙvva kusuma: kaṁ pinaka: cacara te[SH]jahaniṁ batur·| saṁ hyaṁ ḶṁḶṁ mandanu| devataniṁ pasapon·| saṁ hyaṁ naga nila
+
+<pb n="5r"/>
+<lb n="5r1"/> [±9 aks. partly lost] sa[ṁ] hya[ṁ] suḥ v[i]śeṣa| devatani[ṁ] sadḍa| saṁ hyaṁ [SH] naga sevu| saṁ hyaṁ ṇaga molaḥ buṁkakiṁ ṣupu| saṁ hyaṁ tutuṇḍu musuḥ pusuka sa
+<lb n="5r2"/>pu| kidana kaya riṁ pukal·| saṇḍika ya riṁ pakayon·| devataniṁ [SH] pakivanni boga rupa| kivaluḥ baṁ| devataniṁ pakosoran ṣaṁ bhuta ṅisa|
+<lb n="5r3"/>saṁ bhuta ṅarus·| devataniṁ balaṇḍoṅan·| saṁ hyaṁ tri kambaba§[SH]ṅan·| devataniṁ bañu| bhatha:ra gaṅga| devataniṁ pasucen·| bhathari ga
+<lb n="5r4"/>ṅgi| bhathara gaṅga devataniṁ bañu| devataniṁṅ umaḥ| bhathari hu[SH]ma| devata lavaṁ saṁ hyaṁ kala sukṣma| saṁ hyaṁ guru pati ri pagənen·| deva
+
+
+<pb n="5v"/>
+<fw place="left" n="4">4</fw>
+<lb n="5v1"/>taniṁ hapitiṁ pagənen·| saṁ hyaṁniṁ la kəmbar·| devataniṁ palaṁ[SH]kiran·| saṁ hyaṁ sukṣma gaṇa| devataniṁ loṅaniṁ padəmmen·| saṁ hyaṁ gaṇa 
+<lb n="5v2"/>lumaḥ| devataniṁ caṁkləkaniṁ lavaṁ| saṁ hyaṁ kala ṅaḍaṁ| devataniṁ [SH] vatəsaṁ hyaṁ naga ṅlak·| devatani pajagutan·| saṁ hyaṁ saṁga bhuvana| de
+<lb n="5v3"/>vataniṁ pasa:ṇḍan·| saṁ hyaṁ suṇḍe bhuvana| devataniṁ salu| saṁ hyaṁ [SH] maṇik pakaraṇa| devataniṁ lo/ṅa\niṁ bale| bhathari śūnya pati| huniveḥ de
+<lb n="5v4"/>vataniṁ paliṅgihan pamaṚkan·| saṁ kala boga| saṁ bhuta ṅamaḥh-a[SH]maḥ saṁ kala dyatmika| saṁ kala tugu maṇik·| saṁ kala śakti| saṁ kala ṅaḍəp·| ⌈
+
+<pb n="6r"/>
+<lb n="6r1"/>devataniṁ riṁ pagənen·| saṁ hyaṁ guru pati| devataniṁ patamo[SH]n ṣaṅ vasəḥ bhuvana| saṁ hyaṁ hisora| devata riṁ pasukətan·| saṁ hyaṁ raja
+<lb n="6r2"/>pati| devata riṁ payayon kaki hayi nini hayi| devata riṁ ba[SH]bahan dora kala| devataniṁ kan·ciṁ| saṁ hyaṁ kuci pəpət·| haṁ nihan·| de§
+<lb n="6r3"/>vataniṁ pabthəkan·| saṁ hyaṁ prajapati| devataniṁ pavon·| saṁ hyaṁ [SH] naga ṅlak devataniṁ vantər·| saṁ hyaṁ rotama: buṁkahi gni| saṅ śaṁṅut pataka:
+<lb n="6r4"/>tṅaḥhiṁ gni| saṅ śaṅut (mra)ṅəṁ tuṁtuṁ hurubniṁ gni| devataniṁ daṁdaṁ saṁ hyaṁ ga[SH]ndanu| nisara tik·sna| devataniṁ pavon·| riṁ viruṅan·| devataniṁ ku§
+
+<pb n="6v"/>
+<fw place="left" n="5">5</fw>
+<lb n="6v1"/>kusanni baṇḍut ṣari| devataniṁ kəkəbni hukəp ṣari| kavantən·[SH]ni navaḥ sari| devataniṅ irus·| saṁ hyaṁ naga gomba| devataniṁ karu| niṁ hu
+<lb n="6v2"/>kad ṣari| devataniṅ iyanni nampa sari| devatani kḍukni huḶt ṣa[SH]ri| devataniṁ kamaraṁ| ni hanimpəni| devataniṅ iliṙ niliṙ sari| devata§
+<lb n="6v3"/>niṁ karuki sura gati| devataniṁ suḍaṁ niveda sari| devatani si[SH]vuṙ nilap ṣari| devataniṁ peliṁ saṁ hyaṁ śiva tama| devataniṁ bithiṁ saṁ lana pu
+<lb n="6v4"/>ruṣa| devataniṁ cathuk jujuga:ṙ saṁ hyaṁ naga sugiḥ maṇik·| devata[SH]niṁ copet ṣaṁ hyaṁ na/+ga\ki/sa\ devataniṁ bubusan ṣaṁ hyaṁ maṇik kanugak·| kacut ṣaṁ
+
+<pb n="7r"/>
+<lb n="7r1"/>hyaṁ naga miḶt·| devataniṁ caṭu:k jujulaṙ saṁ hyaṁ naga məlaṁ| devatani[SH]sujen kalana puruṣa| devataniṁ susup(i)t ṣa(ṁ) hya(ṁ) s(i)l)i)ḥ has(i)ḥ| (devata)n[iṁ] gaga tu
+<lb n="7r2"/>ni sugiḥ maṇik·| tutupni hukəp ṣari| pupurusni hukup ṣari| devatani[SH]ṅəsuḥ saṁ hyaṁ naga lulut·| kayu saṁ hyaṁ naga malaṁ| pakacahyihan nina pasari| deva
+<lb n="7r3"/>ni karajaṁ totolok ṣaṁ hyaṁ makiri| devataniṁ toboṁ bhaṭa:[SH]ri sinukta{*}n nənti| ḍasaṙ saṁ hyaṁ manik kambara mṛta| tutupni bhari hanimpəni| de
+<lb n="7r4"/>vataniṁ padaṅan·ni buḥ sari| ḍuḍulaṁ cecekṭok·ni nampa sa[SH]ri| bolodro saṁ hyaṁ siliḥ hasiḥ| guponi praṇa sari| gəṇṭoṁ saṁ ruṇu paṙ
+
+mss_jav_53_u_f007
+<fw place="left" n="6">6</fw>
+<lb n="7v1"/>vvata| para ragenni praṇa gati| gəgərusnini sura gati| gobed la[SH]diṁ saṁ hyaṁ kila naraṣa| taḶnan hanḍaraṣa| sikat·| nihaṙṣa lana| lupaṁ nigo
+<lb n="7v2"/>⌉ya raṣa| Ḷjiṁ kilana puruṣa| kəlunni sulana| tetege puspa sa[SH]ri| ḍahunni huma sari| takiṙtani mṛttha sari| səlonni hupət ṣari| {*}takiṙta ⌈
+<lb n="7v3"/>mpelaṁ nilpasari| kəṇḍoṙni tugu mṛttha| gatəlan· ki hudakan ṣari|[SH]kəkəṭən·| vaḍah uyaḥni mṛttha sari| devataniṁ raracik·| saṁ hyaṁ pañcaraṣa mṛ
+<lb n="7v4"/>ttha| paboṭokanni mṛttha gati kikijiṁ ni goya phala| // devata[SH]niṁ parun· ki suratikṣṇa| sorok ki surapakṣa| koreg· ki pakṣa tata| kuyabni
+
+<pb n="8r"/>
+<lb n="8r1"/>hurap ṣari| devataniṁ papomahan· kuḍi vaduṁ| devataniṁ sakal[SH]· saṁ hyaṁ tri kaya| saṁ hyaṁ sun tagi maṇik· hyaṁniṁ jaṅət·| saṁ hyaṁ halpa pakṣa hyaṁ
+<lb n="8r2"/>ṅiṁṅ alapulap·| vaduṁ saṁ hyaṁ tiga lana| papañcak·| hyaṁ suka lana| vaṁki[SH]l· hyaṁ halpa karaṇa| ladiṁ gobed· hyaṁ suka raṣa| kaṇḍaṁ hyaṁ praṇa vṛdi| ta
+<lb n="8r3"/>mpi hyaṁ himbhara praṇa| haruṅ-aruṁ ni baṇḍut ṣupraṇa| ḶḶkəniṙ lpa praṇa| tu[SH]mani padu praṇa| pipikul· hyaṁ naga harayunan·| porocot· hyaṁ śakti praṇa
+<lb n="8r4"/>cecaṭel ranteni hurut praṇa| kəḶ cicarat tana: gon· jaha bhuki[SH]la| tugal· ni mṛttha praṇa| maṅkana hika: kabeḥ //0// nihan hasasampuniṁ gave
+
+<pb n="8v"/>
+<fw place="left" n="7">7</fw>
+<lb n="8v1"/>kaṁ manika saṅga:ṙ saṁ hyaṁ guru| devatannya saṁ hyaṁ guru taya| riṁ śarira§[SH]luhuriṁ lalaṭa| riṁ pahibon· bhaṭa:ri pṛthivi| hana riṁ śari kulit·| ri
+<lb n="8v2"/>pasaminan· hyaṁ sukṣma ganda rum·| hana riṁ śarira muṅguḥ tuṁtuṁṅiṁ śabda[SH]| kaṁ pijavuriniṁ saṅgaṙ saṁ hyaṁ sambū| hana riṁ śarira riṅ usya śatuṁtuṅiṁ graṇa| de
+<lb n="8v3"/>vata kaṁ vuriniṁ batuṙ saṁ hyaṁ gaṇa mukur·| hana riśa riṁ rariṁ gigi ṭo[SH]kṁ· kaṁ pinuja haṚpiṁ saṅgaṙ saṁ hyaṁ saṅkara| hana riṁ śarira muṅguḥ ri budi suka| kaṁ
+<lb n="8v4"/>pinuja riṁ tulak taṁgul· saṁ hyaṁ babahan ṣaṅa| hana riṁ śarira ha§[SH]na leṅiṁ ṅava ka:beḥ| hyaṁnya kiśa padu| kisa laṁga| kisokavak· saḶ
+
+<pb n="9r"/>
+<lb n="9r1"/>mbu sagara| saḶmbu jəjənəṁ| saṁ kala ṅaḍaṁ| ki jala satru| ki hunda ha[SH]dir·| ki tutuṇḍuṁ musuḥ| hya doraka lari babahan·| hana riṁ śarira riṁ sa
+<lb n="9r2"/>kəm·| devataniṁ habal-abal·| saṁ hyaṁ mega malaṁ| hana riṁ śarira riṁ[SH]ṅ aṅga| devataniṁ sasara saṁ hyaṁ naga malaṁ| hana riṁ śarira riṁ pupu kiva tṅən·| ⌈
+<lb n="9r3"/>devataniṁ sasara kəmbaṁ| saṁ hyaṁ ḶṁḶṁ mandanu| hana riṁ śarira riṁ vulu| ⌈[SH]devataniṁ sasara handoṁ| saṁ hyaṁ brahma| hana riṁ śarira riṁ ṅati| devataniṅ a
+<lb n="9r4"/>doṁ saṁ śri buṅaḥ| hana riṁ śarira riṁ pamulu| devataniṅ umaḥ bhathari[SH]huma hana riṁ śarira riṅ ava kabeḥ| devataniṁ pakənen·| saṁ hyaṁ guru pati|
+
+<pb n="9v"/>
+<fw place="left" n="8">8</fw>
+<lb n="9v1"/>hana ri śarira muṅgaḥ vavaḍahiṅ ati| devataniṁ paṅapitiṁ pagəde[SH]n·| saṁ hyaṁ nila kəmbaṁ| hana riṁ śarira riṁ kiva tṅən·| devataniṁ panti saṁ hyaṁ naga 
+<lb n="9v2"/> ṅlak·| hana riṁ śarira kapuruśan·| devataniṁ loṅaniṁ padəmen· saṁ hyaṁ[SH]gaṇa lumaḥ| hana riṁ śarira riṁ ḍaḍa| saṁ hyaṁ maṇik pakaraṇa| hana riṁ śarira riṁ vaṁ⌈
+<lb n="9v3"/>ko devataniṁ pajaṁgutan·| saṁ hyaṁ saṅga bhuvana| hana riṁ śarira riṁ cici[SH]kul·| kiva tṅən·| devataniṁ pasaṇḍan·| saṁ hyaṁ suṇḍa bhuvana| hana riṁ śarira riṁ va
+<lb n="9v4"/>valikat·| devataniṁ palala kiran· saṁ hyaṁ sukṣma gaṇa| hana riṁ śarira[SH]ri talapukani netra| devataniṁ lavaṁ saṁ hyaṁ sela mataṁkəp·| hana riṁ śarira 
+
+<pb n="10r"/>
+<lb n="10r1"/>riṁṅ amberiṁ soriṁ ruhur·| devataniṁ kañciṁ saṁ hyaṁ naga mlaṁ| hana[SH] ri śarira riṅ impo Ḷmpo lan iṁ taṅan·|| devataniṁ gḍoṁ saṁ hyaṁ vindū ta 
+<lb n="10r2"/>mupusi| hana riṁ sarira pinaka:kaməṁgəpani śarira| devatani gu[SH]ṇḍa-guṇḍa liṁ batuṙ saṁ hyaṁ naga ḍahu| hana riṁ śarira riṁ Ḷṅən kiva tṅən·| deva
+<lb n="10r3"/>taniṁ paparigen saṁ hyaṁ maṇik· tinampa| hana riṁ śarira saranduniṁ [SH] baluṁ| devataniṁ pamaṚkan· saṁ hyaṁ śiva gaharaja| hana ri śarira muṅguḥ|
+<lb n="10r4"/> riṁ kaśaktin·| devataniṁ paligihaniṁ pamaṚkan sabuta kasa ⌈[SH]boga| saṁ buta gama hamaḥ| saṁ kala:dyatmikī| saṁ kala: tugu maṇik·| saṁ kala
+
+
+<pb n="10v"/>
+<fw place="left" n="9">9</fw>
+<lb n="10v1"/>: śakti| saṁ kaṅiḍəp· hana riṁ śarira sənḍiniṁ paṅucap· śaktiniṁ japa [SH] mantra| devataniṁ vaya yen· kaki hayi nini hayi| hana riṁ śarira ri kadya
+<lb n="10v2"/>tmikan·| devataniṁ loran·niṁ bale bhatha:ri śūnya pati| hana [SH] riṁ śarira: riṁ caklakaniṁ śarira| devataniṁ pagəneniṁ pamaṚkan· saṁ hyaṁ gū§
+<lb n="10v3"/>ru pati| hana riṁ śarira riṁṅ ambak ṣuka| devataniṁ patamon· saṁ hyaṁ [SH] Ḷsya būvana| saṁ hyaṁ hisora| hana riṅ avak· luṅgu(ḥ) riṁ śarira: śabda mṛttha 
+<lb n="10v4"/>devataniṁ pasukətan· saṁ hyaṁ rajapati| hana riṁ śarira mūṁgūḥ riṁ ma[SH]na suka| devataniṁ pakivani boga rupa| kivalūḥ baṁ| hana riṁ śarira:ni ⌈
+
+
+<pb n="11r"/>
+<lb n="11r1"/>boga rupa riṅ aṅən-aṅən·| kivaluḥ baṁ hana riṁ śarira muṁguḥ tejani pa[SH]liṅgihan·| devataniṁ pakosoran· saṁ butaṅarus·| saṁ butaṅiṣa| hana
+<lb n="11r2"/>riṁ śarira muṁguḥ ṅusya ṣa harum miṁ sarira| devataniṁ pababon· bha[SH]thara gaṁga bhathari gaṁgi| hana riṁ śarira svariṁ liḍaḥ| devatani gaja ran ṣaṁ ratu
+<lb n="11r3"/>məmbhat·| hana ri śarira riṁ polaḥ kadya tikan·| devataniṅadoṁ[SH]: saṁ śri buṅaḥ| hana riṁ śarira riṁ pamulu Ḷvəs·| devataniṁ ṅambha lagaliṁ banja
+<lb n="11r4"/>ran ṣaṁ hyaṁ naga tata| hana riṁ śarira riṁ tinvak· dyatmika| devataṁ ni [SH] saṙvva kusuma: sasaraniṁ batuṙ saṁ hyaṁ Ḷṁ Ḷṁ mandanu| hana riṁ śarira ri guṁ Ḷṁ(gə)n·| 
+
+<pb n="11v"/>
+<fw place="left" n="0">0</fw>
+<lb n="11v1"/>muṁguḥ snəṁ tejaniṁ śarira| devataniṁ gaga piḍikan sa hyaṁ magukuhan[SH]·| hana riṁ śarira riṁ ṅa(na)Ḷgən·| devataniṁ haṚpiṁ batuṙ saṁ hyaṁ teja rasmi|
+<lb n="11v2"/>hananiṁ śarira riṁ kaśaktin·| riṁ kaməgəpan· riṅulat guyu| de[SH]vataniṁ jambagan ṣaṁ hyaṁ tri kambagan·| hana riṁ śarira riṁ ṅabəktahniṁ| devata 
+<lb n="11v3"/>niṁ pasapon ṣaṁ hyaṁ naga nila| hana riṁ śarira muṁguḥ ḶḶpaniṁ /la\buṁ[SH]{ui la}| devataniṁ pasucen· bhathari gaṅgi| hana riṁ śarira tuṁtuṅiṁ liḍa hi
+<lb n="11v4"/>sor· //0// nihan devataniṁ patanəkan·| bhathari śri ma:ṅipun·| hanariṁ śarira riṁ paripolaḥ| ḶḶpaniṅ asta| devataniṁ pavon·|
+
+<pb n="12r"/>
+<lb n="12r1"/>saṁ hyaṁ praja pati| hana riṁ śarira riṅabəkkan·| devataniṁ kayu(:)[SH] vatə| hana riṁ śarira riṁ kapuruṣan·| saṁ rotama buṅkahiṁ gni| hana riṁ śari
+<lb n="12r2"/>ra buṁkahiṁ śabda| saṅśaṅut paka: tṅahiṁ śa[SH]bda| saṅ ṣaṅutmuṅət tuṁtuṁ ṅiṁ gni| hana riṁ śarira tuṁtuṅiṁ śabda| devataniṁ daṁdaṁ
+<lb n="12r3"/>saṁ hyaṁ gandanu| hana riṁ śarira riṁ luṁguḥ| devataniṁ kukusan· niba§[SH]ṇḍutsari| hana ri śarira riṁ buṣana| devataniṁ kəkəb ni hukəpṣari| ha
+<lb n="12r4"/>na riṁ śarira riṁ lambhe| ni śari tikṣṇa| devataniṁ viruniṁ pavo[SH]:n·| hana riṁ śarira bayu prakaśa| devataniṁ paneninapi sari| ha
+
+<pb n="12v"/>
+<fw place="left" n="11">11</fw>
+<lb n="12v1"/>na riṁ śarira lambe| karu ki śuragati| hana riṁ śarira riṅasta| de[SH]vataniṁ kamaraṁ nimanipni| hana riṁ śarira riṅiḍəp| kəḍuk ni huḶtṣari|
+<lb n="12v2"/>hana riṁ śarira riṁ ḶḶpaniṁṅ asta| hiyanni napa sari| hana riṁ śari[SH]ra riṁ lambe hisor·| hilini pavana sari| hana riṁ śarira riṅ usvaṣa| pa
+<lb n="12v3"/>ruk ṣaṁ hyaṁ ni navaḥ sari| hana riṁ śarira riṁ manahage| hirus ṣaṁ[SH] hyaṁ naga gobaṁ| hana riṁ śarira riṅ asta kiva tṅən·| sivuṛ nilapsari| hana 
+<lb n="12v4"/>riṁ śarira riṁ manah niṁ| peliṁ saṁ hyaṁ śivatama| hana riṁ śarira riṁ tuṁ§[SH]tuṁṅiṁṅ asta| bithiṁ saṁ hyaṁ hana puruṣa| hana riṁ śarira riṁ tuṁtuṅiṁ kuku|
+
+<pb n="13r"/>
+<lb n="13r1"/>sujen ṣaṁ hyaṁ hana puruṣa| hana riṁ śarira riṁ jariji| panuṁgul[SH]·| susupat ṣa hyaṁ śiliḥ hasiḥ| hana riṁ śarira riṅ asta kiva tṅən| suḍaṁ ni§
+<lb n="13r2"/>devadasari| hana naṁ śarira riṁ limbehan·| geṇthoṁ saṁ hyaṁ[SH] raṇu paṛvata| hana riṁ śarira riṅambək· laṁgəṁ| saṇthun· jujugaṛ| saṁ hyaṁ naga
+<lb n="13r3"/>mlaṁ| hana riṁ śarira riṅ əmol-əmolaniṅ asta| ḍuḍulaṁ ni pa[SH]dma śari| hana riṁ śarira riṁ talam pakaniṁ taṅan·| tetegeni puspa sari|
+<lb n="13r4"/>hana riṁ śarira muṁguḥ tuṁtuṅiṁṅ asta| devataniṁ guponi praṇa[SH] sari| hana riṁ śarira riṁ haṅəṅən·| pasaragen ni praṇa gati| hana riṁ śari
+
+<pb n="13v"/>
+<fw place="left" n="12">12</fw>
+<lb n="13v1"/>ra riṁ lpa-lpaniṁṅ asta ka{*}liḥ| gobed ladiṁ ki prana lana raṣa|[SH] hana riṁ śarira riṁ manaḥ lana| taḶnan kalana raṣa| hana riṁ śarira riṁ manaḥ lana| ⌈
+<lb n="13v2"/>devataniṁ rara sikki pañca raṣa| hana riṁ śarira riṁ cipta: tuṁtuṅiṅ[SH] asta| gəgəruṣ kira gati| hana riṁ śarira riṅ əmpol-əmpolaniṅ asta| lumpaṁ ni go
+<lb n="13v3"/>yya raṣa| hana riṁ śarira riṁ cipta hiḍəp·| ḶḶñjiṁ saṁ hyaṁ lana raṣa| hana riṁ śarira riṅilat puruṣa| devataniṁ sikat ni rarap· raṣa lana| hana riṁ 
+<lb n="13v4"/>śarira riṁ daśa lana riṁ jariji| devataniṁ papañcak ṣaṁ hyaṁ sura lana|[SH] hana riṁ śarira tuṁtuṅiṁṅ iḍəp·| devataniṁ pacul vaṁkil ṣuṁ hyaṁ halpaka raṇa| ha
+
+<pb n="14r"/>
+<lb n="14r1"/>na riṁ śarira riṁ talampakaniṁ suku| devataniṁ saṁkal ṣaṁ hyaṁ tri kaya[SH]| hana riṁ śarira riṁ manaḥ lana prakaśa| jaṅət ṣaṁ hyaṁ sun tagi manik·| hana riṁ
+<lb n="14r2"/>śarira riṅ otot·| hulap-ulap śaṁ hyaṁ paka ra(ta)| hana riṁ[SH] śarira riṁ lpa-lpa| ladiṁ paṅot jara husu pacukil·| hana riṁ śarira riṁ manaḥ 
+<lb n="14r3"/>lana riṁṅ asta riṁ kuku| devataniṁ kukuran nihu ka(dva) ṣari| hana ri śa[SH]rira riṁ kuku riṁ vaja: riṁ tuṁtuṅi liḍaḥ| hyaṁ ni ladiṁ gobed paṅot jara hu
+<lb n="14r4"/>su hyaṁ suka raṣa| hana riṁ cipta raṣa lana| devataniṁ paju saṁ hyaṁ hana[SH] puruṣa| hana riṁ garira riṅiḍəpakṣa riṁ kapuruṣan·| nihan devataniṁ pa
+
+<pb n="14v"/>
+<fw place="left" n="13">13</fw>
+<lb n="14v1"/>parud śaṁ hyaṁ sura gati| hana riṁ śarira riṅiḍəpakṣa| sorok ṣaṁ [SH] hyaṁ surapaksa| hana riṁ śarira riṁ manaḥ moha| hyaṁ niṁ koreg· hyaṁ pañca nata
+<lb n="14v2"/>hana riṁ śarira riṁ pañca kanaka| hyaṁ niṁ tampi saṁ hyaṁ maṇik kanampa| ha[SH]na riṁ śarira ri manaḥ lana| hyaṁ niṁ karajaṁ totolok ṣaṁ hyaṁ manik ma (ṁṁṁṁṁ)
+<lb n="14v3"/>kiri| hana riṁ śarira riṁ raṣa səla| hatali saṁ hyaṁ sun tagi maṇik· ha[SH]na riṁ śarira riṅ otot·| pikulan ṣaṁ hyaṁ haṅgaməmbak·| hana ri śarira riṁ pu§
+<lb n="14v4"/>ṇḍak· hana jutəpətət·| devataniṁ kuyab ṣaṁ rarap ṣari| hana ri[SH] śarira riṁ lpaniṅ asta| devataniṁ toboṁ saṁ hyaṁ tugu maṇik· bhathari śinukta§ 
+
+<pb n="15r"/>
+<lb n="15r1"/>n· kənti| hana riṁ śarira riṅabək ṣuka| hyaṁ nikuṁ lakṣaṁ hyaṁ maṇik§[SH] haṅukuri| hana riṁ śarira vkasiṁ karəp·| gagantuṁ sugiḥ maṇik·| hana riṁ śari
+<lb n="15r2"/>rariṁ manaḥniṁ| bubusan ṣaṁ hyaṁ manik kanuṅgak·| hana riṁ śarira riṁ ma[SH]naḥ laṅgəṁ| tutup ni hukup ṣari| hana riṁ śarira ri lambe| ruhur·| pupu 
+<lb n="15r3"/>kuṛ saṁ hyaṁ lana puruṣa| hana riṁ śarira riṁ kapuruṣan·| riṅusvaśa riṁṅ ambək arum·| kacut ṣaṁ hyaṁ naga miḶt·| hana riṁ śarira riṁ manaḥ pagəḥ| co
+<lb n="15r4"/>pet ṣa hyaṁ na(:)ga saki| hana riṁ śarira riṅ asta kiva tṅən·| ranteni[SH] suntagi maṇik·| hana riṁ śarira riṅotot·| balandaṛ saṁ hyaṁ naga malaṁ| hana
+
+<pb n="15v"/>
+<fw place="left" n="14">14</fw>
+<lb n="15v1"/>riṁ śarira riṁ la(:) lamoṁ| səlon ni humməta:ri| hana riṁ śarira śa[SH]bda pəṅət·| nihan· devataniṁ pabthəkan·| bhathari tanpa sariṁ| bhathari praja pa
+<lb n="15v2"/>ti| bhathari m(ṛ)ti sari| bhathari śri maṅimpun ṣari| bhathari śri saṅkari|[SH] bhathari śri| bhathari vaya devi| bhathari haṅipun ṣari| bhathari hanuṁkuli| bha
+<lb n="15v3"/>thari sinuntan nənti| bhathari hamuni sari| bhathari ha{u}mupuni riṁ saṙvva bha[SH]thari| hamupuni riṁ saṙvva sari kabeḥ| yiya bhathari huma pinakapapupulaniṁ saṙvva
+<lb n="15v4"/>praṇa| saṙvva praṇi saṙvva m(ṛ)ttha| saṙvva vaṙṇna pinakahavakira saṅaṅ ulaha[SH]kən pinaka: pra(ja)nnira kavi vekanira| kamənəpanira kapantəsanira haṅula
+
+<pb n="16r"/>
+<lb n="16v1"/>hakən śaṙvva mṙttha saṙvva raṣa hahumat kaśri| tkaniṁ pabothokanni mṙt[SH]tha gati| hana riṁ śarira riṅati| kəlud ni suka lana| hana riṁ śarira riṁ sampa
+<lb n="16v2"/>rana| hyaṁ ni godhaṁ| nihi rutśari| hana riṁ śarira tulisiṅ asta[SH] kiva tṅən·| devataniṁ takiṙhi thuki thuk nilpasari| hana riṁ śarira riṁ ga⌈
+<lb n="16v3"/>ṇḍa:kki kuku| kabeḥ kahula hakən deniṁ bhathari huma: hamupusi hu[SH]mula hakən riṅ kabeḥ| peliṁ riṅaṅulahakən· bthəkan//0// nihan·
+<lb n="16v4"/>talakṣalaṇa saṁ hyaṁ tuṅgal-tuṅgal·| mavata Ḷkas nira samaṅkana| §ṣa[SH]bekṣuka dhaṙmmanira| mabandha: masampət maba: hiri| sira tatəmbehaniṅ ana bi
+
+<pb n="16v"/>
+<fw place="left" n="15">15</fw>
+<lb n="16v1"/>kṣu ka ḍaṙmma| ma pata vaṙṇna saṁ hyaṁ siṇaṇḍaṁ putiḥ dina dekən (ki) ga| həndi[SH] ta sgaṅ kanya mijil·| sapa: sirahum nakakən·| tan lena: keroma| saṁ hyaṁ ha
+<lb n="16v2"/>nanta viśeṣa| hika mulanya| sini dika rani rahi kaṁ romma| t:hə pinu[SH]sus nura mijil ha saṁ hyaṁ dalu hyaṁ| ya ta pinakabhuṣaṇa śaṁ hyaṁ tuṅgal taṅgal·| mata§
+<lb n="16v3"/>nyan hinuṁguḥhakən ni yuganira kabeḥ| maka ta vakira saṁ hyaṁ dalayaṅ[SH]·| sira ta sinaṅguha guru yaṁ ta sira| matanyan hayo tamaṅusap· hyaṁ yan tan· vruḥ
+<lb n="16v4"/>puṙvvaka ni saṁ hyaṁ| nihan ta saṁ hyaṁ ginave devataniṁ bhuṣaṇa kabeḥ| ⌈[SH]devatanira saṁ hyaṁ tuṅgal-tuṅgal·| ya ta matanyan kavastana nata saṁ ṣinaṁguḥha guru
+
+<pb n="17r"/>
+<lb n="17r1"/>yaṁ| hiṅuguhakə yuganira kabeḥ| sinaṇḍaṁ valasinuhun·| saṁ hyaṁ bra[SH]hma devataniṁ sampət·| saṁ hyaṁ maha deva-devataniṁ bahiri| saṁ hyaṁ viṣṇu de
+<lb n="17r2"/>vataniṁ banḍa| saṁ hyaṁ liṅga bava devataniṁ duk ṣinuhun·| hinabənakə[SH]niṁ śarira hira ṅgo hyaṁ buda sma:li raja: hyaṁ ṅira| śinabukkakən ṣaṁ hyaṁ puta ra
+<lb n="17r3"/>ja: hyaṅira| kulabi saṁ hyaṁ kuluṇthaṁ hukuṙ buvana hyaṁnya| saṁ hyaṁ  ṅiśva[SH]ra devataniṁ lacigan·| kupinaken ken· devatanira| keṇḍit śaṁ hyaṁ naga mi
+<lb n="17r4"/>Ḷt devatanira| saṁ hyaṁ śiva devataniṁ baśma| samaṅkana hinu graha kə[SH]niṁ yuganira kabeḥ| sakehi hyaṁ devata vatək Ṛṣi| denira saṁ hyaṁ tuṅgal ha
+
+<pb n="17v"/>
+<fw place="left" n="16">16</fw>
+<lb n="17v1"/>vantag·| dukkana riṁ madya padḍa| katulad· tkaniṁ maṅke| nihan·[SH]bhuṣaṇa kaṁ sinipənan haranya kaṁ ṅasḍahan hyaṁ nini praja pati| hyaṁniṁ vastra kaṁ sinipə
+<lb n="17v2"/>nan ṣaṁ hyaṁ kudḍa bava|hyaṁ niṁ sabukkaṁ sini(tha)pənan ṣaṁ hyaṁ kuda sukṣma:| va[SH]stra kaṅiṅago hyaṁ budḍa smali raja: hyaṁnya| sabukkaṅiṅago saṁ hyaṁ punta raja hyaṁ
+<lb n="17v3"/>nya| kulabika sinipnan ṣaṁ hyaṁ kulunthuṁ hukuṙ buvana hyaṁ nya| kulab ikaṅiṅago| saṁ hyaṁ haṁga buvana hyaṁnya| samaṅkana hyaṁni bhuṣaṇani saṁ Ṛṣi
+<lb n="17v4"/>//0// nihan· hyaṁniṁ galuguḥ duk tinanəm ṣaṁ hyaṁ Ṛkaḥ buvana du[SH]k məḶtik| duk lumeṅgo saṁ hyaṁ ṅa(mthattha) hyaṁnya| dukka paṁpaṁ saṁ hyaṁ kṛṣana hyaṁ
+
+<pb n="18r"/>
+<lb n="18r1"/>nya| saṁ hyaṁ tega pati hyaṁ ṅiduk pinəsak·| saṁ hyaṁ viseṣa§[SH]hyaṁ ṅira saṅa mcak·| saṁ hyaṁ naga ṅulet· hyaṁ ṅiradukinubak·| duk· pi
+<lb n="18r2"/>nasuhan ṣaṁ hyaṁ naga gombaṁ hyaṁnyaṁ| duk pinalu saṁ hyaṁ hisora§[SH]hyaṁ ṅira| hyaṁniṁ pamalon ṣaṁ hyaṁ hisora praba śura| devataniṁ palu hya ti
+<lb n="18r3"/>ga pakṣa| ṅa| devataniṁ gigiliṁ hyaṁ haṅga pṛmmana| dukiṅimbu saṁ hya§[SH]hukə pṛmaga hyaṁṅira| duk tineteṙ saṁ hyaṁ hesa pṛmaṇa hyaṅira| devataniṁ 
+<lb n="18r4"/>pakəliran· hyaṁ ṅanta praṇa| ṅa| duk iliṙ hyaṁ hila prana| ṅa| (?) duki[SH]ṅa kihi ṅaran ṣaṁ hyaṁ daluyaṁ| duk pinəsu saṁ śri lulut praṇa| ṅa| saṁ hyaṁ hanukura§
+
+<pb n="18v"/>
+<fw place="left" n="17">17</fw>
+<lb n="18v1"/>t:haranira duk pineginlar·| sira saṅa ṅaṅgo daluyaṁ nora kadi ṅu[SH]lunhaśri hapkik puruṣa viśeṣa| nilah onilahniṁ saṅ adi guru muliḥ mariṁ bayu§
+<lb n="18v2"/>ñu| nihan· bhuṣaṇa kaṁ vus· Ḷvas·yaninubaṙ hyaṁnya| saṁ hyaṁ dyana śidi ma[SH]di rakṣa| tutuṅgaṅanira pakṣi garu(ṁga)ḍa| kəkəmbaṅanira masi naṁliṁ| muluk miṇ ḍuḍu tu
+<lb n="18v3"/>tuṅgaṅanira pakṣi haruṇa| rupa kira kadi kṛṣṇa binəbək·| kadiṚna huri[SH]piṁ manuṣa| kadi kuku naṁ huripiṁ devata| sənaṁ sədi maṁ spisan ṣida lpas·| hulini§
+<lb n="18v4"/>daluyaṁ yaniṅubar·| yenta dinubaṙ muliḥ mariṁ hyaṅ eka śiva hambara| saṁ[SH]saḍolavireha raniṁ babu| saṁ kotala sukma: haraniṁ gni| saṁ kelava laharaniṁ
+
+<pb n="19r"/>
+<lb n="19r1"/>dalan·| kavruh narani gni bañu muvahara (niṅalan) guru riṁ jagat· //0[SH]// nihan· yan· vusiṁ gave| kaṁ riṁ pahibon tulaṁgali rariṁ pasukətan·| kaṁ riṁ ḍgə
+<lb n="19r2"/>ntuṁgalira ripa kayon riṁ pagnen·| riṁ pakayon tagaliṁ ra riṁ paturon·| riṁ[SH]pamarajan tugalira riṁ tulak ḍaṁgul·| riṁ sasara tuṁgali rariṁ gagapiḍikan·| riṁ pakthəkan tu
+<lb n="19r3"/>galira riṁ patamon·| riṁ patamon tuṁgalira riṁ pasukətan·| riṁ pasukəta[SH]n tugalira riṁ paṇḍesan tugalira riṅumaḥ| riṁ pabañon tagali rari
+<lb n="19r4"/>pakthəkan·| pakthəkan tugalira ri pakosekan·| pakosekan tuṁgalira riṁ[SH]pakosoran·| riṁ pakosoran tugalira riṁ babayan·| tuṁgalira ri pavuṁkalan·|
+
+<pb n="19v"/>
+<fw place="left" n="18">18</fw>
+<lb n="19v1"/>ri pavukalan· tuṁgalira riṁ pasapon·| havkasan riṁ taṚtəpan·| ri taṚ[SH]təpan panugalira kabeḥ| muvaḥ ri pamaṚkan·| kavuri ni batur·|kaṅaṚpiṁ ba
+<lb n="19v2"/>tuṙ muvaḥ kaṁ ri panataran·| kabeḥ| tugaliṁ rapaṅadəg (li) saṁ hyaṁ devata[SH]tuṅgal (vi)buḥ sira| səṁguḥ sira devata batur·| sira pinakapasamuha niṁ kabeḥ| sira hi
+<lb n="19v3"/>ṅaran tuṁgal·| sira hiṅaran ṣaṁ hyaṁ patapan·| sira ṅaligiḥ hiṅaran ṣaṁ hyaṁ ṅa[SH]mupusi| pinakapa(li)hyaṅ anira saṁ hyaṁṅ ayu| kṛttha sira: kadi tiṙttha mahniṁ| rahayu sira
+<lb n="19v4"/>pinakapaṅaṅṣon niṁ voṁ| hamet tiṙttha mṛttha rahayu| voṁ saka loṙ kidul·[SH]| mraṁ saśaṁkaniṁ voṁ ṅamet kṛtta nugraha sira haveḥ vnaṁ| japan ṣira havakiṁ| ra saṁ hyaṁ tuṁga
+
+<pb n="20r"/>
+<lb n="20r1"/>l ṣidi vastu sira| //0// nihan ta sampunika(l) hana ta ḍarmma \pa/ ṅəntasa[SH]n rakraharan maṅkana liṅi vasana| // rattananamuri buvana| ḍaṙmma nora| sira
+<lb n="20r2"/>ra vkasiṁ sidḍa| paṅəntasiṁ buvana// raga salañut· lpas·| paṅəntasiṁ ra[SH]ga// muṙśidḍa ja:ti| paṅəntasiṁ pṛthivi// muṙsidḍa hyaṁ/ ṅəntasiṁ megha// muṙsidḍa śakti/ pa
+<lb n="20r3"/>ṅəntasiṁ bañcaran// səhat ja:ti valuya sidḍa niṁ tapa| paṅəntasiṁ batu[SH]r·|// sumnə: ja:ti sadḍa graṇa sari| paṅəntasiṁ paparigen·// saḥtaman·| paṅənta
+<lb n="20r4"/>siṁ jambaṅan pakosekan·|// muṣtika sari| paṅəntasiṁ saṙvva lena//[SH]sudḍa ja:ti| paṅəntasi papayon·| // mati naga saṙṣa| paṅəntasiṁ patikiven·//
+
+
+<pb n="20v"/>
+<fw place="left" n="19">19</fw>
+<lb n="20v1"/>muṙtiga mariṁ taman taya| paṅən ta pasaṙ pabavayan·// muṙtiga mariṁ ta[SH]taṁ mantaya| paṅəntasiṁ saka garap ṣaka gaməl kabeḥ// si sidḍa śakti| paṅəntasi sa
+<lb n="20v2"/>ṅgaṙ kabuyutan·// muṙsaḥ sidḍa hilaṁ| paṅəntasiṁ pasaṙ paba vahana// sə[SH]laris·| paṅəntasiṁ setra paṁlahan·// məttilaṁ| paṅəntasiṁ dalan gaṁ// buja śakti§
+<lb n="20v3"/>paṅəntasiṁ kayu// Aum̐ gaṅga suta bañu gili| gaṅga puṙṇna ginagap pipuspu[SH]ja:ti mamuṙsaḥ hisaḥ həsaḥ hilaṁ mariṁ sinḍa jati| sira lpas hisun kari hadukap· Ḷ
+<lb n="20v4"/>viḥ| hiki si saṙvva kaṙyya hahagəṅ alit·| mraṁ yan prasa vantənan ṣalviriṁ[SH]kaṙyya yayugonən·| {sa} riṁ ṚṚbugonya// Aum̐ yana hyaṁ| sukṣma deva hyaṁ|
+
+<pb n="21r"/>
+<lb n="21r1"/>punya hyaṁ| kitri hyaṁ| siṣiyaṁ| bummiyaṁ| pənḍəm· hyaṁ| vehyaṁ| hyaṁ[SH]muliha hyaṁ| sukṣma hya muliha sukṣma hyaṁ| deva hyaṁ mulihi maṁ deva hyaṁ 
+<lb n="21r2"/>dana hyaṁ muliha dana hyaṁ| punya hyaṁ muliha punya hyaṁ| kitthi hyaṁ muli[SH]ha kitri hyaṁ| siṣi hyaṁ muliha siti hyaṁ| bhumi hyaṁ muliha bhumi hyaṁ| pəṇḍəm· hyaṁ 
+<lb n="21r3"/>muliha pəṇḍəm· hyaṁ| deva hyaṁ muliḥ hadeva hya| ruvatṣa riṁ nura[SH]t· ruvatṣa ṅaruvat·| svaṙgga saṁ rinuvat·| svaṙgga saṅaruvat·| suka ṅaruvat·|
+<lb n="21r4"/>sukaṁ rinuvat·| lpas kaṁ rinuvat·| lpas kaṅaruvat·| hayu kaṁ rinu[SH]vat· hayu kaṁ ṅaruvat·| hayu sami hamoṅasuka: rahayu// gaṅan·kulu
+
+<pb n="21v"/>
+<fw place="left" n="10">10</fw>
+<lb n="21v1"/>(b) mul[i]ḥ riṁ bhathara maha deva| sdhəp pasən muliḥ riṁ bhathara rudra| siṁ[SH]ṣi bhathara viṣṇu| gni kayu muliḥ riṁ bhathara brahma| paṅan ninum muliḥ riṁ bhathara śiva
+<lb n="21v2"/>|guriḥ havuduk muliḥ riṁ bhathara hisora| pulava kəmbhaṁ muliḥ riṁ bha[SH]th:ra hiṡvara| pisaṁ kəmbhaṁ muliḥ riṁ bhathara hyaṅ asmara| kasambaḥ pelas muliḥ riṁ bhatha 
+<lb n="21v3"/>ra saṅkara| puspa pamuliḥ riṁ hyaṁ dhaṙmma raja| sadu muliḥ riṁ bhatha:ra sam gu[SH[| Aum̐ sari niṁ ganda kusuma// hayu saṅiṅulaḥ hayu saṅa holaḥ| svaṙgga kaṅiṅo
+<lb n="21v4"/>laḥ| svaṙgga kaṅaholaḥ suka kaṁṅiṅolaḥ| suna: kaṅa holaḥ| lpas ka[SH]pinaṅan·| lpas kaṅa maṅan·| hayu kaṅa maṅan·| boga hyaṁ katuriṁ hyaṁ| hayu saja
+
+<pb n="22r"/>
+<lb n="22r1"/>ṅkani voṅama{na}ṅan·| śri manḍəl· riṁ kamahotaman·| lpasiṁ ḍaṙmma pa[SH]maluyan· // sattha gisaməniṙ kəḶpuṁ salugutiṁ kulaṁ kaliṁ| muṅəṁnuṁ niṙta nana|
+<lb n="22r2"/>niṙta nana| niṙta nana| paṅəntasiṁ śarira mvaṁ tahi huyu// nihan mulani[SH]ṅ ana kayu| dukla giyinuga denira saṁ hyaṁ tuṅgal tugal·| mijil· hiṅaran śaṁ hyaṁ§
+<lb n="22r3"/>heka panḍa: śiva ṅaranya// Aum̐ saṁ hyaṁ kala bthəṁ hara niṁ raduk duruṁ mlə[SH]tik·| saṁ hyaṁ kala Ṛṅat haran nira duk mahu məḶthok·| saṁ kala sukini harani§
+<lb n="22r4"/>raduk· mlətik·| saṁ kala məkaṁ haranira duka nilakiṁ pṛthivi| saṁ kala pa[SH]k pak harani raduk pinarakṣa muṁguḥ riṁ lava| Aṇḍaṁṅ-aṇḍaṅira saṁ hyaṁ brahma| den kadi
+
+<pb n="22v"/>
+<fw place="left" n="21">21</fw>
+<lb n="22v1"/>saṁ hyaṁ śiva ditya| pṛdḍana glaṙ duka mərasi ṅumaḥ| bale sari bhuvana [SH] sari| rinatəṅan denira saṁ hyaṁ brahma| punika vantən pulava sapuṁgəl| tiṙttha sa§
+<lb n="22v2"/>śirat haṅən· tekən ṣahisiniṁ sarat kabeḥ| manavi vontən kavaṁ kaṁ kavi [SH] kaṁ paṅadonira paravatən devata kabeḥ| hiṅadu kulu masahut·| den kadi saṁ 
+<lb n="22v3"/>hyaṁ śiva ratri| patəmpurira saṁ hyaṁ ṅaṙkka| tumulum pakka:riṅ aditya| tu(la)[SH]lan·| kaṁ kinaṙyya paṅa (x) hubaniṁ jəjənəṁ| saṁ hyaṁ hibu hatəp·| bapaka śapadu pani
+<lb n="22v4"/>ra saṁ hyaṁ śiva dityaṁ| hasəp ṣa hyaṁ tigaraṣa| Amṛttani sakvehiṁ devata [SH] kabeḥ| vṅi tanaptəṁ ha paḍaṁ| hajəlag halila| tana naha mari pūṙṇnaha| kaṁ pinakapaṅa
+
+<pb n="23r"/>
+<lb n="23r1"/>hubani ti[ṙ]ttha candra Ḷviḥ| deniṅamagəhakən tripatapan·| kiki na[SH]yya paṅayubanni ṅadi mantra| ja:ti hando hadna satru musuḥ| tka haniṁ śri rabut·
+<lb n="23r2"/>sadana viśeṣa tan kaviśeṣa| sapa kaṁ vruhi ṣinirat kabeḥ| saṁ kṙtti dara [SH] vetan·| saṁ banaspati raja: kidul·| saṁ puluṁ dara kulon·| saṁ puluṁ gaṇa hə
+<lb n="23r3"/>lor·| saṁ maṅga maya ri tṅaḥ| saṁ hyaṁ liṅga maya riṁ ruhur·| sajaba ni[SH]ṅ antarikṣa| totoran·| saṅa gaṇa sumigaha| hana saṁ Ḷṅgaṇa toto
+<lb n="23r4"/>ran·| saṁ naga pro kotok dukaṚp· rubuha| saṁ naga layaṁ duk[SH]ma huha layaṁ| saṁ naga kala bumi dukhana riṁ lmaḥ| saṁ naga vurahan· dukinələṁ|
+
+<pb n="23v"/>
+<fw place="left" n="22">22</fw>
+<lb n="23v1"/>saṁ manu sukṣma jajaṙ dukṣini gaṙlinurusan·| saṁ hyaṁ tuṁgal lahniṁ dukti [SH] nugalakən·| saṁ hyaṁ naga binandana dukiṅuyu nandinandanan·| devataniṁ laka du
+<lb n="23v2"/>kma humuliḥ| śaṁ hyaṁ sukṣma ralinakṣan· kapaṅan denira saṁ hyaṁ brahma|
+ [SH] tiniṁkaḥ dadi sasari| saṁ hyaṁ kala: sakvaha jasira muruṅakən lakar·| tinulusakə
+<lb n="23v3"/>nginave paṅahuban·| tumu lumpak· riṁ sḍaṁ (va) pañcuran·| den kadivu[SH]ni variṅin·| den muliḥ mariṁ bhathari hibu hasurambhehan·| kadihavu navun hapa
+<lb n="23v4"/>dapa vulan·| hacaraṁ lintaṁ| hagoḍoṁ bayu hara| sapva kara dukka§ [SH] nugalakən·| saṁ hyaṁ viśeṣa śiva ratri| saṁ hyaṁ kala: susun dukka nupuk lakar·| saṁ naga pa
+
+<pb n="24r"/>
+<lb n="24r1"/>lipiḥ piṁgiriṁ lambaṁ| saṁ nala livat duk tanataḥ tərus·| haṅadusa śri maṅa[SH]tup·| sakala: muju dukṣinama| saṁ naga muliṇthaṁ riṁ lambaṁ vot·| riṅənəb riṁ ha 
+<lb n="24r2"/>hadaya| jəṅira kadi payuṁ| tanana haḶkna viṣa| hajnəṅa riṁ maha pa[SH]dma| mulanira dukana| luka tkaṁ vidəras·| luka tkaṁṅ amras·| huvusa deniṅ ujaṙ
+<lb n="24r3"/>pisan· muliha riṁ vivitannira maniḥ| hara nara saṁ hyaṁ miṅip·| Ṛti [SH] papra sana guṁ mulaniṅ anakayu linakar· // Aum̐ kara pukulun·| Ṛbu sapta patala
+<lb n="24r4"/>| saṁ hyaṁ baḍa vaṁ nala| saṁ hyaṁ saha śra rudra| sata rudra| saṁ hyaṁ ṅagni rudra[SH]| sira kaṅ kaḍasaṙ riṁ pṛthivi| tabeya manuṣa: ṅadəg na kayaṅan·| muṙsidḍi ja:
+
+<pb n="24v"/>
+<fw place="left" n="23">23</fw>
+<lb n="24v1"/>ti| ma| deniṅ aṅadəggakən ṣaśaka niṁ caṇḍi // japaniṅ agave ca[SH]ṇḍdu saṁ gara guṁ ṅalit·| ma| saṁ gaṙja: tihapaku saṁ hyaṁ (Ḷ)ṁ| hyaṁ kaṅ agave bhathara ka
+<lb n="24v2"/>ṅaligihi| puṙvva riṁ jati| viśeṣa| // haninikəl·| ma| Aum̐ nalara pu[SH]spa ja:ti viśeṣa muriṁ nora // haṁ rahabi| ma| Aum̐ kara pukulun·| saṅa ka hyaṅa
+<lb n="24v3"/>n riṁ ṅundaran diṙ buvana| riṁ joṁgiri salakaṁ| saṅa maḍaṅi buvana| manuṣa [SH] paṇḍa bhathara| magaveya piṇḍa svaṙgga| tan kabəta riṁ sari ktulak pulun·| // haṅugaha
+<lb n="24v4"/>kən· liṅga| ma| Aum̐ liṅ kaja:ti viśeṣa muṙnniṁ ~ hana cəbakən kokolo[SH]k·| ma| AO ruṅu ruṁ saṁ hyaṁ viśeṣa| bayu pinakasasaka doja| hati-hati saṁ
+
+<pb n="25r"/>
+<lb n="25r1"/>bda viśeṣa| haliṅgah iḍəp· viśeṣa| hanrapakən ṣaṁ hyaṁ tanana| śri [SH] pasək pagəḥ ~  vus muṁgaḥ liṅga| dupa bittha kaṁ caṇḍi tiniṙtthan· ~ Aum̐ ~ ma| Aum̐ ca
+<lb n="25r2"/>ṇḍi putiḥ hatulaṅan· bukuṙ putiḥ hatalam pakan dara putiḥ məḶcut ta[SH]n pakayan·| lpas deniṁ tiṛttha ja:ti murila ~ deniṅa niṙtthani saṅ agave ca
+<lb n="25r3"/>ṇḍi saṅgara| ma| Aum̐ taya muṙti devata| viśeṣa hañakra voṁ yana ma[SH]śvaha ~ hiḍəp· śarira ja:ti |ma| Aum̐ maṇik aṣtagiṇa| kasaṅgaha deniṁ de
+<lb n="25r4"/>vata| hniṁ śarira niṁ taya| ~ Aum̐ guru hañakra Ḷma:ṙ Aum̐ guru hañakra [SH] tiṙttha| haniṙtva ni guru viśeṣa hniṁ| haniṙttha śarira mvaṙ kaṁ molaḥ // Aum̐
+
+<pb n="25v"/>
+<fw place="left" n="24">24</fw>
+<lb n="25v1"/>śūnyata nana: niṁ raditya vulan linta taraṅ gaṇa| duk· spi tan ananiṁ [SH] sa/ga\ra| duk ṣəpi tan ananiṁ guṇuṁ| duk· ṣəpi tan ananiṁ nini| duk· ṣəpi tan ananiṁ kaki|
+<lb n="25v2"/>duk· gubaṙt tan ananiṁ pṛthivi| duk ṣuvuṁ tan ananiṅ akaśa| duk nora ta[SH]n ananiṁ paravatək devata kabeḥ| byaḥ saḥ baṚṁ lukat ṣatan daṅan· jənag ṣakiṅ a
+<lb n="25v3"/>kaśa| bul ṣakiṁ pṛthivi| hagətiḥ tan agətiḥ tka muṙsaḥ muliha hni| yan a[SH]məras aguṅ alit hujaṙ Ṛna| muṅgaḥ ri təpuṁ tavar·| siṁ prasən·| ~ Aum̐ devata maḍa ma
+<lb n="25v4"/>taya| saṁ kasaṅga deniṁ pṛthivi| sakasəḶhan deniṅ aruṇa| sakabətiṁ [SH] pavana muṙtthi yaṁ tka śri taya śri Aum̐ ~ sa| hyaṁ hyaṁ kami yaṁ tka yaṁ mulihyaṁ| sira ruvat i
+
+<pb n="26r"/>
+<lb n="26r1"/>sun ṣvaṙgga| sira svaṙgga hisun· lpas·| sira lpas hisun śidḍa lpas·| siprasə[SH]n ṣaka garap ṣaka gaməl ṣidḍa lukat denya ~ Aum̐ viṣṇu sisiramman·| lukat ptha
+<lb n="26r2"/>tra mukṣa ba\ntə/n·| baṚṁ ṅila:ṁ mukṣa pəṁ | palpasiṁ tiṙttha bantən·| ~ prastu[SH]stas· tlas·| kahəntas·| sira saṁka prashamirantiha ri śarira| sira satan ka prashami
+<lb n="26r3"/>rantiya riṁ guru viśeṣa| guru viśeṣa heṣi taya| taya hiṣi śūnya[SH]| śūnya hiṣi hni muṙtiya hniṁ| siri niṁ papvasan· tuṅgaliṁ ṚṚbu tiṙttha ~ Aum̐ hyaṁ hyaṅ a
+<lb n="26r4"/>gave kayaṅanniṁ hyaṁ| huma humalaḥ kariya| laḥ mariṅəndisira| mariṁ tan·[SH] pakiṅan·| hanunaṁ tpcakiṁ kuntula:ṅ layaṁ| haja sira tuma tiṅagayaṁ| majiṁṅariṅ ku
+
+<pb n="26v"/>
+<fw place="left" n="25">25</fw>
+<lb n="26v1"/>ruṅan maṇik·| ma| dan maṁsu ~ hyaṁ hyaṁ ṅagave kusuma niṁ hyaṁ| humah-umaḥ [SH] laḥ kariya| mariṅindi si(x)ra: mariṁ tanpahiṅan·| hanu tpcakiṁ kuntula:ṅ layaṁ| haja
+<lb n="26v2"/>sira tumatiṅagayaṁ| tumatariṅa hniṁ| sidḍa ja:ti| yan· murud ṣakiṁ ba[SH]tur·| // nihan· devataniṅ kaṅan·| Aum̐ saṁ hyaṁ maṇik haguṁ ṅanom devataniṁ bayə
+<lb n="26v3"/>{na}m· pṛnahira riṁ śarira riṁ paṅadəg·| saṁ hyaṁ maṇik kaḶmpahi devata[SH]niṁ sasavi| {saṁ hyaṁ maṇik· na|} pṛnahira ri śarira riṁ bayu| saṁ hyaṁ maṇik kəsəntəs patəs·
+<lb n="26v4"/>| devataniṁ ranti| pṛnahira riṁ śarira riṁ rupa riṁ pamulu| saṁ hyaṁ maṇik naga [SH] puspa| devataniṁ rayana| pṛnahira riṁ ṣarira riṁ solaḥ| saṁ hyaṁ maṇik· naga laṅə 
+
+<pb n="27r"/>
+<lb n="27r1"/>| devataniṁ popogəṁ| pṛnahira riṁ śarira rika śaktin·| saṁ hyaṁ maṇik· mi[SH]ṇḍuḥ devata kamañjaraṁ| pṛnahira ri śarira muṁguḥ riṁ goma| saṁ hyaṁ maṇik pumnā r(i) ra
+<lb n="27r2"/>t devataniṁ kamantən· pṛnahira riṁ śarira tejaniṁ paṅadəg| devata [SH] niṁ luluṅan· sa hyaṁ maṇik kumba| pṛnahira riśarira riṅalis·| saṁ hyaṁ maṇik handrave
+<lb n="27r3"/>la| devatani saṙvva (x) sinom·| hana riṁ śarira riṅathi-hathi ri sisi ⌈[SH]nom·| Ḷməs ṣiṅidəp·| sa hyaṁ maṇik· lumego| devataniṁ lubu taḶs·| hana
+<lb n="27r4"/>riṁ śarira kətəkiṁ paṅadəg·| Ḷməsiṁ paṅusap·| saṁ hyaṁ maṇik· dumilaḥ[SH]| devataniṁ katu| hana riṁ śarira riṅasta kosala riṁ kagunan· riṁ kavivekan·|
+
+<pb n="27v"/>
+<fw place="left" n="26">26</fw>
+<lb n="27v1"/>kaməgəpaniṁ śarira kabeḥ| deja: paṅadəgiṅ usuk·| vaṅkava hali[SH]ṅaniṅ ulun·| hatugul· kukuvuṁ haku havakiṁ bhathara sadaśi vajəg| tka śri ~
+<lb n="27v2"/>saṁ x riniṁ kesəpka guha de bhathara de bhathari| sariniṁ saṙvva mṛttha vaṙṇna| [SH] saṁ hyaṁ sadakṣara tan palgatan· humandəli śarira| saṁ hyaṁ pañcakṣara pinakahavak·|
+<lb n="27v3"/>śarira| sarira niṁ puruṣa viśeṣa| sabata Ab(la)nama śivaya| śarirakna| [SH] ~ kaliṅanya riṁ dadi janma hatuturariṁ kamulaniṁ śarira| marapvan diṙggayu ṣapari puṙ§ 
+<lb n="27v4"/>ṇna| riṁ sa la niskala dalaniṁ vruḥ saṁkaniṁ dadi| həndi ra saṁkaniṁ dadi| saṁkiṁ [SH] rvabi neda| biya sadḍa haraniṁ lagəṁ| saratan papəgatan· kahulaḥ 
+
+<pb n="28r"/>
+<lb n="28r1"/>rahina vṅi| həndi lviṙnya // hatiṣ tha:n hagatyan·| hapurisyan·| ha[SH]rusyan·| ~ hasutyan·| hapratiṣthan·| habodyan·| hadravina ~ hanaga
+<lb n="28r2"/>raṣa| hasuptan·| pavuṅvan·| hasuci habuṣaṇa muvaḥ ~ ditalya§[SH]nya| hatiṣthan·| haṅadəg·| hagatyan lumaku| hapurisyan haṅisiṁ| harusyan ha
+<lb n="28r3"/>ṅuyuḥ| hasutyan hava vasuḥ| hapratiṣthan haluṁguḥ habodyan hama[SH]ṅan·| handravinna haṅinum·| nigaraṣaṅinaṁ| haśuptan haturu| pavuṅvana
+<lb n="28r4"/>taṅi| hasuci habuṣaṇa muvaḥ ~ hika: kabeḥ hika x Ḷkasana [SH] kavruḥhana| hikata hiṅaran ṣadakṣara| tan papgatan· kahulaḥ rahuna vṅi|
+
+<pb n="28v"/>
+<fw place="left" n="27">27</fw>
+<lb n="28v1"/>samalan· buvaṇa śarira| ri buvaṇa rahina vṅi| ri śarira taṅi tu[SH]ru| {ha}ditadoha doha buvaṇa lavan śarira| denira saṁ haṅavruḥhi| bakti ri bu
+<lb n="28v2"/>vaṇa bakti ri śarira| ~ rihan· yan ametta kəmbaṁ gaṅan kayu muvaḥ| savru[SH]hana: huripiṁ gaṅan kayu| harane huripe kaki keməṁ nini keməṁ| harane
+<lb n="28v3"/>ba:yu na ba:yu siḶṅəḥ| śabdane saṁ rarasati| lakṣaṇane te[SH]ga pati| manahe hagapaṁṅevuḥ| hiya: hiṅaran bhava maya| hapan navakiṅ anuṁ
+<lb n="28v4"/>| harane hanuṁṅe hanuka| ki hanta lakṣaṇanira saṁ haṅavruhi| [SH] sahulaḥ Ḷkasana: sapanən rumuhun·| ndi ta saṁ{ka}sapta rumuhun·|maṅkana hujaṙ
+
+<pb n="29r"/>
+<lb n="29r1"/>Ṛna| hana sira saṁ hyaṁṅ ayu hana:laḥ sun pet ṣira sun gave hayu pu[SH]kulun lahiya| ma| Aum̐ hyaṁ hyaṁ kaṅ iṅalap·| hyaṁ hyaṁ kaṅ iṅalap·| pamatuk mariṁ
+<lb n="29r2"/>sandi tuṅgal·| muṙ tkeṅ akaṣa muṙsaḥ| sahira muliha mariṅa hniṁ| sisi[SH]rahalapa: tuṅgak maṁkana mantra ~ haṅubaḥ gaṅan·| ma| Aum̐ gaṅgavaḥ śudḍayana
+<lb n="29r3"/>maḥ ~ haḶbokakən gaṅan·| ma| biparita pamuliḥ riṁ saṁkan paran·[SH]lpasa hniṁ ~ hara raciki gaṅan·| ma| bhathara turun· raṣa| bhathari haturun ṣa
+<lb n="29r4"/>ri| puvaḥ sara puvaḥ sari| hacin (iṅniṁ) kaṅ iṅolaḥ| hasari hamṛt(tha) [SH] hniṁ| ~ yan adan· bantən·| ma| Aum̐ patra kusuma: pinadma pavitaya namaḥ ~ ha
+
+<pb n="29v"/>
+<fw place="left" n="28">28</fw>
+<lb n="29v1"/>niṙttha batən·| ma| Aum̐ tiṙttha pavitra suci niṙmmalaya namaḥ ~ pukulu[SH]ntana kyan panḍa: bhathara mva bhathari| pitu la bantən śari niṁ sagara guṇu(ṁ)|
+<lb n="29v2"/>haturım saṁ gaṙpatapan pavitra pukulu x n·| kabuktiya deniṁ sukṣma dya[SH]tmika ṅumaṣtthana ri saṁ gaṙpatapan· sama muktiya sari kaṁ knaṁ sari| kaṁ luputi sari 
+<lb n="29v3"/>jumnəṅa sari patra pukulun·| Aum̐ deva mulat butaṅisəp manuṣa haṅə[SH]ntenna sari| Aum̐ sari bukti kaḿ taṙpana mṛtthanamaḥ ~ bantən dupa| Aum̐ śivagni ma
+<lb n="29v4"/>ha suci| saṁ hyaṅ aditya humisəp adupa niṁṅ ulun·| saṁ hyaṁ candra humnə[SH]ṅakən·| Aum̐ śri mṙttha moktaḥ niṙmmalaya namaḥ ~ bantən bañu| ma| Aum̐ gaṅga pavitra
+
+<pb n="30r"/>
+<lb n="30r1"/>±2 aks. lost jata habak kahn(iṁ)| tka śri ha mṛttha hn(iṁ) ~ yan alpasakən puja ba[SH]ntən·| dupa tiṙttha halalayoni muvaḥ| ma| Aum̐ viṣṇu śakti sisiraman· lukat pa
+<lb n="30r2"/>tra mukṣa bantən· baṚṁ ṅilaṁ mukṣaḥ pəṁ ~ hanurud batən·| ma| Aum̐ de[SH]va sukṣma hamukti sari| manuṣa hanunas· hanurud ṣari| hasari riṁ vkasan hamṛttha
+<lb n="30r3"/>~ yan ablukti| ma| Aum̐ hyaṁ kaṅ amaṅan·| hyaṁ kaṁ pinaṅan· valuya {ui j}{ui t}[SH] dadi sukṣma humoriṁ śarira jati| tka śri hamṛttha hniṁ ~ haṅinum bañu| ma| Aum̐ ma
+<lb n="30r4"/>lasaḥ hudḍaḥ huṙniṅ amṛttha hniṁ ~ hakəkəmu| ma| Aum̐ gaṅga ruṙnamaḥ ha [SH] mṛttha suci ya hniṁ ~ vavasuḥ| ma| Aum̐ pañca tiṙttha śudḍaniṙmmalaya namaḥ ~ habaca§
+
+<pb n="30v"/>
+<fw place="left" n="29">29</fw>
+<lb n="30v1"/>l labəṁ| ma| hulun aṅikup· bumi| hamupusi sari ni sagara guṇuṁ| hu[SH]lun amukti sari ~ devataniṁ takiṙ susuḍi saṁ hyaṁ lpa| ṅa|| haməcat·| smat·hatakə
+<lb n="30v2"/>| ma| sun anudamala muliha pūṙvva ~ salahabəṁ| riṁ pavuhan·| ma| Aum̐ pa[SH]tra kusuma hayu| vus gavenira sun gave bumi hayu| muliḥ ya mariṁṅ ayu lahiya| hulu
+<lb n="30v3"/>n kari sida sadya ~ yan aluṅguḥ pañca buta haṅiriṁ| Aum̐ guru tka śri ~ yo[SH]:ganiṁ luṅguḥ| ma| Aum̐ ciptapuja:ya namaḥ ~ hamagəḥhakən· śila| ma| Aum̐ puspa ja
+<lb n="30v4"/>ti śarira tka śri ~ tumurun·| ma| jogpunaḥ kala: sumigaḥ guru lumaku§[SH] ~ haṅadəg·| ma| jəg ṣakiṁ ṅakaṣa| bul ṣakiṁ Ṛṣivi| vaṙṇna jaya paṅadəg·ku|  
+
+<pb n="31r"/> 
+<lb n="31r1"/>śakti jaya paṅucapku| Aum̐ sidir astu svaha ~ ya lumaku| ma| Aum̐ sarapad-ṣa[SH]rapad·| yan ama svaha ~ yan aṅuyuḥ| ma| Aum̐ vañcakaḥ vañcikiḥ cṛtta hniṁ| muliha
+<lb n="31r2"/>ya mṛttha hniṁ ~ yan aṅisiṁ| ma| hibu sumiṅ gaya: haṅadəga riṅ ayu| hi[SH]sun aṅisiṅ aṅuyuḥ| laḥhi taya-taya hihi yata sama hayu ~ kərik· valaya
+<lb n="31r3"/>dadi vṣi vaja: malela puraṣani| siya ni ba⌈{ba}le hamaḥ| ma| bu[SH]cal peper· ~ hasutya| ma| Aum̐ gaṅga maha sunya| gaṅga satata yoga| gaṅga hi§
+<lb n="31r4"/>svarayanamaḥ ~ maṁkana sahula:/|\ gave Ḷkasana| hi{ha}ya hiṅarana[SH]n· janma tutur·|| yan uvus abukti| ma| Aum̐ śri mṛttha| Aum̐ kara mṛtat(ma)| Aṅvama
+ 
+
+<pb n="31v"/>
+<fw place="left" n="30">30</fw>
+<lb n="31v1"/>namaḥ ~ siṁ pinaṅanajaka rikina vruḥhan·|| saṁ hyaṁ boṇdhaniṁ sara[SH]t devataniṁṅe yogan·| saṁ hyaṁ sulaṣa devatani(ṁ) ya ḍasar·| sa(ṁ) hya(ṁ) 
+<lb n="31v2"/>maṇik kaṙja: devataniṁ suru| devataniṁ papon·| saṁ hyaṁ buṅu[SH]laṅ murat·| vilayu tiṅeḍoṅan ṣaṁ hyaṁ sun tagi maṇik·| heḍoṅa
+<lb n="31v3"/>n duk ṣinaṇḍaṁ| saṁ hyaṁ muṅal maṅil· devatanya| duk ṣinalahakə[SH]n boṇḍa ni sarat· hyaṁnya ~ sadakṣarī maha japaḿ| luhya parama sadakam·
+<lb n="31v4"/>sadḍa śivaṅga mitukəm·| saṙvva vigna vimokṣane ~ maṁkana hika[SH]ka liṅaniṁ sadakṣara ~ Aum̐ ri śiraḥ| Am̐ riṁ kaṇtha bahu| sam̐ riṁ ḍaḍa| mam̐ riṁ hṛ
+
+<pb n="32r"/>
+<lb n="32r1"/>dḍaya| yam̐ riṁ vtaṁ| Aum̐ riṁ nabi| riṁ padḍa: huṙdḍa śari kabeḥ| maṅkana ⌈[SH]rehiṁ kapaṅan kenumiṁ śarira| hujaṚna hesuk ṣore| phalanya
+<lb n="32r2"/>~ yan aturu| ma| Aum̐ brahma turu viṣṇu hataṅi|  Aum̐ brahma hataṅi [SH] viṣṇu turu| hiya ta patiban pavuṅon·| ṅa| samalan· sadakṣara| ta
+<lb n="32r3"/>ṅi turu jaṚna haja sira həḶm·|| dihan· Ḷkasiṅ aṅambal pula[SH]va kəmbhaṁ salviraniṁ pinet· hujaṚna lkasana: marapvan hanulus ayu| sapanən vru mu
+<lb n="32r4"/>hun·| hiya ta saṁ hyaṅ ayu haneṅ kene| hana sunot· sun gave ha[SH]yu sira pukulun·| lahiya:hlah| ma| Aum̐ hyaṁ hyaṁ kaṅ aṅalap·| yaṁ hyaṁ kaṅ iṅalap·
+
+<pb n="32v"/>
+<fw place="left" n="31">31</fw>
+<lb n="32v1"/>pamatuk· riṁ sandi tuṅgal muṙ tkeṁ jati| haṅambil pulava ~ hanaleni pu[SH]lava| ma| Aum̐ śri sandi nama {ui śa} viśeṣa ~ yan aṅagəm mantra| vidadar(i) kaṅ aṅagəm· v(i)da
+<lb n="32v2"/>dari kaṅ aṅagəm· tka śri pantəsa: mṛttha ~ hisun tan analenana pulava hana[SH]lenana mas maṇik· komala hitən·| sakehiṁ kumara caṁ kumiriciṁ| rabut ṣadana
+<lb n="32v3"/>bhathari śri| Aum̐+ sandi mṙttha ~ haṁ lalayoni haṅalapi talajuṅan·| ma[SH]| Aum̐ śri liṅga tata: suci yan amasvaha| hisu\n/ta haṁ larutana talajuṅan·| hisun alaru
+śri <lb n="32v4"/>tana sahiṣiniṁ joṁ parahu| sarupa vaṙṇna yupa raja yogya| Aum̐ puspa pu[SH]ja: sidḍa sidḍi ~ hamumuja| ma| Aum̐ suṙyya suṙyya hyaṅ adipati yan amasvaha| ~ vusi
+
+
+<pb n="33r"/>
+<lb n="33r1"/>ṅa mumuja| haṅa{əi ga}dəg haṚpiṁ saṁṅgaṙ| ma| Aum̐ saṅgaṙ pi+naka luṅguhan·| suku pi[SH]naka sasaka| sampət pinaka: talajuṅan·| ±15 aksara lost
+<lb n="33r2"/>spa hati hiḍəpinakabantən·| hambək pinaka: padupan·| Aja:na [SH] pinakaha{ui ya}puy| cittha niṙmmala pinaka: dupa paṅgil·| Aum̐ śri mṛtthayanama śva§
+<lb n="33r3"/>ha ~ hamuṣṭi hati haṚpiṁ saṅgaṙ| ma| Aum̐ jagat· śarira {*} kṛttaha[SH]sari gurut kaśri ~ hanapakən· śarira| ma| Aum̐ ṡri yantu-yantu nama śvaha ~ səmbahən pu§
+<lb n="33r4"/>puja(n)·| ma| Aum̐ yaṁ kaṁ pinuja deva kaṁṅ amuja:| deva kaṁ pinuja: vi[SH]dadara kaṅ amuja| vidadara kaṁ pinuja: vidadari kaṅ amuja| manuṣa ṅaturi ba
+
+<pb n="3v"/>
+<fw place="left" n="32">32</fw>
+<lb n="33v1"/>(n)t(ən) kaśri ~ haṅ iseni pasucen·| ma| Aum̐ muṙ Ḷmuṙni deva muṙtthiyana[SH]ma śvaha| Aum̐ murahniṁ suciyanama śvaha| batən bañu ~ Aum̐ śri kuṇḍa taravaṅ amṛ
+<lb n="33v2"/>ttha| Aum̐ hastiti jati śarira mata suciyanamaḥ| tuṁgaliṅ abatən ba[SH]ñu ~ hamoṅi gni riṁ pasamidan·| ma| Aum̐ saṁ hyaṁ gat viśeṣa pinakagni| kuku
+<lb n="33v3"/>sira pinakahiḍəp·| panastis pinakaśabda| harum pinakabayu| hu[SH]lun aṅadəg· riṁ buvana: harupa devata| jəg· harapa viśeṣa| haṅ iliri
+<lb n="33v4"/>samida| Aum̐ saṁ hyaṁ viśeṣa pinakagni| bhaṭara guru pinakakuku sira[SH]| saṁ hyaṁ pṛmmaṇa devata pinakarupa-vaṙṇanira| śarira pinaka(gana sama bi| Aum̐)
+
+<pb n="34r"/>
+<lb n="34r1"/>śri hamṛtta ~ haniniṙtthani pulava bantən·| ma| Aum̐ gaṅganəm gaṅga pavitṛ[SH]m·| gaṅganəm· bhaṭari sara sati hatmahan bañu suci pavitra ~ aksara lost
+<lb n="34r2"/>| Aum̐ jəg śari śakiṁ tan ana| hamukti hasari kaṁ kna riṁ sari jmnəṅa sari kaṁ [SH] lupuṁti sari sari pṛmmaṇa suci Aum̐ A{*}ma|| jəg ṣakiṅ akaṣa| bha(ṭa) aksara lost
+<lb n="34r3"/>Oma| riṁ pantara| hatma hana pradḍana harupa saṙvva vaṙṇna| kaśarira⌈[SH]denoja bhaṭara| kecəpa de saṁ hyaṁṅ ayu| mvaṁ saṁ hyaṁ raditya aksara lost
+<lb n="34r4"/>namaḥ ~0~ cinaniṁṅ a:jar-ajaṙ mtaḥ hapitutuṙ yyan biṣaha| ḍaṙmma gara[SH]ḍaḥ-garaḍaḥ ⌈{*}den raṣani| saṇḍaṅ ago paṅann inum· den raṣani aksara lost
+
+<pb n="34v"/>
+<fw place="left" n="33">33</fw>
+<lb n="34v1"/>yuḥ| mesəm ṣaṁ vruhiṁ gati saṁ para haja hiḍəpan· hava dudu| raga [SH] mtaḥ de{*}n· raṣani saṁ tan vruhiṁ gati hava hayu nanut· aksara lost
+<lb n="34v2"/>hu ḍaṙmmaniṁ muḍa halaḥ kaṁ maṅu| punəndo batuṙ kaṅiran· hajar-ajaṙ§ [SH] mtaḥ puniku| hiṅ aṙgga: vkas namaniṁ dukuḥ haḥhiya mtaḥ tmən·| ḍaṙmma aksara lost
+<lb n="34v3"/>kət ḍahun·| hahiya sida hayu hapaniku huripiṁ pañca kala| daśa [SH] misara: hapan ṣadakṣara hatman· jatinira| pakuniṁ buvana: aksara lost
+<lb n="34v4"/>huripi buvana: ~ kaya: lena: {ta} gatiniṁ voṁ kaṙmmaniṁ sakalaniṁ bu[SH]mi make ~ lavana brahma mitratī| tiktita viṣṇu tatevaca aksara lost
+
+<pb n="35r"/>
+<lb n="35r1"/>cavaḥ| kaśaya sabuhe vacaḥ| hamlaścaḥ maha deva| maduro śiva hu[SH]tyate| sadraṣan tutasaṁ yukti| hamṛti sadaśi vañcaḥ //0// {*}tivija
+<lb n="35r2"/>: parimton·| samapta tlas· sinəra:t· ri mṛt:haniṁ giri sū§[SH]kṣma| batur· riṁ (tha)la makan·| parab· riṁ ṅa:ṙgga pakṣa| hapra sadu vi
+<lb n="35r3"/>rupaniṁ saśtra| haguṁ halit· hanəmut gatəl·| tan patuvi[SH]sanda baṣa| pasaṁ pavṛtthi| kapratu saknadyanira saṁ maṅilya| muvaḥ
+<lb n="35r4"/>dyanira saṁ makenken·| kapayu{ui ya}ha dyanira saṁ putu§[SH]siṁ pra lampita| lviḥ lvaṅana| kiraṁ vəḥhana| hayva piṁ kaliḥ kaŕyya
+
+<pb n="35v"/>
+<fw place="left" n="34">34</fw>
+<lb n="35v1"/>tlas pra sadunira saṁ manəra:t·| hakveḥ yan sado[SH]kna// kahusaniṁ{na} manəra:t·| śaśiṁ| śravana| tṛ(ṣ)ṇa pakṣa riṁ catu(ṙ)  
+<lb n="35v2"/>ti| vuku| suṁsaṁ| vara| śri| vara| vas·| vara| soma| vara| mani[SH]s·| vara| la(ra)| vara| vakyaḥ|| samaṅkana divasaniṁ manəra:t·| Ḷśaka| śi:
+<lb n="35v3"/>ṣṣaṙ{na} saka O|| A°°| pha°°°| A°°°°°| E°°°| la°°°°| E°°|| O°°°| pha°|| Ḷviḍi yaṁ veḥ| [SH] kapayuha dyanira saṁ putuṁ siṁ baṣa basita| kavacenana dyanira saṁ su§
+<lb n="35v4"/>dya ṅilva|| samaṁṅkana pra sadunira saḿ manəra:t· //0//
+
+</ab>
+
+			</div>
+
+
+
+
+
+
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+		        <p><!-- explain the process of your edition here --></p>
+		        <!-- provide a list of bibliographic references used in your digital editions -->
+		        <listBibl type="bibliography">
+		            <bibl/>
+		        </listBibl>
+		        <!-- the listBibl editions is used to create a list of abbreviated text used in notes and parallels, it is more or less the equivalent of a list of abbreviations, you would find a printed edition  -->
+		        <listBibl type="editions">
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
