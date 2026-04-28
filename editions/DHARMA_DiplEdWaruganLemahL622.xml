@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="editorial">Digital Diplomatic Edition of Warugan Ləmah L622</title>
+                <!--change the title of the edition starting, if possible, with the title of your text-->
+		<!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
+                <!--<title type="alt"></title>-->
+		    <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+		<!--<title type="original" xml:lang="...-Latn"></title>-->
+                    <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+                <!--<author></author>-->
+                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+                <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+                    <resp>author of digital edition</resp>
+                    <persName ref="part:adgu">
+                        <forename>Aditia</forename>
+                        <surname>Gunawan</surname>
+                    </persName>
+                    <persName ref="part:argr">
+                        <forename>Arlo</forename>
+                        <surname>Griffiths</surname>
+                    </persName>
+                    <persName ref="part:ilnu">
+                        <forename>Ilham</forename>
+                        <surname>Nurwansah</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DHARMA_DiplEdWaruganLəmah.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2019" to="2025">2019-2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="L622">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>National Library of Indonesia</institution>
+                                <repository>Lontar</repository>
+                                <idno>L 622</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author></author>
+                                    <title>Warugan Ləmah</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                                    <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 89 leaves in Kuṭilā script. Apparently written in 1152 A.C.</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Sundanese script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>The Warugan Ləmah was first published in Aditia Gunawan in 2010. We present here a new edition which conforms to the editorial system we propose, and contains a few improvements of reading; it is especially the translation that we have been able to improve significantly by working together.</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                <projectDesc>
+                    <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+                    <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl> 
+                <p></p>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+            <change who="part:ilnu" when="2026-04-28" status="draft">Created the initial version of the XML file.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="osn-Latn">
+        <ab>
+        (1r1) [||] || || Ø Ini varugan· L̥maḥ, Iṅəkən· di halana, di hayuna, na pidayəḥhən·, na piR̥mvul·L̥n·, na piUMbul·L̥n·, lamuna: ba(h)e ka
+(1r2) keñca ṅarana talaga haṁsa, Asiḥ voṁ sajagat·, pañudana pa[SH]caṙ pimula di pahoman·, lamuna bahe ka tukaṅəna: L̥ma:ḥ, ṅarana ba-
+(1r3) ñu mətu hamo jadyin· kaneneḥ, pañudana papatoṁ di sakay·[SH], tanə:m· di təṅaḥ daL̥m·, Ajina °oṁ dibi maAji batara mrəvasa: sohaḥ,
+(1r4) lamuna: bahe ka haR̥pən·, ṅarana: puṙba tapa, pamalina gəL̥m· kahilaṁṅan· suka, pañudana lalay· pəret· tavuṙ karañcaṁ təNdən· janari, Ajina °oṁ pak·sa- 
+
+<!--
+	1. iṅəkən·] emend iṅətkən·.
+	3. mrəvasa:] mrivasa: 2010. Cf. 2v1.
+	4. pəret] could also be read piret.
+-->
+
+(1v1) ma guru pun·, pasaduAn· kami di na liṄga si jaja, liṄga si jan·tri, bava tamaḥ batara kala, tiṁgal·kən· saṙriniṁ L̥maḥ Apan· gave saṁ pandita, Aṁgəs·
+(1v2) ma L̥pa:s·kən· na lalay·, lamuna L̥maḥ bahe ka katuhu ma AMbə[SH]k· pataka, pamalina reA nu ṅaduhuṁ Uraṁ, pañudana Usaṙ tanəm· di pahoman·, la-
+(1v3) muna: ṅaliṁga manik· ma na L̥maḥ kahaUpan· ku devata, pañudana haNti[SH]ga tikukuṙ tulis· [SIGN], tanəm· di buda hiR̥ṁ di təṅaḥ daL̥m·, Ajina °oṁ sri seda
+(1v4) _da sohaḥ laUn·na motoṁ pasiṙ ma na L̥maḥ ṅarana siṁha purusa, Avet· juritan·, pamənaṁna, pañudana bubura mulyi tanə di buruAn·, Ajina °oṁ
+
+<!--
+	1. tamaḥ] this was read tamuḥ in 2010, but the dot below the ma seems rather too far from the akṣara to be able to count as vocalization, and we now take it as an accidental; if the scribe did write tamuḥ, this must anyhow be corrected to tamaḥ on the basis of the parallel in 2v2.
+	1. pandita] note use of pasangan.
+	4. _da] this can certainly be restored seda. A part of the s is still visible.
+	4. tanə] emend tanəm·.
+-->
+
+(2r1) devamanusa mrə/va\sa sohaḥ, lamuna caI becet· ti keñca, caI gəde ti katuhu, ṅarana: sri madayuṁ, pamalina kapiṁdva ku vadon·, pañudana haUṙ gəlis· pəR̥lak· di pa-
+(2r2) homan·, lamuna: dataṙ ma na L̥maḥ ṅarana: sumara dadaya, pamənaṁna gəL̥m· kadataṁṅa[SH]n· rama, paṁluṄsuṙna tamyiṄ naṁguḥ jadi coṅona prəlak· di pa*homan·, Ajina °oṁ sakabeḥ Aji 
+(2r3) bətara sri sohaḥ, lamuna: L̥bak· di təṁṅaḥ na dayəḥ ṅarana: luAk· maturun·, pamalana pə[SH]de kabeṁkeṁ, pañudana bajra pimula di pahoman·, Ajina * sri sada sohaṁḥ, laUno sumali-
+(2r4) put· ma na dayəḥ, palana Usud· kabəṁhaṙran·, pañudana poNdoḥ pəR̥lak· di təṅaṁḥ da*L̥m· t=həṙ ṅa2c·, lamuna: tem·boṁ ka laUt· ma ṅarana: tuṄgaṁ laya na dayəḥ, pamalina 
+
+<!--	
+2. rama] emend sumara? 
+	2. coṅona] coṅona na 2010. There is in fact no repetition of na. 
+	3. pamalana pəde] emend pamalina gəde.
+	3. pimula] In 2010 this was read pimala with proposal to emend to pimula (p. 163 n. 8). We now think that it is possible simply to read pimula.
+	3. *] the scribe first wrote an °o, then crossed it out, perhaps intending to write another complete °oṁ, but if such was indeed his intention he did not carry it out.
+	3. sada] perhaps emend sadap·?
+	3. sohaṁḥ] emend sohaḥ.
+	3–4. sumaliput] correct sumalipat. Why? cf. OJ limput/liput. Rather, emend maliput and place su in line 2, before rama.
+	4. palana] correct pamalina.
+	4. təṅaṁḥ] the scribe intended təṁṅaḥ.
+	4. t=həṙ] note this spelling.
+	4. laya] correct layaṙ.
+-->
+
+(2v1) paEḥ ku bajra dayəḥhan· dayəḥ, pañudana ñavuṁ di təṅaḥ Imaḥ poEna tuMpək· kalivon·, laUn·na Urut· səma na dayəḥ ṅaran·na mrəga hidiṁ, pamalina padəs· Avəḥhan·, pañudana daṁdəṙ, pimula UṄ-
+(2v2) gal· juru dayəḥ tavuṙ UṄgal· juru dayəḥ di puhun·na, °oṁ pasaduAn· kami pun·, di[SH]saṅ ratu brəco na devata kayu daṁdəṙ pun· maṄka hilaṁ Ikaṁ tamaḥ, maṄka tiṄgal· suka sohaḥ
+(2v3) lamun·na L̥maḥ ṅaṁṅaṁ ka keñca ka katuhu ma ṅaran·na jaṄgal bahu, pamalina padəs·[SH]Avəḥhan·, pañudana titiṙran· huApan· tuma L̥pas·kən· ku vadon· rəjəṁ dəṁ lanaṁ, mo-
+(2v4) toṁ caI ma na dayəḥ ṅarana talaga kahudanan·, pamalina paEḥ ku bajra /2\ Iṁ kaliḥ, pañudana ṅa2c· di təṅa caI, poEna tupək· vage, lamuna: dayəḥ nukaṁkən· bukit· 
+
+<!--	
+1. Imaḥ] misread as L̥maḥ in 2010.
+	1. hidiṁ] correct hidəṁ.
+	1. padəs·] emend padəm·.
+	3. ṅaṁṅaṁ] emend ṅaṁṅaḥ.
+	3. padəs·] emend padəm·.
+	3. titiṙran·] the layar is written on top of the akṣara after the syllable ending with r, but in this case this was probably caused by presence of superscript i.
+	4. /2\] misread as /bu\ in 2010.
+	4. təṅa] correct təṅaḥ.
+-->
+
+(3r1) (ma) pamalina rusak· kula k·kadaṁ, pañudana gogolaṁ lima tuMpaṁ, di hulu dayəḥ laUk·na gagak· po*Ena Aṁgara manis·, laUn·na katuñjaṁ ku caI ma na dayəḥ ṅarana si ba-
+(3r2) R̥bə, pamalina dipahala ku devata, pañudana gogolaṁ puṙba desa, di təṅaḥ dayəḥ[SH]gəs· ma prəlak·kan· budi na Urut· gogolaṁ, laUn· L̥Mbu kakuruṁ ku Imaḥ, pamalina hu-
+(3r3) lun· dayəḥhana:na, pañudana vera putiḥ pisusupi basa dikuriAk·, laUn· U[SH]rut· picariAn· kakuruṁ ku Imaḥ pamalina gəL̥m· duk·ka, pañudana hayam· ñiL̥ṄL̥-
+(3r4) m· pəñcit· dibuAṁ Asakan· dəṁ təluṙna, hakan· ku tujuḥhan· tuAk· samiṁgiḥ suji picucuNduk· Aya nu ṅinum· səṁsəṁrikən·, ø [ornament]
+(3r5) 										// poEna buda: Umanis·,
+
+<!--
+	1. (ma)] read , in 2010.
+	2. budi] emend budin·?
+	2. L̥Mbu] emend L̥Mbuṙ.
+	2. kakuruṁ] 2010 read kukuruṁ, which he emended to kakuruṁ. There is indeed a dot below the ka, but we are now inclined to consider it accidental.
+	4. dibuAṁ] the translation of 2010 implies that he emends this to dibuat·.
+	5. Umanis] misread na manis in 2010.
+--> 
+        </ab>
+
+			</div>
+		    <div type="translation">
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+		        <p><!-- explain the process of your edition here --></p>
+		        <!-- provide a list of bibliographic references used in your digital editions -->
+		        <listBibl type="bibliography">
+		            <bibl/>
+		        </listBibl>
+		        <!-- the listBibl editions is used to create a list of abbreviated text used in notes and parallels, it is more or less the equivalent of a list of abbreviations, you would find a printed edition  -->
+		        <listBibl type="editions">
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
