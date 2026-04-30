@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="editorial">Digital Diplomatic Edition of Gebang Manuscript from Serpong (MSA) </title>
+                <!--change the title of the edition starting, if possible, with the title of your text-->
+		<!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
+                <!--<title type="alt"></title>-->
+		    <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+		<!--<title type="original" xml:lang="...-Latn"></title>-->
+                    <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+                <!--<author></author>-->
+                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+                <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+                    <resp>author of digital edition</resp>
+                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                    <persName ref="part:ilnu"><!-- update the id -->
+                        <forename>Ilham</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Nurwansah</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <idno type="filename">DHARMA_DiplEdGebangSerpongMSA</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2019" to="2025">2019-2025</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="msa">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Serpong</settlement>
+                                <institution>Private collection of Kabuyutan Serpong</institution>
+                                <repository>Gebang</repository>
+                                <idno>MSA</idno>
+                            </msIdentifier>
+                            <msContents>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Gebang palm-leaf manuscript written in black ink with Western Old Javanese Quadratic script and Old Sundanese language.</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Western Old Javanese Quadratic script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                    <handNote xml:id= "A1_H2" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">B<hi rend="superscript">2</hi>:H<hi rend="subscript">2</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>second hand of the manuscript, black ink, Western Old Javanese Quadratic script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>-</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                <projectDesc>
+                    <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+                    <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl> 
+                <p></p>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+            <change who="part:axja" when="2026-04-30" status="draft">Creation of the xml diplomatic edition</change>
+            <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="osn-Latn"> <!-- update the language code -->
+    <ab>
+<pb n="1r"/> 
+empty
+
+<pb n="1v"/>
+<lb n="1v1"/> <g type="circle"/>◆<g type="circle"/> Avignamas·ta <g type="circle"/> nihan· kami ñarekәn· masana prativi salabaṙ, Apah salabaṙ, teja salabaṙ, bayu salabaṙ, rota
+<lb n="1v2"/> salabaṙ, sunya salabaṙ, niskala salabaṙ,  brama salabaṙ, <space type="binding-hole"/> vis·nu salabaṙ, Isora salabaṙ, mahadeva salabaṙ, sivaḥ sala
+<lb n="1v3"/> baṙ <g type="circle"/>  sakitu nu dipiAvaku bata guru pun·, mana sya diṅa <space type="binding-hole"/>  ran· batara suksәma, miku ta saṁ hya rahi sada dadi tu vadon· di
+<lb n="1v4"/> (ṅa)ranan· batari pasigiḥhan· iya ta, dәṅәn· batara ṅәsiAniṁ bvana, salaḥ kama batara ka baga bәtariṁ prativi saṁ kama ḷy·     
+
+<pb n="2r"/>
+<lb n="2r1"/> n· saṁ _ _ _ su, di na bvana pun·, saṁ prabu rama ṛsi maṅuni <space type="binding-hole"/> saṁ pan·dita, pun· kami anaḳ baṁkaniṁ Ulaḥ kami dipajaṙ 
+<lb n="2r2"/> kәn· hamo nutuṙkәn· saṁ hyaṁ trisamaya, samaya bata <space type="binding-hole"/> ra guru, Apan· kami katuduḥ dipikalaṁkaṁ, ku saṁ prabu rama ṛ
+<lb n="2r3"/> si, mvaṁ saṁ pandita, pun· ku haraḥ supagi laUn· bәnaṁ na kaja <space type="binding-hole"/>  yaAn· ku sәbava saṁ Udubasu pun· kenana tu Aḳ baṁka pu
+<lb n="2r4"/> n· jarot· mo ma dititaḥ ku saṁ prabu rama ṛsi pun· <g type="circle"/> <space type="binding-hole"/> , nu dipajaṙkәn· kabuyutan· batara guru ta ma pun·, Iya  
+
+
+<pb n="2v"/>
+<lb n="2v1"/> kajayaAn· saṁ prabu rama ṛsi mvaṁ saṁ pandita, <g type="circle"/>, nu diṅaran· saṁ <space type="binding-hole"/> hyaṁ kәn·tri maniḳ ta ma pun· guru kaki maja pun· nu dipajaṙkәn· saṁ hyaṁ 
+<lb n="2v2"/> rat· kamadalu ta ma pun·, saṁ guru di catiḥ pun·, nu dipajaṙkә <space type="binding-hole"/> n· saṁ hyaṁ bolen·naṁ cenaṁ ta ma pun·, saṁ hyaṁ pasagi pun·, nu dipa
+<lb n="2v3"/> jaṙkәn· lavaḳ si salaka desa ta ma pun· saṁ prabu pun·, <g type="circle"/>,  saṁ pa <space type="binding-hole"/> dita ma suka saṁ ṛsi, saṁ ṛsi ma suka saṁ prabu pun·, saṁ tarahan· ma suka 
+<lb n="2v4"/> saṁ rama, saṁ rama suka saṁ prabu pun·, saṁ Iyamadipati ma suka A <space type="binding-hole"/> naḳ baṁka, Anaḳ baṁka,  ma suka saṁ In· paḷdra ṛdra ma suka saṁ        
+
+
+<pb n="3r"/>
+<lb n="3r1"/> _ _ su saṁ prabu ma suka batara guru pun·, <g type="circle"/>, batara guru ma suka saṁ <space type="binding-hole"/> prabu pun· Iya mana dipajaṙkәn· maniḳ sakuruṁṅan· dipajaṙ teja 
+<lb n="3r2"/> paṁpumi pun· <g type="circle"/> tiṁkaḥ ta saṁ baṁka varaḥ ka haṛpәn· saṁ nugraha <space type="binding-hole"/>, supaya ta Anaḳ baṁka varaḥ pun·, saṁ nugraha kumaha kami ṅala
+<lb n="3r3"/> can· savәṛgan· saṁ Udubasu pun·, ja kami hegan· sora <space type="binding-hole"/> ṅan·, <g type="circle"/>, kaṛṅәkә Ucapan· saṁ baṁka varaḥ, ku saṁ nugraha, 
+<lb n="3r4"/> Aḥ hәqә, tәtәI sabaraha taṁṅana, ja soraṅan· laca <space type="binding-hole"/>  nәnana ta reA, saratus· /li\ma puluḥ tujuḥ, savәrәgan· saṁ ratu            
+
+<pb n="3v"/>
+<lb n="3v1"/> Udubasu pun·, kaliṅanya pu savateḳ sala di bumi pun· Iya <space type="binding-hole"/> ta lacanәn· saṁ ratu baṁka varaḥ pun·, <g type="circle"/>, sumahuṙ ta saṁ nugraha, A 
+<lb n="3v2"/> naku saṁ baṁkavaraḥ, maṁke ka AIṁ mere syi padәṅәnәn·, ma <space type="binding-hole"/> riṁ AIṁ, Agәs· matiṁtim· dәṁ bumi, sumahuṙ ta saṁ nugraha, pu
+<lb n="3v3"/> n· satul saṁ ṛsi guru batara devata, batara sәnu deva, <space type="binding-hole"/> batara In·dra, <g type="circle"/>, saṁ kusika, saṁ gaṙga, saṁ mistri, saṁ purusa, saṁ 
+<lb n="3v4"/> patajala, saṁ deva sunya, pun· kumaha pibava rasaqәn· U <space type="binding-hole"/> raṁ pun·, uraṁ tu pun· dipetaAn· pidәṅәnәn·, ku saṁ baṁka va     
+
+<pb n="4r"/>
+<lb n="4r1"/> varaḥ pun· pakәn· ṅalacan· saṁ Udubasu pun·, sumahur ta pan·ca <space type="binding-hole"/> devata kabeḥ, pun· saṁ nugraha, muku Eleḥ savәṛgan· saṁ Udu
+<lb n="4r2"/> basu, māmaku vatәḳ paṅavaḳ bumi pun·, kana na tu pun·, <space type="binding-hole"/>  savәṛgan· saṁ Udubasu, ṅahanan· di bumi pun, <g type="circle"/>, Anaku pañca de  
+<lb n="4r3"/> vata, kunaha raḥmana na Eleḥ saṁ vәṛgan· saṁ Udubasu, suma <space type="binding-hole"/>  huṙ ta pañcadevata pun· saṁ nugraha, laUn· deḳ Iya Eleḥ 
+<lb n="4r4"/> bijilkәn· kasedaAn· saṁ nugraha, pidәṅәnәn; saṁ baṁka <space type="binding-hole"/>  varaḥ, anaḳ, pabvā devata, na naha raḥ nu dipajaṙkәn· ka    
+
+<pb n="4v"/>
+<lb n="4v1"/> seda Abaṁ ta ma, <g type="circle"/>, sumahuṙ ta pañca devata pun·, saṁ nugraha <space type="binding-hole"/> ,  nu dipajarkәn· kasedaAn· saṁ nugraha, ta pun· prativi, Apaḥ
+<lb n="4v2"/> teja, bayu, Akasa, sunya, saṁ maha buta, macan·, buhaya, <space type="binding-hole"/> Ula, saṁ durugi, sәsәṛdan· saṁ mahasunya pun· sakitu kaja Ana
+<lb n="4v3"/> _, kasaḳtyan·, kasәbavaAn· saṁ nugraha, pidәṅәnәn· saṁ baṁka <space type="binding-hole"/> varaḥ,  pakәn· ṅeleḥkәn· kajayaAn· saṁ Udubasu, <g type="circle"/>, suma
+<lb n="4v4"/> huṙ ta saṁ nugraha, Anaku pañca devata, kumaha mana na saṁ Uduba <space type="binding-hole"/> su, kalihasan· ku kasedaAn· AIṁ sumahuṙ ta pañca deva 
+
+<pb n="5r"/>
+<lb n="5r1"/> ta, pun· saṁ nugraha, maka byaḳta ma jal·ma, pun· pakәn· <space type="binding-hole"/> saṁ Udubasu kalihasan·, pun· byaḳta sote ma jan·ma, la 
+<lb n="5r2"/> Un· hamo pagәḥ ṅәyәkan· talataḥ, saṁ nugraha, hamo <space type="binding-hole"/> pun· dikatakutan· ku saṁ Udubasu pun· laUn· pagәḥ ma sabaṁ va
+<lb n="5r3"/>  raḥ ṅәyәkan· talataḥ saṁ nugraha, takut· saṁ Udubasu, pun· <space type="binding-hole"/> , <g type="circle"/>, mijil ta kasedaAn· saṁ nugraha, s/da\ṁ muvaḥ ma pidәṅәnәn·
+<lb n="5r4"/> saṁ baṁkavaraḥ, ṅeleḥkәn· saṁ Udubasu, saṁ mariva, <g type="circle"/>, s/da\ṁ muvaḥ <space type="binding-hole"/> kasedaAn· saṁ nugraha, maṁjan·ma, ri maṙdyapada, dititaḥ ṅeleḥ
+
+<pb n="5v"/>
+<lb n="5v1"/> kәn· vvaṁ jurujana, di na bvana, <g type="circle"/>, sira qәmpu disi haṁsara javahana, pasa <space type="binding-hole"/> buṁ saṁ ṛsiguru, kabuyutan· sya pun· ta kali mahā sabda, sajata sya ca
+<lb n="5v2"/> kra si jalakuna, Adәlan sya saṁ hyaṁ bayu besavaṙna devakaṙna, huri <space type="binding-hole"/> p· sya di saṁ hyaṁ Akasa, namanya Udisәkaṙra, <g type="circle"/>, saṁ rama di lavu kubuṁ, saṁ ṛ
+<lb n="5v3"/> si di hujuṁ kәbaṁ, saṁ prabu di panum·pal·, bava sya kәbaṁ jabu suda rasa, pu <space type="binding-hole"/> cuḳniṁ halalaṁ A drigayu, Ajinya pun, <g type="circle"/>, sira mpu si havahana, pa
+<lb n="5v4"/> ñabuṁ batara guru,  Adәlan· sya saṁ hyaṁ bayu byana, kasatya sya cakra sa <space type="binding-hole"/> birana, sajata sya saṁ hyaṁ gada lohika vani, deva tri § muru ti huri        
+
+<pb n="6r"/>
+<lb n="6r1"/> p· sya di saṁ hyaṁ bayu, namanya padava, <g type="circle"/>, saṁ rama di lahaṁ, saṁ ṛsi di ci <space type="binding-hole"/> tәbaṁ, sa prabu di mәkәr· niUp· saṁka, I dragayusa, Ajinya puna, <g type="circle"/> 
+<lb n="6r2"/> sira qәmpu teja vahana, pasabuṁ saṁ hyaṁ Idra, Adәlan· sya saṁ hyaṁ <space type="binding-hole"/>  bayu samana, sajata sya saṁ hyaṁ ravayaṁ Agadeva punavalu, kasaḳ
+<lb n="6r3"/> tyan· saṁ hyaṁ cakra ta raṁgabahu, hurip· sya di batara cadadita <space type="binding-hole"/> , namanya saṁ rajuna, <g type="circle"/>, saṁ rama di roban·, saṁ ṛsi di valayut·, sa prabu
+<lb n="6r4"/> di tirisa, mava beA sәba vaṙna, U drigayu Ajinya puna, <g type="circle"/>, si <space type="binding-hole"/> ra qәmpu dugalaṅit· mena vahana, pasabuṁ batara sәnu deva, Adә
+
+<pb n="6v"/>
+<lb n="6v1"/> lan· sya saṁ hyaṁ bayu Apana, saja/ta\ sya Abәt· lavan· dadap· ka <space type="binding-hole"/> saḳtyan· sya saṁ hyaṁ cakra jala paḳṣa, hurip· sya di saṁ hyaṁ tәlәṁ, saṁ hyaṁ
+<lb n="6v2"/> mahā didi, namanya sakula, <g type="circle"/>, sira madisya moya, saṁ ṛsi di <space type="binding-hole"/> suji luhuṙ, saṁ prabu di kalaṁṅan· mava saṁ hyaṁ rahup· ṛ dragayu Ajinya pu 
+<lb n="6v3"/> n·, <g type="circle"/>, sira qәpu vahana, pasabuṁ batara devata, Adәlan· sya saṁ <space type="binding-hole"/> hyaṁ batu pramana, sajata sya saṁ hyaṁ krәtala, kasaḳtyan· sya saṁ hyaṁ cakra
+<lb n="6v4"/> si tarupaḥ namanya sadeva,hurip· sya saṁ hyaṁ saṁgap· dipa <g type="circle"/> saṁ <space type="binding-hole"/>  rama di liṅa ḷmaḥ saṁ ṛsi di Etānan·, saṁ prabu di padadan·, naṁgәy· 
+
+<pb n="7r"/>
+<lb n="7r1"/>  _ ros/ma\. ḷ dragayu Ajinya pun·, <g type="circle"/>, sira qәmpu mastadeva si <space type="binding-hole"/> havana, pasabuṁ saṁ pandita, Adәlan· sya saṁ hyaṁ bayu pramana visesa, 
+<lb n="7r2"/>  tan· paAji tan· pamatra pat·niṁ bujaga, hurip· sya saṁ hyaṁ <space type="binding-hole"/> nis· ñana, mava saṁ hyaṁ pudaḳ namanya saṁ mas·ta deva, vәkas·nya
+<lb n="7r3"/>  saṁ hya kapujaAn· bojāṁ kareñceṁ, pun, <g type="circle"/>, sira qәmpu <space type="binding-hole"/> Adәkavan·, pasabuṁ sa kusika, Adәlan· sya saṁ hyaṁ bayu sakri ta 
+<lb n="7r4"/>  sajata sya dәntā miAdәlan· saṁ kusika, <g type="circle"/>, namanya saṁ hyaṁ <space type="binding-hole"/> kapujaAn· pagәṙ vәsi, mava kәbaṁ jabu suda rasana, pucakniṁ halalaṁ, E      
+
+<pb n="7v"/>
+<lb n="7v1"/> dragayu Ajinya pun· qәmpu movahana,  Adәlan· sya saṁ hyaṁ <space type="binding-hole"/> bayu viviṙ, sajata sya Akus·, Adәlan sya saṁ gaṙga, namanya saṁ hyaṁ 
+<lb n="7v2"/> kapujaAn· tabәlaṁ, niUp· saṁka, Oṁ dragayu Ajinya pun·, <space type="binding-hole"/>  , <g type="circle"/>, sira mpu saṁ buḥhaya vahana Adәlan· sya saṁ hyaṁ bayu laṁgәṁ, saja
+<lb n="7v3"/> ta sya gubaḳ, Adәlan·§ sya saṁ mistri, namanya saṁ hya kapujaAn· <space type="binding-hole"/>  ḷbu huyu naṁgәy· bye sәba vaṙna, A drikayu ajinya pu, <g type="circle"/>, sira pu
+<lb n="7v4"/> pamuda§na vahana, Adәlan saṁ hyaṁ bayu taṁgaṙ, sajata sya curi <space type="binding-hole"/> ga, Adәlan· sya saṁ hyaṁ purusan, namanya saṁ hyaṁ kapujaAn· balarada 
+
+<pb n="8r"/>
+<lb n="8r1"/> labuṙ gәnәp·, gәnәp· jajaṙ, cukaṁ gәnәp· pajaṁna gәnә <space type="binding-hole"/> p· gәnәp· dәpa ṛbina sabulәd· Avaḳna lunajuṙran· ja
+<lb n="8r2"/> lan· gәde gәnәp· ratus· laUḳna kәbo bini A <space type="binding-hole"/> ṛga gәnәp· rivu, vahye janma vahye dosa, diṁdana, Uṁ l/ka\ 
+<lb n="8r3"/> dva ratus· lima puluḥ, cukaṁ dva, labuṙ dva, taduṙranәnana, dva ratus· lima puluḥ laUḳna Iti gәnәp·, <g type="circle"/> hana ta Apu 
+<lb n="8r4"/> y· kapәdәm· Anaḳ ṣaṁ rajaE ditapa, hana ta maniḳ ka <space type="binding-hole"/> pәdәm· Anaḳ ṣaṁ viku dipikavula, hana ta pirakapu kasaqә
+
+<pb n="8v"/>
+<lb n="8v1"/> sada valuḥ ṅarana, hana ta vvaṁ bogoḥ ñimvat· ka dini <space type="binding-hole"/> ka deto majaṙ maneḥ di/ta\taḥ, mava careḳ Iya karaḥ ha
+<lb n="8v2"/> tә dititaḥ, sihuṁ saṁ hyaṁ kala ṅarana, katәka Anaḳ baṁ <space type="binding-hole"/> ka, dәdәdana satahil· sapaha, hana ta vvaṁ menaḳ majaṙ maneḥ
+<lb n="8v3"/> rama, rama majaṙ maneḥ menaḳ, Aku gajaḥ Aku siha ṅa <space type="binding-hole"/> rana, satahil· sapaha dәṁdana, <g type="circle"/>, Ini sasana Anaḳ baṁka di na
+<lb n="8v4"/> kaḷpa purana, hana ta vvaṁ jurujana, Utama dosa jan· <space type="binding-hole"/> ma, dәṁda/na\ suka Alas· suka desa, mukal· gәnәp· ratus· 
+
+<pb n="9r"/>
+<lb n="9r1"/> · ka saṁ prabu, hana ta gәsana jan·ma, ṅarana ṅavakan· <space type="binding-hole"/> saṁ hya daṙma ṛsi, di catiḥ, di daḳsina, di rava, di hujuṁ
+<lb n="9r2"/> kulan· di gunuṁ, di galuṁguṁ, di na vatәḳ kaḷpa puṙrana <space type="binding-hole"/> , mana na hamo di hәryinan· ku Anaḳ baṁka, hana ta vvaṁ diju
+<lb n="9r3"/> Al· ti suda ka Alas· pәtas· dataṁ dәI maka suda, <space type="binding-hole"/>  tuluy· ditapa ka daḳsina, hayva divikaraAn· kena
+<lb n="9r4"/> na neneḥ, ditapa saṁ prabu, hana ta vvaṁ dijuAl· ka pәta <space type="binding-hole"/>  s· balas· na jurujana, dataṁ dәI ka suda mәdiṁ jurujana, dipupu 
+
+<pb n="9v"/>
+<lb n="9v1"/> ran· Anaḳ saṁ ṛsi dipikavula, hana ta sumuṙ kadәdәtan· <space type="binding-hole"/> Anaḳ saṁ rama dipikavula, hana ta Omas· bәṛm· katanәma
+<lb n="9v2"/> · Anaḳ saṁ teja dipikavula, hana ta gaḷḥ kapәdәm· A <space type="binding-hole"/> naḳ saṁ disi dipikavula, hana ta talaga kahudanan· Anaḳ saṁ 
+<lb n="9v3"/> tarahan· dipikavula, katәka ku Anaḳ baṁka, § dipu <space type="binding-hole"/> pu ku Anaḳ baṁka, dibuAt·kәn· ka saṁ prabu, hana ta A
+<lb n="9v4"/> naḳ gurya ditapa baraṁ gәsana, sira ra Umarab·Arab <space type="binding-hole"/> · ṅarana, katәka ta ku Anaḳ baṁka, dipupu dibvat·kәna
+
+<pb n="10r"/>
+<lb n="10r1"/> _ _ day· ditajuḳ ṣisir·, ṅarana durugi nabay bisaca, hana <space type="binding-hole"/> ta na vvaṁ ḷpaṁ poEḳ poEḳ hantә kudaṁ damaṙ, ñalimuṙ
+<lb n="10r2"/> bisaca ṅarana, katәka ku Anaḳ baṁka diAla, ku saṁ bisaca <space type="binding-hole"/> satahil· sapaha didәṁda mana na diḷbaṙkәn· dәI, hana ta na
+<lb n="10r3"/> gurya hegan· lumәpaṁ lәpaṁ hatә puguḥ batuṙ palay·, U <space type="binding-hole"/> taṁ humalita ṅarana, katәka ku Anaḳ baṁka, diAla pidәṁ
+<lb n="10r4"/> ṅәnәnana, hana ta na gurya ditapa hatә paṁguruAnana, ham <space type="binding-hole"/> ā bisa maca Apus· kumәdәṁ ṅarana, tutuc· sapudahut· payuṁ 
+
+<pb n="10v"/>
+<lb n="10v1"/> hәdәp /ji\vuluṁ ṅarana, hana ta na gurya ṅadaEkәn· bo <space type="binding-hole"/> caḥ pәpәcәtan· bitan· di nagara, sunya piṁgal· garana, 
+<lb n="10v2"/> hana ta na gurya bogoḥ ñum·pit· sunya vәnaṁ ṅara <space type="binding-hole"/> na, hana ta na gurya bogoḥ tatabәhan· maṁmaṁ mimaṁ ṅara
+<lb n="10v3"/> na, hana ta na vvaṁ mava kayu dәṁ Akaṙna dәṁ dahana, dipacәga <space type="binding-hole"/> n· ku kujaṁ, ku patiḳ, na bay· bisaca ṅarana, hana ta na vvaṁ 
+<lb n="10v4"/> ṅisikan· ka caI ditupaṁ lavu, ṅarana hurip katu <space type="binding-hole"/> pakan· bisaca, hana ta na vvaṁ dataṁ ti caI diAṅiṙ ṅaru 
+
+<pb n="11r"/>
+<lb n="11r1"/> _ leṙ tahan· bәnaṁ ṅagalagaran·, kidaṁ mәtas· ṅarana, hana ta na <space type="binding-hole"/>  guryaṁ pahәm·pas· kaviḥ dәṁ tiAgi, ḷbu Agados· ṅaranama, 
+<lb n="11r2"/> hana ta na guryaṁ ṅa ṅadәkәt·kәn· tiAgi, taviṁvidig· ṅarana <space type="binding-hole"/> hana ta na guryaṁ ṅagamaḥ tyagi, jajamahan· ṅarana, hana ta na gu
+<lb n="11r3"/> ryaṁ ditotopoṁ Agis· dirukukәn· dәI ka luhuṙ Agә <space type="binding-hole"/> s· ditipuluṁ ṅarana gogodoṁṅan· ṅarana, hana ta na gurya
+<lb n="11r4"/> _ _ tu make busana, dataṁ ma ka batuṙna, dipicin· busana <space type="binding-hole"/> bre sacavәt· halaṁ niṁ bapaṁ ṅarana, hana ta na guryaṁ make dastaṙ 
+
+
+<pb n="11v"/>
+<lb n="11v1"/>  man· gagaḳ, hana ta na guurya dibvatan· bpnaṁ maliṁ, kutu <space type="binding-hole"/> l· manaḳ gagaḳ, <g type="circle"/>, hana ta na gurya papahare ṅaridiṁ dәna ti
+<lb n="11v2"/> Agi, huvus madaṁdәṁ ṅarana, hana ta gurya bogoḥ ṅa <space type="binding-hole"/> roc· sunya vivaha ṅarana, hana ta na gurya bogoḥ ṅusәpa
+<lb n="11v3"/> · sunya ṅacin· ṅarana, hana ta na gurya bogoḥ ñatu la <space type="binding-hole"/> Uḳ ḷbu Aṁgasin· ṅarana, hana ta na gurya bogoḥ dirupu
+<lb n="11v4"/> s· celeṁ matunaḥ tunaḥ ṅarana, hana ta na gurya bogo <space type="binding-hole"/> ḥ di burat· magaru garu ṅarana, hana ta na gurya bogoḥ ṅa 
+
+<pb n="12r"/>
+<lb n="12r1"/>  y· Omas· sugan· vaya nu muriAn· Omas· dijiqәn· <space type="binding-hole"/> bubudәl· pacet ṣәbәḥ, galuṁ kbaṁ Os· Iya tu pun·, nu dipajaṙ
+<lb n="12r2"/> kәn· Akat· sabumi pun· sabvana, ṅarana pun· Agәs· <space type="binding-hole"/> Aḳ kagәlisan· na kaḷpa purana pun·, saṁ viku biḳsuḥ ṅukusa
+<lb n="12r3"/> n· madәpun·, saṁ ṛsi karana, puja kәbaṁ samadi pun·, saṁ viku <space type="binding-hole"/>  prativi piṁ ṅaliga mataḥ samadi pun·, saṁ viku teja ñaveṙ ku 
+<lb n="12r4"/> _ kus· siba vaṙna , samadi pun· saṁ viku bayu niUp· saṅa, siva <space type="binding-hole"/>   ku Apaḥ ñaIAn· na paku baAn· sad /mi\seda yuga, guruloka
+
+
+<pb n="12v"/>
+<lb n="12v1"/> mana saravunan· najәṙkәn· liga pinәḥ, saṁ ta/ra\han· ṅagatiA <space type="binding-hole"/> n· paku baAn· ñaIAn· taman· saṁ ṛsi ma ṅagәlisan· rumaḥ     
+<lb n="12v2"/> _ _ Imaḥ maḥ manәḥ, saṁ teja ma puraḥ ñәqәkәn· nu digu <space type="binding-hole"/> na, saṁ disi ma puraḥ magahan· piguna/saAtaṙ\qәnana, saṁ Udaḥ Agi ṅaga  
+<lb n="12v3"/> _ _ cataṁ pәgas· labuṙ rutuḥ saṁ paday· gla sugan· vaya nu mu <space type="binding-hole"/> riA na seEṁ, diturukәn· dijiqәn· sugonā, dijiqәn·        
+<lb n="12v4"/> _ kәbaṁ, saṁ paday· bәsi, sugan· vaya, nu muriAn· sajata <space type="binding-hole"/> kararas· dijiqәn· pakaraṁ di man·dala dәṁ kәbaṁ bәsi, saṁ pada
+
+<pb n="13r"/>
+<lb n="13r1"/>  pata, tu kita pun· saṁ prabu rama ṛsi, mana na dipeta <space type="binding-hole"/> kenana Aya gunana pun·, Anaku Anaḳ baṁka, pihaqәn·
+<lb n="13r2"/>  _ kagunana dipeta ku kita, pun· ketana Aya pigu <space type="binding-hole"/> naqәnana pun· Anaku Anaḳ baṁka, na naha raḥ pigunaqәn·nana,
+<lb n="13r3"/>  _ · manana dә baAn· na U Uraṁ sabvana pun· kena ta pun· na gә <space type="binding-hole"/> lisanәn· kajayaAn· saṁ prabu rama ṛsi, taṁkal· saṁ hyaṁ A
+<lb n="13r4"/>  _ ma pun· <g type="circle"/> saṁ viku ma ṅagәlisan· paṅukusan· saṁ rama ma <space type="binding-hole"/> ṅagәlisan· balay· Urug· ñaAṁṅan· tajuṙ rum·put· saṁ hyaṁ 
+
+<pb n="13v"/>
+<lb n="13v1"/> rama ṛsi mvaṁ saṁ pandita, daEḳ AIṁ ṅagilis· na bvana, <space type="binding-hole"/> laUn· bikәn· peta AIṁ pun· Anaku Anaḳ baṁka na 
+<lb n="13v2"/> _ ha peta sya, pun· peta kami di sa/piṁ\rira, paday· glaṁ <space type="binding-hole"/> paday· bisi, paday· Omas· paṅudahagiAn· ti saṁ vi
+<lb n="13v3"/> ku ti saṁ ṛsi, ti saṁ rama, ti saṁ tarahan· , ti na para me <space type="binding-hole"/> naḳ kaliḥ laUn· Eta dibikәn· ma pun· ku saṁ prabu, ta ka 
+<lb n="13v4"/> mi ḷpaṁ pun· laUn· hamp dibikәn· kami hamo ḷ <space type="binding-hole"/> paṁ pun· Anaku Anaḳ baṁka, pihaqәn· Eta gunana manana di e-
+
+<pb n="14r"/>
+<lb n="14r1"/> sumahuṙ saṁ prabu rama ṛsi, Anaḳku Anaḳ baṁka, <g type="circle"/> paṁ <space type="binding-hole"/> kita saraAna bvana Apan· kita katuduḥ dipikalaṁkaṁ ku
+<lb n="14r2"/> AIṁ, dipilajiṙ dipipujiṙ, dipigatuṁṅaniṁ Akasa, /dipa\disaṙ <space type="binding-hole"/> niṁ prativi, dipipanoniṁ bvana, dipiḷkәṙ lacaṁ niṁ bvana, dipi
+<lb n="14r3"/> buyut· dipimaUṁ, dipidodo ḷbiḥ dipisaraṁ payuṁ, <space type="binding-hole"/> sya ṅaloṙ sya ṅidul· sya ṅulon· sya ṅetan·, sya ṅәsyin
+<lb n="14r4"/> · varga sakakala, ṅavakan· saṁ hyaṁ bayu sabda hidәp·, dipi <space type="binding-hole"/> tәras· saṁ hyaṁ Agama, <g type="circle"/>, sumahuṙ ta Anaḳ baṁka, pun· saṁ prabu 
+
+<pb n="14v"/>
+<lb n="14v1"/> ku Anaḳ baṁka, ka pasukan· bisaca ṅarana, hana ta vvaṁ di <space type="binding-hole"/> juAl· ka pәtas· hatә dosana dataṁ dәI ka suda, ṅahusiṙ
+<lb n="14v2"/> nu kolot· hayva divikara, ṅarana budaḳ ṅahusiṙ A <space type="binding-hole"/> yunan·nana, laUna baraṁ gәs·sana maṁkuḳ ma, Apuṁ kasaṁsaṁ ṅa 
+<lb n="14v3"/> rana, katәka ku Anaḳ baṁka, diAla dibvat·kәn· ka <space type="binding-hole"/> saṁ prabu, <g type="circle"/>, Anaḳ ṣaṁ raja puE ñәqәn· catiḥ pasagi, kasi 
+<lb n="14v4"/> raja, kasi haji ku bati gajajaṙ ṅarana, dicaram· ku A <space type="binding-hole"/> naḳ baṁka, laU kәdә dipәpәs·kәn· ku Anaḳ baṁka, <g type="circle"/>  
+
+<pb n="15r"/>
+<lb n="15r1"/> siA ṛsi vatәḳ nu dipikahanan· ku devata, batara ja <space type="binding-hole"/> gat· pramana, rahyaṁta ri mәdaṁ rahyaṁta li /mә\niṙ, bәṙ ta rahyaṁ kaki
+<lb n="15r2"/>, salumahiṁ jabri, sira pu garudug·, sira pu garisiṁ sira pu <space type="binding-hole"/> braḥ gidig·, sira pu baṁṅәt·, sira pu kilat·, sira pu cadana, si
+<lb n="15r3"/> ra pu kәdap·, <g type="circle"/>, hana gurya bogoḥ balayaṙ, kutul· su <space type="binding-hole"/> miḷm· riṁ tasiḳ, hana gurya disәvә daṙma qәvaḥ qәvaḥ capәdi
+<lb n="15r4"/> baruḳ ṣaṛṅi,  ṅaliAṙkәn· paḳṣa kana qәvaḥ qәvaḥ, hana <space type="binding-hole"/> gurya ditipuluṁ ti paca ti bumi hantә, ṅarana kutul· ñiḷṁḷ 
+
+<pb n="15v"/>
+<lb n="15v1"/> , Adi maneḥ, kena sira qәpu baṁka, miAvaḳsaṁ prabu ra <space type="binding-hole"/> ma ṛsi, nu ṅavakan· sap·ta vara kabeḥ, nu madәmakan· 
+<lb n="15v2"/> masaḳ mataḥ, Anaku Iya nu disamayakәn· ku ṅaiṁ ya <space type="binding-hole"/> vaya, <g type="circle"/>, pinaka vatәḳ ṣaca devata kabeḥ laUn· Aya 
+<lb n="15v3"/> nu ṅahatә hatә Iya, Iya hatә, Iha nu ṅavayakәn· Iya <space type="binding-hole"/> vaya, ◆ Anaku prasaḳṣi AIṁ ma prativi, Apaḥ teja, bayu
+<lb n="15v4"/> Akasa, sunya braḥma, mahabuta, nis·kala, sakitu nu <space type="binding-hole"/> hamo kajәqәṁ di nu hamo karasa, dәṁ nu karasa, ◆, Ini prasaḳ                                                      
+                                
+<pb n="16r"/>
+<lb n="16r1"/> mava jata tәka riṁ anaḳ baṁka, milu heEs· dәṁ anaḳ baṁ <space type="binding-hole"/> ka, diAla ku Anaḳ baṁka, maṁka vaṙraḥ ṅarana pun·, hana vvaṁ
+<lb n="16r2"/> noṁtoḳ di pan·to ṅaruday· bvat· kala mari ṅadәlә <space type="binding-hole"/> ta Anaḳ baṁka, qәsi suduy· tavuṙ ṅarana, diAla ku Anaḳ
+<lb n="16r3"/> baṁka pun·, ◆ Inin prasaḳṣi, saṁ hyaṁ jagat· pramana pun·, ma <space type="binding-hole"/> sa batara guru mere dәbya pisanakan·, ka saṁ salaḥ rupa, I
+<lb n="16r4"/> _ _ midәmakan· masaḳ mataḥ, Anaku prabu rama ṛsi, mu <space type="binding-hole"/> ṛṅәkәn· saṁ hyaṁ tri samaya, mulaḥ mo pahi ṅavakan·       
+
+<pb n="16v"/>
+<lb n="16v1"/> bemas· dәṁdana pun· koyo ma didәṁda bvaAt·kәn· ku <space type="binding-hole"/> saṁ disi ka saṁ prabu sakagәI saṁ prabu pun· kalatiṁ Apuy· ṅara
+<lb n="16v2"/> na pun· hana ta karya hayu katәka ku Anaḳ baṁka diAla ku <space type="binding-hole"/> saṁ disi ditәbus· ku kebo sahas·ta pajaṁ paṁgaleḳna, cana
+<lb n="16v3"/> va dibikәn· ka pasu bisaca ṅarana pun·, hana vvaṁ nәnun· ta <space type="binding-hole"/> boleṙ, ṅaruday· tәka ta Anaḳ baka, dipiraṁkәpan· la 
+<lb n="16v4"/> mun· vaya nasali maha ditahap· sakatinәṁna pun· vәlaṁ kalaṁ <space type="binding-hole"/>  saṁka nijaṁ limaṙpas· Anaḳ baṁka ṅarana pun·, hana ta guru § 
+
+<pb n="17r"/>
+<lb n="17r1"/> ṅarana pun· karosa paha dәṁ dana koyo ma pәgat· di <space type="binding-hole"/>  bvat·kәn· ka saṁ prabu saka hidәp· saṁ prabu pun·, hana Anaḳṣaṁ
+<lb n="17r2"/> viku lumaku guna, kalapetoṁ ṅarana, didәṁda ku saṁ di <space type="binding-hole"/> si ka2sapaha, hana gurya mava jata, haṅәṙ deḳ masaḥkәn· maneḥ ti 
+<lb n="17r3"/> na paṁguruAn· hatә Acan· Agәs· saṁ hya daṙma, diAla ku <space type="binding-hole"/>  saṁ disi, pidәṅәnqәnana, saṁ salaḥ ṅarana pun·, Anaḳ saṁ rama lumaku bo
+<lb n="17r4"/> toḥ didәṁda ku saṁ disi ka2 sapaha, kapilacәḳ kapidahva <space type="binding-hole"/> n· kapimitoha maṁṅadi U/ru\t· guru doha ṅarana pun·, kapat· 
+
+<pb n="17v"/>
+<lb n="17v1"/> si pun· dahut· payu sada valuḥ ku sasalaḥ ṅarana pun· Apa <space type="binding-hole"/> n· kami Avaḳ saṁ salaḥ pun·, naha bagәda kabeḥ hamo Iṅәt· 
+<lb n="17v2"/> diguna di maneḥ, kalapetoṁ ṅarana pun· dәṁdana ka2 sapa <space type="binding-hole"/> ha, hana vvaṁ ti nagara, gәṛkan saṁ prabu rama ṛsi, ñusup· riṁ banana
+<lb n="17v3"/> · tara, pagәḥ ṅәyәkan· saṁ hyaṁ Añana, hayva di naga sesa, ṅa <space type="binding-hole"/> rana hava vahavan· gunuṁ, civara tuṁgal· ṅarana pun·, laUn· A 
+<lb n="17v4"/> ya nu ṅagәdagәdag· Iya didәṁ/da\ ku saṁ disi, duA rivu, kala <space type="binding-hole"/> petoṁ ṅarana pun·  <g type="circle"/> miEve dәṁṅәn· samitra, mitra doha 
+
+<pb n="18r"/>
+<lb n="18r1"/> dilupi, rabut· tumapaṁ kapaṁ, pajaṁ buUḳ han·tә paṁgu A <space type="binding-hole"/> nana, sihal· sinigi daluAṁ, na gurya ditipuluṁ lolopaṁ bitana
+<lb n="18r2"/> · baluḳ sajata kararas· na gurya ñoren· kәris· diga <space type="binding-hole"/> jaṙ, tugul· masahut· na gurya disabuḳ tiṁkaḥ java, dalu ruma 
+<lb n="18r3"/> bat· dinataṙ, gurya bobotoḥ, vәraḥ kasavuṙ, na gurya ma <space type="binding-hole"/> Uṙ maneḥ dәṁ valaka, vakәy· kaIbunan·, na gurya baraṁ gәsana he
+<lb n="18r4"/> Es· ṅarana hәlaṙran· hi§ diguna dimaneḥ, kәna graha ku saṁ di <space type="binding-hole"/> si, hi2n·roniṁ puti, paUmo paUm· sya tu guru kami menaḳ di 
+
+
+<pb n="18v"/>
+<lb n="18v1"/> van·da kara Apan· ṅaran· sya saṁ palivara desa, kena <space type="binding-hole"/> sya malivarakәn· hidәp· saṁ prabu rama ṛsi, mana saṁ nanda kara 
+<lb n="18v2"/> dibere dәbya pisanakan· ku saṁ prabu sama ṛsi, pala sya ṅa <space type="binding-hole"/> giliṙ ṅaraḳṣa na bvana, Iya ka nu midәmakan· masaḳ mataḥ <g type="circle"/> Ini 
+<lb n="18v3"/> Upakara saṁ disi di na kaḷpa purana, hidu baṁ, guryaṅa gabiṙ du <space type="binding-hole"/> huṁ, guryaṁ di davuṁ, sugu tahis·, gurya di tajuḳṣisiṙ, suka paṁgi
+<lb n="18v4"/> l·, gurya di cucuduḳ, adaluAṁkup·Akup·, gurya <space type="binding-hole"/> tatahәnan· , gudala nitisa kidaṁ, gurya make gavitra caliḳ   
+
+<pb n="19r"/>
+<lb n="19r1"/> _ ja tasiḳ ṅogan· devata valaUt· devata na dәbyә, saṁ <space type="binding-hole"/> prabu ma lagәṁniṁ tutuṙ kenana hurip· na vvaṁ, <g type="circle"/>, tәka ta saṁ baṁka varaḥ na 
+<lb n="19r2"/> _ tara guru, Anaku baṁka varaḥ kita Agәs· hәtiqәn· dәbyi pisa <space type="binding-hole"/> nakan· sumahuṙ ta saṁ salaḥ punana haraḥ piduUm·Anәna bu pun· Anaku
+<lb n="19r3"/> _ ka vaṙraḥ kumaha ja kita Agәs· hәtiqәn·, nis·kala ka saṁ pa <space type="binding-hole"/> n·dita, huripniṁ Akasa ka saṁ ṛsi, huripniṁ prativi ka saṁ rama 
+<lb n="19r4"/> _ vaḳ saṁ nan·dakara, saṁ palivara desa palipuṙna, satәpi <space type="binding-hole"/> kili, saṁ mala jatniḥ saṁ sopakarana, saṁ sagap· dipa, saṁ kataṁgiṁ ṅana    
+
+<pb n="19v"/>
+<lb n="19v1"/> vasalaḥ rupa, Anaku nan·dakara sakitu namanira vane, _ A <space type="binding-hole"/>   naku nan·dakara sira manuḥ raja, kәmitan· saṁ prabu rama ṛsi mvaṁ saṁ 
+<lb n="19v2"/> pan·dita, anaku nan·dakara, Apan· sya katuduḥ dipikalaṁ <space type="binding-hole"/> kaṁ ku saṁ prabu rama ṛsi, pidaḥ ka cakra si sabirana, laṙ jә pujiṙ, sahya
+<lb n="19v3"/> (vi)sesa ḷkәṙ lacaṁ saṁ hyam bvana, gatuṁṅaniṁ Akasa,  kadayan· <space type="binding-hole"/> sabvana sya ṅәsiAn· na loṙ kidul· kulon· vetan· maṁṅuni 
+<lb n="19v4"/> puṙbadaḳsina, Anaku 
+
+<pb n="20r"/>
+<lb n="20r1"/> daṅe batara guru, qәkәṙ ṅaduUm· na dәbya pisanakan· sa <space type="binding-hole"/> kavatәḳpacadevata kabeḥ pun·, diman saṛsiṛsisasana, du 
+<lb n="20r2"/> san· sara, madaṙmasasana, duman· saṁ prabu rajasasana, du <space type="binding-hole"/> man· saṁ tarahan· daṙma kamucaya, duman saṁ viku devasasa
+<lb n="20r3"/> na, lagәṁna lis· raya, ṅukus· tan· paluman· saṁ ṛsi ma <space type="binding-hole"/> hayu kau batu caI puja kab/e\ḥ, ṅukus· tan·  paluman·
+<lb n="20r4"/> _ tataṙ, saṁ rama mahayu caI ṅaḷmaḥ batu kayu sapa <space type="binding-hole"/>  tutuṙ ṅukus· tan· paluman· puja tibaṁ, saṁ tarahan· 
+
+<pb n="20v"/>
+<lb n="20v1"/> _ , gәṁnya nu masuka baga batari jadi devata tiga prabu <space type="binding-hole"/> rama ṛsi, Iya nu diduman· diman· saṁ ṛsi ṛsi sasana, duman· saṁ   
+<lb n="20v2"/> _ madaṙmasasana, duman· sa prabu rajasasana, dodo <space type="binding-hole"/> t· rajamulya, Iya dimun· saṁ prabu <g type="circle"/> salaḥ visaya batara ti 
+<lb n="20v3"/> _ ka prativi saṁ kaba ḷy·gәṁnya tәka ka saṁ pan·dita, <space type="binding-hole"/>  diṅaan· saṁ katagiṅan· saṁ sagap· dipa, saṁ svapakarana, saṁ tә
+<lb n="20v4"/> _ kili, saṁ mala jadi, bijil· ti da bum·miṁ sapatala di <space type="binding-hole"/> ṅaran· saṁ ratu baṁka varaḥ, lupat· kana gunuṁ kahyaṁṅan· ṅa 
+
+<pb n="21r"/>
+<lb n="21r1"/> _ has·ta, hurip· sya di saṁ hyaṁ si lupa desa, kajayaAn· <space type="binding-hole"/>  Adәlan· hurip· saṁ hyaṁ prativi pun· caliḳṣya ti kidul· pun· 
+<lb n="21r2"/> _ , tikaḥ bujaṁga sogataḥ ṅavakan· saṁ hyaṁ Ajñana niṙmala <space type="binding-hole"/>  Ajñana, ñәbaḥ sya ka saṁ hyaṁ sivaḥ Ajñana, sajata sya ravayaṁ si pu 
+<lb n="21r3"/> _ tajamaniṁ taṁ hurip· sya di saṁ hyaṁ Idra, kajayaAn· A <space type="binding-hole"/> dәlan· saṁ hyaṁ cadadita, calikṣya ti barat· pun· ◆, tikaḥ 
+<lb n="21r4"/> _ gada ṅavakan· saṁ hyaṁ niṙmala visesa, sajata sya rava <space type="binding-hole"/> yaṁ Agadeva puṙravәlu, hurip· sya di saṁhyaṁ sri maṁgala, kaja 
+
+<pb n="21v"/>
+<lb n="21v1"/> _ An· Adәlan· saṁ hyaṁ bayu, caliḳṣyi ti Utara, <g type="circle"/>, <space type="binding-hole"/> tikaḥ bujaṁga berava ṅavakan· saṁ hyaṁ nis·rasa hosaya vi
+<lb n="21v2"/> sesa, ñәbaḥ sya ka saṁ hyaṁ tiga rahaseA, sa/ja\ta sya rava <space type="binding-hole"/> yaṁ si pacopacә, si cadara has·ta, hurip· syi di saṁ hyaṁ larap· ña
+<lb n="21v3"/> _va, kajayaAn· Adәlan· saṁ hyaṁ Apaḥ <g type="circle"/>, Iya mana diṅa <space type="binding-hole"/> ran· Akat· sabumi Akat· sabvana, <g type="circle"/>, Iya mana dipajaṙ saja 
+<lb n="21v4"/> _ka bvana pun·, kenana laUn· gunuṁ katәpuḥ gunuṁ rutuḥ, <space type="binding-hole"/> muṁkal· pәray· caI saAt· kayu rutuḥ sato pati jan· 
+
+<pb n="22r"/>
+<lb n="22r1"/> pat/ba\ṁṅan· mahulukәn· na paratuha, ñәbaḥ ka saṁ hya kaḷpa <space type="binding-hole"/>  purana, na parama saṁ pahi ṅahaṛp·kәn· saṁkvan· muṙbakәn· paṅa
+<lb n="22r2"/> _ niṁ bvana, guru kaki seda yuga pu dayәḥ pak/ba\ṅan·, syi ṅo <space type="binding-hole"/> gan· hurip·niṁ bvana pun· di saṁ hyaṁ kaḷpa purana pun·, pun· 
+<lb n="22r3"/> tiṁkaḥna para bujaṁga pun· sya ñamadikәn· hurip· saṁ hya prama <space type="binding-hole"/> na visesa pun· tikaḥ bujaṁga bikṣuḥ sya ṅavakan· saṁ hyaṁ niṙma
+<lb n="22r4"/> la jati, sajata sya ravayaṁ si sudaḥmala, ñәbaḥ sya ka saṁ hyaṁ <space type="binding-hole"/> maniḳṣudarma liṁlaṁ, hurip· sya di saṁ hyaṁ vidu pәpәt· sya Adә
+
+<pb n="22v"/>
+<lb n="22v1"/> lan· kajayaAn· hurip·niṁ bvana, pun· sya ñәkәn·tuḥ hu <space type="binding-hole"/> rip·niṁ devata kabeḥ Apa sya Adәlan· saṁ ṛsi, caliḳ sya ti 
+<lb n="22v2"/> timuṙ pun, <g type="circle"/>, tikaḥ bu/jaṁ\ga ṛsi karana, ṅavakan· saṁ hyaṁ ni <space type="binding-hole"/> s·kala jati, sajata sya, ravayaṁ si datarakada, ñәbaḥ sya ka saṁ
+<lb n="22v3"/> hyaṁ sasalu diraja, hurip· sya saṁ hya ja/ga\t· pramana, sya Adә <space type="binding-hole"/> lan· kajayaAn· hurip·niṁ Akasa pun· caliḳṣya ti timuṙ
+<lb n="22v4"/> pun·, <g type="circle"/>, siṁkaḥ bujaga seda ṅa/va\ka sya saṁ hyaṁ nis·kala vi <space type="binding-hole"/> sesa ñәbaḥ sya ka saṁ hyaṁ nata Ajanan· sajata sya ravayaṁ si ci 
+
+<pb n="23r"/>
+<lb n="23r1"/> mapati, Asa buṁbaṁ prativi totos, <g type="circle"/>, kaliṅanya  <space type="binding-hole"/> seda saṁ hya Agama, seda saṁ hya patiṁtiman· seda ta seda 
+<lb n="23r2"/> sa hyaṁ visesa, pun· kaliṅanya satinәṁ saṁ prabu rama ṛsi, la <space type="binding-hole"/> Un·na satinәṁ rama sam prabu rama ṛsi, tan· Alaḥ Anaḳ baṁka
+<lb n="23r3"/> ku na vvaṁ sabvana pun·, laUna hamo satinәṁ ma saṁ prabu rama ṛsi <space type="binding-hole"/> Ala Anaḳ baṁka, ku savәṛgan· saṁ ratu Udubasu pun· kena
+<lb n="23r4"/> Aya lalcan· Anaḳ baṁka, saṁ Udubasu manabuṙkәn· na bvana <space type="binding-hole"/> pun· Anaḳ baṁka ma ṅrәtakәn· na bvana pun·, <g type="circle"/>, sumahuṙ   
+
+<pb n="23v"/>
+<lb n="23v1"/> _ _ ḳ baṁka pun·, saṁ prabu rama ṛsi pun· maṁka ṅuni saṁ padita pu <space type="binding-hole"/> n· ,<g type="circle"/>, laUn· saṁ pan·dita deḳ tulus· maṅavakana devasa
+<lb n="23v2"/> _ na, saṁ ṛsi deḳ tulus· ṅavakan· saṁ hyaṁ ṛsi sasana, saṁ rama <space type="binding-hole"/> deḳ tulus· ma ṅavakan· saṁ hyaṁ daṙmasasana, saṁ prabu sya ṅa
+<lb n="23v3"/> _ ka kulus· ma ṅavakan saṁ hyaṁ rajasasana, pun· gunakәn· <space type="binding-hole"/>  Anaḳ baṁka pun·, maka ṅagәliṙ na bvana, maka ṅagәlisana ka
+<lb n="23v4"/> ḷpapurana pun· laUn· deḳ Iya krәta na bvana pun· laU <space type="binding-hole"/>  n· mumul Iya krәta na bvana, Ikәn· maka galaḳṣәbaḥ ha
+
+    </ab>
+            </div>
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+		        <p><!-- explain the process of your edition here --></p>
+		        <!-- provide a list of bibliographic references used in your digital editions -->
+		        <listBibl type="bibliography">
+		            <bibl/>
+		        </listBibl>
+		        <!-- the listBibl editions is used to create a list of abbreviated text used in notes and parallels, it is more or less the equivalent of a list of abbreviations, you would find a printed edition  -->
+		        <listBibl type="editions">
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
