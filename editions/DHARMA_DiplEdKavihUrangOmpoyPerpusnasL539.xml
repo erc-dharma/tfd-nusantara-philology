@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="kavihUrangOmpoy"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="editorial">Digital Diplomatic Edition of Kavih Uraṅ Ompoy</title>
+                <title type="alt">a version of Kavih Paṅəyəkan 'the Song of Weaving'</title>
+		    <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+		    <title type="original" xml:lang="osn-Latn"></title>
+                <!--<author></author>-->
+                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+                <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+                    <resp>author of digital edition</resp>
+                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                    <persName ref="part:ilnu"><!-- update the id -->
+                        <forename>Ilham</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Nurwansah</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace><!-- fill in here the place or places where the encoding has been done --></pubPlace>
+                <idno type="filename">DHARMA_DiplEdKavihUrangOmpoyPerpusnasL539.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2026" to="2026">2026-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="kavihOmpoy">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>National Library of Indonesia</institution>
+                                <repository>Lontar</repository>
+                                <idno>Peti 30 L 539</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <author></author>
+                                    <title></title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                                    <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 29 leaves in Javanese script with influence of Cirebon style.</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Javanese script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p></p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                <projectDesc>
+                    <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+                    <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl> 
+                <p></p>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+            <change who="part:ilnu" when="2026-05-11" status="draft">creating draft of the edition</change>
+
+            <!-- replace this by a line that has you as @who, that has the @date on which you finished the first basic encoding of the file, and that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for each significant change to the file. -->
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="osn-Latn"> <!-- update the language code -->
+            <ab>
+            <pb n="1r"/>
+            <lb n="1"/> ◉◉ sapinәḥ saL̥R̥ḥ nәt· hudaṁ  dipәrәm·kәn· han·tә bә 
+            <lb n="2"/> naṁ  ku Aqiṁ heṅana qim· <space type="binding-hole"/> pi  carek· di jәro qim·pi ya\ di pu 
+            <lb n="3"/> hu sada di hadap· di {va} han·dap·  sada di luhuṙ ṅaR̥ṁṅit· 
+
+            <pb n="1v"/>
+            <lb n="1"/> sada karidiṁ  sada valik· di na si naṁsi  sada pones· di ka
+            <lb n="2"/> ñere  sada caṁcoraṁ di raṁraṁ  <space type="binding-hole"/> sada cuhcuṙ midaṁ bulan · sa
+            <lb n="3"/> da manuk· papaṁ {ṅa} ṅaten·  patem·balan· paksi 
+
+            <pb n="2r"/>
+            <lb n="1"/> si gәn·diṁ  sada carәḥ ṅahaleraṁ  sada calintu di Ajuṁ  kum·pu 
+            <lb n="2"/> lan· Ajuṁ paraṁgan·  sada <space type="binding-hole"/> gom·beṁ ta di reṁkeṁ  dita 
+            <lb n="3"/> bәḥ ku qulun· bakal·  sada kacapi di bumi  ditabәḥ
+
+            <pb n="2v"/>
+            <lb n="1"/> ku kaasili  sada kurayoso di kom·boṁ  kurayos· ba  
+            <lb n="2"/> qi paṁṅanten·  gan· <space type="binding-hole"/> deṁ Aqiṁ ku nu cәrik·  sahuṙ ra 
+            <lb n="3"/> den· jayakәliṁ  qe{ḥ}ten· Adiqiṁ Aniṁ  dәvi ra   
+
+            <pb n="3r"/>
+            <lb n="1"/> sa tәqiṁ  sakeyan·n adi laraṁṅan·  ku na lunas· na naṁṅis·  mana moboṙ   
+            <lb n="2"/> na cipanon·  ṅadanuṙ ka na pa <space type="binding-hole"/> pasu  ṅaracak· kanna keṁkeraṁ  tu   
+            <lb n="3"/> luy niṁgaṁ ka lahunan  ñәR̥p· ka sәlaniṁ payuṁ  ka jәroniṁ jәm·ba
+
+            <pb n="3v"/>
+            <lb n="1"/> vasa  tuluy· ka dasaṙ prativi  ruvana tәhәṙ baR̥bә  bari ṅagәli   
+            <lb n="2"/> san· tinun·  tinunna vaduri <space type="binding-hole"/> sun·tәn·  dipakannan· ku hare 
+            <lb n="3"/> {ma} mas·  disәlaṁ lusiyan· bәsaṙ  ṅarana sutra han·tara  
+
+            <pb n="4r"/>
+            <lb n="1"/> daduna dadu maṁgala  maṁgala maṁge sutra  susulaman· ku ta  
+            <lb n="2"/> li lan·  parada dipanan· mi <space type="binding-hole"/> raḥ  bәnaṁ ṅusap· ku haremas·   
+            <lb n="3"/> ṅaranna taluki vayaṁ  disәlaṁ saṙva devata  di tәṅaḥ Asri   
+
+            <pb n="4v"/>
+            <lb n="1"/> buvana  mәrak· sim·piṙ tan· paduni  ṅarana sri mahamitan·  
+            <lb n="2"/> ṅaran· {mamaragacana}bobo <space type="binding-hole"/> qeḥhannana  ṅaranna maL̥ṁgi cina  
+            <lb n="3"/> sahuṙ raden· jayakәliṁ  qeten· Adiqiṁ Aniṁ  dәvi rasa 
+
+            <pb n="5r"/>
+            <lb n="1"/> tәqiṁ sakeyannadi laraṁṅan·  tinun dara diAgәs·kәn· 
+            <lb n="2"/> lamon· diturut· na la <space type="binding-hole"/> cәk·  Adiqiṁ sapoqe qini  
+            <lb n="3"/> kena reya na bañcana  ka dini Aqiṁ ṅalahun· cipano 
+
+            <pb n="5v"/>
+            <lb n="1"/> n· gәra susutan·  mulaḥ dimaṁka ṅadanuṙ  ram·but· pajaṁ ta
+            <lb n="2"/> gәluṁṅan·  mulaḥ dimaṁka <space type="binding-hole"/> ṅarubay·  pinaR̥p· gәra buniya
+            <lb n="3"/> n·  mulaḥ di maṁka cuguәnaṁ  tapiḥ becet· maṁka mebeṙ  
+
+            <pb n="6r"/>
+            <lb n="1"/> mulaḥ di maṁka lagədam· pipi koneṁ rabuṁ nihan· mulaḥ di maṁka  
+            <lb n="2"/> tam·boleṙ lamun· ditu <space type="binding-hole"/> rut· na lacək· gəra siya nu kaca  
+            <lb n="3"/> ti Adiqiṁ diAṁgiṙ man·di mesek· ṅabrəseka maveḥ gara ṅa  
+
+            <pb n="6v"/>
+            <lb n="1"/> dara mala ṅaL̥ṁṅit·kən· pacagəti miharsa sahuṙ sakitu Aḍi 
+            <lb n="2"/> dəvi rasatəqiṁ sakeyann adi laraṁṅan· log log cahoṙ ti  
+            <lb n="3"/> patoṁgoṁ diri hapi ti na piṁpiṁ lugay· kədapan· ti dam·  
+
+            <pb n="7r"/>
+            <lb n="1"/> pal· tinun· tuluy· dilulun·kən· qulaṁ taṁgan· ti katuhu la  
+            <lb n="2"/> ravu kan·teḥ pamulu ditən· <space type="binding-hole"/> dən· kapisəR̥ṁṅan· gapay· taṁ   
+            <lb n="3"/> ṅan· tabeḥ keca ñokot· na keceḥ salave diten  
+
+            <pb n="7v"/>
+            <lb n="1"/>dən· kapisəR̥ṁṅan· tuluy· taha ṅalageday· qeyo  
+            <lb n="2"/>k· tiyəṙ dikareboṁ tapi <space type="binding-hole"/> dipasaṁgirikən· calik· təhəṙ   
+            <lb n="3"/>karajaAn· ruvana As·ma muliya da ñaho di matən·  
+
+
+            <pb n="8r"/>
+            <lb n="1"/>qom·poy· gulusuṙ tedun· ti maṁguṁ qulaṁ labuḥhan· ka L̥  
+            <lb n="2"/>maḥ nu gəlis· bak·ti di la <space type="binding-hole"/> ki turutanən· nu ayəna nu gə  
+            <lb n="3"/>gəlis· tustu di laki sakədik· bənaṁ disuruḥ sakəcap·  
+
+            <pb n="8v"/>
+            <lb n="1"/>bənaṁ dirasa nəmunən1 rasa soraṁṅan· sahuṙ raden· jaya ke<lb n="liṁ"/>
+            <lb n="2"/>qeten·Adiqiṁ Aniṁ də <space type="binding-hole"/> vi rasa təqiṁ sakeyann adi laraṁṅa  
+            <lb n="3"/>n· kenana Aqiṁ gəs· ñaho kiṁkila Aṁgəs· L̥ṁṅitən·   
+
+            <pb n="9r"/>
+            <lb n="1"/>bənaṁ nañakən· dəvata həyək· qeten·n adiqiṁ siyəp· na la 
+            <lb n="2"/>cək· ditaña di na lacə <space type="binding-hole"/> k· Aṁgəs· ñaho L̥pus· di paṁ   
+            <lb n="3"/>ṅəsi Apus· Avas· di qəsi pus·taka ñaho di daṙma 
+
+            <pb n="9v"/>
+            <lb n="1"/>pitutuṙ livat ti na sisakadaṁ L̥viḥ ti binaya pati bənaṁ {ui ta}  
+            <lb n="2"/>hatuṙ ti gunuṁ bənaṁna bati <space type="binding-hole"/> padita bənaṁṅiṁ tp tajak· bara   
+            <lb n="3"/>t· cik· Aqiṁ magaḥhan· pikavihən· sam·bi ṅəyək· pakən·  
+
+            <pb n="10r"/>
+            <lb n="1"/>ram·pes· kagaveyan· ṅarana kamuliyaAn· pakən· han· 
+            <lb n="2"/>tə kapahava mo katulaḥ <space type="binding-hole"/> ku kabisa  gya 2 Ahuṁ guru pak·sa  
+            <lb n="3"/>pa pun· pamutunan· kami ñahuṙ patakalan· kami ñab·da  
+
+            <pb n="10v"/>
+            <lb n="1"/>ñak·sikən· ka bəraṁ ka pətiṁ ka luhuṙ ka saṁ rumuhun· ka batara hi  
+            <lb n="2"/>hiyaṁ nis·kala ka hadap· ka <space type="binding-hole"/> saṁ nugraha ka batara naga raja sa   
+            <lb n="3"/>sa tu {ña} ñaritakən· carita para dəvata di savaṙga ka  
+
+            <pb n="11r"/>
+            <lb n="1"/>hiyaṁṅan· carita para hak·sari ti na gunuṁ kahiyaṁṅan·  
+            <lb n="2"/>ñaho ruvaniṁ rum·masa qəsi <space type="binding-hole"/> buvana lam·ba saṁkan· jagat· saṁkan·   
+            <lb n="3"/>R̥na sapaṁṅadḍəg· di tu payu natakən· para devata ti na nunuṁ3 ka  
+
+            <pb n="11v"/>
+            <lb n="1"/>kahiyaṁṅan· Ayəna qəkə<lb n="ṙ"/> dihəhəm· Ayəna para dəvata di savaṙ {ga}
+            <lb n="2"/>ga kahyaṅan· sahuṙna A <space type="binding-hole"/> ci devata A{ui A}diqiṁ puvaḥ {ui ha}  
+            <lb n="3"/>saṁ hiyaṁ sri dəṁ puvaḥ lekavati dəṁ abuqiṁ nadi laraṁ sahuṙna  
+
+            <pb n="12r"/>
+            <lb n="1"/>Aci devata adiqiṁ puvaḥ sahiyaṁ sri gəra quraṁ L̥paṁ muṙba{u} tu 
+            <lb n="2"/>run· ka madiya pada ka gunuṁ <space type="binding-hole"/> sri jan·tra madala kayuvaṁsana ka tə 
+            <lb n="3"/>gal· si kahuripan· ṅusiṙ gunuṁ dayavaṙna kara jə dəṁ Ak·sari {ka} kaliḥ  
+
+            <pb n="12v"/>
+            <lb n="1"/>maka pahi saṁ madaya sadaya sareyannanna turun· ka madiyapada ña  
+            <lb n="2"/>puvaḥ sahiyaṁ sri samapu<space type="binding-hole"/>n· ka devata gəra monam· quraṁ 
+            <lb n="3"/>muṙba turun· ka madiyapada sahuṙna para devata ram·pes·  
+
+            <pb n="13r"/>
+            <lb n="1"/>mulaḥ valaṁgati pahi ṅəsiyan· buvana ti diña pahi na ṅaṁkat· ti  
+            <lb n="2"/>na gunuṁ kahiyaṁṅan· puvaḥ <space type="binding-hole"/> haci leṁgaṁ laraṁ puvaḥ haci leṁgaṁ maya 
+            <lb n="3"/>puvaḥ haci leṁgaṁ manik· puvaḥ haci leṁgaṁ buvana dpṁ Aci sa
+
+            <pb n="13v"/>
+            <lb n="1"/>ri devata puvaḥ maya kahiyaṁṅan· sri sedaḥ tujuṁ devata 
+            <lb n="2"/>dəṅən· puvaḥ hasra maya Asri <space type="binding-hole"/> Asriniṁ devata puvaḥ maya Asri   
+            <lb n="3"/>dan·ta batari maṁbaṁ karuna dəṁ batari ce{ca}kan· manik dəṁ  
+
+            <pb n="14r"/>
+            <lb n="1"/>batari deva⟨⟨ra⟩⟩ta ḍəṁ puvaḥ palamita dəṁṅən· puvaḥ hasri sradaḥ dəṁ puvaḥ  
+            <lb n="2"/>hujuṁ devata dəṁ puvaḥ haci <space type="binding-hole"/> seta sari puvaḥ sari Aci manik·  
+            <lb n="3"/>puvaḥ sari Aci maya puvaḥ sari Aci hpniṁ puvaḥ sari Aci miraḥ  
+
+            <pb n="14v"/>
+            <lb n="1"/>dəṁ puvaḥ tujuṁ kanaṁṅa Aci maya Asri prativi tujuṁ laraṁ sari kem·baṁ 
+            <lb n="2"/>na manik· muti vaṁṅi nusiyaṁ <space type="binding-hole"/> larati kedan· Ak·sari seda 
+            <lb n="3"/>kavini dəṁ puvaḥ viti sari batari vidu vaṁsana dəṁ puvaḥ sari ma 
+
+            <pb n="15r"/>
+            <lb n="1"/>sini dəṁṅən· sari ñakranali dəṁ puvaḥ səkaṙ bacana dəṁ puvaḥ lara tapa dəṁ   
+            <lb n="2"/>puvaḥ sari payuṅan· Aci A <space type="binding-hole"/> ciniṁ devata puvaḥ <lb n="A"/>ci tujuṁ seta    
+            <lb n="3"/>puvaḥ haci puvaḥ qibun· puvaḥ haci mayalaraṁ puvaḥ haci sari vaṁ 
+
+            <pb n="15v"/>
+            <lb n="1"/>ṅi puvaḥ haci maya kəliṁ Ak·sari veka cina maya mayaniṁ buvana tujuṁ  
+            <lb n="2"/>lahinaṁ Aaci vaṁṅi ñahuṙ puvaḥ <space type="binding-hole"/> saṁ hiyaṁ sri Adiqiṁ Ak·sari kaliḥ 
+            <lb n="3"/>baṅət· gəra quraṁ L̥m·paṁ turun· muṙba ka sakala {sa} sahuṙna Ak·<lb n="sa"/> 
+
+            <pb n="16r"/>
+            <lb n="1"/>ri {ui A} sari kaliḥ dəṁ para devata kaliḥ ram·pes· qulaḥ saṁ haṙsa turu {n·}  
+            <lb n="2"/>n· muṙba ti kahiyaṁṅan· Aci <space type="binding-hole"/> puvaḥ saṁ hiyaṁ sri deṁ para devata ka 
+            <lb n="3"/>liḥ para puvaḥ para qeten· tə Aya nu tiṁṅaL̥n· ti na gunuṁ 
+
+            <pb n="16v"/>
+            <lb n="1"/>kahiyaṁṅan· ṅahusiṙ gunuṁ sri Atraman· dalan· yu vaṁsana ṅusiṙ gunuṁ 
+            <lb n="2"/>dayaṁ vaṙna ka təgal· si <space type="binding-hole"/> kahuripan· {x} dəṁ Am·buIṁ A
+            <lb n="3"/>sri _ ti qusiṙ puvaḥ sari tujuṁ putiḥ sapaṁṅadəg· puhun· kapas· 
+
+            <pb n="17r"/>
+            <lb n="1"/>ruvana dibəti manik· na rudivi Akaṙ kavat· nu di daqun· luṁsiṙ qi  
+            <lb n="2"/>{x} jo puvaḥ haci tujuṁ kuniṁ de <space type="binding-hole"/> vata na kəm·baṁ kapas· puvaḥ haci  
+            <lb n="3"/>tujuṁ manik· devata na buvaḥ kapas· puvaḥ haci səm·bul· pu  
+
+            <pb n="17v"/>
+            <lb n="1"/>tiḥ devata na basa bəkaḥ puvaḥ _ _ li guliṁṅan· manik· garan· ba 
+            <lb n="2"/>sana dipupu puvaḥ haci pijə <space type="binding-hole"/> t·tan· jati ṅaran· basana dipo 
+            <lb n="3"/>he puvaḥ haci pijətan· sari sapəR̥san· sapi dini ṅaran· de 
+
+            <pb n="18r"/>
+            <lb n="1"/>vata jujutan· puvaḥ ha{ui sa}ci naga keli batari liṁṅan· manik· {ui rara}  
+            <lb n="2"/>laran· devata hidəsan· sri se <space type="binding-hole"/> daḥ mara sri jati qeta ṅaraniṁ haḍəsa  
+            <lb n="3"/>n· puvaḥ haci səm·bul· manik· ṅa {ui na} ran· devataniṁ kapuk· batari  
+
+            <pb n="18v"/>
+            <lb n="1"/>maya bətra ṅaran· basana dipepes· batari səpətan· javiṅa na basa  
+            <lb n="2"/>dipeteṁ puvaḥ haci gigus· <space type="binding-hole"/> manik· ṅaran· basana diges·se  
+            <lb n="3"/>k· puvaḥ haci peniṁṅan· jati ṅaran· devataniṁ jantra puvaḥ   
+
+            <pb n="19r"/>
+            <lb n="1"/>haci naga magayəl· devata na qətə kiciṙ puvaḥ haci taliṅan· ja  
+            <lb n="2"/>ti devatana səli lam· <space type="binding-hole"/> biṁ batari ti nis· jati devata   
+            <lb n="3"/>na tali kiciṙ batari taḍəra na jati qeta devataniṁ kiciṙ  
+
+            <pb n="19v"/>
+            <lb n="1"/>puvaḥ hacinaṁ devata {su} sutul· putiḥ sri maṁlayaṁ ṅaran devata  
+            <lb n="2"/>Asivuṁ puvaḥ haci cin·ta <space type="binding-hole"/> manik· puvahaci tujuṁ putiḥ Asri ma  
+            <lb n="3"/>ya Asri sedaḥ ṅaran· devata{ui ka}niṁ kan·teḥ batari tujuṁ ja  
+
+            <pb n="20r"/>
+            <lb n="1"/>ti Asri maya Asri desa lara nnəkəṙ di latayan· puvaḥ haci naganum·pi de 
+            <lb n="2"/>vatana bənaṁ mədat· puvaḥ ha<space type="binding-hole"/>ci cin·ta manik· puvaḥ haci cin·ta  
+            <lb n="3"/>putiḥ nu ṅasuḥ na kan·teḥ bodas· puvaḥ haci tujuṁ bimaṁbaṁ puvaḥ  
+
+            <pb n="20v"/>
+            <lb n="1"/>haci maṁbaṁ siyaṁ puvaḥ haci maṁṅibaṁ jati nu ṅasuḥ na kan·teḥ {pa} bəR̥  
+            <lb n="2"/>m· batari saṁ R̥jati {ui pavaḥta<space type="binding-hole"/>ca} puvaḥ haci {sa} nila kəliṁ puvaḥ haci  
+            <lb n="3"/>həL̥ṁ vise{sa}sa nu ṅasuḥ na kateḥ hiḍəṁ puvaḥ haci tujuṁ kuniṁ nu ṅasuḥ  
+
+            <pb n="21r"/>
+            <lb n="1"/>na kateḥ koneṁ puvaḥ haci /pə\tə rupa puvaḥ haci maṁbaṁ sari dəṁ batari tujuṁ    
+            <lb n="2"/>biru nu ṅasuḥ na kan·teḥ vuṅu <space type="binding-hole"/> puvaḥ haci saṙba maya puvaḥ haci saṙ   
+            <lb n="3"/>ba qedaḥ puvaḥ haci saṙba laraṁ nu ṅasuḥ na kan·teḥ vaṙna batari kə   
+
+            <pb n="21v"/>
+            <lb n="1"/>ciṁṅan· jati ṅaran· basana dipikat· puvaḥ haci pabaṙ desa puvaḥ ha  
+            <lb n="2"/>ci maya jati ṅaran· basana <space type="binding-hole"/> dimən·taṁ batari pameres·   
+            <lb n="3"/>jati ṅaran· devata na sika dit· batari mañaṙ buvana puvaḥ haci peniṁ ja   
+
+            <pb n="22r"/>
+            <lb n="1"/>ti ṅaran· devata qubəṅan· puvaḥ haci ta{ui ja}k· jati ṅaran· de  
+            <lb n="2"/>vata qəlekan· batari <space type="binding-hole"/> kəcəṁṅan· jati dəṁ batari {x} bu  
+            <lb n="3"/>desa _ _ _ _ _ _ _ _ _ _ _ qeta ṅaran· pihaneyan· 
+
+            <pb n="22v"/>
+            <lb n="1"/>puvaḥ haci naga maṅaḍəg· ṅaran· laki pihaneyan· puvaḥ ha 
+            <lb n="2"/>ci riṁgit· sari puvaḥ haci <space type="binding-hole"/> riṁgit· maya devata na tapi   
+            <lb n="3"/>sahoṙ Aci sariniṁ devata puvaḥ haci ṅidəṙ sedaḥ de  
+
+            <pb n="23r"/>
+            <lb n="1"/>vatana paravan·tən· puvah ha{ca}cicin· kəliṁ dəṁ puvaḥ sari de 
+            <lb n="2"/>vata ṅaran· devata pa <space type="binding-hole"/> ṅulas· batari putiḥhan· jati ṅa 
+            <lb n="3"/>hari naga nu mənəṁ dəṁ puvaḥ naga kum·pu mayu puvaḥ desa maya rini  
+
+            <pb n="23v"/>
+            <lb n="1"/>puvah sari maya reka qeta ṅaran· bənaṁ ṅukuṙ puvaḥ haci keno ja   
+            <lb n="2"/>ti de<lb n="va"/>ta na dahun· kavu <space type="binding-hole"/> ṅarana di kahiyaṁṅan· batari tadaṁ 
+            <lb n="3"/>ṅan· jati vayaṁ sariniṁ buvana mayaqin· həniṁ prativi devata    
+
+
+            <pb n="24r"/>
+            <lb n="1"/> pasaR̥ṅan· puvaḥh aci napa pati tiṁkaḥ maya di buvana ṅaran· devata 
+            <lb n="2"/> porogan· bahuri nagapati ti <space type="binding-hole"/> sa karan· qәkәṙ dipihane puvaḥ   
+            <lb n="3"/> haci vindu vasa na ṅaran· devata ṅimbuhan puvaḥhaci mamere  
+
+
+            <pb n="24v"/>
+            <lb n="1"/> s· jati ṅara devata na suri puvaḥ Aci nagapati sa tis· ṅaran deva  
+            <lb n="2"/> tana tinun· puvah A <space type="binding-hole"/> ci haR̥na haR̥ni batari leṁgaṁ mani
+            <lb n="3"/> nu muṁgu di nu ṅә la yәk· nala qiña Ayәna pa para va deva 
+
+
+            <pb n="25r"/>
+            <lb n="1"/> na nu ṅәyәk· na luṁsiṙ bәR̥m· kabuyuttan· maṅbaṁ Anak· 
+            <lb n="2"/> saṁ bavaṁ R̥kaḥ puvaḥ sri A <space type="binding-hole"/> maṁpayaṁ nu ṅәyәk· na luṁsiṙ qi 
+            <lb n="3"/> jo kabuyutan naga pralaya Anak· saṁ pasiḥ padahi ṅaranna taṁ          
+
+
+            <pb n="25v"/>
+            <lb n="1"/> ta di gunuṁ kahiyaṁṅan· pakәn· ram·pes· kaveyan· puvaḥ 
+            <lb n="2"/> sri Aci viAṙsa nu ṅәyәk· <space type="binding-hole"/> na lungsiṙ putiḥ kabuyuttan na saṁ  
+            <lb n="3"/> ledra Anak· nu ña di L̥maḥ puvaḥ sri Aci miraḥ nu   
+
+
+
+            <pb n="26r"/>
+            <lb n="1"/> di saka na ṅarana han·ti ṅarasa tan rasa ruma {sa} sa pravasa 
+            <lb n="2"/> ha {ka} n· kahiḍәṁ ḍәhi dәṅ <space type="binding-hole"/> {ma} dәm· ṅaranna anak· ka 
+            <lb n="3"/> prativiyan· puvaḥ sri kuniṁ nu ṅәyәk· na luṅsiṙ kuniṁ ka    
+
+            <pb n="26v"/>
+            <lb n="1"/> buyuṅan· Anak· Anak· batari prativi puvaḥ sri a
+            <lb n="2"/> {sa} ci rupa nu ṅәyәk· na luṅ <space type="binding-hole"/> siṙ varna kabuyutan mava gom·  
+            <lb n="3"/> braṁ Anak· Adi puvaḥ saṁ yaṁ sri duvaAn· sapila
+
+            <pb n="27r"/>
+            <lb n="1"/> ñ· sәkkan· dәṁ pu viru mmanaṁgay· tiluvan sapilañcәkka pahi 
+            <lb n="2"/> gәlis· qudaha giha pi <space type="binding-hole"/> takara valesan· suquk· 
+            <lb n="3"/> rahi  hidәṁ tәlәm· sin·ta  hamo dipagaḥhan· ṅaranna   
+            
+            <pb n="27v"/>
+            <lb n="1"/> ratu devata  maka ñarade di hate maṁka asup· ka ham· 
+            <lb n="2"/> pәru maṁka naṁtuṁ dina pusuḥ <space type="binding-hole"/> naṁtuṁ di tuṁtuṁṅiṁ heraṁ ñadiṁ
+            <lb n="3"/> di vәkasiṁ caaṁ dina bәraṁ sedakala ṁaṁṅuni livat· sakitu  
+
+            <pb n="28r"/>
+            <lb n="1"/> lak· sakti na dilaki mula kena kasograan· ti nis·kala kәnna
+            <lb n="2"/> kaṁga dina tuduhhan· ha <space type="binding-hole"/> n·tә kapalis· ku aṁṅin· han·
+            <lb n="3"/> tә qiṁgut· kalin·duvan· R̥ṁṅәkәnnәn· quraṁ qom·poy·
+
+            <pb n="28v"/>
+            <lb n="1"/> pikaviḥhәn· buvat· ṅәyәk· pakәn· ram·pes· kagunaan· 
+            <lb n="2"/> pakәn· ram·pes· na ti gu <space type="binding-hole"/> na pakәn· mo kәna ku ṅara pikaviḥ  
+            <lb n="3"/> hәn· quraṁ qom·poy· karana karana kaprativiyan· sumraṁ 
+
+            <pb n="29r"/>
+            <lb n="1"/> saṁ dina sasi na  qeta pakәn· hamo lavan·  ḍәḍә mula ka ava 
+            <lb n="2"/> kiṁ nu gәlis· ha kahiduṁ <space type="binding-hole"/> ṅan·  mukur ti na kasahean·
+            <lb n="3"/>  dataṁ kana kaL̥pasan· aci sarba visesa ◆ ◉ ◉ 
+
+            <pb n="29v"/> 
+            [empty]
+
+            </ab>
+            </div>
+
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+		        <p><!-- explain the process of your edition here --></p>
+		        <!-- provide a list of bibliographic references used in your digital editions -->
+		        <listBibl type="bibliography">
+		            <bibl/>
+		        </listBibl>
+		        <!-- the listBibl editions is used to create a list of abbreviated text used in notes and parallels, it is more or less the equivalent of a list of abbreviations, you would find a printed edition  -->
+		        <listBibl type="editions">
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
