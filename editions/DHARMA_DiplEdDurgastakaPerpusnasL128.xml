@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="DurgastakaPerpusnasL128">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+            	<title type="editorial">Digital diplomatic edition of lontar L. 128 at Perpusnas, Jakarta</title>
+                <respStmt>
+                    <resp>author of digital edition</resp>
+                	<persName ref="part:mamu">
+                		<name>M. Aftharu Mulya</name>
+                	</persName>
+                	<persName ref="part:argr">
+                		<forename>Arlo</forename>
+                		<surname>Griffiths</surname>
+                	</persName>
+                    <persName ref="part:dapu">
+                        <forename>I Gde Agus</forename>
+                        <surname>Darma Putra</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DHARMA_DiplEdDurgastakaPerpusnasL128.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported
+                            Licence. To view a copy of the licence, visit
+                            https://creativecommons.org/licenses/by/4.0/ or send a letter to
+                            Creative Commons, 444 Castro Street, Suite 900, Mountain View,
+                            California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2019" to="2025">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="L128">
+                        <abbr type="L128"/>
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Jakarta</settlement>
+                                <institution>Perpustakaan Nasional Republik Indonesia</institution>
+                                <repository>Lontar</repository>
+                                <idno>L128</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <msItem>
+                                    <title>Durgāṣṭaka</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <!--<colophon>
+										<quote></quote>
+										</colophon> -->
+                                    <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <p>This manuscript is a <foreign>lontar (ləmpiran)</foreign>, 51 cm long, extending over 98 folios with text in Old Javanese language and Balinese script. It was described by <bibl><ptr target="bib:Juynboll1911_01"/></bibl> (MDCCCXXXVIII, cod. 876). It is preserved at Perpustakaan Nasional Republik Indonesia, listed by Behrend (<bibl rend="omitname"><ptr target="bib:Behrend1998_01"/><citedRange unit="page">370</citedRange><citedRange unit="item">71 L 876</citedRange></bibl>). This manuscript was used by Bosch (1929) for editing the Kalpabuddha. It also contains other Buddhist
+                                        texts. However, the manuscript contains two separately
+                                        numbered parts. It is only one of them that contains
+                                        Buddhist texts, plus material that seems to be Śaiva, while
+                                        the first part contains only Śaiva material with no
+                                        connection to Buddhism.</p>
+                                </objectDesc>
+                                <handDesc>
+                                    <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id="H1" scriptRef="class:83239 maturity:83215">
+                                        <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand"><hi rend="superscript"/><hi
+                                                rend="subscript"/></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p/><!-- provide a description of the hand -->
+                                    <p>Main hand of the manuscript, black ink, in Javanese script of the Merapi-Merbabu type</p>
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p/>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Encoded in TEI according to the <ref
+                        target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}"
+                        >Conventions of ERC-Project DHARMA</ref>.</p>
+                <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl>
+                <p/>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>
+        </encodingDesc>
+    	<encodingDesc>
+    		<projectDesc>
+    	<p>The romanized transliteration was funded by the European Union (ERC MANTRATANTRAM, grant agreement no. 101124214).</p>
+    	<p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+    			<p></p>	
+    		</projectDesc>
+    	</encodingDesc>
+        <revisionDesc>
+        	<change who="part:argr part:mamu part:dapu" when="2026-05-29" status="draft">started encoding the diplomatic edition</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="kaw-Latn">
+<ab>
+<pb n="1r"/><!-- IDN_MS_JakartaPNRI_Durgasthaka_01recto.jpg -->
+<fw place="left" n="1"><num>1</num></fw>
+<lb n="1v1"/> 
+
+</ab>
+			    
+</div>
+    <div type="translation">
+        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+    </div>
+    <div type="commentary">
+        <!-- Comment regarding your edition such as the following example -->
+        <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+    </div>
+    
+
+<div type="bibliography">
+        <p>Transliterated by M. Aftharu Mulia, checked by Arlo Griffiths and I Gde Agus Darma Putra,
+based on photographs by Garin Pharmasetiawan. Encoded by M. Aftharu Mulia, checked by Arlo Griffiths and I Gde Agus Darma Putra.</p>        			    
+<!--<p>original set of photos references in the transcription below</p>
+<p>https://sharedocs.huma-num.fr/wl/?id=ImN90k5xgnX4nTHRuyfduH0zFaMQP0kj</p>
+<p>new set of tiff photos</p>
+<p>https://sharedocs.huma-num.fr/wl/?id=jOSimD60lhzOxwz2kJb7nX32ufjtLtzS</p>-->
+        <listBibl type="bibliography">            
+            <bibl><ptr target="bib:Behrend1998_01"/><citedRange unit="page">...</citedRange></bibl>
+        </listBibl>
+<!-- <listBibl type="editions">
+<bibl/></listBibl> -->  
+    </div>
+</body>
+</text>
+</TEI>
