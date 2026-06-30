@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -41,7 +41,7 @@
                 <!-- One witness for each manuscript. Update the content -->
                 <witness xml:id="fakeID">
                     <!-- Give your witness an unique identifier -->
-                    <abbr type="siglum"></abbr>
+                    <abbr type="siglum"/>
                     <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
                     <msDesc>
                         <msIdentifier>
@@ -67,15 +67,15 @@
                                 <p>This manuscript is a lontar (ləmpiran), 51 cm long, extending over 98 folios with text in Old Javanese language and Balinese script. It was described by Juynboll (1911: 326, MDCCCXXXVIII, cod. 876). It is preserved at Perpustakaan Nasional Republik Indonesia, listed by Behrend (1998: 370, 71 L 876). This manuscript was used by Bosch (1929) for editing the Kalpabuddha. It also contains other Buddhist texts. However, the manuscript contains two separately numbered parts. It is only one of them that contains Buddhist texts, plus material that seems to be Śaiva, while the first part contains only Śaiva material with no connection to Buddhism.</p></objectDesc>
                             <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
                                 <!-- Create a handNote for each hand -->
-                                <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
-                                    <abbr type="hand"><hi rend="superscript"></hi><hi rend="subscript"></hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
-                                    <p></p><!-- provide a description of the hand -->
+                                <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                    <abbr type="hand"><hi rend="superscript"/><hi rend="subscript"/></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                    <p/><!-- provide a description of the hand -->
                                 </handNote>
                             </handDesc>
                         </physDesc>
                         <history>
                             <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
-                            <p></p>
+                            <p/>
                         </history>
                     </msDesc>
                 </witness>
@@ -89,7 +89,7 @@
   -->
         </projectDesc>
         <editorialDecl> 
-            <p></p>
+            <p/>
             <correction>
                 <p/>
             </correction>
@@ -133,7 +133,7 @@
 <lb n="02v3"/> miñak·, sira ta sinaṅguḥ saṁ hyaṁ diva:rūpa: ṅaranira, pinaka:vak bhaṭa:ra hyaṁ budḍa, riṁ nira:ka:ra, sira ta sinaṅguḥ saṁ hyaṁ prama:ṇa, sira hisi§[SH]niṁ vindu vijilniṁ śūnya, sira ta sinaṅguḥ saṁ hyaṁ Atma: ṅaranira, liṁ saṁ vadi vaneḥ, sira sinaṅguḥ saṁ hyaṁ vaṅśil· ṅaranira, pinakahuripta, Evə:ḥ kapa§-
 <lb n="02v4"/> ṅgihanira de saṁ viku, yapvanitya sakaton sira ri paṅipyan·, denta pra:pta vr̥dḍi, kinasihaniṁ ra:t· kita, mvaṁ deva bhūta masih i[SH]ri kita, makapa:la niroga nirūpadrava:, sidḍamantravak·bajra, kunaṁ yan katon sira denta, sakahaR̥pta sidḍa tumona ri sira, dūrada:rśśa-
 <!-- photo SAS_2012-2013 -->
-<lb n="03r1"/> <seg rend="check">ṇa</seg> kita, vnaṁ humratyakṣakna vastu ri dūradeśa, mvaṁ vastu kavyavahitan·, sūkṣmadarśśaṇa, vnaṁ humratyakṣa<seg rend="check">ṇan piśśaca:</seg>dḍi, mvaṁ ṅatīta:na:gata, § [SH] maṅka:na phalanira katon· makaka:raṇa Icca yoganta, kavnaṁ pva kita makavaka ri sira, makanimitta ka:vakaniṁ yoganta, yatika sinaṅguḥ kumavakaka-
+<lb n="03r1"/> <hi rend="check">ṇa</hi> kita, vnaṁ humratyakṣakna vastu ri dūradeśa, mvaṁ vastu kavyavahitan·, sūkṣmadarśśaṇa, vnaṁ humratyakṣa<hi rend="check">ṇan piśśaca:</hi>dḍi, mvaṁ ṅatīta:na:gata, § [SH] maṅka:na phalanira katon· makaka:raṇa Icca yoganta, kavnaṁ pva kita makavaka ri sira, makanimitta ka:vakaniṁ yoganta, yatika sinaṅguḥ kumavakaka-
 <lb n="03r2"/> n ka:ṣṭeśvaryyan·, suka ṅaranya mamukti phalaniṁ yogabyaṣa, ka:ṣṭeśvaryyasuka ṅaranya || Anima, lagima, pra:pti, praka:mya, mahima:tattha, I[SH]śvaratva, vasitva, ka:mavasayitva || Anima, ṅa, vnaṅ kadadina:lit·, saṅkeṅ alit·, Agə:ṁ saṅkeṅ agə:ṁ ,, lagima, vnaṁ meṅgal· saparananta, paR̥ṁ kala:va§-
 <lb n="03r3"/> n kahyunta, mvaṁ riṁ deśa saparana:nta ,, pra:pti, ṅa, kavasa:siṁ vastu dūrasūkṣma sakahaR̥pta, makaka:raṇanta pr̥ka:mya ṅaranya, vnaṁ mamūktya sarvva suka [SH], muṅgva riṁ ratu riṁ sarvvajanma:, vnaṁ sumurupa riṁ mr̥ga pakṣi pa:śu miṇa, sarppa || mahimatatha:, ṅa, vnaṁ humuṅgva riṅ a:rcca, pratima:, pṭa:, caka:li, sada:manci, vnaṁ pinūja-
 <lb n="03r4"/> : riṁ ra:t kabeḥ || Iśvaratva, ṅa, vnaṁ kadadin· L̥viḥ saṅke L̥viḥ, sidḍi saṅke sidḍi, vnaṁ mamiṇḍa riṁ moha harūpa: varṇna, kr̥mvaṁ guṇa vijña:na || [SH] vasitva, ṅa, vnaṁ maṅalahakən· ja:ramaraṇa:di, tuva ti, vnaṁ marūpa:nvam·, vnaṁ marūpa:tuhva: || ka:mava:śa hita:, ṅa, kadadin· vnaṁ tka: sakakahyun-
@@ -207,8 +207,8 @@
 <fw place="left" n="9"><num>9</num></fw>
 <lb n="09v1"/> cuk· vtunya ,, bu, pasuknya, ḍa, vtunya, ya Antaranya | riṁ pasuk· vtu yeka: sinaṅgaḥnya, ya, ṅa, yeka:līlaṁ kevala, nira:grahalila tan pa§[SH]kaliṅan·, bvat· sogata Ika: | bvat· śeva, śi, pasuknya, va, vtunya, ya, Antaranya, ya śivaja:tīka:ya, ya ta mataṁnyan· sinaṅguḥ tuṅgal· I-
 <lb n="09v2"/> kaṁ śiva la:van· budḍa || na, Akṣobhya ,, mo, ratnasa:mbava, bu, Amitabha ,, Amoghasidḍi, dḍa: ,, vairoccha:na, ya || Iśvara, na | maha:de[SH]va, ma | bra:hma:, śi | viṣṇu, va| śaṅka:ra, sa |  śiva || bu, lokaiśvara | dḍa, bajra:paṇi | ya, siraśūnya, sinaṅgaḥ taliniṁ ganitri, sira sinaṅgaḥ sa:mbu-
-<lb n="09v3"/> liḥnix hurip· | śi, bra:hma: | va:, viṣṇu | ya, sira hurip·, sira: jña:na byapaka riṁ ra:t·, sira ta śivabudḍa, hriḥ, pasuknya ,, ṅriḥ vtunya ,, kriḥ, A[SH]ntaranya | Itya pūja: saṁ hyaṁ dya:tmika kamokṣan· || namo stu || 0 || Agnimaṇḍala, Akṣobhya, <seg rend="check">[drawing]</seg>, Amitabha:, <seg rend="check">[drawing]</seg> candra:maṇḍala || vairoca-§
-<lb n="09v4"/> na, sūryyama:ṇḍala, <seg rend="check">[drawing]</seg> || 0 || stha, goḥ, hamitabha: | stha:, Aśva, Amoghasidḍi ,, stha, maha:maṅśa, vairoccana || pa:ñca:[SH]jña:na Ika: || 0 || namo budḍa:ya, nama śiva:ya || Om̐ka: || 0 || 
+<lb n="09v3"/> liḥnix hurip· | śi, bra:hma: | va:, viṣṇu | ya, sira hurip·, sira: jña:na byapaka riṁ ra:t·, sira ta śivabudḍa, hriḥ, pasuknya ,, ṅriḥ vtunya ,, kriḥ, A[SH]ntaranya | Itya pūja: saṁ hyaṁ dya:tmika kamokṣan· || namo stu || 0 || Agnimaṇḍala, Akṣobhya, <hi rend="check">[drawing]</hi>, Amitabha:, <hi rend="check">[drawing]</hi> candra:maṇḍala || vairoca-§
+<lb n="09v4"/> na, sūryyama:ṇḍala, <hi rend="check">[drawing]</hi> || 0 || stha, goḥ, hamitabha: | stha:, Aśva, Amoghasidḍi ,, stha, maha:maṅśa, vairoccana || pa:ñca:[SH]jña:na Ika: || 0 || namo budḍa:ya, nama śiva:ya || Om̐ka: || 0 || 
 <!-- photo SAS_2000-2001 -->
 <lb n="10r1"/> || 0 || nihan· ja:nma rahasya, kavruhana de saṁ sevaka ḍarmma, ma:rgganiṁ muliha mariṁ kahyaṅan· muvaḥ hayva kaskan· maṅabyaṣa masama:[SH]ḍi, kunaṁ deya saṁ masamaḍi, daśaśila kava:śakna rumuhun·, daśaśila:rane, lvirnya || tan avadonən·, tan ūtsaha papati, tan paraḍara ,
 <lb n="10r2"/> tan· L̥bok·, tan· kroḍa, tan kaphala deniṁ bhakti maguru, tan arumiḥ, riṁ pinaṅan tan a:vuru, tan pamnemne laku raha:yu | maṅke ni[SH]ṅ amaca guguron·, tumulya: L̥kas·, saṁ hyaṁ pa:ñcatathagata sama:ḍi rumuhun·, A:pan sira vit· buṅkaḥ, Iṅ ka:yogiśvaran·, A:pan tan (ka)hə-
@@ -254,11 +254,11 @@
 <lb n="13v3"/> mata | bhaṭa:ra ratnasambhava:, muṅguḥ riṁ taliṅa | bhaṭa:ra:mitabha:, muṅgviṁ hiruṁ | bhaṭa:ra ha(mo)ghasidḍi, muṅguḥ riṁ caṅkəm· sira pinakapaṁrasa: | bhaṭa:[SH]ra vairocana, muṅguḥ ri pusuḥ pusuḥ, sira pinakaṅənaṅən·, Irika ta saha devīnira sovaṁ sovaṁ, yatika sinaṅguḥ saṁ hyaṁ pañcatma ṅaranya, pinaka:vak· 
 <lb n="13v4"/> || 0 || ka:lphabodḍa Iti, paramarahasya || 0 ||
 <!-- photo SAS_1991-1992 -->
-<lb n="14r1"/> <seg rend="check">Adva:yajña:na</seg> [drawing]<seg rend="check">Adva:ya</seg>[SH]<seg rend="check">|| vyaktinyan· patmū riṁ ka:ṇṭabhu, Ikaṁ vindv aneṁ ka:ṇṭamula:, ya maha:praṇava Ika:, Umiṅsor sumuṁsaṁ riṁ lariṁ hr̥daya ṅadəg· ,</seg>
-<lb n="14r2"/> <seg rend="check">sūryya:rūpa I-</seg> [drawing] <seg rend="check">candrarūpa Ika:-</seg> [SH] <seg rend="check">laṭa:praṇava Om̐ ka:ra, </seg>[drawing] <seg rend="check">maḍya yar umiṇḍuhur paranya, hayva tan prayatna, pan tan dadi pinuraṁpuraṁ na-</seg>
-<lb n="14r3"/> <seg rend="check">kaṅ avak·, </seg>[drawing] <seg rend="check">ṅ avak·, ya ca-</seg> [SH] <seg rend="check">da:niran· ,</seg>[drawing] <seg rend="check">sa:nugra:ha saṁ hyaṁ kaśūnyan· juga tūtakna paraniramput· tka: Iriṅə-</seg>
-<lb n="14r4"/> <seg rend="check">ya sūryya:smr̥-</seg> [drawing] <seg rend="check">ndra:smr̥ty arane, </seg>[SH]<seg rend="check">n·, yan mūkṣa ṅaḍaḥ mvaṁ riṅ ūrdḍa:, tan pama:rgga kunaṁ || 0 || </seg>
-<lb n="14r5"/> <seg rend="check">ty a:rane guruṁguruṅan· stha:na, </seg>
+<lb n="14r1"/> <hi rend="check">Adva:yajña:na</hi> [drawing]<hi rend="check">Adva:ya</hi>[SH]<hi rend="check">|| vyaktinyan· patmū riṁ ka:ṇṭabhu, Ikaṁ vindv aneṁ ka:ṇṭamula:, ya maha:praṇava Ika:, Umiṅsor sumuṁsaṁ riṁ lariṁ hr̥daya ṅadəg· ,</hi>
+<lb n="14r2"/> <hi rend="check">sūryya:rūpa I-</hi> [drawing] <hi rend="check">candrarūpa Ika:-</hi> [SH] <hi rend="check">laṭa:praṇava Om̐ ka:ra, </hi>[drawing] <hi rend="check">maḍya yar umiṇḍuhur paranya, hayva tan prayatna, pan tan dadi pinuraṁpuraṁ na-</hi>
+<lb n="14r3"/> <hi rend="check">kaṅ avak·, </hi>[drawing] <hi rend="check">ṅ avak·, ya ca-</hi> [SH] <hi rend="check">da:niran· ,</hi>[drawing] <hi rend="check">sa:nugra:ha saṁ hyaṁ kaśūnyan· juga tūtakna paraniramput· tka: Iriṅə-</hi>
+<lb n="14r4"/> <hi rend="check">ya sūryya:smr̥-</hi> [drawing] <hi rend="check">ndra:smr̥ty arane, </hi>[SH]<hi rend="check">n·, yan mūkṣa ṅaḍaḥ mvaṁ riṅ ūrdḍa:, tan pama:rgga kunaṁ || 0 || </hi>
+<lb n="14r5"/> <hi rend="check">ty a:rane guruṁguruṅan· stha:na, </hi>
 <!-- photo SAS_1989-1990 -->
 <fw place="left" n="14"><num>14</num></fw>
 <lb n="14v1"/> || 0 || nihan taṁ janmarahasya, kayatnakna kalaniṁ rogasaṅsara, bodḍapra:ptaviḍi, sḍaṅiṁ hurip· maṅəntakəntak·, keṅətakna pasuknya ṅke ryy avakta ,[SH] surupnya riṁ guhaniṁ praḍa:na, lumkas ta kita masama:ḍi, masamaIta, cipta rumgəpa tuṅgal ta la:van bhaṭa:ra viśeṣa, Ayva ta kita gumgə, Ananya janma svabha:va Uliha§-
@@ -297,7 +297,7 @@
 <!-- photo SAS_1980-1981 -->
 <fw place="left" n="17"><num>17</num></fw>
 <lb n="17v1"/> ba śinahyaṁnira, śiva:ṅgapraṇava sira, riṁ vindu stha:nanira, kunaṁ śaktinira, 10, lvirnya, parama:paripūrṇnata, parama:parikr̥tanta, parama:nantatarata, pa[SH]rama:ḍruvanaṇḍita, parama:cintya:ga, parama:śūdḍya:ta, parama:ṇḍata, parama:sambhitaṃ, parama:kṣarata, parama:śitva, niskala:kevala sira, Aum̐, vija:kṣarani§-
-<lb n="17v2"/> ra, ruhurnika: muṅguḥ kaṁ praṇava ṅka:na, tan kinavruhan kahananira, muvaḥ tan kinavruhan varṇnanira, dudūg i sor dudūg i ruhur·, rakva sira, riṁ dikvidikahananira, ta[SH]n kavista:ra sira hanerika, kunaṁ na:ḍinira kavruhana, nihan kramanira, vyapiṇaṃ, bhyomarūpa:, Ana:nta, natana:, kunaṁ vija:kṣaranira, <seg rend="check">[modre]</seg>, sira saṁ hyaṁ Amr̥takuṇḍa§-
+<lb n="17v2"/> ra, ruhurnika: muṅguḥ kaṁ praṇava ṅka:na, tan kinavruhan kahananira, muvaḥ tan kinavruhan varṇnanira, dudūg i sor dudūg i ruhur·, rakva sira, riṁ dikvidikahananira, ta[SH]n kavista:ra sira hanerika, kunaṁ na:ḍinira kavruhana, nihan kramanira, vyapiṇaṃ, bhyomarūpa:, Ana:nta, natana:, kunaṁ vija:kṣaranira, <hi rend="check">[modre]</hi>, sira saṁ hyaṁ Amr̥takuṇḍa§-
 <lb n="17v3"/> lini praṇava ṅaranira, nirvaṇna sira, jña:na lpas· tan kinavruhan· kaha:nanira, sira ta kamoktan· ṅaranira, saṁ yoggi ṅaranira, Umnəṁ juga sira, Ayva §[SH]cavuḥ sira, parama: rahasya sira || 0 || bhrunahapuruṣaṇaśca, kanyacoroghrayajaka, Ajña:tas samvat sarikaḥ, pa:takaḥ parikirttitaḥ || goraṇḍaṃ yuvativaṇḍaṃ, va-
 <lb n="17v4"/> la vr̥ḍaś ca vanḍyate, Alpa:rada hi ca tatha, Upa:takaham ucyate || brahma:vaṇḍaṃ surūpaṇaṃ, suvarṇnastheyam eva ca, kanyavighna guroḥ vaṇḍam·, maha:[SH]pa:takam ucate || svamputra ra:jateyastu, ra:jateyastumataraṃ, yaścod·gr̥ṇatitaliṅgam·, Atipa:takam ucate || catuspa:taka Iti || bhrunaha, ṅa, vvaṅ a-
 <!-- photo SAS_1982-1983 -->
@@ -362,8 +362,8 @@
 <lb n="24r4"/> yan umiṅsor·, yan· śūnya ri ka:ḍalīpuṣpa, ya Umiṇḍuhurika:, kevala hiriṅən·, sanugraha saṁ hyaṁ kaśūnyan·, sira juga pinakaka[SH]ñciṁ hayva salaḥ para:niṁ tutur·, den· śūnya juga, Ayva:ṅhiḍap· ra:t· bhuvana, pa:pa Ika:, yan maṅkana, nahan hetu saṁ hyaṁ Oṅ kara hi so§-
 <!-- photo SAS_1967-1968 -->
 <fw place="left" n="24"><num>24</num></fw>
-<lb n="24v1"/> r i ruhur tinulisakən·, maṅkana kramaniṁ lakuniṁ kapatin·, saṁ vruh i pa:nuṅgalira saṁ hyaṁ praṇava ri sor mvaṅ i ruhur·, I vruha saṁ paṇḍita yan tu§[SH]ṅgal· || Upadeśa:nira para bhūjaṅga ri ṅūniṅūni, varaḥvaraḥ riṅ ana:ḍīka:la Ike || 0 || <seg rend="check">[modre]</seg> || ka:laniṁ kapraṇanti-
-<lb n="24v2"/> kan· || <seg rend="check">[modre] </seg>| ka:laniṅ ahurip sira || 0 || nihan kaṁ hinaranan· saṁ hyaṁ Oṅ ka:ra riṁ śarīra, lyaṅ i vitniṅ hati, vitniṁ ba:§[SH]yu hanərus mariṁ vunvunan·, pinaka:havaniṁ ha:rdḍanaraiśvari yan məsa:t· sakeṁ śarīra, Inaranan· ha:rdḍana:raiśvari hiṁ śarīra, sakiṁ Ibu, ra:ḥ, dagiṁ
+<lb n="24v1"/> r i ruhur tinulisakən·, maṅkana kramaniṁ lakuniṁ kapatin·, saṁ vruh i pa:nuṅgalira saṁ hyaṁ praṇava ri sor mvaṅ i ruhur·, I vruha saṁ paṇḍita yan tu§[SH]ṅgal· || Upadeśa:nira para bhūjaṅga ri ṅūniṅūni, varaḥvaraḥ riṅ ana:ḍīka:la Ike || 0 || <hi rend="check">[modre]</hi> || ka:laniṁ kapraṇanti-
+<lb n="24v2"/> kan· || <hi rend="check">[modre] </hi>| ka:laniṅ ahurip sira || 0 || nihan kaṁ hinaranan· saṁ hyaṁ Oṅ ka:ra riṁ śarīra, lyaṅ i vitniṅ hati, vitniṁ ba:§[SH]yu hanərus mariṁ vunvunan·, pinaka:havaniṁ ha:rdḍanaraiśvari yan məsa:t· sakeṁ śarīra, Inaranan· ha:rdḍana:raiśvari hiṁ śarīra, sakiṁ Ibu, ra:ḥ, dagiṁ
 <lb n="24v3"/>, sumsum·, sakalviraniṁ sasaranduniṅ a:ṅga sakiṅ ibu, kaṁ sakiṁ lanaṁ, ba:yu, hiku hinaranan· ha:rdḍa:naraiśvari, riṁ ba:yu lamun apasaḥ lan sara[SH]nduniṁ śarīra, Iku papasahiṁ ha:rdḍanaraiśvari, śūnyakna Ikaṁ haka:śama:rgga, Aka:śama:rgga, ṅa, lyaṅiṁ buṅkah i tuṁtuṅiṁ hr̥daya, ya Ika: hinaranan· A:-
 <lb n="24v4"/> kaśa:, norana ba:yu, nora:na śabda, panuṅgalaniṁ tutur lupa || Inaranan bhaṭa:ra tinūtiṁ pati saṁ paṇḍita, nya rūpata:jña:na ,, Utta§[SH]ma lamun mūkṣa riṁ hapayajña: || 0 0 ||  rva bhineda ṅaranira, Am̐ Aḥ, tuṅgal tuṅgal· rūpa:nira, Aṅhiṁ hanuśvara prabheda la:van visa:rgga:, Ikaṁ vi-
 <!-- photo SAS_1965-1966 -->
