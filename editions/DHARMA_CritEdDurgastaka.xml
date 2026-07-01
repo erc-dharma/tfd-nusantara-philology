@@ -27,7 +27,7 @@
 			<sourceDesc>
 				<listWit>
 					<!-- One witness for each manuscript. Update the content -->
-					<witness xml:id="msL128"> <abbr type="siglum">P</abbr>
+					<witness xml:id="J1"> <abbr type="siglum">J<hi rend="subscript">1</hi></abbr>
 						<!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript --> <msDesc>
 						<msIdentifier>
 							<settlement>Jakarta</settlement>
@@ -68,6 +68,70 @@
 						        <p/>
 						    </history>
 						</msDesc> </witness>
+					<witness xml:id="J2">
+						<abbr type="siglum">J<hi rend="subscript">2</hi></abbr>
+						
+						<msDesc>
+							<msIdentifier>
+								<settlement>Jakarta</settlement>
+								<institution>Perpustakaan Nasional Republik Indonesia</institution>
+								<repository>Koleksi Naskah Nusantara</repository>
+								<idno>L. 876</idno>
+							</msIdentifier>
+							
+							<msContents>
+								<msItem>
+									<title>Composite Śaiva and Buddhist Manuscript</title>
+									<colophon>
+										<quote/>
+									</colophon>
+								</msItem>
+							</msContents>
+							
+							<physDesc>
+								<objectDesc>
+									<p>
+										This manuscript is a <foreign>lontar (ləmpiran)</foreign>,
+										measuring 51 cm in length and consisting of 98 folios with
+										text in Old Javanese language written in Balinese script.
+										It was described by
+										<bibl rend="omitname">
+											<ptr target="bib:Juynboll1911_01"/>
+											<citedRange unit="page">326</citedRange>
+											<citedRange unit="item">MDCCCXXXVIII (cod. 876)</citedRange>
+										</bibl>.
+										It is preserved at Perpustakaan Nasional Republik Indonesia
+										and listed by
+										<bibl rend="omitname">
+											<ptr target="bib:Behrend1998_01"/>
+											<citedRange unit="page">370</citedRange>
+											<citedRange unit="item">71 L 876</citedRange>
+										</bibl>.
+										The manuscript consists of two separately numbered parts.
+										The first part contains exclusively Śaiva texts, whereas the
+										second contains Buddhist texts together with material that
+										appears to be Śaiva. This manuscript was used by
+										<bibl rend="omitname">
+											<ptr target="bib:Bosch1929_02"/>
+										</bibl>
+										for his edition of the <title>Kalpabuddha</title>.
+									</p>
+								</objectDesc>
+								
+								<handDesc>
+									<handNote xml:id="J2_H1" scriptRef="class:38769 maturity:83215"> 
+										<abbr type="hand"/> 
+										<p>Main hand of the manuscript, black ink, in Balinese script.</p>
+									</handNote> 
+								</handDesc>
+							</physDesc>
+							
+							<history>
+								<p>Transliterated by Arlo Griffiths, Ida Bagus Komang Sudarma, and I Gde Agus Darma Putra from photographs.</p>
+							</history>
+							
+						</msDesc>
+					</witness>
 					<witness xml:id="edSS">
 						<abbr type="siglum">SS</abbr>
 						<bibl>
@@ -112,7 +176,7 @@
 <lg>
 <l n="a">Aum̐ kāli kāla dutinarahr̥daya saśokānite nograhno|</l>
 <l n="b">Aum̐ kāreḥ ghoraṇādo pralaya vita śikātāraṅ phīṅgakṣi rodra|</l>
-<l n="c">hrīm̐ hraḥ tejobi pur<lb n="1r2"/>ṇne paśa dahaya <app><lem>phaṭa</lem><rdg wit="#msL128"><unclear	reason="eccentric_ductus">pha</unclear>ṭā</rdg></app>pātamā
+<l n="c">hrīm̐ hraḥ tejobi pur<lb n="1r2"/>ṇne paśa dahaya <app><lem>phaṭa</lem><rdg wit="#J1"><unclear	reason="eccentric_ductus">pha</unclear>ṭā</rdg></app>pātamā
     bheravītvə|</l> 
 <l n="d">hīm̐ hraḥ kaṅkāla da<del rend="ui">ra</del>:rī tribūvaṇa mata hārakṣamə; badrakāli @1</l>
 </lg> 
@@ -123,11 +187,14 @@
 <l n="c">jrām̐ jrām̐ jrīm̐ vibakṣā śava rūdira mahāmaṅśa pāli vimohī| </l>
 <l n="d">hīm̐ hrāṁ kam̐ kāla dārī tribūvaṇā śūpitā rakṣamə; badrāka<lb n="1r4"/>li @2 </l></lg>
 
-Aum̐ kāraṇa yām̐ yām̐ carmmanetre hara hara hara
-Aum̐ kāraṇā destanāde|
-krūm̐ krum̐ yūm̐ yūm̐ vaśaghnīḥ vikr̥tadarasiraṁ skandatāte munande|
-glom̐ glom̐ rām̐ rām̐ la lā lā la la la la<pb n="1v"/> <!-- F.001v--><lb n="1v1"/>sahite kūlahaste praAste|
-	pa<del rend="strikeout">:</del>yastā pāpaṇa seda marukaśahite rakṣamə; bādrakali <g type="ddandaOrnate">@1 vam̐ @1</g> Itiḥ mantra panəhət· @1 @1
+<lg>
+<l n="a">Aum̐ kāraṇa yām̐ yām̐ carmmanetre hara hara hara Aum̐ kāraṇā destanāde|</l>
+<l n="b">krūm̐ krum̐ yūm̐ yūm̐ vaśaghnīḥ vikr̥tadarasiraṁ skandatāte munande|</l>
+<l n="c">glom̐ glom̐ rām̐ rām̐ la lā lā la la la la<pb n="1v"/> <!-- F.001v--><lb n="1v1"/>sahite kūlahaste praAste|</l>
+<l n="d">pa<del rend="strikeout">:</del>yastā pāpaṇa seda marukaśahite rakṣamə; bādrakali <g type="ddandaOrnate">@1 vam̐ @1</g></l> 
+</lg>
+	
+Itiḥ mantra panəhət· @1 @1
 
 <lg>
 <l n="a">Aum̐ ganapati mahiśorai|</l>
@@ -157,7 +224,7 @@ KHAṀ KHAṀ KHAṀ khaḍgadhāre, tribhuvananilaye, kāli kaṅkāladhāri
 RAṀ RAṀ RAṀ raṅga-raṅge, prahasitavadane, piṅgakeśi śmaśāne
 VRAṀ VRIṀ VRUṀ sthāpanīye, bhr̥kuṭipaṭuphaṭāṭopaṭoṁkāravajre. 
 	
-L876: 
+J1: 
 ham̐ ham̐ ham̐[SH] haṅsa haṅse hasita Iha Ihe mukti ghora:ṣṭahaṣe, 
 kam̐ kam̐ kam̐ kadgada:re tribhūvaṇa nilaye ka:likaṅka:lada:ri, 
 ram̐ ram̐ ram̐ raṅga raṅge prahasitava-danepiṅgakesi śmaśa:ne, 
@@ -165,34 +232,38 @@ vram̐ vrīm̐ vrum̐ stapaniye bhrukuṭi tatupaṭa:toṁṅka:ravajre
 -->
 
 <lg>
-<l n="a">Aum̐ ham̐ <app><lem wit="#msL128">hām̐</lem><rdg wit="#edSS">hāṁ</rdg></app> hāṅṣa haṅṣe hasita iha ihā <app><lem wit="#edSS">muktaghorāṭṭahāse</lem><rdg wit="#msL128">mūktaghorraṭāhāse</rdg></app>|</l>
-<l n="b"><lb n="1v4"/><app><lem wit="#edSS">kham̐ kham̐ kham̐</lem><rdg wit="#msL128">kam̐ kam̐ kam̐</rdg></app><app><lem wit="#edSS">khaḍgadhāre</lem><rdg wit="#msL128">ka<unclear reason="eccentric_ductus">d</unclear>kahasve</rdg></app> tribūvaṇānilaye kāli <app><lem wit="#edSS">kaṅkāladhāri</lem><rdg wit="#msL128">kaṅkāladari</rdg></app>|</l> 
+<l n="a">Aum̐ ham̐ <app><lem wit="#J1">hām̐</lem><rdg wit="#edSS">hāṁ</rdg></app> hāṅṣa haṅṣe hasita iha ihā <app><lem wit="#edSS">muktaghorāṭṭahāse</lem><rdg wit="#J1">mūktaghorraṭāhāse</rdg></app>|</l>
+<l n="b"><lb n="1v4"/><app><lem wit="#edSS">kham̐ kham̐ kham̐</lem><rdg wit="#J1">kam̐ kam̐ kam̐</rdg></app><app><lem wit="#edSS">khaḍgadhāre</lem><rdg wit="#J1">ka<unclear reason="eccentric_ductus">d</unclear>kahasve</rdg></app> tribūvaṇānilaye kāli <app><lem wit="#edSS">kaṅkāladhāri</lem><rdg wit="#J1">kaṅkāladari</rdg></app>|</l> 
 <l n="c">ram̐ ram̐ ram̐ raṅga raṅge <app><lem wit="#edSS">prahasitavadane</lem><rdg
-			wit="#msL128">prahatavadane</rdg></app> <app><lem wit="#edSS">piṅgakeśi</lem><rdg
-					wit="#msL128">piṅgate</rdg></app> <app><lem wit="#edSS">śmaśāne</lem><rdg wit="#msL128">sarvvasāne</rdg></app>| </l>
+			wit="#J1">prahatavadane</rdg></app> <app><lem wit="#edSS">piṅgakeśi</lem><rdg
+					wit="#J1">piṅgate</rdg></app> <app><lem wit="#edSS">śmaśāne</lem><rdg wit="#J1">sarvvasāne</rdg></app>| </l>
 
-<l n="d"><app><lem wit="#edSS">vram̐ vrim̐ vrum̐</lem><rdg wit="#msL128">brām̐ bram̐
-			brūm̐</rdg></app> <app><lem wit="#edSS">sthāpanīye</lem><rdg wit="#msL128">svāpaniye</rdg></app><app><lem wit="#edSS">bhr̥kuṭi</lem><rdg wit="#msL128">brukuṭi</rdg></app> <app><lem wit="#edSS">paṭuphaṭāṭo</lem><rdg wit="#msL128">tadapaṭeṭo</rdg></app> paṭ
-	<app><lem wit="#edSS">oṁkāravajre</lem><rdg wit="#msL128">aṅkāragarje</rdg></app> @</l>
+<l n="d"><app><lem wit="#edSS">vram̐ vrim̐ vrum̐</lem><rdg wit="#J1">brām̐ bram̐
+			brūm̐</rdg></app> <app><lem wit="#edSS">sthāpanīye</lem><rdg wit="#J1">svāpaniye</rdg></app><app><lem wit="#edSS">bhr̥kuṭi</lem><rdg wit="#J1">brukuṭi</rdg></app> <app><lem wit="#edSS">paṭuphaṭāṭo</lem><rdg wit="#J1">tadapaṭeṭo</rdg></app> paṭ
+	<app><lem wit="#edSS">oṁkāravajre</lem><rdg wit="#J1">aṅkāragarje</rdg></app> @</l>
 </lg>
 
-<!-- HRAṀ HRIṀ HRUṀ lambajihve, khagakhagakhagaje, ehi ehi pracaṇḍe
+<!-- 
+SS:
+HRAṀ HRIṀ HRUṀ lambajihve, khagakhagakhagaje, ehi ehi pracaṇḍe
 JRAṀ JRIṀ JRUṀ khaḍgadhāre, rarararararare, jvālini piṅgalākṣi
 GHEṀ GHEṀ GHEṀ bhūtanāthe, kilikilirahase, caṇḍike carmamuṇḍe
-RAṀ RIṀ RUṀ kṣipralambe, pralayapariṇate, nagnarūpisvarūpe. -->
+RAṀ RIṀ RUṀ kṣipralambe, pralayapariṇate, nagnarūpisvarūpe. 
+	
+-->
 
 <lg><pb n="2r"/> <!-- F.002r -->
-<l n="a"><lb n="2r1"/>hram̐ <app><lem wit="#edSS">hrim̐</lem><rdg wit="#msL128">hram̐</rdg></app> <app><lem wit="#edSS">hrum̐</lem><rdg wit="#msL128">hrūm̐</rdg></app> <app><lem wit="#edSS">lambajihve</lem><rdg wit="#msL128">lambhajīye</rdg></app> <app><lem wit="#msL128">ka ka ka ka ka ka goye</lem><rdg wit="#edSS">khagakhagakhagaje</rdg></app> <app><lem wit="#edSS">ehi ehi</lem><rdg wit="#msL128">hi he hi</rdg></app> pracaṇḍe|</l>
-<l n="b"><app><lem wit="#msL128">jhram̐ jhrim̐ jhrūm̐</lem><rdg>jram̐ jrim̐ jrum̐</rdg></app>
-	<app><lem wit="#edSS">khaḍgadhāre</lem><rdg wit="#msL128">padmadāre</rdg></app> ra ra ra ra ra ra
-	re <app><lem wit="#edSS">jvālini</lem><rdg wit="#msL128">jvalāti</rdg></app> <app><lem wit="#edSS">piṅgalākṣi</lem><rdg wit="#msL128">piṅgalakṣe|</rdg></app></l>
+<l n="a"><lb n="2r1"/>hram̐ <app><lem wit="#edSS">hrim̐</lem><rdg wit="#J1">hram̐</rdg></app> <app><lem wit="#edSS">hrum̐</lem><rdg wit="#J1">hrūm̐</rdg></app> <app><lem wit="#edSS">lambajihve</lem><rdg wit="#J1">lambhajīye</rdg></app> <app><lem wit="#J1">ka ka ka ka ka ka goye</lem><rdg wit="#edSS">khagakhagakhagaje</rdg></app> <app><lem wit="#edSS">ehi ehi</lem><rdg wit="#J1">hi he hi</rdg></app> pracaṇḍe|</l>
+<l n="b"><app><lem wit="#J1">jhram̐ jhrim̐ jhrūm̐</lem><rdg>jram̐ jrim̐ jrum̐</rdg></app>
+	<app><lem wit="#edSS">khaḍgadhāre</lem><rdg wit="#J1">padmadāre</rdg></app> ra ra ra ra ra ra
+	re <app><lem wit="#edSS">jvālini</lem><rdg wit="#J1">jvalāti</rdg></app> <app><lem wit="#edSS">piṅgalākṣi</lem><rdg wit="#J1">piṅgalakṣe|</rdg></app></l>
 <l n="c">ghem̐ ghem̐ ghem̐ <app><lem wit="#edSS">bhūtanāthe</lem><rdg
 
 
-			wit="#msL128">būtanāte</rdg></app> kili kili rahase caṇḍike <app><lem wit="#edSS">carmamuṇḍe</lem><rdg wit="#msL128">karmma<lb n="2r2"/>mūṇḍe|</rdg></app></l> 
-<l n="d"><app><lem>ram̐ rim̐ rūm̐</lem><rdg wit="#msL128">ram̐ ram̐ rūm̐</rdg></app> <app><lem
-			wit="#edSS">kṣipralambe</lem><rdg wit="#msL128">mṣripralambhe</rdg></app> pralaya pariṇate
-	<app><lem wit="#edSS">nagnarūpisvarūpe</lem><rdg wit="#msL128">nāgnarūpāsarūpe</rdg></app> @2</l></lg> 
+			wit="#J1">būtanāte</rdg></app> kili kili rahase caṇḍike <app><lem wit="#edSS">carmamuṇḍe</lem><rdg wit="#J1">karmma<lb n="2r2"/>mūṇḍe|</rdg></app></l> 
+<l n="d"><app><lem>ram̐ rim̐ rūm̐</lem><rdg wit="#J1">ram̐ ram̐ rūm̐</rdg></app> <app><lem
+			wit="#edSS">kṣipralambe</lem><rdg wit="#J1">mṣripralambhe</rdg></app> pralaya pariṇate
+	<app><lem wit="#edSS">nagnarūpisvarūpe</lem><rdg wit="#J1">nāgnarūpāsarūpe</rdg></app> @2</l></lg> 
 	
 <!-- satyaṁ saṁhāraghore, lalalalalalane, śūlahaste prahaste
 kuṣme kūṣmāṇḍamuṇḍe, hahahahahahare, bhairavi ugrateje
@@ -200,18 +271,18 @@ BHRAṀ BHRIṀ BHRUṀ kālarātri, niśicaniśicare, vajradaṇḍe prahaste
 KAṀ KAṀ KAṀ mantradhāre, ḍamaruka sahite, bhadrade bhadrakāli. -->
 	
 <lg>
-<l n="a"><app><lem wit="#edSS">satyaṁ</lem><rdg wit="#msL128">satya</rdg></app><app><lem
-			wit="#edSS">saṁhāraghore</lem><rdg wit="#msL128">jhajhāraighore</rdg></app> la la la la la la ne
-	<app><lem wit="#edSS">śūlahaste</lem><rdg wit="#msL128">śūlahasve</rdg></app> prahaste|</l> 
-<l n="b"><app><lem wit="#edSS">kuṣme</lem><rdg wit="#msL128">putaiḥ</rdg></app> kūṣmāṇḍamuṇḍe ha
+<l n="a"><app><lem wit="#edSS">satyaṁ</lem><rdg wit="#J1">satya</rdg></app><app><lem
+			wit="#edSS">saṁhāraghore</lem><rdg wit="#J1">jhajhāraighore</rdg></app> la la la la la la ne
+	<app><lem wit="#edSS">śūlahaste</lem><rdg wit="#J1">śūlahasve</rdg></app> prahaste|</l> 
+<l n="b"><app><lem wit="#edSS">kuṣme</lem><rdg wit="#J1">putaiḥ</rdg></app> kūṣmāṇḍamuṇḍe ha
 	ha<lb n="2r3"/>ha ha ha ha rai bhairavi ugrateje|</l> 
-<l n="c"><app><lem wit="#edSS">bhram̐ bhram̐ bhrum̐</lem><rdg wit="#msL128">bram̐ bram̐
+<l n="c"><app><lem wit="#edSS">bhram̐ bhram̐ bhrum̐</lem><rdg wit="#J1">bram̐ bram̐
 			brūm̐</rdg></app> kālarātrī niśica-niśicare <app><lem wit="#edSS">vajradaṇḍe</lem><rdg
-					wit="#msL128">bajraḍaṇḍeśa</rdg></app> <app><lem wit="#edSS">prahaste</lem><rdg wit="#msL128">badre</rdg></app>|</l> 
+					wit="#J1">bajraḍaṇḍeśa</rdg></app> <app><lem wit="#edSS">prahaste</lem><rdg wit="#J1">badre</rdg></app>|</l> 
 <l n="d">kam̐ kam̐ kam̐ <app><lem wit="#edSS">mantradhāre</lem><rdg
-			wit="#msL128">mantraśārai</rdg></app> <app><lem wit="#edSS">ḍamaruka sahite</lem><rdg
-					wit="#msL128">jamūji tiji tara</rdg></app> <app><lem wit="#edSS">bhadrade</lem><rdg
-							wit="#msL128">bādradā</rdg></app> <app><lem wit="#edSS">bhadrakāli</lem><rdg wit="#msL128">bādrakali</rdg></app> @2</l>
+			wit="#J1">mantraśārai</rdg></app> <app><lem wit="#edSS">ḍamaruka sahite</lem><rdg
+					wit="#J1">jamūji tiji tara</rdg></app> <app><lem wit="#edSS">bhadrade</lem><rdg
+							wit="#J1">bādradā</rdg></app> <app><lem wit="#edSS">bhadrakāli</lem><rdg wit="#J1">bādrakali</rdg></app> @2</l>
 </lg> 
 
 <!-- yogi-yogādināthe, hanahanahanaye, iṣṭatuṣṭe triśūle
@@ -221,19 +292,19 @@ GHRAṀ GHRIṀ GHRUṀ ghoranāde, prahasitavadane, bhinnamūrtipracaṇḍe. -
 	
 <lg>
 <l n="a">yogi<lb n="2r4"/><app><lem wit="#edSS">yogādināthe</lem><rdg
-		wit="#msL128">yogādināte</rdg></app> hana-hana <app><lem wit="#edSS">dahane</lem><rdg
-				wit="#edSS">hanaye</rdg></app> <app><lem wit="#msL128">kr̥ṣna kr̥ṣṇe</lem><rdg wit="#edSS">iṣṭatuṣṭe</rdg></app> triśūle|</l> 
-<l n="b"><app><lem wit="#edSS">nityaṁ</lem><rdg wit="#msL128">nityai</rdg></app> prajvālamāli ra ra
-	ra ra ra ra <app><lem wit="#msL128">rai</lem><rdg wit="#edSS">re</rdg></app> sarvvacakṣuḥ pracaṇḍe|</l> 
-<l n="c"><app><lem wit="#edSS">klam̐ klim̐ klum̐</lem><rdg wit="#msL128">klam̐ klam̐</rdg></app>
-	<app><lem wit="#edSS">kālyakāli</lem><rdg wit="#msL128">kalyanakāli</rdg></app> <app><lem
-			wit="#edSS">śaśadharadhavale</lem><rdg wit="#msL128">vikr̥tanaraśive</rdg></app>
-	<app><lem wit="#edSS">ūrdhvaghore</lem><rdg wit="#msL128">ūrd<unclear
-				reason="eccentric_ductus">va</unclear>ghore</rdg></app> <app><lem wit="#edSS">karāli</lem><rdg wit="#msL128">ka<pb n="2v"/> <!-- F.002v--><lb n="2v1"/>rapi</rdg></app> 
+		wit="#J1">yogādināte</rdg></app> hana-hana <app><lem wit="#edSS">dahane</lem><rdg
+				wit="#edSS">hanaye</rdg></app> <app><lem wit="#J1">kr̥ṣna kr̥ṣṇe</lem><rdg wit="#edSS">iṣṭatuṣṭe</rdg></app> triśūle|</l> 
+<l n="b"><app><lem wit="#edSS">nityaṁ</lem><rdg wit="#J1">nityai</rdg></app> prajvālamāli ra ra
+	ra ra ra ra <app><lem wit="#J1">rai</lem><rdg wit="#edSS">re</rdg></app> sarvvacakṣuḥ pracaṇḍe|</l> 
+<l n="c"><app><lem wit="#edSS">klam̐ klim̐ klum̐</lem><rdg wit="#J1">klam̐ klam̐</rdg></app>
+	<app><lem wit="#edSS">kālyakāli</lem><rdg wit="#J1">kalyanakāli</rdg></app> <app><lem
+			wit="#edSS">śaśadharadhavale</lem><rdg wit="#J1">vikr̥tanaraśive</rdg></app>
+	<app><lem wit="#edSS">ūrdhvaghore</lem><rdg wit="#J1">ūrd<unclear
+				reason="eccentric_ductus">va</unclear>ghore</rdg></app> <app><lem wit="#edSS">karāli</lem><rdg wit="#J1">ka<pb n="2v"/> <!-- F.002v--><lb n="2v1"/>rapi</rdg></app> 
 </l>
 <l n="d">ghram̐ ghr<unclear reason="eccentric_ductus">i</unclear>m̐ ghrūm̐ <app><lem
-			wit="#edSS">ghoranāde</lem><rdg wit="#msL128">ghoranāte</rdg></app> <app><lem
-					wit="#edSS">prahasitavadane</lem><rdg wit="#msL128">prakaṭitavadane</rdg></app> <app><lem wit="#edSS">bhinnamūrtipracaṇḍe</lem><rdg wit="#msL128">binamurttipracaṇḍe</rdg></app> @2
+			wit="#edSS">ghoranāde</lem><rdg wit="#J1">ghoranāte</rdg></app> <app><lem
+					wit="#edSS">prahasitavadane</lem><rdg wit="#J1">prakaṭitavadane</rdg></app> <app><lem wit="#edSS">bhinnamūrtipracaṇḍe</lem><rdg wit="#J1">binamurttipracaṇḍe</rdg></app> @2
 </l></lg> 
 	
 <!-- ākāśottālajihve, pralayapariṇate, granthicchede triṇetre
@@ -243,26 +314,26 @@ trāhi māṁ kālavāse, asurasurapate, rakṣa māṁ bhadrakāli. -->
 	
 <lg>
 <l n="a"><app><lem wit="#edSS">ākāśottāla</lem>
-		<rdg wit="#msL128">ākāśetāla</rdg></app> 
+		<rdg wit="#J1">ākāśetāla</rdg></app> 
 	<app><lem	wit="#edSS">jihve</lem>
-		<rdg wit="#msL128">jaṅg<subst><del>a</del><add place="below" rend="mark">e</add></subst></rdg></app> pralaya
+		<rdg wit="#J1">jaṅg<subst><del>a</del><add place="below" rend="mark">e</add></subst></rdg></app> pralaya
 	<app rend="hide"><lem wit="#edSS">pariṇate</lem>
-		<rdg wit="#msL128">parinate</rdg></app> 
+		<rdg wit="#J1">parinate</rdg></app> 
 	<app><lem wit="#edSS">granthicchede</lem>
-		<rdg wit="#msL128">grantirode</rdg></app> trinetre|</l>
+		<rdg wit="#J1">grantirode</rdg></app> trinetre|</l>
 	
-<l n="b"><app><lem wit="#edSS">śaktiṣṭhe bhāvahāse</lem><rdg wit="#msL128">kaṣtepāśā na
+<l n="b"><app><lem wit="#edSS">śaktiṣṭhe bhāvahāse</lem><rdg wit="#J1">kaṣtepāśā na
 			madye</rdg></app> hutavahanila<lb n="2v2"/>ye kāli 
-	<app rend="hide"><lem wit="#edSS">kaṅkāladhāri</lem><rdg wit="#msL128">kaṅkāladāri</rdg></app>|</l>
+	<app rend="hide"><lem wit="#edSS">kaṅkāladhāri</lem><rdg wit="#J1">kaṅkāladāri</rdg></app>|</l>
 	
-<l n="c"><app><lem wit="#edSS">lamboṣṭhe</lem><rdg wit="#msL128">lambhopṭe</rdg></app> ā<unclear
+<l n="c"><app><lem wit="#edSS">lamboṣṭhe</lem><rdg wit="#J1">lambhopṭe</rdg></app> ā<unclear
 		reason="eccentric_ductus">n</unclear>tarikṣe 
-	<app rend="hide"><lem wit="#edSS">daśadiśi</lem><rdg wit="#msL128">daśadiśī</rdg></app> <app><lem
-			wit="#edSS">gagane</lem><rdg wit="#msL128">gamane</rdg></app> <app><lem wit="#edSS">karmamāyādharitri</lem><rdg wit="#msL128">harmmamāyantadāri</rdg></app>|</l> 
+	<app rend="hide"><lem wit="#edSS">daśadiśi</lem><rdg wit="#J1">daśadiśī</rdg></app> <app><lem
+			wit="#edSS">gagane</lem><rdg wit="#J1">gamane</rdg></app> <app><lem wit="#edSS">karmamāyādharitri</lem><rdg wit="#J1">harmmamāyantadāri</rdg></app>|</l> 
 	
 <l n="d"><app><lem wit="#edSS">trāhi māṁ kālavāse</lem><rdg
-			wit="#msL128">cakrīpātālavāśī</rdg></app> <app><lem wit="#edSS">asurasurapate</lem><rdg
-					wit="#msL128">haśuraṇaramitā</rdg></app> rakṣa <app rend="hide"><lem wit="#edSS">māṁ</lem><rdg wit="#msL128">mə</rdg></app> badrakāli @2</l>
+			wit="#J1">cakrīpātālavāśī</rdg></app> <app><lem wit="#edSS">asurasurapate</lem><rdg
+					wit="#J1">haśuraṇaramitā</rdg></app> rakṣa <app rend="hide"><lem wit="#edSS">māṁ</lem><rdg wit="#J1">mə</rdg></app> badrakāli @2</l>
 </lg>
 
 <!-- BHAṀ BHAṀ BHAṀ bhāvabhāve, bhavabhavarahite, bhuktimuktipracaṇḍe
@@ -271,22 +342,22 @@ BHUṀ BHUṀ BHUṀ bhūmikampe, gagagaganacare, nācaritre caritre
 BHEṀ BHEṀ BHEṀ bhedanīye, halahalahalaye, kālakūṭe namas te. -->
 
 <lg>
-<l n="a"><app><lem wit="#edSS">bham̐ bham̐ bham̐</lem><rdg wit="#msL128">bam̐ bam̐ bham̐</rdg></app>
-	<app><lem type="norm" wit="#edSS">bha</lem><rdg wit="#msL128">bhām̐</rdg></app>va <app
-		rend="hide"><lem wit="#edSS">bhā</lem><rdg wit="#msL128">bā<lb n="2v3"/>ve</rdg></app> <app
-			rend="hide"><lem wit="#edSS">bhavabhavarahite</lem><rdg wit="#msL128">bavabavarahite</rdg></app>
-	<app rend="hide"><lem wit="#edSS">bhukti</lem><rdg wit="#msL128">bukti</rdg></app> mukti <app><lem wit="#edSS">pracaṇḍe</lem><rdg wit="#msL128">prayūkte</rdg></app>|</l>
-<l n="b"><app><lem wit="#edSS">bhim̐ bhim̐ bhim̐</lem><rdg wit="#msL128">bī bī bī</rdg></app>
-	<app rend="hide"><lem wit="#edSS">kālarātri</lem><rdg wit="#msL128">kālaratri</rdg></app>
+<l n="a"><app><lem wit="#edSS">bham̐ bham̐ bham̐</lem><rdg wit="#J1">bam̐ bam̐ bham̐</rdg></app>
+	<app><lem type="norm" wit="#edSS">bha</lem><rdg wit="#J1">bhām̐</rdg></app>va <app
+		rend="hide"><lem wit="#edSS">bhā</lem><rdg wit="#J1">bā<lb n="2v3"/>ve</rdg></app> <app
+			rend="hide"><lem wit="#edSS">bhavabhavarahite</lem><rdg wit="#J1">bavabavarahite</rdg></app>
+	<app rend="hide"><lem wit="#edSS">bhukti</lem><rdg wit="#J1">bukti</rdg></app> mukti <app><lem wit="#edSS">pracaṇḍe</lem><rdg wit="#J1">prayūkte</rdg></app>|</l>
+<l n="b"><app><lem wit="#edSS">bhim̐ bhim̐ bhim̐</lem><rdg wit="#J1">bī bī bī</rdg></app>
+	<app rend="hide"><lem wit="#edSS">kālarātri</lem><rdg wit="#J1">kālaratri</rdg></app>
 	gūhagūha<app><lem type="norm">hariṇī</lem><rdg wit="#edSS">hariṇi</rdg><rdg
-			wit="#msL128">harinī</rdg></app> <app><lem wit="#edSS">vāyupovāyubhogi</lem><rdg wit="#msL128">vāsūbogosvabogi</rdg></app>|</l>
-<l n="c"><app><lem wit="#edSS">bhum̐ bhum̐ bhum̐</lem><rdg wit="#msL128">bū bū bū</rdg></app>
-	<app rend="hide"><lem wit="#edSS">bhūmikampe</lem><rdg wit="#msL128">būmmikampe</rdg></app> ga ga
-	ga <app><lem wit="#edSS">ganacare</lem><rdg wit="#msL128">gamacare</rdg></app> <app><lem wit="#edSS">nācaritre caritre</lem><rdg wit="#msL128">nādarakte carikte</rdg></app>|</l>
-<l n="d"><app><lem wit="#edSS">bhem̐ bhem̐ bhem̐</lem><rdg wit="#msL128">be be<lb
+			wit="#J1">harinī</rdg></app> <app><lem wit="#edSS">vāyupovāyubhogi</lem><rdg wit="#J1">vāsūbogosvabogi</rdg></app>|</l>
+<l n="c"><app><lem wit="#edSS">bhum̐ bhum̐ bhum̐</lem><rdg wit="#J1">bū bū bū</rdg></app>
+	<app rend="hide"><lem wit="#edSS">bhūmikampe</lem><rdg wit="#J1">būmmikampe</rdg></app> ga ga
+	ga <app><lem wit="#edSS">ganacare</lem><rdg wit="#J1">gamacare</rdg></app> <app><lem wit="#edSS">nācaritre caritre</lem><rdg wit="#J1">nādarakte carikte</rdg></app>|</l>
+<l n="d"><app><lem wit="#edSS">bhem̐ bhem̐ bhem̐</lem><rdg wit="#J1">be be<lb
 				n="2v4"/>be</rdg></app> <app><lem wit="#edSS">bhedanīye</lem><rdg
-						wit="#msL128">bedaneye</rdg></app> <app><lem wit="#edSS">halahalahalaye</lem><rdg
-								wit="#msL128">hara hara hara ye</rdg></app> kālakūṭe namas te @2</l>
+						wit="#J1">bedaneye</rdg></app> <app><lem wit="#edSS">halahalahalaye</lem><rdg
+								wit="#J1">hara hara hara ye</rdg></app> kālakūṭe namas te @2</l>
 </lg>
 	
 <!-- HRAṀ HRIṀ HRUṀ indrabhāve, śaśadharadhavale, brahmacandre mahendre
@@ -310,8 +381,7 @@ d. mss -aṣṭakāryaḥ -->
 
 Itiḥ durggāṣṭakamantra @ 
 
-pukulun pasaṁtabe punaṁ kavaya<del rend="ui">na</del>han· den ṣapuraha dene kaṅ amilaṁ kaṅ
-	amisarkakən· den patūtalviḥ den· loṁṅana pasiśi<lb n="3r4"/>nahon· hanut· babon praśadune kaya pcakiṁ pacul· corak· carik ṣrigītiṅən· jənəṅipun ṣampun hajriḥ haṁloṅi haṅuraṅi kaṅ anu<add rend="mark" place="above">+ ra</add>t· duruṁ ṅave vedaṁ @ 
+pukulun pasaṁtabe punaṁ kavaya<del rend="ui">na</del>han· den ṣapuraha dene kaṅ amilaṁ kaṅ amisarkakən· den patūtalviḥ den· loṁṅana pasiśi<lb n="3r4"/>nahon· hanut· babon praśadune kaya pcakiṁ pacul· corak· carik ṣrigītiṅən· jənəṅipun ṣampun hajriḥ haṁloṅi haṅuraṅi kaṅ anu<add rend="mark" place="above">+ ra</add>t· duruṁ ṅave vedaṁ @ 
 
 <pb n="3v"/> <!-- F.003v -->
 <!-- empty -->
@@ -344,8 +414,10 @@ based on photographs by Garin Pharmasetiawan. Encoded by M. Aftharu Mulia, check
 <p>new set of tiff photos</p>
 <p>https://sharedocs.huma-num.fr/wl/?id=jOSimD60lhzOxwz2kJb7nX32ufjtLtzS</p>-->
         <listBibl type="bibliography">
-            <bibl><ptr target="bib:Behrend1998_01"/><citedRange unit="page">...</citedRange></bibl>
-            <bibl><ptr target="bib:Goudriaan+Hooykaas1971_01"/><citedRange unit="page">196–207</citedRange></bibl>
+	<bibl><ptr target="bib:Behrend1998_01"/><citedRange unit="page">...</citedRange></bibl>
+        	<bibl><ptr target="bib:Bosch1929_02"/></bibl>
+	<bibl><ptr target="bib:Goudriaan+Hooykaas1971_01"/><citedRange unit="page">196–207</citedRange></bibl>
+        	<bibl><ptr target="bib:Juynboll1911_01"/><citedRange unit="page">326</citedRange><citedRange unit="entry">MDCCCXXXVIII</citedRange></bibl> 
         </listBibl>
 <!-- <listBibl type="editions">
 <bibl/></listBibl> -->
