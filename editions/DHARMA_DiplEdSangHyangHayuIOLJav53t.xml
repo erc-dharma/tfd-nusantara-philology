@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="editorial">Saṅ Hyaṅ Hayu</title>
+                <!--change the title of the edition starting, if possible, with the title of your text-->
+		<!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
+                <!--<title type="alt"></title>-->
+		    <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+		<!--<title type="original" xml:lang="...-Latn"></title>-->
+                    <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+                <!--<author></author>-->
+                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+                <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+                    <resp>author of digital edition</resp>
+                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                    <persName ref="part:mano"><!-- update the id -->
+                        <forename>Muhamad</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Alnoza</surname>
+                    </persName>
+                    <persName ref="part:argr"><!-- update the id -->
+                        <forename>Arlo</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Griffiths</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DHARMA_DiplEdSangHyangHayuIOLJav53t.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2026" to="2026">2026-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="IOL_Jav53t">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"/>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>London</settlement>
+                                <institution>British Library</institution>
+                                <idno>Mss./IOL. Jav. 53t</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <!-- <msItem>
+                                </msItem>  -->
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 42 leaves in Javanese script of the Merapi-Merbabu type</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Kawi script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>IOL(Mss.) Jav. 53t is part of MSS. Jav. 53 collections. According to Mackenzie's report (published in Blagden, 1916), this collection consists of 24 MSS writtten in cadjan leaves. These are said to have been brought by the civility of a regent from a long deserted house in distant forests, where they had lain neglected for many years. The information on IOL Jav.  53z suggests the regent in question was Kyahi Tumenggung Puger. These MSS thus to be collected, probably from the area of Puger in East Java (the 'East Hook').  
+</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                <projectDesc>
+                    <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+                    <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl> 
+                <p/>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+           <change who="part:argr part:mano" when="2026-08-11" status="draft">started encoding the diplomatic edition</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="kaw-Latn"> 
+        <ab> 
+<pb n="1v"/>
+<lb n="1v1"/>//0// Avighnam astu na:ma siḍəm· //0// ndaḥ saṁ hyaṁ hayu hikaṁ hajarakna mami riṅ vaṁ kadi kita| kunaṁ deyanta humidhəp· saraṣanikeṁ vu<space type="binding-hole"/>vus mamī| Ayva kita humavaya: raṣa: carita| mvaṁ kalpha rakva maṇavasta| ndya kari lviṙnikaṁ raśa:carita| mavaṁ kalpha rakva maṇa:vasta:| yan kaliṅanta ri kamī| Ahum n(i)han(ta) 
+<lb n="1v2"/>lviṙnya| katyaṅganiṁ viku maṅucap kacaritanika hyaṁ devatha:| kalpha puṙvva bhaṭa:ra bhaṭarī hana ṅuni| An paka yuga: brahma viṣṇu hiśvara: mahadeva| mvaṁ kūśika: <space type="binding-hole"/> gaṙgga metri| kurūṣya pratañjala| mva kaglaraniṁ yakṣa pisaca preta: bhūta: pitara: śivaḥ bhudḍa| yeka raṣacarita ṅaranya| Adva rakva maṇavasta ṅaranika| syapa
+<lb n="1v3"/>kari vnaṁ byaktakna hika:| lena śakeṁ rakva-rakva juka: hika kabaiḥ| nihan ta vanehan uṁkalpha raśaniṁ carita| vijilnya śaka riṅ aji| Inajara:kən saṁ śeva śoga<space type="binding-hole"/>ta| pitu rakva patumpaṁnikaṁ bhūvaṇa| hi śoṙ mvaṁ hiṁ ruhuṙ ta rakva| ndyaḥ lviṙnya nihan·| pr̥thivi ṅaranikaṁ bhuvaṇa kahananta| I śoṙ nikaṁ patala:| I śoṙ nikiṁ patala|
+<lb n="1v4"/>I śoṙ nikaṁ nitala: śutala:| I śoṙ nikaṁ śutala| talan tala| I śoṙ nikaṁ talan tala| tala:niṁ tala| I śoṙ nikaṁ talaniṁ tala| maha:tala| I śoṙ nikaṁ maha<space type="binding-hole"/>tala:| Antyanta hantyanta patala| nahan· lviṙ nikaṁ saptapatala| I śoṙ ta rakva| kadi taya patapniṁ tapayya hinəL̥piṁ vakul· rakva patap(n)ya hi śoṙ maṅ(ka)ṇa <gap reason="illegible" quantity="2" unit="character"/>
+
+
+<pb n="2r"/>
+<lb n="2r1"/>riṅ apuy· tasiḥ| Apa byaktanya śaka riṅ apuy·| Ikaṁ dilaḥ la:van teja| pjaḥ hikaṁ hapuy·| pəd·ptaṁ ja:ti|  ndi ta parani kaṁ dilaḥ la:van teja| mariṁ śu§<space type="binding-hole"/>nya taya kari{ui ka}ya| ta hapiḥ| Apan liṁnira vaneḥ mara riṁ śunyataya ktaḥ paraniṁ dilaḥniṅ apuy· mvaṁ tejanya| hayva ta maṅkaṇa| ndi pva: paran(i) ka(ṁ)<gap reason="illegible" quantity="5" unit="character"/>
+<lb n="2r2"/>mareṅ apuy ya tasiḥ| śaka riṅ apuy· hikaṁ dilaḥ mvaṁ teja| mareṅ apuy· paranya pjaḥ| muliḥ ri saṅkanya ja:tinika| Apa byaktanya| pasaṁ muvaḥ hikaṁ pañja<space type="binding-hole"/>t·| baṙparagata ja:tinika| mijilniṁ dilaḥ mijilniṁ {ui dalaḥ} teja| maṅkaṇa ta yan pjaḥ| Ilaṁniṁ teja paR̥ṁgaha ta yan hilaṁ| Apa ta sinaṅguḥ hapuy· ṅaranya| saṁ
+<lb n="2r3"/>manon·| Apa pinakadilaḥnya hikaṁ hidhəp·| Apa pinakapanasnya mvaṁ pinakatejanya hikaṁ tutur·| ndaḥ saṁ manon ta sinaṅguḥ hapuy· ṅaranya| nahan si<space type="binding-hole"/>naṅguḥ tiga rahaṣya: ṅaranya| vkasniṁ maṅucap tiga liṁ saṁ paṇḍita: @1 ya teka śaṅkaṇiṁ bhūvaṇa: la:van saṙvva: janma| Apa byaktani kaṁ rat yan saka riṁ tiga rahaṣya| nyaṁ lasniṁ 
+<lb n="2r4"/>pari saviji dr̥ṣan(ta)| Apa de yan ta makadr̥ṣa ya| ntoḥ pet· buṁkaḥnya vva:dnya: rva:nya| yadyastun· tətkən pahasat{*i}usən·| Ikaṁ laṣ· viji| deyaniṁ<space type="binding-hole"/>ṅ umeti kaṁ buṅkaḥ vva:d· rva:n·| tan kapaṅguḥ ni ya hanika| ri divasa:nyan maṁkaṇa| tanəmakən ta riṁ lmaḥ| kahudanan kavva:yan pva ya| mtu {*ti}ta kaṁ buṅkaḥ vva:d· vvit· r(va)n·|
+
+
+<pb n="2v"/>	<fw place="left" n="2v">32</fw>
+<lb n="2v1"/>ndi<gap reason="lost" quantity="2" unit="character"/>(saṁ)kan(iṁ) vtu| Athava h(i)ka(ṁ) mraṁ la:van· vyas kuna(ṁ) dad(i) buṅkaḥ vva:d· vv(i):t· lavan· rvan·| taham piḥ tan hana maṅkaṇa| Apa byaktanya| tanəm· kta v(i)j(i)n(i)ṅ ambhava(ṁ)| <space type="binding-hole"/> sivaknika(ṁ) ta(ṁ) kurikanya blaḥ vijinya| mtu teka buṅkaḥ vva:d· lavan· rvan·| Atuha pva ya| mavut teka ta(ṁ) kurikanya| tumimphal vijinya| nahan· byaktanikaṁ vyas la:van·
+<lb n="2v2"/>mraṁ| Antan· ya dadi buṅkaḥ vvad· lavan· rvan·| Aparan pvekaṁ dadi buṅkaḥ vva:d· vvit la:van· rvan·| yekaṁ hidhəp· ginavay hiriya: hikaṁ tutur·| saṁ magava<space type="binding-hole"/>y· saṁ manon·| ya ta mataṅyan pakaṅaran·| vvit·bit la:van· viniḥ| vineḥ huṁgvan·niṁ vvit·bit kaliṅanya| maṅkaṇa lakṣaṇa saṁ manon hana pakajanma: saṙvva: tumuvuḥ| ka 
+<lb n="2v3"/>yu dukut· roṇḍon lavan· hodod·| Apa lakṣaṇa saṁ manon yan hanpaka janma: hikaṁ saṙvva:śatva: mvaṁ janma vva:ṁ| pet· raṣaniṁ tiga: rahaṣya: riṁ hantiga| <space type="binding-hole"/> tiga taḥ lviṙnika| byaktakən yan dadiniṁ tiga:rahaṣya hika| Apa byaknya| taṁ kuranya| putiḥnya| kuniṁ-kuniṁnya| nahan· lviṙny{*i}a tiga riṁ tiga:rahaṣya sineṁnya kaliṅanya
+<lb n="2v4"/>| (R̥)pa liṁniṁ loka| kama la:van· ratiḥ sinaṅguḥnya| dadi janma la:van sarīra| Apa mataṅyan dadi janma: lavan sarīra: hikaṁ kama la:van· ratiḥ| rasekta: <space type="binding-hole"/> hikaṁ hantiga| Apan patm(u)niṁ haya:m la:van· vadon hika| pasaṁ yoganiṁ kama: lavan a:ratiḥ| dadya ta yaḥ kabeḥ hayam·| hayva:navukan·| marahakən taṙ ri kaṁ
+
+
+<pb n="3r"/>
+<lb n="3r1"/><gap reason="lost" extent="unknown" unit="character"/>te glaṙ puja dyan· samadḍi mva:(ṁ) p(va) liṅga liṅi pratima: bimbha| vihara: ṣale ka:mulan· paṙyyaṅan·| cetya caṇḍi praṣada skapa| nahan ta kveḥn(iṁ) gava<space type="binding-hole"/>y· saṁ manon· ri ṣakala: kabeḥ| sḍaṁnya {na}rakut ikīṁ janma: sivva:ṁ| Ika gavay· saṁ manon· riṁ sakala kabeḥ| ni(ṙ)saṁsaya{|} sira hirika| yavat ika saṁ manon milu katu§
+<lb n="3r2"/><gap reason="lost" extent="unknown" unit="character"/>niṁ gavay·nira ri śakala: niskala| tavat pa:pa ka:pataka: hika saṁ manon· yan maṁkaṇa| Enak mara vihikan saṁ manon han· viśeṣa| ya ta mataṅya<space type="binding-hole"/>niṙsaṁsaya: ta juga: huvus· @1 X @1 nihan kapiṇḍoniṁ tūlis·| śabda: śakiriman·| ya pinakase{o}ṁ saṁ paṇḍita| Apa tinuduḥnira:| {nya}gola:kaliḥ viji| matha: kaṇan keri 
+<lb n="3r3"/><gap reason="lost" extent="unknown" unit="character"/>| liriṁniṁ matha kiva| tūtniṁ ma:tha: tṅən·| liriniṁ matha tṅən· tūtniṁ matha: kivan·| Apa kaliṅanya| yuga pat paR̥ṅga ta jatinya| Apa ta sinidinika:| hi<space type="binding-hole"/>dhəp la:van tutūr·| Apa kaliṅanya| la:kuniṁ hidhəp lakuṇiṁ tutur·| la:kuniṁ tutuṙ la:kuniṁ hidhəp·| yuga pat paR̥ṅga ta jatinika| Apam ta rahiniṁ vuvus saṁ paṇḍita| sapi<gap reason="illegible" quantity="1" unit="character"/>
+<lb n="3r4"/><gap reason="lost" extent="unknown" unit="character"/>tutura:nikaṁ śabhuvaṇa| śakinatuturanya ya hinidhəpnya| Apa kinatuturaniki śarat muṁ śahinidhəpnikaṁ sabhūvaṇa| {nya} svaṙgga: pata:la| ya<space type="binding-hole"/>kṣa bhūta: rakṣasa: pisaca:| ṅuni veḥ hadideva:niṁ hyaṁ devatha| bhaṭa:ra: bhaṭari sivaḥ budḍa:| nahan hinidhəpnikaṁ śarat·| Apa kinatuturanya| śakveḥnikaṁ g(l)aṙ p(u)ja pra
+
+
+<pb n="3v"/>
+<lb n="3v1"/><gap reason="lost" extent="unknown" unit="character"/>guḥ lpas· ṅaranya| liṁ haṙyya paṇḍita| nahan taṅkəs· ṅaranya| //0// nihan tambhayniṁ tulis· ṅaranya| Apa tinuduḥ saṁ paṇḍita| ri kambhayniṁ tu<space type="binding-hole"/>lis·| nihan· hototniṁ taṅan kaṇan keri| tulis· lit muṅgviṁ lpa-lpaniṁ taṅanta| qədta keh ika| Apa sinidi hika| k(r̥)tyakatika| k(r̥)taka ṅaranya gavay·| kr̥taḥ ṅa
+<lb n="3v2"/><gap reason="lost" extent="unknown" unit="character"/>Apa kaliṅanya| tan hana gavay· luput· riṁ taṅan·| ya ta mataṅyan tinuduḥ hikaṁ hotot tulisiṁ taṅanta| Apan pinakasoṁ pinaka<space type="binding-hole"/>tatuni gavay· saṁ manon· riṁ niskala: hika| marahakənyan saṁ magavayniṁ śakala: niskala: kaliṅanyika| Apa katuduḥhaniṁ gavay· saṁ manon· riṁ niskala:| yekīṁ bhu<gap reason="illegible" quantity="1" unit="character"/>
+<lb n="3v3"/><gap reason="lost" extent="unknown" unit="character"/>latala| mvaṁ saṙvva: janma: śalviṙnika duvag pinakavaknya| Apa ta lviṙnika duvag pinakavaknya ṅaranya| yekīṁ pr̥thivī hapaḥ teja: bhayu hakaśa{*nya} <space type="binding-hole"/> vintaṁ vula:n haditya: vaṅkava: kuvuṁ-kuvuṁ saṅ uṅkūkus·| megha hudan kilat· glap· gəR̥ḥ gəntəṙ patəra huhandaru paramanuḥ| mvaṁ tr̥ṇa: harula:ta: gulma:| paśu pakṣī  sarī§
+<lb n="3v4"/><gap reason="lost" extent="unknown" unit="character"/>rajaṅgamadi| śeṣiniṁ lvaḥ lavan tasik·| śarumaṅkaṁ śakumilip· riṁ pr̥thivī| makadi sarīra ṣamaṅke| nahan hika sinaṅg(u)ḥ duvag pinakavak· ṅaranya| <space type="binding-hole"/> An ta katuduhaniṁ gavay· saṁ manona: riṁ śakala| riṁ sdhaṁnyan· rakut hikaṁ bhūvaṇa sarīra ṣamaṅke| {*nya)haji kavya saṁ ka{*ya}prakaraṇa| kalpha puraṇa| vin{*y}aya viniścaya canda:gani   
+
+
+<pb n="4r"/>
+<lb n="4r1"/><gap reason="illegible" quantity="2" unit="character"/>vlunya| tan(·) vna(ṁ) hataḥ humadheṁ teja saṁ hyaṁ haditya| Apuy· kari kavnaṅa| Anduruka riṁ vnaṅa| kilat ta ri vnaṅa| nyaṁ vulan· sḍaṁ puṙṇnama:| padha gə(ṁ)nya: pavlu<space type="binding-hole"/>nya| han· vnaṁ hataḥ humadheṁ teja saṁ hyaṁ haditya| la:van ika saṁ hyaṁ haditya| śaka kahananira kta juga: rahina denira| svaṙgga: patala: kahaṇanira| svaṙgga: patala: rahina 
+<lb n="4r2"/>| madyapada: kahaṇanira| madyapada: rahina denira| śakahananira ta: juga:n xuluḥhiṅ avaknira| tumejaniṁ sarīranira| kaliṅanya: śakahaṇan saṁ hyaṁ ha<space type="binding-hole"/>ditya juga: rahina denira| Iva rūpa kala:kṣaṇa| maṁkaṇa tekaṁ saṁ manon·| An tan hana lumviḥhiṁ pr̥mma:ṇanira| riṁ bhūvaṇa la:van saṙvva: janma| saṁ manon ataḥ pr̥mma:
+<lb n="4r3"/><gap reason="lost" quantity="1" unit="character"/>k[1 conjunction lost] kabeḥ tan havaneḥ| riṁ sarīra riṁ bhayu śabda hidhəp·| saṁ manon ataḥ pr̥mma:ṇa makadr̥bya: ya kabeḥ tan hana vaneḥ| tatan hana jugaṁ lumviḥhi si<space type="binding-hole"/>ra pr̥mmaṇa:| tejanira tovi tan hanataḥ lumviḥhi tejanira: riṁ rat·| Adva: devatha: saṁ hulun piḥ| An tan hana huma:dheṁ tejanira riṁ bhuvaṇa| Apan ma:ṅira:
+<lb n="4r3"/><gap reason="lost" quantity="4" unit="character"/>hyaṁ haditya pva:raṇak devatha: saṁ hulun· maṅke| {*n}tovi kaśahaban deniṁ vṅi| kakuśa deniṁ ptaṁ| yan kū kita| tuhu hika| ya kta mataṅyan ha<space type="binding-hole"/>na magurū la:van manambhaḥ ṅaranya: rikeṁ loka| majarakən kaptaṁnya lavan pa:paniṁ janma: śamaṅke kaliṅanya| Apan ri sḍaṁnyan· rakut ikīṁ sarīra: samaṅke hika saṁ ma§
+
+
+<pb n="4v"/>
+<lb n="4v1"/><gap reason="lost" extent="unknown" unit="character"/>lak· vṅī| pañcavara śadvara saptavara| sandi divaṣa:niṁ tahun·| nahan kinatutura:nikaṁ sabhūvaṇa| nityaseṁ rahineṁ kaL̥m hikiṁ loka| hini<space type="binding-hole"/>dhəpī kala:van kumatuturi hika| ya hinva:na manaḥnya sarī{*ra}-śarī tan pgat·| Ayva ta saṁ manon milu maṅkaṇa| yavat ika saṁ manon milū humidhəpī kala:van kumatutur{1 vocal illegible}{2 akṣ. illegible}
+<lb n="4v2"/><gap reason="lost" extent="unknown" unit="character"/>kapa:taka saṁ manon· yan maṁkaṇa| Enak mara vihikan haṙyya paṇḍita: ri kaliṅanika| ya ta mataṅyaniṙvikalpha ta juga: huvus· //0// nahan kapiṁtiga<space type="binding-hole"/>niṁ tulis·| tambhay· saṁ paṇḍita: maṅucap· rahaṣya| puṙvva: saṁ manon· vruḥ yyaṙ vaknira handama viśeṣa| lpasnya /śa\keṁ bhuvaṇa| luputnya sakeṁ sarīra| tan pakavak· bhayū śa
+<lb n="4v3"/><gap reason="lost" extent="unknown" unit="character"/>p·| ṅuni veḥ śunyataya: paramaṙtha:| luput tan pakavak hi/ha\ sa(*ṁ)maṅkaṇa kabeḥ| pva: pinakavak saṁ manon·| ya ta mataṅyan· rahaṣya:| ya sinaṅguḥ tamaṙ haneṁ <space type="binding-hole"/> sarīra| nityasa: dumilaḥ kumñar·| hanpaka padhman·| riṁ rahineṁ kuL̥m·| luməṁ rahina sada:kala:| nihan ta saṁ hyaṁ haditya: hupamana| An tan hana humadheṁ teja:
+<lb n="4v4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>ṇa| parinakta kveḥnikaṁ vintaṁ| kadi hinatap· hikaṁ gaghaṇa denya| Inakaṇi kavnaṁṅ amaṁ rahina kanta ya| ta hasiḥ tan· vnaṁ ata humadheṁ teja: saṁ hyaṁ <space type="binding-hole"/> haditya: riṁ bhūvaṇa| AUm· tuhu hikaṁ gaghaṇa: kadi hinatap· denya ndan adhmit· hika pvaṁkulun·| yan kva:liṅanta| AUm· tuhu hika| nihan taṁ vulan d(u)vag puṙṇ(na)ma| pa
+
+
+<pb n="5r"/>
+<lb n="5r1"/><gap reason="lost" extent="unknown" unit="character"/>/kasaban deniṁ\<gap reason="lost" quantity="3" unit="character"/>ban deniṁ ptaṁ| lavan hanpaṅiras hi teja saṁ hyaṁ haditya| kanaṁ vaṁsilnya śaka riṁ rūpa samaṅke| hirikan tan paṅiras hi teja saṁ hyaṁ haditya| Apa bya<space type="binding-hole"/>ktanya| ta turumneṁ kuL̥m· riṁ mavasya kala| vintaṁ vulan pañjut tan hana| ptaṁ pəpət hana gamlan· lvi(ṙ)nikaṁ vṅi vetnyan ptaṁ hika| təp maturū ta kita:ṅipi| kapta(ṁ)ṅan kari kita ri(ṁ) paṅi
+<lb n="5r2"/>pyan·| taṅ hipiḥ rahina: juga: ya| Ika tan· rahina kariṁ paṅipyan·| rahina tan deniṁ vulan pañjut· ṅuniveḥ haji{*ta}| tan hana hika kabeḥ kariṁ svapnaṇakṣa:<space type="binding-hole"/>ṇa| rahina: juga: ya kariṁ paṅipyan(·)| deniṁ kñaṙnikīṁ dhamaṙ haneṁ sarīra| teja saṁ hyaṁ pr̥mma:ṇa| yapvan kaptəṅən kavəṅyan kita haneṁ paṅipyan·| hana duḥkanta tka| ya ta duḥ
+<lb n="5r3"/>kanta| duḥkaṇikaṁ deśa hanta kaliṅanyika| ri divaśanyan maṅkaṇa| ta turu ta riṁ rahana| Aṅipi ta kita muvaḥ| rahina hataya| tejaniṅ aditya: kari katumut· <space type="binding-hole"/> pinakasuluḥta| tahapiḥ hapan adva hasamun· tan avas tejaniṅ aditya| kasaṁśepta deniṁ teja saṁ hyaṁ pr̥mma:ṇa| kadi kasaṁśeptaniṁ tejaniṁ pañjut deniṁ tejaniṁ 
+<lb n="5r4"/>ṅ aditya| ri kala:niṁ t(ṅa)ḥ ṅ<gap reason="illegible" quantity="1" unit="character"/>ai| tuhun dilaḥniṁ pañjut· ya katon·| maṅkaṇa ta saṁsiptaniṁ teja saṁ hyaṁ haditya| deniṁ teja saṁ hyaṁ pr̥mmaṇa| ya taṅ ipi ma:<space type="binding-hole"/>turū ri rahina| kalīṅanya hanmakopama hi saṁ manon·| rahina juga: sira: ṣakala| tan· kneṁ turu| taṙ kalaṅkahan· deniṁ rahina vṅi| la:van tejaniṅ aditya| va§
+
+
+<pb n="5v"/> <fw place="left" n="5v">40</fw>
+<lb n="5v1"/>hya ktah ika hapan hahiṅan·| tan· tkeṁ jroniṅ umaḥ gambhiṙ la:vaniṁ jro guha| tatan maṅkaṇa teja saṁ hyaṁ pr̥mma:ṇa| lpasnira riṁ bhūvaṇa samaṅke| trus hikaṁ svaṙgga <space type="binding-hole"/> patala| saptapata:la tovi| Avaha taya kasuluhan deniṁ teja saṁ hyaṁ pr̥mma:ṇa| kadi tan pahiṅannikaṁ loṙ kidul kulon· vetan hi soṙ hi ruhur·| maṅkaṇa tata
+<lb n="5v2"/>n pahiṅan teja: saṁ hyaṁ pr̥mmaṇa| Avarahina laṅgəṁ juga: hikaṁ digdesantara| Apa hetunika saṁ {ui ma}śevaka ḍaṙmma: hanenata pagəḥ| denira maṅguḥ byaktaniṁ vuvu§<space type="binding-hole"/>s saṁ guru| ri kapaṅguḥhanika: rahinasada| ḍamaṙ laṅgaṁ haneṁ sarīra| Anatarahina:sada liṁ saṁ viku vaneh| ndya lviṙnya nihan·| Ana rakva maṇik ṣakuruṅan gəṁnya| Umuṅguḥ 
+<lb n="5v3"/>riṁ vvitnikaṁ kalpha turu| tejanya hikaṁ maṇik ṣamaṅkaṇa gəṁnya| ya ta pinaka suluḥnikaṁ devatha rakva||  nahan· rahinaśada liṁ saṁ viku vaneḥ| nihan kaṁ śunyataya| lī<space type="binding-hole"/>la hniṁnira varaṇanya| mvaṁ niraśrayanya| rahinasada hika liṁnya| nihan taṁ manaḥ riṁ vruḥnya riṁ rahina vṅi| rahinasa/da\ hika liṁnya| valiṁnya manaḥ hikaṁ manaḥ maṅavruhi| tan· vru
+<lb n="5v4"/><gap reason="lost" quantity="7" unit="character"/>manaḥ| kunaṁ śaka riṁ mudhanya| nahan mataṅyan səṅguh ikaṁ manaṅ maṅavruhi| nahan· rahina śada: liṁnikaṁ viku paraloka| ndya pekaṁ rahina:<space type="binding-hole"/>śada liṁ saṁ hutama:paṇḍita| yan kaliṅanta| ri kapaṅguḥ laṅgəṁnīṁ tutuṙ tləṁnniṁ sandījña:ṇa| nahan· rahina:śada: ṅaranya| rahaṣyanya vak saṁ manon·| pinetnikaṁ sabhuvaṇa|
+
+
+<pb n="6r"/>
+<lb n="6r1"/><gap reason="illegible" quantity="5" unit="character"/>viku| nahan kapiṁtiganiṁ tulis liṁ mahapaṇḍita //0// kaṙla:kapat· ṅaranya| hurip·| pati| turu| viparita| nahan pinakapa:pa saṁ manon· <space type="binding-hole"/> riṁ niskala:vastu| kinonakən paṇḍita: kayatnakna saṁ śevaka ḍaṙmma| Apa ta kavivastunya nihan·| ri huvisnika saṁ manon makavak laṅgaṁniṁ tutuṙ tla(ṁ)niṁ sandijña:ṇa| lpasnya śakeṁ
+<lb n="6r2"/>bhūvaṇa| luputnya śakeṁ sarīra| rakutnya tekaṁ sarīra gaṇal· sarīra lit·| sarīra līlaṁ| sarīra sukṣma| ya ta vakanya| tavat pa:pa kapataka: saṁ manon· ya<space type="binding-hole"/>n maṅkaṇa| Ana ta śarīra lit·| ya sinaṅguḥ hurip· ṅaranya| ndya lviṙnya| nyaṁ haṅin· rivut pata seṇḍuṁ halisyus· halivavar·| sarīra lit si hurip· ṅaranyika| Ika tavak·
+<lb n="6r3"/>ṇika saṁ manon· rakutən yan huvus· lpas sakeṁ bhuvaṇa| luputnya śakeṁ sarīra| Ayva:tiṅgalaknika| taṇ avak saṁ manon turuṁ byapa:ra pa:pa hika| @1 sarīra gaṇa:<space type="binding-hole"/>l· ṅaranya| si pati| Anona ta kita: sarīra kiñcit mantra: śakḍap katonanya| lviṙnya| hanuḥ paramanuḥ| kilat· glap·| vaṅkava| kuvuṁ-kuvuṁ| vintaṁ vulan·| haditya|
+<lb n="6r4"/>handaru| ṅuniveḥ kaṁ saṙvva:śatva: tumuvuḥ makadi sarīra| śamaṅke| ya sarīra gaṇal· ṅaranya| sinaṅguḥ si pati| Ika ta rakutən saṁ manon·| Avakanya<space type="binding-hole"/>n huvus tumiṅgala:kən sarīranya| lpasnya śakeṁ bhūvaṇa| Ayva: tiṅgalaknika tan avaka saṁ manon·| Ivəḥ turuṁ byapara” pa:pahika @1 Ana ta sarīra: śukṣma| ya sinaṅguḥ tu
+
+
+<pb n="6v"/> <fw place="left" n="6v">41</fw>
+<lb n="6v1"/>rū ṅaranya| Ika pinakavakta ri paṅipyan·| Ika ta rakutən saṁ manon·| Avakkan yan huvus tumiṅgalakən sarīranya| lpasnya śakeṁ bhuvaṇa| Ayva tan a:vak(·) saṁ manon tiṅga<space type="binding-hole"/>lakən·| turūṁ hivəḥ byapa:ra pa:pa hika| yaya maluy· ri janma samake hika yan maṅkaṇa| yan pakavak aṅ tmahan· yya(ṙ)kn ika @1 Ana ta sarīra līla:| ya sinaṅguḥ vipar(i)ta
+<lb n="6v2"/>ṅaranya| līna riṁ śunyataya: paramaṙtha| miśrī bhūta: śatmyavayavaṣa mavita: riṁ bhayū laṅgəṁ| mvaṁ līla:ṁ hniṁnira varaṇanya| Umaṅguhakən· raṣaniṅ aturū tan paṅipi| tumvakə§<space type="binding-hole"/>n· raṣa:niṁ si lūpa| ya tika ratuniṁ pa:pa| maṇḍala:niṁ kdahavici| kadi {ui ka}maṅke ya hataḥ lviṙnika bhuvaṇa la:van saṙvva janma| yan tan pakavak alupa: hikaṁ tuṅgal·| kunaṁ hapa
+<lb n="6v3"/>n lina hamavak biparita| Ika saṁ manon·| nahan mataṅyan· laṅgəṁnikaṁ bhuvaṇa la:van saṙvva:janma| ya ta mataṅyan tiṅgala:kən hikaṁ viparita| tan a:vaka: saṁ ma⌈<space type="binding-hole"/>non·| ri huvusnya lpas sakeṁ śarīra| luputnya śakeṁ bhūvaṇa| Apan· kdah aveci ratuniṁ pa:pa hika| nahan kaṙla:kapat ṅaranya| tan avaka saṁ manon liṁ saṁ paṇḍita| pinaka
+<lb n="6v4"/>bhaya: riṁ ni(s)kala: vastu //0// Umapa: ta lviṙnika saṁ manon·| An tiṁgalakən sarīranira| lpasnya śakeṁ bhuvaṇa| A(ṙ)pa kavak laṅgaṁniṁ tutuṙ tlaṁniṁ sandijña:ṇa| kaṣṭe-ka<space type="binding-hole"/>ṣṭe ya ta: bahniḥ| śukṣma: tva:tvo  phala:byate| Iva kadyaṅganiṁṅ apuy haneṁ həsyən·| śukṣma:tika tan katon·| nophala:bhyate| tan hana kapaṅguhanya| tan pana:
+
+
+<pb n="7r"/>
+<lb n="7r1"/>(ṅ)k(ə)snya tuhu| branta maga moṅan manaḥni śikṣya humidhəp· ya| Apa dr̥ṣṭanta han si tuhu| panaṅkəsa rikaṁ vus kabeḥ| kadyaṅganiṁ bh{*u}vaṇa bhahitra havaniṁ maṇabraṁ| ya ta<space type="binding-hole"/>ṇ apusən katiṙnya| byakta ta yan sak kasurikat pakəkəsnya kabeḥ| Atma hanaṅumbhaṁ kaśakaḥ bhavaṇa bhahitra| kunaṁ pva: ri hananikaṁ hapus·-pus həduk hvi| nahan mataṅyan parip(u)ṙ
+<lb n="7r2"/>ṇna pva: śaka pagəḥ vnaṁ taya mamava bhaṇḍa paribaṇḍa mariṁ sabraṁ| nahan taṅvaṁ mamaṅuna humaḥ patani kunaṁ| ya tan hapusan avlaḥ husuk hatəp· taviṁ saL̥:| saṁkəp maṙyya ka<space type="binding-hole"/>surikat haniya tan ika kabeḥ| Inapusan pva ya kabeḥ haduk hviṁ hada| Ataguḥ vnaṁ paṅəbana: hapagəḥ vnaṁ paluṁguhana: la:van paturvana| Iva maṅkaṇa: tekaṁ vuvus kabeḥ|
+<lb n="7r3"/>ya tan taṅkəsən· riṁ tuhu| Apa ta ka:vivastuniṁ tuhu| nihan·| nyaṁ bhuvaṇa| Enak ta: karika səṅguhən ta bhuvaṇa| yan apa hika yan a:dva: yan· bhuvaṇa| kunaṁ śaka ri tu<space type="binding-hole"/>hunya bhuvaṇa| nahan mataṅyan henak a:pagəḥ sinaṅguḥ bhuvaṇa| nihan taṁ śunya:taya| Enaka: ri kasəṅguhən ta śunyataya| yan apa hika: yan adva: yan sunyataya| kunaṁ  
+<lb n="7r4"/>śaka riṁ tuhunya śunyataya| nahan mataṅyan· henak apagəḥ səṅguhən ta śunyataya| maṅkaṇa tekīṁ havak·| Enaka: karika səṅguhən taṁ sarīra| yan a:pa hika: <space type="binding-hole"/> yan adva: yan sarīra| kunaṁ śaka ri tuhunya sarīra| nahan mataṅyan· henak a:pagəḥ sinaṅguḥ sarīra| maṅkaṇa tekaṁ bha:yu śabda hidhəp·| Enaka: kari səṅ(gu)həna: bhay(u)
+
+
+<pb n="7v"/> <fw place="left" n="7v">3..</fw>
+<lb n="7v1"/>śabda hidhəp·| yan a:pa hika: yan adva: yan· bhayū śabda hidhəp·| nahan mataṅyan henak apagəḥ sinaṅguḥ bha:yu śabda hidhəp·| si tuhuha teka| Enak a:pagəḥ <space type="binding-hole"/> pamituhvana ri ya| Apa kalīṅanya| tuhva ta saṁ manon han sira meṅət han sira ma{*na}dumi tan kaduman·| mahiṅi tika hiṅan·| ri śakala: niskala| p(i)nakaraṣanya <gap reason="illegible" quantity="1" unit="character"/>
+<lb n="7v2"/>lpasan·| tuhva ta saṁ manon meṅət han sira magavay· tan ginavay·| Aṙ gavay ikaṁ hidhəp·| tutuṙ pinakapagavay·| mataṅyan haśambha hikaṁ rat kabeḥ| <space type="binding-hole"/> pinakaraṣanya riṁ pr̥tyakṣa| tuhva tekaṁ saṁ manon meṅət hi la:ṇḍəpniṁ rvi| bhoniṁ tahi| paṇasniṅ apuy·| ta rambha ya| vvila:nta ṅarany ika| pinakaraṣanya riṁ luṅguḥ|
+<lb n="7v3"/>tuhva teka saṁ manon· meṅət han pinakapa:pa hikaṁ si tr̥ṣṇa:| riṁ śakala: niskala| yyaṙ tapaniṁ tr̥ṣṇa: pinakaviśeṣanya: pinakaraṣa:nya riṁ tapa| tu<space type="binding-hole"/>hva teka saṁ manon meṅət han si lūpa: bhiparita| pinakapa:panya riṁ śakala: niskala: rikaṁ sandi| si tutuṙ pinaka:viśeṣanya riṁ sandi| Apa kaliṅanya| hayva:
+<lb n="7v4"/>j(u)ga: saṁ manon i tuhu hikaṁ madya:| Apa madya ṅaranya| nyaṁ glaṙ puja dyana samadḍi| mvaṁ kalpha carita| Adidevaniṁ hyaṁ devatha| bhaṭa:ra: baṭari| śoṙ<space type="binding-hole"/>gga: la:van patala| nahan madva: ṅaranya| yavat hika saṁ manon humituhu hika kabeḥ| tavat pa:pa kapataka: saṁ hyaṁ pr̥mmaṇa:| Enak mara vihikan saṁ manon· ri dva:ni
+
+
+<pb n="8r"/>
+<lb n="8r1"/>(ṅalavan)· vadon·| Ahala la:van lituhayu| sukha la:van duḥkha| vva:gaṇa la:van no{ui ra}han·| ya kaliṅaniṁ paribhaṣa: riṁ pūṙbhva:janma| riṁ puṙbhva:nyan pasarīra <space type="binding-hole"/> yan gavay· havaknya maṅkaṇa kabeḥ| dumiya hi salviranya| la:van humiṅiya ri gəṅanya la:vaniṁ dhmitanya| davanya la:van təṇḍəkanya:| ya kaliṅaniṁ paribaṣa: dumnya ma
+<lb n="8r2"/>ṅkaṇa| Apa byaktanya| saṁ manon magavay· tan ginavay·| madumi{*:} tan kaduman·| mahiṅi tan kahiṅan·| riṁ śakala: lavan· riṁ niska:la| nihan havakta: kalanta humiji<space type="binding-hole"/>l saka riṁ gaṙbha:vaṣa| kadi taya hati gr̥śa guṅanya la:van· ruhuranya| ta hasiḥ| dinumana: taya| ri gəṅanya la:van· ruhuranya| nihan taṁ pasuku| vtuni bha:yu hiniṅan vataya| ni
+<lb n="8r3"/>han taṁ vijilniṁ śabda la:van· vnaṁ hinr̥t hiniṅan taya| nihan taṁ la:ku limbey· luṅguḥ kvap· hiniṅan taya| nihan taṁ polaḥniṁ hidhəpaṇa dakaraniṁ manaḥ rūpa vastu| paṅa⌈<space type="binding-hole"/>loṙ paṅidulnya| piṁśoṙ piṇḍuhuṙnya| hiniṅan taya| nihan taṁ lapa va:R̥g·| turu taṅi| hiniṅan taya| nihan taṁ rūpa kayovaṇan· tṅaḥ tuvuḥ la:van tuha| hiniṅan taya| Apa
+<lb n="8r4"/>taṁ paṁhiṅən saṁ manon hirikaṁ samaṅkaṇa: kabeḥ| tutuṙnira: juga| AUm hikaṁ samaṁkaṇa kabeḥ hika kavnaṁ hiniṅan·| Apa ta paṁhiṅi saṁ manon·| Irikeṁ si pati| <space type="binding-hole"/> yaṙ kva liṅanta riṁ kami| AUm· yekīpiḥ mevəḥ tmən· sinaṅg(u)ḥ bhayvadyatmika: ṅaranya hikeṁ si pati| Apa byaktanyan·| bhava:cakra śaṅ(śa)ra haval(u)y· janmanika<gap reason="illegible" quantity="4" unit="character"/>
+
+
+<pb n="8v"/> <fw place="left" n="8v">36</fw>
+<lb n="8v1"/>n·| ya ta hiniṅan ika si pati| Apa ta deyanika: saṁ manon· humiṅi si pati| nihan deyanira| Iva kadyaṅganiṁ paṇḍehan sumibakən pagavenya| tinaribaknya: ri śa<space type="binding-hole"/>lūla:nya| mariṁ taya byapara hir(i)ka kaśulpikan·| dhataṁ marapveka saṁ manon akon-kon·| Apa teka nuṁ sahura| keraṅanika saṁ makon-kon·| luṅha ya met pa⌈
+<lb n="8v2"/>ṇḍe vaneḥ| Iva maṅkaṇa teka saṁ manon·| Aṙ hiṅ ika si huripnira mvaṁ si pa:ti rahasyaniṁ vuvus saṁ paṇḍita| sarīra tan pinakasarīra| bhayu tan pinakahurip·| śabda ta<space type="binding-hole"/>n pinakaśabda| hidhəp tan pinakahidhəp·| tutuṙ tan pinakatutur·| saṁ manon mari makadr̥bya-dr̥bya kabeḥ| niruktinyan liṁ haṙyya paṇḍita| hidhəp mari ginavai| tutu mari paga⌈
+<lb n="8v3"/>vey·| saṁ manon mari magavay·| kaliṅanya mari byapara saṁ manon hirikaṁ rat·| nahan deyanira: humiṅ ika si pati| mahiṅi tan kahiṅan mandumi tan kaduman· pve<space type="binding-hole"/>ka saṁ manon·| yavat ika saṁ manon kahiṅanan deniṁ sarīranya| bha:yu śabda hidhəpnya| tutuṙnya gavaynya hajinya| tavat pa:pa kapataka saṁ manon· yan maṅkaṇa| ya sinaṅguḥ 
+<lb n="8v4"/>viku h(u)lun· ṅaranya| Enak mara vihikan haṙyya paṇḍita| An sira mandumi tan kaduman·| mahiṅi tan kahiṅana:| ri gavay·nira riṁ śaka:la niskala| tavat puṙṇnabha:vatha: <space type="binding-hole"/> saṁ manon·| ya sinaṅguḥ lpas· ṅaranya| nahan kalpasan· ṅaranya liṁ mahapaṇḍita //0// taṅkəs· ṅaranya| petra: rasaniṁ tuhu| An ikaṁ vuku līma| yan tan ta:
+
+
+
+
+
+
+<pb n="9r"/>
+<lb n="9r1"/>Aturūtan paṅipi| raṣaniṁ si lupa tan hana: hinivəḥnya| mokṣa lpas·| nahan· kveḥ ṅaran ikaṁ bha:yu| taṅeha yan· vuvusən· ṅaranya| hintu bhayu katuṅgalanya| U<space type="binding-hole"/>śoṣa hambəkan· ṅaran ikī haneṁ saṙvva:śatva| mvaṁ ri janma vvaṁ| Ana pva riṅ abyantara| bhayu laṅgəṁ ta ṅaranya| Umiriṙ pva ya| haṅin ta ṅaranya| Adr̥s pvaya| rivutta: ṅaranya| A
+<lb n="9r2"/>nikəla:kən pva ya kayu| seṇḍaṁ ta ṅaranya| Umidəṙ pva ya musus· lbu| Alisyus ta ṅaranya| haduluṙ pva ya hudyan·| vagyu ta: ṅaranya| Adr̥s pva /ya\ duluṙyyakiṁ tasik·| hampu§<space type="binding-hole"/>han ta: ṅaranya| Anub· pva ya śor·| marūta: ta ṅaranya| mirirakən pva ya ganda| pavaṇa ta ṅaranya| masuk· mtu pva yeṁ sarīra| Ambəkan ta ṅaranya| Urip jīva deva masiḥ ṅara 
+<lb n="9r3"/>nya| yan tan molaḥ tumuṅgu sarīranya| viśeṣa: pva hurip uruṣa: ta ṅaranya| tan polaḥ pva yeṁ sarīra| vindu pəpəta: ṅaranya| muṙtūm· bhayu saṁkr̥ti ta ṅaranya va⌈<space type="binding-hole"/>neḥ| vinduna:da ṅaranya hatri hakraka:ṅuhuḥ| panyu pva ya saṁkakhala| hab·-hab· ta ṅaranya| vindurahaṣya ṅaranya mavak masarīra taṁ bhayu| Indra ṅaranya diglaṙniṅuri prali§
+<lb n="9r4"/>na: śumuk· riṁ sarīra| piṅgala: ṅaranya vantaḥnya riṁ para:maṙtha ya| vaL̥ṙ huripniṁ maturu| śubha-śubha kadi ta:ya kunaṁ-kunaṁ| susumna ṅaranya hivəḥ saṅanmaya| puñcak paga:<space type="binding-hole"/>ntuṅaniṁ urip·| vlu tuṁkbiṅ aka:śa| pakəmphəlaniṁ paramanuḥ| Ana kadi skariṁ sasavi| hana kadi siratniṁ vaja tinunu| pakambhaṅani vədana:ga| hana suklapika:kambha
+
+
+<pb n="9v"/> <fw place="left" n="9v">8</fw>
+<lb n="9v1"/>ṅiṅ aśaṇa| g(u)milap humibəṙ kadi kunaṁ-kunaṁ| nahanv rahaṣyaniṅ urip· ṅaranya| Ika taṁ bha:yu samaṅkaṇa kveḥnya| dudva ta: rakva: hika:| tahapiḥ bha:yu hurip ka<space type="binding-hole"/>tuṅgala:nya kabeḥ| katuduhaniṁ bhayū ṅaran ika @1 kavīvekaniṁ bhayu ṅaranya| yan pahiṁṅan ikaṁ loṙ kidul kulon· vetan hiśoṙ riṁ ruhur·| hiṅan ikaṁ bhayū
+<lb n="9v2"/>yan maṁkaṇa| kunaṁ hapa tan pahiṅan ikaṁ loṙ kidul kulon· vetan hi śoriṁ ruhur·| tan pahiṅan ikaṁ bha:yu yan maṁkaṇa| Apan ikaṁ bha:yu sumusup· riṁṅ akaśa <space type="binding-hole"/> bha:yu sumusup hiṁ pr̥thivī| bhayū sumusup· riṁ lvaḥ taśik·| ṅuni veḥ riṁ saṙvva: tumuvuḥ riṁ saṙvva:satva| Alyaṁ tan palyaṁ kapva jugeka:trus deniṁ bha:yu| sumusuk iriya| ma: 
+<lb n="9v3"/>ka:di tekīṁṅ abyantara vaṅ-a:vaṁ bha:yu pinakatyəsnya:| Apa byaktanya habyət riṅiriṙ hikaṅ a:byanta:ra vaṅ-avaṁ| matba-tbat·\ Akəṇḍəl ma:raya| Atis hikaṁ skul· ri<space type="binding-hole"/>ṅ iyan denya| tan dindinaḥ maṅkaṇa teka:| nda nahan· byakta:nyikaṁ bhayū han hibki kaṁ bhuvaṇa denya| kavivekaniṁ bha:yu ṅaran ika @1 katmuniṁ bhayū ṅaranya| siṁ kaspaṙ
+<lb n="9v4"/>ṣa| karaṣa| kaṙpaṣa| kaṙpaṣa ṅaranya| katubnya vakta deniṁṅ aṅin umirir·| mvaṁ kosa{*n}p kasampaṙ ka:haras·| kaspaṙṣa ṅaranya| paśuk· vtunikaṁ  bha:yu ri ruta| kambuṁniṁ <space type="binding-hole"/> mabo la:van mavaṅi| karassa ṅaranya| Akəndəl haṅət·| kagaməl kasapnya L̥mbutnya| kapaṅan kenum· henaknya pa:vantan enaknya| maka:di kahidhəpniṁ paṇas tis· la:
+
+
+
+
+
+
+
+
+<pb n="10r"/>
+<lb n="10r1"/>pa vaR̥g·| ya karaṣa ṅaranya| katmvaniṁ bhayu ṅaranyika @1 pr̥mmaṇaniṁ bhayu ṅaranya| Unamaṇa: praveṣanam·| yan ana bha:yu masuk· mtu riruṁta| si hurip ṅaranya| hilaṁ pve<space type="binding-hole"/>kaṁ bhayū śakeṁ sarīra| si pati ṅaranya vkasan·| vaṅkay· ta ṅaranikeṅ avak·| pr̥mmaṇaniṁ bhayu ṅaran ika| @ vibhuḥniṁ bhayu ṅaranya| bhayu juga: pinakahuripnika śarat·| (ta)
+<lb n="10r2"/>n hana katunan· bha:yu patī la:van urip·| rikaṁ saṙvvajanma| vibhuḥniṁ bha:yu ṅaranyika @ tuṅgaṁniṁ bha:yu ṅaranya| Adi litan kavnaṁ tinambəhan·| Agəṁ tan kavnaṁ linoṅa<space type="binding-hole"/>n·| Ane bhuvaṇa: la:van liman·|  haneṁ prit la:vanv tṅu| tan· lga tan umpəṁ hikaṁ bha:yu duvəg juga| yan tuṅgəṁniṁ bha:yu ṅaranyika| nihan deyanta vruḥ kavuvuśaniṁ bhayu keṅtakən·| 
+<lb n="10r3"/>//0// samaṅka:ṇa: kojaraniṁ śabda| nam· taḥ bhedanya| katuduhaniṁ śabda ṅaranya| siṅ aran daśana:ma: pariyaya| tuṅgal ika śabda:| ndan pariñciniṅ aranya ya <space type="binding-hole"/> hakveḥ| kadyaṅganiṁ vuyaḥhan hakveḥ ṅaranya| hayva kepvan·| ya vuyaḥ ya gaR̥m· ya siR̥ṁ| ya lovaṇa| ya śeṁdava| ya ṣasiḍara| ya vuyaḥ katuṅgala:nya| Iva maṅka
+<lb n="10r4"/>ṇa tekīṁ śabda:| Ana kveḥ ṅaranya| Ayva ta kita kepvan·| ya śabda: ya vuvus·| ya vacya ya hujar·|  ya kara:ya huni|  ya liṁ| ya kṣara: ya sidḍa:| ya gantar· ya <space type="binding-hole"/> patəṙ ya: ktug·| ya kisik· ya na:da| ya pradvani| ya varaḥ| ya gita| ya haka:śa| ya lilaṁ| ya hniṁ| niravaṇa| ya niraśraya| ya laṅit·| ya lṅit·| ya nila kliṁ| haya mahaṇila
+
+
+<pb n="10v"/> <fw place="left" n="10v">9</fw>
+<lb n="10v1"/>ya hanta| tan pahīṅan· vibhuḥ taya hana| taya hikaṁ śabda: yan· hniṁ| hana ya riṇḍuca:pakən·| mataṅyan taya hana ṅaranya vaneḥ| nihan tu śabda katuṅgala:nika| U<space type="binding-hole"/>jaṙ vuvus· ṅaran ikīṁ śabda yan haneṁ janma vvaṁ|  hana pva yeṁ saṙvva:śatva| huni ta ṅaranya| Ana pva ya riṁ gunuṁ guntuṙ tha ṅaranya| Ana pva ya riṅ aka:śa glap· gəR̥ḥ gəntəṙ ta ṅaranya| A
+<lb n="10v2"/>na pva ya riṁ tasik patəṙ hampuhan ta ṅaranya| Ana pva ya riṁ kayu grit· ṅaranya| koniṅaranya śabda: sidḍa yan tinabəḥ| śabda: sidḍa vaneḥ| dilaḥniṅ apuy· jala:<space type="binding-hole"/>prava hahilīniṁ vaḥ gunuṁ| gəntəṙ ṅaranya| tiba:niṁ kayu pinraṁ| hudan adr̥s· ktug· ṅaranya tiba:niṅ andaru| sikeni vakul kumuR̥b· mvaṁ pinalu| valakaṁniṁ pinr̥p·| kisik·§
+<lb n="10v3"/>ṅaranya ron tinubniṅ aṅin·| siratniṁ jala:cañcala:| kisikniṁ saṅan-saṅan·| pagasaḥniṁ simbar·| sr̥dva:niṅ aranya| paṣamohaniṁ voṁṅ akveḥ yan apəḥ| kan<space type="binding-hole"/>·pəkən·| varaḥ ṅaranya| samoha pahyani bala:mmantri| {ui ta} ga/ta\ ṅaranya| kiduṁka:ṇa carita| nahan akveḥ ṅaraniṁ śabda| Ika taṁ śabda samaṅkaṇa kveḥnya| śabda juga: simpə
+<lb n="10v4"/>n ika kabeḥ| taṅeḥ yan a:vuvusən·| katuduhaniṁ śabda ṅaran ika @1 kavivekaniṁ śabda ṅaranya| kadyaṅganiṁ bhayu haṅibki hikaṁ bhuvaṇa| la:van saṙvva:janma| ma<space type="binding-hole"/>ṅkaṇa tekīṁ śabda han· ṅhibki hikaṁ bhuvaṇa la:van saṙvva:janma| Apa byaktanya| tabəh ikaṁ lmaḥ kayu vvay·| ṅuniveḥ hikaṁ kəṇḍaṁ gəṇḍiṁ| padha muni maraya| nihan taṅ abyan(ta)ra
+
+
+<pb n="11r"/>
+<lb n="11r1"/>makaputus· raṣaniṅ aturu tan paṅipi| vluniṁ puṁlu| vala:kaṁniṁṅ atlu| vr̥diniṁ bhayū| I cabya viṣayaniṅ urip hika @1 yapvan ikaṁṅ aji mantra bharalipr̥thi śarade sa:ṁ <space type="binding-hole"/> viku vaneḥ| maka paṁlpas taṁ bajra huṁkara padkara| vr̥diniṁ śabda: hi cyabya viṣaniṁ vuvus ika| kalīṅanya tan· vnaṁ hiṅ aji maca vaknya| mantra veta: santi mantra kna vaknya| Apa
+<lb n="11r2"/>pr̥maṇa hirika| śabda juga tan hana:vaneḥ| Apan· riñciniṁ vuvus ta vaṙṇnaniṁ śabda| Ikaṅ aji mantra veḍa:santi ṅaranya @1 yapvan ikaṁ bhaṭa:ra baṭari| śivaḥ budḍa <space type="binding-hole"/> viśeṣa: de saṁ viku vaneḥ| makapaṁlpas taṁ yoga samadḍī| salambananiṁ ralambana| vr̥diniṁ hidhəp hi cabya viṣayaniṅ haṅn-aṅn ika| kalīṅanya hidhəp hinakara hyaṁ devatha| ci
+<lb n="11r3"/>tta dina/da\kara: bhaṭa:ra baṭari śivaḥ budḍa hika| Apan hidhəpnya hana bhaṭa:ra baṭari| ri hidhəpnya tan hana| mavi kalpha manotsaha hika| savikalpha hidhəp·<space type="binding-hole"/>| vinikalpha hidhəp·| Idhəp kevala: hika ka:beḥ| vikalpha manadakara: ṣaṁsaya pravala @1 samaṅkaṇa juga kari de saṁ paṇḍita: meṅət· riṁ viśeṣa:nikaṁ bha:yu śabda
+<lb n="11r4"/>hidhəp·| rikeṁ bhuvaṇa la:vani irikeṁ saṙvva: janma| Istahampiḥ hanipis taṅ aran ika| ya ya denikaṁ mapuṅ(gu)ṁ maṅavruhi taṅ aran ika| Apan padha vru tekaṁ <space type="binding-hole"/> śarat·| An· bhayu śabda hidhəpinakesiniṁ sarīranya| mvaṁ pinakahuripnya| ndan· habhaṣmi nata diti yan· vruḥ| vruḥ vulaṅun tan eṅət riṁ mulanya| Apan· bhaṭa:ra ba
+
+
+<pb n="11v"/> <fw place="left" n="11v">7</fw>
+<lb n="11v1"/>ṭari sivaḥ budḍa| pinatya viśeṣa: liṁnya| tatan ma(ṁ)kaṇa saṁ paṇḍitan· vruḥ| vruḥ heṅtakən sirekiṙṇnanya riṁ bhuvaṇa| la:vaniṁ saṙvva:janma| Apa ta de saṁ paṇḍita: ⌈<space type="binding-hole"/>meṅət· riṁ dr̥byanira| nihan· tlu prakaranya| hana himanya| han hitənya| seṁnya ṅaranya| Ajña:ṇa| Imanya ṅaranya| bha:yu śabda hidhəp·| Ivəḥnya ṅaranya| katuduha
+<lb n="11v2"/>nya| vivekanya| katəmonya| pr̥maṇanya| vibhuḥnya| tuṅgəṁnya| yavat· pvekaṅ vaṁ vruh irika| tavat sira paṇḍita: ṅaranira //0// nyaṁ bha:yu vaṙṇnananta<space type="binding-hole"/>| Ivəḥnya rumuhun·| keṅt-eṅəta: ta kīta ri kiṙṇnanya hayo himəṁ @1 katuduhaniṁ bha:yu ṅaranya| siṅ aran daśana: mapa ri yaya| tuṅgal ikaṁ bha:yu ndan a:kveḥ ṅara
+<lb n="11v3"/>nya| Iva kadyaṅganikaṁ vīdaśarī makveḥ ṅaranya| ya viḍyasarī| ya haṅihaṅyan·| ya payani| ya vadu-vadul·| vīḍyasari katuṅgalanya| Iva maṅkaṇa tekaṁ bha<space type="binding-hole"/>:yu hana kveḥ ṅaranya| Ayva ta kita kepvan·| ya bhayu ya huśoṣa: ya hambəkan·| yaṅ ava:ya hurip·| ya jiva ya deva masiḥ| ya puruṣa:| ya pañcabhayu| ya
+<lb n="11v4"/>(p)raṇa| ya hapaṇa| ya ṣamaṇa| ya hudyana| ya byana| ya haṅin·| ya rivut·| ya pavaṇa| ya maruta| ya śeṇḍuṁ| ya lisyūs·| ya halīvavar·| ya bhayu bhūta| ya vagyū<space type="binding-hole"/>t·| ya praharaṇakala| ya bhayu laṅgəṁ| ya vinduna:da| ya vindupəpət·| ya vindurahaṣya| Indra pigala| susubna| śunyataya| para:maṙtha| kapara:maṙtha| ñanantara para:maṙtha:
+
+
+<pb n="12r"/>
+<lb n="12r1"/>hidhəp·| mva(ṁ) bhuvaṇa sarīra| tan· vnaṁ hika kabveḥ humandyaka sira mvaṁ suma{ui sa}yuta:na sira| yar ahaR̥ptu luṅha tumiṅgala:kna: sarīranira| Apa hupamaṇa| kadyaṅganiṁ <space type="binding-hole"/> vva:ṁ praḍana| mahyun ta ya miṅgata| śaka riṁ humaḥnya bhūmi simanya| vnaṅa karikaṅ umah bhūmi sima: sumayuta:na sira| tahapiḥ tan ana li(ṁ)nikaṁ humaḥ bhūmi sima| yan tuṅgun·
+<lb n="12r2"/>yan aṙyyakna:| tan hana: juga: liṁnika| maṅkana: vnaṁ-vnaṁnya kabeḥ| kbo sapinya| mas ma:ṇiknya| tan hana liṁnika: kabeḥ| yan aryakna tan· vnaṁ hika suma:yuti saṁ praḍana <space type="binding-hole"/>| yan haR̥p humaṙyyakna yan tuṅgun·| tan hana juga: liṁnikaṁ dr̥bya kabeḥ| saṁ praḍa:na saṁ mandr̥bya juga vkasnika| Iva maṅkaṇa: tekaṁ saṁ manon·| tan hana vnaṁ sumayut{*i}a:
+<lb n="12r3"/>na sira| yar ahyun luṅa tumiṅgala:kəm sarīranira| sarīranira kari vnaṅa sumayuta:na sira| taha tan hana liṁnikaṁ sarīra| tuhun ula:h inulahakən taṁ sarīra| ya<space type="binding-hole"/>tuṅgun· yan abhyakna tan hana juga: liṁnika| bha:yunira rakva: vnaṅa sumayuta:na sira| taha tan hana ktaḥ liṁnika| tuhun masuk pinasukakən· mtu vinətvakən taṁ bha:yu| ya:
+<lb n="12r4"/>n aryakna yan t(u)ṅg(u)n· tan hana kta liṁnika| śabdanira: kari vnaṁṅa sumayuta:ṇa sira| taha tan· vnaṁ hika| tuhun· mtu vinətva:kən huni hinr̥t taṁ śabda:| yan aryakna ya<space type="binding-hole"/>n tuṅgun· tan hana liṁnika| hidhəpnira: kari vnaṅa: suma:yuta:ṇa sira| taha tan· vnaṁ hikaṁ| Apan· dr̥byanira hikaṁ hidhəp·| tutuṙnira: kari vnaṅa sumayuta:ṇa sira:
+
+
+<pb n="12v"/> <fw place="left" n="12v">29</fw>
+<lb n="12v1"/>taha tan· vnaṁ hika| Apan sira vasi makaṇa:dr̥byaṁ tutur·| ṅuniveḥ tekīṁ bhuvaṇa mvaṁ sunyataya| maṅkin· tan· vnaṁ tmənn ika: sumayuta:na saṁ manon·| kaliṅanya <space type="binding-hole"/> tan· vnaṁ juga: hika kabeḥ| sumayuta:na: saṁ hyaṁ pr̥mmaṇa yan ahaR̥p tumiṅgalakən sar(ī)ranira| mari tuṅgalta ṅaranyika| mari viśeṣa: mari pr̥mmaṇa| An dvan pakadr̥bya§
+<lb n="12v2"/>magaṇal malit· ṅaranyika| ya:n hika yan kapr̥mmaṇan· maṅga kaśayuta:ṇa deniṁ dr̥byanya| yar ahaR̥p humatita: sarīranira| jnəka: pveka saṁ manon· mavak ma<space type="binding-hole"/>sarīra: lota: humidhəpīkaṁ pa:pa saṅśara: han huvuṣ meṅət·| vvila:nta ṅaranyika| mvaṁ muvah ahuvus maṁjanma huvus·| tumiṅgala:kən sarīranya| AhaR̥p humidhəpīkaṁ pa:
+<lb n="12v3"/>pa muvaḥ| vvilanta: ṅaranyika| Apagəḥ pveka saṁ manon· riṅətnira: han pa:pa mavak masarīra| Eka tva: tutuṙ pakavak sakala: niskala| ṅuniveḥ taṙ pavalviṙ ya ru<space type="binding-hole"/>makut hikaṁ rūpa samaṅke| kayaṁ ta ṅaranyika sira yan maṁkaṇa| maluy· ri sva:bhavanira tuṅgala:| pr̥mma:ṇa tan kapr̥mmaṇan·| kaliṅanya pet· raṣaniṁ nohan tan paba
+<lb n="12v4"/>lik· vva:gan·| Enak tan pabalik la:ra| śuka tan pabalik duka| Ayu tan pabalik ha:la| rahina tan pabalik· ptaṁ| nahan sinaṅguḥ luṅguḥ ṅaranya liṁ haṙyya paṇḍita| ⌈<space type="binding-hole"/>teṅta ta kita //0// maṅkaṇa tekaṁ pr̥tyakṣa| Apa pinakaraṣanya| śaśambava| Apa kaliṅanya| vruḥ kari katuṅgal· yyaṙ sambhavanikaṁ bhuvaṇa kahananya| tahamya| vruḥ
+
+
+<pb n="13r"/>
+<lb n="13r1"/>ktanya maṅke riṁ śakala: ndaḥ tan hana kumon sira| Asiṁ sakagavaynira| mvaṁ tatan pamala:ku hikaṁ saṙvva: kriya: ginavay·| Apa byakta:nya| Amaḥ ha(ṁ)ku gavay aṙku| <space type="binding-hole"/> kumvaka ri kaṁ gagha śavaḥ| tahapiḥ tan hana janma maṅkaṇa| maṅkaṇa ta kkita| gavay ika kabeḥ| tan hana kumvan kita|  kita taḥ mahyun gumavay·| ginavay· ta pveka(ṁ) humaḥ
+<lb n="13r2"/>gaga la:van savaḥ| tatan adva: kahidhəp tikaṁ ṅel·| Agr̥ḥ baṁkap· nusandīn ta kabeḥ| kadyaṅganikaṁṅ umaḥ gaga la:van savaḥ| An tan pamala:ku ginavay· riki§<space type="binding-hole"/>ta| maṅkaṇa tekīṁ sarīra: mvaṁ bhayū śabda hidhəp·| An tan pamala:ku ginavay· de saṁ manon·| Amala:ku gavay sarīra| sarīranta paṁhidhəpa:pa| Amaḥ haku gavay·
+<lb n="13r3"/>bhayu śabda hidhəp·| sadananta paṁhidhəpa:pa| kumvaka rika kaṁ sarīra| mvaṁ bha:yu śabda hidhəp·| tahapiḥ tan pamala:ku hika kabeḥ ginavay hirikaṁ tuṅgal·| <space type="binding-hole"/> la:van ika saṁ manon· hagavay ika kabeḥ tan hana kumvan sira| mari tuṅgal mari pr̥mma:ṇa ṅaranyika| yan hana kumva:n sira| kunaṁ hapan saṁ manon· juga: maha mahyun magava
+<lb n="13r4"/>y·| Ikaṁ sarīra mvaṁ bhayu śabda: hidhəp·| pinakasadananya: mvaṁ pinakahuripnya:n paṁhidhəpa:pa| vruḥ pveka saṁ manon· han papa mavak masarīra| meṅət han saṁ <space type="binding-hole"/> śaran pakahirupīkaṁ bha:yu śabda: hidhəp·| Avasa:vla:-vla: vruḥnya: hilaṇḍəpnyirvī| mva:niṁ ta:hi| paṇasniṁṅ apuy·| Apa ta mataṅyan mmahaya:| vvilanta: ṅaranyika| Apa ta rvi 
+
+
+<pb n="13v"/> <fw place="left" n="13v">23</fw>
+<lb n="13v1"/>ṅaranya| yeki bhuvaṇa śo(ṙ)gga: patala| Apa ta hiṅaranya| yeki sunyataya: paramaṙtha:| Apa ta hapuy· ṅaranya| yekīṁ saṙvva:janma: kabeḥ| ṅuniveḥ rūpa <space type="binding-hole"/> samaṅke| kapanasan deniṁ ya vaknya| Avula-valīk mameta:raka mvaṁ sadḍana| dləntekaṁ saṙvva:janma: kabeḥ| nyaṁ saṙvva: tumuvuḥ mvaṁ saṙvvaśatva:| karuhun ikaṁ janma: sivva| pa
+<lb n="13v2"/>dha hika ta kabeḥ maṅhidhəpa:pa| tatan vruḥ hikaṁ janma:vvaṁ hi denyan hi lagiṁ pa:pa| hanan men-men· lumakva: lampuran·| nahan ta panusupa:riṁ  gunuṁ| tyagambba:<space type="binding-hole"/>ra vaneḥ majar-ajara riṁ {ui ga} R̥bvan sampvara| valinyan luputiṁ pa:pa pakoli hika(*ṁ)| taha taḥ ya ya tinut iniku deniṁ pa:pa panas tis lapa: vaR̥g·| kinuñcuṁ rinujit ginə
+<lb n="13v3"/>səṁ deni kiṁ-kiṁ prihati| tinalyan hiṁ naraka nimbhaḥ deniṁ tuha la:rapati| tatan a:dva:ḥ ragha dośa loba moha mada matsaṙyya:| murub dumilaḥ gumə<space type="binding-hole"/>səṅiṁṅ hatinya| Apa ya patan· pela:gan hikaṁ pa:pa| Apan· ri haṇani(*ṁ)kaṁ sarīra mvaṁ bha:yu śabda hidhəp·| tinutniṁ paṇas tis la:ra mva:ṁ lapa| pinakarambhatni tuha la:
+<lb n="13v4"/>ra pati| ya raktan ikaṁ saṙvva:pa:pa kabeḥ| Enak trus denta vruḥhira gili-gilik ma:raktva:ṇaniṁ saṅśaraniṁ janma de saṁ manon·| ya ta mataṅyan dadi saṁ paṇḍita:<space type="binding-hole"/>tumiṅgala:kna sarīra:nira| mati tan pakaraṇaṁ la:ra| syapa mahandyata sumapputaṇa sira| yar aḥhaR̥p tumiṅgalakən sarīranira| Apan d(r̥)byanira hikaṁ bha:yu śabda: 
+
+
+<pb n="14r"/>
+<lb n="14r1"/>ṅaran hidhəp la:vaṇ a:ṅn-aṅən·| Icca byavaṣa yann ugatann ika saṁ manon juga: mataṅyan harani ya hidhəp·| Inakunya: taya hidhəpku haL̥ṅənku| nahan· byaktanikaṁ sarī<space type="binding-hole"/>ra: mvaṁ bhayū śabda hidhəp·| An dr̥bya denika saṁ manon·| An tan· vnaṁ hika kabeḥ kumavruhi sira| Apan· bhyakta katṅ(əṙ) mvaṁ keṅt-eṅət pva: hala:hayunika(ṁ) budḍ(i)| ndan katṅ(əṙ) 
+<lb n="14r2"/>mvaṁ keṅt-eṅət· riṅ ulaḥ lavan· vaṙṇna la:van sabda| syapa manṅəṙ maṅiṅt-iṅət saṁ manon· hataḥ siḥ| saṁ maṅhidhəp saṁ maśabda| saṁ mabhayu| nda sira tika: hinaraṇa<space type="binding-hole"/>nniṁ bapa-hibunta syanu| saṁ mula:hakniṁ sarīra| sira ta sinaṅguh acintya| Adr̥śya| Abyapadeśa| Adva:ya| Avijña:ta| Avimohita| Avaṙṇna| Avastu| Avacya| pr̥gu
+<lb n="14r3"/>tarebhava| Antyanta rebhava //0// Acintya ṅaranya| tan kahidhəp deniṁ hidhəpnya| Adr̥sa: ṅaranya| tan ta ton deniṁ panon·| Abyapadeśa: ṅaranya| <space type="binding-hole"/> tan kavastvan kahananya| Advaya: ṅaranya| tan· kna sinaṅguḥ tuṅgal·| Apan· rva: ṅarani{ui ra}ka yan hana kumavruhana sira tuṅgal·| Avijña:ta ṅaranya| tan kinavruhan deniṁ 
+<lb n="14r4"/>paṅavruḥnya| Avimohita: ṅaranya| tan kinapuṅguṅan deniṁ puṅguṁnya| Avaṙṇna ṅaranya| tan ilu vaṙṇna| Iki bhavanika: vaṙṇna-vaṙṇaniṁ sarīranya| Avastu ṅaranya<space type="binding-hole"/>| tan· kneṁ naraṇan·| Avacya: ṅaranya| tan dadi hinujar-ujarakən·| nahan ka:vuvusan saṁ hyaṁ pr̥mmaṇa| Ikaṁ hinaraṇaniṁ bapa-hibunta syanu| sira hikaṁ saṁ hyaṁ pr̥mmaṇa ṅara
+<pb n="14v"/> <fw place="left" n="14v">20</fw>
+<lb n="14v1"/>nyaṁ liṁ saṁ paṇḍita| valiṁ tatan saṁ karika saṁ hyaṁ ḍaṙmma vinuvusa:matuha| Apa sineṁniṁ ḍaṙmma pr̥ma:na| Apa sineṁniṁ pr̥mma:ṇa rahasya| Apa sineṁni(ṁ) rahaṣya| tuṅgal·<space type="binding-hole"/>| Apa sineṁniṁ tuṅgal·| saṁ manon·| saṁ manon ṅaranira syanu| ndaḥ syanū taya:na hiṁ saviji| sira sinaṅguḥ bapa-hibu la:van hanak·| Apan heka bhagha  sira rumiñci(ṁ) ha
+<lb n="14v2"/>vaknira| siraṅ hiṁ saviji makavak makala:rat kabeḥ| Umibki bhuvaṇa| kadyaṅganiṁ pañjut saviji| pinasaṁ pvekaṁ vr̥thi sa:tus sivū śakoṭi| kapva hikaṁ vr̥thi kabeḥ| <space type="binding-hole"/> kandəla:n apuy· denikaṁ pañjut saviji| tan hana śoṙ riṁ laḥ la:van teja| maṅkana ta saṁ manon haṙkkanekaṁ saṙvvajanma| tan hana śoṙ tan hana lviḥ| Arata padha bhayu śabda hidhə
+<lb n="14v3"/>p juga: pinakahuripnikaṁ śarat tan hana vaneḥ| ndaḥ syanu tayaṅ hiṁ śaviji| sira ta sinaṅguḥ saṁ hyaṁ pr̥mmaṇa| makadr̥bya bhuvaṇa lavan· sarīra| ṅuniveḥ bhayu śabda hidhə<space type="binding-hole"/>p·| @1 nambaḥ ṅhulun·| Ikaṁ hinarananiṁ bapa-hibuniṅ ulun syanu kapva: sira sidḍa: saṁ paṇḍita| tan hila:ṅaniṁ katuduhan saṁ hyaṁ ḍaṙmma kalīṅanika| ya ta mataṅyan hinila
+<lb n="14v4"/>:ṅaranikaṁ bapebu deniṁ pinakanak·| ṅuniveḥ ṅaran saṁ prabhu| karuhun ṅaran saṁ paṇḍita| rahaṣya hila-hīla: laraṅan katuduhan saṁ hyaṁ ḍaṙmma: kaliṅanika:| patu<space type="binding-hole"/>la: bedan saṁ hyaṁ pr̥mmaṇa| kaguru vaktran saṁ śevaka: ḍaṙmma @1 Enak mara: trus· vruḥnika: syanu| An· ya vruḥ tan kinavruhan·| {*sya}An· ya maṁR̥ṅə: tan kaR̥ṅə:| ya maṅhidhəp tan kahi 
+
+
+<pb n="15r"/>
+<lb n="15r1"/>dhəp·| manmu taṙ kkatmu| An· ya manon taṙ katon·| An hanaṅke riṁ sarīranya| ndaḥ yata sinaṅguḥ mokta diva ṅaranya| mokta tuṙ turuṁ hurip·| tan· dlaha pvaṁ ka⌈<space type="binding-hole"/>mokṣan· tmən·| maṅke juga: ya riṁ saṁ meṅət kunəṁ hika saṁ vikū maṅucap· hləm· yan huvus tapa| vanantara:ṅidaṁṅ a:majaraṅ (pa)ra rumuhun·| kamnanyan paguhakna ka⌈
+<lb n="15r2"/>mokṣan·| mvaṁ hləm· yan praptaniṁ pati| ya tika: hujaṙniṁ viku hayan· bhaṣmaran· ṅaranyiku| kaliṅanya tan· dla:haṁ kamokṣan· vinuvus·| maṅke juga: ya riṁ <space type="binding-hole"/> saṁ paṇḍita| ndaḥ pahapagəḥ tambəkta| ya hika: hinarananiṁ bapa-hibunta syanu| Ikaṅ anon tan katon han hanaṅke riṁ sarīranya| An· toḥ kambhaṁnikaṁ vuṅavari| si
+<lb n="15r3"/>ra ta śotaḥ magavay· tan ginavay| Ana tan hinanakan·| Ayva ta linoṅan hayva tinambəhan·| hayva met·va met· vaneḥ| Ayva: śalaḥ hidhəp·| Aṅhiṁ <space type="binding-hole"/> hika: syanu juga: viśeṣa tan hana vaneḥ //0// tlas karaṣa:-raṣa:nikaṁ śabda devatha śaṅ hulun·| Anniṁka saṁ manon hinaraṇaniṁ bapa-hibūniṁ hulun· syanū| An sira:
+<lb n="15r4"/>ṅhiṁ saviji makaḍrbyaṁ bhuvaṇa la:van sarīra| ṅuniveḥ bhayu śabda hidhəp·| sira pr̥mma:ṇa tan kapr̥mma:ṇan·| Irikaṁ rat kabeḥ liṁ devatha saṅ hulun·| Umapa pveka <space type="binding-hole"/> syanun paṅhidhəp suka duka| tuha la:ra la:van pati| Apan sira pr̥mma:ṇaniṁ devatha saṅ hulun·| tan kapr̥mmaṇan irikaṁ rat·| kapr̥mma:ṇan tekaṁ syanun maṁka:
+
+
+<pb n="15v"/> <fw place="left" n="15v">21</fw>
+<lb n="15v1"/>kana| Apaṇ aṅhidhəp· ya pa:pa| syapa ta mehika maṅhidhəp·| yan kva:liṅanta: ri kami| AUm tuhu tika| sukha duḥkot·pna sarīra: syanu| śaṅ karyya: vaknya juga<space type="binding-hole"/>: katekaṁ śuka duḥka: hinidhəpnya| kadyaṅganiṁ kaṅ apuy·| An sakeṅ avaknya hikaṁ panasnya dilaḥnya tejanya| maṅkaṇa tekaṁ saṁ manon han sakeṁ yavaknya śuka duḥ 
+<lb n="15v2"/>kha hidhəpnya| prihati la:van hinakk ambək·| ya ta mataṅyan pa:pa hika syanu pavak pa:sarīra| Apan· ri kalanyan· rakut· hikīṁ sarira gaṇal· rakva hika <space type="binding-hole"/> syanu tan paṁhidhəpa:pa| makasarira halit sukṣma:maya: riṁ supnya lakṣaṇa| pa:pa taya mahidhəp suka duḥka hatayaṅ kari paṁhipyan·| kalīṅanya yavak mavak masarīra
+<lb n="15v3"/>juga: hika syanu| tan mavak maṁhidhəp suka: duka| Apa hupamanya| kadyaṅgan mikul-mikul ma:byət·| ri kalanta tpi kuli kaki taṁ hidhəp· byətnya| śaka R̥ṁkətaṁ hi<space type="binding-hole"/>dhəp byətnya| Asuvai kita pikul ika| Aśuve kītaṁ hidhəp· byətnya| tiniṅgala:kən ta pvekaṁ pinikulta| ndaḥ mari ta kītaṁ hidhəp· byətnya| Ica līla: ta kīta siṁ saparanta
+<lb n="15v4"/>| kalīṅanya śobhavaniṁ mikul-mikul juga: humidhəp· byətniṁ pinikulnya| maṅkaṇa tekaṁ syanu rakut tikaṁ sarīra: ṣamaṅke| śobha:vanya juga humidhəp suka duḥ<space type="binding-hole"/>kha| tuha lara la:van patī| dikariḥ para:ṇan ika: syanū luputti śuka duḥkha| śalaha deniṁ tuha la:ra la:van pa:ti| vikvaśrava katyagambara| Alməḥ hayan· kneṁ gava 
+
+
+<pb n="16r"/> 
+<lb n="16r1"/>tutu(ṙ) sa(ṁ) manon yika| An pakavak ikaṁ samaṅkaṇa kabeḥ kaliṅan ika| talihakanta vula:tarikaṁ| saṙvva: tumuvuḥ| kayu dukut· roṇḍon hodod<space type="binding-hole"/>·| padha vruḥ riṁ tuvuḥnya| pasir aranya| pasvəḥnya| pakambhaṁnya| pavvvahanya| tan salaḥ raṣa| tan· vinaraḥ tan hinatag· de yan yan pakambhaṁ haṁvvaḥ| vruha tutuṙ ya juga
+<lb n="16r2"/>kabeḥ riṁ masanya: la:van· ri kalanya| dlan teka kabeḥ denta| kakariṁ tutuṙ saṁ manon han pakavak hika sa(ṁ)maṅkaṇa: kabeḥ kariḥ kaliṅan ika| nahan bya<space type="binding-hole"/>ktanikaṁ rat· han kapva: kahanan tutuṙ ndan atasmi natha diti yan vruḥ hikaṁ rat han hanaṁ tutuṙ hiriya| Apan· vula:ṅun tan vruḥ han· viśeṣa| la:van pr̥mmaṇa| Aji glaṙ
+<lb n="16r3"/>puja: samadḍi hataḥ viśeṣa: liṁnya| mvaṁ hana hyaṁ devatha bhaṭa:ra: baṭari sinaṅguḥnya pr̥mma:ṇa| tann eṅət hanyaviśeṣa| bhaṣa kumavruha maga:nal ma:<space type="binding-hole"/>lit sakala: niskala| tatan maṅkaṇa saṁ paṇḍita:na tutur·| vruḥ heṅətnəkət sira han siraṅhiṁ saviji viśeṣa: ma:kadr̥bya bhūvaṇa la:van· sarīra| mvaṁ bha:yu śabda hi
+<lb n="16r4"/>dhəp·| ya ta mataṅyan· tikṣṇa: vruḥnira| baṣavasitva:vag mikuk ṣiga tavig dada| labda smr̥ti prajña: meṅət tonan· rahina:hava| vihikaṇa: tutuṙ laṅlyaniya| <space type="binding-hole"/> nahan pinakaviśeṣa: saṁ manon· han pakavak tutur·| Apa pinaka:papa saṁ manon hirikaṁ sandi| nidra tan atutuṙ si lupa: puṅguṁ tann eṅət tan· vikana:| glo-glo
+
+
+<pb n="16v"/> <fw place="left" n="16v">24</fw>
+<lb n="16v1"/>lṅəṁ-lṅəṁ bhiṅuṁ taṙ vruḥ jugul· dumeḥ dadus prajña: ptaṁ pəpət handakara| paṅan inum· turū vipa:rita| Alupa ta yan pr̥mma:ṇa la:van· viśeṣa| milu tumut mi<space type="binding-hole"/>śeṣa:kən hajī mantra glaṙ puja:| mvaṁ hyaṁ devatha| nahan pinakapa:pa saṁ manon· riṁ sandi| Ika taṁ sandi ṅaranya| śeṅ ika| Apa sine(ṁ)nika: si tutur· sineṁniku
+<lb n="16v2"/>tuṙ si tan pakavuruṅan·| sineṁniṁ tan pakavuruṅan si tka| Apa kaliṅaniṁ tka| tka ta denikaṅ aji glaṙ puja| tka ta deniṁ tapa brata: samadḍi| tka ta deniṁ yaṣa:<space type="binding-hole"/>punya: kuṣala:di| tka juga: hika saṁ manon·| deniṁṅ apa: deniṁ tutuṙnya| Apa byaktanya| nihan kīta maṇambaḥ ri kamī| tutuṙ taḥ tumkakən kəta| nihan taṅ vaṁ mapara
+<lb n="16v3"/>n-paran· vanya gamala:/rya\ kunaṁ| maṇabraṁ hirikaṁ nūṣa: para:nūṣa| I campa hanak· rabhinya| kapva: masuk·| yyav manya| Apa tutumkaknika| tutuṙnya taḥ| nahan· <space type="binding-hole"/> byaktanikaṁ tutuṙ han pantakan· ri śaka:la| Apa byaktanika saṁ manon han·tka: deniṁ tutuṙnya riṁ niśka:la| riṅətniranta nikīṁ sarīra:nira tutur·| tan· bha:yū śa
+<lb n="16v4"/>bda hidhəpnira: matutur·| Apan tutuṙ puruṣa: ri mula:hakan· sarīra:nira| mvaṁ bha:yu śabda hidhəpnira| sapa:pva matutuṙ saṁ manon· jūga:| kalīṅanya masarī<space type="binding-hole"/>ra: tan pasarīra: hika saṁ manon·| tutuṙnira hataḥ tumkakən sira| śakala: niskala: hataḥ havaka(ṁ/ṙ)nika: saṁ manon·| tutuṙnira hataḥ tumkakan sira| raśe kaśa:
+
+
+<pb n="17r"/>
+<lb n="17r1"/>byakta tuhu liṁ saṁ paṇḍita| nahan sinaṅguḥ sandi ṅaranya līṁ saṁ paṇḍita: //0// maṅkaṇa tekiṁ tapa| Apa pinakaraṣanya si līla:ṁ| Apa mataṅyan· ri līla:ṁ| riṅətnira ma:<space type="binding-hole"/>kadr̥bya bhūvaṇa la:van sarīra| ṅūniveḥ bha:yu śabda hidhəp·| Anhiṁ sira saviji pr̥mma:ṇa tan hana vaneḥ| ya ta mataṅyan karaktan saṙvva:mala:| hyan luput hilik tr̥ṣṇa:
+<lb n="17r2"/>tan hana meṅət·| Alṅis· juga: maṇaḥnira| niṙtr̥ṣṇa: tan hana siḥ tan hana hyun tan a:kuṁ tann onəṁ| tan haṙṣa: tan haR̥p tan dr̥dḍa: tan· ra:gha: tan ala:halaḥ vaR̥<space type="binding-hole"/>gga: vruḥ siḥ jinnaṙbaṣa: huvuṣ juga:| ya byaktaniṁ mala:līlaṁ ṅaranya| tan kapr̥mmaṇan deniṁ sarīranya| bhayu śabda hidhəpnira| nahan pinaka:viśeṣa:nika saṁ manon· yyaṙ ta
+<lb n="17r3"/>pa| Apa pinakapapa: saṁ manon· yyaṙ tapa| si kavyavandanan deniṁ sarīranya| bha:yu śabda hidhəpnya:| Aku pa:taya riṁ takut· tr̥ṣṇa: hasiḥ lulut tunaṁ haṙṣa kuṁ giraṁ <space type="binding-hole"/> dr̥dḍa: hyun·| sya/la\halaḥ si tan· vaR̥g·| ragha: dośa loba: moha matsaṙyya kimburū| nahan pinakapa:pa saṁ manon· yaṙ tapa| yavat ika saṁ manon kapr̥mma:ṇa⌈
+<lb n="17r4"/>n deniṁ sarīranya| bhayu śabda: hidhəpnya| mvaṁ katut kektan denīṁ tr̥ṣṇanya| tavat· bha:vacakra śaṅśara valuy· janmanika saṁ manon·| nitya maṅhidhəp saṁ śara:<space type="binding-hole"/>pa:ṣa hika yan maṅkaṇa| Apa byaktanyan pinakapa:pa riṁ śakala: niskala: hika si tr̥ṣṇa:| nihan taṅ vaṁ mala:ki mara:bhī| padha ta ya masiḥ malulut·| Ana pra:calanya bud(ḍ)inya
+
+
+<pb n="17v"/> <fw place="left" n="17v">25</fw>
+<lb n="17v1"/>n pakuR̥n·| Atadin pva: ya pasiḥ| padha ta yva:naṁ| Avaluyanta| vetniṁ padha tr̥ṣṇa: kalīṅanya| Aparan tomaluyaknika| tr̥ṣṇan yan hataḥ| nihan taṅ vaṁ hilaṁ masnya| mati ha<space type="binding-hole"/>ṇak rabhinya kunaṁ| tka taṁ la:ra:kiṁkiṅiriya| Anaṅis taya:krak·| Akurūmakīṁ tan· kneṁ paṅan lavan turū| vetniṁ prihatin kalīṅanya| Aṁ padumeḥ nikaṁ maṅkaṇa la:ranya| de
+<lb n="17v2"/>niṁ tr̥ṣṇa:nyataḥ| nahan· byaktanyika tr̥ṣṇa: pinakapa:paniṁ śakala: de saṁ manon·| Apa byaktanyan pinakapa:pa riṁ niskala: hikaṁ si tr̥ṣṇa| nihan kadyaṅganiṁ vvaṁ maṁgat sa<space type="binding-hole"/>keṁṅ umaḥnya deśanya| mahaṣtaya: mamet· deśa:| ndaḥ tan pahinaki hikaṁ deśa pinaranya kabeḥ| monaṁ taya riy umaḥnya deśa bhūminya| muliḥ taya tan kaśulan·|
+<lb n="17v3"/>katmu pve{ui ka}komaḥnya turuṁ pva: śaka paripuṙṇna| tka taya mandəl· riy umaḥnya| ruga:vuk hilaṁ pvekomaḥnya| dadi ya mamaṅun humaḥ muvaḥ| Iva maṅkaṇa teka:ṁ <space type="binding-hole"/> saṁ manon· yyaṙ takut deniṁ si tr̥ṣṇa:nira ri niska:la| mataṅyan hana vvaṁ ma:ti huvus tinivakən· riṁ smaha hurip muvaḥ ma:ti ma:baṅun· ṅaranya vaneḥ deniṁ loka| Avu
+<lb n="17v4"/>k drava pva: sarīranya| dadi ya magavay· sarīranya muvaḥ| mataṅyan hana vvaṁ ja:tismara: ṅaranya deniṁ loka| riy uvaḥnya janma| tatan dva: kahidhəp· tekaṁ pa:pa: <space type="binding-hole"/> pañcagati śaṅśara: muvaḥ denya| Apa ta mata samanda hika| deniṁ tr̥ṣṇanyataḥ| nahan· byaktanikaṁ tr̥ṣṇa:n pinakapa:pa riṁ śaka:la: niskala:| vruḥ pveka saṁ paṇḍita: pina
+
+
+<pb n="18r"/>
+<lb n="18r1"/>karika: tuṅgal· yyaṙ śambhavanikaṁ sarīra: pinakavaknya| taham·| vruḥ karika: tuṅgal· yyaṙ śambhavanyika bhayu śabda hidhəpinakahuripnya: mvaṁ pinakaśabdanya| taha <space type="binding-hole"/> tan· vruḥ hika yyaṙ sambhavanyika kabeḥ| kadi pituhunya: hikaṅ aji mantra jotisa glaṙ puja:| mvaṁ phala:niṁ tapa brata hləm· yan mati| yan apa hika yan· vruḥha yyaṙ
+<lb n="18r2"/>śambavanīka kabeḥ| kunaṁ śaka ri puṅguṁnya yyaṙ sambavanikaṁ tka:beḥ| nahan mataṅyan katut kekət hikaṁ loka milū mituhu hikaṁ haji glaṙ puja| mvaṁ phala:niṁ tapa <space type="binding-hole"/> brata sama:dḍi| An pan· sinaṅguḥ hnikaṁ loka śambava| kadyaṅganiṁ puntihatu dva tuṅgaliṁ savvit·| tan sambhava: liṁnya hirika| Apan lagi katon denya| yadyastun pano§
+<lb n="18r3"/>n· pva: ya punti hatu dva: rva: tlu pat· lima riṁ savvit·| sinaṅguḥnya ja:tinika sambhava| Apan puṙvva: katon denya| tahapiḥ liṁ saṁ paṇḍita| hastiti padha śambava<space type="binding-hole"/>nikaṁ rat kabeḥ| hatu da: tuṅgal· riṁ sa:vvit·| Asambava hataya| tan patuda: tovi hasambhava hataya:| yavata:pvika katon kaR̥ṅə: karaṣa kaspaṙṣa:| ṅunive
+<lb n="18r4"/>h ikaṁ bha:yu śabda hidhəp·| mvaṁ hikeṁ sarīra pinakavakta| Asambhava juga: hika kabeḥ| Apa byaktanya| tuku pta liṅanta kaliḥ| Apa rinəṅə:nta| śabda kady ampu<space type="binding-hole"/>han pvaṁ kulun·| vṅakən tata liṅanta| Apa ta rinəṅənta| śabda hasiṁ śabda hataḥ| mneta tinukup kaliṅanta: śabda hataḥ rinəṅə:nta| vinəṅakən ta liṅ<gap reason="illegible" quantity="1" unit="character"/>śabda hataḥ rinəṅənta| A
+
+
+<pb n="18v"/> <fw place="left" n="18v">30</fw>
+<lb n="18v1"/>pveka tan sambhava kari kaliṁta:| ri huvusnikan maṁkaṇa| tukup matanta kaliḥ| Apa tinonta| pta(ṁ) paramanuḥ kabharanaṁ| kumḍap kadi haṇdap-aṇdap·| vaneḥ lumarap kadi <space type="binding-hole"/> kunaṁ-kunaṁ| Akveḥ lviṙnikaṁ rūpavaṙṇna katon pvaṁ kulun·| vṅakənta mathanta kaliḥ| Apa tinonta| saṙvva:rūpa: saṙvva:vaṙṇna hataḥ| Apeka tan· sambhava karika liṁta| ta
+<lb n="18v2"/>ham· liṁ saṁ śevaka ḍaṙmma:| Iṅt-iṅət· ktasiḥ denta pahenak·| Enaka:vas pva katonanikaṁ rat· denta saṁ śevaka ḍaṙmma:| dinlaṁ tagaṁniṁ bhuvaṇa| lolbaniṅ aka<space type="binding-hole"/>śa| śegraniṅ aṅin·| vijilnikaṁ saṙvva:vaṙṇna| tuvuḥnikaṁ saṙvva:janma| vultakniṁ vva:y· sakeṁ lmaḥ| təmpuḥniṅ udan sakeṅ aka:śa| ndi ta śaṅkaṇ ika: kabeḥhan· vijil·
+<lb n="18v3"/>| Enak pva: katon ya sambavanikaṁ rat kaveḥ de saṁ śevaka ḍaṙmma:| ya ta mataṅyan takonakən saṁkaṇiṅ aśambava| təp mavaraḥ tan saṁ paṇḍita| liṁnira R̥ṅyə: ta kitana<space type="binding-hole"/>ku| Ana maṇik saṙvveṣṭa sakaṙja paripuraka ṅaranyan cinaritakən· riṁ carita kumara vasamutimvaṁ śri vikramajitya| An sakaṙjja:nu vidi hikaṁ maṇik saṙvveṣṭa ri cari
+<lb n="18v4"/>ta| AUm majaR̥ṅə: raṇak devatha saṁ hulun·| yyaṙ kva liṅanta ri kamī| Umapa tekaṁ maṇik saṙvveṣṭa ṣakaṙjja paripura ka:litanaku| maṇik· vatu karika ya liṁ<space type="binding-hole"/>ta| AUm maṇik· vatu hataya: liṁ raṇak devatha: saṅ hulun·| nda taham hanaku| yastun· petən taya ri vkasnikaṁ loṙ kidul· kulon· vetan hi soṙ hiṁ lu
+
+
+<pb n="19r"/>
+<lb n="19r1"/>turū yan tan· kne(ṁ) har(ə)p matha:| Iñcal ilaṁ juga: ya mamṅ-amə(ṁ) keriṁ sva:pna lakṣaṇa| kadi panonanya ṅke panva:nya ṅka| Ikī(ṁ) sarīra ṣamaṅke| kavkas· riṁ kala:ṣa:| Ika(ṁ) <space type="binding-hole"/> syanupiḥ| manon hataya riṁ śopna la:kṣaṇa| An· vaṅsil· sakeṁ sarīra| maluy· pve syanū mantuk sarīranya| maṁliliṙ ta ya mataṅi deniṁ loka| tinonya ta vinyū
+<lb n="19r2"/>maḥnya bhabhak·| maraṅaṁ denikaṁ maliṁ| mūkhanya hibkan haR̥ṁ| tutuknya meṣi vuyaḥ| dr̥byanya kabaiḥ hilaṁ| tan paśeṣa: katon denya| Avuṅūyakra kamīnta tu<space type="binding-hole"/>luṁ| nahan paṅanū maṇan han tan paṁR̥ṅə: hikaṁ sarīra samaṅke| byaktanika syanū juga han· ya manon· riṁ śakala: niskala| An· ton kambhaṁnikaṁ vuṅavari| Anpaka panvan·
+<lb n="19r3"/>hidhəpnya| makadva:ra matanya kaliḥ| Anpaka śadana bhayunya| makapamastu śabdanya| An padkara hikaṁ bhuvaṇa| nahan deyanta humupapti hikaṁ hinaraṇan sya<space type="binding-hole"/>nū //0// tlas ika| Apa ta /ha\vakaṇ ika syanū| hana karika sira tan hana kunaṁ| yan kaliṅanta:| tan sihana: tan sihi tan hana| tan tana:raniṁ hana la:van tan hana| ja:ti juti  
+<lb n="19r4"/>kunaṁ| tañ jati tan juti kunaṁ| tan tana:raniṁ ja:ti la:van juti| taṅgaṁ tan tuṅgaṁ kunaṁ| tan si tuṅgaṁ tan si tan tuṅgaṁ| tan antaraniṁ tuṅgaṁ la:van tan tuṅgaṁ| kalīṅanya tuṅgaṁ <space type="binding-hole"/> ri kavakanya| tan tuṅgaṁ ri kavakanya| hantara ri kavakanya| syanu ri kavakanya| yadyastun panaṅguḥhakətaya la:van hade| Ade hata pvaṁ kulun·| hade ri kavakanya| <gap reason="illegible" quantity="1" unit="character"/>
+
+
+<pb n="19v"/> <fw place="left" n="19v">18</fw>
+<lb n="19v1"/>ri kavakanya| syanu ri kavakanya| kalīṅanya| taṅeḥ yan· sḍaṁ śabda: juga: hika kabeḥ| ndya śabda| hana śabda| tan hana śabda| ja:ti śabda| jutī śabda| tuṅgaṁ śabda| tan tu<space type="binding-hole"/>ṅgaṁ śabda| ya śabda| hade śabda| Antara: śabda| Ika hinaranan syanu ta pva kahanan sabda juga: hika| Apan sira mabya| tan pinakadr̥bya| Apa pva: kapaṅgu(ṁ)| hananira| samama<gap reason="illegible" quantity="1" unit="character"/>
+<lb n="19v2"/>taten kapaṅguḥ| yajiyan kapaṅguḥ kapaṅguha kahaR̥pta| havakni syanu juga:hiṅaniṁ kapaṅguḥ la:van ka:śabda| mvaṁ kaviveka| Aṅiṁ hikaṁ śabda hatahiṅaniṁ makaka<space type="binding-hole"/>paṅguha siṁ ka:R̥ṅə:| Avakniṁ syanu hataḥ makahīṅaniṁ siṁ karaṣa: maṁkna śinabda| kunaṁ bha:yu śabda hidhəpnya:| Iṅaniṁ kaR̥ṅə: karaśa: kaspaṙṣa hika| la:van· kna vinastvan·
+<lb n="19v3"/>kunəṅ ikaṁ saṁ mamaṅguḥ| sira mamaṅguḥ taṙ kkapaṅguḥ| yavat kapaṅguḥ tavat· dr̥bya| yavat dr̥bya tavat papa hade hika| Apa katmvaṇanira| saṁ manmu hata/ḥ\ taṙ katmu<space type="binding-hole"/>| yavat katmu tavat· dr̥bya| yavat· dr̥bya: tavat pa:pa hade hika| Apa ta kiraḥ katpətananira: yan kaliṅanta| saṁ manpəti hataḥ taṙ ka:tpətan·| yavat katpətan ta
+<lb n="19v4"/>vat· dr̥bya| yavat dr̥bya tavat pa:pa hade hika| Umapa kavastu hataḥ taṙ kavastun·| saṁ mamastu hataḥ taṙ kavastun·| yavat kavastvan tavat dr̥bya| yavat dr̥ tavat pa<space type="binding-hole"/>:pa hade hika| Apa pva kahidhəpanira| yan kva līṅanta| saṁ mahidhəp· hataḥ siḥ taṙ kkahidhəp tavat dr̥bya| yavat dr̥bya tavat pa:pa hade hika| Umapa:
+
+
+<pb n="20r"/>
+<lb n="20r1"/><gap reason="lost" extent="unknown" unit="character"/>n(i)ra magavay·| dadi sira makavak·| mtu mahurip sira yan maṁkaṇa| Alməḥ sira ma:kavaka: huliḥnira magavay·| mtu mati havuk havaknira yan ma(ṁ)kaṇa| na<space type="binding-hole"/>han lakṣaṇa saṁ manon magavay sarīranya riṁ dL̥m· vtə:ṁ ṅuni maṅke| kaliṅanya dadiniṁ hidhəp hikaṁ rat kabeḥ| nda:tan katuduḥ hikaṁ hidhəp· denikaṁ rat kabeḥ| kadya
+<lb n="20r2"/><gap reason="lost" extent="unknown" unit="character"/>vr̥ti la:van· citrakara| dakanurattaku voṁ-voṅan· liṁnikaṁ citrakara| tinulisnya tekaṁ mukha| taṅan suku ma:tha: taliṅa| tlas· rūpa puru<space type="binding-hole"/>saṁkara| vinaṙṇnanya taya| Inuṁkaban tekaṁ patani| dhataṁ tekaṁ manonton· tulis kabeḥ| Apa ta paribhaṣanya| Ayuniṁ vr̥tya-vr̥tyanya kumva:kariya| tuhun·
+<lb n="20r3"/><gap reason="lost" extent="unknown" unit="character"/>maṁkaṇa| Apa ta kaliṅanya ta kariḥ| Ayunikīṁ tulis kva: juga: liṅanika| riṁ pamathan·| riṁ pasusva:n·| riṁ pajarijyan·| riṁ peruṅan·| tan ha{*pa}/na\ ju<space type="binding-hole"/>ga: paca:lanya| maṅkaṇa liṁnikaṁ manonton tulis kabeḥ| Araṇa tekaṁ vr̥ti| tan katuduḥ ya deniṁ tmahanya| Apan· tmahaniṁ vr̥ti pvekaṁ tulis·| Iva maṅkaṇa
+<lb n="20r4"/><gap reason="lost" extent="unknown" unit="character"/>(taṁ) hidhəp· lavan tutur·| An tan katuduḥ ya deniṁ tmahanya| Apan· tmahaniṁ hidhəpvekaṁ rat ka:beḥ| vruḥ pva: kita tmahaniṁ hidhəp hikaṁ rat kabeḥ| mvaṁ <space type="binding-hole"/> hikaṁ bhuvaṇa la:van sarīra| Aṅhiṁ hidhəp· ginavaiy·| tutuṙ pagavey·| saṁ manon magavey·| ya ta sinaṅguḥ jan(ma) rahaṣya ṅaranya| (I)ṅət· riṁ rahaṣyaniṁ jan(ma)nya|
+
+
+<pb n="20v"/>
+<lb n="20v1"/><gap reason="lost" extent="unknown" unit="character"/>:van· rakiḥ dadi janma| mataṅyan hanavukan· yan hantiga| Anakra ṅaranya yan manuṣa:| Apa ta karikaṁ dadi janma la:van sarīra liṁ saṁ paṇḍita| ⌈<space type="binding-hole"/>yekaṁ hidhəp·| An· ya dadi janma la:van sarira| Apa humadyanta ri ka(ṁ) hidhəp· yan dadi janma la:van sarīra| nya(ṁ) savaḥ duv(ə)g analar·| g(i)narūtana (ka) p(i)naha
+<lb n="20v2"/><gap reason="lost" extent="unknown" unit="character"/>hikaṁ lmaḥ| dadinya karika tmahan pari| tahapiḥ tan hana: maṅkaṇa| tuhun pinaka:paṅandəlakən· vija:hatika lmaḥ| tuhun pinaka:paṅnəman· vi§<space type="binding-hole"/>jatika vvay·| Iva maṅkaṇa tekaṁ tiga:rahaṣya| Apa kaṅ aran la:kta| Ikaṁ ratiḥniṅ anakbi| Apa kaṁ haran· vvay·| Ikaṁ ka:ba: śaka riṁ la:ki-la:kī| Apa kaṁ ha
+<lb n="20v3"/><gap reason="lost" extent="unknown" unit="character"/>vija hikaṁ hidhəp·| ndaḥ hikaṁ hidhəpta: hinandəla:kən· riṁ pasaṁ yogyani kama la:van· ratiḥ| ya ginavay· janma: la:van sarīra| Apa pagavay hi<space type="binding-hole"/>riya: hikaṁ tutur·| syapa magavay· saṁ manon·| ndaḥ saṁ manonta gumavay· hidhəpnira| pinakavaknira| Apa pva: mataṅyan hana raray· kaśalaḥ ṅaranya la:
+<lb n="20v4"/><gap reason="lost" extent="unknown" unit="character"/>v(u)ruṁ riṁ gaṙbha:vaṣa| ṅ(u)niveḥ vva:ṁ mt(u) ma:ti| nihan (la)kṣaṇa saṁ manon hagavay· sarīranya riṁ gaṙbhavaṣa| saṁ kama-kama: hati vahita sarīra sira| <space type="binding-hole"/> sakama-kama: hati vahita ṅaranya| vnaṁ magavay· vnaṁ malmaḥ sira| vnaṁ mavak· vnaṁ tan pavak·| vnaṁ tuṅgal· vnaṁ hakveḥ| Apa kaliṅanya| AhaR̥p sira: makavak ha
+
+
+<pb n="21r"/>
+<lb n="21r1"/>hur·| tan pamaṅguḥ juga: kita hirika| Aparan pveka sinaṅguḥ saṁ paṇḍita| saṙvveṣṭa śakaṙja: pari puraka: ṅaranya| Ikaṁ hidhəp·| saṙvve (śa)kaṙjja:nu vidi hikaṁ tu<space type="binding-hole"/>tur·| ya ta maṇik hikaṁ saṙvveṣṭa śakaṙjja: pari puraka: ṅaranya| mvaṁ śakaṙjanu vidi ṅaranya liṁ saṁ paṇḍita| pinakamṅ-amṅan saṁ hyaṁ ḍaṙmma:| ya ta kinudaṁ-kudaṁ nikaṁ loka ri
+<lb n="21r2"/>yoga ṅaranya| śalviṙnikaṁ kiduṁ mamuhara ra:gha: mvaṁ vija hirikaṁ loka| Apa mataṅyan maṇik saṙvveṣṭa: śakaṙja pari puraka: ṅaranya| Ikaṁ hidhəp·| raśe<space type="binding-hole"/>ktaḥ panmunikaṁ rat sukha duḥkha henak tan· henak·| tan sakariṁ hidhəpnya: karika| Apa denyan panmu hala: hayu sukha duṅkha: riṁ hidhəp·nya| yan poki-makira:
+<lb n="21r3"/>kira| yan· rahayu kira-kiranya haneṁ bhuvaṇa| Amaṅguḥ ya hayū| Apa ta hayu ṅaranya| yan paśambyavahara| satya taya riṁ guṇanya gavay·nya| nitya maṁra<space type="binding-hole"/>kṣa sila:| śatya matuhan·| ṅuniveḥ yan pajara ḍaṙmma: riṁ saṁ ma:tuha| nahan deyan yan panmu hayu riṁ hidhəpnya:| Apa denyan panmu hala: riṁ hidhəpnya| yan hala:
+<lb n="21r4"/>kiranya riṁ padhanya janma| yan la:ku maliṁ manluḥ| śalviṙniṁ kira-kira riṁ bhuvaṇa ginavayakənya| byakta taya tan hana hinaripan denikaṁ loka| nahan denya panmu <space type="binding-hole"/> hala riṁ  hidhəpnya| kadyaṅganikaṁ hidhəp han· byakta katon pinakahetunikaṅ ala: hayu| śukha duḥkha| Enak tan enak hirikaṁ loka| maṅkaṇa taya ginavay· sa:ṙ
+
+
+<pb n="21v"/> <fw place="left" n="21v">31</fw>
+<lb n="21v1"/>vva:janma| makavijil hikaṁ bhuvaṇa| la:van sa(ṙ)vvajanma| mvaṁ bha:yu śabda hidhəp·| ṅuniveḥ śakaton sakaR̥ṅə| saka/ra\ṣa: śaka spaṙṣa| ya kapva: hikaṁ hidhəp<space type="binding-hole"/>· ginavay·| yyaṙ kva liṅanta ri kami| AUm·| mijil sakeṁ tiga: rakva hikaṁ bhūvaṇa la:van saṙvva:janma| yyaṙ kva liṅanta| AUm· tuhu mati ka(ṁ) rat kabeḥ miji
+<lb n="21v2"/>l sakeṁ tiga| ndaḥ tan tiga brahma viṣṇu saṅkanya| syapa kari vnaṁ myaktakna hika| ndya pvekaṁ tiga saṅkanya ta kariḥ| Ana tiga rahaṣya: ṅaranya| vkasniṁ tiga vinuvus· <space type="binding-hole"/> saṁ paṇḍita| Ikaṁ bha:yu śabda hidhəp· kariya| taha tiga śaḍana ṅaranyika| ndaḥ pvekaṁ tiga| rahaṣya: ṅaranya liṁ saṁ paṇḍita: nihan·| nyaṁ hidhəp·| nyaṁ tutur·| saṁ
+<lb n="21v3"/>manon·| yeka: tiga rahaṣya: ṅaranya| saṁkaṇikaṁ bhuvaṇa la:van saṙvva:janma| nahan dr̥ṣṭanta hirikaṁ tiga rahaṣya| An· ya saṅkaṇikaṁ bhuvaṇa la:van saṙvva:<space type="binding-hole"/>janma| nyaṁ pañjut· dilaḥnya mvaṁ tejanya| tuṅgal ka:rika liṁta| tahapiḥ| dudū dilaḥ| dudū teja| dudū hapuy·| Apa byaktanya| pasaṁ hikaṁ pañjut tunvi sumbunya
+<lb n="21v4"/>| baṙ dumilaḥ taya| Ikaṁ murub· haṅadəg tan satumuduhan g(u)ṁnya| yeka: dilaḥ ṅaranya| Ikaṅ abraha:ṅibki humaḥ| yeka: teja ṅaranya| Ikaṁ luməṁ śaku<space type="binding-hole"/>naṁ-kunaṁ habaṁ ri tuṁ-tuṁniṁ sumbhu| yeka: hapuy· ṅaranya| nahan byaktanikaṁ hapuy·| An dudu mvaṁ dilaḥnya: la:van· tejanya| ndi ta saṅkaṇikaṁ dilaḥ la:van teja| kaka
+
+
+<pb n="22r"/>
+<lb n="22r1"/>ri tlasnya: maṅkaṇa| pati tekaṁ hayam lanaṁ vadon·| sivakta dhadhanya: kaliḥ| pet· tekaṁ kama la:van· ratiḥ| riṁ purus la:van· bha:ga| tan kapaṅguḥ saṁ mano⌈<space type="binding-hole"/>n peta:vulikən· riṁ sarīra| kapaṅguh ikaṁ kama la:van· ratiḥ| An pinet riṁ sarīra| Apa yapan maṁke krama: saṁ manon hapaṁrūpa sidḍa| Aṙ pakavak· ragha mvaṁ ha(ṙ)ṣa| gaṇal·
+<lb n="22r2"/>saṁ manon taṁ tutur·| gaṇalniṁ tutaṙ hidhəp·| ganalniṁ hidhəp· raga ragi mvaṁ haṙṣa| gaṇalniṁ ra:ga mva:ṁ haṙṣa: hikaṁ kama: lavan· ratiḥ| gaṇalniṁ kama la:van· ratiḥ <space type="binding-hole"/> yeki sarīra| maṅkaṇa: lakṣaṇa saṁ manon han pakavak· ra:ga mvaṁ haṙṣa| makavak· kroḍa la:van ilik maṅkaṇa taḥ| gaṇal saṁ manon hikaṁ tutur·| gaṇalniṁ tutuṙ hidhəp·
+<lb n="22r3"/>kroḍa: lavan ilik·| gaṇalniṁ kroḍa: lavan ilik· vuta: bho vaṙṇna kamaṅan·| tka taṅan· tka vuvus mamr̥p mati| nahan lakṣaṇa saṁ manon han pakavak kro<space type="binding-hole"/>:ḍa: lavan ilik· @1 tlas ika talihakən tari hilaṁ hikaṁ ra:gha: mvaṁ haṙṣa| kramanyan padhəm hikaṁ ra:gha mvaṁ haṙṣa| mari mahyun mari melik kunaṁ| litniṁ sarīra: ṅaranya| kama: la
+<lb n="22r4"/>van· ratiḥ| litniṁ kama la:van· ratiḥ| ra:gha mvaṁ haṙṣa| litniṁ raga mvaṁ haṙṣa| hidhəp·| litniṁ hidhəp·| tutur·| litniṁ tutur·| saṁ manon·| litniṁ saṁ manon·| ta<space type="binding-hole"/>n· kna deniṁ ra:gha mvaṁ doṣa| loba moha| mada matsaṙyya| luput ta pakavak ika: kabeḥ| taṙ {ui ha} katmu taṙ kagrahya: taṙ kagrəhaka| nahan mataṅyan padhəm· hikaṁ kroḍa:
+
+
+<pb n="22v"/> <fw place="left" n="22v">34</fw>
+<lb n="22v1"/>la:van ilik·| Ilaṁ taṁ ra:ga mvaṁ haṙṣa| ya ta mataṅyan asambhava hikaṁ rat kabeḥ vkasan·| Apa mataṅyann asambhava| ri tan katon ikaṁ ginavay·| la:van pagavay<space type="binding-hole"/>·| ṅuniveḥ saṁ magavay·| nahan· vuku pr̥tyakṣa ṅaranya| makaraṣa:sya sambhava liṁ haṙyya paṇḍita //0// maṅkaṇa tekaṁ kalpasan·| Apa pinaka:raṣanya| si kr̥ta:
+<lb n="22v2"/>ka| la:van si dum·| Apa kr̥taka ṅaranya| gavay·| Apa dum ṅaranya| titaḥ vatəsniṁ ja kaṙmma ḍaṙmma datu dum hika kabeḥ| Apa kaliṅanya| vruhanira dum um i ga:<space type="binding-hole"/>vay·nira riṁ śakala: hika saṁ manon han pagavay· dinumanira: hiniṅanira: gavay·nira| Apa tutuduhaniṁ gavay· saṁ manon· ri śakala:| nyaṁ haji mantra| kiduṁ carita
+<lb n="22v3"/>: gr̥da: śloka śastra| Iniṅan ika ri davanya| ri təṇḍəkanya| kveḥhanya la:van· kḍikanya| mataṅyan han svaṙgga: ya haji| sacatuspadika: sapadaropadaya<space type="binding-hole"/>n kiduṁ carita| maṅkaṇa: de saṁ kavi yyaṙ pagavay·| byakta:nyan hiniṅan kaliṅanya| nahan taṅ vaṁ tani magavay·-gavay· gagha la:van savaḥ| hiniṅan lonika hanuṁ kavaṣa
+<lb n="22v4"/>: kavnaṁṅa denya| nihan taṁ huṇḍahagi magavay umaḥ patani kunaṁ| Iniṅanika: ri gəṅanya| kaliṅanya: hasiṁ śakagavay ika: saṁ manon· ri śakala: ta juga:hiṅiṁ ga<space type="binding-hole"/>vay·nira| Iva maṅkaṇa: taya hiṅi gavaynira: riṁ niskala| Apa ta: tuduhani gavay· saṁ manon· riṁ niskala:| yekīṁ bhūvaṇa: śoṙgga: patala| mvaṁ saṙvva:janma: salviṙnikaṁ§
+
+
+<pb n="23r"/>
+<lb n="23r1"/>plak·tən· mlək·| Umandəliṅ apuy· saṁ manon·| tan ka:paṇasan tan· gsəṁ| ṅūni kala:nya pasarīra: ta Ika saṁ manon kapaṇasan deniṁṅ apuy·| kaplək· deni vva<space type="binding-hole"/>y·| tlas pva: siratyakta tumiṅgala:knika kabeḥ| Apa ta mataṅyan kaplək·| lavan kapaṇasana rakva:| nahan maṅandəlī tan ka:ndəlan· ṅaranya| p(i)n(ə)ḥ pva: raṣa maṅa
+<lb n="23r2"/>ndəli tan kandəlan·| katmu ta raṣani sidḍa:| sidḍa: tan kaloran deniṁ lor·| sidḍa: tan kakidula:n deniṁ kidul·| sidḍa: tan kakulonan· deniṁ kulon·| <space type="binding-hole"/> sidḍa: tan kavetanan deniṁ vetan·| sidḍa: tan kaśoran deniṁ śor·| sidḍa tan ka:rūhuṙran deniṁ ruhur·| sidḍa: tan kagaṇala:n deniṁ gaṇal·| sidḍa tan ka:lita⌈
+<lb n="23r3"/>n deniṁṅ alit·| ya ta kaliṅaniṁ paribhaṣa saṁ sidḍa devatha| liṁniṁṅ vaṁ tuhan ta yan kati| Uvus luput riṁ pa:pa kabeḥ kaliṅanya| ya ta kalīṅaniṁ sahadihyaṁ| ma:<space type="binding-hole"/>luy· hyaṁ kalīṅanya| pinəḥ pva raṣaniṁ sidḍa:| katmu ta raṣaniṁ hekatva:| Ekatva: ṅaranya| tuṅgal ika saṁ manon maluy· riṁ śobhavanira| manon tan katon·|
+<lb n="23r4"/>nahan tapa ṅaranya| maka:raṣa: līlaṁ nistr̥ṣṇa: liṁ maha paṇḍita: @1 [baseball without circle]@1 maṅkaṇa tekaṁ luṅguḥ| Apa pīnaka:raṣanya| si pagəḥ| tahva teka saṁ manon ma:pagəḥ<space type="binding-hole"/>ha riṁ vruḥnira riṁ śakala: niskala:| Apagəḥhanika saṁ manon· riṁ śakala:| ta ri lva:miśeṣakən haji mantra huṁkara: glaṙ puja:ḍyana: samadḍi| ta ri lva:miśeṣa ka:
+
+
+<pb n="23v"/> <fw place="left" n="23v">27</fw>
+<lb n="23v1"/>guṇa guni| nahan kapaṅgihan(i)ka saṁ manon· riṁ saka:la| Andya kapagīhanika saṁ manon· riṁ niska:la| Ayva: sira maha vvilan·| Apa kalīṅanya| kadi vruḥ mari<space type="binding-hole"/>ka saṁ manon· ri vvila:nyan pakavakk ikaṁ bhuvaṇa: lavan sarīra| pinaka:pa:panya| kadi vruḥ marika saṁ manon pakavakkaṁ bha:yu śabda hidhəp(·) pinaka kapa:panya| Apa
+<lb n="23v2"/>hudyan tahanta vruḥ ya ri vvi:la:nyan pakavak hika kabeḥ| An·yva: pinakapa:panya| nyaṁ vvaṁ mariṁṅ ala:s maṅidki rvī| mareṁ papuyan maṅidki hapuy·| ma:riṁ tga:<space type="binding-hole"/>l maṅidkī tahi| Apa hetunikaṁ rvī tahi la:van apuy· han kedkan denta:| saṁ kari vruḥ ta karika| tahapiḥ maha vvila:nta ṅaranyika yan· vruḥ hayu| kunaṁ saka riṁ pu
+<lb n="23v3"/>ṅguṁ ta kalīṅanika: mataṅyan kambaha:ya denta| tatan dvaṁ hidhəp· taṁ la:ra: momvaṁ paṇasniṁṅ apuy· denta| Iva maṅkaṇanda teka saṁ manon·| Av pakava<space type="binding-hole"/>k ikaṁ bhuvaṇa la:van sarīra ṣamaṅke| śaka ri tan vruḥnyan pa:pa mavak masarīra kalīṅanya| mataṅyan mavak ma:sarīra| tatan a:dva:ḥ kahidhəp tikaṁ sukha duḥkha denya|
+<lb n="23v4"/>kabhukti tekaṁ pa:pa kabeḥ| vruḥ pva kītan pa:pa śaṅśara| makavak ma:sarīra:| Apa ta mataṅyan mavak muvaḥ| yan huvus tumiṅgala:kən sarīranya| vvilanta ṅa<space type="binding-hole"/>ranyika| Apa mataṅyan· vvi:lan sira| tan hana kumon sira mavak masarīra:| mari tuṅgal mari pr̥mma:ṇa ṅaranyika| yan hana k(u)mon sira: mavak (ma)sarīra| papa (bya) 
+
+
+<pb n="24r"/>
+<lb n="24r1"/>kapa:pa hikaṁ si tr̥ṣṇa:| ya ta mataṅyan pəhən hika si tr̥ṣṇa: de saṁ śevaka: ḍaṙmma:| katmu taṅ alīlaṁ hagilik-gilik luput saka riṁ maṣarīra| pinəḥ pva: raṣaniṁ lupu<space type="binding-hole"/>t saka riṁ masarīra| katmu ta raṣaniṁ tan lina| Apanikaṁ lina ṅaranya| papat ta hika| kadi kahidhəp hikaṁ pa:pa denikaṁ pr̥mma:ṇa| ya tan lina samanda hikeṁ pr̥mma:ṇa makava:
+<lb n="24r2"/>k ya| Apa kariḥ sinaṅguḥ lina ṅaranya| kadyaṅganiṁ vvay· vva:R̥nta la:van· tok·| byakta: ya tuṅgal· samarūpa: samavaṙṇna tanv kna padudvan muvaḥ| ndan asiṁ ma<space type="binding-hole"/>kveḥ mari suda makḍik·| vva:y· makveḥ vva:y· mariśudaṁ tvak·| tvak makveḥ tvak marisudaṁ vvay·| I{ui ka}va maṅkanaṁ tekaṁ saṁ manon· han ka:ri sudḍa deniṁ makveḥ| A
+<lb n="24r3"/>pa makveḥ ṅaranya| nyaṁ sarīra{*va}nyaṁ bhayu| nyaṁ sabda| nyaṁ hidhəp·| nyaṁ tutur·| nyaṁ lupa| nahan makveḥ ṅaranya| Umarikuṣṭa saṁ manon·| śaṅka riṁ lina samandanya <space type="binding-hole"/> ri saṁ maṅkaṇa| nahan mataṅyan paṁhidhəpa:pa vkasan·| deniṁ līna manda kalīṅanya| dinlə:-dlə: pveka saṁ manon kadi sarīra| vinavas kadi bha:yu| kadi śunyataya| linilaṁ-lilaṁ
+<lb n="24r4"/>kadi śabda| kadi hakaśa| hiniṅt-iṅət kadi hidhəp·| liniṁ {ui ta}t kadi tutur·| tinlaṁ-tləṁ kadi lupa| kintutan maṁkaṇa hade dr̥byanira hika kabeḥ| kunaṁ hapan lin aśa[HS]mbava| nahan mataṅyan kadi maṅkaṇa kabeḥ| ya ta mataṅyan paribha:ṣa:niṁ maha prala:ya hika: lina ṅaranya| marahakən (l)ina:nya riṁ pa:pa kaliṅanya| Apa ta kariḥ pari(bha)(ṣa)
+
+
+<pb n="24v"/> <fw place="left" n="24v">26</fw>
+<lb n="24v1"/>ni vvaṁ riṁ tr̥ta ṅuni| AUm· hati juga:| Apa kalīṅaniṁ ma:ti| Uma:ti hikaṁ pa:pa kabeḥ kaliṅanya| ndya lviṙnikaṁ pa:pa hinati ta saṁ manon·| nyaṁ bhuvaṇa: <space type="binding-hole"/> la:van sarīra| mvaṁ bhayu śabda: hidhəp·| ṅuni veḥ taṁ rabhi hanak·| Ulun· lmaḥ si mavnaṁ-vnaṁ| nahan hinati ta: saṁ manon·| kala:niṁ prapta ni(ṙ)bhaṇa| ya kal(i)ṅan(i)ṁ pa:
+<lb n="24v2"/>ti liṁnikaṁ loka| Uma:ti ta hika kabeḥ kaliṅanika| panəḥ pva raṣaniṁ maṅatita| katmu ta raṣaniṁ maṅandəli tan ka:ndəlan·| kadyaṅganiṁ manuk huməndəl· riṁ <space type="binding-hole"/> guṇuṁ| tan milu gunuṁ| Umandəl· riṁ kayū tan milū kayu| sandəlanikaṁ manuk· ra juga: tan tut sandəla:nya| Iva maṅkaṇa tekaṁ saṁ manon·| An paṅandəli tan kandəlan·| ka
+<lb n="24v3"/>pan ta saṁ manon· han paṅandəli tan kandəlan·| yan kva līṅanta| maṅkendaḥ Umilū katiṁ kita: lmaḥ hatuṅgu riṁ lmaḥ| tahapiḥ| Umilū karīṁ kita saL̥: hatu<space type="binding-hole"/>ṅgu riṁ saL̥| tahapiḥ tan ilū jaga kita siṁ śogvananta| riṁ niskala: tovi| maṅandəli tan kandəla:n hataḥ saṁ hyaṁ pr̥mma:ṇa| Umandəla: riṁ bhuvaṇa: sarīra saṁ manon·| 
+<lb n="24v4"/>tan ilū bhuvaṇa: tan ilū sarīra| Umandəla: ri bha:yu śabda hidhəp saṁ manon·| tan ilū bhayu śabda: hidhəp·| Umandəla: riṁ tutuṙ lupa saṁ manon·| tan i§<space type="binding-hole"/>lū tut aṙ tan ilu lupa| Umandəla: riṁ śunyataya: para:maṙtha: saṁ manon·| tan ilū śunyataya: paramaṙtha:| Umandəli vvay· la:van tasik saṁ manon·| tan ilū vvay· tan ka
+
+
+<pb n="25r"/>
+<lb n="25r1"/>duvəg pinakavaknya| la:van pinakasarīra| Apa kaliṅanya| vruhanika saṁ manon han pavak sarīra: juga| vruḥnyan hiṅi śaka sarīranya| Asiṁ sakavak-avaknya| Apa byaktanya| <space type="binding-hole"/> nyaṁ rahina: lavan· vṅi| tan pahiṅan ta hika| yan apa hika yan tan hiniṅana deniṁ pr̥mmaṇa: makavak ya| nihan taṁ kayu dukut· roṇḍon· hodod·| tan pahiṅan· kta hika| ri gə
+<lb n="25r2"/>ṅanya la:van· ruhuranya| yan apa hika yan tan hiniṅan deniṁ pr̥mmaṇa: makavak ya| nihan taṁ lvaḥ lavan tasik·| tan pahiṅan· ktaḥ lvanika lavan· jronika| tan hana dhasaṙ /lavan·\ tpī <space type="binding-hole"/>| nuṣa: para:nuṣa: riṁ sabraṁ maṅucap la:yaran·| yan apa hika yan tan hiṅi deniṁ pr̥mma:ṇa: makavak ya| nihan taṁ lbak· la:van gunuṁ| pata yan padha ktaṁ ratanika| yan apa hika ya tan hiṅa
+<lb n="25r3"/>na denikaṁ pr̥mmaṇa makavak ya| kaliṅanya saṁ manon juga: hiṅi havaknira| dumumiha śiṁ śaka sarīranya| ri gəṅa:nya la:van i ruhuranya| kadyaṅganika saṁ manon han sira <space type="binding-hole"/> humi{ui sa}ṅi hasiṁ śaka vak ya| gəṅanya la:van· ri dhmitanya| maṅkaṇa taya: gavay· havaknira la:ṇaṅa la:van· vadon· naṅkuri gaṙbhavaṣa| Agavay· havaknira hahala la:van a:
+<lb n="25r4"/>hayu| Agəṅa lavan· vujila| salisva: lavaṇ a:madya| Agavay· havaknira nohana la:van· vva:gaṇa| śukha: la:van duḥkha| ṅka riṁ daL̥m· vtaṁ juga sira han· lviṙnya <space type="binding-hole"/> kabeḥ| tumitaḥ havaknira: hi lviranya: siṁ śaka hyūnira| Aṅelv tekaṁ vvaṁ vaneḥ mamet sukha| śahavidī mantra: japa la:van puju| satətəs yan pamet sukha| Atuha guguḥ
+
+
+<pb n="25v"/> <fw place="left" n="25v">35</fw>
+<lb n="25v1"/>cukuḥ-cukūḥ ravun mathanyan tan katmun teka śukha pinetnya| Aṙ pa yapan· ṅuniṁ kari gaṙbhavaṣa hika saṁ manon· han pagavay havaknya: vva:gaṇa: la:van duḥkha| maṅkaṇa teka:ṁ <space type="binding-hole"/> mvaṁ hahala:vujil·| Aṅel yan pamet· vidi mantranya:n ahaR̥p· lituhayva: gəṅ adava ṣadr̥sa| tan kavnaṁ hika| Apan· ṅuni kari gaṙbha:vaṣa: hika: saṁ manon hagavan· ha
+<lb n="25v2"/>vaknya| nahala la:van· vujil·| maṅkaṇa tekaṁ pr̥mmaṇa gumavaya:vaknya gəṅ adava ṣa:dr̥sa| gumavay avaknya nohana: lavan sukha| təməṁ taya miṁgul ma:met· śukha <space type="binding-hole"/> vahya| manmu ya bhoga magəṁ| tan metovindaḥ vikva: manusupeṁ gunuṁ| Usinənta deniṁ śukha susupan a:ṁraṅ saṁṅa:deniṁ bhoga| Apa yapan· ṅunin kariṁ gaṙbhavaṣa: yan gava:
+<lb n="25v3"/>y· havaknya: lituhayva gəṁṅ a:dava sa:dr̥śa| ṅuni riṁ gaṙbha:vaṣa: ya gavay avaknya| śukha: la:vanohana| kaliṅanya| ṅunī kariṁ gaṙbha:vaṣa: ya gavay a:vaknya| śaguṇa: <space type="binding-hole"/> lavaniṙguna| prajña:ṇa la:van dusprajña:vika la:bodya| lavan· varaṣa:salisva:| ya ta kaliṅaniṁ paribhaṣa: kumva| gavayaku ṅuni riṁ puṙbha: janma ta kunəṅ ika| mataṅyan ha
+<lb n="25v4"/>kta maṅke kaṅ ala: vujil· dukha dali dr̥mi sisvuhat an la:van· vyadi| mala:ra saṁsara| mogha siṁla:ṙ sula: juga:ku hasi sagaṇnaṁkuk· vva:gan·| maṅkaṇa liṁnyan səsə:<space type="binding-hole"/>l a:vaknya| tatan salaḥ hikaṁ lokan pakojar ika| Apan· ṅuni kariṁ gaṙbha:vaṣa: ya gavay avaknya maṅkaṇa kabeḥ| riṁ puṙvva:nyan pasarīra: yan· reka: lumvīr avak(nya)| la:na:
+
+
+<pb n="26r"/>
+<lb n="26r1"/>y·| Anusup aṅidaṅ amajara jariṁ R̥ban sampvara| Ekavaśa taya tuṅgal-tuṅgal·| yaya jugeka kabeḥ tan luput· riṁ śukha: duḥkha la:ra la:pa paṇas tis tuha pa<space type="binding-hole"/>ti| kaliṅanya śagvaṇanya lavan· śolahanya: ta jugan tinut kinuñcaṁ hiniku deniṁ papa pañcaga:ti saṁsara| Apa sinaṅguḥ pa:pa pañcagati saṁśara ṅaranya| pañca ṅa
+<lb n="26r2"/>raniṁ lima| Agati taṁ mahidhəp·| saṁsara: ṅaraniṁ papa| ya ta mataṅyan pañcagati śaṅśara: ṅaranya| lima taḥ karaṇanika syanūn paṁhidhəp· papa| lima ṅa<space type="binding-hole"/>ranya| nyaṁ sarīra| nyaṁ bha:yu| nyaṁ śabda| nyaṁ hidhəp·| nahan lima ṅara| hapa sinaṅguḥ papa: saṅśara ṅaranya| yeka ka:raṇanika syanun paṁhidhəp sukha duḥka: pa
+<lb n="26r3"/>ṇas tis lara: la:pa tuha pati| kadi kahidhəp· hīkaṁ pa:pa samaṅkaṇa: kabeḥ denika śyanu| ya tan hana hikaṁ bhuvaṇa: tinapaknya| la:van ikaṁ sa:rīra pinakava:<space type="binding-hole"/>knya| ya pinakapaṁhidhəpnya pa:pa| Ikaṁ bhayu ya: pinakaśaḍananya| Ikaṁ hidhəp· ya pinaka:paṁhidhəpnya pa:pa| bhinyaktyaknyan tala: la:ra hidhəpnya riṁ sabdanya hapa byakta
+<lb n="26r4"/>nya| Anaṁ hala:ra haku| hanaṅ apaṇasaku| Adhaḥ hatis dahat aku| Aṅluhaku| Aqəḥ-qəḥ ptuṁ panonku| vula:ṅun ulun·| ndaḥ nahan liṁnyan myaktakn ikaṁ pa:<space type="binding-hole"/>pa hidhəpnya riṁ śabdanya| ya ta mataṁṅyan kavaḥ hikaṁ sarīra| pinakavvay·niṁ kavaḥ hikaṁ bhayū| pinakapuy·niṁ kavaḥ hikaṁ śabda| pinakapanasnikaṁ vvay·niṁ kavaḥ la:van a:
+
+
+<pb n="26v"/> <fw place="left" n="26v">22</fw>
+<lb n="26v1"/>puy· hika hidhəp·| nahan· lviṙnikaṁ sinaguḥ kavaḥ ṅaranya| paṅhidhəp saṁ manon sukha duḥkha| nyapan tahanikaṁ mala:ra juga: sinaṅguḥ ta maṅhidhəpa:pa| padha hi<space type="binding-hole"/>kaṁ rat kabeḥ maṅhidhəpa:pa| Ikaṁ varas liṁnikaṁ loka:papat tika| kadi kasuṁsaṁ kavalik hikaṁṅ vaṁ sabhuvaṇa| mamet pinaṅan sindhaṁ| grama viku maraya:padha vulak-valikan ma⌈
+<lb n="26v2"/>meta raka mvaṁ śadḍana| tan· vnaṁ dumaraṇa tiṣ lapa panaṣ kaliṅanya| tatan dva: hikaṁ prihati la:van kiṁkīṁ ta{ui na} bhukti denya| səsəb· rūjit· runtiṁ hika ma:naḥnya| ⌈<space type="binding-hole"/>vetniṁ putkati kaliṅan ika| Apa ta hetan ika kabeḥ han kahidhəp· denikaṁ syanu| ri hanan ikaṁ bhuvaṇa tinapaknya| la:van sarīra| mvaṁ bhayu śabda hidhəp· kaliṅanika| ya
+<lb n="26v3"/>ta mataṅyan tan uvah ajanma tan pasarīra: muvaḥ pinet saṁ viku| Apan· bhavacakra: mavaluy·-valuy· hikaṁ rat kabeḥ| Uvus ma:ti muvaḥ majanma| hinidhəpnya <space type="binding-hole"/> hikaṁ pa:pa muvaḥ| śagharva:pama| kadyaṅganiṁ tasik tan pakaśatan·| laṅgaṁ pasaṁ śurud·| maṅkaṇa tekaṁ saṙvva:janma pavalay·-valuy· ri kabhava śaṅśara| Uvus ma:ti muva
+<lb n="26v4"/>ḥ majanma:| ma:ti-ma:ti majanma| taḥ tan pahīṅan tan pakahuvusan· yan pahidhəpa:pa| śaṅśara: vkasan·| ya ta ma/ta\ṅyan halməḥ saṁ tlas meṅət janma masarīra: muvaḥ<space type="binding-hole"/>| An katon pa:panikaṁ saṙvva:janma| padha kaśuṁsaṁ kavalit maṅuṁsi tavaṁ| tan hanenaknyaṅel juga: phala:nya kabhukti denya| Apa ta karaṇanika syanu luputa: śaka riṁ pa:pa
+
+
+<pb n="27r"/>
+<lb n="27r1"/>pañcagati saṅśara| tan kalaṅkahana deniṁ rahina vṅi| yan kva kitta:| Anavak· śeṣa:nugraha saṁ sidḍa paṇḍita: ri kamī ṅuni| śurudḍa mami śaṅkeṁ sira| pañcamaṙgga: ṅara<space type="binding-hole"/>nya| vuku lima: kara:ṇanika syanu luputa: śaka riṁ pa:pa pañcagati śaṅśara pratekanya nihan·| sandi| tapa| luṅguḥ| pratyakṣa| kalpasan·| yavat ika syanū vruḥ riṁ kali
+<lb n="27r2"/>ṅanikaṁ samaṅkaṇa| yavat· lpas· riṁ pa:pa kabeḥ| ndan· hləm· ta kīta varahan mamī ri samaṅkaṇa| yan· tlas menaka: taḥ karaṣa:nikaṁ bhayu śabda hidhəp de<space type="binding-hole"/>nta| Alimpunya riṁ bhuvaṇa: mvaṁ hirikaṁ saṙvva:janma| Avaṣa:gilik-gilik hata kīta hirikaṁ hinaraṇan syanu| Apagəḥha han siranon tan katon·| pr̥mma:ṇa ta
+<lb n="27r3"/>n kapr̥mmaṇan·| An siraṅhiṁ śaviji makadr̥bya: bhuvaṇa: la:van sarīra| ṅunīveḥ bhayu śabda hidhəp·| mvaṁ śevakaṇanta: ya rumuhun·| tirun sakra:ma śaṅhu<space type="binding-hole"/>lun· han paśe{ui ṣa}vaka ṅuni riṁ saṁ sidḍa paṇḍita @1 Iti kojaran saṁ manon kayatnakna saṁ śevaka ḍaṙmma //0// nyaṁ sandi tambay· saṁ paṇḍita: maṅucap·
+<lb n="27r4"/>vuku| sandi ṅaranya| si tutur·| ya pinakasipatnikaṁ bhuvaṇa: lavan· saṙvva:janma| mataṅyan tan salaḥ tuvuḥ tan salaḥ rūpa tan salaḥ raṣa hikaṁ rat kabeḥ| habnəṙ <space type="binding-hole"/> tumirū bhapa-hibunya mvaṁ vvit·-mitnya hikaṁ saṙvva:janma| vva:ṁ maṇak· vvaṁ kbo maṇakbo| sapi maṇak sapi| saṙvva tumuvuḥ tan salaḥ tuvuḥ| padha kala:ya-la:ynya| maka:svəḥ
+
+
+<pb n="27v"/> <fw place="left" n="27v">23</fw>
+<lb n="27v1"/>svəḥnya| tan salaḥ vvaḥ tan salaḥ ra:ṣa| vruḥ juga ya kabeḥ riṁ ja:tinya| mapa ta makahetu hika| tutuṙnya taḥ| Apa pinakapañjinnya| la:van pinakapraṣaṣṭinya du<space type="binding-hole"/>meḥnya maṅkaṇa lviṙnikaṁ saṙvva: tumuvuḥ| mvaṁ satva| si tutuṙ hataḥ dumadyaknika| ya ta mataṅyan a:mnəṙ pamaṅun ikaṁ saṙvva:janma| Apa hupamanterika| kadyaṅganiṁ kayu pinraṅa
+<lb n="27v2"/>n·| yan tan sipata:na vilut ja:tinika| sinipatan pva ya de saṁ huṇḍagi mamraṅi| ya ta hetunyan amnər·| Iva maṅkaṇa tekaṁ si tutuṙ han· ya pinaka:sipa<space type="binding-hole"/>t tikaṁ bhuvaṇa la:van saṙvva:janma| tutuṙnya hetunyan padha pva: vruḥ riṁ ja:tinya| mvaṁ śobhavanya| Abnəṙ tan salaḥ tuvuḥ hikaṁ rat kabeḥ| deniṅ apa deniṁ tutuṙnya taśiḥ
+<lb n="27v3"/>{ui ya}{*na} An payapan kaṁ pva: kahanan tutuṙ hikaṁ rat kabeḥ| kaḍyaṅganiṁ bhayu śabda: hidhəp haṅibki bhuvaṇa la:van saṙvva:janma| maṅkaṇa tekaṁ tutuṙ han hiṅbki kaṁ bhu§<space type="binding-hole"/>vaṇa la:van saṙvva:janma| Apa byaktanya| tiṅt-iṅtən·| Ibəṙniṅ andarū| la:rapniṁ kilat·| Alintaṁniṁ vaṅkava: mvaṁ kuvuṁ-kuvuṁ| pakəmpəlniṁ megha| kḍapniṁ vintaṁ la:van parama 
+<lb n="27v4"/>nuḥ| paṅbohəṁ bonniṁ ptaṁ| paṁloṁ patambəḥniṁ vulan· puṙṇnama: lavan masyanya| praka:śaniṁ kñaṙ saṁ hyaṁṅ aditya| pinaka:suluḥniṁ bhuvaṇa| Atutuṙ tekin·§<space type="binding-hole"/>vtu vetan sumurup kulon sarī-sarī| Inakaṇ-ikan· vtu kulon· ya sumurupa: vetan·| tahasiḥ hatutuṙ taya: riṁ vətonya| dlanteka kabeḥ denta| ta kari§ 
+
+
+<pb n="28r"/>
+<lb n="28r1"/>tmu deniṁ śastra| na guru taḥ luputina kvana:kan tan· kna pinitṅəna:kan deniṁ guru| sira ta śotaḥ juga hana tan hinanakan ṅaranya| nabaṙyyan aputra ava:dūbiḥ| sira <space type="binding-hole"/> ta: sinaṅguḥ ḍaṙmma tuṅgal· makavak hikaṁ bhuvaṇa: lavan saṙvvajanma| naputrakan paṇak tan paputu| nabaṙyya tan para:bhi| nama tan apitam· svataḥ| tan pa
+<lb n="28r2"/>bapa taṙ pebu| taṙ paśaṅkan taṙ papa:ran·| Avismr̥ti dr̥ṣṭi| sira ta manon taṁ katon·| vruḥ tan kinavruhan·| pr̥mmaṇa: tan kapr̥maṇan·| manuduḥ taṙ katuduḥ| masarī<space type="binding-hole"/>ra: tan sinarīran·| mabhayu tan· bhinayon·| maśabda tan sinabdan·| mahidhəp tan hinidhəp·| paR̥ṁga: ta juga mtu la:van sarīranya| bha:yu śabda hidhəpnya| An sakeṁ gaṙbha:
+<lb n="28r3"/>vaśeṅuni| ndatan pvan paṅaranyan sakeṁ daL̥m· vtaṁ| śavtunya ri heṁhaya: hinaraṇan deniṁ bapa hibu syanu| ya ta mataṅyan saṁ hyaṁ mevəḥ ṅaran ika syanu vaneḥ| Apa<space type="binding-hole"/>n hanan sarīranya sinaṅguḥnya syanu| Anan· bhayū śabda hidhəpnya: sinaṅguḥnya syanu| Anan pasayoga: pasamohanya vaknya kabeḥ sinaṅguḥnya syanu| kalīṅanya ptaṁ pəpət· haḍa
+<lb n="28r4"/>kara: jugaṅ vaṁ sabhūvaṇa tan· vruḥha sinaṅguḥnya bapa hibu la:van haṇak·| syapa ta sira vihikan· riṁ bapa-/hi\bunikaṁ sabhuvaṇa| la:van haṇaknikaṁ loka| saṁ paṇḍita: ju<space type="binding-hole"/>ga tan hana vaneḥ @1 Ati tan puṅguṁnikaṁ hinakunya bapa hibu la:van haṇak· tkan devatha: saṅhulun·| kunaṁ ganti raṇak devatha śaṅhulun· tekī tətəsakna hirikaṁ hinaraṇan syanu|
+
+
+<pb n="28v"/> <fw place="left" n="28v">17</fw>
+<lb n="28v1"/>yan kaliṅanta ri(ṁ) kam(i)| AUm·| Ayva: ta kita tan meṅət· ri bedaniṁ katon·| panon doraniṁ panon·| ṅuniveḥ saṁ manon nihan kambhaṁniṁ vuṅa vari pintonakna <space type="binding-hole"/> mami ri kīta| pamatya pityaṇnan kahinaraṇan syanu //0// katon kambhaṁnikaṁ vuṅa vari denta| nambhaḥ ṅhulun·| Apa vaṙṇnanya t(i)nonta| mabaṁ pvaṁ kulun·| Eṅət· ri tinonya ṅa
+<lb n="28v2"/>ranyika| panon tan ton kambhaṁ vuṅa vari vruḥ kita: taham·| yeku hidhəpta mijil mahavan· riṁ mathanta kaṇan keri| Eṅət· riṁ panon ta ṅaranyika:| dora /ha\vaniṁ panon ta<space type="binding-hole"/>n ton kambhaṁ vuṅa vari vruḥ kīta| taham·| yeku matanta gola: kaliḥ viji| Eṅət· /ri\ doraniṁ panonya ṅaranyika| saṁ tunponikaṁ vuṅa vari| syapa taya| raṇak deva
+<lb n="28v3"/>tha saṅhulun·| ndaḥ tguh i teka denta| yeka hinaran syanu deniṁ bapa-hibunta| Ikaṁ tumoniṁ kambhaṁnikaṁ vuṅa vari| yeka manon tan katon han hanaṁkeṁ sa<space type="binding-hole"/>rīranya| kalīṅanya| tan panonnikiṁ sarīra| tan panin ika:ṁ matha kaliḥ viji| Apa byaktanya tan panon·| nihan kita yata turū riṁ kuL̥m mavasya rikaṁ kala| pijəṙ bhipa
+<lb n="28v4"/>ritanindra ta kita| dhino dhoḥ pva kita deniṁ maliṁ| Aśuluha pañjutekaṁ maliṁ mala:p dr̥byakta| matanta hana taḥ mulat dumləṁ| ndatan panon yan· vinayaṁ-vayaṅa<space type="binding-hole"/>n taṅan·| tutukta tan paṁR̥ṅə:n dinula:ṅan· vuyaḥ| nahan· byaktanikaṁ sarīra la:van matha:| An tan· ya manon·| Ikaṁ syanu piḥ hikaṁ makakuruṅan hikaṁ sarīra| tan pa
+
+
+<pb n="29r"/>
+<lb n="29r1"/>saṁ śevaka: ḍaṙmma //0// ñana ṅaranya hambək tuṅgəṅ a{ui ra}{ui na}līlaṁ| vijña:na ṅaranya| hambək· branta magləḥ| kavijña:ṇan ṅaranya| Ambək· tka ya kroḍa| mamr̥p mama:ti| naha:<space type="binding-hole"/>n haṙtha:niṁ ñana vijña:ṇa: kavijña:ṇan· ṅaranya kayatnakna @1 ksitan ṅaranya| citta makambhaṅan·| viksitan ṅaranya| citta: valuy·-valuy·| prataña ṅaranya| citta: vuruṁ| Eka
+<lb n="29r2"/>ghraha ṅaranya| ñaṇa: tuṅgaṁ| virodḍa ṅaranya| ñaṇa kahr̥t·| viṙtaka: ṅaranya| manaḥ tan katut·| rahananta ṅaranya| manaḥ tan haṙṣa:| Asmita: ṅaranya| manaḥ tan· L̥<space type="binding-hole"/>L̥ḥ @1 Anendriya: ṅaranya| tan katon tan panon·| manovijñaṇa ṅaranya| panon ta riṁ ma:doḥ riṁ bhuvaṇa L̥mbhaṇa| ñanendriya ṅaranya| panon ta riṁ mapaR̥k maṁke pra 
+<lb n="29r3"/>tyakṣa| nahan haṙtha:niṁ paṙyaya:niṁ ñana kavruhananta:| //0// gaṇalniṁ bhayū ṅaranya| siṁ ka{ui sa}{ui msa}spaṙṣa| kavnaṁ pinasuka:kən·| pingəṁ ri ruṁ ta ktaṁ bhayu| litniṁ bhayu ṅaranya| ta<space type="binding-hole"/>n pavak tan pa:rūpa tan pavaṙṇna| tan kagaməl· tan kasikəp·| sukṣma:niṁ bha:yu ṅaranya| tan katon·| dyatmikaniṁ bha:yu ṅaranya| truss ikaṅ adoḥ hapaR̥k· deniṁ bhayu @1
+<lb n="29r4"/>gaṇalniṁ śabda: ṅaranya| siṁ kaR̥ṅə:| kavnaṁ vinijila:kən·| kavnaṁ pingaṁ| litniṁ śabda ṅaranya| tan pavak tan parūpa| tan pavaṙṇna| tan kagaməl· tan kasikəp·| sukṣma:niṁ śabda: ṅaranya| <space type="binding-hole"/> tan katon·| ḍyatmīkaniṁ śabda ṅaranya| trus ikaṅ agəṅ adhmit deniṁ śabda| tan hana:katunan· śabda @1 gaṇalniṁ hidhəp ṅaranya| pinakapanon pinaka:paṁR̥ṅə:| pinakapaṅambuṁ pi
+
+
+<pb n="29v"/> <fw place="left" n="29v">14</fw>
+<lb n="29v1"/>nakapaṅaspa(ṙ)ṣa: pinakapaṅh(i)dh(ə)p·| litni(ṁ)m hidhəp ṅaranya| tan pavak tan parūpa tan pavaṙṇna| tan kagaməl tan· kasikəp·| śukṣmaniṁ hidhəp ṅaranya| tan kevəhan sapara<space type="binding-hole"/>nya| trus ikaṁ guṇuṁ denya| ndatan patapak tan pa:vuri| təp cət luṅha tka meṅgal·| Adyatmikaniṁ hidhəp ṅaranya| trus ikaṅ agəṅ adhmit deniṁ hidhəpə| sapta:patala: sapta:bhuvaṇa| I
+<lb n="29v2"/>śoṙ ri ruhuṙ kapva: kaśuluhan katkan deniṅ hidhəp| nahan kavivastuniṁ bhayu śabda hidhəp·| keṅtakna saṁ śevaka ḍaṙmma: simpənya: mva(ṁ) lonya //0//  tlas ikaṁ bhayu śabda hi§<space type="binding-hole"/>dhəp hinucapta:| yekī ta kinala: karanta: tluṁviji| Atambəha ta kita kaṁ la:kaṙ muvaḥ roṁviji| Apa pinaka tambəḥnya| bhuvaṇa la:van sarīra| Apa ta sinaṅguḥ bhuvaṇa ṅara
+<lb n="29v3"/>nya| pr̥thivī la:van hakaśa| Apa: sinaṅguḥ sarīra ṅaranya| śahaṇa: riṅ aka:śa la:van sahana riṁ pr̥thivī| ndya lviṙnikaṁ sarīra hana riṅ aka:śa| nyaṁ vintaṁ vulan haditya| vaṅkava: ku<space type="binding-hole"/>vuṁ-kuvuṁ| saṅubkukus· megha: hudan·| kilat·| gəlap·| gəntəṙ patəṙr andaru pa:ramanuḥ| nahan· lviṙnikaṁ sarīra: hana riṁṅ aka:śa| ndya lviṙnikaṁ sarīra hana riṁ pr̥thivī| nyaṁ vvay· ta
+<lb n="29v4"/>sik·| Apuy· tr̥:ṇa ta:ru lata: gulma| paśū pakṣi sarī saṙpaṣta: vara: jaṅga ma:ḍi| śeṣīniṁ lvaḥ lavan tasik·| sarumaṁkaṁ śakumilip· riṁ pr̥thivī| makadi taṁ janma siṁ vvaṁ<space type="binding-hole"/>| sarīra hana riṁ pr̥thivī ṅaran ika: kabeḥ| ya ta kaliṅaniṁ paribha:ṣa śaña: sajña:ṇa kalīṅanya| Apan tuṅgal huripta: la:van huripniṁ rat·| bha:yu śabda hidhəp katuṅgala:nya
+
+
+<pb n="30r"/>
+<lb n="30r1"/>no pr̥mmaṇaniṁ śabda:| Iti prama:naṁkana| Akaśa(ṁ)vat· śabda guṇa| krata:katvat·| Apa sinaṅguh akaśa ṅaranya hikaṁ śabda| sumahur ikaṅ a:puṅguṁ| nahan ta karikaṁ śabda ha<space type="binding-hole"/>neṁ ruhur·| yan ika:ṅ aka:śa sinaṅguḥnya| An· śabda: hapa mataṁnyan haka:śa ṅaranikaṁ śabda haneṁ ruhur·| Apan laṅit ṅaranyika:| Apa mataṅyan laṅit ṅa:ran ika| laṅit· lṅit ta§
+<lb n="30r2"/>n hana kaliṅanya| Aparan pva kaṁ kadi hīṅaniṁ laṅit·| AhiR̥ṁ lviṙnya katon denta ya təṅha| Ayo jña:nendriya ṅaranyika:| hidhəp sagr̥hakan pinakapanon·<space type="binding-hole"/>| mataṅyan· ptəṁṅ ahiR̥ṁ lviṙnya| Apa paṅguḥnanta hirika| vulat kita loṙ kidul kulon· vetan·| ta kiran kadi tpinikaṁ la:ṅit· lṅit· lviṙnya| AhiR̥ṁ hanīla-nīla katona
+<lb n="30r3"/>nya śakaṅke| vetniṁ doḥnya kaliṅanya| yadyapin para:ṇana para:honana la:yara:ṇa maṅke juga hika| maṅkaṇa tekaṁ hiṁ ruhur·| la:ṅit· L̥ṅit tan hana kalī<space type="binding-hole"/>ṅanya| mataṅyan hahiR̥ṁ katonanya| matya kapñət· kapihantəm· kteki siṅvaṁ sabhuvaṇa| yan han pr̥thivī bhuvaṇa śoṙgga hi ruhuṙta:| nahan paṅguḥnanta ma:taṅyan laṅit· lṅi§
+<lb n="30r4"/>ta:ṅaranyika| Apa pva mataṅyan aka:śa ṅaranyikaṁ śabda| Aka:śa śva:bhava pinakavaknya| tan ka:ton tan ka:gaməl·| tuhun siṁ kaR̥ṅə: panaṅguḥhanya hanananya hini<space type="binding-hole"/>dhəp·| nahan mataṅyan hakaśa: ṅaranikaṁ śabda riṁ bvat a:ji| maṅkaṇa tekaṁ pañcandriya vinuvus saṁ śeva śvagata| lima ta rakva kveḥhaniṅ indriya:| taha tuṅgal ikaṅ i
+
+
+
+
+
+
+<pb n="30v"/> <fw place="left" n="30v">12</fw>
+<lb n="30v1"/>ndriya:| Apa kariḥ sinaṅguḥ hindriya ṅaranya| hikaṁ hidhəp·| lima ta rakva kveḥhaniṁ hidhəp·| {ui na}{ui ha}{ui nma}{ui ta}{ui ṅsa}{ui nh}{ui ka}{ui śa}{ui ṅa}{ṅa ra}{ui na}{ui ka}| taha tuṅgal ikaṁ hidhəp·| kaviji<space type="binding-hole"/>la:nya riṁ sarīra: hataya lima| ndya lviṙnya nihan·| śrotendriya ṅaranya hikaṁ hidhəp· yan mijil sakīṁ taliṅa: pinakapaṁR̥ṅə: śabda| ghraṇendriya ṅaranya vijil· riṅ iruṁ
+<lb n="30v2"/>pinakapaṅambu ganda| jihvandriya ṅaranya: vijil· riṁ lidhaḥ pinakapaṁraṣa riṁ śad·raṣa:| tvəkindriya ṅaranya vijiliṁ kulit pinakapaṅaṙṣa paṁhidhəp phanas tis·| ca<space type="binding-hole"/>ksuḥrendriya ṅaranya: vijiliṁ matha: pinakapanon· riṁ rūpa vaṙṇna| nihan· lviṙnikaṁ vijila:niṁ hidhəp lima rikeṁ sarīra| mataṅyan sinaṅguḥ pañcendriya: de saṁ śeva śoga
+<lb n="30v3"/>ta| ndan ikaṁ hidhəp·| Anpaka dora lima: rikaṁ sarīra| Atətəg· ya riṁ viṣayani rovaṁnya| byaktanyan tan· vnaṁ taṁ hidhəp· pinakapanon· yan mijil· riṁ tali<space type="binding-hole"/>ṅa:| Apan paṁR̥ṅə: śabda paknanyika| tan· vnaṁ taṁ hidhəpinakapaṅambuṁ ganda| yan· vijiliṁ lidhaḥ| Apan pinakapaṁraṣa sadraṣa paknanyika| tan· vnaṁ taṁ hidhəpinakapaṁ
+<lb n="30v4"/>R̥ṅə: yan· vijiliṁ kulit hapan paṅispaṙṣa paṁhidhəpaṇas tis paknanyika| taṅeḥ yan· vuvusən·| Apa ka:liṅanya| Atətəg juga hidhəp· ri viṣayanya<space type="binding-hole"/>| An pakadva:ra limaṁviji riṁ kaṁ sarīra| Apa padhanya| nyaṁ bha:yu mtu mahavan· riṁ tutuk·| tan· vnaṁ taṁ bha:yū panulup saṁkakhala| yan· mtu mahavan· riṅ iruṁ| A:
+
+
+<pb n="31r"/>
+<lb n="31r1"/>n· pḍaṁ maṇa:da kara:ra pavastu| luṅha tka pva ya cita: ta ṅaranya| lupa pva ya budḍi ta ṅaranya| AṅaL̥ṅən· pva ya mami veṁkaṁ| praya hupaya kira-kira ta ṅaranya| pra<space type="binding-hole"/>jña: vivitran pva ya paṅavruḥ ta ṅaranya| Agalak pva ya krodḍa hiṅ karat ta: ṅaranya| Ahyun pva ya: raga ta: ṅaranya| katon pva ya havak· ri paṅ(i)pyan hatma ta ṅaranya| ke
+<lb n="31r2"/>mpi pva vvaṁ lon danta riṁ paṅipyan paratma ta ṅaranya| dikatma hapupphul ta:ṅ atma:| nahan ta kveḥ ṅaraniṁ hidhəp·| taṅeḥ yan· vuvusən·| kintu hidhəp katuṅgala:nya <space type="binding-hole"/> hayva himəṁ @1 katuduhaniṁ hidhəp ṅaran ika @1 kavivekaniṅ idhəp ṅaranya| pinakapaṁhiṅin ikaṁ loka riṁ loṙ kidul kulon· vetan·| I śoṙ ri ruhur·| An pahiṅan i
+<lb n="31r3"/>ka riṅ idhəpnya| kavivekaniṅ idhəp ṅaranyika: @1 katmvaniṁ hidhəp ṅaranya| pinakapanyon· vijilnya riṁ ma:tha| pinakapaṁRṅə: vijilnya riṁ talīṅa| pinakapaṅambu viji<space type="binding-hole"/>lnya riṁ hiruṁ| pinakpaṁraṣa: vijilnya riṁ lidhaḥ| pinakapaṅaspaṙa vijilnya riṁ kulit·| pinakapaṅuha pamikalpha paṁdadakaṁ rarūpa vastu vijilnya riṁ {ui va}bhuvaṇa| nahan katmvaniṁ
+<lb n="31r4"/>hidhəp (ṅa)ranya @1 p(r̥)m(ma)naniṁ hidhəp (ṅa)ranya| yekī pina:kavakta: riṁ paṅipyan·| pinaka:sarīraniṁ rat kabeḥ riṁ śvapna lakṣaṇa| sida ya katon mavak ma:sarīra riṁ śvapna: <space type="binding-hole"/> lakṣaṇa denya| mvaṁ dinadakara: hyaṁ de{ui nya}vatha denya| Inaṁkaraknanya baṭa:ra baṭari| ya pahana-hana: ya pahilaṁ| pr̥mmaṇaniṁ hidhəp ṅaran ika| @1 vibhuḥniṁ hidhəp ṅa
+
+
+<pb n="31v"/> <fw place="left" n="31v">11</fw>
+<lb n="31v1"/>ranya| tan hana katunan idhəp hikaṁ rat kabeḥ| nyaṁ saṙvva:janma saṙvva:satva:| kapva kahanan hidhəp ika kabeḥ| vibhuḥniṁ hidhəp ṅaranyika @1 tuṅgaṁniṁ hidhəp ṅaranya| Adi lita:<space type="binding-hole"/>n kavnaṁ tinambəhan·| Agaṁ tan kavnaṁ linoṅan·| Ana riṁ bhuvaṇa riṁ liman·| hana ri prit·| riṁ tṅu| tan laga tan humpəṁ duvəg agaya| tuṅgaṁniṁ hidhəp ṅaranyika:| nahan kavivastuni
+<lb n="31v2"/>kaṁ bhayu śabda hidhəp liṁ saṁ paṇḍita //0// ndaḥ yeka: pinakevəḥnikiṁ bhayu śabda hidhəp· liṁ saṁ paṇḍita| byakta: maṅke juga: tanuha tan· dla:han·| vaṙtha:maṇaha<space type="binding-hole"/>n hibkiṁ hikaṁ bhuvaṇa la:van saṙvva:janma| tan· rakva-rakva hiki hana| rakva hikaṁ bhayu śabda hidhəp han hana riṁ sarīranta| ya pinakahuripta| taham tuhu pvaṁ kulun·| ndaḥ teṅta
+<lb n="31v3"/>ta kīta| ri kiṙṇnanya riṁ rat·| kaḍyaṅganikaṁ pañcabhayū vinuvus saṁ śeva śogata:ka kita: lima ta rakva kveḥhaniṁ bhayu| taha tuṅgal ikaṁ bhayu| Avan yan· vijī<space type="binding-hole"/>n liṁ sarīra hataya lima| ndya lviṙnya nihan·| praṇa ṅaranyikaṁ bhayu yan mijil saka riṁ mukha:| Apaṇ aṅaranyikaṁ bha:yu yan mijil saka riṁ L̥t la:van· plat·| sama:ṇa ṅaranya yan mi
+<lb n="31v4"/>jil· riṁ hati| bhyaṇa ṅaranya yan mijil· riṁ puhun· vulu| Udana ṅaranya yan mijil· riṁ vun·-vunan·| nahan· lviṙnya lima kavijilanya riṁ sarīranya| mataṅyan sinaṅguḥ pañcabhayu <space type="binding-hole"/> de saṁ vikū vaneḥ| kintu tuṅgal ikaṁ bha:yu ṅaranya //0// maṅkaṇa tekaṁ śabda hanpaka ṅaran haka:śa riṁ bot a:ji taṙ kaprakarana| n(d)ya l(v)iṙnya nihan·| pratyak(ṣa) n(u)manaṁ pami
+
+
+<pb n="32r"/>
+<lb n="32r1"/>riṅ iru(ṁ) tpinak· śoṣanta| śabda ṅaranya| Ikaṁ śabda pinaka: vuvusta| hidhəp ṅaranya| Ikaṁ paṅaL̥ṅənta riṁ madoḥ mapaR̥k·| kita haṇaṅke ya hana riṁ sabraṁ| maha<space type="binding-hole"/>s miśoṙ miṇḍuhur·| makuliliṅan keriṁ bhuvaṇa| tan kevəhan hasi śakahaR̥pnya paranya| tan kaśukəran deniṁ sukət·| juraṁ lbak· gunuṁ priṅgabahla:| lvaḥ tasik· pt(əṁ) pəpət 
+<lb n="32r2"/>·| Ityevamadi| sveca juga ya hasiṁ saparanya| gaghaṇa: cara maṁlayaṁ riṅ a/bya\ntara: manumpakk· riṁ vala:kaṁniṅ akaśa:vnaṁ| Ajalantara: maṁlayaṁ riṅ abayantara manumpa<space type="binding-hole"/>ka riṁ tasik· vnaṁ| Uthavi yan sumiL̥m tama riṁ pusəriṁ-pusəriṁ jala:ḍī| sumurupa dhasaṙniṁ saptapatala: vnaṁ| tan· viṣceda tan· vikara: tan umləm·| svecca juga ya| kita hanaṅke ya lu
+<lb n="32r3"/>ṅha haneṁ śabraṁ| cət lvaṅha {uə pa)təp· tka| śegra kas hadus a:L̥yə| takarin maṁkaṇa: L̥ṅən taya taṅ aL̥ṅən madoḥ mapaR̥k·| AUm maṅkaṇa pvaṁ kulun·| ndaḥ ya tika <space type="binding-hole"/> sinaṅguḥ mami hajña:ṇa ṅaranya| A| ṅaranya hikaṁ bha:yu| ña| ṅaranya hikaṁ śabda| na| ṅaranya hikaṁ hidhəp·| papisan ikaṁ tigaṁviji ya tika: sinaṅguḥ tigajña:ṇa ṅaranya hi saṁ 
+<lb n="32r4"/>paṇḍita| Adva karikeṁ bha:yu śabda hidhəp· han hana ri kitaṇaku| mvaṁ hannikiṁ bha:yu śabda hidhəp· byakta: tan pinakahuripnikaṁ saṙvvaśatva| Adva: karikaṇaku| ta<space type="binding-hole"/>ham tuhu pvaṁ kulun·| ya tika ñaṇa ja:tī tan ginavay·-gavay· liṁ mamī| ndi kari kita:nonaṁ R̥ṅə: hagavay· bhayu śabda: hidhəp·| lena śakeṁ śahaṅga: rūpa kajña:ṇa j(u)ga:
+
+
+<pb n="32v"/> <fw place="left" n="32v">10</fw>
+<lb n="32v1"/>nya| tan hana katunan· śabda hikaṁ rat·| ndan makaśabda-śabdanya ja:tinika| vibhuḥniṁ śabda ṅaranyika //0// tuṅgaṁniṁ śabda ṅaranya| Adli tan kavnaṁ tinambəhan·| Agə(ṁ) tan ka<space type="binding-hole"/>vnaṁ linoṅan·| haneṁ bhūvaṇa mvaṁ liman·| haneṁ prit maṁtṅu| tan· lga: tan umpəṁ duvəg juga: ya| tuṅgaṁniṁ śabda: ṅaranyika| nahan kavuvuṣaniṁ śabda: @1 maṅkaṇa tekaṁ hidhəp·| na:
+<lb n="32v2"/>mataḥ pinakevəḥnika| katuduhaniṅ idhəp· ṅaranya| siṅ aran daśana: mapariyaya:| tuṅgal ikaṁ hidhəp ṅaranya yan makveḥ| kadyaṅganiṁ skus·| An makveḥ ṅaranya| ya <space type="binding-hole"/> skul· ya hmi| ya mebekṣa: ya nasi| ya kijo| ya sr̥nik·| ya campagi| ya maṙnduṙ| ya vral·| ya grul·| skul·| tuṅgal ika| hiva maṅkaṇa tekaṁ hidhəp han makveḥ ṅaranya| A
+<lb n="32v3"/>yva ta kīta kepvan·| ya hidhəp· ya L̥ṅən·| ya kira:-kira:ya hupaya| ya cipta:| ya budḍī| ya manaḥ| ya lakṣitan·| ya prataña| ya hekagr̥ha ya nirodḍa<space type="binding-hole"/>| ya vitaka: ya hananta: ya ha{ui na}smita:| ya hindriya:| ya manindriya| ya hatma ya para:tma: ya dikatma: ya sukṣmatma:| ya ñana vijña:ṇan·| kaviju:ṇan·| ya ṅanendriya mali
+<lb n="32v4"/>t· ya hanendriya manovijña:ṇa| ya haṣṭaguṇa| Animan· mahiman lagiman·| praptiḥ prakamyaka:| vasitva: sipitva viña tabyam· mumukṣuḥnam·| mumuksuḥ <space type="binding-hole"/> hikaṁ saṁ paṇḍit·| viña ta:byam han kavruhi teka ñananira| ñananiran dakina vruhanira| Ikaṁ bha:yu śabda hidhə| nahan· kveḥ ṅaranyikaṁ hidhəp hikaṁ viku| manaḥ ṅaranya 
+
+
+<pb n="33r"/>
+<lb n="33r1"/>vaṅava(ṁ)| Aməta: riṅ adaśaviji| bhatbha-tbhat·| tkan dadinaḥ moniṁ jugeka| nahan· byaktantanikaṁ śabda han hiṁṅki hikaṁ bhuvaṇa la:van ikaṁ saṙvva:janma| kavivekaniṁ śa:<space type="binding-hole"/>bda ṅaran ika @1 katmvaniṁ śabda ṅaranya| tuṅgal hapan si ka:R̥ṅə: juga| Asiṁ śaka:R̥ṅə: kapva śabda ṅaran ika| Ahum·| mvaṁ kiśikiṁ roṇḍon·| kəR̥təbniṁ śukuni(ṁ) lumaku| 
+<lb n="33r2"/>kagulantəmniṁ śabdaniṁ kəṇḍaṁ gəṇḍiṁ tinabəḥ| śabda hika kabeḥ juga ka:R̥ṅə:| Apa tan kaR̥ṅə: kəṇḍaṁ gəṇḍiṁ lmaḥ kayu śatva: ṅuniveḥ vvaṁ śabdanika: kabeḥ| hataḥ kaR̥<space type="binding-hole"/>ṅə:| mataṁṅyan siṁ kaR̥ṅə: katmvaniṁ śabda| katpəta:niṁ vuvus· @1 pr̥mmaṇaniṁ śabda ṅaranya| pinakapa:ṅaraṇan ta rikaṁ bhuvaṇa: mvaṁ saṙvvajanma| pinakapaṅaraṇanta riṅ akṣara:
+<lb n="33r3"/>śvarabya jña:ṇa| pinakapaṅaranta riṁ śakveḥnikaṅ amantra veḍa śanti| pinakapaṅaraṇanta riṁ śakaron sakaR̥ṅə:| śaka raṣa| śaka spaṙṣa| pamastunta riṅ ana tan ha<space type="binding-hole"/>na| la:van sakala: niska:la| kapva hika matuṅgalan· ṅaran kabeḥ donikaṁ loka| ndan· ri hananikaṁ śabda hirikaṁ rat· ya| nda kta: ya tan hana śabda hirikaṁ rat·| Umula
+<lb n="33r4"/>ta: yamṅə-mṅən· lla:van maṅiṅl-iṅəl· hikaṁ śabhuvaṇa| padha humnəṁ kadi marapin·| yan maṁkaṇa| tatan pavastu tan paṅaraniya tan ikaṁ rat·| kunaṁ ri hananikaṁ śabda rikaṁ <space type="binding-hole"/> loka| nahan mataṅyan padha vijaḥ maṅarani| matuṅgala:n tekanaṁ rat kabeḥ ṅaran· vkasan·| pr̥maṇaniṁ śabda tekaṁ pamastu paṅaran-ṅaran·| @1 vibhuḥniṁ śabda ṅara
+
+
+<pb n="33v"/> <fw place="left" n="33v">6</fw>
+<lb n="33v1"/>bhayu śabda hidhəp hiṁ sarīranta: ya| Ilaṅa hikaṁ bha:yū śabda hidhəp sakeṁ sarīranta mne| Apa taḥ tan mulya tinimphala:kən· vaṅkay·ta| drava mavuḥksuḥ tan paha<space type="binding-hole"/>mṅan· sarīranta| nihan taṁ vatək adr̥ṣ· bhīṣa: śakti vuvusanta:| nyaṁ kuḍa liman· kbo sapi siṅha: bharvaṁ hula magəṁ| prasiḍa hika ma:ḍr̥s· bhīṣa śakti hi śaka kabeḥ| ndan· r(i) ka
+<lb n="33v2"/>la:nyan hana hikaṁ bha:yū śabda hidhəp hiṁ sarīranya ya| Ila:ṅa hikaṁ bhayū śabda hidhəp sakeṁ sarīranya mne| tan· bhīṣa tan sakti| sinalphal dīnagiṁ-ḍagiṁ ya kabeḥ| <space type="binding-hole"/> nihan taṁ manuk prasida maglis·| vnaṁ mnəṙ mibəṙ malaṅkahi gunuṁ lavan taśik·| ndan· ri kala:nyan hana bha:yu śabda hidhəp· ṅhiṁ sarīranya ya| Ila:ṅa hikaṁ bhayū śabda hidhəp saṅkeṁ
+<lb n="33v3"/>sarīranya mne| tan· vnaṁ məṙmibər·| magulaṁ riṁ lmaḥ| nihan ta vaneḥ hapadumeḥ kīta:lyūnarirara: lavan· vulañjar·| ri hananikaṁ bha:yu śabda hidhəp hataya| hi<space type="binding-hole"/>la:ṅa hikaṁ bhayū śabda hidhəp saṅkeṁ sarīranya mne| Apa taḥ hasyun kari kīteriya| taham havdi haR̥s· vvaṁ denya| tovi mariris· ṅvaṁ ri bonya| ndaḥ ri vruhanta: ri vi⌈
+<lb n="33v4"/>śeṣanikaṁ bha:yu śabda: hidhəp· teka| An· vvitniṁ mulya la:van kina:haR̥pan·| mvaṁ han· ya vvitniṁ bhīṣa la:van· śakti //0// nihan ta vaneḥ deyanta vihika<space type="binding-hole"/>ṇa riṁ viśeṣa:nikaṁ bha:yū śabda hidhəp·| yan· śunya taya: para:maṙtha viśeṣa: de saṁ vikū vaneḥ| makapaṁlpasta si puṅguṁ hulu gulug para:ma biṅuṁ L̥ṅəṁ-L̥ṅə:ṁ L̥yəp·| 
+
+
+<pb n="34r"/>
+<lb n="34r1"/>tuhu-tuhuhana: p(i)nakahuripnika(ṁ) śarat·| ṅuni lavan maṁke| dla:ha tovi veḥ hikaṁ bhayu śabda hidhəpta huripnika| tan hana vaneḥ vnaṅ a:huripanikaṁ saṙvvajanma| <space type="binding-hole"/> lena śakeṁ bhayu śabda hidhəp juga: pr̥mmaṇa viśeṣa: pinakajivaniṁ sarat·| Apan· ya tuhu-tuhuhana| tan alaha deni(ṁ) lavas·| (ta)n avuka tan· bhraṇana den(iṁ) (ti)s·|
+<lb n="34r2"/>tan pgata deniṁ kadga| tan· gsəṅa deniṁṅ apuy·| Apan· ya {ui ha}mulaniṁ pati huripnikaṁ śarat·| ya mulya vvatniṁ mulya viśeṣa:| vvatniṁ bhiṣa śakti la:van kinataku<space type="binding-hole"/>tan·| Apa byakta:nyan· ya vvitniṁ mulya| nyaṁ dr̥vya mas maṇik hulun sapi vnaṁ-vnaṁ| tuhu hika kabeḥ mulya| ndan· ri kala:nyan hana hikaṁ bhayu śabda hidhəp hiṁ sarīranya ya| I 
+<lb n="34r3"/>la:ṅa hikaṁ bha:yū śabda hidhəp sakiṁ sarīranya mne| Apa taḥ mulya taṁ dr̥byanta kabeḥ| tan mulya pvaṁ kulun hasiṅvaṁ maṅalap·| nihan taṁ praśida mulya śakeṁ mas ma:<space type="binding-hole"/>ṇik·| Aṇakta mvaṁ rabhinta| tan aṅga vikətən pədhəkən gamlən· rabhinta deniṁ la:ki-la:ki lon·| ndan· ri kala:nyan hana hikaṁ bha:yu śabda hidhəp hiṁ sarīranya ya| Ilaṅa hi
+<lb n="34r4"/>kaṁ bhayu śabda hidhəp sakeṁ sarīranya mne| ndan tan· mulya piḥ hasiḥ ṅvaṁ maṅga{ui la}məl·| tinimphala:kniṁ sma| pinaR̥butan deniṁ gagak mvaṁ hasūvək·| nihan taṁ vakta| vkasniṁ mu<space type="binding-hole"/>lya viśeṣa: tmən·| yekī hiniṅū hinut padita| pinametakən pinaṅan iṅinum siṇḍaṁ mvaṁ ra:bhyanya| hiṅaniṁ kinahata:hən· kaliṅanya| ndan· ri kala:nyan hana: hikaṁ 
+
+
+<pb n="34v"/> <fw place="left" n="34v">4</fw>
+<lb n="34v1"/>ya| paR̥(ṁ) mtu la:van sarīranya| vruḥ kari kita handadyaṁ tapəl lavan· vaṅkay·| pagavayakna bha:yu śabda hidhəp·| yan apa hika: maṅkaṇa| yan kavnaṁ ya gavay·| marapavan· vru<space type="binding-hole"/>ḥ molaḥ maśabda| hambəkan·| dadya: ya maṅkaṇa| byaktanya tan kavna(ṁ) ya gavayan·| pinupuḥ hikaṁ tapəl·| Avuk hikaṁ vaṅkay·| nihan mataṅyan hana ma:ti ṅaranya rika(ṁ) saṙvva:janma
+<lb n="34v2"/>| I tan hananiṁ hagavay· bha:yu śabda hidhəp kaliṅanya| Ilaṁ śakeṁ sarīra| vakay ta ṅaranya| yapvan turuṁ hana: paripuṙṇna| Ikaṁ bha:yu śabda hidhəp·| riṁ saṙvva:janma| po<space type="binding-hole"/>kaśubada:tguḥ sarīranikaṁ saṙvvajanma| ya ta mataṅyan ṅhiṁ hika bhayu śabda hidhəp· juga viśeṣa pinakahuripnikaṁ saṙvvajanma| ṅuniveḥ hikaṁ rat kabeḥ| ndan saṁ paṇḍita: juga
+<lb n="34v3"/>| sira meṅət han· bha:yu śabda: hidhəp· pinakahuripniṁ rat kabeḥ| kunaṁ hikaṁ loka vula:ṅun· yan tan· vruḥhiṁ sinaṅguḥnya ñaṇa viśeṣa| nihan hupamaniṁ vu<space type="binding-hole"/>la:ṅun ika| kadyaṅganiṁ vula:ṅuniṁ deśa| Apan dumeḥnika vula:ṅuna| ri hananikaṁ hala:ṣa:sukət·| lbak· gunuṁ loḥ taśik· tgal malvaḥ| savuk· R̥m·pu ptaṁ kunaṁ| ya
+<lb n="34v4"/>ta d(u)meḥnya vula:ṅ(u)n·| sinaṅg(u)ḥnya tekaṅ aditya mt(u) kulon sumurup· vetan·| śaṅkaniṁ vulaṅun· kaliṅanya| samaṅkaṇa: tekaṁ lokan· vulaṅun· <space type="binding-hole"/> riṁ ñana viśeṣa| deniṅ alaṣa śukət·| lvaḥ taśik· tgal malva:| Apa kaharan hala:ṣa sukət·| lvaḥ taśik· tgal malva:| nyaṁ hajī kavya saṁkya prakaraṇa| kalpha puraṇa:
+
+
+<pb n="35r"/>
+<lb n="35r1"/>guṇa koṇḍyagyan·| kacitrakaran·| A{ui na}lis·| para:pus majahit·| mvaṁ kaṇipuṇahastan·| paṇḍay· sulphika| salviṙniṁ guṇa| ṅuniveḥ taṅ aji kḍuk timbul·| siṁlaṙ pisampa<space type="binding-hole"/>r·| picə(ṁ)cə(ṁ) si hulap·| Indra jala| sivaḥ sampuṙṇna| kalkavadana| puluṁ-puluṁ mayastri kukuṙḍaṁ datu| nihan sinaṅguḥ viku śabhuvaṇa jña:ṇa| maka:di kaṅ aji kavya saṁkya| praka
+<lb n="35r2"/>raṇa| kalpha purananya| ya viniśxaya candagaṇitya| makarahaṣyaṁ glaṙ puja: haji mantra samadḍi| ṣṭaliṅga liṅiṙ pratima bimba| ya buṅkah ikaṅ ajñaṇa ṅaranya liṁnya| taha <space type="binding-hole"/> hade tan ikaṁ sinaṅguḥ mami hajña:ṇa| kajña:ṇa ṅaran ika kabeḥ| kajña:ṇa ṅaranya hana ginavay·-gavay·| Apan ginavay· hikaṅ aji| mantra huṁkara: padkara:| ginava
+<lb n="35r3"/>y· kaṁ liṁga liṅiṙ pratima bimba| mvaṁ mahabara:lī| ginavay· taṁ glaṙ puja haji mantra| veḍa santi| mvaṁ japa-japya samadḍi| Apan dadi hika kabeḥ hinuvahan· yan ala la<space type="binding-hole"/>van yan salaḥ| dadi hinəlyan· yan· vuk lavan yan hilaṁ| lavan dadi hinanakən dadi hinaṙyyakan·| dadi kinalupan·| dadi pinucayan alməḥ ṅvaṁ| ya ta kajña:ṇa ṅaranya| tan maṁ
+<lb n="35r4"/>kaṇa hikiṅ hajña:ṇa liṁ mami| Ana hiki yan hinanakən·| dadi hiki tan ginavay-gavay·| tan kavnaṁ vineḥhakniṁ śikṣya ya ta sinaṅguh ajñaṇa ja:ti ṅaranya| rovaṁ<space type="binding-hole"/>nikīṁ bhuvaṇa ta muvaḥ| la:van· ya pinakahuripnikaṁ rat· mvaṁ saṙvvajanma| ndya saṁkala: śabda saṁ paṇḍita: riṁ śikṣya nihan·| pahenakan taḥ denta dumləśeṣiniṁ sarīranta| Iri
+
+
+<pb n="35v"/> <fw place="left" n="35v">3</fw>
+<lb n="35v1"/>ka(ṁ) bahiyatmiya prakṭi| sinaṅguḥ de śarīra| ya ta kahaṇan saṁ hyaṁṅ ajña:ṇa| vulikan pet-petan hanaṅkaṇa| gagapi paktəgniṅ atinta| mvaṁ hana niravaraṇaniṅ aka:śa| <space type="binding-hole"/> sami pva la:van saṁ hyaṁ vijña:śagr̥ha| triyobavetṣaha| Aṅhiṁ tlu prakaranya| pinakesiniṁ sarīranta| kunaṁ ya tan yan byakta tpət· denta: vruḥ riṁ saṁ hyaṁṅ ajña:ṇa| nihan·
+<lb n="35v2"/>kaguru vaktranya| nda ktula beda kita sakaR̥ṁ| paṅavruhananta hiṁ tpətniṁ tiga| kunaṁ deyanta sumahuṙ ta kita varaḥ rika saṁ tinakonakən mami ri kīta| Ayva śuna:| <space type="binding-hole"/> liṁnira heṅtakən taṇaku @1 Apa kari ṅaranikaṁ masuk· mtu mahavan· riṅ iruṁta| la:van iṁ tutukta| Unamaṇa praveṣaṇa guṇanya ko riṁ sarīranta| bha:yu ṅaran ika huśoṣa rana 
+<lb n="35v3"/>k saṁ paṇḍita hika| ya teka ṅaranya liṁ saṁ paṇḍita @1 muvaḥ nihan· takvaṇakna mami ri kita| Apa kari ṅaran ika: kaR̥ṅə: dentaṅke bhuvaṇa| la:van ikaṁ saṙvvajanma| <space type="binding-hole"/> kaR̥ṅə: juga guṇanya| śabda: ṅaran ika paṇaṅguḥ raṇak saṁ paṇḍita hika| ya teka jña:ṇa ṅaranya liṁ saṁ paṇḍita @1 vaneḥ takvanakna mami ri kīta| Apa kari ṅaran ikaṁ tinakna
+<lb n="35v4"/>ta| ri v(ka)snikaṁ bhuvaṇa loṙ kidul kulon· vetan·| L̥s luṅa śakḍap humalivatiṁ taśik·| cət· tka muvaḥ| Apa ṅaran ika: liṁta| Idhəp· ṅaran ika| haL̥ṅən· ra<space type="binding-hole"/>ṇak saṁ paṇḍita: hika| ya tikaṇa ṅaranya liṁ saṁ paṇḍita @1 mataṅyan kinala:karanta ya tluṁviji| sinaṅguḥ bhay śabda: hidhəp·| bha:yu ṅaranya hikaṁ bha:yu masuk· mtu mahavan·
+
+
+
+
+<pb n="36r"/>
+<lb n="36r1"/>hayva panintuhu @1 Ikan pavkasnika(ṁ) hi śo(ṙ) mvaṁ hi ruhuṙ ta liṁnya| ndaḥ madvatika hana vastha mayvaṁ-mayvaṁ hika| Ana juga hi śoranika| mvaṁ hi ruhuṙranika muvaḥ| kadyaṅganikaṁ lo<space type="binding-hole"/>ṙ han hanapri hana loranika sinaṅguḥ ta lor·| savidi ja:tinika| kady apintasa ma:nuduha loṙ kīdul kulon· vetan·| kunaṁ kumavruhana vkasniṁ loṙ kidul· kulon· ⌈
+<lb n="36r2"/>vetan·| tan hana maṅkaṇa| yadyastun kadi taviṁ mvaṁ mata| Atahiṅanikaṁ loṙ kidul kulon· vetan·| hana ta lora:nika mvaṁ kidulanika| maṅkaṇa tekaṁ hi śoṙ mva <space type="binding-hole"/> hi ruhur·| yadyastun kadi payuṁ vsi| kumuR̥bta hiṅanikaṁ sinaṅguḥ vkasnikaṁ hi ruhur·| Ana ta ruhuranika muvaḥ| kunaṁṅ apan· riṅ hidhəpnya juga: yan pahiṅanikaṁ loṙ kidul kulo
+<lb n="36r3"/>n· vetan·| I śor i ruhur·| ri hidhəpnya ya para:ṅkaṇ ahləm· yan ma:ti| ri hidhəpnya yan hana soṙgga ri ruhur·| paraṇani deva pitara huvus· binotya| mvaṁ paran· <space type="binding-hole"/> saṁ viku śakti yan ma:ti| tutunən deniṁ glaṙ puja:nya yan ma:ti| makasuluḥ hajinya| maṅkaṇa liṁnyan paṅuha| Anutakən· raśaniṁ kalpha carita madva| Adva rakva maṇavastha ṅaran ika
+<lb n="36r4"/>| mayo-mayo ṅaran ika| ya ta tiṅgalaknika denta| hayva pinintuhu @1 ndya pvekaṁ pituhun·| mvaṁ gəgən· raṇak saṁ paṇḍita| ya tan yan menaka pagəḥ vulat· raṇak saṁ <space type="binding-hole"/> paṇḍita| n tiṅgalaknika madva rakva maṇavastha| kapti-ptina saṁ hyaṁ ḍaṙmma| yan kaliṅanta riṁ kamī| AUm· hanavak ṣeśa saṁ paṇḍita ṅuni śurud mamī śakeṁ sira| tigapakṣa ṅaranya| n(d)a  
+
+
+<pb n="36v"/> <fw place="left" n="36v">2</fw>
+<lb n="36v1"/>tan kamī juga maṅucap tiga| padha sirampu kabeḥ maṅucap tiga| ndya lvaṙnikaṁ tiga vinuvusnira| nyaṁ brahma viṣṇu hiśora| tigahatika liṁ saṁ vaneḥ| nihan taṁ budḍi guṇa pra<space type="binding-hole"/>dana| triyantaḥ karaṇa ṅaranya| tiga hatika liṁ sa vaneḥ| nihan taṁ prabhū rama R̥ṣi| sinaṅguḥ tritantu| tiga hatika liṁ saṁ vaneḥ| nihan ta(ṁ) ḍimmakaya ḍaṙmmadatu ḍaṙmma:<gap reason="illegible" quantity="2" unit="character"/>
+<lb n="36v2"/>ga hatika liṁ saṁ vaneḥ| nihan taṁ kata| vak·| citta:| tiga hatika liṁ saṁ vaneḥ| nihan taṁ ḍaṙmmabudḍi| saṁgha: tiga hatika liṁ saṁ vaneḥ| nihan taṁ pr̥thivī| Aka:śa| Antara<space type="binding-hole"/>| tiga hatika liṁ saṁ vaneḥ| nihan taṁ matha| taliṅa| tutuk·| tiga hatika liṁ saṁ vaneḥ| nihan taṁ hulaḥ| śabda| Ambək· hayu| ya sinaṅguḥ trikaya para:maṙtha ṅaranya| I saṁ hiśo 
+<lb n="36v3"/>ra pakṣa| trikaya parisuda ṅaranya hi saṁ śogata pakṣa| tiga hatika liṁ saṁ vaneḥ| nihan taṁ pasukniṁ bhayu| vtunya mvaṁ laṁgəṁnya| tiga hatika liṁ saṁ vaneḥ| nihan taṁ śunya ta<space type="binding-hole"/>ya para:maṙtha| līlaṁ hniṁnira varaṇanya| tiga hatika liṁ saṁ vaneḥ| nihan taṁ skul· tok· hivak-ivak·| tiga hatika liṁ saṁ vaneḥ| ndaḥ nahan pakṣa tiga ṅaranya| liṁnikaṁ vi
+<lb n="36v4"/>ku paraloka kabeḥ| taha hade tan ika sinaṅguḥ pakṣa tiga ṅaranya liṁ saṁ paṇḍita| tiga hanavastha ṅaranyika kabeḥ| tiṅgalaknika {ui ka} denta hayva vinava R̥ṅə| <space type="binding-hole"/> vruḥ kari kita han· śeṁ hikaṁ tiga liṁ saṁ paṇḍita| sineṁ hikaṁ jña:na| ndatan kamī jugaṅuca:p ajña:na| padha sirampū kabeḥ maṅucap ajña:ṇa| ndya lviṙnikaṁ sinaṅguḥnira:jña:ṇa| nyaṁ§
+
+
+<pb n="37r"/>
+<lb n="37r1"/>mpa(ṁ)n(i)ka(ṁ) bhuvaṇa pitu hi ruhuṙ ta rakva| ndya lviṙ nihan·| loka ṅaranikaṁ bhūvaṇa kahananta| I ruhuṙnikaṁ muvaḥ bhuḥvaḥloka| I ruhuṙnikaṁ bhuvaḥloka| suvaḥlo<space type="binding-hole"/>ka| I ruhuṙnikaṁ suvaḥloka| janaloka| I ruhuṙnikaṁ janaloka| tapoloka| I ruhuṙnikaṁ tapoloka| satya:loka| I ruhuṙnikaṁ satyaloka| mahaloka|
+<lb n="37r2"/>I ruhuṙnikaṁ mahaloka| Antyanta-hantyantaloka| nda nihan· lviṙnikaṁ bhuvaṇa pitu patumpaṁnya| I ruhuṙ ta rakva| kadi taya patumpaṁnyan a:kniṁ tavon baluḥ| lviṙ<space type="binding-hole"/>nya pagantuṅanya hi ruhuṙ ta rakva| ya ta mataṅyan· riṁ madyapada ṅaran ikaṁ bhuvaṇa: kahaṇanta maṅke rakva| Apan pitu hikaṁ bhūvaṇa| I soṙ ta mvaṁ hi ruhuṙ ta rakva|
+<lb n="37r3"/>syapa taya śakeṁ sor·| mvaṁ śaṅke ruhuṙ hanuṁ vruḥ byakta:| lena śakeṁ kalpha hataya lavan· carikan maṁkaṇa:| yeka hadva rakva maṇavasta ṅaran ika| tiṅgala:kni§<space type="binding-hole"/>ka denta hayva pinintuhu @1 vaneḥ hana taya ri ruhuṙnikaṁ saptabhuvaṇa muvaḥ rakva| pitu hataḥ patapnya rakva| ṅaranya śunya| paramaśunya| Antyantaśunya| niṙmmalaśunya| śu
+<lb n="37r4"/>kṣma:sunya| Acintyaśunya| I ruhuṙnika muvaḥ taya| Atyantataya| niṙmmala:taya| śukṣmataya| Acintya:taya| I ruhuṙnika muvaḥ| Abyantarataya| Abyantarataya ṅa<space type="binding-hole"/>ranya| tan katkan deniṁ tejaniṁ vintaṁ vulan·| Aditya| vaṅkava: kuvuṁ-kuvuṁ| śaṅub kukus·| megha hudan·| kilat·| glap·| kətug gəR̥ḥ| gəntəṙ ra:hu| han(da)r(u) pa:raman(u)ḥ <gap reason="illegible" quantity="4" unit="character"/>
+
+
+<pb n="37v"/> <fw place="left" n="37v">1</fw>
+<lb n="37v1"/>saṙvvajanma kabeḥ| ya teka tan· tka yaṅkaṇa rakva| Apan· lviṙnya| Aho halīlaṅ ahniṁ niravaraṇa| laṅgəṁ niraśraya| I ruhuṙnikaṁ muvaḥ| pañca tan matra| pañca tan matra ṅa<space type="binding-hole"/>ranya| budḍi guṇa pradana| I ruhuṙnika muvaḥ| śunyata niṙmmalataya| śunyanta niṙmmala ṅaranya| L̥yəp· vindu pəpət taravaṁ piṣan iṅubari maṁdadi| tan· ka(t)kan den(iṁ) tutu(ṙ)
+<lb n="37v2"/>lupa| Arahanta sarīra| śeṣa hananta guru mokṣa:lpas·| I ruhunika muvaḥ| kaṇiśrayaṣan·| kaṇiśrayasan· ṅaranya| hīṅaniṁ manaḥniṁ lokaṇa paparan-paran·<space type="binding-hole"/>| An paṅaloṙ paṅidul· paṅulon paṅetan·| miṁśoṙ miṇḍuhuṙ makuliliṅan humidhəṙ hirikaṁ bhuvaṇa| ya ta śīnaṅguhan asti devatha| katunaniṁ vatək devatha kabeḥ
+<lb n="37v3"/>rakva| Ikaṁ vkasniṁ ruhuṙniṁ ruhur·| ya ta riṅ ahaḥ ṅaranya| śīnaṅgaḥnya kaṇiśrayasan·| rinahaṣyanikaṁ viku para:lokika kabeḥ| ṅkaṇa tenajaṙnanya| para:ṇanya <space type="binding-hole"/> lpas· hləm· yan mati rakva| para:ṇanikaṁ viku maṅuṁśiraranta| Ikaṁ tumkakna yaṅkaṇa liṁnya| yekaṁ brata tapa samadḍi| mvaṁ siṁ vruḥnya maṅaji| lavan kaśravakanya| ya ta mata
+<lb n="37v4"/>ṅyan pahuṙhuran·| Ika saṁ viku kabeḥ mamriḥ maṅaji| mabrata matapa maṣamadḍi| majar-ajariṁ R̥ban sampvara| śravaka lavan· brahmacari| kili hekavaṣa buṇa <space type="binding-hole"/> laghna hupavaṣa| sadyanika kalpasan kamoktin·| ya phalanika: kabeḥ| An ginavayakən· rakva| Anavasta ṅaran ika kabeḥ| yeka raṣa kalpha carita madya| tiṅgalak(n)ika
+
+
+<pb n="38r"/>
+<lb n="38r1"/>nya| ya viniścaya candagaṇita| mvaṁ brata tapa samadḍi glaṙ puja:| nahan ikaṅ hala:ṣa sukət kasusupanya| kaviL̥taṁ ya kapasuka kapasūṁ kapañjara karaktan· bnaṁ masi{*ga}<space type="binding-hole"/>gval·| denikaṁ samaṅkaṇa kabeḥ| Ikaṁ śamaṅkaṇa: kabeḥ ya ta sinaṅguḥnya jña:ṇa viśeṣa| tatan mulya vaknya huripnya tan· viśeṣa: liṁnya| Araḥ pijəṙ kda:(ṁ) miśe(ṣa)
+<lb n="38r2"/>:kən madoḥ| Apa ta kariḥ mulya viśeṣa: riṁ saṁ paṇḍita: ṅuni| sḍaṁniṁ kr̥ta:yuga| Aji hakṣara tapvan· vtu| patula tavuṙ tan gina:vayakən·| glaṙ puja tan hi<space type="binding-hole"/>nanakan·| tan· vikalpha riṁ hyaṁ devatha| śunya taya: paramaṙtha tan· viniśeṣa:kən·| brata ka:vikun tan inanadikarakən·| tan inucap makabala śoṙgga: kalpasən·
+<lb n="38r3"/>| kevalya mahaṙdika juga| vīrati ma:siḥ śambega:numaṇa riṁ rat·| vruḥ riṁ katuṅgala:niṅ urip·nira: lavan ikaṁ rat kabeḥ| Ikīṁ bha:yu śabda hidhəp·| Ata<space type="binding-hole"/>viśeṣa: pinakahuripnikaṁ rat tan hana vaneḥ| vyakcis· vali pva mulya hika sinaṅguḥnira: jñaṇa| bhari-bhari memanduṙ vali pva mevəḥ| yan kaliṅanta: hirikeṁ bha:yu
+<lb n="38r4"/>śabda hidhəp·| hayva ta kita maṅka:ṇa| Apa kari hidhəpta riṁ saṁ paṇḍita| miśeṣakna kapuṅguṁniṁ rat kariṁ sira| Apa kapuṅguṁnikaṁ loka| śoṙgga kahyaṅan kadeva<space type="binding-hole"/>tan·| bhaṭa:ra: baṭari| kamoktin· mvaṁ kalpasan·| yan· viśeṣakən·| maṅkaṇa rakva: saṁ paṇḍita: rahayvaniṁ loka| An tan paṇaṅguha kita vyak(c)is·| viku hayan·
+
+
+<pb n="38v"/> <fw place="left" n="38v">5</fw>
+<lb n="38v1"/>bhaṣmaran· liṅan te kami| kavruḥniratpvakaṁ vinarahakən·mami riṁ kīta| ndya kavruḥniṁ loka: liṁ mami| yekī bha:yu śabda: hidhəp·| sinaṅguḥ kata:vyakcis·| ha<space type="binding-hole"/>pa hupamaṇa: hirika| kadyaṅganiṁṅvaṁ malaṣ· saṁ kari kaṅelan·| tka tayeṁ vaneḥ| sinuṁsuṁ tayeṁ skul· tok ivak-ivak·| vvay·| panasan t(i)ṣ·| (t)las· vaR̥g<gap reason="illegible" quantity="5" unit="character"/>
+<lb n="38v2"/>naḥnya| vkasan han paṅguh taya vyakcis·| vali pva menak· mamaṅan· Aṅhiṁ vaR̥g· juga phalanyan· tan padon-donan·| nahan liṁnyan huvus· vaR̥g·| Ika<space type="binding-hole"/>ṅvaṁ maṅkaṇa| kadi/tya\ vnaṅa tumiṅgalakən paṅan inum·| hlamiṅ ahla mūvaḥ hamaṅana:taḥ| para:maṙthaniṅvaṁ maṅkaṇa| baṅgahan hale pinaṅanya| maṅkaṇa: ta kita ta saṅguḥ hikaṁ bha
+<lb n="38v3"/>śabda: hidhəp· vyakcis·| hinakaṇ ika taṙyyakna yak taya| Apan· bhari-bhari liṁta| makahuripta tekaṁ pustaka bharali| mvaṁ glaṙ puja liṅga liṅir·| pṭa pratima: <space type="binding-hole"/> bhimba| Apan· yajña:ṇa viśeṣa: liṁta| tatapin· ya yapvekaṁ bhayu śabda: hidhəp· hana riṁ kita| tan molaḥ laṅgəṁ ya pinakahuripta| para:maṙthanta nda humale sarīra
+<lb n="38v4"/>nta: sumeṣṭiva huripta juga: kita| Atanaṅguḥ vyakcis· hirikeṁ bha:yu śabda hidhəp·| Ikeṁ pinaṅguḥ ta vyakcis· tan kari śabda hika| ndi ta kita timphala<space type="binding-hole"/>:kna ya| ndi ta vavaṁ hikaṁ bhayu śabda hidhəp·| veha hiko ha/na\ pinakesiniṁ sarīranta| mvaṁ duvəg pinakahuripta| Atḍaśetika| Apan aṅhiṁ hikaṁ bha:yu śabda hidhəp·
+
+
+<pb n="39r"/>
+<lb n="39r1"/>pva katonanira| saṁ manon hataḥ siḥ tan katon·| yavat katon tavat dr̥bya tavat pa:pa hade hika| Umapa pva: keṅət-eṅtananira| saṁ meṅt-eṅət hataḥ si tan ke<space type="binding-hole"/>ṅt-eṅənt·| yavat keṅət· tavat dr̥bya| yavat dr̥bya tavat pa:pa hade hika| Apa deyaniṁ kumavruḥhana sira kariḥ| yan kvaliṅanta| yavat· kna kinavruhan·| yan emaṇa ya
+<lb n="39r2"/>n evha| yan gaṇala:| yan alīt a:śukṣma: tatan kavruhanya kna kavruhana| tavat dr̥bya juga hika: kabeḥ de saṁ manon·| kalīṅanya syanū juga: kumavruhi hika: <space type="binding-hole"/> kabeḥ| Apa kariḥ havakaṇika syanu kahaR̥pta| mataṅyan kapaṅguha la:van· kna kavruhana| kagamla katona karika syanu kahaR̥pta| rūpa vaṙṇna sarīranyan ta hiṅaniṁ§
+<lb n="39r3"/>katon kagaməl·| makavakaṁ halit· L̥ñjəp· mokṣa hiṅaniṁ kaspaṙṣa ka;paṣa| makavakaṁ lilaṁ hniṁ taravaṁ niraśraya:| kunaṁ hika syanu kahaR̥pta| makakapa:<space type="binding-hole"/>ṅguhana siṁ kaR̥ṅə:| Adesabdani syanu ktaḥ makavak lilaṁ hniṁ taravaṁ niraśraya| hiṅaniṁ makakapaṅguhani siṁ kaR̥ṅə:| makavakaṁ sukṣma: dadi hana: dadi tan hana: kunaṁ hi
+<lb n="39r4"/>ka syanu kahaR̥pta| makakatmvanaṁ keṅt-eṅət·| taha hade hidhəpniṁ syanu ktaḥ makavak sukṣma:| dadi hana dadi tan hana| makakatmvaniṁ keṅt-eṅət·| kunəṅ ika saṁ <space type="binding-hole"/> manon hikaṁ hinaraṇan syanu| tan katmu jugeka| luput sake rika kabeḥ| tan hana kavnaṁ tumkeṁ sira| ṅuniveḥ kumavruḥhana sira| sarīranira rakva vnaṁ kumavruhana sira
+
+
+<pb n="39v"/> <fw place="left" n="39v">19</fw>
+<lb n="39v1"/>| Ica byavaṣaya nu ghatanika saṁ manon· juga: mataṅyan haraniya: sarīra| Inakunya taya sarīraṁku| bhayunira rakna: vnaṁṅaku mavruhana sira| taha sira ktaḥ ku<space type="binding-hole"/>mavruhiṁ bhayunira| Apa denira: kumavruhi bha:yunira| Inaṙspaniran paśuk· vtunira| Aku bhayuṁ kumvaṁ kariṁ bhayu| taha tan hana janma: maṅkaṇa| kevala: masuk 
+<lb n="39v2"/>· pinasukakən·| mtu vinətvakən·| tuṅgaṁ kiniñcit taṁ bhayu| Apa pva: samandanyan pakaṅaran· bhayu| Icca byavasaya nu gata:nika saṁ manon juga: mataṅyan ha<space type="binding-hole"/>/ra\niṁ taṁ bha:yu| Inakunya taya bhayaṁku| śabdanira vnaṅaku mavruhaṇa sira| taha: sira kta kumavruhi śabdanira| Apa denira kumavruhi śabdanira| rinəṅə:nira vinastvaknira
+<lb n="39v3"/>| Akaśabda| kumva karikeṁ śabda| taha tan hana janma maṅka:ṇa| Apa tan pramanaṁ śabda yyaṙ vaknya| kevala: mijil· vinijila:kən·| dadi hinr̥t pingəṁ taṁ śabda| A:<space type="binding-hole"/>pa pva: samandanyan pakaṅaran· śabda| Icca byavaṣaya nu gata:nika saṁ manon juga: mataṅyan haraniya śabda| Inakunya taya śabdaṁku| hidhəpnira ta ri vnaṁ kumvruḥhana
+<lb n="39v4"/>sira| taha sira ktaḥ kumavruḥ hidhəpnira| Apa denira: kumavruhana hidhəpnira| meṅət siran hidhəpnira panonira: paṁR̥ṅə:nira| ya paṅhidhəpnira rika kneṁ <space type="binding-hole"/> paṅan inum·| la:van taviḥhaku hidhəp tan· kva hidhəp·| kevala: mari paśva pinarīpakṣakən· ktaṁ hidhəp· vicitran midr̥knira kirakan·| Apa pva: samandyanyan paka
+
+
+<pb n="40r"/>
+<lb n="40r1"/>pan paṅambu(ṁ) gaṇda paknanika| yan· mta mahavan· riṁ tutuk ikaṁ bhayu han pakaṅaran hab·-hab·| vnaṁ ya panulup saṁkahan maṁkaṇa paknanyika| ndan ikaṁ bhayū mtu maha/va\niṁ tu<space type="binding-hole"/>tuk· mvaṁ riruṁta| tuṅgal ika| kunaṁ hapaṇ atətəg· ya riṁ viṣayanya| Apan dva:ranya ya malelenaknya| maṅkaṇa tekaṁ hidhəp han padha tətəg· viṣayanya| tan· vnaṁ makaviṣa
+<lb n="40r2"/>ya:niṁ rovaṁnya| Apan· doranya ya malelenaknya| Ikaṁ hidhəp makadora lima rikeṁ sarīra| tuṅgal nahan mataṅyan sinaṅguḥ pañcendriya de saṁ śeva śoga<space type="binding-hole"/>ta| kunaṁ ri saṁ meṅət tuṅgal hikaṁ hindriya: ṅaranya| tuhun kavijila:nya riṁ sarīra: hataya limaṁviji| kaliṅanya hikīṁ bhayu śabda hidhəp· ya vvitniṁ haji lavan· śastra:lra:
+<lb n="40r3"/>nya kiṙṇnanya ya cinəṅil·| tuṅgalnya simpənya ya tinatva: de saṁ pravadika siṅhavadi @1 nihan·n deyanta meṅət tah yyaṙ ta:nikaṁ daśanama:pariyaya:| para:maṙtha <space type="binding-hole"/> ṅaranya| paśukniṁ bhayu rikeṁṅ avak·| kaparamaṙtha: ṅaranya| vijilniṁ bhayu rikeṁ havak·| ñanentara para:maṙtha: ṅaranya| Antaraniṁ masuk lavan· mtu| Apara:maṙtha: ṅa
+<lb n="40r4"/>ranya| Ikaṁṅ haneṅ abyantara| Apa pinakavaknya śivaḥ| Apa pinakavaṙṇnanya para:manuḥ| Apa pinaka:lilaṁnya haka:śa| Apa pinakatunduka: si paknanya hikaṁ bha<space type="binding-hole"/>yu tan ūmirir·| Ikaṁ humiri· haṅin ṅaranyika| Ikaṁ rivut· bhayu bhūta: ṅaranyika| Ika śeṇḍuṁ bhayu papa:ṅaranyika| Ana ta laṅgaṁ tan humirir·| Ikaṁ pinakavala:kaṁni
+
+
+<pb n="40v"/> <fw place="left" n="40v">13</fw>
+<lb n="40v1"/>ṅan· tlu| vluni(ṁ) puṅlu tyəsni(ṁ) ptu(ṁ)| (ṣ)eka: sinasguḥha para:maṙtha: ṅaranya| Aka:śa para:maṙtha: kumva pva liṁniṁ tatva:| ma:ti pva saṁ paṇḍita| bhayūnira: hikaṁ masuk· mtu riruṁnira| <space type="binding-hole"/> ya ta:misan· mgil· riṅ abyantara| ya ta sinaṅguh aka:śa paramaṙtha: ṅaranya| ya sinaṅguḥ lina ṅaranya| Umapa lviṙniṁ lina| han palvir·| mapa: rūpanya| tan pa:rūpa| Apa lakṣaṇanya
+<lb n="40v2"/>| tan palakṣaṇa| apa hidhəpnya| tan pahidhəp·| I humapa kata kariḥ| Iṅt-iṅət· raṣaniṅ aturū tan paṅipi| Iniṅt-iṅət· raṣaniṅ aturu tan paṅipi katmu raṣaniṁ si lu<space type="binding-hole"/>pa| katmu ta raṣaniṁ nora hinidhəp·| tan sukha tan dukha| tan· grahyaṁ tan· gr̥haka:| pinəḥ raṣanika: katmu taṁ raṣa śakḍap·| sakḍap ṅaranya ñət·| Ikaṁ taṁ ñəp· ṅaranya|
+<lb n="40v3"/>tatan kinavruhan lavasnya| śaṅkanya: paranya| papanya: mvaṁ lpasnya| pinəḥ raṣanika: katmu taṁ mokṣa ṅaranya| tatan· kinavruhan leknya| tahunya| tiṁkasnya| pinəḥ raṣanika<space type="binding-hole"/>: katmu taṁ lpas·| nahan· lviṙniṁ varadehan ilaṁ| kevalya samuha pagataḥ katmu taṁ kevalya ṅaranya| saśvamitaḥ vaḥ maramaḥ| tan hana vak tan hana pinakavak·| tan hananuti 
+<lb n="40v4"/>tan hana tinutan·| ya sinaṅguḥ para:makevalya ṅaranya| samipata saṁ hyaṁ hatma: vkasan· la:van saṁ hyaṁ śivaḥ //0// Anima\n·/ ṅaranya: halit·| Ahiman ṅaranya hagəṁ| ma:<space type="binding-hole"/>himan ṅaranya hadoḥ| lagiman ṅaranya śegra| prapti ṅaranya tka| prakamya ṅaranya magavay·| Iśitva: ṅaranya ba| visitva: ṅaranya maṅaku| nahan haṙtha:niṅ aṣṭaguṇa kavruhana:
+
+
+<pb n="41r"/>
+<lb n="41r1"/>ta saṅhulun·| vruḥ kita riṁ haraṇan syanu| AUm· yekī havakniṅ hulun· hi{ui na}kaṁ hinaraṇan syanu| kumvakəta| Ade havakni syanu ṅaran ika| yan· bhayu śabda hidhəp·<space type="binding-hole"/>ta hikaṁ hinaraṇan syanu liṁta| bha:yu śabda hidhəpniṁ syanu ṅaranyika| yan sayoga paṣamohan saṁkaṇiśkaranya vakta kabeḥ hikaṁ hinaraṇan syanu lita| Ahade hataḥ| śayo
+<lb n="41r2"/>ga: pasamohan sapaniskaranya vakniṁ syanu ṅaranyika kabeḥ| Apa byaktanyan dr̥byani syanu hika| Inakunya viya| sarīraku| bhayūṁku| śabdaṁku| hidhəpku| tutuṙku| pa<space type="binding-hole"/>ṣamohanya vaku kabeḥ| maṅkaṇa liṁnyan paṅaku| Ika saṁ ma:ṅaku hika taṙ kaku taṙ pakatuduḥ juga:raśika| valiṁ tatan mevəh ikaṁ hinaraṇan syanu| mvaṁ hinakunta ba
+<lb n="41r3"/>pa: hibu| Apa byaktanyan mevəḥ| pjaḥ vibapa:hibunika: syanu| tan· vavahavuniṁ bapa-hibunya ri dihyaṁ| tan tonakna: ya gavayan· puhun hi daṅ acaṙyya mvaṁ dhaṅo<space type="binding-hole"/>vaḍyaka ruhun· ri bagavanta:| yan· vruha hikaṁ hinaraṇan syanu| mvaṁ hinakunya bapa hibu| kunaṁ śaka riṁ puṅguṁnya| nahan mataṅyan takonaknanya| maṅkaṇa: ta sira mpu| tara
+<lb n="41r4"/>ṅga kta sira: magavay·| yyaṙ vruḥha hirikaṁ hinakuniṁ syanu bapa hibu| kunaṁ śaṅkariṁ puṅguṁnira| nahan mataṅyan taraṅga: gumavaya: bapa:-hibunika syanu| Inavakaṇira: <space type="binding-hole"/> taya roniṁ vaduri| ginavay· puspa liṅga| lmaḥ bhinimbha| lavan gaṁ{ui la}śa liniṅiṙ ya:ta hinidhəpnira bapa-hibunikaṁ syanu| hi{ui na}dhəpnika saṁ makon·| sinambhuḥnya tekaṁ puspa:
+
+
+<pb n="41v"/> <fw place="left" n="41v">16</fw>
+<lb n="41v1"/>liṅga| lmaḥ bhinimbha| ga(ṁśa liniṅir·| kaliṅanya padha puṅguṁ saṁ makon lavan saṁ kinon·| Apan papadhanya| kadyaṅganiṁ vutta: manuntun·| vuta tinuntun·| ka<space type="binding-hole"/>śaśaṙ pva ya riṁṅ alas guṁ| kapaṇa:ta tan pamaṅguhakən mava| maṅkaṇa ta saṁ makon mva saṁ kinon·| magavaya: puhun·| kapaṇata sira tətəsa: hirikaṁ hinaraṇan syanu|
+<lb n="41v2"/>Apan padha vulaṅunira| Apa kari hidhəpta: riṁ bapa-hibunika: syanu| tan· vkasniṁ sinaṅguḥ viśeṣa hika| ri huvusnyan ma:ti luput mariṁ masarīra: bapa-hibuni<space type="binding-hole"/>ka syanu rakvan kavnaṁṅ avehən mavakaṁ len·| Ahuripva: ya tuturuṁ masarīra sapocapan lavan hanak putu| konən taya makasarīra len·| makavaka hikaṁ liṅga
+<lb n="41v3"/>liṅiṙ puspa liṅga:| tan kavnaṅa taya tan aṅga makavaka hika| ri huvusnya viśeṣa: bapa-hibunika syanu kapva:| mvaṁ viśeṣa:niṁ bhayu śabda: hidhəpnya:| ri vkasan· vineḥ ta<space type="binding-hole"/>ya: madadya-dadyan·| kinon makavaka: hikaṁ liṅga: liṅiṙ pratima: puspa liṅga: roniṁ vaduri| AL̥paṁ śakeṁ vuruk ada mvaṁ riṁ vuṁkva haṅga:n saṁ viku mva tan gavay·| ma:
+<lb n="41v4"/>taṅyan· vehən· bapa-hibunika: syanu madadya-dadyan·| vineḥ makavaka: tan a:vaknya| raṣaniṁ vuvus saṁ paṇḍita| bhapa:-hibunika syanu ta: vkasni sinaṅguḥ ḍaṙmmo<space type="binding-hole"/>tama: viśeṣa:| Apan· vnaṁ saṙvva:krīyya ri kaṁ loka| magavay· tan ginavay·| ya ta mataṅyan· śastra ta guru taḥ hikaṁ syanu ṅaranya| naśastra taḥ tan· knajyan·| tan a
+
+
+<pb n="42r"/>
+<lb n="42r1"/>kaliṅanya| ya sidiniṁ kaṁ paribhaṣa: śaña| śañaṇa sinidinya kaṭīṅanya| Apan byakta:nyan·| Ajña:ṇa sinidinya| tlu viṅaraniṁ bhūvaṇa: lavan sarīra| tlu viṅaraniṁ jña:<space type="binding-hole"/>ṇa| ndya rahinanya| bhūvaṇa| sarīra| Añaṇa| Apa ta sineṁnika| nihan havakta| yan hila:ṅa hikaṁ bhayu śabda hidhəp sakaṅke| byakta: mavukṣuḥ drava tan pahamṅan· sarīra
+<lb n="42r2"/>nta| maṅkaṇa tekaṁ bhuvaṇa la:van saṙvvajanma| yan {*ha}tan hana hikaṁ bha:yu śabda hidhəp· hiriya| byakta yan hanti hantu ma:ti tan paśeṣa hikaṁ saṙvva:janma| siṙṇna parava<space type="binding-hole"/>ṣyuḥ runtuḥ rubhuḥ hikaṁ pr̥thivī la:vaṇ aka:śa| kunaṁ pva: ri hananikaṁ bhayu śabda hidhəp hirikaṁ rat kabeḥ| nahan mataṁnyan pva: śaka paripuṙṇna: pagəḥ hikaṁ rat kabeḥ| ma
+<lb n="42r3"/>ṅkaṇa tekaṁ paribha:ṣa kavikun·| maṅiku ktaḥ kaliṅan ika| Anmiku ṅaranya| mamet·| Aparan pinet saṁ hyaṁ hajña:ṇa| ndan pinet· ndin hiniku| Irika:ṁ<space type="binding-hole"/>ṅ aṅga: rva: haṅga rva ṅaranya| bhuvaṇa| la:van sarīra| ya nirukti paribhaṣa bhūjaṅga| bhuḥ haṅga kaliṅanyika| bhuḥ hikaṁ pr̥thivi| Aṅga hikiṁ sarīra| bhūḥ hikiṁ sarīra| A
+<lb n="42r4"/>ṅ(ga) hikiṁ pr̥thivī| dadi yan maṁkaṇa riṁ saṁ vruḥ| Apan padha sarīra| padha pr̥thivi kaliṅanya| pr̥thivī cañcala: ṅaranikaṁ sarīra| ṅka tan pinet·| ṅka tan hiniku| I<space type="binding-hole"/>ka: saṁ hyaṁ hajña:ṇa| de saṁ hapa: de saṁ viku| syapa ta saṁ viku ṅaranira| syapa ta syaka ṅaranira| saṁ maṅhaku tan kaku| ndi keriṁ bhuvaṇa: la:van sarīra| sira: tuṅgal·
+
+
+<pb n="42v"/> <fw place="left" n="42v">15</fw>
+<lb n="42v1"/>s(i)ra: ḍaṙmma| sira pr̥mmaṇa: ṅaranira| Iḥ kapuhan· raṇak devatha: saṁṅulun·| Apa ma:taṅyan kapuhan· raṇak devatha: saṅhulun·| UmaL̥ṅən· raṣanikaṁ bha<space type="binding-hole"/>yu śabda hidhəp· raṇak devatha: saṅhulun·| An· ya kumusaṁ bhūvaṇa la:van saṙvva:janma:| Alimpunyan· yan juga: pinakahuripni(ṁ) rat kabeḥ| ya ta mataṅyan tan hana v(i) 
+<lb n="42v2"/>śeṣa: vaneḥ beda śakeṁ bhayū śabda hidhəp· ri raṇak devatha: śaṅhulun·| Umijil pva tutuk devatha: śaṅhulun hika saṁ viku| saṁ maṅaku taṙ kaṁku| ṅke riṁ <space type="binding-hole"/> bhuvaṇa la:van sarīra| sira tuṅgal sira pr̥mmaṇa: liṁ devatha: saṅhulun·| yapvi kapva dr̥byatmakaṇira kapva: hikiṁ bhayu śabda hidhəp mvaṅikeṁ sarīra| yan kva liṅanta ri kami|
+<lb n="42v3"/>AUm dr̥byatmaka piḥ| kasihana: ta raṇak devatha: śaṅhulun·| tṅətakna: hirika saṁ viku| samaṅaku taṙ kaku keriṁ bhuvaṇa: la:van sarīra| yan kalīṅanta: ri ka<space type="binding-hole"/>mi| AUm syapa kariṅanta: ṅuni duk· raraiy·| Ikaṁ pinaṁguguta:kənta: vuyaḥ deniṁ bapa hibu| nambaḥ hulun syanu ṅaran· raṇak devatha śaṅhulun deniṁ bapa hibū| A
+<lb n="42v4"/>Um· yuktī hika pavaraḥta riṁ kamī| vnaṁ ta kita| kamī tumakvaṇana:vak mami| sumahur aṇavak mamī| kita haṇa maṁR̥ṅə: humidhəp saraṣa:niṁ vuvus mami| maṅka<space type="binding-hole"/>ṇa: krama ma:mī riṁ saṁ ma:tuha: ṅuni| ndaḥ himanya taṅ aranikaṁ mavaraḥ syanu| yuhana kumvata kami| nyaṁ hulun kumvata kīta| Ivənya yati kita kvaṇakna mami riṁ kīta| An sahuṙ ki
+
+
+<pb n="43r"/>
+<lb n="43r1"/><gap reason="lost" extent="unknown" unit="character"/>//0// Itiḥ hapus agəṁ| ṅaranya saṁ hyaṁ pustaka: hika| taṁtu saṁ śedaka:rihin·| hagavai saṁ hyaṁ maha paṇḍita:| {ui ta} <space type="binding-hole"/> brata manaḥ śalīlaṁ hniṁ cipta: ni(ṙ)mma:la| rahaṣya hayva: cavuḥ cala:vura| puniki mulya tmən·| tan· kna bhinari-bari //0// samapta: tlas si<gap reason="lost" quantity="9" unit="character"/>
+<lb n="43r2"/><gap reason="lost" extent="unknown" unit="character"/>batuṙ kasinoman· riṁ kətraliṁga:| dyaḥ saṅ aparab sabañu| paṙyyantuśakna de saṅ amaca:| halaniṁ saṁ hyaṁ śastra tan patut· riṁ ta:<space type="binding-hole"/>ta vaṙgga| paruṅgu| guhagahaṇa| makadi kuraṁ vuvuhana:| lviḥ loṅana de saṁ kavī //0// titi pva yeka vula saptami| kr̥ṣṇa:pakṣa| //0// I śaka| 1419 @ Om̐ saṁ hyaṁ
+<lb n="43r3"/><gap reason="lost" extent="unknown" unit="character"/>
+ 
+
+        </ab>
+	  	<!-- Structure as necessary with <div>, <p>, <ab>, <lg> depending the nature of the text -->
+			</div>
+
+
+
+
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+                <p>Transliterated by Muhamad Alnoza, encoded by Muhamad Alnoza.</p>
+		        <p><!-- explain the process of your edition here --></p>
+		        <!-- provide a list of bibliographic references used in your digital editions -->
+		        <listBibl type="bibliography">
+		            <bibl/>
+		        </listBibl>
+		        <!-- the listBibl editions is used to create a list of abbreviated text used in notes and parallels, it is more or less the equivalent of a list of abbreviations, you would find a printed edition  -->
+		        <listBibl type="editions">
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
