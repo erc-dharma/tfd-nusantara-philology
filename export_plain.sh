@@ -1,10 +1,12 @@
 # Script for exporting editions as plain text. Run it from the parent directory
-# with:
+# (the one where this .sh file is stored) with:
 #
 #       bash export_plain.sh
 #
 # This will create a directory "plain" in the parent directory, with the
 # editions. You can copy/move this directory somewhere else afterwards.
+# It's best to delete the "plain" folder before running the script again, 
+# in case any edited files have been renamed, to prevent any old files from remaining.
 
 set -xe
 
