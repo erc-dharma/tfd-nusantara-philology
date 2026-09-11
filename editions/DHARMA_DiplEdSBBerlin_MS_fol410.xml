@@ -4,31 +4,20 @@
 <?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
     <teiHeader>
-        <fileDesc>
+       <fileDesc>
             <titleStmt>
                 <title type="editorial">Digital Diplomatic Edition of lontar MS. fol. 410 in the Staatsbibliothek, Berlin</title>
-                <!--change the title of the edition starting, if possible, with the title of your text-->
-		<!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
-                <!--<title type="alt"></title>-->
-		    <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
-		<!--<title type="original" xml:lang="...-Latn"></title>-->
-                    <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
-                <!--<author></author>-->
-                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
                 <respStmt>
-                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
                     <resp>author of digital edition</resp>
-                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
-                    <persName ref="part:mano"><!-- update the id -->
-                        <forename>Muhamad</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
-                        <surname>Alnoza</surname>
+                    <persName ref="part:mano">
+                        <name>Muhamad Alnoza</name>
                     </persName>
-                         <persName ref="part:argr">
+                    <persName ref="part:argr">
                         <forename>Arlo</forename>
                         <surname>Griffiths</surname>
-                    </persName>
-                </titleStmt>respStmt>
-            <funder>European Research Council (ERC), grant agreement no 809994</funder></respStmt>
+                     </persName>
+                </respStmt>                                   
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
             <publicationStmt>
                 <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
                 <pubPlace>Jakarta</pubPlace>
