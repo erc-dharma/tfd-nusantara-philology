@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="editorial">Bhīma Svarga</title>
+                <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+                    <resp>author of digital edition</resp>
+                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                    <persName ref="part:mano"><!-- update the id -->
+                        <forename>Muhamad</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Alnoza</surname>
+                    </persName>
+                    <persName ref="part:argr"><!-- update the id -->
+                        <forename>Arlo</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Griffiths</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DHARMA_DiplEdBhīmaSvargaMssJav53n.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2026" to="2026">2026-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="MSS_Jav53n">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"/>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>London</settlement>
+                                <institution>British Library</institution>
+                                <idno>Mss./IOL. Jav. 53n</idno>
+                            </msIdentifier>
+<msContents>
+    <msItem>
+             <colophon><quote type="diplomatic" xml:lang="osn-Latn">Iti bimasvaṙga samakta təlasinurat…(I)mbaṁ (da)kṣiṇna| batuṙ ravaṇnasada…dyan kahuvusan iṅ anulad, vuku pahaṁ, saptavara tumpək, pañcavara vu pon, caturvara jaya, travara byatara, sasi cetra, tr̥ṣṇapakṣa ri bavani, I saka “kr̥ti bramanā bayu tuṅgal” (1584 Ś), Om̐ śri śri yaṅ svarasati ya namaḥ</quote></colophon></msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 24 leaves in Javanese script of the Merapi-Merbabu type</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id="A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Kawi script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>IOL(Mss.) Jav. 53n is part of MSS. Jav. 53 collections. According to Mackenzie's report (published in Blagden, 1916), this collection consists of 24 MSS writtten in cadjan leaves. These are said to have been brought by the civility of a regent from a long deserted house in distant forests, where they had lain neglected for many years. The information on IOL Jav.  53z suggests the regent in question was Kyahi Tumenggung Puger. These MSS thus to be collected, probably from the area of Puger in East Java (the 'East Hook').  
+</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                
+            <editorialDecl> 
+                <p/>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+           <change who="part:argr part:mano" when="2026-09-17" status="draft">started encoding the diplomatic edition</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="kaw-Latn"> 
+        <ab> 
+
+<pb n="1r"/>
+<lb n="1r1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>(vaṙ)ga kira vəḥhana: kahot· sudanən· deṇniṅ a/tu\kiṅ asisin(ə)hu| denniṁ <space type="binding-hole"/> kədəḥ hanunuvi ri saṁ hyaṁ ḍaṙmma:tantra ri tatakrama| kinnaṙyya pana(ṁ)ḍa(ṁ) manaḥ deni nasṭapa saṁ{*ṅ}kani boñcaḥ laṅgəṁ kasuraṁ-suraṁ 
+<lb n="1r2"/><gap reason="lost" extent="unknown" unit="character"/>nəm masuka| //0// dyan· kahuvusan iṅ anulad·| vuku pahaṁ| saptava<space type="binding-hole"/>ra tumpək· pañcavara vu{ui ga}| pon·| catuṙvara jaya| travara byatara| sasi cetra| tr̥ṣṇapakṣa ri bavani|| //
+<lb n="1r3"/><gap reason="lost" extent="unknown" unit="character"/>// I saka| kr̥ti brammaṇna: bayu tuṅgal·| Om̐ śri śri yaṁ svarasati ya namaḥ|
+
+
+<pb n="1v"/>
+<lb n="1v1"/><gap reason="lost" extent="unknown" unit="character"/>n(o)ra ka(be)(ḥ) (ka:)di hana manusa dukaku noraha| kadi hana bantən dukaku noraha| kadi hana ha<space type="binding-hole"/>devata dukkaku noraha| hapan mijil ṣaṁki(ṁ) tan ana| haku saṁ hya(ṁ) tan ana| hana haku hana devata| hana haku hana buta| ha
+<lb n="1v2"/><gap reason="lost" extent="unknown" unit="character"/>ku hana manusa| ha(na) <gap reason="illegible" quantity="2" unit="character"/>(mi)(ji)lakən ṣaki(ṁ) taya| Om̐ saṁ hyaṁ taya taṅ aranta| Om̐ taya vetan taya ki<space type="binding-hole"/>dul· taya kulon· taya haloṙ| taya madya| taya hi soṙ| taya luhuṙ| has[1 pasangan illegible]luputa ri kiṙyyahūpaya| luputa ri ga
+<lb n="1v3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>yama| tan katampaka ri(ṁ) pa(ñ)ca<gap reason="illegible" quantity="2" unit="character"/>ra| kəmitən· ni(ṙ)kala| sakvahani hasaṙvva hala| tan tu(me)<space type="binding-hole"/>meṅ ṣariranku Om̐kara nama sivaya(ḥ)| sa| ba| ta| A| I| na(ma) sivaya //0// Iti bimasvaṙgga samakta təlasinu
+<lb n="1v4"/><gap reason="lost" extent="unknown" unit="character"/>nayaṁ| (I)mbhaṁ (da)kṣiṇna| batuṙ ravaṇnasada| haprasadu deni sastra tan stu{*ta}<space type="binding-hole"/>ti tatavaṙga<gap reason="illegible" quantity="1" unit="character"/>| haguṅ alit· lvaṙ pinəḍak· deni pakṣi| sampun· tan ṣapura manavi hana sudy amaca| kapatuta| 
+
+
+<pb n="2r"/>
+<lb n="2r1"/>vi katə(dha)| patinipun· yamma| su{*ta}/ka\ pada bhaṭa:ra patiynanepun· yamma| tan katədha {ui pa}hapatinta| yamma ka<space type="binding-hole"/>tə/dha\ kita maṅka talampakane si paṇḍu| haṅadəg ika svaṙggan· suka taḥ pada bhaṭara pun· yamma maka (ta)luṇ ḍagane p{*u}aṇḍu| paran ṣi§
+<lb n="2r2"/>hujaṙran mami yamma| suka ki yamma| punapa siḥ hujaranipun· yamma pukulun· duk ṣaka pada bhaṭa:ra| bimma <space type="binding-hole"/> həndi kaṁ vatək· devata kabeḥ| haṅgas(th)i got·takən· kadevata kabeḥ| haṅastrena si paṇḍu| brahmajana manak· 
+<lb n="2r3"/>puspa kaki| hameta sakiṅ indrasikara| sreg· L̥s ṣampun paripuṙṇna| laḥ mantrani(ṁ) (b)imma: ba<space type="binding-hole"/>panta: kavas aguru haṅintasakən· haku hamantranana: Om̐ hana hyaṁ haku hya(ṁ) haku hagave tan· ginave| Om̐ sa ba ta ha I| 
+<lb n="2r4"/>haku vkase haku hagave| nama sivaya:| haku saṁ ligani tan ana| haku kaṁ savijinni gat· ha<space type="binding-hole"/>ku jati pralinna| Om̐ nora vetan· nora kidul· nora kulon· nnora həloṙ| nora ri madya| nora hi soṙ| nora 
+
+
+<pb n="2v"/>
+<lb n="2v1"/>di kita haṅətasakən· voṁṅ atuva| bimma riṁ kr̥tasamaya jatipantara| harane svaṙggane /ba\panta| hapan ṣama <space type="binding-hole"/> yan ku lavan kita| ri ṅuni jati varaḥ pantara| pantarane hujaṙta lavan maniḥ kaṅ abisekanana bapanku| dak apalaku riṁ kita| la§
+<lb n="2v2"/>van ṣapa harane bapaku| kr̥tasamaya bimma| harane bapanta| bhaṭa:ra haṙca{ui na} hinaṙcana harane <space type="binding-hole"/> bapanta| vruh aku guru dira simbhi(ṁ) patine bapaku| laḥ bimma si haṙca masa pinuja haranane| guru yen makana| kadevata haṅa
+<lb n="2v3"/>tu(ṙ)hakna| sigini və(ḍ)iha:n· lavan· tuṁ-tuṅi kukuni vatək· devata kabeḥ| pinakasarini pus·<space type="binding-hole"/>[a hanah niṁ haR̥/knapun·\ p{*u}aṇḍu| na tka la ṣampun iṅ astran· has kaṅ devata kabeḥ| haruṅu hujaṙre si bimma sama mojaṙ ka devata| tohi
+<lb n="2v4"/>pukulun· lan puna(ṁ) yen makatdhaha makahalun· ḍugane bapanku| paran ṣi budi yan mami bimma| yama <space type="binding-hole"/> həndi gonta| pukulun matuṙ ta yan bhaṭara| ventən ṣu yamma| yamma kita katdha dene si bimma katə(ḍa)ha punapa taḥ pukulun· mana:
+
+
+<pb n="3r"/>
+<lb n="3r1"/>si paṇḍu| paran avakipun makanaha| haja guru tan paveh aku| laṅgəṁ kita hanitihi parana guru| haja <space type="binding-hole"/> bimma norana devata (li)ñok· hapan ujaṙku riṅ ani haṁgətenana paluṅgu(ḥ)hanku bapanta| guru haja dak varaḥ ta kita|
+<lb n="3r2"/>ri sabda vnaṅ aliliñok· lilima kveḥhe| tan papa yen kapaṅguḥ| ri paṇḍu <gap reason="illegible" quantity="1" unit="character"/>ta| hajaṙ patiha<space type="binding-hole"/>ni satru vnaṅ aliñok·| haR̥pa rabi hayu vna liñok· riṅ amet kahuripan· vna liñok· lūṅahani dinol· vna
+<lb n="3r3"/><gap reason="illegible" quantity="4" unit="character"/>| (ta)n pati hika kabeḥ| // mokono bimma tut· guru| suka mako bimma haruṅu hu§<space type="binding-hole"/>jaṙta maya kita sinəṅguḥ mudha hujaṙr i para: haliñok· pva hujaṙ ṅ aməruḥ hakan tan· vru| mako taḥ paran ka(R̥)pta bimma guru dak·
+<lb n="3r4"/><gap reason="illegible" quantity="7" unit="character"/>| svaṙgga hane bapaku| laḥ bimma yen mokono kaR̥pta| riṅ əndi gone| <space type="binding-hole"/> bimma guru ri ghneya huṅgvanane bapanku| bimma nora svaṙgga tuva| guru ri pan·tara svaṙgga hane /ba\pan·ku| bimma nora ka:
+
+
+<pb n="3v"/>
+<lb n="3v1"/><gap reason="lost" quantity="6" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>ṅin{*e}· karaniṅ ana manuk· hana t{*e}aḥ rudi haṅambhək-ambhək ahni ri sarira| si taḥ saṁ hyaṁ <space type="binding-hole"/> sarudira haranira| hana kaludirahni hakani muṅguḥ ri dodot· sira taḥ hiṅaranan bhaṭara samaguṇna haranira| haṅeṙ pva ki
+<lb n="3v2"/><gap reason="lost" quantity="4" unit="character"/>(ṇḍu)haniṅ ati| samana taḥ duk iṅaranana saṁ hya vaL̥sivaḥ haranira| haṅeṙ pva kita hoto<space type="binding-hole"/>tiṅ ati| samana dukkiṅ arana saṁ hyaṁ svadasadasśivaḥ| haṅeṙ pva kita tutuṅiti samana yataḥ hiṅaranan ṣa hyaṁ sukṣmasivaḥ| sira:
+<lb n="3v3"/>taḥ bhaṭa:ra saṁ hyaṁ tan paguru haranira| tan amakana ri kaguru| hatut iku bimma| // Adhoḥ mako siku <space type="binding-hole"/> kalaḥ dene si bimma| sədhəṅan alaṅkupakən· taṅan bhaṭara guru| sinambhut de saṁ vr̥kodara| haja bhaṭa:ra gurū| noran ana guru 
+<lb n="3v4"/>hanəmbhaḥha ri manusa| balik· devata hanimbhaḥ ri manusa| hapann aku halaḥ| (la) gəteni paluṅguha<space type="binding-hole"/>nku dene bapanm(u) si paṇḍu| haja paran· ta bəcikanipun· yen makanaha| kita kahagatenana paluṅguhane si
+
+
+<pb n="4r"/>
+<lb n="4r1"/>tan vaspada tumonireku| guru kita tḍəs panonta ri jagat· haR̥pva kit{*i}a vaspadaha| R̥pva kita vkas i tino<space type="binding-hole"/>n· sira təkeṁ don ṣira təke vkasi pinet· irika taḥ bhaṭa:ra tum vipata| sira mayuga bhaṭara paramesvara| hayuga sakveniṁ devata ka:
+<lb n="4r2"/>beḥ samana hinaranan· bhaṭara guru| kalihan pva yugha tinampel ta pitlu hamtyakən kanya: rahayu| bhaṭari§ <space type="binding-hole"/> huma haranira| lana tan lana| vadon tan vadon· hanti hanvahayunira| haṙsa pvaṇi ta saṅgamaha| tan vihaṁ bhaṭari humma| pa:kṣa ta haṣaṅgama
+<lb n="4r3"/>ha katiṅal ataḥ hacarat· bhaṭari| kaget ta/ḥ\ kita samanna| tinugəlan· pva kacarat· yata hanacarati§ <space type="binding-hole"/> tahun· tumiba pva ri pr̥thivi| ya ta hanacarati L̥maḥ| mta pva kaṁ gətiḥ| habohati(ma)| karaniṅ ana kbo| Iṅusapan pva ka gtiḥ|
+<lb n="4r4"/>ya taḥ karanniṅ ana sapi| panagavekakən· leṁ yataḥ karani ha celeṁ| vinasuhan pva sa<space type="binding-hole"/>mana karaniṅ anna hasu| varas pva kaṅ abibik i leṁ| ya taḥ karaniṅ a:na bebek· mtu kaṁ kulit a{*ma}yam· ya taḥ karani hana ha
+
+
+<pb n="4v"/>
+<lb n="4v1"/>mayu(ga) (thu)vama bhaṭa:ra saṅkara| hayugha bhaṭa:ra viṣnu| mijil· bhaṭari visnuvi| mayuga muvaḥ mtu bhaṭara <space type="binding-hole"/> sambhu| hapagəḥ kaṁ sivaḥ madya| sakiṅ eka haṅiṅkin· jagat kabeḥ| kabeḥ haku vəruḥ haku guru| // hayuga bhaṭara vi
+<lb n="4v2"/>snuvi| mijil baṭari pr̥thivi| mayuga baṭari pr̥thivi majil baṭari /ha\ṅantari| hayuga baṭari haṅa<space type="binding-hole"/>ntari mijil baṭari gaṅga| hapan i yuga yinuganakən kabeḥ| haku vəruḥ guru| haku hayuga tan· yinuga| hagave tan ginave ha
+<lb n="4v3"/>nna tan iṅanakən· hapananku pakumpulaniṁ bayu /sa\bda hidhəp· haku ta kaṅaran ṣaṁ hyaṁ viseṣa| haku§ <space type="binding-hole"/> sa hyaṁ viseṣa| putuṁku saṁ hyaṁ {ui ha} pramanaviseṣa| buyutku saṁ hyaṁ tuṅ{*ka}·gal· putuku hapan kata bhaṭara guru| haku viseṣa| hapa
+<lb n="4v4"/>n aku havakka bayuviseṣa| haku huripi rat kabeḥ kabeḥ kita bhaṭa:ra kavisesa denni bayu| <space type="binding-hole"/> kabeḥ kita bhaṭara paradene kaviseśa: deni bayu| kita dene tan· vruḥ ri caranku| hapan ani bhaṭa:ra vru tan vinaraḥ| ki po
+
+
+<pb n="5r"/>
+<lb n="5r1"/><gap reason="lost" extent="unknown" unit="character"/>| matha: sakacaṅ ijo piniL̥ṙ d{*i}adi sapuluḥ pinijət dadi sapuR̥t tinibakə{ui ma}ṇ dadi sabatamiriṁ| haṅidkan dadi <space type="binding-hole"/> sarambhag· ṅinaladidə(ṙ) di sasən· {*dha}ri kanya buvaṇna| dadi sacakran(iṁ) paḍati| sira taṅ aniku buvaṇna| si taṅ anniṅaṇḍa buhaṇna| sira:
+<lb n="5r2"/><gap reason="lost" extent="unknown" unit="character"/>ṅ amadu buhanna| sira haran(ti) huvus· hap(i)ra ka(ṁ) pr̥thavi| haṅusap matha pitiga| mtu taḥ luh adr̥s· tumi<space type="binding-hole"/>ba ri pr̥thivi| hajuṙ ka pr̥thivi| mtuha taṙtha| samana taḥ Iṅaranan ṣaṁ hyaṁ gambhura| meṅət ta sira haṅaṅən-aṅən· mataṅən pinəL̥satakən·
+<lb n="5r3"/><gap reason="lost" extent="unknown" unit="character"/>dadi raditya| ma(tha) kiva pinləsatakən· daḍi vulan· kapanasan pva sira deni yuganira nira| hakuyuṙ taḥ sira <space type="binding-hole"/> samana ta sira hinaranan mamojaṙ ta sira humaḥ tan aḥdoḥ| gumlaṙ ka jagat· kabeḥ| tan· vṅi tan paḍaṁ hanaravaṁ kaṁ rat ṣamana| hanani svaṙgga
+<lb n="5r4"/><gap reason="lost" extent="unknown" unit="character"/>nnani sunya| pranasunya| tannani pramanu| hana ta paṅadəg·gani saṁ hyaṁṅ aditya| sira ta hinaranan· bhaṭa:ra hya vidi<space type="binding-hole"/>| bhaṭara yaṁṅ anantaviseṣa: // hayuga pva saṁ hyaṁ meṅə(t) mijil ta saṁ hyaṁṅ astitijati| mayuga taḥ saṁ hyaṁṅ astitijati| mijil·
+
+
+<pb n="5v"/>
+<lb n="5v1"/><gap reason="lost" extent="unknown" unit="character"/>: hyaṁ sukṣma| hayugha taḥ saṁ hyaṁ sukṣma: mihil ta saṁ hyaṁ niravayava| hayuga pva saṁ hya nira/va\yava| mijil· saṁ hya<space type="binding-hole"/>ṅ annataviseśa| saki kadalipuspa maṙganira| hayugha saṁ hyaṁ viseṣa| mi/ji\l· saṁ hyaṁ pr̥manaviseśa| saki cucupumanik ṣakanira
+<lb n="5v2"/><gap reason="lost" extent="unknown" unit="character"/>hayugha saṁ hyaṁ viseśa| mijil· mijil ta saṁ hyaṁ tuṅgal· saki liṅgabava: maṙganira| hayugha pva saṁ hyaṁ <space type="binding-hole"/> tuṅgal mijil pva sa/ri\ ka pat· saṁ hyaṁṅ ina mijil· saki tutu(ṁ) bibi| saṁ hyaṁ pagr̥ mijil· sa L̥ṅ(ə)n· mijil ṣaki manaḥ| saṁ hyaṁ tan ana mijil ṣaki putiḥ
+<lb n="5v3"/><gap reason="lost" extent="unknown" unit="character"/>hi pusuḥ-pusuḥ // hayuga pva saṁ hyaṁ tuṅgal· mijil pva bhaṭa:ra guru| saki(ṁ) kumbhamaṇnik· maṙgganta| hayugha pva ki§<space type="binding-hole"/>ta devata: bhaṭa:ra guru| mtu kaṁṅ asvara brahma| mahadeva| viṣnu| tinon· taḥ mayughaha devata kabeḥ| de bhaṭara guru| sa
+<lb n="5v4"/><gap reason="lost" extent="unknown" unit="character"/>pva hathaṅan·| hayugha bhaṭa:ra hisvara mijil· bhaṭari svari| hayugha muvaḥ mtu mahisora| ha<space type="binding-hole"/>yuga bhaṭa:ra brahma mijil bhaṭari brahmi| hayuga muvaḥ mtu bhaṭa:ra rudra| hayugha bhaṭa:ra mahadeva mijil bhaṭari mahadevi|
+
+
+<pb n="6r"/>
+<lb n="6r1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>daL̥m pahomman· haṅapatakaṅ i pahomman· tan hana srataka titiṅgi| tan·n aruṅu pva sa<space type="binding-hole"/>bdanta laḥ ri madyaniṅ akasa pva bimma| hapa taḥ kamadyaniṅ akasa| tann ana<gap reason="illegible" quantity="1" unit="character"/>| R̥ṅəknya mukumbaṁ kuku pamanu kaṁ ruṅuha| riṅ indi pva bimma| ri
+<lb n="6r2"/><gap reason="lost" extent="unknown" unit="character"/>b ucap-ucap lavan kita bimma| ri kene guru| haṅapa kaliṅane bimma| vastani guru tann ana haruṅu<space type="binding-hole"/>ha| tan ana haL̥cəp·| {ui ta}{ui na}mokono bimma laḥ boṁ vas·tono R̥p daḥ vinaston tan ana ruṅu| tan ana hidhəpa| vus mako
+<lb n="6r3"/><gap reason="lost" extent="unknown" unit="character"/>bimma varaḥ taḥ kami bimma| hapa saṁ taṅ esiḥ manusanta tan kabita ri bina:hatutur i kamulanta| // ni(ṙ)bu<space type="binding-hole"/>mi niṙdaL̥m· niṙbapiḥ niṙteja: niṙcamarata| niṙdiyogataḥ| kaliṅane ni(ṙ)bumi tan ana byamma| niṙdaL̥m tan ana bañu| niṙbapiḥ tan ana ghni
+<lb n="6r4"/><gap reason="lost" extent="unknown" unit="character"/>ṙteja tan ana teja| niṙsuṙyya tan ana suṙyya| niṙcandra tan ana vulan· niṙmaruta tan ana haṅin· niṙrupa tan a<space type="binding-hole"/>na vvaṙṇna| havaṁṅ-avaṁṅ uvuṁṅ-uvu| ptəṁṅ ahiR̥ṁ sunya tan ana| nora loṙ kidul· vetan· kulon· nora soṙ nora luhuṙr·
+
+
+<pb n="6v"/>
+<lb n="6v1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="5" unit="character"/>ra| <gap reason="illegible" quantity="3" unit="character"/>maL̥ṅən· tan avakkira| hatutuṙ ta sira| saṁ hyaṁ meṅət ṣira taḥ hamr̥dyakə<space type="binding-hole"/>n· sariranira| sapa pva haranne kaṅ ana bayu slananta| makəmpəl pva kaṁ bayu sabda hidhəp· masarira| hakya| saṙvva hana pasarira saṁ hyaṅ uyu| saṁ
+<lb n="6v2"/><gap reason="lost" extent="unknown" unit="character"/>bu saṁ hyaṁ pasariranku| ya ta maṁkasariranku| ya ta pinakalakṣaṇna:nku| L̥kaṣku polaḥku| hambhəku sa<space type="binding-hole"/>bdanku| bratanku| mantraku glaṙ tavuṙku| haranku| saṁ hya hanantaviseśa| // hapa saṁ taṅ esiḥ manusanta| Om̐ hatutuṙ ri kamulan·
+<lb n="6v3"/><gap reason="lost" extent="unknown" unit="character"/>ta| hana bayu makəm·pel ṣavijini java gəṁ nika| murub akataṙ-katiṙ kataran· tan anani sinuluḥ/ha\ni jaga<space type="binding-hole"/>t· sira taḥ hiṅarannan· bhaṭa:ra jagat pr̥manajati nityasa| kaṁ piro marupa śajava gəṁnira| kadi ṅuni rupanira| sira ta hiṅaranana
+<lb n="6v4"/><gap reason="lost" extent="unknown" unit="character"/>(saṁ) hyaṁ catuṙdanna<gap reason="illegible" quantity="1" unit="character"/>| (śa)pitig·nira maru molaḥ tan pabəkan· hacakəm ta paṅucap· hataṅa tan lumi⌈<space type="binding-hole"/>be| hasuku lumaku| si/ra\ ta yaran· bhaṭara tan paharan·| tinaṅalan· jagat tan ana| sira sa hya {ui ṅa}mṅaṅa met pinet· hamet ṣu§
+
+
+<pb n="7r"/>
+<lb n="7r1"/><gap reason="lost" extent="unknown" unit="character"/>n(ta)| rupanira kadi hadityava humijil· ye<gap reason="illegible" quantity="3" unit="character"/>rip i jamuṙdipa saṁ hyaṁ ratnaviseśa| rupanira kadi ⌈<space type="binding-hole"/>teja sakalaṅan| yen kita Urip i bali saṁ hya ratnavindu| rupanira kad(i) (I)n(ə)n· yen kita Urip i nusa java saṁ hya kalimmahosadda
+<lb n="7r2"/><gap reason="lost" extent="unknown" unit="character"/>linəbuṙ| pinakahavakta kabeḥ|| bimma yen katutupi buvaṇna {ui sa}dukkane puṙvva dakṣiṇna| pacimma <space type="binding-hole"/> Utara madya| cəpani bimma: laḥ guru haṅəṙ kita ri puṙvva buta sabdagati haranta| mantranku bimma: lavan· rupanku| rupanta haputiḥ| Om̐
+<lb n="7r3"/><gap reason="lost" extent="unknown" unit="character"/>tiha puṙvvadesa samantya| hatuṅgu desa: devaṇya| sikari sa: sarika brajanitya:sa: tan maka/na\ rika guru <space type="binding-hole"/> tuhu rika bimma| (d)uk· na dakṣina sapa haranku| buta ḍoga haranta| mantranku| pva bimma| Om̐ baṁma deva dakṣina
+<lb n="7r4"/><gap reason="lost" extent="unknown" unit="character"/>r(a) ḍə(ṇ)ḍa ran·taba:ṁ(ba)(ma) saṁ gaṙga|| raktabaṁ| babakda dadenaba| hatut iku bimma| yan aha<space type="binding-hole"/>ku hapaṅanti ri pacimma po bimma buta tavasi haranta| rupanta kuni(ṁ)| mantraku bimma Om̐ tan· turiga pacimantha
+
+
+<pb n="7v"/>
+<lb n="7v1"/><gap reason="lost" extent="unknown" unit="character"/>(me)tr(i) p(i)tataha metri turaga jata: tan metri naga ta naga: tan makana rika| hatu{*na}t iku bi<space type="binding-hole"/>mma yen kami hapaṅanthi riṅ utara {ui na}pva bimma buta niha haranta| mantranku pva bimma Om̐ haniha hutaraniha| haniha cakrahaniha| ha
+<lb n="7v2"/><gap reason="lost" extent="unknown" unit="character"/>rudaniha| haniha kurusyaniha| Om̐ ya namu namasyaha| hatut iku bimma| dukk aku hapaṅi<space type="binding-hole"/>ti ri madya| saparanku saṁ hyaṁ ramaraja| mantranku pva bimma| Om̐ ramaraja jaramaya| ramayani nirameya| yame doro rodo  
+<lb n="7v3"/><gap reason="lost" extent="unknown" unit="character"/>ya me dosa sadomeya| yada yoda dayo daya yada yoni niyo dayayara{ui ṣa} {*ya}harara<space type="binding-hole"/>ya {ui ya} siyaya siyaja juta siya Om̐ ya namu nama sova| tan makana rika| hatut iku bimma:| bimma dukta koniki ta/n\ aparan mala|
+<lb n="7v4"/><gap reason="lost" extent="unknown" unit="character"/>na buvaṇna| <gap reason="illegible" quantity="2" unit="character"/> guru tan makaha laḥ bimma lamon kita vəruḥ hagətenan paluṅguhan mama <space type="binding-hole"/> bapamu bimma lamon ṣaḥkarun· denta| laḥ yen mokono kaR̥pta| Om̐ṅ avaraḥ tantra kamulantha| laḥ bimma Om̐ṅ ajaja 
+
+
+<pb n="8r"/>
+<lb n="8r1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="7" unit="character"/>hegul· heka harani {ui ta}{ui ta} tuṅgal a:hegol· haraniṁ bun·tu<space type="binding-hole"/>t· ce haraniṁ kiṇḍit· tan makana rika guru| hatut iku bimma| paran· gane saneka laḥ hasi bimma hiki| // R̥p daḥ trighni
+<lb n="8r2"/><gap reason="lost" extent="unknown" unit="character"/>pinakahavakku| haripi buja:ṇna kabeḥ| rupanira patiterelep· patikəR̥bap· pati<space type="binding-hole"/>gurilap· patikəR̥tep· patiteretes· patikəR̥jəp· patikəcə{*pa}k·| bimma paran· rupanku katon· denta| rupanku ka
+<lb n="8r3"/><gap reason="lost" extent="unknown" unit="character"/>ndi taḥ rupan(ta) vaṙṇna no hana peta| peta rakta| lohita| pita| harita| kr̥sṇa| harisya| ha<space type="binding-hole"/>rivarita| kambakanku denta| bimma laḥ cəp· niyon kacəpan· hapaṅanti taḥ ri svaṙgga{*n·} bapamu // guru manavahaka tan· vru ri ru
+<lb n="8r4"/><gap reason="lost" extent="unknown" unit="character"/>panta| hapan iku huripi buvaṇna| yen kita hurip i puṙvva| saṁ hyaṁ jantri kaharanta| yen kita hurip i dakṣinṇa <space type="binding-hole"/> saṁ hyaṁ jati haranta| yen kita hirup i pacima sa hya purusaṅkara harantha| yen kita hurip iṅ utara saṁ hyaṁ kaṙmadipa haranta| yen a§
+<pb n="8v"/>
+<lb n="8v1"/><gap reason="lost" extent="unknown" unit="character"/>ta hurip i madya saṁ hyaṁṅ asnə haranta| yen kita hurip iṅ aka:sa saṁ hyaṁṅ ilaḥ haranta| ye/na\ kita hurip i pr̥thivi§ <space type="binding-hole"/> sa,hyaṁ gəbara/la\ya haranta| yen kita hurip i bañu| saṁ hyaṁ gantari haranta| yen kita hurip i teja| saṁ hyaṁ dorasidi haranta| {*va}| yen kita huri
+<lb n="8v2"/><gap reason="lost" extent="unknown" unit="character"/>b(a)y(u) saṁ hyaṁ sutradita haranta| yen kita hurip i saṙvva kumilip· saṁ hyaṁ tr̥ṣṇa niṙmala| baya kita hurip i R̥<space type="binding-hole"/>si triguṇna| {*ra}Uri{*nna}pni deva daseñdraya| manusa dasamala| Urip ni {ui ma}lahanu| Urip ni vadyan panamanuḥ| Urip ni mr̥ga triṣamaya| Urip ni hr̥na
+<lb n="8v3"/><gap reason="lost" extent="unknown" unit="character"/>ṅgama:n aliya| muvaḥ hantaja: saṙvva hari-hari| haṅatiga| hariya| saṙvva tumuvuḥ| kita huri<space type="binding-hole"/>pi kabeḥ| pinakaUrip ta kabeḥ| // Ana sadya paṇḍu mala| hana hastha saptamala| pinakavahanantha| Uripi sivaḥ puru§
+<lb n="8v4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>han(ta)savaḥ pradanapurusa Urip i niṙbaṇna:sivaḥ| {ui ba}{ui ka}{ui ma}{ui ha}{ui ta}{ui ma}{ui na}| kamokṣanika <space type="binding-hole"/> pinakahuriptha| yen kitha Urip i malayu saṁ hyaṁ ratna sivaḥ han·tha| rupantha sivaḥ| yen kita hurip i tan·jupura saṁ hyaṁ ratnatha
+
+
+<pb n="9r"/>
+<lb n="9r1"/><gap reason="lost" quantity="3" unit="character"/>lihan lavan· bhaṭa:ri humadevi| ruṅu salokaniṅ ulun·| Om̐ hasṭapado susakrano dvisr̥<space type="binding-hole"/>ṅgi| saptalocanəm· trisiraḥ| tribubasanəm· has(tha)satəm· saptagran{*ə}o| trinab{*r}ibri siraḥ| sabu{ui ca}{*ḥ}jacevaḥ| {*na}kabagəm· dvipa
+<lb n="9r2"/><gap reason="lost" quantity="3" unit="character"/>tuṙpuṭo| Ekahegul·| hametaṇḍaḥ| // laḥ paran kaliṅane sabdanku bimma <space type="binding-hole"/> tan bara sabdata guru| hapan iku cacakraman·na tka lahavan· bhaṭara kala kaṁṅ iku| hasapado harane hiku| cəp·pani
+<lb n="9r3"/><gap reason="lost" quantity="2" unit="character"/>pado bimma| laḥ guru hasṭa harani vovolu| pada harani suku| sukuni L̥bu papat·| <space type="binding-hole"/> kaṁṅ anuṅga papat· paḍa hasuku roro| gnəp· vovolu| susadkrano harani taliṅan· taliṅani L̥mbhu roro| kaṁṅ a
+<lb n="9r4"/>(nu)ṅga papat· ghnəp· nənəm·| trisiraḥ {ui sa}tri harani tətəlu siraḥ haraniṅ əḍas· siraḥni L̥mbhu tuṅga<space type="binding-hole"/>l· siraḥhi kaṅ anuṅgaṁ roro| ghnəp· tətəlu| sapthaloca{ui ma}{ui na}nəm· saptha harani pipitu locanəmm arani mata| mathani L̥m·bu 
+
+
+<pb n="9v"/>
+<lb n="9v1"/>(ro)ro| kaṅ anuṅgaṁ lilimma| ghnəp· pipitu| sad·vara harani nənəm· vara harani taṅan· taṅani bhaṭa:ra pa<space type="binding-hole"/>pat· taṅani bhaṭa:ri roro| ghnəp· nənəm· dvi harani roro sr̥ṅgi harani suṅu| saptagraṇo graṇo harani leṅ i cuṅuṙ-cuṅuṙ ri 
+<lb n="9v2"/><gap reason="lost" quantity="2" unit="character"/>roro| cuṅuṙ ri baṭara: tətəlu| bhaṭa:ri roro| ghnəp· pitu| trinabanabi harani vudə<space type="binding-hole"/>l· vudəl i L̥mbhu| 1| kaṅ anuṅgaṁ| 2| ghnəp· tətəlu| trisiraḥ harani tətəlu| siraḥni L̥m(bhu) tu(ṁ)gal· kaṅ anaṅgaṁ roro| ghnəp· tə
+<lb n="9v3"/><gap reason="lost" quantity="3" unit="character"/>cevaḥ buda cevaḥ harani silit· silit ikaṁṅ anuṅgaṁ roro silit i L̥mbhu tuṅgal· <space type="binding-hole"/> titiga| hastha svatən·santə harani susu| susuni L̥mbhu papat· susuni kaṅ anuṅgaṁ papat· ghnəp· {ui na}{ui na}{ui ma} vovolu| dvipusopu 
+<lb n="9v4"/><gap reason="lost" quantity="3" unit="character"/>rani pus· purus i L̥mbhu tuṅgal· purus i kaṅ anuṅga tugal· ghnəp· roro| Ekaba<space type="binding-hole"/>gəm· bagəm· harani baga| Eka haranni tuṅgal·| catuṙpuṭo| puṭo harani visilan· visilanni L̥mbhu roro kaṅ a
+
+
+<pb n="10r"/>
+<lb n="10r1"/><gap reason="lost" quantity="3" unit="character"/>ndente| laḥ cəp·ni yen ko havruh Ugvane harane| guru hanuṅgaṅi kita L̥mbhu putiḥ ha§<space type="binding-hole"/>kaliyan lana batari humadevi| bimma ruṅu salokanku| /Om̐\ milu silumanusa| saṁ hyaṁ Isvara| silaḥ ghaṇa saṁ hyaṁ maIsora| hamire
+<lb n="10r2"/><gap reason="lost" quantity="3" unit="character"/>ṭara brahma| haraṅkaka bhaṭa:ra rudra| hakilusu hyaṁ mahadeva| havəkok ṣaṁ hyaṁ sakara| silaḥ <space type="binding-hole"/> pas· bhaṭa:ra visnu| hatimpuḥ vayu baṭa:ra sambhu| hamuruduṁ bhaṭa:ra sivaḥ| hiṅadəg· bhaṭa:ra guru| haṅadəg· ri guṇu naga
+<lb n="10r3"/><gap reason="lost" quantity="3" unit="character"/>haṅagəm saṙvvasañ(ja)ta| brajra padupan· d(ə)ṇḍa| mokṣala| naghapakṣaḥ| hakus·cakra| trisu<space type="binding-hole"/>la| padma| ghada| saka sañjata: hatambhə metanira|} saṁ hyaṁṅ indra haran aṅulun·| ruṅu salokaniṅ ulun· Om̐ gopala gopaL̥|
+<lb n="10r4"/><gap reason="lost" quantity="3" unit="character"/>yam· Om̐ hidaḥ ta(ḥ) (ki)ta kamu yaṁ kala hayva kita hamurugiṅ ulun·| kagum-kagum kataraṅgul kavu<space type="binding-hole"/>s kagam· tumiṅal· rupaniṅ ulun· hapanniṅ ulun· hapaṅavak· bhaṭa:ra guru| guruni devata kabeḥ hanu{ui ga}ṅi L̥
+
+
+<pb n="10v"/>
+<lb n="10v1"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>taya haranku samana| bisaṅ adakṣa paharan ma saṁ hyaṁ taya haranku| bisa papaḥ payon ṣa hyaṁ L̥ṅis· <space type="binding-hole"/> haranku| vru riṁ bapa bu sapa haranta| saṁ hyaṁ tu{*ṙ}tuṙr· meṅət haranku| bicacavətan ṣapa haranmu saṁ hyaṁ rajalila haranku| vayaṅ sapa bo
+<lb n="10v2"/><gap reason="lost" extent="unknown" unit="character"/>bhapa haranmu saṁ hyaṁ komara: haranku| bisa babasahan ṣapaharanmu| saṁ hyaṁ jati{ui ko}{ui ma}{ui ra}vaṙṇna ha<space type="binding-hole"/>ranku| rumajaputra sapa haranmu| bhaṭa:ra tuṅgal haranku| luṅa haməṁṅ-aməṅ ṣapa haranmu| baṭa:ra lumalaṁ| vru I sastra bisaṅ aji saṁ hyaṁ 
+<lb n="10v3"/><gap reason="lost" extent="unknown" unit="character"/>(tva)jñana haranku samana| vru kita guna matra sapa ha{ui na}ranmu saṁ hyaṁ vadyajñana haranku| vru kita haṅaji <space type="binding-hole"/> duradrasṇna| saṁ hyaṁ jagat pr̥maṇna: haranku| (v)ru ri panamun ayu kisinasa| katəmu rasani pinet· katəmu rasani tuṅgal· kapaṅgiḥ sandini pati|
+<lb n="10v4"/><gap reason="lost" extent="unknown" unit="character"/>(tə)hani tiga| sapa hanmu bhaṭara guru ha/ra\n·ku| haku ṭara ri rat· vna(ṁ) riṅ ucap· dudu rika guru| ha<space type="binding-hole"/>tut iku bimma| laḥ kalaḥ mami duruṁ kalaḥ| R̥p anitihi handaka putiḥ hakalihan lavan· baṭari huma| bimma kayaṅ apa haku|
+
+
+<pb n="11r"/>
+<lb n="11r1"/><gap reason="lost" extent="unknown" unit="character"/>ranku samana| sumalaḥ ri L̥maḥ sapa haranmu samana| saṁ hyaṁ buvaṇna haranku samana| duk tinugəl· pusəṙmu <space type="binding-hole"/> sapa haranmu samana| saṁ nagha bəlak haranku samana| duk binuvaṁ hari-hari ta| sapa haranmu samana| saṁ hyaṁ I prana haranku samana| vinəḍaka
+<lb n="11r2"/><gap reason="lost" extent="unknown" unit="character"/>hya(ṁ) sari kuni haranku samana| dinusan· saṁ hyaṁ nagha gombha haranku samana| linəṅan ṣa hya səri L̥ṅi<space type="binding-hole"/>s· haranku ṣamana| pinu{ui pa}kan ṣa hyaṁ tutuṙr· buvana haranku samana| {ui ba}hiṅəmbhan ṣaṁ hya saṁroja haranku samana| sina:lahakən· ri sa§
+<lb n="11r3"/><gap reason="lost" extent="unknown" unit="character"/>(hyaṁ) vin(du) sak(t)i <gap reason="illegible" quantity="2" unit="character"/> haranku samana| saṁ hyaṁ nuku rat· buvana haranku samana| duk ṣinusyan ṣapa ha§<space type="binding-hole"/>ranmu samana| saṁ buttha sakti haranku samana| {*⌈}duk dinulaṅ ṣapa haranmu| saṁ hya nantabogha| haranku samana| duk ṣinambut· ki§
+<lb n="11r4"/><gap reason="lost" extent="unknown" unit="character"/>(n)ta sapa haranmu samana| saṁ hyaṁ kaṙkaṙsaṇnan· haranku samana| duk lumili sapa <space type="binding-hole"/> haranmu| saṁ hyaṁ meṅətth aranku| bisaṅ uR̥b· sapa haranmu| saṁ hyaṁ kaseśa haran·ku samana| bisa luṅguḥ sapa haranmu| saṁ
+<pb n="11v"/>
+<lb n="11v1"/><gap reason="lost" quantity="8" unit="character"/>(ha)ranmu samana| saṁ hyaṁ kən·tora manik· niṙmala| sabulan lavas{*ta}·ku ri vṅi| sapa ta haranmu<space type="binding-hole"/>| saṁ hyaṁ manik· maṅupuḥ| rovulan lavasku ri vṅi| sapa haranmu samana| saṁ hyaṁ manik kabusaṇna| tlulek lavas·ku ri vṅi| sapa haranmu samana|
+<lb n="11v2"/><gap reason="lost" quantity="8" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>gavaṙṇna haranku samana| patalek ṣapa ha{*ma}ranmu samana| saṁ hyaṁ mani śri gaḍī| duk· <space type="binding-hole"/> limalek ṣa{ui hya}pa haranta| saṁ hyaṁ {ui pa}manik imbhavaṙṇna| duk· nəm·{*na}lek ṣapa haranmu samana sa hyaṁṅ bata L̥ṅis· pitulek·
+<lb n="11v3"/><gap reason="lost" quantity="2" unit="character"/>haranmu samana saṁ hyaṁ vimbha sasadara: haranku volulek ṣa haranmu samana sa hyaṁ variṅin puṁ§<space type="binding-hole"/>saṁ haranku| ghnəp ṣaṅalek ṣapa haranmu samana ṣaṁ hyaṁ tutuṁ buvana haranku samana| hanəbiti pagənahan ṣapa haranmu samana| saṁ hya la
+<lb n="11v4"/><gap reason="lost" quantity="2" unit="character"/>(ro)n·tek karanku samana| muṅup· ri baga savasa| sapa haranmu samana ṣaṁ hyaṁ tijo buvaṇna| <space type="binding-hole"/> haranku samana| duk katon ṣiraḥmu sa paranta| saṁ hyaṁ tutu buvaṇna| haranku samana| duk· mətu pisan ṣapa haranmu samana| saṁ hyaṁ manik kava{*ha}
+
+
+<pb n="12r"/>
+<lb n="12r1"/><gap reason="lost" extent="unknown" unit="character"/>/ṅa\ran ṣaṁ hyaṁ taraju tpət· tan pahi mava(k) ṣarira:nira tuhu bimma halaḥ kami // bimma duk takon iki <space type="binding-hole"/> ri kita| hana riṅ əndi kita duk bapanta dadaka babumu duk· rara| hdə gonta bimma ri jatmikan· haku hasanna| hamoṙ ri suri pahesan· ha
+<lb n="12r2"/><gap reason="lost" extent="unknown" unit="character"/>ṅa sipat· pahesan· hakakaR̥pan pva babapanta| lavann ibunta| hanabdi kita| hna riṅ ulat· guyu| <space type="binding-hole"/> haku samna| hapagiḥ bapanta lavann ibunta| hna ri paṅan inum haku samana| duk ṣaharasa pva lavan· bapanta lavan ibunta| hana riṅ andi ki
+<lb n="12r3"/><gap reason="lost" extent="unknown" unit="character"/>ri ḍa (h)i(dh)əp· <gap reason="illegible" quantity="3" unit="character"/>n· duk abobott ibunta hana riṅ indi kita| paran ṣiḥ hika tan vəruḥha haku gu<space type="binding-hole"/>ru| bimma paran· tañumane yen kita vəruḥ| dak varaḥ taḥ kita mulaniṅ ana buva{*gha}ṇna| mega sapayuṁ gə(ṁ)nya| hakasa bhaṭara purusakara| tr̥ṣṇa
+<lb n="12r4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>baṇna| hamiji(la)kən kaṁ pr̥thivi| mtu ka(ṁ) vindu-vindu| hamajil·lakən ṣivaliṅga| pataṁkəp·ni§ <space type="binding-hole"/> liṅga lavan· prinala ta| mijil· ta haku samaṇna| sapa taḥ haranmu samana| saṁ hyaṁ manik kapus· jñana haranku samana| dumunu ri saṁ hyaṁ {*ḍu} 
+
+
+<pb n="12v"/>
+<lb n="12v1"/><gap reason="lost" extent="unknown" unit="character"/>n ucapan ṣi yen aṅin· ta makana rika guru| tuhu bimma duruṁ ta kami lah-alaha| bimma dada:<space type="binding-hole"/>lan i svaṙggan· tuṅgal· guru haḥlaḥ siḥ ko bimma tuṅgul· popira denta guru| bimma hana dalan· mari svaṙgga| hana dalan mari kavaḥ hi
+<lb n="12v2"/><gap reason="lost" extent="unknown" unit="character"/>na tlu siḥ harani maṙga harane| papat· {ui ta} catuṙmaṙga lahane yen· vovolu hasthamaṙga| la<space type="binding-hole"/>h arane| hapa dumehe tutən· saviji hatute| kadalan mariṅ ayu| Ika ta Inkayasan kapagiḥ kasuralaya| tan maka rika guru tuhu bi
+<lb n="12v3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>p daḥ| bimma galihiṅ kamal· sasiku davanya sadyaragnanya| cəpani hdi {ui da}{ui va} bo<space type="binding-hole"/>kole lavan tutuṅe| ye/n·\ kacəpan paṅanti ri svaṙggan· bapamu si paṇḍu| guru tan· kna tan paga-paga kaṁṅ aku| saṁ hyaṁ ratyə| sara
+<lb n="12v4"/><gap reason="lost" extent="unknown" unit="character"/>yəsaranira| sa hya toka guliṅ aranira| saṁ hyaṁ tuṁtuṁ buvaṇna haranira| kun kamuḍanku dak ta ⌈<space type="binding-hole"/>lenane si siṅ añotti kaboṁle| kaṅ aḍaṁṅan· nika tuṁtuṁṅe| nimitani manusa| binotan ṣiṅit iṁ manaḥ| paduka baṭara si
+
+
+<pb n="13r"/>
+<lb n="13r1"/><gap reason="lost" extent="unknown" unit="character"/>vata| nadya sagunanmu| masavəruḥ hamulan malaniṅ aji| masapaḍaha lavan· dev{*ə)a| hapa<space type="binding-hole"/>n i manusa kaviseśa deni bhaṭara| ma/ka\di jagata kabeḥ| makadi havakki manusa| manuvoṅ hupa(m)a yen avakk i manusa| hapa pva guru|
+<lb n="13r2"/><gap reason="lost" extent="unknown" unit="character"/>duk (ku)na havak i musa| kaden aji haku| Isvara| Isora| brahma rudra ma{*ve}saṁ<space type="binding-hole"/>kara| visnu sambhu sivaḥ| sapa Ika haku Ika| kaliṅane haku viseśa| hurip i manusa| mavak· guru| Ado pinaka:havaki saṁ vr̥koda 
+<lb n="13r3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>ghn(i)ku| denta| bimma murub havak·ta| denta kaL̥viḥhakə{*ka}n· havakta murub· bi<space type="binding-hole"/>mma paran· sakane hamaḍanana sununya saṁ hyaṁṅ aditya| kaṅ apa{*ma}ḍa| yen urub iṅ apuy ṣagunuṅa tann asora saṁ hyaṁ sivaḥditya| guru ⌈
+<lb n="13r4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>bimma hapaṅanti ya ri svaṙgga(mu) bapamu si paṇḍu| guru halaṅən haḍaṅiya ri vṅi ha<space type="binding-hole"/>paḍaṁ ri vṅi makadi ri rahinna| saṁ hyaṁ sivaḥditya kinaL̥viḥhakən· haṅapa taṅ duk ṣapu tan· mega sada suR̥ṁ ṣumunu saṁ hyaṁ sivaḥ
+
+
+<pb n="13v"/>
+<lb n="13v1"/><gap reason="lost" extent="unknown" unit="character"/>deva| bimma| havulus· ko hahulu cumbhu| hamamaḍa devatha| guru dak varaḥ §<space type="binding-hole"/> ta kita| paran ṣakane hababatənna| kavruhi kita| paran ṣi katəmone hujaṙ /ka\mana| do meta hasrəṅ(ga) meta ḍaṙ
+<lb n="13v2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>manusan kaṁṅ aR̥p· {ui ka}(ui ṅa}havruha ri kita| hunivaḥ kaṅ aR̥p· havru sahana<space type="binding-hole"/>ni buvaṇna| hana pva kaṁ tan· vruh amuja hananapuha| hababatənna| habrataha| hamanta ya tan agave hapuja bantən· sahugva
+<lb n="13v3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="5" unit="character"/>brata| hapan· ri manusa vatək pujabratha| hasamadi| kamuḍa kapo və<space type="binding-hole"/>ruḥ mulanmu lan tatan agavok·ki pujabratha| samadi ha lama si kavəruhaḥ hapa {*da}kavruḥ kata| havruku mavru tutanmu| hapa du
+<lb n="13v4"/><gap reason="lost" extent="unknown" unit="character"/>(ha)samadi ya| hapan mayo-mayo kapala denne havəruḥ ri kamulanmu lan ta <space type="binding-hole"/> yenn aku vəruḥ| laḥ sapa taḥ ka kanan banthəna kita guru| hapan vru kamulanmu lan i devata| // hapa ri kahidhəp·mu ri
+
+
+<pb n="14r"/>
+<lb n="14r1"/><gap reason="lost" extent="unknown" unit="character"/>bhaṭara bayu| tataline pustakanku saṁ hyaṁ sutagi manik· pustakanku sarinku<space type="binding-hole"/>| kalimmahosada ri Idhəpta| masiḥ saṁ hyaṁ masambhu devatane sastranku| hamaca| Om̐ gmətaṇna pati| mantra niṅ ana len i pustaka Om̐
+<lb n="14r2"/><gap reason="lost" extent="unknown" unit="character"/>rosoti vite hatinku saṁ hyaṁ vr̥ka tṅa/ḥ\he hatinku| saṁ hyaṁ soro⌈<space type="binding-hole"/>soti pucuke hatinku| saṁ hyaṁ sorosoti hode lidhaḥku| // paranimitane kaṁ pustaka| haL̥buṙ pusta
+<lb n="14r3"/><gap reason="lost" extent="unknown" unit="character"/>jagat· haku vr̥kodara| havak apuya haku bayuputra| haku havakk a<space type="binding-hole"/>ṅin· haku bimma havak· L̥ba| punaḥ bratanku riṁ jagat· hapadomeḥ pataka hahaṁL̥buṙ kaṁ pustaka| laḥ guru| // hadika
+<lb n="14r4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="6" unit="character"/>meḥ kuminkina| hamet patyani bhaṭara: havuru dene<space type="binding-hole"/>| kagunanmu| havuru dene kabisanma| havulaṅunya ranma dumeḥ taḥ ha{*bha} katonta|  tan pabatən· tan pasaṅgaṙ dro
+
+
+<pb n="14v"/>
+<lb n="14v1"/><gap reason="lost" extent="unknown" unit="character"/>gi| ṭaṭan agtəḥ| tata dadana riṅ otot·| papa baba mari balu| <space type="binding-hole"/>| yar alavah adon-adoni sarira| saśaha ri sumpum· hatut iku bimma| Akṣara tuva həndi gone pva bimma həndi gone denta
+<lb n="14v2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/>| R̥ R̥ ri ku(pi)| L̥ L̥ riṅ iru| E E ri lambhe| O O riṁ caṅkəm· A A ri§<space type="binding-hole"/>ṅ akəlakan· laḥ manava dudu guru hatut iku bimma| Avighna ri vṅi {ui ma}{ui sta} vtəta| mastu sabdaku| nama hurapku| sidhəm· ri {*ra}patinku| laḥ manavi §
+<lb n="14v3"/><gap reason="lost" extent="unknown" unit="character"/>kabeḥ bimma| dak daliḥ tann aR̥p· varaḥku kita guru // A A bapaku| I I I§<space type="binding-hole"/>buku| Om̐ {ui ba}Avighna hidhəpku| mastu ri sabdaku| sidəm· ri gūlunku| ka ka ga ga ṅa bya{ui ka}{ui la}{ui ta}{ui ka}hu tṅə| ca ca ja ja ña bahuku kiva| ta§
+<lb n="14v4"/><gap reason="lost" extent="unknown" unit="character"/>da da ṇa sihu kiva| pa pa ba ba ma{ui ra}la{*ma}{ui ma}mbhu(ṁ)ku {*na}ri pusəṙku| yar ala<space type="binding-hole"/>va muṁṅguḥ suku| saṁ hyaṁ śvarasati ri saśtranku| bhaṭara Indra mathane satraku| pada kita guru sadasivaḥ pustaka|
+
+
+<pb n="15r"/>
+<lb n="15r1"/><gap reason="lost" extent="unknown" unit="character"/>ka pustaka hana ri rahinku| hana len ika pustaka hana ri taṅanku| mantraniṅ amaca pustaka <space type="binding-hole"/> yen amaca| Om̐ hana manik ṣaka lapa| murub aṅabaṙr-abaṙ pinakateja vaṙṇnaniṅ ulun· vaṁkava havakiṅ ulun· hapann aku saṁ hyaṁ manik· 
+<lb n="15r2"/><gap reason="lost" extent="unknown" unit="character"/>ma tan ana| bapa Ibuku tan ana| sanakku kabeḥ tan ana| sapva po hana samana| haku ḍa<space type="binding-hole"/>vakana samana| hapananku saṁ hyaṁ hanuku rat· haku saṁ hyaṁ manik kamaseśa| sa ba ta I| laḥ maniḥ bimma| yudhisṭira manik agṅa| haṙjuṇna
+<lb n="15r3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>va pinakapapan· hatulis· pustaka| saṁ hya ḍaṙmma kaṅ amaca| hapustaka hyaṁ baga<space type="binding-hole"/>van· citragotra| laḥ dudu rika| tuhu bimma| matani sastra bimma| bhaṭa:ra Indra| ka ka ga ga ṅa| bhaṭa:ra Isvara| ca ca jña ja ña bhaṭara
+<lb n="15r4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="6" unit="character"/>bhaṭara mahadeva| ṭa ḍa dha ṇna bhaṭara sivaḥ| pa pha ba ba ma bhaṭara visnu| ya <space type="binding-hole"/> ra la va bhaṭara gaṇna| sa sa ha bhaṭara basuki| pada kita {ui ka}bhaṭa:ra guru| // həndi gone dok· kaṅ avak·ta|
+
+
+<pb n="15v"/>
+<lb n="15v1"/><gap reason="lost" extent="unknown" unit="character"/>bhaṭa b(r)ah(ma)| paL̥tik· bhaṭa:ra (r)udra| Urubi ghni bhaṭa:ra madeva| vavakanika bhaṭa:ra saṁkara<space type="binding-hole"/>| AR̥ṁṅeka bhaṭa:ra visnu| kəmbhaṁṅ ivu bhaṭa:ra sambhu| havunika bhaṭa:ra sivaḥ| siraḥni kukus kita bhaṭa:ra guru| haṅapa kaliṅane
+<lb n="15v2"/><gap reason="lost" extent="unknown" unit="character"/>ṅan· har{*e}ane| dudu rika guru hatut iku bimma| // Amaca po ga{*ga}na<space type="binding-hole"/>l· satata siḥ bisa| haṅapva bimma| haḥ sukmane dak vacane| sukmane hapa bimma| kukuse dak vane mokono bimma| laḥ vaca dak· ru
+<lb n="15v3"/><gap reason="lost" extent="unknown" unit="character"/>| ka ka ga ga ṅa putiḥ kukus nika ca ca ja ja ña ḍa Abaṁ kukus nika| ṭa ṭa dha dha na IR̥ṁ <space type="binding-hole"/> kukus nika| ta ta da da ṇna kuni kukus nika| pa pha ba ba ma sivaḥ kukus nika| ya ra la va ha miṇḍa goṁyoṁ kukus nika| laḥ du§
+<lb n="15v4"/><gap reason="lost" extent="unknown" unit="character"/>ka bimma| // vnaṁ (ta) (kva) L̥bura pustaka| haṅapa tan· vnaṅa hapan aku vru kamulani§ <space type="binding-hole"/> sastra| hapann ana ri {ui ra}sariran·ku kabeḥ| laḥ yen tuhu harani| ri sariranta: kabeḥ kami haruṅokəṇna bimma| // {ui ba}{ui ba} §
+<pb n="16r"/>
+<lb n="16r1"/><gap reason="lost" extent="unknown" unit="character"/>rika panuliḥ tanu rika maṁsi| // paran· kaṁ ginave maṁsi guru| bimma kukus i lṅa <space type="binding-hole"/> dilaḥ| ginave ginasa riṁ lavaka tambhaga| jinuran· laṇḍani kəpuḥ| vinoṙ kala riṅ ulig· L̥ṅa ri pamaṁsen· ya maṁsi ṅaranya|
+<lb n="16r2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="4" unit="character"/>riṅ agave| kaṁ pustaka| <gap reason="illegible" quantity="2" unit="character"/>sapa ta kaṅ agave guru haku bimma| sapa ta kaṅ amaca <space type="binding-hole"/> {ui ma}{ui na}{ui ra}bimma| haḥ dak ṣə/guḥ\ siḥ ta manusa kaṁṅ agave| manusa huga kaṅ agave Iku| kaliṅane mijil· sakiṅ aṇḍaṅan· vtuniṅ apa sarira ye
+<lb n="16r3"/><gap reason="lost" extent="unknown" unit="character"/>na| {*na}sarira rova(ṁ)nya| viyandadak· viyadomokatyam· knehəm· vudḍi vi<space type="binding-hole"/>cakṣaranəm· @ kaliṅane sarira juga rovaṁṅ i vidadagda| haL̥n pinara pitlu| hagave (ha)gama| pitovi bikaṁ pusthaka|
+<lb n="16r4"/><gap reason="lost" extent="unknown" unit="character"/>ma saka sunya| hamaṙṇna havaknya| jəg ṣakiṅ a/ka\sa| bəl ṣiki pr̥thivi| hamaṙṇna vaknya| vina<space type="binding-hole"/>lik avak amanusan· haḥ tuhu yen anom· paṁṅavru ta guru| haṅviti tuvani putri| hanom· make ta pajaṙ kr̥reku| //
+
+
+<pb n="16v"/>
+<lb n="16v1"/><gap reason="lost" extent="unknown" unit="character"/>vasam· hikəm pok·sanabanəm· kadi vaki teka| kaliṅanya| ya ta kaṅ atapa| tan paḥ{SH]ripriya kavi ñumana| ya pajaṙrakən· pva kaṁ tan astiti| naga taḥ bava pustaka| make taḥ padaṙrakən· riṁ sabda ka singuḥ pustakajati| // bimma pa
+<lb n="16v2"/><gap reason="lost" extent="unknown" unit="character"/>ka pusta(/ka\) yen· kita vəruḥ| Iku saṁ driya ñumana| hane kita \ta/n· bru| // dak varaḥ taḥ kita bhaṭa:ra guru| <space type="binding-hole"/> kasinənguḥ pustakajati| hapa ta taliṅaniṁ buvaṇna| yeka taḥ kasinəṅguḥ pustakajati kaṁ lviḥ vtune make| sakiṁ sabda tuhu ta linəbuṙ budi|
+<lb n="16v3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="2" unit="character"/>R̥po (ki)(ta) haruṅaha pamacaku| bhaṭa:ra guru laḥ vaca bimma| yen ataḥ <space type="binding-hole"/> dak vacane R̥p pinupulakən kapustaka| ya taḥ pinusus taṁ pustaka| kumu(ku)s dadiy api| haṅapa katon deta guru| // ḍuḥ de
+<lb n="16v4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="5" unit="character"/>| kapuhan·n a(k)u bimma| vani {*go}haL̥buṙ kapustaka| tan katamahan· ⌈<space type="binding-hole"/>roga| guru mako sivaḥghni harane haṅapa kaliṅane bimma| guru yen kukus ni bhaṭa:ra Isvara| lalatu bhaṭa:ra Isora|  
+
+
+<pb n="17r"/>
+<lb n="17r1"/><gap reason="lost" extent="unknown" unit="character"/>raṇa jotihas· hana kuṭa manava| samuṙdaya // dak varaḥ ta kita bimma| yenn aji saṁ <space type="binding-hole"/> hyaṁ pavak· kaṁ kago rika| toka ri den ana gopəl-apəl ahalu-halu| haprabava harasa kavinan· sivaṁgama (tha):kogamma| saṁ hyaṁ
+<lb n="17r2"/><gap reason="lost" extent="unknown" unit="character"/>la| tatvamaṅgala| muktimaṅgala| (ca)tuṙmareda| dasaśila| putus pamutus·| dasava<space type="binding-hole"/>nigita| kəL̥m· vtu kəras· kərab· mayapati| lavan pati-pati| kaṁ kinaL̥viḥhakən· kabeḥ deniṅ adidaṙmma| nimitani janma tuṅga
+<lb n="17r3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="5" unit="character"/>pa(ci)ma hutara madya| ghneya| nariti habya-bya| saṙnya| sa hya ḍaṙmma de {*⌈}pat· ñu<space type="binding-hole"/>mana| makapayuṅ i kapanasan· maṅkatikəniṅ aluyun· ka pustaka IR̥ṁṅ iku // guru mne kita dak takeni| paran· ri kamitane rika 
+<lb n="17r4"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>R̥ṅ i(ku)| madane kinaL̥vihakən para kaṁ ginave kaṁ pustaka IR̥ṁṅ iku| // bimma dak varaḥ taḥ <space type="binding-hole"/> kita mulane ka pustaka IR̥ṅ iku| roniṁ gbəṁ pinuk pinadha-padha davane lavan· lone| ya ta tinisan gaṅga viran tha
+
+
+<pb n="17v"/>
+<lb n="17v1"/><gap reason="lost" extent="unknown" unit="character"/>nvra ri maṙgganipun· yen ma(ṅ)giḥ svaṙgga // guru həndi pva hujaṙ makana| hana voṅ atuva muṇḍa<space type="binding-hole"/>| kalaṅiya deniṅ a(na)k ṣaśtra I katəvasipun anakk-anak· rajaputra sakti vani| Añakravani ri kasakti| saka (b)ummi prakəmpasu
+<lb n="17v2"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="7" unit="character"/>ṅane sasaṅka ri vulan· bumi ri lməḥ| prakasa kaliṅane sabdamu| Esi hujaṙmu| <space type="binding-hole"/> voṁṅ atuvan mamudha| kaliṅa de{*ka}niṅ anak ṣastra| Esaḥ bimma kadi haku guṇnamu| yen· ko haR̥ha guguruha {*va}rika de 
+<lb n="17v3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="3" unit="character"/>denta h(ə)ndi pva denta maca kaṁṅ iku| hapaṅanti ya I svaṙggan· bapamu| R̥p ṣi<space type="binding-hole"/>nandhu kaṁ pustaka| haḥ tambru hamaca haku guru| Udhuḥ bimma kapuhunn aku demu saṇḍiṁ ka pustaka| tan katamah ala rogha hupa
+<lb n="17v4"/><gap reason="lost" extent="unknown" unit="character"/>mpa ka pustaka| Apan· niku sa hya dhaṙmma hisine kabeḥ| hana hupama| ha krama| ha<space type="binding-hole"/>na saloka| hana rakva hana hagama| Adigama| vahana lagiman·| hana prapita| prakamyana| hana visitoha prabato|
+
+
+<pb n="18r"/>
+<lb n="18r1"/><gap reason="lost" extent="unknown" unit="character"/>ja| padhaṁ| bu haraniṅ akaṣa| sira taḥ haran· saṁ hyaṁ candusakti| sa hyaṁ jatinityakṣa| ku <space type="binding-hole"/> pva rana buntat· bu harani pr̥thivi| sira saṁ hyaṁ titij{*ə}atipraliṇna| haranira| tan maka rika kuru tuhu bimma| // laḥ sapa maniḥ
+<lb n="18r2"/><gap reason="lost" extent="unknown" unit="character"/>(bi)mma| saṁ hyaṁ taya saṁ hyaṁ veya saṁ hyaṁ Ila-Ila| harani ta kabheḥ bimma saṁ hyaṁ <space type="binding-hole"/> candusakti| saṁ hyaṁ na(la)vaya|  saṁ hya nila/sa\kudhya| saṁ hyaṁ titijatipraliṇna niṙroga niṙrupadrava // bimma manava ta kadi haku
+<lb n="18r3"/><gap reason="lost" extent="unknown" unit="character"/>hlabavaha L̥maḥ| hajala hagtiḥ| havak ka guṇuṁ| Aja L̥maḥ havak· bañu| <space type="binding-hole"/> sagənahe yen trimuṙti havak ayi| ha bayusara havakk aṅin· ha suṙyya tripatra havak ṣaṅeṅe| Asi ka trimuṙtin· vak· (hu)
+<lb n="18r4"/><gap reason="lost" extent="unknown" unit="character"/>niveḥ haduradrasana: handaradasiḥ| durakarana| durasaṙvyaṅdaṇna| trupamo⌈<space type="binding-hole"/>ne jagat· pnaṅa| trabramagaha| hadr̥saśada sasakilan ṣakiṁ pr̥thivi| gagaṇna ta rasa /dhə\gdilan ṣaki pr̥thivi| hamada pahata|
+
+
+<pb n="18v"/>
+<lb n="18v1"/><gap reason="lost" extent="unknown" unit="character"/>(yu)| hañjalatun·dha hatampukan· mega| hadr̥s atampakan·n aṅin· vna bapa<space type="binding-hole"/>mu hamoṙ lavan· devata| tan patigala raga ri madyapada| // Adhoh agambhara paṅucapta baṭa:ra guru| hapan·n iku
+<lb n="18v2"/><gap reason="lost" extent="unknown" unit="character"/>(j)əṅan· manusa tan amavasakən· bimma pan· nora guru} paranmi tan i sinəṅguḥ dora| ha<space type="binding-hole"/>pan kita hadampa sarirani manusa| Iku muṅa(kna) tapa| yen·n oleḥ sayuga lupat iṅ aṅel aṅliḥ| holiḥ roṁ yu§
+<lb n="18v3"/><gap reason="lost" extent="unknown" unit="character"/><gap reason="illegible" quantity="1" unit="character"/>roga| holiḥ tlu yuga| luput i tuva pati| holiḥ pataṁ yuga| vna mati vna<space type="binding-hole"/>ṅ urip· ho{ui ha}lih lima yug{*u}a| tərus panone ri jagat· holiḥ nəm yuga| Adhaṁṅann avakkedi kapuk· gənəp{*ə}· pitu yuga
+<lb n="18v4"/><gap reason="lost" extent="unknown" unit="character"/>hamo(ṙ) ri devattha tan pati{*śa)gala raga ri madyapada| para taḥ ni patane ye§<space type="binding-hole"/>na tan·naha manusa kumavasakən· // pun paṇḍu hantiyanta muṇḍanipun· hapan· rare satpəpak· hupamanipun· ya(k)·
+
+
+<pb n="19r"/> <fw place="left" n="19r">6</fw>
+<lb n="19r1"/>| paduka bhaṭa:ra nabi<gap reason="illegible" quantity="3" unit="character"/>nanika kanam(·)va| sa voṁṅ aranira| samana bhaṭa:ra| pakoliḥ tan kinavruha<space type="binding-hole"/>n· tan· bedi ma(th)a| kalavann arupa rare ri sova| laḥ sapa basinni nini| kna ki kaki| harupa jajaka| // Om̐ Avighnamastu
+<lb n="19r2"/>ṇama sidhəm·// hajro bimma mati si yamma denta| vru bhimma panmu saparane babumu| mataṅe guru§<space type="binding-hole"/>hani sakeṁ deva tan· bas·mi buta saparane bapanmu| si paṇḍu| sapa hibunta si kunti| hajro bimma yen mataṅya(ḥ) L̥yə
+<lb n="19r3"/>p(·) maṅucap·<gap reason="illegible" quantity="1" unit="character"/>ni da(dh)i| hd(i) t(a) gonmu| <gap reason="illegible" quantity="2" unit="character"/>ra panon riptha sa hyaṁ tanatva yamma| mevəḥ taṁ demu <space type="binding-hole"/> hucap· bapamu si paṇḍu Ibumu si kunti| tan vru ke yen panilihana| talaga paṇcuran· maṙgganmu gumlar i ja/ga\/t·\
+<lb n="19r4"/>| Ade da maran tagane| parane hamumuṅgu <gap reason="illegible" quantity="2" unit="character"/>ta guru| hareki| // han·tiyantya hujaṙ§<space type="binding-hole"/>ta| maṙhujar antya bhaṭara| haku habcik· yen· binəcikan· hala yann iṅalan· dak· varaḥ taḥ kita ba§
+
+
+<pb n="19v"/>
+<lb n="19v1"/>(dha)puri mahapadma get· ri v(ṅ)i| parak apati| <gap reason="illegible" quantity="1" unit="character"/>nasina ka hurip· hakaśa pinakasiraḥ| madya pinakahavak·<space type="binding-hole"/>| pr̥thivi pinakasuku| saṅeṅe vu{ui la}lan· lintaṁ| pinakamata| ni jagat· kabeḥ| kilat pinakakəyep· gərəḥ pinakasabda| 
+<lb n="19v2"/><gap reason="illegible" quantity="1" unit="character"/>ṅi pinakahambhukan· saṅeṅe vulan· pinaka<gap reason="illegible" quantity="1" unit="character"/>pat· pila-pilu| kaṁṅ aveḥ rare| kosika buta| gaṙ<space type="binding-hole"/>ga macan· metri hula| kurusya vuhaya| tiga yaḥ| matayaḥ| hariya| tigaya| h{*⌈}une guru| sakeḥhi masasaki ba vlu| sa
+<lb n="19v3"/>keṅ ariy-ari| matayu(ḥ) kekeṁ mtu saki (ba)(bu)(ku) taḥ guru| hampəkmi jagat· kabeḥ| hiku vtune <space type="binding-hole"/> dak varaḥ kita guru| keməṅan· {*ra}rara guru| R̥p da yeki ba/va\nira| trignak modara pva rupa kabeḥ rupanira| maniḥ pva b(i)§
+<lb n="19v4"/>mma hdi pva(ne) duk· siṅidan·na ri kita| bhaṭa:ra tuhu ta kita hasiṅidan· niṅ aku| laḥ tuhu hdi <space type="binding-hole"/> taḥ gonku| lavan ṣapa haranku| yen pva vəruḥ| yen vəruḥ parantaḥ kaR̥pta bhaṭa:ra| laḥ paṅantiya ri madya si paṇḍu|
+
+
+<pb n="20r"/> <fw place="left" n="20r">5</fw>
+<lb n="20r1"/>ganipun ṣaṁka| vahananipun kuda<gap reason="illegible" quantity="3" unit="character"/>nikkipunn avaṁ ratna| sḍahanipun tan ṣaḥ vahaṅi| tan pasubaya kaha§<space type="binding-hole"/>lapu| pva kulun· lavan pr̥bu vanipun· ṭaṭit· pukulun· {*n}yen ambi(L̥)n· laḥ hdi taḥ hujaṙ ta guru| vruh aku y{*o)en moko
+<lb n="20r2"/>no kapo| // (svaṙ)(gga) ri madya mani(ḥ) kita halapa bimma kaṁṅ asañjata padma| sabdanipun· hataL̥<space type="binding-hole"/>b · yen amantra| Om̐ yaṁ| pr̥bavane guntuṙ| sḍahane saṙvva(ḍa)tu| hadr̥ve karaton· bhaṭa:ra sivaḥ manik· {*ke}komala hintən· tutu
+<lb n="20r3"/>ṅgaṅane vilana| bhaṭa:ri savistri| hamoṅa ti tapangu| yen tan aveḥ siḥ bhaṭa:ra savistri guru| laḥ paḍa<space type="binding-hole"/>ṅ ucap-uca{*ṅa}p· lavan· devata {ui ha}ki kabeḥ| kəmbhuli taḥ haku guru| tatyana danaṅ ucap-ucap· yen tan ana vru la taḥ piraṅ a§
+<lb n="20r4"/>yen avdiha piraṅ asiy mami mati ya denku guru| hapan ṣi yamma saṁkanku mati| mati pado<space type="binding-hole"/>sa hagave halahireku| hagave suḥ duka dalu| ghne dosanya hika guru| yen vija saṁ hyaṁ voṅavari| //
+
+
+<pb n="20v"/>
+<lb n="20v1"/>tī sañjatanipun· {ui ka}trisula| mani/k·\ kəṇḍi| (R̥)ke makadr̥vehanipun ṣampun{*ə) ṣinaṅakən· guru paran ṣa§<space type="binding-hole"/>kane mokono| bimma pamiliḥ hi svaṙgga maniḥ| laḥ sakaR̥pta guru| hi ya pamiliḥ maniḥ| // laḥ svaṙgga ri patala svaṙ
+<lb n="20v2"/>gga hane bapanku| sapa kaṅ adr̥ve guru| bimma bhaṭa:ra basuki kaṁ dr̥ve bhaṭa:ri pr̥thivi| sabdane haṅə<space type="binding-hole"/>səs· yen·n amantra| Om̐ baṁ| pr̥bane barat· sañjatane gada| pa(bh)inane baḍava jənaṙ| manikke tigas· sḍahane habaḥ-habuḥ I
+<lb n="20v3"/>ṅadaṁ| haja milu hi ya pr̥thivi| pukulun· sabdanipun manukuliha{ui ka}| siḥ giḥ pukulun· yen pun bima ka<space type="binding-hole"/>ri ya R̥ke panarantaḥ habaḥ-habaḥhe bapanku guru| tuhu jaṙta bimma haku vəruḥ bimma // svaṙgga haluhuṙ maniḥ svaṙggane sa
+<lb n="20v4"/>ṅ aditya hapan· vəruḥ haku yenn atuta| haja bimma haveḥ dak varaḥhe| hdi siḥ kita varaḥha guru| ra<space type="binding-hole"/>ditya svaṙgganta dak· vehakən ṣi bimma pukulun· sabdanipun manukul·| hakthak· R̥ke pukulun· yen ana mantra| Om̐ ru| sañja
+
+
+<pb n="21r"/>
+<lb n="21r1"/>rudra haka<gap reason="illegible" quantity="1" unit="character"/>tujuhaka<gap reason="illegible" quantity="3" unit="character"/>guru| haveḥ hi ya hika guru| tan bruḥhi haku bimma| laḥ varaḥ siḥ denta<space type="binding-hole"/>| rudra svaṙgganta si bimma haR̥p maṅalapa| haveḥ kat<gap reason="lost" quantity="17" unit="character"/>ṭa:ri si vlas· hapan asa
+<lb n="21r2"/>bdanipun asiḥ siḥ yen amantra| Om̐ ma| sḍəhipun· (do)dot· saka kidul· manikkipun pu(ca)ṅan· kusvara| <space type="binding-hole"/> (ga)| vahananipun· gajaḥ habaṁ| gudaṙba| sañjatanipun makṣalu| pr̥bavan(i)pun gumuruḥ| sampun milu R̥ko rudra paranta rovaṅa
+<lb n="21r3"/>ne svaṙgganta| bimma tuhu Iku pala(ḥ)ku denta guru kita bisa haḥ haja bimma mapetaniḥ kaR̥pta svaṙ<space type="binding-hole"/>ggan· // haṇna svaṙgga loṙ kulon· kato(ṇ)a hijo kadi godho gḍa| sahalas aguṁ| hahijo hakuli
+<lb n="21r4"/>mmasa kadi ro li(mu)s· paka<gap reason="illegible" quantity="2" unit="character"/>dr̥veha ka guru| hiṅ əndi hane hika bhaṭa:ra guru| riṅ a§<space type="binding-hole"/>bya-habya harane Iku bimma| svaṙggane bhaṭa:ra saṅkara hika rane| guru hiku duk kalape yen aveḥ kaṅ ad(u)ve
+
+
+<pb n="21v"/>
+<lb n="21v1"/>svaṙgga hika| tan braha<gap reason="illegible" quantity="2" unit="character"/>ma (ye)(n) aveh· laḥ takoni siḥ denta guru| saṁkara suka kita si bimma haṅa<space type="binding-hole"/>lapa svaṙgganta| sakara suka pukulun· tanaya bhaṭa:ra pun baṭa:ri kinanṭi tapasuṁ| sabdanipun asiḥ siḥ| yen kala mantra| Om̐ siṁ| sañja
+<lb n="21v2"/>tanipun·n akus· vahananipun (ṣi)ṅa| sḍahanipu dodot· saka loṙ| manikkipu{ui na}n tən· ga (ma)s· <space type="binding-hole"/> pr̥bavanipun lisus· paran{*ta}·ta samane bapanku hika guru| // bimma pamilaḥ maniḥ svaṙgga| laḥ riṅ eṙsanya| pada hika
+<lb n="21v3"/>guru dak ka<gap reason="illegible" quantity="2" unit="character"/>(ve)haka sapa kaṅ adr̥ve svaṙgga hika guru| bhaṭa;ra sambhu hikaṅ adr̥ve hika bi<space type="binding-hole"/>mma kaṅ abiru kadi kəmbhaṅ i veveyan· sarupa kadi gunu| nila habir(u) samanaḥ ta riṅ akaśa| bimma hi ya b(u)ka halap·
+<lb n="21v4"/>denta| (U)ḥ tan a(ru)mi siḥ haku guru| sambhu svaṙgganta dak vehakən ṣi bimma hi ya| kaya puna<space type="binding-hole"/>paha pvakulun· pun· bhaṭa:ri tigasakti| tan pasaṁha<gap reason="illegible" quantity="16" unit="character"/>|paṅivanipun pa<gap reason="illegible" quantity="1" unit="character"/>
+
+
+<pb n="22r"/> <fw place="left" n="22r">2</fw>
+<lb n="22r1"/>ku guru paran ṣamine| bimma paslan·-slana hane svaṙgga| bhaṭa:ra hisora kaṅ adr̥ve svaṙggan· laḥ svaṙgga ha<space type="binding-hole"/>ne bapaku hika| bimma sakaR̥pta ye makana| kaR̥pta| laḥ varaḥ siḥ kaṁṅ adr̥ve svaṙgga hi/ka\ guru| mahisora tanayan· bhaṭa:ra puku
+<lb n="22r2"/>lun· svaṙgganta R̥kva makasvaṙgga hane s(i) paṇḍu| <gap reason="illegible" quantity="3" unit="character"/>nya| yan aduve ya kevuḥ| tanaya bhaṭa:ra| pukulun pun a§<space type="binding-hole"/>manavi pun· bhaṭa:ri kun·dhaṁ kasiḥ| harrummiḥ sabdanipun·| sabdanipun haṅob· yen matra| Om̐ na| sañjatanipun pakuṇḍa| sḍaha
+<lb n="22r3"/>nipu g(ə)ṇḍi| manikipun gamutra| sampun iṅ a<gap reason="illegible" quantity="3" unit="character"/> tuṅgaṅanipun macan· pr̥bavane hudan aguṁ| ka<space type="binding-hole"/>mbhila kabeḥ kakalaḥ sampun iṅalap· R̥ke| mmahisora bapa| paran· rehane bhaṭa:ra guru ki matuta| bimma paṅulati svaṙgga
+<lb n="22r4"/>maniḥ svaṙgga hane si paṇḍu // laḥ sapa kaṅ adr̥ve svaṙgga kidul kilvan ika| kaṅ abaṁ haIR̥ṅ· ra⌈<space type="binding-hole"/>gevaṙṇnane| katon kadi vanaraṅ tə| si gunu| həndi harane hika g(u)r(u)| bimma ri nariti daśanamane svaṙggane bhaṭa:ra 
+
+
+<pb n="22v"/> 
+<lb n="22v1"/>hiR̥ halaṙ riṅ kumbhaṁ katon ṣaprayojñana den(ta) guru| həndi dasanamane hiku guru| bimma riṅ utapa<space type="binding-hole"/>da riṅ visnu bavaṇna| svaṙggane baṭa:ra visṇu| laḥ hika dak ka<gap reason="illegible" quantity="1" unit="character"/>denku| <gap reason="illegible" quantity="2" unit="character"/>budiyane yen ki haR̥p bimma| dak varaḥ ⌈
+<lb n="22v2"/>ha kaṅ adr̥ve svaṙgga| laḥ siḥ varaḥ denta| (bha)(ṭa:)(ra) visnu svaṙgganta si bimma R̥kva haṅalapa| have ki§<space type="binding-hole"/>ta hi ya si visnu| siṅgih aranipun·n aṅi(v)i)nətan pun baṭa:ri śri| manavi tan asuṁ| naṅi sabdanipun amgəḥ| lamonn aṅn asulupa|
+<lb n="22v3"/>yen amantra| Om̐ ha| sañjatanipun· cakra| sḍahanipun· vivarani manik· si punele| tutuṅga ruṇḍa<space type="binding-hole"/>| pr̥bavanipun· pəpət(ə)| sampun iṅalap· denipun· bhaṭa:ra visnu parantaḥ patutane| svaṙgga tatan atuta| pr̥bavane§
+<lb n="22v4"/>lavan· paṇḍavaraneva <gap reason="illegible" quantity="3" unit="character"/>| guru tan maka ri kalaḥ bimma pamiliḥ maniḥ svaṙgga| // guru <space type="binding-hole"/> svaṙgga vetan· kidul iku maniḥ| dak kalape hiku| katon kadi kəmbhaṁ pupulutan daduṁ| satgal aguṁ| katon macaṙ den·
+
+
+<pb n="23r"/> 
+<lb n="23r1"/><gap reason="lost" quantity="1" unit="character"/>katon macaṙ kadi /ma\s ṣinəpuhan·| hakuni kadi sanandiṅan dita| katon kadi kəmbhaṁ kanigara| hanə<space type="binding-hole"/>ṇḍə| satamana rupanira| paran ṣamitane harane hika guru| ri pacimmapada| harane Ika bimma| svaggane bhaṭa:ra maha⌈
+<lb n="23r2"/><gap reason="lost" quantity="2" unit="character"/>ka| guru hika svaṙgga hane bapa paṇḍu| sakaR̥pva bimma na hi dak varahe kaṅ adr̥⌈<space type="binding-hole"/>ve| svaṙgganta R̥kva makasvaṙgga hane si paṇḍu| denku tut pañcavarane həpon·| laḥ pukulun hamitvana ya baṭara| da
+<lb n="23r3"/><gap reason="illegible" quantity="1" unit="character"/>sabda hatinipun· bhaṭa:ri dana<gap reason="illegible" quantity="2" unit="character"/>haṇḍaganipun· nagapakṣaḥ| manava tapasuṁ<space type="binding-hole"/>hapun ṣabdanipun· havahin· vaṇcinipu yen matra| Om̐ ta| hana taḥ sḍahanipun· hməs· pasavidare| pr̥bavani
+ <lb n="23r4"/>pu liṇḍ(u)| t(u)t(u)ṅgaṅanipun mərak·| sampun (i)ṅam·bil· tan·n asuṁ| paran haraneku guru ta<space type="binding-hole"/>n·n aveh arane hiku bimma| pamiliḥ hi maniḥ svaṙgga hane si paṇḍ(u)| // sapa dr̥ve svaṙgga həloṙ ha
+
+
+<pb n="23v"/> 
+<lb n="23v1"/>hasvara tan paveh arane| paran pañcavarane bab(u)nku| t(u)matapada| // bimma pamiliḥ maniḥ svagga <space type="binding-hole"/> hane si paṇḍu| sapa taḥ had(u)ve svaṙgga katon·n abaṁ kidul kadi gunuṁṅ apuy· katon kadi kəmbhaṁ palasaḥ hanəṇḍəs ahalasṣ a
+<lb n="23v2"/>guṁ| Iṅ əndi dasanamane hika guru| bimma <gap reason="illegible" quantity="4" unit="character"/>da harane| svaṙggane bhaṭa:ra brahma I<space type="binding-hole"/>ka| laḥ hika svaṙgga hane pu bapanku| bimma dak varah esiḥ brahma rumuhun· saḥ karaḥ siḥ denta guru| brahma svaṙgganta svaṙgga ha
+<lb n="23v3"/><gap reason="lost" quantity="3" unit="character"/>ṇḍu| have kita bramma| laḥ pukulun· <gap reason="illegible" quantity="3" unit="character"/>yun pun· bimma| punapa bavara pahi mantra Om̐ ba<space type="binding-hole"/>| pr̥bava kilat· sañjata ḍəṇḍa| sḍahan· tambaga| manik miraḥ| pun· bhaṭa:ri svarasatyati| sampun·n ajaṙ| hapan ṣamadini
+<lb n="23v4"/><gap reason="lost" quantity="3" unit="character"/>ra yak· sampun iṅalap· tutuṅgaṅanipun· haṅṣa| haviloka hiku guru| ye mo<space type="binding-hole"/>kono| paran· tutuṅgaṅane bapanku guru| bimma pamilihi svaṙgga mani| // laḥ sapa kaṅ adr̥ve svaṙgga kulon·
+
+
+<pb n="24r"/> <fw place="left" n="24r">1</fw>
+<lb n="24r1"/>//0// Om̐ Avighnamasaṇna siḍəm· //0// bimma pimiliḥ hi svaṙgga hane <space type="binding-hole"/> si paṇḍu sakaR̥pta| tuhu kita bhaṭa:ra guru| bimma laḥ tuhu svaṙggaṇni navadevatha| svaṙgga hane si paṇḍu| lamon· ha
+<lb n="24r2"/>ja mati si yama hi ya| laḥ tu bhaṭara guru<gap reason="illegible" quantity="5" unit="character"/> sapa dəve svagga vetan katon· <space type="binding-hole"/> putiḥ haṅulap-ulap·| kadi salaka sinalaḥ rupa kaya kəmbhaṁ kamurugan ṣatəgal· həndi dasanamane Ika guru| bimma ri
+<lb n="24r3"/>puṙvvapada harane svaṙgga bhaṭara hisvara<gap reason="illegible" quantity="4" unit="character"/>Iku dak kalape svagga hane bapa /pa\ṇḍu<space type="binding-hole"/>| bimma dak varaḥ si kaṅ adr̥ve svaṙgga hisvara svaṙggan· ta si bimma ha<gap reason="illegible" quantity="1" unit="character"/>maṅalap· s(va)ṙgga hane si paṇḍu| kahaR̥p ṣiḥ ginarahi
+<lb n="24r4"/>pun· puhanatosa sinuṅan· punapa mantranipun· Om̐ sa| sañjata braja| tutuṅgaṅane pun· L̥mbhu putiḥ <space type="binding-hole"/>| pr̥bavane hudan· bajra| saḥ hi tahəm· sḍahane <gap reason="lost" quantity="13" unit="character"/>pun· bhaṭa:ri ratiḥ| tan pasuṁ
+
+
+        </ab>
+	  	<!-- Structure as necessary with <div>, <p>, <ab>, <lg> depending the nature of the text -->
+			</div>
+
+
+
+
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+                <p>Transliterated by Muhamad Alnoza, encoded by Muhamad Alnoza.</p>
+		        <p><!-- explain the process of your edition here --></p>
+		        <!-- provide a list of bibliographic references used in your digital editions -->
+		        <listBibl type="bibliography">
+		            <bibl/>
+		        </listBibl>
+		        <!-- the listBibl editions is used to create a list of abbreviated text used in notes and parallels, it is more or less the equivalent of a list of abbreviations, you would find a printed edition  -->
+		        <listBibl type="editions">
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
