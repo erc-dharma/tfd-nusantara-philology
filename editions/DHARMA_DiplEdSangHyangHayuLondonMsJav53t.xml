@@ -6,11 +6,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Saṅ Hyaṅ Hayu</title>
+            	<title type="editorial">Saṅ Hyaṅ Hayu: Digital Diplomatic Edition of British Library MSS Jav 53 t</title>
                 <!-- fill in the subtitle if necessary -->
-                <editor ref="part:adgu">
-                    <name>Aditia Gunawan</name>
-                </editor>
                 <respStmt>
                     <resp>author of digital edition</resp>
                     <!-- work done in the file, e.g. editor, Intellectual authorship of edition ...-->
@@ -37,6 +34,7 @@
                 <!-- Give your witness an unique identifier -->
                 <msDesc>
                     <msIdentifier>
+						<settlement>London, UK</settlement>
                         <institution>British Library</institution>
                         <repository/>
                         <idno>MSS Jav 53 t</idno>
@@ -85,12 +83,14 @@
             <!-- Part mandatory -->
         </encodingDesc>
         <revisionDesc>
+        	<change who="part:argr" when="2026-09-17">resolved validation errors</change>
             <change who="part:adgu" when="2023-10-02">First encoding</change>
             <!-- replace this by a line that has you as @who, that has the @date on whicḥ you finished the first basic encoding of the file, And that has the following description of what was finished on that date: "Initial encoding of the file." Then add a <change> entry for eacḥ significant change to the file. -->
         </revisionDesc>
     </teiHeader>
-    <text xml:space="preserve" xml:lang="kaw-Latn">
+    <text xml:space="preserve">
       <body>
+<div type="edition" xml:lang="kaw-Latn">
          <ab>
              <pb n="1r"/>
 <pb n="1v"/>
@@ -111,6 +111,7 @@
              <lb n="2v2"/>
 
          </ab>
+</div>
       </body>
   </text>
 </TEI>
