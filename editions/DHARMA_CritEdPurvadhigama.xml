@@ -278,10 +278,14 @@ Loan collection, Rijksmuscum voor Volkenkunde, Leiden
         </correction>
         <normalization>
           <p/>
-          <!--MS: I have automatically normalized geminate consonants after "r", including in the apparatus in <rdg> elements. When the only difference(s) between the several witnesses are between s/ś/ṣ or a/ā (in context where no sandhi can apply) or between d/ḍ/dh, ṭ/ṭh, v/b or rbv/rvv (several occurrences of byavāhara, or byavastha, 2v4, 3r1 in #or3723) ha vs. ya (?), I have silently normalized-->
-      <!--other "non-significant" variants: 
+        <!--
+        We I have silently normalized 
+      - geminate consonants after "r", including in the apparatus in <rdg> elements. 
+      - when the only difference(s) between the  witnesses are between s/ś/ṣ or a/ā (in context where no sandhi can apply) or between d/ḍ/dh, ṭ/ṭh, v/b or rbv/rvv (several occurrences of byavāhara, or byavastha, 2v4, 3r1 in #or3723) ha vs. ya (?)
+      - mss. disagreeing on punctuation  -->
+      <!--other variants possibly to be deemed "insignificant": 
         - puṅku vs. mpuṅku
-        - mss. disagreeing on punctuation 
+        - prāgivāka / prāgvivāka
       -->
       <!--interpreting mss's // as '.', i.e. a strong punctuation marking the end of a paragraph.-->
         </normalization>
@@ -305,7 +309,7 @@ Loan collection, Rijksmuscum voor Volkenkunde, Leiden
       -->
 <div>
   <ab xml:id="purvadhigama_01.01" type="invocation" xml:lang="san-Latn"><app>
-  <lem wit="#or3723 #or4431 #l585 #ggb">avighnam astu</lem>
+  <lem wit="#or3723 #or4431 #l881 #l585 #ggb">avighnam astu</lem>
   <rdg wit="#or5098">nama śivāya</rdg>
   <!--<rdg wit="balimaarti">Avighnam astu tatastu hastu nama</rdg>--><!-- check -->
 </app>
@@ -322,9 +326,9 @@ Loan collection, Rijksmuscum voor Volkenkunde, Leiden
 #ggb
 #sula
 -->
-<p xml:id="purvadhigama_02.01"><app><lem wit="#or3723 #l585">nihan</lem><rdg wit="#sula"><gap reason="omitted"/></rdg><rdg wit="#ggb">nyan</rdg></app> pūrvādhigama-śāsana śāstra-sāroddhr̥ta, 
+<p xml:id="purvadhigama_02.01"><app><lem wit="#or3723 #l881 #l585">nihan</lem><rdg wit="#sula"><gap reason="omitted"/></rdg><rdg wit="#ggb">nyan</rdg></app> pūrvādhigama-śāsana śāstra-sāroddhr̥ta, 
   <app rend="hide">
-    <lem wit="#or3723 #or4431 #or5098 #l585 #sula">pūrvārambha</lem>
+    <lem wit="#or3723 #or4431 #or5098 #l881 #l585 #sula">pūrvārambha</lem>
     <rdg wit="#ggb">pūrvvarama</rdg>
   </app> 
 saṅ təlas vr̥ddhācārya<!-- ggb , --> rājapurohita sarvaguṇajña, 
@@ -334,9 +338,12 @@ saṅ təlas vr̥ddhācārya<!-- ggb , --> rājapurohita sarvaguṇajña,
   <app rend="hide">
     <lem wit="#or3723">pratiṣṭhita</lem>
     <rdg wit="#or5098 #l585 #ggb">pratiṣṭita</rdg>
-    <!--<rdg wit="#l585">pratiṣṭita<surplus>ta</surplus></rdg>-->
-    <rdg wit="#sula">pratistita</rdg></app></foreign><!--keeping this in view of rdg with surplus--> 
-təkap sahana<!-- ggb: saṁ hana --> parācārya śiva kabeh, 
+    <rdg wit="#l881">pratiṣṭitata</rdg>
+    <rdg wit="#sula">pratistita</rdg>
+  </app>
+</foreign> 
+təkap sahana<!-- ggb: saṁ hana --> 
+parācārya śiva kabeh, 
 <foreign xml:lang="san-Latn">kaniṣṭha-madhyamottama</foreign>.</p>
 <!--<listApp type="parallels">
   <app>
@@ -355,30 +362,52 @@ təkap sahana<!-- ggb: saṁ hana --> parācārya śiva kabeh,
 -->
 <p xml:id="purvadhigama_02.02">ndan sira paramādiguru mahābhagavantāṅgəhnira, 
 sira <app>
-  <lem wit="#or3723 #or4431 #or5098 #l585">paṅudaran</lem>
+  <lem wit="#or3723 #or4431 #or5098 #l881 #l585">paṅudaran</lem>
   <rdg wit="#ggb">maṅūdaran</rdg><!-- thus also Bali Maarti-->
-</app> bhasma ṅaranira, 
-saka ri vənaṅnira panaḍahan bhasma təkapniṅ santāna pratisantāna saṅ bhasmāṅkura, 
+</app> bhasma <app><lem type="omitted_elsewhere">ṅaranira, 
+saka ri vənaṅnira <app><lem wit="#or3723 #l585">panaḍahan</lem><rdg wit="#l881">panaḍaha</rdg></app> bhasma</lem><witDetail type="retained" wit="#or3723 #l881 #l585"></witDetail><rdg wit="#ggb" cause="eye-skip"><gap reason="omitted"/></rdg></app> təkapniṅ santāna pratisantāna saṅ bhasmāṅkura, 
 sira atah <app>
-  <lem wit="#or5098">mramāṇakən</lem>
+  <lem wit="#or5098 #l881">mramāṇakən</lem>
   <rdg wit="#or3723 #l585 #ggb">pramaṇākən</rdg>
   <note>This form is not recorded in OJED, but it is attested with the same meaning in the <title>Saṅ Hyaṅ Pamutus</title> (Buddhist)<!--refer to a bibl element with <ptr target=""/> for this text?, and add translation-->: <foreign>ya ta mapisan riṅ pramāṇa, ka, pramāṇa mary *amramāṇakən</foreign>.</note>
 </app> 
-pagəhni <app rend="hide">
-  <lem wit="#or5098 #ggb">karakṣaniṅ</lem>
-  <rdg wit="#or3723 #l585">kaṅrākṣaniṅ</rdg>
-</app> śāsanādhigama śāstrasāroddhr̥ta<!-- ggb sastrasaro{tta}ma:dr̥tta -->,
-ri<!-- thus or5098 l585; ggb riṁ --> para mpuṅku<!-- or3723 l585 ggb: puṅku--> makabehan,
+<app>
+  <lem wit="#l881 #ggb">pagəhniṅ karakṣaniṅ</lem><!-- #or5098 pagəhni karakṣaniṅ? -->
+  <rdg wit="#or3723 #l585">pagəhnikaṅ rākṣaniṅ</rdg>
+</app> 
+śāsanādhigama śāstrasāroddhr̥ta<!-- ggb sastrasaro{tta}ma:dr̥tta -->,
+ri<!-- thus or5098 l881 l585; ggb riṁ --> 
+para <app><lem type="norm">mpuṅku</lem><rdg wit="#or3723 #l881 #l585 #ggb">puṅku</rdg></app>
+makabehan,<!-- l881 omits , -->
 sahana saṅ guməgə̄ śivāgama<!-- ggb: siṁśi[77r3]va:gamma: -->, 
-kimuta sahana<!-- ggb: sakataḥ --> saṅ bhujaṅga śiva pinakasthavira riṅ nagara,<!-- or3723 omits ,--> 
-saṅ sampun kr̥ta, 
+kimuta sahana<!-- ggb: sakataḥ --> saṅ bhujaṅga śiva pinakasthavira riṅ nagara,<!-- or3723 l585 omits ,--> 
+<app><lem wit="#or3723 #l585 #ggb">saṅ</lem><rdg wit="#l881" cause="additive">mvaṅ saṅ</rdg></app> sampun kr̥ta, 
 ṅuniveh saṅ <app>
-  <lem wit="l585 #ggb">maṅharəp</lem>
-  <rdg wit="#or3723 #or5098">mahaR̥p·</rdg><!--<note>See infra.</note>--></app> riṅ nagara lavan<!-- ggb: lan--> riṅ pradeśa, 
-təlas karuhun saṅ vatək <app><lem wit="#ggb">prāgvivāka</lem><rdg wit="#or3723 #or5098 l585">pragivāka</rdg></app> <foreign xml:lang="san-Latn">vyavahāra-vicchedaka</foreign>, 
-saṅ vənaṅ <app><lem wit="#or5098">maməgatakən</lem><rdg wit="#or3723 #l585">mgatakən</rdg></app> vivādaniṅ<!-- l585 omits -niṅ--> sarvajana riṅ sabhāmadhya mvaṅ riṅ pradeśa, 
+  <lem wit="#l881 #l585 #ggb">maṅharəp</lem>
+  <rdg wit="#or3723 #or5098">maharəp</rdg><!--<note>See infra.</note>--></app> 
+riṅ nagara 
+<app>
+  <lem wit="#or3723 #l881 #l585">lavan</lem>
+  <rdg wit="#ggb" cause="lexical">lan</rdg>
+</app> riṅ pradeśa, 
+təlas karuhun saṅ vatək 
+<app>
+  <lem wit="#ggb">prāgvivāka</lem>
+  <rdg wit="#or3723 #or5098 #l881 l585">pragivāka</rdg>
+</app> 
+<foreign xml:lang="san-Latn">vyavahāra-vicchedaka</foreign>, 
+saṅ vənaṅ 
+<app>
+  <lem wit="#or5098">maməgatakən</lem>
+  <rdg wit="#or3723 #l881 #l585 #ggb">məgatakən</rdg>
+</app> 
+vivādaniṅ<!-- l585 omits -niṅ--> sarvajana riṅ sabhāmadhya mvaṅ riṅ pradeśa, 
 nā ta lvirnira<!-- or4431 l585 -nya-->, 
-<app><lem wit="#or4431 #l585">yan</lem><rdg wit="#or3723">yayan</rdg></app> saṅ hyaṅ 
+<app>
+  <lem wit="#or4431 #l585">yan</lem>
+  <rdg wit="#or3723">yayan</rdg>
+</app> 
+saṅ hyaṅ 
 <app rend="hide"><lem wit="#or3723 #or4431 #l585 #sula">adhigama</lem><rdg wit="#or5098">adhigama-śāsana</rdg></app><!-- Marine read adhigama-śāsana but I haven;t yet confirmed presence of this reading in any ms. or5098 and L881 remain to be checked. --> 
 śāstra-sāroddhr̥ta juga *pamākəniṅ śāsana,<!-- or4431 l585 omit , --> 
 <app><lem wit="#l585 #l881">kramanira tika kabeh</lem><rdg wit="#or3723">kramaniṁ ra:t tika: kabeḥ</rdg><rdg wit="#or4431">kramaniṁ ra:hika: ka:beḥ</rdg></app>.</p>
