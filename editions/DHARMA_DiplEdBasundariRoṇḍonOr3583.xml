@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="id"><!-- update the @xml:id at the base with the DHARMA ID, see FNC. -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="editorial">Basundari Roṇḍon<!-- Title given by the editor to this digital edition--></title>
+                <!--change the title of the edition starting, if possible, with the title of your text-->
+		<!-- include a translation of the title and the author's name if relevant; form a subtitle after a colon -->
+                <!--<title type="alt"></title>-->
+		    <!-- fill in any alternative title if necessary; it may also form a comment on the editorial title -->
+		<!--<title type="original" xml:lang="...-Latn"></title>-->
+                    <!-- fill in the Romanized original title if relevant, and apply the relevant three-letter ISO language code -->
+                <!--<author></author>-->
+                <!-- fill in the name of the author if relevant; repeat author is there is more than one -->
+                <respStmt>
+                    <!-- repeat the respStmt when necessary; you can also provided a free text explanation of the process in the bibliography part-->
+                    <resp>author of digital edition</resp>
+                    <!-- work done in the file, e.g. editor, intellectual authorship of edition ...-->
+                    <persName ref="part:mano"><!-- update the id -->
+                        <forename>Muhamad</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Alnoza</surname>
+                    </persName>
+                    <persName ref="part:argr"><!-- update the id -->
+                        <forename>Arlo</forename><!-- fill in your  names — it is possible to use only <name> instead of <foreame> and <surname> -->
+                        <surname>Griffiths</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority><ref target="{URI for DHARMA website}">DHARMA</ref></authority>
+                <pubPlace>Jakarta</pubPlace>
+                <idno type="filename">DiplEdBasundariRoṇḍonOr3583</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+                    </licence>
+                </availability>
+                <date from="2026" to="2026">2026-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <!-- One witness for each manuscript. Update the content -->
+                    <witness xml:id="fakeID">
+                        <!-- Give your witness an unique identifier -->
+                        <abbr type="siglum"></abbr>
+                        <!-- Fill in the abbr @type="siglum" with the expected display for the witness siglum. Use <hi> with @rend for superscript and subscript -->
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>London</settlement>
+                                <institution>British Library</institution>
+                                <repository>Lontar</repository>
+                                <idno>Or. 3583</idno>
+                            </msIdentifier>
+                            <msContents>
+                                <!-- the msContents isn't mandatory -->
+                                <msItem>
+                                    <title>Basundari Roṇḍon</title>
+                                    <!-- You can also add a colophon if needed -->
+                                    <colophon>
+										<quote>//0// Itiḥ basundari roṇḍon ri sampun təlas cinitra ri jəṅira saṅ hyaṅ giri damaluṅ ri pacimmā para batuṙ pasantren, ṅ haṅiṁ pasaḥ tan pasaḥ raganipūn, gəṅ iṅ drayā hamor iṅ aṅga aprasadu nista yan iṅ aksa deniṅ antuk asisinahu, samahāhado haparək hanudhat sastra, hajəjəkaṇ ḍupak sastra hadhədhək anmu gatəl, deniṅ aksarā śri gitiṁṅən kadi cinakaṙ riṁ rākāṭā. samantahā tan epatut iṁ tātavraga sastranipun, tan apatut sasānākaliḥ huṁkaranipun, samantahā tan apatut guha paruṅguni śastra, deniṁ cedaksarā punikā sastra kaliḥdaśa, samantahā kiraṅ lviḥ divəg tinata denirā saṁ pratameṁ sastra, mivaḥ kaṅ amahostanapi kaṅərəṅə, hatava hikaṅ analaṙ hamalāmpaḥ iṅ apura pukulun duk ahuvusan iṅ anurat, vu,  ma, śu, ka, vu, ka, u,  //0// I śakala| 7| 7| 5| 1| //0// Om̐ śri śri śri 
+</quote>
+										</colophon>
+                                    <!-- colophon should be *structured* with quote elements with *attributes* @type and @xml:lang when necessary -->
+                                </msItem>
+                            </msContents>
+                            <physDesc>
+                                <objectDesc>
+                                    <!-- Here you can give a physical description of the manuscript in prose-->
+                                    <p>Palm-leaf manuscript. 80 leaves in Javanese script of the Merapi-Merbabu type. The top and bottom lines of the leaves are darkened and often illegible. The leaves have no original numbering (or it is illegible) and seem to be out of order. The most frequently encountered feature in this manuscript is that nasal sound marks, such as ṁ and n, at the end of words are often ignored by the scribe. In addition, vowels or consonants at the end of a word are sometimes linked to the following word. Meanwhile, diphthong sounds such as "ai" replacing "e" and "au" for "o" tend to be commonly found. Uniquely, the number 8 in this ms. is sometimes written like "pha"—possibly due to the phonetic similarity between the aksara "pha" and "pa", whereas "pa" is more naturally used when writing the number 8.</p>
+                                </objectDesc>
+                                <handDesc> <!-- Add an attribute @hands if you have more than one hand -->
+                                    <!-- Create a handNote for each hand -->
+                                    <handNote xml:id= "A1_H1" scriptRef="class:57470 maturity:83215"> <!-- update the content of the @xml:id and the @scriptRef using the xml:id-of-the-witness -->
+                                        <abbr type="hand">A<hi rend="superscript">1</hi>:H<hi rend="subscript">1</hi></abbr><!-- Give the abbreviation siglum for the hand built on xml:id-of-the-manuscript, ":", H1, the number being incremental -->
+                                        <p>main hand of the manuscript, black ink, Javanese script</p><!-- provide a description of the hand -->
+                                    </handNote>
+                                </handDesc>
+                            </physDesc>
+                            <history>
+                                <!-- Here you can decribe the history of the manuscript in prose. Use <origDate> and <origPlace> to emphasize the place and date of creation -->
+                                <p>Purchased from B. Farrer, 1888. 
+                                  The manuscript was copied in the hermitage of "Pasanten", located on the western slope of Mount Damalung (nowaday Merbabu),  in the Śaka 1557, i.e., 1635 AD</p>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+                <projectDesc>
+                    <p>Encoded in TEI according to the <ref target="{URI for DHARMA editorial conventions or page with link to Encoding Guides}">Conventions of ERC-Project DHARMA</ref>.</p>
+                    <!-- A second paragraph can be used to acknowledge any relevant funding agency, project acronym and number, any to specify for instance that the edition results from a personal research project such as a PhD.  
+  -->
+            </projectDesc>
+            <editorialDecl> 
+                <p></p>
+                <correction>
+                    <p/>
+                </correction>
+                <normalization>
+                    <p/>
+                </normalization>
+                <interpretation>
+                    <p/>
+                </interpretation>
+            </editorialDecl>
+            <samplingDecl>
+                <p/>
+            </samplingDecl>    
+        </encodingDesc>
+        <revisionDesc>
+           <change who="part:argr part:mano" when="2026-11-08" status="draft">started encoding the diplomatic edition</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+		<body>
+			<div type="edition" xml:lang="kaw-Latn"> 
+<ab>
+<pb n="1r"/> 
+<lb n="1r1"/>n· saṁ dhṅəṇa moṁṅ ayu| tan pabaśa kavoṅan· <g type="circle"/>va| 9| pa| 9| gu| 8| va| 4| bya| 7| §<space type="binding-hole"/> landəp·| suka nora| patumbhaṁ saṇa bibit·| kəbo hayu| ra| danu| maṇḍala| Aśevaka
+<lb n="1r2"/>hagavehane| mulaniṁṅ ana lalaranən·| mulaniṅ ana vvaṁ kneṁ lalaṇḍəp·| tbusiṁ lambhaṁ <space type="binding-hole"/> raṅayam·| rumbhaḥ gigo| pəñcokacaṁ| sambat saṁ kale bhayuhara| mulaniṅ ana bbalanti 
+<lb n="1r3"/>k·| Apitan sivaḥ| Apitan samirana| mulaniṅ ana vvaṁṅ adodol· kəris·| hala<space type="binding-hole"/>mbhuṁṅakən kali| kabhuyutan kadaga juraṁ kulvan·| hapitan· brahmakala| padagaṅan  
+<lb n="1r4"/>· rovva(ṁ)| saṁ kala hogaḥ-hogaḥ| ha<gap reason="illegible" quantity="1" unit="character"/> <g type="circle"/> ma| 3| pva| 7| ya| 9| dva| 9| landəp·| pnalka§<space type="binding-hole"/>| hananduṙra saṙvva palahayu| ra| bakara| gumaraṁ tumurun· vatək puja samadḍi| kavasa ri bra
+
+
+<pb n="1v"/> 
+<lb n="1v1"/>ta lavan aji| mulaniṁ vvaṁṅ anaṅis·| tinbhusan saṙvvanupu| caru hayam·| 2| sambat saṁ hyaṁ ha<space type="binding-hole"/>{ui ka}{ui pha}yu| saṁ hyaṁ hakaśa
+<lb n="1v2"/>hambu lava| hacaṅapit deṣa| ri dalan avala gona<space type="binding-hole"/>na| sa| vr̥| bsa:| səga| hapitan· ruṁṣaṁ ruśi| Ampaṅabətan kaṇḍi deni vvaṁ tani| sakala bharibhi
+<lb n="1v3"/>n{*ə}·| Arane| haglaṙ sakaṙmma| sa| ba| hana ri patarana| saṅ kala hana ri natar· <g type="circle"/> tuṁ| 7| va<space type="binding-hole"/>| 3| śu| 6| landəp·| kaladaṅu| silih asiḥ| kuramasana hayu| lu| 3| bya| 7| ra| kumbha| ca
+<lb n="1v4"/>rik·| jaya| R̥śikan| habəbədak·| gavene| holaḥ kaR̥pe gave| mulaniṁ vvaṁ <space type="binding-hole"/> bhiṣa holeḥ-holeḥ| saṁ sulasiḥ harañjiṅi| ri jajaka rara| kaṅ atuha| dusi L̥su| sav(va)ṙpa
+
+
+<pb n="2r"/> 
+<lb n="2r1"/>| saṁ <gap reason="illegible" quantity="1" unit="character"/>bhi {*ha}dhṅən hari-hari| saṁ dhṅən viṣṇu <g type="circle"/> haṙ| 6| va| 4| ca| 4| tambir·| haro-hara| varahala|  <space type="binding-hole"/>(bra)| 7| va| 4| da| 8| ra| kaṇya| ri kə:l oyod· hañjaṅuṅaja riṁ gavene| luṅa riṁ vṅi ha(ka)śa
+<lb n="2r2"/>bhaviśayane| riṁ kbon labhane| tbus i kbon·| Agara kasiḥ pisaṁ pupula| sambhatan saṁ puhu<space type="binding-hole"/>n·| bulan i sinəmpal piṇadhati| hapitan kuladaṅu| dudu haR̥p i padaṅan·| sadhṅən· bra
+<lb n="2r3"/>hma haṅaliḥ hanəbusana hulun hayu| pavaraṅana hayu| kuṭila sumka| carik·| bulan i<space type="binding-hole"/>ṅ ana voṅ aṅalap upah ora pili gave| ṅa| dva| 9| maṇḍala| ra| tula| dataṅ uman-uman a§
+<lb n="2r4"/>vake dhavak· hujarai| saṁ| ca| sinatcan tan porat avake phalaṁ-phaliṁ hambake ta<space type="binding-hole"/>n ketoliḥ vvaṁṅ atuvane| sa| haṁ| AR̥p atenana| mulaniṅ ana savala padha(ṙ)sana⌈
+
+
+<pb n="2v"/> 
+<lb n="2v1"/>ne tan kasəpen·(ro)vaṁ| tan səpi lumbhuṅe| mulani vvaṅ adoṣa kaki bagalaḥ| hapi<space type="binding-hole"/>tan lumbhu(ṁ) pagər anuduk· poma:han· lmaḥ gagaru guṁṅani śavaḥ| sakalada śuka:la haveḥ la
+<lb n="2v2"/>ra si gaL̥n· deniṁ lavaṁ haṅnər i padaṅan·| haṅnər iṅ kaṇḍa:ṁ suden haranai| tbus i dhṅən· <space type="binding-hole"/> sambhat saka:la hudal-hudal· mtu maraki| kaladaśa lvar· //0// tu| laṙ| pja| laṙ| ra| 5| §
+<lb n="2v3"/>tambir· śri maṅalaḥ| patukona kapas a/ha\yu| lu| 2| bya| 7| lara| ra| siṅa| hammamasaṁ§ <space type="binding-hole"/> gavenai| kaparon tuvuhe| riṁ kbon kapaṅgihe larane dravali ri pocapan·| ri suku la§
+<lb n="2v4"/>rane mulaniṅ ana jambhe sigaṙ sinahut·| vuluḥ linaṇḍəpan·| sa| ra| sinikəp de⌈<space type="binding-hole"/>ne| saṁ| bhu| saṁ| A| ha(p)itan tutuva| ga(d) maməṇḍək phalaṇḍakan karubhuhan kayu| tbus i dhṅən·| sambhata
+
+
+<pb n="3r"/> 
+<lb n="3r1"/>jala megha haveḥ lara <g type="circle"/> pa| pha| ta| (ccha)| ta| dhaṙ| bya| laṙ| bu| laṙ| sinta cinta manipa<space type="binding-hole"/>ni hayu| ra| vr̥ṣaca kaladaṅu| haṅucap gave kaṙyyane| keḍhp aṅucap·| mulaniṅ a
+<lb n="3r2"/>na hasu| bhaṭa:ra bhaśuki dadi hasu| mulaniṅ ana pagər·| saṁ| ba| piniṅitaṅe ri patara<space type="binding-hole"/>na| tbus i bale ri pahuman·| bhaṭa:ra rama śinambat aruvatha| bantən saṙvva pavitra| paṁgaṅ aya 
+<lb n="3r3"/>m· grih antiga| mulaniṅ ana padhati| mulaniṅ ana parahu| saṁbhu| hanuṅgaṁ| saputəṙ haśi<space type="binding-hole"/>luman·| hamuṁkurakən kabhuyutan·| kadaga| bantən i kabuyutan·| lpətape| baka:
+<lb n="3r4"/>kak·| sambat bagavan parentaḥ <g type="circle"/> va| 8| ma| 5| vr̥| 8| lu| 3| ca| 4| sinta| tutu§<space type="binding-hole"/>k masiḥ| pamet ana rahayu| ra| mituna| sinotana pavevehana rahayu| dhṅən suvuṁ| ma
+
+
+<pb n="3v"/> 
+<lb n="3v1"/>ñu loṙ vetan kabuyutan aveḥ lara| sadhṅən· sumuluduru harane| saṁ hyaṁ viṣṇu padha haru<space type="binding-hole"/>vatha (ma)laniṁ manuṣa bhaṭa:ra guru hamalantən·| kalavan· bhaṭa:ra viṣnu| bantə i kabuyuta
+<lb n="3v2"/>n· sambat saṁ sumuluduru| saṁ viṣṇupada <g type="circle"/> vu| 5| va| 4| gu| paṙ| dva| dhaṙ| ha| 3| sinta| panu<space type="binding-hole"/>ruhan hayu| phala lakonana rarahayu| mesa| pasuməṅka| maṇḍala| data hanaṅis ambə⌈
+<lb n="3v3"/>ke| saṅu hana ri padaṅan·| haśih aśaśanak· kelaṅ-elaṅan piṇḍo satahun·<space type="binding-hole"/>| data kasaṇḍuṅ ambhəke| paluluṅan labane| saṁbu| haśevaka| tbus haṅgara vage| I
+<lb n="3v4"/>vak loḥ| linambara| sambhat sa bhaṭa:ra samadaya| ri sagar·| hamr̥dana dhaṙyyane| mulani<space type="binding-hole"/>ṅ adr̥ve hilaṁ| bhaṭa:ra viṣṇu hapṅi vvaṁṅ atuha kadaga| Apithan lu(pa) saṅ kala śuli| sadhṅən·
+
+
+<pb n="4r"/> 
+<lb n="4r1"/>mala ruvat·| mulani vvaṁ tiba| hapitana gaṙjja| kasambhət iṁ tgal·| saṁ| bhu| A| hana lbak i lbuḥ| <space type="binding-hole"/> kabhuyutan atəṅaḥ hapitan·| janmu valaṁ tumpal iṅan·| saṁṅ idu putiḥ haṅidonana| bha(ṭa)ra
+<lb n="4r2"/>guru hanambhanan avaras·| ca| ri saṅgar·| sambat· bhaṭa:ra guru| bhaṭa:ri humma <g type="circle"/> tu| laṙ| vr̥| <space type="binding-hole"/> pha| ka| pha| vukir·| Atiṇḍa:k padagaṅ hana hayu| gu| pha| bya| laṙ| pavaraṅan ahayu| maṇḍa:
+<lb n="4r3"/>la| carik·| mulaniṅ ana vvaṁ jinaraḥ| mulaniṅ ana bibisik·| ra| siṅaca| haśu<space type="binding-hole"/>baṁ buṁkəm·| riṅ uṇḍuṅ-uṇḍuṁ| sambat saṁ hyaṁ maṇohayu| riṅ udaṁṅ-udaṁ| hamaṅgiḥ pataka ha§
+<lb n="4r4"/>pr̥but· bumi halalaṣṭi harane| savukir· maṅkat apəraṁ| makatapa| Ana ta maṇiki<space type="binding-hole"/>ra riṅ ibhun·| saṁ| bhu| haṅulati rsi| ra| hatapa riṅ eṙsanya| kevuhan·| saṁ bhu| dene saṁ sukra|
+
+
+<pb n="4v"/> 
+<lb n="4v1"/>2| vukir·| tugu kikin·| jaṅan ta{*va}n vinayu| śri| 6| va| 4| carik·| panəR̥sana ravi hayu| ra| mituna| jaya| Abarata vatke| mamanek tuvahe| bhaya havake| ri taṅan i suku larane| tan R̥nani la
+<lb n="4v2"/>bhane| data haptak·| saṁ| bu| hamalaku dr̥ve| ḍata hanəmbhuṁ hastri| pahit busane griḥ haguṁ| <space type="binding-hole"/> masa dhavuḥ tlu| sambat saṁ bhuludra| mandi sora| hapitan juraṁ| vavayaṅanira bhaṭa:ra guru| bhaṭa
+<lb n="4v3"/>ra brahma| bhaṭa:ra lundra| saṁ hyaṁ paṙbyata śikara harane| ca| saṙvva pavitra <g type="circle"/> ma| 2| va| 4| <space type="binding-hole"/> bu| (7)| vukir·| citamani| pamanen ahuyu| I| 5| dva| dhaṙ| ra| rakaṭa| paṣ tumurun·| pa/va\raṅ a§
+<lb n="4v4"/>na hayu sakaṙyya hayu| labha| maṅani bot· hambhəke| kasaṅkala riṁ kayu haguṁ| sa| <space type="binding-hole"/> v(ṣa)| dadi| hambhavaṁ| bhaṭa:ra bhayu hanaṅkala| mulaniṁṅ ana vvaṁṅ agave puspa| saṁ hyaṁ puspataya| śi
+
+
+<pb n="5r"/> 
+<lb n="5r1"/>yu hasiluman·| saṁ hyaṁ taya haṅaliḥ bhavaṇa tan aṅel·| hapitan hamado ṣari b<space type="binding-hole"/>·| saṁ| ra| bhinuru de/ne\| sa| bhu| kaśa kavalun caṙmma| ri bhale riṅ umaḥ| saṁ| vr̥| katuron hanonton·
+<lb n="5r2"/>vayaṁ| bhaṭa:ra kala riṁ lbuḥ kabhuyutan· loṙ tan kapuja: <g type="circle"/> haṙ| 6| va| 4| śu| 6| vayaṁ| ta<space type="binding-hole"/>n kaṇḍahan· paṁruvatan ahayu| paduduṣaṇa| I| 5| va| 4| /ca\rik·| jaya| ra| kaṇya| hatu haṅn-aṅne
+<lb n="5r3"/>| baṣa jijinaḥ ri kabhuyutan· labhane| hama-hamanahe| ri pasamohan habhaya ragha⌈<space type="binding-hole"/>ne| mulaniṅ ana dhənəṇḍa| hapitan tutuva| hana dhṅən kadaga kahulu kapṅi/ṅa\n haṅago lmaḥ patiḥ|
+<lb n="5r4"/>caṇḍi kapitiṁ kbon·| bantə{*ta}ṇ tutunu hasu ri kbon·| sambhat saṁ kalamaya| saṁ bhuta <space type="binding-hole"/> patiḥ| saṁ bhuta hijo devani bhale hahana <g type="circle"/> vu| mra| ka| pha| śa| dhaṙ| vayaṁ| mahapraṇa| pa
+
+
+<pb n="5v"/> 
+<lb n="5v1"/>natan· kna pinṅi| vatək ajijinaḥ śukane| mulani kukus dadi megha| mulaniṅ ana devatha: cinari<space type="binding-hole"/>ta| mulaniṅ ana rahi vṅi| (t)bus i saṅgar·| saṙvva hakeḥ| sambhat saṁ /de\va samadaya| ra nini saṅ ayu tan payas
+<lb n="5v2"/>·| hapitan· kr̥tajaya| ri punuk i L̥mbhu| mulaniṅ ana puja: riṅ ucap·| saṁ hyaṁ brahma| saṁ| vr̥| tumu<space type="binding-hole"/>run hamiṇḍa manuṣa| hapitan kr̥tajaya| hanapak səranərus· ri daksiṇa| ri ghneya| tbus i paṁ
+<lb n="5v3"/>guṁ| saṙvva gnəp·| sambhat saṁ hyaṁ viṣṇuṣada| mulaniṅ ana vayaṁ <g type="circle"/> tu| laṙ| pva| laṙ| vr̥| pha| va<space type="binding-hole"/>yaṁ| rikəl· buron·| hamasaṅ ayu| salvirani pinasaṁ hayu| śri| 6| bya| (7)| labha| ra| siṅa
+<lb n="5v4"/>data luluṅa| tansaḥ hamuja| haṅituṁ bantən vatəke| mulaniṅ ana manuṣa| mula<space type="binding-hole"/>niṅ ana viku| mulaniṅ ana dora m(ṅa) hamətokən ja{*na}mbu| tbus i saṁgar·| sambat saṁ hyaṁ ha
+
+
+<pb n="6r"/> 
+<lb n="6r1"/>varaṅan ahayu| pasumka| jaya| ra| tula| carik· mulaniṅ ana /ṅa\mpeṙ pari ri lumbhuṁ| mu<space type="binding-hole"/>laniṅ ana vvaṁ pinagəran· havake| ca| saṙvya suci| tbhus· tṅaḥ hi natar·| saṅ aboṁṅ ayu|
+<lb n="6r2"/>saṁ śinambhat·| haṅucap gave kasukane| saṁ| bhu| hatukar·| Ana bhuta pṅi(ṁ)| saṁ| bhu| Agave <space type="binding-hole"/> saṅara kabhuyutan hapṅi saki ghneya| hana haṙcca kalb iṁ bañu| ri bhayabya| hana lmaḥ məṇḍək·
+<lb n="6r3"/>tbhus i kabhuyutan·| sambhat saṁ| vr̥| samanohayu <g type="circle"/> pa| pha| ka| pha| śu| 6| tolu| <space type="binding-hole"/> bahu mitra hayu paR̥R̥bhon hayu| I| 5| bya| (7)| ra| mr̥cika| laba hadodol a
+<lb n="6r4"/>kaṙyyane| gañjaḥ hambhəke| den tiṁgalakən kasukane| sa(ṁ)| vr̥| luṅa tapa| mulaniṅ a<space type="binding-hole"/>na sga pinənək iṅ iyan· hana devata saṁ kaṇyavan harane| Umandəla ri voṁ tani| saja
+
+
+<pb n="6v"/> 
+<lb n="6v1"/>n·| Ayam putiḥ| maṣa dhavuḥ tlu| kabhuyutan kapəṇḍəm·| bhaṭa:ra hyaṁ tumurun·| bantə<space type="binding-hole"/>n i kabhuyutan·| duk·| sa| bha| hamaṅan· sambhi hasiṅidan·| sadhṅən humpətan·| sa
+<lb n="6v2"/>kala sumurup·| sadhṅən abilasan·| kavoṅan· <g type="circle"/> haṙ| 6| pva| (7)| bhu| (7)| tolu| <space type="binding-hole"/> cintamani| paguntiṅan aha{*na}yu| U| (4)| (va)| (4)| ra| kanya| śri vadegaṅa kaloliḥ| mula
+<lb n="6v3"/>niṅ ana bhaṭa:ri śri gumlar·| vage pahiṁ tbus i L̥suṁ| ca| saṙvva| suci| sambhat· bhaṭa:ra vi§<space type="binding-hole"/>ṣṇu| bhaṭa:ri śri| Atmu samaya janma| si lara varas·| hapitan suḥjanmaṇḍala| maṇḍalavan tugu
+<lb n="6v4"/>daṙmma| dhaṁka| hadagakakən ṣetra v{*ə)atəs·| sa| bhu| mulaniṅ ana vvaṁ sugiḥ| saṁ| bhu| hagave <space type="binding-hole"/> hayu <g type="circle"/> vu| 5| va| 4| vr̥| 8| tolu| putri R̥R̥bhonan amitra hayu| śri| (U)| dva| (9)| pa
+<pb n="7r"/> 
+<lb n="7r1"/>vəR̥ṁkəṁ ckap·| tan· kna piniṅit·| mulani voṁ harabhi padha śaṇake dhavak·| luṅa mari(ṁ) <space type="binding-hole"/> guṇuṁ haṅn-aṅne| kari hagəlaṙ bhanai| tbusən mavula manis·| saṙvva pavitra| sambat· bhaṭara guru| sa
+<lb n="7r2"/>kala moṅ ayu| hapitan kabhuyutan· vvaṅ atuva| sakala vurukuṁ| saṅka:la vuvulon<space type="binding-hole"/>· hapṅi <g type="circle"/> va| (9)| pva| (7)| bhu| (7)| madhaṁkuṅan·| śalapakṣa hala| ka| ṅa| va| (U)| ra| mituṇa: ri kəl· ⌈
+<lb n="7r3"/>godhoṁ halayara| śakiṁ parahula bhane| mulani voṁṅ alayar·| sakiṁ paranuṣa kabeḥ <space type="binding-hole"/>| bantən iṁ śaṅgar·| saṙvva pavitra| sambat saṁ hyaṅ akaśa| babhu pr̥thivi| sagaganiṅ anbus·| mulaniṅ a
+<lb n="7r4"/>na lavaṁ mṅa| saṁ| bhu| saṁ| ra| noraṅ umaḥ luṅa puyəṅan·| hagave y masalaka| hapitan lavaṁ <space type="binding-hole"/> hanərus mara iṁ kbon·| sambhat saṁ bhuta mandiraja| saṁ kala ri papəraṁṅan· <g type="circle"/> ma| 3| va| (4)| vr̥| 8| 
+
+
+<pb n="7v"/> 
+<lb n="7v1"/>paṅugahəna pari hayu| lu| (3)| dva| (9)| labha| ra| meṣa| carik·| saṁ| śu| cerabhaini ri kə⌈<space type="binding-hole"/>bon·| hagaga śavaḥ kaṙyyane| vəR̥ṁkəṁ| saṁ| śu| saṁ| ra| den pragaśa ri kbon·| hakəkəbona
+<lb n="7v2"/>n· hana labhanai| hada hambəke| ri gulu ri śuku kiva laranai| data hapupuṇḍut·| hapi<space type="binding-hole"/>tan samantara| bañu haṅin bi vetaniṅ umaḥ tb(u)s i padusan·| sambhat sa:ṁ citragotra| mula
+<lb n="7v3"/>niṅ ana karu(b)jiṅadu| hapitan samantara| bañu bəbəṅan paguyaṅan i varak· vetaniṅ uma<space type="binding-hole"/>ḥ| tbus i padusan·| sambhat saṁ citragotra| saṁ ka:la kr̥tadoja| sadhṅən hanumpali| hamujaha§
+<lb n="7v4"/>mari pəṇḍəm· <g type="circle"/> pa| 8| pa| (9)| ha| 3| madhaṁkuṅan·| bheda kapurug iṁ lara| vara hala <space type="binding-hole"/>| bra| (7)| bya| (7)| ja| ra| mr̥ṣabha| hagagave vnaṁ| havade hajala kaṙyyane| hamiṣaya ri bañu
+
+
+<pb n="8r"/> 
+<lb n="8r1"/>da(ma)luṁ ri pacimma: para bbatuṙ pasantren·| ṅhaṅiṁ (pa)saḥ tan pasaḥ raganipūn·| gəṅ i(ṁ) draya: hammo<space type="binding-hole"/>r iṁṅ aṅga <g type="circle"/>  Aprasadu nista yan iṁṅ aksa deniṁṅ antuk asisinahu| samaha:hado| hapaR̥k hanu
+<lb n="8r2"/>dhat sastra| hajəjəkaṇ ḍupak sastra hadhədhək anmu gatəl·| deniṁṅ aksara: śri gitiṁṅən kadi cinakaṙ <space type="binding-hole"/> riṁ ra:ka:ṭa:| samantaha: tan (e)patut iṁ ta:tavraga sastranipun·| tan apatut sasa:na: kaliḥ huṁ 
+<lb n="8r3"/>karanipun·| samantaha: tan apatut guha paruguni sśastra| deniṁ cedaksara: punika:sastra kaliḥ<space type="binding-hole"/>daśa| samantaha: kiraṁ lviḥ divəg tinata denira: saṁ pratameṁ sastra| mivaḥ kaṅṅ amahostanapi kaṁ   
+<lb n="8r4"/>ṅəR̥ṅə:| hatava hikaṁ/ṅ\ analaṙ hamala:mpaḥ hiṅ apura pukulun· <g type="circle"/> duk ahuvusan iṁṅ anurat·| vu <space type="binding-hole"/>| ma| śu| ka| vu| ka| (U)| //0// I sakala| 7| 7| 5| 1| //0// Om̐ śri śri śri 
+
+
+<pb n="8v"/>
+<lb n="8v1"/>hakmitan·| Agave hatumbhal·| lavaṁ kaṙyya:nən ayu| tambak ḍavuhan ayu| (4)| (4)| dva| (9)| ra| <space type="binding-hole"/> rakaṭa:| sa(ṁ) hya(ṁ) hisora vevehan vuku| bhaṁ| gapora vanibhaya| pa{ui na bha}dha| gave| catahiṅa
+<lb n="8v2"/>yati pati druvali| tan valaṁṅ ati hambhəke| śastrane kuna-kuna hakveḥ maṙggane tinagi<space type="binding-hole"/>ḥ phati| sahur· parisahur· riṁṅ əṇḍəm-əṇḍəm i pati| muleni vla kasan kadejan· ragha (§)
+<lb n="8v3"/>| Apitan hudar·| Apitan dhṅən·| tutu vadu rumtas·| Apitan pəṇḍəm·| saṁ kala vi<space type="binding-hole"/>ṣṇu| saṁ dhṅən pr̥mmaṇa: hapṅi| tbus i śaṅgar·| Aṅilenan atadhaḥ haduṣa: haruruvatha| sambha
+<lb n="8v4"/>t saṁ baṭa:ra deva samadaya| bhaṭa:ra paṇḍava samadaya| saṅ asiḥ praṇa| /ka\ladaśa riṁ puṙvya§ <space type="binding-hole"/> //0// Itiḥ basundari roṇḍon·| ri sampun təlas· cinitra| ri jəṅira saṁ hyaṁ giri
+
+
+<pb n="9r"/>
+<lb n="9r1"/>Aliṁ-haliṅan bañu| sadhṅən R̥nduḥ haranya| {*tbu}| saṁ| vr̥| saṁ| bhu| saṁ dhṅən R̥nduḥ <g type="circle"/> vu| 5| pva| 7| bhu| 7|§ <space type="binding-hole"/> vatu guṇu(ṁ)| va{ui dha}ṅuṇn urip·| Apadudusan ahayu| pame<gap reason="illegible" quantity="1" unit="character"/>na tambha hayu| lu| 3| dva| 9| labha| bo§
+<lb n="9r2"/>dḍi ḍoṣa| ra| meṣa maraṁ sumka| kabhaya-bhaya raghane| ta/n·\ keñcak sarirane mulaniṅ a<space type="binding-hole"/>na daṙmma pinras pinitulus· tin{*pa}atavaran·| mulaniṅ ana kata paśidḍa| gnəpgat harantasan·|
+<lb n="9r3"/>lamun uvus· hamras· haja pepaka| ḍevatha: devathi| saka svaṙggan saṁsaya| maṅka bañca<space type="binding-hole"/>ṇaniṁṅ atapa| tb(u)s i saṅgar· riṁ kasapuluḥ riṁ pr̥thivi| sambhat saṁ hyaṁ hayu tan pgat·| saṁ hyaṁ taya| saṁ §
+<lb n="9r4"/>hyaṁ pr̥thivi| tutuvah tasakna deniṅ umaḥ kalaran·| ḍr̥ve hilaṁ vetan iṅ u/ma\ḥ gvaṇya| mula<space type="binding-hole"/>niṅ ana haṙca dinadekən· vvaṁ| bhaṭa:ra bhayu handadekən·| bhaṭa:ri śri hanambhanan avaras·| sa| bha|
+
+
+<pb n="9v"/>
+<lb n="9v1"/>ranya| Apitan pəṇḍəm i kbon· kayu vuni haneṁ pasir·| saṁ kala hurik·-rik·| saṁ kala su§<space type="binding-hole"/>supan·| saḍṅə(n) <gap reason="illegible" quantity="1" unit="character"/>hak·| sadhṅ(ə)(n) kavalunan·| kapit deni(ṁ) kabhuyutan· lavan· vvaṁṅ atuha <g type="circle"/> ha:ṙ|§
+<lb n="9v2"/>6| pa| 9| ha| 3| vatu guṇuṁ| sisidhət·| pamasaṅ haṇa:k ala hayu| ya| 9| va| 6| śri| ra| mi<space type="binding-hole"/>ṇa| habhubhuru hayu| habhaya-bhaya ragane| tan ovaḥ tkap atine| Alaluhala maredane| ha
+<lb n="9v3"/>ṅon· bhakti vvaṁ sajəromaḥ| ri loṅan· hanavar· patine| saṁ dhadhuṁṅavuk hara<space type="binding-hole"/>ne druvali riṁṅ ujar· huvus mati hurip maniḥ| tbus iṅ asu celeṁ ri tgal·| sambhat saṁ hyaṁ guru| saṁ ka§
+<lb n="9v4"/>kala tan luvar·| norana gatu mati| norana guru mati| mulaniṅ ana kbo tinuntun· de<space type="binding-hole"/>ni bhaṭa:ra viṣṇu| saṁ| vr̥| saṁ| bhu| hatmu lavan·| henak ta thuru| hapitan· vot bañu tinalaṁ| saṁ| bhu| 
+
+
+<pb n="10r"/>
+<lb n="10r1"/>da bañcana| mulaniṅ ana vvaṁ pinalelenakən·| śaka galiḥ loṙ vetan·| Uma<space type="binding-hole"/>ḥ kapañjiṅan· burvan· <g type="circle"/> tu| 7| pva| 7| ka| 1| bya| 7| {*dha} 9| sinta| śaśapegavya⌈
+<lb n="10r2"/>ne mamaṇḍalan· rahayu| /ra\| siṅa| maṇḍala| cari| dhṅən suvuṁ| sugiḥ rare| paṅilya tan a<space type="binding-hole"/>nadhaḥ hayu| bhaṭa:ri śri havevehan·| vuku| visay anaṅis· hapkuḥ hambhəke| hana riṁ ⌈
+<lb n="10r3"/>kbon labane| mulaniṁ vvaṁṅ ana lara kupiṅe| kabhuyutan kadaga riṅ eṙsanya| saṁ <space type="binding-hole"/> dhṅən paruput apṅi| haṅiriṅakən sumbhəriṁ śavaḥ| bantən ṣeL̥n i śavaḥ| caru tətlaḥ| samba
+<lb n="10r4"/>t· sadhṅən· puruput· //0// haṙ| 6| va| 4| 4| 4| ra| 5| nilandəp· śri <space type="binding-hole"/> vr̥dḍi| pamalsan agave hayu| ra| kanya| hambalan tikaṙyyanya| hadval atuku gavyane
+
+
+<pb n="10v"/>
+<lb n="10v1"/>laniṁṅ ana vvaṅ abantən suru| haṅasapuluḥ| Agaga jar{*·}a L̥su havake| sira saṁ vila<space type="binding-hole"/>pa| sar(i)ni(ṁ) jagat·| sa| ra| sa| śu| sa| vr̥| haṅuripakna mati| handagakən kabuyutan·| hana pa
+<lb n="10v2"/>sihiku huripi jagat saṁ hyaṁ śri hapitan· lmaḥ saṅar·| mtu si loṅan·| mulaniṅ a<space type="binding-hole"/>na vintaṁ mulaniṅ ana hanluḥ| mulaniṅ ana haṅob·| hapitan· dhṅən bantən iṁ kabuyutan· sa
+<lb n="10v3"/>sambat bhaṭa:ri śri <g type="circle"/> ma| 3| pa| 9| bra| 7| śu| 6| dva| 9| sinta| karahu| śalaḥ paksa| vara <space type="binding-hole"/> hala| ra| rakaṭa| tu| hasu hajag·| laba| dhṅən hana tka| viṣaya mesəm havake| haṅituṁ
+<lb n="10v4"/>d(r̥)ve gavehane| ri paturvan kaśukane| mulaniṅ ana vvaṁ pinkul·| mulaniṅ ana vva:ṁ<space type="binding-hole"/>ṅ acocoloṅan·| tbus i paturvan·| saṙvva pavitra| sambat saṁ hyaṁ tutulak· be
+
+
+<pb n="11r"/>
+<lb n="11r1"/>pamutəran amiṅgat ayu| lu| 3| dva| 9| ra| tula| hasu hajag ṣumka| bhaṭara Idra ka<space type="binding-hole"/>ṅ avevehan· vuku| Ababhatuṙ kaṙyyane| hajodhog labane| ri gḍoṁ dr̥vene| tan ka 
+<lb n="11r2"/>bubak· tuvuhe| mulani voṁ jikə| hapitan uṇḍaṁṅ-uṇḍaṁ| lavan paḍaṅan·| saṁ|<space type="binding-hole"/> bhu| hana pari kbon·| katon· vəvnaṁ| saṁ| bha| hamunuḥ haśa| lavaṁ haṅnər i paḍaṅan·| ra
+<lb n="11r3"/>nini paduka bhaṭa:ri gibig· hapṅi| saṁ dhṅən pujut i pavon·| {*ta}mtu vukiṙ pini⌈<space type="binding-hole"/>doṣa ruvatanya| celeṁ hayam· vuṁga rik·| ḍaśabhumi ri ghneya| sambhat· ra nini gə
+<lb n="11r4"/>gəbig·| sadhṅən pujut· //0// pa| 8| pva| 7| ra| 5| kuran·til·| ḍa§<space type="binding-hole"/>bu| ra| mr̥cika| śri vr̥dḍi| pavinihan ahayu| bra| 7| bya| 7| laba| gaga śavaḥ labhane|
+
+
+<pb n="11v"/>
+<lb n="11v1"/>śaśaka vulun· caṙmma hana ri ghneya| Ana ri dalika| Apitan· kabhuyutan·| ra| <space type="binding-hole"/> (v)va| ri bhayabya humaḥ suvuṁ| ca| saṙvva phavitra| sambhat saṁ hyaṁ {ui va}śivaḥ bhasuki <g type="circle"/> haṙ| 6| ma| 5| śu|
+<lb n="11v2"/>6| ra| kaṇya| vukir·| hulun ṣad{*e}ane| paduduṣaṇ ahayu| ya| 9| va| 4| panbusan a<space type="binding-hole"/>hayu| pamutəran amiṁgat hayu| śri| havavadehan· vatke| hababhava visayane| data§
+<lb n="11v3"/>hadus·| sa(ṁ) hyaṁ| haruruvat mariṁ ghneya| mnəṁ sambhavane| ruvat· larane| masaṁ dr̥ve<space type="binding-hole"/>ne vr̥dḍi| mulaniṅ adudus·| bhagavan kaṇo haṅnakən puja| Ajatmika| mulani karubuhan ka
+<lb n="11v4"/>yu| hapitan punukaL̥mbhu| ri tgal·| kasarik iṁ paṅason·| tbus i paṅason· §<space type="binding-hole"/> saṙvva śuci| sambhat· bhaṭa:ra gaṅga: bhaṭa:ri gaṅgi| bhaṭara viṣṇu <g type="circle"/> vu| 5| śa| 9| pha| 9| vukir· 
+
+
+<pb n="12r"/>
+<lb n="12r1"/>ghna| Ana pəṇḍəm kahulu| haṅaliha kabhuyutan·| hana bañu hataruṁ riṅ eṙṣanya| ka{ui bha}<space type="binding-hole"/>yu hagərit· priṁṅ aṅukul i humaḥ| sujen· voṁ ramon· voṁ sa:paṁga voṁ <g type="circle"/> pa| 8
+<lb n="12r2"/>pa| 9| śu| 6| kaladaṅu| takəṇḍəhan· susuka dhavuḥhan· hayu| pabhuru knas hayu <space type="binding-hole"/>| I| 5| bya| 7| jaya| ra| vr̥śaba| {ui ta} dataṅ (a)du tukaṙ medane ri panti labhane| sa| bha|
+<lb n="12r3"/>sinapatan dene| sa| ca| sa| bha| hamalasanapa tan iriṁ| sa| ca| baluk karo| sa| ra| <space type="binding-hole"/> balubuḥ turon·| vuron saru hambhəke pisuhan·| mulani voṁ kasambhət i palu§
+<lb n="12r4"/>ṅguhan·| phaluluṅan·| kapit denika daṁ vr̥ga g(u)t(u)ṙr umaḥ harane| təbus iṁ dhəṅən<space type="binding-hole"/>· riṅ eṙṣanya| sambhat saka:la paganten aveḥ lara| hapitan· vəvədhen·| sakala
+
+
+<pb n="12v"/>
+<lb n="12v1"/>niṁ voṁ sinagur i brahmakala| tbus i bavihaji saṅaṁṅatus·| haR̥p i dhṅən·| sambhat bhuta<space type="binding-hole"/>navakəṇḍa| ra nini bhaṭa:ri lupa gave| hiṣuḥ-hisuḥ gigiraṁ jbut·| saṁ| vr̥| harupa kala| hapi
+<lb n="12v2"/>tan·| cakra bhuhaṇa| kabhuyutan hapəñcaṙ huṅgone| saṁ kala pkuḥ sakala tiga| saṁ| bhu| <space type="binding-hole"/> hamoṁ raṣa| huva-huvanira| <g type="circle"/> vu| 5| ma| 5| vr̥| 9| dhuṅulan·| śri gati muṅga-muṅgahn apari§
+<lb n="12v3"/>hayu| panumbhaś aśavvaṁ| śri| 6| dva| 9| ra| meṣa| labha| habəcik aR̥pe tan· btaḥ ri lu<space type="binding-hole"/>ve| hamamayu kaṙyyane| mulaniṁ voṁ haveh amaṅana ri vvaṁṅ atuha: hana vvaṁṅ aṅu{*ja}
+<lb n="12v4"/>ri bapa: hibu| mari śaṇak atuha den ujuṁ| sa| {ui ba}ra| mari ghneya| sinapatan dene <space type="binding-hole"/>| saṁ| vr̥| harupa kala: bantən i panti| sambhat saṁ hyaṁ hayu keliran· tan· kna ri lara: vi 
+
+
+<pb n="13r"/>
+<lb n="13r1"/>lulu haji satak· satasuḥ| daśabhumi riṁ puṙvva //0// va| 9| pa| 9| ra| 5| dhu<space type="binding-hole"/>ṅulan·| śambhu varah ala| panaban anahila hayu| ka| 1| va| 4| baṇḍala| ra| danu| tan pgat·
+<lb n="13r2"/>bantən athake| saṁ| ra| saṁ| bhu| hambhabajaṅ i rare| bhaṅga| pəṅku haṅgara va{*ka}tke larane| śa<space type="binding-hole"/>kit ataṁga lore| vuron maidane| mulaniṁ voṁ sinambhəṙ ri glap kakilatan·| hapita:
+<lb n="13r3"/>n bayam· hapitan· gtiḥ| kapañjiṅan kala| hdangakən kabhuyutan·| pəpəṇḍəman haR̥<space type="binding-hole"/>piṁ lavaṁ| saṅ kala hasusumbəṙ harane| saṁ dhṅən· manḍiraja hanuku rat·| tbus i kbon·§
+<lb n="13r4"/>| sambhat sadhṅən hasusumbhaṙ| saṁ dhṅən· mandiraja hanuku rat· <g type="circle"/> ma| 3| pva| 7| ca| 4<space type="binding-hole"/>| dhuṅulan·| vehan kəṇḍatala| 4| 4| dva| 9| śri| ra| makara| gumaraṁ tumurun·| data lulu
+
+
+<pb n="13v"/>
+<lb n="13v1"/>nu| haṅśa ri heṙṣanya| dhavutəlu vetan· tka larane| mulaniṅ ana hapitan bhayəm· ri <space type="binding-hole"/> kbon·| Apitan pəṇḍəm tan kapuja| ka| bant(ə)n iṅ avaṅ-avaṁ| sambhat saṁ mandisora haṅapit ra
+<lb n="13v2"/>ṇa| kaki paṅavan haṁluvaran asaṅara <g type="circle"/> pa| 8| ma| 5| śadha| susaṁ| panukupana śa<space type="binding-hole"/>tru| marundaḥ| paṅaliḥhana:dhṅən hayu| bra| 7| bya| 7| ra| mr̥cika| jaśa hyaṁ gaṇa komara⌈
+<lb n="13v3"/>vevehan vuku| hamahata| vuron· medanai| ri pukuran labhane| tinakonakən de§<space type="binding-hole"/>ne papanakane hapituli| mulaniṅ ana hapitan suka surakṣa gaṇṇa| A/pa\R̥k palaṇḍaka§
+<lb n="13v4"/>n k{*u}adaga| saṁ kala rakət pati harane| Ana bañu tadhaḥ vuk·| tka vetan· bantən<space type="binding-hole"/>· calon pupuḥ| sambhat saṁ kala puhukaṇya| saṁ brahmakala| mtu suṁsaṁ| kalabvi bañu|  
+
+
+<pb n="14r"/>
+<lb n="14r1"/>hati(ṁ)gal bapebhu halalukale hambhəke| saṁ| bhu| sa| ha| Amalaku rinuvat·| Aṅnəṙ mana⌈<space type="binding-hole"/>he| kadojan hamet kadaḍin·| muliḥ dhavak· tuvuhe labhane| tan ana histri kaṅən·| ka
+<lb n="14r2"/>tmu kasukane| riṁ guṇuṁ hambhənərakən· vvaṁ dudu polahe| halakṣaṇa riṅ ayu| tbus i saṅga<space type="binding-hole"/>r·| sambhat saṁ hyaṅ akaśa| saṁ hyaṁ pr̥thivi| mulani vvaṁ lumaku hatapa| Agave hayu| hujar i bhaṭa:ra:
+<lb n="14r3"/>guru| tinuṁgakən· dene| sa| ra| saprakaśa| ghni murub·| Apitan saṁ| bhu| Aṅnakən pijər{*·}a<space type="binding-hole"/>n·| Apitan kabhuyutan·| Aṅn{*ə}akən· vəvəton·| saṁ dhṅən hamobhayu| <g type="circle"/> haṙ| 6| ma| 5| bhu| 7|
+<lb n="14r4"/>dukut·| cintamaṇi hayu| bra| 7| va| 4| (ja)| hanandura kəmbhaṁ hayu| paguntiṅan ahayu| data§ <space type="binding-hole"/> tumatiṅ abot kasukane| riṁkəl godhoṁ| ra| kaṇya| Apəkuh ambəke| tansaḥ hajijinaḥ me
+
+
+<pb n="14v"/>
+<lb n="14v1"/>hana kabhuyutan kapapas·| p(ə)ṇḍəm· kadakaga ri kbon·| mulani dukut arupa śri| hapita<space type="binding-hole"/>ṇ kuluma ri śavaḥ| saṁṅ ombol-ombol gətiḥ harane| hapitan lumbhuṁ| saṁ kala śri gadhi(ṁ) harane
+<lb n="14v2"/>hapṅi| saṁ dhṅən· vurumahəm·| <g type="circle"/> ma| 3| va| 4| ca| 4| dukut·| Amr̥cayog· pamiśikan avka ha<space type="binding-hole"/>yu| ya| 9| dva| 9| śri| ra| rakaṭa:| pametana hivak· loḥ| pas tumurun·| tan kaṅən paman-bhibhine
+<lb n="14v3"/>saṅ atapa tutugan· dene maṅun ayu| katmu riṁ guṇuṁ hayune| śiḍinya Amet kadaḍin<space type="binding-hole"/>·| śakti manave| koṁsi deniṅ aṅusada| tbus i tgal·| sambhat saṁ kala riṅ alas·| ca| haśu ce⌈§
+<lb n="14v4"/>leṁ| lamb(a)raṁ bebek·| sambhat saṁ hyaṁṅ ayu| saṁ hyaṁ tuṅgal-tuṅgal·| bhaṭa:ra hisora <g type="circle"/> <space type="binding-hole"/> tu| 7| ka| 8| haṙ| 3| dukut·| tutuk masiḥ mamarahan kahayu| lu| 3| bya| 7| labha| ra| siṅa:
+
+
+<pb n="15r"/>
+<lb n="15r1"/>ndagakən·| tutuva| kidul· bhaṭa:ra brahma hamiṇḍa| sa| vr̥| haṅulati bhapa| hapi<space type="binding-hole"/>tan huma| suvuṁ| sa| vr̥| luṅa aṅaliḥ bañjar· <g type="circle"/> va| 9| pa| 9| śu| 6| gumbhr̥g·| diṙghayuśa 
+<lb n="15r2"/>| paṁR̥R̥bhonan avkayu| śri| 6| va| 5| ra| mituṇa| carik·| paśevakanan ayu| hambha<space type="binding-hole"/>bajaṁṅana| jayakaR̥mba| kavoṁ den pəṇḍəm· ri tgal sukane| haṅanam-anam kaṙyyane| no
+<lb n="15r3"/>rana voṁ /d\en idhəp·| mul{*i}aniṅ ana hambhubuki hana dhṅən· ri gaga śavaḥ| ri saṅgaṙ| bantə<space type="binding-hole"/>n i kbon· hayam pinaṅgaṁ grihan· tlu tumpəṁ putiḥ kuniṁ| pnək iṁ babhahan·| hapitan·
+<lb n="15r4"/>heḍapan·| ca| haR̥p i lavaṁ| ri kadhaṁ| gaga kavurahan·| sambhat saṁ(ṅ) ujala padi<space type="binding-hole"/>| bhaṭa:ra brahma <g type="circle"/> ma| 3| pva| 7| śa| 9| gumbhr̥g·| viṣṇu riṅ at{*ə}in· kəṇḍəta| papagəṙ rahayu| 
+
+
+<pb n="15v"/>
+<lb n="15v1"/>niṁṅ ana papaṅanten· rinirihan·| hapitan hina harane| lmaḥ kidul i padaṅan·|§ <space type="binding-hole"/> sa| bhu| pinuṇḍut de saṁ| ra| hapitan· lumbhuṁ hana riṁ tataṅga| saṁ| bhu| ta kelaṅ-elaṅan·|
+<lb n="15v2"/>ca| tumpəṅa| guṁ| lambharaṁ bebek· grih aguṁ| sambhat saṁṅ asiḥ praṇa <g type="circle"/> pa| 8| ma| 5<space type="binding-hole"/>| vr̥| 8| gumbhr̥g·| kaladaṅu heran asiḥ pamarah avka hayu| 4| 4| bya| 7| ra| vr̥ṣabha| pabu
+<lb n="15v3"/>ron aknas hayu| śri| haR̥p avikaha hambhəke| mulaniṅ anacaḥ| guluntuṁ| {ui na}hinuca<space type="binding-hole"/>p·| caru i nata{ui na}r i dhṅən·| ri lavaṁ| caca| guluntuṁ gilerumbhaḥ təmpaL̥-mpal·| mu§
+<lb n="15v4"/>laniṅ ana viḍini hyaṁ| hantukiṅ i hyaṁ| saṁ| vr̥| hanatapa riṁ heṙṣanya| sambhat saṁ hya ta§<space type="binding-hole"/>ya vulu-vulu| saṁ hyaṁ taya tka tayan·| saṁ hyaṁ vanohayu| hapitan hulu-hulu ha§
+
+
+<pb n="16r"/>
+<lb n="16r1"/>tu guṇuṁ| rikəl· godhoṁ sambhu varahala| {*1}ka| 1| va| 4| ma| ra| mituṇa| carik·| ga⌈<space type="binding-hole"/>ve tgal akaṙyyane| haneṁ panti labhane| miṅuṁ-miṅuṁ hambhəke| sari hatukaṙ vaṇibhaya| mulani vvaṁ ka§
+<lb n="16r2"/>tiban utaṁ pirak hamava doṣa| hapitan kabhuyutan· vetan kulvan·| lmaḥ putiḥ ka§<space type="binding-hole"/>tutug i śaraḥ śaki ghneya| bañu hanatrusaki(ṁ) /ja\ba| hapitan deniṁ voṁṅ athuva| deṣa kapit· ⌈
+<lb n="16r3"/>deni pə{*ṣa}ṇḍəm·| saṁ kala ri(ś)ik haranya| lmaḥ məṇḍək saṁ kala caṇḍi| lmaḥ məṇḍə deniṁ kbo<space type="binding-hole"/>n· pəṇḍəm· ri kbon·| saṁ kala caṇḍi harane| ra nini tuvuḥ halalana| tbus i(ṅ) api| sambhat saṁ
+<lb n="16r4"/>hyaṁ hayu| sadhṅən ṣiluman· <g type="circle"/> ma| 3| ma| 5| /ka\| 9| vatu guṇuṁ| śri gati misoṙ| dumuṇuṁ <space type="binding-hole"/> ri padaṅan·| ri L̥suṁ pavinihana| pavaraṅana| Aṅudaṅa| miṅgat·| Apapagəra| Agave
+
+
+<pb n="16v"/>
+<lb n="16v1"/>deva manuṣa samana <g type="circle"/> pa| 8| va| 4| vr̥| 8| vatu guṇuṁ| dina:lasa patanya katonya| va<space type="binding-hole"/>ra hala| bra| 7| bya| 7| ja| ra| vr̥ṣabha| pananduṙran akəmbhaṁ hayu| tan aR̥p aruṅu hujar ala| baṅga ha
+<lb n="16v2"/>mbhəke| data habhabharibhinan·| vuruṁ mati śarirane| mulaniṅ ana dhinəṇḍa vinovo<space type="binding-hole"/>ta{*na}kən·| riṅ əṇəpəṇḍəm· patine raghane| tbus i kalantaka| caru ri saṅgar·| Asu celeṁ| §
+<lb n="16v3"/>sambhat saṁ hyaṁ hayu tan gisir·| saṁ yaṁṅ ayu lgeṁ praṇa:| saṁ| vr̥| hamuṙvva tuva pati| tbus i śaga<space type="binding-hole"/>r·| Asu celeṁ holaḥ gnəp·| sambhat saṁ hyaṁ R̥si śira yaṁṅ uvus· tka riṁ don·| saṁ hyaṁ viṣṇu| saṁ hyaṁ
+<lb n="16v4"/>hisora hamiṇḍari| saṁ| vr̥| hana lmaḥ putiḥ kadaga| bañu hanuduk umaḥ lava:ṁ haja maR̥p a<space type="binding-hole"/>ṅetan·| phalaṇḍakan· lvaṙ vetan· śetra| maṇḍala vetan·| <g type="circle"/> va| 9| ka| 8| śu| 6| va§
+
+
+<pb n="17r"/>
+<lb n="17r1"/>tak· tumpəṁ| 5| tutununu hasu| ṣga riṁ vakul· tok saguci| sambat· bhaṭa:ra brahma§ <space type="binding-hole"/> sadhṅən· rupək saba| mulaniṅ ana jagal·| saṁ dhṅən bayuhara| hana lvaṙ kulvan· kadaga| ha
+<lb n="17r2"/>pitan padaṅan· <g type="circle"/> pa| 8| ma| 5| I| 5| bya| 7| ha| 3| ladəp·| ra| mr̥cika| labha<space type="binding-hole"/>| panuruhana| paluluṅanan ahayu| hadagaṅ agavyane| Apik ambhəke| ri patini vvaṁ la§
+<lb n="17r3"/>bane| Aśevaka labhane| kaṅelan avake| kabelanya hivak· loḥ kaśa<space type="binding-hole"/>mbhit iṁ kadaṁ vr̥ga: tbus i lambharaṁ bebek·| hasu celeṁ| sambat· bhaṭa:ra śivaḥ bhaṭa:ra
+<lb n="17r4"/>guru| bhaṭa:ra mahadeva| hadr̥ve suṁnya| Uvuṣ katmu hilaṁ hapitan· pasopati<space type="binding-hole"/>| kabhuyutan ve{*na}tan·| kulvan·| sa| ca| tumurun saṁ hyaṁ lmaḥ śarayu| sakala bilasa
+
+
+<pb n="17v"/>
+<lb n="17v1"/>kulon saṅkane labhane| mulaniṅ ana cocoloṅan·| lavan tataṅgane| <space type="binding-hole"/> Apitansaḥ mulaniṅ ana vvaṁ suviṁ| Apitan suḥruḥ| kabhuyutaṇ aṅapit·| lyiṙ kidul·
+<lb n="17v2"/>riṁ tgal· saṅ kala prakaśa: hapṅi| saṁ dhṅən manisaṙja| sadhṅən· bhayuhara| bantəṇn aRp i <space type="binding-hole"/> dhṅən·| R̥ncaḥ celeṁ plen·| tumpə satadhahan tutunu hasu| tvak saguci| sambat saṁ ka§
+<lb n="17v3"/>la {*ka}prakaśa: saṁ dhṅən manisaṙja| saṁ dhṅən· bhayuhara <g type="circle"/> vu| 5| ka| 8| śri| 6| ca| 4|<space type="binding-hole"/> dva| 9| landəp·| ra| tula| carik·| paronana lumbhuṁṅ ayu śri vr̥di| kuṭila sumka| Api
+<lb n="17v4"/>pikat gavene| ha{*n}vovośana: ri pkən labhane| viveka riṅ ambhəke| prayatna§ <space type="binding-hole"/> riṁ laku| riṁṅ ati larane| təbus aṁgara kasiḥ| AR̥piṅ· padaṅan· R̥caḥ bhavihaji śa
+
+
+<pb n="18r"/>
+<lb n="18r1"/><gap reason="lost" extent="unknown" unit="character"/>yut{*u}an· nora kapuja| deśa kasit deni kabhuyutan·| kidu<space type="binding-hole"/>l i bale gone| kapṅiṅa deni guru| pitara duruṁ mtas·| tbus iṁ bañu| sambat saṁ hyaṁ bhañu bhira| saṁ
+<lb n="18r2"/><gap reason="lost" extent="unknown" unit="character"/>t·| bhaṭa:ra gaṅga| bhaṭa:ra viṣṇu <g type="circle"/> pa| 8| bya| 7| 4| 4| ca| 4|§ <space type="binding-hole"/> pa| 9| vukir·| dinalaḥ halaṣa pakatonane| vara ḥhala| bhuruhakna| sayu| vr̥sabha| śri| da
+<lb n="18r3"/><gap reason="lost" extent="unknown" unit="character"/>məd·| Anananduṙ kaR̥pe gave| Apiṅit iṅ ambhək·| haṅiṅu <space type="binding-hole"/> bhavi labhane| tbus iṁ talavaḥ babaline| Amaṅana lavan celeṁ| maṁsa pahiṁ| sambat· bhaṭara
+<lb n="18r4"/><gap reason="lost" extent="unknown" unit="character"/>pitan·| vuvulu| haṅapa:lana laksa| saṁ hyaṁ laṣṭi-laṣṭi hama<space type="binding-hole"/>ṅun ayu hapitan·| maṇḍala: saṅ kala moṁda: harane| koren larane <g type="circle"/> va| 9| pva| 7| ha|
+
+
+<pb n="18v"/>
+<lb n="18v1"/><gap reason="lost" extent="unknown" unit="character"/>| mulaniṅ ana vvaṅ alara hiruṅe| sampali hi vvaṅ atuha| den da<space type="binding-hole"/>gakakən·| śaṅ kala kulaḥ-kaliḥ| saṅara hapṅi <g type="circle"/> haṙ| 6| ka| 8| {*ta}śa| 9| landəp·| pakuramasana 
+<lb n="18v2"/><gap reason="lost" extent="unknown" unit="character"/>(m)iṇa| bhaṭa:ra brahma kaṅ avevehan· vuku hapaparan agave⌈<space type="binding-hole"/>ne| ri paturon kasukane| sa| ba| hapaṅgiḥ lavan saṁ| vr̥| hulaḥhe lamba panon{*·}a hambə⌈
+<lb n="18v3"/><gap reason="lost" extent="unknown" unit="character"/>(g)·| Andagakən tutuha| bhaṭa:ra brahma hapṅi| mtu landəp·| tinəvə<space type="binding-hole"/>k·| ruvatanya celeṁṅ ayam· vurik·| holaḥ den asaṅkəp·| caru ri pacimma: //0
+<lb n="18v4"/><gap reason="lost" extent="unknown" unit="character"/>(5)| vukiṙ śri gati sumka| ka| 1| dva| 9| huṅgahakən pari hayu| <space type="binding-hole"/> ra| meṣa| maṇḍala| hambəbəciki kaṙyyane| tan aloṁ tuvuhe| Aneṁ ghneya labane| ta
+
+
+<pb n="19r"/>
+<lb n="19r1"/>luruṁ| Apitan kabhuyutan·| ha<gap reason="illegible" quantity="1" unit="character"/>upi śavaḥ| setra gasiṅ alihakən·| duruṁ {ui pa}pinupugan<space type="binding-hole"/>· hiṅase| saṁ| vr̥| savatane saṁ| bhu| hana kayu hanuṁsaṁ| lvaṙ kulon· gvanya| śaśakavalun caṙmma ri
+<lb n="19r2"/>bale riṁ bayabya gonya| Anuṁsaṁ| sambhat saṁ gaṙgga| saṁ bhanaspati| saṁ puluṁyakṣa <g type="circle"/> pa| 8| <space type="binding-hole"/> pva| 7| śu| 6| dukut·| pavaraṅana| panambhanan ahila hayu| 4| 4| bya| 7| śri| ra| mr̥cika| daṅu§
+<lb n="19r3"/>vvaṁ tani haməməlaṙ kaṙyyane| ri gaga savaḥ labhane| Apik-apik apiṅit sarirane| mulani§<space type="binding-hole"/>ṅ ana kayu kr̥ta ri parane| kna deni tata magaR̥m·| saparane tinut i bhedi doṣa| dumada
+<lb n="19r4"/>katiban larapitaṇ kaṇḍaṁ lavan lumbhuṁ| <gap reason="illegible" quantity="2" unit="character"/> kapit deni kabhuyutan·| lvaṙ kidul· no<space type="binding-hole"/>ra kapuja| Apitan· gtiḥ tbus i dhṅən·| sambhat saṁ kala hamoṁṅ hayu| bhaṭa:ra pasiṙ vukiṙr·| sa
+
+
+<pb n="19v"/>
+<lb n="19v1"/>dane| mulaniṅ ana gaṇa| mulaniṅ ana puluṁ kinavṅan·| bantən i kayu haguṁ ri phalakan· śaṙvva <space type="binding-hole"/> pavitra| ri kaṇḍa:ṁ bhakakak hivak i loḥ| sambat saṁ pirapetra| saṁ kumara śinamaḍaya| sa dhadhuṅavu
+<lb n="19v2"/>k·| mulaniṅ ana dukut dinadekən·| śrineni bhaṭa:ra viṣṇu| mijil ta rupa bañu| śalaḥ rupa<space type="binding-hole"/>| Atiṁgal· bhapa hibhu| pamastu bhaṭa:ra| vr̥| sa| bhu| den vidḍi pamtune| saṁ| śu| saṁ| ra| Apa:pasihan· <g type="circle"/> 
+<lb n="19v3"/>vu| 5| pa| 9| vr̥| 8| dukut·| riṅ aL̥m phalalakonan ahayu| paduduṣaṇa| pananagihana<space type="binding-hole"/>| panahuran aśot hayu| lu| 3| dva| 9| labha| ra| tula| hasu hajag (t)umka| hagave hayu hambhəke| ri ga§
+<lb n="19v4"/>ga śavaḥ laran/e\| tbus i savaḥ ri padaṅan· riṁ lavaṁ griḥ saji| sambat saṁ hyaṁ hahyaṁ| ya hyaṁ mr̥ta§ <space type="binding-hole"/> tan· phalvaṁ| hana lmaḥ hal(a)y(u)da| hana kabhuyutan· lavan siraḥ hi sumur·| /ha\na lmaḥ saṅaṙ lor i lu
+
+
+<pb n="20r"/>
+<lb n="20r1"/>ṅ yaṁṅ ayu| saṁ dhṅən kala: śaṅara <g type="circle"/> va| 9| va| ra| śa| 9| dukut·| padha tr̥ṣṇa| pametana rarahayu<space type="binding-hole"/>| śri| 6| va| 4| labha| ra| danu| carik·| phalala{ui ka}maṙrana| hagave hasusuk· {*na}hayu| riṁkəl kayu
+<lb n="20r2"/>| bhagavan sukra kaṅ avevehan vuku| mudha hambhəke| hagaga-śavaḥ kaṙyyane| riṁ panakan la§<space type="binding-hole"/>bhane| kapit deni kabhuyut·| maṇḍala kalavan jaṅgan·| saṙgga harane| loṙ kidul·| hapi§
+<lb n="20r3"/>tan daṙmma| hapitan pacariṅan·| hapitan saṙgar·| Akeḥh aṅapit·| sakala cacaru hara<space type="binding-hole"/>ne| Apitan damuṙ dhṅən·| Apitan kuluma| Apitan lumbhuṁ| tbus i {ui la}saṅgar·| sambhat saṁ hyaṁ taya| tan ka
+<lb n="20r4"/>pgat·| hasu celeṁ| saṁ dhṅən cacaru tbus iṅ ayam·| mətu dukut·| ka| nariti| //0// ma| 3| <space type="binding-hole"/> ka| 8| ra| 5| vatu guṇuṁ| riṅ aL̥m· phaluluṅan ayu| I| 5| dva| 9| ja| ra| makara| saja gave hayu| ⌈
+
+
+<pb n="20v"/>
+<lb n="20v1"/>voṁ thaniha| tan kaṅel· sañjata gave vnaṁ| kuṭila tumurun·| Atambha kadhavuḥhan·| Alappagə<space type="binding-hole"/>ra: rahayu gavene| bhaga porakan·| koru-horu hambhəke| maṁka pajurit sarirane| data /riṁ\ṅ uca
+<lb n="20v2"/>pi dudu| vani bhaya| tan kanan· ṅel·| tbus i dite pahi ri dhavuhan·| ri śavaḥ sambhat sadhṅə<space type="binding-hole"/>n amarabaṅun·| sadhṅən vuru mati| mulani vvaṁ hahutaṁ| Apin kabhuyutan· vetan kulvan·| hapitan
+<lb n="20v3"/>· pəṇḍəm· sadhṅən patihara <g type="circle"/> tu| 7| ma| 5| ca| 4| ca| 4| vatu guṇuṁ| gaṅan tanmən hayu| gu| 8| bya| <space type="binding-hole"/> <gap reason="illegible" quantity="1" unit="character"/>| ma| ra| ku(m)bha| carik·| mṅə-mṅə hambhəke vani bot·| data kabhaya-bhaya raghane| data kudhə§
+<lb n="20v4"/>sən sukune| tbus i mavulu maṇis·| ri pr̥thivi| sambhat saṁ| ca| Ibu pr̥thivi| bhaṭa:ra ga§<space type="binding-hole"/>mbhasore| haveḥ hapitan susaṁ| kakayu kapit deni kabhuyutan·| hapitan· reka janma ha
+
+
+<pb n="21r"/>
+<lb n="21r1"/>pavaraṅana| I| 5| bya| 7| ra| mr̥cika| ja| carik·| dataṅnakən tukar·| medane| ri§ <space type="binding-hole"/> phalu| luṅan kasukane| thaṅan suku larane| saṁ| vr̥| saṁra| saki n{*ə)ariti| tbus iṁ dalan·
+<lb n="21r2"/>vavala| rumbhaḥ śile| sambhat sakala manuḥ| hapraṅa gavehane| hapitan kalanta<space type="binding-hole"/>ka| mulaniṅ ana vaṅi ginave bhurat·| kabhuyutan kaL̥bu ri kḍuṁ| ri nariti kadaga: sa
+<lb n="21r3"/>ṅ kala sihuṁ-sihuṁ harane <g type="circle"/> va| 9| ka| 8| A| 3| julu vaṅi| salaḥ paksa vara ha<space type="binding-hole"/>la| gu| 8| va| 4| ra| ranu| maṇḍala| R̥sikan ambhəke vavadonən· vuruṁ paṅśevu lka⌈
+<lb n="21r4"/>ne| vulate coraḥ| tan ovaḥ medane| caru ri saṅgar·| ri dhṅən·| sambhat saṁ ku<space type="binding-hole"/>ladr̥mbha moha| mulaniṁṅ ana kəṇḍa:ṁ gəṇḍiṁ ragam śuputər·| śaṅka| padha giṇaməl mu
+
+
+<pb n="21v"/>
+<lb n="21v1"/>kən·| ca| celeṁ plen·| Asu baṁ buṅkəm· sathasuḥ| sambhat saṁṅ kala lampu| mtu vari§<space type="binding-hole"/>gajyan·| kapaṅavan·| pvamahan tadurana daśabhuriṅ utṣara //0// vu| 5| pva| 7| ra|
+<lb n="21v2"/>5| juluṁ vaṅi sahan huntuniṁ vvil·| vahara hala| ka:la gumaraṁ sumka| śri| 6| dva| 9<space type="binding-hole"/>| tula| la| bhi| ṣahaṁrasani gave| data dinura{ui na}-dura riṅ ala| vavadonən·| ta
+<lb n="21v3"/>n savmuṁ vadvan katvan· riṅ ala| mulani voṁ kakaraṁ tukar·| deni hdu hi śuśunira ra <space type="binding-hole"/> nini| bale panti padhaṁ muhujur aṅaloṙ| caru dhṅən i bale| sambhat sa kala phala bho§
+<lb n="21v4"/>ga| sadhṅən aṅaśaksata| sadhṅən· kr̥tha| sadhṅən samaya bhetra <g type="circle"/> pa| 8| ga| 4| <space type="binding-hole"/> ca| 4| juluvaṅi| kaladaṅu| heran hasiḥ pametana rarahayu| panambhanan ahila
+
+
+<pb n="22r"/>
+<lb n="22r1"/>//0// Om̐ Avighnam astu nama sidḍi //0// tu| 7| pa| 9| śri| 6| bya| 7| ra| <space type="binding-hole"/> 5| sinta: carik·| kaladaṅu rahu| suka sadaṇa| padagaṅan ahayu| cuṇḍəl ambhəke| hame
+<lb n="22r2"/>ret gave vatke| tan pakajijivan·| mulaniṅ ana mata lara| Aliliñokabuyutan<space type="binding-hole"/>· loṙ vetan· huṅgvanya| lavan i nariti| ka:la prakaśa: hapṅi| saṁ dhṅən liṇḍuṁ| saṁ dhṅən parihara| ba§
+<lb n="22r3"/>ntən haR̥p i dhṅən·| celeṁ plen·| tutunu hasu| sambat saṁ dhṅən prakaśa| saṁ dhṅən laṇḍuṁ| dhṅə<space type="binding-hole"/>n parihara <g type="circle"/> haṙ| 6| pva| 7| I| 5| vcu| 5| sinta| panigasana| pametana rare hayu| vatk ah/e\s·
+<lb n="22r4"/>| data hanaṅis·| Aja:tmika havake| ri matha larane| hasiḥ hasasaṇak·| saṁ| ba| sakr̥tta <space type="binding-hole"/> bhujaṅga| ga{*t}ve tbusane| mulaniṅ ana malantən·| saṁ hyaṁ viṣṇu kombakarane| Apitan· ba
+
+
+<pb n="22v"/>
+<lb n="22rv"/>[EMPTY]
+
+
+<pb n="23r"/>
+<lb n="23r1"/>m tuvuḥhe heliṁ haśaṣaṇak·| lali ri vvaṁṅ atuha| katmu ri gaga śavaḥ labhane tbu<space type="binding-hole"/>s i vulu manis·| sambhata| sa| vr̥| mulaniṅ ana lumbhuṁ katunon dinokni tataṅga| ra ka
+<lb n="23r2"/>ki jalaśaṅara hapṅi| hadr̥ve laraṅan·| hapitan jalamegha| ra kaki havaḥ§<space type="binding-hole"/>-havuḥ tka ri bhayabya <g type="circle"/> tu| 7| pa| 9| ha| 3| tolu| kaladaṅu| suka sada:na hayu pa 
+<lb n="23r3"/>dagaṅanaka| 1| bya| 7| ra| siṅa| maṇḍala| carik·| data haluluṅa ragane| du<space type="binding-hole"/>kinon meta hurip/e\| sa| bhu| sa| ca| ri maṇḍala labhane| Asevaka yan istri| hasa
+<lb n="23r4"/>ba pasaṙ havesan·| tan aspi raghane| data hamaṅan i vṅi| ri gulu ri vṅətə| lara<space type="binding-hole"/>ne| tbus i mavulu manis·| sambhat saṁ kala hamojayaraja| ra nini bhaṭa:ri kamula
+
+
+<pb n="23v"/>
+<lb n="23v1"/>ñca(ṁ) kaṙyya hayu hamayuha lumbhuṁ hayu kasukane| Alulu gavene| ri L̥suṁ labhane| Api<space type="binding-hole"/>kuḥ budine| tbus i lumbhuṁ| sambhat· bhaṭari śri| saṁ rara viva(ṁ)| tbus piṇḍo savguṁ| mulaniṅ ana kaka
+<lb n="23v2"/>karurubhuhan saṁgar·| Apitan taṁtaṁ bhuhaṇa| saṁ| ca| bhañu tka sakiṁ bayabya| tutugan sa<space type="binding-hole"/>raḥ kaṇḍəṇḍaṇḍa deniṅ apitan kuluma| hapitan gəR̥ḥ harane| saṁ| ra| sa| vr̥| tambruḥ haruṅu tukaṙ|§
+<lb n="23v3"/>hana kidul iṅ umakala paniron apṅi| sakala rundra haṅilenan atadhaḥ| dus·| sa<space type="binding-hole"/>| ca| piniṅit de saṁ| vr̥| haṅudaṁ rarai duk sakiṁ bhayabya <g type="circle"/> ma| 3| ma| 5| ca| 4| tolu/|\ śri§
+<lb n="23v4"/>gati tumurun·| riṁ panti| riṅ umaḥ dhaḥvuḥ pisan·| bra| 7| dva| 9| ra| rakaṭa:| bhaṭa:ri <space type="binding-hole"/> śri maṅimbhuhi| hamitisi tinanəm hayu| panbusan abhagya hayu| hapəkuḥ hambhəke| tan kagə
+
+
+<pb n="24r"/>
+<lb n="24r1"/>ṇḍiṁ vetan kulon·| Apitan pupuhun·| kabhuyutan vetan kulon·| papraṅan· ri pasaṙ <space type="binding-hole"/> kapitan deni papraṅan·| saka:la daṙmmaja:ti haranya| bantən i saṁgar·| sambat saṁ daṙmmaja:ti| sadhṅə
+<lb n="24r2"/>n pitutur·| saṅ aṇantabhoga <g type="circle"/> haṙ| 6| ka| 8| A| 3| prabhakat·| sivogan vara hala| <space type="binding-hole"/> i| 5| va| 4| ja| ra| kanya| rikəl odod·| carik· pavaraṅana hayu| padha lanaṁ haneka ka
+<lb n="24r3"/>rambi-rambi| tada gaməl· pa:pati| ri paśamohan· labhane| tansaḥ thinukulan kavani§<space type="binding-hole"/>ne| ginañjaṙ denai kavaninai| tbus i mavulu vage| ri lbuh aguṁ| Asu celeṁ| sambat saṁ kala
+<lb n="24r4"/>vani bhaya| saṁ ka:la tan· kn/e\ṁ pathi| saṁ kala sandeya| hapitan gagaruṁguṅan·| lara<space type="binding-hole"/>ne ginave-gave han/e\ṁ loṅan·| hapitan padaṅan·| hapitan· dy(u)n· gn(u)k padaṅan· <g type="circle"/> 
+
+
+<pb n="24v"/>
+<lb n="24v1"/>rakaṭa:| gumaraṁ tumurun·| haməməraṁ kaṙyyane| ri paṣamohan labhane| vani bott araipo<space type="binding-hole"/>t·| tan kavaśa mundaṙ yan anabhaya| maṅgatan pgat labhane| śavage tbusane| mulani voṁ ginañjaṙ
+<lb n="24v2"/>ri paṅadgan·| tbus i lbuḥ haguṁ| Asu celeṁ| sambhat saṁ kalaṅ amaḥ-hamaḥ| sadhṅən· viṣṇu| saṁ <space type="binding-hole"/> dhṅən· lalasṭi| Ana bañu kalakahan· <g type="circle"/> tu| 7| va| 4| ca| 4| prabakat·| Agaveha saṅga
+<lb n="24v3"/>r ayu| śri| 6| bya| 7| labha| ra| siṅa| pañjaṙ pakaṙyyan asusuga| pacarauna iṁ tgal·| hanr̥o<space type="binding-hole"/>kna rare hayu| data luluṅa| sumpə:r i kadaṁ vr̥gane| riṅ upaśubhaḥ paṅan kaR̥pe| tuṙ vəR̥kəṁ| tbuś iṁ
+<lb n="24v4"/>tumpək· vage ri pr̥thivi| sambat saṁ hyaṁ viṣṇu| saṁ hyaṁ śivaḥ| saṁ dhṅən· layu-layu| mula<space type="binding-hole"/>niṅ ana sumuṙ ginave| sa| ca| hapitan· rug· rama: haranai| lmaḥ məṇḍək· katṅaḥ tutuva: gə
+
+
+<pb n="25r"/>
+<lb n="25r1"/>yu| kasukane| tan adama kari| tbus i śavaḥ riṅ umaḥ| sambat saṁ hyaṁ hayu hamoṁ labha| tan a§<space type="binding-hole"/>vnaṁ huma maḥR̥p aṅ(e)tan·| handagakən jabhuṁ hana lmaḥ sisik·| sakalamoda ṅarana| kabhuyutan
+<lb n="25r2"/>· hana ri pagər·| haphitan hapaṇḍe lavan maṇḍala| hapitan· brahma viṣṇu haranai| riṁ śava<space type="binding-hole"/>ḥ hana pabajaṅan·| sa banaspati harane| ca| riṁ savaḥ| sambhat saṁ banaspati <g type="circle"/> pa| 8| ma| 5|
+<lb n="25r3"/>śu| 6| manahil·| bahniroga| vara hala| hatutuku sapi hayu| bra| 7| b{*r}ya| 7| ja| ra|§ <space type="binding-hole"/> mr̥sabha| panu{*n}cena rare hayu| pamanena ha{ui ya}tapi| hi rarai| carik·| kapagi tuvuhe| ri
+<lb n="25r4"/>bhabhasahan katmu kasukane| ginave habcik· sarirane| mulani voṁ vani kocak<space type="binding-hole"/>· gtiḥhe| kasambət iṁ tgal·| humaḥ katutug iṁ śaraḥ| kabhuyutanora kapuja| hapitan· lmaḥ mə
+
+
+<pb n="25v"/>
+<lb n="25v1"/>ṇḍək·| tbus i padusan· tumpəṁ putiḥ kuniṁ| Ivak loḥ linambaraṁ| sambat saṁ bhata kalama<space type="binding-hole"/>nuḥ| saṁ dhṅən kalantaka <g type="circle"/> va| 9| pa| 9| śa| 9| manahil·| diṙghayuṣa| paduduṣaṇ avka hayu| pa⌈§
+<lb n="25v2"/>metana tamba hayu| ka| 1| va| 4| ma| ra| miṇa| saṁ hyaṁ ciṇḍaga: kaṅ avevehan vuku| huṇḍa§<space type="binding-hole"/>gi kaṙyyane hanulus· labhane| Anananduṙ kasukane gacaṁ haṁruśi hambhəke| holih a
+<lb n="25v3"/>mriḥ-mriḥ hantuk iṅ ananakti| saṁ bhuhu haboti sumuṙ| malani voṁ holiḥ hamriḥ-mriḥ§ <space type="binding-hole"/> hantuk iṅ ananakti ri pavuhan·| tbus i pavuhan· pasukətan·| sambat· ra nini rajalakmi
+<lb n="25v4"/>| saṅ kala jaruman sidḍi| saṁ dhṅən kalataraṁṇa| mtu manahil·| ka| da| riṁ ghneya| //0<space type="binding-hole"/>// ma| 3| pva| 7| ra| 5| prabakat·| heran asiḥ| pavaraṅana hayu| 4| 4| dva| 9| śri| ra| 
+
+
+<pb n="26r"/>
+<lb n="26r1"/>| vu| 5| ma| 5| bhu| 7| prabakat·| pakəkəsana pari hayu| pavaraṅana| gu| 8| dva| 9| ma| <space type="binding-hole"/> ra| tula| śri gati sumka| vatke bhubhuru| tan aspi raghane| hakla:ṙ mulani voṁ haklaṙ than paraśa|
+<lb n="26r2"/>ṅel·| mulaniṁ ginañjaṙ ri pasasaraman·| bantən i saṅgar·| caru hasu celeṁ| haji śa<space type="binding-hole"/>takṣa lave| satharaurau| sambat saṁ hyaṁ gopuramba| kabhuyutan hana lor·| hapitan ta
+<lb n="26r3"/>mbhak· bhaya harane| kabhuyut pa:pat· lmaḥ baṁ| saṁ| bha| tuluṁ varas·| śri voṁ tani hagave<space type="binding-hole"/>ne <g type="circle"/> pa| 8| pa| 9| vr̥| 8| {*ma}praṁbakat·| daṅu| saṙvva viḍi pametana tamba hayu| ya| 9| bya| 7|
+<lb n="26r4"/>śri| ra| mr̥cika| carik·| dataṅnakən hinum·| hinatərakən labhanai| mulaniṅ ana pəraṁ§ <space type="binding-hole"/> pijər·| mulani devathaṅiriṅ-iriṁ bhaṭara kala: bantən i lmaḥ ri lbuḥ haguṁ| celeṁ vaṅun uri
+
+
+<pb n="26v"/>
+<lb n="26v1"/>p·| pnək sasaṅa| sambat saṁ hyaṁ ka:la hamoṅ ayu| hana lmaḥ gogombha ri śavaḥ| Ana kabhu<space type="binding-hole"/>yutan kapapas·| Andagakən· lmaḥ məṇḍək·| riṁ bhayabya kidul i lulubhukabuyutan maṇḍala§
+<lb n="26v2"/><g type="circle"/> va| 9| pva| 7| śu| 6| praṁbakat·| śikikinən·| jaṅan tanmən hayu| lu| 3| va| 4| labha<space type="binding-hole"/>| ra| ḍanu| pamutərana hulun hayu| rikəl kayu| data hanon/o\nton·| hana iṁ panti labhane| mu
+<lb n="26v3"/>lani voṁ habuḥ kudhisən·| śukune| Apitan· pomahan·| Apitan hyaṁ kabhuyu§<space type="binding-hole"/>tan/o\ra kapuja: gugutuk· vatu tan pamaśa| Umaḥ duruṁ nupugan· titiṅasane| hapitan 
+<lb n="26v4"/>· lmaḥ saṅar·| tbus i dhṅən·| sambat saṁ ka:la R̥mbəs·| sakala haluluṅa| humaḥ suvuṁ tu<space type="binding-hole"/>tuva duruṁ mtas· pomahan tavuR̥n· <g type="circle"/> ma| 3| va| 4| śa| 9| praṁbakat·| maṅanirauga hala
+
+
+<pb n="27r"/>
+<lb n="27r1"/>maḥ hapitan· lpihan·| kabhuyutan· lvar iṅ umaḥ juraṁ kidul·| hapitan· vəkən hara<space type="binding-hole"/>nai huṇḍaṁ-huṇḍaṁ ri pagər·| sakala gundik harane| saṁ dhṅən aparuṁpuṁ| katutugi śaraḥ| saṁ dhṅən· ⌈
+<lb n="27r2"/>n lem(b)on harane <g type="circle"/> haṙ| 6| ma| 5| ca| 4| bala| bhagyan hayu| 4| 4| va| 4| śri| ra| miṇa| pa<space type="binding-hole"/>lalakonan ahayu| pabhubhuru haknas hayu| gaga śavaḥ kaṙyyane| vatək aluluṅa| tan surud ka§
+<lb n="27r3"/>sukane hayu| mandihana patani katmu kasukane| sumuluduru labhane| data śavala§ <space type="binding-hole"/> lavan tatagane| bototamon·| vuron badane| tbas i śagar· devayajña:ha|
+<lb n="27r4"/>sambat saṁ hyaṁ śivaḥ guru| mulaniṅ ana bunəm bhuyut·| mulaniṅ ana śavaḥ di{ui ma}nun·<space type="binding-hole"/>| bhaṭara śaṅkara: hadumapi tani śavaḥ| sakala luruk-lu{*ka}ruk· harane| setra paR̥ka
+
+
+<pb n="27v"/>
+<lb n="27v1"/>| haluluṅana hala| panandu{*ha}/ran a\yu| hatutuku habibhit hayu| bra| 7| dva| 9| ja| ra| makara| pa<space type="binding-hole"/>s tumurun·| saṁ hyaṁ poṁgava kaṅ avevehan vuku| vvaṁ tani hakaṙyyane| riṁ gḍo loṙ labhane| ha
+<lb n="27v2"/>nonton pəraṁ kaR̥pe gave| mulani voṁ kavaduṁ| kna sapata dene saṁ| bhu| hasapata va<space type="binding-hole"/>ṅ atuva| hapitan· vvaṅ atuva| hana kabhuyutan· kalakahan· riṅ umaḥ sasakavalun caṙmma| tbu
+<lb n="27v3"/>s i paturaun·| sambat saṁ kalamoṅ ayu daḍi saṁ dhṅən pəṇḍəm·| mtu praṁbakat·| ka| da<space type="binding-hole"/>| riṁ madya //0// tu| 7| ka| 8| ra| 5| bala| saṅga vunuḥ| hamasaṁ vlaḥ bañcaṁ hayu| /ka\| 1| bya| 7
+<lb n="27v4"/>| ma| ra| kumbha| panaś i gave| haglaṙ vani bot· tan as{*ə}pi raghanai| ri tgalabhane| tbu<space type="binding-hole"/>s i lavaṁ| riṅ umaḥ| sambat saṁ kala śakti| duk arovaṅ iṅ tapa| mulani voṁ riṅ acap·| hu
+
+
+<pb n="28r"/>
+<lb n="28r1"/>na paṇḍ{*o}e| pañjiṅan·| kapañjiṅan· bharen·| hamuk· <g type="circle"/> pa| 8| pva| 7| bhu| 7| /ba\la| ci<space type="binding-hole"/>ntamani hayu| I| 5| bya| 7| ja| ra| vr̥ṣaba| carik aguṁ| pamanen ahayu| paguntiṅana: hatamba
+<lb n="28r2"/>kadhavuhan kaṙyyane| mulaniṅ ana vvaṁ sugiḥ pari tbus i dhavuhan i śavaḥ| sambat saṁ dhṅən putra<space type="binding-hole"/>-putri| mulaniṅ ana vatu| caru paṅulu livət·| lambharaṁ bebhek· ri sagar·| vḍus·| skul·
+<lb n="28r3"/>vuduk·| braśuci| skul kajog·| sambhat· bras aṅasiḥ praṇa| sivaḥ bhaṭa:ra śivaḥ| kuni(ṁ) <space type="binding-hole"/> bhaṭa:ra mahadeva| śiḍa makuk·| paduka bhaṭari rai| bhaṭa:ri pr̥thivi saraduni bebek·| śa
+<lb n="28r4"/>randuniṅ ayam·| tataniṅan·| gtiḥ məntaḥ gnəp· kapṅə{*na}ṅan· deni dhṅən kalantaka| hapi<space type="binding-hole"/>tan kuluma| kapit· deni bañu| lmaḥ mə{*ma}ṇḍək· gagaruguṅan·| hapitan ṣivalan pi§
+
+
+<pb n="28v"/>
+<lb n="28v1"/>bhuyutan· saṁ dhṅən samaya| saṁ dhṅən butət haranya <g type="circle"/> vu| 5| pa| 9| haṁ| 3| bala| śadana| pada§<space type="binding-hole"/>gaṅana| pananagihana| panumbhasana savuṁ r{*e}are hayu| śri| 6| dva| 9| laba| ra| meṣa| hasu hajag
+<lb n="28v2"/>· samka| vuron· deṇ lavani ṣaṇake dhavak·| bhibhine den lavani| katmu ṣapathane <space type="binding-hole"/>| sa| bha| sa| ca| mulaniṅ ana mañu haguṁ tan koru-horu hambhəke| mulani voṁ hatambak bañu| ha
+<lb n="28v3"/>śaśavaḥ kaṙyyane| bantən pahi sagaṙ saṙvva pavitra saṙvvakveḥ| sambat· bhaṭa:ra hasiḥ praṇa <space type="binding-hole"/>| bhaṭa:ra viṣṇu| skul kajog·| si meṅkak·| paduka bhaṭari| skul vuduk·| sambat· bhaṭa:ra śuci  
+<lb n="28v4"/>| saṁ vidadara tuluṅa hurip·| sa| ra| pinakadoṣanai| sa| bhu| phalaṇḍakan·| hana śu<space type="binding-hole"/>raṁgaṇa sadopət·| saṁ hyaṁ hayu hamabhanan avaras·| hapitan pila-pilu| maṇḍala: lava§
+
+
+<pb n="29r"/>
+<lb n="29r1"/>kari parane| sa| bhu| haṅəmbaniṁ| saṁ| śa| hapitan· pomahan· janma| handagakən tutuva| katu§<space type="binding-hole"/>tugiṁ śaraḥ| loṙ kulvan·| lmaḥ hamahesan·| data kelaṅ-elaṅan·| tbus i kali| sambat saṁ
+<lb n="29r2"/>ka:la həmbat-əmbat·| bhaṭa:ra śaṅkara| <g type="circle"/> tu| 7| ma| 5| śa| 9| bala| daṅu| pamarahan avka ha<space type="binding-hole"/>yu| lu| 3| ra| siṅa| saṁ hyaṁ vinaya kaṅ avevehan /vuku\ noradama raghane| data kadramedan
+<lb n="29r3"/>· halutək atine| tbus i kabotohan·| pasaṙ lbuḥ haguṁ| sambhat saṁ bhut{*u}a kulaḥ-kaliḥ <space type="binding-hole"/> loṙ kulvan saṁkane labhane| riṅ undaṁṅ-undaṁ sore huripe| kaki paṅavanini paṅa/va\n·| mu
+<lb n="29r4"/>lani voṁṅ ana kakilatan·| bañu ghni| saṁ| haṁ| biṇuñcalakən·| hahurip mari nariti| hu<space type="binding-hole"/>maḥ tan vənaṁ dumagaṅi/du\l· griṁ panas atis·| pusər i pomahan· nora katut· ri tgala
+
+
+<pb n="29v"/>
+<lb n="29v1"/>ṅa harane| saṁ| bhu| haniran mapi| hapaṇḍe ḍa:ṁ kaṙyyane| lavan adagaṁ <g type="circle"/> va| 9| va| 4| vr̥| 8| ba§<space type="binding-hole"/>la| rikəl bhuron·| vlaḥ pasaṁ| jariṁ kaṙyya hayu| gu| 8| va| 4| ma| ra| mituṇa| gaga śavaḥ kaṙyyane
+<lb n="29v2"/>| paṅan heṇak aR̥pe| Akras hambəke| mulaniṅ ana lajə:ṙ hatatambhak·| hamuja riṁ śavaḥ riṁ§ <space type="binding-hole"/> dhavuḥhan·| ha{*ca}śu celeṁ| taṅgal· pipitu| hatambhak avalulaṁ| sambat saṁ hyaṁ hayu hanuku ra
+<lb n="29v3"/>t·| saṁ hyaṁ tan titig·| saṅ asiḥ praṇa: Umaḥ kaplak· deni vatəs·| juraṁ loṙ kulvan·| ka<space type="binding-hole"/>bhuyutan aṅapit setra| lmaḥ məṇḍək· ri bhayabya <g type="circle"/> ma| 3| ka| 8| śu| 6| bhala| kaḍalman· va
+<lb n="29v4"/>ra hala| ya| 9| dva| 9| śri| ra| makara| habhubhuru haknas·| hamamasaṅ ahayu| kuṭila tumu<space type="binding-hole"/>run·| hadagaṅa kaṙyyane| hane pasaṙ labhane| tan pgat hucap-ucapan·| mulaniṅ ana kasaṁ
+
+
+<pb n="30r"/>
+<lb n="30r1"/>n kuluma| bañu vetan kulon·| hapitan kabhuyutan·| tbus i kabhuyutan·| sambhat sa(ṁ) ka§<space type="binding-hole"/>la haṁludanutuḥ| saṁ bhuta: cakrabhavaṇa maṇḍala| sakala hadus mas·| sakala dumaraṇa hara
+<lb n="30r2"/>ne <g type="circle"/> haṙ| 6| ma| 5| śa| 9| madhaṁkuṅan·| guntur umaḥ paṅalihana huma| I| 5| va| 4| ja| <space type="binding-hole"/>ra| kanya| pacaruha| pavaraṅana| pari hayu| rəkəl kayu| saṁ hyaṁ gaṇapati haṅavevehana ku⌈
+<lb n="30r3"/>votaniha| haṁriśakaṇa dhavuhan· kaṙyyane| data hadaṅu| vəR̥kə cirinya| ri paturon ka<space type="binding-hole"/>sukane| patmune| saṁ| ra| lavan saṁ| śu| mulani voṁ bədhəg·| hapitan bañu| kabhuyutan pigir i ka:
+<lb n="30r4"/>li| maṇḍala vetan kulon·| tbus i śaṅgar·| sambhat saṁ hyaṁ śivaḥ guru| bhaṭa:ra guru| mtu ma:<space type="binding-hole"/>dhaṁkuṅan·| kaladaśa haneṁ puṙvva //0// vu| 5| pa| 9| ra| 5| matal·| siliḥ hasiḥ pa§
+
+
+<pb n="30v"/>
+<lb n="30v1"/>madhaṁkuṅan·| maṅuripi pametan atamba hayu| paṅabajaṅa rarai hayu| U| 4| dva| 9| śri| ra| ra<space type="binding-hole"/>kaṭa:| pati tan ana putra hayu| hatambakadhavuhan kaṙyyane| vvoṁ taniha| hamaṅan aṅinum kasuka
+<lb n="30v2"/>ne| mulaniṅ ana sumbəṙ sumur· tbus i saṁgar·| sambat· saṁ hyaṁ taya| saṁ kuruṅan mas·| saka<space type="binding-hole"/>lamoṅa labha| kabhuyutan katutugi saraḥ hapitan suruḥ maṇḍalani nari/ti\ hanamurubh i vṅi| saṁ§
+<lb n="30v3"/>hyaṁ śunya katuraun haranai| saṁ hyaṁ prabhauta si karaṅanya <g type="circle"/> tu| 7| ka| 8| śu| 6| ma§<space type="binding-hole"/>dhaṁkuṅan·| daṅu| tujuheṁ| paṅlan hana hupas hayu| śri| 6| bya| 7| labha| ra| siṅa| carik·| ha§
+<lb n="30v4"/>meta pisis·| hapipirakan hadhupura gavene| hakeḥ labhane| suka raghane| su<space type="binding-hole"/>muluduru tuvuhe| tan idhəp inituturan· patine hagəri gumigil·| deniṅ apita
+
+
+<pb n="31r"/>
+<lb n="31r1"/>juraṅ aloṙ haL̥pitan·| sa| vr̥| haL̥pitan kabhuyutan· vetan· <g type="circle"/> va| 9| ma| 5| śu| <space type="binding-hole"/> 6| maraki| saṅ lavunuḥ vara hala| vlaḥ bañcaṁ pasaṁ hayu| gu| 8| va| 4| maṇḍala| ra| mituṇa: haga
+<lb n="31r2"/>ga śavaḥ kaṙyyane ri gḍo g/o\nai labhane| mula dr̥ve hilaṁ| mati kalivon·| ka<space type="binding-hole"/>vula rarai migat·| deniṅ apitan si vadhivu| (ka)li surup·| handagakən kabhuyutan·| vvaṁṅ a
+<lb n="31r3"/>tuva kadaga| tbusa| dudusa| hatavura| hacaruha saceleṁ| sambhat saṁ kala sulambhuran<space type="binding-hole"/>·| saṁ katampaliṅan·| saṁ kalakaramuñcaṁ| sadhṅən· baR̥bəd·| ca| laladhan· bebek·
+<lb n="31r4"/>babnəman· vlut· <g type="circle"/> ma| 3| pa| 9| śa| 9| maraki| si kin-kinən jaṅan· tanmən hayu| ya| <space type="binding-hole"/> 9| dva| 9| śri| ra| rakaṭa| hasu hajag misor·| hyaṁ mahadevavevehan vuku| Aśaśavaḥ kaṙyya⌈
+
+
+<pb n="31v"/>
+<lb n="31v1"/>pikul· paṅulu| sambhat saṁ kaki kave/ni\| nini kaveni| saṁ| ca| saṁ| śu| padha: haR̥pi| saṁ| ra| nriḥ nari<space type="binding-hole"/>ti| bhaṭa:ra brahma: hamiṇḍa puluṁ mulani voṁ vani riṅ upas·| bhaṭari duṙgga tumuru{*ma}n mari mḍa deśa
+<lb n="31v2"/>kapit deniṅ ila-hila| kapit deni kali hapitan kuluma| humaḥ saka vijen·| kapit deni§ <space type="binding-hole"/> bañu| śaka lvar·| sambhat saṁ bhuta tuñjaṁ bhiru| hamṭa kaṙyyane <g type="circle"/> pa| 8| ka| 8| vr̥| 8| marakiḥ| sa
+<lb n="31v3"/>mbu vara hala| pavinihan ahayu| I| 5| bya| 7| jaya| pacaron adr̥ve hayu| hanananduṙ§ <space type="binding-hole"/> saṙvva hakveḥ kaR̥pe hajatmika bhudine| ra| vr̥ṣabha| mulani voṅ analalaken·| sa| sa
+<lb n="31v4"/>ptavara hakumpul· təbus i kbon·| ca| tahiṁ koL̥k·| sambhat saṁ dhṅən hamo<space type="binding-hole"/>:ṅ ayu| sadhən· tan ṣimpaṁ lmaḥ hamahesan·| bañu loṙ kabhuyutan kidul·| bale mu
+
+
+<pb n="32r"/>
+<lb n="32r1"/>kalan umpali| saṅ kalaṅ ubat-abit·| daśa haneṁ nariti| mtu tatambir· //0// (haṙ) <space type="binding-hole"/>| 6| ka| 8| ra| 5| madhaṁṅkuṅan· Ikət gulu| vlaḥ bañcaṁ pasa:ṁṅ ayu| ya| 9| va| 4| śra| ra| miṇa| vi
+<lb n="32r2"/>ṣaya| jabuṁ gavenai| tan kəna pinituturan·| halayar agavya jojorauṅana kaṙyya§<space type="binding-hole"/>ne| bantən saṙvya pavitra| cinamaran tuvuhe| mulani voṁ vayuh apitan karaṁ| mulaniṅ ana ha§
+<lb n="32r3"/>yam binoṁboṁ| tbus i dḥṅən·| Atavura: hasu celeṁ| sambhat saṁ kala paṣa| saṁ dhṅən· ⌈<space type="binding-hole"/>bobos·| saṅ kala hoga-hoga| hapitan kilat abharuṅan·| husus akoleran·|
+<lb n="32r4"/>lavaṁ haR̥p-aR̥pan·| bañumili tka vetan·| saṁ kala hapaṅaraḥ saṁ dhṅən· bobya<space type="binding-hole"/>s·| saṁ dhṅən· hoga-hoga luṅa <g type="circle"/> vu| 5| ma| 5| ca| 4| madhaṁkuṅan·| śəkaniṁ śri gati
+
+
+<pb n="32v"/>
+<lb n="32v1"/>pasumk-isukana hayu| I| 5| dva| 9| jaya| ra| makara| gumaraṁ miśoṙ hadhiṭi| R̥p ikan<space type="binding-hole"/>·| doyan kinaṙyya hala| dataṅ i lor i pahes·| haneṁ lumbhuṁ labhane| mulani voṁ
+<lb n="32v2"/>picək·| hanaṇḍaṁ mala| hapitan vatəs·| hapitan tuvanomən·| lavaṁ habnər i panti<space type="binding-hole"/>| tbus i lavaṁ| sambhat saṁ ka:lanaṁguṁ saṅ araṁ| bhata lumpuḥ caru rumbhaḥ gile hasu <g type="circle"/> tu| 7|
+<lb n="32v3"/>va| 4| śa| 9| tambir·| tanma havake| gu| 8| bya| 7| ma| ra| kumbha| malitutup·| ha:<space type="binding-hole"/>papagəra hayu| pavaraṅana hayu| hyaṁ śaṅkaravevehan vuku| tan dr̥man havake| hamiśaya|
+<lb n="32v4"/>hamasaṁ kaṙyyane| vr̥k asəmpalabhane| sa| vr̥| hambalaṅakən saṁ| śa| tbus piśaṅa| mula:<space type="binding-hole"/>ni dośa śakiṅ apitan śetra| haṙca ri nariti kabvi bañu| riṅ eṙṣanya| bantən·| sambhat sa
+
+
+<pb n="33r"/>
+<lb n="33r1"/>n hayu| ya| 9| bya| 7| śri| ra| mr̥cika:laku dagaṁ| haṅugahi| phalalamarana hayu| gumlaṙ tu<space type="binding-hole"/>vuhe| riṁ papagagan hananəm kacaṁ vijen kaṙyyane data hababharibhinan·| pinideśa| tbus i la
+<lb n="33r2"/>va:ṁ masa sorai| sambhat saṁ kala rugaruntak i kadaṁ varagane den dol·| phala-phali§ <space type="binding-hole"/> hambhəke| hapitan tavon aṅṅaliḥ riṅ eṙṣanya| kabhuyutan· ri tṅaḥ pəṇḍəm iṅ eṙṣanya| lmaḥ pu
+<lb n="33r3"/>tiḥ kapit·| pagəṙ kalakuṅan·| deni vatəs·| kaki talahana saṁṅ apṅi| saṁ| ca| kro<space type="binding-hole"/>dḍa: saṁ dhṅən·| ragharutik hapṅi <g type="circle"/> va| 9| 4| A| 3| matal·| vara hala| paṅampətana vatə
+<lb n="33r4"/>s·| haśu celeṁ plen·| sambhat saṁ kala vuta| saṁ bhuta tuli bhisu| tbus agara vage| sa<space type="binding-hole"/>mbat· bhaṭa:ra viṣṇu| haja sira tukaṙ lavan saṁ| bha| saṁ| vr̥| hana lmaḥ putiḥ hana pəṇḍəm·| vatəs pe
+
+
+<pb n="33v"/>
+<lb n="33v1"/>caraun apuṇḍutan hayu| guru| 8| dva| 9| ma| carik·| caruhasmas ayu| pavaraṁṅana hayu| kaka§<space type="binding-hole"/>ṅena hayu| ra| tula| hasu hajag· sumka| ri pagagan labhane| hagagaha| vivijenana kaṙyya
+<lb n="33v2"/>ne| haśaba kbon·| hanuṇḍu viṣayanya kataluhan hambəke| tbus i ḍalan· vavala| sambhat ṣaṁ <space type="binding-hole"/> kala surakala| saṁ dhṅən avovotan·| saṁ dhṅən apaparan·| ri puruṣ laranai| mulani dodo
+<lb n="33v3"/>t vəvaṙṇnan·| haṅnakən ton-tonan pəraṁ pijər·| mulani ton-tonan·| hapitan kila:<space type="binding-hole"/>t abaruṅan· harane| papati den ajarakən·| kasambət· deniṁ kalanava /saṁ\ haveḥ lara| sa dhṅə§
+<lb n="33v4"/>n aluṅa| sa dhṅən avovotan avake| saṁ śubhakala| haruvata mala| saṁ| ca| mariṅ eṙ<space type="binding-hole"/>ṣaṇya| hatukaṙr aṅavamaṇa: <g type="circle"/> pa| 8| pva| 7| ca| 4| matal·| bhagyan panana/gi\hana| panbusana hal{*u}a
+
+
+<pb n="34r"/>
+<lb n="34r1"/>bane| kəñja-kəñja hambhəke maluniṁ voṁ halalaradan·| Apit· kidul· pəṇḍəm· <space type="binding-hole"/> Apit· kbon· pavuhan· lvaṙ kidul·| kaki ka:la samaya hapṅi| sa| vr̥| tka hyaṁ| saṁ dhṅən hu
+<lb n="34r2"/>lu-hulu hapṅə| saṁ dhṅən isər-isəṙ hapṅiṁ| saṁ| vr̥| makata susuci mari gunuṁ| mari patapan iṁ<space type="binding-hole"/>ṅ eṙsanya| bhagavan· vr̥s· <g type="circle"/> {*6}haṙ| 6| ka| 8| ca| 4| va| variga| saka śadana| varaṅana
+<lb n="34r3"/>hayu| ya| 9| va| 4| ra| kaṇya| śri vatək amuja hambhəke kavikun·| data haluluṅa <space type="binding-hole"/> saṁ| bha| hatutura ri patapan·| riṅ eṙṣaṇya| hananduṙ kaṙyyane| ri suku larane| riṅ a
+<lb n="34r4"/>ti larane| tbus i dhṅə| sambhat sa duṙgga kamulan·| hapitan turubunuḥ| kabhuyuta§<space type="binding-hole"/>n kidul midəṙ lo{*ka}r i kali| sakala carucuḥ haveḥ lara| bhaṭa:ra śivaḥ hamigrahani|§
+
+
+<pb n="34v"/>
+<lb n="34v1"/>| I| 5| dva| 9| laba| ra| rakaṭa:| gumaraṁ tumurun·| hya brahmavevehan· vuku| A<space type="binding-hole"/>minṭuṙ hambhəke haṅayam-ayam medane| haṅayu-hayu gavene| riṁ kaṇḍaṁ labane| gaga§
+<lb n="34v2"/>śavaḥ kasukane| viṣṇu riṅ ati kapəṅiṅan·| kapit deni voṁṅ aṅeṅer·| Ana <space type="binding-hole"/> lmaḥ gogombol·| bhañu hañurug·| śaka kidul· kayu haguṁ| kali sumuṙ haR̥p i
+<lb n="34v3"/>sumuṙ dhṅən·| saṁ kala gumantuṁ harane| mtu gumbhr̥g·| kasin· kevatha| tbuś i dhṅə kala <space type="binding-hole"/> gumantuṁ| saṁ kala sumka| saṁ kala tumurun·| kala daśabummi haneṁ dakṣiṇa //0//
+<lb n="34v4"/>tuṁ| 7| va| 4| ra| 5| variga| silih iśiḥ| vavaraṅan hayu| padupaṇa kaṇya| gu| 8<space type="binding-hole"/>| bya| 7| ra| siṅa| maṇḍala tan pəgat· babaribhinan·| hadumilah ambhəke| loṙ la§
+
+
+<pb n="35r"/>
+<lb n="35r1"/>ṅgapora| hana kabhuyutan i kbo haṙca| hapitan· liṅga praṇna harane| mulaniṅ a§<space type="binding-hole"/>na tirisan ṣinambhəṙriṁ glap·| śuṁ| ca| Atukaṙ lan saṁ| bha| saṁ hyaṁ kamulan haveḥ lara <g type="circle"/> ma| 3|
+<lb n="35r2"/>ha| 3| ka| 8| kurantil·| panuruḥhana hayu| phalalakonan ahayu| U| 4| dva| 9|§ <space type="binding-hole"/> ra| makara| paṅalihana humaḥ dhṅən ayu| saṁ kuṭila tumurun·| hagagaṇa| sih ambhəke lali
+<lb n="35r3"/>bhapa-hibhune midəṙ mendah ambhəke| sa| ra| lomaraṁ| saṁ| bhu| tṅaḥ tuvuḥ labhane| Amet dr̥<space type="binding-hole"/>ve ri saṁ| ca| ri puṇḍut{*·}an· n anandura| kəkəbonan· labhane| sa| ra| lavan· saṁ| śu| data haśa
+<lb n="35r4"/>pa bhudine| təbus i laladhan· bebek·| sambhat saṁ hyaṁ gaṇa| sandiraja:| saman·<space type="binding-hole"/>dirakṣa saṁ bhuta hijo maṁśa dhavuḥ pat·| ca| bhaṭa:/ra\ gaṇa tumurun·| dr̥ve hilaṁ pinəṇḍə
+<pb n="35v"/>
+<lb n="35v1"/>ṅadhaṁ titiś ibun· labhane | tṅaḥ vṅi tka labane katunoniṁ lumbhuṁ| saṁ| bhu| su| vineha<space type="binding-hole"/>n dr̥ve śaka ghneya| mulaniṅ ana: bhaṭa:ri śri| ginənəp-gənəp·| katunon iṁ lumbhuṁ lmaḥ məṇḍə§
+<lb n="35v2"/>k kakəpuṁ riṅ umaḥ| loṅan iṁ bale bañu mili kiduliṅ umaḥ hanərus pagəṙ tka loṙ <space type="binding-hole"/> kidul·| Apitan paḍaṅan·| kaki /ka\la: saṁ hapṅi| saṁ dhṅən ṣanak hapṅi| saṁ komara tka śakiṁ
+<lb n="35v3"/>bhayabya| Atavura ri pomahan·| sambat saṁ kala siṅa| saṁ dhṅən ṣanak· <g type="circle"/> va| 9| va| <space type="binding-hole"/>4| ca| 4| kurantil·| ra| daṇu| savogan vara hala| ka| 1| va| 4| kala bañcaṁ kaṙyya hayu
+<lb n="35v4"/>| maṇḍala:| hananduṙ kaṙyyane| kəkəbonana| mavulu manis· tka labane| pahiṁ tbu§<space type="binding-hole"/>sane| ca| saṙvya pavitra riṁ saṁgar·| sambhat· bhaṭa:ra hyaṁ hasno devathanya hapitan· ba
+
+
+<pb n="36r"/>
+<lb n="36r1"/>kasuk{*e}ane| vatk amuja| tan aR̥p koru-horuha| bhaga| saṁ| śa| hanluḥ mulaniṁ voṁ <space type="binding-hole"/> kneṁṅ upas·| hapitan· gaga śavaḥ sma lavan vatəs·| tbus·| sambhat saṁ kala viśe
+<lb n="36r2"/>ṣa| tikəl katəmbhuṁ deni kayu haguṁ| saṁ| śa| haneṁ saptavara| hapəraṁ| lavan saṁ rahu| <space type="binding-hole"/> kala ri ruhur· //0// haṙ| 6| ma| 5| ra| 5| varigaṅan·| si sakit·| vara hala|
+<lb n="36r3"/>I| 5| va| 4| carik·| ra| miṇa| jaya haṅucap agave kedhəp· den{la}ta kaduṙśa<space type="binding-hole"/>ya| niṅ ujar ala| viveka riṅ aṅn-aṅən· kaduṙśayan·| saṁ| rah alumuḥ matiha| duk ṣa§
+<lb n="36r4"/>kiṁ nariti| katon alavake| tbus aR̥pi dhṅən·| sambhat saṁ kala patutuṙ| saṁ <space type="binding-hole"/> dhṅən· rajalakmi| saṁ dhṅən· surud ayu| mulani voṁ kuṭuṁ jarijine nora voṁ de
+
+
+<pb n="36v"/>
+<lb n="36v1"/>ra| bhaṭa:ra guru harupa| saṁ| vr̥| kevuhan saṁ| bhu|| hatukar·| lavan saṁ| ca| hana haṙca| ri kbo<space type="binding-hole"/>n·| hadaśa: kaṅ adr̥ve kabhuyutan· riṁ lbuḥ loṙ kulon· saṁ maraṇak haranya <g type="circle"/> 
+<lb n="36v2"/>ma| 3| va| 4| śu| 6| variga| phala:lakonana hayu| pas tumurun·| U| 4| dva| 9| <space type="binding-hole"/> ra| makara| śri| vatək puja| hadhadhavuḥ kaśukane| hararatha tiṅale| mulaniṅ ana tum
+<lb n="36v3"/>-pəṁ dhənavuhakən·| saṁ| ra| sinuṅan dr̥vene| saṁ| bhu| tbhus i kabhuyutan·| ri kayu ha§<space type="binding-hole"/>guṁ| sambhat sa hyaṁ madiśora| saṁ mandiraksa:sa kala siḥ lara| hapitan· vatəs· <g type="circle"/> tu|
+<lb n="36v4"/>7| ka| 8| śa| 9| variga| kaladaṅu| carik·| heran asiḥ pavaraṅana hayu| śri|§ <space type="binding-hole"/>6| bya| 7| ra| kumba| saṁ hyaṁ śidakaṙyya vevehan vuku habəbəntuṙ kaṙyyane| pakehan i voṁ
+
+
+<pb n="37r"/>
+<lb n="37r1"/>mahan katraṣ deni pagəṙ| hapitan kəbon·| ra nini paduka bhaṭa:ri saṅ apṅi| hana vvaṁṅ akire <space type="binding-hole"/> hala <g type="circle"/> pa| 8| va| 4| śa| 9| kuranti{*n}l·| pinintuhu hajajaluka hayu| ya| 9| bya| 7| ra| vr̥
+<lb n="37r2"/>ṣabha| panbusana hulun hayu| saṁ hyaṁ liga prakaśaṅ avevehan· vuku| Ananaduṙ ga⌈<space type="binding-hole"/>vene tṅaḥ tuvuḥ katmu sakaṇe| kalaṁsa karaṁṅ ulu labane| data kasaṇḍuṁ| saṁ śukapṅi
+<lb n="37r3"/>ṅan·| pipitu tbusane| haduduṣa| tbus iṁ padaṅan·| karubhuhan kayu| hapitan· dha<space type="binding-hole"/>hon·| Umaḥ kaśavuran· roniṅ asəm·| ca| bhakakak·| sambhat saṁ kalaṅadu praṁ| bha
+<lb n="37r4"/>ṭara brahma| saṁ| bhu| hanar apaḍaṅan·| kaladaśa haneṁ madya //0// vu| 9| ka| 8<space type="binding-hole"/>| ra| 5| tolu| sisiR̥pa hayu| Ikət gulu| lu| 3| va| 4| ra| mituna| jaya| ka:la ba§
+
+
+<pb n="37v"/>
+<lb n="37v1"/>pva| 7| śu| 6| kurantil·| sida kaṙyya| padagaṅana hayu| gu| 8| dva| 9| ra| meśa| kala guma<space type="binding-hole"/>raṁ sumka| maṇḍala mulaniṅ ana phala kəmbhaṁ saṙvva havoṁ tiniban ṣapaṁ de bagavan sumitra| mala
+<lb n="37v2"/>niṅ ana voṁ lanaṁ va{*t}don lumaku viku| dinudus iṁ nataṙ t{*u}inisan·| cacaputiḥ| si{*na}§<space type="binding-hole"/>ra| saṁ paṇḍita hana riṅ akaśa| Aruvata sira saṁ L̥ṁL̥ṁkurap· tihaṁ ruvat·| Aṅituṁṅ-itu ha§
+<lb n="37v3"/>vakk i vvaṁ| sa| vr̥| lumaku hatapa ri ghn/e\ya| Aṅnakən sira tapabrata| sa| ra| Aṅulati ba<space type="binding-hole"/>pa| bakti riṁ vvaṁṅ atuvane| nora ketuṁ dr̥vene| karubhuhan kayu| hapitan lahos·| humaḥ ka
+<lb n="37v4"/>rarambhatan· godhoṁ| hana hasəm kararambhat·| tbus aR̥p i dhṅən·| tutunu hasu| sambhat<space type="binding-hole"/>· saṅ kala hora-gorag·| saṁ kala gənturan·| pəpəṇḍəman·| mulaniṅ ana suku /ha\lara| po
+
+
+<pb n="38r"/>
+<lb n="38r1"/>n· riraṁ-riraṁ| kapitiṁ təgal·| ri pagagan handagakən tutuha| hapitan lumbhuṁ gone <space type="binding-hole"/> dumunum tu{*la}tolu kapəgatan·| Ayam putiḥ pamulu tulak·| daśabhummi ri bha
+<lb n="38r2"/>yabya //0// ma| 3| pa| 9| ra| 5| gubr̥g·| sivogan· vara hala| ya| 9| dva| 9| ra<space type="binding-hole"/>| makara| Asu hajag· tumurun·| śri| Amiśeṣa vəR̥kəh aririhiṁ voṁ kaṙyyane| Amilpa
+<lb n="38r3"/>s·| sa| bha| ri kaṇḍaṁ hapitan· vakla| mulaniṅ ana kbo baṁka| hapitan kabuyutan<space type="binding-hole"/>·| bhañu sumurup·| tka kidul·| saṅ kala śivat-sivutt apṅi| saṁ dhṅə bharibin·| tbus i dhṅə|§
+<lb n="38r4"/>sambhat sa kala śivat sa dhṅən· bharibin· <g type="circle"/> tu| 7| pva| 7| ca| 4| gumbr̥g·| ve<space type="binding-hole"/>han pajajalukana hayu| patumbhasana haṣapi hayu| śevakaha| lu| 3| bya| 7| ra| ku
+
+
+<pb n="38v"/>
+<lb n="38v1"/>ly istri| tbhus i tgal·| sambhat saṁ hyaṁ navakəṇḍa| ca| saṙvva pavitra| tan pgat larane| po<space type="binding-hole"/>mahan hapitan tiris·| pvamahan suvuṁ| saṁ bhuta pitri hapṅi| mulaniṅ· vvaṁ kevuhan ha
+<lb n="38v2"/>nak-anak·| tbhus i kbon· lor·| sambhat· ra nini tan pəgat· larane| ra nini§ <space type="binding-hole"/> hamoṁ suka: saṅ amoṁṅ ayu| Ana bañu mili saka lvaṙ tan pgat· lara <g type="circle"/> va| 9| ma| 5
+<lb n="38v3"/>| śa| 9| tolu| marundaḥ śaṣtra hayu| padodvalana: pananagihana| gu| 8| va| 4| <space type="binding-hole"/> ra| danu| saṁ hyaṁ gaṇavevehan· vuku| maṇḍala| Aluluṅa kaR̥pe gave| haśe§
+<lb n="38v4"/>vaka halabhane hanak ilaṁ| hasḍahan· gḍoṁ L̥suṁ| ḍata kasaṇḍuṁ| tan pgat lara⌈<space type="binding-hole"/>ne| saṁ| ra| kinon aməṇḍəma śavane| saṁ| bha| hapitan· dhṅə sakaneka pəraṁ| hapita§
+
+
+<pb n="39r"/>
+<lb n="39r1"/>p·| pujanən sabran mavulu manis·| {*ra}| saṁ| bhu| hamoṁṅ ayuni voṁ <g type="circle"/> haṙ| 6| va| 4<space type="binding-hole"/>| vr̥| 8| susaṁ| sugiḥ manek hayu| caḥh ayu| pha| 9| va| 4| ra| kaṇya| carik· śri| gaga śavaḥ
+<lb n="39r2"/>kaṙyyane| nora spi ragane| mulaniṅ ana gaṅśa| gəṇḍiṁ kəṇdaṁ L̥ṇti muni| tbus i lsuṁ| <space type="binding-hole"/> bantən saṙvva kukuluban·| paduniṅ umaḥ ri heṙṣanya| sambhat saṁ hyaṁ taya hamoṅ ayu than si
+<lb n="39r3"/>mpaṁ| saṁ hyaṁ hayu tan luṅa| kabhuyutan kalakəhan·| hana bañu tka vetan·| deśa:<space type="binding-hole"/>pkit deni bujaṅga lavaṇ maṇḍala| sa| vr̥| pati kr̥ta harane <g type="circle"/> vu| 5| ka| 8| śu| 6| su
+<lb n="39r4"/>saṁ| tan kaṇḍəhan·| hadhavuhana hayu| phacarauneṁ lumbuṁ| saṁ kuṭila sumka| lu| 3<space type="binding-hole"/>| dva| 9| ra| tula| laba| vatək puja:brata hambhəke| kandəlan jabuṁ havake| saṁ| ba| hamu§
+
+
+<pb n="39v"/>
+<lb n="39v1"/>den veḥhakən· kendene saṁ| śu| sa kala mani saṅ apṅi| tbus i kbon·| saṁ kala ma<space type="binding-hole"/>ni śinambhat· <g type="circle"/> tu| 7| pva| 7| bhu| 7| suṁsaṁ| kaladaṅu mani{*ha}liha| pañjajalaṁkana| A
+<lb n="39v2"/>meta pakuvon·n antuk·| gu| 8| bya| 7| ra| siṅa| hamayu pvamahan·| pacarona: <space type="binding-hole"/> humaḥ| pametana tambha hayu| maṇḍala| hamahata kaṙyyane| hadagaṅa| mulani biṣa gave
+<lb n="39v3"/>hujar·| bhiṣa śagave hi vvaṁ| Ana vvaṁṅ atukar·| tbus i lavaṁ| hasucinənəm{*ə}·{*na}bhuvi ha<space type="binding-hole"/>ji samas·| sambhat saṁ kala tutaṁ bhuhaṇa: saṁ viyuṁ pasaken·| ra nini paduka bhaṭari| saṁ
+<lb n="39v4"/>kiṁ puṇḍutane| haja siran iṇḍidhəṇḍa| mul{*i)ani voṁ tan· kna vinaL̥rakən·| hapi§<space type="binding-hole"/>tan umpal-umpal· harane| kabhuyutan kadaga| Am/pa\s· deṣa| kabhuyatan səlaṁ suru
+
+
+<pb n="40r"/>
+<lb n="40r1"/>da vavadehan· tbu /pa\siṙ pasaṙ lbuḥ yanorana pkən·| sambhat saṁ buta kulaḥ-kaliḥ| sa| <space type="binding-hole"/> bhu <g type="circle"/> haṙ| 6| pa| 9| vr̥| 8| kurantil·| habhubhuru| I| 5| va| 4| ra| miṇa| Eran· va
+<lb n="40r2"/>ke| sa kaṙyya hala vla jari kaṙyyanən·| laba haṅituṅ-itu vtoniṁ voṁ vatke| §<space type="binding-hole"/> jnə:k i śaṇa| vatəktib·| mulaniṅ ana puja ka{*k}ṇe haji| su| bantən ṣaṙvya pavitra| saṁ
+<lb n="40r3"/>hyaṁ hayuga hasinambat·| tutuva guru pitara| sa| ra| haṅatuturakən· vəvəkas·| sa<space type="binding-hole"/>| vr̥| ra| taya haveḥ| śaśara ri valalkan·| vulan·| L̥| sa| vr̥| haśiluman·| haneṁ pr̥thi
+<lb n="40r4"/>vi| hiṅulatan·| sa| ca| hapitan· pəpəṇḍəman·| AnaR̥pi paḍaṅan·| sa| ra| <space type="binding-hole"/> havo| lara tutuha duruṁ mtas·| saṁ dhṅən milu mintaṙ hapṅi| pagəṙ hananuduk lavaṁ <g type="circle"/> vu| 5| 
+
+
+<pb n="40v"/>
+<lb n="40v1"/>m·| riṁ tṅahe| saṁ| bha| pitan kaṇḍaṁ̲ lavan maṇḍala| riṁ kbon kasakala| Apus-apus arane§<space type="binding-hole"/>| sa komarasiḍi hapṅi| saṁ| ra| tbus i kbon·| sambhat saṁ kalaṅ apas· <g type="circle"/> tu| 7| ma| 5|
+<lb n="40v2"/>bhu| 7| kurantil·| kadalman avavara hala| śri| 6| bya| 7| carik aguṁ| ra| kumba| <space type="binding-hole"/> pabəlasan araraś bəlasan hayu| jaya mulaniṅ ana hayam·| phala bhuṅkaḥ lmaḥ sinuha
+<lb n="40v3"/>n·| ca| saṙvya pavitra| raka haja kari| Amuṙvva pati lara lapa| panes atis·| śa<space type="binding-hole"/>| bhu| haveḥ larahiṁ| sa| ra| yen mati hasamaya| sambhat·| bhuta maṇa hayu| babhu manu ha
+<lb n="40v4"/>yu| leleñjeṁ hambhəke| belairai| mulaniṅ ana lerai juraṁ kapit·| ḍe<space type="binding-hole"/>niṁ kbon·| hapit· suṅan· pitan lahos·| hadagaṅa dodvat kaṙyyane| saṁ| bhu|
+
+
+<pb n="41r"/>
+<lb n="41r1"/>don ṣakane labhane| saṁ| ra| śinuṅan ḍrvene| saṁ| ca| ri nariti haśa(ṁ)gama| haja /ha\śa<space type="binding-hole"/>bha voṁ vadon·| viśayañəkapi voṁ| mulani v{*u}oṁṅ ana sugiḥ kalur·| hapitan bhañu tu
+<lb n="41r2"/>tugan hapitan tuvakadaga| hapitan brahma padaṅan· śuhumaḥ lavan· dhṅən· sa dhṅə:<space type="binding-hole"/>n· laliḥ| sa dhṅən ha\ñ/ja-hañja: hapṅi| saṁ dhṅən amedarau hujar·| sa dhṅən mañjiṁ mijil·| tbus i
+<lb n="41r3"/>dhṅə| sambhat saṁ dhṅən· vaḥhujar·| dhṅən mañjiṁ mijil· <g type="circle"/> va| 9| /ma\| 5| ca| 4| susaṁ| mala:<space type="binding-hole"/>tha vara hala| śra| 6| va| 4| ra| mituṇa:| labha| Aməməraṁ| hakaṙyyane| hajagal agave⌈
+<lb n="41r4"/>ne| data pinaran i paṇḍita havake| riṁ pasaṙ labhane| viśaya kabler· lasvan ha:<space type="binding-hole"/>mbh(ə)ke| sa| ca| saṁ| ra| ri nariti| tbhus i lbhuḥ| sambhat sa kala mucakpati| mulani voṁ lana:ṁ
+
+
+<pb n="41v"/>
+<lb n="41v1"/>masasampuṙ| ha\n/dagakən kabuyutan·| sa kala hanaṇḍaṁ rauga haranai| saṁ dhṅən vikula ha<space type="binding-hole"/>ranai <g type="circle"/> ma| 3| pa| 9| ha| 3| susaṁ| suguvuruḥ| vlaḥ bañcaṁ patil·| kala pasaṁṅ ayu hasu haja
+<lb n="41v2"/>g tumurun·| carik·| I| 5| dva| 9| ra| rakaṭa:| jaya| Ajagala hamahata kaṙyyanai| kabha<space type="binding-hole"/>ya-bhaya raghanai| naura piliḥ gave| kasapa deni bhatu| ri paśeban kasukane| mvaṁ
+<lb n="41v3"/>labanai| saṁ| ra| Iṅuripakən dainai| sa| vr̥| data hanəmbhuṁ si vvaṁ vadon·| duś i <space type="binding-hole"/> kuba| haguṁ bantə| caru hasu celeṁ| sambhat saṁ hyaṁ taya hayu| saṁ ratu śira ta vinalu
+<lb n="41v4"/>ya{*ta}kən·| saṁkiṅ {*k}ajəṁ| sakiṁ caṅkok·| mulani saṁ hyaṁ śivaḥ /tu\murun·| sa| bhu| ha:<space type="binding-hole"/>gave papathi ri kbon·| Apitan gətiḥ| lmaḥ hamahesan·| saṁ| bhu| ginaməl dene| saṁ| ra|
+
+
+<pb n="42r"/>
+<lb n="42r1"/>masiḥ| caru ri natar· bhavi haji samas·| sambhat· ra nini bhaṭa:ri modaṁ| śalaḥ {*pa}rupa<space type="binding-hole"/>| bhuta gigidhaḥ hapitan· saki nariti| saṅ upat-upat samaya harane| bhañu sambhəṙ tadhaḥ
+<lb n="42r2"/>loḥ bhaṭa:ra rudra hapṅi| ra nini sivaḥ bhuta hamuja <g type="circle"/> tu| 7| pa| 9| vr̥| 8| juluṁ vaṅi| si§<space type="binding-hole"/>{ui ra}ṅas· ri paṅukupan abhurat hayu| padusan kaṇya| pacarona kamituvuḥ panambhana  
+<lb n="42r3"/>n aśalaḥ ton hayu| lu| 3| bya| 7| laba| ra| kumbha| carik·| bhagapora hambhə<space type="binding-hole"/>ke| mulani voṁ hana tinata| mulaniṅ ana tinbus i lavaṁ| lavan iṁ panti| sambhat sa kala
+<lb n="42r4"/>moṅ ayu| sa kalamo suka| kalamoṁ taya| sadakala| bantənana ri nariti| ka<space type="binding-hole"/>buyutaṇ nora kapuja lmaḥ məṇḍ(ə)k·| vetan kulon·| haṅapit deśa| saṁ| vr̥| saṁ hyaṁ§
+
+
+<pb n="42v"/>
+<lb n="42v1"/>ni kabeḥ| saṁ| vr̥| haṅnakən puja| samamuja puluṅan·| puja:gasṭi| sa| ra| mariṁ ghneya| ha<space type="binding-hole"/>pitan oga-hoga harane| Upata harane| śavaḥ kapit deni pabajaṅan·| tadhaḥ vuk
+<lb n="42v2"/>· hana ḍrve hilaṁ| sapupus amet·| saṁ dhṅən andali hapṅi| saṁ dhṅən pupus·| caru ri <space type="binding-hole"/> dhṅən·| sa dhṅən handaliḥ hamet·| <g type="circle"/> ma| 3| ma| 5| bhu| 7| julu vaṅi| śri gati m{*e}isoṙ du
+<lb n="42v3"/>munuṅi lumbhuṁ| surup saṅeṅe ri paturvan hayu| baṭa:ri śri maṅbək·| pavinihana <space type="binding-hole"/> hayu| ya| 9| dva| 9| śri hatutuluṅa kedhəp· pañarikaṇa: gavene| hadagaṅa va
+<lb n="42v4"/>vaṅi| mulaniṅ ana papaṅa\n/tene lik·| ra| makara| saṁ| ca| saṁ| ra n{*i}ariti nora <space type="binding-hole"/> hatut·| tbus i paturvan·| lambharaṁṅ ayam·| gḍaṁ sinameni| sambhat saṁ bapa manuḥ b{*u}abu
+
+
+<pb n="43r"/>
+<lb n="43r1"/>ne| luṅa:calaka tka labhane| sa| bha| saṁ| śu| mari ghneya| mulani voṁ lalaranə:<space type="binding-hole"/>n vəlu beseṙ| kaśarik i pomahan·| saṁ| bhu| sa| śu| kinon asaśaṅiha tutuva duru mta
+<lb n="43r2"/>s·| ka| kadaga| ca| hayam· va{*ka}lik iR̥ṁ| tulak taṁgal·| sambhat saṁ tutuha| sa| <space type="binding-hole"/> vr̥| <g type="circle"/> haṙ| 6| pa| 9| śa| 9| variga jyan·| lalehan· hakaṙyya vaL̥san· vlaḥ bañcaṁ pa:
+<lb n="43r3"/>pasaṅaṇa hayu| U| 4| va| 4| ra| kaṇya| śri| carik·| saṁ hyaṁ sidi R̥si haveve<space type="binding-hole"/>han vuku| Amahata gavehane| visaya turu rahiṇa| hama:mayu kaṙyyane| ri kbon laba
+<lb n="43r4"/>ne| Aśaśaṅi ri kabuyutan·| mulani voṁ bhulakmən·| data haṅucapi voṁ| ha<space type="binding-hole"/>pitan tutup i gəṇḍiṁ| Apitan husuṣ akoleran·| lavaṁ busu spaṁ| ghni den ajara
+
+
+<pb n="43v"/>
+<lb n="43v1"/>ṅ keraṅan·| vara hala| bra| 7| dva| 9| ra| rakaṭa| saṅ kuṭila tumurun·| vlaḥ kala pasaṁ<space type="binding-hole"/>| caru hapuṇḍutan hayu hapipi{*na}run gavenya| bhisa haṁrasani gave mulaniṅ ana daṙmma papa
+<lb n="43v2"/>ti| saṙvva rinatban·| lavan tərus mari kbon·| bantən uL̥r-uL̥ṙ tumpəṁ papagaṅ ayam<space type="binding-hole"/>·| sambhat· saṁ hyaṁ hamoṁ{*ha}ṅ amriḥ hamoṁ hayu| saṁ hyaṁ pr̥thivi| saṁ hyaṁ taya hamoṁ riṅ ayu
+<lb n="43v3"/>kayu sə:pəm kidul i pakuvon·| tutugan saraḥ| kabhuyutan· lo kidul·| ha<space type="binding-hole"/>na haṙca sabraṅ kulon·| dadine saṅ kala rahu| sa| vr̥| <g type="circle"/> {ui la}tu| 7| ma| 5| śu| 6| varigaja
+<lb n="43v4"/>n·| śri tka| pacaron· ri lumbhuṁ hayu| pacaroneṁ puṇḍutan ayu| panucenana raraha<space type="binding-hole"/>yu| sa| ca| tka| ka| 1| bya| 7| ra| siṅa| maṇḍala| vatk atulu labane| gumerebheḥ bhudi
+
+
+<pb n="44r"/>
+<lb n="44r1"/>piliḥ gave| vaṇi lapa| saṁ| haṁ| kinon apaṇḍeha vsi| tbus i gaga savaḥ ri nataṙ ri kbo<space type="binding-hole"/>:n·| ca| saṙvva R̥R̥cakan·| R̥caka bhavi haji samas·| sambhat saṁ kala punadaṙvva| ra§
+<lb n="44r2"/>nini bhaṭari duṙgganuku rat·| hapitan kalisaṅara de śakatəmbuṅi sumbər·| laraśiṁ gu<space type="binding-hole"/>lL̥n·| salopanaka harane| saṁ butamoṁ suka harane| <g type="circle"/> va| 9| pva| 7| vr̥| 8| variga| ri
+<lb n="44r3"/>əl sato tadhaḥ bhuron·| ka| 1| va| 4| ra| danu| maṇḍala| vlaḥ bañcaṁ kaṙyya hayu| mu<space type="binding-hole"/>laniṅ anabab{*sa}{*na}· lad·| mulani voṁ pi/ni\ṅit·| saṁ| bhu| nora vinehan luṅa de{*v}⌈
+<lb n="44r4"/>ne| saṁ| vr̥| hapitan istri| mulaniṅ ana patakann istri| hadaṅa jaṅan·| tbus i pavuha<space type="binding-hole"/>n bavi haji samas·| saṙvva| yaṙ| sambhat saṁ hyaṁ taya hamoṁ labha| saṁ hyaṁ tan ila| saṁ duṙgga śaṅ a
+
+
+<pb n="44v"/>
+<lb n="44v1"/>pagəṙ hanuduk· śaka kulon· <g type="circle"/> vu| 5| ma| 5| A| 3| variga| haṅugahakna pa§<space type="binding-hole"/>ri hayu| skaniṁ śri gati| lu| 3| dva| 9| ra| tula| jaya| vatk amuja bhudine| haməməraṁ gave
+<lb n="44v2"/>hane| hapadaya vatke| tbus iṅ asu celeṁ ri natar·| ka| sambat sa kala dumarana<space type="binding-hole"/>| bhaṭa:ra kala hamamaṅan harupa saṙvva kumilip·| saṁ| bhu| taṅi tukar·| Ana patani saṁ
+<lb n="44v3"/>| ra| tagih iṅ aṣa| hapitan gaga kavurahan·| kayu hagtiḥ haṅukul i hamaḥ saṁ kala <space type="binding-hole"/> loka harane| saṁ dhṅən huvuḥ-huvuḥ| saṁ dhṅən apuṅut·| duk saṁ rahu takon bhapa| rupa
+<lb n="44v4"/>muka tiga <g type="circle"/> pa| 8| pa| 9| bhu| 7| variga| sumaribək· parandilan·| bra| 7| bya| <space type="binding-hole"/> 7| ra| mr̥cika| panenana| paguntiṅana hayu| hlar i ga{*r}ve| ti tgal kasu/ka\ne| nora§
+
+
+<pb n="45r"/>
+<lb n="45r1"/>9| va| 4| carik·| ra| makara| śri| Ayoga hasamadi hayu| viṣayavovot dr̥veniṁ voṁ medane| luṅa vṅi labhane| hamet dr̥veni mati| bhiśa gogoḥ ri vṅi| hamṅakən kuñci| matha
+<lb n="45r2"/>riṅ ati larane| tbuś dina sirah| ri saṁgaṙ bhavi haṅguṁṅ almu| hasubaṁ bukəm·| dudusa gti<space type="binding-hole"/>ḥ| hi celeṁṅ asu| ruruvatan·| tbus piṁlima haṅnakən kayogan·| sambhat· bhaṭa:ra saṙ
+<lb n="45r3"/>vojava| sinamadaya| saṁ kr̥tayuga| saṁ cikarabhala| rupa jalma| saṁ| ra| saṁ| bhu| kino<space type="binding-hole"/>:n aṅulatana pomahan·| mari bhayabya| hapitan hadol· non arane| saṁ| bhu|
+<lb n="45r4"/>kidul· vetan· lmaḥ sasaṅar·| sa dhṅən manohara harane <g type="circle"/> vu| 5| pva| 7| A| 3| laṁkir·| riṅ aL̥m haluluṅa hayu| gumaraṁ sumka| lu| 3| dva| 9| ra| meṣa labha| rahina vṅi§
+
+
+<pb n="45v"/>
+<lb n="45v1"/>yutan· caru| puligajiḥ| sambhat saṁ ka:la dilaḥ pati| ka:la kulon· //0// <space type="binding-hole"/> tu| 7| ma| 5| ra| 5| salaṅ pakṣa| vara hala| laṁkiṙ kaladaṅu| gu| 8| bya| 7| ra| kumbha| maṇḍa
+<lb n="45v2"/>la| data haveve| kasukane| ri matha ri suku larane| riṅ ati salah aṅn-aṅən·| ña<space type="binding-hole"/>ṇa| kakehan· ñana| caru ri śaṅgaṙ hasa {*l}celeṁ | sambhat saṁ kitra| mulani dr̥ve hilaṁ
+<lb n="45v3"/>cinoloṁṅi malim| kapṅiṅan deniṁ gura| pitara duru mtas·| Apitan pitara tutu<space type="binding-hole"/>gan saraḥ siki ghneya| kabhuyutan kulon·n i kali haṅapit· loṙ kulon ṣa kala
+<lb n="45v4"/> madaḥ harane hapṅi saṁ dhṅən pmaṇa gataka| tbhus i dhṅən· pmaṇa gataka| saṁ dhṅən taraṁgaṇa:<space type="binding-hole"/>| vatu gumuluṁ <g type="circle"/> haṙ| 6| pa| 9| ca| 4| laṁkir·| diliḥ riṅ ala pakatenane| vara hala| 8|
+
+
+<pb n="46r"/>
+<lb n="46r1"/>gat·| kala bañcaṁ kaṙyya hayu| śri| 6| va| 4| ra| danu| laba| vatk amuja:brata| <space type="binding-hole"/> ri gaga savaḥ labhane| muliḥ dhavuk· dr̥vene hana ri kadut·| mulaniṅ ana hujaṙ
+<lb n="46r2"/>piniṅit·| lara ginave-gave| Apitan kaluma| bañu vetan kulon·| <space type="binding-hole"/> kabhuyutan· tbus i kali padusan·| sambhat saṁ kala-kali saṁṅara| saṅa kala buntulu <g type="circle"/> 
+<lb n="46r3"/>ma| 3| ka| 8| śa| 9| kuniṅan·| si tinanduṙ hayu| sa kaṙyya hayu| I| 5| dva| 9| §<space type="binding-hole"/> ra| makara| kuṭila tumurun·| jaya| saṁ hyaṁ praṇiti havevehan vuku| haR̥p avikuha
+<lb n="46r4"/>| data halulut inigalakən suśu| dene| saṁ| bhu| kariha jalma| den pupuse<space type="binding-hole"/>ni labhane| mulani voṁ diL̥| kala kadaga| hapitan tumbunuḥ| loṙ vetan·| kabhu
+
+
+<pb n="46v"/>
+<lb n="46v1"/>mñaṙ tutur{*ə}ari| sa| bhu| śu| hapitan bayəm·| kapṅiṅan i tutava| sa| bhu| vaṇi hasapata ri gu§<space type="binding-hole"/>ru| sa| bhu| sa| śu| hañjaluk taliḥ kadərak· <g type="circle"/> pa| 8| pva| 7| vr̥| 8| kuniṅan·| brajamaṇi§
+<lb n="46v2"/>k·| pavinihaṇa hayu| paR̥botan aḍrve hayu| pavaraṅana| U| 4| bya| 7| ra| mr̥cika<space type="binding-hole"/>| den dadama śarirane| tan koci hambəke| den alani raghane| mulaniṅ ana dr̥ve sinimpə
+<lb n="46v3"/>nan· paririṅ ampəriṁ lumbhuṁ| tbus i panukoca| bhakakak·| paṅulu saṙvva pavitra| <space type="binding-hole"/> sambhat· ra nini bhaṭa:ri śri baṭari manurun·| saṁ hyaṁ viṣṇu mitaya hamoṅ ayu| hapita
+<lb n="46v4"/>n kabhuyutan· pigir i kali kapit· deni maṇḍala| pitutureṁ saṁ| ca| mari saṁ bhu<space type="binding-hole"/>da <g type="circle"/> va| 9| va| 4| śu| 6| kuniṅan·| maraunta| pamarahana vəka hayu| pamutərana mi
+
+
+<pb n="47r"/>
+<lb n="47r1"/>deniṅ atukar·| saṁ| ha| hatakoni saṁ| bu| sahakaliṅa| Apitan· juraṁ runda| biṣa li⌈<space type="binding-hole"/>ñok· noraṅakuri polahe| ri savaḥ bañu tutugan saraḥ juraṁ kadaga| saṁ dhṅən tan ovah a
+<lb n="47r2"/>rane hapṅi dr̥ve hilaṁ katmu maniḥ| ri nariti ri juraṁ <g type="circle"/> vu| 5| pa| 9| bhu| 7| kuniṅan| śi<space type="binding-hole"/>namu-namu| pamasaṅana tumbhal· sa kaṙyya susug hayu| hasu hajag sumka| ka| 1| dva| 9| ra|
+<lb n="47r3"/>tula| maṇḍala| viṣaya puyəṅan·| nvara jnək iṅ umaḥ| haṅupaya dr̥veni voṁ ga⌈<space type="binding-hole"/>nene| saṁ| vr̥| den takonakən dr̥vene| saṁ| śa| mulaniṅ anaṅavaśi| hamṅ-amə hamet dr̥ve
+<lb n="47r4"/>ni voṁ {*ga}{*ve}{*ne}| tbus i padaṅan· saṙvva savlas·| sambhat· ra nini sira saṅaratəda:<space type="binding-hole"/>ya| sa kala lupa gave| tbus hisuḥ-hisuḥ dinas·| mulaniṅ ana don gatal·| sa| ra| ku
+
+
+<pb n="47v"/>
+<lb n="47v1"/>tbus i padusan·| sambhat· ra nini meni-meni| mulaniṁ dr̥ve hilaṁ| Umaḥ katutugi <space type="binding-hole"/> śaraḥ| saka kulon hana peṅan· hapaR̥k·| sambhat sa kala maṣapati| sa dhṅən·
+<lb n="47v2"/>hovaḥ vada <g type="circle"/> haṙ| 6| ma| 5| ha| 3| kuniṅan·| saṙvva jaṅan tanm(ə)n hayu| saṙvva vr̥ḍi saṙ<space type="binding-hole"/>vva gamoṅan·| pananagihana hayu| bra| 7| va| 4| carik·| ra| kaṇya| jaya| data halu
+<lb n="47v3"/>luṅa medane| ri pasamohan labhane| den dokni patarana| hasəp dupane| mula<space type="binding-hole"/>ni viku hapuyəṅan· hanənəbus· voṁ kaṙyyanai| sada vəke/R̥\| mulani voṁṅ anaṅaməṅ-a
+<lb n="47v4"/>mə(ṁ)| tbus i dala guṁ tṅaṅe| celeṁ haji samas·| hasu plen·| sambhat saṁ kala garudha <space type="binding-hole"/> vinikvan·| sa| ra| tumurun dene| sa| bha| hyaṁ mahadeva hanapiḥ| sa| bha| hañjujug atukar·| haja
+
+
+<pb n="48r"/>
+<lb n="48r1"/>nuṁku rat·| caru bhavi haji satak·| Ayam iṅiku(ṁ)| {*ha}luluvayu| sambhat saṁ kalanu<space type="binding-hole"/>ṅku rat·| Apitan vot pavvana <g type="circle"/> va| 9| pva| 7| śa| 9| dhuṅulan·| putkati vara hala
+<lb n="48r2"/>| vuruṅan gavenən hayu| gu| 8| va| 4| maṇḍala| ra| vituṇa: haṅumbhara ragane| saṁ hyaṁ <space type="binding-hole"/> vi\ṣ/ṇu kaṅ avevehan vuku| tan sipi ragane| haneṁ panti labhane| ri pasamohan kaśu
+<lb n="48r3"/>kane| mulaniṅ atukaṙ padha sanake| hapitan baluṁ| kmətane nora den bantəni| <space type="binding-hole"/> hapitan təgal· phalaṇḍakan· juraṁ kidul·| kabhuyutan kadaga tbus i dhṅən·| sambha:
+<lb n="48r4"/>t saṁ bhuta sum·punuḥ| saṁ bhuta tavon aṅaliḥ| mtu dhuṅulan·| kaladaśa riṅ eṙ<space type="binding-hole"/>ṣaṇya //0// ma| 3| va| 4| ra| 5| kuniṅan·| hudan mas pavaraṅan· hayu| pacarau
+
+
+<pb n="48v"/>
+<lb n="48v1"/>na| pametana rarahayu| ya| 9| dva| 9| śri| ra| rakaṭa| data haluluṅa| bhiṣa /ha\met u<space type="binding-hole"/>taṁ| vavadonən· vadane| sasaṙ tuvuhe| mulaniṅ ana kabhuyutan· hacala nora ka
+<lb n="48v2"/>puja| ka| tbus i kabhuyutan·| sambhat saṁ kala lodra| sa dhṅən· śakti| sa dhṅən miraḥ| <space type="binding-hole"/> saṁ dhṅən praḍaṇata| Aja śiraruśak deṣa| kabhuyutan haṙca vetan juraṁ kulon·| maṇḍala
+<lb n="48v3"/>| kadaga| saṅ kala viṣṇupaḍa| saṁ hyaṁ brahma| saṁ dhṅən samərana| sa dhṅən pma data pṅi hatako<space type="binding-hole"/>:n jopət· varas· <g type="circle"/> tu| 7| ka| 8| ca| 4| kuniṅan·| tutuk masiḥ| pamarahana vka hayu
+<lb n="48v4"/>| pavaraṅana| sa kaṙyya hayu| lu| 2| bya| 7| labha| ra| siṅa| hadagaṅa| halalaya<space type="binding-hole"/>ra ga{*n}vene| data hasañja:r i pasaṙ kaśukane| vəR̥kəṁ tuṙ cuṅap·| ri suku larane§
+
+
+<pb n="49r"/>
+<lb n="49r1"/>n· ma/na\he| mulaniṅ ana brata sisiriḥ lbuḥ haguṁ| pa{*ta}piraṅan papijəran·\ ri pasaṙ śa<space type="binding-hole"/>ṅ kalanavuṁ| saṁ kala handon pəraṁ| mulani vo hadhadhavuḥ halariḥ| bhaṭa:ra katumurun· (sa)
+<lb n="49r2"/>vansa| A| hadr̥ve manaṣa| ri madyapada| hənti devata| hapitan sunya| kapit deni maṇḍa<space type="binding-hole"/>la| dr̥ve hilaṁ hana ri loṅan·| saṁ| bhu| pinalayokə dene| saṁ| ra| hanata pagave§
+<lb n="49r3"/>riṅ umaḥ vetan·| Apitan· pek-apek ajaṁ| hujare| saṁ| ha| sa kalamukṣa| hadu<space type="binding-hole"/>luṙ lavan saṁ| bhu| saṁ dhṅən veve| saṁ dhṅən madya <g type="circle"/> haṙ| 6| ka| 8| bhu| 7| dhuṅulan·| cintamani|
+<lb n="49r4"/>sa gave hayu| bañu piṇḍa| carik aguṁ pipirakan·| data turu rahina| kandəlan· bra<space type="binding-hole"/>hmakala| U| 4| va| 4| ra| miṇa| śri| mulaniṁ {ui na}vohana bhuta navasaṅa| təbus i (mu)la
+
+
+<pb n="49v"/>
+<lb n="49v1"/>luṅa| hasañja: hambhəke| haśevakaha kaṙyyane| vuraun·| hadhəṇḍa voṁ visayane| ri ca<space type="binding-hole"/>kəm·| ri vtəṁ larane| saṁ| vr̥| təbus i natar·| sambhat sa kala dumarana| hapitan saṅgaruṁgi| pə
+<lb n="49v2"/>ṇḍəm iṅ eṙṣanya| kabhuyutan· kulon· saṁ kala huvuḥ-huvuḥ| sa kala siṅ apṅi| hamu§<space type="binding-hole"/>kurakən vatəs·| sa kalanavuṁ lasaṅi| hapuhara luṅa <g type="circle"/> tu| 7| va| 4| Aṁ| 3| dhuṅulan
+<lb n="49v3"/>· hanuhurakna śaśaṅi hayu| patavurana| śri| 6| bya| 7| ra| kumbha| laba| npra jnək iṅ u<space type="binding-hole"/>maḥ hambh(ə)ke| saṁ| haṁ| hakumpulavan saṁ| śa| luṅa| saṁ| A| mari praṣada| ri sagar· ri panti la
+<lb n="49v4"/>banai| tinuti kala hambhəke mulaniṅ ana smut· laL̥r·| mulaniṅ ana galaḥ dhadha<space type="binding-hole"/>p·| saṁ| bhu| makatapəra lavan saṁ| A| śa| tan agavok· kiniṙyya ri patitan· vrin·  vri
+
+
+<pb n="50r"/>
+<lb n="50r1"/>ñu| tka lor anuduk· goṁtoṁṅ arane| śuci pavitra hapṅi saṁ dhṅən R̥nduḥ śalaḥ maṁśa ha<space type="binding-hole"/>pṅi| hapitan hapaṇḍe| saṁ ka:la kumbhaṁ brahma harane| tbus i dhṅən·| sambhat saṁ dhṅən ṣuci pavitra| sa dhṅə
+<lb n="50r2"/>n tan pgat·| saṁ kumbhaṁ kala brahma <g type="circle"/> va| 9| pva| 7| ca| 4| pahaṁ| hulu śadana| dagaṅa hayu| ha<space type="binding-hole"/>nanma phala buṁkaḥ hayu| śri| 6| va| 4| labha| ra| danu| carik·| panbuṣana hu{*na}lun hayu| baṅga ha
+<lb n="50r3"/>mbhəke| data haṅucapə voṁ| Iṅiriṅani voṁ| saṁ| bhu| saṁ| śu| kinon asasaṅiha| sa| kara<space type="binding-hole"/>mbi-rambhi hambhəke hananapu mari pasaṙ| hasasalaṙ kasukane| hadaśa| Ilanən pamamalane
+<lb n="50r4"/>| bantən i pasar·| hasu cel/e\ṁ| riṅ alir·| sambhat saṁ ka:la munuḥ| mulaniṅ ana buśuṁ <space type="binding-hole"/>| saṁ| hamtaṁ| hapitan· gtəboṁ| Anananduṙ vetan kulon·| bañu binbəṁ| hana kayu hanuṁsaṁ| saṁ ka
+
+
+<pb n="50v"/>
+<lb n="50v1"/>śalaḥ paran labhane karambi-rambi śariranai| mulaniṅ ana voṁ vikət·\ Amakan{*·}a celeṁ <space type="binding-hole"/>| lor i panti kidul i panti hapitan· viṣṇu harane| Ana bañu mili saka kulon· śe
+<lb n="50v2"/>tra kidul i kali| hapitan kalanaṁguṁ va:ka harane| tbus i natar·| ri talavaḥ hamaṅana <space type="binding-hole"/> lavan celeṁ| sambhat· bhaṭa:ra viṣṇu| ra nini dhṅən samantara| ra nini dhṅən tan{*·} avoṁ| ka| bhaya{*bya}
+<lb n="50v3"/>nya //0// pa| 8| pa| 9| ra| 5| pahaṁ parandəlan· pamiṣahana| paduduṣaṇa: paru§<space type="binding-hole"/>ruvatana hayu| pamituturana rare hayu| U| 4| bya| 7| śri| ra| mr̥cika| tan pabapa| hararaṅu
+<lb n="50v4"/>raghane| tan pabhabhu| kapatakan· raghane| kapəṇḍəm· labhane| tkapara hilaṁ dr̥ve<space type="binding-hole"/>ne| hapitan uraṁ| mulaniṅ ana bañu sumurup kidul i setra| paghəṙ hanuduk· trus kidul i ba
+
+
+<pb n="51r"/>
+<lb n="51r1"/>pinaten·| tṅa vṅi labhane| riṁ taṅan larane| tbus i saṁgar·| bhavi hana/ta\kən· vton· <space type="binding-hole"/>| sataroro hivak i bañu kaṅ apatil·| bantən i panti| sambhat saṅ aviśeṣa ri panti| saṁ hyaṁ
+<lb n="51r2"/>vinimbhaya| bhaṭa:ra hyaṁ bhayu| bhaṭa:ra śaṅkara| saṅ ka:la pujut·| saṁ dhṅən aveh ayu| saṁ dhṅə:<space type="binding-hole"/>n· paniron·| bañu hanrus·| deṣasata loṙ| kabhuyutan·| katutugi śaraḥ <g type="circle"/> ma| 3| pva| 7
+<lb n="51r3"/>| bhu| 7| juluṁ pujut·| cintamani| pamanenana hayu| ya| 9| dva| 9| ra| rakaṭa| śri| pa<space type="binding-hole"/>nulaḍana: humaḥ hayu| gumaraṁ tumurun·| jalagraha kaṙyyane| ri kabhuyutan labhane| mul{*i}a
+<lb n="51r4"/>niṅ ana vatu ginave haṙca| mulaniṁ{*ṅa} kama\n/denən·| mulaniṅ ana deva gumlaṙ| ri<space type="binding-hole"/>ṅ imbhaṁ ginave haṙtya| tbus i sagar·| hamaṁguṁ savṅi| saṙvva gnəp·| saṙvva pavitra| ri tgal sambhat saṁ hyaṁ
+
+
+<pb n="51v"/>
+<lb n="51v1"/>| ma| 5| ca| 4| juluṁ pujut·| diṙgayuṣa| paR̥R̥bonana vka hayu| phala buṁkaḥ tanəmə<space type="binding-hole"/>n hayu| I| 5| bya| 7| ra| vr̥ṣabha| jaya| hababata habəbəciki kaṙyyane| pirakan hapa:
+<lb n="51v2"/>pa:rahu kaṙyyane| riṁ bañu labhane| kasukane| dakḍəl ambhəke| bantən pamuru| sambha<space type="binding-hole"/>t saṁ kalamoha| mulaniṅ ana voṁ tuli| sampali ri voṁṅ atuha| Apitan vulaḥ vuvaṁ| pa
+<lb n="51v3"/>gəran· trus· peṅnan·| pavuhaninarir·| tutuva| paduṣan baṅavan·| tbus iṅ asu ⌈<space type="binding-hole"/>celeṁ| paduṣan· bhaṅavan·| sambhat saṁ kala kum i bañu| sa dhṅən kumpul· <g type="circle"/> va| 9| pa| 9| A|
+<lb n="51v4"/>3| juluṁ pujut·| vr̥ḍi śri| nanma phala buṅkaḥ hayu| gu| 8| va| 4| ra| mituṇa| maṇḍala| <space type="binding-hole"/> bhaga hambhəke| data pinatuṁ tan gumap·| mulaniṅ ana papa:ti| ha:ñidra: cinidra| Amateni
+
+
+<pb n="52r"/>
+<lb n="52r1"/>| mulaniṅ ana pinakan padha śanake| saṁ| śu| haṅarimi| sa| ra| hana sumbhər i natar·| kala <space type="binding-hole"/> tan kabantən·| kabhuyutan/o\ra kapuja : ri lbuḥ| nini gənṭoṁ humos harane| hapitan kalu
+<lb n="52r2"/>ma| tbus iṁ lbuh aguṁ| hapitan· turumbhunuḥ| riṁ tgal hapitan ku{*ma}luma| ka| ri madya //0// <space type="binding-hole"/> vu| 5| ka| 8| ra| 5| juluṁ pujut·| heran asiḥ| pamarahana vka h{*u}ayu| śri| 6| dva| 9| ra| meṣa| 
+<lb n="52r3"/>labha| carik·| kuṭila sumka| lakv adagaṁṅ ayu| bhagapora hambhəke| data tukaṙ| kadr̥<space type="binding-hole"/>śayan hana dr̥ve hilaṁ| kapakuṙ labhane| dma valiriṅ ujaṙ| ri tgalabhane| hagara kasiḥ tbu§
+<lb n="52r4"/>sane| Apitan· data| kabhuyutan kapit· gḍa:ṁ śabha haṅukul i humaḥ paḍaṅan·| Api<space type="binding-hole"/>tan· majaṅan· caraṁ| bañu hakarat i lbuḥ| sambhat saṁ dhṅən ṣunya| saṁ dhṅən saripuja: <g type="circle"/> pa| 8
+
+
+<pb n="52v"/>
+<lb n="52v1"/>ñu kulon· raurau kabhuyutan i nariti <g type="circle"/> tu| 7| pva| 7| śu| 6| madhasiha| kna vuvus§<space type="binding-hole"/>· vara hala| pacaronana hayu| ka| 1| bya| 7| ra| kumbha| maṇḍala| hadol atuku  kaṙyyane
+<lb n="52v2"/>haneṁ paturon kasukane| mulaniṁ lanaṁ kavada deniṁ vadon·| kuraṁ phalaṇaṁ| ha<space type="binding-hole"/>pitan hyaṁṅ arane kapṅiṅan·| vetan kulon hiṁ gone| yan mujuṙr aṅaloṙ loṙ gone
+<lb n="52v3"/>| tbus i saṅgaṙ dhavuḥ tlu vetan·| sambhat saṁ hyaṁ navasaṅa| caru ri dhṅən·| sambhat saṁ hyaṁ kala <space type="binding-hole"/> hundar-andir· <g type="circle"/> haṙ| 6| va| 4| śa| 9| madhasiha| si kepvan pamutə:ran amigat hayu| pakajaya ri
+<lb n="52v4"/>{ui ya}ṅ ayu| U| 4| ra| mituṇa:| śri| carik·| bhadraggavevehan· vuku| doyan aṅina| <space type="binding-hole"/> tan pgat arorovaṁ śarirane hatvadhona jambhe haməṇṭara kaṙyyane| den undaṁ labhane
+
+
+<pb n="53r"/>
+<lb n="53r1"/>riṁ pr̥thivi| ri paturaun·| sambhat· ra nini paduka: da:navirati| Ibhu pr̥thivi| ra nini manuḥ<space type="binding-hole"/>| tan ṣimpa:ṁ hapitan pamagahan harane| bañu lvaṙ vetan·| kabhuyutan i nariti| kapit deniṅ a
+<lb n="53r2"/>gel·| {*na}hanak· luṅatohan·| sa| bhu| ṅnakən pajuḍyan· <g type="circle"/> ma| 3| pa| 9| vr̥| 8| madhasi<space type="binding-hole"/>ha| guntur umaḥ| pavaraṅana hayu| Asu hajag tumurun·| bra| 7| dva| 9} ra| makara| jaya| mulaniṁṅ ana
+<lb n="53r3"/>sabhak tulis·| mulaniṅvaṁ hana kacantren·| tbus i saṁgaṙ śaṙvva pavitra: ḍina:dus· rinu§<space type="binding-hole"/>vat·| sambhat saṙva ḍeva| saṁ pr̥tañjala| saṁ hyaṁ taya kuruṅan mas·| bhagavan citragotra|
+<lb n="53r4"/>bhagavan pañarikan·| humeta mala-patakani manuṣa| punanu harane habəbəntura: <space type="binding-hole"/> gavene| vvaṁ tani ha:hacəṅalan hambhəke| labhane kabhuyutan· raurau hana bha
+
+
+<pb n="53v"/>
+<lb n="53v1"/>na gavok i bayatipati| tbus i lavaṁ paturon·| sambhat saṁ ka:la tan R̥baḥ saṁ kala tha<space type="binding-hole"/>n· vribhaya| kubuṅana ṣapolaḥ hi manuṣa| mulani bhaṭa:rasno deva tumurun·| haṅu§
+<lb n="53v2"/>ndaṁ bhaṭa:ra nantabhoga| polahe| saṁ| bhu| habhuru| sa| ra| paran bəcikane| sa| ra| Apitan pə<space type="binding-hole"/>ṇḍəm·| sa| ha| hakumpul tuṅgal ṣapəṇḍəm·| simpuruhana bañu sambhər i savaḥ tbus i pəṇḍəm·
+<lb n="53v3"/>lmaḥ məṇḍək·| sambhat ṣa ka:la(ṅ) umak-amik·| satutuva sinambhat·| saṁ ka:la raspati <space type="binding-hole"/> <g type="circle"/> va| 9| ma| 5| bhu| 7| ma(dha)siha| bhudaṅ avaśakən·| paR̥R̥bonana rare| pavaraṅana ha
+<lb n="53v4"/>yu| lu| 2| va| 4| ra| danu| labha| viṣaya huṇḍaṁ ri kbon· halase hananduṙ kəmbhaṁ| hakve<space type="binding-hole"/>ḥ pvalahe| saṁ| bhu| sa| śu| marari| sa| ra| mulani voṁ halaki padha saṇake dhevek·| ca
+
+
+<pb n="54r"/>
+<lb n="54r1"/>ne| hararahi paravan·| kapanularana hayu| gavene hananandura kacaṁ riṁ kbon·| katmu <space type="binding-hole"/> kaṙmmane| hagmət ṣide gaməl·| togaṇa ri gave| tbus i paturvan·| bantən i prathivi| sambha:
+<lb n="54r2"/>t sa| ca| tinigalakna rare| mulani voṁ hana tinəmbhuṁ| sasaṅi duruṁ kasahur·| riṁ kabhu<space type="binding-hole"/>yutan·| vinehan larane saduratmaka: kabhuyuta:n iṅ uma| hapitan tuva-nomən·| mu
+<lb n="54r3"/>lani varas tumiṅali dharatan·| deni bhaṭa:ra śivaḥ| bhaṭa:ra brahma| sambhat saṁ ka:cici§<space type="binding-hole"/>nu| saṁ dhṅən samantara <g type="circle"/> pa| 8| ka| 8| ha| 3| madhasiha| sambhu hara hala| pamutəran amiṅgat hayu
+<lb n="54r4"/>ya| 9| bya| 7| ra| mr̥cika| śri| kaladaṅu| vavadon· donən· hambhəke haneṁṅ a<space type="binding-hole"/>mpaḥ tuvuhe| voṁ vadon sakane labhane| mulaniṅ ana bahud lañji| haṅubik iśi| ta
+
+
+<pb n="54v"/>
+<lb n="54v1"/>va| kabhuyutan·| sa| vr̥| kadaga| tbus i natar·| sambhat saṁ kala L̥\m/budira| ra nini luka ri§ <space type="binding-hole"/> puṇḍutan·| sira saṅ aṅuva{ui ta}hi tapiḥ| caru gəgəcok· sapane| mtu lakir·| daśabhumi§
+<lb n="54v2"/>ri ghneya //0// haṙ| 6| pva| 7| ra| 5| madhasiha| vigrahakəṇḍat ala| jari kaṙyya kaṁ <space type="binding-hole"/> kala bañcaṁ pasaṅ ayu| ri kənminak·| I| 5| va| 4| ra| kanya| jaya| carik·| vavadon budi⌈
+<lb n="54v3"/>ne ri paśeban labhane hanagapi /riṁ\ cakəm larane hapit sulasiḥ lmaḥ hapitan· padma <space type="binding-hole"/> kabhuyutan hanarik·| riṁ bhayabya| tbus iṁ vatəs·| riṁ ḍalan aguṁ sambhat saṁ ka:la putər·| sa dhṅə:
+<lb n="54v4"/>ṇn ari-hari| saṁ dhṅən parihara| saṁ dhṅən pariñjaṇa <g type="circle"/> vu| 5| va| 4| ca| 4| maṇḍasiha| lig a<space type="binding-hole"/>tata kəmbhaṁ tandura hayu| gu| 8| dva| 9| ra| tula| maṇḍala| pasumka| hanənəbas· vvaṁ kaṙyya
+
+
+<pb n="55r"/>
+<lb n="55r1"/>{ui va}nya| hurabh-urab kukuluban· gəṇḍaṁ| karaca| kulbi susul· dləg· śihuṅan· vlut· <space type="binding-hole"/> kuluma haṁgo-haṁgo bibis·| jubəl· lucit·| valaṁ krik·| seseran·| sambhat saṁ dhṅən ka
+<lb n="55r2"/>la samoha| saṅ kala habhat-abit·| saṁ dhṅən ka:larug· rama| sa kalanucup·| caru <space type="binding-hole"/> kalanumpali| ka:la kaśeri bañu kidul vetan· kabhuyutan·| kalambhu <g type="circle"/> tu| 7| pa|
+<lb n="55r3"/>9| śa| 9| lakir·| pandəlan·| panbasana hayu| hapa:parana| pavaraṅaṇa| hapa:pagə<space type="binding-hole"/>ra hayu| sugiḥ rare| śri| 6| bya| 7| ra| siṅa| labha| saṁ hyaṁ surantaka havevehan vuku| viṣaya ve
+<lb n="55r4"/>vot·| tan aspi ragane hinuman·| sa| ca| den veḥhakən· dr̥vene| mul{*ə}aniṅ ana <space type="binding-hole"/> haṅago hapitan·| padha sanake haduluṙ| tan· vnaṁ hapitan gətiḥ harane| lavan mara tu
+<pb n="55v"/>
+<lb n="55v1"/>vahan· vara hala| ka| 1| va| 4| ra| miṇtuṇa| maṇḍala| hamet dr̥veniṁ voṁ vatke| hama<space type="binding-hole"/>ṅan aṅinum kasukane| mulani voṁ bocolo| Anabr̥te hana dr̥veni voṁ hilaṁ ha
+<lb n="55v2"/>na pəṇḍəm katutugi saraḥ| nora kapuja: rabut mahiṣa hiR̥ṁ hane| kabhuyutan i kbon<space type="binding-hole"/>·| saṁ tutuva| sa vidadara hane| caru riṁ kbon· loṙ kulon· rabu mahiṣa vulu <g type="circle"/> ma| 3| ma
+<lb n="55v3"/>| 5| ku| 6| lakir· śri gati miṁśor·| dumunuṁ ri pane| riṅ gaṙva hurahiṇa| ṅumaḥ bha<space type="binding-hole"/>ṭa:ri śri paṅuritana hayu| U| 4| dva| 9| ra| rakaṭa| carik· śri| vatk inuman·| Abhaya havake
+<lb n="55v4"/>| hanagap i veveḥ ri kikivan·| mulaniṅ ana met· dr̥veniṅ kadaṁ| mulaniṅ ananḍaṁ ma<space type="binding-hole"/>la| hapitan tuganomən·| kidul vetan· gonya| hapitan gətiḥ| tbus i śavaḥ saṙvvakeḥ| bantə§
+
+
+<pb n="56r"/>
+<lb n="56r1"/>sana hayu| leloñja hambəke| saṁ| śa| halavan guru| byak·-byak hambəke| dr̥veni tata<space type="binding-hole"/>ṅga kaladan·| mulaniṅ ana śadvara| sa| ca| makadoṣan· hamtə| tataṅganai loṙ kidul·| §
+<lb n="56r2"/>vetan kulon· nora piliḥ hu(ṁ)gon·| nora piliḥ masa| nora piliḥ lavan<space type="binding-hole"/>·| kaḍa:ṁ vr̥gane den lavani| tbus i lavaṁ vaṅun urip·| sambat saṁ kala tan ovaḥ| saṁ hyaṁṅ arara
+<lb n="56r3"/>tha bhuvaṇa: saṁ hyaṁ hayu| saṁ hyaṁ hanaṇtabhoga haṅob· havayu| hapitan mavapita| ca<space type="binding-hole"/>ṇḍi dhaṅka| dhudhukun·| Apitan· vvaṅ atuva| hana tumbal nora kapuja| kidul i dhṅən gonya| ha
+<lb n="56r4"/>lihakna ri pr̥thivi| nora bcik· valekna maniḥ kavonan· <g type="circle"/> tu| 7| pa| 9| bhu| 7| vu<space type="binding-hole"/>ye| śri vr̥ḍḍi pacarona ri kaṇḍaṁ hayu| lu| 3| bya| 7| hagaveha lumbhuṁ hayu| labha| ra| saṅa| data
+
+
+<pb n="56v"/>
+<lb n="56v1"/>veveḥ medane| taṅa:n i suku laranai| dataṅ illaṅakən·| sa| bha| haveve dr̥ve| sa| <space type="binding-hole"/> haṁluṅa mariṁ praṣada| mulani voṁ bhisaṅucap·| satva sambava| tbus i lbuḥ| sambat saṁ kalanuvu
+<lb n="56v2"/>k i rat·| hanatutagi śaraḥ| sisira tuhan hana ri jərau sabhaṭek·| bhaṭa:ra mahadeva| <space type="binding-hole"/> hasapata| bañu katutug(ə)n saraḥ| mulane dr̥venai den vevehakən hanake| hanakon saṅ a
+<lb n="56v3"/>dhaṅan·| babhu pr̥thivi| hamuṙvvadyan·| sa| ru| hamidenana gaveni voṁ <g type="circle"/> haṙ| 6| pva| 7| <space type="binding-hole"/> vr̥| 8| vuye| paṅuritana hayu| mahotama| habubur aknas·| bra| 7| va| 4| da| ra| kaṇya| hajə
+<lb n="56v4"/>ni hatutuduḥ gavene| kedhəp aṅucap·| data turu rahina| malani voṁ kinukuṁ| mu§<space type="binding-hole"/>laniṅ ana bhararibhinan· pinatut·| kapaṅavan kaśariki paṅinuman·| sa| ra| kinon milu
+
+
+<pb n="57r"/>
+<lb n="57r1"/>| mulaniṅ ana: ḍagaṁ dodot·| binegal narabakti riṁ kabhuyutan·| ka| tan kapuja: hapi<space type="binding-hole"/>tan kalaṇḍi harane| saṁ| bhu| hatukaṙ lavan saṁ| vr̥| riṅ umaḥ hanaśaśa kavalun kulat·| ri ghneya 
+<lb n="57r2"/>| kabhu{*ta}yatan kidul·| lavan suma katutugi saraḥ tka kiḍul·| bantən huL̥ṙ huL̥ṙ| sambha<space type="binding-hole"/>t ṣaṁ dhṅən samantara| mtu pahaṁ| ka:ladaśa ri daksiṇa: //0// va| 9| va| 4| ra| 5| kruvlut·
+<lb n="57r3"/>| pamarahana vka hayu| rikəl kayu| ka| 1| va| 4| ra| mituna| haśaśavaḥ mara munduṙ luṅa tə<space type="binding-hole"/>ka saṁkane| kaluṅguhan labhane| muṇḍak· tuvuhe hanagapi dr̥veni vvoṁṅ atuva| saṁkane la§
+<lb n="57r4"/>bhane| mulani vvaṁṅ amaṅan akcap·| Apitan savaḥ hana tuk· təṇḍal śi kakalen·| pha<space type="binding-hole"/>laṇḍakan kadaga| tbus i gaga śavaḥ| caru lakṣa sapikul·| paguyaṅan avarak· gagaruguṅa§
+
+
+<pb n="57v"/>
+<lb n="57v1"/>n kaca gave tan kulon·| bantən sambhat saṁ dhṅən ṣəṅit tuli| hanadhahan atutava <g type="circle"/> ma| 3| ka| 8<space type="binding-hole"/>| ca| 4| kruvlut·| śri mandəl pavinihaṇa hayu| pavaraṅana hayu| kuṭila tumurun·| U| 4| dva|
+<lb n="57v2"/>9| śri| ra| makara| vvaṁ tani hakaśapuluḥ tka labhane| tan {*p}səpi ragane| hadi hambhəke<space type="binding-hole"/>| mnəṁ lumiṙ maraidane| kedhəp aṅucap·| saṁ hyaṁ viṣṇu lavan hyaṁ śri ha:mandəl·| mulani vvaṁ
+<lb n="57v3"/>bhisu data hamimiśuḥ| hapitan savaḥ ri vatəs· panti mujur aṅaitan·| saṁ dhṅən· raupa<space type="binding-hole"/>ṣaken·| sa ka:la vuruku| tbus i śavah| sambhat saṁ viyuṁ raupasaken·| saṁ kala vuruku <g type="circle"/> tu
+<lb n="57v4"/>| 7| ma| 5| ha| 3| kruvlut·| pavaraṅana hayu| śri vr̥ḍi masaṁ vəlaḥ bañcaṁṅ uyu| śri| 6<space type="binding-hole"/>| bya| 7| labha| ra| siṅa| carik·| hala hayu vatke brata| data haluluṅa| den tanəm dadi| ha
+
+
+<pb n="58r"/>
+<lb n="58r1"/>kaṙyyane <g type="circle"/> haṙ| 6| ma| 5| vr̥| 8| pahaṁ| siṁ tinigal·| vara ḥhala| parumpətan maru hayu<space type="binding-hole"/>| səsədhəp· godhoṁ vidara hayu| ya| 9| va| 4| śri| ra| miṇa| rikəl oyod·| hara
+<lb n="58r2"/>rahiha kaṙyyane hajajaluk· viṣayane| mulaniṅ ana v{*i}oṁ kapəraṁ| mulaniṅ a<space type="binding-hole"/>na gtiḥ kocak·| saṁ| bhu| kapəraṁ hatukaṙ lavan·| saṁ| vr̥| ha\ñ/jaluk əmas·| kadhuhanan·| cari
+<lb n="58r3"/>k·| tbus i dogan·| rumbhaḥ gile| sambhat saṁ hyaṁ hayu hanuku rat· saṁ hyaṁ taya tan·§ <space type="binding-hole"/> kocak·| hapitan maṇḍala} sambhat kakidul·| hana surak saṁ gaṇa ri bhayabya| kabhuyuta
+<lb n="58r4"/>n kapit deniṅ amadoṣarib· <g type="circle"/> vu| 5| pa| 9| śu| 6| pahaṁ| gutur umaḥ paṅalihana ha§<space type="binding-hole"/>yu| pavaraṅana| pananagihana hayu| Asu haja\g/ śumka| lu| 3| dva| 9| labha| carik·| ra| meṣa| vvaṁ
+
+
+<pb n="58v"/>
+<lb n="58v1"/>taniha: hananandura gavene| ri pr̥thivi labhane| tbus iṅ avaṅ-avaṁ| soma pahi| caru<space type="binding-hole"/>| bakakak· hasu baṁ bukəm·| sambhat saṁ ka:la midəranumpal iṁ| dhṅəṇn aruvata mala| riṅ undaṁṅ-u
+<lb n="58v2"/>ndaṁṅ uripe| mulaniṁ mathi kapaṅavan·| mathi tan maśane| katutug iṁ sumbər·| təṇḍas i kaka:<space type="binding-hole"/>len·| ginave gave| mulani siguL̥n· kasudug i pagər·| bantən hasu baṁ| bhinakakak·| sa
+<lb n="58v3"/>mbhat saṁ kalaṅubat-abit·| saṅ ka:lanumpaliṁ| saṁ dhṅən havuvuḥ lara <g type="circle"/> pa| 8| pva| 7| śa| 9<space type="binding-hole"/>| pahaṁ| daṅu| hanohana| hala| maṅduṅan amiṁṅgat·| panabanana śalaḥ tvan· hayu| bra| bya| jaya|
+<lb n="58v4"/>ra| vr̥ṣabha| bhaṭa:ra bhayu| havevehan· vuku| tan aR̥p arorovaṁṅ ambhəke| katmu ri <space type="binding-hole"/> kbon kasukane| viṣaya ṣamaḍi ri kbon·| ri kikivan haṁruruvata| pi| 7| tbus{*e}ane carik·
+
+
+<pb n="59r"/>
+<lb n="59r1"/>mparampe| saṁ dhṅən agave taṁtu| ri kbon· lvar· tbus i kbon lor·| sambhat saṁ bhuhaya ha<space type="binding-hole"/>baṁ| saṁ dhṅən kabaṇḍəm iṁ tatal· <g type="circle"/> tu| 7| pa| 9| ca| 4| marakiḥ| daṅu| halalamara hayu| pata§
+<lb n="59r2"/>nduR̥n hayu| rikəl· vvaṁ| ka| 1| bya| 7| maṇḍala| ra| kumbha| parandəlan·| pacarona <space type="binding-hole"/> lumbhuṁ| pameta rarahayu| pasusakana bhiṣaraurauva:ṁ haruruḥ maraidanai| hasusuka: kadha
+<lb n="59r3"/>vuhan kaṙyyane| Ana i tambhak labhanai| sorai tka labhane| tan pgat· rovaṁ| saṁ| ca| ha<space type="binding-hole"/>ṅəmba:n iṁ sa| bha| saṁ| ra| haṅiriṅakən·| leloñjaṁ bantən saṙvva pavitra| sambhat saṁ hyaṁ gagaka⌈
+<lb n="59r4"/>ra:ṣa| mulani voṁ tan panen· deni lava:ṁ tərus· tulen·| hana pagəṙ malaṁ ri§ <space type="binding-hole"/> tṅaḥ| haṇa:malaṁ trus sa ka:la turumbhunuḥ haranya kaṅ apṅi kayu-kayu hasəm kadaga: tbus i śavaḥ ri
+
+
+<pb n="59v"/>
+<lb n="59v1"/>dhavuhan·| sambhat saṁ {*ha}ka:la hambəbə bhañu| saṁ dhṅən aṅaṇḍəg· bañu <g type="circle"/> haṙ| 6| pva| 7| haṁ| 3| ma<space type="binding-hole"/>rakiḥ| kaṇḍəhan hala| U| 4| va| 4| śri| ra| miṇa: vara hala| habhubhuru haknas·| hameta hulam·|
+<lb n="59v2"/>loḥ hayu| vvaṁ taniha: hakəkəbonan kaṙyyane| hagaga-śavaḥ labhane| daḍi saṁ den tanəm·| va<space type="binding-hole"/>ṇi bot· tka dhavak labhane| hadagaṅa| hadol atuku kasukane| saṁ| bha| saṁ| śu| k(i)non asa
+<lb n="59v3"/>saṅiha dene| saṁ| ca| tbus i saṅgar· lambharaṁ bebek·| śəga livət·| sambhat· bhaṭa:ra vi<space type="binding-hole"/>ṣṇu| saṅ kala hamoṁṅ ayu| sa dhṅən vani bhayu| hapitan bañu sumurup· <g type="circle"/> vu| 5| va| 4| bhu| 7| marakiḥ| ca§
+<lb n="59v4"/>rik aghuṁ pavaraṅana: hayu| śri| 6| dva| 9| labha| cintamaṇi| paguntiṅa| laku dagaṁṅ ayu| pasu<space type="binding-hole"/>mka| ra| meṣa| vvaṁ taniha| hatutuduḥ kedhəp araurauvaṁ| mulaniṅ aḍagaṁ dodot i bale lakṣa
+
+
+<pb n="60r"/>
+<lb n="60r1"/>hamet· dr̥veniṁ voṁ bocolva:ṁ viṣayamoṭet· hala haṅn-aṅne| saṁ| bha| sa| ha<space type="binding-hole"/>| haRp ametanana| saṁ| ra| haR̥but ḍrvene| sa| śa| ri parahu| tan paveḥh i dr̥venya| mu
+<lb n="60r2"/>laniṅ ana mali| gumlaṙ tkani maṅke| tbus i panti| hanaparana| haka:yon saṙvvakeḥ| sambha<space type="binding-hole"/>t saṁ kuluṇjucaṇṭu| kaki hayam dan·| bhaṭara guru tumurun·| Aṅiriṅakən saṁ kukunaṁ sa kbo|
+<lb n="60r3"/>ha/pi\tan ṣabda haro-Ara| hapitan guṇuṁṅ api panas data katunon·| hacṅə lavan saṁ| bhu| <space type="binding-hole"/> da haro-hara| (bi)ṅaya| sinapiḥ tan· kna dene| saṁ| bhu| hana pəpəṇḍəman (ha)R̥pi lavaṁ ka
+<lb n="60r4"/>voṅan· tbus i lavaṁ| sambhat sa kala maṁ-maṁ| saṁ dhṅən· runtak·-runtik·| saṁ dhṅəna ri ⌈<space type="binding-hole"/>kbon· <g type="circle"/> pa| 8| va| 4| bhu| 7| lakir·| pagantiṅan hayu| pametana rarahayu| citamaṇi|§
+
+
+<pb n="60v"/>
+<lb n="60v1"/>| pamanena| bra| 7| bya| 7| ra| vr̥ṣabha| jaya| than· rumavuḥ hambhəke| ka:la ri sunya| saṁ| vr̥<space type="binding-hole"/>| Aṅadu saṅgama riṁ bayabya| bhurañcaḥ vavadonən maredane| mulani voṁ dr̥ve bhaga| ra
+<lb n="60v2"/>nini tan· rumamuḥ| samaṇa tan sasadu hambhəke| tbus i panti| saṙvvakeḥ| tadhaḥ jabuṁ| sa<space type="binding-hole"/>mbhat saṁ ka:kasamoha| saṅ kala L̥ṇḍaḥ sa kalasamo| sa ka:lanilibakən·| mulani vo
+<lb n="60v3"/>: salaḥ vtu| Apitan vuyuṁ| lavaṁ tan· vnaṁ maR̥p aṅetan·| mulani voṁ padha R̥:<space type="binding-hole"/>bhut paksa| hasiśili| have| campur asabda| sa| bhu| sa| ra| hapitan tukar·| tacada muñja-haja
+<lb n="60v4"/>rai mari| sa| bha| sa| ra| tan patut·| hadaghakən· lo kapṅiṅan·| saṁ| bhu| handa{*ga}<space type="binding-hole"/>dava taṅan·| hañjupat hati/ga\lavan saṁ| ha| <g type="circle"/> va| 9| ka| 8| vr̥| 8| lakir·| rikəl· voṁ|
+
+
+<pb n="61r"/>
+<lb n="61r1"/>nidhəp· den lavani bibine| ka| kadaga vetan kulon·| tande pajaṙ sa kala tutu<space type="binding-hole"/>ru pṅi| sa dhṅən· rajalakṣmi| saṁ dhṅən surud ayu tande puja <g type="circle"/> vu| 5| pa| 9| ca| 4| variga dya
+<lb n="61r2"/>n·| guntur umaḥ| paṅalihaṇa: hayu| pametana rare hayu| gu| 8| dva| 9| ra| meṣa<space type="binding-hole"/>| Asu hajag sumka| maṇḍala| Asasavaḥ kaṙyyane| data riṅ uda deni voṁ śaṇak·| cari
+<lb n="61r3"/>k sarirane makalarane vehan·| saṁ| ca| haR̥pi| saṁ| ra| tbus i padaṅan·| sambhat· <space type="binding-hole"/> saṁ hyaṁ brahma| hapitan· rurub· praṅan· katəmbhuṁ ri kayu| malaniṅ ana vuluku kənje
+<lb n="61r4"/>n·| bhaṭa:ra viṣṇu hagave hapitan savaḥ riṅ umaḥ <g type="circle"/> pa| 8| pva| 7| haṁ| 3| virigajya<space type="binding-hole"/>n·| maṁrundaḥ panukupana śatru hayu| paṅalihana tṅən ayu| ya| 9| bya| 7| ra| vr̥śaba| śri
+
+
+<pb n="61v"/>
+<lb n="61v1"/>vak kahyaṁ ragane| vatki luluṅa| saṁ| ra| hagave sasaṅi| ri paluluṅan kasəsəm·<space type="binding-hole"/>phalan·| vəvnaṁ| trus i kaṇḍaṁ| sambhat saṁ komara śidḍi| kəmbhaṁṅ arum·| mulani voṁ halaki
+<lb n="61v2"/>padhane lanaṁ| saṁ| bhu| vinehan asiḥ dene| sa| ra| ri nariti| hapitan kalaśamaya <space type="binding-hole"/>| pagəranrus handagakən tutuva| saṁ dhṅən· rurum·| saṁ dhṅən kəmbhaṁṅ harum· <g type="circle"/> va| 9| va| 4| bu|
+<lb n="61v3"/>7| variga jyan·| lusi kbək·| sa kaṙyya hayu| hakəras hambhəke| lu| 3| va| 4| ra| mi<space type="binding-hole"/>tuṇa| jaya| data haptak· yan uvus kaṣajṅan·| hanagaman papati śalaḥ maśa| saṁ| śa| ha§
+<lb n="61v4"/>gave viṣa:ta rajña:ṇa| tbus i śetra sambhat· ra nini paduka bhaṭa:ri| sira saṅ a<space type="binding-hole"/>yu tan pahyas·| tbus iṁ lavaṁ| saṁ kala hañjumput lara <g type="circle"/> ma| 3| ka| 8| variga jyan ·| śi
+
+
+<pb n="62r"/>
+<lb n="62r1"/>ka| hamateni pinaten·| hamateni paśaṇaka dhevek·| hana ri sunya labhane| saṁ<space type="binding-hole"/>| vr̥| hapadudusa| hapavitraha| mariṅ aghneya| hasarimantenan kasukane| tbus i saṅgar·| sa
+<lb n="62r2"/>vvaṙ pavitra| sambhat· bhaṭa:ra {ui va}śivaḥ| bhaṭa:ra yama| saṁ| A| haṅeriṅ alas·| haṅulati ri| sa| <space type="binding-hole"/> bhu| hapitan palaṇḍakan·| sa| bhu| haneṁ bhalabag·| saṁ kala dumarana haṅapit·| saṁ kala§
+<lb n="62r3"/>hisəp-isəp arane| saṁ rara <g type="circle"/> pa| 8| ma| 5| bhu| 7| tambir·| daṅu| cintamani| kəmbhaṁ tanmən<space type="binding-hole"/>· hayu| U| 4| bya| 7| śri| ra| mr̥cika| paguntiṅana| pamanenana sa kaṙyya hayu| hapəraṁ hapijəṙ kaṙ
+<lb n="62r4"/>yyane| R̥p(i)kan·| vat(ə)kaṅ adu savuṁ| mulani voṁ kagəriṅan· deniṁ sapata ba<space type="binding-hole"/>ṭara kala| sa vehayu tbus iṁ pamagahan·| mulaniṅ ana boboto| tanmən kəmbhaṁ pudhaka
+
+
+<pb n="62v"/>
+<lb n="62v1"/>| sambhat saṁ hyaṁ hatalaga| kna sapata bhaṭa:ra ka:la| mulani kagəriṅan·| hapitan lumbuṁ la<space type="binding-hole"/>n kaṇḍa:ṁ| hapitan brahmakala ṅaranya| sa| bhu| sa| ra| Aṅnakna sapata| siR̥p dene| saṁ| bha| pamaḍəkan kaya
+<lb n="62v2"/>ne| haḍagaṅa dodot· <g type="circle"/> ca| 9| pa| 9| vr̥| 8| tambir·|m śri tka hayu| śri| 6| va| 4| labha<space type="binding-hole"/>| ra| danu| carik·| sinta panenanena| sa gave dhṅan· vlah ayu| rikəl sadho vatək ahes viṣayanya
+<lb n="62v3"/>| tan pgat· babaribinan·| hamdum hamalandaṁ| habalantari| hatotohan·| mulaniṅ a<space type="binding-hole"/>na voṁ hayu| tbus i pajudhen·| hi pasaṙ L̥buh aguṁ| sambhat sa kala hamoṁ hayu| saṁ kala vuṁvaṁ| sa
+<lb n="62v4"/>kala kulaḥ-kaliḥ| ri katohan·| ri L̥buh aguṁ| goniṅ anbus·| hana ba:bu ri nariti| lmaḥ <space type="binding-hole"/> hamahesan·| kabhuyutan vara kapuju <g type="circle"/> ma| 3| pva| 7| śu| 6| tambir·| kaṁ kanma hala| vara hala:
+
+
+<pb n="63r"/>
+<lb n="63r1"/>mbha| jaya| carik·| Agaga-śavaḥ gavyane| tan kinavinuvusan ambh(ə)ke| heli riṁ dr̥ve<space type="binding-hole"/>ne| sa| ra| hamet i puṇḍutan·| vulan apitt ayu labhan/e\ tka| kasaṇḍuṁ ri kbo| caru ri ka§
+<lb n="63r2"/>ṇḍaṁ| sambhat saṁ kumara gaṇa| mulaniṁ lavaṁ takban·| lavaṅ aguṁ| Apitan tunon a§<space type="binding-hole"/>rane| hana luvaṁ haR̥p i lavaṁ| Ajaṅubh iṁ bhata haR̥p i lavaṁ hapitan· brahma harane|
+<lb n="63r3"/>tan pamaṣa haveḥ lara| hana voṁ tani hapaR̥k maṇḍala| saṁ kala kaja-kaja haruvata| mu§<space type="binding-hole"/>lani manuṣa harane| tbusənatar·| sambhat saṁ kala kaja-kaja <g type="circle"/> haṙ| 6| va| 4| haṁ| 3| gumbhr̥g
+<lb n="63r4"/>·| saṁ jaṅan tanməna hayu| brahma| 7| va| 4| ra| miṇa| laba| baṅgapora hambhəke| haṅo<space type="binding-hole"/>n labhane| haṅituṁṅ-ituṁ kasukane| haṅlu larane| tbus aR̥pi lavaṁ| ri kaṇḍaṁ vaṅun {*i}urip·
+
+
+<pb n="63v"/>
+<lb n="63v1"/>sambhat saṁ hyaṁ R̥ṣi gaṇa| sa catuṙ jataka| bhaṭa:ra saṁ hyaṁ hakaśa| bhaṭa:ra brahma tumurun· <space type="binding-hole"/>| haveḥ lara hapitan· buta saṅara| sa| ra| hiṅulatan de saṁ| bhu| sa| ra| saratya hana ṣi pr̥
+<lb n="63v2"/>thivi| kalavan saṁ| śu| haṅulati ri guṇuṁ| saṁ| haṁ| hatakon· babu| kaki kalaghna ha§<space type="binding-hole"/>pṅi| saṁ ro ṣarayu hapṅi tbhus i lmaḥ paṅason·| sambhat saṁ lvaḥ sarayu <g type="circle"/> vu| 5| ka| 8| bu| 7|
+<lb n="63v3"/>gumbhr̥g·| sugiḥ rare| bibit ayam hayu| ka| 1| dva| 9| ra| meṣa| phamanena hayu| pagu<space type="binding-hole"/>tiṅana| kuṭila sumka| maṇḍala| haR̥mbha kaṙyyane| haviku hatitiḥ| mulaniṅ ana suku§
+<lb n="63v4"/>pat·| mulaniṅ ana sga kinpal·| mulaniṅ ana voṁ ta/n\· kna piniṅit·| den ula§<space type="binding-hole"/>ti gurune kapagiḥ| bhaṭa:rasiḥ praṇa hararata jagat·| hananambha{*ta}nana kedhəp·| mula
+
+
+<pb n="64r"/>
+<lb n="64r1"/>ludra hahaṅapit·| saṁ| vr̥| hyaṁ titimuṙtri harane <g type="circle"/> haṙ| 6| pva| 7| śu| 6| julu vaṅi<space type="binding-hole"/>| bahu putra| pavaraṅana hayu| pavinihana| pananagihana| bra| 7| va| 4| ra| miṇa| jaya|
+<lb n="64r2"/>carik·| havovosana kaṙyyane| handuduṣa hayu| rarata hayu| tka tan iṅu(da:) <space type="binding-hole"/> labane| mulaniṅ ana dol atuku| saṁ| ca| haṅnakən pasaṙ| hanəmbhuṁ| saṁ| bhu| saṁ| śu| ha:
+<lb n="64r3"/>met piśis· si paras·| hana sasalaṙ sahi{*na}sini pasar·| pinakabantə:<space type="binding-hole"/>n iṅ anənəbus·| saṁ| bhu| saṁ| śu| hapitan kabhuyutan· vetan kulvan·| bañu kalambhuṁ§
+<lb n="64r4"/>tbus iṁ paṅason·| sambat· bhaṭa:ra gaṅga: bhaṭa:ri gaṅgi <g type="circle"/> vu| 5| va| 4| śa| <space type="binding-hole"/> 9| juluṁ vaṅi| sambhu vara ḥhala sivogan·| kulavilaḥ kaṙyyanən hayu| pasumka| ka
+
+
+<pb n="64v"/>
+<lb n="64v1"/>| 1| dva| 9| ra| meṣa| saṁ hyaṁ sudira:vevehan{*ku}· vuku| baga noraR̥pa roro<space type="binding-hole"/>vaṅa| data lalen·| luṅa dhavak iṁ rahina-vṅi| saṁ| ca| macatuṙ-dhavak·| ri panti labha
+<lb n="64v2"/>ne| vuron ambhəke| mulaniṅ ana rara vinidadarin·| hapitan· səkər·| ha<space type="binding-hole"/>pitan· mañjaṅan· caraṁ| bañu hanuduk· tka ri lbuḥ śaśakavulan kulit·| haṙca ⌈
+<lb n="64v3"/>loṙ vetan· padusan·| sambhat sa kala lməḥ-lməḥ tbhus i phadusan·| sa ka:la:<space type="binding-hole"/>suṣapati| bañu tka kidul kulon·| mtu juluṁ vaṅi dinəmki macan· hasu haja
+<lb n="64v4"/>g·| daśabummi ri nariti //0// pa| 8| ka| 8| ra| 5| susaṁ| si keraṅan· va<space type="binding-hole"/>ra hala| U| 4| bya| 7| ra| mr̥ṣabha| hadum tiṅal viṣayane| haluveh ambhəke| voṁ va
+
+
+<pb n="65r"/>
+<lb n="65r1"/>sorosoti ya nama syahaḥ| Om̐ gaṇapati ya namaḥ svahaḥ| Om̐ śri śri śri succamalami <space type="binding-hole"/> ri pa:pamuṙyya //0// //0//  37| 23| 4747 //0//
+
+
+<pb n="65v"/>
+EMPTY
+
+
+<pb n="66r"/>
+<lb n="66r1"/>bhane| śalah aṅn-aṅən·| kalon labhane| bañu hanakpanti| hapitan· veveharane <space type="binding-hole"/>| mulaniṅ ananluḥ| mulaniṅ ana pahit alaṅu| ha\n/dagakən kabhuyun·| sa kala hananapu
+<lb n="66r2"/>| kala harak harane|  tbus i dhṅən·| sambhat saṁ dhṅən sarira| saṅ kala hananapu| saṅ kala <space type="binding-hole"/> harak-arik·| saṁ dhṅən halpitan·| saṁ dhṅən bahud· <g type="circle"/> ca| 9| ka| 8| ca| 4| vuye| sivogan va
+<lb n="66r3"/>ra hala| phala gantuṁ tanmən· hayu| gu| 8| va| 4| ma| ra| mituna| hinuman· bhalabha hambə<space type="binding-hole"/>ke| bañu miri lbuḥ| sa kala rurum· ṅaranya| Adagakən kabhuyut· tbus i paḍusan·| sambhat
+<lb n="66r4"/>· saṁ dhṅən hakum i bañu| saṁ dhṅən məntaśi bañu <g type="circle"/> ma| 3| ma| 5| haṁ| 3| vuye| śri gati thu<space type="binding-hole"/>murun·| dumunuṁ ri kaṇḍaṁ| ri paḍaṅan·| ya| 9| dva| 9| śri| ra| rakaṭa:| pavinihana| patutumba
+
+
+<pb n="66v"/>
+<lb n="66v1"/>| pacarauna ri lumbhuṁ| pacarona hmas hayu| śri| 6| dva| 9| labha| ra| meṣa| pavaraṅana <space type="binding-hole"/> hayu| kala gumaraṁ tumurun· śumka| carik·| saṁ hyaṁ catuṙvaṙṇna kaṅ avevehan vuku| hagaga§
+<lb n="66v2"/>śavaḥ kaṙyyane| hamadhati pari gavene| hakəR̥ ri gave| Anagapi ri pasaṙ labhane<space type="binding-hole"/>| mulaniṅ ana ka/la\ tan· kadohan kalak·| mulaniṅ ana la{*na}ñja{*s·}| hapitan· tgal·| lvaṙ
+<lb n="66v3"/>vatəs·| kidulmaḥ məṇḍek·| hapitan pananavuṁ vaṙṣa vaṙṇna jagan lava{*na} lavan maṇḍala <space type="binding-hole"/> bantən i lavaṁ| sambhat saṁ kala panavuṁ vaṙṣa| saṁ dhṅən varas·| mtu ma/ta\l·| kaladaśa riṅ eṙṣanya| //
+<lb n="66v4"/>0// pa| 8| va| 4| ra| 5| vuye| brajamaṇik·| daṅu| pavinihana hayu| I| 5| bya| 7| <space type="binding-hole"/> ja| ra| mr̥ṣaba| carik·| laku haṅugahi hayu| dataveveḥ ri kikivan· medane| sli dr̥la§
+
+
+<pb n="67r"/>
+<lb n="67r1"/>| 7| ma| ra| kumba| panbusana rarai hayu| hananandura pucaṁ tirisan· ri gaga śavaḥ hasagəm·<space type="binding-hole"/>| vuraun· medane| mulaniṁṅ agave lumbhuṁ| hapitan· gtiḥ| tbus i tgala ri nariti| bhakakak· hi
+<lb n="67r2"/>vak i loḥ kaṅ apatil·| ri natar·| sambat saṁ hyaṁ hayu| carik·| saṁ hyaṁ taya hadum gave<space type="binding-hole"/>| saṁ dhṅən hapanasi gave| saṁ dhṅən tahoralgan·| Apithan savaḥ kabhuyutan i nariti| lmaḥ məṇḍek 
+<lb n="67r3"/>·| ri vatəs·| saṁ| śu| sa| A| haranya @ haṙ| 6| pa| 9| śu| 6| matal·| veśambhu| si vuruṁ vara <space type="binding-hole"/> hala| U| 4| va| 4| śri| ra| miṇa| rikəl oyod·| ri kbon kasukane| hamahata kaṙyyane| ha
+<lb n="67r4"/>paśaṇakan· br̥teḥ mulani voṁ piñc{*e}ad·| hapitan· lmaḥ məṇḍək·| ri nariti| ka<space type="binding-hole"/>pit i lmaḥ putiḥ| {*ba}tbus i dhṅən·| sambat saṁ drabali @ vu| 5| pva| 7| śa| 9| matal·| śri| pnuḥ
+
+
+<pb n="67v"/>
+<lb n="67v1"/>L̥n i nariti| tbus i vatəs·| sambat saṁ kala jagatpati| sa kalaṅadhaṁ| saṁ dhṅən· ramaraja: @ <space type="binding-hole"/> ma| 3| ka| 8| bhu| 7| matal·| śri maṇik· pavinihana| paduṣaṇa rarahayu| bra| 7| {*ja}dva| 9| ja| ra
+<lb n="67v2"/>| makara| pamanena hayu| hadagaṅa kaṙyyane| haṅituṁ vatke| mulaniṅ ana saṙvva vihe§<space type="binding-hole"/>s· gumlaṙ manisaṙja: gumlaṙ tbus i tgal saṙvva hakeḥ| sambhat saṁ dhṅən hanuṅku rat·| saṁ hya taya tan· k{*n}ə⌈
+<lb n="67v3"/>neṁ lara| mulani voṁ tan· kna binibhisikan· hambəke| mulani vvaṁ pinras bincikan·| sa| <space type="binding-hole"/> bha| bhaṭara viṣṇu hambək pr̥thi{*ni}vi| saṁ| bha| sa| ha| hapitan kalantaka| lmaḥ vatəs pabajaṅan·| ri nari
+<lb n="67v4"/>ti| lmaḥ puti ri ghneya| saṅara| haṅnakan sapata| hapanasiluman·| sa| bha| kakayu tu<space type="binding-hole"/>luṁ| saṁ| gr̥| daḍi hambavaṁ @ tu| ma| 5| vr̥| 8| matal·| vlas aR̥p ameta rarahayu| ka| 1| bya
+
+
+<pb n="68r"/>
+<lb n="68r1"/>R̥R̥bo vka hayu| sa gave hayu| gu| 8| dva| 9| ma| kuṭila sumka| hya {*ha}kala vevehan vuku<space type="binding-hole"/>| ra| tula| dravali riṅ ujar·| tbus i pavu| hamamayaṅana| hasu celeṁ| sa| bha| havurahan tuvuḥ
+<lb n="68r2"/>he| mulaniṁ voṁ kaphalayu| sambhat ni paśuṁ| bhaṭa:ra kala jagatpati| saṁ kala vuruṁ ma<space type="binding-hole"/>ti| sa kala sura ri praṁ| mulaniṅ ana kbo mati| hapitan i śavaḥ| ka| daśahaniṁ luhur· //0//
+<lb n="68r3"/>pa| 8| ma| 5| ra| 5| kalavu| riṅ aL̥m·| phalalakonana hayu| ya| 9| bya| 7| śri| ra| mr̥<space type="binding-hole"/>cika| carik·| pananagihana hayu| ri kabhotohan labhane vəR̥kə hana ri bhaṭa:ra k(u)/laḥ\-kaliḥ labha
+<lb n="68r4"/>ne| tbus i pasar· ri pajudhyan· tbus i saṅgar·| sambhat saṁ kala hurip·| saṁ dhṅən haluku<space type="binding-hole"/>lunṭaṁ canṭaṁ| sa dhṅən gula gumantuṁ| ca| dodol·| hapitan parantunan·| voṅ atitiraḥ| va
+
+
+<pb n="68v"/>
+<lb n="68v1"/>vanən ambəke| mulaniṅ ana manuk aturu| Apitan parantunan· voṁṅ atitiraḥ| hapi<space type="binding-hole"/>tan kalabrahma harane| tka saloṙ malanya| bañu haməluk· mala harane| kavula śaśaku
+<lb n="68v2"/>lan· kapluk· deni ṣaṇakadaṁ vraga| sama śaṇak maṇḍala| saśakavalun caṙmma @ va<space type="binding-hole"/>| 9| pa| 9| ca| 4| kulavu| tan kajapan·| hadhavuhana hayu| lu| 3| va| 4| labha| ra| danu| pana
+<lb n="68v3"/>mbhanan aśalaḥ ton ayu| rikəl· godhoṁ| vvaṁ thani kaṙyyane| riṁ pr̥thivi labhane| ta<space type="binding-hole"/>n dr̥manarabhi| mulani saṁ| Aṁ| tinagalakən· dene saṁ| śu| saṁ| ra| vəR̥kə| viṣayadadava ta
+<lb n="68v4"/>ṅan·| cloṙ caru riṁ śavaḥ| sambhat saṁ kala tan· śolaḥ| mulaniṅ kapañjiṅan· bhu<space type="binding-hole"/>rvan·| pagəranrus· vatis· | kavoṁṅan· padha paR̥k· @ ma| 3| pva| 7| haṁ| 3| kula
+
+
+<pb n="69r"/>
+<lb n="69r1"/>| saṁ siṅa janma| saṁ maṅukuhan·| saṅ dhadhuṅavuk· @ va| 9| ma| 5| haṁ| 3| vayaṁ| śri vr̥ddi| paca⌈<space type="binding-hole"/>rona hmas hayu| vuluku kaṙyyanən ayu| panumbasa bibit sapi hayu| rikəl oyod·| ka| 1| va| 4
+<lb n="69r2"/>ma| ra| mituṇa| bedi deśa| səriṁ kabhaya-bhaya| saṁ| śu| Iṅ ayati pati| tbus i kbon· śaśaṅi <space type="binding-hole"/> hasu celeṁ| sambhat saṁ hyaṁ prameṣṭi guru| saṁ dhṅən tumpuṙ momaḥ| halalavanan lavan bibine| tan o
+<lb n="69r3"/>:vaḥ mari lamon mati| mulaniṅ ana vidadara| Agadhiṁ hatulale| sa| bhu| sa| ra| tinoto<space type="binding-hole"/>:n deni devata| hapitan tutuva hapitam ka{ui ya}bhuyutan·| Apaṇḍe lavan maṇḍala| sinambhəri gə
+<lb n="69r4"/>lap· @ ma| 3| pa| 9| bhu| 7| vayaṁ| ciṇtamani pavinihana| pamanena| hani-haniha| paga<space type="binding-hole"/>ntiṅana hayu| U| 4| dva| 9| śri| ra| rakaṭa:| hasu hajag tumurun·| Atamitotonan meda ⌈
+
+
+<pb n="69v"/>
+<lb n="69v1"/>ṅ apitan pakuvon ṣuvuṁ tbusambhat saṁ prameṣṭi guru| bhaṭa:ra kala| bhaṭa:ri duṙgga| saṁ hyaṁ hayu <space type="binding-hole"/> tan payas·| bhaṭa:ra saṙvva deva sinamadaya| bhaṭa:ra paṇḍava samadaya| Apitan· vatəs·| hapi
+<lb n="69v2"/>tan asəm·| hapitan pakuvon suvuṁ| vatkane leveṅakn ujaṙ havak/e\| mulaniṅ avavasi| <space type="binding-hole"/> bhaṭa:ra lumaṁlaṁ{*la} hagave paliñokan·| harupa pitara| sa kala tan palalaro hapṅi| ra ni
+<lb n="69v3"/>ni tan kaśalaḥ| tan tinbus·| tbusa havake| mtu hesu kaṙmmane tka| ktəmu kaśukane| data haṅa<space type="binding-hole"/>du tukaṙ| ra nini vayaṁ tan· kaśalaḥ sumurup· @ pa| 8| ca| 4| vayaṁ| tutuk masiḥ| panbu
+<lb n="69v4"/>san hulun· hayu| pamurugulana padola baṇḍa| bra| 7| bya| 7| ca{*ṅa}rik·| ra| mr̥ṣa<space type="binding-hole"/>bha| vvaṁ taniha kaṙyyane| katmu ri gaga śavaḥ labhane| ca| riṁ gaga śavaḥ| sambat saṁ dhṅənn anuṁku rat· 
+
+
+<pb n="70r"/>
+<lb n="70r1"/>(ḍ)itan· kneṁ lapa| saṁ hyaṁ viḍimandi| saṁ hyaṁ viṣṇu gumlar i jagat·| Apitan kabhuyutan·⌈<space type="binding-hole"/>loṙ kulon·| sumbəri ghneya| saṁ| bhu| saṁ bhabhu bhiru harane| saṁ| śa| Iṅukaban kacarati paluṅa
+<lb n="70r2"/>n· @ tu| 7| va| 4| vr̥| 8| juluṁ pujut·| kaladaṅu| p{*u}aluṅguhan dalan hala| lu| 3| bya<space type="binding-hole"/>| 7| ra| siṅa| labha| paṅlaha hupas ayu| saṙvva viḍi| vara hala| pavaraṅana hayu| vatək ambabadani ⌈
+<lb n="70r3"/>voṁ habataṁ voṁ hambhəke| viveka tan· pgat satru| mulaniṅ ana sukət sinapon de<space type="binding-hole"/>niṁ vo hajaru| mulaniṅ ana daśa| tbus i pasar·| hasu celeṁ| sambhat saṁ kala kulaḥ-kaliḥ| sa ka
+<lb n="70r4"/>la hamoṅ ayu| saṁ ka:la tan gisir·| kaṁ nora kapuja: ri bhayabya| sa vidi gmaṁ gali<space type="binding-hole"/>h arane| sa| vr̥| pituturi| saṁ| ra| sa| bhu| samahana ri tgal· ri tṅa @ haṙ| 6| ka| 8| śu| 6| pajut·
+
+
+<pb n="70v"/>
+<lb n="70v1"/>| paruvatana mala: hayu| rikəl kayu| bra| 7| va| 4| ra| kaṇya| jaya| gaga-śavaḥ labhane| tbuṣ ma<space type="binding-hole"/>ṣa s{*u}(*e}arai| malaniṁṅ ana dhudhukun·| mulaniṅ ana kaśambhət i tgal·| kaki cekveḥ nini ce⌈
+<lb n="70v2"/>kveḥ harane| hapitan juraṁ| hapitan kaluma| tbus i na/ta\r·| tutuva| ri bhaṅavan·| caru hasu ⌈<space type="binding-hole"/>celeṁ saṁ ka:kum i bañu| tbus i tgal·| ri gaga śavaḥ| {*ka}sinambhat· ka:ki cekoḥ sa dhṅən danumpa
+<lb n="70v3"/>liṁ| sa dhṅən ubat-abit·| saṁ dhṅən salaḥ maśa{*ko}kokoḥ jaṅan· mnini kulaka:maṅśa <space type="binding-hole"/> sorai| mulaniṅ ana śimabhat i tghala @ vu| 5| ma| 5} śa| 9| julu pujut·| śri| sumka| pari huṁ
+<lb n="70v4"/>guhna hayu| ka| 1| dva| 9| c{*e}arik·| maṇḍala| ra| tula| yaṁ mahisora kaṅ avevehan<space type="binding-hole"/>· vuku hanuṁgak· carane| tan· vruh amet gavyane| hatakon gavene| hañoṭa:va:
+
+
+<pb n="71r"/>
+<lb n="71r1"/>| babu bisu| rabhut· bhumiṣa| babu loṙ| jagat kidul·| saṁ| ra| hamnər i nariti kemṅən· @ vu <space type="binding-hole"/>| 5| ma| 5| śu| 6| dva| 9| śri| 6| labha| ra| meṣa| ṅugahna paru lumbhuṁ kulavu| śri gati sumka haśaśa
+<lb n="71r2"/>vaḥ kaṙyyane| hagaveya sumukasukane| tan· kna pinituturan· dene saṁ| ra| carik·| mu<space type="binding-hole"/>lani voṁ mati ri paṁṅumbharan·| vəR̥kəṁ| Apitan kaluma| Ana vvaṁ mati pa{*t}ṅajaṅan·| {*A}(ui pa}{*ta}(*na}pa
+<lb n="71r3"/>gəran atrus·dravali deṣa kapit· deniṁ kabhuyutan· lvaṙ kidul·| tbus i dhṅən· sa<space type="binding-hole"/>mbat saṁ kala haR̥but hujar· la| sa| ra| saṁ| śu| saṁ dhṅən· data hiṅ ayati pəti @ pa| 8| pa| 9| śa
+<lb n="71r4"/>| 9| kulavu| sambhu karogan· vara hala| I| 5| bya| 7| ja| ra| mr̥cika| pamarahan aṅaji <space type="binding-hole"/> hayu| saṁ hyaṁ beṣavaṙṇna vevehan vuku| hamalantə{ui ka}n aśavene| data riṅ ucapi vvaṁ tərus ku⌈
+
+
+<pb n="71v"/>
+<lb n="71v1"/>len· labhane| tbus i baṅavan·| sambat saṁ bañu putiḥ bañu biru| mulaniṅ ana bale la<space type="binding-hole"/>mpaṁ| vani haṅambhaṁ| sapata| haṅmasi si rara harane| haṅgaśi vuk·| cabol· vujil· kabhuyuta§
+<lb n="71v2"/>n kadaga| vetan gone| sa kala pataka harane| saṁ dhṅən karamuñcaṁ| sa dhṅən kamaṁmaṁ| caru lbuṙ <space type="binding-hole"/> ṣapatha ri śaṅgar·| ka| da| hana loṙ| mtu kulavu //0// va| 9| pva| 7| ra| 5| dukut·| va
+<lb n="71v3"/>ra hala| Abhubhuru hayu| hajnə{ui na|ṅi hani-hani kaṙyyane| gu| 8| va| 4| ma| ra| mituṇa| cari<space type="binding-hole"/>k·| ri kbon labhane| hanuli den ta gapi labhane| tbus i paṅonan·| sambhat sa kala R̥śi
+<lb n="71v4"/>gaṇa| ta:ki komara śiḍḍi| sa dhadhuṁṅavuk·| saṁ kala raditya| haklaṙ ri gave| hasusu§ <space type="binding-hole"/> kaṙyyane| lumagayaḥ maraidanai| bnəṙ manahe haR̥pavaśigiti| mulani voṁ kapacul·
+
+
+<pb n="72r"/>
+<lb n="72r1"/>hari| sa| śu| sabha| mulaniṅ· doṣa: hala vani| sa| ca| tbus i lavaṁ| riṁ kaṇḍaṁ| tətləḥ| sambat saṁ <space type="binding-hole"/> hyaṁṅ ayu hanabak ujar·| Ana bhañu śaka kulon hapitan· rug· ramme| vetan kulvan·| sa| vr̥|§
+<lb n="72r2"/>mandiśora @ vu| 5| va| 4| śu| 6| vuye| meśi pacaraun avnaṁ| ri kaṇḍaṁ hayu| (ka)| 1| dva| 9| <space type="binding-hole"/> ma| ra| tula| hagaveha lumbhuṁ hayu| pasumka| data susuguḥ ri kaṇḍaṁ labhane| tan pgat hucap-uca§
+<lb n="72r3"/>pan·| mulaniṅ ana: śatru| mulaniṅ ana katrapan{*e}· ṣesya:caṅkəme| sara| kasəR̥ṅən<space type="binding-hole"/>· hanugu| ri| saṁ| bha| sa| śu| hapitan vuyu haranya| haṙca kidul kulon gvanya| bañu riṁ kḍuṁ| sa kala raik
+<lb n="72r4"/>· kala mahiṅ aranya| kala raika janma harane| bañu katutugi saraḥ| pagəran atrus·| ca<space type="binding-hole"/>rik aduduṣa| sambhat saṁ kala raika janma @ pa| 8| ka| 8| śa| 9| vuye| śri| pacarauna ri lumbhuṁ| la
+
+
+<pb n="72v"/>
+<lb n="72v1"/>ku dagaṅa hayu| ra| mr̥cika| U| 4| bya| 7| śri| carik·| saṁ hyaṁ pañca R̥śi| kaṅ avevehan vu<space type="binding-hole"/>ku| lumagayaḥ bhudine| gumeraibhe hambhəke| bhudi maṙmma (m)anahe| hanagapi hana manahe| ri ka§
+<lb n="72v2"/>ṇḍaṁ labhane| hasari vkasan·| mulaniṅ ana kadadak·| kabhuyutan kadug i śaraḥ| kabhuyuta<space type="binding-hole"/>n vetan· maṇḍala loṙ kulon· tbus i kabhuyutan·| sambat saṁ kaśihuṁ-śihuṁ| phalaṇḍakan·| mtu
+<lb n="72v3"/>vuye| kaladaśa ri pacimma: //0// va| 9| ma| 5| ra| 5| manahil·| rikəl sato ha<space type="binding-hole"/>mamasaṁ hayu| śri| 6| va| 4| labha| ra| danu| Amamayu kaṙyyane| handaru tuvuhe| ri savaḥ labhane§
+<lb n="72v4"/>havake| haśari ri vkaśan hegar·| saṁ| śa| haruṅu hujare| saṁ| vr̥| {*tḍa}tbus i dhṅən· soma <space type="binding-hole"/> pahi| sambat saṁ kalanavuṁ| sa dhṅən· kuvuḥ-kuvuḥ| saṁ dhṅən murub· ri bhayabya @ ma| 3| pa| 9| ca| 4| ma
+
+
+<pb n="73r"/>
+<lb n="73r1"/>nahil·| panutupana satru| I| 5| dva| 9| ja| carik·| ra| makara| bhuru haknas hayu| hasu haja<space type="binding-hole"/>g tumurun·| vvaṁ taniha| tmən hahakveḥ rauvaṅe| haṅulatihakən· gaga R̥nək·| Aśaśavaḥ haməmə
+<lb n="73r2"/>raṁ kaṙyyane| kudhisən larane| AR̥R̥p ambəkane haboti vvaṁṅ atuva| tambanai bobo<space type="binding-hole"/>reḥ| kuniṙ| mulaniṅ ana paṣagi| tbus i śaṅgar·| bantən saṙvva pavitra| saṙhaguṁ| sambat· bhaṭa:ra saṅ asi
+<lb n="73r3"/>ḥ praṇa:| skul kul· kagok·| malaniṁ voṁṅ ahutaṁ dadi sugiḥ| havdiniṅ apitan kabhuyutan· <space type="binding-hole"/> den alihakən· den kabhakteni dene| saṁ| bha| handudus pəri vastu| hameta viḍi @ tu| 7| pva|
+<lb n="73r4"/>7| haṁ| 3| manahil·| salvirani gave hala| daṅu| gu| 8| bya| 7| ma| ra| kumba| norapi<space type="binding-hole"/>liḥ kaṙyya| bhudane| hakḍik saṇake| prajña:n· śagavene| Elik· yan akaṙmma| yen bantənya
+
+
+<pb n="73v"/>
+<lb n="73v1"/>| dinadus·| hasu cel/e\ṁ| sambat saṁ hyaṁ hayun ṣadiraksa| mulani voṁ vuta śaśa/ka\valun kali<space type="binding-hole"/>t·roro kehe| mulaniṅ ana śaśaṅi| Ila-hila gəL̥mpə @ haṙ| 6| va| 4| bhu| 7| manahil·|
+<lb n="73v2"/>cintamani| pakuramasana| pamanenana hayu| haməməraṁ vathke| tan spi raghane| habot i ka<space type="binding-hole"/>sukane| nora piliḥ gave| bot lavas tikahe| haguntiṅana hayu| malaniṅ ana gingəm·| mula
+<lb n="73v3"/>niṅ ana paśagi| boboraiḥ kuniṙ bantəne| sambhat· braṣ aṅasiḥ praṇa: mulani voṁṅ a<space type="binding-hole"/>hutaṁ| dadi sugiḥ havdi riṅ apitan· kabhuyutan· den alihakən·| sa| bha| parivastu hagave vi
+<lb n="73v4"/>ḍi @ vu| 5| ka| 8| manahil·| bahuputra| pavaraṅana hayu| haja luluṅa hala| lu| 3| dva<space type="binding-hole"/>| 9| labha| ra| meṣa| kuṭila sumka| hagaga-śavaḥ kaṙyyane| katmu sore labhane| luṅa hamoṅa
+
+
+<pb n="74r"/>
+<lb n="74r1"/>kinuṁku| hapitan i savaḥ| śetra kalavan· vatəs·| saṁ| śa| binañcalakən mariṁ daksiṇa| <space type="binding-hole"/> lmaḥ məṇḍək kadaga| təṇḍas i kakalyan·| tbus i śetra| sambhat saṁ gagakalaya| saṁ gagakmitn aśi| sa
+<lb n="74r2"/>gagak muliḥ| mtu kravlut· dasabhumiṅ akaśa //0// ma| 3| ma| 5| ra| 5| marakiḥ| panain ha<space type="binding-hole"/>naina hayu| śri gati misor·| hana iṁ panti| dhavurau hana iṁ lumbhuṁ| bra| 7| dva| 9| jaya| bhaṭari śri§
+<lb n="74r3"/>manikaḥ| ra| makara| bhaṣa coṇṭok·| riṁ tataga saṁkanai huripe| dr̥mbamoha tambraḥ ku<space type="binding-hole"/>raṁ| hyaṁ brahma tumurun ṣakala| saṁ| śa| ri matha larane| hanahur ahutaṁ śaśaṅi| ri pitara| Apitan· lmaḥ
+<lb n="74r4"/>saṅaṙ hari-hari| guntuṙ katutugi śaraḥ| mulani bocokok hagala kamaṅan·| gambu<space type="binding-hole"/>han·| hapitan subakaṙmma| bañu mili śaka lor· lmaḥ baṁ| sa kaṙlamima ṅaranya| sa dhṅən· ra⌈
+
+
+<pb n="74v"/>
+<lb n="74v1"/>le| loṙ kulon·| bubuhanutug· śaka vetana| maṇḍala loṙ vetan saṁ bhabhu bhiru ha<space type="binding-hole"/>ranai @ pa| 8| va| 4| śu| 6| kruvlut·| bhecari| paṅlanana hupas hayu| paṅuṅgahəna parihayu| ya| §
+<lb n="74v2"/>9| bya| 7| śri| ra| mr̥cika| Aduduṣa vvaṁ gavenai| ri panti labhane| hinuman· ri madya go<space type="binding-hole"/>nai| saṁ| bhu| milu ri| saṁ| vr̥| mulani vvaṁ sinambhəriṁ ghlap·| ḍeniṅ apitan ṣavaḥ mulani vvaṁ mṅi| hapita
+<lb n="74v3"/>n sulambhuran haranai| tuva naumən·| tbus iṁ gaga śavaḥ| hana phalaṇḍakan·| sambhat saṁ kala <space type="binding-hole"/> ṇaṁguṁ| saṅara| hapitan bha:ṁ hijo ṅaranya @ va| 9| ka| 8| śa| 9| kruvlut·| sarab·| papagərahayu
+<lb n="74v4"/>| hanandura phala gantuṁṅ hayu| rikəl oyod·| lu| 3| ga| 4| ra| danu| labha| hyaṅ asno <space type="binding-hole"/> saṅ avevehan vuku| haśaśavaḥ kaṙyyane| hamaṅan aṅi/nu\m{*u}· kaśukane| mulani voṁ tinaṁtaṁ
+
+
+<pb n="75r"/>
+<lb n="75r1"/>vusaṅgavuṇu vara ḥhala| bra| 7| dva| 9| ja| ra| makara| mamasaṁ vlaḥ| bañcaṁ hayu| hamatuna gaga <space type="binding-hole"/> hayu| hamatuna gaga hayu| gumaraṁ tumurun·| kavadaden i tataṅga| data hamet dr̥veniṁ tataṁ
+<lb n="75r2"/>ga hambhəke| nora piliḥ| data /ha\luṅguh adhuhur·| tan kandəlan tutur·| saṁ| bha| hanuṁvu ri| sa<space type="binding-hole"/>| bha| śu| ṣaṇak i saṇak· den lavani| vəR̥kə tbus i paṅason·| Ivak· loḥ binoro
+<lb n="75r3"/>kos·| sambhat sa kala rundaḥ-rundaḥ pagəranə trus· @ tu| 7| va| 4| bhu| 7| kulavu| da<space type="binding-hole"/>ṅu| śri mas·| pacarona hmas hayu| hamalantə/n·\ kaṙyyane| ka| 1| bya| 7| ra| kumbha| paguntiṅana|§
+<lb n="75r4"/>pamanenana hayu| mulani saṙputiḥ| mulaniṅ ana ratu bhiniseka| bantən i saṅgar·| saṙ<space type="binding-hole"/>vva gnəp· dodval·| sambhat saṁ hyaṁ daṙmma tan· knaṁ lara| saṁṅ aR̥but paksa| śri vinevehan· ta
+
+
+<pb n="75v"/>
+<lb n="75v1"/>n paveveḥ hapitan viśeṣa tan· vun sira viśeṣa| sa| ra| mulaniṅ ana susupan·| sa de<space type="binding-hole"/>vatha tumurun· samadaya| bhaṭa:ra guru nora milu thumurun·| milaniṅ ana lmaḥ rubhuḥ| bhaṭa:ri śri
+<lb n="75v2"/>haṅucap-ucap· kalavan· bhaṭa:ra brahma kaṙlana bhaṭara viṣṇu| hapitan· juraṁ loṙ kidul<space type="binding-hole"/>· @ haṙ| 6| ka| 8| vr̥| 8| kulavu| kepvan· pamutərana miṅgat hayu| U| 4| va| 4| śri| ra| miṇa|
+<lb n="75v3"/>hapapagəṙ kaṙyyane| vvaṁ thani habotoh inuman· hambhəke| mulaniṅ ana śavaḥ giL̥ṁ| mu<space type="binding-hole"/>laniṅ ana śri tuvuḥ| tbus i vulan kapitu| ri lumbhuṁ| ri śavaḥ| sambhat saṁ hyaṁ śri hayu| saṁ dhṅənarimuṙtvi
+<lb n="75v4"/>| hana lmaḥ paR̥butan·| kabhuyutan· loṙ kidul·| harinaraṇḍa riṅ eṙṣanya| saka <space type="binding-hole"/> lamtuk·| bañcaṁ harane| tbus i kabhuyu radhu haguṁ| sambat saṁ kala:ṅu/ku\l-ukuli deṣa harane 
+
+
+<pb n="76r"/>
+<lb n="76r1"/>bhaṭa:ra hindra| saṁ hyaṁ tayaṇuṁku rat·| saṁ hyaṁ bhayu viśeṣa| hana lmaḥ huvuh-uvuḥ| paguyaṅan i vara<space type="binding-hole"/>k·| riṁ daksiṇa| kabhuyutan hana loṙ palaṇḍakan iṁ ghneya| riṁ kbon katutugi śaraḥ| sa| vr̥| saṁ bra
+<lb n="76r2"/>hma kavurvan·| sa| bhu| saṁ| Aṁ| habhubhuri| saṁ| ra| sa| vr̥| hasakuṭa:| katmu labhane riṅ umaḥ @ tu| 7<space type="binding-hole"/>| pa| 9| śu| 6| vugu| hulan sadana padagaṅana hayu| vvaṁ taniha hakaṙyya{*n}he lumbhuṁ| caṇḍi hayu|
+<lb n="76r3"/>gu| 8| bya| 7| ma| ra| kumbha| Agaga-śavaḥ gavene| tkinuman· | riṅ umaḥ labhane| ri paturvan· <space type="binding-hole"/> tan aṅel tan· kna ri kaladaṅu| Akeḥ vvaṁṅ asiḥ| mulani voṁ hala caṁkəme| para pisuḥ katamphal·
+<lb n="76r4"/>deniṁ tutuva| ri śavaḥ lma(ḥ) məṇḍək kidul hana kakalen· ri kayu haguṁ| bantəni kayu h{*u}aguṁ| sambha<space type="binding-hole"/>t saṁ kala haṅubi| saṁ kala kaka{*n}yon· midəṙ| saṁ dhṅən· bhurab· @ haṙ| 6| pva| 7| śa| 9| vugu
+
+
+<pb n="76v"/>
+<lb n="76v1"/>gan turumaḥ| paṅalihana hayu| ya| 9| va| 4| saṁ hyaṁ hisora| saṅ avevehan vuku| havividhe ha<space type="binding-hole"/>bhubhuru hamamasaṅ avuvu gavene| pavaraṅaṇa hayu| ra| miṇa| vvaṁ taniha: haśaśavaḥ labhane| tu
+<lb n="76v2"/>muluṣ tuvuhe| mula{ui ma}niṅ ana hevuḥ deniṅ apitan sumbhar·| kapit deni jagan maṇḍala| lmaḥ <space type="binding-hole"/> gagaruguṅan·| bantən (i) śavaḥ| sambhat saṁ kala niskala| saṁ dhṅən parijana| saṁ dhṅən tan kevu| ka| da| ri pada
+<lb n="76v3"/>ksiṇa| //0// vu| 5| va| 4| ra| 5| vayaṁ| tbu tanmən·| panulara humaḥ| laku vado| pava<space type="binding-hole"/>raṅana hayu| lu| 3| dva| 9| labha| ra| meṣa| pasumka| burañcah hambəke| tanṣaḥ pocapan·|
+<lb n="76v4"/>vani mati ri paṅaR̥pan· labhane| katmu havuruhan· tuvuhe| paṅada vay:aṁ ri paṁguṁ| <space type="binding-hole"/> hamamayaṅi| tadhahe hayam· tbus i paṁguṁ R̥ḥR̥ḥ bhavi| mamayaṅi| mulani vvaṁ kaśaka:la deni
+
+
+<pb n="77r"/>
+<lb n="77r1"/>yuk puputi vigraha| mulani voṁ hanamada maraḥ| tbhus i paḍusan·| Ivak i bañu| tumpəṅi| sa:ṁ <space type="binding-hole"/> R̥ṁ| sambhat· bhaṭa:ra nini babhu biru| baṭa:r{*i}a viṣṇu| Apitan kalabrahma| Ana kabhuyutan· nora kapu
+<lb n="77r2"/>ka: ri dakṣiṇa| ri madya gonyana lmaḥ hamahesan·| lmaḥ hamoraṣa haranai| hapitan kaṇṭa bhu<space type="binding-hole"/>vana harane| hana vatu muguh i natar·| saṁ kala: hidu haranya| saṁ| bhu| prasaṅga hujar i guru @ vu| 5
+<lb n="77r3"/>| pva| 7| vr̥| 8| kravlut·| śugiḥ rarai| pavinihana hayu| phalalamaraṇa: hayu| gu| 8| dva| 9 <space type="binding-hole"/>| maṇḍala| ra| tula| carik·| gumaraṁ śumka| hambusa voṁ kaṙyyanai den paṅan hanake| mul{*ə}a:
+<lb n="77r4"/>ni voṁ kasaṁkala| mulaniṅ ana jubəl age-hage| kadhal·| tbus i śavaḥ| sambhat saṁ bañu <space type="binding-hole"/> baṁ| bañu puputiḥ| sa ka:la hamoṅ ayu| saṁ hyaṁ taya hamoṁṅ ayu| kabhuyutan kapapas kidul i ba
+
+
+<pb n="77v"/>
+<lb n="77v1"/>yu tuvuhe| voṁ taniha| hapaṇḍeha mas· kaṙyyane| paliṁ dr̥venya hak/e\ḥ| mulani sugiḥ ha<space type="binding-hole"/>ñjajamaḥ rabine| tbus i kali śəṇḍaṁ| Ivak· bulus· kalivon·| sambhat saṁ hyaṁ nañtabhoga| mu
+<lb n="77v2"/>laniṅ ana deva tumurun·| haruṅu pituturi| sa| ha| saṁ| bhu| sa| vr̥| hasapata| hasakuṭa:| ri<space type="binding-hole"/>sa| ra| hana ri kayu jarakaḥ| Apin pupusuṁ| saṁ| haṁ| hapṅi| hulatanu| saṁ| śu| hapitan paturaun·| pa
+<lb n="77v3"/>midinai| saṁ| haṁ| saṁ| bhu| hatakon· babhu| hapitan tinpalan·| hapitan lumbhuṁ| lumbu tan· <space type="binding-hole"/> vnaṁ haṅeṙ loṙ| lumbhuṁ saradha haranai| sa ka:la:ṅalap· śri haranai| hapṅi @ haṙ| 6| pa| 9| bu
+<lb n="77v4"/>| 7| kruvlut·| cintamani hayu| paguntiṅana hayu| dhavuhana| pavaraṅana hayu| I<space type="binding-hole"/>| 5| va| 4| jaya| ra| kaṇya| panavurana kəmbhaṁ hayu| hapipirakan kaṙyyanai| siden tanəm ha
+
+
+<pb n="78r"/>
+<lb n="78r1"/>·| saṁ| ca| saṁ| bhu| haṅundaṁ| saṁ| haṁ| sara(ṁ) ka(ṁ) bhumi| hapitan· lmaḥ| saṅaṙ vindu| məṇḍak·| hapitan kamaṁmaṁ<space type="binding-hole"/>| śaśakavalun caṙmma riṅ eṙṣaṇya| hapitan jalma| saṁ| vr̥| saṁ kala yuga hapṅi| saṁ dhṅən milu @ tu| 7| ka|
+<lb n="78r2"/>| bhu| 7| pahaṁ| phadatumahap·| pavaraṅana hayu| gu| 8| bya| 7| maṇḍala| ra kumba| da:<space type="binding-hole"/>ta luluṅa dhavak vatəke hakin-kin dr̥veniṁ voṁ hanumpali gave| mulaniṅ ana lavani bibine
+<lb n="78r3"/>| mulaniṅ ginva{*la}tekan·| kavnaṁṅana səspahan·| tbus i bhañu| caru hulamə loḥ kaca<space type="binding-hole"/>mbhaḥ vuku| jajataḥ suṇṭi| sambhat· ra nini sabaṁ lbuṙ mala| saṁ hyaṁ bhayu harakṣa paṙṇna| bhaṭa:ra brahma|
+<lb n="78r4"/>hamiṇḍa kuñja baṁ| spaha| hana lmaḥ gogombhaṁ hapitan sagraha| kayu kabhuyutan ṣuṁsaṁ hana <space type="binding-hole"/> riṅ ulon·| samunən·| saṁ| bhu| ri śivapeka harane| dagaṅ alayaran·| Adola kəmbhaṁ
+
+
+<pb n="78v"/>
+<lb n="78v1"/>hala mahat harane| hana dhṅən iṁ kbon·| tbus i pasabha| hasu celeṁ riṁ lbuḥ haguṁ| tutu⌈<space type="binding-hole"/>kon sahini pasaṙr·| sambhat saṁ ka:la munaḥ| saṁ kamoṇaḥ| sa ka:la tan aviraṁ| saṁ dhṅən· b(va:) pu
+<lb n="78v2"/>putiḥ| saṁ kala vuruṁ mati @ ma| 3| va| 4| haṁ| 3| pahaṁ| śri mas·| pacarauna hmas /ha\yu| pa<space type="binding-hole"/>s tumurun·| I| 5| dva| 9| jaya| ra| makara| tan pakadaṁ| hadokaṁ voṁ hambhəke| kaśesiḥ ragha
+<lb n="78v3"/>ne| data kabhaya-bhaya| hagaveha sumurup·| hakəkəbonana gane| saṁ| ra| ha:məṇḍə:m·<space type="binding-hole"/>| saṁ| bha| mulaniṅ ana varaṁ ta:taṁga| havaraaṁ sanke| dinadut mantu| saṇak i ṣaṇak·| tbus i pasar·| ha
+<lb n="78v4"/>gara vage| bhavi haṅileni tadhaḥ| havaki lo pipitu| hituṅgal·| sambat· bhaṭa:ra <space type="binding-hole"/> brahma| bhaṭa:ra rudra| saṁ kala taśan pavod·| sa dhṅən· maśat·| saṁ| ha| saṁ| bhu| hutukaṙ lavan a
+
+
+<pb n="79r"/>
+<lb n="79r1"/>vuvu| hanumpaṁ livat ke| si den pet oliḥ data pinuputuṅan| tbus piṇḍo manis pa§<space type="binding-hole"/>hiṁ| ri sagar· saṙvva pavitra| sambhat saṁ hyaṁ viṣṇu| bhaṭa:ra guru| bhaṭa:ra yama| saṁ hyaṁ ma/n·\disora
+<lb n="79r2"/>saṅ asu labha| sa pr̥tañjala hapitan suṁsaṁ carik· haranya| lmaḥ gagaruguṅan·| katu<space type="binding-hole"/>g i śaraḥ| sa parihara harane| handagakən· śetra| tadhaḥ vuk·| sa kalanaṅis harane| saṁ
+<lb n="79r3"/>dhṅən həmphaL̥-mphal·| saṁ dhṅən paṇḍan gunuṁ| sa dhṅən· saṇḍaṁ tgalu harane @ va| 9| ka| 8<space type="binding-hole"/>| bhu| 7| vugu| kepvan· pamatərana migat·| śri| 6| va| 4| labha| hanambhanana salaḥ ton a
+<lb n="79r4"/>yu| praṇa devi lumbhuṁ haja lor iṁ umaḥ| lumbhuṁ saṁ raṇḍaṁ harane| ra| danu| śavah ambhəci<space type="binding-hole"/>k manavurine ṣakan· tbus i lumbhuṁ| sambhat sa śri pna| dadi si den tanəm·| nora biṣaruṅu jarala 
+
+
+<pb n="79v"/>
+<lb n="79v1"/>cirine| mulaniṅ ana devatha śaśavaḥ hamiṇḍa manuṣa| sa| ca| hanagari| sa| bhu| śu| mu<space type="binding-hole"/>laniṅ ana visuhan·| tbus i śagar· ri pr̥thivi| saṙvva (ṣa)vətrivlas·| sambhat· bhaṭa:ra guru| bha
+<lb n="79v2"/>ṭa:ranuku rat·| deni sumbə kadaga| hapitan· praṇa devi| lumbhuṁ haja ṅer lvaṙ riṅ umaḥ| lu<space type="binding-hole"/>mbhuṁ saraṇḍa harane| saṙvva bcik· yan uvus· bhinasuken·| sa| bhu| murumḍik· @ ma| 3| ma|
+<lb n="79v3"/>5| vr̥| 8| vugu| paṅuritan hayu| śri gati misoṙ| dumunuṁ riṁ sagar·| riṁ śavaḥ dhavuḥ tlu| <space type="binding-hole"/> I| 5| dva| 9| ja| carik·| ra| makara| vvaṁ taniha| śaśaḥ kaṙyyane| nəstiti vatək puja: samadi
+<lb n="79v4"/>| mulaniṁ bhaṭa:ra viṣṇu| tumurun hamiṇḍa manuṣa| bhaṭa:ro śri haṅajava| deni tpə puti| ku<space type="binding-hole"/>niṁ| caru ri lumbhuṁ| riṁ śavaḥ tumpə putiḥ kuni| grihan təlu| pa:pagaṅ ayam·| {*ma}sambhat saṁ hyaṁ śri|
+
+<pb n="80r"/>
+<lb n="80ar1"/>ca| 4| vugu| hamr̥ta yoni sakaṙyyane hayu| hapaduduṣaṇa hayu| patavurana hayu| ka| <space type="binding-hole"/>ṅa| dva| 9| ma| lakv adagaṅ ayu| pavinihana| ra| tula| gumaraṁ sumka| nora piliḥ gave| tka
+<lb n="80ar2"/>dhavak labhane| haśaṣavaha {ui la}kaṙyyane| hagaveha lumbhuṁ katmu sagiḥ tka labhane| tbu<space type="binding-hole"/>s i sagar·| sambhat sa hyaṁ Akaśa: saṁ hyaṁ pr̥thivi| vurvan bedane| mulaniṅ ana putər·| hapitha
+<lb n="80ar3"/>n· bhaṭa:ra brahma hamiṇḍa manuṣa hagave hapitan· ciciṇḍilatu vuvuṅan·| taṁtaṁga<space type="binding-hole"/>ne hanluḥ haL̥t salavaṁ| pucatirisan sinambhər i glap· ri baliḥ tbus i dhṅən·| sambhat sa kala
+<lb n="80ar4"/>raga-ragan·| saṁ dhṅən· bhaṭa:-bhaṭa: @ pa| 8| va| 4| ha| 3| vugu| paluluṅana| paṅugaḥhə<space type="binding-hole"/>na parihayu| U| 4| bya| 7| śri| ra| mr̥cika| carik·| vvaṁ thaniha| hagaman pacul labhane| saṙvva maṣa
+
+<pb n="80v"/>
+<lb n="80av1"/>pitan· vatəs·| lavan setra| Atotohan kaR̥pe| tbus i pajudhyan·| sambat saṁ hyaṁ hi<space type="binding-hole"/>la paganten·| saṅ kala kulaḥ-kaliḥ| saṁ dhṅən pataḥ| mtu bala| śa| da| bhayabya| haṅubathaṅa| {ui ta}
+<lb n="80av2"/>{*ma}| mtu halanaṁ| caḍi mtu vadvan·| sa| bhu| tka ri patapan· //0// haṙ| 6| pa| 9| ra| 5| vugu <space type="binding-hole"/> sivogan hala| bra| 7| va| 4| ja| na| ka| voṁ tani kaṙyyane| pinaR̥ki voṁ vəvərak· me
+<lb n="80av3"/>dane| Ilo tiṅal ambəke| varas labane| mulaniṁṅ ana hayamm aturu| saṅ atala<space type="binding-hole"/>ga hami{*da} manusa| təbus iṁ sukra pahiṁ| caru riṁ saṁṅgaṙ| sambat saṁṅ atalaga| saṁ| sa| haL̥kakə
+<lb n="80av4"/>n sapata: hapitan· vatəs· ri tgal·| bhañu hanagul·| tka kidul· hapitan kabhuyuta<space type="binding-hole"/>n·| sa kala kaṙtika: harane| hapitan· maṇḍala saṁ dhṅən· kṣaṇak aṅapit· @ vu| 5| pva| 7|
+            </ab>
+		    <div type="translation">
+		        <!-- Structure as necessary with <div>, <p>, <ab>, <lg>  -->
+		    </div>
+			  <div type="commentary">
+			      <!-- Comment regarding your edition such as the following example -->
+			     <!-- <p>The asterisk * is used to flag lemmata or forms of lemmata not recorded in the <title>Old Javanese-English Dictionary</title>.</p>-->
+			  </div>
+		    <div type="bibliography">
+		        <p><!-- explain the process of your edition here --></p>
+		        <!-- provide a list of bibliographic references used in your digital editions -->
+		        <listBibl type="bibliography">
+		            <bibl/>
+		        </listBibl>
+		        <!-- the listBibl editions is used to create a list of abbreviated text used in notes and parallels, it is more or less the equivalent of a list of abbreviations, you would find a printed edition  -->
+		        <listBibl type="editions">
+		            <bibl/>
+		        </listBibl>
+		    </div>
+		</body>
+	</text>
+</TEI>
