@@ -1,0 +1,1838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng" xml:id="sarasamuccayaSastra">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="editorial">Sārasamuccayaśāstra: Digital Critical Edition of an Old Javanese Juridical Text</title>
+        <respStmt>
+          <resp>author of digital edition</resp>
+          <persName ref="part:nuha">Nurmalia Habibah</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>
+          <ref target="https://dharmalekha.info">DHARMA</ref>
+        </authority>
+        <pubPlace>Antony, France</pubPlace>
+        <idno type="filename">DHARMA_CritEdSarasamuccayaSastra.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">
+            <p>This work is licenced under the Creative Commons Attribution 4.0 Unported Licence. To view a copy of the licence, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</p>
+          </licence>
+        </availability>
+        <date when="2026">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="L">
+            <abbr type="siglum">L</abbr>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Leiden, the Netherlands</settlement>
+                <repository>Leiden University Libraries</repository>
+                <idno>Or. 5037</idno>
+              </msIdentifier>
+              <physDesc>
+                <objectDesc>
+                  <p>Palm-leaf manuscript from the Lombok Collection, measuring 48 cm and comprising 62 folios according to the catalogue. It contains a complete copy of the juridical Sārasamuccaya, with a copying colophon dated Śaka 1658 (1736 CE). A separate Roman-script transcription associated with Soegiarto is available but is treated as a derivative representation of the same witness, not as an independent witness.</p>
+                </objectDesc>
+                <handDesc>
+                  <p>A detailed description of the script and scribal hand has not yet been prepared.</p>
+                </handDesc>
+              </physDesc>
+            </msDesc>
+          </witness>
+          <witness xml:id="JB">
+            <abbr type="siglum">JB</abbr>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Tabanan, Bali, Indonesia</settlement>
+                <repository>Griya Jero Bakungan</repository>
+              </msIdentifier>
+              <physDesc>
+                <objectDesc>
+                  <p>Palm-leaf manuscript associated with Jero Bakungan, its text can also be accessed through HKS 5269, a twentieth-century Roman-script transcription of the manuscript. The transcription preserves the characteristic opening of the juridical Sārasamuccaya. The Sārasamuccaya səmpiran closing formula occurs within a larger compilation, which continues with further juridical material. HKS 5269 is a documentary surrogate for the Jero Bakungan manuscript, not an independent witness.</p>
+                </objectDesc>
+                <handDesc>
+                  <p>The hand of the palm-leaf exemplar has not been examined; orthographic details recorded in HKS 5269 require verification against the exemplar.</p>
+                </handDesc>
+              </physDesc>
+            </msDesc>
+          </witness>
+          <witness xml:id="K">
+            <abbr type="siglum">K</abbr>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Singaraja, Bali, Indonesia</settlement>
+                <repository>Kirtya</repository>
+                <idno>II.a 940/6</idno>
+              </msIdentifier>
+              <physDesc>
+                <objectDesc>
+                  <p>Palm-leaf manuscript consisting of 21 folios, transmitting the juridical Sārasamuccaya. The manuscript has covers bearing handwritten inscriptions, a Kirtya collection stamp, and a catalogue label identifying it as II A/6/940. The cover also bears the title Sārasamuccaya–Səmpiran and the date 20 January 1933, whose significance remains to be determined. A twentieth-century Roman-script transcription is preserved as Leiden Or. 9537, previously the principal source for this witness. The relationship between the transcription and its palm-leaf exemplar will be checked through direct comparison.</p>
+                </objectDesc>
+                <handDesc>
+                  <p>Description of the script and scribal hand pending examination of the palm-leaf manuscript.</p>
+                </handDesc>
+              </physDesc>
+            </msDesc>
+          </witness>
+          <witness xml:id="B">
+            <abbr type="siglum">B</abbr>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Leiden, the Netherlands</settlement>
+                <repository>Leiden University Libraries</repository>
+                <idno>Or. 6203a</idno>
+              </msIdentifier>
+              <physDesc>
+                <objectDesc>
+                  <p>Roman-script transcription associated with the juridical Sārasamuccaya material designated Br. 144a and Batavia cod. no. 144, a larger collection of Old Javanese legal texts. A note associated with this material describes a Latin-script copy supplied with word division, division into articles, and several corrections by Brandes. A working transcription of Leiden Or. 6203a has been completed, but its precise documentary relationship to Br. 144a and Batavia cod. no. 144 remains to be verified. The siglum B designates this textual witness as presently represented by the available copy, not an additional independent manuscript.</p>
+                </objectDesc>
+                <handDesc>
+                  <p>The scribal characteristics of the underlying material have not been established. Word division and other features of the available copy may reflect later transcriptional or editorial intervention.</p>
+                </handDesc>
+              </physDesc>
+            </msDesc>
+          </witness>
+          <witness xml:id="KJ">
+            <abbr type="siglum">KJ</abbr>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Singaraja, Bali, Indonesia</settlement>
+                <repository>Kirtya</repository>
+                <idno>IIIb 6924</idno>
+              </msIdentifier>
+              <physDesc>
+                <objectDesc>
+                  <p>Witness associated with Karang Jasi, Lombok, presently accessible through a Roman-script copy. Its contents confirm that it transmits the juridical Sārasamuccaya. The available copy includes an ending formula followed by a copying notice dated Śaka 1858, referring to a lontar associated with I Vayan Cenara of Karang Jasi; further babad material follows in the documentary copy. The sequence of larger textual sections differs in some respects from Leiden Or. 5037. Its textual affiliation remains to be established through collation.</p>
+                </objectDesc>
+                <handDesc>
+                  <p>The script and hand of the underlying lontar have not been directly examined; the present textual evidence is mediated through a Roman-script copy.</p>
+                </handDesc>
+              </physDesc>
+            </msDesc>
+          </witness>
+          <witness xml:id="R">
+            <abbr type="siglum">R</abbr>
+            <msDesc>
+              <msIdentifier>
+                <settlement>Leiden, the Netherlands</settlement>
+                <repository>Leiden University Libraries</repository>
+                <idno>Or. 3796 (Br. 996)</idno>
+              </msIdentifier>
+              <physDesc>
+                <objectDesc>
+                  <p>Palm-leaf multitext manuscript, measuring 37 cm and comprising 16 folios according to the catalogue. Its first textual unit contains Lvir niṅ apitan; the juridical Sārasamuccaya, also designated Sarasamudaya, follows. The beginning of the Sārasamuccaya portion is missing, so this witness cannot be used for the shared opening preserved elsewhere. The manuscript contains dating statements associated in the literature with Śaka 1761, 1762, and 1764, but their interpretation requires verification. A direct working transliteration is in progress, and the extent of corresponding legal material remains to be mapped.</p>
+                </objectDesc>
+                <handDesc>
+                  <p>A detailed description of the script and scribal hand has not yet been prepared.</p>
+                </handDesc>
+              </physDesc>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>The DHARMA project received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement no 809994).</p>
+        <p>This private provisional edition is prepared as part of ongoing doctoral research at the École Pratique des Hautes Études (EPHE–PSL); its textual constitution and critical apparatus have not yet been finalized.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction>
+          <p>The text of the provisional base is retained as supplied; no Sanskrit or Old Javanese emendations were introduced in this structural revision. The segmentation and philological status of some passages will need to be checked against the witnesses.</p>
+        </correction>
+        <normalization>
+          <p>The provisional base text transcribes the section “Base text for conversion to XML” in the editor’s working DOCX, retaining its preliminary normalized readings and editorial annotations without imposing further textual normalization. The Sanskrit stanza readings are not yet critically established; manuscript variants remain to be collated.</p>
+        </normalization>
+        <interpretation>
+          <p>The source document combines Old Javanese prose with Sanskrit stanzas. Source folio tags [L:...] and [JB:...] were converted to page-break milestones. The DOCX contains preliminary readings and collation observations; these are preserved as XML working comments, not encoded as reviewed textual variants. Source numbering (including duplicate or absent dyad numbers) has been retained. The metrical attribution of stanza segments remains provisional, and their line divisions still need checking.</p>
+        </interpretation>
+      </editorialDecl>
+      <schemaRef type="guide" key="EGCv01" url="https://hal.science/hal-04085137v1"/>
+      <variantEncoding method="parallel-segmentation" location="internal"/>
+      <listPrefixDef>
+        <prefixDef ident="bib" matchPattern="([a-zA-Z0-9\-\_]+)" replacementPattern="https://www.zotero.org/groups/1633743/erc-dharma/items/tag/$1">
+          <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open to the public.</p>
+        </prefixDef>
+        <prefixDef ident="part" matchPattern="([a-z]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListMembers_v01.xml#$1">
+          <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+        </prefixDef>
+        <prefixDef ident="txt" matchPattern="([A-Za-z0-9]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/DHARMA_idListTexts_v01.xml#$1">
+          <p>Internal URIs using the part prefix to point to person elements in the <ref>DHARMA_idListMembers_v01.xml</ref> file.</p>
+        </prefixDef>
+        <prefixDef ident="class" matchPattern="([0-9]+)" replacementPattern="tba">
+          <p>Referential with the prefix class for script classification declared inside OpenTheso to be mapped with ARK URIs opened to the public.</p>
+        </prefixDef>
+        <prefixDef ident="maturiy" matchPattern="(0-9]+)" replacementPattern="tba">
+          <p>Referential with the prefix maturity for script maturity declared inside OpenTheso to be mapped with ARK URIs opened to the public</p>
+        </prefixDef>
+        <prefixDef ident="cal" matchPattern="([\w]+)" replacementPattern="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/templates/DHARMA_calendarDesc_v01.xml#$1">
+          <p>Internal URIs using the cal prefix to point to calendar systems in  <ref>DHARMA_calendarDesc_v01.xml</ref> file.</p>
+        </prefixDef>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="kaw-Latn">Old Javanese, romanized</language>
+        <language ident="san-Latn">Sanskrit, romanized</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-10" who="part:nuha" status="draft">Revised draft structure according to DHARMA EGC v01: normalized TEI title metadata, relocated language declarations, numbered verse lines, marked provisional meters, and retained unreviewed working observations as XML comments. No changes made to the supplied base-text readings.</change>
+      <change when="2026-11-10" who="part:nuha" status="draft">Inserted provisional base text from the working document Sārasamuccaya(1).docx (section “Base text for conversion to XML”), preserving the supplied sequence, Sanskrit verses, Old Javanese prose, editorial notes, and two-witness folio milestones. Structure regularized for well-formed XML; collation still pending.</change>
+      <change when="2026-11-10" who="part:nuha" status="draft">Created a preliminary local working file for collation of Sārasamuccayaśāstra from the DHARMA Critical Edition template, using Svayambhu as an encoding reference.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:space="preserve">
+    <body>
+      <div xml:id="sarasamuccayaSastra_01.00" type="liminal">
+        <p><pb edRef="#L" n="1v"/><pb edRef="#JB" n="176v"/> nihan sārasamuccaya səmpirannya.</p>
+        <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+The DOCX source has the string “maya” immediately before the first dyad opening tag; its status needs verification.
+ -->
+      </div>
+      <div xml:id="sarasamuccayaSastra_01" type="section">
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.001" n="1">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">devo prāpta sarvataro, </l>
+              <l n="b">məḍaṅ kasthānan evaksah, </l>
+              <l n="c">sarvataro pūrva-devi, </l>
+              <l n="d">lakṣaṇa viṣṇu yo prayah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+em. sarvottaro, eva saḥ? mixed OJ and Skt?
+ -->
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:  devaprasta sarva taro mdaṅ kasthanane vaksah sarvataro pūrva devi lakṣaṇa viṣṇu prayah
+JB: devo prāpta sarvataro, məḍaṅ kasthānan evaksah, sarvataro pūrva-devi, lakṣaṇa viṣṇu yo prayah.
+ -->
+          <p n="1">AM. sira bhaṭāra viṣṇu sira mareṅ məḍaṅ təka pva sireṅkana. tan pasaṅkan sira jəg sakiṅ ākāśa sira mahva pva ṅaraniṅ aluhur. təhər ta ṅaranira rahyaṅta vəkaṇḍyavan. sira ta ratu. ndatan ratu riṅ uśana. rahyaṅ juga sira. mayuga pva sira mijil tānaknira. pratyekani ṅaranira saṅ maṅukuhan sirānak panuva. saṅ karuṅ kalah sira tānak paṅgulu. saṅ sandagarbha sira ta panəṅah. saṅ katu malaras sira ta kakaṅiṅ vuruju. saṅ vrətti kandahyun sira ta vuruju. sira ta ratu riṅ məḍaṅ, kapiṅrvaniṅ hana ratu sira.</p>
+          <p n="2">kunəṅ rahyaṅta vəkaṇḍyavan mahyun ta siromuliha mariṅ svarganira riṅ aribhavanamaṇḍala bhaṭāra viṣṇu muvah. maṅkana nimittaniṅ saṅ vrətti kandahyun rinatvakən riṅ məḍaṅ. sira ta sinivi deniṅ sanaknira magave sovaṅ-sovaṅ. sang maṅukuhan sira ta vvaṅ vanva. saṅ karuṅ kalah sira <pb edRef="#JB" n="177r"/> ta jagal. saṅ sandagarbha <pb edRef="#L" n="2r"/> sira ta dagaṅ. saṅ katu malaras sira ta mahattano. saṅ vrətti kandahyun sira ta dadi ratu. sira ta maṅhanakən manusa śāsana denira bhaṭāra viṣṇu. kapaṅgiha denikaṅ rāma-rāma riṅ məḍaṅ. susuk salave. keṅətakəna de saṅ vrətti kandahyun. marapvan apagəh ikaṅ rat, atutura vastu, apan saṅ rāma-rāma riṅ məḍaṅ viśeṣa riṅ bhuvana kabeh. ṅuniveh pinakabapa-ibuniṅ rat. hayva ta saṅ rāma yan tan sulakṣaṇa den avəḍihan hana riṅ pahəman. ṅuniveh karakṣaa saṅ hyaṅ āgama. hayu ta yan pagave vivāha. maṅkana ta kaṅ atəmahana ḍəṇḍa. kavruhana kaṅ ḍəṇḍa. maṅkana yogya ḍəṇḍanən, ḍəṇḍanən. yan yogya patyana, patyana. yan yogya sipatən, sipatən.</p>
+          <p n="3">nyaṅ pratyekaniṅ sipat, hana kutirəṅ, mūlya, mā, 10. uttamaniṅ sipat ika. ikaṅ kut baṅ mūlya, mā, 5. madyaniṅ sipat ika. ikaṅ sobhya təki mūlya, evu, 1, kaniṣṭhaniṅ sipat ika. paḍa maṅrahi limas ika katəlu. ikaṅ bebek mū<pb edRef="#L" n="2v"/>lya kupaṅ 2. <pb edRef="#JB" n="177v"/> ikaṅ ayam mūlya kupaṅ 1, kunaṅ ikaṅ varya-varya, pirak 2, kupaṅ 2, lavan vəḍus 1, ikaṅ itik katut kəluranya, kupaṅ 1, paṇa 3. ikaṅ tumpal-tumpal kaili, pirak 1, lavan bras iṅ cupikan, paṇa 1, lavan itik 1, ikaṅ hantiga gumuluṅiṅ mraṅ, paṇa 1, lavan sata 2. ikaṅ jamur iṅ ləsuṅ, saka 1, lavan kras iṅ cupikan, paṇa 1, lavan itik 1, ikaṅ antiga gumulung iṅ mrang, paṇa 1, lavan sata 2. ikaṅ jamur iṅ ləsung, sata 1, lavan ṅras iṅ cupikan gaṅan kacaṅ saparuk, sisig, paṇa 1, samaṅkana səṅkər iṅ sipat. liṅ saṅ hyaṅ āgama-manusa-śāsana.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.002" n="2">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">sadaṇḍa-daṇḍayet doṣaḥ, </l>
+              <l n="b">sayata nuru maṅdənda,</l>
+              <l n="c">samadoṣa niśasani, </l>
+              <l n="d">saha-karo kapadəmmi.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: sadəṇḍa dəṇḍa yen dosah sayatanurupa dəṇḍa rama doṣaniṅ sasani saha karoka pamdi
+ -->
+          <p n="1">ar. hana rāma-rāma amahaṅ tan patyana ika, kutirəṅ sipatən ya. yapvan piṅrvāmahaṅ, ḍəṇḍa su, 3, mā, 2. yapvan piṅtigāmahaṅ ḍəṇḍa śūnya ya. nihan ikaṅ amahaṅ ṅaranya, atavi amantiṅakən paluṅan ta<pb edRef="#JB" n="178r"/>hapan kunəṅ. amahaṅ ika. hana vvaṅ aṅəyəh aṅarəpakən pasamuhan iṅ vvaṅ makveh, amahaṅ ika. hana <pb edRef="#L" n="3r"/>vvaṅ anayub, hana ta ya mitranya inampik ṅaranya aṅinum sajəṅ, tan aṅga ya, majənu nita ya laṅəs deniṅ kəḍəhnya, amahaṅ ika. hana vvaṅ amupuh cəḍarnya, anuta ya riṅ atut parunya, amahaṅ ika. hana rāma-rāma anikəlakən jinah saṅka ri krodhanya, amahaṅ ika. hana vvaṅ añjavat istri laraṅan, amahaṅ ika. hana vvaṅ mara riṅ alas aṅgava strinya, apopolahan ta ya riṅ alas, katəmu dene rovaṅnya sapakraman, amahaṅ ika. hna rāma-rāma aṅoko pahəman, amahaṅ ika. samaṅkana kvehniṅ amahaṅ tan patyana ika yan rovaṅniṅ sapakraman kutirəṅ sipatən ya. yapvan lyan amahaṅ ika, patyana ika.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.003" n="3">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">tatas varṇaikaśa vesi, </l>
+              <l n="b">para geyokcah,</l>
+              <l n="c">svaloke, </l>
+              <l n="d">rama-śasani nevak cah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: vatasvanekasavesi parage yok cah svaloke, rama sasani nevañcah
+ -->
+          <p n="1">[AM] ana rāma-rāma aṅambul riṅ pahəman, kut baṅ sipatən ya.<pb edRef="#JB" n="178v"/> yan atuvveṅ taluṅguh kutirəṅ sipatən ya. yapvan lyan amahaṅ, daṇḍa śu, 1, mā, 4. nti dharṣa ṅa.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.004" n="4">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">ilyasya rāma daṇḍasya, </l>
+              <l n="b">durlakṣaṇa migañcati,</l>
+              <l n="c">satatam iva doṣanah, </l>
+              <l n="d">doṣah janah parigatah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: silyapyara madəṇḍasya dulakṣana migañcati satata mivadosanah dosah janah pari [L:3v]gatah
+ -->
+          <p n="1">[AM] hana rāma-rāma ṅuvahi śīla, huvusniṅ pinahayuniṅ rāma luṅgah iṅ varya sipatən ya, aṅruddha-tata ṅaranya. ana rāma-rāma aṅrujit rondon i səḍəṅ saṅ rāma ṅravuhakən pahəman jamur iṅ ləsuṅ sipatən ya. yan atuvveṅ luṅguh hantiga gumuluṅ iṅ mraṅ sipatən ya. durlakṣaṇa ṅaranya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.005" n="5">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">silyasya rāma daṇḍasya,</l>
+              <l n="b">śasani miveyo doṣah,</l>
+              <l n="c">alalimita danati, </l>
+              <l n="d">saṅgrahah daṇḍa doṣan ca.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: silyasyara sadəṇḍasya sasanimiveyo dosah alalimitadanati saṅgrahah dənda dosañcah
+ -->
+          <p n="1">[AM] hana rāma aṅluvari pinahayu, lvirnya: turu, antuk, sapaniskara, sobaya təkki sipatən ya. yan atuvveṅ luṅguh, kut baṅ sipatən ya. avun-avun ṅaranya. muvah hana rāma aṅoko rāma, itik katut kəluran sipatən ya. aṅaləpa ṅaranya. muvah hana vvaṅ maṅhanakən karya, luṅha ataya, luṅgah iṅ varya sipatən ya. <pb edRef="#JB" n="179r"/> yan atuvveṅ luṅguh, varya-varya sipatən ya. yana tapvan len daṇḍa mā, 6 kupaṅ 1, aṅaləpa karya ṅaranya. muvah hana karya salah paṅan, varya-varya sipatən ya. yan atuvveṅ luṅguh, sobhyat kisipatən ya. hana vvaṅ aṅrak aṅuvuh salah masa riṅ vəṅi tan pakarana, sobhaya təkki sipatən ya. yapvan lyan patya<pb edRef="#L" n="4r"/>na ika. masi duṅe-duṅe ṅaranya. </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.006" n="6">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">grəhokaro samagadhi, </l>
+              <l n="b">kara komarako doṣah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: gṛho karosamagadi karaikomara ko doṣah
+ -->
+          <p n="1">[AM] hana rāma aṅgutuk-gutuk lvirniṅ ginutuk, yan kəbo, sapi, celeṅ, cədar, ayam aṅənani umah iṅ sapakraman luṅgah iṅ varya sipatən ya. mañjiṅ riṅ jro umah, varya-varya sipatən ya. aṅuṅgaṅ ṅaranya. yapvan maṅənani vvaṅ, kut baṅ sipatən ya. yapvan vikara kutirəṅ sipatən ya. yapvan maṅənani mathaniṅ vvaṅ, yar tan cheda, daṇḍa su, 3, mā, 2, tan səṅgunən aṅamuk kavyavadhan ṅaranya. yapvan mati, daṇḍa su, 6, mā, 4.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.007" n="7">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">thaktadhah sakathe loke, </l>
+              <l n="b">sahasah samuddhañcevah,</l>
+              <l n="c">kara-kara harse doṣah, </l>
+              <l n="d">sadaṇḍa doṣah phalakah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: vak tadah sakateloke sahasah samudañcevah kara karaharṣe dosah sadaṇḍa dosah palakah
+ -->
+          <p n="1">[AM] hana vvaṅ atukar iṅ panadhahan saṅ rāma tan karuvan <pb edRef="#JB" n="179v"/> sinaṅkanya sapihən de saṅ rama. yapvan rovaṅ iṅ sapakraman atukar, sipatən kalih luṅgah iṅ varya sipatən ya. yapvan ataṅtaṅ-taṅtaṅan sobhyatki sipatən ya. yapvan amijilakən sañjāta kalih amraṅ aliṅnya, daṇḍa su, 1, <pb edRef="#L" n="4v"/>mā 5. patiḍvaharṣa ṅaranya. yapvan amraṅ, daṇḍa su, 3. mā, 2. amuk apuṅguṅ ṅa. yapvan amraṅ taṅ vvaṅ, patyana ika vvaṅ maṅkana. amuk ṅaranya. yan vvaṅ amuṅpaṅ aṅgəlo, sapasar lavasniṅ aburu. yapvan aṅamuk pituṅ vəṅi lavasniṅ aburu. akveh toya somah tan patyana ika kabeh. siṅ adoṣa juga patyani. yapvan milət patyana ika kabeh. aṅabət arannya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.008" n="8">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">tan kakarayahe dosah </l>
+              <l n="b">sakarako desayuktah </l>
+              <l n="c">puruṣa saharosakah </l>
+              <l n="d">karadaṇḍahisasani</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya ana vvaṅ anavanakən rara katututan ta ya riṅ alas patyana ika yapvan katəmu riṅ vəgilan sapihana iya yapvan tan paveh pupu den mati.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.009" n="9">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">katakarate puruṣe </l>
+              <l n="b">asthanya asthaye praja </l>
+              <l n="c">sakarakaratavyati</l>
+              <l n="d">praja doṣah puruseh soke</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya ana vvaṅ anomah rara uvus masrah avəlyan alaki taya riṅ len ikaṅ vəlyan dva-ginakəna yan ora panahuranya patyana ika alon agave kamulan arannya ana vvaṅ uvus masrah vəlyan arabi taya riṅ len <pb edRef="#L" n="5r"/> tan vehana paṅgiha de saṅ manak rara panukunya tan ulihakna aloniludehan arannya. ana pradhana ṅalihakən saṇḍa lmah tan pavarah ri saṅ manaṇḍakən uvus aṇḍaniṅ lmah ana kaniṣṭa ṅalihakən saṇḍa lmah tan pavarah ri saṅ manaṇḍa daṇḍa su 3 mā 2 yan ora panahuranya patyani ika maliṅ agave kamulan arannya ana kaniṣṭa ṅalap drəvenya dana niliha liṅnya ndan dinolnya taya daṇḍa su 3 mā 2 yan ora panahuranya pradhana manaṇḍa gata anaa kayunya agəṅ yata vinaduṅ de saṅ pradhana daṇḍa su 1 mā 9 nhər cucul taṅ saṇḍa gana ganaṅa lila ṅarannya ana vvaṅ aṅalihakən pager tugu kunəṅ daṇḍa su 1 mā 9 gana gana ṅaliha ṅarannya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.010" n="10">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">pradane nami vaṅgutya </l>
+              <l n="b">kaṣṭa doṣah vahinata </l>
+              <l n="c">daṇḍatah pradano jñana </l>
+              <l n="d">najanah pivayeyatah</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya pradhana manaṇḍa savah aṅalihakən galəṅan vinornya kunəṅ ma<pb edRef="#L" n="5v"/>gave asuvakan sumur aṅurugana suvakan aṅurugana sumur daṇḍa su 1 mā 9 gana-gana ṅalilaṅarannya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.011" n="11">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">pasupatite dosah </l>
+              <l n="b">pasupata taye dosah </l>
+              <l n="c">adosah dosah masyami </l>
+              <l n="d">ya duṣṭa mevañca</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya ana vvaṅ kekət kəbo sapinya jinaluknya ta kəbo sapinya tan paveh saṅ maṅikət yata pinalayvakənya taṅ kəbo sapinya patyana yan maṅkana maliṅ aṅalap drəvenya ṅarannya</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.012" n="12">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">pasupasarone dosah </l>
+              <l n="b">saha daṇḍa asamani </l>
+              <l n="c">krət patepatimivasya </l>
+              <l n="d">dosah janah mate pahan</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya ana vvaṅ amraṅ kəbo sapi amaṅan gaga savah kəbvan mati taṅ kəbo sapi təmpuhakna samulyaniṅ kəbo sapi yan amraṅ kəbo sapi tan padoṣa patyana aṅaṅgas arannya</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.013" n="13">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">anavivenamagitih </l>
+              <l n="b">loka pravajakalatvi </l>
+              <l n="c">niropitah vala pṛṇni</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya ana vvaṅ sadaka sa riṅ lanaṅ vadonnya adulur taya mariṅ śūnya daṇḍa ya su 1 mā 9 tidaharṣa ṅarannya. ana vvaṅ adulur lavan istri laraṅan ndan kudaṅ liṅnya daṇḍa ya su 1 mā 9 yapvan len patyana ika istrī <pb edRef="#L" n="6r"/> anmuha ṅarannya </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.014" n="14">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">karamivati śaśani </l>
+              <l n="b">ana ye samuddañ cevah</l>
+              <l n="c">vaktasya sadanda gatah </l>
+              <l n="d">vili vilitasyaraka</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya ana vvaṅ andalihanəluh tan parovaṅ taya daṇḍa ya su 6 mā 4 riṅ vvaṅ tuṅgal tur aveh paṅəli sava su 11 mā 4 mataṅnyan riṅ anəluh patyana tan ucapən </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.015" n="15">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a"><pb edRef="#JB" n="180r"/>hana taya vaśitam byar, </l>
+              <l n="b">sanmaśoda vetastavya,</l>
+              <l n="c">yadhithasta sanmasenah, </l>
+              <l n="d">saha-munya nama syavyaṅ.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:ana ta ya vacitəm vya san masodavetaṣṭavya ya di taṣṭa sanma senah sahamunyana masyavya
+ -->
+          <p n="1">[AM] ikaṅ dṛvya ulihniṅ anyāya, nəmaṅ lek lavasanya kabhukti, ilaṅ ya manuhurakən drəve vitnya. anyāya ṅa. salvir iṅ clor.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.016" n="16">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">patharəm pitarəm vṛttya, </l>
+              <l n="b">brāhmaṇa gurutalpakam,</l>
+              <l n="c">pakṣapātaḥ vicarantu, </l>
+              <l n="d">avīcinarakaṁ vrajet.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:matarəm sitarəm hṛtva brahmaṇa guru talpaka pakṣapatah vicaratu avehcihnaravi brajet
+ -->
+          <p n="1">[AM] hana vvaṅ amatyani bapa ibu amunuh ləmbu sakandaṅ, amatyani brāhmaṇa pitu, agə̄ṅ pāpanya, ləvih pāpaniṅ tan satya <pb edRef="#JB" n="180r"/> riṅ vyavahāra. </p>
+          <p n="2">nihan śāsananiṅ vvaṅ sugih yan anəmu sakiṅ bapebu rama tuha kunəṅ salavasnya dudon umah mati taya tan panak palakonana pakraṅan ana <pb edRef="#L" n="6v"/> vvaṅ somah sakeṅ ramanya salavanya kurən mulih ya mariṅ kavitanya mati taya sadrəvenya sakiṅ kavitanya mulih mariṅ ramanya tan kraṅan ika ri mulih ṅaranya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.017" n="17">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">drəkutha pasarah sapi, </l>
+              <l n="b">nastake kamatiśrahah,</l>
+              <l n="c">kapanyaṅ mana puruṣaḥ, </l>
+              <l n="d">bhagata ya cetya yadhi.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L	drəkutapasarah sapi naṣṭake kama viśrahah kamanyəmana puruṣah bhagaya cetya yadi
+ -->
+          <p n="1">[AM] hana vvaṅ inapit alanya sinambər iṅ glap, sinavut iṅ ula, vulaṅun edana, salviraniṅ kapaṅavan kaləbur iṅ saṅ hyaṅ āgama ṅa. daṇḍa su, 3. mā, 2. yan mati daṇḍa śu, 6. mā, 4. maṅkana śaśananya. hana vvaṅ təka ṅapit, antyakəna roṅ lek rvaṅ puluh vəṅi. yapvan tan aṅer tan aṅaliha, daṇḍa śu, 1, mā, 4. maṅkana śāsananya. </p>
+          <p n="2">ana vvaṅ mati tan kinavruhan kapatinya de saṅ rama tan apasaduva saṅ rama daṇḍa su 1 mā 4 vaṅke kabunan arannya, yapvan iṅ vatəs ika rovaṅ iṅ sapakəliran rovaṅnya ṅəmbalana daṇḍa.</p>
+          <p n="3">ana vvaṅ anuṅgokən rabinya jinamah taya de saṅ pradhana uvus utaṅnya tan vnaṅ lakinya məjahi puruṣa hina ṅarannya nihan iṅ vvaṅ tan palarən kumiṅ vudug ayan anuṅgokən vnaṅ palakekna maṅkana liṅ saṅ hyaṅ agama manu<pb edRef="#L" n="7r"/>śasana. </p>
+          <p n="4">yan sasandan kəbo sapi limaṅ tahun lələb yan ratna mas peni, krisa, landehan maṇik, sapuluh tahun lələb asaṇḍa arare sapuluh tahun lələb. ana vvaṅ maṅgutuk-gutuk maṅənani vvaṅ saṅ maṅgutuk gutuk daṇḍa mā 4 maṅənani akṣi ceda amatia daṇḍa su 1 mā 4 śasananya. ana vvaṅ atukar aṅunus kris daṇḍa su 1 mā 9 yan amraṅ daṇḍa su 3 mā 2 amraṅ vvaṅ niskarana patyana amuk aṅarannya. ana vvaṅ aṅikət kəbo sapi tan ana tumakvanakən yeka caṅcaṅən piṅgir iṅ avan pituṅ vəṅi lavasanya tan ana tumakvanakən salahakna riṅ rama de saṅ maṅikət yeka kaparan dagiṅarannya. ana vvaṅ ahulutakən kəbo sapi patyana ika maliṅ amita arannya. </p>
+          <p n="5">ana vvaṅ anomah-nomah rara uvus ta masrah vəlyan katəmu taya somah somahanya riṅ paṅasvan riṅ ləbuh riṅ kubon kunəṅ pan denpəluk somah-somahanya aṅrika taya kaṅ istrī sabyantarahataya yateka tan vehən apaṅgiha de saṅ manak rara panukunya tan ulihakna. </p>
+          <p n="6"><pb edRef="#L" n="7v"/>aṅəbur tavon-avonanya vus asat ṅarannya kunəṅ yan ubhaya saṅ manak tan vicara ika liṅ saṅ hyaṅ agama. ana vvaṅ aṅro raganiṅ araga an guntiṅ anak iṅ anak tan pakon iṅ saṅ manak ambeyanana su 6 mā 4 sebrah-sebrah ṅarannya maṅkana liṅniṅ agama. </p>
+          <p n="7">ana pradhana nagih tan pamava patraniṅ mahutaṅ tinakonakən deniṅ kaniṣṭa anaka riṅ umah liṅnya konən ameta ala aṅiraṅ gave ṅarannya maṅkana śasananya. </p>
+          <p n="8">ana kavula miṅgat lumaku taya viku istrī laraṅan kunəṅ pada taya təka pradananya saṅ arabi aṅalapa istrīnya saṅ akavula aṅalapa kavulanya suṅakna de saṅ guru kunəṅ ya tan paveh daṇḍa su 3 mā 2 yateka prasiddha corah istri saṅgraha ṅarannya ana kavula miṅgat omah-omah taya riṅ parannya ndan apagəh paṅantinya ra deśa, olih taya mrih mrih təka taya saṅ pradhana asraha ṅ anaknya drəvenya paro dumən kaṅ saduman panahuranya utaṅ. ana kavula miṅgat ndan alaki taya riṅ parannya sami ulun iṅ mahulun anak anak ta ro təlu pada pvaya <pb edRef="#L" n="8r"/> təka pradananya saṅ akavula lanaṅ aṅalap anaknya roro saṅ akavula vadon aṅalap anaknya saviji suhun taṅguṅan arannya maṅkana śasananya. ana vvaṅ aṅələt kavula milu taya riṅ kārya liṅnya yan akeh utaṅnya miṅgat taya sahutaṅnya sahurənya de saṅ maṅələt mati pvaya tan əlenana yata gumuliṅ mariṅ ələtan maṅkana śasananya. </p>
+          <p n="9">lilima bedaniṅ sakṣi adrəsa ṅarannya vaspada dene tumiṅhal, vṛta sakṣi ṅarannya enak denya ṅruṅu praṇa, kavaspada denya ṅruṅu ṅarannya, vus tinulisakən riṅ vṛta ṅarannya akeh aṅruṅu, riṅ guna ṅarannya vus pinaluṅguhakən ya maṅkana bedaniṅ sakṣi lima kvehnya. ana taya karaja bhaya ṅarannya, katoyabhaya ṅarannya, kagnibhaya ṅarannya, kacorahbhaya ṅarannya, salviraniṅ drəve patuvava tan əlenana ika tumrap iṅ paṅakiṅ arannya. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+p n=”9” dyad 17 ◇ L, dyad 47 JB.
+ --></p>
+          <p n="10">ana prədana managih nagih riṅ kaniṣṭa arəp tan panahura hutaṅe piṅ lima riṅ managihakən pihutaṅ deniṅ amarani yan tan panahur vnaṅ aṅhirakən riṅ kaniṣṭa vnaṅ aṅalap alapana sadrəvene kapaṅgih riṅ umah iṅ <pb edRef="#L" n="8v"/> kaniṣṭapasadokakəna riṅ rama deśa duveniṅ kaniṣṭa kaṅ kalap deniṅ prədana sakeh kdike maṅkana śaśananya. </p>
+          <p n="11">ana vvaṅ maṅunusakən kadga anakniṅ manak rovaṅniṅ marovaṅ tan padoṣa daṇḍa ya evu 4000, mariṅ kaṅ iṅunusakən gadga, pasu maṅer arannya. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:186r]
+ --></p>
+          <p n="12">ana pradhana managih nagih riṅ kaniṣṭa nəhər aṅhirakən ana anaknya istri nhər jinamahnya daṇḍa ya su 3 mā 2 maṅrəmək manik ṅarannya. ana ta kamahabhaya ṅarannya salviraniṅ aguṅ bañu aguṅ tanya vnaṅ lakonana sañjata kveh tan vnaṅ paragən yateka mahabhaya ṅarannya. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:186r]
+ --></p>
+          <p n="11">sad kveh iṅ atatayi aṅracun (ṅracun), anəluh, aṅamuk, anunoni, aṅutil, aṅiṅgatakən, tan ana pāpa ṅrusak drəve gustiniṅ amatyanana riṅ vvaṅ maṅkana. ana vvaṅ aṅrusak duveniṅ gustinya niṣṭa madhya utama kaṅ den rusak yan utama kaṅ den rusak daṇḍa ya su 24 mā 16 śasananya. ana vvaṅ nomah nomah (anomah) vus aveh vəlyan mati ya kaṅ lanaṅ vəlyan mantuka sakavit. ana vvaṅ nomah nomah vus aveh vəlyan mati ya kaṅ istri və<pb edRef="#L" n="9r"/>lyanya tan ulihakna ilaṅaniṅ vəlyan ṅarannya. </p>
+          <p n="12">ana vvaṅ abyavahara (byavara) riṅ rovaṅnya utaṅnya sahurənya dumuhun vusnya nahur abyavahara ya. </p>
+          <p n="13">ana vvaṅ añoloṅ kuda patyanana yan tan pinatyan daṇḍa su 3 mā 2 katagih samūlyaniṅ kuda niṣṭa madhya utamaniṅ saṅ aduve kuda yan duveniṅ saṅ prabhu su 14 mā 18 dasa guṇakna maṅkana śaṣananya. </p>
+          <p n="14">ana vvaṅ lanaṅ aṅgaməli kopek ulun iṅ mahulun daṇḍa ya su 3 mā 2 maṅkana śasananya. ana vvaṅ lanaṅ añjaluk vuluniṅ turuk iṅ voṅ ulun iṅ mahulun daṇḍa ya su 1 mā 9 maṅkana śasananya. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:186r]
+ --></p>
+          <p n="15">ana vvaṅ rama deśa amədək bhūminiṅ abhūmi aṅrampasa ambahaka anuñjəla sama dandanya su 24 mā 16 maṅkana śasananya. riṅ anumpu anuli añjarahi drəve pada daṇḍanya kalavan saṅ aṅrampas maṅkana śasananya. ana vvaṅ anumpu matiya kaṅ katumpu saviji daṇḍa ya su 6 mā 4 maṅkana śasananya. yan mati kaṅ katumpu roro tətəlu papat lilima daṇḍa ya su <pb edRef="#L" n="9v"/> 24 mā 16 dəndane mandəg sakati lima tan kavaśa aṅlintaṅi ila ila maṅkana śasananya. ana vvaṅ aṅalap upah anuduk voṅ mati ya ika tan matiya kaṅ sinuduknya yan tan padoṣa daṇḍa ya su 6 mā 4 saṅ maṅupakən sama daṇḍanya maṅkana śasananya. ana vvaṅ anumpu arubuhkna tembok aṅgubarkna kikis yan tan mati kaṅ tinumpunya daṇḍa ya su 6 mā 4, yan mati kaṅ katumpu saviji daṇḍa ya su 12 mā 8, yan mati roro tətəlu papat lilima daṇḍa ya su 24 mā 16 apanya daṇḍa tan livat sakiṅ sakati lima ila ila tur aveha pamidara riṅ kadaṅ iṅ pati su 1 mā 4, riṅ satuṅgal tuṅgal maṅkana śasananya. ana vvaṅ amraṅ lavaṅ iṅ alavaṅ tur anaṅtaṅ daṇḍa ya de saṅ amava bhūmi su 6 mā 4 maṅkana śasananya. ana vvaṅ vadhon atukar iṅ marunya den suduka ikaṅ marunya utama tatune kaṅ sinuduknya daṇḍa ya dera saṅ amava bhūmi su 6 mā 4 śasananya. ana vvaṅ sahaśa akon añirenana patra tur <pb edRef="#L" n="10r"/> tan pahutaṅ iṅayat iṅ pati dene saṅ akon añireni, añireni saṅ sinahaśa tan yogya anahura sahisiniṅ patra apan sinahaśa ya, maṅkana śasananya. </p>
+          <p n="16">ana vvaṅ andalih anulup saṅ dinalihnya tan katututan riṅ alas kapaṅgih riṅ deśa voṅ kaṅ kadalih ika tur nora anulup voṅ riṅ deśa pada akeh vəruh yen aneṅ umah tur tan pacihna tulup tan pacihna pasar tan pacihna salvir niṅ ginavanya sahaśa ambanda taya nhər tinibanya asta capala saṅ kabanda voṅ riṅ deśa pada geger den pada rəbuti sayakane dene saṅ andalih danda ya saṅ astacapala su 3 mā 2 daṇḍaniṅ saṅ ambanda valatali su 1 mā 4 daṇḍaniṅ aṅrərəbuti sayakaniṅ voṅ geger i deśa tan paṅalaṅi su 3 mā 2 maṅkana śasananya. ana vvaṅ anayab yan katututana tan patyanana ika bandanən, yan tan arəp abanda anatonana patyanana ika kabanda amalaku iṅurip daṇḍa ya su 1 mā 4 śasananya. </p>
+          <p n="17">ana vvaṅ <pb edRef="#L" n="10v"/> kinon aṅilaṅ ilaṅakən dadi ginaməlan deniṅ voṅ saṅ aṅilaṅakən nhər ana arəbuti sayakane danda saṅ marəbuti saṅ aṅgaməli voṅ saṅ aṅilaṅ ilaṅakən ika sadəṇḍaniṅ papati su 6 mā 4 śasananya. ana vvaṅ iṅilaṅakən tinimpal deniṅ kadaṅe saṅ mati iṅilaṅakən duru apasadhuva daṇḍa saṅ animpal su 1 mā 4 viji vijinən yen akeh saṅ animpal daṇḍa mandəg sakati lima sakati nəm lakṣa maṅkana śasananya. ana vvaṅ anaveni carik kəkəbonan tka kaṅ aduve carik kəkəbonanya den praṅa ikaṅ savi daṇḍa ya su 3 mā 2 maṅkana śasananya. ana vvaṅ iṅunusakən kadga tan padoṣa aveha pasu maṅer evu 4 maṅkana śasananya. ana vvaṅ añjavat istrī laraṅan anakniṅ manak ulun iṅ mahulun patyana de saṅ madrəvya laraṅan de saṅ manak de saṅ mahulun yan tinaṅguhan daṇḍa ya su 1 mā 9 maṅkana śasananya. ana vvaṅ aṅilaṅ ilaṅakən sinuduknya saṅ iṅilaṅakənya dadi tan mati malayu aṅavakakən voṅ lyan matiya kaṅ iṅavakakənya daṇḍaya saṅ maṅilaṅakən sarəṅ <pb edRef="#L" n="11r"/> rəganiṅ voṅ niṣṭa madhya utama yan ulun iṅ vvaṅ niṣṭa su 1 mā 4 ulun iṅ madhya su 6 mā 4, yan ulun iṅ uttama su 12 mā 8 maṅkana śasananya. </p>
+          <p n="18">ana vvaṅ sahasa anuduk iṅ kayu aṅgitik iṅ kayu ambandəm iṅ baluṅ aṅgitik iṅ baluṅ daṇḍa ya evu 5 yan luhur iṅ atəṅgək uttama tatunya daṇḍa ya su 3 mā 2 śasananya. ana vvaṅ aṅgitik amraṅ utamaṅganiṅ voṅ siṅ moler iṅ śarīra tan kadi sirah yan ajro tatune daṇḍaya su 3 mā 2, yan tan ajro tatune daṇḍa ya su 1 mā 9, yan abuh kevala daṇḍa ya evu 5 maṅkana śasananya. </p>
+          <p n="19">ana vvaṅ aṅraṅgas vus tka riṅ umahe kaṅ aṅraṅgas ika ṅivak ana pavoṅ sanak iṅ aṅraṅgas iṅajaknya amaṅan aṅinum daṇḍa ya su 3 mā 2 rinəbutnya dene sakveh iṅ undaṅnya bhojekah ṅarannya. pavak iṅ aṅraṅgas daṇḍa ya su 3 mā 2 viji vijinən śasananya. </p>
+          <p n="20">ana vvaṅ amaduṅ kayu <pb edRef="#L" n="11v"/> anibanana patik vnaṅ kəbo sapi mati ya aṅlenana sapaṅrəganiṅ kəbo sapi satəṅah maṅkana śasananya. </p>
+          <p n="21">ana vvaṅ asanda vavadah salvirniṅ vavadah tambaga adine yan livara sakiṅ roṅ tahun lələb. </p>
+          <p n="22">ana rara den ajak deniṅ jajaka atatavan den manis manisi den ajak mariṅ alas arəp den alvanana daṇḍa ya evu 4 śasananya. </p>
+          <p n="23">ana vvaṅ anandakakən kəbo sapi anak anak riṅ pasandan yen duruṅ livat tigaṅ tahun anak iṅ kəbo sapi muliha mariṅ kaṅ aṅgadekakən yan livata sakiṅ təluṅ tahun muliha mariṅ kaṅ ananda anak iṅ kaṅ kəbo sapi. </p>
+          <p n="24">ana vvaṅ añoloṅ tavon iṅon iṅon daṇḍa ya kupaṅ 1 riṅ tigakna yan iṅ vəṅi maliṅ ya śasananya. 
+ana vvaṅ amaduṅ maduṅ salah vaduṅ sipatən mā 2 maṅrəbahi kayu len tan pasantana mvaṅ i saṅ akubvan sipatən mā 5 śasananya. ana vvaṅ anuduk kəbo sapi riṅ pamaṅananya riṅ alas sida ṅraṅgas ika daṇḍa ya su 3 mā 2 śasananya. ana vvaṅ amaṅgi kəbo sapi karaṅgas dadi aṅadəg <pb edRef="#L" n="12r"/> kaṅ anəmoni gənahe kəbo sapi karaṅgas ika təka kaṅ aduve kəbo sapi kaṅ karaṅgas daṇḍa ya su 3 mā 2 aṅadəg iṅ paraṅgasan arannya. </p>
+          <p n="25">ana vvaṅ astacapala amalu, amrəp, anampyal, salvirniṅ astacapala patyana ika vvaṅ maṅkana amuk ta ṅarannya yan tinaṅguhan daṇḍa ya su 3 mā 2 tur aveha pakaramas mariṅ saṅ cinapalan kupaṅ 4 daśa 4 śasananya. ana paśu maniṅhat kuda tan daṇḍanən saṅ maduve ikaṅ paśu alapən. ana vvaṅ manunvani drəveniṅ lyan samūlya nya ikaṅ ilaṅ əlyanana. ana vvaṅ anəṅguh adake ikaṅ ve ajro riṅ vvaṅ tan vruh aṅlaṅi patyana kaṅ tinakonan. ana vvaṅ anəṅguh ajro ikaṅ ve adake daṇḍa ya mā 4 śasananya. ana vvaṅ manampaki ve tləs ikaṅ vvaṅ denya daṇḍa ya mā 4. ana vvaṅ maniñjo drəve ri daləm umahniṅ lyan patyana dera saṅ amava bhūmi. ana vvaṅ nomah nomah vus asrah vəlyan malaki riṅ lyan daṇḍa saṅ malakekən su 3 mā 2 vəlyanya dviguṇakna ṅuniveh sapavehnya dviguṇakna kramanya ndan saṅ malakekən ka<pb edRef="#L" n="12v"/>təmuniṅ vəlyanya tur saṅ mamet katagiha pakeraṅ su 1 mā 4 śasananya. ana vvaṅ maṅaku drəve tan drəvyanya daṇḍa ya mā gava (10??). ana vvaṅ maṅaku janma kavoṅan vnaṅ kunaṅ ndan ulun kunaṅ adva pva ya patyanana ika vaṅ maṅkana śasananya. ana vvaṅ marahakən avaknya vinarah suməṅgah ikaṅ vvaṅ vaneh sugih amavirya advapvaya patyanana vvaṅ maṅkana śasananya. ana vvaṅ maṅalap gaṅan riṅ təpiniṅ pomahan olih sagəm sakandutan dahutana juga ya tan dəṇḍanən. anəṅguh maliṅ riṅ viku patyana ika ikaṅ anəṅguh maliṅ apan tan maliṅ saṅ viku. kunaṅ yan viku murkha payana ika səṅguhən maliṅ. kunaṅ yan maliṅ vadvan inuragan iṅiraṅ iraṅan yapvan ana magalak yan amalavanakən iriya patyani ya kalih. ana vvaṅ andahut vinih iṅ lyan kālaniṅ rahina tan pamit riṅ saṅ avinih daṇḍa ya mā 4. ana vvaṅ tuvaburu manunoni alas katunu ikaṅ patapan denya patyana ika. ana vvaṅ amisuh riṅ tan padoṣa daṇḍa ya su 1 (1) mā 4. ana vvaṅ ka<pb edRef="#L" n="13r"/>təkan iṅ maliṅ rinampas sakvehniṅ drəvenya ulun lavan vnaṅ vnaṅnya tan milu rampasən. masinilihniṅ mandon musuh yan mati riṅ pandonan deniṅ musuh tan panahura rabinya mvaṅ anaknya. manətəki buntut iṅ ayamniṅ lyan daṇḍa ya su 1 mā 4. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:186r]
+ --></p>
+          <p n="26">ana vvaṅ matukarakən vatəs riṅ savah gaga kubvan kunaṅ pinalu taya riṅ tahən kanin taya sakit daṇḍa ya ikaṅ amalu su 1 mā 4. viku manuntun cədar təhər apayuṅ iṅalapan cədarnya mvaṅ payuṅnya maṅkana śasananya. </p>
+          <p n="27">pande rakryan manaṅgap konkonan iṅ vvaṅ adyan tan pakahuvusan pakenira daṇḍa ya su 6 mā 4. saṅ matapa mati riṅ patapan drəvyanira vavanta riṅ saryaṅan. ana vvaṅ manumbas vdihan riṅ səpi riṅ istrī laraṅan daṇḍa ya su 1 mā 4. svami bhava ṅaran iṅ maṅkana. </p>
+          <p n="28">ana vvaṅ anunoni anvatan padaṅu daṇḍa ya mā 1 yan padaṅu mā 4 śasananya. ana vvaṅ saumah lavan kraṅan mati pve kaṅ kraṅan daṇḍa ya su 1 mā 4 valaṅ tumumpaṅ iṅ vatuniṅ ada ṅarannya. vvaṅ maniñjo vvaṅ aturu laki<pb edRef="#L" n="13v"/>bi kavənaṅan taya sikəp ta maṅkana mahalvani kasukan ṅarannya. vvaṅ maniñjo istrī laraṅan sdəṅ mahyas kavnaṅan taya deniṅ lakinya daṇḍa ya su 1 mā 4 maha- lvani mata arannya. ana vvaṅ amalakv aṅinaṅa riṅ istrī laraṅan dananasambavanya muvus kavnaṅan ya deniṅ lakinya da mā gava maṅavalaniṅ tutuk ṅaranya. ana vvaṅ anikəp istrī laraṅan katon ya deniṅ lakinya avut ikaṅ sinikəp daṇḍa ya kaṅ anikəp su 3 mā 2, kunaṅ yan tan pavvaṅ ikaṅ istrī puruṣa pva lakinya patyana təkeṅ kaṅ anikəp. ana vvaṅ mebvan mebvan hetu parəkanya thər pinakarabinya daṇḍa ya su 3 mā 2 rumugakən kuvuṅnya ṅarannya. ulunnya miṅgat marabi vvaṅ menak i parannya manak taya rva təlu təka ta saṅ mahulun iriya rva alapən saṅ mahulun lanaṅ tuṅgal paveha riṅ saṅ induṅnya sapi vadak amava anaknya ṅarannya. kəbo sapi amaṅan pari ikətən yan tan panəbus saṅ anda ri pituṅ vəṅi kavaluniṅ vəṅinya siddha ramamaṅana ika. kunəṅ yan inalapnya sapinya tan vitakənya riṅ saṅ maṅikət daṇḍa ya su 1 mā 4 <pb edRef="#L" n="14r"/> śasananya. </p>
+          <p n="29">ana vvaṅ anutuh papahniṅ papahatan daṇḍa ya mā gava śasananya. ana vvaṅ omah omah tan paṅlavan kumiṅ kaṅ lanaṅ alara kunaṅ erakna satahun lavasanya yen tan varas yata vvaṅ maṅkana kavaśa ikaṅ rara malakiya vaneh lavan drəvyanya bhuṣananya təvasnya daməh ṅarannya. ana vvaṅ amaduṅ kayu riṅ kubvan in glen dviguṇakna samūlyaniṅ vinaduṅnya iṅsa ṅa- ran ika. ana vvaṅ mati yan vnaṅ vnaṅ kunaṅ yen parək iṅ umah yen iṅ carik mesi pari riṅ kubvan kunaṅ sikutən dohe sakiṅ umah sakiṅ carik sakiṅ kubvan pataṅ daśa dəpa yen kuraṅ sakiṅ pataṅ daśa dəpa daṇḍa ya yen lintaṅ sakiṅ pataṅ daśa dəpa nir doṣa. ana maliṅ mati anukəl anaknya rabinya kapañjiṅ ya tkane rama renanya ulunnya tan milu mvaṅ pihutaṅnya tan tagihən deniṅ anakniṅ maliṅ mvaṅ saṅ pṛmana tan panagih eriya apan dharma ika denira liṅ saṅ hyaṅ agama. upah tənunan uvus vineh upahanya vuruṅ </p>
+          <p n="30"><pb edRef="#L" n="14v"/> ana denya ṅupahakən ilaṅ upahanya. ana vvaṅ maṅrəmək saṇḍa sapanandanya ləpihakna daṇḍaniṅ maṅrəmək saṇḍa su 3 mā 2 maṅrəmək maṇik sama daṇḍanya. ana vvaṅ dunuṅan iṅ adol kavula adol masa kunaṅ yen alavas denya dumunuṅ kna ika təmpuhakəna dunuṅanya kunaṅ yan savəṅi roṅ vəṅi nir doṣa yan maṅkana. ana vvaṅ atuva vadrəvya sapaniskara pinailaṅnya de saṅ tinuvavan ləpihakna śasananya. ana vvaṅ aṅandəlakən utaṅ yan mati saṅ aṅandəlakən tan tagihən anak rabinya. kapas kəmbaṅ sarva vija pagər kunaṅ yan inalapnya riṅ rahina daṇḍa ya mā 5 ikaṅ iṅalapnya dviguṇakna. anəbus riṅ atuku vṛdo muliha sakavit. ana vvaṅ aṅurip voṅ amulugur daṇḍa ya su 6 mā 4. managih riṅ galuṅan ilaṅ pradhana nunduṅakən kulah kalih ṅarannya. ana vvaṅ tavan anuṅgu kagṛhajaya avəkasan manak taya rva təlu kunaṅ tan pipilanaknya ika bapa ibunya juga manahura sahutaṅnya mati pva bapa ibunya tagihən yata anaknya tuṅgal anahura sahutaṅ iṅ bapanya śuddha kabeh. <pb edRef="#L" n="15r"/> ana tavan kavula manuṅgu kunaṅ kavnaṅ maṅalilirana anaknya sahutaṅ iṅ bapa ibunya kunaṅ kabrahaja nəhər dinasekən kaṅ sinəṅguh dasih ṅarannya maṅalapi ajaṅ matatampan mañjiṅ mijil ika ta pipilana vnaṅ tagihən sahutaṅ iṅ bapa ibunya. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:186r]
+ --></p>
+          <p n="31">ana vvaṅ masuk riṅ umah riṅ rahina kāla ndatan ana saṅ somah daṇḍa ya su 3 mā 2 śasananya. ana vvaṅ masuk riṅ umah istrī laraṅan ndatan ana saṅ lanaṅ daṇḍa ya su 3 mā 2. ana vvaṅ amisuh istrī laraṅan daṇḍa ya su 3 mā 2 madhya daṇḍa su 1 mā 9 kaniṣṭadaṇḍa mā 1 2 (of 12??) kupaṅ 2 śa- sananya yan ubaya saṅ lanaṅ tan ana vicara. </p>
+          <p n="32">ana vvaṅ mamraṅ kəbo sapi ndan amaṅan tanəm tanəman hetunyan saṅ mamraṅi kəbo sapi aṅlyanana samūlyaniṅ kəbo sapi kunaṅ yan tan pakarana denya mraṅ kəbo sapi pəjahana ika vvaṅ maṅkana kramanya prasiddha aṅgas ika. </p>
+          <p n="33">vvaṅ manambaṅ təluṅ tahun siddha malakya rabinya. vvaṅ matatagon manambaṅ tluṅ tahun siddha matatagon riṅ lyan. malayar manambaṅ pituṅ tahun siddha malakyarabinya. bhujaṅga manambaṅ pituṅ tahun <pb edRef="#L" n="15v"/> siddha malakya rabinya. ana rare lanaṅ maṅrəbati rare vadhon ani ani parine riṅ carik daṇḍa ya su 1 mā 9 madhya sahasa.</p>
+          <p n="34">nihan ta saṅ hyaṅ sārasamuccayaśāstra, anuṅ kavruhana saṅ ahyun byaktaniṅ adva lavan tuhu, solahaniṅ maṅavruhi tattvan iṅ vyavahāra. yatanya tan kacidra riṅ salah lavan kəna mvaṅ saṅ inujarakən saṅ hyaṅ nyāyaśāstra. vinarahakənira tinutnira, mamintonakən ayu mvaṅ alaniṅ ulah iṅ vvaṅ. kady aṅgan saṅ hyaṅ raditya tapvan kinavruhan tattvaniṅ bhava ri kālaniṅ pətaṅ ri vətu saṅ hyaṅ aditya. irika ta yan kinavruhan ikaṅ bhāva kabeh.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.018" n="18">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">nṛpater amimantraṇam, </l>
+              <l n="b">baṇijāṁ vyavahāraṇam,</l>
+              <l n="c">naranam pidhadhanan ca, </l>
+              <l n="d">vyavahāraviśuddhaye(t).</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:nṛpate rapimantraṇaṃ banijam byavaharanam naranam pidadañca byavahara viśuddhayet
+ -->
+          <p n="1">[AM] maṅkana lvir saṅ hyaṅ sārasamuccayaśāstra, tan hana vruh ri halan-hayuniṅ vyavahāraniṅ śenana patih, banyaga. salvirniṅ vyavahāra ṅuni pūrva, ika saṅ hyaṅ śāstra sārasamuccaya sira sthiti ujaraniṅ maṅkana saprakāraniṅ tattva vyavahāra.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.019" n="19">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">śāsanan trividha śāstram, </l>
+              <l n="b">śāstram nyāyapurāṇatam,</l>
+              <l n="c">ya tat śāstram anantaram, </l>
+              <l n="d">tat mūlena vinā<pb edRef="#L" n="16r"/>śayet.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L  śasanan trividap, śāstram śāstranyaya puraṇatam yatat śāstram anantaram tatmulena vinaśayet
+ -->
+          <p n="1">[AM] tiga lvirniṅ śāstra sanuṅ mṛttinya ya śāstra. purāṇaśāstra, varata-śāstra rəsya juga samadhi, śaiva pāśupata, adyama, sabhiprayan ika kabeh. tan kavahya de saṅ hyaṅ sārasamuccaya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.020" n="20">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a"><pb edRef="#JB" n="181r"/>caturvarṇam api varṇam, </l>
+              <l n="b">sukhabhogārthakāriṇam,</l>
+              <l n="c">anāthaduḥkhitānāñ ca, </l>
+              <l n="d">saddharmo paramo guruḥ.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: 	caturvarṇam api varṇam sukhabhogarthakariṇam arthataduhkhitanañca sadharmo paramo guruh
+JB: 	caturvarṇam api varṇam, suka roga varkka ṛṇam, avarttadhuhkitanan ca, sadhamoh paramaguruh.
+ -->
+          <p n="1">[AM] mvaṅ prayojana saṅ hyaṅ sārasamuccaya sira ta abhyāsan de saṅ brāhmaṇa, kṣatriya, vaiśya, śūdra, sira gurva. sevitanira səḍaṅnyānātha nissaraṇa duhkhita, katəmu sarvopāya riṅ hayu.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.021" n="21">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">gurur ātmavatāṁ śāstā, </l>
+              <l n="b">rājā śāstā durātmanām,</l>
+              <l n="c">śāstā vaivasvato yamaḥ, </l>
+              <l n="d">śāsanaṁ hy upamīyate.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L gurvatmavacatam śāstram rāja śāstram duratmaṇaṃ śāstram cevasuto yama śasanam yopaniyate
+JB gurvatmamvancatam śastram, raja-śastram dhuratmanam, śastramcéva sutoyama,   	śāsanam yopaniyaté.
+Viṣṇudharmāḥ 063.024
+gurur ātmavatāṃ śāstā śāstā rājā durātmanāṃ
+ihapracchannapāpānāṃ śāstā vaivasvato yamaḥ
+Alternative emendation: śāsanasyopamīyate.
+ -->
+          <p n="1">upamā saṅ hyaṅ sārasamuccaya, kadyaṅgan saṅ guru ācārya bhagavanta pitāmaha, aśrinevita, kinabhaktyan de saṅ śiṣya mahyun ri kaləpasanya. saṅ ratu sinevitaniṅ dr̥ṣṭopama. sira umilaṅakən pāpanya saṅ yama. sira umilaṅakən pāpaniṅ vvaṅ ṅuni. an pagave śīla hala. maṅkana saṅ hyaṅ sārasamuccaya, an sumiddhakən sukhabhogārthaniṅ caturvarṇa. umilaṅakən duhkhanya saṅ nātha yen seviyanira, tumut tan apavarahnira.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.022" n="22">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">bhayāt ki<pb edRef="#L" n="16v"/>m asya daṇḍasya, </l>
+              <l n="b">upabhogāya kalpante,</l>
+              <l n="c">daṇḍāt kāyanipīḍitāḥ, </l>
+              <l n="d">narās tiṣṭhanti śāsane.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:  bhayat cimasya daṇḍasya, upaboghaya kalphante daṇḍat kayanimititah naratiṣṭanti sasane
+JB: bhayat kimasya daṇḍasya, upabhogaya kalsante, natdat kayanipititah, naratistanti śasane.
+Cf. MDhŚ  	tasya sarvāṇi bhūtāni sthāvarāṇi carāṇi ca |
+  		bhayād bhogāya kalpante svadharmān na calanti ca || 7.15 ||
+Cf. Viṣṇudharmāḥ 063.023
+daṇḍasya hi bhayād bhītā narās tiṣṭhanti śāsane
+ti 'pi bhogāya kalpante daṇḍenoparipīḍitāḥ
+ -->
+          <p n="1">mvaṅ don saṅ hyaṅ sārasamuccaya umarah iṅ vvaṅ inigrahan iṅ magave śīla hayu, dumehniṅ vvaṅ matakuta magave śīla hala saṅkeṅ takutnya vigrahanya, ya dumeh magave ya hayu. ikaṅ gavenya rahayu, ya dumehnya nəmu upabhoga dhinanya. ndhya ta liṅ saṅ hyaṅ sārasamuccaya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.023" n="23">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a"><pb edRef="#JB" n="181v"/> dvitiyam vyavahāram ya, </l>
+              <l n="b">tārako mārakastava, </l>
+              <l n="c">mārako [em. tārako?] nṛpadharmaś ca, </l>
+              <l n="d">baṇigdharmaś ca mārakah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:dvividam vyavaharvayam tarakomara kastava marako nṛpa dharmaśca baṇik dharmaśca tarakah
+ -->
+          <p n="1">[AM] rva lvirniṅ vyavahāra, tāraka lavan māraka, tāraka ya baṇikdharmah. ikaṅ māraka ya nṛpadharmah.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.024" n="24">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">makoghata tataś ceva, </l>
+              <l n="b">presyakopi sahayakah,</l>
+              <l n="c">sadr̥ṣṭovasya dr̥ṣṭota, </l>
+              <l n="d">sākṣi atra pramanathah.</l>
+              <l n="e">svayam yaya madipədhat.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L  makona tata taśceva prasyakopi sahayakah sadṛṣṭova śakṣi tatra pramaṇatah. svayam yamanimdat
+ -->
+          <p n="1">[AM] kinon-kon kunaṅ katona tan katon kunaṅ. ya māraka ṅaranya. tāraka-dharma ṅaranya yukti patyana. ikaṅ vvaṅ tuvi dadi ya sinikəp pinakahulun, pinakarovaṅ kunaṅ paṅavruha maṅkana sākṣi atah. apa lvirniṅ sākṣihaniṅ asākṣi.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.025" n="25">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">dṛṣṭasākṣi śrutasākṣi, </l>
+              <l n="b">sākṣi asta pratadhanat,</l>
+              <l n="c"><pb edRef="#JB" n="182r"/> bhūtasākṣi tama kūṭaḥ, </l>
+              <l n="d">pañcaite sākṣiṇaḥ <pb edRef="#L" n="17r"/> smṛtāḥ.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: dṛṣṭo śakṣi śrutah śakṣi śakṣi ha(lvir iṅ sakṣi) stha pratadanat bhuta śakṣita makuṭah pañcate śakṣiṇa smṛtah
+ -->
+          <p n="1">[AM] lima lvirniṅ sākṣi. hana mata tan ton matanya irikaṅ vyavahāra. hana tan paṅrəṅə̄ taliṅan. hana ta ginupi, hana tan vruh iṅ pramāṇa tan panon tar paṅrəṅə̄. tuvi bhūtasākṣi ṅaranika. hana ta sākṣi tan dadi matuha. tan paksa patambəknyaṅ daṅu akūṭasākṣi ṅaranika. nahan ta lvirnya lima.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.026" n="26">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">dhanavantaḥ kulīnāś ca, </l>
+              <l n="b">śīlavanto bahuśrutāḥ,</l>
+              <l n="c">karmaṇā pariśuddhās tu, </l>
+              <l n="d">satatam bhūtasākṣinaḥ.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: danavanto kulinañca śilavanto bahuśrutah karmaṇa pariśuddhastu satatam bhuta śakṣiṇah
+ -->
+          <p n="1">nihan lvirniṅ yogya makasākṣiha vvaṅ sugih riṅ vadva, vəkaniṅ maharddhika vvaṅ maṅgəgə̄ daśaśīla tumut iṅ rasa saṅ hyaṅ dharma vvaṅ kṛtapuṇya. nahan ta lvirnya. ndhyanuṅ tan yogya sākṣiha.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.027" n="27">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">jodharah taskara nicca, </l>
+              <l n="b">dāridrā vyavahārariṇaḥ,</l>
+              <l n="c">anutah sākṣinaḥ sarve, </l>
+              <l n="d">vyavahāra hya nutatah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: jodarah taskaranina daridra vyavahariṇah abhutah śakṣiṇahsarvve byavahara hya bhutatah
+ -->
+          <p n="1">[AM] kaṅ tan ogya sākṣiha vvaṅ bobotoh, maliṅ prasiddha, vvaṅ maləməh mareṅ tirtha hayu. saṅ tyāga vvaṅ tan padṛvya, <pb edRef="#JB" n="182v"/> vvaṅ madol avli ambəknya. nahan ika tan yogya makasākṣiha. prasthavanya tan dadi dharmmambəknika doṣanya. ndhya hayuniṅ sākṣi kinonakən anaknya tan kari nihan.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.028" n="28">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">sākṣī ca vidyāsampannaḥ, </l>
+              <l n="b">vyavahā<pb edRef="#L" n="17v"/>ra punah-punah, </l>
+              <l n="c">si padena gataḥ sākṣi, </l>
+              <l n="d">sākṣi inah parajayah. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: śakṣica vija sampənah vyavahara punah punah utpadena gatah śakṣi śakṣi inah para- jaya
+ -->
+          <p n="1">salvirniṅ vyavahāra kabeh hananiṅ sākṣi nimittanya rahayu. inaniṅ sākṣi dadya ya tan təka riṅ pasamaya, mvaṅ yan tan pasākṣi ya kunaṅ, ikaṅ vyavahāra inalahakənyan maṅkana.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.029" n="28">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">adṛṣṭam aśrutañ ceva, </l>
+              <l n="b">aniddha vedya mandikam,</l>
+              <l n="c">sākṣya nora itaśtaścit, </l>
+              <l n="d">asākṣi parikirttitah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: adṛṣṭamaśrutañceva avida vedyamaddikam śakṣa nora itah taścit aśakṣi (tan paśakṣi) parikirtitah
+ -->
+          <p n="1">[AM] ndhya ta lvirniṅ tan saksya ṅaranya tan hana ruməṅa ya, tan hana pavarahan iya, tan pacihna. nahan taṅ kūṭasākṣi ṅaranya tan pintuhu. </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.030" n="29">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">asākṣi-sākṣinam kṛtyam, </l>
+              <l n="b">adṛṣṭam-dṛṣṭam eva ca, </l>
+              <l n="c">aśrutan śrutam etatyat, </l>
+              <l n="d">kūṭasākṣi nigadyate. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: aśakṣi śakṣina smṛta adṛṣṭan dṛṣṭamevaca aśrutan śruta metatat kuṭa śakṣi nigadyate
+ -->
+          <p n="1">nyaṅ sākṣi prasiddha tan yukti inaku-aku sākṣi tan panon, sinaṅgah manon-manon tan paṅrəṅə̄, ya kūṭasākṣi ṅaranya. </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.031" n="30">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a"><pb edRef="#JB" n="183r"/> dva-ceto vyavahāraśmin, </l>
+              <l n="b">jaya-jayani mathako, </l>
+              <l n="c">bhūtasākṣi jaya proktah, </l>
+              <l n="d">abhuta pva pabhajayah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: dvaceto vyavaharasmin jaya jayani matako bhuta śakṣi jayah protah abhuta pva psabajayah
+ -->
+          <p n="1">ka.: saṅksiptaniṅ vyavahāra maṅhanakəna ta ya sākṣi. nimittaniṅ mamənaṅ ya. ṅuniṅ sākṣi prasthavaniṅ ala, alaniṅ sākṣi mvaṅ tayan iṅ sākṣi. </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.032" n="31">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">punah sākṣi vyavahāra, </l>
+              <l n="b">pratityasah abhutomi, </l>
+              <l n="c">jaya-jaya prottahina, </l>
+              <l n="d">sākṣi parajayah. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: punah śakṣi byavahare pranityasah abhuto mijaya jaya prottahina śakṣi parajayah
+ -->
+          <p n="1">lavan deyaniṅ ma<pb edRef="#L" n="18r"/>vyavahāra maṅhanakəna ta ya sākṣi, asiṅ salviraniṅ vyavahāra monogya tuvi, apan vyavahāra yan pasākṣi mamənaṅ. alah ikaṅ tan pasākṣi. nihan ta alahniṅ amaṅku sākṣi mandadaka sākṣinya vəkasan.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.033" n="32">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">ayuktam yuktam mityatam, </l>
+              <l n="b">adaṇḍam-dandam karanam,</l>
+              <l n="c">adharma-dharmatyam utah, </l>
+              <l n="d">atrenam paniścayah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:ayuktam yuktamityatam adaṇḍam daṇḍa karaṇam adharma dharma mityahuh atrebham pāpa niścayah
+ -->
+          <p n="1">[AM] hana vvaṅ tan pasākṣi magave sākṣinya sinaṅguhnyavaknya sākṣi pūrva, an tan pasākṣi aminta kasih manəṅguh rahayu riṅ mahala. nihan liṅnya riṅ tan yogya nigrahan, hana vvaṅ manəṅguh maliṅ riṅ tan maliṅ, anəṅguh anluh liṅnya riṅ tan panluh magave ayu liṅnya riṅ magave hala. maṅkana pāpanya riṅ magave sākṣi vəkasan.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.034" n="33">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">anyāyam padhatam dṛvyam, </l>
+              <l n="b">saṃśayesaditastinti,</l>
+              <l n="c">nevatastita sanmrase, </l>
+              <l n="d">sahamulam vinasyati.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+This stanza but not the gloss omitted in L.
+ -->
+          <p n="1">nihan doṣa tānyāyavṛtti, sumaṅguha dṛvya tan dṛvyanya, manaṅguha mahutaṅ riṅ tan pahutaṅ maṅalap masniṅ vaṅ tan təka riṅ nəmaṅ lek, katut dṛvya malavas milu ilaṅ.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.035" n="34">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a"><pb edRef="#JB" n="183v"/> pitaraṃ mātaram hatva, </l>
+              <l n="b">brāhmaṇa gurutalpagam,</l>
+              <l n="c">pakṣapāta vicarantu, </l>
+              <l n="d">iti ya narakam vrajet.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:pitara mataramhatva brāhmaṇam guru talpakam pakṣapata vicarantu iti yan narakam trajet
+ -->
+          <p n="1">nihan ta doṣaniṅ <pb edRef="#L" n="18v"/> anyāya vyavahāra sapāpaniṅ amati rama-renanya, sapāpaniṅ umati guru, sapāpaniṅ umati brāhmaṇa, sabaraniṅ pāpa kabeh. ya ta iniḍəp niṅ pakṣapāta riṅ vyavahāra.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.036" n="35">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">alpāyuṣyan daridratvam, </l>
+              <l n="b">iha janma ya nityaśah,</l>
+              <l n="c">dhārayet daravanvaś ca, </l>
+              <l n="d">yosatysam narakam vrajet.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:alpayuṣyandari (dra?) tvam ihajanma nityasah darayet daravanvaśca yosatyam narakam brajet
+ -->
+          <p n="1">nihan tikaṅ pāpaniṅ madva riṅ tattva sumaṅguh avaknya mami utaṅi, hana sumaṅguh avaknya anavuri. tan panavur mvaṅ umalahakən riṅ tan yukti kalahakəna mvaṅ umaku yogya mənaṅa riṅ tan yogya mənaṅa ityevamaddhi. nahan lvirniṅ adva ginavayakən. ya teka tan alavas uripnya samanya uripnya duḥkha, daridra pinakajəjəkan, pinakahulun sakeṅ pāpanya, maliṅ śīlataya sinaṅsara ta ya. ndatan uruṅ mati tibeṅ narakaloka dinənda denira saṅ ciṅkarabala.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.037" n="36">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">sapta-janma sahasreṣu, </l>
+              <l n="b">narapāpa na vidyate, </l>
+              <l n="c">asatyam sapatam kṛtya, </l>
+              <l n="d">ya mūrkhapurusadhamah. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:saptajanma sah raśreśu nara pāpa utyate asatyam sapatham kṛtva ya murkha puruṣa damah
+ -->
+          <p n="1">alaniṅ mūrkha riṅ sapata ləvih sakeṅ evu tavun lavasnya kinəla de saṅ yama. muvah pva ya maṅjanma mupataya nora kavruhnya durgga-maya. hana śrayah. prathamasargah. </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.038" n="37">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">dānaśīla bratananda, </l>
+              <l n="b">palanyam astam visetah, </l>
+              <l n="c">anirīkṣyādi carañcah, </l>
+              <l n="d">sabhagnoh ye<pb edRef="#L" n="19r"/>nara manah. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:dana śila bratanañca phalanya aṣṭam viśeṣatah anirikṣya dicarañca sabhagno ye naradamah
+ -->
+          <p n="1"><pb edRef="#JB" n="184r"/> doṣaniṅ pati mojar tan paṅiṅət-iṅət rumuhun saha-vacana, hana gave gopadi tan phapala ika kabeh. apan lagi bhinukti deniṅ pāpanya umarasakən taṅ madva. nihan ta pāpa tinəmunya vuṅkuk, vikəl, bugbag tuva, tuli, bisu, salvir iṅ vikara pinaṅguhnya. maṅjanma ya muvah salvir iṅ saṅsara iniḍəp nya. mataṅyən ayva sahasa mojar iṅ sabha yan tan tuhu.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.039" n="38">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">dṛṣṭaśrutānubhūtan tat(ya), </l>
+              <l n="b">tar [em. tat?] parīkṣya vicakṣaṇaḥ,</l>
+              <l n="c">pacacicarya śāstratyam, </l>
+              <l n="d">bahusatina itaye.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: dṛṣṭa śrutanu bhutantat tan parikṣya vicakṣaṇah paśca cicarya śastratham bahu satinahiyate
+ -->
+          <p n="1">kunaṅ deyan ta salah saṅ vidhagda sampun tinonnira, uvus rinəṅənira, uvus binukti ikaṅ vastu. ikaṅ maṅkana iniṅət-iṅətira rumuhun. vəkasan inaṅən-aṅənira rasa saṅ hyaṅ aji.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.040" n="39">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">dṛṣṭaśrutānubhūteṣu, </l>
+              <l n="b">candavadi prayatnithah [em. satyavādī prayatnataḥ?],</l>
+              <l n="c">praścat śāstra paricchedaḥ, </l>
+              <l n="d">iti sārasamuccayet [em. -ye or -yāt].</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: dṛṣṭa śrutanu bhuteṣu canda vadi prayatnitah praścatya? śāstra paricedah iti sarasamuccayet
+ -->
+          <p n="1">mvaṅ deyanika saṅ vidagdha riṅ sārasamuccaya, sampun ya avas panonira riṅ vastu vinuvus. prayatna tata, vəkasan i śruta sira ri sabhiprayan ika saṅ hyaṅ haji. </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.041" n="40">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">akrərajñah padhajñaścah,<pb edRef="#L" n="19v"/> </l>
+              <l n="b">arthajñodharma saṅśrayah,</l>
+              <l n="c">deśāntarajño kālajña, </l>
+              <l n="d">caturaproccyate vuddhe. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:akṛra jñah pada jñaśca atha jño dharma saṅ śrayah desantara jño kalajña caturah procyate vudde
+ -->
+          <p n="1">anuṅ sinaṅguh vidhagda ṅaranya vruh riṅ sarvaksara, vruh iṅ padhahaya śloka, vruh ta riṅ artha-tattva, umadikarakən gave riṅ dharmasādhana, vruh ta riṅ kāladeśa, vruh ta riṅ tarya bhideyaniṅ śāstra sadhu vacana. </p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.042" n="41">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a"><pb edRef="#JB" n="184v"/> śrutidevapurāṇartham, </l>
+              <l n="b">arthamastava castata, </l>
+              <l n="c">yuktinya yanu bhūtārtham,</l>
+              <l n="d">iti sārasamuccayet. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:śruti deva puraṇartham arthamastava castatha yuktinya yanubhutartham iti sarasamuccaya
+ -->
+          <p n="1">anuṅ kajar de saṅ hyaṅ sārasamuccaya artha saṅ hyaṅ veda, artha saṅ hyaṅ ṛṣya samādhi, artha saṅ hyaṅ purāṇadhi, artha saṅ hyaṅ siddhādi aistavanadi, arthaniṅ laukikaśāstra, artha saṅ hyaṅ nyāyaśāstra, anvīkṣikī.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.043" n="42">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">vicāreṣv api sarveṣu, </l>
+              <l n="b">deśarasti tatan pisan,</l>
+              <l n="c">yadi śāstra naraithah, </l>
+              <l n="d">narah pāpena ristati.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:vicaresvapisarvveśu de śarasti tatan pisan yadi śastra narahitah narah panariṣṭati
+ -->
+          <p n="1">an maṅkana artha saṅ hyaṅ sārasamuccaya. ya ta mataṅyən ikaṅ vicāra kabeh iniṅət-iṅət natha rumuhun de saṅ vruh riṅ sārasamuccaya. hana vvaṅ mapolah tanukti riṅ deśa lyan mavra-vran lavan anak-rabiniṅ lyan, salolya tuvi riṅ paṅi siṅan, riṅ paṅupahan. nda tinya riṅ deśanya maṅkana kunaṅ ya, hanapaṅ maṅkana liṅ saṅ hyaṅ haji. ayva inuhu<pb edRef="#L" n="20r"/>tan yapvan tan maṅkana liṅ saṅ hyaṅ haji etuti makolah ika. pāpa tinəm vika nigrahanya de saṅ vruh iṅ sārasamuccaya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.044" n="43">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">śrenyam sākṣi sarve prayatnayana, </l>
+              <l n="b">kumāraś ca kumārako,</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:śrebyam śakṣi sarve prayatnena kumaraśca kumarako
+ -->
+          <p n="1">pramāṇa riṅ sākṣi, anuṅa bhyasan kayatnakəna de saṅ mavyavahāra, iṅanya i sor pataṅ asta davanya, mayan raray lanaṅ. mon anakəbi tan pinivruhan irikaṅ vyavahāra. ayva mamikara saṅ pamvatan vyavahāra yan maṅkana.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.045" n="44">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">saksyanam svadhanam kṛttvam, </l>
+              <l n="b">sapatham devani mitram,</l>
+              <l n="c"><pb edRef="#JB" n="185r"/> aṣṭarātresu sarakṣa, </l>
+              <l n="d">sākṣinam suprayatnathan.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:śakṣiṇam svadhanam kṛtva sapatham devani mitram aṣṭarateṣu sarakṣa śakṣiṇam suprayatnatah
+ -->
+          <p n="1">ndatan vani vyavahāra yan maṅkana. ikana sākṣi śinuddhi kinon asapata sapaməkas saṅ hyaṅ haji ya gavayakəna sampun ya sapata kəmitən valuṅ vəṅinya kayatnakəna.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.046" n="45">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">śīrṣapādavikāraś ca, </l>
+              <l n="b">rogonmatha jvara athah,</l>
+              <l n="c">sākṣiṇaḥ prāpta lathena, </l>
+              <l n="d">śreṇyām tat bosanigrahah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:śirṣa pada vikaraśca rogon matta jvarahatah śakṣinah prāptalatenah śrenyam taccośanigrahah
+ -->
+          <p n="1">i təṅahniṅ vvaluṅ vəṅinya, hana ta laranya suku, vulu kunaṅ morəmma, maidhana, asiṅ atah lviranikaṅ lara, kapaṅgih denya athava miṅgata kunaṅ sadoṣaniṅ maliṅ doṣanana yan maṅkana de saṅ pamvatan vyavahāra.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.047" n="46">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">paśavaḥ pañcarātreṣu,</l>
+              <l n="b">saptaratyemu manusah,</l>
+              <l n="c">parahasta<pb edRef="#L" n="20v"/>gataṁ daṇḍam, </l>
+              <l n="d">punaḥ-punaḥ vyavahārayet.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:pasavah pañcaritreṣu saptaratremu manuṣah paraha stahatam daṇḍam nah punah vyavaharayet
+ -->
+          <!-- WORKING TODO: Empty stanza container in source DOCX; no verse transmitted in base file at this position. Verify against manuscripts. -->
+          <p n="1">nihan sthitiniṅ madol-avəlyan yan kolihan ikaṅ paśu, ləmbv ādinikaṅ caturpada, luput pva ya sakeṅ limaṅ vəṅi irikaṅ madval. tan valuyakəna yan vaṅ atitan ri vvaluṅ vəṅi divasa śuddhinya yapvan cetana. kady aṅganiṅ umah duruṅ saprakāraniṅ kidval acetana. yavat agəgən denikaṅ mamlya irikaṅ dval. muvah ata ya riṅ pamlyan tan vaneh kolihana.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.048" n="47">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">daṇḍa sambandanodyuktah, </l>
+              <l n="b">banijakriya tikriya,</l>
+              <l n="c">utpadhanam prasidyesu, </l>
+              <l n="d">sākṣi tatra pramanatah.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:bhaṇḍa sambaddane dyuktah baṇija kriya vikriya utpananam prasiddhyeṣu śakṣi tatra pramaṇatah
+ -->
+          <p n="1">kunaṅ yan hana samaya saṅ banija krama, an paməli sākṣi, pramanakəna riṅ pasamaya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.049" n="48">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">pratipana smitan dṛvyam, </l>
+              <l n="b">suvarṇa rajataddhitam,</l>
+              <l n="c"><pb edRef="#JB" n="185v"/> rajayet dvigunam kṛtyam,</l>
+              <l n="d">napunah vr̥ddhir ucyate.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:pratipanasmitan drəvyan suvarṇa rajata ditam lagayet dviguṇam kṛtva napunah vṛddhi ruccete
+ -->
+          <p n="1">yan mas pirak pinasamayakən talantarakna kahalivata riṅ kalanya yan pira lavasanya ləpih iṅaranya. tan dadi piṅrolpih.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.050" n="49">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">pratipanasthitah danyat </l>
+              <l n="b">dvi-guna mūlam eva ca,</l>
+              <l n="c">aṣṭasamvatsaram pūrṇa, </l>
+              <l n="d">na punah vr̥ddhir ucyate.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:pratipanasthi tam danyan dviguṇa mula mevaca aṣṭa sambat saram purṇa napunah vṛddhi rucyate
+ -->
+          <p n="1">yan pari pinahutaṅakən kahalivat tayeṅ pasamayanya. ləpihakən pisan kahalivat tayeṅ samaya muvah. ləpihakəna lavan anaknya. yadyan valuṅ <pb edRef="#L" n="21r"/> tahun lavasanya na vr̥ddhi tan uvah ya vr̥ddhi.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.051" n="50">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">patipana vyatitanta, </l>
+              <l n="b">rasan sadvigunamulam,</l>
+              <l n="c">paripūrṇas tu sadya varṣam, </l>
+              <l n="d">na punaḥ vr̥ddhir ucyate.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:pratapana vyati tan turaṣan ṣad viguṇa mulam paripūrṇantu ṣadvarṣan napunah vṛddhi riṅ syate
+ -->
+          <p n="1">maṅkana rasa pəhan mavadi, linəpitakən pisan riṅ satavun, kahalivata riṅ pasamayan təka riṅ limaṅ tavun vrəddhi ya muvah.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.052" n="51">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">jātidaśaḥ dhanam kr̥tvā, tritah</l>
+              <l n="b">svayan daśa bhavantīva,</l>
+              <l n="c">utpannās tu puṅsadaśah, </l>
+              <l n="d">daśa eva caturvidhaḥ.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:jati daśah dhanam kṛtva tritah svayandaśah bhavantiva utpanastupun sadaśah daśa heva catur vidah
+ -->
+          <p n="1">pat lvirniṅ hulun anakəbi ulihniṅ aməli, ulihniṅ anavan mahulun kavitan, ulunakəna vaknya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.053" n="52">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">samajātikula strī ca, </l>
+              <l n="b">kuṭumbikulaninditah,</l>
+              <l n="c">vahya karma kriya bhāryām, </l>
+              <l n="d">gharini dhanavāhanī.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:samajatih kula stri ca kudumbi kulaninditah vahya karma kriya bharyam baribidanavahani
+ -->
+          <p n="1">pat bhedaniṅ anakəbi, savarṇa lavan lakinya. ləvih kavvaṅan sakeṅ svāminya. ya kulastri ṅaranya. masor kavvaṅan deniṅ svāminya kudumbi ṅaranika. anakəbiniṅ ta<pb edRef="#JB" n="186r"/>van bhārya ṅaranika. anakəbi bini gariti ṅaranika. 
+</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.054" n="53">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">valat karo valat danda, </l>
+              <l n="b">valat lekan ca vaścati. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:valatkaro valat daṇḍa valat lekañcavaścati
+ -->
+          <p>ika ta saṅ prabhu maṅdaṇḍa yogya daṇḍa. sira ta rakva mamaṅgih yaśa. kunaṅ yanaṅ daṇḍa tan yogya daṇḍa, sira ta rakva tumibakən <pb edRef="#L" n="21v"/> avaknira riṅ kavah. kinəla de saṅ yama-raja. kaliṅanya maṅdaṇḍa yogya daṇḍa ta pva sira. liṅ saṅ hyaṅ āgama.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+not in [JB:186r]
+ --></p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.055" n="54">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">hiṃsakaḥ, codakaḥ, bhoktaḥ, bhojekaḥ, sahacarakaḥ, prīti-</l>
+              <l n="b">kaḥ, sthānadaḥ, trātah, aṣṭaduṣṭo(r) iti smṛtāḥ.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+em. bhettā bhojyakaḥ … trātā … aṣṭaduṣṭā
+ -->
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+ [Note: This stanza underlies the glosses in L882 (Aṣṭādaśavyavahāra), 1v3–2r1.]
+ -->
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:iṅśakah codakah bhektah bhojvekah saha carakah tasna- dah tatrah aṣṭo duṣṭa ri ti smṛtah
+ -->
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.056" n="55">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">prāpta sodhah, trayaś ceva, </l>
+              <l n="b">valāt daṇḍena karttañcah, </l>
+              <l n="c">svama-danan tu kārayet.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:praptasodah trayaścace valat daṇḍa nakartañca svamidantu karayet
+ -->
+          <p n="1">ka. valātkāra ṅa. anəpak, amupuh, anampyal. ika vyavahāra tan kinavruhan. valatkāreka ṅa. anulisakən pobhaya norananiṅ vruh. valatkrəpah ṅa. amatyani tan amitya. ika ta hana vvaṅ maṅkana sikəpən vitakəniṅ nayaka. liṅ saṅ hyaṅ āgama.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.057" n="56">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">na daṇḍa-daṇḍayet raja, </l>
+              <l n="b">daṇḍa raja daṇḍa nayet,</l>
+              <l n="c">asitmadavam apnoti prapnuvintivala doṣat,</l>
+              <l n="d">dusta svatma pabhenan ca.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:adəṇḍa dəṇḍa yetraja daṇḍa rājadaṇḍa nayet asitmadavapənoti prapnuvinti vala doṣat duṣṭasvatma paṇevañca
+ -->
+          <p n="1">hana vvaṅ aṅadhaṅ arəp amatyanana riṅ vvaṅ tan padoṣa, daṇḍa śu, 3. mā, 2. astadusta ṅa. </p>
+          <p n="2">ana vvaṅ sahasa akarya kali bəbəṅan riṅ bhūminiṅ abhūmi tan pamit riṅ saṅ maduve bhū<pb edRef="#L" n="22r"/>mi daṇḍa ya su 3 mā 2 śasananya.</p>
+          <p n="3">ri vvaṅ tamatyani vvaṅ tan padoṣa, akon amateni ri tan padoṣa, anuduk iṅ tan padoṣa daṇḍa ya su 6 mā 4 maṅkana śasananya.</p>
+          <p n="4">ana vvaṅ sahasa maṅrəbati gava gavayan riṅ vvaṅ lu- mivat avan salvir ginavanya daṇḍa ya su 6 mā 4 maṅ- kana śasananya.</p>
+          <p n="5">ana vvaṅ aṅanini padanya vvaṅ yen tan avan ceda aveh patiba jampi mā 5 yen aməgatakən otot avan cedaha daṇḍa ya su 6 mā 4 tur aveha sumaṅer evu 4 śasananya.</p>
+          <p n="6">ana vvaṅ katulup kasuduk kālaniṅ rahina amalaku taya tuluṅ riṅ deśa tinakonan deniṅ deśa kaṅ katulup kasuduk avarah ya kaṅ anulup anuduk mariṅ deśa kaṅ anakoni duk duruṅe mati pisan anuli mati tan kedəp sabdaniṅ mati yan tinakonanya pvaya pisan pindo piṅ təlu deniṅ deśa masi denya ṅa- rani kaṅ anulup anuduk anuli mati yadyapin aparəka a- doha umah ikaṅ kadalih yan tan ana riṅ umah tan ki<pb edRef="#L" n="22v"/>navruhan paluṅanya dene rovaṅnya sadeśa kedəp sabda niṅ mati daṇḍa ya su 6 mā 4 maṅka śasananya. iva maṅkana yen aneṅ umah duruṅ mintar sadina akeh vruh sami rovaṅnya sadeśa duke aneṅ umah vani yen kacorana cor patatakon kaṅ aṅarani aneṅ umah nir doṣa yan ma- ṅkana polahaniṅ akeh vruh yen aneṅ umah.</p>
+          <p n="7">ana vvaṅ a- ñoloṅ paravu riṅ kāla rahina tan drəvenira saṅ amava bhūmi drəveniṅ voṅ sarūpanya daṇḍa ya su 1 (1?) mā 9 śasananya, samūlyaniṅ parahu dviguṇakna.</p>
+          <p n="8">ana vvaṅ mapihutaṅ muṅguh riṅ lyan ṅgvan iṅ saṅ ma- hutaṅ mati ta saṅ mahutaṅ saṅ mapihutaṅ tan panagih mariṅ anak iṅ saṅ mahutaṅ limaṅ tahun lavasanya tan panagih managih taya mariṅ anak iṅ mahutaṅ analiṅa mati ṅarannya tan yogya katagiha anak iṅ mahutaṅ śasananya.</p>
+          <p n="9">riṅ voṅ aturu padha lanaṅ, den jamah rovaṅe aturu ika. yogya patiyane kaṅ añjamah dene kaṅ kajamah. yen aveha pakeraṅ kaṅ añjamah, mā, 6. nirguna saya yan maṅka<pb edRef="#L" n="23r"/>na. </p>
+          <p>viku manuntun cədhar təhəra pāpayuṅ iṅalapan cədharnya mvaṅ payuṅnya.maṅkana śāsananya.
+</p>
+          <p n="10">lvir nikaṅ vvaṅ cinoran tilik ikaṅ vvaṅ asta-dusta, ikaṅ vvaṅ sadtatai. ika ta vvaṅ maṅkana cinoran tilik anyori pāpati, səgəh, kupaṅ 5. lamak iṅ cor 225. anyori dusta səgəh, kupaṅ 5. Lamak iṅ cor 225. maṅkana śāsananya. </p>
+          <p n="11">riṅ voṅ anyoloṅ ratna kañcana, vastradi, sarva-pelag, anyoloṅa kəbo-sapi kalaniṅ rahina, apan aneṅ jro umah kalavan ahavan iṅon ika. yen hana maṅkana cor tilik ika. səgəh kupaṅ 5, 225] la lamak iṅ cor. yen hana anyoloṅ celeṅ cədhar, aṅunusakən kadga, asta-caphala, śabda-caphala. anyoloṅ isiniṅ kəbon, anyoloṅ pasaṅan, anyoloṅ antuk iṅ pāpasaṅaniṅ voṅ, yen kalaniṅ rahina yan tan pacihna tan kinavruhan deniṅ vaṅ ro-tlu. ika ta vvaṅ maṅkana cinoran cor pacicira, səgəh 50. lamak iṅ cor 225. maṅkana śāsananya. </p>
+          <p n="12">ana vvaṅ aṅurip voṅ kabanda arəp pinaten pavehanya ma- riṅ saṅ aṅuripakən su 1 (of 1?) mā 4 maṅkana śasananya. </p>
+          <p n="13">ana vvaṅ sahasa añjambak aṅunusakən kadga daṇḍa ya su 3 <pb edRef="#L" n="23v"/> mā 2 utama sahasa ṅarannya. </p>
+          <p n="14">ana vvaṅ anəmokakən papañjiṅanira saṅ amava bhūmi saṅ amet daṇḍa ya su 12 mā 8 saṅ anəmokakən daṇḍa ya su 12 mā 8 maṅkana śasananya. yen den dunuṅakən riṅ umah i vaṅ dene kaṅ anəmokakən daṇḍa dunuṅanya su 3 mā 2 śasananya. </p>
+          <p n="15">ana vvaṅ ana- ndakən voṅ istrī satahun lavasnya anuṅgu den təbus dene kaṅ asanda duruṅ gənəp satahun riṅ umahe kaṅ anəbasi den pahomah-omahakən dene kaṅ anəbasi kna va- lagara dene kaṅ ananda apan duruṅ gənəp satahun riṅ umahe kaṅ anəbasi yen vus gənəp satahun riṅ umahe kaṅ anəbasi den paomah omahakən nora kəna valagara dene kaṅ ananda śasananya yen duruṅ gənəp satahun riṅ pa- sandan kna valagara dene kaṅ ananda apan duruṅ gnap sa- nahun paṅrəmək tali pavehanya mariṅ kaṅ ananda 200. </p>
+          <p n="16">ana vvaṅ amupu rare duruṅ bisa anambut gave kna riṅ <pb edRef="#L" n="24r"/> baktadah de saṅ amupu su 1 (1?) mā 4 yen kadaṅnya dene saṅ amupu rare pinupunya tan kəna ri baktadah sapa ta paṅhuban iṅ rare yan mariṅ kadaṅnya maṅkana śasananya. </p>
+          <p n="17">kuṭāro ikaṅ kuvuṅ, lva graha panuduknya. ikaṅ tuva-buru kasuduk ta ya rovaṅnya tuva-buru. tan daṇḍa ya. lvit ambatika pavehanya. mā, 5. maṅkana śāsananya. kunaṅ yan mati pamidhara. śu, 1, mā, 4, śāsananya. tuva-burva masaṅvlah, patil, bañcaṅ, kala, rajut, luvvaṅ, salviraniṅ manava yeka kapaṅgih den ikaṅ māvyavahara, kunaṅ ikaṅ tuva-burva masaṅ-masaṅ dhurasthanaya adoh saṅ keṅ avan pramananya sagalah, sadəpa, saroh. saṅkeṅ avan tu tan atat iṅ tatih vala-vala, tan igrahan tuva-buru, saṅ maṅambah yan i grahanən, sanigrahaniṅ maliṅ dṛvyaji. śu, 3. mā, 2, śāsananya. </p>
+          <p n="18">hana vvaṅ maṅalaṅi burvan riṅ pasaṅ-pasaṅan, nigrahanən, śu, 1, mā, 4, śāsananya. hana vvaṅ amaṅan raja maṅśa tan paburu, daṇḍa, śu, 1, mā, 4, śāsananya. ana vvaṅ aburu tikus anəbah umah iṅ voṅ <pb edRef="#L" n="24v"/> lyan daṇḍa mā 5 śasananya. ana vvaṅ amaṅan ayam itik bañak tan pahitik, tan payam, tan pabañak yan iṅ vəṅi maliṅ śasananya daṇḍa ya su 6 mā 4. ana vvaṅ maṅalap vdus nigrahanən su 1 (1?) mā 4 yan iṅ vəṅi maliṅ śasananya daṇḍa ya su 6 mā 4. pasu ikaṅ kəbo sapi durasthana ya adoh saṅkeṅ avan pinarannya pvaya tinəmbaṅ cinicik siniṅat taya tanigraha tikaṅ kəbo sapi ya silimaha ṅarannya kunaṅ yan təka mapagakən maniṅat amukya patyana rəbutən. ana vvaṅ maṅalap cədar iṅ rahina daṇḍa ya su 1 (1?) mā 4 śasananya. ana vvaṅ maṅalap ayam riṅ kuruṅan riṅ caṅcaṅan daṇḍa ya su 3 mā 2 śasananya. ana vvaṅ amaliṅ ayam uvan uvan riṅ rahina daṇḍa ya evu 4 śasananya. </p>
+          <p n="19">ana vvaṅ amaduṅ kayu maṅrəbahi umah daṇḍa ya su 1 mā 4 maṅrəbahi duruṅ lumbuṅ mesi pari daṇḍa ya su 1 (1?) mā 4 maṅrəbahi vnaṅ vnaṅ alyana savəlyanya maṅrəbahi kori mā 5 maṅrəbahi pagər baləbəd mā 2 maṅrəbahi vvaṅ yan mati su <pb edRef="#L" n="25r"/> 6 mā 4 yan tikəl su 6 mā 4 tur aveh pasumaṅeri saṅ tikəl evu 4 yan mati aveh pamidara su 1 (1?) mā 4 yan tikəl vəli tamba pavehanya mā 5 yan anuvusaṅilagakən nirdoṣa yan maṅkana maṅrəbahi palaṅ maṅrəbahi kandaṅ mā 10 (ga of 1??) maṅrəbahi vataṅan su 1 mā 4 maṅrəbahi bale su 3 mā 2 maṅrəbahi dharma kaṅ 1 daṇḍa ya su 5. </p>
+          <p n="20">ana vvaṅ maṅgutuk gutuk maṅənahi ta ya vvaṅ mā 5 maṅənahi ma- taniṅ vvaṅ su 1 mā 4 yan mati daṇḍa ya su 1 mā 4 śasananya. mantanyan ayo tan pramatha deniṅ amaayu vicara ayo tan dharma udaśina riṅ vicara narakaprasta pataka sakvehniṅ vikara pāpa kapaṅguh deniṅ tan dharma daśina.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.058" n="57">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">matarəm pitarəm hṛtva </l>
+              <l n="b">brahmaṇa guru talpakən </l>
+              <l n="c">pakṣapatya vicarantu </l>
+              <l n="d">bhavecinarakə brajet</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L:matarəmpit arəm hṛtva brahmaṇa guru talpakən pakṣapatya vicarantu bhavecinarakə brajet
+ -->
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+dyad n=”57” ◇ L, dyad ..JB.
+ -->
+          <p n="1">kaliṅanya mata-pita riṅ bapəbu brāhmaṇa guru pāpa ikaṅ uməjahaneṅ sira tatapinyan maṅkana yan pakṣa patasira vnaṅ vnaṅ uməjahaneṅ sira mapa ta deniṅ umatyananeṅ sira tan bha[25v]ktya vvaṅ i sira.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.059" n="58">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">anyaya pradika drəvya </l>
+              <l n="b">sanmasenevatiptati </l>
+              <l n="c">yadi tiṣtati san mase </l>
+              <l n="d">saha mula vinasyati</l>
+            </lg>
+          </quote>
+          <p n="1">arthanya ikaṅ drəvya ulihniṅ anyaya tan alavas ananya nəmaṅ lek ananya an maṅkana katavan drəvya lavas denya.</p>
+          <p n="2">ana vvaṅ malaki mastrī pəjah taya lakinya duruṅ taya patutan malaki taya vaneh pintana taya kambaligi satəṅah prapatan yan manak tan pintanaya sari ni kamba juga pavehanya yan akveh vlyanya vdihan pavehanya maṅkana śasananya.</p>
+          <p n="3">ana vvaṅ malaki pinitutan drəvya deniṅ kavitanya aṅgon aṅgon dumdumanya ulihnya gave muvah manutakən lakinya pəjah taṅ strī saṅ jalu pṛmaṇa drəvya kasvaṅarannya jalu mati istrī nohan maṅkana śasananya. ikanaṅ rare karîṅ jro vətəṅ ana dumdumanya ndatan vehakna mijil pva ya vehana dadahanya vruh pvaya lumaku vehana sandaṅənya atuha vruh amalaku dumdumanya vehakna kabeh sadumanya pəjah pva rare babunya pṛmaṇa kasvami ṅarannya.</p>
+          <p n="4">ana vvaṅ malaki mahumah riṅ adoh vus dinuman drəvya deniṅ <pb edRef="#L" n="26r"/> kavitanya mantuk taya mariṅ kavitanya muvah vurukatutur iṅ kandaṅnya ṅarannya mati pva ya kalih kavitanya pṛ- maṇa riṅ drəve śrī mulih ṅarannya.</p>
+          <p n="5">ana vvaṅ malaki kumiṅ lavas tan panak valuṅ tahun lavasnya tuluṅən pabeyakna varaṅən muvah yan təhər tan varas vehən rabinya lakya tan mahalvan maṅkana viśeṣa dharma mūlya ṅarannya maṅkana śasananya.</p>
+          <p n="6">ana vvaṅ marabi ulunnya manaka ta ulunya maṅrəmək maṇik prabhvan daṇḍa su 3 mā 2 śasananya kunaṅ yan rare sasandan arəmək sanda mulih magəm patranya uvus utaṅnya maṅkana śasananya.</p>
+          <p n="7">ana vvaṅ marabi ulun i len tan tinəbusnya manak taya vehana panebusanya juga śasananya. ana vvaṅ madum adrəvye kaliliran akveh sanaknya lyan babunya vaneh tan pada dumdumanya anak iṅ sugih pṛmaṇa śasananya.</p>
+          <p n="8">ana vayuh akveh rabinya tan panak vaneh saṅ manak pṛmaṇeṅ drəvya. ana vayuh adum taya gaga savah saprakāra ana pvaya tan dadi amalaku ta <pb edRef="#L" n="26v"/> ya dumana tan dumana, nohan voganya. vadva anutakən tuhanya mati tan panak tuhanya prəmaṇa riṅ drəvya. vadva utaṅ mati riṅ raṇa tan tinagih anak istrīnya śasananya. vadva rabi rovaṅnya sakahulunan tan pamit ri tuhanya rinampasa kuvuṅnya.</p>
+          <p n="9">ana vvaṅ aminta ləmah saṅkeṅ adoh tan suṅana kon muliha yan mulih suṅana yan sanak iṅ ləmah maṅkana śasananya.</p>
+          <p n="10">ana vvaṅ amraṅ savəd pinitiṅ rama su 1 mā 4 śasananya. ana vvaṅ amraṅ cədar anugəl iṅ cədar tan cədarnya daṇḍa su 1 mā 4 śasananya. ana vvaṅ añjavat istrī laraṅan amuruga kunaṅ aṅalvani duluran patyana śasananya.</p>
+          <p n="11">ana vvaṅ patututan i strī laraṅan tan pasantana i saṅ lanaṅ daṇḍa ya su 3 mā 2 patyana vnaṅ. vvaṅ patututan iṅ rare ulun pamulañjaran iṅ rare ulun miṅgat tatkala samaṅka manahura ya sahutaṅniṅ rare ulun yan ora panahurnya ya gantya uluna sambhega ṅarannya.</p>
+          <p n="12">ana vvaṅ aməluk strī laraṅan patyanaya rampasən daṇḍa ya su 3 mā 2 śasananya.</p>
+          <p n="13">ana <pb edRef="#L" n="27r"/> vvaṅ aminta minta mañjiṅa riṅ umah aluṅguh eṅ panti mahlət pagər bata asuṅa səpah adulur dulur lavan laraṅan patyana ya daṇḍa su 3 mā 2.</p>
+          <p n="14">ana vvaṅ anəmu nəmu drəvya təbusənya yan tan paveh maliṅ atimpuh ṅarannya daṇḍa ya su 3 mā 2 śasananya.</p>
+          <p n="15">ana vvaṅ mahutaṅ pinupuh dera saṅ mapihutaṅ rahən tikla tinindi kunaṅ mulih uvus utaṅnya kunaṅ yan cinucuk matanya vuta daṇḍa ya su 6 mā 2.</p>
+          <p n="16">anakisabdil tan sinakṣyan iṅ rama tan ilu kumalilir iṅ drəvya ibunya ina maṅkana śasananya. pupvan pupvan tan sinakṣyan iṅ rama tan ilu kumalilir iṅ drəvya ibunya ina śasananya.</p>
+          <p n="17">ana vvaṅ uvus amukti vlyan apaṅgiha sapəkən vkas saka ri agya nikaṅ lanaṅ dinudutnya kaṅ rara aṅibuk tavvan tavvan duruṅ arannya tan vehana tmu ya yan ubaya saṅ manak nora doṣa. uvus amukti vlyan mati kaṅ lanaṅ vəlyan mulih sakavit pəjah kaṅ istri tan ulih paməlyan śasananya. uvus amukti vlyan malaki taya riṅ len aməgat tali ṅarannya daṇḍa ya <pb edRef="#L" n="27v"/> su 1 mā 4 vlyan lpihakna śasananya.</p>
+          <p n="18">ana vvaṅ maṅuṅgahi uvus inatərakən mariṅ kavitanya mayusa pinintanya mati taṅ istri sapih vəlyanya yan duruṅ iṅatərakən matya taṅ istrī daṇḍa saṅ manak su 6 mā 4 śasananya.</p>
+          <p n="19">ana vvaṅ alaki pada raṅda pada mavəka olih pva nambut gave añar pəjah pva kalih madum taya drəvya vvaṅ lyan aduma taṅguṅan suhunan śasananya. yan ana vkas kavitanya vehakna śasananya. tan panaka salaya siṅ manak pṛmaṇeṅ drəvya lmah sima tan kneṅ rama. ana vvaṅ kuṅan pəjah tan pamayaṅ rama pṛmaṇa yan tan pasanak varganya vnaṅ anəbusa.</p>
+          <p n="20">nihan krama saṅ hyaṅ mānava-śāsananya, ayo tan dharmoda sineṅ vicāra. ayva ṅivakən təṅən, ila-ila maṅkana, naraka pāpa prapti pataka kapaṅgih deniṅ tan darmoda sineṅ vicāra.</p>
+          <p n="21">nahan deniṅ amalakṣaṇa vyavahāra, ayva idəp puja riṅ salaya iḍəp ta ujarnya kalih, kon maliha, takoni muvah, akveh vuvusnya salaya, alah ya, tuṅgal ujarnya salaya amənaṅ ya. </p>
+          <p n="22">hana vicāra tan pa sākṣi liṅnya. pinta<pb edRef="#L" n="28r"/>nən sākṣinya tan aṅga pva ya ṅucapa alah ya. hana vicāra hovah sākṣi kaṅ salaya tan ovah sākṣi amənaṅ ya. </p>
+          <p n="23">lviraniṅ sākṣi saṅ mavicāra vvaṅ lituhayu paripūrṇa, bhisa ṅaji vvaṅ sugih, phalagrəha, vvaṅ asimadharma, udasina, kulina. ika ta ya sākṣiniṅ saṅ mavicara. </p>
+          <p n="24">lvir iṅ tan yogya sākṣi saṅ mavicāra, vvaṅ tan padhaksa, vikara mrana kuraṅ ləvih, bisu, tuli, kasyasih, vvaṅ mautaṅ akveh, adhah janma, inaśunya muni, viku, ṛṣi, vidu, lampuran, guddha. </p>
+          <p n="25">ana rare mavicara ininditaya deniṅ kavitanya dohaniṅ maṅiriṅ sadəpa saroh mojar pva rare jinavil vinisik visikan ujar pitovi paṅucapakna alah ya. </p>
+          <p n="26">ana durjana riṅ vani lvirnya sthanadah dunuṅaniṅ maliṅ, baktadah aveha maṅan iṅ maliṅ sadanadah andani maliṅ, astradah aveh sañjata riṅ maliṅ, goptah akəkəs maliṅ, karayita atuduh iṅ maliṅ, taratah atuluṅ maliṅ ikaṅ lumakas ya maliṅ ṅarannya, daṇḍanya su 6 mā 4 mati rampasən kapañjiṅ anak istrīnya ikaṅ rovaṅniṅ maliṅ daṇḍa su 3 mā 2 tan kapañjiṅ anak rabinya. andalih maliṅ tan tuhu <pb edRef="#L" n="28v"/> maliṅ daṇḍa ya su 6 mā 4. </p>
+          <p n="27">hana vvaṅ andalih mañjiṅ riṅ umahiṅ a-umah, muṅgah iṅ lumbuṅ[,] mañjiṅ iṅ kubon, andampul, amanek pucaṅ, tirisan, saprakāra isiniṅ kubon ndatan tuhu ata ya. daṇḍa kodaṇḍa cihnaniṅ andalih dinalih, hasta, vastra, dhana, svara, cihna mukha, astra. [em. astra …. Hasta?] lvirnya: astra ṅa. atiṅgala sañjāta. vastra: atiṅgala dodot. dhana: atiṅgala savinavanya. svara: pinasyaṅakən riṅ vvaṅ rva-tlu. cihna mukha: kinavruhan deniṅ vvaṅ rva-tlu sapolahnya. hasta rinəbut. yan maṅkana daṇḍa ya. śu, 3. mā, 2. mañjiṅ riṅ kubvan rahana (rahina??) maṅalap tanəm tanəman saprakāra mā 5 yan riṅ vəṅi maliṅ śasananya andampul rahina mā 5 yan riṅ vəṅi maliṅ ya.</p>
+          <p n="28">ana vvaṅ anilih pari riṅ umah tan pamit riṅ saṅ adrəvya mā 5 inaśvara yan vṅi maliṅ ya. ana vvaṅ maṅalap vuvu rahina mā 2 yan vəṅi maliṅ ya. ana vvaṅ atavu suvakan iṅ len su 1 (1?) mā 4 yan vəṅi maliṅ ya. aṅalap pari tumpukan kunaṅ su 1 (1?) mā 4 yanya vəṅi maliṅ ya.</p>
+          <p n="29">nihan lvirniṅ tan yogya panəmo nəmona drəvya saprakāra riṅ sohan sumur talaga ləsuṅ arəpan panti bale savah tambak salviraniṅ drə<pb edRef="#L" n="29r"/>vya riṅ umah təbusən tan paveh pvaya maliṅ ya.</p>
+          <p n="30">ana adodolan riṅ savah aṅalapa pari riṅ tumpukan alapən savinavanya. kunaṅ yan riṅ umah paṅalapanya su 1 mā 4 yan iṅ vəṅi maliṅ ya.</p>
+          <p n="31">ana vvaṅ akəkəs pari riṅ savah iṅ len tan avarah iṅ saṅ madrəve savah vnaṅ alapən deniṅ adrəve savah isiniṅ suvakan ṅarannya.</p>
+          <p n="32">ana vvaṅ atuvava drəvya dudu saṅ maṅalap sarəganya paṅlyanya yan vəṅi maṅalap maliṅ ya.</p>
+          <p n="33">hana vvaṅ atuvava dṛvya tan pinintonakən keh-kədhiknya vratnya, ilaṅa ta ya alvaṅa kunaṅ, tan əlyanana tan paramartha, tan satrya muka ṅaranya. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="34">ana vvaṅ atuvava drəvya tan pamit paṅalapanya nigraha ya su 1 mā 4 yanya vəṅi maliṅ ya.</p>
+          <p n="35">ana vvaṅ anumbas numbas payu taya tan pavarah paṅalapnya nigraha ya su 1 mā 4. anumbas numbas payu tayeṅ ujar aṅalantaya duruṅ aveh vlyan nigraha ya mā 10 gaṇa ṅarannya. ana vvaṅ amanek kayu anibani vvaṅ malivat su 1 mā 4 yan mati su 6 mā 4.</p>
+          <p n="36">ana vvaṅ kinon amanek pucaṅ tirisan <pb edRef="#L" n="29v"/> tiba taya nigraha saṅ makon mā 5 pjah pva ya su 6 mā 4 inupah pvaya tan yogya nigahanən upahanya vehakna śasananya.</p>
+          <p n="37">ana vvaṅ mahutaṅ aparək saṅ mahutaṅ tan panagih katkan dvidasa varṣa managih saṅ mapihutaṅ pradhana ina ṅarannya śasananya.</p>
+          <p n="38">ana vvaṅ ahur (anahur??) utaṅ tan kadahut patranya siddha pūrṇa utaṅnya kaniṣṭa ina ṅarannya.</p>
+          <p n="39">ana vvaṅ mahutaṅ mati taya saṅ mahutaṅ tan panagih saṅ mapihutaṅ roṅ tahun limaṅ tahun anagih taya pradhana analiṅa mati ṅarannya ana vvaṅ anagih salah tagih sapanagihnya pavehanya.</p>
+          <p n="40">ana vvaṅ anagih nagih maṅhirakən istri laraṅan istri saṅgraha ṅarannya su śa mā 9 yen akveh utaṅnya jalunya hirana ṅarannya śasananya.</p>
+          <p n="41">hana vvaṅ manuṅgokən rabinya kajamah de saṅ manyanda, mulih magəm patranya, uvus utaṅnya, jalunya ina śāsananya<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="42">pradana ṅayatakən təvək riṅ kaniṣṭa satəṅah sudda utaṅnya śasananya. amatyani pradhananya su 6 mā 4 śasananya.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="43">pradana salah ulah aṅalap dṛvyaniṅ kaniṣṭa. uvus utaṅya, patra śrahəna. <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="44"><pb edRef="#L" n="30r"/>ana vvaṅ mahutaṅ pari katəkan sadaśa tahun lavasnya pañcaginakna śasananya. anilih pari vinihan mulih anikəliṅnya tka pva sapuluh tahun daśagunakna śasananya.</p>
+          <p n="45">pradana anilih dṛvyaniṅ kaniṣṭa muliha sapəkən liṅnya. tan mulih salek, roṅ lek. uvus utaṅnya akeh ikaṅ dṛvya vuvusnya.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="46">ana dagaṅ mahutaṅ əñjukan salvirnya mati saṅ mahutaṅ tan tinagih anak rabinya kunaṅ yan ana śakṣi patra tinagih śasananya.</p>
+          <p n="47">ana vvaṅ marabi olihanya tuku duruṅ taya veh valagara riṅ rama marabi taya muvah aveh taya valagara yeka pṛmana. arabi kavula tan paṅaku utaṅ tan panəṅahi malaki taya muvah tinəbusnya saṅ manəbus pṛmaṇa. alayar tan təka pituṅ tahun tan pakikirim vnaṅ rabinya malakya muvah yan daratan təluṅ tahun tigaṅ lek yan tan pakikirim vnaṅ rabinya malakya muvah.</p>
+          <p n="48">kavula lumaku maliṅ kavənaṅan pvaya prasiddha mahulun maliṅ tuhanya rinampas yen tan asrah yen asrah maṅanakəna rama. ana vvaṅ amatyani vvaṅ tan pamit riṅ rama tumadah riṅ kavavaṅanya tumuduh su<pb edRef="#L" n="30v"/>ka duhkhanya yan akahu nan tuhanya vitən.</p>
+          <p n="49">ana vvaṅ andalih mañjiṅ riṅ umah istrī laraṅan su 3 mā 2 śasananya.</p>
+          <p n="50">amraṅ pagər umah lumbuṅ pamūjan su 3 mā 2 śasananya.</p>
+          <p n="51">ana vvaṅ aṅamuk akveh rovaṅnya sadulur tan patyanana kabeh kamulaniṅ doṣa patyanana dunuṅ sumur ṅarannya.</p>
+          <p n="52">atukar iṅ pahəman silih pisuh silih prəp su 1 mā 4 śasananya.</p>
+          <p n="53">ana vvaṅ asoṅsoṅ dodot vdihan kunaṅ umalivat riṅ pahəman para tanda rakryan səbitən yanigrahanən mā 5 aṅlimbekən təvək aṅindit tumbak umalivat pahəman para tanda rakryan alepən ya nigrahanən mā 5 śasananya.</p>
+          <p n="54">ana rare pada rare amanek pahala mvaṅ səkar tiba salah siki katundur dene rovaṅnya tanigrahanən manuk arəbut phalaniṅ kayu ṅarannya.</p>
+          <p n="55">rary adodolan pada rare amava kris kanina salah siki rəbutana tanigrahanən vli tamba juga mā 5 yan tan vruh iṅ manava vuruk raṇḍu ṅarannya.</p>
+          <p n="56">rare maṅalap drəvya kavnaṅan taya rəbutana ya alapən.</p>
+          <p n="57">ana vvaṅ anilih vdi<pb edRef="#L" n="31r"/>han riṅ strī laraṅan kavruhan deniṅ jalunya su 3 mā 2 śasananya.</p>
+          <p n="58">kayu tumuvuh riṅ vatəs mati pvaya vaduṅən kalihana dumən. kayu tinamən ri vaṅənan siṅ ananəm pṛmaṇa. kayu mavah tiba riṅ kubvan iṅ lyan tan alapən de saṅ madrəvya isiniṅ suvakan ṅarannya. priṅ pətuṅ ampyal buṅnya maṅlivati vaṅənan ya isiniṅ kubvan ṅarannya.</p>
+          <p n="59">ana vvaṅ kelaṅan drəvya tan kavruhan saṅ maṅalap sahasa ñori voṅ tan padoṣa tan pajar varah iṅ vvaṅ akveh mati saṅ cinor katmu kaṅ drəvya riṅ lyan prasiddha nəluh ikaṅ añor vnaṅ patyana alapən sandrəvya paṅanən deniṅ vvaṅ akveh.</p>
+          <p n="60">ana vvaṅ atuva vapari pinaṅan taya tan pajar varah aməgati vulu ṅarannya su 1 mā 4 śasananya. maṅanakən patuva va amuruṅakən kārya mā 10 śasananya.</p>
+          <p n="61">riṅ maliṅ aṅalap kəbo sapi riṅ rahina, daṇḍa tatagrahi. maṅke katəmu patyana śāsananya.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="62">hana vvaṅ aṅucap-ucap kalavan kavula riṅ śunya miṅgata samaṅke. ṅuniveh manihir-nihir adṛvya ya manavura sautaṅniṅ kavula. ya nora panavuranya. ya aṅgantyan ahuluna śāsana<pb edRef="#L" n="31v"/>nya.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="63">pamulañjaran iṅ kavula salek rvaṅ lek miṅgata ṅ kavula təmpuhakna sahutaṅnya. anilih kavula inupah taya mati pvaya gumuliṅ upahanya śasananya. patuvavadrəvya ilaṅ kagnibhaya, katoyabhaya, kacorabhaya, karajabhaya tan əlyanana tumrap riṅ paṅ akiṅ arannya.</p>
+          <p n="64">ana vvaṅ anaṇḍa savah aṅləbur galəṅ agave galəṅ suvakan ikaṅ savah mulih uvus utaṅnya. ana vvaṅ manaṇḍa kayu pucaṅ nyuh tal akupva len tuduh iṅ manaṇḍakən hlahla tambəh amaduṅa kunaṅ uvus utaṅ mati pva aragan kakilatan nora doṣa mati pva kabeh tan əlyanana mati dagan iṅ tuhan varanya gumuliṅ iṅ saṇḍanya. sapi kəbo parahu pukah yan sinandakən tan əlyana alah dene gavene ṅarannya kunəṅ yan sinilih saajinya paṅlinya. ajaṅjahapayuṅ payuṅ prabhvandaṇḍa su 6 mā 4. amrəp rabi neṅ pajajaṅan prabhv aṇḍaṇḍa amluk rabi neṅ pajajaṅan prabhv andaṇḍa anuṅgi rare agadiṅ gadiṅ arajalila ni<pb edRef="#L" n="32r"/>grahaya su 1 mā 4 śasananya.</p>
+          <p n="65">ana vvaṅ avaraṅ varaṅ rara vərəh vərəh sinuṅgi taya inəmban kunaṅ saṅ prabhvandaṇḍa su 1 mā 4 śasananya.</p>
+          <p n="66">iti kuṭāraśāsananya. vararucer aca. </p>
+          <p n="67">nihan ulahakəna saṅ prabhu, tan adoha saṅkeṅ saṅ hyaṅ pustaka, lvirnya, mānava, purāṇa, kuṭāra, sārasamuccaya. yeka sādhananiṅ vruh makagəlaraniṅ vyavahāra mvaṅ alah amənaṅnya. 
+maṅkana taṅ vvaṅ tan adoheṅ sira. mataṅyan pamaṅguha sukha. ṅuniveh paripūrṇaṅ rat, kady aṅganiṅ saṅ hyaṅ aditya sumuluh iṅ tri-bhuvana-maṇḍala. tan dva maṅkana ta saṅ prabhu umilaṅakəna duhkhaniṅ rat. sira ta panamuhaniṅ asih aranira, hetuniṅ daṇḍa inanakən. mataṅyan pindahən vvaṅ tan ahidəpa śīlan tumirva śīla saṅ prabhu. mataṅyan paripūrṇaṅ rat.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.060" n="59">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">bhayat śilasya daṇḍasya </l>
+              <l n="b">prabhu tiṣṭati saganat </l>
+              <l n="c">upabhoga śilat payet </l>
+              <l n="d">daṇḍa duyaśa pidanat </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: bhayat śilasya daṇḍasya prabhu tiṣṭati saganat upabhoga śilat payet daṇḍa duyaśa pidanat
+JB: bhayat śilasya dhandasya, prabhu tistati saganat, opabhoga śilat payèt, dhanda nuyaśa pidhanat
+ -->
+          <p n="1">harthanya ri sdəṅ saṅ prabhu vruh riṅ śasana magave ta sira <pb edRef="#JB" n="191r"/> dharma saśarisanira tka riṅ tanayan tani matanyan pari(pūrṇa?)puṇna ṅ rāt tumirva śasana saṅ prabhu. rva bhedaniṅ śasana lvirnya maraka taraka ikaṅ taraka dharma saṅ <pb edRef="#L" n="32v"/> prabhu ikaṅ maraka dharma saṅ banigrama mvaṅ saṅ vvaṅ thani. ikaṅ maraka anipata daṇḍa ikaṅ taraka masahaya ika ta pada sakṣi dṛṣṭa mvaṅ śruta.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.061" n="60">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">dṛṣṭa śakṣi śruta śakṣi </l>
+              <l n="b">vṛtaśakṣi tavagupah </l>
+              <l n="c">sakṣi aṣṭa patra canat. </l>
+              <l n="d">pañcate śakṣinavantah. </l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: dṛṣṭa śakṣi śruta śakṣi vṛtaśakṣi tavagupah sakṣi aṣṭa patra canat. pañcate śakṣinavantah
+JB: drəsta, saksi śruta saksi, vrətha saksi avagupah, saksi hasta-patra canat, pancaté saksi navantah
+ -->
+          <p n="1">arthanya dṛṣṭa manon śruta maṅrəṅə vṛtta vinarah tava gupah milva luṅguh aṣṭapatra tinulisakən. nihan kayatnakna riṅ śakṣi ayo kavaka deniṅ vvaṅ sanak vvaṅ atuha kadaṅ mitra əmas pirak upabhoga upakara apanatyanta pāpaniṅ śakṣiyan tan satya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.062" n="61">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">matara pitara hṛtva </l>
+              <l n="b">brāhmaṇa guru talpaka </l>
+              <l n="c">pakṣa patapara śakṣi </l>
+              <l n="d">bhave ci naraka brajet.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: matara pitara hṛtva brāhmaṇa guru talpaka pakṣa patapara śakṣi bhave ci naraka brajet
+JB: matharapitara vrətha, Brahmana Guru talpakam, paksa patapara saksi, bhavé cinara kabrajèt
+ -->
+          <p n="1">arthanya mata bapa pita ibu brāhmaṇa sira guru sira sapāpaniṅ amati bapêbu brāhmaṇa guru maṅkana pāpa kapaṅguh deniṅ tan satya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.063" n="62">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">alpa yuṣa svadaridra </l>
+              <l n="b">nahan janmaniṅ tyasah tan </l>
+              <l n="c">panak vandanat cavat </l>
+              <l n="d">yanaya vruh marabrajet</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: alpa yuṣa svadaridra nahan janmaniṅ tyasah tan panak vandanat cavat yanaya vruh marabrajet
+JB: alpa-yusyadsvaridra, nahan janmani nityasah, tan panatya vandanat cavat, naya vruh maranam brajèt
+ -->
+          <p n="1">arthanya ika vakṣapata piṅ sevunyañjanma təhər pāpa ya murkha ṅarannya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.064" n="63">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">kulaputra catur bagah </l>
+              <l n="b">dyus <pb edRef="#L" n="33r"/> kulina dvidantata </l>
+              <l n="c">barya jahakabagaśca </l>
+              <l n="d">dhanavasya vabagaśca</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: kulaputra catur bagah dyus kulina dvidantata barya jahakabagaśca dhanavasya vabagaśca
+JB: kula putra catur-bhagah, dyus kulina dvidantata, baryajahaka bhagaś ca, danavasya vanagaś ca
+ -->
+          <p n="1">arthanya nihan deniṅ aduma drəvya yan mariṅana pataṅ duman riṅ kala strī rvaṅ duman dyus kulina təṅah duman riṅ davani təṅah duman.</p>
+          <p n="2">ana vvaṅ manilih kavula ndan maṅlətaya miṅgat pva rare saṅ maṅlət manahura utaṅniṅ rare mati pvaya gumuliṅ riṅ hlətan. ana vvaṅ anuṅgokən kavula inakunya taṅ vladvaṅgaroginya saṅ manəbusa asamupuh miṅgataya sahubayanya ṅuni pavehanya mati pva denya mupuh patyana ya rampasən.</p>
+          <p n="3">ana vvaṅ mahutaṅ akeh anaknya putunya pinaśakṣyan mvaṅ patra tan panahur taya alapən anaknya putunya salah tuṅgal anuṅgvanana utaṅnya.</p>
+          <p n="4">ana vvaṅ maṅlbur saṇḍa ndatan lələb taya nigrahanən su 1 mā 4 śasananya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.065" n="64">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">śravaṇe praṇa śuddhañca </l>
+              <l n="b">sarva kāryañcasnavayet </l>
+              <l n="c">subaṇḍaśca navivaśca </l>
+              <l n="d">padadaścanaṛṇiyat.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: śravaṇe praṇa śuddhañca sarva kāryañcasnavayet subaṇḍaśca navivaśca padadaścanaṛṇiyat
+JB: -
+ -->
+          <p n="1"> arthanya nihan saṅ manahur utaṅ matanyan mapagəha maṅanakna sakṣi saṅ mataṅ mvaṅ saṅ mapihutaṅ pada maṅanakna śakṣi ṅuniveh saṅ mavyavahara.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.066" n="65">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">tadavirodivigatah </l>
+              <l n="b">svamika pinayujetah </l>
+              <l n="c">pañca phala la bhet daṇḍah </l>
+              <l n="d">sa<pb edRef="#L" n="33v"/>ha pare sarenañca.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: tadavirodivigatah svamika pinayujetah pañca phala la bhet daṇḍah saha pare sarenañca
+JB: -
+ -->
+          <p n="1">arthanya ana ya stri matukar pada strī kaṅ saviji inilon deniṅ jalunya nigraha ya su 1 mā 4 śasananya.</p>
+          <p n="2">ana vvaṅ matamuyan mati pva taminya pəndəmən piṅgir iṅ avan maṅanakna piṅgir siriṅ maṅkana śasananya.</p>
+          <p n="3">ana kavula miṅgat kapaṅgih deniṅ pradananya olih pvaya mrih mrih paṅantinya riṅ deśa rvaṅ duman riṅ tuhannya saduman mareriya kunaṅ yan manak manahur utaṅ sahutaṅe bapênduṅnya panahuranya marabi pva vvaṅ menak malakya vvaṅ menak tuṅgal kamenakanya</p>
+          <p n="4">ana kavula alaki pada kavula dudu saṅ madrəvya kavula madoṣa pvaya sipatən yan piṅ pat madoṣa dohakna sakiṅ deśa yapvan dharma doṣanya patyana ya kabeh maṅkana śasananya.</p>
+          <p n="5">nihan upaya saṅ pragivaka yan paṅlopa riṅ duga duga dana prayogakna yapvan vṛddhi pra vṛtinya pada prayatna upayakna daṇḍa gavayakna.</p>
+          <p n="6">nihan tanya paṅucapana kārya vyavahara aṣṭami durbala saṅ prabhu catur daśi kadahondur bala yan pañca daśi vadva saṅ prabhu durbala.</p>
+          <p n="7">añoloṅ ayam uvan uvan riṅ <pb edRef="#L" n="34r"/> rahina daṇḍaya mā 10 yan iṅ pataraṅan riṅ caṅcaṅan riṅ kuruṅan daṇḍa ya su 3 mā 2 śasananya. añoloṅ cambra riṅ rahina su 1 mā 4 yan cambra paburu sajinya śasananya. añoloṅ celeṅ riṅ rahina su 1 mā 4 śasananya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.067" n="66">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">pañca varṣa tri ṛniñca </l>
+              <l n="b">dutvapuṅ makuṭambike </l>
+              <l n="c">aputro mṛyate cedi </l>
+              <l n="d">jivanartta ṛṇi.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+L: pañca varṣa tri ṛniñca dutvapuṅ makuṭambike aputro mṛyate cedi jivanartta ṛṇi
+JB: -
+ -->
+          <p n="1">malaky arabi limaṅ tahun kasvami ikaṅ drəvya śasananya ana vvaṅ manilih ulun iṅ mahulun mati taya duruṅ iṅulihakən mariṅ saṅ mahulun siddha aṅlenana sapaṅrəga niṅ ulunnya su 1 mā 4 maṅkana śasananya.</p>
+          <p n="2">ana vvaṅ andalih vvaṅ anəluh tan tuhu pvaya daṇḍa ya su 6 mā 4 riṅ vvaṅ tuṅgal tuṅgal tur aveha paṅəli sava mariṅ kaṅ kadalih su 1 mā 4 maṅkana śasananya.</p>
+          <p n="3">ana vvaṅ aṅilaṅakən rarakṣane sakiṅ gustine ayama manuka ba ñaka cədara celeṅa pagave kəbo sapi aṅəlenana paṅaji riṅ satuṅgal tuṅgal su 1 mā 4 yen tan pavarah duk ilaṅ rarakṣane manih daṇḍa ya su 1 mā 9 yen avarah duke ilaṅ tan kadaṇḍa ya mandəg aveha riṅ paṅaji ma<pb edRef="#L" n="34v"/>ṅkana śasananya.</p>
+          <p n="4">ana vvaṅ aṅrakṣa drəveniṅ gustine dadi den vunuh den paṅan tan amita riṅ gustine daṇḍaya su 3 mā 2 ikaṅ vinunuhnya aveha paṅaji su 1 mā 4 riṅ satuṅgal tuṅgal śasananya.</p>
+          <p n="5">ana vvaṅ rara hiṅajak deniṅ voṅ mariṅ umahe kaṅ a- ṅajak dadi ana voṅ lanaṅ riṅ umahe kaṅ aṅajak ika dadi den pəluk den ambuṅ rara ika ana avarah mariṅ kaṅ aduve anak duruṅ ta kna den rovaṅi rara ika den pəluk den ambuṅ balaka daṇḍa kaṅ aṅajak rara mariṅ umahe ika de saṅ manak rara deniṅ dənda mulih mariṅ saṅ manak rara ika evu 4 śasananya.</p>
+          <p n="6">ana vvaṅ asamitra maliṅ dunuṅaniṅ maliṅ yan tan vruh yan maliṅ samitra denika deniṅ dunuṅane ika daṇḍa ya su 1 yen vruh yen maliṅ daṇḍa ya su 3 mā 2 śasananya.</p>
+          <p n="7">apan doṣa bhaṭāra manu sinapatan de bhaṭāra guru doṣanira tugət riṅ ulahniṅ rare.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:191v]
+ --></p>
+          <p n="8">kunaṅ iṅ ananiṅ rare aṅana ujarnya davarṣa tan vənaṅ rare laraṅana ulah ujarnya ana<pb edRef="#L" n="35r"/> rare a nya məṅ aməṅ yata pinəjahan de bhaṭāra manu sinaṅguhniramuk mataṅyan vineh sira kmitana śasana de bhaṭāra guru marapvan sira vruh riṅ yogya lavan tan yogya mataṅyan anagama manuśasana ṅarannya maṅke śasana paveh bhaṭāra guru i bhaṭāta manu ika.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:191v]
+ --></p>
+          <p n="9">ana vvaṅ masuk riṅ umah tan ana saṅ omah daṇḍa ya sadoṣaniṅ maliṅ. ana vvaṅ masuk riṅ umahniṅ strī laraṅan ndatan ana saṅ lanaṅ daṇḍa ya su 3 mā 2 utama doṣa madhya daṇḍa, … 2 kaniṣṭa ya 6 yan tan apiṅit saṅ la- naṅ tan ana vicara.</p>
+          <p n="10">ana vvaṅ amisuh strī laraṅan daṇḍa ya mā 12 madhyadaṇḍa mā 6 kaniṣṭa daṇḍa mā 3 yan ubhaya saṅ lanaṅ tan ana vicara. ana vvaṅ amisuh tan padoṣa vakcapala ṅaranika daṇḍa … 2 maṅkana śasananya. ana vvaṅ anaṅguh amisuh riṅ tan pamisuh daṇḍaya salpihniṅ mamisuh mā 24 ləvi duṣṭanya ika. ana vvaṅ amisuh amrəp ndan maləsa ikaṅ pinisuh pinrəp tan ana dəṇḍa ika duṣṭa nəmu duṣṭa ṅaran ika maṅkana śasananya. <pb edRef="#L" n="35v"/> ana vvaṅ amisuh riṅ pakvehan iṅ vvaṅ i pasamagri-parasamya kunaṅ prasiddha mahaṅ ika amandəmakna tapan ri kālaniṅ manayub riṅ pakvehan iṅ vvaṅ pəjahana ika amahaṅ ika maṅəyəh aṅarəpakən vvaṅ makveh pəjahana ika prasiddha mahaṅ ika añjava strī laraṅan pəjahana ika maṅkana śasananya.</p>
+          <p n="11">ana vvaṅ amuṅpaṅ sapəkən iṅananiṅ vvaṅ aburua yapvan luput ri samaṅkana daṇḍa ya su 6a mā 4 vnaṅ ika sabha kunaṅ ikaṅ amuk sajivaniṅ uripnya pəjahana yan katəmu ika ta yan samipa nikaṅ deśaniṅ vvaṅ yan iṅ duradeśa tan vnaṅ sahasa maṅkana śasananya.</p>
+          <p n="12">ana vvaṅ amalu riṅ kayu kayu ndan rahən ikaṅ pinalu daṇḍa ya ikaṅ amalu mā 5 tan pəjahana ika apan tan kadga hetunya rahən monya tan kuṅ nmakadga yan pəjah denya malu pəjahana mamuk ika maṅkana śasananya. ….n vuryaniṅ kadga maṅrahitaya ṅuni ṅuni yan pəjaha denya pəjahana ika maṅkana kramanya maṅkana śasananya.</p>
+          <p n="13">vvaṅ mamraṅ kəbo sapi amaṅan tanəm tanəman hetunyan mamraṅ i kəbo sapi daṇḍa ya samūlya nikaṅ kəbo sapi liṅniṅ udaśina yen tan pamaṅana de<pb edRef="#L" n="36r"/> nyamraṅ ikaṅ kəbo sapi pəjahana ika vvaṅ maṅkana kramanya prasiddha ṅraṅgas ika maṅkana śasananya</p>
+          <p n="14">apan pavakniṅ atatayi ika aparan ta sinaṅgahatatayi ṅarannya maṅabət, anumpu, anəluh, maṅracun, sama niṣṭanyan duṣṭa avak ika be n, lvir nikaṅ pəjahana mvaṅ anak rabinya anəluh, aṅracun, aglo, bahan lvirniṅ pəjahana lavan anak rabinya kunəṅ anumpu, aṅabət, anis, anəvək tan yogya pəjahana lavan anak rabinya maṅkana śasananya.</p>
+          <p n="15">ana vvaṅ inikət sapinya ndatan pasadhya yan nəbusa kdəh ya malaku sapinya tan vinehakən saka ri galaknya inalapnya taya sapinya pəjahana ika prasiddha miṅ mahal drəvyanya apan tan vuruṅ ika dumənda saṅ maṅikət sapinya yan ilaṅ tan papalaputan pinet (lavan??) ..va n pəjahana ika vvaṅ maṅkana.</p>
+          <p n="16">ana vvaṅ atavu suvakan riṅ rahina alapana saṅ vinavanya daṇḍa ya su 1 mā 4 kunaṅ riṅ vəṅi pəjahana ika, maṅkana śasananya.</p>
+          <p n="17">ana vvaṅ mamandəm sapi kəbo vəsi pamandəmnya ma<pb edRef="#L" n="36v"/>ṅəneni pvaya vva (vvaṅ ??) vəli tamba pavehanya mā 5 kunaṅ yan mati daṇḍa ya su 1 mā 4 maṅkana śasananya.</p>
+          <p n="18">ana vvaṅ maṅdədəl vvaṅ tan padoṣa pada capala ṅarannya daṇḍaya mā 5 panahurannya maṅkana śasananya. yan pañəntak vvaṅ tan padoṣa daṇḍa ya mā 1 panahuranya yan manampyal vvaṅ tan padoṣa daṇḍa ya su 3 mā 2 panahuranya ya dumeh ya maṅkana vvaṅ pəjahana saṅ anampyal maṅkana śasananya.</p>
+          <p n="19">yan paṅokorovaṅnya sakaraman kālaniṅ pahəman daṇḍa ya deniṅ rama iti katut vəluran.</p>
+          <p n="20">yan atuva riṅ luṅguh luṅguhniṅ varya vədus ampuh mā 2 panahuranya maṅkana śasananya.</p>
+          <p n="21">ana vvaṅ aṅləpitakən bhukti daṇḍa ya su 3 mā 2 maṅkana śasananya.</p>
+          <p n="22">ana vvaṅ mananduṅ savah amavu tan pamit ri saṅ madrəvya savah daṇḍa ya su 1 mā 4 śasananya. maṅalap gavayan salah alap tan drəvyanya daṇḍa ya mā 4 śasananya. aṅalap pari riṅ savah tan parinya daṇḍa ya mā 4 śasananya.</p>
+          <p n="23">amuk iṅ vuvus daṇḍa ya mā 4 śasananya.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="24">ana vvaṅ maṅunusakən kavitanya təvək daṇḍa su 1 mā 4 ṅaran iṅ ma<pb edRef="#L" n="37r"/> ṅkana tumunvani pataninya ṅarannya.<!-- WORKING NOTE (from DOCX, not constituted apparatus):
+orange part: [JB:188r]
+ --></p>
+          <p n="25">ana vvaṅ alaku laku masuk riṅ jro umah iṅ voṅ daṇḍa ya su 3 mā 2 asu riṅ voṅ apupukan tahi ṅarannya.</p>
+          <p n="26">ana vvaṅ anumpu añjarahi ambahak, anuñjəl, aṅrampas, daṇḍa ya su 24 mā 16 śasananya.</p>
+          <p n="27">ana vvaṅ rama deśa amədək bhūminiṅ para daṇḍa ya su 24 16 maṅkana śasananya.</p>
+          <p n="28">ikaṅ vvaṅ aṣṭacapala amalu amrəp anampyal salvirniṅ aṣṭacapala patyana vvaṅ maṅkana amuk ta ṅaran ika yan tinaṅguhan nigrahanən ya su 3 mā 2 yata macahyasya ṅarannya.</p>
+          <p n="29">ana vvaṅ añoloṅ ayam riṅ kuruṅan riṅ caṅcaṅan daṇḍa ya su 3 mā 2 śasananya. ana vvaṅ añoloṅ ayam riṅ kuruṅan, riṅ caṅ-caṅan riṅ rahina kapaṅguh taya riṅ alas de paṅalapanya ayam pinrəp sinakitan vinigraha kinaluṅ kaluṅakən tikaṅ ayam ṅaran iṅ maṅkana asu maliṅ səkul ṅarannya yan iṅ vəṅi maliṅ arannya patyana maṅkana śasananya. ana vvaṅ añoloṅ ayam ri vəṅi yan tan mati <pb edRef="#L" n="37v"/> karuvan paṅalapanya daṇḍa ya su 6 mā 4 maṅkana śasananya.</p>
+          <p n="30">vvaṅ mañjiṅ kubvan iṅ vvaṅ vaneh aṅalapapa- gər ta kunaṅ daṇḍa ya mā 5 śasananya.</p>
+          <p n="31">ana vnaṅ vnaṅ siniṅataya dene rovaṅnya riṅ pamaṅananya riṅ paməṅ aməṅanya kunaṅ tikəl kanina kunaṅ maṅəlenana taya saṅ madrəvya maniṅat kunaṅ yan pada vaninya dukya karat tikəl taya salah tuṅgal nir doṣa (ma)ṅkana.</p>
+          <p n="32">ana vvaṅ amateni ulun iṅ mahulun yan tətəlu papat lilima daṇḍane tan livat sakiṅ sakati lima.</p>
+          <p n="33">ana vvaṅ rarya lanaṅ aməṅ aməṅa lavan rare vadhon kabahulan taya denya evayanən nirdoṣa maṅkana.</p>
+          <p n="34">ana rare vruh taya umidəp vruh riṅ acara pada lan vaṅ atuha tan ampunana ya.</p>
+          <p n="35">ana vvaṅ manak anak vahu mətu riṅ bagavaśa ibunya tivakna liṅnya pinupu taya riṅ vaneh vnaṅ ya palakekna parabyakna de saṅ mamupu yadyan ana kakaṅe riṅ bapanya ibunya ṅuni<pb edRef="#L" n="38r"/>veh tan erən ya pa binuñcal ya.</p>
+          <p n="36">anəluh kavnaṅaniṅ lahan pinalu iṅəntyakən ṅaran iṅ maṅkana apuyu manutakən vvaṅ . anəluh kavnaṅan maṅdamari vaṅke riṅ lahan inəntyakən pinalu ṅaran iṅ maṅkana asu manahut vivi ṅarannya.</p>
+          <p n="37">ana vvaṅ akveh sanaknya tapvan ana ri yumahniṅ vvaṅ atuha malakya marabya taya tanpanaka matya taya salah siki lanaṅa vadhona yapvan ana makilala pinatahənakən taya deniṅ ramanta tan kraṅan ika yeka tikus muṅgah riṅ pada ṅarannya.</p>
+          <p n="38">vvaṅ managih riṅ avan daṇḍa ya mā 10 śasananya. vvaṅ managih riṅ savah daṇḍa ya mā 10 mas kasiṅsal riṅ ve ṅarannya.</p>
+          <p n="39">vvaṅ mamaraṅ maraṅ strī laraṅan daṇḍa ya su 6 mā 4 panahuranya talaga ka- rugan təmbiṅ arannya.</p>
+          <p n="40">vvaṅ sumilih ulun iṅ vvaṅ mako- na taya manek maneka yadyapin tiba kunaṅ sahutaṅnya əlyana yapvan malara juga gavaya yanya tan ilaṅ aran iṅ maṅkana umiṅu kəboniṅ rovaṅnya. vvaṅ manilih ulun pinakakavulanya yadyapin miṅgata ikaṅ ulun sakeṅ anilih utanya (utaṅnya??) tan ilaṅan yadyapin salah gave<pb edRef="#L" n="38v"/>ya matya kunaṅ ya manahur su 6 mā 4 paṅəliriya yeka kris ilaṅ maṅəliluke ṅarannya.</p>
+          <p n="41">ana vvaṅ magaga savah masandiṅa taya maṅinəpa yadyapin salah gave kaṅ tuṅgal pinaran iṅ maliṅ tan atuluṅa rovaṅnya daṇḍa saṅ tan patuluṅ su 6 mā 4 yapvan pada sakit kaninnya nirdoṣa maṅkana śasananya.</p>
+          <p n="42">vvaṅ mamanek manek nyuh makveh rovaṅnya salaku dadi ya malayvan layvan marəbut ikaṅ aneṅ so dadi katiban sah (salah??) viji matya kunaṅ daṇḍa ya pade sor lan i duhu su 3 na 2 mantaṅyan kna ikaṅ isor kuraṅ taṅguh iṅ rovaṅnya mantaṅyan kna ikaṅ iṅ ruhur kuraṅ pṛṣṇa i rovaṅnya ṅaran iṅ maṅkana sapi kaguliṅ riṅ gunuṅ arannya.</p>
+          <p n="43">vvaṅ malaku laku maṅambalaṅ taya vvah vvahan i ruhurniṅ avan i ruhurniṅ avan alanya ambalaṅ anibani vvaṅ kunaṅ mati taya daṇḍaya su 1 mā 4 mara akunaṅ mā 5 śasananya.</p>
+          <p n="44">ana alas kabhukti deniṅ vvaṅ para tigaṅ daśa tahun lavasnya tan kaśari śari kahinan ilaṅ ikaṅ ləmah kaṅ kabhukti deniṅ para. <pb edRef="#L" n="39r"/> vvaṅ tumagihakən pihutaṅnya masandiṅ curik tan pasaruṅan daṇḍa ya mā 10 rumajalasnya ṅarannya.</p>
+          <p n="45">kraṅanaṅ uṅgahakən drəvya riṅ vvaṅ manak karəṅə taya deniṅ kalaṅa patih lavan rama matya tekaṅ kraṅan kinilalate kaṅ drəvya deniṅ vvaṅ rama pinatahənakən deniṅ vvaṅ ikaṅ drəvya dadi ya san kara ikaṅ drəvya tinakvanakən taya riṅ kalaṅapatih rumuhun ndon saṅ hyaṅ śasana pinakapramaṇa dadiya tribhaga saduman riṅ samaṅəpit saduman riṅ rama saduman riṅ saṅ apatih ṅaran iṅ maṅkana antəlu kaslapiṅ noṅan arannya.</p>
+          <p n="46">kra- ṅan mamihutaṅakən iṅ vanva yadyapin mariṅ deśa umar- yakna vanvanya matya taya salah tuṅgal sampun taya kinilala lavan kinraṅan ya saka riṅ lavasnya mulih taya sakeṅ parannya dadi taya pinatahənakən deramanta riṅ saṅ hyaṅ pramaṇa karuhun saṅ hyaṅ śasana pinatəlu maṅkana saṅaraniṅ maṅkana gurunya dumədəl bhujaṅganya ṅarannya.</p>
+          <p n="47">vvaṅ lanaṅ sapadəgan riṅ istri laraṅan <pb edRef="#L" n="39v"/> karoron sdəṅ spiniṅ voṅ daṇḍa ya su 1 mā 9 yeka maṅalavan avan ṅarannya.</p>
+          <p n="48">vvaṅ maṅəyəhi avan gəṅ kavnaṅan deniṅ vvaṅ adyan ya sinakitan byavastanya yapvan madoh sadəpa sakeṅ avan gəṅ nir doṣa ika. vvaṅ mapaṅguh riṅ avan ndan vaṅ avərə siniṅgahan tigaṅ dəpa yapvan anut sinakitan asu punduṅ sumahut rahadyanya ṅaran iṅ maṅkana.</p>
+          <p n="49">laki laki capala amatyani anaṅkəbi amalaku rabiakna daṇḍa ya mā 10 ṅaran iṅ maṅkana maṅalavan riṅ tutaka arannya. laki laki maṅujivati ana lakinya daṇḍa su 1 mā 9 ṅaran iṅ maṅkana maṅalavan riṅ mata ṅarannya.</p>
+          <p n="50">vvaṅ madulurakən ulun iṅ mahulun katəmu taya deniṅ manut sinikəp tinaṅguhan ya yapvan katəmu riṅ avan saha lumaku nir doṣa maṅkana yapvan katəmu riṅ patani sadoṣa vaknya daṇḍa ya su 6 mā 4 yapvan dumunuṅ riṅ vanva daṇḍa dunuṅanya su 3 mā 2 vivi masuk iṅ saruṅga ṅaran- nya.</p>
+          <p n="51">ana vvaṅ amulugur sapasar lavas iṅ aburu yan tan mati daṇḍa ya dera saṅ amava bhūmi su 6 mā 4 śasananya <pb edRef="#L" n="40r"/> yapvan ana aṅalaṅi anaṅidakən yan dumunuṅa riṅ vanva saṅ amulugur duruṅ livat sapasar daṇḍa dunuṅanya dera saṅ amava bhūmi su 3 mā 2 maṅkana śasananya.</p>
+          <p n="52">vvaṅ mamraṅ turus iṅ pomahan yan tan pañjaluk riṅ saṅ madrəve umah tiga lavan pitu ulihnya mamraṅ daṇḍa ya su 1 mā 4 ṅaran iṅ maṅkana raja līla ṅarannya.</p>
+          <p n="53">vvaṅ va- dvan adus riṅ vulakan tka ta vvaṅ lanaṅ sumandiṅ adus daṇḍa ya su 1 mā 9 ṅaran iṅ maṅkana maṅalavan riṅ pupu ṅarannya.</p>
+          <p n="54">vvaṅ matukar iṅ panagih nagihan kapva mamətvakən rah nirdoṣa maṅkana asu mitukarakən təda ṅa- rannya. vvaṅ matukar sahatutaṅga amraṅa taya saka maṅambalaṅ ta umah byavastaniṅ maṅkana daṇḍa ya mā 10 śasananya.</p>
+          <p n="55">savarṇaniṅ saṇḍa lələb pivruhakna sapta devasa, kalavan saṅ asanda vnaṅaniṅ adola. anəbus vṛdo dṛvyal muliha sakavit ndan ubhayakna namanaka yan tan mətu mahulun vnaṅ malaku ləpih pisan.</p>
+          <p n="56">nihan papita pitan lvirnya sanak lyan pəkən sanak <pb edRef="#L" n="40v"/> tambak ta sikaranya tan apitanika ayu. lyan sanak 2 lyan amaraṅan arannya jahat. sanak lyan avan gəṅ sanak bhūminya pagər śutaranya ayu. sanak 3 kapit iṅ lyan 3 sisih isiniṅ suvakan arannya ala. lyan 3 umahnya lyan 3 vatu mataṅkəp ala sanak lyan sanaknya apitan təmən ala. lyan kabeh duloh bhūminya vetan sanak lavan padu kidul kilyan aṅkatan arannya jahat. lyan 2 kadaṅ 2 lyan ba variṅin səmpal arannya jahat. lyan 2 sakadaṅ 2 lyan 2 amarisiṅ arannya ayu. sanak sakadaṅ 3 sanak kulumalupeṅ anak ala. sanak 4 sisih lyan 4 sisih carik arannya ala. misan miṅtiga misan miṅrva miṅtiga miṅrva aṅkat karaman ala. lyan umahnya iriṅan ləmahnya lyan 2 amasaṅi ayu. sanak lyan 2 sanak 2 sanak palulunan ala. ləbuh sanak lyan 4 sanak ləbuh tuṅtuṅ gəndiṅ ala. sanak lyan sanak 4 tamanalu ala. <pb edRef="#L" n="41r"/> kadaṅ sakiṅ lanaṅ vvaṅ sakurən akumpul lavan kadaṅ sakiṅ vadhon vatu mataṅkəp ala. lyan 2 sanak lyan 2 iraṅan sisihn sanak iriṅan sisih lyan ala. sanak 4 ajaja mariṅ paṅlarik iṅ karaṅ aməluk mariṅ paṅhṛtiṅ karaṅ palu sapaṇḍe ala lyan taṅgal muṅgv iṅ sisik ala. sanak tuṅgal lyan 2 patahan sanak apitan tanah arannya ayu. sanak kabuyutan sanak apitan ala. vatəs savahnya gaganya vatəs aṅgəṅ gəhanya ala. lyan 3 tuvaṅ 3 sanak sisih sanak atavaṅ lyan 4 arayu arannya ala. sanak lyan 2 lvah agəṅ sanak ayu. pəkən sanak pitan pəkən ala. sanak lyan 2 pəkən sanak ayu. sanak avan gəṅ sanak pitan ala. sanak lyan 2 avan gəṅ ayu. savah arah savah aṅəlvani savah jahat. hara savah hara jahat. susuru <pb edRef="#L" n="41v"/> kapitiṅ sanak jahat. paṅluhana ṅapit jahat. kapvanakan peṅanan kapvanakan vatu mataṅkəp jahat. sakadaṅ sanak lyan 2 sakadaṅ sanak lyan 2 tatah varayaṅ arannya jahat. lyan 7 sanak 2 vuta vlaṅ arannya jahat. sanak lyan 3 uraṅ sapes arannya ayu. sanak lyan 4 ayu. sanak atuva vuruju paṅgulu apin gətih ala. vuruju panuva paṅgulu panəṅah aṅəmban anuntun ayu. kadaṅ lyan 3 kadaṅ sampiran vadhu arannya jahat. aṅapit lyan 2 apitan pañceṅan jahat. sanak lyan 4 sanak anuvakan arannya jahat. sana lyan 2 kəbon lyan 2 sanak sakiṅ umah arannya ayu. drəvyaniṅ tuṅgal lyan 3 təkən vəra arannya ala. sakadaṅ lyan 6 sakadaṅ ala. saṅ asasavah avan gəṅ savahnya taṅgaṅan pari arannya ayu. sanak atuva paṅgulu kavvitanya sahumah lavan pamuṅsu panəṅah kaṅ iṅ <pb edRef="#L" n="42r"/> vuṅsu aṅəmban anuntun arannya ayu. lyan 3 kadaṅ lyan avəlu arannya ayu. lyan kadaṅ 2 lyan 2 todyarakəparanya ayu. lyan 2 kadaṅ lyan 9 tvavəṅa arannya ala. sanak tan sanak apitan. saṅ aveh gaṅan lyan 2 pavehan gaṅan apitan gaṅan arannya ala. sanak asavah avan gəṅ sanak asavah taṅguṅan pəṅaranya ayu. sanak lyan 2 mārga gəṅ sanak katəlu mārga gəṅ ayu.</p>
+          <p n="57">iki tiṅkah iṅ voṅ kna riṅ cor. ananapu, amumuja, asisig, akaramas, ababantən, atutulak aṅilek ilekakən lamun vus cinoran karubuhan tembok lamun rubuh mariṅ jaba karubuhan kayu aguṅ katibanan papah kalapa lamun anərus papayon anikəlakna abah abah iṅ bale umah pucaṅ tirisan gədaṅ priṅ puṅgəla tan pakarana kagəpoka deniṅ kəbo sapi karurona aṅəlu aṅulət varaṅ kasanduṅ tur ana larane əjun rəmək sinambər iṅ gəlap, sinahut iṅ ula, sinahut <pb edRef="#L" n="42v"/> iṅ cədar kasiṅat iṅ kəbo sapi, vuvuṅ biṅkas bale umah kasilir iṅ aṅin turuntuha kapatenana rovaṅ kagriṅana anak rabi rovaṅ ana pucaṅ tirisan badeg ana arubuh puṅgəla iven kəbo sapi celeṅ cədar kacokota deniṅ ula piṅgan tutuvuṅ biṅle rəməka kna riṅ cor yan maṅkana. ana vvaṅ keridan yan panəbusa pataṅ daśa dina lavasanya ilaṅ ika yen alavas dene keridan tura nəbus upah iṅ aṅon salakonana. pamastuniṅ cor.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.068" n="67">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="free">
+              <l n="a">bhyoh bhūmirapo vṛdayaṃ candra agni yamanilaratri dvi sande dharmañca ayu anih anih prajña guna śrī yah dharma santana aniśca santute sapta haniśca ayu vṛddhih guna vṛddhih vṛddhih prajña yya śo vṛddhih dharma santana vṛddhiśca santute sapta vṛddhiśca</l>
+            </lg>
+          </quote>
+          <p n="1">ṣaṭa cora arannya kartah ṅa añoloṅ, karahita ṅarannya akon, nirduṣṭa ṅa anuduhakən, aṣṭanadah ṅa gənah iṅ maliṅ, ñata ṅa vəruh yen maliṅ, saka ṅa samitra lan maliṅ, tatrah ṅa atuluṅ riṅ maliṅ, gopta ṅa anaṅidakən maliṅ tətəlu kaṅ riṅ ayun dənda pataṅ lakṣa kaṅ lilima <pb edRef="#L" n="43r"/> roṅ lakṣa śasananya.</p>
+          <p n="2">ana vvaṅ amupuh svana ndan maliṅ śila ikaṅ svana mati taya denya mupuh vehakəna vaṅke nikaṅ svana mariṅ saṅ madrəvya kunaṅ aniṅal api kaṅ svana de saṅ amupuh daṇḍa ya mā 1 yapvan drəvyaniṅ vva (vvaṅ ??) uttama daṇḍa ya mā 5 śasananya.</p>
+          <p n="3">ana vvaṅ uvus alaky arabi aṅer iṅ kakanya uvus adum drəvya pəjah tan panak tan alapana pakraṅ ləmbvanusu riṅ kakaheṅa arannya kunaṅ an maṅher iṅ arinya alapana pakraṅ tan vnaṅ arinya manusvanana riṅ kaka nya ṅuniveh yan maṅer iṅ kadaṅnya tan papramana iriya.</p>
+          <p n="4">ana vvaṅ aṅidvani sasamanya piṅe idunya daṇḍa ya su 1 mā 4 yan idubaṅ kunaṅ daṇḍa ya mā 10 śasananya.</p>
+          <p n="5">ana vvaṅ apapacuvan amataṅ ya riṅ kayu maṅgutukunaṅ kanan ya ikaṅ vvaṅ maṅkana daṇḍa ya mā 5 yanakṣikna daṇḍa ya su 3 mā 2 yan ceda daṇḍa ya su 6 mā 4 amraṅ taru arannya.</p>
+          <p n="6">ana vvaṅ atava rara riṅ vvaṅ vərə vərə dadi tan tuhu panavanya daṇḍa ya evu 4.</p>
+          <p n="7">ana vvaṅ lumivat avan aṅa<pb edRef="#L" n="43v"/>lap taya pari isiniṅ kubvan java jali jaguṅ gudəm kacaṅ kacaṅ ijo sagəgəm təka riṅ kubu nir doṣa yan maṅkana.</p>
+          <p n="8">ana vvaṅ anuṅgaṅ padati lumaku riṅ avan kapəgatana kəluhan kapəgatanahənal katikəlan pasaṅan katikəlan lindən katikəlan pacək ana ta vvaṅ lumivat avan aṅuvuh saṅ aməcut (saha məcut??) akon umilaga dadi akədə iṅambahnya juga siniṅat deniṅ kəbo sapi kanina matiya ilaṅa gava gavayanya nirdoṣa saṅ aməcut apan uvus akon umilaga.</p>
+          <p n="9">ana vvaṅ atukar amraṅ taya pagər daṇḍa ya su 3 mā 2 amuk apuṅguṅ arannya tan patenana apan tan vvaṅ pinraṅnya.</p>
+          <p n="10">ana vvaṅ aṅgaməli rare riṅ əmbanan i strī laraṅan daṇḍa ya su 1 mā 9 istrī saṅgraha ṅarannya. ana vvaṅ aṅgaməli tənunan iṅ istri laraṅan sdəṅ ni naga daṇḍa ya su 1 mā 9 tidarṣa ṅarannya.</p>
+          <p n="11">ana vvaṅ maṅikət kəbo sapi tkasaṅ madrəvya pinalakunya ikaṅ kəbo sapi tan sinuṅan de saṅ maṅikət deniṅ kdəhnya aṅalap kəbo sapinya daṇḍaya su 1 mā 4 maṅkana śasananya.</p>
+          <p n="12">ana vvaṅ atuvavapa su <pb edRef="#L" n="44r"/> kəbo sapi ilaṅan dera sa tinuvavan tan əlyanana de saṅ tinuvavan maṅkana śasananya.</p>
+          <p n="13">ana vvaṅ ambahak anuñjəli daṇḍa ya sakati lima kelaṅ elaṅanya kaṅ kabahak kaṅ katuñjəl sakehe kaṅ ilaṅ aṅlenana mariṅ kaṅ kelaṅan maṅkana śasananya.</p>
+          <p n="14">ana vvaṅ amandəmandəm siṅ bandəmən maṅənani taya vvaṅ daṇḍa ya mā 5 yan olih saluhur iṅ təṅgək maṅənani akṣi yan ceda daṇḍa ya su 1 mā 4 yan mati denya maṅənani vvaṅ danda ya su 1 mā 4 maṅkana śasananya.</p>
+          <p n="15">ana vvaṅ idu maṅənani taya vvaṅ mvaṅ vastra kaṅ kedvan daṇḍa ya su 1 mā 9 śasananya</p>
+          <p n="16">ana vvaṅ amaduṅ kayu maṅrəbahi umah daṇḍa ya evu 5 yan luruṅ lumbuṅ karəbahan daṇḍa ya su 1 mā 4 kunaṅ yan amaṅsuli vvaṅ umarək yan mati kakavaṅsulan daṇḍa ya su 6 mā 4 yan rahən mā 5, yan cacal mā 5 yan bəñcut mā 4 yan kəna juga mā 2 kunaṅ yan iṅundurakən ikaṅ vvaṅ umarək ṅgvan iṅ saṅ amaduṅ tan aṅga mundura yadyapin karəbahana tan daṇḍa <pb edRef="#L" n="44v"/> saṅ amaduṅ kayu apan uvus iṅundurakən maṅkana śasananya</p>
+          <p n="17">ana vvaṅ jalu amarani istrī sdəṅ kāla rātri daṇḍa ya su 3 mā 2 yan riṅ rahina daṇḍa ya su 1 mā 9</p>
+          <p n="18">ana vvaṅ aṅasihutaṅ daṇḍa ya dera saṅ amava bhūmi saguṅ iṅ utaṅ iṅas triguṇakna thər manahur anikəl saguṅ iṅ utaṅ śasananya. kunaṅ ikaṅ mahutaṅ lulub lisah pəhan gṛta kapas mvaṅ pari tan livata sakeṅ pañca gina śasananya.</p>
+          <p n="19">ana vvaṅ sahasa aṅabət maliṅ amuṅpaṅ movus maala amrəp mvaṅ amraṅ kunaṅ tan pilihana sakṣi yan maṅkana apan apṛgi jatinya. ana vvaṅ sahasa riṅ savah aguṅ alit paṅalapanya yen akidik sinahasanya rəga sekət satus atak daṇḍa ya 1600 yan arəga satali roṅ tali tigaṅ tali pataṅ tali limaṅ tali daṇḍa ya su mā 5 yan arəga nəm tali pituṅ ta yan arəga vuluṅ <pb edRef="#L" n="45r"/> tali saṅaṅ talisalakṣa daṇḍa ya su 3 mā 2 pari katitiya saguṅ iṅ paparone maṅkana śasananya.</p>
+          <p n="20">ana vvaṅ aparan paran makveh rovaṅnya sadulur maṅinəp taya ana ta rovaṅnya avərə ana gava gavayanya tan sinimpənanya denya vərə ana ta rovaṅnya manimpəni drəveniṅ saṅ mavərə kamaliṅana taya maṅlyanana saṅ manimpəni sambhega pāpa ṅarannya yan kapaṅgih riṅ padolnya saṅ manimpəni sadaya maliṅ daṇḍa su 6 mā 4 maṅkana śasananya.</p>
+          <p n="21">ana vvaṅ anilih rare jinamahnya pvaya yata vvaṅ maṅkana karmanya daṇḍa ya su 3 mā 2 yan tan ana panahuranya patyanana aṅrəmək (paṅrəmək) maṇik ṅarannya maṅkana śasananya.</p>
+          <p n="22">ana ta kaniṣṭa asaṇḍa rare kajamah taya de saṅ pradhana tan ubhaya ta saṅ asaṇḍa yata pradhana maṅkana daṇḍa ya su 3 mā 2 utaṅnya ləpihakna dera saṅ masaṇḍa aṅrəmək maṇik saṇḍa ṅarannya.</p>
+          <p n="23">ana vaṅ aṇdalihatatayi atatayi ṅarannya aṅabət anumpu anəluh aṅgəlo aṅiṅ- gatakən apisuna yan tan tuhu pandalihnya daṇḍa ya su 6 <pb edRef="#L" n="45v"/> mā 4 riṅ vvaṅ tuṅgal panahuranya parabarat ṅaranya ikaṅ andalih maṅkana patyana yan tan panahuranya den kadi deniṅ amatyani atatayi maṅkana sakvehnya somahnya patyana maṅkana liṅ saṅ hyaṅ agama, mataṅnyan riṅ atatayi ayvenucapatyanana juga ya. paran ta sinəṅguh atatayi maliṅ, anəluh, paṅgave, pisuna, aṅiṅgatakən, sadatatayi ṅarannya.</p>
+          <p n="24">ana vvaṅ amaduṅ maduṅ samīpa nikaṅ avan ana vvaṅ lumivat avan tan akon umilaga saṅ amaduṅ samīpa nikaṅ avan, dadi anibani vvaṅ lumivat avan vikaravak nikaṅ katiban paləh paləh saṅ amaduṅ tahən vli tamba pavehanya mā 5 yapvan tikəl saṅ katiban evu 4 pavehanya lavan daṇḍa saṅ amaduṅ su 6 mā 4 yan mati aveha paṅəli śava mariṅ kadaṅ iṅ mati vvaṅ hina pradhana ṅarannya, maṅkana śasananya.</p>
+          <p n="25">ana vvaṅ aṅrakṣa babandan babalagbagan cucula uvaha paləh paləh saṅ maṅrakṣa daṇḍa ya su 3 mā 2 śasananya.</p>
+          <p n="26">ana vvaṅ mapihutaṅ saṅ mapihutaṅ mati pada matiṅgal anak <pb edRef="#L" n="46r"/> ana pañjiniṅ utaṅ riṅ anak saṅ mapihutaṅ tan yogya anahura aṅləpih sakavit panahurannya katmu tuṅaniṅ kadut ṅarannya.</p>
+          <p n="27">ana vvaṅ manak lagi taruna kakuruṅ riṅ rama reṇanya paradah kavitanya daṇḍa ya istrīnya paradah svaminya daṇḍa ya bṛtyanya parade tuhannya daṇḍa ya vaṅ tani paradah vak deśa daṇḍa ya maṅkana śasananya.</p>
+          <p n="28">ana vvaṅ amaduṅ tahən anibanana vnaṅ vnaṅ aṅəlyanana samūlyaniṅ kəbo sapi maṅkana śasananya.</p>
+          <p n="29">ana vvaṅ maṅkat alayar tətəlu kvehnya sadulur ana kraṅat taya kunaṅ təka pvaya riṅ sabraṅ anahunte kaṅ roro mulih tekaṅ satuṅgal ikaṅ kari atuvavadrəve pakirimanya riṅ rabinya anaknya kunaṅ riṅ bapa ibunya kunaṅ mulih ta saṅ matuvava tka pva riṅ umah tan tinəkakənya tikaṅ patuvava cinələdnya tka pvaya riṅ umah tinakvananya rabinya anakaritaka ikaṅ drəvya patuvava tan ana liṅniṅ rabinya yata tinəkakənya riṅ saṅ banigrama kabeh saṅ aməgat vicara yata mulih aṅləpih ikaṅ drəvya patuvava <pb edRef="#L" n="46v"/> maṅkana śasananya.</p>
+          <p n="30">ana vvaṅ tiniban drəve ilaṅ umahnya ləmahnya kunaṅ riṅ vəṅi deniṅ duṣṭa ndatan kavruhan katəmu pva ya de saṅ madrəvya irika daṇḍa saṅ momah dera saṅ amava bhūmi su 3 mā 2 dumeh ya maṅkana katiban vulu vulu ṅarannya tan kəna paṅəli.</p>
+          <p n="31">kunaṅ ikaṅ aṣṭa duṣṭa ṅarannya isakah, codvekah, bektah, bojekah saha carakah, pritikah, sanadah, tatrah. isakah ṅa amateni, codvekah ṅa aṅinini, bektah ṅa akon amateni, ika ta vnaṅ patyanana yan arəp auripa daṇḍa ya su 6 mā 4 riṅ vvaṅ satuṅgal tuṅgal maṅkana śasananya. kunaṅ ikaṅ vvaṅ bhojekah ṅa sapaṅan sainum iṅ maliṅ, sahacarakah ṅa atut adulur iṅ maliṅ, pritikah ṅa asamitra anuduhakən maliṅ, sanadah ṅa mahulun dunuṅaniṅ maliṅ, tatrah ṅa atuluṅ aveh sañjataniṅ maliṅ ika ta sama daṇḍanya su 3 mā 2 sakrahita ṅarannya.</p>
+          <p n="32">ana vvaṅ istrī melik malaki <pb edRef="#L" n="47r"/> ikaṅ tukon mantuk dviguṇakna śasananya.</p>
+          <p n="33">ana vvaṅ anunori pari riṅ adəgan daṇḍa ya su 3 mā 2 ulihan iṅ pari pañca guṇakna maṅkana śasananya. ana vvaṅ aməraṅ raṅgon iṅ vvaṅ lyan riṅ savah riṅ gaga kunaṅ riṅ padikan kavruhana dera saṅ adrəve daṇḍa ya mā 5 śasananya.</p>
+          <p n="34">ana nuduk vvaṅ tan padoṣa yan cecel sananya daṇḍa ya mā 5 yan aməgatakən dagiṅ daṇḍa ya su 3 mā 2 yan aməgatakən otot cedaṅga daṇḍa ya su 6 mā 4 maṅkana śasananya.</p>
+          <p n="35">ana vvaṅ ahutaṅ tan papatra duk sapadəgan vnaṅ tagihən pəjah salah tuṅgal tan vnaṅ sahurən tan kumalilira mariṅ anak.</p>
+          <p n="36">ana vvaṅ aṅrusak tanəm tanəman makadon vruha kunaṅ ana varah tan inalapnya kaṅ rinusaknya daṇḍaya saji nikaṅ rinusaknya dera saṅ adrəve tatanəman.</p>
+          <p n="37">ana vvaṅ analeni tan yogya talenana muvah a- na vvaṅ maṅuvakən yogya talenana daṇḍa ya su 3 mā 2 47b/ dera saṅ amava bhūmi.</p>
+          <p n="38">ana vvaṅ mamuṅpaṅ istrī kanya manaṅis ta ya matatayi ika patyanana tan vuvusən ana ta maṅuripi vvaṅ maṅkana daṇḍa ya su 6 mā 4 dera saṅ amava bhūmi.</p>
+          <p n="39">ana istrī menak maṅuṅgahi vvaṅ pāpa tan doṣaa ika salah tuṅgal, yen tan panarima saṅ iṅuṅgahan ika alapana. maṅkana istrī pāpa maṅuṅgahi voṅ ləvih sakeh ika alapən dera saṅ rāja. ana vvaṅ istrī melik malaki antyakna sanahun paayunən de saṅ manak istri livat satahun vaṅsulakna ikaṅ vəlyan anikəl de saṅ manak istrī. ana vvaṅ istrī linamar saptapayu sinrahan ikaṅ tukon mati taṅ istrī kaṅ sinrahan tukon vəlyan ika si baṅavan ika tan vaṅsulakna ikaṅ tukon, maṅkana śasa- nanya.</p>
+          <p n="40">ana vvaṅ ulun iṅ pasək luməkas ya maliṅ da- ṇḍa ya su 6 mā 4 pasəkna riṅ sipat su 1 mā 4 śasananya. ulun iṅ pasək luməkas aṅraṅgas añoloṅ kəbo sapi daṇḍa ya su 3 mā 2 pasəkna sipat su 1 mā 4 maṅ<pb edRef="#L" n="48r"/>kana śasasanya.</p>
+          <p n="41">nihan ta maṅalihakən saṇḍa rumuhun palakvanana ləpihakna samūlyaniṅ saṇḍa nhər nigraha ya su 3 mā 2.</p>
+          <p n="42">ana vvaṅ nomah nomah mava pakṣi suruh piṅro piṅtiga ndan mayu liṅnya kaṅ maṅkana vnaṅ ya malaki len.</p>
+          <p n="43">ana sinaṅguh sdah paṅ laraṅanya pisana piṅ rva kataṅgap ikaṅ sədah nhər mayu masamaya muṅgahaniṅ vlyanya kunaṅ ika ta sinaṅguh sədah paṅlaraṅanya. mu- vah ya riṅ galuṅan ilaṅ pradhana nunduṅakən kulah kalih ṅarannya.</p>
+          <p n="44">ana vvaṅ manilih pirak riṅ istrī laraṅan sdəṅ səpiniṅ voṅ daṇḍa ya su 1 mā 4 svami bhava ṅarannya. ana vvaṅ manahur utaṅnya riṅ istrī laraṅan tan ana lakinya riṅ umah daṇḍa ya su 1 mā 4 maṅkana śasananya.</p>
+          <p n="45">ana ṅalihakən saṇḍa utan (ndatan??) papobaya lavan saṅ madrəve saṇḍa təbusən iṅ saṅ maṅ- kana daṇḍa ya de saṅ amava bhūmi su 3 mā 2 kahilaṅan iṅ manahe mudha.</p>
+          <p n="46">ana vvaṅ aṅaku drəveniṅ adrəve liñok paṅakune sahos rūpane drəveniṅ len ika lavan drə<pb edRef="#L" n="48v"/>vene aku haṅ hoho drəvya arane daṇḍaniṅ aṅaku aku drəveniṅ saṅ adrəve sarəṅ rəganiṅ drəve kaṅ den aku dəṇḍaane dera saṅ amava bhūmi aji ajinən triguṇakna tu (tur??) drəve kaṅ den aku muliha nikəl, śasananya.</p>
+          <p n="47">ana cambra ñokot iṅ manuk iṅ kuruṅan tan tinəmbaṅ ikaṅ camra dene kaṅ aduve kevala mənəṅ juga daṇḍa ya saṅ aduve samra evu 4 de saṅ amava bhūmi kunəṅ anahuta ayam riṅ caṅcaṅan den təmbaṅ ikaṅ camra dene kaṅ adrəve camra tan matiya denya nahut daṇḍanən sapaṅaji niṅ manuk sapaṅajiniṅ ayam maṅkana śasananya.</p>
+          <p n="48">ana vvaṅ anəbit paṅubaya duruṅ pəgat paṅubayane daṇḍa saṅ anəbit evu 4.</p>
+          <p n="49">ikaṅ vvaṅ sudra yan maliṅ daṇḍa su 2, kunaṅ ikaṅ vvaṅ veṣya yan maliṅ daṇḍa su 4, kunaṅ yan vvaṅ kṣatriya yan maliṅ daṇḍanira su 8, kunaṅ saṅ brāhmaṇa yan maliṅ daṇḍanira su 16 dadi purva catus paṅaran iṅ daṇḍanira. pan sira vruh riṅ doṣa guṇa uma<pb edRef="#L" n="49r"/>mbah paṅavruhira yan maṅkana.</p>
+          <p n="50">ana vvaṅ rama deśa hina sadhu daṇḍa ya su 1 mā 4 an huna sadhu daṇḍa ya mā 10 maṅkana śasananya.</p>
+          <p n="51">ana vvaṅ andalih dinalih roro lavan tətəlu mnaṅ kaṅ tətəlu, tətəlu aṅlavan papat mənaṅ kaṅ papat, papat aṅlavan lilima mənaṅ kaṅ lilima, maṅkana śasananya. daṇḍaniṅ sakrahita su 3 mā 2.</p>
+          <p n="52">ana vvaṅ anuduk kəbo sapi riṅ ləbuh riṅ luruṅ daṇḍa ya madhya sahasa su 1 mā 9 tan aṅraṅgas ika apan riṅ ləbuh sinuduknya.</p>
+          <p n="53">ana vvaṅ abyavahara avañcinoran pavak niṅ amateni cor tilik pavakniṅ kapaten yan cinoran cor paciciraṅ yan añori śakṣi cor paciciraṅ apan śakṣi yan saməton rovaṅ tan yogya makaśakṣiya ana vvaṅ anu- duk voṅ śabdacapala pada capala aṣṭacapala atuku vṛdo kəbo sapi salvir iṅ duve kacoloṅan kamaliṅan saha śakṣi saməton varga rovaṅ tan yogya makaśakṣia iva <pb edRef="#L" n="49v"/> maṅkana yan riṅ gata sakala yogya saməton varga rovaṅ makaśakṣia apan riṅ gata sakala ika gata sakala ṅarannya kabegal iṅadaṅ arəp pinatenan kamaliṅan añjavat aṅintip riṅ pabañon amulugur ika gatasakala ṅarannya yogya saməton varga rovaṅ makaśakṣia maṅkana śasananya.</p>
+          <p n="54">ana vvaṅ aṅintari papati yan kadənda səgəh iṅ aṅintari mā 5 śasananya.</p>
+          <p n="55">ana ta vvaṅ adol voṅ vus olih madol ika saṅ atuku dadi ta ana utaṅnya ikaṅ dinolnya saṅ adol ika katagih utaṅ iṅ saṅ dinolnya apan saṅ atuku vus olih padol maṅkana śasananya.</p>
+          <p n="56">ana vvaṅ aṅrubuh badeg riṅ kəbon iṅ akəbon tan amita riṅ saṅ adrəve katitiya pamədal iṅ badeg sadaśa sadina pituṅ śaśih lavas iṅ a…, śasananya.</p>
+          <p n="57">ana vvaṅ mahutaṅ ma- ñjiṅ anuṅgu apagave amit iṅ gone ahutaṅ aṅulati artha apasaṅketa livar iṅ pasaṅketane tan təka kata<pb edRef="#L" n="50r"/>giha pavədal iṅ kārya yen voṅ lanaṅ 100 sadina yen voṅ vadhon 50 sadina, yen alavas anahun roṅ nahun tigaṅ śaśih pituṅ dina lavas iṅ aniti śasananya.</p>
+          <p n="58">ana vvaṅ mapihutaṅ alavas tan panagih təka riṅ dvadaśa varṣa katiban daravarṣa ahivaṅ saṅ mapihutaṅ siṅgih pradhana kaanan saṅ mahutaṅ tan ahivaṅ saṅ pradhana tumagiha.</p>
+          <p n="59">ana ta śeṣaniṅ pihutaṅ kunaṅ tan patular pañji siddha pūrṇa muvah kaniṣṭa pṛmaṇa ika ma- ṅkana śasananya.</p>
+          <p n="60">ana vvaṅ mamuhaki utaṅ atular pañji salintaṅ iṅ tular pañji katagiha deniṅ kaniṣṭa maṅkana śasananya.</p>
+          <p n="61">ana vvaṅ managih mahirakən istrī laraṅan daṇḍa su 1 mā 9 istrī saṅgraha ṅarannya.</p>
+          <p n="62">Ana vvaṅ anuṅgvakən rabinya (anuṅgokən rabi) kajamah pva de saṅ tuhanya tan vnaṅ lakinya məjahi mulih tan panahura utaṅnya apa dumeh yan maṅkana puruṣa hina ika ṅarannya.</p>
+          <p n="63">ana vvaṅ manilih vdihan mariṅ istrī laraṅan istrī saṅgraha ika, sapaluṅguhan lavan istrī laraṅan riṅ śūnya daratiṅ krama ṅaran ika, daṇḍa ya su 3 mā 2 ika kabeh minaka <pb edRef="#L" n="50v"/> śasananya.</p>
+          <p n="64">ana vvaṅ maninilih vdihan səbita ləsəha ilaṅa ika de saṅ manilih siddha malyanana añar apa mataṅnyan maṅkana vurukaminta bara ika maṅkana śasananya.</p>
+          <p n="65">ana vvaṅ manilih simsim mona putih masnya ilaṅa taya de saṅ manilih siddha maṅəlyani mas tatur maṅkana śasana- nya. ana vvaṅ manilih pari akveh makədik yen sapuluh tahun lavasnya su 1 mā 4 panahuranya ikaṅ mahutaṅ pari maṅkana śasananya.</p>
+          <p n="66">ana vvaṅ amraṅa paravu niṣṭa madya utama saṅ madrəve paravu yan utama saṅ madrəve paravu daṇḍa ya su 3 mā 2 yan madhya saṅ madrəve paravu daṇḍa ya su 1 mā 9, maṅkana śasananya.</p>
+          <p n="67">ana vvaṅ añoloṅ amaduṅ tirisan pucaṅ salvirniṅ vovohan kayu tulis kətevel jati taṅi səntul suren varu yen tan amit riṅ saṅ madrəve daṇḍa ya su 1 mā 4 maṅkana śasananya. yan kayu tunu cinoloṅnya daṇḍa ya evu 4 śasananya.</p>
+          <p n="68">ana vvaṅ anuñjəl badeg vus abiluluk daṇḍa ya mā 4 yan badeg duruṅ <pb edRef="#L" n="51r"/> abiluluk daṇḍa ya mā 1 śasananya.</p>
+          <p n="69">ana vvaṅ amraṅ tatali niṅ paravu aba abah iṅ paravu daṇḍa ya evu 4 maṅkana śasananya.</p>
+          <p n="70">ana vvaṅ aṅrakṣa a jukuṅ tan koniṅaa kapaṅan iṅ ani daṇḍa ya su 1 mā 4.</p>
+          <p n="71">ana camra añokot ayam bebek riṅ paməṅ aməṅanya camra patenana tan dəṇḍanən saṅ aduve.</p>
+          <p n="72">ana vvaṅ maṅiṅgatakən ulun iṅ mahulun daṇḍa ya su 6 mā 4 utaṅnya dviguṇakna śasananya .</p>
+          <p n="73">yen ana vvaṅ amədalakən sabda paruṣya riṅ vvaṅ lyan añabarakna yen tan pamaləs kaṅ vinədalan sabda paruṣya daṇḍa ya saṅ amədalakən sabda paruṣya evu 1 yen amaləs kaṅ vinəlan śabda paruṣya nir doṣa yan maṅkana.</p>
+          <p n="74">ana vvaṅ anuduk sapi kəbo mañjiṅ mariṅ kəbon ta dəṇḍanən saṅ aduve kəbon yan mati kaṅ sinuduknya maṅəlyanana samūlyaniṅ sapi kəbo kaṅ sinuduknya yan tan mati aveha pakikicir kupaṅ 5 maṅkana śasananya.</p>
+          <p n="75">ana vvaṅ lanaṅ matukar iṅ istri laraṅan daṇḍa ya su 3 mā 2 maṅkana śasananya. ana vvaṅ <pb edRef="#L" n="51v"/> matukar iṅ panagih nagihan kapva mavətmakən rah nir doṣa maṅkana asu amitukarakən təda ṅarannya. ana vvaṅ matukar saha tutaṅga amraṅa taya saka maṅambalaṅ taya umah bya vastaniṅ maṅkana daṇḍa ya mā 10 maṅkana śasananya.</p>
+          <p n="76">ana vvaṅ manədakən ulunnya anaknya kinonkon de saṅ manaṇḍa tiba amanek manek matia riṅ pakonkonan ri mārga miṅgata riṅ pakonkonan tan katagih utaṅ saṅ masaṇḍa pada kelaṅan arannya.</p>
+          <p n="77">ana vvaṅ makveh anaknya anutakən iṅ tuhannya anake satuṅgal dadi mati riṅ tuhanya mati saṅ vṛdah adum taya riṅ utaṅ sakvehniṅ sanake kaṅ mati riṅ tuhanya milu kaduman saduman anuhun utaṅe arannya yen tan mati miṅgata sakiṅ tuhanya tan yogya laṅana kaṅ vit kaduma riṅ samətone kabeh, sadum dumane saṅ miṅgat sakiṅ tuhanya.</p>
+          <p n="78">ana vvaṅ anuṅgokən anaknya yen ulunnya matiya riṅ panuṅgon satəṅah katagih <pb edRef="#L" n="52r"/> saṅ manuṅgokən utaṅ saṅ tinuṅgokən yan mati kinonkon dera saṅ manaṇḍa tan ana panagihakəna maṅkana śasananya.</p>
+          <p n="79">ana vvaṅ anuṅgaṅ (nuṅgaṅ) gajah padati ajaran padati ajaran aṅidəkana vvaṅ matiya kaṅ kedəkan saṅ anuṅgaṅ daṇḍa su 3 mā 2, aṅidəka ajaran kəbo sapi daṇḍa su 1 mā 9, aṅidəkana vdus minda mā 10, aṅidəkana ayam bebek daṇḍa kupaṅ 5.</p>
+          <p n="80">ana vvaṅ añoloṅ drəve aṅləpitakna savah sakalvir linəpitakən aṅlali lali ya gagaduhane daṇḍa ya su 3 mā 2.</p>
+          <p n="81">ana vvaṅ aṅrakṣa manuk yen ayama ilaṅa dene aṅrakṣa daṇḍa su 1 mā 4 ana vvaṅ anaṇḍakən voṅ yen matiya riṅ panuṅgon satəṅah panahuranya saṅ manaṇḍakakən.</p>
+          <p n="82">ana vvaṅ atukar iṅ ramane anuduka aṅgitika vikara avak iṅ kagitik atari gətihən daṇḍa ya dera saṅ amava bhūmi saṅ aṅgitik su 3 mā 2 yen mati denya mvaṅ aṅgitik patyanana dera saṅ amava <pb edRef="#L" n="52v"/> bhūmi.</p>
+          <p n="83">ana vvaṅ mati riṅ deśa vruha deśa kaṅ amateni tur tan apasadhuva daṇḍa ikaṅ deśa dera saṅ amava bhūmi su 6 mā 4 aṅadaṅ iṅ maliṅ arannya. ana vvaṅ mati riṅ deśa tan kinavruhan saṅ amateni deśa tan apasadhuva deśa daṇḍa dera saṅ amava bhūmi su 3 mā 2 vaṅke kabunan arannya.</p>
+          <p n="84">ana ta vvaṅ matukar katitihan kaṅ saviji malayu ta mariṅ umah iṅ lyan patenana dera saṅ aduve umah yen kaṅ aburu yen kaṅ kaburu tan dəṇḍanən saṅ a- mateni. ana vvaṅ matukar katitihan kaṅ saviji malayu mariṅ umahe den tut dene musuhe matiya riṅ uma (umah?) kaṅ kaburu tan aranana amuk ika siddha tukar arannya.</p>
+          <p n="85">ana ta vvaṅ anilih drəvya liṅnya milva riṅ kārya ndan dinolnya sinaṇḍakənya kunaṅ ikaṅ maṅkana silanya daṇḍa sadoṣaniṅ maliṅ yan tan ana panahuranya siddha ya pəjahana maliṅ atimpuh ika maṅkana śasananya.</p>
+          <p n="86">ana vvaṅ manilih rare ulun inupah ta gavenya miṅgat taya kāla<pb edRef="#L" n="53r"/>nya maṅkana tan təmpuhakna ika saṅ makon saṅ tuhan pinamrihakən ika maṅkana śasananya.</p>
+          <p n="87">ana vvaṅ atatagon uvus maveh vəlyan dadi arabi pvaya riṅ len tan ulihakna ikaṅ vəlyan pirak tiṅgalan ika. ana ta uvus maveh vəlyan atəmu sapəkən pinuṅpaṅnya raranya siddha tan vehən atəmu. prasiddha kumpul tavantavanta vakya yan ubhaya saṅ manak tan ana vicaranya maṅkana śasananya.</p>
+          <p n="88">ana vvaṅ mamuk iṅ sabha rva təlu kvehnya sadulu mamuk taya salah siki tan pəjahana ika kabeh saṅ madoṣa juga ya patyana dunuṅ sumur kayuh timba ikaṅ madoṣa pəjahana kunaṅ yan iṅ ələt pamukanya sakvehnya sadulur pəjahana prasiddha hatika (dahatika?) maṅkana śasananya.</p>
+          <p n="89">ana ta maliṅ pari riṅ savah nda riṅ rahina denya ṅalap tan pəjahana ika daṇḍa su 3 mā 4 ikaṅ pari dviguṇakna yan riṅ umah ya maṅalap rahina vəṅinya patya ika apvan drəvya mūlya kacaritaniṅ pari aneṅ savah maṅkana śasananya.</p>
+          <p n="90">ana vvaṅ matuvava pari riṅ savah ndatan ana saṅ masavah siddha inalap parinya ana saṅ masavah yan patu<pb edRef="#L" n="53v"/>vava pari aləpanya tan ana saṅ masavah daṇḍa su 1 mā 4 yan ubhaya saṅ patuvavanya tan ana vicara maṅkana śasananya.</p>
+          <p n="91">ana vvaṅ anəmu-nəmu drəvya nda ṅuni ya tinakonanya tan vruh i baṣanya riṅ avaśana vkasan mavarah taya ika maṅkana śilanya daṇḍa ya sadoṣaniṅ maliṅ yapvan tan ana panahuranya siddha pəjahana maṅkana śasananya.</p>
+          <p n="92">ana vvaṅ kahilaṅan drəvya sahasa taya mañondatan ana varah riṅ rama riṅ vaṅ makveh pəjaha kaṅ cinoran dadi katəmu kaṅ drəvya riṅ lyan prasiddha anəluha dara tikaṅ añor vnaṅ patya alapən drəvyanya paṅanən deniṅ vvaṅ makveh śasananya.</p>
+          <p n="93">ana vvaṅ matuvava dṛvya ilaṅ inalap iṅ maliṅ mvaṅ drəvya saṅ matuvavan tan əlenana ika samaṅkana liṅ saṅ hyaṅ agama rajabhaya toyabhaya corabhaya agnibhaya pat lvir nikaṅ tan kəneṅaku agnibhaya ṅarannya katunu, toyabhaya ṅaranya kahili corah bhaya ṅarannya inalap iṅ maliṅ rāja bhaya ṅarannya inalap iṅ ratu ikaṅ drəvya maṅkana kra<pb edRef="#L" n="54r"/>manya tan yogya əlenana de saṅ tinuvavan maṅkana śasananya.</p>
+          <p n="94">ana ta vvaṅ masaṇḍa kəbo sapi anak anak taya riṅ pasaṇḍan tan yogya saṅ masaṇḍa ameta anak iṅ kəbo sapi mantuk mariṅ saṅ manaṇḍakakən anak iṅ kəbo sapi kāyyaniṅ kəbo sapi tovasikaṅ manaṇḍa.</p>
+          <p n="95">ana vvaṅ aṅraṅgas prajakane den ajak aṅraṅgas prajakane tan milua kadəṇḍa gustine kaṅ kadəṇḍaa yan prajakaniṅ lyan milu aṅraṅgas milu knaa riṅ dəṇḍa viji vijinən su 3 mā 2 maṅkana śasananya.</p>
+          <p n="96">ana vvaṅ akəmit jahun den ajaka amamaliṅ dene maratuhane matiya riṅ pamaliṅane tan katututana riṅ utaṅ saṅ mati maratuhane.</p>
+          <p n="97">ana vvaṅ avarah varah amateni vvaṅ yan tan tuhu parahnya daṇḍa ya su 3 mā 2 duhilatən arannya.</p>
+          <p n="98">ana vvaṅ amava camra añokota ayam iṅ voṅ riṅ kuruṅan manuk iṅ kuruṅan tan den gətaka camrane daṇḍa ya su 1 mā 4 ajarana yen husraha dəṇḍanən saṅ asarati evu 4. aṅidəki ayam bebek kaṅ <pb edRef="#L" n="54v"/> linumbar tan cinaṅcaṅ dəṇḍa kupaṅ 5. aṅidəki ayam riṅ caṅcaṅan riṅ kuruṅan dəṇḍa evu ga. aṅidəki vədus vədus padu bañak dəṇḍa saṅ asarati mā 5. yen aṅidəki camra celeṅ dəṇḍa mā 10. tur aṅəlena sama janiṅ rəgana kaṅ kedəkan ika.</p>
+          <p n="99">riṅ voṅ añoloṅ kəmbaṅ yen akədik olihe bobotana savərate bobote tikəlakna dadi savəlas. ana vvaṅ añoloṅ gaṅan kunir təmu gamoṅan añoloṅ priṅ, añoloṅ odod ododan sarva buṅkah, sarva buṅkil dəṇḍa dera saṅ amava bhūmi mā 5 tur olihe añoloṅ ika muliha nikəl mari saṅ cinoloṅan.</p>
+          <p n="100">riṅ añoloṅ mas yen salakaa yen añoloṅ ratna yan añoloṅ dodot yan ləvih sakiṅ aji satus doṣa pati kaṅ añoloṅ denira saṅ amava bhūmi. yen ləvih sakiṅ aji save drəve kaṅ den <pb edRef="#L" n="55r"/> coloṅ tugələana taṅane kaṅ añoloṅ ika dera saṅ amava bhūmi. yan kuraṅ sakiṅ aji save drəve kaṅ den coloṅ ika, tikəlakna dadi savəlas samūlyaniṅ drəve kaṅ den coloṅ ika, ika dəṇḍane dera saṅ amava bhūmi tur olihe añoloṅ tikəlakna mantuka mariṅ saṅ adrəve kacoloṅan. riṅ voṅ añoloṅ sajəṅ riṅ umah añoloṅ səkul añoloṅ kəkəlan, añoloṅ ivak məntah ratəṅ, añoloṅ manuk, añoloṅ miñak, pəhan, añoloṅ ləṅa, madhu, malam, pulut, kalavan añoloṅ vut gagaraṅan, kuvuk, landak yen aneṅ umah den coloṅ akaraṇa karəpe manih añoloṅ anam-anaman priṅ makādi raga kicir yen lagi aneṅ umah añoloṅ guci, piṅgan, paṅkon sakeh iṅ vavadah vijil pañjunan kəndi kunəṅ añoloṅ uyah, sarasi, asəm, jruk saa- naniṅ raragi aneṅ umah manih añoloṅ bhasma, avu, arəṅ ika kaṅ den coloṅ salah tuṅgala makadi bras riṅ <pb edRef="#L" n="55v"/> pasimpənan den coloṅ kaṅ añoloṅ dəṇḍanən sapaṅrəgane kaṅ den-coloṅ ika, triguṇakna dera saṅ amava bhūmi tur kaṅ dencoloṅ muliha nikəl mariṅ kaṅ adrəve.</p>
+          <p n="101">ana vvaṅ aṅivat riṅ voṅ abəcik, voṅ vadhon ləvih, añoloṅ ratna ləvih patenana dera saṅ amava bhūmi. yen ana voṅ añoloṅ kəbo sapi paṅiridira saṅ aləvih makadi paṅiridira saṅ amava bhūmi yen añoloṅa guguluṅ iṅ padati kaṅ añoloṅ tugəlana sukune satəṅah denira saṅ amava bhūmi.</p>
+          <p n="102">ana vvaṅ aṅunus kris tur aməraṅ saka vaton galar dəṇḍa dera saṅ amava bhūmi su 3.</p>
+          <p n="103">ana vvaṅ aṅlar iṅ rahina dəṇḍa sapaṅrəgane triguṇakna saolih olihe ṅlariṅ.</p>
+          <p n="104">yen añoloṅ sajəṅ riṅ tuyuhan riṅ kubaṅ savadahane dəṇḍa dera saṅ amava bhūmi evu 4 tur ikaṅ sajəṅ muliha nikəl mariṅ saṅ adrəve. yen ana voṅ añoloṅ paśu kəbo sapi riṅ rahina kāla daṇḍa dera saṅ <pb edRef="#L" n="56r"/> amava bhūmi su 3 mā 2. ana vvaṅ añoloṅ pasusuratane riṅ saṅ mapihutaṅ ana vvaṅ añoloṅ pasusuratane mesi dəṇḍa dera saṅ amava bhūmi su 6 mā 4 tur saguṅ iṅ utaṅ muliha nikəl mariṅ saṅ apihutaṅ kahilaṅane doṣane</p>
+          <p n="105">ana vvaṅ abuburu ri laraṅan yen olih daṇḍa su 1 mā 4 riṅ voṅ satuṅgal tuṅgal viji vijinən dera saṅ amava bhūmi tur ikaṅ buron tikəlakna mulih roro riṅ satuṅgal tuṅgal yen tan polih buron denya buru daṇḍa evu 4 riṅ voṅ satuṅgal maṅkana śasananiṅ abuburu riṅ laraṅan iṅ alaraṅan.</p>
+          <p n="106">ana vvaṅ anaṇḍakən kavula lanaṅa vadhona livata sakiṅ sadaśa tahun lələb ika.</p>
+          <p n="107">ana vvaṅ aṅgaməli istrī laraṅan, mañjiṅ riṅ umah iṅ istrī laraṅan daṇḍa ya su 3 mā 2. ana vvaṅ sapadəgan riṅ istrī laraṅan aṅucap ucap riṅ istrī laraṅan sədəṅ iṅ səpiniṅ voṅ daṇḍa ya su 1 mā 9 maṅkana śa- sananya.</p>
+          <p n="108">ana vvaṅ asədahan vnaṅ vnaṅ riṅ gustine sa- lvirniṅ vnaṅ vnaṅ ilaṅa aṅlenana pisis evu 8 riṅ <pb edRef="#L" n="56v"/> satuṅgal tuṅgal sake… lavan ilaṅ maṅkana śasana- nya.</p>
+          <p n="109">ana pihutaṅ sədəṅ mati kaṅ mahutaṅ indətən kalevaranya kumpulakəna anaknya pivruhakna utaṅnya ika ta ləpihakna kramanya. kunaṅ yen tan inindət vruh yan kavitanya griṅ tinagih ya anahura sakavit yan maṅkana pramada ṅarannya.</p>
+          <p n="110">ana matyani kavula utaṅnya tan ilaṅa daṇḍa ya su 1 mā 4 dəṇḍa dera saṅ amava bhūmi su 6 mā 4 śasananya.</p>
+          <p n="111">yadyan mamava griṅ aguṅ veda dagiṅ kəbo sapi kunaṅ yadyan tan parəpat tuvi yen ika vinavanya vnaṅ ya sinaṅguh laraṅan ika kunaṅ kramanya yen malaki riṅ lyan vnaṅ ya pintanən saṅ vinavanya grih dagiṅ. ananagihakən śeṣa pakṣa nikəlakna yadyan kasa- ṅgupana deniṅ ina kaliñokanya mabyavahara taya tan vehana ləpiha yan duruṅ tigaṅ tahun lavasnya ikaṅ tluṅ tahun tuvi yen anagih anak iṅ saṅ apihutaṅ daṇḍa ya anak iṅ saṅ apihutaṅ su 6 mā 4 sahisiniṅ pañjiniṅ <pb edRef="#L" n="57r"/> pihutaṅ dvi guṇakna maṅkana śasananya.</p>
+          <p n="112">ana vvaṅ anaṇḍakən voṅ yan livat sakiṅ sadaśa tahun lələb ika.</p>
+          <p n="113">ana vvaṅ adol savah roro ṅgonyadol kaṅ dumuhun pṛmaṇa kavəkasan amicara kaṅ adol satukon iṅ savah mantuk dviguṇakna tur daṇḍanən denira saṅ amava bhūmi su 3 mā 2 maṅkana śasananya.</p>
+          <p n="114">ana vvaṅ momah katunvan aṅleni umahi lyan daṇḍa saṅ panaṅkaniṅ gni su 1 mā 4 maṅkana śasananya.</p>
+          <p n="115">ana vvaṅ atumbas tumbas salvir tinumbas maṅkana vus asrah vlyan mariṅ saṅ adol dadi ilaṅ iṅalap iṅ maliṅ saṅ adol aveha pisis patumbas satəṅah pada kelaṅan arannya.</p>
+          <p n="116">ana vvaṅ momah momaha kən istrī laraṅan saṅ momah omah yogya patyana yan amalaku iṅurip iṅurip dera saṅ aduve rabi daṇḍa dera saṅ aduve rabi su 6 mā 4 saṅ manomahakən daṇḍa su 6 mā 4 saṅ inundaṅ daṇḍa su 3 mā 2 kaṅ anambuṅi luṅguh tan vruh daṇḍa anəṅahi kabeh viji vijinən maṅkana śa<pb edRef="#L" n="57v"/>sananya.</p>
+          <p n="117">ana vvaṅ akon anuduka voṅ pada rovaṅe asisivo yan tan mati vəli tamba pavehanya mā 5 yan mati kaṅ sinuduknya daṇḍa su 6 mā 4 kaṅ akon daṇḍa viji-vijinən maṅkana śasananya.</p>
+          <p n="118">ana vvaṅ aṅrakṣa kəbo sapi savah kunaṅ sapaniskara den rakṣa iṅalap deniṅ voṅ yen tan avaraha mariṅ saṅ maṅrakṣakakən daṇḍa ya su 3 mā 3 ulat mnaṅ arannya maṅkana śasananya.</p>
+          <p n="119">ana vvaṅ kraṅan matiya kaṅ lanaṅ yan kaṅ istrī ya yan mati kaṅ lanaṅ drəvene pinara tiga sabhagi mariṅ kraṅan roṅ bagi mantuka mariṅ saṅ amava bhūmi, yan mati kaṅ istrī drəvene pinaratiga roṅ bagi mariṅ kraṅan sabhagi mantuka mariṅ saṅ amava bhūmi, yan mati kalih lanaṅ vadhon sadrəvene kabeh mantuka mariṅ saṅ amava bhūmi. ana vvaṅ añoloṅ sarva vija sarva viji sarva buṅkah sarva buṅkil kavnaṅana dene kaṅ aduve daṇḍa ya mā 5 maṅkana śasananya.</p>
+          <p n="120">ana vvaṅ anagih tan papihutaṅ daṇḍa saisiniṅ patra dviguṇakna dera saṅ amava bhūmi saṅ katagih anagiha sahisiniṅ patra maṅlə<pb edRef="#L" n="58r"/>piha maṅkana śasananya.</p>
+          <p n="121">ana vvaṅ añoloṅ vədus celeṅ cədar riṅ rahina daṇḍa su 1 mā 4 maṅkana śasananya. ana vvaṅ anəlaṅ pisis limaṅ tahun lavasnya tan panahur vnaṅ yanikəla maṅkana śasananya.</p>
+          <p n="122">ana vvaṅ managih nagih yan satali asəgəh satak yen ro tali asəgəh samas yan təluṅ tali pataṅ tali asəgəh limaṅ atus siṅhanya.</p>
+          <p n="123">ana vvaṅ aṅalaṅi voṅ katalen dudu ṅgo- nya kaṅ katalen daṇḍa saṅ maṅalaṅi su 3 mā 2 maṅkana śasananya.</p>
+          <p n="124">ana vvaṅ anaṇḍakakən kəbo sapi yan livat təluṅ tahun lələb ika maṅkana śasananya. ana vvaṅ anaṇḍakən voṅ livata sadaśa tahun lələb ika kavaśa tan vehana nəbusa yan miṅgata matiya kaṅ sinaṇḍakakən tan yogya katagiha saṅ manaṇḍakakən.</p>
+          <p n="125">ana vvaṅ atatagon vus asrah vəlyan matya aṅamukaṅ lanaṅ ikaṅ vəlyan tan ulihakna mariṅ ramaniṅ lanaṅ maṅ- kana śasananya. ana vvaṅ atatagon vus asrah vəlyan ma<pb edRef="#L" n="58v"/>tiya riṅ umah iṅ saṅ rara kasuduk sdəṅe akəmit jahun ikaṅ vəlyan ulihakna kabeh papaṅanan tan mantuka maṅkana śasananya.</p>
+          <p n="126">ana vvaṅ añjatenana vvaṅ adosoṣan patyanana yen ana vvaṅ maṅkana.</p>
+          <p n="127">ana istrī laraṅan adola riṅ avake minaka kavula kaṅ lanaṅ nora vəruh daṇḍa saṅ matuku su 6 mā 4 maṅkana śasananya.</p>
+          <p n="128">ana aṅivat voṅ patyanana vvaṅ maṅkana.</p>
+          <p n="129">ana vvaṅ aṅrakṣa voṅ atatalen kabalagbag uvaha tan karakṣaa ilaṅa denyaṅrakṣa daṇḍa su 3 mā 2 maṅkana śasananya.</p>
+          <p n="130">ana vvaṅ abyavahara sami apasadu pada kveh iṅ pasadunya kaṅ saviji apasadu riṅ voṅ abəcik kaṅ sasiki apasadu riṅ voṅ ala mənaṅ kaṅ apasadu riṅ voṅ abəcik maṅkana śasananya.</p>
+          <p n="131">ana vvaṅ aṅintip istrī laraṅan riṅ pabañon patyanana sadina lavas iṅ aburu yan tan mati daṇḍa ivu 5 daṇḍa mantuka mariṅ saṅ aduve rabi. ana vvaṅ amarani istrī laraṅan riṅ pabañon patyanana sadina lavas iṅ aburu, yan tan mati daṇḍa su 1 mā 9 daṇḍa mantuka mariṅ saṅ aduve rabi, maṅkana śasana<pb edRef="#L" n="59r"/>nya. ana vvaṅ aṅgaməli istrī laraṅan patyana sadina lavas iṅ aburu yan tan mati daṇḍa su 3 mā 2 mantuka mariṅ saṅ aduve rabi. ana vvaṅ aṅrusak istrī laraṅan salavase uripe yogya patenana dera saṅ aduve rabi yan tan pinatyan dera saṅ aduve rabi daṇḍa su 6 mā 4 mantuka mariṅ saṅ aduve rabi śasananya.</p>
+          <p n="132">ana vvaṅ amulugur patyana sapasar lavasniṅ aburu duruṅ gənəp sapasar kapaṅgih dumunuṅ ri vanva daṇḍa dunuṅanya su 3 mā 2 yan tan mati saṅ amulugur livat sapasar daṇḍa ya su 6 mā 4 dera saṅ amava bhūmi maṅkana śasa- nanya.</p>
+          <p n="133">ana vvaṅ pinaten kadalih añətik anəluh tur liñoka pandalihe anuli añjarah pasusuratane apan ana u- taṅe kalavan kaṅ den dalih añətik anəluh arəp tan panahura utaṅe saṅkane aṅarani andalih añətik anəluh iku voṅ amati pahutaṅan arannya daṇḍa ya dera saṅ amava bhūmi su 12 mā 8 tur anahura utaṅe muliha nikəl maṅkana śasananya.</p>
+          <p n="134">ana vvaṅ aṅrusak saṇḍa dadi <pb edRef="#L" n="59v"/> den pada rūpane kaṅ den rurak (rusak??) muliha nikəl tur daṇḍanən dera saṅ amava bhūmi su 3 mā 2 maṅkana śa- sananya.</p>
+          <p n="135">ana vvaṅ aṅguguṇani riṅ voṅ istrī karuvana de saṅ manak kavruhana deniṅ makveh daṇḍa dera saṅ amava bhūmi maṅkana śasananya.</p>
+          <p n="136">ana voṅ amivəlasi sasamane voṅ saṅkane asiha ma- kadi sihamitra mitra nuraga arane, paran ulahe anulisakən aran iṅ voṅ riṅ tambaga den pajokən iṅ kayu riṅ kabuyutan riṅ saraṅan anulisakən aran iṅ voṅ viṅ kayu anampəki vija kuniṅ riṅ vvaṅ maṅkana yen karuvan daṇḍa dera saṅ amava bhūmi su 1 mā 4 maṅkana śasananya.</p>
+          <p n="137">ana vvaṅ aveh pinaṅan lavan aveh inum inuman mati kaṅ den avehi dene kaṅ den paṅan deninum ika kaṅ aveh dəṇḍa dera saṅ amava bhūmi su 6 mā 4 maṅkana śasananya.</p>
+          <p n="138">ana vvaṅ andalih aṅaloni rabiniṅ voṅ yan [60r] liñok pandalihnya daṇḍa dera saṅ amava bhūmi su 3 mā 2 anduhi santən arannya.</p>
+          <p n="139">ana vvaṅ anahur utaṅ anagihakən pañjiniṅ pihutaṅ kalavan saṅ apihutaṅ den arani ilaṅ den arani katunon dene kaṅ apihutaṅ den pasadokakən dene kaṅ ahutaṅ den varahakən riṅ anak mantune dene saṅ ahutaṅ vkasan mati kaṅ ahutaṅ kaṅ apihutaṅ mati dadi vkasan ana katəmu pañjiniṅ utaṅ ika tan vnaṅ tagihən apan vus pinasadokakən uni dene saṅ mahutaṅ</p>
+          <p n="140">ana vvaṅ anandakən voṅ duruṅ bisa anambut gave saṅ manaṇḍakakən aveh patuku baktadah sapaharisanahun kna leler arannya yan vus vruh anambut gave tan aveha paṅrəganiṅ baktadah saṅ manaṇḍakakən</p>
+          <p n="141">ana pradhana amanagihakən utaṅ riṅ kaniṣṭa gnəp piṅ lima divasa niṅ managihakən pihutaṅ yan tan kapaṅgiha riṅ umah yen aṅluṅanana yen asaṅidana pasadhokna riṅ rama de saṅ mapihutaṅ gənəp piṅ lima vnaṅ aṅambilana drəveniṅ saṅ mahutaṅ yan tan padrəve anak rabinya [60v] kapaṅgih riṅ umahnya vnaṅ indətana riṅ utaṅnya maṅkana śasananya. yan adoh deśanya vnaṅ sapisan anagih anuli aṅalap alapi drəveniṅ saṅ mahutaṅ apasaduva riṅ rama an adoh deśanya śasananya</p>
+          <p n="142">ana vvaṅ sahasa riṅ savah duruṅ kabhukti lagi riṅ adəgan petən kabeh sapaṅisiniṅ savah saṅ manahasa tan dəṇḍanən maṅkana śasananya. ana vvaṅ sahasa riṅ savah uvus kabhukti daṇḍa ya su 3 mā 2 sapaṅisiniṅ savah katiti bhukti ya sapaparone maṅkana śasananya. ana vvaṅ sahasa riṅ janma riṅ satva daṇḍa ya su 3 mā 2 maṅkana śasananya. ana vvaṅ sahasa momah momahakən laki laki ulun iṅ mahulun daṇḍa ya su 3 mā 2 saṅ mamet daṇḍa ya su 1 mā 4 maṅkana śasananya</p>
+          <p n="143">ana vvaṅ amupu rare lanaṅ yen duruṅ biṣa acacarik akəkəbonan yen amupu voṅ vadhon yen duruṅ bisa aṅantih anənun kna riṅ baktadah su 1 mā 4, yan vus bisa acacarik akəkəbonan, yen vadhon vus bisa a[61r] ṅantih anənun tan kəna riṅ baktadah maṅkana śasananya</p>
+          <p n="144">ana vvaṅ kadvarjata kapəgatane panahuranya su 1 mā 4 maṅkana śasananya</p>
+          <p n="145">ana vvaṅ agave setra daṇḍa ya su 3 mā 2 yen agave setra anuñjəlavan daṇḍa ya su 12 mā 8 maṅkana śasananya. yen añori papati patumbas iṅ cor 225 shəh iṅ añori kupaṅ 5 lalamak iṅ cor 225 tinilakan aṅkən sapasar sgəhiṅ aniliki kupaṅ 1 naṅkən kaparan gənəp piṅ pitu yan tan kna riṅ cor nir doṣa maṅkana. yañ co (cor?) paciciraṅ patumbas iṅ cor save lalamak iṅ cor 225 sgəh iṅ añori 50 cor patatakon arannya. yen ana vvaṅ kadənda amateni vvaṅ tan padoṣa sgəh aṅintari riṅ papati mā 5</p>
+          <p n="146">ana vvaṅ abyavahara mvaṅ iṅətakna nira manah nikaṅ vvaṅ mabyavahara riṅ satya tan satya varṇanya lakunya piṇḍa bhavanya vulatnya ulahnya nahan taṅabətaknanira katona satyanya denira yan maṅkana</p>
+          <p n="147">[61v] ana vvaṅ amet puniṅ taləs kubvan iṅ akubvan yen amet saviji roro tan daṇḍanən ika.</p>
+          <p n="148">kunaṅ sad tatayi ṅarannya agnidah anunvani visadah aṅracun śāstrajakakarah aṅamuk atarccane anəluh raja pisuna amitukarakən saṅ prabhu darat iṅ krama aṅalvani amuṅpaṅ kunaṅ nəm kvehnya atatayi ṅarannya tan ana pāpa ni amatyani atatayi maṅkana śasananya</p>
+          <p n="149">riṅ vvaṅ amet voṅ vadhon tan yogya alapən kaponakan, rabiniṅ paman, penan sakiṅ bapa, penan sakiṅ babu, valvaniṅ bapa, valvan iṅ saṅ brāhmaṇa nahan lvir nikaṅ tan yogya alapən manəmva māhapātala təmən ika kunaṅ yan ana maṅkana daṇḍanya dera saṅ amava bhūmi ndan pastanya tugəlana kaninya syuki uyah</p>
+          <p n="150">yan voṅ adol yan uvus anikəl luput deniṅ andolakən vastu vicaranən deniṅ anaṇḍakən yan kasor saṅ aṅadolakən saṇḍa aprakāra vnaṅ deniṅ adol anəbas malih riṅ gone aṅadol sakavit kna sakalantaraputra [62r] sapisan anuṅgal daśa damane yan tan paveh saṅ anuku ika daṇḍanən de saṅ amava bhūmi guṅ 40.000 tur gaga- den ika anikəl ulihakna riṅ saṅ adol maṅkana dharmane liṅniṅ sarasamuccaya kalih ilaṅa de doṣane</p>
+          <p n="151">riṅ voṅ akəkərəṅan arəbut drəve yan voṅ, yan təgal, yan mas, salviran iṅ drəve yan duruṅ kabhavarasa riṅ saba deniṅ saṅ makṛtasada yan akəkərəṅan pakṣane pada rumakṣa viśeṣa uga saṅ adrəveni dumun rumakṣa yan ana bot pakevuh ikaṅ drəve yan ilaṅ təmpuhakna saguṅ iṅ rəganiṅ drəve riṅ saṅ rumakṣa maṅkana dammane uniṅ agama</p>
+          <p n="152">iti sarasamuccaya agama. tlas cinitra ṅkaneṅ asahan kulvan iṅ deśa kaviśvayuh dya saṅ aparab suśilajñana santosakna virūpaniṅ akṣara deniṅ bhap kavnaṅ kveh kuraṅ ləvihnya. i śaka 1658 ha pva śa vara sinta saptami kṛṣṇa pakṣa śravaṇamasa irika kahuvusanya</p>
+          <p n="153">drəve n ida madhe habah, ida madhe raraṅ blaṅ [of: ñlaṅ??]</p>
+        </div>
+        <!-- <p><pb edRef="#JB" n="186r"/>...hana vvaṅ maṅunusakən kadga anakniṅ manak rovaṅ iṅ arovaṅ 
+hana ta kamahabhaya ṅa. salvir iṅ aguṅ, bañu aguṅ tan vənaṅ lakvanana sañjāta kveh tan vənaṅ paragən. ya teka mahabhaya ṅaranya. 
+
+hana vvaṅ lanaṅ añjaluk huluniṅ turuk iṅ voṅ, hulun iṅ ahulun, daṇḍa ya śu, 1, mā, 9. maṅkana śāsananya. 
+
+hana vvaṅ aṅgaməli kopek huluniṅ ahulun, daṇḍa ya śu, 3. mā, 2. maṅkana śāsananya. 
+
+hana vvaṅ anaṅguh hadaken ikaṅ ve ajro riṅ vvaṅ tan vəruh aṅlaṅe patyanana ikaṅ tinakonan. hana vvaṅ anaṅguh ajro ikaṅ ve adaken, daṇḍa ya 4] hevu hana vvaṅ anampəki ve, tləs ikaṅ vvaṅ denya, daṇḍa ya mā, 4. 
+
+hana vvaṅ managih riṅ galuṅan ilaṅ pradananya anunduṅakən kulah kalih ṅaranya. 
+
+hana vvaṅ anikəl istrī laraṅan katon ta ya deniṅ lakin ya avutik iṅ sinikəp, daṇḍa ya kaṅ anikəp śu, 3. mā, 2. kunaṅ yan tan pavah ikaṅ istrī purusa pva lakinya, patyana təkeṅ kaṅ anikəp. 
+
+hana vvaṅ amisuh riṅ pakvehaniṅ vvaṅ, ipasama gri para samya kunaṅ prasiddha mahaṅ ika. amadəmakəna ta pan rikalan iṅ manayub ri pakehan ikaṅ vvaṅ, pəjaana ika amahaṅ ika. maṅə<pb edRef="#JB" n="186v"/>yəh maṅarəpakən vaṅ makveh pəjaana ika, 
+
+amahaṅ ika. añjavat stri laraṅan pəjaana ika. maṅkana śāsananya. 
+
+hana vvaṅ amisuh stri laraṅan, daṇḍa ya mā, 12. madhya dhənda mā, 6. nista daṇḍa ya mā, 3. yan ubhaya saṅ lanaṅ tan hana vicāra. 
+hana vvaṅ amisuh tan padoṣa vakcapala ṅa. daṇḍa ya mā, 12.maṅkana śāsananya. 
+hana vvaṅ anəṅguh amisuh riṅ tan pamisuh, daṇḍa ya saləpih niṅ amisuh. mā, 24, ləvih dustanya ika. 
+hana vvaṅ amisuh amrəp, ndan maləsa ikaṅ pinisuh amrəp tan hana daṇḍan ika dusta anəmu dusta haranya. 
+
+hana vvaṅ añjavat istrī laraṅan anakniṅ manak vuluniṅ avulun patyanana dera saṅ adṛve laraṅan, dera saṅ mahanak, dera saṅ mahulun. yan tinaṅguhan daṇḍa ya su, 1, mā, 9. maṅkana śāsananya. 
+
+hana vvaṅ aṅilaṅ-ilaṅakən sinuduknya saṅ inilaṅakən dadi tan paratra malayu aṅavakakən vaṅ lyan. mati ya kaṅ iṅavakakən, daṇḍa ya saṅ maṅilaṅakənya sapaṅrəganiṅ voṅ nista madhyotama. yan huluniṅ vvaṅ niṣṭa śu, 1, mā, 4. yan huluniṅ madhya, śu, 6. mā, 4. yan uluniṅ uttama, śu, 12. mā, 8. maṅkana śāsananya. 
+
+hana vvaṅ kinoṅ aṅilaṅakən dadi ginamlan deniṅ voṅ, saṅ aṅilaṅakən nəhər hana aṅrəbut i sayakane, daṇḍa saṅ marəbuti <pb edRef="#JB" n="187r"/> saṅ maṅgaməlakən voṅ kaṅ aṅilaṅakən ika. Sadaṇḍan iṅ pāpati śu, 6. mā, 4. maṅkana śāsananya. 
+hana vvaṅ iṅilaṅakən tinimpal deniṅ kadhaṅe saṅ mati iṅilaṅakən, duruṅ aprasadhuha, daṇḍa saṅ animpal śu, 1, mā, 4.viji-vijinən yen akeh saṅ animpal, daṇḍa mandəg iṅ sakati lima, sakati nəm laksa. maṅkana śāsananya. 
+
+hana vvaṅ anayab, yan katututana tan patyana, bandanən. yan tan arəp kabandaha hana tonana, patyanana ika. yan kabandaha alakviṅ urip, daṇḍa ya śu, mā, 4. maṅkana śāsananya. 
+
+hana vvaṅ anyoloṅ tavon iṅon-iṅon, daṇḍa ya kupaṅ 1, piṅ tigakəna. yaniṅ vəṅi maliṅ ya. 
+
+hana vvaṅ andavut vinih iṅ lyan kala rahina tan amit iṅ saṅ avinih, daṇḍa ya mā, 4. 
+
+hana vvaṅ añjavat istrī laraṅan amuruga kunaṅ, aṅalvani duluran patyanana śāsananya. 
+hana vvaṅ sapatutaniṅ stri laraṅan tan pasantana i saṅ lanaṅ, daṇḍa ya śu, 3. mā, 2. patyana vənaṅ. 
+hana vvaṅ patututaniṅ rare hulun, pamulañjaraniṅ rare hulun miṅgatta. ya ta tatkāla samaṅkana manavura ya sa-utaṅniṅ rare hulun. yan nora panavuranya ya gantya huluna sambega ṅaranya. hana vvaṅ amluk istrī laraṅan patyana ya, rampasən, yan daṇ<pb edRef="#JB" n="187v"/>ḍa śu, 3. mā, 2, śāsananya.
+
+anakniṅ sandil tan sinaksyaniṅ rama, tan milu kumalilirana dṛvya, ibunya hina. maṅkana śāsananya. pupvan-pupvan yan tan sinākṣyaniṅ rāma tan milu kumalilirana dṛvya. ibunya hina śāsananya. 
+
+hana vvaṅ manəmu-nəmu dṛvya, təbusənya, yan tan paveh, maliṅ atimpuh ṅaranya. daṇḍa ya śu, 3. mā, 2, śāsananya. 
+
+hana vvaṅ alaki padha raṅda, padha mava vəka volih pva nambut gave anyar pəjah pva kalih, madum ta ya dṛvya. vvaṅ lyan adumma, taṅguṅan suhunan śāsananya. yan hana vəkas kavitanya veghakəna śāsananya. tan panaka salaya, siṅ manak pramaneṅ dṛvya. ləmah sima tan kəneṅ rama. 
+vvaṅ kraṅan pəjah tan pamayaṅ rāma pramana. yan tan pasanak vargganya vənaṅ anəbusa. 
+
+hana vvaṅ andalih mañjiṅ riṅ umahiṅ a-umah, muṅgah iṅ lumbuṅ[,] mañjiṅ iṅ kubon, andampul, amanek pucaṅ, tirisan, saprakāra isiniṅ kubon ndatan tuhu ata ya. daṇḍa kodaṇḍa cihnaniṅ andalih dinalih, hasta, vastra, dhana, svara, cihna mukha, astra. [em. astra …. Hasta?] lvirnya: astra ṅa. atiṅgala sañjāta. vastra: atiṅgala dodot. dhana: atiṅgala savinavanya. svara: pinasyaṅakən riṅ vvaṅ rva-tlu. cihna mukha: kinavruhan deniṅ vvaṅ rva-tlu sapolahnya. <pb edRef="#JB" n="188r"/> hasta rinəbut. yan maṅkana daṇḍa ya. śu, 3. mā, 2. 
+
+hana vvaṅ atuvava dṛvya tan pinintonakən keh-kədhiknya vratnya, ilaṅa ta ya alvaṅa kunaṅ, tan əlyanana tan paramartha, tan satrya muka ṅaranya. 
+
+hana vvaṅ manuṅgokən rabinya kajamah de saṅ manyanda, mulih magəm patranya, uvus utaṅnya, jalunya ina śāsananya. 
+
+pradana ṅayatakən tuvək riṅ kaniṣṭa, satəṅah śuddha utaṅnya, śāsananya. amatyani pradhananya su 6 mā 4 śasananya.
+pradana salah ulah aṅalap dṛvyaniṅ kaniṣṭa. uvus utaṅya, patra śrahəna. 
+ana vvaṅ mahutaṅ pari katəkan sadaśa tahun lavasnya pañcaginakna śasananya. anilih pari vinihan mulih a- nikəliṅnya tka pva sapuluh tahun daśagunakna śasananya.
+pradana anilih dṛvyaniṅ kaniṣṭa muliha sapəkən liṅnya. tan mulih salek, roṅ lek. uvus utaṅ-nya akeh ikaṅ dṛvya vuvusnya. 
+
+riṅ maliṅ aṅalap kəbo sapi riṅ rahina, daṇḍa tatagrahi. maṅke katəmu patyana śāsananya. 
+
+hana vvaṅ aṅucap-ucap kalavan kavula riṅ śunya miṅgata samaṅke. ṅuniveh manihir-nihir adṛvya ya manavura sautaṅniṅ kavula. ya nora panavuranya. ya aṅgantyan ahuluna śāsananya.
+
+ amuk iṅ vuvus, daṇḍa ya pataṅ evu śāsananya.
+
+hana vvaṅ maṅunusakən kavitanya tuvək, daṇḍa ya, śu, 1, mā,4. tumunvani pataninya ṅaranya. 
+
+hana vvaṅ istrya maṅdus təka ta ya vvaṅ lanaṅ sumandiṅ adyus, daṇḍa ya, śu, 1, mā, 9. ṅaran iṅ maṅkana maṅalavan riṅ pupu ṅarannya.
+
+<pb edRef="#JB" n="188v"/> savarṇaniṅ sasandan lələb pivəruhakəna saptadivasa riṅ asanda. yan tan panəbus vənaṅ dolən. 
+
+riṅ vvaṅ anəmu-nəmu dṛvya tinakonan tan vəruh savuranya. ya vəkasan maṅaku ta ya, daṇḍa yasayasa doṣaniṅ maliṅ 
+
+riṅ vvaṅ autaṅ mañjiṅ anuṅgu apagave amit iṅ gone anuṅgu, aṅulati artha, livar iṅ pasaṅketan, tan təka pva ya, katagiha pagave 100, yan vaṅ lanaṅ. yan vadvan 50, kaṅ sadina. yan alavas anavur roṅ navun tigaṅ śaśih pituṅ dina lavasanya tiniti pagave. 
+
+vvaṅ manugəli buntut iṅ ayam iṅ voṅ, daṇḍa ya, śu, 1, mā, 4. 
+
+hana vvaṅ maraṅ savəd pinikət iṅ rama, daṇḍa ya, śu, b. mā, 4, śāsananya. 
+
+hana vvaṅ amraṅ cədar anugli cədar, tan cədharnya, daṇḍa ya śu, b. mā, 4, śāsananya. 
+
+ikanaṅ raray kari riṅ jro vətəṅ. hana dum-dumanya ndatan vehakəna, mijil pva ya. veana dhadhahanya vruh pva ya lumaku veana śabdanən. atuva pva ya vruh amalakva dum-duman. vehakəna kabeh sadumanya pəjah pvaṅ rare babunya pramana. kasvami ṅaranya. 
+
+hana vvaṅ maṅalap bubur iṅ rahina, daṇḍa ya, mā, 2. yan iṅ vəṅi maliṅ ya. 
+
+riṅ voṅ aniñjo vvaṅ aturu laki-bi kavənaṅan ta ya sikəp ta maṅkana amalvani kasukan aranya. <pb edRef="#JB" n="189r"/> riṅ voṅ aniñjo stri laraṅan sədhəṅ mahyas kavənaṅan ta ya deniṅ lakinya, daṇḍa ya, śu, 1, mā, 4. amalvani matha ṅa. 
+hana vvaṅ malakva ṅinaṅa riṅ stri laraṅan, ndan asambava vuvusnya, kavənaṅan ta ya deniṅ lakinya, daṇḍa ya, mā, 10. maṅavalani tutuk ṅaranya. 
+
+Valat karo..
+ika ta saṅ prabhu maṅdaṇḍa yogya daṇḍa. sira ta rakva mamaṅgih yaśa. kunaṅ yanaṅ daṇḍa tan yogya daṇḍa, sira ta rakva tumibakən avaknira riṅ kavah. kinəla de saṅ yama-raja. kaliṅanya maṅdaṇḍa yogya daṇḍa ta pva sira. liṅ saṅ hyaṅ āgama.</p>-->
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.069">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">hiṃsakaḥ, codakaḥ, bhoktaḥ, bhojekaḥ, sahacarakaḥ, prīti-</l>
+              <l n="b">kaḥ, sthānadaḥ, trātah, aṣṭaduṣṭo(r) iti smṛtāḥ.</l>
+            </lg>
+          </quote>
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+em. bhettā bhojyakaḥ … trātā … aṣṭaduṣṭā
+ -->
+          <!-- WORKING NOTE (from DOCX, not constituted apparatus):
+ [Note: This stanza underlies the glosses in L882 (Aṣṭādaśavyavahāra), 1v3–2r1.]
+ -->
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.070">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">prāpta sodhah, trayaś ceva, </l>
+              <l n="b">valāt daṇḍena karttañcah, </l>
+              <l n="c">svama-danan tu kārayet.</l>
+            </lg>
+          </quote>
+          <p n="1">ka. valātkāra ṅa. anəpak, amupuh, anampyal. ika vyavahāra tan kinavruhan. valat-reka ṅa. anulisakən pobhaya norananiṅ vruh. valatkrəpah ṅa. amatyani tan amitya. ika ta hana vvaṅ maṅkana sikəpən vitakəniṅ nayaka. liṅ saṅ hyaṅ āgama.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.071">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">na daṇḍa-daṇḍayet raja, </l>
+              <l n="b">daṇḍa raja daṇḍa nayet,</l>
+              <l n="c">asitmadavam apnoti prapnuvintivala doṣat,</l>
+              <l n="d">dusta svatma pabhenan ca.</l>
+            </lg>
+          </quote>
+          <p n="1">hana vvaṅ aṅadhaṅ arəp amatyanana riṅ vvaṅ tan padoṣa, <pb edRef="#JB" n="189v"/> daṇḍa śu, 3. mā, 2. astadusta ṅa. 
+
+riṅ voṅ aturu padha lanaṅ, den jamah rovaṅe aturu ika. yogya patiyane kaṅ añjamah dene kaṅ kajamah. yen aveha pakeraṅ kaṅ añjamah, mā, 6. nirguna saya yan maṅ kana. 
+
+viku manuntun cədhar təhəra pāpayuṅ iṅalapan cədharnya mvaṅ payuṅnya.maṅkana śāsananya.
+
+lvir nikaṅ vvaṅ cinoran tilik ikaṅ vvaṅ asta-dusta, ikaṅ vvaṅ sadtatai. ika ta vvaṅ maṅkana cinoran tilik anyori pāpati, səgəh, kupaṅ 5. lamak iṅ cor 225. anyori dusta səgəh, kupaṅ 5. Lamak iṅ cor 225. maṅkana śāsananya. 
+
+riṅ voṅ anyoloṅ ratna kañcana, vastradi, sarva-pelag, anyoloṅa kəbo-sapi kalaniṅ rahina, apan aneṅ jro umah kalavan ahavan iṅon ika. yen hana maṅkana cor tilik ika. səgəh kupaṅ 5, 225] la lamak iṅ cor. 
+
+yen hana anyoloṅ celeṅ cədhar, aṅunusakən kadga, asta-caphala, śabda-caphala. anyoloṅ isiniṅ kəbon, anyoloṅ pasaṅan, anyoloṅ antuk iṅ pāpasaṅaniṅ voṅ, yen kalaniṅ rahina yan tan pacihna tan kinavruhan deniṅ vaṅ ro-tlu. ika ta vvaṅ maṅkana cinoran cor pacicira, səgəh 50. lamak iṅ cor 225. <pb edRef="#JB" n="190r"/> maṅkana śāsananya. 
+
+kuṭāro ikaṅ kuvuṅ, lva graha panuduknya. ikaṅ tuva-buru kasuduk ta ya rovaṅnya tuva-buru. tan daṇḍa ya. lvit ambatika pavehanya. mā, 5. maṅkana śāsananya. kunaṅ yan mati pamidhara. śu, 1, mā, 4, śāsananya. 
+tuva-burva masaṅvlah, patil, bañcaṅ, kala, rajut, luvvaṅ, salviraniṅ manava yeka kapaṅgih den ikaṅ māvyavahara, 
+kunaṅ ikaṅ tuva-burva masaṅ-masaṅ dhurasthanaya adoh saṅ keṅ avan pramananya sagalah, sadəpa, saroh. saṅkeṅ avan tu tan atat iṅ tatih vala-vala, tan igrahan tuva-buru, saṅ maṅambah yan i grahanən, sanigrahaniṅ maliṅ dṛvyaji. śu, 3. mā, 2, śāsananya. 
+
+hana vvaṅ maṅalaṅi burvan riṅ pasaṅ-pasaṅan, nigrahanən, śu, 1, mā, 4, śāsananya. 
+hana vvaṅ amaṅan raja maṅśa tan paburu, daṇḍa, śu, 1, mā, 4, śāsananya. ana vvaṅ aburu tikus anəbah umah iṅ voṅ lyan daṇḍa mā 5 śasananya. ana vvaṅ amaṅan ayam i- tik bañak tan pahitik, tan payam, tan pabañak yan iṅ və- ṅi maliṅ śasananya daṇḍa ya su 6 mā 4. ana vvaṅ ma- ṅalap vdus nigrahanən su 1 (1?) mā 4 yan iṅ vəṅi ma- liṅ śasananya daṇḍa ya su 6 mā 4. pasu ikaṅ kəbo sa- pi durasthana ya adoh saṅkeṅ avan pinarannya pvaya ti- nəmbaṅ cinicik siniṅat taya tanigraha tikaṅ kəbo sapi ya silimaha ṅarannya kunaṅ yan təka mapagakən maniṅat amukya patyana rəbutən. ana vvaṅ maṅalap cədar iṅ ra- hina daṇḍa ya su 1 (1?) mā 4 śasananya. ana vvaṅ ma- ṅalap ayam riṅ kuruṅan riṅ caṅcaṅan daṇḍa ya su 3 mā 2 śasananya. ana vvaṅ amaliṅ ayam uvan uvan riṅ ra- hina daṇḍa ya evu 4 śasananya. ana vvaṅ amaduṅ kayu maṅrəbahi umah daṇḍa ya su 1 mā 4 maṅrəbahi duruṅ lumbuṅ mesi pari daṇḍa ya su 1 (1?) mā 4 maṅrəbahi vnaṅ vnaṅ alyana savəlyanya maṅrəbahi kori mā 5 ma- ṅrəbahi pagər baləbəd mā 2 maṅrəbahi vvaṅ yan mati su 6 mā 4 yan tikəl su 6 mā 4 tur aveh pasumaṅeri saṅ ti- kəl evu 4 yan mati aveh pamidara su 1 (1?) mā 4 yan tikəl vəli tamba pavehanya mā 5 yan anuvusaṅilagakən nirdoṣa yan maṅkana maṅrəbahi palaṅ maṅrəbahi kandaṅ mā 10 (ga of 1??) maṅrəbahi vataṅan su 1 mā 4 maṅrəbahi bale su 3 mā 2 maṅrəbahi dharma kaṅ 1 daṇḍa ya su 5. ana vvaṅ ma- ṅgutuk gutuk maṅənahi ta ya vvaṅ mā 5 maṅənahi ma- taniṅ vvaṅ su 1 mā 4 yan mati daṇḍa ya su 1 mā 4 śasananya. mantanyan ayo tan pramatha deniṅ amaayu vi- cara ayo tan dharma udaśina riṅ vicara narakaprasta pataka sakvehniṅ vikara pāpa kapaṅguh deniṅ tan dharma daśina.
+</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.072">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">matarəm pitarəm hṛtva </l>
+              <l n="b">brahmaṇa guru talpakən </l>
+              <l n="c">pakṣapatya vicarantu </l>
+              <l n="d">bhavecinarakə brajet</l>
+            </lg>
+          </quote>
+          <p>nihan krama saṅ hyaṅ manava-śāsananya, ayo tan dharmoda sineṅ vicāra. ayva ṅivakən təṅən, ila-ila maṅkana, naraka pāpa prapti pataka kapaṅgih deniṅ tan darmoda sineṅ vicāra.
+
+nahan deniṅ amalakṣaṇa vyavahāra, ayva idəp puja riṅ salaya iḍəp ta ujarnya kalih, kon maliha, takoni muvah, akveh vuvusnya salaya, alah ya, tuṅgal ujarnya salaya amənaṅ ya. 
+
+hana vicāra tan pa sākṣi liṅnya. pintanən sākṣinya tan <pb edRef="#JB" n="190v"/> aṅga pva ya ṅucapa alah ya. hana vicāra hovah sākṣi kaṅ salaya tan ovah sākṣi amənaṅ ya. 
+
+lviraniṅ sākṣi saṅ mavicāra vvaṅ lituhayu paripūrṇa, bhisa ṅaji vvaṅ sugih, phalagrəha, vvaṅ asimadharma, udasina, kulina. ika ta ya sākṣiniṅ saṅ mavicara. lvir iṅ tan yogya sākṣi saṅ mavicāra, vvaṅ tan padhaksa, vikara mrana kuraṅ ləvih, bisu, tuli, kasyasih, vvaṅ mautaṅ akveh, adhah janma, inaśunya muni, viku, ṛṣi, vidu, lampuran, guddha. 
+
+iti kuṭāśāsananya. 
+vara rucce raca. 
+
+nihan ulahakəna saṅ prabhu, tan adoha saṅkeṅ saṅ hyaṅ pustaka, lvirnya, mānava, purāṇa, kuṭāra, sārasamuccaya. yeka sadananiṅ vruh makaglaraniṅ vyavahāra mvaṅ alah amənaṅnya.
+
+maṅkana taṅ vvaṅ tan adoheṅ sira. mataṅyan pamaṅguha suka. ṅuniveh paripūrṇaṅ rat, kadyaṅganiṅ saṅ hyaṅ aditya sumuluh iṅ tri-bhuvana-mandala. tandva maṅkana ta saṅ prabhu umilaṅakəna duhkaniṅ rat. sira ta panamuhaniṅ asih aranira, etuniṅ daṇḍa inanakən. mataṅyan pindahən vvaṅ tan ahidəpa śīlan tumirva śīla saṅ prabhu. mataṅyan paripūrṇaṅ rat.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.073">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">bhayat śīlasya daṇḍasya, </l>
+              <l n="b">prabhu tistati saganat,</l>
+              <l n="c">opabhoga śīlat payet, </l>
+              <l n="d">daṇḍa nuyaśa pidhanat.</l>
+            </lg>
+          </quote>
+          <p n="1">i sədaṅniṅ saṅ prabhu vruh riṅ śāsana, magave ta sira <pb edRef="#JB" n="191r"/> dharma, saśarira denira təka riṅ tanayan thani. mataṅyan paripūrṇaṅ rat tumirva saśana saṅ prabhu. rva bedhaniṅ śāsana, lvirnya: māraka, tāraka. ikaṅ tārakadharma saṅ prabhu. ikaṅ mārakadharma saṅ baṇiggrāma mvaṅ savoṅ thani. ikaṅ māraka anipata daṇḍa. ikaṅ tāraka masahaya. ikaṅ ta pāpa sākṣi dṛṣṭa mvaṅ śruta.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.074">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">dṛṣṭasākṣi śrutasākṣi, </l>
+              <l n="b">vṛthā sākṣi avagupah,</l>
+              <l n="c">sākṣi hastapatra canat, </l>
+              <l n="d">pañcate sākṣi navantah.</l>
+            </lg>
+          </quote>
+          <p n="1">[AM] dṛṣṭa manon. śruta maṅrəṅə̄. vrətha vinarah. avagupah milva luṅguh. hastapatra tinulisakən. nahan kayatnakəna riṅ sākṣi. ayo kakavaśa deniṅ vvaṅ sanak. vvaṅ atuva. kadhaṅ. mitra. əmas. pirak. opabhoga. upakara. apan atyan ta pāpaniṅ sākṣi yan tan satya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.075">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">mātara pitara vṛthā, </l>
+              <l n="b">brāhmaṇa gurutalpakam,</l>
+              <l n="c">pakṣapāta parasākṣi, </l>
+              <l n="d">bhavecinaraka brajet.</l>
+            </lg>
+          </quote>
+          <p n="1">[AM] mātā bapa. pitā ibu. brāhmaṇa sira, guru sira. sapāpaniṅ amati bapa ibu brāhmaṇa, guru. maṅkana pāpa kapaṅguh deniṅ tan satya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.076">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">alpāyuṣyadsvaridra </l>
+              <l n="b">nahan janmani nityasah</l>
+              <l n="c">tan panatya vandanat cavat</l>
+              <l n="d">naya vruh maraṇaṃ vrajet.</l>
+            </lg>
+          </quote>
+          <p n="1"> [AM] ikaṅ vak sapata piṅ sevunyaṅ janma, təhər pāpa ya. mūrkha ṅaranya.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.077">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a"><pb edRef="#JB" n="191v"/> kulaputra caturbhāgah, </l>
+              <l n="b">dyus kulina dvidantata,</l>
+              <l n="c">bhāryājahaka bhagaś ca, </l>
+              <l n="d">danavasya vanagaś ca.</l>
+            </lg>
+          </quote>
+          <p n="1">[AM] nyaṅ beddhaniṅ adum madrədvya, yan mariṅ anak pataṅ duman rikala stri. rvaṅ duman dyus kulina. təṅah duman riṅ dana vani.</p>
+        </div>
+        <div type="dyad" xml:id="sarasamuccayaSastra_01.01.078">
+          <quote type="base-text" xml:lang="san-Latn">
+            <lg met="anuṣṭubh">
+              <l n="a">pitra tat bapaibu, </l>
+              <l n="b">arṇara putra potrakah.</l>
+            </lg>
+          </quote>
+          <p n="1">[AM] hana vvaṅ saduhka samitra taya saparanyasih. kaliṅanya mati pva saṅ aveveh saṅ vinehan ahurip. tan palakunən ikaṅ veveh deniṅ vvaṅ sanak. jiva ṅaranya. 
+
+hana vvaṅ amisyana daṇḍa saṅ prabhu, apan saṅ prabhu sira tan pabapaibu tan pasanak. ikaṅ rat pinakabapaibu vvaṅ sanak nira. 
+
+apan doṣa bhaṭāra manu sinapa ta de bhaṭāra guru doṣanira tugət riṅ ulahniṅ raray. 
+
+kunaṅ iṅana riṅ rare, iṅana ujarnya sadaśa-varsan tan vənaṅ raray, laraṅana ulah ujarnya. hana rare amraṅ rovaṅnya məṅ-aməṅ. ya ta pinəjahan de bhaṭāra manu, sinaṅguhnira muk. mataṅnyan vineh sira kəmitana śāsana de bhaṭāra guru. marapvan sira vruh riṅ yogya lavan tan yogya. mataṅyən hana agama, manusa śāsana ṅaranya maṅke. śāsana paveh bhaṭāra guru iṅ bhaṭāra manu ika. 
+
+hana vvaṅ rare lanaṅ aməṅ-aməṅ lavan rare vadon, kabahulan ta ya denya. uvayanən nirdoṣa maṅkana. 
+
+<pb edRef="#JB" n="192r"/> hana rare vruh ta ya umiḍəp , vəruh riṅ acara padha lavan vvaṅ atuva, tan ampunana hiya. 
+
+hana rare padha rare amanek pala mvaṅ səkar, tiba salah siki katunduṅ dene rovaṅnya, tanigrahanən manuk arəbut phalan iṅ kayu ṅaranya. 
+
+hana rare adol-adolan padha rare amava kris kanin asalah siki rəbutana tanigrahəna vlit amba juga pavehnya. mā, 5. ya tan vruh iṅ manava. vuruk-raṅdu ṅaranya. rare maṅalap dṛvya kavənaṅan ta ya rəbutən iya, alapən. 
+
+nihan upaya saṅ pragvivaka, yan palopa riṅ duga-duga dana prayogakəna, yapvan vrəddhi pravṛttinya. madha prayatna upaya daṇḍa gavayakəna. 
+
+nihan tan paṅucapa karya vyavahāra astami, durbala saṅ prabhu. caturdaśi kadatvan durbala. yan pañcadaśi vadva saṅ prabhu durbala. 
+
+lilima bhedhaniṅ sākṣi. adrəsa ṅaranya. vaspadha dene tumiṅhal. vṛthāsākṣi ṅaranya. enak denya ṅruṅu prana. kavaspadha denya ṅruṅu ṅaranya vus tinulisakən. 
+riṅ vrətha ṅaranya akveh aṅruṅu. riṅ guna ṅaranya vus pinaluṅguhakən. ya samaṅkana bedhaniṅ sākṣi. lima kvehnya. 
+
+hana ta ya karaja-bhaya ṅaranya. katoyabhaya ṅaranya. kagni<pb edRef="#JB" n="192v"/>bhaya ṅaranya. kacorah-bhaya ṅaranya. karipubhaya ṅaranya. 
+kunaṅ salviraniṅ drəve patuvava tan əlenana ika. tumrap iṅ paṅ akiṅ haranya. 
+
+alaniṅ śarira, alaniṅ pajatyan, alaniṅ pinaṅan, alan iṅ kajanman, alaniṅ kavitan, alaniṅ taliṅa, alaniṅ paṅrəṅə̄. 
+
+iku ta kabeh inujarakən riṅ vvaṅ magalak. araniṅ ujar maṅkana vākpāruṣya ṅaranya liṅ saṅ pandita. ujara alah-ulih niṅ maṅrəṅə̄ pūrvaka inujarakən ulih nikaṅ maṅrəṅə̄, saha-krodhanya ta ya, tuhuataya, tan tuhuataya. ndan magavaya larambək iṅ lyan donya inujarakən araniṅ ujar maṅkana vākpāruṣya ṅaranya liṅ saṅ pandita. 
+
+ikaṅ vvaṅ manəṅguh vuta, vuta liṅnya riṅ tuhu vuta, muvvaṅ ikaṅ manaṅguha yan riṅ ayan. ikaṅ ayan uvus kṛtaprāyaścitta. muvah ikaṅ manaṅguh maliṅ, riṅ maliṅ uvus dinanda sabeyaniṅ kaṅ ahayan aprāyaścitta daṇḍahanya. mvaṅ sadoṣan iṅ maliṅ daṇḍahaniṅ vvaṅ maṅkana mitya pva panaṅguhnya maliṅ mvaṅ ayan, dvi-gunakəna ikaṅ beya mvaṅ daṇḍan ikaṅ maliṅ.
+
+ iti səmpiraniṅ sārasamuccaya yogyaiṅətakəna ikaṅ vak pāruṣya mvaṅ padha yaniṅ tattva vyavahāra. kakehaniṅ daṇḍa hana riṅ saṅ hyaṅ sārasamuccaya-śāstra. iśaka catursamudra sabhuta sadkahyaṅan 1654. śravanastami kṛṣṇapakṣa. <pb edRef="#JB" n="193r"/> i śaka 1653, kārttika māsa. riṅ dina ka. bu. vara vugu, irika divasaniṅ aṅinum cor. 
+
+pamastuniṅ cor mariṅ cahi nəṅah jalantik, mivah cahi abyan, mivah cahi tanah təkaniṅ sasanake mivah sakadhaṅe, manavi sira tan tuhu paṅavulane mariṅ i sun. yan i sun sakiṅ apatut kənaha sira riṅ sahupadravaniṅ cor. mvah yan sira agave karusakan i sun mivah arin i sun, adi kətut aguṅ, mivah anak i sun i barak pambayun, mivah i barak madhe kənaha sira riṅ sahupadravaniṅ cor, mivah yan sira agave pisuna amrih karusakan i sun, adi kətut aguṅ mivah anak i sun i barak pambayun, i barak madhe, kənaha sira riṅ sahupadravaniṅ cor. dina cor, bu. ka. vara vugu, śa. 4, rah 3, təṅ. 5.
+
+<pb edRef="#JB" n="193v"/> avighnam astu.
+
+hana vvaṅ maṅalap kavalon, kaponakan-nakan, atavi anak doṣa. paṅuluvuṅakəna riṅ ləbuh aguṅ pəndəm, ahiṅana katona sirahnya. paṅiriṅakəna mahisaniṅ deśa. maṅkana patinya. 
+
+hana vvaṅ maṅalon i rabiniṅ guru, vvaṅ atuva, mara tuvva, makadi laraṅaniṅ tuvvan, doṣanya pastanya bəbədiṅ pusuh, syuki ləṅa, suləd iṅ apuy. maṅkana patinya. 
+
+nihan nikaṅ bhumi vicāra vvaṅ maṅaku bhumi, lvirnya, pəndəm simpuruṅ. doṣa sakəti nəm laksa. 
+
+hana vvaṅ maṅilaṅakən prasasti aṅrusaka, doṣa sakəti nəm laksa. 
+
+iti saṅ hyaṅ kuṭāraśāstra. 
+
+
+nyan kramaniṅ voṅ alakya rabi, yan patut tan patutnya, yan amaṅgiha lara, yan nora amaṅgiha lara yeniṅ voṅ aṅalap mimisane ri voṅ niṣṭaniṅ madhya uttama. vənaṅ alaki ya. yeniṅ voṅ uttama vənaṅ amamaru riṅ sanake. tan hana ro bedanya. 
+
+yeniṅ voṅ śūdra alap istrī amamaru sanake ala dahat agave traṅ iṅ bhumi. 
+yen aṅalap rabi miṅkalihe vənaṅ, norana bhayanya. 
+yan aṅalap miṅ tigane nora vənaṅ tiga pamasah ṅa. ala paṅgihnya, tan olih amrih, yan tan hana vavalyane. 
+pasikuh paha ṅaranya, aṅalap sleṅ alap sanake nora vənaṅ. 
+yan satriya, bhujaṅga vənaṅ mapan riṅ voṅ ləvih aranya. 
+yaniṅ veśya śūdra tan vənaṅ, panas iṅ nagara polihnya. 
+yen alaki arabi aṅalap sleṅ alap misan, makədhəṅan ṅadaranya. salah tuṅgal mati ala dahat. 
+yan aṅalap baluniṅ kaprənah kaka nora vənaṅ agave panas <pb edRef="#JB" n="194r"/> iṅ nagara. 
+yan hana voṅ samaṅkana ləbokakəniṅ sagara, muṅguh kaluṅsur aranya. 
+
+yaniṅ voṅ arabi sanake, arabi sanake, aṅalap mantune matvane aṅalap kaprənah tumin sakiṅ bapa sakiṅ ibu. yen hana voṅ maṅkana ala dahat. panas ikaṅ nagara, vuruṅ tikaṅ tavun, aṅdadyakəna sasab marana. vənaṅ patinya sakala linabuhakəniṅ sagara yan pinipis ri cakraniṅ giliṅan. 
+
+yan arabi kaprənah vvaṅ atuvane, cakət sanak iṅ bapa, sanak iṅ ibu, baluniṅ bapa, baluniṅ huvva, baluniṅ paman, mvah yan kaprənah huvva, kaprənah tumin, kaprənah dadoṅ, balun iṅ kaprənah kaki, somah iṅ kaprənah kaki, sakiṅ pradhana sakiṅ purusa, prativya ṅlaṅkar saṅgar ṅaranya. dahat apanas ikaṅ nagara. vuruṅ ikaṅ tavun, talaga, sumur, pañcuran pada sat, tan patəmahan voṅ maṅkana. vənaṅ pinəjahan sakala, tan uruṅ atəmahanya makaintip iṅ kavah. 
+
+yen hana voṅ aṅalap ginave rabi putrane devek, yan savyakti tan sipi alanya dahat panas iṅ nagara. vənaṅ kinəpuṅ jinarag sagənahnyaṅ rərəp sakala. yan mati ya sevu tavun atmanya riṅ yamani-loka. kətək-kətək cakcak kuricak dadinya. piṅ sapta yan dadi tan dadi ya janma muvah. 
+
+yan voṅ arabi kaprənah tumine sacakət riṅ amisane mvaṅ asanak padha lanaṅ ala dahat-dahat. aṅlaṅkar saṅgar aranya. <pb edRef="#JB" n="194v"/> yen hana voṅ maṅkana dohakən agave traṅ-traṅ iṅ jagat aranya. 
+yen hana voṅ aṅalap baluniṅ bapa, sanak iṅ bapa, prativya ṅayuh saṅgar aranya. 
+yen hana voṅ aṅalap baluniṅ guru, sanak iṅ guru, prativya ṅayuh gunuṅ aranya. 
+yen hana voṅ aṅalap baluniṅ kṣatriya sanak iṅ kṣatriya, yen hana voṅ samaṅkana, prətivya ṅayuh akaśa aranya. ala dahat ika. vənaṅ pinəjahan sakala. aṅgigilani jagat aranya tan sipi-sipi agave panas iṅ nagara vvaṅ maṅkana. makadya yan aṅalap valuniṅ bhujaṅga sanak iṅ bhujaṅga. samaṅkana alanya vənaṅ jinarag pinəjahan soṅgvanya, yan linabuhakəneṅ sagara vənaṅ. 
+
+yen arabi kaprənah tumin kapiṅkalih, kapiṅtiga, kapiṅpat, yan sanak sakiṅ pradhana, vənaṅ aṅuyuh sakiṅ prathivi aranya. kevala pamahayunən. 
+
+kunaṅ pamahayunya tan anaṅke patəmunya, saṅ pandita sira takvanakən. maṅkana ikaṅ arabi miṅ tiga. hana pamahayunya. 
+
+iti tiṅkah iṅ alakya-rabi təkeṅ sakala patinya. keṅətakəna təkap saṅ mahyun andadi vvaṅ rahayuniṅ śarira mvaṅ saṅ amava rat. antukniṅ manu drətta saṅkeṅ bhujaṅga-śāstra. ayvana pramada. 
+
+nyan pratyekaniṅ mpas ṅa. 
+yan ajariji titiga aneh, trivaṅka ṅa. yan pāpat aneh catur-əmpas ṅa. yan lilimaneh, pañca-bulus ṅa. yan nənəm maneh sadbadhavaṅ ṅa. [195r] maṅkana vilaṅnya, kaniṣṭamadhyottama. keṅətakəna 1 makasajiniṅ saṅ deva pitara.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
